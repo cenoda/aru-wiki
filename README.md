@@ -48,18 +48,18 @@
 
 ## ⚖️ 저작권 및 라이선스 대원칙 (Strict Legal & License Policy)
 
-본 프로젝트는 **순수 비영리(광고 없음 · 후원 없음 · 상업적 이용 절대 금지)**로 운영되며, **`AGPL-3.0`과 `CC BY-NC-SA` 간의 라이선스 충돌을 방지하기 위해 [소프트웨어 코드]와 [위키 콘텐츠/데이터]의 라이선스를 엄격히 분리(Split Licensing)**합니다.
+본 프로젝트는 **순수 비영리(광고 없음 · 후원 없음 · 상업적 이용 절대 금지)**로 운영되며, 코드와 위키 데이터를 한 리포지토리와 빌드 파이프라인에서 섞어 써도 **라이선스 충돌이 전혀 발생하지 않도록 설계된 단순·안전한 결합 구조(`MPL-2.0` + `CC BY-NC-SA`)**를 채택합니다.
 
-1. **제1원칙 — 호요버스(HoYoverse) 저작권 최우선 존중**
+1. **제1원칙 — 호요버스(HoYoverse) 저작권 최우선 존중 (최상위 규범)**
    * 『원신(Genshin Impact)』과 관련된 모든 고유 IP, 세계관, 명칭, 대사 원문, 이미지 등의 원저작권은 **COGNOSPHERE Pte., Ltd. (HoYoverse / miHoYo)**에 있습니다.
    * 본 프로젝트는 호요버스의 공식 2차 창작 가이드라인을 철저히 준수하며, 미공개 유출 데이터(Leaks)나 불법 추출 에셋을 일절 다루지 않습니다.
-2. **제2원칙 — 외부 위키 저작권 완벽 보호 및 적법한 활용**
+2. **제2원칙 — 외부 위키 저작권 완벽 보호 및 적법한 활용 (`CC BY-NC-SA`)**
    * 나무위키(`CC BY-NC-SA 2.0 KR`), Fandom Genshin Impact Wiki(`CC BY-SA 3.0` / `CC BY-NC-SA 3.0`) 등 외부 위키에서 파생·재구조화된 모든 콘텐츠 및 데이터베이스는 원저작물의 라이선스 조건(저작자 표시 `BY` · 비영리 `NC` · 동일조건변경허락 `SA`)을 100% 계승하고 준수합니다.
-3. **제3원칙 — 코드(`AGPL-3.0`)와 콘텐츠(`CC BY-NC-SA`)의 분리 라이선싱**
-   * **소프트웨어 소스 코드 (엔진, UI, 파서 프레임워크)**: [`GNU AGPL v3.0`](LICENSE) 적용
-   * **위키 콘텐츠 및 지식 그래프 데이터**: [`CC BY-NC-SA (출처별 동일조건 계승)`](LICENSE-CONTENT.md) 적용
+3. **제3원칙 — 파일 단위 카피레프트(`MPL-2.0`)를 통한 무충돌 단순화**
+   * **소프트웨어 소스 코드**: [`Mozilla Public License 2.0 (MPL-2.0)`](LICENSE) 적용 — 코드 수정본의 오픈소스 공개는 강제하면서도, 같은 프로젝트 내에 호요버스 IP 및 `CC BY-NC-SA` 위키 데이터를 자유롭게 결합(Larger Work)할 수 있어 `AGPL/GPL` 계열의 전염성 충돌을 완벽히 제거했습니다.
+   * **위키 콘텐츠 및 프로젝트 전체 운영**: [`CC BY-NC-SA (비영리·출처표시·동일조건)`](LICENSE-CONTENT.md) 적용
 
-> 자세한 법적 설계 및 라이선스 충돌 방지 구조는 [`docs/LEGAL_AND_LICENSE_POLICY.md`](docs/LEGAL_AND_LICENSE_POLICY.md) 문서를 참고하세요.
+> 자세한 법적 설계 및 합법적 데이터 수집 규칙은 [`docs/LEGAL_AND_LICENSE_POLICY.md`](docs/LEGAL_AND_LICENSE_POLICY.md) 문서를 참고하세요.
 
 ---
 
@@ -68,7 +68,7 @@
 현재 리포지토리는 프로젝트의 **비전, 기획, 데이터 스키마 개념, 저작권/라이선스 정책**을 정의한 설계 단계(Vision Stage)입니다.
 
 * 📄 [`docs/VISION.md`](docs/VISION.md) — 프로젝트 상세 비전, 핵심 기능 정의 및 UX/UI 보완 전략
-* ⚖️ [`docs/LEGAL_AND_LICENSE_POLICY.md`](docs/LEGAL_AND_LICENSE_POLICY.md) — 저작권 보호, AGPL-3.0 + CC BY-NC-SA 비충돌 분리 구조, 합법적 데이터 수집(Ingestion) 원칙
+* ⚖️ [`docs/LEGAL_AND_LICENSE_POLICY.md`](docs/LEGAL_AND_LICENSE_POLICY.md) — 저작권 보호, `MPL-2.0` + `CC BY-NC-SA` 무충돌 단순화 구조, 합법적 데이터 수집(Ingestion) 원칙
 * 🏗️ [`docs/ARCHITECTURE_CONCEPT.md`](docs/ARCHITECTURE_CONCEPT.md) — 3D 시간축 그래프 DB 스키마, 버전 타임머신 데이터 모델, AI 기반 슬라이드 구조화 파이프라인 개념도
-* 📜 [`LICENSE`](LICENSE) — 소프트웨어 소스코드 라이선스 (`GNU Affero General Public License v3.0`)
+* 📜 [`LICENSE`](LICENSE) — 소프트웨어 소스코드 라이선스 (`Mozilla Public License 2.0`)
 * 📜 [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) — 콘텐츠·데이터베이스 라이선스 및 제3자 권리 고지

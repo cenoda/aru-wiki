@@ -1,0 +1,199 @@
+[
+ {
+  "source": "act_should_we_meet_again",
+  "target": "act_everwinter_without_mercy",
+  "characters": [
+   "Columbina",
+   "Sandrone"
+  ],
+  "known": [
+   "act_true_moon"
+  ],
+  "input_hash": "d040fdf8d01a",
+  "judge": {
+   "tool": "claude",
+   "recommend": true,
+   "strength": "strong",
+   "reason_ko": "「True Moon」에서 마리오네트(산드로네)는 고인으로 언급되지만, 「Everwinter Without Mercy」에서는 그녀가 살아서 스네즈나야의 집행관으로 활동하는 모습이 당연하게 나옵니다. 그녀가 '선물'로 코어가 재가동되어 돌아온 과정은 「Should We Meet Again」에서만 다뤄지므로 먼저 플레이하지 않으면 혼란스러울 수 있습니다.",
+   "quotes_a": [
+    "The second chance wasn't the only part of the \"Gift.\" According to the message, Alain left me a few other things that are stored in the house we shared together.",
+    "Like I said, my core is severely damaged. Even with the \"Gift,\" there are \"anomalies\" that are making things unstable.",
+    "I'm hoping that whatever he left me can help fix certain \"anomalies\" in my rebooted core... and help me understand why I received a Stellar Linchpin in the first place."
+   ],
+   "quotes_b": [
+    "I invited Sandrone too, but she said she had to go back to Snezhnaya. She must be busy.",
+    "Greetings, Lady Marionette.",
+    "Hmph. Well, I felt our time working together in Nod-Krai warranted some courtesy. I couldn't exactly let you freeze to death out here in the wind."
+   ]
+  },
+  "verify": {
+   "tool": "codex",
+   "supported": true,
+   "note_ko": "「True Moon」에서 고인으로 언급된 산드로네가 A에서는 ‘선물’과 재가동된 코어로 돌아온 상태임이 드러나고, B에서는 살아서 집행관으로 활동하므로 A를 먼저 플레이해야 혼란을 줄일 수 있다는 핵심 주장은 뒷받침됩니다."
+  },
+  "status": "accepted"
+ },
+ {
+  "source": "act_those_we_have_kept",
+  "target": "act_everwinter_without_mercy",
+  "characters": [
+   "Columbina",
+   "Sandrone"
+  ],
+  "known": [
+   "act_true_moon"
+  ],
+  "input_hash": "c761b4e5ffc1",
+  "judge": {
+   "tool": "claude",
+   "recommend": true,
+   "strength": "strong",
+   "reason_ko": "「True Moon」에서는 산드로네(마리오네트)가 죽은 것처럼(\"may she rest in peace\") 끝나지만, 「Everwinter Without Mercy」에서는 그녀가 살아서 스네즈나야로 돌아가 집행관으로 활동합니다. 그녀가 돌아왔다는 사실과 우인단 복귀 이야기는 「Those We Have Kept」에서 다뤄지므로, 이 이야기를 먼저 하지 않으면 그녀의 귀환을 스포일러로 알게 되거나 혼란스러울 수 있습니다.",
+   "quotes_a": [
+    "Well, I think I speak for all of us when I say, we're truly glad you're back, Sandrone.",
+    "Once you return to the Fatui, we'll have more opportunities to keep in touch, in any case.",
+    "Hehe... Don't be fooled by my sister's demeanor, Lady Sandrone. She's just as delighted as the rest of us to have you back."
+   ],
+   "quotes_b": [
+    "I invited Sandrone too, but she said she had to go back to Snezhnaya. She must be busy.",
+    "Greetings, Lady Marionette.",
+    "Unfortunately, I can't invite you inside either. The rules of Glupov wouldn't allow it, and as a Harbinger, I have to lead by example."
+   ]
+  },
+  "verify": {
+   "tool": "codex",
+   "supported": true,
+   "note_ko": "「True Moon」에서 사망한 듯 언급된 산드로네가 A에서는 귀환한 모습으로 등장하고 우인단 복귀도 예고되며, B에서는 스네즈나야에서 집행관으로 활동하므로 A를 먼저 보아야 한다는 주장은 뒷받침됩니다."
+  },
+  "status": "accepted"
+ },
+ {
+  "source": "act_those_we_have_lost",
+  "target": "act_everwinter_without_mercy",
+  "characters": [
+   "Columbina",
+   "Sandrone",
+   "Tartaglia"
+  ],
+  "known": [
+   "act_true_moon",
+   "act_a_traveler_on_a_winter_s_night"
+  ],
+  "input_hash": "49b436910d73",
+  "judge": {
+   "tool": "claude",
+   "recommend": true,
+   "strength": "strong",
+   "reason_ko": "이미 플레이한 스토리에서 산드로네(마리오네트)는 \"편히 잠들기를\" 바라는 죽은 사람으로 언급되지만, 「Everwinter Without Mercy」에서는 아무 설명 없이 살아서 스네즈나야로 돌아가 집행관으로 활동합니다. 그녀가 한 번 \"죽었다가\" 두 번째 기회를 얻었고, 아직 스네즈나야에 복귀하지 않았지만 우인단에 남겠다고 밝히는 내용은 「Those We Have Lost」에서 다뤄집니다.",
+   "quotes_a": [
+    "Marionette: Besides... I've already \"died\" once. I'd be stupid not to make the most of this second chance.",
+    "Marionette: For one, the diplomatic hassle alone would be a nightmare. Even though I haven't reported back to Snezhnaya yet, I'm not planning to leave the Fatui anytime soon."
+   ],
+   "quotes_b": [
+    "Columbina: I invited Sandrone too, but she said she had to go back to Snezhnaya. She must be busy.",
+    "Yuzhanin: Greetings, Lady Marionette.",
+    "Marionette: Unfortunately, I can't invite you inside either. The rules of Glupov wouldn't allow it, and as a Harbinger, I have to lead by example."
+   ]
+  },
+  "verify": {
+   "tool": "codex",
+   "supported": true,
+   "note_ko": "이미 플레이한 이야기에서 사망한 것으로 언급된 산드로네가 A에서는 한 번 ‘죽은’ 뒤 얻은 두 번째 기회와 우인단 잔류 의사를 밝히고, B에서는 그 후속 상태인 스네즈나야 복귀와 집행관 활동을 보여주므로 주장이 뒷받침됩니다."
+  },
+  "status": "accepted"
+ },
+ {
+  "source": "act_a_traveler_on_a_winter_s_night",
+  "target": "act_should_we_meet_again",
+  "characters": [
+   "Columbina",
+   "Sandrone"
+  ],
+  "known": [],
+  "input_hash": "46db75661e6b",
+  "judge": {
+   "tool": "claude",
+   "recommend": true,
+   "strength": "weak",
+   "reason_ko": "「A Traveler on a Winter's Night」는 콜롬비나가 달의 반영 속에 갇혀 돌아갈 수 있을지 모른 채 삼월의 권능에 맞설 계획을 세우는 이야기입니다. 「Should We Meet Again」은 산드로네의 \"돌아왔구나\"라는 말과 함께 그녀가 무사히 돌아와 여행하는 모습을 보여 주므로, 이 전개를 먼저 알고 보면 더 잘 이해됩니다.",
+   "quotes_a": [
+    "Columbina: (And... Will I ever find my way back?)",
+    "Columbina: (I have to find some way of rivaling the power he has usurped...)",
+    "Columbina: As for mine... Mine must go in a different direction..."
+   ],
+   "quotes_b": [
+    "Marionette: Initiate query regarding the \"Three Moon Sisters.\" How many living Moon Goddesses are there in possession of the Trilunar Authority?",
+    "Marionette: ...Hahaha, it worked. You did it, Columbina. You made it back."
+   ]
+  },
+  "verify": {
+   "tool": "codex",
+   "supported": true,
+   "note_ko": "A는 달의 반영에 갇힌 콜롬비나가 귀환과 빼앗긴 권능에 맞설 방법을 모색하는 과정을 담고, B는 산드로네의 귀환 확인과 콜롬비나의 자유로운 여행을 통해 그 결과를 보여 주므로 선행 감상 권고가 뒷받침됩니다."
+  },
+  "status": "accepted"
+ },
+ {
+  "source": "act_melting_moonlight_in_the_morning_mist",
+  "target": "act_should_we_meet_again",
+  "characters": [
+   "Columbina",
+   "Sandrone"
+  ],
+  "known": [],
+  "input_hash": "61a7cf28f6f5",
+  "judge": {
+   "tool": "claude",
+   "recommend": true,
+   "strength": "weak",
+   "reason_ko": "「Should We Meet Again」에서 산드로네가 \"돌아왔구나\"라며 기뻐하는 장면은 「Melting Moonlight in the Morning Mist」에서 콜롬비나가 도토레를 막으려고 달의 문으로 몸을 던져 사라진 사건을 전제로 합니다. 다만 콜롬비나가 실제로 돌아오는 장면과 산드로네의 코어가 파괴되는 장면은 이 이야기에 없고 다른 이야기에서 일어나므로, 이 이야기는 유용한 배경 정도입니다.",
+   "quotes_a": [
+    "(Flashbacks of Columbina's time with the Traveler are shown before she falls into the Moon Gate, which shatters before the Traveler can reach it)",
+    "Nefer: So, Columbina intentionally opened the Moon Gate, and escaped into the same mysterious world as Rerir and Tholindis...",
+    "Traveler: She hasn't returned."
+   ],
+   "quotes_b": [
+    "Marionette: ...Hahaha, it worked. You did it, Columbina. You made it back.",
+    "Columbina: Yes. I mentioned how I wanted to visit other nations once things settled down in Nod-Krai, remember?"
+   ]
+  },
+  "verify": {
+   "tool": "codex",
+   "supported": true,
+   "note_ko": "A에서 콜롬비나가 도토레를 막기 위해 달의 문으로 사라지고 귀환 여부가 미해결로 남으며, B는 산드로네의 귀환 확인과 콜롬비나의 여행을 통해 그 이후의 생환을 드러내므로 선행 권고의 핵심 근거가 성립합니다."
+  },
+  "status": "accepted"
+ },
+ {
+  "source": "act_true_moon",
+  "target": "act_should_we_meet_again",
+  "characters": [
+   "Columbina",
+   "Sandrone"
+  ],
+  "known": [],
+  "input_hash": "6650226f5fe7",
+  "judge": {
+   "tool": "claude",
+   "recommend": true,
+   "strength": "strong",
+   "reason_ko": "「Should We Meet Again」은 「True Moon」에서 보여 준 콜롬비나의 귀환을 전제로 합니다. 콜롬비나가 사라지지 않고 삼월의 여신으로 돌아와 우인단을 떠났다는 점, 그리고 나드크라이가 안정되면 다른 나라를 여행하겠다고 했던 약속이 이 이야기의 바탕입니다. 또한 「True Moon」에서 고인으로 언급된 산드로네가 살아 있는 모습으로 등장하므로, 앞의 이야기를 먼저 봐야 그 상태 변화를 제대로 이해할 수 있습니다.",
+   "quotes_a": [
+    "Columbina: Haha... I won't, not this time. The Frost Moon has now entered the false sky, and I am the Trilune Goddess.",
+    "Columbina: Once things settle down in Nod-Krai, I'd like to explore the world beyond Snezhnaya.",
+    "Varka: \"We found ourselves allied in this instance with both The Knave and Marionette (may she rest in peace).\""
+   ],
+   "quotes_b": [
+    "Columbina: Yes. I mentioned how I wanted to visit other nations once things settled down in Nod-Krai, remember?",
+    "Marionette: ...Hahaha, it worked. You did it, Columbina. You made it back.",
+    "Marionette: ...Destroyed by that bastard Dottore? That's right. But as you can see, I'm fine now. No major issues. Or at least, there shouldn't be..."
+   ]
+  },
+  "verify": {
+   "tool": "codex",
+   "supported": true,
+   "note_ko": "A는 콜롬비나의 귀환과 삼월의 여신으로서의 상태, 여행 계획 및 산드로네의 사망 인식을 보여 주며, B는 이를 전제로 콜롬비나의 여행과 산드로네의 생존·회복을 드러내므로 선행 감상 주장이 뒷받침됩니다."
+  },
+  "status": "accepted"
+ }
+]

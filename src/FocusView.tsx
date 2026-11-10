@@ -5,7 +5,7 @@ import {
 import '@xyflow/react/dist/style.css';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
-  actGraph, displayName, type Quest, type QuestType, questById, quests, REGION_KO, TYPE_LABEL,
+  actGraph, displayName, type Quest, recommendedGraph, type RecommendedEdge, type QuestType, questById, quests, REGION_KO, TYPE_LABEL,
   type Version, versionOrder, versions,
 } from './data';
 import ELK from 'elkjs/lib/elk.bundled.js';
@@ -21,6 +21,22 @@ for (const e of actEdges) {
   (before.get(e.target) ?? before.set(e.target, []).get(e.target)!).push(e.source);
   (after.get(e.source) ?? after.set(e.source, []).get(e.source)!).push(e.target);
 }
+const requiredBefore = (target: string, source: string) => {
+  const stack = [target], seen = new Set(stack);
+  while (stack.length) {
+    for (const p of before.get(stack.pop()!) ?? []) {
+      if (p === source) return true;
+      if (!seen.has(p)) { seen.add(p); stack.push(p); }
+    }
+  }
+  return false;
+};
+// Recommended (not required) order, shown only in a focused act's branch. A recommendation
+// the game already enforces says nothing new and is dropped.
+const recIn = Map.groupBy(
+  recommendedGraph().filter((e) => questById.get(e.source)?.level === 'ACT' && questById.get(e.target)?.level === 'ACT'
+    && !requiredBefore(e.target, e.source)),
+  (e) => e.target);
 const START_ACT = 'act_the_outlander_who_caught_the_wind';
 const TYPE_RANK: Record<QuestType, number> = { ARCHON: 0, STORY: 1, WORLD: 2, EVENT: 3 };
 const vOrder = (q: Quest) => versionOrder.get(q.first_version ?? '') ?? 0;
@@ -150,6 +166,7 @@ const atlas = (() => {
 function branchOf(focus: string, visible: (q: Quest) => boolean) {
   const ok = (id: string) => visible(questById.get(id)!);
   const out = new Set([focus]);
+  for (const r of recIn.get(focus) ?? []) if (ok(r.source)) out.add(r.source);
   const up = [focus];
   while (up.length) for (const p of before.get(up.pop()!) ?? []) if (ok(p) && !out.has(p)) { out.add(p); up.push(p); }
   const line = lines.lineOf.get(focus);
@@ -177,11 +194,15 @@ async function layoutBranch(ids: Set<string>, focus: string) {
       'elk.layered.considerModelOrder.strategy': 'NODES_AND_EDGES',
     },
     children: list.map((id) => ({ id, width: CARD_W, height: CARD_H })),
-    edges: actEdges.filter((e) => ids.has(e.source) && ids.has(e.target)).map((e) => ({
-      id: e.id, sources: [e.source], targets: [e.target],
-      ...(lines.lineOf.get(e.source) === lines.lineOf.get(e.target)
-        ? { layoutOptions: { 'elk.layered.priority.straightness': '20' } } : {}),
-    })),
+    edges: [
+      ...actEdges.filter((e) => ids.has(e.source) && ids.has(e.target)).map((e) => ({
+        id: e.id, sources: [e.source], targets: [e.target],
+        ...(lines.lineOf.get(e.source) === lines.lineOf.get(e.target)
+          ? { layoutOptions: { 'elk.layered.priority.straightness': '20' } } : {}),
+      })),
+      // recommended sources sit left of the act like its prerequisites
+      ...(recIn.get(focus) ?? []).filter((r) => ids.has(r.source)).map((r) => ({ id: r.id, sources: [r.source], targets: [focus] })),
+    ],
   });
   // Re-anchor so the focused act keeps its atlas position: the branch unfolds around it.
   const f = res.children!.find((c) => c.id === focus)!;
@@ -240,7 +261,11 @@ function Atlas() {
   const neighbours = useMemo(() => {
     if (!focus) return null;
     const keep = (ids: string[] = []) => ids.filter((id) => visible(questById.get(id)!));
-    return { before: keep(before.get(focus)), after: keep(after.get(focus)) };
+    return {
+      before: keep(before.get(focus)), after: keep(after.get(focus)),
+      recommended: (recIn.get(focus) ?? []).filter((r) => visible(questById.get(r.source)!))
+        .sort((a, b) => Number(a.strength !== 'strong') - Number(b.strength !== 'strong')),
+    };
   }, [focus, visible]);
 
   // ---------- branch of the focused act, laid out on its own ----------
@@ -286,7 +311,11 @@ function Atlas() {
         className: `${typeClass(questById.get(e.target)!)} ${track ? 'track' : 'cross'}${hot ? ' hot' : ''}`,
         markerEnd: { type: MarkerType.ArrowClosed, width: inBranch ? 14 : 11, height: inBranch ? 14 : 11, color: 'var(--arrow)' },
       }];
-    }), [focus, visible, inBranch, branch]);
+    }).concat(inBranch ? (recIn.get(focus!) ?? []).filter((r) => branch!.has(r.source)).map((r) => ({
+      id: r.id, source: r.source, target: r.target, type: 'default',
+      className: `rec ${r.strength}`,
+      markerEnd: { type: MarkerType.ArrowClosed, width: 14, height: 14, color: 'var(--rec)' },
+    })) : []), [focus, visible, inBranch, branch]);
 
   // ---------- camera ----------
   // A focused act frames its branch: whole when it fits at a readable zoom (>= 0.8), otherwise the
@@ -424,6 +453,12 @@ function Atlas() {
               {neighbours.before.map((id) => <Jump key={id} id={id} dir="before" go={select} />)}
               {neighbours.after.map((id) => <Jump key={id} id={id} dir="after" go={select} />)}
             </div>
+            {neighbours.recommended.length > 0 && (
+              <section className="recs">
+                <h3>먼저 하면 좋은 이야기</h3>
+                {neighbours.recommended.map((r) => <Rec key={r.id} edge={r} go={select} />)}
+              </section>
+            )}
           </aside>
         )}
 
@@ -431,6 +466,7 @@ function Atlas() {
           <span className="t-archon"><i />마신</span><span className="t-story"><i />전설</span>
           <span className="t-world"><i />월드</span><span className="t-event"><i />이벤트</span>
           <span className="ln solid">같은 이야기 흐름</span><span className="ln dashed">다른 흐름에서 오는 선행</span>
+          {focus && <span className="ln rec">권장 순서 (필수 아님)</span>}
           <span className="hint">왼쪽 → 오른쪽으로 진행 · 막을 누르면 갈래 보기 · 끌어서 이동</span>
         </div>
         <div className="controls">
@@ -455,6 +491,25 @@ function Jump({ id, dir, go }: { id: string; dir: 'before' | 'after'; go: (id: s
     <button className={`jump ${typeClass(q)}`} onClick={() => go(id)}>
       {dir === 'before' && <span className="arrow">←</span>}{displayName(q)}{dir === 'after' && <span className="arrow">→</span>}
     </button>
+  );
+}
+
+// A recommended act: why it helps, and whether a person or the LLM pipeline said so.
+function Rec({ edge, go }: { edge: RecommendedEdge; go: (id: string) => void }) {
+  const q = questById.get(edge.source)!;
+  const [open, setOpen] = useState(false);
+  return (
+    <div className={`rec-item${open ? ' open' : ''}`}>
+      <button className={`jump ${typeClass(q)}`} onClick={() => go(edge.source)}>
+        <span className="arrow">←</span>{displayName(q)}
+        <small>{q.first_version}{!q.replayable && ' · 다시 플레이 불가'}</small>
+      </button>
+      <p onClick={() => setOpen(!open)} title={open ? '' : '눌러서 펼치기'}>{edge.reason_ko}</p>
+      <div className="rec-meta">
+        {edge.strength === 'strong' ? <span className="badge">스포일러 주의</span> : <span className="tag neutral">배경 이해</span>}
+        {edge.basis === 'llm' && <span className="tag neutral" title="LLM 판정 후 다른 회사 모델이 검증했습니다. 사람 검수 전입니다.">미검수</span>}
+      </div>
+    </div>
   );
 }
 

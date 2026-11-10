@@ -1,0 +1,44 @@
+.app {
+  --bg: #f7f7f5; --panel: #fff; --ink: #1d1d1f; --muted: #6b6b70; --line: #d9d9de;
+  --archon: #c08a1e; --story: #7b5cc4; --world: #2a8f84; --event: #c4612f;
+  font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif; color: var(--ink);
+}
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; height: 100%; }
+.app { display: flex; flex-direction: column; height: 100%; background: var(--bg); }
+.app header { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 10px 16px; background: var(--panel); border-bottom: 1px solid var(--line); }
+.app h1 { font-size: 16px; margin: 0; }
+.app h1 small { font-weight: 400; color: var(--muted); margin-left: 8px; font-size: 12px; }
+.app .tools { display: flex; gap: 20px; align-items: center; font-size: 13px; }
+.app .tools label { display: flex; gap: 8px; align-items: center; }
+.app .slider input { width: 260px; }
+.app .slider small { color: var(--muted); }
+.app main { position: relative; flex: 1; display: flex; min-height: 0; }
+.app main > .react-flow { flex: 1; }
+.app .loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); z-index: 5; }
+
+.app .act { width: 200px; height: 56px; padding: 7px 10px; background: var(--panel); border: 1px solid var(--line);
+  border-left: 4px solid var(--c); border-radius: 6px; font-size: 12px; transition: opacity .15s; cursor: pointer; }
+.app .act-archon { --c: var(--archon); } .app .act-story { --c: var(--story); }
+.app .act-world { --c: var(--world); } .app .act-event { --c: var(--event); }
+.app .act.dim { opacity: .18; }
+.app .act.sel { box-shadow: 0 0 0 2px var(--c); }
+.app .act-name { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.app .act-meta { display: flex; gap: 6px; margin-top: 5px; color: var(--muted); font-size: 11px; align-items: center; }
+.app .chip { color: var(--c); font-weight: 600; }
+.app .gone { margin-left: auto; font-size: 10px; color: var(--event); }
+.app .act .react-flow__handle { opacity: 0; }
+
+.app .react-flow__edge-path { stroke: #b4b4bc; stroke-width: 1.2; }
+.app .react-flow__edge.hot .react-flow__edge-path { stroke: var(--ink); stroke-width: 2; }
+.app .react-flow__edge.cold { opacity: .12; }
+.app .mm-archon { fill: var(--archon); } .app .mm-story { fill: var(--story); }
+.app .mm-world { fill: var(--world); } .app .mm-event { fill: var(--event); }
+
+.app aside { width: 300px; padding: 16px; background: var(--panel); border-left: 1px solid var(--line); overflow: auto; font-size: 13px; }
+.app aside h2 { font-size: 17px; margin: 0 0 2px; }
+.app aside h3 { font-size: 13px; margin: 16px 0 6px; color: var(--muted); }
+.app aside .en { color: var(--muted); margin: 0 0 8px; }
+.app aside ol { padding-left: 20px; margin: 0; } .app aside li { margin: 3px 0; }
+.app aside .src a { color: var(--muted); }

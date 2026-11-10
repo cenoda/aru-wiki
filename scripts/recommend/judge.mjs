@@ -10,7 +10,7 @@ import { dialogueLines, excerpt, loadPages, normalize } from './excerpt.mjs';
 import { ask } from './llm.mjs';
 
 const { values: opt } = parseArgs({ options: {
-  only: { type: 'string' }, limit: { type: 'string' }, stride: { type: 'string' }, out: { type: 'string', default: 'recommended-judgments.json' },
+  only: { type: 'string' }, limit: { type: 'string' }, stride: { type: 'string' }, redo: { type: 'string' }, out: { type: 'string', default: 'recommended-judgments.json' },
   jobs: { type: 'string', default: '3' },
   judge: { type: 'string', default: 'claude' }, verify: { type: 'string', default: 'codex' },
 } });
@@ -139,7 +139,8 @@ quotes from B: ${j.quotes_b.map((q) => JSON.stringify(q)).join(' / ')}
 Answer in JSON: supported (true or false) and note_ko (one Korean sentence).`;
 
 const hash = (s) => createHash('sha1').update(s).digest('hex').slice(0, 12);
-const quoted = (qs, text) => qs.length > 0 && qs.every((q) => q.length > 0 && q.length <= 240 && normalize(text).includes(normalize(q)));
+const found = (q, text) => q.length > 0 && q.length <= 240 && normalize(text).includes(normalize(q));
+const missing = (v, a, b) => [...v.quotes_a.filter((q) => !found(q, a)), ...v.quotes_b.filter((q) => !found(q, b))];
 
 let todo = candidates;
 if (opt.only) todo = todo.filter((p) => p.characters.includes(opt.only));
@@ -155,17 +156,26 @@ async function judgeOne(p) {
   const k = p.known.map((id) => actText(id, names, 'end', KNOWN_LIMIT / p.known.length)).filter(Boolean).join('\n…\n');
   const key = `${p.source}->${p.target}`;
   const inputHash = hash(`${PROMPT_VERSION}|${opt.judge}|${opt.verify}|${a}|${b}|${k}`);
-  if (results.get(key)?.input_hash === inputHash) return;
+  const prev = results.get(key);
+  if (prev?.input_hash === inputHash && !(opt.redo && prev.status === opt.redo)) return;
   if (!a || !b) {
     results.set(key, { ...p, input_hash: inputHash, status: 'no_text' });
     return;
   }
-  const j = await ask(opt.judge, judgePrompt(p, a, b, k), JUDGE_SCHEMA);
+  let j = await ask(opt.judge, judgePrompt(p, a, b, k), JUDGE_SCHEMA);
   asked++; cost += j.cost ?? 0;
+  // A quote that is not in the excerpt gets one more try, naming the lines that were not found.
+  let miss = j.data.recommend ? missing(j.data, a, b) : [];
+  if (miss.length) {
+    j = await ask(opt.judge, `${judgePrompt(p, a, b, k)}\n\nAn earlier answer quoted lines that are not in the excerpts word for word:\n${
+      miss.map((q) => `- ${JSON.stringify(q)}`).join('\n')}\nCopy each quote exactly as it appears in one excerpt line, or drop it.`, JUDGE_SCHEMA);
+    asked++; cost += j.cost ?? 0;
+    miss = j.data.recommend ? missing(j.data, a, b) : [];
+  }
   const v = j.data;
   const entry = { ...p, input_hash: inputHash, judge: { tool: opt.judge, ...v } };
   if (!v.recommend) entry.status = 'rejected';
-  else if (!quoted(v.quotes_a, a) || !quoted(v.quotes_b, b)) entry.status = 'quote_mismatch';
+  else if (miss.length || !v.quotes_a.length || !v.quotes_b.length) { entry.status = 'quote_mismatch'; entry.missing = miss; }
   else if (opt.verify === 'none') entry.status = 'judged';
   else {
     const check = await ask(opt.verify, verifyPrompt(p, a, b, k, v), VERIFY_SCHEMA);

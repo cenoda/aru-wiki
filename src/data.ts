@@ -1,6 +1,7 @@
 import edgesJson from '../data/generated/quest-edges.json';
 import questsJson from '../data/generated/quests.json';
 import versionsJson from '../data/generated/versions.json';
+import recommendedJson from '../data/generated/recommended-edges.json';
 
 export type QuestType = 'ARCHON' | 'STORY' | 'WORLD' | 'EVENT';
 
@@ -92,3 +93,39 @@ function transitiveReduction(edges: ActEdge[]) {
   };
   return edges.filter((e) => !reachableAvoiding(e.source, e.target));
 }
+
+export interface RecommendedEdge {
+  id: string;
+  source: string;
+  target: string;
+  basis: 'recommended' | 'llm';
+  strength: 'strong' | 'weak';
+  reason_ko: string;
+  characters: string[];
+  revealed: number;
+}
+
+/**
+ * Act-level RECOMMENDED edges: the infobox `recommended` field lifted to acts, and LLM verdicts
+ * checked by a second vendor (recommended-edges.json). Neither is required by the game.
+ */
+export function recommendedGraph() {
+  const out = new Map<string, RecommendedEdge>();
+  for (const e of questEdges) {
+    if (e.relation !== 'RECOMMENDED') continue;
+    const s = actOf(e.source), t = actOf(e.target);
+    if (!s || !t || s === t) continue;
+    const id = `rec:${s}->${t}`;
+    out.set(id, { id, source: s, target: t, basis: 'recommended', strength: 'strong',
+      reason_ko: 'Fandom 정보 상자에 권장 임무로 적혀 있습니다.', characters: [],
+      revealed: versionOrder.get(e.revealed_version ?? '') ?? 0 });
+  }
+  for (const e of recommendedJson as LlmEdge[]) {
+    const id = `rec:${e.source}->${e.target}`;
+    if (out.has(id)) continue; // the infobox says so already
+    out.set(id, { id, source: e.source, target: e.target, basis: 'llm', strength: e.strength,
+      reason_ko: e.reason_ko, characters: e.characters, revealed: versionOrder.get(e.revealed_version) ?? 0 });
+  }
+  return [...out.values()];
+}
+interface LlmEdge { source: string; target: string; strength: 'strong' | 'weak'; reason_ko: string; characters: string[]; revealed_version: string }

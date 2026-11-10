@@ -84,6 +84,8 @@ async function main() {
   const nodes = new Map(); // canonical title -> node
   const raw = new Map(); // canonical title -> { fields, content }
   const transcludes = new Map(); // title -> page whose Other Languages table it reuses
+  const aliases = {}; // character -> names they go by in dialogue (`Sandrone/as Marionette`)
+  const characters = {}; // quest id -> character page names (kept out of quests.json, the UI bundles that)
   const report = { missingInfobox: [], missingVersion: [], missingKo: [], unresolvedLinks: {} };
 
   const addNode = (title, level, catType) => {
@@ -117,6 +119,10 @@ async function main() {
       sources: [{ wiki: 'fandom', url: pageUrl(page.title), revision: page.revid }],
     });
     raw.set(page.title, { fields, content: page.content });
+    if (level === 'QUEST' && fields.characters) {
+      characters[nodes.get(page.title).id] = characterList(fields.characters);
+      for (const [name, alias] of characterAliases(fields.characters)) (aliases[name] ??= new Set()).add(alias);
+    }
   };
   for (const t of actTitles) addNode(t, 'ACT');
   for (const [t, type] of questTitles) addNode(t, 'QUEST', type);
@@ -235,6 +241,8 @@ async function main() {
   await write('versions.json', versions);
   await write('quests.json', nodeList);
   await write('quest-edges.json', edgeList);
+  await write('quest-characters.json', Object.fromEntries(Object.entries(characters).sort()));
+  await write('character-aliases.json', Object.fromEntries(Object.entries(aliases).sort().map(([k, v]) => [k, [...v].sort()])));
   await write('stage1-report.json', { stats, ...report });
   // Run metadata stays out of the files so a rebuild with unchanged data produces no diff.
   log(`fandom requests: ${client.requests}`);
@@ -249,6 +257,23 @@ function fieldLinks(fields, f) {
   if (!v) return [];
   if (BARE_FIELDS.has(f) && !/\[\[|\{\{/.test(v)) return decodeEntities(v).split(/\s*;\s*/).map(normalizeTitle).filter(Boolean);
   return linkTargets(v);
+}
+
+// `characters = Amber;Paimon;Traveler` — plain page names, sometimes with links or notes.
+function characterList(v) {
+  // `Sandrone/as Marionette`, `Venti//'''Venti'''`: the page name is what precedes the slash.
+  const names = decodeEntities(plainText(v.replace(/<!--[\s\S]*?-->/g, ''))).split(/\s*[;\n]\s*/)
+    .map((n) => normalizeTitle(n.split('/')[0].replace(/^\*+\s*/, '')));
+  return [...new Set(names.filter(Boolean))].sort();
+}
+
+function characterAliases(v) {
+  const out = [];
+  for (const entry of decodeEntities(v.replace(/<!--[\s\S]*?-->/g, '')).split(/\s*[;\n]\s*/)) {
+    const m = entry.match(/^([^/]+)\/[^/]*\bas\s+"?([^"/]+?)"?\s*$/);
+    if (m) out.push([normalizeTitle(plainText(m[1])), plainText(m[2]).replace(/[<>].*$/, "").trim()]);
+  }
+  return out.filter(([n, a]) => n && a && !/^\?+$/.test(a));
 }
 
 function countBy(list, key) {

@@ -8,6 +8,7 @@ import {
   actGraph, displayName, type Quest, recommendedGraph, type RecommendedEdge, type QuestType, questById, quests, REGION_KO, TYPE_LABEL,
   type Version, versionOrder, versions,
 } from './data';
+import { recommendationGist, recommendationLead } from './recText';
 import ELK from 'elkjs/lib/elk.bundled.js';
 import './site.css';
 import './focus.css';
@@ -318,34 +319,87 @@ function Atlas() {
     })) : []), [focus, visible, inBranch, branch]);
 
   // ---------- camera ----------
-  // A focused act frames its branch: whole when it fits at a readable zoom (>= 0.8), otherwise the
-  // act is centred at 100%. The info card covers the left edge on wide screens, so the view is
-  // centred in the space beside it.
+  // Frame the branch in the space the info card does not cover. Under 1100px the card is a
+  // bottom sheet, so that space is the band above it. Wider screens keep the card on the left.
   const frameBranch = useCallback((duration: number) => {
     if (!focus || !branchPos) return;
     const stage = document.querySelector('.stage')!.getBoundingClientRect();
-    const wide = stage.width > 900;
     const info = document.querySelector('.site .info')?.getBoundingClientRect();
-    const freeLeft = wide ? 350 : 0;
-    const freeTop = !wide && info ? info.bottom - stage.top + 8 : 0;
-    const freeBottom = !wide ? 64 : 0; // legend + button row
-    const availW = stage.width - freeLeft - 40, availH = stage.height - freeTop - freeBottom - 40;
+    const legend = document.querySelector('.site .legend')?.getBoundingClientRect();
+    const sheet = stage.width < 1100;
+    const freeLeft = sheet ? 16 : (info ? info.right - stage.left + 16 : 392);
+    const freeTop = sheet ? Math.max(16, legend ? legend.bottom - stage.top + 10 : 96) : 16;
+    const freeBottom = sheet ? (info ? stage.bottom - info.top + 12 : 20) : (legend ? stage.bottom - legend.top + 12 : 88);
+    const availW = Math.max(180, stage.width - freeLeft - 16);
+    const availH = Math.max(160, stage.height - freeTop - freeBottom);
     const pts = [...branchPos.values()];
-    const minX = Math.min(...pts.map((p) => p.x)), maxX = Math.max(...pts.map((p) => p.x)) + CARD_W;
-    const minY = Math.min(...pts.map((p) => p.y)), maxY = Math.max(...pts.map((p) => p.y)) + CARD_H;
-    const fit = Math.min(1.15, availW / (maxX - minX), availH / (maxY - minY));
     const f = branchPos.get(focus)!;
-    // whole branch when it fits at a readable zoom; otherwise the act at 100%, a little left of
-    // centre on narrow screens so what it unlocks stays in view
-    const whole = fit >= 0.8;
-    const z = whole ? fit : 1;
-    const [px, py] = whole ? [(minX + maxX) / 2, (minY + maxY) / 2] : [f.x + CARD_W / 2, f.y + CARD_H / 2];
-    const sx = whole || wide ? freeLeft + 20 + availW / 2 : stage.width * 0.32;
-    const sy = freeTop + 20 + availH / 2;
-    let tx = sx - px * z;
-    // no empty band on the left when the act has few or no prerequisites
-    if (!whole) tx = Math.min(tx, freeLeft + 20 - minX * z);
-    flow.setViewport({ x: tx, y: sy - py * z, zoom: z }, { duration });
+    // elk layer pitch: card width plus spacing.nodeNodeBetweenLayers (70).
+    const LAYER = CARD_W + 70;
+    const PAD = 12;
+    const PREFER_Z = 0.92;
+    // Two columns of prerequisites plus the next act. Below this, labels get hard to read,
+    // so a longer chain stays off to the left where it can be dragged into view.
+    const MIN_Z = 0.64;
+    const spanOf = (group: { x: number; y: number }[]) => {
+      const minX = Math.min(...group.map((p) => p.x));
+      const maxX = Math.max(...group.map((p) => p.x + CARD_W));
+      const minY = Math.min(...group.map((p) => p.y));
+      const maxY = Math.max(...group.map((p) => p.y + CARD_H));
+      return { minX, maxX, minY, maxY, w: maxX - minX, h: maxY - minY };
+    };
+    const around = (layersLeft: number) => pts.filter((p) => p.x >= f.x - layersLeft * LAYER - 48 && p.x <= f.x + LAYER + 48);
+    const zoomFor = (box: { w: number; h: number }) =>
+      Math.min(PREFER_Z, (availW - PAD * 2) / box.w, (availH - PAD * 2) / box.h);
+    let group = around(2);
+    let z = zoomFor(spanOf(group));
+    if (z < MIN_Z) {
+      group = around(1);
+      z = zoomFor(spanOf(group));
+    }
+    z = Math.max(0.64, Math.min(PREFER_Z, z));
+    const box = spanOf(group);
+    let tx = freeLeft + (availW - box.w * z) / 2 - box.minX * z;
+    let ty = freeTop + (availH - box.h * z) / 2 - box.minY * z;
+    const clamp = () => {
+      if (box.minX * z + tx < freeLeft + PAD) tx += freeLeft + PAD - (box.minX * z + tx);
+      if (box.maxX * z + tx > freeLeft + availW - PAD) tx -= box.maxX * z + tx - (freeLeft + availW - PAD);
+      if (box.minY * z + ty < freeTop + PAD) ty += freeTop + PAD - (box.minY * z + ty);
+      if (box.maxY * z + ty > freeTop + availH - PAD) ty -= box.maxY * z + ty - (freeTop + availH - PAD);
+    };
+    clamp();
+    // Don't leave a card sliced by the side panel or the screen edge. Hide it fully
+    // when pulling it in would shrink the act the reader opened past a readable size.
+    const edge = freeLeft;
+    const peekRight = Math.max(edge, ...pts.map((p) => {
+      const left = p.x * z + tx;
+      const right = (p.x + CARD_W) * z + tx;
+      return left < edge - 1 && right > edge + 4 ? right : edge;
+    }));
+    if (peekRight > edge) {
+      const wider = pts.filter((p) => {
+        const left = p.x * z + tx;
+        const right = (p.x + CARD_W) * z + tx;
+        const chosen = p.x >= box.minX - 1 && p.x + CARD_W <= box.maxX + 1;
+        return chosen || (left < edge - 1 && right > edge + 4);
+      });
+      const wz = zoomFor(spanOf(wider));
+      if (wz >= MIN_Z) {
+        group = wider;
+        z = wz;
+        const next = spanOf(group);
+        tx = freeLeft + (availW - next.w * z) / 2 - next.minX * z;
+        ty = freeTop + (availH - next.h * z) / 2 - next.minY * z;
+        box.minX = next.minX; box.maxX = next.maxX; box.minY = next.minY; box.maxY = next.maxY;
+        clamp();
+      } else {
+        const nextTx = tx - (peekRight - edge);
+        const leftAfter = box.minX * z + nextTx;
+        const rightAfter = box.maxX * z + nextTx;
+        if (leftAfter >= freeLeft + PAD && rightAfter <= freeLeft + availW - PAD) tx = nextTx;
+      }
+    }
+    flow.setViewport({ x: tx, y: ty, zoom: z }, { duration });
   }, [focus, branchPos, flow]);
 
   // Atlas at reading zoom with an act's card near the left edge (first visit: the first Archon act).
@@ -379,13 +433,16 @@ function Atlas() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [focus, branchPos]);
 
-  // Keep the focused act in view when the window or the iPad orientation changes.
+  // Refit when the window changes, or when the info card grows (the reason text opens).
   useEffect(() => {
     let t: ReturnType<typeof setTimeout>;
-    const onResize = () => { clearTimeout(t); t = setTimeout(() => frameBranch(0), 150); };
-    window.addEventListener('resize', onResize);
-    return () => { window.removeEventListener('resize', onResize); clearTimeout(t); };
-  }, [frameBranch]);
+    const refit = () => { clearTimeout(t); t = setTimeout(() => { if (focus) frameBranch(0); }, 150); };
+    window.addEventListener('resize', refit);
+    const card = document.querySelector('.site .info');
+    const watch = new ResizeObserver(refit);
+    if (card) watch.observe(card);
+    return () => { window.removeEventListener('resize', refit); watch.disconnect(); clearTimeout(t); };
+  }, [frameBranch, focus]);
 
   const onNodesChange = useCallback((c: NodeChange[]) => setNodes((ns) => applyNodeChanges(c, ns)), []);
 
@@ -448,16 +505,13 @@ function Atlas() {
             </div>
             <div className="name">{displayName(sel)}</div>
             <div className="en">{sel.names.en}</div>
-            <div className="meta">임무 {questsByAct.get(sel.id)?.length ?? 0}개 · 먼저 {neighbours.before.length} · 다음 {neighbours.after.length}</div>
+            <div className="meta">임무 {questsByAct.get(sel.id)?.length ?? 0}개 · 필수 선행 {neighbours.before.length} · 다음 {neighbours.after.length}</div>
             <div className="jumps">
               {neighbours.before.map((id) => <Jump key={id} id={id} dir="before" go={select} />)}
               {neighbours.after.map((id) => <Jump key={id} id={id} dir="after" go={select} />)}
             </div>
             {neighbours.recommended.length > 0 && (
-              <section className="recs">
-                <h3>먼저 하면 좋은 이야기</h3>
-                {neighbours.recommended.map((r) => <Rec key={r.id} edge={r} go={select} />)}
-              </section>
+              <Recs edges={neighbours.recommended} targetName={displayName(sel)} go={select} />
             )}
           </aside>
         )}
@@ -487,29 +541,62 @@ function Atlas() {
 
 function Jump({ id, dir, go }: { id: string; dir: 'before' | 'after'; go: (id: string) => void }) {
   const q = questById.get(id)!;
+  const name = displayName(q);
   return (
-    <button className={`jump ${typeClass(q)}`} onClick={() => go(id)}>
-      {dir === 'before' && <span className="arrow">←</span>}{displayName(q)}{dir === 'after' && <span className="arrow">→</span>}
+    <button className={`jump ${typeClass(q)}`} onClick={() => go(id)} title={name}>
+      {dir === 'before' && <span className="arrow">←</span>}
+      <span className="label">{name}</span>
+      {dir === 'after' && <span className="arrow">→</span>}
     </button>
   );
 }
 
-// A recommended act: why it helps, and whether a person or the LLM pipeline said so.
-function Rec({ edge, go }: { edge: RecommendedEdge; go: (id: string) => void }) {
-  const q = questById.get(edge.source)!;
+// Recommended acts as a short list. The long verdict stays behind one control, and the
+// unreviewed mark is shown once for the whole list.
+function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName: string; go: (id: string) => void }) {
   const [open, setOpen] = useState(false);
+  const items = edges.map((edge) => {
+    const q = questById.get(edge.source)!;
+    const name = displayName(q);
+    return { edge, q, name, gist: recommendationGist(edge.reason_ko, name) };
+  });
+  const lead = recommendationLead(items.map((it) => ({ name: it.name, reason: it.edge.reason_ko })), targetName);
+  const llm = edges.some((e) => e.basis === 'llm');
+  const strong = edges.some((e) => e.strength === 'strong');
   return (
-    <div className={`rec-item${open ? ' open' : ''}`}>
-      <button className={`jump ${typeClass(q)}`} onClick={() => go(edge.source)}>
-        <span className="arrow">←</span>{displayName(q)}
-        <small>{q.first_version}{!q.replayable && ' · 다시 플레이 불가'}</small>
-      </button>
-      <p onClick={() => setOpen(!open)} title={open ? '' : '눌러서 펼치기'}>{edge.reason_ko}</p>
-      <div className="rec-meta">
-        {edge.strength === 'strong' ? <span className="badge">스포일러 주의</span> : <span className="tag neutral">배경 이해</span>}
-        {edge.basis === 'llm' && <span className="tag neutral" title="LLM 판정 후 다른 회사 모델이 검증했습니다. 사람 검수 전입니다.">미검수</span>}
+    <section className="recs">
+      <div className="recs-head">
+        <h3>먼저 하면 좋은 이야기</h3>
+        {llm && <span className="tag neutral" title="LLM 판정 후 다른 회사 모델이 검증했습니다. 사람 검수 전입니다.">미검수</span>}
       </div>
-    </div>
+      {lead && <p className="recs-lead">{lead}</p>}
+      <ul className="rec-list">
+        {items.map(({ edge, q, name, gist }) => (
+          <li key={edge.id}>
+            <button type="button" className={`rec-jump ${typeClass(q)}`} onClick={() => go(edge.source)}>
+              <span className="rec-title">{name}</span>
+              <span className="rec-meta">{q.first_version}{!q.replayable && ' · 다시 플레이 불가'}</span>
+            </button>
+            <p className="rec-gist">{gist}</p>
+          </li>
+        ))}
+      </ul>
+      <button type="button" className="rec-more" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
+        {open ? '이유 접기' : '이유 전문 보기'}
+      </button>
+      {open && (
+        <div className="rec-full">
+          {strong && <span className="badge">스포일러 주의</span>}
+          {items.map(({ edge, name }) => (
+            <div key={edge.id}>
+              <strong>{name}</strong>
+              {edge.strength !== 'strong' && <span className="tag neutral">배경 이해</span>}
+              <p>{edge.reason_ko}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </section>
   );
 }
 

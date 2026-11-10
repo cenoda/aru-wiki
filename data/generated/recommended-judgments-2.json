@@ -1,0 +1,375 @@
+[
+ {
+  "source": "chain_echoes_of_the_ancient_world",
+  "target": "act_cataclysm_s_quickening",
+  "score": 8.67,
+  "evidence": [
+   {
+    "kind": "intro",
+    "label": "remuria",
+    "weight": 3.9
+   },
+   {
+    "kind": "lore",
+    "label": "Remuria",
+    "weight": 2.49
+   },
+   {
+    "kind": "lore",
+    "label": "Melusine",
+    "weight": 2.27
+   }
+  ],
+  "known": [],
+  "input_hash": "e9983a430a52",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [],
+   "quotes_b": [],
+   "reason_ko": "",
+   "recommend": false,
+   "strength": "none"
+  },
+  "status": "rejected"
+ },
+ {
+  "source": "single_book_of_esoteric_revelations",
+  "target": "act_cataclysm_s_quickening",
+  "score": 7.55,
+  "evidence": [
+   {
+    "kind": "thread",
+    "label": "melusine perception",
+    "weight": 5.06
+   },
+   {
+    "kind": "lore",
+    "label": "Remuria",
+    "weight": 2.49
+   }
+  ],
+  "known": [],
+  "input_hash": "2cde669ecb32",
+  "status": "no_text"
+ },
+ {
+  "source": "chain_echoes_of_the_ancient_world",
+  "target": "act_in_the_hall_of_the_sea_king",
+  "score": 5.25,
+  "evidence": [
+   {
+    "kind": "lore",
+    "label": "Boethius",
+    "weight": 2.75
+   },
+   {
+    "kind": "lore",
+    "label": "Remuria",
+    "weight": 2.49
+   }
+  ],
+  "known": [],
+  "input_hash": "72878c06ccd3",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [],
+   "quotes_b": [],
+   "reason_ko": "",
+   "recommend": false,
+   "strength": "none"
+  },
+  "status": "rejected"
+ },
+ {
+  "source": "chain_echoes_of_the_ancient_world",
+  "target": "act_magic_mountain",
+  "score": 6.4,
+  "evidence": [
+   {
+    "kind": "intro",
+    "label": "remuria",
+    "weight": 3.9
+   },
+   {
+    "kind": "lore",
+    "label": "Remuria",
+    "weight": 2.49
+   }
+  ],
+  "known": [],
+  "input_hash": "3871a7639874",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [],
+   "quotes_b": [],
+   "reason_ko": "",
+   "recommend": false,
+   "strength": "none"
+  },
+  "status": "rejected"
+ },
+ {
+  "source": "act_cataclysm_s_quickening",
+  "target": "act_petrichorror_dream",
+  "score": 9.31,
+  "evidence": [
+   {
+    "kind": "thread",
+    "label": "remuria",
+    "weight": 3.77
+   },
+   {
+    "kind": "lore",
+    "label": "Fate",
+    "weight": 3.26
+   },
+   {
+    "kind": "lore",
+    "label": "Remus",
+    "weight": 2.28
+   }
+  ],
+  "known": [],
+  "input_hash": "866b77def581",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [],
+   "quotes_b": [],
+   "reason_ko": "",
+   "recommend": false,
+   "strength": "none"
+  },
+  "status": "rejected"
+ },
+ {
+  "source": "single_book_of_esoteric_revelations",
+  "target": "act_petrichorror_dream",
+  "score": 8.03,
+  "evidence": [
+   {
+    "kind": "thread",
+    "label": "golden troupe",
+    "weight": 5.54
+   },
+   {
+    "kind": "lore",
+    "label": "Remuria",
+    "weight": 2.49
+   }
+  ],
+  "known": [],
+  "input_hash": "69848ea6d212",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [],
+   "quotes_b": [],
+   "reason_ko": "",
+   "recommend": false,
+   "strength": "none"
+  },
+  "status": "rejected"
+ },
+ {
+  "source": "chain_echoes_of_the_ancient_world",
+  "target": "act_pharsalia_s_rhapsody",
+  "score": 9.15,
+  "evidence": [
+   {
+    "kind": "intro",
+    "label": "remuria",
+    "weight": 3.9
+   },
+   {
+    "kind": "lore",
+    "label": "Boethius",
+    "weight": 2.75
+   },
+   {
+    "kind": "lore",
+    "label": "Remuria",
+    "weight": 2.49
+   }
+  ],
+  "known": [],
+  "input_hash": "29b9cd5660e6",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [
+    "Tailleferre: Remuria is the name of the ancient civilization that controlled these waters before the foundation of the Court of Fontaine.",
+    "Tailleferre: Not to mention one of the greatest musicians in Fontaine's history — Boethius. He himself served as the Harmost for the court of Remuria itself."
+   ],
+   "quotes_b": [
+    "Monsieur Os: Hmph. I imagine that Boethius owes his survival of time's erosion to having laid low in the palace for all these millennia.",
+    "Boethius: I serve no god, no king. Only mighty Remuria, and our noble ideals."
+   ],
+   "reason_ko": "「Echoes of the Ancient World」에서 설명된 Remuria와 Boethius를 「Pharsalia's Rhapsody」가 이미 아는 배경으로 전제하고 있어, 먼저 보면 이해가 더 매끄럽습니다.",
+   "recommend": true,
+   "strength": "weak"
+  },
+  "verify": {
+   "tool": "codex",
+   "supported": true,
+   "note_ko": "A는 레무리아의 역사와 보에티우스의 신분을 소개하고, B는 이를 기본 소개 없이 이미 알려진 배경으로 사용하므로 먼저 읽으면 이해에 도움이 된다는 약한 선행 관계가 성립합니다."
+  },
+  "status": "accepted"
+ },
+ {
+  "source": "chain_echoes_of_the_ancient_world",
+  "target": "act_prisoner_in_shackles",
+  "score": 5.25,
+  "evidence": [
+   {
+    "kind": "lore",
+    "label": "Boethius",
+    "weight": 2.75
+   },
+   {
+    "kind": "lore",
+    "label": "Remuria",
+    "weight": 2.49
+   }
+  ],
+  "known": [],
+  "input_hash": "e738553f9ef4",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [],
+   "quotes_b": [],
+   "reason_ko": "",
+   "recommend": false,
+   "strength": "none"
+  },
+  "status": "rejected"
+ },
+ {
+  "source": "single_book_of_esoteric_revelations",
+  "target": "act_requiem",
+  "score": 7.57,
+  "evidence": [
+   {
+    "kind": "intro",
+    "label": "fortuna",
+    "weight": 5.08
+   },
+   {
+    "kind": "lore",
+    "label": "Remuria",
+    "weight": 2.49
+   }
+  ],
+  "known": [],
+  "input_hash": "5a5f82d26cae",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [
+    "Kingdoms rise and fall, and when a civilization is annihilated, a new one will be born after from the ashes, which these books refer to as \"Fortuna\""
+   ],
+   "quotes_b": [
+    "Cassiodor: We did not wish to be judged by Fortuna, much less to become your slaves."
+   ],
+   "reason_ko": "「Requiem」에서 Fortuna를 이미 아는 것으로 전제하므로, 먼저 「Book of Esoteric Revelations」에서 Fortuna의 뜻을 확인하는 것이 이해에 도움이 됩니다.",
+   "recommend": true,
+   "strength": "weak"
+  },
+  "verify": {
+   "tool": "codex",
+   "supported": true,
+   "note_ko": "A는 문명의 멸망과 재탄생을 가리키는 Fortuna를 설명하고, B는 Fortuna의 뜻을 별도로 설명하지 않은 채 언급하므로 사전 이해에 도움이 된다는 약한 선행 관계가 성립합니다."
+  },
+  "status": "accepted"
+ },
+ {
+  "source": "single_book_of_esoteric_revelations",
+  "target": "act_search_in_the_algae_sea",
+  "score": 13.47,
+  "evidence": [
+   {
+    "kind": "lore",
+    "label": "Narzissenkreuz Institute",
+    "weight": 3.54
+   },
+   {
+    "kind": "lore",
+    "label": "Emanuel Guillotin",
+    "weight": 2.95
+   },
+   {
+    "kind": "lore",
+    "label": "Remuria",
+    "weight": 2.49
+   },
+   {
+    "kind": "lore",
+    "label": "Mary-Ann Guillotin",
+    "weight": 2.48
+   },
+   {
+    "kind": "lore",
+    "label": "Rene",
+    "weight": 2.01
+   }
+  ],
+  "known": [],
+  "input_hash": "da2d34943d62",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [],
+   "quotes_b": [],
+   "reason_ko": "",
+   "recommend": false,
+   "strength": "none"
+  },
+  "status": "rejected"
+ },
+ {
+  "source": "chain_echoes_of_the_ancient_world",
+  "target": "act_silent_night",
+  "score": 4.77,
+  "evidence": [
+   {
+    "kind": "lore",
+    "label": "Remuria",
+    "weight": 2.49
+   },
+   {
+    "kind": "lore",
+    "label": "Melusine",
+    "weight": 2.27
+   }
+  ],
+  "known": [],
+  "input_hash": "77cd54a586e5",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [],
+   "quotes_b": [],
+   "reason_ko": "",
+   "recommend": false,
+   "strength": "none"
+  },
+  "status": "rejected"
+ },
+ {
+  "source": "act_cataclysm_s_quickening",
+  "target": "single_daydreams_beyond_space_and_time",
+  "score": 3.77,
+  "evidence": [
+   {
+    "kind": "thread",
+    "label": "remuria",
+    "weight": 3.77
+   }
+  ],
+  "known": [],
+  "input_hash": "7ea3f0bd907c",
+  "judge": {
+   "tool": "ember",
+   "quotes_a": [],
+   "quotes_b": [],
+   "reason_ko": "",
+   "recommend": false,
+   "strength": "none"
+  },
+  "status": "rejected"
+ }
+]

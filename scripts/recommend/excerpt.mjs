@@ -45,7 +45,8 @@ const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
  * `'start'` the first ones (what a story assumes about them).
  */
 export function excerpt(lines, names, limit, from = 'start') {
-  const re = new RegExp(`\\b(${names.map(escape).join('|')})\\b`, 'i');
+  // names may come normalized ("al ahmar" for "Al-Ahmar"), so a space matches - ' or space
+  const re = new RegExp(`\\b(${names.map((n) => escape(n).replace(/ /g, "[\\s\\-'’]+")).join('|')})\\b`, 'i');
   const keep = new Set();
   lines.forEach((l, i) => { if (re.test(l)) for (const j of [i - 1, i, i + 1]) if (lines[j]) keep.add(j); });
   let idx = [...keep].sort((a, b) => a - b);

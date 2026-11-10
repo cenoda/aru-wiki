@@ -5,7 +5,7 @@ import {
 import '@xyflow/react/dist/style.css';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
-  actGraph, displayName, type Quest, recommendedGraph, type RecommendedEdge, type QuestType, questById, quests, REGION_KO, TYPE_LABEL,
+  actGraph, displayName, type Quest, recommendedGraph, type RecommendedEdge, TIER_RANK, type QuestType, questById, quests, REGION_KO, TYPE_LABEL,
   type Version, versionOrder, versions,
 } from './data';
 import { recommendationGist, recommendationLead } from './recText';
@@ -265,7 +265,7 @@ function Atlas() {
     return {
       before: keep(before.get(focus)), after: keep(after.get(focus)),
       recommended: (recIn.get(focus) ?? []).filter((r) => visible(questById.get(r.source)!))
-        .sort((a, b) => Number(a.strength !== 'strong') - Number(b.strength !== 'strong')),
+        .sort((a, b) => TIER_RANK[b.tier] - TIER_RANK[a.tier]),
     };
   }, [focus, visible]);
 
@@ -314,7 +314,7 @@ function Atlas() {
       }];
     }).concat(inBranch ? (recIn.get(focus!) ?? []).filter((r) => branch!.has(r.source)).map((r) => ({
       id: r.id, source: r.source, target: r.target, type: 'default',
-      className: `rec ${r.strength}`,
+      className: `rec ${r.tier}`,
       markerEnd: { type: MarkerType.ArrowClosed, width: 14, height: 14, color: 'var(--rec)' },
     })) : []), [focus, visible, inBranch, branch]);
 
@@ -562,7 +562,7 @@ function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName:
   });
   const lead = recommendationLead(items.map((it) => ({ name: it.name, reason: it.edge.reason_ko })), targetName);
   const llm = edges.some((e) => e.basis === 'llm');
-  const strong = edges.some((e) => e.strength === 'strong');
+  const strong = edges.some((e) => e.tier === 'strong');
   return (
     <section className="recs">
       <div className="recs-head">
@@ -572,7 +572,7 @@ function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName:
       {lead && <p className="recs-lead">{lead}</p>}
       <ul className="rec-list">
         {items.map(({ edge, q, name, gist }) => (
-          <li key={edge.id}>
+          <li key={edge.id} className={`rec-${edge.tier}`}>
             <button type="button" className={`rec-jump ${typeClass(q)}`} onClick={() => go(edge.source)}>
               <span className="rec-title">{name}</span>
               <span className="rec-meta">{q.first_version}{!q.replayable && ' · 다시 플레이 불가'}</span>
@@ -590,7 +590,7 @@ function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName:
           {items.map(({ edge, name }) => (
             <div key={edge.id}>
               <strong>{name}</strong>
-              {edge.strength !== 'strong' && <span className="tag neutral">배경 이해</span>}
+              {edge.tier !== 'strong' && <span className="tag neutral">{edge.tier === 'medium' ? '배경 이해' : '참고'}</span>}
               <p>{edge.reason_ko}</p>
             </div>
           ))}

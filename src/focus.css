@@ -92,7 +92,9 @@
 /* recommended order: gold dotted, only in a focused act's branch */
 .site .stage { --rec: var(--gold); }
 .site .react-flow__edge.rec .react-flow__edge-path { stroke: var(--rec); stroke-width: 2.4; stroke-dasharray: 2 5; stroke-linecap: round; }
-.site .react-flow__edge.rec.weak .react-flow__edge-path { stroke-opacity: .55; stroke-width: 1.8; }
+/* medium: relies on what A tells; light: reads better after A, drawn faintest */
+.site .react-flow__edge.rec.medium .react-flow__edge-path { stroke-opacity: .6; stroke-width: 1.8; }
+.site .react-flow__edge.rec.light .react-flow__edge-path { stroke-opacity: .32; stroke-width: 1.4; stroke-dasharray: 2 7; }
 .site .legend .ln.rec::before { border-top: 2.5px dotted var(--gold); }
 .site .info .recs { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
 .site .recs-head { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
@@ -128,3 +130,6 @@
   .site .legend, .site .stage.focusing .legend { top: 12px; bottom: auto; left: 12px; max-width: calc(100% - 130px); }
   .site .controls { top: 12px; right: 12px; bottom: auto; }
 }
+/* light recommendations read fainter in the card too */
+.site .rec-list li.rec-light { opacity: .62; }
+.site .rec-list li.rec-light:hover { opacity: 1; }

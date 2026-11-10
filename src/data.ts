@@ -94,12 +94,16 @@ function transitiveReduction(edges: ActEdge[]) {
   return edges.filter((e) => !reachableAvoiding(e.source, e.target));
 }
 
+export type RecTier = 'strong' | 'medium' | 'light';
+export const TIER_RANK: Record<RecTier, number> = { strong: 3, medium: 2, light: 1 };
+
 export interface RecommendedEdge {
   id: string;
   source: string;
   target: string;
   basis: 'recommended' | 'llm';
-  strength: 'strong' | 'weak';
+  /** strong: spoils or depends on A; medium: relies on what A tells; light: reads better after A */
+  tier: RecTier;
   reason_ko: string;
   characters: string[];
   revealed: number;
@@ -116,16 +120,16 @@ export function recommendedGraph() {
     const s = actOf(e.source), t = actOf(e.target);
     if (!s || !t || s === t) continue;
     const id = `rec:${s}->${t}`;
-    out.set(id, { id, source: s, target: t, basis: 'recommended', strength: 'strong',
+    out.set(id, { id, source: s, target: t, basis: 'recommended', tier: 'strong',
       reason_ko: 'Fandom 정보 상자에 권장 임무로 적혀 있습니다.', characters: [],
       revealed: versionOrder.get(e.revealed_version ?? '') ?? 0 });
   }
   for (const e of recommendedJson as LlmEdge[]) {
     const id = `rec:${e.source}->${e.target}`;
     if (out.has(id)) continue; // the infobox says so already
-    out.set(id, { id, source: e.source, target: e.target, basis: 'llm', strength: e.strength,
-      reason_ko: e.reason_ko, characters: e.characters, revealed: versionOrder.get(e.revealed_version) ?? 0 });
+    out.set(id, { id, source: e.source, target: e.target, basis: 'llm', tier: e.tier,
+      reason_ko: e.reason_ko, characters: e.links, revealed: versionOrder.get(e.revealed_version) ?? 0 });
   }
   return [...out.values()];
 }
-interface LlmEdge { source: string; target: string; strength: 'strong' | 'weak'; reason_ko: string; characters: string[]; revealed_version: string }
+interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; links: string[]; revealed_version: string }

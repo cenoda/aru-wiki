@@ -1,29 +1,68 @@
-// Accepted verdicts -> RECOMMENDED act edges for the site (design.md §5).
-// Only pairs the judge recommended, whose quotes matched the excerpts, and that the second
-// vendor supported are published; they stay `unreviewed` until a person checks them.
+// Accepted verdicts -> RECOMMENDED edges for the site (design.md §5).
+// Only pairs the judge recommended, whose quotes matched the excerpts, and that a second vendor
+// supported are published; they stay `unreviewed` until a person checks them. Three tiers:
+//   strong  B spoils or depends on a major event of A (first or second pass)
+//   medium  weak verdict rated 4 ("B relies on who someone is or what happened, told in A")
+//   light   weak verdict rated 3 with rare shared evidence (candidate score >= LIGHT_MIN_SCORE);
+//           drawn fainter than medium
+// Other weak verdicts stay in the judgment files only.
+import { existsSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 
+const LIGHT_MIN_SCORE = 10;
 const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
 const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
-const [quests, versions, judgments] = await Promise.all(['quests.json', 'versions.json', 'recommended-judgments.json'].map(read));
+const opt = async (f, empty) => (existsSync(file(f)) ? read(f) : empty);
+const [quests, versions, unitData, pass1, pass2, ratings, cands2] = await Promise.all([
+  read('quests.json'), read('versions.json'), read('quest-units.json'), read('recommended-judgments.json'),
+  opt('recommended-judgments-2.json', []), opt('recommended-ratings.json', {}), opt('recommended-candidates-2.json', []),
+]);
 const byId = new Map(quests.map((q) => [q.id, q]));
+const units = new Map(unitData.units.map((u) => [u.id, u]));
 const vOrder = new Map(versions.map((v) => [v.id, v.order]));
+const score = new Map(cands2.map((p) => [`${p.source}->${p.target}`, p.score]));
+
+const node = (id) => {
+  const q = byId.get(id);
+  if (q) return { names: q.names, version: q.first_version, sources: q.sources };
+  const u = units.get(id);
+  return { names: u.names, version: u.first_version, sources: byId.get(u.members[0])?.sources ?? [] };
+};
 // The judge reads English pages and names stories in 「English title」; show the Korean name.
-const koByEn = new Map(quests.filter((q) => q.names.ko).map((q) => [q.names.en, q.names.ko]));
+const koByEn = new Map([...quests, ...unitData.units].filter((x) => x.names.ko).map((x) => [x.names.en, x.names.ko]));
 const localize = (text) => text.replace(/「([^」]+)」/g, (m, t) => `「${koByEn.get(t) ?? t}」`);
 const later = (a, b) => (vOrder.get(a) >= vOrder.get(b) ? a : b);
 
-const edges = judgments.filter((j) => j.status === 'accepted').map((j) => {
-  const s = byId.get(j.source), t = byId.get(j.target);
-  return {
-    source: j.source, target: j.target, relation: 'RECOMMENDED', basis: 'llm',
-    strength: j.judge.strength, characters: j.characters,
+const RANK = { strong: 3, medium: 2, light: 1 };
+function tierOf(j) {
+  if (j.status !== 'accepted') return null;
+  if (j.judge.strength === 'strong') return 'strong';
+  const key = `${j.source}->${j.target}`;
+  const r = ratings[key]?.confusion;
+  if (r >= 4) return 'medium';
+  if (r === 3 && (score.get(key) ?? 0) >= LIGHT_MIN_SCORE) return 'light';
+  return null;
+}
+
+const edges = new Map();
+for (const j of [...pass1, ...pass2]) {
+  const tier = tierOf(j);
+  if (!tier) continue;
+  const key = `${j.source}->${j.target}`;
+  if (edges.has(key) && RANK[edges.get(key).tier] >= RANK[tier]) continue;
+  const s = node(j.source), t = node(j.target);
+  edges.set(key, {
+    source: j.source, target: j.target, relation: 'RECOMMENDED', basis: 'llm', tier,
+    rating: ratings[key]?.confusion ?? null,
+    links: j.characters ?? (j.evidence ?? []).map((e) => e.label),
     reason_ko: localize(j.judge.reason_ko), quotes_source: j.judge.quotes_a, quotes_target: j.judge.quotes_b,
-    revealed_version: later(s.first_version, t.first_version),
+    revealed_version: later(s.version, t.version),
     review: 'unreviewed', judged_by: j.judge.tool, verified_by: j.verify.tool,
     sources: [...s.sources, ...t.sources],
-  };
-});
-await writeFile(file('recommended-edges.json'), `${JSON.stringify(edges, null, 1)}\n`);
-const count = (k) => edges.filter((e) => e.strength === k).length;
-console.log(`${edges.length} RECOMMENDED edges (${count('strong')} strong, ${count('weak')} weak) from ${judgments.length} verdicts`);
+  });
+}
+const list = [...edges.values()].sort((a, b) => `${a.target}|${a.source}`.localeCompare(`${b.target}|${b.source}`));
+await writeFile(file('recommended-edges.json'), `${JSON.stringify(list, null, 1)}\n`);
+const count = (k) => list.filter((e) => e.tier === k).length;
+const isAct = (id) => byId.get(id)?.level === 'ACT';
+console.log(`${list.length} RECOMMENDED edges: ${count('strong')} strong, ${count('medium')} medium, ${count('light')} light; ${list.filter((e) => isAct(e.source) && isAct(e.target)).length} between acts`);

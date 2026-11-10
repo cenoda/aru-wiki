@@ -139,7 +139,7 @@ const results = new Map(Object.entries(await read(OUT).catch(() => ({}))));
 const todo = opt.all ? [...units.keys()] : (opt.units ?? '').split(',').filter(Boolean);
 for (const id of todo) if (!units.has(id)) throw new Error(`unknown unit ${id}`);
 
-let calls = 0, dropped = 0;
+let calls = 0, dropped = 0, cost = 0;
 async function extractOne(id) {
   const u = units.get(id);
   const { text, links } = unitText(u);
@@ -149,8 +149,8 @@ async function extractOne(id) {
   const pieces = chunks(text);
   const facts = { introduced: [], assumed: [], threads: [] };
   for (const [k, piece] of pieces.entries()) {
-    const { data } = await ask(opt.tool, prompt(u, piece, k, pieces.length, links), SCHEMA);
-    calls++;
+    const { data, cost: c } = await ask(opt.tool, prompt(u, piece, k, pieces.length, links), SCHEMA);
+    calls++; cost += c ?? 0;
     for (const key of Object.keys(facts)) {
       for (const item of data[key]) {
         if (found(item.quote, piece)) facts[key].push({ ...item, part: k });
@@ -171,4 +171,4 @@ await Promise.all(Array.from({ length: Number(opt.jobs) }, async () => {
   }
 }));
 await save();
-console.log(`${todo.length} units, ${calls} LLM calls, ${dropped} items dropped for quotes not in the text`);
+console.log(`${todo.length} units, ${calls} LLM calls, ${dropped} items dropped for quotes not in the text, API cost $${cost.toFixed(3)}`);

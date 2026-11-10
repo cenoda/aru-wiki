@@ -2,6 +2,7 @@
 // Input goes in through stdin only and the tools get no file or shell access, so text
 // inside wiki pages cannot make them act. Output is JSON matching `schema`.
 import { spawn } from 'node:child_process';
+import Anthropic from '@anthropic-ai/sdk';
 import { existsSync, readFileSync } from 'node:fs';
 import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { homedir } from 'node:os';
@@ -43,6 +44,40 @@ const TOOLS = {
   // Muse Wonder must never be used (terms of service for the user's region), so it is not offered.
   ember: (prompt, schema, cwd) => muse('muse-ember-1.0', prompt, schema, cwd),
   spark: (prompt, schema, cwd) => muse('muse-spark-1.3', prompt, schema, cwd),
+  // Spark in contributor mode: same input price, half the output price. Ember costs 3x once a
+  // request passes 200K input tokens; extraction pieces are about 15K tokens, well under that.
+  'spark-contrib': (prompt, schema, cwd) => muse('muse-spark-1.3', prompt, schema, cwd, ['--contributor-mode', 'on']),
+  // Gemini through Antigravity (`agy`), in a terminal sandbox inside the empty scratch directory.
+  // `-p` must carry the prompt attached (-p=...), or it takes the next flag as the prompt.
+  async flash(prompt, schema, cwd) {
+    const schemaFile = join(cwd, 'schema.json');
+    await writeFile(schemaFile, JSON.stringify(schema));
+    const out = await run('agy', ['--model', process.env.AGY_MODEL ?? 'gemini-3.8-flash-low', '--output-format', 'json',
+      '--json-schema', schemaFile, '--sandbox', `-p=${prompt}`], '', cwd);
+    const res = JSON.parse(out);
+    if (res.status !== 'SUCCESS') throw new Error(`agy: ${res.status} ${String(res.error ?? res.response ?? '').slice(0, 200)}`);
+    return { data: checkShape(res.structured_output ?? parseJsonReply(res.response), schema), cost: null };
+  },
+  // Claude Haiku 5.5 through the API, billed to the prepaid API credit (not usable from Claude Code).
+  // The key is read from ~/.config/aru/anthropic.env and handed to this client only: exported as
+  // ANTHROPIC_API_KEY it would also switch Claude Code itself from the subscription to the API key.
+  async haiku(prompt, schema) {
+    // Higher effort thinks longer and thinking counts against max_tokens, so leave room and
+    // stream (the SDK needs streaming for large max_tokens). Thinking is billed as output.
+    const res = await anthropic().messages.stream({
+      model: 'claude-haiku-5-5',
+      max_tokens: 64000,
+      output_config: { effort: process.env.HAIKU_EFFORT ?? 'low', format: { type: 'json_schema', schema: apiSchema(schema) } },
+      messages: [{ role: 'user', content: prompt }],
+    }).finalMessage();
+    if (res.stop_reason === 'refusal') throw new Error(`haiku refused: ${res.stop_details?.category ?? 'unknown'}`);
+    if (res.stop_reason === 'max_tokens') throw new Error('haiku hit max_tokens');
+    const text = res.content.filter((b) => b.type === 'text').map((b) => b.text).join('');
+    const u = res.usage;
+    // $0.10 / $0.50 per million tokens for prompts up to 100K tokens
+    const cost = (u.input_tokens * 0.10 + u.output_tokens * 0.50) / 1e6;
+    return { data: checkShape(JSON.parse(text), schema), cost };
+  },
   // K-EXAONE through opencode. opencode has no schema option, so the schema goes into the prompt
   // and the reply is checked here. Every tool is switched off in the config.
   async exaone(prompt, schema, cwd) {
@@ -63,17 +98,31 @@ const TOOLS = {
     return { data: checkShape(parseJsonReply(text), schema), cost: null };
   },
 };
-async function muse(model, prompt, schema, cwd) {
+async function muse(model, prompt, schema, cwd, extra = []) {
   if (/wonder/i.test(model)) throw new Error('Muse Wonder is not allowed');
   const schemaFile = join(cwd, 'schema.json'), promptFile = join(cwd, 'prompt.txt');
   await writeFile(schemaFile, JSON.stringify(schema));
   await writeFile(promptFile, prompt);
-  const out = await run('muse', ['exec', '--model', model, '--output-schema', schemaFile, '--prompt-file', promptFile,
+  const out = await run('muse', ['exec', ...extra, '--model', model, '--output-schema', schemaFile, '--prompt-file', promptFile,
     '--disable-shell', '--disable-write', '--disable-web-tools', '--disable-request-user-input',
     '--no-session-log', '--trust-workspace', '--json'], '', cwd);
   const end = out.split('\n').filter(Boolean).map((l) => JSON.parse(l)).find((e) => e.payload_type?.startsWith('run.terminal.'));
   if (!end || end.payload.terminal !== 'completed') throw new Error(`muse: ${end?.payload?.reason ?? 'no terminal event'}`);
   return { data: checkShape(parseJsonReply(end.payload.text), schema), cost: null };
+}
+
+const ANTHROPIC_ENV = join(homedir(), '.config/aru/anthropic.env');
+let anthropicClient;
+function anthropic() {
+  if (anthropicClient) return anthropicClient;
+  const line = existsSync(ANTHROPIC_ENV) && readFileSync(ANTHROPIC_ENV, 'utf8').match(/^\s*ANTHROPIC_API_KEY\s*=\s*(\S+)/m);
+  if (!line) throw new Error(`no ANTHROPIC_API_KEY in ${ANTHROPIC_ENV}`);
+  anthropicClient = new Anthropic({ apiKey: line[1], maxRetries: 4 });
+  return anthropicClient;
+}
+// Structured outputs accept a subset of JSON Schema; array length limits are left to the prompt.
+function apiSchema(schema) {
+  return JSON.parse(JSON.stringify(schema, (k, v) => (k === 'maxItems' || k === 'minItems' ? undefined : v)));
 }
 
 // Keys live in ~/.config/aru/exaone.env (EXAONE_API_KEY_1, _2, ...); opencode.json reads them as

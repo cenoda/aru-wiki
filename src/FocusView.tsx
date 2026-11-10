@@ -525,10 +525,13 @@ const actFromUrl = () => {
 
 function Logo() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-      <circle cx="12" cy="12" r="9" />
-      <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
-      <path d="M12 7.5l1.2 3.3 3.3 1.2-3.3 1.2L12 16.5l-1.2-3.3L7.5 12l3.3-1.2z" fill="currentColor" stroke="none" />
+    // Same drawing as public/logo.svg (the favicon), with the empty margin cropped for the header.
+    <svg viewBox="76 54 360 390" aria-hidden="true">
+      <path d="M195 64H317L256 138Z" fill="#22B6EE" />
+      <path d="M256 64H317L256 138Z" fill="#057FCB" />
+      <path d="M256 160 86 434 192 375 256 267Z" fill="#59D9FF" />
+      <path d="M256 160 256 267 320 375 426 434Z" fill="#149DE9" />
+      <path d="M86 434H426L320 375H192Z" fill="#2578BD" />
     </svg>
   );
 }

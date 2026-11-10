@@ -1,4 +1,7 @@
-/** One scannable line for a recommended act: what that act covers, not the repeated setup. */
+/**
+ * Temporary one-line summary. The recommend pipeline will write `gist_ko` itself;
+ * keep this regex only until that field is present on an edge.
+ */
 export function recommendationGist(reason: string, sourceName: string): string {
   const mark = `「${sourceName}」`;
   const sentences = reason.split(/(?<=[.!?])\s+/).map((s) => s.trim()).filter(Boolean);

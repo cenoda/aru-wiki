@@ -101,6 +101,8 @@ export interface RecommendedEdge {
   basis: 'recommended' | 'llm';
   strength: 'strong' | 'weak';
   reason_ko: string;
+  /** LLM-written line. Absent until the pipeline fills it; the UI then uses recText. */
+  gist_ko?: string;
   characters: string[];
   revealed: number;
 }
@@ -124,8 +126,8 @@ export function recommendedGraph() {
     const id = `rec:${e.source}->${e.target}`;
     if (out.has(id)) continue; // the infobox says so already
     out.set(id, { id, source: e.source, target: e.target, basis: 'llm', strength: e.strength,
-      reason_ko: e.reason_ko, characters: e.characters, revealed: versionOrder.get(e.revealed_version) ?? 0 });
+      reason_ko: e.reason_ko, gist_ko: e.gist_ko, characters: e.characters, revealed: versionOrder.get(e.revealed_version) ?? 0 });
   }
   return [...out.values()];
 }
-interface LlmEdge { source: string; target: string; strength: 'strong' | 'weak'; reason_ko: string; characters: string[]; revealed_version: string }
+interface LlmEdge { source: string; target: string; strength: 'strong' | 'weak'; reason_ko: string; gist_ko?: string; characters: string[]; revealed_version: string }

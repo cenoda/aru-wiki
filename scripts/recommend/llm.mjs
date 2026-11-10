@@ -49,14 +49,41 @@ const TOOLS = {
   'spark-contrib': (prompt, schema, cwd) => muse('muse-spark-1.3', prompt, schema, cwd, ['--contributor-mode', 'on']),
   // Gemini through Antigravity (`agy`), in a terminal sandbox inside the empty scratch directory.
   // `-p` must carry the prompt attached (-p=...), or it takes the next flag as the prompt.
-  async flash(prompt, schema, cwd) {
-    const schemaFile = join(cwd, 'schema.json');
-    await writeFile(schemaFile, JSON.stringify(schema));
-    const out = await run('agy', ['--model', process.env.AGY_MODEL ?? 'gemini-3.8-flash-low', '--output-format', 'json',
-      '--json-schema', schemaFile, '--sandbox', `-p=${prompt}`], '', cwd);
-    const res = JSON.parse(out);
-    if (res.status !== 'SUCCESS') throw new Error(`agy: ${res.status} ${String(res.error ?? res.response ?? '').slice(0, 200)}`);
-    return { data: checkShape(res.structured_output ?? parseJsonReply(res.response), schema), cost: null };
+  flash: (prompt, schema, cwd) => agy(process.env.AGY_MODEL ?? 'gemini-3.8-flash-low', prompt, schema, cwd),
+  'agy-sonnet': (prompt, schema, cwd) => agy('claude-sonnet-5-5-medium', prompt, schema, cwd),
+  // Claude Sonnet 5.5 on the API credit, at the same effort as the Antigravity model above.
+  async 'sonnet-api'(prompt, schema) {
+    if (sonnetSpent >= SONNET_BUDGET) throw new Error(`sonnet API budget of $${SONNET_BUDGET} reached`);
+    // Server-side fallback (on by default for Sonnet 5.5): a decline in a category it covers is
+    // re-run on Claude Sonnet 5 inside the same call. It does not cover every category.
+    const res = await anthropic().beta.messages.stream({
+      model: 'claude-sonnet-5-5',
+      max_tokens: 32000,
+      betas: ['server-side-fallback-2026-07-01'],
+      fallbacks: 'default',
+      output_config: { effort: 'medium', format: { type: 'json_schema', schema: apiSchema(schema) } },
+      messages: [{ role: 'user', content: prompt }],
+    }).finalMessage();
+    const u = res.usage;
+    const cost = (u.input_tokens * 2 + u.output_tokens * 10) / 1e6; // $2 / $10 per million tokens
+    sonnetSpent += cost;
+    if (res.stop_reason === 'refusal') throw new Error(`sonnet refused: ${res.stop_details?.category ?? 'unknown'}`);
+    if (res.stop_reason === 'max_tokens') throw new Error('sonnet hit max_tokens');
+    const text = res.content.filter((b) => b.type === 'text').map((b) => b.text).join('');
+    return { data: checkShape(JSON.parse(text), schema), cost };
+  },
+  // Antigravity's Sonnet while its allowance lasts, then the API for the rest of the run.
+  async sonnet(prompt, schema, cwd) {
+    if (!agyExhausted) {
+      try {
+        return await TOOLS['agy-sonnet'](prompt, schema, cwd);
+      } catch (e) {
+        if (!QUOTA.test(e.message)) throw e;
+        agyExhausted = true;
+        console.error(`agy allowance used up (${e.message.slice(0, 160)}); switching to the API`);
+      }
+    }
+    return TOOLS['sonnet-api'](prompt, schema, cwd);
   },
   // Claude Haiku 5.5 through the API, billed to the prepaid API credit (not usable from Claude Code).
   // The key is read from ~/.config/aru/anthropic.env and handed to this client only: exported as
@@ -110,6 +137,23 @@ async function muse(model, prompt, schema, cwd, extra = []) {
   if (!end || end.payload.terminal !== 'completed') throw new Error(`muse: ${end?.payload?.reason ?? 'no terminal event'}`);
   return { data: checkShape(parseJsonReply(end.payload.text), schema), cost: null };
 }
+
+// Gemini or Claude through Antigravity (`agy`), in a terminal sandbox inside the empty scratch
+// directory. `-p` must carry the prompt attached (-p=...), or it takes the next flag as the prompt.
+async function agy(model, prompt, schema, cwd) {
+  const schemaFile = join(cwd, 'schema.json');
+  await writeFile(schemaFile, JSON.stringify(schema));
+  const out = await run('agy', ['--model', model, '--output-format', 'json', '--json-schema', schemaFile, '--sandbox', `-p=${prompt}`], '', cwd);
+  let res;
+  try { res = JSON.parse(out); } catch { throw new Error(`agy: unreadable output ${out.slice(0, 200)}`); }
+  if (res.status !== 'SUCCESS') throw new Error(`agy: ${res.status} ${JSON.stringify(res.error ?? res.response ?? '').slice(0, 300)}`);
+  return { data: checkShape(res.structured_output ?? parseJsonReply(res.response), schema), cost: null };
+}
+// how an exhausted Antigravity allowance shows up (also matched against exit-code errors from run())
+const QUOTA = /quota|exhaust|usage limit|rate.?limit|resource.?exhausted|429|credits?|allowance|limit reached/i;
+let agyExhausted = false;
+const SONNET_BUDGET = Number(process.env.SONNET_API_BUDGET ?? 30);
+let sonnetSpent = 0;
 
 const ANTHROPIC_ENV = join(homedir(), '.config/aru/anthropic.env');
 let anthropicClient;

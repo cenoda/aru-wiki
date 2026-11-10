@@ -169,18 +169,28 @@ if (opt.stride) todo = todo.filter((_, i) => i % Number(opt.stride) === 0);
 if (opt.limit) todo = todo.slice(0, Number(opt.limit));
 
 const results = new Map(previous);
-let asked = 0, cost = 0;
+let asked = 0, cost = 0, done = 0;
 async function judgeOne(p) {
   const names = p.characters ? p.characters.flatMap((c) => [c, ...(aliases[c] ?? [])]) : p.evidence.map((e) => e.label);
   const a = actText(p.source, names, 'end'), b = actText(p.target, names, 'start');
   p.known ??= [];
   const k = p.known.map((id) => actText(id, names, 'end', KNOWN_LIMIT / p.known.length)).filter(Boolean).join('\n…\n');
   const key = `${p.source}->${p.target}`;
-  const inputHash = hash(`${PROMPT_VERSION}|${opt.judge}|${opt.verify}|${a}|${b}|${k}`);
+  // The verdict depends on the judge and its input, not on who verifies it: a verifier change or a
+  // failed verification must not throw away a paid-for verdict. (Older entries hashed the verifier
+  // in too; those still count.)
+  const inputHash = hash(`${PROMPT_VERSION}|${opt.judge}|${a}|${b}|${k}`);
+  const legacyHash = hash(`${PROMPT_VERSION}|${opt.judge}|codex|${a}|${b}|${k}`);
   const prev = results.get(key);
-  if (prev?.input_hash === inputHash && !(opt.redo && prev.status === opt.redo)) return;
+  const sameInput = prev && (prev.input_hash === inputHash || prev.input_hash === legacyHash);
+  if (sameInput && prev.status !== 'needs_verify' && !(opt.redo && prev.status === opt.redo)) return;
   if (!a || !b) {
     results.set(key, { ...p, input_hash: inputHash, status: 'no_text' });
+    return;
+  }
+  if (sameInput && prev.status === 'needs_verify') {
+    results.set(key, await verifyEntry({ ...prev, input_hash: inputHash }, p, a, b, k));
+    console.log(`${results.get(key).status.padEnd(14)} ${nameOf(p.source)} -> ${nameOf(p.target)} (verified later)`);
     return;
   }
   let j = await ask(opt.judge, judgePrompt(p, a, b, k), JUDGE_SCHEMA);
@@ -198,14 +208,22 @@ async function judgeOne(p) {
   if (!v.recommend) entry.status = 'rejected';
   else if (miss.length || !v.quotes_a.length || !v.quotes_b.length) { entry.status = 'quote_mismatch'; entry.missing = miss; }
   else if (opt.verify === 'none') entry.status = 'judged';
-  else {
-    const check = await ask(opt.verify, verifyPrompt(p, a, b, k, v), VERIFY_SCHEMA);
-    asked++; cost += check.cost ?? 0;
-    entry.verify = { tool: opt.verify, ...check.data };
-    entry.status = check.data.supported ? 'accepted' : 'disputed';
-  }
+  else Object.assign(entry, await verifyEntry(entry, p, a, b, k));
   results.set(key, entry);
   console.log(`${entry.status.padEnd(14)} ${nameOf(p.source)} -> ${nameOf(p.target)}`);
+}
+
+// Second-vendor check. If the verifier is unavailable (quota, network) the verdict is kept as
+// needs_verify, and a later run with any verifier finishes it without asking the judge again.
+async function verifyEntry(entry, p, a, b, k) {
+  try {
+    const check = await ask(opt.verify, verifyPrompt(p, a, b, k, entry.judge), VERIFY_SCHEMA);
+    asked++; cost += check.cost ?? 0;
+    return { ...entry, verify: { tool: opt.verify, ...check.data }, status: check.data.supported ? 'accepted' : 'disputed' };
+  } catch (e) {
+    console.error(`verify failed ${p.source}->${p.target}: ${e.message.slice(0, 160)}`);
+    return { ...entry, status: 'needs_verify' };
+  }
 }
 
 const queue = [...todo];
@@ -214,7 +232,7 @@ const save = () => writeFile(outUrl, `${JSON.stringify([...results.values()]
 await Promise.all(Array.from({ length: Number(opt.jobs) }, async () => {
   while (queue.length) {
     const p = queue.shift();
-    try { await judgeOne(p); await save(); } catch (e) { console.error(`error ${p.source}->${p.target}: ${e.message}`); }
+    try { await judgeOne(p); await save(); if (++done % 50 === 0) console.error(`progress ${done}/${todo.length}, reported cost $${cost.toFixed(2)}`); } catch (e) { console.error(`error ${p.source}->${p.target}: ${e.message}`); }
   }
 }));
 await save();

@@ -35,12 +35,14 @@ export const questEdges = edgesJson as QuestEdge[];
 export const questById = new Map(quests.map((q) => [q.id, q]));
 export const versionOrder = new Map(versions.map((v) => [v.id, v.order]));
 
+// Official Korean names, as in ko-names.json (Fandom {{Other Languages}} ko); never transliterated by hand.
 export const REGION_KO: Record<string, string> = {
   Mondstadt: '몬드', Liyue: '리월', Inazuma: '이나즈마', Sumeru: '수메르', Fontaine: '폰타인',
-  Natlan: '나타', 'Nod-Krai': '나드 크라이', Snezhnaya: '스네즈나야', Other: '기타',
+  Natlan: '나타', 'Nod-Krai': '노드크라이', Snezhnaya: '스네즈나야', Other: '기타',
 };
 
-export const displayName = (q: Quest) => q.names.ko ?? q.names.en;
+/** Korean title, or the English one. A wiki "(Act)" suffix is not part of the name. */
+export const displayName = (q: Quest) => q.names.ko ?? q.names.en.replace(/ \(Act\)$/, '');
 
 export const TYPE_LABEL: Record<QuestType, string> = {
   ARCHON: '마신', STORY: '전설', WORLD: '월드', EVENT: '이벤트',
@@ -105,6 +107,8 @@ export interface RecommendedEdge {
   /** strong: spoils or depends on A; medium: relies on what A tells; light: reads better after A */
   tier: RecTier;
   reason_ko: string;
+  /** LLM-written line. Absent until the pipeline fills it; the UI then uses recText. */
+  gist_ko?: string;
   characters: string[];
   revealed: number;
 }
@@ -128,8 +132,8 @@ export function recommendedGraph() {
     const id = `rec:${e.source}->${e.target}`;
     if (out.has(id)) continue; // the infobox says so already
     out.set(id, { id, source: e.source, target: e.target, basis: 'llm', tier: e.tier,
-      reason_ko: e.reason_ko, characters: e.links, revealed: versionOrder.get(e.revealed_version) ?? 0 });
+      reason_ko: e.reason_ko, gist_ko: e.gist_ko, characters: e.links, revealed: versionOrder.get(e.revealed_version) ?? 0 });
   }
   return [...out.values()];
 }
-interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; links: string[]; revealed_version: string }
+interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string }

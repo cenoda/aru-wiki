@@ -338,9 +338,12 @@ function Atlas() {
     const LAYER = CARD_W + 70;
     const PAD = 12;
     const PREFER_Z = 0.92;
-    // Two columns of prerequisites plus the next act. Below this, labels get hard to read,
-    // so a longer chain stays off to the left where it can be dragged into view.
+    // Two columns of prerequisites plus the next act. Below COLUMN_Z the label is
+    // hard to read, so the extra column stays off to the side. The sheet (under
+    // 1100px) asks for 0.8: an iPad portrait (~820px) otherwise keeps both columns
+    // and the card text lands near 9px. Wider screens keep the longer chain.
     const MIN_Z = 0.64;
+    const COLUMN_Z = sheet ? 0.8 : MIN_Z;
     const spanOf = (group: { x: number; y: number }[]) => {
       const minX = Math.min(...group.map((p) => p.x));
       const maxX = Math.max(...group.map((p) => p.x + CARD_W));
@@ -353,11 +356,11 @@ function Atlas() {
       Math.min(PREFER_Z, (availW - PAD * 2) / box.w, (availH - PAD * 2) / box.h);
     let group = around(2);
     let z = zoomFor(spanOf(group));
-    if (z < MIN_Z) {
+    if (z < COLUMN_Z) {
       group = around(1);
       z = zoomFor(spanOf(group));
     }
-    z = Math.max(0.64, Math.min(PREFER_Z, z));
+    z = Math.max(MIN_Z, Math.min(PREFER_Z, z));
     const box = spanOf(group);
     let tx = freeLeft + (availW - box.w * z) / 2 - box.minX * z;
     let ty = freeTop + (availH - box.h * z) / 2 - box.minY * z;
@@ -551,14 +554,15 @@ function Jump({ id, dir, go }: { id: string; dir: 'before' | 'after'; go: (id: s
   );
 }
 
-// Recommended acts as a short list. The long verdict stays behind one control, and the
-// unreviewed mark is shown once for the whole list.
+// Recommended acts as a short list. The shared context stays visible. The one-line
+// gist (temporary regex, or gist_ko once the pipeline writes it) and the full reason
+// open together. The unreviewed mark is shown once for the whole list.
 function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName: string; go: (id: string) => void }) {
   const [open, setOpen] = useState(false);
   const items = edges.map((edge) => {
     const q = questById.get(edge.source)!;
     const name = displayName(q);
-    return { edge, q, name, gist: recommendationGist(edge.reason_ko, name) };
+    return { edge, q, name, gist: edge.gist_ko?.trim() || recommendationGist(edge.reason_ko, name) };
   });
   const lead = recommendationLead(items.map((it) => ({ name: it.name, reason: it.edge.reason_ko })), targetName);
   const llm = edges.some((e) => e.basis === 'llm');
@@ -568,6 +572,12 @@ function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName:
       <div className="recs-head">
         <h3>먼저 하면 좋은 이야기</h3>
         {llm && <span className="tag neutral" title="LLM 판정 후 다른 회사 모델이 검증했습니다. 사람 검수 전입니다.">미검수</span>}
+        <div className="rec-toggle">
+          {strong && <span className="badge">스포일러 주의</span>}
+          <button type="button" className="rec-more" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
+            {open ? '스포일러 접기' : '스포일러 보기'}
+          </button>
+        </div>
       </div>
       {lead && <p className="recs-lead">{lead}</p>}
       <ul className="rec-list">
@@ -577,25 +587,16 @@ function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName:
               <span className="rec-title">{name}</span>
               <span className="rec-meta">{q.first_version}{!q.replayable && ' · 다시 플레이 불가'}</span>
             </button>
-            <p className="rec-gist">{gist}</p>
+            {open && (
+              <div className="rec-spoiler">
+                {gist && <p className="rec-gist">{gist}</p>}
+                {edge.strength !== 'strong' && <span className="tag neutral">배경 이해</span>}
+                <p className="rec-reason">{edge.reason_ko}</p>
+              </div>
+            )}
           </li>
         ))}
       </ul>
-      <button type="button" className="rec-more" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
-        {open ? '이유 접기' : '이유 전문 보기'}
-      </button>
-      {open && (
-        <div className="rec-full">
-          {strong && <span className="badge">스포일러 주의</span>}
-          {items.map(({ edge, name }) => (
-            <div key={edge.id}>
-              <strong>{name}</strong>
-              {edge.strength !== 'strong' && <span className="tag neutral">배경 이해</span>}
-              <p>{edge.reason_ko}</p>
-            </div>
-          ))}
-        </div>
-      )}
     </section>
   );
 }

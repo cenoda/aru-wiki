@@ -6,7 +6,7 @@
 
 기여자가 작성한 글, 슬라이드, 그래프 데이터는 [크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제](https://creativecommons.org/licenses/by-sa/4.0/deed.ko)로 배포됩니다.
 
-Fandom Genshin Impact Wiki(CC BY-SA)의 문장을 가져와 고친 부분은 해당 항목의 `sources`에 원문 URL과 리비전을 기록하며, 같은 라이선스로 배포됩니다. 다른 라이선스(나무위키의 CC BY-NC-SA 등)의 문장은 포함하지 않습니다.
+Fandom Genshin Impact Wiki(CC BY-SA)의 문장을 가져와 고친 부분은 해당 항목의 `sources`에 원문 URL과 리비전을 기록하며, 같은 라이선스로 배포됩니다. Fandom의 정보 상자·분류에서 추출한 데이터(`data/generated/` 등)도 항목마다 `sources`에 원문 URL과 리비전을 기록하며, 같은 라이선스로 배포됩니다. 다른 라이선스(나무위키의 CC BY-NC-SA 등)의 문장은 포함하지 않습니다.
 
 ## 2. HoYoverse의 권리
 

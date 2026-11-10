@@ -1,0 +1,473 @@
+import {
+  applyNodeChanges, type Edge, Handle, type Node, type NodeChange, type NodeProps, Position,
+  MarkerType, ReactFlow, ReactFlowProvider, useReactFlow, useStore,
+} from '@xyflow/react';
+import '@xyflow/react/dist/style.css';
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import {
+  actGraph, displayName, type Quest, type QuestType, questById, quests, REGION_KO, TYPE_LABEL,
+  type Version, versionOrder, versions,
+} from './data';
+import ELK from 'elkjs/lib/elk.bundled.js';
+import './site.css';
+import './focus.css';
+
+// ---------- static graph data ----------
+const { acts, edges: actEdges } = actGraph();
+const questsByAct = Map.groupBy(quests.filter((q) => q.level === 'QUEST' && q.act), (q) => q.act!);
+const before = new Map<string, string[]>();
+const after = new Map<string, string[]>();
+for (const e of actEdges) {
+  (before.get(e.target) ?? before.set(e.target, []).get(e.target)!).push(e.source);
+  (after.get(e.source) ?? after.set(e.source, []).get(e.source)!).push(e.target);
+}
+const START_ACT = 'act_the_outlander_who_caught_the_wind';
+const TYPE_RANK: Record<QuestType, number> = { ARCHON: 0, STORY: 1, WORLD: 2, EVENT: 3 };
+const vOrder = (q: Quest) => versionOrder.get(q.first_version ?? '') ?? 0;
+const typeClass = (q: Quest) => `t-${q.quest_type.toLowerCase()}`;
+const region = (q: Quest) => REGION_KO[q.region ?? ''];
+
+// ---------- atlas layout: one row per era (1.x … Luna … 7.x), one column per version ----------
+const ROMAN: Record<string, number> = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10 };
+function eraOf(v: Version) {
+  const m = /^(\d+)\.(\d+)$/.exec(v.id);
+  if (m) return { era: `${m[1]}.x`, col: Number(m[2]) };
+  const [name, num] = v.id.split(' ');
+  return { era: name, col: (ROMAN[num] ?? 1) - 1 };
+}
+const CARD_W = 236, CARD_H = 40, STEP_X = 276, STEP_Y = 54, HEAD = 64, ERA_GAP = 90, VER_GAP = 30;
+
+// Within a version, acts follow prerequisite order (Kahn), ties by type then name.
+const topoIndex = (() => {
+  const indeg = new Map(acts.map((a) => [a.id, 0]));
+  for (const e of actEdges) indeg.set(e.target, (indeg.get(e.target) ?? 0) + 1);
+  const key = (q: Quest) => [vOrder(q), TYPE_RANK[q.quest_type], displayName(q)] as const;
+  const cmp = (a: Quest, b: Quest) => {
+    const [x, y] = [key(a), key(b)];
+    return x[0] - y[0] || x[1] - y[1] || x[2].localeCompare(y[2]);
+  };
+  let ready = acts.filter((a) => !indeg.get(a.id));
+  const out = new Map<string, number>();
+  while (ready.length) {
+    ready.sort(cmp);
+    const a = ready.shift()!;
+    out.set(a.id, out.size);
+    for (const t of after.get(a.id) ?? []) {
+      indeg.set(t, indeg.get(t)! - 1);
+      if (indeg.get(t) === 0) ready.push(questById.get(t)!);
+    }
+  }
+  for (const a of acts) if (!out.has(a.id)) out.set(a.id, out.size); // cycles, if the data ever has one
+  return out;
+})();
+
+/**
+ * Storylines ("lines" on a metro map): each act continues the line of one prerequisite of the
+ * same quest type whose line has not continued yet (Archon → Archon, a character's Act I → Act II).
+ * Links along a line are drawn as straight horizontal track; every other prerequisite is a
+ * cross link, shown only for the focused act.
+ */
+const lines = (() => {
+  const lineOf = new Map<string, number>();
+  const tail: string[] = [];
+  const ordered = [...acts].sort((a, b) => topoIndex.get(a.id)! - topoIndex.get(b.id)!);
+  for (const a of ordered) {
+    let best: Quest | null = null, bestScore = -1;
+    for (const pid of before.get(a.id) ?? []) {
+      const p = questById.get(pid)!;
+      if (p.quest_type !== a.quest_type || tail[lineOf.get(pid)!] !== pid) continue;
+      const score = (p.region === a.region ? 2 : 0) + vOrder(p) / 1000;
+      if (score > bestScore) { best = p; bestScore = score; }
+    }
+    const line = best ? lineOf.get(best.id)! : tail.length;
+    lineOf.set(a.id, line);
+    tail[line] = a.id;
+  }
+  // A line that runs on into the next era row is not drawn as track (it would cut across the map).
+  const versionById = new Map(versions.map((v) => [v.id, v]));
+  const era = (id: string) => eraOf(versionById.get(questById.get(id)!.first_version ?? '')!).era;
+  const trackEdges = new Set(actEdges
+    .filter((e) => lineOf.get(e.source) === lineOf.get(e.target) && era(e.source) === era(e.target))
+    .map((e) => e.id));
+  return { lineOf, trackEdges };
+})();
+
+/**
+ * One row per era; inside a row every storyline keeps one height (its slot), so its track is a
+ * horizontal line. A version column is as wide as the longest run of one line in that version.
+ */
+const atlas = (() => {
+  const eras: { name: string; versions: Version[] }[] = [];
+  for (const v of versions) {
+    const { era } = eraOf(v);
+    if (eras.at(-1)?.name !== era) eras.push({ name: era, versions: [] });
+    eras.at(-1)!.versions.push(v);
+  }
+  const pos = new Map<string, { x: number; y: number }>();
+  const labels: { id: string; text: string; x: number; y: number; kind: 'era' | 'ver' }[] = [];
+  const byTopo = (a: Quest, b: Quest) => topoIndex.get(a.id)! - topoIndex.get(b.id)!;
+  let y = 0;
+  for (const era of eras) {
+    labels.push({ id: `era-${era.name}`, text: era.name, x: -230, y: y + HEAD - 10, kind: 'era' });
+    // x of every act in this era
+    const xOf = new Map<string, number>();
+    let x = 0;
+    for (const v of era.versions) {
+      labels.push({ id: `ver-${v.id}`, text: v.id, x, y, kind: 'ver' });
+      const inVer = acts.filter((a) => a.first_version === v.id).sort(byTopo);
+      const perLine = Map.groupBy(inVer, (a) => lines.lineOf.get(a.id)!);
+      let width = 1;
+      for (const run of perLine.values()) {
+        run.forEach((a, i) => xOf.set(a.id, x + i * STEP_X));
+        width = Math.max(width, run.length);
+      }
+      x += width * STEP_X + VER_GAP;
+    }
+    // pack the era's storylines into slots: Archon first, then by where they start
+    const eraActs = [...xOf.keys()].map((id) => questById.get(id)!);
+    const spans = [...Map.groupBy(eraActs, (a) => lines.lineOf.get(a.id)!).values()].map((run) => ({
+      run,
+      start: Math.min(...run.map((a) => xOf.get(a.id)!)),
+      end: Math.max(...run.map((a) => xOf.get(a.id)!)) + CARD_W,
+      archon: run[0].quest_type === 'ARCHON',
+    })).sort((a, b) => Number(b.archon) - Number(a.archon) || a.start - b.start);
+    const slotEnds: number[] = [];
+    for (const s of spans) {
+      let slot = slotEnds.findIndex((end) => end + 30 <= s.start);
+      if (slot === -1) slot = slotEnds.length;
+      slotEnds[slot] = s.end;
+      for (const a of s.run) pos.set(a.id, { x: xOf.get(a.id)!, y: y + HEAD + slot * STEP_Y });
+    }
+    y += HEAD + slotEnds.length * STEP_Y + ERA_GAP;
+  }
+  return { pos, labels };
+})();
+
+/**
+ * The focused act's branch: every act needed to reach it, its own storyline onward,
+ * and the acts it unlocks directly on other storylines.
+ */
+function branchOf(focus: string, visible: (q: Quest) => boolean) {
+  const ok = (id: string) => visible(questById.get(id)!);
+  const out = new Set([focus]);
+  const up = [focus];
+  while (up.length) for (const p of before.get(up.pop()!) ?? []) if (ok(p) && !out.has(p)) { out.add(p); up.push(p); }
+  const line = lines.lineOf.get(focus);
+  const down = [focus];
+  while (down.length) {
+    const v = down.pop()!;
+    for (const c of after.get(v) ?? []) {
+      if (!ok(c) || out.has(c)) continue;
+      if (lines.lineOf.get(c) === line) { out.add(c); down.push(c); }
+      else if (v === focus) out.add(c);
+    }
+  }
+  return out;
+}
+
+const elk = new ELK();
+async function layoutBranch(ids: Set<string>, focus: string) {
+  const list = [...ids].sort((a, b) => topoIndex.get(a)! - topoIndex.get(b)!);
+  const res = await elk.layout({
+    id: 'branch',
+    layoutOptions: {
+      'elk.algorithm': 'layered', 'elk.direction': 'RIGHT',
+      'elk.layered.spacing.nodeNodeBetweenLayers': '70', 'elk.spacing.nodeNode': '16',
+      'elk.layered.nodePlacement.strategy': 'NETWORK_SIMPLEX',
+      'elk.layered.considerModelOrder.strategy': 'NODES_AND_EDGES',
+    },
+    children: list.map((id) => ({ id, width: CARD_W, height: CARD_H })),
+    edges: actEdges.filter((e) => ids.has(e.source) && ids.has(e.target)).map((e) => ({
+      id: e.id, sources: [e.source], targets: [e.target],
+      ...(lines.lineOf.get(e.source) === lines.lineOf.get(e.target)
+        ? { layoutOptions: { 'elk.layered.priority.straightness': '20' } } : {}),
+    })),
+  });
+  // Re-anchor so the focused act keeps its atlas position: the branch unfolds around it.
+  const f = res.children!.find((c) => c.id === focus)!;
+  const home = atlas.pos.get(focus)!;
+  return new Map(res.children!.map((c) => [c.id, { x: home.x + c.x! - f.x!, y: home.y + c.y! - f.y! }]));
+}
+
+const actFromUrl = () => {
+  const a = new URLSearchParams(location.search).get('act');
+  return a && questById.get(a)?.level === 'ACT' ? a : null;
+};
+
+function Logo() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
+      <path d="M12 7.5l1.2 3.3 3.3 1.2-3.3 1.2L12 16.5l-1.2-3.3L7.5 12l3.3-1.2z" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export default function FocusView() {
+  return <ReactFlowProvider><Atlas /></ReactFlowProvider>;
+}
+
+function Atlas() {
+  const [focus, setFocus] = useState<string | null>(actFromUrl);
+  const [vIdx, setVIdx] = useState(versions.length - 1);
+  const [query, setQuery] = useState('');
+  const flow = useReactFlow();
+  const zoom = useStore((s) => s.transform[2]);
+  const visible = useCallback((q: Quest) => vOrder(q) <= vIdx, [vIdx]);
+
+  useEffect(() => {
+    const onPop = () => setFocus(actFromUrl());
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  const select = useCallback((id: string | null) => {
+    if (id === focus) return;
+    window.history.pushState(null, '', id ? `?act=${id}` : './');
+    setFocus(id);
+    setQuery('');
+  }, [focus]);
+
+  // A focused act that is not released in the chosen version is deselected (back to the atlas).
+  useEffect(() => {
+    if (focus && !visible(questById.get(focus)!)) {
+      window.history.replaceState(null, '', './');
+      setFocus(null);
+    }
+  }, [focus, visible]);
+
+  const neighbours = useMemo(() => {
+    if (!focus) return null;
+    const keep = (ids: string[] = []) => ids.filter((id) => visible(questById.get(id)!));
+    return { before: keep(before.get(focus)), after: keep(after.get(focus)) };
+  }, [focus, visible]);
+
+  // ---------- branch of the focused act, laid out on its own ----------
+  const branch = useMemo(() => (focus ? branchOf(focus, visible) : null), [focus, visible]);
+  // The layout is tagged with the branch it was made for, so a stale one is never used
+  // while the next branch is still being laid out.
+  const [layout, setLayout] = useState<{ branch: Set<string>; pos: Map<string, { x: number; y: number }> } | null>(null);
+  useEffect(() => {
+    let live = true;
+    if (branch) layoutBranch(branch, focus!).then((pos) => { if (live) setLayout({ branch, pos }); });
+    return () => { live = false; };
+  }, [branch, focus]);
+  const branchPos = layout && layout.branch === branch ? layout.pos : null;
+  const inBranch = !!focus && !!branchPos;
+
+  // ---------- nodes: atlas positions, or branch positions while an act is focused ----------
+  const [nodes, setNodes] = useState<Node[]>([]);
+  useEffect(() => {
+    if (focus && !branchPos) return; // wait for the branch layout, keep the current frame
+    const actNodes: Node[] = acts.filter(visible)
+      .filter((a) => !inBranch || branch!.has(a.id))
+      .map((a) => ({
+        id: a.id, type: 'act', width: CARD_W, height: CARD_H,
+        position: (inBranch ? branchPos!.get(a.id) : atlas.pos.get(a.id))!,
+        data: { quest: a, state: a.id === focus ? 'focus' : '', showVersion: inBranch },
+      }));
+    const labelNodes: Node[] = inBranch ? [] : atlas.labels
+      .filter((l) => l.kind === 'era' || versionOrder.get(l.text)! <= vIdx)
+      .map((l) => ({ id: l.id, type: 'label', position: { x: l.x, y: l.y }, draggable: false, selectable: false, data: l }));
+    setNodes([...labelNodes, ...actNodes]);
+  }, [visible, focus, vIdx, branch, branchPos, inBranch]);
+
+  // Atlas: storyline track only. Branch: every link inside the branch (track solid, cross dashed).
+  const edges: Edge[] = useMemo(() => actEdges
+    .filter((e) => visible(questById.get(e.source)!) && visible(questById.get(e.target)!))
+    .flatMap((e): Edge[] => {
+      const track = lines.trackEdges.has(e.id) || lines.lineOf.get(e.source) === lines.lineOf.get(e.target);
+      if (inBranch ? !(branch!.has(e.source) && branch!.has(e.target)) : !lines.trackEdges.has(e.id)) return [];
+      const hot = e.source === focus || e.target === focus;
+      return [{
+        id: e.id, source: e.source, target: e.target,
+        type: inBranch ? 'default' : 'straight',
+        className: `${typeClass(questById.get(e.target)!)} ${track ? 'track' : 'cross'}${hot ? ' hot' : ''}`,
+        markerEnd: { type: MarkerType.ArrowClosed, width: inBranch ? 14 : 11, height: inBranch ? 14 : 11, color: 'var(--arrow)' },
+      }];
+    }), [focus, visible, inBranch, branch]);
+
+  // ---------- camera ----------
+  // A focused act frames its branch: whole when it fits at a readable zoom (>= 0.8), otherwise the
+  // act is centred at 100%. The info card covers the left edge on wide screens, so the view is
+  // centred in the space beside it.
+  const frameBranch = useCallback((duration: number) => {
+    if (!focus || !branchPos) return;
+    const stage = document.querySelector('.stage')!.getBoundingClientRect();
+    const wide = stage.width > 900;
+    const info = document.querySelector('.site .info')?.getBoundingClientRect();
+    const freeLeft = wide ? 350 : 0;
+    const freeTop = !wide && info ? info.bottom - stage.top + 8 : 0;
+    const freeBottom = !wide ? 64 : 0; // legend + button row
+    const availW = stage.width - freeLeft - 40, availH = stage.height - freeTop - freeBottom - 40;
+    const pts = [...branchPos.values()];
+    const minX = Math.min(...pts.map((p) => p.x)), maxX = Math.max(...pts.map((p) => p.x)) + CARD_W;
+    const minY = Math.min(...pts.map((p) => p.y)), maxY = Math.max(...pts.map((p) => p.y)) + CARD_H;
+    const fit = Math.min(1.15, availW / (maxX - minX), availH / (maxY - minY));
+    const f = branchPos.get(focus)!;
+    // whole branch when it fits at a readable zoom; otherwise the act at 100%, a little left of
+    // centre on narrow screens so what it unlocks stays in view
+    const whole = fit >= 0.8;
+    const z = whole ? fit : 1;
+    const [px, py] = whole ? [(minX + maxX) / 2, (minY + maxY) / 2] : [f.x + CARD_W / 2, f.y + CARD_H / 2];
+    const sx = whole || wide ? freeLeft + 20 + availW / 2 : stage.width * 0.32;
+    const sy = freeTop + 20 + availH / 2;
+    let tx = sx - px * z;
+    // no empty band on the left when the act has few or no prerequisites
+    if (!whole) tx = Math.min(tx, freeLeft + 20 - minX * z);
+    flow.setViewport({ x: tx, y: sy - py * z, zoom: z }, { duration });
+  }, [focus, branchPos, flow]);
+
+  // Atlas at reading zoom with an act's card near the left edge (first visit: the first Archon act).
+  const frameAtlasAt = useCallback((id: string, duration: number) => {
+    const p = atlas.pos.get(id)!;
+    const stage = document.querySelector('.stage')!.getBoundingClientRect();
+    const z = 0.9;
+    flow.setViewport({ x: Math.min(260, stage.width * 0.25) - p.x * z, y: 24 + HEAD * z - p.y * z, zoom: z }, { duration });
+  }, [flow]);
+
+  const fitAll = useCallback(() => flow.fitView({ padding: 0.04, duration: 500 }), [flow]);
+
+  const lastFocus = useRef<string | null>(null);
+  const firstFrame = useRef(true);
+  const wantFit = useRef(false);
+  useEffect(() => {
+    if (focus && !branchPos) return;
+    const t = setTimeout(() => {
+      if (focus) frameBranch(firstFrame.current ? 0 : 550);
+      else if (wantFit.current) fitAll();
+      else {
+        // back to where the reader was, unless that act is hidden in the chosen version
+        const back = lastFocus.current && visible(questById.get(lastFocus.current)!) ? lastFocus.current : START_ACT;
+        frameAtlasAt(back, firstFrame.current ? 0 : 500);
+      }
+      wantFit.current = false;
+      firstFrame.current = false;
+      lastFocus.current = focus;
+    }, 60);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [focus, branchPos]);
+
+  // Keep the focused act in view when the window or the iPad orientation changes.
+  useEffect(() => {
+    let t: ReturnType<typeof setTimeout>;
+    const onResize = () => { clearTimeout(t); t = setTimeout(() => frameBranch(0), 150); };
+    window.addEventListener('resize', onResize);
+    return () => { window.removeEventListener('resize', onResize); clearTimeout(t); };
+  }, [frameBranch]);
+
+  const onNodesChange = useCallback((c: NodeChange[]) => setNodes((ns) => applyNodeChanges(c, ns)), []);
+
+  const results = useMemo(() => {
+    const s = query.trim().toLowerCase();
+    if (!s) return [];
+    return quests.filter((q) => visible(q) && (q.level === 'ACT' || q.act)
+      && ((q.names.ko ?? '').toLowerCase().includes(s) || q.names.en.toLowerCase().includes(s)))
+      .sort((a, b) => Number(a.level === 'QUEST') - Number(b.level === 'QUEST') || vOrder(a) - vOrder(b))
+      .slice(0, 10)
+      .map((q) => ({ q, target: q.level === 'ACT' ? q : questById.get(q.act!)! }));
+  }, [query, visible]);
+
+  const sel = focus ? questById.get(focus)! : null;
+  const zoomClass = zoom < 0.45 ? 'far' : zoom < 0.75 ? 'mid' : 'near';
+
+  return (
+    <div className="site graph-page">
+      <div className="wrap">
+        <header>
+          <a className="logo" href="./" onClick={(e) => { e.preventDefault(); select(null); }}><Logo />aru.wiki</a>
+          <form className="find" onSubmit={(e) => { e.preventDefault(); if (results[0]) select(results[0].target.id); }}>
+            <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="막·임무 이름 검색" />
+            {results.length > 0 && (
+              <ul>
+                {results.map(({ q, target }) => (
+                  <li key={q.id}><button type="button" className={typeClass(target)} onClick={() => select(target.id)}>
+                    <i className="dot" />
+                    <span className="hit">{displayName(q)}{q !== target && <em>{displayName(target)} 막</em>}</span>
+                    <small>{q.first_version}</small>
+                  </button></li>
+                ))}
+              </ul>
+            )}
+          </form>
+          <nav>
+            <select value={vIdx} onChange={(e) => setVIdx(+e.target.value)} aria-label="공개 버전">
+              {versions.map((x) => <option key={x.id} value={x.order}>{x.id}까지 공개</option>).reverse()}
+            </select>
+          </nav>
+        </header>
+      </div>
+
+      <main className={`stage ${zoomClass}${focus ? ' focusing' : ''}`}>
+        <ReactFlow
+          nodes={nodes} edges={edges} nodeTypes={nodeTypes} onNodesChange={onNodesChange}
+          onNodeClick={(_, n) => { if (n.type === 'act') select(n.id === focus ? null : n.id); }}
+          onPaneClick={() => select(null)}
+          nodesConnectable={false} minZoom={0.08} maxZoom={2} proOptions={{ hideAttribution: true }}
+          onlyRenderVisibleElements
+        />
+
+        {sel && neighbours && (
+          <aside className={`info ${typeClass(sel)}`}>
+            <div className="tags">
+              <span className="tag">{TYPE_LABEL[sel.quest_type]}</span>
+              {region(sel) && <span className="tag neutral">{region(sel)}</span>}
+              <span className="tag neutral">{sel.first_version}</span>
+              {!sel.replayable && <span className="badge">다시 플레이 불가</span>}
+            </div>
+            <div className="name">{displayName(sel)}</div>
+            <div className="en">{sel.names.en}</div>
+            <div className="meta">임무 {questsByAct.get(sel.id)?.length ?? 0}개 · 먼저 {neighbours.before.length} · 다음 {neighbours.after.length}</div>
+            <div className="jumps">
+              {neighbours.before.map((id) => <Jump key={id} id={id} dir="before" go={select} />)}
+              {neighbours.after.map((id) => <Jump key={id} id={id} dir="after" go={select} />)}
+            </div>
+          </aside>
+        )}
+
+        <div className="legend" aria-label="범례">
+          <span className="t-archon"><i />마신</span><span className="t-story"><i />전설</span>
+          <span className="t-world"><i />월드</span><span className="t-event"><i />이벤트</span>
+          <span className="ln solid">같은 이야기 흐름</span><span className="ln dashed">다른 흐름에서 오는 선행</span>
+          <span className="hint">왼쪽 → 오른쪽으로 진행 · 막을 누르면 갈래 보기 · 끌어서 이동</span>
+        </div>
+        <div className="controls">
+          {!focus && zoom < 0.45 ? (
+            <button className="secondary" onClick={() => {
+              const st = document.querySelector('.stage')!.getBoundingClientRect();
+              const c = flow.screenToFlowPosition({ x: st.left + st.width / 2, y: st.top + st.height / 2 });
+              flow.setCenter(c.x, c.y, { zoom: 0.9, duration: 450 });
+            }}>읽기 크기로</button>
+          ) : (
+            <button className="secondary" onClick={() => { if (focus) { wantFit.current = true; select(null); } else fitAll(); }}>전체 보기</button>
+          )}
+        </div>
+      </main>
+    </div>
+  );
+}
+
+function Jump({ id, dir, go }: { id: string; dir: 'before' | 'after'; go: (id: string) => void }) {
+  const q = questById.get(id)!;
+  return (
+    <button className={`jump ${typeClass(q)}`} onClick={() => go(id)}>
+      {dir === 'before' && <span className="arrow">←</span>}{displayName(q)}{dir === 'after' && <span className="arrow">→</span>}
+    </button>
+  );
+}
+
+// ---------- node renderers ----------
+type ActData = { quest: Quest; state: '' | 'focus'; showVersion: boolean };
+const ActNode = memo(({ data }: NodeProps<Node<ActData>>) => (
+  <div className={`card-node ${typeClass(data.quest)} ${data.state}`} title={data.quest.names.ko ? `${data.quest.names.ko} (${data.quest.names.en})` : data.quest.names.en}>
+    <Handle type="target" position={Position.Left} />
+    <span className="name">{displayName(data.quest)}</span>
+    {data.showVersion && <span className="ver">{data.quest.first_version}</span>}
+    <Handle type="source" position={Position.Right} />
+  </div>
+));
+type LabelData = { text: string; kind: 'era' | 'ver' };
+const LabelNode = memo(({ data }: NodeProps<Node<LabelData>>) => <div className={`atlas-label ${data.kind}`}>{data.text}</div>);
+const nodeTypes = { act: ActNode, label: LabelNode };

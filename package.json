@@ -3,9 +3,29 @@
   "private": true,
   "type": "module",
   "license": "MPL-2.0",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "screenshot": "node scripts/dev/screenshot.mjs",
     "fetch:stage1": "node scripts/fandom/build-stage1.mjs",
     "test": "node --test \"scripts/**/*.test.mjs\""
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.12.1",
+    "elkjs": "^0.12.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "playwright": "^1.65.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7"
   }
 }

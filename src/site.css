@@ -1,0 +1,63 @@
+/* Design tokens and base components shared with Gscouter (gscouter.net, same author). */
+.site {
+  --bg: #eef3f9; --card: #fdfeff; --text: #262a36; --muted: #636a7a;
+  --line: #dbe3ee; --accent: #3f4a72; --on-accent: #fdfeff; --accent-soft: #e6ecf5;
+  --gold: #b08a45; --gold-soft: #f7f1e3; --band: #2a2d3c; --band-text: #ece5d8;
+  --sky-ink: rgba(176,138,69,.5);
+  --sky-glow: radial-gradient(ellipse 60% 55% at 82% -5%, rgba(255,255,255,.95), rgba(255,246,222,.5) 40%, transparent 70%),
+    radial-gradient(ellipse 55% 45% at 0% 35%, rgba(196,220,245,.55), transparent 70%),
+    linear-gradient(#fbfcfe, #e2ebf6);
+  --warn-bg: #fbf0d6; --warn: #7d5600; --good: #2f7a4a;
+  /* quest types reuse the element palette */
+  --archon: #b08a45; --story: #9a5fd6; --world: #2fae8e; --event: #e2603c;
+}
+@media (prefers-color-scheme: dark) {
+  .site {
+    --bg: #15161d; --card: #1e2029; --text: #ece5d8; --muted: #a39d90;
+    --line: #30323d; --accent: #d3bc8e; --on-accent: #1e2029; --accent-soft: #2c2b2b;
+    --gold: #d3bc8e; --gold-soft: #2e2a22; --band: #0f1015; --band-text: #ece5d8;
+    --sky-ink: rgba(170,140,255,.45);
+    --sky-glow: radial-gradient(ellipse 60% 50% at 85% 5%, rgba(110,60,190,.32), transparent 70%),
+      radial-gradient(ellipse 55% 45% at 5% 95%, rgba(150,40,140,.22), transparent 70%);
+    --warn-bg: #3a2e12; --warn: #f0c36a; --good: #6fcf97;
+    --archon: #d3bc8e; --story: #b88af0; --world: #55cfae; --event: #f27f5c;
+  }
+}
+.site { min-height: 100%; background: var(--bg); color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+.site::before, .site::after { content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+.site::before { background: var(--sky-glow); }
+.site::after { --art: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 1000' preserveAspectRatio='xMidYMin slice'%3E%3Cg fill='none' stroke='%23000'%3E%3Ccircle cx='1320' cy='150' r='150' stroke-opacity='0.5'/%3E%3Ccircle cx='1320' cy='150' r='240' stroke-opacity='0.35' stroke-dasharray='2 7'/%3E%3Ccircle cx='1320' cy='150' r='360' stroke-opacity='0.28'/%3E%3Ccircle cx='1320' cy='150' r='520' stroke-opacity='0.16' stroke-dasharray='1 9'/%3E%3Cpath d='M760 150 H1880 M1320 -410 V710' stroke-opacity='.12'/%3E%3Cpath d='M170 120 L260 210 L390 180 L470 290 L430 400 L600 360' stroke-opacity='.3'/%3E%3C/g%3E%3Cg fill='%23000'%3E%3Ccircle cx='170' cy='120' r='2.6' fill-opacity='.7'/%3E%3Ccircle cx='260' cy='210' r='2.6' fill-opacity='.7'/%3E%3Ccircle cx='390' cy='180' r='2.6' fill-opacity='.7'/%3E%3Ccircle cx='470' cy='290' r='2.6' fill-opacity='.7'/%3E%3Ccircle cx='430' cy='400' r='2.6' fill-opacity='.7'/%3E%3Ccircle cx='600' cy='360' r='2.6' fill-opacity='.7'/%3E%3Ccircle cx='1470' cy='150' r='4' fill-opacity='.6'/%3E%3Ccircle cx='1150' cy='310' r='4' fill-opacity='.6'/%3E%3Ccircle cx='1575' cy='430' r='4' fill-opacity='.6'/%3E%3Ccircle cx='518' cy='151' r='0.8' fill-opacity='0.28'/%3E%3Ccircle cx='857' cy='366' r='0.8' fill-opacity='0.66'/%3E%3Ccircle cx='344' cy='86' r='1.3' fill-opacity='0.28'/%3E%3Ccircle cx='145' cy='425' r='1.8' fill-opacity='0.31'/%3E%3Ccircle cx='357' cy='627' r='0.8' fill-opacity='0.51'/%3E%3Ccircle cx='635' cy='976' r='0.8' fill-opacity='0.50'/%3E%3Ccircle cx='213' cy='419' r='1.8' fill-opacity='0.30'/%3E%3Ccircle cx='494' cy='816' r='1' fill-opacity='0.30'/%3E%3Ccircle cx='914' cy='188' r='0.8' fill-opacity='0.50'/%3E%3Ccircle cx='100' cy='60' r='1' fill-opacity='0.47'/%3E%3Ccircle cx='851' cy='777' r='1.3' fill-opacity='0.51'/%3E%3Ccircle cx='725' cy='300' r='1' fill-opacity='0.56'/%3E%3Ccircle cx='391' cy='574' r='1.8' fill-opacity='0.47'/%3E%3Ccircle cx='550' cy='449' r='1.8' fill-opacity='0.69'/%3E%3Ccircle cx='189' cy='418' r='1' fill-opacity='0.32'/%3E%3Ccircle cx='782' cy='39' r='0.8' fill-opacity='0.59'/%3E%3Ccircle cx='917' cy='875' r='1' fill-opacity='0.40'/%3E%3Ccircle cx='560' cy='497' r='1.3' fill-opacity='0.28'/%3E%3Ccircle cx='150' cy='270' r='0.8' fill-opacity='0.28'/%3E%3Ccircle cx='1122' cy='647' r='1.3' fill-opacity='0.38'/%3E%3Ccircle cx='617' cy='669' r='0.8' fill-opacity='0.67'/%3E%3Ccircle cx='569' cy='611' r='1.3' fill-opacity='0.28'/%3E%3Ccircle cx='1229' cy='129' r='1' fill-opacity='0.43'/%3E%3Ccircle cx='1467' cy='497' r='1' fill-opacity='0.45'/%3E%3Ccircle cx='879' cy='883' r='1.3' fill-opacity='0.64'/%3E%3Ccircle cx='445' cy='415' r='1' fill-opacity='0.56'/%3E%3Ccircle cx='609' cy='231' r='0.8' fill-opacity='0.33'/%3E%3Ccircle cx='371' cy='233' r='1.3' fill-opacity='0.62'/%3E%3Ccircle cx='292' cy='282' r='1' fill-opacity='0.44'/%3E%3Ccircle cx='591' cy='566' r='1' fill-opacity='0.56'/%3E%3Ccircle cx='825' cy='618' r='0.8' fill-opacity='0.46'/%3E%3Ccircle cx='1394' cy='952' r='1.8' fill-opacity='0.43'/%3E%3Ccircle cx='638' cy='104' r='1.3' fill-opacity='0.28'/%3E%3Ccircle cx='108' cy='209' r='1' fill-opacity='0.30'/%3E%3Ccircle cx='961' cy='102' r='1.8' fill-opacity='0.32'/%3E%3Ccircle cx='162' cy='364' r='0.8' fill-opacity='0.28'/%3E%3Ccircle cx='333' cy='376' r='1' fill-opacity='0.68'/%3E%3Ccircle cx='964' cy='474' r='0.8' fill-opacity='0.63'/%3E%3Ccircle cx='1589' cy='466' r='1.3' fill-opacity='0.39'/%3E%3Ccircle cx='231' cy='750' r='1' fill-opacity='0.47'/%3E%3Ccircle cx='1107' cy='516' r='1' fill-opacity='0.68'/%3E%3Ccircle cx='845' cy='147' r='1.8' fill-opacity='0.66'/%3E%3Ccircle cx='1213' cy='298' r='0.8' fill-opacity='0.56'/%3E%3Ccircle cx='418' cy='367' r='1' fill-opacity='0.41'/%3E%3Ccircle cx='356' cy='542' r='1.8' fill-opacity='0.40'/%3E%3Ccircle cx='357' cy='812' r='1' fill-opacity='0.61'/%3E%3Ccircle cx='1309' cy='740' r='1' fill-opacity='0.34'/%3E%3Ccircle cx='788' cy='731' r='0.8' fill-opacity='0.61'/%3E%3Ccircle cx='756' cy='194' r='1.8' fill-opacity='0.68'/%3E%3Ccircle cx='716' cy='937' r='1' fill-opacity='0.68'/%3E%3Ccircle cx='583' cy='220' r='1' fill-opacity='0.46'/%3E%3Ccircle cx='540' cy='483' r='1.8' fill-opacity='0.63'/%3E%3Ccircle cx='767' cy='653' r='0.8' fill-opacity='0.63'/%3E%3Ccircle cx='192' cy='389' r='1' fill-opacity='0.47'/%3E%3Ccircle cx='286' cy='789' r='1' fill-opacity='0.29'/%3E%3Ccircle cx='1514' cy='722' r='1.3' fill-opacity='0.43'/%3E%3Ccircle cx='1515' cy='725' r='1' fill-opacity='0.70'/%3E%3Ccircle cx='44' cy='591' r='1.3' fill-opacity='0.61'/%3E%3Ccircle cx='234' cy='827' r='1.3' fill-opacity='0.55'/%3E%3Ccircle cx='561' cy='549' r='1' fill-opacity='0.26'/%3E%3Ccircle cx='1279' cy='726' r='0.8' fill-opacity='0.49'/%3E%3Ccircle cx='1494' cy='434' r='1' fill-opacity='0.62'/%3E%3Ccircle cx='338' cy='252' r='1' fill-opacity='0.48'/%3E%3Ccircle cx='1222' cy='326' r='1.8' fill-opacity='0.44'/%3E%3Ccircle cx='210' cy='910' r='1' fill-opacity='0.65'/%3E%3Ccircle cx='1060' cy='815' r='1.8' fill-opacity='0.44'/%3E%3Ccircle cx='1468' cy='502' r='1.8' fill-opacity='0.32'/%3E%3Ccircle cx='817' cy='873' r='1' fill-opacity='0.52'/%3E%3Ccircle cx='1242' cy='150' r='1' fill-opacity='0.46'/%3E%3Ccircle cx='1160' cy='556' r='1' fill-opacity='0.56'/%3E%3C/g%3E%3C/svg%3E");
+  background: var(--sky-ink); -webkit-mask: var(--art) top right / cover no-repeat; mask: var(--art) top right / cover no-repeat; }
+.site > * { position: relative; z-index: 1; }
+.site a { color: var(--accent); }
+.site .t-archon { --c: var(--archon); } .site .t-story { --c: var(--story); }
+.site .t-world { --c: var(--world); } .site .t-event { --c: var(--event); }
+
+.site .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px 16px; }
+.site header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding: 12px 0; flex-wrap: wrap;
+  background: var(--band); color: var(--band-text); box-shadow: 0 0 0 100vmax var(--band); clip-path: inset(0 -100vmax); }
+.site header .logo { display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none; font-weight: 700; font-size: 1.25rem; letter-spacing: .02em; }
+.site header .logo svg { width: 26px; height: 26px; color: #d3bc8e; }
+.site header nav { margin-left: auto; display: flex; align-items: center; gap: 18px; }
+.site header nav a { color: inherit; opacity: .72; text-decoration: none; font-size: .95rem; }
+.site header nav a:hover { opacity: 1; }
+.site header select { font: inherit; font-size: .9rem; color: inherit; background: transparent; border: 1px solid rgba(236,229,216,.3); border-radius: 4px; padding: 2px 4px; }
+.site header select option { color: initial; }
+
+.site .card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; margin-bottom: 16px; }
+.site h1, .site h2, .site h3 { margin: 0 0 12px; line-height: 1.3; }
+.site h1 { font-size: 1.55rem; letter-spacing: -.01em; } .site h2 { font-size: 1.15rem; } .site h3 { font-size: 1rem; }
+.site p { margin: 8px 0; }
+.site .muted { color: var(--muted); font-size: .9rem; }
+.site input[type=search] { flex: 1; min-width: 0; padding: 8px 12px; font: inherit; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--text); }
+.site input[type=search]:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold); }
+.site button, .site .button { padding: 8px 16px; font: inherit; font-size: .95rem; font-weight: 600; border: 0; border-radius: 4px;
+  background: var(--accent); color: var(--on-accent); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+.site button.secondary, .site .button.secondary { background: transparent; color: var(--text); box-shadow: inset 0 0 0 1px var(--line); font-weight: 500; }
+.site button.link { padding: 0; background: none; box-shadow: none; color: var(--accent); font-size: inherit; font-weight: inherit; text-decoration: underline; }
+.site .badge { font-size: .75rem; font-weight: 600; color: var(--warn); background: var(--warn-bg); border: 1px solid var(--warn); border-radius: 999px; padding: 1px 8px; white-space: nowrap; }
+.site .tag { font-size: .8rem; font-weight: 600; color: var(--c); border: 1px solid color-mix(in srgb, var(--c) 55%, transparent);
+  background: color-mix(in srgb, var(--c) 10%, var(--card)); border-radius: 999px; padding: 1px 9px; white-space: nowrap; }
+.site footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+.site footer p { margin: 4px 0; }

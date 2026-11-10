@@ -112,6 +112,7 @@ async function main() {
       first_version: version,
       // Event quests are time-limited; world quests tied to an event are unknown until reviewed.
       replayable: !isEvent,
+      ...(fields.region ? { region: plainText(fields.region).split(/\s*[;,]\s*/)[0] } : {}),
       ...(fields.event_name ? { event: plainText(fields.event_name) } : {}),
       sources: [{ wiki: 'fandom', url: pageUrl(page.title), revision: page.revid }],
     });
@@ -168,6 +169,20 @@ async function main() {
         if (q?.level === 'QUEST' && !q.act) q.act = node.id;
       }
     }
+  }
+
+  // Acts rarely state a region; use the most common region among their quests.
+  const regionVotes = new Map();
+  for (const n of nodes.values()) {
+    if (n.level !== 'QUEST' || !n.act || !n.region) continue;
+    const votes = regionVotes.get(n.act) ?? new Map();
+    votes.set(n.region, (votes.get(n.region) ?? 0) + 1);
+    regionVotes.set(n.act, votes);
+  }
+  for (const n of nodes.values()) {
+    if (n.level !== 'ACT' || n.region) continue;
+    const votes = regionVotes.get(n.id);
+    if (votes) n.region = [...votes].sort((a, b) => b[1] - a[1])[0][0];
   }
 
   // ---------- edges ----------

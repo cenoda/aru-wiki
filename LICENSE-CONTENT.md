@@ -12,4 +12,4 @@ Fandom Genshin Impact Wiki(CC BY-SA)의 문장을 가져와 고친 부분은 해
 
 『원신(Genshin Impact)』의 세계관, 명칭, 대사, 이미지 등 게임에 관한 모든 권리는 COGNOSPHERE Pte., Ltd. (HoYoverse / miHoYo)에 있으며, 위 라이선스는 이 권리에 대해 어떤 허락도 부여하지 않습니다.
 
-본 프로젝트는 HoYoverse와 제휴하거나 승인받지 않은 비영리 팬 프로젝트입니다. 광고·후원·유료 기능을 운영하지 않으며, HoYoverse의 수정·삭제 요청은 즉시 따릅니다.
+본 프로젝트는 HoYoverse와 제휴하거나 승인받지 않은 비영리 팬 프로젝트입니다. 광고·후원·유료 기능을 운영하지 않으며, HoYoverse의 수정·삭제 요청은 즉시 따릅니다. 요청은 [contact@aru.wiki](mailto:contact@aru.wiki)로 받습니다.

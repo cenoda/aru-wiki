@@ -50,16 +50,18 @@
 .site .react-flow__edge { pointer-events: none; }
 
 /* floating info for the focused act */
-.site .info { position: absolute; left: 16px; top: 16px; z-index: 4; width: 320px; max-height: calc(100% - 32px); overflow: auto;
+.site .info { position: absolute; left: 16px; top: 16px; z-index: 4; width: 360px; max-height: calc(100% - 32px); overflow: auto;
   padding: 14px 16px 14px 20px; background: var(--card); border: 1px solid var(--line); border-radius: 6px;
   box-shadow: inset 4px 0 0 var(--c), 0 6px 20px rgba(0,0,0,.08); }
 .site .info .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
 .site .info .name { font-size: 1.3rem; font-weight: 700; line-height: 1.3; }
 .site .info .en { color: var(--muted); font-size: .85rem; }
 .site .info .meta { margin-top: 6px; color: var(--muted); font-size: .85rem; }
-.site .info .jumps { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.site .jump { padding: 3px 10px; font-size: .85rem; font-weight: 500; color: var(--text); background: var(--card);
-  box-shadow: inset 0 0 0 1px var(--line), inset 3px 0 0 var(--c); border-radius: 999px; }
+.site .info .jumps { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-top: 10px; }
+.site .jump { display: flex; align-items: center; gap: 4px; width: auto; max-width: 100%; padding: 4px 10px;
+  font-size: .85rem; font-weight: 500; color: var(--text); background: var(--card); text-align: left;
+  box-shadow: inset 0 0 0 1px var(--line), inset 3px 0 0 var(--c); border-radius: 8px; }
+.site .jump .label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .site .jump:hover { background: var(--gold-soft); }
 .site .jump .arrow { color: var(--muted); margin: 0 3px; }
 .site .tag.neutral { --c: var(--muted); }
@@ -82,11 +84,8 @@
 @media (max-width: 600px) {
   .site.graph-page header { flex-wrap: wrap; row-gap: 8px; }
   .site .find { order: 3; flex-basis: 100%; max-width: none; margin-left: 0; }
-  .site .info { width: auto; right: 16px; max-height: 38%; padding: 10px 12px 10px 16px; }
   .site .info .name { font-size: 1.1rem; }
-  .site .info .jumps { margin-top: 6px; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px; }
-  .site .jump { flex: none; }
-  .site .legend { max-width: calc(100% - 130px); padding: 6px 8px; gap: 2px 8px; font-size: .72rem; }
+  .site .legend { padding: 6px 8px; gap: 2px 8px; font-size: .72rem; }
   .site .legend .hint { display: none; }
 }
 
@@ -96,16 +95,36 @@
 .site .react-flow__edge.rec.weak .react-flow__edge-path { stroke-opacity: .55; stroke-width: 1.8; }
 .site .legend .ln.rec::before { border-top: 2.5px dotted var(--gold); }
 .site .info .recs { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
-.site .info .recs h3 { margin: 0 0 8px; font-size: .85rem; font-weight: 700; color: var(--muted); }
-.site .rec-item + .rec-item { margin-top: 10px; }
-.site .rec-item .jump { display: inline-flex; align-items: baseline; max-width: 100%; text-align: left; }
-.site .rec-item .jump small { margin-left: 6px; color: var(--muted); font-size: .75rem; white-space: nowrap; }
-/* reasons are clamped; tap to read the rest */
-.site .rec-item p { margin: 5px 0 4px; font-size: .82rem; line-height: 1.45; color: var(--text); cursor: pointer;
-  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.site .rec-item.open p { display: block; cursor: auto; }
-.site .rec-meta { display: flex; gap: 5px; }
-@media (max-width: 600px) {
-  .site .info .recs { margin-top: 8px; padding-top: 6px; }
-  .site .rec-item p { -webkit-line-clamp: 2; }
+.site .recs-head { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
+.site .recs-head h3 { margin: 0; font-size: .85rem; font-weight: 700; color: var(--muted); }
+.site .recs-lead { margin: 0 0 8px; font-size: .84rem; line-height: 1.45; }
+.site .rec-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.site .rec-jump { display: flex; flex-direction: column; align-items: flex-start; width: auto; max-width: 100%; padding: 6px 10px 6px 12px;
+  border-radius: 8px; text-align: left; font: inherit; font-weight: 600; color: var(--text); background: var(--card);
+  box-shadow: inset 0 0 0 1px var(--line), inset 3px 0 0 var(--c); }
+.site .rec-jump:hover { background: var(--gold-soft); }
+.site .rec-title { font-size: .92rem; line-height: 1.35; }
+.site .rec-meta { margin-top: 1px; font-size: .75rem; font-weight: 500; color: var(--muted); }
+.site .rec-gist { margin: 3px 2px 0; font-size: .84rem; line-height: 1.4; }
+.site button.rec-more { margin-top: 8px; padding: 0; background: none; box-shadow: none; color: var(--accent);
+  font-size: .82rem; font-weight: 600; }
+.site button.rec-more:hover { text-decoration: underline; }
+.site .rec-full { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 8px; }
+.site .rec-full div { width: 100%; }
+.site .rec-full strong { font-size: .8rem; }
+.site .rec-full .tag { margin-left: 6px; }
+.site .rec-full p { margin: 2px 0 0; font-size: .8rem; line-height: 1.45; }
+
+/* Wide screens: the card covers the left edge, so a node sitting under it cannot peek out beside it.
+   The legend stays in the graph column. */
+@media (min-width: 1100px) {
+  .site .stage.focusing .info { left: 0; width: 376px; border-radius: 0 6px 6px 0; }
+  .site .stage.focusing .legend { left: 392px; }
+}
+
+/* Tablet and phone: the card is a short sheet, and the branch uses the space above it. */
+@media (max-width: 1099px) {
+  .site .info { left: 12px; right: 12px; top: auto; bottom: 12px; width: auto; max-height: min(42vh, 380px); }
+  .site .legend, .site .stage.focusing .legend { top: 12px; bottom: auto; left: 12px; max-width: calc(100% - 130px); }
+  .site .controls { top: 12px; right: 12px; bottom: auto; }
 }

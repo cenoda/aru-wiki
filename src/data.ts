@@ -2,6 +2,7 @@ import edgesJson from '../data/generated/quest-edges.json';
 import questsJson from '../data/generated/quests.json';
 import versionsJson from '../data/generated/versions.json';
 import recommendedJson from '../data/generated/recommended-edges.json';
+import unitsJson from '../data/generated/quest-units.json';
 
 export type QuestType = 'ARCHON' | 'STORY' | 'WORLD' | 'EVENT';
 
@@ -41,8 +42,8 @@ export const REGION_KO: Record<string, string> = {
   Natlan: '나타', 'Nod-Krai': '노드크라이', Snezhnaya: '스네즈나야', Other: '기타',
 };
 
-/** Korean title, or the English one. A wiki "(Act)" suffix is not part of the name. */
-export const displayName = (q: Quest) => q.names.ko ?? q.names.en.replace(/ \(Act\)$/, '');
+/** Korean title, or the English one. A wiki "(Act)" or "(Event)" suffix is not part of the name. */
+export const displayName = (q: { names: { en: string; ko?: string } }) => q.names.ko ?? q.names.en.replace(/ \((?:Act|Event)\)$/, '');
 
 export const TYPE_LABEL: Record<QuestType, string> = {
   ARCHON: '마신', STORY: '전설', WORLD: '월드', EVENT: '이벤트',
@@ -53,6 +54,44 @@ const actOf = (id: string) => {
   const q = questById.get(id);
   return q?.level === 'ACT' ? q.id : q?.act ?? null;
 };
+
+// ---------- quests outside acts, grouped (quest-units.json) ----------
+export type UnitKind = 'series' | 'event' | 'chain' | 'single';
+/**
+ * How a unit hangs off the act map. requirement: the game asks for those acts.
+ * region: after the Archon act that enters its region; a reading position, not a lock.
+ * none: no act to hang it on (mostly time-limited events).
+ */
+export type AttachBasis = 'requirement' | 'region' | 'none';
+export interface Unit {
+  id: string;
+  kind: UnitKind;
+  names: { en: string; ko?: string };
+  /** quest ids in play order */
+  members: string[];
+  quest_type: QuestType;
+  region?: string;
+  first_version: string | null;
+  replayable: boolean;
+  attach: { acts: string[]; basis: AttachBasis };
+  /** series that continue this one */
+  next?: string[];
+  major?: boolean;
+}
+const unitsData = unitsJson as { region_entry: Record<string, string>; units: Unit[] };
+export const units = unitsData.units;
+export const unitById = new Map(units.map((u) => [u.id, u]));
+/** region → the Archon act that enters it */
+export const regionEntry = unitsData.region_entry;
+export const unitOfQuest = new Map(units.flatMap((u) => u.members.map((m) => [m, u.id] as const)));
+export const UNIT_LABEL: Record<UnitKind, string> = { series: '시리즈', event: '이벤트', chain: '연속 임무', single: '단일 임무' };
+
+/** A node on the map: an act or a unit. Both carry names, type, version and replayability. */
+export type MapItem = Quest | Unit;
+export const isUnit = (x: MapItem): x is Unit => 'kind' in x;
+export const itemById = (id: string): MapItem | undefined => questById.get(id) ?? unitById.get(id);
+/** Map node of a quest id, act id or unit id. */
+const nodeOf = (id: string) => actOf(id) ?? unitOfQuest.get(id) ?? (unitById.has(id) ? id : null);
 
 export interface ActEdge { id: string; source: string; target: string; revealed: number }
 
@@ -114,14 +153,15 @@ export interface RecommendedEdge {
 }
 
 /**
- * Act-level RECOMMENDED edges: the infobox `recommended` field lifted to acts, and LLM verdicts
+ * RECOMMENDED edges between map nodes (acts and units): the infobox `recommended` field lifted
+ * to its act or unit, and LLM verdicts
  * checked by a second vendor (recommended-edges.json). Neither is required by the game.
  */
 export function recommendedGraph() {
   const out = new Map<string, RecommendedEdge>();
   for (const e of questEdges) {
     if (e.relation !== 'RECOMMENDED') continue;
-    const s = actOf(e.source), t = actOf(e.target);
+    const s = nodeOf(e.source), t = nodeOf(e.target);
     if (!s || !t || s === t) continue;
     const id = `rec:${s}->${t}`;
     out.set(id, { id, source: s, target: t, basis: 'recommended', tier: 'strong',

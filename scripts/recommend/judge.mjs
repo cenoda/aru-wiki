@@ -2,7 +2,7 @@
 // (design.md §5). Results are cached by input hash in recommended-judgments.json, so a rerun
 // only asks about pairs whose excerpts or tools changed.
 //
-//   node scripts/recommend/judge.mjs [--only Sandrone] [--limit 20] [--judge claude] [--verify codex] [--jobs 3]
+//   node scripts/recommend/judge.mjs [--only Sandrone] [--stride 16] [--limit 20] [--judge claude] [--verify codex] [--jobs 3]
 import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
 import { parseArgs } from 'node:util';
@@ -10,7 +10,7 @@ import { dialogueLines, excerpt, loadPages, normalize } from './excerpt.mjs';
 import { ask } from './llm.mjs';
 
 const { values: opt } = parseArgs({ options: {
-  only: { type: 'string' }, limit: { type: 'string' }, jobs: { type: 'string', default: '3' },
+  only: { type: 'string' }, limit: { type: 'string' }, stride: { type: 'string' }, jobs: { type: 'string', default: '3' },
   judge: { type: 'string', default: 'claude' }, verify: { type: 'string', default: 'codex' },
 } });
 if (opt.judge === opt.verify) throw new Error('judge and verify must be different tools');
@@ -140,6 +140,8 @@ const quoted = (qs, text) => qs.length > 0 && qs.every((q) => q.length > 0 && q.
 
 let todo = candidates;
 if (opt.only) todo = todo.filter((p) => p.characters.includes(opt.only));
+// --stride k takes every k-th pair: a sample spread over all versions
+if (opt.stride) todo = todo.filter((_, i) => i % Number(opt.stride) === 0);
 if (opt.limit) todo = todo.slice(0, Number(opt.limit));
 
 const results = new Map(previous);

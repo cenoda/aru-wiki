@@ -162,3 +162,47 @@
 /* light recommendations read fainter in the card too */
 .site .rec-list li.rec-light { opacity: .62; }
 .site .rec-list li.rec-light:hover { opacity: 1; }
+
+/* ---------- units: series, events, chains and single quests outside acts ---------- */
+/* Rounded, and stacked like a small pile when the unit holds several quests. */
+.site .card-node.unit { flex-direction: column; align-items: stretch; justify-content: center; gap: 1px; border-radius: 9px; padding-right: 10px; }
+.site .card-node.unit .name { flex: none; }
+.site .card-node.unit.stack { box-shadow: 3px 3px 0 -1px var(--card), 3px 3px 0 0 var(--line); }
+.site .card-node.unit.stack.focus { box-shadow: 0 0 0 1px var(--gold), 3px 3px 0 0 var(--line); }
+.site .card-node.unit .unit-meta { display: flex; gap: 0 6px; min-width: 0; overflow: hidden; white-space: nowrap; font-size: .7rem; line-height: 1.3; color: var(--muted); }
+.site .card-node.unit .unit-meta b { font-weight: 600; color: var(--c); }
+.site .card-node.unit .unit-meta > * { flex: none; }
+.site .card-node.unit .gone-mark { color: var(--warn); font-weight: 500; }
+/* only after the region is reached: not a lock, so the card is dashed and grey-edged */
+.site .card-node.unit.loose { border-style: dashed; border-left-style: solid; border-left-color: color-mix(in srgb, var(--c) 55%, var(--muted)); }
+.site .card-node.unit .loose-mark { color: var(--muted); font-style: italic; }
+
+/* "외 N개": the folded rest of an act's units */
+.site .card-node.more { justify-content: center; border-style: dashed; border-left: 1px dashed var(--line); border-radius: 9px; color: var(--muted); background: color-mix(in srgb, var(--card) 70%, transparent); }
+.site .card-node.more .name { flex: none; font-size: .85rem; }
+.site .card-node.more:hover { color: var(--text); border-left-color: var(--gold); }
+
+/* region links: grey, thin, dashed. The unit can be played any time after the region opens. */
+.site .react-flow__edge.region .react-flow__edge-path { stroke: var(--muted); stroke-opacity: .55; stroke-width: 1.3; stroke-dasharray: 5 5; }
+.site .react-flow__edge.attach .react-flow__edge-path { stroke-width: 1.5; }
+.site .legend .ln.loose::before { border-top: 1.5px dashed rgba(236,229,216,.5); }
+
+/* atlas: a strip under an act card that has units after it (only readable up close) */
+.site .card-node .opens { position: absolute; left: 3px; right: 0; top: calc(100% + 2px); height: 10px; display: flex; align-items: center; pointer-events: none; }
+.site .card-node .opens::before { content: ""; flex: none; width: 18px; height: 3px; margin-right: 5px; border-radius: 2px; background: color-mix(in srgb, var(--world) 70%, transparent); }
+.site .card-node .opens.entry::before { width: 28px; }
+.site .card-node .opens-text { font-size: 9.5px; line-height: 10px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.site .stage.mid .card-node .opens-text { visibility: hidden; }
+.site .stage.far .card-node .opens { display: none; }
+
+/* info card: units */
+.site .jump .kind { flex: none; margin-left: 6px; font-size: .72rem; color: var(--muted); }
+.site .jump .kind.gone { color: var(--warn); }
+.site .jump.unit { border-radius: 8px; }
+.site .loose-note { margin-left: 4px; padding: 0 5px; font-size: .7rem; font-weight: 500; color: var(--muted); border: 1px dashed var(--muted); border-radius: 2px; }
+.site .unit-note { margin: 12px 0 0; font-size: .84rem; line-height: 1.5; color: var(--muted); }
+.site .info .hung { margin-top: 12px; padding-top: 4px; border-top: 1px solid var(--line); }
+.site .info .hung .rec-more { margin-top: 2px; }
+.site .act-quests ol.unit-quests { list-style: none; margin: 0; padding: 0; counter-reset: q; }
+.site .unit-tag { border-radius: 8px; }
+.site .find li button.unit .dot { border-radius: 2px; }

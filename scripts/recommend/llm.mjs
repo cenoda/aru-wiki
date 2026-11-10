@@ -207,7 +207,7 @@ function parseJsonReply(text) {
 function checkShape(data, schema) {
   for (const k of schema.required ?? []) {
     const want = schema.properties[k].type, v = data[k];
-    const ok = want === 'array' ? Array.isArray(v) : typeof v === want;
+    const ok = want === 'array' ? Array.isArray(v) : want === 'integer' ? Number.isInteger(v) : typeof v === want;
     if (!ok) throw new Error(`reply field ${k} is not ${want}: ${JSON.stringify(data).slice(0, 200)}`);
     const allowed = schema.properties[k].enum;
     if (allowed && !allowed.includes(v)) throw new Error(`reply field ${k}=${v} not in ${allowed}`);

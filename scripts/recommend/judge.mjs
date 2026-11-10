@@ -10,17 +10,20 @@ import { dialogueLines, excerpt, loadPages, normalize } from './excerpt.mjs';
 import { ask } from './llm.mjs';
 
 const { values: opt } = parseArgs({ options: {
-  only: { type: 'string' }, limit: { type: 'string' }, stride: { type: 'string' }, jobs: { type: 'string', default: '3' },
+  only: { type: 'string' }, limit: { type: 'string' }, stride: { type: 'string' }, out: { type: 'string', default: 'recommended-judgments.json' },
+  jobs: { type: 'string', default: '3' },
   judge: { type: 'string', default: 'claude' }, verify: { type: 'string', default: 'codex' },
 } });
-if (opt.judge === opt.verify) throw new Error('judge and verify must be different tools');
+if (opt.judge === opt.verify && opt.verify !== 'none') throw new Error('judge and verify must be different tools');
 
 const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
 const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
 const [quests, edges, candidates, aliases] = await Promise.all(
   ['quests.json', 'quest-edges.json', 'recommended-candidates.json', 'character-aliases.json'].map(read));
-const OUT = 'recommended-judgments.json';
-const previous = new Map((await read(OUT).catch(() => [])).map((j) => [`${j.source}->${j.target}`, j]));
+// --out writes elsewhere (to compare tools); --verify none skips the second check
+const OUT = opt.out;
+const outUrl = OUT.startsWith('/') ? new URL(`file://${OUT}`) : file(OUT);
+const previous = new Map((await readFile(outUrl, 'utf8').then(JSON.parse).catch(() => [])).map((j) => [`${j.source}->${j.target}`, j]));
 const pages = await loadPages();
 const byId = new Map(quests.map((q) => [q.id, q]));
 
@@ -163,6 +166,7 @@ async function judgeOne(p) {
   const entry = { ...p, input_hash: inputHash, judge: { tool: opt.judge, ...v } };
   if (!v.recommend) entry.status = 'rejected';
   else if (!quoted(v.quotes_a, a) || !quoted(v.quotes_b, b)) entry.status = 'quote_mismatch';
+  else if (opt.verify === 'none') entry.status = 'judged';
   else {
     const check = await ask(opt.verify, verifyPrompt(p, a, b, k, v), VERIFY_SCHEMA);
     asked++; cost += check.cost ?? 0;
@@ -174,7 +178,7 @@ async function judgeOne(p) {
 }
 
 const queue = [...todo];
-const save = () => writeFile(file(OUT), `${JSON.stringify([...results.values()]
+const save = () => writeFile(outUrl, `${JSON.stringify([...results.values()]
   .sort((x, y) => `${x.target}|${x.source}`.localeCompare(`${y.target}|${y.source}`)), null, 1)}\n`);
 await Promise.all(Array.from({ length: Number(opt.jobs) }, async () => {
   while (queue.length) {

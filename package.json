@@ -13,6 +13,8 @@
     "screenshot": "node scripts/dev/screenshot.mjs",
     "fetch:stage1": "node scripts/fandom/build-stage1.mjs",
     "fetch:series": "node scripts/fandom/build-series.mjs && node scripts/fandom/build-units.mjs",
+    "fetch:characters": "node scripts/fandom/build-characters.mjs",
+    "fetch:ko-names": "node scripts/fandom/build-ko-names.mjs",
     "recommend:candidates": "node scripts/recommend/candidates.mjs",
     "recommend:judge": "node scripts/recommend/judge.mjs",
     "recommend:edges": "node scripts/recommend/edges.mjs",

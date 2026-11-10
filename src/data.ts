@@ -40,7 +40,8 @@ export const REGION_KO: Record<string, string> = {
   Natlan: '나타', 'Nod-Krai': '나드 크라이', Snezhnaya: '스네즈나야', Other: '기타',
 };
 
-export const displayName = (q: Quest) => q.names.ko ?? q.names.en;
+/** Korean title, or the English one. A wiki "(Act)" suffix is not part of the name. */
+export const displayName = (q: Quest) => q.names.ko ?? q.names.en.replace(/ \(Act\)$/, '');
 
 export const TYPE_LABEL: Record<QuestType, string> = {
   ARCHON: '마신', STORY: '전설', WORLD: '월드', EVENT: '이벤트',

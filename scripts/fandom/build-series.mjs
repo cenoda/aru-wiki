@@ -3,13 +3,14 @@
 // whose quests belong to no act, so this is how those quests get a home on the map.
 //
 // Reads quests.json from build-stage1.mjs; writes quest-series.json.
-// Usage: node scripts/fandom/build-series.mjs [--refresh]
+// Usage: node scripts/fandom/build-series.mjs
 import { readFile, writeFile } from 'node:fs/promises';
+import { generatedFile } from './paths.mjs';
 import { FandomClient, pageUrl } from './client.mjs';
 import { decodeEntities, infobox, linkTargets, normalizeTitle, plainText, slug } from './wikitext.mjs';
 
 const client = new FandomClient({ refresh: process.argv.includes('--refresh') });
-const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
+const file = generatedFile;
 const quests = JSON.parse(await readFile(file('quests.json'), 'utf8'));
 const byTitle = new Map(quests.map((q) => [q.names.en, q]));
 const TYPE = { archon: 'ARCHON', story: 'STORY', world: 'WORLD', event: 'EVENT', hangout: 'STORY' };

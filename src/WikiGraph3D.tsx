@@ -28,13 +28,18 @@ import './site.css';
 import './focus.css';
 import './wiki3d.css';
 
-interface PageNode { id: string; ko: string | null; kind: 'character' | 'lore'; hub: boolean; units: number; revealed: number; x?: number; y?: number; z?: number; fx?: number; fy?: number; fz?: number }
+interface PageNode { id: string; ko: string | null; kind: 'character' | 'lore'; hub: boolean; units: number; theme_units: number; revealed: number; x?: number; y?: number; z?: number; fx?: number; fy?: number; fz?: number }
 interface PageLink { source: string | PageNode; target: string | PageNode; shared: number; revealed: number }
 interface Theme { page: string; nodes: PageNode[]; links: PageLink[] }
 
 const idOf = (end: string | PageNode) => (typeof end === 'string' ? end : end.id);
 const nameOf = (n: PageNode) => n.ko ?? n.id;
 const KIND_LABEL = { character: '인물', lore: '로어' } as const;
+/** 와/과 by whether the last Hangul syllable has a final consonant. */
+const withParticle = (word: string) => {
+  const c = word.charCodeAt(word.length - 1) - 0xac00;
+  return c >= 0 && c < 11172 && c % 28 !== 0 ? '과' : '와';
+};
 
 interface Palette {
   hub: string; character: string; lore: string; line: string; lineHot: string; label: string; ecliptic: string;
@@ -163,8 +168,12 @@ export default function WikiGraph3D() {
       (near.get(s) ?? near.set(s, []).get(s)!).push({ id: t, revealed: l.revealed });
       (near.get(t) ?? near.set(t, []).get(t)!).push({ id: s, revealed: l.revealed });
     }
-    const named = new Set([...theme.nodes].sort((a, b) => Number(b.hub) - Number(a.hub) || b.units - a.units).slice(0, NAMED + 1).map((n) => n.id));
-    return { byId, near, named };
+    // importance = how much of the theme's story a page is part of (units shared with the theme page)
+    const byImportance = [...theme.nodes].sort((a, b) => Number(b.hub) - Number(a.hub) || b.theme_units - a.theme_units || b.units - a.units);
+    const named = new Set(byImportance.slice(0, NAMED + 1).map((n) => n.id));
+    const top = Math.max(1, ...theme.nodes.filter((n) => !n.hub).map((n) => n.theme_units));
+    const importance = (n: PageNode) => (n.hub ? 1 : Math.min(1, n.theme_units / top));
+    return { byId, near, named, importance };
   }, [theme]);
 
   const shown = useMemo(() => (id: string) => (index?.byId.get(id)?.revealed ?? Infinity) <= vIdx, [index, vIdx]);
@@ -195,19 +204,21 @@ export default function WikiGraph3D() {
       .nodeLabel(() => '')
       .nodeThreeObject((n) => {
         const named = index.named.has(n.id);
-        const r = n.hub ? 3.2 : 0.9 + Math.sqrt(n.units) / 5;
+        // size by importance, like star magnitudes: the theme's main pages stand out, minor ones are specks
+        const imp = index.importance(n);
+        const r = n.hub ? 4.6 : 0.5 + 3.4 * imp ** 0.8;
         const group = new Group();
         const star = new SpriteMaterial({
           map: starTexture(n.hub ? sky.hub : sky[n.kind], sky.night, n.hub),
           blending: sky.night ? AdditiveBlending : NormalBlending, depthWrite: false, transparent: true,
         });
         const sprite = new Sprite(star);
-        sprite.scale.setScalar(r * (n.hub ? 11 : 8.5));
+        sprite.scale.setScalar(r * (n.hub ? 12 : 11));
         group.add(sprite);
         // names keep one size on screen at any zoom (sizeAttenuation off): readable far away,
         // never huge up close, and zooming in only spreads them apart
         const k = Math.min(1, (el.clientWidth / Math.max(1, el.clientHeight)) * 1.3); // portrait: smaller
-        const label = new SpriteText(nameOf(n), (n.hub ? 0.042 : named ? 0.03 : 0.024) * k, sky.label);
+        const label = new SpriteText(nameOf(n), (n.hub ? 0.042 : 0.022 + 0.012 * imp) * k, sky.label);
         label.fontFace = LABEL_FONT_STACK;
         label.fontWeight = n.hub ? '600' : '500'; // index.html loads 400–600
         // Hangul reaches past the font-size box; without room the tops and bottoms are cut off
@@ -383,7 +394,7 @@ export default function WikiGraph3D() {
         if (focus && !inFocus(n.id) && n.id !== hovered) continue;
         want.push({ n, s, r: rank(n, s) });
       }
-      want.sort((a, b) => a.r - b.r || b.n.units - a.n.units);
+      want.sort((a, b) => a.r - b.r || b.n.theme_units - a.n.theme_units || b.n.units - a.n.units);
       const placed: [number, number, number, number][] = [];
       const v = new Vector3();
       for (const { n, s, r } of want) {
@@ -406,7 +417,9 @@ export default function WikiGraph3D() {
   }, [shown, vIdx, focus, selected, hovered, sky]);
 
   const sel = selected && index ? index.byId.get(selected)! : null;
-  const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.units - a.units) : [];
+  const hubNode = theme && index ? index.byId.get(theme.page) : undefined;
+  const themeName = hubNode ? nameOf(hubNode) : '테마';
+  const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.theme_units - a.theme_units) : [];
 
   return (
     <div className={`site graph-page w3d${night ? ' night' : ' day'}`}>
@@ -416,7 +429,7 @@ export default function WikiGraph3D() {
           <span style={{ ['--c' as string]: sky.hub }}><i />테마</span>
           <span style={{ ['--c' as string]: sky.character }}><i />인물</span>
           <span style={{ ['--c' as string]: sky.lore }}><i />로어</span>
-          <span className="hint">미리보기 · 함께 나오는 이야기가 많을수록 선이 밝고 굵음 · 면 아래가 이른 버전</span>
+          <span className="hint">미리보기 · 별 크기는 {themeName} 이야기에 얼마나 나오는지 · 선은 함께 나오는 이야기가 많을수록 밝고 굵음 · 면 아래가 이른 버전</span>
         </div>
         <nav><VersionPicker order={vIdx} onChange={setVIdx} /></nav>
       </header></div>
@@ -427,7 +440,7 @@ export default function WikiGraph3D() {
         <aside className="w3d-card" aria-live="polite">
           <p className="w3d-type">{sel.hub ? '테마' : KIND_LABEL[sel.kind]} · {versions[sel.revealed]?.id}부터</p>
           <h2>{nameOf(sel)}</h2>
-          <p className="w3d-meta">함께 나오는 이야기 {sel.units}개</p>
+          <p className="w3d-meta">{sel.hub ? `이야기 ${sel.units}개` : `${themeName}${withParticle(themeName)} 함께 나오는 이야기 ${sel.theme_units}개 · 전체 ${sel.units}개`}</p>
           {neighbours.length > 0 && (
             <ul className="w3d-near">
               {neighbours.map((n) => <li key={n.id}><button type="button" onClick={() => setSelected(n.id)}>{nameOf(n)}</button></li>)}

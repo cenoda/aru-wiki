@@ -80,6 +80,8 @@ await write('theme-khaenriah.json', {
   page: theme.page,
   nodes: pages.map((p) => ({
     id: p.page, ko: p.ko ?? null, kind: p.kind ?? 'lore', hub: !!p.hub, units: unitsOf.get(p.page).size,
+    // how much of the theme's story the page is part of: story units shared with the theme page
+    theme_units: [...unitsOf.get(p.page)].filter((u) => unitsOf.get(theme.page).has(u)).length,
     revealed: unitsOf.get(p.page).size ? firstOrder([...unitsOf.get(p.page)]) : lastOrder,
   })),
   links: [...kept].map((e) => ({ source: e.a, target: e.b, shared: e.shared, revealed: e.revealed })),

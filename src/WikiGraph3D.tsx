@@ -39,6 +39,9 @@ const SKY = {
   hub: '#f2a074', character: '#c4a6f5', lore: '#e3cd9c', line: '#9fb2e0', lineHot: '#f3d9a4',
   label: '#ece5d8', ecliptic: '#7f93c8',
 };
+const LABEL_FONT = '"IBM Plex Sans KR"';
+/** The site font, then the system Korean fonts, so a fallback is at least one whole font. */
+const LABEL_FONT_STACK = `${LABEL_FONT}, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif`;
 /** Names always shown for the theme page and this many of the busiest pages. */
 const NAMED = 14;
 /** Other names appear when the camera is closer than this. */
@@ -65,7 +68,7 @@ function glow() {
   return (glowTexture = new CanvasTexture(c));
 }
 
-interface StarParts { core: MeshBasicMaterial; halo: SpriteMaterial; label: SpriteText; named: boolean }
+interface StarParts { core: MeshBasicMaterial; halo: SpriteMaterial; label: SpriteText; named: boolean; target: number }
 
 export default function WikiGraph3D() {
   const host = useRef<HTMLDivElement>(null);
@@ -74,6 +77,8 @@ export default function WikiGraph3D() {
   const stars = useRef(new Map<string, StarParts>());
   const lines = useRef(new Map<PageLink, LineMaterial>());
   const relabel = useRef<() => void>(() => {});
+  /** Ease every name toward its target opacity, rendering until they arrive. */
+  const fade = useRef<() => void>(() => {});
   const [theme, setTheme] = useState<Theme | null>(null);
   const [failed, setFailed] = useState(false);
   const [vIdx, setVIdx] = useState(versions.length - 1);
@@ -81,8 +86,14 @@ export default function WikiGraph3D() {
   const [hovered, setHovered] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch(themeUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((t: Theme) => {
+    fetch(themeUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then(async (t: Theme) => {
       maxShared = Math.max(2, ...t.links.map((l) => l.shared));
+      // The web font comes in unicode-range slices, fetched only for characters on the page. Names
+      // drawn on a canvas do not trigger that, so a glyph whose slice is missing falls back to
+      // another font (mixed letters in one word). Load the slices for every name first.
+      const text = t.nodes.map(nameOf).join('');
+      const fonts = Promise.all(['500', '600'].map((w) => document.fonts.load(`${w} 16px ${LABEL_FONT}`, text)));
+      await Promise.race([fonts, new Promise((r) => setTimeout(r, 2500))]).catch(() => {});
       setTheme(t);
     }, () => setFailed(true));
   }, []);
@@ -140,8 +151,8 @@ export default function WikiGraph3D() {
         // never huge up close, and zooming in only spreads them apart
         const k = Math.min(1, (el.clientWidth / Math.max(1, el.clientHeight)) * 1.3); // portrait: smaller
         const label = new SpriteText(nameOf(n), (n.hub ? 0.042 : named ? 0.03 : 0.025) * k, SKY.label);
-        label.fontFace = '"IBM Plex Sans KR", "Pretendard", "Noto Sans KR", sans-serif';
-        label.fontWeight = n.hub ? '700' : '500';
+        label.fontFace = LABEL_FONT_STACK;
+        label.fontWeight = n.hub ? '600' : '500'; // index.html loads 400–600
         // Hangul reaches past the font-size box; without room the tops and bottoms are cut off
         label.padding = [label.textHeight * 0.15, label.textHeight * 0.3];
         label.material.depthWrite = false;
@@ -149,7 +160,9 @@ export default function WikiGraph3D() {
         label.center.set(0.5, -0.1); // sit just above the star
         label.position.y = r;
         group.add(label);
-        stars.current.set(n.id, { core, halo, label, named });
+        label.material.opacity = 0;
+        label.visible = false;
+        stars.current.set(n.id, { core, halo, label, named, target: 0 });
         return group;
       })
       .linkThreeObject((l) => {
@@ -215,6 +228,20 @@ export default function WikiGraph3D() {
       idle = window.setTimeout(sleep, 1500);
     };
     wake.current = wakeUp;
+    let fading = 0, last = 0;
+    const step = (t: number) => {
+      const dt = last ? Math.min(64, t - last) : 16;
+      last = t;
+      let moving = false;
+      for (const s of stars.current.values()) {
+        const m = s.label.material, d = s.target - m.opacity;
+        if (Math.abs(d) < 0.01) m.opacity = s.target;
+        else { m.opacity += d * Math.min(1, dt / 90); moving = true; } // ~0.2 s to settle
+        s.label.visible = m.opacity > 0.005;
+      }
+      if (moving) { wakeUp(); fading = requestAnimationFrame(step); } else { fading = 0; last = 0; }
+    };
+    fade.current = () => { if (!fading) fading = requestAnimationFrame(step); };
     const events = ['pointerdown', 'pointermove', 'wheel', 'touchstart'] as const;
     for (const ev of events) el.addEventListener(ev, wakeUp, { passive: true });
     const controls = g.controls() as { addEventListener(type: string, fn: () => void): void; removeEventListener(type: string, fn: () => void): void };
@@ -231,6 +258,7 @@ export default function WikiGraph3D() {
     return () => {
       ro.disconnect();
       clearTimeout(idle);
+      cancelAnimationFrame(fading);
       controls.removeEventListener('change', onMove);
       for (const ev of events) el.removeEventListener(ev, wakeUp);
       g._destructor();
@@ -276,7 +304,7 @@ export default function WikiGraph3D() {
       for (const n of g.graphData().nodes) {
         const s = stars.current.get(n.id);
         if (!s) continue;
-        s.label.visible = false;
+        s.target = 0;
         if (!shown(n.id)) continue;
         const close = camera.position.distanceTo(new Vector3(n.x ?? 0, n.y ?? 0, n.z ?? 0)) < NAME_DISTANCE;
         const wanted = n.id === hovered || n.id === selected || (focus ? inFocus(n.id) && (s.named || focus.one.has(n.id) || close) : s.named || close);
@@ -293,9 +321,9 @@ export default function WikiGraph3D() {
         const box: [number, number, number, number] = [x - w / 2, y - h * 1.3, x + w / 2, y - h * 0.1];
         if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
         placed.push(box);
-        s.label.visible = true;
-        s.label.material.opacity = inFocus(n.id) ? 1 : 0.35;
+        s.target = inFocus(n.id) ? 1 : 0.35;
       }
+      fade.current();
     };
     relabel.current();
     wake.current();

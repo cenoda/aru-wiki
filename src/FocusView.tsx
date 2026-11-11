@@ -1457,7 +1457,9 @@ const shownIcon = (actId: string, vIdx: number) => {
 };
 function CardFigure({ quest, vIdx }: { quest: Quest; vIdx: number }) {
   const icon = shownIcon(quest.id, vIdx);
-  if (icon) return <span className="fig icon-fig"><img src={icon.src} alt={icon.name} loading="lazy" draggable={false} /></span>;
+  // icon files are not in git (npm run fetch:icons); a missing one falls back to the emblem
+  const [broken, setBroken] = useState(false);
+  if (icon && !broken) return <span className="fig icon-fig"><img src={icon.src} alt={icon.name} loading="lazy" draggable={false} onError={() => setBroken(true)} /></span>;
   return <span className="fig emblem-fig"><Emblem region={quest.region} /></span>;
 }
 /** Who the card shows, where the file came from, and whose it is (image policy 2·3). */

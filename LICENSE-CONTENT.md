@@ -18,8 +18,8 @@ LLM 생성 여부로 라이선스를 일괄 결정하지 않습니다. 사실만
 
 본 프로젝트는 HoYoverse와 제휴하거나 승인받지 않은 비영리 팬 프로젝트입니다. 권리 관련 문의와 수정·삭제 요청은 [contact@aru.wiki](mailto:contact@aru.wiki)로 받습니다. 이미지 사용 방식과 근거는 [이미지 방침](docs/image-policy.md)과 [권리·운영 위험 검토](docs/rights-risk.md)에 있습니다.
 
-## 3. 이 리포지토리에 든 게임 이미지
+## 3. 게임 이미지
 
-`public/img/characters/`의 캐릭터 아이콘은 © All rights reserved by COGNOSPHERE. Other properties belong to their respective owners. 프로젝트의 CC BY-SA 적용 대상이 아니며, 다시 배포할 권리를 드리지 않습니다. 파일마다 출처 URL·받은 날짜·공개 버전·가공 여부를 `data/generated/image-files.json`에 기록합니다(`scripts/images/fetch-enka-icons.mjs`).
+사이트의 캐릭터 아이콘은 © All rights reserved by COGNOSPHERE. Other properties belong to their respective owners. 프로젝트의 CC BY-SA 적용 대상이 아니며, 다시 배포할 권리를 드리지 않습니다. 원본 모음이 되지 않도록 이미지 파일은 이 리포지토리에 넣지 않습니다. 파일마다 출처 URL·받은 날짜·공개 버전·가공 여부를 `data/generated/image-files.json`에 기록하고, 사이트를 만들 때 그 기록대로 받습니다(`npm run fetch:icons`).
 
 `src/emblems.tsx`의 지역 문장(풍차, 돌기둥 봉우리, 신사 문, 큰 나무, 저울, 화산, 바다 위 달, 둥근 지붕 궁전, 나침반)은 이 프로젝트가 일반적인 실루엣으로 직접 그린 것으로, 코드와 같이 MPL-2.0을 따릅니다.

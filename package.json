@@ -13,6 +13,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "screenshot": "node scripts/dev/screenshot.mjs",
+    "fetch:icons": "node scripts/images/fetch-enka-icons.mjs --from-records",
     "fetch:stage1": "node scripts/fandom/build-stage1.mjs",
     "fetch:series": "node scripts/fandom/build-series.mjs && node scripts/fandom/build-units.mjs",
     "fetch:characters": "node scripts/fandom/build-characters.mjs",

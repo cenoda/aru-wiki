@@ -22,7 +22,11 @@
 // Every file gets a record in data/generated/image-files.json: character, source URL, date
 // fetched, release version, edits. Files are kept as served (128×128 PNG).
 //
-// Usage: node scripts/images/fetch-enka-icons.mjs [--dry-run]
+// The PNGs are not in git (no downloadable set of original assets, docs/image-policy.md 2).
+// A checkout or a server gets them back from the records alone, without the Fandom dump:
+//   node scripts/images/fetch-enka-icons.mjs --from-records   (npm run fetch:icons)
+//
+// Usage: node scripts/images/fetch-enka-icons.mjs [--dry-run | --from-records]
 import { existsSync } from 'node:fs';
 import { mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { generatedFile } from '../fandom/paths.mjs';
@@ -110,7 +114,29 @@ function match(names, icons, manual, titles) {
   return out;
 }
 
+/** Fetch the files image-files.json lists and this checkout lacks, one at a time. */
+async function fromRecords() {
+  const { files } = await read(generatedFile('image-files.json'));
+  await mkdir(OUT_DIR, { recursive: true });
+  let requests = 0, failed = 0;
+  for (const f of files) {
+    const target = new URL(f.file, new URL('public/', root));
+    if (existsSync(target)) continue;
+    if (!/^https:\/\/enka\.network\/ui\/UI_AvatarIcon_Side_[A-Za-z0-9]+\.png$/.test(f.source_url)) {
+      log(`skip ${f.file}: not an Enka icon URL (${f.source_url})`); failed++; continue;
+    }
+    if (requests) await sleep(PAUSE_MS);
+    requests++;
+    const res = await fetch(f.source_url, { headers: { 'user-agent': UA } }).catch((e) => ({ ok: false, status: e.message, headers: new Headers() }));
+    if (!res.ok || !(res.headers.get('content-type') ?? '').startsWith('image/png')) { log(`failed ${f.file}: HTTP ${res.status}`); failed++; continue; }
+    await writeFile(target, Buffer.from(await res.arrayBuffer()));
+  }
+  log(`records: ${files.length}, fetched now: ${requests - failed}, failed: ${failed}`);
+  // a card whose file is missing shows its region emblem instead, so a failure does not stop a build
+}
+
 async function main() {
+  if (process.argv.includes('--from-records')) return fromRecords();
   const figures = await read(generatedFile('card-figures.json'));
   const manual = existsSync(new URL('data/manual/enka-icons.json', root)) ? (await read(new URL('data/manual/enka-icons.json', root))).characters ?? {} : {};
   const recordsFile = generatedFile('image-files.json');

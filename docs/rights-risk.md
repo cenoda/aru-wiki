@@ -55,6 +55,7 @@ aru.wiki는 광고·후원·유료 기능이 없는 비공식 팬 위키이며, 
 | Antigravity (Google) | 문서에 명시 없음 | `/config` → Enable Telemetry(계정 단위, 앱·IDE·CLI 공통)([설정](https://antigravity.google/docs/settings.md)) | 서비스 제공·피드백 처리·안전 | 끔 |
 | Grok Build (xAI) | 첫 실행 시 선택 | `/privacy` → Coding data, retention, and training | 단순 사용 지표 | Opt out. 로컬 설정에서 trace 업로드·텔레메트리도 끔 |
 | K-EXAONE (EXAONE API Platform) | 개인정보처리방침상 선택 동의([방침](https://docs.exaone.ai/ko/terms/privacy-policy)). 약관 제2조 제3항은 거부 가능 구조로 서술 | My Profile → 동의 및 알림 관리 | 미동의 시 요청 처리 후 저장하지 않음 | 학습 동의 항목 없음(미동의로 판단), 이용 기록 분석 끔 |
+| Ollama Cloud (Pro) | 학습하지 않음. "We do not use your inputs or outputs to train AI models"([약관](https://ollama.com/terms) §5, 2026-08 개정; [개인정보처리방침](https://ollama.com/privacy) §2, 2026-03 개정). 추론 협력사(NVIDIA Cloud Providers)에도 기록·학습·보관 금지를 요구([요금 안내](https://ollama.com/cloud) FAQ) | 설정 없음(항상 학습 안 함) | 요청 처리 동안의 일시 처리(보관 기간 미기재), 프롬프트 내용이 없는 진단 메타데이터. 주로 미국, 용량에 따라 유럽에서 처리. 지역 제한 조항 없음. 약관 §4는 "허락 없는 자동화 접근"을 금지하나 공식 API·API 키 경로는 문서로 안내된다 | 학습 이용 없음(문서 기준). 2026-11-11 추가. Pro는 동시 요청 3개 |
 
 2026-11-11 이전의 Muse 실행분(권장 연결선 판정·검증 약 1,500건, 단위 사실 추출)은 당시 서버의 Contributor 설정을 확인하지 못했다. 기본값대로라면 입력이 Meta의 학습에 쓰였을 수 있으며, 문서상 소급 제외 방법은 없다.
 

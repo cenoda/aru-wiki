@@ -1,23 +1,12 @@
 // Dialogue excerpts that the judge reads. Only the Dialogue section of quest pages is used:
 // it is the in-game text, so later wiki edits do not carry future story into it
 // (summaries and trivia do). Lines mentioning the shared characters are kept with context.
-import { readdir, readFile } from 'node:fs/promises';
+import { FandomClient } from '../fandom/client.mjs';
 import { decodeEntities, plainText } from '../fandom/wikitext.mjs';
 
-/** title -> wikitext of the newest cached revision */
-export async function loadPages(dir = new URL('../../.cache/fandom/', import.meta.url)) {
-  const pages = new Map();
-  for (const f of await readdir(dir)) {
-    const json = JSON.parse(await readFile(new URL(f, dir), 'utf8'));
-    for (const p of json.query?.pages ?? []) {
-      const rev = p.revisions?.[0];
-      const content = rev?.slots?.main?.content;
-      if (content && (!pages.has(p.title) || pages.get(p.title).revid < rev.revid)) {
-        pages.set(p.title, { revid: rev.revid, content });
-      }
-    }
-  }
-  return pages;
+/** title -> { revid, content } of every article in the official dump (docs/rights-risk.md) */
+export async function loadPages(client = new FandomClient()) {
+  return client.pageTexts();
 }
 
 /** Dialogue section as plain lines; player choices are marked "Traveler:". */

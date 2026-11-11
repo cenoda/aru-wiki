@@ -28,7 +28,7 @@ const vOrder = new Map(versions.map((v) => [v.id, v.order]));
 const score = new Map(cands2.map((p) => [`${p.source}->${p.target}`, p.score]));
 
 // Edges judged on an earlier build may point at acts or units this build lacks (the dump stops at
-// 7.1). They are kept as last written (docs/dump-migration-2026-11-11.md §7).
+// 7.1). They are kept as last written (docs/log/2026-11-11-dump-migration.md §7).
 const previous = new Map((await opt('recommended-edges.json', [])).map((e) => [`${e.source}->${e.target}`, e]));
 const node = (id) => {
   const q = byId.get(id);

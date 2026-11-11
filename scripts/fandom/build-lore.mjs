@@ -9,14 +9,12 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { generatedFile } from './paths.mjs';
 import { FandomClient } from './client.mjs';
 import { linkTargets, normalizeTitle } from './wikitext.mjs';
-import { loadPages } from '../recommend/excerpt.mjs';
 
 const client = new FandomClient({ refresh: process.argv.includes('--refresh') });
 const file = generatedFile;
 const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
 const [quests, unitData, versions] = await Promise.all(['quests.json', 'quest-units.json', 'versions.json'].map(read));
-// page text: the dump (default); the legacy api.php cache only with ARU_FANDOM_SOURCE=legacy
-const pages = client.source === 'dump' ? await client.pageTexts() : await loadPages();
+const pages = await client.pageTexts();
 const byId = new Map(quests.map((q) => [q.id, q]));
 const vOrder = new Map(versions.map((v) => [v.id, v.order]));
 

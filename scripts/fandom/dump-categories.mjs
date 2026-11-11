@@ -19,7 +19,7 @@
 //                                   the NPC's Shop section, which the expander cannot follow)
 //   3. for other templates, categories the template text adds without conditions
 //      (`templateCategories`, see unconditionalCategories()).
-// Anything else a template adds is not seen. compare-dump.mjs measures the gap.
+// Anything else a template adds is not seen. The 2026-11-11 migration measured the gap (docs/log/2026-11-11-dump-migration.md).
 import { findTemplate, parseTemplate } from './wikitext.mjs';
 
 /** Version ids accepted by {{Change History}}: the case list of its `{{#switch:{{{1|}}}` block. */

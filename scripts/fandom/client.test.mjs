@@ -1,6 +1,5 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { mkdtemp, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
@@ -23,7 +22,7 @@ async function tinyDump(t) {
 test('the dump is the default source and nothing touches the network', async (t) => {
   const fetch = t.mock.method(globalThis, 'fetch', () => { throw new Error('Unexpected network request'); });
   const client = new FandomClient({ dumpDir: await tinyDump(t), source: 'dump' });
-  assert.equal(new FandomClient().source, process.env.ARU_FANDOM_SOURCE ?? 'dump');
+  assert.equal(new FandomClient().source, 'dump');
   const pages = await client.latest(['paimon']);
   assert.equal(pages.get('paimon').content, 'new');
   assert.equal(await client.asOf(), '2021-01-01');
@@ -44,24 +43,8 @@ test('the dump is the default source and nothing touches the network', async (t)
   assert.equal(fetch.mock.callCount(), 0);
 });
 
-test('legacy cache is read only; missing, corrupt and --refresh never access Fandom', async (t) => {
-  const cacheDir = await mkdtemp(join(tmpdir(), 'aru-fandom-cache-'));
-  t.after(() => rm(cacheDir, { recursive: true, force: true }));
+test('--refresh never accesses Fandom', async (t) => {
   const fetch = t.mock.method(globalThis, 'fetch', () => { throw new Error('Unexpected network request'); });
-  const params = { action: 'query', titles: 'Paimon' };
-  const key = createHash('sha1').update(new URLSearchParams({ format: 'json', formatversion: '2', ...params }).toString()).digest('hex');
-  const file = join(cacheDir, `${key}.json`);
-  const client = new FandomClient({ cacheDir, source: 'legacy' });
-
-  await assert.rejects(client.get(params), /cache is missing or unreadable.*Automatic Fandom access is disabled/);
-  await writeFile(file, '{invalid');
-  await assert.rejects(client.get(params), /cache is missing or unreadable/);
-  const cached = { query: { pages: [{ title: 'Paimon' }] } };
-  await writeFile(file, JSON.stringify(cached));
-  assert.deepEqual(await client.get(params), cached);
-  await assert.rejects(new FandomClient({ cacheDir, refresh: true }).get(params), /--refresh is unavailable/);
-  await assert.rejects(client.revisionAt('Paimon', '2020-01-01T00:00:00Z'), /full-history dump/);
-  assert.throws(() => new FandomClient({ source: 'api' }), /Unknown Fandom source/);
-  assert.equal(client.requests, 0);
+  await assert.rejects(new FandomClient({ refresh: true }).get({ action: 'query', titles: 'Paimon' }), /--refresh is unavailable/);
   assert.equal(fetch.mock.callCount(), 0);
 });

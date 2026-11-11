@@ -1,31 +1,24 @@
 // Fandom wiki text for the build scripts, read from the official database dump
-// (docs/rights-risk-2026-11-11.md). There is no network access: automatic api.php calls are
-// disabled. The old api.php response cache (.cache/fandom) can still be read for comparison
-// with `source: 'legacy'` (or ARU_FANDOM_SOURCE=legacy); nothing is ever fetched to fill it.
-import { createHash } from 'node:crypto';
+// (docs/rights-risk.md). There is no network access: automatic api.php calls are disabled,
+// and the old api.php response cache was deleted after the dump migration.
 import { readFile } from 'node:fs/promises';
-import { join } from 'node:path';
 import { loadDump, loadRevisionIndex, revisionContents, versionCutoff } from './dump.mjs';
 import { generatedFile } from './paths.mjs';
 
 const shared = new Map(); // dumpDir → Promise<dump>
 
-const DISABLED = 'Automatic Fandom access is disabled; use the official database dump (docs/rights-risk-2026-11-11.md).';
+const DISABLED = 'Automatic Fandom access is disabled; use the official database dump (docs/rights-risk.md).';
 
 export class FandomClient {
   constructor({
-    cacheDir = '.cache/fandom',
     dumpDir = '.cache/dump',
     refresh = false,
-    source = process.env.ARU_FANDOM_SOURCE ?? 'dump',
   } = {}) {
-    if (source !== 'dump' && source !== 'legacy') throw new Error(`Unknown Fandom source: ${source}`);
-    this.cacheDir = cacheDir;
     this.dumpDir = dumpDir;
     this.refresh = refresh;
-    this.source = source;
+    this.source = 'dump';
     this.requests = 0; // network requests: always 0 (build scripts log this)
-    this.lookups = 0; // dump / cache queries answered
+    this.lookups = 0; // dump queries answered
   }
 
   /** The loaded current dump (shared by every client in the process). */
@@ -34,24 +27,16 @@ export class FandomClient {
     return shared.get(this.dumpDir);
   }
 
-  /** Date (YYYY-MM-DD) up to which the source reflects the wiki, or null when unknown (legacy cache). */
+  /** Date (YYYY-MM-DD) up to which the dump reflects the wiki. */
   async asOf() {
-    return this.source === 'dump' ? (await this.dump()).lastEdit.slice(0, 10) : null;
+    return (await this.dump()).lastEdit.slice(0, 10);
   }
 
-  /** api.php-shaped response for `params`, from the dump or the legacy cache. */
+  /** api.php-shaped response for `params`, answered from the dump. */
   async get(params) {
     if (this.refresh) throw new Error(`--refresh is unavailable. ${DISABLED}`);
     this.lookups++;
-    if (this.source === 'dump') return (await this.dump()).query(params);
-    const qs = new URLSearchParams({ format: 'json', formatversion: '2', ...params });
-    const key = createHash('sha1').update(qs.toString()).digest('hex');
-    const file = join(this.cacheDir, `${key}.json`);
-    try {
-      return JSON.parse(await readFile(file, 'utf8'));
-    } catch (cause) {
-      throw new Error(`Fandom cache is missing or unreadable: ${file}. ${DISABLED}`, { cause });
-    }
+    return (await this.dump()).query(params);
   }
 
   /** All main-namespace page titles in a category. */
@@ -132,10 +117,8 @@ export class FandomClient {
 
   /**
    * Text of every main-namespace article (not redirects): Map<title, { revid, content }>.
-   * Replaces reading the whole legacy cache directory.
    */
   async pageTexts() {
-    if (this.source !== 'dump') throw new Error('pageTexts() reads the dump; use recommend/excerpt.mjs loadPages() for the legacy cache');
     const out = new Map();
     for (const p of (await this.dump()).pages.values()) {
       if (p.ns === 0 && !p.redirect && p.content != null) out.set(p.title, { revid: p.revid, content: p.content });
@@ -150,7 +133,6 @@ export class FandomClient {
    * A page with no revision at `at` gets no revision: never a later one.
    */
   async revisionAt(title, at, { content = false } = {}) {
-    if (this.source !== 'dump') throw new Error('revisionAt() needs the full-history dump');
     const dump = await this.dump();
     const target = dump.follow(title).target;
     const idx = await loadRevisionIndex(this.dumpDir, { log: (...a) => console.error('[dump]', ...a) });

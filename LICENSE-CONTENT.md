@@ -16,4 +16,4 @@ LLM 생성 여부로 라이선스를 일괄 결정하지 않습니다. 사실만
 
 『원신(Genshin Impact)』의 게임 IP(세계관, 명칭, 대사, 이미지 등)에 관한 권리는 COGNOSPHERE Pte., Ltd. (HoYoverse / miHoYo) 등 해당 권리자에게 있으며, 위 라이선스는 이 권리에 대해 어떤 허락도 부여하지 않습니다. 게임 이미지·대사·서적 원문은 Fandom 문서나 덤프에 포함되어 있어도 프로젝트의 CC 라이선스 적용 대상에서 제외합니다. 촬영자·편집자·팬아트 제작자 등의 별도 권리와 사용 조건도 각각 확인해야 합니다.
 
-본 프로젝트는 HoYoverse와 제휴하거나 승인받지 않은 비영리 팬 프로젝트입니다. 광고·후원·유료 기능을 운영하지 않으며, HoYoverse의 수정·삭제 요청은 즉시 따릅니다. 모든 권리 관련 질문과 수정·삭제 요청은 [contact@aru.wiki](mailto:contact@aru.wiki)로 받으며 수신 후 72시간 이내에 답변합니다. 이미지 사용 방침과 확인하지 못한 범위는 [이미지 방침](docs/image-policy-2026-11-11.md) 및 [권리·운영 위험 검토](docs/rights-risk-2026-11-11.md)에 명시합니다.
+본 프로젝트는 HoYoverse와 제휴하거나 승인받지 않은 비영리 팬 프로젝트입니다. 권리 관련 문의와 수정·삭제 요청은 [contact@aru.wiki](mailto:contact@aru.wiki)로 받습니다. 이미지 사용 방식과 근거는 [이미지 방침](docs/image-policy.md)과 [권리·운영 위험 검토](docs/rights-risk.md)에 있습니다.

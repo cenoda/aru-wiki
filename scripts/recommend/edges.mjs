@@ -6,6 +6,7 @@
 //   light   weak verdict rated 3 with rare shared evidence (candidate score >= LIGHT_MIN_SCORE);
 //           drawn fainter than medium
 // Other weak verdicts stay in the judgment files only.
+// Run scripts/recommend/apply-reviews.mjs afterwards: it applies human verdicts and text fixes.
 import { existsSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { latinNames, makeLocalizer } from './ko-text.mjs';
@@ -26,22 +27,28 @@ const units = new Map(unitData.units.map((u) => [u.id, u]));
 const vOrder = new Map(versions.map((v) => [v.id, v.order]));
 const score = new Map(cands2.map((p) => [`${p.source}->${p.target}`, p.score]));
 
+// Edges judged on an earlier build may point at acts or units this build lacks (the dump stops at
+// 7.1). They are kept as last written (docs/dump-migration-2026-11-11.md §7).
+const previous = new Map((await opt('recommended-edges.json', [])).map((e) => [`${e.source}->${e.target}`, e]));
 const node = (id) => {
   const q = byId.get(id);
   if (q) return { names: q.names, version: q.first_version, sources: q.sources };
   const u = units.get(id);
+  if (!u) return null;
   return { names: u.names, version: u.first_version, sources: byId.get(u.members[0])?.sources ?? [] };
 };
 // The judge reads English pages: show official Korean names for stories (「English title」) and for
 // characters, places and lore it left in English, with particles fitted to the Korean name.
 // data/manual/ko-misspellings.json: Hangul spellings the judge made up -> page title in ko-names.json.
 const misspelled = JSON.parse(await readFile(new URL('../../data/manual/ko-misspellings.json', import.meta.url), 'utf8'));
+// A name loses its official Korean form when its page is newer than the dump; keep the judge's spelling then.
+const noKo = [];
 const localize = makeLocalizer(
   Object.entries(koNames).map(([en, v]) => [en, v.ko]),
   [...quests, ...unitData.units].map((x) => [x.names.en, x.names.ko]),
-  Object.entries(misspelled).filter(([w]) => !w.startsWith('$')).map(([w, en]) => {
-    if (!koNames[en]?.ko) throw new Error(`ko-misspellings.json: no Korean name for ${en}`);
-    return [w, koNames[en].ko];
+  Object.entries(misspelled).filter(([w]) => !w.startsWith('$')).flatMap(([w, en]) => {
+    if (!koNames[en]?.ko) { noKo.push(`${w} (${en})`); return []; }
+    return [[w, koNames[en].ko]];
   }),
 );
 const later = (a, b) => (vOrder.get(a) >= vOrder.get(b) ? a : b);
@@ -58,7 +65,7 @@ function tierOf(j) {
 }
 
 const edges = new Map();
-let reversed = 0;
+let reversed = 0, kept = 0, missing = 0;
 for (const j of [...pass1, ...pass2]) {
   const tier = tierOf(j);
   if (!tier) continue;
@@ -67,6 +74,10 @@ for (const j of [...pass1, ...pass2]) {
   if (requires(j.target, j.source)) { reversed++; continue; }
   if (edges.has(key) && RANK[edges.get(key).tier] >= RANK[tier]) continue;
   const s = node(j.source), t = node(j.target);
+  if (!s || !t) {
+    if (previous.has(key)) { edges.set(key, previous.get(key)); kept++; } else missing++;
+    continue;
+  }
   edges.set(key, {
     source: j.source, target: j.target, relation: 'RECOMMENDED', basis: 'llm', tier,
     rating: ratings[key]?.confusion ?? null,
@@ -85,5 +96,8 @@ for (const e of list) for (const n of latinNames(e.reason_ko)) left.set(n, (left
 if (left.size) console.log(`English names left (no official Korean name): ${[...left].sort((a, b) => b[1] - a[1]).map(([n, c]) => `${n}×${c}`).join(', ')}`);
 const count = (k) => list.filter((e) => e.tier === k).length;
 const isAct = (id) => byId.get(id)?.level === 'ACT';
+if (noKo.length) console.log(`ko-misspellings.json entries with no official Korean name in this build: ${noKo.join(', ')}`);
+console.log(`${kept} edges kept as last written (act or unit not in this build), ${missing} skipped`);
+console.log('next: node scripts/recommend/apply-reviews.mjs (human verdicts and reason fixes)');
 console.log(`dropped ${reversed} reversed (B required before A); ${list.filter((e) => e.already_required).length} already required`);
 console.log(`${list.length} RECOMMENDED edges: ${count('strong')} strong, ${count('medium')} medium, ${count('light')} light; ${list.filter((e) => isAct(e.source) && isAct(e.target)).length} between acts`);

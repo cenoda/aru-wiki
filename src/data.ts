@@ -150,6 +150,8 @@ export interface RecommendedEdge {
   gist_ko?: string;
   characters: string[];
   revealed: number;
+  /** a person checked the LLM edge (data/manual/edge-reviews.json); infobox edges count as checked */
+  reviewed: boolean;
 }
 
 /**
@@ -165,7 +167,7 @@ export function recommendedGraph() {
     if (!s || !t || s === t) continue;
     const id = `rec:${s}->${t}`;
     out.set(id, { id, source: s, target: t, basis: 'recommended', tier: 'strong',
-      reason_ko: 'Fandom 정보 상자에 권장 임무로 적혀 있습니다.', characters: [],
+      reason_ko: 'Fandom 정보 상자에 권장 임무로 적혀 있습니다.', characters: [], reviewed: true,
       revealed: versionOrder.get(e.revealed_version ?? '') ?? 0 });
   }
   for (const e of recommendedJson as LlmEdge[]) {
@@ -175,8 +177,9 @@ export function recommendedGraph() {
     const id = `rec:${e.source}->${e.target}`;
     if (out.has(id)) continue; // the infobox says so already
     out.set(id, { id, source: e.source, target: e.target, basis: 'llm', tier: e.tier,
-      reason_ko: e.reason_ko, gist_ko: e.gist_ko, characters: e.links, revealed: versionOrder.get(e.revealed_version) ?? 0 });
+      reason_ko: e.reason_ko, gist_ko: e.gist_ko, characters: e.links, reviewed: e.review === 'verified',
+      revealed: versionOrder.get(e.revealed_version) ?? 0 });
   }
   return [...out.values()];
 }
-interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string; already_required?: boolean }
+interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string; already_required?: boolean; review: 'unreviewed' | 'verified' }

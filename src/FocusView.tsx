@@ -1351,7 +1351,8 @@ function RecsOut({ edges, go }: { edges: RecommendedEdge[]; go: (id: string) => 
 
 // Recommended acts as a short list. The shared context stays visible. The one-line
 // gist (temporary regex, or gist_ko once the pipeline writes it) and the full reason
-// open together. The unreviewed mark is shown once for the whole list.
+// open together. The unreviewed mark is shown once for the whole list, while any LLM edge in it
+// is unchecked by a person.
 function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName: string; go: (id: string) => void }) {
   const [open, setOpen] = useState(false);
   const items = edges.map((edge) => {
@@ -1364,14 +1365,17 @@ function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName:
   });
   const told = items.filter((it) => !it.infobox);
   const lead = recommendationLead(told.map((it) => ({ name: it.name, reason: it.edge.reason_ko })), targetName);
-  const llm = edges.some((e) => e.basis === 'llm');
+  const unchecked = edges.filter((e) => e.basis === 'llm' && !e.reviewed).length;
+  const checked = edges.some((e) => e.basis === 'llm' && e.reviewed);
   const strong = told.some((it) => it.edge.tier === 'strong');
   const spoilers = told.length > 0;
   return (
     <section className="recs">
       <div className="recs-head">
         <h3>먼저 하면 좋은 이야기</h3>
-        {llm && <span className="tag neutral" title="LLM 판정 후 다른 회사 모델이 검증했습니다. 사람 검수 전입니다.">미검수</span>}
+        {unchecked > 0 && (
+          <span className="tag neutral" title={`LLM 판정 후 다른 회사 모델이 검증했습니다. ${checked ? `이 중 ${unchecked}개는` : '모두'} 사람 검수 전입니다.`}>미검수</span>
+        )}
         <div className="rec-toggle">
           {strong && <span className="badge">스포일러 주의</span>}
           {spoilers && (

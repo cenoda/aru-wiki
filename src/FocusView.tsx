@@ -1,5 +1,5 @@
 import {
-  applyNodeChanges, BaseEdge, type Edge, type EdgeProps, getSmoothStepPath, Handle, type Node, type NodeChange, type NodeProps, Position,
+  applyNodeChanges, BaseEdge, type Edge, type EdgeProps, Handle, type Node, type NodeChange, type NodeProps, Position,
   MarkerType, ReactFlow, ReactFlowProvider, useReactFlow, useStore,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
@@ -763,7 +763,7 @@ function Atlas() {
     }));
     const labelNodes: Node[] = atlas.labels
       .filter((l) => l.kind === 'era' || versionOrder.get(l.text)! <= vIdx)
-      .map((l) => ({ id: l.id, type: 'label', position: { x: l.x, y: l.y }, draggable: false, selectable: false, data: l }));
+      .map((l) => ({ id: l.id, type: 'label', position: { x: l.x, y: l.y }, selectable: false, data: l }));
     setNodes([...labelNodes, ...actNodes]);
   }, [visible, focus, vIdx, branch, branchPos, inBranch]);
 
@@ -977,6 +977,50 @@ function Atlas() {
 
   const onNodesChange = useCallback((c: NodeChange[]) => setNodes((ns) => applyNodeChanges(c, ns)), []);
 
+  // Graph bounds for elastic pan recovery: the current branch, or the visible atlas.
+  const bounds = useMemo(() => {
+    if (inBranch && branchPos) {
+      const pts = [...branchPos.values()];
+      return {
+        minX: Math.min(...pts.map((p) => p.x)),
+        maxX: Math.max(...pts.map((p) => p.x + CARD_W)),
+        minY: Math.min(...pts.map((p) => p.y)),
+        maxY: Math.max(...pts.map((p) => p.y + p.h)),
+      };
+    }
+    const visActs = acts.filter(visible);
+    const visLabels = atlas.labels.filter((l) => l.kind === 'era' || versionOrder.get(l.text)! <= vIdx);
+    return {
+      minX: Math.min(-230, ...visActs.map((a) => atlas.pos.get(a.id)!.x)),
+      maxX: Math.max(...visActs.map((a) => atlas.pos.get(a.id)!.x + CARD_W)),
+      minY: Math.min(0, ...visLabels.map((l) => l.y)),
+      maxY: Math.max(
+        ...visActs.map((a) => atlas.pos.get(a.id)!.y + CARD_H + 40),
+        ...visLabels.map((l) => l.y + (l.kind === 'era' ? 78 : 34)),
+      ),
+    };
+  }, [inBranch, branchPos, visible, vIdx]);
+
+  // Spring back into view when a reader-initiated pan or zoom drags the graph past the frame margin.
+  const onMoveEnd = useCallback((event: MouseEvent | TouchEvent | null, vp: { x: number; y: number; zoom: number }) => {
+    if (!event) return;
+    const frame = document.querySelector('.stage .flow-frame')?.getBoundingClientRect();
+    if (!frame || frame.width < 40 || frame.height < 40) return;
+    const z = vp.zoom;
+    const keepX = Math.min(220, frame.width * 0.35);
+    const keepTop = Math.min(80, frame.height * 0.2);
+    const keepBottom = Math.min(140, frame.height * 0.25);
+    const minTx = keepX - bounds.maxX * z;
+    const maxTx = frame.width - keepX - bounds.minX * z;
+    const minTy = keepTop - bounds.maxY * z;
+    const maxTy = frame.height - keepBottom - bounds.minY * z;
+    const x = Math.max(minTx, Math.min(maxTx, vp.x));
+    const y = Math.max(minTy, Math.min(maxTy, vp.y));
+    if (Math.abs(x - vp.x) > 1 || Math.abs(y - vp.y) > 1) {
+      flow.setViewport({ x, y, zoom: z }, { duration: 280 });
+    }
+  }, [bounds, flow]);
+
   // Acts, units (series, events…) and the quests in either. A quest leads to its act or unit.
   const results = useMemo(() => {
     const s = query.trim().toLowerCase();
@@ -1076,7 +1120,8 @@ function Atlas() {
               else if (n.type === 'act' || n.type === 'unit') select(n.id === focus ? null : n.id);
             }}
             onPaneClick={() => select(null)}
-            nodesConnectable={false} minZoom={0.08} maxZoom={2} proOptions={{ hideAttribution: true }}
+            onMoveEnd={onMoveEnd}
+            nodesDraggable={false} nodesConnectable={false} minZoom={0.08} maxZoom={2} proOptions={{ hideAttribution: true }}
             onlyRenderVisibleElements
           />
         </div>
@@ -1396,15 +1441,10 @@ const MoreNode = memo(({ data }: NodeProps<Node<Fold>>) => (
     <Handle type="source" position={Position.Right} />
   </div>
 ));
-/**
- * A branch link along the route ELK computed, corners rounded. If a card was dragged off its
- * laid-out place, the stored route no longer meets it: fall back to a plain smooth step.
- */
+/** A branch link along the orthogonal route ELK computed, with rounded corners. */
 const RouteEdge = memo((p: EdgeProps<Edge<{ points?: XY[] }>>) => {
   const pts = p.data?.points;
-  const fits = pts && pts.length >= 2 && Math.abs(pts[0].x - p.sourceX) < 3 && Math.abs(pts.at(-1)!.x - p.targetX) < 3
-    && Math.abs(pts[0].y - p.sourceY) < 60 && Math.abs(pts.at(-1)!.y - p.targetY) < 60;
-  const path = fits ? roundedPath(pts) : getSmoothStepPath(p)[0];
+  const path = pts && pts.length >= 2 ? roundedPath(pts) : `M${p.sourceX},${p.sourceY} L${p.targetX},${p.targetY}`;
   return <BaseEdge path={path} markerEnd={p.markerEnd} style={p.style} />;
 });
 function roundedPath(pts: XY[], r = 10) {

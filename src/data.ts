@@ -25,7 +25,13 @@ export interface QuestEdge {
   revealed_version: string | null;
 }
 
-export interface Version { id: string; number: string; order: number; released: string; title: string }
+export interface Version {
+  id: string; number: string; order: number; released: string; title: string;
+  /** official Korean version title (Fandom Version/X.Y page) */
+  title_ko?: string;
+  /** areas the version opens (Fandom Version/X.Y page); ko from ko-names.json */
+  areas?: { en: string; ko?: string }[];
+}
 
 export let versions: Version[] = [];
 export let quests: Quest[] = [];
@@ -88,6 +94,8 @@ interface GraphData {
   questEdges: QuestEdge[];
   units: { region_entry: Record<string, string>; units: Unit[] };
   recommended: LlmEdge[];
+  figures: FiguresData;
+  imageFiles: ImageFile[];
 }
 
 let loading: Promise<void> | undefined;
@@ -107,6 +115,7 @@ export function loadData() {
     regionEntry = g.units.region_entry;
     unitOfQuest = new Map(units.flatMap((u) => u.members.map((m) => [m, u.id] as const)));
     recommendedRaw = g.recommended;
+    figureOf = buildFigures(g.figures, g.imageFiles);
   })().catch((err) => { loading = undefined; throw err; });
 }
 export const UNIT_LABEL: Record<UnitKind, string> = { series: '시리즈', event: '이벤트', chain: '연속 임무', single: '단일 임무' };
@@ -208,6 +217,33 @@ export function recommendedGraph() {
   return [...out.values()];
 }
 interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string; review: 'unreviewed' | 'verified' }
+
+// ---------- card figures and their images (docs/image-policy.md) ----------
+
+export const IMAGE_NOTICE = '© All rights reserved by COGNOSPHERE. Other properties belong to their respective owners.';
+export interface Figure {
+  character: string;
+  ko: string | null;
+  /** an icon exists for the character; shown from `release` (version order) on */
+  icon?: { src: string; source_url: string; fetched: string; release: number; release_version: string };
+}
+interface ImageFile { file: string; character: string; source_url: string; fetched: string; release_version: string }
+interface FiguresData { acts: Record<string, { character: string }>; characters: Record<string, { ko: string | null }> }
+/** act id → the character its card shows (scripts/images/card-figures.mjs); filled by loadData() */
+export let figureOf = new Map<string, Figure>();
+function buildFigures(figuresData: FiguresData, files: ImageFile[]) {
+  const iconOf = new Map(files.map((f) => [f.character, f]));
+  return new Map(Object.entries(figuresData.acts).map(([act, { character }]): [string, Figure] => {
+    const f = iconOf.get(character);
+    const release = f ? versionOrder.get(f.release_version) : undefined;
+    return [act, {
+      character, ko: figuresData.characters[character]?.ko ?? null,
+      icon: f && release !== undefined ? {
+        src: `${import.meta.env.BASE_URL}${f.file}`, source_url: f.source_url, fetched: f.fetched, release, release_version: f.release_version,
+      } : undefined,
+    }];
+  }));
+}
 
 // The bindings above are filled once by loadData() and read by the views' top-level code.
 // Re-running this module on a hot update would empty them under the views: reload the page instead.

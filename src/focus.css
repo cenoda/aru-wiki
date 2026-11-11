@@ -55,7 +55,7 @@
 .site .stage.far .card-node.dim { opacity: .3; }
 
 .site .atlas-label { white-space: nowrap; pointer-events: none; color: var(--muted); }
-.site .atlas-label.ver { font-size: 22px; font-weight: 500; letter-spacing: .04em; color: var(--text); opacity: .55; font-variant-numeric: tabular-nums; }
+.site .atlas-label.ver { font-size: 40px; line-height: 50px; margin-top: -4px; font-weight: 500; letter-spacing: .04em; color: var(--text); opacity: .55; font-variant-numeric: tabular-nums; }
 .site .atlas-label.era { width: 200px; text-align: right; font-family: "Noto Serif KR", "Source Han Serif KR", serif; font-size: 52px; font-weight: 700; letter-spacing: -.03em; color: var(--gold); opacity: .72; }
 .site .react-flow__node-label { pointer-events: none !important; }
 
@@ -206,3 +206,42 @@
 .site .act-quests ol.unit-quests { list-style: none; margin: 0; padding: 0; counter-reset: q; }
 .site .unit-tag { border-radius: 8px; }
 .site .find li button.unit .dot { border-radius: 2px; }
+
+/* card figure: a character icon (from its release version on) or a region emblem */
+.site .card-node.act { padding-left: 5px; }
+.site .card-node .fig { flex: none; width: 30px; height: 30px; margin-right: 8px; border-radius: 50%; }
+.site .card-node .icon-fig { position: relative; overflow: visible; background: color-mix(in srgb, var(--c) 16%, var(--card)); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--c) 40%, transparent); }
+/* the whole file, never cropped: the face reaches the bottom edge, so the image sits on the
+   circle's bottom and the top of the head may rise above it */
+.site .card-node .icon-fig img { position: absolute; width: 36px; height: 36px; left: -3px; bottom: 0; max-width: none; user-select: none; }
+.site .card-node .emblem-fig { display: grid; place-items: center; background: color-mix(in srgb, var(--c) 9%, var(--card)); }
+.site .emblem { width: 19px; height: 19px; fill: var(--c); opacity: .8; }
+.site .stage.far .card-node .fig { visibility: hidden; }
+.site .card-node .opens { left: 40px; }
+
+/* what a version brought, in the empty space of its column */
+.site .ver-note { width: 100%; overflow: hidden; padding: 9px 12px; border-left: 2px solid color-mix(in srgb, var(--gold) 55%, transparent);
+  background: color-mix(in srgb, var(--card) 55%, transparent); color: var(--muted); font-size: .76rem; line-height: 1.45; pointer-events: none; }
+.site .ver-note .vn-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; font-size: .9rem; font-weight: 600; color: var(--text); opacity: .8; }
+.site .ver-note .vn-row { display: flex; gap: 6px; }
+.site .ver-note .vn-row b { flex: none; font-weight: 600; color: var(--gold); opacity: .9; }
+.site .ver-note .vn-row span { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.site .ver-note.roomy .vn-row span { -webkit-line-clamp: 3; }
+.site .ver-note.compact { padding: 3px 10px; }
+.site .ver-note.compact .vn-title { margin-bottom: 0; font-size: .85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.site .ver-note.compact .vn-row span { -webkit-line-clamp: 1; }
+.site .stage.far .ver-note { visibility: hidden; }
+
+/* image credit */
+.site .info .fig-credit { display: flex; gap: 8px; align-items: flex-start; margin: 8px 0 2px; font-size: .78rem; color: var(--muted); line-height: 1.45; }
+.site .info .fig-credit img { flex: none; border-radius: 50%; background: color-mix(in srgb, var(--c) 16%, var(--card)); }
+.site .info .fig-credit b { color: var(--text); font-weight: 600; }
+.site .info .fig-credit small { display: block; font-size: .7rem; opacity: .85; }
+.site .img-notice { position: absolute; right: 10px; bottom: 6px; z-index: 3; margin: 0; padding: 1px 6px; border-radius: 2px; background: color-mix(in srgb, var(--card) 80%, transparent); font-size: .68rem; color: var(--muted); opacity: .8; pointer-events: none; }
+.site .ver-note.roomy .vn-title { white-space: normal; }
+.site .emblem-big .emblem { width: 100%; height: 100%; }
+
+/* bracket from a version label to its note */
+.site .ver-stem { display: block; overflow: visible; pointer-events: none; }
+.site .ver-stem path { fill: none; stroke: color-mix(in srgb, var(--gold) 55%, transparent); stroke-width: 1.5; }
+.site .stage.far .ver-stem { visibility: hidden; }

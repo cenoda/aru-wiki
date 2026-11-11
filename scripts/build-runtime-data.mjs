@@ -8,8 +8,9 @@ const root = new URL('../', import.meta.url);
 const read = async (f) => JSON.parse(await readFile(new URL(`data/generated/${f}`, root), 'utf8'));
 const pick = (o, keys) => Object.fromEntries(keys.filter((k) => o[k] !== undefined).map((k) => [k, o[k]]));
 
-const [quests, edges, versions, units, recommended] = await Promise.all([
+const [quests, edges, versions, units, recommended, figures, imageFiles] = await Promise.all([
   read('quests.json'), read('quest-edges.json'), read('versions.json'), read('quest-units.json'), read('recommended-edges.json'),
+  read('card-figures.json'), read('image-files.json'),
 ]);
 
 const graph = {
@@ -29,6 +30,9 @@ const graph = {
   recommended: recommended
     .filter((e) => !e.already_required) // the game enforces this order already; the site drops them too
     .map((e) => pick(e, ['source', 'target', 'tier', 'reason_ko', 'gist_ko', 'links', 'revealed_version', 'review'])),
+  // card figures and their icon files (docs/image-policy.md)
+  figures: { acts: figures.acts, characters: Object.fromEntries(Object.entries(figures.characters).map(([k, v]) => [k, { ko: v.ko ?? null }])) },
+  imageFiles: imageFiles.files.map((f) => pick(f, ['file', 'character', 'source_url', 'fetched', 'release_version'])),
 };
 
 const outDir = new URL('data/runtime/', root);

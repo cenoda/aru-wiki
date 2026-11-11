@@ -75,6 +75,12 @@ for (const u of units) {
   u.quest_type = majority(qs.map((q) => q.quest_type));
   const region = majority(qs.map((q) => q.region).filter(Boolean));
   if (region) u.region = region;
+  const character = majority(qs.map((q) => q.character).filter(Boolean));
+  if (character) u.character = character;
+  const chapter = majority(qs.map((q) => q.chapter).filter(Boolean));
+  if (chapter) u.chapter = chapter;
+  const group = majority(qs.map((q) => q.group).filter(Boolean));
+  if (group) u.group = group;
   u.first_version = qs.map((q) => q.first_version).filter(Boolean).sort((a, b) => vOrder.get(a) - vOrder.get(b))[0] ?? null;
   u.replayable = qs.every((q) => q.replayable);
 }

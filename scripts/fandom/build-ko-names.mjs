@@ -16,7 +16,9 @@ const client = new FandomClient({ refresh: process.argv.includes('--refresh') })
 const log = (...a) => console.error('[ko-names]', ...a);
 
 const lore = JSON.parse(await readFile(file('lore-links.json'), 'utf8'));
+const versions = JSON.parse(await readFile(file('versions.json'), 'utf8'));
 const kind = new Map(Object.entries(lore).map(([t, v]) => [t, v.kind]));
+for (const v of versions) for (const a of v.areas ?? []) if (!kind.has(a.en)) kind.set(a.en, 'lore');
 for (const n of await characterNames()) if (!kind.has(n)) kind.set(n, 'character');
 const titles = [...kind.keys()].sort();
 log(`titles: ${titles.length} (lore-links ${Object.keys(lore).length})`);

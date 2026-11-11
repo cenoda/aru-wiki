@@ -6,6 +6,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { FandomClient, pageUrl } from './client.mjs';
+import { koNames } from './ko-names.mjs';
 import { decodeEntities, infobox, linkTargets, normalizeTitle, plainText, sectionListLinks, slug } from './wikitext.mjs';
 
 const args = process.argv.slice(2);
@@ -26,24 +27,77 @@ const ACT_REQ_FIELDS = ['archonQuestReq', 'storyQuestReq', 'worldQuestReq']
 const log = (...a) => console.error('[stage1]', ...a);
 
 // ---------- versions ----------
+function cleanField(v) {
+  const s = plainText(v);
+  return s && s !== '-->' && !/^none$/i.test(s) ? s : null;
+}
+
+function versionAreas(content) {
+  const clean = content.replace(/<!--[\s\S]*?-->/g, '');
+  const nc = clean.match(/==\s*New Content\s*==([\s\S]*?)(?=\n==[^=]|$)/i)?.[1] ?? '';
+  const block = nc.match(/;(?:New|Returning)\s+(?:Limited[- ]Time\s+)?(?:Regions?|Subregions?|Areas?|Locations?)\b([\s\S]*?)(?=\n;|\n===|$)/i)?.[1] ?? '';
+  const out = [];
+  for (const line of block.split('\n').filter((l) => /^\*+/.test(l.trim()))) {
+    if (/\b(?:New Feature|New Domain|Frostbearing Tree|Sacred Sakura|Statue of The Seven|Teleport Waypoint)\b/i.test(line)) continue;
+    for (const t of linkTargets(line)) {
+      if (/^(?:Domains?|Frostbearing Tree|Sacred Sakura.*|Statue of The Seven|Teleport Waypoint|Bounties|Requests|File:.*)$/i.test(t)) continue;
+      if (!out.includes(t)) out.push(t);
+    }
+  }
+  return out;
+}
+
 async function buildVersions() {
   const titles = (await client.prefixPages('Version/')).filter((t) => t !== 'Version/Gallery');
   const pages = await client.latest(titles);
   const seen = new Map();
+  const rawAreas = new Map();
+  const title2ByVer = new Map();
   for (const page of pages.values()) {
     const f = infobox(page.content, 'Version');
     if (!f?.version || !/^\d{4}-\d{2}-\d{2}$/.test(f.date ?? '')) continue;
     if (f.date < '2020-09-28' || f.date > today) continue; // skip betas and unreleased
+    const title = plainText(f.title);
+    const title2 = cleanField(f.title2);
+    if (title2) title2ByVer.set(f.version, title2);
+    rawAreas.set(f.version, versionAreas(page.content));
     seen.set(f.version, {
       id: f.version,
       number: f.number ?? f.version,
-      title: plainText(f.title),
+      title,
       released: f.date,
       source: { wiki: 'fandom', url: pageUrl(page.title), revision: page.revid },
     });
   }
   const list = [...seen.values()].sort((a, b) => a.released.localeCompare(b.released));
-  list.forEach((v, i) => { v.order = i; });
+  const verLookupTitles = new Set();
+  const allAreaTitles = new Set();
+  for (const v of list) {
+    verLookupTitles.add(`Version/${v.id}`);
+    if (v.title) {
+      verLookupTitles.add(v.title);
+      if (v.title.includes(' - ')) verLookupTitles.add(v.title.split(' - ').pop().trim());
+    }
+    for (const a of rawAreas.get(v.id) ?? []) allAreaTitles.add(a);
+  }
+  const koRes = await koNames(client, [...verLookupTitles, ...allAreaTitles]);
+  list.forEach((v, i) => {
+    const title2 = title2ByVer.get(v.id);
+    const kVer = koRes.out[`Version/${v.id}`]?.ko;
+    const kTitle = koRes.out[v.title]?.ko;
+    const titleKo = (title2 ? kTitle ?? kVer : kVer ?? kTitle) ?? null;
+    if (titleKo) v.title_ko = titleKo;
+    if (title2) {
+      v.title2 = title2;
+      if (kVer && kVer !== titleKo) v.title2_ko = kVer;
+    }
+    const areas = (rawAreas.get(v.id) ?? []).map((en) => ({
+      en,
+      ...(koRes.out[en]?.ko ? { ko: koRes.out[en].ko } : {}),
+    }));
+    if (areas.length) v.areas = areas;
+    v.order = i;
+  });
   return list;
 }
 
@@ -104,6 +158,10 @@ async function main() {
     // Event Quests category marks them as time-limited.
     const isEvent = Boolean(fields.event_name) || eventCategory.has(page.title);
     const questType = isEvent ? 'EVENT' : TYPE_MAP[(fields.type ?? '').toLowerCase()] ?? catType ?? null;
+    const character = cleanField(fields.character);
+    const chapter = cleanField(fields.chapter);
+    const actNum = cleanField(fields.actNum);
+    const group = cleanField(fields.group);
     nodes.set(page.title, {
       id: `${level === 'ACT' ? 'act' : 'quest'}_${slug(page.title)}`,
       category: 'QUEST',
@@ -116,6 +174,10 @@ async function main() {
       replayable: !isEvent,
       ...(fields.region ? { region: plainText(fields.region).split(/\s*[;,]\s*/)[0] } : {}),
       ...(fields.event_name ? { event: plainText(fields.event_name) } : {}),
+      ...(character ? { character } : {}),
+      ...(chapter ? { chapter } : {}),
+      ...(actNum ? { actNum } : {}),
+      ...(group ? { group } : {}),
       sources: [{ wiki: 'fandom', url: pageUrl(page.title), revision: page.revid }],
     });
     raw.set(page.title, { fields, content: page.content });
@@ -135,6 +197,17 @@ async function main() {
     if (node && ko && !node.names.ko) {
       node.names.ko = ko;
       report.missingKo.splice(report.missingKo.indexOf(title), 1);
+    }
+  }
+  if (report.missingKo.length) {
+    const fallbackKo = await koNames(client, [...report.missingKo]);
+    for (const title of [...report.missingKo]) {
+      const ko = fallbackKo.out[title]?.ko;
+      const node = nodes.get(title);
+      if (node && ko) {
+        node.names.ko = ko;
+        report.missingKo.splice(report.missingKo.indexOf(title), 1);
+      }
     }
   }
 

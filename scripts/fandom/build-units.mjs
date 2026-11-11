@@ -6,7 +6,9 @@
 // Each unit is attached to acts: the acts its quests require (Fandom requirement fields), or
 // else its region's entry act, the Archon act that the region's world quests most often require.
 //
-// Reads quests.json, quest-edges.json, quest-series.json, versions.json; writes quest-units.json.
+// Reads quests.json, quest-edges.json, quest-series.json, versions.json and, for event names in
+// Korean, ko-names.json (build-ko-names.mjs); writes quest-units.json.
+import { existsSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { slug } from './wikitext.mjs';
 
@@ -14,6 +16,7 @@ const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
 const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
 const [quests, edges, series, versions] = await Promise.all(
   ['quests.json', 'quest-edges.json', 'quest-series.json', 'versions.json'].map(read));
+const koNames = existsSync(file('ko-names.json')) ? await read('ko-names.json') : {};
 const byId = new Map(quests.map((q) => [q.id, q]));
 const vOrder = new Map(versions.map((v) => [v.id, v.order]));
 const actOf = (id) => { const q = byId.get(id); return q?.level === 'ACT' ? q.id : q?.act ?? null; };
@@ -33,7 +36,10 @@ for (const s of series) {
   if (members.length) add('series', s.id, s.names, members, { next: s.next, major: s.major });
 }
 const byEvent = Map.groupBy(loose.filter((q) => q.event && !unitOf.has(q.id)), (q) => q.event);
-for (const [event, qs] of byEvent) add('event', `event_${slug(event)}`, { en: event }, qs.map((q) => q.id));
+for (const [event, qs] of byEvent) {
+  const ko = koNames[event]?.ko;
+  add('event', `event_${slug(event)}`, ko ? { en: event, ko } : { en: event }, qs.map((q) => q.id));
+}
 
 // prev chains among what is left
 const prevEdges = edges.filter((e) => e.basis === 'prev' && looseIds.has(e.source) && looseIds.has(e.target));

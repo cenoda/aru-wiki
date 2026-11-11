@@ -29,9 +29,8 @@ const SHAPES: Record<string, { label: string; d: string }> = {
     'M5 7.6 2 14h1.4L5 10.4 6.6 14H8zM19 7.6 16 14h1.4l1.6-3.6 1.6 3.6H22z' +
     'M1.6 14.6h6.8c0 1.7-1.5 3-3.4 3s-3.4-1.3-3.4-3zM15.6 14.6h6.8c0 1.7-1.5 3-3.4 3s-3.4-1.3-3.4-3z' },
   Natlan: { label: '화산', d:
-    // cone with a crater, flame above
-    'M9.2 10.5h5.6L22 22H2z' +
-    'M12 1.8c1.9 2.3 3 3.9 3 5.7a3 3 0 0 1-6 0c0-1.8 1.1-3.4 3-5.7z' },
+    // flat-topped cone with a crater dip, smoke rising from it
+    'M2 22 8.6 10.8H10.4L12 12.4 13.6 10.8H15.4L22 22zM10.100000000000001 7.4a1.7 1.7 0 1 0 3.4 0a1.7 1.7 0 1 0 -3.4 0zM12.200000000000001 4.9a2.1 2.1 0 1 0 4.2 0a2.1 2.1 0 1 0 -4.2 0zM15.900000000000002 3a1.7 1.7 0 1 0 3.4 0a1.7 1.7 0 1 0 -3.4 0z' },
   'Nod-Krai': { label: '바다 위 달', d:
     // crescent over two waves
     'M14.5 2.2a7 7 0 1 0 5.8 11 5.6 5.6 0 0 1-5.8-11z' +

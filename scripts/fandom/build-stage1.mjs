@@ -148,6 +148,22 @@ async function main() {
   const characters = {}; // quest id -> character page names (kept out of quests.json, the UI bundles that)
   const report = { missingInfobox: [], missingVersion: [], missingKo: [], unresolvedLinks: {} };
 
+  // Different pages can share a slug ("Everlasting As the Moon" / "Everlasting as the Moon").
+  // Those ids get the release version appended so every node id is unique.
+  const slugCount = new Map();
+  for (const p of new Map([...pages.values()].map((p) => [p.title, p])).values()) {
+    const k = slug(p.title);
+    slugCount.set(k, (slugCount.get(k) ?? 0) + 1);
+  }
+  const usedIds = new Set();
+  const nodeId = (level, title, version) => {
+    const base = `${level === 'ACT' ? 'act' : 'quest'}_${slug(title)}`;
+    let id = slugCount.get(slug(title)) > 1 ? `${base}_${slug(version ?? 'unreleased')}` : base;
+    for (let n = 2; usedIds.has(id); n++) id = `${base}_${n}`;
+    usedIds.add(id);
+    return id;
+  };
+
   const addNode = (title, level, catType) => {
     const page = pages.get(title);
     if (!page || nodes.has(page.title)) return;
@@ -169,7 +185,7 @@ async function main() {
     const actNum = cleanField(fields.actNum);
     const group = cleanField(fields.group);
     nodes.set(page.title, {
-      id: `${level === 'ACT' ? 'act' : 'quest'}_${slug(page.title)}`,
+      id: nodeId(level, page.title, version),
       category: 'QUEST',
       level,
       quest_type: questType,

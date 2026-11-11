@@ -48,35 +48,52 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 
 | # | 등급 | A (선행) | B (후행) | 사전 점검 | 사람 판정 |
 |---|---|---|---|---|---|
-| 1 | 강함 | 비마나 경전 | 「바나」가 치유될 때까지 | 문제 없어 보임 | |
-| 2 | 강함 | 「거울 속 왕국」 | 해초 바다 탐색 | 확인 필요 | |
-| 3 | 강함 | 달의 동쪽, 태양의 서쪽 | 시간을 초월한 유성 | 확인 필요 | |
-| 4 | 강함 | 눈물 없는 내일을 위해 | 돌아온 바람 잡는 이방인 | 확인 필요 | |
-| 5 | 강함 | 키니치의 거래 | 뜨거운 환혼시 | 문제 없어 보임 | |
-| 6 | 강함 | 허공의 선동, 타오르는 겁화 | 오가는 나비들 | 문제 없어 보임 | |
-| 7 | 강함 | 눈물 없는 내일을 위해 | 여름! 섬? 모험! | 문제 없어 보임 | |
-| 8 | 강함 | 궁전과 무덤 | A Mirror That Reflects the Foe | 확인 필요 | |
-| 9 | 강함 | 우리가 잃어버린 것 | 신이 사랑하지 않은 설국 | 의심 | |
-| 10 | 중간 | 유적 조사·생존 훈련소 | 공허 겁회의 푸라나 | 확인 필요 | |
-| 11 | 중간 | 바람 잡는 이방인 | 돌아온 바람 잡는 이방인 | 문제 없어 보임 | |
-| 12 | 중간 | 눈보라와 푸른숲의 춤 | 무인선 | 확인 필요 | |
-| 13 | 중간 | 긴 밤의 서막 | 악행의 대가 | 문제 없어 보임 | |
-| 14 | 중간 | 희미한 메아리 | 울려 퍼지는 기도 | 확인 필요 | |
-| 15 | 중간 | 이야기라는 이름의 마법 | 마녀의 계시・강시 | 의심 | |
-| 16 | 중간 | 윈드블룸의 숨결 | 세계 | 문제 없어 보임 | |
-| 17 | 중간 | 약속과 망각 사이에서 | 타오를 운명의 무지개 | 확인 필요 | |
-| 18 | 중간 | 배리의 순간 | 해답 | 문제 없어 보임 | |
-| 19 | 연함 | 미니 버섯몬 판타지 | 느긋한 리듬 댄스 파티 | 문제 없어 보임 | |
-| 20 | 연함 | 용에게 선택받은 자의 여정 | 귀환의 날갯짓 | 문제 없어 보임 | |
-| 21 | 연함 | 잔 속에서 울리는 노래 | 원정을 떠난 이에게 | 확인 필요 | |
-| 22 | 연함 | 신이 사랑하지 않은 설국 | 여왕의 새 초상화 | 확인 필요 | |
-| 23 | 연함 | 의사의 마음 | 봄볕의 복숭아 부적 | 확인 필요 | |
-| 24 | 연함 | 버섯몬 기관 대전 | 버섯몬 여행기 | 문제 없어 보임 | |
-| 25 | 연함 | 눈보라와 푸른숲의 춤 | 총과 실의 포위망 | 문제 없어 보임 | |
-| 26 | 연함 | 안개와 어두운 숲을 지나 | 천국 | 문제 없어 보임 | |
-| 27 | 연함 | 천국 | Hour of Ruin | 확인 필요 | |
+| 1 | 강함 | 비마나 경전 | 「바나」가 치유될 때까지 | 문제 없어 보임 | 맞음 |
+| 2 | 강함 | 「거울 속 왕국」 | 해초 바다 탐색 | 확인 필요 | 맞음 |
+| 3 | 강함 | 달의 동쪽, 태양의 서쪽 | 시간을 초월한 유성 | 확인 필요 | 애매 (중간이 맞음) |
+| 4 | 강함 | 눈물 없는 내일을 위해 | 돌아온 바람 잡는 이방인 | 확인 필요 | 맞음 |
+| 5 | 강함 | 키니치의 거래 | 뜨거운 환혼시 | 문제 없어 보임 | 애매 (연함이 맞음) |
+| 6 | 강함 | 허공의 선동, 타오르는 겁화 | 오가는 나비들 | 문제 없어 보임 | 애매 (중간이 맞음) |
+| 7 | 강함 | 눈물 없는 내일을 위해 | 여름! 섬? 모험! | 문제 없어 보임 | 애매 (연함이 맞음) |
+| 8 | 강함 | 궁전과 무덤 | A Mirror That Reflects the Foe | 확인 필요 | 애매 |
+| 9 | 강함 | 우리가 잃어버린 것 | 신이 사랑하지 않은 설국 | 의심 | 애매 (연함이 맞음) |
+| 10 | 중간 | 유적 조사·생존 훈련소 | 공허 겁회의 푸라나 | 확인 필요 | 애매 (연함이 맞음) |
+| 11 | 중간 | 바람 잡는 이방인 | 돌아온 바람 잡는 이방인 | 문제 없어 보임 | 맞음 |
+| 12 | 중간 | 눈보라와 푸른숲의 춤 | 무인선 | 확인 필요 | 애매 (연함이 맞음) |
+| 13 | 중간 | 긴 밤의 서막 | 악행의 대가 | 문제 없어 보임 | 애매 (연함이 맞음) |
+| 14 | 중간 | 희미한 메아리 | 울려 퍼지는 기도 | 확인 필요 | 맞음 |
+| 15 | 중간 | 이야기라는 이름의 마법 | 마녀의 계시・강시 | 의심 | 틀림 |
+| 16 | 중간 | 윈드블룸의 숨결 | 세계 | 문제 없어 보임 | 애매 (연함이 맞음) |
+| 17 | 중간 | 약속과 망각 사이에서 | 타오를 운명의 무지개 | 확인 필요 | 애매 (연함이 맞음) |
+| 18 | 중간 | 배리의 순간 | 해답 | 문제 없어 보임 | 틀림 |
+| 19 | 연함 | 미니 버섯몬 판타지 | 느긋한 리듬 댄스 파티 | 문제 없어 보임 | 틀림 |
+| 20 | 연함 | 용에게 선택받은 자의 여정 | 귀환의 날갯짓 | 문제 없어 보임 | 맞음 |
+| 21 | 연함 | 잔 속에서 울리는 노래 | 원정을 떠난 이에게 | 확인 필요 | 맞음 |
+| 22 | 연함 | 신이 사랑하지 않은 설국 | 여왕의 새 초상화 | 확인 필요 | 맞음 |
+| 23 | 연함 | 의사의 마음 | 봄볕의 복숭아 부적 | 확인 필요 | 맞음 |
+| 24 | 연함 | 버섯몬 기관 대전 | 버섯몬 여행기 | 문제 없어 보임 | 맞음 |
+| 25 | 연함 | 눈보라와 푸른숲의 춤 | 총과 실의 포위망 | 문제 없어 보임 | 맞음 |
+| 26 | 연함 | 안개와 어두운 숲을 지나 | 천국 | 문제 없어 보임 | 틀림 |
+| 27 | 연함 | 천국 | Hour of Ruin | 확인 필요 | 맞음 |
 
-## 6. 항목별 자료
+## 6. 판정 결과
+
+판정은 2026-11-11에 저장소 관리자 의견과 아카라이브 게시글 댓글을 종합해 정했다. 게시글에는 임무 이름·버전·등급만 올렸고 이유와 인용은 올리지 않았다.
+
+| 등급 | 맞음 | 애매 | 틀림 |
+|---|---|---|---|
+| 강함 | 3 | 6 | 0 |
+| 중간 | 2 | 5 | 2 |
+| 연함 | 7 | 0 | 2 |
+| 합계 | 12 | 11 | 4 |
+
+- 틀림은 4/27(15%)이다. 모집단 등급 비율(89/32/95)로 가중하면 약 13%다. 15·18·19·26번.
+- 애매 11개 중 10개는 선은 맞고 등급이 높다는 판정이다(강함→중간 2, 강함→연함 3, 중간→연함 5). 등급을 올리라는 판정은 없다. 8번은 등급 의견 없이 애매다.
+- 등급까지 맞은 것은 12/27(44%)이다. LLM이 등급을 체계적으로 높게 매긴다.
+- 사전 점검은 틀림 4개 중 3개를 "문제 없어 보임"으로 표시했다. 사전 점검만으로 거를 수 없다.
+- 등급당 9개라 비율의 오차는 크다. 등급이 높게 매겨지는 경향은 뚜렷하다.
+
+## 7. 항목별 자료
 
 ### 1. 비마나 경전 → 「바나」가 치유될 때까지 (강함)
 
@@ -96,7 +113,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [Royinjan's Chapter: Linga](https://genshin-impact.fandom.com/wiki/Royinjan's_Chapter%3A_Linga) rev 2131114, [Until Vana is Healed](https://genshin-impact.fandom.com/wiki/Until_Vana_is_Healed) rev 2139031
 - **사전 점검: 문제 없어 보임.** 인용이 A의 연구 분실과 B의 연구 회복을 그대로 보여 준다. 같은 버전(3.0)이다.
 - 표기: 이유의 "폐허 골렘"은 공식명 "유적 거상", "피르 카비카부스"는 "대스승 카비카부스"다. "크샤레와르"는 인용에 없고 데이터에 공식명이 없다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 2. 「거울 속 왕국」 → 해초 바다 탐색 (강함)
 
@@ -116,7 +133,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [Kingdom Through the Looking-Glass](https://genshin-impact.fandom.com/wiki/Kingdom_Through_the_Looking-Glass) rev 2171444, [Search in the Algae Sea](https://genshin-impact.fandom.com/wiki/Search_in_the_Algae_Sea) rev 2139817
 - **사전 점검: 확인 필요.** A는 이미 B의 필수 선행이다(「거울 속 왕국」 > 「그녀가 더는 당신을 꿈꾸지 않는다면…」 > 최초의 사실 > 해초 바다 탐색). 내용은 인용과 맞지만 권장선이 중복된다.
 - 표기: 이유에 「「거울 속 왕국」」으로 괄호가 겹쳐 있다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 3. 달의 동쪽, 태양의 서쪽 → 시간을 초월한 유성 (강함)
 
@@ -135,7 +152,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [The Shoemaker's Children Go Barefoot](https://genshin-impact.fandom.com/wiki/The_Shoemaker's_Children_Go_Barefoot) rev 2150088, [A Star Out of Time](https://genshin-impact.fandom.com/wiki/A_Star_Out_of_Time) rev 2151709
 - **사전 점검: 확인 필요.** 이유의 "리드 밀러를 사칭한 인물" 설정이 A 인용에 없고, B의 "this thing"이 궁극의 재앙인지 인용만으로는 알 수 없다.
 - 표기: "로트왕"(Rotwang)은 데이터에 공식 한국어명이 없다. B 인용에 위키 마크업 "30px|link=Paimon"이 남아 있다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.** 등급은 중간이 맞음.
 
 ### 4. 눈물 없는 내일을 위해 → 돌아온 바람 잡는 이방인 (강함)
 
@@ -155,7 +172,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 검증 메모(codex): A는 시뇨라를 우인단 집행관으로 소개하고 성금 회수 사건을 보여 주며, B는 시뇨라를 이미 아는 인물로 언급하고 해당 사건을 과거의 일로 재연하므로 선행 플레이 권고가 뒷받침됩니다.
 - 출처: [For a Tomorrow Without Tears](https://genshin-impact.fandom.com/wiki/For_a_Tomorrow_Without_Tears) rev 2188925, [Honorary Knight's Notes on Mixology](https://genshin-impact.fandom.com/wiki/Honorary_Knight's_Notes_on_Mixology) rev 2138044
 - **사전 점검: 확인 필요.** 이유의 핵심인 벤티=바르바토스 공개와 다이루크의 기사단 탈퇴가 A 인용에 직접 나오지 않는다(시뇨라 소개만 확인됨). 정체 공개가 서막 1~3막 중 어디인지 봐야 한다. 같은 B에 11번(1막, medium)도 있다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 5. 키니치의 거래 → 뜨거운 환혼시 (강함)
 
@@ -176,7 +193,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [Kinich's Deal](https://genshin-impact.fandom.com/wiki/Kinich's_Deal) rev 2199488, [Incandescent Ode of Resurrection](https://genshin-impact.fandom.com/wiki/Incandescent_Ode_of_Resurrection) rev 2200850
 - **사전 점검: 문제 없어 보임.** 부르키나의 희생과 회고의 불이 양쪽 인용에 모두 나오고, B가 이를 설명 없이 쓴다.
 - 표기: "번개 같은 불꽃"이라는 표현은 인용에 근거가 없다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.** 등급은 연함이 맞음.
 
 ### 6. 허공의 선동, 타오르는 겁화 → 오가는 나비들 (강함)
 
@@ -193,7 +210,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 검증 메모(codex): A에서 아자르의 실각과 나히다의 권력 복귀가 확인되고, B는 아자르 일행이 축출된 뒤 아카데미아의 분위기가 개선되었다고 명시하므로 A의 결말을 스포일러한다는 주장은 타당하다.
 - 출처: [Akasha Pulses, the Kalpa Flame Rises](https://genshin-impact.fandom.com/wiki/Akasha_Pulses%2C_the_Kalpa_Flame_Rises) rev 2139075, [Comings and Goings](https://genshin-impact.fandom.com/wiki/Comings_and_Goings) rev 2172098
 - **사전 점검: 문제 없어 보임.** A에서 아자르가 실각하고 B가 이를 전제로 말하는 것이 인용으로 바로 확인된다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.** 등급은 중간이 맞음.
 
 ### 7. 눈물 없는 내일을 위해 → 여름! 섬? 모험! (강함)
 
@@ -213,7 +230,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 검증 메모(ember): A에서 Venti의 정체와 Dvalin과의 친구 관계가 드러나고 B에서는 Venti가 Dvalin을 불러내는 것을 전제하며 그 비밀로 취급하므로 A를 먼저 볼 필요가 있다는 주장이 발췌문으로 뒷받침된다.
 - 출처: [For a Tomorrow Without Tears](https://genshin-impact.fandom.com/wiki/For_a_Tomorrow_Without_Tears) rev 2188925, [A Trip Through Fog and Wind](https://genshin-impact.fandom.com/wiki/A_Trip_Through_Fog_and_Wind) rev 1809530
 - **사전 점검: 문제 없어 보임.** A에서 벤티의 정체와 드발린과의 관계가 드러나고, B는 벤티가 용을 부른 일을 비밀로 다룬다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.** 등급은 연함이 맞음.
 
 ### 8. 궁전과 무덤 → A Mirror That Reflects the Foe (강함)
 
@@ -234,7 +251,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [To Gaze Upon the Dreaming Pale Crown](https://genshin-impact.fandom.com/wiki/To_Gaze_Upon_the_Dreaming_Pale_Crown) rev 2199276, [A Mirror That Reflects the Foe](https://genshin-impact.fandom.com/wiki/A_Mirror_That_Reflects_the_Foe) rev 2203384
 - **사전 점검: 확인 필요.** B(7.2 막)가 quests.json에 없어 이름과 버전을 확인할 수 없다(덤프 이관으로 빠짐). A 인용은 "알비스가 최근 죽었다"는 언급뿐이라, B가 A의 큰 사건을 스포일러한다기보다 이어받는 정도로 보여 strong이 높을 수 있다.
 - 표기: B의 한국어명 「증오를 비추는 거울」은 데이터에 없다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.**
 
 ### 9. 우리가 잃어버린 것 → 신이 사랑하지 않은 설국 (강함)
 
@@ -252,7 +269,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 검증 메모(codex): 필수 선행 이야기에서는 샌드로네가 죽었다고 알려지지만, A에서는 죽음 이후 두 번째 기회를 얻어 살아 있음을 확인하고 B에서는 하빈저로 활동하므로, 귀환 과정의 세부 묘사와 무관하게 핵심 스포일러 주장은 뒷받침된다.
 - 출처: [Those We Have Lost](https://genshin-impact.fandom.com/wiki/Those_We_Have_Lost) rev 2128192, [Everwinter Without Mercy](https://genshin-impact.fandom.com/wiki/Everwinter_Without_Mercy) rev 2179182
 - **사전 점검: 의심.** B 인용의 "Lady Marionette"는 산드로네를 가리키지만, A 인용 두 줄은 화자가 없어 "한 번 죽었다"가 산드로네의 대사인지 인용만으로 확인할 수 없다. 검증 메모도 "귀환 과정의 세부 묘사와 무관하게"라며 이유 일부를 유보했다. A는 복각되지 않는 이벤트 막인데 마신 임무의 strong 선행으로 올라 있다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.** 등급은 연함이 맞음.
 
 ### 10. 유적 조사·생존 훈련소 → 공허 겁회의 푸라나 (중간)
 
@@ -274,7 +291,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [Fieldwise Mastery, Unyielding Progress!](https://genshin-impact.fandom.com/wiki/Fieldwise_Mastery%2C_Unyielding_Progress!) rev 2133364, [Truth Amongst the Pages of Purana](https://genshin-impact.fandom.com/wiki/Truth_Amongst_the_Pages_of_Purana) rev 2199111
 - **사전 점검: 확인 필요.** "헤리샤프와 잔디크가 처음 소개된다"는 주장이 맞는지 봐야 한다(그전 수메르 임무에 나왔을 수 있음). B의 도토레 대사가 잔디크를 일부 스스로 설명한다. A는 복각되지 않는 이벤트다.
 - 표기: "Zandik"은 데이터에 공식 한국어명이 없어 영문 그대로 쓰였다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.** 등급은 연함이 맞음.
 
 ### 11. 바람 잡는 이방인 → 돌아온 바람 잡는 이방인 (중간)
 
@@ -295,7 +312,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 혼란 정도 평가(4): Story B is a reenactment of A's events and assumes the player knows Dvalin's corruption, Venti's identity as Barbatos, and characters like Jean and Kaeya, so a newcomer would be confused and also have A's reveals spoiled, though the festival context partly explains itself.
 - 출처: [The Outlander Who Caught the Wind](https://genshin-impact.fandom.com/wiki/The_Outlander_Who_Caught_the_Wind) rev 2061397, [Honorary Knight's Notes on Mixology](https://genshin-impact.fandom.com/wiki/Honorary_Knight's_Notes_on_Mixology) rev 2138044
 - **사전 점검: 문제 없어 보임.** 인용이 이유를 뒷받침한다. 다만 A는 게임 첫 임무라 모든 플레이어가 이미 했으므로 선의 정보 가치는 낮다. 4번(3막, strong)과 같은 B다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 12. 눈보라와 푸른숲의 춤 → 무인선 (중간)
 
@@ -315,7 +332,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [A Dance of Snowy Tides and Hoarfrost Groves](https://genshin-impact.fandom.com/wiki/A_Dance_of_Snowy_Tides_and_Hoarfrost_Groves) rev 2171792, [The Unmanned Vessel (I)](https://genshin-impact.fandom.com/wiki/The_Unmanned_Vessel_(I)) rev 2202584
 - **사전 점검: 확인 필요.** B는 캐넌을 서리달로 다루는데 A 인용은 서리달이 "죽었다"는 내용뿐이라, 캐넌=서리달이라는 정보의 출처가 A인지 불분명하다. "강림자"는 A 인용에 없다.
 - 표기: 이유의 "카논"은 공식명 "캐넌", "소네트"는 "소넷"이다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.** 등급은 연함이 맞음.
 
 ### 13. 긴 밤의 서막 → 악행의 대가 (중간)
 
@@ -334,7 +351,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 혼란 정도 평가(4): Story B presumes the player is already in Illuga's Nightmare Orioles squad and knows the Professor monster, both established in A, so a player skipping A would be confused about who Illuga is and what 'that monster' refers to.
 - 출처: [Prelude to the Night Vigil](https://genshin-impact.fandom.com/wiki/Prelude_to_the_Night_Vigil) rev 2046299, [To Turn Each Sin Against the Sinner](https://genshin-impact.fandom.com/wiki/To_Turn_Each_Sin_Against_the_Sinner) rev 2187420
 - **사전 점검: 문제 없어 보임.** 분대 합류 제안과 "교수"가 A 인용에 그대로 있고 B가 이를 전제한다. 같은 버전(Luna IV)이다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.** 등급은 연함이 맞음.
 
 ### 14. 희미한 메아리 → 울려 퍼지는 기도 (중간)
 
@@ -355,7 +372,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 혼란 정도 평가(4): Story B continues the Blazegem Inscription birthday-gift plot and refers to Tlazolli, Cheven's scheme, and the Volcanic Crystal as already known, so a player without A would not know who these people are or what the gift is about.
 - 출처: [Tepetli Dissonance](https://genshin-impact.fandom.com/wiki/Tepetli_Dissonance) rev 2168835, [Melodious Chant](https://genshin-impact.fandom.com/wiki/Melodious_Chant) rev 2197069
 - **사전 점검: 확인 필요.** A는 이미 B의 직접 필수 선행이다(quest-edges.json). 내용은 인용과 맞지만 권장선이 중복된다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 15. 이야기라는 이름의 마법 → 마녀의 계시・강시 (중간)
 
@@ -373,7 +390,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 혼란 정도 평가(4): B's line about Qiqi being one of the people in Barbeloth's prophecy only makes sense if the player knows the prophecy and its figures from A, so a player who skipped A would be confused, though it is a single exchange rather than the whole story.
 - 출처: [The Magic Known as Storytelling](https://genshin-impact.fandom.com/wiki/The_Magic_Known_as_Storytelling) rev 2197321, [Witch's Revelation: Instruction of Curious Form](https://genshin-impact.fandom.com/wiki/Witch's_Revelation%3A_Instruction_of_Curious_Form) rev 2135453
 - **사전 점검: 의심.** A 인용은 화자 없는 한 줄로 예언을 지나가며 언급할 뿐, 예언 속 인물이나 치치는 나오지 않는다. B도 두 줄짜리 언급이라 rating 4(medium)는 높아 보이고, 예언 속 인물을 소개한 임무가 따로 있을 수 있다. 평가 메모도 "한 번의 대화"라고 스스로 단서를 달았다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 틀림.**
 
 ### 16. 윈드블룸의 숨결 → 세계 (중간)
 
@@ -395,7 +412,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [A Gathering of Outlanders](https://genshin-impact.fandom.com/wiki/A_Gathering_of_Outlanders) rev 1801555, [Of This World](https://genshin-impact.fandom.com/wiki/Of_This_World) rev 2189444
 - **사전 점검: 문제 없어 보임.** 마녀회, M, 라인도티르가 A 인용에 있고 B가 설명 없이 쓴다. A는 복각되지 않는 이벤트다.
 - 표기: 이유의 "헥센치르켈"은 공식명 "마녀회"와 병기돼 있다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.** 등급은 연함이 맞음.
 
 ### 17. 약속과 망각 사이에서 → 타오를 운명의 무지개 (중간)
 
@@ -415,7 +432,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [Lost in the Woods](https://genshin-impact.fandom.com/wiki/Lost_in_the_Woods) rev 2197447, [The Rainbow Destined to Burn](https://genshin-impact.fandom.com/wiki/The_Rainbow_Destined_to_Burn) rev 2154937
 - **사전 점검: 확인 필요.** 고대 이름과 밤의 신의 나라는 B의 필수 선행인 「영광의 꽃과 태양의 길」(5.0 마신 임무)에서 먼저 나왔을 가능성이 크다. 세계 임무 A가 "처음 소개"인지 확인해야 한다.
 - 표기: "밤의 나라"는 공식명 "밤의 신의 나라"다. "와요"는 데이터에 없다(공식명 "대영혼").
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 애매.** 등급은 연함이 맞음.
 
 ### 18. 배리의 순간 → 해답 (중간)
 
@@ -435,7 +452,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [Paralogism](https://genshin-impact.fandom.com/wiki/Paralogism) rev 2039879, [Solution](https://genshin-impact.fandom.com/wiki/Solution) rev 2172575
 - **사전 점검: 문제 없어 보임.** B의 앨리스가 삼자 회담의 약속을 아는지 직접 묻고, A 인용이 삼자 회담을 소개한다.
 - 표기: "헥세지르켈"은 오타다(공식명 "마녀회"). "삼자 회담"은 데이터에 공식명이 없다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 틀림.**
 
 ### 19. 미니 버섯몬 판타지 → 느긋한 리듬 댄스 파티 (연함)
 
@@ -454,7 +471,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 혼란 정도 평가(3): Enghiene's line about leaving the Maison Gardiennage and Turenna's confidentiality makes more sense with A's introduction of their drillmaster relationship, but the scene is still followable on its own.
 - 출처: [Lil' Fungi's Fun-Tastic Fiesta!](https://genshin-impact.fandom.com/wiki/Lil'_Fungi's_Fun-Tastic_Fiesta!) rev 1644300, [Disco in Motion, Holiday Emotion!](https://genshin-impact.fandom.com/wiki/Disco_in_Motion%2C_Holiday_Emotion!) rev 2171001
 - **사전 점검: 문제 없어 보임.** A에서 안지안느와 튀렌나의 관계가 소개되고 B가 그 변화를 보여 준다. light에 맞다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 틀림.**
 
 ### 20. 용에게 선택받은 자의 여정 → 귀환의 날갯짓 (연함)
 
@@ -473,7 +490,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 혼란 정도 평가(3): Aguara's identity and bond with the player make the reunion more meaningful, and Linnea's question about how they met recaps the context, so a player without A still follows the scene but misses some emotional weight.
 - 출처: [A Saurian Lover's Ordinary Days](https://genshin-impact.fandom.com/wiki/A_Saurian_Lover's_Ordinary_Days) rev 2197258, [Up! Toward Homecoming Wings](https://genshin-impact.fandom.com/wiki/Up!_Toward_Homecoming_Wings) rev 2197170
 - **사전 점검: 문제 없어 보임.** A에서 아구아라의 이름이 붙고, B가 재회로 이어진다. B에서 리네아가 만남 경위를 물어 일부 설명되므로 light에 맞다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 21. 잔 속에서 울리는 노래 → 원정을 떠난 이에게 (연함)
 
@@ -492,7 +509,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 혼란 정도 평가(3): Story B treats Mika and Varka as already-known characters, so knowing A's introductions (Mika as the surveyor loaned out for the expedition) helps, but the quoted lines are self-explanatory enough that the story still works without A.
 - 출처: [Sounds From Afar (Quest)](https://genshin-impact.fandom.com/wiki/Sounds_From_Afar_(Quest)) rev 2125279, [To Those Who Embark on the Expedition](https://genshin-impact.fandom.com/wiki/To_Those_Who_Embark_on_the_Expedition) rev 2197444
 - **사전 점검: 확인 필요.** A 인용에서 바르카는 이름만 나올 뿐 소개되지 않아 "바르카와 미카가 처음 소개된다"는 주장이 맞는지 봐야 한다. A는 복각되지 않는 이벤트다. light라 영향은 작다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 22. 신이 사랑하지 않은 설국 → 여왕의 새 초상화 (연함)
 
@@ -512,7 +529,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [Everwinter Without Mercy](https://genshin-impact.fandom.com/wiki/Everwinter_Without_Mercy) rev 2179182, [The Tsaritsa's New Portrait](https://genshin-impact.fandom.com/wiki/The_Tsaritsa's_New_Portrait) rev 2199588
 - **사전 점검: 확인 필요.** A는 이미 B의 필수 선행이다(신이 사랑하지 않은 설국 > 영혼의 야상곡 > 꿈에서 깨어난 백야 > 얼음 궁전의 편지 > 여왕의 새 초상화). 권장선이 중복된다.
 - 표기: "Lelek"은 데이터에 공식명이 없다(이유에는 쓰이지 않음).
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 23. 의사의 마음 → 봄볕의 복숭아 부적 (연함)
 
@@ -531,7 +548,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 혼란 정도 평가(3): Changsheng's reference to the Jiangli and Jialiang incident and the god remains at Mt. Qingce is a recap-style callback that adds context, but the player can still follow Springtime Charms without having played The Heart of Healing.
 - 출처: [The Heart of Healing](https://genshin-impact.fandom.com/wiki/The_Heart_of_Healing) rev 2086628, [Custom Gift Envelope No. 1](https://genshin-impact.fandom.com/wiki/Custom_Gift_Envelope_No._1) rev 1785999
 - **사전 점검: 확인 필요.** 같은 쌍이 Fandom 정보 상자의 권장 선행(quest-edges.json RECOMMENDED)에 이미 있다. 내용은 인용과 맞지만 LLM 선과 중복된다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 24. 버섯몬 기관 대전 → 버섯몬 여행기 (연함)
 
@@ -551,7 +568,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [Old Friends, New Game](https://genshin-impact.fandom.com/wiki/Old_Friends%2C_New_Game) rev 1683597, [Reunite, My Shroom Buddies!](https://genshin-impact.fandom.com/wiki/Reunite%2C_My_Shroom_Buddies!) rev 2071538
 - **사전 점검: 문제 없어 보임.** 밸푸어와의 보드게임 사업, 소우카와 하니야의 관계가 양쪽 인용에 있다.
 - 표기: "봉고헤드", "킨들조이"는 공식명 "둥둥 모자", "기쁨의 화염"이 아니며 인용에도 없다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 25. 눈보라와 푸른숲의 춤 → 총과 실의 포위망 (연함)
 
@@ -573,7 +590,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [A Dance of Snowy Tides and Hoarfrost Groves](https://genshin-impact.fandom.com/wiki/A_Dance_of_Snowy_Tides_and_Hoarfrost_Groves) rev 2171792, [Encirclement of Bullets and Silk](https://genshin-impact.fandom.com/wiki/Encirclement_of_Bullets_and_Silk) rev 2133430
 - **사전 점검: 문제 없어 보임.** A에서 네페르와 야호다의 관계가 소개되고 B가 네페르를 설명 없이 쓴다. light에 맞다.
 - 표기: "비밀의 전당"(Curatorium of Secrets)은 데이터에 공식명이 없고 A 인용에도 없다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**
 
 ### 26. 안개와 어두운 숲을 지나 → 천국 (연함)
 
@@ -593,7 +610,7 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [Through Mists of Smoke and Forests Dark](https://genshin-impact.fandom.com/wiki/Through_Mists_of_Smoke_and_Forests_Dark) rev 2139071, [Paradise](https://genshin-impact.fandom.com/wiki/Paradise) rev 2088537
 - **사전 점검: 문제 없어 보임.** A에서 적왕의 배신과 몰락이 소개되고 B가 이를 알려진 사실로 쓴다. light에 맞다.
 - 표기: "Rukkhadevata"는 데이터에 공식 한국어명이 없어 영문 그대로 쓰였다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 틀림.**
 
 ### 27. 천국 → Hour of Ruin (연함)
 
@@ -614,4 +631,4 @@ LLM이 만든 권장 선행 연결선 216개(강함 89, 중간 32, 연함 95)는
 - 출처: [Paradise](https://genshin-impact.fandom.com/wiki/Paradise) rev 2088537, [Hour of Ruin](https://genshin-impact.fandom.com/wiki/Hour_of_Ruin) rev 2202699
 - **사전 점검: 확인 필요.** B(7.2 막)가 quests.json에 없어 이름과 버전을 확인할 수 없다(덤프 이관으로 빠짐). 내용은 인용과 맞는다.
 - 표기: B의 한국어명 「종말의 서막」과 "공간의 신전"은 데이터와 인용에 없다("공간의 신전(공간의 신전)"으로 겹쳐 적힘). "덱스(오른쪽이)"의 공식명은 "오른쪽이"다.
-- **사람 판정:** ☐ 맞음 ☐ 틀림 ☐ 애매 / 메모:
+- **사람 판정: 맞음.**

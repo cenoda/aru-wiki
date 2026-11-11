@@ -7,7 +7,9 @@
     "node": ">=22"
   },
   "scripts": {
+    "predev": "node scripts/build-runtime-data.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/build-runtime-data.mjs",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "screenshot": "node scripts/dev/screenshot.mjs",
@@ -23,14 +25,20 @@
   },
   "dependencies": {
     "@xyflow/react": "^12.12.1",
+    "3d-force-graph": "^1.80.2",
+    "d3-force-3d": "^3.0.6",
     "elkjs": "^0.12.1",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "three": "^0.187.0",
+    "three-spritetext": "^1.10.0"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^1.7.0",
+    "@types/node": "^22.20.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
     "@vitejs/plugin-react": "^6.3.0",
     "playwright": "^1.65.0",
     "typescript": "^7.0.2",

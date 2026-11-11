@@ -59,7 +59,7 @@ function allTables(content) {
  * transclude. A page can carry the template more than once (Sea of Stars leaves `ko` blank in
  * the first call and fills it in a later one), so a filled value wins over a blank one.
  */
-function readTables(content) {
+export function readTables(content) {
   const calls = allTables(content);
   if (!calls.length) return null;
   const tables = new Map();

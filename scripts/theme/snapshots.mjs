@@ -27,6 +27,7 @@ import { parseArgs } from 'node:util';
 import { FULL, loadRevisionIndex, parseRevision, streamDump, versionCutoff } from '../fandom/dump.mjs';
 import { normalize } from '../recommend/excerpt.mjs';
 import { latinNames, makeLocalizer } from '../recommend/ko-text.mjs';
+import { namesLeft } from './names-left.mjs';
 import { renderPage, sentences } from './render.mjs';
 
 const { values: opt, positionals: [theme] } = parseArgs({ allowPositionals: true, options: {
@@ -358,17 +359,8 @@ await save();
 // Names actually left in accepted Korean points after whole-sentence localization, for a person
 // to find official Korean names (docs/ko-names-needed.md). Using latin_left avoids listing pieces
 // of a phrase that was translated whole, such as Musou and Hitotachi in Musou no Hitotachi.
-const STOP = new Set(['The', 'No', 'First', 'Second', 'Third', 'Unknown', 'Human', 'Mini', 'Project', 'Chapter', 'Act', 'Part', 'Version']);
-const left = new Map();
-for (const r of results.values()) for (const p of r.points) {
-  if (p.status !== 'accepted') continue;
-  for (const n of new Set(p.latin_left)) {
-    if (n.length < 3 || STOP.has(n)) continue;
-    const e = left.get(n) ?? left.set(n, { n: 0, nodes: new Set(), example: p.text }).get(n);
-    e.n++; e.nodes.add(r.ko ?? r.node);
-  }
-}
-const rows = [...left].filter(([, e]) => e.n >= 3).sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0]));
+const left = namesLeft(results.values());
+const rows = [...left].filter(([, e]) => e.n >= 3);
 await writeFile(join(ROOT, 'docs/ko-names-needed.md'), `# 한국어 이름이 필요한 말
 
 \`scripts/theme/snapshots.mjs\`가 만든다(손으로 고치지 않는다). 켄리아 스냅샷에서 검증을 통과한 문장을 모두 치환한 뒤 영어로 남은 이름이다.

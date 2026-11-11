@@ -22,15 +22,30 @@ node scripts/theme/snapshots.mjs khaenriah --write --only none
 
 LLM 호출 없이 다시 치환된다. `text_raw`·검증 상태·출처가 그대로인지, 한영 혼합과 조사가 어색하지 않은지, `latin_left`가 줄었는지 확인한다.
 
-## 로컬 덤프에서 찾은 첫 후보
+## 문맥에 따라 다른 말
 
-영어 `en`이 정확히 일치하는 행이며, 적용 전에 문맥을 확인한다.
+- **Archon**: 하나로 정하지 않고 문장마다 고른다. `ko-names.json`에 넣지 않는다(넣으면 모든 문장이 한 가지로 바뀐다). 정한 사람: 사용자(2026-11-11).
+  - **마신**: 그 자체로 강하지만 그냥 강한 생명체. 마신 전쟁에 참여한 존재들 전반(`Archon War` = 마신 전쟁).
+  - **집정관**: 마신 중 마신 전쟁에서 이겨 일곱 개의 신의 심장을 차지했던 자들(`The Seven Archons` = 7명의 집정관).
 
-- `Kuutar` → 쿠타르 (`Columbina/Storyline`)
-- `Peruere` → 페르엘 (`Arlecchino/Storyline`)
-- `The Chasm` → 층암거연 (`The Chasm (Area)`)
-- `The Doctor` → 박사 (`Dottore`)
-- `Haborym` → 하보림 (`Mavuika/Storyline`)
-- `Curatorium of Secrets` → 비밀의 집 (`Curatorium of Secrets (Point of Interest)`)
-- `Ruler of Life` → 생명의 집정관 (`Naberius`)
-- `Knight of Boreas` → 북풍 기사 (`Varka/Profile`)
+## 덤프 후보와 넣기
+
+`node scripts/fandom/ko-candidates.mjs khaenriah`가 [한국어 이름 후보](ko-name-candidates.md)를 만든다. 근거는 로컬 덤프의 `Other Languages` 행뿐이다(네트워크·LLM 없음).
+
+- 같은 영어: 현재 덤프에서 `en`이 그 이름과 같은 행(`The`·복수 무시).
+- 옛 판에만: 전체 기록 덤프의 예전 판에만 있는 행. 판 주소(`?oldid=`)가 출처가 된다. 지워진 이유는 알 수 없으니 판마다 값을 비교한다.
+- 들어간 이름: `en`에 그 이름이 단어로 들어 있는 행. 그 이름의 번역이 아니라 사람이 고를 때 보는 참고다.
+
+고른 이름은 `node scripts/fandom/ko-accept.mjs 'Harbinger|Harbingers=한국어'`로 넣는다. 고른 한국어가 들어 있는 후보 행만 출처로 붙고, 그런 행이 없으면 `--play`·`--url`·`--maintainer` 없이는 거부된다. 이미 다른 값이 있으면 `--force` 없이는 바꾸지 않는다.
+
+## 덤프에 후보가 없는 것
+
+종류별로 다르게 처리한다. 지금 목록은 [후보 문서](ko-name-candidates.md) 끝의 표에 있다.
+
+1. **게임에서 확인한다.** 우인단(Il Dottore, Eleven Harbingers, Pedrelino, Ninth Company, Palestar Edict), 신·강림자(Electro/Geo Gnosis, First/Third/Fourth Descender, Divine Throne, Human Realm, Void Realm, Hydro Dragon Sovereign), 켄리아(Kingdom/Fall of Khaenri'ah, King Irmin, Chlothar Alberich, Primordial Human Project, Primordial Albedo, Riftwolves), 달(Dragon King Nibelung, Lunar Palace, Three Moon Sisters, Moon/Trilune Goddess, Goddess of the Iridescent Moon), 장소(Vahumana Darshan, Mondstadt Cathedral, Analyse Cardinale).
+   - 「나온 문서」의 Fandom 문서에서 그 문장이 어느 임무·캐릭터 이야기·도감에서 왔는지 본다.
+   - 게임 설정에서 **텍스트 언어**만 영어로 바꿔 그 화면에서 단어를 찾고, 한국어로 되돌려 같은 자리를 읽는다. 한 화면에서 여러 이름이 한 번에 나온다.
+   - `--play 이름 --note '어디서'`로 넣는다.
+2. **공식 영상·출판물 제목**(Teyvat Chapter Storyline (Preview), Collected Miscellany)은 원신 공식 한국어 채널·사이트의 제목을 직접 보고 `--url`로 넣는다. 자동 수집은 하지 않는다(YouTube 약관).
+3. **일반어**(Sibling, Khaenri'ahn(s), Natlanese, Authorities, Goetic)는 공식 고유명사가 아니다. 문맥에 맞는 우리말을 정해 `--maintainer 이름 --note '일반어'`로 넣거나, 영어로 둔다. 게임 표기를 봤으면 `--play`를 쓴다.
+4. **사람이 읽는 공개 자료**: HoYoLAB 약관 6(c)는 다운로드·스크래핑을 금지하므로 HoYoWiki를 브라우저로 직접 읽는 것은 그 조항에 걸리지 않는다. 다만 `ko-names.json`의 `$comment`는 지금 HoYoWiki를 출처로 쓰지 않는다고 적고 있어, 쓰려면 그 문구부터 바꿔야 한다(결정 전). 나무위키는 위치를 찾는 단서로만 쓴다.

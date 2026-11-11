@@ -44,9 +44,6 @@ const TOOLS = {
   // Muse Wonder must never be used (terms of service for the user's region), so it is not offered.
   ember: (prompt, schema, cwd) => muse('muse-ember-1.0', prompt, schema, cwd),
   spark: (prompt, schema, cwd) => muse('muse-spark-1.3', prompt, schema, cwd),
-  // Spark in contributor mode: same input price, half the output price. Ember costs 3x once a
-  // request passes 200K input tokens; extraction pieces are about 15K tokens, well under that.
-  'spark-contrib': (prompt, schema, cwd) => muse('muse-spark-1.3', prompt, schema, cwd, ['--contributor-mode', 'on']),
   // Gemini through Antigravity (`agy`), in a terminal sandbox inside the empty scratch directory.
   // `-p` must carry the prompt attached (-p=...), or it takes the next flag as the prompt.
   flash: (prompt, schema, cwd) => agy(process.env.AGY_MODEL ?? 'gemini-3.8-flash-low', prompt, schema, cwd),
@@ -125,12 +122,15 @@ const TOOLS = {
     return { data: checkShape(parseJsonReply(text), schema), cost: null };
   },
 };
-async function muse(model, prompt, schema, cwd, extra = []) {
+// Contributor mode is always off. A Muse Code subscription defaults to it (Meta trains on the
+// prompts and files sent, ToS §3.3/§6.1) and the saved choice is per machine, so every run says
+// so itself. Fandom's terms forbid using its content to train an AI system.
+async function muse(model, prompt, schema, cwd) {
   if (/wonder/i.test(model)) throw new Error('Muse Wonder is not allowed');
   const schemaFile = join(cwd, 'schema.json'), promptFile = join(cwd, 'prompt.txt');
   await writeFile(schemaFile, JSON.stringify(schema));
   await writeFile(promptFile, prompt);
-  const out = await run('muse', ['exec', ...extra, '--model', model, '--output-schema', schemaFile, '--prompt-file', promptFile,
+  const out = await run('muse', ['exec', '--contributor-mode', 'off', '--model', model, '--output-schema', schemaFile, '--prompt-file', promptFile,
     '--disable-shell', '--disable-write', '--disable-web-tools', '--disable-request-user-input',
     '--no-session-log', '--trust-workspace', '--json'], '', cwd);
   const end = out.split('\n').filter(Boolean).map((l) => JSON.parse(l)).find((e) => e.payload_type?.startsWith('run.terminal.'));

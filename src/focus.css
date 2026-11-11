@@ -222,7 +222,7 @@
 /* what a version brought, in the empty space of its column */
 .site .ver-note { width: 100%; overflow: hidden; padding: 9px 12px; border-left: 2px solid color-mix(in srgb, var(--gold) 55%, transparent);
   background: color-mix(in srgb, var(--card) 55%, transparent); color: var(--muted); font-size: .76rem; line-height: 1.45; pointer-events: none; }
-.site .ver-note .vn-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; font-family: "Noto Serif KR", "Source Han Serif KR", serif; font-size: .95rem; font-weight: 700; color: var(--text); opacity: .8; letter-spacing: -.02em; }
+.site .ver-note .vn-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; font-size: .9rem; font-weight: 600; color: var(--text); opacity: .8; }
 .site .ver-note .vn-row { display: flex; gap: 6px; }
 .site .ver-note .vn-row b { flex: none; font-weight: 600; color: var(--gold); opacity: .9; }
 .site .ver-note .vn-row span { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
@@ -230,8 +230,7 @@
 .site .ver-note.compact { padding: 3px 10px; }
 .site .ver-note.compact .vn-title { margin-bottom: 0; font-size: .85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .site .ver-note.compact .vn-row span { -webkit-line-clamp: 1; }
-.site .stage.far .ver-note .vn-row { display: none; }
-.site .stage.far .ver-note .vn-title { font-size: 1.6rem; }
+.site .stage.far .ver-note { visibility: hidden; }
 
 /* image credit */
 .site .info .fig-credit { display: flex; gap: 8px; align-items: flex-start; margin: 8px 0 2px; font-size: .78rem; color: var(--muted); line-height: 1.45; }

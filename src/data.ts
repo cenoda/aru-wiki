@@ -1,8 +1,6 @@
-import edgesJson from '../data/generated/quest-edges.json';
-import questsJson from '../data/generated/quests.json';
-import versionsJson from '../data/generated/versions.json';
-import recommendedJson from '../data/generated/recommended-edges.json';
-import unitsJson from '../data/generated/quest-units.json';
+// The graph data is a separate hashed asset (scripts/build-runtime-data.mjs), fetched once at start.
+// Bindings below are filled by loadData(); import the views only after it resolves (see App.tsx).
+import graphUrl from '../data/runtime/graph.json?url';
 
 export type QuestType = 'ARCHON' | 'STORY' | 'WORLD' | 'EVENT';
 
@@ -16,7 +14,7 @@ export interface Quest {
   replayable: boolean;
   event?: string;
   region?: string;
-  sources: { url: string; revision: number }[];
+  sources: { url: string }[];
 }
 
 export interface QuestEdge {
@@ -29,12 +27,11 @@ export interface QuestEdge {
 
 export interface Version { id: string; number: string; order: number; released: string; title: string }
 
-export const versions = versionsJson as Version[];
-export const quests = questsJson as Quest[];
-export const questEdges = edgesJson as QuestEdge[];
-
-export const questById = new Map(quests.map((q) => [q.id, q]));
-export const versionOrder = new Map(versions.map((v) => [v.id, v.order]));
+export let versions: Version[] = [];
+export let quests: Quest[] = [];
+export let questEdges: QuestEdge[] = [];
+export let questById = new Map<string, Quest>();
+export let versionOrder = new Map<string, number>();
 
 // Official Korean names, as in ko-names.json (Fandom {{Other Languages}} ko); never transliterated by hand.
 export const REGION_KO: Record<string, string> = {
@@ -78,12 +75,40 @@ export interface Unit {
   next?: string[];
   major?: boolean;
 }
-const unitsData = unitsJson as { region_entry: Record<string, string>; units: Unit[] };
-export const units = unitsData.units;
-export const unitById = new Map(units.map((u) => [u.id, u]));
+export let units: Unit[] = [];
+export let unitById = new Map<string, Unit>();
 /** region → the Archon act that enters it */
-export const regionEntry = unitsData.region_entry;
-export const unitOfQuest = new Map(units.flatMap((u) => u.members.map((m) => [m, u.id] as const)));
+export let regionEntry: Record<string, string> = {};
+export let unitOfQuest = new Map<string, string>();
+let recommendedRaw: LlmEdge[] = [];
+
+interface GraphData {
+  versions: Version[];
+  quests: Quest[];
+  questEdges: QuestEdge[];
+  units: { region_entry: Record<string, string>; units: Unit[] };
+  recommended: LlmEdge[];
+}
+
+let loading: Promise<void> | undefined;
+/** Fetch the graph data and fill the bindings above. Safe to call more than once. */
+export function loadData() {
+  return loading ??= (async () => {
+    const res = await fetch(graphUrl);
+    if (!res.ok) throw new Error(`graph data: HTTP ${res.status}`);
+    const g = (await res.json()) as GraphData;
+    versions = g.versions;
+    quests = g.quests;
+    questEdges = g.questEdges;
+    questById = new Map(quests.map((q) => [q.id, q]));
+    versionOrder = new Map(versions.map((v) => [v.id, v.order]));
+    units = g.units.units;
+    unitById = new Map(units.map((u) => [u.id, u]));
+    regionEntry = g.units.region_entry;
+    unitOfQuest = new Map(units.flatMap((u) => u.members.map((m) => [m, u.id] as const)));
+    recommendedRaw = g.recommended;
+  })().catch((err) => { loading = undefined; throw err; });
+}
 export const UNIT_LABEL: Record<UnitKind, string> = { series: '시리즈', event: '이벤트', chain: '연속 임무', single: '단일 임무' };
 
 /** A node on the map: an act or a unit. Both carry names, type, version and replayability. */
@@ -170,7 +195,7 @@ export function recommendedGraph() {
       reason_ko: 'Fandom 정보 상자에 권장 임무로 적혀 있습니다.', characters: [], reviewed: true,
       revealed: versionOrder.get(e.revealed_version ?? '') ?? 0 });
   }
-  for (const e of recommendedJson as LlmEdge[]) {
+  for (const e of recommendedRaw) {
     // judged on an earlier data build; skip edges whose act or unit is no longer on the map
     if (!itemById(e.source) || !itemById(e.target)) continue;
     if (e.already_required) continue; // the game enforces this order already (scripts/recommend/prereq.mjs)

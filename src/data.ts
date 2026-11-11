@@ -169,6 +169,8 @@ export function recommendedGraph() {
       revealed: versionOrder.get(e.revealed_version ?? '') ?? 0 });
   }
   for (const e of recommendedJson as LlmEdge[]) {
+    // judged on an earlier data build; skip edges whose act or unit is no longer on the map
+    if (!itemById(e.source) || !itemById(e.target)) continue;
     const id = `rec:${e.source}->${e.target}`;
     if (out.has(id)) continue; // the infobox says so already
     out.set(id, { id, source: e.source, target: e.target, basis: 'llm', tier: e.tier,

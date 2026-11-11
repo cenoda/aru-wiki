@@ -24,7 +24,7 @@
 ### 2단계
 
 - [x] 켄리아 후보 노드 46개 (`scripts/theme/candidates.mjs`, `data/generated/theme-khaenriah.json`). 공유 단위 수로 순위를 매겼고 너무 일반적인 문서는 `data/manual/theme-khaenriah.json`에서 뺐다.
-- [ ] 후보 목록 확정(사람이 훑어보고 빼거나 더할 것). `Dragon`은 공식 한국어명이 데이터에 없다.
+- [ ] 후보 목록: 사용자가 2026-11-11 켄리아로 확정, 목록은 지금 것으로 진행(의견 오면 반영). `Dragon`은 공식 한국어명이 데이터에 없다.
 - [ ] 버전 스냅샷 생성 스크립트(design.md 5절 2·3·4번): 노드 문서의 버전별 리비전(`revisionAtVersion`) → LLM 작성 + 근거 인용 → 인용 대조 → 다른 회사 모델 검증.
 - [ ] 슬라이드 카드·신뢰도 배지·3D 뷰 화면.
 

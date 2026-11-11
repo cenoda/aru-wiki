@@ -8,13 +8,14 @@
 // Other weak verdicts stay in the judgment files only.
 import { existsSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
+import { latinNames, makeLocalizer } from './ko-text.mjs';
 
 const LIGHT_MIN_SCORE = 10;
 const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
 const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
 const opt = async (f, empty) => (existsSync(file(f)) ? read(f) : empty);
-const [quests, versions, unitData, pass1, pass2, ratings, cands2] = await Promise.all([
-  read('quests.json'), read('versions.json'), read('quest-units.json'), read('recommended-judgments.json'),
+const [quests, versions, unitData, koNames, pass1, pass2, ratings, cands2] = await Promise.all([
+  read('quests.json'), read('versions.json'), read('quest-units.json'), read('ko-names.json'), read('recommended-judgments.json'),
   opt('recommended-judgments-2.json', []), opt('recommended-ratings.json', {}), opt('recommended-candidates-2.json', []),
 ]);
 const byId = new Map(quests.map((q) => [q.id, q]));
@@ -28,9 +29,18 @@ const node = (id) => {
   const u = units.get(id);
   return { names: u.names, version: u.first_version, sources: byId.get(u.members[0])?.sources ?? [] };
 };
-// The judge reads English pages and names stories in 「English title」; show the Korean name.
-const koByEn = new Map([...quests, ...unitData.units].filter((x) => x.names.ko).map((x) => [x.names.en, x.names.ko]));
-const localize = (text) => text.replace(/「([^」]+)」/g, (m, t) => `「${koByEn.get(t) ?? t}」`);
+// The judge reads English pages: show official Korean names for stories (「English title」) and for
+// characters, places and lore it left in English, with particles fitted to the Korean name.
+// data/manual/ko-misspellings.json: Hangul spellings the judge made up -> page title in ko-names.json.
+const misspelled = JSON.parse(await readFile(new URL('../../data/manual/ko-misspellings.json', import.meta.url), 'utf8'));
+const localize = makeLocalizer(
+  Object.entries(koNames).map(([en, v]) => [en, v.ko]),
+  [...quests, ...unitData.units].map((x) => [x.names.en, x.names.ko]),
+  Object.entries(misspelled).filter(([w]) => !w.startsWith('$')).map(([w, en]) => {
+    if (!koNames[en]?.ko) throw new Error(`ko-misspellings.json: no Korean name for ${en}`);
+    return [w, koNames[en].ko];
+  }),
+);
 const later = (a, b) => (vOrder.get(a) >= vOrder.get(b) ? a : b);
 
 const RANK = { strong: 3, medium: 2, light: 1 };
@@ -63,6 +73,9 @@ for (const j of [...pass1, ...pass2]) {
 }
 const list = [...edges.values()].sort((a, b) => `${a.target}|${a.source}`.localeCompare(`${b.target}|${b.source}`));
 await writeFile(file('recommended-edges.json'), `${JSON.stringify(list, null, 1)}\n`);
+const left = new Map();
+for (const e of list) for (const n of latinNames(e.reason_ko)) left.set(n, (left.get(n) ?? 0) + 1);
+if (left.size) console.log(`English names left (no official Korean name): ${[...left].sort((a, b) => b[1] - a[1]).map(([n, c]) => `${n}×${c}`).join(', ')}`);
 const count = (k) => list.filter((e) => e.tier === k).length;
 const isAct = (id) => byId.get(id)?.level === 'ACT';
 console.log(`${list.length} RECOMMENDED edges: ${count('strong')} strong, ${count('medium')} medium, ${count('light')} light; ${list.filter((e) => isAct(e.source) && isAct(e.target)).length} between acts`);

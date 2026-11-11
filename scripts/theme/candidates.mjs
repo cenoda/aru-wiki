@@ -31,6 +31,6 @@ const picked = rows.slice(0, Number(opt.max));
 for (const page of manual.include ?? []) {
   if (!picked.some((r) => r.page === page)) picked.push({ page, kind: links[page]?.kind ?? null, ko: koNames[page]?.ko ?? null, added: true });
 }
-const out = { theme, page: manual.page, home_units: home.size, nodes: picked, next: rows.slice(Number(opt.max), Number(opt.max) + 20).map((r) => r.page) };
+const out = { theme, page: manual.page, home_units: home.size, nodes: picked, pending: manual.pending ?? [], next: rows.slice(Number(opt.max), Number(opt.max) + 20).map((r) => r.page) };
 await writeFile(url(`generated/theme-${theme}.json`), `${JSON.stringify(out, null, 1)}\n`);
 console.log(`${picked.length} nodes for ${manual.page} (${home.size} units link to it); no ko name: ${picked.filter((r) => !r.ko).map((r) => r.page).join(', ') || 'none'}`);

@@ -1,7 +1,42 @@
 {
- "$comment": "Stage-2 theme choices made by people (scripts/theme/candidates.mjs). exclude: pages too general for the theme; include: pages to add even if the ranking misses them.",
+ "$comment": "Stage-2 theme choices made by people (scripts/theme/candidates.mjs). exclude: pages left out; include: pages added even if the ranking misses them; pending: names to add once a newer dump has their page.",
  "page": "Khaenri'ah",
  "min_shared": 5,
- "exclude": ["Teyvat", "Traveler", "God", "Element", "Fontaine", "Natlan", "Snezhnaya", "Sumeru City", "Sumeru Akademiya", "Knights of Favonius", "Statue of The Seven", "Hiisi Island", "House of Daena", "Dori", "Jahoda"],
- "include": ["Hilichurls"]
+ "exclude": [
+  "Teyvat",
+  "Traveler",
+  "God",
+  "Element",
+  "Fontaine",
+  "Natlan",
+  "Snezhnaya",
+  "Sumeru City",
+  "Sumeru Akademiya",
+  "Knights of Favonius",
+  "Statue of The Seven",
+  "Hiisi Island",
+  "House of Daena",
+  "Dori",
+  "Jahoda",
+  "Dragon",
+  "Dottore"
+ ],
+ "include": [
+  "Hilichurls",
+  "Pierro",
+  "Surtalogi",
+  "Hroptatyr",
+  "Rhinedottir",
+  "Rerir",
+  "Vedrfolnir"
+ ],
+ "pending": [
+  {
+   "name": "Solendis",
+   "note": "2026-11-11 사용자 요청. 2026-09-30 덤프에 문서도 언급도 없음"
+  }
+ ],
+ "notes": [
+  "2026-11-11 사용자: Dragon은 무엇인지 불분명해 제외. Dottore는 켄리아와 관련이 적어 제외. 오대 죄인은 각자 이야기가 하나씩 있어 다섯 명 모두 개별 노드(멤버는 덤프의 Five Sinners of Khaenri'ah 문서 Members 표). Pierro 추가."
+ ]
 }

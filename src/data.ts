@@ -195,10 +195,10 @@ export function recommendedGraph() {
       reason_ko: 'Fandom 정보 상자에 권장 임무로 적혀 있습니다.', characters: [], reviewed: true,
       revealed: versionOrder.get(e.revealed_version ?? '') ?? 0 });
   }
+  // edges the game already enforces were dropped when graph.json was built (scripts/build-runtime-data.mjs)
   for (const e of recommendedRaw) {
     // judged on an earlier data build; skip edges whose act or unit is no longer on the map
     if (!itemById(e.source) || !itemById(e.target)) continue;
-    if (e.already_required) continue; // the game enforces this order already (scripts/recommend/prereq.mjs)
     const id = `rec:${e.source}->${e.target}`;
     if (out.has(id)) continue; // the infobox says so already
     out.set(id, { id, source: e.source, target: e.target, basis: 'llm', tier: e.tier,
@@ -207,4 +207,8 @@ export function recommendedGraph() {
   }
   return [...out.values()];
 }
-interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string; already_required?: boolean; review: 'unreviewed' | 'verified' }
+interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string; review: 'unreviewed' | 'verified' }
+
+// The bindings above are filled once by loadData() and read by the views' top-level code.
+// Re-running this module on a hot update would empty them under the views: reload the page instead.
+if (import.meta.hot) import.meta.hot.accept(() => location.reload());

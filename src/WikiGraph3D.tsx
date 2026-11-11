@@ -69,59 +69,88 @@ const NAME_DISTANCE = 160;
 let maxShared = 2;
 const strength = (l: PageLink) => Math.log(l.shared / 2 + 1) / Math.log(maxShared / 2 + 1);
 
-const starTextures = new Map<string, CanvasTexture>();
+const starCanvases = new Map<string, HTMLCanvasElement>();
 /**
  * A star drawn on a canvas instead of a lit sphere: a crisp round core inside a soft halo.
  * The theme page also gets four thin rays. Night stars have a white-hot centre; day stars an ink rim.
+ * Canvases are shared; each sprite gets its own texture, because three-forcegraph disposes a
+ * removed node's texture and a shared one would be disposed under every other star.
  */
 function starTexture(color: string, night: boolean, rays: boolean) {
   const key = `${color}|${night}|${rays}`;
-  const cached = starTextures.get(key);
-  if (cached) return cached;
-  const S = 128, c = document.createElement('canvas');
-  c.width = c.height = S;
-  const ctx = c.getContext('2d')!;
-  const m = S / 2;
-  const rgb = new Color(color);
-  const rgba = (a: number) => `rgba(${Math.round(rgb.r * 255)},${Math.round(rgb.g * 255)},${Math.round(rgb.b * 255)},${a})`;
-  const halo = ctx.createRadialGradient(m, m, 0, m, m, m);
-  halo.addColorStop(0, rgba(night ? 0.55 : 0.35));
-  halo.addColorStop(0.25, rgba(night ? 0.22 : 0.14));
-  halo.addColorStop(0.6, rgba(night ? 0.06 : 0.04));
-  halo.addColorStop(1, rgba(0));
-  ctx.fillStyle = halo;
-  ctx.fillRect(0, 0, S, S);
-  if (rays) {
-    for (const [dx, dy] of [[1, 0], [0, 1]]) {
-      const g = ctx.createLinearGradient(m - dx * m, m - dy * m, m + dx * m, m + dy * m);
-      g.addColorStop(0, rgba(0)); g.addColorStop(0.5, rgba(night ? 0.9 : 0.7)); g.addColorStop(1, rgba(0));
-      ctx.fillStyle = g;
-      ctx.fillRect(dx ? 0 : m - 1.5, dy ? 0 : m - 1.5, dx ? S : 3, dy ? S : 3);
+  let c = starCanvases.get(key);
+  if (!c) {
+    c = document.createElement('canvas');
+    const S = 128;
+    c.width = c.height = S;
+    const ctx = c.getContext('2d')!;
+    const m = S / 2;
+    const rgb = new Color(color);
+    const rgba = (a: number) => `rgba(${Math.round(rgb.r * 255)},${Math.round(rgb.g * 255)},${Math.round(rgb.b * 255)},${a})`;
+    const halo = ctx.createRadialGradient(m, m, 0, m, m, m);
+    halo.addColorStop(0, rgba(night ? 0.55 : 0.35));
+    halo.addColorStop(0.25, rgba(night ? 0.22 : 0.14));
+    halo.addColorStop(0.6, rgba(night ? 0.06 : 0.04));
+    halo.addColorStop(1, rgba(0));
+    ctx.fillStyle = halo;
+    ctx.fillRect(0, 0, S, S);
+    if (rays) {
+      for (const [dx, dy] of [[1, 0], [0, 1]]) {
+        const g = ctx.createLinearGradient(m - dx * m, m - dy * m, m + dx * m, m + dy * m);
+        g.addColorStop(0, rgba(0)); g.addColorStop(0.5, rgba(night ? 0.9 : 0.7)); g.addColorStop(1, rgba(0));
+        ctx.fillStyle = g;
+        ctx.fillRect(dx ? 0 : m - 1.5, dy ? 0 : m - 1.5, dx ? S : 3, dy ? S : 3);
+      }
     }
+    const r = S * 0.13;
+    ctx.beginPath();
+    ctx.arc(m, m, r, 0, Math.PI * 2);
+    if (night) {
+      const core = ctx.createRadialGradient(m, m, 0, m, m, r);
+      core.addColorStop(0, '#ffffff'); core.addColorStop(0.45, color); core.addColorStop(1, color);
+      ctx.fillStyle = core;
+      ctx.fill();
+    } else {
+      ctx.fillStyle = color;
+      ctx.fill();
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = 'rgba(30,34,50,.55)';
+      ctx.stroke();
+    }
+    starCanvases.set(key, c);
   }
-  const r = S * 0.13;
-  ctx.beginPath();
-  ctx.arc(m, m, r, 0, Math.PI * 2);
-  if (night) {
-    const core = ctx.createRadialGradient(m, m, 0, m, m, r);
-    core.addColorStop(0, '#ffffff'); core.addColorStop(0.45, color); core.addColorStop(1, color);
-    ctx.fillStyle = core;
-    ctx.fill();
-  } else {
-    ctx.fillStyle = color;
-    ctx.fill();
-    ctx.lineWidth = 2;
-    ctx.strokeStyle = 'rgba(30,34,50,.55)';
-    ctx.stroke();
-  }
-  const tex = new CanvasTexture(c);
-  starTextures.set(key, tex);
-  return tex;
+  return new CanvasTexture(c);
 }
+const starColour = (n: PageNode, sky: Palette) => (n.hub ? sky.hub : sky[n.kind]);
+/** Ring opacity on the plane (inner rings fainter); a little stronger on the pale day sky. */
+const ringOpacity = (k: number, sky: Palette) => (k > 1 ? 0.2 : 0.1) * (sky.night ? 1 : 1.6);
+/** Names are smaller on portrait screens (their size is relative to the view height). */
+const labelScale = (el: HTMLElement) => Math.min(1, (el.clientWidth / Math.max(1, el.clientHeight)) * 1.3);
 
 /** Each star, name and line eases toward a target brightness (and colour, for lines). */
-interface StarParts { star: SpriteMaterial; starTarget: number; label: SpriteText; named: boolean; target: number }
+interface StarParts {
+  node: PageNode; star: SpriteMaterial; starTarget: number; label: SpriteText; named: boolean; target: number;
+  /** label height before the screen-shape factor */
+  baseHeight: number;
+}
 interface LineParts { mat: LineMaterial; target: number; color: Color }
+
+/** What the current version, selection and theme ask of each star and line. */
+interface Look {
+  inFocus: (id: string) => boolean;
+  selected: string | null;
+  focused: boolean;
+  sky: Palette;
+}
+const starTargetOf = (id: string, look: Look) => (look.inFocus(id) ? 1 : 0.2);
+function lineLook(l: PageLink, look: Look, out: LineParts) {
+  const s = idOf(l.source), t = idOf(l.target), w = strength(l);
+  const touching = s === look.selected || t === look.selected;
+  out.color.set(touching ? look.sky.lineHot : look.sky.line);
+  out.target = !look.focused ? 0.15 + 0.55 * w
+    : touching ? 0.55 + 0.45 * w
+      : look.inFocus(s) && look.inFocus(t) ? 0.12 + 0.4 * w : 0.04;
+}
 
 export default function WikiGraph3D() {
   const host = useRef<HTMLDivElement>(null);
@@ -130,8 +159,12 @@ export default function WikiGraph3D() {
   const stars = useRef(new Map<string, StarParts>());
   const lines = useRef(new Map<PageLink, LineParts>());
   const relabel = useRef<() => void>(() => {});
-  /** Ease every name toward its target opacity, rendering until they arrive. */
+  /** Run relabel once on the next frame (after three-forcegraph has created new objects). */
+  const relabelSoon = useRef<() => void>(() => {});
+  /** Ease every star, name and line toward its target, rendering until they arrive. */
   const fade = useRef<() => void>(() => {});
+  /** Recolour the scene for a new sky without rebuilding it. */
+  const applySky = useRef<(sky: Palette) => void>(() => {});
   const [theme, setTheme] = useState<Theme | null>(null);
   const [failed, setFailed] = useState(false);
   const [vIdx, setVIdx] = useState(versions.length - 1);
@@ -184,15 +217,23 @@ export default function WikiGraph3D() {
     const two = new Set([...one].flatMap(step).filter((id) => id !== selected && !one.has(id)));
     return { one, two };
   }, [selected, index, vIdx, shown]);
+  const look = useMemo<Look>(() => ({
+    inFocus: (id) => !focus || id === selected || focus.one.has(id) || focus.two.has(id),
+    selected, focused: !!focus, sky,
+  }), [focus, selected, sky]);
+  /** The latest look and theme colours, for objects three-forcegraph creates later. */
+  const lookNow = useRef(look);
+  lookNow.current = look;
 
   useEffect(() => { if (selected && !shown(selected)) setSelected(null); }, [selected, shown]);
 
-  // ---------- scene ----------
+  // ---------- scene (built once per theme; versions, selection and sky only restyle it) ----------
   useEffect(() => {
     if (!theme || !index) return;
     const el = host.current!;
     const g = new ForceGraph3D(el, { controlType: 'orbit', rendererConfig: { antialias: true, powerPreference: 'high-performance' } }) as unknown as ForceGraph3DInstance<PageNode, PageLink>;
     graph.current = g;
+    let disposed = false;
     const resolution = new Vector2(el.clientWidth, el.clientHeight);
     g.renderer().setPixelRatio(Math.min(window.devicePixelRatio, 2));
     const lastOrder = versions.length - 1;
@@ -203,22 +244,23 @@ export default function WikiGraph3D() {
       .enableNodeDrag(false)
       .nodeLabel(() => '')
       .nodeThreeObject((n) => {
+        const sky0 = lookNow.current.sky;
         const named = index.named.has(n.id);
         // size by importance, like star magnitudes: the theme's main pages stand out, minor ones are specks
         const imp = index.importance(n);
         const r = n.hub ? 4.6 : 0.5 + 3.4 * imp ** 0.8;
         const group = new Group();
         const star = new SpriteMaterial({
-          map: starTexture(n.hub ? sky.hub : sky[n.kind], sky.night, n.hub),
-          blending: sky.night ? AdditiveBlending : NormalBlending, depthWrite: false, transparent: true,
+          map: starTexture(starColour(n, sky0), sky0.night, n.hub),
+          blending: sky0.night ? AdditiveBlending : NormalBlending, depthWrite: false, transparent: true,
         });
         const sprite = new Sprite(star);
         sprite.scale.setScalar(r * (n.hub ? 12 : 11));
         group.add(sprite);
         // names keep one size on screen at any zoom (sizeAttenuation off): readable far away,
         // never huge up close, and zooming in only spreads them apart
-        const k = Math.min(1, (el.clientWidth / Math.max(1, el.clientHeight)) * 1.3); // portrait: smaller
-        const label = new SpriteText(nameOf(n), (n.hub ? 0.042 : 0.022 + 0.012 * imp) * k, sky.label);
+        const baseHeight = n.hub ? 0.042 : 0.022 + 0.012 * imp;
+        const label = new SpriteText(nameOf(n), baseHeight * labelScale(el), sky0.label);
         label.fontFace = LABEL_FONT_STACK;
         label.fontWeight = n.hub ? '600' : '500'; // index.html loads 400–600
         // Hangul reaches past the font-size box; without room the tops and bottoms are cut off
@@ -231,15 +273,23 @@ export default function WikiGraph3D() {
         group.add(label);
         label.material.opacity = 0;
         label.visible = false;
-        stars.current.set(n.id, { star, starTarget: 1, label, named, target: 0 });
+        // a star revealed later (version picker) starts from the current look, not full brightness
+        const starTarget = starTargetOf(n.id, lookNow.current);
+        star.opacity = starTarget;
+        stars.current.set(n.id, { node: n, star, starTarget, label, named, target: 0, baseHeight });
+        relabelSoon.current();
         return group;
       })
       .linkThreeObject((l) => {
         const w = strength(l);
-        const mat = new LineMaterial({ color: sky.line, linewidth: 0.6 + 1.6 * w, transparent: true, opacity: 0, depthWrite: false });
+        const parts: LineParts = { mat: null as unknown as LineMaterial, target: 0, color: new Color() };
+        lineLook(l, lookNow.current, parts);
+        const mat = new LineMaterial({ color: parts.color, linewidth: 0.6 + 1.6 * w, transparent: true, opacity: 0, depthWrite: false });
         mat.fog = true;
         mat.resolution.copy(resolution);
-        lines.current.set(l, { mat, target: 0.15 + 0.55 * w, color: new Color(sky.line) });
+        parts.mat = mat;
+        lines.current.set(l, parts);
+        fade.current();
         const line = new Line2(new LineGeometry(), mat);
         line.raycast = () => {}; // lines are not clickable
         return line;
@@ -253,7 +303,9 @@ export default function WikiGraph3D() {
       .warmupTicks(500)
       .cooldownTicks(0)
       .onNodeHover((n) => setHovered(n?.id ?? null))
-      .onEngineStop(() => { if (!fitted) { fitted = true; setTimeout(afterLayout, 30); } })
+      .onNodeClick((n) => setSelected((cur) => (cur === n.id ? null : n.id)))
+      .onBackgroundClick(() => setSelected(null))
+      .onEngineStop(() => { if (!fitted) { fitted = true; layoutTimer = window.setTimeout(afterLayout, 30); } })
       // the theme page is the sun of the chart
       .graphData({ nodes: theme.nodes.map((n) => (n.hub ? { ...n, fx: 0, fy: 0, fz: 0 } : { ...n })), links: theme.links.map((l) => ({ ...l })) });
 
@@ -265,17 +317,22 @@ export default function WikiGraph3D() {
     (g.d3Force('link') as unknown as { distance(f: (l: PageLink) => number): void }).distance((l) => 18 + 30 * (1 - strength(l)));
 
     let fitted = false;
+    let layoutTimer: number | undefined;
+    const rings: { line: LineLoop<BufferGeometry, LineBasicMaterial>; k: number }[] = [];
     const afterLayout = () => {
+      if (disposed) return;
       const list = g.graphData().nodes;
       const radii = list.map((n) => Math.hypot(n.x ?? 0, n.z ?? 0)).sort((a, b) => a - b);
       const r90 = radii[Math.floor(radii.length * 0.9)];
       // faint rings on the plane, like an ecliptic chart
+      const sky0 = lookNow.current.sky;
       for (const k of [0.35, 0.7, 1.05]) {
         const pts: Vector3[] = [];
         for (let i = 0; i < 128; i++) { const a = (i / 128) * Math.PI * 2; pts.push(new Vector3(Math.cos(a) * r90 * k, 0, Math.sin(a) * r90 * k)); }
-        const ring = new LineLoop(new BufferGeometry().setFromPoints(pts), new LineBasicMaterial({ color: sky.ecliptic, transparent: true, opacity: (k > 1 ? 0.2 : 0.1) * (sky.night ? 1 : 1.6), depthWrite: false }));
+        const ring = new LineLoop(new BufferGeometry().setFromPoints(pts), new LineBasicMaterial({ color: sky0.ecliptic, transparent: true, opacity: ringOpacity(k, sky0), depthWrite: false }));
         ring.raycast = () => {};
         g.scene().add(ring);
+        rings.push({ line: ring, k });
       }
       const cam = g.camera() as { fov?: number; aspect?: number };
       const half = Math.tan(((cam.fov ?? 50) * Math.PI) / 360);
@@ -288,14 +345,28 @@ export default function WikiGraph3D() {
       wakeUp();
     };
     // distance fog toward the sky colour: far stars and lines recede (distances follow the camera)
-    const fog = new Fog(sky.sky, 100, 400);
+    const fog = new Fog(lookNow.current.sky.sky, 100, 400);
     g.scene().fog = fog;
+
+    applySky.current = (s) => {
+      fog.color.set(s.sky);
+      for (const p of stars.current.values()) {
+        p.star.map?.dispose();
+        p.star.map = starTexture(starColour(p.node, s), s.night, p.node.hub);
+        p.star.blending = s.night ? AdditiveBlending : NormalBlending;
+        p.star.needsUpdate = true;
+        p.label.color = s.label;
+      }
+      for (const r of rings) { r.line.material.color.set(s.ecliptic); r.line.material.opacity = ringOpacity(r.k, s); }
+      wakeUp();
+    };
 
     // ---------- render only while the reader is interacting ----------
     let idle: number | undefined;
     let running = true;
     const sleep = () => { g.pauseAnimation(); running = false; };
     const wakeUp = () => {
+      if (disposed) return;
       if (!running) { g.resumeAnimation(); running = true; }
       clearTimeout(idle);
       idle = window.setTimeout(sleep, 1500);
@@ -324,7 +395,11 @@ export default function WikiGraph3D() {
       }
       if (moving) { wakeUp(); fading = requestAnimationFrame(step); } else { fading = 0; last = 0; }
     };
-    fade.current = () => { if (!fading) fading = requestAnimationFrame(step); };
+    fade.current = () => { if (!fading && !disposed) fading = requestAnimationFrame(step); };
+    let relabelFrame = 0;
+    relabelSoon.current = () => {
+      if (!relabelFrame && !disposed) relabelFrame = requestAnimationFrame(() => { relabelFrame = 0; relabel.current(); });
+    };
     const events = ['pointerdown', 'pointermove', 'wheel', 'touchstart'] as const;
     for (const ev of events) el.addEventListener(ev, wakeUp, { passive: true });
     const controls = g.controls() as { addEventListener(type: string, fn: () => void): void; removeEventListener(type: string, fn: () => void): void };
@@ -335,46 +410,74 @@ export default function WikiGraph3D() {
       relabel.current();
     };
     controls.addEventListener('change', onMove);
+    let lastScale = labelScale(el);
     const ro = new ResizeObserver(() => {
       g.width(el.clientWidth).height(el.clientHeight);
       resolution.set(el.clientWidth, el.clientHeight);
       for (const l of lines.current.values()) l.mat.resolution.copy(resolution);
+      // a turned phone changes the screen shape: resize the names to match
+      const scale = labelScale(el);
+      if (Math.abs(scale - lastScale) > 0.01) {
+        lastScale = scale;
+        for (const p of stars.current.values()) {
+          p.label.textHeight = p.baseHeight * scale;
+          p.label.padding = [p.label.textHeight * 0.15, p.label.textHeight * 0.3];
+        }
+      }
+      relabelSoon.current();
       wakeUp();
     });
     ro.observe(el);
     wakeUp();
     return () => {
+      disposed = true;
       ro.disconnect();
       clearTimeout(idle);
+      clearTimeout(layoutTimer);
       cancelAnimationFrame(fading);
+      cancelAnimationFrame(relabelFrame);
       controls.removeEventListener('change', onMove);
       for (const ev of events) el.removeEventListener(ev, wakeUp);
+      for (const r of rings) { r.line.geometry.dispose(); r.line.material.dispose(); }
       g._destructor();
       el.replaceChildren();
       graph.current = null;
       stars.current.clear();
       lines.current.clear();
+      wake.current = fade.current = relabelSoon.current = () => {};
+      applySky.current = () => {};
     };
-  }, [theme, index, sky]);
+  }, [theme, index]);
 
-  // ---------- version, selection, brightness and names ----------
+  // ---------- sky: recolour in place (keeps layout, camera and selection) ----------
+  const firstSky = useRef(true);
+  useEffect(() => {
+    if (firstSky.current) { firstSky.current = false; return; }
+    applySky.current(sky);
+  }, [sky]);
+
+  // ---------- version: which stars and lines exist ----------
   useEffect(() => {
     const g = graph.current;
     if (!g) return;
-    const inFocus = (id: string) => !focus || id === selected || focus.one.has(id) || focus.two.has(id);
     g.nodeVisibility((n) => shown(n.id))
-      .linkVisibility((l) => l.revealed <= vIdx && shown(idOf(l.source)) && shown(idOf(l.target)))
-      .onNodeClick((n) => setSelected((cur) => (cur === n.id ? null : n.id)))
-      .onBackgroundClick(() => setSelected(null));
-    for (const [id, s] of stars.current) s.starTarget = inFocus(id) ? 1 : 0.2;
-    const hot = new Color(sky.lineHot), cool = new Color(sky.line);
-    for (const [l, p] of lines.current) {
-      const s = idOf(l.source), t = idOf(l.target), w = strength(l);
-      const touching = s === selected || t === selected;
-      p.color.copy(touching ? hot : cool);
-      p.target = !focus ? 0.15 + 0.55 * w : touching ? 0.55 + 0.45 * w : inFocus(s) && inFocus(t) ? 0.12 + 0.4 * w : 0.04;
-    }
-    // names: brightest stars, the selection's neighbourhood, the hovered star, anything close to the camera
+      .linkVisibility((l) => l.revealed <= vIdx && shown(idOf(l.source)) && shown(idOf(l.target)));
+    relabelSoon.current();
+    wake.current();
+  }, [theme, shown, vIdx]);
+
+  // ---------- selection and sky: brightness and colour targets ----------
+  useEffect(() => {
+    for (const [id, s] of stars.current) s.starTarget = starTargetOf(id, look);
+    for (const [l, p] of lines.current) lineLook(l, look, p);
+    fade.current();
+  }, [theme, look]);
+
+  // ---------- names: brightest stars, the selection's neighbourhood, the hovered star, what is close ----------
+  useEffect(() => {
+    const g = graph.current;
+    if (!g) return;
+    const { inFocus } = look;
     relabel.current = () => {
       const camera = g.camera() as PerspectiveCamera;
       const el = host.current;
@@ -413,8 +516,7 @@ export default function WikiGraph3D() {
       fade.current();
     };
     relabel.current();
-    wake.current();
-  }, [shown, vIdx, focus, selected, hovered, sky]);
+  }, [theme, shown, look, focus, selected, hovered]);
 
   const sel = selected && index ? index.byId.get(selected)! : null;
   const hubNode = theme && index ? index.byId.get(theme.page) : undefined;

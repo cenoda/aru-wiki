@@ -1357,11 +1357,16 @@ function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName:
   const items = edges.map((edge) => {
     const q = item(edge.source);
     const name = displayName(q);
-    return { edge, q, name, gist: edge.gist_ko?.trim() || recommendationGist(edge.reason_ko, name) };
+    // Infobox edges carry only a fixed provenance line, not a story reason: no gist, nothing to hide.
+    const infobox = edge.basis === 'recommended' && !edge.gist_ko;
+    const gist = infobox ? '' : edge.gist_ko?.trim() || recommendationGist(edge.reason_ko, name);
+    return { edge, q, name, infobox, gist };
   });
-  const lead = recommendationLead(items.map((it) => ({ name: it.name, reason: it.edge.reason_ko })), targetName);
+  const told = items.filter((it) => !it.infobox);
+  const lead = recommendationLead(told.map((it) => ({ name: it.name, reason: it.edge.reason_ko })), targetName);
   const llm = edges.some((e) => e.basis === 'llm');
-  const strong = edges.some((e) => e.tier === 'strong');
+  const strong = told.some((it) => it.edge.tier === 'strong');
+  const spoilers = told.length > 0;
   return (
     <section className="recs">
       <div className="recs-head">
@@ -1369,20 +1374,25 @@ function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName:
         {llm && <span className="tag neutral" title="LLM 판정 후 다른 회사 모델이 검증했습니다. 사람 검수 전입니다.">미검수</span>}
         <div className="rec-toggle">
           {strong && <span className="badge">스포일러 주의</span>}
-          <button type="button" className="rec-more" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
-            {open ? '스포일러 접기' : '스포일러 보기'}
-          </button>
+          {spoilers && (
+            <button type="button" className="rec-more" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
+              {open ? '스포일러 접기' : '스포일러 보기'}
+            </button>
+          )}
         </div>
       </div>
       {lead && <p className="recs-lead">{lead}</p>}
       <ul className="rec-list">
-        {items.map(({ edge, q, name, gist }) => (
+        {items.map(({ edge, q, name, infobox, gist }) => (
           <li key={edge.id} className={`rec-${edge.tier}`}>
             <button type="button" className={`rec-jump ${typeClass(q)}`} onClick={() => go(edge.source)}>
               <span className="rec-title">{name}</span>
-              <span className="rec-meta">{isUnit(q) ? `${UNIT_LABEL[q.kind]} · ` : ''}{q.first_version}{!q.replayable && ' · 다시 플레이 불가'}</span>
+              <span className="rec-meta">
+                {isUnit(q) ? `${UNIT_LABEL[q.kind]} · ` : ''}{q.first_version}{!q.replayable && ' · 다시 플레이 불가'}
+                {infobox && <span title={edge.reason_ko}> · Fandom 권장 임무</span>}
+              </span>
             </button>
-            {open && (
+            {open && !infobox && (
               <div className="rec-spoiler">
                 {gist && <p className="rec-gist">{gist}</p>}
                 {edge.tier !== 'strong' && <span className="tag neutral">{edge.tier === 'medium' ? '배경 이해' : '참고'}</span>}

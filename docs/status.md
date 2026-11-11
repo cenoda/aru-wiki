@@ -53,7 +53,9 @@
 
 ### 공개 전
 
-- [x] 아이콘 PNG를 리포지토리에서 뺐다(2026-11-11 결정). 배포 순서: `npm run fetch:icons` → `npm run build`. 옛 커밋 이력(6218e8b~)에는 파일이 남아 있다. 지우려면 이력 재작성(force push)이 필요하며 하지 않았다.
+- [x] 아이콘 PNG를 리포지토리와 이력에서 뺐다(2026-11-11 결정). `main`·`feat/3d-main`을 다시 써서 강제 push했다. 배포 순서: `npm run fetch:icons` → `npm run build`.
+- [ ] GitHub에 남은 옛 이력: PR #3의 `refs/pull/3/head`(7b26e09)와 옛 커밋 SHA(예: 6218e8b)로는 아직 파일을 볼 수 있다. 이 참조는 GitHub만 지울 수 있다(GitHub Support에 민감 정보 삭제 요청).
+- [ ] `~/projects/aru-wiki-3d` 폴더는 옛 이력 그대로다(고유 커밋 없음). 그 폴더에서 `git pull`하면 옛 이력이 다시 합쳐져 파일이 되살아난다. `git fetch && git reset --hard origin/main`으로 맞추거나 폴더를 새로 clone한다.
 - [ ] 화면에서 출처·라이선스 표시(카드 이미지는 2026-11-11 완료: 화면 아래 고지, 갈래 정보 카드에 출처·받은 날짜·공개 버전), 삭제 요청 대상 파일을 찾아 지우는 수단(이미지는 `image-files.json`으로 파일과 인물을 찾을 수 있다).
 - [ ] contact@aru.wiki 수신과 알림이 실제로 되는지 확인(사람).
 - [ ] OCI 인스턴스 받아 배포(사람: SSH, 포트, DNS).

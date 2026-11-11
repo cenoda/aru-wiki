@@ -1408,34 +1408,6 @@
    }
   },
   {
-   "id": "event_",
-   "kind": "event",
-   "names": {
-    "en": "-->"
-   },
-   "members": [
-    "quest_dreamy_paititi",
-    "quest_a_wall_of_ships",
-    "quest_banners_of_the_northwind",
-    "quest_companions_on_the_frost_road",
-    "quest_embers_never_fade",
-    "quest_firm_as_the_bedrock",
-    "quest_from_trees_to_a_forest",
-    "quest_thunder_purges_all_spite",
-    "quest_the_lost_child_s_tale"
-   ],
-   "quest_type": "EVENT",
-   "region": "Natlan",
-   "first_version": "5.8",
-   "replayable": false,
-   "attach": {
-    "acts": [
-     "act_a_yesterday_sent_from_beyond"
-    ],
-    "basis": "requirement"
-   }
-  },
-  {
    "id": "event_a_lanternlit_ode_to_the_silver_moon_event",
    "kind": "event",
    "names": {
@@ -1768,25 +1740,6 @@
    "quest_type": "EVENT",
    "region": "Sumeru",
    "first_version": "3.6",
-   "replayable": false,
-   "attach": {
-    "acts": [],
-    "basis": "none"
-   }
-  },
-  {
-   "id": "event_carefree_snowball_fight",
-   "kind": "event",
-   "names": {
-    "en": "Carefree Snowball Fight",
-    "ko": "근심 없는 눈싸움"
-   },
-   "members": [
-    "quest_carefree_snowball_fight_quest"
-   ],
-   "quest_type": "EVENT",
-   "region": "Snezhnaya",
-   "first_version": "7.1",
    "replayable": false,
    "attach": {
     "acts": [],
@@ -3535,28 +3488,6 @@
    }
   },
   {
-   "id": "event_predictive_victory_dynamics",
-   "kind": "event",
-   "names": {
-    "en": "Predictive Victory Dynamics",
-    "ko": "승부 예측의 달인"
-   },
-   "members": [
-    "quest_unpredictable_unrepeatable",
-    "quest_predict_again_repeat_again"
-   ],
-   "quest_type": "EVENT",
-   "region": "Natlan",
-   "first_version": "7.1",
-   "replayable": false,
-   "attach": {
-    "acts": [
-     "act_song_of_the_dragon_and_freedom"
-    ],
-    "basis": "requirement"
-   }
-  },
-  {
    "id": "event_radiant_harvest",
    "kind": "event",
    "names": {
@@ -3949,6 +3880,7 @@
     "ko": "달빛을 물어온 제비"
    },
    "members": [
+    "quest_a_taste_beyond_time",
     "quest_another_auspicious_moonlit_night_rolls_around_quest",
     "quest_battle_beneath_the_spirit_quelling_banner",
     "quest_little_figure_exorcism",
@@ -3957,7 +3889,7 @@
    ],
    "quest_type": "EVENT",
    "region": "Liyue",
-   "chapter": "Another Auspicious Moonlit Night Rolls Around",
+   "chapter": "Food Street Must Be Saved!",
    "first_version": "7.1",
    "replayable": false,
    "attach": {
@@ -5209,10 +5141,10 @@
     "ko": "정금과 천은보다 귀한 것"
    },
    "members": [
-    "quest_the_forgotten_lighthouse",
     "quest_the_joyous_floating_island",
+    "quest_the_silent_theater",
     "quest_the_lost_palace",
-    "quest_the_silent_theater"
+    "quest_the_forgotten_lighthouse"
    ],
    "next": [],
    "major": false,
@@ -5454,8 +5386,7 @@
    },
    "members": [
     "quest_the_chefs_from_a_foreign_land",
-    "quest_deliciousness_knows_no_borders",
-    "quest_a_taste_beyond_time"
+    "quest_deliciousness_knows_no_borders"
    ],
    "next": [],
    "major": false,
@@ -6179,7 +6110,7 @@
    "region": "Fontaine",
    "chapter": "Scenes from Life in Meropide",
    "first_version": "4.1",
-   "replayable": false,
+   "replayable": true,
    "attach": {
     "acts": [
      "act_the_outlander_who_caught_the_wind"
@@ -6239,31 +6170,6 @@
      "act_flowers_resplendent_on_the_sun_scorched_sojourn"
     ],
     "basis": "region"
-   }
-  },
-  {
-   "id": "series_swords_and_secrets",
-   "kind": "series",
-   "names": {
-    "en": "Swords and Secrets",
-    "ko": "바람 요정의 영검 수행기!"
-   },
-   "members": [
-    "quest_swords_and_secrets_quest"
-   ],
-   "next": [],
-   "major": false,
-   "quest_type": "WORLD",
-   "region": "Snezhnaya",
-   "character": "Vesna",
-   "chapter": "Swords and Secrets",
-   "first_version": "7.1",
-   "replayable": true,
-   "attach": {
-    "acts": [
-     "act_white_night_like_a_dream_upon_waking"
-    ],
-    "basis": "requirement"
    }
   },
   {
@@ -6923,28 +6829,6 @@
    }
   },
   {
-   "id": "single_a_gift_for_the_children",
-   "kind": "single",
-   "names": {
-    "en": "A Gift for the Children",
-    "ko": "아이들 장난감"
-   },
-   "members": [
-    "quest_a_gift_for_the_children"
-   ],
-   "quest_type": "WORLD",
-   "region": "Snezhnaya",
-   "chapter": "Secret Tsarist Assignment",
-   "first_version": "7.1",
-   "replayable": true,
-   "attach": {
-    "acts": [
-     "act_everwinter_without_mercy"
-    ],
-    "basis": "region"
-   }
-  },
-  {
    "id": "single_a_gift_from_her",
    "kind": "single",
    "names": {
@@ -7131,27 +7015,6 @@
    "attach": {
     "acts": [
      "act_a_new_star_approaches"
-    ],
-    "basis": "region"
-   }
-  },
-  {
-   "id": "single_a_lovely_oasis_holiday",
-   "kind": "single",
-   "names": {
-    "en": "A Lovely Oasis Holiday",
-    "ko": "오아시스의 아름다운 휴일"
-   },
-   "members": [
-    "quest_a_lovely_oasis_holiday"
-   ],
-   "quest_type": "WORLD",
-   "region": "Snezhnaya",
-   "first_version": "7.2",
-   "replayable": true,
-   "attach": {
-    "acts": [
-     "act_everwinter_without_mercy"
     ],
     "basis": "region"
    }
@@ -7386,28 +7249,6 @@
    "attach": {
     "acts": [
      "act_a_dance_of_snowy_tides_and_hoarfrost_groves"
-    ],
-    "basis": "region"
-   }
-  },
-  {
-   "id": "single_a_winter_s_night_proper_ladies_tea_party",
-   "kind": "single",
-   "names": {
-    "en": "A Winter's Night. Proper Ladies. Tea Party.",
-    "ko": "겨울, 숙녀, 티타임"
-   },
-   "members": [
-    "quest_a_winter_s_night_proper_ladies_tea_party"
-   ],
-   "quest_type": "WORLD",
-   "region": "Snezhnaya",
-   "chapter": "Secret Tsarist Assignment",
-   "first_version": "7.1",
-   "replayable": true,
-   "attach": {
-    "acts": [
-     "act_everwinter_without_mercy"
     ],
     "basis": "region"
    }
@@ -8136,27 +7977,6 @@
    "attach": {
     "acts": [
      "act_the_immovable_god_and_the_eternal_euthymia"
-    ],
-    "basis": "region"
-   }
-  },
-  {
-   "id": "single_beneath_dust_and_snow",
-   "kind": "single",
-   "names": {
-    "en": "Beneath Dust and Snow",
-    "ko": "눈먼지가 쌓인 과거"
-   },
-   "members": [
-    "quest_beneath_dust_and_snow"
-   ],
-   "quest_type": "WORLD",
-   "region": "Snezhnaya",
-   "first_version": "7.2",
-   "replayable": true,
-   "attach": {
-    "acts": [
-     "act_everwinter_without_mercy"
     ],
     "basis": "region"
    }
@@ -9033,6 +8853,27 @@
    "attach": {
     "acts": [
      "act_the_immovable_god_and_the_eternal_euthymia"
+    ],
+    "basis": "region"
+   }
+  },
+  {
+   "id": "single_dreamy_paititi",
+   "kind": "single",
+   "names": {
+    "en": "Dreamy Paititi",
+    "ko": "좋은 꿈의 파이티티"
+   },
+   "members": [
+    "quest_dreamy_paititi"
+   ],
+   "quest_type": "WORLD",
+   "region": "Natlan",
+   "first_version": "5.8",
+   "replayable": true,
+   "attach": {
+    "acts": [
+     "act_flowers_resplendent_on_the_sun_scorched_sojourn"
     ],
     "basis": "region"
    }
@@ -10568,28 +10409,6 @@
    "quest_type": "WORLD",
    "region": "Snezhnaya",
    "first_version": "7.0",
-   "replayable": true,
-   "attach": {
-    "acts": [
-     "act_everwinter_without_mercy"
-    ],
-    "basis": "region"
-   }
-  },
-  {
-   "id": "single_just_the_one_court_assembly",
-   "kind": "single",
-   "names": {
-    "en": "Just the One Court Assembly",
-    "ko": "조례"
-   },
-   "members": [
-    "quest_just_the_one_court_assembly"
-   ],
-   "quest_type": "WORLD",
-   "region": "Snezhnaya",
-   "chapter": "Secret Tsarist Assignment",
-   "first_version": "7.1",
    "replayable": true,
    "attach": {
     "acts": [
@@ -12245,28 +12064,6 @@
    }
   },
   {
-   "id": "single_potatoes_hot_soup_and_snowfields",
-   "kind": "single",
-   "names": {
-    "en": "Potatoes, Hot Soup, and Snowfields...",
-    "ko": "감자, 수프, 설원…"
-   },
-   "members": [
-    "quest_potatoes_hot_soup_and_snowfields"
-   ],
-   "quest_type": "WORLD",
-   "region": "Snezhnaya",
-   "chapter": "Secret Tsarist Assignment",
-   "first_version": "7.2",
-   "replayable": true,
-   "attach": {
-    "acts": [
-     "act_everwinter_without_mercy"
-    ],
-    "basis": "region"
-   }
-  },
-  {
    "id": "single_pressing_deadlines",
    "kind": "single",
    "names": {
@@ -13311,6 +13108,28 @@
    }
   },
   {
+   "id": "single_swords_and_secrets",
+   "kind": "single",
+   "names": {
+    "en": "Swords and Secrets",
+    "ko": "바람 요정의 영검 수행기!"
+   },
+   "members": [
+    "quest_swords_and_secrets"
+   ],
+   "quest_type": "WORLD",
+   "region": "Snezhnaya",
+   "character": "Vesna",
+   "first_version": "7.1",
+   "replayable": true,
+   "attach": {
+    "acts": [
+     "act_white_night_like_a_dream_upon_waking"
+    ],
+    "basis": "requirement"
+   }
+  },
+  {
    "id": "single_sylvie_s_beryl_conch_commission",
    "kind": "single",
    "names": {
@@ -13457,28 +13276,6 @@
      "act_a_new_star_approaches"
     ],
     "basis": "requirement"
-   }
-  },
-  {
-   "id": "single_the_army_that_stares_down_winter",
-   "kind": "single",
-   "names": {
-    "en": "The Army That Stares Down Winter",
-    "ko": "겨울의 군세"
-   },
-   "members": [
-    "quest_the_army_that_stares_down_winter"
-   ],
-   "quest_type": "WORLD",
-   "region": "Snezhnaya",
-   "chapter": "Secret Tsarist Assignment",
-   "first_version": "7.2",
-   "replayable": true,
-   "attach": {
-    "acts": [
-     "act_everwinter_without_mercy"
-    ],
-    "basis": "region"
    }
   },
   {
@@ -14119,6 +13916,27 @@
    }
   },
   {
+   "id": "single_the_lost_child_s_tale",
+   "kind": "single",
+   "names": {
+    "en": "The Lost Child's Tale",
+    "ko": "길 잃은 아이 돕기"
+   },
+   "members": [
+    "quest_the_lost_child_s_tale"
+   ],
+   "quest_type": "WORLD",
+   "region": "Nod-Krai",
+   "first_version": null,
+   "replayable": true,
+   "attach": {
+    "acts": [
+     "act_a_dance_of_snowy_tides_and_hoarfrost_groves"
+    ],
+    "basis": "region"
+   }
+  },
+  {
    "id": "single_the_man_who_once_lied",
    "kind": "single",
    "names": {
@@ -14689,28 +14507,6 @@
    "attach": {
     "acts": [
      "act_a_new_star_approaches"
-    ],
-    "basis": "region"
-   }
-  },
-  {
-   "id": "single_the_tsaritsa_s_chess_game_i",
-   "kind": "single",
-   "names": {
-    "en": "The Tsaritsa's Chess Game (I)",
-    "ko": "여왕의 체스판・첫 번째"
-   },
-   "members": [
-    "quest_the_tsaritsa_s_chess_game_i"
-   ],
-   "quest_type": "WORLD",
-   "region": "Snezhnaya",
-   "chapter": "Secret Tsarist Assignment",
-   "first_version": "7.1",
-   "replayable": true,
-   "attach": {
-    "acts": [
-     "act_everwinter_without_mercy"
     ],
     "basis": "region"
    }
@@ -15813,27 +15609,6 @@
      "act_song_of_the_dragon_and_freedom"
     ],
     "basis": "requirement"
-   }
-  },
-  {
-   "id": "single_winner_takes_all_quest",
-   "kind": "single",
-   "names": {
-    "en": "Winner Takes All (Quest)",
-    "ko": "승자가 왕이다"
-   },
-   "members": [
-    "quest_winner_takes_all_quest"
-   ],
-   "quest_type": "WORLD",
-   "region": "Snezhnaya",
-   "first_version": "7.2",
-   "replayable": true,
-   "attach": {
-    "acts": [
-     "act_everwinter_without_mercy"
-    ],
-    "basis": "region"
    }
   },
   {

@@ -1,30 +1,34 @@
 {
+ "input": {
+  "source": "dump",
+  "asOf": "2026-09-30"
+ },
  "stats": {
-  "versions": 54,
+  "versions": 53,
   "nodes": {
-   "ACT:ARCHON": 52,
+   "ACT:ARCHON": 50,
    "ACT:EVENT": 53,
    "ACT:STORY": 83,
-   "ACT:WORLD": 50,
-   "QUEST:ARCHON": 238,
-   "QUEST:EVENT": 664,
-   "QUEST:STORY": 395,
-   "QUEST:WORLD": 937
+   "ACT:WORLD": 46,
+   "QUEST:ARCHON": 230,
+   "QUEST:EVENT": 650,
+   "QUEST:STORY": 396,
+   "QUEST:WORLD": 921
   },
   "edges": {
-   "PART_OF:parent": 86,
+   "PART_OF:parent": 80,
    "PREREQUISITE:archonQuestReq": 92,
-   "PREREQUISITE:prev": 1220,
-   "PREREQUISITE:requirement": 693,
+   "PREREQUISITE:prev": 1208,
+   "PREREQUISITE:requirement": 676,
    "PREREQUISITE:storyQuestReq": 38,
    "PREREQUISITE:worldQuestReq": 6,
-   "RECOMMENDED:recommended": 19
+   "RECOMMENDED:recommended": 18
   },
-  "questsWithAct": 783,
-  "missingInfobox": 7,
+  "questsWithAct": 765,
+  "missingInfobox": 6,
   "missingVersion": 2,
-  "missingKo": 3,
-  "unresolvedLinkPages": 2
+  "missingKo": 2,
+  "unresolvedLinkPages": 0
  },
  "missingInfobox": [
   "Archon Quest",
@@ -32,8 +36,7 @@
   "Story Quest",
   "Tribal Chronicles",
   "Random Event",
-  "World Quest",
-  "Intel Quest"
+  "World Quest"
  ],
  "missingVersion": [
   "Lightkeepers' Oath",
@@ -41,15 +44,7 @@
  ],
  "missingKo": [
   "Truth Amongst the Pages of Purana (Quest)",
-  "Swords and Secrets (Quest)",
   "Within the Sequence"
  ],
- "unresolvedLinks": {
-  "Hatred, and the Throne of Those Who Hate": [
-   "Through the Star-Piercing Valley"
-  ],
-  "Where Scales and Calamitous Crystals Remain": [
-   "Through the Star-Piercing Valley"
-  ]
- }
+ "unresolvedLinks": {}
 }

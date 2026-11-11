@@ -140,11 +140,11 @@ if (!opt.write) process.exit(0);
 const { ask } = await import('../recommend/llm.mjs');
 const [quests, units, misspelled] = await Promise.all([read('quests.json'), read('quest-units.json'),
   readFile(join(ROOT, 'data/manual/ko-misspellings.json'), 'utf8').then(JSON.parse)]);
-const localize = makeLocalizer(
-  Object.entries(koNames).map(([en, v]) => [en, v.ko]),
-  [...quests, ...units.units].map((x) => [x.names.en, x.names.ko]),
-  Object.entries(misspelled).filter(([w]) => !w.startsWith('$')).flatMap(([w, en]) => (koNames[en]?.ko ? [[w, koNames[en].ko]] : [])),
-);
+const namePairs = Object.entries(koNames).map(([en, v]) => [en, v.ko]);
+const titlePairs = [...quests, ...units.units].map((x) => [x.names.en, x.names.ko]);
+const misspellingPairs = Object.entries(misspelled).filter(([w]) => !w.startsWith('$'))
+  .flatMap(([w, en]) => (koNames[en]?.ko ? [[w, koNames[en].ko]] : []));
+const localize = makeLocalizer(namePairs, titlePairs, misspellingPairs);
 // "Mondstadt's knights" → "Mondstadt의 knights" before names are replaced
 const prep = (t) => t.replace(/[‘’]/g, "'").replace(/([A-Za-z])'s(?![A-Za-z])/g, '$1의');
 let ko = (t) => localize(prep(t));
@@ -169,9 +169,9 @@ async function extendNames(texts) {
   // a name a person entered in data/manual/ko-names.json is always used
   const extra = Object.entries(out).filter(([n, v]) => v.ko && (v.ko_source === 'manual' || !v.base_page
     && (same(n.toLowerCase(), v.page.replace(/ \(.*\)$/, '').toLowerCase()) || ownRow(n, v)))).map(([n, v]) => [n, v.ko]);
-  const more = makeLocalizer(extra);
-  // the dump names first: "Il Dottore" must be replaced whole before "Dottore" alone
-  const both = (t) => localize(more(t));
+  // One replacer makes the longest name win across both sources: "Il Dottore" before "Dottore",
+  // and an existing "Hydro Archon" before a newly found "Hydro".
+  const both = makeLocalizer([...namePairs, ...extra], titlePairs, misspellingPairs);
   // A phrase that cannot be put into Korean whole stays English whole: "God of the Woods" must
   // not become "마신 of the Woods", nor "Dendro Archon" "풀 Archon".
   ko = (t) => {
@@ -355,14 +355,15 @@ await Promise.all(Array.from({ length: Number(opt.jobs) }, async () => {
 }));
 await save();
 
-// Names still in English in accepted points, for a person to find official Korean names
-// (docs/ko-names-needed.md). Counted on the writer's English names, so "Il Capitano" stays whole.
+// Names actually left in accepted Korean points after whole-sentence localization, for a person
+// to find official Korean names (docs/ko-names-needed.md). Using latin_left avoids listing pieces
+// of a phrase that was translated whole, such as Musou and Hitotachi in Musou no Hitotachi.
 const STOP = new Set(['The', 'No', 'First', 'Second', 'Third', 'Unknown', 'Human', 'Mini', 'Project', 'Chapter', 'Act', 'Part', 'Version']);
 const left = new Map();
 for (const r of results.values()) for (const p of r.points) {
   if (p.status !== 'accepted') continue;
-  for (const n of new Set(latinNames(prep(p.text_raw)))) {
-    if (n.length < 3 || STOP.has(n) || !latinNames(ko(n)).length) continue;
+  for (const n of new Set(p.latin_left)) {
+    if (n.length < 3 || STOP.has(n)) continue;
     const e = left.get(n) ?? left.set(n, { n: 0, nodes: new Set(), example: p.text }).get(n);
     e.n++; e.nodes.add(r.ko ?? r.node);
   }
@@ -370,10 +371,10 @@ for (const r of results.values()) for (const p of r.points) {
 const rows = [...left].filter(([, e]) => e.n >= 3).sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0]));
 await writeFile(join(ROOT, 'docs/ko-names-needed.md'), `# 한국어 이름이 필요한 말
 
-\`scripts/theme/snapshots.mjs\`가 만든다(손으로 고치지 않는다). 켄리아 스냅샷에서 검증을 통과한 문장에 영어로 남은 이름이다.
-3번 이상 나온 것만 적었다. 전체 ${left.size}개, 여기 ${rows.length}개.
+\`scripts/theme/snapshots.mjs\`가 만든다(손으로 고치지 않는다). 켄리아 스냅샷에서 검증을 통과한 문장을 모두 치환한 뒤 영어로 남은 이름이다.
+3번 이상 나온 것만 적었다. 전체 ${left.size}개, 여기 ${rows.length}개. 조사 방법은 [공식 한국어 이름 조사 계획](ko-names-plan.md)에 있다.
 
-Fandom 표(\`{{Other Languages}}\`)에 이 이름 자체의 한국어가 없어서 남았다. 넘겨주기 대상 문서의 한국어는 정체가 드러날 수 있어 쓰지 않는다(예: Gold → 라인도티르).
+자동 치환에 쓸 한국어 이름이 없어서 남았다. 넘겨주기 대상 문서의 한국어는 정체가 드러날 수 있어 쓰지 않는다(예: Gold → 라인도티르).
 찾은 이름은 \`data/manual/ko-names.json\`에 출처와 함께 넣는다. 그다음 \`node scripts/theme/snapshots.mjs khaenriah --write --only none\`을 실행하면 LLM 호출 없이 바뀐다.
 게임 안 표기를 직접 본 것이면 출처는 \`{ "site": "play", "by": "이름" }\`.
 

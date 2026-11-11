@@ -1,9 +1,9 @@
 # 한국어 이름이 필요한 말
 
-`scripts/theme/snapshots.mjs`가 만든다(손으로 고치지 않는다). 켄리아 스냅샷에서 검증을 통과한 문장에 영어로 남은 이름이다.
-3번 이상 나온 것만 적었다. 전체 283개, 여기 95개.
+`scripts/theme/snapshots.mjs`가 만든다(손으로 고치지 않는다). 켄리아 스냅샷에서 검증을 통과한 문장을 모두 치환한 뒤 영어로 남은 이름이다.
+3번 이상 나온 것만 적었다. 전체 274개, 여기 90개. 조사 방법은 [공식 한국어 이름 조사 계획](ko-names-plan.md)에 있다.
 
-Fandom 표(`{{Other Languages}}`)에 이 이름 자체의 한국어가 없어서 남았다. 넘겨주기 대상 문서의 한국어는 정체가 드러날 수 있어 쓰지 않는다(예: Gold → 라인도티르).
+자동 치환에 쓸 한국어 이름이 없어서 남았다. 넘겨주기 대상 문서의 한국어는 정체가 드러날 수 있어 쓰지 않는다(예: Gold → 라인도티르).
 찾은 이름은 `data/manual/ko-names.json`에 출처와 함께 넣는다. 그다음 `node scripts/theme/snapshots.mjs khaenriah --write --only none`을 실행하면 LLM 호출 없이 바뀐다.
 게임 안 표기를 직접 본 것이면 출처는 `{ "site": "play", "by": "이름" }`.
 
@@ -13,14 +13,12 @@ Fandom 표(`{{Other Languages}}`)에 이 이름 자체의 한국어가 없어서
 | Harbinger | 62 | 아나스타샤·표도로브나·스네즈나야, 아를레키노, 카피타노, 콜롬비나 외 11 | 얼음의 여왕의 Harbinger들은 신의 심장을 얻으라는 임무를 수행했고, 바르바토스의 신의 심장은 강제, 모락스의 신의 심장은 협상, 바알세불의 신의 심장은 야에 미코와의 거래로 얻었다. |
 | Harbingers | 50 | 카피타노, 콜롬비나, 우인단 11집행관, 우인단 외 6 | 카피타노는 스카라무슈를 제외한 다른 Harbingers와 함께 장례식에 참석해 Il Dottore에게 스카라무슈와 Electro Gnosis의 상황을 물었다. |
 | Sibling | 44 | 심연, 심연 교단, 대재앙, 데인슬레이프 외 6 | 여행자의 Sibling은 알려지지 않은 이유로 심연 교단의 우두머리가 되었다. |
-| Dendro Archon | 35 | 풀 신, 위대한 룩카데바타, 세계수, 나히다 | Dendro Archon은 풀의 땅인 수메르를 다스리는 Archon이다 |
 | Il Dottore | 35 | 카피타노, 도토레, 우인단 11집행관, 우인단 외 2 | 카피타노는 스카라무슈를 제외한 다른 Harbingers와 함께 장례식에 참석해 Il Dottore에게 스카라무슈와 Electro Gnosis의 상황을 물었다. |
 | Fatui Harbingers | 29 | 아를레키노, 카피타노, 콜롬비나, 우인단 외 5 | 아를레키노는 암호명 'The Knave'로 알려진 Fatui Harbingers 열한 명 중 한 명이다. |
 | Five Sinners | 28 | 심연, 데인슬레이프, 켄리아의 「오대 죄인」, 흐로프타튀르 외 5 | 켄리아의 수르트알로기, 라인도티르, 베드르폴니르, 흐로프타튀르, 레리르는 심연의 부름에 이끌려 Five Sinners가 되었다. |
-| Pyro Archon | 24 | 마비카, 불 신 | 마비카는 고대 이름을 지닌 나타의 현직 Pyro Archon이자 전쟁의 신이다. |
 | Abyssal | 23 | 거짓된 하늘, 플린스, 천리, 켄리아 외 7 | Abyssal의 나타 침공 중 마비카의 공격이 하늘을 깨뜨려 깨진 달 같은 행성을 드러냈고, 마비카는 이를 조사할 가치가 있다고 여행자에게 전했다. |
 | Eleven Harbingers | 22 | 도토레, 우인단 11집행관, 우인단, 판탈로네 외 4 | Il Dottore는 우인단의 Eleven Harbingers 중 한 명인 외교관이다. |
-| God of the Woods | 15 | 풀 신, 위대한 룩카데바타, 나히다, 일곱 신 | 이전 Dendro Archon은 500년 전 cataclysm 때 죽었으며 God of the Woods일 가능성이 있다 |
+| God of the Woods | 15 | 풀 신, 위대한 룩카데바타, 나히다, 일곱 신 | 이전 풀 신은 500년 전 cataclysm 때 죽었으며 God of the Woods일 가능성이 있다 |
 | Dragon King Nibelung | 14 | 아리아, 캐넌, 광계, 소넷 외 1 | 영원의 달은 Dragon King Nibelung이 우주를 여행하는 동안 대신 세계를 다스리라고 만든 세 달 중 하나이다. |
 | Human Realm | 14 | 심연, 천리, 광계 | 심연의 어둠은 광계의 힘과 정반대이며 Human Realm의 존재를 타락시킬 수 있다. |
 | Electro Gnosis | 13 | 카피타노, 도토레, 우인단, 신의 심장 외 1 | 카피타노는 스카라무슈를 제외한 다른 Harbingers와 함께 장례식에 참석해 Il Dottore에게 스카라무슈와 Electro Gnosis의 상황을 물었다. |
@@ -30,7 +28,6 @@ Fandom 표(`{{Other Languages}}`)에 이 이름 자체의 한국어가 없어서
 | Khaenri'ahns | 11 | 아나스타샤·표도로브나·스네즈나야, 거짓된 하늘, 천리, 켄리아 | Anastasya Feodorovna의 후손들은 결국 Khaenri'ahns가 되었다. |
 | Archons | 10 | 심연 교단, 아나스타샤·표도로브나·스네즈나야, 셀레스티아, 세계수 | 심연 교단은 켄리아 출신 사람들이 Archons를 파괴하는 방식으로 복수하고자 만든 조직이다. |
 | Chlothar Alberich | 10 | 심연, 심연 교단, 츄츄족, 켄리아 | Chlothar Alberich는 심연 자체의 의지로 보이는 존재에게 심연의 힘을 받아 심연 교단을 만들었다. |
-| Hydro Archon | 10 | 아를레키노, 일곱 신 | 아를레키노는 푸리나와 느비예트를 조사하다가 두 사람이 Hydro Archon이 아니라고 의심했고 물 신의 심장이 숨겨졌다고 결론지었다. |
 | Raiden Makoto | 10 | 일곱 신 | 이후 벌어진 전쟁에서 God of the Woods와 Raiden Makoto가 사망했고 God of Wisdom과 라이덴 에이(影)가 각각 그 자리를 대신했다. |
 | Fatui Harbinger | 9 | 아를레키노, 카피타노, 콜롬비나, 산드로네 외 1 | 아를레키노는 Fatui Harbinger 중 네 번째이며 벽난로의 집의 현 책임자이다. |
 | First Descender | 9 | 강림자, 천리 | 쿠사나리 데비는 천리가 First Descender라고 추측했다. |
@@ -56,12 +53,10 @@ Fandom 표(`{{Other Languages}}`)에 이 이름 자체의 한국어가 없어서
 | Kingdom of Khaenri'ah | 6 | 천리, 켄리아, 붉은 달의 왕조 | 500년 전 대재앙에서는 Kingdom of Khaenri'ah에서 솟아난 Abyssal power를 막기 위해 개입했고 이후 잠들어 있다. |
 | Chasm | 5 | 우인단, 츄츄족 | 귀공자가 Overlord of the Vortex를 소환한 뒤 리월에 남은 우인단은 의심받았고, Chasm에 있던 자들은 버려져 적대자로 낙인찍혔다. |
 | Curve | 5 | 산드로네 | 산드로네가 모소·롬브로소의 연구와 창작물인 Curve에 관심을 보인 Fatui Harbingers라는 해석이 강하게 암시된다. |
-| Hitotachi | 5 | 시뇨라 | 시뇨라는 라이덴 쇼군의 왕좌 앞 결투에서 여행자에게 패배한 뒤 무상의 일태도로 처형되었다. |
 | King Irmin | 5 | 흐로프타튀르, 피에로, 솔린디스 | 흐로프타튀르는 King Irmin에게 아첨해 Four Pillars 중 가장 총애를 받는 인물이자 베드르폴니르와 함께 왕의 신뢰하는 하인이 되었다. |
 | Lupus Boreas | 5 | 보레아스 | 안드리우스는 Lupus Boreas로도 알려진 몬드의 울프 영지를 지키는 존재이다. |
 | Moon | 5 | 아리아, 캐넌, 콜롬비나, 소넷 | 아리아는 영원의 달이 파괴된 뒤에도 Moon의 거울 속에 살아남았다. |
 | Moon Goddess | 5 | 콜롬비나, 달의 정수 | 콜롬비나는 서리달 아이가 숭배한 Moon Goddess이자 우인단의 전 Third이다. |
-| Musou | 5 | 시뇨라 | 시뇨라는 라이덴 쇼군의 왕좌 앞 결투에서 여행자에게 패배한 뒤 무상의 일태도로 처형되었다. |
 | Palestar Edict | 5 | 콜롬비나, 산드로네 | 우인단은 비용을 불문하고 콜롬비나를 찾기 위해 Palestar Edict의 최고 명령을 내렸다. |
 | Rosalyne | 5 | 시뇨라 | 500년 전 몬드 출신의 Rosalyne는 연인 로스탐이 cataclysm에서 사망하자 액체 불과 같은 몸으로 변해 Crimson Witch of Flame이 되었다. |
 | Snezhnayan | 5 | 우인단 11집행관 | 그들은 우인단에서 가장 강하고 지위가 가장 높으며 Snezhnayan 사회의 부유하고 강력한 구성원들이다. |
@@ -71,9 +66,9 @@ Fandom 표(`{{Other Languages}}`)에 이 이름 자체의 한국어가 없어서
 | Alberich | 4 | 심연 교단 | Alberich 출신 클로타르가 심연 교단을 세웠고 여행자의 형제자매도 나중에 합류했다. |
 | Analyse Cardinale | 4 | 신의 심장 | 포칼로스가 Oratrice Mecanique d'Analyse Cardinale를 통해 자신을 처형한 뒤에는 느비예트가 신의 심장을 얻었다. |
 | Curatorium of Secrets | 4 | 네페르 | 이네파의 말에 따르면 네페르는 Curatorium of Secrets의 책임자다. |
-| Divine Throne | 4 | 일곱 신 | Hydro Archon의 Divine Throne이 파괴되어 Hydro Dragon Sovereign에게 권한이 돌아갔고, 현재 Divine Thrones는 여섯 개만 남았다. |
+| Divine Throne | 4 | 일곱 신 | 물 신의 Divine Throne이 파괴되어 Hydro Dragon Sovereign에게 권한이 돌아갔고, 현재 Divine Thrones는 여섯 개만 남았다. |
 | Fourth Descender | 4 | 강림자 | 여행자는 Fourth Descender로 알려진 인물이다. |
-| Hydro Dragon Sovereign | 4 | 일곱 신 | Hydro Archon의 Divine Throne이 파괴되어 Hydro Dragon Sovereign에게 권한이 돌아갔고, 현재 Divine Thrones는 여섯 개만 남았다. |
+| Hydro Dragon Sovereign | 4 | 일곱 신 | 물 신의 Divine Throne이 파괴되어 Hydro Dragon Sovereign에게 권한이 돌아갔고, 현재 Divine Thrones는 여섯 개만 남았다. |
 | Kami | 4 | 방랑자 | 수메르에서 Shouki no Kami라는 인공 신이 되어 싸웠으나 패배한 뒤 혼수 상태가 되어 쿠사나리 데비에게 숨겨졌다. |
 | Katherynes | 4 | 산드로네 | 산드로네는 Katherynes를 만든 창조자이다. |
 | Natlanese | 4 | 우인단, 지맥, 마비카 | 나타에서 심연이 대규모 침공을 시작하자 우인단은 Natlanese와 함께 싸웠으며 큰 피해를 입었다. |

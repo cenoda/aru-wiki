@@ -21,7 +21,7 @@ function finalOf(name) {
 const PARTICLE = /(?:의|와|과|을|를|은|는|이|가|에|도|로|으로|만|라|이라|이자|처럼|까지|부터|보다|이며|며|나|이나)/;
 
 // [with final consonant, without]
-const PAIRS = [['으로', '로'], ['과', '와'], ['을', '를'], ['은', '는'], ['이', '가']];
+const PAIRS = [['으로', '로'], ['과', '와'], ['을', '를'], ['은', '는'], ['이나', '나'], ['이', '가']];
 
 /**
  * The particle at the start of `rest`, re-chosen for `name`.

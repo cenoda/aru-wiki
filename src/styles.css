@@ -42,3 +42,6 @@ html, body, #root { margin: 0; height: 100%; }
 .app aside .en { color: var(--muted); margin: 0 0 8px; }
 .app aside ol { padding-left: 20px; margin: 0; } .app aside li { margin: 3px 0; }
 .app aside .src a { color: var(--muted); }
+
+.app-loading { display: grid; place-items: center; min-height: 100vh; gap: 0.5rem; color: #8a8fa3; font-size: 0.95rem; }
+.app-loading button { margin-left: 0.5rem; }

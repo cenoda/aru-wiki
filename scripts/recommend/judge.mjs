@@ -19,8 +19,8 @@ if (opt.judge === opt.verify && opt.verify !== 'none') throw new Error('judge an
 
 const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
 const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
-const [quests, edges, candidates, aliases, unitData] = await Promise.all(
-  ['quests.json', 'quest-edges.json', opt.candidates, 'character-aliases.json', 'quest-units.json'].map(read));
+const [quests, edges, candidates, aliases, unitData, koNames] = await Promise.all(
+  ['quests.json', 'quest-edges.json', opt.candidates, 'character-aliases.json', 'quest-units.json', 'ko-names.json'].map(read));
 // --out writes elsewhere (to compare tools); --verify none skips the second check
 const OUT = opt.out;
 const outUrl = OUT.startsWith('/') ? new URL(`file://${OUT}`) : file(OUT);
@@ -39,6 +39,30 @@ for (const e of edges) {
 // act-less units (series, events, chains) keep their members in play order already
 const looseUnits = new Map(unitData.units.map((u) => [u.id, u]));
 const nameOf = (id) => byId.get(id)?.names.en ?? looseUnits.get(id).names.en;
+const koTitleOf = (id) => byId.get(id)?.names.ko ?? looseUnits.get(id)?.names.ko;
+
+// Official Korean names (Fandom {{Other Languages}}, ko-names.json) for the names that occur in
+// the excerpts, so reason_ko uses them instead of spellings of its own. Only names the excerpts
+// already show are listed: the glossary adds no later knowledge.
+const koOf = new Map(Object.entries(koNames).filter(([en, v]) => v.ko && v.ko !== en && en.length >= 2).map(([en, v]) => [en, v.ko]));
+const koRe = new RegExp(`(?<![A-Za-z0-9'’-])(${[...koOf.keys()].sort((x, y) => y.length - x.length)
+  .map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})(?![A-Za-z0-9-])`, 'g');
+const GLOSSARY_MAX = 80;
+function glossary(p, a, b, k) {
+  const seen = new Map();
+  for (const id of [p.source, p.target, ...(k ? p.known : [])]) {
+    const ko = koTitleOf(id);
+    if (ko) seen.set(nameOf(id), ko);
+  }
+  for (const text of [a, b, k ?? '']) {
+    for (const m of text.matchAll(koRe)) if (!seen.has(m[1])) seen.set(m[1], koOf.get(m[1]));
+  }
+  const lines = [...seen].slice(0, GLOSSARY_MAX).map(([en, ko]) => `${en} = ${ko}`);
+  return lines.length ? `
+Official Korean names for names in the excerpts (use exactly these in reason_ko):
+${lines.join('\n')}
+` : '';
+}
 const versionOf = (id) => byId.get(id)?.first_version ?? looseUnits.get(id).first_version;
 function playOrder(actId) {
   if (looseUnits.has(actId)) return looseUnits.get(actId).members.map((id) => byId.get(id));
@@ -126,12 +150,14 @@ shows the outcome of a mystery that A raises (strength "strong"). A first meetin
 by B treating that person as an acquaintance counts.` : ''} Use only the excerpts, not what you know about the game.
 
 ${frame(p, a, b, k)}
-
+${glossary(p, a, b, k)}
 Answer in JSON:
 - recommend: true or false
 - strength: "strong" (B spoils or depends on a major event of A), "weak" (A gives useful context), "none"
 - reason_ko: one or two Korean sentences on what B assumes from A (empty if false). Call the stories
-  by their titles in 「」, never "A" or "B"; keep titles as given if you do not know the Korean name
+  by their titles in 「」, never "A" or "B". Write names and titles with the official Korean names
+  listed above; a name that is not listed stays in English as written in the excerpts. Never
+  transliterate a name into Hangul yourself
 - quotes_a: one to three exact quotes from the A excerpt that show that event
 - quotes_b: one to three exact quotes from the B excerpt that show or assume it
 Each quote is at most 200 characters, copied character for character from a single line.

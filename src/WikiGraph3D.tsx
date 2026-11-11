@@ -21,6 +21,15 @@ const idOf = (end: string | PageNode) => (typeof end === 'string' ? end : end.id
 const nameOf = (n: PageNode) => n.ko ?? n.id;
 const KIND_LABEL = { character: '인물', lore: '로어' } as const;
 
+/** 0..1 by shared stories, on a log scale (2 shared ≈ 0, the theme's busiest tie = 1). */
+let maxShared = 2;
+const strength = (l: PageLink) => Math.log(l.shared / 2 + 1) / Math.log(maxShared / 2 + 1);
+/** `#rrggbb` (a theme colour) with an alpha. */
+const withAlpha = (hex: string, a: number) => {
+  const m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex);
+  return m ? `rgba(${parseInt(m[1], 16)},${parseInt(m[2], 16)},${parseInt(m[3], 16)},${a.toFixed(2)})` : hex;
+};
+
 export default function WikiGraph3D() {
   const host = useRef<HTMLDivElement>(null);
   const graph = useRef<ForceGraph3DInstance<PageNode, PageLink> | null>(null);
@@ -31,7 +40,10 @@ export default function WikiGraph3D() {
   const [selected, setSelected] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch(themeUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then(setTheme, () => setFailed(true));
+    fetch(themeUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((t: Theme) => {
+      maxShared = Math.max(2, ...t.links.map((l) => l.shared));
+      setTheme(t);
+    }, () => setFailed(true));
   }, []);
 
   const index = useMemo(() => {
@@ -77,11 +89,17 @@ export default function WikiGraph3D() {
         const label = new SpriteText(nameOf(n), n.hub ? 9 : 4.6, ink);
         label.fontFace = '"IBM Plex Sans KR", "Pretendard", "Noto Sans KR", sans-serif';
         label.fontWeight = n.hub ? '700' : '500';
+        // Hangul reaches past the font-size box; without room the tops and bottoms are cut off
+        label.padding = [label.textHeight * 0.15, label.textHeight * 0.3];
+        // the padded box is transparent but would still hide the lines behind it in the depth buffer
+        label.material.depthWrite = false;
         label.position.y = (n.hub ? 13 : 6) + Math.sqrt(n.units) / 3;
         return label;
       })
-      .linkWidth(0)
-      .linkOpacity(0.35)
+      // stronger ties (more shared stories) are thicker; colour and opacity follow in the effect below
+      .linkWidth((l) => 0.08 + 0.55 * strength(l))
+      .linkResolution(4)
+      .linkOpacity(1)
       .d3VelocityDecay(0.3)
       .warmupTicks(400)
       .cooldownTicks(0)
@@ -141,9 +159,10 @@ export default function WikiGraph3D() {
       .linkVisibility((l) => l.revealed <= vIdx && shown(idOf(l.source)) && shown(idOf(l.target)))
       .nodeColor((n) => (inFocus(n.id) ? colour(n) : dim))
       .linkColor((l) => {
-        const s = idOf(l.source), t = idOf(l.target);
-        if (!focus) return ink;
-        return s === selected || t === selected ? accent : inFocus(s) && inFocus(t) ? ink : dim;
+        const s = idOf(l.source), t = idOf(l.target), w = strength(l);
+        if (!focus) return withAlpha(ink, 0.12 + 0.6 * w);
+        if (s === selected || t === selected) return withAlpha(accent, 0.45 + 0.55 * w);
+        return inFocus(s) && inFocus(t) ? withAlpha(ink, 0.1 + 0.45 * w) : withAlpha(dim, 0.25);
       })
       .onNodeClick((n) => setSelected((cur) => (cur === n.id ? null : n.id)))
       .onBackgroundClick(() => setSelected(null));

@@ -1,0 +1,15 @@
+/* Lore theme 3D preview (WikiGraph3D). Header, legend and version picker come from focus.css. */
+.site.w3d .w3d-stage { flex: 1; min-height: 0; position: relative; overflow: hidden; touch-action: none; }
+.site.w3d .w3d-stage canvas { display: block; }
+.site.w3d .w3d-status { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; color: var(--muted); }
+.site.w3d .w3d-card { position: absolute; right: 12px; bottom: 12px; z-index: 4; width: min(340px, calc(100% - 24px));
+  max-height: calc(100% - 24px); overflow: auto; padding: 14px 16px; background: var(--card); border: 1px solid var(--line);
+  border-left: 3px solid var(--gold); border-radius: 2px; box-shadow: 0 8px 20px rgba(20,24,40,.12); }
+.site.w3d .w3d-card h2 { margin: 2px 0 4px; font-size: 1.2rem; line-height: 1.3; }
+.site.w3d .w3d-type, .site.w3d .w3d-meta { margin: 0; color: var(--muted); font-size: .85rem; }
+.site.w3d .w3d-near { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; padding: 0; list-style: none; }
+.site.w3d .w3d-near button { padding: 3px 9px; background: var(--accent-soft); color: var(--text); border: 0; border-radius: 2px;
+  font: 500 .82rem/1.4 inherit; cursor: pointer; }
+.site.w3d .w3d-near button:hover { background: var(--gold-soft); }
+.site.w3d .w3d-close { position: absolute; top: 6px; right: 6px; width: 32px; height: 32px; background: none; border: 0;
+  color: var(--muted); font-size: 1.4rem; cursor: pointer; }

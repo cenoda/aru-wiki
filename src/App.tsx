@@ -2,11 +2,12 @@ import { type ComponentType, useEffect, useState } from 'react';
 import { loadData } from './data';
 
 // The views read the graph data while their modules load, so import them only after loadData().
-// `?view=map` keeps the full layered graph from the first prototype.
+// `?view=map` keeps the full layered graph from the first prototype; `?view=wiki3d` previews the lore theme in 3D.
 const loadView = async (): Promise<ComponentType> => {
-  const map = new URLSearchParams(location.search).get('view') === 'map';
+  const view = new URLSearchParams(location.search).get('view');
   await loadData(); // first: importing a view runs its top-level code, which reads the data
-  return (await (map ? import('./MapView') : import('./FocusView'))).default;
+  if (view === 'wiki3d') return (await import('./WikiGraph3D')).default; // stage-2 lore preview
+  return (await (view === 'map' ? import('./MapView') : import('./FocusView'))).default;
 };
 
 export default function App() {

@@ -24,7 +24,7 @@
 //
 // Usage: node scripts/images/fetch-enka-icons.mjs [--dry-run]
 import { existsSync } from 'node:fs';
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { generatedFile } from '../fandom/paths.mjs';
 import { FandomClient } from '../fandom/client.mjs';
 
@@ -132,6 +132,7 @@ async function main() {
   await mkdir(OUT_DIR, { recursive: true });
   const files = [];
   let requests = 0;
+  const fetchedNow = new Set();
   for (const name of wanted.filter((n) => matched.has(n)).sort()) {
     const { icon, match: how } = matched.get(name);
     const iconName = `UI_AvatarIcon_Side_${icon}`;
@@ -147,13 +148,16 @@ async function main() {
         continue;
       }
       await writeFile(target, Buffer.from(await res.arrayBuffer()));
+      fetchedNow.add(file);
     }
     if (!existsSync(target) && dry) { log(`would fetch ${ICON_URL(iconName)} for ${name} (${how})`); continue; }
     files.push({
       file,
       character: name,
       source_url: ICON_URL(iconName),
-      fetched: prev?.source_url === ICON_URL(iconName) ? prev.fetched : today,
+      // a file fetched in an earlier run keeps its date; without a record, the file's own date
+      fetched: prev?.source_url === ICON_URL(iconName) ? prev.fetched
+        : fetchedNow.has(file) ? today : (await stat(target)).mtime.toISOString().slice(0, 10),
       release_version: figures.characters[name].release_version,
       release_basis: { date: figures.characters[name].release_date, ...figures.characters[name].source },
       edits: 'none (128×128 PNG as served; shown scaled down)',
@@ -170,6 +174,10 @@ async function main() {
       files,
     }, null, 1)}\n`);
   }
+  // every file needs a record (image policy 3): a file no character uses any more must go
+  const recorded = new Set(files.map((f) => f.file));
+  const orphans = (await readdir(OUT_DIR)).map((n) => `img/characters/${n}`).filter((f) => !recorded.has(f));
+  if (orphans.length) log(`files without a record (delete them): ${orphans.join(', ')}`);
   log(`characters: ${wanted.length}, with an icon: ${files.length}, requests this run: ${requests}`);
   log('no icon (no name match):', unmatched.join(', ') || '-');
   log('near/prefix matches:', [...matched].filter(([, v]) => !['exact', 'title', 'token', 'manual'].includes(v.match)).map(([n, v]) => `${n}→${v.icon}`).join(', '));

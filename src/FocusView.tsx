@@ -88,6 +88,9 @@ const LAYER_GAP = 88;
 const NOTE_MIN_SLOTS = 1, NOTE_MAX_SLOTS = 4;
 /** bracket: how far left of the column it runs, and where it leaves the label (mid-height) */
 const STEM_W = 14, STEM_TOP = 25;
+/** rendered size of a version label (focus.css .atlas-label.ver: 40px, line-height 50px) */
+const VER_CHAR_W = 25, VER_H = 50;
+const verLabelW = (text: string) => Math.max(40, text.length * VER_CHAR_W);
 /** labelY: top of the version label the note hangs from (a bracket links the two) */
 type VersionNote = { version: Version; x: number; y: number; h: number; labelY: number };
 const LAYER = CARD_W + LAYER_GAP;
@@ -808,7 +811,7 @@ function Atlas() {
       .map((n) => {
         const label = atlas.labels.find((l) => l.id === `ver-${n.version.id}`)!;
         const stemX = n.x - STEM_W;
-        const fromX = n.x === label.x ? n.x - 3 : label.x + label.text.length * 25 + 8;
+        const fromX = n.x === label.x ? n.x - 3 : label.x + verLabelW(label.text) + 8;
         const left = Math.min(stemX, fromX), top = n.labelY + STEM_TOP, bottom = n.y + 14;
         const d = `M${fromX - left} 1.5 H${stemX - left + 1.5} V${bottom - top - 1.5} H${n.x - left}`;
         return {
@@ -931,7 +934,7 @@ function Atlas() {
       if (l.order > vIdx) continue;
       const box = l.kind === 'era'
         ? { w: 200, h: 78 }
-        : { w: Math.max(36, l.text.length * 13), h: 34 };
+        : { w: verLabelW(l.text), h: VER_H };
       (l.kind === 'era' ? eras : vers).push({ id: l.id, x: l.x, y: l.y, ...box });
     }
     const view = { w: frame.width, h: frame.height };
@@ -1051,7 +1054,8 @@ function Atlas() {
       minY: Math.min(0, ...visLabels.map((l) => l.y)),
       maxY: Math.max(
         ...visActs.map((a) => atlas.pos.get(a.id)!.y + CARD_H + 40),
-        ...visLabels.map((l) => l.y + (l.kind === 'era' ? 78 : 34)),
+        ...visLabels.map((l) => l.y + (l.kind === 'era' ? 78 : VER_H)),
+        ...atlas.notes.filter((n) => n.version.order <= vIdx).map((n) => n.y + n.h),
       ),
     };
   }, [inBranch, branchPos, visible, vIdx]);

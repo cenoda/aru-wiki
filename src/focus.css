@@ -55,7 +55,7 @@
 .site .stage.far .card-node.dim { opacity: .3; }
 
 .site .atlas-label { white-space: nowrap; pointer-events: none; color: var(--muted); }
-.site .atlas-label.ver { font-size: 22px; font-weight: 500; letter-spacing: .04em; color: var(--text); opacity: .55; font-variant-numeric: tabular-nums; }
+.site .atlas-label.ver { font-size: 40px; line-height: 50px; margin-top: -4px; font-weight: 500; letter-spacing: .04em; color: var(--text); opacity: .55; font-variant-numeric: tabular-nums; }
 .site .atlas-label.era { width: 200px; text-align: right; font-family: "Noto Serif KR", "Source Han Serif KR", serif; font-size: 52px; font-weight: 700; letter-spacing: -.03em; color: var(--gold); opacity: .72; }
 .site .react-flow__node-label { pointer-events: none !important; }
 
@@ -240,3 +240,8 @@
 .site .img-notice { position: absolute; right: 10px; bottom: 6px; z-index: 3; margin: 0; padding: 1px 6px; border-radius: 2px; background: color-mix(in srgb, var(--card) 80%, transparent); font-size: .68rem; color: var(--muted); opacity: .8; pointer-events: none; }
 .site .ver-note.roomy .vn-title { white-space: normal; }
 .site .emblem-big .emblem { width: 100%; height: 100%; }
+
+/* bracket from a version label to its note */
+.site .ver-stem { display: block; overflow: visible; pointer-events: none; }
+.site .ver-stem path { fill: none; stroke: color-mix(in srgb, var(--gold) 55%, transparent); stroke-width: 1.5; }
+.site .stage.far .ver-stem { visibility: hidden; }

@@ -85,7 +85,10 @@ const CARD_W = 236, CARD_H = 40, TALL_H = 56, STEP_X = 276, STEP_Y = 54, HEAD = 
 const LAYER_GAP = 88;
 /** A version note needs this many free card slots, and uses at most this many. */
 const NOTE_MIN_SLOTS = 1, NOTE_MAX_SLOTS = 4;
-type VersionNote = { version: Version; x: number; y: number; h: number };
+/** bracket: how far left of the column it runs, and where it leaves the label (mid-height) */
+const STEM_W = 14, STEM_TOP = 25;
+/** labelY: top of the version label the note hangs from (a bracket links the two) */
+type VersionNote = { version: Version; x: number; y: number; h: number; labelY: number };
 const LAYER = CARD_W + LAYER_GAP;
 /** English-only titles need the whole card, on two lines when they are long. */
 const cardHeight = (q: Quest) => (!q.names.ko && displayName(q).length > 22 ? TALL_H : CARD_H);
@@ -512,7 +515,7 @@ const atlas = (() => {
           slot += n;
         }
       }
-      if (best) notes.push({ version: v, x: best.x, y: y + HEAD + best.slot * STEP_Y, h: best.n * STEP_Y - (STEP_Y - CARD_H) });
+      if (best) notes.push({ version: v, x: best.x, y: y + HEAD + best.slot * STEP_Y, h: best.n * STEP_Y - (STEP_Y - CARD_H), labelY: y });
     }
     y += HEAD + slotEnds.length * STEP_Y + ERA_GAP;
   }
@@ -797,10 +800,25 @@ function Atlas() {
         id: `note-${n.version.id}`, type: 'note', position: { x: n.x, y: n.y }, width: CARD_W, height: n.h,
         selectable: false, data: { ...noteText(n.version), h: n.h },
       }));
+    // Bracket from the version label to its note. It runs down the gap left of the note's
+    // column; when that is not the version's first column, it leaves the label from its right.
+    const stemNodes: Node[] = atlas.notes
+      .filter((n) => n.version.order <= vIdx)
+      .map((n) => {
+        const label = atlas.labels.find((l) => l.id === `ver-${n.version.id}`)!;
+        const stemX = n.x - STEM_W;
+        const fromX = n.x === label.x ? n.x - 3 : label.x + label.text.length * 25 + 8;
+        const left = Math.min(stemX, fromX), top = n.labelY + STEM_TOP, bottom = n.y + 14;
+        const d = `M${fromX - left} 1.5 H${stemX - left + 1.5} V${bottom - top - 1.5} H${n.x - left}`;
+        return {
+          id: `stem-${n.version.id}`, type: 'stem', position: { x: left, y: top },
+          width: Math.max(n.x, fromX) - left, height: bottom - top, selectable: false, data: { d },
+        };
+      });
     const labelNodes: Node[] = atlas.labels
       .filter((l) => l.order <= vIdx)
       .map((l) => ({ id: l.id, type: 'label', position: { x: l.x, y: l.y }, selectable: false, data: l }));
-    setNodes([...labelNodes, ...noteNodes, ...actNodes]);
+    setNodes([...stemNodes, ...labelNodes, ...noteNodes, ...actNodes]);
   }, [visible, focus, vIdx, branch, branchPos, inBranch]);
 
   // Atlas: storyline track only. Branch: every link inside the branch.
@@ -1581,4 +1599,7 @@ const NoteNode = memo(({ data }: NodeProps<Node<NoteData>>) => (
     {data.rows.map(([k, val]) => <div key={k} className="vn-row"><b>{k}</b><span>{val}</span></div>)}
   </div>
 ));
-const nodeTypes = { act: ActNode, unit: UnitNode, more: MoreNode, label: LabelNode, note: NoteNode };
+const StemNode = memo(({ data, width, height }: NodeProps<Node<{ d: string }>>) => (
+  <svg className="ver-stem" width={width} height={height} aria-hidden="true"><path d={data.d} /></svg>
+));
+const nodeTypes = { act: ActNode, unit: UnitNode, more: MoreNode, label: LabelNode, note: NoteNode, stem: StemNode };

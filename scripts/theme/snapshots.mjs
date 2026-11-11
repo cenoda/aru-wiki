@@ -166,11 +166,24 @@ async function extendNames(texts) {
   const pages = await client.latest([...new Set(Object.values(out).filter((v) => v.ko && v.table).map((v) => v.page))]);
   const ownRow = (n, v) => v.table && !v.transcluded_from
     && new RegExp(`\\|\\s*${v.table}_en\\s*=\\s*${n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*(?:\\||\\n|\\}\\})`).test(pages.get(v.page)?.content ?? '');
-  const extra = Object.entries(out).filter(([n, v]) => v.ko && !v.base_page
-    && (same(n.toLowerCase(), v.page.replace(/ \(.*\)$/, '').toLowerCase()) || ownRow(n, v))).map(([n, v]) => [n, v.ko]);
+  // a name a person entered in data/manual/ko-names.json is always used
+  const extra = Object.entries(out).filter(([n, v]) => v.ko && (v.ko_source === 'manual' || !v.base_page
+    && (same(n.toLowerCase(), v.page.replace(/ \(.*\)$/, '').toLowerCase()) || ownRow(n, v)))).map(([n, v]) => [n, v.ko]);
   const more = makeLocalizer(extra);
   // the dump names first: "Il Dottore" must be replaced whole before "Dottore" alone
-  ko = (t) => localize(more(prep(t)));
+  const both = (t) => localize(more(t));
+  // A phrase that cannot be put into Korean whole stays English whole: "God of the Woods" must
+  // not become "마신 of the Woods", nor "Dendro Archon" "풀 Archon".
+  ko = (t) => {
+    let text = prep(t);
+    const kept = [];
+    for (const ph of [...new Set(latinNames(text))].sort((a, b) => b.length - a.length)) {
+      if (!ph.includes(' ') || !latinNames(both(ph)).length) continue;
+      text = text.split(ph).join(`\u0002${kept.length}\u0002`);
+      kept.push(ph);
+    }
+    return both(text).replace(/\u0002(\d+)\u0002/g, (_, i) => kept[Number(i)]);
+  };
   log(`names: ${extra.length} more from the dump (${extra.map(([n, k]) => `${n}=${k}`).join(', ')})`);
 }
 const relocalize = (r) => {
@@ -341,4 +354,32 @@ await Promise.all(Array.from({ length: Number(opt.jobs) }, async () => {
   }
 }));
 await save();
+
+// Names still in English in accepted points, for a person to find official Korean names
+// (docs/ko-names-needed.md). Counted on the writer's English names, so "Il Capitano" stays whole.
+const STOP = new Set(['The', 'No', 'First', 'Second', 'Third', 'Unknown', 'Human', 'Mini', 'Project', 'Chapter', 'Act', 'Part', 'Version']);
+const left = new Map();
+for (const r of results.values()) for (const p of r.points) {
+  if (p.status !== 'accepted') continue;
+  for (const n of new Set(latinNames(prep(p.text_raw)))) {
+    if (n.length < 3 || STOP.has(n) || !latinNames(ko(n)).length) continue;
+    const e = left.get(n) ?? left.set(n, { n: 0, nodes: new Set(), example: p.text }).get(n);
+    e.n++; e.nodes.add(r.ko ?? r.node);
+  }
+}
+const rows = [...left].filter(([, e]) => e.n >= 3).sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0]));
+await writeFile(join(ROOT, 'docs/ko-names-needed.md'), `# 한국어 이름이 필요한 말
+
+\`scripts/theme/snapshots.mjs\`가 만든다(손으로 고치지 않는다). 켄리아 스냅샷에서 검증을 통과한 문장에 영어로 남은 이름이다.
+3번 이상 나온 것만 적었다. 전체 ${left.size}개, 여기 ${rows.length}개.
+
+Fandom 표(\`{{Other Languages}}\`)에 이 이름 자체의 한국어가 없어서 남았다. 넘겨주기 대상 문서의 한국어는 정체가 드러날 수 있어 쓰지 않는다(예: Gold → 라인도티르).
+찾은 이름은 \`data/manual/ko-names.json\`에 출처와 함께 넣는다. 그다음 \`node scripts/theme/snapshots.mjs khaenriah --write --only none\`을 실행하면 LLM 호출 없이 바뀐다.
+게임 안 표기를 직접 본 것이면 출처는 \`{ "site": "play", "by": "이름" }\`.
+
+| 영어 | 나온 횟수 | 나온 별 | 예문 |
+|---|---|---|---|
+${rows.map(([n, e]) => `| ${n} | ${e.n} | ${[...e.nodes].slice(0, 4).join(', ')}${e.nodes.size > 4 ? ` 외 ${e.nodes.size - 4}` : ''} | ${e.example.replace(/\|/g, '\\|')} |`).join('\n')}
+`);
+log(`names left in English: ${left.size} (${rows.length} used 3+ times) → docs/ko-names-needed.md`);
 log(`${todo.length} snapshots, ${calls} LLM calls, reported cost $${cost.toFixed(2)}`);

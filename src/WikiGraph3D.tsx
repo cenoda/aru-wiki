@@ -22,11 +22,18 @@ import { LineGeometry } from 'three/examples/jsm/lines/LineGeometry.js';
 import { LineMaterial } from 'three/examples/jsm/lines/LineMaterial.js';
 import SpriteText from 'three-spritetext';
 import themeUrl from '../data/runtime/theme-khaenriah.json?url';
+import snapshotsUrl from '../data/runtime/snapshots-khaenriah.json?url';
+import { ReportBox } from './ReportBox';
 import { versions } from './data';
 import { VersionPicker } from './VersionPicker';
 import './site.css';
 import './focus.css';
 import './wiki3d.css';
+
+/** A page as the wiki described it at a version (scripts/theme/snapshots.mjs), unreviewed. */
+interface Snapshot { from: number; summary: string | null; bullets: string[]; sources: { page: string; revision: number; date: string }[] }
+const revisionUrl = (page: string, revision: number) =>
+  `https://genshin-impact.fandom.com/wiki/${encodeURIComponent(page.replace(/ /g, '_'))}?oldid=${revision}`;
 
 interface PageNode { id: string; ko: string | null; kind: 'character' | 'lore'; hub: boolean; units: number; theme_units: number; revealed: number; x?: number; y?: number; z?: number; fx?: number; fy?: number; fz?: number }
 interface PageLink { source: string | PageNode; target: string | PageNode; shared: number; revealed: number }
@@ -167,6 +174,7 @@ export default function WikiGraph3D() {
   const applySky = useRef<(sky: Palette) => void>(() => {});
   const [theme, setTheme] = useState<Theme | null>(null);
   const [failed, setFailed] = useState(false);
+  const [snapshots, setSnapshots] = useState<Record<string, Snapshot[]> | null>(null);
   const [vIdx, setVIdx] = useState(versions.length - 1);
   const [selected, setSelected] = useState<string | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
@@ -190,6 +198,11 @@ export default function WikiGraph3D() {
       await Promise.race([fonts, new Promise((r) => setTimeout(r, 2500))]).catch(() => {});
       setTheme(t);
     }, () => setFailed(true));
+  }, []);
+
+  // the cards' text loads beside the chart and is not needed to draw it
+  useEffect(() => {
+    fetch(snapshotsUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then(setSnapshots, () => setSnapshots({}));
   }, []);
 
   const index = useMemo(() => {
@@ -521,6 +534,8 @@ export default function WikiGraph3D() {
   const sel = selected && index ? index.byId.get(selected)! : null;
   const hubNode = theme && index ? index.byId.get(theme.page) : undefined;
   const themeName = hubNode ? nameOf(hubNode) : '테마';
+  // the latest snapshot written for the chosen version or before it
+  const snap = sel && snapshots ? (snapshots[sel.id] ?? []).filter((x) => x.from <= vIdx).at(-1) ?? null : null;
   const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.theme_units - a.theme_units) : [];
 
   return (
@@ -542,12 +557,28 @@ export default function WikiGraph3D() {
         <aside className="w3d-card" aria-live="polite">
           <p className="w3d-type">{sel.hub ? '테마' : KIND_LABEL[sel.kind]} · {versions[sel.revealed]?.id}부터</p>
           <h2>{nameOf(sel)}</h2>
+          {snapshots && (snap ? (
+            <section className="w3d-snap">
+              <p className="w3d-snap-head">
+                <span className="tag neutral" title="위키 글을 바탕으로 기계가 쓰고, 다른 회사 모델이 근거와 대조했습니다. 사람은 아직 확인하지 않았습니다.">미검수</span>
+                {' '}{versions[snap.from]?.id} 때의 위키 기준
+              </p>
+              {snap.summary && <p className="w3d-summary">{snap.summary}</p>}
+              <ul className="w3d-points">{snap.bullets.map((b, i) => <li key={i}>{b}</li>)}</ul>
+              <p className="w3d-src">
+                출처: {snap.sources.map((x, i) => (
+                  <span key={x.revision}>{i > 0 && ', '}<a href={revisionUrl(x.page, x.revision)} target="_blank" rel="noreferrer">{x.page}</a> ({x.date} 판)</span>
+                ))}. Fandom 원신 위키(CC BY-SA 3.0)의 글을 요약·번역했습니다.
+              </p>
+            </section>
+          ) : <p className="w3d-meta w3d-snap-none">이 버전까지의 요약이 아직 없습니다.</p>)}
           <p className="w3d-meta">{sel.hub ? `이야기 ${sel.units}개` : `${themeName}${withParticle(themeName)} 함께 나오는 이야기 ${sel.theme_units}개 · 전체 ${sel.units}개`}</p>
           {neighbours.length > 0 && (
             <ul className="w3d-near">
               {neighbours.map((n) => <li key={n.id}><button type="button" onClick={() => setSelected(n.id)}>{nameOf(n)}</button></li>)}
             </ul>
           )}
+          <ReportBox key={sel.id} nodeId={sel.id} version={versions[vIdx]?.id ?? ''} />
           <button type="button" className="w3d-close" aria-label="닫기" onClick={() => setSelected(null)}>×</button>
         </aside>
       )}

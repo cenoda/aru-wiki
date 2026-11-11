@@ -90,3 +90,25 @@ await write('theme-khaenriah.json', {
   })),
   links: [...kept].map((e) => ({ source: e.a, target: e.b, shared: e.shared, revealed: e.revealed })),
 });
+
+// ---------- version snapshots of the theme's pages (scripts/theme/snapshots.mjs) ----------
+// Per page, the snapshots in version order. Only points that passed the quote check and the second
+// model's check are kept. All are unreviewed (written from wiki prose; shown with that badge,
+// decided 2026-11-11). Sources keep the page and revision for the CC BY-SA notice.
+const snaps = (await read('snapshots-khaenriah.json')).snapshots;
+const byPage = {};
+for (const s of snaps) {
+  const pts = s.points.filter((p) => p.status === 'accepted');
+  const summary = pts.find((p) => p.role === 'summary');
+  const bullets = pts.filter((p) => p.role === 'point');
+  if (!bullets.length) continue;
+  const used = [...new Set(pts.map((p) => p.source.revision))];
+  (byPage[s.node] ??= []).push({
+    from: order.get(s.from_version),
+    summary: summary?.text ?? null,
+    bullets: bullets.map((p) => p.text),
+    sources: s.input.filter((i) => used.includes(i.revision)).map((i) => ({ page: i.page, revision: i.revision, date: i.timestamp.slice(0, 10) })),
+  });
+}
+for (const list of Object.values(byPage)) list.sort((a, b) => a.from - b.from);
+await write('snapshots-khaenriah.json', byPage);

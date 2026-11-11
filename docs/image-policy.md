@@ -42,7 +42,7 @@
 - 중심 인물은 `scripts/images/card-figures.mjs`가 정한다. 전설·월드 임무는 정보 상자 `character`, 마신 임무 중간 장·여정 장은 모든 하위 임무에 나오는 플레이 가능 캐릭터가 한 명뿐일 때만. 사람이 고르면 `data/manual/card-figures.json`.
 - 아이콘 이름은 내부 이름이라 이름으로만 짝짓는다(추출 텍스트인 Enka `loc.json`은 쓰지 않는다). 확인되지 않은 진(Jean)·한운(Xianyun)은 아이콘 없이 둔다. 사람이 확인하면 `data/manual/enka-icons.json`에 적는다.
 - 공개 버전은 Fandom 덤프 캐릭터 정보 상자의 `releaseDate`에서 계산하고, 버전 선택기가 그보다 앞이면 아이콘 대신 지역 문장을 보인다. 데이터 범위(7.1) 밖이면 받지 않는다.
-- 이미지가 없는 카드는 자체 제작 지역 문장(`src/emblems.tsx`).
+- 이미지가 없는 카드는 자체 제작 지역 문장(`src/emblems.tsx`, 미리보기 `?view=emblems`). 지역마다 떠올리기 쉬운 건물·지형의 실루엣이다(2026-11-11 사용자 확인).
 
 ## 5. 변경 이력
 

@@ -22,4 +22,4 @@ LLM 생성 여부로 라이선스를 일괄 결정하지 않습니다. 사실만
 
 `public/img/characters/`의 캐릭터 아이콘은 © All rights reserved by COGNOSPHERE. Other properties belong to their respective owners. 프로젝트의 CC BY-SA 적용 대상이 아니며, 다시 배포할 권리를 드리지 않습니다. 파일마다 출처 URL·받은 날짜·공개 버전·가공 여부를 `data/generated/image-files.json`에 기록합니다(`scripts/images/fetch-enka-icons.mjs`).
 
-`src/emblems.tsx`의 지역 문장은 이 프로젝트가 단순한 도형으로 직접 그린 것으로, 코드와 같이 MPL-2.0을 따릅니다.
+`src/emblems.tsx`의 지역 문장(풍차, 돌기둥 봉우리, 신사 문, 큰 나무, 저울, 화산, 바다 위 달, 둥근 지붕 궁전, 나침반)은 이 프로젝트가 일반적인 실루엣으로 직접 그린 것으로, 코드와 같이 MPL-2.0을 따릅니다.

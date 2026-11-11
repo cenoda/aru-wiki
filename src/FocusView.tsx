@@ -5,12 +5,13 @@ import {
 import '@xyflow/react/dist/style.css';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
-  actGraph, displayName, isUnit, itemById, type MapItem, type Quest, questEdges, recommendedGraph, type RecommendedEdge, TIER_RANK,
+  actGraph, displayName, figureOf, IMAGE_NOTICE, isUnit, itemById, type MapItem, type Quest, questEdges, recommendedGraph, type RecommendedEdge, TIER_RANK,
   type QuestType, questById, quests, REGION_KO, regionEntry, TYPE_LABEL, type Unit, unitById, UNIT_LABEL, unitOfQuest, units,
   type Version, versionOrder, versions,
 } from './data';
 import { recommendationGist, recommendationLead } from './recText';
 import { ReportBox } from './ReportBox';
+import { Emblem } from './emblems';
 import ELK, { type ElkExtendedEdge } from 'elkjs/lib/elk.bundled.js';
 import './site.css';
 import './focus.css';
@@ -82,6 +83,9 @@ function eraOf(v: Version) {
 }
 const CARD_W = 236, CARD_H = 40, TALL_H = 56, STEP_X = 276, STEP_Y = 54, HEAD = 64, ERA_GAP = 90, VER_GAP = 30;
 const LAYER_GAP = 88;
+/** A version note needs this many free card slots, and uses at most this many. */
+const NOTE_MIN_SLOTS = 1, NOTE_MAX_SLOTS = 4;
+type VersionNote = { version: Version; x: number; y: number; h: number };
 const LAYER = CARD_W + LAYER_GAP;
 /** English-only titles need the whole card, on two lines when they are long. */
 const cardHeight = (q: Quest) => (!q.names.ko && displayName(q).length > 22 ? TALL_H : CARD_H);
@@ -452,12 +456,14 @@ const atlas = (() => {
   }
   const pos = new Map<string, { x: number; y: number }>();
   const labels: { id: string; text: string; x: number; y: number; kind: 'era' | 'ver' }[] = [];
+  const notes: VersionNote[] = [];
   const byTopo = (a: Quest, b: Quest) => topoIndex.get(a.id)! - topoIndex.get(b.id)!;
   let y = 0;
   for (const era of eras) {
     labels.push({ id: `era-${era.name}`, text: era.name, x: -230, y: y + HEAD - 10, kind: 'era' });
     // x of every act in this era
     const xOf = new Map<string, number>();
+    const colOf = new Map<string, [number, number]>(); // version → x range of its column
     let x = 0;
     for (const v of era.versions) {
       labels.push({ id: `ver-${v.id}`, text: v.id, x, y, kind: 'ver' });
@@ -468,6 +474,7 @@ const atlas = (() => {
         run.forEach((a, i) => xOf.set(a.id, x + i * STEP_X));
         width = Math.max(width, run.length);
       }
+      colOf.set(v.id, [x, x + width * STEP_X]);
       x += width * STEP_X + VER_GAP;
     }
     // pack the era's storylines into slots: Archon first, then by where they start
@@ -479,15 +486,36 @@ const atlas = (() => {
       archon: run[0].quest_type === 'ARCHON',
     })).sort((a, b) => Number(b.archon) - Number(a.archon) || a.start - b.start);
     const slotEnds: number[] = [];
+    const taken: [number, number][][] = []; // per slot: x spans of cards and the track between them
     for (const s of spans) {
       let slot = slotEnds.findIndex((end) => end + 30 <= s.start);
       if (slot === -1) slot = slotEnds.length;
       slotEnds[slot] = s.end;
+      (taken[slot] ??= []).push([s.start, s.end]);
       for (const a of s.run) pos.set(a.id, { x: xOf.get(a.id)!, y: y + HEAD + slot * STEP_Y });
+    }
+    // Version notes go into empty space: the first card-wide column of the version with a free
+    // run of slots (one extra slot reaches into the gap below the era row).
+    const rows = slotEnds.length + 1;
+    const free = (x0: number, slot: number) => !(taken[slot] ?? []).some(([a, b]) => a < x0 + CARD_W + 12 && b > x0 - 12);
+    for (const v of era.versions) {
+      const [x0, x1] = colOf.get(v.id)!;
+      // the longest free run wins (up to the cap); then the leftmost, then the highest
+      let best: { x: number; slot: number; n: number } | null = null;
+      for (let cx = x0; cx + CARD_W <= x1; cx += STEP_X) {
+        for (let slot = 0; slot < rows; slot++) {
+          let n = 0;
+          while (slot + n < rows && free(cx, slot + n)) n++;
+          n = Math.min(n, NOTE_MAX_SLOTS);
+          if (n >= NOTE_MIN_SLOTS && n > (best?.n ?? 0)) best = { x: cx, slot, n };
+          slot += n;
+        }
+      }
+      if (best) notes.push({ version: v, x: best.x, y: y + HEAD + best.slot * STEP_Y, h: best.n * STEP_Y - (STEP_Y - CARD_H) });
     }
     y += HEAD + slotEnds.length * STEP_Y + ERA_GAP;
   }
-  return { pos, labels };
+  return { pos, labels, notes };
 })();
 
 type EdgeKind = 'track' | 'cross' | 'rec' | 'req' | 'region' | 'series' | 'more';
@@ -750,7 +778,7 @@ function Atlas() {
         const u = unitById.get(id);
         if (u) return { ...base, type: 'unit', data: { unit: u, state } };
         const a = questById.get(id)!;
-        return { ...base, type: 'act', data: { quest: a, state, showVersion: !!a.names.ko, tall: at.h > CARD_H, opens: 0 } };
+        return { ...base, type: 'act', data: { quest: a, state, showVersion: !!a.names.ko, tall: at.h > CARD_H, opens: 0, vIdx } };
       }));
       return;
     }
@@ -758,14 +786,20 @@ function Atlas() {
       id: a.id, type: 'act', width: CARD_W, height: CARD_H,
       position: atlas.pos.get(a.id)!,
       data: {
-        quest: a, state: '', showVersion: false, tall: false,
+        quest: a, state: '', showVersion: false, tall: false, vIdx,
         opens: (attachedTo.get(a.id) ?? []).filter(visible).length, entry: entryActs.get(a.id),
       },
     }));
+    const noteNodes: Node[] = atlas.notes
+      .filter((n) => n.version.order <= vIdx)
+      .map((n) => ({
+        id: `note-${n.version.id}`, type: 'note', position: { x: n.x, y: n.y }, width: CARD_W, height: n.h,
+        selectable: false, data: { ...noteText(n.version), h: n.h },
+      }));
     const labelNodes: Node[] = atlas.labels
       .filter((l) => l.kind === 'era' || versionOrder.get(l.text)! <= vIdx)
       .map((l) => ({ id: l.id, type: 'label', position: { x: l.x, y: l.y }, selectable: false, data: l }));
-    setNodes([...labelNodes, ...actNodes]);
+    setNodes([...labelNodes, ...noteNodes, ...actNodes]);
   }, [visible, focus, vIdx, branch, branchPos, inBranch]);
 
   // Atlas: storyline track only. Branch: every link inside the branch.
@@ -1127,6 +1161,8 @@ function Atlas() {
           />
         </div>
 
+        <p className="img-notice">인물 아이콘: {IMAGE_NOTICE} 프로젝트의 CC BY-SA 적용 대상이 아닙니다.</p>
+
         {sel && neighbours && (
           <aside className={`info ${typeClass(sel)}`}>
             <div className="tags">
@@ -1138,6 +1174,7 @@ function Atlas() {
             </div>
             <div className="name">{displayName(sel)}</div>
             {sel.names.ko && <div className="en">{sel.names.en.replace(/ \(Act\)$/, '')}</div>}
+            {!isUnit(sel) && <FigureCredit actId={sel.id} vIdx={vIdx} />}
             {isUnit(sel) ? (
               <UnitLinks unit={sel} before={neighbours.seriesBefore} after={neighbours.seriesAfter} visible={visible} go={select} />
             ) : (
@@ -1411,10 +1448,35 @@ function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName:
 }
 
 // ---------- node renderers ----------
-type ActData = { quest: Quest; state: '' | 'focus'; showVersion: boolean; tall: boolean; opens: number; entry?: string };
+type ActData = { quest: Quest; state: '' | 'focus'; showVersion: boolean; tall: boolean; opens: number; entry?: string; vIdx: number };
+/** The icon is shown from its release version on (image policy 2); before that, the emblem. */
+const shownIcon = (actId: string, vIdx: number) => {
+  const f = figureOf.get(actId);
+  return f?.icon && vIdx >= f.icon.release ? { ...f.icon, name: f.ko ?? f.character } : null;
+};
+function CardFigure({ quest, vIdx }: { quest: Quest; vIdx: number }) {
+  const icon = shownIcon(quest.id, vIdx);
+  if (icon) return <span className="fig icon-fig"><img src={icon.src} alt={icon.name} loading="lazy" draggable={false} /></span>;
+  return <span className="fig emblem-fig"><Emblem region={quest.region} /></span>;
+}
+/** Who the card shows, where the file came from, and whose it is (image policy 2·3). */
+function FigureCredit({ actId, vIdx }: { actId: string; vIdx: number }) {
+  const icon = shownIcon(actId, vIdx);
+  if (!icon) return null;
+  return (
+    <p className="fig-credit">
+      <img src={icon.src} alt="" width={36} height={36} />
+      <span>
+        <b>{icon.name}</b> · 카드 이미지 출처 <a href={icon.source_url} target="_blank" rel="noreferrer">Enka.Network</a> ({icon.fetched} 받음, {icon.release_version} 공개)
+        <small>{IMAGE_NOTICE} 프로젝트의 CC BY-SA 적용 대상이 아닙니다.</small>
+      </span>
+    </p>
+  );
+}
 const ActNode = memo(({ data }: NodeProps<Node<ActData>>) => (
-  <div className={`card-node ${typeClass(data.quest)} ${data.state}${data.tall ? ' tall' : ''}`} title={data.quest.names.ko ? `${data.quest.names.ko} (${data.quest.names.en})` : displayName(data.quest)}>
+  <div className={`card-node act ${typeClass(data.quest)} ${data.state}${data.tall ? ' tall' : ''}`} title={data.quest.names.ko ? `${data.quest.names.ko} (${data.quest.names.en})` : displayName(data.quest)}>
     <Handle type="target" position={Position.Left} />
+    <CardFigure quest={data.quest} vIdx={data.vIdx} />
     <span className="name">{displayName(data.quest)}</span>
     {data.showVersion && <span className="ver">{data.quest.first_version}</span>}
     {/* atlas only: what opens after this act, drawn as a strip under the card */}
@@ -1478,4 +1540,28 @@ function roundedPath(pts: XY[], r = 10) {
 const edgeTypes = { route: RouteEdge };
 type LabelData = { text: string; kind: 'era' | 'ver' };
 const LabelNode = memo(({ data }: NodeProps<Node<LabelData>>) => <div className={`atlas-label ${data.kind}`}>{data.text}</div>);
-const nodeTypes = { act: ActNode, unit: UnitNode, more: MoreNode, label: LabelNode };
+type NoteData = { title: string; rows: [string, string][]; h: number };
+/** What a version brought, for the empty space in its column: title, new areas, Archon acts. */
+function noteText(v: Version): Omit<NoteData, 'h'> {
+  // a whole region first ("이나즈마"), then the areas inside it
+  const regions = new Set(Object.values(REGION_KO));
+  const areas = [...new Set((v.areas ?? []).map((a) => a.ko ?? a.en.replace(/\/.*$/, '').replace(/ \(.*\)$/, '')))]
+    .sort((a, b) => Number(regions.has(b)) - Number(regions.has(a)));
+  const newActs = acts.filter((a) => a.first_version === v.id);
+  const archon = newActs.filter((a) => a.quest_type === 'ARCHON').map(displayName);
+  const counts = (['STORY', 'WORLD', 'EVENT'] as const)
+    .map((t) => [TYPE_LABEL[t], newActs.filter((a) => a.quest_type === t).length] as const)
+    .filter(([, n]) => n > 0).map(([t, n]) => `${t} ${n}`).join(' · ');
+  const rows: [string, string][] = [];
+  if (areas.length) rows.push(['새 지역', areas.join(' · ')]);
+  if (archon.length) rows.push(['마신 임무', archon.join(' · ')]);
+  if (counts) rows.push(['새 막', counts]);
+  return { title: v.title_ko ?? v.title, rows };
+}
+const NoteNode = memo(({ data }: NodeProps<Node<NoteData>>) => (
+  <div className={`ver-note${data.h <= CARD_H ? ' compact' : data.h > 2 * STEP_Y ? ' roomy' : ''}`} style={{ height: data.h }}>
+    <div className="vn-title">{data.title}</div>
+    {data.rows.map(([k, val]) => <div key={k} className="vn-row"><b>{k}</b><span>{val}</span></div>)}
+  </div>
+));
+const nodeTypes = { act: ActNode, unit: UnitNode, more: MoreNode, label: LabelNode, note: NoteNode };

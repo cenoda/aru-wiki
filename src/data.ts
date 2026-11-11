@@ -3,6 +3,8 @@ import questsJson from '../data/generated/quests.json';
 import versionsJson from '../data/generated/versions.json';
 import recommendedJson from '../data/generated/recommended-edges.json';
 import unitsJson from '../data/generated/quest-units.json';
+import figuresJson from '../data/generated/card-figures.json';
+import imageFilesJson from '../data/generated/image-files.json';
 
 export type QuestType = 'ARCHON' | 'STORY' | 'WORLD' | 'EVENT';
 
@@ -27,7 +29,13 @@ export interface QuestEdge {
   revealed_version: string | null;
 }
 
-export interface Version { id: string; number: string; order: number; released: string; title: string }
+export interface Version {
+  id: string; number: string; order: number; released: string; title: string;
+  /** official Korean version title (Fandom Version/X.Y page) */
+  title_ko?: string;
+  /** areas the version opens (Fandom Version/X.Y page); ko from ko-names.json */
+  areas?: { en: string; ko?: string }[];
+}
 
 export const versions = versionsJson as Version[];
 export const quests = questsJson as Quest[];
@@ -183,3 +191,27 @@ export function recommendedGraph() {
   return [...out.values()];
 }
 interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string; already_required?: boolean; review: 'unreviewed' | 'verified' }
+
+// ---------- card figures and their images (docs/image-policy.md) ----------
+
+export const IMAGE_NOTICE = '© All rights reserved by COGNOSPHERE. Other properties belong to their respective owners.';
+export interface Figure {
+  character: string;
+  ko: string | null;
+  /** an icon exists for the character; shown from `release` (version order) on */
+  icon?: { src: string; source_url: string; fetched: string; release: number; release_version: string };
+}
+interface ImageFile { file: string; character: string; source_url: string; fetched: string; release_version: string }
+const figuresData = figuresJson as { acts: Record<string, { character: string }>; characters: Record<string, { ko: string | null }> };
+const iconOf = new Map((imageFilesJson as { files: ImageFile[] }).files.map((f) => [f.character, f]));
+/** act id → the character its card shows (scripts/images/card-figures.mjs) */
+export const figureOf = new Map(Object.entries(figuresData.acts).map(([act, { character }]): [string, Figure] => {
+  const f = iconOf.get(character);
+  const release = f ? versionOrder.get(f.release_version) : undefined;
+  return [act, {
+    character, ko: figuresData.characters[character]?.ko ?? null,
+    icon: f && release !== undefined ? {
+      src: `${import.meta.env.BASE_URL}${f.file}`, source_url: f.source_url, fetched: f.fetched, release, release_version: f.release_version,
+    } : undefined,
+  }];
+}));

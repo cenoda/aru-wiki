@@ -17,3 +17,9 @@ LLM 생성 여부로 라이선스를 일괄 결정하지 않습니다. 사실만
 『원신(Genshin Impact)』의 게임 IP(세계관, 명칭, 대사, 이미지 등)에 관한 권리는 COGNOSPHERE Pte., Ltd. (HoYoverse / miHoYo) 등 해당 권리자에게 있으며, 위 라이선스는 이 권리에 대해 어떤 허락도 부여하지 않습니다. 게임 이미지·대사·서적 원문은 Fandom 문서나 덤프에 포함되어 있어도 프로젝트의 CC 라이선스 적용 대상에서 제외합니다. 촬영자·편집자·팬아트 제작자 등의 별도 권리와 사용 조건도 각각 확인해야 합니다.
 
 본 프로젝트는 HoYoverse와 제휴하거나 승인받지 않은 비영리 팬 프로젝트입니다. 권리 관련 문의와 수정·삭제 요청은 [contact@aru.wiki](mailto:contact@aru.wiki)로 받습니다. 이미지 사용 방식과 근거는 [이미지 방침](docs/image-policy.md)과 [권리·운영 위험 검토](docs/rights-risk.md)에 있습니다.
+
+## 3. 이 리포지토리에 든 게임 이미지
+
+`public/img/characters/`의 캐릭터 아이콘은 © All rights reserved by COGNOSPHERE. Other properties belong to their respective owners. 프로젝트의 CC BY-SA 적용 대상이 아니며, 다시 배포할 권리를 드리지 않습니다. 파일마다 출처 URL·받은 날짜·공개 버전·가공 여부를 `data/generated/image-files.json`에 기록합니다(`scripts/images/fetch-enka-icons.mjs`).
+
+`src/emblems.tsx`의 지역 문장은 이 프로젝트가 단순한 도형으로 직접 그린 것으로, 코드와 같이 MPL-2.0을 따릅니다.

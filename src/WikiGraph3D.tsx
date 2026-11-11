@@ -6,14 +6,16 @@
 // above or below it, so the chart reads like a map yet still has depth when turned. Height follows
 // the version a page was revealed in: earlier pages sit a little below the plane, later ones above.
 // Lines keep a fixed pixel width at any zoom; brightness and width follow how many stories two
-// pages share. Names show for the brightest stars, the selection and whatever is close to the camera.
+// pages share, and distance fog dims what is far from the camera. The busiest pages are named in
+// full, the rest faintly where there is room. Stars, names and lines ease between brightness levels.
+// Night sky in the dark site theme, a pale day sky in the light one.
 // The scene renders only while the reader interacts, and the version picker hides later pages.
 import ForceGraph3D, { type ForceGraph3DInstance } from '3d-force-graph';
 import { forceX, forceY, forceZ } from 'd3-force-3d';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  AdditiveBlending, BufferGeometry, CanvasTexture, Color, Group, LineBasicMaterial, LineLoop, Mesh, MeshBasicMaterial,
-  PerspectiveCamera, SphereGeometry, Sprite, SpriteMaterial, Vector2, Vector3,
+  AdditiveBlending, BufferGeometry, CanvasTexture, Color, Fog, Group, LineBasicMaterial, LineLoop, NormalBlending,
+  type PerspectiveCamera, Sprite, SpriteMaterial, Vector2, Vector3,
 } from 'three';
 import { Line2 } from 'three/examples/jsm/lines/Line2.js';
 import { LineGeometry } from 'three/examples/jsm/lines/LineGeometry.js';
@@ -34,11 +36,22 @@ const idOf = (end: string | PageNode) => (typeof end === 'string' ? end : end.id
 const nameOf = (n: PageNode) => n.ko ?? n.id;
 const KIND_LABEL = { character: '인물', lore: '로어' } as const;
 
-// Night-sky palette: this view is always dark, whatever the site theme (the stars need it).
-const SKY = {
+interface Palette {
+  hub: string; character: string; lore: string; line: string; lineHot: string; label: string; ecliptic: string;
+  /** fog colour: the middle of the stage background */
+  sky: string;
+  night: boolean;
+}
+const NIGHT: Palette = {
   hub: '#f2a074', character: '#c4a6f5', lore: '#e3cd9c', line: '#9fb2e0', lineHot: '#f3d9a4',
-  label: '#ece5d8', ecliptic: '#7f93c8',
+  label: '#ece5d8', ecliptic: '#7f93c8', sky: '#151a37', night: true,
 };
+const DAY: Palette = {
+  hub: '#cf5f33', character: '#7b52c7', lore: '#a07a34', line: '#56648f', lineHot: '#b8792a',
+  label: '#262a36', ecliptic: '#7a87ad', sky: '#eef1f8', night: false,
+};
+const prefersDark = () => matchMedia('(prefers-color-scheme: dark)').matches;
+
 const LABEL_FONT = '"IBM Plex Sans KR"';
 /** The site font, then the system Korean fonts, so a fallback is at least one whole font. */
 const LABEL_FONT_STACK = `${LABEL_FONT}, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif`;
@@ -51,31 +64,66 @@ const NAME_DISTANCE = 160;
 let maxShared = 2;
 const strength = (l: PageLink) => Math.log(l.shared / 2 + 1) / Math.log(maxShared / 2 + 1);
 
-let glowTexture: CanvasTexture | null = null;
-/** Soft round glow, drawn once. */
-function glow() {
-  if (glowTexture) return glowTexture;
-  const c = document.createElement('canvas');
-  c.width = c.height = 64;
+const starTextures = new Map<string, CanvasTexture>();
+/**
+ * A star drawn on a canvas instead of a lit sphere: a crisp round core inside a soft halo.
+ * The theme page also gets four thin rays. Night stars have a white-hot centre; day stars an ink rim.
+ */
+function starTexture(color: string, night: boolean, rays: boolean) {
+  const key = `${color}|${night}|${rays}`;
+  const cached = starTextures.get(key);
+  if (cached) return cached;
+  const S = 128, c = document.createElement('canvas');
+  c.width = c.height = S;
   const ctx = c.getContext('2d')!;
-  const g = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
-  g.addColorStop(0, 'rgba(255,255,255,1)');
-  g.addColorStop(0.18, 'rgba(255,255,255,.55)');
-  g.addColorStop(0.5, 'rgba(255,255,255,.12)');
-  g.addColorStop(1, 'rgba(255,255,255,0)');
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, 64, 64);
-  return (glowTexture = new CanvasTexture(c));
+  const m = S / 2;
+  const rgb = new Color(color);
+  const rgba = (a: number) => `rgba(${Math.round(rgb.r * 255)},${Math.round(rgb.g * 255)},${Math.round(rgb.b * 255)},${a})`;
+  const halo = ctx.createRadialGradient(m, m, 0, m, m, m);
+  halo.addColorStop(0, rgba(night ? 0.55 : 0.35));
+  halo.addColorStop(0.25, rgba(night ? 0.22 : 0.14));
+  halo.addColorStop(0.6, rgba(night ? 0.06 : 0.04));
+  halo.addColorStop(1, rgba(0));
+  ctx.fillStyle = halo;
+  ctx.fillRect(0, 0, S, S);
+  if (rays) {
+    for (const [dx, dy] of [[1, 0], [0, 1]]) {
+      const g = ctx.createLinearGradient(m - dx * m, m - dy * m, m + dx * m, m + dy * m);
+      g.addColorStop(0, rgba(0)); g.addColorStop(0.5, rgba(night ? 0.9 : 0.7)); g.addColorStop(1, rgba(0));
+      ctx.fillStyle = g;
+      ctx.fillRect(dx ? 0 : m - 1.5, dy ? 0 : m - 1.5, dx ? S : 3, dy ? S : 3);
+    }
+  }
+  const r = S * 0.13;
+  ctx.beginPath();
+  ctx.arc(m, m, r, 0, Math.PI * 2);
+  if (night) {
+    const core = ctx.createRadialGradient(m, m, 0, m, m, r);
+    core.addColorStop(0, '#ffffff'); core.addColorStop(0.45, color); core.addColorStop(1, color);
+    ctx.fillStyle = core;
+    ctx.fill();
+  } else {
+    ctx.fillStyle = color;
+    ctx.fill();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'rgba(30,34,50,.55)';
+    ctx.stroke();
+  }
+  const tex = new CanvasTexture(c);
+  starTextures.set(key, tex);
+  return tex;
 }
 
-interface StarParts { core: MeshBasicMaterial; halo: SpriteMaterial; label: SpriteText; named: boolean; target: number }
+/** Each star, name and line eases toward a target brightness (and colour, for lines). */
+interface StarParts { star: SpriteMaterial; starTarget: number; label: SpriteText; named: boolean; target: number }
+interface LineParts { mat: LineMaterial; target: number; color: Color }
 
 export default function WikiGraph3D() {
   const host = useRef<HTMLDivElement>(null);
   const graph = useRef<ForceGraph3DInstance<PageNode, PageLink> | null>(null);
   const wake = useRef<() => void>(() => {});
   const stars = useRef(new Map<string, StarParts>());
-  const lines = useRef(new Map<PageLink, LineMaterial>());
+  const lines = useRef(new Map<PageLink, LineParts>());
   const relabel = useRef<() => void>(() => {});
   /** Ease every name toward its target opacity, rendering until they arrive. */
   const fade = useRef<() => void>(() => {});
@@ -84,6 +132,14 @@ export default function WikiGraph3D() {
   const [vIdx, setVIdx] = useState(versions.length - 1);
   const [selected, setSelected] = useState<string | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
+  const [night, setNight] = useState(prefersDark);
+  useEffect(() => {
+    const mq = matchMedia('(prefers-color-scheme: dark)');
+    const on = () => setNight(mq.matches);
+    mq.addEventListener('change', on);
+    return () => mq.removeEventListener('change', on);
+  }, []);
+  const sky = night ? NIGHT : DAY;
 
   useEffect(() => {
     fetch(themeUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then(async (t: Theme) => {
@@ -141,35 +197,38 @@ export default function WikiGraph3D() {
         const named = index.named.has(n.id);
         const r = n.hub ? 3.2 : 0.9 + Math.sqrt(n.units) / 5;
         const group = new Group();
-        const core = new MeshBasicMaterial({ color: n.hub ? SKY.hub : SKY[n.kind], transparent: true });
-        group.add(new Mesh(new SphereGeometry(r, 12, 8), core));
-        const halo = new SpriteMaterial({ map: glow(), color: n.hub ? SKY.hub : SKY[n.kind], blending: AdditiveBlending, depthWrite: false, transparent: true, opacity: 0.8 });
-        const sprite = new Sprite(halo);
-        sprite.scale.setScalar(r * (n.hub ? 9 : 7));
+        const star = new SpriteMaterial({
+          map: starTexture(n.hub ? sky.hub : sky[n.kind], sky.night, n.hub),
+          blending: sky.night ? AdditiveBlending : NormalBlending, depthWrite: false, transparent: true,
+        });
+        const sprite = new Sprite(star);
+        sprite.scale.setScalar(r * (n.hub ? 11 : 8.5));
         group.add(sprite);
         // names keep one size on screen at any zoom (sizeAttenuation off): readable far away,
         // never huge up close, and zooming in only spreads them apart
         const k = Math.min(1, (el.clientWidth / Math.max(1, el.clientHeight)) * 1.3); // portrait: smaller
-        const label = new SpriteText(nameOf(n), (n.hub ? 0.042 : named ? 0.03 : 0.025) * k, SKY.label);
+        const label = new SpriteText(nameOf(n), (n.hub ? 0.042 : named ? 0.03 : 0.024) * k, sky.label);
         label.fontFace = LABEL_FONT_STACK;
         label.fontWeight = n.hub ? '600' : '500'; // index.html loads 400–600
         // Hangul reaches past the font-size box; without room the tops and bottoms are cut off
         label.padding = [label.textHeight * 0.15, label.textHeight * 0.3];
         label.material.depthWrite = false;
         label.material.sizeAttenuation = false;
+        label.material.fog = false; // names keep their own brightness levels
         label.center.set(0.5, -0.1); // sit just above the star
         label.position.y = r;
         group.add(label);
         label.material.opacity = 0;
         label.visible = false;
-        stars.current.set(n.id, { core, halo, label, named, target: 0 });
+        stars.current.set(n.id, { star, starTarget: 1, label, named, target: 0 });
         return group;
       })
       .linkThreeObject((l) => {
         const w = strength(l);
-        const mat = new LineMaterial({ color: SKY.line, linewidth: 0.6 + 1.6 * w, transparent: true, opacity: 0.15 + 0.55 * w, depthWrite: false });
+        const mat = new LineMaterial({ color: sky.line, linewidth: 0.6 + 1.6 * w, transparent: true, opacity: 0, depthWrite: false });
+        mat.fog = true;
         mat.resolution.copy(resolution);
-        lines.current.set(l, mat);
+        lines.current.set(l, { mat, target: 0.15 + 0.55 * w, color: new Color(sky.line) });
         const line = new Line2(new LineGeometry(), mat);
         line.raycast = () => {}; // lines are not clickable
         return line;
@@ -203,7 +262,7 @@ export default function WikiGraph3D() {
       for (const k of [0.35, 0.7, 1.05]) {
         const pts: Vector3[] = [];
         for (let i = 0; i < 128; i++) { const a = (i / 128) * Math.PI * 2; pts.push(new Vector3(Math.cos(a) * r90 * k, 0, Math.sin(a) * r90 * k)); }
-        const ring = new LineLoop(new BufferGeometry().setFromPoints(pts), new LineBasicMaterial({ color: SKY.ecliptic, transparent: true, opacity: k > 1 ? 0.2 : 0.1, depthWrite: false }));
+        const ring = new LineLoop(new BufferGeometry().setFromPoints(pts), new LineBasicMaterial({ color: sky.ecliptic, transparent: true, opacity: (k > 1 ? 0.2 : 0.1) * (sky.night ? 1 : 1.6), depthWrite: false }));
         ring.raycast = () => {};
         g.scene().add(ring);
       }
@@ -214,9 +273,12 @@ export default function WikiGraph3D() {
       const dist = ((aspect < 1 ? r90 * 0.7 : r90) + 16) / (half * Math.min(1, aspect)) * 0.95;
       const tilt = (32 * Math.PI) / 180; // look down on the plane
       g.cameraPosition({ x: 0, y: Math.sin(tilt) * dist, z: Math.cos(tilt) * dist }, { x: 0, y: 0, z: 0 }, 0);
-      relabel.current();
+      onMove(); // fog distances and names for the first view
       wakeUp();
     };
+    // distance fog toward the sky colour: far stars and lines recede (distances follow the camera)
+    const fog = new Fog(sky.sky, 100, 400);
+    g.scene().fog = fog;
 
     // ---------- render only while the reader is interacting ----------
     let idle: number | undefined;
@@ -233,11 +295,21 @@ export default function WikiGraph3D() {
       const dt = last ? Math.min(64, t - last) : 16;
       last = t;
       let moving = false;
+      const k = Math.min(1, dt / 90); // ~0.2 s to settle
+      const ease = (m: { opacity: number }, target: number) => {
+        const d = target - m.opacity;
+        if (Math.abs(d) < 0.01) m.opacity = target; else { m.opacity += d * k; moving = true; }
+      };
       for (const s of stars.current.values()) {
-        const m = s.label.material, d = s.target - m.opacity;
-        if (Math.abs(d) < 0.01) m.opacity = s.target;
-        else { m.opacity += d * Math.min(1, dt / 90); moving = true; } // ~0.2 s to settle
-        s.label.visible = m.opacity > 0.005;
+        ease(s.label.material, s.target);
+        s.label.visible = s.label.material.opacity > 0.005;
+        ease(s.star, s.starTarget);
+      }
+      for (const l of lines.current.values()) {
+        ease(l.mat, l.target);
+        const c = l.mat.color, t = l.color;
+        if (Math.abs(c.r - t.r) + Math.abs(c.g - t.g) + Math.abs(c.b - t.b) < 0.01) c.copy(t);
+        else { c.lerp(t, k); moving = true; }
       }
       if (moving) { wakeUp(); fading = requestAnimationFrame(step); } else { fading = 0; last = 0; }
     };
@@ -245,12 +317,17 @@ export default function WikiGraph3D() {
     const events = ['pointerdown', 'pointermove', 'wheel', 'touchstart'] as const;
     for (const ev of events) el.addEventListener(ev, wakeUp, { passive: true });
     const controls = g.controls() as { addEventListener(type: string, fn: () => void): void; removeEventListener(type: string, fn: () => void): void };
-    const onMove = () => relabel.current();
+    const onMove = () => {
+      const d = g.camera().position.length();
+      fog.near = d * 0.7;
+      fog.far = d * 2.3;
+      relabel.current();
+    };
     controls.addEventListener('change', onMove);
     const ro = new ResizeObserver(() => {
       g.width(el.clientWidth).height(el.clientHeight);
       resolution.set(el.clientWidth, el.clientHeight);
-      for (const m of lines.current.values()) m.resolution.copy(resolution);
+      for (const l of lines.current.values()) l.mat.resolution.copy(resolution);
       wakeUp();
     });
     ro.observe(el);
@@ -267,7 +344,7 @@ export default function WikiGraph3D() {
       stars.current.clear();
       lines.current.clear();
     };
-  }, [theme, index]);
+  }, [theme, index, sky]);
 
   // ---------- version, selection, brightness and names ----------
   useEffect(() => {
@@ -278,17 +355,13 @@ export default function WikiGraph3D() {
       .linkVisibility((l) => l.revealed <= vIdx && shown(idOf(l.source)) && shown(idOf(l.target)))
       .onNodeClick((n) => setSelected((cur) => (cur === n.id ? null : n.id)))
       .onBackgroundClick(() => setSelected(null));
-    for (const [id, s] of stars.current) {
-      const lit = inFocus(id);
-      s.core.opacity = lit ? 1 : 0.25;
-      s.halo.opacity = lit ? (id === selected ? 1 : 0.8) : 0.12;
-    }
-    const hot = new Color(SKY.lineHot), cool = new Color(SKY.line);
-    for (const [l, m] of lines.current) {
+    for (const [id, s] of stars.current) s.starTarget = inFocus(id) ? 1 : 0.2;
+    const hot = new Color(sky.lineHot), cool = new Color(sky.line);
+    for (const [l, p] of lines.current) {
       const s = idOf(l.source), t = idOf(l.target), w = strength(l);
       const touching = s === selected || t === selected;
-      m.color.copy(touching ? hot : cool);
-      m.opacity = !focus ? 0.15 + 0.55 * w : touching ? 0.55 + 0.45 * w : inFocus(s) && inFocus(t) ? 0.12 + 0.4 * w : 0.04;
+      p.color.copy(touching ? hot : cool);
+      p.target = !focus ? 0.15 + 0.55 * w : touching ? 0.55 + 0.45 * w : inFocus(s) && inFocus(t) ? 0.12 + 0.4 * w : 0.04;
     }
     // names: brightest stars, the selection's neighbourhood, the hovered star, anything close to the camera
     relabel.current = () => {
@@ -306,40 +379,43 @@ export default function WikiGraph3D() {
         if (!s) continue;
         s.target = 0;
         if (!shown(n.id)) continue;
-        const close = camera.position.distanceTo(new Vector3(n.x ?? 0, n.y ?? 0, n.z ?? 0)) < NAME_DISTANCE;
-        const wanted = n.id === hovered || n.id === selected || (focus ? inFocus(n.id) && (s.named || focus.one.has(n.id) || close) : s.named || close);
-        if (wanted) want.push({ n, s, r: rank(n, s) });
+        // every visible page is a candidate; rank decides who gets the room
+        if (focus && !inFocus(n.id) && n.id !== hovered) continue;
+        want.push({ n, s, r: rank(n, s) });
       }
       want.sort((a, b) => a.r - b.r || b.n.units - a.n.units);
       const placed: [number, number, number, number][] = [];
       const v = new Vector3();
-      for (const { n, s } of want) {
+      for (const { n, s, r } of want) {
         v.set(n.x ?? 0, n.y ?? 0, n.z ?? 0).project(camera);
         if (v.z > 1) continue; // behind the camera
         const x = (v.x + 1) / 2 * W, y = (1 - v.y) / 2 * H;
-        const w = s.label.scale.x * p11 * H / 2, h = s.label.scale.y * p11 * H / 2;
-        const box: [number, number, number, number] = [x - w / 2, y - h * 1.3, x + w / 2, y - h * 0.1];
+        const w = s.label.scale.x * p11 * H / 2 * 1.12, h = s.label.scale.y * p11 * H / 2; // a little wide: glyphs overhang
+        const gap = 5; // px between names
+        const box: [number, number, number, number] = [x - w / 2 - gap, y - h * 1.15 - gap, x + w / 2 + gap, y - h * 0.05 + gap];
         if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
         placed.push(box);
-        s.target = inFocus(n.id) ? 1 : 0.35;
+        const close = camera.position.distanceTo(new Vector3(n.x ?? 0, n.y ?? 0, n.z ?? 0)) < NAME_DISTANCE;
+        // full brightness for the busiest pages, the selection and its neighbours; the rest faint
+        s.target = r <= 4 ? 1 : close ? 0.75 : focus?.two.has(n.id) ? 0.5 : 0.42;
       }
       fade.current();
     };
     relabel.current();
     wake.current();
-  }, [shown, vIdx, focus, selected, hovered]);
+  }, [shown, vIdx, focus, selected, hovered, sky]);
 
   const sel = selected && index ? index.byId.get(selected)! : null;
   const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.units - a.units) : [];
 
   return (
-    <div className="site graph-page w3d">
+    <div className={`site graph-page w3d${night ? ' night' : ' day'}`}>
       <div className="wrap"><header>
         <a className="logo" href="./">aru.wiki</a>
         <div className="legend" aria-label="범례">
-          <span style={{ ['--c' as string]: SKY.hub }}><i />테마</span>
-          <span style={{ ['--c' as string]: SKY.character }}><i />인물</span>
-          <span style={{ ['--c' as string]: SKY.lore }}><i />로어</span>
+          <span style={{ ['--c' as string]: sky.hub }}><i />테마</span>
+          <span style={{ ['--c' as string]: sky.character }}><i />인물</span>
+          <span style={{ ['--c' as string]: sky.lore }}><i />로어</span>
           <span className="hint">미리보기 · 함께 나오는 이야기가 많을수록 선이 밝고 굵음 · 면 아래가 이른 버전</span>
         </div>
         <nav><VersionPicker order={vIdx} onChange={setVIdx} /></nav>

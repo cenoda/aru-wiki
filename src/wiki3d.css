@@ -14,6 +14,7 @@
 .site.w3d .w3d-close { position: absolute; top: 6px; right: 6px; width: 32px; height: 32px; background: none; border: 0;
   color: var(--muted); font-size: 1.4rem; cursor: pointer; }
 
-/* night sky: this view stays dark in either site theme */
-.site.w3d .w3d-stage { background: radial-gradient(ellipse 80% 70% at 50% 45%, #1c2140 0%, #10132a 55%, #080a17 100%); }
+/* night sky in the dark site theme, pale day sky in the light one (fog colours in WikiGraph3D match the middle) */
+.site.w3d.night .w3d-stage { background: radial-gradient(ellipse 80% 70% at 50% 45%, #1c2140 0%, #10132a 55%, #080a17 100%); }
+.site.w3d.day .w3d-stage { background: radial-gradient(ellipse 80% 70% at 50% 45%, #f6f8fc 0%, #e9edf6 55%, #dde3ef 100%); }
 .site.w3d .w3d-status { color: #a39d90; }

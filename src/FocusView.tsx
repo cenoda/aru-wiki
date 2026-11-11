@@ -455,18 +455,19 @@ const atlas = (() => {
     eras.at(-1)!.versions.push(v);
   }
   const pos = new Map<string, { x: number; y: number }>();
-  const labels: { id: string; text: string; x: number; y: number; kind: 'era' | 'ver' }[] = [];
+  /** order: the version from which the label shows (an era label shows from its first version) */
+  const labels: { id: string; text: string; x: number; y: number; kind: 'era' | 'ver'; order: number }[] = [];
   const notes: VersionNote[] = [];
   const byTopo = (a: Quest, b: Quest) => topoIndex.get(a.id)! - topoIndex.get(b.id)!;
   let y = 0;
   for (const era of eras) {
-    labels.push({ id: `era-${era.name}`, text: era.name, x: -230, y: y + HEAD - 10, kind: 'era' });
+    labels.push({ id: `era-${era.name}`, text: era.name, x: -230, y: y + HEAD - 10, kind: 'era', order: era.versions[0].order });
     // x of every act in this era
     const xOf = new Map<string, number>();
     const colOf = new Map<string, [number, number]>(); // version → x range of its column
     let x = 0;
     for (const v of era.versions) {
-      labels.push({ id: `ver-${v.id}`, text: v.id, x, y, kind: 'ver' });
+      labels.push({ id: `ver-${v.id}`, text: v.id, x, y, kind: 'ver', order: v.order });
       const inVer = acts.filter((a) => a.first_version === v.id).sort(byTopo);
       const perLine = Map.groupBy(inVer, (a) => lines.lineOf.get(a.id)!);
       let width = 1;
@@ -797,7 +798,7 @@ function Atlas() {
         selectable: false, data: { ...noteText(n.version), h: n.h },
       }));
     const labelNodes: Node[] = atlas.labels
-      .filter((l) => l.kind === 'era' || versionOrder.get(l.text)! <= vIdx)
+      .filter((l) => l.order <= vIdx)
       .map((l) => ({ id: l.id, type: 'label', position: { x: l.x, y: l.y }, selectable: false, data: l }));
     setNodes([...labelNodes, ...noteNodes, ...actNodes]);
   }, [visible, focus, vIdx, branch, branchPos, inBranch]);
@@ -908,7 +909,7 @@ function Atlas() {
     const eras: FlowRect[] = [];
     const vers: FlowRect[] = [];
     for (const l of atlas.labels) {
-      if (l.kind === 'ver' && (versionOrder.get(l.text) ?? Infinity) > vIdx) continue;
+      if (l.order > vIdx) continue;
       const box = l.kind === 'era'
         ? { w: 200, h: 78 }
         : { w: Math.max(36, l.text.length * 13), h: 34 };
@@ -1024,7 +1025,7 @@ function Atlas() {
       };
     }
     const visActs = acts.filter(visible);
-    const visLabels = atlas.labels.filter((l) => l.kind === 'era' || versionOrder.get(l.text)! <= vIdx);
+    const visLabels = atlas.labels.filter((l) => l.order <= vIdx);
     return {
       minX: Math.min(-230, ...visActs.map((a) => atlas.pos.get(a.id)!.x)),
       maxX: Math.max(...visActs.map((a) => atlas.pos.get(a.id)!.x + CARD_W)),
@@ -1037,8 +1038,7 @@ function Atlas() {
   }, [inBranch, branchPos, visible, vIdx]);
 
   // Spring back into view when a reader-initiated pan or zoom drags the graph past the frame margin.
-  const onMoveEnd = useCallback((event: MouseEvent | TouchEvent | null, vp: { x: number; y: number; zoom: number }) => {
-    if (!event) return;
+  const clampView = useCallback((vp: { x: number; y: number; zoom: number }) => {
     const frame = document.querySelector('.stage .flow-frame')?.getBoundingClientRect();
     if (!frame || frame.width < 40 || frame.height < 40) return;
     const z = vp.zoom;
@@ -1055,6 +1055,23 @@ function Atlas() {
       flow.setViewport({ x, y, zoom: z }, { duration: 280 });
     }
   }, [bounds, flow]);
+  const onMoveEnd = useCallback((event: MouseEvent | TouchEvent | null, vp: { x: number; y: number; zoom: number }) => {
+    if (event) clampView(vp);
+  }, [clampView]);
+
+  // A new version choice moves the camera with the map: the whole map is fitted again when it
+  // was in view, otherwise the camera is pulled back inside the cards that are still shown.
+  const lastVIdx = useRef(vIdx);
+  useEffect(() => {
+    if (lastVIdx.current === vIdx) return;
+    lastVIdx.current = vIdx;
+    if (focus) return;
+    const t = setTimeout(() => {
+      const vp = flow.getViewport();
+      if (vp.zoom < 0.45) fitAll(); else clampView(vp);
+    }, 60);
+    return () => clearTimeout(t);
+  }, [vIdx, focus, flow, fitAll, clampView]);
 
   // Acts, units (series, events…) and the quests in either. A quest leads to its act or unit.
   const results = useMemo(() => {

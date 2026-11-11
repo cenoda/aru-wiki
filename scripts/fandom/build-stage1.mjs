@@ -2,17 +2,23 @@
 // PREREQUISITE / RECOMMENDED / PART_OF edges, parsed from Fandom infoboxes
 // and categories without any LLM.
 //
-// Usage: node scripts/fandom/build-stage1.mjs [--refresh] [--out data/generated]
+// Usage: node scripts/fandom/build-stage1.mjs [--out data/generated]
+// Input is the official Fandom dump (client.mjs). Versions released after the dump's last edit
+// are left out: the dump cannot describe them.
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { generatedDir } from './paths.mjs';
 import { FandomClient, pageUrl } from './client.mjs';
 import { koNames } from './ko-names.mjs';
 import { decodeEntities, infobox, linkTargets, normalizeTitle, plainText, sectionListLinks, slug } from './wikitext.mjs';
 
 const args = process.argv.slice(2);
-const outDir = args.includes('--out') ? args[args.indexOf('--out') + 1] : 'data/generated';
+const outDir = args.includes('--out') ? args[args.indexOf('--out') + 1] : fileURLToPath(generatedDir);
 const client = new FandomClient({ refresh: args.includes('--refresh') });
-const today = new Date().toISOString().slice(0, 10);
+const asOf = await client.asOf();
+const now = new Date().toISOString().slice(0, 10);
+const today = asOf && asOf < now ? asOf : now;
 
 const QUEST_CATEGORIES = {
   'Category:Archon Quests': 'ARCHON',
@@ -316,7 +322,7 @@ async function main() {
   await write('quest-edges.json', edgeList);
   await write('quest-characters.json', Object.fromEntries(Object.entries(characters).sort()));
   await write('character-aliases.json', Object.fromEntries(Object.entries(aliases).sort().map(([k, v]) => [k, [...v].sort()])));
-  await write('stage1-report.json', { stats, ...report });
+  await write('stage1-report.json', { input: { source: client.source, asOf }, stats, ...report });
   // Run metadata stays out of the files so a rebuild with unchanged data produces no diff.
   log(`fandom requests: ${client.requests}`);
   console.log(JSON.stringify(stats, null, 2));

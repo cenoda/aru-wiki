@@ -9,15 +9,18 @@
 import { existsSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { latinNames, makeLocalizer } from './ko-text.mjs';
+import { makeRequires } from './prereq.mjs';
 
 const LIGHT_MIN_SCORE = 10;
 const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
 const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
 const opt = async (f, empty) => (existsSync(file(f)) ? read(f) : empty);
-const [quests, versions, unitData, koNames, pass1, pass2, ratings, cands2] = await Promise.all([
+const [quests, versions, unitData, koNames, pass1, pass2, ratings, cands2, questEdges] = await Promise.all([
   read('quests.json'), read('versions.json'), read('quest-units.json'), read('ko-names.json'), read('recommended-judgments.json'),
   opt('recommended-judgments-2.json', []), opt('recommended-ratings.json', {}), opt('recommended-candidates-2.json', []),
+  read('quest-edges.json'),
 ]);
+const requires = makeRequires(quests, unitData, questEdges);
 const byId = new Map(quests.map((q) => [q.id, q]));
 const units = new Map(unitData.units.map((u) => [u.id, u]));
 const vOrder = new Map(versions.map((v) => [v.id, v.order]));
@@ -55,10 +58,13 @@ function tierOf(j) {
 }
 
 const edges = new Map();
+let reversed = 0;
 for (const j of [...pass1, ...pass2]) {
   const tier = tierOf(j);
   if (!tier) continue;
   const key = `${j.source}->${j.target}`;
+  // the game makes B come first, so "do A before B" cannot be followed
+  if (requires(j.target, j.source)) { reversed++; continue; }
   if (edges.has(key) && RANK[edges.get(key).tier] >= RANK[tier]) continue;
   const s = node(j.source), t = node(j.target);
   edges.set(key, {
@@ -67,6 +73,7 @@ for (const j of [...pass1, ...pass2]) {
     links: j.characters ?? (j.evidence ?? []).map((e) => e.label),
     reason_ko: localize(j.judge.reason_ko), quotes_source: j.judge.quotes_a, quotes_target: j.judge.quotes_b,
     revealed_version: later(s.version, t.version),
+    ...(requires(j.source, j.target) && { already_required: true }), // the game enforces it already
     review: 'unreviewed', judged_by: j.judge.tool, verified_by: j.verify.tool,
     sources: [...s.sources, ...t.sources],
   });
@@ -78,4 +85,5 @@ for (const e of list) for (const n of latinNames(e.reason_ko)) left.set(n, (left
 if (left.size) console.log(`English names left (no official Korean name): ${[...left].sort((a, b) => b[1] - a[1]).map(([n, c]) => `${n}×${c}`).join(', ')}`);
 const count = (k) => list.filter((e) => e.tier === k).length;
 const isAct = (id) => byId.get(id)?.level === 'ACT';
+console.log(`dropped ${reversed} reversed (B required before A); ${list.filter((e) => e.already_required).length} already required`);
 console.log(`${list.length} RECOMMENDED edges: ${count('strong')} strong, ${count('medium')} medium, ${count('light')} light; ${list.filter((e) => isAct(e.source) && isAct(e.target)).length} between acts`);

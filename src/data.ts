@@ -171,6 +171,7 @@ export function recommendedGraph() {
   for (const e of recommendedJson as LlmEdge[]) {
     // judged on an earlier data build; skip edges whose act or unit is no longer on the map
     if (!itemById(e.source) || !itemById(e.target)) continue;
+    if (e.already_required) continue; // the game enforces this order already (scripts/recommend/prereq.mjs)
     const id = `rec:${e.source}->${e.target}`;
     if (out.has(id)) continue; // the infobox says so already
     out.set(id, { id, source: e.source, target: e.target, basis: 'llm', tier: e.tier,
@@ -178,4 +179,4 @@ export function recommendedGraph() {
   }
   return [...out.values()];
 }
-interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string }
+interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string; already_required?: boolean }

@@ -4,17 +4,19 @@
 //
 // For every story unit (act, or act-less unit from quest-units.json) this records which lore
 // pages it links to, and for each lore page the units in release order.
-// Reads quests.json, quest-units.json, versions.json and the page cache; writes lore-links.json.
+// Reads quests.json, quest-units.json, versions.json and the Fandom dump; writes lore-links.json.
 import { readFile, writeFile } from 'node:fs/promises';
+import { generatedFile } from './paths.mjs';
 import { FandomClient } from './client.mjs';
 import { linkTargets, normalizeTitle } from './wikitext.mjs';
 import { loadPages } from '../recommend/excerpt.mjs';
 
 const client = new FandomClient({ refresh: process.argv.includes('--refresh') });
-const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
+const file = generatedFile;
 const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
 const [quests, unitData, versions] = await Promise.all(['quests.json', 'quest-units.json', 'versions.json'].map(read));
-const pages = await loadPages();
+// page text: the dump (default); the legacy api.php cache only with ARU_FANDOM_SOURCE=legacy
+const pages = client.source === 'dump' ? await client.pageTexts() : await loadPages();
 const byId = new Map(quests.map((q) => [q.id, q]));
 const vOrder = new Map(versions.map((v) => [v.id, v.order]));
 
@@ -88,4 +90,4 @@ const out = Object.fromEntries(Object.entries(loreUnits)
 await writeFile(file('lore-links.json'), `${JSON.stringify(out, null, 1)}\n`);
 console.log(`${targets.length} link targets in 2+ units, ${Object.keys(out).length} lore pages`);
 console.log(Object.entries(out).slice(0, 25).map(([t, v]) => `${t} (${v.units.length})`).join(', '));
-console.log(`fandom requests: ${client.requests}`);
+console.log(`fandom requests: ${client.requests}, ${client.source} lookups: ${client.lookups}`);

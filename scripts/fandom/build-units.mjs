@@ -9,10 +9,11 @@
 // Reads quests.json, quest-edges.json, quest-series.json, versions.json and, for event names in
 // Korean, ko-names.json (build-ko-names.mjs); writes quest-units.json.
 import { existsSync } from 'node:fs';
+import { generatedFile } from './paths.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { slug } from './wikitext.mjs';
 
-const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
+const file = generatedFile;
 const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
 const [quests, edges, series, versions] = await Promise.all(
   ['quests.json', 'quest-edges.json', 'quest-series.json', 'versions.json'].map(read));

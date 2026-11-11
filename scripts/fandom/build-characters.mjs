@@ -1,12 +1,13 @@
 // Korean names of quest characters (the page names in quest-characters.json and
 // character-aliases.json); see ko-names.mjs for how a name is read from Fandom.
 //
-// Usage: node scripts/fandom/build-characters.mjs [--refresh]
+// Usage: node scripts/fandom/build-characters.mjs
 import { readFile, writeFile } from 'node:fs/promises';
+import { generatedFile } from './paths.mjs';
 import { FandomClient } from './client.mjs';
 import { koNames, report } from './ko-names.mjs';
 
-const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
+const file = generatedFile;
 const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
 const client = new FandomClient({ refresh: process.argv.includes('--refresh') });
 const log = (...a) => console.error('[characters]', ...a);

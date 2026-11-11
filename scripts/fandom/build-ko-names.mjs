@@ -6,13 +6,14 @@
 // Writes data/generated/ko-names.json: { "<Fandom page title>": { kind, ko, page, url, ... } },
 // with kind "lore", "character" or "event". `ko` is null when no public source gives a Korean name.
 //
-// Usage: node scripts/fandom/build-ko-names.mjs [--refresh]
+// Usage: node scripts/fandom/build-ko-names.mjs
 import { readFile, writeFile } from 'node:fs/promises';
+import { generatedFile } from './paths.mjs';
 import { FandomClient } from './client.mjs';
 import { koNames, report } from './ko-names.mjs';
 import { characterNames } from './build-characters.mjs';
 
-const file = (f) => new URL(`../../data/generated/${f}`, import.meta.url);
+const file = generatedFile;
 const client = new FandomClient({ refresh: process.argv.includes('--refresh') });
 const log = (...a) => console.error('[ko-names]', ...a);
 

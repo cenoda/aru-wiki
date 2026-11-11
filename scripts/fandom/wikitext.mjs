@@ -20,6 +20,8 @@ export function findTemplate(text, name) {
 
 /** Split a template's inner text on top-level `|` into { name, positional[], named{} }. */
 export function parseTemplate(inner) {
+  // comments first: a commented-out `|param = …` must not become a parameter
+  inner = stripComments(inner);
   const parts = [];
   let cur = '', curly = 0, square = 0;
   for (let i = 0; i < inner.length; i++) {

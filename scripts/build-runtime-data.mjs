@@ -42,7 +42,7 @@ await write('graph.json', graph);
 
 // ---------- lore theme graph (stage 2 preview: Khaenri'ah) ----------
 // Nodes: the theme page and its candidates (scripts/theme/candidates.mjs). Links: pages that share
-// story units, each page keeping its strongest few by Jaccard. A page or link appears from the
+// story units (see the constellation rule below). A page or link appears from the
 // version of the earliest story unit behind it, so the version picker hides what comes later.
 const [theme, loreLinks, koNames] = await Promise.all([read('theme-khaenriah.json'), read('lore-links.json'), read('ko-names.json')]);
 const unitVersion = new Map([...quests, ...units.units].map((x) => [x.id, x.first_version]));
@@ -62,8 +62,16 @@ for (let i = 0; i < pages.length; i++) {
       jaccard: shared.length / (a.size + b.size - shared.length), revealed: firstOrder(shared) });
   }
 }
-const KEEP = 4;
+// Constellation lines, not a web: the maximum spanning tree by Jaccard (every page that shares any
+// story stays connected by its strongest path) plus each page's two strongest ties.
+const KEEP = 2;
 const kept = new Set();
+const parent = new Map(pages.map((p) => [p.page, p.page]));
+const setOf = (x) => { while (parent.get(x) !== x) x = parent.get(x); return x; };
+for (const e of [...pairs].sort((x, y) => y.jaccard - x.jaccard)) {
+  const ra = setOf(e.a), rb = setOf(e.b);
+  if (ra !== rb) { parent.set(ra, rb); kept.add(e); }
+}
 for (const p of pages) {
   pairs.filter((e) => e.a === p.page || e.b === p.page).sort((x, y) => y.jaccard - x.jaccard)
     .slice(0, KEEP).forEach((e) => kept.add(e));

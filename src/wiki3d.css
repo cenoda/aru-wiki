@@ -13,3 +13,7 @@
 .site.w3d .w3d-near button:hover { background: var(--gold-soft); }
 .site.w3d .w3d-close { position: absolute; top: 6px; right: 6px; width: 32px; height: 32px; background: none; border: 0;
   color: var(--muted); font-size: 1.4rem; cursor: pointer; }
+
+/* night sky: this view stays dark in either site theme */
+.site.w3d .w3d-stage { background: radial-gradient(ellipse 80% 70% at 50% 45%, #1c2140 0%, #10132a 55%, #080a17 100%); }
+.site.w3d .w3d-status { color: #a39d90; }

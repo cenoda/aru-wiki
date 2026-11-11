@@ -10,6 +10,7 @@ import {
   type Version, versionOrder, versions,
 } from './data';
 import { recommendationGist, recommendationLead } from './recText';
+import { ReportBox } from './ReportBox';
 import ELK, { type ElkExtendedEdge } from 'elkjs/lib/elk.bundled.js';
 import './site.css';
 import './focus.css';
@@ -1150,6 +1151,7 @@ function Atlas() {
               <HungUnits key={sel.id} list={neighbours.hung} entry={entryActs.get(sel.id)} go={select} />
             )}
             {isUnit(sel) ? <UnitQuests unit={sel} /> : <ActQuests actId={sel.id} />}
+            <ReportBox nodeId={sel.id} version={versions.find((v) => v.order === vIdx)?.id ?? ''} />
           </aside>
         )}
       </main>

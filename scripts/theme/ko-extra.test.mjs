@@ -27,3 +27,18 @@ test('missingKorean allows changes only around English', async () => {
   assert.ok(missingKorean(from, '켄리아가 멸망한 뒤 순수하지 않은 주민은 츄츄족 같은 괴물이 되는 저주를 받았다.'));
   assert.equal(missingKorean('도토레는 No. 2 집행관이다', '도토레는 제2위 집행관이다'), null);
 });
+
+test('tidy turns a leftover "제. N" into a rank', async () => {
+  const { tidy } = await import('./ko-extra.mjs');
+  assert.equal(tidy('11집행관 중 제. 5이다. 제. 3까지는'), '11집행관 중 제5위이다. 제3위까지는');
+  assert.equal(tidy('제3위'), '제3위');
+});
+
+test('tidy writes an element Archon as "OO의 신", Gnosis untouched', async () => {
+  const { tidy } = await import('./ko-extra.mjs');
+  assert.equal(tidy('수메르의 풀 집정관이며'), '수메르의 풀의 신이며');
+  assert.equal(tidy('얼음 집정관으로 올랐고'), '얼음의 신으로 올랐고');
+  assert.equal(tidy('물 신 에게리아와 번개 신이'), '물의 신 에게리아와 번개의 신이');
+  assert.equal(tidy('번개 신의 심장'), '번개 신의 심장');
+  assert.equal(tidy('불의 신'), '불의 신');
+});

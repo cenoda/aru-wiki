@@ -58,6 +58,15 @@ export async function llmNamePairs() {
     .filter(([n, v]) => v.kind === 'name' && v.ko && !isContextDependent(n)).map(([n, v]) => [n, v.ko]);
 }
 
+/**
+ * Fixed forms that word swaps leave behind: "No. 3" → "제. 3" is a Harbinger rank, 제3위; an
+ * element's Archon is "OO의 신" (user decision 2026-11-12), also where the writer put
+ * "Dendro 집정관" or "얼음 신" in its own Korean. A Gnosis ("물 신의 심장") keeps its name.
+ */
+export const tidy = (text) => text
+  .replace(/제\.\s?(\d+)(?!위)/g, '제$1위')
+  .replace(/(?<![가-힣])(불|물|바람|번개|바위|풀|얼음) (?:신|집정관)(?!의 심장)(?=[^가-힣]|$|은|는|이|가|을|를|에|와|과|도|으로|로|의|만|이자|이며|이다|인|이던|이었|으로서)/g, '$1의 신');
+
 /** Per-point replacer: (text, textRaw) → text with that point's choices, particles re-fitted. */
 export async function contextLocalizer() {
   const all = strip(await readJson(CONTEXT));
@@ -71,6 +80,6 @@ export async function contextLocalizer() {
       text = cache.get(key)(text);
     }
     const r = rewrites[key];
-    return r && r.from === text ? r.text : text;
+    return tidy(r && r.from === text ? r.text : text);
   };
 }

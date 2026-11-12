@@ -175,57 +175,75 @@ function clouds(count: number, tints: string[], seed: number, behind: number): C
 const NEBULAE = clouds(15, ['#6f5bd6', '#3f7fc4', '#b0549c', '#3f9fa8', '#c27a4a', '#5a6ad0', '#7a4fb8', '#d0648a'], 1, 9);
 const DAY_CLOUDS = clouds(10, ['#f4c7ae', '#b9cff5', '#d9c6f2', '#f6e1a8', '#bfe3df'], 5, 6);
 /**
- * The Milky Way as an equirectangular picture for a sky sphere: a soft band along the equator,
- * wider and warmer toward a core, broken into clouds by noise, with a dark dust lane down its middle.
- * Drawn once in the browser (no image file); pure decoration.
+ * The Milky Way as an equirectangular picture for a sky sphere. Built like the real one looks:
+ * a bright bulge at the core and a thinner disc, ragged edges (warped), a diffuse glow around it,
+ * the band itself mottled into small star clouds, broken by blotchy dark dust rifts, and sprinkled
+ * with tens of thousands of faint pinpoint stars. Noise is the same size in both directions (no
+ * streaks along the band) and wraps round in longitude. Drawn once in the browser; pure decoration.
  */
 function milkyWayTexture() {
-  const W = 1024, H = 512;
+  const W = 2048, H = 1024;
   const c = document.createElement('canvas');
   c.width = W; c.height = H;
   const ctx = c.getContext('2d')!;
   let st = 4242;
   const rnd = () => ((st = (st * 16807) % 2147483647) / 2147483647);
-  // value noise that wraps around in longitude (no seam where the picture's ends meet)
-  const octaves = [0, 1, 2, 3, 4, 5].map((o) => {
-    const gx = 6 * 2 ** o, gy = 4 * 2 ** o;
-    return { gx, gy, v: Array.from({ length: gx * (gy + 1) }, rnd) };
+  // octave o has 8·2^o cells round the sky and half as many pole to pole: square cells
+  const grids = [0, 1, 2, 3, 4, 5, 6].map((o) => {
+    const gx = 8 * 2 ** o, gy = gx / 2;
+    return { gx, gy, v: Float32Array.from({ length: gx * (gy + 1) }, rnd) };
   });
   const sm = (t: number) => t * t * (3 - 2 * t);
-  const noise = (u: number, v: number) => {
-    let n = 0, amp = 0.5, tot = 0;
-    for (const o of octaves) {
-      const x = u * o.gx, y = v * o.gy;
-      const x0 = Math.floor(x), y0 = Math.min(o.gy - 1, Math.floor(y)), fx = sm(x - x0), fy = sm(y - y0);
-      const at = (i: number, j: number) => o.v[(y0 + j) * o.gx + ((x0 + i) % o.gx)];
-      n += amp * ((at(0, 0) * (1 - fx) + at(1, 0) * fx) * (1 - fy) + (at(0, 1) * (1 - fx) + at(1, 1) * fx) * fy);
+  const fbm = (u: number, v: number, from: number, to: number) => {
+    let n = 0, amp = 1, tot = 0;
+    for (let o = from; o <= to; o++) {
+      const g = grids[o], x = u * g.gx, y = v * g.gy;
+      const x0 = Math.floor(x), y0 = Math.min(g.gy - 1, Math.floor(y)), fx = sm(x - x0), fy = sm(y - y0);
+      const i0 = y0 * g.gx, i1 = (y0 + 1) * g.gx, a = x0 % g.gx, b = (x0 + 1) % g.gx;
+      n += amp * ((g.v[i0 + a] * (1 - fx) + g.v[i0 + b] * fx) * (1 - fy) + (g.v[i1 + a] * (1 - fx) + g.v[i1 + b] * fx) * fy);
       tot += amp; amp *= 0.55;
     }
     return n / tot;
   };
+  const step = (a: number, b: number, x: number) => { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
   const img = ctx.createImageData(W, H);
-  const cool = new Color('#93a6ff'), warm = new Color('#ffdcb8'), col = new Color();
+  const edge = new Color('#cdd8ff'), mid = new Color('#f4f1ea'), bulge = new Color('#ffe2b8'), col = new Color();
+  const widthAt = (lon: number) => { const core = Math.exp(-((lon / 0.75) ** 2)); return { core, w: 0.075 + 0.11 * core }; };
   for (let y = 0; y < H; y++) {
-    const lat = (y / H - 0.5) * Math.PI;
-    if (Math.abs(lat) > 0.7) continue;
+    const v = y / H, lat = (v - 0.5) * Math.PI;
+    if (Math.abs(lat) > 0.75) continue;
     for (let x = 0; x < W; x++) {
       const u = x / W, lon = (u - 0.5) * Math.PI * 2;
-      const core = Math.exp(-((lon / 0.9) ** 2));
-      const width = 0.11 + 0.08 * core + 0.05 * (noise(u, 0.3) - 0.5);
-      const band = Math.exp(-((lat / width) ** 2));
-      const cloud = noise(u, y / H);
-      const lane = Math.exp(-(((lat - 0.025 * Math.sin(lon * 3)) / (0.022 + 0.02 * core)) ** 2)) * (0.4 + 0.6 * noise(u, 0.8));
-      let a = band * (0.25 + 0.75 * core) * Math.max(0, cloud * 1.6 - 0.35) * (1 - 0.85 * lane);
-      a = Math.min(1, a * 1.3);
-      col.copy(cool).lerp(warm, Math.min(1, core * 0.9 + band * 0.2));
+      const { core, w } = widthAt(lon);
+      const warped = lat + 0.07 * (fbm(u, v, 1, 3) - 0.5) * (1 + core);
+      const disc = Math.exp(-((warped / w) ** 2));
+      const glow = 0.28 * Math.exp(-((warped / (w * 2.6)) ** 2));
+      const clouds = 0.5 + 0.9 * step(0.3, 0.8, fbm(u, v, 3, 6)); // small star clouds
+      const rift = step(0.5, 0.66, fbm(u + 0.37, v, 2, 5)) * Math.exp(-((warped / (w * 0.75)) ** 2));
+      let a = (disc * clouds + glow) * (0.3 + 0.7 * core) * (1 - 0.85 * rift);
+      a = Math.min(1, a * 0.9);
+      col.copy(edge).lerp(mid, disc).lerp(bulge, core * disc * 0.8);
       const i = (y * W + x) * 4;
       img.data[i] = col.r * 255; img.data[i + 1] = col.g * 255; img.data[i + 2] = col.b * 255;
       img.data[i + 3] = a * 255;
     }
   }
   ctx.putImageData(img, 0, 0);
+  // faint pinpoint stars, crowded where the band is (the brighter stars are the Points layers)
+  for (let k = 0; k < 14000; k++) {
+    const u = rnd(), lon = (u - 0.5) * Math.PI * 2;
+    const { core, w } = widthAt(lon);
+    if (rnd() > 0.35 + 0.65 * core) continue;
+    const g = Math.sqrt(-2 * Math.log(rnd() + 1e-9)) * Math.cos(2 * Math.PI * rnd());
+    const lat = g * w * 0.8;
+    const y = (lat / Math.PI + 0.5) * H, x = u * W;
+    const b = rnd();
+    ctx.fillStyle = `rgba(255,${240 + Math.round(15 * b)},${225 + Math.round(30 * b)},${(0.1 + 0.3 * b * b).toFixed(2)})`;
+    ctx.fillRect(x, y, 1, 1);
+  }
   const t = new CanvasTexture(c);
   t.wrapS = RepeatWrapping;
+  t.anisotropy = 4;
   return t;
 }
 /** a small round dot with a soft edge, so background stars are round, not square */
@@ -924,7 +942,7 @@ export default function WikiGraph3D() {
     dayDust.visible = !night0;
     // the Milky Way: a sky sphere around everything, seen from inside
     const milky = new Mesh(new SphereGeometry(4200, 64, 32), new MeshBasicMaterial({ map: milkyWayTexture(), side: BackSide,
-      transparent: true, opacity: 0.42, depthWrite: false, fog: false, blending: AdditiveBlending }));
+      transparent: true, opacity: 0.3, depthWrite: false, fog: false, blending: AdditiveBlending }));
     milky.rotation.copy(GALAXY);
     milky.renderOrder = -3;
     milky.raycast = () => {};

@@ -14,7 +14,7 @@ import ForceGraph3D, { type ForceGraph3DInstance } from '3d-force-graph';
 import { forceX, forceY, forceZ } from 'd3-force-3d';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  AdditiveBlending, BufferGeometry, Line, LineDashedMaterial, Float32BufferAttribute, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, NormalBlending,
+  AdditiveBlending, BackSide, BufferGeometry, Euler, Mesh, MeshBasicMaterial, RepeatWrapping, SphereGeometry, Line, LineDashedMaterial, Float32BufferAttribute, Matrix4, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, NormalBlending,
   type PerspectiveCamera, Sprite, SpriteMaterial, Vector2, Vector3,
 } from 'three';
 import { Line2 } from 'three/examples/jsm/lines/Line2.js';
@@ -174,6 +174,85 @@ function clouds(count: number, tints: string[], seed: number, behind: number): C
 }
 const NEBULAE = clouds(15, ['#6f5bd6', '#3f7fc4', '#b0549c', '#3f9fa8', '#c27a4a', '#5a6ad0', '#7a4fb8', '#d0648a'], 1, 9);
 const DAY_CLOUDS = clouds(10, ['#f4c7ae', '#b9cff5', '#d9c6f2', '#f6e1a8', '#bfe3df'], 5, 6);
+/**
+ * The Milky Way as an equirectangular picture for a sky sphere: a soft band along the equator,
+ * wider and warmer toward a core, broken into clouds by noise, with a dark dust lane down its middle.
+ * Drawn once in the browser (no image file); pure decoration.
+ */
+function milkyWayTexture() {
+  const W = 1024, H = 512;
+  const c = document.createElement('canvas');
+  c.width = W; c.height = H;
+  const ctx = c.getContext('2d')!;
+  let st = 4242;
+  const rnd = () => ((st = (st * 16807) % 2147483647) / 2147483647);
+  // value noise that wraps around in longitude (no seam where the picture's ends meet)
+  const octaves = [0, 1, 2, 3, 4, 5].map((o) => {
+    const gx = 6 * 2 ** o, gy = 4 * 2 ** o;
+    return { gx, gy, v: Array.from({ length: gx * (gy + 1) }, rnd) };
+  });
+  const sm = (t: number) => t * t * (3 - 2 * t);
+  const noise = (u: number, v: number) => {
+    let n = 0, amp = 0.5, tot = 0;
+    for (const o of octaves) {
+      const x = u * o.gx, y = v * o.gy;
+      const x0 = Math.floor(x), y0 = Math.min(o.gy - 1, Math.floor(y)), fx = sm(x - x0), fy = sm(y - y0);
+      const at = (i: number, j: number) => o.v[(y0 + j) * o.gx + ((x0 + i) % o.gx)];
+      n += amp * ((at(0, 0) * (1 - fx) + at(1, 0) * fx) * (1 - fy) + (at(0, 1) * (1 - fx) + at(1, 1) * fx) * fy);
+      tot += amp; amp *= 0.55;
+    }
+    return n / tot;
+  };
+  const img = ctx.createImageData(W, H);
+  const cool = new Color('#93a6ff'), warm = new Color('#ffdcb8'), col = new Color();
+  for (let y = 0; y < H; y++) {
+    const lat = (y / H - 0.5) * Math.PI;
+    if (Math.abs(lat) > 0.7) continue;
+    for (let x = 0; x < W; x++) {
+      const u = x / W, lon = (u - 0.5) * Math.PI * 2;
+      const core = Math.exp(-((lon / 0.9) ** 2));
+      const width = 0.11 + 0.08 * core + 0.05 * (noise(u, 0.3) - 0.5);
+      const band = Math.exp(-((lat / width) ** 2));
+      const cloud = noise(u, y / H);
+      const lane = Math.exp(-(((lat - 0.025 * Math.sin(lon * 3)) / (0.022 + 0.02 * core)) ** 2)) * (0.4 + 0.6 * noise(u, 0.8));
+      let a = band * (0.25 + 0.75 * core) * Math.max(0, cloud * 1.6 - 0.35) * (1 - 0.85 * lane);
+      a = Math.min(1, a * 1.3);
+      col.copy(cool).lerp(warm, Math.min(1, core * 0.9 + band * 0.2));
+      const i = (y * W + x) * 4;
+      img.data[i] = col.r * 255; img.data[i + 1] = col.g * 255; img.data[i + 2] = col.b * 255;
+      img.data[i + 3] = a * 255;
+    }
+  }
+  ctx.putImageData(img, 0, 0);
+  const t = new CanvasTexture(c);
+  t.wrapS = RepeatWrapping;
+  return t;
+}
+/** a small round dot with a soft edge, so background stars are round, not square */
+function dotTexture() {
+  const c = document.createElement('canvas');
+  c.width = c.height = 32;
+  const ctx = c.getContext('2d')!;
+  const g = ctx.createRadialGradient(16, 16, 0, 16, 16, 16);
+  g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(0.35, 'rgba(255,255,255,.85)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, 32, 32);
+  return new CanvasTexture(c);
+}
+/** star colours by how common they look: blue-white, white, pale yellow, orange, red */
+const STAR_TINTS: [string, number][] = [['#cfe0ff', 0.3], ['#ffffff', 0.3], ['#fff1c8', 0.2], ['#ffc78f', 0.12], ['#ff9a7a', 0.08]];
+/**
+ * The Milky Way's frame: its band lies in the local xz plane with its core along local +x (where the
+ * sphere's picture has its middle). Placed so the core sits behind the chart as first seen (-z) and
+ * the band crosses the view diagonally.
+ */
+const GALAXY = (() => {
+  const core = new Vector3(0, 0.1, -1).normalize();
+  const up = new Vector3(0.7, 0.7, 0.07).normalize(); // the band's normal, at right angles to the core direction
+  up.sub(core.clone().multiplyScalar(up.dot(core))).normalize();
+  return new Euler().setFromRotationMatrix(new Matrix4().makeBasis(core, up, core.clone().cross(up)));
+})();
+
 const starColour = (n: PageNode, sky: Palette) => (n.hub ? sky.hub : sky[n.kind]);
 /** Names are smaller on portrait screens (their size is relative to the view height). */
 const labelScale = (el: HTMLElement) => Math.min(1, (el.clientWidth / Math.max(1, el.clientHeight)) * 1.3);
@@ -802,21 +881,55 @@ export default function WikiGraph3D() {
     // distance fog toward the sky colour: far stars and lines recede (distances follow the camera)
     const fog = new Fog(lookNow.current.sky.sky, 100, 400);
     g.scene().fog = fog;
-    // background stars far behind the chart (decoration, not data): they turn with the view and give it depth
-    const dustPos: number[] = [];
+    // background stars far behind the chart (decoration, not data): three sizes, five colours, and
+    // many more along the Milky Way's band. They turn with the view and give it depth.
     let seed = 7;
     const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
-    for (let i = 0; i < 1100; i++) {
-      const u = rnd() * 2 - 1, a = rnd() * Math.PI * 2, R = 1600 + rnd() * 1400, c = Math.sqrt(1 - u * u);
-      dustPos.push(Math.cos(a) * c * R, u * R, Math.sin(a) * c * R);
-    }
-    const dustGeo = new BufferGeometry();
-    dustGeo.setAttribute('position', new Float32BufferAttribute(dustPos, 3));
+    const gauss = () => Math.sqrt(-2 * Math.log(rnd() + 1e-9)) * Math.cos(2 * Math.PI * rnd());
+    const tint = () => { let r = rnd(); for (const [c, w] of STAR_TINTS) { if ((r -= w) <= 0) return new Color(c); } return new Color('#ffffff'); };
+    const galaxy = new Matrix4().makeRotationFromEuler(GALAXY);
+    const dot = dotTexture();
     const night0 = lookNow.current.sky.night;
-    const dust = new Points(dustGeo, new PointsMaterial({ color: night0 ? '#c9d3ff' : '#7a87ad', size: 1.3, sizeAttenuation: false,
-      transparent: true, opacity: night0 ? 0.35 : 0.14, depthWrite: false, fog: false }));
-    dust.raycast = () => {};
-    g.scene().add(dust);
+    const layer = (count: number, inBand: number, size: number, opacity: number) => {
+      const pos: number[] = [], col: number[] = [];
+      for (let i = 0; i < count; i++) {
+        const R = 1600 + rnd() * 1400;
+        const v = new Vector3();
+        if (i < inBand) {
+          const a = rnd() * Math.PI * 2, lat = gauss() * 0.12;
+          v.set(Math.cos(a) * Math.cos(lat), Math.sin(lat), Math.sin(a) * Math.cos(lat)).applyMatrix4(galaxy);
+        } else {
+          const u = rnd() * 2 - 1, a = rnd() * Math.PI * 2, c = Math.sqrt(1 - u * u);
+          v.set(Math.cos(a) * c, u, Math.sin(a) * c);
+        }
+        v.multiplyScalar(R);
+        pos.push(v.x, v.y, v.z);
+        const c = tint().multiplyScalar(0.55 + 0.45 * rnd());
+        col.push(c.r, c.g, c.b);
+      }
+      const geo = new BufferGeometry();
+      geo.setAttribute('position', new Float32BufferAttribute(pos, 3));
+      geo.setAttribute('color', new Float32BufferAttribute(col, 3));
+      const pts = new Points(geo, new PointsMaterial({ size, map: dot, vertexColors: true, sizeAttenuation: false, transparent: true,
+        opacity, depthWrite: false, fog: false, blending: AdditiveBlending }));
+      pts.raycast = () => {};
+      pts.visible = night0;
+      g.scene().add(pts);
+      return pts;
+    };
+    const skyStars = [layer(2600, 1500, 2.2, 0.7), layer(520, 220, 3.4, 0.85), layer(70, 20, 5.5, 1)];
+    // day sky: a few faint ink specks instead
+    const dayDust = layer(500, 0, 2, 0.16);
+    dayDust.material.blending = NormalBlending; dayDust.material.vertexColors = false; dayDust.material.color.set('#7a87ad');
+    dayDust.visible = !night0;
+    // the Milky Way: a sky sphere around everything, seen from inside
+    const milky = new Mesh(new SphereGeometry(4200, 64, 32), new MeshBasicMaterial({ map: milkyWayTexture(), side: BackSide,
+      transparent: true, opacity: 0.42, depthWrite: false, fog: false, blending: AdditiveBlending }));
+    milky.rotation.copy(GALAXY);
+    milky.renderOrder = -3;
+    milky.raycast = () => {};
+    milky.visible = night0;
+    g.scene().add(milky);
     // nebulae (night) and pale clouds (day) far behind the chart, among the background stars; faint so
     // the stars stay first. Only the current sky's set is visible.
     const cloudSprite = (nb: Cloud, day: boolean) => {
@@ -881,8 +994,9 @@ export default function WikiGraph3D() {
       paintTails.current();
       for (const nb of nebulae) nb.visible = s.night;
       for (const c of dayClouds) c.visible = !s.night;
-      dust.material.color.set(s.night ? '#c9d3ff' : '#7a87ad');
-      dust.material.opacity = s.night ? 0.35 : 0.14;
+      for (const p of skyStars) p.visible = s.night;
+      milky.visible = s.night;
+      dayDust.visible = !s.night;
       wakeUp();
     };
 
@@ -976,7 +1090,9 @@ export default function WikiGraph3D() {
       showRefs.current = () => {};
       showTethers.current = () => {};
       placeNow.current = () => {};
-      dust.geometry.dispose(); dust.material.dispose();
+      for (const p of [...skyStars, dayDust]) { p.geometry.dispose(); p.material.dispose(); }
+      dot.dispose();
+      milky.geometry.dispose(); milky.material.map?.dispose(); milky.material.dispose();
       for (const nb of [...nebulae, ...dayClouds]) { nb.material.map?.dispose(); nb.material.dispose(); }
       g.scene().onBeforeRender = () => {};
       g._destructor();

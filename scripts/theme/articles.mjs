@@ -31,6 +31,7 @@ const { values: opt, positionals: [theme] } = parseArgs({ allowPositionals: true
   only: { type: 'string' }, latest: { type: 'boolean', default: false }, limit: { type: 'string' },
   writer: { type: 'string', default: 'ember' }, verify: { type: 'string', default: 'codex' }, jobs: { type: 'string', default: '4' },
   redo: { type: 'boolean', default: false }, polish: { type: 'string', default: 'ember' }, 'max-chars': { type: 'string', default: '60000' }, 'relocalize-only': { type: 'boolean', default: false },
+  style: { type: 'string', default: 'plain' }, out: { type: 'string' },
 } });
 if (!theme) throw new Error('usage: articles.mjs <theme id>');
 if (opt.writer === opt.verify) throw new Error('writer and verify must be tools of different companies');
@@ -80,6 +81,18 @@ const VERIFY_SCHEMA = { type: 'object', additionalProperties: false, required: [
   paragraphs: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['n', 'unsupported', 'note'], properties: {
     n: { type: 'integer' }, unsupported: { type: 'array', items: { type: 'integer' } }, note: { type: 'string' } } } } } };
 
+// --style lively: the voice of a Korean fan wiki that is fun to read (structure and tone only;
+// the facts are still only those in the paragraphs).
+const STYLE = {
+  plain: `in your own words (do not translate the wiki word for word), in plain written Korean (-다 endings).`,
+  lively: `in your own words (do not translate the wiki word for word), in the voice of a Korean fan wiki
+  that people read for fun: plain -다 endings, but lively and vivid, with a sense of drama where the
+  story has it. Lead with what makes the subject striking, connect events by cause and effect
+  ("그 결과", "문제는"), point out contrasts and ironies that the paragraphs themselves show, and
+  mark key phrases with **bold** (two or three per section at most). Prefer headings a Korean fan wiki
+  would use (개요, 설정, 작중 행적, 능력, 인간관계, 떡밥과 수수께끼). Never invent facts, opinions or
+  evaluations that the paragraphs do not support; liveliness comes from how you tell it.`,
+};
 const writePrompt = (e, text) => `You write a Korean encyclopedia article for a spoiler-safe Genshin Impact lore wiki about "${e.node}".
 The article tells what the English fan wiki said about it at the end of game version ${e.version}.
 Use only the paragraphs below. They are that version of the wiki pages, in paragraphs labelled [A1], [B3], ...
@@ -97,8 +110,7 @@ Write:
 - lead: one paragraph of 2-4 Korean sentences saying what or who this is and why it matters.
 - sections: 2-8 sections with short Korean headings that fit the text (for example 개요, 배경,
   생애, 행적, 인물 관계, 성격, 설정, 기록과 전승, 수수께끼), in an order that reads well. Each section
-  has one or more paragraphs; each paragraph is 2-6 Korean sentences in your own words (do not
-  translate the wiki word for word), in plain written Korean (-다 endings).
+  has one or more paragraphs; each paragraph is 2-6 Korean sentences ${STYLE[opt.style]}
 For the lead and every paragraph give
 - sources: labels of the 1-3 paragraphs it comes from, like ["A4", "C2"]. Everything in it must be in those.
 - quote: an exact English quote from one of those paragraphs, at most 200 characters, copied
@@ -142,7 +154,8 @@ const quoteOk = (pt, byId) => Boolean(pt.quote && pt.quote.length <= 240
 const splitSentences = (t) => t.trim().split(/(?<=[.!?。])\s+(?=\S)/).map((s) => s.trim()).filter(Boolean);
 const flat = (w) => [{ ...w.lead, section: null }, ...w.sections.flatMap((s) => s.paragraphs.map((p) => ({ ...p, section: s.heading })))];
 
-const OUT = gen(`articles-${theme}.json`);
+const OUT = opt.out ? join(ROOT, opt.out) : gen(`articles-${theme}.json`);
+if (!STYLE[opt.style]) throw new Error(`--style ${opt.style}: have ${Object.keys(STYLE).join(', ')}`);
 const results = new Map((existsSync(OUT) ? JSON.parse(await readFile(OUT, 'utf8')).articles : []).map((a) => [`${a.node}|${a.from_version}`, a]));
 let todo = opt['relocalize-only'] ? [] : plan;
 if (opt.only) { const only = new Set(opt.only.split(',').map((s) => s.trim())); todo = todo.filter((e) => only.has(e.node)); }
@@ -159,7 +172,7 @@ async function one(e) {
   const paras = paragraphsOf(e);
   const byId = new Map(paras.map((p) => [p.id, p]));
   const { text, cut } = inputText(paras);
-  const inputHash = hash(`${PROMPT_VERSION}|${opt.writer}|${opt.verify}|${text}`);
+  const inputHash = hash(`${PROMPT_VERSION}|${opt.style}|${opt.writer}|${opt.verify}|${text}`);
   const prev = results.get(key);
   if (prev?.input_hash === inputHash && !opt.redo && prev.status !== 'needs_verify') return;
 
@@ -175,7 +188,7 @@ async function one(e) {
   }
   const items = flat(w).map((p) => ({ ...p, sources: p.sources.filter((id) => byId.has(id)).slice(0, 3), quote_found: quoteOk(p, byId),
     sentences: splitSentences(p.text) }));
-  const checkable = items.filter((p) => p.quote_found && p.sources.length);
+  const checkable = opt.verify === 'none' ? [] : items.filter((p) => p.quote_found && p.sources.length);
   let ok = true;
   for (let i = 0; i < checkable.length; i += VERIFY_BATCH) {
     const batch = checkable.slice(i, i + VERIFY_BATCH);
@@ -189,7 +202,7 @@ async function one(e) {
   const paragraphs = items.map((p) => {
     const dropped = new Set(p.verify?.unsupported ?? []);
     const kept = p.sentences.filter((_, i) => !dropped.has(i));
-    const status = !p.quote_found || !p.sources.length ? 'quote_mismatch' : !p.verify ? 'needs_verify'
+    const status = !p.quote_found || !p.sources.length ? 'quote_mismatch' : opt.verify === 'none' ? 'unverified' : !p.verify ? 'needs_verify'
       : dropped.size === 0 ? 'accepted' : kept.length * 2 >= p.sentences.length ? 'trimmed' : 'disputed';
     return {
       section: p.section, status, text_raw: kept.join(' '), full_raw: p.text, dropped: [...dropped], note: p.verify?.note ?? null, quote: p.quote,

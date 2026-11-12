@@ -11,7 +11,8 @@ import { join } from 'node:path';
 
 const EXAONE_ENV = join(homedir(), '.config/aru/exaone.env');
 
-const TIMEOUT_MS = 6 * 60 * 1000;
+// LLM_TIMEOUT_MIN raises it for long outputs (full articles)
+const TIMEOUT_MS = Number(process.env.LLM_TIMEOUT_MIN ?? 6) * 60 * 1000;
 const run = (cmd, args, input, cwd, env = {}) => new Promise((resolve, reject) => {
   const p = spawn(cmd, args, { cwd, stdio: ['pipe', 'pipe', 'pipe'], env: { ...process.env, ...env } });
   const timer = setTimeout(() => { p.kill('SIGKILL'); reject(new Error(`${cmd} timed out after ${TIMEOUT_MS / 1000}s`)); }, TIMEOUT_MS);

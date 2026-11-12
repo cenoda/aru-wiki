@@ -235,6 +235,8 @@ export default function WikiGraph3D() {
   const showTethers = useRef<() => void>(() => {});
   /** Show the dotted reference lines of the picked star. */
   const showRefs = useRef<() => void>(() => {});
+  /** Recolour, dim and show the tails of one-sided stars. */
+  const paintTails = useRef<() => void>(() => {});
   /** the time ruler drawn over the left edge of the chart */
   const rulerBox = useRef<HTMLDivElement>(null);
   const [theme, setTheme] = useState<Theme | null>(null);
@@ -476,6 +478,23 @@ export default function WikiGraph3D() {
     };
     const tethers: { id: string; line: Line<BufferGeometry, LineDashedMaterial> }[] = [];
     const refLines: { from: string; to: string; both: boolean; line: Line2; mat: LineMaterial }[] = [];
+    const tails: { id: string; line: Line2; mat: LineMaterial; fade: number[] }[] = [];
+    /** tails take the line colour, fading to the sky; dim with their star, hidden with it */
+    paintTails.current = () => {
+      const look = lookNow.current;
+      const line = new Color(look.sky.line), sky = new Color(look.sky.sky);
+      for (const t of tails) {
+        const cols: number[] = [];
+        for (let i = 0; i < t.fade.length; i += 3) {
+          const c = sky.clone().lerp(line, t.fade[i]);
+          cols.push(c.r, c.g, c.b);
+        }
+        (t.line.geometry as LineGeometry).setColors(cols);
+        t.line.visible = shownNow.current(t.id);
+        t.mat.opacity = look.focused ? (look.inFocus(t.id) ? 0.55 : 0.05) : 0.45;
+      }
+      wakeUp();
+    };
     showRefs.current = () => {
       const look = lookNow.current;
       for (const r of refLines) {
@@ -576,6 +595,45 @@ export default function WikiGraph3D() {
         refLines.push({ from, to, both: !!both, line, mat });
       }
       showRefs.current();
+      // A star whose lines all leave on one side would end them in a point, like a brush tip: give it
+      // a short tail on the empty side, along its direction, fading into the sky, so the strand seems
+      // to pass through the star.
+      const tailNear = new Map<string, PageNode[]>();
+      for (const l of g.graphData().links) {
+        const s = l.source as PageNode, t = l.target as PageNode;
+        (tailNear.get(s.id) ?? tailNear.set(s.id, []).get(s.id)!).push(t);
+        (tailNear.get(t.id) ?? tailNear.set(t.id, []).get(t.id)!).push(s);
+      }
+      for (const [id, ns] of tailNear) {
+        const n = at.get(id), axis = axes().get(id);
+        if (!n || !axis) continue;
+        let plus = 0, minus = 0, dist = 0;
+        for (const o of ns) {
+          const d = new Vector3((o.x ?? 0) - (n.x ?? 0), (o.y ?? 0) - (n.y ?? 0), (o.z ?? 0) - (n.z ?? 0));
+          dist += d.length();
+          if (d.dot(axis) >= 0) plus++; else minus++;
+        }
+        if (plus && minus) continue;
+        const dir = axis.clone().multiplyScalar(plus ? -1 : 1);
+        const len = Math.min(34, Math.max(10, (dist / ns.length) * 0.3));
+        const pos: number[] = [], col: number[] = [];
+        const steps = 10;
+        for (let i = 0; i <= steps; i++) {
+          const k = i / steps;
+          pos.push((n.x ?? 0) + dir.x * len * k, (n.y ?? 0) + dir.y * len * k, (n.z ?? 0) + dir.z * len * k);
+          col.push(1 - k, 1 - k, 1 - k); // fades toward the sky (mixed in the shader below)
+        }
+        const geo = new LineGeometry();
+        geo.setPositions(pos);
+        geo.setColors(col);
+        const mat = new LineMaterial({ color: 0xffffff, vertexColors: true, linewidth: 0.7, transparent: true, opacity: 0, depthWrite: false });
+        mat.resolution.copy(resolution);
+        const line = new Line2(geo, mat);
+        line.raycast = () => {};
+        g.scene().add(line);
+        tails.push({ id, line, mat, fade: col });
+      }
+      paintTails.current();
       // lines that climb far up the axis, or are not in the spanning tree, rest faint
       for (const l of g.graphData().links) {
         const s = l.source as PageNode, t = l.target as PageNode;
@@ -660,6 +718,7 @@ export default function WikiGraph3D() {
       }
       for (const t of tethers) t.line.material.color.set(s.line);
       for (const r of refLines) r.mat.color.set(s.line);
+      paintTails.current();
       dust.material.color.set(s.night ? '#c9d3ff' : '#7a87ad');
       dust.material.opacity = s.night ? 0.35 : 0.14;
       wakeUp();
@@ -721,6 +780,7 @@ export default function WikiGraph3D() {
       resolution.set(el.clientWidth, el.clientHeight);
       for (const l of lines.current.values()) l.mat.resolution.copy(resolution);
       for (const r of refLines) r.mat.resolution.copy(resolution);
+      for (const t of tails) t.mat.resolution.copy(resolution);
       // a turned phone changes the screen shape: resize the names to match
       const scale = labelScale(el);
       if (Math.abs(scale - lastScale) > 0.01) {
@@ -749,6 +809,8 @@ export default function WikiGraph3D() {
       rulerBox.current?.replaceChildren();
       for (const t of tethers) { t.line.geometry.dispose(); t.line.material.dispose(); }
       for (const r of refLines) { r.line.geometry.dispose(); r.mat.dispose(); }
+      for (const t of tails) { t.line.geometry.dispose(); t.mat.dispose(); }
+      paintTails.current = () => {};
       showRefs.current = () => {};
       showTethers.current = () => {};
       placeNow.current = () => {};
@@ -779,6 +841,7 @@ export default function WikiGraph3D() {
     placeNow.current(vIdx);
     showTethers.current();
     showRefs.current();
+    paintTails.current();
     relabelSoon.current();
     wake.current();
   }, [theme, shown, vIdx]);
@@ -789,6 +852,7 @@ export default function WikiGraph3D() {
     for (const [l, p] of lines.current) lineLook(l, look, p);
     fade.current();
     showRefs.current();
+    paintTails.current();
   }, [theme, look]);
 
   // ---------- names: brightest stars, the selection's neighbourhood, the hovered star, what is close ----------

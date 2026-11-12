@@ -485,7 +485,7 @@ export default function WikiGraph3D() {
       // any touch stops it, and readers who ask for less motion get the still view
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
         const flat = Math.cos(tilt) * dist, camY = cy + Math.sin(tilt) * dist;
-        const swing = (40 * Math.PI) / 180, span = 4500;
+        const swing = (40 * Math.PI) / 180, span = 9000;
         let t0 = 0, stopped = false;
         const stop = () => { stopped = true; };
         el.addEventListener('pointerdown', stop, { once: true });

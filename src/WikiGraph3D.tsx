@@ -616,6 +616,7 @@ export default function WikiGraph3D() {
     let placeRuler = () => {};
     /** where the time pillar stands on the chart's plane (set once the camera is placed) */
     let pillar: { x: number; z: number } | null = null;
+    let pillarReady = false;
     /** each star's direction for corner-free lines, from the layout (which stays still once settled) */
     let axisCache: Map<string, Vector3> | null = null;
     const axes = () => {
@@ -700,9 +701,30 @@ export default function WikiGraph3D() {
         const pt = new Vector3();
         const RING = 7; // ring radius in chart units
         placeRuler = () => {
-          if (!pillar) return;
+          if (!pillarReady) return;
           const camera = g.camera() as PerspectiveCamera;
           camera.updateMatrixWorld();
+          // The pillar stands where the left margin meets the chart's depth in the current view, so
+          // turning the chart never brings it into the middle; it still leans and its rings open and
+          // close with the view's height like the stars. Moved right until both ends clear the margin.
+          {
+            const target = (g.controls() as { target: Vector3 }).target;
+            const depth = camera.position.distanceTo(target);
+            let px = 40;
+            for (let i = 0; i < 8; i++) {
+              const ray = new Vector3((px / el.clientWidth) * 2 - 1, 0, 0.5).unproject(camera).sub(camera.position).normalize();
+              const p = camera.position.clone().add(ray.multiplyScalar(depth));
+              pillar = { x: p.x, z: p.z };
+              const xs = [heightOf(0), heightOf(lastOrder) + 6].map((h) => {
+                const v = new Vector3(p.x, h, p.z).project(camera);
+                return ((v.x + 1) / 2) * el.clientWidth;
+              });
+              const short = 30 - Math.min(...xs);
+              if (short <= 1) break;
+              px += short;
+            }
+          }
+          if (!pillar) return;
           const top = el.offsetTop, W = el.clientWidth, H = el.clientHeight;
           svg.setAttribute('width', String(W)); svg.setAttribute('height', String(top + H));
           const at = (x: number, y: number, z: number): [number, number, boolean] => {
@@ -849,28 +871,8 @@ export default function WikiGraph3D() {
         dist *= Math.max(q(ax) / (0.9 * (1 - RULER_W / el.clientWidth)), q(ay) / 0.82);
       }
       g.cameraPosition({ x: 0, y: cy + Math.sin(tilt) * dist, z: Math.cos(tilt) * dist }, { x: 0, y: cy, z: 0 }, 0);
-      {
-        // the time pillar stands where the left margin meets the chart's depth in this first view
-        const cam = g.camera() as PerspectiveCamera;
-        cam.position.set(0, cy + Math.sin(tilt) * dist, Math.cos(tilt) * dist);
-        cam.lookAt(0, cy, 0);
-        cam.updateMatrixWorld();
-        // move it right until both ends are inside the margin (it leans with perspective)
-        let px = 40;
-        for (let i = 0; i < 8; i++) {
-          const ray = new Vector3((px / el.clientWidth) * 2 - 1, 0, 0.5).unproject(cam).sub(cam.position).normalize();
-          const p = cam.position.clone().add(ray.multiplyScalar(dist));
-          pillar = { x: p.x, z: p.z };
-          const xs = [heightOf(0), heightOf(lastOrder) + 6].map((h) => {
-            const v = new Vector3(p.x, h, p.z).project(cam);
-            return ((v.x + 1) / 2) * el.clientWidth;
-          });
-          const short = 30 - Math.min(...xs);
-          if (short <= 1) break;
-          px += short;
-        }
-        placeRuler();
-      }
+      pillarReady = true;
+      placeRuler();
       // on first view the chart turns slowly into place once (about 40 degrees, easing out), then rests;
       // any touch stops it, and readers who ask for less motion get the still view
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {

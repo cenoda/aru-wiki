@@ -5,7 +5,7 @@
 // For every story unit (act, or act-less unit from quest-units.json) this records which lore
 // pages it links to, and for each lore page the units in release order.
 // Reads quests.json, quest-units.json, versions.json and the Fandom dump; writes lore-links.json.
-import { readFile, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { generatedFile } from './paths.mjs';
 import { FandomClient } from './client.mjs';
 import { linkTargets, normalizeTitle } from './wikitext.mjs';
@@ -16,6 +16,15 @@ const read = async (f) => JSON.parse(await readFile(file(f), 'utf8'));
 const [quests, unitData, versions] = await Promise.all(['quests.json', 'quest-units.json', 'versions.json'].map(read));
 const pages = await client.pageTexts();
 const byId = new Map(quests.map((q) => [q.id, q]));
+// Pages people put in a theme (data/manual/theme-*.json: the theme page and its includes) are kept
+// even when only one story unit links them: a page met in one story is still part of the theme
+// (Direidyth appears in a single 5.7 act). Other pages still need two units.
+const manualDir = new URL('../../data/manual/', import.meta.url);
+const themePages = new Set();
+for (const f of (await readdir(manualDir)).filter((x) => /^theme-.+\.json$/.test(x))) {
+  const m = JSON.parse(await readFile(new URL(f, manualDir), 'utf8'));
+  for (const t of [m.page, ...(m.include ?? [])]) if (t) themePages.add(normalizeTitle(t));
+}
 const vOrder = new Map(versions.map((v) => [v.id, v.order]));
 
 // units: acts (their quests) and act-less units
@@ -49,7 +58,7 @@ for (const u of units) {
 }
 
 // categories of targets linked from at least two units (a single mention cannot link two stories)
-const targets = [...count].filter(([, n]) => n >= 2).map(([t]) => t);
+const targets = [...count].filter(([t, n]) => n >= 2 || themePages.has(t)).map(([t]) => t);
 const canonical = await client.resolve(targets);
 const cats = new Map();
 const unique = [...new Set(canonical.values())];
@@ -70,7 +79,7 @@ const kindOf = (title) => {
   if (c.some((x) => CHARACTER.test(x))) return 'character';
   return c.some((x) => LORE.test(x)) ? 'lore' : null;
 };
-const isLore = (title) => kindOf(title) !== null;
+const isLore = (title) => kindOf(title) !== null || themePages.has(title);
 
 const loreUnits = {};
 for (const u of units) {
@@ -81,9 +90,9 @@ for (const u of units) {
 }
 const unitVersion = new Map(units.map((u) => [u.id, vOrder.get(u.version) ?? 1e9]));
 const out = Object.fromEntries(Object.entries(loreUnits)
-  .filter(([, s]) => s.size >= 2)
+  .filter(([t, s]) => s.size >= 2 || themePages.has(t))
   .sort((a, b) => b[1].size - a[1].size || a[0].localeCompare(b[0]))
-  .map(([t, s]) => [t, { kind: kindOf(t), categories: cats.get(t).filter((x) => !/Version/.test(x)), units: [...s].sort((a, b) => unitVersion.get(a) - unitVersion.get(b) || a.localeCompare(b)) }]));
+  .map(([t, s]) => [t, { kind: kindOf(t) ?? 'character', categories: cats.get(t).filter((x) => !/Version/.test(x)), units: [...s].sort((a, b) => unitVersion.get(a) - unitVersion.get(b) || a.localeCompare(b)) }]));
 
 await writeFile(file('lore-links.json'), `${JSON.stringify(out, null, 1)}\n`);
 console.log(`${targets.length} link targets in 2+ units, ${Object.keys(out).length} lore pages`);

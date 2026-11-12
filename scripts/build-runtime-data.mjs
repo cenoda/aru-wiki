@@ -57,12 +57,14 @@ const firstOrder = (unitIds) => Math.min(lastOrder, ...unitIds.map((u) => order.
 const pages = [{ page: theme.page, ko: koNames[theme.page]?.ko ?? null, kind: 'lore', hub: true }, ...theme.nodes];
 const unitsOf = new Map(pages.map((p) => [p.page, new Set(loreLinks[p.page]?.units ?? [])]));
 const pairs = [];
+/** pairs that share a single story: used only for a page that has no stronger tie */
+const single = [];
 for (let i = 0; i < pages.length; i++) {
   for (let j = i + 1; j < pages.length; j++) {
     const a = unitsOf.get(pages[i].page), b = unitsOf.get(pages[j].page);
     const shared = [...a].filter((u) => b.has(u));
-    if (shared.length < 2) continue;
-    pairs.push({ a: pages[i].page, b: pages[j].page, shared: shared.length,
+    if (!shared.length) continue;
+    (shared.length < 2 ? single : pairs).push({ a: pages[i].page, b: pages[j].page, shared: shared.length,
       jaccard: shared.length / (a.size + b.size - shared.length), revealed: firstOrder(shared) });
   }
 }
@@ -79,6 +81,15 @@ for (const e of [...pairs].sort((x, y) => y.jaccard - x.jaccard)) {
 for (const p of pages) {
   pairs.filter((e) => e.a === p.page || e.b === p.page).sort((x, y) => y.jaccard - x.jaccard)
     .slice(0, KEEP).forEach((e) => kept.add(e));
+}
+// A page met in a single story (Direidyth, one 5.7 act) shares only one with anything: it keeps that
+// one tie (to the theme page when it can), so it is not left floating without a line.
+const tied = new Set([...kept].flatMap((e) => [e.a, e.b]));
+for (const p of pages) {
+  if (tied.has(p.page)) continue;
+  const best = single.filter((e) => e.a === p.page || e.b === p.page)
+    .sort((x, y) => Number(y.a === theme.page || y.b === theme.page) - Number(x.a === theme.page || x.b === theme.page) || y.jaccard - x.jaccard)[0];
+  if (best) { kept.add(best); tied.add(best.a); tied.add(best.b); }
 }
 await write('theme-khaenriah.json', {
   page: theme.page,

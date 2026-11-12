@@ -118,6 +118,55 @@ function starTexture(color: string, night: boolean, rays: boolean) {
   }
   return new CanvasTexture(c);
 }
+/**
+ * A soft nebula cloud drawn once on a canvas: fractal value noise (wisps) inside a round falloff,
+ * tinted. Pure decoration behind the chart; it carries no data.
+ */
+function nebulaTexture(seed: number, tint: string) {
+  const S = 256;
+  const c = document.createElement('canvas');
+  c.width = c.height = S;
+  const ctx = c.getContext('2d')!;
+  let st = seed;
+  const rnd = () => ((st = (st * 16807) % 2147483647) / 2147483647);
+  // value noise on a few octaves
+  const G = 17, grids = [0, 1, 2, 3, 4].map(() => Array.from({ length: G * G }, rnd));
+  const smooth = (t: number) => t * t * (3 - 2 * t);
+  const noise = (g: number[], x: number, y: number) => {
+    const xi = Math.floor(x) % (G - 1), yi = Math.floor(y) % (G - 1), xf = smooth(x - Math.floor(x)), yf = smooth(y - Math.floor(y));
+    const v = (i: number, j: number) => g[(yi + j) * G + xi + i];
+    return (v(0, 0) * (1 - xf) + v(1, 0) * xf) * (1 - yf) + (v(0, 1) * (1 - xf) + v(1, 1) * xf) * yf;
+  };
+  const img = ctx.createImageData(S, S);
+  const col = new Color(tint);
+  for (let y = 0; y < S; y++) {
+    for (let x = 0; x < S; x++) {
+      let n = 0, amp = 0.5, f = 2 / S * 2;
+      for (let o = 0; o < 5; o++) { n += amp * noise(grids[o], x * f * (o + 1) * 1.7, y * f * (o + 1) * 1.7); amp *= 0.5; }
+      const dx = x / S - 0.5, dy = y / S - 0.5;
+      const fall = Math.max(0, 1 - Math.hypot(dx, dy) * 2);
+      const a = Math.max(0, n - 0.38) * 2.2 * fall * fall;
+      const i = (y * S + x) * 4;
+      img.data[i] = col.r * 255; img.data[i + 1] = col.g * 255; img.data[i + 2] = col.b * 255;
+      img.data[i + 3] = Math.min(255, a * 255);
+    }
+  }
+  ctx.putImageData(img, 0, 0);
+  return new CanvasTexture(c);
+}
+
+/** nebula clouds: direction from the chart's centre, size, tint (night) */
+const NEBULAE: { dir: [number, number, number]; size: number; tint: string; seed: number }[] = [
+  // behind the chart as first seen
+  { dir: [-0.45, 0.2, -1], size: 2400, tint: '#6f5bd6', seed: 11 },
+  { dir: [0.5, -0.15, -1], size: 2200, tint: '#3f7fc4', seed: 29 },
+  { dir: [0.05, 0.45, -1], size: 1800, tint: '#b0549c', seed: 47 },
+  { dir: [-0.15, -0.45, -1], size: 1700, tint: '#3f9fa8', seed: 83 },
+  // around the sides, for when the chart is turned
+  { dir: [1, 0.15, -0.1], size: 2200, tint: '#c27a4a', seed: 101 },
+  { dir: [-1, -0.1, 0.3], size: 2200, tint: '#5a6ad0', seed: 131 },
+  { dir: [0.2, 0.2, 1], size: 2400, tint: '#7a4fb8', seed: 151 },
+];
 const starColour = (n: PageNode, sky: Palette) => (n.hub ? sky.hub : sky[n.kind]);
 /** Names are smaller on portrait screens (their size is relative to the view height). */
 const labelScale = (el: HTMLElement) => Math.min(1, (el.clientWidth / Math.max(1, el.clientHeight)) * 1.3);
@@ -706,6 +755,19 @@ export default function WikiGraph3D() {
       transparent: true, opacity: night0 ? 0.35 : 0.14, depthWrite: false, fog: false }));
     dust.raycast = () => {};
     g.scene().add(dust);
+    // nebulae far behind the chart, among the background stars; very faint so the stars stay first
+    const nebulae = NEBULAE.map((nb) => {
+      const mat = new SpriteMaterial({ map: nebulaTexture(nb.seed, nb.tint), transparent: true, depthWrite: false, fog: false,
+        blending: AdditiveBlending, opacity: night0 ? 0.5 : 0 });
+      const sp = new Sprite(mat);
+      const d = new Vector3(...nb.dir).normalize().multiplyScalar(2200);
+      sp.position.copy(d);
+      sp.scale.setScalar(nb.size);
+      sp.renderOrder = -2;
+      sp.raycast = () => {};
+      g.scene().add(sp);
+      return sp;
+    });
 
     applySky.current = (s) => {
       fog.color.set(s.sky);
@@ -719,6 +781,7 @@ export default function WikiGraph3D() {
       for (const t of tethers) t.line.material.color.set(s.line);
       for (const r of refLines) r.mat.color.set(s.line);
       paintTails.current();
+      for (const nb of nebulae) nb.material.opacity = s.night ? 0.5 : 0;
       dust.material.color.set(s.night ? '#c9d3ff' : '#7a87ad');
       dust.material.opacity = s.night ? 0.35 : 0.14;
       wakeUp();
@@ -815,6 +878,7 @@ export default function WikiGraph3D() {
       showTethers.current = () => {};
       placeNow.current = () => {};
       dust.geometry.dispose(); dust.material.dispose();
+      for (const nb of nebulae) { nb.material.map?.dispose(); nb.material.dispose(); }
       g._destructor();
       el.replaceChildren();
       graph.current = null;

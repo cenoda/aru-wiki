@@ -871,6 +871,13 @@ export default function WikiGraph3D() {
         dist *= Math.max(q(ax) / (0.9 * (1 - RULER_W / el.clientWidth)), q(ay) / 0.82);
       }
       g.cameraPosition({ x: 0, y: cy + Math.sin(tilt) * dist, z: Math.cos(tilt) * dist }, { x: 0, y: cy, z: 0 }, 0);
+      // zoom limits: out to a little under twice the first view (the background stars start at 1600,
+      // so the chart never shrinks to a speck inside a ball of dots), in to about a star's neighbourhood
+      {
+        const c = g.controls() as { minDistance: number; maxDistance: number };
+        c.maxDistance = Math.min(dist * 1.8, 1400);
+        c.minDistance = Math.max(60, dist * 0.3);
+      }
       pillarReady = true;
       placeRuler();
       // on first view the chart turns slowly into place once (about 40 degrees, easing out), then rests;

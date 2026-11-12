@@ -69,7 +69,7 @@
 - [x] contact@aru.wiki 수신과 알림 확인(2026-11-12, 사용자).
 - [x] OCI 배포(2026-11-12, https://aru.wiki 공개). 서버 `147.224.187.173`(A2 1 OCPU·2GB, Ubuntu 24.04, 사용자 `ubuntu`). 이 컴퓨터의 `~/.ssh/aru-deploy` 키로 접속한다(서버 `authorized_keys`에서 그 줄을 지우면 막힌다).
   - 서버에 한 것: 스왑 2GB, iptables 80·443 허용(저장), Caddy 2.6, Node 18(Ubuntu 패키지; report-server는 내장 모듈만 써서 돌아간다). 사이트 `/srv/aru/site`, 신고 데몬 `/opt/aru-report` + `aru-report.service`(DynamicUser, 기록 `/var/lib/aru-report/reports.jsonl`). Caddyfile: `aru.wiki` HTTPS(Let's Encrypt, Caddy가 자동 갱신), `www`와 IP 접속은 `https://aru.wiki`로 넘긴다. zstd/gzip 압축, `/assets/*` 1년 immutable 캐시, `/`·`/index.html` no-cache, HSTS. OCSP 경고 로그는 Let's Encrypt가 OCSP를 끝내서 나는 것이라 무시한다.
-  - 배포: 로컬에서 `npm run fetch:icons` → `npm run build` → `rsync -az --delete -e "ssh -i ~/.ssh/aru-deploy" dist/ ubuntu@147.224.187.173:/srv/aru/site/`.
+  - 배포: 로컬에서 `npm run fetch:icons` → `npm run build` → `rsync -az --delete -e "ssh -i ~/.ssh/aru-deploy" dist/ ubuntu@147.224.187.173:/srv/aru/site/`. 스킬로도 둔다: `.claude/skills/push`(GitHub), `.claude/skills/deploy`(서버, 2026-11-12 사용자 허락).
   - 사용자가 OCI 보안 목록 TCP 80·443 수신 허용, DNS A 레코드 `@`·`www` → 147.224.187.173을 넣었다(2026-11-12). 브라우저로 메인·`?view=wiki3d`가 오류 없이 뜨는 것을 확인했다.
 
 ## 기다리는 것

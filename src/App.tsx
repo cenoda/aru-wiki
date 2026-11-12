@@ -2,7 +2,7 @@ import { type ComponentType, useEffect, useState } from 'react';
 import { loadData } from './data';
 
 // The views read the graph data while their modules load, so import them only after loadData().
-// The site opens on the lore theme in 3D (with its article pages, `?page=`). `?view=quests` is the
+// The site opens on the lore theme in 3D (with its article pages, `/wiki/<name>`; old `?page=`, see route.ts). `?view=quests` is the
 // quest map; old quest links (`?act=`, `?unit=` without a view) still open it. `?view=wiki3d` is the
 // 3D view's old address. `?view=map` keeps the layered graph of the first prototype and
 // `?view=emblems` previews the region emblems.

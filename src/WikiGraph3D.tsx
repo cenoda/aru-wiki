@@ -26,6 +26,7 @@ import snapshotsUrl from '../data/runtime/snapshots-khaenriah.json?url';
 import { ReportBox } from './ReportBox';
 import { useLinker } from './Linked';
 import { Search } from './Search';
+import { articleKeyFromUrl, articleUrl, isArticleUrl, pathNameOf, resolvePage } from './route';
 import { Logo } from './Logo';
 import { versions } from './data';
 import {
@@ -148,13 +149,8 @@ function lineLook(l: PageLink, look: Look, out: LineParts) {
       : look.inFocus(s) && look.inFocus(t) ? 0.12 + 0.4 * w : 0.04;
 }
 
-/** The address of the chart, or of an article page, at a version. */
-const urlFor = (page: string | null, order: number) => {
-  const q = new URLSearchParams();
-  if (page) q.set('page', page);
-  q.set('v', versions[order]?.id ?? '');
-  return `${location.pathname}?${q}`;
-};
+/** The address of the chart (`null`), or of an article page by its address name, at a version. */
+const urlFor = (name: string | null, order: number) => articleUrl(name, versions[order]?.id ?? '');
 /** Whether this browser can draw WebGL at all; without it the chart is replaced by a notice. */
 const canDraw3D = () => {
   try {
@@ -186,8 +182,14 @@ export default function WikiGraph3D() {
   const [snapshots, setSnapshots] = useState<Snapshots | null>(null);
   const [vIdx, setVIdx] = useState(() => versionFromUrl() ?? versions.length - 1);
   const [selected, setSelected] = useState<string | null>(null);
-  /** the article page open over the chart (URL ?page=), or null for the chart */
-  const [article, setArticle] = useState<string | null>(() => new URLSearchParams(location.search).get('page'));
+  /** the article open over the chart as the address names it (`/wiki/<name>`, old `?page=`), or null for the chart */
+  const [article, setArticle] = useState<string | null>(articleKeyFromUrl);
+  /** the page id of that article once the theme is loaded (an unknown name stays as written) */
+  const page = useMemo(() => (article && theme ? resolvePage(article, theme.nodes) ?? article : article), [article, theme]);
+  const pageNow = useRef(page);
+  pageNow.current = page;
+  /** a page's address: by its Korean name when it has one */
+  const nameFor = (id: string) => pathNameOf(id, index?.byId); // called after render, when index is set
 
   // ---------- article pages: the address follows the open page and the version ----------
   // Opening a page pushes a history entry, so the browser's back button returns to the chart (or the
@@ -199,20 +201,19 @@ export default function WikiGraph3D() {
   const openArticle = (page: string) => {
     const t = trail();
     const depth = t.aruDepth ?? 0;
-    history.pushState({ aruDepth: depth + 1, fromChart: depth > 0 ? !!t.fromChart : article === null }, '', urlFor(page, vNow.current));
+    history.pushState({ aruDepth: depth + 1, fromChart: depth > 0 ? !!t.fromChart : article === null }, '', urlFor(nameFor(page), vNow.current));
     setArticle(page);
   };
   const closeArticle = () => {
-    if (article) setSelected(article); // back on the chart, the page's star stays picked
+    if (page) setSelected(page); // back on the chart, the page's star stays picked
     const t = trail();
     if (t.fromChart && t.aruDepth) history.go(-t.aruDepth); // return to the chart's own entry
     else { history.pushState(null, '', urlFor(null, vNow.current)); setArticle(null); } // came in by a link
   };
   useEffect(() => {
     const onPop = () => {
-      const q = new URLSearchParams(location.search);
-      const page = q.get('page');
-      setArticle((cur) => { if (cur && !page) setSelected(cur); return page; });
+      const key = articleKeyFromUrl();
+      setArticle((cur) => { if (cur && !key) setSelected(pageNow.current); return key; });
       const v = versionFromUrl();
       if (v !== null) setVIdx(v);
     };
@@ -220,8 +221,9 @@ export default function WikiGraph3D() {
     return () => removeEventListener('popstate', onPop);
   }, []);
   useEffect(() => {
-    if (new URLSearchParams(location.search).has('v') || article) history.replaceState(history.state, '', urlFor(article, vIdx));
-  }, [vIdx, article]);
+    // also turns an old `?page=` link, or a page's other name, into the short address by its Korean name
+    if (new URLSearchParams(location.search).has('v') || isArticleUrl()) history.replaceState(history.state, '', urlFor(page && nameFor(page), vIdx));
+  }, [vIdx, page, theme]);
   const [hovered, setHovered] = useState<string | null>(null);
   const [night, setNight] = useState(prefersDark);
   const [gl] = useState(canDraw3D);
@@ -582,7 +584,7 @@ export default function WikiGraph3D() {
   const themeName = hubNode ? nameOf(hubNode) : '테마';
   // the latest snapshot written for the chosen version or before it
   const snap = sel && snapshots ? snapshotAt(snapshots[sel.id], vIdx) : null;
-  const hrefOf = (p: string) => urlFor(p, vIdx);
+  const hrefOf = (p: string) => urlFor(pathNameOf(p, index?.byId), vIdx);
   const link = useLinker(theme?.nodes, vIdx, sel?.id ?? null, hrefOf, openArticle);
   const cardSeen = new Set<string>();
   const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.theme_units - a.theme_units) : [];
@@ -590,7 +592,7 @@ export default function WikiGraph3D() {
   return (
     <div className={`site graph-page w3d${night ? ' night' : ' day'}`}>
       <div className="wrap"><header>
-        <a className="logo" href="./"><Logo />aru.wiki</a>
+        <a className="logo" href="/"><Logo />aru.wiki</a>
         {article ? (
           <button type="button" className="w3d-back" onClick={closeArticle}>← 3D 지도</button>
         ) : !gl ? null : <div className="legend" aria-label="범례">
@@ -601,13 +603,13 @@ export default function WikiGraph3D() {
         </div>}
         <nav>
           {theme && gl && <Search nodes={theme.nodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />}
-          <a className="band" href="?view=quests">임무 지도</a>
+          <a className="band" href="/?view=quests">임무 지도</a>
           <VersionPicker order={vIdx} onChange={setVIdx} />
         </nav>
       </header></div>
       {article && theme && index && (
-        <WikiArticle page={article} theme={theme} byId={index.byId} snapshots={snapshots} vIdx={vIdx}
-          hrefOf={(p) => urlFor(p, vIdx)} onOpen={openArticle} />
+        <WikiArticle page={page!} theme={theme} byId={index.byId} snapshots={snapshots} vIdx={vIdx}
+          hrefOf={hrefOf} onOpen={openArticle} />
       )}
       {article && !theme && <p className="w3d-status">{failed ? '테마 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
       {/* the chart stays mounted (camera and selection kept) but hidden behind an open article */}
@@ -627,7 +629,7 @@ export default function WikiGraph3D() {
         <aside className="w3d-card" aria-live="polite">
           <p className="w3d-type">{sel.hub ? '테마' : KIND_LABEL[sel.kind]} · {versions[sel.revealed]?.id}부터</p>
           <h2>{nameOf(sel)}</h2>
-          <a className="w3d-more" href={urlFor(sel.id, vIdx)} onClick={(e) => {
+          <a className="w3d-more" href={hrefOf(sel.id)} onClick={(e) => {
             if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
             e.preventDefault();
             openArticle(sel.id);

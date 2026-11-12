@@ -10,7 +10,7 @@ import { versions } from './data';
 import { type Linker, useLinker } from './Linked';
 import {
   type ArtPara, type ArtSource, articleAt, idOf, KIND_LABEL, loadPageData, nameOf, type PageData, type PageNode, pageUrl, revisionUrl,
-  snapshotAt, type Snapshots, type Theme, withParticle,
+  snapshotAt, type Snapshots, type Theme,
 } from './lore';
 import { editsFor, hasHumanPage, humanPage, overlay, type Para, paraText } from './readerEdits';
 import { ReportBox } from './ReportBox';
@@ -65,7 +65,7 @@ function useFootnotes(order: ArtSource[]) {
 }
 
 /** **bold** marks and links in one piece of text */
-function rich(text: string, link: Linker, seen: Set<string>): ReactNode[] {
+export function rich(text: string, link: Linker, seen: Set<string>): ReactNode[] {
   return text.split(/\*\*(.+?)\*\*/g).map((part, i) => (i % 2 ? <b key={i}>{link(part, seen)}</b> : <span key={i}>{link(part, seen)}</span>));
 }
 
@@ -107,10 +107,6 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [art, current, timeline.length, vIdx]);
   const notes = useFootnotes(cites);
-  const hub = byId.get(theme.page);
-  const themeName = hub ? nameOf(hub) : '테마';
-  /** a page of the theme (drawn in the chart), not one from the whole-wiki run */
-  const inTheme = theme.nodes.some((n) => n.id === page);
   const link = useLinker(nodes, vIdx, page, hrefOf, onOpen);
 
   const related = useMemo(() => {
@@ -119,7 +115,7 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
       .filter((l) => l.revealed <= vIdx && (idOf(l.source) === page || idOf(l.target) === page))
       .map((l) => ({ n: byId.get(idOf(l.source) === page ? idOf(l.target) : idOf(l.source))!, shared: l.shared }))
       .filter((x) => x.n && x.n.revealed <= vIdx)
-      .sort((a, b) => b.shared - a.shared || b.n.theme_units - a.n.theme_units);
+      .sort((a, b) => b.shared - a.shared || b.n.units - a.n.units);
   }, [node, theme, page, vIdx, byId]);
 
   // a new article starts at the top; the title follows it
@@ -222,7 +218,7 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
     <main className="wa" ref={root}>
       <article className="wa-body">
         <h1 className="wa-title">{name}</h1>
-        <p className="wa-sub">aru.wiki{inTheme ? ` · ${themeName} 테마` : ''} · {versions[vIdx]?.id}까지 공개된 내용</p>
+        <p className="wa-sub">aru.wiki · {versions[vIdx]?.id}까지 공개된 내용</p>
 
         <div className="wa-notice" role="note">
           <span className="tag neutral">미검수</span>
@@ -233,9 +229,8 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
           <p className="wa-ib-title">{name}</p>
           <dl>
             {node.ko && <><dt>영어 이름</dt><dd lang="en">{node.id}</dd></>}
-            <dt>분류</dt><dd>{node.hub ? '테마' : KIND_LABEL[node.kind]}</dd>
+            <dt>분류</dt><dd>{KIND_LABEL[node.kind]}</dd>
             <dt>처음 나온 버전</dt><dd>{versionLabel(node.revealed)}</dd>
-            {!node.hub && inTheme && <><dt>{themeName}{withParticle(themeName)} 함께 나오는 이야기</dt><dd>{node.theme_units}개</dd></>}
             <dt>나오는 이야기</dt><dd>{node.units}개</dd>
             {basis && <><dt>서술 기준</dt><dd>{versions[basis.from]?.id} 때의 자료</dd></>}
             {chars > 0 && <><dt>본문</dt><dd>{chars.toLocaleString()}자</dd></>}
@@ -327,13 +322,10 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
               {related.map(({ n, shared }) => (
                 <li key={n.id}>
                   <a href={hrefOf(n.id)} onClick={go(n.id)}>{nameOf(n)}</a>
-                  <span className="wa-muted"> · {n.hub ? '테마' : KIND_LABEL[n.kind]} · 함께 나오는 이야기 {shared}개</span>
+                  <span className="wa-muted"> · {KIND_LABEL[n.kind]} · 함께 나오는 이야기 {shared}개</span>
                 </li>
               ))}
             </ul>
-            {!node.hub && inTheme && hub && !related.some((r) => r.n.id === hub.id) && (
-              <p className="wa-small">테마 문서: <a href={hrefOf(hub.id)} onClick={go(hub.id)}>{themeName}</a></p>
-            )}
           </section>
         )}
 

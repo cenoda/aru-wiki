@@ -44,26 +44,46 @@ const write = async (name, data) => {
 };
 await write('graph.json', graph);
 
-// ---------- lore theme graph (stage 2 preview: Khaenri'ah) ----------
-// Nodes: the theme page and its candidates (scripts/theme/candidates.mjs). Links: pages that share
-// story units (see the constellation rule below). A page or link appears from the
-// version of the earliest story unit behind it, so the version picker hides what comes later.
+// ---------- the 3D chart: every page with an article (the whole wiki) ----------
+// Nodes: the Khaenri'ah theme's pages (scripts/theme/candidates.mjs) and every page the whole-wiki
+// run (articles.mjs all) wrote an article for, so the chart grows as articles are written. Teyvat
+// is the chart's centre when it is in. Links: pages that share story units (see the constellation
+// rule below). A page or link appears from the version of the earliest story unit behind it, so
+// the version picker hides what comes later.
+import { existsSync } from 'node:fs';
 const [theme, loreLinks, koNames] = await Promise.all([read('theme-khaenriah.json'), read('lore-links.json'), read('ko-names.json')]);
 const unitVersion = new Map([...quests, ...units.units].map((x) => [x.id, x.first_version]));
 const order = new Map(versions.map((v) => [v.id, v.order]));
 const lastOrder = versions.length - 1;
 const firstOrder = (unitIds) => Math.min(lastOrder, ...unitIds.map((u) => order.get(unitVersion.get(u)) ?? lastOrder));
+const ART_ALL = new URL('data/generated/articles-all.json', root);
+const allArticles = existsSync(ART_ALL) ? JSON.parse(await readFile(ART_ALL, 'utf8')).articles : [];
+/** a whole-wiki article with at least one paragraph the site shows (the same test as the article files below) */
+const showsSomething = (a) => a.paragraphs.some((p) => (p.status === 'accepted' || p.status === 'trimmed') && p.sentences.some((x) => !x.dropped));
+const themePages = [{ page: theme.page, kind: 'lore' }, ...theme.nodes];
+const chartIds = [...new Set([...themePages.map((p) => p.page), ...allArticles.filter(showsSomething).map((a) => a.node)])];
+const HUB = chartIds.includes('Teyvat') ? 'Teyvat' : theme.page;
+const kindOf = new Map(themePages.map((p) => [p.page, p.kind]));
 // official Korean names (ko-names.json, Fandom {{Other Languages}}), never hand-transliterated
-const pages = [{ page: theme.page, ko: koNames[theme.page]?.ko ?? null, kind: 'lore', hub: true }, ...theme.nodes];
+const pages = chartIds.map((id) => ({ page: id, ko: koNames[id]?.ko ?? null, kind: kindOf.get(id) ?? loreLinks[id]?.kind ?? 'lore', hub: id === HUB }));
 const unitsOf = new Map(pages.map((p) => [p.page, new Set(loreLinks[p.page]?.units ?? [])]));
 const pairs = [];
 /** pairs that share a single story: used only for a page that has no stronger tie */
 const single = [];
-for (let i = 0; i < pages.length; i++) {
-  for (let j = i + 1; j < pages.length; j++) {
+{
+  // shared stories by a unit → pages index, not every pair of pages
+  const byUnit = new Map();
+  pages.forEach((p, i) => { for (const u of unitsOf.get(p.page)) (byUnit.get(u) ?? byUnit.set(u, []).get(u)).push(i); });
+  const sharedOf = new Map();
+  for (const [u, list] of byUnit) {
+    for (let x = 0; x < list.length; x++) for (let y = x + 1; y < list.length; y++) {
+      const key = list[x] * 100000 + list[y];
+      (sharedOf.get(key) ?? sharedOf.set(key, []).get(key)).push(u);
+    }
+  }
+  for (const [key, shared] of sharedOf) {
+    const i = Math.floor(key / 100000), j = key % 100000;
     const a = unitsOf.get(pages[i].page), b = unitsOf.get(pages[j].page);
-    const shared = [...a].filter((u) => b.has(u));
-    if (!shared.length) continue;
     (shared.length < 2 ? single : pairs).push({ a: pages[i].page, b: pages[j].page, shared: shared.length,
       jaccard: shared.length / (a.size + b.size - shared.length), revealed: firstOrder(shared) });
   }
@@ -78,17 +98,18 @@ for (const e of [...pairs].sort((x, y) => y.jaccard - x.jaccard)) {
   const ra = setOf(e.a), rb = setOf(e.b);
   if (ra !== rb) { parent.set(ra, rb); kept.add(e); }
 }
-for (const p of pages) {
-  pairs.filter((e) => e.a === p.page || e.b === p.page).sort((x, y) => y.jaccard - x.jaccard)
-    .slice(0, KEEP).forEach((e) => kept.add(e));
+{
+  const ofPage = new Map();
+  for (const e of pairs) for (const p of [e.a, e.b]) (ofPage.get(p) ?? ofPage.set(p, []).get(p)).push(e);
+  for (const list of ofPage.values()) list.sort((x, y) => y.jaccard - x.jaccard).slice(0, KEEP).forEach((e) => kept.add(e));
 }
 // A page met in a single story (Direidyth, one 5.7 act) shares only one with anything: it keeps that
-// one tie (to the theme page when it can), so it is not left floating without a line.
+// one tie (to the centre page when it can), so it is not left floating without a line.
 const tied = new Set([...kept].flatMap((e) => [e.a, e.b]));
 for (const p of pages) {
   if (tied.has(p.page)) continue;
   const best = single.filter((e) => e.a === p.page || e.b === p.page)
-    .sort((x, y) => Number(y.a === theme.page || y.b === theme.page) - Number(x.a === theme.page || x.b === theme.page) || y.jaccard - x.jaccard)[0];
+    .sort((x, y) => Number(y.a === HUB || y.b === HUB) - Number(x.a === HUB || x.b === HUB) || y.jaccard - x.jaccard)[0];
   if (best) { kept.add(best); tied.add(best.a); tied.add(best.b); }
 }
 // pages that mention another in their own prose (scripts/theme/refs.mjs), apart from the pairs
@@ -104,12 +125,10 @@ if (existsSync(refsFile)) {
     refPairs.set(key, cur ? { ...cur, both: cur.both || cur.from !== r.from } : { from: r.from, to: r.to, both: false });
   }
 }
-await write('theme-khaenriah.json', {
-  page: theme.page,
+await write('chart.json', {
+  page: HUB,
   nodes: pages.map((p) => ({
     id: p.page, ko: p.ko ?? null, kind: p.kind ?? 'lore', hub: !!p.hub, units: unitsOf.get(p.page).size,
-    // how much of the theme's story the page is part of: story units shared with the theme page
-    theme_units: [...unitsOf.get(p.page)].filter((u) => unitsOf.get(theme.page).has(u)).length,
     revealed: unitsOf.get(p.page).size ? firstOrder([...unitsOf.get(p.page)]) : lastOrder,
   })),
   links: [...kept].map((e) => ({ source: e.a, target: e.b, shared: e.shared, revealed: e.revealed })),
@@ -155,7 +174,6 @@ await write('snapshots-khaenriah.json', byPage);
 // sentences that passed the second model's check are kept; a paragraph that lost more than half is
 // gone. Interpretation sentences keep their mark (i: 1). Each page's file also carries its
 // timeline (scripts/theme/reveals.mjs): what the wiki newly said at each version snapshot.
-import { existsSync } from 'node:fs';
 import { rm } from 'node:fs/promises';
 const ART = new URL('data/generated/articles-khaenriah.json', root);
 const REV = new URL('data/generated/reveals-khaenriah.json', root);
@@ -164,7 +182,6 @@ await rm(artDir, { recursive: true, force: true });
 await mkdir(artDir, { recursive: true });
 const stamp = new Map(snaps.flatMap((s) => s.input.map((i) => [i.revision, (i.timestamp ?? '').slice(0, 10)])));
 // the whole-wiki theme (articles.mjs all): pages outside this theme, with their revision dates from its plan
-const ART_ALL = new URL('data/generated/articles-all.json', root);
 const PLAN_ALL = new URL('data/generated/snapshots-all-plan.json', root);
 if (existsSync(PLAN_ALL)) for (const [rev, date] of Object.entries(JSON.parse(await readFile(PLAN_ALL, 'utf8')).revision_dates ?? {})) if (!stamp.has(Number(rev))) stamp.set(Number(rev), date);
 const perPage = {};
@@ -182,11 +199,12 @@ const sourceTable = () => {
   };
   return { ref, done: () => list.map(({ key, ...x }) => x) };
 };
-const inTheme = new Set(pages.map((p) => p.page));
+const inTheme = new Set(themePages.map((p) => p.page));
+const inChart = new Set(chartIds);
 const articleList = [
   ...(existsSync(ART) ? JSON.parse(await readFile(ART, 'utf8')).articles : []),
   // a page of this theme keeps its theme article (written with the theme's other pages as context)
-  ...(existsSync(ART_ALL) ? JSON.parse(await readFile(ART_ALL, 'utf8')).articles.filter((a) => !inTheme.has(a.node)) : []),
+  ...allArticles.filter((a) => !inTheme.has(a.node)),
 ];
 {
   for (const a of articleList) {
@@ -233,11 +251,11 @@ for (const [page, data] of Object.entries(perPage)) {
   await writeFile(new URL(`${slug}.json`, artDir), text);
 }
 console.log(`data/runtime/articles/ ${slugs.size} pages, ${(total / 1024).toFixed(0)} KB`);
-// Pages outside the theme that have an article: found by search and inline links, opened as article
-// pages, not drawn in the 3D chart. Same fields as the theme's nodes (src/lore.ts PageNode).
-await write('pages.json', Object.keys(perPage).filter((p) => !inTheme.has(p)).sort().map((p) => {
+// Pages with an article that are not stars of the chart (none while every article is drawn): found by
+// search and inline links, opened as article pages. Same fields as the chart's nodes (src/lore.ts PageNode).
+await write('pages.json', Object.keys(perPage).filter((p) => !inChart.has(p)).sort().map((p) => {
   const u = loreLinks[p]?.units ?? [];
-  return { id: p, ko: koNames[p]?.ko ?? null, kind: loreLinks[p]?.kind ?? 'lore', hub: false, units: u.length, theme_units: 0,
+  return { id: p, ko: koNames[p]?.ko ?? null, kind: loreLinks[p]?.kind ?? 'lore', hub: false, units: u.length,
     revealed: u.length ? firstOrder(u) : lastOrder };
 }));
 /** the file name of a page's articles; src/lore.ts articleSlug must match */

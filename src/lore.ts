@@ -13,7 +13,7 @@ export interface Snapshot {
 export type Snapshots = Record<string, Snapshot[]>;
 
 export interface PageNode {
-  id: string; ko: string | null; kind: 'character' | 'lore'; hub: boolean; units: number; theme_units: number; revealed: number;
+  id: string; ko: string | null; kind: 'character' | 'lore'; hub: boolean; units: number; revealed: number;
   x?: number; y?: number; z?: number; fx?: number; fy?: number; fz?: number;
 }
 export interface PageLink { source: string | PageNode; target: string | PageNode; shared: number; revealed: number }

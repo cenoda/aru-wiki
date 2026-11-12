@@ -9,14 +9,14 @@ const SITE = 'https://aru.wiki';
 const root = new URL('../../', import.meta.url);
 const read = async (f) => JSON.parse(await readFile(new URL(`data/runtime/${f}`, root), 'utf8'));
 
-const theme = await read('theme-khaenriah.json');
-// pages outside the theme that also have an article (written only once the whole-wiki pass exists)
+const chart = await read('chart.json');
+// pages with an article that are not stars of the chart
 const others = existsSync(new URL('data/runtime/pages.json', root)) ? await read('pages.json') : [];
 // the same name and encoding as articleUrl() in src/route.ts: Korean name, else the page id
 const path = (n) => `/wiki/${encodeURIComponent((n.ko ?? n.id).replace(/ /g, '_')).replace(/%2F/gi, '/')}`;
 const seen = new Set();
 const urls = [`${SITE}/`];
-for (const n of [...theme.nodes, ...others]) {
+for (const n of [...chart.nodes, ...others]) {
   const u = SITE + path(n);
   if (!seen.has(u)) { seen.add(u); urls.push(u); }
 }

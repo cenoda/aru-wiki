@@ -7,7 +7,7 @@ import { versions } from './data';
 import { KIND_LABEL, nameOf, type PageNode, type Theme } from './lore';
 import { focusUrl, questHits } from './questSearch';
 import { loadPublished, type Published } from './readerEdits';
-import themeUrl from '../data/runtime/theme-khaenriah.json?url';
+import themeUrl from '../data/runtime/chart.json?url';
 import pagesUrl from '../data/runtime/pages.json?url';
 import './search.css';
 
@@ -26,7 +26,7 @@ export interface SearchProps {
   className?: string;
 }
 
-/** Every page with an article, for a view that does not load the theme itself (the quest map). */
+/** Every page with an article, for a view that does not load the chart itself (the quest map). */
 export async function loadSearchNodes(): Promise<PageNode[]> {
   const get = (url: string) => fetch(url).then((r) => (r.ok ? r.json() : Promise.reject(r.status)));
   const [theme, extra] = await Promise.all([get(themeUrl) as Promise<Theme>, get(pagesUrl).catch(() => []) as Promise<PageNode[]>]);
@@ -73,7 +73,7 @@ export function Search({ nodes, vIdx, hrefOf, onOpen, onQuest, big, autoFocus, n
         return { n, rank };
       })
       .filter((x) => x.rank >= 0)
-      .sort((a, b) => a.rank - b.rank || Number(b.n.hub) - Number(a.n.hub) || b.n.theme_units - a.n.theme_units)
+      .sort((a, b) => a.rank - b.rank || Number(b.n.hub) - Number(a.n.hub) || b.n.units - a.n.units)
       .slice(0, 6)
       .map((x) => x.n);
   }, [q, nodes, vIdx]);
@@ -83,7 +83,7 @@ export function Search({ nodes, vIdx, hrefOf, onOpen, onQuest, big, autoFocus, n
   const rows: Row[] = [
     ...hits.map((n): Row => ({
       key: n.id, href: hrefOf(n.id), go: () => { done(); onOpen(n.id); },
-      body: <><b>{nameOf(n)}</b><span>{n.hub ? '테마' : KIND_LABEL[n.kind]}{n.ko && <> · <span lang="en">{n.id}</span></>}</span></>,
+      body: <><b>{nameOf(n)}</b><span>{KIND_LABEL[n.kind]}{n.ko && <> · <span lang="en">{n.id}</span></>}</span></>,
     })),
     ...quests.map((h, i): Row => ({
       key: `q:${h.key}`, href: `/${focusUrl(h.target)}`, head: i === 0 && hits.length ? '임무' : undefined,

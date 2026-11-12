@@ -161,11 +161,11 @@ function builtLeftovers(b) {
   for (const f of graph?.imageFiles ?? []) {
     if (b.files.has(f.file) || b.characters.has(f.character)) out.push(`data/runtime/graph.json: image record ${f.file} (src/data.ts hides it on screen; the build-runtime-data hook drops it from the data)`);
   }
-  for (const name of ['theme-khaenriah.json', 'snapshots-khaenriah.json']) {
+  for (const name of ['chart.json', 'pages.json', 'snapshots-khaenriah.json']) {
     const u = new URL(`data/runtime/${name}`, root);
     if (!existsSync(u)) continue;
     const data = JSON.parse(readFileSync(u, 'utf8'));
-    const ids = name.startsWith('theme') ? data.nodes.map((n) => n.id) : Object.keys(data);
+    const ids = name === 'chart.json' ? data.nodes.map((n) => n.id) : name === 'pages.json' ? data.map((n) => n.id) : Object.keys(data);
     for (const p of b.pages) if (ids.includes(p)) out.push(`data/runtime/${name}: page ${p} (needs the build-runtime-data hook)`);
   }
   return out;

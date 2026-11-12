@@ -1,8 +1,8 @@
-// Stage-2 preview: the Khaenri'ah lore theme as a star chart, to see its shape (not the final
-// arrangement). Pages are stars; two pages are joined when they appear in the same story units
+// The whole wiki as a star chart (not the final arrangement): every page with an article is a star,
+// with Teyvat at the centre. Two pages are joined when they appear in the same story units
 // (scripts/build-runtime-data.mjs keeps a spanning tree plus each page's two strongest ties).
 //
-// Ecliptic layout: the stars spread over one plane around the theme page and only drift a little
+// Ecliptic layout: the stars spread over one plane around the centre page and only drift a little
 // above or below it, so the chart reads like a map yet still has depth when turned. Height follows
 // the version a page was revealed in: earlier pages sit a little below the plane, later ones above.
 // Lines keep a fixed pixel width at any zoom; brightness and width follow how many stories two
@@ -21,7 +21,7 @@ import { Line2 } from 'three/examples/jsm/lines/Line2.js';
 import { LineGeometry } from 'three/examples/jsm/lines/LineGeometry.js';
 import { LineMaterial } from 'three/examples/jsm/lines/LineMaterial.js';
 import SpriteText from 'three-spritetext';
-import themeUrl from '../data/runtime/theme-khaenriah.json?url';
+import themeUrl from '../data/runtime/chart.json?url';
 import snapshotsUrl from '../data/runtime/snapshots-khaenriah.json?url';
 import pagesUrl from '../data/runtime/pages.json?url';
 import { ReportBox } from './ReportBox';
@@ -31,11 +31,11 @@ import { articleKeyFromUrl, articleUrl, isArticleUrl, pathNameOf, resolvePage } 
 import { Logo } from './Logo';
 import { versions } from './data';
 import {
-  idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, revisionUrl, snapshotAt, type Snapshots, type Theme, withParticle,
+  idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, articleAt, loadPageData, type PageData, revisionUrl, snapshotAt, type Snapshots, type Theme,
 } from './lore';
 import { VersionPicker } from './VersionPicker';
 import { ThemeToggle, useTheme } from './theme';
-import { WikiArticle } from './WikiArticle';
+import { rich, WikiArticle } from './WikiArticle';
 import './site.css';
 import './focus.css';
 import './wiki3d.css';
@@ -490,11 +490,12 @@ export default function WikiGraph3D() {
       (near.get(s) ?? near.set(s, []).get(s)!).push({ id: t, revealed: l.revealed });
       (near.get(t) ?? near.set(t, []).get(t)!).push({ id: s, revealed: l.revealed });
     }
-    // importance = how much of the theme's story a page is part of (units shared with the theme page)
-    const byImportance = [...theme.nodes].sort((a, b) => Number(b.hub) - Number(a.hub) || b.theme_units - a.theme_units || b.units - a.units);
+    // importance = how many stories a page is in, on a log scale (Paimon is in most; a log keeps the
+    // pages behind her from all shrinking to specks)
+    const byImportance = [...theme.nodes].sort((a, b) => Number(b.hub) - Number(a.hub) || b.units - a.units);
     const named = new Set(byImportance.slice(0, NAMED + 1).map((n) => n.id));
-    const top = Math.max(1, ...theme.nodes.filter((n) => !n.hub).map((n) => n.theme_units));
-    const importance = (n: PageNode) => (n.hub ? 1 : Math.min(1, n.theme_units / top));
+    const top = Math.max(1, ...theme.nodes.filter((n) => !n.hub).map((n) => n.units));
+    const importance = (n: PageNode) => (n.hub ? 1 : Math.min(1, Math.log(n.units + 1) / Math.log(top + 1)) ** 2);
     // the spanning tree by shared stories: the lines that stay clear while nothing is picked
     const tree = new Set<string>();
     const root = new Map(theme.nodes.map((n) => [n.id, n.id]));
@@ -542,9 +543,11 @@ export default function WikiGraph3D() {
     const resolution = new Vector2(el.clientWidth, el.clientHeight);
     g.renderer().setPixelRatio(Math.min(window.devicePixelRatio, 2));
     const lastOrder = versions.length - 1;
-    /** the time axis: earlier versions low, later high, over TIME_SPAN units (the plane is ~470 wide) */
+    /** the time axis: earlier versions low, later high, over TIME_SPAN units (the plane is ~470 wide at 64 pages) */
     // portrait screens get a taller axis so the chart fills their height (set when the scene is built)
-    const TIME_SPAN = el.clientWidth < el.clientHeight ? 330 : 170;
+    // a bigger chart spreads wider on its plane (about with the root of its page count); on a portrait
+    // screen, fitted by its width, the axis grows with it so the chart does not end up a thin strip
+    const TIME_SPAN = el.clientWidth < el.clientHeight ? 330 * Math.max(1, Math.sqrt(theme.nodes.length / 64)) : 170;
     const heightOf = (order: number) => ((order - lastOrder / 2) / lastOrder) * TIME_SPAN;
     const height = (n: PageNode) => (n.hub ? 0 : heightOf(n.revealed));
 
@@ -618,8 +621,9 @@ export default function WikiGraph3D() {
       .onNodeClick((n) => setSelected((cur) => (cur === n.id ? null : n.id)))
       .onBackgroundClick(() => setSelected(null))
       .onEngineStop(() => { if (!fitted) { fitted = true; layoutTimer = window.setTimeout(afterLayout, 30); } })
-      // the theme page is the sun of the chart
-      .graphData({ nodes: theme.nodes.map((n) => (n.hub ? { ...n, fx: 0, fy: 0, fz: 0 } : { ...n })), links: theme.links.map((l) => ({ ...l })) });
+      // the centre page sits on the plane; it is not pinned to the middle, so a lopsided wiki (more
+      // pages on one side of Teyvat) still lands centred on screen
+      .graphData({ nodes: theme.nodes.map((n) => (n.hub ? { ...n, fy: 0 } : { ...n })), links: theme.links.map((l) => ({ ...l })) });
 
     // pages with no lines are pulled in instead of drifting to the rim
     const pull = (n: PageNode) => (index.near.has(n.id) ? 0.03 : 0.25);
@@ -879,17 +883,32 @@ export default function WikiGraph3D() {
       const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
       const p = new Vector3();
       let dist = r90 * 2.5;
-      for (let i = 0; i < 6; i++) {
-        camera.position.set(0, cy + Math.sin(tilt) * dist, Math.cos(tilt) * dist);
-        camera.lookAt(0, cy, 0);
+      // the point looked at: moved over the plane until the stars sit in the middle of the screen (the
+      // near half of a tilted plane looks bigger than the far half, so the plane's centre is not enough)
+      let tx = 0, tz = 0;
+      const place = () => {
+        camera.position.set(tx, cy + Math.sin(tilt) * dist, tz + Math.cos(tilt) * dist);
+        camera.lookAt(tx, cy, tz);
         camera.updateMatrixWorld();
-        const ax: number[] = [], ay: number[] = [];
-        for (const n of linked) { p.set(n.x ?? 0, n.y ?? 0, n.z ?? 0).project(camera); ax.push(Math.abs(p.x)); ay.push(Math.abs(p.y)); }
-        ax.sort((a, b) => a - b); ay.sort((a, b) => a - b);
-        const q = (a: number[]) => a[Math.floor(a.length * (portrait ? 0.93 : 0.97))];
-        dist *= Math.max(q(ax) / (0.9 * (1 - RULER_W / el.clientWidth)), q(ay) / 0.82);
+      };
+      const q = (a: number[], f: number) => a[Math.floor((a.length - 1) * f)];
+      for (let i = 0; i < 16; i++) {
+        place();
+        const sx: number[] = [], sy: number[] = [];
+        for (const n of linked) { p.set(n.x ?? 0, n.y ?? 0, n.z ?? 0).project(camera); sx.push(p.x); sy.push(p.y); }
+        sx.sort((a, b) => a - b); sy.sort((a, b) => a - b);
+        const cut = portrait ? 0.035 : 0.005;
+        const [x0, x1, y0, y1] = [q(sx, cut), q(sx, 1 - cut), q(sy, cut), q(sy, 1 - cut)];
+        // half the visible width/height at the target's depth, in chart units
+        const halfH = dist / camera.projectionMatrix.elements[5], halfW = halfH * camera.aspect;
+        const k = i < 12 ? 0.6 : 0; // the last passes only settle the distance
+        tx += k * ((x0 + x1) / 2) * halfW;
+        // screen up at the target is mostly toward the far side of the plane (-z), foreshortened by the tilt
+        tz -= k * ((y0 + y1) / 2) * halfH / Math.sin(tilt + 0.35);
+        dist *= Math.max((x1 - x0) / 2 / (0.84 * (1 - RULER_W / el.clientWidth)), (y1 - y0) / 2 / 0.82);
       }
-      g.cameraPosition({ x: 0, y: cy + Math.sin(tilt) * dist, z: Math.cos(tilt) * dist }, { x: 0, y: cy, z: 0 }, 0);
+      place();
+      g.cameraPosition({ x: tx, y: cy + Math.sin(tilt) * dist, z: tz + Math.cos(tilt) * dist }, { x: tx, y: cy, z: tz }, 0);
       // zoom limits: out to a little under twice the first view (the background stars start at 1600,
       // so the chart never shrinks to a speck inside a ball of dots), in to about a star's neighbourhood
       {
@@ -912,13 +931,13 @@ export default function WikiGraph3D() {
           if (stopped || disposed) return;
           t0 ||= t;
           const k = Math.min(1, (t - t0) / span), a = -swing * (1 - k) ** 3;
-          camera.position.set(Math.sin(a) * flat, camY, Math.cos(a) * flat);
-          camera.lookAt(0, cy, 0);
+          camera.position.set(tx + Math.sin(a) * flat, camY, tz + Math.cos(a) * flat);
+          camera.lookAt(tx, cy, tz);
           onMove();
           wakeUp();
           if (k < 1) requestAnimationFrame(turn);
         };
-        camera.position.set(Math.sin(-swing) * flat, camY, Math.cos(-swing) * flat);
+        camera.position.set(tx + Math.sin(-swing) * flat, camY, tz + Math.cos(-swing) * flat);
         requestAnimationFrame(turn);
       }
       onMove(); // fog distances and names for the first view
@@ -1205,7 +1224,7 @@ export default function WikiGraph3D() {
         if (focus && !inFocus(n.id) && n.id !== hovered) continue;
         want.push({ n, s, r: rank(n, s) });
       }
-      want.sort((a, b) => a.r - b.r || b.n.theme_units - a.n.theme_units || b.n.units - a.n.units);
+      want.sort((a, b) => a.r - b.r || b.n.units - a.n.units);
       const placed: [number, number, number, number][] = [];
       const v = new Vector3();
       for (const { n, s, r } of want) {
@@ -1232,9 +1251,20 @@ export default function WikiGraph3D() {
   // the latest snapshot written for the chosen version or before it
   const snap = sel && snapshots ? snapshotAt(snapshots[sel.id], vIdx) : null;
   const hrefOf = (p: string) => urlFor(pathNameOf(p, allById), vIdx);
+  // a page with no snapshot (outside the Khaenri'ah theme) shows its article's lead on the card instead
+  const [cardData, setCardData] = useState<{ id: string; data: PageData } | null>(null);
+  const needLead = !!sel && !!snapshots && !snap;
+  useEffect(() => {
+    if (!needLead || !sel || cardData?.id === sel.id) return;
+    let live = true;
+    loadPageData(sel.id).then((data) => { if (live) setCardData({ id: sel.id, data }); }, () => {});
+    return () => { live = false; };
+  }, [needLead, sel, cardData]);
+  const leadArt = needLead && cardData?.id === sel!.id ? articleAt(cardData.data.articles, vIdx) : null;
+  const lead = leadArt?.lead ?? leadArt?.sections[0]?.p[0] ?? null;
   const link = useLinker(theme?.nodes, vIdx, sel?.id ?? null, hrefOf, openArticle);
   const cardSeen = new Set<string>();
-  const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.theme_units - a.theme_units) : [];
+  const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.units - a.units) : [];
 
   return (
     <div className={`site graph-page w3d${night ? ' night' : ' day'}`} style={{ ['--w3d-head' as string]: `${headH}px` }}>
@@ -1243,10 +1273,10 @@ export default function WikiGraph3D() {
         {article ? (
           <button type="button" className="w3d-back" onClick={closeArticle}>← 3D 위키</button>
         ) : !gl ? null : <div className="legend" aria-label="범례">
-          <span style={{ ['--c' as string]: sky.hub }}><i />테마</span>
+          <span style={{ ['--c' as string]: sky.hub }}><i />{themeName}</span>
           <span style={{ ['--c' as string]: sky.character }}><i />인물</span>
           <span style={{ ['--c' as string]: sky.lore }}><i />로어</span>
-          <span className="hint">미리보기 · 별 크기는 {themeName} 이야기에 얼마나 나오는지 · 선은 함께 나오는 이야기가 많을수록 밝고 굵음 · 아래가 이른 버전 · 왼쪽 눈금이 버전</span>
+          <span className="hint">미리보기 · 별 크기는 나오는 이야기 수 · 선은 함께 나오는 이야기가 많을수록 밝고 굵음 · 아래가 이른 버전 · 왼쪽 눈금이 버전</span>
         </div>}
         <nav>
           {theme && gl && <Search nodes={allNodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />}
@@ -1259,15 +1289,15 @@ export default function WikiGraph3D() {
         <WikiArticle page={page!} theme={theme} nodes={allNodes} byId={allById} snapshots={snapshots} vIdx={vIdx}
           hrefOf={hrefOf} onOpen={openArticle} />
       )}
-      {article && !theme && <p className="w3d-status">{failed ? '테마 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
+      {article && !theme && <p className="w3d-status">{failed ? '지도 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
       {/* the chart stays mounted (camera and selection kept) but hidden behind an open article */}
       <div className={`w3d-stage${article ? ' behind' : ''}`} ref={host} aria-hidden={article ? true : undefined}>
-        {!theme && <p className="w3d-status">{failed ? '테마 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
+        {!theme && <p className="w3d-status">{failed ? '지도 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
         {theme && !gl && (
           // Without WebGL there is no chart: the front page is just the search box, like an encyclopedia's portal.
           <div className="w3d-portal">
             <p className="w3d-portal-logo"><Logo />aru.wiki</p>
-            <p className="w3d-portal-sub">원신 이야기 위키 · {themeName} 테마</p>
+            <p className="w3d-portal-sub">원신 이야기 위키</p>
             <Search big autoFocus nodes={allNodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />
             <p className="w3d-portal-note">이 브라우저에서는 3D 지도를 그릴 수 없어(WebGL을 쓸 수 없음) 검색 화면을 보여 줍니다. <a href={hrefOf(theme.page)} onClick={(e) => { e.preventDefault(); openArticle(theme.page); }}>{themeName}</a> 문서에서 시작해도 됩니다.</p>
           </div>
@@ -1276,7 +1306,7 @@ export default function WikiGraph3D() {
       {gl && <div className={`w3d-ruler${article ? ' behind' : ''}`} ref={rulerBox} aria-hidden="true" />}
       {sel && !article && (
         <aside className="w3d-card" aria-live="polite">
-          <p className="w3d-type">{sel.hub ? '테마' : KIND_LABEL[sel.kind]} · {versions[sel.revealed]?.id}부터</p>
+          <p className="w3d-type">{KIND_LABEL[sel.kind]} · {versions[sel.revealed]?.id}부터</p>
           <h2>{nameOf(sel)}</h2>
           <a className="w3d-more" href={hrefOf(sel.id)} onClick={(e) => {
             if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
@@ -1297,8 +1327,17 @@ export default function WikiGraph3D() {
                 ))}. Fandom 원신 위키(CC BY-SA 3.0)의 글을 요약·번역했습니다.
               </p>
             </section>
-          ) : <p className="w3d-meta w3d-snap-none">이 버전까지의 요약이 아직 없습니다.</p>)}
-          <p className="w3d-meta">{sel.hub ? `이야기 ${sel.units}개` : `${themeName}${withParticle(themeName)} 함께 나오는 이야기 ${sel.theme_units}개 · 전체 ${sel.units}개`}</p>
+          ) : lead && leadArt ? (
+            <section className="w3d-snap">
+              <p className="w3d-snap-head">
+                <span className="tag neutral" title="위키 글을 바탕으로 기계가 쓰고, 다른 회사 모델이 근거와 대조했습니다. 사람은 아직 확인하지 않았습니다.">미검수</span>
+                {' '}{versions[leadArt.from]?.id} 때의 자료 기준 · 문서 첫 문단
+              </p>
+              <p className="w3d-summary">{rich(lead.s.map((x) => x.t).join(' '), link, cardSeen)}</p>
+              <p className="w3d-src">Fandom 원신 위키(CC BY-SA 3.0)의 글과 게임 대사를 바탕으로 썼습니다. 출처는 문서의 각주에 있습니다.</p>
+            </section>
+          ) : <p className="w3d-meta w3d-snap-none">{cardData?.id === sel.id ? '이 버전까지의 요약이 아직 없습니다.' : '불러오는 중…'}</p>)}
+          <p className="w3d-meta">나오는 이야기 {sel.units}개</p>
           {neighbours.length > 0 && (
             <ul className="w3d-near">
               {neighbours.map((n) => <li key={n.id}><button type="button" onClick={() => setSelected(n.id)}>{nameOf(n)}</button></li>)}

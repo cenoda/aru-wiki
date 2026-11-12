@@ -72,7 +72,8 @@ export function makeLocalizer(pairs, titles = [], misspellings = []) {
   const names = [...map.keys()].sort((a, b) => b.length - a.length);
   const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const word = names.length
-    ? new RegExp(`(?<![A-Za-z0-9'’-])(${names.map(esc).join('|')})(?![A-Za-z0-9'’-])`, 'g')
+    // an apostrophe joined to letters is part of a word (Khaenri'ah); one before or after a space is a quote mark ('Mother')
+    ? new RegExp(`(?<![A-Za-z0-9-]|[A-Za-z0-9]['’])(${names.map(esc).join('|')})(?![A-Za-z0-9-]|['’][A-Za-z])`, 'g')
     : null;
 
   // Hangul spellings of our own ("아크신야"): a whole word, or one followed by a particle
@@ -106,10 +107,12 @@ export function makeLocalizer(pairs, titles = [], misspellings = []) {
     for (const h of hits) {
       out += text.slice(at, h.start) + h.value;
       at = h.end;
-      const p = fitParticle(h.value, text.slice(at));
+      // the particle may come after a closing mark: **벽난로의 집**을, 'Mother'를
+      const close = text.slice(at).match(/^(?:\*{1,2}|['’"”」』])*/)[0];
+      const p = fitParticle(h.value, text.slice(at + close.length));
       if (p.from) {
-        out += p.to;
-        at += p.from;
+        out += close + p.to;
+        at += close.length + p.from;
       }
     }
     // "아브렐리안(Avrelian)" became "아브렐리안(아브렐리안)": drop the repeat
@@ -121,5 +124,6 @@ export function makeLocalizer(pairs, titles = [], misspellings = []) {
 
 /** English names still left in a Korean sentence (for reports). */
 export function latinNames(text) {
-  return [...(text ?? '').matchAll(/[A-Z][A-Za-z'’-]+(?: (?:of|the|de|and|[A-Z][A-Za-z'’-]+))*/g)].map((m) => m[0]);
+  // a trailing apostrophe is a closing quote mark ('Mother'), not part of the name
+  return [...(text ?? '').matchAll(/[A-Z][A-Za-z'’-]+(?: (?:of|the|de|and|[A-Z][A-Za-z'’-]+))*/g)].map((m) => m[0].replace(/['’-]+$/, ''));
 }

@@ -55,7 +55,9 @@ const strip = (o) => Object.fromEntries(Object.entries(o).filter(([k]) => !k.sta
 /** [English, Korean] pairs of kind "name". */
 export async function llmNamePairs() {
   return Object.entries(strip(await readJson(LLM_NAMES)))
-    .filter(([n, v]) => v.kind === 'name' && v.ko && !isContextDependent(n)).map(([n, v]) => [n, v.ko]);
+    .filter(([n, v]) => v.kind === 'name' && v.ko && !isContextDependent(n))
+    // early keys kept a closing quote mark ("Mother'"): the name is the part before it
+    .map(([n, v]) => [n.replace(/['’]+$/, ''), v.ko]);
 }
 
 /**

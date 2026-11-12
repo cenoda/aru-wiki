@@ -60,7 +60,13 @@ const TOOLS = {
   },
   // Ollama Cloud models through the local ollama daemon (signed in with `ollama signin`; no key here).
   // Ollama does not train on inputs (docs/rights-risk.md 2.4); Pro allows 3 requests at a time.
+  'ds': (prompt, schema) => rateDs('deepseek-v4.1-flash', prompt, schema),
+  'ds-pro': (prompt, schema) => rateDs('deepseek-v4-pro', prompt, schema),
   deepseek: (prompt, schema) => ollama('deepseek-v4.1-flash:cloud', prompt, schema),
+  // Xiaomi MiMo on Ollama Cloud: cheaper than DeepSeek and another company, so it can check DeepSeek's writing
+  mimo: (prompt, schema) => ollama('mimo-v2.6-flash:cloud', prompt, schema),
+  // Moonshot Kimi on Ollama Cloud: the user's own tests rate it highest of the Ollama models (2026-11-12)
+  kimi: (prompt, schema) => ollama('kimi-k2.7-code:cloud', prompt, schema),
   // Grok Build (xAI) headless, single turn, no tools and no web (docs/rights-risk.md 2.4: training opted out).
   grok: (prompt, schema, cwd) => grok('grok-4.7', 'low', prompt, schema, cwd),
   // Muse Code subscription models. Ember is cheap enough to run freely; Spark is the larger one.
@@ -147,6 +153,74 @@ const TOOLS = {
     return { data: checkShape(parseJsonReply(text), schema), cost: null };
   },
 };
+// DeepSeek V4.1 Flash from a private OpenAI-compatible provider (llm.rate-cloud.com; it does not
+// train on prompts, per the user 2026-11-12). Key in ~/.config/aru/deepseek.env (DEEPSEEK_API_KEY),
+// read here only, never printed. Thinking is on (user decision 2026-11-12); DS_THINKING=off is for tests only.
+const DS_ENV = join(homedir(), '.config/aru/deepseek.env');
+let dsKey;
+// the provider does not force the schema: a reply with a missing or mistyped field is asked again once, naming the fault
+async function rateDs(model, prompt, schema) {
+  try { return await rateDsOnce(model, prompt, schema); } catch (e) {
+    if (!/^reply field|JSON|Unexpected token|Unterminated/.test(e.message)) throw e;
+    return rateDsOnce(model, `${prompt}\n\nYour previous reply was rejected (${e.message.slice(0, 120)}). Include every required field with the right type.`, schema);
+  }
+}
+// With thinking on, the provider loses the first few tokens of the answer, sometimes whole sentences (seen
+// 2026-11-12 in 4 of 25 replies): a throwaway first line takes the loss instead of the JSON.
+const DS_PAD = process.env.DS_THINKING === 'off' ? '' : 'Begin the reply with this exact line: ----- ----- ----- ----- ----- ----- ----- -----\nThen, on the next line, ';
+async function rateDsOnce(model, prompt, schema) {
+  dsKey ??= (existsSync(DS_ENV) && readFileSync(DS_ENV, 'utf8').match(/^\s*DEEPSEEK_API_KEY\s*=\s*['"]?([^'"\s]+)/m))?.[1];
+  if (!dsKey) throw new Error(`no DEEPSEEK_API_KEY in ${DS_ENV}`);
+  const body = { model, stream: true, stream_options: { include_usage: true }, messages: [{ role: 'user', content:
+    `${prompt}\n\n${DS_PAD}Reply with one JSON object only, no prose and no code fence, matching this JSON Schema:\n${JSON.stringify(schema)}` }],
+    ...(process.env.DS_THINKING === 'off' ? JSON.parse(process.env.DS_THINKING_OFF ?? '{"thinking":{"type":"disabled"}}') : {}) };
+  for (const wait of [20, 60, null]) {
+    const ctrl = new AbortController();
+    // Pro thinks long (up to ~7 min a call seen): at least 15 min for it
+    const timer = setTimeout(() => ctrl.abort(), model.includes('pro') ? Math.max(TIMEOUT_MS, 15 * 60 * 1000) : TIMEOUT_MS);
+    try {
+      let r;
+      try {
+        r = await fetch('https://llm.rate-cloud.com/v1/chat/completions', { method: 'POST', signal: ctrl.signal,
+          headers: { Authorization: `Bearer ${dsKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      } catch (e) { // network drop: retry like a server error
+        if (wait === null || ctrl.signal.aborted) throw new Error(`rate-ds fetch failed: ${e.cause?.code ?? e.message}`);
+        await new Promise((res) => setTimeout(res, wait * 1000)); continue;
+      }
+      if (!r.ok) {
+        const msg = `rate-ds ${r.status}: ${(await r.text()).slice(0, 300)}`;
+        if (wait !== null && (r.status >= 500 || r.status === 429)) { await new Promise((res) => setTimeout(res, wait * 1000)); continue; }
+        throw new Error(msg);
+      }
+      // streamed (SSE): headers come back at once, so a long thinking call does not hit fetch's 300 s header timeout
+      let text = '', u = {}, buf = '';
+      const firstEvents = [];
+      const dec = new TextDecoder();
+      for await (const chunk of r.body) {
+        buf += dec.decode(chunk, { stream: true });
+        let i;
+        while ((i = buf.indexOf('\n')) >= 0) {
+          const line = buf.slice(0, i).trim(); buf = buf.slice(i + 1);
+          if (!line.startsWith('data:')) continue;
+          const d = line.slice(5).trim();
+          if (d === '[DONE]') continue;
+          const ev = JSON.parse(d);
+          if (process.env.DS_DEBUG && firstEvents.length < 6) firstEvents.push(d.slice(0, 400));
+          if (ev.error) throw new Error(`rate-ds stream: ${JSON.stringify(ev.error).slice(0, 300)}`);
+          text += ev.choices?.[0]?.delta?.content ?? '';
+          if (ev.usage) u = ev.usage;
+        }
+      }
+      // with thinking on the provider sometimes drops the answer's first token, the opening brace
+      // ("lead": ... or lead": ... when the dropped token was '{"')
+      if (/^\s*"[A-Za-z_]+"\s*:/.test(text)) text = `{${text}`;
+      else if (/^\s*[A-Za-z_]+"\s*:/.test(text)) text = `{"${text.trimStart()}`;
+      if (process.env.DS_DEBUG) await appendFile(process.env.DS_DEBUG, JSON.stringify({ at: new Date().toISOString(), firstEvents, text }) + '\n');
+      return { data: checkShape(parseJsonReply(text), schema), cost: null,
+        usage: { in: u.prompt_tokens ?? null, out: u.completion_tokens ?? null, reasoning: u.completion_tokens_details?.reasoning_tokens ?? null } };
+    } finally { clearTimeout(timer); }
+  }
+}
 // Ollama Cloud sometimes answers 500/502/503 for a moment: two more tries, 20 s and 60 s later
 async function ollama(model, prompt, schema) {
   for (const wait of [20, 60, null]) {
@@ -207,6 +281,7 @@ async function agy(model, prompt, schema, cwd) {
   return { data: checkShape(res.structured_output ?? parseJsonReply(res.response), schema), cost: null };
 }
 // how an exhausted Antigravity allowance shows up (also matched against exit-code errors from run())
+const UNRELIABLE = /\b5\d\d\b|timed? ?out|abort|ECONNRESET|ECONNREFUSED|ETIMEDOUT|fetch failed|socket hang up/i;
 const QUOTA = /quota|exhaust|usage limit|rate.?limit|resource.?exhausted|429|credits?|allowance|limit reached/i;
 let agyExhausted = false;
 const SONNET_BUDGET = Number(process.env.SONNET_API_BUDGET ?? 30);
@@ -283,8 +358,8 @@ export async function ask(tool, prompt, schema) {
 
 // ---------- several tools at once ----------
 // Which company each tool's model comes from: a writer's text is checked by another company's model.
-export const COMPANY = { claude: 'anthropic', 'claude-sonnet': 'anthropic', 'sonnet-api': 'anthropic', haiku: 'anthropic', sonnet: 'anthropic', 'agy-sonnet': 'anthropic',
-  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg', deepseek: 'deepseek' };
+export const COMPANY = { ds: 'deepseek', 'ds-pro': 'deepseek', claude: 'anthropic', 'claude-sonnet': 'anthropic', 'sonnet-api': 'anthropic', haiku: 'anthropic', sonnet: 'anthropic', 'agy-sonnet': 'anthropic',
+  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg', deepseek: 'deepseek', mimo: 'xiaomi', kimi: 'moonshot' };
 const slots = new Map();
 /** At most `limit` calls of one tool at a time (LLM_SLOTS="grok=6,flash-medium=4" overrides). */
 function slotOf(tool) {
@@ -296,7 +371,7 @@ function slotOf(tool) {
 }
 const busy = new Map(); // tool → time until which it is set aside after a quota error
 /**
- * Ask whichever of `tools` has a free slot (the least busy first), skipping tools of the companies in
+ * Ask whichever of `tools` has a free slot (in the order given: the first takes every call it has a slot for), skipping tools of the companies in
  * `avoid`. A tool that fails with a quota or rate error is set aside for 10 minutes and the call
  * moves to another. Returns { data, tool }.
  */
@@ -313,7 +388,9 @@ export async function askAny(tools, prompt, schema, { avoid = [] } = {}) {
       // queued on every open tool; once served it declines, so the next waiter gets the slot
       const tryTake = () => {
         if (done) return false;
-        const free = open.map((t) => [t, slotOf(t)]).filter(([, s]) => s.busy < s.limit).sort((a, b) => a[1].busy / a[1].limit - b[1].busy / b[1].limit);
+        // tools in the order given: the first takes every call it has a slot for, so list tools with a usage
+        // allowance first (use it up) and an unlimited provider last (it takes the rest)
+        const free = open.map((t) => [t, slotOf(t)]).filter(([, s]) => s.busy < s.limit).sort((a, b) => open.indexOf(a[0]) - open.indexOf(b[0]));
         if (free.length) { free[0][1].busy++; done = true; resolve(free[0][0]); return true; }
         return false;
       };
@@ -329,6 +406,9 @@ export async function askAny(tools, prompt, schema, { avoid = [] } = {}) {
     } catch (e) {
       lastErr = e;
       if (QUOTA.test(e.message)) { busy.set(tool, Date.now() + 10 * 60 * 1000); console.error(`${tool} set aside: ${e.message.slice(0, 120)}`); continue; }
+      // the provider itself failing (server errors after its own retries, timeouts, network):
+      // set it aside for 3 minutes and let the next tool in the list take the call
+      if (UNRELIABLE.test(e.message) && usable.length > 1) { busy.set(tool, Date.now() + 3 * 60 * 1000); console.error(`${tool} failing, set aside 3 min: ${e.message.slice(0, 120)}`); continue; }
       throw e;
     } finally {
       const s = slotOf(tool);

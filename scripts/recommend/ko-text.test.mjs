@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { fitParticle, makeLocalizer } from './ko-text.mjs';
+import { fitParticle, latinNames, makeLocalizer } from './ko-text.mjs';
 
 const localize = makeLocalizer([
   ['Aksinya', '악시냐'], ['Hvergelmir', '근원 연구소'], ['Ann', '안'], ['Mary-Ann', '마리안'],
@@ -54,4 +54,17 @@ test('own Hangul spellings and "The" names', () => {
 test('no repeated name in parentheses', () => {
   const loc = makeLocalizer([['Avrelian', '아브렐리안'], ['Reed Miller', '리드 밀러']]);
   assert.equal(loc('아브렐리안(Avrelian, 일명 Reed Miller)과 아브렐리안(Avrelian)'), '아브렐리안(일명 리드 밀러)과 아브렐리안');
+});
+
+test('names in quote marks or bold, particle after the closing mark', () => {
+  const loc = makeLocalizer([['Mother', '어머니'], ['House of the Hearth', '벽난로의 집'], ['The Knave', '하인'], ["Khaenri'ah", '켄리아']]);
+  assert.equal(loc("'Mother'를 자처했다"), "'어머니'를 자처했다");
+  assert.equal(loc('**House of the Hearth**를 세웠다'), '**벽난로의 집**을 세웠다');
+  assert.equal(loc("이전 'The Knave'이자"), "이전 '하인'이자");
+  assert.equal(loc('Knave는'), '하인은');
+  assert.equal(loc("Khaenri'ah의 왕"), '켄리아의 왕');
+});
+
+test('latinNames leaves out a closing quote mark', () => {
+  assert.deepEqual(latinNames("'Mother'라 불렸고 Khaenri'ah에서"), ['Mother', "Khaenri'ah"]);
 });

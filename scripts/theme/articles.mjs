@@ -24,7 +24,7 @@
 //        [--writer flash-medium,grok] [--verify codex-medium,grok,flash-medium] [--jobs 8] [--redo] [--out file] [--relocalize-only]
 import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
-import { readFile, writeFile } from 'node:fs/promises';
+import { appendFile, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { gunzipSync } from 'node:zlib';
 import { parseArgs } from 'node:util';
@@ -333,7 +333,15 @@ async function one(e) {
     for (let i = 0; i < items.length; i += VERIFY_BATCH) batches.push(items.slice(i, i + VERIFY_BATCH));
     await Promise.all(batches.map(async (batch) => {
       try {
-        const vr = await askAny(verifiers, verifyPrompt(e, batch, input.text), VERIFY_SCHEMA, { avoid }); calls++;
+        const vp = verifyPrompt(e, batch, input.text);
+        // SHADOW_VERIFY=tool: that tool checks the same batch too, for a side-by-side log only (SHADOW_LOG)
+        // several shadows allowed: SHADOW_VERIFY=mimo,kimi
+        const shadows = (process.env.SHADOW_VERIFY ?? '').split(',').filter(Boolean)
+          .map((t) => askAny([t], vp, VERIFY_SCHEMA).then((x) => ({ tool: t, items: x.data.items }), (x) => ({ tool: t, error: x.message })));
+        const vr = await askAny(verifiers, vp, VERIFY_SCHEMA, { avoid }); calls++;
+        if (shadows.length) await appendFile(process.env.SHADOW_LOG ?? '.cache/theme/shadow-verify.jsonl', JSON.stringify({ key, main: vr.tool, mainItems: vr.data.items,
+          shadows: await Promise.all(shadows),
+          batch: batch.map((b) => ({ sentences: b.sentences.map((x) => x.text), english: b.english })) }) + '\n');
         usedVerifiers.add(vr.tool);
         for (const r of vr.data.items) if (batch[r.n]) batch[r.n].target.verify = { unsupported: r.unsupported.filter((x) => x >= 0 && x < batch[r.n].sentences.length), note: r.note };
       } catch (err) { ok = false; log(`verify failed ${key}: ${err.message.slice(0, 160)}`); }

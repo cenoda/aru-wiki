@@ -16,6 +16,7 @@ import { gunzipSync } from 'node:zlib';
 import { parseArgs } from 'node:util';
 import { normalize } from '../recommend/excerpt.mjs';
 import { latinNames } from '../recommend/ko-text.mjs';
+import { contextLocalizer } from './ko-extra.mjs';
 import { makeKo } from './localize.mjs';
 import { sentences } from './render.mjs';
 
@@ -124,9 +125,10 @@ async function one(w) {
 }
 
 let ko = (t) => t;
+const inContext = await contextLocalizer(); // per-sentence choices (ko-context.json), after all names
 const save = () => writeFile(OUT, `${JSON.stringify({
   theme, note: 'What the Fandom wiki newly said about each page at each version snapshot, in Korean, written by an LLM and checked by a second model. Unreviewed.',
-  reveals: [...results.values()].map((r) => ({ ...r, items: r.items.map((it) => ({ ...it, text: ko(it.text_raw), latin_left: latinNames(ko(it.text_raw)) })) })),
+  reveals: [...results.values()].map((r) => ({ ...r, items: r.items.map((it) => { const text = inContext(ko(it.text_raw), it.text_raw); return { ...it, text, latin_left: latinNames(text) }; }) })),
 }, null, 1)}\n`);
 const queue = [...work];
 log(`${queue.length} snapshots`);

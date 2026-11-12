@@ -8,7 +8,7 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { latinNames, makeLocalizer } from '../recommend/ko-text.mjs';
-import { llmNamePairs } from './ko-extra.mjs';
+import { llmKeepNames, llmNamePairs } from './ko-extra.mjs';
 
 const ROOT = new URL('../../', import.meta.url).pathname;
 const gen = (f) => join(ROOT, 'data/generated', f);
@@ -52,17 +52,26 @@ export async function makeKo(texts, { log = (...a) => console.error(...a) } = {}
     const { out } = await lookup(client, [...left]);
     // An alias may have its own row on the target page (`|2_en = Tsaritsa |2_ko = 얼음의 여왕`):
     // that is the alias's own Korean name, so it reveals nothing. Taken only when `en` is the name.
-    const pages = await client.latest([...new Set(Object.values(out).filter((v) => v.ko && v.table).map((v) => v.page))]);
+    const pages = await client.latest([...new Set(Object.values(out).filter((v) => v.ko).map((v) => v.page))]);
+    // A page of a game card or constellation names that thing, not the lore one the text means:
+    // Columbina Hyposelenia → 콜롬비나하이포셀레니아자리 (her Constellation), "Moon's Reflection" →
+    // 허영 (the TCG card Reflection).
+    const notLore = (v) => /\{\{\s*(Constellation Overview|Genius Invokation TCG) Infobox/i.test(pages.get(v.page)?.content ?? '');
+    // a name marked "keep" in ko-names-llm.json stays English (Echo is a person, not the 궤적 effect)
+    const keep = await llmKeepNames();
     const ownRow = (n, v) => v.table && !v.transcluded_from
       && new RegExp(`\\|\\s*${v.table}_en\\s*=\\s*${n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*(?:\\||\\n|\\}\\})`).test(pages.get(v.page)?.content ?? '');
     // a name a person entered in data/manual/ko-names.json is always used
-    const extra = Object.entries(out).filter(([n, v]) => v.ko && (v.ko_source === 'manual' || !v.base_page
+    const extra = Object.entries(out).filter(([n, v]) => v.ko && (v.ko_source === 'manual' || !v.base_page && !notLore(v) && !keep.has(n)
       && (same(n.toLowerCase(), v.page.replace(/ \(.*\)$/, '').toLowerCase()) || ownRow(n, v)))).map(([n, v]) => [n, v.ko]);
     // One replacer makes the longest name win across both sources: "Il Dottore" before "Dottore",
     // and an existing "Hydro Archon" before a newly found "Hydro".
     // LLM-written names (data/manual/ko-names-llm.json) only fill what no source gives
     const have = new Set([...namePairs, ...extra].map(([n]) => n));
-    const llm = (await llmNamePairs()).filter(([n]) => !have.has(n));
+    // prep() turns "Eternal Moon's Marrow" into "Eternal Moon의 Marrow", and writers also write it so:
+    // a name holding "'s" is matched in both forms
+    const llm = (await llmNamePairs()).filter(([n]) => !have.has(n))
+      .flatMap(([n, k]) => (/'s /.test(n) ? [[n, k], [n.replace(/'s /g, '의 '), k]] : [[n, k]]));
     const both = makeLocalizer([...namePairs, ...extra, ...llm], titlePairs, misspellingPairs);
     // A phrase that cannot be put into Korean whole stays English whole: "God of the Woods" must
     // not become "마신 of the Woods", nor "Dendro Archon" "풀 Archon".
@@ -86,5 +95,7 @@ export async function makeKo(texts, { log = (...a) => console.error(...a) } = {}
     log(`names: ${extra.length} more from the dump (${extra.map(([n, k]) => `${n}=${k}`).join(', ')})`);
   }
   await extendNames(texts);
-  return (t) => ko(t);
+  // "Khaenri'ah의 Five Sinners of Khaenri'ah" → "켄리아의 켄리아의 「오대 죄인」": one owner is enough.
+  // Only words of two syllables or more: "바람의 신의 신의 심장" (Anemo Archon's Gnosis) is right.
+  return (t) => ko(t)?.replace(/(?<![가-힣])([가-힣]{2,})의 \1의 /g, '$1의 ');
 }

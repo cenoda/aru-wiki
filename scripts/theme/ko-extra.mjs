@@ -52,6 +52,11 @@ const readJson = async (path) => {
 };
 const strip = (o) => Object.fromEntries(Object.entries(o).filter(([k]) => !k.startsWith('$')));
 
+/** Names of kind "keep": they stay English, even over a Korean name only guessed from a Fandom page. */
+export async function llmKeepNames() {
+  return new Set(Object.entries(strip(await readJson(LLM_NAMES))).filter(([, v]) => v.kind === 'keep').map(([n]) => n));
+}
+
 /** [English, Korean] pairs of kind "name". */
 export async function llmNamePairs() {
   return Object.entries(strip(await readJson(LLM_NAMES)))
@@ -65,9 +70,10 @@ export async function llmNamePairs() {
  * element's Archon is "OO의 신" (user decision 2026-11-12), also where the writer put
  * "Dendro 집정관" or "얼음 신" in its own Korean. A Gnosis ("물 신의 심장") keeps its name.
  */
+// "불 신의 눈" is a Pyro Vision and "바람 신의 심장" a Gnosis: only a bare "불 신" is the Pyro Archon
 export const tidy = (text) => text
   .replace(/제\.\s?(\d+)(?!위)/g, '제$1위')
-  .replace(/(?<![가-힣])(불|물|바람|번개|바위|풀|얼음) (?:신|집정관)(?!의 심장)(?=[^가-힣]|$|은|는|이|가|을|를|에|와|과|도|으로|로|의|만|이자|이며|이다|인|이던|이었|으로서)/g, '$1의 신');
+  .replace(/(?<![가-힣])(불|물|바람|번개|바위|풀|얼음) (?:신|집정관)(?!의 (?:심장|눈))(?=[^가-힣]|$|은|는|이|가|을|를|에|와|과|도|으로|로|의|만|이자|이며|이다|인|이던|이었|으로서)/g, '$1의 신');
 
 /** Per-point replacer: (text, textRaw) → text with that point's choices, particles re-fitted. */
 export async function contextLocalizer() {

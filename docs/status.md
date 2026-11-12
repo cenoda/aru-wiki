@@ -42,7 +42,9 @@
     - [ ] 공식 한국어 이름이 없는 대문자 영어 이름이 본문에 남는다(예: Herald, Lightkeeper Flins). 스냅샷 때처럼 `ko-names-llm.json`에 넣으면 `--relocalize-only`로 다시 바뀐다.
   - [x] 글 속 링크(2026-11-12 사용자 요청, `src/Linked.tsx`): 카드와 문서 글에서 다른 항목 이름이 처음 나오는 곳을 그 문서 링크로 만든다(카드는 카드마다, 문서는 절마다 한 번). 고른 버전에 공개된 항목만 링크한다.
   - [x] 문서 검색(2026-11-12, `src/Search.tsx`): 3D 화면 머리말의 검색창, 한국어·영어 이름으로 찾는다. 고른 버전에 공개된 항목만 나온다.
-  - [ ] 아직 없는 것: `aru.wiki/wiki/켄리아` 같은 짧은 주소(서버 설정 필요), 본문 내용 검색, 신뢰도 배지(사람이 쓴 해석이 생길 때). 스냅샷은 위키 서술이라 신뢰도 등급을 붙이지 않는다.
+  - [x] 짧은 주소(2026-11-12, `src/route.ts`): `/wiki/<이름>?v=<버전>`. 경로 이름은 공식 한국어 이름, 없으면 영어 문서 이름, 공백은 `_`. 영어 이름·예전 `?page=` 링크로 들어오면 한국어 주소로 바꾼다(기록은 늘지 않음). 사이트가 만드는 링크는 모두 짧은 주소.
+    - [ ] 서버 Caddyfile의 `aru.wiki` 블록에 `redir /wiki / 302`, `header /wiki/* Cache-Control "no-cache"`, `rewrite /wiki/* /index.html`을 넣고 `caddy validate` → `systemctl reload caddy`. 그 전에는 실제 사이트에서 `/wiki/…`가 404다.
+  - [ ] 아직 없는 것: 본문 내용 검색, 신뢰도 배지(사람이 쓴 해석이 생길 때). 스냅샷은 위키 서술이라 신뢰도 등급을 붙이지 않는다.
 - [x] 3D 뷰 미리보기(2026-11-11, `src/WikiGraph3D.tsx`; 2026-11-12부터 첫 화면). 모양을 보려는 것이고 **배치는 최종안이 아니다(사용자)**. 정한 것:
   - 별자리처럼 선을 줄인다: 공유 이야기 Jaccard 기준 최대 신장 트리 + 문서마다 가장 강한 연결 2개(`scripts/build-runtime-data.mjs`, 95개).
   - 황도면 배치: 별은 켄리아를 중심으로 한 평면에 퍼지고 높이는 공개 버전(이른 버전이 아래). 카메라는 약 32도 위에서 본다.
@@ -61,8 +63,8 @@
 - [x] 후보가 여럿인 카드 인물(2026-11-12, 사용자가 아무나 골라도 된다고 함): 「네가 있는 시공」 시틀라리, 「배리의 순간」 알베도, 「위험한 길, 수상한 발자취」 야란. `data/manual/card-figures.json`. 인물 카드 99개. 나머지(「뒤집힌 기원」과 Traveler 막 5개)는 모든 임무에 나오는 플레이 가능 캐릭터가 없어 문장으로 둔다.
 - [x] 아이콘 짝 확인: 진(Jean)=`Qin`, 한운(Xianyun)=`Liuyun`(2026-11-12 사용자가 눈으로 확인, `data/manual/enka-icons.json`).
 - [ ] 철자가 비슷해서 짝지은 9명은 아직 사람이 확인하지 않았다([이미지 방침 4절](image-policy.md)). 확인하면 `data/manual/enka-icons.json`.
-- [ ] 버전 메모를 잇는 선이 지나가는 노선과 겹치는 곳이 있다(53개 중 41개, 카드와는 겹치지 않음). 보기에 거슬리면 선 경로를 바꾼다.
-- [ ] 시리즈·이벤트 카드(갈래 화면)에는 아직 이미지·문장이 없다.
+- [x] 버전 메모를 잇는 선(2026-11-12): 레이아웃 때 최단 경로로 다시 그린다(`FocusView.tsx`의 `routeStem`). 사용자 결정: 멀리 돌아가지 말고 짧게, 노선과 겹치는 곳은 선을 끊어 밑으로 지나가게 한다. 겹침 세기 `node scripts/dev/memo-crossings.mjs`.
+- [x] 시리즈·이벤트 카드(갈래 화면, 2026-11-12 사용자 결정): 갈래 카드 716개 모두 자체 제작 문장. 이벤트(이벤트형 시리즈 포함) 162개는 불꽃놀이 문장, 나머지는 지역 문장(지역 없음 3개는 나침반). 시리즈 60개는 겹친 종이 표시를 덧붙인다(이벤트형 시리즈 5개는 불꽃놀이 + 표시, 사용자: 그대로 둠). 인물 아이콘은 쓰지 않는다(이미지 방침 4절은 막 카드만).
 
 ### 이미지 (1단계 이후)
 
@@ -73,7 +75,9 @@
 - [x] 아이콘 PNG를 리포지토리와 이력에서 뺐다(2026-11-11 결정). `main`·`feat/3d-main`을 다시 써서 강제 push했다. 배포 순서: `npm run fetch:icons` → `npm run build`.
 - [x] GitHub의 옛 이력 정리(2026-11-12): 사용자가 저장소를 지우고 사용자가 같은 이름(공개)으로 다시 만든 뒤 `main`·`feat/3d-main`·`feat/quest-3d`를 push했다. 옛 커밋(6218e8b)은 웹 404·API 422로 더는 보이지 않는다. push한 세 브랜치 이력에 PNG는 없다. PR #1~#3 기록은 사라졌다.
 - [x] `~/projects/aru-wiki-3d` 폴더를 새 이력으로 맞췄다(2026-11-11). 옛 브랜치(`backup/old-main`·`backup/old-feat-3d-main`)는 2026-11-12 사용자 결정으로 지웠다. 5174 미리보기 서버는 껐다.
-- [ ] 화면에서 출처·라이선스 표시(카드 이미지는 2026-11-11 완료: 화면 아래 고지, 갈래 정보 카드에 출처·받은 날짜·공개 버전), 삭제 요청 대상 파일을 찾아 지우는 수단(이미지는 `image-files.json`으로 파일과 인물을 찾을 수 있다).
+- [ ] 화면에서 출처·라이선스 표시(카드 이미지는 2026-11-11 완료: 화면 아래 고지, 갈래 정보 카드에 출처·받은 날짜·공개 버전).
+- [x] 삭제 요청 수단(2026-11-12, [docs/takedown.md](takedown.md)): `node scripts/takedown.mjs find|block|clean|check|list|unblock`, 막은 목록 `data/manual/takedown.json`. 아이콘은 받지 않고 카드는 지역 문장으로 바뀐다. `--apply` 없이는 아무것도 바꾸지 않는다.
+  - [ ] 글(위키 문서) 막기: `scripts/build-runtime-data.mjs`가 `takedown.json`의 `pages`를 읽어 테마·스냅샷·본문·연표에서 빼야 실제로 사라진다(문서 작업이 끝난 뒤 넣는다). 그때 `src/data.ts`가 `takedown.json`을 통째로 가져오지 않게(요청자·사유가 번들에 실림) 막은 이름 목록만 넘긴다.
 - [x] contact@aru.wiki 수신과 알림 확인(2026-11-12, 사용자).
 - [x] OCI 배포(2026-11-12, https://aru.wiki 공개). 서버 `147.224.187.173`(A2 1 OCPU·2GB, Ubuntu 24.04, 사용자 `ubuntu`). 이 컴퓨터의 `~/.ssh/aru-deploy` 키로 접속한다(서버 `authorized_keys`에서 그 줄을 지우면 막힌다).
   - 서버에 한 것: 스왑 2GB, iptables 80·443 허용(저장), Caddy 2.6, Node 18(Ubuntu 패키지; report-server는 내장 모듈만 써서 돌아간다). 사이트 `/srv/aru/site`, 신고 데몬 `/opt/aru-report` + `aru-report.service`(DynamicUser, 기록 `/var/lib/aru-report/reports.jsonl`). Caddyfile: `aru.wiki` HTTPS(Let's Encrypt, Caddy가 자동 갱신), `www`와 IP 접속은 `https://aru.wiki`로 넘긴다. zstd/gzip 압축, `/assets/*` 1년 immutable 캐시, `/`·`/index.html` no-cache, HSTS. OCSP 경고 로그는 Let's Encrypt가 OCSP를 끝내서 나는 것이라 무시한다.

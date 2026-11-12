@@ -14,7 +14,7 @@ import ForceGraph3D, { type ForceGraph3DInstance } from '3d-force-graph';
 import { forceX, forceY, forceZ } from 'd3-force-3d';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  AdditiveBlending, BufferGeometry, Float32BufferAttribute, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, NormalBlending,
+  AdditiveBlending, BufferGeometry, Line, LineDashedMaterial, Float32BufferAttribute, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, NormalBlending,
   type PerspectiveCamera, Sprite, SpriteMaterial, Vector2, Vector3,
 } from 'three';
 import { Line2 } from 'three/examples/jsm/lines/Line2.js';
@@ -85,9 +85,9 @@ function starTexture(color: string, night: boolean, rays: boolean) {
     const rgb = new Color(color);
     const rgba = (a: number) => `rgba(${Math.round(rgb.r * 255)},${Math.round(rgb.g * 255)},${Math.round(rgb.b * 255)},${a})`;
     const halo = ctx.createRadialGradient(m, m, 0, m, m, m);
-    halo.addColorStop(0, rgba(night ? 0.55 : 0.35));
-    halo.addColorStop(0.25, rgba(night ? 0.22 : 0.14));
-    halo.addColorStop(0.6, rgba(night ? 0.06 : 0.04));
+    halo.addColorStop(0, rgba(night ? 0.4 : 0.3));
+    halo.addColorStop(0.25, rgba(night ? 0.12 : 0.1));
+    halo.addColorStop(0.6, rgba(night ? 0.02 : 0.02));
     halo.addColorStop(1, rgba(0));
     ctx.fillStyle = halo;
     ctx.fillRect(0, 0, S, S);
@@ -99,7 +99,7 @@ function starTexture(color: string, night: boolean, rays: boolean) {
         ctx.fillRect(dx ? 0 : m - 1.5, dy ? 0 : m - 1.5, dx ? S : 3, dy ? S : 3);
       }
     }
-    const r = S * 0.13;
+    const r = S * 0.17;
     ctx.beginPath();
     ctx.arc(m, m, r, 0, Math.PI * 2);
     if (night) {
@@ -183,6 +183,8 @@ export default function WikiGraph3D() {
   const applySky = useRef<(sky: Palette) => void>(() => {});
   /** Move the glowing "present" floor to a version's height. */
   const placeNow = useRef<(order: number) => void>(() => {});
+  /** Show the dotted lines of lone pages for the chosen version. */
+  const showTethers = useRef<() => void>(() => {});
   /** the time ruler drawn over the left edge of the chart */
   const rulerBox = useRef<HTMLDivElement>(null);
   const [theme, setTheme] = useState<Theme | null>(null);
@@ -281,6 +283,8 @@ export default function WikiGraph3D() {
   }, [theme]);
 
   const shown = useMemo(() => (id: string) => (index?.byId.get(id)?.revealed ?? Infinity) <= vIdx, [index, vIdx]);
+  const shownNow = useRef(shown);
+  shownNow.current = shown;
   const focus = useMemo(() => {
     if (!selected || !index) return null;
     const step = (id: string) => (index.near.get(id) ?? []).filter((e) => e.revealed <= vIdx && shown(e.id)).map((e) => e.id);
@@ -330,7 +334,7 @@ export default function WikiGraph3D() {
           blending: sky0.night ? AdditiveBlending : NormalBlending, depthWrite: false, transparent: true,
         });
         const sprite = new Sprite(star);
-        sprite.scale.setScalar(r * (n.hub ? 12 : 11));
+        sprite.scale.setScalar(r * (n.hub ? 11 : 7.5));
         group.add(sprite);
         // names keep one size on screen at any zoom (sizeAttenuation off): readable far away,
         // never huge up close, and zooming in only spreads them apart
@@ -338,9 +342,6 @@ export default function WikiGraph3D() {
         const label = new SpriteText(nameOf(n), baseHeight * labelScale(el), sky0.label);
         label.fontFace = LABEL_FONT_STACK;
         label.fontWeight = n.hub ? '600' : '500'; // index.html loads 400–600
-        // a thin halo in the sky colour, so lines passing behind a name do not cut through it
-        label.strokeWidth = 1;
-        label.strokeColor = sky0.sky;
         // Hangul reaches past the font-size box; without room the tops and bottoms are cut off
         label.padding = [label.textHeight * 0.15, label.textHeight * 0.3];
         label.material.depthWrite = false;
@@ -362,7 +363,7 @@ export default function WikiGraph3D() {
         const w = strength(l);
         const parts: LineParts = { mat: null as unknown as LineMaterial, target: 0, color: new Color() };
         lineLook(l, lookNow.current, parts);
-        const mat = new LineMaterial({ color: parts.color, linewidth: 0.6 + 1.6 * w, transparent: true, opacity: 0, depthWrite: false });
+        const mat = new LineMaterial({ color: parts.color, linewidth: 0.5 + 0.8 * w, transparent: true, opacity: 0, depthWrite: false });
         mat.fog = true;
         mat.resolution.copy(resolution);
         parts.mat = mat;
@@ -387,16 +388,20 @@ export default function WikiGraph3D() {
       // the theme page is the sun of the chart
       .graphData({ nodes: theme.nodes.map((n) => (n.hub ? { ...n, fx: 0, fy: 0, fz: 0 } : { ...n })), links: theme.links.map((l) => ({ ...l })) });
 
+    // pages with no lines are pulled in instead of drifting to the rim
+    const pull = (n: PageNode) => (index.near.has(n.id) ? 0.03 : 0.25);
     // ecliptic: a strong pull to each page's height, a gentle one to the middle in the plane
     g.d3Force('y', forceY<PageNode>((n) => height(n)).strength(0.9) as never)
-      .d3Force('x', forceX(0).strength(0.03) as never)
-      .d3Force('z', forceZ(0).strength(0.03) as never);
+      .d3Force('x', forceX(0).strength(pull as never) as never)
+      .d3Force('z', forceZ(0).strength(pull as never) as never);
     (g.d3Force('charge') as unknown as { strength(s: number): void }).strength(-90);
     (g.d3Force('link') as unknown as { distance(f: (l: PageLink) => number): void }).distance((l) => 18 + 30 * (1 - strength(l)));
 
     let fitted = false;
     let layoutTimer: number | undefined;
     let placeRuler = () => {};
+    const tethers: { id: string; line: Line<BufferGeometry, LineDashedMaterial> }[] = [];
+    showTethers.current = () => { for (const t of tethers) t.line.visible = shownNow.current(t.id); wakeUp(); };
     /** Screen room kept for the time ruler at the left edge: the chart is drawn shifted right by half of it. */
     const RULER_W = 64;
     const leaveRoom = () => {
@@ -453,6 +458,20 @@ export default function WikiGraph3D() {
         };
       }
       placeNow.current = () => { placeRuler(); wakeUp(); };
+      // a page of the theme that shares no story with any other has no line; a faint dotted one to the
+      // theme star keeps it from floating alone (it says "in this theme", not "shares stories")
+      const hubPos = new Vector3();
+      for (const n of list) if (n.hub) hubPos.set(n.x ?? 0, n.y ?? 0, n.z ?? 0);
+      for (const n of list) {
+        if (n.hub || index.near.has(n.id)) continue;
+        const geo = new BufferGeometry().setFromPoints([hubPos, new Vector3(n.x ?? 0, n.y ?? 0, n.z ?? 0)]);
+        const loose = new Line(geo, new LineDashedMaterial({ color: lookNow.current.sky.line, dashSize: 3, gapSize: 4, transparent: true, opacity: 0.35, depthWrite: false }));
+        loose.computeLineDistances();
+        loose.raycast = () => {};
+        g.scene().add(loose);
+        tethers.push({ id: n.id, line: loose });
+      }
+      showTethers.current();
       // lines that climb far up the axis, or are not in the spanning tree, rest faint
       for (const l of g.graphData().links) {
         const s = l.source as PageNode, t = l.target as PageNode;
@@ -535,7 +554,7 @@ export default function WikiGraph3D() {
         p.star.needsUpdate = true;
         p.label.color = s.label;
       }
-      for (const p of stars.current.values()) p.label.strokeColor = s.sky;
+      for (const t of tethers) t.line.material.color.set(s.line);
       dust.material.color.set(s.night ? '#c9d3ff' : '#7a87ad');
       dust.material.opacity = s.night ? 0.35 : 0.14;
       wakeUp();
@@ -622,6 +641,8 @@ export default function WikiGraph3D() {
       controls.removeEventListener('change', onMove);
       for (const ev of events) el.removeEventListener(ev, wakeUp);
       rulerBox.current?.replaceChildren();
+      for (const t of tethers) { t.line.geometry.dispose(); t.line.material.dispose(); }
+      showTethers.current = () => {};
       placeNow.current = () => {};
       dust.geometry.dispose(); dust.material.dispose();
       g._destructor();
@@ -648,6 +669,7 @@ export default function WikiGraph3D() {
     g.nodeVisibility((n) => shown(n.id))
       .linkVisibility((l) => l.revealed <= vIdx && shown(idOf(l.source)) && shown(idOf(l.target)));
     placeNow.current(vIdx);
+    showTethers.current();
     relabelSoon.current();
     wake.current();
   }, [theme, shown, vIdx]);

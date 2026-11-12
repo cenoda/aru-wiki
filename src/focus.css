@@ -20,21 +20,10 @@
   mask-composite: intersect;
 }
 
-/* header search */
-.site .find { position: relative; flex: 1 1 180px; max-width: 320px; min-width: 160px; margin-left: 8px; }
-.site .find input { width: 100%; padding: 5px 12px; font: inherit; font-size: .95rem; color: var(--band-text);
-  background: rgba(236,229,216,.08); border: 1px solid rgba(236,229,216,.3); border-radius: 2px; }
-.site .find input::placeholder { color: rgba(236,229,216,.55); }
-.site .find input:focus { outline: none; border-color: #d3bc8e; }
-.site .find ul { position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 20; margin: 0; padding: 4px; list-style: none;
-  background: var(--card); border: 1px solid var(--line); border-radius: 2px; box-shadow: 0 8px 20px rgba(20,24,40,.1); }
-.site .find li button { width: 100%; display: flex; align-items: center; gap: 8px; padding: 7px 10px; background: none;
-  color: var(--text); font-weight: 500; border-radius: 2px; text-align: left; }
-.site .find li button:hover { background: var(--gold-soft); }
-.site .find small { margin-left: auto; color: var(--muted); font-size: .8rem; }
-.site .find li.empty { padding: 7px 10px; color: var(--muted); font-size: .85rem; }
-.site .find .hit { display: flex; flex-direction: column; min-width: 0; }
-.site .find .hit em { font-style: normal; color: var(--muted); font-size: .8rem; }
+/* header search (Search.tsx): a wider box on the quest map */
+.site .find { flex: 1 1 180px; max-width: 320px; min-width: 160px; margin-left: 8px; }
+.site .find input[type=search], .site .find input[type=search]:focus { width: 100%; }
+.site .find .search-list { max-width: min(480px, 92vw); }
 .site .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex: none; }
 
 /* act cards */
@@ -206,7 +195,6 @@
 .site .info .hung .rec-more { margin-top: 2px; }
 .site .act-quests ol.unit-quests { list-style: none; margin: 0; padding: 0; counter-reset: q; }
 .site .unit-tag { border-radius: 8px; }
-.site .find li button.unit .dot { border-radius: 2px; }
 
 /* card figure: a character icon (from its release version on) or a region emblem */
 .site .card-node.act { padding-left: 5px; }

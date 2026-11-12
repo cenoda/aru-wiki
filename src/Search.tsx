@@ -1,26 +1,47 @@
-// Article search over the theme's pages: Korean or English name, as you type. Used in the 3D view's
-// header and, where the browser cannot draw 3D, as the whole front page (a search box in the
-// middle, like an encyclopedia's portal). Pages not revealed at the chosen version are not found.
-import { type FormEvent, type KeyboardEvent, useEffect, useId, useMemo, useRef, useState } from 'react';
+// The site's one search box: articles (Korean or English name) and quests (acts, series, events and
+// the quests in them, questSearch.ts), as you type. Used in the 3D view's header, the quest map's
+// header and, where the browser cannot draw 3D, as the whole front page (a search box in the middle,
+// like an encyclopedia's portal). Nothing not revealed at the chosen version is found.
+import { type FormEvent, Fragment, type KeyboardEvent, type MouseEvent, type ReactNode, useEffect, useId, useMemo, useRef, useState } from 'react';
 import { versions } from './data';
-import { KIND_LABEL, nameOf, type PageNode } from './lore';
+import { KIND_LABEL, nameOf, type PageNode, type Theme } from './lore';
+import { focusUrl, questHits } from './questSearch';
 import { loadPublished, type Published } from './readerEdits';
+import themeUrl from '../data/runtime/theme-khaenriah.json?url';
+import pagesUrl from '../data/runtime/pages.json?url';
+import './search.css';
 
 export interface SearchProps {
   nodes: PageNode[];
   vIdx: number;
   hrefOf: (page: string) => string;
   onOpen: (page: string) => void;
+  /** open an act or unit on the quest map; without it a quest hit is a link to the quest map */
+  onQuest?: (id: string) => void;
   /** the large centred box of the front page */
   big?: boolean;
   autoFocus?: boolean;
   /** the `＋ 새 문서` button beside the box (on unless false) */
   newPage?: boolean;
+  className?: string;
+}
+
+/** Every page with an article, for a view that does not load the theme itself (the quest map). */
+export async function loadSearchNodes(): Promise<PageNode[]> {
+  const get = (url: string) => fetch(url).then((r) => (r.ok ? r.json() : Promise.reject(r.status)));
+  const [theme, extra] = await Promise.all([get(themeUrl) as Promise<Theme>, get(pagesUrl).catch(() => []) as Promise<PageNode[]>]);
+  const ids = new Set(theme.nodes.map((n) => n.id));
+  return [...theme.nodes, ...extra.filter((n) => !ids.has(n.id))];
 }
 
 const fold = (s: string) => s.toLowerCase().normalize('NFKC').replace(/[\s·'’「」-]/g, '');
+/** a plain left click (others open the link in a new tab or window as usual) */
+const plain = (e: MouseEvent) => e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey;
 
-export function Search({ nodes, vIdx, hrefOf, onOpen, big, autoFocus, newPage = true }: SearchProps) {
+/** One row of the list: what it shows, where it links, what a plain click or Enter does. */
+interface Row { key: string; href: string; go: () => void; body: ReactNode; className?: string; head?: string }
+
+export function Search({ nodes, vIdx, hrefOf, onOpen, onQuest, big, autoFocus, newPage = true, className }: SearchProps) {
   const [q, setQ] = useState('');
   const [at, setAt] = useState(0);
   const [open, setOpen] = useState(false);
@@ -39,7 +60,7 @@ export function Search({ nodes, vIdx, hrefOf, onOpen, big, autoFocus, newPage = 
   /** offer to write the page when nothing has this name (not while a hidden page may have it) */
   const canWrite = title.length >= 2 && title.length <= 60 && !BAD_TITLE.test(title)
     && !nodes.some((n) => fold(nameOf(n)) === fold(title) || fold(n.id) === fold(title)) && !written.some((t) => fold(t) === fold(title));
-  const open2 = (t: string) => { setOpen(false); setQ(''); onOpen(t); };
+  const done = () => { setOpen(false); setQ(''); };
 
   const hits = useMemo(() => {
     const k = fold(q);
@@ -53,51 +74,55 @@ export function Search({ nodes, vIdx, hrefOf, onOpen, big, autoFocus, newPage = 
       })
       .filter((x) => x.rank >= 0)
       .sort((a, b) => a.rank - b.rank || Number(b.n.hub) - Number(a.n.hub) || b.n.theme_units - a.n.theme_units)
-      .slice(0, 8)
+      .slice(0, 6)
       .map((x) => x.n);
   }, [q, nodes, vIdx]);
+  const quests = useMemo(() => questHits(q, vIdx, hits.length ? 6 : 8), [q, vIdx, hits.length]);
 
-  const go = (n: PageNode) => { setOpen(false); setQ(''); onOpen(n.id); };
+  // articles first, then quests, then pages readers wrote, then the offer to write a new page
+  const rows: Row[] = [
+    ...hits.map((n): Row => ({
+      key: n.id, href: hrefOf(n.id), go: () => { done(); onOpen(n.id); },
+      body: <><b>{nameOf(n)}</b><span>{n.hub ? '테마' : KIND_LABEL[n.kind]}{n.ko && <> · <span lang="en">{n.id}</span></>}</span></>,
+    })),
+    ...quests.map((h, i): Row => ({
+      key: `q:${h.key}`, href: `/${focusUrl(h.target)}`, head: i === 0 && hits.length ? '임무' : undefined,
+      className: `quest ${h.cls}${h.unit ? ' unit' : ''}`,
+      go: () => { done(); if (onQuest) onQuest(h.target); else location.assign(`/${focusUrl(h.target)}`); },
+      body: <><i className="dot" /><b>{h.name}</b><span>{h.note}{h.version && <> · {h.version}</>}</span></>,
+    })),
+    ...written.map((t): Row => ({ key: `w:${t}`, href: hrefOf(t), go: () => { done(); onOpen(t); }, body: <><b>{t}</b><span>독자가 쓴 문서</span></> })),
+    ...(canWrite && !hits.length ? [{
+      key: 'new', href: hrefOf(title), go: () => { done(); onOpen(title); },
+      body: <><b>「{title}」 문서 쓰기</b><span>아직 없는 문서입니다</span></>,
+    }] : []),
+  ];
+  const sel = Math.min(at, rows.length - 1);
+
   const onKey = (e: KeyboardEvent) => {
-    if (e.key === 'ArrowDown') { e.preventDefault(); setAt((i) => Math.min(i + 1, hits.length - 1)); setOpen(true); }
-    else if (e.key === 'ArrowUp') { e.preventDefault(); setAt((i) => Math.max(i - 1, 0)); }
-    else if (e.key === 'Enter' && hits[at]) { e.preventDefault(); go(hits[at]); }
-    else if (e.key === 'Escape') setOpen(false);
+    if (e.key === 'ArrowDown') { e.preventDefault(); setAt(Math.min(sel + 1, rows.length - 1)); setOpen(true); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); setAt(Math.max(sel - 1, 0)); }
+    else if (e.key === 'Enter' && rows[sel]) { e.preventDefault(); rows[sel].go(); }
+    else if (e.key === 'Escape') { if (open && q) setOpen(false); else { setQ(''); (e.target as HTMLInputElement).blur(); } }
   };
 
   return (<>
-    <div className={`search${big ? ' big' : ''}`} role="search">
-      <input type="search" value={q} placeholder={big ? '문서 검색 (예: 켄리아, 데인슬레이프)' : '문서 검색'} aria-label="문서 검색"
-        role="combobox" aria-expanded={open && hits.length > 0} aria-controls={listId} aria-autocomplete="list"
-        aria-activedescendant={open && hits[at] ? `${listId}-${at}` : undefined}
+    <div className={`search${big ? ' big' : ''}${className ? ` ${className}` : ''}`} role="search">
+      <input type="search" value={q} placeholder={big ? '문서·임무 검색 (예: 켄리아, 데인슬레이프, 마신 임무)' : '문서·임무 검색'} aria-label="문서·임무 검색"
+        role="combobox" aria-expanded={open && rows.length > 0} aria-controls={listId} aria-autocomplete="list"
+        aria-activedescendant={open && rows[sel] ? `${listId}-${sel}` : undefined}
         autoFocus={autoFocus} enterKeyHint="search"
         onChange={(e) => { setQ(e.target.value); setAt(0); setOpen(true); }}
         onFocus={() => setOpen(true)} onBlur={() => setTimeout(() => setOpen(false), 150)} onKeyDown={onKey} />
       {open && q && (
         <ul className="search-list" id={listId} role="listbox">
-          {hits.length ? hits.map((n, i) => (
-            <li key={n.id} id={`${listId}-${i}`} role="option" aria-selected={i === at}>
-              <a href={hrefOf(n.id)} onMouseDown={(e) => e.preventDefault()} onMouseEnter={() => setAt(i)}
-                onClick={(e) => { if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return; e.preventDefault(); go(n); }}>
-                <b>{nameOf(n)}</b>
-                <span>{n.hub ? '테마' : KIND_LABEL[n.kind]}{n.ko && <> · <span lang="en">{n.id}</span></>}</span>
-              </a>
+          {rows.length ? rows.map((r, i) => (<Fragment key={r.key}>
+            {r.head && <li className="search-head" role="presentation">{r.head}</li>}
+            <li id={`${listId}-${i}`} role="option" aria-selected={i === sel} className={r.className}>
+              <a href={r.href} onMouseDown={(e) => e.preventDefault()} onMouseEnter={() => setAt(i)}
+                onClick={(e) => { if (!plain(e)) return; e.preventDefault(); r.go(); }}>{r.body}</a>
             </li>
-          )) : !written.length && <li className="search-none">찾는 문서가 없습니다.</li>}
-          {written.map((t) => (
-            <li key={`w:${t}`} role="option" aria-selected={false}>
-              <a href={hrefOf(t)} onMouseDown={(e) => e.preventDefault()} onClick={(e) => { if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return; e.preventDefault(); open2(t); }}>
-                <b>{t}</b><span>독자가 쓴 문서</span>
-              </a>
-            </li>
-          ))}
-          {canWrite && !hits.length && (
-            <li role="option" aria-selected={false}>
-              <a href={hrefOf(title)} onMouseDown={(e) => e.preventDefault()} onClick={(e) => { if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return; e.preventDefault(); open2(title); }}>
-                <b>「{title}」 문서 쓰기</b><span>아직 없는 문서입니다</span>
-              </a>
-            </li>
-          )}
+          </Fragment>)) : <li className="search-none">찾는 문서나 임무가 없습니다.</li>}
         </ul>
       )}
     </div>

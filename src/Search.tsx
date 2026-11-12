@@ -1,8 +1,10 @@
 // Article search over the theme's pages: Korean or English name, as you type. Used in the 3D view's
 // header and, where the browser cannot draw 3D, as the whole front page (a search box in the
 // middle, like an encyclopedia's portal). Pages not revealed at the chosen version are not found.
-import { type KeyboardEvent, useId, useMemo, useState } from 'react';
+import { type KeyboardEvent, useEffect, useId, useMemo, useState } from 'react';
+import { versions } from './data';
 import { KIND_LABEL, nameOf, type PageNode } from './lore';
+import { loadPublished, type Published } from './readerEdits';
 
 export interface SearchProps {
   nodes: PageNode[];
@@ -21,6 +23,21 @@ export function Search({ nodes, vIdx, hrefOf, onOpen, big, autoFocus }: SearchPr
   const [at, setAt] = useState(0);
   const [open, setOpen] = useState(false);
   const listId = useId();
+  // pages readers wrote (readerEdits.ts) are found by title, from the version they were written at
+  const [pub, setPub] = useState<Published | null>(null);
+  useEffect(() => { let live = true; loadPublished().then((p) => live && setPub(p)); return () => { live = false; }; }, []);
+  const written = useMemo(() => {
+    const k = fold(q);
+    if (!k || !pub) return [];
+    return pub.edits
+      .filter((e) => e.kind === 'page' && fold(e.page).includes(k) && versions.findIndex((v) => v.id === e.v) >= 0 && versions.findIndex((v) => v.id === e.v) <= vIdx)
+      .slice(0, 3).map((e) => e.page);
+  }, [q, pub, vIdx]);
+  const title = q.trim().replace(/\s+/g, ' ');
+  /** offer to write the page when nothing has this name (not while a hidden page may have it) */
+  const canWrite = title.length >= 2 && title.length <= 60 && !/[<>[\]{}|#/?%]/.test(title)
+    && !nodes.some((n) => fold(nameOf(n)) === fold(title) || fold(n.id) === fold(title)) && !written.some((t) => fold(t) === fold(title));
+  const open2 = (t: string) => { setOpen(false); setQ(''); onOpen(t); };
 
   const hits = useMemo(() => {
     const k = fold(q);
@@ -64,7 +81,21 @@ export function Search({ nodes, vIdx, hrefOf, onOpen, big, autoFocus }: SearchPr
                 <span>{n.hub ? '테마' : KIND_LABEL[n.kind]}{n.ko && <> · <span lang="en">{n.id}</span></>}</span>
               </a>
             </li>
-          )) : <li className="search-none">찾는 문서가 없습니다.</li>}
+          )) : !written.length && <li className="search-none">찾는 문서가 없습니다.</li>}
+          {written.map((t) => (
+            <li key={`w:${t}`} role="option" aria-selected={false}>
+              <a href={hrefOf(t)} onMouseDown={(e) => e.preventDefault()} onClick={(e) => { if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return; e.preventDefault(); open2(t); }}>
+                <b>{t}</b><span>독자가 쓴 문서</span>
+              </a>
+            </li>
+          ))}
+          {canWrite && !hits.length && (
+            <li role="option" aria-selected={false}>
+              <a href={hrefOf(title)} onMouseDown={(e) => e.preventDefault()} onClick={(e) => { if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return; e.preventDefault(); open2(title); }}>
+                <b>「{title}」 문서 쓰기</b><span>아직 없는 문서입니다</span>
+              </a>
+            </li>
+          )}
         </ul>
       )}
     </div>

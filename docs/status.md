@@ -55,6 +55,17 @@
   - [x] 3D가 안 되는 기기(2026-11-12 사용자 결정, design.md 2절): 모바일도 3D가 기본이고 2D 그래프 전환은 만들지 않는다. WebGL을 쓸 수 없는 브라우저에서는 위키백과 대문처럼 가운데 검색창 하나만 있는 화면을 보여 준다(`WikiGraph3D`의 `w3d-portal`). 예전 2D 전환 계획(저사양 모드, 프레임 측정)은 버렸다. `feat/quest-3d`의 `src/settings.ts`는 쓰지 않는다.
 - [ ] 임무 3D(막을 버전 층에 쌓은 3D 지도)는 `feat/quest-3d` 브랜치에 보관(사용자: 나중에 추가할 수 있음).
 
+### 독자가 쓰는 글 (`feat/reader-edits` 브랜치, 2026-11-12)
+
+로그인 없이 문단 고치기·글 보태기·새 문서 제안. 보낸 글은 쓴 사람 브라우저에서만 바로 보이고 운영자가 승인해야 공개된다(사용자 결정: 안전한 방식). 설명과 운영 방법, 저작권법 조문 확인은 [reader-edits.md](reader-edits.md).
+
+- [x] 화면(`src/Suggest.tsx`, `src/readerEdits.ts`), 받는 쪽(`scripts/suggest/server.mjs`), 운영 도구(`scripts/suggest/review.mjs`), 실린 글 `data/manual/reader-edits.json`. 로컬에서 브라우저로 고치기→승인→공개, 거절 사유 표시, 새 문서, 버전 가림을 확인했다.
+- [x] 같이 고친 것: 오류 신고(`/api/report`)가 이름에 공백·아포스트로피가 있는 문서(`Abyss Order`, `Khaenri'ah` 등)를 400으로 거절하던 문제.
+- [ ] `main`에 합치기, 서버에 받는 쪽 올리기(Caddy `/api/suggest` 포함), 사이트 배포. 받는 쪽이 먼저다.
+- [ ] LLM 검사(근거 대조·스포일러). 본문 파이프라인의 LLM 호출 코드가 정리된 뒤에 붙인다.
+- [ ] 아직 없는 것: 글 속 빨간 링크, 최근 바뀜 페이지, 독자가 쓴 문서의 문단 고치기, 실린 뒤 내려간 글을 쓴 사람에게 알리기.
+- [ ] 정할 것: 작은 수정을 승인 없이 바로 공개할지(지금은 전부 승인 후 공개).
+
 ### 1단계 마무리
 
 - [x] 임무 카드 이미지(2026-11-11, [이미지 방침 4절](image-policy.md)). 중심 인물이 정해진 막 96개, 아이콘 81명(2026-11-12 진·한운 추가). 기록은 `data/generated/image-files.json`, 다시 만들기는 `node scripts/images/card-figures.mjs && node scripts/images/fetch-enka-icons.mjs`(이미 받은 파일은 다시 받지 않는다). 버전 선택기가 인물 공개 버전보다 앞이면 아이콘을 숨긴다.

@@ -12,7 +12,9 @@ import {
   type ArtPara, type ArtSource, articleAt, idOf, KIND_LABEL, loadPageData, nameOf, type PageData, type PageNode, pageUrl, revisionUrl,
   snapshotAt, type Snapshots, type Theme, withParticle,
 } from './lore';
+import { editsFor, hasHumanPage, humanPage, overlay, type Para, paraText } from './readerEdits';
 import { ReportBox } from './ReportBox';
+import { AddBlock, MySuggestions, ParaBlock, type Target, useReaderEdits } from './Suggest';
 import './article.css';
 
 export interface WikiArticleProps {
@@ -79,6 +81,13 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
   }, [page]);
   const loading = data?.page !== page;
   const art = loading ? null : articleAt(data.d.articles, vIdx);
+  // text readers wrote: published, and this browser's own waiting suggestions (readerEdits.ts)
+  const { pub, own } = useReaderEdits();
+  const edits = useMemo(() => editsFor(page, vIdx, pub, own), [page, vIdx, pub, own]);
+  const shown = useMemo(() => (art ? overlay(art, edits) : null), [art, edits]);
+  /** a page only readers wrote (no generated page has this title) */
+  const written = !node ? humanPage(page, edits) : null;
+  const vId = versions[vIdx]?.id ?? '';
   const timeline = loading ? [] : data.d.timeline.filter((t) => t.v <= vIdx);
   const snapSrc = (r: number): ArtSource | undefined => { const s = current?.sources[r]; return s && { kind: 'wiki', ...s }; };
 
@@ -113,9 +122,9 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
   useEffect(() => { root.current?.scrollTo(0, 0); }, [page]);
   useEffect(() => {
     const before = document.title;
-    document.title = revealed && node ? `${nameOf(node)} - aru.wiki` : 'aru.wiki';
+    document.title = revealed && node ? `${nameOf(node)} - aru.wiki` : written ? `${written.title} - aru.wiki` : 'aru.wiki';
     return () => { document.title = before; };
-  }, [revealed, node]);
+  }, [revealed, node, written?.title]);
 
   /** In-page links: plain clicks stay in the app; modified clicks open the address as usual. */
   const go = (id: string) => (e: MouseEvent) => {
@@ -150,18 +159,49 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
     </>
   );
 
+  if (written) {
+    const seen = new Set<string>();
+    return (
+      <main className="wa" ref={root}>
+        <article className="wa-body">
+          <h1 className="wa-title">{written.title}</h1>
+          <p className="wa-sub">aru.wiki · 독자가 쓴 문서 · {vId}까지 공개된 내용</p>
+          <div className="wa-notice" role="note">
+            <span className="tag neutral">{written.pending ? '검토 중' : '독자 작성'}</span>
+            <p>{written.pending ? '보낸 제안입니다. 운영자가 확인하기 전까지 이 브라우저에서만 보입니다.'
+              : '독자가 쓴 문서입니다. 운영자가 읽고 실었지만, 기계가 쓴 문서처럼 문장마다 근거와 대조하지는 않았습니다.'}</p>
+          </div>
+          {written.p.map((p, i) => <ParaBlock key={i} className={i === 0 ? 'wa-lead' : undefined} h={p.h}>{para(p, [], seen)}</ParaBlock>)}
+          {!written.pending && <AddBlock target={{ kind: 'add', page: written.title, v: vId, section: null }} label="＋ 이 문서에 글 보태기" />}
+          <MySuggestions page={page} />
+          <section id="license">
+            <h2>출처와 라이선스</h2>
+            <p className="wa-small">이 문서의 글은 쓴 사람이 CC BY-SA 4.0으로 배포하는 데 동의한 글입니다. 게임의 세계관·명칭·대사에 관한 권리는 HoYoverse에 있습니다. 저작권 침해 신고(게시 중단 요구)와 삭제 요청은 <a href="mailto:contact@aru.wiki">contact@aru.wiki</a>로 받습니다.</p>
+          </section>
+        </article>
+      </main>
+    );
+  }
   if (!node || !revealed) {
+    // a title readers wrote about at a later version stays hidden like any unrevealed page
+    const later = !node && hasHumanPage(page, pub);
+    const canWrite = !node && !later && pub !== null && !own.some((e) => e.kind === 'page' && !e.settled && e.page === page);
     return (
       <main className="wa" ref={root}>
         <article className="wa-body">
           <h1 className="wa-title">공개되지 않은 항목</h1>
-          <p className="wa-hidden">{node ? `이 항목은 ${versions[vIdx]?.id ?? ''}까지의 버전에서는 공개되지 않았습니다. 위에서 버전을 바꾸면 볼 수 있습니다.` : '이런 항목이 없습니다.'}</p>
+          <p className="wa-hidden">{node || later ? `이 항목은 ${versions[vIdx]?.id ?? ''}까지의 버전에서는 공개되지 않았습니다. 위에서 버전을 바꾸면 볼 수 있습니다.` : `「${page}」 문서는 아직 없습니다.`}</p>
+          {canWrite && <AddBlock big target={{ kind: 'page', page, v: vId }} label="이 문서의 첫 문단 쓰기" />}
+          <MySuggestions page={page} />
         </article>
       </main>
     );
   }
 
   const name = nameOf(node);
+  /** what fixing this paragraph would send */
+  const fix = (p: Para, section: string | null): Target | undefined => (art ? { kind: 'edit', page, v: vId, from: versions[art.from]?.id, section, orig: paraText(p) } : undefined);
+  const byReaders = !!shown && ([shown.lead, ...shown.sections.flatMap((x) => x.p), ...shown.loose].some((p) => p?.h && !p.h.pending));
   const sections = [
     ...(art ? art.sections.map((x, i) => ({ id: `s${i + 1}`, label: x.h })) : []),
     !art && current && { id: 'overview', label: '개요' },
@@ -182,7 +222,7 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
 
         <div className="wa-notice" role="note">
           <span className="tag neutral">미검수</span>
-          <p>이 문서는 Fandom 원신 위키의 글{hasWeb ? ', 공식 사이트·위키백과의 사실' : ''}과 게임 대사를 바탕으로 기계가 쓰고, 다른 회사의 모델이 문장마다 근거와 대조해 근거 없는 문장을 뺀 것입니다. <span className="wa-interp-tag">해석</span> 표시가 붙은 문장은 사실을 엮은 해석입니다. 사람은 아직 확인하지 않았습니다. 틀린 곳은 아래 <a href="#report" onClick={jump('report')}>오류 신고</a>로 알려 주세요.</p>
+          <p>이 문서는 Fandom 원신 위키의 글{hasWeb ? ', 공식 사이트·위키백과의 사실' : ''}과 게임 대사를 바탕으로 기계가 쓰고, 다른 회사의 모델이 문장마다 근거와 대조해 근거 없는 문장을 뺀 것입니다. <span className="wa-interp-tag">해석</span> 표시가 붙은 문장은 사실을 엮은 해석입니다. 사람은 아직 확인하지 않았습니다. 틀린 곳은 문단 끝의 ✎로 직접 고치거나 아래 <a href="#report" onClick={jump('report')}>오류 신고</a>로 알려 주세요. 보낸 글은 운영자가 확인한 뒤에 실립니다.</p>
         </div>
 
         <aside className="wa-infobox" aria-label="정보 상자">
@@ -202,7 +242,7 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
         {(() => {
           const seen = new Set<string>();
           if (loading && snapshots === null) return <p className="wa-lead wa-muted">불러오는 중…</p>;
-          if (art?.lead) return <p className="wa-lead">{para(art.lead, art.sources, seen)}</p>;
+          if (art && shown?.lead) return <ParaBlock className="wa-lead" h={shown.lead.h} edit={fix(shown.lead, null)}>{para(shown.lead, art.sources, seen)}</ParaBlock>;
           if (current?.summary) return <p className="wa-lead">{link(current.summary.t, seen)}{refs([snapSrc(current.summary.r)])}</p>;
           return <p className="wa-lead wa-muted">{current ? '이 버전의 한 줄 요약은 검증을 통과하지 못해 싣지 않았습니다.' : `${versions[vIdx]?.id}까지는 위키에 이 항목의 서술이 아직 없습니다.`}</p>;
         })()}
@@ -217,7 +257,7 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
         {art && art.from < (current?.from ?? -1) && (
           <p className="wa-muted wa-small">본문은 {versionLabel(art.from)} 때의 자료 기준입니다. 그 뒤 버전의 본문은 아직 없습니다.</p>
         )}
-        {art && art.sections.map((x, i) => {
+        {art && shown && shown.sections.map((x, i) => {
           const seen = new Set<string>();
           return (
             <section key={i} id={`s${i + 1}`}>
@@ -228,10 +268,21 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
                   <footer>— {x.q.by}{refs([art.sources[x.q.r]])} <span className="wa-muted">(영어 대사를 옮김)</span></footer>
                 </blockquote>
               )}
-              {x.p.map((p, j) => <p key={j}>{para(p, art.sources, seen)}</p>)}
+              {x.p.map((p, j) => <ParaBlock key={`${j}:${p.h?.id ?? ''}`} h={p.h} edit={fix(p, x.h)}>{para(p, art.sources, seen)}</ParaBlock>)}
+              <AddBlock target={{ kind: 'add', page, v: vId, section: x.h }} label="＋ 이 절에 글 보태기 (해석·떡밥·여담)" />
             </section>
           );
         })}
+
+        {art && shown && shown.loose.length > 0 && (() => {
+          const seen = new Set<string>();
+          return (
+            <section id="readers">
+              <h2>독자가 쓴 글</h2>
+              {shown.loose.map((p, j) => <ParaBlock key={j} h={p.h}>{para(p, art.sources, seen)}</ParaBlock>)}
+            </section>
+          );
+        })()}
 
         {!art && current && (() => {
           const seen = new Set<string>();
@@ -303,8 +354,10 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
 
         <section id="license">
           <h2>출처와 라이선스</h2>
-          <p className="wa-small">각주의 Fandom 원신 위키 글(CC BY-SA 3.0)을 번역·요약해 고쳐 썼고, 웹 출처에서는 사실만 가져와 직접 썼습니다. 이 문서의 글도 CC BY-SA로 쓸 수 있습니다. 게임 대사와 이미지의 권리는 HoYoverse에 있으며, 대사는 한 줄 이하로만 옮겨 실었습니다.</p>
+          <p className="wa-small">각주의 Fandom 원신 위키 글(CC BY-SA 3.0)을 번역·요약해 고쳐 썼고, 웹 출처에서는 사실만 가져와 직접 썼습니다. 이 문서의 글도 CC BY-SA로 쓸 수 있습니다. 게임 대사와 이미지의 권리는 HoYoverse에 있으며, 대사는 한 줄 이하로만 옮겨 실었습니다.{byReaders && ' 「독자 수정」·「독자 작성」 표시가 붙은 글은 독자가 쓰고 CC BY-SA 4.0 배포에 동의한 글이며, 운영자가 읽고 실었습니다.'} 저작권 침해 신고(게시 중단 요구)와 삭제 요청은 <a href="mailto:contact@aru.wiki">contact@aru.wiki</a>로 받습니다.</p>
         </section>
+
+        <MySuggestions page={page} />
 
         <section id="report">
           <ReportBox key={page} nodeId={page} version={versions[vIdx]?.id ?? ''} />

@@ -4,12 +4,14 @@
 // Environment variables:
 //   PORT         Listening port (default: 8787)
 //   REPORT_FILE  JSONL output path (default: ./data/reports.jsonl)
+//   SUGGEST_FILE JSONL of reader suggestions, /api/suggest (default: suggestions.jsonl beside REPORT_FILE)
 //   WEBHOOK_URL  Optional webhook URL (Discord/Slack/custom) notified asynchronously
 import { createHash, randomBytes } from 'node:crypto';
 import { appendFile, mkdir } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createSuggestHandler } from './suggest/server.mjs';
 
 const CATEGORIES = new Set(['order', 'spoiler', 'name', 'other']);
 const CATEGORY_KO = {
@@ -71,7 +73,7 @@ export function createReportHandler({
     const category = typeof body.category === 'string' ? body.category.trim() : '';
     const comment = typeof body.comment === 'string' ? body.comment.replace(/\s+/g, ' ').trim() : '';
 
-    if (!nodeId || nodeId.length > 120 || !/^[\w:.-]+$/.test(nodeId)) return { error: 'invalid_nodeId' };
+    if (!nodeId || nodeId.length > 120 || !/^[\p{L}\p{N}\p{M} _:.,'’()/&!?-]+$/u.test(nodeId)) return { error: 'invalid_nodeId' };
     if (edgeId && (edgeId.length > 240 || !/^[\w:>.-]+$/.test(edgeId))) return { error: 'invalid_edgeId' };
     if (!version || version.length > 32) return { error: 'invalid_version' };
     if (!CATEGORIES.has(category)) return { error: 'invalid_category' };
@@ -161,8 +163,13 @@ export function createReportHandler({
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const port = Number(process.env.PORT ?? 8787);
   const reportFile = resolve(process.cwd(), process.env.REPORT_FILE ?? 'data/reports.jsonl');
-  const server = createServer(createReportHandler({ reportFile }));
+  // reader suggestions (scripts/suggest/server.mjs) are kept beside the reports
+  const suggestFile = resolve(process.cwd(), process.env.SUGGEST_FILE ?? resolve(dirname(reportFile), 'suggestions.jsonl'));
+  const report = createReportHandler({ reportFile });
+  const suggest = createSuggestHandler({ file: suggestFile });
+  const server = createServer((req, res) => (new URL(req.url ?? '/', 'http://localhost').pathname === '/api/suggest' ? suggest : report)(req, res));
   server.listen(port, '127.0.0.1', () => {
     console.log(`report-server listening on http://127.0.0.1:${port}/api/report -> ${reportFile}`);
+    console.log(`  /api/suggest -> ${suggestFile}`);
   });
 }

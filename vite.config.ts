@@ -36,5 +36,6 @@ function runtimeData(): Plugin {
 export default defineConfig({
   plugins: [react(), runtimeData()],
   // Reached through an SSH tunnel (ssh -L 5173:localhost:5173 ...), so bind to loopback only.
-  server: { host: '127.0.0.1', port: 5173, strictPort: true },
+  // /api/report and /api/suggest go to scripts/report-server.mjs when it runs locally (in production Caddy does this)
+  server: { host: '127.0.0.1', port: Number(process.env.PORT ?? 5173), strictPort: true, proxy: { '/api': 'http://127.0.0.1:8787' } },
 });

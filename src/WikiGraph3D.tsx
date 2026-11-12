@@ -594,7 +594,7 @@ export default function WikiGraph3D() {
       <div className="wrap"><header>
         <a className="logo" href="/"><Logo />aru.wiki</a>
         {article ? (
-          <button type="button" className="w3d-back" onClick={closeArticle}>← 3D 지도</button>
+          <button type="button" className="w3d-back" onClick={closeArticle}>← 3D 위키</button>
         ) : !gl ? null : <div className="legend" aria-label="범례">
           <span style={{ ['--c' as string]: sky.hub }}><i />테마</span>
           <span style={{ ['--c' as string]: sky.character }}><i />인물</span>

@@ -1260,7 +1260,7 @@ function Atlas() {
             <span className="hint">카드를 누르면 갈래 · 끌어서 이동</span>
           </div>
           <nav>
-            <a className="band" href="./">3D 지도</a>
+            <a className="band" href="./">3D 위키</a>
             <VersionPicker order={vIdx} onChange={setVIdx} />
             {!focus && zoom < 0.45 ? (
               <button type="button" className="band" onClick={() => {

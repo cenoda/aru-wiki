@@ -399,9 +399,17 @@ export async function askAny(tools, prompt, schema, { avoid = [] } = {}) {
   const usable = tools.filter((t) => TOOLS[t] && !avoid.includes(COMPANY[t]));
   if (!usable.length) throw new Error(`no tool left in ${tools} (avoiding ${avoid})`);
   let lastErr;
+  const started = Date.now();
   for (let attempt = 0; attempt < usable.length + 1; attempt++) {
     const open = usable.filter((t) => (busy.get(t) ?? 0) < Date.now());
-    if (!open.length) throw lastErr ?? new Error('every tool is set aside after quota errors');
+    if (!open.length) {
+      // every tool set aside at once (2026-11-12 night: the provider's models "temporarily blocked" and
+      // Kimi at its session limit): wait for the first one back, up to an hour, instead of failing at once
+      if (Date.now() - started > 60 * 60 * 1000) throw lastErr ?? new Error('every tool is set aside after quota errors');
+      await new Promise((r) => setTimeout(r, Math.max(1000, Math.min(...usable.map((t) => busy.get(t) ?? 0)) - Date.now())));
+      attempt--;
+      continue;
+    }
     const tool = await new Promise((resolve) => {
       let done = false;
       // queued on every open tool; once served it declines, so the next waiter gets the slot

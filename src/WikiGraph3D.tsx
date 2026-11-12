@@ -133,6 +133,8 @@ interface LineParts { mat: LineMaterial; target: number; color: Color }
 /** What the current version, selection and theme ask of each star and line. */
 interface Look {
   inFocus: (id: string) => boolean;
+  /** pages the picked star mentions or is mentioned by (dotted lines) */
+  refd: (id: string) => boolean;
   selected: string | null;
   focused: boolean;
   sky: Palette;
@@ -143,7 +145,7 @@ interface Look {
  * constellations instead of a web. A picked star brings its own lines back in full.
  */
 const calm = new WeakMap<PageLink, number>();
-const starTargetOf = (id: string, look: Look) => (look.inFocus(id) ? 1 : 0.2);
+const starTargetOf = (id: string, look: Look) => (look.inFocus(id) ? 1 : look.refd(id) ? 0.55 : 0.2);
 function lineLook(l: PageLink, look: Look, out: LineParts) {
   const s = idOf(l.source), t = idOf(l.target), w = strength(l);
   const touching = s === look.selected || t === look.selected;
@@ -153,24 +155,48 @@ function lineLook(l: PageLink, look: Look, out: LineParts) {
       : look.inFocus(s) && look.inFocus(t) ? 0.12 + 0.4 * w : 0.04;
 }
 
+type P3 = { x: number; y: number; z: number };
 /**
- * A line as a gentle curve instead of a straight stroke: a quadratic arc bowed sideways around the
- * theme star (all in the same turning direction, like the arms of a spiral galaxy). The bow grows
- * with the line's length and is small near the centre, so short ties stay almost straight.
+ * Lines without corners: every star gets one direction (the main axis of the directions to its
+ * neighbours), and every line leaves and enters a star along that direction. So two lines meeting at
+ * a star always continue into each other smoothly, and lines leaving on the same side merge like
+ * strands. Each line is a cubic curve whose handles follow the two stars' directions.
  */
-const CURVE_STEPS = 20;
-function curve(a: { x: number; y: number; z: number }, b: { x: number; y: number; z: number }) {
-  const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2, mz = (a.z + b.z) / 2;
-  const len = Math.hypot(b.x - a.x, b.y - a.y, b.z - a.z);
-  const r = Math.hypot(mx, mz) || 1;
-  // turning direction around the vertical axis through the theme star, at the middle of the line
-  const tx = -mz / r, tz = mx / r;
-  const bow = len * 0.22 * Math.min(1, r / 60);
-  const cx = mx + tx * bow, cy = my, cz = mz + tz * bow;
+const CURVE_STEPS = 24;
+function axisOf(at: P3, others: P3[]): Vector3 {
+  // principal axis of the unit directions (sign-free: d and -d count alike), by power iteration
+  const m = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+  for (const o of others) {
+    const d = new Vector3(o.x - at.x, o.y - at.y, o.z - at.z);
+    if (d.lengthSq() < 1e-6) continue;
+    d.normalize();
+    const v = [d.x, d.y, d.z];
+    for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) m[i * 3 + j] += v[i] * v[j];
+  }
+  let x = new Vector3(1, 0.3, 0.2).normalize();
+  for (let k = 0; k < 30; k++) {
+    const nx = new Vector3(m[0] * x.x + m[1] * x.y + m[2] * x.z, m[3] * x.x + m[4] * x.y + m[5] * x.z, m[6] * x.x + m[7] * x.y + m[8] * x.z);
+    if (nx.lengthSq() < 1e-12) break;
+    x = nx.normalize();
+  }
+  return x;
+}
+function smoothCurve(a: P3, b: P3, ta: Vector3 | undefined, tb: Vector3 | undefined) {
+  const d = new Vector3(b.x - a.x, b.y - a.y, b.z - a.z);
+  const len = d.length() || 1;
+  const handle = (t: Vector3 | undefined) => {
+    if (!t) return d.clone().multiplyScalar(1 / 3);
+    const s = t.dot(d) >= 0 ? 1 : -1;
+    return t.clone().multiplyScalar(s * len * 0.38);
+  };
+  const ha = handle(ta), hb = handle(tb);
+  const c1 = { x: a.x + ha.x, y: a.y + ha.y, z: a.z + ha.z };
+  const c2 = { x: b.x - hb.x, y: b.y - hb.y, z: b.z - hb.z };
   const out: number[] = [];
   for (let i = 0; i <= CURVE_STEPS; i++) {
     const t = i / CURVE_STEPS, u = 1 - t;
-    out.push(u * u * a.x + 2 * u * t * cx + t * t * b.x, u * u * a.y + 2 * u * t * cy + t * t * b.y, u * u * a.z + 2 * u * t * cz + t * t * b.z);
+    const w0 = u * u * u, w1 = 3 * u * u * t, w2 = 3 * u * t * t, w3 = t * t * t;
+    out.push(w0 * a.x + w1 * c1.x + w2 * c2.x + w3 * b.x, w0 * a.y + w1 * c1.y + w2 * c2.y + w3 * b.y, w0 * a.z + w1 * c1.z + w2 * c2.z + w3 * b.z);
   }
   return out;
 }
@@ -207,6 +233,8 @@ export default function WikiGraph3D() {
   const placeNow = useRef<(order: number) => void>(() => {});
   /** Show the dotted lines of lone pages for the chosen version. */
   const showTethers = useRef<() => void>(() => {});
+  /** Show the dotted reference lines of the picked star. */
+  const showRefs = useRef<() => void>(() => {});
   /** the time ruler drawn over the left edge of the chart */
   const rulerBox = useRef<HTMLDivElement>(null);
   const [theme, setTheme] = useState<Theme | null>(null);
@@ -301,7 +329,12 @@ export default function WikiGraph3D() {
       const a = find(idOf(l.source)), b = find(idOf(l.target));
       if (a !== b) { root.set(a, b); tree.add(`${idOf(l.source)}|${idOf(l.target)}`); }
     }
-    return { byId, near, named, importance, tree: tree as Set<string | PageLink> };
+    const refNear = new Map<string, Set<string>>();
+    for (const [a, b] of theme.refs ?? []) {
+      (refNear.get(a) ?? refNear.set(a, new Set()).get(a)!).add(b);
+      (refNear.get(b) ?? refNear.set(b, new Set()).get(b)!).add(a);
+    }
+    return { byId, near, refNear, named, importance, tree: tree as Set<string | PageLink> };
   }, [theme]);
 
   const shown = useMemo(() => (id: string) => (index?.byId.get(id)?.revealed ?? Infinity) <= vIdx, [index, vIdx]);
@@ -316,8 +349,9 @@ export default function WikiGraph3D() {
   }, [selected, index, vIdx, shown]);
   const look = useMemo<Look>(() => ({
     inFocus: (id) => !focus || id === selected || focus.one.has(id) || focus.two.has(id),
+    refd: (id) => !!selected && !!index?.refNear.get(selected)?.has(id),
     selected, focused: !!focus, sky,
-  }), [focus, selected, sky]);
+  }), [focus, selected, sky, index]);
   /** The latest look and theme colours, for objects three-forcegraph creates later. */
   const lookNow = useRef(look);
   lookNow.current = look;
@@ -395,9 +429,11 @@ export default function WikiGraph3D() {
         line.raycast = () => {}; // lines are not clickable
         return line;
       })
-      .linkPositionUpdate((obj, { start, end }) => {
+      .linkPositionUpdate((obj, { start, end }, link) => {
         const geo = (obj as Line2).geometry as LineGeometry;
-        geo.setPositions(curve(start, end));
+        const l = link as PageLink;
+        const ax = axes();
+        geo.setPositions(smoothCurve(start, end, ax.get(idOf(l.source)), ax.get(idOf(l.target))));
         return true;
       })
       .d3VelocityDecay(0.3)
@@ -422,7 +458,33 @@ export default function WikiGraph3D() {
     let fitted = false;
     let layoutTimer: number | undefined;
     let placeRuler = () => {};
+    /** each star's direction for corner-free lines, from the layout (which stays still once settled) */
+    let axisCache: Map<string, Vector3> | null = null;
+    const axes = () => {
+      if (axisCache) return axisCache;
+      const data = g.graphData();
+      const at = new Map(data.nodes.map((n) => [n.id, n]));
+      const near = new Map<string, PageNode[]>();
+      for (const l of data.links) {
+        const s = typeof l.source === 'string' ? at.get(l.source) : l.source, t = typeof l.target === 'string' ? at.get(l.target) : l.target;
+        if (!s || !t || s.x === undefined || t.x === undefined) return new Map<string, Vector3>(); // not laid out yet
+        (near.get(s.id) ?? near.set(s.id, []).get(s.id)!).push(t);
+        (near.get(t.id) ?? near.set(t.id, []).get(t.id)!).push(s);
+      }
+      axisCache = new Map([...near].map(([id, ns]) => [id, axisOf(at.get(id) as P3, ns as P3[])]));
+      return axisCache;
+    };
     const tethers: { id: string; line: Line<BufferGeometry, LineDashedMaterial> }[] = [];
+    const refLines: { from: string; to: string; both: boolean; line: Line2; mat: LineMaterial }[] = [];
+    showRefs.current = () => {
+      const look = lookNow.current;
+      for (const r of refLines) {
+        const on = !!look.selected && (r.from === look.selected || r.to === look.selected) && shownNow.current(r.from) && shownNow.current(r.to);
+        r.line.visible = on;
+        r.mat.opacity = on ? (r.both ? 0.4 : 0.28) : 0;
+      }
+      wakeUp();
+    };
     showTethers.current = () => { for (const t of tethers) t.line.visible = shownNow.current(t.id); wakeUp(); };
     /** Screen room kept for the time ruler at the left edge: the chart is drawn shifted right by half of it. */
     const RULER_W = 64;
@@ -486,7 +548,7 @@ export default function WikiGraph3D() {
       for (const n of list) if (n.hub) hubPos.set(n.x ?? 0, n.y ?? 0, n.z ?? 0);
       for (const n of list) {
         if (n.hub || index.near.has(n.id)) continue;
-        const c = curve(hubPos, { x: n.x ?? 0, y: n.y ?? 0, z: n.z ?? 0 });
+        const c = smoothCurve(hubPos, { x: n.x ?? 0, y: n.y ?? 0, z: n.z ?? 0 }, axes().get(theme.page), undefined);
         const geo = new BufferGeometry().setFromPoints(Array.from({ length: c.length / 3 }, (_, i) => new Vector3(c[i * 3], c[i * 3 + 1], c[i * 3 + 2])));
         const loose = new Line(geo, new LineDashedMaterial({ color: lookNow.current.sky.line, dashSize: 3, gapSize: 4, transparent: true, opacity: 0.35, depthWrite: false }));
         loose.computeLineDistances();
@@ -495,6 +557,25 @@ export default function WikiGraph3D() {
         tethers.push({ id: n.id, line: loose });
       }
       showTethers.current();
+      // references (one page mentions the other in its prose, no shared-story line): faint dotted
+      // curves, shown only around the picked star; there are hundreds, too many to draw at rest
+      const at = new Map(list.map((n) => [n.id, n]));
+      for (const [from, to, both] of theme.refs ?? []) {
+        const s = at.get(from), t = at.get(to);
+        if (!s || !t) continue;
+        const geo = new LineGeometry();
+        geo.setPositions(smoothCurve(s as P3, t as P3, axes().get(from), axes().get(to)));
+        const mat = new LineMaterial({ color: lookNow.current.sky.line, linewidth: 0.8, dashed: true, dashSize: 2.2, gapSize: 3.2,
+          transparent: true, opacity: 0, depthWrite: false });
+        mat.resolution.copy(resolution);
+        const line = new Line2(geo, mat);
+        line.computeLineDistances();
+        line.raycast = () => {};
+        line.visible = false;
+        g.scene().add(line);
+        refLines.push({ from, to, both: !!both, line, mat });
+      }
+      showRefs.current();
       // lines that climb far up the axis, or are not in the spanning tree, rest faint
       for (const l of g.graphData().links) {
         const s = l.source as PageNode, t = l.target as PageNode;
@@ -578,6 +659,7 @@ export default function WikiGraph3D() {
         p.label.color = s.label;
       }
       for (const t of tethers) t.line.material.color.set(s.line);
+      for (const r of refLines) r.mat.color.set(s.line);
       dust.material.color.set(s.night ? '#c9d3ff' : '#7a87ad');
       dust.material.opacity = s.night ? 0.35 : 0.14;
       wakeUp();
@@ -638,6 +720,7 @@ export default function WikiGraph3D() {
       g.width(el.clientWidth).height(el.clientHeight);
       resolution.set(el.clientWidth, el.clientHeight);
       for (const l of lines.current.values()) l.mat.resolution.copy(resolution);
+      for (const r of refLines) r.mat.resolution.copy(resolution);
       // a turned phone changes the screen shape: resize the names to match
       const scale = labelScale(el);
       if (Math.abs(scale - lastScale) > 0.01) {
@@ -665,6 +748,8 @@ export default function WikiGraph3D() {
       for (const ev of events) el.removeEventListener(ev, wakeUp);
       rulerBox.current?.replaceChildren();
       for (const t of tethers) { t.line.geometry.dispose(); t.line.material.dispose(); }
+      for (const r of refLines) { r.line.geometry.dispose(); r.mat.dispose(); }
+      showRefs.current = () => {};
       showTethers.current = () => {};
       placeNow.current = () => {};
       dust.geometry.dispose(); dust.material.dispose();
@@ -693,6 +778,7 @@ export default function WikiGraph3D() {
       .linkVisibility((l) => l.revealed <= vIdx && shown(idOf(l.source)) && shown(idOf(l.target)));
     placeNow.current(vIdx);
     showTethers.current();
+    showRefs.current();
     relabelSoon.current();
     wake.current();
   }, [theme, shown, vIdx]);
@@ -702,6 +788,7 @@ export default function WikiGraph3D() {
     for (const [id, s] of stars.current) s.starTarget = starTargetOf(id, look);
     for (const [l, p] of lines.current) lineLook(l, look, p);
     fade.current();
+    showRefs.current();
   }, [theme, look]);
 
   // ---------- names: brightest stars, the selection's neighbourhood, the hovered star, what is close ----------

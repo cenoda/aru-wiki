@@ -91,6 +91,19 @@ for (const p of pages) {
     .sort((x, y) => Number(y.a === theme.page || y.b === theme.page) - Number(x.a === theme.page || x.b === theme.page) || y.jaccard - x.jaccard)[0];
   if (best) { kept.add(best); tied.add(best.a); tied.add(best.b); }
 }
+// pages that mention another in their own prose (scripts/theme/refs.mjs), apart from the pairs
+// already joined by a shared-story line: drawn as faint dotted lines around a picked star
+const refsFile = new URL('data/generated/refs-khaenriah.json', root);
+const linkedPair = new Set([...kept].map((e) => [e.a, e.b].sort().join('|')));
+const refPairs = new Map();
+if (existsSync(refsFile)) {
+  for (const r of JSON.parse(await readFile(refsFile, 'utf8')).refs) {
+    const key = [r.from, r.to].sort().join('|');
+    if (linkedPair.has(key)) continue;
+    const cur = refPairs.get(key);
+    refPairs.set(key, cur ? { ...cur, both: cur.both || cur.from !== r.from } : { from: r.from, to: r.to, both: false });
+  }
+}
 await write('theme-khaenriah.json', {
   page: theme.page,
   nodes: pages.map((p) => ({
@@ -100,6 +113,8 @@ await write('theme-khaenriah.json', {
     revealed: unitsOf.get(p.page).size ? firstOrder([...unitsOf.get(p.page)]) : lastOrder,
   })),
   links: [...kept].map((e) => ({ source: e.a, target: e.b, shared: e.shared, revealed: e.revealed })),
+  // [from, to, 1 if both mention each other]
+  refs: [...refPairs.values()].map((r) => [r.from, r.to, r.both ? 1 : 0]),
 });
 
 // ---------- version snapshots of the theme's pages (scripts/theme/snapshots.mjs) ----------

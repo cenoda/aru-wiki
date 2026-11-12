@@ -17,7 +17,11 @@ export interface PageNode {
   x?: number; y?: number; z?: number; fx?: number; fy?: number; fz?: number;
 }
 export interface PageLink { source: string | PageNode; target: string | PageNode; shared: number; revealed: number }
-export interface Theme { page: string; nodes: PageNode[]; links: PageLink[] }
+export interface Theme {
+  page: string; nodes: PageNode[]; links: PageLink[];
+  /** pages that mention another in their prose, not joined by a story line: [from, to, 1 if both ways] */
+  refs?: [string, string, number][];
+}
 
 export const idOf = (end: string | PageNode) => (typeof end === 'string' ? end : end.id);
 export const nameOf = (n: PageNode) => n.ko ?? n.id;

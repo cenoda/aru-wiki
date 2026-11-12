@@ -7,7 +7,7 @@
 // model from another company checks each against its sentence. The wiki is edited for many reasons,
 // so the screen says "이 버전 때 위키에 새로 적힌 것", not "revealed in the game at this version".
 //
-//   node scripts/theme/reveals.mjs khaenriah [--only "Dainsleif"] [--writer spark] [--verify codex] [--jobs 4]
+//   node scripts/theme/reveals.mjs khaenriah [--only "Dainsleif"] [--writer flash-medium,grok] [--verify codex-medium,grok,flash-medium] [--jobs 8]
 import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
@@ -20,11 +20,12 @@ import { makeKo } from './localize.mjs';
 import { sentences } from './render.mjs';
 
 const { values: opt, positionals: [theme] } = parseArgs({ allowPositionals: true, options: {
-  only: { type: 'string' }, writer: { type: 'string', default: 'spark' }, verify: { type: 'string', default: 'codex' },
-  jobs: { type: 'string', default: '4' }, 'max-chars': { type: 'string', default: '16000' },
+  only: { type: 'string' }, writer: { type: 'string', default: 'flash-medium,grok' }, verify: { type: 'string', default: 'codex-medium,grok,flash-medium' },
+  jobs: { type: 'string', default: '8' }, 'max-chars': { type: 'string', default: '16000' },
 } });
 if (!theme) throw new Error('usage: reveals.mjs <theme id>');
-if (opt.writer === opt.verify) throw new Error('writer and verify must be tools of different companies');
+const [writers, verifiers] = [opt.writer, opt.verify].map((x) => x.split(',').map((t) => t.trim()).filter(Boolean));
+process.env.LLM_TIMEOUT_MIN ??= '15';
 
 const ROOT = new URL('../../', import.meta.url).pathname;
 const gen = (f) => join(ROOT, 'data/generated', f);
@@ -63,7 +64,7 @@ ${items.map((it, n) => `#${n}\nstatement: ${it.text}\nsentence: ${it.src}`).join
 const hash = (s) => createHash('sha1').update(s).digest('hex').slice(0, 12);
 const OUT = gen(`reveals-${theme}.json`);
 const results = new Map((existsSync(OUT) ? JSON.parse(await readFile(OUT, 'utf8')).reveals : []).map((r) => [`${r.node}|${r.version}`, r]));
-const { ask } = await import('../recommend/llm.mjs');
+const { askAny, COMPANY } = await import('../recommend/llm.mjs');
 
 // what each snapshot adds over the previous one of the same page
 const work = [];
@@ -91,11 +92,13 @@ let calls = 0;
 async function one(w) {
   const key = `${w.node}|${w.version}`;
   const text = w.sents.map((s) => `[${s.id}] ${s.text}`).join('\n');
-  const inputHash = hash(`${PROMPT_VERSION}|${opt.writer}|${opt.verify}|${w.first}|${text}`);
+  const inputHash = hash(`${PROMPT_VERSION}|${w.first}|${text}`);
   if (results.get(key)?.input_hash === inputHash) return;
   if (!w.sents.length) { results.set(key, { node: w.node, version: w.version, first: w.first, input_hash: inputHash, items: [] }); return; }
   const byId = new Map(w.sents.map((s) => [s.id, s]));
-  const out = (await ask(opt.writer, writePrompt(w, w.first, text), WRITE_SCHEMA)).data; calls++;
+  const wr = await askAny(writers, writePrompt(w, w.first, text), WRITE_SCHEMA); calls++;
+  const out = wr.data;
+  let verifier = null;
   const items = out.items.slice(0, 4).map((it) => {
     const s = byId.get(it.sentence);
     return { ...it, ok: !!s && !!it.quote && normalize(s.text).includes(normalize(it.quote)), src: s?.text ?? '' };
@@ -103,11 +106,13 @@ async function one(w) {
   const check = items.filter((it) => it.ok);
   let verdicts = new Map();
   if (check.length) {
-    const v = (await ask(opt.verify, verifyPrompt(w, check), VERIFY_SCHEMA)).data; calls++;
+    const vr = await askAny(verifiers, verifyPrompt(w, check), VERIFY_SCHEMA, { avoid: [COMPANY[wr.tool]] }); calls++;
+    verifier = vr.tool;
+    const v = vr.data;
     verdicts = new Map(v.claims.map((c) => [c.n, c.verdict]));
   }
   results.set(key, {
-    node: w.node, version: w.version, first: w.first, input_hash: inputHash, writer: opt.writer, verifier: opt.verify,
+    node: w.node, version: w.version, first: w.first, input_hash: inputHash, writer: wr.tool, verifier,
     items: items.map((it) => {
       const s = byId.get(it.sentence);
       const verdict = it.ok ? verdicts.get(check.indexOf(it)) ?? 'unclear' : 'quote_mismatch';

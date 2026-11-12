@@ -1,15 +1,16 @@
 // An article page for one page of the lore theme, laid out like an encyclopedia article: title,
-// unreviewed notice, infobox, lead, contents, overview, earlier descriptions by version, related
-// pages, footnotes and sources. Opened from the 3D chart's card ("자세히 보기"); the chart stays
-// mounted behind it, so going back returns to the same view (WikiGraph3D keeps the URL in step).
-// Everything follows the chosen version: later snapshots and pages are not shown, and a page not
-// yet revealed shows only that (design.md 6절: no title or metadata before its version).
+// unreviewed notice, infobox, lead, contents, the body by reader questions (with interpretation
+// marks and quote boxes), the timeline of what was revealed when, related pages, footnotes and
+// sources. Opened from the 3D chart's card ("자세히 보기"); the chart stays mounted behind it, so
+// going back returns to the same view (WikiGraph3D keeps the URL in step).
+// Everything follows the chosen version: later articles, timeline entries and pages are not shown,
+// and a page not yet revealed shows only that (design.md 6절: no title or metadata before its version).
 import { type MouseEvent, type ReactNode, useEffect, useMemo, useRef, useState } from 'react';
 import { versions } from './data';
-import { useLinker } from './Linked';
+import { type Linker, useLinker } from './Linked';
 import {
-  type Article, articleAt, idOf, KIND_LABEL, loadArticles, nameOf, type PageNode, pageUrl, revisionUrl, type Snapshot, snapshotAt,
-  type Snapshots, type Theme, withParticle,
+  type ArtPara, type ArtSource, articleAt, idOf, KIND_LABEL, loadPageData, nameOf, type PageData, type PageNode, pageUrl, revisionUrl,
+  snapshotAt, type Snapshots, type Theme, withParticle,
 } from './lore';
 import { ReportBox } from './ReportBox';
 import './article.css';
@@ -30,61 +31,70 @@ const versionLabel = (order: number) => {
   const v = versions[order];
   return v ? (v.title_ko ? `${v.id} 「${v.title_ko}」` : v.id) : '';
 };
+const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
 
-interface Footnote { n: number; page: string; revision: number; date: string }
-type Sources = Snapshot['sources'];
-/**
- * Footnotes numbered in reading order, one per wiki revision (the section goes in the marker's
- * tooltip). The list groups them by wiki page, so a page cited at many versions takes one line.
- * `order` is every citation in the order the page reads, so the numbers run 1, 2, 3 down the page.
- */
-function useFootnotes(order: [Sources, number][]) {
+interface Footnote { n: number; group: string; groupHref?: string; label: string; href?: string; tip: string }
+const keyOf = (s: ArtSource) => (s.kind === 'wiki' ? `w|${s.page}|${s.revision}` : s.kind === 'quest' ? `q|${s.quest}` : `u|${s.url}`);
+function noteOf(s: ArtSource, n: number): Footnote {
+  if (s.kind === 'wiki') return { n, group: s.page, groupHref: pageUrl(s.page), label: s.date, href: revisionUrl(s.page, s.revision), tip: `Fandom 「${s.page}」${s.section ? ` ${s.section} 절` : ''}, ${s.date} 판` };
+  if (s.kind === 'quest') return { n, group: '게임 대사', label: `「${s.quest_ko ?? s.quest}」 (${s.version})`, tip: `임무 「${s.quest_ko ?? s.quest}」의 대사 (${s.version})` };
+  return { n, group: host(s.url), groupHref: `https://${host(s.url)}`, label: `${s.title}${s.published ? `, ${s.published}` : ''}`, href: s.url,
+    tip: `웹: ${s.title}${s.published ? ` (${s.published})` : ''}${s.checked ? `, ${s.checked} 확인` : ''}` };
+}
+/** Footnotes numbered in reading order, one per wiki revision, quest or web page; listed by group. */
+function useFootnotes(order: ArtSource[]) {
   return useMemo(() => {
     const list: Footnote[] = [];
     const num = new Map<string, number>();
-    const cite = (sources: Sources, r: number) => {
-      const src = sources[r];
-      if (!src) return null;
-      const key = `${src.page}|${src.revision}`;
+    const cite = (s: ArtSource | undefined) => {
+      if (!s) return null;
+      const key = keyOf(s);
       let n = num.get(key);
-      if (n === undefined) { n = list.length + 1; num.set(key, n); list.push({ n, page: src.page, revision: src.revision, date: src.date }); }
-      return { n, section: src.section };
+      if (n === undefined) { n = list.length + 1; num.set(key, n); list.push(noteOf(s, n)); }
+      return list[n - 1];
     };
-    for (const [sources, r] of order) cite(sources, r);
-    const byPage = new Map<string, Footnote[]>();
-    for (const f of list) (byPage.get(f.page) ?? byPage.set(f.page, []).get(f.page)!).push(f);
-    return { list, byPage: [...byPage], cite };
+    for (const s of order) cite(s);
+    const groups = new Map<string, Footnote[]>();
+    for (const f of list) (groups.get(f.group) ?? groups.set(f.group, []).get(f.group)!).push(f);
+    return { list, groups: [...groups], cite };
   }, [order]);
+}
+
+/** **bold** marks and links in one piece of text */
+function rich(text: string, link: Linker, seen: Set<string>): ReactNode[] {
+  return text.split(/\*\*(.+?)\*\*/g).map((part, i) => (i % 2 ? <b key={i}>{link(part, seen)}</b> : <span key={i}>{link(part, seen)}</span>));
 }
 
 export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen }: WikiArticleProps) {
   const root = useRef<HTMLElement>(null);
   const node = byId.get(page);
   const revealed = !!node && node.revealed <= vIdx;
-  const all = snapshots?.[page];
-  const shown = useMemo(() => (all ?? []).filter((s) => s.from <= vIdx), [all, vIdx]);
-  const current = snapshotAt(all, vIdx);
-  const earlier = shown.slice(0, -1);
-  // the full article body, fetched per page (undefined while loading)
-  const [articles, setArticles] = useState<{ page: string; list: Article[] } | null>(null);
+  const current = snapshotAt(snapshots?.[page], vIdx);
+  // the article body and timeline, fetched per page
+  const [data, setData] = useState<{ page: string; d: PageData } | null>(null);
   useEffect(() => {
     let live = true;
-    loadArticles(page).then((list) => live && setArticles({ page, list }), () => live && setArticles({ page, list: [] }));
+    loadPageData(page).then((d) => live && setData({ page, d }), () => live && setData({ page, d: { articles: [], timeline: [] } }));
     return () => { live = false; };
   }, [page]);
-  const art = articles?.page === page ? articleAt(articles.list, vIdx) : null;
-  const artLoading = articles?.page !== page;
+  const loading = data?.page !== page;
+  const art = loading ? null : articleAt(data.d.articles, vIdx);
+  const timeline = loading ? [] : data.d.timeline.filter((t) => t.v <= vIdx);
+  const snapSrc = (r: number): ArtSource | undefined => { const s = current?.sources[r]; return s && { kind: 'wiki', ...s }; };
+
+  // every citation in reading order, so footnote numbers run down the page
   const cites = useMemo(() => {
-    const out: [Sources, number][] = [];
-    if (art) for (const p of [...(art.lead ? [art.lead] : []), ...art.sections.flatMap((x) => x.p)]) for (const r of p.r) out.push([art.sources, r]);
-    if (!art?.lead && current?.summary) out.push([current.sources, current.summary.r]);
-    // without an article the overview is the snapshot's points; the earlier versions follow, newest first
-    for (const s of [...(art ? [] : current ? [current] : []), ...[...earlier].reverse()]) {
-      if (s.summary && s !== current) out.push([s.sources, s.summary.r]);
-      for (const b of s.bullets) out.push([s.sources, b.r]);
+    const out: (ArtSource | undefined)[] = [];
+    if (art) {
+      for (const p of art.lead ? [art.lead] : []) p.r.forEach((r) => out.push(art.sources[r]));
+      for (const x of art.sections) { if (x.q) out.push(art.sources[x.q.r]); for (const p of x.p) p.r.forEach((r) => out.push(art.sources[r])); }
     }
-    return out;
-  }, [art, current, earlier]);
+    if (!art?.lead && current?.summary) out.push(snapSrc(current.summary.r));
+    if (!art && current) current.bullets.forEach((b) => out.push(snapSrc(b.r)));
+    for (const t of timeline) for (const it of t.items) out.push({ kind: 'wiki', page: it.page, revision: it.revision, section: null, date: it.date });
+    return out.filter((x): x is ArtSource => !!x);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [art, current, timeline.length, vIdx]);
   const notes = useFootnotes(cites);
   const hub = byId.get(theme.page);
   const themeName = hub ? nameOf(hub) : '테마';
@@ -117,25 +127,28 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
     e.preventDefault();
     root.current?.querySelector(`#${CSS.escape(id)}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
-  const ref = (sources: Sources, r: number) => {
-    const c = notes.cite(sources, r);
-    if (!c) return null;
-    const src = notes.list[c.n - 1];
-    const tip = `「${src.page}」${c.section ? ` ${c.section} 절` : ''}, ${src.date} 판`;
-    return <sup key={`r${r}`} className="wa-ref"><a href={`#cite-${c.n}`} title={tip} onClick={jump(`cite-${c.n}`)}>[{c.n}]</a></sup>;
-  };
-  /** footnote markers for a paragraph, one per revision */
-  const refs = (sources: Sources, rs: number[]) => {
+  /** footnote markers, one per source */
+  const refs = (sources: (ArtSource | undefined)[]) => {
     const seen = new Set<number>();
-    const out: ReactNode[] = [];
-    for (const r of rs) {
-      const c = notes.cite(sources, r);
-      if (!c || seen.has(c.n)) continue;
-      seen.add(c.n);
-      out.push(ref(sources, r));
-    }
-    return out;
+    return sources.map((s, i) => {
+      const f = notes.cite(s);
+      if (!f || seen.has(f.n)) return null;
+      seen.add(f.n);
+      return <sup key={i} className="wa-ref"><a href={`#cite-${f.n}`} title={f.tip} onClick={jump(`cite-${f.n}`)}>[{f.n}]</a></sup>;
+    });
   };
+  const para = (p: ArtPara, sources: ArtSource[], seen: Set<string>) => (
+    <>
+      {p.s.map((x, i) => (
+        <span key={i}>
+          {i > 0 && ' '}
+          {x.i ? <span className="wa-interp" title="해석: 위키·대사의 사실을 엮어 쓴 해석입니다. 사실로 단정하지 않습니다.">{rich(x.t, link, seen)}<span className="wa-interp-tag">해석</span></span>
+            : rich(x.t, link, seen)}
+        </span>
+      ))}
+      {refs(p.r.map((r) => sources[r]))}
+    </>
+  );
 
   if (!node || !revealed) {
     return (
@@ -149,17 +162,17 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
   }
 
   const name = nameOf(node);
-  const artSections = art ? art.sections.map((x, i) => ({ id: `s${i + 1}`, label: x.h })) : [];
   const sections = [
-    ...artSections,
+    ...(art ? art.sections.map((x, i) => ({ id: `s${i + 1}`, label: x.h })) : []),
     !art && current && { id: 'overview', label: '개요' },
-    earlier.length > 0 && { id: 'history', label: '버전별 서술' },
+    timeline.length > 0 && { id: 'timeline', label: '버전별 공개 연표' },
     related.length > 0 && { id: 'related', label: '관련 문서' },
     notes.list.length > 0 && { id: 'notes', label: '각주' },
     { id: 'license', label: '출처와 라이선스' },
   ].filter((x): x is { id: string; label: string } => !!x);
   const basis = art ?? current;
-  const chars = art ? art.sections.reduce((n, x) => n + x.p.reduce((m, p) => m + p.t.length, 0), art.lead?.t.length ?? 0) : 0;
+  const chars = art ? [art.lead, ...art.sections.flatMap((x) => x.p)].reduce((n, p) => n + (p?.s.reduce((m, x) => m + x.t.length, 0) ?? 0), 0) : 0;
+  const hasWeb = art?.sources.some((s) => s.kind === 'web');
 
   return (
     <main className="wa" ref={root}>
@@ -169,7 +182,7 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
 
         <div className="wa-notice" role="note">
           <span className="tag neutral">미검수</span>
-          <p>이 문서는 Fandom 원신 위키의 글을 기계가 번역·정리하고, 다른 회사의 모델이 문장마다 근거 문단과 대조해 근거가 없는 문장을 뺀 것입니다. 사람은 아직 확인하지 않았습니다. 틀린 곳은 아래 <a href="#report" onClick={jump('report')}>오류 신고</a>로 알려 주세요.</p>
+          <p>이 문서는 Fandom 원신 위키의 글{hasWeb ? ', 공식 사이트·위키백과의 사실' : ''}과 게임 대사를 바탕으로 기계가 쓰고, 다른 회사의 모델이 문장마다 근거와 대조해 근거 없는 문장을 뺀 것입니다. <span className="wa-interp-tag">해석</span> 표시가 붙은 문장은 사실을 엮은 해석입니다. 사람은 아직 확인하지 않았습니다. 틀린 곳은 아래 <a href="#report" onClick={jump('report')}>오류 신고</a>로 알려 주세요.</p>
         </div>
 
         <aside className="wa-infobox" aria-label="정보 상자">
@@ -180,7 +193,7 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
             <dt>처음 나온 버전</dt><dd>{versionLabel(node.revealed)}</dd>
             {!node.hub && <><dt>{themeName}{withParticle(themeName)} 함께 나오는 이야기</dt><dd>{node.theme_units}개</dd></>}
             <dt>나오는 이야기</dt><dd>{node.units}개</dd>
-            {basis && <><dt>서술 기준</dt><dd>{versions[basis.from]?.id} 때의 위키</dd></>}
+            {basis && <><dt>서술 기준</dt><dd>{versions[basis.from]?.id} 때의 자료</dd></>}
             {chars > 0 && <><dt>본문</dt><dd>{chars.toLocaleString()}자</dd></>}
             <dt>원문</dt><dd><a href={pageUrl(node.id)} target="_blank" rel="noreferrer">Fandom 문서</a></dd>
           </dl>
@@ -188,9 +201,9 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
 
         {(() => {
           const seen = new Set<string>();
-          if (snapshots === null && artLoading) return <p className="wa-lead wa-muted">불러오는 중…</p>;
-          if (art?.lead) return <p className="wa-lead">{link(art.lead.t, seen)}{refs(art.sources, art.lead.r)}</p>;
-          if (current?.summary) return <p className="wa-lead">{link(current.summary.t, seen)}{ref(current.sources, current.summary.r)}</p>;
+          if (loading && snapshots === null) return <p className="wa-lead wa-muted">불러오는 중…</p>;
+          if (art?.lead) return <p className="wa-lead">{para(art.lead, art.sources, seen)}</p>;
+          if (current?.summary) return <p className="wa-lead">{link(current.summary.t, seen)}{refs([snapSrc(current.summary.r)])}</p>;
           return <p className="wa-lead wa-muted">{current ? '이 버전의 한 줄 요약은 검증을 통과하지 못해 싣지 않았습니다.' : `${versions[vIdx]?.id}까지는 위키에 이 항목의 서술이 아직 없습니다.`}</p>;
         })()}
 
@@ -202,14 +215,20 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
         )}
 
         {art && art.from < (current?.from ?? -1) && (
-          <p className="wa-muted wa-small">본문은 {versionLabel(art.from)} 때의 위키 기준입니다. 그 뒤 버전의 본문은 아직 만들지 않았고, 아래 버전별 서술에 요점이 있습니다.</p>
+          <p className="wa-muted wa-small">본문은 {versionLabel(art.from)} 때의 자료 기준입니다. 그 뒤 버전의 본문은 아직 없습니다.</p>
         )}
         {art && art.sections.map((x, i) => {
           const seen = new Set<string>();
           return (
             <section key={i} id={`s${i + 1}`}>
               <h2>{x.h}</h2>
-              {x.p.map((p, j) => <p key={j}>{link(p.t, seen)}{refs(art.sources, p.r)}</p>)}
+              {x.q && (
+                <blockquote className="wa-quote" title={`원문(영어): ${x.q.en}`}>
+                  <p>{x.q.t}</p>
+                  <footer>— {x.q.by}{refs([art.sources[x.q.r]])} <span className="wa-muted">(영어 대사를 옮김)</span></footer>
+                </blockquote>
+              )}
+              {x.p.map((p, j) => <p key={j}>{para(p, art.sources, seen)}</p>)}
             </section>
           );
         })}
@@ -219,25 +238,27 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
           return (
             <section id="overview">
               <h2>개요</h2>
-              <p className="wa-muted wa-small">{versionLabel(current.from)} 때 위키에 적혀 있던 내용의 요점입니다.{artLoading ? '' : ' 이 버전의 본문은 아직 없습니다.'}</p>
-              <ul>{current.bullets.map((b, i) => <li key={i}>{link(b.t, seen)}{ref(current.sources, b.r)}</li>)}</ul>
+              <p className="wa-muted wa-small">{versionLabel(current.from)} 때 위키에 적혀 있던 내용의 요점입니다.{loading ? '' : ' 이 버전의 본문은 아직 없습니다.'}</p>
+              <ul>{current.bullets.map((b, i) => <li key={i}>{link(b.t, seen)}{refs([snapSrc(b.r)])}</li>)}</ul>
             </section>
           );
         })()}
 
-        {earlier.length > 0 && (
-          <section id="history">
-            <h2>버전별 서술</h2>
-            <p className="wa-muted wa-small">버전마다 위키의 서술이 어떻게 달라졌는지 봅니다. 새 내용이 많이 늘어난 버전만 있습니다.</p>
-            {[...earlier].reverse().map((s) => (
-              <details key={s.from} className="wa-ver">
-                <summary><span className="wa-ver-id">{versionLabel(s.from)}</span>{s.summary && <span className="wa-ver-head">{s.summary.t}</span>}</summary>
-                <ul>
-                  {s.summary && <li className="wa-ver-sum">{s.summary.t}{ref(s.sources, s.summary.r)}</li>}
-                  {s.bullets.map((b, i) => <li key={i}>{b.t}{ref(s.sources, b.r)}</li>)}
-                </ul>
-              </details>
-            ))}
+        {timeline.length > 0 && (
+          <section id="timeline">
+            <h2>버전별 공개 연표</h2>
+            <p className="wa-muted wa-small">버전마다 위키에 새로 적힌 이야기입니다. 위키는 늦게 고쳐지기도 하므로 게임에서 밝혀진 버전과 다를 수 있습니다.</p>
+            <ol className="wa-timeline">
+              {[...timeline].reverse().map((t) => {
+                const seen = new Set<string>();
+                return (
+                  <li key={t.v}>
+                    <span className="wa-tl-ver">{versionLabel(t.v)}{t.first && <span className="wa-muted"> · 첫 서술</span>}</span>
+                    <ul>{t.items.map((it, i) => <li key={i}>{link(it.t, seen)}{refs([{ kind: 'wiki', page: it.page, revision: it.revision, section: null, date: it.date }])}</li>)}</ul>
+                  </li>
+                );
+              })}
+            </ol>
           </section>
         )}
 
@@ -262,15 +283,15 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
         {notes.list.length > 0 && (
           <section id="notes">
             <h2>각주</h2>
-            <p className="wa-muted wa-small">모두 Fandom 원신 위키입니다. 날짜를 누르면 그때의 문서 판이 열립니다.</p>
+            <p className="wa-muted wa-small">Fandom 원신 위키 문서는 날짜를 누르면 그때의 판이 열립니다. 게임 대사는 그 임무의 대사이고, 웹 출처는 확인한 날짜의 내용입니다.</p>
             <ul className="wa-notes">
-              {notes.byPage.map(([page, list]) => (
-                <li key={page}>
-                  <a className="wa-note-page" href={pageUrl(page)} target="_blank" rel="noreferrer" lang="en">{page}</a>
+              {notes.groups.map(([group, list]) => (
+                <li key={group}>
+                  {list[0].groupHref ? <a className="wa-note-page" href={list[0].groupHref} target="_blank" rel="noreferrer">{group}</a> : <span className="wa-note-page">{group}</span>}
                   <span className="wa-note-revs">
                     {list.map((f) => (
                       <span key={f.n} id={`cite-${f.n}`} className="wa-note">
-                        <b>{f.n}</b> <a href={revisionUrl(f.page, f.revision)} target="_blank" rel="noreferrer">{f.date}</a>
+                        <b>{f.n}</b> {f.href ? <a href={f.href} target="_blank" rel="noreferrer">{f.label}</a> : f.label}
                       </span>
                     ))}
                   </span>
@@ -282,7 +303,7 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
 
         <section id="license">
           <h2>출처와 라이선스</h2>
-          <p className="wa-small">각주의 Fandom 원신 위키 글(CC BY-SA 3.0)을 번역·요약해 고쳐 썼습니다. 이 문서의 글도 같은 조건(CC BY-SA)으로 쓸 수 있습니다. 각주 링크는 그 버전 당시의 문서 판입니다. 게임 대사와 이미지의 권리는 HoYoverse에 있습니다.</p>
+          <p className="wa-small">각주의 Fandom 원신 위키 글(CC BY-SA 3.0)을 번역·요약해 고쳐 썼고, 웹 출처에서는 사실만 가져와 직접 썼습니다. 이 문서의 글도 CC BY-SA로 쓸 수 있습니다. 게임 대사와 이미지의 권리는 HoYoverse에 있으며, 대사는 한 줄 이하로만 옮겨 실었습니다.</p>
         </section>
 
         <section id="report">

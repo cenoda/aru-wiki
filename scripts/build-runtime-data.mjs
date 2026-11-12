@@ -125,51 +125,75 @@ for (const list of Object.values(byPage)) list.sort((a, b) => a.from - b.from);
 await write('snapshots-khaenriah.json', byPage);
 
 // ---------- article bodies of the theme's pages (scripts/theme/articles.mjs) ----------
-// One file per page (data/runtime/articles/<slug>.json), fetched when its article opens: all of
-// them together are several MB. Only paragraphs whose sentences passed the second model's check
-// (accepted, or trimmed of the sentences it did not find in the source) are kept.
+// One file per page (data/runtime/articles/<slug>.json), fetched when its article opens. Only
+// sentences that passed the second model's check are kept; a paragraph that lost more than half is
+// gone. Interpretation sentences keep their mark (i: 1). Each page's file also carries its
+// timeline (scripts/theme/reveals.mjs): what the wiki newly said at each version snapshot.
 import { existsSync } from 'node:fs';
 import { rm } from 'node:fs/promises';
 const ART = new URL('data/generated/articles-khaenriah.json', root);
+const REV = new URL('data/generated/reveals-khaenriah.json', root);
 const artDir = new URL('articles/', outDir);
 await rm(artDir, { recursive: true, force: true });
 await mkdir(artDir, { recursive: true });
+const stamp = new Map(snaps.flatMap((s) => s.input.map((i) => [i.revision, (i.timestamp ?? '').slice(0, 10)])));
+const perPage = {};
+const sourceTable = () => {
+  const list = [];
+  const ref = (s) => {
+    const key = s.kind === 'wiki' ? `w|${s.page}|${s.revision}|${s.section ?? ''}` : s.kind === 'quest' ? `q|${s.quest}` : `u|${s.url}`;
+    let i = list.findIndex((x) => x.key === key);
+    if (i < 0) {
+      i = list.push(s.kind === 'wiki' ? { key, kind: 'wiki', page: s.page, revision: s.revision, section: s.section ?? null, date: stamp.get(s.revision) ?? '' }
+        : s.kind === 'quest' ? { key, kind: 'quest', quest: s.quest, quest_ko: s.quest_ko ?? null, version: s.version }
+          : { key, kind: 'web', url: s.url, title: s.title, published: s.published ?? null, checked: s.checked ?? null }) - 1;
+    }
+    return i;
+  };
+  return { ref, done: () => list.map(({ key, ...x }) => x) };
+};
 if (existsSync(ART)) {
-  const stamp = new Map(snaps.flatMap((s) => s.input.map((i) => [i.revision, (i.timestamp ?? '').slice(0, 10)])));
-  const perPage = {};
   for (const a of JSON.parse(await readFile(ART, 'utf8')).articles) {
-    const shown = a.paragraphs.filter((p) => (p.status === 'accepted' || p.status === 'trimmed') && p.text.trim());
+    const shown = a.paragraphs.filter((p) => (p.status === 'accepted' || p.status === 'trimmed') && p.sentences.some((x) => !x.dropped));
     if (!shown.length) continue;
-    const sources = [];
-    const ref = (s) => {
-      const key = `${s.page}|${s.revision}|${s.section ?? ''}`;
-      let i = sources.findIndex((x) => x.key === key);
-      if (i < 0) i = sources.push({ key, page: s.page, revision: s.revision, section: s.section ?? null, date: stamp.get(s.revision) ?? '' }) - 1;
-      return i;
+    const src = sourceTable();
+    const para = (p) => ({ s: p.sentences.filter((x) => !x.dropped).map((x) => (x.interp ? { t: x.t, i: 1 } : { t: x.t })), r: [...new Set(p.sources.map(src.ref))] });
+    const box = (h) => {
+      const b = a.quote_boxes.find((x) => x.section === h && x.status === 'accepted');
+      return b ? { t: b.t, en: b.en, by: b.speaker_ko ?? b.speaker, r: src.ref(b.source) } : undefined;
     };
-    const para = (p) => ({ t: p.text, r: [...new Set(p.sources.map(ref))] });
     const lead = shown.find((p) => p.section === null);
     const sections = [];
     for (const p of shown) {
       if (p.section === null) continue;
       const last = sections.at(-1);
-      if (last?.h === p.section) last.p.push(para(p)); else sections.push({ h: p.section, p: [para(p)] });
+      if (last?.key === p.section) last.p.push(para(p)); else sections.push({ key: p.section, h: p.heading ?? p.section, q: box(p.section), p: [para(p)] });
     }
-    (perPage[a.node] ??= []).push({ from: order.get(a.from_version), lead: lead ? para(lead) : null, sections, sources: sources.map(({ key, ...x }) => x) });
+    (perPage[a.node] ??= { articles: [], timeline: [] }).articles.push({ from: order.get(a.from_version), lead: lead ? para(lead) : null, sections: sections.map(({ key, ...x }) => x), sources: src.done() });
   }
-  const slugs = new Set();
-  let total = 0;
-  for (const [page, list] of Object.entries(perPage)) {
-    list.sort((a, b) => a.from - b.from);
-    const slug = articleSlug(page);
-    if (slugs.has(slug)) throw new Error(`article slug ${slug} used twice`);
-    slugs.add(slug);
-    const text = JSON.stringify(list);
-    total += text.length;
-    await writeFile(new URL(`${slug}.json`, artDir), text);
-  }
-  console.log(`data/runtime/articles/ ${slugs.size} pages, ${(total / 1024).toFixed(0)} KB`);
 }
+if (existsSync(REV)) {
+  for (const r of JSON.parse(await readFile(REV, 'utf8')).reveals) {
+    const items = r.items.filter((x) => x.status === 'accepted' && x.source);
+    if (!items.length) continue;
+    (perPage[r.node] ??= { articles: [], timeline: [] }).timeline.push({
+      v: order.get(r.version), first: r.first || undefined,
+      items: items.map((x) => ({ t: x.text, page: x.source.page, revision: x.source.revision, date: stamp.get(x.source.revision) ?? '' })),
+    });
+  }
+}
+const slugs = new Set();
+let total = 0;
+for (const [page, data] of Object.entries(perPage)) {
+  data.articles.sort((a, b) => a.from - b.from);
+  data.timeline.sort((a, b) => a.v - b.v);
+  const slug = articleSlug(page);
+  if (slugs.has(slug)) throw new Error(`article slug ${slug} used twice`);
+  slugs.add(slug);
+  const text = JSON.stringify(data);
+  total += text.length;
+  await writeFile(new URL(`${slug}.json`, artDir), text);
+}
+console.log(`data/runtime/articles/ ${slugs.size} pages, ${(total / 1024).toFixed(0)} KB`);
 /** the file name of a page's articles; src/lore.ts articleSlug must match */
 function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
-

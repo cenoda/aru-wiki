@@ -63,3 +63,17 @@
   .site .wa-infobox { float: none; width: auto; margin: 0 0 14px; }
 }
 .site .wa section > p { margin: 0 0 12px; }
+
+/* interpretation sentences (해석): ties facts together, not stated as fact */
+.site .wa-interp { background: linear-gradient(transparent 62%, var(--gold-soft) 62%); }
+.site .wa-interp-tag { display: inline-block; margin: 0 2px 0 4px; padding: 0 4px; font-size: .68em; line-height: 1.5; vertical-align: .15em;
+  color: var(--gold); border: 1px solid var(--gold); border-radius: 2px; font-weight: 600; }
+/* a dialogue line for the section, like a quote box on a fan wiki */
+.site .wa-quote { margin: 8px 0 14px; padding: 10px 14px; background: var(--card); border: 1px dashed var(--line); border-left: 4px solid var(--gold); border-radius: 2px; }
+.site .wa-quote p { margin: 0 0 6px; }
+.site .wa-quote footer { font-size: .85rem; color: var(--muted); }
+/* what was revealed when */
+.site .wa-timeline { list-style: none; padding-left: 0; }
+.site .wa-timeline > li { padding: 6px 0 6px 14px; border-left: 2px solid var(--line); }
+.site .wa-tl-ver { font-weight: 600; font-size: .92rem; }
+.site .wa-timeline ul { margin: 2px 0 0; }

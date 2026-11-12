@@ -41,6 +41,16 @@ const TOOLS = {
       '--output-schema', schemaFile, '-o', outFile, '-'], prompt, cwd);
     return { data: JSON.parse(await readFile(outFile, 'utf8')), cost: null };
   },
+  // Codex at medium reasoning: checking sentences against given text needs less than the default high.
+  async 'codex-medium'(prompt, schema, cwd) {
+    const schemaFile = join(cwd, 'schema.json'), outFile = join(cwd, 'out.json');
+    await writeFile(schemaFile, JSON.stringify(schema));
+    await run('codex', ['exec', '-c', 'model_reasoning_effort="medium"', '--sandbox', 'read-only', '--skip-git-repo-check', '--ephemeral',
+      '--output-schema', schemaFile, '-o', outFile, '-'], prompt, cwd);
+    return { data: JSON.parse(await readFile(outFile, 'utf8')), cost: null };
+  },
+  // Grok Build (xAI) headless, single turn, no tools and no web (docs/rights-risk.md 2.4: training opted out).
+  grok: (prompt, schema, cwd) => grok('grok-4.7', 'low', prompt, schema, cwd),
   // Muse Code subscription models. Ember is cheap enough to run freely; Spark is the larger one.
   // Muse Wonder must never be used (terms of service for the user's region), so it is not offered.
   ember: (prompt, schema, cwd) => muse('muse-ember-1.0', prompt, schema, cwd),
@@ -48,6 +58,8 @@ const TOOLS = {
   // Gemini through Antigravity (`agy`), in a terminal sandbox inside the empty scratch directory.
   // `-p` must carry the prompt attached (-p=...), or it takes the next flag as the prompt.
   flash: (prompt, schema, cwd) => agy(process.env.AGY_MODEL ?? 'gemini-3.8-flash-low', prompt, schema, cwd),
+  // article writer (user, 2026-11-12: Gemini 3.8 Flash, thinking medium or lower)
+  'flash-medium': (prompt, schema, cwd) => agy('gemini-3.8-flash-medium', prompt, schema, cwd),
   'agy-sonnet': (prompt, schema, cwd) => agy('claude-sonnet-5-5-medium', prompt, schema, cwd),
   // Claude Sonnet 5.5 on the API credit, at the same effort as the Antigravity model above.
   async 'sonnet-api'(prompt, schema) {
@@ -123,6 +135,15 @@ const TOOLS = {
     return { data: checkShape(parseJsonReply(text), schema), cost: null };
   },
 };
+async function grok(model, effort, prompt, schema, cwd) {
+  const promptFile = join(cwd, 'prompt.txt');
+  await writeFile(promptFile, prompt);
+  const out = await run('grok', ['--prompt-file', promptFile, '-m', model, '--output-format', 'json', '--json-schema', JSON.stringify(schema),
+    '--disable-web-search', '--tools', '', '--reasoning-effort', effort, '--cwd', cwd], '', cwd);
+  const res = JSON.parse(out.slice(out.indexOf('{')));
+  if (res.is_error || !res.structuredOutput) throw new Error(`grok: ${String(res.result ?? res.error ?? out).slice(0, 300)}`);
+  return { data: checkShape(res.structuredOutput, schema), cost: null };
+}
 // Contributor mode is always off. A Muse Code subscription defaults to it (Meta trains on the
 // prompts and files sent, ToS §3.3/§6.1) and the saved choice is per machine, so every run says
 // so itself. Fandom's terms forbid using its content to train an AI system.
@@ -223,4 +244,58 @@ export async function ask(tool, prompt, schema) {
   // an empty scratch directory, so the CLI sees no project files
   const cwd = await mkdtemp(join(tmpdir(), 'aru-llm-'));
   try { return await TOOLS[tool](prompt, schema, cwd); } finally { await rm(cwd, { recursive: true, force: true }); }
+}
+
+// ---------- several tools at once ----------
+// Which company each tool's model comes from: a writer's text is checked by another company's model.
+export const COMPANY = { claude: 'anthropic', 'sonnet-api': 'anthropic', haiku: 'anthropic', sonnet: 'anthropic', 'agy-sonnet': 'anthropic',
+  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg' };
+const slots = new Map();
+/** At most `limit` calls of one tool at a time (LLM_SLOTS="grok=6,flash-medium=4" overrides). */
+function slotOf(tool) {
+  if (!slots.has(tool)) {
+    const env = Object.fromEntries((process.env.LLM_SLOTS ?? '').split(',').filter(Boolean).map((x) => x.split('=')));
+    slots.set(tool, { limit: Number(env[tool] ?? 4), busy: 0, waiting: [] });
+  }
+  return slots.get(tool);
+}
+const busy = new Map(); // tool → time until which it is set aside after a quota error
+/**
+ * Ask whichever of `tools` has a free slot (the least busy first), skipping tools of the companies in
+ * `avoid`. A tool that fails with a quota or rate error is set aside for 10 minutes and the call
+ * moves to another. Returns { data, tool }.
+ */
+export async function askAny(tools, prompt, schema, { avoid = [] } = {}) {
+  const usable = tools.filter((t) => TOOLS[t] && !avoid.includes(COMPANY[t]));
+  if (!usable.length) throw new Error(`no tool left in ${tools} (avoiding ${avoid})`);
+  let lastErr;
+  for (let attempt = 0; attempt < usable.length + 1; attempt++) {
+    const open = usable.filter((t) => (busy.get(t) ?? 0) < Date.now());
+    if (!open.length) throw lastErr ?? new Error('every tool is set aside after quota errors');
+    const tool = await new Promise((resolve) => {
+      let done = false;
+      // queued on every open tool; once served it declines, so the next waiter gets the slot
+      const tryTake = () => {
+        if (done) return false;
+        const free = open.map((t) => [t, slotOf(t)]).filter(([, s]) => s.busy < s.limit).sort((a, b) => a[1].busy / a[1].limit - b[1].busy / b[1].limit);
+        if (free.length) { free[0][1].busy++; done = true; resolve(free[0][0]); return true; }
+        return false;
+      };
+      if (!tryTake()) for (const t of open) slotOf(t).waiting.push(tryTake);
+    });
+    try {
+      const r = await ask(tool, prompt, schema);
+      return { ...r, tool };
+    } catch (e) {
+      lastErr = e;
+      if (QUOTA.test(e.message)) { busy.set(tool, Date.now() + 10 * 60 * 1000); console.error(`${tool} set aside: ${e.message.slice(0, 120)}`); continue; }
+      throw e;
+    } finally {
+      const s = slotOf(tool);
+      s.busy--;
+      // wake waiters until one takes the slot (others stay queued on their other tools)
+      while (s.waiting.length) { const w = s.waiting.shift(); if (w()) break; }
+    }
+  }
+  throw lastErr;
 }

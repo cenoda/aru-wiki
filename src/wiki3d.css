@@ -75,3 +75,20 @@
 /* the long legend hint gives way to the search box instead of pushing the header onto two lines */
 @media (max-width: 1500px) { .site.w3d .legend .hint { display: none; } }
 .site.w3d .w3d-portal-logo { display: flex; align-items: center; gap: .3em; } .site.w3d .w3d-portal-logo svg { width: .9em; height: .9em; }
+
+/* time ruler over the left edge of the chart (positions set from the 3D view) */
+.site.w3d .w3d-ruler { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 3; pointer-events: none;
+  font-size: .72rem; line-height: 1.5; font-variant-numeric: tabular-nums; transition: opacity .3s; color: #8d9bd0; }
+.site.w3d.day .w3d-ruler { color: #6a7699; }
+.site.w3d .w3d-ruler.behind { visibility: hidden; }
+.site.w3d .w3d-rail { position: absolute; left: 20px; width: 1px; background: currentColor; opacity: .3; }
+.site.w3d .w3d-rail.lit { opacity: .9; background: linear-gradient(to top, currentColor, #f2a074); }
+.site.w3d.day .w3d-rail.lit { background: linear-gradient(to top, currentColor, #cf5f33); }
+.site.w3d .w3d-tick { position: absolute; left: 16px; padding-left: 14px; transform: translateY(-50%); white-space: nowrap;
+  opacity: .75; transition: opacity .2s; }
+.site.w3d .w3d-tick::before { content: ''; position: absolute; left: 0; top: 50%; width: 9px; height: 1px; background: currentColor; }
+.site.w3d .w3d-now { position: absolute; left: 15px; padding-left: 17px; transform: translateY(-50%); white-space: nowrap;
+  font-weight: 600; font-size: .78rem; color: #f2a074; }
+.site.w3d.day .w3d-now { color: #cf5f33; }
+.site.w3d .w3d-now::before { content: ''; position: absolute; left: 0; top: 50%; width: 11px; height: 11px; margin-top: -5.5px;
+  border-radius: 50%; background: currentColor; box-shadow: 0 0 8px currentColor; }

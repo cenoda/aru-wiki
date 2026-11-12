@@ -14,7 +14,7 @@ import ForceGraph3D, { type ForceGraph3DInstance } from '3d-force-graph';
 import { forceX, forceY, forceZ } from 'd3-force-3d';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  AdditiveBlending, BufferGeometry, Float32BufferAttribute, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, LineBasicMaterial, LineSegments, NormalBlending,
+  AdditiveBlending, BufferGeometry, Float32BufferAttribute, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, NormalBlending,
   type PerspectiveCamera, Sprite, SpriteMaterial, Vector2, Vector3,
 } from 'three';
 import { Line2 } from 'three/examples/jsm/lines/Line2.js';
@@ -183,6 +183,8 @@ export default function WikiGraph3D() {
   const applySky = useRef<(sky: Palette) => void>(() => {});
   /** Move the glowing "present" floor to a version's height. */
   const placeNow = useRef<(order: number) => void>(() => {});
+  /** the time ruler drawn over the left edge of the chart */
+  const rulerBox = useRef<HTMLDivElement>(null);
   const [theme, setTheme] = useState<Theme | null>(null);
   const [failed, setFailed] = useState(false);
   const [snapshots, setSnapshots] = useState<Snapshots | null>(null);
@@ -336,6 +338,9 @@ export default function WikiGraph3D() {
         const label = new SpriteText(nameOf(n), baseHeight * labelScale(el), sky0.label);
         label.fontFace = LABEL_FONT_STACK;
         label.fontWeight = n.hub ? '600' : '500'; // index.html loads 400–600
+        // a thin halo in the sky colour, so lines passing behind a name do not cut through it
+        label.strokeWidth = 1;
+        label.strokeColor = sky0.sky;
         // Hangul reaches past the font-size box; without room the tops and bottoms are cut off
         label.padding = [label.textHeight * 0.15, label.textHeight * 0.3];
         label.material.depthWrite = false;
@@ -391,68 +396,63 @@ export default function WikiGraph3D() {
 
     let fitted = false;
     let layoutTimer: number | undefined;
-    const rulers: LineSegments<BufferGeometry, LineBasicMaterial>[] = [];
-    const tags: SpriteText[] = [];
-    let nowMark: { mark: SpriteText; dot: Sprite } | null = null;
+    let placeRuler = () => {};
+    /** Screen room kept for the time ruler at the left edge: the chart is drawn shifted right by half of it. */
+    const RULER_W = 64;
+    const leaveRoom = () => {
+      const camera = g.camera() as PerspectiveCamera;
+      const W = el.clientWidth, H = el.clientHeight;
+      camera.setViewOffset(W, H, -RULER_W / 2, 0, W, H);
+      camera.updateProjectionMatrix();
+    };
     const afterLayout = () => {
       if (disposed) return;
       const list = g.graphData().nodes;
       const radii = list.map((n) => Math.hypot(n.x ?? 0, n.z ?? 0)).sort((a, b) => a - b);
       const r90 = radii[Math.floor(radii.length * 0.9)];
-      // the time axis as one ruler beside the chart: a thin line with a tick and a label per major
-      // version (1.0 … 7.0), instead of a ring per version stacked over the stars
-      const sky0 = lookNow.current.sky;
-      const R = r90 * 1.08;
-      const majors = versions.filter((v) => /\.0$|^Luna I$/.test(v.id));
-      const y0 = heightOf(0), y1 = heightOf(lastOrder);
-      const axisPts = [new Vector3(-R, y0, 0), new Vector3(-R, y1, 0)];
-      const axis = new LineSegments(new BufferGeometry().setFromPoints(axisPts), new LineBasicMaterial({ color: sky0.ecliptic, transparent: true, opacity: 0.5, depthWrite: false }));
-      axis.raycast = () => {};
-      g.scene().add(axis);
-      rulers.push(axis);
-      const tickPts: Vector3[] = [];
-      for (const v of majors) {
-        const y = heightOf(v.order);
-        tickPts.push(new Vector3(-R - 5, y, 0), new Vector3(-R + 5, y, 0));
-        const tag = new SpriteText(v.id === 'Luna I' ? '6.0' : v.id, 0.014 * labelScale(el), sky0.ecliptic);
-        tag.fontFace = LABEL_FONT_STACK;
-        tag.material.sizeAttenuation = false; tag.material.depthWrite = false; tag.material.transparent = true; tag.material.opacity = 0.7;
-        tag.position.set(-R - 7, y, 0);
-        tag.center.set(1, 0.5);
-        g.scene().add(tag);
-        tags.push(tag);
+      // the time axis as a flat ruler at the left edge of the screen (crisp page text, not 3D sprites):
+      // each major version's tick sits at the screen height of that version on the axis through the
+      // theme star, so it follows the chart as it turns; the part up to the chosen version is lit
+      const box = rulerBox.current;
+      if (box) {
+        box.replaceChildren();
+        const rail = document.createElement('i'); rail.className = 'w3d-rail';
+        const lit = document.createElement('i'); lit.className = 'w3d-rail lit';
+        const nowTag = document.createElement('b'); nowTag.className = 'w3d-now';
+        box.append(rail, lit);
+        const ticks = versions.filter((v) => /\.0$|^Luna I$/.test(v.id)).map((v) => {
+          const d = document.createElement('span');
+          d.className = 'w3d-tick';
+          d.textContent = v.id === 'Luna I' ? '6.0' : v.id;
+          box.append(d);
+          return { d, h: heightOf(v.order) };
+        });
+        box.append(nowTag);
+        const pt = new Vector3();
+        placeRuler = () => {
+          const camera = g.camera() as PerspectiveCamera;
+          camera.updateMatrixWorld();
+          const top = el.offsetTop, H = el.clientHeight;
+          const yAt = (h: number) => { pt.set(0, h, 0).project(camera); return top + ((1 - pt.y) / 2) * H; };
+          const yLow = yAt(heightOf(0)), yHigh = yAt(heightOf(lastOrder)), yNow = yAt(heightOf(vNow.current));
+          rail.style.top = `${Math.min(yLow, yHigh)}px`; rail.style.height = `${Math.abs(yLow - yHigh)}px`;
+          lit.style.top = `${Math.min(yLow, yNow)}px`; lit.style.height = `${Math.abs(yLow - yNow)}px`;
+          nowTag.style.top = `${yNow}px`;
+          nowTag.textContent = `${versions[vNow.current]?.id ?? ''}까지`;
+          // ticks from the bottom up; one that would crowd the last shown tick or the marker stays hidden
+          let last = Infinity;
+          for (const t of [...ticks].sort((x, y) => x.h - y.h)) {
+            const y = yAt(t.h);
+            t.d.style.top = `${y}px`;
+            const room = Math.abs(y - last) >= 18 && Math.abs(y - yNow) >= 16;
+            t.d.style.opacity = room ? '' : '0';
+            if (room) last = y;
+          }
+          // seen from straight above the axis has no length: hide the ruler
+          box.style.opacity = Math.abs(yLow - yHigh) < 80 ? '0' : '';
+        };
       }
-      const ticks = new LineSegments(new BufferGeometry().setFromPoints(tickPts), new LineBasicMaterial({ color: sky0.ecliptic, transparent: true, opacity: 0.45, depthWrite: false }));
-      ticks.raycast = () => {};
-      g.scene().add(ticks);
-      rulers.push(ticks);
-      // the present on the ruler: the axis is bright up to the chosen version and faint above it,
-      // with a marker and the version's name at that height
-      const future = new LineSegments(new BufferGeometry().setFromPoints([new Vector3(), new Vector3()]), new LineBasicMaterial({ color: sky0.ecliptic, transparent: true, opacity: 0.12, depthWrite: false }));
-      future.raycast = () => {};
-      g.scene().add(future);
-      rulers.push(future);
-      const mark = new SpriteText('', 0.017 * labelScale(el), sky0.hub);
-      mark.fontFace = LABEL_FONT_STACK;
-      mark.fontWeight = '600';
-      mark.material.sizeAttenuation = false; mark.material.depthWrite = false;
-      mark.center.set(-0.15, 0.5);
-      g.scene().add(mark);
-      const dot = new Sprite(new SpriteMaterial({ map: starTexture(sky0.hub, sky0.night, false), transparent: true, depthWrite: false,
-        blending: sky0.night ? AdditiveBlending : NormalBlending }));
-      dot.scale.setScalar(16);
-      g.scene().add(dot);
-      nowMark = { mark, dot };
-      placeNow.current = (order) => {
-        const y = heightOf(order);
-        axis.geometry.setFromPoints([new Vector3(-R, y0, 0), new Vector3(-R, y, 0)]);
-        future.geometry.setFromPoints([new Vector3(-R, y, 0), new Vector3(-R, y1 + 8, 0)]);
-        mark.text = `${versions[order]?.id ?? ''} 공개까지`;
-        mark.position.set(-R + 6, y, 0);
-        dot.position.set(-R, y, 0);
-        wakeUp();
-      };
-      placeNow.current(vNow.current);
+      placeNow.current = () => { placeRuler(); wakeUp(); };
       // lines that climb far up the axis, or are not in the spanning tree, rest faint
       for (const l of g.graphData().links) {
         const s = l.source as PageNode, t = l.target as PageNode;
@@ -463,6 +463,7 @@ export default function WikiGraph3D() {
       fade.current();
       // frame what is there: move the camera until the stars (but the far few) fill the screen in both directions
       const camera = g.camera() as PerspectiveCamera;
+      leaveRoom();
       const portrait = el.clientWidth < el.clientHeight;
       const tilt = ((portrait ? 12 : 20) * Math.PI) / 180;
       const linked = list.filter((n) => index.near.has(n.id));
@@ -477,8 +478,8 @@ export default function WikiGraph3D() {
         const ax: number[] = [], ay: number[] = [];
         for (const n of linked) { p.set(n.x ?? 0, n.y ?? 0, n.z ?? 0).project(camera); ax.push(Math.abs(p.x)); ay.push(Math.abs(p.y)); }
         ax.sort((a, b) => a - b); ay.sort((a, b) => a - b);
-        const q = (a: number[]) => a[Math.floor(a.length * (portrait ? 0.85 : 0.97))];
-        dist *= Math.max(q(ax) / 0.9, q(ay) / 0.82);
+        const q = (a: number[]) => a[Math.floor(a.length * (portrait ? 0.93 : 0.97))];
+        dist *= Math.max(q(ax) / (0.9 * (1 - RULER_W / el.clientWidth)), q(ay) / 0.82);
       }
       g.cameraPosition({ x: 0, y: cy + Math.sin(tilt) * dist, z: Math.cos(tilt) * dist }, { x: 0, y: cy, z: 0 }, 0);
       // on first view the chart turns slowly into place once (about 40 degrees, easing out), then rests;
@@ -534,15 +535,7 @@ export default function WikiGraph3D() {
         p.star.needsUpdate = true;
         p.label.color = s.label;
       }
-      for (const r of rulers) r.material.color.set(s.ecliptic);
-      for (const t of tags) t.color = s.ecliptic;
-      if (nowMark) {
-        nowMark.mark.color = s.hub;
-        nowMark.dot.material.map?.dispose();
-        nowMark.dot.material.map = starTexture(s.hub, s.night, false);
-        nowMark.dot.material.blending = s.night ? AdditiveBlending : NormalBlending;
-        nowMark.dot.material.needsUpdate = true;
-      }
+      for (const p of stars.current.values()) p.label.strokeColor = s.sky;
       dust.material.color.set(s.night ? '#c9d3ff' : '#7a87ad');
       dust.material.opacity = s.night ? 0.35 : 0.14;
       wakeUp();
@@ -594,6 +587,7 @@ export default function WikiGraph3D() {
       const d = g.camera().position.length();
       fog.near = d * 0.7;
       fog.far = d * 2.3;
+      placeRuler();
       relabel.current();
     };
     controls.addEventListener('change', onMove);
@@ -611,6 +605,8 @@ export default function WikiGraph3D() {
           p.label.padding = [p.label.textHeight * 0.15, p.label.textHeight * 0.3];
         }
       }
+      leaveRoom();
+      placeRuler();
       relabelSoon.current();
       wakeUp();
     });
@@ -625,8 +621,7 @@ export default function WikiGraph3D() {
       cancelAnimationFrame(relabelFrame);
       controls.removeEventListener('change', onMove);
       for (const ev of events) el.removeEventListener(ev, wakeUp);
-      for (const r of rulers) { r.geometry.dispose(); r.material.dispose(); }
-      if (nowMark) { nowMark.dot.material.map?.dispose(); nowMark.dot.material.dispose(); }
+      rulerBox.current?.replaceChildren();
       placeNow.current = () => {};
       dust.geometry.dispose(); dust.material.dispose();
       g._destructor();
@@ -756,6 +751,7 @@ export default function WikiGraph3D() {
           </div>
         )}
       </div>
+      {gl && <div className={`w3d-ruler${article ? ' behind' : ''}`} ref={rulerBox} aria-hidden="true" />}
       {sel && !article && (
         <aside className="w3d-card" aria-live="polite">
           <p className="w3d-type">{sel.hub ? '테마' : KIND_LABEL[sel.kind]} · {versions[sel.revealed]?.id}부터</p>

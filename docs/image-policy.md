@@ -36,6 +36,8 @@
 | 공개 버전 | 그 외형이 처음 공개된 버전 |
 | 가공 | 자르기·축소 여부 |
 
+삭제 요청이 오면 [삭제 요청 처리](takedown.md) 순서를 따른다(`scripts/takedown.mjs`, 막은 목록 `data/manual/takedown.json`).
+
 ## 4. 지금 쓰는 이미지 (2026-11-11)
 
 - 임무 카드: 중심 인물이 플레이 가능 캐릭터인 막 96개 중 아이콘이 붙은 캐릭터 81명(플레이 가능 중심 인물 전원, `data/generated/image-files.json`). Enka API 문서가 안내하는 `https://enka.network/ui/UI_AvatarIcon_Side_*.png`를 2초 간격으로 한 번씩 받았고 가공하지 않았다(128×128, 화면에서 축소). 파일은 git에 넣지 않는다(공개 리포지토리가 원본 모음이 되므로). 배포하거나 새로 받은 checkout에서는 `npm run fetch:icons`가 기록에 있는 파일만 다시 받는다. 파일이 없으면 카드는 지역 문장을 보인다.

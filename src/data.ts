@@ -1,6 +1,7 @@
 // The graph data is a separate hashed asset (scripts/build-runtime-data.mjs), fetched once at start.
 // Bindings below are filled by loadData(); import the views only after it resolves (see App.tsx).
 import graphUrl from '../data/runtime/graph.json?url';
+import takedown from '../data/manual/takedown.json';
 
 export type QuestType = 'ARCHON' | 'STORY' | 'WORLD' | 'EVENT';
 
@@ -231,10 +232,15 @@ interface ImageFile { file: string; character: string; source_url: string; fetch
 interface FiguresData { acts: Record<string, { character: string }>; characters: Record<string, { ko: string | null }> }
 /** act id → the character its card shows (scripts/images/card-figures.mjs); filled by loadData() */
 export let figureOf = new Map<string, Figure>();
+// A rights holder's takedown (data/manual/takedown.json, docs/takedown.md): no icon for these
+// characters, files or act cards; the card shows its region emblem.
+const blocked = (kind: 'characters' | 'files' | 'acts') =>
+  new Set((takedown.entries as { [k in typeof kind]?: string[] }[]).flatMap((e) => e[kind] ?? []));
 function buildFigures(figuresData: FiguresData, files: ImageFile[]) {
-  const iconOf = new Map(files.map((f) => [f.character, f]));
+  const [noChar, noFile, noAct] = [blocked('characters'), blocked('files'), blocked('acts')];
+  const iconOf = new Map(files.filter((f) => !noChar.has(f.character) && !noFile.has(f.file)).map((f) => [f.character, f]));
   return new Map(Object.entries(figuresData.acts).map(([act, { character }]): [string, Figure] => {
-    const f = iconOf.get(character);
+    const f = noAct.has(act) ? undefined : iconOf.get(character);
     const release = f ? versionOrder.get(f.release_version) : undefined;
     return [act, {
       character, ko: figuresData.characters[character]?.ko ?? null,

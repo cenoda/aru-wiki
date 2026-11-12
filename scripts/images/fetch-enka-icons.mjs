@@ -17,6 +17,8 @@
 //          claims that icon, and the icon name is not the title of another Fandom page
 //          ("Lyney" → Liney; "Xianyun" is not matched to Xinyan, which has its own page)
 //   data/manual/enka-icons.json overrides or blocks a match (a person checked it).
+//   data/manual/takedown.json (a rights holder's request, docs/takedown.md) blocks a character or
+//   file in both modes: it is not fetched and gets no record, so its cards keep the emblem.
 // No match → no icon; the card keeps its region emblem.
 //
 // Every file gets a record in data/generated/image-files.json: character, source URL, date
@@ -31,6 +33,7 @@ import { existsSync } from 'node:fs';
 import { mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { generatedFile } from '../fandom/paths.mjs';
 import { FandomClient } from '../fandom/client.mjs';
+import { blocked as takedownBlocked, recordBlocked } from './takedown-list.mjs';
 
 const root = new URL('../../', import.meta.url);
 const OUT_DIR = new URL('public/img/characters/', root);
@@ -117,10 +120,16 @@ function match(names, icons, manual, titles) {
 /** Fetch the files image-files.json lists and this checkout lacks, one at a time. */
 async function fromRecords() {
   const { files } = await read(generatedFile('image-files.json'));
+  const takedown = takedownBlocked();
   await mkdir(OUT_DIR, { recursive: true });
-  let requests = 0, failed = 0;
+  let requests = 0, failed = 0, skipped = 0;
   for (const f of files) {
     const target = new URL(f.file, new URL('public/', root));
+    if (recordBlocked(takedown, f)) {
+      skipped++;
+      if (existsSync(target)) log(`${f.file} is blocked by data/manual/takedown.json but still here: run node scripts/takedown.mjs clean --apply`);
+      continue;
+    }
     if (existsSync(target)) continue;
     if (!/^https:\/\/enka\.network\/ui\/UI_AvatarIcon_Side_[A-Za-z0-9]+\.png$/.test(f.source_url)) {
       log(`skip ${f.file}: not an Enka icon URL (${f.source_url})`); failed++; continue;
@@ -131,7 +140,7 @@ async function fromRecords() {
     if (!res.ok || !(res.headers.get('content-type') ?? '').startsWith('image/png')) { log(`failed ${f.file}: HTTP ${res.status}`); failed++; continue; }
     await writeFile(target, Buffer.from(await res.arrayBuffer()));
   }
-  log(`records: ${files.length}, fetched now: ${requests - failed}, failed: ${failed}`);
+  log(`records: ${files.length}, fetched now: ${requests - failed}, failed: ${failed}, blocked (takedown): ${skipped}`);
   // a card whose file is missing shows its region emblem instead, so a failure does not stop a build
 }
 
@@ -143,7 +152,9 @@ async function main() {
   const old = existsSync(recordsFile) ? await read(recordsFile) : { files: [] };
   const oldByFile = new Map(old.files.map((f) => [f.file, f]));
 
-  const wanted = Object.entries(figures.characters).filter(([, c]) => c.playable && c.release_version).map(([n]) => n);
+  const takedown = takedownBlocked();
+  const wanted = Object.entries(figures.characters).filter(([, c]) => c.playable && c.release_version).map(([n]) => n)
+    .filter((n) => !takedown.characters.has(n));
   const icons = await iconNames();
   const dump = await new FandomClient().dump();
   const titles = new Map();
@@ -165,6 +176,7 @@ async function main() {
     const file = `img/characters/${icon}.png`;
     const target = new URL(file, new URL('public/', root));
     const prev = oldByFile.get(file);
+    if (takedown.files.has(file)) { log(`skip ${name}: ${file} is blocked by data/manual/takedown.json`); continue; }
     if (!existsSync(target) && !dry) {
       if (requests) await sleep(PAUSE_MS);
       const res = await fetch(ICON_URL(iconName), { headers: { 'user-agent': UA } });

@@ -2,13 +2,18 @@ import { type ComponentType, useEffect, useState } from 'react';
 import { loadData } from './data';
 
 // The views read the graph data while their modules load, so import them only after loadData().
-// `?view=map` keeps the full layered graph from the first prototype; `?view=wiki3d` previews the lore theme in 3D; `?view=emblems` previews the region emblems.
+// The site opens on the lore theme in 3D (with its article pages, `?page=`). `?view=quests` is the
+// quest map; old quest links (`?act=`, `?unit=` without a view) still open it. `?view=wiki3d` is the
+// 3D view's old address. `?view=map` keeps the layered graph of the first prototype and
+// `?view=emblems` previews the region emblems.
 const loadView = async (): Promise<ComponentType> => {
-  const view = new URLSearchParams(location.search).get('view');
+  const q = new URLSearchParams(location.search);
+  const view = q.get('view') ?? (q.has('act') || q.has('unit') ? 'quests' : 'wiki3d');
   await loadData(); // first: importing a view runs its top-level code, which reads the data
-  if (view === 'wiki3d') return (await import('./WikiGraph3D')).default; // stage-2 lore preview
+  if (view === 'quests') return (await import('./FocusView')).default;
+  if (view === 'map') return (await import('./MapView')).default;
   if (view === 'emblems') return (await import('./EmblemPreview')).default; // region emblem preview
-  return (await (view === 'map' ? import('./MapView') : import('./FocusView'))).default;
+  return (await import('./WikiGraph3D')).default;
 };
 
 export default function App() {

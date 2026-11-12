@@ -696,7 +696,9 @@ const focusFromUrl = () => {
   if (u && unitById.has(u)) return u;
   return null;
 };
-const focusUrl = (id: string | null) => (!id ? './' : unitById.has(id) ? `?unit=${id}` : `?act=${id}`);
+/** The quest map lives at `?view=quests` (the site's home is the 3D lore view). */
+const QUESTS = '?view=quests';
+const focusUrl = (id: string | null) => (!id ? QUESTS : unitById.has(id) ? `${QUESTS}&unit=${id}` : `${QUESTS}&act=${id}`);
 
 function Logo() {
   return (
@@ -741,7 +743,7 @@ function Atlas() {
   // A focused node that is not released in the chosen version is deselected (back to the atlas).
   useEffect(() => {
     if (focus && !visible(item(focus))) {
-      window.history.replaceState(null, '', './');
+      window.history.replaceState(null, '', QUESTS);
       setFocus(null);
     }
   }, [focus, visible]);
@@ -1128,7 +1130,7 @@ function Atlas() {
     <div className="site graph-page">
       <div className="wrap">
         <header>
-          <a className="logo" href="./" onClick={(e) => { e.preventDefault(); select(null); }}><Logo />aru.wiki</a>
+          <a className="logo" href={QUESTS} onClick={(e) => { e.preventDefault(); select(null); }}><Logo />aru.wiki</a>
           <form className="find" onSubmit={(e) => { e.preventDefault(); if (results[0]) select(results[0].target.id); }}>
             <input type="search" value={query} onChange={(e) => setQuery(e.target.value)}
               onKeyDown={(e) => { if (e.key === 'Escape') { setQuery(''); e.currentTarget.blur(); } }}
@@ -1154,6 +1156,7 @@ function Atlas() {
             <span className="hint">카드를 누르면 갈래 · 끌어서 이동</span>
           </div>
           <nav>
+            <a className="band" href="./">3D 지도</a>
             <VersionPicker order={vIdx} onChange={setVIdx} />
             {!focus && zoom < 0.45 ? (
               <button type="button" className="band" onClick={() => {

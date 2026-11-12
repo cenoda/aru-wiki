@@ -14,7 +14,7 @@ import ForceGraph3D, { type ForceGraph3DInstance } from '3d-force-graph';
 import { forceX, forceY, forceZ } from 'd3-force-3d';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  AdditiveBlending, BufferGeometry, CanvasTexture, Color, Fog, Group, LineBasicMaterial, LineLoop, NormalBlending,
+  AdditiveBlending, BufferGeometry, Float32BufferAttribute, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, LineBasicMaterial, LineLoop, NormalBlending,
   type PerspectiveCamera, Sprite, SpriteMaterial, Vector2, Vector3,
 } from 'three';
 import { Line2 } from 'three/examples/jsm/lines/Line2.js';
@@ -292,7 +292,11 @@ export default function WikiGraph3D() {
     const resolution = new Vector2(el.clientWidth, el.clientHeight);
     g.renderer().setPixelRatio(Math.min(window.devicePixelRatio, 2));
     const lastOrder = versions.length - 1;
-    const height = (n: PageNode) => (n.hub ? 0 : ((n.revealed - lastOrder / 2) / lastOrder) * 36);
+    /** the time axis: earlier versions low, later high, over TIME_SPAN units (the plane is ~470 wide) */
+    // portrait screens get a taller axis so the chart fills their height (set when the scene is built)
+    const TIME_SPAN = el.clientWidth < el.clientHeight ? 560 : 240;
+    const heightOf = (order: number) => ((order - lastOrder / 2) / lastOrder) * TIME_SPAN;
+    const height = (n: PageNode) => (n.hub ? 0 : heightOf(n.revealed));
 
     g.backgroundColor('rgba(0,0,0,0)')
       .showNavInfo(false)
@@ -303,7 +307,7 @@ export default function WikiGraph3D() {
         const named = index.named.has(n.id);
         // size by importance, like star magnitudes: the theme's main pages stand out, minor ones are specks
         const imp = index.importance(n);
-        const r = n.hub ? 4.6 : 0.5 + 3.4 * imp ** 0.8;
+        const r = n.hub ? 4.6 : 1.1 + 3.2 * imp ** 0.8;
         const group = new Group();
         const star = new SpriteMaterial({
           map: starTexture(starColour(n, sky0), sky0.night, n.hub),
@@ -373,35 +377,73 @@ export default function WikiGraph3D() {
 
     let fitted = false;
     let layoutTimer: number | undefined;
-    const rings: { line: LineLoop<BufferGeometry, LineBasicMaterial>; k: number }[] = [];
+    const rings: { line: LineLoop<BufferGeometry, LineBasicMaterial>; k: number; tag: SpriteText }[] = [];
     const afterLayout = () => {
       if (disposed) return;
       const list = g.graphData().nodes;
       const radii = list.map((n) => Math.hypot(n.x ?? 0, n.z ?? 0)).sort((a, b) => a - b);
       const r90 = radii[Math.floor(radii.length * 0.9)];
-      // faint rings on the plane, like an ecliptic chart
+      // one faint ring per major version (1.0 … 7.0) at its height, with the version on the rim:
+      // the chart's third axis is time, and the rings make it readable
       const sky0 = lookNow.current.sky;
-      for (const k of [0.35, 0.7, 1.05]) {
+      const majors = versions.filter((v) => /\.0$|^Luna I$/.test(v.id));
+      majors.forEach((v, i) => {
+        const y = heightOf(v.order), R = r90 * 1.02;
         const pts: Vector3[] = [];
-        for (let i = 0; i < 128; i++) { const a = (i / 128) * Math.PI * 2; pts.push(new Vector3(Math.cos(a) * r90 * k, 0, Math.sin(a) * r90 * k)); }
+        for (let j = 0; j < 128; j++) { const a = (j / 128) * Math.PI * 2; pts.push(new Vector3(Math.cos(a) * R, y, Math.sin(a) * R)); }
+        const k = i === 0 || i === majors.length - 1 ? 1.4 : 1;
         const ring = new LineLoop(new BufferGeometry().setFromPoints(pts), new LineBasicMaterial({ color: sky0.ecliptic, transparent: true, opacity: ringOpacity(k, sky0), depthWrite: false }));
         ring.raycast = () => {};
         g.scene().add(ring);
-        rings.push({ line: ring, k });
+        const tag = new SpriteText(v.id === 'Luna I' ? '6.0' : v.id, 0.016 * labelScale(el), sky0.ecliptic);
+        tag.fontFace = LABEL_FONT_STACK;
+        tag.material.sizeAttenuation = false; tag.material.depthWrite = false; tag.material.opacity = 0.75; tag.material.transparent = true;
+        tag.position.set(-R, y, 0);
+        tag.center.set(1.15, 0.5);
+        g.scene().add(tag);
+        rings.push({ line: ring, k, tag });
+      });
+      // frame what is there: move the camera until the stars (but the far few) fill the screen in both directions
+      const camera = g.camera() as PerspectiveCamera;
+      const portrait = el.clientWidth < el.clientHeight;
+      const tilt = ((portrait ? 12 : 20) * Math.PI) / 180;
+      const linked = list.filter((n) => index.near.has(n.id));
+      const ys = linked.map((n) => n.y ?? 0);
+      const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
+      const p = new Vector3();
+      let dist = r90 * 2.5;
+      for (let i = 0; i < 6; i++) {
+        camera.position.set(0, cy + Math.sin(tilt) * dist, Math.cos(tilt) * dist);
+        camera.lookAt(0, cy, 0);
+        camera.updateMatrixWorld();
+        const ax: number[] = [], ay: number[] = [];
+        for (const n of linked) { p.set(n.x ?? 0, n.y ?? 0, n.z ?? 0).project(camera); ax.push(Math.abs(p.x)); ay.push(Math.abs(p.y)); }
+        ax.sort((a, b) => a - b); ay.sort((a, b) => a - b);
+        const q = (a: number[]) => a[Math.floor(a.length * (portrait ? 0.85 : 0.97))];
+        dist *= Math.max(q(ax) / 0.9, q(ay) / 0.82);
       }
-      const cam = g.camera() as { fov?: number; aspect?: number };
-      const half = Math.tan(((cam.fov ?? 50) * Math.PI) / 360);
-      const aspect = cam.aspect ?? 1;
-      // portrait phones: frame the inner chart and let the rim run off the sides (pinch to see more)
-      const dist = ((aspect < 1 ? r90 * 0.7 : r90) + 16) / (half * Math.min(1, aspect)) * 0.95;
-      const tilt = (32 * Math.PI) / 180; // look down on the plane
-      g.cameraPosition({ x: 0, y: Math.sin(tilt) * dist, z: Math.cos(tilt) * dist }, { x: 0, y: 0, z: 0 }, 0);
+      g.cameraPosition({ x: 0, y: cy + Math.sin(tilt) * dist, z: Math.cos(tilt) * dist }, { x: 0, y: cy, z: 0 }, 0);
       onMove(); // fog distances and names for the first view
       wakeUp();
     };
     // distance fog toward the sky colour: far stars and lines recede (distances follow the camera)
     const fog = new Fog(lookNow.current.sky.sky, 100, 400);
     g.scene().fog = fog;
+    // background stars far behind the chart (decoration, not data): they turn with the view and give it depth
+    const dustPos: number[] = [];
+    let seed = 7;
+    const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+    for (let i = 0; i < 1800; i++) {
+      const u = rnd() * 2 - 1, a = rnd() * Math.PI * 2, R = 1600 + rnd() * 1400, c = Math.sqrt(1 - u * u);
+      dustPos.push(Math.cos(a) * c * R, u * R, Math.sin(a) * c * R);
+    }
+    const dustGeo = new BufferGeometry();
+    dustGeo.setAttribute('position', new Float32BufferAttribute(dustPos, 3));
+    const night0 = lookNow.current.sky.night;
+    const dust = new Points(dustGeo, new PointsMaterial({ color: night0 ? '#c9d3ff' : '#7a87ad', size: 1.6, sizeAttenuation: false,
+      transparent: true, opacity: night0 ? 0.55 : 0.18, depthWrite: false, fog: false }));
+    dust.raycast = () => {};
+    g.scene().add(dust);
 
     applySky.current = (s) => {
       fog.color.set(s.sky);
@@ -412,7 +454,9 @@ export default function WikiGraph3D() {
         p.star.needsUpdate = true;
         p.label.color = s.label;
       }
-      for (const r of rings) { r.line.material.color.set(s.ecliptic); r.line.material.opacity = ringOpacity(r.k, s); }
+      for (const r of rings) { r.line.material.color.set(s.ecliptic); r.line.material.opacity = ringOpacity(r.k, s); r.tag.color = s.ecliptic; }
+      dust.material.color.set(s.night ? '#c9d3ff' : '#7a87ad');
+      dust.material.opacity = s.night ? 0.55 : 0.18;
       wakeUp();
     };
 
@@ -494,6 +538,7 @@ export default function WikiGraph3D() {
       controls.removeEventListener('change', onMove);
       for (const ev of events) el.removeEventListener(ev, wakeUp);
       for (const r of rings) { r.line.geometry.dispose(); r.line.material.dispose(); }
+      dust.geometry.dispose(); dust.material.dispose();
       g._destructor();
       el.replaceChildren();
       graph.current = null;
@@ -593,7 +638,7 @@ export default function WikiGraph3D() {
           <span style={{ ['--c' as string]: sky.hub }}><i />테마</span>
           <span style={{ ['--c' as string]: sky.character }}><i />인물</span>
           <span style={{ ['--c' as string]: sky.lore }}><i />로어</span>
-          <span className="hint">미리보기 · 별 크기는 {themeName} 이야기에 얼마나 나오는지 · 선은 함께 나오는 이야기가 많을수록 밝고 굵음 · 면 아래가 이른 버전</span>
+          <span className="hint">미리보기 · 별 크기는 {themeName} 이야기에 얼마나 나오는지 · 선은 함께 나오는 이야기가 많을수록 밝고 굵음 · 아래가 이른 버전 · 고리는 큰 버전</span>
         </div>}
         <nav>
           {theme && gl && <Search nodes={theme.nodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />}

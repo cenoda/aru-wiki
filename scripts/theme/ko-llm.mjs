@@ -16,7 +16,7 @@ import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { CONTEXT, LLM_NAMES, REWRITE, isContextDependent, missingKorean, pointKey } from './ko-extra.mjs';
-import { namesLeft } from './names-left.mjs';
+import { namesLeft, shownRecords } from './names-left.mjs';
 
 const ROOT = new URL('../../', import.meta.url).pathname;
 const WORK = join(ROOT, '.cache/ko-llm');
@@ -104,7 +104,9 @@ if (!['tasks', 'import'].includes(cmd) || !README[step]) {
   console.error('usage: ko-llm.mjs tasks|import names|context [--parts 3] [--theme khaenriah]');
   process.exit(2);
 }
-const snaps = (await readJson(join(ROOT, `data/generated/snapshots-${opt.theme}.json`))).snapshots ?? [];
+// for names, also article paragraphs and timeline items (names-left.mjs shownRecords)
+const snaps = step === 'names' ? await shownRecords(opt.theme)
+  : (await readJson(join(ROOT, `data/generated/snapshots-${opt.theme}.json`))).snapshots ?? [];
 const llmNames = await readJson(LLM_NAMES);
 const context = await readJson(CONTEXT);
 

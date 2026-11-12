@@ -160,7 +160,9 @@ const FRAMES = {
   lore: '개요, 정체, 드러난 역사, 얽힌 인물과 세력, 떡밥과 수수께끼, 여담',
 };
 
-const PROMPT_VERSION = 4;
+const PROMPT_VERSION = 5;
+// a rewrite sometimes echoes the "#n [사실]" prefix it was shown
+const untag = (t) => t.replace(/^\s*(#\d+\s*)?\[(사실|해석|번역)\]\s*/, '');
 const SENT = { type: 'object', additionalProperties: false, required: ['text', 'interp'], properties: { text: { type: 'string' }, interp: { type: 'boolean' } } };
 const PARA = { type: 'object', additionalProperties: false, required: ['sentences', 'sources', 'quote'], properties: {
   sentences: { type: 'array', items: SENT }, sources: { type: 'array', items: { type: 'string' } }, quote: { type: 'string' } } };
@@ -178,7 +180,8 @@ later story: a reader must not learn anything the material does not say.
 Write it like a good Korean fan wiki, not a list of facts: important things get room, small details (clothes, minor
 errands) get one sentence or go to 여담. Tell it vividly: link events by cause and effect, bring out contrasts and ironies,
 and use what other pages [M..] and dialogue [Q..] say. Mark key phrases with **bold** (two or three per section at most).
-Plain -다 endings. Vividness must not add facts: no words like secretly, final, only, always, invaded, betrayed unless
+Plain -다 endings. Never write the labels themselves ([A1], C12, M3, W4 ...) in a sentence: say what is known,
+not which item says it (sources go in the sources field). Vividness must not add facts: no words like secretly, final, only, always, invaded, betrayed unless
 the material says so.
 Interpretation is welcome where the material supports it: comparisons, what several facts together suggest, why
 something matters. Mark such a sentence interp: true. It must follow from at least two facts in the paragraph's sources
@@ -336,6 +339,14 @@ async function one(e) {
       } catch (err) { ok = false; log(`verify failed ${key}: ${err.message.slice(0, 160)}`); }
     }));
   }
+  // a sentence that names a material label ("C12에 따르면") is sent to repair like a failed one
+  const LABEL = /(^|[^A-Za-z])\[?[ABCMQW]\d{1,2}\]?(?=[은는이가의와과도에]|\s|,|$)/;
+  if (ok) for (const it of items) it.sentences.forEach((x, i) => {
+    if (!LABEL.test(x.text)) return;
+    const v = it.target.verify ??= { unsupported: [], note: '' };
+    if (!v.unsupported.includes(i)) v.unsupported.push(i);
+    v.note = `${v.note ? `${v.note} ` : ''}#${i} names a material label; say it without the label.`.trim();
+  });
   // one repair round: failed sentences are rewritten from the checker's note and checked again
   const fails = [];
   if (ok) for (const it of items) for (const i of it.target.verify?.unsupported ?? []) fails.push({ it, i, s: it.sentences[i], note: it.target.verify.note });
@@ -343,7 +354,7 @@ async function one(e) {
   if (fails.length) {
     try {
       const r = (await askAny([writer], repairPrompt(e, input, fails), REPAIR_SCHEMA)).data; calls++;
-      const cand = r.items.map((x) => ({ f: fails[x.n], text: (x.text ?? '').trim() })).filter((x) => x.f && x.text);
+      const cand = r.items.map((x) => ({ f: fails[x.n], text: (x.text ?? '').trim() })).filter((x) => x.f && x.text && !LABEL.test(x.text));
       const vitems = cand.map((c) => ({ target: c, sentences: [{ text: c.text, tag: c.f.s.tag }], english: c.f.it.english }));
       const vb = [];
       for (let i = 0; i < vitems.length; i += VERIFY_BATCH * 2) vb.push(vitems.slice(i, i + VERIFY_BATCH * 2));
@@ -370,7 +381,7 @@ async function one(e) {
     const dropped = new Set(p.verify?.unsupported ?? []);
     return {
       section: p.section, status: statusOf(p, p.quote_found && p.sources.length > 0), note: p.verify?.note ?? null, quote: p.quote,
-      sentences: p.sentences.map((s, i) => ({ t_raw: s.text, interp: s.tag === '해석', dropped: dropped.has(i), ...(s.repaired ? { repaired: true } : {}) })),
+      sentences: p.sentences.map((s, i) => ({ t_raw: untag(s.text), interp: s.tag === '해석', dropped: dropped.has(i), ...(s.repaired ? { repaired: true } : {}) })),
       sources: p.sources.map((id) => sourceRef(byId.get(id))),
     };
   });
@@ -393,6 +404,7 @@ const shownPara = (p) => p.status === 'accepted' || p.status === 'trimmed';
 const save = async () => {
   for (const a of results.values()) {
     for (const p of a.paragraphs) for (const s of p.sentences) {
+      s.t_raw = untag(s.t_raw);
       s.t = ko(s.t_raw);
       if (s.polish?.from === s.t) s.t = s.polish.text;
     }

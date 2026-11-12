@@ -4,7 +4,7 @@
 import { spawn } from 'node:child_process';
 import Anthropic from '@anthropic-ai/sdk';
 import { existsSync, readFileSync } from 'node:fs';
-import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { appendFile, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -34,6 +34,15 @@ const TOOLS = {
     if (res.is_error) throw new Error(`claude: ${res.result}`);
     return { data: res.structured_output ?? JSON.parse(res.result), cost: res.total_cost_usd ?? null };
   },
+  // Claude Code on the user's subscription, Sonnet (not 'sonnet' below, which falls back to the paid API)
+  async 'claude-sonnet'(prompt, schema, cwd) {
+    const out = await run('claude', ['-p', '--model', 'claude-sonnet-5-5', '--output-format', 'json', '--json-schema', JSON.stringify(schema),
+      '--tools', '', '--strict-mcp-config', '--no-session-persistence', '--setting-sources', ''], prompt, cwd);
+    const res = JSON.parse(out);
+    if (res.is_error) throw new Error(`claude: ${res.result}`);
+    return { data: res.structured_output ?? JSON.parse(res.result), cost: null,
+      usage: { in: (res.usage?.input_tokens ?? 0) + (res.usage?.cache_read_input_tokens ?? 0) + (res.usage?.cache_creation_input_tokens ?? 0), out: res.usage?.output_tokens ?? null } };
+  },
   async codex(prompt, schema, cwd) {
     const schemaFile = join(cwd, 'schema.json'), outFile = join(cwd, 'out.json');
     await writeFile(schemaFile, JSON.stringify(schema));
@@ -49,6 +58,9 @@ const TOOLS = {
       '--output-schema', schemaFile, '-o', outFile, '-'], prompt, cwd);
     return { data: JSON.parse(await readFile(outFile, 'utf8')), cost: null };
   },
+  // Ollama Cloud models through the local ollama daemon (signed in with `ollama signin`; no key here).
+  // Ollama does not train on inputs (docs/rights-risk.md 2.4); Pro allows 3 requests at a time.
+  deepseek: (prompt, schema) => ollama('deepseek-v4.1-flash:cloud', prompt, schema),
   // Grok Build (xAI) headless, single turn, no tools and no web (docs/rights-risk.md 2.4: training opted out).
   grok: (prompt, schema, cwd) => grok('grok-4.7', 'low', prompt, schema, cwd),
   // Muse Code subscription models. Ember is cheap enough to run freely; Spark is the larger one.
@@ -135,6 +147,27 @@ const TOOLS = {
     return { data: checkShape(parseJsonReply(text), schema), cost: null };
   },
 };
+// Ollama Cloud sometimes answers 500/502/503 for a moment: two more tries, 20 s and 60 s later
+async function ollama(model, prompt, schema) {
+  for (const wait of [20, 60, null]) {
+    try { return await ollamaOnce(model, prompt, schema); } catch (e) {
+      if (wait === null || !/^ollama 5\d\d/.test(e.message)) throw e;
+      await new Promise((r) => setTimeout(r, wait * 1000));
+    }
+  }
+}
+async function ollamaOnce(model, prompt, schema) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
+  try {
+    const r = await fetch('http://127.0.0.1:11434/api/chat', { method: 'POST', signal: ctrl.signal,
+      body: JSON.stringify({ model, stream: false, format: schema, messages: [{ role: 'user', content:
+        `${prompt}\n\nReply with one JSON object only, no prose and no code fence, matching this JSON Schema:\n${JSON.stringify(schema)}` }] }) });
+    if (!r.ok) throw new Error(`ollama ${r.status}: ${(await r.text()).slice(0, 300)}`);
+    const res = await r.json();
+    return { data: checkShape(parseJsonReply(res.message.content), schema), cost: null, usage: { in: res.prompt_eval_count ?? null, out: res.eval_count ?? null } };
+  } finally { clearTimeout(timer); }
+}
 async function grok(model, effort, prompt, schema, cwd) {
   const promptFile = join(cwd, 'prompt.txt');
   await writeFile(promptFile, prompt);
@@ -142,7 +175,9 @@ async function grok(model, effort, prompt, schema, cwd) {
     '--disable-web-search', '--tools', '', '--reasoning-effort', effort, '--cwd', cwd], '', cwd);
   const res = JSON.parse(out.slice(out.indexOf('{')));
   if (res.is_error || !res.structuredOutput) throw new Error(`grok: ${String(res.result ?? res.error ?? out).slice(0, 300)}`);
-  return { data: checkShape(res.structuredOutput, schema), cost: null };
+  const u = res.usage ?? res.stats ?? {};
+  return { data: checkShape(res.structuredOutput, schema), cost: null,
+    usage: { in: u.input_tokens ?? u.prompt_tokens ?? null, out: u.output_tokens ?? u.completion_tokens ?? null, raw: res.usage ? undefined : Object.keys(res).join(',') } };
 }
 // Contributor mode is always off. A Muse Code subscription defaults to it (Meta trains on the
 // prompts and files sent, ToS §3.3/§6.1) and the saved choice is per machine, so every run says
@@ -248,14 +283,14 @@ export async function ask(tool, prompt, schema) {
 
 // ---------- several tools at once ----------
 // Which company each tool's model comes from: a writer's text is checked by another company's model.
-export const COMPANY = { claude: 'anthropic', 'sonnet-api': 'anthropic', haiku: 'anthropic', sonnet: 'anthropic', 'agy-sonnet': 'anthropic',
-  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg' };
+export const COMPANY = { claude: 'anthropic', 'claude-sonnet': 'anthropic', 'sonnet-api': 'anthropic', haiku: 'anthropic', sonnet: 'anthropic', 'agy-sonnet': 'anthropic',
+  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg', deepseek: 'deepseek' };
 const slots = new Map();
 /** At most `limit` calls of one tool at a time (LLM_SLOTS="grok=6,flash-medium=4" overrides). */
 function slotOf(tool) {
   if (!slots.has(tool)) {
     const env = Object.fromEntries((process.env.LLM_SLOTS ?? '').split(',').filter(Boolean).map((x) => x.split('=')));
-    slots.set(tool, { limit: Number(env[tool] ?? 4), busy: 0, waiting: [] });
+    slots.set(tool, { limit: Number(env[tool] ?? (tool === 'deepseek' ? 3 : 4)), busy: 0, waiting: [] });
   }
   return slots.get(tool);
 }
@@ -265,6 +300,7 @@ const busy = new Map(); // tool → time until which it is set aside after a quo
  * `avoid`. A tool that fails with a quota or rate error is set aside for 10 minutes and the call
  * moves to another. Returns { data, tool }.
  */
+const USAGE_LOG = new URL('../../.cache/llm-usage.jsonl', import.meta.url).pathname;
 export async function askAny(tools, prompt, schema, { avoid = [] } = {}) {
   const usable = tools.filter((t) => TOOLS[t] && !avoid.includes(COMPANY[t]));
   if (!usable.length) throw new Error(`no tool left in ${tools} (avoiding ${avoid})`);
@@ -284,7 +320,11 @@ export async function askAny(tools, prompt, schema, { avoid = [] } = {}) {
       if (!tryTake()) for (const t of open) slotOf(t).waiting.push(tryTake);
     });
     try {
+      const t0 = Date.now();
       const r = await ask(tool, prompt, schema);
+      // one line per call, for token and speed figures (.cache/llm-usage.jsonl)
+      appendFile(USAGE_LOG, `${JSON.stringify({ at: new Date().toISOString(), tool, ms: Date.now() - t0, prompt_chars: prompt.length,
+        out_chars: JSON.stringify(r.data).length, ...(r.usage ?? {}) })}\n`).catch(() => {});
       return { ...r, tool };
     } catch (e) {
       lastErr = e;

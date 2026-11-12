@@ -158,8 +158,10 @@ if (existsSync(ART)) {
     if (!shown.length) continue;
     const src = sourceTable();
     const para = (p) => ({ s: p.sentences.filter((x) => !x.dropped).map((x) => (x.interp ? { t: x.t, i: 1 } : { t: x.t })), r: [...new Set(p.sources.map(src.ref))] });
+    const usedLines = new Set(); // one dialogue line once per article (two sections may pick the same)
     const box = (h) => {
-      const b = a.quote_boxes.find((x) => x.section === h && x.status === 'accepted');
+      const b = a.quote_boxes.find((x) => x.section === h && x.status === 'accepted' && !usedLines.has(x.en));
+      if (b) usedLines.add(b.en);
       return b ? { t: b.t, en: b.en, by: b.speaker_ko ?? b.speaker, r: src.ref(b.source) } : undefined;
     };
     const lead = shown.find((p) => p.section === null);

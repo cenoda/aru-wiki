@@ -18,7 +18,7 @@ import { CURRENT, FULL, parseRevision, streamDump } from './dump.mjs';
 import { pageUrl } from './client.mjs';
 import { cleanKo, readTables } from './ko-names.mjs';
 import { plainText } from './wikitext.mjs';
-import { namesLeft } from '../theme/names-left.mjs';
+import { namesLeft, shownRecords } from '../theme/names-left.mjs';
 
 const ROOT = new URL('../../', import.meta.url).pathname;
 const DUMP = join(ROOT, '.cache/dump', CURRENT);
@@ -214,7 +214,7 @@ ${without.map((r) => `| ${r.id} | ${cell(r.forms.join(' / '))} | ${r.n} | ${r.pa
 if (import.meta.url === `file://${process.argv[1]}`) {
   const theme = process.argv[2] ?? 'khaenriah';
   const log = (m) => console.error(`[ko-candidates] ${m}`);
-  const snaps = JSON.parse(await readFile(join(ROOT, `data/generated/snapshots-${theme}.json`), 'utf8')).snapshots;
+  const snaps = await shownRecords(theme);
   const pairs = await dumpPairs({ log });
   log(`${pairs.length} en/ko rows in the dump`);
   const left = namesLeft(snaps);

@@ -23,3 +23,20 @@ export function namesLeft(snapshots) {
   }
   return new Map([...left].sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0])));
 }
+
+/**
+ * Everything of a theme shown on screen, as snapshot-like records for namesLeft(): snapshot points,
+ * article paragraphs (accepted or trimmed) and timeline items. Missing files count as empty.
+ */
+export async function shownRecords(theme) {
+  const { readFile } = await import('node:fs/promises');
+  const gen = new URL(`../../data/generated/`, import.meta.url).pathname;
+  const read = async (f) => { try { return JSON.parse(await readFile(gen + f, 'utf8')); } catch (e) { if (e.code === 'ENOENT') return {}; throw e; } };
+  const [s, a, r] = await Promise.all([read(`snapshots-${theme}.json`), read(`articles-${theme}.json`), read(`reveals-${theme}.json`)]);
+  return [
+    ...(s.snapshots ?? []),
+    ...(a.articles ?? []).map((x) => ({ node: x.node, points: x.paragraphs.filter((p) => ['accepted', 'trimmed'].includes(p.status)).map((p) => ({
+      status: 'accepted', text: p.sentences.filter((y) => !y.dropped).map((y) => y.t).join(' '), quote: '', latin_left: p.latin_left ?? [] })) })),
+    ...(r.reveals ?? []).map((x) => ({ node: x.node, points: x.items.map((it) => ({ ...it, latin_left: it.latin_left ?? [] })) })),
+  ];
+}

@@ -60,6 +60,10 @@ export function makeLocalizer(pairs, titles = [], misspellings = []) {
     const bare = en.replace(/^The /, '');
     if (bare !== en && !map.has(bare)) map.set(bare, ko);
   }
+  // and "Tsaritsa" is also written "The Tsaritsa": without this the phrase stays English whole
+  for (const [en, ko] of [...map]) {
+    if (!/^The /.test(en) && /^[A-Z]/.test(en) && !map.has(`The ${en}`)) map.set(`The ${en}`, ko);
+  }
   // one-word quest titles ("Paradise", "Hell") are ordinary words too: only inside 「」.
   // Titles of two words or more are also replaced bare ("Windblume's Breath").
   const titled = titles.filter(([en, ko]) => en && ko && en !== ko);

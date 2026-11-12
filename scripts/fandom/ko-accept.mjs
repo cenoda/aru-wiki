@@ -18,6 +18,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
+import { isContextDependent } from '../theme/ko-extra.mjs';
 
 const ROOT = new URL('../../', import.meta.url).pathname;
 const MANUAL = join(ROOT, 'data/manual/ko-names.json');
@@ -32,9 +33,6 @@ export function parseSpec(spec) {
   if (!/[가-힣]/.test(ko)) throw new Error(`no Hangul in the Korean name: ${spec}`);
   return { forms, ko };
 }
-
-// One Korean name would be wrong for part of the sentences (docs/ko-names-plan.md).
-const CONTEXT_DEPENDENT = new Set(['archon']);
 
 const squash = (s) => s.replace(/\s+/g, '');
 
@@ -61,7 +59,7 @@ export function accept(manual, candidates, specs, { play, maintainer, urls = [],
   const added = [], skipped = [];
   for (const spec of specs) {
     const { forms, ko } = parseSpec(spec);
-    const ctx = forms.find((f) => CONTEXT_DEPENDENT.has(f.replace(/^The /, '').replace(/s$/, '').toLowerCase()));
+    const ctx = forms.find(isContextDependent);
     if (ctx && !force) throw new Error(`${ctx}: its Korean depends on the sentence (마신 / 집정관, docs/ko-names-plan.md); not put in ko-names.json`);
     const ev = evidence(candidates, forms, ko);
     const sources = [

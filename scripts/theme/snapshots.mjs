@@ -27,6 +27,7 @@ import { parseArgs } from 'node:util';
 import { FULL, loadRevisionIndex, parseRevision, streamDump, versionCutoff } from '../fandom/dump.mjs';
 import { normalize } from '../recommend/excerpt.mjs';
 import { latinNames, makeLocalizer } from '../recommend/ko-text.mjs';
+import { contextLocalizer, llmNamePairs } from './ko-extra.mjs';
 import { namesLeft } from './names-left.mjs';
 import { renderPage, sentences } from './render.mjs';
 
@@ -172,23 +173,33 @@ async function extendNames(texts) {
     && (same(n.toLowerCase(), v.page.replace(/ \(.*\)$/, '').toLowerCase()) || ownRow(n, v)))).map(([n, v]) => [n, v.ko]);
   // One replacer makes the longest name win across both sources: "Il Dottore" before "Dottore",
   // and an existing "Hydro Archon" before a newly found "Hydro".
-  const both = makeLocalizer([...namePairs, ...extra], titlePairs, misspellingPairs);
+  // LLM-written names (data/manual/ko-names-llm.json) only fill what no source gives
+  const have = new Set([...namePairs, ...extra].map(([n]) => n));
+  const llm = (await llmNamePairs()).filter(([n]) => !have.has(n));
+  const both = makeLocalizer([...namePairs, ...extra, ...llm], titlePairs, misspellingPairs);
   // A phrase that cannot be put into Korean whole stays English whole: "God of the Woods" must
   // not become "마신 of the Woods", nor "Dendro Archon" "풀 Archon".
+  // A phrase inside a longer known name in the same text is left to that name:
+  // "Analyse Cardinale" in "Oratrice Mecanique d'Analyse Cardinale" (latinNames stops at "d'").
+  const known = [...new Set([...namePairs, ...extra, ...llm, ...titlePairs].map(([n]) => n).filter((n) => n && n.includes(' ')))];
   ko = (t) => {
     let text = prep(t);
     const kept = [];
+    const longer = known.filter((n) => text.includes(n));
     for (const ph of [...new Set(latinNames(text))].sort((a, b) => b.length - a.length)) {
       if (!ph.includes(' ') || !latinNames(both(ph)).length) continue;
+      if (longer.some((n) => n.length > ph.length && n.includes(ph))) continue;
       text = text.split(ph).join(`\u0002${kept.length}\u0002`);
       kept.push(ph);
     }
     return both(text).replace(/\u0002(\d+)\u0002/g, (_, i) => kept[Number(i)]);
   };
+  log(`names: ${llm.length} written by an LLM (ko-names-llm.json)`);
   log(`names: ${extra.length} more from the dump (${extra.map(([n, k]) => `${n}=${k}`).join(', ')})`);
 }
+const inContext = await contextLocalizer(); // per-sentence choices (ko-context.json), after all names
 const relocalize = (r) => {
-  for (const p of r.points) { p.text = ko(p.text_raw); p.latin_left = latinNames(p.text); }
+  for (const p of r.points) { p.text = inContext(ko(p.text_raw), p.text_raw); p.latin_left = latinNames(p.text); }
   const accepted = (role) => r.points.filter((p) => p.role === role && p.status === 'accepted');
   r.slides = [{ type: 'SUMMARY', headline: accepted('summary')[0]?.text ?? null, bullets: accepted('point').map((p) => p.text) }];
 };

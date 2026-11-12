@@ -62,7 +62,8 @@
 - [x] 화면: 테마 밖 문서는 검색·글 속 링크·`/wiki/<이름>`으로 열린다(`data/runtime/pages.json`). 3D 지도에는 켄리아 문서만. 대사 상자에 영어 원문을 작게 붙인다(사용자 2026-11-12).
 - 모델(사용자 2026-11-12): 한도 있는 모델 먼저(Kimi), 프로바이더 DeepSeek Flash 12·Pro 8·GLM 4 동시, 생각 켬. 검증은 Sonnet→Codex→Grok(MiMo·Kimi는 검증이 약해 안 씀). 섹션도 빈 자리 모델이 쓴다.
 - [ ] 프로바이더 연결이 응답 없이 멈추면 호출 하나가 한 시간 넘게 묶인다(20분 제한 × 재시도). 스트림 무응답 감지가 필요하다.
-- [ ] 남은 영어: 문맥에 따라 다른 말(Chapter, Leader, Archon 등) 단계(`ko-llm.mjs tasks context`)가 아직 스냅샷만 읽는다. 본문에도 붙여야 한다.
+- [x] 남은 영어(2026-11-12): 전체 위키 259개 문서의 보이는 문단에 남은 영어 3,421번 → 475번. 이름 976개를 에이전트가 번역해 `ko-names-llm.json`에 넣고(덤프 후보 우선), 문장별 단계(`ko-llm.mjs tasks context`)가 이제 본문 문장(키는 문장의 t_raw)과 타임라인도 읽는다. 문장별 답 878건(Master 다시 고른 52건 포함)을 `ko-context.json`에 넣었다. Master는 문장마다(마스터·단장·스승님·도련님) 정해 남은 문장 74개 → 0개. Mr./Dr.는 마침표까지 바꾼다.
+  - [ ] 남은 475번: 영어 인용 조각(Hail, Let the, May the Mighty God), 제목 조각(Ignition Teaser, Name Forged), Mt.(어순이 바뀌어 낱말만 못 바꿈), S-Rank·NPC·Lv(영어로 둠), Luna, Carp's Rest(금락정?) 등. 문장 전체 고쳐 쓰기(`tasks rewrite`)를 본문에도 붙이면 더 줄일 수 있다.
 - [ ] 나머지 약 1,280개 문서. 100개에 약 3시간(멈춤·재시작 포함).
 
 ### 독자가 쓰는 글 (`feat/reader-edits` 브랜치, 2026-11-12)

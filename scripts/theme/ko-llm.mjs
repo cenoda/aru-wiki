@@ -6,7 +6,8 @@
 //   node scripts/theme/ko-llm.mjs tasks names [--parts 3] [--theme khaenriah]
 //   node scripts/theme/ko-llm.mjs import names
 //   node scripts/theme/snapshots.mjs khaenriah --write --only none      (apply the names)
-//   node scripts/theme/ko-llm.mjs tasks context [--parts 3]            (what is still English, per sentence)
+//   node scripts/theme/ko-llm.mjs tasks context [--parts 3]            (what is still English, per sentence:
+//                                                                       snapshot points, article sentences, timeline items)
 //   node scripts/theme/ko-llm.mjs import context
 //   node scripts/theme/snapshots.mjs khaenriah --write --only none
 //   node scripts/theme/ko-llm.mjs tasks rewrite [--parts 3]            (sentences still not clean Korean)
@@ -17,6 +18,7 @@ import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { CONTEXT, LLM_NAMES, REWRITE, isContextDependent, missingKorean, pointKey } from './ko-extra.mjs';
 import { namesLeft, shownRecords } from './names-left.mjs';
+import { latinNames } from '../recommend/ko-text.mjs';
 
 const ROOT = new URL('../../', import.meta.url).pathname;
 const WORK = join(ROOT, '.cache/ko-llm');
@@ -104,8 +106,27 @@ if (!['tasks', 'import'].includes(cmd) || !README[step]) {
   console.error('usage: ko-llm.mjs tasks|import names|context [--parts 3] [--theme khaenriah]');
   process.exit(2);
 }
-// for names, also article paragraphs and timeline items (names-left.mjs shownRecords)
+// Article sentences as points for the context step. The key is the sentence's t_raw, as articles.mjs
+// looks it up (inContext(ko(s.t_raw), s.t_raw)); words are what is English before the clean-up rewrite
+// (polish.from), since the per-sentence choices are applied to that text, and still English on screen.
+async function articleSentences(theme) {
+  const a = await readJson(join(ROOT, `data/generated/articles-${theme}.json`));
+  return (a.articles ?? []).map((x) => ({ node: x.node, points: x.paragraphs.filter((p) => ['accepted', 'trimmed'].includes(p.status))
+    .flatMap((p) => p.sentences.filter((s) => !s.dropped).map((s) => {
+      const before = s.polish?.text === s.t ? s.polish.from : s.t;
+      const shown = new Set(latinNames(s.t));
+      return { status: 'accepted', text: s.t, text_raw: s.t_raw, quote: p.quote ?? '', latin_left: latinNames(before).filter((w) => shown.has(w)) };
+    })) }));
+}
+// for names, also article paragraphs and timeline items (names-left.mjs shownRecords); for context,
+// snapshot points, article sentences and timeline items (all keyed by their own text_raw)
 const snaps = step === 'names' ? await shownRecords(opt.theme)
+  : step === 'context' ? [
+    ...(await readJson(join(ROOT, `data/generated/snapshots-${opt.theme}.json`))).snapshots ?? [],
+    ...await articleSentences(opt.theme),
+    ...((await readJson(join(ROOT, `data/generated/reveals-${opt.theme}.json`))).reveals ?? [])
+      .map((x) => ({ node: x.node, points: x.items.map((it) => ({ status: 'accepted', text: it.text, text_raw: it.text_raw, quote: it.quote ?? '', latin_left: it.latin_left ?? [] })) })),
+  ]
   : (await readJson(join(ROOT, `data/generated/snapshots-${opt.theme}.json`))).snapshots ?? [];
 const llmNames = await readJson(LLM_NAMES);
 const context = await readJson(CONTEXT);
@@ -134,9 +155,11 @@ if (cmd === 'tasks' && step === 'context') {
   const byKey = new Map();
   for (const r of snaps) for (const p of r.points) {
     if (p.status !== 'accepted') continue;
-    const words = [...new Set(p.latin_left)].filter((w) => !keep.has(w));
+    // a name with one Korean everywhere (kind name) is swapped before this step, even if the text read here predates it
     const key = pointKey(p.text_raw);
-    if (!words.length || context[key] || byKey.has(key)) continue;
+    // a sentence answered before may still have a word left (a name changed to context later)
+    const words = [...new Set(p.latin_left)].filter((w) => !keep.has(w) && llmNames[w]?.kind !== 'name' && !(w in (context[key] ?? {})));
+    if (!words.length || byKey.has(key)) continue;
     byKey.set(key, { key, node: r.ko ?? r.node, text: p.text, quote: p.quote, words });
   }
   // keep a node's sentences together so one agent sees them side by side
@@ -218,7 +241,7 @@ if (cmd === 'import' && step === 'context') {
         if (!hasHangul(ko) || hasLatin(ko)) { errors.push(`${file}: ${key}: ${w} = "${ko}"`); continue; }
         ok[w] = ko.trim();
       }
-      if (Object.keys(ok).length) { data[key] = ok; added++; }
+      if (Object.keys(ok).length) { data[key] = { ...data[key], ...ok }; added++; }
       asked.delete(key);
     }
     if (asked.size) errors.push(`${file}: ${asked.size} sentences with no answer`);

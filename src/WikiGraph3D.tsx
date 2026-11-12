@@ -26,6 +26,7 @@ import snapshotsUrl from '../data/runtime/snapshots-khaenriah.json?url';
 import { ReportBox } from './ReportBox';
 import { useLinker } from './Linked';
 import { Search } from './Search';
+import { Logo } from './Logo';
 import { versions } from './data';
 import {
   idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, revisionUrl, snapshotAt, type Snapshots, type Theme, withParticle,
@@ -589,7 +590,7 @@ export default function WikiGraph3D() {
   return (
     <div className={`site graph-page w3d${night ? ' night' : ' day'}`}>
       <div className="wrap"><header>
-        <a className="logo" href="./">aru.wiki</a>
+        <a className="logo" href="./"><Logo />aru.wiki</a>
         {article ? (
           <button type="button" className="w3d-back" onClick={closeArticle}>← 3D 지도</button>
         ) : !gl ? null : <div className="legend" aria-label="범례">
@@ -615,7 +616,7 @@ export default function WikiGraph3D() {
         {theme && !gl && (
           // Without WebGL there is no chart: the front page is just the search box, like an encyclopedia's portal.
           <div className="w3d-portal">
-            <p className="w3d-portal-logo">aru.wiki</p>
+            <p className="w3d-portal-logo"><Logo />aru.wiki</p>
             <p className="w3d-portal-sub">원신 이야기 위키 · {themeName} 테마</p>
             <Search big autoFocus nodes={theme.nodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />
             <p className="w3d-portal-note">이 브라우저에서는 3D 지도를 그릴 수 없어(WebGL을 쓸 수 없음) 검색 화면을 보여 줍니다. <a href={hrefOf(theme.page)} onClick={(e) => { e.preventDefault(); openArticle(theme.page); }}>{themeName}</a> 문서에서 시작해도 됩니다.</p>

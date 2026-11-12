@@ -123,3 +123,53 @@ for (const s of snaps) {
 }
 for (const list of Object.values(byPage)) list.sort((a, b) => a.from - b.from);
 await write('snapshots-khaenriah.json', byPage);
+
+// ---------- article bodies of the theme's pages (scripts/theme/articles.mjs) ----------
+// One file per page (data/runtime/articles/<slug>.json), fetched when its article opens: all of
+// them together are several MB. Only paragraphs whose sentences passed the second model's check
+// (accepted, or trimmed of the sentences it did not find in the source) are kept.
+import { existsSync } from 'node:fs';
+import { rm } from 'node:fs/promises';
+const ART = new URL('data/generated/articles-khaenriah.json', root);
+const artDir = new URL('articles/', outDir);
+await rm(artDir, { recursive: true, force: true });
+await mkdir(artDir, { recursive: true });
+if (existsSync(ART)) {
+  const stamp = new Map(snaps.flatMap((s) => s.input.map((i) => [i.revision, (i.timestamp ?? '').slice(0, 10)])));
+  const perPage = {};
+  for (const a of JSON.parse(await readFile(ART, 'utf8')).articles) {
+    const shown = a.paragraphs.filter((p) => (p.status === 'accepted' || p.status === 'trimmed') && p.text.trim());
+    if (!shown.length) continue;
+    const sources = [];
+    const ref = (s) => {
+      const key = `${s.page}|${s.revision}|${s.section ?? ''}`;
+      let i = sources.findIndex((x) => x.key === key);
+      if (i < 0) i = sources.push({ key, page: s.page, revision: s.revision, section: s.section ?? null, date: stamp.get(s.revision) ?? '' }) - 1;
+      return i;
+    };
+    const para = (p) => ({ t: p.text, r: [...new Set(p.sources.map(ref))] });
+    const lead = shown.find((p) => p.section === null);
+    const sections = [];
+    for (const p of shown) {
+      if (p.section === null) continue;
+      const last = sections.at(-1);
+      if (last?.h === p.section) last.p.push(para(p)); else sections.push({ h: p.section, p: [para(p)] });
+    }
+    (perPage[a.node] ??= []).push({ from: order.get(a.from_version), lead: lead ? para(lead) : null, sections, sources: sources.map(({ key, ...x }) => x) });
+  }
+  const slugs = new Set();
+  let total = 0;
+  for (const [page, list] of Object.entries(perPage)) {
+    list.sort((a, b) => a.from - b.from);
+    const slug = articleSlug(page);
+    if (slugs.has(slug)) throw new Error(`article slug ${slug} used twice`);
+    slugs.add(slug);
+    const text = JSON.stringify(list);
+    total += text.length;
+    await writeFile(new URL(`${slug}.json`, artDir), text);
+  }
+  console.log(`data/runtime/articles/ ${slugs.size} pages, ${(total / 1024).toFixed(0)} KB`);
+}
+/** the file name of a page's articles; src/lore.ts articleSlug must match */
+function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
+

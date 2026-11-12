@@ -31,3 +31,27 @@ export const withParticle = (word: string) => {
 };
 /** The latest snapshot written for the version (order) or before it. */
 export const snapshotAt = (list: Snapshot[] | undefined, order: number) => (list ?? []).filter((s) => s.from <= order).at(-1) ?? null;
+
+/** A paragraph of an article and its footnotes (indexes into the article's sources). */
+export interface ArtPara { t: string; r: number[] }
+/** A full article body as the wiki described the page at a version (scripts/theme/articles.mjs), unreviewed. */
+export interface Article {
+  from: number;
+  lead: ArtPara | null;
+  sections: { h: string; p: ArtPara[] }[];
+  sources: Snapshot['sources'];
+}
+/** The file name of a page's articles; scripts/build-runtime-data.mjs articleSlug must match. */
+export const articleSlug = (page: string) => page.replace(/[^A-Za-z0-9]+/g, '_');
+// one file per page, fetched when its article opens
+const articleFiles = import.meta.glob('../data/runtime/articles/*.json', { query: '?url', import: 'default' }) as Record<string, () => Promise<string>>;
+/** The page's articles in version order; [] when it has none. */
+export async function loadArticles(page: string): Promise<Article[]> {
+  const file = articleFiles[`../data/runtime/articles/${articleSlug(page)}.json`];
+  if (!file) return [];
+  const r = await fetch(await file());
+  if (!r.ok) throw new Error(String(r.status));
+  return r.json();
+}
+/** The latest article written for the version (order) or before it. */
+export const articleAt = (list: Article[] | undefined, order: number) => (list ?? []).filter((a) => a.from <= order).at(-1) ?? null;

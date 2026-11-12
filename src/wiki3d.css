@@ -36,5 +36,41 @@
 .site.w3d .w3d-back { padding: 4px 10px; font-size: .9rem; background: transparent; color: var(--band-text);
   box-shadow: inset 0 0 0 1px rgba(236,229,216,.3); }
 .site.w3d .w3d-back:hover { box-shadow: inset 0 0 0 1px rgba(236,229,216,.7); }
-.site.w3d .w3d-nogl { display: block; overflow: auto; padding: 24px; color: var(--text); }
-.site.w3d .w3d-nogl ul { columns: 3 160px; margin: 8px 0 0; padding-left: 1.2em; }
+
+/* without WebGL: the front page is a search box in the middle (WikiGraph3D w3d-portal) */
+.site.w3d .w3d-portal { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 10px; padding: 24px 16px 18vh; background: var(--bg); color: var(--text); text-align: center; }
+.site.w3d .w3d-portal-logo { margin: 0; font-size: clamp(2.2rem, 8vw, 3.4rem); font-weight: 600; line-height: 1.1; letter-spacing: .02em; }
+.site.w3d .w3d-portal-sub { margin: 0 0 14px; color: var(--muted); }
+.site.w3d .w3d-portal-note { max-width: 34em; margin: 14px 0 0; color: var(--muted); font-size: .85rem; line-height: 1.6; }
+
+/* inline links to other articles, in the card and in articles (Linked.tsx) */
+.site a.wl { color: var(--accent); text-decoration: none; }
+.site a.wl:hover { text-decoration: underline; }
+
+/* article search (Search.tsx) */
+.search { position: relative; }
+.site .search input[type=search] { flex: none; width: 11em; padding: 5px 10px; font: inherit; font-size: .9rem; color: var(--band-text); background: rgba(255,255,255,.08);
+  border: 1px solid rgba(236,229,216,.3); border-radius: 2px; }
+.site .search input[type=search]::placeholder { color: rgba(236,229,216,.6); }
+.site .search input[type=search]:focus { outline: none; border-color: rgba(236,229,216,.8); width: 14em; }
+.search.big { width: min(560px, 100%); }
+.site .search.big input[type=search] { width: 100%; padding: 12px 16px; font-size: 1.05rem; color: var(--text); background: var(--card);
+  border: 1px solid var(--line); border-radius: 3px; box-shadow: 0 2px 10px rgba(20,24,40,.08); }
+.site .search.big input[type=search]::placeholder { color: var(--muted); }
+.site .search.big input[type=search]:focus { border-color: var(--accent); width: 100%; }
+.search-list { position: absolute; z-index: 20; top: calc(100% + 4px); left: 0; min-width: 100%; width: max-content; max-width: min(420px, 90vw);
+  margin: 0; padding: 4px 0; list-style: none; text-align: left; background: var(--card); color: var(--text);
+  border: 1px solid var(--line); border-radius: 2px; box-shadow: 0 8px 20px rgba(20,24,40,.15); }
+.search.big .search-list { width: 100%; max-width: none; }
+.search-list a { display: flex; align-items: baseline; gap: 10px; padding: 6px 12px; color: inherit; text-decoration: none; opacity: 1 !important; }
+.search-list a span { color: var(--muted); font-size: .8rem; }
+.search-list [aria-selected='true'] a { background: var(--accent-soft); }
+.search-none { padding: 6px 12px; color: var(--muted); font-size: .9rem; }
+@media (max-width: 640px) {
+  .site.w3d header nav { width: 100%; gap: 8px; flex-wrap: wrap; }
+  .site.w3d header .search { order: 9; flex: 1 0 100%; }
+  .site.w3d header .search input[type=search], .site.w3d header .search input[type=search]:focus { width: 100%; }
+}
+/* the long legend hint gives way to the search box instead of pushing the header onto two lines */
+@media (max-width: 1500px) { .site.w3d .legend .hint { display: none; } }

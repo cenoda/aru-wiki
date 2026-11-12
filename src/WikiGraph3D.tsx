@@ -24,6 +24,8 @@ import SpriteText from 'three-spritetext';
 import themeUrl from '../data/runtime/theme-khaenriah.json?url';
 import snapshotsUrl from '../data/runtime/snapshots-khaenriah.json?url';
 import { ReportBox } from './ReportBox';
+import { useLinker } from './Linked';
+import { Search } from './Search';
 import { versions } from './data';
 import {
   idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, revisionUrl, snapshotAt, type Snapshots, type Theme, withParticle,
@@ -579,6 +581,9 @@ export default function WikiGraph3D() {
   const themeName = hubNode ? nameOf(hubNode) : '테마';
   // the latest snapshot written for the chosen version or before it
   const snap = sel && snapshots ? snapshotAt(snapshots[sel.id], vIdx) : null;
+  const hrefOf = (p: string) => urlFor(p, vIdx);
+  const link = useLinker(theme?.nodes, vIdx, sel?.id ?? null, hrefOf, openArticle);
+  const cardSeen = new Set<string>();
   const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.theme_units - a.theme_units) : [];
 
   return (
@@ -587,13 +592,14 @@ export default function WikiGraph3D() {
         <a className="logo" href="./">aru.wiki</a>
         {article ? (
           <button type="button" className="w3d-back" onClick={closeArticle}>← 3D 지도</button>
-        ) : <div className="legend" aria-label="범례">
+        ) : !gl ? null : <div className="legend" aria-label="범례">
           <span style={{ ['--c' as string]: sky.hub }}><i />테마</span>
           <span style={{ ['--c' as string]: sky.character }}><i />인물</span>
           <span style={{ ['--c' as string]: sky.lore }}><i />로어</span>
           <span className="hint">미리보기 · 별 크기는 {themeName} 이야기에 얼마나 나오는지 · 선은 함께 나오는 이야기가 많을수록 밝고 굵음 · 면 아래가 이른 버전</span>
         </div>}
         <nav>
+          {theme && gl && <Search nodes={theme.nodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />}
           <a className="band" href="?view=quests">임무 지도</a>
           <VersionPicker order={vIdx} onChange={setVIdx} />
         </nav>
@@ -607,12 +613,12 @@ export default function WikiGraph3D() {
       <div className={`w3d-stage${article ? ' behind' : ''}`} ref={host} aria-hidden={article ? true : undefined}>
         {!theme && <p className="w3d-status">{failed ? '테마 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
         {theme && !gl && (
-          <div className="w3d-status w3d-nogl">
-            <p>이 브라우저에서는 3D 화면을 그릴 수 없습니다(WebGL을 쓸 수 없음).</p>
-            <p><a href="?view=quests">임무 지도</a>를 보거나, 아래 문서를 바로 열 수 있습니다.</p>
-            <ul>{[...theme.nodes].sort((a, b) => Number(b.hub) - Number(a.hub) || b.theme_units - a.theme_units)
-              .filter((n) => n.revealed <= vIdx)
-              .map((n) => <li key={n.id}><a href={urlFor(n.id, vIdx)} onClick={(e) => { e.preventDefault(); openArticle(n.id); }}>{nameOf(n)}</a></li>)}</ul>
+          // Without WebGL there is no chart: the front page is just the search box, like an encyclopedia's portal.
+          <div className="w3d-portal">
+            <p className="w3d-portal-logo">aru.wiki</p>
+            <p className="w3d-portal-sub">원신 이야기 위키 · {themeName} 테마</p>
+            <Search big autoFocus nodes={theme.nodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />
+            <p className="w3d-portal-note">이 브라우저에서는 3D 지도를 그릴 수 없어(WebGL을 쓸 수 없음) 검색 화면을 보여 줍니다. <a href={hrefOf(theme.page)} onClick={(e) => { e.preventDefault(); openArticle(theme.page); }}>{themeName}</a> 문서에서 시작해도 됩니다.</p>
           </div>
         )}
       </div>
@@ -631,8 +637,8 @@ export default function WikiGraph3D() {
                 <span className="tag neutral" title="위키 글을 바탕으로 기계가 쓰고, 다른 회사 모델이 근거와 대조했습니다. 사람은 아직 확인하지 않았습니다.">미검수</span>
                 {' '}{versions[snap.from]?.id} 때의 위키 기준
               </p>
-              {snap.summary && <p className="w3d-summary">{snap.summary.t}</p>}
-              <ul className="w3d-points">{snap.bullets.map((b, i) => <li key={i}>{b.t}</li>)}</ul>
+              {snap.summary && <p className="w3d-summary">{link(snap.summary.t, cardSeen)}</p>}
+              <ul className="w3d-points">{snap.bullets.map((b, i) => <li key={i}>{link(b.t, cardSeen)}</li>)}</ul>
               <p className="w3d-src">
                 출처: {snap.sources.filter((x, i, a) => a.findIndex((y) => y.revision === x.revision) === i).map((x, i) => (
                   <span key={x.revision}>{i > 0 && ', '}<a href={revisionUrl(x.page, x.revision)} target="_blank" rel="noreferrer">{x.page}</a> ({x.date} 판)</span>

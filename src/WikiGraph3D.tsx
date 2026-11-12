@@ -517,6 +517,8 @@ export default function WikiGraph3D() {
     let fitted = false;
     let layoutTimer: number | undefined;
     let placeRuler = () => {};
+    /** where the time pillar stands on the chart's plane (set once the camera is placed) */
+    let pillar: { x: number; z: number } | null = null;
     /** each star's direction for corner-free lines, from the layout (which stays still once settled) */
     let axisCache: Map<string, Vector3> | null = null;
     const axes = () => {
@@ -575,46 +577,76 @@ export default function WikiGraph3D() {
       const list = g.graphData().nodes;
       const radii = list.map((n) => Math.hypot(n.x ?? 0, n.z ?? 0)).sort((a, b) => a - b);
       const r90 = radii[Math.floor(radii.length * 0.9)];
-      // the time axis as a flat ruler at the left edge of the screen (crisp page text, not 3D sprites):
-      // each major version's tick sits at the screen height of that version on the axis through the
-      // theme star, so it follows the chart as it turns; the part up to the chosen version is lit
+      // The time axis as a pillar standing in the chart's space, at its left as first seen: a vertical
+      // line with a small ring round it at each major version, drawn as page vectors (SVG) from the
+      // 3D points every frame. So it leans and its rings tilt with the view like the stars do, while
+      // the text stays crisp. The part up to the chosen version glows.
       const box = rulerBox.current;
       if (box) {
+        const NS = 'http://www.w3.org/2000/svg';
+        const mk = <K extends keyof SVGElementTagNameMap>(tag: K, cls: string) => {
+          const e = document.createElementNS(NS, tag); e.setAttribute('class', cls); return e;
+        };
         box.replaceChildren();
-        const rail = document.createElement('i'); rail.className = 'w3d-rail';
-        const lit = document.createElement('i'); lit.className = 'w3d-rail lit';
-        const nowTag = document.createElement('b'); nowTag.className = 'w3d-now';
-        box.append(rail, lit);
+        const svg = mk('svg', 'w3d-pillar');
+        const tube = mk('line', 'w3d-tube'), rail = mk('line', 'w3d-rail'), lit = mk('line', 'w3d-lit');
+        const nowRing = mk('path', 'w3d-now-ring'), nowText = mk('text', 'w3d-now-text');
+        svg.append(tube, rail, lit);
         const ticks = versions.filter((v) => /\.0$|^Luna I$/.test(v.id)).map((v) => {
-          const d = document.createElement('span');
-          d.className = 'w3d-tick';
-          d.textContent = v.id === 'Luna I' ? '6.0' : v.id;
-          box.append(d);
-          return { d, h: heightOf(v.order) };
+          const ring = mk('path', 'w3d-ring'), text = mk('text', 'w3d-ring-text');
+          text.textContent = v.id === 'Luna I' ? '6.0' : v.id;
+          svg.append(ring, text);
+          return { ring, text, h: heightOf(v.order) };
         });
-        box.append(nowTag);
+        svg.append(nowRing, nowText);
+        box.append(svg);
         const pt = new Vector3();
+        const RING = 7; // ring radius in chart units
         placeRuler = () => {
+          if (!pillar) return;
           const camera = g.camera() as PerspectiveCamera;
           camera.updateMatrixWorld();
-          const top = el.offsetTop, H = el.clientHeight;
-          const yAt = (h: number) => { pt.set(0, h, 0).project(camera); return top + ((1 - pt.y) / 2) * H; };
-          const yLow = yAt(heightOf(0)), yHigh = yAt(heightOf(lastOrder)), yNow = yAt(heightOf(vNow.current));
-          rail.style.top = `${Math.min(yLow, yHigh)}px`; rail.style.height = `${Math.abs(yLow - yHigh)}px`;
-          lit.style.top = `${Math.min(yLow, yNow)}px`; lit.style.height = `${Math.abs(yLow - yNow)}px`;
-          nowTag.style.top = `${yNow}px`;
-          nowTag.textContent = `${versions[vNow.current]?.id ?? ''}까지`;
-          // ticks from the bottom up; one that would crowd the last shown tick or the marker stays hidden
+          const top = el.offsetTop, W = el.clientWidth, H = el.clientHeight;
+          svg.setAttribute('width', String(W)); svg.setAttribute('height', String(top + H));
+          const at = (x: number, y: number, z: number): [number, number, boolean] => {
+            pt.set(x, y, z).project(camera);
+            return [((pt.x + 1) / 2) * W, top + ((1 - pt.y) / 2) * H, pt.z < 1];
+          };
+          let ringRight = 0;
+          const ringPath = (h: number, r: number) => {
+            let d = '';
+            ringRight = -Infinity;
+            for (let i = 0; i <= 32; i++) {
+              const a = (i / 32) * Math.PI * 2;
+              const [x, y] = at(pillar!.x + Math.cos(a) * r, h, pillar!.z + Math.sin(a) * r);
+              d += `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`;
+              ringRight = Math.max(ringRight, x);
+            }
+            return d;
+          };
+          const line = (e: SVGElement, a: [number, number, boolean], b: [number, number, boolean]) => {
+            e.setAttribute('x1', a[0].toFixed(1)); e.setAttribute('y1', a[1].toFixed(1));
+            e.setAttribute('x2', b[0].toFixed(1)); e.setAttribute('y2', b[1].toFixed(1));
+          };
+          const low = at(pillar.x, heightOf(0), pillar.z), high = at(pillar.x, heightOf(lastOrder) + 6, pillar.z);
+          const nowH = heightOf(vNow.current), now = at(pillar.x, nowH, pillar.z);
+          line(tube, low, high); line(rail, low, high); line(lit, low, now);
+          nowRing.setAttribute('d', ringPath(nowH, RING * 1.5));
+          nowText.setAttribute('x', (ringRight + 6).toFixed(1)); nowText.setAttribute('y', (now[1] + 4).toFixed(1));
+          nowText.textContent = `${versions[vNow.current]?.id ?? ''}까지`;
+          // rings from the bottom up; a label that would crowd the last shown one or the marker is hidden
           let last = Infinity;
-          for (const t of [...ticks].sort((x, y) => x.h - y.h)) {
-            const y = yAt(t.h);
-            t.d.style.top = `${y}px`;
-            const room = Math.abs(y - last) >= 18 && Math.abs(y - yNow) >= 16;
-            t.d.style.opacity = room ? '' : '0';
-            if (room) last = y;
+          for (const t of ticks) {
+            t.ring.setAttribute('d', ringPath(t.h, RING));
+            t.ring.setAttribute('data-past', String(t.h <= nowH));
+            const c = at(pillar.x, t.h, pillar.z);
+            t.text.setAttribute('x', (ringRight + 5).toFixed(1)); t.text.setAttribute('y', (c[1] + 4).toFixed(1));
+            const room = Math.abs(c[1] - last) >= 16 && Math.abs(c[1] - now[1]) >= 15;
+            t.text.style.opacity = room ? '' : '0';
+            if (room) last = c[1];
           }
-          // seen from straight above the axis has no length: hide the ruler
-          box.style.opacity = Math.abs(yLow - yHigh) < 80 ? '0' : '';
+          // the pillar behind the camera, or seen end-on from straight above: hide it
+          box.style.opacity = !low[2] || !high[2] || Math.hypot(low[0] - high[0], low[1] - high[1]) < 80 ? '0' : '';
         };
       }
       placeNow.current = () => { placeRuler(); wakeUp(); };
@@ -720,6 +752,28 @@ export default function WikiGraph3D() {
         dist *= Math.max(q(ax) / (0.9 * (1 - RULER_W / el.clientWidth)), q(ay) / 0.82);
       }
       g.cameraPosition({ x: 0, y: cy + Math.sin(tilt) * dist, z: Math.cos(tilt) * dist }, { x: 0, y: cy, z: 0 }, 0);
+      {
+        // the time pillar stands where the left margin meets the chart's depth in this first view
+        const cam = g.camera() as PerspectiveCamera;
+        cam.position.set(0, cy + Math.sin(tilt) * dist, Math.cos(tilt) * dist);
+        cam.lookAt(0, cy, 0);
+        cam.updateMatrixWorld();
+        // move it right until both ends are inside the margin (it leans with perspective)
+        let px = 40;
+        for (let i = 0; i < 8; i++) {
+          const ray = new Vector3((px / el.clientWidth) * 2 - 1, 0, 0.5).unproject(cam).sub(cam.position).normalize();
+          const p = cam.position.clone().add(ray.multiplyScalar(dist));
+          pillar = { x: p.x, z: p.z };
+          const xs = [heightOf(0), heightOf(lastOrder) + 6].map((h) => {
+            const v = new Vector3(p.x, h, p.z).project(cam);
+            return ((v.x + 1) / 2) * el.clientWidth;
+          });
+          const short = 30 - Math.min(...xs);
+          if (short <= 1) break;
+          px += short;
+        }
+        placeRuler();
+      }
       // on first view the chart turns slowly into place once (about 40 degrees, easing out), then rests;
       // any touch stops it, and readers who ask for less motion get the still view
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {

@@ -47,11 +47,12 @@
 
 ### 1단계 마무리
 
-- [x] 임무 카드 이미지(2026-11-11, [이미지 방침 4절](image-policy.md)). 중심 인물이 정해진 막 96개, 아이콘 79명. 기록은 `data/generated/image-files.json`, 다시 만들기는 `node scripts/images/card-figures.mjs && node scripts/images/fetch-enka-icons.mjs`(이미 받은 파일은 다시 받지 않는다). 버전 선택기가 인물 공개 버전보다 앞이면 아이콘을 숨긴다.
+- [x] 임무 카드 이미지(2026-11-11, [이미지 방침 4절](image-policy.md)). 중심 인물이 정해진 막 96개, 아이콘 81명(2026-11-12 진·한운 추가). 기록은 `data/generated/image-files.json`, 다시 만들기는 `node scripts/images/card-figures.mjs && node scripts/images/fetch-enka-icons.mjs`(이미 받은 파일은 다시 받지 않는다). 버전 선택기가 인물 공개 버전보다 앞이면 아이콘을 숨긴다.
 - [x] 인물이 없거나 NPC인 카드: 자체 제작 지역 문장(`src/emblems.tsx`).
 - [x] 빈 공간: 각 버전 열의 빈 칸(카드와 노선이 지나가지 않는 칸)에 버전 이름·새 지역·마신 임무·새 막 수를 둔다. 53개 버전 중 빈 칸이 없는 열은 생략.
 - [x] 후보가 여럿인 카드 인물(2026-11-12, 사용자가 아무나 골라도 된다고 함): 「네가 있는 시공」 시틀라리, 「배리의 순간」 알베도, 「위험한 길, 수상한 발자취」 야란. `data/manual/card-figures.json`. 인물 카드 99개. 나머지(「뒤집힌 기원」과 Traveler 막 5개)는 모든 임무에 나오는 플레이 가능 캐릭터가 없어 문장으로 둔다.
-- [ ] 아이콘 짝 확인: 진(Jean)·한운(Xianyun)은 짝을 못 찾아 뺐고, 철자가 비슷해서 짝지은 9명은 사람이 확인하지 않았다([이미지 방침 4절](image-policy.md)). 확인하면 `data/manual/enka-icons.json`.
+- [x] 아이콘 짝 확인: 진(Jean)=`Qin`, 한운(Xianyun)=`Liuyun`(2026-11-12 사용자가 눈으로 확인, `data/manual/enka-icons.json`).
+- [ ] 철자가 비슷해서 짝지은 9명은 아직 사람이 확인하지 않았다([이미지 방침 4절](image-policy.md)). 확인하면 `data/manual/enka-icons.json`.
 - [ ] 버전 메모를 잇는 선이 지나가는 노선과 겹치는 곳이 있다(53개 중 41개, 카드와는 겹치지 않음). 보기에 거슬리면 선 경로를 바꾼다.
 - [ ] 시리즈·이벤트 카드(갈래 화면)에는 아직 이미지·문장이 없다.
 

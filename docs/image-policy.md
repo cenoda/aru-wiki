@@ -38,9 +38,9 @@
 
 ## 4. 지금 쓰는 이미지 (2026-11-11)
 
-- 임무 카드: 중심 인물이 플레이 가능 캐릭터인 막 96개 중 아이콘이 붙은 캐릭터 79명(`data/generated/image-files.json`). Enka API 문서가 안내하는 `https://enka.network/ui/UI_AvatarIcon_Side_*.png`를 2초 간격으로 한 번씩 받았고 가공하지 않았다(128×128, 화면에서 축소). 파일은 git에 넣지 않는다(공개 리포지토리가 원본 모음이 되므로). 배포하거나 새로 받은 checkout에서는 `npm run fetch:icons`가 기록에 있는 파일만 다시 받는다. 파일이 없으면 카드는 지역 문장을 보인다.
+- 임무 카드: 중심 인물이 플레이 가능 캐릭터인 막 96개 중 아이콘이 붙은 캐릭터 81명(플레이 가능 중심 인물 전원, `data/generated/image-files.json`). Enka API 문서가 안내하는 `https://enka.network/ui/UI_AvatarIcon_Side_*.png`를 2초 간격으로 한 번씩 받았고 가공하지 않았다(128×128, 화면에서 축소). 파일은 git에 넣지 않는다(공개 리포지토리가 원본 모음이 되므로). 배포하거나 새로 받은 checkout에서는 `npm run fetch:icons`가 기록에 있는 파일만 다시 받는다. 파일이 없으면 카드는 지역 문장을 보인다.
 - 중심 인물은 `scripts/images/card-figures.mjs`가 정한다. 전설·월드 임무는 정보 상자 `character`, 마신 임무의 Interlude Chapter와 정보 상자 `character`가 Traveler인 막은 모든 하위 임무에 나오는 플레이 가능 캐릭터가 한 명뿐일 때만. 사람이 고르면 `data/manual/card-figures.json`.
-- 아이콘 이름은 내부 이름이라 이름으로만 짝짓는다(추출 텍스트인 Enka `loc.json`은 쓰지 않는다). 짝을 찾지 못한 진(Jean)·한운(Xianyun)은 아이콘 없이 둔다. 철자가 비슷해서 짝지은 9명(`match`가 `near`·`prefix`: 엠버·노엘·토마·리넷·리니·백출·알하이탐·라이덴 쇼군·스커크)도 사람이 확인하지 않았다. 확인하면 `data/manual/enka-icons.json`에 적는다.
+- 아이콘 이름은 내부 이름이라 이름으로만 짝짓는다(추출 텍스트인 Enka `loc.json`은 쓰지 않는다). 이름으로 짝을 찾지 못한 진(Jean)=`Qin`, 한운(Xianyun)=`Liuyun`은 2026-11-12 사용자가 아이콘과 게임 화면을 눈으로 비교해 확인했다(`data/manual/enka-icons.json`). 철자가 비슷해서 짝지은 9명(`match`가 `near`·`prefix`: 엠버·노엘·토마·리넷·리니·백출·알하이탐·라이덴 쇼군·스커크)는 아직 사람이 확인하지 않았다. 확인하면 `data/manual/enka-icons.json`에 적는다.
 - 공개 버전은 Fandom 덤프 캐릭터 정보 상자의 `releaseDate`에서 계산하고, 버전 선택기가 그보다 앞이면 아이콘 대신 지역 문장을 보인다. 데이터 범위(7.1) 밖이면 받지 않는다.
 - 이미지가 없는 카드는 자체 제작 지역 문장(`src/emblems.tsx`, 미리보기 `?view=emblems`). 지역마다 떠올리기 쉬운 건물·지형의 실루엣이다(2026-11-11 사용자 확인).
 

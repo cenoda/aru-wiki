@@ -946,7 +946,7 @@ node scripts/theme/snapshots.mjs all --write --only none
 
 예문: 더 직접적인 쓰임은 **원격 조작**이다. kuuvahki를 두르면 특정 물체를 밀고 당기며 나르고 던질 수 있다. ID Cards를 원격으로 조작해 Barrier Generators를 끄는가 하면, 달 이슬이나 kuuvahki가 깃든 바위, Kuuvahki Relay Mechanisms도 같은 방식으로 옮긴다. 다만 Kuuvahki Relay Mechanisms를 들고 있으면 번개를 끌어당길 수 있다. Portable Bearings와 Assembly Modules, Unipolar Crystonite는 옮기거나 부수는 쪽에 속한다. 운반과 파괴가 같은 조작의 두 갈래로 나란히 제시된다는 점이 눈에 띈다.
 
-- **같은 영어**: `Kuuvahki Relay Mechanism` = **달의 힘 중계 장치** ([Kuuvahki Relay Mechanism](https://genshin-impact.fandom.com/wiki/Kuuvahki_Relay_Mechanism))
+- **같은 영어**: `Kuuvahki Relay Mechanism` = **쿠바키 중계 장치** ([Kuuvahki Relay Mechanism](https://genshin-impact.fandom.com/wiki/Kuuvahki_Relay_Mechanism))
 - 넣을 때: `'Kuuvahki Relay Mechanisms=한국어'`
 
 ### 174. Meropis (3회)

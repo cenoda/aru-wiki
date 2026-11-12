@@ -47,8 +47,13 @@
 .site .wa-related { columns: 2 260px; column-gap: 24px; }
 .site .wa-related li { break-inside: avoid; }
 .site .wa-related .wa-muted { font-size: .82rem; }
-.site .wa-notes { font-size: .85rem; }
-.site .wa-notes li:target { background: var(--gold-soft); }
+.site .wa ul.wa-notes { padding-left: 0; list-style: none; font-size: .85rem; }
+.site .wa-notes > li + li { margin-top: 8px; }
+.site .wa-note-page { font-weight: 600; }
+.site .wa-note-revs { display: flex; flex-wrap: wrap; gap: 2px 14px; margin-top: 2px; }
+.site .wa-note { white-space: nowrap; border-radius: 2px; }
+.site .wa-note b { color: var(--muted); font-weight: 500; font-size: .78rem; }
+.site .wa-note:target { background: var(--gold-soft); outline: 3px solid var(--gold-soft); }
 .site .wa-hidden { margin-top: 14px; color: var(--muted); }
 .site .wa #report { margin-top: 24px; }
 

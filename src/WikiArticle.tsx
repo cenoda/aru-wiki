@@ -30,23 +30,29 @@ const versionLabel = (order: number) => {
   return v ? (v.title_ko ? `${v.id} 「${v.title_ko}」` : v.id) : '';
 };
 
-/** Footnotes numbered in reading order; one per wiki page, revision and section. */
+interface Footnote { n: number; page: string; revision: number; date: string }
+/**
+ * Footnotes numbered in reading order, one per wiki revision (the section goes in the marker's
+ * tooltip). The list groups them by wiki page, so a page cited at many versions takes one line.
+ */
 function useFootnotes(shown: Snapshot[]) {
   return useMemo(() => {
-    const list: (Snapshot['sources'][number] & { n: number })[] = [];
+    const list: Footnote[] = [];
     const num = new Map<string, number>();
     const cite = (s: Snapshot, line: SnapLine) => {
       const src = s.sources[line.r];
       if (!src) return null;
-      const key = `${src.page}|${src.revision}|${src.section ?? ''}`;
+      const key = `${src.page}|${src.revision}`;
       let n = num.get(key);
-      if (n === undefined) { n = list.length + 1; num.set(key, n); list.push({ ...src, n }); }
-      return n;
+      if (n === undefined) { n = list.length + 1; num.set(key, n); list.push({ n, page: src.page, revision: src.revision, date: src.date }); }
+      return { n, section: src.section };
     };
-    // number them in the order the page reads: overview first, then the earlier descriptions
-    const order = [shown.at(-1), ...shown.slice(0, -1)].filter((s): s is Snapshot => !!s);
+    // number them in the order the page reads: overview first, then the earlier descriptions, newest first
+    const order = [...shown].reverse();
     for (const s of order) { if (s.summary) cite(s, s.summary); s.bullets.forEach((b) => cite(s, b)); }
-    return { list, cite };
+    const byPage = new Map<string, Footnote[]>();
+    for (const f of list) (byPage.get(f.page) ?? byPage.set(f.page, []).get(f.page)!).push(f);
+    return { list, byPage: [...byPage], cite };
   }, [shown]);
 }
 
@@ -90,8 +96,11 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
     root.current?.querySelector(`#${CSS.escape(id)}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   const ref = (s: Snapshot, line: SnapLine) => {
-    const n = notes.cite(s, line);
-    return n ? <sup className="wa-ref"><a href={`#cite-${n}`} onClick={jump(`cite-${n}`)}>[{n}]</a></sup> : null;
+    const c = notes.cite(s, line);
+    if (!c) return null;
+    const src = notes.list[c.n - 1];
+    const tip = `「${src.page}」${c.section ? ` ${c.section} 절` : ''}, ${src.date} 판`;
+    return <sup className="wa-ref"><a href={`#cite-${c.n}`} title={tip} onClick={jump(`cite-${c.n}`)}>[{c.n}]</a></sup>;
   };
 
   if (!node || !revealed) {
@@ -194,14 +203,21 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
         {notes.list.length > 0 && (
           <section id="notes">
             <h2>각주</h2>
-            <ol className="wa-notes">
-              {notes.list.map((s) => (
-                <li key={s.n} id={`cite-${s.n}`}>
-                  Fandom 원신 위키, 「<a href={revisionUrl(s.page, s.revision)} target="_blank" rel="noreferrer" lang="en">{s.page}</a>」
-                  {s.section && <> <span lang="en">{s.section}</span> 절</>}, {s.date} 판.
+            <p className="wa-muted wa-small">모두 Fandom 원신 위키입니다. 날짜를 누르면 그때의 문서 판이 열립니다.</p>
+            <ul className="wa-notes">
+              {notes.byPage.map(([page, list]) => (
+                <li key={page}>
+                  <a className="wa-note-page" href={pageUrl(page)} target="_blank" rel="noreferrer" lang="en">{page}</a>
+                  <span className="wa-note-revs">
+                    {list.map((f) => (
+                      <span key={f.n} id={`cite-${f.n}`} className="wa-note">
+                        <b>{f.n}</b> <a href={revisionUrl(f.page, f.revision)} target="_blank" rel="noreferrer">{f.date}</a>
+                      </span>
+                    ))}
+                  </span>
                 </li>
               ))}
-            </ol>
+            </ul>
           </section>
         )}
 

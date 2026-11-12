@@ -44,6 +44,7 @@
   - [x] 문서 검색(2026-11-12, `src/Search.tsx`): 3D 화면 머리말의 검색창, 한국어·영어 이름으로 찾는다. 고른 버전에 공개된 항목만 나온다.
   - [x] 짧은 주소(2026-11-12, `src/route.ts`): `/wiki/<이름>?v=<버전>`. 경로 이름은 공식 한국어 이름, 없으면 영어 문서 이름, 공백은 `_`. 영어 이름·예전 `?page=` 링크로 들어오면 한국어 주소로 바꾼다(기록은 늘지 않음). 사이트가 만드는 링크는 모두 짧은 주소.
     - [x] 서버 Caddyfile(2026-11-12 적용, 백업 `/etc/caddy/Caddyfile.bak-20261112`): `aru.wiki` 블록에 `redir /wiki / 302`, `header /wiki/* Cache-Control "no-cache"`, `rewrite /wiki/* /index.html`. 새 화면 코드는 다음 배포부터 실린다(그 전에는 `/wiki/…`가 첫 화면을 연다).
+    - [x] 검색 엔진(2026-11-13): 빌드 끝에 `scripts/seo/prerender.mjs`가 문서마다 `dist/wiki/<이름>.html`(문서 제목·설명·canonical·og, 최신 버전 본문; 스크립트가 돌면 숨김), 대문의 문서 링크 목록, `dist/sitemap.xml`을 만든다. `public/robots.txt`가 사이트맵을 가리킨다. Caddyfile(백업 `/etc/caddy/Caddyfile.bak-20261113`)은 `rewrite /wiki/* /index.html` 대신 `@wikipage`(`path /wiki/*` + `file {path}.html`) → `{path}.html`, `@wikiapp`(`not file`) → `/index.html`. `try_files`에는 경로 조건을 붙일 수 없다(붙이면 그 경로를 파일 패턴으로 읽어 모든 요청에 한 파일을 준다, 2026-11-13 사고). Search Console에 사이트맵 제출함(사용자).
   - [ ] 아직 없는 것: 본문 내용 검색, 신뢰도 배지(사람이 쓴 해석이 생길 때). 스냅샷은 위키 서술이라 신뢰도 등급을 붙이지 않는다.
 - [x] 3D 뷰 미리보기(2026-11-11, `src/WikiGraph3D.tsx`; 2026-11-12부터 첫 화면, 같은 날 전체 위키로 넓힘 — 아래 "전체 위키" 절). 모양을 보려는 것이고 **배치는 최종안이 아니다(사용자)**. 처음에 정한 것(켄리아 기준):
   - 별자리처럼 선을 줄인다: 공유 이야기 Jaccard 기준 최대 신장 트리 + 문서마다 가장 강한 연결 2개(`scripts/build-runtime-data.mjs`, 95개).

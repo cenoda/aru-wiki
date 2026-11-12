@@ -163,6 +163,10 @@ const artDir = new URL('articles/', outDir);
 await rm(artDir, { recursive: true, force: true });
 await mkdir(artDir, { recursive: true });
 const stamp = new Map(snaps.flatMap((s) => s.input.map((i) => [i.revision, (i.timestamp ?? '').slice(0, 10)])));
+// the whole-wiki theme (articles.mjs all): pages outside this theme, with their revision dates from its plan
+const ART_ALL = new URL('data/generated/articles-all.json', root);
+const PLAN_ALL = new URL('data/generated/snapshots-all-plan.json', root);
+if (existsSync(PLAN_ALL)) for (const [rev, date] of Object.entries(JSON.parse(await readFile(PLAN_ALL, 'utf8')).revision_dates ?? {})) if (!stamp.has(Number(rev))) stamp.set(Number(rev), date);
 const perPage = {};
 const sourceTable = () => {
   const list = [];
@@ -178,8 +182,14 @@ const sourceTable = () => {
   };
   return { ref, done: () => list.map(({ key, ...x }) => x) };
 };
-if (existsSync(ART)) {
-  for (const a of JSON.parse(await readFile(ART, 'utf8')).articles) {
+const inTheme = new Set(pages.map((p) => p.page));
+const articleList = [
+  ...(existsSync(ART) ? JSON.parse(await readFile(ART, 'utf8')).articles : []),
+  // a page of this theme keeps its theme article (written with the theme's other pages as context)
+  ...(existsSync(ART_ALL) ? JSON.parse(await readFile(ART_ALL, 'utf8')).articles.filter((a) => !inTheme.has(a.node)) : []),
+];
+{
+  for (const a of articleList) {
     const shown = a.paragraphs.filter((p) => (p.status === 'accepted' || p.status === 'trimmed') && p.sentences.some((x) => !x.dropped));
     if (!shown.length) continue;
     const src = sourceTable();
@@ -223,5 +233,12 @@ for (const [page, data] of Object.entries(perPage)) {
   await writeFile(new URL(`${slug}.json`, artDir), text);
 }
 console.log(`data/runtime/articles/ ${slugs.size} pages, ${(total / 1024).toFixed(0)} KB`);
+// Pages outside the theme that have an article: found by search and inline links, opened as article
+// pages, not drawn in the 3D chart. Same fields as the theme's nodes (src/lore.ts PageNode).
+await write('pages.json', Object.keys(perPage).filter((p) => !inTheme.has(p)).sort().map((p) => {
+  const u = loreLinks[p]?.units ?? [];
+  return { id: p, ko: koNames[p]?.ko ?? null, kind: loreLinks[p]?.kind ?? 'lore', hub: false, units: u.length, theme_units: 0,
+    revealed: u.length ? firstOrder(u) : lastOrder };
+}));
 /** the file name of a page's articles; src/lore.ts articleSlug must match */
 function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }

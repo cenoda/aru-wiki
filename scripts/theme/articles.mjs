@@ -22,6 +22,7 @@
 //
 //   node scripts/theme/articles.mjs khaenriah [--only "Dainsleif"] [--latest] [--limit 5]
 //        [--writer flash-medium,grok] [--verify codex-medium,grok,flash-medium] [--jobs 8] [--redo] [--out file] [--relocalize-only]
+//        [--order units]   (main pages first)   [--skip-theme khaenriah]   (pages that theme already has)
 import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import { appendFile, readFile, writeFile } from 'node:fs/promises';
@@ -30,7 +31,7 @@ import { gunzipSync } from 'node:zlib';
 import { parseArgs } from 'node:util';
 import { normalize } from '../recommend/excerpt.mjs';
 import { latinNames } from '../recommend/ko-text.mjs';
-import { missingKorean } from './ko-extra.mjs';
+import { contextLocalizer, missingKorean } from './ko-extra.mjs';
 import { makeKo } from './localize.mjs';
 
 const { values: opt, positionals: [theme] } = parseArgs({ allowPositionals: true, options: {
@@ -38,6 +39,7 @@ const { values: opt, positionals: [theme] } = parseArgs({ allowPositionals: true
   writer: { type: 'string', default: 'flash-medium,grok' }, verify: { type: 'string', default: 'codex-medium,grok,flash-medium' }, polish: { type: 'string', default: 'grok,flash-medium' },
   jobs: { type: 'string', default: '8' }, redo: { type: 'boolean', default: false }, out: { type: 'string' },
   'max-chars': { type: 'string', default: '50000' }, 'relocalize-only': { type: 'boolean', default: false }, dry: { type: 'boolean', default: false },
+  order: { type: 'string' }, 'skip-theme': { type: 'string' },
 } });
 if (!theme) throw new Error('usage: articles.mjs <theme id>');
 // tool pools (comma-separated); each article's text is checked by a model of another company than its writer
@@ -172,7 +174,7 @@ const VERIFY_SCHEMA = { type: 'object', additionalProperties: false, required: [
 
 // The article is written in parts so that several calls run at once and long articles are not cut
 // short: an outline (lead + headings, each with its focus and the items it draws on), then every
-// section by its own call with the same writer.
+// section by its own call (any writer of the pool with a free slot).
 const subject = (e) => e.node.replace(/\/.*$/, '');
 const rules = (e) => `Readers come to dig into the lore and to enjoy reading, like on a Korean fan wiki. Use only the material
 below (labelled [A1], [M3], [Q5], [W2], ...). Do not add anything from your own knowledge of the game, even if you know
@@ -282,6 +284,17 @@ const results = new Map((existsSync(OUT) ? JSON.parse(await readFile(OUT, 'utf8'
 let todo = opt['relocalize-only'] ? [] : plan;
 if (opt.only) { const only = new Set(opt.only.split(',').map((s) => s.trim())); todo = todo.filter((e) => only.has(e.node)); }
 if (opt.latest) todo = todo.filter(isLatest);
+// --skip-theme khaenriah: leave out pages that already have a newest-version article in that theme's file
+if (opt['skip-theme']) {
+  const other = gen(`articles-${opt['skip-theme']}.json`);
+  const done = new Set(JSON.parse(await readFile(other, 'utf8')).articles.map((a) => a.node));
+  todo = todo.filter((e) => !done.has(e.node));
+}
+// --order units: pages in more story units first, so the main pages are done first if a long run stops early
+if (opt.order === 'units') {
+  const units = new Map([...themeData.nodes.map((n) => [n.page, n.units ?? 0]), [themeData.page, Infinity]]);
+  todo = [...todo].sort((a, b) => (units.get(b.node) ?? 0) - (units.get(a.node) ?? 0));
+}
 if (opt.limit) todo = todo.slice(0, Number(opt.limit));
 let calls = 0;
 const { ask, askAny, COMPANY } = await import('../recommend/llm.mjs');
@@ -300,14 +313,21 @@ async function one(e) {
   const plan0 = await askAny(writers, outlinePrompt(e, input), OUTLINE_SCHEMA); calls++;
   const outline = plan0.data;
   const writer = plan0.tool;
+  // Sections and repairs go to whichever writer of the pool has a free slot: tying them to the outline's
+  // writer left the pool's slower tools idle (2026-11-12: Pro got no call at all with 8 articles at once).
+  // The checker must come from another company than every writer the article used.
+  const usedWriters = new Set([writer]);
   const avoid = [COMPANY[writer]];
+  const wrote = (tool) => { usedWriters.add(tool); if (!avoid.includes(COMPANY[tool])) avoid.push(COMPANY[tool]); };
   const usedVerifiers = new Set();
-  // every section at once, by the same writer; a quote not found in the named items gets one retry
+  // every section at once; a quote not found in the named items gets one retry
   const sections = await Promise.all(outline.sections.map(async (sec, i) => {
-    let r = (await askAny([writer], sectionPrompt(e, input, outline, i), SECTION_SCHEMA)).data; calls++;
+    const first = await askAny(writers, sectionPrompt(e, input, outline, i), SECTION_SCHEMA); calls++;
+    wrote(first.tool);
+    let r = first.data;
     const bad = r.paragraphs.filter((p) => !quoteOk(p, byId));
     if (bad.length) {
-      const again = (await askAny([writer], `${sectionPrompt(e, input, outline, i)}\n\nAn earlier answer gave quotes that are not word for word in the items it names:\n${
+      const again = (await askAny(writers, `${sectionPrompt(e, input, outline, i)}\n\nAn earlier answer gave quotes that are not word for word in the items it names:\n${
         bad.map((p) => `- ${JSON.stringify(p.sources)} ${JSON.stringify(p.quote)}`).join('\n')}\nCopy each quote exactly from one of the items you name.`, SECTION_SCHEMA)).data;
       calls++;
       if (again.paragraphs.filter((p) => !quoteOk(p, byId)).length < bad.length) r = again;
@@ -361,7 +381,9 @@ async function one(e) {
   let repaired = 0;
   if (fails.length) {
     try {
-      const r = (await askAny([writer], repairPrompt(e, input, fails), REPAIR_SCHEMA)).data; calls++;
+      const rr = await askAny(writers, repairPrompt(e, input, fails), REPAIR_SCHEMA); calls++;
+      wrote(rr.tool);
+      const r = rr.data;
       const cand = r.items.map((x) => ({ f: fails[x.n], text: (x.text ?? '').trim() })).filter((x) => x.f && x.text && !LABEL.test(x.text));
       const vitems = cand.map((c) => ({ target: c, sentences: [{ text: c.text, tag: c.f.s.tag }], english: c.f.it.english }));
       const vb = [];
@@ -399,22 +421,25 @@ async function one(e) {
   results.set(key, {
     node: e.node, from_version: e.version, cutoff: e.cutoff,
     input: e.revisions.map(([page, revision]) => ({ page, url: url(page), revision })), input_counts: input.counts,
-    input_chars: e.chars, input_cut: input.cut, input_hash: inputHash, writer, verifier: [...usedVerifiers].join(','),
+    input_chars: e.chars, input_cut: input.cut, input_hash: inputHash, writer: [...usedWriters].join(','), verifier: [...usedVerifiers].join(','),
     status: !ok || paragraphs.some((p) => p.status === 'needs_verify') ? 'needs_verify' : shown.length ? 'ok' : 'empty',
     review: 'unreviewed', basis: 'wiki', paragraphs, quote_boxes: quoteBoxes,
   });
   const chars = shown.reduce((n, p) => n + p.sentences.filter((s) => !s.dropped).reduce((m, s) => m + s.t_raw.length, 0), 0);
   const interp = shown.flatMap((p) => p.sentences.filter((s) => s.interp && !s.dropped)).length;
-  log(`${key}: ${shown.length}/${paragraphs.length} paragraphs, ${repaired}/${fails.length} repaired, ${chars} chars, ${interp} 해석, ${quoteBoxes.filter((b) => b.status === 'accepted').length}/${quoteBoxes.length} quotes, input M${input.counts.mentions} Q${input.counts.lines} W${input.counts.web}, ${writer}, ${Math.round((Date.now() - started) / 1000)}s`);
+  log(`${key}: ${shown.length}/${paragraphs.length} paragraphs, ${repaired}/${fails.length} repaired, ${chars} chars, ${interp} 해석, ${quoteBoxes.filter((b) => b.status === 'accepted').length}/${quoteBoxes.length} quotes, input M${input.counts.mentions} Q${input.counts.lines} W${input.counts.web}, ${[...usedWriters].join('+')}, ${Math.round((Date.now() - started) / 1000)}s`);
 }
 
+// per-sentence choices (data/manual/ko-context.json: Master = 스승 or 주인), after all names
+const inContext = await contextLocalizer();
 const shownPara = (p) => p.status === 'accepted' || p.status === 'trimmed';
 const save = async () => {
   for (const a of results.values()) {
     for (const p of a.paragraphs) for (const s of p.sentences) {
       s.t_raw = untag(s.t_raw);
-      s.t = ko(s.t_raw);
-      if (s.polish?.from === s.t) s.t = s.polish.text;
+      s.t = inContext(ko(s.t_raw), s.t_raw);
+      // a polish answer holding several lines ran the next items into this one ("…\n#1 …\n#2 …"): not used
+      if (s.polish?.from === s.t && !s.polish.text.includes('\n')) s.t = s.polish.text;
     }
     for (const b of a.quote_boxes) { b.t = ko(b.t_raw); b.speaker_ko = ko(b.speaker); }
     for (const p of a.paragraphs) p.heading = p.section === null ? null : ko(p.section);
@@ -432,11 +457,16 @@ if (opt.dry) { // print the material for the first article and stop
   process.exit(0);
 }
 const queue = [...todo];
+const retried = new Set(); // the same plan entry object: isLatest compares by identity
 log(`${queue.length} articles to check`);
 await Promise.all(Array.from({ length: Number(opt.jobs) }, async () => {
   while (queue.length) {
     const e = queue.shift();
-    try { await one(e); await save(); } catch (err) { log(`error ${e.node} @ ${e.version}: ${err.message.slice(0, 300)}`); }
+    // a failed article (provider trouble) goes once more to the end of the queue
+    try { await one(e); await save(); } catch (err) {
+      log(`error ${e.node} @ ${e.version}${retried.has(e) ? '' : ' (will try again later)'}: ${err.message.slice(0, 300)}`);
+      if (!retried.has(e)) { retried.add(e); queue.push(e); }
+    }
   }
 }));
 // names last, from every text written so far (looking up names left needs the whole set)
@@ -469,7 +499,7 @@ await Promise.all(Array.from({ length: Number(opt.jobs) }, async () => {
       const r = pr.data;
       for (const it of r.items) {
         const s = list[it.n];
-        if (!s || !it.text.trim()) continue;
+        if (!s || !it.text.trim() || it.text.trim().includes('\n')) continue;
         if (missingKorean(s.t.replace(OTHER_SCRIPT, 'X'), it.text.replace(/^#\d+\s*/, ''))) { refused++; continue; }
         s.polish = { from: s.t, text: it.text.trim().replace(/^#\d+\s*/, ''), by: pr.tool };
         polished++;

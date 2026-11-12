@@ -62,6 +62,8 @@ const TOOLS = {
   // Ollama does not train on inputs (docs/rights-risk.md 2.4); Pro allows 3 requests at a time.
   'ds': (prompt, schema) => rateDs('deepseek-v4.1-flash', prompt, schema),
   'ds-pro': (prompt, schema) => rateDs('deepseek-v4-pro', prompt, schema),
+  // GLM 5.3 (Zhipu) from the same provider and key, 4 slots (2026-11-12)
+  glm: (prompt, schema) => rateDs('glm-5.3', prompt, schema),
   deepseek: (prompt, schema) => ollama('deepseek-v4.1-flash:cloud', prompt, schema),
   // Xiaomi MiMo on Ollama Cloud: cheaper than DeepSeek and another company, so it can check DeepSeek's writing
   mimo: (prompt, schema) => ollama('mimo-v2.6-flash:cloud', prompt, schema),
@@ -174,7 +176,10 @@ async function rateDsOnce(model, prompt, schema) {
   const body = { model, stream: true, stream_options: { include_usage: true }, messages: [{ role: 'user', content:
     `${prompt}\n\n${DS_PAD}Reply with one JSON object only, no prose and no code fence, matching this JSON Schema:\n${JSON.stringify(schema)}` }],
     ...(process.env.DS_THINKING === 'off' ? JSON.parse(process.env.DS_THINKING_OFF ?? '{"thinking":{"type":"disabled"}}') : {}) };
-  for (const wait of [20, 60, null]) {
+  // A busy provider (429 slot_limit: calls cut off on our side may still hold a slot there; 503
+  // reply_buffer_busy) and a reply broken off mid-stream are waited out and asked again.
+  const sleep = (sec) => new Promise((res) => setTimeout(res, sec * 1000));
+  for (const wait of [15, 30, 60, 120, null]) {
     const ctrl = new AbortController();
     // Pro thinks long (up to ~7 min a call seen): at least 15 min for it
     const timer = setTimeout(() => ctrl.abort(), model.includes('pro') ? Math.max(TIMEOUT_MS, 15 * 60 * 1000) : TIMEOUT_MS);
@@ -188,9 +193,10 @@ async function rateDsOnce(model, prompt, schema) {
         await new Promise((res) => setTimeout(res, wait * 1000)); continue;
       }
       if (!r.ok) {
-        const msg = `rate-ds ${r.status}: ${(await r.text()).slice(0, 300)}`;
-        if (wait !== null && (r.status >= 500 || r.status === 429)) { await new Promise((res) => setTimeout(res, wait * 1000)); continue; }
-        throw new Error(msg);
+        const body = (await r.text()).slice(0, 300);
+        if (wait !== null && (r.status >= 500 || r.status === 429)) { await sleep(wait); continue; }
+        // a slot limit is the provider being busy, not a used-up allowance: 3 minutes aside (askAny), not 10
+        throw new Error(r.status === 429 && /slot_limit/.test(body) ? `rate-ds provider busy (slot_limit): ${body}` : `rate-ds ${r.status}: ${body}`);
       }
       // streamed (SSE): headers come back at once, so a long thinking call does not hit fetch's 300 s header timeout
       let text = '', u = {}, buf = '';
@@ -206,7 +212,7 @@ async function rateDsOnce(model, prompt, schema) {
           if (d === '[DONE]') continue;
           const ev = JSON.parse(d);
           if (process.env.DS_DEBUG && firstEvents.length < 6) firstEvents.push(d.slice(0, 400));
-          if (ev.error) throw new Error(`rate-ds stream: ${JSON.stringify(ev.error).slice(0, 300)}`);
+          if (ev.error) throw Object.assign(new Error(`rate-ds stream broke off (server error): ${JSON.stringify(ev.error).slice(0, 300)}`), { again: true });
           text += ev.choices?.[0]?.delta?.content ?? '';
           if (ev.usage) u = ev.usage;
         }
@@ -218,6 +224,10 @@ async function rateDsOnce(model, prompt, schema) {
       if (process.env.DS_DEBUG) await appendFile(process.env.DS_DEBUG, JSON.stringify({ at: new Date().toISOString(), firstEvents, text }) + '\n');
       return { data: checkShape(parseJsonReply(text), schema), cost: null,
         usage: { in: u.prompt_tokens ?? null, out: u.completion_tokens ?? null, reasoning: u.completion_tokens_details?.reasoning_tokens ?? null } };
+    } catch (e) {
+      // a reply broken off mid-stream (server error event, or the connection closed while reading)
+      if (wait !== null && (e.again || /terminated|ECONNRESET|other side closed/i.test(e.message))) { await sleep(wait); continue; }
+      throw e;
     } finally { clearTimeout(timer); }
   }
 }
@@ -281,7 +291,7 @@ async function agy(model, prompt, schema, cwd) {
   return { data: checkShape(res.structured_output ?? parseJsonReply(res.response), schema), cost: null };
 }
 // how an exhausted Antigravity allowance shows up (also matched against exit-code errors from run())
-const UNRELIABLE = /\b5\d\d\b|timed? ?out|abort|ECONNRESET|ECONNREFUSED|ETIMEDOUT|fetch failed|socket hang up/i;
+const UNRELIABLE = /\b5\d\d\b|timed? ?out|abort|ECONNRESET|ECONNREFUSED|ETIMEDOUT|fetch failed|socket hang up|provider busy|broke off|terminated/i;
 const QUOTA = /quota|exhaust|usage limit|rate.?limit|resource.?exhausted|429|credits?|allowance|limit reached/i;
 let agyExhausted = false;
 const SONNET_BUDGET = Number(process.env.SONNET_API_BUDGET ?? 30);
@@ -359,7 +369,7 @@ export async function ask(tool, prompt, schema) {
 // ---------- several tools at once ----------
 // Which company each tool's model comes from: a writer's text is checked by another company's model.
 export const COMPANY = { ds: 'deepseek', 'ds-pro': 'deepseek', claude: 'anthropic', 'claude-sonnet': 'anthropic', 'sonnet-api': 'anthropic', haiku: 'anthropic', sonnet: 'anthropic', 'agy-sonnet': 'anthropic',
-  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg', deepseek: 'deepseek', mimo: 'xiaomi', kimi: 'moonshot' };
+  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg', deepseek: 'deepseek', mimo: 'xiaomi', kimi: 'moonshot', glm: 'zhipu' };
 const slots = new Map();
 /** At most `limit` calls of one tool at a time (LLM_SLOTS="grok=6,flash-medium=4" overrides). */
 function slotOf(tool) {

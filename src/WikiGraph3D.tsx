@@ -23,6 +23,7 @@ import { LineMaterial } from 'three/examples/jsm/lines/LineMaterial.js';
 import SpriteText from 'three-spritetext';
 import themeUrl from '../data/runtime/theme-khaenriah.json?url';
 import snapshotsUrl from '../data/runtime/snapshots-khaenriah.json?url';
+import pagesUrl from '../data/runtime/pages.json?url';
 import { ReportBox } from './ReportBox';
 import { useLinker } from './Linked';
 import { Search } from './Search';
@@ -395,16 +396,20 @@ export default function WikiGraph3D() {
   const [theme, setTheme] = useState<Theme | null>(null);
   const [failed, setFailed] = useState(false);
   const [snapshots, setSnapshots] = useState<Snapshots | null>(null);
+  /** pages outside the theme that have an article (whole-wiki run): searched, linked and opened, not drawn */
+  const [extra, setExtra] = useState<PageNode[]>([]);
+  const allNodes = useMemo(() => (theme ? [...theme.nodes, ...extra.filter((n) => !theme.nodes.some((t) => t.id === n.id))] : []), [theme, extra]);
+  const allById = useMemo(() => new Map(allNodes.map((n) => [n.id, n])), [allNodes]);
   const [vIdx, setVIdx] = useState(() => versionFromUrl() ?? versions.length - 1);
   const [selected, setSelected] = useState<string | null>(null);
   /** the article open over the chart as the address names it (`/wiki/<name>`, old `?page=`), or null for the chart */
   const [article, setArticle] = useState<string | null>(articleKeyFromUrl);
   /** the page id of that article once the theme is loaded (an unknown name stays as written) */
-  const page = useMemo(() => (article && theme ? resolvePage(article, theme.nodes) ?? article : article), [article, theme]);
+  const page = useMemo(() => (article && theme ? resolvePage(article, allNodes) ?? article : article), [article, theme, allNodes]);
   const pageNow = useRef(page);
   pageNow.current = page;
   /** a page's address: by its Korean name when it has one */
-  const nameFor = (id: string) => pathNameOf(id, index?.byId); // called after render, when index is set
+  const nameFor = (id: string) => pathNameOf(id, allById); // called after render
 
   // ---------- article pages: the address follows the open page and the version ----------
   // Opening a page pushes a history entry, so the browser's back button returns to the chart (or the
@@ -438,7 +443,7 @@ export default function WikiGraph3D() {
   useEffect(() => {
     // also turns an old `?page=` link, or a page's other name, into the short address by its Korean name
     if (new URLSearchParams(location.search).has('v') || isArticleUrl()) history.replaceState(history.state, '', urlFor(page && nameFor(page), vIdx));
-  }, [vIdx, page, theme]);
+  }, [vIdx, page, theme, allById]);
   const [hovered, setHovered] = useState<string | null>(null);
   const night = useTheme() === 'dark';
   const [gl] = useState(canDraw3D);
@@ -457,6 +462,9 @@ export default function WikiGraph3D() {
     }, () => setFailed(true));
   }, []);
 
+  useEffect(() => {
+    fetch(pagesUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then(setExtra, () => {});
+  }, []);
   // the cards' text loads beside the chart and is not needed to draw it
   useEffect(() => {
     fetch(snapshotsUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then(setSnapshots, () => setSnapshots({}));
@@ -1212,7 +1220,7 @@ export default function WikiGraph3D() {
   const themeName = hubNode ? nameOf(hubNode) : '테마';
   // the latest snapshot written for the chosen version or before it
   const snap = sel && snapshots ? snapshotAt(snapshots[sel.id], vIdx) : null;
-  const hrefOf = (p: string) => urlFor(pathNameOf(p, index?.byId), vIdx);
+  const hrefOf = (p: string) => urlFor(pathNameOf(p, allById), vIdx);
   const link = useLinker(theme?.nodes, vIdx, sel?.id ?? null, hrefOf, openArticle);
   const cardSeen = new Set<string>();
   const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.theme_units - a.theme_units) : [];
@@ -1230,14 +1238,14 @@ export default function WikiGraph3D() {
           <span className="hint">미리보기 · 별 크기는 {themeName} 이야기에 얼마나 나오는지 · 선은 함께 나오는 이야기가 많을수록 밝고 굵음 · 아래가 이른 버전 · 왼쪽 눈금이 버전</span>
         </div>}
         <nav>
-          {theme && gl && <Search nodes={theme.nodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />}
+          {theme && gl && <Search nodes={allNodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />}
           <a className="band" href="/?view=quests">임무 지도</a>
           <VersionPicker order={vIdx} onChange={setVIdx} />
           <ThemeToggle />
         </nav>
       </header></div>
       {article && theme && index && (
-        <WikiArticle page={page!} theme={theme} byId={index.byId} snapshots={snapshots} vIdx={vIdx}
+        <WikiArticle page={page!} theme={theme} nodes={allNodes} byId={allById} snapshots={snapshots} vIdx={vIdx}
           hrefOf={hrefOf} onOpen={openArticle} />
       )}
       {article && !theme && <p className="w3d-status">{failed ? '테마 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
@@ -1249,7 +1257,7 @@ export default function WikiGraph3D() {
           <div className="w3d-portal">
             <p className="w3d-portal-logo"><Logo />aru.wiki</p>
             <p className="w3d-portal-sub">원신 이야기 위키 · {themeName} 테마</p>
-            <Search big autoFocus nodes={theme.nodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />
+            <Search big autoFocus nodes={allNodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />
             <p className="w3d-portal-note">이 브라우저에서는 3D 지도를 그릴 수 없어(WebGL을 쓸 수 없음) 검색 화면을 보여 줍니다. <a href={hrefOf(theme.page)} onClick={(e) => { e.preventDefault(); openArticle(theme.page); }}>{themeName}</a> 문서에서 시작해도 됩니다.</p>
           </div>
         )}

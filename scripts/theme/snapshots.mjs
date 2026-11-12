@@ -132,6 +132,8 @@ for (const node of nodes) {
 await writeFile(gen(`snapshots-${theme}-plan.json`), `${JSON.stringify({
   theme, rule: `first version with text, then a version that adds at least max(${MIN_NEW} chars, 15% of the last input) of new sentences`,
   nodes: nodes.length, snapshots: plan.length, entries: plan.map(({ pages, ...r }) => ({ ...r, revisions: pages.map((p) => [p.title, p.revid]) })),
+  // revision → date, for footnotes of articles that have no snapshot of their own (build-runtime-data.mjs)
+  revision_dates: Object.fromEntries(plan.flatMap((r) => r.pages.map((p) => [p.revid, (p.timestamp ?? '').slice(0, 10)]))),
 }, null, 1)}\n`);
 const perNode = new Map();
 for (const p of plan) perNode.set(p.node, (perNode.get(p.node) ?? 0) + 1);

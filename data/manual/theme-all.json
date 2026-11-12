@@ -1,0 +1,12 @@
+{
+ "$comment": "The whole wiki as one theme: every lore and character page in lore-links.json (scripts/theme/candidates.mjs all --max 5000). page is only the hub; min_shared 0 keeps pages that share no story with it. exclude: /Storyline pages are already read as part of their character page.",
+ "page": "Teyvat",
+ "min_shared": 0,
+ "exclude": [
+  "Venti/Storyline",
+  "Zhongli/Storyline",
+  "Nahida/Storyline",
+  "Wanderer/Storyline"
+ ],
+ "include": []
+}

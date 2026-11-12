@@ -20,6 +20,8 @@ import './article.css';
 export interface WikiArticleProps {
   page: string;
   theme: Theme;
+  /** every page that can be linked: the theme's and other pages with an article */
+  nodes: PageNode[];
   byId: Map<string, PageNode>;
   /** null while loading */
   snapshots: Snapshots | null;
@@ -67,7 +69,7 @@ function rich(text: string, link: Linker, seen: Set<string>): ReactNode[] {
   return text.split(/\*\*(.+?)\*\*/g).map((part, i) => (i % 2 ? <b key={i}>{link(part, seen)}</b> : <span key={i}>{link(part, seen)}</span>));
 }
 
-export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen }: WikiArticleProps) {
+export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf, onOpen }: WikiArticleProps) {
   const root = useRef<HTMLElement>(null);
   const node = byId.get(page);
   const revealed = !!node && node.revealed <= vIdx;
@@ -107,7 +109,9 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
   const notes = useFootnotes(cites);
   const hub = byId.get(theme.page);
   const themeName = hub ? nameOf(hub) : '테마';
-  const link = useLinker(theme.nodes, vIdx, page, hrefOf, onOpen);
+  /** a page of the theme (drawn in the chart), not one from the whole-wiki run */
+  const inTheme = theme.nodes.some((n) => n.id === page);
+  const link = useLinker(nodes, vIdx, page, hrefOf, onOpen);
 
   const related = useMemo(() => {
     if (!node) return [];
@@ -218,7 +222,7 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
     <main className="wa" ref={root}>
       <article className="wa-body">
         <h1 className="wa-title">{name}</h1>
-        <p className="wa-sub">aru.wiki · {themeName} 테마 · {versions[vIdx]?.id}까지 공개된 내용</p>
+        <p className="wa-sub">aru.wiki{inTheme ? ` · ${themeName} 테마` : ''} · {versions[vIdx]?.id}까지 공개된 내용</p>
 
         <div className="wa-notice" role="note">
           <span className="tag neutral">미검수</span>
@@ -231,7 +235,7 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
             {node.ko && <><dt>영어 이름</dt><dd lang="en">{node.id}</dd></>}
             <dt>분류</dt><dd>{node.hub ? '테마' : KIND_LABEL[node.kind]}</dd>
             <dt>처음 나온 버전</dt><dd>{versionLabel(node.revealed)}</dd>
-            {!node.hub && <><dt>{themeName}{withParticle(themeName)} 함께 나오는 이야기</dt><dd>{node.theme_units}개</dd></>}
+            {!node.hub && inTheme && <><dt>{themeName}{withParticle(themeName)} 함께 나오는 이야기</dt><dd>{node.theme_units}개</dd></>}
             <dt>나오는 이야기</dt><dd>{node.units}개</dd>
             {basis && <><dt>서술 기준</dt><dd>{versions[basis.from]?.id} 때의 자료</dd></>}
             {chars > 0 && <><dt>본문</dt><dd>{chars.toLocaleString()}자</dd></>}
@@ -263,8 +267,10 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
             <section key={i} id={`s${i + 1}`}>
               <h2>{x.h}</h2>
               {x.q && (
-                <blockquote className="wa-quote" title={`원문(영어): ${x.q.en}`}>
+                <blockquote className="wa-quote">
                   <p>{x.q.t}</p>
+                  {/* a translated line always shows its original, small (user 2026-11-12) */}
+                  <p className="wa-quote-en" lang="en">{x.q.en}</p>
                   <footer>— {x.q.by}{refs([art.sources[x.q.r]])} <span className="wa-muted">(영어 대사를 옮김)</span></footer>
                 </blockquote>
               )}
@@ -325,7 +331,7 @@ export function WikiArticle({ page, theme, byId, snapshots, vIdx, hrefOf, onOpen
                 </li>
               ))}
             </ul>
-            {!node.hub && hub && !related.some((r) => r.n.id === hub.id) && (
+            {!node.hub && inTheme && hub && !related.some((r) => r.n.id === hub.id) && (
               <p className="wa-small">테마 문서: <a href={hrefOf(hub.id)} onClick={go(hub.id)}>{themeName}</a></p>
             )}
           </section>

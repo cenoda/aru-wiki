@@ -74,7 +74,8 @@ export async function makeKo(texts, { log = (...a) => console.error(...a) } = {}
       const kept = [];
       const longer = known.filter((n) => text.includes(n));
       for (const ph of [...new Set(latinNames(text))].sort((a, b) => b.length - a.length)) {
-        if (!ph.includes(' ') || !latinNames(both(ph)).length) continue;
+        // any Latin letter left (also a lower-case "of": "마신 of 「계약」") means it is not Korean whole
+        if (!ph.includes(' ') || !/[A-Za-z]/.test(both(ph))) continue;
         if (longer.some((n) => n.length > ph.length && n.includes(ph))) continue;
         text = text.split(ph).join(`\u0002${kept.length}\u0002`);
         kept.push(ph);

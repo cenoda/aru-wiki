@@ -55,6 +55,16 @@
   - [x] 3D가 안 되는 기기(2026-11-12 사용자 결정, design.md 2절): 모바일도 3D가 기본이고 2D 그래프 전환은 만들지 않는다. WebGL을 쓸 수 없는 브라우저에서는 위키백과 대문처럼 가운데 검색창 하나만 있는 화면을 보여 준다(`WikiGraph3D`의 `w3d-portal`). 예전 2D 전환 계획(저사양 모드, 프레임 측정)은 버렸다. `feat/quest-3d`의 `src/settings.ts`는 쓰지 않는다.
 - [ ] 임무 3D(막을 버전 층에 쌓은 3D 지도)는 `feat/quest-3d` 브랜치에 보관(사용자: 나중에 추가할 수 있음).
 
+### 전체 위키 (2026-11-12 시작)
+
+- [x] 테마 `all`: lore-links.json의 이야기 문서 전체 1,558개(`data/manual/theme-all.json`, `/Storyline` 하위 문서 4개는 인물 문서에 합쳐 읽으므로 뺌). 스냅샷 계획 3,548개(1분, LLM 없음), 최신 버전 본문이 있는 문서 1,383개. 대사 `dialogue.mjs all`(18초, 한 번 훑기로 바꿈).
+- [x] 첫 100개(2026-11-12): `node scripts/theme/articles.mjs all --latest --order units --skip-theme khaenriah --limit 100 --writer kimi,ds,ds-pro,glm --verify claude-sonnet,codex-medium,grok --polish kimi,ds --jobs 16`. 99개 완료(Navia는 프로바이더 연결이 멈춰 다음 실행으로). 문단 대부분 검증 통과. 남은 영어가 있는 문장 5.8%(이름 1,184개를 에이전트가 번역해 `ko-names-llm.json`에 넣은 뒤). 켄리아 테마에 있는 문서는 그 테마 글을 쓴다(`--skip-theme`).
+- [x] 화면: 테마 밖 문서는 검색·글 속 링크·`/wiki/<이름>`으로 열린다(`data/runtime/pages.json`). 3D 지도에는 켄리아 문서만. 대사 상자에 영어 원문을 작게 붙인다(사용자 2026-11-12).
+- 모델(사용자 2026-11-12): 한도 있는 모델 먼저(Kimi), 프로바이더 DeepSeek Flash 12·Pro 8·GLM 4 동시, 생각 켬. 검증은 Sonnet→Codex→Grok(MiMo·Kimi는 검증이 약해 안 씀). 섹션도 빈 자리 모델이 쓴다.
+- [ ] 프로바이더 연결이 응답 없이 멈추면 호출 하나가 한 시간 넘게 묶인다(20분 제한 × 재시도). 스트림 무응답 감지가 필요하다.
+- [ ] 남은 영어: 문맥에 따라 다른 말(Chapter, Leader, Archon 등) 단계(`ko-llm.mjs tasks context`)가 아직 스냅샷만 읽는다. 본문에도 붙여야 한다.
+- [ ] 나머지 약 1,280개 문서. 100개에 약 3시간(멈춤·재시작 포함).
+
 ### 독자가 쓰는 글 (`feat/reader-edits` 브랜치, 2026-11-12)
 
 로그인 없이 문단 고치기·글 보태기·새 문서 제안. 보낸 글은 쓴 사람 브라우저에서만 바로 보이고 운영자가 승인해야 공개된다(사용자 결정: 안전한 방식). 설명과 운영 방법, 저작권법 조문 확인은 [reader-edits.md](reader-edits.md).

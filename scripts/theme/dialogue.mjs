@@ -31,21 +31,38 @@ const namesOf = (n) => {
 console.error('reading the dump…');
 const pages = await loadPages();
 const questPages = quests.filter((q) => q.level === 'QUEST' && order.has(q.first_version) && pages.has(q.names.en));
-const out = {};
-for (const n of nodes) {
-  const names = namesOf(n);
-  const said = new RegExp(`^(${names.map(escape).join('|')})\\s*:`, 'i');
-  const named = new RegExp(`\\b(${names.map(escape).join('|')})\\b`, 'i');
-  const lines = [];
-  for (const q of questPages) {
-    for (const l of dialogueLines(pages.get(q.names.en).content)) {
-      const m = l.match(/^([^:]{1,40}):\s*(.+)$/);
-      if (!m || m[2].length > MAX_LEN || m[2].length < 12 || /^Traveler$/i.test(m[1])) continue;
-      const by = n.kind === 'character' && said.test(l);
-      if (!by && !named.test(m[2])) continue;
-      lines.push({ speaker: m[1].trim(), text: m[2].trim(), by_node: by, quest: q.names.en, quest_ko: q.names.ko ?? null, version: q.first_version });
+// Every quest's lines parsed once, then one pass with a regex of all names (1,500+ pages in the
+// whole-wiki theme: parsing per page and quest took over ten minutes).
+const all = [];
+for (const q of questPages) {
+  for (const l of dialogueLines(pages.get(q.names.en).content)) {
+    const m = l.match(/^([^:]{1,40}):\s*(.+)$/);
+    if (!m || m[2].length > MAX_LEN || m[2].length < 12 || /^Traveler$/i.test(m[1])) continue;
+    all.push({ speaker: m[1].trim(), text: m[2].trim(), quest: q.names.en, quest_ko: q.names.ko ?? null, version: q.first_version });
+  }
+}
+const owners = new Map(); // lower-case name → nodes it names
+// a hyphen separates words, as \b did: "Abyss-related" names the Abyss; "Mary-Ann" is looked up as "mary ann"
+const key = (name) => name.toLowerCase().replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
+for (const n of nodes) for (const name of namesOf(n)) (owners.get(key(name)) ?? owners.set(key(name), []).get(key(name))).push(n);
+const maxWords = Math.max(...[...owners.keys()].map((k) => k.split(' ').length));
+const linesOf = new Map(nodes.map((n) => [n.page, []]));
+for (const l of all) {
+  const hit = new Map(); // page → by_node
+  for (const n of owners.get(key(l.speaker)) ?? []) if (n.kind === 'character') hit.set(n.page, true);
+  // every run of 1..maxWords words is looked up, so a shorter name inside a longer one is found too
+  // ("Dottore" in "Il Dottore"); words keep inner apostrophes (Khaenri'ah)
+  const words = (l.text.toLowerCase().match(/[\p{L}\p{N}]+(?:['’.][\p{L}\p{N}]+)*/gu) ?? []).map((w) => w.replace(/['’]s$/, '')); // Khaenri'ah's → khaenri'ah
+  for (let i = 0; i < words.length; i++) {
+    for (let k = 1; k <= maxWords && i + k <= words.length; k++) {
+      for (const n of owners.get(words.slice(i, i + k).join(' ')) ?? []) if (!hit.has(n.page)) hit.set(n.page, false);
     }
   }
+  for (const [page, by] of hit) linesOf.get(page).push({ ...l, by_node: by });
+}
+const out = {};
+for (const n of nodes) {
+  const lines = linesOf.get(n.page);
   // at most 6 lines per quest; articles pick from these by version (articles.mjs)
   const seen = new Set();
   const picked = [];

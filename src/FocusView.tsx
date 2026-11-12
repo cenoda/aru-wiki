@@ -13,6 +13,7 @@ import { recommendationGist, recommendationLead } from './recText';
 import { Logo } from './Logo';
 import { ReportBox } from './ReportBox';
 import { VersionPicker } from './VersionPicker';
+import { ThemeToggle } from './theme';
 import { Emblem, EventMark, SeriesBadge } from './emblems';
 import ELK, { type ElkExtendedEdge } from 'elkjs/lib/elk.bundled.js';
 import './site.css';
@@ -1262,6 +1263,7 @@ function Atlas() {
           <nav>
             <a className="band" href="./">3D 위키</a>
             <VersionPicker order={vIdx} onChange={setVIdx} />
+            <ThemeToggle />
             {!focus && zoom < 0.45 ? (
               <button type="button" className="band" onClick={() => {
                 const st = document.querySelector('.flow-frame')!.getBoundingClientRect();

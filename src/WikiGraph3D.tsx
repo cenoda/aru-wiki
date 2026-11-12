@@ -33,6 +33,7 @@ import {
   idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, revisionUrl, snapshotAt, type Snapshots, type Theme, withParticle,
 } from './lore';
 import { VersionPicker } from './VersionPicker';
+import { ThemeToggle, useTheme } from './theme';
 import { WikiArticle } from './WikiArticle';
 import './site.css';
 import './focus.css';
@@ -52,7 +53,6 @@ const DAY: Palette = {
   hub: '#cf5f33', character: '#7b52c7', lore: '#a07a34', line: '#56648f', lineHot: '#b8792a',
   label: '#262a36', ecliptic: '#7a87ad', sky: '#eef1f8', night: false,
 };
-const prefersDark = () => matchMedia('(prefers-color-scheme: dark)').matches;
 
 const LABEL_FONT = '"IBM Plex Sans KR"';
 /** The site font, then the system Korean fonts, so a fallback is at least one whole font. */
@@ -225,14 +225,8 @@ export default function WikiGraph3D() {
     if (new URLSearchParams(location.search).has('v') || isArticleUrl()) history.replaceState(history.state, '', urlFor(page && nameFor(page), vIdx));
   }, [vIdx, page, theme]);
   const [hovered, setHovered] = useState<string | null>(null);
-  const [night, setNight] = useState(prefersDark);
+  const night = useTheme() === 'dark';
   const [gl] = useState(canDraw3D);
-  useEffect(() => {
-    const mq = matchMedia('(prefers-color-scheme: dark)');
-    const on = () => setNight(mq.matches);
-    mq.addEventListener('change', on);
-    return () => mq.removeEventListener('change', on);
-  }, []);
   const sky = night ? NIGHT : DAY;
 
   useEffect(() => {
@@ -605,6 +599,7 @@ export default function WikiGraph3D() {
           {theme && gl && <Search nodes={theme.nodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />}
           <a className="band" href="/?view=quests">임무 지도</a>
           <VersionPicker order={vIdx} onChange={setVIdx} />
+          <ThemeToggle />
         </nav>
       </header></div>
       {article && theme && index && (

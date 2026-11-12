@@ -11,18 +11,18 @@
   /* quest types reuse the element palette */
   --archon: #b08a45; --story: #9a5fd6; --world: #2fae8e; --event: #e2603c;
 }
-@media (prefers-color-scheme: dark) {
-  .site {
-    --bg: #15161d; --card: #1e2029; --text: #ece5d8; --muted: #a39d90;
-    --line: #30323d; --accent: #d3bc8e; --on-accent: #1e2029; --accent-soft: #2c2b2b;
-    --gold: #d3bc8e; --gold-soft: #2e2a22; --band: #0f1015; --band-text: #ece5d8;
-    --sky-ink: rgba(170,140,255,.45);
-    --sky-glow: radial-gradient(ellipse 60% 50% at 85% 5%, rgba(110,60,190,.32), transparent 70%),
-      radial-gradient(ellipse 55% 45% at 5% 95%, rgba(150,40,140,.22), transparent 70%);
-    --warn-bg: #3a2e12; --warn: #f0c36a; --good: #6fcf97;
-    --archon: #d3bc8e; --story: #b88af0; --world: #55cfae; --event: #f27f5c;
-  }
+:root:not([data-theme=light]) .site {
+  --bg: #15161d; --card: #1e2029; --text: #ece5d8; --muted: #a39d90;
+  --line: #30323d; --accent: #d3bc8e; --on-accent: #1e2029; --accent-soft: #2c2b2b;
+  --gold: #d3bc8e; --gold-soft: #2e2a22; --band: #0f1015; --band-text: #ece5d8;
+  --sky-ink: rgba(170,140,255,.45);
+  --sky-glow: radial-gradient(ellipse 60% 50% at 85% 5%, rgba(110,60,190,.32), transparent 70%),
+    radial-gradient(ellipse 55% 45% at 5% 95%, rgba(150,40,140,.22), transparent 70%);
+  --warn-bg: #3a2e12; --warn: #f0c36a; --good: #6fcf97;
+  --archon: #d3bc8e; --story: #b88af0; --world: #55cfae; --event: #f27f5c;
 }
+:root { color-scheme: dark; } :root[data-theme=light] { color-scheme: light; }
+.site .theme-toggle { padding: 4px 0; width: 30px; justify-content: center; }
 .site { min-height: 100%; background: var(--bg); color: var(--text);
   font-family: "IBM Plex Sans KR", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   font-size: 16px; line-height: 1.5; font-weight: 400; }

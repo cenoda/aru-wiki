@@ -13,6 +13,10 @@ import { recommendationGist, recommendationLead } from './recText';
 import { Logo } from './Logo';
 import { ReportBox } from './ReportBox';
 import { VersionPicker } from './VersionPicker';
+import { loadSearchNodes, Search } from './Search';
+import { focusUrl, QUESTS } from './questSearch';
+import { type PageNode } from './lore';
+import { articleUrl, pathNameOf } from './route';
 import { ThemeToggle } from './theme';
 import { Emblem, EventMark, SeriesBadge } from './emblems';
 import ELK, { type ElkExtendedEdge } from 'elkjs/lib/elk.bundled.js';
@@ -808,9 +812,6 @@ const focusFromUrl = () => {
   if (u && unitById.has(u)) return u;
   return null;
 };
-/** The quest map lives at `?view=quests` (the site's home is the 3D lore view). */
-const QUESTS = '?view=quests';
-const focusUrl = (id: string | null) => (!id ? QUESTS : unitById.has(id) ? `${QUESTS}&unit=${id}` : `${QUESTS}&act=${id}`);
 
 export default function FocusView() {
   return <ReactFlowProvider><Atlas /></ReactFlowProvider>;
@@ -819,7 +820,11 @@ export default function FocusView() {
 function Atlas() {
   const [focus, setFocus] = useState<string | null>(focusFromUrl);
   const [vIdx, setVIdx] = useState(versions.length - 1);
-  const [query, setQuery] = useState('');
+  /** article pages, for the search box (an article opens on the 3D wiki's page) */
+  const [pageNodes, setPageNodes] = useState<PageNode[]>([]);
+  useEffect(() => { loadSearchNodes().then(setPageNodes, () => {}); }, []);
+  const pageById = useMemo(() => new Map(pageNodes.map((n) => [n.id, n])), [pageNodes]);
+  const hrefOf = (p: string) => articleUrl(pathNameOf(p, pageById), versions[vIdx]?.id ?? '');
   /** Folded unit groups ("외 N개") the reader has opened. */
   const [opened, setOpened] = useState<ReadonlySet<string>>(() => new Set());
   const flow = useReactFlow();
@@ -836,7 +841,6 @@ function Atlas() {
     if (id === focus) return;
     window.history.pushState(null, '', focusUrl(id));
     setFocus(id);
-    setQuery('');
   }, [focus]);
 
   // A focused node that is not released in the chosen version is deselected (back to the atlas).
@@ -1203,31 +1207,6 @@ function Atlas() {
     return () => clearTimeout(t);
   }, [vIdx, focus, flow, fitAll, clampView]);
 
-  // Acts, units (series, events…) and the quests in either. A quest leads to its act or unit.
-  const results = useMemo(() => {
-    const s = query.trim().toLowerCase();
-    if (!s) return [];
-    const hit = (x: { names: { en: string; ko?: string } }) =>
-      (x.names.ko ?? '').toLowerCase().includes(s) || x.names.en.toLowerCase().includes(s);
-    type Hit = { key: string; name: string; target: MapItem; note: string; rank: number; v: number };
-    const out: Hit[] = [];
-    for (const u of units) {
-      if (!visible(u) || !hit(u)) continue;
-      out.push({ key: u.id, name: displayName(u), target: u, note: `${UNIT_LABEL[u.kind]} · 임무 ${u.members.length}개`, rank: 0, v: vOrder(u) });
-    }
-    for (const q of quests) {
-      if (!visible(q) || !hit(q)) continue;
-      if (q.level === 'ACT') { out.push({ key: q.id, name: displayName(q), target: q, note: '', rank: 0, v: vOrder(q) }); continue; }
-      const host = q.act ? questById.get(q.act) : unitById.get(unitOfQuest.get(q.id) ?? '');
-      if (!host || !visible(host)) continue;
-      // a single-quest unit already matched under its own name
-      if (isUnit(host) && displayName(host) === displayName(q) && hit(host)) continue;
-      const note = isUnit(host) ? `${UNIT_LABEL[host.kind]} 「${displayName(host)}」` : `${displayName(host)} 막`;
-      out.push({ key: q.id, name: displayName(q), target: host, note, rank: 1, v: vOrder(q) });
-    }
-    return out.sort((a, b) => a.rank - b.rank || a.v - b.v).slice(0, 12);
-  }, [query, visible]);
-
   const sel = focus ? item(focus) : null;
   const zoomClass = zoom < 0.45 ? 'far' : zoom < 0.75 ? 'mid' : 'near';
 
@@ -1236,22 +1215,8 @@ function Atlas() {
       <div className="wrap">
         <header>
           <a className="logo" href={QUESTS} onClick={(e) => { e.preventDefault(); select(null); }}><Logo />aru.wiki</a>
-          <form className="find" onSubmit={(e) => { e.preventDefault(); if (results[0]) select(results[0].target.id); }}>
-            <input type="search" value={query} onChange={(e) => setQuery(e.target.value)}
-              onKeyDown={(e) => { if (e.key === 'Escape') { setQuery(''); e.currentTarget.blur(); } }}
-              placeholder="막·시리즈·이벤트·임무 이름 검색" />
-            {query.trim() && (results.length > 0 ? (
-              <ul>
-                {results.map((r) => (
-                  <li key={r.key}><button type="button" className={`${typeClass(r.target)}${isUnit(r.target) ? ' unit' : ''}`} onClick={() => select(r.target.id)}>
-                    <i className="dot" />
-                    <span className="hit">{r.name}{r.note && <em>{r.note}</em>}</span>
-                    <small>{r.target.first_version}</small>
-                  </button></li>
-                ))}
-              </ul>
-            ) : <ul><li className="empty">없는 이름입니다</li></ul>)}
-          </form>
+          <Search className="find" nodes={pageNodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={(p) => location.assign(hrefOf(p))}
+            onQuest={select} newPage={false} />
           <div className="legend" aria-label="범례">
             <span className="t-archon"><i />마신</span><span className="t-story"><i />전설</span>
             <span className="t-world"><i />월드</span><span className="t-event"><i />이벤트</span>

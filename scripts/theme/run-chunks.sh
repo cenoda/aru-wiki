@@ -12,6 +12,9 @@ while :; do
   node scripts/theme/articles.mjs all --latest --order units --skip-theme khaenriah --limit "${CHUNK:-100}" \
     --writer kimi,ds,ds-pro,glm --verify claude-sonnet,codex-medium,grok --polish ds,kimi --jobs 16 > "$log" 2>&1
   echo "$(date -u +%FT%TZ) chunk $n end: $(grep -c paragraphs "$log") written, $(grep -c '^error' "$log") errors"
+  # between chunks the file holds Korean names and clean-up; mid-chunk saves do not (articles.mjs
+  # swaps names at the end): publish-ready.sh deploys this copy
+  cp data/generated/articles-all.json .cache/theme/articles-all.ready.json
   grep -q '^0 articles to check' "$log" && { echo "nothing left"; break; }
   n=$((n + 1))
 done

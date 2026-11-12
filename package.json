@@ -11,6 +11,7 @@
     "dev": "vite",
     "prebuild": "node scripts/build-runtime-data.mjs",
     "build": "tsc && vite build",
+    "postbuild": "node scripts/seo/sitemap.mjs",
     "preview": "vite preview",
     "screenshot": "node scripts/dev/screenshot.mjs",
     "fetch:icons": "node scripts/images/fetch-enka-icons.mjs --from-records",

@@ -13,7 +13,7 @@ import { recommendationGist, recommendationLead } from './recText';
 import { Logo } from './Logo';
 import { ReportBox } from './ReportBox';
 import { VersionPicker } from './VersionPicker';
-import { Emblem } from './emblems';
+import { Emblem, EventMark, SeriesBadge } from './emblems';
 import ELK, { type ElkExtendedEdge } from 'elkjs/lib/elk.bundled.js';
 import './site.css';
 import './focus.css';
@@ -89,11 +89,14 @@ const LAYER_GAP = 88;
 const NOTE_MIN_SLOTS = 1, NOTE_MAX_SLOTS = 4;
 /** bracket: how far left of the column it runs, and where it leaves the label (mid-height) */
 const STEM_W = 14, STEM_TOP = 25;
+/** half the break in a bracket where it passes under a track */
+const STEM_GAP = 6;
 /** rendered size of a version label (focus.css .atlas-label.ver: 40px, line-height 50px) */
 const VER_CHAR_W = 25, VER_H = 50;
 const verLabelW = (text: string) => Math.max(40, text.length * VER_CHAR_W);
 /** labelY: top of the version label the note hangs from (a bracket links the two) */
-type VersionNote = { version: Version; x: number; y: number; h: number; labelY: number };
+/** stem: the bracket's corners; cuts: where it passes under a track (drawn with a gap) */
+type VersionNote = { version: Version; x: number; y: number; h: number; labelY: number; stem: XY[]; cuts: XY[] };
 const LAYER = CARD_W + LAYER_GAP;
 /** English-only titles need the whole card, on two lines when they are long. */
 const cardHeight = (q: Quest) => (!q.names.ko && displayName(q).length > 22 ? TALL_H : CARD_H);
@@ -452,6 +455,107 @@ const lines = (() => {
 })();
 
 /**
+ * Route the bracket from a version label down to its note without crossing storyline track.
+ * Vertical runs go down the gap left of a column or along a column's left edge where the
+ * column is empty; horizontal runs go along the gutters between card rows (never under a
+ * card's "이후 열리는 임무" line). Dijkstra over (channel, gutter); a crossing costs a long
+ * detour, and one that cannot be avoided is drawn with a gap (`cuts`).
+ */
+function routeStem(n: { x: number; y: number; h: number; labelY: number; version: Version },
+  slot: number, slots: number, [x0, x1]: [number, number], rows: number, taken: [number, number][][], cardsAt: number[][]) {
+  const top = n.labelY + HEAD, gutterY = (k: number) => top + k * STEP_Y - (STEP_Y - CARD_H) / 2;
+  const rowMid = (r: number) => top + r * STEP_Y + CARD_H / 2;
+  const cols: number[] = [];
+  for (let c = x0; c + CARD_W <= x1; c += STEP_X) cols.push(c);
+  // channels, left to right: the gap left of each column, then its left edge; and the gap after the last
+  const ch: number[] = cols.flatMap((c) => [c - STEM_W, c + 1]);
+  ch.push(cols.at(-1)! + CARD_W + STEM_W);
+  const isNote = (c: number, r: number) => c === n.x && r >= slot && r < slot + slots;
+  const card = (x: number, r: number) => (cardsAt[r] ?? []).some((c) => c - 4 <= x && x <= c + CARD_W + 4)
+    || (x >= n.x - 4 && x <= n.x + CARD_W + 4 && r >= slot && r < slot + slots);
+  const track = (x: number, r: number) => (taken[r] ?? []).some(([a, b]) => a <= x && x <= b);
+  // the "opens" line under a card sits in the gutter below it, from 40px in
+  const blocked = (xa: number, xb: number, k: number) => k > 0 && cols.some((c) =>
+    ((cardsAt[k - 1] ?? []).includes(c) || isNote(c, k - 1) || isNote(c, k)) && xa < c + CARD_W && xb > c + 36);
+  // Short and direct beats crossing-free: a crossing costs about five rows of extra length,
+  // and the route never dips below the note's top (no wrapping round a column).
+  const CROSS = 8, BEND = 1.5, LEN = 1.5 / STEP_Y;
+  const levels = rows + 1, N = ch.length * levels * 2; // state: channel, gutter, last move (0 vertical, 1 horizontal)
+  const id = (i: number, k: number, d: number) => (i * levels + k) * 2 + d;
+  const dist = new Float64Array(N).fill(Infinity), prev = new Int32Array(N).fill(-1);
+  const label = { x: x0, w: verLabelW(n.version.id) };
+  const bandY = n.labelY + STEM_TOP;
+  ch.forEach((x, i) => {
+    const fromX = x < label.x ? label.x - 3 : x >= label.x + label.w + 8 ? label.x + label.w + 8 : NaN;
+    if (Number.isNaN(fromX)) return;
+    dist[id(i, 0, 0)] = Math.abs(x - fromX) * LEN + (gutterY(0) - bandY) * LEN;
+  });
+  const done = new Uint8Array(N);
+  for (;;) {
+    let u = -1;
+    for (let s = 0; s < N; s++) if (!done[s] && dist[s] < Infinity && (u < 0 || dist[s] < dist[u])) u = s;
+    if (u < 0) break;
+    done[u] = 1;
+    const d = u % 2, k = Math.floor(u / 2) % levels, i = Math.floor(u / 2 / levels);
+    const relax = (j: number, kk: number, dd: number, w: number) => {
+      const v = id(j, kk, dd), c = dist[u] + w + (dd !== d ? BEND : 0);
+      if (c < dist[v]) { dist[v] = c; prev[v] = u; }
+    };
+    for (const kk of [k - 1, k + 1]) {
+      if (kk < 0 || kk > slot) continue;
+      const r = Math.min(k, kk); // the card row between gutters k and kk
+      if (card(ch[i], r)) continue;
+      relax(i, kk, 0, STEP_Y * LEN + (track(ch[i], r) ? CROSS : 0));
+    }
+    for (const j of [i - 1, i + 1]) {
+      if (j < 0 || j >= ch.length) continue;
+      const [xa, xb] = [Math.min(ch[i], ch[j]), Math.max(ch[i], ch[j])];
+      if (!blocked(xa, xb, k)) relax(j, k, 1, (xb - xa) * LEN);
+    }
+  }
+  // ways into the note: down onto its left border, or into its side from the gap beside it
+  const iNote = ch.indexOf(n.x + 1), iLeft = iNote - 1, iRight = iNote + 1;
+  const ends = [
+    { i: iNote, last: { x: n.x + 1, y: n.y }, extra: 0, side: null as number | null },
+    { i: iLeft, last: { x: n.x, y: n.y + 14 }, extra: BEND, side: n.x - STEM_W },
+    ...(iRight < ch.length ? [{ i: iRight, last: { x: n.x + CARD_W, y: n.y + 14 }, extra: BEND + 2, side: ch[iRight] }] : []),
+  ];
+  let best = -1, bestCost = Infinity, bestEnd = ends[0];
+  for (const e of ends) for (const dd of [0, 1]) {
+    const s = id(e.i, slot, dd), c = dist[s] + e.extra + (dd === 1 ? BEND : 0);
+    if (c < bestCost) { bestCost = c; best = s; bestEnd = e; }
+  }
+  // walk back: grid points, then corners only
+  const grid: XY[] = [];
+  for (let s = best; s >= 0; s = prev[s]) {
+    const k = Math.floor(s / 2) % levels, i = Math.floor(s / 2 / levels);
+    grid.unshift({ x: ch[i], y: gutterY(k) });
+  }
+  const startX = grid[0].x < label.x ? label.x - 3 : label.x + label.w + 8;
+  const pts: XY[] = [{ x: startX, y: bandY }, { x: grid[0].x, y: bandY }, ...grid];
+  if (bestEnd.side !== null) pts.push({ x: bestEnd.side, y: bestEnd.last.y });
+  pts.push(bestEnd.last);
+  const stem: XY[] = [];
+  for (const p of pts) {
+    const [a, b] = [stem.at(-2), stem.at(-1)];
+    if (b && b.x === p.x && b.y === p.y) continue;
+    if (a && b && ((a.x === b.x && b.x === p.x) || (a.y === b.y && b.y === p.y))) stem[stem.length - 1] = p;
+    else stem.push(p);
+  }
+  // unavoidable crossings: vertical runs over a row whose track passes at that x
+  const cuts: XY[] = [];
+  for (let s = 1; s < stem.length; s++) {
+    const [a, b] = [stem[s - 1], stem[s]];
+    if (a.x !== b.x) continue;
+    for (let r = 0; r < rows; r++) {
+      const y = rowMid(r);
+      if (y > Math.min(a.y, b.y) && y < Math.max(a.y, b.y) && track(a.x, r) && !card(a.x, r)) cuts.push({ x: a.x, y });
+    }
+  }
+  return { stem, cuts };
+}
+
+/**
  * One row per era; inside a row every storyline keeps one height (its slot), so its track is a
  * horizontal line. A version column is as wide as the longest run of one line in that version.
  */
@@ -496,12 +600,16 @@ const atlas = (() => {
     })).sort((a, b) => Number(b.archon) - Number(a.archon) || a.start - b.start);
     const slotEnds: number[] = [];
     const taken: [number, number][][] = []; // per slot: x spans of cards and the track between them
+    const cardsAt: number[][] = []; // per slot: x of each card
     for (const s of spans) {
       let slot = slotEnds.findIndex((end) => end + 30 <= s.start);
       if (slot === -1) slot = slotEnds.length;
       slotEnds[slot] = s.end;
       (taken[slot] ??= []).push([s.start, s.end]);
-      for (const a of s.run) pos.set(a.id, { x: xOf.get(a.id)!, y: y + HEAD + slot * STEP_Y });
+      for (const a of s.run) {
+        pos.set(a.id, { x: xOf.get(a.id)!, y: y + HEAD + slot * STEP_Y });
+        (cardsAt[slot] ??= []).push(xOf.get(a.id)!);
+      }
     }
     // Version notes go into empty space: the first card-wide column of the version with a free
     // run of slots (one extra slot reaches into the gap below the era row).
@@ -520,7 +628,9 @@ const atlas = (() => {
           slot += n;
         }
       }
-      if (best) notes.push({ version: v, x: best.x, y: y + HEAD + best.slot * STEP_Y, h: best.n * STEP_Y - (STEP_Y - CARD_H), labelY: y });
+      if (!best) continue;
+      const note = { version: v, x: best.x, y: y + HEAD + best.slot * STEP_Y, h: best.n * STEP_Y - (STEP_Y - CARD_H), labelY: y };
+      notes.push({ ...note, ...routeStem(note, best.slot, best.n, colOf.get(v.id)!, rows, taken, cardsAt) });
     }
     y += HEAD + slotEnds.length * STEP_Y + ERA_GAP;
   }
@@ -794,19 +904,25 @@ function Atlas() {
         id: `note-${n.version.id}`, type: 'note', position: { x: n.x, y: n.y }, width: CARD_W, height: n.h,
         selectable: false, data: { ...noteText(n.version), h: n.h },
       }));
-    // Bracket from the version label to its note. It runs down the gap left of the note's
-    // column; when that is not the version's first column, it leaves the label from its right.
+    // Bracket from the version label to its note, along the route atlas worked out (routeStem).
+    // Where it has to pass a track it breaks off, so it reads as running underneath.
     const stemNodes: Node[] = atlas.notes
       .filter((n) => n.version.order <= vIdx)
       .map((n) => {
-        const label = atlas.labels.find((l) => l.id === `ver-${n.version.id}`)!;
-        const stemX = n.x - STEM_W;
-        const fromX = n.x === label.x ? n.x - 3 : label.x + verLabelW(label.text) + 8;
-        const left = Math.min(stemX, fromX), top = n.labelY + STEM_TOP, bottom = n.y + 14;
-        const d = `M${fromX - left} 1.5 H${stemX - left + 1.5} V${bottom - top - 1.5} H${n.x - left}`;
+        const xs = n.stem.map((p) => p.x), ys = n.stem.map((p) => p.y);
+        const left = Math.min(...xs) - 2, top = Math.min(...ys) - 2;
+        const P = (x: number, y: number) => `${x - left} ${y - top}`;
+        let d = `M${P(n.stem[0].x, n.stem[0].y)}`;
+        for (let i = 1; i < n.stem.length; i++) {
+          const [a, b] = [n.stem[i - 1], n.stem[i]];
+          const dir = Math.sign(b.y - a.y);
+          const cuts = a.x === b.x ? n.cuts.filter((c) => c.x === a.x && (c.y - a.y) * (c.y - b.y) < 0).sort((p, q) => (p.y - q.y) * dir) : [];
+          for (const c of cuts) d += ` L${P(a.x, c.y - STEM_GAP * dir)} M${P(a.x, c.y + STEM_GAP * dir)}`;
+          d += ` L${P(b.x, b.y)}`;
+        }
         return {
           id: `stem-${n.version.id}`, type: 'stem', position: { x: left, y: top },
-          width: Math.max(n.x, fromX) - left, height: bottom - top, selectable: false, data: { d },
+          width: Math.max(...xs) - left + 2, height: Math.max(...ys) - top + 2, selectable: false, data: { d },
         };
       });
     const labelNodes: Node[] = atlas.labels
@@ -1483,6 +1599,17 @@ const ActNode = memo(({ data }: NodeProps<Node<ActData>>) => (
   </div>
 ));
 type UnitData = { unit: Unit; state: '' | 'focus' };
+/**
+ * Units have no picked figure (image policy 4 covers act cards only), so they always show a
+ * self-made mark: the event mark for time-limited events, otherwise the region emblem, with a
+ * stacked-sheets badge on series.
+ */
+const UnitFigure = ({ unit }: { unit: Unit }) => (
+  <span className="fig emblem-fig">
+    {unit.quest_type === 'EVENT' ? <EventMark /> : <Emblem region={unit.region} />}
+    {unit.kind === 'series' && <SeriesBadge />}
+  </span>
+);
 /** A unit card: stacked when it holds several quests, dashed when it only needs the region. */
 const UnitNode = memo(({ data }: NodeProps<Node<UnitData>>) => {
   const u = data.unit;
@@ -1491,13 +1618,16 @@ const UnitNode = memo(({ data }: NodeProps<Node<UnitData>>) => {
     <div className={`card-node unit ${typeClass(u)} ${data.state}${unitHeight(u) > UNIT_H ? ' tall' : ''}${u.members.length > 1 ? ' stack' : ''}${loose ? ' loose' : ''}${!u.replayable ? ' gone' : ''}`}
       title={u.names.ko ? `${u.names.ko} (${u.names.en})` : u.names.en}>
       <Handle type="target" position={Position.Left} />
-      <span className="name">{displayName(u)}</span>
-      <span className="unit-meta">
-        <b>{UNIT_LABEL[u.kind]}</b>
-        {u.members.length > 1 && <span>임무 {u.members.length}</span>}
-        <span>{u.first_version ?? '?'}</span>
-        {!u.replayable && <span className="gone-mark">다시 플레이 불가</span>}
-        {loose && <span className="loose-mark">지역 도착 이후</span>}
+      <UnitFigure unit={u} />
+      <span className="unit-body">
+        <span className="name">{displayName(u)}</span>
+        <span className="unit-meta">
+          <b>{UNIT_LABEL[u.kind]}</b>
+          {u.members.length > 1 && <span>임무 {u.members.length}</span>}
+          <span>{u.first_version ?? '?'}</span>
+          {!u.replayable && <span className="gone-mark">다시 플레이 불가</span>}
+          {loose && <span className="loose-mark">지역 도착 이후</span>}
+        </span>
       </span>
       <Handle type="source" position={Position.Right} />
     </div>

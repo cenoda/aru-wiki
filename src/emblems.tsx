@@ -45,13 +45,56 @@ const SHAPES: Record<string, { label: string; d: string }> = {
     'M12 5.5 14 12h-4zM12 18.5 10 12h4z' },
 };
 
+/** Places inside a region that the data names on their own. */
+const REGION_OF: Record<string, string> = { 'Nasha Town': 'Nod-Krai' };
+const shape = (region?: string) => SHAPES[REGION_OF[region ?? ''] ?? region ?? ''] ?? SHAPES.Other;
+
 export const EMBLEM_REGIONS = Object.keys(SHAPES);
-export const emblemLabel = (region?: string) => (SHAPES[region ?? ''] ?? SHAPES.Other).label;
+export const emblemLabel = (region?: string) => shape(region).label;
 
 export function Emblem({ region }: { region?: string }) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" className="emblem">
-      <path d={(SHAPES[region ?? ''] ?? SHAPES.Other).d} />
+      <path d={shape(region).d} />
+    </svg>
+  );
+}
+
+// Mark for time-limited event cards (series and event units of the EVENT type), drawn for this
+// project: a firework burst, kept simple so it reads at card size. A round core and eight thick
+// rays with pointed tips, the four upright ones a little longer. It says "event" in place of a
+// region, since an event's region is often only where it is held.
+const EVENT_MARK = { label: '불꽃놀이', d: (() => {
+  const at = (deg: number, r: number, off = 0) => {
+    const a = (deg * Math.PI) / 180, [c, s] = [Math.cos(a), Math.sin(a)];
+    return [12 + c * r - s * off, 12 + s * r + c * off].map((n) => n.toFixed(2)).join(' ');
+  };
+  let d = 'M12 8.9a3.1 3.1 0 1 1 0 6.2 3.1 3.1 0 0 1 0-6.2z';
+  for (let i = 0; i < 8; i++) {
+    const deg = i * 45 - 90, end = i % 2 ? 10 : 11.6, w = 1.65;
+    d += `M${at(deg, 5.3, -w)}L${at(deg, end - 1.9, -w)}L${at(deg, end)}L${at(deg, end - 1.9, w)}L${at(deg, 5.3, w)}z`;
+  }
+  return d;
+})() };
+export const eventMarkLabel = EVENT_MARK.label;
+
+export function EventMark() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="emblem">
+      <path d={EVENT_MARK.d} />
+    </svg>
+  );
+}
+
+// Corner badge for series cards, drawn for this project: two stacked sheets, the back one as an
+// outline and the front one filled. It sits on the region emblem's circle, so a series reads as
+// "several quests in a row" next to the single quests and chains of the same region.
+export const seriesBadgeLabel = '겹친 종이';
+export function SeriesBadge() {
+  return (
+    <svg viewBox="0 0 12 12" aria-hidden="true" className="series-badge">
+      <path className="back" d="M4.2 1.6h5.4c.5 0 .8.3.8.8v5.6" />
+      <rect className="front" x="1.6" y="3.6" width="6.6" height="6.8" rx=".9" />
     </svg>
   );
 }

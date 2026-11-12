@@ -169,6 +169,7 @@ async function rateDs(model, prompt, schema) {
 }
 // With thinking on, the provider loses the first few tokens of the answer, sometimes whole sentences (seen
 // 2026-11-12 in 4 of 25 replies): a throwaway first line takes the loss instead of the JSON.
+const DS_IDLE_MS = Number(process.env.DS_IDLE_SEC ?? 120) * 1000;
 const DS_PAD = process.env.DS_THINKING === 'off' ? '' : 'Begin the reply with this exact line: ----- ----- ----- ----- ----- ----- ----- -----\nThen, on the next line, ';
 async function rateDsOnce(model, prompt, schema) {
   dsKey ??= (existsSync(DS_ENV) && readFileSync(DS_ENV, 'utf8').match(/^\s*DEEPSEEK_API_KEY\s*=\s*['"]?([^'"\s]+)/m))?.[1];
@@ -183,13 +184,19 @@ async function rateDsOnce(model, prompt, schema) {
     const ctrl = new AbortController();
     // Pro thinks long (up to ~7 min a call seen): at least 15 min for it
     const timer = setTimeout(() => ctrl.abort(), model.includes('pro') ? Math.max(TIMEOUT_MS, 15 * 60 * 1000) : TIMEOUT_MS);
+    // The provider sends a ": waiting for…" line every ~10 s, also while the model thinks (measured
+    // 2026-11-12). Nothing for 2 minutes means the connection hung (seen: a call held over an hour):
+    // cut it and ask again.
+    let stalled = false, idle;
+    const alive = () => { clearTimeout(idle); idle = setTimeout(() => { stalled = true; ctrl.abort(); }, DS_IDLE_MS); };
+    alive();
     try {
       let r;
       try {
         r = await fetch('https://llm.rate-cloud.com/v1/chat/completions', { method: 'POST', signal: ctrl.signal,
           headers: { Authorization: `Bearer ${dsKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
       } catch (e) { // network drop: retry like a server error
-        if (wait === null || ctrl.signal.aborted) throw new Error(`rate-ds fetch failed: ${e.cause?.code ?? e.message}`);
+        if (wait === null || (ctrl.signal.aborted && !stalled)) throw new Error(`rate-ds fetch failed: ${stalled ? 'stalled' : e.cause?.code ?? e.message}`);
         await new Promise((res) => setTimeout(res, wait * 1000)); continue;
       }
       if (!r.ok) {
@@ -203,6 +210,7 @@ async function rateDsOnce(model, prompt, schema) {
       const firstEvents = [];
       const dec = new TextDecoder();
       for await (const chunk of r.body) {
+        alive();
         buf += dec.decode(chunk, { stream: true });
         let i;
         while ((i = buf.indexOf('\n')) >= 0) {
@@ -226,9 +234,10 @@ async function rateDsOnce(model, prompt, schema) {
         usage: { in: u.prompt_tokens ?? null, out: u.completion_tokens ?? null, reasoning: u.completion_tokens_details?.reasoning_tokens ?? null } };
     } catch (e) {
       // a reply broken off mid-stream (server error event, or the connection closed while reading)
-      if (wait !== null && (e.again || /terminated|ECONNRESET|other side closed/i.test(e.message))) { await sleep(wait); continue; }
+      if (wait !== null && (e.again || stalled || /terminated|ECONNRESET|other side closed/i.test(e.message))) { await sleep(wait); continue; }
+      if (stalled) throw new Error(`rate-ds stalled: no data for ${DS_IDLE_MS / 1000} s`);
       throw e;
-    } finally { clearTimeout(timer); }
+    } finally { clearTimeout(timer); clearTimeout(idle); }
   }
 }
 // Ollama Cloud sometimes answers 500/502/503 for a moment: two more tries, 20 s and 60 s later
@@ -291,7 +300,7 @@ async function agy(model, prompt, schema, cwd) {
   return { data: checkShape(res.structured_output ?? parseJsonReply(res.response), schema), cost: null };
 }
 // how an exhausted Antigravity allowance shows up (also matched against exit-code errors from run())
-const UNRELIABLE = /\b5\d\d\b|timed? ?out|abort|ECONNRESET|ECONNREFUSED|ETIMEDOUT|fetch failed|socket hang up|provider busy|broke off|terminated/i;
+const UNRELIABLE = /\b5\d\d\b|timed? ?out|abort|ECONNRESET|ECONNREFUSED|ETIMEDOUT|fetch failed|socket hang up|provider busy|broke off|terminated|stalled/i;
 const QUOTA = /quota|exhaust|usage limit|rate.?limit|resource.?exhausted|429|credits?|allowance|limit reached/i;
 let agyExhausted = false;
 const SONNET_BUDGET = Number(process.env.SONNET_API_BUDGET ?? 30);

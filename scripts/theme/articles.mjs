@@ -295,7 +295,8 @@ if (opt.order === 'units') {
   const units = new Map([...themeData.nodes.map((n) => [n.page, n.units ?? 0]), [themeData.page, Infinity]]);
   todo = [...todo].sort((a, b) => (units.get(b.node) ?? 0) - (units.get(a.node) ?? 0));
 }
-if (opt.limit) todo = todo.slice(0, Number(opt.limit));
+// --limit counts only what is not written yet, so a long run can go in chunks (--limit 100, again and again)
+if (opt.limit) todo = todo.filter((e) => { const r = results.get(`${e.node}|${e.version}`); return !r || r.status === 'needs_verify'; }).slice(0, Number(opt.limit));
 let calls = 0;
 const { ask, askAny, COMPANY } = await import('../recommend/llm.mjs');
 let ko = (t) => t;

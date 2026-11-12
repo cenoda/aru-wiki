@@ -14,7 +14,7 @@ import ForceGraph3D, { type ForceGraph3DInstance } from '3d-force-graph';
 import { forceX, forceY, forceZ } from 'd3-force-3d';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  AdditiveBlending, BufferGeometry, Float32BufferAttribute, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, LineBasicMaterial, LineLoop, NormalBlending,
+  AdditiveBlending, BufferGeometry, Float32BufferAttribute, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, LineBasicMaterial, LineSegments, NormalBlending,
   type PerspectiveCamera, Sprite, SpriteMaterial, Vector2, Vector3,
 } from 'three';
 import { Line2 } from 'three/examples/jsm/lines/Line2.js';
@@ -119,8 +119,6 @@ function starTexture(color: string, night: boolean, rays: boolean) {
   return new CanvasTexture(c);
 }
 const starColour = (n: PageNode, sky: Palette) => (n.hub ? sky.hub : sky[n.kind]);
-/** Ring opacity on the plane (inner rings fainter); a little stronger on the pale day sky. */
-const ringOpacity = (k: number, sky: Palette) => (k > 1 ? 0.2 : 0.1) * (sky.night ? 1 : 1.6);
 /** Names are smaller on portrait screens (their size is relative to the view height). */
 const labelScale = (el: HTMLElement) => Math.min(1, (el.clientWidth / Math.max(1, el.clientHeight)) * 1.3);
 
@@ -139,12 +137,18 @@ interface Look {
   focused: boolean;
   sky: Palette;
 }
+/**
+ * How much a line may show while nothing is picked (0..1): lines outside the chart's spanning tree
+ * and lines that run far up the time axis stay faint, so the resting chart is a few clear
+ * constellations instead of a web. A picked star brings its own lines back in full.
+ */
+const calm = new WeakMap<PageLink, number>();
 const starTargetOf = (id: string, look: Look) => (look.inFocus(id) ? 1 : 0.2);
 function lineLook(l: PageLink, look: Look, out: LineParts) {
   const s = idOf(l.source), t = idOf(l.target), w = strength(l);
   const touching = s === look.selected || t === look.selected;
   out.color.set(touching ? look.sky.lineHot : look.sky.line);
-  out.target = !look.focused ? 0.15 + 0.55 * w
+  out.target = !look.focused ? (0.15 + 0.55 * w) * (calm.get(l) ?? 1)
     : touching ? 0.55 + 0.45 * w
       : look.inFocus(s) && look.inFocus(t) ? 0.12 + 0.4 * w : 0.04;
 }
@@ -177,6 +181,8 @@ export default function WikiGraph3D() {
   const fade = useRef<() => void>(() => {});
   /** Recolour the scene for a new sky without rebuilding it. */
   const applySky = useRef<(sky: Palette) => void>(() => {});
+  /** Move the glowing "present" floor to a version's height. */
+  const placeNow = useRef<(order: number) => void>(() => {});
   const [theme, setTheme] = useState<Theme | null>(null);
   const [failed, setFailed] = useState(false);
   const [snapshots, setSnapshots] = useState<Snapshots | null>(null);
@@ -261,7 +267,15 @@ export default function WikiGraph3D() {
     const named = new Set(byImportance.slice(0, NAMED + 1).map((n) => n.id));
     const top = Math.max(1, ...theme.nodes.filter((n) => !n.hub).map((n) => n.theme_units));
     const importance = (n: PageNode) => (n.hub ? 1 : Math.min(1, n.theme_units / top));
-    return { byId, near, named, importance };
+    // the spanning tree by shared stories: the lines that stay clear while nothing is picked
+    const tree = new Set<string>();
+    const root = new Map(theme.nodes.map((n) => [n.id, n.id]));
+    const find = (x: string) => { while (root.get(x) !== x) x = root.get(x)!; return x; };
+    for (const l of [...theme.links].sort((a, b) => b.shared - a.shared)) {
+      const a = find(idOf(l.source)), b = find(idOf(l.target));
+      if (a !== b) { root.set(a, b); tree.add(`${idOf(l.source)}|${idOf(l.target)}`); }
+    }
+    return { byId, near, named, importance, tree: tree as Set<string | PageLink> };
   }, [theme]);
 
   const shown = useMemo(() => (id: string) => (index?.byId.get(id)?.revealed ?? Infinity) <= vIdx, [index, vIdx]);
@@ -294,7 +308,7 @@ export default function WikiGraph3D() {
     const lastOrder = versions.length - 1;
     /** the time axis: earlier versions low, later high, over TIME_SPAN units (the plane is ~470 wide) */
     // portrait screens get a taller axis so the chart fills their height (set when the scene is built)
-    const TIME_SPAN = el.clientWidth < el.clientHeight ? 560 : 240;
+    const TIME_SPAN = el.clientWidth < el.clientHeight ? 330 : 170;
     const heightOf = (order: number) => ((order - lastOrder / 2) / lastOrder) * TIME_SPAN;
     const height = (n: PageNode) => (n.hub ? 0 : heightOf(n.revealed));
 
@@ -377,32 +391,76 @@ export default function WikiGraph3D() {
 
     let fitted = false;
     let layoutTimer: number | undefined;
-    const rings: { line: LineLoop<BufferGeometry, LineBasicMaterial>; k: number; tag: SpriteText }[] = [];
+    const rulers: LineSegments<BufferGeometry, LineBasicMaterial>[] = [];
+    const tags: SpriteText[] = [];
+    let nowMark: { mark: SpriteText; dot: Sprite } | null = null;
     const afterLayout = () => {
       if (disposed) return;
       const list = g.graphData().nodes;
       const radii = list.map((n) => Math.hypot(n.x ?? 0, n.z ?? 0)).sort((a, b) => a - b);
       const r90 = radii[Math.floor(radii.length * 0.9)];
-      // one faint ring per major version (1.0 … 7.0) at its height, with the version on the rim:
-      // the chart's third axis is time, and the rings make it readable
+      // the time axis as one ruler beside the chart: a thin line with a tick and a label per major
+      // version (1.0 … 7.0), instead of a ring per version stacked over the stars
       const sky0 = lookNow.current.sky;
+      const R = r90 * 1.08;
       const majors = versions.filter((v) => /\.0$|^Luna I$/.test(v.id));
-      majors.forEach((v, i) => {
-        const y = heightOf(v.order), R = r90 * 1.02;
-        const pts: Vector3[] = [];
-        for (let j = 0; j < 128; j++) { const a = (j / 128) * Math.PI * 2; pts.push(new Vector3(Math.cos(a) * R, y, Math.sin(a) * R)); }
-        const k = i === 0 || i === majors.length - 1 ? 1.4 : 1;
-        const ring = new LineLoop(new BufferGeometry().setFromPoints(pts), new LineBasicMaterial({ color: sky0.ecliptic, transparent: true, opacity: ringOpacity(k, sky0), depthWrite: false }));
-        ring.raycast = () => {};
-        g.scene().add(ring);
-        const tag = new SpriteText(v.id === 'Luna I' ? '6.0' : v.id, 0.016 * labelScale(el), sky0.ecliptic);
+      const y0 = heightOf(0), y1 = heightOf(lastOrder);
+      const axisPts = [new Vector3(-R, y0, 0), new Vector3(-R, y1, 0)];
+      const axis = new LineSegments(new BufferGeometry().setFromPoints(axisPts), new LineBasicMaterial({ color: sky0.ecliptic, transparent: true, opacity: 0.5, depthWrite: false }));
+      axis.raycast = () => {};
+      g.scene().add(axis);
+      rulers.push(axis);
+      const tickPts: Vector3[] = [];
+      for (const v of majors) {
+        const y = heightOf(v.order);
+        tickPts.push(new Vector3(-R - 5, y, 0), new Vector3(-R + 5, y, 0));
+        const tag = new SpriteText(v.id === 'Luna I' ? '6.0' : v.id, 0.014 * labelScale(el), sky0.ecliptic);
         tag.fontFace = LABEL_FONT_STACK;
-        tag.material.sizeAttenuation = false; tag.material.depthWrite = false; tag.material.opacity = 0.75; tag.material.transparent = true;
-        tag.position.set(-R, y, 0);
-        tag.center.set(1.15, 0.5);
+        tag.material.sizeAttenuation = false; tag.material.depthWrite = false; tag.material.transparent = true; tag.material.opacity = 0.7;
+        tag.position.set(-R - 7, y, 0);
+        tag.center.set(1, 0.5);
         g.scene().add(tag);
-        rings.push({ line: ring, k, tag });
-      });
+        tags.push(tag);
+      }
+      const ticks = new LineSegments(new BufferGeometry().setFromPoints(tickPts), new LineBasicMaterial({ color: sky0.ecliptic, transparent: true, opacity: 0.45, depthWrite: false }));
+      ticks.raycast = () => {};
+      g.scene().add(ticks);
+      rulers.push(ticks);
+      // the present on the ruler: the axis is bright up to the chosen version and faint above it,
+      // with a marker and the version's name at that height
+      const future = new LineSegments(new BufferGeometry().setFromPoints([new Vector3(), new Vector3()]), new LineBasicMaterial({ color: sky0.ecliptic, transparent: true, opacity: 0.12, depthWrite: false }));
+      future.raycast = () => {};
+      g.scene().add(future);
+      rulers.push(future);
+      const mark = new SpriteText('', 0.017 * labelScale(el), sky0.hub);
+      mark.fontFace = LABEL_FONT_STACK;
+      mark.fontWeight = '600';
+      mark.material.sizeAttenuation = false; mark.material.depthWrite = false;
+      mark.center.set(-0.15, 0.5);
+      g.scene().add(mark);
+      const dot = new Sprite(new SpriteMaterial({ map: starTexture(sky0.hub, sky0.night, false), transparent: true, depthWrite: false,
+        blending: sky0.night ? AdditiveBlending : NormalBlending }));
+      dot.scale.setScalar(16);
+      g.scene().add(dot);
+      nowMark = { mark, dot };
+      placeNow.current = (order) => {
+        const y = heightOf(order);
+        axis.geometry.setFromPoints([new Vector3(-R, y0, 0), new Vector3(-R, y, 0)]);
+        future.geometry.setFromPoints([new Vector3(-R, y, 0), new Vector3(-R, y1 + 8, 0)]);
+        mark.text = `${versions[order]?.id ?? ''} 공개까지`;
+        mark.position.set(-R + 6, y, 0);
+        dot.position.set(-R, y, 0);
+        wakeUp();
+      };
+      placeNow.current(vNow.current);
+      // lines that climb far up the axis, or are not in the spanning tree, rest faint
+      for (const l of g.graphData().links) {
+        const s = l.source as PageNode, t = l.target as PageNode;
+        const climb = Math.min(1, Math.abs((s.y ?? 0) - (t.y ?? 0)) / (TIME_SPAN * 0.45));
+        calm.set(l, (index.tree.has(l) || index.tree.has(`${idOf(l.source)}|${idOf(l.target)}`) ? 1 : 0.35) * (1 - 0.75 * climb));
+      }
+      for (const [l, p] of lines.current) lineLook(l, lookNow.current, p);
+      fade.current();
       // frame what is there: move the camera until the stars (but the far few) fill the screen in both directions
       const camera = g.camera() as PerspectiveCamera;
       const portrait = el.clientWidth < el.clientHeight;
@@ -423,6 +481,28 @@ export default function WikiGraph3D() {
         dist *= Math.max(q(ax) / 0.9, q(ay) / 0.82);
       }
       g.cameraPosition({ x: 0, y: cy + Math.sin(tilt) * dist, z: Math.cos(tilt) * dist }, { x: 0, y: cy, z: 0 }, 0);
+      // on first view the chart turns slowly into place once (about 40 degrees, easing out), then rests;
+      // any touch stops it, and readers who ask for less motion get the still view
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const flat = Math.cos(tilt) * dist, camY = cy + Math.sin(tilt) * dist;
+        const swing = (40 * Math.PI) / 180, span = 4500;
+        let t0 = 0, stopped = false;
+        const stop = () => { stopped = true; };
+        el.addEventListener('pointerdown', stop, { once: true });
+        el.addEventListener('wheel', stop, { once: true, passive: true });
+        const turn = (t: number) => {
+          if (stopped || disposed) return;
+          t0 ||= t;
+          const k = Math.min(1, (t - t0) / span), a = -swing * (1 - k) ** 3;
+          camera.position.set(Math.sin(a) * flat, camY, Math.cos(a) * flat);
+          camera.lookAt(0, cy, 0);
+          onMove();
+          wakeUp();
+          if (k < 1) requestAnimationFrame(turn);
+        };
+        camera.position.set(Math.sin(-swing) * flat, camY, Math.cos(-swing) * flat);
+        requestAnimationFrame(turn);
+      }
       onMove(); // fog distances and names for the first view
       wakeUp();
     };
@@ -433,15 +513,15 @@ export default function WikiGraph3D() {
     const dustPos: number[] = [];
     let seed = 7;
     const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
-    for (let i = 0; i < 1800; i++) {
+    for (let i = 0; i < 1100; i++) {
       const u = rnd() * 2 - 1, a = rnd() * Math.PI * 2, R = 1600 + rnd() * 1400, c = Math.sqrt(1 - u * u);
       dustPos.push(Math.cos(a) * c * R, u * R, Math.sin(a) * c * R);
     }
     const dustGeo = new BufferGeometry();
     dustGeo.setAttribute('position', new Float32BufferAttribute(dustPos, 3));
     const night0 = lookNow.current.sky.night;
-    const dust = new Points(dustGeo, new PointsMaterial({ color: night0 ? '#c9d3ff' : '#7a87ad', size: 1.6, sizeAttenuation: false,
-      transparent: true, opacity: night0 ? 0.55 : 0.18, depthWrite: false, fog: false }));
+    const dust = new Points(dustGeo, new PointsMaterial({ color: night0 ? '#c9d3ff' : '#7a87ad', size: 1.3, sizeAttenuation: false,
+      transparent: true, opacity: night0 ? 0.35 : 0.14, depthWrite: false, fog: false }));
     dust.raycast = () => {};
     g.scene().add(dust);
 
@@ -454,9 +534,17 @@ export default function WikiGraph3D() {
         p.star.needsUpdate = true;
         p.label.color = s.label;
       }
-      for (const r of rings) { r.line.material.color.set(s.ecliptic); r.line.material.opacity = ringOpacity(r.k, s); r.tag.color = s.ecliptic; }
+      for (const r of rulers) r.material.color.set(s.ecliptic);
+      for (const t of tags) t.color = s.ecliptic;
+      if (nowMark) {
+        nowMark.mark.color = s.hub;
+        nowMark.dot.material.map?.dispose();
+        nowMark.dot.material.map = starTexture(s.hub, s.night, false);
+        nowMark.dot.material.blending = s.night ? AdditiveBlending : NormalBlending;
+        nowMark.dot.material.needsUpdate = true;
+      }
       dust.material.color.set(s.night ? '#c9d3ff' : '#7a87ad');
-      dust.material.opacity = s.night ? 0.55 : 0.18;
+      dust.material.opacity = s.night ? 0.35 : 0.14;
       wakeUp();
     };
 
@@ -537,7 +625,9 @@ export default function WikiGraph3D() {
       cancelAnimationFrame(relabelFrame);
       controls.removeEventListener('change', onMove);
       for (const ev of events) el.removeEventListener(ev, wakeUp);
-      for (const r of rings) { r.line.geometry.dispose(); r.line.material.dispose(); }
+      for (const r of rulers) { r.geometry.dispose(); r.material.dispose(); }
+      if (nowMark) { nowMark.dot.material.map?.dispose(); nowMark.dot.material.dispose(); }
+      placeNow.current = () => {};
       dust.geometry.dispose(); dust.material.dispose();
       g._destructor();
       el.replaceChildren();
@@ -562,6 +652,7 @@ export default function WikiGraph3D() {
     if (!g) return;
     g.nodeVisibility((n) => shown(n.id))
       .linkVisibility((l) => l.revealed <= vIdx && shown(idOf(l.source)) && shown(idOf(l.target)));
+    placeNow.current(vIdx);
     relabelSoon.current();
     wake.current();
   }, [theme, shown, vIdx]);
@@ -638,7 +729,7 @@ export default function WikiGraph3D() {
           <span style={{ ['--c' as string]: sky.hub }}><i />테마</span>
           <span style={{ ['--c' as string]: sky.character }}><i />인물</span>
           <span style={{ ['--c' as string]: sky.lore }}><i />로어</span>
-          <span className="hint">미리보기 · 별 크기는 {themeName} 이야기에 얼마나 나오는지 · 선은 함께 나오는 이야기가 많을수록 밝고 굵음 · 아래가 이른 버전 · 고리는 큰 버전</span>
+          <span className="hint">미리보기 · 별 크기는 {themeName} 이야기에 얼마나 나오는지 · 선은 함께 나오는 이야기가 많을수록 밝고 굵음 · 아래가 이른 버전 · 왼쪽 눈금이 버전</span>
         </div>}
         <nav>
           {theme && gl && <Search nodes={theme.nodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />}

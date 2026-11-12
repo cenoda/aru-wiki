@@ -102,12 +102,23 @@ for (const s of snaps) {
   const summary = pts.find((p) => p.role === 'summary');
   const bullets = pts.filter((p) => p.role === 'point');
   if (!bullets.length) continue;
-  const used = [...new Set(pts.map((p) => p.source.revision))];
+  // footnotes: one per page, revision and section; each line points at its footnote
+  const sources = [];
+  const ref = (p) => {
+    const key = `${p.source.page}|${p.source.revision}|${p.source.section ?? ''}`;
+    let i = sources.findIndex((x) => x.key === key);
+    if (i < 0) {
+      const input = s.input.find((x) => x.revision === p.source.revision);
+      i = sources.push({ key, page: p.source.page, revision: p.source.revision, section: p.source.section ?? null,
+        date: (input?.timestamp ?? '').slice(0, 10) }) - 1;
+    }
+    return i;
+  };
   (byPage[s.node] ??= []).push({
     from: order.get(s.from_version),
-    summary: summary?.text ?? null,
-    bullets: bullets.map((p) => p.text),
-    sources: s.input.filter((i) => used.includes(i.revision)).map((i) => ({ page: i.page, revision: i.revision, date: i.timestamp.slice(0, 10) })),
+    summary: summary ? { t: summary.text, r: ref(summary) } : null,
+    bullets: bullets.map((p) => ({ t: p.text, r: ref(p) })),
+    sources: sources.map(({ key, ...x }) => x),
   });
 }
 for (const list of Object.values(byPage)) list.sort((a, b) => a.from - b.from);

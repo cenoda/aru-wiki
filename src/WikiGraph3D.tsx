@@ -25,28 +25,14 @@ import themeUrl from '../data/runtime/theme-khaenriah.json?url';
 import snapshotsUrl from '../data/runtime/snapshots-khaenriah.json?url';
 import { ReportBox } from './ReportBox';
 import { versions } from './data';
+import {
+  idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, revisionUrl, snapshotAt, type Snapshots, type Theme, withParticle,
+} from './lore';
 import { VersionPicker } from './VersionPicker';
+import { WikiArticle } from './WikiArticle';
 import './site.css';
 import './focus.css';
 import './wiki3d.css';
-
-/** A page as the wiki described it at a version (scripts/theme/snapshots.mjs), unreviewed. */
-interface Snapshot { from: number; summary: string | null; bullets: string[]; sources: { page: string; revision: number; date: string }[] }
-const revisionUrl = (page: string, revision: number) =>
-  `https://genshin-impact.fandom.com/wiki/${encodeURIComponent(page.replace(/ /g, '_'))}?oldid=${revision}`;
-
-interface PageNode { id: string; ko: string | null; kind: 'character' | 'lore'; hub: boolean; units: number; theme_units: number; revealed: number; x?: number; y?: number; z?: number; fx?: number; fy?: number; fz?: number }
-interface PageLink { source: string | PageNode; target: string | PageNode; shared: number; revealed: number }
-interface Theme { page: string; nodes: PageNode[]; links: PageLink[] }
-
-const idOf = (end: string | PageNode) => (typeof end === 'string' ? end : end.id);
-const nameOf = (n: PageNode) => n.ko ?? n.id;
-const KIND_LABEL = { character: '인물', lore: '로어' } as const;
-/** 와/과 by whether the last Hangul syllable has a final consonant. */
-const withParticle = (word: string) => {
-  const c = word.charCodeAt(word.length - 1) - 0xac00;
-  return c >= 0 && c < 11172 && c % 28 !== 0 ? '과' : '와';
-};
 
 interface Palette {
   hub: string; character: string; lore: string; line: string; lineHot: string; label: string; ecliptic: string;
@@ -159,6 +145,26 @@ function lineLook(l: PageLink, look: Look, out: LineParts) {
       : look.inFocus(s) && look.inFocus(t) ? 0.12 + 0.4 * w : 0.04;
 }
 
+/** The address of the chart, or of an article page, at a version. */
+const urlFor = (page: string | null, order: number) => {
+  const q = new URLSearchParams();
+  if (page) q.set('page', page);
+  q.set('v', versions[order]?.id ?? '');
+  return `${location.pathname}?${q}`;
+};
+/** Whether this browser can draw WebGL at all; without it the chart is replaced by a notice. */
+const canDraw3D = () => {
+  try {
+    const c = document.createElement('canvas');
+    return !!(c.getContext('webgl2') ?? c.getContext('webgl'));
+  } catch { return false; }
+};
+const versionFromUrl = () => {
+  const v = new URLSearchParams(location.search).get('v');
+  const hit = v ? versions.find((x) => x.id === v) : undefined;
+  return hit ? hit.order : null;
+};
+
 export default function WikiGraph3D() {
   const host = useRef<HTMLDivElement>(null);
   const graph = useRef<ForceGraph3DInstance<PageNode, PageLink> | null>(null);
@@ -174,11 +180,48 @@ export default function WikiGraph3D() {
   const applySky = useRef<(sky: Palette) => void>(() => {});
   const [theme, setTheme] = useState<Theme | null>(null);
   const [failed, setFailed] = useState(false);
-  const [snapshots, setSnapshots] = useState<Record<string, Snapshot[]> | null>(null);
-  const [vIdx, setVIdx] = useState(versions.length - 1);
+  const [snapshots, setSnapshots] = useState<Snapshots | null>(null);
+  const [vIdx, setVIdx] = useState(() => versionFromUrl() ?? versions.length - 1);
   const [selected, setSelected] = useState<string | null>(null);
+  /** the article page open over the chart (URL ?page=), or null for the chart */
+  const [article, setArticle] = useState<string | null>(() => new URLSearchParams(location.search).get('page'));
+
+  // ---------- article pages: the address follows the open page and the version ----------
+  // Opening a page pushes a history entry, so the browser's back button returns to the chart (or the
+  // previous page) with the chart still in place. Version changes replace the current entry.
+  const vNow = useRef(vIdx);
+  vNow.current = vIdx;
+  /** Article pages opened in a row, and whether that row began on the chart (not from a link). */
+  const trail = () => (history.state as { aruDepth?: number; fromChart?: boolean } | null) ?? {};
+  const openArticle = (page: string) => {
+    const t = trail();
+    const depth = t.aruDepth ?? 0;
+    history.pushState({ aruDepth: depth + 1, fromChart: depth > 0 ? !!t.fromChart : article === null }, '', urlFor(page, vNow.current));
+    setArticle(page);
+  };
+  const closeArticle = () => {
+    if (article) setSelected(article); // back on the chart, the page's star stays picked
+    const t = trail();
+    if (t.fromChart && t.aruDepth) history.go(-t.aruDepth); // return to the chart's own entry
+    else { history.pushState(null, '', urlFor(null, vNow.current)); setArticle(null); } // came in by a link
+  };
+  useEffect(() => {
+    const onPop = () => {
+      const q = new URLSearchParams(location.search);
+      const page = q.get('page');
+      setArticle((cur) => { if (cur && !page) setSelected(cur); return page; });
+      const v = versionFromUrl();
+      if (v !== null) setVIdx(v);
+    };
+    addEventListener('popstate', onPop);
+    return () => removeEventListener('popstate', onPop);
+  }, []);
+  useEffect(() => {
+    if (new URLSearchParams(location.search).has('v') || article) history.replaceState(history.state, '', urlFor(article, vIdx));
+  }, [vIdx, article]);
   const [hovered, setHovered] = useState<string | null>(null);
   const [night, setNight] = useState(prefersDark);
+  const [gl] = useState(canDraw3D);
   useEffect(() => {
     const mq = matchMedia('(prefers-color-scheme: dark)');
     const on = () => setNight(mq.matches);
@@ -242,7 +285,7 @@ export default function WikiGraph3D() {
 
   // ---------- scene (built once per theme; versions, selection and sky only restyle it) ----------
   useEffect(() => {
-    if (!theme || !index) return;
+    if (!theme || !index || !gl) return;
     const el = host.current!;
     const g = new ForceGraph3D(el, { controlType: 'orbit', rendererConfig: { antialias: true, powerPreference: 'high-performance' } }) as unknown as ForceGraph3DInstance<PageNode, PageLink>;
     graph.current = g;
@@ -460,7 +503,7 @@ export default function WikiGraph3D() {
       wake.current = fade.current = relabelSoon.current = () => {};
       applySky.current = () => {};
     };
-  }, [theme, index]);
+  }, [theme, index, gl]);
 
   // ---------- sky: recolour in place (keeps layout, camera and selection) ----------
   const firstSky = useRef(true);
@@ -535,38 +578,63 @@ export default function WikiGraph3D() {
   const hubNode = theme && index ? index.byId.get(theme.page) : undefined;
   const themeName = hubNode ? nameOf(hubNode) : '테마';
   // the latest snapshot written for the chosen version or before it
-  const snap = sel && snapshots ? (snapshots[sel.id] ?? []).filter((x) => x.from <= vIdx).at(-1) ?? null : null;
+  const snap = sel && snapshots ? snapshotAt(snapshots[sel.id], vIdx) : null;
   const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.theme_units - a.theme_units) : [];
 
   return (
     <div className={`site graph-page w3d${night ? ' night' : ' day'}`}>
       <div className="wrap"><header>
         <a className="logo" href="./">aru.wiki</a>
-        <div className="legend" aria-label="범례">
+        {article ? (
+          <button type="button" className="w3d-back" onClick={closeArticle}>← 3D 지도</button>
+        ) : <div className="legend" aria-label="범례">
           <span style={{ ['--c' as string]: sky.hub }}><i />테마</span>
           <span style={{ ['--c' as string]: sky.character }}><i />인물</span>
           <span style={{ ['--c' as string]: sky.lore }}><i />로어</span>
           <span className="hint">미리보기 · 별 크기는 {themeName} 이야기에 얼마나 나오는지 · 선은 함께 나오는 이야기가 많을수록 밝고 굵음 · 면 아래가 이른 버전</span>
-        </div>
-        <nav><VersionPicker order={vIdx} onChange={setVIdx} /></nav>
+        </div>}
+        <nav>
+          <a className="band" href="?view=quests">임무 지도</a>
+          <VersionPicker order={vIdx} onChange={setVIdx} />
+        </nav>
       </header></div>
-      <div className="w3d-stage" ref={host}>
+      {article && theme && index && (
+        <WikiArticle page={article} theme={theme} byId={index.byId} snapshots={snapshots} vIdx={vIdx}
+          hrefOf={(p) => urlFor(p, vIdx)} onOpen={openArticle} />
+      )}
+      {article && !theme && <p className="w3d-status">{failed ? '테마 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
+      {/* the chart stays mounted (camera and selection kept) but hidden behind an open article */}
+      <div className={`w3d-stage${article ? ' behind' : ''}`} ref={host} aria-hidden={article ? true : undefined}>
         {!theme && <p className="w3d-status">{failed ? '테마 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
+        {theme && !gl && (
+          <div className="w3d-status w3d-nogl">
+            <p>이 브라우저에서는 3D 화면을 그릴 수 없습니다(WebGL을 쓸 수 없음).</p>
+            <p><a href="?view=quests">임무 지도</a>를 보거나, 아래 문서를 바로 열 수 있습니다.</p>
+            <ul>{[...theme.nodes].sort((a, b) => Number(b.hub) - Number(a.hub) || b.theme_units - a.theme_units)
+              .filter((n) => n.revealed <= vIdx)
+              .map((n) => <li key={n.id}><a href={urlFor(n.id, vIdx)} onClick={(e) => { e.preventDefault(); openArticle(n.id); }}>{nameOf(n)}</a></li>)}</ul>
+          </div>
+        )}
       </div>
-      {sel && (
+      {sel && !article && (
         <aside className="w3d-card" aria-live="polite">
           <p className="w3d-type">{sel.hub ? '테마' : KIND_LABEL[sel.kind]} · {versions[sel.revealed]?.id}부터</p>
           <h2>{nameOf(sel)}</h2>
+          <a className="w3d-more" href={urlFor(sel.id, vIdx)} onClick={(e) => {
+            if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+            e.preventDefault();
+            openArticle(sel.id);
+          }}>자세히 보기 →</a>
           {snapshots && (snap ? (
             <section className="w3d-snap">
               <p className="w3d-snap-head">
                 <span className="tag neutral" title="위키 글을 바탕으로 기계가 쓰고, 다른 회사 모델이 근거와 대조했습니다. 사람은 아직 확인하지 않았습니다.">미검수</span>
                 {' '}{versions[snap.from]?.id} 때의 위키 기준
               </p>
-              {snap.summary && <p className="w3d-summary">{snap.summary}</p>}
-              <ul className="w3d-points">{snap.bullets.map((b, i) => <li key={i}>{b}</li>)}</ul>
+              {snap.summary && <p className="w3d-summary">{snap.summary.t}</p>}
+              <ul className="w3d-points">{snap.bullets.map((b, i) => <li key={i}>{b.t}</li>)}</ul>
               <p className="w3d-src">
-                출처: {snap.sources.map((x, i) => (
+                출처: {snap.sources.filter((x, i, a) => a.findIndex((y) => y.revision === x.revision) === i).map((x, i) => (
                   <span key={x.revision}>{i > 0 && ', '}<a href={revisionUrl(x.page, x.revision)} target="_blank" rel="noreferrer">{x.page}</a> ({x.date} 판)</span>
                 ))}. Fandom 원신 위키(CC BY-SA 3.0)의 글을 요약·번역했습니다.
               </p>

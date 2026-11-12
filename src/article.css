@@ -1,0 +1,59 @@
+/* Article pages of the lore theme (WikiArticle), laid out like an encyclopedia article. */
+.site .wa { flex: 1; min-height: 0; overflow: auto; background: var(--bg); }
+.site .wa-body { max-width: 900px; margin: 0 auto; padding: 22px 20px 48px; line-height: 1.7; }
+.site .wa-body::after { content: ""; display: table; clear: both; }
+.site .wa-title { margin: 0; padding-bottom: 6px; font-size: 1.9rem; font-weight: 600; border-bottom: 1px solid var(--line); }
+.site .wa-sub { margin: 6px 0 14px; color: var(--muted); font-size: .82rem; }
+.site .wa-muted { color: var(--muted); }
+.site .wa-small { font-size: .85rem; }
+.site .wa h2 { clear: none; margin: 28px 0 8px; padding-bottom: 4px; font-size: 1.3rem; font-weight: 600; border-bottom: 1px solid var(--line); }
+.site .wa ul, .site .wa ol { margin: 6px 0; padding-left: 1.4em; }
+.site .wa li + li { margin-top: 4px; }
+
+/* the unreviewed notice, like a maintenance box at the top of an article */
+.site .wa-notice { display: flex; gap: 10px; align-items: flex-start; margin: 0 0 16px; padding: 10px 12px; font-size: .86rem;
+  background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--gold); border-radius: 2px; }
+.site .wa-notice p { margin: 0; line-height: 1.55; }
+.site .wa-notice .tag { flex: none; margin-top: 2px; }
+
+/* infobox: right of the lead on wide screens, on top on phones */
+.site .wa-infobox { float: right; width: 300px; margin: 0 0 16px 20px; padding: 10px 12px; font-size: .85rem; line-height: 1.5;
+  background: var(--card); border: 1px solid var(--line); border-radius: 2px; }
+.site .wa-ib-title { margin: 0 0 8px; padding: 4px; text-align: center; font-weight: 600; font-size: 1rem; background: var(--gold-soft); }
+.site .wa-infobox dl { display: grid; grid-template-columns: minmax(84px, 40%) 1fr; gap: 6px 10px; margin: 0; }
+.site .wa-infobox dt { color: var(--muted); font-weight: 500; }
+.site .wa-infobox dd { margin: 0; overflow-wrap: anywhere; }
+
+.site .wa-lead { margin: 0 0 14px; font-size: 1.05rem; }
+.site .wa-ref { margin-left: 1px; font-size: .7em; line-height: 0; }
+.site .wa-ref a { text-decoration: none; }
+
+.site .wa-toc { display: inline-block; min-width: 200px; margin: 6px 0 4px; padding: 8px 16px 8px 12px; font-size: .9rem;
+  background: var(--card); border: 1px solid var(--line); border-radius: 2px; }
+.site .wa-toc-title { margin: 0 0 2px; font-weight: 600; text-align: center; }
+.site .wa-toc ol { margin: 0; }
+.site .wa-toc li + li { margin-top: 0; }
+
+/* earlier descriptions: one closed box per version */
+.site .wa-ver { margin: 6px 0; background: var(--card); border: 1px solid var(--line); border-radius: 2px; }
+.site .wa-ver summary { display: flex; flex-wrap: wrap; gap: 2px 10px; padding: 7px 12px; cursor: pointer; list-style-position: inside; }
+.site .wa-ver[open] summary { border-bottom: 1px solid var(--line); }
+.site .wa-ver-id { font-weight: 600; }
+.site .wa-ver-head { color: var(--muted); font-size: .88rem; }
+.site .wa-ver[open] .wa-ver-head { display: none; }
+.site .wa-ver ul { margin: 8px 12px 10px; }
+.site .wa-ver-sum { font-weight: 600; }
+
+.site .wa-related { columns: 2 260px; column-gap: 24px; }
+.site .wa-related li { break-inside: avoid; }
+.site .wa-related .wa-muted { font-size: .82rem; }
+.site .wa-notes { font-size: .85rem; }
+.site .wa-notes li:target { background: var(--gold-soft); }
+.site .wa-hidden { margin-top: 14px; color: var(--muted); }
+.site .wa #report { margin-top: 24px; }
+
+@media (max-width: 680px) {
+  .site .wa-body { padding: 16px 14px 40px; }
+  .site .wa-title { font-size: 1.55rem; }
+  .site .wa-infobox { float: none; width: auto; margin: 0 0 14px; }
+}

@@ -66,7 +66,12 @@
 - [x] `~/projects/aru-wiki-3d` 폴더를 새 이력으로 맞췄다(2026-11-11). 옛 브랜치(`backup/old-main`·`backup/old-feat-3d-main`)는 2026-11-12 사용자 결정으로 지웠다. 5174 미리보기 서버는 껐다.
 - [ ] 화면에서 출처·라이선스 표시(카드 이미지는 2026-11-11 완료: 화면 아래 고지, 갈래 정보 카드에 출처·받은 날짜·공개 버전), 삭제 요청 대상 파일을 찾아 지우는 수단(이미지는 `image-files.json`으로 파일과 인물을 찾을 수 있다).
 - [x] contact@aru.wiki 수신과 알림 확인(2026-11-12, 사용자).
-- [ ] OCI 인스턴스 받아 배포(사람: SSH, 포트, DNS). 2026-11-12 사용자: 지금 바로 받을 수 있다. 사양: A2 1 OCPU·2GB(무료 A1 한도는 사용자 말로 2 OCPU로 줄었고 gscouter가 쓰는 중). 빌드는 서버에서 하지 않고(메모리 부족) 로컬에서 `fetch:icons`→`build` 후 `dist/`만 rsync, 서버에는 Caddy와 report-server만. 스왑 1~2GB.
+- [ ] OCI 배포(2026-11-12 시작). 서버 `147.224.187.173`(A2 1 OCPU·2GB, Ubuntu 24.04, 사용자 `ubuntu`). 이 컴퓨터의 `~/.ssh/aru-deploy` 키로 접속한다(서버 `authorized_keys`에서 그 줄을 지우면 막힌다).
+  - 서버에 한 것: 스왑 2GB, iptables 80·443 허용(저장), Caddy 2.6, Node 18(Ubuntu 패키지; report-server는 내장 모듈만 써서 돌아간다). 사이트 `/srv/aru/site`, 신고 데몬 `/opt/aru-report` + `aru-report.service`(DynamicUser, 기록 `/var/lib/aru-report/reports.jsonl`). Caddyfile은 임시로 `:80`(IP, HTTP).
+  - 배포: 로컬에서 `npm run fetch:icons` → `npm run build` → `rsync -az --delete -e "ssh -i ~/.ssh/aru-deploy" dist/ ubuntu@147.224.187.173:/srv/aru/site/`.
+  - [ ] 사람: OCI 보안 목록(Security List)에 TCP 80·443 수신 허용. 지금은 밖에서 안 열린다.
+  - [ ] 사람: `aru.wiki` DNS A 레코드 → 147.224.187.173(현재 A 레코드 없음).
+  - [ ] DNS가 되면 Caddyfile을 `aru.wiki`로 바꿔 HTTPS를 켠다. 그때 `/`(index.html)에도 `no-cache`가 걸리게 고친다.
 
 ## 기다리는 것
 

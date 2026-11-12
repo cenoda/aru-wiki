@@ -155,18 +155,25 @@ function nebulaTexture(seed: number, tint: string) {
   return new CanvasTexture(c);
 }
 
-/** nebula clouds: direction from the chart's centre, size, tint (night) */
-const NEBULAE: { dir: [number, number, number]; size: number; tint: string; seed: number }[] = [
-  // behind the chart as first seen
-  { dir: [-0.45, 0.2, -1], size: 2400, tint: '#6f5bd6', seed: 11 },
-  { dir: [0.5, -0.15, -1], size: 2200, tint: '#3f7fc4', seed: 29 },
-  { dir: [0.05, 0.45, -1], size: 1800, tint: '#b0549c', seed: 47 },
-  { dir: [-0.15, -0.45, -1], size: 1700, tint: '#3f9fa8', seed: 83 },
-  // around the sides, for when the chart is turned
-  { dir: [1, 0.15, -0.1], size: 2200, tint: '#c27a4a', seed: 101 },
-  { dir: [-1, -0.1, 0.3], size: 2200, tint: '#5a6ad0', seed: 131 },
-  { dir: [0.2, 0.2, 1], size: 2400, tint: '#7a4fb8', seed: 151 },
-];
+/**
+ * Background clouds: direction from the chart's centre, size, tint, noise seed. Night sky: coloured
+ * nebulae (added light). Day sky: pale watercolour clouds. Most sit behind the chart as first seen
+ * (-z), the rest around it so a turned chart still has some. Fixed seeds: the sky is the same each visit.
+ */
+type Cloud = { dir: [number, number, number]; size: number; tint: string; seed: number };
+function clouds(count: number, tints: string[], seed: number, behind: number): Cloud[] {
+  let st = seed;
+  const rnd = () => ((st = (st * 48271) % 2147483647) / 2147483647);
+  return Array.from({ length: count }, (_, i) => {
+    const back = i < behind;
+    const dir: [number, number, number] = back
+      ? [(rnd() - 0.5) * 1.6, (rnd() - 0.5) * 1.1, -1]
+      : (() => { const a = rnd() * Math.PI * 2; return [Math.cos(a), (rnd() - 0.5) * 0.8, Math.sin(a) * 0.9 + 0.2] as [number, number, number]; })();
+    return { dir, size: 1300 + rnd() * 1500, tint: tints[i % tints.length], seed: 7 + i * 31 + seed };
+  });
+}
+const NEBULAE = clouds(15, ['#6f5bd6', '#3f7fc4', '#b0549c', '#3f9fa8', '#c27a4a', '#5a6ad0', '#7a4fb8', '#d0648a'], 1, 9);
+const DAY_CLOUDS = clouds(10, ['#f4c7ae', '#b9cff5', '#d9c6f2', '#f6e1a8', '#bfe3df'], 5, 6);
 const starColour = (n: PageNode, sky: Palette) => (n.hub ? sky.hub : sky[n.kind]);
 /** Names are smaller on portrait screens (their size is relative to the view height). */
 const labelScale = (el: HTMLElement) => Math.min(1, (el.clientWidth / Math.max(1, el.clientHeight)) * 1.3);
@@ -177,7 +184,7 @@ interface StarParts {
   /** label height before the screen-shape factor */
   baseHeight: number;
 }
-interface LineParts { mat: LineMaterial; target: number; color: Color }
+interface LineParts { mat: LineMaterial; target: number; color: Color; line?: Line2; phase: number }
 
 /** What the current version, selection and theme ask of each star and line. */
 interface Look {
@@ -468,15 +475,16 @@ export default function WikiGraph3D() {
       })
       .linkThreeObject((l) => {
         const w = strength(l);
-        const parts: LineParts = { mat: null as unknown as LineMaterial, target: 0, color: new Color() };
+        const parts: LineParts = { mat: null as unknown as LineMaterial, target: 0, color: new Color(), phase: (lines.current.size * 0.618) % 1 };
         lineLook(l, lookNow.current, parts);
-        const mat = new LineMaterial({ color: parts.color, linewidth: 0.5 + 0.8 * w, transparent: true, opacity: 0, depthWrite: false });
+        const mat = new LineMaterial({ color: parts.color, vertexColors: true, linewidth: 0.5 + 0.8 * w, transparent: true, opacity: 0, depthWrite: false });
         mat.fog = true;
         mat.resolution.copy(resolution);
         parts.mat = mat;
         lines.current.set(l, parts);
         fade.current();
         const line = new Line2(new LineGeometry(), mat);
+        parts.line = line;
         line.raycast = () => {}; // lines are not clickable
         return line;
       })
@@ -755,19 +763,55 @@ export default function WikiGraph3D() {
       transparent: true, opacity: night0 ? 0.35 : 0.14, depthWrite: false, fog: false }));
     dust.raycast = () => {};
     g.scene().add(dust);
-    // nebulae far behind the chart, among the background stars; very faint so the stars stay first
-    const nebulae = NEBULAE.map((nb) => {
+    // nebulae (night) and pale clouds (day) far behind the chart, among the background stars; faint so
+    // the stars stay first. Only the current sky's set is visible.
+    const cloudSprite = (nb: Cloud, day: boolean) => {
       const mat = new SpriteMaterial({ map: nebulaTexture(nb.seed, nb.tint), transparent: true, depthWrite: false, fog: false,
-        blending: AdditiveBlending, opacity: night0 ? 0.5 : 0 });
+        blending: day ? NormalBlending : AdditiveBlending, opacity: day ? 0.9 : 0.45 });
       const sp = new Sprite(mat);
-      const d = new Vector3(...nb.dir).normalize().multiplyScalar(2200);
+      sp.visible = day !== night0;
+      const d = new Vector3(...nb.dir).normalize().multiplyScalar(2200 + (nb.seed % 7) * 60);
       sp.position.copy(d);
       sp.scale.setScalar(nb.size);
       sp.renderOrder = -2;
       sp.raycast = () => {};
       g.scene().add(sp);
       return sp;
-    });
+    };
+    const nebulae = NEBULAE.map((nb) => cloudSprite(nb, false));
+    // Line brightness changes along each line: brighter where it meets its stars, softer in the
+    // middle, with a slow glint of light running along it. It moves only while the chart is drawn
+    // (the scene sleeps when the reader stops), so a still chart costs nothing.
+    const flowStart = performance.now();
+    type ColorAttr = { data: { array: Float32Array; needsUpdate: boolean } };
+    g.scene().onBeforeRender = () => {
+      const t = (performance.now() - flowStart) / 1000;
+      for (const p of lines.current.values()) {
+        const geo = p.line?.geometry as LineGeometry | undefined;
+        const start = geo?.getAttribute('instanceStart');
+        if (!geo || !start) continue;
+        const segs = start.count;
+        let cs = geo.getAttribute('instanceColorStart') as unknown as ColorAttr | undefined;
+        if (!cs || cs.data.array.length !== segs * 6) {
+          geo.setColors(new Array((segs + 1) * 3).fill(1));
+          cs = geo.getAttribute('instanceColorStart') as unknown as ColorAttr;
+        }
+        const arr = cs.data.array;
+        const head = ((t * 0.09 + p.phase) % 1.6) - 0.3; // the glint runs past both ends, then comes round again
+        const bright = (u: number) => {
+          const ends = 0.5 + 0.5 * Math.abs(2 * u - 1) ** 1.6;
+          const glint = Math.exp(-(((u - head) / 0.07) ** 2)) * 0.7;
+          return Math.min(1.25, ends + glint);
+        };
+        for (let i = 0; i < segs; i++) {
+          const a = bright(i / segs), b = bright((i + 1) / segs);
+          arr[i * 6] = arr[i * 6 + 1] = arr[i * 6 + 2] = a;
+          arr[i * 6 + 3] = arr[i * 6 + 4] = arr[i * 6 + 5] = b;
+        }
+        cs.data.needsUpdate = true;
+      }
+    };
+    const dayClouds = DAY_CLOUDS.map((nb) => cloudSprite(nb, true));
 
     applySky.current = (s) => {
       fog.color.set(s.sky);
@@ -781,7 +825,8 @@ export default function WikiGraph3D() {
       for (const t of tethers) t.line.material.color.set(s.line);
       for (const r of refLines) r.mat.color.set(s.line);
       paintTails.current();
-      for (const nb of nebulae) nb.material.opacity = s.night ? 0.5 : 0;
+      for (const nb of nebulae) nb.visible = s.night;
+      for (const c of dayClouds) c.visible = !s.night;
       dust.material.color.set(s.night ? '#c9d3ff' : '#7a87ad');
       dust.material.opacity = s.night ? 0.35 : 0.14;
       wakeUp();
@@ -878,7 +923,8 @@ export default function WikiGraph3D() {
       showTethers.current = () => {};
       placeNow.current = () => {};
       dust.geometry.dispose(); dust.material.dispose();
-      for (const nb of nebulae) { nb.material.map?.dispose(); nb.material.dispose(); }
+      for (const nb of [...nebulae, ...dayClouds]) { nb.material.map?.dispose(); nb.material.dispose(); }
+      g.scene().onBeforeRender = () => {};
       g._destructor();
       el.replaceChildren();
       graph.current = null;

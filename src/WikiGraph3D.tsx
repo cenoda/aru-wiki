@@ -153,6 +153,28 @@ function lineLook(l: PageLink, look: Look, out: LineParts) {
       : look.inFocus(s) && look.inFocus(t) ? 0.12 + 0.4 * w : 0.04;
 }
 
+/**
+ * A line as a gentle curve instead of a straight stroke: a quadratic arc bowed sideways around the
+ * theme star (all in the same turning direction, like the arms of a spiral galaxy). The bow grows
+ * with the line's length and is small near the centre, so short ties stay almost straight.
+ */
+const CURVE_STEPS = 20;
+function curve(a: { x: number; y: number; z: number }, b: { x: number; y: number; z: number }) {
+  const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2, mz = (a.z + b.z) / 2;
+  const len = Math.hypot(b.x - a.x, b.y - a.y, b.z - a.z);
+  const r = Math.hypot(mx, mz) || 1;
+  // turning direction around the vertical axis through the theme star, at the middle of the line
+  const tx = -mz / r, tz = mx / r;
+  const bow = len * 0.22 * Math.min(1, r / 60);
+  const cx = mx + tx * bow, cy = my, cz = mz + tz * bow;
+  const out: number[] = [];
+  for (let i = 0; i <= CURVE_STEPS; i++) {
+    const t = i / CURVE_STEPS, u = 1 - t;
+    out.push(u * u * a.x + 2 * u * t * cx + t * t * b.x, u * u * a.y + 2 * u * t * cy + t * t * b.y, u * u * a.z + 2 * u * t * cz + t * t * b.z);
+  }
+  return out;
+}
+
 /** The address of the chart (`null`), or of an article page by its address name, at a version. */
 const urlFor = (name: string | null, order: number) => articleUrl(name, versions[order]?.id ?? '');
 /** Whether this browser can draw WebGL at all; without it the chart is replaced by a notice. */
@@ -375,7 +397,7 @@ export default function WikiGraph3D() {
       })
       .linkPositionUpdate((obj, { start, end }) => {
         const geo = (obj as Line2).geometry as LineGeometry;
-        geo.setPositions([start.x, start.y, start.z, end.x, end.y, end.z]);
+        geo.setPositions(curve(start, end));
         return true;
       })
       .d3VelocityDecay(0.3)
@@ -464,7 +486,8 @@ export default function WikiGraph3D() {
       for (const n of list) if (n.hub) hubPos.set(n.x ?? 0, n.y ?? 0, n.z ?? 0);
       for (const n of list) {
         if (n.hub || index.near.has(n.id)) continue;
-        const geo = new BufferGeometry().setFromPoints([hubPos, new Vector3(n.x ?? 0, n.y ?? 0, n.z ?? 0)]);
+        const c = curve(hubPos, { x: n.x ?? 0, y: n.y ?? 0, z: n.z ?? 0 });
+        const geo = new BufferGeometry().setFromPoints(Array.from({ length: c.length / 3 }, (_, i) => new Vector3(c[i * 3], c[i * 3 + 1], c[i * 3 + 2])));
         const loose = new Line(geo, new LineDashedMaterial({ color: lookNow.current.sky.line, dashSize: 3, gapSize: 4, transparent: true, opacity: 0.35, depthWrite: false }));
         loose.computeLineDistances();
         loose.raycast = () => {};

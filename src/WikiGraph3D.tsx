@@ -393,6 +393,17 @@ export default function WikiGraph3D() {
   const paintTails = useRef<() => void>(() => {});
   /** the time ruler drawn over the left edge of the chart */
   const rulerBox = useRef<HTMLDivElement>(null);
+  // The card sits in the fixed page, so its height limit has to leave out the header; on phones the header wraps
+  // to several lines and the card's top (with "자세히 보기") used to slide under it with nothing left to scroll.
+  const headBox = useRef<HTMLDivElement>(null);
+  const [headH, setHeadH] = useState(0);
+  useEffect(() => {
+    const el = headBox.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setHeadH(el.offsetHeight));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
   const [theme, setTheme] = useState<Theme | null>(null);
   const [failed, setFailed] = useState(false);
   const [snapshots, setSnapshots] = useState<Snapshots | null>(null);
@@ -1226,8 +1237,8 @@ export default function WikiGraph3D() {
   const neighbours = sel && focus ? [...focus.one].map((id) => index!.byId.get(id)!).sort((a, b) => b.theme_units - a.theme_units) : [];
 
   return (
-    <div className={`site graph-page w3d${night ? ' night' : ' day'}`}>
-      <div className="wrap"><header>
+    <div className={`site graph-page w3d${night ? ' night' : ' day'}`} style={{ ['--w3d-head' as string]: `${headH}px` }}>
+      <div className="wrap" ref={headBox}><header>
         <a className="logo" href="/"><Logo />aru.wiki</a>
         {article ? (
           <button type="button" className="w3d-back" onClick={closeArticle}>← 3D 위키</button>

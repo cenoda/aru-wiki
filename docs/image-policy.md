@@ -46,6 +46,15 @@
 - 공개 버전은 Fandom 덤프 캐릭터 정보 상자의 `releaseDate`에서 계산하고, 버전 선택기가 그보다 앞이면 아이콘 대신 지역 문장을 보인다. 데이터 범위(7.1) 밖이면 받지 않는다.
 - 이미지가 없는 카드는 자체 제작 지역 문장(`src/emblems.tsx`, 미리보기 `?view=emblems`). 지역마다 떠올리기 쉬운 건물·지형의 실루엣이다(2026-11-11 사용자 확인).
 
+## 4-1. 공식 영상 (2026-11-13)
+
+- 문서에 원신 공식 YouTube 채널(한국, `@genshinimpact_kr`)의 영상을 붙인다. 파일을 받지 않고 YouTube 미리보기 그림(`i.ytimg.com`)과 누를 때만 열리는 플레이어(`youtube-nocookie.com`)로 보여 준다(`src/Videos.tsx`).
+- 짝짓기: `scripts/youtube/fetch-uploads.mjs`(업로드 목록, YouTube Data API) → `candidates.mjs`(제목에 문서 한국어 이름이 나오는 영상) → `judge.mjs`(Gemini 3.8 Flash·Gemini 4 Hydrogen이 문서를 다룬 영상만 고름, 2026-11-13 사용자 결정) → `refresh.mjs`. 결과는 `data/generated/videos.json`(영상 ID, 대표 여부, 버전, 제목).
+- 버전: 영상 게시일 + 20일 이전에 나온 마지막 버전. 버전 선택기가 그보다 앞이면 보이지 않는다.
+- HoYoFair(팬 창작)는 후보에서 뺀다. 아동용(Made for Kids)·비공개·삽입 불가 영상은 `refresh.mjs`가 뺀다(YouTube API 정책 III.E.4(j)).
+- **30일마다 `with-youtube node scripts/youtube/refresh.mjs`를 돌린다.** YouTube API 정책 III.E.4(c)(d)는 받은 데이터를 30일 안에 새로 받거나 지우게 한다. ID에 대한 예외 조항은 찾지 못했다. 제목 캐시(`.cache/youtube/`)도 30일이 지나면 같은 스크립트가 지운다.
+- API 키는 `~/.config/youtube/key.env`(IP 제한), `with-youtube` 래퍼로만 쓴다.
+
 ## 5. 변경 이력
 
 - 2026-11-11: 아이콘 PNG를 리포지토리에서 뺐다(사용자 결정). 2026-11-11에 올라간 커밋 이력에는 남아 있다.

@@ -14,6 +14,7 @@ import {
 } from './lore';
 import { editsFor, hasHumanPage, humanPage, overlay, type Para, paraText, versionOrder } from './readerEdits';
 import { ReportBox } from './ReportBox';
+import { useVideos, Video, VideoSection } from './Videos';
 import { BY_SA_3, BY_SA_4, historyUrl, Lic, LicensePageLink, wikiRevisions } from './license';
 import { AddBlock, MySuggestions, ParaBlock, type Target, useReaderEdits } from './Suggest';
 import './article.css';
@@ -107,6 +108,7 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
    * A page that exists but is not revealed yet (a generated one, or one readers wrote at a later version) keeps its name hidden. */
   const fresh = !node && !written && pub !== null && !hasHumanPage(page, pub);
   const vId = versions[vIdx]?.id ?? '';
+  const videos = useVideos(page, vIdx);
   const timeline = loading ? [] : data.d.timeline.filter((t) => t.v <= vIdx);
   const snapSrc = (r: number): ArtSource | undefined => { const s = current?.sources[r]; return s && { kind: 'wiki', ...s }; };
 
@@ -144,7 +146,7 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
   useEffect(() => { root.current?.scrollTo(0, 0); }, [page]);
   useEffect(() => {
     const before = document.title;
-    document.title = revealed && node ? `${nameOf(node)} - aru.wiki` : written ? `${written.title} - aru.wiki` : fresh ? `${page} - aru.wiki` : 'aru.wiki';
+    document.title = revealed && node ? `${nameOf(node)} - 아루위키` : written ? `${written.title} - 아루위키` : fresh ? `${page} - 아루위키` : '아루위키 (aru.wiki)';
     return () => { document.title = before; };
   }, [revealed, node, written?.title, fresh, page]);
 
@@ -235,6 +237,7 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
     ...(art ? art.sections.map((x, i) => ({ id: `s${i + 1}`, label: x.h })) : []),
     !art && current && { id: 'overview', label: '개요' },
     timeline.length > 0 && { id: 'timeline', label: '버전별 공개 연표' },
+    videos.length > 1 && { id: 'videos', label: '공식 영상' },
     related.length > 0 && { id: 'related', label: '관련 문서' },
     notes.list.length > 0 && { id: 'notes', label: '각주' },
     { id: 'license', label: '출처와 라이선스' },
@@ -257,6 +260,7 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
 
         <aside className="wa-infobox" aria-label="정보 상자">
           <p className="wa-ib-title">{name}</p>
+          {videos[0] && <div className="wa-ib-video"><Video v={videos[0]} title={`${name} 공식 영상`} />{videos[0].t && <p className="wa-small wa-muted">{videos[0].t} (YouTube)</p>}</div>}
           <dl>
             {node.ko && <><dt>영어 이름</dt><dd lang="en">{node.id}</dd></>}
             <dt>분류</dt><dd>{KIND_LABEL[node.kind]}</dd>
@@ -343,6 +347,8 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
             </ol>
           </section>
         )}
+
+        <VideoSection list={videos.slice(1)} name={name} />
 
         {related.length > 0 && (
           <section id="related">

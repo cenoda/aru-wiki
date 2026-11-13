@@ -1,5 +1,6 @@
 // Shared by the lore theme's 3D chart (WikiGraph3D) and its article pages (WikiArticle).
 import redNamesUrl from '../data/runtime/redlinks.json?url';
+import videosUrl from '../data/runtime/videos.json?url';
 
 /** One line of a snapshot and the footnote (index into the snapshot's sources) behind it. */
 export interface SnapLine { t: string; r: number }
@@ -76,3 +77,9 @@ export type RedName = readonly [name: string, revealed: number];
 let redCache: Promise<RedName[]> | null = null;
 /** Names that become red links (scripts/build-runtime-data.mjs redlinks.json), fetched once. */
 export const loadRedNames = (): Promise<RedName[]> => (redCache ??= fetch(redNamesUrl).then((r) => (r.ok ? r.json() : [])).catch(() => []));
+
+/** An official YouTube video for a page (scripts/youtube/): `v` is the version order it belongs to. */
+export interface PageVideo { id: string; t?: string; main?: boolean; v: number }
+let videoCache: Promise<Record<string, PageVideo[]>> | null = null;
+/** Official videos by page (scripts/build-runtime-data.mjs videos.json), fetched once. */
+export const loadVideos = () => (videoCache ??= fetch(videosUrl).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));

@@ -348,5 +348,16 @@ function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
     const at = firstOrder(l.units);
     if (!red.has(ko) || red.get(ko) > at) red.set(ko, at);
   }
+  // official YouTube videos per page (scripts/youtube/judge.mjs): id, main/extra, the version order it belongs to
+  {
+    const vf = new URL('data/generated/videos.json', root);
+    const vids = existsSync(vf) ? JSON.parse(await readFile(vf, 'utf8')).pages : {};
+    const out = {};
+    for (const [page, list] of Object.entries(vids)) {
+      out[page] = list.map((x) => ({ id: x.id, t: x.title, main: x.role === 'main' || undefined, v: order.get(x.version) ?? lastOrder }))
+        .sort((a, b) => Number(!!b.main) - Number(!!a.main) || a.v - b.v);
+    }
+    await write('videos.json', out);
+  }
   await write('redlinks.json', [...red].sort((a, b) => a[0].localeCompare(b[0], 'ko')));
 }

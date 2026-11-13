@@ -85,6 +85,8 @@ const TOOLS = {
   flash: (prompt, schema, cwd) => agy(process.env.AGY_MODEL ?? 'gemini-3.8-flash-low', prompt, schema, cwd),
   // article writer (user, 2026-11-12: Gemini 3.8 Flash, thinking medium or lower)
   'flash-medium': (prompt, schema, cwd) => agy('gemini-3.8-flash-medium', prompt, schema, cwd),
+  // official-video matching (user, 2026-11-13: Gemini 3.8 Flash or Gemini 4 Hydrogen)
+  hydrogen: (prompt, schema, cwd) => agy(process.env.HYDROGEN_MODEL ?? 'gemini-4-hydrogen-low', prompt, schema, cwd),
   'agy-sonnet': (prompt, schema, cwd) => agy('claude-sonnet-5-5-medium', prompt, schema, cwd),
   // Claude Sonnet 5.5 on the API credit, at the same effort as the Antigravity model above.
   async 'sonnet-api'(prompt, schema) {
@@ -467,7 +469,7 @@ export async function ask(tool, prompt, schema) {
 // ---------- several tools at once ----------
 // Which company each tool's model comes from: a writer's text is checked by another company's model.
 export const COMPANY = { ds: 'deepseek', 'ds-pro': 'deepseek', 'or-ds': 'deepseek', qwen: 'alibaba', claude: 'anthropic', 'claude-sonnet': 'anthropic', 'sonnet-api': 'anthropic', haiku: 'anthropic', sonnet: 'anthropic', 'agy-sonnet': 'anthropic',
-  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg', deepseek: 'deepseek', mimo: 'xiaomi', kimi: 'moonshot', glm: 'zhipu', 'glm-flash': 'zhipu' };
+  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', hydrogen: 'google', grok: 'xai', exaone: 'lg', deepseek: 'deepseek', mimo: 'xiaomi', kimi: 'moonshot', glm: 'zhipu', 'glm-flash': 'zhipu' };
 const slots = new Map();
 /** At most `limit` calls of one tool at a time (LLM_SLOTS="grok=6,flash-medium=4" overrides). */
 function slotOf(tool) {

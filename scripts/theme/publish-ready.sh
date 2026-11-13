@@ -15,6 +15,11 @@ git worktree remove --force "$WT" 2>/dev/null || true
 git fetch -q origin main
 git worktree add -q --detach "$WT" origin/main
 trap 'cd "$MAIN"; git worktree remove --force "$WT" 2>/dev/null || true' EXIT
+# only a copy with more articles than GitHub's goes up: another session's name fixes rewrite articles-all.json there,
+# and an older ready copy with the same articles would undo them (2026-11-13: 쿠바키, 기문술 put back)
+had=$(node -e 'console.log(require(process.argv[1]).articles.length)' "$WT/data/generated/articles-all.json")
+new=$(node -e 'console.log(require(process.argv[1]).articles.length)' "$MAIN/$READY")
+if [ "$new" -le "$had" ] && [ "${FORCE:-}" != 1 ]; then echo "ready copy has $new articles, GitHub $had: not used"; touch "$MAIN/$STAMP"; exit 0; fi
 cp "$READY" "$WT/data/generated/articles-all.json"
 cp data/manual/ko-names-llm.json "$WT/data/manual/ko-names-llm.json"
 cd "$WT"

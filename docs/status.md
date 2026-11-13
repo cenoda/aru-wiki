@@ -109,7 +109,7 @@
 - [ ] 2단계 노드와 나머지 인물: 직접 촬영·기여. 경로가 생기는 만큼 붙인다.
 - [x] 문서의 공식 영상(2026-11-13, [이미지 방침 4-1절](image-policy.md)): 공식 YouTube 채널 영상을 문서 정보 상자와 「공식 영상」 절에 붙였다. 제목에 이름이 나오는 문서만 판정했고, 처음 나온 버전의 버전 PV로 빈 문서를 채울지는 정하지 않았다.
 - [x] 공식 영상 30일 갱신(2026-11-13): 이 VM의 cron이 매달 1일·15일 03:17 UTC에 `scripts/youtube/auto-refresh.sh`를 돌린다(전용 worktree `~/projects/aru-wiki-refresh`에서 갱신 → `videos.json`만 `main`에 커밋·push → 빌드·배포, 사용자 허락). 기록 `~/.local/state/aru-refresh.log`. 그래서 `main`이 자동 커밋으로 앞서 있을 수 있으니 push 전에 pull한다.
-- [ ] 삭제 요청 수단(`scripts/takedown.mjs`)이 공식 영상은 아직 다루지 않는다.
+- [x] 삭제 요청 수단(`scripts/takedown.mjs`)이 공식 영상도 다룬다(2026-11-13): 영상 ID·YouTube 주소·`video:`로 찾아 `takedown.json`의 `videos`에 적는다. `build-runtime-data.mjs`와 `youtube/refresh.mjs`가 막은 영상을 뺀다. 글과 영상은 서로 따로 막는다([docs/takedown.md](takedown.md) 2절).
 
 ### 공개 전
 

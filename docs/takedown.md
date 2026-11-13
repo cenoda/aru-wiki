@@ -6,7 +6,7 @@
 
 ## 1. 메일을 받으면
 
-1. 무엇을 지워 달라는지 적어 둔다: URL, 인물 이름, 파일 이름, 임무 이름, 위키 문서 이름.
+1. 무엇을 지워 달라는지 적어 둔다: URL, 인물 이름, 파일 이름, 임무 이름, 위키 문서 이름, YouTube 영상 주소.
 2. 72시간 안에 "받았고 확인 중"이라고 먼저 답한다(rights-risk.md 7절).
 3. HoYoverse의 요청은 바로 따른다. 다른 권리자의 요청은 무엇에 대한 권리인지 확인한다.
 
@@ -16,12 +16,17 @@
 node scripts/takedown.mjs find 알베도
 node scripts/takedown.mjs find https://aru.wiki/img/characters/Albedo.png
 node scripts/takedown.mjs find "page:Khaenri'ah"
+node scripts/takedown.mjs find https://www.youtube.com/watch?v=VAkFSNajRe8
+node scripts/takedown.mjs find video:알베도
 ```
 
 - 인물 이름(한국어·영어), 파일 이름, URL(aru.wiki 이미지, Enka 아이콘, Fandom 문서), 임무 id나 임무 이름을 넣을 수 있다. 여러 개를 한 번에 넣어도 된다.
 - "정확히 맞는 것"만 막는다. "비슷한 것"은 막지 않는다. 맞으면 그 이름으로 다시 찾는다.
 - 글(위키 문서)은 `page:이름`이나 Fandom URL로 찾을 때만 막는다. 이미지 요청 때문에 같은 인물의 글까지 막히지 않게 하려는 것이다.
-- 종류를 좁히려면 앞에 `character:` `file:` `act:` `page:`를 붙인다.
+- 공식 영상(YouTube)은 영상 ID(`VAkFSNajRe8`), YouTube 주소(`youtube.com/watch?v=`, `youtu.be/`, `youtube-nocookie.com/embed/`, `i.ytimg.com/vi/<ID>/...` 미리보기 그림), `video:<ID>`로 찾을 때 그 영상 하나만 막는다. `video:문서이름`(예: `video:알베도`)은 그 문서에 붙은 영상을 모두 막는다.
+- 문서 이름만 넣거나 `page:`로 찾으면 그 문서의 영상은 "비슷한 것"으로만 보인다. 글을 막아도 영상은 막히지 않고, 영상을 막아도 글은 막히지 않는다. 둘 다 막으려면 `page:이름`과 `video:이름`을 함께 넣는다.
+- `video:<ID>`는 지금 `videos.json`에 없는 영상도 막는다(나중에 다시 붙지 않게 미리 막을 때).
+- 종류를 좁히려면 앞에 `character:` `file:` `act:` `page:` `video:`를 붙인다.
 
 ## 3. 막기와 로컬 파일 지우기
 
@@ -33,8 +38,15 @@ node scripts/takedown.mjs block 알베도 --requester "HoYoverse" --reason "2026
 
 맞으면 `--apply`를 붙여 다시 실행한다. 그러면:
 
-- `data/manual/takedown.json`에 항목이 하나 생긴다(날짜, 요청자, 사유, 막은 인물·파일·임무·문서).
+- `data/manual/takedown.json`에 항목이 하나 생긴다(날짜, 요청자, 사유, 막은 인물·파일·임무·문서·영상 ID).
 - `public/`과 `dist/`에서 그 파일을 지운다. 글이면 `data/runtime/articles/`와 `dist/assets/`의 그 문서 파일도 지운다.
+- 영상이면 `data/runtime/videos.json`과 `dist/assets/videos-*.json`에서 그 영상만 뺀다(이 파일에는 모든 문서의 영상이 들어 있어서 지우지 않고 고쳐 쓴다).
+
+영상 예:
+
+```
+node scripts/takedown.mjs block https://youtu.be/VAkFSNajRe8 --requester "HoYoverse" --reason "2026-11-20 메일: 알베도 플레이 영상 삭제 요청"
+```
 
 `--requester`에는 개인 이름이나 메일 주소를 쓰지 않는다("HoYoverse", "권리자"처럼). 이 파일은 공개 저장소와 사이트 코드에 들어간다. 메일 원문은 메일함에 둔다.
 
@@ -43,6 +55,7 @@ node scripts/takedown.mjs block 알베도 --requester "HoYoverse" --reason "2026
 - 인물·파일: `npm run fetch:icons`가 받지 않는다. 화면 카드는 지역 문장을 보인다.
 - 임무 카드: 그 카드만 아이콘 대신 지역 문장을 보인다.
 - 글: 아직 화면에서 숨기는 연결이 없다(아래 5절). 그때까지는 사람이 알려 줘야 한다.
+- 영상: `scripts/build-runtime-data.mjs`가 `data/runtime/videos.json`을 쓸 때 빼고, `scripts/youtube/refresh.mjs`(2주마다 cron)가 `data/generated/videos.json`에서 뺀다. 그래서 정기 갱신이 다시 넣지 않는다. 사이트 코드(`src/`)는 `takedown.json`을 읽지 않는다. `data/generated/videos.json`에는 다음 갱신 때까지 남아 있을 수 있지만 사이트에는 실리지 않는다(`check`가 "참고"로 알려 준다).
 
 ## 4. 다시 배포
 
@@ -52,6 +65,8 @@ npm run fetch:icons
 npm run build
 rsync -az --delete -e "ssh -i ~/.ssh/aru-deploy" dist/ ubuntu@147.224.187.173:/srv/aru/site/
 ```
+
+영상은 우리 서버에 파일이 없으므로 `curl`로 볼 것이 없다. 배포 뒤 그 문서에서 영상이 사라졌는지 화면으로 본다.
 
 배포는 `.claude/skills/deploy` 스킬로 해도 된다. `--delete` 때문에 서버에서도 지운 파일이 사라진다. 그다음 `check`가 보여 주는 `curl` 명령으로 지운 이미지 주소가 404인지 본다. `takedown.json` 변경은 커밋하고 push한다.
 

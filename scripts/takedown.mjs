@@ -4,11 +4,15 @@
 //       List every record and local file that matches. A query is a character name (en or ko),
 //       an act id or act name (en or ko), a file name ("Albedo.png", "Ambor"), a wiki page name,
 //       or a URL (aru.wiki image, Enka icon, Fandom page). Prefix a kind to narrow it:
-//       character:, act:, file:, page:  (e.g. "page:Khaenri'ah"). Text pages are blocked only
-//       with page: or a Fandom URL; a plain name lists them as suggestions.
+//       character:, act:, file:, page:, video:  (e.g. "page:Khaenri'ah"). Text pages are blocked
+//       only with page: or a Fandom URL; a plain name lists them as suggestions.
+//       Official YouTube videos are blocked only with a video ID, a YouTube URL (watch, youtu.be,
+//       embed, i.ytimg.com still) or video:<id or page name>; a page name (with or without page:)
+//       lists that page's videos as suggestions, and a video query never blocks the page text.
 //   node scripts/takedown.mjs block <query>... --requester "..." --reason "..." [--apply]
 //       Add one entry to data/manual/takedown.json with the exact matches, and delete their local
-//       copies (public/, dist/, data/runtime/articles/). Without --apply it only prints the plan.
+//       copies (public/, dist/, data/runtime/articles/; blocked videos are cut out of
+//       data/runtime/videos.json and dist/assets/videos-*.json). Without --apply it only prints the plan.
 //   node scripts/takedown.mjs clean [--apply]   delete local copies of everything already blocked
 //   node scripts/takedown.mjs check             is anything blocked still here? (+ live URLs to test)
 //   node scripts/takedown.mjs list              the entries in data/manual/takedown.json
@@ -42,6 +46,14 @@ const articles = readJson('data/generated/articles-khaenriah.json', { articles: 
 const snapshots = readJson('data/generated/snapshots-khaenriah.json', { snapshots: [] }).snapshots;
 const manualIcons = readJson('data/manual/enka-icons.json', { characters: {} }).characters;
 const manualFigures = readJson('data/manual/card-figures.json', { acts: {} }).acts;
+const videoPages = readJson('data/generated/videos.json', { pages: {} }).pages ?? {};
+/** video id → { title, pages } for every official video an article shows */
+const videos = new Map();
+for (const [page, list] of Object.entries(videoPages)) for (const x of list) {
+  const v = videos.get(x.id) ?? videos.set(x.id, { title: x.title, pages: new Set() }).get(x.id);
+  v.pages.add(page);
+}
+const VIDEO_ID = /^[A-Za-z0-9_-]{11}$/;
 
 /** Pages whose text the site ships (theme graph, snapshots, articles), with where each appears. */
 const textPages = new Map();
@@ -56,7 +68,7 @@ const koOf = (page) => figures.characters[page]?.ko ?? koNames[page]?.ko ?? null
 /** Every name a page goes by: itself, its Korean name, Fandom titles that redirect to it. */
 const namesOf = new Map();
 const addName = (page, name) => { if (page && name) (namesOf.get(page) ?? namesOf.set(page, new Set()).get(page)).add(norm(name)); };
-for (const p of [...characters, ...textPages.keys()]) { addName(p, p); addName(p, koOf(p)); }
+for (const p of [...characters, ...textPages.keys(), ...Object.keys(videoPages)]) { addName(p, p); addName(p, koOf(p)); }
 for (const [title, v] of Object.entries(koNames)) {
   if (namesOf.has(v.page)) { addName(v.page, title); addName(v.page, v.ko); }
 }
@@ -71,6 +83,12 @@ function fromUrl(q) {
   if (!/^https?:\/\//i.test(q)) return null;
   try { u = new URL(q); } catch { return null; }
   const path = decodeURIComponent(u.pathname);
+  const host = u.hostname.replace(/^(www|m)\./, '');
+  // YouTube: watch?v=, youtu.be/<id>, (youtube-nocookie.com|youtube.com)/embed/<id>, shorts, stills
+  const yt = host === 'youtu.be' ? path.split('/')[1]
+    : /(^|\.)youtube(-nocookie)?\.com$/.test(host) ? (u.searchParams.get('v') ?? /^\/(?:embed|shorts|live|v)\/([^/]+)/.exec(path)?.[1])
+      : /(^|\.)ytimg\.com$/.test(host) ? /^\/vi(?:_webp)?\/([^/]+)\//.exec(path)?.[1] : undefined;
+  if (yt !== undefined) return yt ? [`video:${yt}`] : [];
   const icon = /UI_AvatarIcon_Side_([A-Za-z0-9]+)\.png$/.exec(path)?.[1];
   if (icon) return [`file:${icon}`];
   const img = /\/(img\/.+)$/.exec(path)?.[1];
@@ -93,7 +111,7 @@ function match(query) {
     }
     return { exact, partial };
   }
-  const kind = /^(character|act|file|page):(.*)$/s.exec(query);
+  const kind = /^(character|act|file|page|video):(.*)$/s.exec(query);
   const only = kind?.[1];
   const raw = kind ? kind[2] : query;
   const q = norm(raw);
@@ -109,6 +127,18 @@ function match(query) {
   // text is blocked only when asked for by name (page:) or by its Fandom URL, never as a side
   // effect of an image request for the same character
   if (only !== 'page') { exact.pages.forEach((p) => partial.pages.add(p)); exact.pages.clear(); }
+  // videos: blocked by their ID, or by video:<page name> (all of that page's videos); a page name
+  // alone (also page:) only suggests them, and a video query never touches the page text
+  if (want('video') || only === 'page') {
+    const id = raw.trim();
+    if (only !== 'page' && videos.has(id)) exact.videos.add(id);
+    else if (only === 'video' && VIDEO_ID.test(id)) exact.videos.add(id); // not shown now; block it ahead
+    const set = only === 'video' ? exact.videos : partial.videos;
+    for (const [page, list] of Object.entries(videoPages)) {
+      if ([...(namesOf.get(page) ?? [norm(page)])].some((n) => n === q)) list.forEach((x) => set.add(x.id));
+    }
+    if (q.length >= 2) for (const [vid, v] of videos) if (norm(v.title).includes(q)) partial.videos.add(vid);
+  }
   if (want('act')) {
     for (const a of acts) {
       if (a.id === raw.trim()) { exact.acts.add(a.id); continue; }
@@ -153,6 +183,38 @@ function localCopies(b) {
   return out;
 }
 
+/** Built video lists (data/runtime/videos.json, dist/assets/videos-*.json) that still hold a
+ *  blocked video: [{ path, data, ids }]. They hold every page's videos, so they are rewritten
+ *  without the blocked ones instead of deleted. */
+function videoLeftovers(b) {
+  if (!b.videos.size) return [];
+  const paths = ['data/runtime/videos.json', ...lsDir('dist/assets/').filter((n) => /^videos-[A-Za-z0-9_-]{8}\.json$/.test(n)).map((n) => `dist/assets/${n}`)];
+  const out = [];
+  for (const path of paths) {
+    const data = readJson(path, null);
+    if (!data || typeof data !== 'object') continue;
+    const ids = new Set(Object.values(data).flat().map((x) => x?.id).filter((id) => b.videos.has(id)));
+    if (ids.size) out.push({ path, data, ids: [...ids] });
+  }
+  return out;
+}
+
+async function stripVideos(b, apply) {
+  for (const { path, data, ids } of videoLeftovers(b)) {
+    if (apply) {
+      const kept = {};
+      for (const [page, list] of Object.entries(data)) {
+        const left = list.filter((x) => !b.videos.has(x.id));
+        if (!left.length) continue;
+        if (list.some((x) => x.main) && !left.some((x) => x.main)) left[0] = { ...left[0], main: true }; // as build-runtime-data
+        kept[page] = left;
+      }
+      await writeFile(new URL(path, root), JSON.stringify(kept));
+    }
+    console.log(`${apply ? 'removed' : 'would remove'} videos ${ids.join(', ')} from ${path}`);
+  }
+}
+
 /** Blocked material that the built data still carries (dist and data/runtime need a rebuild). */
 function builtLeftovers(b) {
   const out = [];
@@ -168,6 +230,7 @@ function builtLeftovers(b) {
     const ids = name === 'chart.json' ? data.nodes.map((n) => n.id) : name === 'pages.json' ? data.map((n) => n.id) : Object.keys(data);
     for (const p of b.pages) if (ids.includes(p)) out.push(`data/runtime/${name}: page ${p} (needs the build-runtime-data hook)`);
   }
+  for (const { path, ids } of videoLeftovers(b)) out.push(`${path}: videos ${ids.join(', ')} (clean --apply or npm run build)`);
   return out;
 }
 
@@ -193,9 +256,13 @@ function describe(kind, v) {
   if (kind === 'pages') {
     return `${v}${koOf(v) ? ` (${koOf(v)})` : ''} — text in ${[...(textPages.get(v) ?? [])].join(', ')}; source ${koNames[v]?.url ?? `https://genshin-impact.fandom.com/wiki/${encodeURIComponent(v.replace(/ /g, '_'))}`}`;
   }
+  if (kind === 'videos') {
+    const x = videos.get(v);
+    return `${v} — ${x ? `${x.title}; on ${[...x.pages].join(', ')}` : 'not in data/generated/videos.json now'}; https://www.youtube.com/watch?v=${v}`;
+  }
   return v;
 }
-const LABEL = { characters: '인물(아이콘)', files: '이미지 파일', acts: '임무 카드', pages: '글(위키 문서)' };
+const LABEL = { characters: '인물(아이콘)', files: '이미지 파일', acts: '임무 카드', pages: '글(위키 문서)', videos: '공식 영상(YouTube)' };
 function print(title, items) {
   console.log(title);
   let any = false;
@@ -268,10 +335,12 @@ if (cmd === 'find') {
   console.log(JSON.stringify(entry, null, 1));
   if (apply) { data.entries.push(entry); await save(data); }
   await remove(localCopies(blocked({ entries: [entry] })), apply);
+  await stripVideos(blocked({ entries: [entry] }), apply);
   if (!apply) console.log('\n--dry-run: nothing changed. Add --apply to write the entry and delete the files.');
   else console.log('\nNext: npm run build, then deploy (docs/takedown.md).');
 } else if (cmd === 'clean') {
   await remove(localCopies(blocked()), apply);
+  await stripVideos(blocked(), apply);
   if (!apply) console.log('--dry-run: add --apply to delete.');
 } else if (cmd === 'check') {
   const b = blocked();
@@ -280,6 +349,8 @@ if (cmd === 'find') {
   const files = new Set(b.files);
   for (const f of imageFiles) if (b.characters.has(f.character)) files.add(f.file);
   if (files.size) console.log(`배포 뒤 확인 (404여야 한다):\n${[...files].map((f) => `  curl -s -o /dev/null -w "%{http_code}\\n" ${SITE}${f}`).join('\n')}`);
+  const inSource = [...b.videos].filter((id) => videos.has(id));
+  if (inSource.length) console.log(`참고: data/generated/videos.json에 아직 있음(빌드와 refresh.mjs가 뺀다): ${inSource.join(', ')}`);
   process.exitCode = left.length ? 1 : 0;
 } else if (cmd === 'list') {
   const data = readTakedown();
@@ -296,6 +367,6 @@ if (cmd === 'find') {
   console.log(`${apply ? 'removing' : 'would remove'} ${JSON.stringify(e)}`);
   if (apply) { data.entries = data.entries.filter((x) => x !== e); await save(data); console.log('Files come back with npm run fetch:icons and npm run build.'); }
 } else {
-  console.log(readFileSync(new URL(import.meta.url), 'utf8').split('\n').slice(0, 23).filter((l) => l.startsWith('//')).map((l) => l.slice(3)).join('\n'));
+  console.log(readFileSync(new URL(import.meta.url), 'utf8').split('\nimport')[0].split('\n').filter((l) => l.startsWith('//')).map((l) => l.slice(3)).join('\n'));
   process.exitCode = cmd ? 1 : 0;
 }

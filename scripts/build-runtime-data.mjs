@@ -283,6 +283,7 @@ console.log(`data/runtime/articles/ ${slugs.size} pages, ${(total / 1024).toFixe
 import { buildSearchIndex } from './search/build-index.mjs';
 import { articlePieces } from './search/text.mjs';
 import { articlesPath, readArticles } from './theme/article-store.mjs';
+import { dropBlockedVideos } from './images/takedown-list.mjs';
 /** shard files of the search index; a query fetches one per distinct shard of its bigrams */
 const SEARCH_SHARDS = 128;
 {
@@ -351,7 +352,9 @@ function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
   // official YouTube videos per page (scripts/youtube/judge.mjs): id, main/extra, the version order it belongs to
   {
     const vf = new URL('data/generated/videos.json', root);
-    const vids = existsSync(vf) ? JSON.parse(await readFile(vf, 'utf8')).pages : {};
+    // a takedown (data/manual/takedown.json videos) never reaches the site, whatever videos.json holds
+    const { pages: vids, dropped } = dropBlockedVideos(existsSync(vf) ? JSON.parse(await readFile(vf, 'utf8')).pages : {});
+    if (dropped.length) console.log(`videos: ${dropped.length} blocked by takedown.json left out`);
     const out = {};
     for (const [page, list] of Object.entries(vids)) {
       out[page] = list.map((x) => ({ id: x.id, t: x.title, main: x.role === 'main' || undefined, v: order.get(x.version) ?? lastOrder }))

@@ -8,11 +8,15 @@
 // - stamps `refreshed`. Run at least every 30 days: with-youtube node scripts/youtube/refresh.mjs
 // The title caches in .cache/youtube/ are deleted after 30 days by the same run.
 import fs from 'node:fs';
+import { dropBlockedVideos } from '../images/takedown-list.mjs';
 
 const KEY = process.env.YOUTUBE_API_KEY;
 if (!KEY) { console.error('YOUTUBE_API_KEY missing; run through with-youtube'); process.exit(1); }
 const FILE = 'data/generated/videos.json';
 const data = JSON.parse(fs.readFileSync(FILE, 'utf8'));
+// takedowns (data/manual/takedown.json videos) are dropped first, so a refresh never brings them back
+const takedown = dropBlockedVideos(data.pages);
+data.pages = takedown.pages;
 const versions = JSON.parse(fs.readFileSync('data/generated/versions.json', 'utf8'));
 const versionOf = (published) => { // same rule as judge.mjs
   const t = new Date(published).getTime() + 20 * 864e5;
@@ -52,4 +56,4 @@ for (const f of fs.existsSync('.cache/youtube') ? fs.readdirSync('.cache/youtube
   const p = `.cache/youtube/${f}`;
   if (Date.now() - fs.statSync(p).mtimeMs > 30 * 864e5) { fs.rmSync(p); console.log('deleted old cache', p); }
 }
-console.log({ videos: ids.length, dropped: why, pages: Object.keys(data.pages).length });
+console.log({ videos: ids.length, dropped: why, takedown: takedown.dropped.length, pages: Object.keys(data.pages).length });

@@ -52,7 +52,7 @@
 - 짝짓기: `scripts/youtube/fetch-uploads.mjs`(업로드 목록, YouTube Data API) → `candidates.mjs`(제목에 문서 한국어 이름이 나오는 영상) → `judge.mjs`(Gemini 3.8 Flash·Gemini 4 Hydrogen이 문서를 다룬 영상만 고름, 2026-11-13 사용자 결정) → `refresh.mjs`. 결과는 `data/generated/videos.json`(영상 ID, 대표 여부, 버전, 제목).
 - 버전: 영상 게시일 + 20일 이전에 나온 마지막 버전. 버전 선택기가 그보다 앞이면 보이지 않는다.
 - HoYoFair(팬 창작)는 후보에서 뺀다. 아동용(Made for Kids)·비공개·삽입 불가 영상은 `refresh.mjs`가 뺀다(YouTube API 정책 III.E.4(j)).
-- **30일마다 `with-youtube node scripts/youtube/refresh.mjs`를 돌린다.** YouTube API 정책 III.E.4(c)(d)는 받은 데이터를 30일 안에 새로 받거나 지우게 한다. ID에 대한 예외 조항은 찾지 못했다. 제목 캐시(`.cache/youtube/`)도 30일이 지나면 같은 스크립트가 지운다.
+- **30일마다 `with-youtube node scripts/youtube/refresh.mjs`를 돌린다**(cron이 매달 1일·15일 `scripts/youtube/auto-refresh.sh`로 갱신·push·배포한다). YouTube API 정책 III.E.4(c)(d)는 받은 데이터를 30일 안에 새로 받거나 지우게 한다. ID에 대한 예외 조항은 찾지 못했다. 제목 캐시(`.cache/youtube/`)도 30일이 지나면 같은 스크립트가 지운다.
 - API 키는 `~/.config/youtube/key.env`(IP 제한), `with-youtube` 래퍼로만 쓴다.
 
 ## 5. 변경 이력

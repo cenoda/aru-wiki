@@ -1107,7 +1107,11 @@ export default function WikiGraph3D() {
     const events = ['pointerdown', 'pointermove', 'wheel', 'touchstart'] as const;
     for (const ev of events) el.addEventListener(ev, wakeUp, { passive: true });
     const controls = g.controls() as { addEventListener(type: string, fn: () => void): void; removeEventListener(type: string, fn: () => void): void };
+    // inertia: a turn or pan keeps gliding a moment after the finger lifts, then slows to a stop
+    // ('change' keeps firing while it glides, and onMove keeps the render loop awake till it ends)
+    Object.assign(g.controls(), { enableDamping: true, dampingFactor: 0.08 });
     const onMove = () => {
+      wakeUp();
       const d = g.camera().position.length();
       fog.near = d * 0.7;
       fog.far = d * 2.3;

@@ -439,13 +439,17 @@ function parseJsonReply(text) {
 }
 
 // required keys with the right basic types; enough for the two schemas used here
-function checkShape(data, schema) {
+// every level, not only the top: a nested part missing (a paragraph without sentences, a check without
+// `unsupported`) broke the article later with "Cannot read properties of undefined" (2026-11-13, 4 articles)
+function checkShape(data, schema, path = '') {
+  if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Error(`reply field ${path || 'root'} is not object: ${JSON.stringify(data).slice(0, 200)}`);
   for (const k of schema.required ?? []) {
-    const want = schema.properties[k].type, v = data[k];
-    const ok = want === 'array' ? Array.isArray(v) : want === 'integer' ? Number.isInteger(v) : typeof v === want;
-    if (!ok) throw new Error(`reply field ${k} is not ${want}: ${JSON.stringify(data).slice(0, 200)}`);
-    const allowed = schema.properties[k].enum;
-    if (allowed && !allowed.includes(v)) throw new Error(`reply field ${k}=${v} not in ${allowed}`);
+    const sub = schema.properties[k], want = sub.type, v = data[k], name = `${path}${k}`;
+    const ok = want === 'array' ? Array.isArray(v) : want === 'integer' ? Number.isInteger(v) : want === 'object' ? v && typeof v === 'object' && !Array.isArray(v) : typeof v === want;
+    if (!ok) throw new Error(`reply field ${name} is not ${want}: ${JSON.stringify(data).slice(0, 200)}`);
+    if (sub.enum && !sub.enum.includes(v)) throw new Error(`reply field ${name}=${v} not in ${sub.enum}`);
+    if (want === 'object' && sub.properties) checkShape(v, sub, `${name}.`);
+    if (want === 'array' && sub.items?.type === 'object' && sub.items.properties) v.forEach((x, n) => checkShape(x, sub.items, `${name}[${n}].`));
   }
   return data;
 }

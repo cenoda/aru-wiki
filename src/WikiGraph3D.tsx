@@ -12,7 +12,7 @@
 // The scene renders only while the reader interacts, and the version picker hides later pages.
 import ForceGraph3D, { type ForceGraph3DInstance } from '3d-force-graph';
 import { forceX, forceY, forceZ } from 'd3-force-3d';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import {
   AdditiveBlending, BackSide, BufferGeometry, Euler, Mesh, MeshBasicMaterial, RepeatWrapping, SphereGeometry, Line, LineDashedMaterial, Float32BufferAttribute, Matrix4, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, NormalBlending,
   type PerspectiveCamera, Sprite, SpriteMaterial, Vector2, Vector3,
@@ -27,7 +27,7 @@ import pagesUrl from '../data/runtime/pages.json?url';
 import { ReportBox } from './ReportBox';
 import { useLinker } from './Linked';
 import { Search } from './Search';
-import { articleKeyFromUrl, articleUrl, isArticleUrl, pathNameOf, resolvePage } from './route';
+import { articleKeyFromUrl, articleUrl, isArticleUrl, isRecentKey, pathNameOf, RECENT_KEY, resolvePage } from './route';
 import { Logo } from './Logo';
 import { versions } from './data';
 import {
@@ -39,6 +39,9 @@ import { rich, WikiArticle } from './WikiArticle';
 import './site.css';
 import './focus.css';
 import './wiki3d.css';
+
+// 최근 바뀜 (`/wiki/특수:최근바뀜`) opens in the article slot; its code and list load only when it opens
+const RecentChanges = lazy(() => import('./RecentChanges'));
 
 interface Palette {
   hub: string; character: string; lore: string; line: string; lineHot: string; label: string; ecliptic: string;
@@ -434,7 +437,7 @@ export default function WikiGraph3D() {
     setArticle(page);
   };
   const closeArticle = () => {
-    if (page) setSelected(page); // back on the chart, the page's star stays picked
+    if (page && !isRecentKey(page)) setSelected(page); // back on the chart, the page's star stays picked
     const t = trail();
     if (t.fromChart && t.aruDepth) history.go(-t.aruDepth); // return to the chart's own entry
     else { history.pushState(null, '', urlFor(null, vNow.current)); setArticle(null); } // came in by a link
@@ -442,7 +445,7 @@ export default function WikiGraph3D() {
   useEffect(() => {
     const onPop = () => {
       const key = articleKeyFromUrl();
-      setArticle((cur) => { if (cur && !key) setSelected(pageNow.current); return key; });
+      setArticle((cur) => { if (cur && !key && !isRecentKey(cur)) setSelected(pageNow.current); return key; });
       const v = versionFromUrl();
       if (v !== null) setVIdx(v);
     };
@@ -1207,15 +1210,24 @@ export default function WikiGraph3D() {
         </div>}
         <nav>
           {theme && gl && <Search nodes={allNodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />}
+          <a href={urlFor(RECENT_KEY, vIdx)} onClick={(e) => {
+            if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+            e.preventDefault();
+            if (!isRecentKey(article)) openArticle(RECENT_KEY);
+          }}>최근 바뀜</a>
           <a className="band" href="/?view=quests">임무 지도</a>
           <VersionPicker order={vIdx} onChange={setVIdx} />
           <ThemeToggle />
         </nav>
       </header></div>
-      {article && theme && index && (
+      {article && theme && index && (isRecentKey(article) ? (
+        <Suspense fallback={<p className="w3d-status">불러오는 중…</p>}>
+          <RecentChanges vIdx={vIdx} byId={allById} hrefOf={hrefOf} onOpen={openArticle} />
+        </Suspense>
+      ) : (
         <WikiArticle page={page!} theme={theme} nodes={allNodes} byId={allById} snapshots={snapshots} vIdx={vIdx}
           hrefOf={hrefOf} onOpen={openArticle} />
-      )}
+      ))}
       {article && !theme && <p className="w3d-status">{failed ? '지도 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
       {/* the chart stays mounted (camera and selection kept) but hidden behind an open article */}
       <div className={`w3d-stage${article ? ' behind' : ''}`} ref={host} aria-hidden={article ? true : undefined}>

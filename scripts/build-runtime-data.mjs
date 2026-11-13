@@ -260,3 +260,18 @@ await write('pages.json', Object.keys(perPage).filter((p) => !inChart.has(p)).so
 }));
 /** the file name of a page's articles; src/lore.ts articleSlug must match */
 function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
+
+// ---------- 최근 바뀜 (scripts/recent/changes.mjs): new and rewritten articles, approved reader edits ----------
+// Fetched only by the recent-changes page. A row is named only at or after its version (field g).
+{
+  const { articleHistory, readerRows, buildRecent } = await import('./recent/changes.mjs');
+  const rootPath = new URL('.', root).pathname.replace(/\/$/, '');
+  const themeArticles = existsSync(ART) ? JSON.parse(await readFile(ART, 'utf8')).articles : [];
+  const EDITS = new URL('data/manual/reader-edits.json', root);
+  const readerEdits = existsSync(EDITS) ? JSON.parse(await readFile(EDITS, 'utf8')).edits : [];
+  const revealed = new Map();
+  for (const p of pages) { const u = [...unitsOf.get(p.page)]; revealed.set(p.page, u.length ? firstOrder(u) : lastOrder); }
+  for (const p of Object.keys(perPage)) if (!revealed.has(p)) { const u = loreLinks[p]?.units ?? []; revealed.set(p, u.length ? firstOrder(u) : lastOrder); }
+  const rows = [...articleHistory(rootPath, [themeArticles, allArticles]), ...readerRows(readerEdits)];
+  await write('recent.json', buildRecent(rows, { order, revealedOf: (p) => revealed.get(p) }));
+}

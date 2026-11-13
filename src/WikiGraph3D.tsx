@@ -497,6 +497,8 @@ export default function WikiGraph3D() {
   // bumped when the browser takes the WebGL context away (iPadOS does this to a tab sent to the
   // background and often never gives it back): the 3D scene is then built again from scratch
   const [glEpoch, setGlEpoch] = useState(0);
+  /** the view (camera and orbit centre) to put back after such a rebuild, so the reader keeps their place */
+  const keepView = useRef<{ pos: [number, number, number]; at: [number, number, number] } | null>(null);
   const sky = night ? NIGHT : DAY;
 
   useEffect(() => {
@@ -937,7 +939,12 @@ export default function WikiGraph3D() {
       }
       // on first view the chart turns slowly into place once (about 40 degrees, easing out), then rests;
       // any touch stops it, and readers who ask for less motion get the still view
-      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const back = keepView.current;
+      keepView.current = null;
+      if (back) {
+        // rebuilt after the tab came back from the background: the reader's own view, no opening turn
+        g.cameraPosition({ x: back.pos[0], y: back.pos[1], z: back.pos[2] }, { x: back.at[0], y: back.at[1], z: back.at[2] }, 0);
+      } else if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
         const flat = Math.cos(tilt) * dist, camY = cy + Math.sin(tilt) * dist;
         const swing = (40 * Math.PI) / 180, span = 9000;
         let t0 = 0, stopped = false;
@@ -1238,30 +1245,58 @@ export default function WikiGraph3D() {
     });
     ro.observe(el);
 
-    // ---------- the GPU context lost (tab in the background on iPad/iPhone): rebuild when seen again ----------
+    // ---------- back from the background (iPad/iPhone): build the scene again ----------
+    // WebKit (Safari, and Chrome on iPad, which is WebKit too) may take the GPU away from a hidden tab.
+    // Sometimes it says so (webglcontextlost); often it does not: the context still reports itself
+    // alive but nothing new reaches the screen, and the chart stays frozen. Navigating away and back
+    // (a fresh canvas) always fixes it, so after the tab was hidden for a while, do the same: rebuild.
+    // Wait a moment first: right after the tab shows again the GPU may not be ready, and a context
+    // made then can be born dead.
     const canvas = g.renderer().domElement;
-    let lost = false;
-    const rebuild = () => { if (!disposed) setGlEpoch((n) => n + 1); };
-    const onLost = (e: Event) => {
-      e.preventDefault();
-      lost = true;
-      if (document.visibilityState === 'visible') rebuild();
+    let lost = false, hiddenAt = document.visibilityState === 'hidden' ? performance.now() : 0, again = 0;
+    const rebuild = () => {
+      if (disposed) return;
+      const cam = g.camera(), c = g.controls() as { target?: { x: number; y: number; z: number } };
+      const at = c.target ?? { x: 0, y: 0, z: 0 };
+      if (el.dataset.ready !== undefined) keepView.current = { pos: [cam.position.x, cam.position.y, cam.position.z], at: [at.x, at.y, at.z] };
+      setGlEpoch((n) => n + 1);
     };
+    const rebuildSoon = () => {
+      clearTimeout(again);
+      again = window.setTimeout(() => {
+        if (document.visibilityState === 'visible') rebuild();
+      }, 400);
+    };
+    const onLost = (e: Event) => {
+      e.preventDefault(); // lets the browser give the context back (webglcontextrestored) if it can
+      lost = true;
+      if (document.visibilityState === 'visible') rebuildSoon();
+    };
+    const onRestored = () => { lost = false; };
     const onVisible = () => {
-      if (document.visibilityState !== 'visible') return;
-      if (lost || g.renderer().getContext().isContextLost()) rebuild();
+      if (document.visibilityState === 'hidden') { onHide(); return; }
+      const away = hiddenAt ? performance.now() - hiddenAt : 0;
+      hiddenAt = 0;
+      if (lost || g.renderer().getContext().isContextLost() || away > 1000) rebuildSoon();
       else wakeUp();
     };
+    const onHide = () => { hiddenAt ||= performance.now(); clearTimeout(again); };
+    const onPageShow = (e: PageTransitionEvent) => { if (e.persisted) { hiddenAt ||= 1; onVisible(); } };
     canvas.addEventListener('webglcontextlost', onLost);
+    canvas.addEventListener('webglcontextrestored', onRestored);
     document.addEventListener('visibilitychange', onVisible);
-    window.addEventListener('pageshow', onVisible);
+    window.addEventListener('pagehide', onHide);
+    window.addEventListener('pageshow', onPageShow);
 
     wakeUp();
     return () => {
       disposed = true;
+      clearTimeout(again);
       canvas.removeEventListener('webglcontextlost', onLost);
+      canvas.removeEventListener('webglcontextrestored', onRestored);
       document.removeEventListener('visibilitychange', onVisible);
-      window.removeEventListener('pageshow', onVisible);
+      window.removeEventListener('pagehide', onHide);
+      window.removeEventListener('pageshow', onPageShow);
       ro.disconnect();
       clearTimeout(idle);
       clearTimeout(layoutTimer);
@@ -1297,7 +1332,9 @@ export default function WikiGraph3D() {
       if (milky) { milky.geometry.dispose(); milky.material.map?.dispose(); milky.material.dispose(); }
       for (const nb of [...nebulae, ...dayClouds]) { nb.material.map?.dispose(); nb.material.dispose(); }
       g.scene().onBeforeRender = () => {};
+      const r = g.renderer();
       g._destructor();
+      try { r.forceContextLoss(); } catch { /* already lost */ } // hand the GPU context back now; WebKit allows only a few per page
       el.replaceChildren();
       el.style.cursor = '';
       graph.current = null;

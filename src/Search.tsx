@@ -1,8 +1,9 @@
-// The site's one search box: articles (Korean or English name) and quests (acts, series, events and
-// the quests in them, questSearch.ts), as you type. Used in the 3D view's header, the quest map's
+// The site's one search box: articles (Korean or English name), quests (acts, series, events and
+// the quests in them, questSearch.ts) and, below those, article bodies (bodySearch.ts), as you type. Used in the 3D view's header, the quest map's
 // header and, where the browser cannot draw 3D, as the whole front page (a search box in the middle,
 // like an encyclopedia's portal). Nothing not revealed at the chosen version is found.
 import { type FormEvent, Fragment, type KeyboardEvent, type MouseEvent, type ReactNode, useEffect, useId, useMemo, useRef, useState } from 'react';
+import { bodySearchable, type BodyHit, searchBodies } from './bodySearch';
 import { versions } from './data';
 import { KIND_LABEL, nameOf, type PageNode, type Theme } from './lore';
 import { focusUrl, questHits } from './questSearch';
@@ -79,6 +80,23 @@ export function Search({ nodes, vIdx, hrefOf, onOpen, onQuest, big, autoFocus, n
   }, [q, nodes, vIdx]);
   const quests = useMemo(() => questHits(q, vIdx, hits.length ? 6 : 8), [q, vIdx, hits.length]);
 
+  // article bodies: after a short pause in typing; the index is fetched on the first search
+  const byId = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
+  const [body, setBody] = useState<{ key: string; hits: BodyHit[] } | null>(null);
+  const bodyKey = `${vIdx}|${fold(q)}`;
+  const nameIds = hits.map((n) => n.id).join('|');
+  useEffect(() => {
+    if (!bodySearchable(q)) return;
+    let live = true;
+    const t = setTimeout(() => {
+      searchBodies(q, vIdx, byId, new Set(nameIds ? nameIds.split('|') : []))
+        .then((h) => live && setBody({ key: bodyKey, hits: h }), () => live && setBody({ key: bodyKey, hits: [] }));
+    }, 250);
+    return () => { live = false; clearTimeout(t); };
+  }, [bodyKey, byId, nameIds]); // q and vIdx are in bodyKey
+  const bodyHits = body?.key === bodyKey && bodySearchable(q) ? body.hits : [];
+  const bodyPending = bodySearchable(q) && body?.key !== bodyKey;
+
   // articles first, then quests, then pages readers wrote, then the offer to write a new page
   const rows: Row[] = [
     ...hits.map((n): Row => ({
@@ -91,6 +109,15 @@ export function Search({ nodes, vIdx, hrefOf, onOpen, onQuest, big, autoFocus, n
       go: () => { done(); if (onQuest) onQuest(h.target); else location.assign(`/${focusUrl(h.target)}`); },
       body: <><i className="dot" /><b>{h.name}</b><span>{h.note}{h.version && <> · {h.version}</>}</span></>,
     })),
+    ...bodyHits.map((h, i): Row => {
+      const n = byId.get(h.page);
+      return {
+        key: `b:${h.page}`, href: hrefOf(h.page), head: i === 0 && (hits.length || quests.length) ? '본문에서 찾음' : undefined, className: 'body',
+        go: () => { done(); onOpen(h.page); },
+        body: <><b>{n ? nameOf(n) : h.page}{h.count > 1 && <span> · {h.count}곳</span>}</b>
+          <span className="snip">{h.snip.cutStart && '…'}{h.snip.pre}<mark>{h.snip.hit}</mark>{h.snip.post}{h.snip.cutEnd && '…'}</span></>,
+      };
+    }),
     ...written.map((t): Row => ({ key: `w:${t}`, href: hrefOf(t), go: () => { done(); onOpen(t); }, body: <><b>{t}</b><span>독자가 쓴 문서</span></> })),
     ...(canWrite && !hits.length ? [{
       key: 'new', href: hrefOf(title), go: () => { done(); onOpen(title); },
@@ -122,7 +149,8 @@ export function Search({ nodes, vIdx, hrefOf, onOpen, onQuest, big, autoFocus, n
               <a href={r.href} onMouseDown={(e) => e.preventDefault()} onMouseEnter={() => setAt(i)}
                 onClick={(e) => { if (!plain(e)) return; e.preventDefault(); r.go(); }}>{r.body}</a>
             </li>
-          </Fragment>)) : <li className="search-none">찾는 문서나 임무가 없습니다.</li>}
+          </Fragment>)) : <li className="search-none">{bodyPending ? '본문에서 찾는 중…' : '찾는 문서나 임무가 없습니다.'}</li>}
+          {rows.length > 0 && bodyPending && <li className="search-none search-wait" role="presentation">본문에서 찾는 중…</li>}
         </ul>
       )}
     </div>

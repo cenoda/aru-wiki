@@ -64,6 +64,8 @@ const TOOLS = {
   'ds-pro': (prompt, schema) => rateDs('deepseek-v4-pro', prompt, schema),
   // GLM 5.3 (Zhipu) from the same provider and key, 4 slots (2026-11-12)
   glm: (prompt, schema) => rateDs('glm-5.3', prompt, schema),
+  // DeepSeek V4.1 Flash through the OpenRouter Batch API, cheapest batch variant ($0.05/$0.15 per 1M, 2026-11-13); thinking on
+  'or-ds': (prompt, schema) => orAsk('deepseek/deepseek-v4.1-flash-1017', prompt, schema),
   deepseek: (prompt, schema) => ollama('deepseek-v4.1-flash:cloud', prompt, schema),
   // Xiaomi MiMo on Ollama Cloud: cheaper than DeepSeek and another company, so it can check DeepSeek's writing
   mimo: (prompt, schema) => ollama('mimo-v2.6-flash:cloud', prompt, schema),
@@ -240,6 +242,86 @@ async function rateDsOnce(model, prompt, schema) {
     } finally { clearTimeout(timer); clearTimeout(idle); }
   }
 }
+// ---------- OpenRouter Batch API (2026-11-13: the user paid for it so the run does not wait on the provider above) ----------
+// Batch endpoints do not train on the data (OpenRouter batch docs, "Data"). Calls are gathered for OR_FLUSH_SEC
+// (or up to OR_BATCH_MAX) and sent as one batch; each caller waits until its batch is done (usually minutes,
+// at most 24 h). The key is read here only, never printed: ~/.config/aru/openrouter.env, OPENROUTER_API_KEY=...
+const OR_ENV = join(homedir(), '.config/aru/openrouter.env');
+const OR_LOG = new URL('../../.cache/openrouter-batches.jsonl', import.meta.url).pathname;
+const OR_FLUSH_MS = Number(process.env.OR_FLUSH_SEC ?? 45) * 1000;
+const OR_BATCH_MAX = Number(process.env.OR_BATCH_MAX ?? 300);
+const OR_MAX_TOKENS = Number(process.env.OR_MAX_TOKENS ?? 32000);
+let orKey;
+const orQueues = new Map(); // model → { items, timer }
+const pause = (ms) => new Promise((r) => setTimeout(r, ms));
+async function orFetch(path, init = {}) {
+  orKey ??= (existsSync(OR_ENV) && readFileSync(OR_ENV, 'utf8').match(/^\s*OPENROUTER_API_KEY\s*=\s*['"]?([^'"\s]+)/m))?.[1];
+  if (!orKey) throw new Error(`no OPENROUTER_API_KEY in ${OR_ENV}`);
+  for (const wait of [10, 30, 60, 120, null]) {
+    let r;
+    try {
+      r = await fetch(`https://openrouter.ai/api/v1${path}`, { ...init, headers: { Authorization: `Bearer ${orKey}`, 'Content-Type': 'application/json' } });
+    } catch (e) { if (wait === null) throw new Error(`openrouter fetch failed: ${e.cause?.code ?? e.message}`); await pause(wait * 1000); continue; }
+    if (wait !== null && (r.status >= 500 || r.status === 429)) { await pause(wait * 1000); continue; }
+    return r;
+  }
+}
+function orBatch(model, prompt, schema) {
+  return new Promise((resolve, reject) => {
+    let q = orQueues.get(model);
+    if (!q) orQueues.set(model, (q = { items: [], timer: null }));
+    q.items.push({ prompt, schema, resolve, reject });
+    if (q.items.length >= OR_BATCH_MAX) orFlush(model);
+    else q.timer ??= setTimeout(() => orFlush(model), OR_FLUSH_MS);
+  });
+}
+async function orFlush(model) {
+  const q = orQueues.get(model);
+  clearTimeout(q.timer); q.timer = null;
+  const items = q.items.splice(0);
+  if (!items.length) return;
+  try {
+    // endpoint, model, completion_window before requests (OpenRouter reads the body as a stream)
+    // pinned, no fallback: the user allows no batch provider above $0.10 in / $0.40 out per 1M (2026-11-13); Sail Research
+    // is the only batch host of this model, at $0.05 / $0.15. OR_PROVIDERS lists others if they appear under that cap.
+    const body = JSON.stringify({ endpoint: '/v1/chat/completions', model, completion_window: '24h',
+      provider: { only: (process.env.OR_PROVIDERS ?? 'sail-research').split(','), allow_fallbacks: false },
+      requests: items.map((it, n) => ({ custom_id: `r${n}`, body: { max_tokens: OR_MAX_TOKENS, reasoning: { enabled: true }, include_reasoning: false,
+        messages: [{ role: 'user', content: `${it.prompt}\n\nReply with one JSON object only, no prose and no code fence, matching this JSON Schema:\n${JSON.stringify(it.schema)}` }] } })) });
+    let r = await orFetch('/batches', { method: 'POST', body });
+    if (r.status !== 202) throw new Error(`openrouter batch ${r.status}: ${(await r.text()).slice(0, 300)}`);
+    let b = await r.json();
+    const t0 = Date.now();
+    await appendFile(OR_LOG, `${JSON.stringify({ at: new Date().toISOString(), id: b.id, model, requests: items.length, provider: b.provider })}\n`).catch(() => {});
+    // the batch is paid once sent: keep reading it (a read that fails is tried again) until it ends
+    while (!['completed', 'failed', 'expired', 'cancelled'].includes(b.status)) {
+      if (Date.now() - t0 > 26 * 3600 * 1000) throw new Error(`openrouter batch ${b.id} timed out (still ${b.status})`);
+      await pause(20000);
+      try { r = await orFetch(`/batches/${b.id}`); if (r.ok) b = await r.json(); } catch { /* next read */ }
+    }
+    if (b.status !== 'completed') throw new Error(`openrouter batch ${b.status}: ${b.error?.message ?? ''}`);
+    await appendFile(OR_LOG, `${JSON.stringify({ at: new Date().toISOString(), id: b.id, done: b.request_counts, sec: Math.round((Date.now() - t0) / 1000), cost: b.usage?.cost ?? null, provider: b.provider })}\n`).catch(() => {});
+    const byId = new Map((b.results ?? []).map((x) => [x.custom_id, x]));
+    items.forEach((it, n) => {
+      const x = byId.get(`r${n}`);
+      try {
+        if (!x || x.error || !x.response) throw new Error(`openrouter request failed: ${JSON.stringify(x?.error ?? 'missing').slice(0, 200)}`);
+        const res = x.response.body ?? {};
+        const u = res.usage ?? {};
+        it.resolve({ data: checkShape(parseJsonReply(res.choices?.[0]?.message?.content ?? ''), it.schema), cost: u.cost ?? null,
+          usage: { in: u.prompt_tokens ?? null, out: u.completion_tokens ?? null, reasoning: u.completion_tokens_details?.reasoning_tokens ?? null } });
+      } catch (e) { it.reject(e); }
+    });
+    orFetch(`/batches/${b.id}`, { method: 'DELETE' }).catch(() => {}); // results are kept here, not there (30 days otherwise)
+  } catch (e) { for (const it of items) it.reject(e); }
+}
+// a reply with a missing or mistyped field, or one request failed inside the batch: asked once more in the next batch
+async function orAsk(model, prompt, schema) {
+  try { return await orBatch(model, prompt, schema); } catch (e) {
+    if (!/^reply field|JSON|Unexpected token|Unterminated|request failed/.test(e.message)) throw e;
+    return orBatch(model, `${prompt}\n\n${/request failed/.test(e.message) ? '' : `Your previous reply was rejected (${e.message.slice(0, 120)}). Include every required field with the right type.`}`, schema);
+  }
+}
 // Ollama Cloud sometimes answers 500/502/503 for a moment: two more tries, 20 s and 60 s later
 async function ollama(model, prompt, schema) {
   for (const wait of [20, 60, null]) {
@@ -300,7 +382,7 @@ async function agy(model, prompt, schema, cwd) {
   return { data: checkShape(res.structured_output ?? parseJsonReply(res.response), schema), cost: null };
 }
 // how an exhausted Antigravity allowance shows up (also matched against exit-code errors from run())
-const UNRELIABLE = /\b5\d\d\b|timed? ?out|abort|ECONNRESET|ECONNREFUSED|ETIMEDOUT|fetch failed|socket hang up|provider busy|broke off|terminated|stalled/i;
+const UNRELIABLE = /\b5\d\d\b|timed? ?out|abort|ECONNRESET|ECONNREFUSED|ETIMEDOUT|fetch failed|socket hang up|provider busy|broke off|terminated|stalled|openrouter batch (failed|expired|cancelled|timed)/i;
 const QUOTA = /quota|exhaust|usage limit|rate.?limit|resource.?exhausted|429|credits?|allowance|limit reached/i;
 let agyExhausted = false;
 const SONNET_BUDGET = Number(process.env.SONNET_API_BUDGET ?? 30);
@@ -377,7 +459,7 @@ export async function ask(tool, prompt, schema) {
 
 // ---------- several tools at once ----------
 // Which company each tool's model comes from: a writer's text is checked by another company's model.
-export const COMPANY = { ds: 'deepseek', 'ds-pro': 'deepseek', claude: 'anthropic', 'claude-sonnet': 'anthropic', 'sonnet-api': 'anthropic', haiku: 'anthropic', sonnet: 'anthropic', 'agy-sonnet': 'anthropic',
+export const COMPANY = { ds: 'deepseek', 'ds-pro': 'deepseek', 'or-ds': 'deepseek', claude: 'anthropic', 'claude-sonnet': 'anthropic', 'sonnet-api': 'anthropic', haiku: 'anthropic', sonnet: 'anthropic', 'agy-sonnet': 'anthropic',
   codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg', deepseek: 'deepseek', mimo: 'xiaomi', kimi: 'moonshot', glm: 'zhipu' };
 const slots = new Map();
 /** At most `limit` calls of one tool at a time (LLM_SLOTS="grok=6,flash-medium=4" overrides). */

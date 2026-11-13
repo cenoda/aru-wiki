@@ -21,3 +21,9 @@
 .search-list .quest a { align-items: center; }
 .search-list .quest .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex: none; }
 .search-list .quest.unit .dot { border-radius: 2px; }
+/* a hit in an article's body: the page's name over a snippet with the match marked */
+.search-list .body a { flex-direction: column; align-items: stretch; gap: 2px; }
+.search-list .body a .snip { color: var(--text); opacity: .8; font-size: .8rem; line-height: 1.45; white-space: normal; }
+.search-list .body mark { background: rgba(240, 190, 60, .4); color: inherit; font-weight: 600; padding: 0 1px; }
+.search-list .body b span { font-weight: normal; }
+.search-wait { font-size: .8rem; }

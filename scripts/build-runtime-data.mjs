@@ -251,6 +251,29 @@ for (const [page, data] of Object.entries(perPage)) {
   await writeFile(new URL(`${slug}.json`, artDir), text);
 }
 console.log(`data/runtime/articles/ ${slugs.size} pages, ${(total / 1024).toFixed(0)} KB`);
+
+// ---------- full-text search in the article bodies (scripts/search/) ----------
+// data/runtime/search/meta.json (the documents: [page, article version]) and one file per shard of
+// the bigram index. The site fetches them only when someone types a search (src/bodySearch.ts).
+import { buildSearchIndex } from './search/build-index.mjs';
+import { articlePieces } from './search/text.mjs';
+/** shard files of the search index; a query fetches one per distinct shard of its bigrams */
+const SEARCH_SHARDS = 128;
+{
+  const searchDir = new URL('search/', outDir);
+  await rm(searchDir, { recursive: true, force: true });
+  await mkdir(searchDir, { recursive: true });
+  const index = buildSearchIndex(Object.entries(perPage).flatMap(([page, d]) => d.articles.map((a) => ({ page, from: a.from, pieces: articlePieces(a) }))), { shards: SEARCH_SHARDS });
+  let size = 0;
+  for (const [i, shard] of index.shards.entries()) {
+    const text = JSON.stringify(shard);
+    size += Buffer.byteLength(text);
+    await writeFile(new URL(`${i}.json`, searchDir), text);
+  }
+  const meta = JSON.stringify(index.meta);
+  await writeFile(new URL('meta.json', searchDir), meta);
+  console.log(`data/runtime/search/ ${index.meta.docs.length} documents, ${index.shards.length} shards ${(size / 1024).toFixed(0)} KB + meta ${(meta.length / 1024).toFixed(0)} KB`);
+}
 // Pages with an article that are not stars of the chart (none while every article is drawn): found by
 // search and inline links, opened as article pages. Same fields as the chart's nodes (src/lore.ts PageNode).
 await write('pages.json', Object.keys(perPage).filter((p) => !inChart.has(p)).sort().map((p) => {

@@ -1,0 +1,618 @@
+{
+ "node": "Little You",
+ "articles": [
+  {
+   "node": "Little You",
+   "from_version": "1.1",
+   "cutoff": "2020-12-22T00:00:00Z",
+   "input": [
+    {
+     "page": "Little You",
+     "url": "https://genshin-impact.fandom.com/wiki/Little_You",
+     "revision": 71395
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 3,
+    "web": 0
+   },
+   "input_chars": 1085,
+   "input_cut": false,
+   "input_hash": "f19424e4a2ec",
+   "writer": "ds,or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "(0) calls her a resident of Qingce Village; the English only says the NPC is located there. (2) states as fact that she refuses help because she is tired of her family worrying; those are separate lines, and no cause tying the refusal to that weariness is given.",
+     "quote": "I'm sure there must be a way, though, and once I've caught it, it'll prove that I'm as smart as him!",
+     "sentences": [
+      {
+       "t_raw": "**Little You**는 Qingce Village에 위치한 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "**꼬마 우**는 경책 산장에 위치한 NPC다."
+      },
+      {
+       "t_raw": "자신의 그림자를 쫓고 있으며, 그것을 잡으면 **큰오빠만큼 똑똑하다는 것을 증명**할 수 있다고 믿는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자신의 그림자를 쫓고 있으며, 그것을 잡으면 **큰오빠만큼 똑똑하다는 것을 증명**할 수 있다고 믿는다."
+      },
+      {
+       "t_raw": "가족 모두가 자신을 걱정한다고 말하며, 그 걱정에는 지쳤다고 한다. 도움을 받겠다는 제안에는 고맙다고 하면서도 **직접 해내겠다**고 한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "가족 모두가 자신을 걱정한다고 말하며, 그 걱정에는 지쳤다고 한다. 도움을 받겠다는 제안에는 고맙다고 하면서도 **직접 해내겠다**고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All three sentences are supported. The sigh, escape, and wariness match the opening line once the quarry is identified as her shadow, and the claim that the chase is hard follows from the brother also failing to catch it.",
+     "quote": "My shadow. Everyone says I won't be able to catch it, including my big brother.",
+     "sentences": [
+      {
+       "t_raw": "Little You는 **Qingce Village**에 있는 아이로, 자기 그림자를 쫓다가 그것이 또 달아나자 한숨을 쉬고는 낯선 사람을 경계한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 우는 **경책 산장**에 있는 아이로, 자기 그림자를 쫓다가 그것이 또 달아나자 한숨을 쉬고는 낯선 사람을 경계한다."
+      },
+      {
+       "t_raw": "그가 쫓는 것은 자기 그림자이며, 모두가 그것을 잡지 못할 것이라고 말한다는 점이 대화에서 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 쫓는 것은 자기 그림자이며, 모두가 그것을 잡지 못할 것이라고 말한다는 점이 대화에서 드러난다."
+      },
+      {
+       "t_raw": "큰오빠도 잡지 못했다는 말은 그 그림자 쫓기가 쉽지 않다는 사정을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "큰오빠도 잡지 못했다는 말은 그 그림자 쫓기가 쉽지 않다는 사정을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All three sentences are supported. She states the proof goal herself, and trying where her brother failed is a fair reading of that dialogue.",
+     "quote": "I'm sure there must be a way, though, and once I've caught it, it'll prove that I'm as smart as him!",
+     "sentences": [
+      {
+       "t_raw": "그래도 Little You는 반드시 방법이 있을 것이라 믿고, 그림자를 잡으면 큰오빠만큼 똑똑하다는 것을 증명할 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 꼬마 우는 반드시 방법이 있을 것이라 믿고, 그림자를 잡으면 큰오빠만큼 똑똑하다는 것을 증명할 수 있다고 말한다."
+      },
+      {
+       "t_raw": "큰오빠도 잡지 못했는데 자신이 해내려는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "큰오빠도 잡지 못했는데 자신이 해내려는 셈이다."
+      },
+      {
+       "t_raw": "이 **그림자 쫓기**에는 자신이 큰오빠만큼 똑똑하다는 것을 증명하려는 목표가 담겨 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 **그림자 쫓기**에는 자신이 큰오빠만큼 똑똑하다는 것을 증명하려는 목표가 담겨 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "All four sentences restate the shadow, the family's and brother's doubts, her view that he is the smartest person she knows, the proof plan, and her refusal of help.",
+     "quote": "Thanks for the offer, but I can do it.",
+     "sentences": [
+      {
+       "t_raw": "Little You가 쫓는 것은 **자신의 그림자**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 우가 쫓는 것은 **자신의 그림자**다."
+      },
+      {
+       "t_raw": "모두가 그림자를 잡지 못할 것이라고 말하며 큰오빠도 그중 하나지만, Little You는 큰오빠가 가장 똑똑하다고 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모두가 그림자를 잡지 못할 것이라고 말하며 큰오빠도 그중 하나지만, 꼬마 우는 큰오빠가 가장 똑똑하다고 여긴다."
+      },
+      {
+       "t_raw": "그래도 방법이 있을 것이라 믿고, 그림자를 잡으면 자신이 큰오빠만큼 똑똑하다는 것을 증명할 수 있다고 생각한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 방법이 있을 것이라 믿고, 그림자를 잡으면 자신이 큰오빠만큼 똑똑하다는 것을 증명할 수 있다고 생각한다."
+      },
+      {
+       "t_raw": "도움을 제안받자 Little You는 고맙다고 하면서도 자기가 할 수 있다며 거절한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도움을 제안받자 꼬마 우는 고맙다고 하면서도 자기가 할 수 있다며 거절한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "All three sentences are supported. The family-worry lines and the hope that grandparents and parents will stop worrying are stated, and reading the refusal as self-proof is a hedged interpretation.",
+     "quote": "I'm the one my whole family worries about, and I've had enough of it.",
+     "sentences": [
+      {
+       "t_raw": "Little You는 온 가족이 걱정하는 대상이 자신이라며 이제 지쳤다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 우는 온 가족이 걱정하는 대상이 자신이라며 이제 지쳤다고 말한다."
+      },
+      {
+       "t_raw": "큰오빠만큼 똑똑하다는 것을 증명하면 할아버지와 멀리서 일하는 엄마, 아빠도 걱정을 멈출 것이라고 기대한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "큰오빠만큼 똑똑하다는 것을 증명하면 할아버지와 멀리서 일하는 엄마, 아빠도 걱정을 멈출 것이라고 기대한다."
+      },
+      {
+       "t_raw": "도움을 사양하면서도 가족의 걱정을 끝내려는 태도는 **스스로 증명하려는 시도**로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도움을 사양하면서도 가족의 걱정을 끝내려는 태도는 **스스로 증명하려는 시도**로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All four sentences match the brother, the 'everyone says' line, the play question, and Grandad's 'good girl' remark.",
+     "quote": "My big brother is the smartest person I know. He can do anything I ask him to! But even he couldn't catch my shadow...",
+     "sentences": [
+      {
+       "t_raw": "Little You가 아는 **가장 똑똑한 사람**은 큰오빠이고, 무엇이든 해 달라고 하면 해 줄 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 우가 아는 **가장 똑똑한 사람**은 큰오빠이고, 무엇이든 해 달라고 하면 해 줄 수 있다고 말한다."
+      },
+      {
+       "t_raw": "하지만 모두가 Little You의 그림자를 잡지 못할 것이라고 말하고, 큰오빠도 그렇게 말한 사람 중 하나다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하지만 모두가 꼬마 우의 그림자를 잡지 못할 것이라고 말하고, 큰오빠도 그렇게 말한 사람 중 하나다."
+      },
+      {
+       "t_raw": "오빠와 놀지 않느냐는 물음에는 정말 놀고 싶지만 오빠가 바쁘고 자신을 피하려는 것 같다고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오빠와 놀지 않느냐는 물음에는 정말 놀고 싶지만 오빠가 바쁘고 자신을 피하려는 것 같다고 답한다."
+      },
+      {
+       "t_raw": "할아버지가 착한 아이가 되라고 했기에 오빠를 귀찮게 하고 싶지 않다는 마음도 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "할아버지가 착한 아이가 되라고 했기에 오빠를 귀찮게 하고 싶지 않다는 마음도 드러낸다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences follow from A9, A10, Q1-Q2; the interpretation is reasonable.",
+     "quote": "Why don't you go ask Granny Ruoxin?",
+     "sentences": [
+      {
+       "t_raw": "Little You는 온 가족이 자신을 걱정하는 대상이라며 그 걱정에 지쳐 있고, 멀리서 일하는 엄마 아빠와 할아버지의 걱정을 멈추게 하려면 큰오빠처럼 똑똑하다는 것을 증명해야 한다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 우는 온 가족이 자신을 걱정하는 대상이라며 그 걱정에 지쳐 있고, 멀리서 일하는 엄마 아빠와 할아버지의 걱정을 멈추게 하려면 큰오빠처럼 똑똑하다는 것을 증명해야 한다고 본다."
+      },
+      {
+       "t_raw": "낯선 조각을 두고는 전혀 모르겠다면서 **Granny Ruoxin**에게 물어보라고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낯선 조각을 두고는 전혀 모르겠다면서 **약심**에게 물어보라고 권한다."
+      },
+      {
+       "t_raw": "Little You가 조각을 알지 못하면서도 Granny Ruoxin에게 물어보라고 한 것은, Little You에게 Granny Ruoxin이 모르는 일을 물어볼 수 있는 사람으로 자리한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "꼬마 우가 조각을 알지 못하면서도 약심에게 물어보라고 한 것은, 꼬마 우에게 약심이 모르는 일을 물어볼 수 있는 사람으로 자리한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Little You"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Little You"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Little You"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A14-A15; the interpretation is modest.",
+     "quote": "Bye-bye!",
+     "sentences": [
+      {
+       "t_raw": "헤어질 때 Little You는 **짧은 작별 인사**를 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤어질 때 꼬마 우는 **짧은 작별 인사**를 한다."
+      },
+      {
+       "t_raw": "상대가 작별 인사를 건네면 Little You도 짧게 받는 주고받기다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상대가 작별 인사를 건네면 꼬마 우도 짧게 받는 주고받기다."
+      },
+      {
+       "t_raw": "인사 장면은 두 마디로 끝나, 작별의 순간에는 대화가 단순하게 정리되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "인사 장면은 두 마디로 끝나, 작별의 순간에는 대화가 단순하게 정리되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches Q1-Q3; the interpretation is reasonable.",
+     "quote": "Lemme see... Wow. I have no idea. I've never seen one of these before.",
+     "sentences": [
+      {
+       "t_raw": "조각을 두고 Little You는 조각이냐고 되묻고는 망설인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조각을 두고 꼬마 우는 조각이냐고 되묻고는 망설인다."
+      },
+      {
+       "t_raw": "어디 보자며 살펴보지만 전혀 모르겠고 이런 것은 처음 본다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어디 보자며 살펴보지만 전혀 모르겠고 이런 것은 처음 본다고 말한다."
+      },
+      {
+       "t_raw": "**Granny Ruoxin**에게 가서 물어보라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**약심**에게 가서 물어보라고 한다."
+      },
+      {
+       "t_raw": "낯선 조각을 직접 판단하지 못하는 반응과 Granny Ruoxin에게 묻도록 하는 말이 겹쳐, Little You가 답을 직접 내리지 않고 Granny Ruoxin에게 넘기는 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "낯선 조각을 직접 판단하지 못하는 반응과 약심에게 묻도록 하는 말이 겹쳐, 꼬마 우가 답을 직접 내리지 않고 약심에게 넘기는 모습으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Little You"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Little You"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Little You"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Granny Ruoxin에게 가서 물어보는 게 어때?",
+     "en": "Why don't you go ask Granny Ruoxin?",
+     "speaker": "Little You",
+     "source": {
+      "kind": "quest",
+      "quest": "The Chi of Yore",
+      "quest_ko": "「교룡」 이야기",
+      "version": "1.0",
+      "speaker": "Little You"
+     },
+     "t": "약심에게 가서 물어보는 게 어때?",
+     "speaker_ko": "꼬마 우"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "어디 보자... 와. 전혀 모르겠어. 이런 건 한 번도 본 적이 없어.",
+     "en": "Lemme see... Wow. I have no idea. I've never seen one of these before.",
+     "speaker": "Little You",
+     "source": {
+      "kind": "quest",
+      "quest": "The Chi of Yore",
+      "quest_ko": "「교룡」 이야기",
+      "version": "1.0",
+      "speaker": "Little You"
+     },
+     "t": "어디 보자... 와. 전혀 모르겠어. 이런 건 한 번도 본 적이 없어.",
+     "speaker_ko": "꼬마 우"
+    }
+   ]
+  }
+ ]
+}

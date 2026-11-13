@@ -20,41 +20,41 @@
    "input_chars": 8120,
    "input_cut": false,
    "input_hash": "45f8ed1acbcb",
-   "writer": "or-ds",
-   "verifier": "grok",
-   "status": "needs_verify",
+   "writer": "ds,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
      "status": "accepted",
-     "note": "All four factual sentences match A1, A2, A14, and A24.",
-     "quote": "prior to joining the Knights of Favonius, Eula was forced to hunt and cook for herself as almost every shop refused her money.",
+     "note": "All sentences are supported by A1, A2, A24 and M8.",
+     "quote": "Now, the clan holds a poor reputation amongst Mondstadt's citizens, with many growing aggressive on the mere mention of them.",
      "sentences": [
       {
-       "t_raw": "**Lawrence Clan**은 Barbatos가 통치를 맡은 뒤 Mondstadt에서 두드러진 가문 중 하나로, Gunnhildr Clan과 Imunlaukr Clan과 나란히 이름을 올렸고 뒤에는 Ragnvindr Family도 주요 가문으로 합류했다.",
+       "t_raw": "Lawrence Clan은 Barbatos가 통치한 뒤 Mondstadt의 유력 가문 중 하나였고, Gunnhildr Clan, Imunlaukr Clan과 함께 이름을 올렸던 가문이다.",
        "interp": false,
        "dropped": false,
-       "t": "**로렌스 가문**은 바르바토스가 통치를 맡은 뒤 몬드에서 두드러진 가문 중 하나로, 군힐드 가문과 이뮨라우크 일족과 나란히 이름을 올렸고 뒤에는 Ragnvindr Family도 주요 가문으로 합류했다."
+       "t": "로렌스 가문은 바르바토스가 통치한 뒤 몬드의 유력 가문 중 하나였고, 군힐드 가문, 이뮨라우크 일족과 함께 이름을 올렸던 가문이다."
       },
       {
-       "t_raw": "Mondstadt Aristocracy 시대에는 가장 앞선 가문이었고, 귀족 사회가 부패하던 시기에는 Vennessa의 반란으로 축출될 때까지 사실상 City of Mondstadt의 통치자가 되었다.",
+       "t_raw": "Mondstadt Aristocracy 시대에는 가장 앞선 가문으로서, 귀족 사회가 부패하던 시기에는 Vennessa의 반란으로 축출될 때까지 City of Mondstadt를 사실상 지배했다.",
        "interp": false,
        "dropped": false,
-       "t": "몬드 귀족 시대에는 가장 앞선 가문이었고, 귀족 사회가 부패하던 시기에는 바네사의 반란으로 축출될 때까지 사실상 몬드성의 통치자가 되었다."
+       "t": "몬드 귀족 시대에는 가장 앞선 가문으로서, 귀족 사회가 부패하던 시기에는 바네사의 반란으로 축출될 때까지 몬드성을 사실상 지배했다."
       },
       {
-       "t_raw": "현재 후손들은 낙인과 사회적 위협이라는 평가에 시달리며, Eula는 Knights of Favonius에 들어가기 전 거의 모든 상점이 돈을 거절해 직접 사냥과 요리를 해야 했다.",
+       "t_raw": "현재는 Mondstadt 시민들 사이에서 평판이 좋지 않아 이름만 언급해도 공격적으로 반응하는 이들이 많다.",
        "interp": false,
        "dropped": false,
-       "t": "현재 후손들은 낙인과 사회적 위협이라는 평가에 시달리며, 유라는 페보니우스 기사단에 들어가기 전 거의 모든 상점이 돈을 거절해 직접 사냥과 요리를 해야 했다."
+       "t": "현재는 몬드 시민들 사이에서 평판이 좋지 않아 이름만 언급해도 공격적으로 반응하는 이들이 많다."
       },
       {
-       "t_raw": "Eula는 현재 **Glacial Seal**을 지니고 있으며, 이 상징은 Decarabian의 압제에서 벗어난 초기 Mondstadt 이래 가문의 기질을 나타낸다.",
+       "t_raw": "Eula는 이 가문의 후손이자 Schubert의 조카로 Knights of Favonius의 Reconnaissance Company 대장이며, 가문의 문장 Glacial Seal을 지니고 있다.",
        "interp": false,
        "dropped": false,
-       "t": "유라는 현재 **Glacial Seal**을 지니고 있으며, 이 상징은 데카라비안의 압제에서 벗어난 초기 몬드 이래 가문의 기질을 나타낸다."
+       "t": "유라는 이 가문의 후손이자 슈베르트의 조카로 페보니우스 기사단의 정찰 중대 대장이며, 가문의 문장 결빙의 인장을 지니고 있다."
       }
      ],
      "sources": [
@@ -73,19 +73,6 @@
        "section": null,
        "paragraph": "A2",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "History > Current Period",
-       "paragraph": "A14",
-       "wiki_refs": [
-        {
-         "type": "vo",
-         "name": "Eula"
-        }
-       ]
       },
       {
        "kind": "wiki",
@@ -94,135 +81,6 @@
        "section": "Clan Traditions",
        "paragraph": "A24",
        "wiki_refs": []
-      }
-     ],
-     "heading": null,
-     "latin_left": [
-      "Ragnvindr Family",
-      "Glacial Seal"
-     ]
-    },
-    {
-     "section": "개요",
-     "status": "accepted",
-     "note": "Facts match A1–A3 (ruling Mondstadt is also in M3). The status-versus-reputation line is a hedged reading of that contrast.",
-     "quote": "Now, the clan holds a poor reputation amongst Mondstadt's citizens, with many growing aggressive on the mere mention of them.",
-     "sentences": [
-      {
-       "t_raw": "Lawrence Clan은 Barbatos가 Mondstadt를 맡은 뒤 Gunnhildr Clan, Imunlaukr Clan과 함께 이름을 올린 유력 가문이었고, Ragnvindr Family가 뒤에 Mondstadt 역사에서 손꼽히는 가문 중 하나로 합류했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "로렌스 가문은 바르바토스가 몬드를 맡은 뒤 군힐드 가문, 이뮨라우크 일족과 함께 이름을 올린 유력 가문이었고, Ragnvindr Family가 뒤에 몬드 역사에서 손꼽히는 가문 중 하나로 합류했다."
-      },
-      {
-       "t_raw": "Mondstadt Aristocracy 시대에는 가문 가운데서도 앞선 위치에 서서, 귀족들이 부패하던 시기에는 사실상 Mondstadt의 통치자였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "몬드 귀족 시대에는 가문 가운데서도 앞선 위치에 서서, 귀족들이 부패하던 시기에는 사실상 몬드의 통치자였다."
-      },
-      {
-       "t_raw": "그러나 Vennessa의 반란으로 축출된 뒤로는 도시 주민들 사이에서 평가가 좋지 않고, 이름만 언급해도 공격적으로 반응하는 사람들이 많다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 바네사의 반란으로 축출된 뒤로는 도시 주민들 사이에서 평가가 좋지 않고, 이름만 언급해도 공격적으로 반응하는 사람들이 많다."
-      },
-      {
-       "t_raw": "**과거의 위상과 현재의 평판이 극단적으로 갈리는 가문**인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "**과거의 위상과 현재의 평판이 극단적으로 갈리는 가문**인 셈이다."
-      },
-      {
-       "t_raw": "한편 **Glacial Seal**은 가문의 상징이며, 일부 Royal Series와 Noblesse Oblige의 무기·성유물, Eula의 명함에서 볼 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한편 **Glacial Seal**은 가문의 상징이며, 일부 집중과 옛 왕실의 의식의 무기·성유물, 유라의 명함에서 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": null,
-       "paragraph": "A3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "Ragnvindr Family",
-      "Glacial Seal"
-     ]
-    },
-    {
-     "section": "개요",
-     "status": "accepted",
-     "note": "Facts match A14 and M8. The last line reasonably reads the shop refusal and stigma as pressure on daily life.",
-     "quote": "A descendant of the infamous and tyrannical Lawrence Clan and niece of Schubert, Eula is the captain of the Reconnaissance Company with the Knights of Favonius.",
-     "sentences": [
-      {
-       "t_raw": "현재 Lawrence Clan의 후손들은 가문의 오명과 낙인을 안고 살아가며, 사회적 위협으로 여겨진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "현재 로렌스 가문의 후손들은 가문의 오명과 낙인을 안고 살아가며, 사회적 위협으로 여겨진다."
-      },
-      {
-       "t_raw": "Eula는 그런 가문의 후손이자 Schubert의 조카로, Knights of Favonius의 Reconnaissance Company 대장을 맡고 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "유라는 그런 가문의 후손이자 슈베르트의 조카로, 페보니우스 기사단의 정찰 중대 대장을 맡고 있다."
-      },
-      {
-       "t_raw": "Knights of Favonius에 들어가기 전에는 거의 모든 상점이 그녀의 돈을 거절해 직접 사냥하고 요리해야 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페보니우스 기사단에 들어가기 전에는 거의 모든 상점이 그녀의 돈을 거절해 직접 사냥하고 요리해야 했다."
-      },
-      {
-       "t_raw": "**가문 전체의 평판이 후손 개인의 일상까지 짓누르는 셈**이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "**가문 전체의 평판이 후손 개인의 일상까지 짓누르는 셈**이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "History > Current Period",
-       "paragraph": "A14",
-       "wiki_refs": [
-        {
-         "type": "vo",
-         "name": "Eula"
-        }
-       ]
       },
       {
        "kind": "wiki",
@@ -233,38 +91,119 @@
        "wiki_refs": []
       }
      ],
-     "heading": "개요",
+     "heading": null,
      "latin_left": []
     },
     {
-     "section": "정체와 상징",
-     "status": "trimmed",
-     "note": "Sentence 2 states as fact that the clan aspired to (“지향한”) that cold, unsullied stance. A24 and M15 only say the seal represents the clan’s disposition or early spirit, not that this was an aim they pursued.",
-     "quote": "cold and unsullied, undaunted by any flame, composed and unshaken in all circumstances.",
+     "section": "정체",
+     "status": "accepted",
+     "note": "Supported by A1.",
+     "quote": "The Lawrence Clan, also called House Lawrence, was one of the prominent clans in Mondstadt after Barbatos took over",
      "sentences": [
       {
-       "t_raw": "Lawrence Clan의 상징은 **Glacial Seal**로, Royal Series와 Noblesse Oblige 계열의 일부 무기와 성유물, Eula의 명함에서 확인된다.",
+       "t_raw": "Lawrence Clan은 **House Lawrence**라고도 불리며, Barbatos가 Mondstadt를 맡은 뒤 Gunnhildr Clan, Imunlaukr Clan과 나란히 이름을 올린 유력 가문이었다.",
        "interp": false,
        "dropped": false,
-       "t": "로렌스 가문의 상징은 **Glacial Seal**로, 집중과 옛 왕실의 의식 계열의 일부 무기와 성유물, 유라의 명함에서 확인된다."
+       "t": "로렌스 가문은 **House Lawrence**라고도 불리며, 바르바토스가 몬드를 맡은 뒤 군힐드 가문, 이뮨라우크 일족과 나란히 이름을 올린 유력 가문이었다."
       },
       {
-       "t_raw": "이 문장은 현재 Eula가 지니며, 가문의 최고 무예 상징으로서 몰락 이전 초기 Mondstadt의 가문 정신을 나타낸다.",
+       "t_raw": "훗날에는 Ragnvindr Family가 Mondstadt 역사상 가장 이름난 가문 중 하나로 이 대열에 합류했다.",
        "interp": false,
        "dropped": false,
-       "t": "이 문장은 현재 유라가 지니며, 가문의 최고 무예 상징으로서 몰락 이전 초기 몬드의 가문 정신을 나타낸다."
+       "t": "훗날에는 라겐펜더 가문이 몬드 역사상 가장 이름난 가문 중 하나로 이 대열에 합류했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
       },
       {
-       "t_raw": "그 정신은 Decarabian의 폭정에서 벗어난 초기 Mondstadt의 가문이 지향한 차갑고 때 묻지 않았으며, 어떤 불에도 굴하지 않고 침착하고 흔들리지 않는 태도로 설명된다.",
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Aristocratic Families",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "House Lawrence"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Supported by A2 and M11.",
+     "quote": "For Eula is a descendant of the once-aristocratic Lawrence Clan.",
+     "sentences": [
+      {
+       "t_raw": "이 가문은 **Mondstadt Aristocracy 시대의 가장 앞선 가문**이었고, 귀족이 부패해 갈 무렵에는 Vennessa의 반란으로 축출되기 전까지 사실상 City of Mondstadt의 통치자였다.",
        "interp": false,
-       "dropped": true,
-       "t": "그 정신은 데카라비안의 폭정에서 벗어난 초기 몬드의 가문이 지향한 차갑고 때 묻지 않았으며, 어떤 불에도 굴하지 않고 침착하고 흔들리지 않는 태도로 설명된다."
+       "dropped": false,
+       "t": "이 가문은 **몬드 귀족 시대의 가장 앞선 가문**이었고, 귀족이 부패해 갈 무렵에는 바네사의 반란으로 축출되기 전까지 사실상 몬드성의 통치자였다."
       },
       {
-       "t_raw": "여러 기록이 이 의미를 초기 Mondstadt의 이상과 연결하므로, Glacial Seal은 가문이 스스로 여긴 본래 품격을 압축한 표지로 보인다.",
-       "interp": true,
+       "t_raw": "그 혈통은 Eula에게 이어져, 한때 Mondstadt의 억압자였던 이들의 피가 지금 그녀의 혈관을 흐른다.",
+       "interp": false,
        "dropped": false,
-       "t": "여러 기록이 이 의미를 초기 몬드의 이상과 연결하므로, Glacial Seal은 가문이 스스로 여긴 본래 품격을 압축한 표지로 보인다."
+       "t": "그 혈통은 유라에게 이어져, 한때 몬드의 억압자였던 이들의 피가 지금 그녀의 혈관을 흐른다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eula/Profile",
+       "revision": 200159,
+       "section": "Character Stories > Character Details",
+       "paragraph": "M11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Supported by A3, A24 and M15 (highest martial symbol).",
+     "quote": "The Lawrence Clan's seal is known as the \"Glacial Seal\", and it is currently carried by Eula.",
+     "sentences": [
+      {
+       "t_raw": "가문의 문장은 **Glacial Seal**로, Royal Series와 Noblesse Oblige 계열의 무기와 성유물 몇 점, 그리고 Eula의 namecard에서 그 모습을 볼 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가문의 문장은 **결빙의 인장**으로, 집중과 옛 왕실의 의식 계열의 무기와 성유물 몇 점, 그리고 유라의 명함에서 그 모습을 볼 수 있다.",
+       "polish": {
+        "from": "가문의 문장은 **결빙의 인장**으로, 집중과 옛 왕실의 의식 계열의 무기와 성유물 몇 점, 그리고 유라의 namecard에서 그 모습을 볼 수 있다.",
+        "text": "가문의 문장은 **결빙의 인장**으로, 집중과 옛 왕실의 의식 계열의 무기와 성유물 몇 점, 그리고 유라의 명함에서 그 모습을 볼 수 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이 문장은 현재 Eula가 지니고 있으며, 가문의 최고 무예 상징으로서 Decarabian의 통치에서 막 벗어난 초기 Mondstadt의 가풍을 담는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 문장은 현재 유라가 지니고 있으며, 가문의 최고 무예 상징으로서 데카라비안의 통치에서 막 벗어난 초기 몬드의 가풍을 담는다."
+      },
+      {
+       "t_raw": "차갑고 순수하며 어떤 불에도 굴하지 않고, 어떤 상황에서도 침착하고 흔들리지 않는 기품이라는 뜻이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "차갑고 순수하며 어떤 불에도 굴하지 않고, 어떤 상황에서도 침착하고 흔들리지 않는 기품이라는 뜻이다."
       }
      ],
      "sources": [
@@ -293,41 +232,26 @@
        "wiki_refs": []
       }
      ],
-     "heading": "정체와 상징",
-     "latin_left": [
-      "Glacial Seal",
-      "Glacial Seal"
-     ]
+     "heading": "정체",
+     "latin_left": []
     },
     {
-     "section": "정체와 상징",
-     "status": "trimmed",
-     "note": "Sentence 1 turns “abusive in most regards” into “most viewpoints would call it abuse.” Sentence 2 says post-liberation Mondstadt lost etiquette and taste; M16 only says it lacks them.",
-     "quote": "Their extreme regimen is considered abusive in most regards, and they only hire the best of the best to tutor the younger generation.",
+     "section": "정체",
+     "status": "accepted",
+     "note": "Sentence 0 is supported by A2. Sentence 1 is a reasonable interpretation of the contrast between A24 and A2.",
+     "quote": "Now, the clan holds a poor reputation amongst Mondstadt's citizens, with many growing aggressive on the mere mention of them.",
      "sentences": [
       {
-       "t_raw": "Lawrence Clan은 **귀족으로 보이는 것**에 큰 비중을 두었고, 그 관행은 평민이 보는 자신들의 모습이 귀족에 걸맞아야 한다는 생각에서 나왔다.",
+       "t_raw": "그러나 지금 Mondstadt 시민들 사이에서 이 가문의 평판은 좋지 않고, 이름만 언급해도 공격적으로 변하는 사람이 많다.",
        "interp": false,
        "dropped": false,
-       "t": "로렌스 가문은 **귀족으로 보이는 것**에 큰 비중을 두었고, 그 관행은 평민이 보는 자신들의 모습이 귀족에 걸맞아야 한다는 생각에서 나왔다."
+       "t": "그러나 지금 몬드 시민들 사이에서 이 가문의 평판은 좋지 않고, 이름만 언급해도 공격적으로 변하는 사람이 많다."
       },
       {
-       "t_raw": "그래서 최고의 교사만을 들여 후대를 가르쳤고, 대부분의 관점에서 학대라고 여겨질 만큼 극단적인 훈련을 시켰다.",
-       "interp": false,
-       "dropped": true,
-       "t": "그래서 최고의 교사만을 들여 후대를 가르쳤고, 대부분의 관점에서 학대라고 여겨질 만큼 극단적인 훈련을 시켰다."
-      },
-      {
-       "t_raw": "가문의 시선에서는 해방 이후의 Mondstadt가 예절과 취향을 잃었고, 권력을 되찾는 날에는 시중을 들 자격이 있는 사람이 없을 것이라고 여겼다.",
-       "interp": false,
-       "dropped": true,
-       "t": "가문의 시선에서는 해방 이후의 몬드가 예절과 취향을 잃었고, 권력을 되찾는 날에는 시중을 들 자격이 있는 사람이 없을 것이라고 여겼다."
-      },
-      {
-       "t_raw": "이처럼 귀족으로 보이는 일과 평민과의 거리를 지키는 일이 규율의 동기가 되었다는 점에서, 가문의 예법은 **신분의 경계를 유지하려는 태도**와 맞물려 있었던 셈이다.",
+       "t_raw": "문장이 담은 차갑고 흔들림 없는 기품과, 이름만 들어도 험악해지는 현재의 평판이 같은 가문을 두고 정반대로 갈린 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이처럼 귀족으로 보이는 일과 평민과의 거리를 지키는 일이 규율의 동기가 되었다는 점에서, 가문의 예법은 **신분의 경계를 유지하려는 태도**와 맞물려 있었던 셈이다."
+       "t": "문장이 담은 차갑고 흔들림 없는 기품과, 이름만 들어도 험악해지는 현재의 평판이 같은 가문을 두고 정반대로 갈린 셈이다."
       }
      ],
      "sources": [
@@ -335,50 +259,45 @@
        "kind": "wiki",
        "page": "Lawrence Clan",
        "revision": 1455873,
-       "section": "Clan Traditions",
-       "paragraph": "A18",
+       "section": null,
+       "paragraph": "A2",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
-       "page": "Eula/Profile",
-       "revision": 200159,
-       "section": "Character Stories > Story 4",
-       "paragraph": "M16",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": "Clan Traditions",
+       "paragraph": "A24",
        "wiki_refs": []
       }
      ],
-     "heading": "정체와 상징",
+     "heading": "정체",
      "latin_left": []
     },
     {
-     "section": "드러난 역사 — 새 Mondstadt와 귀족 시대",
+     "section": "드러난 역사 — Decarabian의 통치와 새 Mondstadt",
      "status": "accepted",
-     "note": "The pioneer and conqueror claims match A4, and the joining of the wilderness clans matches M2. The two-sided early identity is a hedged reading of those passages.",
+     "note": "Supported by A4 (hedged with 'apparently') and M2.",
      "quote": "The Lawrence clan apparently lived outside of Decarabian's city and survived in the frozen wilderness as pioneers.",
      "sentences": [
       {
-       "t_raw": "Lawrence Clan은 Decarabian의 도시 밖 얼음 황야에서 개척자로 살아남은 것으로 보이며, 그 생존 경험으로 스스로를 “conquerors”라고 여겼다.",
+       "t_raw": "Decarabian의 통치 아래에서 Lawrence Clan은 아마도 도시 밖에서 살아남은 개척자들이었다.",
        "interp": false,
        "dropped": false,
-       "t": "로렌스 가문은 데카라비안의 도시 밖 얼음 황야에서 개척자로 살아남은 것으로 보이며, 그 생존 경험으로 스스로를 “정복자들”이라고 여겼다.",
-       "polish": {
-        "from": "로렌스 가문은 데카라비안의 도시 밖 얼음 황야에서 개척자로 살아남은 것으로 보이며, 그 생존 경험으로 스스로를 “conquerors”라고 여겼다.",
-        "text": "로렌스 가문은 데카라비안의 도시 밖 얼음 황야에서 개척자로 살아남은 것으로 보이며, 그 생존 경험으로 스스로를 “정복자들”이라고 여겼다.",
-        "by": "or-ds"
-       }
+       "t": "데카라비안의 통치 아래에서 로렌스 가문은 아마도 도시 밖에서 살아남은 개척자들이었다."
       },
       {
-       "t_raw": "눈이 녹아 Mondstadt가 형상을 갖추자 Lawrence Clan과 Imunlaukr Clan 같은 얼음 황야의 씨족·부족들이 새 나라에 합류했다.",
+       "t_raw": "그들은 얼어붙은 황야에서 살아남아 개척자로서 버텼고, 그런 혹독한 조건 속의 생존이 스스로를 정복자로 여기게 했다.",
        "interp": false,
        "dropped": false,
-       "t": "눈이 녹아 몬드가 형상을 갖추자 로렌스 가문과 이뮨라우크 일족 같은 얼음 황야의 씨족·부족들이 새 나라에 합류했다."
+       "t": "그들은 얼어붙은 황야에서 살아남아 개척자로서 버텼고, 그런 혹독한 조건 속의 생존이 스스로를 정복자로 여기게 했다."
       },
       {
-       "t_raw": "혹독한 생존에서 나온 자기 인식과 자유의 새 나라로의 합류가 겹치며, 가문의 초기 정체성은 ‘살아남은 자들’과 ‘새 질서의 참여자’라는 두 면을 함께 지니게 된 셈이다.",
-       "interp": true,
+       "t_raw": "눈이 녹고 Mondstadt가 모습을 갖추기 시작하자, Decarabian의 도시 밖에서 살아온 Lawrence Clan과 Imunlaukr Clan 같은 씨족과 부족들은 싸울 이유를 발견하고 새로운 자유의 나라에 합류했다.",
+       "interp": false,
        "dropped": false,
-       "t": "혹독한 생존에서 나온 자기 인식과 자유의 새 나라로의 합류가 겹치며, 가문의 초기 정체성은 '살아남은 자들'과 '새 질서의 참여자'라는 두 면을 함께 지니게 된 셈이다."
+       "t": "눈이 녹고 몬드가 모습을 갖추기 시작하자, 데카라비안의 도시 밖에서 살아온 로렌스 가문과 이뮨라우크 일족 같은 씨족과 부족들은 싸울 이유를 발견하고 새로운 자유의 나라에 합류했다."
       }
      ],
      "sources": [
@@ -417,14 +336,14 @@
        ]
       }
      ],
-     "heading": "드러난 역사 — 새 몬드와 귀족 시대",
+     "heading": "드러난 역사 — 데카라비안의 통치와 새 몬드",
      "latin_left": []
     },
     {
-     "section": "드러난 역사 — 새 Mondstadt와 귀족 시대",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "she guided the people to build a statue in the plaza commemorating Barbatos' descent, upon which an oath was inscribed by the leader of all the clans.",
+     "section": "드러난 역사 — Decarabian의 통치와 새 Mondstadt",
+     "status": "accepted",
+     "note": "All sentences are supported by A5 and M2.",
+     "quote": "Venerare was the leader of the Lawrence clan when new Mondstadt was founded",
      "sentences": [
       {
        "t_raw": "새 Mondstadt가 세워질 때 Lawrence Clan의 지도자는 Venerare였다.",
@@ -433,32 +352,25 @@
        "t": "새 몬드가 세워질 때 로렌스 가문의 지도자는 베네라리였다."
       },
       {
-       "t_raw": "Venerare는 사람들을 이끌어 광장에 Barbatos의 강림을 기념하는 동상을 세우게 하고, 모든 씨족의 지도자가 새긴 맹세로 푸른 땅과 자유를 영원히 지키려 했다.",
+       "t_raw": "그녀의 인도 아래 사람들은 광장에 Barbatos의 강림을 기념하는 높은 조각상을 세웠고, 모든 씨족의 지도자가 그 위에 맹세를 새겼다.",
        "interp": false,
        "dropped": false,
-       "t": "베네라리는 사람들을 이끌어 광장에 바르바토스의 강림을 기념하는 동상을 세우게 하고, 모든 씨족의 지도자가 새긴 맹세로 푸른 땅과 자유를 영원히 지키려 했다."
+       "t": "그녀의 인도 아래 사람들은 광장에 바르바토스의 강림을 기념하는 높은 조각상을 세웠고, 모든 씨족의 지도자가 그 위에 맹세를 새겼다."
       },
       {
-       "t_raw": "얼음 황야의 생존자였던 가문의 지도자가 새 나라의 건설과 공식 의식을 이끈 이 장면은, 가문의 초기 위상이 새 Mondstadt의 질서와 맞닿아 있었음을 보여준다.",
-       "interp": true,
+       "t_raw": "사람들은 그 맹세로 초록빛 땅과 Mondstadt의 자유를 영원히 지키겠다고 다짐했다.",
+       "interp": false,
        "dropped": false,
-       "t": "얼음 황야의 생존자였던 가문의 지도자가 새 나라의 건설과 공식 의식을 이끈 이 장면은, 가문의 초기 위상이 새 몬드의 질서와 맞닿아 있었음을 보여준다."
+       "t": "사람들은 그 맹세로 초록빛 땅과 몬드의 자유를 영원히 지키겠다고 다짐했다."
+      },
+      {
+       "t_raw": "이때 Mondstadt의 영토는 현재의 국경까지 넓어졌고 Andrius의 영혼과 늑대 무리와도 평화롭게 공존했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이때 몬드의 영토는 현재의 국경까지 넓어졌고 안드리우스의 영혼과 늑대 무리와도 평화롭게 공존했다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "History > During Decarabian's Rule",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Sacrificial Bow"
-        }
-       ]
-      },
       {
        "kind": "wiki",
        "page": "Lawrence Clan",
@@ -494,41 +406,54 @@
        ]
       }
      ],
-     "heading": "드러난 역사 — 새 몬드와 귀족 시대",
+     "heading": "드러난 역사 — 데카라비안의 통치와 새 몬드",
      "latin_left": []
     },
     {
-     "section": "드러난 역사 — 새 Mondstadt와 귀족 시대",
-     "status": "needs_verify",
-     "note": null,
+     "section": "드러난 역사 — Decarabian의 통치와 새 Mondstadt",
+     "status": "accepted",
+     "note": "All supported by A6 and A7. The interpretation in (3) follows from A4 and A6.",
      "quote": "During the time that the people of Mondstadt worshipped the gods of Anemo and Time together, the Lawrence clan would reenact their victory over the frozen wilderness.",
      "sentences": [
       {
-       "t_raw": "사람들이 Anemo와 Time의 신들을 함께 섬기던 때, Lawrence Clan은 얼음 황야에서의 승리를 재현하는 의식을 행했다.",
+       "t_raw": "사람들이 Anemo와 Time의 신들을 함께 섬기던 시기, Lawrence Clan은 얼어붙은 황야에서 거둔 승리를 재현했다.",
        "interp": false,
        "dropped": false,
-       "t": "사람들이 바람과 시간의 신들을 함께 섬기던 때, 로렌스 가문은 얼음 황야에서의 승리를 재현하는 의식을 행했다."
+       "t": "사람들이 바람과 시간의 신들을 함께 섬기던 시기, 로렌스 가문은 얼어붙은 황야에서 거둔 승리를 재현했다."
       },
       {
-       "t_raw": "귀족들은 자연 세계에서 힘을 과시하려 사냥하고 전리품을 사람들과 나누며 자비를 베풀었는데, 이 전통은 Lawrence Clan의 역사와 문화에 바탕을 둔 것으로 보인다.",
+       "t_raw": "귀족들은 자연 속에서 힘을 보여 주려 사냥을 했고, 그 전리품을 사람들과 나누며 자비를 드러냈다.",
        "interp": false,
        "dropped": false,
-       "t": "귀족들은 자연 세계에서 힘을 과시하려 사냥하고 전리품을 사람들과 나누며 자비를 베풀었는데, 이 전통은 로렌스 가문의 역사와 문화에 바탕을 둔 것으로 보인다."
+       "t": "귀족들은 자연 속에서 힘을 보여 주려 사냥을 했고, 그 전리품을 사람들과 나누며 자비를 드러냈다."
       },
       {
-       "t_raw": "왕실 마법사들은 역사를 기록하고 귀족에게 덕목을 심어 주는 일을 맡았다.",
+       "t_raw": "이 전통은 Lawrence Clan의 역사와 문화에 바탕을 둔 것으로 여겨지며, 귀족들은 역사를 기록하고 덕을 가르치는 왕실 마법사들의 교육을 받았다.",
        "interp": false,
        "dropped": false,
-       "t": "왕실 마법사들은 역사를 기록하고 귀족에게 덕목을 심어 주는 일을 맡았다."
+       "t": "이 전통은 로렌스 가문의 역사와 문화에 바탕을 둔 것으로 여겨지며, 귀족들은 역사를 기록하고 덕을 가르치는 왕실 마법사들의 교육을 받았다."
       },
       {
-       "t_raw": "가문의 생존 기억이 의식과 사냥 전통으로 이어지고, 그 문화가 초기 귀족 교육과 연결되었다는 점에서 새 Mondstadt 초기의 귀족 문화는 Lawrence Clan의 기억과 분리하기 어려웠던 셈이다.",
+       "t_raw": "혹독한 황야에서 살아남은 경험이 승리 재현과 사냥 전통으로 이어졌다는 점에서, 초기 귀족 문화는 가문의 생존 기억과 맞닿아 있었던 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "가문의 생존 기억이 의식과 사냥 전통으로 이어지고, 그 문화가 초기 귀족 교육과 연결되었다는 점에서 새 몬드 초기의 귀족 문화는 로렌스 가문의 기억과 분리하기 어려웠던 셈이다."
+       "t": "혹독한 황야에서 살아남은 경험이 승리 재현과 사냥 전통으로 이어졌다는 점에서, 초기 귀족 문화는 가문의 생존 기억과 맞닿아 있었던 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": "History > During Decarabian's Rule",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Sacrificial Bow"
+        }
+       ]
+      },
       {
        "kind": "wiki",
        "page": "Lawrence Clan",
@@ -560,32 +485,50 @@
        ]
       }
      ],
-     "heading": "드러난 역사 — 새 몬드와 귀족 시대",
+     "heading": "드러난 역사 — 데카라비안의 통치와 새 몬드",
      "latin_left": []
     },
     {
-     "section": "드러난 역사 — 부패와 몰락",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "the Lawrence Clan, a group of aristocrats ruling Mondstadt, forgot the oath of their ancestors and made themselves a tyrant",
+     "section": "드러난 역사 — 후기 귀족 시대와 몰락",
+     "status": "accepted",
+     "note": "All supported by A8 to A10. (5) is a reasonable interpretation.",
+     "quote": "view of themselves shifted from conquerors to overlords to kings",
      "sentences": [
       {
-       "t_raw": "Lawrence Clan이 스스로를 정복자에서 군주로, 다시 왕으로 여기게 되면서 가문은 **타락의 길**로 들어섰고, 이는 Late Aristocratic Period의 시작으로 이어졌다.",
+       "t_raw": "Lawrence Clan이 스스로를 **정복자에서 군주로** 바꾸어 보기 시작하면서 가문은 타락의 길로 들어섰고, 후기 귀족 시대가 시작되었다.",
        "interp": false,
        "dropped": false,
-       "t": "로렌스 가문이 스스로를 정복자에서 군주로, 다시 왕으로 여기게 되면서 가문은 **타락의 길**로 들어섰고, 이는 Late Aristocratic Period의 시작으로 이어졌다."
+       "t": "로렌스 가문이 스스로를 **정복자에서 군주로** 바꾸어 보기 시작하면서 가문은 타락의 길로 들어섰고, 후기 귀족 시대가 시작되었다."
       },
       {
-       "t_raw": "1,600년의 역사 끝에 Mondstadt의 자유는 전례 없는 수준까지 떨어졌고, Mondstadt를 다스리던 귀족 집단인 Lawrence Clan은 조상의 맹세를 잊고 스스로 **폭군**이 되어 Barbatos가 남긴 자유의 선물을 거스렀다.",
+       "t_raw": "그들은 오래전 광장에 세운 Barbatos의 동상을 무너뜨려 그곳에 적힌 맹세를 없애려 했다.",
        "interp": false,
        "dropped": false,
-       "t": "1,600년의 역사 끝에 몬드의 자유는 전례 없는 수준까지 떨어졌고, 몬드를 다스리던 귀족 집단인 로렌스 가문은 조상의 맹세를 잊고 스스로 **폭군**이 되어 바르바토스가 남긴 자유의 선물을 거스렀다."
+       "t": "그들은 오래전 광장에 세운 바르바토스의 동상을 무너뜨려 그곳에 적힌 맹세를 없애려 했다."
       },
       {
-       "t_raw": "이들은 잔혹한 손으로 Mondstadt를 다스리며 이 땅에 노예를 들이고 억압받는 자들의 외침을 외면했으며, 자신들의 안전을 지키기 위해 Ursa the Drake와 그 수하들을 달랬다.",
+       "t_raw": "왕실 마법사들은 귀족에 대한 의무를 버리고 역사나 맹세를 더 이상 말하지 않았다.",
        "interp": false,
        "dropped": false,
-       "t": "이들은 잔혹한 손으로 몬드를 다스리며 이 땅에 노예를 들이고 억압받는 자들의 외침을 외면했으며, 자신들의 안전을 지키기 위해 마룡 우르사와 그 수하들을 달랬다."
+       "t": "왕실 마법사들은 귀족에 대한 의무를 버리고 역사나 맹세를 더 이상 말하지 않았다."
+      },
+      {
+       "t_raw": "귀족은 검만 써야 한다고 여겨 활의 전통을 버렸고, 창 또한 평민과 검투사의 무기로 보아 쓰지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀족은 검만 써야 한다고 여겨 활의 전통을 버렸고, 창 또한 평민과 검투사의 무기로 보아 쓰지 않았다."
+      },
+      {
+       "t_raw": "검투 경기는 종교 의식에서 그들의 즐거움을 위한 유혈 스포츠로 바뀌었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "검투 경기는 종교 의식에서 그들의 즐거움을 위한 유혈 스포츠로 바뀌었다."
+      },
+      {
+       "t_raw": "맹세를 지우고 역사를 말하지 않게 하며 검을 중심에 둔 규범을 세운 것은, 가문이 스스로를 지배자로 재편하려는 흐름으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "맹세를 지우고 역사를 말하지 않게 하며 검을 중심에 둔 규범을 세운 것은, 가문이 스스로를 지배자로 재편하려는 흐름으로 보인다."
       }
      ],
      "sources": [
@@ -602,52 +545,6 @@
         }
        ]
       },
-      {
-       "kind": "wiki",
-       "page": "Venti/Storyline",
-       "revision": 1469903,
-       "section": "Story > End of the Aristocracy",
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사 — 부패와 몰락",
-     "latin_left": [
-      "Late Aristocratic Period"
-     ]
-    },
-    {
-     "section": "드러난 역사 — 부패와 몰락",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "They tore down the statue of Barbatos that they put up in the plaza long ago to get rid of the oath written there",
-     "sentences": [
-      {
-       "t_raw": "Lawrence Clan은 오래전 광장에 세워 둔 Barbatos의 조각상을 무너뜨려 그곳에 적힌 맹세를 없애려 했고, 왕실 마법사들은 귀족에 대한 의무를 저버린 채 역사나 맹세를 더 이상 말하지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "로렌스 가문은 오래전 광장에 세워 둔 바르바토스의 조각상을 무너뜨려 그곳에 적힌 맹세를 없애려 했고, 왕실 마법사들은 귀족에 대한 의무를 저버린 채 역사나 맹세를 더 이상 말하지 않았다."
-      },
-      {
-       "t_raw": "귀족은 검만 써야 한다고 믿어 활을 쓰던 가문의 유산을 버렸고, 활과 창을 평민과 검투사의 무기로 여겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "귀족은 검만 써야 한다고 믿어 활을 쓰던 가문의 유산을 버렸고, 활과 창을 평민과 검투사의 무기로 여겼다."
-      },
-      {
-       "t_raw": "검투 경기는 종교 의식에서 그들의 즐거움을 위한 **유혈 오락**으로 바뀌었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "검투 경기는 종교 의식에서 그들의 즐거움을 위한 **유혈 오락**으로 바뀌었다."
-      },
-      {
-       "t_raw": "Vennessa는 Lawrence Clan에 감금된 처지를 자신의 사람들을 위해 감수했고, 경고 없이 친족과 함께 아레나에 내몰린 뒤 그들이 Lawrence Clan의 궁수들에게 무참히 살해되는 것을 보고 격렬한 분노에 사로잡혀 앞을 막는 적들을 베었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바네사는 로렌스 가문에 감금된 처지를 자신의 사람들을 위해 감수했고, 경고 없이 친족과 함께 아레나에 내몰린 뒤 그들이 로렌스 가문의 궁수들에게 무참히 살해되는 것을 보고 격렬한 분노에 사로잡혀 앞을 막는 적들을 베었다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Lawrence Clan",
@@ -677,6 +574,75 @@
          "name": "Royal Greatsword"
         }
        ]
+      }
+     ],
+     "heading": "드러난 역사 — 후기 귀족 시대와 몰락",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — 후기 귀족 시대와 몰락",
+     "status": "accepted",
+     "note": "Supported by A11, M3 and M1. (5) is a fair interpretation.",
+     "quote": "the Lawrence Clan ruled Mondstadt with a cruel hand, bringing slaves into this land and ignoring the cries of the oppressed.",
+     "sentences": [
+      {
+       "t_raw": "땅이 Barbatos를 부르짖자, Barbatos는 자신이 맡긴 자들이 남긴 피해를 보고 다시 Mondstadt로 돌아와 자유를 되찾고자 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "땅이 바르바토스를 부르짖자, 바르바토스는 자신이 맡긴 자들이 남긴 피해를 보고 다시 몬드로 돌아와 자유를 되찾고자 했다."
+      },
+      {
+       "t_raw": "당시 Lawrence Clan은 잔혹한 손으로 Mondstadt를 다스리며 이 땅에 노예를 들여왔고, 억압받는 이들의 울부짖음을 외면했으며, 자신들의 안전을 위해 Ursa the Drake와 그 부하들을 달랬다.",
+       "interp": false,
+       "dropped": false,
+       "t": "당시 로렌스 가문은 잔혹한 손으로 몬드를 다스리며 이 땅에 노예를 들여왔고, 억압받는 이들의 울부짖음을 외면했으며, 자신들의 안전을 위해 마룡 우르사와 그 부하들을 달랬다."
+      },
+      {
+       "t_raw": "Barbatos는 Natlan 출신 노예 소녀 Vennessa와 힘을 합쳐 사람들을 **공개적인 반란**으로 이끌었고, 이어 Lawrence Clan이 Mondstadt를 Morax에게 팔 것이라는 허위 문서를 작성했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바르바토스는 나타 출신 노예 소녀 바네사와 힘을 합쳐 사람들을 **공개적인 반란**으로 이끌었고, 이어 로렌스 가문이 몬드를 모락스에게 팔 것이라는 허위 문서를 작성했다."
+      },
+      {
+       "t_raw": "가문의 병사들은 자신들도 노예처럼 다뤄질까 두려워 Vennessa의 반란을 지지하기 시작했고, 가문에 충성하는 병사는 매우 적게 남았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가문의 병사들은 자신들도 노예처럼 다뤄질까 두려워 바네사의 반란을 지지하기 시작했고, 가문에 충성하는 병사는 매우 적게 남았다."
+      },
+      {
+       "t_raw": "Vennessa는 Lawrence Clan의 궁수들이 자신의 가족을 무자비하게 죽이는 것을 보고 앞뒤를 가리지 못할 분노에 휩싸였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바네사는 로렌스 가문의 궁수들이 자신의 가족을 무자비하게 죽이는 것을 보고 앞뒤를 가리지 못할 분노에 휩싸였다."
+      },
+      {
+       "t_raw": "자신들의 안전을 위해 Ursa the Drake를 달랜 가문이 정작 병사들의 두려움 앞에서는 지지 기반을 잃은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자신들의 안전을 위해 마룡 우르사를 달랜 가문이 정작 병사들의 두려움 앞에서는 지지 기반을 잃은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": "History > Late Aristocratic Period",
+       "paragraph": "A11",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Venti"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Venti/Storyline",
+       "revision": 1469903,
+       "section": "Story > End of the Aristocracy",
+       "paragraph": "M3",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -692,104 +658,35 @@
        ]
       }
      ],
-     "heading": "드러난 역사 — 부패와 몰락",
+     "heading": "드러난 역사 — 후기 귀족 시대와 몰락",
      "latin_left": []
     },
     {
-     "section": "드러난 역사 — 부패와 몰락",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Barbatos went a step further by drafting a false document in which the Lawrence Clan would sell Mondstadt to Morax.",
+     "section": "드러난 역사 — 후기 귀족 시대와 몰락",
+     "status": "accepted",
+     "note": "Supported by A12 and A8. (2) is a reasonable interpretation.",
+     "quote": "The Lawrence Clan were eventually overthrown by Vennessa's rebellion, and they were forced by the people of Mondstadt to leave the city and never return.",
      "sentences": [
       {
-       "t_raw": "땅이 Barbatos를 부르짖자, Barbatos는 자신이 맡겼던 자들이 저지른 피해를 보고 자유를 되찾기 위해 다시 Mondstadt로 돌아왔다.",
+       "t_raw": "결국 Lawrence Clan은 Vennessa의 반란에 의해 축출되었고, Mondstadt 사람들로부터 도시를 떠나 다시는 돌아오지 말라는 강요를 받았다.",
        "interp": false,
        "dropped": false,
-       "t": "땅이 바르바토스를 부르짖자, 바르바토스는 자신이 맡겼던 자들이 저지른 피해를 보고 자유를 되찾기 위해 다시 몬드로 돌아왔다."
+       "t": "결국 로렌스 가문은 바네사의 반란에 의해 축출되었고, 몬드 사람들로부터 도시를 떠나 다시는 돌아오지 말라는 강요를 받았다."
       },
       {
-       "t_raw": "그는 Vennessa라는 노예를 도와 함께 사람들을 공공연한 반란으로 이끌었다.",
+       "t_raw": "시간이 지나 일부 가문 구성원은 사람들을 배신한 쪽이 사람들이 아니라 자신들이었음을 깨달았다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 바네사라는 노예를 도와 함께 사람들을 공공연한 반란으로 이끌었다."
+       "t": "시간이 지나 일부 가문 구성원은 사람들을 배신한 쪽이 사람들이 아니라 자신들이었음을 깨달았다."
       },
       {
-       "t_raw": "Barbatos는 한 걸음 더 나아가 Lawrence Clan이 Mondstadt를 Morax에게 팔 것이라는 위조 문서를 작성했고, 가문을 섬기던 병사들은 자신들도 노예처럼 취급될까 두려워 Vennessa's rebellion을 지지하기 시작해 가문에 충성하는 병사는 거의 남지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바르바토스는 한 걸음 더 나아가 로렌스 가문이 몬드를 모락스에게 팔 것이라는 위조 문서를 작성했고, 가문을 섬기던 병사들은 자신들도 노예처럼 취급될까 두려워 바네사의 rebellion을 지지하기 시작해 가문에 충성하는 병사는 거의 남지 않았다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "History > Late Aristocratic Period",
-       "paragraph": "A11",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Venti"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사 — 부패와 몰락",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — 부패와 몰락",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Eventually some members of the clan realized that they had betrayed the people, not the other way around.",
-     "sentences": [
-      {
-       "t_raw": "결국 Lawrence Clan은 Vennessa's rebellion에 의해 전복되었고, Mondstadt 사람들에 의해 도시를 떠나 다시는 돌아오지 말라는 강요를 받았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "결국 로렌스 가문은 바네사의 rebellion에 의해 전복되었고, 몬드 사람들에 의해 도시를 떠나 다시는 돌아오지 말라는 강요를 받았다."
-      },
-      {
-       "t_raw": "훗날 가문의 일부 구성원은 자신들이 사람들을 배신한 것이지 사람들이 자신들을 배신한 것이 아니라는 사실을 깨달았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "훗날 가문의 일부 구성원은 자신들이 사람들을 배신한 것이지 사람들이 자신들을 배신한 것이 아니라는 사실을 깨달았다."
-      },
-      {
-       "t_raw": "스스로를 왕으로 여긴 가문이 위조 문서로 병사들의 두려움을 사고 결국 사람들에게 도시를 떠나도록 강요받은 일은, 가문의 통치가 사람들과 병력 양쪽에서 지탱할 수 없게 된 결과로 읽힌다.",
+       "t_raw": "스스로 군주로까지 여겼던 가문이 사람들의 **추방**으로 도시를 떠나게 된 것은, 그 지배가 더 이상 사람들에게 받아들여지지 않았음을 보여준다.",
        "interp": true,
        "dropped": false,
-       "t": "스스로를 왕으로 여긴 가문이 위조 문서로 병사들의 두려움을 사고 결국 사람들에게 도시를 떠나도록 강요받은 일은, 가문의 통치가 사람들과 병력 양쪽에서 지탱할 수 없게 된 결과로 읽힌다."
+       "t": "스스로 군주로까지 여겼던 가문이 사람들의 **추방**으로 도시를 떠나게 된 것은, 그 지배가 더 이상 사람들에게 받아들여지지 않았음을 보여준다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "History > Late Aristocratic Period",
-       "paragraph": "A8",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Sacrificial Bow"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "History > Late Aristocratic Period",
-       "paragraph": "A11",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Venti"
-        }
-       ]
-      },
       {
        "kind": "wiki",
        "page": "Lawrence Clan",
@@ -802,34 +699,47 @@
          "name": "Royal Bow"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": "History > Late Aristocratic Period",
+       "paragraph": "A8",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Sacrificial Bow"
+        }
+       ]
       }
      ],
-     "heading": "드러난 역사 — 부패와 몰락",
+     "heading": "드러난 역사 — 후기 귀족 시대와 몰락",
      "latin_left": []
     },
     {
-     "section": "현재의 Lawrence Clan",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Descendants of the Lawrence Clan in the present day often face stigmas and are deemed a social threat",
+     "section": "드러난 역사 — 현재의 Lawrence Clan",
+     "status": "accepted",
+     "note": "Supported by A13. (2) is a reasonable interpretation.",
+     "quote": "They would often get into conflict with the locals, which result in the Knights of Favonius arriving to mediate, but to very little effect.",
      "sentences": [
       {
-       "t_raw": "Lawrence Clan은 Mondstadt의 다른 지역으로 옮겼지만 **현재 거처는 알려지지 않았고**, 지역 주민들과의 충돌에는 Knights of Favonius가 중재해도 효과가 거의 없었다.",
+       "t_raw": "추방 뒤 Lawrence Clan은 Mondstadt의 다른 지역으로 옮겨 갔지만, 그 현재 위치는 알려져 있지 않다.",
        "interp": false,
        "dropped": false,
-       "t": "로렌스 가문은 몬드의 다른 지역으로 옮겼지만 **현재 거처는 알려지지 않았고**, 지역 주민들과의 충돌에는 페보니우스 기사단이 중재해도 효과가 거의 없었다."
+       "t": "추방 뒤 로렌스 가문은 몬드의 다른 지역으로 옮겨 갔지만, 그 현재 위치는 알려져 있지 않다."
       },
       {
-       "t_raw": "후손들은 낙인과 **사회적 위협**이라는 평가를 마주했고, Eula는 입단 전 거의 모든 상점이 돈을 거절해 직접 사냥하고 요리해야 했다.",
+       "t_raw": "이들은 종종 지역 주민들과 충돌했고, Knights of Favonius가 중재에 나서도 효과는 매우 적었다.",
        "interp": false,
        "dropped": false,
-       "t": "후손들은 낙인과 **사회적 위협**이라는 평가를 마주했고, 유라는 입단 전 거의 모든 상점이 돈을 거절해 직접 사냥하고 요리해야 했다."
+       "t": "이들은 종종 지역 주민들과 충돌했고, 페보니우스 기사단이 중재에 나서도 효과는 매우 적었다."
       },
       {
-       "t_raw": "이런 충돌과 낙인은 다른 지역으로 옮긴 뒤에도 가문을 둘러싼 긴장이 남아 있음을 보여준다.",
+       "t_raw": "정착지가 밝혀지지 않은 채 충돌과 중재가 되풀이되는 모습은 가문과 주변 사회의 관계가 여전히 편치 않음을 보여 준다.",
        "interp": true,
        "dropped": false,
-       "t": "이런 충돌과 낙인은 다른 지역으로 옮긴 뒤에도 가문을 둘러싼 긴장이 남아 있음을 보여준다."
+       "t": "정착지가 밝혀지지 않은 채 충돌과 중재가 되풀이되는 모습은 가문과 주변 사회의 관계가 여전히 편치 않음을 보여 준다."
       }
      ],
      "sources": [
@@ -839,6 +749,44 @@
        "revision": 1455873,
        "section": "History > Current Period",
        "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 현재의 로렌스 가문",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — 현재의 Lawrence Clan",
+     "status": "accepted",
+     "note": "All sentences are supported by M8 and A14.",
+     "quote": "prior to joining the Knights of Favonius, Eula was forced to hunt and cook for herself as almost every shop refused her money.",
+     "sentences": [
+      {
+       "t_raw": "Eula는 악명 높고 포악한 Lawrence Clan의 후손이자 Schubert의 조카이며, Knights of Favonius의 Reconnaissance Company 대장이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유라는 악명 높고 포악한 로렌스 가문의 후손이자 슈베르트의 조카이며, 페보니우스 기사단의 정찰 중대 대장이다."
+      },
+      {
+       "t_raw": "현재 Lawrence Clan의 후손들은 흔히 낙인과 사회적 위협이라는 평가를 마주한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 로렌스 가문의 후손들은 흔히 낙인과 사회적 위협이라는 평가를 마주한다."
+      },
+      {
+       "t_raw": "Eula는 Knights of Favonius에 들어가기 전, 거의 모든 상점이 돈을 받지 않아 스스로 사냥하고 요리해야 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유라는 페보니우스 기사단에 들어가기 전, 거의 모든 상점이 돈을 받지 않아 스스로 사냥하고 요리해야 했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eula",
+       "revision": 202423,
+       "section": null,
+       "paragraph": "M8",
        "wiki_refs": []
       },
       {
@@ -855,38 +803,44 @@
        ]
       }
      ],
-     "heading": "현재의 로렌스 가문",
+     "heading": "드러난 역사 — 현재의 로렌스 가문",
      "latin_left": []
     },
     {
-     "section": "현재의 Lawrence Clan",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "You didn't choose to be born into the Lawrence clan, and we don't care about that kind of thing. The Eula we know is a great person!",
+     "section": "드러난 역사 — 현재의 Lawrence Clan",
+     "status": "accepted",
+     "note": "All sentences are supported by A15, Q2 and Q8.",
+     "quote": "The clan proceeded to denounce Eula as a traitor.",
      "sentences": [
       {
-       "t_raw": "Eula의 입단 지원은 일반 시민과 Lawrence Clan 모두를 술렁이게 했고, 가문은 본부 밖에서 그녀를 둘러쌌다.",
+       "t_raw": "Eula가 Knights of Favonius에 지원하자 민간과 Lawrence Clan 양쪽에서 큰 소란이 일었다.",
        "interp": false,
        "dropped": false,
-       "t": "유라의 입단 지원은 일반 시민과 로렌스 가문 모두를 술렁이게 했고, 가문은 본부 밖에서 그녀를 둘러쌌다."
+       "t": "유라가 페보니우스 기사단에 지원하자 민간과 로렌스 가문 양쪽에서 큰 소란이 일었다."
       },
       {
-       "t_raw": "Varka와 Jean은 그녀의 전투 재능을 아까워해 입단을 허락했지만, 가문은 Eula를 반역자라고 비난했다.",
+       "t_raw": "가문 사람들은 Knights of Favonius의 본부 밖에서 그녀의 결정을 두고 항의했고, Varka와 Jean은 전투 재능이 뛰어난 그녀를 거절하는 것이 낭비라고 보아 입단을 허락했다.",
        "interp": false,
        "dropped": false,
-       "t": "바르카와 진은 그녀의 전투 재능을 아까워해 입단을 허락했지만, 가문은 유라를 반역자라고 비난했다."
+       "t": "가문 사람들은 페보니우스 기사단의 본부 밖에서 그녀의 결정을 두고 항의했고, 바르카와 진은 전투 재능이 뛰어난 그녀를 거절하는 것이 낭비라고 보아 입단을 허락했다."
       },
       {
-       "t_raw": "Paimon은 Eula의 출생은 선택이 아니며 그녀를 훌륭한 사람이라고 말한다.",
+       "t_raw": "그러자 가문은 Eula를 **반역자**라고 규탄했다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 유라의 출생은 선택이 아니며 그녀를 훌륭한 사람이라고 말한다."
+       "t": "그러자 가문은 유라를 **반역자**라고 규탄했다."
       },
       {
-       "t_raw": "가문의 비난과 달리 Paimon은 Eula 개인을 가문과 분리해 평가하는 셈이다.",
-       "interp": true,
+       "t_raw": "Eula는 Lawrence Clan의 사촌을 찾고 있다고 말한다.",
+       "interp": false,
        "dropped": false,
-       "t": "가문의 비난과 달리 페이몬은 유라 개인을 가문과 분리해 평가하는 셈이다."
+       "t": "유라는 로렌스 가문의 사촌을 찾고 있다고 말한다."
+      },
+      {
+       "t_raw": "또 기사이자 Lawrence Clan의 일원으로서, 그가 다른 이들에게 해를 끼치지 않도록 해야 할 의무가 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 기사이자 로렌스 가문의 일원으로서, 그가 다른 이들에게 해를 끼치지 않도록 해야 할 의무가 있다고 말한다."
       }
      ],
      "sources": [
@@ -900,47 +854,61 @@
       },
       {
        "kind": "quest",
-       "quest": "Solid Ice, Soluble in Wine",
-       "quest_ko": "얼음은 술에 쉽게 녹는다",
-       "version": "2.5",
-       "speaker": "Paimon"
+       "quest": "A Mysterious Missive on Paper Wings",
+       "quest_ko": "하늘에서 날아온 편지",
+       "version": "3.8",
+       "speaker": "Eula"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Mysterious Missive on Paper Wings",
+       "quest_ko": "하늘에서 날아온 편지",
+       "version": "3.8",
+       "speaker": "Eula"
       }
      ],
-     "heading": "현재의 로렌스 가문",
+     "heading": "드러난 역사 — 현재의 로렌스 가문",
      "latin_left": []
     },
     {
-     "section": "현재의 Lawrence Clan",
-     "status": "needs_verify",
-     "note": null,
+     "section": "드러난 역사 — 현재의 Lawrence Clan",
+     "status": "accepted",
+     "note": "All sentences are supported by Q4, Q10, Q5 and A16.",
      "quote": "To see some friends from a distant land. They have offered their assistance in restoring the Lawrence Clan to its former glory.",
      "sentences": [
       {
-       "t_raw": "Jean은 Lawrence Clan 내부 인물이 Fatui와 가깝게 거래한다는 보고를 받았다고 말한다.",
+       "t_raw": "Jean은 Knights of Favonius로부터 Lawrence Clan 내부의 누군가가 Fatui와 긴밀한 접촉을 하고 있다는 여러 보고를 받았다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "진은 로렌스 가문 내부 인물이 우인단과 가깝게 거래한다는 보고를 받았다고 말한다."
+       "t": "진은 페보니우스 기사단으로부터 로렌스 가문 내부의 누군가가 우인단과 긴밀한 접촉을 하고 있다는 여러 보고를 받았다고 말한다."
       },
       {
-       "t_raw": "Eula의 삼촌 Schubert는 Fatui와 공모해 Mondstadt를 되찾으려 했고, 먼 땅의 친구들이 가문을 옛 영광으로 되돌리는 데 도움을 주겠다고 말했다.",
+       "t_raw": "그 인물은 Schubert로, 최근에는 북쪽 성벽을 자주 걷고 있었다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "유라의 삼촌 슈베르트는 우인단과 공모해 몬드를 되찾으려 했고, 먼 땅의 친구들이 가문을 옛 영광으로 되돌리는 데 도움을 주겠다고 말했다."
+       "t": "그 인물은 슈베르트로, 최근에는 북쪽 성벽을 자주 걷고 있었다고 한다."
       },
       {
-       "t_raw": "그러나 그 음모는 Traveler와 Eula에 의해 저지되었고, Schubert는 구금되었다.",
+       "t_raw": "Schubert는 먼 곳에서 온 친구들이 Lawrence Clan을 **옛 영광**으로 되돌리는 데 도움을 주겠다고 제안했다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 그 음모는 여행자와 유라에 의해 저지되었고, 슈베르트는 구금되었다."
+       "t": "슈베르트는 먼 곳에서 온 친구들이 로렌스 가문을 **옛 영광**으로 되돌리는 데 도움을 주겠다고 제안했다고 말한다."
       },
       {
-       "t_raw": "옛 영광을 되찾으려는 시도가 Eula의 손에 막힌 셈이다.",
-       "interp": true,
+       "t_raw": "그는 Fatui와 공모해 Mondstadt를 되찾아 '적절한' 통치 아래 두려 했고, 이 음모는 Traveler와 Eula에 의해 저지되어 Schubert는 구금되었다.",
+       "interp": false,
        "dropped": false,
-       "t": "옛 영광을 되찾으려는 시도가 유라의 손에 막힌 셈이다."
+       "t": "그는 우인단과 공모해 몬드를 되찾아 '적절한' 통치 아래 두려 했고, 이 음모는 여행자와 유라에 의해 저지되어 슈베르트는 구금되었다."
       }
      ],
      "sources": [
+      {
+       "kind": "quest",
+       "quest": "Shadow of the Past",
+       "quest_ko": "과거의 먹구름",
+       "version": "1.5",
+       "speaker": "Jean"
+      },
       {
        "kind": "quest",
        "quest": "Shadow of the Past",
@@ -964,38 +932,38 @@
        "wiki_refs": []
       }
      ],
-     "heading": "현재의 로렌스 가문",
+     "heading": "드러난 역사 — 현재의 로렌스 가문",
      "latin_left": []
     },
     {
-     "section": "현재의 Lawrence Clan",
-     "status": "needs_verify",
-     "note": null,
+     "section": "드러난 역사 — 현재의 Lawrence Clan",
+     "status": "accepted",
+     "note": "All sentences are supported by A17, Q1 and Q7.",
      "quote": "But the peculiar thing is... I realized that nobody knew me out there, and not a single person even cared about the Lawrence Clan.",
      "sentences": [
       {
-       "t_raw": "가문의 또 다른 구성원 Lessig는 명예를 되찾을 방법을 듣고 Sumeru로 향했다.",
+       "t_raw": "Lawrence Clan의 또 다른 구성원 Lessig는 가문의 명예를 회복할 방법을 들은 뒤 Sumeru로 향하기로 했다.",
        "interp": false,
        "dropped": false,
-       "t": "가문의 또 다른 구성원 레시그는 명예를 되찾을 방법을 듣고 수메르로 향했다."
+       "t": "로렌스 가문의 또 다른 구성원 레시그는 가문의 명예를 회복할 방법을 들은 뒤 수메르로 향하기로 했다."
       },
       {
-       "t_raw": "Liyue와 Sumeru에서 아무도 자신과 가문을 알지 못하고 관심도 두지 않는다는 사실에 충격을 받았고, 자신이 옛 방식에 매달려 진실을 보지 못했으며 Eula는 오래전에 그 진실을 보았다는 것을 깨달았다.",
+       "t_raw": "그러나 Liyue와 Sumeru를 지나며 아무도 자신과 가문을 알지 못하고 신경 쓰지 않는다는 사실에 충격을 받았고, 자신이 옛 방식에 매달리도록 배워 이제서야 진실을 보게 되었으며 Eula는 오래전에 그 진실을 보았다고 깨닫는다.",
        "interp": false,
        "dropped": false,
-       "t": "리월과 수메르에서 아무도 자신과 가문을 알지 못하고 관심도 두지 않는다는 사실에 충격을 받았고, 자신이 옛 방식에 매달려 진실을 보지 못했으며 유라는 오래전에 그 진실을 보았다는 것을 깨달았다."
+       "t": "그러나 리월과 수메르를 지나며 아무도 자신과 가문을 알지 못하고 신경 쓰지 않는다는 사실에 충격을 받았고, 자신이 옛 방식에 매달리도록 배워 이제서야 진실을 보게 되었으며 유라는 오래전에 그 진실을 보았다고 깨닫는다."
       },
       {
-       "t_raw": "Eula는 두 사람이 가문의 영광과 무관한 평범한 사람들이라고 말한다.",
+       "t_raw": "Eula는 Lessig에게 둘 다 Lawrence Clan의 영광과는 아무 관련이 없고, 그것은 지나간 일이며 두 사람은 그저 평범한 사람들이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "유라는 두 사람이 가문의 영광과 무관한 평범한 사람들이라고 말한다."
+       "t": "유라는 레시그에게 둘 다 로렌스 가문의 영광과는 아무 관련이 없고, 그것은 지나간 일이며 두 사람은 그저 평범한 사람들이라고 말한다."
       },
       {
-       "t_raw": "**가문 밖의 무관심**은 옛 자부심이 통하지 않는 범위를 드러낸 셈이다.",
-       "interp": true,
+       "t_raw": "Lessig는 바깥에서 아무도 자신을 몰랐고 Lawrence Clan에 대해 신경 쓰는 사람은 단 한 명도 없었다는 것을 깨달았다고 말한다.",
+       "interp": false,
        "dropped": false,
-       "t": "**가문 밖의 무관심**은 옛 자부심이 통하지 않는 범위를 드러낸 셈이다."
+       "t": "레시그는 바깥에서 아무도 자신을 몰랐고 로렌스 가문에 대해 신경 쓰는 사람은 단 한 명도 없었다는 것을 깨달았다고 말한다."
       }
      ],
      "sources": [
@@ -1012,48 +980,48 @@
        "quest": "Fairground Gathering, Summer Lights Illuminated",
        "quest_ko": "가든을 비추는 여름날의 등불",
        "version": "3.8",
-       "speaker": "Lessig"
+       "speaker": "Eula"
       },
       {
        "kind": "quest",
        "quest": "Fairground Gathering, Summer Lights Illuminated",
        "quest_ko": "가든을 비추는 여름날의 등불",
        "version": "3.8",
-       "speaker": "Eula"
+       "speaker": "Lessig"
       }
      ],
-     "heading": "현재의 로렌스 가문",
+     "heading": "드러난 역사 — 현재의 로렌스 가문",
      "latin_left": []
     },
     {
-     "section": "클랜의 전통과 규율",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "many of their practices coming from the idea that their perception in the eyes of \"commoners\" must befit nobility.",
+     "section": "가문의 전통과 교육",
+     "status": "accepted",
+     "note": "The facts are supported by A18 and A19. The interpretation follows from A18.",
+     "quote": "The Lawrence clan was known to have put a large emphasis on appearing noble, many of their practices coming from the idea that their perception in the eyes of \"commoners\" must befit nobility.",
      "sentences": [
       {
-       "t_raw": "Lawrence Clan은 평민의 눈에 비치는 모습이 귀족다워야 한다는 생각에서 많은 관행을 끌어냈고, 그 훈련은 대부분의 경우 학대적이라고 여겨질 만큼 극단적이었다.",
+       "t_raw": "Lawrence Clan의 교육은 '귀족으로 보이는 일'에 크게 기울어 있었다.",
        "interp": false,
        "dropped": false,
-       "t": "로렌스 가문은 평민의 눈에 비치는 모습이 귀족다워야 한다는 생각에서 많은 관행을 끌어냈고, 그 훈련은 대부분의 경우 학대적이라고 여겨질 만큼 극단적이었다."
+       "t": "로렌스 가문의 교육은 '귀족으로 보이는 일'에 크게 기울어 있었다."
       },
       {
-       "t_raw": "가문은 최고의 교사만을 고용해 전투, 춤, 요리, 예절을 가르쳤고, 예술은 '두 번째 영혼'이라 부를 만큼 중시했다.",
+       "t_raw": "가문의 관행은 '평민'의 눈에 귀족다운 모습을 보여야 한다는 생각에서 나왔고, 그 극단적인 훈련은 대부분의 기준에서 학대적이라고 여겨졌다.",
        "interp": false,
        "dropped": false,
-       "t": "가문은 최고의 교사만을 고용해 전투, 춤, 요리, 예절을 가르쳤고, 예술은 '두 번째 영혼'이라 부를 만큼 중시했다."
+       "t": "가문의 관행은 '평민'의 눈에 귀족다운 모습을 보여야 한다는 생각에서 나왔고, 그 극단적인 훈련은 대부분의 기준에서 학대적이라고 여겨졌다."
       },
       {
-       "t_raw": "해방 이후의 Mondstadt가 예절과 취향을 잃었다고 보았기에, 다시 권력을 잡아도 자신들을 모실 자격자가 없으리라 여기며 **평민의 수준으로 내려가지 않아야 한다**고 가르쳤다.",
+       "t_raw": "교육은 전투, 춤, 요리, 예절을 중심으로 했고 예술에도 '제2의 영혼'이라는 표현을 쓸 만큼 비중을 두었다.",
        "interp": false,
        "dropped": false,
-       "t": "해방 이후의 몬드가 예절과 취향을 잃었다고 보았기에, 다시 권력을 잡아도 자신들을 모실 자격자가 없으리라 여기며 **평민의 수준으로 내려가지 않아야 한다**고 가르쳤다."
+       "t": "교육은 전투, 춤, 요리, 예절을 중심으로 했고 예술에도 '제2의 영혼'이라는 표현을 쓸 만큼 비중을 두었다."
       },
       {
-       "t_raw": "이런 교육은 귀족다움을 실기 하나가 아니라 교양 전반의 문제로 본 태도로 보인다.",
+       "t_raw": "이런 교육은 평민에게 비치는 귀족의 겉모습을 관리하려는 성격을 띠었다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "이런 교육은 귀족다움을 실기 하나가 아니라 교양 전반의 문제로 본 태도로 보인다."
+       "t": "이런 교육은 평민에게 비치는 귀족의 겉모습을 관리하려는 성격을 띠었다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -1072,63 +1040,45 @@
        "section": "Clan Traditions",
        "paragraph": "A19",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Eula/Profile",
-       "revision": 200159,
-       "section": "Character Stories > Story 4",
-       "paragraph": "M16",
-       "wiki_refs": []
       }
      ],
-     "heading": "클랜의 전통과 규율",
+     "heading": "가문의 전통과 교육",
      "latin_left": []
     },
     {
-     "section": "클랜의 전통과 규율",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "members of the clan always had to appear refined and steadfast no matter the circumstances.",
+     "section": "가문의 전통과 교육",
+     "status": "accepted",
+     "note": "The facts are supported by A20. The interpretation is reasonable.",
+     "quote": "In battle, Eula states that members of the clan always had to appear refined and steadfast no matter the circumstances.",
      "sentences": [
       {
-       "t_raw": "전투에서 구성원은 어떤 상황에서도 세련되고 확고해야 했고, 싸움 중에도 즉시 판단해야 했으며, 넘어지거나 얼어붙는 것은 보기 흉하고 부끄러운 일로 여겨졌다.",
+       "t_raw": "전투에서도 가문의 구성원은 어떤 상황에서도 세련되고 흔들림 없는 모습을 보여야 했다.",
        "interp": false,
        "dropped": false,
-       "t": "전투에서 구성원은 어떤 상황에서도 세련되고 확고해야 했고, 싸움 중에도 즉시 판단해야 했으며, 넘어지거나 얼어붙는 것은 보기 흉하고 부끄러운 일로 여겨졌다."
+       "t": "전투에서도 가문의 구성원은 어떤 상황에서도 세련되고 흔들림 없는 모습을 보여야 했다."
       },
       {
-       "t_raw": "춤과 예술은 핵심 전통이어서 귀족 의식 \"The Dance of Sacrifice\"는 두 번째 영혼이 결정화된 형태로 여겨졌다.",
+       "t_raw": "동시에 전투 중에는 그 자리에서 빠르게 판단해야 했고, 넘어지거나 얼어붙는 것은 보기 좋지 않고 부끄러운 일로 여겼다.",
        "interp": false,
        "dropped": false,
-       "t": "춤과 예술은 핵심 전통이어서 귀족 의식 \"The Dance of Sacrifice\"는 두 번째 영혼이 결정화된 형태로 여겨졌다."
+       "t": "동시에 전투 중에는 그 자리에서 빠르게 판단해야 했고, 넘어지거나 얼어붙는 것은 보기 좋지 않고 부끄러운 일로 여겼다."
       },
       {
-       "t_raw": "그 세 번째 막 \"Flickering Candlelight\"는 Lawrence Clan의 독무로, 대대로 장녀가 추었고 최고의 무용수들이 완벽을 위해 가르쳤다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 세 번째 막 \"흔들리는 촛불\"은 로렌스 가문의 독무로, 대대로 장녀가 추었고 최고의 무용수들이 완벽을 위해 가르쳤다."
-      },
-      {
-       "t_raw": "어려운 발놈을 배우며 피 나는 발가락은 명예이자 통과의례로 여겨졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "어려운 발놈을 배우며 피 나는 발가락은 명예이자 통과의례로 여겨졌다."
-      },
-      {
-       "t_raw": "오늘날에도 가문은 이 의식을 존중하지만 가르칠 무용수가 부족해 교육 과정에서는 빠지고 예술적 오락으로 격하되었으며, 현재 장녀 Eula에게는 가혹한 학업에서 벗어나는 편안한 오락이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오늘날에도 가문은 이 의식을 존중하지만 가르칠 무용수가 부족해 교육 과정에서는 빠지고 예술적 오락으로 격하되었으며, 현재 장녀 유라에게는 가혹한 학업에서 벗어나는 편안한 오락이었다."
-      },
-      {
-       "t_raw": "의식은 여전히 남았지만 실기 교육은 약해진 모습은 춤이 실기보다 상징적 전통으로 남았음을 보여주는 셈이다.",
+       "t_raw": "전투에서도 귀족다운 태도와 평정을 중요한 규범으로 본 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "의식은 여전히 남았지만 실기 교육은 약해진 모습은 춤이 실기보다 상징적 전통으로 남았음을 보여주는 셈이다."
+       "t": "전투에서도 귀족다운 태도와 평정을 중요한 규범으로 본 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": "Clan Traditions",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Lawrence Clan",
@@ -1141,7 +1091,49 @@
          "name": "Speech and Etiquette"
         }
        ]
+      }
+     ],
+     "heading": "가문의 전통과 교육",
+     "latin_left": []
+    },
+    {
+     "section": "가문의 전통과 교육",
+     "status": "accepted",
+     "note": "All sentences are supported by A21, M9, M10 and M12.",
+     "quote": "This ancient ceremony was a continuous tradition for so long that even today, long after being expelled by the people of Mondstadt, the Lawrence Clan still honors it.",
+     "sentences": [
+      {
+       "t_raw": "춤과 예술은 가문 전통의 핵심이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "춤과 예술은 가문 전통의 핵심이었다."
       },
+      {
+       "t_raw": "'The Dance of Sacrifice'라는 귀족 의식은 '제2의 영혼'이 결정화된 형태로 여겨졌고, 그 제3막은 Lawrence Clan의 독무 'Flickering Candlelight'였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "'제례의 춤'라는 귀족 의식은 '제2의 영혼'이 결정화된 형태로 여겨졌고, 그 제3막은 로렌스 가문의 독무 '흔들리는 촛불'였다."
+      },
+      {
+       "t_raw": "이 춤은 세대를 거쳐 보통 장녀가 추었으며, 가문은 최고의 무용수들을 불러 완벽한 수행을 요구했고 피 나는 발가락을 명예와 통과 의례로 여겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 춤은 세대를 거쳐 보통 장녀가 추었으며, 가문은 최고의 무용수들을 불러 완벽한 수행을 요구했고 피 나는 발가락을 명예와 통과 의례로 여겼다."
+      },
+      {
+       "t_raw": "그러나 가르칠 무용수가 부족해 교육 과정에서 빠졌고, 이후에는 우아한 예술적 오락으로 남았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 가르칠 무용수가 부족해 교육 과정에서 빠졌고, 이후에는 우아한 예술적 오락으로 남았다."
+      },
+      {
+       "t_raw": "오늘날에도 가문은 이 의식을 존중하며, Eula는 장녀로서 어릴 때 이 춤을 다른 빡빡한 공부에서 벗어나는 휴식으로 느꼈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오늘날에도 가문은 이 의식을 존중하며, 유라는 장녀로서 어릴 때 이 춤을 다른 빡빡한 공부에서 벗어나는 휴식으로 느꼈다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Lawrence Clan",
@@ -1188,46 +1180,49 @@
        "wiki_refs": []
       }
      ],
-     "heading": "클랜의 전통과 규율",
-     "latin_left": [
-      "The Dance of Sacrifice"
-     ]
+     "heading": "가문의 전통과 교육",
+     "latin_left": []
     },
     {
-     "section": "클랜의 전통과 규율",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "they knew that they could not trust the commoners to make food for them.",
+     "section": "가문의 전통과 교육",
+     "status": "accepted",
+     "note": "All sentences are supported by A22.",
+     "quote": "Due to the clan's insistence on retaking Mondstadt and returning to their former glory, they knew that they could not trust the commoners to make food for them.",
      "sentences": [
       {
-       "t_raw": "음식도 규율의 영역이었다. 가문은 Mondstadt를 되찾아 옛 영광을 회복하려는 고집 때문에 평민에게 음식을 맡길 수 없다고 여겼고, 평민의 속됨에 물들지 않으려 스스로 요리하는 데 중점을 두었다.",
+       "t_raw": "가문은 Mondstadt 탈환과 옛 영광 회복을 주장했기에 평민에게 음식을 맡길 수 없다고 여겼다.",
        "interp": false,
        "dropped": false,
-       "t": "음식도 규율의 영역이었다. 가문은 몬드를 되찾아 옛 영광을 회복하려는 고집 때문에 평민에게 음식을 맡길 수 없다고 여겼고, 평민의 속됨에 물들지 않으려 스스로 요리하는 데 중점을 두었다."
+       "t": "가문은 몬드 탈환과 옛 영광 회복을 주장했기에 평민에게 음식을 맡길 수 없다고 여겼다."
       },
       {
-       "t_raw": "규칙은 작은 실수에도 혹독한 꾸지람이나 징계가 따를 만큼 가혹했지만, 그 덕에 음식의 질은 매우 높았고 Eula의 Stormcrest Pie는 변형된 뒤에도 지역에서 인기를 얻었다.",
+       "t_raw": "그래서 직접 요리하는 데 힘썼고, 평민의 저속함에 발을 들이지 않으려 했다.",
        "interp": false,
        "dropped": false,
-       "t": "규칙은 작은 실수에도 혹독한 꾸지람이나 징계가 따를 만큼 가혹했지만, 그 덕에 음식의 질은 매우 높았고 유라의 격랑 파이는 변형된 뒤에도 지역에서 인기를 얻었다."
+       "t": "그래서 직접 요리하는 데 힘썼고, 평민의 저속함에 발을 들이지 않으려 했다."
       },
       {
-       "t_raw": "말투와 예절은 신분에 따라 엄격히 구분되었는데, '친애하는 친구'는 그저 아는 사이에만 쓰고 특히 가까운 사람에게 쓰면 상대를 멀어지게 하려는 뜻이 되었으며, '좋은 친구'라고 말하는 것은 무례하게 여겨졌다.",
+       "t_raw": "규칙은 매우 엄격해 사소한 실수에도 혹독한 꾸중이나 징계가 따랐다.",
        "interp": false,
        "dropped": false,
-       "t": "말투와 예절은 신분에 따라 엄격히 구분되었는데, '친애하는 친구'는 그저 아는 사이에만 쓰고 특히 가까운 사람에게 쓰면 상대를 멀어지게 하려는 뜻이 되었으며, '좋은 친구'라고 말하는 것은 무례하게 여겨졌다."
+       "t": "규칙은 매우 엄격해 사소한 실수에도 혹독한 꾸중이나 징계가 따랐다."
       },
       {
-       "t_raw": "평민은 귀족에게 최대한 존경을 표해야 했고, 귀족을 화나게 한 평민은 무릎을 꿇고 오래 쳐다보지 않은 채 빨리 사과해야 했다.",
+       "t_raw": "그러나 규칙을 지킨 덕에 음식 품질은 매우 높았고, Eula의 대표 요리인 Stormcrest Pie는 변형해도 매우 맛있다고 평가되어 현지 인기 요리가 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "평민은 귀족에게 최대한 존경을 표해야 했고, 귀족을 화나게 한 평민은 무릎을 꿇고 오래 쳐다보지 않은 채 빨리 사과해야 했다."
+       "t": "그러나 규칙을 지킨 덕에 음식 품질은 매우 높았고, 유라의 대표 요리인 격랑 파이는 변형해도 매우 맛있다고 평가되어 현지 인기 요리가 되었다."
       },
       {
-       "t_raw": "이런 지식은 외부인에게 전하는 것이 엄격히 금지되었다.",
+       "t_raw": "가문 구성원들은 특히 아주 신 Gebratenes Fleisch mit Sauerkraut를 좋아했다.",
        "interp": false,
        "dropped": false,
-       "t": "이런 지식은 외부인에게 전하는 것이 엄격히 금지되었다."
+       "t": "가문 구성원들은 특히 아주 신 자우어크라우트를 곁들인 구운 고기를 좋아했다.",
+       "polish": {
+        "from": "가문 구성원들은 특히 아주 신 Gebratenes Fleisch mit Sauerkraut를 좋아했다.",
+        "text": "가문 구성원들은 특히 아주 신 자우어크라우트를 곁들인 구운 고기를 좋아했다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -1243,7 +1238,65 @@
          "name": "Eula"
         }
        ]
+      }
+     ],
+     "heading": "가문의 전통과 교육",
+     "latin_left": []
+    },
+    {
+     "section": "가문의 전통과 교육",
+     "status": "accepted",
+     "note": "The facts are supported by A23. Sentence 5 is a reasonable interpretation of M16 and A23.",
+     "quote": "In the clan itself, passing this knowledge to outsiders is strictly forbidden.",
+     "sentences": [
+      {
+       "t_raw": "가문은 상대의 신분에 따라 말투를 달리해야 한다고 가르쳤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가문은 상대의 신분에 따라 말투를 달리해야 한다고 가르쳤다."
       },
+      {
+       "t_raw": "'dear friend'는 잘 알지만 특히 친하지 않은 사람에게만 쓰는 호칭이었고, 아주 친한 사람에게 쓰면 상대를 멀어지게 하려는 뜻이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "'친애하는 친구'는 잘 알지만 특히 친하지 않은 사람에게만 쓰는 호칭이었고, 아주 친한 사람에게 쓰면 상대를 멀어지게 하려는 뜻이 되었다.",
+       "polish": {
+        "from": "'dear friend'는 잘 알지만 특히 친하지 않은 사람에게만 쓰는 호칭이었고, 아주 친한 사람에게 쓰면 상대를 멀어지게 하려는 뜻이 되었다.",
+        "text": "'친애하는 친구'는 잘 알지만 특히 친하지 않은 사람에게만 쓰는 호칭이었고, 아주 친한 사람에게 쓰면 상대를 멀어지게 하려는 뜻이 되었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "'good friend'도 무례한 표현으로 여겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "'좋은 친구'도 무례한 표현으로 여겼다.",
+       "polish": {
+        "from": "'good friend'도 무례한 표현으로 여겼다.",
+        "text": "'좋은 친구'도 무례한 표현으로 여겼다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "평민은 귀족에게 최대한의 존경을 표해야 했고, 귀족을 불쾌하게 한 평민은 무릎을 꿇고 빨리 사과하면서 너무 오래 쳐다보지 않아야 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "평민은 귀족에게 최대한의 존경을 표해야 했고, 귀족을 불쾌하게 한 평민은 무릎을 꿇고 빨리 사과하면서 너무 오래 쳐다보지 않아야 했다."
+      },
+      {
+       "t_raw": "이 지식은 외부인에게 전하는 것 자체가 금지되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 지식은 외부인에게 전하는 것 자체가 금지되었다."
+      },
+      {
+       "t_raw": "해방 이후의 Mondstadt가 예절과 취향이 부족하다고 보면서도 자신들의 예절 지식은 외부에 전하는 것을 금지한 점은, 가문의 예절이 안과 밖을 나눈 폐쇄적 기준으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "해방 이후의 몬드가 예절과 취향이 부족하다고 보면서도 자신들의 예절 지식은 외부에 전하는 것을 금지한 점은, 가문의 예절이 안과 밖을 나눈 폐쇄적 기준으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Lawrence Clan",
@@ -1256,53 +1309,55 @@
          "name": "Through the Motions, to the Heart"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eula/Profile",
+       "revision": 200159,
+       "section": "Character Stories > Story 4",
+       "paragraph": "M16",
+       "wiki_refs": []
       }
      ],
-     "heading": "클랜의 전통과 규율",
+     "heading": "가문의 전통과 교육",
      "latin_left": []
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "The facts are supported by A5. Sentence 2 is a loose, figurative interpretation, but it is acceptable as one.",
      "quote": "Under the guidance of Venerare, leader of the Lawrence Clan; the people of Mondstadt built a tall statue in the plaza",
      "sentences": [
       {
-       "t_raw": "새 Mondstadt에서 Lawrence Clan을 이끈 Venerare의 인도 아래 사람들이 광장에 동상을 세우고 **자유를 지키겠다는 맹세**를 했다.",
+       "t_raw": "Venerare는 새 Mondstadt가 세워질 때 Lawrence Clan을 이끌었고, 사람들이 광장에 Barbatos의 강림을 기념하는 조각상을 세우게 했다.",
        "interp": false,
        "dropped": false,
-       "t": "새 몬드에서 로렌스 가문을 이끈 베네라리의 인도 아래 사람들이 광장에 동상을 세우고 **자유를 지키겠다는 맹세**를 했다."
+       "t": "베네라리는 새 몬드가 세워질 때 로렌스 가문을 이끌었고, 사람들이 광장에 바르바토스의 강림을 기념하는 조각상을 세우게 했다."
       },
       {
-       "t_raw": "훗날 가문이 그 맹세를 잊고 포학해지자, Barbatos는 Venti라는 시인으로 Mondstadt에 나타나 Vennessa와 친구가 되었다.",
+       "t_raw": "조각상에는 모든 가문의 지도자가 새긴 맹세가 있었다.",
        "interp": false,
        "dropped": false,
-       "t": "훗날 가문이 그 맹세를 잊고 포학해지자, 바르바토스는 벤티라는 시인으로 몬드에 나타나 바네사와 친구가 되었다."
+       "t": "조각상에는 모든 가문의 지도자가 새긴 맹세가 있었다."
       },
       {
-       "t_raw": "Vennessa는 Lawrence Clan에 감금되었으나 사람들을 위해 감내했고, 친족이 가문의 궁수들에게 살해당하자 이성을 잃고 적을 베었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바네사는 로렌스 가문에 감금되었으나 사람들을 위해 감내했고, 친족이 가문의 궁수들에게 살해당하자 이성을 잃고 적을 베었다."
-      },
-      {
-       "t_raw": "맹세의 가문이 노예를 둔 폭군이 된 것은 가문의 타락을 보여주는 대비로 보인다.",
+       "t_raw": "가문의 이름은 도시의 건국 서사와 함께 새겨진 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "맹세의 가문이 노예를 둔 폭군이 된 것은 가문의 타락을 보여주는 대비로 보인다."
+       "t": "가문의 이름은 도시의 건국 서사와 함께 새겨진 셈이다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Vennessa",
-       "revision": 988640,
-       "section": "Profile > Personality",
-       "paragraph": "M1",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": "History > Early Aristocratic Period",
+       "paragraph": "A5",
        "wiki_refs": [
         {
-         "type": "manga",
-         "name": "0"
+         "type": "weapon",
+         "name": "Royal Grimoire"
         }
        ]
       },
@@ -1326,14 +1381,6 @@
          "name": "Royal Longsword"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Venti/Storyline",
-       "revision": 1469903,
-       "section": "Story > End of the Aristocracy",
-       "paragraph": "M3",
-       "wiki_refs": []
       }
      ],
      "heading": "얽힌 인물과 세력",
@@ -1341,33 +1388,83 @@
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I have recently received multiple reports from the Knights of someone within the Lawrence Clan having close dealings with the Fatui.",
+     "status": "accepted",
+     "note": "The facts are supported by M1 and A12. Sentence 2 is an acceptable interpretation.",
+     "quote": "after having witnessed their merciless murder at the hands of the Lawrence Clan's archers, she was sent into a blind rage",
      "sentences": [
       {
-       "t_raw": "Eula는 Lawrence Clan의 후손이자 Schubert의 조카로, **Knights of Favonius**의 Reconnaissance Company 대장이며 Mondstadt의 상위 두 검사 중 한 명이다.",
+       "t_raw": "Lawrence Clan은 Vennessa를 가두었고, 그녀의 혈육이 투기장에서 살해되자 그녀는 이성을 잃고 적을 베었다.",
        "interp": false,
        "dropped": false,
-       "t": "유라는 로렌스 가문의 후손이자 슈베르트의 조카로, **페보니우스 기사단**의 정찰 중대 대장이며 몬드의 상위 두 검사 중 한 명이다."
+       "t": "로렌스 가문은 바네사를 가두었고, 그녀의 혈육이 투기장에서 살해되자 그녀는 이성을 잃고 적을 베었다."
       },
       {
-       "t_raw": "Jean은 Lawrence Clan 내부 인물이 **Fatui**와 가까이 거래한다는 보고를 받았다며 Schubert를 지목하고, 그는 북쪽 성벽에서 자주 보인다고 한다.",
+       "t_raw": "결국 Lawrence Clan은 **Vennessa의 반란**으로 축출되어 도시를 떠나 다시는 돌아오지 말라는 강요를 받았다.",
        "interp": false,
        "dropped": false,
-       "t": "진은 로렌스 가문 내부 인물이 **우인단**과 가까이 거래한다는 보고를 받았다며 슈베르트를 지목하고, 그는 북쪽 성벽에서 자주 보인다고 한다."
+       "t": "결국 로렌스 가문은 **바네사의 반란**으로 축출되어 도시를 떠나 다시는 돌아오지 말라는 강요를 받았다."
       },
       {
-       "t_raw": "Schubert는 먼 땅의 친구들이 가문을 예전 영광으로 되돌리는 데 도움을 주겠다고 했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "슈베르트는 먼 땅의 친구들이 가문을 예전 영광으로 되돌리는 데 도움을 주겠다고 했다고 말한다."
-      },
-      {
-       "t_raw": "한 가문에서 Knights 소속 Eula와 Fatui에 접촉한 Schubert가 나온 셈이다.",
+       "t_raw": "이 대립은 개인적 상실이 집단적 반란과 맞물린 사례로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "한 가문에서 기사단 소속 유라와 우인단에 접촉한 슈베르트가 나온 셈이다."
+       "t": "이 대립은 개인적 상실이 집단적 반란과 맞물린 사례로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vennessa",
+       "revision": 988640,
+       "section": "Profile > Personality",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "manga",
+         "name": "0"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": "History > Late Aristocratic Period",
+       "paragraph": "A12",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Royal Bow"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by M8, A15 and Q3.",
+     "quote": "You didn't choose to be born into the Lawrence clan, and we don't care about that kind of thing. The Eula we know is a great person!",
+     "sentences": [
+      {
+       "t_raw": "Eula는 Lawrence Clan의 후손이자 Schubert의 조카이며, **Knights of Favonius**의 Reconnaissance Company 대장이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유라는 로렌스 가문의 후손이자 슈베르트의 조카이며, **페보니우스 기사단**의 정찰 중대 대장이다."
+      },
+      {
+       "t_raw": "그가 Knights에 지원하자 가문은 그를 반역자라고 규탄했지만, Varka와 Jean은 재능을 아까워해 입단을 허락했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 기사단에 지원하자 가문은 그를 반역자라고 규탄했지만, 바르카와 진은 재능을 아까워해 입단을 허락했다."
+      },
+      {
+       "t_raw": "Paimon은 Lawrence Clan에 태어난 것은 Eula의 선택이 아니며, 우리가 아는 Eula는 훌륭한 사람이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 로렌스 가문에 태어난 것은 유라의 선택이 아니며, 우리가 아는 유라는 훌륭한 사람이라고 말한다."
       }
      ],
      "sources": [
@@ -1381,11 +1478,63 @@
       },
       {
        "kind": "wiki",
-       "page": "Eula/Profile",
-       "revision": 200159,
-       "section": "Character Stories > Story 1",
-       "paragraph": "M13",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": "History > Current Period",
+       "paragraph": "A15",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Solid Ice, Soluble in Wine",
+       "quest_ko": "얼음은 술에 쉽게 녹는다",
+       "version": "2.5",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by A16, Q4, Q10 and Q5.",
+     "quote": "To see some friends from a distant land. They have offered their assistance in restoring the Lawrence Clan to its former glory.",
+     "sentences": [
+      {
+       "t_raw": "Eula의 삼촌 Schubert는 **Fatui**와 손잡고 가문의 옛 영광을 되찾으려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유라의 삼촌 슈베르트는 **우인단**과 손잡고 가문의 옛 영광을 되찾으려 했다."
+      },
+      {
+       "t_raw": "Jean은 Lawrence Clan 내부 인물이 Fatui와 접촉한다는 보고를 받고 Schubert를 지목했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "진은 로렌스 가문 내부 인물이 우인단과 접촉한다는 보고를 받고 슈베르트를 지목했다."
+      },
+      {
+       "t_raw": "Schubert는 먼 곳의 친구들이 가문을 옛 영광으로 되돌리는 데 돕겠다고 말했지만, 그 음모는 Traveler와 Eula에 의해 저지되었고 Schubert는 구금되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "슈베르트는 먼 곳의 친구들이 가문을 옛 영광으로 되돌리는 데 돕겠다고 말했지만, 그 음모는 여행자와 유라에 의해 저지되었고 슈베르트는 구금되었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": "History > Current Period",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Shadow of the Past",
+       "quest_ko": "과거의 먹구름",
+       "version": "1.5",
+       "speaker": "Jean"
       },
       {
        "kind": "quest",
@@ -1400,13 +1549,6 @@
        "quest_ko": "예절 마스터",
        "version": "1.5",
        "speaker": "Schubert"
-      },
-      {
-       "kind": "quest",
-       "quest": "Shadow of the Past",
-       "quest_ko": "과거의 먹구름",
-       "version": "1.5",
-       "speaker": "Jean"
       }
      ],
      "heading": "얽힌 인물과 세력",
@@ -1414,21 +1556,27 @@
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Kreuzlied (disowned, true name unknown)",
+     "status": "accepted",
+     "note": "All sentences are supported by A17, Q7 and Q1.",
+     "quote": "But the peculiar thing is... I realized that nobody knew me out there, and not a single person even cared about the Lawrence Clan.",
      "sentences": [
       {
-       "t_raw": "가문 구성원으로는 초기 Mondstadt의 Venerare, 1000년 전의 Lord Lawrence와 그의 아들 Barca Lawrence, 파문되어 진짜 이름이 알려지지 않은 Kreuzlied가 전한다.",
+       "t_raw": "Lessig는 가문의 명예를 되살릴 방법을 듣고 Sumeru로 향했지만, Liyue와 Sumeru에서 자신과 가문을 아는 이가 없다는 사실에 충격을 받았다.",
        "interp": false,
        "dropped": false,
-       "t": "가문 구성원으로는 초기 몬드의 베네라리, 1000년 전의 로렌스 국왕과 그의 아들 바르크·로렌스, 파문되어 진짜 이름이 알려지지 않은 크루질드가 전한다."
+       "t": "레시그는 가문의 명예를 되살릴 방법을 듣고 수메르로 향했지만, 리월과 수메르에서 자신과 가문을 아는 이가 없다는 사실에 충격을 받았다."
       },
       {
-       "t_raw": "현재 시점에는 Schubert, Eula, Lessig가 이름을 올린다.",
+       "t_raw": "그는 옛 방식에 묶여 진실을 보지 못했음을 깨달았고, Eula는 그보다 먼저 그 진실에 닿아 있었다.",
        "interp": false,
        "dropped": false,
-       "t": "현재 시점에는 슈베르트, 유라, 레시그가 이름을 올린다."
+       "t": "그는 옛 방식에 묶여 진실을 보지 못했음을 깨달았고, 유라는 그보다 먼저 그 진실에 닿아 있었다."
+      },
+      {
+       "t_raw": "Eula는 Lessig와 자신 모두 가문의 영광과 무관한 평범한 사람이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유라는 레시그와 자신 모두 가문의 영광과 무관한 평범한 사람이라고 말한다."
       }
      ],
      "sources": [
@@ -1436,15 +1584,86 @@
        "kind": "wiki",
        "page": "Lawrence Clan",
        "revision": 1455873,
-       "section": "Known Members > Early days of Mondstadt",
-       "paragraph": "A25",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Royal Grimoire"
-        }
-       ]
+       "section": "History > Current Period",
+       "paragraph": "A17",
+       "wiki_refs": []
       },
+      {
+       "kind": "quest",
+       "quest": "Fairground Gathering, Summer Lights Illuminated",
+       "quest_ko": "가든을 비추는 여름날의 등불",
+       "version": "3.8",
+       "speaker": "Lessig"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fairground Gathering, Summer Lights Illuminated",
+       "quest_ko": "가든을 비추는 여름날의 등불",
+       "version": "3.8",
+       "speaker": "Eula"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The facts match A13, and the interpretation is reasonable.",
+     "quote": "The clan relocated to another area in Mondstadt, but this current location remains unknown.",
+     "sentences": [
+      {
+       "t_raw": "추방 뒤 Lawrence Clan은 Mondstadt 안의 다른 지역으로 옮겨 갔지만, **현재 정착지**는 밝혀지지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "추방 뒤 로렌스 가문은 몬드 안의 다른 지역으로 옮겨 갔지만, **현재 정착지**는 밝혀지지 않았다."
+      },
+      {
+       "t_raw": "이들은 종종 현지인들과 충돌했고, 그때마다 Knights of Favonius가 중재에 나섰지만 효과는 거의 없었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 종종 현지인들과 충돌했고, 그때마다 페보니우스 기사단이 중재에 나섰지만 효과는 거의 없었다."
+      },
+      {
+       "t_raw": "정확한 위치가 밝혀지지 않은 채 현지인과의 마찰이 이어진다는 점은 이 가문의 현재를 둘러싼 수수께끼로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정확한 위치가 밝혀지지 않은 채 현지인과의 마찰이 이어진다는 점은 이 가문의 현재를 둘러싼 수수께끼로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lawrence Clan",
+       "revision": 1455873,
+       "section": "History > Current Period",
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The facts match A26–A28, and the interpretation is reasonable.",
+     "quote": "Kreuzlied (disowned, true name unknown)",
+     "sentences": [
+      {
+       "t_raw": "1000년 전 기록에는 Lord Lawrence와 그의 아들 Barca Lawrence가 보이고, Kreuzlied는 가문에서 내쳐진 인물로 기록되며 본명은 알려져 있지 않다.",
+       "interp": false,
+       "dropped": false,
+       "t": "1000년 전 기록에는 로렌스 국왕과 그의 아들 바르크·로렌스가 보이고, 크루질드는 가문에서 내쳐진 인물로 기록되며 본명은 알려져 있지 않다."
+      },
+      {
+       "t_raw": "본명이 알려지지 않은 채 가문에서 내쳐졌다는 점은 Kreuzlied를 둘러싼 신원과 처분의 공백으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "본명이 알려지지 않은 채 가문에서 내쳐졌다는 점은 크루질드를 둘러싼 신원과 처분의 공백으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Lawrence Clan",
@@ -1473,243 +1692,6 @@
          "name": "The Bell"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "Known Members > Present Day",
-       "paragraph": "A29",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "Known Members > Present Day",
-       "paragraph": "A30",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Eula, Schubert, Lessig",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The clan proceeded to denounce Eula as a traitor.",
-     "sentences": [
-      {
-       "t_raw": "Eula는 Lawrence Clan의 후손이자 Schubert의 조카이며 Knights of Favonius의 Reconnaissance Company 대장이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "유라는 로렌스 가문의 후손이자 슈베르트의 조카이며 페보니우스 기사단의 정찰 중대 대장이다."
-      },
-      {
-       "t_raw": "그녀가 Knights에 지원하자 민중과 Lawrence Clan 모두가 술렁였고, clan 구성원들은 Knights 본부 밖에서 Eula를 둘러싸고 항의했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀가 기사단에 지원하자 민중과 로렌스 가문 모두가 술렁였고, clan 구성원들은 기사단 본부 밖에서 유라를 둘러싸고 항의했다."
-      },
-      {
-       "t_raw": "Grand Master Varka와 Acting Grand Master Jean은 전투에 능한 그녀를 거절하는 것이 낭비라며 입단을 허락했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대단장 바르카와 대리 단장 진은 전투에 능한 그녀를 거절하는 것이 낭비라며 입단을 허락했다."
-      },
-      {
-       "t_raw": "clan은 Eula를 **traitor**라고 비난했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "clan은 유라를 **traitor**라고 비난했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eula",
-       "revision": 202423,
-       "section": null,
-       "paragraph": "M8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "History > Current Period",
-       "paragraph": "A15",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 유라, 슈베르트, 레시그",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Eula, Schubert, Lessig",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This plot was foiled by the Traveler and Eula herself, with Schubert taken into custody.",
-     "sentences": [
-      {
-       "t_raw": "Eula가 입단한 뒤, Jean은 Lawrence Clan 내부의 인물이 Fatui와 긴밀히 접촉한다는 보고를 여러 차례 받았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "유라가 입단한 뒤, 진은 로렌스 가문 내부의 인물이 우인단과 긴밀히 접촉한다는 보고를 여러 차례 받았다."
-      },
-      {
-       "t_raw": "Jean은 그 인물이 Schubert이며 최근 북쪽 성벽을 자주 걷는다고 밝혔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "진은 그 인물이 슈베르트이며 최근 북쪽 성벽을 자주 걷는다고 밝혔다."
-      },
-      {
-       "t_raw": "Schubert는 먼 땅에서 온 친구들이 Lawrence Clan을 옛 영광으로 되돌리는 데 도움을 주겠다고 했다고 말했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "슈베르트는 먼 땅에서 온 친구들이 로렌스 가문을 옛 영광으로 되돌리는 데 도움을 주겠다고 했다고 말했다."
-      },
-      {
-       "t_raw": "그는 Fatui와 공모해 Mondstadt를 되찾아 'proper'한 통치 아래 두려 했으나, Traveler와 Eula에 의해 계획이 좌절되고 체포되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 우인단과 공모해 몬드를 되찾아 'proper'한 통치 아래 두려 했으나, 여행자와 유라에 의해 계획이 좌절되고 체포되었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Shadow of the Past",
-       "quest_ko": "과거의 먹구름",
-       "version": "1.5",
-       "speaker": "Jean"
-      },
-      {
-       "kind": "quest",
-       "quest": "Shadow of the Past",
-       "quest_ko": "과거의 먹구름",
-       "version": "1.5",
-       "speaker": "Jean"
-      },
-      {
-       "kind": "quest",
-       "quest": "Through the Motions, to the Heart",
-       "quest_ko": "예절 마스터",
-       "version": "1.5",
-       "speaker": "Schubert"
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "History > Current Period",
-       "paragraph": "A16",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 유라, 슈베르트, 레시그",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Eula, Schubert, Lessig",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Another member of the clan, Lessig, decided to head to Sumeru after hearing of a way to restore the clan's honor.",
-     "sentences": [
-      {
-       "t_raw": "Lawrence Clan의 또 다른 구성원 Lessig는 가문의 명예를 회복할 방법을 듣고 Sumeru로 향했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "로렌스 가문의 또 다른 구성원 레시그는 가문의 명예를 회복할 방법을 듣고 수메르로 향했다."
-      },
-      {
-       "t_raw": "그러나 Liyue와 Sumeru를 지나며 아무도 자신을 알지 못하고 Lawrence Clan에 대해 신경 쓰지 않는다는 사실에 충격을 받았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 리월과 수메르를 지나며 아무도 자신을 알지 못하고 로렌스 가문에 대해 신경 쓰지 않는다는 사실에 충격을 받았다."
-      },
-      {
-       "t_raw": "그는 자신이 옛 방식에 붙들려 진실을 보지 못했음을 깨달았고, 이는 Eula가 오래전에 이미 이룬 깨달음이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 자신이 옛 방식에 붙들려 진실을 보지 못했음을 깨달았고, 이는 유라가 오래전에 이미 이룬 깨달음이었다."
-      },
-      {
-       "t_raw": "Eula는 두 사람이 가문의 영광과 무관한 **평범한 사람들**이라고 했고, Lawrence Clan의 친척을 찾는 일과 그가 해를 끼치지 않게 할 의무를 언급했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "유라는 두 사람이 가문의 영광과 무관한 **평범한 사람들**이라고 했고, 로렌스 가문의 친척을 찾는 일과 그가 해를 끼치지 않게 할 의무를 언급했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "History > Current Period",
-       "paragraph": "A17",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Fairground Gathering, Summer Lights Illuminated",
-       "quest_ko": "가든을 비추는 여름날의 등불",
-       "version": "3.8",
-       "speaker": "Lessig"
-      },
-      {
-       "kind": "quest",
-       "quest": "Fairground Gathering, Summer Lights Illuminated",
-       "quest_ko": "가든을 비추는 여름날의 등불",
-       "version": "3.8",
-       "speaker": "Eula"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Mysterious Missive on Paper Wings",
-       "quest_ko": "하늘에서 날아온 편지",
-       "version": "3.8",
-       "speaker": "Eula"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Mysterious Missive on Paper Wings",
-       "quest_ko": "하늘에서 날아온 편지",
-       "version": "3.8",
-       "speaker": "Eula"
-      }
-     ],
-     "heading": "작중 행적 — 유라, 슈베르트, 레시그",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The clan relocated to another area in Mondstadt, but this current location remains unknown.",
-     "sentences": [
-      {
-       "t_raw": "Lawrence Clan은 Mondstadt의 다른 지역으로 옮겨 갔지만, **현재 거처는 알려져 있지 않다**.",
-       "interp": false,
-       "dropped": false,
-       "t": "로렌스 가문은 몬드의 다른 지역으로 옮겨 갔지만, **현재 거처는 알려져 있지 않다**."
-      },
-      {
-       "t_raw": "주민과의 마찰에 Knights of Favonius가 중재해도 효과가 거의 없었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "주민과의 마찰에 페보니우스 기사단이 중재해도 효과가 거의 없었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "History > Current Period",
-       "paragraph": "A13",
-       "wiki_refs": []
       }
      ],
      "heading": "떡밥과 수수께끼",
@@ -1717,70 +1699,33 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Kreuzlied (disowned, true name unknown)",
-     "sentences": [
-      {
-       "t_raw": "1000년 전의 Lawrence Clan 구성원으로 Kreuzlied가 알려져 있지만, 그는 가문에서 의절당했고 **진짜 이름은 전해지지 않는다**.",
-       "interp": false,
-       "dropped": false,
-       "t": "1000년 전의 로렌스 가문 구성원으로 크루질드가 알려져 있지만, 그는 가문에서 의절당했고 **진짜 이름은 전해지지 않는다**."
-      },
-      {
-       "t_raw": "Kreuzlied라는 호칭 외에는 진짜 이름이 전해지지 않으므로, 그를 둘러싼 기록은 이름 하나에 머문 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "크루질드라는 호칭 외에는 진짜 이름이 전해지지 않으므로, 그를 둘러싼 기록은 이름 하나에 머문 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "Known Members > 1000 Years Ago",
-       "paragraph": "A28",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "The Bell"
-        }
-       ]
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by M5–M7.",
      "quote": "Heh... I actually have no connection at all to the Lawrence Clan. *sigh* It's a bit of a long story...",
      "sentences": [
       {
-       "t_raw": "대화에서 누군가 그에게 Lawrence Clan에 대해 무엇을 아는지 묻자, 이름이 Lawrence인 인물은 자신이 가문과 아무 관련이 없다고 답한다.",
+       "t_raw": "Lawrence Clan에 대해 아는 것을 묻는 대화에서, **Lawrence**라는 이름의 인물은 자신이 Lawrence Clan과 아무 관련이 없다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "대화에서 누군가 그에게 로렌스 가문에 대해 무엇을 아는지 묻자, 이름이 로렌스인 인물은 자신이 가문과 아무 관련이 없다고 답한다."
+       "t": "로렌스 가문에 대해 아는 것을 묻는 대화에서, **로렌스**라는 이름의 인물은 자신이 로렌스 가문과 아무 관련이 없다고 말한다."
       },
       {
-       "t_raw": "그는 며칠에 한 번씩 사람들이 자신과 가문의 연관을 묻는다고 말한다.",
+       "t_raw": "그런데도 사람들이 며칠마다 그에게 Lawrence Clan과의 관계를 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 며칠에 한 번씩 사람들이 자신과 가문의 연관을 묻는다고 말한다."
+       "t": "그런데도 사람들이 며칠마다 그에게 로렌스 가문과의 관계를 묻는다."
       },
       {
-       "t_raw": "Lessig는 먼 곳에서 자신을 아는 이가 없고 Lawrence Clan을 신경 쓰는 사람도 없다는 사실을 깨닫는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "레시그는 먼 곳에서 자신을 아는 이가 없고 로렌스 가문을 신경 쓰는 사람도 없다는 사실을 깨닫는다."
-      },
-      {
-       "t_raw": "이렇게 가문의 이름은 한쪽에서는 **혼동과 무관심**을 함께 낳는 셈이다.",
+       "t_raw": "이름 때문에 가문과의 관계를 묻는 일이 반복되는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이렇게 가문의 이름은 한쪽에서는 **혼동과 무관심**을 함께 낳는 셈이다."
+       "t": "이름 때문에 가문과의 관계를 묻는 일이 반복되는 셈이다."
+      },
+      {
+       "t_raw": "그는 사정이 조금 길다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 사정이 조금 길다고 말한다."
       }
      ],
      "sources": [
@@ -1807,13 +1752,6 @@
        "section": "Dialogue",
        "paragraph": "M7",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Fairground Gathering, Summer Lights Illuminated",
-       "quest_ko": "가든을 비추는 여름날의 등불",
-       "version": "3.8",
-       "speaker": "Lessig"
       }
      ],
      "heading": "떡밥과 수수께끼",
@@ -1821,21 +1759,21 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Eula is the bearer of the Lawrence family crest, the \"Glacial Seal.\"",
+     "status": "accepted",
+     "note": "All sentences are supported by A3 and A24.",
+     "quote": "The Glacial Seal is the symbol of the Lawrence Clan.",
      "sentences": [
       {
-       "t_raw": "Glacial Seal은 Lawrence Clan의 상징으로, Royal Series와 Noblesse Oblige 계열의 일부 무기와 성유물, 그리고 Eula의 이름 카드에서도 보인다.",
+       "t_raw": "Lawrence Clan의 문장인 **Glacial Seal**은 Royal Series와 Noblesse Oblige의 일부 무기와 성유물, 그리고 Eula의 명함에서 보인다.",
        "interp": false,
        "dropped": false,
-       "t": "Glacial Seal은 로렌스 가문의 상징으로, 집중과 옛 왕실의 의식 계열의 일부 무기와 성유물, 그리고 유라의 이름 카드에서도 보인다."
+       "t": "로렌스 가문의 문장인 **결빙의 인장**은 집중과 옛 왕실의 의식의 일부 무기와 성유물, 그리고 유라의 명함에서 보인다."
       },
       {
-       "t_raw": "현재 가문의 구성원인 Eula가 이 가문의 문장을 지니며, 이는 가문의 최고 무예 상징으로서 초기 Mondstadt 시절의 차갑고 순수하며 어떤 불에도 굴하지 않는 기풍을 담는다.",
+       "t_raw": "현재 Eula가 지니는 이 문장은 Decarabian의 통치에서 막 벗어난 Mondstadt 초기부터 이어진 가문의 기질—차갑고 순수하며 어떤 불에도 굴하지 않고 어떤 상황에서도 침착하고 흔들리지 않음—을 나타낸다.",
        "interp": false,
        "dropped": false,
-       "t": "현재 가문의 구성원인 유라가 이 가문의 문장을 지니며, 이는 가문의 최고 무예 상징으로서 초기 몬드 시절의 차갑고 순수하며 어떤 불에도 굴하지 않는 기풍을 담는다."
+       "t": "현재 유라가 지니는 이 문장은 데카라비안의 통치에서 막 벗어난 몬드 초기부터 이어진 가문의 기질—차갑고 순수하며 어떤 불에도 굴하지 않고 어떤 상황에서도 침착하고 흔들리지 않음—을 나타낸다."
       }
      ],
      "sources": [
@@ -1851,132 +1789,42 @@
        "kind": "wiki",
        "page": "Lawrence Clan",
        "revision": 1455873,
-       "section": "Known Members > Present Day",
-       "paragraph": "A30",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Eula/Profile",
-       "revision": 200159,
-       "section": "Character Stories > Glaciers and Waves",
-       "paragraph": "M15",
+       "section": "Clan Traditions",
+       "paragraph": "A24",
        "wiki_refs": []
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Glacial Seal"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The third act, which represents the Lawrence Clan, is a solo dance known as \"Flickering Candlelight.\"",
-     "sentences": [
-      {
-       "t_raw": "가문은 예술을 '제2의 영혼'이라 부르며 춤을 중시했고, 'The Dance of Sacrifice'의 세 번째 막인 'Flickering Candlelight'는 대대로 장녀가 추는 독무였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "가문은 예술을 '제2의 영혼'이라 부르며 춤을 중시했고, 'The Dance of Sacrifice'의 세 번째 막인 '흔들리는 촛불'은 대대로 장녀가 추는 독무였다."
-      },
-      {
-       "t_raw": "최고의 무용수를 교사로 초빙했으며 피 나는 발가락은 자부심과 통과 의례로 여겨졌고, 도시에서 쫓겨난 뒤에도 이 의식은 이어졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "최고의 무용수를 교사로 초빙했으며 피 나는 발가락은 자부심과 통과 의례로 여겨졌고, 도시에서 쫓겨난 뒤에도 이 의식은 이어졌다."
-      },
-      {
-       "t_raw": "현재 장녀인 Eula에게는 어린 시절의 휴식이었지만 가르칠 무용수가 부족해져 교육 과정에서 빠졌고, 지금은 우아한 예술적 오락으로 남았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "현재 장녀인 유라에게는 어린 시절의 휴식이었지만 가르칠 무용수가 부족해져 교육 과정에서 빠졌고, 지금은 우아한 예술적 오락으로 남았다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "Clan Traditions",
-       "paragraph": "A19",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence Clan",
-       "revision": 1455873,
-       "section": "Clan Traditions",
-       "paragraph": "A21",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Eula"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eula/Profile",
-       "revision": 200159,
-       "section": "Character Stories > Story 5",
-       "paragraph": "M9",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Eula/Profile",
-       "revision": 200159,
-       "section": "Character Stories > Story 5",
-       "paragraph": "M10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Eula/Profile",
-       "revision": 200159,
-       "section": "Character Stories > Story 5",
-       "paragraph": "M12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Eula/Profile",
-       "revision": 200159,
-       "section": "Character Stories > Story 5",
-       "paragraph": "M14",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "The Dance of Sacrifice"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A22.",
      "quote": "Apart from fine cooking, members of the clan are particularly fond of Gebratenes Fleisch mit Sauerkraut, an extremely sour dish.",
      "sentences": [
       {
-       "t_raw": "가문은 Mondstadt 탈환과 영광 회복을 바라며 평민의 음식을 믿지 않았고, 저속함에 빠지지 않으려 스스로 요리하게 했다.",
+       "t_raw": "가문은 Mondstadt 탈환과 옛 영광을 고집했기 때문에 평민에게 음식을 맡길 수 없다고 여겼고, 스스로 요리하는 데 특히 엄격한 규칙을 두었다.",
        "interp": false,
        "dropped": false,
-       "t": "가문은 몬드 탈환과 영광 회복을 바라며 평민의 음식을 믿지 않았고, 저속함에 빠지지 않으려 스스로 요리하게 했다."
+       "t": "가문은 몬드 탈환과 옛 영광을 고집했기 때문에 평민에게 음식을 맡길 수 없다고 여겼고, 스스로 요리하는 데 특히 엄격한 규칙을 두었다."
       },
       {
-       "t_raw": "작은 실수에도 교사의 호된 꾸지람이나 징계가 따랐지만 그 규율 덕에 요리 품질은 높았고, Eula의 시그니처 요리 Stormcrest Pie는 변형해도 맛있다는 평가를 받아 지금은 지역에서 사랑받는 음식이 되었다.",
+       "t_raw": "조금만 실수해도 가정교사에게 혹독한 꾸중이나 징계를 받았지만, 그 규칙을 지킨 요리는 매우 높은 품질을 자랑했다.",
        "interp": false,
        "dropped": false,
-       "t": "작은 실수에도 교사의 호된 꾸지람이나 징계가 따랐지만 그 규율 덕에 요리 품질은 높았고, 유라의 시그니처 요리 격랑 파이는 변형해도 맛있다는 평가를 받아 지금은 지역에서 사랑받는 음식이 되었다."
+       "t": "조금만 실수해도 가정교사에게 혹독한 꾸중이나 징계를 받았지만, 그 규칙을 지킨 요리는 매우 높은 품질을 자랑했다."
       },
       {
-       "t_raw": "가문 구성원들은 Gebratenes Fleisch mit Sauerkraut라는 매우 신 음식을 특히 좋아한다.",
+       "t_raw": "Eula의 대표 요리인 **Stormcrest Pie**는 변형해도 매우 맛있어 현지에서 인기 있는 요리가 되었고, 가문 구성원들은 유난히 신 맛이 강한 **Gebratenes Fleisch mit Sauerkraut**를 특히 좋아한다.",
        "interp": false,
        "dropped": false,
-       "t": "가문 구성원들은 Gebratenes Fleisch mit Sauerkraut라는 매우 신 음식을 특히 좋아한다."
+       "t": "유라의 대표 요리인 **격랑 파이**는 변형해도 매우 맛있어 현지에서 인기 있는 요리가 되었고, 가문 구성원들은 유난히 신 맛이 강한 **자우어크라우트를 곁들인 구운 고기**를 특히 좋아한다.",
+       "polish": {
+        "from": "유라의 대표 요리인 **격랑 파이**는 변형해도 매우 맛있어 현지에서 인기 있는 요리가 되었고, 가문 구성원들은 유난히 신 맛이 강한 **Gebratenes Fleisch mit Sauerkraut**를 특히 좋아한다.",
+        "text": "유라의 대표 요리인 **격랑 파이**는 변형해도 매우 맛있어 현지에서 인기 있는 요리가 되었고, 가문 구성원들은 유난히 신 맛이 강한 **자우어크라우트를 곁들인 구운 고기**를 특히 좋아한다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -1995,53 +1843,34 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Gebratenes Fleisch",
-      "Sauerkraut"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Heh... I actually have no connection at all to the Lawrence Clan. *sigh* It's a bit of a long story...",
+     "status": "accepted",
+     "note": "Both sentences match M9.",
+     "quote": "This ancient ceremony was a continuous tradition for so long that even today, long after being expelled by the people of Mondstadt, the Lawrence Clan still honors it.",
      "sentences": [
       {
-       "t_raw": "'Lawrence'라는 이름 때문에 실제 Lawrence Clan과 아무 관련이 없는 인물도 질문을 받곤 한다.",
+       "t_raw": "한 고대 의식은 아주 오랫동안 이어진 전통이었다.",
        "interp": false,
        "dropped": false,
-       "t": "'로렌스'라는 이름 때문에 실제 로렌스 가문과 아무 관련이 없는 인물도 질문을 받곤 한다."
+       "t": "한 고대 의식은 아주 오랫동안 이어진 전통이었다."
       },
       {
-       "t_raw": "그는 자신은 Lawrence Clan과 전혀 관련이 없다고 말하며, 며칠마다 누군가 다가와 가문과의 관계를 묻는다고 한다.",
+       "t_raw": "Mondstadt 사람들에게 추방된 뒤에도 Lawrence Clan은 오늘날까지 그 의식을 지킨다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 자신은 로렌스 가문과 전혀 관련이 없다고 말하며, 며칠마다 누군가 다가와 가문과의 관계를 묻는다고 한다."
+       "t": "몬드 사람들에게 추방된 뒤에도 로렌스 가문은 오늘날까지 그 의식을 지킨다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Lawrence",
-       "revision": 1259169,
-       "section": "Dialogue",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence",
-       "revision": 1259169,
-       "section": "Dialogue",
-       "paragraph": "M6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Lawrence",
-       "revision": 1259169,
-       "section": "Dialogue",
-       "paragraph": "M7",
+       "page": "Eula/Profile",
+       "revision": 200159,
+       "section": "Character Stories > Story 5",
+       "paragraph": "M9",
        "wiki_refs": []
       }
      ],
@@ -2051,10 +1880,10 @@
    ],
    "quote_boxes": [
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "너는 Lawrence clan에 태어난 걸 선택하지 않았고, 우리는 그런 것에 신경 쓰지 않아. 우리가 아는 Eula는 훌륭한 사람이야!",
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "너는 Lawrence clan에 태어나길 선택한 게 아니고, 우리는 그런 것 신경 안 써. 우리가 아는 Eula는 훌륭한 사람이야!",
      "en": "You didn't choose to be born into the Lawrence clan, and we don't care about that kind of thing. The Eula we know is a great person!",
      "speaker": "Paimon",
      "source": {
@@ -2064,31 +1893,14 @@
       "version": "2.5",
       "speaker": "Paimon"
      },
-     "t": "너는 로렌스 clan에 태어난 걸 선택하지 않았고, 우리는 그런 것에 신경 쓰지 않아. 우리가 아는 유라는 훌륭한 사람이야!",
+     "t": "너는 로렌스 clan에 태어나길 선택한 게 아니고, 우리는 그런 것 신경 안 써. 우리가 아는 유라는 훌륭한 사람이야!",
      "speaker_ko": "페이몬"
     },
     {
-     "section": "정체와 상징",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "흠! 거기, 천한 일꾼. 너는 고귀한 Lawrence Clan의 일원 앞에 서 있다. 네게 할 말이 있다.",
-     "en": "Ahem! You there, lowly laborer. You stand in the presence of a member of the illustrious Lawrence Clan. I have words for you.",
-     "speaker": "Eula",
-     "source": {
-      "kind": "quest",
-      "quest": "Speech and Etiquette",
-      "quest_ko": "말투와 애티튜드",
-      "version": "1.5",
-      "speaker": "Eula"
-     },
-     "t": "흠! 거기, 천한 일꾼. 너는 고귀한 로렌스 가문의 일원 앞에 서 있다. 네게 할 말이 있다.",
-     "speaker_ko": "유라"
-    },
-    {
-     "section": "현재의 Lawrence Clan",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그런데 이상한 건... 내가 밖에 나가 보니 아무도 나를 몰랐고, Lawrence Clan에 관심을 가진 사람은 단 한 명도 없었다는 걸 깨달았어.",
+     "section": "드러난 역사 — 현재의 Lawrence Clan",
+     "status": "accepted",
+     "note": "Faithful translation of Lessig's line.",
+     "t_raw": "하지만 이상한 점은... 나는 바깥에서 아무도 나를 몰랐고, Lawrence Clan에 대해 신경 쓰는 사람은 단 한 명도 없었다는 걸 깨달았어.",
      "en": "But the peculiar thing is... I realized that nobody knew me out there, and not a single person even cared about the Lawrence Clan.",
      "speaker": "Lessig",
      "source": {
@@ -2098,14 +1910,14 @@
       "version": "3.8",
       "speaker": "Lessig"
      },
-     "t": "그런데 이상한 건... 내가 밖에 나가 보니 아무도 나를 몰랐고, 로렌스 가문에 관심을 가진 사람은 단 한 명도 없었다는 걸 깨달았어.",
+     "t": "하지만 이상한 점은... 나는 바깥에서 아무도 나를 몰랐고, 로렌스 가문에 대해 신경 쓰는 사람은 단 한 명도 없었다는 걸 깨달았어.",
      "speaker_ko": "레시그"
     },
     {
-     "section": "클랜의 전통과 규율",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "에헴! 거기 너, 하찮은 일꾼. 너는 저명한 Lawrence Clan의 일원 앞에 서 있다. 나는 너에게 할 말이 있다.",
+     "section": "가문의 전통과 교육",
+     "status": "accepted",
+     "note": "Faithful translation of Eula's line.",
+     "t_raw": "에헴! 거기, 천한 일꾼. 너는 지금 저명한 Lawrence Clan의 일원 앞에 서 있다. 너에게 할 말이 있다.",
      "en": "Ahem! You there, lowly laborer. You stand in the presence of a member of the illustrious Lawrence Clan. I have words for you.",
      "speaker": "Eula",
      "source": {
@@ -2115,59 +1927,25 @@
       "version": "1.5",
       "speaker": "Eula"
      },
-     "t": "에헴! 거기 너, 하찮은 일꾼. 너는 저명한 로렌스 가문의 일원 앞에 서 있다. 나는 너에게 할 말이 있다.",
+     "t": "에헴! 거기, 천한 일꾼. 너는 지금 저명한 로렌스 가문의 일원 앞에 서 있다. 너에게 할 말이 있다.",
      "speaker_ko": "유라"
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "먼 땅에서 온 친구들을 만나러 왔네. 그들은 Lawrence Clan을 예전의 영광으로 되돌리는 데 도움을 주겠다고 했지.",
-     "en": "To see some friends from a distant land. They have offered their assistance in restoring the Lawrence Clan to its former glory.",
-     "speaker": "Schubert",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line. The register differs but the meaning is the same.",
+     "t_raw": "Lawrence Clan에 태어난 것은 네가 선택한 일이 아니고, 우리는 그런 것에 신경 쓰지 않는다. 우리가 아는 Eula는 훌륭한 사람이다!",
+     "en": "You didn't choose to be born into the Lawrence clan, and we don't care about that kind of thing. The Eula we know is a great person!",
+     "speaker": "Paimon",
      "source": {
       "kind": "quest",
-      "quest": "Through the Motions, to the Heart",
-      "quest_ko": "예절 마스터",
-      "version": "1.5",
-      "speaker": "Schubert"
+      "quest": "Solid Ice, Soluble in Wine",
+      "quest_ko": "얼음은 술에 쉽게 녹는다",
+      "version": "2.5",
+      "speaker": "Paimon"
      },
-     "t": "먼 땅에서 온 친구들을 만나러 왔네. 그들은 로렌스 가문을 예전의 영광으로 되돌리는 데 도움을 주겠다고 했지.",
-     "speaker_ko": "슈베르트"
-    },
-    {
-     "section": "작중 행적 — Eula, Schubert, Lessig",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "하지만 이상한 점은... 바깥에서는 아무도 나를 알지 못했고, Lawrence Clan에 대해 신경 쓰는 사람은 단 한 명도 없었다는 걸 깨달았다.",
-     "en": "But the peculiar thing is... I realized that nobody knew me out there, and not a single person even cared about the Lawrence Clan.",
-     "speaker": "Lessig",
-     "source": {
-      "kind": "quest",
-      "quest": "Fairground Gathering, Summer Lights Illuminated",
-      "quest_ko": "가든을 비추는 여름날의 등불",
-      "version": "3.8",
-      "speaker": "Lessig"
-     },
-     "t": "하지만 이상한 점은... 바깥에서는 아무도 나를 알지 못했고, 로렌스 가문에 대해 신경 쓰는 사람은 단 한 명도 없었다는 걸 깨달았다.",
-     "speaker_ko": "레시그"
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "하지만 이상한 점은... 밖에서 아무도 나를 알지 못했고, 단 한 사람도 Lawrence Clan에 관심조차 두지 않았다는 걸 깨달았다는 것이다.",
-     "en": "But the peculiar thing is... I realized that nobody knew me out there, and not a single person even cared about the Lawrence Clan.",
-     "speaker": "Lessig",
-     "source": {
-      "kind": "quest",
-      "quest": "Fairground Gathering, Summer Lights Illuminated",
-      "quest_ko": "가든을 비추는 여름날의 등불",
-      "version": "3.8",
-      "speaker": "Lessig"
-     },
-     "t": "하지만 이상한 점은... 밖에서 아무도 나를 알지 못했고, 단 한 사람도 로렌스 가문에 관심조차 두지 않았다는 걸 깨달았다는 것이다.",
-     "speaker_ko": "레시그"
+     "t": "로렌스 가문에 태어난 것은 네가 선택한 일이 아니고, 우리는 그런 것에 신경 쓰지 않는다. 우리가 아는 유라는 훌륭한 사람이다!",
+     "speaker_ko": "페이몬"
     }
    ]
   }

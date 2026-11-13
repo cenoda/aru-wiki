@@ -1,0 +1,796 @@
+{
+ "node": "Ruijin",
+ "articles": [
+  {
+   "node": "Ruijin",
+   "from_version": "1.3",
+   "cutoff": "2021-03-16T00:00:00Z",
+   "input": [
+    {
+     "page": "Ruijin",
+     "url": "https://genshin-impact.fandom.com/wiki/Ruijin",
+     "revision": 127641
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 6,
+    "web": 0
+   },
+   "input_chars": 1261,
+   "input_cut": false,
+   "input_hash": "e205d888bca9",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, Q1, Q2 and A14.",
+     "quote": "Ruijin is an NPC in Liyue Harbor, Liyue. She is the inventor of Theater Mechanicus.",
+     "sentences": [
+      {
+       "t_raw": "Ruijin은 Liyue Harbor에 있는 게임 속 인물이며 Theater Mechanicus의 발명가다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 리월항에 있는 게임 속 인물이며 기관 디펜스의 발명가다."
+      },
+      {
+       "t_raw": "그녀는 Lantern Rite를 맞아 자신이 만든 게임을 소개하고, 한 판 체험한 뒤의 첫인상을 모으려 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 해등절을 맞아 자신이 만든 게임을 소개하고, 한 판 체험한 뒤의 첫인상을 모으려 한다."
+      },
+      {
+       "t_raw": "체험은 Mora 없이 Xiao Lantern만 있으면 가능하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체험은 모라 없이 소등만 있으면 가능하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A1 and Q1. The interpretation is reasonable.",
+     "quote": "Ruijin is an NPC in Liyue Harbor, Liyue. She is the inventor of Theater Mechanicus.",
+     "sentences": [
+      {
+       "t_raw": "Ruijin은 Liyue Harbor의 NPC이며, **Theater Mechanicus의 발명자**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 리월항의 NPC이며, **기관 디펜스의 발명자**이다."
+      },
+      {
+       "t_raw": "그녀는 처음 듣는 이에게 자신이 소개하겠다며, Theater Mechanicus가 **자신이 발명한 일종의 탁상 게임**이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 처음 듣는 이에게 자신이 소개하겠다며, 기관 디펜스가 **자신이 발명한 일종의 탁상 게임**이라고 말한다."
+      },
+      {
+       "t_raw": "이런 점에서 Ruijin은 게임을 만들고 직접 알리는 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 점에서 서금은 게임을 만들고 직접 알리는 인물로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by Q5 and A1. The interpretation is reasonable.",
+     "quote": "Hello! Would you like to play a round of Theater Mechanicus?",
+     "sentences": [
+      {
+       "t_raw": "Ruijin은 인사를 건네고 Theater Mechanicus를 한 판 해 보겠냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 인사를 건네고 기관 디펜스를 한 판 해 보겠냐고 묻는다."
+      },
+      {
+       "t_raw": "이런 장면에서 Ruijin은 Liyue Harbor에서 Theater Mechanicus를 알리고 체험을 권하는 NPC로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 장면에서 서금은 리월항에서 기관 디펜스를 알리고 체험을 권하는 NPC로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "Theater Mechanicus — 규칙과 목표",
+     "status": "accepted",
+     "note": "Supported by A7, A8 and Q3.",
+     "quote": "Theater Mechanicus is new kind of board game that I just invented.",
+     "sentences": [
+      {
+       "t_raw": "무엇인지 묻는 이에게 Ruijin은 Theater Mechanicus가 자신이 직접 발명한 새로운 종류의 **보드 게임**이라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무엇인지 묻는 이에게 서금은 기관 디펜스가 자신이 직접 발명한 새로운 종류의 **보드 게임**이라고 소개한다."
+      },
+      {
+       "t_raw": "탁자 위에 놓인 물건들은 모두 게임에서 쓰이는 중요한 아이템이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "탁자 위에 놓인 물건들은 모두 게임에서 쓰이는 중요한 아이템이다."
+      },
+      {
+       "t_raw": "게임을 즐기는 데에는 탁자와 몇 가지 게임 조각, 그리고 게임 진행자가 필요하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게임을 즐기는 데에는 탁자와 몇 가지 게임 조각, 그리고 게임 진행자가 필요하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      }
+     ],
+     "heading": "기관 디펜스 — 규칙과 목표",
+     "latin_left": []
+    },
+    {
+     "section": "Theater Mechanicus — 규칙과 목표",
+     "status": "accepted",
+     "note": "Supported by A9 and A8. The interpretation follows from the material.",
+     "quote": "The objective of the game is to use various strategies to withstand the monster attacks. At least, that's the main idea for now...",
+     "sentences": [
+      {
+       "t_raw": "게임의 목표는 다양한 전략을 활용해 **몬스터의 공격**을 견디는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게임의 목표는 다양한 전략을 활용해 **몬스터의 공격**을 견디는 것이다."
+      },
+      {
+       "t_raw": "Ruijin은 이것이 적어도 현재로서는 게임의 주요 구상이라고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 이것이 적어도 현재로서는 게임의 주요 구상이라고 덧붙인다."
+      },
+      {
+       "t_raw": "탁자와 게임 조각을 쓰면서도 몬스터의 공격을 견뎌야 하므로, 이 게임은 조각을 늘어놓는 데서 나아가 전략을 짜는 놀이로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "탁자와 게임 조각을 쓰면서도 몬스터의 공격을 견뎌야 하므로, 이 게임은 조각을 늘어놓는 데서 나아가 전략을 짜는 놀이로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "기관 디펜스 — 규칙과 목표",
+     "latin_left": []
+    },
+    {
+     "section": "Theater Mechanicus — 규칙과 목표",
+     "status": "accepted",
+     "note": "Supported by Q4.",
+     "quote": "It may seem complicated, but you'll get the hang of it after you play a couple of times.",
+     "sentences": [
+      {
+       "t_raw": "Ruijin은 규칙이 복잡해 보일 수 있다고 말하지만, **몇 번 해 보면** 요령을 익힐 수 있다고 안내한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 규칙이 복잡해 보일 수 있다고 말하지만, **몇 번 해 보면** 요령을 익힐 수 있다고 안내한다."
+      },
+      {
+       "t_raw": "처음 접하는 이도 몇 번의 시도 끝에 게임에 익숙해질 수 있다는 설명이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "처음 접하는 이도 몇 번의 시도 끝에 게임에 익숙해질 수 있다는 설명이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      }
+     ],
+     "heading": "기관 디펜스 — 규칙과 목표",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "All sentences match the English lines.",
+     "quote": "It may seem complicated, but you'll get the hang of it after you play a couple of times.",
+     "sentences": [
+      {
+       "t_raw": "Ruijin은 사람들에게 **Theater Mechanicus**를 한 판 해 보겠냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 사람들에게 **기관 디펜스**를 한 판 해 보겠냐고 묻는다."
+      },
+      {
+       "t_raw": "게임을 모른다면 자신이 발명한 탁자 게임이라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게임을 모른다면 자신이 발명한 탁자 게임이라고 소개한다."
+      },
+      {
+       "t_raw": "탁자 위에 놓인 물건들은 모두 Theater Mechanicus에 쓰이는 중요한 물건이라고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "탁자 위에 놓인 물건들은 모두 기관 디펜스에 쓰이는 중요한 물건이라고 설명한다."
+      },
+      {
+       "t_raw": "복잡해 보여도 두어 번 해 보면 요령을 익힐 수 있다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "복잡해 보여도 두어 번 해 보면 요령을 익힐 수 있다고 덧붙인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "Supported by A13, A14 and Q2. The interpretation in (3) is reasonable.",
+     "quote": "No, not at all. It is the Lantern Rite, after all. Besides, I was hoping to collect everyone's initial impressions of the game.",
+     "sentences": [
+      {
+       "t_raw": "플레이 비용을 묻자 Ruijin은 이제 막 보드 게임 설계를 마쳤고 사람들이 이런 게임을 어떻게 생각하는지 듣고 싶다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "플레이 비용을 묻자 서금은 이제 막 보드 게임 설계를 마쳤고 사람들이 이런 게임을 어떻게 생각하는지 듣고 싶다고 말한다."
+      },
+      {
+       "t_raw": "그래서 **Lantern Rite** 기간에는 Mora가 한 푼도 들지 않고 Xiao Lantern만 있으면 한 판 할 수 있다고 안내한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래서 **해등절** 기간에는 모라가 한 푼도 들지 않고 소등만 있으면 한 판 할 수 있다고 안내한다."
+      },
+      {
+       "t_raw": "Lantern Rite라서 그렇다는 말과 함께 모두의 **첫인상**을 모으고 싶다는 바람을 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "해등절라서 그렇다는 말과 함께 모두의 **첫인상**을 모으고 싶다는 바람을 덧붙인다."
+      },
+      {
+       "t_raw": "이 체험 조건은 갓 완성한 게임에 대한 반응을 모으려는 목적과 Lantern Rite라는 시기를 함께 염두에 둔 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 체험 조건은 갓 완성한 게임에 대한 반응을 모으려는 목적과 해등절라는 시기를 함께 염두에 둔 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "Supported by Q6, A15 and A5.",
+     "quote": "So, how about it? Would you like to give it a try?",
+     "sentences": [
+      {
+       "t_raw": "설명을 마친 Ruijin은 해 볼 생각이 있느냐고 묻고, 원한다면 말만 하라고 안내한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "설명을 마친 서금은 해 볼 생각이 있느냐고 묻고, 원한다면 말만 하라고 안내한다."
+      },
+      {
+       "t_raw": "그 권유에 한 판 해 보겠다고 답할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 권유에 한 판 해 보겠다고 답할 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼 — 확장 구상",
+     "status": "accepted",
+     "note": "Supported by A9, A10 and A11.",
+     "quote": "It'd be great to add things like exploring ruins, or solving evil plots... If all goes well, the game could potentially become like a true adventure in another world.",
+     "sentences": [
+      {
+       "t_raw": "Ruijin은 Theater Mechanicus의 목표를 여러 전략으로 **몬스터의 공격을 견디는 것**으로 설명하며, 그것이 적어도 지금의 중심 구상이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 기관 디펜스의 목표를 여러 전략으로 **몬스터의 공격을 견디는 것**으로 설명하며, 그것이 적어도 지금의 중심 구상이라고 말한다."
+      },
+      {
+       "t_raw": "좋은 아이디어가 더 떠오르면 게임의 내용을 확장하고 싶다는 바람도 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "좋은 아이디어가 더 떠오르면 게임의 내용을 확장하고 싶다는 바람도 밝힌다."
+      },
+      {
+       "t_raw": "폐허 탐험과 악한 음모 해결 같은 요소를 더하면 좋겠다는 구상도 꺼낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폐허 탐험과 악한 음모 해결 같은 요소를 더하면 좋겠다는 구상도 꺼낸다."
+      },
+      {
+       "t_raw": "모든 일이 잘 풀리면 게임이 **다른 세계에서의 진짜 모험**처럼 될 가능성이 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모든 일이 잘 풀리면 게임이 **다른 세계에서의 진짜 모험**처럼 될 가능성이 있다고 본다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼 — 확장 구상",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼 — 확장 구상",
+     "status": "accepted",
+     "note": "Both are reasonable interpretations. The conditional wording keeps expansion as a possibility.",
+     "quote": "But who knows, if any more good ideas come to me, I'd like to expand the game's content even more.",
+     "sentences": [
+      {
+       "t_raw": "현재 규칙은 몬스터 방어에 머물러 있지만, Ruijin이 폐허 탐험과 악한 음모 해결을 언급하는 것은 게임의 폭을 넓히려는 구상으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "현재 규칙은 몬스터 방어에 머물러 있지만, 서금이 폐허 탐험과 악한 음모 해결을 언급하는 것은 게임의 폭을 넓히려는 구상으로 보인다."
+      },
+      {
+       "t_raw": "좋은 아이디어가 떠오르고 모든 일이 잘 풀릴 경우를 전제로 했기에, 확장은 아직 가능성으로 남아 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "좋은 아이디어가 떠오르고 모든 일이 잘 풀릴 경우를 전제로 했기에, 확장은 아직 가능성으로 남아 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼 — 확장 구상",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A2, A5 and A17.",
+     "quote": "Try your hand at Theater Mechanicus...",
+     "sentences": [
+      {
+       "t_raw": "Ruijin은 평소 **Theater Mechanicus**를 한번 해 보라는 말을 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 평소 **기관 디펜스**를 한번 해 보라는 말을 건넨다."
+      },
+      {
+       "t_raw": "상대가 한 판을 하겠다고 답하는 대화 선택지도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상대가 한 판을 하겠다고 답하는 대화 선택지도 있다."
+      },
+      {
+       "t_raw": "Ruijin은 작별 인사에서도 Theater Mechanicus를 해 보고 싶으면 알리라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 작별 인사에서도 기관 디펜스를 해 보고 싶으면 알리라고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Idle Quotes",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by A16 and A17. The interpretation is reasonable.",
+     "quote": "Farewell. If you'd like to give Theater Mechanicus a go, just let me know.",
+     "sentences": [
+      {
+       "t_raw": "작별을 고르는 대화 선택지는 'Goodbye.'이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작별을 고르는 대화 선택지는 'Goodbye.'이다."
+      },
+      {
+       "t_raw": "그때 Ruijin은 \"Farewell. If you'd like to give Theater Mechanicus a go, just let me know.\"라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그때 서금은 \"작별이다. 기관 디펜스를 한번 해보고 싶다면, 말만 해.\"라고 답한다.",
+       "polish": {
+        "from": "그때 서금은 \"Farewell. If you'd like to give 기관 디펜스 a go, just let me know.\"라고 답한다.",
+        "text": "그때 서금은 \"작별이다. 기관 디펜스를 한번 해보고 싶다면, 말만 해.\"라고 답한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "작별 인사에서도 Theater Mechanicus 체험 권유가 이어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "작별 인사에서도 기관 디펜스 체험 권유가 이어지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Goodbye"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The translation is faithful to Q1.",
+     "t_raw": "아, 들어 본 적이 없나요? 그럼 제가 소개해 드리죠. Theater Mechanicus는 제가 발명한 일종의 탁상 게임입니다.",
+     "en": "Oh, never heard of it? Allow me to introduce it to you then. Theater Mechanicus is a kind of tabletop game invented by yours truly.",
+     "speaker": "Ruijin",
+     "source": {
+      "kind": "quest",
+      "quest": "Theater Mechanicus/2021-02-10/Story",
+      "quest_ko": "리월・기관 디펜스",
+      "version": "1.3",
+      "speaker": "Ruijin"
+     },
+     "t": "아, 들어 본 적이 없나요? 그럼 제가 소개해 드리죠. 기관 디펜스는 제가 발명한 일종의 탁상 게임입니다.",
+     "speaker_ko": "서금"
+    },
+    {
+     "section": "Theater Mechanicus — 규칙과 목표",
+     "status": "accepted",
+     "note": "The translation is faithful to Q4.",
+     "t_raw": "복잡해 보일 수 있지만, 몇 번 해 보면 감을 잡게 될 거예요.",
+     "en": "It may seem complicated, but you'll get the hang of it after you play a couple of times.",
+     "speaker": "Ruijin",
+     "source": {
+      "kind": "quest",
+      "quest": "Theater Mechanicus/2021-02-10/Story",
+      "quest_ko": "리월・기관 디펜스",
+      "version": "1.3",
+      "speaker": "Ruijin"
+     },
+     "t": "복잡해 보일 수 있지만, 몇 번 해 보면 감을 잡게 될 거예요.",
+     "speaker_ko": "서금"
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "The translation is faithful to Q2.",
+     "t_raw": "아니요, 전혀요. 어쨌든 Lantern Rite니까요. 게다가 모두가 이 게임에 대해 갖는 첫인상을 모으고 싶었거든요.",
+     "en": "No, not at all. It is the Lantern Rite, after all. Besides, I was hoping to collect everyone's initial impressions of the game.",
+     "speaker": "Ruijin",
+     "source": {
+      "kind": "quest",
+      "quest": "Theater Mechanicus/2021-02-10/Story",
+      "quest_ko": "리월・기관 디펜스",
+      "version": "1.3",
+      "speaker": "Ruijin"
+     },
+     "t": "아니요, 전혀요. 어쨌든 해등절니까요. 게다가 모두가 이 게임에 대해 갖는 첫인상을 모으고 싶었거든요.",
+     "speaker_ko": "서금"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The translation is faithful to Q5.",
+     "t_raw": "안녕하세요! Theater Mechanicus 한 판 해 보시겠어요?",
+     "en": "Hello! Would you like to play a round of Theater Mechanicus?",
+     "speaker": "Ruijin",
+     "source": {
+      "kind": "quest",
+      "quest": "Theater Mechanicus/2021-02-10/Story",
+      "quest_ko": "리월・기관 디펜스",
+      "version": "1.3",
+      "speaker": "Ruijin"
+     },
+     "t": "안녕하세요! 기관 디펜스 한 판 해 보시겠어요?",
+     "speaker_ko": "서금"
+    }
+   ]
+  }
+ ]
+}

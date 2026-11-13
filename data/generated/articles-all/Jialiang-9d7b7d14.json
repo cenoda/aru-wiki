@@ -1,0 +1,1119 @@
+{
+ "node": "Jialiang",
+ "articles": [
+  {
+   "node": "Jialiang",
+   "from_version": "5.4",
+   "cutoff": "2025-03-25T00:00:00Z",
+   "input": [
+    {
+     "page": "Jialiang",
+     "url": "https://genshin-impact.fandom.com/wiki/Jialiang",
+     "revision": 1722350
+    }
+   ],
+   "input_counts": {
+    "mentions": 7,
+    "lines": 27,
+    "web": 0
+   },
+   "input_chars": 1904,
+   "input_cut": false,
+   "input_hash": "fa7d8a547812",
+   "writer": "glm,qwen,ds,glm-flash",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "quote_mismatch",
+     "note": null,
+     "quote": "The act resulted in Jialiang dying, but Baizhu had him revived as a zombie so he could say his farewells and leave without regrets.",
+     "sentences": [
+      {
+       "t_raw": "Jialiang은 The Heart of Healing에 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가양은 의사의 마음에 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "Jiangli의 남편이자 Ayu의 아버지로, 정상적인 방법으로는 치료할 수 없는 희귀한 선천성 심장 질환을 앓고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강리의 남편이자 기우의 아버지로, 정상적인 방법으로는 치료할 수 없는 희귀한 선천성 심장 질환을 앓고 있다."
+      },
+      {
+       "t_raw": "아내 Jiangli가 Chi의 신의 유해를 약으로 만들어 그의 상태를 안정시켰지만, 그 대가로 오랜 세월 노출되어 오히려 몸이 쇠약해지면서 이야기가 시작된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아내 강리가 교룡의 신의 유해를 약으로 만들어 그의 상태를 안정시켰지만, 그 대가로 오랜 세월 노출되어 오히려 몸이 쇠약해지면서 이야기가 시작된다."
+      },
+      {
+       "t_raw": "결국 죽음을 맞았다가 좀비로 되살아나 가족과 작별할 시간을 얻은 인물로, Baizhu의 스승이 평생 이루지 못한 소원과 얽힌 인물이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "결국 죽음을 맞았다가 좀비로 되살아나 가족과 작별할 시간을 얻은 인물로, 백출의 스승이 평생 이루지 못한 소원과 얽힌 인물이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Formula for a Miracle"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Baizhu's Master",
+       "revision": 1388027,
+       "section": "Story > Legacy",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, M2 and Q19.",
+     "quote": "Jialiang is the husband of Jiangli and father of Ayu.",
+     "sentences": [
+      {
+       "t_raw": "Jialiang은 Jiangli의 남편이자 Ayu의 아버지로, The Heart of Healing에 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가양은 강리의 남편이자 기우의 아버지로, 의사의 마음에 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "Changsheng에 따르면 Jiangli는 여행 중 만난 약초꾼과 정착하기로 했으며, 그 사람이 Jialiang이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "장생에 따르면 강리는 여행 중 만난 약초꾼과 정착하기로 했으며, 그 사람이 가양이라고 한다."
+      },
+      {
+       "t_raw": "Jiangli는 Baizhu의 스승 밑에서 의술을 익힌 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강리는 백출의 스승 밑에서 의술을 익힌 인물이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Formula for a Miracle"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Quest for a Cure",
+       "quest_ko": "약",
+       "version": "3.6",
+       "speaker": "Changsheng"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts come from A2 and M2. The interpretation follows from the 'could not be cured through normal methods' line.",
+     "quote": "Jialiang was afflicted with a rare congenital heart disease that could not be cured through normal methods.",
+     "sentences": [
+      {
+       "t_raw": "Jialiang은 일반적인 방법으로는 고칠 수 없는, 드물고 치명적인 선천성 심장 질환을 앓고 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가양은 일반적인 방법으로는 고칠 수 없는, 드물고 치명적인 선천성 심장 질환을 앓고 있었다."
+      },
+      {
+       "t_raw": "Jiangli는 Changsheng의 생명력 조작을 사악하고 부자연스러운 것으로 여겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강리는 장생의 생명력 조작을 사악하고 부자연스러운 것으로 여겼다."
+      },
+      {
+       "t_raw": "평범한 치료로는 낫지 않는 병이었다는 점에서, 두 사람에게는 다른 방법이 필요했던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "평범한 치료로는 낫지 않는 병이었다는 점에서, 두 사람에게는 다른 방법이 필요했던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Formula for a Miracle"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by M3.",
+     "quote": "Jiangli found Chi's remains in Qingce Village and set up a home outside the village areas, where she would frequently enter a cave system, discovering a large chunk of godly remains and used it to stabilize her husband's condition.",
+     "sentences": [
+      {
+       "t_raw": "Jiangli는 Qingce Village에서 Chi의 유해를 발견하고, 마을 밖에 집을 마련해 동굴 시스템을 자주 드나들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강리는 경책 산장에서 교룡의 유해를 발견하고, 마을 밖에 집을 마련해 동굴 시스템을 자주 드나들었다."
+      },
+      {
+       "t_raw": "동굴 안에서 큰 신의 유해 덩어리를 찾아내 남편의 상태를 안정시키는 데 쓰았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동굴 안에서 큰 신의 유해 덩어리를 찾아내 남편의 상태를 안정시키는 데 쓰았다."
+      },
+      {
+       "t_raw": "그녀는 전투에 능하지 않았기에, 드나드는 동안 습격받지 않도록 동굴 시스템을 몬스터를 쫓는 향으로 가득 채웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 전투에 능하지 않았기에, 드나드는 동안 습격받지 않도록 동굴 시스템을 몬스터를 쫓는 향으로 가득 채웠다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chi",
+       "revision": 1189718,
+       "section": "The Chi of Mt. Qingce",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts come from A2, M3 and M5. The interpretation is reasonable.",
+     "quote": "Chi's remains were too potent for mortals to tolerate, and so both eventually succumbed to great illness.",
+     "sentences": [
+      {
+       "t_raw": "Chi의 유해는 필멸자가 감당하기에 너무 강력한 것이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "교룡의 유해는 필멸자가 감당하기에 너무 강력한 것이었다."
+      },
+      {
+       "t_raw": "세월이 흐르며 Jialiang은 중병에 시달렸고, 단기 기억상실 같은 여러 증상까지 겪게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "세월이 흐르며 가양은 중병에 시달렸고, 단기 기억상실 같은 여러 증상까지 겪게 된다."
+      },
+      {
+       "t_raw": "유해에 반복해 노출된 Jiangli 역시 병들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유해에 반복해 노출된 강리 역시 병들었다."
+      },
+      {
+       "t_raw": "그러던 중 Jiangli가 며칠째 돌아오지 않자, Ayu가 아버지를 Liyue Harbor로 데려가 Baizhu에게 치료를 청했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러던 중 강리가 며칠째 돌아오지 않자, 기우가 아버지를 리월항으로 데려가 백출에게 치료를 청했다."
+      },
+      {
+       "t_raw": "남편을 살리려고 쓴 유해가 두 사람 모두를 병들게 한 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "남편을 살리려고 쓴 유해가 두 사람 모두를 병들게 한 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chi",
+       "revision": 1189718,
+       "section": "The Chi of Mt. Qingce",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Heart of Healing",
+     "status": "accepted",
+     "note": "The facts come from A2, A3, M3 and M6, which mentions Bubu Pharmacy.",
+     "quote": "Eventually, during one trip, exposure to the remains caused her to fall unconscious, and without treatment, Jialiang began suffering from his condition.",
+     "sentences": [
+      {
+       "t_raw": "Jiangli가 며칠째 돌아오지 않자 Ayu는 아버지 Jialiang을 데리고 Liyue Harbor로 향했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강리가 며칠째 돌아오지 않자 기우는 아버지 가양을 데리고 리월항으로 향했다."
+      },
+      {
+       "t_raw": "오랜 세월 **신의 유해**에 노출된 탓에 Jialiang은 단기 기억 상실 같은 증상까지 겪으며 중태에 빠져 있었고, Jiangli 역시 유해에 반복해서 노출되며 병들어 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오랜 세월 **신의 유해**에 노출된 탓에 가양은 단기 기억 상실 같은 증상까지 겪으며 중태에 빠져 있었고, 강리 역시 유해에 반복해서 노출되며 병들어 있었다."
+      },
+      {
+       "t_raw": "Bubu Pharmacy에서 Baizhu가 그의 건강을 살피던 끝에, 아내가 Chi의 신의 유해로 남편의 몸을 붙잡아 두었다는 사실이 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "불복려에서 백출이 그의 건강을 살피던 끝에, 아내가 교룡의 신의 유해로 남편의 몸을 붙잡아 두었다는 사실이 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 의사의 마음",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Heart of Healing",
+     "status": "accepted",
+     "note": "The facts come from A3, M3, M5 and M6. The interpretation follows from the monster-repelling incense used because she was not skilled in combat.",
+     "quote": "When they arrived at the heart of the system, they found an unconscious Jiangli with an aggressive Geovishap nearby, killing it.",
+     "sentences": [
+      {
+       "t_raw": "일행은 Jiangli가 드나들던 동굴 체계로 향했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일행은 강리가 드나들던 동굴 체계로 향했다."
+      },
+      {
+       "t_raw": "그녀는 전투에 능하지 않아 동굴 안에 몬스터 퇴치 향을 가득 채워 두었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 전투에 능하지 않아 동굴 안에 몬스터 퇴치 향을 가득 채워 두었다."
+      },
+      {
+       "t_raw": "스스로를 지킬 힘이 없는 사람이 남편의 목숨을 붙들기 위해 매번 그 향에 의지해 동굴로 들어갔다는 뜻이 된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스스로를 지킬 힘이 없는 사람이 남편의 목숨을 붙들기 위해 매번 그 향에 의지해 동굴로 들어갔다는 뜻이 된다."
+      },
+      {
+       "t_raw": "동굴 깊은 곳에는 의식을 잃은 Jiangli와 사나운 Geovishap이 있었고, 일행은 Geovishap을 처치했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동굴 깊은 곳에는 의식을 잃은 강리와 사나운 바위 용 도마뱀이 있었고, 일행은 바위 용 도마뱀을 처치했다."
+      },
+      {
+       "t_raw": "그곳에는 Chi의 유해가 아직 남아 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그곳에는 교룡의 유해가 아직 남아 있었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chi",
+       "revision": 1189718,
+       "section": "The Chi of Mt. Qingce",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 의사의 마음",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Heart of Healing",
+     "status": "accepted",
+     "note": "All sentences are supported by A3, Q18, Q21 and Q24. The interpretation follows from the text.",
+     "quote": "The poison within Jialiang's body is inextricably linked to the god remains here.",
+     "sentences": [
+      {
+       "t_raw": "Baizhu는 유해를 파괴하면 그 힘이 흩어져 Jialiang이 죽게 된다고 밝혔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백출은 유해를 파괴하면 그 힘이 흩어져 가양이 죽게 된다고 밝혔다."
+      },
+      {
+       "t_raw": "Jialiang의 몸속 독이 심장 질환을 억누르고 있었으므로, 유해가 사라지면 그 억제도 함께 사라지는 셈이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가양의 몸속 독이 심장 질환을 억누르고 있었으므로, 유해가 사라지면 그 억제도 함께 사라지는 셈이었다."
+      },
+      {
+       "t_raw": "Paimon은 모두가 애써 구한 목숨을 그냥 포기할 수는 없다며 반발했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 모두가 애써 구한 목숨을 그냥 포기할 수는 없다며 반발했다."
+      },
+      {
+       "t_raw": "그러나 Jialiang은 자신이 오래전에 죽었어야 할 사람이라며, 치료를 계속하면 자신과 가족 모두에게 짐이 될 수 있음을 알고 동의했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 가양은 자신이 오래전에 죽었어야 할 사람이라며, 치료를 계속하면 자신과 가족 모두에게 짐이 될 수 있음을 알고 동의했다."
+      },
+      {
+       "t_raw": "가족을 지키려는 판단이 결국 자신의 죽음을 받아들이는 선택으로 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가족을 지키려는 판단이 결국 자신의 죽음을 받아들이는 선택으로 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Formula for a Miracle",
+       "quest_ko": "처방전",
+       "version": "3.6",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Formula for a Miracle",
+       "quest_ko": "처방전",
+       "version": "3.6",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Formula for a Miracle",
+       "quest_ko": "처방전",
+       "version": "3.6",
+       "speaker": "Changsheng"
+      }
+     ],
+     "heading": "작중 행적 — 의사의 마음",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Heart of Healing",
+     "status": "accepted",
+     "note": "Supported by A3, A4, M5 and M6. The interpretation is a reasonable reading of the text.",
+     "quote": "To his surprise, Jialiang instead woke up at Bubu Pharmacy, where he found himself covered in talismans",
+     "sentences": [
+      {
+       "t_raw": "Baizhu가 유해를 파괴하자 Jiangli는 의식을 잃었고, 유해의 독이 씻겨나가 그녀는 건강을 되찾았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백출이 유해를 파괴하자 강리는 의식을 잃었고, 유해의 독이 씻겨나가 그녀는 건강을 되찾았다."
+      },
+      {
+       "t_raw": "Jialiang은 목숨을 잃었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가양은 목숨을 잃었다."
+      },
+      {
+       "t_raw": "그런데 그는 Bubu Pharmacy에서 온몸에 부적을 감은 채 깨어났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 그는 불복려에서 온몸에 부적을 감은 채 깨어났다."
+      },
+      {
+       "t_raw": "Baizhu는 **Elixir of Immortality**로 그를 좀비로 되살려, 작별을 하고 미련 없이 떠날 수 있게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백출은 **불로불사의 영약**으로 그를 좀비로 되살려, 작별을 하고 미련 없이 떠날 수 있게 했다."
+      },
+      {
+       "t_raw": "남편의 목숨을 이어준 유해가 아내를 병들게 했고, 그것이 파괴되자 아내는 건강을 되찾고 남편은 죽음을 맞았으니, 유해가 준 것과 앗아간 것이 서로 뒤바뀐 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "남편의 목숨을 이어준 유해가 아내를 병들게 했고, 그것이 파괴되자 아내는 건강을 되찾고 남편은 죽음을 맞았으니, 유해가 준 것과 앗아간 것이 서로 뒤바뀐 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chi",
+       "revision": 1189718,
+       "section": "The Chi of Mt. Qingce",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 의사의 마음",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by M2, M7 and M1.",
+     "quote": "Saving Jialiang would become his dying wish.",
+     "sentences": [
+      {
+       "t_raw": "Jialiang은 **Jiangli**의 남편이자 Ayu의 아버지이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가양은 **강리**의 남편이자 기우의 아버지이다."
+      },
+      {
+       "t_raw": "Jiangli는 **Baizhu의 스승**에게 의술을 배웠지만, 스승이 Changsheng의 술식으로 남편을 구하려 하자 이를 사악하고 부자연스럽다 여겨 거부했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강리는 **백출의 스승**에게 의술을 배웠지만, 스승이 장생의 술식으로 남편을 구하려 하자 이를 사악하고 부자연스럽다 여겨 거부했다."
+      },
+      {
+       "t_raw": "그녀는 스승의 희생을 원치 않았고, 이 뜻은 스승이 죽음을 앞두고 생각을 다시 하게 했으며, 남편을 살리는 일은 스승의 죽음이 임한 소원이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 스승의 희생을 원치 않았고, 이 뜻은 스승이 죽음을 앞두고 생각을 다시 하게 했으며, 남편을 살리는 일은 스승의 죽음이 임한 소원이 되었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Formula for a Miracle"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Changsheng",
+       "revision": 1711939,
+       "section": "Story > Present Day",
+       "paragraph": "M7",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Quest for a Cure"
+        },
+        {
+         "type": "quest",
+         "name": "The Formula for a Miracle"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Baizhu's Master",
+       "revision": 1388027,
+       "section": "Story",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Formula for a Miracle"
+        },
+        {
+         "type": "quest",
+         "name": "The Search for a Physician"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Facts are supported by A2, A4 and M6. The interpretation is backed by M4 and M1, which tie the zombie revival to the master's dying wish.",
+     "quote": "Though Baizhu told him that he did not know how long the elixir would last, he told him that it would be enough to say his goodbyes and leave without regrets.",
+     "sentences": [
+      {
+       "t_raw": "Ayu는 어머니가 돌아오지 않자 아버지를 Liyue Harbor로 데려가 Baizhu에게 치료를 부탁했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기우는 어머니가 돌아오지 않자 아버지를 리월항으로 데려가 백출에게 치료를 부탁했다."
+      },
+      {
+       "t_raw": "Baizhu는 유해가 파괴된 뒤 죽은 Jialiang을 좀비로 되살려 작별을 고할 시간을 주었고, Qiqi는 Jialiang에게 좀비로 살아가는 요령을 알려 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백출은 유해가 파괴된 뒤 죽은 가양을 좀비로 되살려 작별을 고할 시간을 주었고, 치치는 가양에게 좀비로 살아가는 요령을 알려 주었다."
+      },
+      {
+       "t_raw": "이 작별의 시간은 스승이 남긴 소원과 무관하지 않은 결과로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 작별의 시간은 스승이 남긴 소원과 무관하지 않은 결과로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangli",
+       "revision": 1726474,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Baizhu's Master",
+       "revision": 1388027,
+       "section": "Story",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Formula for a Miracle"
+        },
+        {
+         "type": "quest",
+         "name": "The Search for a Physician"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A4. The interpretation is mild and follows from the text.",
+     "quote": "Though Baizhu told him that he did not know how long the elixir would last, he told him that it would be enough to say his goodbyes and leave without regrets.",
+     "sentences": [
+      {
+       "t_raw": "Baizhu는 Jialiang에게 Elixir of Immortality를 썼고, 그 약효가 얼마나 지속될지는 자신도 모른다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백출은 가양에게 불로불사의 영약을 썼고, 그 약효가 얼마나 지속될지는 자신도 모른다고 말했다."
+      },
+      {
+       "t_raw": "작별을 고하고 미련 없이 떠나기에는 충분한 시간이라는 말이 뒤따랐고, 가족은 곧 Natlan으로 향했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작별을 고하고 미련 없이 떠나기에는 충분한 시간이라는 말이 뒤따랐고, 가족은 곧 나타로 향했다."
+      },
+      {
+       "t_raw": "Ayu는 그곳의 온천과 식물이 Jialiang을 고치는 데 보탬이 되리라 믿었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기우는 그곳의 온천과 식물이 가양을 고치는 데 보탬이 되리라 믿었다."
+      },
+      {
+       "t_raw": "기한을 알 수 없는 몸으로 떠난 만큼, Natlan으로의 여정에는 남은 시간에 대한 물음이 함께 붙어 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "기한을 알 수 없는 몸으로 떠난 만큼, 나타으로의 여정에는 남은 시간에 대한 물음이 함께 붙어 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by Q2, Q5, Q11 and Q8. The interpretation stays vague (\"something left in the body\") and adds no new fact.",
+     "quote": "It's just like the day I went missing... It's as if something inside me is trying to guide me somewhere...",
+     "sentences": [
+      {
+       "t_raw": "Jialiang은 자신이 실종되었던 날과 똑같다며, 안의 무언가가 자기를 어딘가로 이끄는 것 같다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가양은 자신이 실종되었던 날과 똑같다며, 안의 무언가가 자기를 어딘가로 이끄는 것 같다고 말한다."
+      },
+      {
+       "t_raw": "낯익은 장소에서는 전에 와 본 것 같다고 하고, 이상한 느낌이 돌아왔다고 말할 때도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낯익은 장소에서는 전에 와 본 것 같다고 하고, 이상한 느낌이 돌아왔다고 말할 때도 있다."
+      },
+      {
+       "t_raw": "되풀이해 돌아오는 몸의 감각을 길잡이로 삼는 셈이니, 그를 옮기는 것은 판단이라기보다 몸에 남은 무언가라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "되풀이해 돌아오는 몸의 감각을 길잡이로 삼는 셈이니, 그를 옮기는 것은 판단이라기보다 몸에 남은 무언가라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Formula for a Miracle",
+       "quest_ko": "처방전",
+       "version": "3.6",
+       "speaker": "Jialiang"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Formula for a Miracle",
+       "quest_ko": "처방전",
+       "version": "3.6",
+       "speaker": "Jialiang"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Formula for a Miracle",
+       "quest_ko": "처방전",
+       "version": "3.6",
+       "speaker": "Jialiang"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All supported by Q8, Q14, Q17, Q24; the interpretation is hedged.",
+     "quote": "I feel a dull ache in my heart... This must be the way.",
+     "sentences": [
+      {
+       "t_raw": "가슴에 둔한 통증이 느껴지면 그는 그쪽이 맞는 길이라며 앞장서고, 그 판단에 확신한다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가슴에 둔한 통증이 느껴지면 그는 그쪽이 맞는 길이라며 앞장서고, 그 판단에 확신한다고 한다."
+      },
+      {
+       "t_raw": "한편 Changsheng은 그의 몸속 독이 이곳의 신의 유해와 뗄 수 없이 연결되어 있다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 장생은 그의 몸속 독이 이곳의 신의 유해와 뗄 수 없이 연결되어 있다고 전한다."
+      },
+      {
+       "t_raw": "통증을 길의 표지로 삼는 그에게, 유해와 맞물린 독은 그 이끌림의 출처를 짐작하게 하는 단서로 볼 수도 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "통증을 길의 표지로 삼는 그에게, 유해와 맞물린 독은 그 이끌림의 출처를 짐작하게 하는 단서로 볼 수도 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Formula for a Miracle",
+       "quest_ko": "처방전",
+       "version": "3.6",
+       "speaker": "Jialiang"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Formula for a Miracle",
+       "quest_ko": "처방전",
+       "version": "3.6",
+       "speaker": "Jialiang"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Formula for a Miracle",
+       "quest_ko": "처방전",
+       "version": "3.6",
+       "speaker": "Jialiang"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Formula for a Miracle",
+       "quest_ko": "처방전",
+       "version": "3.6",
+       "speaker": "Changsheng"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "trimmed",
+     "note": "Sentence 4 assumes he thanks Baizhu right after hearing the zombie explanation while covered in talismans. Q4 shows him just waking and asking where Baizhu is, so that sequence is not given.",
+     "quote": "Hmm? Wait... Where's Dr. Baizhu? I still haven't had a chance to thank him... Seems he moved me here before I came to.",
+     "sentences": [
+      {
+       "t_raw": "Jialiang이 눈을 뜬 곳은 Bubu Pharmacy였고, 그의 몸에는 부적이 잔뜩 붙어 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가양이 눈을 뜬 곳은 불복려였고, 그의 몸에는 부적이 잔뜩 붙어 있었다."
+      },
+      {
+       "t_raw": "본인으로서는 예상 밖의 일이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "본인으로서는 예상 밖의 일이었다."
+      },
+      {
+       "t_raw": "Baizhu는 그를 Elixir of Immortality로 치료해 좀비가 되었다고 알렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백출은 그를 불로불사의 영약으로 치료해 좀비가 되었다고 알렸다."
+      },
+      {
+       "t_raw": "정신을 차린 그가 찾은 것은 Baizhu였다. 아직 감사 인사도 못 드렸다며, 자신이 깨어나기 전에 Baizhu가 이곳으로 옮겨 둔 모양이라고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정신을 차린 그가 찾은 것은 백출였다. 아직 감사 인사도 못 드렸다며, 자신이 깨어나기 전에 백출이 이곳으로 옮겨 둔 모양이라고 했다."
+      },
+      {
+       "t_raw": "부적을 두른 몸으로 좀비가 되었다는 설명을 들은 참에 감사 인사부터 챙기고 있다는 점에서, 이 장면은 당혹스러운 처지보다 신세를 진 일을 먼저 떠올리는 태도가 도드라지는 대목으로 읽힌다.",
+       "interp": true,
+       "dropped": true,
+       "t": "부적을 두른 몸으로 좀비가 되었다는 설명을 들은 참에 감사 인사부터 챙기고 있다는 점에서, 이 장면은 당혹스러운 처지보다 신세를 진 일을 먼저 떠올리는 태도가 도드라지는 대목으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Quest for a Cure",
+       "quest_ko": "약",
+       "version": "3.6",
+       "speaker": "Jialiang"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 1 says the feast was shared by 'two people' (Qiqi and Jialiang). The English only says 'they shared a feast' and does not say who took part.",
+     "quote": "Qiqi gave him a few pointers on how to live as a zombie before they shared a feast.",
+     "sentences": [
+      {
+       "t_raw": "그에게 **좀비로 살아가는 법**을 알려준 이는 Qiqi였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그에게 **좀비로 살아가는 법**을 알려준 이는 치치였다."
+      },
+      {
+       "t_raw": "Qiqi가 몇 가지 요령을 일러 주었고, 이어서 함께 **연회**를 벌였다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "치치가 몇 가지 요령을 일러 주었고, 이어서 함께 **연회**를 벌였다."
+      },
+      {
+       "t_raw": "요령을 배우는 일과 연회가 잇따랐다는 점에서, 좀비가 된 뒤의 생활은 안내와 식사로 채워진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "요령을 배우는 일과 연회가 잇따랐다는 점에서, 좀비가 된 뒤의 생활은 안내와 식사로 채워진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jialiang",
+       "revision": 1722350,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "듣기로는, 그녀가 여행 중에 약초꾼을 만나 그와 정착하기로 마음먹었다고 해. 그게 분명 Jialiang이었을 거야.",
+     "en": "Supposedly, she met an herb gatherer sometime during her travels and decided to settle down with him. That must have been Jialiang.",
+     "speaker": "Changsheng",
+     "source": {
+      "kind": "quest",
+      "quest": "The Quest for a Cure",
+      "quest_ko": "약",
+      "version": "3.6",
+      "speaker": "Changsheng"
+     },
+     "t": "듣기로는, 그녀가 여행 중에 약초꾼을 만나 그와 정착하기로 마음먹었다고 해. 그게 분명 가양이었을 거야.",
+     "speaker_ko": "장생"
+    },
+    {
+     "section": "작중 행적 — The Heart of Healing",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "잠깐, 잠깐, 잠깐! 그런데 우리 모두 Jialiang의 목숨을 구하겠다고 죽어라 애썼잖아! 그렇게까지 해 놓고… 그를 그냥 포기할 수는 없어!",
+     "en": "Wait, wait, wait! But we've all been working our butts off to save Jialiang's life! After all that... we can't just give up on him!",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Formula for a Miracle",
+      "quest_ko": "처방전",
+      "version": "3.6",
+      "speaker": "Paimon"
+     },
+     "t": "잠깐, 잠깐, 잠깐! 그런데 우리 모두 가양의 목숨을 구하겠다고 죽어라 애썼잖아! 그렇게까지 해 놓고… 그를 그냥 포기할 수는 없어!",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "전해지는 바로는, 그녀는 여행 중 약초꾼을 만나 정착하기로 결심했다고 한다. 그 사람이 바로 Jialiang이었을 것이다.",
+     "en": "Supposedly, she met an herb gatherer sometime during her travels and decided to settle down with him. That must have been Jialiang.",
+     "speaker": "Changsheng",
+     "source": {
+      "kind": "quest",
+      "quest": "The Quest for a Cure",
+      "quest_ko": "약",
+      "version": "3.6",
+      "speaker": "Changsheng"
+     },
+     "t": "전해지는 바로는, 그녀는 여행 중 약초꾼을 만나 정착하기로 결심했다고 한다. 그 사람이 바로 가양이었을 것이다.",
+     "speaker_ko": "장생"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of the dialogue line.",
+     "t_raw": "내가 실종되었던 날과 똑같아… 내 안의 무언가가 나를 어딘가로 이끌려는 것 같아…",
+     "en": "It's just like the day I went missing... It's as if something inside me is trying to guide me somewhere...",
+     "speaker": "Jialiang",
+     "source": {
+      "kind": "quest",
+      "quest": "The Formula for a Miracle",
+      "quest_ko": "처방전",
+      "version": "3.6",
+      "speaker": "Jialiang"
+     },
+     "t": "내가 실종되었던 날과 똑같아… 내 안의 무언가가 나를 어딘가로 이끌려는 것 같아…",
+     "speaker_ko": "가양"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation: Baizhu's whereabouts, the unfulfilled thanks, and being moved before regaining consciousness are all rendered accurately.",
+     "t_raw": "음? 잠깐... Baizhu 선생님은 어디 계시지? 아직 감사 인사도 못 드렸는데... 내가 정신을 차리기 전에 절 여기로 옮겨 두신 모양이야.",
+     "en": "Hmm? Wait... Where's Dr. Baizhu? I still haven't had a chance to thank him... Seems he moved me here before I came to.",
+     "speaker": "Jialiang",
+     "source": {
+      "kind": "quest",
+      "quest": "The Quest for a Cure",
+      "quest_ko": "약",
+      "version": "3.6",
+      "speaker": "Jialiang"
+     },
+     "t": "음? 잠깐... 백출 선생님은 어디 계시지? 아직 감사 인사도 못 드렸는데... 내가 정신을 차리기 전에 절 여기로 옮겨 두신 모양이야.",
+     "speaker_ko": "가양"
+    }
+   ]
+  }
+ ]
+}

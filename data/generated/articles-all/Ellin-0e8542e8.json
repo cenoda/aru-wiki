@@ -21,40 +21,40 @@
    "input_cut": false,
    "input_hash": "16e076a14ab4",
    "writer": "or-ds",
-   "verifier": "grok",
-   "status": "needs_verify",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "trimmed",
-     "note": "“Daily training” is not in the English; being findable anytime only means she is always at that spot.",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
      "quote": "Ellin wants to become part of the Knights of Favonius and fight alongside Jean.",
      "sentences": [
       {
-       "t_raw": "Ellin은 Mondstadt에 있는 인물로, Knights of Favonius 본부 뒤에서 언제든 만날 수 있다.",
+       "t_raw": "Ellin은 Mondstadt에 있는 인물로, **Knights of Favonius** 본부 뒤편에서 언제든 만날 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "엘린은 몬드에 있는 인물로, 페보니우스 기사단 본부 뒤에서 언제든 만날 수 있다."
+       "t": "엘린은 몬드에 있는 인물로, **페보니우스 기사단** 본부 뒤편에서 언제든 만날 수 있다."
       },
       {
-       "t_raw": "그녀는 Knights of Favonius에 들어가 Jean과 함께 싸우고 싶어 하며, 본부 뒤에서 Jean의 검술을 따라 익히며 훈련한다.",
+       "t_raw": "그녀는 **Knights of Favonius**에 들어가 **Jean**과 함께 싸우고 싶어 하며, 본부 뒤에서 Jean의 검술을 연습하며 훈련한다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 페보니우스 기사단에 들어가 진과 함께 싸우고 싶어 하며, 본부 뒤에서 진의 검술을 따라 익히며 훈련한다."
+       "t": "그녀는 **페보니우스 기사단**에 들어가 **진**과 함께 싸우고 싶어 하며, 본부 뒤에서 진의 검술을 연습하며 훈련한다."
       },
       {
-       "t_raw": "아버지 Herman은 한때 이름난 모험가였고 딸을 걱정하지만, Ellin은 그가 자신이 태어나기 전에 은퇴했다는 사실 때문에 그가 모험가였던 적이 없다고 여기며 그의 가르침을 거절했다.",
+       "t_raw": "아버지 **Herman**은 한때 이름난 모험가였고 Ellin을 걱정하지만, 그가 Ellin이 태어나기 전에 은퇴했기 때문에 Ellin은 그가 모험가였음을 믿지 않으며 그의 가르침을 거절했다.",
        "interp": false,
        "dropped": false,
-       "t": "아버지 허먼은 한때 이름난 모험가였고 딸을 걱정하지만, 엘린은 그가 자신이 태어나기 전에 은퇴했다는 사실 때문에 그가 모험가였던 적이 없다고 여기며 그의 가르침을 거절했다."
+       "t": "아버지 **허먼**은 한때 이름난 모험가였고 엘린을 걱정하지만, 그가 엘린이 태어나기 전에 은퇴했기 때문에 엘린은 그가 모험가였음을 믿지 않으며 그의 가르침을 거절했다."
       },
       {
-       "t_raw": "본부 뒤라는 훈련 장소와 Jean을 향한 동경은 그녀의 기사 지망이 막연한 소망이 아니라 매일의 훈련으로 이어지고 있음을 보여 주는 대목으로 보인다.",
+       "t_raw": "Jean을 향한 동경과 Knights of Favonius 입단을 위한 훈련이 그녀를 특징짓는 두 축으로 보인다.",
        "interp": true,
-       "dropped": true,
-       "t": "본부 뒤라는 훈련 장소와 진을 향한 동경은 그녀의 기사 지망이 막연한 소망이 아니라 매일의 훈련으로 이어지고 있음을 보여 주는 대목으로 보인다."
+       "dropped": false,
+       "t": "진을 향한 동경과 페보니우스 기사단 입단을 위한 훈련이 그녀를 특징짓는 두 축으로 보인다."
       }
      ],
      "sources": [
@@ -72,6 +72,14 @@
        "revision": 361973,
        "section": "Profile",
        "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Dialogue",
+       "paragraph": "A13",
        "wiki_refs": []
       }
      ],
@@ -81,44 +89,20 @@
     {
      "section": "개요",
      "status": "accepted",
-     "note": "All sentences match the English, including the tryouts line, the adventure-with-Jean line, and Paimon’s remark.",
-     "quote": "Ellin wants to become part of the Knights of Favonius and fight alongside Jean.",
+     "note": "Both sentences match the profile.",
+     "quote": "Ellin wants to become part of the Knights of Favonius and fight alongside Jean. She trains behind the knights' headquarter where she practices Jean's sword technique.",
      "sentences": [
       {
-       "t_raw": "Ellin은 Mondstadt에서 만날 수 있는 인물로, Knights of Favonius 본부 뒤에서 훈련하는 모습을 볼 수 있다.",
+       "t_raw": "Ellin은 Mondstadt의 Knights of Favonius 본부 뒤편에서 언제든지 만날 수 있는 인물이다.",
        "interp": false,
        "dropped": false,
-       "t": "엘린은 몬드에서 만날 수 있는 인물로, 페보니우스 기사단 본부 뒤에서 훈련하는 모습을 볼 수 있다."
+       "t": "엘린은 몬드의 페보니우스 기사단 본부 뒤편에서 언제든지 만날 수 있는 인물이다."
       },
       {
-       "t_raw": "그녀는 아직 기사가 아니지만 선발 시험을 통과할 자신이 있으며, **Knights of Favonius**에 들어가 **Jean**과 함께 싸우기를 바란다.",
+       "t_raw": "그녀는 **Knights of Favonius에 들어가 Jean과 함께 싸우는 것**을 바라며, 본부 뒤에서 **Jean의 검술**을 연습한다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 아직 기사가 아니지만 선발 시험을 통과할 자신이 있으며, **페보니우스 기사단**에 들어가 **진**과 함께 싸우기를 바란다."
-      },
-      {
-       "t_raw": "그녀는 Jean의 검술을 따라 하며 훈련한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 진의 검술을 따라 하며 훈련한다."
-      },
-      {
-       "t_raw": "Ellin은 Jean과 함께 모험을 떠날 수 있다면 더 좋겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "엘린은 진과 함께 모험을 떠날 수 있다면 더 좋겠다고 말한다."
-      },
-      {
-       "t_raw": "Paimon은 Ellin이 Jean을 아주 많이 따르는 것 같다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 엘린이 진을 아주 많이 따르는 것 같다고 말한다."
-      },
-      {
-       "t_raw": "이런 점을 종합하면, Ellin의 기사 지망에는 Jean에 대한 동경이 자리한 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 점을 종합하면, 엘린의 기사 지망에는 진에 대한 동경이 자리한 것으로 보인다."
+       "t": "그녀는 **페보니우스 기사단에 들어가 진과 함께 싸우는 것**을 바라며, 본부 뒤에서 **진의 검술**을 연습한다."
       }
      ],
      "sources": [
@@ -137,13 +121,37 @@
        "section": "Profile",
        "paragraph": "A3",
        "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Both match A28 and A13.",
+     "quote": "Actually I'm not a knight yet, but I'm confident I will make it through the tryouts.",
+     "sentences": [
+      {
+       "t_raw": "그녀는 아직 기사가 아니지만 Knights of Favonius 입단 시험을 통과할 자신이 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 아직 기사가 아니지만 페보니우스 기사단 입단 시험을 통과할 자신이 있다고 말한다."
       },
+      {
+       "t_raw": "한편 자신도 Knights of Favonius의 일원이 되어 Jean과 함께 싸울 수 있기를 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 자신도 페보니우스 기사단의 일원이 되어 진과 함께 싸울 수 있기를 바란다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Ellin",
        "revision": 361973,
-       "section": "Idle Quotes",
-       "paragraph": "A4",
+       "section": "Dialogue",
+       "paragraph": "A13",
        "wiki_refs": []
       },
       {
@@ -153,20 +161,6 @@
        "section": "Dialogue",
        "paragraph": "A28",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Child's Secret",
-       "quest_ko": "동심의 비밀",
-       "version": "1.0",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Child's Secret",
-       "quest_ko": "동심의 비밀",
-       "version": "1.0",
-       "speaker": "Paimon"
       }
      ],
      "heading": "개요",
@@ -175,32 +169,32 @@
     {
      "section": "정체와 배경",
      "status": "accepted",
-     "note": "Facts match the profile, tryouts, and Q3; the reading that standing with Jean matters even more is hedged and follows from “even better.”",
-     "quote": "I—I mean, obviously I want to become a knight! ...And if I got to go on an adventure with Jean herself... Well, even better!",
+     "note": "Supported by A26-A29 and the profile. '훈련생' is a loose label for someone who trains, and the interpretation is reasonable.",
+     "quote": "Actually I'm not a knight yet, but I'm confident I will make it through the tryouts.",
      "sentences": [
       {
-       "t_raw": "Ellin은 Mondstadt에서 Knights of Favonius 본부 뒤쪽에서 훈련하는 인물이다.",
+       "t_raw": "Ellin은 Knights of Favonius에 들어가 Jean과 함께 싸우고 싶어 하는 훈련생이다.",
        "interp": false,
        "dropped": false,
-       "t": "엘린은 몬드에서 페보니우스 기사단 본부 뒤쪽에서 훈련하는 인물이다."
+       "t": "엘린은 페보니우스 기사단에 들어가 진과 함께 싸우고 싶어 하는 훈련생이다."
       },
       {
-       "t_raw": "아직 기사는 아니지만 선발 시험을 통과할 자신이 있다고 말하며, 기사가 되어 Jean과 함께 싸우고 직접 모험을 떠나기를 바란다.",
+       "t_raw": "누군가 자신을 Knights of Favonius 소속으로 여기자, Ellin은 그럴 능력이 있느냐며 놀라면서도 훈련이 효과가 있다고 기뻐한다.",
        "interp": false,
        "dropped": false,
-       "t": "아직 기사는 아니지만 선발 시험을 통과할 자신이 있다고 말하며, 기사가 되어 진과 함께 싸우고 직접 모험을 떠나기를 바란다."
+       "t": "누군가 자신을 페보니우스 기사단 소속으로 여기자, 엘린은 그럴 능력이 있느냐며 놀라면서도 훈련이 효과가 있다고 기뻐한다."
       },
       {
-       "t_raw": "기사가 되려는 목표와 Jean과의 모험을 함께 바라는 태도가 겹쳐, 그 동경은 기사단 입단 자체보다 Jean과 나란히 서는 일을 향한다고 볼 수 있다.",
+       "t_raw": "그러나 **아직 기사는 아니지만** 선발 시험을 통과할 자신이 있다고 말하고, 대장까지 올라가 Jean의 부관이 된 뒤 Jean이 은퇴할 나이가 되면 자신과 악수하며 말해 주는 장면을 상상한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 **아직 기사는 아니지만** 선발 시험을 통과할 자신이 있다고 말하고, 대장까지 올라가 진의 부관이 된 뒤 진이 은퇴할 나이가 되면 자신과 악수하며 말해 주는 장면을 상상한다."
+      },
+      {
+       "t_raw": "아직 기사가 아닌 신분과 Jean의 부관을 거치는 승진 구상이 겹쳐, Ellin의 목표가 단순한 입단을 넘어 **Jean 곁의 자리**까지 향해 있다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "기사가 되려는 목표와 진과의 모험을 함께 바라는 태도가 겹쳐, 그 동경은 기사단 입단 자체보다 진과 나란히 서는 일을 향한다고 볼 수 있다."
-      },
-      {
-       "t_raw": "Herman은 한때 이름난 모험가로 딸을 걱정하지만, Ellin은 그가 모험가였음을 믿지 않고 그의 가르침도 거절했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "허먼은 한때 이름난 모험가로 딸을 걱정하지만, 엘린은 그가 모험가였음을 믿지 않고 그의 가르침도 거절했다."
+       "t": "아직 기사가 아닌 신분과 진의 부관을 거치는 승진 구상이 겹쳐, 엘린의 목표가 단순한 입단을 넘어 **진 곁의 자리**까지 향해 있다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -208,16 +202,32 @@
        "kind": "wiki",
        "page": "Ellin",
        "revision": 361973,
-       "section": null,
-       "paragraph": "A1",
+       "section": "Profile",
+       "paragraph": "A3",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Ellin",
        "revision": 361973,
-       "section": "Profile",
-       "paragraph": "A3",
+       "section": "Dialogue",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Dialogue",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Dialogue",
+       "paragraph": "A27",
        "wiki_refs": []
       },
       {
@@ -229,11 +239,12 @@
        "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "A Child's Secret",
-       "quest_ko": "동심의 비밀",
-       "version": "1.0",
-       "speaker": "Ellin"
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Dialogue",
+       "paragraph": "A29",
+       "wiki_refs": []
       }
      ],
      "heading": "정체와 배경",
@@ -242,26 +253,32 @@
     {
      "section": "정체와 배경",
      "status": "accepted",
-     "note": "The book rereading, Dawn Knight line, rank fantasy, and refusal of Herman’s mentoring are all in the English.",
+     "note": "Supported by the profile, A30, A32, A33 and Q3. The interpretation is hedged.",
      "quote": "...Whoops, I'm getting ahead of myself! Anyway, watch this space 'cause I'm gonna outdo my feckless father by a long way, that's for sure!",
      "sentences": [
       {
-       "t_raw": "Ellin은 Ballads of the Squire를 여러 번 읽은 애독자이며, 자신도 Dawn Knight처럼 되겠다고 말한다.",
+       "t_raw": "아버지 Herman은 한때 이름난 모험가였고 딸을 걱정하면서도, Ellin이 태어나기 전에 은퇴한 탓에 Ellin은 그가 모험가였던 적이 있다고 믿지 않으며 그의 가르침도 거절했다.",
        "interp": false,
        "dropped": false,
-       "t": "엘린은 시종 기사의 노래를 여러 번 읽은 애독자이며, 자신도 여명 기사처럼 되겠다고 말한다."
+       "t": "아버지 허먼은 한때 이름난 모험가였고 딸을 걱정하면서도, 엘린이 태어나기 전에 은퇴한 탓에 엘린은 그가 모험가였던 적이 있다고 믿지 않으며 그의 가르침도 거절했다."
       },
       {
-       "t_raw": "장차 대장까지 올라 Jean의 부관이 되고, Jean이 은퇴할 때 악수해 주기를 그리다가, 곧 자신이 앞서 나갔다며 아버지보다 훨씬 잘할 것이라고 장담한다.",
+       "t_raw": "Ellin은 자신이 무능한 아버지를 훨씬 앞지를 것이라고 장담하고, 기사가 되고 싶고 Jean과 직접 모험을 떠나고 싶다고 말하며 **Dawn Knight**처럼 되겠다고 다짐한다.",
        "interp": false,
        "dropped": false,
-       "t": "장차 대장까지 올라 진의 부관이 되고, 진이 은퇴할 때 악수해 주기를 그리다가, 곧 자신이 앞서 나갔다며 아버지보다 훨씬 잘할 것이라고 장담한다."
+       "t": "엘린은 자신이 무능한 아버지를 훨씬 앞지를 것이라고 장담하고, 기사가 되고 싶고 진과 직접 모험을 떠나고 싶다고 말하며 **여명 기사**처럼 되겠다고 다짐한다."
       },
       {
-       "t_raw": "아버지의 경력을 믿지 않고 가르침도 거절한 채 아버지를 능가하겠다고 말하는 모습은, Herman과의 갈등이 자신의 길을 스스로 증명하려는 태도로도 보인다.",
+       "t_raw": "Ballads of the Squire는 여러 번 다 읽을 만큼 좋아하는 책이라 읽어 보라고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시종 기사의 노래는 여러 번 다 읽을 만큼 좋아하는 책이라 읽어 보라고 권한다."
+      },
+      {
+       "t_raw": "아버지의 모험가 시절을 받아들이지 않으면서 책 속 기사를 동경하는 태도는, Ellin이 기사로서의 본보기를 아버지보다 이야기 속 인물과 Jean에게서 찾고 있다고 볼 수 있게 한다.",
        "interp": true,
        "dropped": false,
-       "t": "아버지의 경력을 믿지 않고 가르침도 거절한 채 아버지를 능가하겠다고 말하는 모습은, 허먼과의 갈등이 자신의 길을 스스로 증명하려는 태도로도 보인다."
+       "t": "아버지의 모험가 시절을 받아들이지 않으면서 책 속 기사를 동경하는 태도는, 엘린이 기사로서의 본보기를 아버지보다 이야기 속 인물과 진에게서 찾고 있다고 볼 수 있게 한다."
       }
      ],
      "sources": [
@@ -271,14 +288,6 @@
        "revision": 361973,
        "section": "Profile",
        "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A29",
        "wiki_refs": []
       },
       {
@@ -304,40 +313,35 @@
        "section": "Dialogue",
        "paragraph": "A33",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Ellin"
       }
      ],
      "heading": "정체와 배경",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Stormterror 사건 전후",
+     "section": "작중 행적 — Mondstadt",
      "status": "accepted",
-     "note": "Fear, trust in Jean, the sigh, and the wish to fight beside her are all stated; the gap reading stays interpretive.",
-     "quote": "I believe that Master Jean will protect us, and all of Mondstadt!",
+     "note": "Matches A11, A12, A15 and A19.",
+     "quote": "It's just as I thought. Even Stormterror couldn't stand against Master Jean!",
      "sentences": [
       {
-       "t_raw": "Stormterror를 두고 Ellin은 그것이 매우 무섭다면서도 그다지 걱정하지 않는다.",
+       "t_raw": "Stormterror에 관한 대화에서 Ellin은 매우 무섭지만 실제로는 그다지 걱정하지 않는다고 말하며, Jean이 Mondstadt를 지켜 줄 거라 믿는다.",
        "interp": false,
        "dropped": false,
-       "t": "풍마룡을 두고 엘린은 그것이 매우 무섭다면서도 그다지 걱정하지 않는다."
+       "t": "풍마룡에 관한 대화에서 엘린은 매우 무섭지만 실제로는 그다지 걱정하지 않는다고 말하며, 진이 몬드를 지켜 줄 거라 믿는다."
       },
       {
-       "t_raw": "Master Jean이 자신과 Mondstadt 전체를 지켜 줄 것이라고 믿기 때문이다.",
+       "t_raw": "Song of the Dragon and Freedom 뒤에는 **Stormterror조차 Master Jean을 당해 내지 못했다**고 감탄하고, 다음 위기가 오기 전에 훈련해야 한다고 다짐한다.",
        "interp": false,
        "dropped": false,
-       "t": "사범님 진이 자신과 몬드 전체를 지켜 줄 것이라고 믿기 때문이다."
-      },
-      {
-       "t_raw": "다만 아직 Knights의 일원이 아니어서 Master Jean과 함께 싸우지 못하는 점을 한숨 섞어 아쉬워한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다만 아직 기사단의 일원이 아니어서 사범님 진과 함께 싸우지 못하는 점을 한숨 섞어 아쉬워한다."
-      },
-      {
-       "t_raw": "두려움보다 Jean에 대한 신뢰가 앞서면서도, 그 신뢰의 대상과 나란히 설 수 없다는 간극이 드러나는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "두려움보다 진에 대한 신뢰가 앞서면서도, 그 신뢰의 대상과 나란히 설 수 없다는 간극이 드러나는 셈이다."
+       "t": "드래곤과 자유의 노래 뒤에는 **풍마룡조차 사범님 진을 당해 내지 못했다**고 감탄하고, 다음 위기가 오기 전에 훈련해야 한다고 다짐한다."
       }
      ],
      "sources": [
@@ -370,50 +374,6 @@
        "page": "Ellin",
        "revision": 361973,
        "section": "Dialogue",
-       "paragraph": "A13",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 풍마룡 사건 전후",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Stormterror 사건 전후",
-     "status": "trimmed",
-     "note": "The “more faith, clearer absence” correlation is not supported; the lines only show one belief and one “if only” fantasy.",
-     "quote": "It's just as I thought. Even Stormterror couldn't stand against Master Jean!",
-     "sentences": [
-      {
-       "t_raw": "사건이 끝난 뒤 Ellin은 역시 Stormterror도 Master Jean 앞에서는 버티지 못했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "사건이 끝난 뒤 엘린은 역시 풍마룡도 사범님 진 앞에서는 버티지 못했다고 말한다."
-      },
-      {
-       "t_raw": "Jean이 여행자가 큰 도움이 되었다고 했는데도, Ellin은 Jean이 겸손한 것이라며 일의 가장 큰 몫을 Jean이 해냈다고 본다.",
-       "interp": false,
-       "dropped": false,
-       "t": "진이 여행자가 큰 도움이 되었다고 했는데도, 엘린은 진이 겸손한 것이라며 일의 가장 큰 몫을 진이 해냈다고 본다."
-      },
-      {
-       "t_raw": "Stormterror를 함께 무찌르고 시상식에서 Jean이 미소 지어 자신을 바라보는 장면을 상상하며 마음이 들뜬다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "풍마룡을 함께 무찌르고 시상식에서 진이 미소 지어 자신을 바라보는 장면을 상상하며 마음이 들뜬다고 한다."
-      },
-      {
-       "t_raw": "함께 싸우지 못한 아쉬움에서 나온 상상인 만큼, Jean에 대한 믿음이 클수록 그 자리에 없었다는 사실도 또렷해지는 셈이다.",
-       "interp": true,
-       "dropped": true,
-       "t": "함께 싸우지 못한 아쉬움에서 나온 상상인 만큼, 진에 대한 믿음이 클수록 그 자리에 없었다는 사실도 또렷해지는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
        "paragraph": "A14",
        "wiki_refs": []
       },
@@ -430,236 +390,30 @@
        "page": "Ellin",
        "revision": 361973,
        "section": "Dialogue",
-       "paragraph": "A16",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A17",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A18",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 풍마룡 사건 전후",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Stormterror 사건 전후",
-     "status": "accepted",
-     "note": "None. The missed fight with Jean against Stormterror and the resolve to train before the next crisis are both in the English; the link is a hedged reading.",
-     "quote": "Yes, I must take this chance and train hard before the next crisis comes...",
-     "sentences": [
-      {
-       "t_raw": "Stormterror 때 함께 싸우지 못한 아쉬움을 안고, Ellin은 다음 위기가 오기 전에 이 기회를 잡아 열심히 훈련해야겠다고 다짐한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "풍마룡 때 함께 싸우지 못한 아쉬움을 안고, 엘린은 다음 위기가 오기 전에 이 기회를 잡아 열심히 훈련해야겠다고 다짐한다."
-      },
-      {
-       "t_raw": "함께 싸울 기회를 놓친 경험이 다음 위기를 대비한 훈련으로 이어지는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "함께 싸울 기회를 놓친 경험이 다음 위기를 대비한 훈련으로 이어지는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A17",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
        "paragraph": "A19",
        "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 풍마룡 사건 전후",
+     "heading": "작중 행적 — 몬드",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 부탁과 훈련",
+     "section": "작중 행적 — Mondstadt",
      "status": "accepted",
-     "note": "None. Flowers, the unsigned bouquet and poem, recognizing the Honorary Knight and Paimon, skipping ceremony, excitement about Jean, and Venti’s name list are all stated.",
-     "quote": "It's just... the bouquet, and the poem... I don't know. Hmm... best not sign them after all.",
-     "sentences": [
-      {
-       "t_raw": "Ellin은 Knights of Favonius의 Jean에게 꽃을 바치려 하고, Jean의 성실한 성격 탓에 이름을 밝히면 답례 선물을 보낼까 봐 **꽃다발과 시**에 서명하지 않기로 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "엘린은 페보니우스 기사단의 진에게 꽃을 바치려 하고, 진의 성실한 성격 탓에 이름을 밝히면 답례 선물을 보낼까 봐 **꽃다발과 시**에 서명하지 않기로 한다."
-      },
-      {
-       "t_raw": "Honorary Knight와 Paimon을 알아보고 예의를 차리지 않겠다고 말하며, Jean 이야기가 나오면 흥분하는 자신을 인정한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "명예 기사와 페이몬을 알아보고 예의를 차리지 않겠다고 말하며, 진 이야기가 나오면 흥분하는 자신을 인정한다."
-      },
-      {
-       "t_raw": "Venti의 대사에는 Albert, Ellin, Marvin, Timaeus, Kaeya, Bennett의 이름이 나열된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "벤티의 대사에는 엘버트, 엘린, 마빈, 데마로우스, 케이아, 베넷의 이름이 나열된다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Ode to Flower and Cloud",
-       "quest_ko": "꽃과 구름의 시",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ode to Flower and Cloud",
-       "quest_ko": "꽃과 구름의 시",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ode to Flower and Cloud",
-       "quest_ko": "꽃과 구름의 시",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ode to Flower and Cloud",
-       "quest_ko": "꽃과 구름의 시",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ode to Flower and Cloud",
-       "quest_ko": "꽃과 구름의 시",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ode to Flower and Cloud",
-       "quest_ko": "꽃과 구름의 시",
-       "version": "1.4",
-       "speaker": "Ellin"
-      }
-     ],
-     "heading": "작중 행적 — 부탁과 훈련",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — 부탁과 훈련",
-     "status": "accepted",
-     "note": "None. Normal dummies failing Noelle’s basics, arranging them, greeting Noelle about training, and “One moment” after the Honorary Knight arrives are supported, including Noelle’s own line.",
-     "quote": "Doesn't matter how we set them up, there'll be nothing left by the time Noelle's done with them.",
-     "sentences": [
-      {
-       "t_raw": "Ellin은 **Noelle의 기본기**를 상대하려면 평범한 허수아비로는 부족하다고 보고, 허수아비를 어떻게 배치할지 고민한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "엘린은 **노엘의 기본기**를 상대하려면 평범한 허수아비로는 부족하다고 보고, 허수아비를 어떻게 배치할지 고민한다."
-      },
-      {
-       "t_raw": "Noelle가 Honorary Knight에게 훈련 조언을 구하러 오자 Ellin은 반가이 맞으며 훈련을 위해 왔는지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "노엘이 명예 기사에게 훈련 조언을 구하러 오자 엘린은 반가이 맞으며 훈련을 위해 왔는지 묻는다."
-      },
-      {
-       "t_raw": "Honorary Knight까지 오자 Ellin은 잠시 기다리라며 배치를 떠올린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "명예 기사까지 오자 엘린은 잠시 기다리라며 배치를 떠올린다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
-       "speaker": "Ellin"
-      }
-     ],
-     "heading": "작중 행적 — 부탁과 훈련",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — 부탁과 훈련",
-     "status": "trimmed",
-     "note": "Sentence 0 treats “How can I smash all these training dummies at once?” as Ellin stating a method, and it names the Traveler and Paimon where the line only says “you guys.”",
+     "note": "All stated facts match Q3, Q6, Q12, Q26 and Q28.",
      "quote": "How can I smash all these training dummies at once?",
      "sentences": [
       {
-       "t_raw": "Ellin은 **훈련용 허수아비**들을 한꺼번에 부수는 방법을 말하고, 여행자와 Paimon을 보고 인사하며 무엇을 하는지 묻는다.",
-       "interp": false,
-       "dropped": true,
-       "t": "엘린은 **훈련용 허수아비**들을 한꺼번에 부수는 방법을 말하고, 여행자와 페이몬을 보고 인사하며 무엇을 하는지 묻는다."
-      },
-      {
-       "t_raw": "Herman은 Ellin이 훈련으로 바쁘다며 다른 일은 나중으로 미룬다.",
+       "t_raw": "A Child's Secret에서 Ellin은 기사가 되고 Jean과 모험을 떠나면 더 좋겠다고 말하며, Honorary Knight와 어울릴 기회를 반긴다.",
        "interp": false,
        "dropped": false,
-       "t": "허먼은 엘린이 훈련으로 바쁘다며 다른 일은 나중으로 미룬다."
+       "t": "동심의 비밀에서 엘린은 기사가 되고 진과 모험을 떠나면 더 좋겠다고 말하며, 명예 기사와 어울릴 기회를 반긴다."
       },
       {
-       "t_raw": "Herman은 Barbara에게 Ellin이 자신의 딸이며 Barbara의 열렬한 팬이라고 말하고 사인을 부탁한다.",
+       "t_raw": "허수아비를 한 번에 부수는 방법을 고민하는 Ellin을 두고 Paimon은 Jean을 크게 따르는 모습을 보며 Master Jean이 Ellin의 상상 속 친구인지 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "허먼은 바바라에게 엘린이 자신의 딸이며 바바라의 열렬한 팬이라고 말하고 사인을 부탁한다."
+       "t": "허수아비를 한 번에 부수는 방법을 고민하는 엘린을 두고 페이몬은 진을 크게 따르는 모습을 보며 사범님 진이 엘린의 상상 속 친구인지 묻는다."
       }
      ],
      "sources": [
@@ -679,76 +433,183 @@
       },
       {
        "kind": "quest",
-       "quest": "A Very Special Beverage",
-       "quest_ko": "색다른 음료",
-       "version": "1.4",
-       "speaker": "Herman"
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Ellin"
       },
       {
        "kind": "quest",
-       "quest": "A Very Special Beverage",
-       "quest_ko": "색다른 음료",
-       "version": "1.4",
-       "speaker": "Herman"
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Paimon"
       },
       {
        "kind": "quest",
-       "quest": "A Very Special Beverage",
-       "quest_ko": "색다른 음료",
-       "version": "1.4",
-       "speaker": "Herman"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Very Special Beverage",
-       "quest_ko": "색다른 음료",
-       "version": "1.4",
-       "speaker": "Herman"
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Paimon"
       }
      ],
-     "heading": "작중 행적 — 부탁과 훈련",
+     "heading": "작중 행적 — 몬드",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "Facts match Q7, Q1 and Q4. The interpretation is reasonable.",
+     "quote": "I wanna offer some flowers to the Acting Grand Master of the Knights of Favonius, Jean.",
+     "sentences": [
+      {
+       "t_raw": "Ode to Flower and Cloud에서 Ellin은 Acting Grand Master Jean에게 꽃을 바치고 싶어 하지만, Jean이 자신의 이름을 보고 답례할까 봐 꽃다발과 시에 서명하지 않기로 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꽃과 구름의 시에서 엘린은 대리 단장 진에게 꽃을 바치고 싶어 하지만, 진이 자신의 이름을 보고 답례할까 봐 꽃다발과 시에 서명하지 않기로 한다."
+      },
+      {
+       "t_raw": "이는 Jean을 향한 마음과 Jean의 답례를 걱정하는 마음이 함께 드러난 것으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 진을 향한 마음과 진의 답례를 걱정하는 마음이 함께 드러난 것으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Ode to Flower and Cloud",
+       "quest_ko": "꽃과 구름의 시",
+       "version": "1.4",
+       "speaker": "Ellin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ode to Flower and Cloud",
+       "quest_ko": "꽃과 구름의 시",
+       "version": "1.4",
+       "speaker": "Ellin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ode to Flower and Cloud",
+       "quest_ko": "꽃과 구름의 시",
+       "version": "1.4",
+       "speaker": "Ellin"
+      }
+     ],
+     "heading": "작중 행적 — 몬드",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "Supported by Q14, Q20, Q8, Q2, Q5 and Q17.",
+     "quote": "Oh, Noelle's basic skills, huh? Then the normal dummies won't do...",
+     "sentences": [
+      {
+       "t_raw": "Noelle's Strength에서 Honorary Knight에게 훈련 조언을 구하던 Noelle에게 Ellin은 Honorary Knight도 왔다고 말을 건다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노엘의 힘에서 명예 기사에게 훈련 조언을 구하던 노엘에게 엘린은 명예 기사도 왔다고 말을 건다."
+      },
+      {
+       "t_raw": "Noelle의 기본기에는 평범한 허수아비로 부족하다며 어떻게 배치해도 Noelle가 끝내면 아무것도 남지 않을 것이라 하고, 곧 배치를 떠올리고 **잠시만 기다려 달라**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노엘의 기본기에는 평범한 허수아비로 부족하다며 어떻게 배치해도 노엘이 끝내면 아무것도 남지 않을 것이라 하고, 곧 배치를 떠올리고 **잠시만 기다려 달라**고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Noelle's Strength",
+       "quest_ko": "노엘의 힘",
+       "version": "1.4",
+       "speaker": "Ellin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Noelle's Strength",
+       "quest_ko": "노엘의 힘",
+       "version": "1.4",
+       "speaker": "Ellin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Noelle's Strength",
+       "quest_ko": "노엘의 힘",
+       "version": "1.4",
+       "speaker": "Ellin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Noelle's Strength",
+       "quest_ko": "노엘의 힘",
+       "version": "1.4",
+       "speaker": "Ellin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Noelle's Strength",
+       "quest_ko": "노엘의 힘",
+       "version": "1.4",
+       "speaker": "Ellin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Noelle's Strength",
+       "quest_ko": "노엘의 힘",
+       "version": "1.4",
+       "speaker": "Noelle"
+      }
+     ],
+     "heading": "작중 행적 — 몬드",
      "latin_left": []
     },
     {
      "section": "능력",
      "status": "accepted",
-     "note": "None. Jean’s superior swordplay, copying her technique, and failing after “Gale Blade” are stated; the admiration-versus-skill gap is hedged interpretation.",
-     "quote": "Gale Blade!...Oh, it seems I can't do it.",
+     "note": "Supported by A21-A24 and the A5 voiceline. The interpretation follows from them.",
+     "quote": "Oh... I'm copying Master Jean's technique.",
      "sentences": [
       {
-       "t_raw": "Ellin은 **Jean의 검술**을 떠올리며 자신의 검술은 Jean보다 한참 못하다고 말한다.",
+       "t_raw": "Ellin은 **Jean의 검술**을 흉내 내는 훈련을 한다.",
        "interp": false,
        "dropped": false,
-       "t": "엘린은 **진의 검술**을 떠올리며 자신의 검술은 진보다 한참 못하다고 말한다."
+       "t": "엘린은 **진의 검술**을 흉내 내는 훈련을 한다."
       },
       {
-       "t_raw": "검술을 묻자 Master Jean의 기술을 따라 하는 중이라고 답한다.",
+       "t_raw": "Jean이 검을 들 때마다 Grand Master의 솜씨가 느껴진다며, 그런 검술은 뛰어난 인격을 지닌 사람만 쓸 수 있다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "검술을 묻자 사범님 진의 기술을 따라 하는 중이라고 답한다."
+       "t": "진이 검을 들 때마다 대단장의 솜씨가 느껴진다며, 그런 검술은 뛰어난 인격을 지닌 사람만 쓸 수 있다고 말한다."
       },
       {
-       "t_raw": "그러나 **Gale Blade**를 외친 뒤에는 자신은 그렇게 할 수 없다고 인정한다.",
+       "t_raw": "또 힘 위주의 훈련만 해서는 안 되고 인격도 쌓아야겠다고 다짐한다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 **풍압검**을 외친 뒤에는 자신은 그렇게 할 수 없다고 인정한다."
+       "t": "또 힘 위주의 훈련만 해서는 안 되고 인격도 쌓아야겠다고 다짐한다."
       },
       {
-       "t_raw": "따라 하려는 마음과 달리 기술을 완성하지 못하는 데서 Jean에 대한 동경과 현재 실력의 간극이 드러난다고 볼 수 있다.",
+       "t_raw": "자신의 검술을 Jean과 비교하며 “Jean's sword fighting is so much better than this!”라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자신의 검술을 진과 비교하며 “진의 검술이 이보다 훨씬 낫다!”라고 말한다.",
+       "polish": {
+        "from": "자신의 검술을 진과 비교하며 “진의 sword fighting is so much better than this!”라고 말한다.",
+        "text": "자신의 검술을 진과 비교하며 “진의 검술이 이보다 훨씬 낫다!”라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이는 Jean의 검술을 따라 하면서도 그 수준에 미치지 못한다고 스스로 인정하는 태도로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "따라 하려는 마음과 달리 기술을 완성하지 못하는 데서 진에 대한 동경과 현재 실력의 간극이 드러난다고 볼 수 있다."
+       "t": "이는 진의 검술을 따라 하면서도 그 수준에 미치지 못한다고 스스로 인정하는 태도로 보인다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Idle Quotes",
-       "paragraph": "A4",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Ellin",
@@ -757,68 +618,6 @@
        "paragraph": "A5",
        "wiki_refs": []
       },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Idle Quotes",
-       "paragraph": "A6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Idle Quotes",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A20",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A21",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "능력",
-     "latin_left": []
-    },
-    {
-     "section": "능력",
-     "status": "accepted",
-     "note": "None. Grand Master skill, character as a requirement, and training character as well as power are stated; going beyond imitation is offered only as a possible reading.",
-     "quote": "It seems like I can't just focus on power training. I need to start building character, too!",
-     "sentences": [
-      {
-       "t_raw": "Ellin은 Jean이 검을 쥘 때마다 Grand Master의 솜씨임을 알 수 있다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "엘린은 진이 검을 쥘 때마다 대단장의 솜씨임을 알 수 있다고 말한다."
-      },
-      {
-       "t_raw": "그런 검술은 인품이 뛰어난 이라야 쓸 수 있다고 여겨, 힘을 기르는 훈련만으로는 부족하고 인품도 길러야겠다고 다짐한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그런 검술은 인품이 뛰어난 이라야 쓸 수 있다고 여겨, 힘을 기르는 훈련만으로는 부족하고 인품도 길러야겠다고 다짐한다."
-      },
-      {
-       "t_raw": "검술을 힘만이 아니라 인품의 문제로까지 받아들이는 태도에서 Jean의 기술을 흉내 내는 데 그치지 않으려는 해석이 가능하다.",
-       "interp": true,
-       "dropped": false,
-       "t": "검술을 힘만이 아니라 인품의 문제로까지 받아들이는 태도에서 진의 기술을 흉내 내는 데 그치지 않으려는 해석이 가능하다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Ellin",
@@ -858,47 +657,67 @@
     {
      "section": "능력",
      "status": "accepted",
-     "note": "All three sentences match the dummy lines: smashing them at once, normal dummies failing for Noelle’s basics, arranging them, then nothing left.",
+     "note": "Supported by A6, A7, Q12, Q5, Q8 and Q2. The interpretation is reasonable.",
      "quote": "Doesn't matter how we set them up, there'll be nothing left by the time Noelle's done with them.",
      "sentences": [
       {
-       "t_raw": "훈련용 허수아비를 두고 Ellin은 어떻게 하면 한 번에 모두 부숴 버릴 수 있을지 고민한다.",
+       "t_raw": "훈련 중에는 **Gale Blade**를 외치지만, 곧 “Gale Blade!...Oh, it seems I can't do it.”라고 말하며 스스로 못 한다고 인정한다.",
        "interp": false,
        "dropped": false,
-       "t": "훈련용 허수아비를 두고 엘린은 어떻게 하면 한 번에 모두 부숴 버릴 수 있을지 고민한다."
+       "t": "훈련 중에는 **풍압검**을 외치지만, 곧 “풍압검!...아, 안 될 것 같아.”라고 말하며 스스로 못 한다고 인정한다.",
+       "polish": {
+        "from": "훈련 중에는 **풍압검**을 외치지만, 곧 “풍압검!...Oh, it seems I can't do it.”라고 말하며 스스로 못 한다고 인정한다.",
+        "text": "훈련 중에는 **풍압검**을 외치지만, 곧 “풍압검!...아, 안 될 것 같아.”라고 말하며 스스로 못 한다고 인정한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "**Noelle의 기본기**를 상대하려 하자 평범한 허수아비로는 안 된다고 판단하고, 배치를 궁리한 끝에 무언가 떠올렸다며 잠깐 기다리라고 한다.",
+       "t_raw": "훈련용 허수아비를 한 번에 모두 부수려면 어떻게 해야 할지 고민한다.",
        "interp": false,
        "dropped": false,
-       "t": "**노엘의 기본기**를 상대하려 하자 평범한 허수아비로는 안 된다고 판단하고, 배치를 궁리한 끝에 무언가 떠올렸다며 잠깐 기다리라고 한다."
+       "t": "훈련용 허수아비를 한 번에 모두 부수려면 어떻게 해야 할지 고민한다."
       },
       {
-       "t_raw": "Noelle가 상대하면 어떻게 배치해도 허수아비가 남지 않을 것이라고 예상한다.",
+       "t_raw": "Noelle의 기본기 이야기가 나오자 보통 허수아비로는 부족하다고 판단하고, 허수아비를 어떻게 배치할지 궁리한다.",
        "interp": false,
        "dropped": false,
-       "t": "노엘이 상대하면 어떻게 배치해도 허수아비가 남지 않을 것이라고 예상한다."
+       "t": "노엘의 기본기 이야기가 나오자 보통 허수아비로는 부족하다고 판단하고, 허수아비를 어떻게 배치할지 궁리한다."
       },
       {
-       "t_raw": "평범한 허수아비로는 부족하다고 여기면서도 Noelle가 상대하면 흔적도 남지 않을 것이라 보는 태도에서 상대의 수준과 현재 준비의 차이를 의식하는 모습이 읽힌다고 볼 수 있다.",
+       "t_raw": "그리고 어떻게 세워 두든 Noelle이 끝낸 뒤에는 아무것도 남지 않을 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그리고 어떻게 세워 두든 노엘이 끝낸 뒤에는 아무것도 남지 않을 것이라고 말한다."
+      },
+      {
+       "t_raw": "**Noelle의 힘**을 평범한 훈련용 허수아비의 수준과 나란히 두지 않는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "평범한 허수아비로는 부족하다고 여기면서도 노엘이 상대하면 흔적도 남지 않을 것이라 보는 태도에서 상대의 수준과 현재 준비의 차이를 의식하는 모습이 읽힌다고 볼 수 있다."
+       "t": "**노엘의 힘**을 평범한 훈련용 허수아비의 수준과 나란히 두지 않는 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Idle Quotes",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Idle Quotes",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
       {
        "kind": "quest",
        "quest": "A Child's Secret",
        "quest_ko": "동심의 비밀",
        "version": "1.0",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
        "speaker": "Ellin"
       },
       {
@@ -929,26 +748,109 @@
     {
      "section": "인간관계",
      "status": "accepted",
-     "note": "Knightly goal, Jean’s technique, flowers and a return gift, and Herman’s doubted past plus refusing mentorship and vowing to outdo him are all in the English.",
-     "quote": "I wanna offer some flowers to the Acting Grand Master of the Knights of Favonius, Jean.",
+     "note": "Supported by A3, A12, A13, A16, A17, Q1, Q7 and Q13. The interpretation is reasonable.",
+     "quote": "Sorry, once I get talking about Master Jean, I get a bit excited...",
      "sentences": [
       {
-       "t_raw": "Ellin은 기사가 되어 **Jean과 함께 싸우고 싶어** 하며, Jean의 검술을 따라 하며 훈련한다.",
+       "t_raw": "Ellin은 Jean의 검술을 따라 하며 훈련하고, 자신도 Knights of Favonius가 되어 **Jean과 함께 싸우고 싶어 한다**.",
        "interp": false,
        "dropped": false,
-       "t": "엘린은 기사가 되어 **진과 함께 싸우고 싶어** 하며, 진의 검술을 따라 하며 훈련한다."
+       "t": "엘린은 진의 검술을 따라 하며 훈련하고, 자신도 페보니우스 기사단이 되어 **진과 함께 싸우고 싶어 한다**."
       },
       {
-       "t_raw": "Jean에게 꽃을 바치고 싶어 하면서도 Jean이 자기 이름을 보면 답례가 올까 걱정한다.",
+       "t_raw": "Jean이 Mondstadt를 지켜 줄 것이라 믿고, Jean이 Traveler의 도움이 컸다고 말해도 겸손이라 여겨 Jean의 몫이 컸을 것이라고 생각한다.",
        "interp": false,
        "dropped": false,
-       "t": "진에게 꽃을 바치고 싶어 하면서도 진이 자기 이름을 보면 답례가 올까 걱정한다."
+       "t": "진이 몬드를 지켜 줄 것이라 믿고, 진이 여행자의 도움이 컸다고 말해도 겸손이라 여겨 진의 몫이 컸을 것이라고 생각한다."
       },
       {
-       "t_raw": "Herman은 딸을 걱정하지만 Ellin은 그의 모험가 시절을 믿지 않고 가르침을 거절하며 그보다 뛰어나겠다고 말한다.",
+       "t_raw": "Stormterror를 함께 무찌르고 시상식에서 Jean이 미소 지어 주기를 상상할 만큼, **Jean에 대한 존경**은 입단과 훈련의 동기와 맞물려 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "풍마룡을 함께 무찌르고 시상식에서 진이 미소 지어 주기를 상상할 만큼, **진에 대한 존경**은 입단과 훈련의 동기와 맞물려 있는 셈이다."
+      },
+      {
+       "t_raw": "Jean에게 꽃을 바치려 하면서도 Jean이 이름을 보고 답례 선물을 보낼까 걱정하고, Jean 이야기가 나오면 흥분을 감추지 못한다.",
        "interp": false,
        "dropped": false,
-       "t": "허먼은 딸을 걱정하지만 엘린은 그의 모험가 시절을 믿지 않고 가르침을 거절하며 그보다 뛰어나겠다고 말한다."
+       "t": "진에게 꽃을 바치려 하면서도 진이 이름을 보고 답례 선물을 보낼까 걱정하고, 진 이야기가 나오면 흥분을 감추지 못한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Dialogue",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Ode to Flower and Cloud",
+       "quest_ko": "꽃과 구름의 시",
+       "version": "1.4",
+       "speaker": "Ellin"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences supported by A3 and Q19.",
+     "quote": "Ellin looks busy with her training, some other time perhaps...",
+     "sentences": [
+      {
+       "t_raw": "Herman은 한때 이름난 모험가였지만 Ellin이 태어나기 전에 은퇴했기에, Ellin은 그가 모험가였음을 믿지 않고 그의 가르침도 거절했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "허먼은 한때 이름난 모험가였지만 엘린이 태어나기 전에 은퇴했기에, 엘린은 그가 모험가였음을 믿지 않고 그의 가르침도 거절했다."
+      },
+      {
+       "t_raw": "그래도 Herman은 Ellin을 걱정하며 The Limitations of an Adventurer에서 Traveler에게 Ellin이 훈련할 허수아비를 가져와 달라고 부탁하고, Ellin이 훈련으로 바쁘다며 다음 기회로 미룬다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 허먼은 엘린을 걱정하며 The Limitations of an 모험가에서 여행자에게 엘린이 훈련할 허수아비를 가져와 달라고 부탁하고, 엘린이 훈련으로 바쁘다며 다음 기회로 미룬다."
+      },
+      {
+       "t_raw": "딸을 걱정하는 마음과, 딸이 받아 주지 않은 가르침 사이의 거리가 함께 드러나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "딸을 걱정하는 마음과, 딸이 받아 주지 않은 가르침 사이의 거리가 함께 드러나는 셈이다."
       }
      ],
      "sources": [
@@ -962,6 +864,45 @@
       },
       {
        "kind": "quest",
+       "quest": "A Very Special Beverage",
+       "quest_ko": "색다른 음료",
+       "version": "1.4",
+       "speaker": "Herman"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "The Limitations of"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported by Q23, Q25, Q26, Q28 and Q13.",
+     "quote": "Seems Ellin reeeally looks up to Jean.",
+     "sentences": [
+      {
+       "t_raw": "Herman은 Barbara에게 Ellin이 Barbara의 가장 큰 팬이라며 사인을 부탁한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "허먼은 바바라에게 엘린이 바바라의 가장 큰 팬이라며 사인을 부탁한다."
+      },
+      {
+       "t_raw": "Paimon은 Master Jean이 Ellin의 상상 속 친구인지 묻고, Ellin이 Jean을 정말 많이 존경한다는 인상을 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 사범님 진이 엘린의 상상 속 친구인지 묻고, 엘린이 진을 정말 많이 존경한다는 인상을 받는다."
+      },
+      {
+       "t_raw": "Jean 이야기에 흥분하는 Ellin의 태도와 겹쳐, Jean을 향한 마음이 주변 인물에게도 또렷하게 읽히는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "진 이야기에 흥분하는 엘린의 태도와 겹쳐, 진을 향한 마음이 주변 인물에게도 또렷하게 읽히는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
        "quest": "Ode to Flower and Cloud",
        "quest_ko": "꽃과 구름의 시",
        "version": "1.4",
@@ -969,142 +910,120 @@
       },
       {
        "kind": "quest",
-       "quest": "Ode to Flower and Cloud",
-       "quest_ko": "꽃과 구름의 시",
+       "quest": "A Very Special Beverage",
+       "quest_ko": "색다른 음료",
        "version": "1.4",
-       "speaker": "Ellin"
+       "speaker": "Herman"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Very Special Beverage",
+       "quest_ko": "색다른 음료",
+       "version": "1.4",
+       "speaker": "Herman"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Very Special Beverage",
+       "quest_ko": "색다른 음료",
+       "version": "1.4",
+       "speaker": "Herman"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A1, A8, A36; interpretation is reasonable.",
+     "quote": "Oh it's no problem. I'm going to carry on with sword practice now, so keep your distance.",
+     "sentences": [
+      {
+       "t_raw": "Ellin은 Knights of Favonius 본부 뒤에서 만날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "엘린은 페보니우스 기사단 본부 뒤에서 만날 수 있다."
+      },
+      {
+       "t_raw": "대화를 걸면 그녀는 볼일이 있냐고 묻고는 땀범벅인 상태를 미안해하며, 계속 검술 연습을 할 테니 **거리를 두라**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대화를 걸면 그녀는 볼일이 있냐고 묻고는 땀범벅인 상태를 미안해하며, 계속 검술 연습을 할 테니 **거리를 두라**고 말한다."
+      },
+      {
+       "t_raw": "땀범벅인 모습과 검술 연습을 이어 가겠다는 말, 거리를 두라는 당부가 겹치면서 훈련에 대한 몰입과 사적인 경계가 함께 드러난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "땀범벅인 모습과 검술 연습을 이어 가겠다는 말, 거리를 두라는 당부가 겹치면서 훈련에 대한 몰입과 사적인 경계가 함께 드러난다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Ellin",
        "revision": 361973,
        "section": "Dialogue",
-       "paragraph": "A30",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Dialogue",
+       "paragraph": "A36",
        "wiki_refs": []
       }
      ],
-     "heading": "인간관계",
+     "heading": "여담",
      "latin_left": []
     },
     {
-     "section": "인간관계",
+     "section": "여담",
      "status": "accepted",
-     "note": "Asking if Noelle came to train, dummy setup, leftover-nothing line, and reading that as training planned around her strength all follow.",
-     "quote": "Oh, Noelle's basic skills, huh? Then the normal dummies won't do...",
+     "note": "Supported by A2, A32-A34; interpretation is reasonable.",
+     "quote": "Thank you. I will definitely make it, just like the Dawn Knight from Ballads of the Squire...",
      "sentences": [
       {
-       "t_raw": "Ellin은 Noelle에게 훈련하러 왔는지 묻고, **Noelle의 훈련**을 위해 허수아비 배치를 고민한다.",
+       "t_raw": "성공을 바라면 Ellin은 고맙다며 Ballads of the Squire에 나오는 Dawn Knight처럼 꼭 해내겠다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "엘린은 노엘에게 훈련하러 왔는지 묻고, **노엘의 훈련**을 위해 허수아비 배치를 고민한다."
+       "t": "성공을 바라면 엘린은 고맙다며 시종 기사의 노래에 나오는 여명 기사처럼 꼭 해내겠다고 말한다."
       },
       {
-       "t_raw": "Noelle의 기본기에는 보통 허수아비로 부족하고, Noelle가 상대하면 허수아비가 남지 않을 것이라고 말한다.",
+       "t_raw": "그녀는 이 책을 여러 번 읽었고 시간이 있으면 꼭 읽어 보라고 권하며, 특정 대화 경로를 처음 따라가면 **Ballads of the Squire (I)**을 얻는다.",
        "interp": false,
        "dropped": false,
-       "t": "노엘의 기본기에는 보통 허수아비로 부족하고, 노엘이 상대하면 허수아비가 남지 않을 것이라고 말한다."
+       "t": "그녀는 이 책을 여러 번 읽었고 시간이 있으면 꼭 읽어 보라고 권하며, 특정 대화 경로를 처음 따라가면 **시종 기사의 노래 (I)**을 얻는다."
       },
       {
-       "t_raw": "이는 Noelle의 힘을 전제로 훈련을 준비하는 태도로 보인다.",
+       "t_raw": "Dawn Knight를 자신의 다짐에 끌어오는 말과 그 책을 여러 번 읽고 권하는 모습이 한 대화에서 함께 나타난다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "이는 노엘의 힘을 전제로 훈련을 준비하는 태도로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Noelle's Strength",
-       "quest_ko": "노엘의 힘",
-       "version": "1.4",
-       "speaker": "Ellin"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "trimmed",
-     "note": "Sentence 2 treats relaying fandom while delaying a meeting as distance with Herman. The lines only show him asking Barbara for an autograph because Ellin is her biggest fan, and leaving Ellin to train for another time.",
-     "quote": "Barbara-sama, can I get an autograph? Ellin would be so happy, she's your biggest fan!",
-     "sentences": [
-      {
-       "t_raw": "Herman은 Barbara에게 Ellin이 가장 큰 팬이라며 기뻐할 사인을 부탁한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "허먼은 바바라에게 엘린이 가장 큰 팬이라며 기뻐할 사인을 부탁한다."
-      },
-      {
-       "t_raw": "Herman은 Ellin이 훈련으로 바쁘다며 다른 때를 기약한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "허먼은 엘린이 훈련으로 바쁘다며 다른 때를 기약한다."
-      },
-      {
-       "t_raw": "팬심을 대신 전하면서도 만남은 미루는 태도가 **Herman과의 거리**로 보인다.",
-       "interp": true,
-       "dropped": true,
-       "t": "팬심을 대신 전하면서도 만남은 미루는 태도가 **허먼과의 거리**로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "A Very Special Beverage",
-       "quest_ko": "색다른 음료",
-       "version": "1.4",
-       "speaker": "Herman"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Very Special Beverage",
-       "quest_ko": "색다른 음료",
-       "version": "1.4",
-       "speaker": "Herman"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "accepted",
-     "note": "First-time dialogue reward, rereading and recommending the book, and becoming like the Dawn Knight are stated.",
-     "quote": "Have you read this book? I've finished it so many times! If you've got the time, you should definitely give it a read.",
-     "sentences": [
-      {
-       "t_raw": "특정 대화 경로를 처음 거치면 Ballads of the Squire (I)를 얻을 수 있고, Ellin은 이 책을 여러 번 읽으며 꼭 읽어 보라고 권한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "특정 대화 경로를 처음 거치면 시종 기사의 노래 (I)를 얻을 수 있고, 엘린은 이 책을 여러 번 읽으며 꼭 읽어 보라고 권한다."
-      },
-      {
-       "t_raw": "그녀는 자신도 꼭 해낼 것이라며 Ballads of the Squire의 **Dawn Knight**처럼 될 것이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 자신도 꼭 해낼 것이라며 시종 기사의 노래의 **여명 기사**처럼 될 것이라고 말한다."
+       "t": "여명 기사를 자신의 다짐에 끌어오는 말과 그 책을 여러 번 읽고 권하는 모습이 한 대화에서 함께 나타난다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -1114,6 +1033,14 @@
        "revision": 361973,
        "section": null,
        "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ellin",
+       "revision": 361973,
+       "section": "Dialogue",
+       "paragraph": "A31",
        "wiki_refs": []
       },
       {
@@ -1141,243 +1068,38 @@
        "wiki_refs": []
       }
      ],
-     "heading": "떡밥과 수수께끼",
+     "heading": "여담",
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼",
+     "section": "여담",
      "status": "accepted",
-     "note": "Retirement before her birth, disbelief, declined mentoring, “feckless father,” and outdoing him are stated; calling that past unconfirmed for Ellin stays inside her disbelief.",
-     "quote": "...Whoops, I'm getting ahead of myself! Anyway, watch this space 'cause I'm gonna outdo my feckless father by a long way, that's for sure!",
+     "note": "Supported by Q9, Q15, Q21, Q22, Q26.",
+     "quote": "You bet. Today, I heard Stanley talking about his adventures. It was incredible! It got me really pumped up.",
      "sentences": [
       {
-       "t_raw": "Ellin의 아버지 Herman은 한때 이름난 adventurer였지만 Ellin이 태어나기 전에 은퇴했고, Ellin은 그가 adventurer였음을 믿지 않고 가르침도 사양한 채 그를 **feckless father**라 부르며 뛰어넘겠다고 말한다.",
+       "t_raw": "Ellin은 Stanley가 자신의 모험을 이야기하는 것을 듣고 정말 굉장했다며 의욕이 생겼다고 말하고, 언젠가 그처럼 뛰어난 사람이 되고 싶어 한다.",
        "interp": false,
        "dropped": false,
-       "t": "엘린의 아버지 허먼은 한때 이름난 모험가였지만 엘린이 태어나기 전에 은퇴했고, 엘린은 그가 모험가였음을 믿지 않고 가르침도 사양한 채 그를 **무능한 아버지**라 부르며 뛰어넘겠다고 말한다.",
-       "polish": {
-        "from": "엘린의 아버지 허먼은 한때 이름난 adventurer였지만 엘린이 태어나기 전에 은퇴했고, 엘린은 그가 adventurer였음을 믿지 않고 가르침도 사양한 채 그를 **feckless father**라 부르며 뛰어넘겠다고 말한다.",
-        "text": "엘린의 아버지 허먼은 한때 이름난 모험가였지만 엘린이 태어나기 전에 은퇴했고, 엘린은 그가 모험가였음을 믿지 않고 가르침도 사양한 채 그를 **무능한 아버지**라 부르며 뛰어넘겠다고 말한다.",
-        "by": "or-ds"
-       }
+       "t": "엘린은 스탠리가 자신의 모험을 이야기하는 것을 듣고 정말 굉장했다며 의욕이 생겼다고 말하고, 언젠가 그처럼 뛰어난 사람이 되고 싶어 한다."
       },
       {
-       "t_raw": "아버지의 과거를 믿지 않으면서도 그를 넘어서겠다고 말하는 데서 Herman의 과거는 Ellin에게 확인되지 않은 이야기로 남아 있는 셈이다.",
+       "t_raw": "Paimon은 Ellin의 **상상 속 친구**를 볼 수 없는 상황을 무섭다고 느끼고, Master Jean이 Ellin의 상상 속 친구인지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 엘린의 **상상 속 친구**를 볼 수 없는 상황을 무섭다고 느끼고, 사범님 진이 엘린의 상상 속 친구인지 묻는다."
+      },
+      {
+       "t_raw": "Venti가 여러 이름을 나열하는 대사에는 Ellin의 이름도 들어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티가 여러 이름을 나열하는 대사에는 엘린의 이름도 들어 있다."
+      },
+      {
+       "t_raw": "Stanley의 모험담, Paimon의 질문, Venti의 이름 나열 속에 Ellin의 이름과 관계가 소소하게 드러나는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "아버지의 과거를 믿지 않으면서도 그를 넘어서겠다고 말하는 데서 허먼의 과거는 엘린에게 확인되지 않은 이야기로 남아 있는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Profile",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A30",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Seems Ellin reeeally looks up to Jean.",
-     "sentences": [
-      {
-       "t_raw": "A Child's Secret에서 Paimon은 Master Jean이 Ellin의 **imaginary friend**인지 묻고, Ellin이 Jean을 정말 많이 동경한다는 인상을 남긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "동심의 비밀에서 페이몬은 사범님 진이 엘린의 **imaginary friend**인지 묻고, 엘린이 진을 정말 많이 동경한다는 인상을 남긴다."
-      },
-      {
-       "t_raw": "Paimon은 Ellin의 상상 속 친구를 볼 수 없다는 생각을 무섭다고도 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 엘린의 상상 속 친구를 볼 수 없다는 생각을 무섭다고도 한다."
-      },
-      {
-       "t_raw": "Jean에 대한 Ellin의 동경이 imaginary friend라는 질문으로까지 이어질 만큼 두드러진다는 점은 두 사람의 관계를 둘러싼 여지를 남긴다.",
-       "interp": true,
-       "dropped": false,
-       "t": "진에 대한 엘린의 동경이 imaginary friend라는 질문으로까지 이어질 만큼 두드러진다는 점은 두 사람의 관계를 둘러싼 여지를 남긴다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "A Child's Secret",
-       "quest_ko": "동심의 비밀",
-       "version": "1.0",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Child's Secret",
-       "quest_ko": "동심의 비밀",
-       "version": "1.0",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Child's Secret",
-       "quest_ko": "동심의 비밀",
-       "version": "1.0",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Oh it's no problem. I'm going to carry on with sword practice now, so keep your distance.",
-     "sentences": [
-      {
-       "t_raw": "훈련 중 Ellin에게 말을 걸면 Ellin은 볼일이 있느냐고 묻고는 땀에 젖은 모습을 사과한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "훈련 중 엘린에게 말을 걸면 엘린은 볼일이 있느냐고 묻고는 땀에 젖은 모습을 사과한다."
-      },
-      {
-       "t_raw": "상대가 실례했다고 사과하자 괜찮다며 **검술 연습을 이어 가겠다**고 말하고, 가까이 있지 말라고 덧붙인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "상대가 실례했다고 사과하자 괜찮다며 **검술 연습을 이어 가겠다**고 말하고, 가까이 있지 말라고 덧붙인다."
-      },
-      {
-       "t_raw": "훈련 중에는 안부를 건네며 상대가 무엇을 하는지 묻기도 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "훈련 중에는 안부를 건네며 상대가 무엇을 하는지 묻기도 한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A35",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A36",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Child's Secret",
-       "quest_ko": "동심의 비밀",
-       "version": "1.0",
-       "speaker": "Ellin"
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Yay, woohoo! My training must really be working after all.",
-     "sentences": [
-      {
-       "t_raw": "자신의 실력에 대한 물음과 반응이 이어지면서 Ellin의 감정은 **놀람과 기쁨** 사이를 오가는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "자신의 실력에 대한 물음과 반응이 이어지면서 엘린의 감정은 **놀람과 기쁨** 사이를 오가는 셈이다."
-      },
-      {
-       "t_raw": "자신이 정말 그럴 실력이 있느냐고 되묻고, 이어 훈련이 정말 효과를 내고 있다며 기뻐한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자신이 정말 그럴 실력이 있느냐고 되묻고, 이어 훈련이 정말 효과를 내고 있다며 기뻐한다."
-      },
-      {
-       "t_raw": "대화 중에는 성공하기를 바란다는 말이 오간다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대화 중에는 성공하기를 바란다는 말이 오간다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A26",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A27",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ellin",
-       "revision": 361973,
-       "section": "Dialogue",
-       "paragraph": "A31",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ellin, Ellin, she's our girl! If she can't do it... um, hilichurl!",
-     "sentences": [
-      {
-       "t_raw": "훈련 중 Ellin은 안부를 묻고, Honorary Knight와 어울리는 일은 흔치 않다며 함께하자고 청한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "훈련 중 엘린은 안부를 묻고, 명예 기사와 어울리는 일은 흔치 않다며 함께하자고 청한다."
-      },
-      {
-       "t_raw": "오늘 Stanley의 모험담을 들었다며 굉장했고 의욕이 올랐다고 말하며, 훈련용 허수아비를 어떻게 하면 한 번에 다 부술 수 있을지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오늘 스탠리의 모험담을 들었다며 굉장했고 의욕이 올랐다고 말하며, 훈련용 허수아비를 어떻게 하면 한 번에 다 부술 수 있을지 묻는다."
-      },
-      {
-       "t_raw": "Paimon은 'Ellin, Ellin, 우리의 소녀! Ellin이 그걸 못 한다면... 음, hilichurl!'이라는 말을 하고, Ellin의 상상 속 친구를 볼 수 없다는 생각에는 무섭다고 반응한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 '엘린, 엘린, 우리의 소녀! 엘린이 그걸 못 한다면... 음, hilichurl!'이라는 말을 하고, 엘린의 상상 속 친구를 볼 수 없다는 생각에는 무섭다고 반응한다."
+       "t": "스탠리의 모험담, 페이몬의 질문, 벤티의 이름 나열 속에 엘린의 이름과 관계가 소소하게 드러나는 셈이다."
       }
      ],
      "sources": [
@@ -1397,17 +1119,10 @@
       },
       {
        "kind": "quest",
-       "quest": "A Child's Secret",
-       "quest_ko": "동심의 비밀",
-       "version": "1.0",
-       "speaker": "Ellin"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Child's Secret",
-       "quest_ko": "동심의 비밀",
-       "version": "1.0",
-       "speaker": "Ellin"
+       "quest": "Ode to Flower and Cloud",
+       "quest_ko": "꽃과 구름의 시",
+       "version": "1.4",
+       "speaker": "Venti"
       },
       {
        "kind": "quest",
@@ -1431,9 +1146,9 @@
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "저—저, 그러니까 당연히 기사가 되고 싶어요! ...그리고 Jean과 직접 모험을 떠날 수 있다면... 그럼 더 좋죠!",
+     "status": "accepted",
+     "note": "Faithful translation of Q3.",
+     "t_raw": "저— 저 말이죠, 당연히 기사가 되고 싶어요! ...그리고 Jean 본인과 함께 모험을 떠날 수 있다면... 뭐, 그건 더 좋겠죠!",
      "en": "I—I mean, obviously I want to become a knight! ...And if I got to go on an adventure with Jean herself... Well, even better!",
      "speaker": "Ellin",
      "source": {
@@ -1443,14 +1158,14 @@
       "version": "1.0",
       "speaker": "Ellin"
      },
-     "t": "저—저, 그러니까 당연히 기사가 되고 싶어요! ...그리고 진과 직접 모험을 떠날 수 있다면... 그럼 더 좋죠!",
+     "t": "저— 저 말이죠, 당연히 기사가 되고 싶어요! ...그리고 진 본인과 함께 모험을 떠날 수 있다면... 뭐, 그건 더 좋겠죠!",
      "speaker_ko": "엘린"
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "나—내 말은, 당연히 기사가 되고 싶어! ...그리고 Jean과 직접 모험을 떠날 수 있다면... 그럼 더 좋지!",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "나— 그러니까, 당연히 기사가 되고 싶어! ...그리고 Jean 본인과 모험을 떠날 수 있다면... 그야 더 좋지!",
      "en": "I—I mean, obviously I want to become a knight! ...And if I got to go on an adventure with Jean herself... Well, even better!",
      "speaker": "Ellin",
      "source": {
@@ -1460,48 +1175,48 @@
       "version": "1.0",
       "speaker": "Ellin"
      },
-     "t": "나—내 말은, 당연히 기사가 되고 싶어! ...그리고 진과 직접 모험을 떠날 수 있다면... 그럼 더 좋지!",
+     "t": "나— 그러니까, 당연히 기사가 되고 싶어! ...그리고 진 본인과 모험을 떠날 수 있다면... 그야 더 좋지!",
      "speaker_ko": "엘린"
     },
     {
-     "section": "작중 행적 — 부탁과 훈련",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아, Noelle의 기본기라면? 그럼 평범한 허수아비로는 안 되겠네...",
-     "en": "Oh, Noelle's basic skills, huh? Then the normal dummies won't do...",
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "Knights of Favonius의 Acting Grand Master, Jean에게 꽃을 좀 바치고 싶어요.",
+     "en": "I wanna offer some flowers to the Acting Grand Master of the Knights of Favonius, Jean.",
      "speaker": "Ellin",
      "source": {
       "kind": "quest",
-      "quest": "Noelle's Strength",
-      "quest_ko": "노엘의 힘",
+      "quest": "Ode to Flower and Cloud",
+      "quest_ko": "꽃과 구름의 시",
       "version": "1.4",
       "speaker": "Ellin"
      },
-     "t": "아, 노엘의 기본기라면? 그럼 평범한 허수아비로는 안 되겠네...",
+     "t": "페보니우스 기사단의 대리 단장, 진에게 꽃을 좀 바치고 싶어요.",
      "speaker_ko": "엘린"
     },
     {
      "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아, Noelle의 기본기라면? 그럼 평범한 허수아비로는 안 되겠는데...",
-     "en": "Oh, Noelle's basic skills, huh? Then the normal dummies won't do...",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "이 훈련용 허수아비들을 어떻게 한 번에 다 부술 수 있지?",
+     "en": "How can I smash all these training dummies at once?",
      "speaker": "Ellin",
      "source": {
       "kind": "quest",
-      "quest": "Noelle's Strength",
-      "quest_ko": "노엘의 힘",
-      "version": "1.4",
+      "quest": "A Child's Secret",
+      "quest_ko": "동심의 비밀",
+      "version": "1.0",
       "speaker": "Ellin"
      },
-     "t": "아, 노엘의 기본기라면? 그럼 평범한 허수아비로는 안 되겠는데...",
+     "t": "이 훈련용 허수아비들을 어떻게 한 번에 다 부술 수 있지?",
      "speaker_ko": "엘린"
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Ellin이 Jean을 정말 많이 따르는 것 같네.",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "Ellin이 Jean을 정말 많이 존경하는 것 같아.",
      "en": "Seems Ellin reeeally looks up to Jean.",
      "speaker": "Paimon",
      "source": {
@@ -1511,42 +1226,25 @@
       "version": "1.0",
       "speaker": "Paimon"
      },
-     "t": "엘린이 진을 정말 많이 따르는 것 같네.",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Master Jean이 Ellin의 상상 속 친구인가?",
-     "en": "Is Master Jean Ellin's imaginary friend?",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "A Child's Secret",
-      "quest_ko": "동심의 비밀",
-      "version": "1.0",
-      "speaker": "Paimon"
-     },
-     "t": "사범님 진이 엘린의 상상 속 친구인가?",
+     "t": "엘린이 진을 정말 많이 존경하는 것 같아.",
      "speaker_ko": "페이몬"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Ellin, Ellin, 우리의 소녀! Ellin이 그걸 못 한다면... 음, hilichurl!",
-     "en": "Ellin, Ellin, she's our girl! If she can't do it... um, hilichurl!",
-     "speaker": "Paimon",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "그럼. 오늘 Stanley가 자기 모험 이야기를 하는 걸 들었어. 정말 굉장했어! 엄청 의욕이 생겼어.",
+     "en": "You bet. Today, I heard Stanley talking about his adventures. It was incredible! It got me really pumped up.",
+     "speaker": "Ellin",
      "source": {
       "kind": "quest",
       "quest": "A Child's Secret",
       "quest_ko": "동심의 비밀",
       "version": "1.0",
-      "speaker": "Paimon"
+      "speaker": "Ellin"
      },
-     "t": "엘린, 엘린, 우리의 소녀! 엘린이 그걸 못 한다면... 음, hilichurl!",
-     "speaker_ko": "페이몬"
+     "t": "그럼. 오늘 스탠리가 자기 모험 이야기를 하는 걸 들었어. 정말 굉장했어! 엄청 의욕이 생겼어.",
+     "speaker_ko": "엘린"
     }
    ]
   }

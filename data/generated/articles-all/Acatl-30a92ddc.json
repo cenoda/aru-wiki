@@ -20,41 +20,35 @@
    "input_chars": 2981,
    "input_cut": false,
    "input_hash": "abf04c87d491",
-   "writer": "or-ds",
-   "verifier": "codex-medium,grok",
-   "status": "needs_verify",
+   "writer": "kimi,or-ds,glm",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "trimmed",
-     "note": "A4 describes an audience blessing the Traveler and Pyro Archon as they descended into the Night Kingdom, not welcoming them.",
-     "quote": "No need to feel on edge. We're not too concerned with formalities here — all that matters is courage, perseverance, and the strength of will never to back down in the ring.",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "With us by your side, you'll never fight alone!",
      "sentences": [
       {
-       "t_raw": "Acatl은 **Collective of Plenty**에 있는 오픈 월드 NPC이자 현재 족장이다.",
+       "t_raw": "Acatl은 Natlan의 여섯 부족 중 하나인 **Collective of Plenty**의 현존 추장으로, 처음 만난 Traveler에게 자신을 그렇게 소개한다.",
        "interp": false,
        "dropped": false,
-       "t": "아카틀은 **비옥한 터전**에 있는 오픈 월드 NPC이자 현재 족장이다."
+       "t": "아카틀은 나타의 여섯 부족 중 하나인 **비옥한 터전**의 현존 추장으로, 처음 만난 여행자에게 자신을 그렇게 소개한다."
       },
       {
-       "t_raw": "Traveler가 다른 족장들과 달리 Collective of Plenty를 아직 방문하지 않아 그와 면식이 없던 시점도 있었지만, 그는 낯선 이에게도 격식보다 용기, 끈기, 링에서 물러서지 않으려는 의지의 힘을 앞세우는 태도를 보인다.",
+       "t_raw": "Abyss가 Natlan을 침공했을 때 그는 부족과 함께 침입자를 물리쳤고, Mavuika가 침공을 막은 뒤 **Stadium of the Sacred Flame**에 모여 Traveler와 Pyro Archon이 Night Kingdom으로 내려가는 것을 축복하는 관중이 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자가 다른 족장들과 달리 비옥한 터전을 아직 방문하지 않아 그와 면식이 없던 시점도 있었지만, 그는 낯선 이에게도 격식보다 용기, 끈기, 링에서 물러서지 않으려는 의지의 힘을 앞세우는 태도를 보인다."
+       "t": "심연이 나타를 침공했을 때 그는 부족과 함께 침입자를 물리쳤고, 마비카가 침공을 막은 뒤 **성화 경기장**에 모여 여행자와 불의 신이 밤의 신의 나라로 내려가는 것을 축복하는 관중이 되었다."
       },
       {
-       "t_raw": "Abyss가 Natlan을 침공했을 때 Acatl과 그의 부족은 침입자들을 격퇴했고, Mavuika가 침공을 격퇴한 뒤에는 Stadium of the Sacred Flame에서 Traveler와 Pyro Archon을 맞이하는 관중에 참여했다.",
-       "interp": false,
-       "dropped": true,
-       "t": "심연이 나타를 침공했을 때 아카틀과 그의 부족은 침입자들을 격퇴했고, 마비카가 침공을 격퇴한 뒤에는 성화 경기장에서 여행자와 불의 신을 맞이하는 관중에 참여했다."
-      },
-      {
-       "t_raw": "그가 가면을 쓴 채 링에서 자신을 의심하면 맞서 보라고 말하는 방식은, 족장의 권위를 말보다 **링에서의 실력**으로 세우는 태도로 읽힌다.",
+       "t_raw": "이처럼 전장에서 부족을 이끄는 추장이면서, 부족을 대표해 Traveler를 맞이하고 응원하는 환영의 주인공이기도 한 그의 모습은 Natlan의 핵심 인물 중 하나로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "그가 가면을 쓴 채 링에서 자신을 의심하면 맞서 보라고 말하는 방식은, 족장의 권위를 말보다 **링에서의 실력**으로 세우는 태도로 읽힌다."
+       "t": "이처럼 전장에서 부족을 이끄는 추장이면서, 부족을 대표해 여행자를 맞이하고 응원하는 환영의 주인공이기도 한 그의 모습은 나타의 핵심 인물 중 하나로 보인다."
       }
      ],
      "sources": [
@@ -77,14 +71,6 @@
        "revision": 1741826,
        "section": "Profile",
        "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A11",
        "wiki_refs": []
       },
       {
@@ -105,7 +91,7 @@
        "page": "Acatl",
        "revision": 1741826,
        "section": "Dialogue",
-       "paragraph": "A22",
+       "paragraph": "A10",
        "wiki_refs": []
       },
       {
@@ -113,38 +99,50 @@
        "page": "Acatl",
        "revision": 1741826,
        "section": "Dialogue",
-       "paragraph": "A23",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Collective of Plenty",
+       "revision": 1741089,
+       "section": null,
+       "paragraph": "M2",
        "wiki_refs": []
       }
      ],
      "heading": null,
-     "latin_left": [
-      "NPC"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
      "status": "accepted",
-     "note": "All sentences are supported.",
-     "quote": "He is the current chief of the Collective of Plenty.",
+     "note": "All sentences are supported by the English.",
+     "quote": "Judging by your expression, this must be your first time here, so welcome! I'm Acatl, chief of the Collective of Plenty.",
      "sentences": [
       {
-       "t_raw": "Acatl은 Collective of Plenty의 **현재 족장**이다.",
+       "t_raw": "Natlan의 여섯 부족 중 하나인 **Collective of Plenty**는 **Great Volcano of Tollan** 인근 Atocpan에 자리한 부족으로, 현존 추장은 Acatl이다.",
        "interp": false,
        "dropped": false,
-       "t": "아카틀은 비옥한 터전의 **현재 족장**이다."
+       "t": "나타의 여섯 부족 중 하나인 **비옥한 터전**은 **툴란 대화산** 인근 풍요의 들판에 자리한 부족으로, 현존 추장은 아카틀이다."
       },
       {
-       "t_raw": "Collective of Plenty는 Teteocan이라고도 불리며, Natlan의 여섯 부족 가운데 하나로 Atocpan의 Great Volcano of Tollan 옆에 자리한다.",
+       "t_raw": "Traveler는 다른 추장들과는 달리 이 부족을 아직 방문한 적 없어 Acatl과 낯선 사이였으며, Acatl은 \"멀리서 온 친구\"라고 인사하고 자신을 Collective of Plenty의 추장으로 소개했다.",
        "interp": false,
        "dropped": false,
-       "t": "비옥한 터전은 테테오칸이라고도 불리며, 나타의 여섯 부족 가운데 하나로 풍요의 들판의 툴란 대화산 옆에 자리한다."
+       "t": "여행자는 다른 추장들과는 달리 이 부족을 아직 방문한 적 없어 아카틀과 낯선 사이였으며, 아카틀은 \"멀리서 온 친구\"라고 인사하고 자신을 비옥한 터전의 추장으로 소개했다."
       },
       {
-       "t_raw": "그러므로 Acatl은 Teteocan이라는 별칭으로도 불리는 부족의 수장인 셈이다.",
+       "t_raw": "그는 처음 만난 이에게도 부족의 용감한 전사와 소중한 친구에게 바치는 존중을 표하며, 머무름이 즐거우시길 기원했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 처음 만난 이에게도 부족의 용감한 전사와 소중한 친구에게 바치는 존중을 표하며, 머무름이 즐거우시길 기원했다."
+      },
+      {
+       "t_raw": "낯선 방문객에게 정중한 환영을 건네는 동시에 추장으로서의 정체성을 드러낸 Acatl의 태도는, Collective of Plenty가 방문객에게 열려 있는 부족임을 보여 주는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "그러므로 아카틀은 테테오칸이라는 별칭으로도 불리는 부족의 수장인 셈이다."
+       "t": "낯선 방문객에게 정중한 환영을 건네는 동시에 추장으로서의 정체성을 드러낸 아카틀의 태도는, 비옥한 터전이 방문객에게 열려 있는 부족임을 보여 주는 셈이다."
       }
      ],
      "sources": [
@@ -165,40 +163,23 @@
        "kind": "wiki",
        "page": "Collective of Plenty",
        "revision": 1741089,
+       "section": "Overview",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "When All Becomes a Monument"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Collective of Plenty",
+       "revision": 1741089,
        "section": null,
        "paragraph": "M2",
        "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "disputed",
-     "note": "A10 identifies a first visit to the tribe, not a first meeting with Acatl. A4 describes an earlier interaction.",
-     "quote": "Acatl: Judging by your expression, this must be your first time here, so welcome! I'm Acatl, chief of the Collective of Plenty.",
-     "sentences": [
-      {
-       "t_raw": "Traveler는 다른 족장들과 달리 Collective of Plenty를 아직 방문하지 않았고, 그 시점에는 Acatl과 **면식이 없었다**.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자는 다른 족장들과 달리 비옥한 터전을 아직 방문하지 않았고, 그 시점에는 아카틀과 **면식이 없었다**."
       },
-      {
-       "t_raw": "Acatl은 처음 만난 Traveler의 표정을 보고 첫 방문임을 알아채며, 자신을 Collective of Plenty의 족장 Acatl이라고 소개한다.",
-       "interp": false,
-       "dropped": true,
-       "t": "아카틀은 처음 만난 여행자의 표정을 보고 첫 방문임을 알아채며, 자신을 비옥한 터전의 족장 아카틀이라고 소개한다."
-      },
-      {
-       "t_raw": "두 사람의 **첫 만남**은 Acatl이 낯선 Traveler를 손님으로 맞으며 자신을 밝히는 자리였던 셈이다.",
-       "interp": true,
-       "dropped": true,
-       "t": "두 사람의 **첫 만남**은 아카틀이 낯선 여행자를 손님으로 맞으며 자신을 밝히는 자리였던 셈이다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Acatl",
@@ -212,51 +193,7 @@
        "page": "Acatl",
        "revision": 1741826,
        "section": "Dialogue",
-       "paragraph": "A10",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "정체와 배경",
-     "status": "accepted",
-     "note": "All sentences are supported.",
-     "quote": "Uncle Acatl is our chief, by the way! Who better than the chief to introduce you to the tribe, right?",
-     "sentences": [
-      {
-       "t_raw": "Acatl은 Natlan의 여섯 부족 중 하나인 Collective of Plenty, 또는 Teteocan의 현재 족장이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 나타의 여섯 부족 중 하나인 비옥한 터전, 또는 테테오칸의 현재 족장이다."
-      },
-      {
-       "t_raw": "부족은 Great Volcano of Tollan 옆 Atocpan에 자리하며, Acatl은 방문객에게 자신을 Collective of Plenty의 족장이라고 소개한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "부족은 툴란 대화산 옆 풍요의 들판에 자리하며, 아카틀은 방문객에게 자신을 비옥한 터전의 족장이라고 소개한다."
-      },
-      {
-       "t_raw": "Varesa는 부족을 소개하는 데 족장보다 나은 사람이 어디 있겠냐고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바레사는 부족을 소개하는 데 족장보다 나은 사람이 어디 있겠냐고 말한다."
-      },
-      {
-       "t_raw": "이는 Acatl이 부족을 대표하는 자리임을 보여 주는 말로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 아카틀이 부족을 대표하는 자리임을 보여 주는 말로 읽힌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Collective of Plenty",
-       "revision": 1741089,
-       "section": null,
-       "paragraph": "M2",
+       "paragraph": "A9",
        "wiki_refs": []
       },
       {
@@ -266,13 +203,111 @@
        "section": "Dialogue",
        "paragraph": "A10",
        "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The English only has a greeting and a how-are-you question. Saying it shows Acatl goes 'beyond mere courtesy' and looks after the daily lives of tribe members and guests is stated as fact but is a guess the English does not support.",
+     "quote": "How's everything been going? Still as happy and well-fed as always?",
+     "sentences": [
+      {
+       "t_raw": "이후 다시 만난 Traveler를 향해 Acatl은 \"Collective of Plenty에 온 것을 환영한다\"고 말하며 안부를 물었고, 여전히 행복하고 잘 먹고 지내는지 물었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 다시 만난 여행자를 향해 아카틀은 \"비옥한 터전에 온 것을 환영한다\"고 말하며 안부를 물었고, 여전히 행복하고 잘 먹고 지내는지 물었다."
       },
       {
-       "kind": "quest",
-       "quest": "Orchard Repose",
-       "quest_ko": "과수원 나들이",
-       "version": "5.5",
-       "speaker": "Varesa"
+       "t_raw": "재회한 손님에게도 환영의 인사와 함께 근황을 물어 보는 Acatl의 모습은, 그가 손님을 반갑게 맞이하는 추장임을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "재회한 손님에게도 환영의 인사와 함께 근황을 물어 보는 아카틀의 모습은, 그가 손님을 반갑게 맞이하는 추장임을 보여 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "If it's something you believe in, just do it! That's our mindset here at the Collective of Plenty.",
+     "sentences": [
+      {
+       "t_raw": "Acatl은 Collective of Plenty의 현존 추장으로, 부족에서는 격식보다 **용기, 인내, 그리고 링에서 물러서지 않는 의지**를 중시한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아카틀은 비옥한 터전의 현존 추장으로, 부족에서는 격식보다 **용기, 인내, 그리고 링에서 물러서지 않는 의지**를 중시한다."
+      },
+      {
+       "t_raw": "그는 격식에 얽매이지 말라며, 자신이 믿는 일이라면 **'Just do it!'** 하고 밀어붙이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 격식에 얽매이지 말라며, 자신이 믿는 일이라면 **'그냥 해!'** 하고 밀어붙이라고 말한다.",
+       "polish": {
+        "from": "그는 격식에 얽매이지 말라며, 자신이 믿는 일이라면 **'Just do it!'** 하고 밀어붙이라고 말한다.",
+        "text": "그는 격식에 얽매이지 말라며, 자신이 믿는 일이라면 **'그냥 해!'** 하고 밀어붙이라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "부족의 가치는 추장의 소개말과 구호에서 함께 드러나, 격식보다 태도와 실천을 앞세우는 분위기로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "부족의 가치는 추장의 소개말과 구호에서 함께 드러나, 격식보다 태도와 실천을 앞세우는 분위기로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "When All Becomes a Monument"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
       }
      ],
      "heading": "정체와 배경",
@@ -281,32 +316,37 @@
     {
      "section": "정체와 배경",
      "status": "accepted",
-     "note": "All sentences are supported, including the interpretation of proving his identity in the ring.",
-     "quote": "It's a time-honored wrestling tradition. The loser must remove their mask, while the victor keeps theirs on, retaining a sense of mystery that inspires others to step up and challenge them.",
+     "note": "All sentences are supported by the English.",
+     "quote": "Words can deceive, writing can mislead, but muscles... never lie.",
      "sentences": [
       {
-       "t_raw": "Acatl이 쓰는 가면은 오랜 레슬링 전통과 이어지며, 진 쪽은 가면을 벗고 이긴 쪽은 **가면을 쓴 채** 신비감을 유지해 다른 이들의 도전을 불러일으킨다.",
+       "t_raw": "부족의 복면은 오랜 레슬링 전통에서 나온다.",
        "interp": false,
        "dropped": false,
-       "t": "아카틀이 쓰는 가면은 오랜 레슬링 전통과 이어지며, 진 쪽은 가면을 벗고 이긴 쪽은 **가면을 쓴 채** 신비감을 유지해 다른 이들의 도전을 불러일으킨다."
+       "t": "부족의 복면은 오랜 레슬링 전통에서 나온다."
       },
       {
-       "t_raw": "Acatl은 인간이든 사우리안이든 자신의 가면을 강제로 벗긴 적이 없다고 말한다.",
+       "t_raw": "패자는 복면을 벗고 승자는 복면을 쓴 채 신비감을 남겨 다른 이들의 도전을 부르며, Acatl은 인간이나 saurian과의 대결에서 자신의 복면을 강제로 벗긴 적이 한 번도 없다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아카틀은 인간이든 용이든 자신의 가면을 강제로 벗긴 적이 없다고 말한다."
+       "t": "패자는 복면을 벗고 승자는 복면을 쓴 채 신비감을 남겨 다른 이들의 도전을 부르며, 아카틀은 인간이나 사우리안과의 대결에서 자신의 복면을 강제로 벗긴 적이 한 번도 없다고 말한다.",
+       "polish": {
+        "from": "패자는 복면을 벗고 승자는 복면을 쓴 채 신비감을 남겨 다른 이들의 도전을 부르며, 아카틀은 인간이나 saurian과의 대결에서 자신의 복면을 강제로 벗긴 적이 한 번도 없다고 말한다.",
+        "text": "패자는 복면을 벗고 승자는 복면을 쓴 채 신비감을 남겨 다른 이들의 도전을 부르며, 아카틀은 인간이나 사우리안과의 대결에서 자신의 복면을 강제로 벗긴 적이 한 번도 없다고 말한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "젊은이들이 족장이 늘 가면을 쓰고 있으면 사칭인지 어떻게 알 수 있느냐고 묻자, Acatl은 의심되면 **링에서 맞서 보라**고 답한다.",
+       "t_raw": "복면 때문에 사칭자를 걱정할 수 있다는 물음에는 의심스러우면 링에서 맞서라고 답한다.",
        "interp": false,
        "dropped": false,
-       "t": "젊은이들이 족장이 늘 가면을 쓰고 있으면 사칭인지 어떻게 알 수 있느냐고 묻자, 아카틀은 의심되면 **링에서 맞서 보라**고 답한다."
+       "t": "복면 때문에 사칭자를 걱정할 수 있다는 물음에는 의심스러우면 링에서 맞서라고 답한다."
       },
       {
-       "t_raw": "말은 속일 수 있고 글은 오도할 수 있지만 근육은 거짓말하지 않는다는 말은, 정체를 링에서의 실력으로 증명하겠다는 태도로 읽힌다.",
+       "t_raw": "**말과 글은 속일 수 있어도 근육은 거짓말하지 않는다**는 신념으로, 그는 정체성마저 링 위에서 증명하려는 태도를 보여 주는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "말은 속일 수 있고 글은 오도할 수 있지만 근육은 거짓말하지 않는다는 말은, 정체를 링에서의 실력으로 증명하겠다는 태도로 읽힌다."
+       "t": "**말과 글은 속일 수 있어도 근육은 거짓말하지 않는다**는 신념으로, 그는 정체성마저 링 위에서 증명하려는 태도를 보여 주는 셈이다."
       }
      ],
      "sources": [
@@ -324,6 +364,14 @@
        "revision": 1741826,
        "section": "Dialogue",
        "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Dialogue",
+       "paragraph": "A24",
        "wiki_refs": []
       },
       {
@@ -355,242 +403,28 @@
      "latin_left": []
     },
     {
-     "section": "정체와 배경",
+     "section": "작중 행적 — 5.3 Night Kingdom의 결전",
      "status": "accepted",
-     "note": "The factual statements and interpretation are supported.",
-     "quote": "No need to feel on edge. We're not too concerned with formalities here — all that matters is courage, perseverance, and the strength of will never to back down in the ring.",
+     "note": "All sentences are supported by the English.",
+     "quote": "When the Abyss invaded Natlan, Acatl and his tribe were able to repel the invaders.",
      "sentences": [
       {
-       "t_raw": "Acatl은 **격식보다 용기와 인내**, 링에서 물러서지 않는 의지를 중시한다고 밝힌다.",
+       "t_raw": "Abyss가 Natlan을 침공했을 때 Acatl과 그의 부족은 침입자를 물리쳤다.",
        "interp": false,
        "dropped": false,
-       "t": "아카틀은 **격식보다 용기와 인내**, 링에서 물러서지 않는 의지를 중시한다고 밝힌다."
+       "t": "심연이 나타를 침공했을 때 아카틀과 그의 부족은 침입자를 물리쳤다."
       },
       {
-       "t_raw": "방문객에게 긴장할 필요가 없다며, 이곳에서는 용맹한 전사와 소중한 친구에게 마땅한 존중을 보인다고 말한다.",
+       "t_raw": "Mavuika가 침공을 격퇴한 뒤, Acatl은 **Stadium of the Sacred Flame**으로 향해 Traveler와 Pyro Archon이 **Night Kingdom**으로 내려갈 때 축복을 전하는 관중에 섰다.",
        "interp": false,
        "dropped": false,
-       "t": "방문객에게 긴장할 필요가 없다며, 이곳에서는 용맹한 전사와 소중한 친구에게 마땅한 존중을 보인다고 말한다."
+       "t": "마비카가 침공을 격퇴한 뒤, 아카틀은 **성화 경기장**으로 향해 여행자와 불의 신이 **밤의 신의 나라**로 내려갈 때 축복을 전하는 관중에 섰다."
       },
       {
-       "t_raw": "이는 부족의 환대가 격식보다 용기와 의지를 중심으로 한 태도 위에 서 있음을 보여 준다.",
+       "t_raw": "부족을 지킨 추장이 그곳으로 내려가는 이들을 관중으로서 배웅한 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이는 부족의 환대가 격식보다 용기와 의지를 중심으로 한 태도 위에 서 있음을 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A12",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "성격과 신념",
-     "status": "accepted",
-     "note": "All claims are supported, including sentence 3 by A7 in the full material.",
-     "quote": "Now that you're here, it's time to sit back and enjoy a bit of signature Collective of Plenty-style hospitality! C'mon, make yourself at home!",
-     "sentences": [
-      {
-       "t_raw": "Acatl은 멀리서 온 손님을 친구라 부르며 환영하고, 다시 만나면 반가움을 드러낸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 멀리서 온 손님을 친구라 부르며 환영하고, 다시 만나면 반가움을 드러낸다."
-      },
-      {
-       "t_raw": "안부를 물으며 잘 먹고 잘 지내는지 챙기고, Collective of Plenty식 대접을 즐기라며 **집처럼 편히 있으라**고 권한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "안부를 물으며 잘 먹고 잘 지내는지 챙기고, 비옥한 터전식 대접을 즐기라며 **집처럼 편히 있으라**고 권한다."
-      },
-      {
-       "t_raw": "손님은 사양하지 않고, Acatl은 Collective of Plenty식 근사한 식사의 힘을 보라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "손님은 사양하지 않고, 아카틀은 비옥한 터전식 근사한 식사의 힘을 보라고 말한다."
-      },
-      {
-       "t_raw": "무언가 믿는 일이 있으면 그냥 하라고 말하는 것이 Collective of Plenty의 방식이라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "무언가 믿는 일이 있으면 그냥 하라고 말하는 것이 비옥한 터전의 방식이라고 한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A9",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A14",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A15",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A16",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A17",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A19",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "성격과 신념",
-     "latin_left": []
-    },
-    {
-     "section": "성격과 신념",
-     "status": "accepted",
-     "note": "The factual claims are supported; the playful characterization is a reasonable interpretation.",
-     "quote": "Oh, about the competition... Usually, you have to pay for the food if you don't finish.",
-     "sentences": [
-      {
-       "t_raw": "Acatl은 먹어 보라며 맛을 묻고, 대회 음식은 보통 다 먹지 않으면 값을 내야 한다고 알린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 먹어 보라며 맛을 묻고, 대회 음식은 보통 다 먹지 않으면 값을 내야 한다고 알린다."
-      },
-      {
-       "t_raw": "그러면서도 두 사람이 온다는 소식을 듣고 Atolli와 의논해 비용을 면제해 주며, Natlan을 위해 많은 일을 했으니 **작은 감사의 표시**라 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러면서도 두 사람이 온다는 소식을 듣고 아톨리와 의논해 비용을 면제해 주며, 나타를 위해 많은 일을 했으니 **작은 감사의 표시**라 말한다."
-      },
-      {
-       "t_raw": "Atolli가 화덕을 준비하고 있으니 오래 걸리지 않는다고 Varesa에게 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아톨리가 화덕을 준비하고 있으니 오래 걸리지 않는다고 바레사에게 말한다."
-      },
-      {
-       "t_raw": "단체 저녁을 두고는 단체 얹혀살기라며 모두가 결국 자기 집에 온다고, 뻔뻔하다고 투덜댄다.",
-       "interp": false,
-       "dropped": false,
-       "t": "단체 저녁을 두고는 단체 얹혀살기라며 모두가 결국 자기 집에 온다고, 뻔뻔하다고 투덜댄다."
-      },
-      {
-       "t_raw": "이런 투덜거림은 호탕한 대접과 대비되어 Acatl의 장난스러운 면을 보여 주는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 투덜거림은 호탕한 대접과 대비되어 아카틀의 장난스러운 면을 보여 주는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Spell of Unity",
-       "quest_ko": "단결의 마법",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      }
-     ],
-     "heading": "성격과 신념",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Abyss 침공과 Night Kingdom",
-     "status": "accepted",
-     "note": "The events and Acatl's role as chief are supported; the send-off interpretation is reasonable.",
-     "quote": "Acatl and his tribe were able to repel the invaders.",
-     "sentences": [
-      {
-       "t_raw": "Abyss가 Natlan을 침공했을 때 Acatl과 그의 부족은 침입자들을 격퇴했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "심연이 나타를 침공했을 때 아카틀과 그의 부족은 침입자들을 격퇴했다."
-      },
-      {
-       "t_raw": "Mavuika가 침공을 격퇴한 뒤 Acatl은 **Stadium of the Sacred Flame**으로 가 Traveler와 Pyro Archon이 **Night Kingdom**으로 내려갈 때 축복을 전하는 관중의 일부가 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마비카가 침공을 격퇴한 뒤 아카틀은 **성화 경기장**으로 가 여행자와 불의 신이 **밤의 신의 나라**로 내려갈 때 축복을 전하는 관중의 일부가 되었다."
-      },
-      {
-       "t_raw": "침입자를 막아 낸 부족의 족장이 전장으로 향하는 이들을 관중석에서 배웅한 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "침입자를 막아 낸 부족의 족장이 전장으로 향하는 이들을 관중석에서 배웅한 셈이다."
+       "t": "부족을 지킨 추장이 그곳으로 내려가는 이들을 관중으로서 배웅한 셈이다."
       }
      ],
      "sources": [
@@ -608,43 +442,598 @@
        ]
       }
      ],
-     "heading": "작중 행적 — 심연 침공과 밤의 신의 나라",
+     "heading": "작중 행적 — 5.3 밤의 신의 나라의 결전",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Abyss 침공과 Night Kingdom",
+     "section": "작중 행적 — 5.3 Night Kingdom의 결전",
      "status": "accepted",
-     "note": "All factual claims are supported, and the interpretation reasonably connects them.",
+     "note": "All supported by A4 and Q6.",
      "quote": "Haha, that's right! Our tribe can't wait to meet you.",
      "sentences": [
       {
-       "t_raw": "공격이 시작되기 전 Traveler는 휴식 공간에서 Iansan과 이야기했고, Iansan은 전쟁이 끝나면 자신의 부족에 오라고 청했다.",
+       "t_raw": "전투가 시작되기 전 Traveler는 휴식 구역에서 Iansan과 대화했고, Iansan은 전쟁이 끝나면 자기 부족에 와 달라고 했다.",
        "interp": false,
        "dropped": false,
-       "t": "공격이 시작되기 전 여행자는 휴식 공간에서 얀사와 이야기했고, 얀사는 전쟁이 끝나면 자신의 부족에 오라고 청했다."
+       "t": "전투가 시작되기 전 여행자는 휴식 구역에서 얀사와 대화했고, 얀사는 전쟁이 끝나면 자기 부족에 와 달라고 했다."
       },
       {
-       "t_raw": "Acatl은 그 부족이 Traveler를 직접 만나고 싶어 한다고 전했으며, \"With us by your side, you'll never fight alone!\"라고 말했다.",
+       "t_raw": "Acatl은 부족이 Traveler를 직접 만나기를 기다린다고 전했다.",
        "interp": false,
        "dropped": false,
-       "t": "아카틀은 그 부족이 여행자를 직접 만나고 싶어 한다고 전했으며, \"우리가 네 곁에 있으니, 너는 결코 혼자 싸우지 않을 거야!\"라고 말했다.",
+       "t": "아카틀은 부족이 여행자를 직접 만나기를 기다린다고 전했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Journey of Stars and Flames"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Journey of Stars and Flames",
+       "quest_ko": "별과 불의 여정",
+       "version": "5.3",
+       "speaker": "Acatl"
+      }
+     ],
+     "heading": "작중 행적 — 5.3 밤의 신의 나라의 결전",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 5.3 Night Kingdom의 결전",
+     "status": "accepted",
+     "note": "Facts supported by A4 and Q7. The interpretation is hedged and reasonable.",
+     "quote": "With us by your side, you'll never fight alone!",
+     "sentences": [
+      {
+       "t_raw": "두 사람은 **승리**했고, Acatl은 축제에 참여했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 사람은 **승리**했고, 아카틀은 축제에 참여했다."
+      },
+      {
+       "t_raw": "Acatl은 함께 있으면 결코 혼자 싸우지 않는다는 말을 전했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아카틀은 함께 있으면 결코 혼자 싸우지 않는다는 말을 전했다."
+      },
+      {
+       "t_raw": "부족을 지킨 추장의 입에서 '결코 혼자 싸우지 않는다'는 말이 나온 것은, Traveler를 부족과 함께하는 동행자로 여긴다는 뜻으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "부족을 지킨 추장의 입에서 '결코 혼자 싸우지 않는다'는 말이 나온 것은, 여행자를 부족과 함께하는 동행자로 여긴다는 뜻으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Journey of Stars and Flames"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "When All Becomes a Monument",
+       "quest_ko": "기념비에 새겨진 순간",
+       "version": "5.3",
+       "speaker": "Acatl"
+      }
+     ],
+     "heading": "작중 행적 — 5.3 밤의 신의 나라의 결전",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 5.5 Collective of Plenty의 사건들",
+     "status": "accepted",
+     "note": "All supported by Q1, Q8, Q12, Q16, Q20 and Q24.",
+     "quote": "But, we know you're not one to lie, Varesa. Besides, the origin of the green mushrooms has always been a mystery to us.",
+     "sentences": [
+      {
+       "t_raw": "**The Meaning of Courage**에서 Acatl은 과수원의 버섯이 지각이 있다는 사실을 두고 놀라운 발견이라 하고, 초록 버섯의 기원은 줄곧 수수께끼였다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**용기란 무엇인가**에서 아카틀은 과수원의 버섯이 지각이 있다는 사실을 두고 놀라운 발견이라 하고, 초록 버섯의 기원은 줄곧 수수께끼였다고 말한다."
+      },
+      {
+       "t_raw": "그는 아무도 버섯과 말해 본 적이 없다며 이야기가 터무니없게 들린다고 인정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 아무도 버섯과 말해 본 적이 없다며 이야기가 터무니없게 들린다고 인정한다."
+      },
+      {
+       "t_raw": "그러나 조사 덕분에 수상한 일이 벌어질 수 있음을 알게 되었다며 부족도 할 일을 해야 한다고 말하고, 모두에게 강한 열을 낼 수 있는 물건을 찾으라고 요청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 조사 덕분에 수상한 일이 벌어질 수 있음을 알게 되었다며 부족도 할 일을 해야 한다고 말하고, 모두에게 강한 열을 낼 수 있는 물건을 찾으라고 요청한다."
+      },
+      {
+       "t_raw": "열이 충분하지 않다며 더 강력한 열원이 필요하다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "열이 충분하지 않다며 더 강력한 열원이 필요하다고 덧붙인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Meaning of Courage",
+       "quest_ko": "용기란 무엇인가",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Meaning of Courage",
+       "quest_ko": "용기란 무엇인가",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Meaning of Courage",
+       "quest_ko": "용기란 무엇인가",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Meaning of Courage",
+       "quest_ko": "용기란 무엇인가",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Meaning of Courage",
+       "quest_ko": "용기란 무엇인가",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Meaning of Courage",
+       "quest_ko": "용기란 무엇인가",
+       "version": "5.5",
+       "speaker": "Acatl"
+      }
+     ],
+     "heading": "작중 행적 — 5.5 비옥한 터전의 사건들",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 5.5 Collective of Plenty의 사건들",
+     "status": "accepted",
+     "note": "All supported by Q2, Q9, Q13, Q17, Q21 and Q26.",
+     "quote": "Group dinners? More like group mooching! You guys always seem to end up at my place... So shameless.",
+     "sentences": [
+      {
+       "t_raw": "For Our Saurian Companion에서 Acatl은 어린 이가 전장에서 목숨을 걸고 싸운 일을 두고 어른이 짊어질 책임을 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "용 동료를 위해에서 아카틀은 어린 이가 전장에서 목숨을 걸고 싸운 일을 두고 어른이 짊어질 책임을 말한다."
+      },
+      {
+       "t_raw": "그는 어느 부족이 가장 강한지 겨루는 대회에 피가 끓는다고 화답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 어느 부족이 가장 강한지 겨루는 대회에 피가 끓는다고 화답한다."
+      },
+      {
+       "t_raw": "단체 식사라기보다 단체로 얹혀살기라며 모두가 자신의 집에 모인다며 뻔뻔하다고 말하지만, 일이 끝나면 이만 끝내자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "단체 식사라기보다 단체로 얹혀살기라며 모두가 자신의 집에 모인다며 뻔뻔하다고 말하지만, 일이 끝나면 이만 끝내자고 한다."
+      },
+      {
+       "t_raw": "Paimon에게 행운을 빌어 주고, Paimon은 그 인사를 두고 Acatl이 앞일을 알고 있었던 것 같다고 해석한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬에게 행운을 빌어 주고, 페이몬은 그 인사를 두고 아카틀이 앞일을 알고 있었던 것 같다고 해석한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "For Our Saurian Companion",
+       "quest_ko": "용 동료를 위해",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "For Our Saurian Companion",
+       "quest_ko": "용 동료를 위해",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "For Our Saurian Companion",
+       "quest_ko": "용 동료를 위해",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "For Our Saurian Companion",
+       "quest_ko": "용 동료를 위해",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "For Our Saurian Companion",
+       "quest_ko": "용 동료를 위해",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "For Our Saurian Companion",
+       "quest_ko": "용 동료를 위해",
+       "version": "5.5",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 5.5 비옥한 터전의 사건들",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 5.5 Collective of Plenty의 사건들",
+     "status": "trimmed",
+     "note": "Sentence 3 gives an order and cause the English doesn't state. Q22 is Acatl speaking to Varesa, and nothing shows it was a reply to Atolli's call in Q32.",
+     "quote": "But, when I heard you two were coming, I talked to Atolli, and we agreed to waive your expenses!",
+     "sentences": [
+      {
+       "t_raw": "Sage Supreme에서 Acatl은 Varesa를 통해 Traveler가 **Epic Feast Showdown**에 신청했다는 말을 듣고 거의 믿을 수 없었다며 놀라워한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가장 현명한 자에서 아카틀은 바레사를 통해 여행자가 **연회 대전**에 신청했다는 말을 듣고 거의 믿을 수 없었다며 놀라워한다."
+      },
+      {
+       "t_raw": "그는 Traveler가 Natlan을 위해 많은 일을 했다며 작은 감사의 표시로 받아 달라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 여행자가 나타를 위해 많은 일을 했다며 작은 감사의 표시로 받아 달라고 말한다."
+      },
+      {
+       "t_raw": "보통은 음식을 남기면 값을 치러야 하지만, 두 사람이 온다는 말을 듣고 Atolli와 상의해 비용을 면제했다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "보통은 음식을 남기면 값을 치러야 하지만, 두 사람이 온다는 말을 듣고 아톨리와 상의해 비용을 면제했다고 밝힌다."
+      },
+      {
+       "t_raw": "Atolli가 참가자들을 모으고 Epic Feast Showdown을 시작하자고 하자 Acatl은 오래 걸리지 않을 것이라며 Atolli가 화덕에 불을 붙이고 있다고 전한다.",
+       "interp": false,
+       "dropped": true,
+       "t": "아톨리가 참가자들을 모으고 연회 대전을 시작하자고 하자 아카틀은 오래 걸리지 않을 것이라며 아톨리가 화덕에 불을 붙이고 있다고 전한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sage Supreme",
+       "quest_ko": "가장 현명한 자",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sage Supreme",
+       "quest_ko": "가장 현명한 자",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sage Supreme",
+       "quest_ko": "가장 현명한 자",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sage Supreme",
+       "quest_ko": "가장 현명한 자",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sage Supreme",
+       "quest_ko": "가장 현명한 자",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sage Supreme",
+       "quest_ko": "가장 현명한 자",
+       "version": "5.5",
+       "speaker": "Atolli"
+      }
+     ],
+     "heading": "작중 행적 — 5.5 비옥한 터전의 사건들",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 5.5 Collective of Plenty의 사건들",
+     "status": "accepted",
+     "note": "All supported by Q4, Q11, Q15, Q19, Q23, Q25, Q30 and Q34.",
+     "quote": "Acatl was saying that, since a scholar from Sumeru warned the tribe about the mushrooms, someone there must know about the mushroom god.",
+     "sentences": [
+      {
+       "t_raw": "Smokeless War의 안개 속에서 Acatl은 Traveler 일행이 부족에 함께 있지 않냐고 되묻고, 무언가 잘못됐는지와 무엇을 느끼는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "총칼 없는 전쟁의 안개 속에서 아카틀은 여행자 일행이 부족에 함께 있지 않냐고 되묻고, 무언가 잘못됐는지와 무엇을 느끼는지 묻는다."
+      },
+      {
+       "t_raw": "그는 버섯이 Varesa와 주빈을 무시한 일로 시작되었다고 말하며, 자기 쪽 준비는 거의 끝났다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 버섯이 바레사와 주빈을 무시한 일로 시작되었다고 말하며, 자기 쪽 준비는 거의 끝났다고 한다."
+      },
+      {
+       "t_raw": "Paimon은 Acatl이 Sumeru 학자가 부족에 버섯을 경고한 뒤라 그곳 누군가 버섯 신을 알 것이라고 말했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아카틀이 수메르 학자가 부족에 버섯을 경고한 뒤라 그곳 누군가 버섯 신을 알 것이라고 말했다고 전한다."
+      },
+      {
+       "t_raw": "Varesa는 Akademiya로 가려면 먼저 Uncle Acatl의 허락을 받아야 한다고 말하고, Paimon은 안개 속에서 Acatl을 추장이라 부르며 자신들은 어디인지 모르겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바레사는 아카데미아로 가려면 먼저 아카틀 아저씨의 허락을 받아야 한다고 말하고, 페이몬은 안개 속에서 아카틀을 추장이라 부르며 자신들은 어디인지 모르겠다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Smokeless War",
+       "quest_ko": "총칼 없는 전쟁",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "Smokeless War",
+       "quest_ko": "총칼 없는 전쟁",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "Smokeless War",
+       "quest_ko": "총칼 없는 전쟁",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "Smokeless War",
+       "quest_ko": "총칼 없는 전쟁",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "Smokeless War",
+       "quest_ko": "총칼 없는 전쟁",
+       "version": "5.5",
+       "speaker": "Acatl"
+      },
+      {
+       "kind": "quest",
+       "quest": "Smokeless War",
+       "quest_ko": "총칼 없는 전쟁",
+       "version": "5.5",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 5.5 비옥한 터전의 사건들",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 5.5 Collective of Plenty의 사건들",
+     "status": "accepted",
+     "note": "All sentences are supported by the cited lines.",
+     "quote": "As long as you're happy, I'm happy. That's how Uncle Acatl teaches us to treat our guests.",
+     "sentences": [
+      {
+       "t_raw": "Orchard Repose에서 Varesa는 **Uncle Acatl**을 함께 데려오고 싶었지만 그가 집에 없어 Traveler와 함께하게 되었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "과수원 나들이에서 바레사는 **아카틀 아저씨**를 함께 데려오고 싶었지만 그가 집에 없어 여행자와 함께하게 되었다고 말한다."
+      },
+      {
+       "t_raw": "그는 Acatl이 부족의 추장이라며, 부족을 소개하기에 그보다 나은 사람이 어디 있냐고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 아카틀이 부족의 추장이라며, 부족을 소개하기에 그보다 나은 사람이 어디 있냐고 덧붙인다."
+      },
+      {
+       "t_raw": "Ardent Land of Plenty에서는 손님이 행복하면 자신도 행복하다는 말과 함께, 그것이 Uncle Acatl이 손님을 대하는 법으로 가르친 방식이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "뜨겁고 비옥한 땅에서는 손님이 행복하면 자신도 행복하다는 말과 함께, 그것이 아카틀 아저씨가 손님을 대하는 법으로 가르친 방식이라고 한다."
+      },
+      {
+       "t_raw": "Varesa는 공을 모두 Uncle Acatl에게 돌리며 자신은 몬스터를 정리했을 뿐이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바레사는 공을 모두 아카틀 아저씨에게 돌리며 자신은 몬스터를 정리했을 뿐이라고 말한다."
+      },
+      {
+       "t_raw": "Ardent Land of Plenty에서 Acatl의 가르침이 손님 대접의 기준으로 언급되고 Varesa가 그를 Uncle Acatl이라 부르는 모습은, Acatl이 추장이면서 부족의 일상적 본보기로 자리 잡았음을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "뜨겁고 비옥한 땅에서 아카틀의 가르침이 손님 대접의 기준으로 언급되고 바레사가 그를 아카틀 아저씨이라 부르는 모습은, 아카틀이 추장이면서 부족의 일상적 본보기로 자리 잡았음을 보여 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Orchard Repose",
+       "quest_ko": "과수원 나들이",
+       "version": "5.5",
+       "speaker": "Varesa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ardent Land of Plenty",
+       "quest_ko": "뜨겁고 비옥한 땅",
+       "version": "5.5",
+       "speaker": "???"
+      },
+      {
+       "kind": "quest",
+       "quest": "Orchard Repose",
+       "quest_ko": "과수원 나들이",
+       "version": "5.5",
+       "speaker": "Varesa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ardent Land of Plenty",
+       "quest_ko": "뜨겁고 비옥한 땅",
+       "version": "5.5",
+       "speaker": "Varesa"
+      }
+     ],
+     "heading": "작중 행적 — 5.5 비옥한 터전의 사건들",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported; the interpretation is hedged and follows from the 'Uncle' address and the permission/explanation lines.",
+     "quote": "Hehe, that's right! I was hoping to bring Uncle Acatl with me, but he wasn't home. So, I guess you're stuck with me.",
+     "sentences": [
+      {
+       "t_raw": "Varesa는 Acatl을 **Uncle Acatl**이라 부르며, 그를 추장이자 상황을 먼저 설명하고 허가를 구해야 하는 사람으로 대한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바레사는 아카틀을 **아카틀 아저씨**이라 부르며, 그를 추장이자 상황을 먼저 설명하고 허가를 구해야 하는 사람으로 대한다."
+      },
+      {
+       "t_raw": "그녀는 Acatl을 데려오려 했으나 집에 없었다고 말하고, 부족 소개는 그가 가장 적임이라 꼽으며, 공은 전부 Acatl 덕이라 돌린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 아카틀을 데려오려 했으나 집에 없었다고 말하고, 부족 소개는 그가 가장 적임이라 꼽으며, 공은 전부 아카틀 덕이라 돌린다."
+      },
+      {
+       "t_raw": "누군가는 손님이 행복하면 자신도 행복하다는 것이 Uncle Acatl이 가르친 손님 대접법이라고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "누군가는 손님이 행복하면 자신도 행복하다는 것이 아카틀 아저씨가 가르친 손님 대접법이라고 전한다."
+      },
+      {
+       "t_raw": "이런 호칭과 신뢰는 Acatl이 부족 안에서 가족 같은 존재로 여겨지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 호칭과 신뢰는 아카틀이 부족 안에서 가족 같은 존재로 여겨지는 것으로 보인다."
+      },
+      {
+       "t_raw": "**Epic Feast Showdown** 준비에서 Atolli는 오븐을 달구고, Acatl은 Traveler 일행의 비용 면제를 Atolli와 합의하며, 준비가 끝나자 Atolli가 Acatl에게 참가자 소집을 알린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**연회 대전** 준비에서 아톨리는 오븐을 달구고, 아카틀은 여행자 일행의 비용 면제를 아톨리와 합의하며, 준비가 끝나자 아톨리가 아카틀에게 참가자 소집을 알린다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Orchard Repose",
+       "quest_ko": "과수원 나들이",
+       "version": "5.5",
+       "speaker": "Varesa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sage Supreme",
+       "quest_ko": "가장 현명한 자",
+       "version": "5.5",
+       "speaker": "Varesa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Smokeless War",
+       "quest_ko": "총칼 없는 전쟁",
+       "version": "5.5",
+       "speaker": "Varesa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Orchard Repose",
+       "quest_ko": "과수원 나들이",
+       "version": "5.5",
+       "speaker": "Varesa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ardent Land of Plenty",
+       "quest_ko": "뜨겁고 비옥한 땅",
+       "version": "5.5",
+       "speaker": "Varesa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ardent Land of Plenty",
+       "quest_ko": "뜨겁고 비옥한 땅",
+       "version": "5.5",
+       "speaker": "???"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The English only says Acatl took part in the celebrations. It does not say he welcomed the Traveler and the Pyro Archon there.",
+     "quote": "With us by your side, you'll never fight alone!",
+     "sentences": [
+      {
+       "t_raw": "전쟁 전 휴식 구역에서 Iansan은 Traveler에게 전쟁이 끝나면 자기 부족에 오라고 청했고, Acatl은 부족이 직접 만나기를 기다린다고 전했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전쟁 전 휴식 구역에서 얀사는 여행자에게 전쟁이 끝나면 자기 부족에 오라고 청했고, 아카틀은 부족이 직접 만나기를 기다린다고 전했다."
+      },
+      {
+       "t_raw": "Acatl은 **With us by your side, you'll never fight alone!**라며 함께 있으면 결코 혼자 싸우지 않을 것이라고 지지했고, 승리 후의 축제에도 함께 동참했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "아카틀은 **우리가 네 곁에 있으니, 너는 결코 혼자 싸우지 않을 거야!**라며 함께 있으면 결코 혼자 싸우지 않을 것이라고 지지했고, 승리 후의 축제에도 함께 동참했다.",
        "polish": {
-        "from": "아카틀은 그 부족이 여행자를 직접 만나고 싶어 한다고 전했으며, \"With us by your side, you'll never fight alone!\"라고 말했다.",
-        "text": "아카틀은 그 부족이 여행자를 직접 만나고 싶어 한다고 전했으며, \"우리가 네 곁에 있으니, 너는 결코 혼자 싸우지 않을 거야!\"라고 말했다.",
-        "by": "or-ds"
+        "from": "아카틀은 **With us by your side, you'll never fight alone!**라며 함께 있으면 결코 혼자 싸우지 않을 것이라고 지지했고, 승리 후의 축제에도 함께 동참했다.",
+        "text": "아카틀은 **우리가 네 곁에 있으니, 너는 결코 혼자 싸우지 않을 거야!**라며 함께 있으면 결코 혼자 싸우지 않을 것이라고 지지했고, 승리 후의 축제에도 함께 동참했다.",
+        "by": "ds"
        }
       },
       {
-       "t_raw": "이후 Traveler와 Pyro Archon이 승리하자 Acatl은 축하에 참여했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이후 여행자와 불의 신이 승리하자 아카틀은 축하에 참여했다."
-      },
-      {
-       "t_raw": "전쟁 전의 방문 청과 부족의 기대, 승리 후의 축하가 한 줄기로 이어져 보인다.",
+       "t_raw": "안개 속에서 Paimon이 Acatl을 Chief라고 알아보는 장면까지 놓으면, 그의 환영과 지지는 Traveler 일행과의 관계가 초대와 축하, 안개 속에서도 이어지는 인식으로 이어진다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "전쟁 전의 방문 청과 부족의 기대, 승리 후의 축하가 한 줄기로 이어져 보인다."
+       "t": "안개 속에서 페이몬이 아카틀을 Chief라고 알아보는 장면까지 놓으면, 그의 환영과 지지는 여행자 일행과의 관계가 초대와 축하, 안개 속에서도 이어지는 인식으로 이어진다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -674,391 +1063,6 @@
        "quest_ko": "기념비에 새겨진 순간",
        "version": "5.3",
        "speaker": "Acatl"
-      }
-     ],
-     "heading": "작중 행적 — 심연 침공과 밤의 신의 나라",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — The Meaning of Courage",
-     "status": "accepted",
-     "note": "All claims faithfully reflect the supplied dialogue.",
-     "quote": "Attention, everyone! We need items that can generate intense heat. Anything you can find!",
-     "sentences": [
-      {
-       "t_raw": "The Meaning of Courage에서 Acatl은 **녹색 버섯의 기원**이 부족에게 계속 수수께끼였다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "용기란 무엇인가에서 아카틀은 **녹색 버섯의 기원**이 부족에게 계속 수수께끼였다고 말한다."
-      },
-      {
-       "t_raw": "그는 Varesa가 거짓말할 사람이 아니라는 점을 전제로, 상대 덕분에 이제 사악한 무언가가 벌어지고 있을 수 있음을 알게 되었다고 하고, 부족도 힘을 보태겠다고 나선다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 바레사가 거짓말할 사람이 아니라는 점을 전제로, 상대 덕분에 이제 사악한 무언가가 벌어지고 있을 수 있음을 알게 되었다고 하고, 부족도 힘을 보태겠다고 나선다."
-      },
-      {
-       "t_raw": "이어 Acatl은 모두에게 강렬한 열을 발생시킬 수 있는 물건을 찾아 달라고 요청한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어 아카틀은 모두에게 강렬한 열을 발생시킬 수 있는 물건을 찾아 달라고 요청한다."
-      },
-      {
-       "t_raw": "열이 충분히 높지 않다는 말에, 그는 더 강력한 열원이 필요하다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "열이 충분히 높지 않다는 말에, 그는 더 강력한 열원이 필요하다고 말한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Meaning of Courage",
-       "quest_ko": "용기란 무엇인가",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Meaning of Courage",
-       "quest_ko": "용기란 무엇인가",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Meaning of Courage",
-       "quest_ko": "용기란 무엇인가",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Meaning of Courage",
-       "quest_ko": "용기란 무엇인가",
-       "version": "5.5",
-       "speaker": "Acatl"
-      }
-     ],
-     "heading": "작중 행적 — 용기란 무엇인가",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — The Meaning of Courage",
-     "status": "accepted",
-     "note": "Q24 supports the discovery of sentience; the change in his reaction is a reasonable interpretation.",
-     "quote": "So, the mushrooms in the orchard are sentient? What a remarkable discovery!",
-     "sentences": [
-      {
-       "t_raw": "버섯과 대화한다는 이야기에 대해서는 Acatl도 자신들을 포함해 아무도 버섯과 말해 본 적이 없다며 믿기 어려운 이야기라고 받아들인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "버섯과 대화한다는 이야기에 대해서는 아카틀도 자신들을 포함해 아무도 버섯과 말해 본 적이 없다며 믿기 어려운 이야기라고 받아들인다."
-      },
-      {
-       "t_raw": "그러나 과수원의 버섯들이 지성체라는 사실이 드러나자, 그는 그것을 놀라운 발견이라고 평한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 과수원의 버섯들이 지성체라는 사실이 드러나자, 그는 그것을 놀라운 발견이라고 평한다."
-      },
-      {
-       "t_raw": "버섯과 대화한다는 말을 믿기 어려워하던 태도와 **지성 있는 버섯**을 발견한 뒤의 놀라움을 비교하면, Acatl이 확인된 사실 앞에서 반응을 달리하는 인물로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "버섯과 대화한다는 말을 믿기 어려워하던 태도와 **지성 있는 버섯**을 발견한 뒤의 놀라움을 비교하면, 아카틀이 확인된 사실 앞에서 반응을 달리하는 인물로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Meaning of Courage",
-       "quest_ko": "용기란 무엇인가",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Meaning of Courage",
-       "quest_ko": "용기란 무엇인가",
-       "version": "5.5",
-       "speaker": "Acatl"
-      }
-     ],
-     "heading": "작중 행적 — 용기란 무엇인가",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — For Our Saurian Companion",
-     "status": "accepted",
-     "note": "All sentences are supported.",
-     "quote": "For one so young to risk life and limb on the field of battle... This, too, is a responsibility we adults must bear.",
-     "sentences": [
-      {
-       "t_raw": "For Our Saurian Companion에서 Acatl은 어린 이가 전장에서 목숨을 거는 일을 두고, 그 책임은 **우리 어른들이 짊어져야 할 책임**이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "용 동료를 위해에서 아카틀은 어린 이가 전장에서 목숨을 거는 일을 두고, 그 책임은 **우리 어른들이 짊어져야 할 책임**이라고 말한다."
-      },
-      {
-       "t_raw": "부족 대항 경쟁에 대해서는 어느 부족이 가장 강한지 겨루는 일이 피를 끓게 한다며 맞장구친다.",
-       "interp": false,
-       "dropped": false,
-       "t": "부족 대항 경쟁에 대해서는 어느 부족이 가장 강한지 겨루는 일이 피를 끓게 한다며 맞장구친다."
-      },
-      {
-       "t_raw": "여럿이 모여 먹는 자리는 단체 공짜 밥이라며, 결국 자기 집으로 몰려든다며 뻔뻔하다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여럿이 모여 먹는 자리는 단체 공짜 밥이라며, 결국 자기 집으로 몰려든다며 뻔뻔하다고 말한다."
-      },
-      {
-       "t_raw": "일이 다 끝났다면 오늘은 그만하자고 제안한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "일이 다 끝났다면 오늘은 그만하자고 제안한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      }
-     ],
-     "heading": "작중 행적 — 용 동료를 위해",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — For Our Saurian Companion",
-     "status": "accepted",
-     "note": "The facts are supported, and the interpretation reasonably follows from Paimon's remark.",
-     "quote": "Oh, so that's what's going on! No wonder Chief Acatl wished us good luck just now... He must have known this was coming!",
-     "sentences": [
-      {
-       "t_raw": "Acatl은 일이 정리되었다면 오늘은 그만하자고 말한 뒤, Paimon에게 행운을 빈다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 일이 정리되었다면 오늘은 그만하자고 말한 뒤, 페이몬에게 행운을 빈다."
-      },
-      {
-       "t_raw": "Paimon은 Acatl이 방금 그들에게 **행운을 빌어 준** 일을 떠올리며, 그가 이 일이 닥칠 것을 알고 있었음이 틀림없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 아카틀이 방금 그들에게 **행운을 빌어 준** 일을 떠올리며, 그가 이 일이 닥칠 것을 알고 있었음이 틀림없다고 말한다."
-      },
-      {
-       "t_raw": "Acatl의 작별 인사는 다가올 일을 염두에 둔 말로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아카틀의 작별 인사는 다가올 일을 염두에 둔 말로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — 용 동료를 위해",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Sage Supreme",
-     "status": "accepted",
-     "note": "All facts and the interpretation are supported.",
-     "quote": "But, when I heard you two were coming, I talked to Atolli, and we agreed to waive your expenses!",
-     "sentences": [
-      {
-       "t_raw": "Acatl은 오랜만이라며, Varesa에게 Traveler가 Epic Feast Showdown에 참가 신청했다는 말을 듣고 믿기 어려웠다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 오랜만이라며, 바레사에게 여행자가 Epic Feast Showdown에 참가 신청했다는 말을 듣고 믿기 어려웠다고 한다."
-      },
-      {
-       "t_raw": "Traveler가 Natlan을 위해 한 일이 많으니 이번 일은 감사의 작은 표시로 여기라고 하며, 두 사람이 온다는 말을 듣고 Atolli와 상의해 **비용을 면제**하기로 했다고 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자가 나타를 위해 한 일이 많으니 이번 일은 감사의 작은 표시로 여기라고 하며, 두 사람이 온다는 말을 듣고 아톨리와 상의해 **비용을 면제**하기로 했다고 밝힌다."
-      },
-      {
-       "t_raw": "보통은 음식을 남기면 값을 내야 하지만, 이번 면제는 Natlan을 위해 한 일에 대한 고마움에서 나온 호의로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "보통은 음식을 남기면 값을 내야 하지만, 이번 면제는 나타를 위해 한 일에 대한 고마움에서 나온 호의로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      }
-     ],
-     "heading": "작중 행적 — 가장 현명한 자",
-     "latin_left": [
-      "Epic Feast Showdown"
-     ]
-    },
-    {
-     "section": "작중 행적 — Sage Supreme",
-     "status": "trimmed",
-     "note": "The English says Atolli is firing up the ovens, but does not say Acatl assigned that task to Atolli.",
-     "quote": "We're all set! Time to gather the contestants, Acatl. The Showdown is about to begin!",
-     "sentences": [
-      {
-       "t_raw": "Varesa는 상황을 Acatl과 나머지 부족민에게 먼저 설명해야 한다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바레사는 상황을 아카틀과 나머지 부족민에게 먼저 설명해야 한다고 말한다."
-      },
-      {
-       "t_raw": "Acatl은 Varesa에게 Atolli가 **화덕에 불을 피우고 있다**고 알린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 바레사에게 아톨리가 **화덕에 불을 피우고 있다**고 알린다."
-      },
-      {
-       "t_raw": "Atolli는 준비가 끝났다며 참가자들을 모을 시간이고 Showdown이 곧 시작된다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아톨리는 준비가 끝났다며 참가자들을 모을 시간이고 Showdown이 곧 시작된다고 말한다."
-      },
-      {
-       "t_raw": "Acatl이 화덕 준비를 Atolli에게 맡기고 Atolli가 참가자 소집을 알리는 모습은 두 사람이 Showdown 준비를 분담하는 것으로 보인다.",
-       "interp": true,
-       "dropped": true,
-       "t": "아카틀이 화덕 준비를 아톨리에게 맡기고 아톨리가 참가자 소집을 알리는 모습은 두 사람이 Showdown 준비를 분담하는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Varesa"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Atolli"
-      }
-     ],
-     "heading": "작중 행적 — 가장 현명한 자",
-     "latin_left": [
-      "Showdown"
-     ]
-    },
-    {
-     "section": "작중 행적 — Smokeless War",
-     "status": "accepted",
-     "note": "The facts are supported, and the interpretation reasonably describes their uncertainty about location.",
-     "quote": "What? I know it's hard to see through this mist, but aren't you here at the tribe with the rest of us?",
-     "sentences": [
-      {
-       "t_raw": "Smokeless War에서 **안개가 시야를 가리자**, Acatl은 일행이 부족에 함께 있는지 의아해한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "총칼 없는 전쟁에서 **안개가 시야를 가리자**, 아카틀은 일행이 부족에 함께 있는지 의아해한다."
-      },
-      {
-       "t_raw": "Paimon은 Acatl을 족장으로 알아보지만 일행의 위치는 모른다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 아카틀을 족장으로 알아보지만 일행의 위치는 모른다."
-      },
-      {
-       "t_raw": "Acatl은 무언가 잘못됐는지 묻고 상대의 느낌을 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 무언가 잘못됐는지 묻고 상대의 느낌을 되묻는다."
-      },
-      {
-       "t_raw": "안개 속에서 Acatl과 일행이 서로의 위치를 헷갈리는 장면으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "안개 속에서 아카틀과 일행이 서로의 위치를 헷갈리는 장면으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Acatl"
       },
       {
        "kind": "quest",
@@ -1066,245 +1070,59 @@
        "quest_ko": "총칼 없는 전쟁",
        "version": "5.5",
        "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Acatl"
       }
      ],
-     "heading": "작중 행적 — 총칼 없는 전쟁",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Smokeless War",
-     "status": "accepted",
-     "note": "Both sentences are supported.",
-     "quote": "Well, that mushroom started it, right everyone? Disrespecting Varesa and our guest of honor...",
-     "sentences": [
-      {
-       "t_raw": "Acatl은 문제의 버섯이 시작이었다며, 그 버섯이 Varesa와 귀빈을 무시했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 문제의 버섯이 시작이었다며, 그 버섯이 바레사와 귀빈을 무시했다고 말한다."
-      },
-      {
-       "t_raw": "그는 준비가 거의 끝났다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 준비가 거의 끝났다고 전한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Acatl"
-      }
-     ],
-     "heading": "작중 행적 — 총칼 없는 전쟁",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Smokeless War",
-     "status": "accepted",
-     "note": "All three sentences match the cited lines.",
-     "quote": "Acatl was saying that, since a scholar from Sumeru warned the tribe about the mushrooms, someone there must know about the mushroom god.",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 Acatl이 Sumeru 학자가 부족에게 버섯에 대해 경고했으니 그곳 누군가는 버섯 신에 대해 알 것이라고 말했다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 아카틀이 수메르 학자가 부족에게 버섯에 대해 경고했으니 그곳 누군가는 버섯 신에 대해 알 것이라고 말했다고 전한다."
-      },
-      {
-       "t_raw": "Varesa는 Akademiya로 가려면 먼저 Uncle Acatl의 허락이 필요하다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바레사는 아카데미아로 가려면 먼저 Uncle Acatl의 허락이 필요하다고 말한다."
-      },
-      {
-       "t_raw": "버섯에 대한 Acatl의 언급은 **Sumeru 학자와 버섯 신, Akademiya로 이어지는 단서**로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "버섯에 대한 아카틀의 언급은 **수메르 학자와 버섯 신, 아카데미아로 이어지는 단서**로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Varesa"
-      }
-     ],
-     "heading": "작중 행적 — 총칼 없는 전쟁",
+     "heading": "인간관계",
      "latin_left": [
-      "Uncle Acatl"
+      "Chief"
      ]
     },
     {
-     "section": "작중 행적 — Orchard Repose와 Ardent Land of Plenty",
-     "status": "trimmed",
-     "note": "Q27 only says the listener is “stuck with” Varesa because Uncle Acatl was not home; it never names the Traveler.",
-     "quote": "Uncle Acatl is our chief, by the way! Who better than the chief to introduce you to the tribe, right?",
-     "sentences": [
-      {
-       "t_raw": "Varesa는 Acatl을 **Uncle Acatl**이라 부르며 그가 부족의 **족장**이라고 소개한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바레사는 아카틀을 **Uncle Acatl**이라 부르며 그가 부족의 **족장**이라고 소개한다."
-      },
-      {
-       "t_raw": "원래 Acatl을 데리고 오려 했지만 그가 집에 없었기 때문에, Traveler는 Varesa와 함께하게 된다.",
-       "interp": false,
-       "dropped": true,
-       "t": "원래 아카틀을 데리고 오려 했지만 그가 집에 없었기 때문에, 여행자는 바레사와 함께하게 된다."
-      },
-      {
-       "t_raw": "Varesa는 부족을 소개하는 일에 족장인 Acatl보다 나은 사람이 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바레사는 부족을 소개하는 일에 족장인 아카틀보다 나은 사람이 없다고 말한다."
-      },
-      {
-       "t_raw": "한 인물은 손님이 행복하면 자신도 행복하다는 것이 Uncle Acatl이 가르친 손님 대접 방식이라고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한 인물은 손님이 행복하면 자신도 행복하다는 것이 Uncle Acatl이 가르친 손님 대접 방식이라고 전한다."
-      },
-      {
-       "t_raw": "Acatl이 집에 없어도 Varesa와 한 인물은 그를 부족 소개의 기준이자 손님 대접의 가르침으로 삼고 있는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아카틀이 집에 없어도 바레사와 한 인물은 그를 부족 소개의 기준이자 손님 대접의 가르침으로 삼고 있는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Orchard Repose",
-       "quest_ko": "과수원 나들이",
-       "version": "5.5",
-       "speaker": "Varesa"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ardent Land of Plenty",
-       "quest_ko": "뜨겁고 비옥한 땅",
-       "version": "5.5",
-       "speaker": "???"
-      },
-      {
-       "kind": "quest",
-       "quest": "Orchard Repose",
-       "quest_ko": "과수원 나들이",
-       "version": "5.5",
-       "speaker": "Varesa"
-      }
-     ],
-     "heading": "작중 행적 — 과수원 나들이와 뜨겁고 비옥한 땅",
-     "latin_left": [
-      "Uncle Acatl",
-      "Uncle Acatl"
-     ]
-    },
-    {
-     "section": "작중 행적 — Orchard Repose와 Ardent Land of Plenty",
+     "section": "떡밥과 수수께끼",
      "status": "accepted",
-     "note": "Credit to Uncle Acatl and the chief reading both follow the quoted lines.",
-     "quote": "Not really. It was all Uncle Acatl! All I did was clear out a few monsters.",
+     "note": "All sentences match the mask dialogue.",
+     "quote": "Words can deceive, writing can mislead, but muscles... never lie.",
      "sentences": [
       {
-       "t_raw": "Ardent Land of Plenty에서 Varesa는 자신이 한 일은 몬스터 몇 마리를 정리한 것뿐이라며 **모든 공을 Uncle Acatl에게 돌린다**.",
+       "t_raw": "Acatl은 **복면**이 오랜 레슬링 전통이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "뜨겁고 비옥한 땅에서 바레사는 자신이 한 일은 몬스터 몇 마리를 정리한 것뿐이라며 **모든 공을 Uncle Acatl에게 돌린다**."
+       "t": "아카틀은 **복면**이 오랜 레슬링 전통이라고 말한다."
       },
       {
-       "t_raw": "그녀가 자신의 몫을 낮추고 Acatl을 앞세우는 모습은, 그가 앞서 족장이자 Uncle Acatl로 소개된 인물이라는 점과 맞물려 부족의 중심 인물로 그려지는 대목으로 보인다.",
+       "t_raw": "진 사람은 복면을 벗고, 이긴 사람은 복면을 쓴 채 신비감을 남겨 도전을 이끈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "진 사람은 복면을 벗고, 이긴 사람은 복면을 쓴 채 신비감을 남겨 도전을 이끈다."
+      },
+      {
+       "t_raw": "Acatl은 사람이나 saurian과의 대결에서 자신의 복면을 벗겨진 적이 한 번도 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아카틀은 사람이나 사우리안과의 대결에서 자신의 복면을 벗겨진 적이 한 번도 없다고 말한다.",
+       "polish": {
+        "from": "아카틀은 사람이나 saurian과의 대결에서 자신의 복면을 벗겨진 적이 한 번도 없다고 말한다.",
+        "text": "아카틀은 사람이나 사우리안과의 대결에서 자신의 복면을 벗겨진 적이 한 번도 없다고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "젊은이들이 계속 복면을 쓰면 어떻게 **사칭자**와 구별하느냐고 묻자, 그는 의심스러우면 링에서 맞서라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "젊은이들이 계속 복면을 쓰면 어떻게 **사칭자**와 구별하느냐고 묻자, 그는 의심스러우면 링에서 맞서라고 답한다."
+      },
+      {
+       "t_raw": "그는 말은 속일 수 있고 글은 오도할 수 있지만 **근육은 거짓말하지 않는다**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 말은 속일 수 있고 글은 오도할 수 있지만 **근육은 거짓말하지 않는다**고 말한다."
+      },
+      {
+       "t_raw": "복면을 벗기지 않았다는 말과 링에서 맞서라는 답은 말보다 몸으로 증명하는 방식을 택한 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "그녀가 자신의 몫을 낮추고 아카틀을 앞세우는 모습은, 그가 앞서 족장이자 Uncle Acatl로 소개된 인물이라는 점과 맞물려 부족의 중심 인물로 그려지는 대목으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Orchard Repose",
-       "quest_ko": "과수원 나들이",
-       "version": "5.5",
-       "speaker": "Varesa"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ardent Land of Plenty",
-       "quest_ko": "뜨겁고 비옥한 땅",
-       "version": "5.5",
-       "speaker": "Varesa"
-      }
-     ],
-     "heading": "작중 행적 — 과수원 나들이와 뜨겁고 비옥한 땅",
-     "latin_left": [
-      "Uncle Acatl",
-      "Uncle Acatl"
-     ]
-    },
-    {
-     "section": "능력",
-     "status": "accepted",
-     "note": "Mask tradition, undefeated record, and ring challenge all match Acatl’s lines.",
-     "quote": "The loser must remove their mask, while the victor keeps theirs on, retaining a sense of mystery that inspires others to step up and challenge them.",
-     "sentences": [
-      {
-       "t_raw": "Collective of Plenty의 **가면을 건 링 전통**은 진 사람이 가면을 벗고 이긴 사람이 가면을 쓴 채 도전을 불러일으키는 방식이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "비옥한 터전의 **가면을 건 링 전통**은 진 사람이 가면을 벗고 이긴 사람이 가면을 쓴 채 도전을 불러일으키는 방식이다."
-      },
-      {
-       "t_raw": "Acatl은 인간이나 사우리안을 상대로도 가면을 벗도록 몰린 적이 없다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 인간이나 용을 상대로도 가면을 벗도록 몰린 적이 없다."
-      },
-      {
-       "t_raw": "자신이 누구인지 의심되면 링에서 맞서 보라며, 말과 글은 속여도 **근육은 거짓말하지 않는다**고 단언한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자신이 누구인지 의심되면 링에서 맞서 보라며, 말과 글은 속여도 **근육은 거짓말하지 않는다**고 단언한다."
-      },
-      {
-       "t_raw": "그에게 가면은 도전을 받아 온 기록이자, 족장임을 의심할 때 링으로 향하게 하는 근거로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그에게 가면은 도전을 받아 온 기록이자, 족장임을 의심할 때 링으로 향하게 하는 근거로 보인다."
+       "t": "복면을 벗기지 않았다는 말과 링에서 맞서라는 답은 말보다 몸으로 증명하는 방식을 택한 셈이다."
       }
      ],
      "sources": [
@@ -1324,382 +1142,6 @@
        "paragraph": "A23",
        "wiki_refs": []
       },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A26",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A27",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "능력",
-     "latin_left": []
-    },
-    {
-     "section": "능력",
-     "status": "accepted",
-     "note": "Repelling the Abyss, the tribe’s values, and the strength contest are all stated.",
-     "quote": "When the Abyss invaded Natlan, Acatl and his tribe were able to repel the invaders.",
-     "sentences": [
-      {
-       "t_raw": "Acatl과 부족은 Natlan에 Abyss가 침공했을 때 침입자들을 격퇴했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀과 부족은 나타에 심연이 침공했을 때 침입자들을 격퇴했다."
-      },
-      {
-       "t_raw": "이들은 믿는 일이 있으면 그냥 하라며, 격식보다 용기와 인내, 링에서 물러서지 않는 의지를 중시한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이들은 믿는 일이 있으면 그냥 하라며, 격식보다 용기와 인내, 링에서 물러서지 않는 의지를 중시한다."
-      },
-      {
-       "t_raw": "Acatl은 어느 부족이 가장 강한지 겨루는 대회가 피를 끓게 한다고 말할 만큼 힘겨루기를 즐긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 어느 부족이 가장 강한지 겨루는 대회가 피를 끓게 한다고 말할 만큼 힘겨루기를 즐긴다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Profile",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Journey of Stars and Flames"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      }
-     ],
-     "heading": "능력",
-     "latin_left": []
-    },
-    {
-     "section": "능력",
-     "status": "trimmed",
-     "note": "Q2’s adult responsibility is a youth risking life in battle; Q9 is only excitement about a tribal contest. The sentence treats that contest as the same danger and as proof of Acatl’s strength.",
-     "quote": "For one so young to risk life and limb on the field of battle... This, too, is a responsibility we adults must bear.",
-     "sentences": [
-      {
-       "t_raw": "Acatl은 어린 전사가 전장에서 목숨을 걸고 싸우는 일도 어른들이 짊어져야 할 책임이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 어린 전사가 전장에서 목숨을 걸고 싸우는 일도 어른들이 짊어져야 할 책임이라고 말한다."
-      },
-      {
-       "t_raw": "힘겨루기를 즐기면서도 그 위험을 어른의 책임으로 받아들이는 셈이며, 그의 강함은 승부욕과 책임감으로 함께 드러난다고 볼 수 있다.",
-       "interp": true,
-       "dropped": true,
-       "t": "힘겨루기를 즐기면서도 그 위험을 어른의 책임으로 받아들이는 셈이며, 그의 강함은 승부욕과 책임감으로 함께 드러난다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      }
-     ],
-     "heading": "능력",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "accepted",
-     "note": "All four sentences match the cited lines.",
-     "quote": "Aha, we meet again! Welcome to the Collective of Plenty, my friend!",
-     "sentences": [
-      {
-       "t_raw": "Acatl은 처음 만난 Traveler를 **먼 곳에서 온 친구**라 부르며 편하게 맞이하고, 자신이 Collective of Plenty의 족장임을 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 처음 만난 여행자를 **먼 곳에서 온 친구**라 부르며 편하게 맞이하고, 자신이 비옥한 터전의 족장임을 밝힌다."
-      },
-      {
-       "t_raw": "다시 만나면 나의 친구라며 반가워하고, Traveler의 담대한 기세를 **‘희망’의 영웅**이라는 별칭과 연결해 부족의 젊은이들이 배울 만하다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다시 만나면 나의 친구라며 반가워하고, 여행자의 담대한 기세를 **'희망'의 영웅**이라는 별칭과 연결해 부족의 젊은이들이 배울 만하다고 말한다."
-      },
-      {
-       "t_raw": "Varesa가 Traveler가 Epic Feast Showdown에 참가했다고 전했을 때는 믿기 어려워했고, Natlan을 위해 많이 해 준 점을 두고 작은 감사의 표시라도 하려 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바레사가 여행자가 Epic Feast Showdown에 참가했다고 전했을 때는 믿기 어려워했고, 나타를 위해 많이 해 준 점을 두고 작은 감사의 표시라도 하려 한다."
-      },
-      {
-       "t_raw": "Traveler를 손님에서 반가운 친구로, 나아가 부족의 본보기로 대하는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "여행자를 손님에서 반가운 친구로, 나아가 부족의 본보기로 대하는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A9",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A14",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
-       "paragraph": "A18",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Epic Feast Showdown"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "accepted",
-     "note": "Uncle, the empty house, the fee waiver, permission and telling the tribe, and giving Acatl the credit are all in the English.",
-     "quote": "Uncle Acatl is our chief, by the way! Who better than the chief to introduce you to the tribe, right?",
-     "sentences": [
-      {
-       "t_raw": "Varesa는 Acatl을 **삼촌**이라 부르고, Orchard Repose에서는 Acatl을 데려오려 했으나 집에 없었다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바레사는 아카틀을 **삼촌**이라 부르고, 과수원 나들이에서는 아카틀을 데려오려 했으나 집에 없었다고 말한다."
-      },
-      {
-       "t_raw": "Acatl은 Sage Supreme에서 Atolli와 이야기해 Traveler 일행의 비용을 면제하기로 하고, Varesa는 Akademiya로 떠나기 전 Acatl의 허락을 받아야 한다거나 상황을 Acatl과 부족에 먼저 알려야 한다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 가장 현명한 자에서 아톨리와 이야기해 여행자 일행의 비용을 면제하기로 하고, 바레사는 아카데미아로 떠나기 전 아카틀의 허락을 받아야 한다거나 상황을 아카틀과 부족에 먼저 알려야 한다고 한다."
-      },
-      {
-       "t_raw": "Ardent Land of Plenty에서는 공로를 모두 Acatl 삼촌에게 돌린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "뜨겁고 비옥한 땅에서는 공로를 모두 아카틀 삼촌에게 돌린다."
-      },
-      {
-       "t_raw": "Varesa가 친족 호칭을 쓰면서도 족장의 결정을 따르는 관계로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "바레사가 친족 호칭을 쓰면서도 족장의 결정을 따르는 관계로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Orchard Repose",
-       "quest_ko": "과수원 나들이",
-       "version": "5.5",
-       "speaker": "Varesa"
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage Supreme",
-       "quest_ko": "가장 현명한 자",
-       "version": "5.5",
-       "speaker": "Varesa"
-      },
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Varesa"
-      },
-      {
-       "kind": "quest",
-       "quest": "Orchard Repose",
-       "quest_ko": "과수원 나들이",
-       "version": "5.5",
-       "speaker": "Varesa"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ardent Land of Plenty",
-       "quest_ko": "뜨겁고 비옥한 땅",
-       "version": "5.5",
-       "speaker": "Varesa"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "disputed",
-     "note": "Q13 does not say the group is tribe members or that he accepts them. Good luck is not stated as a farewell, and (2) treats that farewell as given.",
-     "quote": "Group dinners? More like group mooching! You guys always seem to end up at my place... So shameless.",
-     "sentences": [
-      {
-       "t_raw": "부족민들에게 Acatl은 단체 식사가 자기 집으로 모이는 일을 ‘집단 얹혀살이’라 놀리면서도 받아 주는 족장이다.",
-       "interp": false,
-       "dropped": true,
-       "t": "부족민들에게 아카틀은 단체 식사가 자기 집으로 모이는 일을 '집단 얹혀살이'라 놀리면서도 받아 주는 족장이다."
-      },
-      {
-       "t_raw": "Paimon에게는 작별 인사로 ‘행운을 빌어’라고 남겼고, Paimon은 그를 족장이라 부르며 그 말이 앞일을 아는 데서 나온 것 같다고 짐작한다.",
-       "interp": false,
-       "dropped": true,
-       "t": "페이몬에게는 작별 인사로 '행운을 빌어'라고 남겼고, 페이몬은 그를 족장이라 부르며 그 말이 앞일을 아는 데서 나온 것 같다고 짐작한다."
-      },
-      {
-       "t_raw": "Paimon이 Acatl의 작별 인사를 족장의 말로 받아들이는 셈이다.",
-       "interp": true,
-       "dropped": true,
-       "t": "페이몬이 아카틀의 작별 인사를 족장의 말로 받아들이는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "accepted",
-     "note": "The mask question, the ring answer, and muscles never lying are all in the English; (3) only restates that check as interpretation.",
-     "quote": "Words can deceive, writing can mislead, but muscles... never lie.",
-     "sentences": [
-      {
-       "t_raw": "Acatl은 늘 가면을 쓰고 다니며, 부족의 젊은이들도 “족장이 늘 가면을 쓰고 있는데 어떻게 사칭범이 아닌 줄 아느냐”고 묻곤 한다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카틀은 늘 가면을 쓰고 다니며, 부족의 젊은이들도 “족장이 늘 가면을 쓰고 있는데 어떻게 사칭범이 아닌 줄 아느냐”고 묻곤 한다고 전한다."
-      },
-      {
-       "t_raw": "이에 대한 Acatl의 답은 간단하다. 자신이 누구인지 의심되면 링에서 맞붙어 보라는 것이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이에 대한 아카틀의 답은 간단하다. 자신이 누구인지 의심되면 링에서 맞붙어 보라는 것이다."
-      },
-      {
-       "t_raw": "말은 속일 수 있고 글은 오도할 수 있지만 근육은 거짓말하지 않는다는 말로 그 이유를 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "말은 속일 수 있고 글은 오도할 수 있지만 근육은 거짓말하지 않는다는 말로 그 이유를 설명한다."
-      },
-      {
-       "t_raw": "그래서 가면 너머의 얼굴은 **링에서의 실력**으로 대신 확인되는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그래서 가면 너머의 얼굴은 **링에서의 실력**으로 대신 확인되는 셈이다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Acatl",
@@ -1738,33 +1180,33 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "trimmed",
-     "note": "Sentience is called a remarkable discovery, while only the mushrooms' origin is a mystery. (3) adds that the meaning of sentience is still an unconfirmed clue.",
+     "status": "accepted",
+     "note": "All sentences are supported by Q1, Q24 and Q25.",
      "quote": "So, the mushrooms in the orchard are sentient? What a remarkable discovery!",
      "sentences": [
       {
-       "t_raw": "Collective of Plenty에서 녹색 버섯의 기원은 오래도록 수수께끼였다.",
+       "t_raw": "부족에게 초록 버섯의 기원은 오래 미스터리였다.",
        "interp": false,
        "dropped": false,
-       "t": "비옥한 터전에서 녹색 버섯의 기원은 오래도록 수수께끼였다."
+       "t": "부족에게 초록 버섯의 기원은 오래 미스터리였다."
       },
       {
-       "t_raw": "Acatl은 버섯과 대화한 사람이 아무도 없다며 그런 이야기가 먼 것 같다고 말하면서도, 과수원의 버섯이 지성 있다는 발견에는 놀라움을 표한다.",
+       "t_raw": "버섯이 지성 있다는 말에 Acatl은 놀라운 발견이라고 반응한다.",
        "interp": false,
        "dropped": false,
-       "t": "아카틀은 버섯과 대화한 사람이 아무도 없다며 그런 이야기가 먼 것 같다고 말하면서도, 과수원의 버섯이 지성 있다는 발견에는 놀라움을 표한다."
+       "t": "버섯이 지성 있다는 말에 아카틀은 놀라운 발견이라고 반응한다."
       },
       {
-       "t_raw": "그러면서도 무언가 불길한 일이 벌어지고 있을 수 있으니 부족도 돕겠다고 한다.",
+       "t_raw": "Sumeru의 학자가 부족에게 버섯에 대해 경고했기에, 그곳 누군가 버섯 신을 알고 있을 것이라는 이야기가 남는다.",
        "interp": false,
        "dropped": false,
-       "t": "그러면서도 무언가 불길한 일이 벌어지고 있을 수 있으니 부족도 돕겠다고 한다."
+       "t": "수메르의 학자가 부족에게 버섯에 대해 경고했기에, 그곳 누군가 버섯 신을 알고 있을 것이라는 이야기가 남는다."
       },
       {
-       "t_raw": "버섯의 기원과 지성의 의미는 **확정된 답 없이** 단서로 남는다.",
+       "t_raw": "버섯의 기원과 의식, 그리고 버섯 신에 관한 의문은 풀리지 않은 수수께끼로 남는다.",
        "interp": true,
-       "dropped": true,
-       "t": "버섯의 기원과 지성의 의미는 **확정된 답 없이** 단서로 남는다."
+       "dropped": false,
+       "t": "버섯의 기원과 의식, 그리고 버섯 신에 관한 의문은 풀리지 않은 수수께끼로 남는다."
       }
      ],
      "sources": [
@@ -1784,163 +1226,48 @@
       },
       {
        "kind": "quest",
-       "quest": "The Meaning of Courage",
-       "quest_ko": "용기란 무엇인가",
+       "quest": "Smokeless War",
+       "quest_ko": "총칼 없는 전쟁",
        "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Meaning of Courage",
-       "quest_ko": "용기란 무엇인가",
-       "version": "5.5",
-       "speaker": "Acatl"
+       "speaker": "Paimon"
       }
      ],
      "heading": "떡밥과 수수께끼",
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "trimmed",
-     "note": "Paimon is quoting Acatl: he is the one who says a Sumeru scholar's warning means someone there must know the mushroom god.",
-     "quote": "Acatl was saying that, since a scholar from Sumeru warned the tribe about the mushrooms, someone there must know about the mushroom god.",
-     "sentences": [
-      {
-       "t_raw": "Sumeru 학자가 부족에 버섯에 대해 경고했기 때문에, Paimon은 그곳의 누군가가 버섯 신을 알 것이라고 본다.",
-       "interp": false,
-       "dropped": true,
-       "t": "수메르 학자가 부족에 버섯에 대해 경고했기 때문에, 페이몬은 그곳의 누군가가 버섯 신을 알 것이라고 본다."
-      },
-      {
-       "t_raw": "Varesa는 Akademiya로 가려면 Uncle Acatl의 허락을 먼저 받아야 한다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바레사는 아카데미아로 가려면 Uncle Acatl의 허락을 먼저 받아야 한다고 말한다."
-      },
-      {
-       "t_raw": "그래서 버섯 신을 둘러싼 단서는 Sumeru와 Akademiya로 이어지면서도, 또한 Acatl의 허락이라는 문턱에 걸려 있는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그래서 버섯 신을 둘러싼 단서는 수메르와 아카데미아로 이어지면서도, 또한 아카틀의 허락이라는 문턱에 걸려 있는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Varesa"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Uncle Acatl"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Th—That's Acatl... Chief! We don't know where we are!",
-     "sentences": [
-      {
-       "t_raw": "안개가 끼어 앞이 잘 보이지 않는 상황에서 Acatl은 너희가 부족에 함께 있지 않느냐고 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "안개가 끼어 앞이 잘 보이지 않는 상황에서 아카틀은 너희가 부족에 함께 있지 않느냐고 되묻는다."
-      },
-      {
-       "t_raw": "이어 무슨 일이 있느냐고, 무엇을 느끼느냐고 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어 무슨 일이 있느냐고, 무엇을 느끼느냐고 묻는다."
-      },
-      {
-       "t_raw": "Paimon은 상대를 “Acatl... Chief!”라고 부르면서도 자신들이 어디에 있는지 모르겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 상대를 “아카틀... Chief!”라고 부르면서도 자신들이 어디에 있는지 모르겠다고 말한다."
-      },
-      {
-       "t_raw": "안개 속에서의 위치와 상황은 **혼란으로 남는다**.",
-       "interp": true,
-       "dropped": false,
-       "t": "안개 속에서의 위치와 상황은 **혼란으로 남는다**."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Acatl"
-      },
-      {
-       "kind": "quest",
-       "quest": "Smokeless War",
-       "quest_ko": "총칼 없는 전쟁",
-       "version": "5.5",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Chief"
-     ]
-    },
-    {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "To be added.",
+     "status": "accepted",
+     "note": "The greetings, farewells and idle quote are all in the material, and the interpretation is mild.",
+     "quote": "Just do it!",
      "sentences": [
       {
-       "t_raw": "특정 대화 갈래를 처음 따라가면 플레이어에게 **세 개**를 준다.",
+       "t_raw": "Acatl은 대기 중에 **'Just do it!'**을 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "특정 대화 갈래를 처음 따라가면 플레이어에게 **세 개**를 준다."
+       "t": "아카틀은 대기 중에 **'그냥 해!'**을 말한다.",
+       "polish": {
+        "from": "아카틀은 대기 중에 **'Just do it!'**을 말한다.",
+        "text": "아카틀은 대기 중에 **'그냥 해!'**을 말한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "모습 항목은 아직 추가되지 않은 상태다.",
+       "t_raw": "완료 전에는 'Hello.', 완료 후에는 'Hey there.'라는 인사가 열리고, 작별에는 'See you.'와 'Safe travels, friend!'가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "모습 항목은 아직 추가되지 않은 상태다."
+       "t": "완료 전에는 '안녕하세요.', 완료 후에는 '어이, 안녕.'라는 인사가 열리고, 작별에는 '또 봐.'와 '좋은 여행 되세요, 친구!'가 있다.",
+       "polish": {
+        "from": "완료 전에는 'Hello.', 완료 후에는 'Hey there.'라는 인사가 열리고, 작별에는 'See you.'와 'Safe travels, friend!'가 있다.",
+        "text": "완료 전에는 '안녕하세요.', 완료 후에는 '어이, 안녕.'라는 인사가 열리고, 작별에는 '또 봐.'와 '좋은 여행 되세요, 친구!'가 있다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "완료 전에 열리는 인사와 완료 후에 열리는 인사가 따로 있다.",
-       "interp": false,
+       "t_raw": "짧은 대사들이 손님을 맞고 보내는 그의 태도를 드러낸다.",
+       "interp": true,
        "dropped": false,
-       "t": "완료 전에 열리는 인사와 완료 후에 열리는 인사가 따로 있다."
-      },
-      {
-       "t_raw": "대화 중에는 획득 표시가 붙은 줄도 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대화 중에는 획득 표시가 붙은 줄도 있다."
+       "t": "짧은 대사들이 손님을 맞고 보내는 그의 태도를 드러낸다."
       }
      ],
      "sources": [
@@ -1948,16 +1275,8 @@
        "kind": "wiki",
        "page": "Acatl",
        "revision": 1741826,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Profile > Appearance",
-       "paragraph": "A5",
+       "section": "Idle Quotes",
+       "paragraph": "A6",
        "wiki_refs": []
       },
       {
@@ -1981,58 +1300,6 @@
        "page": "Acatl",
        "revision": 1741826,
        "section": "Dialogue",
-       "paragraph": "A20",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Safe travels, friend!",
-     "sentences": [
-      {
-       "t_raw": "대기 중에는 ‘그냥 해!’라는 대사를 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대기 중에는 '그냥 해!'라는 대사를 한다."
-      },
-      {
-       "t_raw": "**작별 인사**로는 ‘또 봐.’라는 선택지와 ‘안녕히 가게, 친구!’라는 인사가 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**작별 인사**로는 '또 봐.'라는 선택지와 '안녕히 가게, 친구!'라는 인사가 있다."
-      },
-      {
-       "t_raw": "For Our Saurian Companion에서는 Paimon에게 ‘행운을 빌어.’라고 말하는 장면도 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "용 동료를 위해에서는 페이몬에게 '행운을 빌어.'라고 말하는 장면도 있다."
-      },
-      {
-       "t_raw": "이런 인사들은 Acatl이 상대를 친근한 벗으로 대하는 태도를 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 인사들은 아카틀이 상대를 친근한 벗으로 대하는 태도를 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Idle Quotes",
-       "paragraph": "A6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Acatl",
-       "revision": 1741826,
-       "section": "Dialogue",
        "paragraph": "A28",
        "wiki_refs": []
       },
@@ -2043,13 +1310,6 @@
        "section": "Dialogue",
        "paragraph": "A29",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
       }
      ],
      "heading": "여담",
@@ -2057,49 +1317,72 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Try some, try some! How do they taste?",
+     "status": "accepted",
+     "note": "All sentences are supported by A15-A19, Q13, A2, A20 and A5.",
+     "quote": "Now that you're here, it's time to sit back and enjoy a bit of signature Collective of Plenty-style hospitality! C'mon, make yourself at home!",
      "sentences": [
       {
-       "t_raw": "음식을 권할 때는 ‘먹어 봐, 먹어 봐! 맛이 어때?’라는 대사를 한다.",
+       "t_raw": "재회하면 그는 여전히 행복하고 잘 먹고 지내는지 묻고, **Collective of Plenty-style hospitality**를 내세우며 집처럼 쉬라고 권한다.",
        "interp": false,
        "dropped": false,
-       "t": "음식을 권할 때는 '먹어 봐, 먹어 봐! 맛이 어때?'라는 대사를 한다."
+       "t": "재회하면 그는 여전히 행복하고 잘 먹고 지내는지 묻고, **Collective of Plenty식 환대**를 내세우며 집처럼 쉬라고 권한다.",
+       "polish": {
+        "from": "재회하면 그는 여전히 행복하고 잘 먹고 지내는지 묻고, **Collective of Plenty-style hospitality**를 내세우며 집처럼 쉬라고 권한다.",
+        "text": "재회하면 그는 여전히 행복하고 잘 먹고 지내는지 묻고, **Collective of Plenty식 환대**를 내세우며 집처럼 쉬라고 권한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "단체 저녁을 두고는 ‘단체 얻어먹기’라며 결국 자기 집에 오게 된다고 말한다.",
+       "t_raw": "이어 **fine dining**의 힘을 보라 하고, 대화에는 'Don't mind if I do!'라는 말도 있다.",
        "interp": false,
        "dropped": false,
-       "t": "단체 저녁을 두고는 '단체 얻어먹기'라며 결국 자기 집에 오게 된다고 말한다."
+       "t": "이어 **파인 다이닝**의 힘을 보라 하고, 대화에는 '그럼 사양하지 않을게!'라는 말도 있다.",
+       "polish": {
+        "from": "이어 **fine dining**의 힘을 보라 하고, 대화에는 'Don't mind if I do!'라는 말도 있다.",
+        "text": "이어 **파인 다이닝**의 힘을 보라 하고, 대화에는 '그럼 사양하지 않을게!'라는 말도 있다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "대접 장면에는 ‘사양하지 않겠어!’라는 응답도 있다.",
+       "t_raw": "그는 상대를 'hope'의 영웅이라 부르며 젊은이들이 배울 대담함이라 칭찬한다.",
        "interp": false,
        "dropped": false,
-       "t": "대접 장면에는 '사양하지 않겠어!'라는 응답도 있다."
+       "t": "그는 상대를 'hope'의 영웅이라 부르며 젊은이들이 배울 대담함이라 칭찬한다."
       },
       {
-       "t_raw": "이런 대사들은 호탕한 음식 대접과 장난스러운 불평이 함께 드러나는 사소한 장면으로 보인다.",
-       "interp": true,
+       "t_raw": "집단 식사는 '단체 얹혀먹기'라며 결국 그의 집에 모인다고 말한다.",
+       "interp": false,
        "dropped": false,
-       "t": "이런 대사들은 호탕한 음식 대접과 장난스러운 불평이 함께 드러나는 사소한 장면으로 보인다."
+       "t": "집단 식사는 '단체 얹혀먹기'라며 결국 그의 집에 모인다고 말한다."
+      },
+      {
+       "t_raw": "특정 대화 분기를 처음 따라가면 세 개가 지급되고, 대화 중 획득 장면도 있으며, 외형 항목은 'To be added.'로 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정 대화 분기를 처음 따라가면 세 개가 지급되고, 대화 중 획득 장면도 있으며, 외형 항목은 '추가 예정.'으로 남아 있다.",
+       "polish": {
+        "from": "특정 대화 분기를 처음 따라가면 세 개가 지급되고, 대화 중 획득 장면도 있으며, 외형 항목은 'To be added.'로 남아 있다.",
+        "text": "특정 대화 분기를 처음 따라가면 세 개가 지급되고, 대화 중 획득 장면도 있으며, 외형 항목은 '추가 예정.'으로 남아 있다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
       {
-       "kind": "quest",
-       "quest": "Spell of Unity",
-       "quest_ko": "단결의 마법",
-       "version": "5.5",
-       "speaker": "Acatl"
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "For Our Saurian Companion",
-       "quest_ko": "용 동료를 위해",
-       "version": "5.5",
-       "speaker": "Acatl"
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -2108,18 +1391,60 @@
        "section": "Dialogue",
        "paragraph": "A17",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Dialogue",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Acatl",
+       "revision": 1741826,
+       "section": "Dialogue",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "For Our Saurian Companion",
+       "quest_ko": "용 동료를 위해",
+       "version": "5.5",
+       "speaker": "Acatl"
       }
      ],
      "heading": "여담",
-     "latin_left": []
+     "latin_left": [
+      "Collective of Plenty"
+     ]
     }
    ],
    "quote_boxes": [
     {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "하하, 맞아! 우리 부족은 당신을 만나기를 정말 기다리고 있어.",
+     "en": "Haha, that's right! Our tribe can't wait to meet you.",
+     "speaker": "Acatl",
+     "source": {
+      "kind": "quest",
+      "quest": "Journey of Stars and Flames",
+      "quest_ko": "별과 불의 여정",
+      "version": "5.3",
+      "speaker": "Acatl"
+     },
+     "t": "하하, 맞아! 우리 부족은 당신을 만나기를 정말 기다리고 있어.",
+     "speaker_ko": "아카틀"
+    },
+    {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그런데 Uncle Acatl은 우리 족장이야! 부족을 소개하는 데 족장보다 나은 사람이 어디 있겠어, 그렇지?",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "참, Uncle Acatl은 우리 추장이야! 우리 부족을 소개하는 데 추장보다 나은 사람이 어디 있겠어, 그렇지?",
      "en": "Uncle Acatl is our chief, by the way! Who better than the chief to introduce you to the tribe, right?",
      "speaker": "Varesa",
      "source": {
@@ -2129,30 +1454,13 @@
       "version": "5.5",
       "speaker": "Varesa"
      },
-     "t": "그런데 Uncle Acatl은 우리 족장이야! 부족을 소개하는 데 족장보다 나은 사람이 어디 있겠어, 그렇지?",
+     "t": "참, 아카틀 아저씨는 우리 추장이야! 우리 부족을 소개하는 데 추장보다 나은 사람이 어디 있겠어, 그렇지?",
      "speaker_ko": "바레사"
     },
     {
-     "section": "성격과 신념",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "단체 저녁? 그보다는 단체 얹혀살기지! 너희는 항상 결국 내 집에 오잖아... 정말 뻔뻔하군.",
-     "en": "Group dinners? More like group mooching! You guys always seem to end up at my place... So shameless.",
-     "speaker": "Acatl",
-     "source": {
-      "kind": "quest",
-      "quest": "For Our Saurian Companion",
-      "quest_ko": "용 동료를 위해",
-      "version": "5.5",
-      "speaker": "Acatl"
-     },
-     "t": "단체 저녁? 그보다는 단체 얹혀살기지! 너희는 항상 결국 내 집에 오잖아... 정말 뻔뻔하군.",
-     "speaker_ko": "아카틀"
-    },
-    {
-     "section": "작중 행적 — Abyss 침공과 Night Kingdom",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — 5.3 Night Kingdom의 결전",
+     "status": "accepted",
+     "note": "Faithful translation.",
      "t_raw": "우리가 네 곁에 있으니, 너는 결코 혼자 싸우지 않을 거야!",
      "en": "With us by your side, you'll never fight alone!",
      "speaker": "Acatl",
@@ -2167,10 +1475,44 @@
      "speaker_ko": "아카틀"
     },
     {
-     "section": "작중 행적 — The Meaning of Courage",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그래서 과수원의 버섯들이 지성체라고? 정말 놀라운 발견이군!",
+     "section": "작중 행적 — 5.5 Collective of Plenty의 사건들",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "오랜만이군! Varesa가 자네가 Epic Feast Showdown에 신청했다고 말했을 때, 나는 거의 믿을 수 없었네!",
+     "en": "It's been a while! When Varesa told me you signed up for the Epic Feast Showdown, I could barely believe it!",
+     "speaker": "Acatl",
+     "source": {
+      "kind": "quest",
+      "quest": "Sage Supreme",
+      "quest_ko": "가장 현명한 자",
+      "version": "5.5",
+      "speaker": "Acatl"
+     },
+     "t": "오랜만이군! 바레사가 자네가 연회 대전에 신청했다고 말했을 때, 나는 거의 믿을 수 없었네!",
+     "speaker_ko": "아카틀"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "헤헤, 맞아! 나는 Uncle Acatl을 데려오고 싶었는데 그가 집에 없었어. 그래서 아마 너는 나랑 함께하게 된 셈이야.",
+     "en": "Hehe, that's right! I was hoping to bring Uncle Acatl with me, but he wasn't home. So, I guess you're stuck with me.",
+     "speaker": "Varesa",
+     "source": {
+      "kind": "quest",
+      "quest": "Orchard Repose",
+      "quest_ko": "과수원 나들이",
+      "version": "5.5",
+      "speaker": "Varesa"
+     },
+     "t": "헤헤, 맞아! 나는 아카틀 아저씨를 데려오고 싶었는데 그가 집에 없었어. 그래서 아마 너는 나랑 함께하게 된 셈이야.",
+     "speaker_ko": "바레사"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Acatl's line in The Meaning of Courage (Q24).",
+     "t_raw": "그럼, 과수원의 버섯들이 지성 있다고? 정말 놀라운 발견이군!",
      "en": "So, the mushrooms in the orchard are sentient? What a remarkable discovery!",
      "speaker": "Acatl",
      "source": {
@@ -2180,143 +1522,24 @@
       "version": "5.5",
       "speaker": "Acatl"
      },
-     "t": "그래서 과수원의 버섯들이 지성체라고? 정말 놀라운 발견이군!",
+     "t": "그럼, 과수원의 버섯들이 지성 있다고? 정말 놀라운 발견이군!",
      "speaker_ko": "아카틀"
-    },
-    {
-     "section": "작중 행적 — For Our Saurian Companion",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그렇게 어린 이가 전장에서 목숨을 걸다니... 이것 역시 우리 어른들이 짊어져야 할 책임이다.",
-     "en": "For one so young to risk life and limb on the field of battle... This, too, is a responsibility we adults must bear.",
-     "speaker": "Acatl",
-     "source": {
-      "kind": "quest",
-      "quest": "For Our Saurian Companion",
-      "quest_ko": "용 동료를 위해",
-      "version": "5.5",
-      "speaker": "Acatl"
-     },
-     "t": "그렇게 어린 이가 전장에서 목숨을 걸다니... 이것 역시 우리 어른들이 짊어져야 할 책임이다.",
-     "speaker_ko": "아카틀"
-    },
-    {
-     "section": "작중 행적 — Sage Supreme",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그런데 두 사람이 온다는 이야기를 듣고 Atolli와 상의해서, 두 사람의 비용은 면제해 주기로 했네!",
-     "en": "But, when I heard you two were coming, I talked to Atolli, and we agreed to waive your expenses!",
-     "speaker": "Acatl",
-     "source": {
-      "kind": "quest",
-      "quest": "Sage Supreme",
-      "quest_ko": "가장 현명한 자",
-      "version": "5.5",
-      "speaker": "Acatl"
-     },
-     "t": "그런데 두 사람이 온다는 이야기를 듣고 아톨리와 상의해서, 두 사람의 비용은 면제해 주기로 했네!",
-     "speaker_ko": "아카틀"
-    },
-    {
-     "section": "작중 행적 — Smokeless War",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Acatl이, Sumeru 학자가 부족에게 버섯에 대해 경고했으니 그곳 누군가는 버섯 신에 대해 알 것이라고 말하고 있었다.",
-     "en": "Acatl was saying that, since a scholar from Sumeru warned the tribe about the mushrooms, someone there must know about the mushroom god.",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Smokeless War",
-      "quest_ko": "총칼 없는 전쟁",
-      "version": "5.5",
-      "speaker": "Paimon"
-     },
-     "t": "아카틀이, 수메르 학자가 부족에게 버섯에 대해 경고했으니 그곳 누군가는 버섯 신에 대해 알 것이라고 말하고 있었다.",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "작중 행적 — Orchard Repose와 Ardent Land of Plenty",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "참고로 Uncle Acatl은 우리 족장이야! 부족을 소개하는 데 족장보다 나은 사람이 어디 있겠어, 그렇지?",
-     "en": "Uncle Acatl is our chief, by the way! Who better than the chief to introduce you to the tribe, right?",
-     "speaker": "Varesa",
-     "source": {
-      "kind": "quest",
-      "quest": "Orchard Repose",
-      "quest_ko": "과수원 나들이",
-      "version": "5.5",
-      "speaker": "Varesa"
-     },
-     "t": "참고로 Uncle Acatl은 우리 족장이야! 부족을 소개하는 데 족장보다 나은 사람이 어디 있겠어, 그렇지?",
-     "speaker_ko": "바레사"
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "나도 같은 생각이야. 어느 부족이 가장 강한지 겨루는 대회만큼 피가 끓는 일도 없지, 안 그래?",
-     "en": "I'm with you on that. Nothing gets the blood pumping like a contest to see which tribe's the strongest, huh?",
-     "speaker": "Acatl",
-     "source": {
-      "kind": "quest",
-      "quest": "For Our Saurian Companion",
-      "quest_ko": "용 동료를 위해",
-      "version": "5.5",
-      "speaker": "Acatl"
-     },
-     "t": "나도 같은 생각이야. 어느 부족이 가장 강한지 겨루는 대회만큼 피가 끓는 일도 없지, 안 그래?",
-     "speaker_ko": "아카틀"
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Acatl 삼촌은 우리 족장이야, 그런데! 부족을 소개하는 데 족장만 한 사람이 또 어디 있겠어, 그렇지?",
-     "en": "Uncle Acatl is our chief, by the way! Who better than the chief to introduce you to the tribe, right?",
-     "speaker": "Varesa",
-     "source": {
-      "kind": "quest",
-      "quest": "Orchard Repose",
-      "quest_ko": "과수원 나들이",
-      "version": "5.5",
-      "speaker": "Varesa"
-     },
-     "t": "아카틀 삼촌은 우리 족장이야, 그런데! 부족을 소개하는 데 족장만 한 사람이 또 어디 있겠어, 그렇지?",
-     "speaker_ko": "바레사"
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Acatl이 말하기를, Sumeru 학자가 부족에 버섯에 대해 경고했으니 그곳의 누군가는 버섯 신에 대해 알 것이라고 했어.",
-     "en": "Acatl was saying that, since a scholar from Sumeru warned the tribe about the mushrooms, someone there must know about the mushroom god.",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Smokeless War",
-      "quest_ko": "총칼 없는 전쟁",
-      "version": "5.5",
-      "speaker": "Paimon"
-     },
-     "t": "아카틀이 말하기를, 수메르 학자가 부족에 버섯에 대해 경고했으니 그곳의 누군가는 버섯 신에 대해 알 것이라고 했어.",
-     "speaker_ko": "페이몬"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "먹어 봐, 먹어 봐! 맛이 어때?",
-     "en": "Try some, try some! How do they taste?",
+     "status": "accepted",
+     "note": "Faithful translation of Acatl's line in For Our Saurian Companion (Q13).",
+     "t_raw": "단체 식사? 그보다는 단체로 얹혀먹기지! 너희는 항상 결국 내 집에 모이게 되는 것 같구나... 정말 뻔뻔하네.",
+     "en": "Group dinners? More like group mooching! You guys always seem to end up at my place... So shameless.",
      "speaker": "Acatl",
      "source": {
       "kind": "quest",
-      "quest": "Spell of Unity",
-      "quest_ko": "단결의 마법",
+      "quest": "For Our Saurian Companion",
+      "quest_ko": "용 동료를 위해",
       "version": "5.5",
       "speaker": "Acatl"
      },
-     "t": "먹어 봐, 먹어 봐! 맛이 어때?",
+     "t": "단체 식사? 그보다는 단체로 얹혀먹기지! 너희는 항상 결국 내 집에 모이게 되는 것 같구나... 정말 뻔뻔하네.",
      "speaker_ko": "아카틀"
     }
    ]

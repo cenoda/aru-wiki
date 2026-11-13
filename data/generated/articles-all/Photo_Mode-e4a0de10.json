@@ -1,0 +1,741 @@
+{
+ "node": "Photo Mode",
+ "articles": [
+  {
+   "node": "Photo Mode",
+   "from_version": "1.4",
+   "cutoff": "2021-04-27T00:00:00Z",
+   "input": [
+    {
+     "page": "Photo Mode",
+     "url": "https://genshin-impact.fandom.com/wiki/Photo_Mode",
+     "revision": 148551
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 846,
+   "input_cut": false,
+   "input_hash": "8ffc3c964e2a",
+   "writer": "ds-pro,glm-flash,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences supported by the English.",
+     "quote": "Photo Mode is system in Genshin Impact that allows the player to take photos of their characters and the surrounding environment.",
+     "sentences": [
+      {
+       "t_raw": "Photo Mode는 Genshin Impact에서 자신의 캐릭터와 주변 환경을 사진으로 남기는 **사진 촬영 시스템**이며, Paimon Menu에서 열 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사진 촬영 모드는 원신에서 자신의 캐릭터와 주변 환경을 사진으로 남기는 **사진 촬영 시스템**이며, 페이몬 메뉴에서 열 수 있다."
+      },
+      {
+       "t_raw": "설정에는 Hide character, Hide personal info, Hide UI가 있고, Hide character는 캐릭터와 도구를, Hide personal info는 플레이어 이름과 UID를 숨긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "설정에는 캐릭터 숨기기, 개인 정보 숨기기, UI 숨기기가 있고, 캐릭터 숨기기는 캐릭터와 도구를, 개인 정보 숨기기는 플레이어 이름과 UID를 숨긴다.",
+       "polish": {
+        "from": "설정에는 숨기 character, 숨기 personal info, Hide UI가 있고, 숨기 character는 캐릭터와 도구를, 숨기 personal info는 플레이어 이름과 UID를 숨긴다.",
+        "text": "설정에는 캐릭터 숨기기, 개인 정보 숨기기, UI 숨기기가 있고, 캐릭터 숨기기는 캐릭터와 도구를, 개인 정보 숨기기는 플레이어 이름과 UID를 숨긴다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Expressions는 캐릭터의 얼굴 표정을, Poses는 캐릭터의 자세를 바꾼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Expressions는 캐릭터의 얼굴 표정을, Poses는 캐릭터의 자세를 바꾼다."
+      },
+      {
+       "t_raw": "사진을 찍는 자리에서 표정과 자세까지 바꿀 수 있고 원치 않는 요소를 지울 수 있다는 점을 보면, Photo Mode는 화면을 그대로 담는 수단에 머무르지 않고 한 장면을 **연출**하는 도구로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사진을 찍는 자리에서 표정과 자세까지 바꿀 수 있고 원치 않는 요소를 지울 수 있다는 점을 보면, 사진 촬영 모드는 화면을 그대로 담는 수단에 머무르지 않고 한 장면을 **연출**하는 도구로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Expressions",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A27",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "UI",
+      "UID",
+      "Expressions",
+      "Poses"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Photo Mode is system in Genshin Impact that allows the player to take photos of their characters and the surrounding environment.",
+     "sentences": [
+      {
+       "t_raw": "**Photo Mode**는 Genshin Impact에서 자신의 캐릭터와 주변 환경을 사진으로 찍는 시스템이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**사진 촬영 모드**는 원신에서 자신의 캐릭터와 주변 환경을 사진으로 찍는 시스템이다."
+      },
+      {
+       "t_raw": "**Paimon Menu**에서 열어 사용한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**페이몬 메뉴**에서 열어 사용한다."
+      },
+      {
+       "t_raw": "촬영 대상에 캐릭터와 주변 환경이 함께 들어가므로, 인물과 그 인물이 놓인 자리를 한 장에 같이 담는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "촬영 대상에 캐릭터와 주변 환경이 함께 들어가므로, 인물과 그 인물이 놓인 자리를 한 장에 같이 담는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported; the grouping of settings versus Expressions/Poses follows from the material.",
+     "quote": "Expressions change the facial expression of the character.",
+     "sentences": [
+      {
+       "t_raw": "Photo Mode에서는 카메라 설정과 Expressions, Poses를 다룰 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사진 촬영 모드에서는 카메라 설정과 Expressions, Poses를 다룰 수 있다."
+      },
+      {
+       "t_raw": "카메라 설정은 배경 흐림이나 캐릭터 숨기기처럼 찍히는 화면 쪽을 바꾸고, Expressions와 Poses는 찍히는 캐릭터의 표정과 자세를 바꾼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카메라 설정은 배경 흐림이나 캐릭터 숨기기처럼 찍히는 화면 쪽을 바꾸고, Expressions와 Poses는 찍히는 캐릭터의 표정과 자세를 바꾼다."
+      },
+      {
+       "t_raw": "화면을 손보는 항목과 대상를 손보는 항목이 나뉘어 있어, 같은 장면이라도 무엇을 만지느냐에 따라 다른 결과로 남는 구조인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "화면을 손보는 항목과 대상를 손보는 항목이 나뉘어 있어, 같은 장면이라도 무엇을 만지느냐에 따라 다른 결과로 남는 구조인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Expressions",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A27",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Expressions",
+      "Poses",
+      "Expressions",
+      "Poses"
+     ]
+    },
+    {
+     "section": "촬영 설정",
+     "status": "quote_mismatch",
+     "note": null,
+     "quote": "(Settings) Camera",
+     "sentences": [
+      {
+       "t_raw": "사진 촬영에 앞서 Photo Mode에서는 여러 설정을 조정할 수 있다. 설정은 크게 Camera와 Other 두 부분으로 나뉜다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사진 촬영에 앞서 사진 촬영 모드에서는 여러 설정을 조정할 수 있다. 설정은 크게 Camera와 Other 두 부분으로 나뉜다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "촬영 설정",
+     "latin_left": [
+      "Camera",
+      "Other"
+     ]
+    },
+    {
+     "section": "촬영 설정",
+     "status": "quote_mismatch",
+     "note": null,
+     "quote": "(Settings) Background Blur",
+     "sentences": [
+      {
+       "t_raw": "Camera 항목에서는 Background Blur 기능으로 배경을 흐릿하게 만들 수 있으며, Blur distance와 Blur radius를 각각 조절해 흐림의 거리와 범위를 다듬는다. 카메라 자체의 움직임도 세밀하게 통제되는데, Horizontal movement와 Vertical movement로 수평·수직 이동을 조정하고 Zoom으로 화면을 확대할 수 있다. 촬영 도중 위치가 마음에 들지 않으면 Reset Camera로 카메라를 초기화하면 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Camera 항목에서는 Background Blur 기능으로 배경을 흐릿하게 만들 수 있으며, Blur distance와 Blur radius를 각각 조절해 흐림의 거리와 범위를 다듬는다. 카메라 자체의 움직임도 세밀하게 통제되는데, Horizontal movement와 Vertical movement로 수평·수직 이동을 조정하고 Zoom으로 화면을 확대할 수 있다. 촬영 도중 위치가 마음에 들지 않으면 Reset Camera로 카메라를 초기화하면 된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "촬영 설정",
+     "latin_left": [
+      "Camera",
+      "Background Blur",
+      "Blur",
+      "Blur",
+      "Horizontal",
+      "Vertical",
+      "Zoom",
+      "Reset Camera"
+     ]
+    },
+    {
+     "section": "촬영 설정",
+     "status": "accepted",
+     "note": "Says Hide UI is in the Other group, but the list puts Hide UI after Camera Movement, not under Other. It also states what Look at camera does (the character looks at the camera) and that Hide UI gives a clean scene, which the English never says; it only gives the option names.",
+     "quote": "Hide personal info - hides player name and UID",
+     "sentences": [
+      {
+       "t_raw": "Other 항목에는 Look at camera, Hide character, Hide personal info 같은 옵션이 모여 있다. Look at camera와 Hide character는 캐릭터의 등장 방식을 조절하고, Hide character는 캐릭터와 gadgets를 화면에서 숨길 수 있게 해 준다. Hide personal info는 플레이어 이름과 UID를 가려 준다. 한편 Hide UI는 Camera Movement 뒤에 이어지는 별도 항목으로, Camera Movement 안에는 Horizontal movement, Vertical movement, Zoom, Reset Camera 같은 세부 설정이 이어진다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "기타 항목에는 카메라 보기, 캐릭터 숨기기, 개인 정보 숨기기 같은 옵션이 모여 있다. 카메라 보기와 캐릭터 숨기기는 캐릭터의 등장 방식을 조절하고, 캐릭터 숨기기는 캐릭터와 도구를 화면에서 숨길 수 있게 해 준다. 개인 정보 숨기기는 플레이어 이름과 UID를 가려 준다. 한편 UI 숨기기는 카메라 움직임 뒤에 이어지는 별도 항목으로, 카메라 움직임 안에는 가로 움직임, 세로 움직임, 줌, 카메라 초기화 같은 세부 설정이 이어진다.",
+       "polish": {
+        "from": "Other 항목에는 Look at camera, 숨기 character, 숨기 personal info 같은 옵션이 모여 있다. Look at camera와 숨기 character는 캐릭터의 등장 방식을 조절하고, 숨기 character는 캐릭터와 gadgets를 화면에서 숨길 수 있게 해 준다. 숨기 personal info는 플레이어 이름과 UID를 가려 준다. 한편 Hide UI는 Camera Movement 뒤에 이어지는 별도 항목으로, Camera Movement 안에는 Horizontal movement, Vertical movement, Zoom, Reset Camera 같은 세부 설정이 이어진다.",
+        "text": "기타 항목에는 카메라 보기, 캐릭터 숨기기, 개인 정보 숨기기 같은 옵션이 모여 있다. 카메라 보기와 캐릭터 숨기기는 캐릭터의 등장 방식을 조절하고, 캐릭터 숨기기는 캐릭터와 도구를 화면에서 숨길 수 있게 해 준다. 개인 정보 숨기기는 플레이어 이름과 UID를 가려 준다. 한편 UI 숨기기는 카메라 움직임 뒤에 이어지는 별도 항목으로, 카메라 움직임 안에는 가로 움직임, 세로 움직임, 줌, 카메라 초기화 같은 세부 설정이 이어진다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "촬영 설정",
+     "latin_left": [
+      "UID",
+      "UI"
+     ]
+    },
+    {
+     "section": "표정 — Expressions",
+     "status": "accepted",
+     "note": "Supported; the expression list and unlock conditions match.",
+     "quote": "The second and third expressions are unlocked at Friendship Level 2 and 4 respectively and vary from character to character.",
+     "sentences": [
+      {
+       "t_raw": "Expressions는 캐릭터의 얼굴 표정을 바꾸는 항목이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Expressions는 캐릭터의 얼굴 표정을 바꾸는 항목이다."
+      },
+      {
+       "t_raw": "첫 번째 표정인 **Default**는 캐릭터를 얻으면 열리고, 두 번째와 세 번째 표정은 **Friendship Level 2와 4**에서 각각 열리며 캐릭터마다 다르다.",
+       "interp": false,
+       "dropped": false,
+       "t": "첫 번째 표정인 **Default**는 캐릭터를 얻으면 열리고, 두 번째와 세 번째 표정은 **Friendship Level 2와 4**에서 각각 열리며 캐릭터마다 다르다."
+      },
+      {
+       "t_raw": "목록에는 Default, Happy, Wink, Disappointed, Smiley, Serious, Expectant, Confident, Pensive가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목록에는 Default, 기쁨, Wink, Disappointed, Smiley, Serious, Expectant, Confident, 고민이 있다."
+      },
+      {
+       "t_raw": "그래서 캐릭터를 얻으면 Default가 열리고, Friendship Level을 올리면서 캐릭터별로 준비된 표정이 차례로 늘어나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 캐릭터를 얻으면 Default가 열리고, Friendship Level을 올리면서 캐릭터별로 준비된 표정이 차례로 늘어나는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Expressions",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Expressions",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Expressions",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Expressions",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Expressions",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Expressions",
+       "paragraph": "A21",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "표정 — Expressions",
+     "latin_left": [
+      "Expressions",
+      "Default",
+      "Friendship Level",
+      "Default",
+      "Wink",
+      "Disappointed",
+      "Smiley",
+      "Serious",
+      "Expectant",
+      "Confident",
+      "Default",
+      "Friendship Level"
+     ]
+    },
+    {
+     "section": "포즈 — Poses",
+     "status": "accepted",
+     "note": "Supported; the interpretation about the names is hedged and adds no facts.",
+     "quote": "The list of Poses include:",
+     "sentences": [
+      {
+       "t_raw": "**Poses**는 캐릭터의 자세를 바꾸는 기능이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**Poses**는 캐릭터의 자세를 바꾸는 기능이다."
+      },
+      {
+       "t_raw": "목록에는 **Alpha Pose**, Standby, Thinking이 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목록에는 **Alpha Pose**, Standby, Thinking이 제시된다."
+      },
+      {
+       "t_raw": "세 항목이 나란히 놓인 구성은 자세 선택지가 세 갈래로 나뉘어 있음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세 항목이 나란히 놓인 구성은 자세 선택지가 세 갈래로 나뉘어 있음을 보여 준다."
+      },
+      {
+       "t_raw": "Standby와 Thinking은 일상적인 몸가짐을, Alpha Pose는 추상적인 출발점을 연상시키는 이름으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Standby와 Thinking은 일상적인 몸가짐을, Alpha Pose는 추상적인 출발점을 연상시키는 이름으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A28",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A31",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "포즈 — Poses",
+     "latin_left": [
+      "Poses",
+      "Alpha Pose",
+      "Standby",
+      "Thinking",
+      "Standby",
+      "Thinking",
+      "Alpha Pose"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported: Other, Look at camera, Hide personal info (name and UID) and Hide UI are all listed. The interpretation about fine-grained control over what appears in the photo is reasonable.",
+     "quote": "Hide UI",
+     "sentences": [
+      {
+       "t_raw": "설정 목록에는 **Other** 항목이 있고, **Look at camera**라는 설정도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "설정 목록에는 **기타** 항목이 있고, **카메라 보기**라는 설정도 있다.",
+       "polish": {
+        "from": "설정 목록에는 **Other** 항목이 있고, **Look at camera**라는 설정도 있다.",
+        "text": "설정 목록에는 **기타** 항목이 있고, **카메라 보기**라는 설정도 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Hide personal info는 플레이어 이름과 UID를 숨긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "개인 정보 숨기기는 플레이어 이름과 UID를 숨긴다.",
+       "polish": {
+        "from": "숨기 personal info는 플레이어 이름과 UID를 숨긴다.",
+        "text": "개인 정보 숨기기는 플레이어 이름과 UID를 숨긴다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Hide UI라는 설정도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Hide UI라는 설정도 있다."
+      },
+      {
+       "t_raw": "촬영 전에 시선, 개인 정보, UI처럼 화면에 드러나는 요소를 따로 만지는 항목이 함께 있는 셈이라, 사진에 무엇을 남길지 세밀하게 고르는 구성으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "촬영 전에 시선, 개인 정보, UI처럼 화면에 드러나는 요소를 따로 만지는 항목이 함께 있는 셈이라, 사진에 무엇을 남길지 세밀하게 고르는 구성으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Settings",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "UID",
+      "Hide UI",
+      "UI"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "trimmed",
+     "note": "Sentence 2 calls Alpha Pose a minor ('자잘한') item in the list. The English gives only the names and no basis for ranking or importance. The comparison with Standby and Thinking is a stretch beyond the material.",
+     "quote": "Alpha Pose",
+     "sentences": [
+      {
+       "t_raw": "Poses 목록에는 **Alpha Pose**가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Poses 목록에는 **Alpha Pose**가 있다."
+      },
+      {
+       "t_raw": "Standby와 Thinking도 같은 목록에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Standby와 Thinking도 같은 목록에 있다."
+      },
+      {
+       "t_raw": "동작을 연상시키는 Standby, Thinking과 달리 **Alpha Pose**는 이름만으로 자세의 성격이 잘 드러나지 않아, 목록에서 이색적인 자잘한 항목으로 볼 수 있다.",
+       "interp": true,
+       "dropped": true,
+       "t": "동작을 연상시키는 Standby, Thinking과 달리 **Alpha Pose**는 이름만으로 자세의 성격이 잘 드러나지 않아, 목록에서 이색적인 자잘한 항목으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A28",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Photo Mode",
+       "revision": 148551,
+       "section": "Poses",
+       "paragraph": "A31",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Poses",
+      "Alpha Pose",
+      "Standby",
+      "Thinking"
+     ]
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

@@ -1,0 +1,1090 @@
+{
+ "node": "Livre",
+ "articles": [
+  {
+   "node": "Livre",
+   "from_version": "4.0",
+   "cutoff": "2023-09-26T00:00:00Z",
+   "input": [
+    {
+     "page": "Livre",
+     "url": "https://genshin-impact.fandom.com/wiki/Livre",
+     "revision": 1336503
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 25,
+    "web": 0
+   },
+   "input_chars": 1295,
+   "input_cut": false,
+   "input_hash": "c524d5284d74",
+   "writer": "ds,glm-flash,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences follow from the English; the interpretation about market rivalry is reasonable given the 'market fluctuations' and rivalry lines.",
+     "quote": "Livre maintains a rivalry with his younger brother, Caron, who owns Lepaute Horlogerie and dabbles into making clockwork toys as a side gig from his usual business of designing clocks.",
+     "sentences": [
+      {
+       "t_raw": "Livre는 Fontaine의 Court of Fontaine: Quartier Lyonnais에 자리한 Leschots's clockwork workshop을 운영하는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리브르는 폰타인의 폰타인성: 리오네 구역에 자리한 Leschots의 시계태엽 공방을 운영하는 인물이다.",
+       "polish": {
+        "from": "리브르는 폰타인의 폰타인성: 리오네 구역에 자리한 Leschots의 clockwork workshop을 운영하는 인물이다.",
+        "text": "리브르는 폰타인의 폰타인성: 리오네 구역에 자리한 Leschots의 시계태엽 공방을 운영하는 인물이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그는 시계 장치로 움직이는 기계 장난감을 전문으로 다루는 상점의 주인이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 시계 장치로 움직이는 기계 장난감을 전문으로 다루는 상점의 주인이다."
+      },
+      {
+       "t_raw": "시계를 설계하는 Lepaute Horlogerie의 주인인 동생 Caron과는 서로 견제하는 사이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시계를 설계하는 르포트 시계점의 주인인 동생 카론과는 서로 견제하는 사이다."
+      },
+      {
+       "t_raw": "두 형제의 경쟁은 가게의 판매 실적을 두고 벌어지는 신경전으로도 번져, Livre는 Fontaine 장난감 상권의 분위기를 보여주는 인물이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 형제의 경쟁은 가게의 판매 실적을 두고 벌어지는 신경전으로도 번져, 리브르는 폰타인 장난감 상권의 분위기를 보여주는 인물이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Leschots Clockwork Workshop",
+       "revision": 1348766,
+       "section": "Lore",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Toy War: Shots Fired"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Leschots Clockwork Workshop",
+       "revision": 1348766,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Toy War: Shots Fired"
+        },
+        {
+         "type": "npc",
+         "name": "Livre"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Shots Fired",
+       "quest_ko": "개전! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Leschots"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Claims the Toy War begins at this workshop, calls it playful yet serious, and says Livre is important in the document. None of this is in the English.",
+     "quote": "I'm Livre, the owner of this shop. Welcome.",
+     "sentences": [
+      {
+       "t_raw": "Livre는 Court of Fontaine의 Quartier Lyonnais에 있는 Leschots Clockwork Workshop의 주인으로, 기계식 태엽 장난감을 만드는 장난감 공방을 운영하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리브르는 폰타인성의 리오네 구역에 있는 레쇼의 태엽 공방의 주인으로, 기계식 태엽 장난감을 만드는 장난감 공방을 운영하고 있다."
+      },
+      {
+       "t_raw": "가게에는 Alberre와 Arbon이라는 직원이 있으며, Freminet에게는 장난감 디자인을 의뢰하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가게에는 알베르와 아르본이라는 직원이 있으며, 프레미네에게는 장난감 디자인을 의뢰하고 있다."
+      },
+      {
+       "t_raw": "여행자를 모험가 길드가 추천한 손님이라며 반갑게 맞이하고 자신을 이 공방의 주인 Livre라고 소개하는 모습은, 'The Toy War' 퀘스트에서 그가 공방 주인으로 손님을 맞이하는 인물임을 보여 주는 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "여행자를 모험가 길드가 추천한 손님이라며 반갑게 맞이하고 자신을 이 공방의 주인 리브르라고 소개하는 모습은, 'The Toy War' 퀘스트에서 그가 공방 주인으로 손님을 맞이하는 인물임을 보여 주는 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Leschots Clockwork Workshop",
+       "revision": 1348766,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Toy War: Shots Fired"
+        },
+        {
+         "type": "npc",
+         "name": "Livre"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Shots Fired",
+       "quest_ko": "개전! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "The Toy War"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The Caron clockwork-toy side gig is stated, but the claim that the rivalry is the key to understanding the workshop's story is not in the English.",
+     "quote": "We specialize in machines that function via those principles.",
+     "sentences": [
+      {
+       "t_raw": "그는 손님에게 \"여기서 구매하러 오셨나요? 재미있는 장난감이 가득하다\"며 장난감 판매를 직접 홍보하고, 태엽 원리로 작동하는 기계들을 전문으로 다룬다고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 손님에게 \"여기서 구매하러 오셨나요? 재미있는 장난감이 가득하다\"며 장난감 판매를 직접 홍보하고, 태엽 원리로 작동하는 기계들을 전문으로 다룬다고 설명한다."
+      },
+      {
+       "t_raw": "Livre는 동생 Caron과 경쟁 관계를 유지하고, Caron이 운영하는 Lepaute Horlogerie도 시계 디자인이라는 본업 외에 태엽 장난감 제작에 손을 대고 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "리브르는 동생 카론과 경쟁 관계를 유지하고, 카론이 운영하는 르포트 시계점도 시계 디자인이라는 본업 외에 태엽 장난감 제작에 손을 대고 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Leschots Clockwork Workshop",
+       "revision": 1348766,
+       "section": "Lore",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Toy War: Shots Fired"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All stated in the dialogue and the workshop description.",
+     "quote": "Each of them is a high-quality, fresh design. Well... though the puppet's dialogue might get bothersome after a while.",
+     "sentences": [
+      {
+       "t_raw": "Livre는 Leschots Clockwork Shop을 운영하며 시계 장치로 움직이는 장난감을 만든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리브르는 레쇼의 태엽 공방을 운영하며 시계 장치로 움직이는 장난감을 만든다."
+      },
+      {
+       "t_raw": "Alberre와 Arbon은 직원이고, Freminet은 장난감 디자인을 의뢰받아 제작한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알베르와 아르본은 직원이고, 프레미네는 장난감 디자인을 의뢰받아 제작한다."
+      },
+      {
+       "t_raw": "가게에는 장난감 새와 인형, 달리는 시계 장치 말, 트럼펫을 부는 Blubberbeasts, 뒤뚱거리는 펭귄 등이 있으며, Livre는 이를 고품질이고 참신한 설계라고 내세운다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가게에는 장난감 새와 인형, 달리는 시계 장치 말, 트럼펫을 부는 탱탱 물범, 뒤뚱거리는 펭귄 등이 있으며, 리브르는 이를 고품질이고 참신한 설계라고 내세운다."
+      },
+      {
+       "t_raw": "다만 인형의 대화는 시간이 지나면 거슬릴 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 인형의 대화는 시간이 지나면 거슬릴 수 있다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Leschots Clockwork Workshop",
+       "revision": 1348766,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Toy War: Shots Fired"
+        },
+        {
+         "type": "npc",
+         "name": "Livre"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Facts match the dialogue and the rivalry line; the interpretation is a mild, reasonable reading.",
+     "quote": "The penguins in our store weren't made by me — they're consignments made by a young lad named Freminet.",
+     "sentences": [
+      {
+       "t_raw": "가게의 펭귄은 Livre가 만든 것이 아니라 Freminet이라는 젊은이가 맡아 만든 위탁품이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가게의 펭귄은 리브르가 만든 것이 아니라 프레미네라는 젊은이가 맡아 만든 위탁품이다."
+      },
+      {
+       "t_raw": "Livre는 Freminet을 매우 잘한다고 평가하며 자신의 남동생과 닮았다고 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리브르는 프레미네를 매우 잘한다고 평가하며 자신의 남동생과 닮았다고 여긴다."
+      },
+      {
+       "t_raw": "한때 그에게 시계 장치 장난감 개발을 제안할 생각이 있었지만 Freminet이 침묵하자 억지로 밀어붙이지는 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한때 그에게 시계 장치 장난감 개발을 제안할 생각이 있었지만 프레미네가 침묵하자 억지로 밀어붙이지는 않았다."
+      },
+      {
+       "t_raw": "한편 Livre는 시계 설계가 본업이면서 시계 장치 장난감에도 손대는 Lepaute Horlogerie의 주인인 남동생 Caron과 경쟁 관계에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 리브르는 시계 설계가 본업이면서 시계 장치 장난감에도 손대는 르포트 시계점의 주인인 남동생 카론과 경쟁 관계에 있다."
+      },
+      {
+       "t_raw": "Freminet을 남동생과 닮았다고 보는 점과 Caron과의 경쟁 관계를 함께 보면, Freminet을 대하는 태도에는 동생과의 비교가 자리한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "프레미네를 남동생과 닮았다고 보는 점과 카론과의 경쟁 관계를 함께 보면, 프레미네를 대하는 태도에는 동생과의 비교가 자리한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Leschots Clockwork Workshop",
+       "revision": 1348766,
+       "section": "Lore",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Toy War: Shots Fired"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Toy War",
+     "status": "accepted",
+     "note": "Matches Q1, Q4, Q7 and Q13; the interpretation follows from 'it's all about the gimmick'.",
+     "quote": "That's just ordinary market fluctuations. Once our Champion Duelist lineup takes the stage, we'll have him beat, easy!",
+     "sentences": [
+      {
+       "t_raw": "Adventurers' Guild의 추천을 받고 온 두 사람을 맞이한 Livre는 자신이 이 가게의 주인이라고 소개하며 환영한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모험가 길드의 추천을 받고 온 두 사람을 맞이한 리브르는 자신이 이 가게의 주인이라고 소개하며 환영한다."
+      },
+      {
+       "t_raw": "그는 그 일을 **시장 변동**일 뿐이라며, Champion Duelist 라인업이 무대에 오르면 쉽게 이길 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 그 일을 **시장 변동**일 뿐이라며, 결투 대리인 라인업이 무대에 오르면 쉽게 이길 수 있다고 말한다."
+      },
+      {
+       "t_raw": "그는 모험가의 이야기를 넣은 장난감을 촌스럽다고 하면서도, 이야기에 문제가 있어도 괜찮고 기믹이 전부라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 모험가의 이야기를 넣은 장난감을 촌스럽다고 하면서도, 이야기에 문제가 있어도 괜찮고 기믹이 전부라고 말한다."
+      },
+      {
+       "t_raw": "이런 태도는 그가 상품의 서사보다 기믹을 앞세우려는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 태도는 그가 상품의 서사보다 기믹을 앞세우려는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Shots Fired",
+       "quest_ko": "개전! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Shots Fired",
+       "quest_ko": "개전! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Shots Fired",
+       "quest_ko": "개전! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Shots Fired",
+       "quest_ko": "개전! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      }
+     ],
+     "heading": "작중 행적 — The Toy War",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Toy War",
+     "status": "accepted",
+     "note": "Q13 only says story flaws are fine and the gimmick matters. Nothing says he sees a commotion as material for a sales strategy, so that is an added claim.",
+     "quote": "Hehe, that guy... So, is that toy alchemically-powered?",
+     "sentences": [
+      {
+       "t_raw": "조사 보고를 들은 그는 미션이 실패한 것 아니냐며, 아무것도 찾지 못했느냐고 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조사 보고를 들은 그는 미션이 실패한 것 아니냐며, 아무것도 찾지 못했느냐고 되묻는다."
+      },
+      {
+       "t_raw": "그는 Bennett를 모델로 한 장난감이라는 이야기를 듣고 '그렇구나' 하고 받아들이며, 그 장난감이 연금술로 움직이는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 베넷을 모델로 한 장난감이라는 이야기를 듣고 '그렇구나' 하고 받아들이며, 그 장난감이 연금술로 움직이는지 묻는다."
+      },
+      {
+       "t_raw": "이는 이야기의 결점은 괜찮고 기믹이 핵심이라는 태도를 보여 주는 발언으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "이는 이야기의 결점은 괜찮고 기믹이 핵심이라는 태도를 보여 주는 발언으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Shots Fired",
+       "quest_ko": "개전! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Heating Up",
+       "quest_ko": "백열화! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Shots Fired",
+       "quest_ko": "개전! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Shots Fired",
+       "quest_ko": "개전! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      }
+     ],
+     "heading": "작중 행적 — The Toy War",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Heating Up과 An Armistice",
+     "status": "accepted",
+     "note": "Q18 is a threat to the listener: say more and you'll eat my knuckle sandwich. The Korean says Livre will eat the fist, which reverses the meaning.",
+     "quote": "If you ask me, I don't think that idiot would do something like that either...",
+     "sentences": [
+      {
+       "t_raw": "Livre는 왜 늦게 오느냐는 말에 자신이 미안하다며 다음에는 더 일찍 오겠다고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리브르는 왜 늦게 오느냐는 말에 자신이 미안하다며 다음에는 더 일찍 오겠다고 답한다."
+      },
+      {
+       "t_raw": "그는 조사에서 많은 것을 얻었느냐고 묻고, Bennett를 모델로 한 장난감 이야기를 듣자 그 **바보**가 그런 일을 할 것 같지는 않다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 조사에서 많은 것을 얻었느냐고 묻고, 베넷을 모델로 한 장난감 이야기를 듣자 그 **바보**가 그런 일을 할 것 같지는 않다고 말한다."
+      },
+      {
+       "t_raw": "말을 더 하면 자신의 주먹맛을 보게 될 거라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "말을 더 하면 자신의 주먹맛을 보게 될 거라고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Heating Up",
+       "quest_ko": "백열화! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Heating Up",
+       "quest_ko": "백열화! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Heating Up",
+       "quest_ko": "백열화! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Heating Up",
+       "quest_ko": "백열화! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Heating Up",
+       "quest_ko": "백열화! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Heating Up",
+       "quest_ko": "백열화! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — Heating Up과 An Armistice",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Heating Up과 An Armistice",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "I'm not here to talk to you about what happened before. I'm just going to ask you this: that adventurer toy was made because of me, right?",
+     "sentences": [
+      {
+       "t_raw": "Caron을 만난 Livre는 지난 일을 말하러 온 게 아니라며 모험가 장난감이 자신 때문에 만들어졌는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카론을 만난 리브르는 지난 일을 말하러 온 게 아니라며 모험가 장난감이 자신 때문에 만들어졌는지 묻는다."
+      },
+      {
+       "t_raw": "그는 Caron에게 잘 지내는 것 같다고 말하지만, 오랜만에 만났는데 그런 말을 고르냐고 되받고 Caron의 감상적인 태도는 변하지 않았다고 평한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 카론에게 잘 지내는 것 같다고 말하지만, 오랜만에 만났는데 그런 말을 고르냐고 되받고 카론의 감상적인 태도는 변하지 않았다고 평한다."
+      },
+      {
+       "t_raw": "동생이 모든 일을 혼자 끙끙 앓는 탓이라 하고, 자신은 Vision도 모험가도 아니라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동생이 모든 일을 혼자 끙끙 앓는 탓이라 하고, 자신은 신의 눈도 모험가도 아니라고 밝힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      }
+     ],
+     "heading": "작중 행적 — Heating Up과 An Armistice",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Heating Up과 An Armistice",
+     "status": "accepted",
+     "note": "The fact is in Q22. The interpretation is reasonable.",
+     "quote": "Huh, so Livre's \"other plan\" was to give the data to his brother.",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Livre의 **'다른 계획'**이 데이터를 동생에게 건네는 일이었음을 알아차린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 리브르의 **'다른 계획'**이 데이터를 동생에게 건네는 일이었음을 알아차린다."
+      },
+      {
+       "t_raw": "자신을 Vision도 모험가도 아니라고 말한 Livre가 데이터를 동생에게 넘기는 일은 그가 동생을 신경 쓰고 있음을 보여 주는 대목으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자신을 신의 눈도 모험가도 아니라고 말한 리브르가 데이터를 동생에게 넘기는 일은 그가 동생을 신경 쓰고 있음을 보여 주는 대목으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — Heating Up과 An Armistice",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is reasonable.",
+     "quote": "That's on my brother for twisting himself about into loops over everything.",
+     "sentences": [
+      {
+       "t_raw": "Livre는 동생 Caron을 “저 바보”라 부르며 찾아가겠다고 말하고, Caron이 모든 일에 몸을 비틀어 고민한다고 핀잔한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리브르는 동생 카론을 “저 바보”라 부르며 찾아가겠다고 말하고, 카론이 모든 일에 몸을 비틀어 고민한다고 핀잔한다."
+      },
+      {
+       "t_raw": "Paimon은 그런 성미가 이상하다며 사과를 받으려는 건 아닌지 의아해하지만, Caron이 말한 그대로의 사람이라며 웃는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 그런 성미가 이상하다며 사과를 받으려는 건 아닌지 의아해하지만, 카론이 말한 그대로의 사람이라며 웃는다."
+      },
+      {
+       "t_raw": "그런 그가 '다른 계획'으로 동생에게 데이터를 건네는 쪽을 택한 것은, 바보라 부르는 말과 실제 챙기는 행동 사이의 간극을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그런 그가 '다른 계획'으로 동생에게 데이터를 건네는 쪽을 택한 것은, 바보라 부르는 말과 실제 챙기는 행동 사이의 간극을 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Heating Up",
+       "quest_ko": "백열화! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Heating Up",
+       "quest_ko": "백열화! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Heating Up",
+       "quest_ko": "백열화! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "성격과 인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 인간관계",
+     "status": "accepted",
+     "note": "Q14 says only that he has no Vision and is not an adventurer. It does not say he defines himself as a merchant without a Vision, so the interpretation overreaches.",
+     "quote": "I don't have a Vision, nor am I an adventurer.",
+     "sentences": [
+      {
+       "t_raw": "Freminet의 솜씨를 칭찬하며 그를 동생과 겹쳐 보는 Livre는, 그에게 시계 장치 장난감을 함께 만들자고 생각했지만 침묵하자 억지로 권하지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레미네의 솜씨를 칭찬하며 그를 동생과 겹쳐 보는 리브르는, 그에게 시계 장치 장난감을 함께 만들자고 생각했지만 침묵하자 억지로 권하지 않았다."
+      },
+      {
+       "t_raw": "동생을 떠올리게 하는 상대에게조차 강요하지 않는 태도는 그가 상대의 침묵을 존중하는 방식으로 배려를 드러냄을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "동생을 떠올리게 하는 상대에게조차 강요하지 않는 태도는 그가 상대의 침묵을 존중하는 방식으로 배려를 드러냄을 보여준다."
+      },
+      {
+       "t_raw": "한편 Livre는 자신에게 Vision이 없고 모험가도 아니라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 리브르는 자신에게 신의 눈이 없고 모험가도 아니라고 말한다."
+      },
+      {
+       "t_raw": "가게 주인인 그가 자신은 Vision이 없고 모험가도 아니라고 말하는 대목은, 그가 스스로를 Vision도 없고 모험가도 아닌 사람으로 여긴다는 뜻으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "가게 주인인 그가 자신은 신의 눈이 없고 모험가도 아니라고 말하는 대목은, 그가 스스로를 신의 눈도 없고 모험가도 아닌 사람으로 여긴다는 뜻으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: An Armistice",
+       "quest_ko": "정전 협의! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Toy War: Shots Fired",
+       "quest_ko": "개전! 장난감 전쟁",
+       "version": "4.0",
+       "speaker": "Livre"
+      }
+     ],
+     "heading": "성격과 인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences match the idle quotes and dialogue.",
+     "quote": "It's so much quieter outside.",
+     "sentences": [
+      {
+       "t_raw": "Livre의 대사로는 “It's much quieter...”와 “It's so much quieter outside.”가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리브르의 대사로는 “훨씬 조용하네...”와 “밖이 훨씬 더 조용하네.”가 있다.",
+       "polish": {
+        "from": "리브르의 대사로는 “It의 much quieter...”와 “It의 so much quieter outside.”가 있다.",
+        "text": "리브르의 대사로는 “훨씬 조용하네...”와 “밖이 훨씬 더 조용하네.”가 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "대화 중에는 **clockwork goods**를 묻는 말이 나오고, 작별 인사로 “See you.”가 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대화 중에는 **clockwork goods**를 묻는 말이 나오고, 작별 인사로 “See you.”가 나온다."
+      },
+      {
+       "t_raw": "시간이 있으면 재미를 보러 들르라는 말도 남긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시간이 있으면 재미를 보러 들르라는 말도 남긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Idle Quotes",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Idle Quotes",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "See"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by A9-A13.",
+     "quote": "Usually, penguins live in the cold north, but I've also heard that some of them will appear in places with a warmer climate.",
+     "sentences": [
+      {
+       "t_raw": "상품 목록에는 달리는 clockwork horses, 트럼펫을 부는 clockwork Blubberbeasts, 제자리에서 뒤뚱거리며 흔들 수 있는 **penguins**가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상품 목록에는 달리는 시계태엽 말, 트럼펫을 부는 시계태엽 탱탱 물범, 제자리에서 뒤뚱거리며 흔들 수 있는 **펭귄**이 있다.",
+       "polish": {
+        "from": "상품 목록에는 달리는 clockwork horses, 트럼펫을 부는 clockwork 탱탱 물범, 제자리에서 뒤뚱거리며 흔들 수 있는 **penguins**가 있다.",
+        "text": "상품 목록에는 달리는 시계태엽 말, 트럼펫을 부는 시계태엽 탱탱 물범, 제자리에서 뒤뚱거리며 흔들 수 있는 **펭귄**이 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "손님이 Fontaine에 penguins가 있느냐고 묻자 Livre는 말이 정확하지 않았다며, 보통 penguins는 추운 북쪽에 살지만 따뜻한 기후의 장소에도 나타난다고 들었다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손님이 폰타인에 펭귄이 있느냐고 묻자 리브르는 말이 정확하지 않았다며, 보통 펭귄은 추운 북쪽에 살지만 따뜻한 기후의 장소에도 나타난다고 들었다고 한다.",
+       "polish": {
+        "from": "손님이 폰타인에 penguins가 있느냐고 묻자 리브르는 말이 정확하지 않았다며, 보통 penguins는 추운 북쪽에 살지만 따뜻한 기후의 장소에도 나타난다고 들었다고 한다.",
+        "text": "손님이 폰타인에 펭귄이 있느냐고 묻자 리브르는 말이 정확하지 않았다며, 보통 펭귄은 추운 북쪽에 살지만 따뜻한 기후의 장소에도 나타난다고 들었다고 한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "가게의 penguins는 Livre가 만든 것이 아니라 Freminet이라는 젊은이가 만든 **위탁품**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가게의 펭귄은 리브르가 만든 것이 아니라 프레미네라는 젊은이가 만든 **위탁품**이다.",
+       "polish": {
+        "from": "가게의 penguins는 리브르가 만든 것이 아니라 프레미네라는 젊은이가 만든 **위탁품**이다.",
+        "text": "가게의 펭귄은 리브르가 만든 것이 아니라 프레미네라는 젊은이가 만든 **위탁품**이다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Livre",
+       "revision": 1336503,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Q1.",
+     "t_raw": "둘 다 빠르시는군요... 모험가 길드가 추천한 분들답습니다. 저는 이 가게의 주인 Livre입니다. 어서 오세요.",
+     "en": "The two of you are quick indeed... As expected of people recommended by the Adventurers' Guild. I'm Livre, the owner of this shop. Welcome.",
+     "speaker": "Livre",
+     "source": {
+      "kind": "quest",
+      "quest": "The Toy War: Shots Fired",
+      "quest_ko": "개전! 장난감 전쟁",
+      "version": "4.0",
+      "speaker": "Livre"
+     },
+     "t": "둘 다 빠르시는군요... 모험가 길드가 추천한 분들답습니다. 저는 이 가게의 주인 리브르입니다. 어서 오세요.",
+     "speaker_ko": "리브르"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of Q6.",
+     "t_raw": "자, 친애하는 손님들, 마침 그 바보를 만나러 가야겠다고 생각하던 참이었어.",
+     "en": "Well, dear guests, I was just thinking that I should go pay that idiot a visit.",
+     "speaker": "Livre",
+     "source": {
+      "kind": "quest",
+      "quest": "The Toy War: Heating Up",
+      "quest_ko": "백열화! 장난감 전쟁",
+      "version": "4.0",
+      "speaker": "Livre"
+     },
+     "t": "자, 친애하는 손님들, 마침 그 바보를 만나러 가야겠다고 생각하던 참이었어.",
+     "speaker_ko": "리브르"
+    },
+    {
+     "section": "작중 행적 — The Toy War",
+     "status": "accepted",
+     "note": "Faithful translation of Q13.",
+     "t_raw": "이야기에 문제가 있어도 괜찮네. 중요한 건 기믹이지.",
+     "en": "It's fine if the story has issues. It's all about the gimmick.",
+     "speaker": "Livre",
+     "source": {
+      "kind": "quest",
+      "quest": "The Toy War: Shots Fired",
+      "quest_ko": "개전! 장난감 전쟁",
+      "version": "4.0",
+      "speaker": "Livre"
+     },
+     "t": "이야기에 문제가 있어도 괜찮네. 중요한 건 기믹이지.",
+     "speaker_ko": "리브르"
+    },
+    {
+     "section": "작중 행적 — Heating Up과 An Armistice",
+     "status": "accepted",
+     "note": "Faithful translation of Q22.",
+     "t_raw": "허, 그럼 Livre의 '다른 계획'은 데이터를 자기 동생에게 주는 거였구나.",
+     "en": "Huh, so Livre's \"other plan\" was to give the data to his brother.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Toy War: An Armistice",
+      "quest_ko": "정전 협의! 장난감 전쟁",
+      "version": "4.0",
+      "speaker": "Paimon"
+     },
+     "t": "허, 그럼 리브르의 '다른 계획'은 데이터를 자기 동생에게 주는 거였구나.",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "성격과 인간관계",
+     "status": "accepted",
+     "note": "Sentence 0 faithfully translates 'I don't have a Vision, nor am I an adventurer.' Vision is kept in English, which is allowed.",
+     "t_raw": "나는 Vision이 없고, 모험가도 아니다.",
+     "en": "I don't have a Vision, nor am I an adventurer.",
+     "speaker": "Livre",
+     "source": {
+      "kind": "quest",
+      "quest": "The Toy War: An Armistice",
+      "quest_ko": "정전 협의! 장난감 전쟁",
+      "version": "4.0",
+      "speaker": "Livre"
+     },
+     "t": "나는 신의 눈이 없고, 모험가도 아니다.",
+     "speaker_ko": "리브르"
+    }
+   ]
+  }
+ ]
+}

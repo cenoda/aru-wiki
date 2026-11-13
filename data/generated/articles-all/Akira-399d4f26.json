@@ -1,0 +1,528 @@
+{
+ "node": "Akira",
+ "articles": [
+  {
+   "node": "Akira",
+   "from_version": "2.3",
+   "cutoff": "2022-01-04T00:00:00Z",
+   "input": [
+    {
+     "page": "Akira",
+     "url": "https://genshin-impact.fandom.com/wiki/Akira",
+     "revision": 524923
+    }
+   ],
+   "input_counts": {
+    "mentions": 3,
+    "lines": 2,
+    "web": 0
+   },
+   "input_chars": 296,
+   "input_cut": false,
+   "input_hash": "ee01b3ceebb4",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported: A1, A2, M1 and Q1 cover them, and the interpretation follows from them.",
+     "quote": "Akira is a quest-exclusive NPC that appears in the Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul.",
+     "sentences": [
+      {
+       "t_raw": "Akira는 Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul에 등장하는 **퀘스트 전용 인물**이며, Arataki Gang의 **현재 구성원**으로 기록된 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아키라는 하늘 소의 장, Act I: 적금색의 영혼에 등장하는 **퀘스트 전용 인물**이며, 아라타키파의 **현재 구성원**으로 기록된 인물이다."
+      },
+      {
+       "t_raw": "그는 **Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"**에서 Genta, Mamoru와 함께 처음 모습을 드러냈고, The Oni's Pride에서는 “Hey Boss! Thought you'd have all the fun without us, huh?”라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **캐릭터 티저 - \"아라타키 이토: 이 정도는 해야지!!\"**에서 겐타, 마모루와 함께 처음 모습을 드러냈고, 오니의 긍지에서는 “이봐 사장님! 우리 없이 재미 다 보려고 했어?”라고 말한다.",
+       "polish": {
+        "from": "그는 **캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"**에서 겐타, 마모루와 함께 처음 모습을 드러냈고, 오니의 긍지에서는 “Hey Boss! Thought you'd have all the fun without us, huh?”라고 말한다.",
+        "text": "그는 **캐릭터 티저 - \"아라타키 이토: 이 정도는 해야지!!\"**에서 겐타, 마모루와 함께 처음 모습을 드러냈고, 오니의 긍지에서는 “이봐 사장님! 우리 없이 재미 다 보려고 했어?”라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Character Teaser에서 Genta, Mamoru와 함께 등장하고 Arataki Gang의 현재 구성원 명단에도 이름을 올린 점은 Akira가 **Arataki Gang의 일원**으로서 다른 구성원들과 함께 소개되는 인물임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "캐릭터 티저에서 겐타, 마모루와 함께 등장하고 아라타키파의 현재 구성원 명단에도 이름을 올린 점은 아키라가 **아라타키파의 일원**으로서 다른 구성원들과 함께 소개되는 인물임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arataki Gang",
+       "revision": 522671,
+       "section": "Members > Current",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Akira"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Act"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts come from A1 and M1. The interpretation is mild and reasonable.",
+     "quote": "Akira is a quest-exclusive NPC that appears in the Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul.",
+     "sentences": [
+      {
+       "t_raw": "Akira는 Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul에 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아키라는 하늘 소의 장, Act I: 적금색의 영혼에 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "Arataki Gang의 현재 구성원 명단에도 이름을 올리고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라타키파의 현재 구성원 명단에도 이름을 올리고 있다."
+      },
+      {
+       "t_raw": "퀘스트 전용 NPC이면서 Arataki Gang의 현재 구성원 명단에 포함된 인물이라는 점을 함께 보면, Akira는 퀘스트에서 등장하는 조직원이라는 위치가 강조되는 인물이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "퀘스트 전용 NPC이면서 아라타키파의 현재 구성원 명단에 포함된 인물이라는 점을 함께 보면, 아키라는 퀘스트에서 등장하는 조직원이라는 위치가 강조되는 인물이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arataki Gang",
+       "revision": 522671,
+       "section": "Members > Current",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Act",
+      "NPC",
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "A3 supports both sentences.",
+     "quote": "According to Arataki Itto, he snores very loudly.",
+     "sentences": [
+      {
+       "t_raw": "Arataki Itto에 따르면 Akira는 코를 매우 크게 곤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라타키 이토에 따르면 아키라는 코를 매우 크게 곤다."
+      },
+      {
+       "t_raw": "그의 코골이 설정은 Arataki Itto의 말을 통해 알려져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그의 코골이 설정은 아라타키 이토의 말을 통해 알려져 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Arataki Gang",
+     "status": "accepted",
+     "note": "A2 supports the first appearance. M2 and M3 support the Genta and Mamoru pages saying the same.",
+     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Genta and Mamoru.",
+     "sentences": [
+      {
+       "t_raw": "Akira는 Arataki Gang의 Genta, Mamoru와 함께 Character Teaser - Arataki Itto: That's How the Show Should Go!에서 **처음 등장**했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아키라는 아라타키파의 겐타, 마모루와 함께 캐릭터 티저 - 아라타키 이토: That의 이 정도는 해야지!!에서 **처음 등장**했다."
+      },
+      {
+       "t_raw": "Genta와 Mamoru의 기록에서도 세 사람이 해당 Teaser에서 함께 처음 등장했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겐타와 마모루의 기록에서도 세 사람이 해당 Teaser에서 함께 처음 등장했다고 전한다."
+      },
+      {
+       "t_raw": "세 사람이 같은 Teaser에서 함께 소개된 첫 장면인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세 사람이 같은 Teaser에서 함께 소개된 첫 장면인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 아라타키파",
+     "latin_left": [
+      "That",
+      "Teaser",
+      "Teaser"
+     ]
+    },
+    {
+     "section": "작중 행적 — Arataki Gang",
+     "status": "accepted",
+     "note": "Q1 and Q2 support both sentences. Rendering 'we're in it now' as having joined is a fair paraphrase. The interpretation is reasonable.",
+     "quote": "Hey Boss! Thought you'd have all the fun without us, huh?",
+     "sentences": [
+      {
+       "t_raw": "The Oni's Pride에서 Akira는 **'Boss'**라 부르며 자신들 없이 재미를 다 보려 했냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오니의 긍지에서 아키라는 **'Boss'**라 부르며 자신들 없이 재미를 다 보려 했냐고 묻는다."
+      },
+      {
+       "t_raw": "이어 이제 합류했으니 시간이 없다며 서두르자고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 이제 합류했으니 시간이 없다며 서두르자고 말한다."
+      },
+      {
+       "t_raw": "두 대사는 Akira가 합류 직후 보스에게 말을 건 뒤 곧바로 **행동을 재촉하는 인물**로 보이게 한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 대사는 아키라가 합류 직후 보스에게 말을 건 뒤 곧바로 **행동을 재촉하는 인물**로 보이게 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Akira"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Akira"
+      }
+     ],
+     "heading": "작중 행적 — 아라타키파",
+     "latin_left": [
+      "Boss"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "M1, A2, M2 and M3 support all the facts. The interpretation follows from them.",
+     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Genta and Mamoru.",
+     "sentences": [
+      {
+       "t_raw": "Akira는 Arataki Gang의 현재 구성원으로 기록되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아키라는 아라타키파의 현재 구성원으로 기록되어 있다."
+      },
+      {
+       "t_raw": "Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"에서 그는 Arataki Gang 동료인 Genta, Mamoru와 함께 처음 등장했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"에서 그는 아라타키파 동료인 겐타, 마모루와 함께 처음 등장했다."
+      },
+      {
+       "t_raw": "Genta와 Mamoru의 기록에서도 Akira는 같은 Character Teaser에서 함께 소개된 Arataki Gang 동료로 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겐타와 마모루의 기록에서도 아키라는 같은 캐릭터 티저에서 함께 소개된 아라타키파 동료로 언급된다."
+      },
+      {
+       "t_raw": "세 기록이 같은 동료 관계를 가리키므로, Akira는 Genta, Mamoru와 Arataki Gang의 동료 관계를 공유하는 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세 기록이 같은 동료 관계를 가리키므로, 아키라는 겐타, 마모루와 아라타키파의 동료 관계를 공유하는 인물로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arataki Gang",
+       "revision": 522671,
+       "section": "Members > Current",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "That"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The English line only says 'Boss'. It never says the addressee is Arataki Itto, so sentences 0 and 1 add that fact. Sentence 2 is an acceptable interpretation.",
+     "quote": "Hey Boss! Thought you'd have all the fun without us, huh?",
+     "sentences": [
+      {
+       "t_raw": "The Oni's Pride에서 Akira는 상대를 \"Boss\"라 부르며 \"Thought you'd have all the fun without us, huh?\"라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "오니의 긍지에서 아키라는 상대를 「사장님」라 부르며 \"우리 없이 재미 다 보려고 했어?\"라고 말한다.",
+       "polish": {
+        "from": "오니의 긍지에서 아키라는 상대를 「사장님」라 부르며 \"Thought you'd have all the fun without us, huh?\"라고 말한다.",
+        "text": "오니의 긍지에서 아키라는 상대를 「사장님」라 부르며 \"우리 없이 재미 다 보려고 했어?\"라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이 대사에서 그는 상대를 Boss라 부르고 'us'로 자신을 포함한 무리를 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "이 대사에서 그는 상대를 Boss라 부르고 'us'로 자신을 포함한 무리를 언급한다."
+      },
+      {
+       "t_raw": "Arataki Gang 구성원이라는 기록과 함께 보면, Akira가 Itto를 두목으로 여기며 동료들과 함께 움직이는 관계를 드러내는 대목으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아라타키파 구성원이라는 기록과 함께 보면, 아키라가 이토를 두목으로 여기며 동료들과 함께 움직이는 관계를 드러내는 대목으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Akira"
+      },
+      {
+       "kind": "wiki",
+       "page": "Arataki Gang",
+       "revision": 522671,
+       "section": "Members > Current",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Boss"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "A2 states the first appearance with Genta and Mamoru. M2 and M3 confirm the same teaser on the Mamoru and Genta pages.",
+     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Genta and Mamoru.",
+     "sentences": [
+      {
+       "t_raw": "Akira는 **Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"**에서 Arataki Gang 동료인 Genta, Mamoru와 함께 처음 등장했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아키라는 **캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"**에서 아라타키파 동료인 겐타, 마모루와 함께 처음 등장했다."
+      },
+      {
+       "t_raw": "Genta와 Mamoru의 기록에서도 이 세 사람의 공동 등장이 같은 Character Teaser를 기준으로 확인된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겐타와 마모루의 기록에서도 이 세 사람의 공동 등장이 같은 캐릭터 티저를 기준으로 확인된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "That"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "A3 says that according to Itto, Akira snores very loudly, and this comes from the profile.",
+     "quote": "According to Arataki Itto, he snores very loudly.",
+     "sentences": [
+      {
+       "t_raw": "Akira의 프로필에서는 Arataki Itto의 말을 빌려 Akira가 코를 매우 크게 곤다고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아키라의 프로필에서는 아라타키 이토의 말을 빌려 아키라가 코를 매우 크게 곤다고 소개한다."
+      },
+      {
+       "t_raw": "**큰 코골이**라는 특징은 이 프로필 문구에서 확인된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**큰 코골이**라는 특징은 이 프로필 문구에서 확인된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적 — Arataki Gang",
+     "status": "accepted",
+     "note": "Faithful translation. Dropping 'Hey' is minor.",
+     "t_raw": "보스! 우리 없이 재미 다 보려던 거지?",
+     "en": "Hey Boss! Thought you'd have all the fun without us, huh?",
+     "speaker": "Akira",
+     "source": {
+      "kind": "quest",
+      "quest": "The Oni's Pride",
+      "quest_ko": "오니의 긍지",
+      "version": "2.3",
+      "speaker": "Akira"
+     },
+     "t": "보스! 우리 없이 재미 다 보려던 거지?",
+     "speaker_ko": "아키라"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation, including 'Hey Boss' and 'huh?'.",
+     "t_raw": "이봐 Boss! 우리 없이 재미 다 볼 생각이었지, 응?",
+     "en": "Hey Boss! Thought you'd have all the fun without us, huh?",
+     "speaker": "Akira",
+     "source": {
+      "kind": "quest",
+      "quest": "The Oni's Pride",
+      "quest_ko": "오니의 긍지",
+      "version": "2.3",
+      "speaker": "Akira"
+     },
+     "t": "이봐 Boss! 우리 없이 재미 다 볼 생각이었지, 응?",
+     "speaker_ko": "아키라"
+    }
+   ]
+  }
+ ]
+}

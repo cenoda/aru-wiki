@@ -20,35 +20,35 @@
    "input_chars": 3728,
    "input_cut": false,
    "input_hash": "1d6cec6bc8da",
-   "writer": "ds,or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "kimi,or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ancient Fontainians believed that Fortuna controlled the world and described it as being woven from countless fibers, like strings on a harp.",
+     "status": "accepted",
+     "note": "All sentences follow the English. The Wingalet-as-hope reading in (2) is a reasonable interpretation of A7.",
+     "quote": "The greatest empire will face the most utter destruction, and this is Fortuna.",
      "sentences": [
       {
-       "t_raw": "Fortuna는 고대 Fontaine 이래 쓰인 용어로, 세계를 다스리는 존재, 문명이 오르고 내리는 순환, Remus의 배라는 서로 다른 뜻으로 변해 왔다.",
+       "t_raw": "Fortuna는 고대 Fontaine부터 사용된 용어로, 시간이 흐르면서 그 의미와 중요성이 크게 변화했다.",
        "interp": false,
        "dropped": false,
-       "t": "포르투나호는 고대 폰타인 이래 쓰인 용어로, 세계를 다스리는 존재, 문명이 오르고 내리는 순환, 레무스의 배라는 서로 다른 뜻으로 변해 왔다."
+       "t": "포르투나호는 고대 폰타인부터 사용된 용어로, 시간이 흐르면서 그 의미와 중요성이 크게 변화했다."
       },
       {
-       "t_raw": "Remuria 전승에서 Remus는 Golden Bee와 함께 Fortuna를 타고 바다 위에 Remuria를 세우고, 배를 다시 몰아 섬과 부족을 제국으로 불러 모았다.",
+       "t_raw": "처음에는 세계를 지배하는 거대한 운명의 하프로 여겨졌고, Remuria가 멸망할 것을 예언하는 문장에 등장하기도 했으며, 결국 Remus의 황금선박 이름으로 굳어졌다.",
        "interp": false,
        "dropped": false,
-       "t": "레무리아 전승에서 레무스는 황금 벌과 함께 포르투나호를 타고 바다 위에 레무리아를 세우고, 배를 다시 몰아 섬과 부족을 제국으로 불러 모았다."
+       "t": "처음에는 세계를 지배하는 거대한 운명의 하프로 여겨졌고, 레무리아가 멸망할 것을 예언하는 문장에 등장하기도 했으며, 결국 레무스의 황금선박 이름으로 굳어졌다."
       },
       {
-       "t_raw": "한 이름이 우주적 질서, 문명의 흥망, 제국의 배라는 층위를 함께 떠안고 있다는 점은 Fortuna가 Fontaine의 **중심 떡밥**으로 읽히는 이유로 보인다.",
+       "t_raw": "이처럼 Fortuna가 **문명의 영광과 종말**을 동시에 담고 있기 때문에, 현재 Fortress of Meropide의 Wingalet 프로젝트는 단순한 전설의 재현이 아니라 Fontaine의 재앙에 대한 **희망의 상징**으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "한 이름이 우주적 질서, 문명의 흥망, 제국의 배라는 층위를 함께 떠안고 있다는 점은 포르투나호가 폰타인의 **중심 떡밥**으로 읽히는 이유로 보인다."
+       "t": "이처럼 포르투나호가 **문명의 영광과 종말**을 동시에 담고 있기 때문에, 현재 메로피드 요새의 윙갈레트호 프로젝트는 단순한 전설의 재현이 아니라 폰타인의 재앙에 대한 **희망의 상징**으로 보인다."
       }
      ],
      "sources": [
@@ -111,165 +111,11 @@
        "page": "Fortuna",
        "revision": 1514905,
        "section": "Ancient Usage",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Enigmatic Page (I)"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": "Ancient Usage",
        "paragraph": "A5",
        "wiki_refs": [
         {
          "type": "book",
          "name": "The History of the Decline and Fall of Remuria"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": "Modern Usage",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Secret Keepers and Forbidden Zones"
-        },
-        {
-         "type": "cs",
-         "name": "Wriothesley"
-        }
-       ]
-      }
-     ],
-     "heading": null,
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ancient Fontainians believed that Fortuna controlled the world and described it as being woven from countless fibers, like strings on a harp.",
-     "sentences": [
-      {
-       "t_raw": "Fortuna는 고대 Fontaine 이래 쓰인 말이지만, 그 의미와 위상은 시대에 따라 바뀌었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "포르투나호는 고대 폰타인 이래 쓰인 말이지만, 그 의미와 위상은 시대에 따라 바뀌었다."
-      },
-      {
-       "t_raw": "고대 Fontainians는 Fortuna가 세계를 지배한다고 믿으며, 이를 하프의 현처럼 수많은 섬유로 짜인 것으로 묘사했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고대 폰타인 사람들은 포르투나호가 세계를 지배한다고 믿으며, 이를 하프의 현처럼 수많은 섬유로 짜인 것으로 묘사했다."
-      },
-      {
-       "t_raw": "이후 이 말은 **문명의 흥망성쇠가 되풀이되는 필연적 순환**을 가리키는 데 쓰였고, 결국 Remus가 제국을 세우고 부족들을 모으기 위해 탄 배의 이름으로도 이해되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이후 이 말은 **문명의 흥망성쇠가 되풀이되는 필연적 순환**을 가리키는 데 쓰였고, 결국 레무스가 제국을 세우고 부족들을 모으기 위해 탄 배의 이름으로도 이해되었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Lightless Silk String"
-        },
-        {
-         "type": "item",
-         "name": "Enigmatic Page (I)"
-        },
-        {
-         "type": "book",
-         "name": "The History of the Decline and Fall of Remuria"
-        },
-        {
-         "type": "quest",
-         "name": "Secret Keepers and Forbidden Zones"
-        }
-       ]
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This has led Wriothesley to build his own ship, The Wingalet, as a precaution against the prophecy.",
-     "sentences": [
-      {
-       "t_raw": "현대 전설에서 Remus는 Golden Bee와 함께 Fortuna라는 거대한 황금 배를 타고 Remuria를 세웠고, Fortuna는 **문명과 영광을 가져오는 이름**으로 알려지게 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "현대 전설에서 레무스는 황금 벌과 함께 포르투나호라는 거대한 황금 배를 타고 레무리아를 세웠고, 포르투나호는 **문명과 영광을 가져오는 이름**으로 알려지게 되었다."
-      },
-      {
-       "t_raw": "Wriothesley는 Remuria를 삼킨 바다가 다시 문명을 파괴할 것이라는 이론을 접하고, Primordial Sea가 Fortress of Meropide 아래에 있다고 의심하자 Fortuna에서 영감을 받은 Wingalet을 짓기 시작했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라이오슬리는 레무리아를 삼킨 바다가 다시 문명을 파괴할 것이라는 이론을 접하고, 원시 모태 바다가 메로피드 요새 아래에 있다고 의심하자 포르투나호에서 영감을 받은 윙갈레트호를 짓기 시작했다."
-      },
-      {
-       "t_raw": "Wingalet은 예언에 대비해 재난이 닥치면 희망의 근원이 되기를 바란 배다.",
-       "interp": false,
-       "dropped": false,
-       "t": "윙갈레트호는 예언에 대비해 재난이 닥치면 희망의 근원이 되기를 바란 배다."
-      },
-      {
-       "t_raw": "Fortuna는 고대의 세계 이해와 문명 순환, Remus의 항해, 현대의 배 건조를 잇는 이름으로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "포르투나호는 고대의 세계 이해와 문명 순환, 레무스의 항해, 현대의 배 건조를 잇는 이름으로 읽힌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Lightless Silk String"
-        },
-        {
-         "type": "item",
-         "name": "Enigmatic Page (I)"
-        },
-        {
-         "type": "book",
-         "name": "The History of the Decline and Fall of Remuria"
-        },
-        {
-         "type": "quest",
-         "name": "Secret Keepers and Forbidden Zones"
         }
        ]
       },
@@ -306,21 +152,134 @@
          "name": "Secret Keepers and Forbidden Zones"
         }
        ]
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A2, A3, A6 and A7. The 'fate' gloss is loose but not a new fact, and (4) is a fair interpretation.",
+     "quote": "dissonance, however, would \"destroy the fabric of the universe.\"",
+     "sentences": [
+      {
+       "t_raw": "Fontaine의 고대 문명 Remuria를 둘러싼 핵심 개념인 Fortuna는 단순한 배 이름 이상의 의미를 지닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인의 고대 문명 레무리아를 둘러싼 핵심 개념인 포르투나호는 단순한 배 이름 이상의 의미를 지닌다."
+      },
+      {
+       "t_raw": "고대 Fontaine인들은 이를 하프의 줄처럼 무수한 섬유로 짜인 세계의 지배자, 즉 **운명의 거줄**로 그렸으며, 조화로운 음악은 행복을, 불협화음은 우주의 직물을 파괴할 수 있다고 믿었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고대 폰타인인들은 이를 하프의 줄처럼 무수한 섬유로 짜인 세계의 지배자, 즉 **운명의 거줄**로 그렸으며, 조화로운 음악은 행복을, 불협화음은 우주의 직물을 파괴할 수 있다고 믿었다."
+      },
+      {
+       "t_raw": "이러한 이해 속에서 Remuria 왕조는 음악을 중심에 두었고, 시간이 흐르면서 Fortuna는 문명의 흥망성쇠, 나아가 **문명의 영광과 쇠락**을 상징하는 이름이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이러한 이해 속에서 레무리아 왕조는 음악을 중심에 두었고, 시간이 흐르면서 포르투나호는 문명의 흥망성쇠, 나아가 **문명의 영광과 쇠락**을 상징하는 이름이 되었다."
+      },
+      {
+       "t_raw": "후대 전승에서는 Remus가 Golden Bee의 형태를 한 Sybilla와 함께 거대한 황금선박 Fortuna를 타고 Remuria를 세웠고, 오늘날 Fortress of Meropide의 관리자 Wriothesley는 그 이름에서 영감을 받아 구원선 Wingalet을 만들고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "후대 전승에서는 레무스가 황금 벌의 형태를 한 시빌과 함께 거대한 황금선박 포르투나호를 타고 레무리아를 세웠고, 오늘날 메로피드 요새의 관리자 라이오슬리는 그 이름에서 영감을 받아 구원선 윙갈레트호를 만들고 있다."
+      },
+      {
+       "t_raw": "이처럼 Fortuna는 Fontaine 역사 전체에 걸쳐 재앙과 희망을 오가는 상징으로 기능하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 포르투나호는 폰타인 역사 전체에 걸쳐 재앙과 희망을 오가는 상징으로 기능하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fortuna",
+       "revision": 1514905,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
-       "page": "Prophecy of Fontaine",
-       "revision": 1505335,
-       "section": "History",
-       "paragraph": "M6",
+       "page": "Fortuna",
+       "revision": 1514905,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Lightless Silk String"
+        },
+        {
+         "type": "item",
+         "name": "Enigmatic Page (I)"
+        },
+        {
+         "type": "book",
+         "name": "The History of the Decline and Fall of Remuria"
+        },
+        {
+         "type": "quest",
+         "name": "Secret Keepers and Forbidden Zones"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Fortuna",
+       "revision": 1514905,
+       "section": "Ancient Usage",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Lightless Silk String"
+        },
+        {
+         "type": "book",
+         "name": "The History of the Decline and Fall of Remuria"
+        },
+        {
+         "type": "weapon",
+         "name": "Splendor of Tranquil Waters"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Fortuna",
+       "revision": 1514905,
+       "section": "Modern Usage",
+       "paragraph": "A6",
        "wiki_refs": [
         {
          "type": "quest",
          "name": "Secret Keepers and Forbidden Zones"
         },
         {
-         "type": "item",
-         "name": "Wings of Merciful, Wrathful Waters"
+         "type": "cs",
+         "name": "Wriothesley"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Fortuna",
+       "revision": 1514905,
+       "section": "Modern Usage",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Wriothesley"
+        },
+        {
+         "type": "quest",
+         "name": "Secret Keepers and Forbidden Zones"
         }
        ]
       }
@@ -330,27 +289,38 @@
     },
     {
      "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ancient Fontainians believed that Fortuna controlled the world and described it as being woven from countless fibers, like strings on a harp.",
+     "status": "accepted",
+     "note": "Matches A1 and A3. The music-centred dynasty is hedged as 'possibly', as the English hedges it.",
+     "quote": "Remus' Grand Symphony, which aimed to unite Fontaine through a harmonious melody and suppress all \"discordant sounds,\" was sometimes referred to as Fortuna.",
      "sentences": [
       {
-       "t_raw": "Fortuna는 고대 Fontaine 이래 쓰인 말이지만 시대에 따라 의미와 중요성이 바뀌었다.",
+       "t_raw": "Fortuna는 고대 Fontaine 이래 쓰인 말이지만 그 의미는 시대에 따라 바뀌어 왔다.",
        "interp": false,
        "dropped": false,
-       "t": "포르투나호는 고대 폰타인 이래 쓰인 말이지만 시대에 따라 의미와 중요성이 바뀌었다."
+       "t": "포르투나호는 고대 폰타인 이래 쓰인 말이지만 그 의미는 시대에 따라 바뀌어 왔다."
       },
       {
-       "t_raw": "고대 Fontainians 일부는 Fortuna가 세계를 지배한다고 믿었고, 이를 수많은 섬유로 짜인 하프 줄 같은 것으로 설명하며 장엄한 음악과 불협화음이 세계에 작용한다고 여겼다.",
+       "t_raw": "일부 고대 Fontaine인들은 Fortuna가 하프 줄 같은 수많은 섬유로 짜인 세계의 지배자이며, 그 음악의 불협화음이 **우주의 직물**을 파괴한다고 믿었다.",
        "interp": false,
        "dropped": false,
-       "t": "고대 폰타인 사람들 일부는 포르투나호가 세계를 지배한다고 믿었고, 이를 수많은 섬유로 짜인 하프 줄 같은 것으로 설명하며 장엄한 음악과 불협화음이 세계에 작용한다고 여겼다."
+       "t": "일부 고대 폰타인인들은 포르투나호가 하프 줄 같은 수많은 섬유로 짜인 세계의 지배자이며, 그 음악의 불협화음이 **우주의 직물**을 파괴한다고 믿었다."
       },
       {
-       "t_raw": "Remuria 왕조가 음악을 중심에 둔 것은 이 믿음에서 비롯된 것으로 여겨지며, Remus의 Grand Symphony는 Fortuna로 불리기도 했다.",
+       "t_raw": "이런 이해가 Remuria 왕조가 음악을 중심에 둔 이유였을 가능성이 있고, 그 문자는 악보를 닮았다.",
        "interp": false,
        "dropped": false,
-       "t": "레무리아 왕조가 음악을 중심에 둔 것은 이 믿음에서 비롯된 것으로 여겨지며, 레무스의 대악장은 포르투나호로 불리기도 했다."
+       "t": "이런 이해가 레무리아 왕조가 음악을 중심에 둔 이유였을 가능성이 있고, 그 문자는 악보를 닮았다."
+      },
+      {
+       "t_raw": "Remus의 Grand Symphony는 Fontaine을 조화로운 선율로 통일하려 해 때로는 Fortuna라 불렸고, Remus는 King of Fortuna로 일컬어지기도 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "레무스의 대악장은 폰타인을 조화로운 선율로 통일하려 해 때로는 포르투나호라 불렸고, 레무스는 King of Fortuna로 일컬어지기도 했다.",
+       "polish": {
+        "from": "레무스의 대악장은 폰타인을 조화로운 선율로 통일하려 해 때로는 포르투나호라 불렸고, 레무스는 King of Fortuna로 일컬어지기도 했다.",
+        "text": "레무스의 대악장은 폰타인을 조화로운 선율로 통일하려 해 때로는 포르투나호라 불렸고, 레무스는 King of Fortuna로 일컬어지기도 했다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -410,299 +380,44 @@
       }
      ],
      "heading": "정체",
-     "latin_left": []
-    },
-    {
-     "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "their usage of \"Fortuna\" was based on myth and assumption, and was not a scientifically proven phenomenon",
-     "sentences": [
-      {
-       "t_raw": "Fortuna는 문명의 흥망성쇠가 되풀이되는 순환을 가리키는 말로도 쓰였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "포르투나호는 문명의 흥망성쇠가 되풀이되는 순환을 가리키는 말로도 쓰였다."
-      },
-      {
-       "t_raw": "500년 전 cataclysm 이후 Rene가 발견한 고대 결사의 책들은 새 문명이 재에서 태어난다는 뜻으로 Fortuna를 썼고, Rene의 Narzissenkreuz Ordo는 이를 신화와 추측에 바탕을 둔, 과학적으로 증명되지 않은 용법이라고 결론지었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "500년 전 cataclysm 이후 르네가 발견한 고대 결사의 책들은 새 문명이 재에서 태어난다는 뜻으로 포르투나호를 썼고, 르네의 수선화 십자 결사회는 이를 신화와 추측에 바탕을 둔, 과학적으로 증명되지 않은 용법이라고 결론지었다."
-      },
-      {
-       "t_raw": "그러나 Remus 전설 속 Fortuna와 이 순환의 Fortuna가 어떻게, 혹은 실제로 관련되는지는 상세히 밝혀지지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 레무스 전설 속 포르투나호와 이 순환의 포르투나호가 어떻게, 혹은 실제로 관련되는지는 상세히 밝혀지지 않았다."
-      },
-      {
-       "t_raw": "이 겹침은 시대에 따른 의미 변화로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 겹침은 시대에 따른 의미 변화로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Lightless Silk String"
-        },
-        {
-         "type": "item",
-         "name": "Enigmatic Page (I)"
-        },
-        {
-         "type": "book",
-         "name": "The History of the Decline and Fall of Remuria"
-        },
-        {
-         "type": "quest",
-         "name": "Secret Keepers and Forbidden Zones"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": "Ancient Usage",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Enigmatic Page (I)"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Remus",
-       "revision": 1515771,
-       "section": "Story",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Splendor of Tranquil Waters"
-        },
-        {
-         "type": "item",
-         "name": "Broken Goblet of the Pristine Sea"
-        },
-        {
-         "type": "quest",
-         "name": "Secret Keepers and Forbidden Zones"
-        },
-        {
-         "type": "item",
-         "name": "Enigmatic Page (I)"
-        }
-       ]
-      }
-     ],
-     "heading": "정체",
-     "latin_left": []
-    },
-    {
-     "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Fortuna thus became known as the bringer of civilization and glory.",
-     "sentences": [
-      {
-       "t_raw": "Fortuna는 Remus의 배 이름으로도 이해되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "포르투나호는 레무스의 배 이름으로도 이해되었다."
-      },
-      {
-       "t_raw": "Remuria 몰락 약 100년 뒤의 The History of the Decline and Fall of Remuria에서 Fortuna는 세 번 등장한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "레무리아 몰락 약 100년 뒤의 레무리아 몰락사에서 포르투나호는 세 번 등장한다."
-      },
-      {
-       "t_raw": "첫째 권에서는 Remus가 “자신의 황금빛 Fortuna를 타고” Meropis에 “내려왔다”는 대목과 “이것이 Fortuna다”라는 몰락 예언에, 둘째 권에서는 Ocean Pillars와 등대 탑 사이 항구에 정박한 제국의 배로 쓰인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "첫째 권에서는 레무스가 “자신의 황금빛 포르투나호를 타고” 메로피스에 “내려왔다”는 대목과 “이것이 포르투나호다”라는 몰락 예언에, 둘째 권에서는 바다의 기둥과 등대 탑 사이 항구에 정박한 제국의 배로 쓰인다."
-      },
-      {
-       "t_raw": "Pulteney는 Remuria의 갑작스러운 파괴로 생존자가 적어 자신의 서술이 몰락 후의 신화와 미신에서 확장된 것임을 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "펄트니는 레무리아의 갑작스러운 파괴로 생존자가 적어 자신의 서술이 몰락 후의 신화와 미신에서 확장된 것임을 밝힌다."
-      },
-      {
-       "t_raw": "현대 전승에서는 Remus가 Golden Bee의 모습을 한 Sybilla와 함께 Fortuna를 타고 물 위에 Remuria를 세우고, 제국을 세운 뒤 다시 Fortuna를 타고 섬들을 복속시켰다고 하며, Fortuna는 문명과 영광을 가져온 존재로 알려졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "현대 전승에서는 레무스가 황금 벌의 모습을 한 시빌과 함께 포르투나호를 타고 물 위에 레무리아를 세우고, 제국을 세운 뒤 다시 포르투나호를 타고 섬들을 복속시켰다고 하며, 포르투나호는 문명과 영광을 가져온 존재로 알려졌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Lightless Silk String"
-        },
-        {
-         "type": "item",
-         "name": "Enigmatic Page (I)"
-        },
-        {
-         "type": "book",
-         "name": "The History of the Decline and Fall of Remuria"
-        },
-        {
-         "type": "quest",
-         "name": "Secret Keepers and Forbidden Zones"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": "Ancient Usage",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The History of the Decline and Fall of Remuria"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": "Modern Usage",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Secret Keepers and Forbidden Zones"
-        },
-        {
-         "type": "cs",
-         "name": "Wriothesley"
-        }
-       ]
-      }
-     ],
-     "heading": "정체",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Remuria와 기록",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This is likely why the Remurian Dynasty centered itself around music to a degree which baffled even ancient scholars, such as their written language resembling musical notation.",
-     "sentences": [
-      {
-       "t_raw": "고대 Fontaine의 일부 사람들은 Fortuna가 세계를 지배한다고 믿었고, 그 음악은 모두를 행복하게 하며 불협화음은 “우주의 직물을 파괴”한다고 여겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고대 폰타인의 일부 사람들은 포르투나호가 세계를 지배한다고 믿었고, 그 음악은 모두를 행복하게 하며 불협화음은 “우주의 직물을 파괴”한다고 여겼다."
-      },
-      {
-       "t_raw": "아마 이 때문이었는지 Remurian Dynasty는 음악을 중심에 두고 문자도 악보를 닮았으며, Remus의 **Grand Symphony**는 Fontaine을 조화로 통일하고 “불협화음”을 억제하려 했으며 때때로 Fortuna로도 불렸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아마 이 때문이었는지 Remurian Dynasty는 음악을 중심에 두고 문자도 악보를 닮았으며, 레무스의 **대악장**은 폰타인을 조화로 통일하고 “불협화음”을 억제하려 했으며 때때로 포르투나호로도 불렸다."
-      },
-      {
-       "t_raw": "Remus의 치세는 “golden era”이자 “grand symphony”로 불렸고, 그는 조화롭고 계몽된 문명을 위해 Fortuna로 부족을 제국에 부르고 거부한 부족을 정복했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "레무스의 치세는 “golden era”이자 “grand symphony”로 불렸고, 그는 조화롭고 계몽된 문명을 위해 포르투나호로 부족을 제국에 부르고 거부한 부족을 정복했다."
-      },
-      {
-       "t_raw": "이는 음악적 조화와 제국 확장이 같은 원리로 얽혀 있었음을 보여 주는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 음악적 조화와 제국 확장이 같은 원리로 얽혀 있었음을 보여 주는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": "Ancient Usage",
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Lightless Silk String"
-        },
-        {
-         "type": "book",
-         "name": "The History of the Decline and Fall of Remuria"
-        },
-        {
-         "type": "weapon",
-         "name": "Splendor of Tranquil Waters"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Remus",
-       "revision": 1515771,
-       "section": "Story",
-       "paragraph": "M4",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Essence of Pure Sacred Dewdrop"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사 — 레무리아와 기록",
      "latin_left": [
-      "Remurian Dynasty"
+      "King of Fortuna"
      ]
     },
     {
-     "section": "드러난 역사 — Remuria와 기록",
-     "status": "needs_verify",
-     "note": null,
+     "section": "정체",
+     "status": "accepted",
+     "note": "Matches A5. The interpretation in (3) is hedged and reasonable.",
      "quote": "The greatest empire will face the most utter destruction, and this is Fortuna.",
      "sentences": [
       {
-       "t_raw": "Remuria 멸망 약 100년 뒤 쓰인 **The History of the Decline and Fall of Remuria**에서 Fortuna는 Volume I의 “in his golden Fortuna”, 예언된 멸망을 뜻하는 “this is Fortuna”, Volume II의 제국 배 이름으로 나타난다.",
+       "t_raw": "Remuria 몰락 약 100년 뒤 Pulteney의 The History of the Decline and Fall of Remuria에서 Fortuna는 세 번 언급된다.",
        "interp": false,
        "dropped": false,
-       "t": "레무리아 멸망 약 100년 뒤 쓰인 **레무리아 몰락사**에서 포르투나호는 Volume I의 “in his golden 포르투나호”, 예언된 멸망을 뜻하는 “this is 포르투나호”, Volume II의 제국 배 이름으로 나타난다."
+       "t": "레무리아 몰락 약 100년 뒤 펄트니의 레무리아 몰락사에서 포르투나호는 세 번 언급된다."
       },
       {
-       "t_raw": "저자 Pulteney는 생존자가 적었던 갑작스럽고 빠른 멸망 탓에 서술이 멸망 후의 신화와 미신에서 추정된 것임을 밝힌다.",
+       "t_raw": "Volume I에서는 Remus의 golden Fortuna와 예언된 몰락을 설명하는 문장으로, Volume II에서는 제국의 배 이름으로 등장한다.",
        "interp": false,
        "dropped": false,
-       "t": "저자 펄트니는 생존자가 적었던 갑작스럽고 빠른 멸망 탓에 서술이 멸망 후의 신화와 미신에서 추정된 것임을 밝힌다."
+       "t": "제1권에서는 레무스의 황금빛 포르투나호와 예언된 몰락을 설명하는 문장으로, 제2권에서는 제국의 배 이름으로 등장한다.",
+       "polish": {
+        "from": "Volume I에서는 레무스의 golden 포르투나호와 예언된 몰락을 설명하는 문장으로, Volume II에서는 제국의 배 이름으로 등장한다.",
+        "text": "제1권에서는 레무스의 황금빛 포르투나호와 예언된 몰락을 설명하는 문장으로, 제2권에서는 제국의 배 이름으로 등장한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "한 단어가 황금 Fortuna, 몰락의 예언, 제국의 배로 겹치는 모습은 붕괴 후 신화와 미신이 기록에 스며든 결과로 보인다.",
+       "t_raw": "Pulteney는 살아남은 자가 적었기에 자신의 서술이 붕괴 뒤 유행한 신화와 미신에서 추정된 것임을 밝혔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "펄트니는 살아남은 자가 적었기에 자신의 서술이 붕괴 뒤 유행한 신화와 미신에서 추정된 것임을 밝혔다."
+      },
+      {
+       "t_raw": "한 역사서 안에서 황금선박과 예언의 문장, 배의 이름이 겹치는 것은 **역사, 신화, 배의 이름**의 층위를 보여주는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "한 단어가 황금 포르투나호, 몰락의 예언, 제국의 배로 겹치는 모습은 붕괴 후 신화와 미신이 기록에 스며든 결과로 보인다."
+       "t": "한 역사서 안에서 황금선박과 예언의 문장, 배의 이름이 겹치는 것은 **역사, 신화, 배의 이름**의 층위를 보여주는 것으로 보인다."
       }
      ],
      "sources": [
@@ -720,35 +435,27 @@
        ]
       }
      ],
-     "heading": "드러난 역사 — 레무리아와 기록",
-     "latin_left": [
-      "Volume",
-      "Volume II"
-     ]
+     "heading": "정체",
+     "latin_left": []
     },
     {
-     "section": "드러난 역사 — Remuria와 기록",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "How, or whether, this term relates to the Fortuna in Remus' legend has not been detailed.",
+     "section": "정체",
+     "status": "accepted",
+     "note": "The English says 'books written by an ancient order'. Calling them 'ancient religion books' (고대 종교) adds a fact the English does not give.",
+     "quote": "Kingdoms rise and fall, and when a civilization is annihilated, a new one will be born after from the ashes.",
      "sentences": [
       {
-       "t_raw": "500년 전 cataclysm 이후 Rene가 발견한 고대 결사의 책들은 Fortuna를 “Kingdoms rise and fall, and when a civilization is annihilated, a new one will be born after from the ashes”라는 문명 순환으로 사용했다.",
+       "t_raw": "고대 결사가 쓴, Rene이 발견한 책들은 Fortuna를 문명의 흥망성쇠 순환으로 사용했지만, Rene의 Narzissenkreuz Ordo 연구는 이를 신화와 가정에 기반한 것이며 과학적으로 입증된 현상이 아니라고 결론 내렸다.",
        "interp": false,
        "dropped": false,
-       "t": "500년 전 cataclysm 이후 르네가 발견한 고대 결사의 책들은 포르투나호를 “Kingdoms rise and fall, and when a civilization is annihilated, a new one will be born after from the ashes”라는 문명 순환으로 사용했다."
+       "repaired": true,
+       "t": "고대 결사가 쓴, 르네가 발견한 책들은 포르투나호를 문명의 흥망성쇠 순환으로 사용했지만, 르네의 수선화 십자 결사회 연구는 이를 신화와 가정에 기반한 것이며 과학적으로 입증된 현상이 아니라고 결론 내렸다."
       },
       {
-       "t_raw": "이후 Rene의 **Narzissenkreuz Ordo**는 그 용법이 신화와 가정에 기반한 것이며 과학적으로 증명된 현상은 아니라고 결론 내렸고, 그 Fortuna가 Remus 전설의 Fortuna와 관련 있는지는 상세히 밝혀지지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이후 르네의 **수선화 십자 결사회**는 그 용법이 신화와 가정에 기반한 것이며 과학적으로 증명된 현상은 아니라고 결론 내렸고, 그 포르투나호가 레무스 전설의 포르투나호와 관련 있는지는 상세히 밝혀지지 않았다."
-      },
-      {
-       "t_raw": "고대 문서의 Fortuna는 Remus의 배와 곧바로 이어지기보다, 전설과 기록 사이에 남은 간극을 보여 주는 사례로 볼 수 있다.",
+       "t_raw": "이는 Fortuna의 순환 의미가 검증된 법칙이라기보다 전승에 기대어 이해된 것임을 보여주는 것으로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "고대 문서의 포르투나호는 레무스의 배와 곧바로 이어지기보다, 전설과 기록 사이에 남은 간극을 보여 주는 사례로 볼 수 있다."
+       "t": "이는 포르투나호의 순환 의미가 검증된 법칙이라기보다 전승에 기대어 이해된 것임을 보여주는 것으로 볼 수 있다."
       }
      ],
      "sources": [
@@ -764,67 +471,40 @@
          "name": "Enigmatic Page (I)"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Remus",
-       "revision": 1515771,
-       "section": "Story",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Splendor of Tranquil Waters"
-        },
-        {
-         "type": "item",
-         "name": "Broken Goblet of the Pristine Sea"
-        },
-        {
-         "type": "quest",
-         "name": "Secret Keepers and Forbidden Zones"
-        },
-        {
-         "type": "item",
-         "name": "Enigmatic Page (I)"
-        }
-       ]
       }
      ],
-     "heading": "드러난 역사 — 레무리아와 기록",
-     "latin_left": [
-      "Kingdoms"
-     ]
+     "heading": "정체",
+     "latin_left": []
     },
     {
-     "section": "얽힌 인물과 세력 — Remus, Sybilla, Wriothesley",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Together with the Golden Bee, Remus rode on a giant golden ship named the Fortuna and created Remuria above the waves.",
+     "section": "드러난 역사 — Remuria",
+     "status": "accepted",
+     "note": "Supported by A6, M1 and Q1. The interpretation in (3) is reasonable.",
+     "quote": "Remus received a divine revelation to come to Fontaine, where he encountered the seer Sybilla in the form of a Golden Bee.",
      "sentences": [
       {
-       "t_raw": "Wriothesley가 전하는 Remus 전설에서 Remus는 Fontaine으로 오라는 계시를 받고 예언자 Sybilla를 **Golden Bee**의 모습으로 만났다.",
+       "t_raw": "Remus는 Fontaine으로 오라는 신성한 계시를 받았고, Primordial Sea에서 Fontaine의 첫 주권자를 만나 그곳의 물이 담긴 잔을 받아 신비한 이슬을 정제했다.",
        "interp": false,
        "dropped": false,
-       "t": "라이오슬리가 전하는 레무스 전설에서 레무스는 폰타인으로 오라는 계시를 받고 예언자 시빌을 **황금 벌**의 모습으로 만났다."
+       "t": "레무스는 폰타인으로 오라는 신성한 계시를 받았고, 원시 모태 바다에서 폰타인의 첫 주권자를 만나 그곳의 물이 담긴 잔을 받아 신비한 이슬을 정제했다."
       },
       {
-       "t_raw": "Golden Bee와 함께 그는 거대한 황금 배 **Fortuna**를 타고 물 위에 Remuria를 세웠고, 제국을 이룬 뒤 다시 Fortuna를 타고 섬과 부족을 찾아 제국에 합류하라고 불렀다.",
+       "t_raw": "전설에 따르면 이어 Sybilla가 Golden Bee의 형태로 나타났고, Remus는 Golden Bee와 함께 거대한 황금선박 Fortuna를 타고 Fontaine 수면 위에 Remuria를 세웠다.",
        "interp": false,
        "dropped": false,
-       "t": "황금 벌과 함께 그는 거대한 황금 배 **포르투나호**를 타고 물 위에 레무리아를 세웠고, 제국을 이룬 뒤 다시 포르투나호를 타고 섬과 부족을 찾아 제국에 합류하라고 불렀다."
+       "t": "전설에 따르면 이어 시빌이 황금 벌의 형태로 나타났고, 레무스는 황금 벌과 함께 거대한 황금선박 포르투나호를 타고 폰타인 수면 위에 레무리아를 세웠다."
       },
       {
-       "t_raw": "Fortuna는 이로써 문명과 영광을 가져오는 것으로 알려졌고, Remus를 따르지 않는 부족은 정복되었다.",
+       "t_raw": "그는 Fortuna를 타고 끊임없이 새로운 부족과 섬을 찾아다니며 그들에게 Remuria에 합류하라고 권했다.",
        "interp": false,
        "dropped": false,
-       "t": "포르투나호는 이로써 문명과 영광을 가져오는 것으로 알려졌고, 레무스를 따르지 않는 부족은 정복되었다."
+       "t": "그는 포르투나호를 타고 끊임없이 새로운 부족과 섬을 찾아다니며 그들에게 레무리아에 합류하라고 권했다."
       },
       {
-       "t_raw": "이 대목에서 Fortuna는 Remuria의 확장과 문명화를 상징하는 이름으로 읽힌다.",
+       "t_raw": "Remuria를 세울 때 쓰인 배가 이후에도 계속 동원되었다는 점에서, Fortuna는 건국과 확장 모두에 결부된 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이 대목에서 포르투나호는 레무리아의 확장과 문명화를 상징하는 이름으로 읽힌다."
+       "t": "레무리아를 세울 때 쓰인 배가 이후에도 계속 동원되었다는 점에서, 포르투나호는 건국과 확장 모두에 결부된 셈이다."
       }
      ],
      "sources": [
@@ -867,6 +547,60 @@
         {
          "type": "item",
          "name": "Enigmatic Page (I)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Secret Keepers and Forbidden Zones",
+       "quest_ko": "비밀 수호자와 금지 구역",
+       "version": "4.1",
+       "speaker": "Wriothesley"
+      }
+     ],
+     "heading": "드러난 역사 — 레무리아",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Remuria",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "To push his dream of creating a harmonious, enlightened civilization, he used the Fortuna to call other tribes to join the empire of Remuria and conquered any tribe which refused to join him",
+     "sentences": [
+      {
+       "t_raw": "Remuria의 확장은 부족들을 불러들이는 권유와, 거부하는 부족을 정복하는 두 갈래로 진행된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "레무리아의 확장은 부족들을 불러들이는 권유와, 거부하는 부족을 정복하는 두 갈래로 진행된 셈이다."
+      },
+      {
+       "t_raw": "가입을 거부한 부족은 정복되었고, Erinnyes와 Cassiodor의 고향인 Aremorica 왕국도 그런 사례였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가입을 거부한 부족은 정복되었고, 에리니에스섬과 카시오도의 고향인 아레모리카 왕국도 그런 사례였다."
+      },
+      {
+       "t_raw": "Remus의 치세는 농업, 거대 도시와 신전, 음악과 예술의 발전을 이끈 **황금시대**로 기록되었고, Fontaine의 **위대한 교향곡**이라 불리기도 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "레무스의 치세는 농업, 거대 도시와 신전, 음악과 예술의 발전을 이끈 **황금시대**로 기록되었고, 폰타인의 **위대한 교향곡**이라 불리기도 했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fortuna",
+       "revision": 1514905,
+       "section": "Modern Usage",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Secret Keepers and Forbidden Zones"
+        },
+        {
+         "type": "cs",
+         "name": "Wriothesley"
         }
        ]
       },
@@ -891,38 +625,81 @@
        "speaker": "Wriothesley"
       }
      ],
-     "heading": "얽힌 인물과 세력 — 레무스, 시빌, 라이오슬리",
+     "heading": "드러난 역사 — 레무리아",
      "latin_left": []
     },
     {
-     "section": "얽힌 인물과 세력 — Remus, Sybilla, Wriothesley",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Wriothesley began building a massive ship inspired by the Fortuna — the Wingalet — hoping that if such a disaster came to pass, the ship would be a source of hope for others.",
+     "section": "드러난 역사 — Remuria",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "The book's author, Pulteney, notes that his depiction of Remuria's history is extrapolated from the myths and superstitions that became popular after the nation's collapse",
      "sentences": [
       {
-       "t_raw": "Wriothesley는 수감자들을 통해 한때 Remuria를 삼킨 바다가 다시 차올라 문명을 멸망시킬 것이라는 이론을 알게 되었고, Primordial Sea가 Fortress of Meropide 아래에 있다고 의심하자 Fortuna에서 영감을 받은 **Wingalet**을 짓기 시작했고, 재난이 닥치면 배가 희망의 근원이 되기를 바랐다.",
+       "t_raw": "Remuria가 몰락한 뒤 약 100년이 지나 Pulteney는 Remuria의 역사서를 썼다.",
        "interp": false,
        "dropped": false,
-       "t": "라이오슬리는 수감자들을 통해 한때 레무리아를 삼킨 바다가 다시 차올라 문명을 멸망시킬 것이라는 이론을 알게 되었고, 원시 모태 바다가 메로피드 요새 아래에 있다고 의심하자 포르투나호에서 영감을 받은 **윙갈레트호**를 짓기 시작했고, 재난이 닥치면 배가 희망의 근원이 되기를 바랐다."
+       "t": "레무리아가 몰락한 뒤 약 100년이 지나 펄트니는 레무리아의 역사서를 썼다."
       },
       {
-       "t_raw": "Traveler에게는 수문이 무너지면 모든 Fontaine이 바다에 녹아든다고 확인해 주었으며, 배는 Remus가 Golden Bee와 함께 Fortuna를 타고 물 위를 달렸다는 전설에서 영감을 받았다.",
+       "t_raw": "이 책에서 Fortuna는 Remus가 Meropis에 “황금 Fortuna”를 타고 내려왔다는 서술과, 제국의 종말을 예고하는 문장, 그리고 Ocean Pillars와 거대한 등대탑 사이 항구에 정박한 제국 선박의 이름으로 세 번 등장한다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자에게는 수문이 무너지면 모든 폰타인이 바다에 녹아든다고 확인해 주었으며, 배는 레무스가 황금 벌과 함께 포르투나호를 타고 물 위를 달렸다는 전설에서 영감을 받았다."
+       "t": "이 책에서 포르투나호는 레무스가 메로피스에 “황금 포르투나호”를 타고 내려왔다는 서술과, 제국의 종말을 예고하는 문장, 그리고 바다의 기둥과 거대한 등대탑 사이 항구에 정박한 제국 선박의 이름으로 세 번 등장한다."
       },
       {
-       "t_raw": "Paimon은 전설의 Fortuna에서 영감을 받았느냐고 묻고, Wriothesley는 Traveler가 오기 몇 년 전부터 Jurieu와 Lourvine의 안내를 받아 배를 만드는 비밀 프로젝트를 시작했으며, 무익할 수도 있다는 것을 알면서도 완성하기로 마음먹었다.",
+       "t_raw": "그러나 Pulteney는 Remuria가 급격하고 신속하게 멸망해 살아남은 자가 거의 없었기 때문에, 자신의 서술이 붕괴 뒤에 유행한 미신과 전설을 바탕으로 한 추정임을 인정했다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 전설의 포르투나호에서 영감을 받았느냐고 묻고, 라이오슬리는 여행자가 오기 몇 년 전부터 쥐리에와 루르빈의 안내를 받아 배를 만드는 비밀 프로젝트를 시작했으며, 무익할 수도 있다는 것을 알면서도 완성하기로 마음먹었다."
+       "t": "그러나 펄트니는 레무리아가 급격하고 신속하게 멸망해 살아남은 자가 거의 없었기 때문에, 자신의 서술이 붕괴 뒤에 유행한 미신과 전설을 바탕으로 한 추정임을 인정했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fortuna",
+       "revision": 1514905,
+       "section": "Ancient Usage",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The History of the Decline and Fall of Remuria"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 레무리아",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Fortress of Meropide와 Wingalet",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "the sea which once swallowed Remuria would one day rise again and destroy civilization again",
+     "sentences": [
+      {
+       "t_raw": "Wriothesley는 학계 배경을 지닌 수감자들을 통해 한때 Remuria를 삼킨 바다가 다시 차올라 문명을 멸망시킬 것이라는 이론을 알게 되었고, 그 예언된 홍수가 '바다가 차오르고 제국은 무너진다'는 생각의 연장선이라는 설명도 접했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이오슬리는 학계 배경을 지닌 수감자들을 통해 한때 레무리아를 삼킨 바다가 다시 차올라 문명을 멸망시킬 것이라는 이론을 알게 되었고, 그 예언된 홍수가 '바다가 차오르고 제국은 무너진다'는 생각의 연장선이라는 설명도 접했다."
       },
       {
-       "t_raw": "Remuria를 삼킨 바다가 다시 오리라는 이론과 Fortuna에서 영감을 받은 배를 짓는다는 사실이 맞물려, Wingalet은 과거의 몰락을 되풀이하지 않으려는 대비로 읽힌다.",
-       "interp": true,
+       "t_raw": "Primordial Sea가 Fontaine 사람들을 녹일 수 있고 Fortress of Meropide 바로 아래에 있다고 의심한 그는, 재앙이 닥치면 Wingalet이 사람들에게 **잡을 수 있는 무언가**가 되길 바라며 Fortuna에서 영감을 받은 거대한 배 Wingalet 건조를 시작했다.",
+       "interp": false,
        "dropped": false,
-       "t": "레무리아를 삼킨 바다가 다시 오리라는 이론과 포르투나호에서 영감을 받은 배를 짓는다는 사실이 맞물려, 윙갈레트호는 과거의 몰락을 되풀이하지 않으려는 대비로 읽힌다."
+       "t": "원시 모태 바다가 폰타인 사람들을 녹일 수 있고 메로피드 요새 바로 아래에 있다고 의심한 그는, 재앙이 닥치면 윙갈레트호가 사람들에게 **잡을 수 있는 무언가**가 되길 바라며 포르투나호에서 영감을 받은 거대한 배 윙갈레트호 건조를 시작했다."
+      },
+      {
+       "t_raw": "이후 그는 Traveler를 Fortress of Meropide의 Forbidden Zone으로 데려가 아래의 Primordial Sea를 막는 거대한 수문을 보여 주었고, 수문이 무너지면 Fontaine 전체가 바다에 녹아들 것임을 확인해 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 그는 여행자를 메로피드 요새의 금지 구역으로 데려가 아래의 원시 모태 바다를 막는 거대한 수문을 보여 주었고, 수문이 무너지면 폰타인 전체가 바다에 녹아들 것임을 확인해 주었다."
+      },
+      {
+       "t_raw": "Traveler가 도착하기 수년 전부터 진행된 이 배 건조에는 Fontaine Research Institute의 연구원 Jurieu와 Lourvine의 안내가 있었고, **공장 하나 분량의 노동, 재료, 기술**이 동원되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 도착하기 수년 전부터 진행된 이 배 건조에는 폰타인 과학원의 연구원 쥐리에와 루르빈의 안내가 있었고, **공장 하나 분량의 노동, 재료, 기술**이 동원되었다."
       }
      ],
      "sources": [
@@ -945,6 +722,19 @@
       },
       {
        "kind": "wiki",
+       "page": "The Wingalet",
+       "revision": 1386156,
+       "section": "Story",
+       "paragraph": "M7",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Wriothesley"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
        "page": "Prophecy of Fontaine",
        "revision": 1505335,
        "section": "History",
@@ -957,6 +747,92 @@
         {
          "type": "item",
          "name": "Wings of Merciful, Wrathful Waters"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 메로피드 요새와 윙갈레트호",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Fortress of Meropide와 Wingalet",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "should the workers find out the \"truth\" behind the Fortuna, \"riots\" will break out and put the Fortress of Meropide at risk.",
+     "sentences": [
+      {
+       "t_raw": "Paimon이 '전설의 Fortuna'에서 영감을 받은 것인지 묻자, Wriothesley는 Fortuna의 '진실'이 노역자들에게 알려지면 **폭동**이 일어나 Fortress of Meropide가 위험해질 수 있다고 우려했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬이 '전설의 포르투나호'에서 영감을 받은 것인지 묻자, 라이오슬리는 포르투나호의 '진실'이 노역자들에게 알려지면 **폭동**이 일어나 메로피드 요새가 위험해질 수 있다고 우려했다."
+      },
+      {
+       "t_raw": "Traveler가 Lyney, Lynette, Freminet에게 방금 본 것을 말할지는 개의치 않았지만, 그들이 어떤 행동을 택하든 그들에게 영향을 미칠 것이라고 경고했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 리니, 리넷, 프레미네에게 방금 본 것을 말할지는 개의치 않았지만, 그들이 어떤 행동을 택하든 그들에게 영향을 미칠 것이라고 경고했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Secret Keepers and Forbidden Zones",
+       "quest_ko": "비밀 수호자와 금지 구역",
+       "version": "4.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "wiki",
+       "page": "The Wingalet",
+       "revision": 1386156,
+       "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 메로피드 요새와 윙갈레트호",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Fortress of Meropide와 Wingalet",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "He is determined to finish it even if it might prove futile in the end.",
+     "sentences": [
+      {
+       "t_raw": "Wriothesley는 Fortuna에서 영감을 받은 Wingalet을 재앙 대비책으로 삼았고, 결과가 헛수고로 끝날지라도 완성을 고집했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이오슬리는 포르투나호에서 영감을 받은 윙갈레트호를 재앙 대비책으로 삼았고, 결과가 헛수고로 끝날지라도 완성을 고집했다."
+      },
+      {
+       "t_raw": "전설 속 Fortuna는 Remus가 끊임없이 새로운 부족과 섬을 찾아 제국에 가입하라고 부르던 배였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전설 속 포르투나호는 레무스가 끊임없이 새로운 부족과 섬을 찾아 제국에 가입하라고 부르던 배였다."
+      },
+      {
+       "t_raw": "고대의 배가 문명을 모으는 데 쓰였다면, Wingalet은 다가올 재앙 앞에서 사람들에게 잡을 수 있는 무언가를 주는 배인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "고대의 배가 문명을 모으는 데 쓰였다면, 윙갈레트호는 다가올 재앙 앞에서 사람들에게 잡을 수 있는 무언가를 주는 배인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fortuna",
+       "revision": 1514905,
+       "section": "Modern Usage",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Wriothesley"
+        },
+        {
+         "type": "quest",
+         "name": "Secret Keepers and Forbidden Zones"
         }
        ]
       },
@@ -978,114 +854,44 @@
        "quest": "Secret Keepers and Forbidden Zones",
        "quest_ko": "비밀 수호자와 금지 구역",
        "version": "4.1",
-       "speaker": "Paimon"
+       "speaker": "Wriothesley"
       }
      ],
-     "heading": "얽힌 인물과 세력 — 레무스, 시빌, 라이오슬리",
+     "heading": "드러난 역사 — 메로피드 요새와 윙갈레트호",
      "latin_left": []
     },
     {
-     "section": "얽힌 인물과 세력 — Remus, Sybilla, Wriothesley",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "should the workers find out the \"truth\" behind the Fortuna, \"riots\" will break out and put the Fortress of Meropide at risk.",
-     "sentences": [
-      {
-       "t_raw": "Wriothesley는 Traveler와 Paimon에게 정보를 전한 뒤, 노동자들이 Fortuna의 \"truth\"를 알게 되면 \"riots\"가 일어나 Fortress of Meropide가 위험해질 수 있다고 덧붙인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라이오슬리는 여행자와 페이몬에게 정보를 전한 뒤, 노동자들이 포르투나호의 \"truth\"를 알게 되면 \"riots\"가 일어나 메로피드 요새가 위험해질 수 있다고 덧붙인다."
-      },
-      {
-       "t_raw": "Traveler가 본 것을 Lyney, Lynette, Freminet에게 공유하는 일은 걱정하지 않지만, 그들이 어떤 행동을 택하든 영향을 받을 수 있다고 경고한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자가 본 것을 리니, 리넷, 프레미네에게 공유하는 일은 걱정하지 않지만, 그들이 어떤 행동을 택하든 영향을 받을 수 있다고 경고한다."
-      },
-      {
-       "t_raw": "이 경고는 Fortuna의 \"진실\"이 Wingalet과 Fortress of Meropide의 질서를 함께 흔들 수 있는 사안으로 다뤄지고 있음을 보여준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 경고는 포르투나호의 \"진실\"이 윙갈레트호와 메로피드 요새의 질서를 함께 흔들 수 있는 사안으로 다뤄지고 있음을 보여준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "The Wingalet",
-       "revision": 1386156,
-       "section": "Story",
-       "paragraph": "M3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "The Wingalet",
-       "revision": 1386156,
-       "section": "Story",
-       "paragraph": "M7",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Wriothesley"
-        }
-       ]
-      }
-     ],
-     "heading": "얽힌 인물과 세력 — 레무스, 시빌, 라이오슬리",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼 — Fortuna와 Stella Fortuna",
-     "status": "needs_verify",
-     "note": null,
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All supported; the interpretation in 3 follows from the material.",
      "quote": "How, or whether, this term relates to the Fortuna in Remus' legend has not been detailed.",
      "sentences": [
       {
-       "t_raw": "『The History of the Decline and Fall of Remuria』는 Remuria 멸망 후 약 100년 뒤에 쓰였고, Fortuna는 그 안에서 Remus의 황금빛 Fortuna, Remuria의 예언된 몰락을 가리키는 표현, 제국의 배 이름으로 세 번 언급된다.",
+       "t_raw": "Rene이 발견한 고대 교단의 책들은 Fortuna를 문명의 생성과 소멸, 곧 재에서 새 문명이 태어나는 순환으로 썼고, Rene의 Narzissenkreuz Ordo는 그 용법이 신화와 가정에 기반한 것이며 과학적으로 입증된 현상은 아니라고 결론 내렸다.",
        "interp": false,
        "dropped": false,
-       "t": "『레무리아 몰락사』는 레무리아 멸망 후 약 100년 뒤에 쓰였고, 포르투나호는 그 안에서 레무스의 황금빛 포르투나호, 레무리아의 예언된 몰락을 가리키는 표현, 제국의 배 이름으로 세 번 언급된다."
+       "t": "르네가 발견한 고대 교단의 책들은 포르투나호를 문명의 생성과 소멸, 곧 재에서 새 문명이 태어나는 순환으로 썼고, 르네의 수선화 십자 결사회는 그 용법이 신화와 가정에 기반한 것이며 과학적으로 입증된 현상은 아니라고 결론 내렸다."
       },
       {
-       "t_raw": "Pulteney는 Remuria의 갑작스러운 멸망으로 살아남은 이가 적어 자신의 서술이 신화와 미신에서 확장된 것임을 밝힌다.",
+       "t_raw": "그러나 이 용어가 Remus 전설의 황금선박 Fortuna와 어떻게 관련되는지는 구체적으로 설명되지 않았다.",
        "interp": false,
        "dropped": false,
-       "t": "펄트니는 레무리아의 갑작스러운 멸망으로 살아남은 이가 적어 자신의 서술이 신화와 미신에서 확장된 것임을 밝힌다."
+       "t": "그러나 이 용어가 레무스 전설의 황금선박 포르투나호와 어떻게 관련되는지는 구체적으로 설명되지 않았다."
       },
       {
-       "t_raw": "Rene가 발견한 고대 결사의 책들은 Fortuna를 문명의 순환으로 썼지만, Narzissenkreuz Ordo는 그 용법이 신화와 추정에 기반했고 과학적으로 증명된 현상이 아니라고 결론 내렸다.",
+       "t_raw": "약 100년 뒤 Pulteney의 역사서에는 Fortuna가 황금선박, 예언된 몰락의 문장, 제국의 배 이름으로 세 번 나오지만, 저자는 살아남은 자가 적어 신화와 미신에서 추정했음을 인정했다.",
        "interp": false,
        "dropped": false,
-       "t": "르네가 발견한 고대 결사의 책들은 포르투나호를 문명의 순환으로 썼지만, 수선화 십자 결사회는 그 용법이 신화와 추정에 기반했고 과학적으로 증명된 현상이 아니라고 결론 내렸다."
+       "t": "약 100년 뒤 펄트니의 역사서에는 포르투나호가 황금선박, 예언된 몰락의 문장, 제국의 배 이름으로 세 번 나오지만, 저자는 살아남은 자가 적어 신화와 미신에서 추정했음을 인정했다."
       },
       {
-       "t_raw": "그 고대 결사의 Fortuna와 Remus 전설 속 Fortuna의 관계는 상세히 밝혀지지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 고대 결사의 포르투나호와 레무스 전설 속 포르투나호의 관계는 상세히 밝혀지지 않았다."
-      },
-      {
-       "t_raw": "따라서 **Fortuna의 역사성**은 후대의 신화와 미신, 확정되지 않은 문헌 간 연결 위에 남아 있다고 볼 수 있다.",
+       "t_raw": "그래서 Fortuna가 실제 배였는지, 순환의 은유가 배의 이름으로 굳은 것인지는 **신화와 역사 사이**에 놓여 있다.",
        "interp": true,
        "dropped": false,
-       "t": "따라서 **포르투나호의 역사성**은 후대의 신화와 미신, 확정되지 않은 문헌 간 연결 위에 남아 있다고 볼 수 있다."
+       "t": "그래서 포르투나호가 실제 배였는지, 순환의 은유가 배의 이름으로 굳은 것인지는 **신화와 역사 사이**에 놓여 있다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": "Ancient Usage",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The History of the Decline and Fall of Remuria"
-        }
-       ]
-      },
       {
        "kind": "wiki",
        "page": "Fortuna",
@@ -1123,45 +929,54 @@
          "name": "Enigmatic Page (I)"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Fortuna",
+       "revision": 1514905,
+       "section": "Ancient Usage",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The History of the Decline and Fall of Remuria"
+        }
+       ]
       }
      ],
-     "heading": "떡밥과 수수께끼 — 포르투나호와 운명의 별",
+     "heading": "떡밥과 수수께끼",
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼 — Fortuna와 Stella Fortuna",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "the stars which form these constellations are called Stella Fortuna.",
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Both sentences are supported by M5.",
+     "quote": "Vision-bearers' destinies are mapped by their constellations, and the stars which form these constellations are called Stella Fortuna.",
      "sentences": [
       {
-       "t_raw": "**Stella Fortuna**는 Constellation 레벨을 해금할 때 소비하는 것으로 등장한다.",
+       "t_raw": "Stella Fortuna는 Vision-bearers의 운명을 그리는 별자리를 이루는 별들의 이름이다.",
        "interp": false,
        "dropped": false,
-       "t": "**운명의 별**은 운명의 자리 레벨을 해금할 때 소비하는 것으로 등장한다."
+       "t": "운명의 별은 신의 눈 소유자들의 운명을 그리는 별자리를 이루는 별들의 이름이다.",
+       "polish": {
+        "from": "운명의 별은 Vision-bearers의 운명을 그리는 별자리를 이루는 별들의 이름이다.",
+        "text": "운명의 별은 신의 눈 소유자들의 운명을 그리는 별자리를 이루는 별들의 이름이다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Vision을 지닌 이들의 운명은 Constellation으로 그려지고, 그 별들을 Stella Fortuna라 부른다.",
+       "t_raw": "그 운명이 **의도적으로 설계**되었을 가능성도 제기되는데, 신들이 Vision-bearers가 목표를 이루면 무언가를 얻는다는 설명과 Teyvat의 하늘은 가짜이며 별은 거짓이라는 Fatui Harbingers의 주장이 함께 언급된다.",
        "interp": false,
        "dropped": false,
-       "t": "신의 눈을 지닌 이들의 운명은 운명의 자리로 그려지고, 그 별들을 운명의 별라 부른다."
-      },
-      {
-       "t_raw": "같은 이름이 Constellation 해금에 소비되는 쪽과 운명을 그리는 별에 함께 쓰이기에, 이 용어가 한쪽 용도로만 남지 않는 여지를 만든다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "같은 이름이 운명의 자리 해금에 소비되는 쪽과 운명을 그리는 별에 함께 쓰이기에, 이 용어가 한쪽 용도로만 남지 않는 여지를 만든다고 볼 수 있다."
+       "t": "그 운명이 **의도적으로 설계**되었을 가능성도 제기되는데, 신들이 신의 눈 소유자들이 목표를 이루면 무언가를 얻는다는 설명과 티바트의 하늘은 가짜이며 별은 거짓이라는 우인단 집행관의 주장이 함께 언급된다.",
+       "polish": {
+        "from": "그 운명이 **의도적으로 설계**되었을 가능성도 제기되는데, 신들이 Vision-bearers가 목표를 이루면 무언가를 얻는다는 설명과 티바트의 하늘은 가짜이며 별은 거짓이라는 우인단 집행관의 주장이 함께 언급된다.",
+        "text": "그 운명이 **의도적으로 설계**되었을 가능성도 제기되는데, 신들이 신의 눈 소유자들이 목표를 이루면 무언가를 얻는다는 설명과 티바트의 하늘은 가짜이며 별은 거짓이라는 우인단 집행관의 주장이 함께 언급된다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Constellation",
-       "revision": 1272177,
-       "section": "How to Unlock",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Vision",
@@ -1192,107 +1007,32 @@
        ]
       }
      ],
-     "heading": "떡밥과 수수께끼 — 포르투나호와 운명의 별",
+     "heading": "떡밥과 수수께끼",
      "latin_left": []
     },
     {
      "section": "여담",
-     "status": "quote_mismatch",
-     "note": null,
-     "quote": "The book's author, Pulteney, notes that his depiction of Remuria's history is extrapolated from the myths and superstitions that became popular after the nation's collapse, given that Remuria's sudden and swift destruction left few survivors.",
+     "status": "accepted",
+     "note": "All sentences are supported by M7 and M3.",
+     "quote": "A factory worth of \"labour, materials and technology\" was also required in the project.",
      "sentences": [
       {
-       "t_raw": "Fortuna는 Remuria 멸망 후 약 100년 뒤 쓰인 The History of the Decline and Fall of Remuria에서 **세 번** 언급된다.",
+       "t_raw": "Wingalet 건조에는 Fontaine Research Institute의 연구원 Jurieu와 Lourvine의 안내가 있었고, **공장 하나 분량의 노동, 재료, 기술**이 동원되었다.",
        "interp": false,
        "dropped": false,
-       "t": "포르투나호는 레무리아 멸망 후 약 100년 뒤 쓰인 레무리아 몰락사에서 **세 번** 언급된다."
+       "t": "윙갈레트호 건조에는 폰타인 과학원의 연구원 쥐리에와 루르빈의 안내가 있었고, **공장 하나 분량의 노동, 재료, 기술**이 동원되었다."
       },
       {
-       "t_raw": "1권의 Remus가 ‘in his golden Fortuna’로 Meropis에 내려왔다는 대목과 Remuria의 예언된 몰락을 설명하는 대목, 2권의 Ocean Pillars와 등대탑 사이 항구에 정박한 제국의 배 이름이 그 셋이다.",
+       "t_raw": "Wriothesley는 그 배가 끝내 헛수고가 될 수 있어도 완성을 고집했다.",
        "interp": false,
        "dropped": false,
-       "t": "1권의 레무스가 'in his golden 포르투나호'로 메로피스에 내려왔다는 대목과 레무리아의 예언된 몰락을 설명하는 대목, 2권의 바다의 기둥과 등대탑 사이 항구에 정박한 제국의 배 이름이 그 셋이다."
+       "t": "라이오슬리는 그 배가 끝내 헛수고가 될 수 있어도 완성을 고집했다."
       },
       {
-       "t_raw": "저자 Pulteney는 서술이 붕괴 후 유행한 신화와 미신에서 추측된 것임을 밝힌다.",
+       "t_raw": "그는 Traveler가 Lyney, Lynette, Freminet에게 방금 본 것을 말할지는 개의치 않았지만, 그들이 어떤 행동을 택하든 그들에게 영향을 미칠 수 있다고 경고했다.",
        "interp": false,
        "dropped": false,
-       "t": "저자 펄트니는 서술이 붕괴 후 유행한 신화와 미신에서 추측된 것임을 밝힌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fortuna",
-       "revision": 1514905,
-       "section": "Ancient Usage",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The History of the Decline and Fall of Remuria"
-        }
-       ]
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Although Wriothesley is not concerned with the Traveler sharing what they just saw to Lyney, Lynette, and Freminet, he warned them that whatever action they decide to take will likely affect them.",
-     "sentences": [
-      {
-       "t_raw": "Wriothesley는 노동자들이 Fortuna 뒤의 진실을 알게 되면 **폭동**이 일어나 Fortress of Meropide가 위험해질 것이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라이오슬리는 노동자들이 포르투나호 뒤의 진실을 알게 되면 **폭동**이 일어나 메로피드 요새가 위험해질 것이라고 말한다."
-      },
-      {
-       "t_raw": "그는 Traveler가 Lyney, Lynette, Freminet에게 본 것을 알려도 개의치 않지만, 그들의 행동이 영향을 받을 수 있다고 경고한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 여행자가 리니, 리넷, 프레미네에게 본 것을 알려도 개의치 않지만, 그들의 행동이 영향을 받을 수 있다고 경고한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "The Wingalet",
-       "revision": 1386156,
-       "section": "Story",
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Were you inspired by the legendary Fortuna?",
-     "sentences": [
-      {
-       "t_raw": "Wriothesley는 Fontaine Research Institute의 Jurieu와 Lourvine의 안내를 받아 Fortuna에서 영감을 받은 Wingalet을 만드는 **비밀 프로젝트**를 시작했고, 여기에는 공장 규모의 노동력, 자재, 기술이 필요하다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라이오슬리는 폰타인 과학원의 쥐리에와 루르빈의 안내를 받아 포르투나호에서 영감을 받은 윙갈레트호를 만드는 **비밀 프로젝트**를 시작했고, 여기에는 공장 규모의 노동력, 자재, 기술이 필요하다."
-      },
-      {
-       "t_raw": "Paimon은 전설의 Fortuna에서 영감을 받았는지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 전설의 포르투나호에서 영감을 받았는지 묻는다."
-      },
-      {
-       "t_raw": "Stella Fortuna는 Traveler를 제외한 캐릭터의 별자리 레벨을 열 때 소비하며, 같은 캐릭터를 다시 얻으면 획득한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "운명의 별은 여행자를 제외한 캐릭터의 별자리 레벨을 열 때 소비하며, 같은 캐릭터를 다시 얻으면 획득한다."
+       "t": "그는 여행자가 리니, 리넷, 프레미네에게 방금 본 것을 말할지는 개의치 않았지만, 그들이 어떤 행동을 택하든 그들에게 영향을 미칠 수 있다고 경고했다."
       }
      ],
      "sources": [
@@ -1310,12 +1050,44 @@
        ]
       },
       {
-       "kind": "quest",
-       "quest": "Secret Keepers and Forbidden Zones",
-       "quest_ko": "비밀 수호자와 금지 구역",
-       "version": "4.1",
-       "speaker": "Paimon"
+       "kind": "wiki",
+       "page": "The Wingalet",
+       "revision": 1386156,
+       "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 2 calls Stella Fortuna a game-system term unconnected to the narrative. The English does not say this. M5 treats Stella Fortuna as an in-world term for the stars of constellations, and M1 says only that how the Fortuna terms relate is not detailed. So the claim is an unsupported guess.",
+     "quote": "In order to unlock each Constellation level of a character (aside from the Traveler), a player must spend a Stella Fortuna for that specific character.",
+     "sentences": [
+      {
+       "t_raw": "Traveler를 제외한 캐릭터의 Constellation 단계를 개방하려면 그 캐릭터의 **Stella Fortuna**를 소비해야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자를 제외한 캐릭터의 운명의 자리 단계를 개방하려면 그 캐릭터의 **운명의 별**을 소비해야 한다."
       },
+      {
+       "t_raw": "Stella Fortuna는 캐릭터를 중복으로 얻을 때 획득하며, 그 중복은 Wishes에서 뽑거나 Paimon's Bargains에서 구매하거나 Events를 통해 얻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운명의 별은 캐릭터를 중복으로 얻을 때 획득하며, 그 중복은 염원에서 뽑거나 페이몬의 Bargains에서 구매하거나 Events를 통해 얻는다."
+      },
+      {
+       "t_raw": "Fortuna가 Remuria의 배이자 문명의 순환을 가리키는 서사 용어로 쓰인 점과 함께 놓으면, **Stella Fortuna**는 별자리를 이루는 별들을 가리키는 용어로 보이며, Fortuna 관련 용어들이 서로 어떻게 이어지는지는 상세히 밝혀지지 않은 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "포르투나호가 레무리아의 배이자 문명의 순환을 가리키는 서사 용어로 쓰인 점과 함께 놓으면, **운명의 별**은 별자리를 이루는 별들을 가리키는 용어로 보이며, 포르투나호 관련 용어들이 서로 어떻게 이어지는지는 상세히 밝혀지지 않은 것으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Constellation",
@@ -1323,18 +1095,46 @@
        "section": "How to Unlock",
        "paragraph": "M2",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fortuna",
+       "revision": 1514905,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Lightless Silk String"
+        },
+        {
+         "type": "item",
+         "name": "Enigmatic Page (I)"
+        },
+        {
+         "type": "book",
+         "name": "The History of the Decline and Fall of Remuria"
+        },
+        {
+         "type": "quest",
+         "name": "Secret Keepers and Forbidden Zones"
+        }
+       ]
       }
      ],
      "heading": "여담",
-     "latin_left": []
+     "latin_left": [
+      "Bargains",
+      "Events"
+     ]
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "전설의 Fortuna에서 영감을 받은 건가요?",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "전설의 Fortuna에서 영감을 받은 거야?",
      "en": "Were you inspired by the legendary Fortuna?",
      "speaker": "Paimon",
      "source": {
@@ -1344,31 +1144,14 @@
       "version": "4.1",
       "speaker": "Paimon"
      },
-     "t": "전설의 포르투나호에서 영감을 받은 건가요?",
+     "t": "전설의 포르투나호에서 영감을 받은 거야?",
      "speaker_ko": "페이몬"
     },
     {
-     "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "전설의 Fortuna에서 영감을 받으셨나요?",
-     "en": "Were you inspired by the legendary Fortuna?",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Secret Keepers and Forbidden Zones",
-      "quest_ko": "비밀 수호자와 금지 구역",
-      "version": "4.1",
-      "speaker": "Paimon"
-     },
-     "t": "전설의 포르투나호에서 영감을 받으셨나요?",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "드러난 역사 — Remuria와 기록",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그는 자신의 국가를 “Remuria”라고 불렀고, Fortuna를 사용해 끊임없이 새로운 부족과 섬을 찾아 그들에게 자신의 제국에 합류하라고 촉구했다.",
+     "section": "드러난 역사 — Remuria",
+     "status": "accepted",
+     "note": "Faithful translation of Wriothesley's line.",
+     "t_raw": "그는 자기 나라를 “Remuria”라고 불렀고, Fortuna를 이용해 끊임없이 새로운 부족과 섬을 찾아다니며 그들에게 자기 제국에 합류하라고 권했다.",
      "en": "He called his nation \"Remuria,\" and used the Fortuna to incessantly search for new tribes and islands, calling on them to join his empire.",
      "speaker": "Wriothesley",
      "source": {
@@ -1378,14 +1161,14 @@
       "version": "4.1",
       "speaker": "Wriothesley"
      },
-     "t": "그는 자신의 국가를 “레무리아”라고 불렀고, 포르투나호를 사용해 끊임없이 새로운 부족과 섬을 찾아 그들에게 자신의 제국에 합류하라고 촉구했다.",
+     "t": "그는 자기 나라를 “레무리아”라고 불렀고, 포르투나호를 이용해 끊임없이 새로운 부족과 섬을 찾아다니며 그들에게 자기 제국에 합류하라고 권했다.",
      "speaker_ko": "라이오슬리"
     },
     {
-     "section": "얽힌 인물과 세력 — Remus, Sybilla, Wriothesley",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "전설의 Fortuna에서 영감을 받은 건가요?",
+     "section": "드러난 역사 — Fortress of Meropide와 Wingalet",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "전설의 Fortuna에서 영감을 받은 거야?",
      "en": "Were you inspired by the legendary Fortuna?",
      "speaker": "Paimon",
      "source": {
@@ -1395,13 +1178,13 @@
       "version": "4.1",
       "speaker": "Paimon"
      },
-     "t": "전설의 포르투나호에서 영감을 받은 건가요?",
+     "t": "전설의 포르투나호에서 영감을 받은 거야?",
      "speaker_ko": "페이몬"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line: 'Were you inspired by the legendary Fortuna?'",
      "t_raw": "전설의 Fortuna에서 영감을 받은 건가요?",
      "en": "Were you inspired by the legendary Fortuna?",
      "speaker": "Paimon",

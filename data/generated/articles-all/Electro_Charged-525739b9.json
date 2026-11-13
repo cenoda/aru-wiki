@@ -1,0 +1,952 @@
+{
+ "node": "Electro-Charged",
+ "articles": [
+  {
+   "node": "Electro-Charged",
+   "from_version": "Luna VI",
+   "cutoff": "2026-05-19T00:00:00Z",
+   "input": [
+    {
+     "page": "Electro-Charged",
+     "url": "https://genshin-impact.fandom.com/wiki/Electro-Charged",
+     "revision": 2085322
+    }
+   ],
+   "input_counts": {
+    "mentions": 12,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 2349,
+   "input_cut": false,
+   "input_hash": "465851275f54",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by M2, A2, M6, A8/M7, M3. The interpretation in (3) follows reasonably.",
+     "quote": "When Electro meets Hydro, Electro-Charged occurs. Electro-Charged continuously deals Electro DMG until it wears off.",
+     "sentences": [
+      {
+       "t_raw": "**Electro-Charged**는 Electro와 Hydro가 만날 때 발생하며, 대상에게 Electro 피해를 계속 주는 원소 반응이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**감전**은 번개와 물이 만날 때 발생하며, 대상에게 번개 피해를 계속 주는 원소 반응이다."
+      },
+      {
+       "t_raw": "대상에게는 Electro와 Hydro 오라가 함께 남고, 두 오라가 버티는 동안 매초 피해가 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대상에게는 번개와 물 오라가 함께 남고, 두 오라가 버티는 동안 매초 피해가 이어진다."
+      },
+      {
+       "t_raw": "이 피해는 주변의 Wet 적에게 전기로 튀고, 물에 Electro 공격이 닿으면 물 자체가 Electro-Charged가 되어 범위 안의 존재를 공격하며, Lisa는 물 근처에서 이 반응으로 우위를 점하라고 가르친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 피해는 주변의 Wet 적에게 전기로 튀고, 물에 번개 공격이 닿으면 물 자체가 감전이 되어 범위 안의 존재를 공격하며, 리사는 물 근처에서 이 반응으로 우위를 점하라고 가르친다."
+      },
+      {
+       "t_raw": "물가에서의 우위와 주변 Wet 대상으로의 연쇄를 함께 보면, Electro-Charged는 위치와 원소 상태를 같이 읽게 하는 전투 수단으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "물가에서의 우위와 주변 Wet 대상으로의 연쇄를 함께 보면, 감전은 위치와 원소 상태를 같이 읽게 하는 전투 수단으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Electro-Charged (I)",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Electro-Charged (II)",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Environment",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Wet",
+      "Wet"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by M2 and M4.",
+     "quote": "When Electro meets Hydro, Electro-Charged occurs. Electro-Charged continuously deals Electro DMG until it wears off.",
+     "sentences": [
+      {
+       "t_raw": "Electro가 Hydro와 만나거나 Hydro가 Electro에 닿으면 **Electro-Charged**가 발생한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "번개가 물과 만나거나 물이 번개에 닿으면 **감전**이 발생한다."
+      },
+      {
+       "t_raw": "Electro-Charged는 사라질 때까지 Electro DMG를 계속 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전은 사라질 때까지 번개 원소 피해를 계속 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Electro-Charged (I)",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by M5, M6 and A4.",
+     "quote": "When Electro-Charged DMG is dealt, it will also be dealt to a single other nearby Wet opponent within 5m, taking into account their Electro RES. Wet auras will not be consumed by arcing Electro-Charged DMG.",
+     "sentences": [
+      {
+       "t_raw": "Electro-Charged 상태가 되면 그 대상에게서 전기가 간헐적으로 튀어 나와, 근처의 Hydro 영향을 받는 상대를 감전시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전 상태가 되면 그 대상에게서 전기가 간헐적으로 튀어 나와, 근처의 물 영향을 받는 상대를 감전시킨다."
+      },
+      {
+       "t_raw": "Electro-Charged 상태인 상대는 근처의 Wet 상대에게 상당한 Electro 피해를 줄 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전 상태인 상대는 근처의 Wet 상대에게 상당한 번개 피해를 줄 수 있다."
+      },
+      {
+       "t_raw": "Electro-Charged 피해가 들어갈 때에는 5m 안의 다른 Wet 상대 하나에게도 피해가 들어가며, 그 상대의 Electro RES가 고려된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전 피해가 들어갈 때에는 5m 안의 다른 Wet 상대 하나에게도 피해가 들어가며, 그 상대의 Electro RES가 고려된다."
+      },
+      {
+       "t_raw": "이 연쇄 피해로 **주변 Wet 대상**의 Wet 오라는 소모되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 연쇄 피해로 **주변 Wet 대상**의 Wet 오라는 소모되지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Electro-Charged (II)",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Wet",
+      "Wet",
+      "Electro RES",
+      "Wet",
+      "Wet"
+     ]
+    },
+    {
+     "section": "정체 — 오라와 틱",
+     "status": "accepted",
+     "note": "Supported by A2, A6 and M10. The interpretation in (3) follows from M10's contrast with immediate-damage reactions.",
+     "quote": "Electro-Charged targets will have both a Hydro and an Electro aura simultaneously.",
+     "sentences": [
+      {
+       "t_raw": "Electro-Charged에 걸린 대상은 **Hydro 오라와 Electro 오라를 동시에** 지닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전에 걸린 대상은 **물 오라와 번개 오라를 동시에** 지닌다."
+      },
+      {
+       "t_raw": "두 오라가 공존하는 동안 피해가 즉시 들어가고 1초마다 피해 틱이 이어지며, 매 틱은 두 오라를 **0.4 게이지 단위**씩 줄여 한쪽이 고갈되면 멈춘다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 오라가 공존하는 동안 피해가 즉시 들어가고 1초마다 피해 틱이 이어지며, 매 틱은 두 오라를 **0.4 게이지 단위**씩 줄여 한쪽이 고갈되면 멈춘다."
+      },
+      {
+       "t_raw": "자연 감소도 계속 적용되고, Electro 및 Hydro 보호막에는 초당 0.4 게이지 단위의 지속 피해가 들어가며 그 속도는 유발 원소의 게이지 양과 무관하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자연 감소도 계속 적용되고, 번개 및 물 보호막에는 초당 0.4 게이지 단위의 지속 피해가 들어가며 그 속도는 유발 원소의 게이지 양과 무관하다."
+      },
+      {
+       "t_raw": "따라서 이 반응은 보호막에 즉시 피해를 주는 다른 반응과 달리, 두 오라가 버티는 동안 피해가 누적되는 구조로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 이 반응은 보호막에 즉시 피해를 주는 다른 반응과 달리, 두 오라가 버티는 동안 피해가 누적되는 구조로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Number of Hits",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ward",
+       "revision": 1710343,
+       "section": "Durability > Reaction Cost",
+       "paragraph": "M10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체 — 오라와 틱",
+     "latin_left": []
+    },
+    {
+     "section": "정체 — 오라와 틱",
+     "status": "accepted",
+     "note": "Supported by A3 and A6.",
+     "quote": "The coexistence of elements allows for effects like Thundersoother to be applied without forgoing Elemental Reactions entirely",
+     "sentences": [
+      {
+       "t_raw": "원소의 공존은 Thundersoother 효과를 원소 반응을 완전히 포기하지 않고 받게 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원소의 공존은 뇌명을 평정한 존자 효과를 원소 반응을 완전히 포기하지 않고 받게 한다."
+      },
+      {
+       "t_raw": "Electro-Charged 대상에 세 번째 원소를 가하면 여러 반응이 함께 일어날 수 있으나, **Electro 반응이 우선**이며 Hydro 반응은 Electro 오라를 고갈시키고 남은 유발 원소 게이지가 있을 때만 일어난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전 대상에 세 번째 원소를 가하면 여러 반응이 함께 일어날 수 있으나, **번개 반응이 우선**이며 물 반응은 번개 오라를 고갈시키고 남은 유발 원소 게이지가 있을 때만 일어난다."
+      },
+      {
+       "t_raw": "오라 소멸로 반응이 끝날 때 마지막 틱에서 0.5초 넘게 지났다면 피해 틱이 한 번 더 들어간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오라 소멸로 반응이 끝날 때 마지막 틱에서 0.5초 넘게 지났다면 피해 틱이 한 번 더 들어간다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Number of Hits",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체 — 오라와 틱",
+     "latin_left": []
+    },
+    {
+     "section": "전투와 피해",
+     "status": "accepted",
+     "note": "Supported by A6 and A1.",
+     "quote": "Switching to a different character after being affected by Electro-Charged will temporarily pause its DoT ticks.",
+     "sentences": [
+      {
+       "t_raw": "Electro-Charged는 즉시 피해를 준 뒤 1초마다 틱 피해를 주며, Hydro나 Electro 오라가 소진되어 끝날 때 마지막 틱으로부터 0.5초가 지났으면 한 번 더 피해를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전은 즉시 피해를 준 뒤 1초마다 틱 피해를 주며, 물이나 번개 오라가 소진되어 끝날 때 마지막 틱으로부터 0.5초가 지났으면 한 번 더 피해를 준다."
+      },
+      {
+       "t_raw": "이 피해는 필드 밖 캐릭터에게는 들어가지 않고, 영향을 받은 캐릭터를 교체하면 **틱이 잠시 멈추며**, 그 캐릭터가 Electro와 Hydro에 여전히 영향을 받은 채 다시 활성 캐릭터가 되면 틱이 재개된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 피해는 필드 밖 캐릭터에게는 들어가지 않고, 영향을 받은 캐릭터를 교체하면 **틱이 잠시 멈추며**, 그 캐릭터가 번개와 물에 여전히 영향을 받은 채 다시 활성 캐릭터가 되면 틱이 재개된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Number of Hits",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투와 피해",
+     "latin_left": []
+    },
+    {
+     "section": "전투와 피해",
+     "status": "accepted",
+     "note": "All sentences are supported by A4, A5, A7, M5, M6 and Q1.",
+     "quote": "When Electro-Charged DMG is dealt, it will also be dealt to a single other nearby Wet opponent within 5m, taking into account their Electro RES.",
+     "sentences": [
+      {
+       "t_raw": "반응 피해는 **5m 이내**의 다른 Wet 상대 하나에게도 번지며, 그 대상의 Electro RES를 고려하고 Wet 오라는 소모하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "반응 피해는 **5m 이내**의 다른 Wet 상대 하나에게도 번지며, 그 대상의 Electro RES를 고려하고 Wet 오라는 소모하지 않는다."
+      },
+      {
+       "t_raw": "주변 Hydro 상태 대상에게도 피해를 주지만 Electro 오라를 부여하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주변 물 상태 대상에게도 피해를 주지만 번개 오라를 부여하지 않는다."
+      },
+      {
+       "t_raw": "Electro-Charged 상태의 적은 주변 Wet 상대에게 상당한 Electro DMG를 줄 수 있고, 전기가 간헐적으로 튀어 주변 Hydro 영향을 받은 적을 감전시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전 상태의 적은 주변 Wet 상대에게 상당한 번개 원소 피해를 줄 수 있고, 전기가 간헐적으로 튀어 주변 물 영향을 받은 적을 감전시킨다."
+      },
+      {
+       "t_raw": "Electro-Charged 상태의 적들 사이에서도 연쇄 번개가 일어날 수 있고, 원소 마스터리 보너스와 대상의 저항 배수는 기본 피해에 **곱연산으로 적용된다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전 상태의 적들 사이에서도 연쇄 번개가 일어날 수 있고, 원소 마스터리 보너스와 대상의 저항 배수는 기본 피해에 **곱연산으로 적용된다**."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Damage",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Number of Hits",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Electro-Charged (II)",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Sparks Amongst the Pages",
+       "quest_ko": "페이지 속의 스파크",
+       "version": "1.0",
+       "speaker": "Lisa"
+      }
+     ],
+     "heading": "전투와 피해",
+     "latin_left": [
+      "Wet",
+      "Electro RES",
+      "Wet",
+      "Wet"
+     ]
+    },
+    {
+     "section": "물과 환경",
+     "status": "accepted",
+     "note": "All sentences are supported by M2, M3, M4, M7 and A8. The interpretation in (4) follows from them.",
+     "quote": "Electro attacks can electrify bodies of water. Electro-Charged water deals Electro DMG to all beings in the AoE.",
+     "sentences": [
+      {
+       "t_raw": "Hydro와 Electro가 서로 닿으면 **Electro-Charged**가 일어나며, 반응은 효과가 사라질 때까지 Electro DMG를 계속 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물과 번개가 서로 닿으면 **감전**이 일어나며, 반응은 효과가 사라질 때까지 번개 원소 피해를 계속 준다."
+      },
+      {
+       "t_raw": "Electro 공격이 물에 닿으면 물이 짧은 시간 Electro-Charged가 되고, 그 물은 AoE 안의 모든 존재와 물에 들어간 대상에게 Electro DMG를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "번개 공격이 물에 닿으면 물이 짧은 시간 감전이 되고, 그 물은 AoE 안의 모든 존재와 물에 들어간 대상에게 번개 원소 피해를 준다."
+      },
+      {
+       "t_raw": "이 물은 Pyro 공격에는 Overloaded, Cryo 공격에는 Superconduct를 일으킬 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 물은 불 공격에는 과부하, 얼음 공격에는 초전도를 일으킬 수 있다."
+      },
+      {
+       "t_raw": "Lisa의 경우 물가에서 Electro-Charged를 활용해 이점을 얻는 방법이 안내된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리사의 경우 물가에서 감전을 활용해 이점을 얻는 방법이 안내된다."
+      },
+      {
+       "t_raw": "물은 Electro-Charged를 일으키는 매개이자 AoE로 피해를 넓히는 환경인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "물은 감전을 일으키는 매개이자 AoE로 피해를 넓히는 환경인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Environment",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Electro-Charged Water",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Electro-Charged (I)",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "물과 환경",
+     "latin_left": [
+      "AoE",
+      "AoE"
+     ]
+    },
+    {
+     "section": "물과 환경",
+     "status": "accepted",
+     "note": "All sentences are supported by M11. The interpretation in (3) follows from it.",
+     "quote": "As a result of the heavy concentration of Tatarigami energy, the island suffers from torrential rainfall and frequent thunderstorms in the open, which in turn applies constant Wet status.",
+     "sentences": [
+      {
+       "t_raw": "Yashiori Island는 Tatarigami energy가 높게 농축된 결과로 야외에서 폭우와 잦은 뇌우를 겪고, 그로 인해 계속 **Wet** 상태가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야시오리섬은 재앙신 에너지가 높게 농축된 결과로 야외에서 폭우와 잦은 뇌우를 겪고, 그로 인해 계속 **젖음** 상태가 된다.",
+       "polish": {
+        "from": "야시오리섬은 재앙신 energy가 높게 농축된 결과로 야외에서 폭우와 잦은 뇌우를 겪고, 그로 인해 계속 **Wet** 상태가 된다.",
+        "text": "야시오리섬은 재앙신 에너지가 높게 농축된 결과로 야외에서 폭우와 잦은 뇌우를 겪고, 그로 인해 계속 **젖음** 상태가 된다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "비가 오는 동안 뇌우에 맞으면 Electro-Charged가 일어날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비가 오는 동안 뇌우에 맞으면 감전이 일어날 수 있다."
+      },
+      {
+       "t_raw": "Orobashi's Legacy를 완전히 완료하기 전까지 이런 이상 기상은 섬에 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오로바시 님의 유산을 완전히 완료하기 전까지 이런 이상 기상은 섬에 남는다."
+      },
+      {
+       "t_raw": "Yashiori Island에서는 비와 뇌우가 상시 Wet 환경을 만들고 Electro-Charged를 불러오는 조건이 되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "야시오리섬에서는 비와 뇌우가 상시 Wet 환경을 만들고 감전을 불러오는 조건이 되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yashiori Island",
+       "revision": 576302,
+       "section": null,
+       "paragraph": "M11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "물과 환경",
+     "latin_left": [
+      "Wet"
+     ]
+    },
+    {
+     "section": "변형 규칙과 장치",
+     "status": "accepted",
+     "note": "All sentences are supported by M1, M8 and M9. The interpretation in (3) is reasonable.",
+     "quote": "When Overloaded/Melt/Vaporize/Electro-Charged/Superconduct is triggered, an Energy Blast will occur, dealing DMG to surrounding enemies.",
+     "sentences": [
+      {
+       "t_raw": "Ley Line Disorder의 **Electro-Charged Buff**는 Electro-Charged 피해를 150% 증가시키고 AoE를 100% 늘린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지맥 이상의 **Electro-Charged Buff**는 감전 피해를 150% 증가시키고 AoE를 100% 늘린다."
+      },
+      {
+       "t_raw": "Ley Line Disorder에서 Electro-Charged가 발동하면 **Energy Blast**가 일어나 주변 적에게 피해를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지맥 이상에서 감전이 발동하면 **에너지 폭발**이 일어나 주변 적에게 피해를 준다."
+      },
+      {
+       "t_raw": "Powerful Blast가 걸린 환경에서는 Electro-Charged 발동 시 강력한 폭발이 일어나 캐릭터가 피해를 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Powerful Blast가 걸린 환경에서는 감전 발동 시 강력한 폭발이 일어나 캐릭터가 피해를 받는다."
+      },
+      {
+       "t_raw": "따라서 같은 Electro-Charged 발동도 어떤 Ley Line Disorder 아래에 있느냐에 따라 주변 적을 타격하는 폭발이 되기도 하고, 캐릭터를 위협하는 폭발이 되기도 하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 같은 감전 발동도 어떤 지맥 이상 아래에 있느냐에 따라 주변 적을 타격하는 폭발이 되기도 하고, 캐릭터를 위협하는 폭발이 되기도 하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ley Line Disorder",
+       "revision": 1085101,
+       "section": "Buffs",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ley Line Disorder",
+       "revision": 1085101,
+       "section": "Buffs",
+       "paragraph": "M8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ley Line Disorder",
+       "revision": 1085101,
+       "section": "Hazards/Debuffs > Environmental Hazards",
+       "paragraph": "M9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "변형 규칙과 장치",
+     "latin_left": [
+      "Electro-Charged Buff",
+      "AoE",
+      "Powerful Blast"
+     ]
+    },
+    {
+     "section": "변형 규칙과 장치",
+     "status": "accepted",
+     "note": "All sentences are supported by M12. The interpretation in (3) follows from the recommendation to use Pyro or Cryo.",
+     "quote": "Due to the nature of Electro, it is highly recommended to use Pyro or Cryo attacks to inflict Overloaded and Superconduct, both of which deal high damage compared to Electro-Charged or Swirl.",
+     "sentences": [
+      {
+       "t_raw": "Abyss Lector는 체력이 위태로워지면 **Electro shield**를 활성화하며, 이 shield는 해당 상태를 영구적으로 부여한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연 봉독자는 체력이 위태로워지면 **번개 shield**를 활성화하며, 이 shield는 해당 상태를 영구적으로 부여한다."
+      },
+      {
+       "t_raw": "그 결과 원소 반응이 더 일관되게 일어날 여지가 생기지만, Abyss Lector의 공격도 강화된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 결과 원소 반응이 더 일관되게 일어날 여지가 생기지만, 심연 봉독자의 공격도 강화된다."
+      },
+      {
+       "t_raw": "Electro의 성질상 Pyro나 Cryo 공격으로 Overloaded와 Superconduct를 일으키는 것이 강력히 권장되며, 두 반응은 Electro-Charged나 Swirl보다 높은 피해를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "번개의 성질상 불이나 얼음 공격으로 과부하와 초전도를 일으키는 것이 강력히 권장되며, 두 반응은 감전이나 확산보다 높은 피해를 준다."
+      },
+      {
+       "t_raw": "이 shield를 상대할 때는 Electro-Charged로 맞서기보다 Pyro나 Cryo로 다른 반응을 노리는 쪽이 낫다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 보호막을 상대할 때는 감전으로 맞서기보다 불이나 얼음으로 다른 반응을 노리는 쪽이 낫다고 볼 수 있다.",
+       "polish": {
+        "from": "이 shield를 상대할 때는 감전으로 맞서기보다 불이나 얼음으로 다른 반응을 노리는 쪽이 낫다고 볼 수 있다.",
+        "text": "이 보호막을 상대할 때는 감전으로 맞서기보다 불이나 얼음으로 다른 반응을 노리는 쪽이 낫다고 볼 수 있다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Abyss Lector",
+       "revision": 240000,
+       "section": "Strategy",
+       "paragraph": "M12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "변형 규칙과 장치",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 장소",
+     "status": "accepted",
+     "note": "Sentences (0) and (1) are supported by M3 and Q1. The interpretation in (2) is modest and follows from them.",
+     "quote": "Chain lightning can be set off between Electro-Charged opponents.",
+     "sentences": [
+      {
+       "t_raw": "Lisa 관련 안내는 물가에서 **Electro-Charged**를 활용하는 것이 Lisa에게 유리하다고 제시한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리사 관련 안내는 물가에서 **감전**을 활용하는 것이 리사에게 유리하다고 제시한다."
+      },
+      {
+       "t_raw": "Lisa는 Electro-Charged 상태인 적들 사이에서 연쇄 번개가 일어날 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리사는 감전 상태인 적들 사이에서 연쇄 번개가 일어날 수 있다고 말한다."
+      },
+      {
+       "t_raw": "이 두 사실을 겹쳐 보면, 물가의 Electro-Charged 활용은 적들 사이의 연쇄라는 장면과 함께 이해되는 전술로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 두 사실을 겹쳐 보면, 물가의 감전 활용은 적들 사이의 연쇄라는 장면과 함께 이해되는 전술로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Sparks Amongst the Pages",
+       "quest_ko": "페이지 속의 스파크",
+       "version": "1.0",
+       "speaker": "Lisa"
+      }
+     ],
+     "heading": "얽힌 인물과 장소",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 장소",
+     "status": "accepted",
+     "note": "All sentences match M11 or follow from it.",
+     "quote": "Getting hit by a thunderstorm while raining can cause Electro-Charged.",
+     "sentences": [
+      {
+       "t_raw": "**Yashiori Island**는 Tatarigami energy가 강하게 집중된 결과 폭우와 야외의 잦은 뇌우를 겪고, 그로 인해 지속적인 Wet 상태가 적용된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**야시오리섬**은 재앙신 에너지가 강하게 집중된 결과 폭우와 야외의 잦은 뇌우를 겪고, 그로 인해 지속적인 젖음 상태가 적용된다.",
+       "polish": {
+        "from": "**야시오리섬**은 재앙신 energy가 강하게 집중된 결과 폭우와 야외의 잦은 뇌우를 겪고, 그로 인해 지속적인 Wet 상태가 적용된다.",
+        "text": "**야시오리섬**은 재앙신 에너지가 강하게 집중된 결과 폭우와 야외의 잦은 뇌우를 겪고, 그로 인해 지속적인 젖음 상태가 적용된다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "비가 내리는 동안 뇌우에 맞으면 Electro-Charged가 발생할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비가 내리는 동안 뇌우에 맞으면 감전이 발생할 수 있다."
+      },
+      {
+       "t_raw": "Orobashi's Legacy를 완전히 완료하기 전까지 이 이상 기상은 섬에 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오로바시 님의 유산을 완전히 완료하기 전까지 이 이상 기상은 섬에 남는다."
+      },
+      {
+       "t_raw": "날씨가 지속적인 Wet 상태를 만들고 뇌우가 Electro-Charged를 일으킬 수 있으므로, 이 섬에서는 기상 자체가 반응의 조건을 계속 공급하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "날씨가 지속적인 Wet 상태를 만들고 뇌우가 감전을 일으킬 수 있으므로, 이 섬에서는 기상 자체가 반응의 조건을 계속 공급하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yashiori Island",
+       "revision": 576302,
+       "section": null,
+       "paragraph": "M11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 장소",
+     "latin_left": [
+      "Wet"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Facts match Q1, M6, A4 and M3. The interpretation is reasonable.",
+     "quote": "Chain lightning can be set off between Electro-Charged opponents.",
+     "sentences": [
+      {
+       "t_raw": "Electro-Charged 상태의 적 사이에서는 **연쇄 번개**가 일어날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전 상태의 적 사이에서는 **연쇄 번개**가 일어날 수 있다."
+      },
+      {
+       "t_raw": "Electro-Charged에 걸린 적은 주변의 **Wet 적**에게 Electro 피해를 일으킬 수 있으며, 이때 상당한 Electro 피해가 들어간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전에 걸린 적은 주변의 **Wet 적**에게 번개 피해를 일으킬 수 있으며, 이때 상당한 번개 피해가 들어간다."
+      },
+      {
+       "t_raw": "Electro-Charged 피해가 발생하면 5m 안의 다른 Wet 적 하나에도 피해가 들어가며, 그 적의 Electro RES가 반영되고 Wet 오라는 소모되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전 피해가 발생하면 5m 안의 다른 Wet 적 하나에도 피해가 들어가며, 그 적의 Electro RES가 반영되고 Wet 오라는 소모되지 않는다."
+      },
+      {
+       "t_raw": "물가에서 Electro-Charged를 활용해 Lisa에게 이점을 주는 방식이 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물가에서 감전을 활용해 리사에게 이점을 주는 방식이 제시된다."
+      },
+      {
+       "t_raw": "이 요소들을 함께 보면 Electro-Charged는 적 하나에 머무는 피해가 아니라 주변과 물가로 번지는 반응이라는 인상을 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 요소들을 함께 보면 감전은 적 하나에 머무는 피해가 아니라 주변과 물가로 번지는 반응이라는 인상을 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sparks Amongst the Pages",
+       "quest_ko": "페이지 속의 스파크",
+       "version": "1.0",
+       "speaker": "Lisa"
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro-Charged",
+       "revision": 2085322,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Wet",
+      "Wet",
+      "Electro RES",
+      "Wet"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Electro-Charged 상태인 상대들 사이에서 연쇄 번개가 일어날 수 있다.",
+     "en": "Chain lightning can be set off between Electro-Charged opponents.",
+     "speaker": "Lisa",
+     "source": {
+      "kind": "quest",
+      "quest": "Sparks Amongst the Pages",
+      "quest_ko": "페이지 속의 스파크",
+      "version": "1.0",
+      "speaker": "Lisa"
+     },
+     "t": "감전 상태인 상대들 사이에서 연쇄 번개가 일어날 수 있다.",
+     "speaker_ko": "리사"
+    },
+    {
+     "section": "전투와 피해",
+     "status": "accepted",
+     "note": "Faithful. The active phrasing is a minor shift from the English passive but keeps the meaning.",
+     "t_raw": "Electro-Charged 상대들 사이에서 연쇄 번개를 일으킬 수 있다.",
+     "en": "Chain lightning can be set off between Electro-Charged opponents.",
+     "speaker": "Lisa",
+     "source": {
+      "kind": "quest",
+      "quest": "Sparks Amongst the Pages",
+      "quest_ko": "페이지 속의 스파크",
+      "version": "1.0",
+      "speaker": "Lisa"
+     },
+     "t": "감전 상대들 사이에서 연쇄 번개를 일으킬 수 있다.",
+     "speaker_ko": "리사"
+    },
+    {
+     "section": "얽힌 인물과 장소",
+     "status": "accepted",
+     "note": "Faithful. 적들 is a fair rendering of opponents.",
+     "t_raw": "Electro-Charged 상태인 적들 사이에서 연쇄 번개가 일어날 수 있다.",
+     "en": "Chain lightning can be set off between Electro-Charged opponents.",
+     "speaker": "Lisa",
+     "source": {
+      "kind": "quest",
+      "quest": "Sparks Amongst the Pages",
+      "quest_ko": "페이지 속의 스파크",
+      "version": "1.0",
+      "speaker": "Lisa"
+     },
+     "t": "감전 상태인 적들 사이에서 연쇄 번개가 일어날 수 있다.",
+     "speaker_ko": "리사"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "연쇄 번개는 Electro-Charged 상태의 상대들 사이에서 일어날 수 있다.",
+     "en": "Chain lightning can be set off between Electro-Charged opponents.",
+     "speaker": "Lisa",
+     "source": {
+      "kind": "quest",
+      "quest": "Sparks Amongst the Pages",
+      "quest_ko": "페이지 속의 스파크",
+      "version": "1.0",
+      "speaker": "Lisa"
+     },
+     "t": "연쇄 번개는 감전 상태의 상대들 사이에서 일어날 수 있다.",
+     "speaker_ko": "리사"
+    }
+   ]
+  }
+ ]
+}

@@ -136,7 +136,7 @@
        "t_raw": "Elemental Burst에 필요한 Energy나 Special Energy의 양은 캐릭터마다 다르며, Talents 메뉴의 Skill Attributes에서 확인할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "원소폭발에 필요한 에너지나 Special Energy의 양은 캐릭터마다 다르며, 특성 메뉴의 Skill Attributes에서 확인할 수 있다."
+       "t": "원소폭발에 필요한 에너지나 Special Energy의 양은 캐릭터마다 다르며, 특성 메뉴의 특성 상세에서 확인할 수 있다."
       },
       {
        "t_raw": "Burst를 사용하면 Energy 또는 Special Energy가 전부 소모된다.",
@@ -171,7 +171,6 @@
       "Special Energy",
       "Special Energy",
       "Special Energy",
-      "Skill Attributes",
       "Burst",
       "Special Energy"
      ]
@@ -186,7 +185,7 @@
        "t_raw": "Elemental Burst를 쓰려면 Energy Cost만큼 Energy를 모아야 하고, Burst 아이콘은 마지막 사용 이후 모인 Energy를 원소 색으로 채우며 초과 Energy는 계산하지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "원소폭발을 쓰려면 Energy Cost만큼 에너지를 모아야 하고, Burst 아이콘은 마지막 사용 이후 모인 에너지를 원소 색으로 채우며 초과 에너지는 계산하지 않는다."
+       "t": "원소폭발을 쓰려면 원소 에너지만큼 에너지를 모아야 하고, Burst 아이콘은 마지막 사용 이후 모인 에너지를 원소 색으로 채우며 초과 에너지는 계산하지 않는다."
       },
       {
        "t_raw": "기본 Elemental Burst에 필요한 양보다 많은 Energy를 보유할 수 없고, 비용이 줄어든 Burst 버전을 가진 캐릭터는 그 버전의 필요량보다 더 많은 Energy를 가질 수 있지만 기본 버전의 필요량은 넘지 못한다.",
@@ -255,7 +254,6 @@
      ],
      "heading": "개요",
      "latin_left": [
-      "Energy Cost",
       "Burst",
       "Burst",
       "Special Energy",
@@ -292,7 +290,7 @@
        "t_raw": "일부 무기도 원소 입자를 만들고, 원소 공명 High Voltage는 Electro 관련 원소 반응이 적에게 발동하면 5초 쿨다운으로 Electro 원소 입자를 만들며, 번개가 이따금 Electro 입자 하나를 만들기도 한다.",
        "interp": false,
        "dropped": false,
-       "t": "일부 무기도 원소 입자를 만들고, 원소 공명 High Voltage는 번개 관련 원소 반응이 적에게 발동하면 5초 쿨다운으로 번개 원소 입자를 만들며, 번개가 이따금 번개 입자 하나를 만들기도 한다."
+       "t": "일부 무기도 원소 입자를 만들고, 원소 공명 고에너지의 번개는 번개 관련 원소 반응이 적에게 발동하면 5초 쿨다운으로 번개 원소 입자를 만들며, 번개가 이따금 번개 입자 하나를 만들기도 한다."
       }
      ],
      "sources": [
@@ -331,8 +329,7 @@
      ],
      "heading": "입자와 오브 — 파티 에너지 회복의 기본",
      "latin_left": [
-      "HP",
-      "High Voltage"
+      "HP"
      ]
     },
     {
@@ -705,7 +702,7 @@
        "t_raw": "특성 중에는 Energy를 직접 회복시키는 효과와 Elemental Particle을 통해 충전하는 효과가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "특성 중에는 에너지를 직접 회복시키는 효과와 Elemental Particle을 통해 충전하는 효과가 있다."
+       "t": "특성 중에는 에너지를 직접 회복시키는 효과와 원소 입자를 통해 충전하는 효과가 있다."
       },
       {
        "t_raw": "특정 성유물 세트는 Energy를 생성하고, 특정 무기는 패시브 효과의 일부로 Energy 생성을 가진다.",
@@ -777,9 +774,7 @@
       }
      ],
      "heading": "직접 회복과 일반 공격",
-     "latin_left": [
-      "Elemental Particle"
-     ]
+     "latin_left": []
     },
     {
      "section": "직접 회복과 일반 공격",
@@ -831,13 +826,13 @@
        "t_raw": "Elemental Burst 사용이나 기절 외에도, Energy를 흡수하는 적들이 캐릭터의 Energy를 **빼앗는** 일이 있고 High Voltage 같은 Ley Line Disorder도 Energy를 소모시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "원소폭발 사용이나 기절 외에도, 에너지를 흡수하는 적들이 캐릭터의 에너지를 **빼앗는** 일이 있고 High Voltage 같은 지맥 이상도 에너지를 소모시킨다."
+       "t": "원소폭발 사용이나 기절 외에도, 에너지를 흡수하는 적들이 캐릭터의 에너지를 **빼앗는** 일이 있고 고에너지의 번개 같은 지맥 이상도 에너지를 소모시킨다."
       },
       {
        "t_raw": "Katsuragikiri Nagamasa와 Shimenawa's Reminiscence 같은 무기·성유물 효과도 Energy를 소모시킬 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "카츠라기를 벤 나가마사와 Shimenawa의 Reminiscence 같은 무기·성유물 효과도 에너지를 소모시킬 수 있다."
+       "t": "카츠라기를 벤 나가마사와 추억의 시메나와의 Reminiscence 같은 무기·성유물 효과도 에너지를 소모시킬 수 있다."
       },
       {
        "t_raw": "다만 Skirk와 Mavuika의 Special Energy는 Special Energy라고 명시되지 않는 한 영향을 받지 않는다.",
@@ -866,8 +861,6 @@
      ],
      "heading": "에너지 손실과 환경 효과",
      "latin_left": [
-      "High Voltage",
-      "Shimenawa",
       "Reminiscence",
       "Special Energy",
       "Special Energy"
@@ -883,19 +876,19 @@
        "t_raw": "Energy Tides는 Elemental High Tide와 Elemental Low Tide를 10초 주기로 오가며, High Tide에는 공격 적중 시 많은 Elemental Particles가 생성되어 10 Elemental Energy를 회복시키는 효과가 2.8초마다 한 번씩 일어난다.",
        "interp": false,
        "dropped": false,
-       "t": "에너지 조수는 Elemental High Tide와 Elemental Low Tide를 10초 주기로 오가며, High Tide에는 공격 적중 시 많은 Elemental Particles가 생성되어 10 원소 에너지를 회복시키는 효과가 2.8초마다 한 번씩 일어난다."
+       "t": "에너지 조수는 원소 고조와 원소 저조를 10초 주기로 오가며, 원소 만조에는 공격 적중 시 많은 원소 입자가 생성되어 10 원소 에너지를 회복시키는 효과가 2.8초마다 한 번씩 일어난다."
       },
       {
        "t_raw": "**Elemental Low Tide**에는 파티의 모든 캐릭터가 Elemental Energy를 얻을 수 없다.",
        "interp": false,
        "dropped": false,
-       "t": "**Elemental Low Tide**에는 파티의 모든 캐릭터가 원소 에너지를 얻을 수 없다."
+       "t": "**원소 저조**에는 파티의 모든 캐릭터가 원소 에너지를 얻을 수 없다."
       },
       {
        "t_raw": "Energy Blast는 Overloaded/Melt/Vaporize/Electro-Charged/Superconduct 발동 시 주변 적에게 DMG를 주고, High-Energy Crystal Cores는 쓰러뜨린 적이 떨어뜨려 가까이 가면 폭발해 주변 캐릭터에게 Geo DMG를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "Energy Blast는 과부하/융해/증발/감전/초전도 발동 시 주변 적에게 DMG를 주고, High-Energy Crystal Cores는 쓰러뜨린 적이 떨어뜨려 가까이 가면 폭발해 주변 캐릭터에게 Geo DMG를 준다."
+       "t": "에너지 폭발은 과부하/융해/증발/감전/초전도 발동 시 주변 적에게 DMG를 주고, 고에너지 수정 코어는 쓰러뜨린 적이 떨어뜨려 가까이 가면 폭발해 주변 캐릭터에게 바위 원소 피해를 준다."
       },
       {
        "t_raw": "같은 Ley Line Disorder라도 Energy를 회복시키거나 획득을 막거나 폭발 피해를 주므로, Energy가 붙은 이름이 곧 Energy 손실만을 뜻하지는 않는 셈이다.",
@@ -932,15 +925,7 @@
      ],
      "heading": "에너지 손실과 환경 효과",
      "latin_left": [
-      "Elemental High Tide",
-      "Elemental Low Tide",
-      "High Tide",
-      "Elemental Particles",
-      "Elemental Low Tide",
-      "Energy Blast",
-      "DMG",
-      "High-Energy Crystal Cores",
-      "Geo DMG"
+      "DMG"
      ]
     },
     {
@@ -953,11 +938,11 @@
        "t_raw": "Magatsu Mitake Narukami no Mikoto가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 Elemental Energy를 잃고, 그 형태는 큰 DMG RES와 더 치명적인 공격을 얻는다.",
        "interp": false,
        "dropped": false,
-       "t": "Magatsu Mitake Narukami no 미코토가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 원소 에너지를 잃고, 그 형태는 큰 피해 내성과 더 치명적인 공격을 얻는다.",
+       "t": "마가츠 미타케 나루카미노 미코토가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 원소 에너지를 잃고, 그 형태는 큰 피해 내성과 더 치명적인 공격을 얻는다.",
        "polish": {
-        "from": "Magatsu Mitake Narukami no 미코토가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 원소 에너지를 잃고, 그 형태는 큰 DMG RES와 더 치명적인 공격을 얻는다.",
-        "text": "Magatsu Mitake Narukami no 미코토가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 원소 에너지를 잃고, 그 형태는 큰 피해 내성과 더 치명적인 공격을 얻는다.",
-        "by": "or-ds"
+        "from": "마가츠 미타케 나루카미노 미코토 no 미코토가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 원소 에너지를 잃고, 그 형태는 큰 DMG RES와 더 치명적인 공격을 얻는다.",
+        "text": "마가츠 미타케 나루카미노 미코토가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 원소 에너지를 잃고, 그 형태는 큰 피해 내성과 더 치명적인 공격을 얻는다.",
+        "by": "ds"
        }
       },
       {
@@ -1009,9 +994,7 @@
       }
      ],
      "heading": "에너지 손실과 환경 효과",
-     "latin_left": [
-      "Magatsu Mitake Narukami"
-     ]
+     "latin_left": []
     },
     {
      "section": "세계관 속 Energy",
@@ -1316,7 +1299,7 @@
        "t_raw": "**Energy Transfer Terminal**은 Fixed Storage Device나 Energy Transfer Device에서 다른 장치로 에너지를 옮기며, 일부 퍼즐에서는 Energy Transfer Device를 그 사거리 안으로 옮겨야 진행할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "**전이 단말기**는 Fixed Storage Device나 Energy Transfer Device에서 다른 장치로 에너지를 옮기며, 일부 퍼즐에서는 Energy Transfer Device를 그 사거리 안으로 옮겨야 진행할 수 있다."
+       "t": "**전이 단말기**는 고정식 에너지 저장 장치나 이동식 에너지 저장 장치에서 다른 장치로 에너지를 옮기며, 일부 퍼즐에서는 이동식 에너지 저장 장치를 그 사거리 안으로 옮겨야 진행할 수 있다."
       },
       {
        "t_raw": "이 장치는 Fontaine의 Liffey Region과 Fontaine Research Institute of Kinetic Energy Engineering Region에서 발견되는 탐사 메커니즘이다.",
@@ -1350,11 +1333,7 @@
       }
      ],
      "heading": "탐사·일상 속 에너지",
-     "latin_left": [
-      "Fixed Storage Device",
-      "Energy Transfer Device",
-      "Energy Transfer Device"
-     ]
+     "latin_left": []
     },
     {
      "section": "탐사·일상 속 Energy",
@@ -1366,13 +1345,13 @@
        "t_raw": "Serenitea Pot에서는 가구를 배치해 **Adeptal Energy Rank**를 높인다.",
        "interp": false,
        "dropped": false,
-       "t": "속세의 주전자에서는 가구를 배치해 **Adeptal Energy Rank**를 높인다."
+       "t": "속세의 주전자에서는 가구를 배치해 **선력 등급**을 높인다."
       },
       {
        "t_raw": "Adeptal Energy Rank가 높아지면 Realm Currency가 더 빠르게 축적된다.",
        "interp": false,
        "dropped": false,
-       "t": "Adeptal Energy Rank가 높아지면 선계 화폐가 더 빠르게 축적된다."
+       "t": "선력 등급이 높아지면 선계 화폐가 더 빠르게 축적된다."
       },
       {
        "t_raw": "가구 배치가 순위를 올리고 그 순위가 Realm Currency 축적 속도로 이어지므로, 이는 꾸미기와 수급을 연결하는 지표로 보인다.",
@@ -1392,10 +1371,7 @@
       }
      ],
      "heading": "탐사·일상 속 에너지",
-     "latin_left": [
-      "Adeptal Energy Rank",
-      "Adeptal Energy Rank"
-     ]
+     "latin_left": []
     },
     {
      "section": "탐사·일상 속 Energy",

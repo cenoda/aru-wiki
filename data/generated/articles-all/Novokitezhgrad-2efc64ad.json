@@ -21,40 +21,34 @@
    "input_cut": false,
    "input_hash": "f8b6b766297a",
    "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The city is known for its liquor and mining industry and there are plenty of Snowland Fae living along humans in the city.",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, A4 and M3.",
+     "quote": "Novokitezhgrad is a city of Snezhnaya.",
      "sentences": [
       {
-       "t_raw": "Novokitezhgrad은 **Snezhnaya의 도시**로, 술과 광업이 알려져 있으며 Snowland Fae가 인간과 함께 사는 곳이다.",
+       "t_raw": "Novokitezhgrad는 Snezhnaya의 도시로, 술과 광업으로 알려져 있고 Snowland Fae가 인간과 함께 사는 곳이다.",
        "interp": false,
        "dropped": false,
-       "t": "신 키테시성은 **스네즈나야의 도시**로, 술과 광업이 알려져 있으며 설국 요정이 인간과 함께 사는 곳이다."
+       "t": "신 키테시성은 스네즈나야의 도시로, 술과 광업으로 알려져 있고 설국 요정이 인간과 함께 사는 곳이다."
       },
       {
-       "t_raw": "과거 여러 Fae 귀족이 Novokitezhgrad에 정착했고 그 후손들이 현재도 이곳에 살고 있어, 이 도시는 **Fae와 인간이 함께 이어 온 생활권**으로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "과거 여러 요정 귀족이 신 키테시성에 정착했고 그 후손들이 현재도 이곳에 살고 있어, 이 도시는 **요정과 인간이 함께 이어 온 생활권**으로 읽힌다."
-      },
-      {
-       "t_raw": "도시 이름은 역사 도시 Kitezhgrad와의 관계가 아직 밝혀지지 않았고, Kitezhgrad는 Monomakh Snezhnyi가 Belyi Tsar가 되기 전 세운 도시이자 Pale Star court의 제국 수도였다.",
+       "t_raw": "도시의 이름은 역사적 도시 Kitezhgrad와의 현재로서는 알 수 없는 관계를 암시한다.",
        "interp": false,
        "dropped": false,
-       "t": "도시 이름은 역사 도시 키테시성와의 관계가 아직 밝혀지지 않았고, 키테시성은 모노마흐·스네즈니가 하얀 차르가 되기 전 세운 도시이자 창백한 별 court의 제국 수도였다."
+       "t": "도시의 이름은 역사적 도시 키테시성와의 현재로서는 알 수 없는 관계를 암시한다."
       },
       {
-       "t_raw": "Kitezhgrad가 Snezhnaya의 첫 도시로 일컬어졌던 점과 현재 Novokitezhgrad의 이름을 겹쳐 보면, 두 도시의 **역사적 연속성**은 아직 풀리지 않은 호기심으로 남는다.",
-       "interp": true,
+       "t_raw": "Tsaritsa의 개혁 이후 Snezhnaya를 떠난 여러 Fae가 Novokitezhgrad에 자리 잡았고, 그 후손들이 현재도 살고 있다.",
+       "interp": false,
        "dropped": false,
-       "t": "키테시성이 스네즈나야의 첫 도시로 일컬어졌던 점과 현재 신 키테시성의 이름을 겹쳐 보면, 두 도시의 **역사적 연속성**은 아직 풀리지 않은 호기심으로 남는다."
+       "t": "얼음의 여왕의 개혁 이후 스네즈나야를 떠난 여러 요정이 신 키테시성에 자리 잡았고, 그 후손들이 현재도 살고 있다."
       }
      ],
      "sources": [
@@ -81,23 +75,6 @@
       },
       {
        "kind": "wiki",
-       "page": "Anastasya",
-       "revision": 2117243,
-       "section": "Story > History",
-       "paragraph": "M3",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "A Brief History of the Pale Starborn"
-        },
-        {
-         "type": "quest",
-         "name": "The Shoemaker's Children Go Barefoot"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
        "page": "Novokitezhgrad",
        "revision": 2117331,
        "section": "Lore",
@@ -116,6 +93,23 @@
          "name": "Ovations That Ceased Upon Festivity"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Anastasya",
+       "revision": 2117243,
+       "section": "Story > History",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "A Brief History of the Pale Starborn"
+        },
+        {
+         "type": "quest",
+         "name": "The Shoemaker's Children Go Barefoot"
+        }
+       ]
       }
      ],
      "heading": null,
@@ -123,27 +117,21 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Both sentences match A1 and A2.",
      "quote": "The city is known for its liquor and mining industry and there are plenty of Snowland Fae living along humans in the city.",
      "sentences": [
       {
-       "t_raw": "Novokitezhgrad는 Snezhnaya의 도시다.",
+       "t_raw": "**Novokitezhgrad**는 Snezhnaya의 도시다.",
        "interp": false,
        "dropped": false,
-       "t": "신 키테시성은 스네즈나야의 도시다."
+       "t": "**신 키테시성**은 스네즈나야의 도시다."
       },
       {
-       "t_raw": "이 도시는 **술과 광업**으로 알려져 있으며, 많은 **Snowland Fae**가 인간과 함께 살고 있다.",
+       "t_raw": "이 도시는 **술과 광업**으로 알려져 있으며, 인간과 함께 사는 **Snowland Fae**가 적지 않다.",
        "interp": false,
        "dropped": false,
-       "t": "이 도시는 **술과 광업**으로 알려져 있으며, 많은 **설국 요정**이 인간과 함께 살고 있다."
-      },
-      {
-       "t_raw": "술과 광업이 도시의 산업으로 언급되고 많은 Snowland Fae가 인간과 함께 산다는 점에서, Novokitezhgrad는 산업과 공존의 측면이 함께 드러나는 도시로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "술과 광업이 도시의 산업으로 언급되고 많은 설국 요정이 인간과 함께 산다는 점에서, 신 키테시성은 산업과 공존의 측면이 함께 드러나는 도시로 보인다."
+       "t": "이 도시는 **술과 광업**으로 알려져 있으며, 인간과 함께 사는 **설국 요정**이 적지 않다."
       }
      ],
      "sources": [
@@ -173,201 +161,31 @@
      "latin_left": []
     },
     {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Novokitezhgrad's name suggests a currently unknown relationship to the historical city of Kitezhgrad.",
+     "section": "개요",
+     "status": "accepted",
+     "note": "Sentences 0 and 1 match M1 and M2. Sentence 2 is a reasonable interpretation of them.",
+     "quote": "Presently, most fae live in Snezhnograd, Novokitezhgrad, and other areas of Snezhnaya.",
      "sentences": [
       {
-       "t_raw": "Novokitezhgrad라는 이름은 historical city Kitezhgrad와의 관계를 암시하지만, 그 관계는 현재 알려지지 않았다.",
+       "t_raw": "Snezhnograd에도 Snowland Fae가 적지 않지만 Novokitezhgrad 같은 곳보다 많지는 않으며, 현재 대부분의 Fae는 Snezhnograd와 Novokitezhgrad, 그리고 Snezhnaya의 다른 지역에 산다.",
        "interp": false,
        "dropped": false,
-       "t": "신 키테시성라는 이름은 historical city 키테시성와의 관계를 암시하지만, 그 관계는 현재 알려지지 않았다."
+       "t": "스네즈나야성에도 설국 요정이 적지 않지만 신 키테시성 같은 곳보다 많지는 않으며, 현재 대부분의 요정은 스네즈나야성과 신 키테시성, 그리고 스네즈나야의 다른 지역에 산다."
       },
       {
-       "t_raw": "Kitezhgrad는 Monomakh Snezhnyi가 Belyi Tsar가 되기 전에 세운 도시로, Pale Star court의 제국 수도이자 Snezhnaya의 **첫 도시**로 묘사된다.",
+       "t_raw": "Nod-Krai나 다른 국가에 사는 Fae는 적고 그 이유는 알려지지 않았다.",
        "interp": false,
        "dropped": false,
-       "t": "키테시성은 모노마흐·스네즈니가 하얀 차르가 되기 전에 세운 도시로, 창백한 별 court의 제국 수도이자 스네즈나야의 **첫 도시**로 묘사된다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Novokitezhgrad",
-       "revision": 2117331,
-       "section": "Lore",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "A Brief History of the Pale Starborn"
-        },
-        {
-         "type": "quest",
-         "name": "The Shoemaker's Children Go Barefoot"
-        },
-        {
-         "type": "arti",
-         "name": "Ovations That Ceased Upon Festivity"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Kitezhgrad is last mentioned in sources from 500 years ago",
-     "sentences": [
-      {
-       "t_raw": "Kitezhgrad는 약 500년 전 새로 지어진 Snezhnograd로 수도가 옮겨질 때까지 수도였으며, 그 천도는 Belyi Tsar의 야망의 일부였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "키테시성은 약 500년 전 새로 지어진 스네즈나야성으로 수도가 옮겨질 때까지 수도였으며, 그 천도는 하얀 차르의 야망의 일부였다."
+       "t": "노드크라이나 다른 국가에 사는 요정은 적고 그 이유는 알려지지 않았다."
       },
       {
-       "t_raw": "Kitezhgrad는 500년 전 자료에서 마지막으로 언급되는데, Brahe's Notes는 \"the silver of Kitezhgrad\"를 말하고 Alia와 Aila가 이전에 소유한 낡은 동화책은 Kitezhgrad Publishing House에서 출간되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "키테시성은 500년 전 자료에서 마지막으로 언급되는데, 브라헤의 Notes는 \"the silver of 키테시성\"을 말하고 알리아와 아일라가 이전에 소유한 낡은 동화책은 Kitezhgrad Publishing House에서 출간되었다."
-      },
-      {
-       "t_raw": "두 사실은 **500년 전**을 Kitezhgrad의 수도 지위 상실과 기록상 마지막 언급이 겹치는 시점으로 보이게 한다.",
+       "t_raw": "이처럼 Novokitezhgrad는 현재 Snowland Fae가 많이 사는 곳 가운데 하나로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "두 사실은 **500년 전**을 키테시성의 수도 지위 상실과 기록상 마지막 언급이 겹치는 시점으로 보이게 한다."
+       "t": "이처럼 신 키테시성은 현재 설국 요정이 많이 사는 곳 가운데 하나로 보인다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Novokitezhgrad",
-       "revision": 2117331,
-       "section": "Lore",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "A Brief History of the Pale Starborn"
-        },
-        {
-         "type": "quest",
-         "name": "The Shoemaker's Children Go Barefoot"
-        },
-        {
-         "type": "arti",
-         "name": "Ovations That Ceased Upon Festivity"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Novokitezhgrad",
-       "revision": 2117331,
-       "section": "Lore",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "interactable",
-         "name": "Reed Miller's Great Treasure"
-        },
-        {
-         "type": "interactable",
-         "name": "Sanctum of the Oathbearer"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": [
-      "Notes",
-      "Kitezhgrad Publishing House"
-     ]
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "many would choose to reside in Novokitezhgrad, where their descendants continue to live in the present day.",
-     "sentences": [
-      {
-       "t_raw": "Tsaritsa는 Snezhnaya 안정 후 궁정에서 Fae의 정치적 힘을 약화시켰고, 궁정에 나오지 않은 fae princes에게 princely titles 포기를 요구해 많은 이가 응답 전에 죽었으며 남은 이들은 따랐다.",
-       "interp": false,
-       "dropped": false,
-       "t": "얼음의 여왕은 스네즈나야 안정 후 궁정에서 요정의 정치적 힘을 약화시켰고, 궁정에 나오지 않은 fae princes에게 princely titles 포기를 요구해 많은 이가 응답 전에 죽었으며 남은 이들은 따랐다."
-      },
-      {
-       "t_raw": "통치 7년째 Imperial Order Reformation Edict로 많은 princely Fae가 칭호를 자발적으로 포기하고 Snezhnaya를 떠났고, 상당수는 Novokitezhgrad에 살기로 선택해 그 **후손**이 현재까지 이어진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "통치 7년째 제국 질서 개혁 칙령으로 많은 princely 요정이 칭호를 자발적으로 포기하고 스네즈나야를 떠났고, 상당수는 신 키테시성에 살기로 선택해 그 **후손**이 현재까지 이어진다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Anastasya",
-       "revision": 2117243,
-       "section": "Story > History",
-       "paragraph": "M3",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "A Brief History of the Pale Starborn"
-        },
-        {
-         "type": "quest",
-         "name": "The Shoemaker's Children Go Barefoot"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": []
-    },
-    {
-     "section": "Snowland Fae와 도시",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "There are a fair number of Snowland Fae living in the city, but not as many as in some other places, such as Novokitezhgrad.",
-     "sentences": [
-      {
-       "t_raw": "Novokitezhgrad은 술과 광업으로 이름난 도시이며, 이곳에는 인간과 함께 사는 Snowland Fae가 적지 않다.",
-       "interp": false,
-       "dropped": false,
-       "t": "신 키테시성은 술과 광업으로 이름난 도시이며, 이곳에는 인간과 함께 사는 설국 요정이 적지 않다."
-      },
-      {
-       "t_raw": "Snezhnograd에도 Snowland Fae가 상당수 살지만, Novokitezhgrad 같은 곳에 비하면 그 수가 많지는 않다.",
-       "interp": false,
-       "dropped": false,
-       "t": "스네즈나야성에도 설국 요정이 상당수 살지만, 신 키테시성 같은 곳에 비하면 그 수가 많지는 않다."
-      },
-      {
-       "t_raw": "현재 Snowland Fae는 Snezhnograd와 Novokitezhgrad를 비롯한 Snezhnaya 여러 지역에 주로 산다.",
-       "interp": false,
-       "dropped": false,
-       "t": "현재 설국 요정은 스네즈나야성과 신 키테시성을 비롯한 스네즈나야 여러 지역에 주로 산다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Novokitezhgrad",
-       "revision": 2117331,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Shoemaker's Children Go Barefoot"
-        }
-       ]
-      },
       {
        "kind": "wiki",
        "page": "Snezhnograd",
@@ -411,41 +229,46 @@
        ]
       }
      ],
-     "heading": "설국 요정과 도시",
+     "heading": "개요",
      "latin_left": []
     },
     {
-     "section": "Snowland Fae와 도시",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "many would choose to reside in Novokitezhgrad, where their descendants continue to live in the present day.",
+     "section": "드러난 역사 — Kitezhgrad와 이름",
+     "status": "accepted",
+     "note": "All sentences match A4.",
+     "quote": "Novokitezhgrad's name suggests a currently unknown relationship to the historical city of Kitezhgrad.",
      "sentences": [
       {
-       "t_raw": "Tsaritsa는 Fae의 정치적 힘을 약화시키고 Fae 귀족을 Snezhnograd Veche로 대체했다.",
+       "t_raw": "Novokitezhgrad라는 이름은 Kitezhgrad와의 **현재로서는 알려지지 않은 관계**를 시사한다.",
        "interp": false,
        "dropped": false,
-       "t": "얼음의 여왕은 요정의 정치적 힘을 약화시키고 요정 귀족을 스네즈나야성 평의회로 대체했다."
+       "t": "신 키테시성라는 이름은 키테시성와의 **현재로서는 알려지지 않은 관계**를 시사한다."
       },
       {
-       "t_raw": "Imperial Order Reformation Edict 이후 많은 Fae 귀족이 작위를 포기하고 Snezhnaya를 떠났으며, 그중 많은 이가 Novokitezhgrad에 살기로 했다.",
+       "t_raw": "Kitezhgrad는 Monomakh Snezhnyi가 Belyi Tsar가 되기 전에 세운 도시로, Pale Star court의 제국 수도였다.",
        "interp": false,
        "dropped": false,
-       "t": "제국 질서 개혁 칙령 이후 많은 요정 귀족이 작위를 포기하고 스네즈나야를 떠났으며, 그중 많은 이가 신 키테시성에 살기로 했다."
+       "t": "키테시성은 모노마흐·스네즈니가 하얀 차르가 되기 전에 세운 도시로, 창백한 별 궁정의 제국 수도였다.",
+       "polish": {
+        "from": "키테시성은 모노마흐·스네즈니가 하얀 차르가 되기 전에 세운 도시로, 창백한 별 court의 제국 수도였다.",
+        "text": "키테시성은 모노마흐·스네즈니가 하얀 차르가 되기 전에 세운 도시로, 창백한 별 궁정의 제국 수도였다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그 후손은 현재까지 Novokitezhgrad에서 살아가고 있다.",
+       "t_raw": "건설 직후 Alvis, Grand Duke of the Domovoy가 도시의 광업을 독점했고, 그 산업은 Novokitezhgrad와 공유된다.",
        "interp": false,
        "dropped": false,
-       "t": "그 후손은 현재까지 신 키테시성에서 살아가고 있다."
+       "t": "건설 직후 알비스, 난쟁이 요정 대공이 도시의 광업을 독점했고, 그 산업은 신 키테시성과 공유된다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Anastasya",
-       "revision": 2117243,
-       "section": "Story > History",
-       "paragraph": "M3",
+       "page": "Novokitezhgrad",
+       "revision": 2117331,
+       "section": "Lore",
+       "paragraph": "A4",
        "wiki_refs": [
         {
          "type": "book",
@@ -454,39 +277,55 @@
         {
          "type": "quest",
          "name": "The Shoemaker's Children Go Barefoot"
+        },
+        {
+         "type": "arti",
+         "name": "Ovations That Ceased Upon Festivity"
         }
        ]
       }
      ],
-     "heading": "설국 요정과 도시",
+     "heading": "드러난 역사 — 키테시성과 이름",
      "latin_left": []
     },
     {
-     "section": "Snowland Fae와 도시",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The city is known for its liquor and mining industry and there are plenty of Snowland Fae living along humans in the city.",
+     "section": "드러난 역사 — Kitezhgrad와 이름",
+     "status": "accepted",
+     "note": "Sentences 0 to 2 match A4 and A5. Sentence 3 is hedged with '보인다' and follows from the two 500-year-ago facts.",
+     "quote": "Kitezhgrad is last mentioned in sources from 500 years ago",
      "sentences": [
       {
-       "t_raw": "Fae 귀족이 Snezhnaya를 떠나 Novokitezhgrad에 정착한 일과 이 도시에 Snowland Fae가 많다는 점을 함께 보면, 이곳의 Fae 인구에는 귀족 후손이 자리 잡은 사정이 겹쳐 있다고 볼 수 있다.",
-       "interp": true,
+       "t_raw": "Monomakh Snezhnyi는 Snezhnaya 전체를 장악하고 Belyi Tsar라는 이름을 받아들였다.",
+       "interp": false,
        "dropped": false,
-       "t": "요정 귀족이 스네즈나야를 떠나 신 키테시성에 정착한 일과 이 도시에 설국 요정이 많다는 점을 함께 보면, 이곳의 요정 인구에는 귀족 후손이 자리 잡은 사정이 겹쳐 있다고 볼 수 있다."
+       "t": "모노마흐·스네즈니는 스네즈나야 전체를 장악하고 하얀 차르라는 이름을 받아들였다."
       },
       {
-       "t_raw": "Snezhnograd보다 Novokitezhgrad에서 Snowland Fae가 더 두드러진다는 점도, 이 도시가 귀족 Fae의 정착지로 선택된 흐름과 함께 읽힌다.",
+       "t_raw": "Kitezhgrad는 약 500년 전 새로 지어진 Snezhnograd로 수도가 옮겨질 때까지 수도였으며, 수도 이전은 Belyi Tsar의 야망의 일부였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "키테시성은 약 500년 전 새로 지어진 스네즈나야성으로 수도가 옮겨질 때까지 수도였으며, 수도 이전은 하얀 차르의 야망의 일부였다."
+      },
+      {
+       "t_raw": "Kitezhgrad는 500년 전 자료에서 마지막으로 언급되며, Brahe's Notes에는 'the silver of Kitezhgrad'가 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "키테시성은 500년 전 자료에서 마지막으로 언급되며, 브라헤의 Notes에는 'the silver of 키테시성'이 나온다."
+      },
+      {
+       "t_raw": "수도 이전과 마지막 언급이 500년 전이라는 시점에 겹친다는 점은 **도시의 위상 변화**와 기록상 부재가 함께한 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "스네즈나야성보다 신 키테시성에서 설국 요정이 더 두드러진다는 점도, 이 도시가 귀족 요정의 정착지로 선택된 흐름과 함께 읽힌다."
+       "t": "수도 이전과 마지막 언급이 500년 전이라는 시점에 겹친다는 점은 **도시의 위상 변화**와 기록상 부재가 함께한 것으로 보인다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Anastasya",
-       "revision": 2117243,
-       "section": "Story > History",
-       "paragraph": "M3",
+       "page": "Novokitezhgrad",
+       "revision": 2117331,
+       "section": "Lore",
+       "paragraph": "A4",
        "wiki_refs": [
         {
          "type": "book",
@@ -495,6 +334,10 @@
         {
          "type": "quest",
          "name": "The Shoemaker's Children Go Barefoot"
+        },
+        {
+         "type": "arti",
+         "name": "Ovations That Ceased Upon Festivity"
         }
        ]
       },
@@ -502,22 +345,68 @@
        "kind": "wiki",
        "page": "Novokitezhgrad",
        "revision": 2117331,
-       "section": null,
-       "paragraph": "A2",
+       "section": "Lore",
+       "paragraph": "A5",
        "wiki_refs": [
         {
-         "type": "quest",
-         "name": "The Shoemaker's Children Go Barefoot"
+         "type": "interactable",
+         "name": "Reed Miller's Great Treasure"
+        },
+        {
+         "type": "interactable",
+         "name": "Sanctum of the Oathbearer"
         }
        ]
+      }
+     ],
+     "heading": "드러난 역사 — 키테시성과 이름",
+     "latin_left": [
+      "Notes"
+     ]
+    },
+    {
+     "section": "드러난 역사 — Fae 정치 재편과 정착",
+     "status": "accepted",
+     "note": "Sentences 0 to 2 match M3. Sentence 3 is a reasonable, hedged interpretation.",
+     "quote": "Firstly, she severely weakened the Fae's political power in her court: she sent emissaries to all fae princes who had not come to seek an audience with her",
+     "sentences": [
+      {
+       "t_raw": "Snezhnaya를 안정시킨 Tsaritsa는 궁정에서 Fae의 정치 권력을 크게 약화시켰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스네즈나야를 안정시킨 얼음의 여왕은 궁정에서 요정의 정치 권력을 크게 약화시켰다."
       },
       {
+       "t_raw": "알현을 청하러 오지 않은 모든 Fae 군주에게 사절을 보내 작위 포기를 요구했고, 응답 전에 많은 이가 죽었으며 남은 이들은 따랐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알현을 청하러 오지 않은 모든 요정 군주에게 사절을 보내 작위 포기를 요구했고, 응답 전에 많은 이가 죽었으며 남은 이들은 따랐다."
+      },
+      {
+       "t_raw": "이어 Fatui를 강화해 Snezhnograd 근처에 Glupov 요새를 세우게 했고, Fae 귀족층을 인간 I. Ivanovna N.가 이끄는 Snezhnograd Veche로 대체했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 우인단을 강화해 스네즈나야성 근처에 그루포프 요새를 세우게 했고, 요정 귀족층을 인간 요안나·이바노브나·N가 이끄는 스네즈나야성 평의회로 대체했다."
+      },
+      {
+       "t_raw": "궁정 권력 약화와 행정 기구 교체가 함께 이루어진 점은 Fae 귀족의 정치적 기반이 여러 방향에서 줄어든 흐름으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "궁정 권력 약화와 행정 기구 교체가 함께 이루어진 점은 요정 귀족의 정치적 기반이 여러 방향에서 줄어든 흐름으로 보인다."
+      }
+     ],
+     "sources": [
+      {
        "kind": "wiki",
-       "page": "Snezhnograd",
-       "revision": 1857848,
-       "section": null,
-       "paragraph": "M1",
+       "page": "Anastasya",
+       "revision": 2117243,
+       "section": "Story > History",
+       "paragraph": "M3",
        "wiki_refs": [
+        {
+         "type": "book",
+         "name": "A Brief History of the Pale Starborn"
+        },
         {
          "type": "quest",
          "name": "The Shoemaker's Children Go Barefoot"
@@ -525,44 +414,79 @@
        ]
       }
      ],
-     "heading": "설국 요정과 도시",
+     "heading": "드러난 역사 — 요정 정치 재편과 정착",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Fae 정치 재편과 정착",
+     "status": "accepted",
+     "note": "All supported by M3; the interpretation is reasonable given M2 and M3.",
+     "quote": "many would choose to reside in Novokitezhgrad, where their descendants continue to live in the present day.",
+     "sentences": [
+      {
+       "t_raw": "통치 7년째에 반포된 Imperial Order Reformation Edict에서 많은 작위를 지닌 Fae는 “Tsaritsa의 자비와 덕에 깊이 감사하며” 자발적으로 귀족 작위를 버리고 Snezhnaya를 떠났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "통치 7년째에 반포된 제국 질서 개혁 칙령에서 많은 작위를 지닌 요정은 “얼음의 여왕의 자비와 덕에 깊이 감사하며” 자발적으로 귀족 작위를 버리고 스네즈나야를 떠났다."
+      },
+      {
+       "t_raw": "그중 많은 이가 Novokitezhgrad에 머물기를 택했고, 그 후손들은 현재까지 그곳에서 산다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그중 많은 이가 신 키테시성에 머물기를 택했고, 그 후손들은 현재까지 그곳에서 산다."
+      },
+      {
+       "t_raw": "작위를 버리고 떠난 Fae들이 향한 곳이 Novokitezhgrad였다는 점은, 이 도시가 개혁 이후 Fae 정착의 한 중심이 된 경로를 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "작위를 버리고 떠난 요정들이 향한 곳이 신 키테시성였다는 점은, 이 도시가 개혁 이후 요정 정착의 한 중심이 된 경로를 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Anastasya",
+       "revision": 2117243,
+       "section": "Story > History",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "A Brief History of the Pale Starborn"
+        },
+        {
+         "type": "quest",
+         "name": "The Shoemaker's Children Go Barefoot"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 요정 정치 재편과 정착",
      "latin_left": []
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All match Q1, Q3 and Q4.",
      "quote": "As for Raskolnikov... Well, Poruchik Raskolnikov, I do know him. We knew each other back in Novokitezhgrad.",
      "sentences": [
       {
-       "t_raw": "Netochka는 Poruchik Raskolnikov와 **Novokitezhgrad**에서 서로 알던 사이다.",
+       "t_raw": "Netochka는 Poruchik Raskolnikov를 Novokitezhgrad에서 알던 사이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "네토치카는 Poruchik Raskolnikov와 **신 키테시성**에서 서로 알던 사이다."
+       "t": "네토치카는 Poruchik Raskolnikov를 신 키테시성에서 알던 사이라고 말한다."
       },
       {
-       "t_raw": "그녀는 둘 다 Novokitezhgrad 출신이라 예전부터 아는 사이인 것도 이상하지 않다고 말한다.",
+       "t_raw": "두 사람은 같은 도시 출신이라 서로 아는 것도 이상하지 않다는 것이다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 둘 다 신 키테시성 출신이라 예전부터 아는 사이인 것도 이상하지 않다고 말한다."
+       "t": "두 사람은 같은 도시 출신이라 서로 아는 것도 이상하지 않다는 것이다."
       },
       {
-       "t_raw": "Danyusha는 Zhorik에게 친절하라고 하며 그가 Novokitezhgrad를 떠난 뒤부터 몸이 좋지 않은 듯하다고 말한다.",
+       "t_raw": "Netochka는 Novokitezhgrad에서 접한 책으로 자신의 사명을 알게 되었다고도 한다.",
        "interp": false,
        "dropped": false,
-       "t": "Danyusha는 Zhorik에게 친절하라고 하며 그가 신 키테시성을 떠난 뒤부터 몸이 좋지 않은 듯하다고 말한다."
-      },
-      {
-       "t_raw": "Danyusha의 아버지인 Mr. Shesternin Sr.는 경찰서장 Stalanov와 친구였고, Danyusha와 Zhorik이 이곳에 사는 점 때문에 그가 Novokitezhgrad 출신일 가능성이 높다고 여겨진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Danyusha의 아버지인 Mr. Shesternin Sr.는 경찰서장 스탈라노프와 친구였고, Danyusha와 Zhorik이 이곳에 사는 점 때문에 그가 신 키테시성 출신일 가능성이 높다고 여겨진다."
-      },
-      {
-       "t_raw": "가족과 거주지, 친구 관계가 한 도시를 중심으로 겹치는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "가족과 거주지, 친구 관계가 한 도시를 중심으로 겹치는 셈이다."
+       "t": "네토치카는 신 키테시성에서 접한 책으로 자신의 사명을 알게 되었다고도 한다."
       }
      ],
      "sources": [
@@ -572,6 +496,65 @@
        "quest_ko": "의적 네토치카",
        "version": "Luna I",
        "speaker": "Netochka"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Shoemaker's Children Go Barefoot",
+       "quest_ko": "의적 네토치카",
+       "version": "Luna I",
+       "speaker": "Netochka"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Shoemaker's Children Go Barefoot",
+       "quest_ko": "의적 네토치카",
+       "version": "Luna I",
+       "speaker": "Netochka"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Poruchik Raskolnikov"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M4 and Q2. Sentence 1 says 'he' left Novokitezhgrad where the English says 'we left', but this is a minor wording difference.",
+     "quote": "Zhorik, be nice. Sorry, he's probably feeling unwell. Been like this since we left Novokitezhgrad...",
+     "sentences": [
+      {
+       "t_raw": "Danyusha Shesternin과 Zhorik Shesternin 부부는 Novokitezhgrad에 산다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다뉴샤·셰스테닌과 조릭·셰스테닌 부부는 신 키테시성에 산다."
+      },
+      {
+       "t_raw": "Danyusha는 Zhorik에게 친절하라고 하며, 그가 Novokitezhgrad를 떠난 뒤 몸이 좋지 않다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다뉴샤는 조릭에게 친절하라고 하며, 그가 신 키테시성을 떠난 뒤 몸이 좋지 않다고 말한다."
+      },
+      {
+       "t_raw": "Mr. Shesternin Sr.는 Danyusha의 아버지이자 Zhorik의 장인이며, Stalanov와 친구였고 Novokitezhgrad 출신일 가능성이 높다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Mr. 스패너 할아버지.는 다뉴샤의 아버지이자 조릭의 장인이며, 스탈라노프와 친구였고 신 키테시성 출신일 가능성이 높다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Papa Wrench",
+       "revision": 1865699,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Tale-Telling Heart"
+        }
+       ]
       },
       {
        "kind": "quest",
@@ -579,69 +562,42 @@
        "quest_ko": "비밀을 전하는 마음",
        "version": "Luna I",
        "speaker": "Danyusha Shesternin"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Shoemaker's Children Go Barefoot",
-       "quest_ko": "의적 네토치카",
-       "version": "Luna I",
-       "speaker": "Netochka"
-      },
-      {
-       "kind": "wiki",
-       "page": "Papa Wrench",
-       "revision": 1865699,
-       "section": "Profile",
-       "paragraph": "M4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Tale-Telling Heart"
-        }
-       ]
       }
      ],
      "heading": "얽힌 인물과 세력",
      "latin_left": [
-      "Poruchik Raskolnikov",
-      "Danyusha",
-      "Zhorik",
-      "Danyusha",
-      "Mr",
-      "Shesternin Sr",
-      "Danyusha",
-      "Zhorik"
+      "Mr"
      ]
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ten years prior to the events of the game, he was traveling on the ship Fortunate One with Zhorik, and on which Chief Stalanov was also a passenger.",
+     "status": "accepted",
+     "note": "Facts match M4. The irony interpretation follows from the text.",
+     "quote": "In actuality, he survived but lost his memory and took on the name of \"Papa Wrench.\"",
      "sentences": [
       {
-       "t_raw": "10년 전 Mr. Shesternin Sr.는 Zhorik과 배 Fortunate One에 탔고 Stalanov도 승객이었다.",
+       "t_raw": "게임 사건 10년 전 Mr. Shesternin Sr.는 Zhorik와 함께 **Fortunate One**에 탔고 Stalanov도 승객이었다.",
        "interp": false,
        "dropped": false,
-       "t": "10년 전 Mr. Shesternin Sr.는 Zhorik과 배 Fortunate One에 탔고 스탈라노프도 승객이었다."
+       "t": "게임 사건 10년 전 Mr. 스패너 할아버지.는 조릭과 함께 **행운아**에 탔고 스탈라노프도 승객이었다."
       },
       {
-       "t_raw": "그는 갑판에서 Stalanov와 만나기로 예정된 약속 전에 사라졌고, Zhorik은 심문받을 때 의심스럽게 행동했지만 Mr. Shesternin Sr.는 사고로 배 밖으로 떨어진 것으로 여겨졌으며 Zhorik이 부적절한 일을 했다는 확실한 증거는 없었다.",
+       "t_raw": "그는 갑판에서 Stalanov와 만나기 전 사라졌고, Zhorik는 의심스럽게 굴었으나 Mr. Shesternin Sr.가 사고로 떨어졌다고 여겨지거나 Zhorik의 부당한 행동을 증명할 증거가 부족했다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 갑판에서 스탈라노프와 만나기로 예정된 약속 전에 사라졌고, Zhorik은 심문받을 때 의심스럽게 행동했지만 Mr. Shesternin Sr.는 사고로 배 밖으로 떨어진 것으로 여겨졌으며 Zhorik이 부적절한 일을 했다는 확실한 증거는 없었다."
+       "t": "그는 갑판에서 스탈라노프와 만나기 전 사라졌고, 조릭은 의심스럽게 굴었으나 Mr. 스패너 할아버지.가 사고로 떨어졌다고 여겨지거나 조릭의 부당한 행동을 증명할 증거가 부족했다."
       },
       {
-       "t_raw": "실제로 그는 살아남아 기억을 잃고 '**Papa Wrench**'라는 이름을 얻었고, Nod-Krai의 섬들 사이를 카라반과 다닌 뒤 Blue Amber Lake 곁에 작업장을 세웠다.",
+       "t_raw": "실제로 그는 살아남아 기억을 잃고 **Papa Wrench**가 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "실제로 그는 살아남아 기억을 잃고 '**스패너 할아버지**'라는 이름을 얻었고, 노드크라이의 섬들 사이를 카라반과 다닌 뒤 푸른 호박 호수 곁에 작업장을 세웠다."
+       "t": "실제로 그는 살아남아 기억을 잃고 **스패너 할아버지**가 되었다."
       },
       {
-       "t_raw": "그는 기계를 만들고 고칠 때 명목상의 비용만 받거나 무료로 해 주기도 했다.",
-       "interp": false,
+       "t_raw": "아버지의 실종으로 사위가 의심받았지만 정작 그는 기억을 잃은 채 살아 있었다는 점은 아이러니하다고 볼 수 있다.",
+       "interp": true,
        "dropped": false,
-       "t": "그는 기계를 만들고 고칠 때 명목상의 비용만 받거나 무료로 해 주기도 했다."
+       "t": "아버지의 실종으로 사위가 의심받았지만 정작 그는 기억을 잃은 채 살아 있었다는 점은 아이러니하다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -662,44 +618,100 @@
      "heading": "얽힌 인물과 세력",
      "latin_left": [
       "Mr",
-      "Shesternin Sr",
-      "Zhorik",
-      "Fortunate One",
-      "Zhorik",
-      "Mr",
-      "Shesternin Sr",
-      "Zhorik"
+      "Mr"
      ]
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All match A4. The interpretation stays open-ended.",
+     "quote": "Novokitezhgrad's name suggests a currently unknown relationship to the historical city of Kitezhgrad.",
+     "sentences": [
+      {
+       "t_raw": "Novokitezhgrad의 이름은 Kitezhgrad와의 **현재 알려지지 않은 관계**를 연상시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "신 키테시성의 이름은 키테시성와의 **현재 알려지지 않은 관계**를 연상시킨다."
+      },
+      {
+       "t_raw": "Kitezhgrad는 Monomakh Snezhnyi가 Belyi Tsar가 되기 전에 세운 Pale Star court의 제국 수도였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "키테시성은 모노마흐·스네즈니가 하얀 차르가 되기 전에 세운 창백한 별 궁정의 제국 수도였다.",
+       "polish": {
+        "from": "키테시성은 모노마흐·스네즈니가 하얀 차르가 되기 전에 세운 창백한 별 court의 제국 수도였다.",
+        "text": "키테시성은 모노마흐·스네즈니가 하얀 차르가 되기 전에 세운 창백한 별 궁정의 제국 수도였다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그 도시는 Snezhnaya의 **첫 도시**로 묘사되지만, 그것이 Snezhnaya 최초의 도시인지, 현대 도시 중 가장 오래된 도시인지, 통일된 땅이 되었을 때 처음 인정된 도시인지는 명시되지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 도시는 스네즈나야의 **첫 도시**로 묘사되지만, 그것이 스네즈나야 최초의 도시인지, 현대 도시 중 가장 오래된 도시인지, 통일된 땅이 되었을 때 처음 인정된 도시인지는 명시되지 않았다."
+      },
+      {
+       "t_raw": "이름의 유사성과 '첫 도시'라는 표현은 Kitezhgrad의 위상을 환기하면서도 두 도시의 관계와 정확한 의미를 열린 질문으로 남기는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이름의 유사성과 '첫 도시'라는 표현은 키테시성의 위상을 환기하면서도 두 도시의 관계와 정확한 의미를 열린 질문으로 남기는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Novokitezhgrad",
+       "revision": 2117331,
+       "section": "Lore",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "A Brief History of the Pale Starborn"
+        },
+        {
+         "type": "quest",
+         "name": "The Shoemaker's Children Go Barefoot"
+        },
+        {
+         "type": "arti",
+         "name": "Ovations That Ceased Upon Festivity"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches A4 and A5. The interpretation is hedged and reasonable.",
      "quote": "Kitezhgrad is last mentioned in sources from 500 years ago",
      "sentences": [
       {
-       "t_raw": "Novokitezhgrad라는 이름은 역사 도시 Kitezhgrad와 **현재로서는 알 수 없는 관계**를 암시한다.",
+       "t_raw": "Kitezhgrad에 대한 언급은 **500년 전**을 마지막으로 한다.",
        "interp": false,
        "dropped": false,
-       "t": "신 키테시성라는 이름은 역사 도시 키테시성과 **현재로서는 알 수 없는 관계**를 암시한다."
+       "t": "키테시성에 대한 언급은 **500년 전**을 마지막으로 한다."
       },
       {
-       "t_raw": "Kitezhgrad는 한때 제국 수도였고 Novokitezhgrad와 광업을 공유했으며, 500년 전 자료에서 마지막으로 언급된다.",
+       "t_raw": "그 무렵 Belyi Tsar의 야망에 따라 수도가 새로 지어진 Snezhnograd로 옮겨졌다.",
        "interp": false,
        "dropped": false,
-       "t": "키테시성은 한때 제국 수도였고 신 키테시성과 광업을 공유했으며, 500년 전 자료에서 마지막으로 언급된다."
+       "t": "그 무렵 하얀 차르의 야망에 따라 수도가 새로 지어진 스네즈나야성으로 옮겨졌다."
       },
       {
-       "t_raw": "Brahe's Notes에는 \"the silver of Kitezhgrad\"가, Alia와 Aila의 낡은 동화책에는 Kitezhgrad Publishing House가 남아 있다.",
+       "t_raw": "마지막 언급으로는 Brahe's Notes의 \"the silver of Kitezhgrad\"와 Alia와 Aila가 소유했던 낡은 동화책을 출판한 Kitezhgrad Publishing House가 남아 있다.",
        "interp": false,
        "dropped": false,
-       "t": "브라헤의 Notes에는 \"the silver of 키테시성\"이, 알리아와 아일라의 낡은 동화책에는 Kitezhgrad Publishing House가 남아 있다."
+       "t": "마지막 언급으로는 브라헤의 Notes의 \"the silver of 키테시성\"과 알리아와 아일라가 소유했던 낡은 동화책을 출판한 Kitezhgrad Publishing House가 남아 있다."
       },
       {
-       "t_raw": "수도가 Snezhnograd로 옮겨진 때도 500년 전 무렵이어서, **수도 이전과 기록상 마지막 언급**이 같은 시기에 놓인 셈이다.",
+       "t_raw": "수도 이전과 마지막 언급 시점이 겹치는 것은 Kitezhgrad의 기록상 공백이 도시의 위상 변화와 맞물려 있다고 볼 수 있게 한다.",
        "interp": true,
        "dropped": false,
-       "t": "수도가 스네즈나야성으로 옮겨진 때도 500년 전 무렵이어서, **수도 이전과 기록상 마지막 언급**이 같은 시기에 놓인 셈이다."
+       "t": "수도 이전과 마지막 언급 시점이 겹치는 것은 키테시성의 기록상 공백이 도시의 위상 변화와 맞물려 있다고 볼 수 있게 한다."
       }
      ],
      "sources": [
@@ -749,78 +761,22 @@
      ]
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I came across this book when I was still in Novokitezhgrad... From that moment on, I knew my mission.",
-     "sentences": [
-      {
-       "t_raw": "Netochka는 아직 Novokitezhgrad에 있을 때 한 책을 접었고, 그 순간부터 자신의 임무를 알게 되었다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "네토치카는 아직 신 키테시성에 있을 때 한 책을 접었고, 그 순간부터 자신의 임무를 알게 되었다고 말한다."
-      },
-      {
-       "t_raw": "Kitezhgrad Publishing House의 동화책과 그 책의 관계는 제시되지 않지만, **책을 매개로 한 도시의 과거와 현재**가 이어질 여지가 있다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "Kitezhgrad Publishing House의 동화책과 그 책의 관계는 제시되지 않지만, **책을 매개로 한 도시의 과거와 현재**가 이어질 여지가 있다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Novokitezhgrad",
-       "revision": 2117331,
-       "section": "Lore",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "interactable",
-         "name": "Reed Miller's Great Treasure"
-        },
-        {
-         "type": "interactable",
-         "name": "Sanctum of the Oathbearer"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "The Shoemaker's Children Go Barefoot",
-       "quest_ko": "의적 네토치카",
-       "version": "Luna I",
-       "speaker": "Netochka"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Kitezhgrad Publishing House"
-     ]
-    },
-    {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Can't see Novokitezhgrad from here...",
+     "status": "accepted",
+     "note": "Both sentences match A3 and Q5.",
+     "quote": "The trail from Nasha Town to Novokitezhgrad is said to be a tough one.",
      "sentences": [
       {
-       "t_raw": "Nasha Town에서 Novokitezhgrad로 이어지는 길은 **험한 길**이라고 전해진다.",
+       "t_raw": "Nasha Town에서 Novokitezhgrad로 이어지는 길은 힘들다고 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "나샤 마을에서 신 키테시성으로 이어지는 길은 **험한 길**이라고 전해진다."
+       "t": "나샤 마을에서 신 키테시성으로 이어지는 길은 힘들다고 전해진다."
       },
       {
-       "t_raw": "그런가 하면 Netochka는 이곳에서 Novokitezhgrad가 **보이지 않는다**고 말한다.",
+       "t_raw": "Netochka는 여기서 Novokitezhgrad가 보이지 않는다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그런가 하면 네토치카는 이곳에서 신 키테시성이 **보이지 않는다**고 말한다."
-      },
-      {
-       "t_raw": "두 언급을 겹쳐 보면, Novokitezhgrad로 향하는 여정은 순탄치 않고 도시의 모습도 바라보는 것만으로는 쉽게 잡히지 않는 곳이라는 인상이 생긴다.",
-       "interp": true,
-       "dropped": false,
-       "t": "두 언급을 겹쳐 보면, 신 키테시성으로 향하는 여정은 순탄치 않고 도시의 모습도 바라보는 것만으로는 쉽게 잡히지 않는 곳이라는 인상이 생긴다."
+       "t": "네토치카는 여기서 신 키테시성이 보이지 않는다고 말한다."
       }
      ],
      "sources": [
@@ -847,14 +803,93 @@
      ],
      "heading": "여담",
      "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All three sentences are stated in A5 and M4. 대상단 is a fair rendering of caravan.",
+     "quote": "He was quite charitable, as he only charged nominal fees for making and repairing machinery, sometimes even doing it for free.",
+     "sentences": [
+      {
+       "t_raw": "Alia와 Aila가 전에 소유했던 낡은 동화책은 Kitezhgrad Publishing House에서 출판되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알리아와 아일라가 전에 소유했던 낡은 동화책은 Kitezhgrad Publishing House에서 출판되었다."
+      },
+      {
+       "t_raw": "Papa Wrench는 Nod-Krai의 섬들 사이를 대상단과 함께 다니다가 Blue Amber Lake에 정착해 작업장을 세웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스패너 할아버지는 노드크라이의 섬들 사이를 대상단과 함께 다니다가 푸른 호박 호수에 정착해 작업장을 세웠다."
+      },
+      {
+       "t_raw": "그는 기계를 만들거나 고칠 때 명목상의 요금만 받았고, 때로는 무료로 해 주기도 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 기계를 만들거나 고칠 때 명목상의 요금만 받았고, 때로는 무료로 해 주기도 했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Novokitezhgrad",
+       "revision": 2117331,
+       "section": "Lore",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "interactable",
+         "name": "Reed Miller's Great Treasure"
+        },
+        {
+         "type": "interactable",
+         "name": "Sanctum of the Oathbearer"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Papa Wrench",
+       "revision": 1865699,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Tale-Telling Heart"
+        }
+       ]
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Kitezhgrad Publishing House"
+     ]
     }
    ],
    "quote_boxes": [
     {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of the Netochka line.",
+     "t_raw": "여기서는 Novokitezhgrad가 보이지 않아...",
+     "en": "Can't see Novokitezhgrad from here...",
+     "speaker": "Netochka",
+     "source": {
+      "kind": "quest",
+      "quest": "The Shoemaker's Children Go Barefoot",
+      "quest_ko": "의적 네토치카",
+      "version": "Luna I",
+      "speaker": "Netochka"
+     },
+     "t": "여기서는 신 키테시성이 보이지 않아...",
+     "speaker_ko": "네토치카"
+    },
+    {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Raskolnikov은... 음, Poruchik Raskolnikov은 내가 알아. 우리는 Novokitezhgrad에서 서로 알던 사이야.",
+     "status": "accepted",
+     "note": "Faithful translation of the Netochka line.",
+     "t_raw": "Raskolnikov라면... 음, Poruchik Raskolnikov, 나는 그를 알아. 우리는 Novokitezhgrad에서 서로 알던 사이다.",
      "en": "As for Raskolnikov... Well, Poruchik Raskolnikov, I do know him. We knew each other back in Novokitezhgrad.",
      "speaker": "Netochka",
      "source": {
@@ -864,30 +899,13 @@
       "version": "Luna I",
       "speaker": "Netochka"
      },
-     "t": "라스콜니코프는... 음, Poruchik Raskolnikov은 내가 알아. 우리는 신 키테시성에서 서로 알던 사이야.",
-     "speaker_ko": "네토치카"
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "나는 아직 Novokitezhgrad에 있을 때 이 책을 접했다... 그 순간부터 내 임무를 알게 되었다.",
-     "en": "I came across this book when I was still in Novokitezhgrad... From that moment on, I knew my mission.",
-     "speaker": "Netochka",
-     "source": {
-      "kind": "quest",
-      "quest": "The Shoemaker's Children Go Barefoot",
-      "quest_ko": "의적 네토치카",
-      "version": "Luna I",
-      "speaker": "Netochka"
-     },
-     "t": "나는 아직 신 키테시성에 있을 때 이 책을 접했다... 그 순간부터 내 임무를 알게 되었다.",
+     "t": "라스콜니코프라면... 음, Poruchik Raskolnikov, 나는 그를 알아. 우리는 신 키테시성에서 서로 알던 사이다.",
      "speaker_ko": "네토치카"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Faithful translation of the Netochka line.",
      "t_raw": "여기서는 Novokitezhgrad가 보이지 않아...",
      "en": "Can't see Novokitezhgrad from here...",
      "speaker": "Netochka",

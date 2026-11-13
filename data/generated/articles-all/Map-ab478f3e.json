@@ -36,7 +36,7 @@
        "t_raw": "Map은 세계를 표시하고 재현하는 **Game System**으로, 화면 왼쪽 위의 Minimap을 누르거나 Paimon Menu의 Map, PlayStation의 조작, PC의 조작을 통해 열 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "맵은 세계를 표시하고 재현하는 **Game System**으로, 화면 왼쪽 위의 Minimap을 누르거나 Paimon Menu의 맵, PlayStation의 조작, PC의 조작을 통해 열 수 있다."
+       "t": "맵은 세계를 표시하고 재현하는 **시스템**으로, 화면 왼쪽 위의 미니맵을 누르거나 페이몬 메뉴의 맵, 플레이스테이션의 조작, PC의 조작을 통해 열 수 있다."
       },
       {
        "t_raw": "Teleport Waypoints, Statues of The Seven, Domains, 그리고 일부 장소는 Map에서 선택해 “Teleport”로 이동할 수 있다.",
@@ -48,7 +48,7 @@
        "t_raw": "**Exploration Progress** 백분율은 Statue of The Seven, Statue of the New Moon, 또는 Inscribed Map을 건드려 지도가 공개된 뒤에만 보인다.",
        "interp": false,
        "dropped": false,
-       "t": "**Exploration Progress** 백분율은 일곱신상, 신월 신상, 또는 돌 조각 지도를 건드려 지도가 공개된 뒤에만 보인다."
+       "t": "**탐사도** 백분율은 일곱신상, 신월 신상, 또는 돌 조각 지도를 건드려 지도가 공개된 뒤에만 보인다."
       },
       {
        "t_raw": "Statue of The Seven이나 Statue of the New Moon을 해금하면 그 Statue의 지역이 Map에서 밝혀지고, 지역 지도를 모두 밝히면 업적을 얻는다.",
@@ -85,13 +85,8 @@
      ],
      "heading": null,
      "latin_left": [
-      "Game System",
-      "Minimap",
-      "Paimon Menu",
-      "PlayStation",
       "PC",
       "Teleport",
-      "Exploration Progress",
       "Statue"
      ]
     },
@@ -105,13 +100,13 @@
        "t_raw": "Map은 세계를 표시하고 나타내는 Game System이다.",
        "interp": false,
        "dropped": false,
-       "t": "맵은 세계를 표시하고 나타내는 Game System이다."
+       "t": "맵은 세계를 표시하고 나타내는 시스템이다."
       },
       {
        "t_raw": "화면 왼쪽 위의 Minimap을 누르거나 Paimon Menu에서 Map을 열고, PlayStation에서는 조이스틱으로 Map 항목을, PC에서는 지정 키를 눌러 열 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "화면 왼쪽 위의 Minimap을 누르거나 Paimon Menu에서 맵을 열고, PlayStation에서는 조이스틱으로 맵 항목을, PC에서는 지정 키를 눌러 열 수 있다."
+       "t": "화면 왼쪽 위의 미니맵을 누르거나 페이몬 메뉴에서 맵을 열고, 플레이스테이션에서는 조이스틱으로 맵 항목을, PC에서는 지정 키를 눌러 열 수 있다."
       },
       {
        "t_raw": "지도를 열면 Teyvat 전역의 지형과 각종 표식이 한눈에 펼쳐지며, 여행자가 세계를 파악하는 기본 창구가 된다.",
@@ -132,10 +127,6 @@
      ],
      "heading": "개요",
      "latin_left": [
-      "Game System",
-      "Minimap",
-      "Paimon Menu",
-      "PlayStation",
       "PC"
      ]
     },
@@ -309,13 +300,13 @@
        "t_raw": "Map은 세계를 표시하는 Game System으로, 화면 왼쪽 위의 Minimap을 누르거나 Paimon Menu > Map에서 열어 접근할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "맵은 세계를 표시하는 Game System으로, 화면 왼쪽 위의 Minimap을 누르거나 Paimon Menu > 맵에서 열어 접근할 수 있다."
+       "t": "맵은 세계를 표시하는 시스템으로, 화면 왼쪽 위의 미니맵을 누르거나 페이몬 메뉴 > 맵에서 열어 접근할 수 있다."
       },
       {
        "t_raw": "PlayStation에서는 컨트롤러 조작으로 > Map을 눌러 열고, PC에서는 대응하는 키를 눌러 연다.",
        "interp": false,
        "dropped": false,
-       "t": "PlayStation에서는 컨트롤러 조작으로 > 맵을 눌러 열고, PC에서는 대응하는 키를 눌러 연다."
+       "t": "플레이스테이션에서는 컨트롤러 조작으로 > 맵을 눌러 열고, PC에서는 대응하는 키를 눌러 연다."
       },
       {
        "t_raw": "같은 방식으로 열린 Map에서 Teleport Waypoints, Statues of The Seven, Domains 등 일부 장소를 선택해 \"Teleport\"를 누르면 해당 지점으로 이동할 수 있다.",
@@ -336,10 +327,6 @@
      ],
      "heading": "접근과 화면 구성",
      "latin_left": [
-      "Game System",
-      "Minimap",
-      "Paimon Menu",
-      "PlayStation",
       "PC",
       "Teleport"
      ]
@@ -366,7 +353,7 @@
        "t_raw": "각 탭에는 해당 지도나 지역에 Map Notifications나 Quest Objectives가 있을 경우 아이콘이 붙기도 한다.",
        "interp": false,
        "dropped": false,
-       "t": "각 탭에는 해당 지도나 지역에 Map Notifications나 Quest Objectives가 있을 경우 아이콘이 붙기도 한다."
+       "t": "각 탭에는 해당 지도나 지역에 맵 알림이나 임무 목표가 있을 경우 아이콘이 붙기도 한다."
       }
      ],
      "sources": [
@@ -391,9 +378,7 @@
      "latin_left": [
       "Notifications",
       "Tabs",
-      "Tabs",
-      "Map Notifications",
-      "Quest Objectives"
+      "Tabs"
      ]
     },
     {
@@ -406,7 +391,7 @@
        "t_raw": "Map 화면 왼쪽 아래의 톱니바퀴 아이콘을 누르면 Map Settings로 진입한다.",
        "interp": false,
        "dropped": false,
-       "t": "맵 화면 왼쪽 아래의 톱니바퀴 아이콘을 누르면 Map Settings로 진입한다."
+       "t": "맵 화면 왼쪽 아래의 톱니바퀴 아이콘을 누르면 맵 설정으로 진입한다."
       },
       {
        "t_raw": "여기서는 Domains의 이름과 종류를 별도로 표시할지 여부, Custom Markers와 Search for Players의 on/off 같은 표시 옵션을 조절할 수 있고, 커서와 마커의 감도를 1~5 단계로 조정할 수도 있다.",
@@ -471,9 +456,7 @@
       }
      ],
      "heading": "접근과 화면 구성",
-     "latin_left": [
-      "Map Settings"
-     ]
+     "latin_left": []
     },
     {
      "section": "접근과 화면 구성",
@@ -491,7 +474,7 @@
        "t_raw": "Minimap 클릭, Paimon Menu, PlayStation 조작, PC 입력 어느 쪽으로 열어도 같은 Map Menu에 닿는 셈이며, 설정 역시 어디서든 왼쪽 아래 톱니바퀴 아이콘으로 진입한다.",
        "interp": true,
        "dropped": false,
-       "t": "Minimap 클릭, Paimon Menu, PlayStation 조작, PC 입력 어느 쪽으로 열어도 같은 Map Menu에 닿는 셈이며, 설정 역시 어디서든 왼쪽 아래 톱니바퀴 아이콘으로 진입한다."
+       "t": "미니맵 클릭, 페이몬 메뉴, 플레이스테이션 조작, PC 입력 어느 쪽으로 열어도 같은 지도 메뉴에 닿는 셈이며, 설정 역시 어디서든 왼쪽 아래 톱니바퀴 아이콘으로 진입한다."
       }
      ],
      "sources": [
@@ -522,11 +505,7 @@
      ],
      "heading": "접근과 화면 구성",
      "latin_left": [
-      "Minimap",
-      "Paimon Menu",
-      "PlayStation",
-      "PC",
-      "Map Menu"
+      "PC"
      ]
     },
     {
@@ -594,19 +573,19 @@
        "t_raw": "지도가 밝혀지기 전에는 Exploration Progress 퍼센트가 보이지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "지도가 밝혀지기 전에는 Exploration Progress 퍼센트가 보이지 않는다."
+       "t": "지도가 밝혀지기 전에는 탐사도 퍼센트가 보이지 않는다."
       },
       {
        "t_raw": "Statue of The Seven이나 Statue of the New Moon, 또는 Inscribed Map에 닿아 지도가 공개된 뒤에야 Exploration Progress가 표시된다.",
        "interp": false,
        "dropped": false,
-       "t": "일곱신상이나 신월 신상, 또는 돌 조각 지도에 닿아 지도가 공개된 뒤에야 Exploration Progress가 표시된다."
+       "t": "일곱신상이나 신월 신상, 또는 돌 조각 지도에 닿아 지도가 공개된 뒤에야 탐사도가 표시된다."
       },
       {
        "t_raw": "현재 지역과 그 Exploration Progress는 Map 오른쪽 아래에 표시되고, 최대로 축소하면 Domain과 지역 이름에 Exploration Progress 퍼센트가 함께 붙는다.",
        "interp": false,
        "dropped": false,
-       "t": "현재 지역과 그 Exploration Progress는 맵 오른쪽 아래에 표시되고, 최대로 축소하면 비경과 지역 이름에 Exploration Progress 퍼센트가 함께 붙는다."
+       "t": "현재 지역과 그 탐사도는 맵 오른쪽 아래에 표시되고, 최대로 축소하면 비경과 지역 이름에 탐사도 퍼센트가 함께 붙는다."
       },
       {
        "t_raw": "대부분의 Subarea는 Map에 이름이 적혀 있다.",
@@ -633,10 +612,6 @@
      ],
      "heading": "지도 공개와 탐험 진행",
      "latin_left": [
-      "Exploration Progress",
-      "Exploration Progress",
-      "Exploration Progress",
-      "Exploration Progress",
       "Subarea"
      ]
     },
@@ -936,11 +911,11 @@
        "t_raw": "Adventurer Handbook으로 추적 중인 Enemies, Quest Objectives, Event Objectives and Markers, Treasure Compasses로 표시된 Treasure Chests도 이 단계의 표식이다.",
        "interp": false,
        "dropped": false,
-       "t": "모험 핸드북으로 추적 중인 적, 임무 목표, 이벤트 목표와 표식, 보물 나침반으로 표시된 보물 상자도 이 단계의 표식이다.",
+       "t": "모험 핸드북으로 추적 중인 적, 임무 목표, 이벤트 목표 및 표식, 보물 나침반으로 표시된 보물 상자도 이 단계의 표식이다.",
        "polish": {
-        "from": "모험 핸드북으로 추적 중인 Enemies, Quest Objectives, Event Objectives and Markers, Treasure Compasses로 표시된 Treasure Chests도 이 단계의 표식이다.",
-        "text": "모험 핸드북으로 추적 중인 적, 임무 목표, 이벤트 목표와 표식, 보물 나침반으로 표시된 보물 상자도 이 단계의 표식이다.",
-        "by": "or-ds"
+        "from": "모험 핸드북으로 추적 중인 Enemies, 임무 목표, Event Objectives and Markers, Treasure Compasses로 표시된 Treasure Chests도 이 단계의 표식이다.",
+        "text": "모험 핸드북으로 추적 중인 적, 임무 목표, 이벤트 목표 및 표식, 보물 나침반으로 표시된 보물 상자도 이 단계의 표식이다.",
+        "by": "ds"
        }
       },
       {
@@ -1093,7 +1068,7 @@
        "t_raw": "Exploring the Tower of Gestalt는 Search in the Algae Sea의 8단계를 시작한 때부터 Savior's Wake를 마칠 때까지 지도에 남고, Overseer of the Special Recruitment Project는 A Special Selection을 마치면 붙는다.",
        "interp": false,
        "dropped": false,
-       "t": "Exploring the Tower of Gestalt는 해초 바다 탐색의 8단계를 시작한 때부터 구세자의 묘지기를 마칠 때까지 지도에 남고, Overseer of the Special Recruitment Project는 특별 모집을 마치면 붙는다.",
+       "t": "게슈탈트의 탑 탐색은 해초 바다 탐색의 8단계를 시작한 때부터 구세자의 묘지기를 마칠 때까지 지도에 남고, 특별 모집 계획 감독관은 특별 모집을 마치면 붙는다.",
        "polish": {
         "from": "Exploring the Tower of Gestalt는 해초 바다 탐색의 8단계를 시작한 때부터 구세자의 묘지기를 마칠 때까지 지도에 남고, Overseer of the Special Recruitment Project는 특별 모집을 마치면 붙는다.",
         "text": "Exploring the Tower of Gestalt는 해초 바다 탐색의 8단계를 시작한 때부터 구세자의 묘지기를 마칠 때까지 지도에 남고, Overseer of the Special Recruitment Project는 특별 모집을 마치면 붙는다.",
@@ -1104,7 +1079,7 @@
        "t_raw": "Obsidian Totem Poles는 이 목록에서 별다른 조건이 붙지 않은 채 표식으로 올라 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Obsidian Totem Poles는 이 목록에서 별다른 조건이 붙지 않은 채 표식으로 올라 있다."
+       "t": "흑요석 토템 기둥은 이 목록에서 별다른 조건이 붙지 않은 채 표식으로 올라 있다."
       }
      ],
      "sources": [
@@ -1158,11 +1133,7 @@
       }
      ],
      "heading": "Teleport와 기본 표식",
-     "latin_left": [
-      "Exploring the Tower of Gestalt",
-      "Overseer of the Special Recruitment Project",
-      "Obsidian Totem Poles"
-     ]
+     "latin_left": []
     },
     {
      "section": "Teleport와 기본 표식",
@@ -1312,11 +1283,11 @@
        "interp": false,
        "dropped": false,
        "repaired": true,
-       "t": "기념품 상점 표식에는 영광의 바람, 명성재, 네쓰케의 근원 공예, Menakeri의 Treasure Shop, Bertin의 House of Curiosities, 「용 유물 연구 협회」, 보이니치 상회, \"Sadov-Arbat\" 같은 상점들이 표시된다.",
+       "t": "기념품 상점 표식에는 영광의 바람, 명성재, 네쓰케의 근원 공예, 메나케리의 보물 상점, 베르탱의 베르탱 신비 상점, 「용 유물 연구 협회」, 보이니치 상회, \"아르바트 정원\" 같은 상점들이 표시된다.",
        "polish": {
-        "from": "기념품 상점 표식에는 영광의 바람, 명성재, 네쓰케 no 근원 공예, Menakeri의 Treasure Shop, Bertin의 House of Curiosities, 「용 유물 연구 협회」, 보이니치 상회, \"Sadov-Arbat\" 같은 상점들이 표시된다.",
-        "text": "기념품 상점 표식에는 영광의 바람, 명성재, 네쓰케의 근원 공예, Menakeri의 Treasure Shop, Bertin의 House of Curiosities, 「용 유물 연구 협회」, 보이니치 상회, \"Sadov-Arbat\" 같은 상점들이 표시된다.",
-        "by": "or-ds"
+        "from": "기념품 상점 표식에는 영광의 바람, 명성재, 네쓰케 no 근원 공예, 메나케리의 보물 상점, 베르탱의 베르탱 신비 상점, 「용 유물 연구 협회」, 보이니치 상회, \"아르바트 정원\" 같은 상점들이 표시된다.",
+        "text": "기념품 상점 표식에는 영광의 바람, 명성재, 네쓰케의 근원 공예, 메나케리의 보물 상점, 베르탱의 베르탱 신비 상점, 「용 유물 연구 협회」, 보이니치 상회, \"아르바트 정원\" 같은 상점들이 표시된다.",
+        "by": "ds"
        }
       },
       {
@@ -1324,7 +1295,7 @@
        "interp": false,
        "dropped": false,
        "repaired": true,
-       "t": "대장간 표식으로는 슐츠의 대장간, Hanfeng의 Ironmongers, 아메노마 대장간, Shamshir의 Smithy, 보몬트 공방, 회귀 용광로, 로숨 공방, \"Kuznets\"가 나열된다."
+       "t": "대장간 표식으로는 슐츠의 대장간, 한봉 철기의 Ironmongers, 아메노마 대장간, 샴시르 대장간의 Smithy, 보몬트 공방, 회귀 용광로, 로숨 공방, \"쿠즈네츠\"가 나열된다."
       },
       {
        "t_raw": "식당은 Good Hunter 같은 주요 식당과 Angel's Share, Komore Teahouse처럼 여관과 찻집까지 포함하는 기타 식당으로 나뉘어 표시된다.",
@@ -1369,16 +1340,8 @@
      ],
      "heading": "줌 단계와 지역별 표식",
      "latin_left": [
-      "Menakeri",
-      "Treasure Shop",
-      "Bertin",
-      "House of Curiosities",
-      "Sadov-Arbat",
-      "Hanfeng",
       "Ironmongers",
-      "Shamshir",
-      "Smithy",
-      "Kuznets"
+      "Smithy"
      ]
     },
     {
@@ -1485,7 +1448,7 @@
        "t_raw": "The Chasm의 경우 Jinwu: Safety Technician 같은 인물 표식까지 지도에 올라온다.",
        "interp": false,
        "dropped": false,
-       "t": "층암거연의 경우 근우: Safety Technician 같은 인물 표식까지 지도에 올라온다."
+       "t": "층암거연의 경우 근우: 안전 기술요원 같은 인물 표식까지 지도에 올라온다."
       }
      ],
      "sources": [
@@ -1541,8 +1504,7 @@
      "heading": "줌 단계와 지역별 표식",
      "latin_left": [
       "Bosses",
-      "Pins",
-      "Safety Technician"
+      "Pins"
      ]
     },
     {
@@ -1561,7 +1523,7 @@
        "t_raw": "Frost Moon에는 여기에 더해 High-Speed Transit Stations와 Space Lifeform Capture Station, Ancient Moon's Remnants 같은 표식이 붙는다.",
        "interp": false,
        "dropped": false,
-       "t": "서리달에는 여기에 더해 High-Speed Transit Stations와 별하늘 생물 포획소, 고대 달의 흔적 같은 표식이 붙는다."
+       "t": "서리달에는 여기에 더해 고속 환승소와 별하늘 생물 포획소, 고대 달의 흔적 같은 표식이 붙는다."
       },
       {
        "t_raw": "Temple of Space에는 Temple of Space: Memory Core라는 별도의 지도 공간이 존재하며, Frost Moon 지도에도 기능 시설들이 그대로 표식으로 새겨져 있어 지역마다 지도의 밀도가 제각각이라고 볼 수 있다.",
@@ -1622,8 +1584,7 @@
      ],
      "heading": "줌 단계와 지역별 표식",
      "latin_left": [
-      "Pins",
-      "High-Speed Transit Stations"
+      "Pins"
      ]
     },
     {
@@ -1636,13 +1597,13 @@
        "t_raw": "지도 본체에 뜨는 표식과 별도로, Minimap에는 가까이 다가간 뒤에야 나타나는 표식들이 따로 있다.",
        "interp": false,
        "dropped": false,
-       "t": "지도 본체에 뜨는 표식과 별도로, Minimap에는 가까이 다가간 뒤에야 나타나는 표식들이 따로 있다."
+       "t": "지도 본체에 뜨는 표식과 별도로, 미니맵에는 가까이 다가간 뒤에야 나타나는 표식들이 따로 있다."
       },
       {
        "t_raw": "수집품으로는 Oculi를 비롯해 Crimson Agates, Lumenspar, Key Sigils, Spirit Carp, Plumes of Purifying Light 같은 지역별 아이템이 이에 해당한다.",
        "interp": false,
        "dropped": false,
-       "t": "수집품으로는 Oculi를 비롯해 Crimson Agates, 유명 수정석, 건문, 푸른 영력 잉어, Plumes of Purifying Light 같은 지역별 아이템이 이에 해당한다.",
+       "t": "수집품으로는 Oculi를 비롯해 진홍의 옥수, 유명 수정석, 건문, 푸른 영력 잉어, 맑은 빛의 깃털 같은 지역별 아이템이 이에 해당한다.",
        "polish": {
         "from": "수집품으로는 Oculi를 비롯해 Crimson Agates, 유명 수정석, 건문, 푸른 영력 잉어, Plumes of Purifying Light 같은 지역별 아이템이 이에 해당한다.",
         "text": "수집품으로는 Oculi를 비롯해 Crimson Agates, 유명 수정석, 건문, 푸른 영력 잉어, Plumes of Purifying Light 같은 지역별 아이템이 이에 해당한다.",
@@ -1653,18 +1614,18 @@
        "t_raw": "탐험 관련으로는 General Goods shops, Time Tunnels, Perch feathers가 Minimap에 뜨며, Jinn Shrines는 Jinni in the Magic Bottle — Liloupar를 장비했을 때 표시된다.",
        "interp": false,
        "dropped": false,
-       "t": "탐험 관련으로는 잡화점, 시간의 터널, 서목(栖木) 깃털이 미니맵에 뜨며, 지니 신전은 마법병 속의 지니 — 릴루페르를 장비했을 때 표시된다.",
+       "t": "탐험 관련으로는 잡화점, 시간 터널, 서목(栖木) 깃털이 미니맵에 뜨며, 지니의 감실은 마법병 속의 지니 — 릴루페르를 장비했을 때 표시된다.",
        "polish": {
-        "from": "탐험 관련으로는 잡화점 shops, Time Tunnels, 서목(栖木) feathers가 Minimap에 뜨며, Jinn Shrines는 지니 in the Magic Bottle — 릴루페르를 장비했을 때 표시된다.",
-        "text": "탐험 관련으로는 잡화점, 시간의 터널, 서목(栖木) 깃털이 미니맵에 뜨며, 지니 신전은 마법병 속의 지니 — 릴루페르를 장비했을 때 표시된다.",
-        "by": "or-ds"
+        "from": "탐험 관련으로는 잡화점 shops, Time Tunnels, 서목(栖木) feathers가 미니맵에 뜨며, 지니의 감실은 지니 in the Magic Bottle — 릴루페르를 장비했을 때 표시된다.",
+        "text": "탐험 관련으로는 잡화점, 시간 터널, 서목(栖木) 깃털이 미니맵에 뜨며, 지니의 감실은 마법병 속의 지니 — 릴루페르를 장비했을 때 표시된다.",
+        "by": "ds"
        }
       },
       {
        "t_raw": "자원 감지 계열은 Resource, Ore, Local Specialty, Recovery Orb 계열의 재능을 가진 캐릭터를 편성했을 때 해당 자원의 위치가 Minimap에 안내되는 방식이다.",
        "interp": false,
        "dropped": false,
-       "t": "자원 감지 계열은 Resource, Ore, Local Specialty, 소생의 물 덩어리 계열의 재능을 가진 캐릭터를 편성했을 때 해당 자원의 위치가 Minimap에 안내되는 방식이다."
+       "t": "자원 감지 계열은 Resource, Ore, Local Specialty, 소생의 물 덩어리 계열의 재능을 가진 캐릭터를 편성했을 때 해당 자원의 위치가 미니맵에 안내되는 방식이다."
       }
      ],
      "sources": [
@@ -1719,14 +1680,10 @@
      ],
      "heading": "줌 단계와 지역별 표식",
      "latin_left": [
-      "Minimap",
       "Oculi",
-      "Crimson Agates",
-      "Plumes of Purifying Light",
       "Resource",
       "Ore",
-      "Local Specialty",
-      "Minimap"
+      "Local Specialty"
      ]
     },
     {
@@ -1739,19 +1696,19 @@
        "t_raw": "Minimap 전용 표식 가운데에는 기간 한정으로 등장하는 것들도 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Minimap 전용 표식 가운데에는 기간 한정으로 등장하는 것들도 있다."
+       "t": "미니맵 전용 표식 가운데에는 기간 한정으로 등장하는 것들도 있다."
       },
       {
        "t_raw": "Version 1.6의 Golden Apple Archipelago에서는 Echoing Conches가, Moonlight Seeker 이벤트에서는 Moonchase Charms가, Version 3.8의 Veluriyam Mirage에서는 Voucher Boxes가 Minimap에 표시되었다.",
        "interp": false,
        "dropped": false,
-       "t": "Version 1.6의 금사과 제도에서는 Echoing Conches가, Moonlight Seeker 이벤트에서는 Moonchase Charms가, Version 3.8의 유리빛 신기루에서는 Voucher Boxes가 Minimap에 표시되었다."
+       "t": "Version 1.6의 금사과 제도에서는 메아리 소라가, 달빛을 찾아서 이벤트에서는 축월 부적이, Version 3.8의 유리빛 신기루에서는 기쁨 주머니가 미니맵에 표시되었다."
       },
       {
        "t_raw": "그 밖에 Activation Devices, Memory Factor, Scylla, Osse 같은 표식도 Minimap에만 나타나며, 이런 구성을 보면 지도는 정적 정보의 나열이 아니라 플레이어의 현재 목적에 맞춰 정보를 골라 보여주는 장치라고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "그 밖에 활성화 부품, 기억 인자, 스킬라, 우스 같은 표식도 Minimap에만 나타나며, 이런 구성을 보면 지도는 정적 정보의 나열이 아니라 플레이어의 현재 목적에 맞춰 정보를 골라 보여주는 장치라고 볼 수 있다."
+       "t": "그 밖에 활성화 부품, 기억 인자, 스킬라, 우스 같은 표식도 미니맵에만 나타나며, 이런 구성을 보면 지도는 정적 정보의 나열이 아니라 플레이어의 현재 목적에 맞춰 정보를 골라 보여주는 장치라고 볼 수 있다."
       }
      ],
      "sources": [
@@ -1806,15 +1763,8 @@
      ],
      "heading": "줌 단계와 지역별 표식",
      "latin_left": [
-      "Minimap",
       "Version",
-      "Echoing Conches",
-      "Moonlight Seeker",
-      "Moonchase Charms",
-      "Version",
-      "Voucher Boxes",
-      "Minimap",
-      "Minimap"
+      "Version"
      ]
     },
     {
@@ -1845,7 +1795,7 @@
        "t_raw": "탭이 놓이는 Map Menu에는 Notifications, Spiral Abyss와 Imaginarium Theater 진행도, Original Resin 수치도 함께 보인다.",
        "interp": false,
        "dropped": false,
-       "t": "탭이 놓이는 Map Menu에는 Notifications, 나선 비경과 현실 속 환상극 진행도, 퓨어 레진 수치도 함께 보인다."
+       "t": "탭이 놓이는 지도 메뉴에는 Notifications, 나선 비경과 현실 속 환상극 진행도, 퓨어 레진 수치도 함께 보인다."
       }
      ],
      "sources": [
@@ -1868,7 +1818,6 @@
      ],
      "heading": "탭과 다층 지도",
      "latin_left": [
-      "Map Menu",
       "Notifications"
      ]
     },
@@ -1967,7 +1916,7 @@
        "t_raw": "**Area Environments** 탭은 지표의 Teyvat 지도와 따로 놓인 환경들을 모아 둔다.",
        "interp": false,
        "dropped": false,
-       "t": "**Area Environments** 탭은 지표의 티바트 지도와 따로 놓인 환경들을 모아 둔다."
+       "t": "**지역 환경** 탭은 지표의 티바트 지도와 따로 놓인 환경들을 모아 둔다."
       },
       {
        "t_raw": "Enkanomiya는 Inscribed Map을 만져야 지도가 열리고, The Chasm: Underground Mines는 The Chasm Delvers 퀘스트를 진행해야 열린다.",
@@ -2017,9 +1966,7 @@
       }
      ],
      "heading": "탭과 다층 지도",
-     "latin_left": [
-      "Area Environments"
-     ]
+     "latin_left": []
     },
     {
      "section": "탭과 다층 지도",
@@ -2267,11 +2214,11 @@
        "t_raw": "Serenitea Pot 지도는 완전히 축소해도 Realm Waypoint: A Place to Return To와 Sub-Space Waypoint, Companions가 남는다.",
        "interp": false,
        "dropped": false,
-       "t": "속세의 주전자 지도는 완전히 축소해도 선계 워프 포인트: A Place to Return To와 외경 워프 포인트, 동료가 남는다.",
+       "t": "속세의 주전자 지도는 완전히 축소해도 선계 워프 포인트: A Place to Return To와 외경 워프 포인트, Companions가 남는다.",
        "polish": {
-        "from": "속세의 주전자 지도는 완전히 축소해도 선계 워프 포인트: A Place to Return To와 외경 워프 포인트, Companions가 남는다.",
+        "from": "속세의 주전자 지도는 완전히 축소해도 선계 워프 포인트: A Place to Return To와 외경 워프 포인트, 동료가 남는다.",
         "text": "속세의 주전자 지도는 완전히 축소해도 선계 워프 포인트: A Place to Return To와 외경 워프 포인트, 동료가 남는다.",
-        "by": "or-ds"
+        "by": "ds"
        }
       },
       {
@@ -2335,6 +2282,7 @@
      "latin_left": [
       "Place",
       "Return To",
+      "Companions",
       "Mansion"
      ]
     },
@@ -2348,13 +2296,13 @@
        "t_raw": "The Cat's Tail 지도는 완전히 축소하면 아무것도 보이지 않고, 55%가량 확대해야 Match Invitation Board 같은 표식이 나온다.",
        "interp": false,
        "dropped": false,
-       "t": "캣의 Tail 지도는 완전히 축소하면 아무것도 보이지 않고, 55%가량 확대해야 Match Invitation Board 같은 표식이 나온다."
+       "t": "캣의 Tail 지도는 완전히 축소하면 아무것도 보이지 않고, 55%가량 확대해야 대전 초대 게시판 같은 표식이 나온다."
       },
       {
        "t_raw": "Theater Lobby 지도도 축소 상태에서는 비어 있고, 10%가량 확대하면 Fantasia Tome이 드러난다.",
        "interp": false,
        "dropped": false,
-       "t": "연극 준비실 지도도 축소 상태에서는 비어 있고, 10%가량 확대하면 Fantasia Tome이 드러난다."
+       "t": "연극 준비실 지도도 축소 상태에서는 비어 있고, 10%가량 확대하면 환상극의 책이 드러난다."
       },
       {
        "t_raw": "같은 Instances 지도라도 확대 단계에 따라 표식이 하나씩 드러나는 셈이다.",
@@ -2416,8 +2364,6 @@
      "heading": "탭과 다층 지도",
      "latin_left": [
       "Tail",
-      "Match Invitation Board",
-      "Fantasia Tome",
       "Instances"
      ]
     },
@@ -2431,7 +2377,7 @@
        "t_raw": "**Multi-Layered Map**은 한 장소의 여러 층을 오갈 수 있게 하며, 층 목록은 지도 오른쪽에 표시된다.",
        "interp": false,
        "dropped": false,
-       "t": "**Multi-Layered Map**은 한 장소의 여러 층을 오갈 수 있게 하며, 층 목록은 지도 오른쪽에 표시된다."
+       "t": "**층별 맵**은 한 장소의 여러 층을 오갈 수 있게 하며, 층 목록은 지도 오른쪽에 표시된다."
       },
       {
        "t_raw": "Mondstadt의 Knights of Favonius Ruins가 B1, B2, B3로 갈라지는 식으로, 한 장소의 층이 목록에 늘어선다.",
@@ -2497,9 +2443,7 @@
       }
      ],
      "heading": "탭과 다층 지도",
-     "latin_left": [
-      "Multi-Layered Map"
-     ]
+     "latin_left": []
     },
     {
      "section": "탭과 다층 지도",
@@ -2517,13 +2461,13 @@
        "t_raw": "Liyue에는 Carp's Rest가, Inazuma에는 Araumi Ruins가, Sumeru에는 Dharma Forest와 Great Red Sand가 오른다.",
        "interp": false,
        "dropped": false,
-       "t": "리월에는 Carp의 Rest가, 이나즈마에는 Araumi Ruins가, 수메르에는 다르마의 숲과 적색 모래바다가 오른다."
+       "t": "리월에는 Carp의 Rest가, 이나즈마에는 황해가, 수메르에는 다르마의 숲과 적색 모래바다가 오른다."
       },
       {
        "t_raw": "Fontaine에는 Source of All Waters: The Great Fontaine Lake가 층 목록에 있다.",
        "interp": false,
        "dropped": false,
-       "t": "폰타인에는 Source of All Waters: The Great Fontaine Lake가 층 목록에 있다.",
+       "t": "폰타인에는 모든 물의 근원: 폰타인 대호수: 모든 물의 근원: 폰타인 대호수가 층 목록에 있다.",
        "polish": {
         "from": "폰타인에는 Source of All Waters: The Great Fontaine Lake가 층 목록에 있다.",
         "text": "폰타인에는 Source of All Waters: The Great Fontaine Lake가 층 목록에 있다.",
@@ -2576,10 +2520,7 @@
      "heading": "탭과 다층 지도",
      "latin_left": [
       "Carp",
-      "Rest",
-      "Araumi Ruins",
-      "Source of All Waters",
-      "The Great Fontaine Lake"
+      "Rest"
      ]
     },
     {
@@ -2592,13 +2533,13 @@
        "t_raw": "Natlan에는 Settlement of the Children of Echoes와 Ancient Sacred Mountain이, Nod-Krai에는 Crab Tsar's Palace와 Frost Moon이, Snezhnaya에는 Old Abandoned Station이 층 목록에 오른다.",
        "interp": false,
        "dropped": false,
-       "t": "나타에는 메아리 아이의 정착지와 태고의 신성한 산이, 노드크라이에는 「차르 꽃게」의 Palace와 서리달이, 스네즈나야에는 Old Abandoned Station이 층 목록에 오른다."
+       "t": "나타에는 메아리 아이의 정착지와 태고의 신성한 산이, 노드크라이에는 「차르 꽃게」의 Palace와 서리달이, 스네즈나야에는 오래된 폐역이 층 목록에 오른다."
       },
       {
        "t_raw": "Temple of Space도 Pillar Hall of Space를 비롯한 층 목록을 따로 가진다.",
        "interp": false,
        "dropped": false,
-       "t": "공간의 신전도 Pillar Hall of Space를 비롯한 층 목록을 따로 가진다.",
+       "t": "공간의 신전도 기둥 전당을 비롯한 층 목록을 따로 가진다.",
        "polish": {
         "from": "공간의 신전도 Pillar Hall of Space를 비롯한 층 목록을 따로 가진다.",
         "text": "공간의 신전도 Pillar Hall of Space를 비롯한 층 목록을 따로 가진다.",
@@ -2664,9 +2605,7 @@
      ],
      "heading": "탭과 다층 지도",
      "latin_left": [
-      "Palace",
-      "Old Abandoned Station",
-      "Pillar Hall of Space"
+      "Palace"
      ]
     },
     {
@@ -2727,13 +2666,13 @@
        "t_raw": "일반 항목으로는 Daily Commission Rewards, Adventure Rank Rewards, Expedition Reward, Items Forged, Ingredients Processed, 새로운 Reputation 퀘스트와 보상, 진행 중인 Bounty, Envisaged Echoes 관련 알림 등이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "일반 항목으로는 Daily Commission Rewards, Adventure Rank Rewards, Expedition Reward, Items Forged, Ingredients Processed, 새로운 평판 퀘스트와 보상, 진행 중인 현상 토벌, Envisaged Echoes 관련 알림 등이 있다."
+       "t": "일반 항목으로는 일일 의뢰 보상, 모험 등급 보상, 탐사 파견 보상, 단조 완료, 식자재 가공 보상, 새로운 평판 퀘스트와 보상, 진행 중인 현상 토벌, 그림 속 궤적 관련 알림 등이 있다."
       },
       {
        "t_raw": "Genius Invokation TCG 관련으로는 도전 가능한 플레이어의 등장, Tavern에 초대할 수 있는 플레이어, 새로운 Tavern Challenges, Player Level Rewards, 카드 상점의 신규 아이템, The Cat's Tail의 새 플레이어 같은 알림이 뜬다.",
        "interp": false,
        "dropped": false,
-       "t": "일곱 성인의 소환 관련으로는 도전 가능한 플레이어의 등장, Tavern에 초대할 수 있는 플레이어, 새로운 주점 도전, Player Level Rewards, 카드 상점의 신규 아이템, 캣의 Tail의 새 플레이어 같은 알림이 뜬다."
+       "t": "일곱 성인의 소환 관련으로는 도전 가능한 플레이어의 등장, Tavern에 초대할 수 있는 플레이어, 새로운 주점 도전, 플레이어 레벨 보상, 카드 상점의 신규 아이템, 캣의 Tail의 새 플레이어 같은 알림이 뜬다."
       },
       {
        "t_raw": "또한 Frostbearing Tree와 Sacred Sakura, Tree of Dreams, Fountain of Lucine, Tablet of Tona 같은 Offering Systems의 보상·레벨 관련 알림과, 각 지역의 Sigil 상점이 해금되었음을 알리는 알림도 이 자리를 차지한다.",
@@ -2745,7 +2684,7 @@
        "t_raw": "Serenitea Pot에서는 Realm Currency와 Realm Bounty가 상한에 도달했을 때, Traveling Salesman이 방문했을 때, 제작한 가구를 수령할 때, 밭의 작물을 수확할 때, Companion Gifts가 있을 때 알림이 표시되며, 이벤트 기간에는 이벤트 전용 알림도 더해진다.",
        "interp": false,
        "dropped": false,
-       "t": "속세의 주전자에서는 선계 화폐와 계 현상 토벌이 상한에 도달했을 때, Traveling Salesman이 방문했을 때, 제작한 가구를 수령할 때, 밭의 작물을 수확할 때, Companion Gifts가 있을 때 알림이 표시되며, 이벤트 기간에는 이벤트 전용 알림도 더해진다."
+       "t": "속세의 주전자에서는 선계 화폐와 계 현상 토벌이 상한에 도달했을 때, 여행 상인이 방문했을 때, 제작한 가구를 수령할 때, 밭의 작물을 수확할 때, 동료의 선물이 있을 때 알림이 표시되며, 이벤트 기간에는 이벤트 전용 알림도 더해진다."
       }
      ],
      "sources": [
@@ -2800,18 +2739,9 @@
      ],
      "heading": "알림과 지도 설정",
      "latin_left": [
-      "Daily Commission Rewards",
-      "Adventure Rank Rewards",
-      "Expedition Reward",
-      "Items Forged",
-      "Ingredients Processed",
-      "Envisaged Echoes",
       "Tavern",
-      "Player Level Rewards",
       "Tail",
-      "Sigil",
-      "Traveling Salesman",
-      "Companion Gifts"
+      "Sigil"
      ]
     },
     {
@@ -2895,30 +2825,30 @@
        "t_raw": "Map 화면 왼쪽 아래의 톱니바퀴 아이콘을 선택하면 Map Settings에 진입할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "맵 화면 왼쪽 아래의 톱니바퀴 아이콘을 선택하면 Map Settings에 진입할 수 있다."
+       "t": "맵 화면 왼쪽 아래의 톱니바퀴 아이콘을 선택하면 맵 설정에 진입할 수 있다."
       },
       {
        "t_raw": "설정 항목은 Display Separately, Custom Display, Controller로 나뉜다.",
        "interp": false,
        "dropped": false,
-       "t": "설정 항목은 Display Separately, Custom Display, Controller로 나뉜다."
+       "t": "설정 항목은 개별 표시, 사용자 지정 표시, Controller로 나뉜다."
       },
       {
        "t_raw": "Display Separately에서는 Domain 이름과 종류를 표시할지를 Domain only 옵션으로 켜고 끌 수 있고, Custom Display에서는 Custom Markers와 Search for Players를 On/Off할 수 있는데, Search for Players를 켜면 Genius Invokation TCG의 Open World Matches가 지도에 표시된다.",
        "interp": false,
        "dropped": false,
-       "t": "개별 표시에서는 비경 이름과 종류를 표시할지를 비경만 옵션으로 켜고 끌 수 있고, 사용자 지정 표시에서는 사용자 지정 표식과 플레이어 검색을 켜기/끄기할 수 있는데, 플레이어 검색을 켜면 일곱 성인의 소환의 오픈 월드 매치가 지도에 표시된다.",
+       "t": "개별 표시에서는 비경 이름과 종류를 표시할지를 비경 전용 옵션으로 켜고 끌 수 있고, 사용자 지정 표시에서는 사용자 지정 표식과 플레이어 검색을 켜거나 끌 수 있는데, 플레이어 검색을 켜면 일곱 성인의 소환의 오픈 월드 매치가 지도에 표시된다.",
        "polish": {
-        "from": "Display Separately에서는 비경 이름과 종류를 표시할지를 비경 only 옵션으로 켜고 끌 수 있고, Custom Display에서는 Custom Markers와 Search for Players를 On/Off할 수 있는데, Search for Players를 켜면 일곱 성인의 소환의 Open World Matches가 지도에 표시된다.",
-        "text": "개별 표시에서는 비경 이름과 종류를 표시할지를 비경만 옵션으로 켜고 끌 수 있고, 사용자 지정 표시에서는 사용자 지정 표식과 플레이어 검색을 켜기/끄기할 수 있는데, 플레이어 검색을 켜면 일곱 성인의 소환의 오픈 월드 매치가 지도에 표시된다.",
-        "by": "or-ds"
+        "from": "개별 표시에서는 비경 이름과 종류를 표시할지를 비경 only 옵션으로 켜고 끌 수 있고, 사용자 지정 표시에서는 Custom Markers와 Search for Players를 On/Off할 수 있는데, Search for Players를 켜면 일곱 성인의 소환의 Open World Matches가 지도에 표시된다.",
+        "text": "개별 표시에서는 비경 이름과 종류를 표시할지를 비경 전용 옵션으로 켜고 끌 수 있고, 사용자 지정 표시에서는 사용자 지정 표식과 플레이어 검색을 켜거나 끌 수 있는데, 플레이어 검색을 켜면 일곱 성인의 소환의 오픈 월드 매치가 지도에 표시된다.",
+        "by": "ds"
        }
       },
       {
        "t_raw": "Controller 항목에서는 커서의 Cursor Sensitivity와 마커의 Marker Sensitivity Range를 각각 1부터 5까지 조절할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Controller 항목에서는 커서의 Cursor Sensitivity와 마커의 Marker Sensitivity Range를 각각 1부터 5까지 조절할 수 있다."
+       "t": "Controller 항목에서는 커서의 커서 감도와 마커의 표식 감도 범위를 각각 1부터 5까지 조절할 수 있다."
       }
      ],
      "sources": [
@@ -2973,13 +2903,8 @@
      ],
      "heading": "알림과 지도 설정",
      "latin_left": [
-      "Map Settings",
-      "Display Separately",
-      "Custom Display",
       "Controller",
-      "Controller",
-      "Cursor Sensitivity",
-      "Marker Sensitivity Range"
+      "Controller"
      ]
     },
     {
@@ -3065,11 +2990,11 @@
        "t_raw": "Zeitlind가 전하는 문장에서는 Archita가 fairy Daeira에게서 물처럼 짠 gossamer로 엮은 지도를 받았다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "차이틀린트가 전하는 문장에서는 Archita가 요정 다에이라에게서 물처럼 짠 잔거미줄로 엮은 지도를 받았다고 한다.",
+       "t": "차이틀린트가 전하는 문장에서는 아르치타가 요정 다에이라에게서 물처럼 짠 가느다란 천으로 엮은 지도를 받았다고 한다.",
        "polish": {
-        "from": "차이틀린트가 전하는 문장에서는 Archita가 fairy 다에이라에게서 물처럼 짠 gossamer로 엮은 지도를 받았다고 한다.",
-        "text": "차이틀린트가 전하는 문장에서는 Archita가 요정 다에이라에게서 물처럼 짠 잔거미줄로 엮은 지도를 받았다고 한다.",
-        "by": "or-ds"
+        "from": "차이틀린트가 전하는 문장에서는 아르치타가 fairy 다에이라에게서 물처럼 짠 gossamer로 엮은 지도를 받았다고 한다.",
+        "text": "차이틀린트가 전하는 문장에서는 아르치타가 요정 다에이라에게서 물처럼 짠 가느다란 천으로 엮은 지도를 받았다고 한다.",
+        "by": "ds"
        }
       },
       {
@@ -3103,8 +3028,7 @@
      "heading": "서사 속의 맵",
      "latin_left": [
       "Gureva",
-      "Butcher",
-      "Archita"
+      "Butcher"
      ]
     },
     {
@@ -3172,7 +3096,7 @@
        "t_raw": "Familiar Female Voice는 그 저택에 과거에 자주 왔었다며 곧 지도를 주겠다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "Familiar Female Voice는 그 저택에 과거에 자주 왔었다며 곧 지도를 주겠다고 한다."
+       "t": "낯익은 여성의 목소리는 그 저택에 과거에 자주 왔었다며 곧 지도를 주겠다고 한다."
       },
       {
        "t_raw": "Eye of Graeae가 보낸 메시지 가운데에는 House of Hesperides Map이 있어, 메시지에서 곧바로 지도를 열 수 있다.",
@@ -3220,9 +3144,7 @@
       }
      ],
      "heading": "서사 속의 맵",
-     "latin_left": [
-      "Familiar Female Voice"
-     ]
+     "latin_left": []
     },
     {
      "section": "서사 속의 Map",
@@ -3347,13 +3269,13 @@
        "t_raw": "Teyvat 지도의 표식 가운데에는 Event Objectives와 Markers도 포함되었다.",
        "interp": false,
        "dropped": false,
-       "t": "티바트 지도의 표식 가운데에는 Event Objectives와 Markers도 포함되었다."
+       "t": "티바트 지도의 표식 가운데에는 이벤트 목표와 Markers도 포함되었다."
       },
       {
        "t_raw": "각 탭에는 그 Map이나 Region에 Map Notifications나 Quest Objectives가 있으면 아이콘이 붙을 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "각 탭에는 그 맵이나 지역에 Map Notifications나 Quest Objectives가 있으면 아이콘이 붙을 수 있다."
+       "t": "각 탭에는 그 맵이나 지역에 맵 알림이나 임무 목표가 있으면 아이콘이 붙을 수 있다."
       },
       {
        "t_raw": "이벤트 지도 탭마다 제공된 버전이 함께 적혀 있다는 점에서, 이 지도들은 이벤트가 열린 기간과 함께 움직인 것으로 볼 수 있다.",
@@ -3421,10 +3343,7 @@
       "Version",
       "Version",
       "Version",
-      "Event Objectives",
-      "Markers",
-      "Map Notifications",
-      "Quest Objectives"
+      "Markers"
      ]
     },
     {
@@ -3439,9 +3358,9 @@
        "dropped": false,
        "t": "금사과 제도는 한 번 열리면 **지도 탭**에서 티바트 지도, 속세의 주전자 지도와 나란히 접근할 수 있었다.",
        "polish": {
-        "from": "금사과 제도는 한 번 열리면 **Map Tabs**에서 티바트 map, 속세의 주전자 map과 나란히 접근할 수 있었다.",
+        "from": "금사과 제도는 한 번 열리면 **지도 탭**에서 티바트 map, 속세의 주전자 map과 나란히 접근할 수 있었다.",
         "text": "금사과 제도는 한 번 열리면 **지도 탭**에서 티바트 지도, 속세의 주전자 지도와 나란히 접근할 수 있었다.",
-        "by": "or-ds"
+        "by": "ds"
        }
       },
       {
@@ -3699,40 +3618,40 @@
        "t_raw": "Map Settings는 화면 왼쪽 아래의 gear icon을 눌러 들어가며, Setting · Options 아래에 세부 항목이 늘어선다.",
        "interp": false,
        "dropped": false,
-       "t": "지도 설정은 화면 왼쪽 아래의 톱니바퀴 아이콘을 눌러 들어가며, 설정 · 옵션 아래에 세부 항목이 늘어선다.",
+       "t": "맵 설정은 화면 왼쪽 아래의 톱니바퀴 아이콘을 눌러 들어가며, 설정 · 옵션 아래에 세부 항목이 늘어선다.",
        "polish": {
-        "from": "Map Settings는 화면 왼쪽 아래의 gear icon을 눌러 들어가며, Setting · Options 아래에 세부 항목이 늘어선다.",
-        "text": "지도 설정은 화면 왼쪽 아래의 톱니바퀴 아이콘을 눌러 들어가며, 설정 · 옵션 아래에 세부 항목이 늘어선다.",
-        "by": "or-ds"
+        "from": "맵 설정은 화면 왼쪽 아래의 gear icon을 눌러 들어가며, Setting · Options 아래에 세부 항목이 늘어선다.",
+        "text": "맵 설정은 화면 왼쪽 아래의 톱니바퀴 아이콘을 눌러 들어가며, 설정 · 옵션 아래에 세부 항목이 늘어선다.",
+        "by": "ds"
        }
       },
       {
        "t_raw": "Display Separately에서는 Domains only를 Off/On 하여 Domain의 이름과 종류를 지도에 띄울지 정한다.",
        "interp": false,
        "dropped": false,
-       "t": "개별 표시에서는 비경만을 끄기/켜기 하여 비경의 이름과 종류를 지도에 띄울지 정한다.",
+       "t": "개별 표시에서는 비경 전용을 끄거나 켜서 비경의 이름과 종류를 지도에 띄울지 정한다.",
        "polish": {
-        "from": "Display Separately에서는 비경 only를 Off/On 하여 비경의 이름과 종류를 지도에 띄울지 정한다.",
-        "text": "개별 표시에서는 비경만을 끄기/켜기 하여 비경의 이름과 종류를 지도에 띄울지 정한다.",
-        "by": "or-ds"
+        "from": "개별 표시에서는 비경 only를 Off/On 하여 비경의 이름과 종류를 지도에 띄울지 정한다.",
+        "text": "개별 표시에서는 비경 전용을 끄거나 켜서 비경의 이름과 종류를 지도에 띄울지 정한다.",
+        "by": "ds"
        }
       },
       {
        "t_raw": "Custom Display에서는 Custom Markers를 Off/On 하여 직접 찍은 표식을 표시할지 고르고, Search for Players를 켜면 Genius Invokation TCG의 Open World Matches가 지도에 나타난다.",
        "interp": false,
        "dropped": false,
-       "t": "사용자 지정 표시에서는 사용자 지정 표식을 끄기/켜기 하여 직접 찍은 표식을 표시할지 고르고, 플레이어 검색을 켜면 일곱 성인의 소환의 오픈 월드 매치가 지도에 나타난다.",
+       "t": "사용자 지정 표시에서는 사용자 지정 표식을 끄거나 켜서 직접 찍은 표식을 표시할지 고르고, 플레이어 검색을 켜면 일곱 성인의 소환의 오픈 월드 매치가 지도에 나타난다.",
        "polish": {
-        "from": "Custom Display에서는 Custom Markers를 Off/On 하여 직접 찍은 표식을 표시할지 고르고, Search for Players를 켜면 일곱 성인의 소환의 Open World Matches가 지도에 나타난다.",
-        "text": "사용자 지정 표시에서는 사용자 지정 표식을 끄기/켜기 하여 직접 찍은 표식을 표시할지 고르고, 플레이어 검색을 켜면 일곱 성인의 소환의 오픈 월드 매치가 지도에 나타난다.",
-        "by": "or-ds"
+        "from": "사용자 지정 표시에서는 Custom Markers를 Off/On 하여 직접 찍은 표식을 표시할지 고르고, Search for Players를 켜면 일곱 성인의 소환의 Open World Matches가 지도에 나타난다.",
+        "text": "사용자 지정 표시에서는 사용자 지정 표식을 끄거나 켜서 직접 찍은 표식을 표시할지 고르고, 플레이어 검색을 켜면 일곱 성인의 소환의 오픈 월드 매치가 지도에 나타난다.",
+        "by": "ds"
        }
       },
       {
        "t_raw": "Controller 항목에는 Cursor Sensitivity와 Marker Sensitivity Range가 각각 1에서 5까지의 단계로 준비되어 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Controller 항목에는 Cursor Sensitivity와 Marker Sensitivity Range가 각각 1에서 5까지의 단계로 준비되어 있다."
+       "t": "Controller 항목에는 커서 감도와 표식 감도 범위가 각각 1에서 5까지의 단계로 준비되어 있다."
       }
      ],
      "sources": [
@@ -3787,9 +3706,7 @@
      ],
      "heading": "여담",
      "latin_left": [
-      "Controller",
-      "Cursor Sensitivity",
-      "Marker Sensitivity Range"
+      "Controller"
      ]
     },
     {

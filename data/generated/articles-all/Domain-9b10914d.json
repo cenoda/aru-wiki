@@ -36,13 +36,13 @@
        "t_raw": "Domain은 Genshin Impact에서 사원 같은 입구에 자리한 인스턴스이며, 그중 대부분의 Permanent Domains에서 도전을 완수하면 Artifacts·Talent Level-Up Materials·Weapon Ascension Materials·Mora 같은 보상을 얻는다.",
        "interp": false,
        "dropped": false,
-       "t": "비경은 원신에서 사원 같은 입구에 자리한 인스턴스이며, 그중 대부분의 Permanent Domains에서 도전을 완수하면 성유물·Talent Level-Up Materials·무기 돌파 소재·모라 같은 보상을 얻는다."
+       "t": "비경은 원신에서 사원 같은 입구에 자리한 인스턴스이며, 그중 대부분의 Permanent Domains에서 도전을 완수하면 성유물·특성 육성 소재·무기 돌파 소재·모라 같은 보상을 얻는다."
       },
       {
        "t_raw": "대부분의 Permanent Domains는 Original Resin을 대가로 보상을 주고, One-Time Domains는 첫 완료 때 보상을 준다.",
        "interp": false,
        "dropped": false,
-       "t": "대부분의 Permanent Domains는 퓨어 레진을 대가로 보상을 주고, One-Time Domains는 첫 완료 때 보상을 준다."
+       "t": "대부분의 Permanent Domains는 퓨어 레진을 대가로 보상을 주고, 일회성 비경은 첫 완료 때 보상을 준다."
       },
       {
        "t_raw": "Permanent Domains는 Teyvat의 랜드마크이자 해금된 뒤 Teleport Waypoint로 쓸 수 있고 지도에 표시되므로, **탐색과 보상을 잇는 거점**으로 기능한다고 볼 수 있다.",
@@ -96,9 +96,7 @@
      "heading": null,
      "latin_left": [
       "Permanent Domains",
-      "Talent Level-Up Materials",
       "Permanent Domains",
-      "One-Time Domains",
       "Permanent Domains"
      ]
     },
@@ -118,7 +116,7 @@
        "t_raw": "**Permanent Domains**는 Teyvat의 랜드마크로, 뚜렷하게 표시된 Domain Entrance를 가지며 해금 후 **Teleport Waypoint**로 사용할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "**Permanent Domains**는 티바트의 랜드마크로, 뚜렷하게 표시된 Domain Entrance를 가지며 해금 후 **워프 포인트**로 사용할 수 있다."
+       "t": "**Permanent Domains**는 티바트의 랜드마크로, 뚜렷하게 표시된 비경 입구를 가지며 해금 후 **워프 포인트**로 사용할 수 있다."
       },
       {
        "t_raw": "지도에서 Spiral Abyss는 그에 해당하는 표식으로 표시된다.",
@@ -130,7 +128,7 @@
        "t_raw": "Challenge Domains와 Trounce 및 One-Time Domains도 지도에 표식으로 나타난다.",
        "interp": false,
        "dropped": false,
-       "t": "Challenge Domains와 Trounce 및 One-Time Domains도 지도에 표식으로 나타난다."
+       "t": "도전 비경과 Trounce 및 일회성 비경도 지도에 표식으로 나타난다."
       }
      ],
      "sources": [
@@ -162,10 +160,7 @@
      "heading": "개요",
      "latin_left": [
       "Permanent Domains",
-      "Domain Entrance",
-      "Challenge Domains",
-      "Trounce",
-      "One-Time Domains"
+      "Trounce"
      ]
     },
     {
@@ -178,23 +173,23 @@
        "t_raw": "Challenge Domains는 **세 단계가 요일별로 열린다**.",
        "interp": false,
        "dropped": false,
-       "t": "Challenge Domains는 **세 단계가 요일별로 열린다**."
+       "t": "도전 비경은 **세 단계가 요일별로 열린다**."
       },
       {
        "t_raw": "각 단계는 주 3일 동안 열리고, 두 날은 정해진 요일이며, 세 번째 날인 Sunday는 모든 단계에 공통이다.",
        "interp": false,
        "dropped": false,
-       "t": "각 단계는 주 3일 동안 열리고, 두 날은 정해진 요일이며, 세 번째 날인 Sunday는 모든 단계에 공통이다."
+       "t": "각 단계는 주 3일 동안 열리고, 두 날은 정해진 요일이며, 세 번째 날인 일요일은 모든 단계에 공통이다."
       },
       {
        "t_raw": "Domains of Forgery, Domains of Blessing, Domains of Mastery는 각각 Weapon Ascension Materials, Artifacts, Talent Level-Up Materials를 주며, 각각의 입구는 Adventure Rank 16·22·27 또는 For a Tomorrow Without Tears·Song of the Dragon and Freedom·Of the Land Amidst Monoliths 완료 시 열린다.",
        "interp": false,
        "dropped": false,
-       "t": "단조의 비경, 축복의 비경, 숙달의 비경은 각각 무기 돌파 소재, 성유물, 특성 레벨업 소재를 주며, 각각의 입구는 모험 등급 16·22·27 또는 눈물 없는 내일을 위해·드래곤과 자유의 노래·신비로운 천 가지 바위의 땅 완료 시 열린다.",
+       "t": "단련의 비경, 축복의 비경, 숙달의 비경은 각각 무기 돌파 소재, 성유물, 특성 육성 소재를 주며, 각각의 입구는 모험 등급 16·22·27 또는 눈물 없는 내일을 위해·드래곤과 자유의 노래·신비로운 천 가지 바위의 땅 완료 시 열린다.",
        "polish": {
-        "from": "Domains of Forgery, Domains of Blessing, Domains of Mastery는 각각 무기 돌파 소재, 성유물, Talent Level-Up Materials를 주며, 각각의 입구는 모험 등급 16·22·27 또는 눈물 없는 내일을 위해·드래곤과 자유의 노래·신비로운 천 가지 바위의 땅 완료 시 열린다.",
-        "text": "단조의 비경, 축복의 비경, 숙달의 비경은 각각 무기 돌파 소재, 성유물, 특성 레벨업 소재를 주며, 각각의 입구는 모험 등급 16·22·27 또는 눈물 없는 내일을 위해·드래곤과 자유의 노래·신비로운 천 가지 바위의 땅 완료 시 열린다.",
-        "by": "or-ds"
+        "from": "Domains of Forgery, Domains of Blessing, Domains of Mastery는 각각 무기 돌파 소재, 성유물, 특성 육성 소재를 주며, 각각의 입구는 모험 등급 16·22·27 또는 눈물 없는 내일을 위해·드래곤과 자유의 노래·신비로운 천 가지 바위의 땅 완료 시 열린다.",
+        "text": "단련의 비경, 축복의 비경, 숙달의 비경은 각각 무기 돌파 소재, 성유물, 특성 육성 소재를 주며, 각각의 입구는 모험 등급 16·22·27 또는 눈물 없는 내일을 위해·드래곤과 자유의 노래·신비로운 천 가지 바위의 땅 완료 시 열린다.",
+        "by": "glm-flash"
        }
       }
      ],
@@ -233,10 +228,7 @@
       }
      ],
      "heading": "Permanent Domains의 갈래",
-     "latin_left": [
-      "Challenge Domains",
-      "Sunday"
-     ]
+     "latin_left": []
     },
     {
      "section": "Permanent Domains의 갈래",
@@ -248,19 +240,19 @@
        "t_raw": "Trounce Domains는 강력한 Weekly Bosses로, 퀘스트 완료 뒤 재도전할 수 있고 모든 요일에 접근한다.",
        "interp": false,
        "dropped": false,
-       "t": "영역 토벌은 강력한 Weekly Bosses로, 퀘스트 완료 뒤 재도전할 수 있고 모든 요일에 접근한다."
+       "t": "영역 토벌은 강력한 주간 보스로, 퀘스트 완료 뒤 재도전할 수 있고 모든 요일에 접근한다."
       },
       {
        "t_raw": "성공하면 풍부한 보상을 얻지만 **보상 수령은 주 1회**이며, 첫 세 Weekly Bosses는 30 Original Resin, 그 뒤는 60 Original Resin으로 Ley Line Blossom을 열고 Weekly World Reset에 갱신된다.",
        "interp": false,
        "dropped": false,
-       "t": "성공하면 풍부한 보상을 얻지만 **보상 수령은 주 1회**이며, 첫 세 Weekly Bosses는 30 퓨어 레진, 그 뒤는 60 퓨어 레진으로 지맥의 꽃을 열고 Weekly World Reset에 갱신된다."
+       "t": "성공하면 풍부한 보상을 얻지만 **보상 수령은 주 1회**이며, 첫 세 주간 보스는 30 퓨어 레진, 그 뒤는 60 퓨어 레진으로 지맥의 꽃을 열고 주간 초기화에 갱신된다."
       },
       {
        "t_raw": "One-Time Domains는 더 작은 파란 원으로 표시되는 독특한 Domain으로, 첫 완료에 정해진 보상을 주고 이후에도 열려 있지만 보상은 없다.",
        "interp": false,
        "dropped": false,
-       "t": "One-Time Domains는 더 작은 파란 원으로 표시되는 독특한 비경으로, 첫 완료에 정해진 보상을 주고 이후에도 열려 있지만 보상은 없다."
+       "t": "일회성 비경은 더 작은 파란 원으로 표시되는 독특한 비경으로, 첫 완료에 정해진 보상을 주고 이후에도 열려 있지만 보상은 없다."
       },
       {
        "t_raw": "Adventure EXP로 초반 Adventure Rank 상승을 돕고 때때로 독특한 음식 조리법과 Primogems를 준다.",
@@ -323,12 +315,7 @@
       }
      ],
      "heading": "Permanent Domains의 갈래",
-     "latin_left": [
-      "Weekly Bosses",
-      "Weekly Bosses",
-      "Weekly World Reset",
-      "One-Time Domains"
-     ]
+     "latin_left": []
     },
     {
      "section": "Temporary Domains와 Quest Domains·Event Domains",
@@ -340,13 +327,13 @@
        "t_raw": "**Temporary Domains**는 퀘스트나 이벤트 중에만 존재한다.",
        "interp": false,
        "dropped": false,
-       "t": "**Temporary Domains**는 퀘스트나 이벤트 중에만 존재한다."
+       "t": "**기간 한정 비경**은 퀘스트나 이벤트 중에만 존재한다."
       },
       {
        "t_raw": "그중 일부는 Permanent Domain의 입구를 쓰지만, 대부분은 동굴이나 다른 지형 요소를 입구로 삼는다.",
        "interp": false,
        "dropped": false,
-       "t": "그중 일부는 Permanent Domain의 입구를 쓰지만, 대부분은 동굴이나 다른 지형 요소를 입구로 삼는다."
+       "t": "그중 일부는 영구 비경의 입구를 쓰지만, 대부분은 동굴이나 다른 지형 요소를 입구로 삼는다."
       }
      ],
      "sources": [
@@ -359,11 +346,8 @@
        "wiki_refs": []
       }
      ],
-     "heading": "Temporary Domains와 임무 비경·이벤트 비경",
-     "latin_left": [
-      "Temporary Domains",
-      "Permanent Domain"
-     ]
+     "heading": "기간 한정 비경과 임무 비경·이벤트 비경",
+     "latin_left": []
     },
     {
      "section": "Temporary Domains와 Quest Domains·Event Domains",
@@ -394,7 +378,7 @@
        "wiki_refs": []
       }
      ],
-     "heading": "Temporary Domains와 임무 비경·이벤트 비경",
+     "heading": "기간 한정 비경과 임무 비경·이벤트 비경",
      "latin_left": []
     },
     {
@@ -419,7 +403,7 @@
        "t_raw": "모든 \"Test Run\" Domain은 Event Domain이다.",
        "interp": false,
        "dropped": false,
-       "t": "모든 \"Test Run\" 비경은 이벤트 비경이다."
+       "t": "모든 \"솜씨 시험\" 비경은 이벤트 비경이다."
       }
      ],
      "sources": [
@@ -432,10 +416,8 @@
        "wiki_refs": []
       }
      ],
-     "heading": "Temporary Domains와 임무 비경·이벤트 비경",
-     "latin_left": [
-      "Test Run"
-     ]
+     "heading": "기간 한정 비경과 임무 비경·이벤트 비경",
+     "latin_left": []
     },
     {
      "section": "도전과 보상",
@@ -447,19 +429,19 @@
        "t_raw": "Permanent Domains 중 Challenge Domains와 Trounce Domains를 완료하면 Artifacts, Talent Level-Up Materials, Weapon Ascension Materials, Mora, Adventure EXP 등 다양한 아이템과 재료를 얻고, 그 대가로 **Original Resin**을 쓴다.",
        "interp": false,
        "dropped": false,
-       "t": "Permanent Domains 중 Challenge Domains와 영역 토벌을 완료하면 성유물, Talent Level-Up Materials, 무기 돌파 소재, 모라, 모험 경력 등 다양한 아이템과 재료를 얻고, 그 대가로 **퓨어 레진**을 쓴다."
+       "t": "Permanent Domains 중 도전 비경과 영역 토벌을 완료하면 성유물, 특성 육성 소재, 무기 돌파 소재, 모라, 모험 경력 등 다양한 아이템과 재료를 얻고, 그 대가로 **퓨어 레진**을 쓴다."
       },
       {
        "t_raw": "Trounce Domains는 몇 번이든 완료할 수 있지만 보상은 주 1회만 받을 수 있고, 첫 세 Weekly Bosses는 30 Original Resin, 그 뒤에는 60 Original Resin으로 Ley Line Blossom을 연다.",
        "interp": false,
        "dropped": false,
-       "t": "영역 토벌은 몇 번이든 완료할 수 있지만 보상은 주 1회만 받을 수 있고, 첫 세 Weekly Bosses는 30 퓨어 레진, 그 뒤에는 60 퓨어 레진으로 지맥의 꽃을 연다."
+       "t": "영역 토벌은 몇 번이든 완료할 수 있지만 보상은 주 1회만 받을 수 있고, 첫 세 주간 보스는 30 퓨어 레진, 그 뒤에는 60 퓨어 레진으로 지맥의 꽃을 연다."
       },
       {
        "t_raw": "보상은 Weekly World Reset에 갱신된다.",
        "interp": false,
        "dropped": false,
-       "t": "보상은 Weekly World Reset에 갱신된다."
+       "t": "보상은 주간 초기화에 갱신된다."
       }
      ],
      "sources": [
@@ -482,11 +464,7 @@
      ],
      "heading": "도전과 보상",
      "latin_left": [
-      "Permanent Domains",
-      "Challenge Domains",
-      "Talent Level-Up Materials",
-      "Weekly Bosses",
-      "Weekly World Reset"
+      "Permanent Domains"
      ]
     },
     {
@@ -499,7 +477,7 @@
        "t_raw": "One-Time Domains는 처음 완료할 때 정해진 **첫 완료 보상**을 주고, 이후에도 열려 있지만 보상은 주지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "One-Time Domains는 처음 완료할 때 정해진 **첫 완료 보상**을 주고, 이후에도 열려 있지만 보상은 주지 않는다."
+       "t": "일회성 비경은 처음 완료할 때 정해진 **첫 완료 보상**을 주고, 이후에도 열려 있지만 보상은 주지 않는다."
       },
       {
        "t_raw": "이 보상은 Adventure EXP로 초반 Adventure Rank 상승을 돕고, 때로는 고유 Food recipes와 Primogems를 준다.",
@@ -530,9 +508,7 @@
       }
      ],
      "heading": "도전과 보상",
-     "latin_left": [
-      "One-Time Domains"
-     ]
+     "latin_left": []
     },
     {
      "section": "도전과 보상",
@@ -607,7 +583,7 @@
        "t_raw": "그 뒤 호스트는 자신의 세계에 있는 다른 플레이어를 Co-Op 세션에 초대해 Domain이나 보스전을 함께 완료할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "그 뒤 호스트는 자신의 세계에 있는 다른 플레이어를 Co-Op 세션에 초대해 비경이나 보스전을 함께 완료할 수 있다."
+       "t": "그 뒤 호스트는 자신의 세계에 있는 다른 플레이어를 다인 모드 세션에 초대해 비경이나 보스전을 함께 완료할 수 있다."
       }
      ],
      "sources": [
@@ -622,8 +598,7 @@
      ],
      "heading": "협동 모드",
      "latin_left": [
-      "Match",
-      "Co-Op"
+      "Match"
      ]
     },
     {
@@ -688,7 +663,7 @@
        "t_raw": "Sea of Clouds에는 Artifact Domain인 **Domain of Guyun**과 Trounce Domain인 Enter the Golden House가 있고, Guili Plains에는 One-Time Abyssal Domain인 Domain of Forsaken Ruins가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "운래해에는 성유물 비경인 **하늘을 찌르는 땅**과 영역 토벌인 「황금옥」 진입이 있고, 귀리 평원에는 One-Time Abyssal Domain인 버림받은 폐허가 있다."
+       "t": "운래해에는 성유물 비경인 **하늘을 찌르는 땅**과 영역 토벌인 「황금옥」 진입이 있고, 귀리 평원에는 버림받은 폐허인 버림받은 폐허가 있다."
       },
       {
        "t_raw": "Ley Line Monolith의 Domains에도 Domain of Guyun이 이름을 올린다.",
@@ -738,9 +713,7 @@
       }
      ],
      "heading": "티바트의 비경 지도",
-     "latin_left": [
-      "One-Time Abyssal Domain"
-     ]
+     "latin_left": []
     },
     {
      "section": "Teyvat의 Domain 지도",
@@ -752,7 +725,7 @@
        "t_raw": "Wolvendom의 Cecilia Garden은 Abyssal Domain이며, Stormterror's Lair에는 Confront Stormterror Trounce Domain이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "울프 영지의 세실리아의 모밭은 Abyssal Domain이며, 바람 드래곤의 폐허에는 폭풍의 공포에 맞서라 토벌 비경이 있다."
+       "t": "울프 영지의 세실리아의 모밭은 비경이며, 바람 드래곤의 폐허에는 폭풍의 공포에 맞서라 토벌 비경이 있다."
       },
       {
        "t_raw": "Cecilia Garden에는 캐릭터로부터의 자기 적용으로 Slowing Water가, Forsaken Rift에는 피해 능력으로 Icicles와 캐릭터로부터의 자기 적용으로 Condensed Ice가 연결된다.",
@@ -811,7 +784,6 @@
      ],
      "heading": "티바트의 비경 지도",
      "latin_left": [
-      "Abyssal Domain",
       "Icicles"
      ]
     },
@@ -969,7 +941,7 @@
        "t_raw": "Shiki Taishou가 홀로 떠돌다가 불 앞에서 Grilled Fish를 먹는 사람들에게 합류했던 경험을 전하자 Xinyan은 그를 신뢰하고, 일행은 Domain에서 기억을 되찾기로 한다.",
        "interp": false,
        "dropped": false,
-       "t": "「시키 대장」이 홀로 떠돌다가 불 앞에서 Grilled Fish를 먹는 사람들에게 합류했던 경험을 전하자 신염은 그를 신뢰하고, 일행은 비경에서 기억을 되찾기로 한다."
+       "t": "「시키 대장」이 홀로 떠돌다가 불 앞에서 생선구이를 먹는 사람들에게 합류했던 경험을 전하자 신염은 그를 신뢰하고, 일행은 비경에서 기억을 되찾기로 한다."
       },
       {
        "t_raw": "Mystic Onmyou Chamber는 Harunosuke가 음양도로 만든 복잡한 Domain으로, 여러 방이 스스로 재배열될 수 있었고 식신으로 거울 괴물 형태의 훈련 표적을 만들었으나 결국 버려졌다.",
@@ -1033,9 +1005,7 @@
       }
      ],
      "heading": "작중 행적 — 비경이 사건의 실마리가 된 퀘스트",
-     "latin_left": [
-      "Grilled Fish"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Domain이 사건의 실마리가 된 퀘스트",
@@ -1059,7 +1029,7 @@
        "t_raw": "Paimon은 그 Domain에서 Smoldersleet Potions를 아주 많이 사용했다고 되짚는다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 그 비경에서 Smoldersleet Potions를 아주 많이 사용했다고 되짚는다."
+       "t": "페이몬은 그 비경에서 마법 포션을 아주 많이 사용했다고 되짚는다."
       },
       {
        "t_raw": "Paimon은 자신들에게 Domain 탐험은 산책처럼 느껴진다고 말하고, Fischl은 어떤 Domain이 놀랍고도 역겹다고 말한다.",
@@ -1112,9 +1082,7 @@
       }
      ],
      "heading": "작중 행적 — 비경이 사건의 실마리가 된 퀘스트",
-     "latin_left": [
-      "Smoldersleet Potions"
-     ]
+     "latin_left": []
     },
     {
      "section": "얽힌 인물과 세력",
@@ -1149,7 +1117,7 @@
        "t_raw": "Shiki Taishou가 그 선율에 고양되고 Grilled Fish를 먹고 있던 사람들에게 합류한 경험을 이야기하자, Xinyan은 그를 신뢰하고 일행은 Domain에서 기억을 되찾도록 돕기로 한다.",
        "interp": false,
        "dropped": false,
-       "t": "「시키 대장」이 그 선율에 고양되고 Grilled Fish를 먹고 있던 사람들에게 합류한 경험을 이야기하자, 신염은 그를 신뢰하고 일행은 비경에서 기억을 되찾도록 돕기로 한다."
+       "t": "「시키 대장」이 그 선율에 고양되고 생선구이를 먹고 있던 사람들에게 합류한 경험을 이야기하자, 신염은 그를 신뢰하고 일행은 비경에서 기억을 되찾도록 돕기로 한다."
       },
       {
        "t_raw": "Kujou Sara의 의뢰로 시작된 Domain 조사가 Shiki Taishou의 기억 회복을 돕는 흐름으로 이어지는 셈이다.",
@@ -1169,9 +1137,7 @@
       }
      ],
      "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Grilled Fish"
-     ]
+     "latin_left": []
     },
     {
      "section": "얽힌 인물과 세력",
@@ -1412,7 +1378,7 @@
        "t_raw": "Energy Amplifier의 알림에는 **Begin Domain**이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "전도 원판의 알림에는 **Begin Domain**이 있다."
+       "t": "전도 원판의 알림에는 **비경 시작**이 있다."
       },
       {
        "t_raw": "Paimon은 Mondstadt를 떠난 뒤 전투를 꽤 겪었고, 그런 우리에게 Domain 탐험은 **공원 산책** 같다고 말한다.",
@@ -1439,9 +1405,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Begin Domain"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
@@ -1465,13 +1429,13 @@
        "t_raw": "Paimon은 그 Domain에서 Smoldersleet Potions을 아주 여러 번 사용했던 일도 떠올린다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 그 비경에서 Smoldersleet Potions을 아주 여러 번 사용했던 일도 떠올린다."
+       "t": "페이몬은 그 비경에서 마법 포션을 아주 여러 번 사용했던 일도 떠올린다."
       },
       {
        "t_raw": "Domain은 예상 밖 입구에서 마주치기도 하고, 감탄과 혐오를 함께 불러일으키며, Smoldersleet Potions을 여러 번 쓴 기억이 붙는 장소인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "비경은 예상 밖 입구에서 마주치기도 하고, 감탄과 혐오를 함께 불러일으키며, Smoldersleet Potions을 여러 번 쓴 기억이 붙는 장소인 셈이다."
+       "t": "비경은 예상 밖 입구에서 마주치기도 하고, 감탄과 혐오를 함께 불러일으키며, 마법 포션을 여러 번 쓴 기억이 붙는 장소인 셈이다."
       }
      ],
      "sources": [
@@ -1498,10 +1462,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Smoldersleet Potions",
-      "Smoldersleet Potions"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [

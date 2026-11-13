@@ -1,0 +1,581 @@
+{
+ "node": "Taika",
+ "articles": [
+  {
+   "node": "Taika",
+   "from_version": "5.2",
+   "cutoff": "2024-12-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Taika",
+     "url": "https://genshin-impact.fandom.com/wiki/Taika",
+     "revision": 1681520
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 525,
+   "input_cut": false,
+   "input_hash": "90cb2700c634",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All supported. The Bona inference follows from M2 (Bona is Taika's daughter he never met) and A2.",
+     "quote": "In his time, he was known as the mightiest warrior of the Flower-Feather Clan.",
+     "sentences": [
+      {
+       "t_raw": "Taika는 Natlan의 **Flower-Feather Clan** 출신인 역사적 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이카는 나타의 **꽃깃회** 출신인 역사적 인물이다."
+      },
+      {
+       "t_raw": "그는 당대 Flower-Feather Clan의 가장 강력한 전사로 알려졌고, Cataclysm이 닥친 뒤 **Ochkanatlan Adventure Team**이 Tonatiuh에 닿으려는 원정을 이끌었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 당대 꽃깃회의 가장 강력한 전사로 알려졌고, 대재앙이 닥친 뒤 **오치카나타 모험단**이 하늘뱀선에 닿으려는 원정을 이끌었다."
+      },
+      {
+       "t_raw": "그는 아내와 태어나지 않은 아이를 남겨 둔 채 원정에 나섰고, 대부분의 동료와 마찬가지로 Waxaklahun Ubah Kan의 손에 죽었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 아내와 태어나지 않은 아이를 남겨 둔 채 원정에 나섰고, 대부분의 동료와 마찬가지로 왁샤클라훈우바칸의 손에 죽었다."
+      },
+      {
+       "t_raw": "그가 남겨 둔 태아가 훗날 Tonatiuh의 보물을 쫓는 Bona였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 남겨 둔 태아가 훗날 하늘뱀선의 보물을 쫓는 파우나였던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Demon-Warrior's Feather Mask"
+        },
+        {
+         "type": "quest",
+         "name": "Moment of Awakening"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liriwu",
+       "revision": 1681496,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "A Nameless Adventurer's Notes"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All supported by A1 and A2.",
+     "quote": "In his time, he was known as the mightiest warrior of the Flower-Feather Clan.",
+     "sentences": [
+      {
+       "t_raw": "Taika는 Natlan의 **Flower-Feather Clan의 역사적 인물**로, 당대에 Clan의 가장 강력한 전사로 알려졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이카는 나타의 **꽃깃회의 역사적 인물**로, 당대에 Clan의 가장 강력한 전사로 알려졌다."
+      },
+      {
+       "t_raw": "Cataclysm 이후 그는 Ochkanatlan Adventure Team을 이끌고 **Tonatiuh에 닿기 위한 원정**에 나서 아내와 태어나지 않은 아이를 남겼고, 대부분의 동료들과 마찬가지로 Waxaklahun Ubah Kan의 손에 최후를 맞았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대재앙 이후 그는 오치카나타 모험단을 이끌고 **하늘뱀선에 닿기 위한 원정**에 나서 아내와 태어나지 않은 아이를 남겼고, 대부분의 동료들과 마찬가지로 왁샤클라훈우바칸의 손에 최후를 맞았다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Demon-Warrior's Feather Mask"
+        },
+        {
+         "type": "quest",
+         "name": "Moment of Awakening"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Flower-Feather Clan",
+       "revision": 1690888,
+       "section": "Members > Historical",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Clan"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All supported by A2 and M2. The interpretation is reasonable.",
+     "quote": "His journey later inspired Bona to follow in his footsteps, chasing the treasure of the Tonatiuh.",
+     "sentences": [
+      {
+       "t_raw": "그의 여정은 훗날 딸 Bona가 **그의 발자취를 따라 Tonatiuh의 보물을 쫓도록 이끌었다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "그의 여정은 훗날 딸 파우나가 **그의 발자취를 따라 하늘뱀선의 보물을 쫓도록 이끌었다**."
+      },
+      {
+       "t_raw": "Bona는 Taika가 만나지 못한 아이였고, Liriwu는 그런 Bona에게 'Aunt Liriwu'가 되어 과거 세대의 후회를 떠안지 말라고 조언했지만 Bona는 Tonatiuh를 추구했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파우나는 타이카가 만나지 못한 아이였고, 리리우는 그런 파우나에게 '리리우 이모'가 되어 과거 세대의 후회를 떠안지 말라고 조언했지만 파우나는 하늘뱀선을 추구했다."
+      },
+      {
+       "t_raw": "Taika의 여정이 Bona의 Tonatiuh 추구로 이어진 점은 후대의 선택에까지 영향을 남긴 사례로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "타이카의 여정이 파우나의 하늘뱀선 추구로 이어진 점은 후대의 선택에까지 영향을 남긴 사례로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Demon-Warrior's Feather Mask"
+        },
+        {
+         "type": "quest",
+         "name": "Moment of Awakening"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liriwu",
+       "revision": 1681496,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "A Nameless Adventurer's Notes"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A1, A2 and M1 (listed under Members > Historical). The interpretation is reasonable.",
+     "quote": "Taika is a historical character from the Flower-Feather Clan in Natlan.",
+     "sentences": [
+      {
+       "t_raw": "Taika는 Natlan의 Flower-Feather Clan 출신이며, Flower-Feather Clan의 역사적 인물 목록에 이름을 올린 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이카는 나타의 꽃깃회 출신이며, 꽃깃회의 역사적 인물 목록에 이름을 올린 인물이다."
+      },
+      {
+       "t_raw": "그의 시대에 그는 클랜에서 **가장 강한 전사**로 알려져 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그의 시대에 그는 클랜에서 **가장 강한 전사**로 알려져 있었다."
+      },
+      {
+       "t_raw": "그가 역사적 인물 목록에 오른 점은 그를 클랜의 **역사적 인물**로 기억하는 위치를 보여 주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 역사적 인물 목록에 오른 점은 그를 클랜의 **역사적 인물**로 기억하는 위치를 보여 주는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Demon-Warrior's Feather Mask"
+        },
+        {
+         "type": "quest",
+         "name": "Moment of Awakening"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Flower-Feather Clan",
+       "revision": 1690888,
+       "section": "Members > Historical",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Facts are in A2. The interpretation is a modest, reasonable inference.",
+     "quote": "After the Cataclysm struck, he led the Ochkanatlan Adventure Team's quest to reach the Tonatiuh, leaving his wife and unborn child behind to do so.",
+     "sentences": [
+      {
+       "t_raw": "Cataclysm이 닥친 뒤, 그는 Ochkanatlan Adventure Team을 이끌고 Tonatiuh에 도달하려는 원정에 나섰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대재앙이 닥친 뒤, 그는 오치카나타 모험단을 이끌고 하늘뱀선에 도달하려는 원정에 나섰다."
+      },
+      {
+       "t_raw": "이때 그는 아내와 아직 태어나지 않은 아이를 뒤에 남겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이때 그는 아내와 아직 태어나지 않은 아이를 뒤에 남겼다."
+      },
+      {
+       "t_raw": "클랜의 가장 강한 전사가 원정대를 이끌었으면서 가족을 남겨 두었다는 점은 이 원정이 개인적으로도 큰 결단이었음을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "클랜의 가장 강한 전사가 원정대를 이끌었으면서 가족을 남겨 두었다는 점은 이 원정이 개인적으로도 큰 결단이었음을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Demon-Warrior's Feather Mask"
+        },
+        {
+         "type": "quest",
+         "name": "Moment of Awakening"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Natlan",
+     "status": "accepted",
+     "note": "All supported by A2.",
+     "quote": "After the Cataclysm struck, he led the Ochkanatlan Adventure Team's quest to reach the Tonatiuh, leaving his wife and unborn child behind to do so.",
+     "sentences": [
+      {
+       "t_raw": "Taika는 **Flower-Feather Clan의 가장 강한 전사**로 알려졌으며, Cataclysm이 닥친 뒤 Ochkanatlan Adventure Team을 이끌고 Tonatiuh에 이르는 원정에 나섰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이카는 **꽃깃회의 가장 강한 전사**로 알려졌으며, 대재앙이 닥친 뒤 오치카나타 모험단을 이끌고 하늘뱀선에 이르는 원정에 나섰다."
+      },
+      {
+       "t_raw": "그는 원정을 위해 아내와 태어나지 않은 아이를 뒤에 남겨 두었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 원정을 위해 아내와 태어나지 않은 아이를 뒤에 남겨 두었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Demon-Warrior's Feather Mask"
+        },
+        {
+         "type": "quest",
+         "name": "Moment of Awakening"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 나타",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Natlan",
+     "status": "accepted",
+     "note": "All sentences are supported by A2.",
+     "quote": "He, like most of his teammates, ultimately perished at the hand of Waxaklahun Ubah Kan.",
+     "sentences": [
+      {
+       "t_raw": "Taika는 대부분의 동료들과 마찬가지로 Waxaklahun Ubah Kan의 손에 최후를 맞았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이카는 대부분의 동료들과 마찬가지로 왁샤클라훈우바칸의 손에 최후를 맞았다."
+      },
+      {
+       "t_raw": "가장 강한 전사로 알려진 그조차 동료 다수와 같은 최후를 맞은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가장 강한 전사로 알려진 그조차 동료 다수와 같은 최후를 맞은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Demon-Warrior's Feather Mask"
+        },
+        {
+         "type": "quest",
+         "name": "Moment of Awakening"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 나타",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Natlan",
+     "status": "accepted",
+     "note": "All sentences are supported by A2 and M2. The interpretation follows from them.",
+     "quote": "Liriwu would later become \"Aunt Liriwu\" to Taika's daughter Bona, whom he never got to meet.",
+     "sentences": [
+      {
+       "t_raw": "Taika가 만나지 못한 딸 Bona에게 Liriwu는 훗날 \"Aunt Liriwu\"가 되었고, Liriwu는 Bona에게 \"take on the regrets of generations past\"하지 말라고 조언했으나 Bona는 Tonatiuh를 추구했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이카가 만나지 못한 딸 파우나에게 리리우는 훗날 \"리리우 이모\"가 되었고, 리리우는 파우나에게 \"take on the regrets of generations past\"하지 말라고 조언했으나 파우나는 하늘뱀선을 추구했다."
+      },
+      {
+       "t_raw": "Taika의 여정은 훗날 Bona가 Tonatiuh의 **보물**을 좇는 데 영감을 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이카의 여정은 훗날 파우나가 하늘뱀선의 **보물**을 좇는 데 영감을 주었다."
+      },
+      {
+       "t_raw": "그의 원정은 만나지 못한 딸의 선택으로 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그의 원정은 만나지 못한 딸의 선택으로 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Demon-Warrior's Feather Mask"
+        },
+        {
+         "type": "quest",
+         "name": "Moment of Awakening"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liriwu",
+       "revision": 1681496,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "A Nameless Adventurer's Notes"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 나타",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The facts are supported by A2 and M2. The interpretation is hedged and reasonable.",
+     "quote": "His journey later inspired Bona to follow in his footsteps, chasing the treasure of the Tonatiuh.",
+     "sentences": [
+      {
+       "t_raw": "Taika는 Cataclysm 이후 Ochkanatlan Adventure Team의 Tonatiuh 원정을 이끌면서 아내와 태어나지 않은 아이를 뒤에 두었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이카는 대재앙 이후 오치카나타 모험단의 하늘뱀선 원정을 이끌면서 아내와 태어나지 않은 아이를 뒤에 두었다."
+      },
+      {
+       "t_raw": "그가 만나지 못한 딸은 **Bona**이며, Bona는 그의 발자취를 따라 **Tonatiuh의 보물**을 좇게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 만나지 못한 딸은 **파우나**이며, 파우나는 그의 발자취를 따라 **하늘뱀선의 보물**을 좇게 된다."
+      },
+      {
+       "t_raw": "Taika의 원정이 Bona의 행보로 이어졌다는 점에서, Taika가 남긴 길은 가족의 다음 세대에게도 중요한 방향이 된 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "타이카의 원정이 파우나의 행보로 이어졌다는 점에서, 타이카가 남긴 길은 가족의 다음 세대에게도 중요한 방향이 된 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Taika",
+       "revision": 1681520,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Demon-Warrior's Feather Mask"
+        },
+        {
+         "type": "quest",
+         "name": "Moment of Awakening"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liriwu",
+       "revision": 1681496,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "A Nameless Adventurer's Notes"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The facts match M2. The interpretation is a reasonable reading that the advice did not change Bona's choice.",
+     "quote": "She advised Bona not to \"take on the regrets of generations past,\" but Bona would go on to pursue the Tonatiuh nonetheless.",
+     "sentences": [
+      {
+       "t_raw": "Liriwu는 훗날 Taika의 딸 Bona에게 **\"Aunt Liriwu\"**가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리리우는 훗날 타이카의 딸 파우나에게 **\"리리우 이모\"**가 되었다."
+      },
+      {
+       "t_raw": "Liriwu는 Bona에게 세대가 남긴 후회를 떠안지 말라고 조언했지만, Bona는 그래도 Tonatiuh를 향해 나아갔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리리우는 파우나에게 세대가 남긴 후회를 떠안지 말라고 조언했지만, 파우나는 그래도 하늘뱀선을 향해 나아갔다."
+      },
+      {
+       "t_raw": "조언과 Bona의 행보가 어긋난다는 점은 Liriwu의 바람이 Bona의 선택을 돌리지 못했음을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "조언과 파우나의 행보가 어긋난다는 점은 리리우의 바람이 파우나의 선택을 돌리지 못했음을 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Liriwu",
+       "revision": 1681496,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "A Nameless Adventurer's Notes"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

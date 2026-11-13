@@ -1,0 +1,953 @@
+{
+ "node": "Isadora",
+ "articles": [
+  {
+   "node": "Isadora",
+   "from_version": "4.0",
+   "cutoff": "2023-09-26T00:00:00Z",
+   "input": [
+    {
+     "page": "Isadora",
+     "url": "https://genshin-impact.fandom.com/wiki/Isadora",
+     "revision": 1344344
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 1237,
+   "input_cut": false,
+   "input_hash": "0f8aab372ff9",
+   "writer": "or-ds,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A7 and A10.",
+     "quote": "I'm an auditor here at the Palais. My work is confidential, so I can't really unburden myself of my complaints to anyone.",
+     "sentences": [
+      {
+       "t_raw": "Isadora는 Fontaine의 Court of Fontaine: Palais Mermonia에 있는 오픈 월드 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이사도라는 폰타인의 폰타인성: 멜모니아궁에 있는 오픈 월드 NPC다."
+      },
+      {
+       "t_raw": "낮에는 Palais Mermonia 입구 근처에서 Jacquetta와 대화하고, 밤에는 Palais Mermonia 뒤쪽에서 발견된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에는 멜모니아궁 입구 근처에서 자퀘타와 대화하고, 밤에는 멜모니아궁 뒤쪽에서 발견된다."
+      },
+      {
+       "t_raw": "Palais Mermonia의 감사관으로 일하며, 업무가 기밀이라 고민을 남에게 털어놓기 어렵다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "멜모니아궁의 감사관으로 일하며, 업무가 기밀이라 고민을 남에게 털어놓기 어렵다고 말한다."
+      },
+      {
+       "t_raw": "밤에는 문제가 풀리지 않을 수 있다는 말과 각자의 선택을 이야기한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에는 문제가 풀리지 않을 수 있다는 말과 각자의 선택을 이야기한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All supported by A1; the interpretation in (2) follows from the day/night locations.",
+     "quote": "She can be found talking with Jacquetta near the entrance to the Palais Mermonia during the day and behind the Palais Mermonia at night.",
+     "sentences": [
+      {
+       "t_raw": "Isadora는 Fontaine의 Court of Fontaine에 있는 Palais Mermonia에서 만나는 오픈 월드 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이사도라는 폰타인의 폰타인성에 있는 멜모니아궁에서 만나는 오픈 월드 NPC다."
+      },
+      {
+       "t_raw": "낮에는 Palais Mermonia 입구 근처에서 Jacquetta와 대화하고, 밤에는 Palais Mermonia 뒤쪽에서 만날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에는 멜모니아궁 입구 근처에서 자퀘타와 대화하고, 밤에는 멜모니아궁 뒤쪽에서 만날 수 있다."
+      },
+      {
+       "t_raw": "낮과 밤에 머무는 위치가 달라지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "낮과 밤에 머무는 위치가 달라지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "A10 supports the auditor role and the confidentiality. The interpretation is reasonable and hedged.",
+     "quote": "I'm an auditor here at the Palais. My work is confidential, so I can't really unburden myself of my complaints to anyone.",
+     "sentences": [
+      {
+       "t_raw": "그녀는 Palais Mermonia의 **감사관**으로 일한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 멜모니아궁의 **감사관**으로 일한다."
+      },
+      {
+       "t_raw": "업무가 **기밀**이라 다른 사람에게 불만을 털어놓을 수 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "업무가 **기밀**이라 다른 사람에게 불만을 털어놓을 수 없다고 말한다."
+      },
+      {
+       "t_raw": "감사관이라는 신분과 기밀 업무가 고충을 나누기 어려운 사정으로 이어지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "감사관이라는 신분과 기밀 업무가 고충을 나누기 어려운 사정으로 이어지는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "A1, A10 and A11 support all sentences. Sentence (2) restates A11 fairly.",
+     "quote": "Isadora: I'm an auditor here at the Palais. My work is confidential, so I can't really unburden myself of my complaints to anyone.",
+     "sentences": [
+      {
+       "t_raw": "Isadora는 Fontaine의 Court of Fontaine: Palais Mermonia에서 만나는 오픈 월드 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이사도라는 폰타인의 폰타인성: 멜모니아궁에서 만나는 오픈 월드 NPC다."
+      },
+      {
+       "t_raw": "그녀는 Palais Mermonia의 감사관으로 일하며, 업무가 기밀이라 불만을 남에게 털어놓을 수 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 멜모니아궁의 감사관으로 일하며, 업무가 기밀이라 불만을 남에게 털어놓을 수 없다고 말한다."
+      },
+      {
+       "t_raw": "규칙을 따르겠다는 뜻은 분명하지만, 가끔은 이야기할 상대가 있었으면 한다는 바람도 내비친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "규칙을 따르겠다는 뜻은 분명하지만, 가끔은 이야기할 상대가 있었으면 한다는 바람도 내비친다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A1. The interpretation is reasonable.",
+     "quote": "She can be found talking with Jacquetta near the entrance to the Palais Mermonia during the day and behind the Palais Mermonia at night.",
+     "sentences": [
+      {
+       "t_raw": "낮에는 Palais Mermonia 입구 근처에서 Jacquetta와 이야기를 나누고, 밤에는 Palais Mermonia 뒤쪽에서 모습을 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에는 멜모니아궁 입구 근처에서 자퀘타와 이야기를 나누고, 밤에는 멜모니아궁 뒤쪽에서 모습을 드러낸다."
+      },
+      {
+       "t_raw": "이처럼 같은 Palais Mermonia를 배경으로 낮과 밤의 위치가 나뉘는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 같은 멜모니아궁을 배경으로 낮과 밤의 위치가 나뉘는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 낮",
+     "status": "accepted",
+     "note": "Sentence 1 adds that the two exchange talk with each other and that Isadora speaks a short idle line. The English only gives idle quotes (A3, A4) and does not say who says them or that she says them while talking to Jacquetta. The 'Palais-adjacent' placement is fine, but the dialogue exchange is unsupported.",
+     "quote": "She can be found talking with Jacquetta near the entrance to the Palais Mermonia during the day",
+     "sentences": [
+      {
+       "t_raw": "낮에 Isadora는 Fontaine의 Court of Fontaine에 있는 Palais Mermonia 입구 근처에서 Jacquetta와 함께 이야기를 나누는 모습으로 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에 이사도라는 폰타인의 폰타인성에 있는 멜모니아궁 입구 근처에서 자퀘타와 함께 이야기를 나누는 모습으로 등장한다."
+      },
+      {
+       "t_raw": "Palais Mermonia와 가까운 이 위치에서 Isadora는 낮에 Jacquetta와 대화하는 모습으로 발견된다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "멜모니아궁과 가까운 이 위치에서 이사도라는 낮에 자퀘타와 대화하는 모습으로 발견된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Idle Quotes > Daytime",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Idle Quotes > Daytime",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 낮",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 낮",
+     "status": "accepted",
+     "note": "All supported; the interpretation is reasonable.",
+     "quote": "Maybe try talking to them again?",
+     "sentences": [
+      {
+       "t_raw": "낮의 대기 대사로는 \"Try talking...\"과 \"Maybe try talking to them again?\"가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮의 대기 대사로는 \"말을 걸어 보세요...\"와 \"다시 그들에게 말을 걸어 보는 게 어떨까요?\"가 있다.",
+       "polish": {
+        "from": "낮의 대기 대사로는 \"Try talking...\"과 \"Maybe try talking to them again?\"가 있다.",
+        "text": "낮의 대기 대사로는 \"말을 걸어 보세요...\"와 \"다시 그들에게 말을 걸어 보는 게 어떨까요?\"가 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "두 대사는 누군가와 다시 말을 건네 보라는 권유의 결을 지니는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 대사는 누군가와 다시 말을 건네 보라는 권유의 결을 지니는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Idle Quotes > Daytime",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Idle Quotes > Daytime",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 낮",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 밤",
+     "status": "accepted",
+     "note": "All supported by A1, A6 and A7.",
+     "quote": "Some problems might have been fated to be intractable... I suspect we've all got to make our own choices.",
+     "sentences": [
+      {
+       "t_raw": "낮에 Jacquetta와 Palais Mermonia 입구 근처에 있던 Isadora는 밤이 되면 Palais Mermonia 뒤쪽에서 발견된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에 자퀘타와 멜모니아궁 입구 근처에 있던 이사도라는 밤이 되면 멜모니아궁 뒤쪽에서 발견된다."
+      },
+      {
+       "t_raw": "밤 대기 대사에서는 서로 생각이 다르면 그럴 수밖에 없다는 듯 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤 대기 대사에서는 서로 생각이 다르면 그럴 수밖에 없다는 듯 말한다."
+      },
+      {
+       "t_raw": "대화에서는 어떤 문제가 해결하기 어렵게 정해져 있을 수 있으며 모두가 **스스로 선택**해야 한다고 이야기한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대화에서는 어떤 문제가 해결하기 어렵게 정해져 있을 수 있으며 모두가 **스스로 선택**해야 한다고 이야기한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Idle Quotes > Nighttime",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 밤",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 밤",
+     "status": "accepted",
+     "note": "All supported by A8-A12; the interpretation is reasonable.",
+     "quote": "I'm an auditor here at the Palais. My work is confidential, so I can't really unburden myself of my complaints to anyone.",
+     "sentences": [
+      {
+       "t_raw": "기운이 없어 보인다는 말에 Isadora는 자신을 **행복**하다고 여긴 지 오래라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기운이 없어 보인다는 말에 이사도라는 자신을 **행복**하다고 여긴 지 오래라고 답한다."
+      },
+      {
+       "t_raw": "Palais Mermonia의 감사관인 그녀는 업무가 **기밀**이라 고충을 털어놓을 수 없다고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "멜모니아궁의 감사관인 그녀는 업무가 **기밀**이라 고충을 털어놓을 수 없다고 설명한다."
+      },
+      {
+       "t_raw": "규칙을 따르려 하지만 때로는 이야기 상대가 있었으면 좋겠다고 하고, 매끄럽지 않은 일들을 받아들이며 사는 방식을 배워야 할지도 모른다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "규칙을 따르려 하지만 때로는 이야기 상대가 있었으면 좋겠다고 하고, 매끄럽지 않은 일들을 받아들이며 사는 방식을 배워야 할지도 모른다고 말한다."
+      },
+      {
+       "t_raw": "기밀 업무와 규칙 준수는 때로 누군가와 이야기하고 싶다는 바람과 맞물려 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "기밀 업무와 규칙 준수는 때로 누군가와 이야기하고 싶다는 바람과 맞물려 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 밤",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 밤",
+     "status": "accepted",
+     "note": "All supported by A13-A18.",
+     "quote": "No, it's okay. It is good enough to chat under such a serene night sky. Thank you.",
+     "sentences": [
+      {
+       "t_raw": "도움이 되지 못해 미안하다는 말에 Isadora는 고요한 밤하늘 아래에서 이야기한 것만으로 충분하다며 고마워한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도움이 되지 못해 미안하다는 말에 이사도라는 고요한 밤하늘 아래에서 이야기한 것만으로 충분하다며 고마워한다."
+      },
+      {
+       "t_raw": "잘 자고 달콤한 꿈을 꾸라는 인사를 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잘 자고 달콤한 꿈을 꾸라는 인사를 건넨다."
+      },
+      {
+       "t_raw": "상대가 행운을 빌자 Isadora도 상대의 행운을 빈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상대가 행운을 빌자 이사도라도 상대의 행운을 빈다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A18",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 밤",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Both sentences are supported by A1.",
+     "quote": "She can be found talking with Jacquetta near the entrance to the Palais Mermonia during the day",
+     "sentences": [
+      {
+       "t_raw": "낮의 Isadora는 Palais Mermonia 입구 근처에서 **Jacquetta와의 대화**를 나누는 모습으로 발견된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮의 이사도라는 멜모니아궁 입구 근처에서 **자퀘타와의 대화**를 나누는 모습으로 발견된다."
+      },
+      {
+       "t_raw": "그녀의 낮 자리는 Jacquetta와 함께 있는 장면으로 나타난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀의 낮 자리는 자퀘타와 함께 있는 장면으로 나타난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported; the interpretation follows from A1 and the dialogue.",
+     "quote": "No, it's okay. It is good enough to chat under such a serene night sky. Thank you.",
+     "sentences": [
+      {
+       "t_raw": "밤에 Isadora는 Palais Mermonia 뒤쪽에서 **밤의 대화 상대**를 만나 자신의 문제와 선택에 관한 생각을 꺼낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에 이사도라는 멜모니아궁 뒤쪽에서 **밤의 대화 상대**를 만나 자신의 문제와 선택에 관한 생각을 꺼낸다."
+      },
+      {
+       "t_raw": "상대는 그녀가 처져 보인다고 말하고 도움이 되지 못해 미안하다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상대는 그녀가 처져 보인다고 말하고 도움이 되지 못해 미안하다고 전한다."
+      },
+      {
+       "t_raw": "Isadora는 괜찮다며 고요한 밤하늘 아래에서 이야기하는 것만으로 충분하고 고맙다고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이사도라는 괜찮다며 고요한 밤하늘 아래에서 이야기하는 것만으로 충분하고 고맙다고 답한다."
+      },
+      {
+       "t_raw": "그녀는 규칙을 따르겠다는 마음을 가지면서도 가끔은 이야기할 상대가 있으면 좋겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 규칙을 따르겠다는 마음을 가지면서도 가끔은 이야기할 상대가 있으면 좋겠다고 말한다."
+      },
+      {
+       "t_raw": "낮에는 Jacquetta와 대화하고 밤에는 문제와 선택에 대해 이야기하는 상대가 있다는 점에서, Isadora의 관계 맺음은 시간대에 따라 다른 장면으로 나타난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "낮에는 자퀘타와 대화하고 밤에는 문제와 선택에 대해 이야기하는 상대가 있다는 점에서, 이사도라의 관계 맺음은 시간대에 따라 다른 장면으로 나타난다고 볼 수 있다."
+      },
+      {
+       "t_raw": "마지막에는 상대가 행운을 빌고 Isadora도 같은 인사를 돌려준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마지막에는 상대가 행운을 빌고 이사도라도 같은 인사를 돌려준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences follow A7, A10, A11, A12; the interpretations are reasonable.",
+     "quote": "I'm an auditor here at the Palais. My work is confidential, so I can't really unburden myself of my complaints to anyone.",
+     "sentences": [
+      {
+       "t_raw": "Palais의 감사관인 Isadora는 자신의 업무가 기밀이라 불만을 누군가에게 털어놓을 수 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Palais의 감사관인 이사도라는 자신의 업무가 기밀이라 불만을 누군가에게 털어놓을 수 없다고 말한다."
+      },
+      {
+       "t_raw": "그러면서도 규칙을 따를 생각과 때로는 이야기할 상대를 원하는 마음이 함께 드러나, **기밀 업무**와 대화 욕구가 한 사람 안에서 맞물려 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그러면서도 규칙을 따를 생각과 때로는 이야기할 상대를 원하는 마음이 함께 드러나, **기밀 업무**와 대화 욕구가 한 사람 안에서 맞물려 있는 것으로 보인다."
+      },
+      {
+       "t_raw": "이어 **풀리지 않는 문제**에 대해 어떤 문제들은 해결하기 어려운 운명일 수 있고 모두가 각자의 선택을 해야 한다고 말하며, 원활하지 않은 일들을 받아들이는 방법을 배워야 할지 모른다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 **풀리지 않는 문제**에 대해 어떤 문제들은 해결하기 어려운 운명일 수 있고 모두가 각자의 선택을 해야 한다고 말하며, 원활하지 않은 일들을 받아들이는 방법을 배워야 할지 모른다고 덧붙인다."
+      },
+      {
+       "t_raw": "이는 그녀의 고민이 해결보다 수용 쪽으로 기우는 태도와 연결된다는 해석을 낳는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 그녀의 고민이 해결보다 수용 쪽으로 기우는 태도와 연결된다는 해석을 낳는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Palais"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Facts match A8/A9; the interpretations are hedged and add no new facts.",
+     "quote": "Heh... I'm not sure I'd say that, but at the same time, it's been a while since I last considered myself happy.",
+     "sentences": [
+      {
+       "t_raw": "누군가 그녀에게 '조금 우울해 보인다'고 묻자, Isadora는 그렇게 말할 수 있을지는 모르겠다고 하면서도 자신을 행복하다고 여긴 지 오래되었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "누군가 그녀에게 '조금 우울해 보인다'고 묻자, 이사도라는 그렇게 말할 수 있을지는 모르겠다고 하면서도 자신을 행복하다고 여긴 지 오래되었다고 말한다."
+      },
+      {
+       "t_raw": "이 대답은 **행복**에 대한 그녀의 확신이 흔들리는 것으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 대답은 **행복**에 대한 그녀의 확신이 흔들리는 것으로 읽힌다."
+      },
+      {
+       "t_raw": "행복의 기준과 이유가 무엇인지에 대한 물음은 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "행복의 기준과 이유가 무엇인지에 대한 물음은 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches A2.",
+     "quote": "Following a certain dialogue branch for the first time gives the player four Rainbow Roses.",
+     "sentences": [
+      {
+       "t_raw": "특정 대화 분기를 처음 진행하면 **Rainbow Roses 네 송이**를 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정 대화 분기를 처음 진행하면 **Rainbow Roses 네 송이**를 받는다."
+      },
+      {
+       "t_raw": "이 보상은 대화 분기를 따라갈 때 주어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 보상은 대화 분기를 따라갈 때 주어진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Rainbow Roses"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Daytime and nighttime idle quotes match A3-A6.",
+     "quote": "Maybe try talking to them again?",
+     "sentences": [
+      {
+       "t_raw": "낮에는 상대에게 다시 말을 걸어 보라는 내용의 짧은 대기 대사가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에는 상대에게 다시 말을 걸어 보라는 내용의 짧은 대기 대사가 있다."
+      },
+      {
+       "t_raw": "밤에는 의견 차이를 인정하자는 내용의 짧은 대기 대사가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에는 의견 차이를 인정하자는 내용의 짧은 대기 대사가 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Idle Quotes > Daytime",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Idle Quotes > Daytime",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Idle Quotes > Nighttime",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Idle Quotes > Nighttime",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches A13-A18; the mutual well-wishing is stated.",
+     "quote": "No, it's okay. It is good enough to chat under such a serene night sky. Thank you.",
+     "sentences": [
+      {
+       "t_raw": "도움이 되지 못해 미안하다는 말에 Isadora는 괜찮다며, **고요한 밤하늘** 아래에서 이야기한 것만으로도 충분하다고 고맙다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도움이 되지 못해 미안하다는 말에 이사도라는 괜찮다며, **고요한 밤하늘** 아래에서 이야기한 것만으로도 충분하다고 고맙다고 말한다."
+      },
+      {
+       "t_raw": "이어 **좋은 밤과 좋은 꿈**을 빌고, 서로에게 행운을 빈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 **좋은 밤과 좋은 꿈**을 빌고, 서로에게 행운을 빈다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Isadora",
+       "revision": 1344344,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A18",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

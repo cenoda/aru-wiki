@@ -1,0 +1,838 @@
+{
+ "node": "Chronie",
+ "articles": [
+  {
+   "node": "Chronie",
+   "from_version": "Luna VII",
+   "cutoff": "2026-06-30T00:00:00Z",
+   "input": [
+    {
+     "page": "Chronie",
+     "url": "https://genshin-impact.fandom.com/wiki/Chronie",
+     "revision": 2113657
+    }
+   ],
+   "input_counts": {
+    "mentions": 4,
+    "lines": 25,
+    "web": 0
+   },
+   "input_chars": 254,
+   "input_cut": false,
+   "input_hash": "77da9e5d6b2b",
+   "writer": "glm-flash,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "Sentence 2 adds a claim that Chronie is clever and shakes the researchers' logic, and calls this her appeal. The English only has Nacker saying 'Your rhetoric is simply astound', which does not support that.",
+     "quote": "I'm Chronie, a journalist for the political affairs section of The Steambird.",
+     "sentences": [
+      {
+       "t_raw": "Chronie는 Fontaine Research Institute Chronicles 퀘스트에 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클로니아는 폰타인 과학원 연대기 퀘스트에 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "The Steambird의 정치면 기자로서, Fontaine Research Institute의 사건을 취재하며 여행자와 인연을 맺는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스팀버드의 정치면 기자로서, 폰타인 과학원의 사건을 취재하며 여행자와 인연을 맺는다."
+      },
+      {
+       "t_raw": "Nacker가 'Your rhetoric is simply astound'라고 말한 점에서, Chronie의 화법이 그에게 강한 인상을 준 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "내커가 '당신의 화법은 정말 놀랍다'라고 말한 점에서, 클로니아의 화법이 그에게 강한 인상을 준 것으로 보인다.",
+       "polish": {
+        "from": "내커가 'Your rhetoric is simply astound'라고 말한 점에서, 클로니아의 화법이 그에게 강한 인상을 준 것으로 보인다.",
+        "text": "내커가 '당신의 화법은 정말 놀랍다'라고 말한 점에서, 클로니아의 화법이 그에게 강한 인상을 준 것으로 보인다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chronie",
+       "revision": 2113657,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Steambird",
+       "revision": 1691012,
+       "section": "Lore > Members",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute Dormitories and retrieve the Anchor",
+       "quest_ko": "「과학원 숙소」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Nacker"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "I'm Chronie, a journalist for the political affairs section of The Steambird. If you have time, could we arrange a time to have a chat?",
+     "sentences": [
+      {
+       "t_raw": "Chronie는 Fontaine Research Institute Chronicles에 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클로니아는 폰타인 과학원 연대기에 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "**The Steambird의 정치면 기자**이며, Fontaine Research Institute, Stagnating in the Rubble에서 여행자에게 자신을 소개한 뒤 시간을 내어 이야기를 나누자고 청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**스팀버드의 정치면 기자**이며, 폐허 위에 정체된 폰타인 과학원에서 여행자에게 자신을 소개한 뒤 시간을 내어 이야기를 나누자고 청한다."
+      },
+      {
+       "t_raw": "여행자의 이름을 동료들에게 여러 번 들었다고 말하기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자의 이름을 동료들에게 여러 번 들었다고 말하기도 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chronie",
+       "revision": 2113657,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "After the quest she can be found at Café Lutece, where she can be interacted with once before running off and never showing up again.",
+     "sentences": [
+      {
+       "t_raw": "퀘스트를 마친 뒤 Chronie는 **Café Lutece**에서 한 번 상호작용할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트를 마친 뒤 클로니아는 **Café Lutece**에서 한 번 상호작용할 수 있다."
+      },
+      {
+       "t_raw": "그 뒤에는 모습을 보이지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 뒤에는 모습을 보이지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chronie",
+       "revision": 2113657,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Caf",
+      "Lutece"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation follows from M1 and Q1.",
+     "quote": "I'm Chronie, a journalist for the political affairs section of The Steambird. If you have time, could we arrange a time to have a chat?",
+     "sentences": [
+      {
+       "t_raw": "Chronie는 **The Steambird의 정치면 기자**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클로니아는 **스팀버드의 정치면 기자**다."
+      },
+      {
+       "t_raw": "Fontaine Research Institute, Stagnating in the Rubble에서 그녀는 자신을 The Steambird 정치면의 저널리스트라고 소개하며, 시간이 있으면 대화 일정을 잡자고 청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폐허 위에 정체된 폰타인 과학원에서 그녀는 자신을 스팀버드 정치면의 저널리스트라고 소개하며, 시간이 있으면 대화 일정을 잡자고 청한다."
+      },
+      {
+       "t_raw": "The Steambird의 구성원 명단에도 정치면 기자로 올라 있고 스스로도 같은 직함을 말하는 만큼, 그녀의 취재 영역은 정치면으로 정리된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스팀버드의 구성원 명단에도 정치면 기자로 올라 있고 스스로도 같은 직함을 말하는 만큼, 그녀의 취재 영역은 정치면으로 정리된다고 볼 수 있다."
+      },
+      {
+       "t_raw": "여행자를 만나서는 영광이라 말하고, 동료들에게서 여행자의 이름을 여러 번 들었다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자를 만나서는 영광이라 말하고, 동료들에게서 여행자의 이름을 여러 번 들었다고 밝힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Steambird",
+       "revision": 1691012,
+       "section": "Lore > Members",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Fontaine Research Institute, Stagnating in the Rubble",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "I'm Chronie, a journalist for the political affairs section of The Steambird. If you have time, could we arrange a time to have a chat?",
+     "sentences": [
+      {
+       "t_raw": "Chronie는 자신을 **The Steambird 정치면 기자**라고 소개하며 여행자에게 시간이 되면 이야기 나눌 시간을 정하자고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클로니아는 자신을 **스팀버드 정치면 기자**라고 소개하며 여행자에게 시간이 되면 이야기 나눌 시간을 정하자고 묻는다."
+      },
+      {
+       "t_raw": "여행자의 이름을 동료들에게 여러 번 들었다며 만남을 큰 영광으로 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자의 이름을 동료들에게 여러 번 들었다며 만남을 큰 영광으로 여긴다."
+      },
+      {
+       "t_raw": "Paimon도 함께 오기를 권하고 두 사람의 모험에 관심이 있다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬도 함께 오기를 권하고 두 사람의 모험에 관심이 있다고 덧붙인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      }
+     ],
+     "heading": "작중 행적 — 폐허 위에 정체된 폰타인 과학원",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Fontaine Research Institute, Stagnating in the Rubble",
+     "status": "accepted",
+     "note": "All sentences are supported by Q4, Q10, Q15, Q17, Q19 and Q21.",
+     "quote": "Will the uncontrolled Arkhium radiate energy? Will it contaminate the surrounding environment?",
+     "sentences": [
+      {
+       "t_raw": "Chronie는 오늘 인터뷰 일정을 여행자에게 이미 잡아 두었다며 Paimon과의 대화는 다음으로 미룬다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클로니아는 오늘 인터뷰 일정을 여행자에게 이미 잡아 두었다며 페이몬과의 대화는 다음으로 미룬다."
+      },
+      {
+       "t_raw": "이어서 제어되지 않은 Arkhium이 에너지를 발산하는지, 주변 환경을 오염시키는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 제어되지 않은 아르케 광석이 에너지를 발산하는지, 주변 환경을 오염시키는지 묻는다."
+      },
+      {
+       "t_raw": "Chronie는 누군가가 Fontaine Research Institute가 숨기고 있는 것들을 모두 말해 줄 것인지 묻고, 한쪽은 자신의 일이 있으며 다음 순서가 기다린다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클로니아는 누군가가 폰타인 과학원이 숨기고 있는 것들을 모두 말해 줄 것인지 묻고, 한쪽은 자신의 일이 있으며 다음 순서가 기다린다고 말한다."
+      },
+      {
+       "t_raw": "누군가는 여러 번 말했다며 지금은 Fontaine Research Institute 재건이 유일한 목표라고 하고, Nacker는 Chronie의 질문 방식이 불필요한 오해를 낳았다고 짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "누군가는 여러 번 말했다며 지금은 폰타인 과학원 재건이 유일한 목표라고 하고, 내커는 클로니아의 질문 방식이 불필요한 오해를 낳았다고 짚는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "???"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "???"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Nacker"
+      }
+     ],
+     "heading": "작중 행적 — 폐허 위에 정체된 폰타인 과학원",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Fontaine Research Institute, Stagnating in the Rubble",
+     "status": "accepted",
+     "note": "All sentences follow the quoted lines and M4.",
+     "quote": "So what's next... Whoa! Ms. Chronie, what's gotten into you?",
+     "sentences": [
+      {
+       "t_raw": "사건을 두고 여행자는 Chronie에게 **사건의 진상**을 알리거나 Raimondo가 사건을 덮으려는 시도를 하도록 두는 쪽을 선택할 수 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사건을 두고 여행자는 클로니아에게 **사건의 진상**을 알리거나 레이먼드가 사건을 덮으려는 시도를 하도록 두는 쪽을 선택할 수 있었다."
+      },
+      {
+       "t_raw": "Paimon은 Chronie가 어디에도 보이지 않는다고 말하고, 이어 Chronie에게 무슨 일이 있냐며 놀란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 클로니아가 어디에도 보이지 않는다고 말하고, 이어 클로니아에게 무슨 일이 있냐며 놀란다."
+      },
+      {
+       "t_raw": "Chalmet은 Chronie를 보고 여기서 무엇을 하는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "샬멧은 클로니아를 보고 여기서 무엇을 하는지 묻는다."
+      },
+      {
+       "t_raw": "Chronie를 찾지 못한 데 이은 놀람과 Chalmet의 질문은 Chronie의 등장이 주변에 갑작스럽게 비친 장면으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "클로니아를 찾지 못한 데 이은 놀람과 샬멧의 질문은 클로니아의 등장이 주변에 갑작스럽게 비친 장면으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Nacker",
+       "revision": 1440790,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chalmet"
+      }
+     ],
+     "heading": "작중 행적 — 폐허 위에 정체된 폰타인 과학원",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Survey Anchor 회수",
+     "status": "accepted",
+     "note": "Both supported by Q18 and Q6.",
+     "quote": "I'm curious. Did any of the adventurers who responded to the recruitment come and get this kind of Survey Anchor?",
+     "sentences": [
+      {
+       "t_raw": "Nacker는 Chronie의 질문에 답하는 동안 **Survey Anchor 회수**를 여행자에게 맡긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "내커는 클로니아의 질문에 답하는 동안 **측정 앵커 회수**를 여행자에게 맡긴다."
+      },
+      {
+       "t_raw": "Chronie는 모집에 응한 모험가들이 이런 Survey Anchor를 받으러 왔는지 궁금해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클로니아는 모집에 응한 모험가들이 이런 측정 앵커를 받으러 왔는지 궁금해한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute Dormitories and retrieve the Anchor",
+       "quest_ko": "「과학원 숙소」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Nacker"
+      },
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute of Clockwork Applications and retrieve the Anchor",
+       "quest_ko": "「태엽 응용 연구원」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Chronie"
+      }
+     ],
+     "heading": "작중 행적 — 측정 앵커 회수",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Survey Anchor 회수",
+     "status": "accepted",
+     "note": "Supported by Q2, Q5, Q11, Q14, Q8, Q16 and Q20.",
+     "quote": "Ms. Chronie, your idea of \"resting\" is very different from that of the researchers.",
+     "sentences": [
+      {
+       "t_raw": "Institute Dormitories에 침대가 하나도 없다는 걸 본 Chronie는 연구원들이 어떻게 쉬는지, 의자에서 잠들 수는 없는 것 아니냐고 따지고, 머리를 쉬게 하려는 곳에서 오히려 사고 흐름이 끊기는 것 아니냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "과학원 숙소에 침대가 하나도 없다는 걸 본 클로니아는 연구원들이 어떻게 쉬는지, 의자에서 잠들 수는 없는 것 아니냐고 따지고, 머리를 쉬게 하려는 곳에서 오히려 사고 흐름이 끊기는 것 아니냐고 묻는다."
+      },
+      {
+       "t_raw": "잠이 뇌를 더 쉬게 한다고 되묻고, 잠은 시간 낭비가 아니라 휴식에 꼭 필요하며 잠을 자지 않으면 줄어드는 것은 생명뿐이며 그래도 잠을 자지 않을 이유는 아니라고 맞선다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잠이 뇌를 더 쉬게 한다고 되묻고, 잠은 시간 낭비가 아니라 휴식에 꼭 필요하며 잠을 자지 않으면 줄어드는 것은 생명뿐이며 그래도 잠을 자지 않을 이유는 아니라고 맞선다."
+      },
+      {
+       "t_raw": "Nacker는 Chronie의 **'휴식'** 개념이 연구원들의 것과 아주 다르다고 짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "내커는 클로니아의 **'휴식'** 개념이 연구원들의 것과 아주 다르다고 짚는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute Dormitories and retrieve the Anchor",
+       "quest_ko": "「과학원 숙소」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute Dormitories and retrieve the Anchor",
+       "quest_ko": "「과학원 숙소」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute Dormitories and retrieve the Anchor",
+       "quest_ko": "「과학원 숙소」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute Dormitories and retrieve the Anchor",
+       "quest_ko": "「과학원 숙소」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute Dormitories and retrieve the Anchor",
+       "quest_ko": "「과학원 숙소」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute Dormitories and retrieve the Anchor",
+       "quest_ko": "「과학원 숙소」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Chronie"
+      }
+     ],
+     "heading": "작중 행적 — 측정 앵커 회수",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Survey Anchor 회수",
+     "status": "accepted",
+     "note": "Supported by Q9, Q12 and M2. The interpretation is reasonable.",
+     "quote": "Do you still remember when I was flipping through the pictures Ms. Chronie took in the ruins?",
+     "sentences": [
+      {
+       "t_raw": "Chronie는 Raimondo의 거만한 태도와 자신을 보던 눈빛, Choiseul의 얼버무림을 잊지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클로니아는 레이먼드의 거만한 태도와 자신을 보던 눈빛, 슈아죌의 얼버무림을 잊지 못한다."
+      },
+      {
+       "t_raw": "Raimondo는 폐허에서 Chronie가 찍은 사진들을 넘겨 보던 일을 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "레이먼드는 폐허에서 클로니아가 찍은 사진들을 넘겨 보던 일을 되묻는다."
+      },
+      {
+       "t_raw": "Raimondo에 대한 불만과 별개로 그 사진은 그의 기억에 남은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "레이먼드에 대한 불만과 별개로 그 사진은 그의 기억에 남은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute of Clockwork Applications and retrieve the Anchor",
+       "quest_ko": "「태엽 응용 연구원」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Go to the Institute of Clockwork Applications and retrieve the Anchor",
+       "quest_ko": "「태엽 응용 연구원」에 있는 앵커 회수",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "wiki",
+       "page": "Raimondo",
+       "revision": 1401440,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 측정 앵커 회수",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "M3 and Q15 support it. The interpretation is hedged and reasonable. #1 names a material label; say it without the label.",
+     "quote": "What, is he going to tell me all the things the Fontaine Research Institute is hiding?",
+     "sentences": [
+      {
+       "t_raw": "퀘스트 종료 후에도 Chronie의 이야기는 끝나지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트 종료 후에도 클로니아의 이야기는 끝나지 않는다."
+      },
+      {
+       "t_raw": "퀘스트를 마친 뒤에는 Chronie의 'Special Report(특별 보도)'를 얻을 수 있는 흐름이 이어지지만, 그 내용은 아직 밝혀지지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "퀘스트를 마친 뒤에는 클로니아의 'Special Report(특별 보도)'를 얻을 수 있는 흐름이 이어지지만, 그 내용은 아직 밝혀지지 않았다."
+      },
+      {
+       "t_raw": "퀘스트 도중 그녀가 \"뭐야, 그가 Fontaine Research Institute가 숨기고 있는 것들을 전부 말해주겠다는 건가?\"라며 기대를 감추지 못했던 것을 떠올리면, 그 보도가 연구원의 사건 진상을 다룰 가능성이 짙어 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "퀘스트 도중 그녀가 \"뭐야, 그가 폰타인 과학원이 숨기고 있는 것들을 전부 말해주겠다는 건가?\"라며 기대를 감추지 못했던 것을 떠올리면, 그 보도가 연구원의 사건 진상을 다룰 가능성이 짙어 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sir Arthur",
+       "revision": 1477250,
+       "section": "Dialogue > Dialogue Set #18",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Special Report"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Sentence 2 says the reporter chose between telling the truth and covering up, but M4 says the Traveler makes that choice. Sentence 3 claims a cover-up would have prevented the Special Report, and that the report's existence proves the truth came out. Nothing in the material says this, and the sentence presents it as certain. #1 names a material label; say it without the label.",
+     "quote": "The Traveler could then choose to tell Chronie the truth of the incident or let Raimondo attempt to cover it up.",
+     "sentences": [
+      {
+       "t_raw": "또 하나 풀리지 않은 지점은 사건 진상의 처리 방식이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 하나 풀리지 않은 지점은 사건 진상의 처리 방식이다."
+      },
+      {
+       "t_raw": "여행자는 Chronie에게 사건의 진실을 말해줄 수도 있고, Raimondo가 진상을 덮으려 하도록 내버려 둘 수도 있었다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "여행자는 클로니아에게 사건의 진실을 말해줄 수도 있고, 레이먼드가 진상을 덮으려 하도록 내버려 둘 수도 있었다."
+      },
+      {
+       "t_raw": "여행자가 진실과 은폐 중 어떤 쪽을 택했는지는 자료만으로는 확인할 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "여행자가 진실과 은폐 중 어떤 쪽을 택했는지는 자료만으로는 확인할 수 없다."
+      },
+      {
+       "t_raw": "다만 'Special Report'의 내용이 아직 밝혀지지 않은 점을 보면, 그 보고서의 존재만으로 사건의 진실이 밝혀졌다고 단정하기는 어려운 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "다만 'Special Report'의 내용이 아직 밝혀지지 않은 점을 보면, 그 보고서의 존재만으로 사건의 진실이 밝혀졌다고 단정하기는 어려운 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sir Arthur",
+       "revision": 1477250,
+       "section": "Dialogue > Dialogue Set #18",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Nacker",
+       "revision": 1440790,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Special Report"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by A1. The interpretation (a brief epilogue-like encounter) follows reasonably.",
+     "quote": "After the quest she can be found at Café Lutece, where she can be interacted with once before running off and never showing up again.",
+     "sentences": [
+      {
+       "t_raw": "Chronie는 관련 퀘스트를 마친 뒤 Café Lutece에서 발견할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클로니아는 관련 퀘스트를 마친 뒤 Café Lutece에서 발견할 수 있다."
+      },
+      {
+       "t_raw": "이곳에서 그녀와 한 번 이야기를 나눌 수 있지만, 그 뒤 그녀는 달아나 다시 모습을 드러내지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이곳에서 그녀와 한 번 이야기를 나눌 수 있지만, 그 뒤 그녀는 달아나 다시 모습을 드러내지 않는다."
+      },
+      {
+       "t_raw": "한 번의 대화 뒤 자취를 감춘다는 점에서, Café Lutece에서의 만남은 짧게 끝나는 후일담으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 번의 대화 뒤 자취를 감춘다는 점에서, Café Lutece에서의 만남은 짧게 끝나는 후일담으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chronie",
+       "revision": 2113657,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Caf",
+      "Lutece",
+      "Caf",
+      "Lutece"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation. '잠시' is a minor, acceptable rendering of 'have a chat'.",
+     "t_raw": "저는 The Steambird 정치면 기자 Chronie입니다. 시간이 되신다면, 잠시 이야기 나눌 시간을 정할 수 있을까요?",
+     "en": "I'm Chronie, a journalist for the political affairs section of The Steambird. If you have time, could we arrange a time to have a chat?",
+     "speaker": "Chronie",
+     "source": {
+      "kind": "quest",
+      "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+      "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+      "version": "4.1",
+      "speaker": "Chronie"
+     },
+     "t": "저는 스팀버드 정치면 기자 클로니아입니다. 시간이 되신다면, 잠시 이야기 나눌 시간을 정할 수 있을까요?",
+     "speaker_ko": "클로니아"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of the dialogue line.",
+     "t_raw": "저는 The Steambird의 정치면 저널리스트 Chronie입니다. 시간이 있으시다면, 대화할 시간을 잡을 수 있을까요?",
+     "en": "I'm Chronie, a journalist for the political affairs section of The Steambird. If you have time, could we arrange a time to have a chat?",
+     "speaker": "Chronie",
+     "source": {
+      "kind": "quest",
+      "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+      "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+      "version": "4.1",
+      "speaker": "Chronie"
+     },
+     "t": "저는 스팀버드의 정치면 저널리스트 클로니아입니다. 시간이 있으시다면, 대화할 시간을 잡을 수 있을까요?",
+     "speaker_ko": "클로니아"
+    },
+    {
+     "section": "작중 행적 — Fontaine Research Institute, Stagnating in the Rubble",
+     "status": "accepted",
+     "note": "Faithful translation of the dialogue line.",
+     "t_raw": "저는 The Steambird 정치면 기자 Chronie입니다. 시간이 되신다면, 이야기 나눌 시간을 정할 수 있을까요?",
+     "en": "I'm Chronie, a journalist for the political affairs section of The Steambird. If you have time, could we arrange a time to have a chat?",
+     "speaker": "Chronie",
+     "source": {
+      "kind": "quest",
+      "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+      "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+      "version": "4.1",
+      "speaker": "Chronie"
+     },
+     "t": "저는 스팀버드 정치면 기자 클로니아입니다. 시간이 되신다면, 이야기 나눌 시간을 정할 수 있을까요?",
+     "speaker_ko": "클로니아"
+    },
+    {
+     "section": "작중 행적 — Survey Anchor 회수",
+     "status": "accepted",
+     "note": "Faithful translation of Nacker's line (Q20).",
+     "t_raw": "Chronie 씨, 당신이 생각하는 '휴식'은 연구원들이 생각하는 것과 아주 다릅니다.",
+     "en": "Ms. Chronie, your idea of \"resting\" is very different from that of the researchers.",
+     "speaker": "Nacker",
+     "source": {
+      "kind": "quest",
+      "quest": "Go to the Institute Dormitories and retrieve the Anchor",
+      "quest_ko": "「과학원 숙소」에 있는 앵커 회수",
+      "version": "4.1",
+      "speaker": "Nacker"
+     },
+     "t": "클로니아 씨, 당신이 생각하는 '휴식'은 연구원들이 생각하는 것과 아주 다릅니다.",
+     "speaker_ko": "내커"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Chronie's line (Q15).",
+     "t_raw": "뭐야, 그가 Fontaine Research Institute가 숨기고 있는 것들을 전부 말해주겠다는 건가?",
+     "en": "What, is he going to tell me all the things the Fontaine Research Institute is hiding?",
+     "speaker": "Chronie",
+     "source": {
+      "kind": "quest",
+      "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+      "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+      "version": "4.1",
+      "speaker": "Chronie"
+     },
+     "t": "뭐야, 그가 폰타인 과학원이 숨기고 있는 것들을 전부 말해주겠다는 건가?",
+     "speaker_ko": "클로니아"
+    }
+   ]
+  }
+ ]
+}

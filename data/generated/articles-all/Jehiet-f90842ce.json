@@ -1,0 +1,819 @@
+{
+ "node": "Jehiet",
+ "articles": [
+  {
+   "node": "Jehiet",
+   "from_version": "3.0",
+   "cutoff": "2022-09-27T00:00:00Z",
+   "input": [
+    {
+     "page": "Jehiet",
+     "url": "https://genshin-impact.fandom.com/wiki/Jehiet",
+     "revision": 841941
+    }
+   ],
+   "input_counts": {
+    "mentions": 1,
+    "lines": 7,
+    "web": 0
+   },
+   "input_chars": 2754,
+   "input_cut": false,
+   "input_hash": "b6df613ef372",
+   "writer": "glm-flash,or-ds,qwen",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Once a famous member of The Eremites known as \"The Lioness,\" Jehiet later decided to settle down in Vimara Village.",
+     "sentences": [
+      {
+       "t_raw": "Jehiet는 Sumeru의 Vimara Village에 사는 NPC로, 한때 The Eremites의 유명한 용병 \"The Lioness\"였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "제히엣은 수메르의 비마라 마을에 사는 NPC로, 한때 도금 여단의 유명한 용병 \"암사자\"였다."
+      },
+      {
+       "t_raw": "용병 생활을 접고 마을에 정착한 뒤, 부모에게 버려진 Iotham을 거두어 키우고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "용병 생활을 접고 마을에 정착한 뒤, 부모에게 버려진 이오탐을 거두어 키우고 있다."
+      },
+      {
+       "t_raw": "사막의 혹독한 삶과 마을의 평온한 일상을 동시에 알고 있는 인물이라, 그 대비를 보여주는 존재라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사막의 혹독한 삶과 마을의 평온한 일상을 동시에 알고 있는 인물이라, 그 대비를 보여주는 존재라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Kurash"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The English never says the village is in a forest, so \"숲속 마을\" is an added fact. The claim that shelter is the most important thing even in old age is also stated as certain, and the English does not support it.",
+     "quote": "Once a famous member of The Eremites known as \"The Lioness,\" Jehiet later decided to settle down in Vimara Village.",
+     "sentences": [
+      {
+       "t_raw": "Jehiet는 Sumeru의 Vimara Village에 사는 NPC로, 마을에서 아이 Iotham을 키우고 있는 노파다.",
+       "interp": false,
+       "dropped": false,
+       "t": "제히엣은 수메르의 비마라 마을에 사는 NPC로, 마을에서 아이 이오탐을 키우고 있는 노파다."
+      },
+      {
+       "t_raw": "그녀는 한때 용병 집단 The Eremites의 일원으로, \"The Lioness\"라는 이름으로 유명했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 한때 용병 집단 도금 여단의 일원으로, \"암사자\"라는 이름으로 유명했다."
+      },
+      {
+       "t_raw": "하지만 그런 삶을 접고 Vimara Village에 정착하기로 결심하며, 지금은 조용한 마을 생활을 보내고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하지만 그런 삶을 접고 비마라 마을에 정착하기로 결심하며, 지금은 조용한 마을 생활을 보내고 있다."
+      },
+      {
+       "t_raw": "사막의 혹독한 일교차와 매서운 바람, 뜨거운 태양과 달리 따뜻하고 습한 마을을 훨씬 좋아한다는 것이 그녀의 선택을 잘 보여준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사막의 혹독한 일교차와 매서운 바람, 뜨거운 태양과 달리 따뜻하고 습한 마을을 훨씬 좋아한다는 것이 그녀의 선택을 잘 보여준다."
+      },
+      {
+       "t_raw": "한때 \"The Lioness\"로 이름을 떨친 The Eremites의 용병이 사막 대신 평화로운 Vimara Village에 정착한 것은, 이제는 따뜻하고 습한 곳에서 지내고 싶었기 때문인 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "한때 \"암사자\"로 이름을 떨친 도금 여단의 용병이 사막 대신 평화로운 비마라 마을에 정착한 것은, 이제는 따뜻하고 습한 곳에서 지내고 싶었기 때문인 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Kurash"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Once a famous member of The Eremites known as \"The Lioness,\" Jehiet later decided to settle down in Vimara Village.",
+     "sentences": [
+      {
+       "t_raw": "Jehiet는 한때 The Eremites의 유명한 일원으로 “The Lioness”라고 알려졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "제히엣은 한때 도금 여단의 유명한 일원으로 “암사자”라고 알려졌다."
+      },
+      {
+       "t_raw": "원래 The Eremites의 용병이었던 그는 그러한 생활 방식을 떠나 Vimara Village에서 살기로 결정했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원래 도금 여단의 용병이었던 그는 그러한 생활 방식을 떠나 비마라 마을에서 살기로 결정했다."
+      },
+      {
+       "t_raw": "**The Eremites의 “The Lioness”**라는 과거와 **Vimara Village**에서의 정착은 그가 걸어온 변화의 두 지점을 이룬다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**도금 여단의 “암사자”**라는 과거와 **비마라 마을**에서의 정착은 그가 걸어온 변화의 두 지점을 이룬다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Kurash"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by the English. The interpretation is hedged with \"볼 수 있다\".",
+     "quote": "I didn't care about that when I was young. But now, I prefer places that are warm and humid...",
+     "sentences": [
+      {
+       "t_raw": "Jehiet는 사막의 낮과 밤 온도 차이가 무섭고, 바람이 울부짖으며 태양이 타오른다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "제히엣은 사막의 낮과 밤 온도 차이가 무섭고, 바람이 울부짖으며 태양이 타오른다고 말한다."
+      },
+      {
+       "t_raw": "젊었을 때는 그런 것을 개의치 않았지만, 이제는 따뜻하고 습한 곳을 더 선호한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "젊었을 때는 그런 것을 개의치 않았지만, 이제는 따뜻하고 습한 곳을 더 선호한다."
+      },
+      {
+       "t_raw": "Vimara Village는 사막보다 훨씬 낫다고도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비마라 마을은 사막보다 훨씬 낫다고도 한다."
+      },
+      {
+       "t_raw": "사막 환경에 대한 이러한 인식과 달라진 선호, Vimara Village에 대한 평가를 함께 놓으면, Vimara Village 정착에는 환경 선호의 변화가 자리한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사막 환경에 대한 이러한 인식과 달라진 선호, 비마라 마을에 대한 평가를 함께 놓으면, 비마라 마을 정착에는 환경 선호의 변화가 자리한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Idle Quotes",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Kurash"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Children of Vimara Village",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Hey, it's the visitor Rana brought. Welcome.",
+     "sentences": [
+      {
+       "t_raw": "**Rana가 데려온 손님**을 만난 Jehiet는 그를 환영한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**라나가 데려온 손님**을 만난 제히엣은 그를 환영한다."
+      },
+      {
+       "t_raw": "마을에는 **조용한 삶** 외에 별다른 것이 없다고 말하면서, 발을 뻗고 쉬라고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마을에는 **조용한 삶** 외에 별다른 것이 없다고 말하면서, 발을 뻗고 쉬라고 권한다."
+      },
+      {
+       "t_raw": "그러면서도 다리 위를 뛰는 이를 향해 물에 빠질 수 있다고 외친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서도 다리 위를 뛰는 이를 향해 물에 빠질 수 있다고 외친다."
+      },
+      {
+       "t_raw": "조용한 휴식을 권하는 말과 다리 위를 뛰는 행동을 제지하는 말이 함께 나타나는 점은, 그녀가 말하는 평온함이 위험한 행동을 그냥 두는 것과는 다르다는 뜻으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "조용한 휴식을 권하는 말과 다리 위를 뛰는 행동을 제지하는 말이 함께 나타나는 점은, 그녀가 말하는 평온함이 위험한 행동을 그냥 두는 것과는 다르다는 뜻으로 보인다."
+      },
+      {
+       "t_raw": "Jehiet는 이곳으로 이주하기를 잘했다고 생각한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "제히엣은 이곳으로 이주하기를 잘했다고 생각한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Children of Vimara Village",
+       "quest_ko": "비마라 마을의 아이들",
+       "version": "3.0",
+       "speaker": "Jehiet"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Children of Vimara Village",
+       "quest_ko": "비마라 마을의 아이들",
+       "version": "3.0",
+       "speaker": "Jehiet"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Children of Vimara Village",
+       "quest_ko": "비마라 마을의 아이들",
+       "version": "3.0",
+       "speaker": "Jehiet"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Children of Vimara Village",
+       "quest_ko": "비마라 마을의 아이들",
+       "version": "3.0",
+       "speaker": "Jehiet"
+      }
+     ],
+     "heading": "작중 행적 — 비마라 마을의 아이들",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Children of Vimara Village",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "No, Granny Jehiet and I are both worried. Promise me that you won't run around out there before I figure out what's going on.",
+     "sentences": [
+      {
+       "t_raw": "Rana는 Granny Jehiet과 자신이 둘 다 **걱정**한다고 말하며, 상황을 알아낼 때까지 밖에서 뛰어다니지 말라고 약속을 요구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라나는 Granny Jehiet과 자신이 둘 다 **걱정**한다고 말하며, 상황을 알아낼 때까지 밖에서 뛰어다니지 말라고 약속을 요구한다."
+      },
+      {
+       "t_raw": "Iotham은 Jehiet의 이야기에서 그것들에 관하여 들었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이오탐은 제히엣의 이야기에서 그것들에 관하여 들었다고 말한다."
+      },
+      {
+       "t_raw": "조용한 삶을 권하는 말과 Rana가 전한 Jehiet의 걱정을 함께 보면, 그녀의 관심이 평온한 일상과 위험을 막는 일에 놓여 있음을 엿볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "조용한 삶을 권하는 말과 라나가 전한 제히엣의 걱정을 함께 보면, 그녀의 관심이 평온한 일상과 위험을 막는 일에 놓여 있음을 엿볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Children of Vimara Village",
+       "quest_ko": "비마라 마을의 아이들",
+       "version": "3.0",
+       "speaker": "Rana"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Children of Vimara Village",
+       "quest_ko": "비마라 마을의 아이들",
+       "version": "3.0",
+       "speaker": "Iotham"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Children of Vimara Village",
+       "quest_ko": "비마라 마을의 아이들",
+       "version": "3.0",
+       "speaker": "Jehiet"
+      }
+     ],
+     "heading": "작중 행적 — 비마라 마을의 아이들",
+     "latin_left": [
+      "Granny Jehiet"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All five sentences match the cited lines, including the adoption, the offer to raise him, one more mouth to feed, his character and her wish, and that he admires the guest.",
+     "quote": "It was just one more mouth to feed. How could I watch him starve?",
+     "sentences": [
+      {
+       "t_raw": "Iotham은 Vimara Village에 있던 외국인 부부가 떠날 때 남겨진 아이였고, Jehiet은 그를 입양했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이오탐은 비마라 마을에 있던 외국인 부부가 떠날 때 남겨진 아이였고, 제히엣은 그를 입양했다."
+      },
+      {
+       "t_raw": "Jehiet은 어린 아이를 보며 마음이 아팠고, 부모가 기르고 싶지 않다면 자신이 기르겠다고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "제히엣은 어린 아이를 보며 마음이 아팠고, 부모가 기르고 싶지 않다면 자신이 기르겠다고 했다."
+      },
+      {
+       "t_raw": "입이 하나 늘어나는 일이었지만 그가 굶는 모습을 보고 있을 수 없었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "입이 하나 늘어나는 일이었지만 그가 굶는 모습을 보고 있을 수 없었다고 말한다."
+      },
+      {
+       "t_raw": "Jehiet은 Iotham을 분별 있고 어른을 공경하는 좋은 아이로 여기며, 그가 행복하고 건강하게 자라기를 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "제히엣은 이오탐을 분별 있고 어른을 공경하는 좋은 아이로 여기며, 그가 행복하고 건강하게 자라기를 바란다."
+      },
+      {
+       "t_raw": "Iotham은 손님에 대해 Jehiet에게 많은 이야기를 했고, Jehiet은 그가 손님을 많이 존경한다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이오탐은 손님에 대해 제히엣에게 많은 이야기를 했고, 제히엣은 그가 손님을 많이 존경한다고 전한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Iotham",
+       "revision": 847143,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Jehiet"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A28",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Rana calls her Granny and says they are both worried, then says she worries more about Iotham, who was raised after being abandoned. The reading that both are people she cares about stays hedged.",
+     "quote": "Then there's Iotham. I'm more worried about him. He was raised by Granny Jehiet after being abandoned in the village.",
+     "sentences": [
+      {
+       "t_raw": "Rana는 Jehiet을 할머니라 부르며, 자신과 Jehiet이 둘 다 걱정하고 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라나는 제히엣을 할머니라 부르며, 자신과 제히엣이 둘 다 걱정하고 있다고 말한다."
+      },
+      {
+       "t_raw": "Rana는 Iotham을 더 걱정하며, 그가 마을에서 버려진 뒤 Jehiet에 의해 길러졌다고 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라나는 이오탐을 더 걱정하며, 그가 마을에서 버려진 뒤 제히엣에 의해 길러졌다고 언급한다."
+      },
+      {
+       "t_raw": "Rana가 Jehiet과 함께 걱정을 말하고 Iotham의 양육 경위까지 언급하는 것은, 두 사람 모두 Rana가 신경 쓰는 대상임을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "라나가 제히엣과 함께 걱정을 말하고 이오탐의 양육 경위까지 언급하는 것은, 두 사람 모두 라나가 신경 쓰는 대상임을 보여 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Children of Vimara Village",
+       "quest_ko": "비마라 마을의 아이들",
+       "version": "3.0",
+       "speaker": "Rana"
+      },
+      {
+       "kind": "quest",
+       "quest": "Into the Woods",
+       "quest_ko": "소풍",
+       "version": "3.0",
+       "speaker": "Rana"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The pre-quest set, the post-quest branch, the desert comparison, the diet line, the three shrimp, and the invitation to return are all in the material. The welcome-dialogue reading stays hedged.",
+     "quote": "The Vimara Village's environment is much better than that in the desert. Have some good rest, little guest...",
+     "sentences": [
+      {
+       "t_raw": "Woodland Encounter를 완료하면 Jehiet의 대화에 **새 분기**가 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "숲속의 조우를 완료하면 제히엣의 대화에 **새 분기**가 열린다."
+      },
+      {
+       "t_raw": "완료 전 대화가 따로 있고, 완료 후에는 Vimara Village의 환경이 사막보다 낫다며 쉬어 가라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "완료 전 대화가 따로 있고, 완료 후에는 비마라 마을의 환경이 사막보다 낫다며 쉬어 가라고 말한다."
+      },
+      {
+       "t_raw": "그 분기에서 Jehiet는 아직 성장할 여지가 많다며 건강한 식사를 챙기면 더 강해질 수 있다고 하고, **Delicious Curry Shrimp** 3개를 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 분기에서 제히엣은 아직 성장할 여지가 많다며 건강한 식사를 챙기면 더 강해질 수 있다고 하고, **Delicious Curry Shrimp** 3개를 건넨다."
+      },
+      {
+       "t_raw": "피곤하거나 쉬고 싶으면 Vimara Village로 돌아오라고 하며 Iotham도 반가워할 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "피곤하거나 쉬고 싶으면 비마라 마을로 돌아오라고 하며 이오탐도 반가워할 것이라고 말한다."
+      },
+      {
+       "t_raw": "완료 전후로 대화가 나뉘고 완료 후 새 분기가 열린다는 점에서, 이는 Woodland Encounter를 계기로 손님을 맞이하는 대화가 마련된 것으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "완료 전후로 대화가 나뉘고 완료 후 새 분기가 열린다는 점에서, 이는 숲속의 조우를 계기로 손님을 맞이하는 대화가 마련된 것으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A30",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Delicious Curry Shrimp"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The idle line asks whether the visitor came from somewhere far away. Sentence 0 treats that as already true and adds a separate question about where they came from.",
+     "quote": "Ah! A visitor. Have you come from somewhere far away?",
+     "sentences": [
+      {
+       "t_raw": "대기 중에는 손님인지 묻는 짧은 말을 건네거나, 방문객에게 멀리서 왔는지 물어보곤 한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "대기 중에는 손님인지 묻는 짧은 말을 건네거나, 방문객에게 멀리서 왔는지 물어보곤 한다."
+      },
+      {
+       "t_raw": "Vimara Village 이름을 읊는 대기 대사도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비마라 마을 이름을 읊는 대기 대사도 있다."
+      },
+      {
+       "t_raw": "손님과 방문객을 향한 말이 반복되는 점에서, Jehiet의 대기 대사는 마을을 찾은 이를 맞이하는 성격을 띤다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "손님과 방문객을 향한 말이 반복되는 점에서, 제히엣의 대기 대사는 마을을 찾은 이를 맞이하는 성격을 띤다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Idle Quotes",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Idle Quotes",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jehiet",
+       "revision": 841941,
+       "section": "Idle Quotes",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The line is a faithful rendering of deciding it was right to move here.",
+     "t_raw": "(여기로 이주하기로 한 건 옳은 선택이었어.)",
+     "en": "(I made the right decision to move here.)",
+     "speaker": "Jehiet",
+     "source": {
+      "kind": "quest",
+      "quest": "The Children of Vimara Village",
+      "quest_ko": "비마라 마을의 아이들",
+      "version": "3.0",
+      "speaker": "Jehiet"
+     },
+     "t": "(여기로 이주하기로 한 건 옳은 선택이었어.)",
+     "speaker_ko": "제히엣"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "이사 and 잘한 선택 still faithfully render moving here and the right decision.",
+     "t_raw": "(여기로 이사 오기로 한 건 잘한 선택이었어.)",
+     "en": "(I made the right decision to move here.)",
+     "speaker": "Jehiet",
+     "source": {
+      "kind": "quest",
+      "quest": "The Children of Vimara Village",
+      "quest_ko": "비마라 마을의 아이들",
+      "version": "3.0",
+      "speaker": "Jehiet"
+     },
+     "t": "(여기로 이사 오기로 한 건 잘한 선택이었어.)",
+     "speaker_ko": "제히엣"
+    },
+    {
+     "section": "작중 행적 — The Children of Vimara Village",
+     "status": "accepted",
+     "note": "Faithful translation of Q3.",
+     "t_raw": "이봐, Rana가 데려온 손님이네. 환영해.",
+     "en": "Hey, it's the visitor Rana brought. Welcome.",
+     "speaker": "Jehiet",
+     "source": {
+      "kind": "quest",
+      "quest": "The Children of Vimara Village",
+      "quest_ko": "비마라 마을의 아이들",
+      "version": "3.0",
+      "speaker": "Jehiet"
+     },
+     "t": "이봐, 라나가 데려온 손님이네. 환영해.",
+     "speaker_ko": "제히엣"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation of Rana's line (Q6).",
+     "t_raw": "그다음은 Iotham이야. 나는 그 애가 더 걱정이야. 그는 마을에서 버려진 뒤 Jehiet 할머니에 의해 자랐어.",
+     "en": "Then there's Iotham. I'm more worried about him. He was raised by Granny Jehiet after being abandoned in the village.",
+     "speaker": "Rana",
+     "source": {
+      "kind": "quest",
+      "quest": "Into the Woods",
+      "quest_ko": "소풍",
+      "version": "3.0",
+      "speaker": "Rana"
+     },
+     "t": "그다음은 이오탐이야. 나는 그 애가 더 걱정이야. 그는 마을에서 버려진 뒤 제히엣 할머니에 의해 자랐어.",
+     "speaker_ko": "라나"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Q4.",
+     "t_raw": "(여기로 이사 오기로 한 것은 옳은 결정이었다.)",
+     "en": "(I made the right decision to move here.)",
+     "speaker": "Jehiet",
+     "source": {
+      "kind": "quest",
+      "quest": "The Children of Vimara Village",
+      "quest_ko": "비마라 마을의 아이들",
+      "version": "3.0",
+      "speaker": "Jehiet"
+     },
+     "t": "(여기로 이사 오기로 한 것은 옳은 결정이었다.)",
+     "speaker_ko": "제히엣"
+    }
+   ]
+  }
+ ]
+}

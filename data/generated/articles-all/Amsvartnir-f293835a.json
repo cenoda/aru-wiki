@@ -21,40 +21,40 @@
    "input_cut": false,
    "input_hash": "0e4b5239207a",
    "writer": "or-ds",
-   "verifier": "codex-medium",
-   "status": "needs_verify",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Trouble had been brewing there, so before the Traveler arrived in Nasha Town, Varka took his knights to investigate.",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, M1, Q1 and A2.",
+     "quote": "Lake Amsvartnir is a lake located at the northern reaches of Nod-Krai.",
      "sentences": [
       {
-       "t_raw": "**Amsvartnir**는 Nod-Krai의 북부 변경에 있는 호수다.",
+       "t_raw": "Amsvartnir는 Nod-Krai 북부에 있는 호수로, 주변에 문제가 일고 있어 Varka가 기사들을 이끌고 조사에 나선 장소다.",
        "interp": false,
        "dropped": false,
-       "t": "**암스바르트니르 호수**는 노드크라이의 북부 변경에 있는 호수다."
+       "t": "암스바르트니르 호수는 노드크라이 북부에 있는 호수로, 주변에 문제가 일고 있어 바르카가 기사들을 이끌고 조사에 나선 장소다."
       },
       {
-       "t_raw": "주변에 소동이 일고 있어 Traveler가 Nasha Town에 도착하기 전 Varka가 기사들을 이끌고 조사하러 갔고, 성공적으로 돌아온 뒤에는 Rerir를 뒤쫓았다.",
+       "t_raw": "Traveler와 Paimon이 Nod-Krai에 와 Flagship에서 Varka를 만나려 했을 때 그는 없었고, Demyan은 Varka가 Amsvartnir 근처로 갔으며 그곳이 꽤 멀다고 전했다.",
        "interp": false,
        "dropped": false,
-       "t": "주변에 소동이 일고 있어 여행자가 나샤 마을에 도착하기 전 바르카가 기사들을 이끌고 조사하러 갔고, 성공적으로 돌아온 뒤에는 레리르를 뒤쫓았다."
+       "t": "여행자와 페이몬이 노드크라이에 와 기함에서 바르카를 만나려 했을 때 그는 없었고, 데미얀은 바르카가 암스바르트니르 호수 근처로 갔으며 그곳이 꽤 멀다고 전했다."
       },
       {
-       "t_raw": "이 호수는 고대 궁전 폐허 너머 황야 끝에 자리하며, **Seelie의 왕실 궁정**은 낮 동안 필멸자의 눈에 가려져 있고, 신성한 숲에서 황금 가지를 꺾은 자가 그곳을 찾는다고 한다.",
+       "t_raw": "Varka는 성공적으로 돌아온 뒤 Starsand Shoal 근처 동굴에서 Rerir를 뒤쫓았고, Rerir는 그의 존재를 감지해 모습을 드러내라고 요구했다.",
        "interp": false,
        "dropped": false,
-       "t": "이 호수는 고대 궁전 폐허 너머 황야 끝에 자리하며, **선령의 왕실 궁정**은 낮 동안 필멸자의 눈에 가려져 있고, 신성한 숲에서 황금 가지를 꺾은 자가 그곳을 찾는다고 한다."
+       "t": "바르카는 성공적으로 돌아온 뒤 별모래 해변 근처 동굴에서 레리르를 뒤쫓았고, 레리르는 그의 존재를 감지해 모습을 드러내라고 요구했다."
       },
       {
-       "t_raw": "이처럼 소동의 현장이자 Seelie의 궁정을 찾는 이야기가 놓인 곳이라는 두 성격이 겹쳐, Amsvartnir는 Nod-Krai 북부의 **조사와 전승이 맞물리는 장소**로 보인다.",
-       "interp": true,
+       "t_raw": "Amsvartnir에는 신성한 숲이 있고, 그 숲에서 황금 가지를 꺾는 자가 낮 동안 필멸자의 눈에 숨겨진 Seelie의 왕실을 찾는다는 설명이 붙어 있다.",
+       "interp": false,
        "dropped": false,
-       "t": "이처럼 소동의 현장이자 선령의 궁정을 찾는 이야기가 놓인 곳이라는 두 성격이 겹쳐, 암스바르트니르 호수는 노드크라이 북부의 **조사와 전승이 맞물리는 장소**로 보인다."
+       "t": "암스바르트니르 호수에는 신성한 숲이 있고, 그 숲에서 황금 가지를 꺾는 자가 낮 동안 필멸자의 눈에 숨겨진 선령의 왕실을 찾는다는 설명이 붙어 있다."
       }
      ],
      "sources": [
@@ -73,6 +73,21 @@
       },
       {
        "kind": "wiki",
+       "page": "Varka",
+       "revision": 1862840,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Moon Rises",
+       "quest_ko": "달이 떠오르는 곳",
+       "version": "Luna I",
+       "speaker": "Demyan"
+      },
+      {
+       "kind": "wiki",
        "page": "Amsvartnir",
        "revision": 1865691,
        "section": null,
@@ -83,14 +98,6 @@
          "name": "Etherlight Spindlelute"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Varka",
-       "revision": 1862840,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
       }
      ],
      "heading": null,
@@ -98,27 +105,21 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Trouble had been brewing there, so before the Traveler arrived in Nasha Town, Varka took his knights to investigate.",
+     "status": "accepted",
+     "note": "Matches A1.",
+     "quote": "Lake Amsvartnir is a lake located at the northern reaches of Nod-Krai.",
      "sentences": [
       {
-       "t_raw": "**Amsvartnir는 Nod-Krai 북부의 호수**다.",
+       "t_raw": "Amsvartnir는 **Nod-Krai 북부**에 위치한 호수다.",
        "interp": false,
        "dropped": false,
-       "t": "**암스바르트니르 호수는 노드크라이 북부의 호수**다."
+       "t": "암스바르트니르 호수는 **노드크라이 북부**에 위치한 호수다."
       },
       {
-       "t_raw": "그곳에는 소동이 일고 있었고, Traveler가 Nasha Town에 닿기 전에 Varka가 기사들을 이끌고 **조사에 나섰다**.",
+       "t_raw": "그곳에서는 문제가 일어나고 있었고, Traveler가 Nasha Town에 도착하기 전에 Varka는 기사들을 이끌고 **조사에 나섰다**.",
        "interp": false,
        "dropped": false,
-       "t": "그곳에는 소동이 일고 있었고, 여행자가 나샤 마을에 닿기 전에 바르카가 기사들을 이끌고 **조사에 나섰다**."
-      },
-      {
-       "t_raw": "이는 Amsvartnir의 소동이 Traveler의 도착 이전부터 Varka의 조사로 이어진 사안임을 보여 주는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 암스바르트니르 호수의 소동이 여행자의 도착 이전부터 바르카의 조사로 이어진 사안임을 보여 주는 셈이다."
+       "t": "그곳에서는 문제가 일어나고 있었고, 여행자가 나샤 마을에 도착하기 전에 바르카는 기사들을 이끌고 **조사에 나섰다**."
       }
      ],
      "sources": [
@@ -141,21 +142,27 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "he was not present and were told by the tavern's bartender, Demyan, that Varka took his knights to Amsvartnir after learning of some trouble stirring in the area.",
+     "status": "accepted",
+     "note": "Facts match M1 and Q1. The interpretation follows reasonably.",
+     "quote": "Varka took his knights to Amsvartnir after learning of some trouble stirring in the area.",
      "sentences": [
       {
-       "t_raw": "Traveler와 Paimon이 Nod-Krai에 도착한 뒤 Flagship에서 Varka를 만나려 했을 때, 그는 그 자리에 없었다.",
+       "t_raw": "Traveler와 Paimon이 Nod-Krai에 도착해 Flagship에서 Varka를 만나려 했을 때, Varka는 그 자리에 없었다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자와 페이몬이 노드크라이에 도착한 뒤 기함에서 바르카를 만나려 했을 때, 그는 그 자리에 없었다."
+       "t": "여행자와 페이몬이 노드크라이에 도착해 기함에서 바르카를 만나려 했을 때, 바르카는 그 자리에 없었다."
       },
       {
-       "t_raw": "술집 주인 Demyan은 Varka가 그 일대에 소동이 일고 있다는 것을 알고 Amsvartnir로 기사들을 데려갔다고 전했다.",
+       "t_raw": "술집의 바텐더 Demyan은 Varka가 그 지역에서 문제가 일어난 것을 알고 기사들을 Amsvartnir로 데려갔다고 전했으며, Amsvartnir가 여기서 **꽤 먼 곳**이라고 말했다.",
        "interp": false,
        "dropped": false,
-       "t": "술집 주인 데미얀은 바르카가 그 일대에 소동이 일고 있다는 것을 알고 암스바르트니르 호수로 기사들을 데려갔다고 전했다."
+       "t": "술집의 바텐더 데미얀은 바르카가 그 지역에서 문제가 일어난 것을 알고 기사들을 암스바르트니르 호수로 데려갔다고 전했으며, 암스바르트니르 호수가 여기서 **꽤 먼 곳**이라고 말했다."
+      },
+      {
+       "t_raw": "그래서 Traveler 일행이 Varka를 찾지 못한 일은 Varka가 Amsvartnir로 향한 일과 맞물려 있었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 여행자 일행이 바르카를 찾지 못한 일은 바르카가 암스바르트니르 호수로 향한 일과 맞물려 있었던 셈이다."
       }
      ],
      "sources": [
@@ -166,23 +173,80 @@
        "section": "Profile",
        "paragraph": "M1",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Moon Rises",
+       "quest_ko": "달이 떠오르는 곳",
+       "version": "Luna I",
+       "speaker": "Demyan"
       }
      ],
      "heading": "개요",
      "latin_left": []
     },
     {
-     "section": "위치와 접근",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "beyond the ruins of the ancient palace and on the edge of the wasteland.",
+     "section": "위치와 전설",
+     "status": "accepted",
+     "note": "Facts match A1 and A2. The interpretation is hedged and reasonable.",
+     "quote": "The location of the lake is described as \"beyond the ruins of the ancient palace and on the edge of the wasteland.\"",
      "sentences": [
       {
-       "t_raw": "Amsvartnir는 **고대 궁전 폐허 너머 황야 끝**에 있는 호수로 설명된다.",
+       "t_raw": "Amsvartnir는 Nod-Krai 북부에 자리한 호수다.",
        "interp": false,
        "dropped": false,
-       "t": "암스바르트니르 호수는 **고대 궁전 폐허 너머 황야 끝**에 있는 호수로 설명된다."
+       "t": "암스바르트니르 호수는 노드크라이 북부에 자리한 호수다."
       },
+      {
+       "t_raw": "호수의 위치는 고대 궁전 폐허 너머, 황무지 끝으로 설명된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호수의 위치는 고대 궁전 폐허 너머, 황무지 끝으로 설명된다."
+      },
+      {
+       "t_raw": "북부라는 큰 위치와 폐허·황무지라는 경계의 이미지가 겹쳐, 이곳이 변방의 호수로 그려진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "북부라는 큰 위치와 폐허·황무지라는 경계의 이미지가 겹쳐, 이곳이 변방의 호수로 그려진다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Amsvartnir",
+       "revision": 1865691,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Where the Moon Rises"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Amsvartnir",
+       "revision": 1865691,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Etherlight Spindlelute"
+        }
+       ]
+      }
+     ],
+     "heading": "위치와 전설",
+     "latin_left": []
+    },
+    {
+     "section": "위치와 전설",
+     "status": "accepted",
+     "note": "Matches A2. The interpretation is a fair reading.",
+     "quote": "The lake has a sacred forest, where \"whoever breaks the golden branch in the forest will find the royal court of the Seelie, which is concealed from mortal eyes during the day.\"",
+     "sentences": [
       {
        "t_raw": "호수에는 신성한 숲이 있다.",
        "interp": false,
@@ -190,16 +254,16 @@
        "t": "호수에는 신성한 숲이 있다."
       },
       {
-       "t_raw": "Demyan은 Amsvartnir가 지금쯤 어딘가에 있겠다면서도 여기서 **꽤 먼 곳**이라고 말한다.",
+       "t_raw": "숲에 대해서는 숲에서 **황금 가지**를 꺾는 자가 낮 동안 필멸자의 눈에 감춰진 **Seelie의 왕실**을 찾게 된다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "데미얀은 암스바르트니르 호수가 지금쯤 어딘가에 있겠다면서도 여기서 **꽤 먼 곳**이라고 말한다."
+       "t": "숲에 대해서는 숲에서 **황금 가지**를 꺾는 자가 낮 동안 필멸자의 눈에 감춰진 **선령의 왕실**을 찾게 된다고 한다."
       },
       {
-       "t_raw": "고대 궁전 폐허 너머 황야 끝이라는 설명과 Demyan이 꽤 멀다고 한 말을 함께 보면, Amsvartnir는 폐허와 황야 너머의 먼 호수로 보인다.",
+       "t_raw": "낮 동안 감춰져 있다는 표현은 왕실이 낮에는 눈에 보이지 않는 곳에 있다는 뜻으로 읽힌다.",
        "interp": true,
        "dropped": false,
-       "t": "고대 궁전 폐허 너머 황야 끝이라는 설명과 데미얀이 꽤 멀다고 한 말을 함께 보면, 암스바르트니르 호수는 폐허와 황야 너머의 먼 호수로 보인다."
+       "t": "낮 동안 감춰져 있다는 표현은 왕실이 낮에는 눈에 보이지 않는 곳에 있다는 뜻으로 읽힌다."
       }
      ],
      "sources": [
@@ -215,6 +279,57 @@
          "name": "Etherlight Spindlelute"
         }
        ]
+      }
+     ],
+     "heading": "위치와 전설",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Nod-Krai",
+     "status": "accepted",
+     "note": "Supported by M1, Q1 and A1.",
+     "quote": "When the Traveler and Paimon arrived at Nod-Krai, they went to the Flagship to meet up with Varka, but to their surprise, he was not present",
+     "sentences": [
+      {
+       "t_raw": "Traveler와 Paimon이 Nod-Krai에 도착해 Flagship에서 **Varka**를 만나려 했지만, Varka는 없었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬이 노드크라이에 도착해 기함에서 **바르카**를 만나려 했지만, 바르카는 없었다."
+      },
+      {
+       "t_raw": "바텐더 Demyan은 Varka가 **Amsvartnir** 근처의 문제를 듣고 기사들을 이끌고 조사하러 갔으며, 그곳은 여기서 꽤 멀다고 전했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바텐더 데미얀은 바르카가 **암스바르트니르 호수** 근처의 문제를 듣고 기사들을 이끌고 조사하러 갔으며, 그곳은 여기서 꽤 멀다고 전했다."
+      },
+      {
+       "t_raw": "그 문제는 Traveler가 Nasha Town에 도착하기 전부터 일고 있었고, Varka는 그 전에 기사들을 데리고 조사에 나섰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 문제는 여행자가 나샤 마을에 도착하기 전부터 일고 있었고, 바르카는 그 전에 기사들을 데리고 조사에 나섰다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Amsvartnir",
+       "revision": 1865691,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Where the Moon Rises"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 1862840,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
       },
       {
        "kind": "quest",
@@ -224,89 +339,32 @@
        "speaker": "Demyan"
       }
      ],
-     "heading": "위치와 접근",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Nod-Krai",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Trouble had been brewing there, so before the Traveler arrived in Nasha Town, Varka took his knights to investigate.",
-     "sentences": [
-      {
-       "t_raw": "Traveler와 Paimon이 Nod-Krai에 도착해 Flagship에서 Varka를 만나려 했지만, Varka는 자리에 없었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자와 페이몬이 노드크라이에 도착해 기함에서 바르카를 만나려 했지만, 바르카는 자리에 없었다."
-      },
-      {
-       "t_raw": "술집 바텐더 Demyan은 Varka가 Amsvartnir 일대 소동을 알고, Traveler가 Nasha Town에 닿기 전 **기사들을 이끌고 Amsvartnir로 향했다**고 전했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "술집 바텐더 데미얀은 바르카가 암스바르트니르 호수 일대 소동을 알고, 여행자가 나샤 마을에 닿기 전 **기사들을 이끌고 암스바르트니르 호수로 향했다**고 전했다."
-      },
-      {
-       "t_raw": "Traveler가 Varka를 만나려 한 시점에는 Varka가 Amsvartnir 조사에 나가 있었던 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "여행자가 바르카를 만나려 한 시점에는 바르카가 암스바르트니르 호수 조사에 나가 있었던 셈이다."
-      },
-      {
-       "t_raw": "Varka와 기사들은 **성공적으로 돌아왔다**.",
-       "interp": false,
-       "dropped": false,
-       "t": "바르카와 기사들은 **성공적으로 돌아왔다**."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Amsvartnir",
-       "revision": 1865691,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Where the Moon Rises"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Varka",
-       "revision": 1862840,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
      "heading": "작중 행적 — 노드크라이",
      "latin_left": []
     },
     {
      "section": "작중 행적 — Nod-Krai",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences follow M1; the interpretation in (2) is reasonable.",
      "quote": "They returned with success and Varka later tailed Rerir at a cavern near Starsand Shoal.",
      "sentences": [
       {
-       "t_raw": "성공적으로 돌아온 뒤 Varka는 Starsand Shoal 근처 동굴에서 Rerir를 뒤쫓았다.",
+       "t_raw": "Varka와 기사들은 성공적으로 돌아왔고, 그 뒤 Varka는 Starsand Shoal 근처 동굴에서 **Rerir**를 뒤쫓았다.",
        "interp": false,
        "dropped": false,
-       "t": "성공적으로 돌아온 뒤 바르카는 별모래 해변 근처 동굴에서 레리르를 뒤쫓았다."
+       "t": "바르카와 기사들은 성공적으로 돌아왔고, 그 뒤 바르카는 별모래 해변 근처 동굴에서 **레리르**를 뒤쫓았다."
       },
       {
-       "t_raw": "Rerir는 Varka의 기척을 느끼고 모습을 드러내라고 요구했으며, Varka는 그 요구에 응했다.",
+       "t_raw": "Rerir는 Varka의 기척을 느끼고 모습을 드러내라고 요구했으며, Varka는 그에 응해 모습을 드러냈다.",
        "interp": false,
        "dropped": false,
-       "t": "레리르는 바르카의 기척을 느끼고 모습을 드러내라고 요구했으며, 바르카는 그 요구에 응했다."
+       "t": "레리르는 바르카의 기척을 느끼고 모습을 드러내라고 요구했으며, 바르카는 그에 응해 모습을 드러냈다."
       },
       {
-       "t_raw": "Amsvartnir 조사로 자리를 비운 사이 Traveler의 방문은 빗나갔고, 조사가 끝난 뒤에는 Rerir 추적이 이어졌다고 볼 수 있다.",
+       "t_raw": "Amsvartnir로 향한 일은 성공으로 끝났지만, 이후 Rerir 추적이 이어졌으니 사건의 무게가 옮겨간 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "암스바르트니르 호수 조사로 자리를 비운 사이 여행자의 방문은 빗나갔고, 조사가 끝난 뒤에는 레리르 추적이 이어졌다고 볼 수 있다."
+       "t": "암스바르트니르 호수로 향한 일은 성공으로 끝났지만, 이후 레리르 추적이 이어졌으니 사건의 무게가 옮겨간 셈이다."
       }
      ],
      "sources": [
@@ -323,71 +381,34 @@
      "latin_left": []
     },
     {
-     "section": "전승 — Seelie의 왕실 궁정",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "whoever breaks the golden branch in the forest will find the royal court of the Seelie, which is concealed from mortal eyes during the day.",
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by A1, M1 and Q1; the interpretation is fine.",
+     "quote": "Right now... Hmm... Must be somewhere near Amsvartnir. That's... quite far from here.",
      "sentences": [
       {
-       "t_raw": "Amsvartnir에는 신성한 숲이 있고, 그 숲의 **황금 가지**를 꺾는 자는 낮 동안 필멸자의 눈에 가려진 **Seelie의 왕실 궁정**을 찾게 된다는 전승이 있다.",
+       "t_raw": "Amsvartnir에 문제가 일고 있다는 정보를 접한 Varka는 기사들을 이끌고 조사에 나섰고, 이는 Traveler가 Nasha Town에 도착하기 전의 일이었다.",
        "interp": false,
        "dropped": false,
-       "t": "암스바르트니르 호수에는 신성한 숲이 있고, 그 숲의 **황금 가지**를 꺾는 자는 낮 동안 필멸자의 눈에 가려진 **선령의 왕실 궁정**을 찾게 된다는 전승이 있다."
+       "t": "암스바르트니르 호수에 문제가 일고 있다는 정보를 접한 바르카는 기사들을 이끌고 조사에 나섰고, 이는 여행자가 나샤 마을에 도착하기 전의 일이었다."
       },
       {
-       "t_raw": "궁정이 낮의 시선에서 가려지는데도 황금 가지를 꺾은 자가 그 궁정을 찾는다는 점에서, 이 전승은 가려진 곳에 이르는 조건으로 황금 가지를 내세우는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "궁정이 낮의 시선에서 가려지는데도 황금 가지를 꺾은 자가 그 궁정을 찾는다는 점에서, 이 전승은 가려진 곳에 이르는 조건으로 황금 가지를 내세우는 셈이다."
-      },
-      {
-       "t_raw": "그래서 황금 가지는 숲에 놓인 물건을 넘어, 낮 동안 숨은 Seelie의 왕실 궁정을 찾아가게 하는 실마리처럼 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그래서 황금 가지는 숲에 놓인 물건을 넘어, 낮 동안 숨은 선령의 왕실 궁정을 찾아가게 하는 실마리처럼 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Amsvartnir",
-       "revision": 1865691,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Etherlight Spindlelute"
-        }
-       ]
-      }
-     ],
-     "heading": "전승 — 선령의 왕실 궁정",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Trouble had been brewing there, so before the Traveler arrived in Nasha Town, Varka took his knights to investigate.",
-     "sentences": [
-      {
-       "t_raw": "Amsvartnir에서 소동이 벌어지고 있었고, Traveler가 Nasha Town에 닿기 전 Varka는 기사들을 이끌고 조사에 나섰다.",
+       "t_raw": "Traveler와 Paimon은 Nod-Krai에 도착한 뒤 Flagship에서 Varka를 만나려 했지만 그가 없어, 바텐더 Demyan에게서 Varka가 Amsvartnir로 기사들을 데리고 갔다는 말을 들었다.",
        "interp": false,
        "dropped": false,
-       "t": "암스바르트니르 호수에서 소동이 벌어지고 있었고, 여행자가 나샤 마을에 닿기 전 바르카는 기사들을 이끌고 조사에 나섰다."
+       "t": "여행자와 페이몬은 노드크라이에 도착한 뒤 기함에서 바르카를 만나려 했지만 그가 없어, 바텐더 데미얀에게서 바르카가 암스바르트니르 호수로 기사들을 데리고 갔다는 말을 들었다."
       },
       {
-       "t_raw": "기사들은 성공적으로 돌아왔고, Varka는 이후 Starsand Shoal 근처 동굴에서 Rerir를 뒤쫓았다.",
+       "t_raw": "Demyan은 Amsvartnir가 여기서 꽤 먼 곳이라고도 언급했다.",
        "interp": false,
        "dropped": false,
-       "t": "기사들은 성공적으로 돌아왔고, 바르카는 이후 별모래 해변 근처 동굴에서 레리르를 뒤쫓았다."
+       "t": "데미얀은 암스바르트니르 호수가 여기서 꽤 먼 곳이라고도 언급했다."
       },
       {
-       "t_raw": "소동의 구체적 내용은 **남은 물음**으로 남는다.",
+       "t_raw": "Amsvartnir 조사는 Varka가 자리를 비운 사이 Traveler 일행이 Demyan을 통해 알게 된 행보인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "소동의 구체적 내용은 **남은 물음**으로 남는다."
+       "t": "암스바르트니르 호수 조사는 바르카가 자리를 비운 사이 여행자 일행이 데미얀을 통해 알게 된 행보인 셈이다."
       }
      ],
      "sources": [
@@ -411,28 +432,79 @@
        "section": "Profile",
        "paragraph": "M1",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Moon Rises",
+       "quest_ko": "달이 떠오르는 곳",
+       "version": "Luna I",
+       "speaker": "Demyan"
       }
      ],
-     "heading": "떡밥과 수수께끼",
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M1; the interpretation is hedged and reasonable.",
+     "quote": "They returned with success and Varka later tailed Rerir at a cavern near Starsand Shoal.",
+     "sentences": [
+      {
+       "t_raw": "Varka와 기사들은 Amsvartnir에서 성공을 거두고 돌아왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바르카와 기사들은 암스바르트니르 호수에서 성공을 거두고 돌아왔다."
+      },
+      {
+       "t_raw": "이후 Varka는 Starsand Shoal 근처 동굴에서 Rerir를 뒤따랐고, Rerir는 Varka의 존재를 감지해 상대에게 모습을 드러내라고 요구했으며 Varka가 그렇게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 바르카는 별모래 해변 근처 동굴에서 레리르를 뒤따랐고, 레리르는 바르카의 존재를 감지해 상대에게 모습을 드러내라고 요구했으며 바르카가 그렇게 했다."
+      },
+      {
+       "t_raw": "Amsvartnir에서 성공을 거둔 뒤 Varka가 Rerir를 뒤따랐다는 점에서, Amsvartnir 조사 이후 그의 행보는 Rerir 추적으로 이어지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "암스바르트니르 호수에서 성공을 거둔 뒤 바르카가 레리르를 뒤따랐다는 점에서, 암스바르트니르 호수 조사 이후 그의 행보는 레리르 추적으로 이어지는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 1862840,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
      "latin_left": []
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "whoever breaks the golden branch in the forest will find the royal court of the Seelie, which is concealed from mortal eyes during the day.",
+     "status": "accepted",
+     "note": "The legend is stated in A2; the interpretation adds no new fact.",
+     "quote": "The lake has a sacred forest, where \"whoever breaks the golden branch in the forest will find the royal court of the Seelie, which is concealed from mortal eyes during the day.\"",
      "sentences": [
       {
-       "t_raw": "Amsvartnir의 신성한 숲에는 황금 가지를 꺾은 자가 낮 동안 필멸자의 눈에 가려진 **Seelie의 왕실 궁정**을 찾는다는 전승이 있다.",
+       "t_raw": "Lake Amsvartnir의 신성한 숲에는 **황금 가지**를 꺾은 자가 **Seelie의 왕실**을 찾게 된다는 전설이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "암스바르트니르 호수의 신성한 숲에는 황금 가지를 꺾은 자가 낮 동안 필멸자의 눈에 가려진 **선령의 왕실 궁정**을 찾는다는 전승이 있다."
+       "t": "Lake Amsvartnir의 신성한 숲에는 **황금 가지**를 꺾은 자가 **선령의 왕실**을 찾게 된다는 전설이 있다."
       },
       {
-       "t_raw": "소동이 벌어진 호수와 이 전승이 같은 Amsvartnir에 놓인다는 점은, 호수의 사건을 전승과 함께 읽게 만든다.",
+       "t_raw": "그 왕실은 낮 동안 필멸자의 눈에 감춰져 있다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 왕실은 낮 동안 필멸자의 눈에 감춰져 있다고 전한다."
+      },
+      {
+       "t_raw": "황금 가지를 꺾는 조건과 낮 동안의 은폐가 함께 놓인다는 점에서, 이 전설은 왕실을 찾는 일이 그 감춤을 넘어서는 문제와 맞닿아 있다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "소동이 벌어진 호수와 이 전승이 같은 암스바르트니르 호수에 놓인다는 점은, 호수의 사건을 전승과 함께 읽게 만든다."
+       "t": "황금 가지를 꺾는 조건과 낮 동안의 은폐가 함께 놓인다는 점에서, 이 전설은 왕실을 찾는 일이 그 감춤을 넘어서는 문제와 맞닿아 있다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -464,41 +536,36 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": []
+     "latin_left": [
+      "Lake Amsvartnir"
+     ]
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "They returned with success and Varka later tailed Rerir at a cavern near Starsand Shoal.",
+     "status": "accepted",
+     "note": "Facts match A2; the interpretations are hedged readings and add no new facts.",
+     "quote": "whoever breaks the golden branch in the forest will find the royal court of the Seelie, which is concealed from mortal eyes during the day.",
      "sentences": [
       {
-       "t_raw": "소동이 신성한 숲이나 황금 가지 전승과 어떻게 맞물리는지는 **수수께끼**라고 볼 수 있다.",
-       "interp": true,
+       "t_raw": "호수에는 신성한 숲이 있고, 전설은 그 숲에서 황금 가지를 꺾는 행위를 왕실을 찾는 조건으로 든다.",
+       "interp": false,
        "dropped": false,
-       "t": "소동이 신성한 숲이나 황금 가지 전승과 어떻게 맞물리는지는 **수수께끼**라고 볼 수 있다."
+       "t": "호수에는 신성한 숲이 있고, 전설은 그 숲에서 황금 가지를 꺾는 행위를 왕실을 찾는 조건으로 든다."
       },
       {
-       "t_raw": "Varka가 조사에서 무엇을 확인했고, 성공적으로 돌아온 뒤 Rerir를 뒤쫓은 일이 전승과 어떤 관련이 있는지도 남은 물음이라고 볼 수 있다.",
+       "t_raw": "따라서 전설이 가리키는 탐색의 실마리는 호수의 숲과 낮이라는 시간 조건에 함께 묶여 있다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "바르카가 조사에서 무엇을 확인했고, 성공적으로 돌아온 뒤 레리르를 뒤쫓은 일이 전승과 어떤 관련이 있는지도 남은 물음이라고 볼 수 있다."
+       "t": "따라서 전설이 가리키는 탐색의 실마리는 호수의 숲과 낮이라는 시간 조건에 함께 묶여 있다고 볼 수 있다."
+      },
+      {
+       "t_raw": "**낮 동안** 감춰진다는 표현은 왕실이 쉽게 드러나지 않는 대상임을 보여 주며, 황금 가지 전설이 남긴 여지를 은폐와 발견의 대비로 읽을 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**낮 동안** 감춰진다는 표현은 왕실이 쉽게 드러나지 않는 대상임을 보여 주며, 황금 가지 전설이 남긴 여지를 은폐와 발견의 대비로 읽을 수 있다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Amsvartnir",
-       "revision": 1865691,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Where the Moon Rises"
-        }
-       ]
-      },
       {
        "kind": "wiki",
        "page": "Amsvartnir",
@@ -511,14 +578,6 @@
          "name": "Etherlight Spindlelute"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Varka",
-       "revision": 1862840,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
       }
      ],
      "heading": "떡밥과 수수께끼",
@@ -526,36 +585,31 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Q1 and M1 support the quote and the 'far from the Flagship' reading.",
      "quote": "Right now... Hmm... Must be somewhere near Amsvartnir. That's... quite far from here.",
      "sentences": [
       {
-       "t_raw": "Varka를 찾아 Flagship에 들른 Traveler와 Paimon은 바텐더 Demyan에게서 그가 자리에 없다는 말을 듣는다.",
+       "t_raw": "Demyan은 지금 어디쯤인지 가늠하며 Amsvartnir 근처일 것이라고 짚고, 그곳이 **꽤 먼 곳**이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "바르카를 찾아 기함에 들른 여행자와 페이몬은 바텐더 데미얀에게서 그가 자리에 없다는 말을 듣는다."
+       "t": "데미얀은 지금 어디쯤인지 가늠하며 암스바르트니르 호수 근처일 것이라고 짚고, 그곳이 **꽤 먼 곳**이라고 말한다."
       },
       {
-       "t_raw": "Demyan은 Varka가 Amsvartnir 근처에 있을 것이라고 짚은 뒤, 그곳이 **꽤 먼 곳**이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데미얀은 바르카가 암스바르트니르 호수 근처에 있을 것이라고 짚은 뒤, 그곳이 **꽤 먼 곳**이라고 말한다."
-      },
-      {
-       "t_raw": "대답은 “Right now... Hmm...” 다음에 Amsvartnir 근처라는 추측으로 이어지고, 마지막에 그곳이 꽤 멀다는 말로 맺어진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대답은 “Right now... Hmm...” 다음에 암스바르트니르 호수 근처라는 추측으로 이어지고, 마지막에 그곳이 꽤 멀다는 말로 맺어진다."
-      },
-      {
-       "t_raw": "Varka가 기사들을 이끌고 Amsvartnir로 향했다는 사정과 이 대답이 겹쳐, Flagship에서 들은 안내와 실제 조사지 사이의 **거리감**이 남는 셈이다.",
+       "t_raw": "Varka가 기사들을 이끌고 Amsvartnir로 조사를 나섰고 Traveler와 Paimon이 Varka를 만나러 Flagship에 갔다는 사실과 겹쳐 보면, Demyan의 한마디는 Amsvartnir가 Flagship에서 **꽤 멀리 떨어져 있음**을 환기한 것으로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "바르카가 기사들을 이끌고 암스바르트니르 호수로 향했다는 사정과 이 대답이 겹쳐, 기함에서 들은 안내와 실제 조사지 사이의 **거리감**이 남는 셈이다."
+       "t": "바르카가 기사들을 이끌고 암스바르트니르 호수로 조사를 나섰고 여행자와 페이몬이 바르카를 만나러 기함에 갔다는 사실과 겹쳐 보면, 데미얀의 한마디는 암스바르트니르 호수가 기함에서 **꽤 멀리 떨어져 있음**을 환기한 것으로 볼 수 있다."
       }
      ],
      "sources": [
+      {
+       "kind": "quest",
+       "quest": "Where the Moon Rises",
+       "quest_ko": "달이 떠오르는 곳",
+       "version": "Luna I",
+       "speaker": "Demyan"
+      },
       {
        "kind": "wiki",
        "page": "Varka",
@@ -563,28 +617,18 @@
        "section": "Profile",
        "paragraph": "M1",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Where the Moon Rises",
-       "quest_ko": "달이 떠오르는 곳",
-       "version": "Luna I",
-       "speaker": "Demyan"
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Right",
-      "Hmm"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "지금은... 음... Amsvartnir 근처겠군. 그건... 여기서 꽤 먼데.",
+     "status": "accepted",
+     "note": "Faithful translation of the Demyan line.",
+     "t_raw": "지금은... 흠... Amsvartnir 근처 어딘가일 거야. 그곳은... 여기서 꽤 먼 곳이지.",
      "en": "Right now... Hmm... Must be somewhere near Amsvartnir. That's... quite far from here.",
      "speaker": "Demyan",
      "source": {
@@ -594,14 +638,14 @@
       "version": "Luna I",
       "speaker": "Demyan"
      },
-     "t": "지금은... 음... 암스바르트니르 호수 근처겠군. 그건... 여기서 꽤 먼데.",
+     "t": "지금은... 흠... 암스바르트니르 호수 근처 어딘가일 거야. 그곳은... 여기서 꽤 먼 곳이지.",
      "speaker_ko": "데미얀"
     },
     {
-     "section": "위치와 접근",
+     "section": "위치와 전설",
      "status": "accepted",
-     "note": "The Korean faithfully translates the dialogue, preserving its uncertainty and distance.",
-     "t_raw": "지금은... 음... Amsvartnir 근처 어딘가겠네. 거기는... 여기서 꽤 멀어.",
+     "note": "Faithful translation of the Demyan line.",
+     "t_raw": "지금은... 음... Amsvartnir 근처 어딘가일 거야. 거기는... 여기서 꽤 먼 곳인데.",
      "en": "Right now... Hmm... Must be somewhere near Amsvartnir. That's... quite far from here.",
      "speaker": "Demyan",
      "source": {
@@ -611,14 +655,48 @@
       "version": "Luna I",
       "speaker": "Demyan"
      },
-     "t": "지금은... 음... 암스바르트니르 호수 근처 어딘가겠네. 거기는... 여기서 꽤 멀어.",
+     "t": "지금은... 음... 암스바르트니르 호수 근처 어딘가일 거야. 거기는... 여기서 꽤 먼 곳인데.",
+     "speaker_ko": "데미얀"
+    },
+    {
+     "section": "작중 행적 — Nod-Krai",
+     "status": "accepted",
+     "note": "Faithful translation; '아마...겠지' fairly renders 'Must be'.",
+     "t_raw": "지금은... 흠... 아마 Amsvartnir 근처 어딘가겠지. 거기는... 여기서 꽤 멀어.",
+     "en": "Right now... Hmm... Must be somewhere near Amsvartnir. That's... quite far from here.",
+     "speaker": "Demyan",
+     "source": {
+      "kind": "quest",
+      "quest": "Where the Moon Rises",
+      "quest_ko": "달이 떠오르는 곳",
+      "version": "Luna I",
+      "speaker": "Demyan"
+     },
+     "t": "지금은... 흠... 아마 암스바르트니르 호수 근처 어딘가겠지. 거기는... 여기서 꽤 멀어.",
+     "speaker_ko": "데미얀"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of the Demyan line.",
+     "t_raw": "지금은... 흠... Amsvartnir 근처 어딘가일 거야. 거기는... 여기서 꽤 멀어.",
+     "en": "Right now... Hmm... Must be somewhere near Amsvartnir. That's... quite far from here.",
+     "speaker": "Demyan",
+     "source": {
+      "kind": "quest",
+      "quest": "Where the Moon Rises",
+      "quest_ko": "달이 떠오르는 곳",
+      "version": "Luna I",
+      "speaker": "Demyan"
+     },
+     "t": "지금은... 흠... 암스바르트니르 호수 근처 어딘가일 거야. 거기는... 여기서 꽤 멀어.",
      "speaker_ko": "데미얀"
     },
     {
      "section": "여담",
      "status": "accepted",
-     "note": "The Korean faithfully translates the dialogue, preserving its uncertainty and distance.",
-     "t_raw": "지금은... 음... Amsvartnir 근처 어딘가일 거야. 그곳은... 여기서 꽤 먼 곳이지.",
+     "note": "Faithful translation; '아마...겠지' fairly renders 'Must be'.",
+     "t_raw": "지금은… 흠… 아마 Amsvartnir 근처 어딘가겠지. 거기는… 여기서 꽤 멀어.",
      "en": "Right now... Hmm... Must be somewhere near Amsvartnir. That's... quite far from here.",
      "speaker": "Demyan",
      "source": {
@@ -628,7 +706,7 @@
       "version": "Luna I",
       "speaker": "Demyan"
      },
-     "t": "지금은... 음... 암스바르트니르 호수 근처 어딘가일 거야. 그곳은... 여기서 꽤 먼 곳이지.",
+     "t": "지금은… 흠… 아마 암스바르트니르 호수 근처 어딘가겠지. 거기는… 여기서 꽤 멀어.",
      "speaker_ko": "데미얀"
     }
    ]

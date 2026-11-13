@@ -1,0 +1,845 @@
+{
+ "node": "Fort Mumei",
+ "articles": [
+  {
+   "node": "Fort Mumei",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Fort Mumei",
+     "url": "https://genshin-impact.fandom.com/wiki/Fort_Mumei",
+     "revision": 300693
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 719,
+   "input_cut": false,
+   "input_hash": "6ec95e087858",
+   "writer": "or-ds,glm",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All four sentences match the cited lines: subarea, Kaji’s sea line, the center-rock notepad and its team wording, and a hedged reading of terrain change plus a leftover note.",
+     "quote": "It's Fort Mumei! Fort Mumei has risen out of the sea!",
+     "sentences": [
+      {
+       "t_raw": "Fort Mumei는 Inazuma의 **Yashiori Island**에 있는 하위 지역이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무메이 요새는 이나즈마의 **야시오리섬**에 있는 하위 지역이다."
+      },
+      {
+       "t_raw": "Kaji는 Fort Mumei가 바다에서 떠올랐다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카지는 무메이 요새가 바다에서 떠올랐다고 말한다."
+      },
+      {
+       "t_raw": "이곳 중심 바위에는 **Handy Notepad**가 숨겨져 있고, 그 기록에는 팀에서 혼자 남은 사람이 돌아가지 않기로 했다는 내용이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이곳 중심 바위에는 **휴대용 노트**가 숨겨져 있고, 그 기록에는 팀에서 혼자 남은 사람이 돌아가지 않기로 했다는 내용이 있다."
+      },
+      {
+       "t_raw": "바다에서 떠오른 장소라는 점과 중심에 개인의 기록이 남아 있다는 점은 이곳이 **지형 변화와 남겨진 사연**이 겹치는 장소임을 보여주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "바다에서 떠오른 장소라는 점과 중심에 개인의 기록이 남아 있다는 점은 이곳이 **지형 변화와 남겨진 사연**이 겹치는 장소임을 보여주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Orobashi's Legacy: Part IV",
+       "quest_ko": "오로바시유사・Ⅳ",
+       "version": "2.0",
+       "speaker": "Kaji"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The two facts are right, but the interpretation treats it as settled that the place cannot be seen as simply part of the island, which the English does not support.",
+     "quote": "It's Fort Mumei! Fort Mumei has risen out of the sea!",
+     "sentences": [
+      {
+       "t_raw": "Fort Mumei는 Inazuma의 Yashiori Island에 속한 하위 지역이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무메이 요새는 이나즈마의 야시오리섬에 속한 하위 지역이다."
+      },
+      {
+       "t_raw": "Kaji는 Fort Mumei가 **바다에서 떠올랐다**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카지는 무메이 요새가 **바다에서 떠올랐다**고 말한다."
+      },
+      {
+       "t_raw": "Fort Mumei가 Yashiori Island의 하위 지역이면서 바다에서 떠오른 장소이기도 하다는 점은, 이곳을 단순한 섬의 일부로만 보기 어렵게 만드는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "무메이 요새가 야시오리섬의 하위 지역이면서 바다에서 떠오른 장소이기도 하다는 점은, 이곳을 단순한 섬의 일부로만 보기 어렵게 만드는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Orobashi's Legacy: Part IV",
+       "quest_ko": "오로바시유사・Ⅳ",
+       "version": "2.0",
+       "speaker": "Kaji"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Lost Text is only southeast of Fort Mumei, so the claim that Fort Mumei contains it is not stated. The later location sentence and the reading of the two sites are fine.",
+     "quote": "There is a Handy Notepad hidden on a rock at the center of Fort Mumei.",
+     "sentences": [
+      {
+       "t_raw": "Fort Mumei 중심의 바위에는 Handy Notepad가 숨겨져 있고, Fort Mumei의 남동쪽에는 Lost Text가 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "무메이 요새 중심의 바위에는 휴대용 노트가 숨겨져 있고, 무메이 요새의 남동쪽에는 분실된 문서가 있다."
+      },
+      {
+       "t_raw": "Lost Text는 Fort Mumei 남동쪽에 있고, **Handy Notepad**는 Fort Mumei 중심의 바위에 숨겨져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "분실된 문서는 무메이 요새 남동쪽에 있고, **휴대용 노트**는 무메이 요새 중심의 바위에 숨겨져 있다."
+      },
+      {
+       "t_raw": "두 기록물의 위치가 남동쪽과 중심 바위로 갈리는 만큼, Fort Mumei를 살필 때는 두 지점을 함께 염두에 두게 된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 기록물의 위치가 남동쪽과 중심 바위로 갈리는 만큼, 무메이 요새를 살필 때는 두 지점을 함께 염두에 두게 된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Lost Text",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "The line names the fort and says it rose from the sea; it does not say Kaji points at it. The other sentences stay within that line.",
+     "quote": "It's Fort Mumei! Fort Mumei has risen out of the sea!",
+     "sentences": [
+      {
+       "t_raw": "Kaji는 Fort Mumei를 언급하며 그곳이 **바다에서 떠올랐다**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "카지는 무메이 요새를 언급하며 그곳이 **바다에서 떠올랐다**고 말한다."
+      },
+      {
+       "t_raw": "Fort Mumei가 바다에서 떠오른 장소라는 점은 이 대사로 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무메이 요새가 바다에서 떠오른 장소라는 점은 이 대사로 드러난다."
+      },
+      {
+       "t_raw": "장소의 이름을 먼저 확인한 뒤 떠오름을 알리는 구성은 Fort Mumei의 정체와 바다에서의 등장을 함께 전하는 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "장소의 이름을 먼저 확인한 뒤 떠오름을 알리는 구성은 무메이 요새의 정체와 바다에서의 등장을 함께 전하는 장면으로 보인다."
+      },
+      {
+       "t_raw": "그래서 Kaji의 말은 Fort Mumei의 내력을 바다에서의 등장과 연결해 읽게 하는 단서인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 카지의 말은 무메이 요새의 내력을 바다에서의 등장과 연결해 읽게 하는 단서인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Orobashi's Legacy: Part IV",
+       "quest_ko": "오로바시유사・Ⅳ",
+       "version": "2.0",
+       "speaker": "Kaji"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "Handy Notepad의 기록",
+     "status": "accepted",
+     "note": "Both sentences restate the notepad: sole remaining teammate who will not return, and the wish that know-it-all Miss Mochizuki see this unknown world.",
+     "quote": "I'm the only one left from my team. I've dedided not to go back.",
+     "sentences": [
+      {
+       "t_raw": "Handy Notepad에서 작성자는 자신이 팀에서 혼자 남았고, 돌아가지 않기로 했다고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "휴대용 노트에서 작성자는 자신이 팀에서 혼자 남았고, 돌아가지 않기로 했다고 적는다."
+      },
+      {
+       "t_raw": "그러면서도 Miss Mochizuki를 '아는 체하는 사람'이라 부르며, 그가 이 **미지의 세계**의 풍경을 보기를 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서도 Miss Mochizuki를 '아는 체하는 사람'이라 부르며, 그가 이 **미지의 세계**의 풍경을 보기를 바란다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "휴대용 노트의 기록",
+     "latin_left": [
+      "Miss Mochizuki"
+     ]
+    },
+    {
+     "section": "Handy Notepad의 기록",
+     "status": "accepted",
+     "note": "Both sentences restate the notepad: the unknown and hard-to-believe things are here and shining, and the writer is sorry they cannot tell Miss Mochizuki in person.",
+     "quote": "...The things that you didn't know, the things that you were loath to believe, they are all here, shining...",
+     "sentences": [
+      {
+       "t_raw": "작성자는 Miss Mochizuki가 몰랐던 것들과 믿기 싫어했던 것들이 모두 이곳에서 빛나고 있다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작성자는 Miss Mochizuki가 몰랐던 것들과 믿기 싫어했던 것들이 모두 이곳에서 빛나고 있다고 전한다."
+      },
+      {
+       "t_raw": "그러나 그 사실을 직접 전할 수 없다며 Miss Mochizuki에게 미안해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 그 사실을 직접 전할 수 없다며 Miss Mochizuki에게 미안해한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "휴대용 노트의 기록",
+     "latin_left": [
+      "Miss Mochizuki",
+      "Miss Mochizuki"
+     ]
+    },
+    {
+     "section": "Handy Notepad의 기록",
+     "status": "accepted",
+     "note": "All sentences follow A8-A10.",
+     "quote": "...It's cold here. too cold...",
+     "sentences": [
+      {
+       "t_raw": "이곳은 춥고 너무 춥다고 적은 뒤, 작성자는 **'He'**도 춥다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이곳은 춥고 너무 춥다고 적은 뒤, 작성자는 **'He'**도 춥다고 덧붙인다."
+      },
+      {
+       "t_raw": "장소의 차가움과 'He'의 차가움이 나란히 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "장소의 차가움과 'He'의 차가움이 나란히 놓인 셈이다."
+      },
+      {
+       "t_raw": "이어서 짧은 사과가 적힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 짧은 사과가 적힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "휴대용 노트의 기록",
+     "latin_left": [
+      "He",
+      "He"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by Q1 and A4; the contrast is a reasonable interpretation.",
+     "quote": "It's Fort Mumei! Fort Mumei has risen out of the sea!",
+     "sentences": [
+      {
+       "t_raw": "Kaji는 Fort Mumei가 바다에서 떠올랐다고 알린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카지는 무메이 요새가 바다에서 떠올랐다고 알린다."
+      },
+      {
+       "t_raw": "Handy Notepad의 작성자는 팀에서 혼자 남았고 돌아가지 않기로 했다고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "휴대용 노트의 작성자는 팀에서 혼자 남았고 돌아가지 않기로 했다고 적는다."
+      },
+      {
+       "t_raw": "장소의 변화를 전하는 외침과 팀과의 단절을 남긴 기록은 **대조**를 이룬다.",
+       "interp": true,
+       "dropped": false,
+       "t": "장소의 변화를 전하는 외침과 팀과의 단절을 남긴 기록은 **대조**를 이룬다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Orobashi's Legacy: Part IV",
+       "quest_ko": "오로바시유사・Ⅳ",
+       "version": "2.0",
+       "speaker": "Kaji"
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by A4-A7 and A10; the 'message' reading is reasonable interpretation.",
+     "quote": "...Miss Mochizuki, you know-it-all, how i wish you could witness the scenery of this unknown world...",
+     "sentences": [
+      {
+       "t_raw": "작성자는 'you know-it-all'인 Miss Mochizuki가 unknown world의 경치를 보기를 바라며, 그녀가 몰랐던 것들과 믿기 싫어했던 것들이 이곳에서 빛난다고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작성자는 '아는 척하는 사람'인 Miss Mochizuki가 미지의 세계의 경치를 보기를 바라며, 그녀가 몰랐던 것들과 믿기 싫어했던 것들이 이곳에서 빛난다고 적는다.",
+       "polish": {
+        "from": "작성자는 'you know-it-all'인 Miss Mochizuki가 unknown world의 경치를 보기를 바라며, 그녀가 몰랐던 것들과 믿기 싫어했던 것들이 이곳에서 빛난다고 적는다.",
+        "text": "작성자는 '아는 척하는 사람'인 Miss Mochizuki가 미지의 세계의 경치를 보기를 바라며, 그녀가 몰랐던 것들과 믿기 싫어했던 것들이 이곳에서 빛난다고 적는다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Miss Mochizuki에게 거듭 미안하다고 말하고 짧게 사과하며, 이 일을 직접 전할 수 없다고 고백한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Miss Mochizuki에게 거듭 미안하다고 말하고 짧게 사과하며, 이 일을 직접 전할 수 없다고 고백한다."
+      },
+      {
+       "t_raw": "돌아가지 않기로 한 선택과 직접 전할 수 없다는 말을 함께 놓으면, 이 글은 대면 대신 남겨진 **전언**으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "돌아가지 않기로 한 선택과 직접 전할 수 없다는 말을 함께 놓으면, 이 글은 대면 대신 남겨진 **전언**으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Miss Mochizuki",
+      "Miss Mochizuki"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by A4, A8 and A9; the interpretation is hedged and reasonable.",
+     "quote": "...'He' is cold too...",
+     "sentences": [
+      {
+       "t_raw": "작성자는 이곳이 너무 춥다고 적고, 'He'도 차갑다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작성자는 이곳이 너무 춥다고 적고, 'He'도 차갑다고 덧붙인다."
+      },
+      {
+       "t_raw": "팀에 관해서는 자신이 혼자 남았다는 말이 나오지만, 'He'가 팀의 일원이었는지는 확정되지 않는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "팀에 관해서는 자신이 혼자 남았다는 말이 나오지만, 'He'가 팀의 일원이었는지는 확정되지 않는다."
+      },
+      {
+       "t_raw": "추위와 'He'의 차가움이 나란히 놓이며 기록의 **온도**를 함께 낮춘다.",
+       "interp": true,
+       "dropped": false,
+       "t": "추위와 'He'의 차가움이 나란히 놓이며 기록의 **온도**를 함께 낮춘다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "He",
+      "He",
+      "He"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A5-A7; the interpretation adds no facts.",
+     "quote": "...Miss Mochizuki, you know-it-all, how i wish you could witness the scenery of this unknown world...",
+     "sentences": [
+      {
+       "t_raw": "Handy Notepad에는 Miss Mochizuki가 **미지의 세계**의 풍경을 보았으면 한다는 바람이 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "휴대용 노트에는 Miss Mochizuki가 **미지의 세계**의 풍경을 보았으면 한다는 바람이 적혀 있다."
+      },
+      {
+       "t_raw": "또한 Miss Mochizuki가 몰랐던 것과 믿으려 하지 않았던 것이 모두 이곳에서 빛난다는 말이 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 Miss Mochizuki가 몰랐던 것과 믿으려 하지 않았던 것이 모두 이곳에서 빛난다는 말이 나온다."
+      },
+      {
+       "t_raw": "작성자는 그 내용을 Miss Mochizuki에게 직접 전할 수 없다고 사과한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작성자는 그 내용을 Miss Mochizuki에게 직접 전할 수 없다고 사과한다."
+      },
+      {
+       "t_raw": "미지의 세계를 보았으면 하는 바람과 직접 전할 수 없다는 사과가 겹치면서, 남기려 한 말의 온전한 의미는 물음으로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "미지의 세계를 보았으면 하는 바람과 직접 전할 수 없다는 사과가 겹치면서, 남기려 한 말의 온전한 의미는 물음으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Miss Mochizuki",
+      "Miss Mochizuki",
+      "Miss Mochizuki"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A8 and A9; the interpretation correctly notes that the text leaves 'He' unidentified.",
+     "quote": "...'He' is cold too...",
+     "sentences": [
+      {
+       "t_raw": "Handy Notepad는 이곳이 춥다고, 너무 춥다고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "휴대용 노트는 이곳이 춥다고, 너무 춥다고 적는다."
+      },
+      {
+       "t_raw": "또한 Handy Notepad에는 **'He'도 춥다**는 말이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 휴대용 노트에는 **'He'도 춥다**는 말이 있다."
+      },
+      {
+       "t_raw": "두 차가움이 같은 감각을 가리키는지, 'He'가 누구인지는 분명해지지 않는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 차가움이 같은 감각을 가리키는지, 'He'가 누구인지는 분명해지지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "He",
+      "He"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All pass. The location is stated in A2. The interpretation is hedged and follows from the Notepad lines (A5, A6).",
+     "quote": "There is a Lost Text located southeast of Fort Mumei.",
+     "sentences": [
+      {
+       "t_raw": "Fort Mumei 남동쪽에는 **Lost Text**가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무메이 요새 남동쪽에는 **분실된 문서**가 있다."
+      },
+      {
+       "t_raw": "Handy Notepad가 미지의 세계와 이곳에서 빛나는 것들을 언급하는 만큼, Lost Text의 내용이 어떤 이야기를 보태는지는 남은 물음이 된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "휴대용 노트가 미지의 세계와 이곳에서 빛나는 것들을 언급하는 만큼, 분실된 문서의 내용이 어떤 이야기를 보태는지는 남은 물음이 된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Lost Text",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All pass. A3 gives the Notepad on a rock at the center of Fort Mumei.",
+     "quote": "There is a Handy Notepad hidden on a rock at the center of Fort Mumei.",
+     "sentences": [
+      {
+       "t_raw": "**Fort Mumei 중심의 바위**에는 Handy Notepad가 숨겨져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**무메이 요새 중심의 바위**에는 휴대용 노트가 숨겨져 있다."
+      },
+      {
+       "t_raw": "Handy Notepad의 위치는 Fort Mumei의 중심, 그중에서도 바위라는 장소로 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "휴대용 노트의 위치는 무메이 요새의 중심, 그중에서도 바위라는 장소로 제시된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Handy Notepad",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All pass. A2 gives the Lost Text southeast of Fort Mumei.",
+     "quote": "There is a Lost Text located southeast of Fort Mumei.",
+     "sentences": [
+      {
+       "t_raw": "Lost Text는 **Fort Mumei 남동쪽**에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "분실된 문서는 **무메이 요새 남동쪽**에 있다."
+      },
+      {
+       "t_raw": "Lost Text의 위치는 Fort Mumei를 기준으로 한 남동쪽 방향으로 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "분실된 문서의 위치는 무메이 요새를 기준으로 한 남동쪽 방향으로 제시된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fort Mumei",
+       "revision": 300693,
+       "section": "Lost Text",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation. The particle '이다' after a vowel-final name is slightly awkward but the meaning is unchanged.",
+     "t_raw": "Fort Mumei이다! Fort Mumei가 바다에서 떠올랐다!",
+     "en": "It's Fort Mumei! Fort Mumei has risen out of the sea!",
+     "speaker": "Kaji",
+     "source": {
+      "kind": "quest",
+      "quest": "Orobashi's Legacy: Part IV",
+      "quest_ko": "오로바시유사・Ⅳ",
+      "version": "2.0",
+      "speaker": "Kaji"
+     },
+     "t": "무메이 요새이다! 무메이 요새가 바다에서 떠올랐다!",
+     "speaker_ko": "카지"
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Faithful translation of Kaji's line.",
+     "t_raw": "Fort Mumei다! Fort Mumei가 바다에서 떠올랐다!",
+     "en": "It's Fort Mumei! Fort Mumei has risen out of the sea!",
+     "speaker": "Kaji",
+     "source": {
+      "kind": "quest",
+      "quest": "Orobashi's Legacy: Part IV",
+      "quest_ko": "오로바시유사・Ⅳ",
+      "version": "2.0",
+      "speaker": "Kaji"
+     },
+     "t": "무메이 요새다! 무메이 요새가 바다에서 떠올랐다!",
+     "speaker_ko": "카지"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of Kaji's line.",
+     "t_raw": "Fort Mumei다! Fort Mumei가 바다에서 떠올랐다!",
+     "en": "It's Fort Mumei! Fort Mumei has risen out of the sea!",
+     "speaker": "Kaji",
+     "source": {
+      "kind": "quest",
+      "quest": "Orobashi's Legacy: Part IV",
+      "quest_ko": "오로바시유사・Ⅳ",
+      "version": "2.0",
+      "speaker": "Kaji"
+     },
+     "t": "무메이 요새다! 무메이 요새가 바다에서 떠올랐다!",
+     "speaker_ko": "카지"
+    }
+   ]
+  }
+ ]
+}

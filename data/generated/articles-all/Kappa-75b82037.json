@@ -1,0 +1,1255 @@
+{
+ "node": "Kappa",
+ "articles": [
+  {
+   "node": "Kappa",
+   "from_version": "5.4",
+   "cutoff": "2025-03-25T00:00:00Z",
+   "input": [
+    {
+     "page": "Kappa",
+     "url": "https://genshin-impact.fandom.com/wiki/Kappa",
+     "revision": 1721255
+    }
+   ],
+   "input_counts": {
+    "mentions": 3,
+    "lines": 28,
+    "web": 0
+   },
+   "input_chars": 432,
+   "input_cut": false,
+   "input_hash": "258b14f4fb40",
+   "writer": "glm-flash,qwen,or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "The English never places Kappa in Inazuma. Q19 only says a doppelganger hiding in Inazuma City infiltrated the festival as Kappa. Event-exclusive youkai boy is supported (A1, A4).",
+     "quote": "Three young youkai named Youko, Kappa, and Hitotsume Kozou wanted to hold their own Mikawa Flower Festival",
+     "sentences": [
+      {
+       "t_raw": "Kappa는 Akitsu Kimodameshi에서 처음 등장한 이벤트 한정 NPC로, youkai 소년이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "갓파는 아키츠 숲 담력 시험에서 처음 등장한 이벤트 한정 NPC로, 요괴 소년이다.",
+       "polish": {
+        "from": "갓파는 아키츠 숲 담력 시험에서 처음 등장한 이벤트 한정 NPC로, youkai 소년이다.",
+        "text": "갓파는 아키츠 숲 담력 시험에서 처음 등장한 이벤트 한정 NPC로, 요괴 소년이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Hitotsume Kozou 및 Youko와 친분이 있는 것으로 묘사된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "외눈 동자승 및 여우 요괴와 친분이 있는 것으로 묘사된다."
+      },
+      {
+       "t_raw": "Mikawa Flower Festival 개최를 시도했던 세 youkai 중 한 명이며, 이후 festival과 관련된 사건의 중심에 서게 되어 주목받는 인물이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "미카와 축제 개최를 시도했던 세 요괴 중 한 명이며, 이후 축제와 관련된 사건의 중심에 서게 되어 주목받는 인물이다.",
+       "polish": {
+        "from": "미카와 축제 개최를 시도했던 세 youkai 중 한 명이며, 이후 festival과 관련된 사건의 중심에 서게 되어 주목받는 인물이다.",
+        "text": "미카와 축제 개최를 시도했던 세 요괴 중 한 명이며, 이후 축제와 관련된 사건의 중심에 서게 되어 주목받는 인물이다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kappa",
+       "revision": 1721255,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mikawa Flower Festival",
+       "revision": 1034253,
+       "section": "Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Test of Courage (Event Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Ei"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Mutual close friends, young youkai trio, and Youko as a kitsune who is also a youkai are all stated; the equal-group reading is hedged.",
+     "quote": "He is a youkai who is close friends with Hitotsume Kozou and Youko.",
+     "sentences": [
+      {
+       "t_raw": "Kappa는 Akitsu Kimodameshi에서 처음 등장한 이벤트 한정 NPC이자 youkai이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "갓파는 아키츠 숲 담력 시험에서 처음 등장한 이벤트 한정 NPC이자 요괴이다.",
+       "polish": {
+        "from": "갓파는 아키츠 숲 담력 시험에서 처음 등장한 이벤트 한정 NPC이자 youkai이다.",
+        "text": "갓파는 아키츠 숲 담력 시험에서 처음 등장한 이벤트 한정 NPC이자 요괴이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Hitotsume Kozou, Youko와 함께 **어린 youkai 셋**을 이룬다.",
+       "interp": false,
+       "dropped": false,
+       "t": "외눈 동자승, 여우 요괴와 함께 **어린 요괴 셋**을 이룬다.",
+       "polish": {
+        "from": "외눈 동자승, 여우 요괴와 함께 **어린 youkai 셋**을 이룬다.",
+        "text": "외눈 동자승, 여우 요괴와 함께 **어린 요괴 셋**을 이룬다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Youko는 kitsune이고, 셋 모두 youkai이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여우 요괴는 키츠네이고, 셋 모두 요괴이다.",
+       "polish": {
+        "from": "여우 요괴는 kitsune이고, 셋 모두 youkai이다.",
+        "text": "여우 요괴는 키츠네이고, 셋 모두 요괴이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "셋은 저마다 다른 둘을 친한 친구로 꼽는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "셋은 저마다 다른 둘을 친한 친구로 꼽는다."
+      },
+      {
+       "t_raw": "셋 모두가 서로를 친구로 꼽고 있다는 점에서, 이들은 한쪽이 다른 쪽을 따르는 구도가 아니라 대등하게 얽힌 무리라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "셋 모두가 서로를 친구로 꼽고 있다는 점에서, 이들은 한쪽이 다른 쪽을 따르는 구도가 아니라 대등하게 얽힌 무리라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kappa",
+       "revision": 1721255,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hitotsume Kozou",
+       "revision": 1721574,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Youko",
+       "revision": 1721217,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mikawa Flower Festival",
+       "revision": 1034253,
+       "section": "Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Test of Courage (Event Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Arataki Itto"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Wilderness attacks and later peace thanks to human adventurers are Kappa’s own lines; the ‘changed their lives’ line is hedged interpretation.",
+     "quote": "But later, many human adventurers came into the wilderness and drove off the monsters, allowing us to live in peace.",
+     "sentences": [
+      {
+       "t_raw": "이들은 야생에서 살아가며 괴물의 습격을 자주 받는다고 스스로 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 야생에서 살아가며 괴물의 습격을 자주 받는다고 스스로 말한다."
+      },
+      {
+       "t_raw": "그러던 중 많은 인간 모험가들이 야생으로 들어와 괴물을 쫓아냈고, 그 덕분에 이들은 평화롭게 살 수 있게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러던 중 많은 인간 모험가들이 야생으로 들어와 괴물을 쫓아냈고, 그 덕분에 이들은 평화롭게 살 수 있게 되었다."
+      },
+      {
+       "t_raw": "평화를 얻는 길에 인간의 손이 닿아 있었던 만큼, 이들에게 인간은 삶의 형편을 바꿔 준 존재라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "평화를 얻는 길에 인간의 손이 닿아 있었던 만큼, 이들에게 인간은 삶의 형편을 바꿔 준 존재라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Kappa"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The festival as an intended gratitude message is in M3; tracing their tie to humans to a wish to repay that is hedged.",
+     "quote": "Their version of the festival was intended to be a message of gratitude to humans who drove off monsters and allowed them to live in peace.",
+     "sentences": [
+      {
+       "t_raw": "이들이 열려 한 Mikawa Flower Festival은 괴물을 몰아내 평화를 준 인간들에게 보내는 **감사의 메시지**였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들이 열려 한 미카와 축제는 괴물을 몰아내 평화를 준 인간들에게 보내는 **감사의 메시지**였다."
+      },
+      {
+       "t_raw": "괴물에게서 벗어난 일을 인간의 공으로 돌리고 있다는 점에서, 이들의 인간 인연은 고마움을 갚으려는 마음에서 비롯된 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "괴물에게서 벗어난 일을 인간의 공으로 돌리고 있다는 점에서, 이들의 인간 인연은 고마움을 갚으려는 마음에서 비롯된 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mikawa Flower Festival",
+       "revision": 1034253,
+       "section": "Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Test of Courage (Event Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Kappa"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Haunted Tales와 The Currents of Life",
+     "status": "accepted",
+     "note": "Calling the adventurers benefactors (은인) is not stated. The text only says the festival was meant as a gratitude message and that adventurers drove the monsters off.",
+     "quote": "But later, many human adventurers came into the wilderness and drove off the monsters, allowing us to live in peace.",
+     "sentences": [
+      {
+       "t_raw": "Kappa는 Hitotsume Kozou, Youko와 함께 야생에 사는 작은 요괴로, monsters의 공격에 시달리던 중 많은 인간 모험가들이 야생으로 들어와 monsters를 몰아내 주면서 평화롭게 살 수 있게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "갓파는 외눈 동자승, 여우 요괴와 함께 야생에 사는 작은 요괴로, 몬스터의 공격에 시달리던 중 많은 인간 모험가들이 야생으로 들어와 몬스터를 몰아내 주면서 평화롭게 살 수 있게 되었다.",
+       "polish": {
+        "from": "갓파는 외눈 동자승, 여우 요괴와 함께 야생에 사는 작은 요괴로, monsters의 공격에 시달리던 중 많은 인간 모험가들이 야생으로 들어와 monsters를 몰아내 주면서 평화롭게 살 수 있게 되었다.",
+        "text": "갓파는 외눈 동자승, 여우 요괴와 함께 야생에 사는 작은 요괴로, 몬스터의 공격에 시달리던 중 많은 인간 모험가들이 야생으로 들어와 몬스터를 몰아내 주면서 평화롭게 살 수 있게 되었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그들은 몬스터를 몰아내 평화롭게 살 수 있게 해 준 인간들에게 감사를 전하고자 자신들만의 Mikawa Flower Festival을 열고 싶어 했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그들은 몬스터를 몰아내 평화롭게 살 수 있게 해 준 인간들에게 감사를 전하고자 자신들만의 미카와 축제를 열고 싶어 했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "wiki",
+       "page": "Mikawa Flower Festival",
+       "revision": 1034253,
+       "section": "Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Test of Courage (Event Quest)"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 짙게 깔린 기괴한 안개와 흐르는 물과 같은 삶",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Haunted Tales와 The Currents of Life",
+     "status": "accepted",
+     "note": "‘Start of their bond’ is not stated, only that Itto met them at Test of Courage and helped. Q15 asks if he is an oni; it does not confirm it. Q8’s ‘that lady’ is a different quest and is not given as the cause of the scare turning into a commotion.",
+     "quote": "That lady is either a nasty evil spirit or a formidable youkai... Either way, it's not good.",
+     "sentences": [
+      {
+       "t_raw": "그러던 중 그들은 Test of Courage 행사에서 Arataki Itto를 만났고, 그가 축제를 돕기로 했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그러던 중 그들은 담력 시험 행사에서 아라타키 이토를 만났고, 그가 축제를 돕기로 했다."
+      },
+      {
+       "t_raw": "Kappa 일행은 그를 바로 알아보았고, Itto는 Youko, Kappa, Hitotsume Kozou가 모두 youkai라고 소개했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "갓파 일행은 그를 바로 알아보았고, 이토는 여우 요괴, 갓파, 외눈 동자승이 모두 요괴라고 소개했다.",
+       "polish": {
+        "from": "갓파 일행은 그를 바로 알아보았고, 이토는 여우 요괴, 갓파, 외눈 동자승이 모두 youkai라고 소개했다.",
+        "text": "갓파 일행은 그를 바로 알아보았고, 이토는 여우 요괴, 갓파, 외눈 동자승이 모두 요괴라고 소개했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "다만 이 조우는 처음부터 순탄하지 않았다. Kappa 일행은 누구를 겁주려던 것이 아니었는데도 일이 꼬였다고 당황해 했고, Itto의 무리원들이 겪은 일 이야기는 실제로 들기에 무섭다는 반응이 나올 정도였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 이 조우는 처음부터 순탄하지 않았다. 갓파 일행은 누구를 겁주려던 것이 아니었는데도 일이 꼬였다고 당황해 했고, 이토의 무리원들이 겪은 일 이야기는 실제로 들기에 무섭다는 반응이 나올 정도였다."
+      },
+      {
+       "t_raw": "겁주려던 것은 아니었지만, 무엇이 잘못된 것인지 그들도 몰랐던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "겁주려던 것은 아니었지만, 무엇이 잘못된 것인지 그들도 몰랐던 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Arataki Itto"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Currents of Life",
+       "quest_ko": "흐르는 물과 같은 삶",
+       "version": "3.3",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Currents of Life",
+       "quest_ko": "흐르는 물과 같은 삶",
+       "version": "3.3",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "wiki",
+       "page": "Mikawa Flower Festival",
+       "revision": 1034253,
+       "section": "Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Test of Courage (Event Quest)"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 짙게 깔린 기괴한 안개와 흐르는 물과 같은 삶",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Haunted Tales와 The Currents of Life",
+     "status": "accepted",
+     "note": "The text says they lacked youkai power and that Itto decided to help; it does not say his help was desperate or that the festival then became real.",
+     "quote": "B—But we still want to hold the Mikawa Flower Festival.",
+     "sentences": [
+      {
+       "t_raw": "결국 Kappa 일행은 상황이 어째서 이렇게 됐는지 스스로도 알 수 없다고 털어놓았고, Itto는 이들을 돕겠다며 축제 개최를 약속한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "결국 갓파 일행은 상황이 어째서 이렇게 됐는지 스스로도 알 수 없다고 털어놓았고, 이토는 이들을 돕겠다며 축제 개최를 약속한다."
+      },
+      {
+       "t_raw": "youkai power가 부족해 Mikawa Flower Festival을 스스로 열 수 없었던 그들에게 Arataki Itto가 축제를 여는 것을 돕기로 했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "요괴의 힘이 부족해 미카와 축제를 스스로 열 수 없었던 그들에게 아라타키 이토가 축제를 여는 것을 돕기로 했다.",
+       "polish": {
+        "from": "youkai power가 부족해 미카와 축제를 스스로 열 수 없었던 그들에게 아라타키 이토가 축제를 여는 것을 돕기로 했다.",
+        "text": "요괴의 힘이 부족해 미카와 축제를 스스로 열 수 없었던 그들에게 아라타키 이토가 축제를 여는 것을 돕기로 했다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Currents of Life",
+       "quest_ko": "흐르는 물과 같은 삶",
+       "version": "3.3",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Currents of Life",
+       "quest_ko": "흐르는 물과 같은 삶",
+       "version": "3.3",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "wiki",
+       "page": "Mikawa Flower Festival",
+       "revision": 1034253,
+       "section": "Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Test of Courage (Event Quest)"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 짙게 깔린 기괴한 안개와 흐르는 물과 같은 삶",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Haunted Tales와 The Currents of Life",
+     "status": "accepted",
+     "note": "Gratitude is to humans who drove off monsters so the youkai could live in peace, not to humans who helped other humans in trouble. The helper is not identified as an oni.",
+     "quote": "I've never seen a Kappa before.",
+     "sentences": [
+      {
+       "t_raw": "한편 첫 만남의 무렵, Kappa를 처음 본 Sayu는 자신이 Kappa를 본 적이 없다고 말했고, Paimon은 그가 야생에 사는 또 다른 작은 youkai라고 확인해 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 첫 만남의 무렵, 갓파를 처음 본 사유는 자신이 갓파를 본 적이 없다고 말했고, 페이몬은 그가 야생에 사는 또 다른 작은 요괴라고 확인해 주었다.",
+       "polish": {
+        "from": "한편 첫 만남의 무렵, 갓파를 처음 본 사유는 자신이 갓파를 본 적이 없다고 말했고, 페이몬은 그가 야생에 사는 또 다른 작은 youkai라고 확인해 주었다.",
+        "text": "한편 첫 만남의 무렵, 갓파를 처음 본 사유는 자신이 갓파를 본 적이 없다고 말했고, 페이몬은 그가 야생에 사는 또 다른 작은 요괴라고 확인해 주었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "물가 근처에서 뭔가를 주웠다는 말 등 일상적인 모습도 엿보이는데, 몬스터를 몰아내 평화롭게 살 수 있게 해 준 인간들에게 감사를 전하려던 youkai들이 Arataki Itto의 도움으로 축제를 준비하게 된 구도가 이야기 특유의 재미를 더하는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "물가 근처에서 뭔가를 주웠다는 말 등 일상적인 모습도 엿보이는데, 몬스터를 몰아내 평화롭게 살 수 있게 해 준 인간들에게 감사를 전하려던 요괴들이 아라타키 이토의 도움으로 축제를 준비하게 된 구도가 이야기 특유의 재미를 더하는 것으로 보인다.",
+       "polish": {
+        "from": "물가 근처에서 뭔가를 주웠다는 말 등 일상적인 모습도 엿보이는데, 몬스터를 몰아내 평화롭게 살 수 있게 해 준 인간들에게 감사를 전하려던 youkai들이 아라타키 이토의 도움으로 축제를 준비하게 된 구도가 이야기 특유의 재미를 더하는 것으로 보인다.",
+        "text": "물가 근처에서 뭔가를 주웠다는 말 등 일상적인 모습도 엿보이는데, 몬스터를 몰아내 평화롭게 살 수 있게 해 준 인간들에게 감사를 전하려던 요괴들이 아라타키 이토의 도움으로 축제를 준비하게 된 구도가 이야기 특유의 재미를 더하는 것으로 보인다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Sayu"
+      },
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Currents of Life",
+       "quest_ko": "흐르는 물과 같은 삶",
+       "version": "3.3",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "wiki",
+       "page": "Mikawa Flower Festival",
+       "revision": 1034253,
+       "section": "Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Test of Courage (Event Quest)"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 짙게 깔린 기괴한 안개와 흐르는 물과 같은 삶",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Akitsu Kimodameshi와 5.4 이벤트",
+     "status": "accepted",
+     "note": "Boss Thoma and a plan to gather the group after the crisis do not establish that the relationship certainly continues afterward.",
+     "quote": "Boss Thoma... is the best...",
+     "sentences": [
+      {
+       "t_raw": "5.4 이벤트에서 Kappa는 Thoma를 '**Boss Thoma**'라 부르고 'Great idea'라고 화답하며, 'Boss Thoma... is the best...'라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "5.4 이벤트에서 갓파는 토마를 '**보스 Thoma**'라 부르고 '좋은 생각이야'라고 화답하며, '보스 Thoma...는 최고야...'라고 말한다.",
+       "polish": {
+        "from": "5.4 이벤트에서 갓파는 토마를 '**Boss Thoma**'라 부르고 'Great idea'라고 화답하며, 'Boss Thoma... is the best...'라고 말한다.",
+        "text": "5.4 이벤트에서 갓파는 토마를 '**보스 Thoma**'라 부르고 '좋은 생각이야'라고 화답하며, '보스 Thoma...는 최고야...'라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Thoma는 위기 뒤 Hitotsume Kozou, Youko, Kappa를 모두 모으겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "토마는 위기 뒤 외눈 동자승, 여우 요괴, 갓파를 모두 모으겠다고 한다."
+      },
+      {
+       "t_raw": "이런 호칭과 계획은 사건이 끝난 뒤에도 이들이 다시 모일 뜻을 품고 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "이런 호칭과 계획은 사건이 끝난 뒤에도 이들이 다시 모일 뜻을 품고 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "As Though Caught in a Dream",
+       "quest_ko": "꿈처럼",
+       "version": "5.4",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Surrounded by Thunder",
+       "quest_ko": "번개처럼",
+       "version": "5.4",
+       "speaker": "Thoma"
+      }
+     ],
+     "heading": "작중 행적 — 아키츠 숲 담력 시험과 5.4 이벤트",
+     "latin_left": [
+      "Thoma",
+      "Thoma"
+     ]
+    },
+    {
+     "section": "작중 행적 — Akitsu Kimodameshi와 5.4 이벤트",
+     "status": "accepted",
+     "note": "All sentences match the dialogue: nightmare, doppelganger, pleas for help, wood, waking from the Nightmare Fragment, and Boss in the morning.",
+     "quote": "We woke up once the Nightmare Fragment was gone... It felt like one big, long dream.",
+     "sentences": [
+      {
+       "t_raw": "Haruto는 축제에서 Kappa가 **악몽**에 갇혔다고 전하고, Ei는 Kappa로 위장한 도플갱어가 Inazuma City에 숨어 있다는 이야기를 정리해 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하루토는 축제에서 갓파가 **악몽**에 갇혔다고 전하고, 라이덴 에이(影)는 갓파로 위장한 도플갱어가 이나즈마성에 숨어 있다는 이야기를 정리해 묻는다."
+      },
+      {
+       "t_raw": "Hitotsume Kozou는 Youko와 Kappa를 부르며 도움을 청하고, Youko는 Kappa에게 죽지 말라고 울먹인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "외눈 동자승은 여우 요괴와 갓파를 부르며 도움을 청하고, 여우 요괴는 갓파에게 죽지 말라고 울먹인다."
+      },
+      {
+       "t_raw": "Paimon은 Kappa가 **나무로 만들어졌다**는 사실에 놀란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 갓파가 **나무로 만들어졌다**는 사실에 놀란다."
+      },
+      {
+       "t_raw": "Hitotsume Kozou와 Youko의 반응은 Kappa의 악몽이 곁의 이들에게도 큰 충격이었음을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "외눈 동자승과 여우 요괴의 반응은 갓파의 악몽이 곁의 이들에게도 큰 충격이었음을 보여준다."
+      },
+      {
+       "t_raw": "Nightmare Fragment가 사라지자 Kappa는 깨어났고, 그 일을 'one big, long dream' 같았다고 돌아본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악몽의 파편이 사라지자 갓파는 깨어났고, 그 일을 '크고 긴 꿈 하나' 같았다고 돌아본다.",
+       "polish": {
+        "from": "악몽의 파편이 사라지자 갓파는 깨어났고, 그 일을 'one big, long dream' 같았다고 돌아본다.",
+        "text": "악몽의 파편이 사라지자 갓파는 깨어났고, 그 일을 '크고 긴 꿈 하나' 같았다고 돌아본다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "아침이 되자 Kappa는 다시 기운차게 움직이는 이를 보며 'Boss is the best!'라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아침이 되자 갓파는 다시 기운차게 움직이는 이를 보며 '보스는 최고야!'라고 말한다.",
+       "polish": {
+        "from": "아침이 되자 갓파는 다시 기운차게 움직이는 이를 보며 'Boss is the best!'라고 말한다.",
+        "text": "아침이 되자 갓파는 다시 기운차게 움직이는 이를 보며 '보스는 최고야!'라고 말한다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "As Though Kissed by Dew",
+       "quest_ko": "이슬처럼",
+       "version": "5.4",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Ei"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Haruto"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Hitotsume Kozou"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Youko"
+      }
+     ],
+     "heading": "작중 행적 — 아키츠 숲 담력 시험과 5.4 이벤트",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "The three youkai, lack of power, gratitude, Kappa’s wish, and Itto’s help at the Test of Courage are all in the material.",
+     "quote": "Three young youkai named Youko, Kappa, and Hitotsume Kozou wanted to hold their own Mikawa Flower Festival, but lacked the youkai power to set up the festival.",
+     "sentences": [
+      {
+       "t_raw": "Kappa는 Youko, Hitotsume Kozou와 함께 자신들의 Mikawa Flower Festival을 열고자 한 세 젊은 youkai 중 하나다.",
+       "interp": false,
+       "dropped": false,
+       "t": "갓파는 여우 요괴, 외눈 동자승과 함께 자신들의 미카와 축제를 열고자 한 세 젊은 요괴 중 하나다.",
+       "polish": {
+        "from": "갓파는 여우 요괴, 외눈 동자승과 함께 자신들의 미카와 축제를 열고자 한 세 젊은 youkai 중 하나다.",
+        "text": "갓파는 여우 요괴, 외눈 동자승과 함께 자신들의 미카와 축제를 열고자 한 세 젊은 요괴 중 하나다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그러나 이들에게는 축제를 준비할 만큼의 **youkai power가 부족했다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 이들에게는 축제를 준비할 만큼의 **요괴의 힘이 부족했다**.",
+       "polish": {
+        "from": "그러나 이들에게는 축제를 준비할 만큼의 **youkai power가 부족했다**.",
+        "text": "그러나 이들에게는 축제를 준비할 만큼의 **요괴의 힘이 부족했다**.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그들이 구상한 축제는 괴물을 쫓아내고 평화롭게 살 수 있게 해 준 인간에게 감사를 전하려는 것이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그들이 구상한 축제는 괴물을 쫓아내고 평화롭게 살 수 있게 해 준 인간에게 감사를 전하려는 것이었다."
+      },
+      {
+       "t_raw": "그래도 Kappa는 **Mikawa Flower Festival을 열고 싶다**는 뜻을 내비친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 갓파는 **미카와 축제를 열고 싶다**는 뜻을 내비친다."
+      },
+      {
+       "t_raw": "Arataki Itto는 Test of Courage 행사에서 이들을 만나 축제를 돕기로 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라타키 이토는 담력 시험 행사에서 이들을 만나 축제를 돕기로 한다."
+      },
+      {
+       "t_raw": "이 대목에서 youkai power의 부족과 외부의 도움이라는 흐름이 함께 드러난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 대목에서 요괴의 힘 부족과 외부의 도움이라는 흐름이 함께 드러난다고 볼 수 있다.",
+       "polish": {
+        "from": "이 대목에서 youkai power의 부족과 외부의 도움이라는 흐름이 함께 드러난다고 볼 수 있다.",
+        "text": "이 대목에서 요괴의 힘 부족과 외부의 도움이라는 흐름이 함께 드러난다고 볼 수 있다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mikawa Flower Festival",
+       "revision": 1034253,
+       "section": "Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Test of Courage (Event Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Currents of Life",
+       "quest_ko": "흐르는 물과 같은 삶",
+       "version": "3.3",
+       "speaker": "Kappa"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The pages state the friendships in narrator voice; they do not say Hitotsume Kozou and Youko themselves describe Kappa as a close friend.",
+     "quote": "He is a youkai who is close friends with Hitotsume Kozou and Youko.",
+     "sentences": [
+      {
+       "t_raw": "Kappa는 Akitsu Kimodameshi에서 처음 등장한 요괴로, Hitotsume Kozou와 Youko의 **가까운 친구**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "갓파는 아키츠 숲 담력 시험에서 처음 등장한 요괴로, 외눈 동자승과 여우 요괴의 **가까운 친구**다."
+      },
+      {
+       "t_raw": "Hitotsume Kozou와 Youko도 Kappa와 가까운 친구 사이이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "외눈 동자승과 여우 요괴도 갓파와 가까운 친구 사이이다."
+      },
+      {
+       "t_raw": "세 요괴의 관계는 한쪽만의 호칭이 아니라 서로 인정하는 친구 사이로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세 요괴의 관계는 한쪽만의 호칭이 아니라 서로 인정하는 친구 사이로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kappa",
+       "revision": 1721255,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hitotsume Kozou",
+       "revision": 1721574,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Youko",
+       "revision": 1721217,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All three match Q2, Q3, and Q20; the boss and caretaker reading is hedged.",
+     "quote": "Great idea, Boss Thoma!",
+     "sentences": [
+      {
+       "t_raw": "Kappa는 기운 넘치는 보스를 최고라고 말하고, Thoma의 제안에는 \"Great idea, Boss Thoma!\"라고 화답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "갓파는 기운 넘치는 보스를 최고라고 말하고, 토마의 제안에는 \"좋은 생각이야, 보스 Thoma!\"라고 화답한다.",
+       "polish": {
+        "from": "갓파는 기운 넘치는 보스를 최고라고 말하고, 토마의 제안에는 \"Great idea, Boss Thoma!\"라고 화답한다.",
+        "text": "갓파는 기운 넘치는 보스를 최고라고 말하고, 토마의 제안에는 \"좋은 생각이야, 보스 Thoma!\"라고 화답한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Thoma는 위기가 해결되면 Hitotsume Kozou, Youko, Kappa까지 전원을 모을 생각이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "토마는 위기가 해결되면 외눈 동자승, 여우 요괴, 갓파까지 전원을 모을 생각이라고 말한다."
+      },
+      {
+       "t_raw": "Kappa가 Thoma를 **보스**라 부르고 Thoma가 세 요괴를 전원에 넣는 점에서, Thoma는 Kappa의 보스이자 일행을 챙기는 쪽으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "갓파가 토마를 **보스**라 부르고 토마가 세 요괴를 전원에 넣는 점에서, 토마는 갓파의 보스이자 일행을 챙기는 쪽으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Caught in a Dream",
+       "quest_ko": "꿈처럼",
+       "version": "5.4",
+       "speaker": "Kappa"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Surrounded by Thunder",
+       "quest_ko": "번개처럼",
+       "version": "5.4",
+       "speaker": "Thoma"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Thoma"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Sentence 1 states that Kappa forms a bond with Itto merely from being named with him; the English only has Itto identify them and help the festival.",
+     "quote": "There's Youko, Kappa, and Hitotsume Kozou! They're all youkai.",
+     "sentences": [
+      {
+       "t_raw": "Arataki Itto는 Youko, Kappa, Hitotsume Kozou를 모두 요괴라고 짚고, Mikawa Flower Festival을 열고자 했으나 요괴의 힘이 부족했던 이들을 만나 축제를 돕기로 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라타키 이토는 여우 요괴, 갓파, 외눈 동자승을 모두 요괴라고 짚고, 미카와 축제를 열고자 했으나 요괴의 힘이 부족했던 이들을 만나 축제를 돕기로 한다."
+      },
+      {
+       "t_raw": "이렇게 Arataki Itto가 세 youkai를 알아보고 축제를 돕기로 한 것은, 그가 이들의 축제에 힘을 보태는 구도로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "이렇게 아라타키 이토가 세 요괴를 알아보고 축제를 돕기로 한 것은, 그가 이들의 축제에 힘을 보태는 구도로 보인다.",
+       "polish": {
+        "from": "이렇게 아라타키 이토가 세 youkai를 알아보고 축제를 돕기로 한 것은, 그가 이들의 축제에 힘을 보태는 구도로 보인다.",
+        "text": "이렇게 아라타키 이토가 세 요괴를 알아보고 축제를 돕기로 한 것은, 그가 이들의 축제에 힘을 보태는 구도로 보인다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mikawa Flower Festival",
+       "revision": 1034253,
+       "section": "Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Test of Courage (Event Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Arataki Itto"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Ei’s summary, the nightmare line, and the calls are in Q19–Q26; the mystery reading stays hedged.",
+     "quote": "the doppelganger infiltrated the festival as Kappa and is currently hiding in Inazuma City",
+     "sentences": [
+      {
+       "t_raw": "Ei는 **doppelganger**가 Kappa로 축제에 들어갔고 현재 Inazuma City에 숨어 있다고 정리하며 확인을 구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)는 **doppelganger**가 갓파로 축제에 들어갔고 현재 이나즈마성에 숨어 있다고 정리하며 확인을 구한다."
+      },
+      {
+       "t_raw": "같은 사건에서 Kappa는 악몽에 빠졌다는 말이 나오고, Hitotsume Kozou와 Youko가 Kappa를 부르는 대사도 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "같은 사건에서 갓파는 악몽에 빠졌다는 말이 나오고, 외눈 동자승과 여우 요괴가 갓파를 부르는 대사도 나온다."
+      },
+      {
+       "t_raw": "doppelganger의 출현과 Kappa의 악몽이 겹친 점을 보면, 사건의 전말은 Kappa를 둘러싼 수수께끼로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도플갱어의 출현과 갓파의 악몽이 겹친 점을 보면, 사건의 전말은 갓파를 둘러싼 수수께끼로 보인다.",
+       "polish": {
+        "from": "doppelganger의 출현과 갓파의 악몽이 겹친 점을 보면, 사건의 전말은 갓파를 둘러싼 수수께끼로 보인다.",
+        "text": "도플갱어의 출현과 갓파의 악몽이 겹친 점을 보면, 사건의 전말은 갓파를 둘러싼 수수께끼로 보인다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Ei"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Haruto"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Hitotsume Kozou"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Youko"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The boy form and Paimon’s wood line are in A4 and Q27; the identity reading stays hedged.",
+     "quote": "K—Kappa is... Kappa is made of wood!?",
+     "sentences": [
+      {
+       "t_raw": "Kappa는 어린 소년의 모습을 한 존재로 묘사된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "갓파는 어린 소년의 모습을 한 존재로 묘사된다."
+      },
+      {
+       "t_raw": "그런데 Paimon은 Kappa를 두고 **나무로 만들어졌다**고 외친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 페이몬은 갓파를 두고 **나무로 만들어졌다**고 외친다."
+      },
+      {
+       "t_raw": "어린 소년의 모습과 나무로 만들어졌다는 외침이 겹치면서, Kappa의 정체는 겉모습만으로 단정하기 어려운 수수께끼로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "어린 소년의 모습과 나무로 만들어졌다는 외침이 겹치면서, 갓파의 정체는 겉모습만으로 단정하기 어려운 수수께끼로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "wiki",
+       "page": "Kappa",
+       "revision": 1721255,
+       "section": "Profile > Appearance",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Appearance matches A4, and Sayu’s line matches Q25.",
+     "quote": "I've never seen a Kappa before.",
+     "sentences": [
+      {
+       "t_raw": "Kappa는 창백한 피부와 짧은 검은 머리를 지닌 어린 소년의 모습을 하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "갓파는 창백한 피부와 짧은 검은 머리를 지닌 어린 소년의 모습을 하고 있다."
+      },
+      {
+       "t_raw": "얼굴에는 처진 눈과 노란 부리 모양 입이 있는 초록색 가면을 쓰고 있고, 뾰족한 잎 모양 모자와 작은 거북 등껍질을 함께 걸치고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼굴에는 처진 눈과 노란 부리 모양 입이 있는 초록색 가면을 쓰고 있고, 뾰족한 잎 모양 모자와 작은 거북 등껍질을 함께 걸치고 있다."
+      },
+      {
+       "t_raw": "옷차림은 올리브색 셔츠와 바지, 샌들이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "옷차림은 올리브색 셔츠와 바지, 샌들이다."
+      },
+      {
+       "t_raw": "Sayu는 Kappa를 전에 본 적이 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사유는 갓파를 전에 본 적이 없다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kappa",
+       "revision": 1721255,
+       "section": "Profile > Appearance",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Haunted Tales",
+       "quest_ko": "짙게 깔린 기괴한 안개",
+       "version": "3.3",
+       "speaker": "Sayu"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The Korean line faithfully translates Q7.",
+     "t_raw": "응. 있잖아, 우리는 야생에서 살아서 괴물의 습격을 자주 받아.",
+     "en": "Mm-hmm. You see, we live in the wilderness and are frequently attacked by monsters.",
+     "speaker": "Kappa",
+     "source": {
+      "kind": "quest",
+      "quest": "Haunted Tales",
+      "quest_ko": "짙게 깔린 기괴한 안개",
+      "version": "3.3",
+      "speaker": "Kappa"
+     },
+     "t": "응. 있잖아, 우리는 야생에서 살아서 괴물의 습격을 자주 받아.",
+     "speaker_ko": "갓파"
+    },
+    {
+     "section": "작중 행적 — Haunted Tales와 The Currents of Life",
+     "status": "accepted",
+     "note": "Faithful translation; the polite ending is only a register choice.",
+     "t_raw": "그, 그래도 우리는 Mikawa Flower Festival을 열고 싶어요.",
+     "en": "B—But we still want to hold the Mikawa Flower Festival.",
+     "speaker": "Kappa",
+     "source": {
+      "kind": "quest",
+      "quest": "The Currents of Life",
+      "quest_ko": "흐르는 물과 같은 삶",
+      "version": "3.3",
+      "speaker": "Kappa"
+     },
+     "t": "그, 그래도 우리는 미카와 축제를 열고 싶어요.",
+     "speaker_ko": "갓파"
+    },
+    {
+     "section": "작중 행적 — Akitsu Kimodameshi와 5.4 이벤트",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Nightmare Fragment가 사라지자 우리는 깨어났어... 한 크고 긴 꿈을 꾼 것 같았어.",
+     "en": "We woke up once the Nightmare Fragment was gone... It felt like one big, long dream.",
+     "speaker": "Kappa",
+     "source": {
+      "kind": "quest",
+      "quest": "As Though Kissed by Dew",
+      "quest_ko": "이슬처럼",
+      "version": "5.4",
+      "speaker": "Kappa"
+     },
+     "t": "악몽의 파편이 사라지자 우리는 깨어났어... 한 크고 긴 꿈을 꾼 것 같았어.",
+     "speaker_ko": "갓파"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그—그래도 우리는 Mikawa Flower Festival을 열고 싶어.",
+     "en": "B—But we still want to hold the Mikawa Flower Festival.",
+     "speaker": "Kappa",
+     "source": {
+      "kind": "quest",
+      "quest": "The Currents of Life",
+      "quest_ko": "흐르는 물과 같은 삶",
+      "version": "3.3",
+      "speaker": "Kappa"
+     },
+     "t": "그—그래도 우리는 미카와 축제를 열고 싶어.",
+     "speaker_ko": "갓파"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "좋은 생각이야, 보스 Thoma!",
+     "en": "Great idea, Boss Thoma!",
+     "speaker": "Kappa",
+     "source": {
+      "kind": "quest",
+      "quest": "As Though Caught in a Dream",
+      "quest_ko": "꿈처럼",
+      "version": "5.4",
+      "speaker": "Kappa"
+     },
+     "t": "좋은 생각이야, 보스 토마!",
+     "speaker_ko": "갓파"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "K—Kappa는... Kappa는 나무로 만들어졌어!?",
+     "en": "K—Kappa is... Kappa is made of wood!?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "As Though Beholding Illusions",
+      "quest_ko": "허상처럼",
+      "version": "5.4",
+      "speaker": "Paimon"
+     },
+     "t": "K—갓파는... 갓파는 나무로 만들어졌어!?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "나는 Kappa를 전에 본 적이 없어.",
+     "en": "I've never seen a Kappa before.",
+     "speaker": "Sayu",
+     "source": {
+      "kind": "quest",
+      "quest": "Haunted Tales",
+      "quest_ko": "짙게 깔린 기괴한 안개",
+      "version": "3.3",
+      "speaker": "Sayu"
+     },
+     "t": "나는 갓파를 전에 본 적이 없어.",
+     "speaker_ko": "사유"
+    }
+   ]
+  }
+ ]
+}

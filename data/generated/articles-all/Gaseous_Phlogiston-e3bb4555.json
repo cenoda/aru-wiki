@@ -42,7 +42,7 @@
        "t_raw": "자유롭게 새어 나오거나 Phlogiston Currents, Phlogiston Wind Tunnels, Scorchwind Confluxes로 나타나며, 닿으면 활성 캐릭터의 HP를 0.5초마다 최대 HP의 2.5%만큼 깎는다.",
        "interp": false,
        "dropped": false,
-       "t": "자유롭게 새어 나오거나 Phlogiston Currents, 열소 바람 터널, Scorchwind Confluxes로 나타나며, 닿으면 활성 캐릭터의 HP를 0.5초마다 최대 HP의 2.5%만큼 깎는다."
+       "t": "자유롭게 새어 나오거나 열소 흐름, 열소 바람 터널, 기체 열소 덩어리로 나타나며, 닿으면 활성 캐릭터의 HP를 0.5초마다 최대 HP의 2.5%만큼 깎는다."
       },
       {
        "t_raw": "반면 Qucusaurs와 Flower-Feather Clan 구성원은 피해를 받지 않고 이를 통해 Phlogiston meter를 채울 수 있다.",
@@ -103,8 +103,6 @@
      ],
      "heading": null,
      "latin_left": [
-      "Phlogiston Currents",
-      "Scorchwind Confluxes",
       "HP",
       "HP"
      ]
@@ -181,7 +179,7 @@
        "t_raw": "Gaseous Phlogiston은 땅에서 새어 나오듯 자유롭게 발생하거나 Phlogiston Currents, Phlogiston Wind Tunnels, Scorchwind Confluxes 같은 특정 구조로 나타난다.",
        "interp": false,
        "dropped": false,
-       "t": "기체 열소는 땅에서 새어 나오듯 자유롭게 발생하거나 Phlogiston Currents, 열소 바람 터널, Scorchwind Confluxes 같은 특정 구조로 나타난다."
+       "t": "기체 열소는 땅에서 새어 나오듯 자유롭게 발생하거나 열소 흐름, 열소 바람 터널, 기체 열소 덩어리 같은 특정 구조로 나타난다."
       },
       {
        "t_raw": "접촉하면 활성 캐릭터의 최대 HP 2.5%만큼 0.5초마다 피해를 입지만, Qucusaurs와 Flower-Feather Clan 구성원은 피해를 받지 않는다.",
@@ -224,8 +222,6 @@
      ],
      "heading": "정체",
      "latin_left": [
-      "Phlogiston Currents",
-      "Scorchwind Confluxes",
       "HP"
      ]
     },
@@ -239,7 +235,7 @@
        "t_raw": "Gaseous Phlogiston은 자유롭게 발생하거나 Phlogiston Currents·Phlogiston Wind Tunnels·Scorchwind Confluxes로 나타나며, 닿으면 활성 캐릭터에게 0.5초마다 최대 HP의 2.5% 피해를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "기체 열소는 자유롭게 발생하거나 Phlogiston Currents·열소 바람 터널·Scorchwind Confluxes로 나타나며, 닿으면 활성 캐릭터에게 0.5초마다 최대 HP의 2.5% 피해를 준다."
+       "t": "기체 열소는 자유롭게 발생하거나 열소 흐름·열소 바람 터널·기체 열소 덩어리로 나타나며, 닿으면 활성 캐릭터에게 0.5초마다 최대 HP의 2.5% 피해를 준다."
       },
       {
        "t_raw": "그러나 Qucusaurs와 **Flower-Feather Clan** 구성원은 피해를 받지 않고, 이 구조들과 상호작용해 phlogiston meter를 채운다.",
@@ -300,8 +296,6 @@
      ],
      "heading": "탐사 활용 — 위험과 이점",
      "latin_left": [
-      "Phlogiston Currents",
-      "Scorchwind Confluxes",
       "HP"
      ]
     },
@@ -338,11 +332,11 @@
        "t_raw": "Gaseous Phlogiston은 **Hot Phlogiston Balloons**를 채우고, 풍선이 터지면 phlogiston을 회복시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "기체 열소는 **Hot Phlogiston Balloons**를 채우고, 풍선이 터지면 열소를 회복시킨다.",
+       "t": "기체 열소는 **기체 열소 덩어리**를 채우고, 풍선이 터지면 열소를 회복시킨다.",
        "polish": {
-        "from": "기체 열소는 **Hot Phlogiston Balloons**를 채우고, 풍선이 터지면 phlogiston을 회복시킨다.",
-        "text": "기체 열소는 **Hot Phlogiston Balloons**를 채우고, 풍선이 터지면 열소를 회복시킨다.",
-        "by": "glm-flash"
+        "from": "기체 열소는 **기체 열소 덩어리**를 채우고, 풍선이 터지면 phlogiston을 회복시킨다.",
+        "text": "기체 열소는 **기체 열소 덩어리**를 채우고, 풍선이 터지면 열소를 회복시킨다.",
+        "by": "ds"
        }
       },
       {
@@ -384,9 +378,7 @@
       }
      ],
      "heading": "탐사 활용 — 위험과 이점",
-     "latin_left": [
-      "Hot Phlogiston Balloons"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — 5.2 퀘스트",
@@ -690,11 +682,11 @@
        "t_raw": "Tepal은 Log No. 114에서 qucusaurs를 이용한 Gaseous Phlogiston 정제 실험이 성공했다고 기록한다.",
        "interp": false,
        "dropped": false,
-       "t": "테팔은 Log No. 114에서 쿠쿠사우루스를 이용한 기체 열소 정제 실험이 성공했다고 기록한다.",
+       "t": "테팔은 기록 번호. 114에서 쿠쿠사우루스를 이용한 기체 열소 정제 실험이 성공했다고 기록한다.",
        "polish": {
-        "from": "테팔은 Log No. 114에서 qucusaurs를 이용한 기체 열소 정제 실험이 성공했다고 기록한다.",
-        "text": "테팔은 Log No. 114에서 쿠쿠사우루스를 이용한 기체 열소 정제 실험이 성공했다고 기록한다.",
-        "by": "glm-flash"
+        "from": "테팔은 기록 번호. 114에서 qucusaurs를 이용한 기체 열소 정제 실험이 성공했다고 기록한다.",
+        "text": "테팔은 기록 번호. 114에서 쿠쿠사우루스를 이용한 기체 열소 정제 실험이 성공했다고 기록한다.",
+        "by": "ds"
        }
       },
       {
@@ -751,9 +743,7 @@
       }
      ],
      "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Log No"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
@@ -777,7 +767,7 @@
        "t_raw": "Gaseous Phlogiston은 **Hot Phlogiston Balloons**를 채우고, 이 풍선이 터지면 플레이어의 Phlogiston을 회복시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "기체 열소는 **Hot Phlogiston Balloons**를 채우고, 이 풍선이 터지면 플레이어의 열소를 회복시킨다."
+       "t": "기체 열소는 **기체 열소 덩어리**를 채우고, 이 풍선이 터지면 플레이어의 열소를 회복시킨다."
       },
       {
        "t_raw": "효과가 짧고 Conflux가 곧 재생성되므로, 끊어 쓰는 탐사 도구로 볼 수 있다.",
@@ -814,7 +804,6 @@
      ],
      "heading": "여담",
      "latin_left": [
-      "Hot Phlogiston Balloons",
       "Conflux"
      ]
     },

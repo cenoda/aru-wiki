@@ -1,0 +1,885 @@
+{
+ "node": "Eury",
+ "articles": [
+  {
+   "node": "Eury",
+   "from_version": "3.5",
+   "cutoff": "2023-04-11T00:00:00Z",
+   "input": [
+    {
+     "page": "Eury",
+     "url": "https://genshin-impact.fandom.com/wiki/Eury",
+     "revision": 1125428
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 2328,
+   "input_cut": false,
+   "input_hash": "955f0640ad9e",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1-A3 and A16-A18.",
+     "quote": "*sigh* I only realized that those days of window-shopping and haggling with shopkeepers was \"peace\" when I experienced Stormterror's attack.",
+     "sentences": [
+      {
+       "t_raw": "Eury는 City of Mondstadt에 있는 NPC로, 분수 광장 주변을 걸으며 ‘On Sale’ 표지를 찾는 쇼핑에 몰두한 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유리는 몬드성에 있는 NPC로, 분수 광장 주변을 걸으며 'On Sale' 표지를 찾는 쇼핑에 몰두한 인물이다."
+      },
+      {
+       "t_raw": "그녀는 물건을 고르는 데 우유부단하고, 지출을 스스로 통제하지 못해 감당하기 어려운 물건을 사기도 하지만, 술은 싫어하며 남편이 술을 마시는 일에 반대한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 물건을 고르는 데 우유부단하고, 지출을 스스로 통제하지 못해 감당하기 어려운 물건을 사기도 하지만, 술은 싫어하며 남편이 술을 마시는 일에 반대한다."
+      },
+      {
+       "t_raw": "Stormterror의 공격을 겪은 뒤에는 평범한 쇼핑과 흥정의 나날이 ‘평화’였음을 깨달았다고 말하며, 그 평화를 기념해 남편의 금주 계획을 잠시 미루겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "풍마룡의 공격을 겪은 뒤에는 평범한 쇼핑과 흥정의 나날이 '평화'였음을 깨달았다고 말하며, 그 평화를 기념해 남편의 금주 계획을 잠시 미루겠다고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A18",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC",
+      "On Sale"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts match A1-A2. The interpretation follows from the 'On Sale' searching and the A13 greeting.",
+     "quote": "She is a compulsive shopper as she looks around the stores in Mondstadt searching for \"On Sale\" signs.",
+     "sentences": [
+      {
+       "t_raw": "Eury는 City of Mondstadt에서 만나는 NPC이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유리는 몬드성에서 만나는 NPC이다."
+      },
+      {
+       "t_raw": "그녀는 Mondstadt의 상점들을 돌아다니며 **\"On Sale\" 표지**를 찾는 쇼핑 충동이 강한 인물이고, 분수 광장 주변을 걷는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 몬드의 상점들을 돌아다니며 **\"On Sale\" 표지**를 찾는 쇼핑 충동이 강한 인물이고, 분수 광장 주변을 걷는다."
+      },
+      {
+       "t_raw": "상점가를 살피며 \"On Sale\" 표지를 찾는 행동과 먼저 무엇을 찾는지 묻는 말투가 겹쳐, 그녀는 지나가는 행인이라기보다 **상점들을 적극적으로 둘러보는 쇼핑객**으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "상점가를 살피며 \"On Sale\" 표지를 찾는 행동과 먼저 무엇을 찾는지 묻는 말투가 겹쳐, 그녀는 지나가는 행인이라기보다 **상점들을 적극적으로 둘러보는 쇼핑객**으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC",
+      "On Sale",
+      "On Sale"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The quoted greeting (A13) and the 'I'm just browsing.' option (A19) are both in the material.",
+     "quote": "Hello! Are you looking for anything in particular?",
+     "sentences": [
+      {
+       "t_raw": "대화를 걸면 Eury는 먼저 \"Hello! Are you looking for anything in particular?\"라고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대화를 걸면 유리는 먼저 \"안녕하세요! 특별히 찾으시는 물건이 있나요?\"라고 묻는다.",
+       "polish": {
+        "from": "대화를 걸면 유리는 먼저 \"Hello! Are you looking for anything in particular?\"라고 묻는다.",
+        "text": "대화를 걸면 유리는 먼저 \"안녕하세요! 특별히 찾으시는 물건이 있나요?\"라고 묻는다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "이에 \"I'm just browsing.\"이라고 답하는 선택지가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이에 \"그냥 구경하는 중이에요.\"라고 답하는 선택지가 있다.",
+       "polish": {
+        "from": "이에 \"I'm just browsing.\"이라고 답하는 선택지가 있다.",
+        "text": "이에 \"그냥 구경하는 중이에요.\"라고 답하는 선택지가 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "첫 만남에서 그녀가 건네는 말은 무엇을 찾는지 확인하는 질문이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "첫 만남에서 그녀가 건네는 말은 무엇을 찾는지 확인하는 질문이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A19",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "A3 and A6 support the indecision, the named shops and the 'Which should I choose...' line.",
+     "quote": "Which should I choose...",
+     "sentences": [
+      {
+       "t_raw": "Eury는 Mondstadt의 상점가를 돌며 무엇을 살지 망설인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유리는 몬드의 상점가를 돌며 무엇을 살지 망설인다."
+      },
+      {
+       "t_raw": "Good Hunter와 Mondstadt General Goods 같은 가게 앞에서 고민하고, 'Which should I choose...' 같은 혼잣말을 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "디어 헌터와 몬드 잡화점 같은 가게 앞에서 고민하고, '어떤 걸 골라야 하나...' 같은 혼잣말을 한다.",
+       "polish": {
+        "from": "디어 헌터와 몬드 잡화점 같은 가게 앞에서 고민하고, 'Which should I choose...' 같은 혼잣말을 한다.",
+        "text": "디어 헌터와 몬드 잡화점 같은 가게 앞에서 고민하고, '어떤 걸 골라야 하나...' 같은 혼잣말을 한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "이런 모습은 그녀의 **우유부단함**을 보여 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이런 모습은 그녀의 **우유부단함**을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Idle Quotes",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "A11, A12, A20 and A21 support all the facts. The self-control interpretation is reasonable.",
+     "quote": "*Sigh* There are so many good bargains during the Windblume Festival! No, I need to save money...",
+     "sentences": [
+      {
+       "t_raw": "Eury는 쇼핑할 때 절제를 보이는 사람들을 부러워하고, 'Self-control...'이라고 혼잣말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유리는 쇼핑할 때 절제를 보이는 사람들을 부러워하고, '절제...'라고 혼잣말한다.",
+       "polish": {
+        "from": "유리는 쇼핑할 때 절제를 보이는 사람들을 부러워하고, 'Self-control...'이라고 혼잣말한다.",
+        "text": "유리는 쇼핑할 때 절제를 보이는 사람들을 부러워하고, '절제...'라고 혼잣말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Windblume Festival의 bargain이 많아도 돈을 아껴야 한다고 다짐하며, 'on sale' 표지를 보면 Mora가 바람처럼 사라진다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윈드블룸 축제의 특가 상품이 많아도 돈을 아껴야 한다고 다짐하며, '할인 중' 표지를 보면 모라가 바람처럼 사라진다고 말한다.",
+       "polish": {
+        "from": "윈드블룸 축제의 bargain이 많아도 돈을 아껴야 한다고 다짐하며, 'on sale' 표지를 보면 모라가 바람처럼 사라진다고 말한다.",
+        "text": "윈드블룸 축제의 특가 상품이 많아도 돈을 아껴야 한다고 다짐하며, '할인 중' 표지를 보면 모라가 바람처럼 사라진다고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "세일 앞에서 **자제력**이 약한 자신을 의식하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세일 앞에서 **자제력**이 약한 자신을 의식하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Idle Quotes",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Idle Quotes",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A21",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "A3 and A24-A26 support the facts. The contrast drawn in the interpretation is reasonable.",
+     "quote": "The price tag is something I can't afford...",
+     "sentences": [
+      {
+       "t_raw": "Eury는 비싼 물건을 사고 후회하는 성향이 있으며, 아름다운 gemstone ring을 무심코 집었다가 큰 실수였다고 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유리는 비싼 물건을 사고 후회하는 성향이 있으며, 아름다운 보석 반지를 무심코 집었다가 큰 실수였다고 여긴다.",
+       "polish": {
+        "from": "유리는 비싼 물건을 사고 후회하는 성향이 있으며, 아름다운 gemstone ring을 무심코 집었다가 큰 실수였다고 여긴다.",
+        "text": "유리는 비싼 물건을 사고 후회하는 성향이 있으며, 아름다운 보석 반지를 무심코 집었다가 큰 실수였다고 여긴다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그 가격표가 감당할 수 없는 수준임을 깨닫는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 가격표가 감당할 수 없는 수준임을 깨닫는다."
+      },
+      {
+       "t_raw": "그런 편이면서도 술은 싫어하고 남편이 마시는 일에는 반대한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런 편이면서도 술은 싫어하고 남편이 마시는 일에는 반대한다."
+      },
+      {
+       "t_raw": "쇼핑 앞에서 흔들리면서도 술 문제에서는 **술에 대한 반감**을 드러내는 대비가 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "쇼핑 앞에서 흔들리면서도 술 문제에서는 **술에 대한 반감**을 드러내는 대비가 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A26",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Stormterror",
+     "status": "accepted",
+     "note": "All sentences follow A16-A18.",
+     "quote": "Eury:...But in celebration of this hard-won peace, I suppose I can put it off for now.",
+     "sentences": [
+      {
+       "t_raw": "Stormterror의 공격을 겪은 뒤 Eury는 평소의 아이쇼핑과 상인과의 흥정이 곧 **평화**였다는 것을 깨닫는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "풍마룡의 공격을 겪은 뒤 유리는 평소의 아이쇼핑과 상인과의 흥정이 곧 **평화**였다는 것을 깨닫는다."
+      },
+      {
+       "t_raw": "원래 그녀는 남편이 술을 끊게 할 계획이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원래 그녀는 남편이 술을 끊게 할 계획이었다."
+      },
+      {
+       "t_raw": "그러나 힘겹게 얻은 평화를 기념하는 마음에 그 계획은 당분간 미뤄 두겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 힘겹게 얻은 평화를 기념하는 마음에 그 계획은 당분간 미뤄 두겠다고 말한다."
+      },
+      {
+       "t_raw": "평화의 실감이 남편의 **금주 계획**을 잠시 접어 두게 할 만큼 컸던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "평화의 실감이 남편의 **금주 계획**을 잠시 접어 두게 할 만큼 컸던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A18",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 풍마룡",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Stormterror",
+     "status": "accepted",
+     "note": "Supported by M2 and A18; the contrast is a reasonable interpretation.",
+     "quote": "Nimrod: Never mind not being able to drink. As long as my wife Eury was safe, I thought then, I would be alright even if I never drank another drop again in my life!",
+     "sentences": [
+      {
+       "t_raw": "남편 Nimrod는 Eury가 무사하다면 평생 술을 다시는 마시지 않아도 괜찮다고 생각했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "남편 니므롯은 유리가 무사하다면 평생 술을 다시는 마시지 않아도 괜찮다고 생각했다고 말한다."
+      },
+      {
+       "t_raw": "Eury가 평화를 기념해 금주 계획을 미루겠다고 한 것은, 아내 Eury가 무사하다면 평생 술을 마시지 않아도 괜찮다고 했던 Nimrod의 말과 대조를 이루는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "유리가 평화를 기념해 금주 계획을 미루겠다고 한 것은, 아내 유리가 무사하다면 평생 술을 마시지 않아도 괜찮다고 했던 니므롯의 말과 대조를 이루는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Nimrod",
+       "revision": 1119698,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A18",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 풍마룡",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Windblume's Breath",
+     "status": "accepted",
+     "note": "Supported by A12 and A29-A31.",
+     "quote": "Especially during a holiday with special sales and discounts everywhere. I even find the wine very tempting...",
+     "sentences": [
+      {
+       "t_raw": "Windblume's Breath 기간, Eury는 **특별 할인**이 넘치는 축제에 좋은 거래가 많다며 한숨 쉰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윈드블룸의 숨결 기간, 유리는 **특별 할인**이 넘치는 축제에 좋은 거래가 많다며 한숨 쉰다."
+      },
+      {
+       "t_raw": "동시에 돈을 아껴야 한다고 스스로에게 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동시에 돈을 아껴야 한다고 스스로에게 말한다."
+      },
+      {
+       "t_raw": "물건을 사러 온 사람인지 묻는 상대에게 아니라고 들은 뒤, 쇼핑할 때 절제를 보이는 사람들을 부러워한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물건을 사러 온 사람인지 묻는 상대에게 아니라고 들은 뒤, 쇼핑할 때 절제를 보이는 사람들을 부러워한다."
+      },
+      {
+       "t_raw": "축제의 할인뿐 아니라 와인까지 유혹으로 느낀다고 털어놓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "축제의 할인뿐 아니라 와인까지 유혹으로 느낀다고 털어놓는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Idle Quotes",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Idle Quotes",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A31",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 윈드블룸의 숨결",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Windblume's Breath",
+     "status": "accepted",
+     "note": "Supported by A32.",
+     "quote": "Ah, no. I must control myself. Resist, Eury! If I get any wine, why, it'll only end up being consumed by my alcoholic of a husband!",
+     "sentences": [
+      {
+       "t_raw": "그러나 Eury는 곧 **Resist, Eury!**를 외치며 자제력을 붙든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 유리는 곧 **Resist, 유리!**를 외치며 자제력을 붙든다."
+      },
+      {
+       "t_raw": "와인을 사면 결국 술꾼인 남편이 마시게 될 뿐이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "와인을 사면 결국 술꾼인 남편이 마시게 될 뿐이라고 말한다."
+      },
+      {
+       "t_raw": "할인과 와인의 유혹 앞에서 절제를 다짐하는 이유가 남편의 술 문제와 맞닿아 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "할인과 와인의 유혹 앞에서 절제를 다짐하는 이유가 남편의 술 문제와 맞닿아 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A32",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 윈드블룸의 숨결",
+     "latin_left": [
+      "Resist"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by A3, A22 and M1.",
+     "quote": "Despite this, Eury seems to dislike alcohol and pushes against her husband drinking it.",
+     "sentences": [
+      {
+       "t_raw": "Eury는 술을 싫어하고 남편이 술을 마시는 것에 반대한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유리는 술을 싫어하고 남편이 술을 마시는 것에 반대한다."
+      },
+      {
+       "t_raw": "Eury는 남편을 **alcoholic scoundrel**라고 부르며, 그가 어디로 술을 찾으러 간 것은 아닌지 걱정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유리는 남편을 **술주정뱅이 건달**이라고 부르며, 그가 어디로 술을 찾으러 간 것은 아닌지 걱정한다.",
+       "polish": {
+        "from": "유리는 남편을 **alcoholic scoundrel**라고 부르며, 그가 어디로 술을 찾으러 간 것은 아닌지 걱정한다.",
+        "text": "유리는 남편을 **술주정뱅이 건달**이라고 부르며, 그가 어디로 술을 찾으러 간 것은 아닌지 걱정한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Nimrod는 Angel's Share tavern 밖을 배회하며 아내 Eury를 피해 술을 사러 간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니므롯은 천사의 몫 선술집 밖을 배회하며 아내 유리를 피해 술을 사러 간다.",
+       "polish": {
+        "from": "니므롯은 천사의 몫 tavern 밖을 배회하며 아내 유리를 피해 술을 사러 간다.",
+        "text": "니므롯은 천사의 몫 선술집 밖을 배회하며 아내 유리를 피해 술을 사러 간다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "한쪽은 술을 멀리하려 하고 다른 쪽은 아내를 피해 술을 구하는 모습이 겹치면서, 두 사람의 **술 문제**는 서로 다른 방향의 움직임으로 드러난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한쪽은 술을 멀리하려 하고 다른 쪽은 아내를 피해 술을 구하는 모습이 겹치면서, 두 사람의 **술 문제**는 서로 다른 방향의 움직임으로 드러난다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Nimrod",
+       "revision": 1119698,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by M1 and M2; the interpretation is reasonable.",
+     "quote": "Never mind not being able to drink. As long as my wife Eury was safe, I thought then, I would be alright even if I never drank another drop again in my life!",
+     "sentences": [
+      {
+       "t_raw": "Nimrod는 아내 Eury가 안전하다면 평생 술을 한 모금도 마시지 않아도 괜찮다고 생각한 적이 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니므롯은 아내 유리가 안전하다면 평생 술을 한 모금도 마시지 않아도 괜찮다고 생각한 적이 있다고 말한다."
+      },
+      {
+       "t_raw": "그러나 Nimrod는 Angel's Share tavern 밖에서 아내를 피해 술을 사려는 모습을 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 니므롯은 천사의 몫 선술집 밖에서 아내를 피해 술을 사려는 모습을 보인다.",
+       "polish": {
+        "from": "그러나 니므롯은 천사의 몫 tavern 밖에서 아내를 피해 술을 사려는 모습을 보인다.",
+        "text": "그러나 니므롯은 천사의 몫 선술집 밖에서 아내를 피해 술을 사려는 모습을 보인다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "안전을 앞세운 다짐과 몰래 술을 찾는 행동이 나란히 놓이면서, 부부의 술 문제에는 **말과 행동 사이의 간극**이 남는다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "안전을 앞세운 다짐과 몰래 술을 찾는 행동이 나란히 놓이면서, 부부의 술 문제에는 **말과 행동 사이의 간극**이 남는다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Nimrod",
+       "revision": 1119698,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Nimrod",
+       "revision": 1119698,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported. A9, A24-A26 and A28 cover sentences 0-3, and Q1 in the full material covers the fairytale/novel line in sentence 4.",
+     "quote": "I should've known. The price tag is something I can't afford...",
+     "sentences": [
+      {
+       "t_raw": "Eury는 의뢰를 올려야겠다고 중얼거리며, Adventurers' Guild에 **의뢰를 올리겠다**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유리는 의뢰를 올려야겠다고 중얼거리며, 모험가 길드에 **의뢰를 올리겠다**고 말한다."
+      },
+      {
+       "t_raw": "무엇을 샀느냐는 물음에는 방금 아름다운 보석 반지가 눈에 들어왔다고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무엇을 샀느냐는 물음에는 방금 아름다운 보석 반지가 눈에 들어왔다고 답한다."
+      },
+      {
+       "t_raw": "그 반지를 무심코 집어 든 것은 **큰 실수**였다고 말하며, 가격표가 자신이 감당할 수 없는 것이라는 사실을 알았어야 했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 반지를 무심코 집어 든 것은 **큰 실수**였다고 말하며, 가격표가 자신이 감당할 수 없는 것이라는 사실을 알았어야 했다고 말한다."
+      },
+      {
+       "t_raw": "작별 인사를 하면 Eury는 좋은 작별을 고하며 Mondstadt를 즐기라고 인사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작별 인사를 하면 유리는 좋은 작별을 고하며 몬드를 즐기라고 인사한다."
+      },
+      {
+       "t_raw": "그것이 동화나 소설 같은 것인지 묻는 대사도 남긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그것이 동화나 소설 같은 것인지 묻는 대사도 남긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Idle Quotes",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Idle Quotes",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eury",
+       "revision": 1125428,
+       "section": "Dialogue",
+       "paragraph": "A26",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The Korean is a faithful translation of the dialogue line.",
+     "t_raw": "그건 동화나 소설 같은 건가요?",
+     "en": "Is that from a fairytale, or a novel or something?",
+     "speaker": "Eury",
+     "source": {
+      "kind": "quest",
+      "quest": "Legend of the Darknight Hero",
+      "quest_ko": "다크 히어로의 전설",
+      "version": "1.0",
+      "speaker": "Eury"
+     },
+     "t": "그건 동화나 소설 같은 건가요?",
+     "speaker_ko": "유리"
+    }
+   ]
+  }
+ ]
+}

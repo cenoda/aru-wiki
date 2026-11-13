@@ -1,0 +1,648 @@
+{
+ "node": "Olav",
+ "articles": [
+  {
+   "node": "Olav",
+   "from_version": "Luna IV",
+   "cutoff": "2026-02-24T00:00:00Z",
+   "input": [
+    {
+     "page": "Olav",
+     "url": "https://genshin-impact.fandom.com/wiki/Olav",
+     "revision": 2052378
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 2,
+    "web": 0
+   },
+   "input_chars": 919,
+   "input_cut": false,
+   "input_hash": "0d19c3bfda16",
+   "writer": "glm,or-ds,ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All three sentences are supported: quest-exclusive NPC, Lightkeepers Ratnik recently promoted to lead a Ratniki squad, and the card-game confidence plan plus calm/composed description are a fair reading.",
+     "quote": "Olav is a Ratnik of the Lightkeepers.",
+     "sentences": [
+      {
+       "t_raw": "Olav는 퀘스트 'The Last Night, the First Light'에 등장하는 퀘스트 전용 NPC이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "올라브는 퀘스트 '도래한 여명'에 등장하는 퀘스트 전용 NPC이다."
+      },
+      {
+       "t_raw": "Lightkeepers 소속의 Ratnik으로, 얼마 전 자신만의 Ratniki 분대를 이끄는 분대장으로 승진했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "등지기 소속의 라트니크로, 얼마 전 자신만의 라트니키 분대를 이끄는 분대장으로 승진했다."
+      },
+      {
+       "t_raw": "그 승진 뒤에는 Nikita가 카드 게임을 통해 그의 자신감을 키워준 계획이 있었는데, 평온하고 침착한 성격의 Olav가 어떻게 분대장으로 성장했는지를 보여주는 사례로 주목할 만하다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 승진 뒤에는 니키타가 카드 게임을 통해 그의 자신감을 키워준 계획이 있었는데, 평온하고 침착한 성격의 올라브가 어떻게 분대장으로 성장했는지를 보여주는 사례로 주목할 만하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Flins"
+        },
+        {
+         "type": "quest",
+         "name": "The Last Night, the First Light"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Illuga"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Both facts match A1 and A2.",
+     "quote": "Olav is a quest-exclusive NPC who appears in the The Last Night, the First Light.",
+     "sentences": [
+      {
+       "t_raw": "Olav는 Lightkeepers 소속의 Ratnik이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "올라브는 등지기 소속의 라트니크이다."
+      },
+      {
+       "t_raw": "퀘스트 'The Last Night, the First Light'에 등장하는 퀘스트 전용 NPC이며, 최근 분대장으로 승진해 자기 분대의 Ratniki를 이끌게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트 '도래한 여명'에 등장하는 퀘스트 전용 NPC이며, 최근 분대장으로 승진해 자기 분대의 라트니키를 이끌게 되었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Flins"
+        },
+        {
+         "type": "quest",
+         "name": "The Last Night, the First Light"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Sentence 0 states as fact that Nikita laid the stepping stone of the promotion. The English only says he set up a confidence-building card game (Flins pretending to lose) to encourage squad leadership, and that Olav was later promoted.",
+     "quote": "Nikita recognized his potential to become a squad leader, and set up a card game with Flins to boost Olav's confidence if he won.",
+     "sentences": [
+      {
+       "t_raw": "Nikita는 Flins가 일부러 카드 게임에서 지게 해 Olav의 자신감을 북돋웠고, 그 뒤 Olav는 분대장으로 승진했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "니키타는 플린스가 일부러 카드 게임에서 지게 해 올라브의 자신감을 북돋웠고, 그 뒤 올라브는 분대장으로 승진했다."
+      },
+      {
+       "t_raw": "Nikita는 Olav의 잠재력을 알아보고, 그가 이기면 자신감을 얻도록 **Flins와의 카드 게임**을 꾸몄다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니키타는 올라브의 잠재력을 알아보고, 그가 이기면 자신감을 얻도록 **플린스와의 카드 게임**을 꾸몄다."
+      },
+      {
+       "t_raw": "그 자리에서 Flins는 지는 척했고, 이는 Olav를 분대장의 길로 이끌기 위한 방법이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 자리에서 플린스는 지는 척했고, 이는 올라브를 분대장의 길로 이끌기 위한 방법이었다."
+      },
+      {
+       "t_raw": "자신감을 북돋우려 마련한 승부였던 만큼, 그가 얻은 자신감은 주변의 배려가 만들어 준 것이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자신감을 북돋우려 마련한 승부였던 만큼, 그가 얻은 자신감은 주변의 배려가 만들어 준 것이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Flins"
+        },
+        {
+         "type": "quest",
+         "name": "The Last Night, the First Light"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Nikita",
+       "revision": 2053666,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Illuga"
+        },
+        {
+         "type": "cs",
+         "name": "Flins"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The personality wording matches calm and composed, and the reading that more than one person spoke about Olav follows from Nikita plus Flins and Illuga.",
+     "quote": "Both Flins and Illuga describe Olav's personality as calm and composed.",
+     "sentences": [
+      {
+       "t_raw": "Flins와 Illuga는 모두 Olav의 성격을 **침착하고 차분하다**고 묘사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "플린스와 일루가는 모두 올라브의 성격을 **침착하고 차분하다**고 묘사한다."
+      },
+      {
+       "t_raw": "잠재력을 알아본 Nikita의 판단에 두 사람의 평이 더해지면서, Olav에 대한 평가가 한 사람의 판단에 머물지 않았다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "잠재력을 알아본 니키타의 판단에 두 사람의 평이 더해지면서, 올라브에 대한 평가가 한 사람의 판단에 머물지 않았다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Flins"
+        },
+        {
+         "type": "quest",
+         "name": "The Last Night, the First Light"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Illuga"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "Sentence 1 names the listener as the player. The line only says “you,” and the material never identifies the addressee.",
+     "quote": "Stop dallying. The Starshyna is waiting for you at the great mead hall.",
+     "sentences": [
+      {
+       "t_raw": "Olav는 퀘스트 'The Last Night, the First Light'에서 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "올라브는 퀘스트 '도래한 여명'에서 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "**Stop dallying**이라며 Starshyna가 great mead hall에서 기다리니 꾸물거리지 말라고 재촉한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "**Stop dallying**이라며 등지기장이 위대한 밀주 홀에서 기다리니 꾸물거리지 말라고 재촉한다.",
+       "polish": {
+        "from": "**Stop dallying**이라며 등지기장이 great mead hall에서 기다리니 꾸물거리지 말라고 재촉한다.",
+        "text": "**Stop dallying**이라며 등지기장이 위대한 밀주 홀에서 기다리니 꾸물거리지 말라고 재촉한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "기다리는 장소를 못 박은 이 말은 플레이어를 그곳으로 향하게 하는 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "기다리는 장소를 못 박은 이 말은 플레이어를 그곳으로 향하게 하는 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Last Night, the First Light",
+       "quest_ko": "도래한 여명",
+       "version": "Luna IV",
+       "speaker": "Olav"
+      }
+     ],
+     "heading": "작중 행적",
+     "latin_left": [
+      "NPC",
+      "Stop"
+     ]
+    },
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "Sentence 1 states as fact that Q1 was said earlier to the player and Q2 later to Illuga; neither the player nor that order is given. Sentence 2 asserts the two separate lines form one scene of delivering Nikita’s news.",
+     "quote": "Illuga! Finally! Starshyna Nikita's been looking all over for you!",
+     "sentences": [
+      {
+       "t_raw": "Illuga를 향해서는 **Illuga! Finally!**라고 외치며 Starshyna Nikita가 Illuga를 온 데다 찾고 있었다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일루가를 향해서는 **일루가! Finally!**라고 외치며 등지기장 니키타가 일루가를 온 데다 찾고 있었다고 전한다."
+      },
+      {
+       "t_raw": "그는 Illuga에게 Starshyna Nikita가 그를 여기저기 찾고 있었다고 알린다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 일루가에게 등지기장 니키타가 그를 여기저기 찾고 있었다고 알린다."
+      },
+      {
+       "t_raw": "두 대사는 Olav가 Starshyna의 기다림과 Nikita의 수색 소식을 각각 전하는 말로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "두 대사는 올라브가 등지기장의 기다림과 니키타의 수색 소식을 각각 전하는 말로 보인다."
+      },
+      {
+       "t_raw": "Flins과 Illuga가 차분하고 침착하다고 묘사한 성격과 견주면, 'Finally!'라는 외침이 발견의 순간을 강조하는 대목으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "플린스와 일루가가 차분하고 침착하다고 묘사한 성격과 견주면, 'Finally!'라는 외침이 발견의 순간을 강조하는 대목으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Last Night, the First Light",
+       "quest_ko": "도래한 여명",
+       "version": "Luna IV",
+       "speaker": "Olav"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Last Night, the First Light",
+       "quest_ko": "도래한 여명",
+       "version": "Luna IV",
+       "speaker": "Olav"
+      },
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Illuga"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적",
+     "latin_left": [
+      "Finally",
+      "Finally"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by A2 and M2.",
+     "quote": "Nikita recognized his potential to become a squad leader, and set up a card game with Flins to boost Olav's confidence if he won.",
+     "sentences": [
+      {
+       "t_raw": "Nikita는 깊이 존경과 신뢰를 받는 지도자이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니키타는 깊이 존경과 신뢰를 받는 지도자이다."
+      },
+      {
+       "t_raw": "그는 Olav의 분대장 가능성을 알아보고, 그가 카드 게임에서 이기면 자신감을 얻도록 Flins와 함께 판을 마련했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 올라브의 분대장 가능성을 알아보고, 그가 카드 게임에서 이기면 자신감을 얻도록 플린스와 함께 판을 마련했다."
+      },
+      {
+       "t_raw": "Flins는 그 카드 게임에서 진 척했고, Olav는 최근 자기 분대를 이끄는 분대장으로 승진했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "플린스는 그 카드 게임에서 진 척했고, 올라브는 최근 자기 분대를 이끄는 분대장으로 승진했다."
+      },
+      {
+       "t_raw": "Nikita가 Flins를 통해 Olav의 승리를 연출한 일은 부하의 강점을 살리는 세심한 지도 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "니키타가 플린스를 통해 올라브의 승리를 연출한 일은 부하의 강점을 살리는 세심한 지도 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Flins"
+        },
+        {
+         "type": "quest",
+         "name": "The Last Night, the First Light"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Nikita",
+       "revision": 2053666,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Illuga"
+        },
+        {
+         "type": "cs",
+         "name": "Flins"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by Q2 and A3; the interpretation is reasonable.",
+     "quote": "Illuga! Finally! Starshyna Nikita's been looking all over for you!",
+     "sentences": [
+      {
+       "t_raw": "Olav는 Illuga를 발견하자 '드디어!'라고 외치며, Starshyna Nikita가 그를 여기저기 찾고 있었다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "올라브는 일루가를 발견하자 '드디어!'라고 외치며, 등지기장 니키타가 그를 여기저기 찾고 있었다고 전한다."
+      },
+      {
+       "t_raw": "Flins과 Illuga는 Olav를 차분하고 침착한 인물로 묘사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "플린스와 일루가는 올라브를 차분하고 침착한 인물로 묘사한다."
+      },
+      {
+       "t_raw": "다급하게 Illuga를 부르는 이 장면은 그런 평가와 나란히 놓일 때 Olav의 평소 침착함과 상황에 따른 재촉이 대비되는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "다급하게 일루가를 부르는 이 장면은 그런 평가와 나란히 놓일 때 올라브의 평소 침착함과 상황에 따른 재촉이 대비되는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Last Night, the First Light",
+       "quest_ko": "도래한 여명",
+       "version": "Luna IV",
+       "speaker": "Olav"
+      },
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Illuga"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Appearance details all match A4.",
+     "quote": "Olav is a pale man with a medium build and medium long black hair.",
+     "sentences": [
+      {
+       "t_raw": "Olav는 창백한 남성으로, 중간 체형에 중간 길이의 검은 머리를 지녔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "올라브는 창백한 남성으로, 중간 체형에 중간 길이의 검은 머리를 지녔다."
+      },
+      {
+       "t_raw": "그는 Lightkeepers의 제복을 입는데, 검은 롱코트와 검은 바지, 회색 무릎 높이 부츠 차림이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 등지기의 제복을 입는데, 검은 롱코트와 검은 바지, 회색 무릎 높이 부츠 차림이다."
+      },
+      {
+       "t_raw": "오른손에는 검은 장갑을 끼고 왼손에는 붕대를 감았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오른손에는 검은 장갑을 끼고 왼손에는 붕대를 감았다."
+      },
+      {
+       "t_raw": "제복에는 은색 장식과 짙은 보라색 천 장식이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "제복에는 은색 장식과 짙은 보라색 천 장식이 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile > Appearance",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Brooch and rank are in A4, Squad Leaders listing is in M1; interpretation is reasonable.",
+     "quote": "He carries his Oath Lantern on a belt to his right side and wears a special brooch on his left lapel, indicating his higher rank as a Lightkeeper.",
+     "sentences": [
+      {
+       "t_raw": "허리 오른쪽에는 **Oath Lantern**을 벨트에 달고, 왼쪽 라펠에는 Lightkeeper로서 더 높은 계급을 나타내는 특별한 브로치를 착용한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "허리 오른쪽에는 **맹세의 등**을 벨트에 달고, 왼쪽 라펠에는 등지기로서 더 높은 계급을 나타내는 특별한 브로치를 착용한다."
+      },
+      {
+       "t_raw": "Lightkeepers 문서에서는 Olav를 Members의 **Squad Leaders** 항목에 올려 두었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "등지기 문서에서는 올라브를 Members의 **분대장** 항목에 올려 두었다."
+      },
+      {
+       "t_raw": "이 브로치는 그가 그 문서에서 분대장으로 정리된 위치와 함께 볼 때, 높은 지위를 드러내는 표식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 브로치는 그가 그 문서에서 분대장으로 정리된 위치와 함께 볼 때, 높은 지위를 드러내는 표식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Olav",
+       "revision": 2052378,
+       "section": "Profile > Appearance",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Lightkeepers",
+       "revision": 2049792,
+       "section": "Members > Squad Leaders",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Members"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "'온 데다' is a garbled rendering of 'all over'. It reads as 'in addition to coming' rather than 'everywhere', so the meaning of 'looking all over for you' is not conveyed faithfully.",
+     "t_raw": "[번역] Illuga! 드디어! Starshyna Nikita가 너를 여기저기 찾고 있었어!",
+     "en": "Illuga! Finally! Starshyna Nikita's been looking all over for you!",
+     "speaker": "Olav",
+     "source": {
+      "kind": "quest",
+      "quest": "The Last Night, the First Light",
+      "quest_ko": "도래한 여명",
+      "version": "Luna IV",
+      "speaker": "Olav"
+     },
+     "t": "[번역] 일루가! 드디어! 등지기장 니키타가 너를 여기저기 찾고 있었어!",
+     "speaker_ko": "올라브"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation; '여기저기 찾고 계셨어' correctly conveys 'looking all over'.",
+     "t_raw": "Illuga! 드디어! Starshyna Nikita가 널 여기저기 찾고 계셨어!",
+     "en": "Illuga! Finally! Starshyna Nikita's been looking all over for you!",
+     "speaker": "Olav",
+     "source": {
+      "kind": "quest",
+      "quest": "The Last Night, the First Light",
+      "quest_ko": "도래한 여명",
+      "version": "Luna IV",
+      "speaker": "Olav"
+     },
+     "t": "일루가! 드디어! 등지기장 니키타가 널 여기저기 찾고 계셨어!",
+     "speaker_ko": "올라브"
+    }
+   ]
+  }
+ ]
+}

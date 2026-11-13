@@ -21,34 +21,45 @@
    "input_cut": false,
    "input_hash": "2fdb402b8034",
    "writer": "or-ds",
-   "verifier": "codex-medium",
-   "status": "needs_verify",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1-A3 and A8.",
      "quote": "Dex, full name Dexter, is a juvenile Watcher, the same type of being as Nihilita and Melanta.",
      "sentences": [
       {
-       "t_raw": "Dex는 Temple of Space의 미성숙한 Watcher로, Nihilita와 Melanta와 같은 종류의 존재이며 전체 이름은 Dexter다.",
+       "t_raw": "Dex는 정식 이름이 Dexter인 **어린 Watcher**로, Nihilita와 Melanta와 같은 종류의 존재이며 A Long Day in the Mountains에 등장하는 퀘스트 전용 캐릭터다.",
        "interp": false,
        "dropped": false,
-       "t": "오른쪽이는 공간의 신전의 미성숙한 Watcher로, 니힐리타와 멜란타와 같은 종류의 존재이며 전체 이름은 덱스터다."
+       "t": "오른쪽이는 정식 이름이 덱스터인 **어린 Watcher**로, 니힐리타와 멜란타와 같은 종류의 존재이며 산속의 긴 하루에 등장하는 퀘스트 전용 캐릭터다.",
+       "polish": {
+        "from": "오른쪽이는 정식 이름이 덱스터인 **어린 Watcher**로, 니힐리타와 멜란타와 같은 종류의 존재이며 A 산속의 긴 하루 in the Mountains에 등장하는 퀘스트 전용 캐릭터다.",
+        "text": "오른쪽이는 정식 이름이 덱스터인 **어린 Watcher**로, 니힐리타와 멜란타와 같은 종류의 존재이며 산속의 긴 하루에 등장하는 퀘스트 전용 캐릭터다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "Nihilita가 Temple of Space를 떠난 뒤 Dex는 Teyvat와 Temple of Space 사이에서 사람을 옮기는 힘을 얻었지만, 어린 본성 때문에 Temple of Space로 데려오도록 선택된 Uplifted를 돌려보내지는 못한다.",
+       "t_raw": "Dex는 Temple of Space의 미성숙한 Watcher로, 그 기능 일부를 다루지만 어떤 권한은 갖지 못한다.",
        "interp": false,
        "dropped": false,
-       "t": "니힐리타가 공간의 신전을 떠난 뒤 오른쪽이는 티바트와 공간의 신전 사이에서 사람을 옮기는 힘을 얻었지만, 어린 본성 때문에 공간의 신전으로 데려오도록 선택된 Uplifted를 돌려보내지는 못한다."
+       "t": "오른쪽이는 공간의 신전의 미성숙한 Watcher로, 그 기능 일부를 다루지만 어떤 권한은 갖지 못한다."
       },
       {
-       "t_raw": "Melanta의 지배에서 Temple of Space를 해방하려는 과정에서 Nihilita가 Dex를 Traveler에게 맡겼고, Dex는 갇힌 사람들을 풀고 공간을 복원하며 팀을 돕는다.",
+       "t_raw": "Nihilita가 떠난 뒤에는 Teyvat와 Temple of Space 사이에서 사람을 옮기는 **능력**을 얻었으나, 어린 본성 탓에 Temple of Space로 데려간 Uplifted를 되돌려보내지는 못한다.",
        "interp": false,
        "dropped": false,
-       "t": "멜란타의 지배에서 공간의 신전을 해방하려는 과정에서 니힐리타가 오른쪽이를 여행자에게 맡겼고, 오른쪽이는 갇힌 사람들을 풀고 공간을 복원하며 팀을 돕는다."
+       "t": "니힐리타가 떠난 뒤에는 티바트와 공간의 신전 사이에서 사람을 옮기는 **능력**을 얻었으나, 어린 본성 탓에 공간의 신전으로 데려간 Uplifted를 되돌려보내지는 못한다."
+      },
+      {
+       "t_raw": "Temple of Space를 Melanta의 지배에서 벗어나게 하는 일에서 Nihilita가 Traveler에게 Dex를 맡겼고, Dex는 갇힌 사람들을 풀고 Keepers와 싸우며 공간을 복원하는 데 힘을 보탠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공간의 신전을 멜란타의 지배에서 벗어나게 하는 일에서 니힐리타가 여행자에게 오른쪽이를 맡겼고, 오른쪽이는 갇힌 사람들을 풀고 Keepers와 싸우며 공간을 복원하는 데 힘을 보탠다."
       }
      ],
      "sources": [
@@ -94,6 +105,411 @@
        "paragraph": "A8",
        "wiki_refs": []
       },
+      {
+       "kind": "wiki",
+       "page": "Melanta",
+       "revision": 2078191,
+       "section": "Story > Present",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Watcher",
+      "Watcher",
+      "Uplifted",
+      "Keepers"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A1 and A2.",
+     "quote": "Dex, full name Dexter, is a juvenile Watcher, the same type of being as Nihilita and Melanta.",
+     "sentences": [
+      {
+       "t_raw": "Dex의 본명은 Dexter이며, Nihilita와 Melanta와 같은 종류의 **어린 Watcher**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오른쪽이의 본명은 덱스터이며, 니힐리타와 멜란타와 같은 종류의 **어린 Watcher**다."
+      },
+      {
+       "t_raw": "Dex는 A Long Day in the Mountains에 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오른쪽이는 산속의 긴 하루에 등장하는 퀘스트 전용 NPC다.",
+       "polish": {
+        "from": "오른쪽이는 A 산속의 긴 하루 in the Mountains에 등장하는 퀘스트 전용 NPC다.",
+        "text": "오른쪽이는 산속의 긴 하루에 등장하는 퀘스트 전용 NPC다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Temple of Space의 미숙한 Watcher로서 그 기능 일부를 다루지만, 특정 권한은 갖지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공간의 신전의 미숙한 Watcher로서 그 기능 일부를 다루지만, 특정 권한은 갖지 못한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Wind Has Ceased"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Watcher",
+      "NPC",
+      "Watcher"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match A8 and M6. The interpretation is reasonable and hedged with 보인다.",
+     "quote": "Nihilita entrusts Dex to the Traveler in order to help them free the Temple of Space from Melanta's tyranny.",
+     "sentences": [
+      {
+       "t_raw": "A Long Day in the Mountains에서 Traveler와 Paimon은 Nihilita를 만나고, Nihilita는 Dex를 Traveler 일행에게 맡기며 Temple of Space를 Melanta의 지배에서 벗어나게 해 달라고 부탁한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산속의 긴 하루에서 여행자와 페이몬은 니힐리타를 만나고, 니힐리타는 오른쪽이를 여행자 일행에게 맡기며 공간의 신전을 멜란타의 지배에서 벗어나게 해 달라고 부탁한다.",
+       "polish": {
+        "from": "A 산속의 긴 하루 in the Mountains에서 여행자와 페이몬은 니힐리타를 만나고, 니힐리타는 오른쪽이를 여행자 일행에게 맡기며 공간의 신전을 멜란타의 지배에서 벗어나게 해 달라고 부탁한다.",
+        "text": "산속의 긴 하루에서 여행자와 페이몬은 니힐리타를 만나고, 니힐리타는 오른쪽이를 여행자 일행에게 맡기며 공간의 신전을 멜란타의 지배에서 벗어나게 해 달라고 부탁한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Dex는 능력으로 Temple of Space에 갇힌 사람들을 풀고 Keepers와 싸우며 영역을 복구하고, Melanta와 마주하는 길에서 일행을 돕고 그 대결을 지켜본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오른쪽이는 능력으로 공간의 신전에 갇힌 사람들을 풀고 Keepers와 싸우며 영역을 복구하고, 멜란타와 마주하는 길에서 일행을 돕고 그 대결을 지켜본다."
+      },
+      {
+       "t_raw": "이렇게 Dex는 **Temple of Space를 Melanta의 지배에서 벗어나게 하는 일**에서 중심적인 Watcher로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 오른쪽이는 **공간의 신전을 멜란타의 지배에서 벗어나게 하는 일**에서 중심적인 Watcher로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": "Story",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Melanta",
+       "revision": 2078191,
+       "section": "Story > Present",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Keepers",
+      "Watcher"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A2, A7 and M8. The interpretation follows from A7, where Dex first appears at the handover.",
+     "quote": "Dex is an immature Watcher of the Temple of Space, who has some control over its functions but lacks certain authorities.",
+     "sentences": [
+      {
+       "t_raw": "Dex는 Temple of Space의 기능 일부를 다루지만 어떤 권한은 지니지 못한 **미숙한 Watcher**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오른쪽이는 공간의 신전의 기능 일부를 다루지만 어떤 권한은 지니지 못한 **미숙한 Watcher**다."
+      },
+      {
+       "t_raw": "Nihilita가 만들었을 가능성이 있으며, Nihilita가 Raumhilda에게 맡긴 뒤 Raumhilda를 따라 Temple of Space로 가서 그곳의 uplifted people을 알게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니힐리타가 만들었을 가능성이 있으며, 니힐리타가 라움힐다에게 맡긴 뒤 라움힐다를 따라 공간의 신전으로 가서 그곳의 승천한 사람들을 알게 된다.",
+       "polish": {
+        "from": "니힐리타가 만들었을 가능성이 있으며, 니힐리타가 라움힐다에게 맡긴 뒤 라움힐다를 따라 공간의 신전으로 가서 그곳의 uplifted people을 알게 된다.",
+        "text": "니힐리타가 만들었을 가능성이 있으며, 니힐리타가 라움힐다에게 맡긴 뒤 라움힐다를 따라 공간의 신전으로 가서 그곳의 승천한 사람들을 알게 된다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Nihilita는 Melanta의 지배에서 Temple of Space를 벗어나게 하려고 Windrest Peak의 외진 곳에서 적임자를 기다렸고, Old Sanatorium Site에 머물던 Raumhilda가 자정 산책 중 그를 만나 Dex를 넘겨받았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니힐리타는 멜란타의 지배에서 공간의 신전을 벗어나게 하려고 바람 멎은 산의 외진 곳에서 적임자를 기다렸고, 요양원 옛터에 머물던 라움힐다가 자정 산책 중 그를 만나 오른쪽이를 넘겨받았다."
+      },
+      {
+       "t_raw": "Dex가 처음 모습을 드러내는 시점이 이 인계인 만큼, Dex의 출발은 Temple of Space의 해방을 향한 Nihilita의 준비와 맞물린다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오른쪽이가 처음 모습을 드러내는 시점이 이 인계인 만큼, 오른쪽이의 출발은 공간의 신전의 해방을 향한 니힐리타의 준비와 맞물린다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": "Story",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Nihilita",
+       "revision": 2088544,
+       "section": "Story > Past",
+       "paragraph": "M8",
+       "wiki_refs": [
+        {
+         "type": "enemy",
+         "name": "The Open-Eyed"
+        },
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Watcher"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by M7, Q8 and Q5.",
+     "quote": "Correct. The Watcher who introduced Dex to you is one who departed. Nihilita of Nothingness.",
+     "sentences": [
+      {
+       "t_raw": "Nihilita는 Raumhilda에게 그랬던 것처럼 Traveler에게도 Dex를 맡기고 Temple of Space로 보냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니힐리타는 라움힐다에게 그랬던 것처럼 여행자에게도 오른쪽이를 맡기고 공간의 신전으로 보냈다."
+      },
+      {
+       "t_raw": "Paimon은 Dex가 Nihilita와 같은 종류의 존재라는 말에 되묻고, Dex를 소개한 Watcher가 떠난 자 **Nihilita of Nothingness**임이 밝혀진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 오른쪽이가 니힐리타와 같은 종류의 존재라는 말에 되묻고, 오른쪽이를 소개한 Watcher가 떠난 자 **Nihilita of Nothingness**임이 밝혀진다.",
+       "polish": {
+        "from": "페이몬은 오른쪽이가 니힐리타와 같은 종류의 존재라는 말에 되묻고, 오른쪽이를 소개한 Watcher가 떠난 자 **Nihilita of Nothingness**임이 밝혀진다.",
+        "text": "페이몬은 오른쪽이가 니힐리타와 같은 종류의 존재라는 말에 되묻고, 오른쪽이를 소개한 Watcher가 떠난 자 **Nihilita of Nothingness**임이 밝혀진다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Nihilita",
+       "revision": 2088544,
+       "section": "Story > Present",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Day the Grand Temple Inscribed with Ages",
+       "quest_ko": "신전의 긴 하루",
+       "version": "Luna VI",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Wind Has Ceased",
+       "quest_ko": "멎은 바람",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Watcher",
+      "Nihilita of Nothingness"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by Q1, Q9, A3 and A2. The interpretations are hedged and follow from the English.",
+     "quote": "However, due to his juvenile nature, it cannot return any of the Uplifted that were selected to be brought to the temple.",
+     "sentences": [
+      {
+       "t_raw": "Nihilita가 쓰러진 뒤 Dex는 Pillar Hall과 지상 사이에서 산 사람을 옮기는 능력을 얻은 듯하며, Nihilita가 이곳으로 보낸 이였기에 Dex가 언제든 되돌려 보낼 수 있었다는 말도 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니힐리타가 쓰러진 뒤 오른쪽이는 기둥 전당과 지상 사이에서 산 사람을 옮기는 능력을 얻은 듯하며, 니힐리타가 이곳으로 보낸 이였기에 오른쪽이가 언제든 되돌려 보낼 수 있었다는 말도 나온다."
+      },
+      {
+       "t_raw": "이는 Dex의 이동이 Nihilita가 맡긴 자들과 이어져 있음을 보여 주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 오른쪽이의 이동이 니힐리타가 맡긴 자들과 이어져 있음을 보여 주는 대목으로 보인다."
+      },
+      {
+       "t_raw": "다만 Nihilita가 Temple of Space를 떠난 뒤 생긴 그 **이동 능력**에도 한계가 있어, 어린 Watcher인 Dex는 Temple of Space로 데려오기 위해 선택된 Uplifted를 되돌려 보내지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 니힐리타가 공간의 신전을 떠난 뒤 생긴 그 **이동 능력**에도 한계가 있어, 어린 Watcher인 오른쪽이는 공간의 신전으로 데려오기 위해 선택된 Uplifted를 되돌려 보내지 못한다."
+      },
+      {
+       "t_raw": "이러한 한계는 Dex의 Temple of Space 기능 조종 권한이 일부에 그치고 Uplifted를 원래대로 돌리는 일까지 미치지 못함을 보여 주는 것으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이러한 한계는 오른쪽이의 공간의 신전 기능 조종 권한이 일부에 그치고 Uplifted를 원래대로 돌리는 일까지 미치지 못함을 보여 주는 것으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Day the Grand Temple Inscribed with Ages",
+       "quest_ko": "신전의 긴 하루",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Judgment",
+       "quest_ko": "최후의 심판",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      },
+      {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Watcher",
+      "Uplifted",
+      "Uplifted"
+     ]
+    },
+    {
+     "section": "작중 행적 — Temple of Space",
+     "status": "accepted",
+     "note": "All sentences are supported by M6-M9.",
+     "quote": "Nihilita, who entrusts the juvenile Watcher Dex to them and asks them to free the Temple of Space from Melanta's control.",
+     "sentences": [
+      {
+       "t_raw": "A Long Day in the Mountains에서 Traveler와 Paimon은 Zeitlind를 만난 뒤 Nihilita를 만나고, Nihilita는 Temple of Space를 Melanta의 지배에서 벗어나게 하려고 Traveler에게 Dex를 맡긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산속의 긴 하루에서 여행자와 페이몬은 차이틀린트를 만난 뒤 니힐리타를 만나고, 니힐리타는 공간의 신전을 멜란타의 지배에서 벗어나게 하려고 여행자에게 오른쪽이를 맡긴다.",
+       "polish": {
+        "from": "A 산속의 긴 하루 in the Mountains에서 여행자와 페이몬은 차이틀린트를 만난 뒤 니힐리타를 만나고, 니힐리타는 공간의 신전을 멜란타의 지배에서 벗어나게 하려고 여행자에게 오른쪽이를 맡긴다.",
+        "text": "산속의 긴 하루에서 여행자와 페이몬은 차이틀린트를 만난 뒤 니힐리타를 만나고, 니힐리타는 공간의 신전을 멜란타의 지배에서 벗어나게 하려고 여행자에게 오른쪽이를 맡긴다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Nihilita는 Traveler가 Asmoday와 대면한 일을 알고 있었고, Raumhilda에게 그랬던 것처럼 Traveler에게 Dex를 보내 Temple of Space로 향하게 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니힐리타는 여행자가 아스모데이와 대면한 일을 알고 있었고, 라움힐다에게 그랬던 것처럼 여행자에게 오른쪽이를 보내 공간의 신전으로 향하게 한다."
+      },
+      {
+       "t_raw": "앞서 Nihilita는 Windrest Peak에서 적임자를 기다리다 Old Sanatorium Site에 머물던 Raumhilda에게 Dex를 맡겼고, Raumhilda와 Dex가 도착했을 때 Istoria는 그들을 알게 되어 Raumhilda와 철학 논의를 나눈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "앞서 니힐리타는 바람 멎은 산에서 적임자를 기다리다 요양원 옛터에 머물던 라움힐다에게 오른쪽이를 맡겼고, 라움힐다와 오른쪽이가 도착했을 때 이스토리아는 그들을 알게 되어 라움힐다와 철학 논의를 나눈다."
+      },
+      {
+       "t_raw": "Melanta의 지배 아래 Temple 사람들이 겪는 고통을 목격한 그녀는 스스로 Melanta와 맞서려 기억을 희생해 Path to the Heavens를 만든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "멜란타의 지배 아래 신전 사람들이 겪는 고통을 목격한 그녀는 스스로 멜란타와 맞서려 기억을 희생해 Path to the Heavens를 만든다.",
+       "polish": {
+        "from": "멜란타의 지배 아래 Temple 사람들이 겪는 고통을 목격한 그녀는 스스로 멜란타와 맞서려 기억을 희생해 Path to the Heavens를 만든다.",
+        "text": "멜란타의 지배 아래 신전 사람들이 겪는 고통을 목격한 그녀는 스스로 멜란타와 맞서려 기억을 희생해 Path to the Heavens를 만든다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Istoria는 이를 말리다가 끝내 허락하고, 뒤에 그 허락을 비겁함으로 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이스토리아는 이를 말리다가 끝내 허락하고, 뒤에 그 허락을 비겁함으로 본다."
+      },
+      {
+       "t_raw": "Raumhilda에서 Traveler로 이어진 Dex의 인계는 같은 목적을 위한 사람 찾기의 연장선으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "라움힐다에서 여행자로 이어진 오른쪽이의 인계는 같은 목적을 위한 사람 찾기의 연장선으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Melanta",
@@ -109,288 +525,6 @@
        "section": "Story > Present",
        "paragraph": "M7",
        "wiki_refs": []
-      }
-     ],
-     "heading": null,
-     "latin_left": [
-      "Watcher",
-      "Uplifted"
-     ]
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Dex is an immature Watcher of the Temple of Space, who has some control over its functions but lacks certain authorities.",
-     "sentences": [
-      {
-       "t_raw": "Dex는 정식 이름이 Dexter인 **어린 Watcher**로, Nihilita와 Melanta와 같은 종류의 존재다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오른쪽이는 정식 이름이 덱스터인 **어린 Watcher**로, 니힐리타와 멜란타와 같은 종류의 존재다."
-      },
-      {
-       "t_raw": "Temple of Space의 미숙한 Watcher인 Dex는 공간의 일부 기능을 다룰 수 있지만 특정 권한은 갖추지 못했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "공간의 신전의 미숙한 Watcher인 오른쪽이는 공간의 일부 기능을 다룰 수 있지만 특정 권한은 갖추지 못했다."
-      },
-      {
-       "t_raw": "A Long Day in the Mountains에서 Nihilita는 Traveler와 Paimon에게 Dex를 맡기며 **Melanta의 지배에서 Temple of Space를 해방**해 달라고 부탁한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "A Long Day in the Mountains에서 니힐리타는 여행자와 페이몬에게 오른쪽이를 맡기며 **멜란타의 지배에서 공간의 신전을 해방**해 달라고 부탁한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Wind Has Ceased"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": "Profile",
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Melanta",
-       "revision": 2078191,
-       "section": "Story > Present",
-       "paragraph": "M6",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "Watcher",
-      "Watcher",
-      "Long Day",
-      "Mountains"
-     ]
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Dex uses his abilities to free the trapped people in the temple, fight the Keepers and restore the area.",
-     "sentences": [
-      {
-       "t_raw": "이 사건에서 Dex는 Nihilita의 부탁을 받은 Traveler를 도와 Temple of Space에 갇힌 사람들을 풀어내고, Keepers와 맞서며, 영역을 복원한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 사건에서 오른쪽이는 니힐리타의 부탁을 받은 여행자를 도와 공간의 신전에 갇힌 사람들을 풀어내고, Keepers와 맞서며, 영역을 복원한다."
-      },
-      {
-       "t_raw": "**Apathic Interval**에서는 Maranasati Casket을 쓰러뜨리고 Deathmuse Chards를 모아 Traveler, Istoria, Zeitlind를 밖으로 나오게 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**무념무상의 공간**에서는 죽음 명상의 관을 쓰러뜨리고 Deathmuse Chards를 모아 여행자, 이스토리아, 차이틀린트를 밖으로 나오게 한다."
-      },
-      {
-       "t_raw": "이후에도 일행을 도와 Melanta와 마주하는 길에 함께하고 그 대면을 지켜본다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이후에도 일행을 도와 멜란타와 마주하는 길에 함께하고 그 대면을 지켜본다."
-      },
-      {
-       "t_raw": "이처럼 해방의 현장에서 사람들을 풀어내고 영역을 복원하며 탈출을 돕는 역할을 Dex가 맡은 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이처럼 해방의 현장에서 사람들을 풀어내고 영역을 복원하며 탈출을 돕는 역할을 오른쪽이가 맡은 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": "Story",
-       "paragraph": "A8",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "Keepers",
-      "Deathmuse Chards"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Dex, full name Dexter, is a juvenile Watcher, the same type of being as Nihilita and Melanta.",
-     "sentences": [
-      {
-       "t_raw": "Dex는 juvenile Watcher로, Nihilita 및 Melanta와 같은 종류의 존재다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오른쪽이는 juvenile Watcher로, 니힐리타 및 멜란타와 같은 종류의 존재다."
-      },
-      {
-       "t_raw": "Dex는 Temple of Space의 미숙한 Watcher로서 기능 일부를 통제하지만 특정 권한은 결여되어 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오른쪽이는 공간의 신전의 미숙한 Watcher로서 기능 일부를 통제하지만 특정 권한은 결여되어 있다."
-      },
-      {
-       "t_raw": "Nihilita가 성전을 떠난 뒤 Dex는 Teyvat와 Temple of Space 사이에서 사람을 옮기는 능력을 얻었으나, juvenile nature 때문에 성전으로 데려가기 위해 선택된 Uplifted는 돌려보낼 수 없다.",
-       "interp": false,
-       "dropped": false,
-       "t": "니힐리타가 성전을 떠난 뒤 오른쪽이는 티바트와 공간의 신전 사이에서 사람을 옮기는 능력을 얻었으나, juvenile nature 때문에 성전으로 데려가기 위해 선택된 Uplifted는 돌려보낼 수 없다."
-      },
-      {
-       "t_raw": "Nihilita가 떨어진 뒤 Dex가 Pillar Hall과 지표 사이에서 산 자의 세계 사람을 옮길 수 있게 된 듯하다.",
-       "interp": false,
-       "dropped": false,
-       "t": "니힐리타가 떨어진 뒤 오른쪽이가 Pillar Hall과 지표 사이에서 산 자의 세계 사람을 옮길 수 있게 된 듯하다."
-      },
-      {
-       "t_raw": "Paimon은 Dex가 Nihilita와 같은 종류의 존재인지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 오른쪽이가 니힐리타와 같은 종류의 존재인지 묻는다."
-      },
-      {
-       "t_raw": "**Watcher로서의 기능과 juvenile nature의 제약이 함께 드러나는 셈이다.**",
-       "interp": true,
-       "dropped": false,
-       "t": "**Watcher로서의 기능과 juvenile nature의 제약이 함께 드러나는 셈이다.**"
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Wind Has Ceased"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": "Profile",
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": "Profile",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Day the Grand Temple Inscribed with Ages",
-       "quest_ko": "신전의 긴 하루",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Day the Grand Temple Inscribed with Ages",
-       "quest_ko": "신전의 긴 하루",
-       "version": "Luna VI",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": [
-      "Watcher",
-      "Watcher",
-      "Uplifted",
-      "Pillar Hall",
-      "Watcher"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Dex was likely created by Nihilita, as it first appears when Nihilita entrusts it to Raumhilda some time before the present.",
-     "sentences": [
-      {
-       "t_raw": "Dex는 Nihilita에 의해 만들어졌을 가능성이 있으며, Nihilita가 현재보다 얼마 전 Dex를 Raumhilda에게 맡긴 때 처음 등장한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오른쪽이는 니힐리타에 의해 만들어졌을 가능성이 있으며, 니힐리타가 현재보다 얼마 전 오른쪽이를 라움힐다에게 맡긴 때 처음 등장한다."
-      },
-      {
-       "t_raw": "Nihilita는 Melanta의 폭정에서 Temple of Space를 해방할 적임자를 찾아 Windrest Peak의 외딴 곳에서 기다렸고, Old Sanatorium Site에 머물던 Raumhilda가 자정 산책 중 Nihilita를 만나, 그에게서 juvenile Watcher Dex를 맡았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "니힐리타는 멜란타의 폭정에서 공간의 신전을 해방할 적임자를 찾아 바람 멎은 산의 외딴 곳에서 기다렸고, 요양원 옛터에 머물던 라움힐다가 자정 산책 중 니힐리타를 만나, 그에게서 juvenile Watcher Dex를 맡았다."
-      },
-      {
-       "t_raw": "Raumhilda는 Dex를 Temple of Space로 데려갔고, Dex는 그곳에 사는 모든 uplifted people을 알게 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라움힐다는 오른쪽이를 공간의 신전으로 데려갔고, 오른쪽이는 그곳에 사는 모든 uplifted people을 알게 되었다."
-      },
-      {
-       "t_raw": "Raumhilda와 Dex가 도착했을 때 Istoria는 두 사람을 알게 되어 Raumhilda와 철학적 논의를 나누었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라움힐다와 오른쪽이가 도착했을 때 이스토리아는 두 사람을 알게 되어 라움힐다와 철학적 논의를 나누었다."
-      },
-      {
-       "t_raw": "성전 사람들이 Melanta의 지배 아래 고통받는 것을 본 Raumhilda는 스스로 Melanta에 맞서기로 결심했고, 기억을 희생해 Path to the Heavens를 만들었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "성전 사람들이 멜란타의 지배 아래 고통받는 것을 본 라움힐다는 스스로 멜란타에 맞서기로 결심했고, 기억을 희생해 Path to the Heavens를 만들었다."
-      },
-      {
-       "t_raw": "Istoria는 그 기억 희생을 말렸으나 결국 허락했고, 뒤에 그것을 비겁한 행동으로 여겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이스토리아는 그 기억 희생을 말렸으나 결국 허락했고, 뒤에 그것을 비겁한 행동으로 여겼다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": "Story",
-       "paragraph": "A7",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
       },
       {
        "kind": "wiki",
@@ -427,128 +561,35 @@
        ]
       }
      ],
-     "heading": "정체와 배경",
+     "heading": "작중 행적 — 공간의 신전",
      "latin_left": [
-      "Watcher Dex",
       "Path",
       "Heavens"
      ]
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "As he did with Raumhilda, Nihilita entrusts the Traveler with Dex and sends them to the Temple of Space.",
+     "section": "작중 행적 — Temple of Space",
+     "status": "accepted",
+     "note": "Supported by A8 and M6; the interpretation is reasonable.",
+     "quote": "Dex uses his abilities to free the trapped people in the temple, fight the Keepers and restore the area.",
      "sentences": [
       {
-       "t_raw": "Dex를 소개한 Watcher는 떠난 존재인 Nihilita of Nothingness다.",
+       "t_raw": "Traveler 일행과 Temple of Space에 들어간 Dex는 자신의 능력으로 갇힌 사람들을 풀고 Keepers와 싸우며 영역을 복원한다.",
        "interp": false,
        "dropped": false,
-       "t": "오른쪽이를 소개한 Watcher는 떠난 존재인 Nihilita of Nothingness다."
+       "t": "여행자 일행과 공간의 신전에 들어간 오른쪽이는 자신의 능력으로 갇힌 사람들을 풀고 Keepers와 싸우며 영역을 복원한다."
       },
       {
-       "t_raw": "Nihilita는 Raumhilda에게 했던 것처럼 Traveler에게도 Dex를 맡겨 Temple of Space로 보냈다.",
+       "t_raw": "팀이 Melanta와 마주하는 길에서도 Dex는 지원하고 그 대면을 목격한다.",
        "interp": false,
        "dropped": false,
-       "t": "니힐리타는 라움힐다에게 했던 것처럼 여행자에게도 오른쪽이를 맡겨 공간의 신전으로 보냈다."
+       "t": "팀이 멜란타와 마주하는 길에서도 오른쪽이는 지원하고 그 대면을 목격한다."
       },
       {
-       "t_raw": "**Dex는 Nihilita의 부탁을 잇는 매개로 반복해 쓰이는 셈이다.**",
+       "t_raw": "Nihilita가 부탁한 **Temple of Space 해방**은 Dex의 현장 행동으로 이어진 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "**오른쪽이는 니힐리타의 부탁을 잇는 매개로 반복해 쓰이는 셈이다.**"
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Wind Has Ceased",
-       "quest_ko": "멎은 바람",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "wiki",
-       "page": "Nihilita",
-       "revision": 2088544,
-       "section": "Story > Present",
-       "paragraph": "M7",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": [
-      "Watcher",
-      "Nihilita of Nothingness"
-     ]
-    },
-    {
-     "section": "작중 행적 — Temple of Space 해방",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nihilita, who entrusts the juvenile Watcher Dex to them and asks them to free the Temple of Space from Melanta's control.",
-     "sentences": [
-      {
-       "t_raw": "A Long Day in the Mountains에서 Traveler와 Paimon은 Zeitlind를 거쳐 Nihilita를 만나고, Nihilita는 어린 Watcher Dex를 맡기며 **Temple of Space를 Melanta의 지배에서 해방해 달라**고 부탁한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "A Long Day in the Mountains에서 여행자와 페이몬은 차이틀린트를 거쳐 니힐리타를 만나고, 니힐리타는 어린 Watcher Dex를 맡기며 **공간의 신전을 멜란타의 지배에서 해방해 달라**고 부탁한다."
-      },
-      {
-       "t_raw": "Nihilita는 Raumhilda에게 그랬던 것처럼 Traveler에게도 Dex를 맡겨 Temple of Space로 보낸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "니힐리타는 라움힐다에게 그랬던 것처럼 여행자에게도 오른쪽이를 맡겨 공간의 신전으로 보낸다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Melanta",
-       "revision": 2078191,
-       "section": "Story > Present",
-       "paragraph": "M6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Nihilita",
-       "revision": 2088544,
-       "section": "Story > Present",
-       "paragraph": "M7",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 공간의 신전 해방",
-     "latin_left": [
-      "Long Day",
-      "Mountains",
-      "Watcher Dex"
-     ]
-    },
-    {
-     "section": "작중 행적 — Temple of Space 해방",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "By destroying the Maranasati Caskets and collecting Deathmuse Shards with Dex, they manage to escape without forgoing their desires.",
-     "sentences": [
-      {
-       "t_raw": "Dex는 갇힌 사람들을 풀고 Keepers와 싸운다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오른쪽이는 갇힌 사람들을 풀고 Keepers와 싸운다."
-      },
-      {
-       "t_raw": "Lion's Celerity 중 Traveler, Istoria, Zeitlind, Dex는 **Apathic Interval**로 내던져지고, Dex와 함께 Maranasati Caskets를 파괴하고 Deathmuse Shards를 모아 욕망을 포기하지 않고 탈출한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Lion의 Celerity 중 여행자, 이스토리아, 차이틀린트, 오른쪽이는 **무념무상의 공간**으로 내던져지고, 오른쪽이와 함께 죽음 명상의 관을 파괴하고 Deathmuse Shards를 모아 욕망을 포기하지 않고 탈출한다."
-      },
-      {
-       "t_raw": "돌아온 일행은 Paimon이 끌려가지 않은 데 의아해한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "돌아온 일행은 페이몬이 끌려가지 않은 데 의아해한다."
+       "t": "니힐리타가 부탁한 **공간의 신전 해방**은 오른쪽이의 현장 행동으로 이어진 셈이다."
       }
      ],
      "sources": [
@@ -560,6 +601,52 @@
        "paragraph": "A8",
        "wiki_refs": []
       },
+      {
+       "kind": "wiki",
+       "page": "Melanta",
+       "revision": 2078191,
+       "section": "Story > Present",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 공간의 신전",
+     "latin_left": [
+      "Keepers"
+     ]
+    },
+    {
+     "section": "작중 행적 — Temple of Space",
+     "status": "accepted",
+     "note": "Supported by M1, A8 and Q4.",
+     "quote": "Since Dex is also a Watcher, it might be able to use the power contained within these fragments to force open a path.",
+     "sentences": [
+      {
+       "t_raw": "Lion's Celerity 중 Traveler, Istoria, Zeitlind, Dex는 Apathic Interval로 떨어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Lion의 Celerity 중 여행자, 이스토리아, 차이틀린트, 오른쪽이는 무념무상의 공간으로 떨어진다."
+      },
+      {
+       "t_raw": "Dex는 Maranasati Casket을 쓰러뜨리고 Deathmuse Chards를 모아 Traveler, Istoria, Zeitlind를 밖으로 나오게 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오른쪽이는 죽음 명상의 관을 쓰러뜨리고 망각의 조각을 모아 여행자, 이스토리아, 차이틀린트를 밖으로 나오게 한다."
+      },
+      {
+       "t_raw": "Istoria는 Dex도 Watcher이므로 파편의 힘으로 길을 강제로 열 수 있을지 모른다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이스토리아는 오른쪽이도 Watcher이므로 파편의 힘으로 길을 강제로 열 수 있을지 모른다고 본다."
+      },
+      {
+       "t_raw": "이들은 욕망을 포기하지 않고 **Apathic Interval**을 빠져나오고, Temple로 돌아온 뒤 Paimon이 함께 끌려오지 않은 일에 의문을 품는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 욕망을 포기하지 않고 **무념무상의 공간**을 빠져나오고, Temple로 돌아온 뒤 페이몬이 함께 끌려오지 않은 일에 의문을 품는다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Apathic Interval",
@@ -572,36 +659,7 @@
          "name": "Lion's Celerity"
         }
        ]
-      }
-     ],
-     "heading": "작중 행적 — 공간의 신전 해방",
-     "latin_left": [
-      "Keepers",
-      "Lion",
-      "Celerity",
-      "Deathmuse Shards"
-     ]
-    },
-    {
-     "section": "작중 행적 — Temple of Space 해방",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Dex also supports the team on the way to facing Melanta and witnesses the confrontation.",
-     "sentences": [
-      {
-       "t_raw": "Melanta와의 대면에 이르는 길에서도 Dex는 일행을 지원하고 그 대면을 목격한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "멜란타와의 대면에 이르는 길에서도 오른쪽이는 일행을 지원하고 그 대면을 목격한다."
       },
-      {
-       "t_raw": "Nihilita의 부탁에서 시작된 여정이 Melanta와의 대면까지 이어지는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "니힐리타의 부탁에서 시작된 여정이 멜란타와의 대면까지 이어지는 셈이다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Dex",
@@ -611,40 +669,158 @@
        "wiki_refs": []
       },
       {
-       "kind": "wiki",
-       "page": "Melanta",
-       "revision": 2078191,
-       "section": "Story > Present",
-       "paragraph": "M6",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "Lion's Celerity",
+       "quest_ko": "질주하는 사자",
+       "version": "Luna VI",
+       "speaker": "Istoria"
       }
      ],
-     "heading": "작중 행적 — 공간의 신전 해방",
-     "latin_left": []
+     "heading": "작중 행적 — 공간의 신전",
+     "latin_left": [
+      "Lion",
+      "Celerity",
+      "Watcher",
+      "Temple"
+     ]
+    },
+    {
+     "section": "작중 행적 — Temple of Space",
+     "status": "accepted",
+     "note": "Supported by A9/M5, Q6 and Q9.",
+     "quote": "Istoria implores Dex to remember the kindness the temple's inhabitants have shown him, when he grows up.",
+     "sentences": [
+      {
+       "t_raw": "Temple of Space가 Melanta의 영향에서 벗어난 뒤, Istoria는 Dex에게 자라서 Temple 주민들이 보인 친절을 기억해 달라고 간청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공간의 신전이 멜란타의 영향에서 벗어난 뒤, 이스토리아는 오른쪽이에게 자라서 Temple 주민들이 보인 친절을 기억해 달라고 간청한다."
+      },
+      {
+       "t_raw": "Paimon은 '잉크 인간'이 무슨 말을 하는지 모르겠다며 Dex에게 알아들었냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 '잉크 인간'이 무슨 말을 하는지 모르겠다며 오른쪽이에게 알아들었냐고 묻는다."
+      },
+      {
+       "t_raw": "Istoria는 분노도 슬픔도 필요 없다며, 그녀도 Nihilita가 이곳으로 보냈으므로 Dex가 그녀를 돌려보낼 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이스토리아는 분노도 슬픔도 필요 없다며, 그녀도 니힐리타가 이곳으로 보냈으므로 오른쪽이가 그녀를 돌려보낼 수 있다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": "Story",
+       "paragraph": "A9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": "Story",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Long Live Life",
+       "quest_ko": "삶이여 영원하라",
+       "version": "Luna VI",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Judgment",
+       "quest_ko": "최후의 심판",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      }
+     ],
+     "heading": "작중 행적 — 공간의 신전",
+     "latin_left": [
+      "Temple"
+     ]
     },
     {
      "section": "능력",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Supported by A5, Q3 and Q10.",
+     "quote": "The library entrance is right over there. With Dex's power, you should be able to find the hidden door in no time.",
+     "sentences": [
+      {
+       "t_raw": "Dex는 Temple of Space에서 **Spacelike Vectors**를 다뤄 물체를 움직이고 회전시키며 왜곡하고 늘릴 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오른쪽이는 공간의 신전에서 **Spacelike Vectors**를 다뤄 물체를 움직이고 회전시키며 왜곡하고 늘릴 수 있다."
+      },
+      {
+       "t_raw": "공간을 조작하면 그 반전의 잔향이 남고, 이 힘으로 도서관의 숨은 문을 찾는 일도 가능하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공간을 조작하면 그 반전의 잔향이 남고, 이 힘으로 도서관의 숨은 문을 찾는 일도 가능하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": "Profile > Powers and Abilities",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Counterfeit Classics",
+       "quest_ko": "고전 위작",
+       "version": "Luna VI",
+       "speaker": "Calcerius"
+      },
+      {
+       "kind": "quest",
+       "quest": "Counterfeit Classics",
+       "quest_ko": "고전 위작",
+       "version": "Luna VI",
+       "speaker": "Calcerius"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": [
+      "Spacelike Vectors"
+     ]
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Supported by A5 and M3.",
      "quote": "Dex can use his abilities to dismantle the cores of the Keepers, but he can only do so from behind.",
      "sentences": [
       {
-       "t_raw": "Temple of Space에서 Dex는 **Spacelike Vectors**로 물체를 옮기고 회전시키고 왜곡하고 늘린다.",
+       "t_raw": "Dex는 Segment-Domain Keeper와 Maranasati Casket의 핵을 빼앗아 이들을 제어하거나 물리칠 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "공간의 신전에서 오른쪽이는 **Spacelike Vectors**로 물체를 옮기고 회전시키고 왜곡하고 늘린다."
+       "t": "오른쪽이는 Segment-Domain Keeper와 죽음 명상의 관의 핵을 빼앗아 이들을 제어하거나 물리칠 수 있다."
       },
       {
-       "t_raw": "Segment-Domain Keepers와 Maranasati Caskets는 핵을 장악당해 제어되거나 무력화되고, Segment-Domain Keeper의 핵은 후방에서만 해체할 수 있다.",
+       "t_raw": "다만 Keeper의 핵은 뒤에서만 해체할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Segment-Domain Keepers와 죽음 명상의 관은 핵을 장악당해 제어되거나 무력화되고, Segment-Domain Keeper의 핵은 후방에서만 해체할 수 있다."
-      },
-      {
-       "t_raw": "Segment-Domain Keeper의 **핵 제어**에는 후방이라는 조건이 붙는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "Segment-Domain Keeper의 **핵 제어**에는 후방이라는 조건이 붙는 셈이다."
+       "t": "다만 Keeper의 핵은 뒤에서만 해체할 수 있다."
       }
      ],
      "sources": [
@@ -667,29 +843,33 @@
      ],
      "heading": "능력",
      "latin_left": [
-      "Spacelike Vectors",
-      "Segment-Domain Keepers",
       "Segment-Domain Keeper",
-      "Segment-Domain Keeper"
+      "Keeper"
      ]
     },
     {
      "section": "능력",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported. Sentence 1 drops Dex as the subject, but the content matches M2.",
      "quote": "They can be used by Dex to unfold and restore spaces that were previously folded in between pages.",
      "sentences": [
       {
-       "t_raw": "**Restoration Core**로 페이지 사이에 접힌 공간을 펼쳐 복원할 수 있다.",
+       "t_raw": "접힌 공간을 펴 되돌리는 힘도 있어 Mahavaipulya Chamber에서 이전에 접힌 공간을 복원하고, Luyang Academy의 그림 속에 갇힌 공간을 되돌린다.",
        "interp": false,
        "dropped": false,
-       "t": "**「복원 코어」**로 페이지 사이에 접힌 공간을 펼쳐 복원할 수 있다."
+       "t": "접힌 공간을 펴 되돌리는 힘도 있어 진리의 공간에서 이전에 접힌 공간을 복원하고, 녹양 서원의 그림 속에 갇힌 공간을 되돌린다."
       },
       {
-       "t_raw": "Mahavaipulya Chamber에서는 특별한 페이지를 접고 이전에 접힌 공간을 되돌리며, Luyang Academy에서는 그림 속 공간을 복원하고, Desert Pavilion에서는 모래로 구조물을 세운다.",
+       "t_raw": "**Restoration Core**를 사용하면 페이지 사이에 접힌 공간을 펼쳐 복원할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "진리의 공간에서는 특별한 페이지를 접고 이전에 접힌 공간을 되돌리며, 녹양 서원에서는 그림 속 공간을 복원하고, 「모래 위 누각」에서는 모래로 구조물을 세운다."
+       "t": "**「복원 코어」**를 사용하면 페이지 사이에 접힌 공간을 펼쳐 복원할 수 있다."
+      },
+      {
+       "t_raw": "Watcher인 Dex라면 조각 안의 힘으로 길을 강제로 열 수도 있다고 여겨졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Watcher인 오른쪽이라면 조각 안의 힘으로 길을 강제로 열 수도 있다고 여겨졌다."
       }
      ],
      "sources": [
@@ -708,28 +888,49 @@
        "section": null,
        "paragraph": "M2",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lion's Celerity",
+       "quest_ko": "질주하는 사자",
+       "version": "Luna VI",
+       "speaker": "Istoria"
       }
      ],
      "heading": "능력",
-     "latin_left": []
+     "latin_left": [
+      "Watcher"
+     ]
     },
     {
      "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But after Nihilita fell, Dex seems to have gained the ability to carry people of the living world between the Pillar Hall and the surface.",
+     "status": "accepted",
+     "note": "All supported by A5, A6, M4, Q1, Q2 and Q9.",
+     "quote": "The sea of red cubes surrounding the platforms is called \"The Unbroken Sea\" and can only be traversed with Dex's help.",
      "sentences": [
       {
-       "t_raw": "Apathic Interval에서 Dex는 red cubes 표면을 자유롭게 이동하고, The Unbroken Sea는 Dex의 도움으로만 건널 수 있다.",
+       "t_raw": "Apathic Interval에서 Dex는 붉은 정육면체로 이루어진 표면을 자유롭게 다니며, **The Unbroken Sea**는 Dex의 도움으로만 건널 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "무념무상의 공간에서 오른쪽이는 red cubes 표면을 자유롭게 이동하고, The Unbroken Sea는 오른쪽이의 도움으로만 건널 수 있다."
+       "t": "무념무상의 공간에서 오른쪽이는 붉은 정육면체로 이루어진 표면을 자유롭게 다니며, **부서지지 않는 바다**는 오른쪽이의 도움으로만 건널 수 있다."
       },
       {
-       "t_raw": "Nihilita가 쓰러진 뒤에는 Pillar Hall과 지상 사이에서 산 자들의 세계 사람들을 데려갈 수 있게 된 듯하지만, 유년기인 탓에 Temple of Space로 선택되어 온 Uplifted는 되돌려 보내지 못한다.",
+       "t_raw": "Desert Pavilion에서는 모래늪을 이용해 다양한 구조물을 세운다.",
        "interp": false,
        "dropped": false,
-       "t": "니힐리타가 쓰러진 뒤에는 Pillar Hall과 지상 사이에서 산 자들의 세계 사람들을 데려갈 수 있게 된 듯하지만, 유년기인 탓에 공간의 신전으로 선택되어 온 Uplifted는 되돌려 보내지 못한다."
+       "t": "「모래 위 누각」에서는 모래늪을 이용해 다양한 구조물을 세운다."
+      },
+      {
+       "t_raw": "Nihilita가 쓰러진 뒤 Dex는 Pillar Hall과 지표 사이에서 살아 있는 세계의 사람들을 운반하는 능력을 얻은 것으로 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니힐리타가 쓰러진 뒤 오른쪽이는 기둥 전당과 지표 사이에서 살아 있는 세계의 사람들을 운반하는 능력을 얻은 것으로 보인다."
+      },
+      {
+       "t_raw": "또 Nihilita가 보낸 이라면 돌려보낼 수 있었다는 언급과, Paimon이 그 못된 녀석과 같은 종족이라면 상대처럼 Dex도 충분히 노력해 오갈 수 있으리라고 짐작한 일이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 니힐리타가 보낸 이라면 돌려보낼 수 있었다는 언급과, 페이몬이 그 못된 녀석과 같은 종족이라면 상대처럼 오른쪽이도 충분히 노력해 오갈 수 있으리라고 짐작한 일이 있다."
       }
      ],
      "sources": [
@@ -755,6 +956,14 @@
        "wiki_refs": []
       },
       {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": "Profile > Powers and Abilities",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
        "kind": "quest",
        "quest": "A Day the Grand Temple Inscribed with Ages",
        "quest_ko": "신전의 긴 하루",
@@ -762,44 +971,61 @@
        "speaker": "Istoria"
       },
       {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": "Profile",
-       "paragraph": "A3",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "The Final Judgment",
+       "quest_ko": "최후의 심판",
+       "version": "Luna VI",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Judgment",
+       "quest_ko": "최후의 심판",
+       "version": "Luna VI",
+       "speaker": "Istoria"
       }
      ],
      "heading": "능력",
-     "latin_left": [
-      "The Unbroken Sea",
-      "Pillar Hall",
-      "Uplifted"
-     ]
+     "latin_left": []
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He entrusted her with the juvenile Watcher Dex and asked her to free the Temple of Space from Melanta's control.",
+     "status": "accepted",
+     "note": "All supported by A7, M7, M8, Q5, Q6 and Q8.",
+     "quote": "Correct. The Watcher who introduced Dex to you is one who departed. Nihilita of Nothingness.",
      "sentences": [
       {
-       "t_raw": "Melanta의 지배에서 Temple of Space를 해방하려던 Nihilita는 Old Sanatorium Site에 머물던 Raumhilda가 자정 산책 중 만나자 juvenile Watcher인 Dex를 맡기며 해방을 부탁했다.",
+       "t_raw": "Dex는 Nihilita가 Raumhilda에게 맡긴 juvenile Watcher이며, Nihilita는 Temple of Space를 Melanta의 지배에서 벗어나게 할 사람을 찾고 있었다.",
        "interp": false,
        "dropped": false,
-       "t": "멜란타의 지배에서 공간의 신전을 해방하려던 니힐리타는 요양원 옛터에 머물던 라움힐다가 자정 산책 중 만나자 juvenile Watcher인 오른쪽이를 맡기며 해방을 부탁했다."
+       "t": "오른쪽이는 니힐리타가 라움힐다에게 맡긴 어린 Watcher이며, 니힐리타는 공간의 신전을 멜란타의 지배에서 벗어나게 할 사람을 찾고 있었다.",
+       "polish": {
+        "from": "오른쪽이는 니힐리타가 라움힐다에게 맡긴 juvenile Watcher이며, 니힐리타는 공간의 신전을 멜란타의 지배에서 벗어나게 할 사람을 찾고 있었다.",
+        "text": "오른쪽이는 니힐리타가 라움힐다에게 맡긴 어린 Watcher이며, 니힐리타는 공간의 신전을 멜란타의 지배에서 벗어나게 할 사람을 찾고 있었다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "Raumhilda는 Dex를 Temple of Space로 데려갔고, Nihilita는 Raumhilda에게 했던 것처럼 Traveler에게도 Dex를 맡겨 Temple of Space로 보냈다.",
+       "t_raw": "Raumhilda는 Dex를 Temple of Space로 데려갔고, Dex는 그곳의 uplifted 사람들을 알게 되었으며, Nihilita는 Traveler에게도 Dex를 맡겼다.",
        "interp": false,
        "dropped": false,
-       "t": "라움힐다는 오른쪽이를 공간의 신전으로 데려갔고, 니힐리타는 라움힐다에게 했던 것처럼 여행자에게도 오른쪽이를 맡겨 공간의 신전으로 보냈다."
+       "t": "라움힐다는 오른쪽이를 공간의 신전으로 데려갔고, 오른쪽이는 그곳의 승천한 사람들을 알게 되었으며, 니힐리타는 여행자에게도 오른쪽이를 맡겼다.",
+       "polish": {
+        "from": "라움힐다는 오른쪽이를 공간의 신전으로 데려갔고, 오른쪽이는 그곳의 uplifted 사람들을 알게 되었으며, 니힐리타는 여행자에게도 오른쪽이를 맡겼다.",
+        "text": "라움힐다는 오른쪽이를 공간의 신전으로 데려갔고, 오른쪽이는 그곳의 승천한 사람들을 알게 되었으며, 니힐리타는 여행자에게도 오른쪽이를 맡겼다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "Nihilita에게 Dex는 **Temple of Space 해방**을 부탁할 상대에게 건네는 존재였던 셈이다.",
-       "interp": true,
+       "t_raw": "Paimon은 Dex가 Nihilita와 같은 종류인지 되묻고 ink-man의 말을 이해했는지 물으며, Istoria는 Dex를 소개한 Watcher가 Nihilita of Nothingness라 전한다.",
+       "interp": false,
        "dropped": false,
-       "t": "니힐리타에게 오른쪽이는 **공간의 신전 해방**을 부탁할 상대에게 건네는 존재였던 셈이다."
+       "t": "페이몬은 오른쪽이가 니힐리타와 같은 종류인지 되묻고 잉크맨의 말을 이해했는지 물으며, 이스토리아는 오른쪽이를 소개한 Watcher가 Nihilita of Nothingness라 전한다.",
+       "polish": {
+        "from": "페이몬은 오른쪽이가 니힐리타와 같은 종류인지 되묻고 ink-man의 말을 이해했는지 물으며, 이스토리아는 오른쪽이를 소개한 Watcher가 Nihilita of Nothingness라 전한다.",
+        "text": "페이몬은 오른쪽이가 니힐리타와 같은 종류인지 되묻고 잉크맨의 말을 이해했는지 물으며, 이스토리아는 오른쪽이를 소개한 Watcher가 Nihilita of Nothingness라 전한다.",
+        "by": "or-ds"
+       }
       }
      ],
      "sources": [
@@ -840,48 +1066,13 @@
          "name": "The Final Judgment"
         }
        ]
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Watcher"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "What in the world is ink-man talking about? Dex, did you understand any of that?",
-     "sentences": [
-      {
-       "t_raw": "Traveler와 Paimon은 The Wind Has Ceased에서 Zeitlind와 Nihilita를 만나고, Nihilita는 Temple of Space 해방을 돕도록 Traveler에게 Dex를 맡긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자와 페이몬은 멎은 바람에서 차이틀린트와 니힐리타를 만나고, 니힐리타는 공간의 신전 해방을 돕도록 여행자에게 오른쪽이를 맡긴다."
       },
       {
-       "t_raw": "Paimon은 Dex에게 잉크 인간의 말을 알아들었는지 묻고, Dex가 Nihilita와 같은 종류의 존재라는 말에는 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 오른쪽이에게 잉크 인간의 말을 알아들었는지 묻고, 오른쪽이가 니힐리타와 같은 종류의 존재라는 말에는 되묻는다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": "Story",
-       "paragraph": "A8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Nihilita",
-       "revision": 2088544,
-       "section": "Story > Present",
-       "paragraph": "M7",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "The Wind Has Ceased",
+       "quest_ko": "멎은 바람",
+       "version": "Luna VI",
+       "speaker": "Istoria"
       },
       {
        "kind": "quest",
@@ -899,34 +1090,51 @@
       }
      ],
      "heading": "인간관계",
-     "latin_left": []
+     "latin_left": [
+      "Watcher",
+      "Watcher",
+      "Nihilita of Nothingness"
+     ]
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Istoria implores Dex to remember the kindness the temple's inhabitants have shown him, when he grows up.",
+     "status": "accepted",
+     "note": "All supported by A9, M9 and Q7.",
+     "quote": "After the Traveler defeats Melanta and frees the Temple of Space of his influence, Istoria implores Dex to remember the kindness the temple's inhabitants have shown him, when he grows up.",
      "sentences": [
       {
-       "t_raw": "Temple of Space가 Melanta의 영향에서 해방된 뒤, Istoria는 Dex에게 자라서 Temple of Space 주민들이 보인 친절을 기억해 달라고 간청한다.",
+       "t_raw": "Istoria는 Raumhilda와 Dex가 도착했을 때 둘을 알게 되어 Raumhilda와 철학적 논의를 했고, Melanta의 통치 아래 Temple of Space 사람들이 겪는 고통을 보고 스스로 Melanta와 맞서기로 했다.",
        "interp": false,
        "dropped": false,
-       "t": "공간의 신전이 멜란타의 영향에서 해방된 뒤, 이스토리아는 오른쪽이에게 자라서 공간의 신전 주민들이 보인 친절을 기억해 달라고 간청한다."
+       "t": "이스토리아는 라움힐다와 오른쪽이가 도착했을 때 둘을 알게 되어 라움힐다와 철학적 논의를 했고, 멜란타의 통치 아래 공간의 신전 사람들이 겪는 고통을 보고 스스로 멜란타와 맞서기로 했다."
       },
       {
-       "t_raw": "Kshama는 Venipi, Dex, Raumhilda와 새 친구들에게 모두 고맙다고 말한다.",
+       "t_raw": "Melanta의 영향에서 Temple of Space가 해방된 뒤, Istoria는 Dex가 자라면 주민들이 보여 준 친절을 기억하라고 간청한다.",
        "interp": false,
        "dropped": false,
-       "t": "크샤마는 베니피, 오른쪽이, 라움힐다와 새 친구들에게 모두 고맙다고 말한다."
+       "t": "멜란타의 영향에서 공간의 신전이 해방된 뒤, 이스토리아는 오른쪽이가 자라면 주민들이 보여 준 친절을 기억하라고 간청한다."
       },
       {
-       "t_raw": "이는 Temple of Space 주민들이 Dex를 **함께한 존재**로 대했음을 보여 주는 대목으로 보인다.",
-       "interp": true,
+       "t_raw": "Kshama는 Venipi, Dex, Raumhilda와 새로운 친구들에게 고맙다고 말한다.",
+       "interp": false,
        "dropped": false,
-       "t": "이는 공간의 신전 주민들이 오른쪽이를 **함께한 존재**로 대했음을 보여 주는 대목으로 보인다."
+       "t": "크샤마는 베니피, 오른쪽이, 라움힐다와 새로운 친구들에게 고맙다고 말한다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dex",
+       "revision": 2088164,
+       "section": "Story",
+       "paragraph": "A9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
       {
        "kind": "wiki",
        "page": "Istoria",
@@ -934,6 +1142,23 @@
        "section": "Story",
        "paragraph": "M5",
        "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": "Story",
+       "paragraph": "M9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Long Live Life"
+        },
         {
          "type": "quest",
          "name": "The Final Judgment"
@@ -953,27 +1178,39 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Dex was likely created by Nihilita, as it first appears when Nihilita entrusts it to Raumhilda some time before the present.",
+     "status": "accepted",
+     "note": "Facts are supported by A3, Q1 and Q9. The interpretation in sentence 4 follows reasonably and is hedged.",
+     "quote": "But after Nihilita fell, Dex seems to have gained the ability to carry people of the living world between the Pillar Hall and the surface.",
      "sentences": [
       {
-       "t_raw": "Dex의 기원에는 **Nihilita에 의해 만들어졌을 가능성**이 따라붙는다.",
+       "t_raw": "Nihilita가 Temple of Space를 떠난 뒤 Dex는 Teyvat와 Temple of Space 사이에서 사람을 옮기는 **이동 능력**을 얻었다.",
        "interp": false,
        "dropped": false,
-       "t": "오른쪽이의 기원에는 **니힐리타에 의해 만들어졌을 가능성**이 따라붙는다."
+       "t": "니힐리타가 공간의 신전을 떠난 뒤 오른쪽이는 티바트와 공간의 신전 사이에서 사람을 옮기는 **이동 능력**을 얻었다."
       },
       {
-       "t_raw": "Dex는 Nihilita가 Raumhilda에게 맡기던 때 처음 모습을 보였고, 이후 Raumhilda와 Temple of Space로 가 그곳 사람들을 알게 되었다.",
+       "t_raw": "Istoria는 Nihilita가 쓰러진 뒤 Dex가 살아 있는 세계의 사람들을 Pillar Hall과 지상 사이로 데려갈 수 있는 듯하다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "오른쪽이는 니힐리타가 라움힐다에게 맡기던 때 처음 모습을 보였고, 이후 라움힐다와 공간의 신전으로 가 그곳 사람들을 알게 되었다."
+       "t": "이스토리아는 니힐리타가 쓰러진 뒤 오른쪽이가 살아 있는 세계의 사람들을 기둥 전당과 지상 사이로 데려갈 수 있는 듯하다고 전한다."
       },
       {
-       "t_raw": "이 첫 등장은 Dex의 기원을 Nihilita와의 관계에서 읽게 한다고 볼 수 있다.",
+       "t_raw": "그러나 Dex는 어린 Watcher이기에 Temple of Space로 데려오도록 선택된 **Uplifted**를 되돌려 보낼 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 오른쪽이는 어린 Watcher이기에 공간의 신전으로 데려오도록 선택된 **Uplifted**를 되돌려 보낼 수 없다."
+      },
+      {
+       "t_raw": "Istoria는 그녀 또한 Nihilita에 의해 이곳으로 보내졌으므로 Dex가 그녀를 언제든 돌려보낼 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이스토리아는 그녀 또한 니힐리타에 의해 이곳으로 보내졌으므로 오른쪽이가 그녀를 언제든 돌려보낼 수 있다고 말한다."
+      },
+      {
+       "t_raw": "두 증언을 겹쳐 보면 이동과 되돌림의 조건은 Nihilita의 부재, Dex의 미성숙함, 대상이 보내진 경위가 얽힌 물음으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이 첫 등장은 오른쪽이의 기원을 니힐리타와의 관계에서 읽게 한다고 볼 수 있다."
+       "t": "두 증언을 겹쳐 보면 이동과 되돌림의 조건은 니힐리타의 부재, 오른쪽이의 미성숙함, 대상이 보내진 경위가 얽힌 물음으로 보인다."
       }
      ],
      "sources": [
@@ -981,88 +1218,54 @@
        "kind": "wiki",
        "page": "Dex",
        "revision": 2088164,
-       "section": "Story",
-       "paragraph": "A7",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Isn't it the same species as that baddie? If Melanta can go back and forth, then maybe Dex could do it too if it tried hard enough!",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 Melanta를 떠올리며 Dex가 **같은 종류**라면 Melanta처럼 오갈 수 있을지 모른다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 멜란타를 떠올리며 오른쪽이가 **같은 종류**라면 멜란타처럼 오갈 수 있을지 모른다고 말한다."
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
       },
       {
-       "t_raw": "Istoria는 Dex도 Watcher이므로 조각 속 힘으로 길을 강제로 열 수 있을지 모른다고 본다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이스토리아는 오른쪽이도 Watcher이므로 조각 속 힘으로 길을 강제로 열 수 있을지 모른다고 본다."
+       "kind": "quest",
+       "quest": "A Day the Grand Temple Inscribed with Ages",
+       "quest_ko": "신전의 긴 하루",
+       "version": "Luna VI",
+       "speaker": "Istoria"
       },
-      {
-       "t_raw": "두 말은 Dex의 가능성이 공간 이동과 길 열기로 이어질 수 있음을 보여준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "두 말은 오른쪽이의 가능성이 공간 이동과 길 열기로 이어질 수 있음을 보여준다."
-      }
-     ],
-     "sources": [
       {
        "kind": "quest",
        "quest": "The Final Judgment",
        "quest_ko": "최후의 심판",
-       "version": "Luna VI",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Lion's Celerity",
-       "quest_ko": "질주하는 사자",
        "version": "Luna VI",
        "speaker": "Istoria"
       }
      ],
      "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Watcher"
+      "Watcher",
+      "Uplifted"
      ]
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Supported by M1. The interpretation is a reasonable, hedged reading of the puzzlement.",
      "quote": "Upon returning to the Temple of Space, they are puzzled to find that Paimon was not drawn into the Interval with them.",
      "sentences": [
       {
-       "t_raw": "Lion's Celerity 때 Traveler, Istoria, Zeitlind, Dex는 Apathic Interval로 던져지지만 Paimon은 끌려가지 않는다.",
+       "t_raw": "Lion's Celerity 때 Traveler, Istoria, Zeitlind, Dex는 Apathic Interval로 던져졌고, Maranasati Caskets를 부수고 Deathmuse Shards를 모아 탈출했다.",
        "interp": false,
        "dropped": false,
-       "t": "Lion의 Celerity 때 여행자, 이스토리아, 차이틀린트, 오른쪽이는 무념무상의 공간으로 던져지지만 페이몬은 끌려가지 않는다."
+       "t": "Lion의 Celerity 때 여행자, 이스토리아, 차이틀린트, 오른쪽이는 무념무상의 공간으로 던져졌고, 죽음 명상의 관을 부수고 망각의 조각을 모아 탈출했다."
       },
       {
-       "t_raw": "돌아온 일행은 그 이유를 의아해한다.",
+       "t_raw": "Temple of Space로 돌아온 일행은 **Paimon**이 Apathic Interval로 함께 끌려오지 않았다는 사실에 의문을 품었다.",
        "interp": false,
        "dropped": false,
-       "t": "돌아온 일행은 그 이유를 의아해한다."
+       "t": "공간의 신전으로 돌아온 일행은 **페이몬**이 무념무상의 공간으로 함께 끌려오지 않았다는 사실에 의문을 품었다."
       },
       {
-       "t_raw": "이 대비는 **Paimon이 Apathic Interval에 끌려가지 않은** 의문을 남긴다.",
+       "t_raw": "Dex가 함께 있었는데도 Paimon은 동행하지 않았으니, 누가 어떤 방식으로 끌려가는지는 풀리지 않은 물음으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이 대비는 **페이몬이 무념무상의 공간에 끌려가지 않은** 의문을 남긴다."
+       "t": "오른쪽이가 함께 있었는데도 페이몬은 동행하지 않았으니, 누가 어떤 방식으로 끌려가는지는 풀리지 않은 물음으로 보인다."
       }
      ],
      "sources": [
@@ -1088,37 +1291,35 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Dex takes on the appearance of a Watcher's right hand with an eye on the back of it.",
+     "status": "accepted",
+     "note": "All sentences match the English.",
+     "quote": "The thing that Dex just touched is the key. Whenever space is manipulated, it leaves a residual trail of its own reversal.",
      "sentences": [
       {
-       "t_raw": "Dex의 전체 이름은 **Dexter**다.",
+       "t_raw": "Dex는 손등에 눈이 달린 Watcher의 오른손 모습을 하고 있으며, 그 손은 **붉고 흰 재질**에 손톱과 손목 둘레의 금장신구로 꾸며져 있다.",
        "interp": false,
        "dropped": false,
-       "t": "오른쪽이의 전체 이름은 **덱스터**다."
+       "t": "오른쪽이는 손등에 눈이 달린 Watcher의 오른손 모습을 하고 있으며, 그 손은 **붉고 흰 재질**에 손톱과 손목 둘레의 금장신구로 꾸며져 있다."
       },
       {
-       "t_raw": "겉모습은 등에 눈이 달린 **Watcher의 오른손** 형상이며, 붉고 흰 재질의 손에는 손톱과 손목 둘레에 금장신구가 있다.",
+       "t_raw": "Calcerius는 Dex가 방금 만진 것이 열쇠라며, 공간이 조작될 때마다 **반전의 잔향**이 남는다고 설명한다.",
        "interp": false,
        "dropped": false,
-       "t": "겉모습은 등에 눈이 달린 **Watcher의 오른손** 형상이며, 붉고 흰 재질의 손에는 손톱과 손목 둘레에 금장신구가 있다."
+       "t": "칼케리우스는 오른쪽이가 방금 만진 것이 열쇠라며, 공간이 조작될 때마다 **반전의 잔향**이 남는다고 설명한다."
+      },
+      {
+       "t_raw": "Paimon은 ink-man이 무슨 말을 하는지 모르겠다며 Dex에게 알아들었는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 잉크맨이 무슨 말을 하는지 모르겠다며 오른쪽이에게 알아들었는지 묻는다.",
+       "polish": {
+        "from": "페이몬은 ink-man이 무슨 말을 하는지 모르겠다며 오른쪽이에게 알아들었는지 묻는다.",
+        "text": "페이몬은 잉크맨이 무슨 말을 하는지 모르겠다며 오른쪽이에게 알아들었는지 묻는다.",
+        "by": "or-ds"
+       }
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Wind Has Ceased"
-        }
-       ]
-      },
       {
        "kind": "wiki",
        "page": "Dex",
@@ -1126,33 +1327,14 @@
        "section": "Profile > Appearance",
        "paragraph": "A4",
        "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Watcher"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "What in the world is ink-man talking about? Dex, did you understand any of that?",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 'ink-man'이 무슨 말을 하는지 모르겠다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 'ink-man'이 무슨 말을 하는지 모르겠다고 한다."
       },
       {
-       "t_raw": "이어서 Dex에게 그 말을 하나라도 이해했는지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어서 오른쪽이에게 그 말을 하나라도 이해했는지 묻는다."
-      }
-     ],
-     "sources": [
+       "kind": "quest",
+       "quest": "Counterfeit Classics",
+       "quest_ko": "고전 위작",
+       "version": "Luna VI",
+       "speaker": "Calcerius"
+      },
       {
        "kind": "quest",
        "quest": "Long Live Life",
@@ -1162,25 +1344,33 @@
       }
      ],
      "heading": "여담",
-     "latin_left": []
+     "latin_left": [
+      "Watcher"
+     ]
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Venipi! Dex! And Raumhilda and our new friends! Thank you all!",
+     "status": "accepted",
+     "note": "Facts match Q7 and Q10. The interpretation is a reasonable reading.",
+     "quote": "The library entrance is right over there. With Dex's power, you should be able to find the hidden door in no time.",
      "sentences": [
       {
-       "t_raw": "Kshama는 Venipi, Dex, Raumhilda와 새 친구들에게 모두 고맙다고 외친다.",
+       "t_raw": "Kshama는 Venipi, Dex, Raumhilda와 새로운 친구들을 한꺼번에 부르며 모두 고맙다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "크샤마는 베니피, 오른쪽이, 라움힐다와 새 친구들에게 모두 고맙다고 외친다."
+       "t": "크샤마는 베니피, 오른쪽이, 라움힐다와 새로운 친구들을 한꺼번에 부르며 모두 고맙다고 말한다."
       },
       {
-       "t_raw": "Calcerius는 도서관 입구가 바로 그곳에 있다며, Dex의 힘이면 숨은 문을 금방 찾을 수 있을 것이라고 말한다.",
+       "t_raw": "Calcerius는 도서관 입구가 바로 저기라며, Dex의 힘이라면 숨겨진 문을 금방 찾을 수 있을 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "칼케리우스는 도서관 입구가 바로 그곳에 있다며, 오른쪽이의 힘이면 숨은 문을 금방 찾을 수 있을 것이라고 말한다."
+       "t": "칼케리우스는 도서관 입구가 바로 저기라며, 오른쪽이의 힘이라면 숨겨진 문을 금방 찾을 수 있을 것이라고 말한다."
+      },
+      {
+       "t_raw": "Dex는 현장의 인사와 안내에서도 자연스럽게 언급되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오른쪽이는 현장의 인사와 안내에서도 자연스럽게 언급되는 셈이다."
       }
      ],
      "sources": [
@@ -1206,8 +1396,25 @@
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "어? Dex가 Nihilita와 같은 종류의 존재라고?",
+     "en": "Huh? You're saying Dex is the same kind of being as Nihilita?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "A Day the Grand Temple Inscribed with Ages",
+      "quest_ko": "신전의 긴 하루",
+      "version": "Luna VI",
+      "speaker": "Paimon"
+     },
+     "t": "어? 오른쪽이가 니힐리타와 같은 종류의 존재라고?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation.",
      "t_raw": "맞다. 너희에게 Dex를 소개한 Watcher는 떠난 자다. Nihilita of Nothingness.",
      "en": "Correct. The Watcher who introduced Dex to you is one who departed. Nihilita of Nothingness.",
      "speaker": "Istoria",
@@ -1222,27 +1429,10 @@
      "speaker_ko": "이스토리아"
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "맞다. 너희에게 Dex를 소개한 Watcher는 떠난 존재다. Nihilita of Nothingness.",
-     "en": "Correct. The Watcher who introduced Dex to you is one who departed. Nihilita of Nothingness.",
-     "speaker": "Istoria",
-     "source": {
-      "kind": "quest",
-      "quest": "The Wind Has Ceased",
-      "quest_ko": "멎은 바람",
-      "version": "Luna VI",
-      "speaker": "Istoria"
-     },
-     "t": "맞다. 너희에게 오른쪽이를 소개한 Watcher는 떠난 존재다. Nihilita of Nothingness.",
-     "speaker_ko": "이스토리아"
-    },
-    {
-     "section": "작중 행적 — Temple of Space 해방",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Dex도 Watcher이므로, 이 파편들 안에 담긴 힘을 사용해 길을 강제로 열 수 있을지도 모른다.",
+     "section": "작중 행적 — Temple of Space",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Dex도 Watcher인 만큼, 이 파편들에 담긴 힘을 이용해 길을 강제로 열 수 있을지도 모른다.",
      "en": "Since Dex is also a Watcher, it might be able to use the power contained within these fragments to force open a path.",
      "speaker": "Istoria",
      "source": {
@@ -1252,14 +1442,14 @@
       "version": "Luna VI",
       "speaker": "Istoria"
      },
-     "t": "오른쪽이도 Watcher이므로, 이 파편들 안에 담긴 힘을 사용해 길을 강제로 열 수 있을지도 모른다.",
+     "t": "오른쪽이도 Watcher인 만큼, 이 파편들에 담긴 힘을 이용해 길을 강제로 열 수 있을지도 모른다.",
      "speaker_ko": "이스토리아"
     },
     {
      "section": "능력",
      "status": "accepted",
      "note": "Faithful translation.",
-     "t_raw": "하지만 Nihilita가 쓰러진 뒤, Dex는 Pillar Hall과 지상 사이에서 산 자들의 세계 사람들을 데려갈 수 있는 능력을 얻은 듯하다.",
+     "t_raw": "하지만 Nihilita가 쓰러진 뒤, Dex는 Pillar Hall과 지표 사이에서 살아 있는 세계의 사람들을 운반하는 능력을 얻은 것으로 보인다.",
      "en": "But after Nihilita fell, Dex seems to have gained the ability to carry people of the living world between the Pillar Hall and the surface.",
      "speaker": "Istoria",
      "source": {
@@ -1269,13 +1459,47 @@
       "version": "Luna VI",
       "speaker": "Istoria"
      },
-     "t": "하지만 니힐리타가 쓰러진 뒤, 오른쪽이는 Pillar Hall과 지상 사이에서 산 자들의 세계 사람들을 데려갈 수 있는 능력을 얻은 듯하다.",
+     "t": "하지만 니힐리타가 쓰러진 뒤, 오른쪽이는 기둥 전당과 지표 사이에서 살아 있는 세계의 사람들을 운반하는 능력을 얻은 것으로 보인다.",
      "speaker_ko": "이스토리아"
     },
     {
      "section": "인간관계",
      "status": "accepted",
-     "note": "Faithful translation.",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "도대체 ink-man이 무슨 말을 하고 있는 거지? Dex, 그중 하나라도 이해한 거야?",
+     "en": "What in the world is ink-man talking about? Dex, did you understand any of that?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Long Live Life",
+      "quest_ko": "삶이여 영원하라",
+      "version": "Luna VI",
+      "speaker": "Paimon"
+     },
+     "t": "도대체 ink-man이 무슨 말을 하고 있는 거지? 오른쪽이, 그중 하나라도 이해한 거야?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Istoria's line, hedge 'seems' preserved.",
+     "t_raw": "그러나 Nihilita가 쓰러진 뒤, Dex는 살아 있는 세계의 사람들을 Pillar Hall과 지상 사이로 데려가는 능력을 얻은 듯하다.",
+     "en": "But after Nihilita fell, Dex seems to have gained the ability to carry people of the living world between the Pillar Hall and the surface.",
+     "speaker": "Istoria",
+     "source": {
+      "kind": "quest",
+      "quest": "A Day the Grand Temple Inscribed with Ages",
+      "quest_ko": "신전의 긴 하루",
+      "version": "Luna VI",
+      "speaker": "Istoria"
+     },
+     "t": "그러나 니힐리타가 쓰러진 뒤, 오른쪽이는 살아 있는 세계의 사람들을 기둥 전당과 지상 사이로 데려가는 능력을 얻은 듯하다.",
+     "speaker_ko": "이스토리아"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Kshama's line.",
      "t_raw": "Venipi! Dex! 그리고 Raumhilda와 우리의 새 친구들! 모두 고마워!",
      "en": "Venipi! Dex! And Raumhilda and our new friends! Thank you all!",
      "speaker": "Kshama",
@@ -1288,40 +1512,6 @@
      },
      "t": "베니피! 오른쪽이! 그리고 라움힐다와 우리의 새 친구들! 모두 고마워!",
      "speaker_ko": "크샤마"
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "accepted",
-     "note": "Faithful translation preserving the speculation.",
-     "t_raw": "그 녀석이 그 나쁜 녀석과 같은 종류가 아닌가? Melanta가 오갈 수 있다면, Dex도 마음만 먹으면 그럴 수 있을지도 몰라!",
-     "en": "Isn't it the same species as that baddie? If Melanta can go back and forth, then maybe Dex could do it too if it tried hard enough!",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "The Final Judgment",
-      "quest_ko": "최후의 심판",
-      "version": "Luna VI",
-      "speaker": "Paimon"
-     },
-     "t": "그 녀석이 그 나쁜 녀석과 같은 종류가 아닌가? 멜란타가 오갈 수 있다면, 오른쪽이도 마음만 먹으면 그럴 수 있을지도 몰라!",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "여담",
-     "status": "accepted",
-     "note": "Faithful translation.",
-     "t_raw": "Paimon: 도대체 ink-man이 무슨 말을 하는 거지? Dex, 너는 저걸 하나라도 이해했어?",
-     "en": "What in the world is ink-man talking about? Dex, did you understand any of that?",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Long Live Life",
-      "quest_ko": "삶이여 영원하라",
-      "version": "Luna VI",
-      "speaker": "Paimon"
-     },
-     "t": "페이몬: 도대체 ink-man이 무슨 말을 하는 거지? 오른쪽이, 너는 저걸 하나라도 이해했어?",
-     "speaker_ko": "페이몬"
     }
    ]
   }

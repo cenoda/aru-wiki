@@ -20,51 +20,51 @@
    "input_chars": 2011,
    "input_cut": false,
    "input_hash": "d7730f5e92dd",
-   "writer": "or-ds,ds",
+   "writer": "or-ds",
    "verifier": "claude-sonnet",
-   "status": "needs_verify",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
      "status": "accepted",
-     "note": "All supported. Sentence 1 slightly blurs 'power of wind' into 'power of undying wind', but this is minor.",
-     "quote": "Sources differ on what exactly the thousand winds encompass or represent.",
+     "note": "All sentences are supported by A1-A6, M1. The interpretation is reasonable.",
+     "quote": "The thousand winds, also called the thousand threads, is a term that has appeared in legends and historical texts of Mondstadt, Liyue, Sumeru, and Enkanomiya.",
      "sentences": [
       {
-       "t_raw": "**Thousand Winds**는 Mondstadt, Liyue, Sumeru, Enkanomiya의 전설과 역사 문헌에 등장하는 말로, **Istaroth**를 가리키거나 Mondstadt를 지키는 바람의 의인화, 또는 침식의 별칭으로 쓰여 왔다.",
+       "t_raw": "Thousand Winds는 Mondstadt, Liyue, Sumeru, Enkanomiya의 전설과 역사 텍스트에 등장하는 말로, Istaroth, Mondstadt를 지키는 바람의 인격화, Ad Oblivione이라는 침식 개념 등 여러 대상을 가리킨다.",
        "interp": false,
        "dropped": false,
-       "t": "**천풍**은 몬드, 리월, 수메르, 연하궁의 전설과 역사 문헌에 등장하는 말로, **이스타로트**를 가리키거나 몬드를 지키는 바람의 의인화, 또는 침식의 별칭으로 쓰여 왔다."
+       "t": "천풍은 몬드, 리월, 수메르, 연하궁의 전설과 역사 텍스트에 등장하는 말로, 이스타로트, 몬드를 지키는 바람의 인격화, Ad Oblivione이라는 침식 개념 등 여러 대상을 가리킨다."
       },
       {
-       "t_raw": "자료마다 이 말이 무엇을 포괄하는지 해석이 갈리며, Enkanomiya에서는 Istaroth와 'undying wind'의 힘을 가리키는 표현으로 쓰인다.",
+       "t_raw": "Enkanomiya 신앙에서는 Istaroth를 **'undying wind'의 인격화**로 보며, 'the thousand winds of time'과 'the thousand winds'가 그녀와 바람의 힘을 뜻한다.",
        "interp": false,
        "dropped": false,
-       "t": "자료마다 이 말이 무엇을 포괄하는지 해석이 갈리며, 연하궁에서는 이스타로트와 '불멸의 바람'의 힘을 가리키는 표현으로 쓰인다.",
+       "t": "연하궁 신앙에서는 이스타로트를 **'불멸의 바람'의 인격화**로 보며, '시간의 천풍'과 '천풍'이 그녀와 바람의 힘을 뜻한다.",
        "polish": {
-        "from": "자료마다 이 말이 무엇을 포괄하는지 해석이 갈리며, 연하궁에서는 이스타로트와 'undying wind'의 힘을 가리키는 표현으로 쓰인다.",
-        "text": "자료마다 이 말이 무엇을 포괄하는지 해석이 갈리며, 연하궁에서는 이스타로트와 '불멸의 바람'의 힘을 가리키는 표현으로 쓰인다.",
+        "from": "연하궁 신앙에서는 이스타로트를 **'undying wind'의 인격화**로 보며, 'the thousand winds of time'과 'the thousand winds'가 그녀와 바람의 힘을 뜻한다.",
+        "text": "연하궁 신앙에서는 이스타로트를 **'불멸의 바람'의 인격화**로 보며, '시간의 천풍'과 '천풍'이 그녀와 바람의 힘을 뜻한다.",
         "by": "ds"
        }
       },
       {
-       "t_raw": "Mondstadt에서는 Istaroth 숭배가 희미해진 뒤 이 말이 북부 Teyvat의 실제 바람과 구름, 나아가 Mondstadt의 수호자들로 읽히는 쪽으로 기억이 바뀐 것으로 보인다.",
+       "t_raw": "Mondstadt에서는 Istaroth 숭배가 희미해지고 잊힌 것으로 보이는 가운데, 이 말이 **Cloud Atlas를 통해 이름과 인격을 부여받았다고 전해지는 북부 Teyvat의 바람과 구름**, Mondstadt의 수호자로 해석되며, Venti는 본래 'single thread of the thousand winds'였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드에서는 이스타로트 숭배가 희미해지고 잊힌 것으로 보이는 가운데, 이 말이 **천풍만운을 통해 이름과 인격을 부여받았다고 전해지는 북부 티바트의 바람과 구름**, 몬드의 수호자로 해석되며, 벤티는 본래 '천풍의 한 가닥'이었다.",
+       "polish": {
+        "from": "몬드에서는 이스타로트 숭배가 희미해지고 잊힌 것으로 보이는 가운데, 이 말이 **천풍만운을 통해 이름과 인격을 부여받았다고 전해지는 북부 티바트의 바람과 구름**, 몬드의 수호자로 해석되며, 벤티는 본래 'single thread of the thousand winds'였다.",
+        "text": "몬드에서는 이스타로트 숭배가 희미해지고 잊힌 것으로 보이는 가운데, 이 말이 **천풍만운을 통해 이름과 인격을 부여받았다고 전해지는 북부 티바트의 바람과 구름**, 몬드의 수호자로 해석되며, 벤티는 본래 '천풍의 한 가닥'이었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Thousand Winds는 Venti의 바람 권능 설명과 Windblume Festival의 축제 대상으로도 쓰여, **신앙·자연·축제·수호 서사가 한 개념에 겹쳐 있는 셈**이다.",
        "interp": true,
        "dropped": false,
-       "t": "몬드에서는 이스타로트 숭배가 희미해진 뒤 이 말이 북부 티바트의 실제 바람과 구름, 나아가 몬드의 수호자들로 읽히는 쪽으로 기억이 바뀐 것으로 보인다."
-      },
-      {
-       "t_raw": "Venti는 원래 'single thread of the thousand winds'였고, 힘을 모아 신이 되어 집정관 Barbatos의 자리에 올랐다.",
-       "interp": false,
-       "dropped": false,
-       "t": "벤티는 원래 '천풍의 한 가닥'이었고, 힘을 모아 신이 되어 집정관 바르바토스의 자리에 올랐다.",
-       "polish": {
-        "from": "벤티는 원래 'single thread of the thousand winds'였고, 힘을 모아 신이 되어 집정관 바르바토스의 자리에 올랐다.",
-        "text": "벤티는 원래 '천풍의 한 가닥'이었고, 힘을 모아 신이 되어 집정관 바르바토스의 자리에 올랐다.",
-        "by": "ds"
-       }
+       "t": "천풍은 벤티의 바람 권능 설명과 윈드블룸 축제의 축제 대상으로도 쓰여, **신앙·자연·축제·수호 서사가 한 개념에 겹쳐 있는 셈**이다."
       }
      ],
      "sources": [
@@ -172,69 +172,33 @@
       }
      ],
      "heading": null,
-     "latin_left": []
+     "latin_left": [
+      "Ad Oblivione"
+     ]
     },
     {
      "section": "개요",
      "status": "accepted",
-     "note": "All supported by the English.",
-     "quote": "Sources differ on what exactly the thousand winds encompass or represent.",
+     "note": "Facts match A1-A5. The interpretation is reasonable.",
+     "quote": "a term that has appeared in legends and historical texts of Mondstadt, Liyue, Sumeru, and Enkanomiya",
      "sentences": [
       {
-       "t_raw": "**Thousand Winds**는 Mondstadt, Liyue, Sumeru, Enkanomiya의 전승과 역사 문헌에 등장하는 용어로, Istaroth, 즉 Ruler of Time의 별칭인 'thousand winds of time'과 'thousand winds'를 가리키는가 하면, Mondstadt를 지키는 바람들의 의인화, 그중 Barbatos를 포함하는 대상, Aranara Aranaga가 **Ad Oblivione**이라 부른 침식 개념을 가리키기도 한다.",
+       "t_raw": "**Thousand Winds**는 Mondstadt, Liyue, Sumeru, Enkanomiya의 전설과 역사 문헌에 등장한 용어다.",
        "interp": false,
        "dropped": false,
-       "t": "**천풍**은 몬드, 리월, 수메르, 연하궁의 전승과 역사 문헌에 등장하는 용어로, 이스타로트, 즉 시간의 집정관의 별칭인 '시간의 천풍'과 '천풍'을 가리키는가 하면, 몬드를 지키는 바람들의 의인화, 그중 바르바토스를 포함하는 대상, 아란나라 아란나가가 **Ad Oblivione**이라 부른 침식 개념을 가리키기도 한다.",
-       "polish": {
-        "from": "**천풍**은 몬드, 리월, 수메르, 연하궁의 전승과 역사 문헌에 등장하는 용어로, 이스타로트, 즉 시간의 집정관의 별칭인 'thousand winds of time'과 'thousand winds'를 가리키는가 하면, 몬드를 지키는 바람들의 의인화, 그중 바르바토스를 포함하는 대상, 아란나라 아란나가가 **Ad Oblivione**이라 부른 침식 개념을 가리키기도 한다.",
-        "text": "**천풍**은 몬드, 리월, 수메르, 연하궁의 전승과 역사 문헌에 등장하는 용어로, 이스타로트, 즉 시간의 집정관의 별칭인 '시간의 천풍'과 '천풍'을 가리키는가 하면, 몬드를 지키는 바람들의 의인화, 그중 바르바토스를 포함하는 대상, 아란나라 아란나가가 **Ad Oblivione**이라 부른 침식 개념을 가리키기도 한다.",
-        "by": "ds"
-       }
+       "t": "**천풍**은 몬드, 리월, 수메르, 연하궁의 전설과 역사 문헌에 등장한 용어다."
       },
       {
-       "t_raw": "출처들에서는 이 용어가 정확히 무엇을 포괄하거나 표상하는지 설명이 갈린다.",
+       "t_raw": "이 이름은 Istaroth를 뜻하기도 하고, Mondstadt를 지키는 바람의 인격화들을 포함하기도 하며, Aranara Aranaga가 **Ad Oblivione**라고 부른 침식의 개념과도 연결된다.",
        "interp": false,
        "dropped": false,
-       "t": "출처들에서는 이 용어가 정확히 무엇을 포괄하거나 표상하는지 설명이 갈린다."
+       "t": "이 이름은 이스타로트를 뜻하기도 하고, 몬드를 지키는 바람의 인격화들을 포함하기도 하며, 아란나라 아란나가가 **Ad Oblivione**라고 부른 침식의 개념과도 연결된다."
       },
       {
-       "t_raw": "Enkanomiya의 신앙에서 Istaroth는 'undying wind'의 의인화이며, 'thousand winds of time'과 'thousand winds'는 그녀와 바람의 힘을 가리킨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "연하궁의 신앙에서 이스타로트는 '불멸의 바람'의 의인화이며, '시간의 천풍'과 '천풍'은 그녀와 바람의 힘을 가리킨다.",
-       "polish": {
-        "from": "연하궁의 신앙에서 이스타로트는 'undying wind'의 의인화이며, 'thousand winds of time'과 'thousand winds'는 그녀와 바람의 힘을 가리킨다.",
-        "text": "연하궁의 신앙에서 이스타로트는 '불멸의 바람'의 의인화이며, '시간의 천풍'과 '천풍'은 그녀와 바람의 힘을 가리킨다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "Mondstadt에서는 Istaroth 숭배가 흐려져 잊힌 것으로 보이며, 'thousand winds'는 현재 북부 Teyvat의 바람과 구름이 Cloud Atlas를 통해 각각 이름과 성격을 부여받았다고 전해지는 Mondstadt의 수호자들로 해석된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "몬드에서는 이스타로트 숭배가 흐려져 잊힌 것으로 보이며, '천풍'은 현재 북부 티바트의 바람과 구름이 Cloud Atlas를 통해 각각 이름과 성격을 부여받았다고 전해지는 몬드의 수호자들로 해석된다.",
-       "polish": {
-        "from": "몬드에서는 이스타로트 숭배가 흐려져 잊힌 것으로 보이며, 'thousand winds'는 현재 북부 티바트의 바람과 구름이 Cloud Atlas를 통해 각각 이름과 성격을 부여받았다고 전해지는 몬드의 수호자들로 해석된다.",
-        "text": "몬드에서는 이스타로트 숭배가 흐려져 잊힌 것으로 보이며, '천풍'은 현재 북부 티바트의 바람과 구름이 Cloud Atlas를 통해 각각 이름과 성격을 부여받았다고 전해지는 몬드의 수호자들로 해석된다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "Venti는 Barbatos로서 집정관의 자리에 오르기 전에는 그 thousand winds 가운데 'single thread'였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "벤티는 바르바토스로서 집정관의 자리에 오르기 전에는 그 천풍 가운데 '한 가닥'이었다.",
-       "polish": {
-        "from": "벤티는 바르바토스로서 집정관의 자리에 오르기 전에는 그 thousand winds 가운데 'single thread'였다.",
-        "text": "벤티는 바르바토스로서 집정관의 자리에 오르기 전에는 그 천풍 가운데 '한 가닥'이었다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "같은 표현이 Ruler of Time의 별칭과 Mondstadt의 수호자 전승을 함께 잇는 매개로 보인다.",
+       "t_raw": "이런 쓰임의 폭 때문에 Thousand Winds는 단일한 존재명이라기보다 여러 층위를 묶는 표제어로 읽힌다.",
        "interp": true,
        "dropped": false,
-       "t": "같은 표현이 시간의 집정관의 별칭과 몬드의 수호자 전승을 함께 잇는 매개로 보인다."
+       "t": "이런 쓰임의 폭 때문에 천풍은 단일한 존재명이라기보다 여러 층위를 묶는 표제어로 읽힌다."
       }
      ],
      "sources": [
@@ -310,6 +274,73 @@
          "name": "Hydrological Studies in Byakuyakoku"
         }
        ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Ad Oblivione"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match A5, A6 and M1. The interpretation is reasonable.",
+     "quote": "a festival in Mondstadt celebrating the Thousand Winds",
+     "sentences": [
+      {
+       "t_raw": "Enkanomiya 신앙에서 Istaroth는 'undying wind'의 인격화이며, 'the thousand winds of time'과 'the thousand winds'는 그녀와 바람의 힘을 가리킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "연하궁 신앙에서 이스타로트는 '불멸의 바람'의 인격화이며, '시간의 천풍'과 '천풍'은 그녀와 바람의 힘을 가리킨다.",
+       "polish": {
+        "from": "연하궁 신앙에서 이스타로트는 'undying wind'의 인격화이며, 'the thousand winds of time'과 'the thousand winds'는 그녀와 바람의 힘을 가리킨다.",
+        "text": "연하궁 신앙에서 이스타로트는 '불멸의 바람'의 인격화이며, '시간의 천풍'과 '천풍'은 그녀와 바람의 힘을 가리킨다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Mondstadt에서는 Istaroth 숭배가 희미해지고 잊힌 것으로 보이는 가운데, 'the thousand winds'가 현재 northern Teyvat의 실제 바람과 구름, 그리고 Cloud Atlas를 통해 이름과 인격을 부여받았다고 전해지는 Mondstadt의 수호자들로 해석된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드에서는 이스타로트 숭배가 희미해지고 잊힌 것으로 보이는 가운데, 'the thousand winds'가 현재 northern 티바트의 실제 바람과 구름, 그리고 천풍만운을 통해 이름과 인격을 부여받았다고 전해지는 몬드의 수호자들로 해석된다."
+      },
+      {
+       "t_raw": "Venti는 본래 **Thousand Winds**의 'single thread'였고, 힘을 모아 신이 되어 Barbatos로서 집정관의 자리에 올랐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 본래 **천풍**의 '한 가닥'이었고, 힘을 모아 신이 되어 바르바토스로서 집정관의 자리에 올랐다.",
+       "polish": {
+        "from": "벤티는 본래 **천풍**의 'single thread'였고, 힘을 모아 신이 되어 바르바토스로서 집정관의 자리에 올랐다.",
+        "text": "벤티는 본래 **천풍**의 '한 가닥'이었고, 힘을 모아 신이 되어 바르바토스로서 집정관의 자리에 올랐다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Mondstadt의 Windblume Festival은 Thousand Winds를 기리는 축제다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드의 윈드블룸 축제는 천풍을 기리는 축제다."
+      },
+      {
+       "t_raw": "이 축제와 문헌 해석을 함께 보면, Thousand Winds는 신앙의 대상이자 Mondstadt의 바람·수호 표상으로 겹쳐 쓰인다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 축제와 문헌 해석을 함께 보면, 천풍은 신앙의 대상이자 몬드의 바람·수호 표상으로 겹쳐 쓰인다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Thousand Winds",
+       "revision": 1712283,
+       "section": "Overview",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Hydrological Studies in Byakuyakoku"
+        }
+       ]
       },
       {
        "kind": "wiki",
@@ -339,47 +370,53 @@
          "name": "Skyward Harp"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Windblume Festival",
+       "revision": 156480,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Ad Oblivione",
-      "Cloud Atlas"
-     ]
+     "latin_left": []
     },
     {
-     "section": "정체 — Istaroth와 undying wind",
+     "section": "정체",
      "status": "accepted",
-     "note": "All supported.",
-     "quote": "In Enkanomiya beliefs, Istaroth is the personification of \"undying wind,\" and the phrases \"the thousand winds of time\" and \"the thousand winds\" refer to her and the power of wind.",
+     "note": "Facts match A2-A5. The interpretation is reasonable.",
+     "quote": "Sources differ on what exactly the thousand winds encompass or represent.",
      "sentences": [
       {
-       "t_raw": "Istaroth는 Ruler of Time이며, 'the thousand winds of time' 또는 간단히 'the thousand winds'라고도 불린다.",
+       "t_raw": "Thousand Winds의 범위에 대해서는 출처마다 견해가 다르다.",
        "interp": false,
        "dropped": false,
-       "t": "이스타로트는 시간의 집정관이며, '시간의 천풍' 또는 간단히 '천풍'이라고도 불린다.",
+       "t": "천풍의 범위에 대해서는 출처마다 견해가 다르다."
+      },
+      {
+       "t_raw": "Istaroth는 the Ruler of Time으로, 'the thousand winds of time' 또는 'the thousand winds'라 불리며, Mondstadt를 지키는 바람의 인격화들, 그중 Barbatos를 포함한 존재들도 이 이름으로 불린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이스타로트는 시간의 집정관으로, '시간의 천풍' 또는 '천풍'이라 불리며, 몬드를 지키는 바람의 인격화들, 그중 바르바토스를 포함한 존재들도 이 이름으로 불린다.",
        "polish": {
-        "from": "이스타로트는 시간의 집정관이며, 'the thousand winds of time' 또는 간단히 'the thousand winds'라고도 불린다.",
-        "text": "이스타로트는 시간의 집정관이며, '시간의 천풍' 또는 간단히 '천풍'이라고도 불린다.",
+        "from": "이스타로트는 the 시간의 집정관으로, 'the thousand winds of time' 또는 'the thousand winds'라 불리며, 몬드를 지키는 바람의 인격화들, 그중 바르바토스를 포함한 존재들도 이 이름으로 불린다.",
+        "text": "이스타로트는 시간의 집정관으로, '시간의 천풍' 또는 '천풍'이라 불리며, 몬드를 지키는 바람의 인격화들, 그중 바르바토스를 포함한 존재들도 이 이름으로 불린다.",
         "by": "ds"
        }
       },
       {
-       "t_raw": "Enkanomiya 신앙에서 Istaroth는 **undying wind**의 인격화로 여겨지고, 'the thousand winds of time'과 'the thousand winds'라는 표현은 그녀와 바람의 힘을 가리킨다.",
+       "t_raw": "Aranara Aranaga는 침식의 개념에 'Ad Oblivione'라는 이름을 붙였다.",
        "interp": false,
        "dropped": false,
-       "t": "연하궁 신앙에서 이스타로트는 **불멸의 바람**의 인격화로 여겨지고, '시간의 천풍'과 '천풍'이라는 표현은 그녀와 바람의 힘을 가리킨다.",
-       "polish": {
-        "from": "연하궁 신앙에서 이스타로트는 **undying wind**의 인격화로 여겨지고, 'the thousand winds of time'과 'the thousand winds'라는 표현은 그녀와 바람의 힘을 가리킨다.",
-        "text": "연하궁 신앙에서 이스타로트는 **불멸의 바람**의 인격화로 여겨지고, '시간의 천풍'과 '천풍'이라는 표현은 그녀와 바람의 힘을 가리킨다.",
-        "by": "ds"
-       }
+       "t": "아란나라 아란나가는 침식의 개념에 'Ad Oblivione'라는 이름을 붙였다."
       },
       {
-       "t_raw": "다만 Thousand Winds가 정확히 무엇을 포괄하거나 나타내는지에는 자료마다 견해가 갈린다.",
-       "interp": false,
+       "t_raw": "이처럼 인격적 존재와 추상적 개념, 복수의 바람이 한 이름 아래 겹치는 표제로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "다만 천풍이 정확히 무엇을 포괄하거나 나타내는지에는 자료마다 견해가 갈린다."
+       "t": "이처럼 인격적 존재와 추상적 개념, 복수의 바람이 한 이름 아래 겹치는 표제로 보인다."
       }
      ],
      "sources": [
@@ -396,278 +433,6 @@
         }
        ]
       },
-      {
-       "kind": "wiki",
-       "page": "Thousand Winds",
-       "revision": 1712283,
-       "section": "Overview",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Hydrological Studies in Byakuyakoku"
-        }
-       ]
-      }
-     ],
-     "heading": "정체 — 이스타로트와 undying wind",
-     "latin_left": []
-    },
-    {
-     "section": "정체 — Istaroth와 undying wind",
-     "status": "accepted",
-     "note": "All supported by A4 and M8; the interpretation is reasonable.",
-     "quote": "This is very likely to be referring to Istaroth, as her titles include \"The Thousand Winds\", the \"Undying Wind\", and similar.",
-     "sentences": [
-      {
-       "t_raw": "**Ad Oblivione**는 Aranaga가 침식 개념에 붙인 이름이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**Ad Oblivione**는 아란나가가 침식 개념에 붙인 이름이다."
-      },
-      {
-       "t_raw": "Aranaga는 'Ad Oblivione'에 의해 파괴될 수 없는 꽃을 Traveler에게 주면서, 그 이름을 '영원히 흐르는 바람, 하나로 돌아오는 천 개의 바람'이라고 풀어낸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란나가는 'Ad Oblivione'에 의해 파괴될 수 없는 꽃을 여행자에게 주면서, 그 이름을 '영원히 흐르는 바람, 하나로 돌아오는 천 개의 바람'이라고 풀어낸다."
-      },
-      {
-       "t_raw": "이 표현은 Istaroth를 가리킬 가능성이 매우 높은 것으로 여겨지며, Istaroth의 별칭에는 'The Thousand Winds', 'Undying Wind' 등이 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 표현은 이스타로트를 가리킬 가능성이 매우 높은 것으로 여겨지며, 이스타로트의 별칭에는 '천풍', 'Undying Wind' 등이 있다."
-      },
-      {
-       "t_raw": "침식의 이름과 Istaroth의 별칭이 같은 자리에서 겹치므로, Aranaga의 Ad Oblivione를 Istaroth와 연결해 읽는 해석이 가능하다.",
-       "interp": true,
-       "dropped": false,
-       "t": "침식의 이름과 이스타로트의 별칭이 같은 자리에서 겹치므로, 아란나가의 Ad Oblivione를 이스타로트와 연결해 읽는 해석이 가능하다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Thousand Winds",
-       "revision": 1712283,
-       "section": null,
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Chapter"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Istaroth",
-       "revision": 1647273,
-       "section": "Story > Legacy",
-       "paragraph": "M8",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Chapter"
-        },
-        {
-         "type": "book",
-         "name": "The Byakuyakoku Collection"
-        }
-       ]
-      }
-     ],
-     "heading": "정체 — 이스타로트와 undying wind",
-     "latin_left": [
-      "Ad Oblivione",
-      "Ad Oblivione",
-      "Undying Wind",
-      "Ad Oblivione"
-     ]
-    },
-    {
-     "section": "정체 — Istaroth와 undying wind",
-     "status": "accepted",
-     "note": "All supported by M5, A7 and M4.",
-     "quote": "An ancient tale comes whisked in the wind... In time, it will grow and sprout once again...",
-     "sentences": [
-      {
-       "t_raw": "Mondstadt에서 Istaroth의 유산은 주로 'winds of time'이라는 표현으로 남아 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "몬드에서 이스타로트의 유산은 주로 '시간의 바람'이라는 표현으로 남아 있다.",
-       "polish": {
-        "from": "몬드에서 이스타로트의 유산은 주로 'winds of time'이라는 표현으로 남아 있다.",
-        "text": "몬드에서 이스타로트의 유산은 주로 '시간의 바람'이라는 표현으로 남아 있다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "**Thousand Winds Temple**과 Nameless Island의 해시계 조각에는 그녀와 Barbatos에 모두 관련된 메시지가 새겨져 있고, Thousand Winds Temple은 'god of Time' 숭배의 일부를 보존했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**천풍 신전**과 이름 없는 섬의 해시계 조각에는 그녀와 바르바토스에 모두 관련된 메시지가 새겨져 있고, 천풍 신전은 '시간의 신' 숭배의 일부를 보존했다.",
-       "polish": {
-        "from": "**천풍 신전**과 이름 없는 섬의 해시계 조각에는 그녀와 바르바토스에 모두 관련된 메시지가 새겨져 있고, 천풍 신전은 'god of 시간' 숭배의 일부를 보존했다.",
-        "text": "**천풍 신전**과 이름 없는 섬의 해시계 조각에는 그녀와 바르바토스에 모두 관련된 메시지가 새겨져 있고, 천풍 신전은 '시간의 신' 숭배의 일부를 보존했다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "이 흔적은 Henry Morton의 행방불명된 친구가 쓴 Ragged Notebook과 Sacrificial Series의 무기로도 확인된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 흔적은 헨리 모턴의 행방불명된 친구가 쓴 Ragged Notebook과 침착의 무기로도 확인된다."
-      },
-      {
-       "t_raw": "Time and Wind 퀘스트에서는 Thousand Winds Temple 근처 해시계에서 Eye of the Storm과 싸울 때 희미한 목소리가 들려 'An ancient tale comes whisked in the wind... In time, it will grow and sprout once again...'라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "시간과 바람 퀘스트에서는 천풍 신전 근처 해시계에서 광풍의 핵과 싸울 때 희미한 목소리가 들려 '고대의 이야기가 바람에 실려 옵니다... 때가 되면 다시 자라나 싹틀 것입니다...'라고 말한다.",
-       "polish": {
-        "from": "시간과 바람 퀘스트에서는 천풍 신전 근처 해시계에서 광풍의 핵과 싸울 때 희미한 목소리가 들려 'An ancient tale comes whisked in the wind... In time, it will grow and sprout once again...'라고 말한다.",
-        "text": "시간과 바람 퀘스트에서는 천풍 신전 근처 해시계에서 광풍의 핵과 싸울 때 희미한 목소리가 들려 '고대의 이야기가 바람에 실려 옵니다... 때가 되면 다시 자라나 싹틀 것입니다...'라고 말한다.",
-        "by": "ds"
-       }
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Istaroth",
-       "revision": 1647273,
-       "section": "Story > Legacy",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Thousand Winds",
-       "revision": 1712283,
-       "section": "Overview",
-       "paragraph": "A7",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Sacrificial Bow"
-        },
-        {
-         "type": "weapon",
-         "name": "Sacrificial Fragments"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Istaroth",
-       "revision": 1647273,
-       "section": "Story > Legacy",
-       "paragraph": "M4",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체 — 이스타로트와 undying wind",
-     "latin_left": [
-      "Ragged Notebook"
-     ]
-    },
-    {
-     "section": "정체 — Istaroth와 undying wind",
-     "status": "accepted",
-     "note": "All supported by M13.",
-     "quote": "Hilichurls may also have a connection to Istaroth and the Heavenly Principles.",
-     "sentences": [
-      {
-       "t_raw": "hilichurls가 Istaroth 및 Heavenly Principles와 연결될 가능성도 제기된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "츄츄족이 이스타로트 및 천리와 연결될 가능성도 제기된다.",
-       "polish": {
-        "from": "hilichurls가 이스타로트 및 천리와 연결될 가능성도 제기된다.",
-        "text": "츄츄족이 이스타로트 및 천리와 연결될 가능성도 제기된다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "Jacob Musk는 hilichurls가 Anemo Archon이 아니라 Anemo의 힘 자체를 숭배한다고 보며, Thousand Winds Temple 근처 해시계 주변에는 hilichurls가 춤추는 무리가 있어 Traveler가 이를 제거하도록 의뢰받을 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "야곱·머스크는 츄츄족이 바람의 신이 아니라 바람의 힘 자체를 숭배한다고 보며, 천풍 신전 근처 해시계 주변에는 츄츄족이 춤추는 무리가 있어 여행자가 이를 제거하도록 의뢰받을 수 있다.",
-       "polish": {
-        "from": "야곱·머스크는 hilichurls가 바람의 신이 아니라 바람의 힘 자체를 숭배한다고 보며, 천풍 신전 근처 해시계 주변에는 hilichurls가 춤추는 무리가 있어 여행자가 이를 제거하도록 의뢰받을 수 있다.",
-        "text": "야곱·머스크는 츄츄족이 바람의 신이 아니라 바람의 힘 자체를 숭배한다고 보며, 천풍 신전 근처 해시계 주변에는 츄츄족이 춤추는 무리가 있어 여행자가 이를 제거하도록 의뢰받을 수 있다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "Musk Family의 연구에서는 '하나'를 뜻하는 Hilichurlian 단어 'Unu'가 신을 가리키는 성스러운 말로도 쓰인다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "머스크 가문의 연구에서는 '하나'를 뜻하는 츄츄어 단어 'Unu'가 신을 가리키는 성스러운 말로도 쓰인다고 한다."
-      },
-      {
-       "t_raw": "이러한 점들을 종합하면 hilichurls, Heavenly Principles와 그 shining Shades, 그리고 Enkanomiya가 원래 속했던 통일된 인간 문명 사이의 연결을 가리킨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이러한 점들을 종합하면 츄츄족, 천리와 그 빛나는 그림자, 그리고 연하궁이 원래 속했던 통일된 인간 문명 사이의 연결을 가리킨다.",
-       "polish": {
-        "from": "이러한 점들을 종합하면 hilichurls, 천리와 그 shining 그림자, 그리고 연하궁이 원래 속했던 통일된 인간 문명 사이의 연결을 가리킨다.",
-        "text": "이러한 점들을 종합하면 츄츄족, 천리와 그 빛나는 그림자, 그리고 연하궁이 원래 속했던 통일된 인간 문명 사이의 연결을 가리킨다.",
-        "by": "ds"
-       }
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Istaroth",
-       "revision": 1647273,
-       "section": "Story > Legacy",
-       "paragraph": "M13",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "Hilichurl Cultural Customs"
-        },
-        {
-         "type": "quest",
-         "name": "Crisis of Shields"
-        },
-        {
-         "type": "book",
-         "name": "The Byakuyakoku Collection"
-        },
-        {
-         "type": "item",
-         "name": "Handy Handbook of Hilichurlian"
-        }
-       ]
-      }
-     ],
-     "heading": "정체 — 이스타로트와 undying wind",
-     "latin_left": [
-      "Unu"
-     ]
-    },
-    {
-     "section": "정체 — Mondstadt를 지키는 바람들",
-     "status": "accepted",
-     "note": "All supported by A3 and A6.",
-     "quote": "Back then, I was but a wisp among the thousand winds. I wasn't a god of anything — I didn't even have a human form...",
-     "sentences": [
-      {
-       "t_raw": "Mondstadt에서 Thousand Winds는 북부 Teyvat의 바람과 구름이 Mondstadt를 지키는 존재로 여겨진 용례와, Barbatos를 포함한 수호 바람들의 의인화를 함께 가리킨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "몬드에서 천풍은 북부 티바트의 바람과 구름이 몬드를 지키는 존재로 여겨진 용례와, 바르바토스를 포함한 수호 바람들의 의인화를 함께 가리킨다."
-      },
-      {
-       "t_raw": "Venti는 스스로를 Thousand Winds 가운데 신도 아니고 인간의 모습도 없던 작은 불씨라 말하며, 힘을 모아 Barbatos로 집정관이 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "벤티는 스스로를 천풍 가운데 신도 아니고 인간의 모습도 없던 작은 불씨라 말하며, 힘을 모아 바르바토스로 집정관이 되었다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Thousand Winds",
@@ -693,83 +458,67 @@
        "kind": "wiki",
        "page": "Thousand Winds",
        "revision": 1712283,
-       "section": "Overview",
-       "paragraph": "A6",
+       "section": null,
+       "paragraph": "A4",
        "wiki_refs": [
         {
-         "type": "weapon",
-         "name": "Skyward Atlas"
-        },
-        {
-         "type": "weapon",
-         "name": "Skyward Spine"
-        },
-        {
-         "type": "cs",
-         "name": "Venti"
-        },
-        {
          "type": "quest",
-         "name": "Dragon Storm"
-        },
-        {
-         "type": "weapon",
-         "name": "Skyward Harp"
+         "name": "The Final Chapter"
         }
        ]
       },
       {
        "kind": "wiki",
-       "page": "Venti/Storyline",
-       "revision": 1526186,
-       "section": "Story > The Age of Kings",
-       "paragraph": "M6",
+       "page": "Thousand Winds",
+       "revision": 1712283,
+       "section": "Overview",
+       "paragraph": "A5",
        "wiki_refs": [
         {
-         "type": "cs",
-         "name": "Venti"
-        },
-        {
-         "type": "book",
-         "name": "History of Kings and Clans: Prologue"
+         "type": "item",
+         "name": "Hydrological Studies in Byakuyakoku"
         }
        ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Should You Be Trapped in a Windless Land (Quest)",
-       "quest_ko": "바람이 없는 곳에 갇힌다면",
-       "version": "1.0",
-       "speaker": "Venti"
       }
      ],
-     "heading": "정체 — 몬드를 지키는 바람들",
-     "latin_left": []
+     "heading": "정체",
+     "latin_left": [
+      "Ad Oblivione"
+     ]
     },
     {
-     "section": "정체 — Mondstadt를 지키는 바람들",
+     "section": "정체",
      "status": "accepted",
-     "note": "Q6 says Venti was a wisp among the thousand winds, not a god, with no human form. 'Small ember/spark' is a fair rewording of wisp. But 'combined power to become Archon' is supported by A6 (amassed power, rose to godhood). Sentence 1 passes on that point. However, nothing says he 'became Archon through gathering power' by 'Thousand Winds' collectively; the English says he amassed power himself. The Korean '힘을 모아' is fine, so this is borderline. Flagged because of the 'among the Thousand Winds' wording mismatch with A6 'single thread'. Minor.",
-     "quote": "the current epithet of \"Four Winds\" does not refer to literal winds, but rather to four key figures in Mondstadt",
+     "note": "Facts match A5 and M8. The interpretation is reasonable.",
+     "quote": "This is very likely to be referring to Istaroth, as her titles include \"The Thousand Winds\", the \"Undying Wind\", and similar.",
      "sentences": [
       {
-       "t_raw": "전승에서는 Barbatos가 모든 Thousand Winds의 이름을 기록한 원본 Skyward Atlas로 네 바람을 불러냈다고 한다.",
+       "t_raw": "Enkanomiya의 믿음에서 Istaroth는 'undying wind'의 인격화이며, 'the thousand winds of time'과 'the thousand winds'는 그녀와 바람의 힘을 가리킨다.",
        "interp": false,
        "dropped": false,
-       "t": "전승에서는 바르바토스가 모든 천풍의 이름을 기록한 원본 천공의 두루마리로 네 바람을 불러냈다고 한다."
+       "t": "연하궁의 믿음에서 이스타로트는 '불멸의 바람'의 인격화이며, '시간의 천풍'과 '천풍'은 그녀와 바람의 힘을 가리킨다.",
+       "polish": {
+        "from": "연하궁의 믿음에서 이스타로트는 'undying wind'의 인격화이며, 'the thousand winds of time'과 'the thousand winds'는 그녀와 바람의 힘을 가리킨다.",
+        "text": "연하궁의 믿음에서 이스타로트는 '불멸의 바람'의 인격화이며, '시간의 천풍'과 '천풍'은 그녀와 바람의 힘을 가리킨다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그러나 Venti는 그 네 바람을 자신의 공으로 내세우지 않으며, 현재 **Four Winds**는 문자 그대로의 바람이 아니라 Aristocracy 시대 말에 등장한 네 핵심 인물을 가리킨다.",
+       "t_raw": "Aranara Aranaga는 훼손될 수 없는 꽃을 설명하며 'Ad Oblivione'를 '영원히 흐르는 바람, 하나로 돌아가는 thousand winds'라 풀고, 이는 Istaroth의 'The Thousand Winds', 'Undying Wind' 칭호와 겹쳐 그녀를 가리킬 가능성이 매우 높다고 여겨진다.",
        "interp": false,
        "dropped": false,
-       "repaired": true,
-       "t": "그러나 벤티는 그 네 바람을 자신의 공으로 내세우지 않으며, 현재 **바람 사신수**는 문자 그대로의 바람이 아니라 귀족정 시대 말에 등장한 네 핵심 인물을 가리킨다."
+       "t": "아란나라 아란나가는 훼손될 수 없는 꽃을 설명하며 'Ad Oblivione'를 '영원히 흐르는 바람, 하나로 돌아가는 천풍'이라 풀고, 이는 이스타로트의 '천풍', '불멸의 바람' 칭호와 겹쳐 그녀를 가리킬 가능성이 매우 높다고 여겨진다.",
+       "polish": {
+        "from": "아란나라 아란나가는 훼손될 수 없는 꽃을 설명하며 'Ad Oblivione'를 '영원히 흐르는 바람, 하나로 돌아가는 thousand winds'라 풀고, 이는 이스타로트의 '천풍', '불멸의 바람' 칭호와 겹쳐 그녀를 가리킬 가능성이 매우 높다고 여겨진다.",
+        "text": "아란나라 아란나가는 훼손될 수 없는 꽃을 설명하며 'Ad Oblivione'를 '영원히 흐르는 바람, 하나로 돌아가는 천풍'이라 풀고, 이는 이스타로트의 '천풍', '불멸의 바람' 칭호와 겹쳐 그녀를 가리킬 가능성이 매우 높다고 여겨진다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Thousand Winds를 바람과 구름으로 보는 해석과 Four Winds를 인물로 보는 설명이 나란히 놓여, Mondstadt 안에서도 두 표현의 결이 갈라지는 셈이다.",
+       "t_raw": "즉 Ad Oblivione는 침식이라는 개념과 Istaroth라는 인격을 함께 비추는 이름인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "천풍을 바람과 구름으로 보는 해석과 바람 사신수를 인물로 보는 설명이 나란히 놓여, 몬드 안에서도 두 표현의 결이 갈라지는 셈이다."
+       "t": "즉 Ad Oblivione는 침식이라는 개념과 이스타로트라는 인격을 함께 비추는 이름인 셈이다."
       }
      ],
      "sources": [
@@ -777,146 +526,69 @@
        "kind": "wiki",
        "page": "Thousand Winds",
        "revision": 1712283,
-       "section": "Overview",
-       "paragraph": "A6",
+       "section": null,
+       "paragraph": "A4",
        "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Skyward Atlas"
-        },
-        {
-         "type": "weapon",
-         "name": "Skyward Spine"
-        },
-        {
-         "type": "cs",
-         "name": "Venti"
-        },
         {
          "type": "quest",
-         "name": "Dragon Storm"
-        },
-        {
-         "type": "weapon",
-         "name": "Skyward Harp"
+         "name": "The Final Chapter"
         }
        ]
       },
       {
        "kind": "wiki",
-       "page": "Venti/Storyline",
-       "revision": 1526186,
-       "section": "Story > Cultivating Mondstadt",
-       "paragraph": "M9",
+       "page": "Thousand Winds",
+       "revision": 1712283,
+       "section": "Overview",
+       "paragraph": "A5",
        "wiki_refs": [
         {
          "type": "item",
-         "name": "Skyward Atlas"
-        },
-        {
-         "type": "cs",
-         "name": "Venti"
+         "name": "Hydrological Studies in Byakuyakoku"
         }
        ]
-      }
-     ],
-     "heading": "정체 — 몬드를 지키는 바람들",
-     "latin_left": []
-    },
-    {
-     "section": "정체 — Mondstadt를 지키는 바람들",
-     "status": "accepted",
-     "note": "Item 1 sentences 0 and 1 follow M9; 2 is an interpretation that follows from the English.",
-     "quote": "For a millennium, he had defended Mondstadt with his own might.",
-     "sentences": [
-      {
-       "t_raw": "Dvalin은 전직 **Dragon of the East**로 천 년 동안 자신의 힘으로 Mondstadt를 지켰고, Black Dragon Durin의 맹독 구름을 회오리바람으로 파괴할 수 있었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "드발린은 전직 **동풍의 용**으로 천 년 동안 자신의 힘으로 몬드를 지켰고, Black Dragon Durin의 맹독 구름을 회오리바람으로 파괴할 수 있었다."
-      },
-      {
-       "t_raw": "그 구름 앞에서 Thousand Winds조차 견디거나 해내지 못했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 구름 앞에서 천풍조차 견디거나 해내지 못했다."
-      },
-      {
-       "t_raw": "Boreas는 Vennessa의 반란 뒤 공식적으로 Four Winds 중 하나가 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "보레아스는 바네사의 반란 뒤 공식적으로 바람 사신수 중 하나가 되었다."
-      },
-      {
-       "t_raw": "Dvalin의 천 년 수호와 Boreas의 Four Winds 합류는 Mondstadt 수호가 서로 다른 시점과 형태로 이어진 일임을 보여준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "드발린의 천 년 수호와 보레아스의 바람 사신수 합류는 몬드 수호가 서로 다른 시점과 형태로 이어진 일임을 보여준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dvalin",
-       "revision": 1444447,
-       "section": "Profile",
-       "paragraph": "M7",
-       "wiki_refs": []
       },
       {
        "kind": "wiki",
-       "page": "Boreas",
-       "revision": 1566773,
-       "section": "Story > History",
-       "paragraph": "M12",
+       "page": "Istaroth",
+       "revision": 1647273,
+       "section": "Story > Legacy",
+       "paragraph": "M8",
        "wiki_refs": [
         {
-         "type": "item",
-         "name": "Tail of Boreas"
+         "type": "quest",
+         "name": "The Final Chapter"
+        },
+        {
+         "type": "book",
+         "name": "The Byakuyakoku Collection"
         }
        ]
       }
      ],
-     "heading": "정체 — 몬드를 지키는 바람들",
+     "heading": "정체",
      "latin_left": [
-      "Black Dragon Durin"
+      "Ad Oblivione",
+      "Ad Oblivione"
      ]
     },
     {
-     "section": "정체 — 다른 용례",
+     "section": "정체",
      "status": "accepted",
-     "note": "Sentences 0 and 1 (item 2): Dvalin 'former Dragon of the East' and the millennium defense match M7. But the English says not even the Thousand Winds could resist or achieve the whirlwind feat, so sentence 1 is roughly supported. The real failure is sentence 3 of item 2 (see item 2).",
+     "note": "Facts match A8-A10. The interpretation is reasonable.",
      "quote": "The nameless wind spirit that aided the Gunnhildr Clan when they were outside of Decarabian's city.",
      "sentences": [
       {
-       "t_raw": "Thousand Winds의 다른 용례에는 Gunnhildr Clan이 Decarabian의 도시 밖에 있을 때 그들을 도운 **이름 없는 바람 정령**이 있다.",
+       "t_raw": "그 밖에 Thousand Winds는 Decarabian의 도시 밖에서 Gunnhildr Clan을 도운 이름 없는 바람 정령, 여우의 모습으로 우연히 Mondstadt의 첫 술을 만든 바람 정령, Moonlit Bamboo Forest와 Springs of Hidden Jade에 나타나는 흰 머리와 금빛 눈의 선인의 어머니를 가리키기도 한다.",
        "interp": false,
        "dropped": false,
-       "repaired": true,
-       "t": "천풍의 다른 용례에는 군힐드 가문이 데카라비안의 도시 밖에 있을 때 그들을 도운 **이름 없는 바람 정령**이 있다."
+       "t": "그 밖에 천풍은 데카라비안의 도시 밖에서 군힐드 가문을 도운 이름 없는 바람 정령, 여우의 모습으로 우연히 몬드의 첫 술을 만든 바람 정령, 죽림월야와 옥이 숨은 샘에 나타나는 흰 머리와 금빛 눈의 선인의 어머니를 가리키기도 한다."
       },
       {
-       "t_raw": "또 **여우 형상을 한 바람 정령**이 Mondstadt의 첫 술을 우연히 만들어 낸 사례가 있고, Moonlit Bamboo Forest와 Springs of Hidden Jade에 모두 나타나는 백발과 금빛 눈의 adeptus의 **어머니**도 그 용례에 포함된다.",
-       "interp": false,
-       "dropped": false,
-       "repaired": true,
-       "t": "또 **여우 형상을 한 바람 정령**이 몬드의 첫 술을 우연히 만들어 낸 사례가 있고, 죽림월야와 옥이 숨은 샘에 모두 나타나는 백발과 금빛 눈의 선인의 **어머니**도 그 용례에 포함된다.",
-       "polish": {
-        "from": "또 **여우 형상을 한 바람 정령**이 몬드의 첫 술을 우연히 만들어 낸 사례가 있고, 죽림월야와 옥이 숨은 샘에 모두 나타나는 백발과 금빛 눈의 adeptus의 **어머니**도 그 용례에 포함된다.",
-        "text": "또 **여우 형상을 한 바람 정령**이 몬드의 첫 술을 우연히 만들어 낸 사례가 있고, 죽림월야와 옥이 숨은 샘에 모두 나타나는 백발과 금빛 눈의 선인의 **어머니**도 그 용례에 포함된다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "이 사례들은 바람 정령이 Clan을 돕는 이름 없는 존재로, 술을 만든 여우의 모습으로, adeptus의 어머니로 각각 다른 모습과 관계로 나타나는 양상을 보여 준다.",
+       "t_raw": "이 용례들은 Thousand Winds가 여러 바람 존재를 묶는 이름처럼 쓰였음을 보여주는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이 사례들은 바람 정령이 클랜을 돕는 이름 없는 존재로, 술을 만든 여우의 모습으로, 선인의 어머니로 각각 다른 모습과 관계로 나타나는 양상을 보여 준다.",
-       "polish": {
-        "from": "이 사례들은 바람 정령이 Clan을 돕는 이름 없는 존재로, 술을 만든 여우의 모습으로, adeptus의 어머니로 각각 다른 모습과 관계로 나타나는 양상을 보여 준다.",
-        "text": "이 사례들은 바람 정령이 클랜을 돕는 이름 없는 존재로, 술을 만든 여우의 모습으로, 선인의 어머니로 각각 다른 모습과 관계로 나타나는 양상을 보여 준다.",
-        "by": "ds"
-       }
+       "t": "이 용례들은 천풍이 여러 바람 존재를 묶는 이름처럼 쓰였음을 보여주는 것으로 보인다."
       }
      ],
      "sources": [
@@ -960,265 +632,35 @@
        ]
       }
      ],
-     "heading": "정체 — 다른 용례",
+     "heading": "정체",
      "latin_left": []
     },
     {
      "section": "드러난 역사",
      "status": "accepted",
-     "note": "Placeholder; see below.",
-     "quote": "The entity now known as \"Barbatos\" was once a tiny elemental wisp among the Thousand Winds and held no divine power.",
+     "note": "All sentences match the English.",
+     "quote": "However, Venti himself does not take credit for the four winds",
      "sentences": [
       {
-       "t_raw": "마신 전쟁 중 Decarabian과 Andrius의 다툼으로 Mondstadt의 땅이 얼음과 눈에 잠겼고, 이 시기는 Age of Kings로 불렸다.",
+       "t_raw": "Mondstadt에서 **Istaroth 숭배가 희미해지고 잊힌 것으로 보이는 가운데**, Thousand Winds는 현재 Teyvat 북부의 실제 바람과 구름으로 해석되며, Cloud Atlas를 통해 각각 이름과 성격을 부여받았다고 전해지고 Mondstadt의 수호자로 여겨진다.",
        "interp": false,
        "dropped": false,
-       "t": "마신 전쟁 중 데카라비안과 안드리우스의 다툼으로 몬드의 땅이 얼음과 눈에 잠겼고, 이 시기는 왕들의 시대로 불렸다."
+       "t": "몬드에서 **이스타로트 숭배가 희미해지고 잊힌 것으로 보이는 가운데**, 천풍은 현재 티바트 북부의 실제 바람과 구름으로 해석되며, 천풍만운을 통해 각각 이름과 성격을 부여받았다고 전해지고 몬드의 수호자로 여겨진다."
       },
       {
-       "t_raw": "Barbatos로 알려지게 되는 존재는 원래 Thousand Winds 가운데 하나의 작은 원소 정령이었으며 신적 힘을 지니지 않았다.",
+       "t_raw": "Venti는 그중 한 가닥의 작은 원소 정령이었으나 힘을 모아 Barbatos로서 집정관이 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "바르바토스로 알려지게 되는 존재는 원래 천풍 가운데 하나의 작은 원소 정령이었으며 신적 힘을 지니지 않았다."
+       "t": "벤티는 그중 한 가닥의 작은 원소 정령이었으나 힘을 모아 바르바토스로서 집정관이 되었다."
       },
       {
-       "t_raw": "Decarabian의 Mondstadt가 몰락한 뒤 Barbatos는 신격에 올라 Anemo Archon이 되었다.",
+       "t_raw": "전설은 Barbatos가 original Skyward Atlas로 네 바람을 불러냈다고 하지만, Venti는 그 공을 인정하지 않으며 현재의 Four Winds는 문자 그대로의 바람이 아니라 Aristocracy era 말에 등장한 네 인물을 가리킨다.",
        "interp": false,
        "dropped": false,
-       "t": "데카라비안의 몬드가 몰락한 뒤 바르바토스는 신격에 올라 바람의 신이 되었다."
-      },
-      {
-       "t_raw": "작은 원소 정령이 마신 전쟁과 Decarabian의 Mondstadt 몰락을 거쳐 Anemo Archon에 오른 것은 Mondstadt의 신적 질서가 재편된 결과로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "작은 원소 정령이 마신 전쟁과 데카라비안의 몬드 몰락을 거쳐 바람의 신에 오른 것은 몬드의 신적 질서가 재편된 결과로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Venti/Storyline",
-       "revision": 1526186,
-       "section": "Story > The Age of Kings",
-       "paragraph": "M6",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Venti"
-        },
-        {
-         "type": "book",
-         "name": "History of Kings and Clans: Prologue"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Istaroth",
-       "revision": 1647273,
-       "section": "Story > In Mondstadt",
-       "paragraph": "M10",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It may have been used as an arena back in the Aristocratic Period, where slaves were made to fight each other for the satisfaction of the old nobles.",
-     "sentences": [
-      {
-       "t_raw": "새 Mondstadt가 형성될 때, 적어도 Gunnhildr Clan, Imunlaukr Clan, Lawrence Clan 세 clans는 Anemo Archon과 God of Time을 함께 숭배했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "새 몬드가 형성될 때, 적어도 군힐드 가문, 이뮨라우크 일족, 로렌스 가문 세 clans는 바람의 신과 God of Time을 함께 숭배했다."
-      },
-      {
-       "t_raw": "두 신에 대한 숭배는 주로 동쪽 바다를 마주한 높은 절벽에서 이루어졌으며, 그곳은 Istaroth의 별칭 중 하나와 이름을 공유하는 Thousand Winds Temple였을 가능성이 크다.",
-       "interp": false,
-       "dropped": false,
-       "t": "두 신에 대한 숭배는 주로 동쪽 바다를 마주한 높은 절벽에서 이루어졌으며, 그곳은 이스타로트의 별칭 중 하나와 이름을 공유하는 천풍 신전였을 가능성이 크다."
-      },
-      {
-       "t_raw": "Thousand Winds Temple는 Mondstadt 북동쪽의 temple ruins로, 현지 전설에 따르면 수천 년 전 Anemo God을 모시던 temple이었으나 수세기 동안 버려진 채 남아 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "천풍 신전은 몬드 북동쪽의 temple ruins로, 현지 전설에 따르면 수천 년 전 바람 마신을 모시던 temple이었으나 수세기 동안 버려진 채 남아 있다."
-      },
-      {
-       "t_raw": "이곳은 Aristocratic Period에 arena로 쓰여, 노예들이 옛 귀족들의 만족을 위해 서로 싸우게 되었을 가능성이 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이곳은 Aristocratic Period에 arena로 쓰여, 노예들이 옛 귀족들의 만족을 위해 서로 싸우게 되었을 가능성이 있다."
-      },
-      {
-       "t_raw": "돌기둥에는 지금도 희미하게 우아한 조각이 남아 있고, 오래 잊힌 기념 표식에는 “Wind brings the seeds of tales, time allows them to take root.”라는 격언이 새겨져 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "돌기둥에는 지금도 희미하게 우아한 조각이 남아 있고, 오래 잊힌 기념 표식에는 “Wind brings the seeds of tales, time allows them to take root.”라는 격언이 새겨져 있다."
-      },
-      {
-       "t_raw": "두 신을 함께 모시던 장소로 여겨지는 곳이 Aristocratic Period에는 귀족들의 만족을 위한 arena로 쓰였을 수 있다는 점에서, 이 유적의 성격은 시대에 따라 크게 바뀌었다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "두 신을 함께 모시던 장소로 여겨지는 곳이 Aristocratic Period에는 귀족들의 만족을 위한 arena로 쓰였을 수 있다는 점에서, 이 유적의 성격은 시대에 따라 크게 바뀌었다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Istaroth",
-       "revision": 1647273,
-       "section": "Story > In Mondstadt",
-       "paragraph": "M10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mondstadt",
-       "revision": 69446,
-       "section": "Areas",
-       "paragraph": "M11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Thousand Winds Temple",
-       "revision": 73060,
-       "section": null,
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": [
-      "God of Time",
-      "Aristocratic Period",
-      "Wind",
-      "Aristocratic Period"
-     ]
-    },
-    {
-     "section": "드러난 역사",
-     "status": "accepted",
-     "note": "All sentences match M9 and M12; the interpretation is reasonable.",
-     "quote": "Around 1000 years ago, after Vennessa's rebellion against the Mondstadt Aristocracy, Boreas officially became one of the Four Winds of Mondstadt",
-     "sentences": [
-      {
-       "t_raw": "Four Winds라는 현 별칭은 문자 그대로의 바람이 아니라 Aristocracy era가 끝날 무렵 등장한 네 핵심 인물을 가리킨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바람 사신수라는 현 별칭은 문자 그대로의 바람이 아니라 귀족정 시대가 끝날 무렵 등장한 네 핵심 인물을 가리킨다.",
+       "t": "전설은 바르바토스가 원래의 천공의 두루마리로 네 바람을 불러냈다고 하지만, 벤티는 그 공을 인정하지 않으며 현재의 바람 사신수는 문자 그대로의 바람이 아니라 귀족정 시대 말에 등장한 네 인물을 가리킨다.",
        "polish": {
-        "from": "바람 사신수라는 현 별칭은 문자 그대로의 바람이 아니라 귀족정 era가 끝날 무렵 등장한 네 핵심 인물을 가리킨다.",
-        "text": "바람 사신수라는 현 별칭은 문자 그대로의 바람이 아니라 귀족정 시대가 끝날 무렵 등장한 네 핵심 인물을 가리킨다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "약 1000년 전, Vennessa가 Mondstadt Aristocracy에 맞선 반란 이후 Boreas는 공식적으로 Mondstadt의 Four Winds 중 하나가 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "약 1000년 전, 바네사가 몬드 귀족에 맞선 반란 이후 보레아스는 공식적으로 몬드의 바람 사신수 중 하나가 되었다."
-      },
-      {
-       "t_raw": "Boreas와의 관계가 현재로서는 불명인 Knight of Boreas라는 직위는 새로 세워진 Knights of Favonius에 합류했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "보레아스와의 관계가 현재로서는 불명인 북풍의 기사라는 직위는 새로 세워진 페보니우스 기사단에 합류했다."
-      },
-      {
-       "t_raw": "Thousand Winds Temple 근처의 Temple of the Wolf는 과거 Boreas를 모시던 곳이었지만 오래전 버려졌고, Boreas의 정령은 Mondstadt의 다른 쪽에 머문다.",
-       "interp": false,
-       "dropped": false,
-       "t": "천풍 신전 근처의 북풍 늑대의 사당은 과거 보레아스를 모시던 곳이었지만 오래전 버려졌고, 보레아스의 정령은 몬드의 다른 쪽에 머문다."
-      },
-      {
-       "t_raw": "Four Winds가 문자 그대로의 바람이 아니라 Aristocracy era 말의 핵심 인물들을 가리키고, Vennessa의 반란 뒤 Boreas가 그중 하나로 공식화되었다는 점에서, Four Winds는 반란 이후 재편된 Mondstadt 질서와 맞물린 이름으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "바람 사신수가 문자 그대로의 바람이 아니라 귀족정 시대 말의 핵심 인물들을 가리키고, 바네사의 반란 뒤 보레아스가 그중 하나로 공식화되었다는 점에서, 바람 사신수는 반란 이후 재편된 몬드 질서와 맞물린 이름으로 볼 수 있다.",
-       "polish": {
-        "from": "바람 사신수가 문자 그대로의 바람이 아니라 귀족정 era 말의 핵심 인물들을 가리키고, 바네사의 반란 뒤 보레아스가 그중 하나로 공식화되었다는 점에서, 바람 사신수는 반란 이후 재편된 몬드 질서와 맞물린 이름으로 볼 수 있다.",
-        "text": "바람 사신수가 문자 그대로의 바람이 아니라 귀족정 시대 말의 핵심 인물들을 가리키고, 바네사의 반란 뒤 보레아스가 그중 하나로 공식화되었다는 점에서, 바람 사신수는 반란 이후 재편된 몬드 질서와 맞물린 이름으로 볼 수 있다.",
-        "by": "ds"
-       }
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Venti/Storyline",
-       "revision": 1526186,
-       "section": "Story > Cultivating Mondstadt",
-       "paragraph": "M9",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Skyward Atlas"
-        },
-        {
-         "type": "cs",
-         "name": "Venti"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Boreas",
-       "revision": 1566773,
-       "section": "Story > History",
-       "paragraph": "M12",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Tail of Boreas"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "accepted",
-     "note": "Supported by A6 and M9.",
-     "quote": "Venti was originally a \"single thread of the thousand winds\" before he amassed power and eventually rose to godhood and the position of Archon as Barbatos.",
-     "sentences": [
-      {
-       "t_raw": "Mondstadt에서 Istaroth 숭배가 흐려진 뒤, **Thousand Winds**는 northern Teyvat의 바람과 구름이 Cloud Atlas를 통해 각각 이름과 성격을 얻어 Mondstadt를 지키는 존재로 해석된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "몬드에서 이스타로트 숭배가 흐려진 뒤, **천풍**은 북부 티바트의 바람과 구름이 Cloud Atlas를 통해 각각 이름과 성격을 얻어 몬드를 지키는 존재로 해석된다.",
-       "polish": {
-        "from": "몬드에서 이스타로트 숭배가 흐려진 뒤, **천풍**은 northern 티바트의 바람과 구름이 Cloud Atlas를 통해 각각 이름과 성격을 얻어 몬드를 지키는 존재로 해석된다.",
-        "text": "몬드에서 이스타로트 숭배가 흐려진 뒤, **천풍**은 북부 티바트의 바람과 구름이 Cloud Atlas를 통해 각각 이름과 성격을 얻어 몬드를 지키는 존재로 해석된다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "Venti는 그 가운데 'single thread'였고, 힘을 모아 Barbatos로서 신격과 Archon의 자리에 올랐다.",
-       "interp": false,
-       "dropped": false,
-       "t": "벤티는 그 가운데 '한 가닥'이었고, 힘을 모아 바르바토스로서 신격과 집정관의 자리에 올랐다.",
-       "polish": {
-        "from": "벤티는 그 가운데 'single thread'였고, 힘을 모아 바르바토스로서 신격과 Archon의 자리에 올랐다.",
-        "text": "벤티는 그 가운데 '한 가닥'이었고, 힘을 모아 바르바토스로서 신격과 집정관의 자리에 올랐다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "전승에 따르면 Barbatos는 모든 Thousand Winds의 이름을 기록한 original Skyward Atlas로 네 바람을 불렀으나, Venti 자신은 그 공을 인정하지 않으며 현재 **Four Winds**는 Aristocracy era 끝무렵의 네 핵심 인물을 가리킨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "전승에 따르면 바르바토스는 모든 천풍의 이름을 기록한 원래의 천공의 두루마리로 네 바람을 불렀으나, 벤티 자신은 그 공을 인정하지 않으며 현재 **바람 사신수**는 귀족정 시대 끝무렵의 네 핵심 인물을 가리킨다.",
-       "polish": {
-        "from": "전승에 따르면 바르바토스는 모든 천풍의 이름을 기록한 original 천공의 두루마리로 네 바람을 불렀으나, 벤티 자신은 그 공을 인정하지 않으며 현재 **바람 사신수**는 귀족정 era 끝무렵의 네 핵심 인물을 가리킨다.",
-        "text": "전승에 따르면 바르바토스는 모든 천풍의 이름을 기록한 원래의 천공의 두루마리로 네 바람을 불렀으나, 벤티 자신은 그 공을 인정하지 않으며 현재 **바람 사신수**는 귀족정 시대 끝무렵의 네 핵심 인물을 가리킨다.",
+        "from": "전설은 바르바토스가 original 천공의 두루마리로 네 바람을 불러냈다고 하지만, 벤티는 그 공을 인정하지 않으며 현재의 바람 사신수는 문자 그대로의 바람이 아니라 귀족정 era 말에 등장한 네 인물을 가리킨다.",
+        "text": "전설은 바르바토스가 원래의 천공의 두루마리로 네 바람을 불러냈다고 하지만, 벤티는 그 공을 인정하지 않으며 현재의 바람 사신수는 문자 그대로의 바람이 아니라 귀족정 시대 말에 등장한 네 인물을 가리킨다.",
         "by": "ds"
        }
       }
@@ -1257,6 +699,23 @@
        "kind": "wiki",
        "page": "Venti/Storyline",
        "revision": 1526186,
+       "section": "Story > The Age of Kings",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Venti"
+        },
+        {
+         "type": "book",
+         "name": "History of Kings and Clans: Prologue"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Venti/Storyline",
+       "revision": 1526186,
        "section": "Story > Cultivating Mondstadt",
        "paragraph": "M9",
        "wiki_refs": [
@@ -1271,125 +730,35 @@
        ]
       }
      ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Cloud Atlas"
-     ]
+     "heading": "드러난 역사",
+     "latin_left": []
     },
     {
-     "section": "얽힌 인물과 세력",
+     "section": "드러난 역사",
      "status": "accepted",
-     "note": "Supported by M7, M12 and M2; the interpretation follows from M7.",
-     "quote": "Around 1000 years ago, after Vennessa's rebellion against the Mondstadt Aristocracy, Boreas officially became one of the Four Winds of Mondstadt",
+     "note": "All sentences match the English.",
+     "quote": "In Mondstadt, Istaroth's legacy has been preserved primarily through the phrase",
      "sentences": [
       {
-       "t_raw": "Dvalin은 Anemo elemental dragon이자 former Dragon of the East로, 천 년 동안 자신의 힘으로 Mondstadt를 지켰다.",
+       "t_raw": "Decarabian의 Mondstadt가 무너진 뒤 Barbatos는 Anemo Archon이 되었고, 새 Mondstadt의 Gunnhildr Clan·Imunlaukr Clan·Lawrence Clan은 Anemo Archon과 God of Time을 함께 숭배했다.",
        "interp": false,
        "dropped": false,
-       "t": "드발린은 바람 원소 드래곤이자 이전의 동풍의 용으로, 천 년 동안 자신의 힘으로 몬드를 지켰다.",
+       "t": "데카라비안의 몬드가 무너진 뒤 바르바토스는 바람의 신이 되었고, 새 몬드의 군힐드 가문·이뮨라우크 일족·로렌스 가문은 바람의 신과 시간의 신을 함께 숭배했다."
+      },
+      {
+       "t_raw": "그 숭배는 동해를 마주한 높은 절벽 위에서 주로 이루어졌으며, 이는 Istaroth의 별칭 하나와 이름을 공유하는 Thousand Winds Temple이었을 가능성이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 숭배는 동해를 마주한 높은 절벽 위에서 주로 이루어졌으며, 이는 이스타로트의 별칭 하나와 이름을 공유하는 천풍 신전이었을 가능성이 있다."
+      },
+      {
+       "t_raw": "Mondstadt의 Istaroth 유산은 'winds of time'이라는 표현으로 주로 남았고, Thousand Winds Temple과 Nameless Island의 해시계 조각은 God of Time과 Anemo의 신 모두와 연결된 메시지를 남긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드의 이스타로트 유산은 '시간의 바람'이라는 표현으로 주로 남았고, 천풍 신전과 이름 없는 섬의 해시계 조각은 시간의 신과 바람의 신 모두와 연결된 메시지를 남긴다.",
        "polish": {
-        "from": "드발린은 바람 elemental dragon이자 former 동풍의 용으로, 천 년 동안 자신의 힘으로 몬드를 지켰다.",
-        "text": "드발린은 바람 원소 드래곤이자 이전의 동풍의 용으로, 천 년 동안 자신의 힘으로 몬드를 지켰다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "하늘과 바람을 완전히 다스리는 그는 Black Dragon Durin의 독성 구름을 소용돌이로 파괴했는데, 그 구름은 Thousand Winds조차 저항하거나 해내지 못한 대상이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "하늘과 바람을 완전히 다스리는 그는 Black Dragon Durin의 독성 구름을 소용돌이로 파괴했는데, 그 구름은 천풍조차 저항하거나 해내지 못한 대상이었다."
-      },
-      {
-       "t_raw": "이는 Dvalin의 방어력이 Thousand Winds가 감당하지 못한 것을 해내는 수준이었음을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 드발린의 방어력이 천풍이 감당하지 못한 것을 해내는 수준이었음을 보여 준다."
-      },
-      {
-       "t_raw": "Boreas는 육체가 죽은 뒤 영혼과 힘의 일부가 얼음 형상으로 남았으나 온전한 능력을 쓰지 못했고, Vennessa's rebellion 뒤 약 1000년 전 Four Winds 중 하나가 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "보레아스는 육체가 죽은 뒤 영혼과 힘의 일부가 얼음 형상으로 남았으나 온전한 능력을 쓰지 못했고, 바네사의 반란 뒤 약 1000년 전 바람 사신수 중 하나가 되었다.",
-       "polish": {
-        "from": "보레아스는 육체가 죽은 뒤 영혼과 힘의 일부가 얼음 형상으로 남았으나 온전한 능력을 쓰지 못했고, 바네사의 rebellion 뒤 약 1000년 전 바람 사신수 중 하나가 되었다.",
-        "text": "보레아스는 육체가 죽은 뒤 영혼과 힘의 일부가 얼음 형상으로 남았으나 온전한 능력을 쓰지 못했고, 바네사의 반란 뒤 약 1000년 전 바람 사신수 중 하나가 되었다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "Thousand Winds Temple 근처의 Temple of the Wolf는 한때 Boreas를 모시던 훈련장이었지만 오래 방치되었고, Andrius와 그의 늑대들은 서쪽 Wolvendom으로 옮겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "천풍 신전 근처의 북풍 늑대의 사당은 한때 보레아스를 모시던 훈련장이었지만 오래 방치되었고, 안드리우스와 그의 늑대들은 서쪽 울프 영지로 옮겼다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dvalin",
-       "revision": 1444447,
-       "section": "Profile",
-       "paragraph": "M7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Boreas",
-       "revision": 1566773,
-       "section": "Story > History",
-       "paragraph": "M12",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Tail of Boreas"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Four Winds",
-       "revision": 240325,
-       "section": "Overview > Wolf of the North",
-       "paragraph": "M2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Black Dragon Durin"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "accepted",
-     "note": "Supported by M10; the 'likely' hedge is kept and the interpretation follows.",
-     "quote": "at least three of its prominent clans — the Gunnhildr Clan, the Imunlaukr Clan, and the Lawrence Clan — all worshipped both the Anemo Archon and the God of Time.",
-     "sentences": [
-      {
-       "t_raw": "Decarabian의 Mondstadt가 몰락한 뒤 Barbatos는 Anemo Archon이 되었고, 새 Mondstadt가 형성되는 동안 Gunnhildr Clan, Imunlaukr Clan, Lawrence Clan은 Anemo Archon과 God of Time을 함께 숭배했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데카라비안의 몬드가 몰락한 뒤 바르바토스는 바람의 신이 되었고, 새 몬드가 형성되는 동안 군힐드 가문, 이뮨라우크 일족, 로렌스 가문은 바람의 신과 God of Time을 함께 숭배했다.",
-       "polish": {
-        "from": "데카라비안의 몬드가 몰락한 뒤 바르바토스는 바람의 신이 되었고, 새 몬드가 형성되는 동안 군힐드 가문, 이뮨라우크 일족, 로렌스 가문은 바람의 신과 God of Time을 함께 숭배했다.",
-        "text": "데카라비안의 몬드가 몰락한 뒤 바르바토스는 바람의 신이 되었고, 새 몬드가 형성되는 동안 군힐드 가문, 이뮨라우크 일족, 로렌스 가문은 바람의 신과 God of Time을 함께 숭배했다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "그 숭배는 주로 동쪽 바다를 마주한 높은 절벽 위에서 이루어졌으며, 이곳은 Istaroth의 별칭 가운데 하나와 이름을 공유하는 Thousand Winds Temple일 가능성이 크다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 숭배는 주로 동쪽 바다를 마주한 높은 절벽 위에서 이루어졌으며, 이곳은 이스타로트의 별칭 가운데 하나와 이름을 공유하는 천풍 신전일 가능성이 크다."
-      },
-      {
-       "t_raw": "주요 clans가 두 신을 한 장소에서 함께 모신 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "주요 클랜이 두 신을 한 장소에서 함께 모신 셈이다.",
-       "polish": {
-        "from": "주요 clans가 두 신을 한 장소에서 함께 모신 셈이다.",
-        "text": "주요 클랜이 두 신을 한 장소에서 함께 모신 셈이다.",
+        "from": "몬드의 이스타로트 유산은 'winds of time'이라는 표현으로 주로 남았고, 천풍 신전과 이름 없는 섬의 해시계 조각은 시간의 신과 바람의 신 모두와 연결된 메시지를 남긴다.",
+        "text": "몬드의 이스타로트 유산은 '시간의 바람'이라는 표현으로 주로 남았고, 천풍 신전과 이름 없는 섬의 해시계 조각은 시간의 신과 바람의 신 모두와 연결된 메시지를 남긴다.",
         "by": "ds"
        }
       }
@@ -1402,54 +771,64 @@
        "section": "Story > In Mondstadt",
        "paragraph": "M10",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Istaroth",
+       "revision": 1647273,
+       "section": "Story > Legacy",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Thousand Winds",
+       "revision": 1712283,
+       "section": "Overview",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Sacrificial Bow"
+        },
+        {
+         "type": "weapon",
+         "name": "Sacrificial Fragments"
+        }
+       ]
       }
      ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "God of Time"
-     ]
+     "heading": "드러난 역사",
+     "latin_left": []
     },
     {
-     "section": "작중 행적 — Thousand Winds Temple",
+     "section": "드러난 역사",
      "status": "accepted",
-     "note": "Supported by M3 and M11; the hedges are kept.",
-     "quote": "Wind brings the seeds of tales, time allows them to take root.",
+     "note": "All sentences match the English.",
+     "quote": "This long-forgotten symbol of commemoration is engraved with the maxim:",
      "sentences": [
       {
-       "t_raw": "**Thousand Winds Temple**은 Starfell Valley의 고대 원형 극장이며, Mondstadt 북동쪽에 있는 사원 폐허군이다.",
+       "t_raw": "**Thousand Winds Temple**은 Starfell Valley의 고대 원형극장으로, Aristocratic Period에는 노예들이 옛 귀족들의 만족을 위해 서로 싸우던 투기장으로 쓰였을 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "**천풍 신전**은 별이 떨어지는 산골짜기의 고대 원형 극장이며, 몬드 북동쪽에 있는 사원 폐허군이다."
+       "t": "**천풍 신전**은 별이 떨어지는 산골짜기의 고대 원형극장으로, 귀족 시대에는 노예들이 옛 귀족들의 만족을 위해 서로 싸우던 투기장으로 쓰였을 수 있다."
       },
       {
-       "t_raw": "Aristocratic Period에는 이곳이 경기장으로 쓰여 노예들이 옛 귀족의 만족을 위해 서로 싸우게 되었을 수 있다는 이야기가 전해진다.",
+       "t_raw": "현지 전설은 수천 년 전 이곳이 Anemo God을 숭배하던 사원이었다고 전하며, 수세기 동안 버려진 지금도 돌기둥에는 우아한 조각이 희미하게 남아 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Aristocratic Period에는 이곳이 경기장으로 쓰여 노예들이 옛 귀족의 만족을 위해 서로 싸우게 되었을 수 있다는 이야기가 전해진다."
+       "t": "현지 전설은 수천 년 전 이곳이 바람 마신을 숭배하던 사원이었다고 전하며, 수세기 동안 버려진 지금도 돌기둥에는 우아한 조각이 희미하게 남아 있다."
       },
       {
-       "t_raw": "현지 전설에 따르면 수천 년 전 이 일대는 Anemo God을 숭배하는 사원이었다.",
+       "t_raw": "그 오래 잊힌 상징에는 'Wind brings the seeds of tales, time allows them to take root.'라는 격언이 새겨져 있고, 근처 Sundial에서는 Eye of the Storm과 싸울 때 'An ancient tale comes whisked in the wind... In time, it will grow and sprout once again...'라는 희미한 목소리가 들린다.",
        "interp": false,
        "dropped": false,
-       "t": "현지 전설에 따르면 수천 년 전 이 일대는 바람 마신을 숭배하는 사원이었다."
-      },
-      {
-       "t_raw": "이곳은 수백 년 동안 버려져 지금의 폐허가 되었고, 일부 돌기둥에는 아직 희미하게 우아한 조각이 남아 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이곳은 수백 년 동안 버려져 지금의 폐허가 되었고, 일부 돌기둥에는 아직 희미하게 우아한 조각이 남아 있다."
-      },
-      {
-       "t_raw": "오래 잊힌 기념의 상징에는 '바람은 이야기의 씨앗을 가져오고, 시간은 그것이 뿌리내리게 한다'는 격언이 새겨져 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오래 잊힌 기념의 상징에는 '바람은 이야기의 씨앗을 가져오고, 시간은 그것이 뿌리내리게 한다'는 격언이 새겨져 있다."
-      },
-      {
-       "t_raw": "경기장으로 쓰였을 수 있다는 과거와 Anemo God을 모시던 사원이라는 전승이 한 폐허에 겹쳐, Thousand Winds Temple은 서로 다른 시대의 용도가 함께 남은 장소로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "경기장으로 쓰였을 수 있다는 과거와 바람 마신을 모시던 사원이라는 전승이 한 폐허에 겹쳐, 천풍 신전은 서로 다른 시대의 용도가 함께 남은 장소로 보인다."
+       "t": "그 오래 잊힌 상징에는 '바람은 이야기의 씨앗을 가져오고, 시간은 그것들이 뿌리내리게 한다.'라는 격언이 새겨져 있고, 근처 Sundial에서는 광풍의 핵과 싸울 때 '오래된 이야기가 바람에 휩쓸려 찾아온다... 시간이 흐르면 그것은 다시 자라고 싹틀 것이다...'라는 희미한 목소리가 들린다.",
+       "polish": {
+        "from": "그 오래 잊힌 상징에는 'Wind brings the seeds of tales, time allows them to take root.'라는 격언이 새겨져 있고, 근처 Sundial에서는 광풍의 핵과 싸울 때 'An ancient tale comes whisked in the wind... In time, it will grow and sprout once again...'라는 희미한 목소리가 들린다.",
+        "text": "그 오래 잊힌 상징에는 '바람은 이야기의 씨앗을 가져오고, 시간은 그것들이 뿌리내리게 한다.'라는 격언이 새겨져 있고, 근처 Sundial에서는 광풍의 핵과 싸울 때 '오래된 이야기가 바람에 휩쓸려 찾아온다... 시간이 흐르면 그것은 다시 자라고 싹틀 것이다...'라는 희미한 목소리가 들린다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -1468,94 +847,123 @@
        "section": "Areas",
        "paragraph": "M11",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Istaroth",
+       "revision": 1647273,
+       "section": "Story > Legacy",
+       "paragraph": "M4",
+       "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 천풍 신전",
+     "heading": "드러난 역사",
      "latin_left": [
-      "Aristocratic Period"
+      "Sundial"
      ]
     },
     {
-     "section": "작중 행적 — Thousand Winds Temple",
+     "section": "드러난 역사",
      "status": "accepted",
-     "note": "Sentence 2 calls the Temple the 'destination' Bennett is shouting. Q3 only has him exclaiming the name after figuring something out, and the English never says it is his destination.",
-     "quote": "Aha! I've got it! The Thousand Winds Temple!",
+     "note": "All sentences match the English.",
+     "quote": "In the past, the Temple of the Wolf located near the Thousand Winds Temple was used to worship him, but it has long been abandoned",
      "sentences": [
       {
-       "t_raw": "Venti는 Traveler에게 Thousand Winds Temple까지 왔는데 그다음 어떻게 됐는지, 장치에 갇혔는지 묻는다.",
+       "t_raw": "Thousand Winds Temple과 가까운 Temple of the Wolf는 원래 훈련장이었고, 한때 Boreas를 숭배하는 데 쓰였으나 오래전 버려졌다.",
        "interp": false,
        "dropped": false,
-       "t": "벤티는 여행자에게 천풍 신전까지 왔는데 그다음 어떻게 됐는지, 장치에 갇혔는지 묻는다."
+       "t": "천풍 신전과 가까운 북풍 늑대의 사당은 원래 훈련장이었고, 한때 보레아스를 숭배하는 데 쓰였으나 오래전 버려졌다."
       },
       {
-       "t_raw": "Bennett은 무언가를 알아냈다며 'The Thousand Winds Temple!'을 외친다.",
+       "t_raw": "Boreas의 영혼은 Mondstadt 반대편에 머물며, Andrius와 그의 늑대들은 서쪽으로 이동해 Wolvendom에 정착했다.",
        "interp": false,
        "dropped": false,
-       "t": "베넷은 무언가를 알아냈다며 '천풍 신전!'을 외친다."
-      },
-      {
-       "t_raw": "두 대사는 Thousand Winds Temple이 장치와 얽힌 장소로 언급되고, Bennett이 무언가를 깨달은 뒤 그 이름을 외치는 모습을 보여 주는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "repaired": true,
-       "t": "두 대사는 천풍 신전이 장치와 얽힌 장소로 언급되고, 베넷이 무언가를 깨달은 뒤 그 이름을 외치는 모습을 보여 주는 것으로 보인다."
+       "t": "보레아스의 영혼은 몬드 반대편에 머물며, 안드리우스와 그의 늑대들은 서쪽으로 이동해 울프 영지에 정착했다."
       }
      ],
      "sources": [
       {
-       "kind": "quest",
-       "quest": "Realm of Fog and Wind",
-       "quest_ko": "안개와 바람의 세상",
-       "version": "1.4",
-       "speaker": "Venti"
+       "kind": "wiki",
+       "page": "Four Winds",
+       "revision": 240325,
+       "section": "Overview > Wolf of the North",
+       "paragraph": "M2",
+       "wiki_refs": []
       },
+      {
+       "kind": "wiki",
+       "page": "Boreas",
+       "revision": 1566773,
+       "section": "Story > History",
+       "paragraph": "M12",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Tail of Boreas"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Thousand Winds Temple",
+     "status": "accepted",
+     "note": "All sentences match the English. The interpretation in 4 is a reasonable reading.",
+     "quote": "Traveler, would you be willing to help me go to the Thousand Winds Temple and retrieve my map and Adventurer Handbook?",
+     "sentences": [
+      {
+       "t_raw": "모험가 Jack은 **Thousand Winds Temple**에 두고 온 지도와 Adventurer Handbook을 되찾아 달라며 Traveler에게 도움을 청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모험가 잭은 **천풍 신전**에 두고 온 지도와 모험 핸드북을 되찾아 달라며 여행자에게 도움을 청한다."
+      },
+      {
+       "t_raw": "그는 곧 Adventure Ranking 시험을 앞두고 있어 이곳에 왔다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 곧 모험 등급 시험을 앞두고 있어 이곳에 왔다고 말한다."
+      },
+      {
+       "t_raw": "Viktor는 세부 사항은 기억나지 않지만 앞서 Thousand Winds Temple 주변을 배회했다고 하고, Bennett는 \"Aha! I've got it! The Thousand Winds Temple!\"이라고 외친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토르는 세부 사항은 기억나지 않지만 앞서 천풍 신전 주변을 배회했다고 하고, 베넷은 \"아하! 알겠다! 천풍 신전!\"이라고 외친다.",
+       "polish": {
+        "from": "빅토르는 세부 사항은 기억나지 않지만 앞서 천풍 신전 주변을 배회했다고 하고, 베넷은 \"Aha! I've got it! 천풍 신전!\"이라고 외친다.",
+        "text": "빅토르는 세부 사항은 기억나지 않지만 앞서 천풍 신전 주변을 배회했다고 하고, 베넷은 \"아하! 알겠다! 천풍 신전!\"이라고 외친다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Henry Morton의 친구는 Mondstadt에 오자 Thousand Winds Temple을 조사하겠다며 들떠 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헨리 모턴의 친구는 몬드에 오자 천풍 신전을 조사하겠다며 들떠 있었다."
+      },
+      {
+       "t_raw": "시험을 준비하거나 잃어버린 물건을 찾거나 유적을 조사하려는 사람들이 각기 다른 이유로 이 사원을 찾았다는 점에서, Thousand Winds Temple은 모험가들이 한 번쯤 들르는 유적지로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "시험을 준비하거나 잃어버린 물건을 찾거나 유적을 조사하려는 사람들이 각기 다른 이유로 이 사원을 찾았다는 점에서, 천풍 신전은 모험가들이 한 번쯤 들르는 유적지로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "quest",
        "quest": "Missive of Cloud and Fog",
        "quest_ko": "구름과 안개의 편지",
        "version": "1.4",
        "speaker": "Bennett"
-      }
-     ],
-     "heading": "작중 행적 — 천풍 신전",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Thousand Winds Temple",
-     "status": "accepted",
-     "note": "All sentences are supported by Q5 and Q7, and the interpretation is reasonable.",
-     "quote": "Traveler, would you be willing to help me go to the Thousand Winds Temple and retrieve my map and Adventurer Handbook?",
-     "sentences": [
-      {
-       "t_raw": "Jack은 Traveler에게 Thousand Winds Temple에 가서 자신의 지도와 Adventurer Handbook을 되찾아 오도록 도와달라고 청한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "잭은 여행자에게 천풍 신전에 가서 자신의 지도와 모험 핸드북을 되찾아 오도록 도와달라고 청한다."
       },
       {
-       "t_raw": "그는 곧 Adventure Ranking test를 치를 예정이라 Thousand Winds Temple에 왔다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 곧 Adventure Ranking test를 치를 예정이라 천풍 신전에 왔다고 말한다.",
-       "polish": {
-        "from": "그는 곧 Adventure Ranking test를 치를 예정이라 천풍 신전에 왔다고 말한다.",
-        "text": "그는 곧 Adventure Ranking test를 치를 예정이라 천풍 신전에 왔다고 말한다.",
-        "by": "ds"
-       }
+       "kind": "quest",
+       "quest": "A Mysterious Loss",
+       "quest_ko": "베일에 싸인 분실물",
+       "version": "1.1",
+       "speaker": "Viktor"
       },
-      {
-       "t_raw": "지도와 Adventurer Handbook을 되찾는 일과 시험 준비가 같은 인물의 부탁으로 제시되어, Thousand Winds Temple이 소지품 회수와 **Adventure Ranking test** 준비가 이어지는 현장으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "지도와 모험 핸드북을 되찾는 일과 시험 준비가 같은 인물의 부탁으로 제시되어, 천풍 신전이 소지품 회수와 **Adventure Ranking test** 준비가 이어지는 현장으로 보인다.",
-       "polish": {
-        "from": "지도와 모험 핸드북을 되찾는 일과 시험 준비가 같은 인물의 부탁으로 제시되어, 천풍 신전이 소지품 회수와 **Adventure Ranking test** 준비가 이어지는 현장으로 보인다.",
-        "text": "지도와 모험 핸드북을 되찾는 일과 시험 준비가 같은 인물의 부탁으로 제시되어, 천풍 신전이 소지품 회수와 **Adventure Ranking test** 준비가 이어지는 현장으로 보인다.",
-        "by": "ds"
-       }
-      }
-     ],
-     "sources": [
       {
        "kind": "quest",
        "quest": "Solo Venture",
@@ -1569,69 +977,6 @@
        "quest_ko": "하늘이 내린 기회?",
        "version": "1.0",
        "speaker": "Jack"
-      }
-     ],
-     "heading": "작중 행적 — 천풍 신전",
-     "latin_left": [
-      "Adventure Ranking",
-      "Adventure Ranking"
-     ]
-    },
-    {
-     "section": "작중 행적 — Thousand Winds Temple",
-     "status": "accepted",
-     "note": "All sentences are supported by Q4, Q8, A7 and M4. The interpretation is reasonable.",
-     "quote": "When he came to Mondstadt, he told me excitedly that he was surveying the Thousand Winds Temple.",
-     "sentences": [
-      {
-       "t_raw": "Viktor는 세부 사항은 기억하지 못하지만 앞서 Thousand Winds Temple 주변을 배회했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "빅토르는 세부 사항은 기억하지 못하지만 앞서 천풍 신전 주변을 배회했다고 말한다."
-      },
-      {
-       "t_raw": "Henry Morton은 행방불명된 친구가 Mondstadt에 왔을 때 Thousand Winds Temple을 조사하고 있었다고 들떠 말했다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헨리 모턴은 행방불명된 친구가 몬드에 왔을 때 천풍 신전을 조사하고 있었다고 들떠 말했다고 전한다."
-      },
-      {
-       "t_raw": "Time and Wind에서 Thousand Winds Temple 근처 Sundial 곁 Eye of the Storm과 싸울 때에는 희미한 목소리가 고대의 이야기가 바람에 실려 오고 시간이 지나면 다시 자라날 것이라는 말을 들려준다.",
-       "interp": false,
-       "dropped": false,
-       "t": "시간과 바람에서 천풍 신전 근처 Sundial 곁 광풍의 핵과 싸울 때에는 희미한 목소리가 고대의 이야기가 바람에 실려 오고 시간이 지나면 다시 자라날 것이라는 말을 들려준다."
-      },
-      {
-       "t_raw": "Thousand Winds Temple 주변을 배회하고 조사했다는 증언과 Sundial 곁에서 들리는 목소리가 겹쳐, 이곳의 탐사가 신비한 경험과 이어지는 현장으로 그려진다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "천풍 신전 주변을 배회하고 조사했다는 증언과 Sundial 곁에서 들리는 목소리가 겹쳐, 이곳의 탐사가 신비한 경험과 이어지는 현장으로 그려진다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "A Mysterious Loss",
-       "quest_ko": "베일에 싸인 분실물",
-       "version": "1.1",
-       "speaker": "Viktor"
-      },
-      {
-       "kind": "wiki",
-       "page": "Thousand Winds",
-       "revision": 1712283,
-       "section": "Overview",
-       "paragraph": "A7",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Sacrificial Bow"
-        },
-        {
-         "type": "weapon",
-         "name": "Sacrificial Fragments"
-        }
-       ]
       },
       {
        "kind": "quest",
@@ -1639,7 +984,122 @@
        "quest_ko": "시간과 바람",
        "version": "1.0",
        "speaker": "Henry Morton"
+      }
+     ],
+     "heading": "작중 행적 — 천풍 신전",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Thousand Winds Temple",
+     "status": "accepted",
+     "note": "Sentence 2 treats being trapped by the mechanism as something that happens after arrival. The English has Venti only asking whether the Traveler was trapped, so this is not established.",
+     "quote": "So you came all the way to the Thousand Winds Temple, then what? You were trapped by the mechanism?",
+     "sentences": [
+      {
+       "t_raw": "Venti는 Thousand Winds Temple까지 온 Traveler에게 그다음 무슨 일이 있었는지, 기구에 갇혔는지를 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 천풍 신전까지 온 여행자에게 그다음 무슨 일이 있었는지, 기구에 갇혔는지를 묻는다."
       },
+      {
+       "t_raw": "사원의 Sundial 주변에는 춤을 추는 hilichurl 무리가 있어, Traveler가 그들을 처리하라는 의뢰를 받기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사원의 Sundial 주변에는 춤을 추는 츄츄족 무리가 있어, 여행자가 그들을 처리하라는 의뢰를 받기도 한다.",
+       "polish": {
+        "from": "사원의 Sundial 주변에는 춤을 추는 hilichurl 무리가 있어, 여행자가 그들을 처리하라는 의뢰를 받기도 한다.",
+        "text": "사원의 Sundial 주변에는 춤을 추는 츄츄족 무리가 있어, 여행자가 그들을 처리하라는 의뢰를 받기도 한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Thousand Winds Temple까지 왔는데 기구에 갇혔는지 묻는 Venti의 대사와 사원 인근에서 hilichurl 무리와 마주칠 수 있다는 점에서, Thousand Winds Temple 탐사는 도착지만으로 끝나지 않는 곳으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "천풍 신전까지 왔는데 기구에 갇혔는지 묻는 벤티의 대사와 사원 인근에서 츄츄족 무리와 마주칠 수 있다는 점에서, 천풍 신전 탐사는 도착지만으로 끝나지 않는 곳으로 보인다.",
+       "polish": {
+        "from": "천풍 신전까지 왔는데 기구에 갇혔는지 묻는 벤티의 대사와 사원 인근에서 hilichurl 무리와 마주칠 수 있다는 점에서, 천풍 신전 탐사는 도착지만으로 끝나지 않는 곳으로 보인다.",
+        "text": "천풍 신전까지 왔는데 기구에 갇혔는지 묻는 벤티의 대사와 사원 인근에서 츄츄족 무리와 마주칠 수 있다는 점에서, 천풍 신전 탐사는 도착지만으로 끝나지 않는 곳으로 보인다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Realm of Fog and Wind",
+       "quest_ko": "안개와 바람의 세상",
+       "version": "1.4",
+       "speaker": "Venti"
+      },
+      {
+       "kind": "wiki",
+       "page": "Istaroth",
+       "revision": 1647273,
+       "section": "Story > Legacy",
+       "paragraph": "M13",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "Hilichurl Cultural Customs"
+        },
+        {
+         "type": "quest",
+         "name": "Crisis of Shields"
+        },
+        {
+         "type": "book",
+         "name": "The Byakuyakoku Collection"
+        },
+        {
+         "type": "item",
+         "name": "Handy Handbook of Hilichurlian"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 천풍 신전",
+     "latin_left": [
+      "Sundial"
+     ]
+    },
+    {
+     "section": "작중 행적 — Thousand Winds Temple",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "An ancient tale comes whisked in the wind... In time, it will grow and sprout once again...",
+     "sentences": [
+      {
+       "t_raw": "Sundial 곁에서 Eye of the Storm과 싸우는 동안, 희미한 목소리가 \"An ancient tale comes whisked in the wind... In time, it will grow and sprout once again...\"이라고 들려온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Sundial 곁에서 광풍의 핵과 싸우는 동안, 희미한 목소리가 \"오래된 이야기가 바람에 휩쓸려 찾아온다... 시간이 흐르면 그것은 다시 자라고 싹틀 것이다...\"이라고 들려온다.",
+       "polish": {
+        "from": "Sundial 곁에서 광풍의 핵과 싸우는 동안, 희미한 목소리가 \"An ancient tale comes whisked in the wind... In time, it will grow and sprout once again...\"이라고 들려온다.",
+        "text": "Sundial 곁에서 광풍의 핵과 싸우는 동안, 희미한 목소리가 \"오래된 이야기가 바람에 휩쓸려 찾아온다... 시간이 흐르면 그것은 다시 자라고 싹틀 것이다...\"이라고 들려온다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "사원의 돌기둥에는 \"Wind brings the seeds of tales, time allows them to take root.\"라는 격언이 새겨져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사원의 돌기둥에는 \"바람은 이야기의 씨앗을 가져오고, 시간은 그것들이 뿌리내리게 한다.\"라는 격언이 새겨져 있다.",
+       "polish": {
+        "from": "사원의 돌기둥에는 \"Wind brings the seeds of tales, time allows them to take root.\"라는 격언이 새겨져 있다.",
+        "text": "사원의 돌기둥에는 \"바람은 이야기의 씨앗을 가져오고, 시간은 그것들이 뿌리내리게 한다.\"라는 격언이 새겨져 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "바람이 옮긴 이야기의 씨앗이 시간 속에서 뿌리내린다는 격언과, 바람에 실려 온 옛 이야기가 때가 되면 다시 자라난다는 목소리가 같은 것을 말하고 있다는 점에서, 사원에서 들리는 메아리는 이곳에 새겨진 문구와 **짝을 이룬다**고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "바람이 옮긴 이야기의 씨앗이 시간 속에서 뿌리내린다는 격언과, 바람에 실려 온 옛 이야기가 때가 되면 다시 자라난다는 목소리가 같은 것을 말하고 있다는 점에서, 사원에서 들리는 메아리는 이곳에 새겨진 문구와 **짝을 이룬다**고 볼 수 있다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Istaroth",
@@ -1647,42 +1107,162 @@
        "section": "Story > Legacy",
        "paragraph": "M4",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 69446,
+       "section": "Areas",
+       "paragraph": "M11",
+       "wiki_refs": []
       }
      ],
      "heading": "작중 행적 — 천풍 신전",
      "latin_left": [
-      "Sundial",
       "Sundial"
      ]
     },
     {
-     "section": "떡밥과 수수께끼",
+     "section": "작중 행적 — Thousand Winds의 음성",
      "status": "accepted",
-     "note": "The listed usages and the Enkanomiya and Aranaga statements match A1, A4, A5 and M8. The hedged interpretation is acceptable.",
-     "quote": "This is very likely to be referring to Istaroth, as her titles include \"The Thousand Winds\", the \"Undying Wind\", and similar.",
+     "note": "\"wisp\" is rendered as \"작은 불꽃\" (small flame/spark). The English says a wisp among the thousand winds, with no mention of fire or a flame.",
+     "quote": "Back then, I was but a wisp among the thousand winds. I wasn't a god of anything — I didn't even have a human form...",
      "sentences": [
       {
-       "t_raw": "Thousand Winds는 Istaroth, Mondstadt를 지키는 바람들의 인격화, Aranaga가 'Ad Oblivione'라 부른 침식 개념 등으로 갈린다.",
+       "t_raw": "Venti는 그때 자신이 **Thousand Winds 가운데 하나의 작은 정령**이었고, 어떤 신도 아니었으며 인간의 모습조차 없었다고 회고한다.",
        "interp": false,
        "dropped": false,
-       "t": "천풍은 이스타로트, 몬드를 지키는 바람들의 인격화, 아란나가가 'Ad Oblivione'라 부른 침식 개념 등으로 갈린다."
+       "repaired": true,
+       "t": "벤티는 그때 자신이 **천풍 가운데 하나의 작은 정령**이었고, 어떤 신도 아니었으며 인간의 모습조차 없었다고 회고한다."
       },
       {
-       "t_raw": "Enkanomiya 신앙은 Istaroth를 'undying wind'의 인격화로 보고, Aranaga는 'Ad Oblivione'을 'the thousand winds that return to one'로 풀어낸다.",
+       "t_raw": "Paimon은 탐험가의 용기, 부드럽고 진실한 사랑, 수호자의 의지에 이어 **Thousand Winds의 '기쁨의 노래'**를 언급한다.",
        "interp": false,
        "dropped": false,
-       "t": "연하궁 신앙은 이스타로트를 '불멸의 바람'의 인격화로 보고, 아란나가는 'Ad Oblivione'을 '하나로 돌아가는 천풍'으로 풀어낸다.",
+       "t": "페이몬은 탐험가의 용기, 부드럽고 진실한 사랑, 수호자의 의지에 이어 **천풍의 '기쁨의 노래'**를 언급한다."
+      },
+      {
+       "t_raw": "두 장면을 함께 보면 Thousand Winds는 Venti가 속했던 과거의 범위이면서 노래로 표현되는 대상으로도 등장하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 장면을 함께 보면 천풍은 벤티가 속했던 과거의 범위이면서 노래로 표현되는 대상으로도 등장하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Should You Be Trapped in a Windless Land (Quest)",
+       "quest_ko": "바람이 없는 곳에 갇힌다면",
+       "version": "1.0",
+       "speaker": "Venti"
+      },
+      {
+       "kind": "quest",
+       "quest": "Bonds of Melody (Quest)",
+       "quest_ko": "노래로 엮인 인연",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 천풍의 음성",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Thousand Winds의 음성",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Oh, thank the Thousand Winds! , your arrival must be the grace of the gods!",
+     "sentences": [
+      {
+       "t_raw": "Kaeya는 'Thousand Winds에 감사드립니다!'라고 말하며, 당신의 도착이 **신들의 은총**임에 틀림없다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "케이아는 '천풍에 감사드립니다!'라고 말하며, 당신의 도착이 **신들의 은총**임에 틀림없다고 한다."
+      },
+      {
+       "t_raw": "Thousand Winds에 대한 감사와 신들의 은총이라는 표현이 한 문장에 놓이면서, Thousand Winds가 신적 은총과 연결해 불리는 장면으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "천풍에 대한 감사와 신들의 은총이라는 표현이 한 문장에 놓이면서, 천풍이 신적 은총과 연결해 불리는 장면으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Kaeya's Troubles",
+       "quest_ko": "케이아의 난제",
+       "version": "1.0",
+       "speaker": "Kaeya"
+      }
+     ],
+     "heading": "작중 행적 — 천풍의 음성",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Thousand Winds의 음성",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "I'm preventing your fall with the power of a thousand winds.",
+     "sentences": [
+      {
+       "t_raw": "수수께끼의 목소리는 Thousand Winds의 힘으로 상대의 추락을 막고 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수수께끼의 목소리는 천풍의 힘으로 상대의 추락을 막고 있다고 말한다."
+      },
+      {
+       "t_raw": "이 발화에서 Thousand Winds는 추락을 막는 힘의 근거로 불린 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 발화에서 천풍은 추락을 막는 힘의 근거로 불린 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Dragon Storm",
+       "quest_ko": "용의 재앙",
+       "version": "1.0",
+       "speaker": "Mysterious Voice"
+      }
+     ],
+     "heading": "작중 행적 — 천풍의 음성",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Venti was originally a \"single thread of the thousand winds\"",
+     "sentences": [
+      {
+       "t_raw": "**Thousand Winds**의 한 지시 대상은 Istaroth이며, 그녀는 'the thousand winds of time' 또는 간단히 'the thousand winds'로도 불린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**천풍**의 한 지시 대상은 이스타로트이며, 그녀는 '시간의 천풍' 또는 간단히 '천풍'으로도 불린다.",
        "polish": {
-        "from": "연하궁 신앙은 이스타로트를 'undying wind'의 인격화로 보고, 아란나가는 'Ad Oblivione'을 'the thousand winds that return to one'로 풀어낸다.",
-        "text": "연하궁 신앙은 이스타로트를 '불멸의 바람'의 인격화로 보고, 아란나가는 'Ad Oblivione'을 '하나로 돌아가는 천풍'으로 풀어낸다.",
+        "from": "**천풍**의 한 지시 대상은 이스타로트이며, 그녀는 'the thousand winds of time' 또는 간단히 'the thousand winds'로도 불린다.",
+        "text": "**천풍**의 한 지시 대상은 이스타로트이며, 그녀는 '시간의 천풍' 또는 간단히 '천풍'으로도 불린다.",
         "by": "ds"
        }
       },
       {
-       "t_raw": "그래서 Ad Oblivione의 지시 대상이 침식인지 Istaroth인지는 두 용례가 겹치는 해석의 여지로 남는다고 볼 수 있다.",
+       "t_raw": "Mondstadt에서 Istaroth 숭배가 희미해진 뒤 Thousand Winds는 북부 Teyvat의 바람과 구름, 즉 Mondstadt를 지키는 존재들로 해석되지만, Venti는 원래 Thousand Winds 가운데 하나의 실이었고 **Barbatos**로 알려진 존재는 신성한 힘 없는 작은 원소 정령이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드에서 이스타로트 숭배가 희미해진 뒤 천풍은 북부 티바트의 바람과 구름, 즉 몬드를 지키는 존재들로 해석되지만, 벤티는 원래 천풍 가운데 하나의 실이었고 **바르바토스**로 알려진 존재는 신성한 힘 없는 작은 원소 정령이었다."
+      },
+      {
+       "t_raw": "그는 힘을 모아 신격과 Anemo Archon의 자리에 올랐고, 자신의 바람 힘은 Thousand Winds의 힘을 부르는 것으로 표현된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 힘을 모아 신격과 바람의 신의 자리에 올랐고, 자신의 바람 힘은 천풍의 힘을 부르는 것으로 표현된다."
+      },
+      {
+       "t_raw": "이처럼 Thousand Winds라는 이름은 Istaroth를 가리키는 층위와 Barbatos의 기원을 설명하는 층위를 함께 지닌 채 쓰인 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "그래서 Ad Oblivione의 지시 대상이 침식인지 이스타로트인지는 두 용례가 겹치는 해석의 여지로 남는다고 볼 수 있다."
+       "t": "이처럼 천풍라는 이름은 이스타로트를 가리키는 층위와 바르바토스의 기원을 설명하는 층위를 함께 지닌 채 쓰인 것으로 보인다."
       }
      ],
      "sources": [
@@ -1691,14 +1271,346 @@
        "page": "Thousand Winds",
        "revision": 1712283,
        "section": null,
-       "paragraph": "A1",
+       "paragraph": "A2",
        "wiki_refs": [
         {
-         "type": "book",
-         "name": "Springs of Hidden Jade"
+         "type": "item",
+         "name": "Hydrological Studies in Byakuyakoku"
         }
        ]
       },
+      {
+       "kind": "wiki",
+       "page": "Thousand Winds",
+       "revision": 1712283,
+       "section": "Overview",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Skyward Atlas"
+        },
+        {
+         "type": "weapon",
+         "name": "Skyward Spine"
+        },
+        {
+         "type": "cs",
+         "name": "Venti"
+        },
+        {
+         "type": "quest",
+         "name": "Dragon Storm"
+        },
+        {
+         "type": "weapon",
+         "name": "Skyward Harp"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Venti/Storyline",
+       "revision": 1526186,
+       "section": "Story > The Age of Kings",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Venti"
+        },
+        {
+         "type": "book",
+         "name": "History of Kings and Clans: Prologue"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "all worshipped both the Anemo Archon and the God of Time.",
+     "sentences": [
+      {
+       "t_raw": "Decarabian의 Mondstadt가 무너진 뒤 Barbatos는 신격에 올라 Anemo Archon이 되었고, 새 Mondstadt가 형성될 때 Gunnhildr Clan, Imunlaukr Clan, Lawrence Clan 같은 주요 가문들이 Anemo Archon과 God of Time을 함께 숭배했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데카라비안의 몬드가 무너진 뒤 바르바토스는 신격에 올라 바람의 신이 되었고, 새 몬드가 형성될 때 군힐드 가문, 이뮨라우크 일족, 로렌스 가문 같은 주요 가문들이 바람의 신과 시간의 신을 함께 숭배했다."
+      },
+      {
+       "t_raw": "그 숭배는 주로 동쪽 바다를 마주한 높은 절벽 위에서 이루어졌으며, 이곳은 Istaroth의 별칭 하나와 이름을 공유하는 Thousand Winds Temple로 추정된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 숭배는 주로 동쪽 바다를 마주한 높은 절벽 위에서 이루어졌으며, 이곳은 이스타로트의 별칭 하나와 이름을 공유하는 천풍 신전으로 추정된다."
+      },
+      {
+       "t_raw": "Thousand Winds의 또 다른 용례로, 이름 없는 바람 정령이 Decarabian의 도시 밖에 있던 Gunnhildr Clan을 도왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천풍의 또 다른 용례로, 이름 없는 바람 정령이 데카라비안의 도시 밖에 있던 군힐드 가문을 도왔다."
+      },
+      {
+       "t_raw": "Anemo Archon과 God of Time을 함께 모신 기록은 Thousand Winds가 Mondstadt의 바람 신앙과 시간 신앙을 잇는 이름으로 쓰였음을 시사한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "바람의 신과 시간의 신을 함께 모신 기록은 천풍이 몬드의 바람 신앙과 시간 신앙을 잇는 이름으로 쓰였음을 시사한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Thousand Winds",
+       "revision": 1712283,
+       "section": "Other Known Usages",
+       "paragraph": "A8",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "Biography of Gunnhildr"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Istaroth",
+       "revision": 1647273,
+       "section": "Story > In Mondstadt",
+       "paragraph": "M10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences supported by M9 and M12.",
+     "quote": "the current epithet of \"Four Winds\" does not refer to literal winds",
+     "sentences": [
+      {
+       "t_raw": "전승에서는 Barbatos가 모든 Thousand Winds의 이름을 기록한 원본 Skyward Atlas로 네 바람을 불러냈다고 하지만, Venti 자신은 그 네 바람의 공을 자기 것으로 돌리지 않으며 현재의 **Four Winds**는 문자 그대로의 바람이 아니라 Aristocracy 시대가 끝날 무렵까지 등장한 Mondstadt의 네 핵심 인물을 가리킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전승에서는 바르바토스가 모든 천풍의 이름을 기록한 원본 천공의 두루마리로 네 바람을 불러냈다고 하지만, 벤티 자신은 그 네 바람의 공을 자기 것으로 돌리지 않으며 현재의 **바람 사신수**는 문자 그대로의 바람이 아니라 귀족정 시대가 끝날 무렵까지 등장한 몬드의 네 핵심 인물을 가리킨다."
+      },
+      {
+       "t_raw": "Boreas는 Vennessa의 Mondstadt Aristocracy 반란 이후 약 1000년 전에 공식적으로 Four Winds 중 하나가 되었고, 가까운 Temple of the Wolf는 과거 그를 숭배하던 곳이었으나 오래 버려진 채 그의 영혼은 Mondstadt의 반대편에 머문다.",
+       "interp": false,
+       "dropped": false,
+       "t": "보레아스는 바네사의 몬드 귀족 반란 이후 약 1000년 전에 공식적으로 바람 사신수 중 하나가 되었고, 가까운 북풍 늑대의 사당은 과거 그를 숭배하던 곳이었으나 오래 버려진 채 그의 영혼은 몬드의 반대편에 머문다."
+      },
+      {
+       "t_raw": "Thousand Winds의 이름을 기록한 Skyward Atlas와 실제 Four Winds의 인물 구성이 서로 다른 층위를 가리키는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "천풍의 이름을 기록한 천공의 두루마리와 실제 바람 사신수의 인물 구성이 서로 다른 층위를 가리키는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Venti/Storyline",
+       "revision": 1526186,
+       "section": "Story > Cultivating Mondstadt",
+       "paragraph": "M9",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Skyward Atlas"
+        },
+        {
+         "type": "cs",
+         "name": "Venti"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Boreas",
+       "revision": 1566773,
+       "section": "Story > History",
+       "paragraph": "M12",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Tail of Boreas"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M7.",
+     "quote": "of which not even the Thousand Winds could resist nor achieve.",
+     "sentences": [
+      {
+       "t_raw": "Dvalin은 Anemo 원소 용이자 전직 Dragon of the East로, 천 년 동안 자신의 힘으로 Mondstadt를 지켜 왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "드발린은 바람 원소 용이자 전직 동풍의 용으로, 천 년 동안 자신의 힘으로 몬드를 지켜 왔다."
+      },
+      {
+       "t_raw": "하늘과 바람을 완전히 다루는 그는 Black Dragon Durin의 독성 구름을 회오리바람으로 파괴할 수 있었는데, 그 일은 Thousand Winds조차 저항하거나 해내지 못한 것이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하늘과 바람을 완전히 다루는 그는 흑룡 두린의 독성 구름을 회오리바람으로 파괴할 수 있었는데, 그 일은 천풍조차 저항하거나 해내지 못한 것이었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dvalin",
+       "revision": 1444447,
+       "section": "Profile",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by A2 and M13; the interpretation is reasonable.",
+     "quote": "hilichurls worship the power of Anemo rather than the Anemo Archon",
+     "sentences": [
+      {
+       "t_raw": "Istaroth는 Ruler of Time이자 'the thousand winds of time'로도 불리며, Enkanomiya 사람들은 그녀를 'undying wind'의 인격화로 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이스타로트는 시간의 집정관이자 '시간의 천풍'으로도 불리며, 연하궁 사람들은 그녀를 '불멸의 바람'의 인격화로 말한다.",
+       "polish": {
+        "from": "이스타로트는 시간의 집정관이자 'the thousand winds of time'로도 불리며, 연하궁 사람들은 그녀를 'undying wind'의 인격화로 말한다.",
+        "text": "이스타로트는 시간의 집정관이자 '시간의 천풍'으로도 불리며, 연하궁 사람들은 그녀를 '불멸의 바람'의 인격화로 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Jacob Musk는 hilichurl이 원소의 힘 자체를 숭배한다고 보았고, 그 예로 hilichurl이 Anemo Archon이 아니라 Anemo의 힘을 숭배한다고 들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야곱·머스크는 츄츄족이 원소의 힘 자체를 숭배한다고 보았고, 그 예로 츄츄족이 바람의 신이 아니라 바람의 힘을 숭배한다고 들었다.",
+       "polish": {
+        "from": "야곱·머스크는 hilichurl이 원소의 힘 자체를 숭배한다고 보았고, 그 예로 hilichurl이 바람의 신이 아니라 바람의 힘을 숭배한다고 들었다.",
+        "text": "야곱·머스크는 츄츄족이 원소의 힘 자체를 숭배한다고 보았고, 그 예로 츄츄족이 바람의 신이 아니라 바람의 힘을 숭배한다고 들었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Thousand Winds Temple 근처의 Sundial 주변에서 hilichurl들이 춤추는 모습도 알려져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천풍 신전 근처의 Sundial 주변에서 츄츄족들이 춤추는 모습도 알려져 있다.",
+       "polish": {
+        "from": "천풍 신전 근처의 Sundial 주변에서 hilichurl들이 춤추는 모습도 알려져 있다.",
+        "text": "천풍 신전 근처의 Sundial 주변에서 츄츄족들이 춤추는 모습도 알려져 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Musk Family의 연구는 Hilichurlian 단어 'Unu'가 '하나'를 뜻하면서 신을 가리키는 거룩한 말로도 쓰인다고 밝혔으며, 이를 종합해 hilichurl, Heavenly Principles와 그 빛나는 Shades, 그리고 Enkanomiya가 원래 속했던 통일된 인간 문명 사이의 연결이 제기된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "머스크 가문의 연구는 츄츄어 단어 'Unu'가 '하나'를 뜻하면서 신을 가리키는 거룩한 말로도 쓰인다고 밝혔으며, 이를 종합해 츄츄족, 천리와 그 빛나는 그림자, 그리고 연하궁이 원래 속했던 통일된 인간 문명 사이의 연결이 제기된다.",
+       "polish": {
+        "from": "머스크 가문의 연구는 츄츄어 단어 'Unu'가 '하나'를 뜻하면서 신을 가리키는 거룩한 말로도 쓰인다고 밝혔으며, 이를 종합해 hilichurl, 천리와 그 빛나는 그림자, 그리고 연하궁이 원래 속했던 통일된 인간 문명 사이의 연결이 제기된다.",
+        "text": "머스크 가문의 연구는 츄츄어 단어 'Unu'가 '하나'를 뜻하면서 신을 가리키는 거룩한 말로도 쓰인다고 밝혔으며, 이를 종합해 츄츄족, 천리와 그 빛나는 그림자, 그리고 연하궁이 원래 속했던 통일된 인간 문명 사이의 연결이 제기된다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이는 hilichurl 숭배의 대상과 Istaroth를 둘러싼 명칭이 같은 방향에서 겹칠 수 있음을 보여주는 대목이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 츄츄족 숭배의 대상과 이스타로트를 둘러싼 명칭이 같은 방향에서 겹칠 수 있음을 보여주는 대목이다.",
+       "polish": {
+        "from": "이는 hilichurl 숭배의 대상과 이스타로트를 둘러싼 명칭이 같은 방향에서 겹칠 수 있음을 보여주는 대목이다.",
+        "text": "이는 츄츄족 숭배의 대상과 이스타로트를 둘러싼 명칭이 같은 방향에서 겹칠 수 있음을 보여주는 대목이다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Thousand Winds",
+       "revision": 1712283,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Hydrological Studies in Byakuyakoku"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Istaroth",
+       "revision": 1647273,
+       "section": "Story > Legacy",
+       "paragraph": "M13",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "Hilichurl Cultural Customs"
+        },
+        {
+         "type": "quest",
+         "name": "Crisis of Shields"
+        },
+        {
+         "type": "book",
+         "name": "The Byakuyakoku Collection"
+        },
+        {
+         "type": "item",
+         "name": "Handy Handbook of Hilichurlian"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Sundial",
+      "Unu"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A4, A5 and M8. The wording on the flower is loose, but the gist holds.",
+     "quote": "The concept of erosion, given the name \"Ad Oblivione\" by the Aranara Aranaga.",
+     "sentences": [
+      {
+       "t_raw": "Thousand Winds의 의미가 엇갈리는 가운데 **Ad Oblivione**는 해석의 여지를 남긴다.",
+       "interp": true,
+       "dropped": false,
+       "t": "천풍의 의미가 엇갈리는 가운데 **Ad Oblivione**는 해석의 여지를 남긴다."
+      },
+      {
+       "t_raw": "Aranara Aranaga는 침식 개념에 이 이름을 붙였고, 다른 기록은 Ad Oblivione로 파괴되지 않는 꽃을 'the thousand winds that return to one'과 연결하며 Istaroth일 가능성이 매우 높다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나라 아란나가는 침식 개념에 이 이름을 붙였고, 다른 기록은 Ad Oblivione로 파괴되지 않는 꽃을 '하나로 돌아가는 천풍'과 연결하며 이스타로트일 가능성이 매우 높다고 본다.",
+       "polish": {
+        "from": "아란나라 아란나가는 침식 개념에 이 이름을 붙였고, 다른 기록은 Ad Oblivione로 파괴되지 않는 꽃을 'the thousand winds that return to one'과 연결하며 이스타로트일 가능성이 매우 높다고 본다.",
+        "text": "아란나라 아란나가는 침식 개념에 이 이름을 붙였고, 다른 기록은 Ad Oblivione로 파괴되지 않는 꽃을 '하나로 돌아가는 천풍'과 연결하며 이스타로트일 가능성이 매우 높다고 본다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Thousand Winds",
@@ -1746,51 +1658,47 @@
      "heading": "떡밥과 수수께끼",
      "latin_left": [
       "Ad Oblivione",
-      "Ad Oblivione",
       "Ad Oblivione"
      ]
     },
     {
      "section": "떡밥과 수수께끼",
      "status": "accepted",
-     "note": "M13 supports the Musk and Unu claims and the possible connection. The interpretation follows from the text.",
-     "quote": "Altogether, this points towards a connection between hilichurls, the Heavenly Principles and its shining Shades, and the unified human civilization that once existed",
+     "note": "Supported by A5 and M8, and the hedged 'conjecture' reading matches 'very likely'.",
+     "quote": "This is very likely to be referring to Istaroth, as her titles include \"The Thousand Winds\", the \"Undying Wind\", and similar.",
      "sentences": [
       {
-       "t_raw": "hilichurls가 Istaroth와 Heavenly Principles에 연결될 가능성도 남아 있다.",
+       "t_raw": "Enkanomiya의 믿음에서는 Istaroth가 'undying wind'의 인격화이며 'thousand winds of time'과 'thousand winds'가 그녀와 바람의 힘을 가리킨다.",
        "interp": false,
        "dropped": false,
-       "t": "츄츄족이 이스타로트와 천리에 연결될 가능성도 남아 있다.",
+       "t": "연하궁의 믿음에서는 이스타로트가 '불멸의 바람'의 인격화이며 '시간의 천풍'과 '천풍'이 그녀와 바람의 힘을 가리킨다.",
        "polish": {
-        "from": "hilichurls가 이스타로트와 천리에 연결될 가능성도 남아 있다.",
-        "text": "츄츄족이 이스타로트와 천리에 연결될 가능성도 남아 있다.",
+        "from": "연하궁의 믿음에서는 이스타로트가 'undying wind'의 인격화이며 'thousand winds of time'과 'thousand winds'가 그녀와 바람의 힘을 가리킨다.",
+        "text": "연하궁의 믿음에서는 이스타로트가 '불멸의 바람'의 인격화이며 '시간의 천풍'과 '천풍'이 그녀와 바람의 힘을 가리킨다.",
         "by": "ds"
        }
       },
       {
-       "t_raw": "Jacob Musk는 hilichurls가 Anemo Archon이 아니라 Anemo의 힘 자체를 숭배한다고 보았고, 'Unu'가 'one'을 뜻하면서 신들을 가리키는 신성한 단어로도 쓰인다는 연구가 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "야곱·머스크는 츄츄족이 바람의 신이 아니라 바람의 힘 자체를 숭배한다고 보았고, 'Unu'가 '하나'를 뜻하면서 신들을 가리키는 신성한 단어로도 쓰인다는 연구가 있다.",
-       "polish": {
-        "from": "야곱·머스크는 hilichurls가 바람의 신이 아니라 바람의 힘 자체를 숭배한다고 보았고, 'Unu'가 'one'을 뜻하면서 신들을 가리키는 신성한 단어로도 쓰인다는 연구가 있다.",
-        "text": "야곱·머스크는 츄츄족이 바람의 신이 아니라 바람의 힘 자체를 숭배한다고 보았고, 'Unu'가 '하나'를 뜻하면서 신들을 가리키는 신성한 단어로도 쓰인다는 연구가 있다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "Aranaga의 'thousand winds that return to one'과 이 연구를 함께 놓으면, hilichurls와 Heavenly Principles, shining Shades, 통일된 인간 문명의 연결 가능성이 제기된다고 볼 수 있다.",
+       "t_raw": "이 겹침은 Ad Oblivione를 Istaroth와 잇는 해석을 **추정**으로 만든다.",
        "interp": true,
        "dropped": false,
-       "t": "아란나가의 '하나로 돌아가는 천풍'과 이 연구를 함께 놓으면, 츄츄족과 천리, 빛나는 그림자, 통일된 인간 문명의 연결 가능성이 제기된다고 볼 수 있다.",
-       "polish": {
-        "from": "아란나가의 'thousand winds that return to one'과 이 연구를 함께 놓으면, hilichurls와 천리, shining 그림자, 통일된 인간 문명의 연결 가능성이 제기된다고 볼 수 있다.",
-        "text": "아란나가의 '하나로 돌아가는 천풍'과 이 연구를 함께 놓으면, 츄츄족과 천리, 빛나는 그림자, 통일된 인간 문명의 연결 가능성이 제기된다고 볼 수 있다.",
-        "by": "ds"
-       }
+       "t": "이 겹침은 Ad Oblivione를 이스타로트와 잇는 해석을 **추정**으로 만든다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Thousand Winds",
+       "revision": 1712283,
+       "section": "Overview",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Hydrological Studies in Byakuyakoku"
+        }
+       ]
+      },
       {
        "kind": "wiki",
        "page": "Istaroth",
@@ -1807,7 +1715,38 @@
          "name": "The Byakuyakoku Collection"
         }
        ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Ad Oblivione"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by M13.",
+     "quote": "Hilichurls may also have a connection to Istaroth and the Heavenly Principles.",
+     "sentences": [
+      {
+       "t_raw": "**Hilichurls**가 Istaroth와 Heavenly Principles에 연결될 가능성도 제기된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**츄츄족**이 이스타로트와 천리에 연결될 가능성도 제기된다."
       },
+      {
+       "t_raw": "Jacob Musk는 hilichurls가 Anemo의 힘 자체를 숭배한다고 보았으며, Musk Family의 'Unu' 연구는 hilichurls·Heavenly Principles·그 빛나는 Shades·Enkanomiya가 원래 속했던 통일된 인간 문명의 연결을 시사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야곱·머스크는 츄츄족이 바람의 힘 자체를 숭배한다고 보았으며, 머스크 가문의 'Unu' 연구는 츄츄족·천리·그 빛나는 그림자·연하궁이 원래 속했던 통일된 인간 문명의 연결을 시사한다.",
+       "polish": {
+        "from": "야곱·머스크는 hilichurls가 바람의 힘 자체를 숭배한다고 보았으며, 머스크 가문의 'Unu' 연구는 hilichurls·천리·그 빛나는 그림자·연하궁이 원래 속했던 통일된 인간 문명의 연결을 시사한다.",
+        "text": "야곱·머스크는 츄츄족이 바람의 힘 자체를 숭배한다고 보았으며, 머스크 가문의 'Unu' 연구는 츄츄족·천리·그 빛나는 그림자·연하궁이 원래 속했던 통일된 인간 문명의 연결을 시사한다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Istaroth",
@@ -1840,95 +1779,28 @@
      ]
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "accepted",
-     "note": "Q10 supports the quote. The interpretation that the speaker can't be identified is a reasonable hedge given the multiple usages in A1.",
-     "quote": "I'm preventing your fall with the power of a thousand winds.",
-     "sentences": [
-      {
-       "t_raw": "Dragon Storm에서 Mysterious Voice는 thousand winds의 힘으로 추락을 막는다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "용의 재앙에서 Mysterious Voice는 천풍의 힘으로 추락을 막는다고 말한다.",
-       "polish": {
-        "from": "용의 재앙에서 Mysterious Voice는 thousand winds의 힘으로 추락을 막는다고 말한다.",
-        "text": "용의 재앙에서 Mysterious Voice는 천풍의 힘으로 추락을 막는다고 말한다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "Thousand Winds의 용례가 여럿인 만큼, 이 대사만으로 화자의 정체를 특정하기는 어렵다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "천풍의 용례가 여럿인 만큼, 이 대사만으로 화자의 정체를 특정하기는 어렵다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Thousand Winds",
-       "revision": 1712283,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "Springs of Hidden Jade"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Dragon Storm",
-       "quest_ko": "용의 재앙",
-       "version": "1.0",
-       "speaker": "Mysterious Voice"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Mysterious Voice"
-     ]
-    },
-    {
      "section": "여담",
      "status": "accepted",
-     "note": "M1, Q1 and Q9 support the facts. The interpretation is reasonable.",
+     "note": "All sentences are supported by M1 and Q1. The interpretation is hedged.",
      "quote": "The Windblume Festival (German for \"Wind Flower Festival\") is a festival in Mondstadt celebrating the Thousand Winds.",
      "sentences": [
       {
-       "t_raw": "Windblume Festival은 Mondstadt에서 **Thousand Winds를 기념하는 축제**다.",
+       "t_raw": "**Windblume Festival**은 Mondstadt에서 Thousand Winds를 기리는 축제다.",
        "interp": false,
        "dropped": false,
-       "t": "윈드블룸 축제는 몬드에서 **천풍을 기념하는 축제**다."
+       "t": "**윈드블룸 축제**는 몬드에서 천풍을 기리는 축제다."
       },
       {
-       "t_raw": "Paimon은 탐험가의 용기, 부드럽고 진실한 사랑, 수호자의 의지에 이어 Thousand Winds의 **'song of good cheer'**를 언급한다.",
+       "t_raw": "Paimon은 한 대사에서 탐험가의 용기, 진실한 사랑, 수호자의 의지에 이어 Thousand Winds의 기쁨의 노래를 언급한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 탐험가의 용기, 부드럽고 진실한 사랑, 수호자의 의지에 이어 천풍의 **'기쁨의 노래'**를 언급한다.",
-       "polish": {
-        "from": "페이몬은 탐험가의 용기, 부드럽고 진실한 사랑, 수호자의 의지에 이어 천풍의 **'song of good cheer'**를 언급한다.",
-        "text": "페이몬은 탐험가의 용기, 부드럽고 진실한 사랑, 수호자의 의지에 이어 천풍의 **'기쁨의 노래'**를 언급한다.",
-        "by": "ds"
-       }
+       "t": "페이몬은 한 대사에서 탐험가의 용기, 진실한 사랑, 수호자의 의지에 이어 천풍의 기쁨의 노래를 언급한다."
       },
       {
-       "t_raw": "Kaeya는 'thank the Thousand Winds'라고 말하며 상대의 도착이 신들의 은총이라 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "케이아는 '천풍에게 감사해'라고 말하며 상대의 도착이 신들의 은총이라 한다.",
-       "polish": {
-        "from": "케이아는 'thank the 천풍'라고 말하며 상대의 도착이 신들의 은총이라 한다.",
-        "text": "케이아는 '천풍에게 감사해'라고 말하며 상대의 도착이 신들의 은총이라 한다.",
-        "by": "ds"
-       }
-      },
-      {
-       "t_raw": "이처럼 Thousand Winds가 축제에서 기념되는 대상, 대화 속 노랫말, 감탄의 표현에까지 나타난다고 볼 수 있다.",
+       "t_raw": "축제가 Thousand Winds를 기린다는 사실과 대사 속 노래 언급이 겹쳐, Thousand Winds가 축제의 노래와 연결되는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이처럼 천풍이 축제에서 기념되는 대상, 대화 속 노랫말, 감탄의 표현에까지 나타난다고 볼 수 있다."
+       "t": "축제가 천풍을 기린다는 사실과 대사 속 노래 언급이 겹쳐, 천풍이 축제의 노래와 연결되는 것으로 보인다."
       }
      ],
      "sources": [
@@ -1946,6 +1818,164 @@
        "quest_ko": "노래로 엮인 인연",
        "version": "3.1",
        "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences match Q5, Q7, Q4, Q8 and Q2. The interpretation is mild and follows from the shared location.",
+     "quote": "Traveler, would you be willing to help me go to the Thousand Winds Temple and retrieve my map and Adventurer Handbook?",
+     "sentences": [
+      {
+       "t_raw": "Jack은 Thousand Winds Temple에 가서 자신의 지도와 Adventurer Handbook을 되찾아 오는 일을 Traveler에게 부탁한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잭은 천풍 신전에 가서 자신의 지도와 모험 핸드북을 되찾아 오는 일을 여행자에게 부탁한다."
+      },
+      {
+       "t_raw": "Jack은 곧 **Adventure Ranking** 시험을 앞두고 있어 Thousand Winds Temple에 왔다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잭은 곧 **모험 등급** 시험을 앞두고 있어 천풍 신전에 왔다고 말한다."
+      },
+      {
+       "t_raw": "같은 장소를 둔 부탁과 시험 준비가 맞물려, 사소한 탐사 의뢰가 Jack의 시험을 둘러싼 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 장소를 둔 부탁과 시험 준비가 맞물려, 사소한 탐사 의뢰가 잭의 시험을 둘러싼 셈이다."
+      },
+      {
+       "t_raw": "Viktor는 세부는 기억하지 못하면서도 앞서 Thousand Winds Temple 주변을 배회했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토르는 세부는 기억하지 못하면서도 앞서 천풍 신전 주변을 배회했다고 말한다."
+      },
+      {
+       "t_raw": "Henry Morton은 친구가 Mondstadt에 와서 Thousand Winds Temple을 조사한다고 들떠 말했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헨리 모턴은 친구가 몬드에 와서 천풍 신전을 조사한다고 들떠 말했다고 전한다."
+      },
+      {
+       "t_raw": "Venti는 Thousand Winds Temple까지 온 사람에게 그다음 장치에 갇혔느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 천풍 신전까지 온 사람에게 그다음 장치에 갇혔느냐고 묻는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Solo Venture",
+       "quest_ko": "홀로 위험 감당",
+       "version": "1.0",
+       "speaker": "Jack"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Fine Opportunity?",
+       "quest_ko": "하늘이 내린 기회?",
+       "version": "1.0",
+       "speaker": "Jack"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Mysterious Loss",
+       "quest_ko": "베일에 싸인 분실물",
+       "version": "1.1",
+       "speaker": "Viktor"
+      },
+      {
+       "kind": "quest",
+       "quest": "Time and Wind",
+       "quest_ko": "시간과 바람",
+       "version": "1.0",
+       "speaker": "Henry Morton"
+      },
+      {
+       "kind": "quest",
+       "quest": "Realm of Fog and Wind",
+       "quest_ko": "안개와 바람의 세상",
+       "version": "1.4",
+       "speaker": "Venti"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches M2.",
+     "quote": "The Temple of the Wolf is located near the Thousand Winds Temple in Starfell Valley.",
+     "sentences": [
+      {
+       "t_raw": "**Temple of the Wolf**는 Starfell Valley에서 Thousand Winds Temple 근처에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**북풍 늑대의 사당**은 별이 떨어지는 산골짜기에서 천풍 신전 근처에 있다."
+      },
+      {
+       "t_raw": "원래는 훈련장이었으며, Andrius와 그의 늑대들은 어느 시점 서쪽으로 이동해 Wolvendom에 자리 잡았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원래는 훈련장이었으며, 안드리우스와 그의 늑대들은 어느 시점 서쪽으로 이동해 울프 영지에 자리 잡았다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Four Winds",
+       "revision": 240325,
+       "section": "Overview > Wolf of the North",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentences 0 and 1 match A9 and Q9. The interpretation is hedged and reasonable.",
+     "quote": "Oh, thank the Thousand Winds! , your arrival must be the grace of the gods!",
+     "sentences": [
+      {
+       "t_raw": "Thousand Winds의 용례 중에는 여우 형상을 한 바람 정령이 실수로 Mondstadt 최초의 술을 만들었다는 사례도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천풍의 용례 중에는 여우 형상을 한 바람 정령이 실수로 몬드 최초의 술을 만들었다는 사례도 있다."
+      },
+      {
+       "t_raw": "Kaeya는 Thousand Winds에게 감사하다고 외치며 듣는 이의 도착이 신들의 은총이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "케이아는 천풍에게 감사하다고 외치며 듣는 이의 도착이 신들의 은총이라고 말한다."
+      },
+      {
+       "t_raw": "여우 형상의 바람 정령이 술을 만들었다는 일화와 Kaeya의 감탄은 Thousand Winds가 여러 대상과 말투로 불려 온 폭을 보여주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "여우 형상의 바람 정령이 술을 만들었다는 일화와 케이아의 감탄은 천풍이 여러 대상과 말투로 불려 온 폭을 보여주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Thousand Winds",
+       "revision": 1712283,
+       "section": "Other Known Usages",
+       "paragraph": "A9",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "A Drunkard's Tale"
+        }
+       ]
       },
       {
        "kind": "quest",
@@ -1963,8 +1993,8 @@
     {
      "section": "개요",
      "status": "accepted",
-     "note": "Faithful; 'wisp' rendered as 정령 is acceptable.",
-     "t_raw": "그때 나는 thousand winds 가운데 하나의 정령에 불과했다. 나는 그 무엇의 신도 아니었고 — 인간의 모습조차 없었다...",
+     "note": "Faithful translation of the Q6 line.",
+     "t_raw": "그때 나는 Thousand Winds 가운데 작은 정령에 불과했어. 나는 어떤 신도 아니었고 — 인간의 모습조차 없었지...",
      "en": "Back then, I was but a wisp among the thousand winds. I wasn't a god of anything — I didn't even have a human form...",
      "speaker": "Venti",
      "source": {
@@ -1974,14 +2004,14 @@
       "version": "1.0",
       "speaker": "Venti"
      },
-     "t": "그때 나는 thousand winds 가운데 하나의 정령에 불과했다. 나는 그 무엇의 신도 아니었고 — 인간의 모습조차 없었다...",
+     "t": "그때 나는 천풍 가운데 작은 정령에 불과했어. 나는 어떤 신도 아니었고 — 인간의 모습조차 없었지...",
      "speaker_ko": "벤티"
     },
     {
-     "section": "정체 — Mondstadt를 지키는 바람들",
+     "section": "정체",
      "status": "accepted",
-     "note": "'wisp' mistranslated as 불씨 (ember/spark), which changes the meaning.",
-     "t_raw": "[번역] 그때 나는 thousand winds 가운데 한 줄기에 불과했다. 나는 어떤 것의 신도 아니었고 — 인간의 모습조차 없었다...",
+     "note": "Faithful translation of the Q6 line.",
+     "t_raw": "그때 나는 thousand winds 가운데 하나의 작은 정령이었어. 나는 어떤 신도 아니었고 — 인간의 모습조차 없었어...",
      "en": "Back then, I was but a wisp among the thousand winds. I wasn't a god of anything — I didn't even have a human form...",
      "speaker": "Venti",
      "source": {
@@ -1991,14 +2021,14 @@
       "version": "1.0",
       "speaker": "Venti"
      },
-     "t": "[번역] 그때 나는 thousand winds 가운데 한 줄기에 불과했다. 나는 어떤 것의 신도 아니었고 — 인간의 모습조차 없었다...",
+     "t": "그때 나는 thousand winds 가운데 하나의 작은 정령이었어. 나는 어떤 신도 아니었고 — 인간의 모습조차 없었어...",
      "speaker_ko": "벤티"
     },
     {
      "section": "드러난 역사",
      "status": "accepted",
-     "note": "Faithful; '작은' only reflects the diminutive sense of 'wisp', and the register change is fine.",
-     "t_raw": "그때 나는 thousand winds 가운데 하나의 작은 정령에 불과했어. 나는 그 무엇의 신도 아니었고 — 인간의 모습조차 없었지...",
+     "note": "Faithful translation.",
+     "t_raw": "그때 나는 그저 thousand winds 가운데 작은 정령이었어. 나는 무엇의 신도 아니었고 — 인간의 모습조차 없었지...",
      "en": "Back then, I was but a wisp among the thousand winds. I wasn't a god of anything — I didn't even have a human form...",
      "speaker": "Venti",
      "source": {
@@ -2008,31 +2038,14 @@
       "version": "1.0",
       "speaker": "Venti"
      },
-     "t": "그때 나는 thousand winds 가운데 하나의 작은 정령에 불과했어. 나는 그 무엇의 신도 아니었고 — 인간의 모습조차 없었지...",
-     "speaker_ko": "벤티"
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "accepted",
-     "note": "'wisp' mistranslated as 불씨 (ember), and '작은' is added.",
-     "t_raw": "[번역] 그때 나는 수천의 바람 가운데 한 줄기에 불과했어. 나는 무엇의 신도 아니었고 — 인간의 모습조차 없었어...",
-     "en": "Back then, I was but a wisp among the thousand winds. I wasn't a god of anything — I didn't even have a human form...",
-     "speaker": "Venti",
-     "source": {
-      "kind": "quest",
-      "quest": "Should You Be Trapped in a Windless Land (Quest)",
-      "quest_ko": "바람이 없는 곳에 갇힌다면",
-      "version": "1.0",
-      "speaker": "Venti"
-     },
-     "t": "[번역] 그때 나는 수천의 바람 가운데 한 줄기에 불과했어. 나는 무엇의 신도 아니었고 — 인간의 모습조차 없었어...",
+     "t": "그때 나는 그저 thousand winds 가운데 작은 정령이었어. 나는 무엇의 신도 아니었고 — 인간의 모습조차 없었지...",
      "speaker_ko": "벤티"
     },
     {
      "section": "작중 행적 — Thousand Winds Temple",
      "status": "accepted",
      "note": "Faithful translation.",
-     "t_raw": "그래서 Thousand Winds Temple까지 온 거군, 그다음엔? 장치에 갇혔던 거야?",
+     "t_raw": "그래서 Thousand Winds Temple까지 멀리 왔다고? 그런데? 기구에 갇혔던 거야?",
      "en": "So you came all the way to the Thousand Winds Temple, then what? You were trapped by the mechanism?",
      "speaker": "Venti",
      "source": {
@@ -2042,14 +2055,14 @@
       "version": "1.4",
       "speaker": "Venti"
      },
-     "t": "그래서 천풍 신전까지 온 거군, 그다음엔? 장치에 갇혔던 거야?",
+     "t": "그래서 천풍 신전까지 멀리 왔다고? 그런데? 기구에 갇혔던 거야?",
      "speaker_ko": "벤티"
     },
     {
-     "section": "떡밥과 수수께끼",
+     "section": "작중 행적 — Thousand Winds의 음성",
      "status": "accepted",
      "note": "Faithful translation.",
-     "t_raw": "나는 thousand winds의 힘으로 그대의 추락을 막고 있다.",
+     "t_raw": "나는 Thousand Winds의 힘으로 당신의 추락을 막고 있다.",
      "en": "I'm preventing your fall with the power of a thousand winds.",
      "speaker": "Mysterious Voice",
      "source": {
@@ -2059,25 +2072,42 @@
       "version": "1.0",
       "speaker": "Mysterious Voice"
      },
-     "t": "나는 thousand winds의 힘으로 그대의 추락을 막고 있다.",
-     "speaker_ko": "Mysterious Voice"
+     "t": "나는 천풍의 힘으로 당신의 추락을 막고 있다.",
+     "speaker_ko": "수수께끼의 목소리"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그때 나는 thousand winds 가운데 하나의 작은 정령에 불과했어. 나는 어떤 신도 아니었고 — 인간의 모습조차 없었지...",
+     "en": "Back then, I was but a wisp among the thousand winds. I wasn't a god of anything — I didn't even have a human form...",
+     "speaker": "Venti",
+     "source": {
+      "kind": "quest",
+      "quest": "Should You Be Trapped in a Windless Land (Quest)",
+      "quest_ko": "바람이 없는 곳에 갇힌다면",
+      "version": "1.0",
+      "speaker": "Venti"
+     },
+     "t": "그때 나는 thousand winds 가운데 하나의 작은 정령에 불과했어. 나는 어떤 신도 아니었고 — 인간의 모습조차 없었지...",
+     "speaker_ko": "벤티"
     },
     {
      "section": "여담",
      "status": "accepted",
-     "note": "Faithful translation of Paimon's line; all elements (explorer's courage, tender and true love, defender's will, thousand winds', song of good cheer) are rendered correctly.",
-     "t_raw": "탐험가의 용기, 부드럽고 진실한 사랑, 수호자의 의지, 그리고... the thousand winds'... 'song of good cheer'...",
-     "en": "An explorer's courage, a love tender and true, a defender's will, and... the thousand winds'... \"song of good cheer\"...",
-     "speaker": "Paimon",
+     "note": "Faithful translation.",
+     "t_raw": "Traveler, Thousand Winds Temple에 가서 제 지도와 Adventurer Handbook을 되찾아 오는 일을 도와주시겠어요?",
+     "en": "Traveler, would you be willing to help me go to the Thousand Winds Temple and retrieve my map and Adventurer Handbook?",
+     "speaker": "Jack",
      "source": {
       "kind": "quest",
-      "quest": "Bonds of Melody (Quest)",
-      "quest_ko": "노래로 엮인 인연",
-      "version": "3.1",
-      "speaker": "Paimon"
+      "quest": "Solo Venture",
+      "quest_ko": "홀로 위험 감당",
+      "version": "1.0",
+      "speaker": "Jack"
      },
-     "t": "탐험가의 용기, 부드럽고 진실한 사랑, 수호자의 의지, 그리고... the thousand winds'... 'song of good cheer'...",
-     "speaker_ko": "페이몬"
+     "t": "여행자, 천풍 신전에 가서 제 지도와 모험 핸드북을 되찾아 오는 일을 도와주시겠어요?",
+     "speaker_ko": "잭"
     }
    ]
   }

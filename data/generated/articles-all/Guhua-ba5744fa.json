@@ -20,41 +20,40 @@
    "input_chars": 2834,
    "input_cut": false,
    "input_hash": "9eb9c6934d33",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and A7.",
      "quote": "Guhua is a historical and mythological figure in Liyue, famous for being a peacekeeping martial nomad and the namesake of the Guhua Clan.",
      "sentences": [
       {
-       "t_raw": "Guhua는 Liyue의 역사적·신화적 인물로, 치안을 지키며 떠돌던 무인이며 Guhua Clan의 이름이 된 존재다.",
+       "t_raw": "Guhua는 Liyue의 역사적·신화적 인물이자 평화 유지 활동을 했던 무예 유랑인이며, Guhua Clan의 이름이 유래한 존재다.",
        "interp": false,
        "dropped": false,
-       "t": "고화는 리월의 역사적·신화적 인물로, 치안을 지키며 떠돌던 무인이며 고화파의 이름이 된 존재다."
+       "t": "고화는 리월의 역사적·신화적 인물이자 평화 유지 활동을 했던 무예 유랑인이며, 고화파의 이름이 유래한 존재다."
       },
       {
-       "t_raw": "Guhua Clan은 그를 창시자로 인정하지만, Guhua 자신은 Clan의 Master가 아니었고 제자를 둔 적도 없으며, Clan은 그의 사후 Baixuan이 세웠다.",
+       "t_raw": "Guhua Clan은 Guhua를 창시자로 인정하지만, 그가 Guhua Clan의 스승이 된 적도, 제자를 둔 적도 없으며, Guhua Clan은 그의 사후 Baixuan이 세운 것이다.",
        "interp": false,
        "dropped": false,
-       "t": "고화파는 그를 창시자로 인정하지만, 고화 자신은 Clan의 사범님이 아니었고 제자를 둔 적도 없으며, Clan은 그의 사후 Baixuan이 세웠다."
+       "t": "고화파는 고화를 창시자로 인정하지만, 그가 고화파의 스승이 된 적도, 제자를 둔 적도 없으며, 고화파는 그의 사후 Baixuan이 세운 것이다."
       },
       {
-       "t_raw": "Rainslasher는 그가 살아 있던 시절의 무기였다고 하며, 전설에 따르면 그는 adeptus로서 여정 끝에 Huaguang Stone Forest의 자줏빛 안개 속에서 승천해 별이 되었다고 한다.",
+       "t_raw": "전설에 따르면 Guhua는 adeptus이자 무예 유랑인으로, 여정 끝에 Huaguang Stone Forest의 보랏빛 안개 속에서 승천해 별이 되었다고 하지만, 이 이야기는 다른 자료로 입증되지 않고 Guhua Clan 구성원도 이 신화를 이어 가지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "빗물 베기는 그가 살아 있던 시절의 무기였다고 하며, 전설에 따르면 그는 adeptus로서 여정 끝에 화광림의 자줏빛 안개 속에서 승천해 별이 되었다고 한다."
-      },
-      {
-       "t_raw": "다만 그 전설은 다른 자료에서 입증되지 않고, Guhua Clan의 어떤 구성원도 이 신화를 이어 가지 않는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다만 그 전설은 다른 자료에서 입증되지 않고, 고화파의 어떤 구성원도 이 신화를 이어 가지 않는다."
+       "t": "전설에 따르면 고화는 선인이자 무예 유랑인으로, 여정 끝에 화광림의 보랏빛 안개 속에서 승천해 별이 되었다고 하지만, 이 이야기는 다른 자료로 입증되지 않고 고화파 구성원도 이 신화를 이어 가지 않는다.",
+       "polish": {
+        "from": "전설에 따르면 고화는 adeptus이자 무예 유랑인으로, 여정 끝에 화광림의 보랏빛 안개 속에서 승천해 별이 되었다고 하지만, 이 이야기는 다른 자료로 입증되지 않고 고화파 구성원도 이 신화를 이어 가지 않는다.",
+        "text": "전설에 따르면 고화는 선인이자 무예 유랑인으로, 여정 끝에 화광림의 보랏빛 안개 속에서 승천해 별이 되었다고 하지만, 이 이야기는 다른 자료로 입증되지 않고 고화파 구성원도 이 신화를 이어 가지 않는다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -70,14 +69,6 @@
          "name": "A Wangshan Walk to Remember"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -95,6 +86,46 @@
      ],
      "heading": null,
      "latin_left": [
+      "Baixuan"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The English says Baixuan founded the Clan after Guhua's death and that Guhua favored Baixuan as a boy. It does not say the Clan was founded 'based on' that favor, so the causal link is added.",
+     "quote": "Guhua is a historical and mythological figure in Liyue, famous for being a peacekeeping martial nomad and the namesake of the Guhua Clan.",
+     "sentences": [
+      {
+       "t_raw": "Liyue의 역사이자 신화로 남은 무예 유랑인 Guhua는 평화를 지키는 무인이며, **Guhua Clan**의 창시자로 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월의 역사이자 신화로 남은 무예 유랑인 고화는 평화를 지키는 무인이며, **고화파**의 창시자로 전해진다."
+      },
+      {
+       "t_raw": "그러나 그는 Clan의 문주가 된 적도, 제자를 받은 적도 없었고, 죽은 뒤 Clan은 어린 시절 Guhua의 총애를 받았던 Baixuan에 의해 세워졌다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그러나 그는 Clan의 문주가 된 적도, 제자를 받은 적도 없었고, 죽은 뒤 Clan은 어린 시절 고화의 총애를 받았던 Baixuan에 의해 세워졌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guhua",
+       "revision": 1560339,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Wangshan Walk to Remember"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
       "Clan",
       "Clan",
       "Baixuan"
@@ -102,33 +133,180 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It is currently unclear whether Guhua was an adeptus or not.",
+     "status": "trimmed",
+     "note": "The adeptus uncertainty comes from the Adeptus page (M9), not the god list (M16). The claim that the legend is closer to folk tradition than official record is an unsupported guess stated as certain.",
+     "quote": "According to legend, he was an adeptus and a martial nomad who, at the end of his journey, ascended and became a star in the midst of a purple haze at Huaguang Stone Forest.",
      "sentences": [
       {
-       "t_raw": "Guhua는 Liyue의 **역사적·신화적 인물**로, 치안을 지키며 떠돌던 무인이자 Guhua Clan의 이름이 그에게서 나온 존재다.",
+       "t_raw": "전설에 따르면 Guhua는 **adeptus**이자 무예 유랑인으로, 여정 끝에 Huaguang Stone Forest의 보랏빛 안개 속에서 별이 되어 **승천**했다.",
        "interp": false,
        "dropped": false,
-       "t": "고화는 리월의 **역사적·신화적 인물**로, 치안을 지키며 떠돌던 무인이자 고화파의 이름이 그에게서 나온 존재다."
+       "t": "전설에 따르면 고화는 **선인**이자 무예 유랑인으로, 여정 끝에 화광림의 보랏빛 안개 속에서 별이 되어 **승천**했다.",
+       "polish": {
+        "from": "전설에 따르면 고화는 **adeptus**이자 무예 유랑인으로, 여정 끝에 화광림의 보랏빛 안개 속에서 별이 되어 **승천**했다.",
+        "text": "전설에 따르면 고화는 **선인**이자 무예 유랑인으로, 여정 끝에 화광림의 보랏빛 안개 속에서 별이 되어 **승천**했다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Guhua Clan은 그의 사후 Baixuan이 세웠고, Guhua 자신은 Clan의 Master가 된 적도 제자를 둔 적도 없다.",
+       "t_raw": "하지만 다른 기록에서는 adeptus 여부가 확인되지 않으며, Guhua Clan의 구성원들도 이 이야기를 전하지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "고화파는 그의 사후 Baixuan이 세웠고, 고화 자신은 Clan의 사범님이 된 적도 제자를 둔 적도 없다."
+       "t": "하지만 다른 기록에서는 선인 여부가 확인되지 않으며, 고화파의 구성원들도 이 이야기를 전하지 않는다.",
+       "polish": {
+        "from": "하지만 다른 기록에서는 adeptus 여부가 확인되지 않으며, 고화파의 구성원들도 이 이야기를 전하지 않는다.",
+        "text": "하지만 다른 기록에서는 선인 여부가 확인되지 않으며, 고화파의 구성원들도 이 이야기를 전하지 않는다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "전설은 그가 adeptus로서 Huaguang Stone Forest에서 별로 승천했다고 하지만, 이는 다른 자료에서 확인되지 않고 Guhua Clan 구성원도 이 신화를 이어 가지 않는다.",
+       "t_raw": "마신·신의 일람은 그를 Celestia에 올랐다고 기록하나 adeptus인지는 불명확해, 그 승천 전설은 공식 기록보다 민간 전승에 가까운 셈이다.",
+       "interp": true,
+       "dropped": true,
+       "t": "마신·신의 일람은 그를 셀레스티아에 올랐다고 기록하나 adeptus인지는 불명확해, 그 승천 전설은 공식 기록보다 민간 전승에 가까운 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guhua",
+       "revision": 1560339,
+       "section": "Story > Legacy",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Rainslasher"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Adeptus",
+       "revision": 1497410,
+       "section": "Known Adepti > Others",
+       "paragraph": "M9",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Rainslasher"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "God",
+       "revision": 1566141,
+       "section": "List of Gods > Other Gods",
+       "paragraph": "M16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A1 and A3.",
+     "quote": "Guhua trained at Mt. Lingmeng in a place called Lingmeng Chamber, which has since become known as Wangshan Hall.",
+     "sentences": [
+      {
+       "t_raw": "Liyue의 역사이자 신화 속 인물인 Guhua는 평화를 지키는 유랑 무사로 알려져 있으며, Guhua Clan의 이름과 창시자로 기억된다.",
        "interp": false,
        "dropped": false,
-       "t": "전설은 그가 adeptus로서 화광림에서 별로 승천했다고 하지만, 이는 다른 자료에서 확인되지 않고 고화파 구성원도 이 신화를 이어 가지 않는다."
+       "t": "리월의 역사이자 신화 속 인물인 고화는 평화를 지키는 유랑 무사로 알려져 있으며, 고화파의 이름과 창시자로 기억된다."
       },
       {
-       "t_raw": "adeptus 여부는 현재 분명하지 않지만, 신 목록은 그를 Liyue에서 Celestia로 승천한 존재로 올려, 전설과 기록이 꼭 맞아떨어지지는 않는 셈이다.",
+       "t_raw": "그는 Mt. Lingmeng의 Lingmeng Chamber, 지금의 Wangshan Hall에서 수련하며 검의 Rain Cutter, 창의 Light Piercer, 그리고 두 가지를 결합한 Life Ender로 이뤄진 **Three Guhua Greats**를 완성했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 영몽산의 Lingmeng Chamber, 지금의 왕산청에서 수련하며 검의 재우유홍, 창의 빛 꿰뚫기, 그리고 두 가지를 결합한 생명을 끝내는 자로 이뤄진 **고화파 삼대 절기**를 완성했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guhua",
+       "revision": 1560339,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Wangshan Walk to Remember"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Guhua",
+       "revision": 1560339,
+       "section": "Story",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Wangshan Walk to Remember"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Lingmeng Chamber"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A1, A7, M9, M11 and M16. The interpretation in (4) is reasonable.",
+     "quote": "According to legend, he was an adeptus and a martial nomad who, at the end of his journey, ascended and became a star in the midst of a purple haze at Huaguang Stone Forest.",
+     "sentences": [
+      {
+       "t_raw": "하지만 Guhua는 Clan의 Master가 된 적도, 제자를 둔 적도 없었고, 그가 죽은 뒤 어린 시절 그의 은혜를 입은 Baixuan이 Guhua Clan을 세웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하지만 고화는 Clan의 사범님이 된 적도, 제자를 둔 적도 없었고, 그가 죽은 뒤 어린 시절 그의 은혜를 입은 Baixuan이 고화파를 세웠다."
+      },
+      {
+       "t_raw": "Clan의 검과 창 위주의 Guhua fighting style은 가까운 동료가 Guhua의 기예를 계승해 정립한 것으로, 정작 Guhua 자신은 클레모어 Rainslasher를 사용했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가문의 검과 창 위주의 고화 무술은 가까운 동료가 고화의 기예를 계승해 정립한 것으로, 정작 고화 자신은 클레모어 빗물 베기를 사용했다.",
+       "polish": {
+        "from": "Clan의 검과 창 위주의 고화 fighting style은 가까운 동료가 고화의 기예를 계승해 정립한 것으로, 정작 고화 자신은 클레모어 빗물 베기를 사용했다.",
+        "text": "가문의 검과 창 위주의 고화 무술은 가까운 동료가 고화의 기예를 계승해 정립한 것으로, 정작 고화 자신은 클레모어 빗물 베기를 사용했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "한편 Guhua를 adeptus로 부르는 설도, Huaguang Stone Forest의 보라빛 안개 속에서 별이 되어 승천했다는 전설도 있지만, 다른 자료에서 뒷받침되지 않으며 Guhua Clan 안에서도 이 신화는 전해지지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 고화를 선인으로 부르는 설도, 화광림의 보라빛 안개 속에서 별이 되어 승천했다는 전설도 있지만, 다른 자료에서 뒷받침되지 않으며 고화파 안에서도 이 신화는 전해지지 않는다.",
+       "polish": {
+        "from": "한편 고화를 adeptus로 부르는 설도, 화광림의 보라빛 안개 속에서 별이 되어 승천했다는 전설도 있지만, 다른 자료에서 뒷받침되지 않으며 고화파 안에서도 이 신화는 전해지지 않는다.",
+        "text": "한편 고화를 선인으로 부르는 설도, 화광림의 보라빛 안개 속에서 별이 되어 승천했다는 전설도 있지만, 다른 자료에서 뒷받침되지 않으며 고화파 안에서도 이 신화는 전해지지 않는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "신들의 기록에서는 그가 Liyue의 신으로 Celestia에 올랐다고 되어 있지만, adeptus인지는 여전히 불분명하게 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "신들의 기록에서는 그가 리월의 신으로 셀레스티아에 올랐다고 되어 있지만, 선인인지는 여전히 불분명하게 남아 있다.",
+       "polish": {
+        "from": "신들의 기록에서는 그가 리월의 신으로 셀레스티아에 올랐다고 되어 있지만, adeptus인지는 여전히 불분명하게 남아 있다.",
+        "text": "신들의 기록에서는 그가 리월의 신으로 셀레스티아에 올랐다고 되어 있지만, 선인인지는 여전히 불분명하게 남아 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이러한 점들을 종합하면 **Guhua의 신성한 위상**은 전설과 기록, 문파 전승이 서로 다른 모습을 보이는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "adeptus 여부는 현재 분명하지 않지만, 신 목록은 그를 리월에서 셀레스티아로 승천한 존재로 올려, 전설과 기록이 꼭 맞아떨어지지는 않는 셈이다."
+       "t": "이러한 점들을 종합하면 **고화의 신성한 위상**은 전설과 기록, 문파 전승이 서로 다른 모습을 보이는 것으로 보인다."
       }
      ],
      "sources": [
@@ -173,6 +351,14 @@
       },
       {
        "kind": "wiki",
+       "page": "Guhua Clan",
+       "revision": 77850,
+       "section": null,
+       "paragraph": "M11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
        "page": "God",
        "revision": 1566141,
        "section": "List of Gods > Other Gods",
@@ -180,77 +366,35 @@
        "wiki_refs": []
       }
      ],
-     "heading": "개요",
+     "heading": "정체와 배경",
      "latin_left": [
-      "Baixuan",
-      "Clan"
+      "Clan",
+      "Baixuan"
      ]
     },
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Guhua Clan, formerly known as the Guhua Brotherhood, is a martial arts school that has seen heavy decline in the past few centuries.",
+     "section": "능력과 무예",
+     "status": "accepted",
+     "note": "Supported by A3 and M1.",
+     "quote": "There, Guhua developed his three techniques, known as the Three Guhua Greats: Rain Cutter for the sword, Light Piercer for the spear, and Life Ender for the combination of both.",
      "sentences": [
       {
-       "t_raw": "Guhua Clan은 adeptus Guhua의 무예를 바탕으로 가까운 동료가 세운 무술 문파로, 검과 장창을 쓰면서도 Guhua 자신은 claymore를 썼다.",
+       "t_raw": "Guhua는 Mt. Lingmeng의 Lingmeng Chamber에서 수련하며 세 기예를 개발했고, 그곳은 이후 Wangshan Hall로 알려지게 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "고화파는 adeptus 고화의 무예를 바탕으로 가까운 동료가 세운 무술 문파로, 검과 장창을 쓰면서도 고화 자신은 claymore를 썼다."
+       "t": "고화는 영몽산의 Lingmeng Chamber에서 수련하며 세 기예를 개발했고, 그곳은 이후 왕산청으로 알려지게 되었다."
       },
       {
-       "t_raw": "본래 Guhua Brotherhood였던 이 문파는 지난 수백 년 동안 **큰 쇠퇴**를 겪었다.",
+       "t_raw": "세 기예는 **Three Guhua Greats**로 불리며, 검술의 Rain Cutter, 창술의 Light Piercer, 둘을 함께 다루는 Life Ender로 구분된다.",
        "interp": false,
        "dropped": false,
-       "t": "본래 Guhua Brotherhood였던 이 문파는 지난 수백 년 동안 **큰 쇠퇴**를 겪었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Guhua Clan",
-       "revision": 77850,
-       "section": null,
-       "paragraph": "M10",
-       "wiki_refs": []
+       "t": "세 기예는 **고화파 삼대 절기**로 불리며, 검술의 재우유홍, 창술의 빛 꿰뚫기, 둘을 함께 다루는 생명을 끝내는 자로 구분된다."
       },
       {
-       "kind": "wiki",
-       "page": "Guhua Clan",
-       "revision": 77850,
-       "section": null,
-       "paragraph": "M11",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "Guhua Brotherhood"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "While the Clan recognizes Guhua as its founder, he was never its Master and never took on a disciple",
-     "sentences": [
-      {
-       "t_raw": "Guhua는 Liyue에서 전해지는 **역사적·신화적 인물**로, 치안을 지키며 떠돌던 무인이자 Guhua Clan의 이름이 된 존재다.",
+       "t_raw": "Guhua Clan의 세 기예도 Raincutter, Light Piercer, Life Ender로 전해지고, 둘을 모두 익힌 이가 Life Ender에 이른다고 설명된다.",
        "interp": false,
        "dropped": false,
-       "t": "고화는 리월에서 전해지는 **역사적·신화적 인물**로, 치안을 지키며 떠돌던 무인이자 고화파의 이름이 된 존재다."
-      },
-      {
-       "t_raw": "Guhua Clan은 Guhua를 창시자로 받들지만, 그 자신은 Clan의 수장이 아니었고 제자를 들인 적도 없다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고화파는 고화를 창시자로 받들지만, 그 자신은 Clan의 수장이 아니었고 제자를 들인 적도 없다."
-      },
-      {
-       "t_raw": "Clan은 Guhua가 소년 시절의 Baixuan을 아꼈던 뒤, 그의 사후 Baixuan에 의해 세워졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Clan은 고화가 소년 시절의 Baixuan을 아꼈던 뒤, 그의 사후 Baixuan에 의해 세워졌다."
+       "t": "고화파의 세 기예도 재우유홍, 빛 꿰뚫기, 생명을 끝내는 자로 전해지고, 둘을 모두 익힌 이가 생명을 끝내는 자에 이른다고 설명된다."
       }
      ],
      "sources": [
@@ -258,47 +402,57 @@
        "kind": "wiki",
        "page": "Guhua",
        "revision": 1560339,
-       "section": null,
-       "paragraph": "A1",
+       "section": "Story",
+       "paragraph": "A3",
        "wiki_refs": [
         {
          "type": "quest",
          "name": "A Wangshan Walk to Remember"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Martial Arts in Teyvat",
+       "revision": 1355760,
+       "section": "Liyue > Guhua Arts",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Xingqiu"
+        }
+       ]
       }
      ],
-     "heading": "정체와 배경",
+     "heading": "능력과 무예",
      "latin_left": [
-      "Clan",
-      "Clan",
-      "Baixuan",
-      "Baixuan"
+      "Lingmeng Chamber"
      ]
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Established after the fighting style of the adeptus Guhua by one of his close associates, their fighting style revolves around the use of swords or polearms, though Guhua himself used a claymore.",
+     "section": "능력과 무예",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "The Rainslasher is said to have been his weapon while he was alive.",
      "sentences": [
       {
-       "t_raw": "그가 생전에 사용했다고 전해지는 무기는 Rainslasher다.",
+       "t_raw": "Guhua의 생전 무기로 Rainslasher가 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "그가 생전에 사용했다고 전해지는 무기는 빗물 베기다."
+       "t": "고화의 생전 무기로 빗물 베기가 전해진다."
       },
       {
-       "t_raw": "Guhua는 Mt. Lingmeng의 Lingmeng Chamber에서 수련하며 검의 Rain Cutter, 창의 Light Piercer, 둘을 함께 쓰는 Life Ender라는 **세 가지 무예**를 만들었다.",
+       "t_raw": "Guhua Clan의 기예는 검과 창을 중심으로 하며, Guhua 자신은 클레이모어인 **Rainslasher**를 들었다고 기록된다.",
        "interp": false,
        "dropped": false,
-       "t": "고화는 영몽산의 Lingmeng Chamber에서 수련하며 검의 재우유홍, 창의 빛 꿰뚫기, 둘을 함께 쓰는 생명을 끝내는 자라는 **세 가지 무예**를 만들었다."
+       "t": "고화파의 기예는 검과 창을 중심으로 하며, 고화 자신은 클레이모어인 **빗물 베기**를 들었다고 기록된다."
       },
       {
-       "t_raw": "Guhua가 Rainslasher라는 클레이모어를 썼다는 점과 Clan의 무예가 검과 창을 중심으로 전해진다는 점은, 창시자의 무기와 후대 계승의 중심이 완전히 겹치지는 않았음을 보여준다.",
+       "t_raw": "검과 창을 중심으로 한 기예와 그가 들었다고 전해지는 클레이모어 사이에는 차이가 있었던 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "고화가 빗물 베기라는 클레이모어를 썼다는 점과 Clan의 무예가 검과 창을 중심으로 전해진다는 점은, 창시자의 무기와 후대 계승의 중심이 완전히 겹치지는 않았음을 보여준다."
+       "t": "검과 창을 중심으로 한 기예와 그가 들었다고 전해지는 클레이모어 사이에는 차이가 있었던 셈이다."
       }
      ],
      "sources": [
@@ -312,19 +466,6 @@
       },
       {
        "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": "Story",
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "A Wangshan Walk to Remember"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
        "page": "Martial Arts in Teyvat",
        "revision": 1355760,
        "section": "Liyue > Guhua Arts",
@@ -335,117 +476,34 @@
          "name": "Xingqiu"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Guhua Clan",
-       "revision": 77850,
-       "section": null,
-       "paragraph": "M11",
-       "wiki_refs": []
       }
      ],
-     "heading": "정체와 배경",
-     "latin_left": [
-      "Lingmeng Chamber",
-      "Clan"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "According to legend, he was an adeptus and a martial nomad who, at the end of his journey, ascended and became a star in the midst of a purple haze at Huaguang Stone Forest.",
-     "sentences": [
-      {
-       "t_raw": "Guhua가 adeptus였는지는 현재 분명하지 않다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고화가 adeptus였는지는 현재 분명하지 않다."
-      },
-      {
-       "t_raw": "전설은 그가 여정 끝에 Huaguang Stone Forest의 보랏빛 안개 속에서 **승천**해 별이 되었다고 전하지만, 이 전설은 다른 자료에서 뒷받침되지 않고 Guhua Clan의 누구도 그 신화를 이어 가지 않는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "전설은 그가 여정 끝에 화광림의 보랏빛 안개 속에서 **승천**해 별이 되었다고 전하지만, 이 전설은 다른 자료에서 뒷받침되지 않고 고화파의 누구도 그 신화를 이어 가지 않는다."
-      },
-      {
-       "t_raw": "다른 기록은 그를 adeptus Guhua로 부르며, 신 목록은 Liyue의 Guhua가 Celestia로 승천했다고 적는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다른 기록은 그를 adeptus 고화로 부르며, 신 목록은 리월의 고화가 셀레스티아로 승천했다고 적는다."
-      },
-      {
-       "t_raw": "이처럼 불확실한 기록과 adeptus로 부르는 기록, 승천 전설이 함께 남은 것은 그를 둘러싼 전승이 하나로 정리되지 않았음을 보여준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이처럼 불확실한 기록과 adeptus로 부르는 기록, 승천 전설이 함께 남은 것은 그를 둘러싼 전승이 하나로 정리되지 않았음을 보여준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": "Story > Legacy",
-       "paragraph": "A7",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Rainslasher"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Adeptus",
-       "revision": 1497410,
-       "section": "Known Adepti > Others",
-       "paragraph": "M9",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Rainslasher"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Guhua Clan",
-       "revision": 77850,
-       "section": null,
-       "paragraph": "M11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "God",
-       "revision": 1566141,
-       "section": "List of Gods > Other Gods",
-       "paragraph": "M16",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
+     "heading": "능력과 무예",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 수련과 비전",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The three arts of the Guhua Clan are Raincutter for swords, Light Piercer for polearms, and Life Ender for those who master both.",
+     "section": "능력과 무예",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Guhua boasts of several of his feats, including slaying dragons and drinking their blood, slaying tigers at Mt. Tianheng, and \"skewer[ing]\" a scaled beast at the Sea of Clouds.",
      "sentences": [
       {
-       "t_raw": "Guhua는 Mt. Lingmeng의 Lingmeng Chamber에서 Rain Cutter, Light Piercer, Life Ender의 **세 가지 무예**를 닦았고, 그 자신은 클레이모어인 Rainslasher를 사용했다는 기록도 있다.",
+       "t_raw": "Guhua의 무용담은 지하실 출구 끝에서 발견된 **Ancient Swordsman's Inscriptions**에 적혀 있다.",
        "interp": false,
        "dropped": false,
-       "t": "고화는 영몽산의 Lingmeng Chamber에서 재우유홍, 빛 꿰뚫기, 생명을 끝내는 자의 **세 가지 무예**를 닦았고, 그 자신은 클레이모어인 빗물 베기를 사용했다는 기록도 있다."
+       "t": "고화의 무용담은 지하실 출구 끝에서 발견된 **Ancient Swordsman의 명문**에 적혀 있다."
       },
       {
-       "t_raw": "Rain Cutter는 검, Light Piercer는 창, Life Ender는 둘을 함께 다루는 기술이다.",
+       "t_raw": "그 명문에서 Guhua는 용들을 죽여 그 피를 마신 일, Mt. Tianheng에서 호랑이를 죽인 일, Sea of Clouds에서 비늘 난 짐승을 꿰뚫은 일을 자랑한다.",
        "interp": false,
        "dropped": false,
-       "t": "재우유홍은 검, 빛 꿰뚫기는 창, 생명을 끝내는 자는 둘을 함께 다루는 기술이다."
+       "t": "그 명문에서 고화는 용들을 죽여 그 피를 마신 일, 천형산에서 호랑이를 죽인 일, 운래해에서 비늘 난 짐승을 꿰뚫은 일을 자랑한다."
+      },
+      {
+       "t_raw": "세 기예를 개발한 수련의 면모와 이 명문의 전투 업적 자랑이 함께 전해지므로, Guhua의 무예는 수련과 실전 양면으로 이야기된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세 기예를 개발한 수련의 면모와 이 명문의 전투 업적 자랑이 함께 전해지므로, 고화의 무예는 수련과 실전 양면으로 이야기된 셈이다."
       }
      ],
      "sources": [
@@ -459,126 +517,6 @@
         {
          "type": "quest",
          "name": "A Wangshan Walk to Remember"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Martial Arts in Teyvat",
-       "revision": 1355760,
-       "section": "Liyue > Guhua Arts",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Xingqiu"
-        }
-       ]
-      }
-     ],
-     "heading": "작중 행적 — 수련과 비전",
-     "latin_left": [
-      "Lingmeng Chamber"
-     ]
-    },
-    {
-     "section": "작중 행적 — 수련과 비전",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "ten pages of his notes becoming dedicated to different methods of fish preparation — complete with some illustrations — instead of recording his training progress.",
-     "sentences": [
-      {
-       "t_raw": "Guhua는 여러 좌절과 우회를 겪었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고화는 여러 좌절과 우회를 겪었다."
-      },
-      {
-       "t_raw": "Plumwatcher Piles에서 거듭 떨어져 만든 연못에서 물고기를 기르면서, 노트 열 페이지가 수련 대신 **물고기 조리법**과 삽화로 채워졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Plumwatcher Piles에서 거듭 떨어져 만든 연못에서 물고기를 기르면서, 노트 열 페이지가 수련 대신 **물고기 조리법**과 삽화로 채워졌다."
-      },
-      {
-       "t_raw": "부상에서 회복 중이던 그는 Baixuan이 가져온 양고기와 생선 요리에 감탄해, 조리법을 받는 대신 **Life Ender**를 그에게 가르쳤고, 그 뒤 노트 여러 페이지는 양고기 조리법에 할애되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "부상에서 회복 중이던 그는 Baixuan이 가져온 양고기와 생선 요리에 감탄해, 조리법을 받는 대신 **생명을 끝내는 자**를 그에게 가르쳤고, 그 뒤 노트 여러 페이지는 양고기 조리법에 할애되었다."
-      },
-      {
-       "t_raw": "요리가 무예 전수와 맞물린 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "요리가 무예 전수와 맞물린 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": "Story",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Scrolls and Sword Manuals of Guhua"
-        }
-       ]
-      }
-     ],
-     "heading": "작중 행적 — 수련과 비전",
-     "latin_left": [
-      "Plumwatcher Piles",
-      "Baixuan"
-     ]
-    },
-    {
-     "section": "작중 행적 — 수련과 비전",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "slaying dragons and drinking their blood, slaying tigers at Mt. Tianheng, and \"skewer[ing]\" a scaled beast at the Sea of Clouds.",
-     "sentences": [
-      {
-       "t_raw": "Guhua는 서고 아래에 원소 시야로만 구별되는 원소 두루마리로 봉인한 은밀한 지하 방을 만들었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고화는 서고 아래에 원소 시야로만 구별되는 원소 두루마리로 봉인한 은밀한 지하 방을 만들었다."
-      },
-      {
-       "t_raw": "Guhua가 쓴 것으로 보이는 중앙 기구의 새김글은 그의 노트와 달리 하늘은 신의가 없고 운명은 변덕스럽다고 한 뒤 막다른 길에서 무엇을 할지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고화가 쓴 것으로 보이는 중앙 기구의 새김글은 그의 노트와 달리 하늘은 신의가 없고 운명은 변덕스럽다고 한 뒤 막다른 길에서 무엇을 할지 묻는다."
-      },
-      {
-       "t_raw": "출구 끝의 **Ancient Swordsman's Inscriptions**에는 용을 죽여 피를 마셨다, Mt. Tianheng에서 호랑이를 죽였다, Sea of Clouds에서 비늘 달린 짐승을 꿰뚫었다는 업적이 자랑처럼 적혀 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "출구 끝의 **Ancient Swordsman의 명문**에는 용을 죽여 피를 마셨다, 천형산에서 호랑이를 죽였다, 운래해에서 비늘 달린 짐승을 꿰뚫었다는 업적이 자랑처럼 적혀 있다."
-      },
-      {
-       "t_raw": "방 안의 질문과 출구의 자랑이 같은 장소에서 갈리는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "방 안의 질문과 출구의 자랑이 같은 장소에서 갈리는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": "Story",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Scrolls and Sword Manuals of Guhua"
-        },
-        {
-         "type": "quest",
-         "name": "Shrouded Vale, Hidden Hero"
         }
        ]
       },
@@ -596,46 +534,125 @@
        ]
       }
      ],
-     "heading": "작중 행적 — 수련과 비전",
+     "heading": "능력과 무예",
      "latin_left": [
       "Ancient Swordsman"
      ]
     },
     {
-     "section": "작중 행적 — Guhua Clan의 계승과 쇠퇴",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "he was never its Master and never took on a disciple; it was established after his death by Baixuan",
+     "section": "행적과 유산 — Baixuan과 Guhua Clan",
+     "status": "accepted",
+     "note": "All supported by A1, A3 and A4.",
+     "quote": "his decision to build a pond underneath the Plumwatcher Piles as a result of falling off them too many times",
      "sentences": [
       {
-       "t_raw": "Guhua Clan은 과거 Guhua Brotherhood로 불렸고, 그 원형은 Guhua와 가까운 인물이 세운 것으로 전해진다.",
+       "t_raw": "Guhua는 Mt. Lingmeng의 Lingmeng Chamber에서 수련하며 **Three Guhua Greats**라 불리는 세 기예를 발전시켰다.",
        "interp": false,
        "dropped": false,
-       "t": "고화파는 과거 Guhua Brotherhood로 불렸고, 그 원형은 고화와 가까운 인물이 세운 것으로 전해진다."
+       "t": "고화는 영몽산의 Lingmeng Chamber에서 수련하며 **고화파 삼대 절기**라 불리는 세 기예를 발전시켰다."
       },
       {
-       "t_raw": "Guhua가 죽은 뒤에는 Baixuan이 Clan을 세웠으며, Guhua는 Clan의 사부가 된 적도 제자를 둔 적도 없다.",
+       "t_raw": "여러 좌절과 우회 끝에 Plumwatcher Piles 아래 연못에서 식용 물고기를 기르게 된 그는 노트 열 페이지를 물고기 손질법과 삽화에 할애했다.",
        "interp": false,
        "dropped": false,
-       "t": "고화가 죽은 뒤에는 Baixuan이 Clan을 세웠으며, 고화는 Clan의 사부가 된 적도 제자를 둔 적도 없다."
+       "t": "여러 좌절과 우회 끝에 Plumwatcher Piles 아래 연못에서 식용 물고기를 기르게 된 그는 노트 열 페이지를 물고기 손질법과 삽화에 할애했다."
       },
       {
-       "t_raw": "Guhua Brotherhood는 쇠퇴해 Guhua Sect가 되었고, 그 Sect마저 시들어 오늘날의 Guhua Clan이 되었다.",
+       "t_raw": "Baixuan이 소년이었을 때 Guhua는 그에게 호의를 보였고, 부상에서 회복 중 Baixuan이 가져온 양고기와 생선 요리에 감탄해 요리법을 받고 그 대가로 소년에게 **Life Ender**를 가르쳤다.",
        "interp": false,
        "dropped": false,
-       "t": "Guhua Brotherhood는 쇠퇴해 Guhua Sect가 되었고, 그 Sect마저 시들어 오늘날의 고화파가 되었다."
+       "t": "Baixuan이 소년이었을 때 고화는 그에게 호의를 보였고, 부상에서 회복 중 Baixuan이 가져온 양고기와 생선 요리에 감탄해 요리법을 받고 그 대가로 소년에게 **생명을 끝내는 자**를 가르쳤다."
       },
       {
-       "t_raw": "잇따른 이탈 끝에 Brotherhood는 겨우 수백 명의 제자만 남은 훨씬 작은 Sect로 재편되었고, 오늘날 Clan에는 한 줌의 수련자만 남았다.",
+       "t_raw": "Guhua는 Clan의 창시자로 인정되지만 Clan의 장이 된 적도, 제자를 들인 적도 없으며, Clan은 그의 사후 Baixuan이 세웠다.",
        "interp": false,
        "dropped": false,
-       "t": "잇따른 이탈 끝에 Brotherhood는 겨우 수백 명의 제자만 남은 훨씬 작은 Sect로 재편되었고, 오늘날 Clan에는 한 줌의 수련자만 남았다."
+       "t": "고화는 Clan의 창시자로 인정되지만 Clan의 장이 된 적도, 제자를 들인 적도 없으며, Clan은 그의 사후 Baixuan이 세웠다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guhua",
+       "revision": 1560339,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Wangshan Walk to Remember"
+        }
+       ]
       },
       {
-       "t_raw": "이처럼 쇠퇴와 규모 축소가 거듭된 끝에 한 줌의 수련자만 남은 셈이다.",
+       "kind": "wiki",
+       "page": "Guhua",
+       "revision": 1560339,
+       "section": "Story",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Wangshan Walk to Remember"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Guhua",
+       "revision": 1560339,
+       "section": "Story",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Scrolls and Sword Manuals of Guhua"
+        }
+       ]
+      }
+     ],
+     "heading": "행적과 유산 — Baixuan과 고화파",
+     "latin_left": [
+      "Lingmeng Chamber",
+      "Plumwatcher Piles",
+      "Baixuan",
+      "Baixuan",
+      "Clan",
+      "Clan",
+      "Clan",
+      "Baixuan"
+     ]
+    },
+    {
+     "section": "행적과 유산 — Baixuan과 Guhua Clan",
+     "status": "accepted",
+     "note": "The English never says the associate who founded the Brotherhood was Baixuan. It says only that Baixuan founded the Clan after Guhua's death. Naming Baixuan as that associate is a guess presented as an inference the material does not support.",
+     "quote": "the Guhua Brotherhood suffered a decline and became the Guhua Sect, and the Sect too withered and became the Guhua Clan as we know it today.",
+     "sentences": [
+      {
+       "t_raw": "Guhua의 동료가 세운 Guhua Brotherhood는 Guhua Clan의 원래 형태였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고화의 동료가 세운 고화파는 고화파의 원래 형태였다."
+      },
+      {
+       "t_raw": "Brotherhood는 쇠퇴해 Guhua Sect가 되었고, Sect도 시들어 오늘날의 Guhua Clan이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Brotherhood는 쇠퇴해 Guhua Sect가 되었고, Sect도 시들어 오늘날의 고화파가 되었다."
+      },
+      {
+       "t_raw": "탈퇴 뒤 Brotherhood는 수백 명 남짓한 Guhua Sect로 재편되었고, 오늘날 Clan은 그 전통의 남은 전부이며 수련자는 손에 꼽을 정도다.",
+       "interp": false,
+       "dropped": false,
+       "t": "탈퇴 뒤 Brotherhood는 수백 명 남짓한 Guhua Sect로 재편되었고, 오늘날 Clan은 그 전통의 남은 전부이며 수련자는 손에 꼽을 정도다."
+      },
+      {
+       "t_raw": "Clan을 Guhua 사후 Baixuan이 세웠다는 기록과 Guhua Brotherhood가 Guhua의 동료에 의해 세워졌다는 기록만으로는 그 동료를 Baixuan으로 단정하기 어려워 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이처럼 쇠퇴와 규모 축소가 거듭된 끝에 한 줌의 수련자만 남은 셈이다."
+       "repaired": true,
+       "t": "Clan을 고화 사후 Baixuan이 세웠다는 기록과 고화파가 고화의 동료에 의해 세워졌다는 기록만으로는 그 동료를 Baixuan으로 단정하기 어려워 보인다."
       }
      ],
      "sources": [
@@ -680,76 +697,72 @@
        "section": "Dialogue",
        "paragraph": "M5",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Guhua Clan",
-       "revision": 77850,
-       "section": null,
-       "paragraph": "M10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Guhua Clan",
-       "revision": 77850,
-       "section": null,
-       "paragraph": "M11",
-       "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 고화파의 계승과 쇠퇴",
+     "heading": "행적과 유산 — Baixuan과 고화파",
      "latin_left": [
-      "Guhua Brotherhood",
-      "Baixuan",
-      "Clan",
-      "Clan",
-      "Guhua Brotherhood",
+      "Brotherhood",
       "Guhua Sect",
       "Sect",
       "Brotherhood",
-      "Sect",
-      "Clan"
+      "Guhua Sect",
+      "Clan",
+      "Clan",
+      "Baixuan",
+      "Baixuan"
      ]
     },
     {
-     "section": "작중 행적 — Guhua Clan의 계승과 쇠퇴",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Guhua's arts I have studied long, in its secrets I am trained, now its long-lost depths fall upon me like the coming of blessed rain.",
+     "section": "작중 행적 — Guhua Clan의 현재",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Today's Guhua Clan is now all that is left of this grand tradition, with a mere handful of practitioners...",
      "sentences": [
       {
-       "t_raw": "어린 나이에도 기사도 규범에 통달하고 별난 사고방식을 길러 Guhua Clan의 무예에 재능을 보인 Xingqiu는 Guhua 르네상스를 사실상 일으킨 것으로 명성을 얻었다.",
+       "t_raw": "Guhua Brotherhood는 쇠퇴해 Guhua Sect가 되었고, Guhua Sect는 다시 위축되어 오늘날의 Guhua Clan이 되었으며, 지금은 한 줌의 수련자가 남았다.",
        "interp": false,
        "dropped": false,
-       "t": "어린 나이에도 기사도 규범에 통달하고 별난 사고방식을 길러 고화파의 무예에 재능을 보인 행추는 고화 르네상스를 사실상 일으킨 것으로 명성을 얻었다."
+       "t": "고화파는 쇠퇴해 Guhua Sect가 되었고, Guhua Sect는 다시 위축되어 오늘날의 고화파가 되었으며, 지금은 한 줌의 수련자가 남았다."
       },
       {
-       "t_raw": "Guhua Clan의 문 앞에는 사부를 찾는 이들이 몰려들지만, 문지기는 사부가 산속에서 휴식을 취하고 있다는 어색한 대답을 건넨다.",
+       "t_raw": "Xingqiu는 Guhua Clan의 무예에 재능을 보여 **Guhua renaissance**를 일으킨 것으로 명성을 얻었다.",
        "interp": false,
        "dropped": false,
-       "t": "고화파의 문 앞에는 사부를 찾는 이들이 몰려들지만, 문지기는 사부가 산속에서 휴식을 취하고 있다는 어색한 대답을 건넨다."
+       "t": "행추는 고화파의 무예에 재능을 보여 **고화 르네상스**를 일으킨 것으로 명성을 얻었다.",
+       "polish": {
+        "from": "행추는 고화파의 무예에 재능을 보여 **고화 renaissance**를 일으킨 것으로 명성을 얻었다.",
+        "text": "행추는 고화파의 무예에 재능을 보여 **고화 르네상스**를 일으킨 것으로 명성을 얻었다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Xingqiu는 Martial Principle에 시를 썼고, 이를 읽은 Guhua Clan의 수장은 눈물을 흘리며 'Xingqiu가 Guhua Clan에 필요한 것이 아니라 Guhua Clan이 Xingqiu에게 필요한 것이다'라고 선언했다.",
+       "t_raw": "Guhua의 수장은 Xingqiu의 Martial Principle 시를 읽고 'Guhua Clan에 필요한 것은 Xingqiu이지, Xingqiu에게 필요한 것은 Guhua Clan이 아니다'라고 선언했고, 그 시는 Wangshan Hall에 봉인되었다.",
        "interp": false,
        "dropped": false,
-       "t": "행추는 Martial Principle에 시를 썼고, 이를 읽은 고화파의 수장은 눈물을 흘리며 '행추가 고화파에 필요한 것이 아니라 고화파가 행추에게 필요한 것이다'라고 선언했다."
+       "t": "고화의 수장은 행추의 Martial Principle 시를 읽고 '고화파에 필요한 것은 행추이지, 행추에게 필요한 것은 고화파가 아니다'라고 선언했고, 그 시는 왕산청에 봉인되었다."
       },
       {
-       "t_raw": "그 시는 오래 Guhua의 무예를 익힌 이가 이제 잃어버린 깊이를 복된 비처럼 맞이한다는 내용을 담았으며, Wangshan Hall의 Clan 본부에 봉인되어 제자들은 물론 외부인도 읽지 못한다.",
-       "interp": false,
+       "t_raw": "한 줌의 수련자로 남은 **Guhua Clan의 쇠퇴**와 Xingqiu의 르네상스 평이 겹쳐, 현재 Guhua Clan은 쇠락과 부흥의 기대가 교차하는 모습으로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "그 시는 오래 고화의 무예를 익힌 이가 이제 잃어버린 깊이를 복된 비처럼 맞이한다는 내용을 담았으며, 왕산청의 Clan 본부에 봉인되어 제자들은 물론 외부인도 읽지 못한다."
+       "t": "한 줌의 수련자로 남은 **고화파의 쇠퇴**와 행추의 르네상스 평이 겹쳐, 현재 고화파는 쇠락과 부흥의 기대가 교차하는 모습으로 보인다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Xingqiu/Profile",
-       "revision": 425125,
-       "section": "Character Stories > Vision",
-       "paragraph": "M6",
+       "page": "Tea Master Liu Su",
+       "revision": 421743,
+       "section": "Dialogue > Xingqiu: Ring of Raining Blades",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "M5",
        "wiki_refs": []
       },
       {
@@ -765,114 +778,60 @@
        "page": "Xingqiu/Profile",
        "revision": 425125,
        "section": "Character Stories > Vision",
-       "paragraph": "M13",
+       "paragraph": "M6",
        "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 고화파의 계승과 쇠퇴",
+     "heading": "작중 행적 — 고화파의 현재",
      "latin_left": [
-      "Martial Principle",
-      "Clan"
+      "Guhua Sect",
+      "Guhua Sect",
+      "Martial Principle"
      ]
     },
     {
-     "section": "작중 행적 — Guhua Clan의 계승과 쇠퇴",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Recently, though, we heard that a Vision bearer joined the Guhua Clan and made pretty much instant progress in their training.",
+     "section": "작중 행적 — Guhua Clan의 현재",
+     "status": "accepted",
+     "note": "All supported by the dialogue lines.",
+     "quote": "Ah, yes. Where are my manners? Huang the Third of the Guhua Clan, at your service. Some people know me as the Cloudpiercing Arrow.",
      "sentences": [
       {
-       "t_raw": "Chai Yi는 최근 Vision 소지자가 Guhua Clan에 들어와 수련에서 거의 즉시 진전을 냈다는 소식을 전한다.",
+       "t_raw": "Little Que'er는 동료 제자 Sun Yu와 함께 Guhua Clan의 부흥을 위해 adepti의 지도를 찾아 나선다.",
        "interp": false,
        "dropped": false,
-       "t": "채의는 최근 신의 눈 소지자가 고화파에 들어와 수련에서 거의 즉시 진전을 냈다는 소식을 전한다."
+       "t": "소작아는 동료 제자 손우와 함께 고화파의 부흥을 위해 선인들의 지도를 찾아 나선다.",
+       "polish": {
+        "from": "소작아는 동료 제자 손우와 함께 고화파의 부흥을 위해 adepti의 지도를 찾아 나선다.",
+        "text": "소작아는 동료 제자 손우와 함께 고화파의 부흥을 위해 선인들의 지도를 찾아 나선다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Sun Yu는 Guhua 동문들과 심심하고 달리 할 일이 없을 때 고안한 비정통적인 방법이 있다고 말한다.",
+       "t_raw": "Little Que'er는 선배가 Guhua 이야기만 하며 Guhua Clan만 생각한다고 투덜댄다.",
        "interp": false,
        "dropped": false,
-       "t": "손우는 고화 동문들과 심심하고 달리 할 일이 없을 때 고안한 비정통적인 방법이 있다고 말한다."
+       "t": "소작아는 선배가 고화 이야기만 하며 고화파만 생각한다고 투덜댄다."
+      },
+      {
+       "t_raw": "Sun Yu는 동료 제자들과 심심할 때 고안한 비정통적인 방법을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우는 동료 제자들과 심심할 때 고안한 비정통적인 방법을 언급한다."
+      },
+      {
+       "t_raw": "Huang the Third는 스스로를 Guhua Clan의 'Cloudpiercing Arrow'로 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "황삼야는 스스로를 고화파의 '천운전'으로 소개한다."
+      },
+      {
+       "t_raw": "Paimon은 또 하나의 Guhua의 시련인지 묻고, Guhua Clan의 보물을 찾은 것인지 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 또 하나의 고화의 시련인지 묻고, 고화파의 보물을 찾은 것인지 되묻는다."
       }
      ],
      "sources": [
-      {
-       "kind": "quest",
-       "quest": "A Path Through the Storm",
-       "quest_ko": "뇌우를 뚫는 법",
-       "version": "1.6",
-       "speaker": "Chai Yi"
-      },
-      {
-       "kind": "quest",
-       "quest": "Yesteryear's Lanterns and the Guhua of Today",
-       "quest_ko": "작년의 소등, 오늘의 고화",
-       "version": "1.3",
-       "speaker": "Sun Yu"
-      }
-     ],
-     "heading": "작중 행적 — 고화파의 계승과 쇠퇴",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Guhua Clan을 찾는 이들",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Are you two all that's left of the Guhua Clan?",
-     "sentences": [
-      {
-       "t_raw": "Sun Yu는 Guhua Clan을 되살리기 위해 Huaguang Stone Forest에서 선인의 가르침을 구하는 길에 나선다.",
-       "interp": false,
-       "dropped": false,
-       "t": "손우는 고화파를 되살리기 위해 화광림에서 선인의 가르침을 구하는 길에 나선다."
-      },
-      {
-       "t_raw": "Little Que'er는 동료 Guhua Clan 제자로서 그와 동행한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "소작아는 동료 고화파 제자로서 그와 동행한다."
-      },
-      {
-       "t_raw": "Little Que'er는 선배가 Guhua Clan 생각뿐이라고 불평한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "소작아는 선배가 고화파 생각뿐이라고 불평한다."
-      },
-      {
-       "t_raw": "그러나 정작 Little Que'er는 “Guhua Clan? What about the Guhua Clan?”이라거나 “What's the Guhua Clan?”이라고 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 정작 소작아는 “고화파? What about the 고화파?”이라거나 “What의 the 고화파?”이라고 되묻는다."
-      },
-      {
-       "t_raw": "Sun Yu는 누군가를 두고 “Are you two all that's left of the Guhua Clan?”라고 묻기도 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "손우는 누군가를 두고 “Are you two all that의 left of the 고화파?”라고 묻기도 한다."
-      },
-      {
-       "t_raw": "**Guhua Clan을 되살리려는 동행** 속에서도 그녀에게 Guhua Clan은 낯선 화제인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "**고화파를 되살리려는 동행** 속에서도 그녀에게 고화파는 낯선 화제인 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Little Que'er",
-       "revision": 56716,
-       "section": "Dialogue",
-       "paragraph": "M3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Little Que'er",
-       "revision": 56716,
-       "section": "Dialogue",
-       "paragraph": "M8",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Little Que'er",
@@ -886,64 +845,15 @@
        "page": "Little Que'er",
        "revision": 56716,
        "section": "Dialogue",
-       "paragraph": "M14",
+       "paragraph": "M3",
        "wiki_refs": []
       },
       {
-       "kind": "wiki",
-       "page": "Sun Yu",
-       "revision": 56715,
-       "section": "Dialogue",
-       "paragraph": "M15",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 고화파를 찾는 이들",
-     "latin_left": [
-      "What",
-      "What",
-      "Are"
-     ]
-    },
-    {
-     "section": "작중 행적 — Guhua Clan을 찾는 이들",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ah, yes. Where are my manners? Huang the Third of the Guhua Clan, at your service. Some people know me as the Cloudpiercing Arrow.",
-     "sentences": [
-      {
-       "t_raw": "Guhua Clan의 스승을 찾아 문 앞에 몰려든 열성 추종자들은 문지기의 어색한 대답을 듣는다: “The master is off in the mountains taking some time to himself right now... Maybe try again another day.”",
-       "interp": false,
-       "dropped": false,
-       "t": "고화파의 스승을 찾아 문 앞에 몰려든 열성 추종자들은 문지기의 어색한 대답을 듣는다: “The master is off in the mountains taking some time to himself right now... Maybe try again another day.”"
-      },
-      {
-       "t_raw": "Huang the Third는 스스로를 Guhua Clan의 일원이라 소개하며 “Cloudpiercing Arrow”라는 별칭을 내세운다.",
-       "interp": false,
-       "dropped": false,
-       "t": "황삼야는 스스로를 고화파의 일원이라 소개하며 “Cloudpiercing Arrow”라는 별칭을 내세운다."
-      },
-      {
-       "t_raw": "누군가 Guhua Clan에서 왔다고 하자 Paimon은 “What do you mean, you're from the Guhua Clan?”이라며 의아해한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "누군가 고화파에서 왔다고 하자 페이몬은 “What do you mean, you're from the 고화파?”이라며 의아해한다."
-      },
-      {
-       "t_raw": "**Guhua Clan의 스승을 찾는 이들**과 Guhua Clan을 자처하는 Huang the Third의 이야기가 나란히 전해진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**고화파의 스승을 찾는 이들**과 고화파를 자처하는 황삼야의 이야기가 나란히 전해진다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Xingqiu/Profile",
-       "revision": 425125,
-       "section": "Official Introduction",
-       "paragraph": "M7",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "Yesteryear's Lanterns and the Guhua of Today",
+       "quest_ko": "작년의 소등, 오늘의 고화",
+       "version": "1.3",
+       "speaker": "Sun Yu"
       },
       {
        "kind": "quest",
@@ -952,98 +862,6 @@
        "version": "4.4",
        "speaker": "Huang the Third"
       },
-      {
-       "kind": "quest",
-       "quest": "Qiaoying of the Sacred Mountain",
-       "quest_ko": "찻잎의 선산, 이름하여 교영",
-       "version": "4.4",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — 고화파를 찾는 이들",
-     "latin_left": [
-      "The",
-      "Maybe",
-      "Cloudpiercing Arrow",
-      "What"
-     ]
-    },
-    {
-     "section": "작중 행적 — Guhua Clan을 찾는 이들",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Right, so he isn't from the Guhua Clan. Actually, y'know, isn't he the one sullying the Guhua name around here?",
-     "sentences": [
-      {
-       "t_raw": "Tang Wuchou를 자칭하는 인물은 “our Guhua training grounds”를 입에 올리며 꽃이 자기 것이라고 주장한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "당무적을 자칭하는 인물은 “our 고화 training grounds”를 입에 올리며 꽃이 자기 것이라고 주장한다."
-      },
-      {
-       "t_raw": "그러나 Paimon은 그가 Guhua Clan 출신이 아니라고 짚고, 오히려 Guhua 이름을 더럽히는 쪽이 그가 아닌지 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 페이몬은 그가 고화파 출신이 아니라고 짚고, 오히려 고화 이름을 더럽히는 쪽이 그가 아닌지 되묻는다."
-      },
-      {
-       "t_raw": "Guhua 훈련장을 내세우는 말과 Guhua 이름을 더럽힌다는 판단이 겹쳐, **Guhua 이름을 내세운 소동**의 모순이 드러나는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "고화 훈련장을 내세우는 말과 고화 이름을 더럽힌다는 판단이 겹쳐, **고화 이름을 내세운 소동**의 모순이 드러나는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Missing Miner",
-       "quest_ko": "실종된 광부",
-       "version": "2.6",
-       "speaker": "Claims to be \"Tang Wuchou\""
-      },
-      {
-       "kind": "quest",
-       "quest": "A Cliff-Side Hero's Past",
-       "quest_ko": "층암정 대협의 과거",
-       "version": "2.6",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — 고화파를 찾는 이들",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Guhua Clan을 찾는 이들",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Did we... Did we actually find the Guhua Clan's treasure after all?",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 어떤 상황을 두고 “another one of Guhua's trials”인지 묻고, 그만큼 얕보인다며 불만을 터뜨린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 어떤 상황을 두고 “another one of 고화의 trials”인지 묻고, 그만큼 얕보인다며 불만을 터뜨린다."
-      },
-      {
-       "t_raw": "또 “Did we... Did we actually find the Guhua Clan's treasure after all?”라며 Guhua Clan의 보물을 떠올린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "또 “Did we... Did we actually find the 고화파의 treasure after all?”라며 고화파의 보물을 떠올린다."
-      },
-      {
-       "t_raw": "누군가를 “Guhua Geek”라 부르며 “No surprises from Guhua Geek.”라고 평한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "누군가를 “Guhua Geek”라 부르며 “No surprises from Guhua Geek.”라고 평한다."
-      },
-      {
-       "t_raw": "이처럼 Guhua라는 이름은 시련, 보물, 별명의 형태로 Paimon의 말에 등장하는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이처럼 고화라는 이름은 시련, 보물, 별명의 형태로 페이몬의 말에 등장하는 셈이다."
-      }
-     ],
-     "sources": [
       {
        "kind": "quest",
        "quest": "Shrouded Vale, Hidden Hero",
@@ -1057,335 +875,49 @@
        "quest_ko": "고화 검보",
        "version": "4.4",
        "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "One for the Foodies, Two for the Show",
-       "quest_ko": "젓가락 한 짝으로 맛과 명성 모두 얻으리",
-       "version": "2.1",
-       "speaker": "Paimon"
       }
      ],
-     "heading": "작중 행적 — 고화파를 찾는 이들",
-     "latin_left": [
-      "Did",
-      "Did",
-      "Guhua Geek",
-      "No",
-      "Guhua Geek"
-     ]
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Rain Cutter for the sword, Light Piercer for the spear, and Life Ender for the combination of both.",
-     "sentences": [
-      {
-       "t_raw": "Guhua의 세 가지 무예는 **Rain Cutter**, **Light Piercer**, **Life Ender**다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고화의 세 가지 무예는 **재우유홍**, **빛 꿰뚫기**, **생명을 끝내는 자**다."
-      },
-      {
-       "t_raw": "Rain Cutter는 검, Light Piercer는 창, Life Ender는 검과 창을 함께 익힌 이의 기술이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "재우유홍은 검, 빛 꿰뚫기는 창, 생명을 끝내는 자는 검과 창을 함께 익힌 이의 기술이다."
-      },
-      {
-       "t_raw": "Rainslasher는 그가 살아 있을 때 쓴 무기로 전해지며, Guhua 자신은 클레이모어인 Rainslasher를 들었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "빗물 베기는 그가 살아 있을 때 쓴 무기로 전해지며, 고화 자신은 클레이모어인 빗물 베기를 들었다."
-      },
-      {
-       "t_raw": "세 무예와 Rainslasher를 함께 보면, Guhua의 무예는 여러 무기를 아우른 체계로 기억된 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "세 무예와 빗물 베기를 함께 보면, 고화의 무예는 여러 무기를 아우른 체계로 기억된 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": "Story",
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "A Wangshan Walk to Remember"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Martial Arts in Teyvat",
-       "revision": 1355760,
-       "section": "Liyue > Guhua Arts",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Xingqiu"
-        }
-       ]
-      }
-     ],
-     "heading": "능력",
+     "heading": "작중 행적 — 고화파의 현재",
      "latin_left": []
     },
     {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The beating heart of Guhua's sword art is as a shower of floating flowers.",
+     "section": "작중 행적 — Guhua Clan의 현재",
+     "status": "accepted",
+     "note": "All sentences match the quotes; the interpretation is reasonable.",
+     "quote": "(Right, so he isn't from the Guhua Clan. Actually, y'know, isn't he the one sullying the Guhua name around here?)",
      "sentences": [
       {
-       "t_raw": "Guhua의 검술을 오래 익힌 이의 글은 그 검술의 심장을 흩날리는 꽃의 소나기 같다고 표현하며, 한 사람은 그 가운데 꽃 한 송이를 붙잡을 수 있지만 그렇지 않은 이들은 파멸만 읽는다고 말한다.",
+       "t_raw": "스스로 'Tang Wuchou'라 주장하는 인물은 누군가가 Guhua의 수련장을 침범했다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "고화의 검술을 오래 익힌 이의 글은 그 검술의 심장을 흩날리는 꽃의 소나기 같다고 표현하며, 한 사람은 그 가운데 꽃 한 송이를 붙잡을 수 있지만 그렇지 않은 이들은 파멸만 읽는다고 말한다."
+       "t": "스스로 '당무적'라 주장하는 인물은 누군가가 고화의 수련장을 침범했다고 말한다."
       },
       {
-       "t_raw": "Ancient Swordsman's Inscriptions에서 Guhua는 용을 죽이고 그 피를 마셨으며, Mt. Tianheng에서 호랑이를 죽였고, Sea of Clouds에서 비늘 있는 짐승을 꿰뚫었다고 자랑한다.",
+       "t_raw": "Paimon은 그가 Guhua Clan 출신이 아니며 Guhua의 이름을 더럽히는 사람이 아닌지 의심한다.",
        "interp": false,
        "dropped": false,
-       "t": "Ancient Swordsman의 명문에서 고화는 용을 죽이고 그 피를 마셨으며, 천형산에서 호랑이를 죽였고, 운래해에서 비늘 있는 짐승을 꿰뚫었다고 자랑한다."
+       "t": "페이몬은 그가 고화파 출신이 아니며 고화의 이름을 더럽히는 사람이 아닌지 의심한다."
       },
       {
-       "t_raw": "Rainslasher가 생전의 무기였다는 전승과 이 기록을 함께 보면, Guhua의 무예는 무기와 전투 업적 양쪽에서 강조된 셈이다.",
+       "t_raw": "Xingqiu는 스스로 Guhua Clan의 제자이자 Feiyun Commerce Guild 관리인의 둘째 아들이라 밝히고 숨기지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "행추는 스스로 고화파의 제자이자 비운 상회 관리인의 둘째 아들이라 밝히고 숨기지 않는다."
+      },
+      {
+       "t_raw": "Xingqiu의 무예로 Guhua Style, Guhua Sword: Fatal Rainscreen, Guhua Sword: Raincutter가 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "행추의 무예로 고화 검법, 고화검: 화우농산, 고화검: 재우유홍이 제시된다."
+      },
+      {
+       "t_raw": "제자임을 공개하는 Xingqiu와 Guhua의 이름을 더럽힌다고 의심받는 인물의 대비는 **Guhua Clan의 이름**이 여러 방식으로 회자됨을 보여 주는 듯하다.",
        "interp": true,
        "dropped": false,
-       "t": "빗물 베기가 생전의 무기였다는 전승과 이 기록을 함께 보면, 고화의 무예는 무기와 전투 업적 양쪽에서 강조된 셈이다."
+       "t": "제자임을 공개하는 행추와 고화의 이름을 더럽힌다고 의심받는 인물의 대비는 **고화파의 이름**이 여러 방식으로 회자됨을 보여 주는 듯하다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Xingqiu/Profile",
-       "revision": 425125,
-       "section": "Character Stories > Vision",
-       "paragraph": "M13",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": "Story",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "heo",
-         "name": "Wangshan Swordsman's Inscriptions"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "능력",
-     "latin_left": [
-      "Ancient Swordsman"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "it was established after his death by Baixuan, whom Guhua once showed favor to when Baixuan was a boy.",
-     "sentences": [
-      {
-       "t_raw": "Guhua는 Guhua Clan의 창시자로 인정되지만 Clan의 수장이었던 적도, 제자를 들인 적도 없다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고화는 고화파의 창시자로 인정되지만 Clan의 수장이었던 적도, 제자를 들인 적도 없다."
-      },
-      {
-       "t_raw": "세상을 떠난 뒤 Baixuan이 Clan을 세웠고, 소년 시절 Baixuan은 Guhua에게 호의를 받았으며, Guhua는 상처 회복 중 Baixuan이 가져온 양고기와 생선 요리에 감탄해 Life Ender를 전수하고 조리법을 받았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "세상을 떠난 뒤 Baixuan이 Clan을 세웠고, 소년 시절 Baixuan은 고화에게 호의를 받았으며, 고화는 상처 회복 중 Baixuan이 가져온 양고기와 생선 요리에 감탄해 생명을 끝내는 자를 전수하고 조리법을 받았다."
-      },
-      {
-       "t_raw": "이는 두 사람의 관계가 공식 사제 계보보다 호의와 요리법으로 얽힌 사적 만남이었음을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 두 사람의 관계가 공식 사제 계보보다 호의와 요리법으로 얽힌 사적 만남이었음을 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "A Wangshan Walk to Remember"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": "Story",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Scrolls and Sword Manuals of Guhua"
-        }
-       ]
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Clan",
-      "Baixuan",
-      "Clan",
-      "Baixuan",
-      "Baixuan"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "it is not Xingqiu who needs the Guhua Clan, but the Guhua Clan that needs Xingqiu.",
-     "sentences": [
-      {
-       "t_raw": "Xingqiu는 스스로 Guhua Clan의 제자이자 Feiyun Commerce Guild 관리인의 둘째 아들이라 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "행추는 스스로 고화파의 제자이자 비운 상회 관리인의 둘째 아들이라 밝힌다."
-      },
-      {
-       "t_raw": "그는 Guhua 무예에 재능을 보여 **Guhua renaissance**를 사실상 시작했다는 평을 얻었고, Martial Principle에 쓴 시를 읽은 Guhua Clan 수장은 눈물을 흘리며 Clan이 Xingqiu를 필요로 한다고 말했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 고화 무예에 재능을 보여 **고화 renaissance**를 사실상 시작했다는 평을 얻었고, Martial Principle에 쓴 시를 읽은 고화파 수장은 눈물을 흘리며 Clan이 행추를 필요로 한다고 말했다."
-      },
-      {
-       "t_raw": "그 시는 Wangshan Hall 본거지에 봉인되어 제자와 외부인 모두 읽지 못한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 시는 왕산청 본거지에 봉인되어 제자와 외부인 모두 읽지 못한다."
-      },
-      {
-       "t_raw": "이는 Xingqiu가 Clan 안에서 단순한 제자 이상으로 여겨졌음을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 행추가 Clan 안에서 단순한 제자 이상으로 여겨졌음을 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Xingqiu/Profile",
-       "revision": 425125,
-       "section": "Character Stories > Vision",
-       "paragraph": "M6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Xingqiu/Profile",
-       "revision": 425125,
-       "section": "Official Introduction",
-       "paragraph": "M7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Justice Is Its Own Reward",
-       "quest_ko": "초탈한 협객행",
-       "version": "1.0",
-       "speaker": "Xingqiu"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Martial Principle",
-      "Clan",
-      "Clan"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Are you two all that's left of the Guhua Clan?",
-     "sentences": [
-      {
-       "t_raw": "Sun Yu는 Guhua Clan 부흥을 위해 adepti에게 길을 묻고자 하고, Little Que'er는 동료 Guhua Clan 제자로서 Huaguang Stone Forest에서 그를 따른다.",
-       "interp": false,
-       "dropped": false,
-       "t": "손우는 고화파 부흥을 위해 adepti에게 길을 묻고자 하고, 소작아는 동료 고화파 제자로서 화광림에서 그를 따른다."
-      },
-      {
-       "t_raw": "Sun Yu는 상대에게 \"Are you two all that's left of the Guhua Clan?\"라고 묻고, Huang the Third는 스스로 Guhua Clan의 일원이며 Cloudpiercing Arrow로 알려졌다고 자처한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "손우는 상대에게 \"Are you two all that의 left of the 고화파?\"라고 묻고, 황삼야는 스스로 고화파의 일원이며 Cloudpiercing Arrow로 알려졌다고 자처한다."
-      },
-      {
-       "t_raw": "\"Tang Wuchou\"를 자처하는 인물은 Guhua 수련장 침범을 말하며 꽃이 자신의 것이라 주장하지만, Paimon은 그가 Guhua Clan 출신이 아니며 Guhua의 이름을 더럽히는 쪽이라고 짚는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "\"당무적\"을 자처하는 인물은 고화 수련장 침범을 말하며 꽃이 자신의 것이라 주장하지만, 페이몬은 그가 고화파 출신이 아니며 고화의 이름을 더럽히는 쪽이라고 짚는다."
-      },
-      {
-       "t_raw": "이렇게 **Guhua의 이름**은 부흥을 꾀하는 제자와 동료, 스스로 Clan의 일원이라 밝히는 이, Clan과 무관하면서 그 이름을 내세우는 인물까지 끌어들인다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이렇게 **고화의 이름**은 부흥을 꾀하는 제자와 동료, 스스로 Clan의 일원이라 밝히는 이, Clan과 무관하면서 그 이름을 내세우는 인물까지 끌어들인다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Little Que'er",
-       "revision": 56716,
-       "section": null,
-       "paragraph": "M12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Sun Yu",
-       "revision": 56715,
-       "section": "Dialogue",
-       "paragraph": "M15",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Wangshan Walk to Remember",
-       "quest_ko": "우당탕 왕산청 여행기",
-       "version": "4.4",
-       "speaker": "Huang the Third"
-      },
       {
        "kind": "quest",
        "quest": "The Missing Miner",
@@ -1399,45 +931,187 @@
        "quest_ko": "층암정 대협의 과거",
        "version": "2.6",
        "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Justice Is Its Own Reward",
+       "quest_ko": "초탈한 협객행",
+       "version": "1.0",
+       "speaker": "Xingqiu"
+      },
+      {
+       "kind": "wiki",
+       "page": "Martial Arts in Teyvat",
+       "revision": 1355760,
+       "section": "Liyue > Guhua Arts",
+       "paragraph": "M2",
+       "wiki_refs": []
       }
      ],
-     "heading": "인간관계",
+     "heading": "작중 행적 — 고화파의 현재",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by A5; the interpretation is hedged.",
+     "quote": "Inside the chamber, an engraving on the mechanism in the center of the chamber appears to be penned by Guhua, although its tone is drastically different than his writings in his notes:",
+     "sentences": [
+      {
+       "t_raw": "Guhua는 Baixuan의 양고기 조리법을 배우기 전에 서재를 고치고 그 아래에 비밀 지하실을 만들었으며, 원소 주문으로 봉인해 Elemental Sight로만 구별할 수 있게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고화는 Baixuan의 양고기 조리법을 배우기 전에 서재를 고치고 그 아래에 비밀 지하실을 만들었으며, 원소 주문으로 봉인해 원소 시야로만 구별할 수 있게 했다."
+      },
+      {
+       "t_raw": "중앙 기구의 명문은 Guhua가 쓴 것으로 보이지만, 그의 수련 노트와는 어조가 크게 다르다.",
+       "interp": false,
+       "dropped": false,
+       "t": "중앙 기구의 명문은 고화가 쓴 것으로 보이지만, 그의 수련 노트와는 어조가 크게 다르다."
+      },
+      {
+       "t_raw": "명문은 하늘과 운명의 변덕을 말한 뒤, 막다른 길에 이르렀을 때 무엇을 할 것인가를 후대에 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "명문은 하늘과 운명의 변덕을 말한 뒤, 막다른 길에 이르렀을 때 무엇을 할 것인가를 후대에 묻는다."
+      },
+      {
+       "t_raw": "**비밀 지하실**이라는 사실과 노트와 다른 어조가 함께 놓이면서, 이 공간은 수련 기록과는 다른 성격을 띠는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**비밀 지하실**이라는 사실과 노트와 다른 어조가 함께 놓이면서, 이 공간은 수련 기록과는 다른 성격을 띠는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guhua",
+       "revision": 1560339,
+       "section": "Story",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Scrolls and Sword Manuals of Guhua"
+        },
+        {
+         "type": "quest",
+         "name": "Shrouded Vale, Hidden Hero"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Are",
-      "Cloudpiercing Arrow",
-      "Clan",
-      "Clan"
+      "Baixuan"
      ]
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It is currently unclear whether Guhua was an adeptus or not.",
+     "status": "accepted",
+     "note": "A5 and A6 support the facts; the contrast is a reasonable interpretation.",
+     "quote": "Guhua boasts of several of his feats, including slaying dragons and drinking their blood, slaying tigers at Mt. Tianheng, and \"skewer[ing]\" a scaled beast at the Sea of Clouds.",
      "sentences": [
       {
-       "t_raw": "Guhua가 선인이었는지는 현재 분명하지 않다.",
+       "t_raw": "비밀 지하실의 출구 끝에는 **Ancient Swordsman's Inscriptions**가 있으며, Guhua는 그곳에서 용을 죽이고 그 피를 마셨다는 것, Mt. Tianheng에서 호랑이를 죽였다는 것, Sea of Clouds에서 비늘 짐승을 “skewer”했다는 것 등을 자랑한다.",
        "interp": false,
        "dropped": false,
-       "t": "고화가 선인이었는지는 현재 분명하지 않다."
+       "t": "비밀 지하실의 출구 끝에는 **Ancient Swordsman의 명문**이 있으며, 고화는 그곳에서 용을 죽이고 그 피를 마셨다는 것, 천형산에서 호랑이를 죽였다는 것, 운래해에서 비늘 짐승을 “skewer”했다는 것 등을 자랑한다."
       },
       {
-       "t_raw": "한 목록은 그를 'Ascended'라고 적고, 다른 목록은 Liyue의 신으로 분류해 Celestia로 승천했다고 적는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한 목록은 그를 'Ascended'라고 적고, 다른 목록은 리월의 신으로 분류해 셀레스티아로 승천했다고 적는다."
-      },
-      {
-       "t_raw": "전설에서는 그가 선인이자 떠도는 무인으로서 Huaguang Stone Forest에서 보랏빛 안개 속에 별이 되어 승천했다고 하지만, 이 전설은 다른 자료에서 입증되지 않고 Guhua Clan의 구성원도 이어 말하지 않는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "전설에서는 그가 선인이자 떠도는 무인으로서 화광림에서 보랏빛 안개 속에 별이 되어 승천했다고 하지만, 이 전설은 다른 자료에서 입증되지 않고 고화파의 구성원도 이어 말하지 않는다."
-      },
-      {
-       "t_raw": "이처럼 전설과 목록의 표현이 엇갈려 승천과 선인 여부는 **해석의 여지가 남은 떡밥**으로 보인다.",
+       "t_raw": "앞선 명문이 후대에 질문을 남긴 반면, 출구 끝의 비문은 자신의 무용담을 늘어놓으므로 두 기록의 성격 차이가 드러나는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이처럼 전설과 목록의 표현이 엇갈려 승천과 선인 여부는 **해석의 여지가 남은 떡밥**으로 보인다."
+       "t": "앞선 명문이 후대에 질문을 남긴 반면, 출구 끝의 비문은 자신의 무용담을 늘어놓으므로 두 기록의 성격 차이가 드러나는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guhua",
+       "revision": 1560339,
+       "section": "Story",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Scrolls and Sword Manuals of Guhua"
+        },
+        {
+         "type": "quest",
+         "name": "Shrouded Vale, Hidden Hero"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Guhua",
+       "revision": 1560339,
+       "section": "Story",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "heo",
+         "name": "Wangshan Swordsman's Inscriptions"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Ancient Swordsman"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "A7, M9 and M16 support every sentence; the interpretation is hedged.",
+     "quote": "According to legend, he was an adeptus and a martial nomad who, at the end of his journey, ascended and became a star in the midst of a purple haze at Huaguang Stone Forest.",
+     "sentences": [
+      {
+       "t_raw": "전설에 따르면 Guhua는 adeptus이자 무예 유랑인으로, 여정 끝에 Huaguang Stone Forest에서 보랏빛 안개 속에서 승천해 별이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전설에 따르면 고화는 선인이자 무예 유랑인으로, 여정 끝에 화광림에서 보랏빛 안개 속에서 승천해 별이 되었다.",
+       "polish": {
+        "from": "전설에 따르면 고화는 adeptus이자 무예 유랑인으로, 여정 끝에 화광림에서 보랏빛 안개 속에서 승천해 별이 되었다.",
+        "text": "전설에 따르면 고화는 선인이자 무예 유랑인으로, 여정 끝에 화광림에서 보랏빛 안개 속에서 승천해 별이 되었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그러나 이 전설은 그에 관한 다른 자료에서 입증되지 않으며, Guhua Clan의 어떤 구성원도 이 신화를 이어 가지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 이 전설은 그에 관한 다른 자료에서 입증되지 않으며, 고화파의 어떤 구성원도 이 신화를 이어 가지 않는다."
+      },
+      {
+       "t_raw": "adeptus 목록은 Guhua가 adeptus인지 현재 불분명하다고 하면서 그를 승천한 자로 분류한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "선인 목록은 고화가 선인인지 현재 불분명하다고 하면서 그를 승천한 자로 분류한다.",
+       "polish": {
+        "from": "adeptus 목록은 고화가 adeptus인지 현재 불분명하다고 하면서 그를 승천한 자로 분류한다.",
+        "text": "선인 목록은 고화가 선인인지 현재 불분명하다고 하면서 그를 승천한 자로 분류한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "신 목록에서는 알려진 신이 없다고 하면서 Liyue의 Celestia로 승천한 자로 분류한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "신 목록에서는 알려진 신이 없다고 하면서 리월의 셀레스티아로 승천한 자로 분류한다."
+      },
+      {
+       "t_raw": "전설을 이어 가지 않는 Clan과 adeptus 여부를 불분명하게 두는 목록이 맞물려, **승천 전설**은 확정된 사실이라기보다 전승으로 남아 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "전설을 이어 가지 않는 가문과 선인 여부를 불분명하게 두는 목록이 맞물려, **승천 전설**은 확정된 사실이라기보다 전승으로 남아 있는 셈이다.",
+       "polish": {
+        "from": "전설을 이어 가지 않는 Clan과 adeptus 여부를 불분명하게 두는 목록이 맞물려, **승천 전설**은 확정된 사실이라기보다 전승으로 남아 있는 셈이다.",
+        "text": "전설을 이어 가지 않는 가문과 선인 여부를 불분명하게 두는 목록이 맞물려, **승천 전설**은 확정된 사실이라기보다 전승으로 남아 있는 셈이다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -1477,80 +1151,25 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Ascended"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When you have reached a dead end, what shall you do?",
-     "sentences": [
-      {
-       "t_raw": "Guhua는 도서관을 개조해 그 아래 은밀한 지하 방을 만들고, Elemental Sight로만 구별할 수 있는 원소 두루마리로 봉인했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고화는 도서관을 개조해 그 아래 은밀한 지하 방을 만들고, 원소 시야로만 구별할 수 있는 원소 두루마리로 봉인했다."
-      },
-      {
-       "t_raw": "방 중앙 기구의 새김은 Guhua가 쓴 것으로 보이지만 그의 필기와는 어조가 크게 다르며, 후대에 막다른 길에 이르렀을 때 무엇을 할 것인지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "방 중앙 기구의 새김은 고화가 쓴 것으로 보이지만 그의 필기와는 어조가 크게 다르며, 후대에 막다른 길에 이르렀을 때 무엇을 할 것인지 묻는다."
-      },
-      {
-       "t_raw": "같은 인물로 보이는 새김이 평소 기록과 다른 어조로 후대를 향해 질문을 남긴 점은 이 방의 글을 **Guhua의 의도를 읽는 단서**로 해석하게 한다.",
-       "interp": true,
-       "dropped": false,
-       "t": "같은 인물로 보이는 새김이 평소 기록과 다른 어조로 후대를 향해 질문을 남긴 점은 이 방의 글을 **고화의 의도를 읽는 단서**로 해석하게 한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Guhua",
-       "revision": 1560339,
-       "section": "Story",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Scrolls and Sword Manuals of Guhua"
-        },
-        {
-         "type": "quest",
-         "name": "Shrouded Vale, Hidden Hero"
-        }
-       ]
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
      "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "ten pages of his notes becoming dedicated to different methods of fish preparation — complete with some illustrations — instead of recording his training progress.",
+     "status": "accepted",
+     "note": "A4 supports both sentences.",
+     "quote": "Guhua was so impressed by the mutton and fish dish that Baixuan brought him that he not only taught his Life Ender technique to the boy in exchange for the recipe",
      "sentences": [
       {
-       "t_raw": "Guhua는 수련의 좌절 끝에 Plumwatcher Piles 아래 연못을 만들고 식용으로 물고기를 길렀으며, 필기장의 열 페이지를 **물고기 조리법**에 할애했다.",
+       "t_raw": "Guhua는 Plumwatcher Piles에서 떨어지고도 그 아래에 연못을 만든 뒤 기른 물고기를 먹었고, 수련 기록 대신 **물고기 요리**와 손질법을 적은 노트 10쪽을 남겼다.",
        "interp": false,
        "dropped": false,
-       "t": "고화는 수련의 좌절 끝에 Plumwatcher Piles 아래 연못을 만들고 식용으로 물고기를 길렀으며, 필기장의 열 페이지를 **물고기 조리법**에 할애했다."
+       "t": "고화는 Plumwatcher Piles에서 떨어지고도 그 아래에 연못을 만든 뒤 기른 물고기를 먹었고, 수련 기록 대신 **물고기 요리**와 손질법을 적은 노트 10쪽을 남겼다."
       },
       {
-       "t_raw": "부상 회복 중 Baixuan이 가져온 양고기와 생선 요리에 감명받아 Life Ender를 가르치는 대신 조리법을 받았고, 이후 여러 페이지를 **양고기 조리법**에 바쳤다.",
+       "t_raw": "부상 회복 중 Baixuan이 가져온 양고기와 생선 요리에 감탄한 그는 Life Ender를 가르쳐 주는 대신 조리법을 받고, 이후 여러 쪽을 양고기 조리법에 할애했다.",
        "interp": false,
        "dropped": false,
-       "t": "부상 회복 중 Baixuan이 가져온 양고기와 생선 요리에 감명받아 생명을 끝내는 자를 가르치는 대신 조리법을 받았고, 이후 여러 페이지를 **양고기 조리법**에 바쳤다."
-      },
-      {
-       "t_raw": "수련 진척 대신 요리법이 적힌 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "수련 진척 대신 요리법이 적힌 셈이다."
+       "t": "부상 회복 중 Baixuan이 가져온 양고기와 생선 요리에 감탄한 그는 생명을 끝내는 자를 가르쳐 주는 대신 조리법을 받고, 이후 여러 쪽을 양고기 조리법에 할애했다."
       }
      ],
      "sources": [
@@ -1576,70 +1195,59 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Since then, this verse has been sealed up at the Clan headquarters at Wangshan Hall. Disciples are proscribed from reading it, much less outsiders.",
+     "status": "accepted",
+     "note": "Q1, Q3, Q7, Q9, M3 and M7 support every sentence.",
+     "quote": "Ah, yes. Where are my manners? Huang the Third of the Guhua Clan, at your service. Some people know me as the Cloudpiercing Arrow.",
      "sentences": [
       {
-       "t_raw": "Xingqiu가 **Martial Principle**에 대해 쓴 구절을 읽고 Guhua Clan의 우두머리는 눈물을 흘리며 Xingqiu가 Guhua Clan을 필요로 하는 것이 아니라 Guhua Clan이 Xingqiu를 필요로 한다고 말했다.",
+       "t_raw": "Huang the Third는 Guhua Clan의 일원으로 자신을 소개하며, 어떤 이들은 자신을 **Cloudpiercing Arrow**라 부른다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "행추가 **Martial Principle**에 대해 쓴 구절을 읽고 고화파의 우두머리는 눈물을 흘리며 행추가 고화파를 필요로 하는 것이 아니라 고화파가 행추를 필요로 한다고 말했다."
+       "t": "황삼야는 고화파의 일원으로 자신을 소개하며, 어떤 이들은 자신을 **천운전**라 부른다고 한다."
       },
       {
-       "t_raw": "그 구절은 Wangshan Hall의 Guhua Clan 본부에 봉인되어 제자와 외부인 모두 읽을 수 없게 되었다.",
+       "t_raw": "Paimon은 'No surprises from Guhua Geek.'라고 말하고, 어떤 일을 두고 또 하나의 Guhua의 시련인가 하며 상대가 자신들을 너무 얕본다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "그 구절은 왕산청의 고화파 본부에 봉인되어 제자와 외부인 모두 읽을 수 없게 되었다."
+       "t": "페이몬은 ‘Guhua Geek에게서는 놀랄 일이 없지.’라고 말하고, 어떤 일을 두고 또 하나의 고화의 시련인가 하며 상대가 자신들을 너무 얕본다고 한다.",
+       "polish": {
+        "from": "페이몬은 'No surprises from Guhua Geek.'라고 말하고, 어떤 일을 두고 또 하나의 고화의 시련인가 하며 상대가 자신들을 너무 얕본다고 한다.",
+        "text": "페이몬은 ‘Guhua Geek에게서는 놀랄 일이 없지.’라고 말하고, 어떤 일을 두고 또 하나의 고화의 시련인가 하며 상대가 자신들을 너무 얕본다고 한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "제자에게도 금지된 점은 그 문장의 무게를 보여 주는 대목으로 보인다.",
-       "interp": true,
+       "t_raw": "Sun Yu는 심심할 때 동료 Guhua 제자들과 고안한 파격적인 방법이라고 설명하고, Little Que'er는 선배가 Guhua this, Guhua that 하며 Guhua Clan 생각뿐이라고 투덜댄다.",
+       "interp": false,
        "dropped": false,
-       "t": "제자에게도 금지된 점은 그 문장의 무게를 보여 주는 대목으로 보인다."
+       "t": "손우는 심심할 때 동료 고화 제자들과 고안한 파격적인 방법이라고 설명하고, 소작아는 선배가 고화 이러쿵저러쿵 하며 고화파 생각뿐이라고 투덜댄다.",
+       "polish": {
+        "from": "손우는 심심할 때 동료 고화 제자들과 고안한 파격적인 방법이라고 설명하고, 소작아는 선배가 고화 this, 고화 that 하며 고화파 생각뿐이라고 투덜댄다.",
+        "text": "손우는 심심할 때 동료 고화 제자들과 고안한 파격적인 방법이라고 설명하고, 소작아는 선배가 고화 이러쿵저러쿵 하며 고화파 생각뿐이라고 투덜댄다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Guhua Clan의 문 앞에 모인 열성적인 추종자들은 master를 만나려다, 문지기가 master가 산에서 쉬고 있다며 나중에 다시 오라는 어색한 답을 듣고 실망할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고화파의 문 앞에 모인 열성적인 추종자들은 스승을 만나려다, 문지기가 스승이 산에서 쉬고 있다며 나중에 다시 오라는 어색한 답을 듣고 실망할 수 있다.",
+       "polish": {
+        "from": "고화파의 문 앞에 모인 열성적인 추종자들은 master를 만나려다, 문지기가 master가 산에서 쉬고 있다며 나중에 다시 오라는 어색한 답을 듣고 실망할 수 있다.",
+        "text": "고화파의 문 앞에 모인 열성적인 추종자들은 스승을 만나려다, 문지기가 스승이 산에서 쉬고 있다며 나중에 다시 오라는 어색한 답을 듣고 실망할 수 있다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Xingqiu/Profile",
-       "revision": 425125,
-       "section": "Character Stories > Vision",
-       "paragraph": "M6",
+       "page": "Little Que'er",
+       "revision": 56716,
+       "section": "Dialogue",
+       "paragraph": "M3",
        "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Martial Principle"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The master is off in the mountains taking some time to himself right now... Maybe try again another day.",
-     "sentences": [
-      {
-       "t_raw": "Xingqiu는 Guhua Clan의 무예에 재능을 보여 Guhua renaissance를 사실상 시작한 인물로 이름을 얻었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "행추는 고화파의 무예에 재능을 보여 고화 renaissance를 사실상 시작한 인물로 이름을 얻었다."
       },
-      {
-       "t_raw": "스승을 찾는 이들에게 문지기는 그가 지금 산속에서 쉬고 있으니 다른 날 다시 오라는 어색한 대답을 내놓는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "스승을 찾는 이들에게 문지기는 그가 지금 산속에서 쉬고 있으니 다른 날 다시 오라는 어색한 대답을 내놓는다."
-      },
-      {
-       "t_raw": "이는 방문객을 돌려보내는 완곡한 방식으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 방문객을 돌려보내는 완곡한 방식으로 보인다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Xingqiu/Profile",
@@ -1647,18 +1255,48 @@
        "section": "Official Introduction",
        "paragraph": "M7",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Wangshan Walk to Remember",
+       "quest_ko": "우당탕 왕산청 여행기",
+       "version": "4.4",
+       "speaker": "Huang the Third"
+      },
+      {
+       "kind": "quest",
+       "quest": "Shrouded Vale, Hidden Hero",
+       "quest_ko": "은둔 협객의 비밀",
+       "version": "4.4",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "One for the Foodies, Two for the Show",
+       "quest_ko": "젓가락 한 짝으로 맛과 명성 모두 얻으리",
+       "version": "2.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Yesteryear's Lanterns and the Guhua of Today",
+       "quest_ko": "작년의 소등, 오늘의 고화",
+       "version": "1.3",
+       "speaker": "Sun Yu"
       }
      ],
      "heading": "여담",
-     "latin_left": []
+     "latin_left": [
+      "Guhua Geek"
+     ]
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "과연, 나의 주군이시여. 나는 Guhua Clan의 제자이자 Feiyun Commerce Guild 관리인의 차남인 Xingqiu이며, 그것을 숨기지 않는다.",
+     "status": "accepted",
+     "note": "Faithful translation (나리 for liege, 총수 for manager is a slight stretch but acceptable).",
+     "t_raw": "그렇습니다, 나리. 저는 Guhua Clan의 제자이자 Feiyun Commerce Guild 총수의 차남 Xingqiu이며, 이를 숨기지 않습니다.",
      "en": "Indeed, my liege. I am Xingqiu, disciple of the Guhua Clan and second son of the Feiyun Commerce Guild manager, and I make no secret of it.",
      "speaker": "Xingqiu",
      "source": {
@@ -1668,14 +1306,14 @@
       "version": "1.0",
       "speaker": "Xingqiu"
      },
-     "t": "과연, 나의 주군이시여. 나는 고화파의 제자이자 비운 상회 관리인의 차남인 행추이며, 그것을 숨기지 않는다.",
+     "t": "그렇습니다, 나리. 저는 고화파의 제자이자 비운 상회 총수의 차남 행추이며, 이를 숨기지 않습니다.",
      "speaker_ko": "행추"
     },
     {
-     "section": "작중 행적 — Guhua Clan의 계승과 쇠퇴",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그렇습니다, 주군이시여. 저는 Guhua Clan의 제자이며 Feiyun Commerce Guild 매니저의 둘째 아들인 Xingqiu이고, 그 사실을 숨기지 않습니다.",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Mistranslation: 'my liege' rendered as 저하 (Your Highness, royalty), and 'manager' rendered as 주인 (owner); changes meaning.",
+     "t_raw": "그렇습니다, 주군. 저는 Feiyun Commerce Guild 책임자의 둘째 아들이자 Guhua Clan의 제자 Xingqiu입니다. 숨길 생각은 없습니다.",
      "en": "Indeed, my liege. I am Xingqiu, disciple of the Guhua Clan and second son of the Feiyun Commerce Guild manager, and I make no secret of it.",
      "speaker": "Xingqiu",
      "source": {
@@ -1685,14 +1323,48 @@
       "version": "1.0",
       "speaker": "Xingqiu"
      },
-     "t": "그렇습니다, 주군이시여. 저는 고화파의 제자이며 비운 상회 매니저의 둘째 아들인 행추이고, 그 사실을 숨기지 않습니다.",
+     "t": "그렇습니다, 주군. 저는 비운 상회 책임자의 둘째 아들이자 고화파의 제자 행추입니다. 숨길 생각은 없습니다.",
      "speaker_ko": "행추"
     },
     {
-     "section": "작중 행적 — Guhua Clan을 찾는 이들",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아, 그렇지. 내 예의가 어디로 갔지? Guhua Clan의 Huang the Third, 모시겠습니다. 어떤 이들은 나를 Cloudpiercing Arrow로 안다.",
+     "section": "작중 행적 — Guhua Clan의 현재",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그렇습니다, 나의 주군이여. 저는 Guhua Clan의 제자이자 Feiyun Commerce Guild 관리인의 둘째 아들인 Xingqiu이며, 이를 숨기지 않습니다.",
+     "en": "Indeed, my liege. I am Xingqiu, disciple of the Guhua Clan and second son of the Feiyun Commerce Guild manager, and I make no secret of it.",
+     "speaker": "Xingqiu",
+     "source": {
+      "kind": "quest",
+      "quest": "Justice Is Its Own Reward",
+      "quest_ko": "초탈한 협객행",
+      "version": "1.0",
+      "speaker": "Xingqiu"
+     },
+     "t": "그렇습니다, 나의 주군이여. 저는 고화파의 제자이자 비운 상회 관리인의 둘째 아들인 행추이며, 이를 숨기지 않습니다.",
+     "speaker_ko": "행추"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "우리... 우리가 정말 Guhua Clan의 보물을 찾은 걸까? , 가서 한번 보자!",
+     "en": "Did we... Did we actually find the Guhua Clan's treasure after all? , let's go take a look!",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Scrolls and Sword Manuals of Guhua",
+      "quest_ko": "고화 검보",
+      "version": "4.4",
+      "speaker": "Paimon"
+     },
+     "t": "우리... 우리가 정말 고화파의 보물을 찾은 걸까? , 가서 한번 보자!",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아, 그렇지. 내 예의가 없었군. Guhua Clan의 Huang the Third, 모시겠습니다. 어떤 이들은 나를 Cloudpiercing Arrow라고 부르지.",
      "en": "Ah, yes. Where are my manners? Huang the Third of the Guhua Clan, at your service. Some people know me as the Cloudpiercing Arrow.",
      "speaker": "Huang the Third",
      "source": {
@@ -1702,42 +1374,8 @@
       "version": "4.4",
       "speaker": "Huang the Third"
      },
-     "t": "아, 그렇지. 내 예의가 어디로 갔지? 고화파의 황삼야, 모시겠습니다. 어떤 이들은 나를 Cloudpiercing Arrow로 안다.",
+     "t": "아, 그렇지. 내 예의가 없었군. 고화파의 황삼야, 모시겠습니다. 어떤 이들은 나를 천운전라고 부르지.",
      "speaker_ko": "황삼야"
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그렇습니다, 주군. 저는 Guhua Clan의 제자이자 Feiyun Commerce Guild 관리인의 둘째 아들인 Xingqiu이며, 그것을 숨기지 않습니다.",
-     "en": "Indeed, my liege. I am Xingqiu, disciple of the Guhua Clan and second son of the Feiyun Commerce Guild manager, and I make no secret of it.",
-     "speaker": "Xingqiu",
-     "source": {
-      "kind": "quest",
-      "quest": "Justice Is Its Own Reward",
-      "quest_ko": "초탈한 협객행",
-      "version": "1.0",
-      "speaker": "Xingqiu"
-     },
-     "t": "그렇습니다, 주군. 저는 고화파의 제자이자 비운 상회 관리인의 둘째 아들인 행추이며, 그것을 숨기지 않습니다.",
-     "speaker_ko": "행추"
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Guhua Geek에게서는 놀랄 일이 없네.",
-     "en": "No surprises from Guhua Geek.",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "One for the Foodies, Two for the Show",
-      "quest_ko": "젓가락 한 짝으로 맛과 명성 모두 얻으리",
-      "version": "2.1",
-      "speaker": "Paimon"
-     },
-     "t": "Guhua Geek에게서는 놀랄 일이 없네.",
-     "speaker_ko": "페이몬"
     }
    ]
   }

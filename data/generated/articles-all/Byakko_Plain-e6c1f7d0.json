@@ -1,0 +1,260 @@
+{
+ "node": "Byakko Plain",
+ "articles": [
+  {
+   "node": "Byakko Plain",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Byakko Plain",
+     "url": "https://genshin-impact.fandom.com/wiki/Byakko_Plain",
+     "revision": 322278
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 396,
+   "input_cut": false,
+   "input_hash": "aeb2682387b3",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences supported by A1, A2, A7; the interpretation is reasonable.",
+     "quote": "Byakko Plain is a location in Narukami Island, Inazuma.",
+     "sentences": [
+      {
+       "t_raw": "Byakko Plain은 Narukami Island, Inazuma에 있는 장소로, Konda Village 남쪽과 Inazuma City 북서쪽에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백여우 들판은 나루카미섬, 이나즈마에 있는 장소로, 콘다 마을 남쪽과 이나즈마성 북서쪽에 자리한다."
+      },
+      {
+       "t_raw": "남쪽에는 Inazuma City와 가까운 Teleport Waypoint가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "남쪽에는 이나즈마성과 가까운 워프 포인트가 있다."
+      },
+      {
+       "t_raw": "북쪽 강가의 Earth Kitsune은 Memento Lens를 사용하면 Potatoes 3개를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북쪽 강가의 지호는 「기억의 렌즈」를 사용하면 Potatoes 3개를 준다."
+      },
+      {
+       "t_raw": "Teleport Waypoint와 Earth Kitsune 상호작용이 함께 있는 곳이라, 탐색 중 들를 이유가 생기는 장소로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "워프 포인트와 지호 상호작용이 함께 있는 곳이라, 탐색 중 들를 이유가 생기는 장소로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Byakko Plain",
+       "revision": 322278,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Byakko Plain",
+       "revision": 322278,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Byakko Plain",
+       "revision": 322278,
+       "section": "Earth Kitsune",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Potatoes"
+     ]
+    },
+    {
+     "section": "위치와 접근",
+     "status": "accepted",
+     "note": "Location facts match A1; the interpretation is reasonable.",
+     "quote": "Byakko Plain is a location in Narukami Island, Inazuma.",
+     "sentences": [
+      {
+       "t_raw": "**Byakko Plain**은 Narukami Island, Inazuma에 속한 장소다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**백여우 들판**은 나루카미섬, 이나즈마에 속한 장소다."
+      },
+      {
+       "t_raw": "Konda Village의 남쪽, Inazuma City의 북서쪽에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "콘다 마을의 남쪽, 이나즈마성의 북서쪽에 자리한다."
+      },
+      {
+       "t_raw": "Konda Village 남쪽이면서 Inazuma City 북서쪽이라는 점에서, 두 정착지의 방향을 함께 기준으로 삼아 설명되는 위치인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "콘다 마을 남쪽이면서 이나즈마성 북서쪽이라는 점에서, 두 정착지의 방향을 함께 기준으로 삼아 설명되는 위치인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Byakko Plain",
+       "revision": 322278,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "위치와 접근",
+     "latin_left": []
+    },
+    {
+     "section": "위치와 접근",
+     "status": "accepted",
+     "note": "Matches A2; the interpretation is mild and framed as interpretation.",
+     "quote": "A Teleport Waypoint is located to the southern side of Byakko Plain near Inazuma City.",
+     "sentences": [
+      {
+       "t_raw": "Byakko Plain의 남쪽에는 **Teleport Waypoint**가 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백여우 들판의 남쪽에는 **워프 포인트**가 자리한다."
+      },
+      {
+       "t_raw": "그 Waypoint는 Inazuma City와 가까워, 평야 남측으로 들어오는 접근의 기준점이 되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 워프 포인트는 이나즈마성과 가까워, 평야 남측으로 들어오는 접근의 기준점이 되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Byakko Plain",
+       "revision": 322278,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "위치와 접근",
+     "latin_left": []
+    },
+    {
+     "section": "지형과 시설",
+     "status": "accepted",
+     "note": "The three features are listed under Notable Features (A3-A5); the interpretation is hedged and acceptable.",
+     "quote": "Electro Cubes",
+     "sentences": [
+      {
+       "t_raw": "Byakko Plain의 주요 특징으로는 **Electro Cubes, Thunder Barrier, Thunder Sakura Bough**가 꼽힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백여우 들판의 주요 특징으로는 **번개 큐브, 번개의 결계, 번개의 벚나무 가지**가 꼽힌다."
+      },
+      {
+       "t_raw": "세 이름은 모두 Byakko Plain의 **주요 특징**으로 함께 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "세 이름은 모두 백여우 들판의 **주요 특징**으로 함께 제시된다."
+      },
+      {
+       "t_raw": "이처럼 세 이름이 주요 특징으로 함께 제시된 만큼, 이곳의 장소적 인상은 이들을 중심으로 정리된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 세 이름이 주요 특징으로 함께 제시된 만큼, 이곳의 장소적 인상은 이들을 중심으로 정리된다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Byakko Plain",
+       "revision": 322278,
+       "section": "Notable Features",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Byakko Plain",
+       "revision": 322278,
+       "section": "Notable Features",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Byakko Plain",
+       "revision": 322278,
+       "section": "Notable Features",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "지형과 시설",
+     "latin_left": []
+    },
+    {
+     "section": "Earth Kitsune와 Memento Lens",
+     "status": "accepted",
+     "note": "Matches A7; the interpretation follows from it.",
+     "quote": "North of Byakko Plain by the riverside, one Earth Kitsune will give 3 Potatoes when the Memento Lens are used on it.",
+     "sentences": [
+      {
+       "t_raw": "Byakko Plain 북쪽 강가에는 **Earth Kitsune** 한 마리가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백여우 들판 북쪽 강가에는 **지호** 한 마리가 있다."
+      },
+      {
+       "t_raw": "이 Earth Kitsune에 **Memento Lens**를 사용하면 **3 Potatoes**를 얻을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 지호에 **「기억의 렌즈」**를 사용하면 **3 Potatoes**를 얻을 수 있다."
+      },
+      {
+       "t_raw": "Memento Lens를 사용할 때 3 Potatoes가 나온다는 점에서, 이 Earth Kitsune는 렌즈를 매개로 보상을 주는 요소로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "「기억의 렌즈」를 사용할 때 3 Potatoes가 나온다는 점에서, 이 지호는 렌즈를 매개로 보상을 주는 요소로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Byakko Plain",
+       "revision": 322278,
+       "section": "Earth Kitsune",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "지호와 「기억의 렌즈」",
+     "latin_left": [
+      "Potatoes",
+      "Potatoes"
+     ]
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

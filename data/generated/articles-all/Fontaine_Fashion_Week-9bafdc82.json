@@ -1,0 +1,368 @@
+{
+ "node": "Fontaine Fashion Week",
+ "articles": [
+  {
+   "node": "Fontaine Fashion Week",
+   "from_version": "4.3",
+   "cutoff": "2024-01-30T00:00:00Z",
+   "input": [
+    {
+     "page": "Fontaine Fashion Week",
+     "url": "https://genshin-impact.fandom.com/wiki/Fontaine_Fashion_Week",
+     "revision": 1465825
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 207,
+   "input_cut": false,
+   "input_hash": "2cd5bdc00605",
+   "writer": "or-ds,kimi,glm-flash",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All supported; the interpretation is hedged and adds no facts.",
+     "quote": "Fontaine Fashion Week is a large, recurring social event which Chiori is not particularly fond of.",
+     "sentences": [
+      {
+       "t_raw": "Fontaine Fashion Week는 Fontaine에서 열리는 행사다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인 패션 위크는 폰타인에서 열리는 행사다."
+      },
+      {
+       "t_raw": "**크고 반복적인 사교 행사**이며, Chiori가 그다지 좋아하지 않는 것으로 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**크고 반복적인 사교 행사**이며, 치오리가 그다지 좋아하지 않는 것으로 전해진다."
+      },
+      {
+       "t_raw": "**Roses and Muskets**의 사건 이후 어느 시점에 열릴 예정이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**장미와 화승총**의 사건 이후 어느 시점에 열릴 예정이다."
+      },
+      {
+       "t_raw": "규모와 반복성, 시점, 인물 평가가 함께 제시된 점은 이 행사의 성격을 보여주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "규모와 반복성, 시점, 인물 평가가 함께 제시된 점은 이 행사의 성격을 보여주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fontaine Fashion Week",
+       "revision": 1465825,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fontaine Fashion Week",
+       "revision": 1465825,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Where the Roses Bloom (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "The Two Musketeers' Triumph (Quest)"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Sentence 1 calls Chiori a 'tailor' (재단사), which the English never says.",
+     "quote": "a large, recurring social event which Chiori is not particularly fond of",
+     "sentences": [
+      {
+       "t_raw": "Fontaine Fashion Week는 Fontaine에서 열리는 대규모의 정기적인 사교 행사다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인 패션 위크는 폰타인에서 열리는 대규모의 정기적인 사교 행사다."
+      },
+      {
+       "t_raw": "Chiori는 이 행사를 그리 좋아하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "치오리는 이 행사를 그리 좋아하지 않는다."
+      },
+      {
+       "t_raw": "Chiori가 여러 선택지 중에서도 이 행사를 견줄 대상으로 꼽을 만큼, 그녀에게는 비교가 되는 존재인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "치오리가 여러 선택지 중에서도 이 행사를 견줄 대상으로 꼽을 만큼, 그녀에게는 비교가 되는 존재인 셈이다."
+      },
+      {
+       "t_raw": "어쨌든 Chiori는 그것보다는 낫다고 평했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어쨌든 치오리는 그것보다는 낫다고 평했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fontaine Fashion Week",
+       "revision": 1465825,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fontaine Fashion Week",
+       "revision": 1465825,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Where the Roses Bloom (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "The Two Musketeers' Triumph (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Roses Bloom (Quest)",
+       "quest_ko": "장미가 만개한 곳",
+       "version": "4.3",
+       "speaker": "Chiori"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A2.",
+     "quote": "One will occur sometime after the events of Roses and Muskets.",
+     "sentences": [
+      {
+       "t_raw": "Roses and Muskets 이벤트 이후 언젠가 다시 열릴 예정이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "장미와 화승총 이벤트 이후 언젠가 다시 열릴 예정이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fontaine Fashion Week",
+       "revision": 1465825,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Where the Roses Bloom (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "The Two Musketeers' Triumph (Quest)"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 1 says she 'did not hide her reluctance', which is an invented characterization. The English only gives the comparison.",
+     "quote": "Not particularly, but this is still better than Fontaine Fashion Week.",
+     "sentences": [
+      {
+       "t_raw": "Chiori는 Fontaine에서 열리는 대규모 정기 사교 행사인 **Fontaine Fashion Week**를 특별히 좋아하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치오리는 폰타인에서 열리는 대규모 정기 사교 행사인 **폰타인 패션 위크**를 특별히 좋아하지 않는다."
+      },
+      {
+       "t_raw": "그럼에도 'Where the Roses Bloom' 퀘스트에서 그녀는 현재 상황이 Fontaine Fashion Week보다 낫다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그럼에도 '장미가 만개한 곳' 퀘스트에서 그녀는 현재 상황이 폰타인 패션 위크보다 낫다고 말했다."
+      },
+      {
+       "t_raw": "이는 Chiori에게 Fontaine Fashion Week가 단순한 사교 모임 이상으로 부담스러운 존재로 여겨진다는 뜻으로 풀이된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 치오리에게 폰타인 패션 위크가 단순한 사교 모임 이상으로 부담스러운 존재로 여겨진다는 뜻으로 풀이된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fontaine Fashion Week",
+       "revision": 1465825,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fontaine Fashion Week",
+       "revision": 1465825,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Where the Roses Bloom (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "The Two Musketeers' Triumph (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Roses Bloom (Quest)",
+       "quest_ko": "장미가 만개한 곳",
+       "version": "4.3",
+       "speaker": "Chiori"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 1 has a double negative ('탐탁지 않아하지 않는다'), so it says she does like the event. That contradicts the English.",
+     "quote": "Not particularly, but this is still better than Fontaine Fashion Week.",
+     "sentences": [
+      {
+       "t_raw": "Roses and Muskets 사건 이후 언젠가 Fontaine Fashion Week가 다시 열릴 예정이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "장미와 화승총 사건 이후 언젠가 폰타인 패션 위크가 다시 열릴 예정이다."
+      },
+      {
+       "t_raw": "다만 Chiori는 이 행사를 그리 탐탁지 않게 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "다만 치오리는 이 행사를 그리 탐탁지 않게 여긴다."
+      },
+      {
+       "t_raw": "그녀는 '특별히 그렇진 않지만, 그래도 Fontaine Fashion Week보다는 낫지'라며 현재 상황을 행사와 비교하기도 했는데, 자신이 좋아하지 않는 행사조차 비교의 잣대로 삼는 걸 보면 Chiori 안에서 Fontaine Fashion Week이 일종의 기준점이 된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그녀는 '특별히 그렇진 않지만, 그래도 폰타인 패션 위크보다는 낫지'라며 현재 상황을 행사와 비교하기도 했는데, 자신이 좋아하지 않는 행사조차 비교의 잣대로 삼는 걸 보면 치오리 안에서 폰타인 패션 위크가 일종의 기준점이 된 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fontaine Fashion Week",
+       "revision": 1465825,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Where the Roses Bloom (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "The Two Musketeers' Triumph (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Roses Bloom (Quest)",
+       "quest_ko": "장미가 만개한 곳",
+       "version": "4.3",
+       "speaker": "Chiori"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation. 'this' is left implicit, which is acceptable.",
+     "t_raw": "꼭 그렇진 않지만, 그래도 Fontaine Fashion Week보다는 낫다.",
+     "en": "Not particularly, but this is still better than Fontaine Fashion Week.",
+     "speaker": "Chiori",
+     "source": {
+      "kind": "quest",
+      "quest": "Where the Roses Bloom (Quest)",
+      "quest_ko": "장미가 만개한 곳",
+      "version": "4.3",
+      "speaker": "Chiori"
+     },
+     "t": "꼭 그렇진 않지만, 그래도 폰타인 패션 위크보다는 낫다.",
+     "speaker_ko": "치오리"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation. '별로지만' is a natural rendering of 'Not particularly, but', and the comparison with Fontaine Fashion Week is preserved.",
+     "t_raw": "별로지만, 그래도 Fontaine Fashion Week보다는 낫다.",
+     "en": "Not particularly, but this is still better than Fontaine Fashion Week.",
+     "speaker": "Chiori",
+     "source": {
+      "kind": "quest",
+      "quest": "Where the Roses Bloom (Quest)",
+      "quest_ko": "장미가 만개한 곳",
+      "version": "4.3",
+      "speaker": "Chiori"
+     },
+     "t": "별로지만, 그래도 폰타인 패션 위크보다는 낫다.",
+     "speaker_ko": "치오리"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "특별히 그렇진 않지만, 그래도 Fontaine Fashion Week보다는 낫지.",
+     "en": "Not particularly, but this is still better than Fontaine Fashion Week.",
+     "speaker": "Chiori",
+     "source": {
+      "kind": "quest",
+      "quest": "Where the Roses Bloom (Quest)",
+      "quest_ko": "장미가 만개한 곳",
+      "version": "4.3",
+      "speaker": "Chiori"
+     },
+     "t": "특별히 그렇진 않지만, 그래도 폰타인 패션 위크보다는 낫지.",
+     "speaker_ko": "치오리"
+    }
+   ]
+  }
+ ]
+}

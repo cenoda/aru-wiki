@@ -20,35 +20,51 @@
    "input_chars": 1376,
    "input_cut": false,
    "input_hash": "d989baa0bc6d",
-   "writer": "ds,or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, M5, Q10 and A3. The interpretation in (3) is hedged and reasonable.",
      "quote": "Abyss Heralds are an elite enemy group part of the Abyss Order and who are capable of manipulating intense abyssal energy.",
      "sentences": [
       {
-       "t_raw": "Abyss Herald는 Abyss Order에 속한 정예 적군으로, 강력한 심연 에너지를 다루는 존재다.",
+       "t_raw": "Abyss Herald는 **Abyss Order**에 속한 정예 적 집단으로, 강렬한 abyssal energy를 다루는 존재다.",
        "interp": false,
        "dropped": false,
-       "t": "심연 사도는 심연 교단에 속한 정예 적군으로, 강력한 심연 에너지를 다루는 존재다."
+       "t": "심연 사도는 **심연 교단**에 속한 정예 적 집단으로, 강렬한 심연 에너지를 다루는 존재다.",
+       "polish": {
+        "from": "심연 사도는 **심연 교단**에 속한 정예 적 집단으로, 강렬한 abyssal energy를 다루는 존재다.",
+        "text": "심연 사도는 **심연 교단**에 속한 정예 적 집단으로, 강렬한 심연 에너지를 다루는 존재다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "전투에서는 칼로 공격적인 원소 공격을 퍼붓고, HP가 낮아지면 단단한 원소 보호막을 만들어내며, 이 보호막이 부서지면 곧바로 쓰러진다.",
+       "t_raw": "전투에서는 칼을 사용한 공격적인 원소 공격을 하고, HP가 낮아지면 단단한 **elemental Shield**를 생성하며, 이 방패가 파괴되면 곧바로 쓰러진다.",
        "interp": false,
        "dropped": false,
-       "t": "전투에서는 칼로 공격적인 원소 공격을 퍼붓고, HP가 낮아지면 단단한 원소 보호막을 만들어내며, 이 보호막이 부서지면 곧바로 쓰러진다."
+       "t": "전투에서는 칼을 사용한 공격적인 원소 공격을 하고, 체력이 낮아지면 단단한 **원소 보호막**을 생성하며, 이 방패가 파괴되면 곧바로 쓰러진다.",
+       "polish": {
+        "from": "전투에서는 칼을 사용한 공격적인 원소 공격을 하고, HP가 낮아지면 단단한 **elemental 보호막**을 생성하며, 이 방패가 파괴되면 곧바로 쓰러진다.",
+        "text": "전투에서는 칼을 사용한 공격적인 원소 공격을 하고, 체력이 낮아지면 단단한 **원소 보호막**을 생성하며, 이 방패가 파괴되면 곧바로 쓰러진다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Abyss Herald가 Abyss Order의 정예라는 사실과 Abyss의 괴물들이 한때 Khaenri'ah의 사람들이 저주로 변한 존재라고 전해진다는 사실을 함께 놓으면, Abyss Order의 현재 활동과 Khaenri'ah의 과거가 한데 얽힌 것으로 보인다.",
+       "t_raw": "Defiled Statue를 지키는 Abyss Herald가 있었고, 일행 앞을 막아선 Abyss Herald도 있었으며, Klingsor는 Great Songs of Khvarena를 노렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「뒤집힌 불결한 신상」을 지키는 심연 사도가 있었고, 일행 앞을 막아선 심연 사도도 있었으며, 클링조르는 크바레나의 위대한 노래를 노렸다."
+      },
+      {
+       "t_raw": "이처럼 Abyss Herald는 **Abyss Order의 의도가 현장에서 드러나는 접점**으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "심연 사도가 심연 교단의 정예라는 사실과 심연의 괴물들이 한때 켄리아의 사람들이 저주로 변한 존재라고 전해진다는 사실을 함께 놓으면, 심연 교단의 현재 활동과 켄리아의 과거가 한데 얽힌 것으로 보인다."
+       "t": "이처럼 심연 사도는 **심연 교단의 의도가 현장에서 드러나는 접점**으로 보인다."
       }
      ],
      "sources": [
@@ -68,6 +84,270 @@
        "paragraph": "A2",
        "wiki_refs": []
       },
+      {
+       "kind": "wiki",
+       "page": "Abyss Herald",
+       "revision": 1238424,
+       "section": "Notable Abyss Heralds > Klingsor",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Defiled Statue",
+       "revision": 164626,
+       "section": "Profile",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Herald Without Adherents",
+       "quest_ko": "신자 없는 사도",
+       "version": "1.4",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Both sentences match A1.",
+     "quote": "Abyss Heralds are an elite enemy group part of the Abyss Order and who are capable of manipulating intense abyssal energy.",
+     "sentences": [
+      {
+       "t_raw": "Abyss Herald는 Abyss Order의 **정예 적 집단**이며, 강력한 심연의 에너지를 다룰 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연 사도는 심연 교단의 **정예 적 집단**이며, 강력한 심연의 에너지를 다룰 수 있다."
+      },
+      {
+       "t_raw": "Abyss Lector의 근접 대응이지만, 일부 원거리 공격도 사용할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연 봉독자의 근접 대응이지만, 일부 원거리 공격도 사용할 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Abyss Herald",
+       "revision": 1238424,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All three sentences match A2.",
+     "quote": "When their HP is low, they will generate a durable elemental Shield which are most efficiently destroyed using the correct Elemental Reactions.",
+     "sentences": [
+      {
+       "t_raw": "전투에서는 칼날로 공격적인 원소 공격을 가하며, 그중 일부는 플레이어에게 디버프를 적용할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전투에서는 칼날로 공격적인 원소 공격을 가하며, 그중 일부는 플레이어에게 디버프를 적용할 수 있다."
+      },
+      {
+       "t_raw": "체력이 낮아지면 견고한 **elemental Shield**를 생성하며, **올바른 원소 반응**으로 파괴하는 것이 가장 효율적이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체력이 낮아지면 견고한 **원소 보호막**을 생성하며, **올바른 원소 반응**으로 파괴하는 것이 가장 효율적이다.",
+       "polish": {
+        "from": "체력이 낮아지면 견고한 **elemental 보호막**을 생성하며, **올바른 원소 반응**으로 파괴하는 것이 가장 효율적이다.",
+        "text": "체력이 낮아지면 견고한 **원소 보호막**을 생성하며, **올바른 원소 반응**으로 파괴하는 것이 가장 효율적이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Shield가 파괴되면 곧바로 쓰러진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "보호막이 파괴되면 곧바로 쓰러진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Abyss Herald",
+       "revision": 1238424,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — We Will Be Reunited와 Defiled Statue",
+     "status": "accepted",
+     "note": "Supported by Q6, M1 and Q8.",
+     "quote": "It seems that even an Abyss Herald would not wish to make trouble with the Wolf King of the North.",
+     "sentences": [
+      {
+       "t_raw": "Wolvendom에서 Traveler 일행은 Razor와 Abyss Herald를 발견하고, Andrius가 Abyss Herald에게 잠시 억제되는 장면을 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "울프 영지에서 여행자 일행은 레이저와 심연 사도를 발견하고, 안드리우스가 심연 사도에게 잠시 억제되는 장면을 본다."
+      },
+      {
+       "t_raw": "Abyss Herald는 Dvalin처럼 Andrius를 타락시키려 했으나 패배해 Andrius의 영혼은 풀려나며, Dainsleif는 Abyss Herald라도 Wolf King of the North와 문제를 만들고 싶어 하지는 않을 것 같다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연 사도는 드발린처럼 안드리우스를 타락시키려 했으나 패배해 안드리우스의 영혼은 풀려나며, 데인슬레이프는 심연 사도라도 Wolf King of the North와 문제를 만들고 싶어 하지는 않을 것 같다고 말한다.",
+       "polish": {
+        "from": "심연 사도는 드발린처럼 안드리우스를 타락시키려 했으나 패배해 안드리우스의 영혼은 풀려나며, 데인슬레이프는 심연 사도라도 Wolf King of the North와 문제를 만들고 싶어 하지는 않을 것 같다고 말한다.",
+        "text": "심연 사도는 드발린처럼 안드리우스를 타락시키려 했으나 패배해 안드리우스의 영혼은 풀려나며, 데인슬레이프는 심연 사도라도 Wolf King of the North와 문제를 만들고 싶어 하지는 않을 것 같다고 말한다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Dishonorable Trial",
+       "quest_ko": "명예롭지 못한 시련",
+       "version": "1.4",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "wiki",
+       "page": "Boreas",
+       "revision": 237104,
+       "section": "Story > Archon Quests",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Bough Keeper: Dainsleif",
+       "quest_ko": "「가지의 수호자」・데인슬레이프",
+       "version": "1.3",
+       "speaker": "Dainsleif"
+      }
+     ],
+     "heading": "작중 행적 — 다시 만날 거야와 「뒤집힌 불결한 신상」",
+     "latin_left": [
+      "Wolf King of the North"
+     ]
+    },
+    {
+     "section": "작중 행적 — We Will Be Reunited와 Defiled Statue",
+     "status": "accepted",
+     "note": "Facts are supported by M3, M4, M5 and Q5. The interpretation in (2) follows from M9.",
+     "quote": "Hmm, this talisman seems connected to the Abyss Herald. But why would an Abyss Mage be carrying it...?",
+     "sentences": [
+      {
+       "t_raw": "Mt. Aozang 주변 Call of the Abyss 유적의 Defiled Statue는 뒤집힌 채 사슬에 묶여 있고, 손에 든 원소 물체는 심연의 에너지로 오염되어 있으며, Abyss Order는 Abyss Herald에게 이를 지키게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Mt. 오장 주변 「심연」의 유혹 유적의 「뒤집힌 불결한 신상」은 뒤집힌 채 사슬에 묶여 있고, 손에 든 원소 물체는 심연의 에너지로 오염되어 있으며, 심연 교단은 심연 사도에게 이를 지키게 했다."
+      },
+      {
+       "t_raw": "Grand Thief는 그 앞에 무릎 꿇었다가 Abyss Herald에게 살해되고, Dainsleif는 Abyss Mage가 지닌 부적이 Abyss Herald와 연결된 듯하다며 의문을 품는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대보물사냥가는 그 앞에 무릎 꿇었다가 심연 사도에게 살해되고, 데인슬레이프는 심연 메이지가 지닌 부적이 심연 사도와 연결된 듯하다며 의문을 품는다."
+      },
+      {
+       "t_raw": "Abyss Order는 첫 번째 Ruin Guard의 눈과 이 Defiled Statue를 Osial에게 사용하려 했고, Dainsleif와 Traveler가 조각상을 부수러 돌아갔다가 Abyss Herald를 마주한 것은 이 Defiled Statue가 그들의 계획에서 중요한 위치를 차지한다고 볼 수 있게 한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "심연 교단은 첫 번째 유적 가디언의 눈과 이 「뒤집힌 불결한 신상」을 오셀에게 사용하려 했고, 데인슬레이프와 여행자가 조각상을 부수러 돌아갔다가 심연 사도를 마주한 것은 이 「뒤집힌 불결한 신상」이 그들의 계획에서 중요한 위치를 차지한다고 볼 수 있게 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Defiled Statue",
+       "revision": 164626,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Grand Thief",
+       "revision": 161982,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Defiled Statue",
+       "revision": 164626,
+       "section": "Profile",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abyss Order",
+       "revision": 1153860,
+       "section": "Story",
+       "paragraph": "M9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Herald Without Adherents"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "A Soul Set Apart",
+       "quest_ko": "엇갈린 영혼",
+       "version": "1.4",
+       "speaker": "Dainsleif"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Herald Without Adherents",
+       "quest_ko": "신자 없는 사도",
+       "version": "1.4",
+       "speaker": "Dainsleif"
+      }
+     ],
+     "heading": "작중 행적 — 다시 만날 거야와 「뒤집힌 불결한 신상」",
+     "latin_left": [
+      "Mt"
+     ]
+    },
+    {
+     "section": "작중 행적 — We Will Be Reunited와 Defiled Statue",
+     "status": "accepted",
+     "note": "Supported by M8 and M9.",
+     "quote": "The sibling then tells them to continue traveling Teyvat in the hopes of seeing the true nature of the world presided by the Seven and Celestia before leaving with the Herald through a portal.",
+     "sentences": [
+      {
+       "t_raw": "Defiled Statue 앞에서 Traveler와 Abyss Herald가 충돌한 뒤, Traveler's Sibling은 Traveler에게 자신들과 Abyss를 막지 말라고 청하고 Dainsleif의 출신과 Abyss의 괴물들이 저주로 변한 Khaenri'ah 사람들이라는 진실을 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「뒤집힌 불결한 신상」 앞에서 여행자와 심연 사도가 충돌한 뒤, 여행자의 쌍둥이 남매는 여행자에게 자신들과 심연을 막지 말라고 청하고 데인슬레이프의 출신과 심연의 괴물들이 저주로 변한 켄리아 사람들이라는 진실을 밝힌다."
+      },
+      {
+       "t_raw": "Traveler's Sibling은 신들과의 전쟁이 끝난 뒤 원래 계획을 이어가겠다고 답하고, Seven과 Celestia가 다스리는 세계의 참모습을 보기 위해 Teyvat을 계속 여행하라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자의 쌍둥이 남매는 신들과의 전쟁이 끝난 뒤 원래 계획을 이어가겠다고 답하고, 일곱 신과 셀레스티아가 다스리는 세계의 참모습을 보기 위해 티바트를 계속 여행하라고 말한다."
+      },
+      {
+       "t_raw": "Abyss Herald는 Traveler's Sibling에게 구해지고, Traveler's Sibling은 Abyss Herald와 함께 포털로 떠난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연 사도는 여행자의 쌍둥이 남매에게 구해지고, 여행자의 쌍둥이 남매는 심연 사도와 함께 포털로 떠난다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Traveler's Sibling",
@@ -75,74 +355,60 @@
        "section": "Story",
        "paragraph": "M8",
        "wiki_refs": []
-      }
-     ],
-     "heading": null,
-     "latin_left": [
-      "HP"
-     ]
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Abyss Heralds are an elite enemy group part of the Abyss Order and who are capable of manipulating intense abyssal energy.",
-     "sentences": [
-      {
-       "t_raw": "Abyss Herald는 Abyss Order에 속한 정예 적 그룹으로, 강렬한 심연 에너지를 조작할 수 있는 존재다.",
-       "interp": false,
-       "dropped": false,
-       "t": "심연 사도는 심연 교단에 속한 정예 적 그룹으로, 강렬한 심연 에너지를 조작할 수 있는 존재다."
       },
-      {
-       "t_raw": "Abyss Lector의 근접 대응물이지만, 원거리 공격도 일부 갖추고 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "심연 봉독자의 근접 대응물이지만, 원거리 공격도 일부 갖추고 있다."
-      },
-      {
-       "t_raw": "근접을 맡는 Herald와 그에 대응하는 Lector가 나뉘어 있다는 점에서, Abyss Order가 심연 에너지를 다루는 전력을 여러 형태로 운용하고 있다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "근접을 맡는 사도와 그에 대응하는 봉독자가 나뉘어 있다는 점에서, 심연 교단이 심연 에너지를 다루는 전력을 여러 형태로 운용하고 있다고 볼 수 있다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
-       "page": "Abyss Herald",
-       "revision": 1238424,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
+       "page": "Abyss Order",
+       "revision": 1153860,
+       "section": "Story",
+       "paragraph": "M9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Herald Without Adherents"
+        }
+       ]
       }
      ],
-     "heading": "개요",
+     "heading": "작중 행적 — 다시 만날 거야와 「뒤집힌 불결한 신상」",
      "latin_left": []
     },
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When their HP is low, they will generate a durable elemental Shield which are most efficiently destroyed using the correct Elemental Reactions.",
+     "section": "작중 행적 — Chasm",
+     "status": "accepted",
+     "note": "Sentence 4 merges Dainsleif's pursuit of 'another' Abyss Herald (Q2) with the Chasm Herald. The English does not say they are the same one. It also says that Herald's fate is unknown, so calling the pursuit concluded is not supported.",
+     "quote": "It flees after fighting the Traveler the first three times, but in the Chasm, the Traveler finally defeats it.",
      "sentences": [
       {
-       "t_raw": "전투에서 Abyss Herald는 칼을 휘둘러 공격적인 원소 공격을 퍼붓고, 그중 일부는 대상에게 디버프를 건다.",
+       "t_raw": "Chasm에서 Traveler는 **Hydro Abyss Herald**와 마주친다.",
        "interp": false,
        "dropped": false,
-       "t": "전투에서 심연 사도는 칼을 휘둘러 공격적인 원소 공격을 퍼붓고, 그중 일부는 대상에게 디버프를 건다."
+       "t": "층암거연에서 여행자는 **물 심연 사도**와 마주친다."
       },
       {
-       "t_raw": "HP가 낮아지면 견고한 원소 보호막을 생성하는데, 이 보호막은 올바른 원소 반응으로 부수는 것이 가장 효율적이고, 파괴되는 즉시 쓰러진다.",
+       "t_raw": "이 Abyss Herald는 Traveler와의 첫 세 차례 싸움에서는 달아나지만, Chasm에서는 Traveler에게 마침내 패배한다.",
        "interp": false,
        "dropped": false,
-       "t": "HP가 낮아지면 견고한 원소 보호막을 생성하는데, 이 보호막은 올바른 원소 반응으로 부수는 것이 가장 효율적이고, 파괴되는 즉시 쓰러진다."
+       "t": "이 심연 사도는 여행자와의 첫 세 차례 싸움에서는 달아나지만, 층암거연에서는 여행자에게 마침내 패배한다."
       },
       {
-       "t_raw": "보호막을 깨는 것이 곧 처치로 이어진다는 점에서, 이 적과의 싸움은 결국 어떤 원소 반응을 맞추느냐의 문제로 좁혀진다고 볼 수 있다.",
+       "t_raw": "Dainsleif는 Abyss Herald의 흔적을 발견해 추적하기 시작했고, Paimon는 그를 오래 쫓아다닌 끝에 마침내 잡았다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데인슬레이프는 심연 사도의 흔적을 발견해 추적하기 시작했고, 페이몬은 그를 오래 쫓아다닌 끝에 마침내 잡았다고 말한다."
+      },
+      {
+       "t_raw": "그러나 그 Abyss Herald의 행방은 알려지지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 그 심연 사도의 행방은 알려지지 않았다."
+      },
+      {
+       "t_raw": "Dainsleif가 쫓던 것은 '다른' Abyss Herald에 불과하고, Chasm에서 패배한 Abyss Herald의 운명은 알려지지 않았으므로, 둘을 같은 존재로 엮어 이 Abyss Herald의 추적이 일단락되었다고 보기는 어렵다.",
        "interp": true,
        "dropped": false,
-       "t": "보호막을 깨는 것이 곧 처치로 이어진다는 점에서, 이 적과의 싸움은 결국 어떤 원소 반응을 맞추느냐의 문제로 좁혀진다고 볼 수 있다."
+       "repaired": true,
+       "t": "데인슬레이프가 쫓던 것은 '다른' 심연 사도에 불과하고, 층암거연에서 패배한 심연 사도의 운명은 알려지지 않았으므로, 둘을 같은 존재로 엮어 이 심연 사도의 추적이 일단락되었다고 보기는 어렵다."
       }
      ],
      "sources": [
@@ -150,77 +416,57 @@
        "kind": "wiki",
        "page": "Abyss Herald",
        "revision": 1238424,
-       "section": null,
-       "paragraph": "A2",
+       "section": "Notable Abyss Heralds > \"Presager of the Abyss\"",
+       "paragraph": "A4",
        "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "HP"
-     ]
-    },
-    {
-     "section": "정체와 전투",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "They are melee counterparts to Abyss Lectors, though they also have some ranged attacks at their disposal.",
-     "sentences": [
-      {
-       "t_raw": "Abyss Herald는 Abyss Order의 정예 적 집단으로 **강렬한 심연 에너지**를 다룬다.",
-       "interp": false,
-       "dropped": false,
-       "t": "심연 사도는 심연 교단의 정예 적 집단으로 **강렬한 심연 에너지**를 다룬다."
       },
       {
-       "t_raw": "이들은 Abyss Lector와 대응하는 근접형이면서 일부 원거리 공격도 갖추었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이들은 심연 봉독자와 대응하는 근접형이면서 일부 원거리 공격도 갖추었다."
+       "kind": "quest",
+       "quest": "In the Depths, an Unexpected Reunion",
+       "quest_ko": "심연 속의 우연한 재회",
+       "version": "2.6",
+       "speaker": "Dainsleif"
       },
       {
-       "t_raw": "심연 에너지와 근접전, 원거리 공격을 함께 운용하는 점에서 정예로서 전투 거리를 넓게 가져가는 존재로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "심연 에너지와 근접전, 원거리 공격을 함께 운용하는 점에서 정예로서 전투 거리를 넓게 가져가는 존재로 보인다."
+       "kind": "quest",
+       "quest": "Memories of Inteyvat",
+       "quest_ko": "인티바트의 기억",
+       "version": "2.6",
+       "speaker": "Paimon"
       }
      ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Abyss Herald",
-       "revision": 1238424,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 전투",
+     "heading": "작중 행적 — 층암거연",
      "latin_left": []
     },
     {
-     "section": "정체와 전투",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When their HP is low, they will generate a durable elemental Shield which are most efficiently destroyed using the correct Elemental Reactions.",
+     "section": "작중 행적 — Sumeru와 Great Songs",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "colluded with Nasejuna to seize the Great Songs of Khvarena",
      "sentences": [
       {
-       "t_raw": "전투에서 Abyss Herald는 검으로 공격적인 원소 공격을 펼치고, 일부 공격은 플레이어에게 디버프를 부여한다.",
+       "t_raw": "**Klingsor**는 Cataclysm 무렵 Girdle of the Sands에서 Khaenri'ah 유적을 조사하던 Sumeran 학자 출신이다.",
        "interp": false,
        "dropped": false,
-       "t": "전투에서 심연 사도는 검으로 공격적인 원소 공격을 펼치고, 일부 공격은 플레이어에게 디버프를 부여한다."
+       "t": "**클링조르**는 대재앙 무렵 모래가 에워싼 황야에서 켄리아 유적을 조사하던 Sumeran 학자 출신이다."
       },
       {
-       "t_raw": "HP가 낮아지면 내구성이 높은 **원소 보호막**을 생성하며, 이 보호막은 올바른 원소 반응으로 파괴할 때 가장 효율적이다.",
+       "t_raw": "그는 Abyss의 힘에 이끌려 Nasejuna와 결탁했고, **Great Songs of Khvarena**를 빼앗아 Abyss의 힘으로 Teyvat을 덮으려 했다.",
        "interp": false,
        "dropped": false,
-       "t": "HP가 낮아지면 내구성이 높은 **원소 보호막**을 생성하며, 이 보호막은 올바른 원소 반응으로 파괴할 때 가장 효율적이다."
+       "t": "그는 심연의 힘에 이끌려 나세주나와 결탁했고, **크바레나의 위대한 노래**를 빼앗아 심연의 힘으로 티바트를 덮으려 했다."
       },
       {
-       "t_raw": "보호막이 파괴되면 즉시 쓰러지므로, 보호막의 파괴 여부가 전투의 분수령이 되는 셈이다.",
-       "interp": true,
+       "t_raw": "그러나 Traveler가 이를 저지했다.",
+       "interp": false,
        "dropped": false,
-       "t": "보호막이 파괴되면 즉시 쓰러지므로, 보호막의 파괴 여부가 전투의 분수령이 되는 셈이다."
+       "t": "그러나 여행자가 이를 저지했다."
+      },
+      {
+       "t_raw": "Paimon은 Abyss Herald에게 낯선 곳에서 무엇을 꾸미려는지 물었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 심연 사도에게 낯선 곳에서 무엇을 꾸미려는지 물었다."
       }
      ],
      "sources": [
@@ -228,39 +474,164 @@
        "kind": "wiki",
        "page": "Abyss Herald",
        "revision": 1238424,
-       "section": null,
-       "paragraph": "A2",
+       "section": "Notable Abyss Heralds > Klingsor",
+       "paragraph": "A3",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Silent Seeker of Knowledge",
+       "quest_ko": "침묵하는 지식의 탐구자",
+       "version": "3.0",
+       "speaker": "Paimon"
       }
      ],
-     "heading": "정체와 전투",
+     "heading": "작중 행적 — 수메르와 크바레나의 노래",
      "latin_left": [
-      "HP"
+      "Sumeran"
      ]
     },
     {
-     "section": "정체와 전투",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Sumeru와 Great Songs",
+     "status": "accepted",
+     "note": "All sentences are supported. The 'reattempting' reading in sentence 4 follows from M7.",
+     "quote": "Calling an Abyss Herald known as Klingsor, the two tried to take the songs by force, but were defeated by the Traveler and forced to flee.",
+     "sentences": [
+      {
+       "t_raw": "Nasejuna는 마지막 Great Song을 얻자 Pari 종족에 대한 증오와 진의를 드러냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나세주나는 마지막 크바레나의 노래를 얻자 페리 종족에 대한 증오와 진의를 드러냈다."
+      },
+      {
+       "t_raw": "그는 **Abyss Herald** Klingsor를 불러 힘으로 Great Songs을 빼앗으려 했으나 Traveler에게 패해 도망쳤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **심연 사도** 클링조르를 불러 힘으로 크바레나의 노래를 빼앗으려 했으나 여행자에게 패해 도망쳤다."
+      },
+      {
+       "t_raw": "Traveler는 Pyrrho와 Sosi에게 배신을 알렸고 두 사람은 충격을 받았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자는 피론과 소시에게 배신을 알렸고 두 사람은 충격을 받았다."
+      },
+      {
+       "t_raw": "Pari Zurvan은 수백 년 전부터 Klingsor를 알고 있었고, Nasejuna의 배신을 예상하며 Abyss Herald가 Great Songs을 다시 얻으려 한다고 의심했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페리 주르반은 수백 년 전부터 클링조르를 알고 있었고, 나세주나의 배신을 예상하며 심연 사도가 크바레나의 노래를 다시 얻으려 한다고 의심했다."
+      },
+      {
+       "t_raw": "이는 Klingsor의 Great Songs 추구가 재시도였음을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 클링조르의 크바레나의 노래 추구가 재시도였음을 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Nasejuna",
+       "revision": 1186337,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "As the Khvarena's Light Shows"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Nasejuna",
+       "revision": 1186337,
+       "section": "Profile > Personality",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 수메르와 크바레나의 노래",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Caribert",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "It guards the final chamber of the quest's dungeon, where the Sinner's crystal resides.",
+     "sentences": [
+      {
+       "t_raw": "Caribert 퀘스트에서 **Cryo Abyss Herald 'Fortune Lector'**가 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카리베르트 퀘스트에서 **얼음 심연 사도 'Fortune Lector'**가 등장한다."
+      },
+      {
+       "t_raw": "이름이 밝혀지지 않은 그는 퀘스트 던전의 마지막 방에서 Sinner's crystal을 지키며, Sinner를 만날 자격이 있는지 시험하려 Traveler와 싸운다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이름이 밝혀지지 않은 그는 퀘스트 던전의 마지막 방에서 죄인의 수정을 지키며, 죄인을 만날 자격이 있는지 시험하려 여행자와 싸운다.",
+       "polish": {
+        "from": "이름이 밝혀지지 않은 그는 퀘스트 던전의 마지막 방에서 죄인의 crystal을 지키며, 죄인을 만날 자격이 있는지 시험하려 여행자와 싸운다.",
+        "text": "이름이 밝혀지지 않은 그는 퀘스트 던전의 마지막 방에서 죄인의 수정을 지키며, 죄인을 만날 자격이 있는지 시험하려 여행자와 싸운다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Abyss Herald",
+       "revision": 1238424,
+       "section": "Notable Abyss Heralds > \"Fortune Lector\"",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 카리베르트",
+     "latin_left": [
+      "Fortune Lector"
+     ]
+    },
+    {
+     "section": "작중 행적 — Caribert",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation in sentence 3 is reasonable.",
      "quote": "After encountering Abyss Herald: Frost Fall, Chlothar was not afraid, but in awe of the 'perilous yet beautiful' power, referring to it as a 'perfect being'",
      "sentences": [
       {
-       "t_raw": "Chlothar는 Abyss Herald: Frost Fall 앞에서 두려워하지 않고 '위험하면서도 아름다운' 힘에 **경외**를 보였으며, 그것을 '완전한 존재'라 불렀다.",
+       "t_raw": "**Abyss Herald: Frost Fall**을 만난 Chlothar는 두려워하기보다 'perilous yet beautiful'한 힘에 경외를 보이고, 그 힘을 'perfect being'이라고 부른다.",
        "interp": false,
        "dropped": false,
-       "t": "클로타르는 심연 사도: 서리 내림 앞에서 두려워하지 않고 '위험하면서도 아름다운' 힘에 **경외**를 보였으며, 그것을 '완전한 존재'라 불렀다."
+       "t": "**심연 사도: 서리 내림**을 만난 클로타르는 두려워하기보다 '위험하지만 아름다운' 힘에 경외를 보이고, 그 힘을 '완벽한 존재'라고 부른다.",
+       "polish": {
+        "from": "**심연 사도: 서리 내림**을 만난 클로타르는 두려워하기보다 'perilous yet beautiful'한 힘에 경외를 보이고, 그 힘을 'perfect being'이라고 부른다.",
+        "text": "**심연 사도: 서리 내림**을 만난 클로타르는 두려워하기보다 '위험하지만 아름다운' 힘에 경외를 보이고, 그 힘을 '완벽한 존재'라고 부른다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "큰 사슬에 묶인 결정을 보자 곧 평온해져 그 앞에 무릎을 꿇었고, 뒤에 그런 행동을 의식하지 못했음을 암시했다.",
+       "t_raw": "크고 사슬로 묶인 수정 앞에서는 곧 평온해져 무릎 꿇었고, 나중에는 자신이 그렇게 한 것을 의식하지 못했다고 암시한다.",
        "interp": false,
        "dropped": false,
-       "t": "큰 사슬에 묶인 결정을 보자 곧 평온해져 그 앞에 무릎을 꿇었고, 뒤에 그런 행동을 의식하지 못했음을 암시했다."
+       "t": "크고 사슬로 묶인 수정 앞에서는 곧 평온해져 무릎 꿇었고, 나중에는 자신이 그렇게 한 것을 의식하지 못했다고 암시한다."
       },
       {
-       "t_raw": "Erosion으로 감정 기복이 심한 그가 Frost Fall 앞에서 공포 대신 경외와 평온을 보인 것은 그 힘이 종교적 열광에 가까운 반응을 일으킨 것으로 보인다.",
+       "t_raw": "Caribert가 처음 말하자 그는 기쁨에 사로잡혀 모든 신에 대한 적대감을 버리고, Traveler's sibling과 자신이 Abyss에서 목격한 무엇인가에 헌신하겠다고 선언한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카리베르트가 처음 말하자 그는 기쁨에 사로잡혀 모든 신에 대한 적대감을 버리고, 여행자의 쌍둥이와 자신이 심연에서 목격한 무엇인가에 헌신하겠다고 선언한다.",
+       "polish": {
+        "from": "카리베르트가 처음 말하자 그는 기쁨에 사로잡혀 모든 신에 대한 적대감을 버리고, 여행자의 sibling과 자신이 심연에서 목격한 무엇인가에 헌신하겠다고 선언한다.",
+        "text": "카리베르트가 처음 말하자 그는 기쁨에 사로잡혀 모든 신에 대한 적대감을 버리고, 여행자의 쌍둥이와 자신이 심연에서 목격한 무엇인가에 헌신하겠다고 선언한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이 경외와 평온, 헌신 선언은 Chlothar의 강한 감정이 Abyss 쪽으로 기우는 흐름으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "마모로 감정 기복이 심한 그가 서리 내림 앞에서 공포 대신 경외와 평온을 보인 것은 그 힘이 종교적 열광에 가까운 반응을 일으킨 것으로 보인다."
+       "t": "이 경외와 평온, 헌신 선언은 클로타르의 강한 감정이 심연 쪽으로 기우는 흐름으로 보인다."
       }
      ],
      "sources": [
@@ -273,102 +644,145 @@
        "wiki_refs": []
       }
      ],
-     "heading": "정체와 전투",
+     "heading": "작중 행적 — 카리베르트",
      "latin_left": []
     },
     {
-     "section": "드러난 역사 — Wolvendom",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After a short fight, the Abyss Herald is defeated and the wolf spirit is freed.",
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 4 says the operation, the Sibling's choice and Dainsleif's pursuit all converge at the Defiled Statue. Dainsleif's pursuit of another Herald (Q2) and the talisman (Q5) are not tied to the Defiled Statue in the English, so the claim overreaches.",
+     "quote": "Hmm, this talisman seems connected to the Abyss Herald. But why would an Abyss Mage be carrying it...?",
      "sentences": [
       {
-       "t_raw": "Traveler는 Abyss Order를 조사하러 Wolvendom으로 향한다.",
+       "t_raw": "Abyss Herald는 **Abyss Order의 정예 적 집단**이다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자는 심연 교단을 조사하러 울프 영지로 향한다."
+       "t": "심연 사도는 **심연 교단의 정예 적 집단**이다."
       },
       {
-       "t_raw": "그곳에서 Andrius가 Abyss Herald에게 구속된 채 잠깐 모습을 드러내고, Abyss Herald는 **Dvalin에게 했던 것처럼** Andrius를 타락시키려 한다.",
+       "t_raw": "Abyss Order는 Loom of Fate operation에 Defiled Statue와 Field Tillers의 고대 기술을 쓰려 했고, Dainsleif는 첫 Field Tiller의 눈을 보관해 operation을 지연시켰다.",
        "interp": false,
        "dropped": false,
-       "t": "그곳에서 안드리우스가 심연 사도에게 구속된 채 잠깐 모습을 드러내고, 심연 사도는 **드발린에게 했던 것처럼** 안드리우스를 타락시키려 한다."
+       "t": "심연 교단은 운명의 베틀 작전에 「뒤집힌 불결한 신상」과 「경작기」의 고대 기술을 쓰려 했고, 데인슬레이프는 첫 「경작기」의 눈을 보관해 작전을 지연시켰다.",
+       "polish": {
+        "from": "심연 교단은 운명의 베틀 operation에 「뒤집힌 불결한 신상」과 「경작기」의 고대 기술을 쓰려 했고, 데인슬레이프는 첫 「경작기」의 눈을 보관해 operation을 지연시켰다.",
+        "text": "심연 교단은 운명의 베틀 작전에 「뒤집힌 불결한 신상」과 「경작기」의 고대 기술을 쓰려 했고, 데인슬레이프는 첫 「경작기」의 눈을 보관해 작전을 지연시켰다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Paimon은 Razor와 Abyss Herald를 발견하고, Abyss Herald를 보고 놀란다.",
+       "t_raw": "Defiled Statue 앞에서 Traveler와 Abyss Herald가 충돌한 뒤, Traveler's Sibling은 Traveler에게 자신들과 Abyss를 막지 말라 하고 Herald와 차원문으로 떠난다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 레이저와 심연 사도를 발견하고, 심연 사도를 보고 놀란다."
+       "t": "「뒤집힌 불결한 신상」 앞에서 여행자와 심연 사도가 충돌한 뒤, 여행자의 쌍둥이 남매는 여행자에게 자신들과 심연을 막지 말라 하고 사도와 차원문으로 떠난다."
       },
       {
-       "t_raw": "짧은 전투 끝에 Abyss Herald는 패배하고 **늑대 영혼은 풀려난다**.",
+       "t_raw": "Dainsleif는 또 다른 Abyss Herald의 흔적을 쫓고, Abyss Mage의 부적이 Abyss Herald와 연결되었음을 짚는다.",
        "interp": false,
        "dropped": false,
-       "t": "짧은 전투 끝에 심연 사도는 패배하고 **늑대 영혼은 풀려난다**."
+       "t": "데인슬레이프는 또 다른 심연 사도의 흔적을 쫓고, 심연 메이지의 부적이 심연 사도와 연결되었음을 짚는다."
       },
       {
-       "t_raw": "이는 Abyss Order가 Dvalin에게 쓴 타락시키는 방식이 Andrius에게 다시 시도되었으나, 짧은 전투로 그 시도가 좌절되었음을 보여준다.",
+       "t_raw": "Abyss Herald가 수호하는 Defiled Statue 앞에서 Traveler's Sibling이 Traveler와 대면하고, Loom of Fate 작전 역시 이 Statue를 이용하려 했으므로, operation과 Sibling의 선택은 Abyss Herald를 매개로 Defiled Statue 앞에서 얽힌 구도로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이는 심연 교단이 드발린에게 쓴 타락시키는 방식이 안드리우스에게 다시 시도되었으나, 짧은 전투로 그 시도가 좌절되었음을 보여준다."
+       "repaired": true,
+       "t": "심연 사도가 수호하는 「뒤집힌 불결한 신상」 앞에서 여행자의 쌍둥이 남매가 여행자와 대면하고, 운명의 베틀 작전 역시 이 신상을 이용하려 했으므로, 작전과 쌍둥이 남매의 선택은 심연 사도를 매개로 「뒤집힌 불결한 신상」 앞에서 얽힌 구도로 보인다.",
+       "polish": {
+        "from": "심연 사도가 수호하는 「뒤집힌 불결한 신상」 앞에서 여행자의 쌍둥이 남매가 여행자와 대면하고, 운명의 베틀 작전 역시 이 Statue를 이용하려 했으므로, operation과 쌍둥이 남매의 선택은 심연 사도를 매개로 「뒤집힌 불결한 신상」 앞에서 얽힌 구도로 보인다.",
+        "text": "심연 사도가 수호하는 「뒤집힌 불결한 신상」 앞에서 여행자의 쌍둥이 남매가 여행자와 대면하고, 운명의 베틀 작전 역시 이 신상을 이용하려 했으므로, 작전과 쌍둥이 남매의 선택은 심연 사도를 매개로 「뒤집힌 불결한 신상」 앞에서 얽힌 구도로 보인다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Boreas",
-       "revision": 237104,
-       "section": "Story > Archon Quests",
-       "paragraph": "M1",
+       "page": "Abyss Herald",
+       "revision": 1238424,
+       "section": null,
+       "paragraph": "A1",
        "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "Dishonorable Trial",
-       "quest_ko": "명예롭지 못한 시련",
-       "version": "1.4",
-       "speaker": "Paimon"
+       "kind": "wiki",
+       "page": "Traveler's Sibling",
+       "revision": 1148208,
+       "section": "Story",
+       "paragraph": "M8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abyss Order",
+       "revision": 1153860,
+       "section": "Story",
+       "paragraph": "M9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Herald Without Adherents"
+        }
+       ]
       },
       {
        "kind": "quest",
-       "quest": "Involuntary Sacrifice",
-       "quest_ko": "본의 아닌 제헌",
+       "quest": "In the Depths, an Unexpected Reunion",
+       "quest_ko": "심연 속의 우연한 재회",
+       "version": "2.6",
+       "speaker": "Dainsleif"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Herald Without Adherents",
+       "quest_ko": "신자 없는 사도",
        "version": "1.4",
-       "speaker": "Paimon"
+       "speaker": "Dainsleif"
       }
      ],
-     "heading": "드러난 역사 — 울프 영지",
+     "heading": "얽힌 인물과 세력",
      "latin_left": []
     },
     {
-     "section": "드러난 역사 — Wolvendom",
-     "status": "needs_verify",
-     "note": null,
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 3 says the corruption attempt failed 'before the opponent's soul'. The English only says the Herald was defeated in a short fight and the spirit freed. It does not say Andrius's soul resisted the corruption, so that cause is added.",
      "quote": "It seems that even an Abyss Herald would not wish to make trouble with the Wolf King of the North.",
      "sentences": [
       {
-       "t_raw": "전투 뒤 Paimon은 Andrius에게 “Field Tiller”에 대해 묻고, Andrius는 Field Tiller가 자신의 영역에 들어왔고 자신이 그 기계를 도전자로 여겼다고 설명한다.",
+       "t_raw": "Traveler가 Wolvendom에서 Abyss Order를 조사할 때 Andrius는 Abyss Herald에 잠시 제압당하고, Herald는 Dvalin처럼 Andrius를 타락시키려 한다.",
        "interp": false,
        "dropped": false,
-       "t": "전투 뒤 페이몬은 안드리우스에게 “「경작기」”에 대해 묻고, 안드리우스는 「경작기」가 자신의 영역에 들어왔고 자신이 그 기계를 도전자로 여겼다고 설명한다."
+       "t": "여행자가 울프 영지에서 심연 교단을 조사할 때 안드리우스는 심연 사도에 잠시 제압당하고, 사도는 드발린처럼 안드리우스를 타락시키려 한다."
       },
       {
-       "t_raw": "그 전투에서 Andrius는 Field Tiller에게 피해를 주는 일격을 가했고, Field Tiller는 그 지역에서 도망쳤다.",
+       "t_raw": "짧은 전투 끝에 Herald는 패배하고 Andrius의 영혼은 풀려난다.",
        "interp": false,
        "dropped": false,
-       "t": "그 전투에서 안드리우스는 「경작기」에게 피해를 주는 일격을 가했고, 「경작기」는 그 지역에서 도망쳤다."
+       "t": "짧은 전투 끝에 사도는 패배하고 안드리우스의 영혼은 풀려난다."
       },
       {
-       "t_raw": "Dainsleif는 Andrius의 몸은 오래전에 죽었고, Wolvendom에 머무는 것은 그의 영혼이라고 말한다.",
+       "t_raw": "Dainsleif는 Andrius의 육체는 오래전 죽고 영혼이 Wolvendom을 지킨다고 말하며, Abyss Herald조차 **Wolf King of the North**와 충돌을 원치 않을 것 같다고 본다.",
        "interp": false,
        "dropped": false,
-       "t": "데인슬레이프는 안드리우스의 몸은 오래전에 죽었고, 울프 영지에 머무는 것은 그의 영혼이라고 말한다."
+       "t": "데인슬레이프는 안드리우스의 육체는 오래전 죽고 영혼이 울프 영지를 지킨다고 말하며, 심연 사도조차 **Wolf King of the North**와 충돌을 원치 않을 것 같다고 본다.",
+       "polish": {
+        "from": "데인슬레이프는 안드리우스의 육체는 오래전 죽고 영혼이 울프 영지를 지킨다고 말하며, 심연 사도조차 **Wolf King of the North**와 충돌을 원치 않을 것 같다고 본다.",
+        "text": "데인슬레이프는 안드리우스의 육체는 오래전 죽고 영혼이 울프 영지를 지킨다고 말하며, 심연 사도조차 **Wolf King of the North**와 충돌을 원치 않을 것 같다고 본다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Dainsleif는 Abyss Herald조차 **Wolf King of the North**와 문제를 일으키고 싶어하지 않는 것처럼 보인다고 평한다.",
-       "interp": false,
+       "t_raw": "Abyss Herald가 Andrius를 묶어두고 Dvalin처럼 타락시키려 했으나 짧은 전투 끝에 패배하고 wolf spirit가 풀려난 점은, Abyss Herald의 타락 시도가 전투적으로 저지될 수 있음을 보여주는 사례로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "데인슬레이프는 심연 사도조차 **Wolf King of the North**와 문제를 일으키고 싶어하지 않는 것처럼 보인다고 평한다."
+       "repaired": true,
+       "t": "심연 사도가 안드리우스를 묶어두고 드발린처럼 타락시키려 했으나 짧은 전투 끝에 패배하고 늑대 영혼이 풀려난 점은, 심연 사도의 타락 시도가 전투적으로 저지될 수 있음을 보여주는 사례로 보인다.",
+       "polish": {
+        "from": "심연 사도가 안드리우스를 묶어두고 드발린처럼 타락시키려 했으나 짧은 전투 끝에 패배하고 wolf spirit가 풀려난 점은, 심연 사도의 타락 시도가 전투적으로 저지될 수 있음을 보여주는 사례로 보인다.",
+        "text": "심연 사도가 안드리우스를 묶어두고 드발린처럼 타락시키려 했으나 짧은 전투 끝에 패배하고 늑대 영혼이 풀려난 점은, 심연 사도의 타락 시도가 전투적으로 저지될 수 있음을 보여주는 사례로 보인다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -388,545 +802,37 @@
        "speaker": "Dainsleif"
       }
      ],
-     "heading": "드러난 역사 — 울프 영지",
+     "heading": "얽힌 인물과 세력",
      "latin_left": [
       "Wolf King of the North"
      ]
     },
     {
-     "section": "드러난 역사 — Defiled Statue",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Unlike the other statues, it is inverted and the elemental object in its hands has been corrupted and surging with abyssal energy.",
-     "sentences": [
-      {
-       "t_raw": "Mt. Aozang 주변 Call of the Abyss 유적의 Statue of The Seven인 **Defiled Statue**는 다른 조각상과 달리 거꾸로 세워져 손의 원소 물체가 심연 에너지로 오염되어 있고 사슬에 묶여 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Mt. 오장 주변 「심연」의 유혹 유적의 일곱신상인 **「뒤집힌 불결한 신상」**은 다른 조각상과 달리 거꾸로 세워져 손의 원소 물체가 심연 에너지로 오염되어 있고 사슬에 묶여 있다."
-      },
-      {
-       "t_raw": "Abyss Order는 Abyss Herald에게 이 Defiled Statue를 침입자로부터 지키게 했으며, Dainsleif는 Defiled Statue의 힘에 압도되지 말라며 Abyss Herald가 여기 있다고 경고한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "심연 교단은 심연 사도에게 이 「뒤집힌 불결한 신상」을 침입자로부터 지키게 했으며, 데인슬레이프는 「뒤집힌 불결한 신상」의 힘에 압도되지 말라며 심연 사도가 여기 있다고 경고한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Defiled Statue",
-       "revision": 164626,
-       "section": null,
-       "paragraph": "M3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Defiled Statue",
-       "revision": 164626,
-       "section": "Profile",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Soul Set Apart",
-       "quest_ko": "엇갈린 영혼",
-       "version": "1.4",
-       "speaker": "Dainsleif"
-      }
-     ],
-     "heading": "드러난 역사 — 「뒤집힌 불결한 신상」",
-     "latin_left": [
-      "Mt"
-     ]
-    },
-    {
-     "section": "드러난 역사 — Defiled Statue",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He was killed by an Abyss Herald.",
-     "sentences": [
-      {
-       "t_raw": "Treasure Hoarders 사이에서 인기가 있었다는 Grand Thief는 Defiled Statue 앞에 무릎 꿇은 모습으로 보이고 Abyss Herald에게 살해된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "보물 사냥단 사이에서 인기가 있었다는 대보물사냥가는 「뒤집힌 불결한 신상」 앞에 무릎 꿇은 모습으로 보이고 심연 사도에게 살해된다."
-      },
-      {
-       "t_raw": "**We Will Be Reunited**에서 Traveler와 Abyss Herald의 다툼 뒤 Traveler's Sibling은 Defiled Statue 앞에서 Abyss를 막지 말라고 하고, Abyss의 괴물이 저주로 변한 Khaenri'ah의 사람들이라는 진실과 Dainsleif의 기원을 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**다시 만날 거야**에서 여행자와 심연 사도의 다툼 뒤 여행자의 쌍둥이 남매는 「뒤집힌 불결한 신상」 앞에서 심연을 막지 말라고 하고, 심연의 괴물이 저주로 변한 켄리아의 사람들이라는 진실과 데인슬레이프의 기원을 밝힌다."
-      },
-      {
-       "t_raw": "Traveler's Sibling은 신들과의 전쟁 뒤 원래 계획을 잇겠다며 Teyvat 여행을 권한 뒤 Abyss Herald와 차원문으로 떠난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자의 쌍둥이 남매는 신들과의 전쟁 뒤 원래 계획을 잇겠다며 티바트 여행을 권한 뒤 심연 사도와 차원문으로 떠난다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Grand Thief",
-       "revision": 161982,
-       "section": "Profile",
-       "paragraph": "M4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Traveler's Sibling",
-       "revision": 1148208,
-       "section": "Story",
-       "paragraph": "M8",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사 — 「뒤집힌 불결한 신상」",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Defiled Statue",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The operation is still active, although postponed due to Dainsleif safekeeping the first Field Tiller's eye.",
-     "sentences": [
-      {
-       "t_raw": "Dainsleif는 돌아가 Defiled Statue를 파괴하자고 했고, 출구에 가까워지자 Abyss Herald가 갑자기 나타나 길을 막았으며, Traveler와 Dainsleif가 Defiled Statue를 파괴하러 돌아갔을 때 만난 그 Herald는 뒤에 Traveler's Sibling이 구했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데인슬레이프는 돌아가 「뒤집힌 불결한 신상」을 파괴하자고 했고, 출구에 가까워지자 심연 사도가 갑자기 나타나 길을 막았으며, 여행자와 데인슬레이프가 「뒤집힌 불결한 신상」을 파괴하러 돌아갔을 때 만난 그 사도는 뒤에 여행자의 쌍둥이 남매가 구했다."
-      },
-      {
-       "t_raw": "Abyss Order는 Khaenri'ah의 Field Tiller 기술을 이용한 **Loom of Fate 작전**을 추진하며, 첫 Field Tiller의 눈을 찾아 그 눈과 Defiled Statue를 Osial에 사용해 조종 가능한 기계화된 신을 만들려 했고, 그 눈은 Traveler와 Dainsleif가 찾았지만 Dainsleif가 직접 지녔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "심연 교단은 켄리아의 「경작기」 기술을 이용한 **운명의 베틀 작전**을 추진하며, 첫 「경작기」의 눈을 찾아 그 눈과 「뒤집힌 불결한 신상」을 오셀에 사용해 조종 가능한 기계화된 신을 만들려 했고, 그 눈은 여행자와 데인슬레이프가 찾았지만 데인슬레이프가 직접 지녔다."
-      },
-      {
-       "t_raw": "작전은 Dainsleif가 첫 Field Tiller의 눈을 보관하는 탓에 진행 중이되 연기된 상태다.",
-       "interp": false,
-       "dropped": false,
-       "t": "작전은 데인슬레이프가 첫 「경작기」의 눈을 보관하는 탓에 진행 중이되 연기된 상태다."
-      },
-      {
-       "t_raw": "Abyss Order가 지키게 한 Defiled Statue를 Osial에 쓰려 한 점에서, 이 Defiled Statue는 보호 대상이자 작전의 재료로 함께 다뤄진 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "심연 교단이 지키게 한 「뒤집힌 불결한 신상」을 오셀에 쓰려 한 점에서, 이 「뒤집힌 불결한 신상」은 보호 대상이자 작전의 재료로 함께 다뤄진 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Defiled Statue",
-       "revision": 164626,
-       "section": "Profile",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abyss Order",
-       "revision": 1153860,
-       "section": "Story",
-       "paragraph": "M9",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "A Herald Without Adherents"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "A Soul Set Apart",
-       "quest_ko": "엇갈린 영혼",
-       "version": "1.4",
-       "speaker": "Dainsleif"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Herald Without Adherents",
-       "quest_ko": "신자 없는 사도",
-       "version": "1.4",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "드러난 역사 — 「뒤집힌 불결한 신상」",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Chasm과 Girdle of the Sands",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Whew! You've been hunting this Abyss Herald for aaages — now you finally got him!",
-     "sentences": [
-      {
-       "t_raw": "**Hydro Abyss Herald**는 네 차례의 마신 임무에서 Traveler와 마주쳐 첫 세 번은 도주했지만 Chasm에서 마침내 쓰러진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**물 심연 사도**는 네 차례의 마신 임무에서 여행자와 마주쳐 첫 세 번은 도주했지만 층암거연에서 마침내 쓰러진다."
-      },
-      {
-       "t_raw": "Dainsleif는 Abyss Herald의 흔적을 추격했다고 말하고, Paimon은 Traveler가 오래 쫓은 끝에 그를 잡았다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데인슬레이프는 심연 사도의 흔적을 추격했다고 말하고, 페이몬은 여행자가 오래 쫓은 끝에 그를 잡았다고 말한다."
-      },
-      {
-       "t_raw": "세 번의 도주와 Chasm에서의 패배를 함께 보면, 이 Hydro Abyss Herald는 긴 추격 끝에 Chasm에서 매듭지어진 존재로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "세 번의 도주와 층암거연에서의 패배를 함께 보면, 이 물 심연 사도는 긴 추격 끝에 층암거연에서 매듭지어진 존재로 보인다."
-      },
-      {
-       "t_raw": "그 뒤의 운명은 알려져 있지 않다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 뒤의 운명은 알려져 있지 않다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Abyss Herald",
-       "revision": 1238424,
-       "section": "Notable Abyss Heralds > \"Presager of the Abyss\"",
-       "paragraph": "A4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "In the Depths, an Unexpected Reunion",
-       "quest_ko": "심연 속의 우연한 재회",
-       "version": "2.6",
-       "speaker": "Dainsleif"
-      },
-      {
-       "kind": "quest",
-       "quest": "Memories of Inteyvat",
-       "quest_ko": "인티바트의 기억",
-       "version": "2.6",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "드러난 역사 — 층암거연과 모래가 에워싼 황야",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Chasm과 Girdle of the Sands",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Calling an Abyss Herald known as Klingsor, the two tried to take the songs by force, but were defeated by the Traveler and forced to flee.",
-     "sentences": [
-      {
-       "t_raw": "**Klingsor**는 Cataclysm 때 Girdle of the Sands에서 Khaenri'ah 유적을 조사하던 Sumeran 학자로, Abyss의 힘에 매료되어 Nasejuna와 결탁해 **Great Songs of Khvarena**를 빼앗아 심연 에너지가 Teyvat를 삼키게 하려 했지만 Traveler에게 저지되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**클링조르**는 대재앙 때 모래가 에워싼 황야에서 켄리아 유적을 조사하던 Sumeran 학자로, 심연의 힘에 매료되어 나세주나와 결탁해 **크바레나의 위대한 노래**를 빼앗아 심연 에너지가 티바트를 삼키게 하려 했지만 여행자에게 저지되었다."
-      },
-      {
-       "t_raw": "Nasejuna는 마지막 Great Song을 얻은 뒤 진의와 Pari 종족에 대한 증오를 드러내고 Klingsor를 불러 노래들을 힘으로 빼앗으려다 Traveler에게 패해 도주했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나세주나는 마지막 Great Song을 얻은 뒤 진의와 페리 종족에 대한 증오를 드러내고 클링조르를 불러 노래들을 힘으로 빼앗으려다 여행자에게 패해 도주했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Abyss Herald",
-       "revision": 1238424,
-       "section": "Notable Abyss Heralds > Klingsor",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Nasejuna",
-       "revision": 1186337,
-       "section": "Profile",
-       "paragraph": "M6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "As the Khvarena's Light Shows"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사 — 층암거연과 모래가 에워싼 황야",
-     "latin_left": [
-      "Sumeran",
-      "Great Song"
-     ]
-    },
-    {
-     "section": "드러난 역사 — Caribert",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It guards the final chamber of the quest's dungeon, where the Sinner's crystal resides.",
-     "sentences": [
-      {
-       "t_raw": "Caribert에서 이름이 밝혀지지 않은 **Cryo Abyss Herald**가 퀘스트의 던전 마지막 방에서 **Sinner의 수정**을 지킨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카리베르트에서 이름이 밝혀지지 않은 **얼음 심연 사도**가 퀘스트의 던전 마지막 방에서 **죄인의 수정**을 지킨다."
-      },
-      {
-       "t_raw": "이 Cryo Abyss Herald는 Traveler와 싸워, Traveler가 계속 나아가 Sinner를 만날 자격이 있는지 시험한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 얼음 심연 사도는 여행자와 싸워, 여행자가 계속 나아가 죄인을 만날 자격이 있는지 시험한다."
-      },
-      {
-       "t_raw": "Sinner의 수정을 지키는 Herald의 역할에는 Traveler의 자격을 시험하는 전투도 포함된 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "죄인의 수정을 지키는 사도의 역할에는 여행자의 자격을 시험하는 전투도 포함된 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Abyss Herald",
-       "revision": 1238424,
-       "section": "Notable Abyss Heralds > \"Fortune Lector\"",
-       "paragraph": "A5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사 — 카리베르트",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Caribert",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Chlothar was not afraid, but in awe of the 'perilous yet beautiful' power, referring to it as a 'perfect being'",
-     "sentences": [
-      {
-       "t_raw": "Erosion의 영향으로 Chlothar는 정신적으로 불안정하고 감정 기복이 크며, 분노·두려움·슬픔·기쁨·종교적 열광을 강하게 느낀다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마모의 영향으로 클로타르는 정신적으로 불안정하고 감정 기복이 크며, 분노·두려움·슬픔·기쁨·종교적 열광을 강하게 느낀다."
-      },
-      {
-       "t_raw": "그러나 **Abyss Herald: Frost Fall**을 마주친 뒤 그는 두려워하지 않고 'perilous yet beautiful'한 힘에 경외를 품으며, 그 힘을 'perfect being'이라 부른다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 **심연 사도: 서리 내림**을 마주친 뒤 그는 두려워하지 않고 'perilous yet beautiful'한 힘에 경외를 품으며, 그 힘을 'perfect being'이라 부른다."
-      },
-      {
-       "t_raw": "사슬로 묶인 거대한 수정을 보자 그는 곧바로 평온해져 그 앞에 무릎 꿇고, 나중에는 자신이 그런 행동을 한 것을 의식하지 못했다고 암시한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "사슬로 묶인 거대한 수정을 보자 그는 곧바로 평온해져 그 앞에 무릎 꿇고, 나중에는 자신이 그런 행동을 한 것을 의식하지 못했다고 암시한다."
-      },
-      {
-       "t_raw": "감정 기복이 크고 여러 감정을 강하게 느끼는 Chlothar가 Frost Fall 앞에서는 두려움 대신 경외와 평온을 보인 것은, Frost Fall의 힘과 사슬로 묶인 수정에 강하게 이끌린 모습으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "감정 기복이 크고 여러 감정을 강하게 느끼는 클로타르가 서리 내림 앞에서는 두려움 대신 경외와 평온을 보인 것은, 서리 내림의 힘과 사슬로 묶인 수정에 강하게 이끌린 모습으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Chlothar",
-       "revision": 1115220,
-       "section": "Profile > Personality",
-       "paragraph": "M10",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사 — 카리베르트",
-     "latin_left": []
-    },
-    {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When the pair returned to destroy the statue, they were met by an Abyss Herald, who was later saved by the Traveler's sibling.",
+     "status": "accepted",
+     "note": "All sentences are supported by M6, M7 and M10.",
+     "quote": "Likewise, the Pari Zurvan anticipated his betrayal, having known Klingsor from hundreds of years ago and suspecting that the Abyss Herald was reattempting to obtain the Great Songs.",
      "sentences": [
       {
-       "t_raw": "Traveler와 Dainsleif는 Stormterror's Lair에서 첫 Field Tiller의 눈을 찾았고, Dainsleif는 그것을 다른 세력에 맡기지 않으려 직접 보관했다.",
+       "t_raw": "Nasejuna는 마지막 Great Song을 얻은 뒤 Pari 종족에 대한 혐오를 드러내고 Klingsor를 불러 Great Songs을 힘으로 빼앗으려다 Traveler에게 패해 달아난다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자와 데인슬레이프는 바람 드래곤의 폐허에서 첫 「경작기」의 눈을 찾았고, 데인슬레이프는 그것을 다른 세력에 맡기지 않으려 직접 보관했다."
+       "t": "나세주나는 마지막 크바레나의 노래를 얻은 뒤 페리 종족에 대한 혐오를 드러내고 클링조르를 불러 크바레나의 노래를 힘으로 빼앗으려다 여행자에게 패해 달아난다."
       },
       {
-       "t_raw": "두 사람이 Defiled Statue를 부수러 돌아왔을 때 Abyss Herald를 마주했으며, 그 Herald는 뒤에 Traveler's Sibling에게 구해졌다.",
+       "t_raw": "Pari Zurvan은 수백 년 전부터 Klingsor를 알고 Abyss Herald가 Great Songs을 다시 노린다고 의심했으며, Chlothar는 Abyss Herald: Frost Fall의 'perilous yet beautiful'한 힘에 경외를 보이고 **'perfect being'**이라 부른다.",
        "interp": false,
        "dropped": false,
-       "t": "두 사람이 「뒤집힌 불결한 신상」을 부수러 돌아왔을 때 심연 사도를 마주했으며, 그 사도는 뒤에 여행자의 쌍둥이 남매에게 구해졌다."
+       "t": "페리 주르반은 수백 년 전부터 클링조르를 알고 심연 사도가 크바레나의 노래를 다시 노린다고 의심했으며, 클로타르는 심연 사도: 서리 내림의 'perilous yet beautiful'한 힘에 경외를 보이고 **'perfect being'**이라 부른다."
       },
       {
-       "t_raw": "Dainsleif는 다른 Abyss Herald의 흔적을 발견하고 추격하기 시작했고, Paimon은 그 Herald를 오래 쫓아 마침내 잡았다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데인슬레이프는 다른 심연 사도의 흔적을 발견하고 추격하기 시작했고, 페이몬은 그 사도를 오래 쫓아 마침내 잡았다고 말한다."
-      },
-      {
-       "t_raw": "Chasm에서 Hydro Abyss Herald는 Traveler와의 싸움 뒤 세 번이나 달아났고, 마침내 Traveler에게 쓰러졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "층암거연에서 물 심연 사도는 여행자와의 싸움 뒤 세 번이나 달아났고, 마침내 여행자에게 쓰러졌다."
-      },
-      {
-       "t_raw": "Dainsleif의 별도 추격과 Hydro Abyss Herald의 반복된 도주를 함께 보면, 이들의 얽힘은 한 번의 대치보다 **추격**의 연속으로 이어졌다고 볼 수 있다.",
+       "t_raw": "이처럼 Abyss Herald는 Pari Zurvan에게는 경계의 대상으로, Chlothar에게는 경외의 대상으로 놓이는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "데인슬레이프의 별도 추격과 물 심연 사도의 반복된 도주를 함께 보면, 이들의 얽힘은 한 번의 대치보다 **추격**의 연속으로 이어졌다고 볼 수 있다."
+       "t": "이처럼 심연 사도는 페리 주르반에게는 경계의 대상으로, 클로타르에게는 경외의 대상으로 놓이는 셈이다."
       }
      ],
      "sources": [
-      {
-       "kind": "quest",
-       "quest": "In the Depths, an Unexpected Reunion",
-       "quest_ko": "심연 속의 우연한 재회",
-       "version": "2.6",
-       "speaker": "Dainsleif"
-      },
-      {
-       "kind": "quest",
-       "quest": "Memories of Inteyvat",
-       "quest_ko": "인티바트의 기억",
-       "version": "2.6",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "wiki",
-       "page": "Abyss Herald",
-       "revision": 1238424,
-       "section": "Notable Abyss Heralds > \"Presager of the Abyss\"",
-       "paragraph": "A4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abyss Order",
-       "revision": 1153860,
-       "section": "Story",
-       "paragraph": "M9",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "A Herald Without Adherents"
-        }
-       ]
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The sibling then tells them to continue traveling Teyvat in the hopes of seeing the true nature of the world presided by the Seven and Celestia before leaving with the Herald through a portal.",
-     "sentences": [
-      {
-       "t_raw": "We Will Be Reunited에서 Traveler's Sibling은 Traveler와 Abyss Herald의 충돌 뒤 Defiled Statue 앞에서 Traveler와 잠시 만난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다시 만날 거야에서 여행자의 쌍둥이 남매는 여행자와 심연 사도의 충돌 뒤 「뒤집힌 불결한 신상」 앞에서 여행자와 잠시 만난다."
-      },
-      {
-       "t_raw": "Sibling은 Traveler에게 자신과 Abyss를 막지 말라고 부탁하고, Dainsleif의 출신과 Abyss의 괴물들이 저주로 변하기 전에는 **Khaenri'ah의 사람들**이었다는 진실을 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "쌍둥이 남매는 여행자에게 자신과 심연을 막지 말라고 부탁하고, 데인슬레이프의 출신과 심연의 괴물들이 저주로 변하기 전에는 **켄리아의 사람들**이었다는 진실을 밝힌다."
-      },
-      {
-       "t_raw": "Sibling은 신과의 전쟁이 끝난 뒤 원래 계획을 이어가겠다고 하며, Seven과 Celestia가 다스리는 세계의 진면목을 보길 바란 뒤 Herald와 함께 포털로 떠난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "쌍둥이 남매는 신과의 전쟁이 끝난 뒤 원래 계획을 이어가겠다고 하며, 일곱 신과 셀레스티아가 다스리는 세계의 진면목을 보길 바란 뒤 사도와 함께 포털로 떠난다."
-      },
-      {
-       "t_raw": "Traveler's Sibling이 Abyss Herald를 구한 일과 그 Herald와 함께 포털로 떠난 일을 함께 보면, 두 사람의 관계가 단순한 길동무에 그치지 않았다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "여행자의 쌍둥이 남매가 심연 사도를 구한 일과 그 사도와 함께 포털로 떠난 일을 함께 보면, 두 사람의 관계가 단순한 길동무에 그치지 않았다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Traveler's Sibling",
-       "revision": 1148208,
-       "section": "Story",
-       "paragraph": "M8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abyss Order",
-       "revision": 1153860,
-       "section": "Story",
-       "paragraph": "M9",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "A Herald Without Adherents"
-        }
-       ]
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "the Pari Zurvan anticipated his betrayal, having known Klingsor from hundreds of years ago and suspecting that the Abyss Herald was reattempting to obtain the Great Songs.",
-     "sentences": [
-      {
-       "t_raw": "Klingsor는 Cataclysm 때 Girdle of the Sands에서 Khaenri'ah'an 유적을 조사하던 전직 Sumeran 학자였고, Abyss의 힘에 매료되어 그것을 받아들이고 Nasejuna와 결탁했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "클링조르는 대재앙 때 모래가 에워싼 황야에서 Khaenri'ah'an 유적을 조사하던 전직 Sumeran 학자였고, 심연의 힘에 매료되어 그것을 받아들이고 나세주나와 결탁했다."
-      },
-      {
-       "t_raw": "두 사람은 Great Songs of Khvarena를 빼앗아 심연 에너지가 Teyvat를 덮게 하려 했으나 Traveler에게 저지되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "두 사람은 크바레나의 위대한 노래를 빼앗아 심연 에너지가 티바트를 덮게 하려 했으나 여행자에게 저지되었다."
-      },
-      {
-       "t_raw": "Nasejuna는 마지막 Great Song을 얻은 뒤 Pari race에 대한 증오와 진의를 드러내고 Klingsor를 불러 힘으로 노래를 빼앗으려 했지만 Traveler에게 패해 달아났고, Traveler는 Pyrrho와 Sosi에게 그의 배신을 알렸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나세주나는 마지막 Great Song을 얻은 뒤 페리 race에 대한 증오와 진의를 드러내고 클링조르를 불러 힘으로 노래를 빼앗으려 했지만 여행자에게 패해 달아났고, 여행자는 피론과 소시에게 그의 배신을 알렸다."
-      },
-      {
-       "t_raw": "Aryadeva는 Nasejuna가 Kory Drums를 묻자마자 그를 의심했고, Pari Zurvan은 수백 년 전부터 Klingsor를 알며 그가 Great Songs를 다시 노리리라 의심해 배신을 예상했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아리야데바는 나세주나가 Kory Drums를 묻자마자 그를 의심했고, 페리 주르반은 수백 년 전부터 클링조르를 알며 그가 Great Songs를 다시 노리리라 의심해 배신을 예상했다."
-      },
-      {
-       "t_raw": "Klingsor와 Nasejuna의 결탁은 Pari 일부에게 이미 경계되고 있었던 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "클링조르와 나세주나의 결탁은 페리 일부에게 이미 경계되고 있었던 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Abyss Herald",
-       "revision": 1238424,
-       "section": "Notable Abyss Heralds > Klingsor",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Nasejuna",
@@ -947,49 +853,7 @@
        "section": "Profile > Personality",
        "paragraph": "M7",
        "wiki_refs": []
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Khaenri'ah'an",
-      "Sumeran",
-      "Great Song",
-      "Kory Drums",
-      "Great Songs"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After encountering Abyss Herald: Frost Fall, Chlothar was not afraid, but in awe of the 'perilous yet beautiful' power",
-     "sentences": [
-      {
-       "t_raw": "Chlothar는 Erosion의 영향으로 정신적으로 불안정하고 감정 기복이 심한 모습을 보인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "클로타르는 마모의 영향으로 정신적으로 불안정하고 감정 기복이 심한 모습을 보인다."
       },
-      {
-       "t_raw": "Abyss Herald: Frost Fall을 만난 뒤 그는 두려워하지 않고 '위험하면서도 아름다운' 힘에 경외를 느껴 그것을 '완전한 존재'라 불렀으며, 크게 사슬로 묶인 수정을 보자 곧 평온해져 그 앞에 무릎 꿇었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "심연 사도: 서리 내림을 만난 뒤 그는 두려워하지 않고 '위험하면서도 아름다운' 힘에 경외를 느껴 그것을 '완전한 존재'라 불렀으며, 크게 사슬로 묶인 수정을 보자 곧 평온해져 그 앞에 무릎 꿇었다."
-      },
-      {
-       "t_raw": "그는 나중에 자신이 그렇게 하고 있었다는 것을 알아차리지 못했음을 암시하고, Caribert가 처음 말하는 것을 보자 기쁨에 넘쳐 신들에 대한 적대를 버리고 Traveler's Sibling과 자신이 Abyss에서 목격한 무엇에 헌신하겠다고 선언한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 나중에 자신이 그렇게 하고 있었다는 것을 알아차리지 못했음을 암시하고, 카리베르트가 처음 말하는 것을 보자 기쁨에 넘쳐 신들에 대한 적대를 버리고 여행자의 쌍둥이 남매와 자신이 심연에서 목격한 무엇에 헌신하겠다고 선언한다."
-      },
-      {
-       "t_raw": "Frost Fall에 대한 경외와 사슬에 묶인 수정 앞에서의 무릎 꿇음은 그의 종교적 열광이 Abyss Herald를 만난 경험에서 드러난 장면으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "서리 내림에 대한 경외와 사슬에 묶인 수정 앞에서의 무릎 꿇음은 그의 종교적 열광이 심연 사도를 만난 경험에서 드러난 장면으로 볼 수 있다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Chlothar",
@@ -1003,108 +867,28 @@
      "latin_left": []
     },
     {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hmm, this talisman seems connected to the Abyss Herald. But why would an Abyss Mage be carrying it...?",
-     "sentences": [
-      {
-       "t_raw": "Dainsleif는 Abyss Mage가 지닌 부적을 보고 그것이 Abyss Herald와 연결된 듯하다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데인슬레이프는 심연 메이지가 지닌 부적을 보고 그것이 심연 사도와 연결된 듯하다고 말한다."
-      },
-      {
-       "t_raw": "그는 왜 Abyss Mage가 그 부적을 지니고 있었는지 의문을 품는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 왜 심연 메이지가 그 부적을 지니고 있었는지 의문을 품는다."
-      },
-      {
-       "t_raw": "부적이 Abyss Herald와 연결된다는 관찰과 그것을 Abyss Mage가 소지했다는 사실은 두 존재 사이의 접점을 암시하는 **부적** 단서로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "부적이 심연 사도와 연결된다는 관찰과 그것을 심연 메이지가 소지했다는 사실은 두 존재 사이의 접점을 암시하는 **부적** 단서로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "A Herald Without Adherents",
-       "quest_ko": "신자 없는 사도",
-       "version": "1.4",
-       "speaker": "Dainsleif"
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "the Pari Zurvan anticipated his betrayal, having known Klingsor from hundreds of years ago and suspecting that the Abyss Herald was reattempting to obtain the Great Songs.",
-     "sentences": [
-      {
-       "t_raw": "**Klingsor**는 Cataclysm 당시 Girdle of the Sands에서 Khaenri'ah 유적을 조사하던 전직 Sumeran 학자로, Abyss의 힘을 받아들이고 Nasejuna와 결탁해 Great Songs of Khvarena를 빼앗아 심연 에너지가 Teyvat를 뒤덮게 하려 했으나 Traveler에게 저지당했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**클링조르**는 대재앙 당시 모래가 에워싼 황야에서 켄리아 유적을 조사하던 전직 Sumeran 학자로, 심연의 힘을 받아들이고 나세주나와 결탁해 크바레나의 위대한 노래를 빼앗아 심연 에너지가 티바트를 뒤덮게 하려 했으나 여행자에게 저지당했다."
-      },
-      {
-       "t_raw": "Pari Zurvan은 수백 년 전부터 Klingsor를 알고 그가 다시 Great Songs를 얻으려 한다고 의심했으므로, Klingsor의 행적은 과거와 현재를 잇는 떡밥으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "페리 주르반은 수백 년 전부터 클링조르를 알고 그가 다시 Great Songs를 얻으려 한다고 의심했으므로, 클링조르의 행적은 과거와 현재를 잇는 떡밥으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Abyss Herald",
-       "revision": 1238424,
-       "section": "Notable Abyss Heralds > Klingsor",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Nasejuna",
-       "revision": 1186337,
-       "section": "Profile > Personality",
-       "paragraph": "M7",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Sumeran",
-      "Great Songs"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A4.",
      "quote": "It flees after fighting the Traveler the first three times, but in the Chasm, the Traveler finally defeats it. Its fate is unknown.",
      "sentences": [
       {
-       "t_raw": "이름 없는 **Hydro Abyss Herald**는 네 차례 마신 임무에서 Traveler와 마주쳐 앞선 세 번은 싸움 뒤 달아났고 Chasm에서 쓰러졌으며, 그 뒤 운명은 알려지지 않았다.",
+       "t_raw": "Presager of the Abyss라는 이름 외에 다른 이름이 밝혀지지 않은 Hydro Abyss Herald는 4개의 마신 임무에서 등장했다.",
        "interp": false,
        "dropped": false,
-       "t": "이름 없는 **물 심연 사도**는 네 차례 마신 임무에서 여행자와 마주쳐 앞선 세 번은 싸움 뒤 달아났고 층암거연에서 쓰러졌으며, 그 뒤 운명은 알려지지 않았다."
+       "t": "심연의 예언자라는 이름 외에 다른 이름이 밝혀지지 않은 물 심연 사도는 4개의 마신 임무에서 등장했다."
       },
       {
-       "t_raw": "Defiled Statue에서 만난 Abyss Herald는 Traveler's Sibling에게 구해지고, Traveler's Sibling은 그 Herald와 함께 차원문으로 떠난다.",
+       "t_raw": "Traveler와 처음 세 번 싸운 뒤 도망갔고, Chasm에서 Traveler에게 패배했지만 그의 운명은 알려지지 않았다.",
        "interp": false,
        "dropped": false,
-       "t": "「뒤집힌 불결한 신상」에서 만난 심연 사도는 여행자의 쌍둥이 남매에게 구해지고, 여행자의 쌍둥이 남매는 그 사도와 함께 차원문으로 떠난다."
+       "t": "여행자와 처음 세 번 싸운 뒤 도망갔고, 층암거연에서 여행자에게 패배했지만 그의 운명은 알려지지 않았다."
       },
       {
-       "t_raw": "Hydro Abyss Herald의 행방은 알려지지 않았고 Defiled Statue의 Abyss Herald는 Traveler's Sibling과 동행했으므로, 이들의 향방은 열린 질문으로 보인다.",
+       "t_raw": "세 번의 도주와 Chasm에서의 패배에도 운명이 알려지지 않았다는 점에서, 이 Abyss Herald의 결말은 열린 물음으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "물 심연 사도의 행방은 알려지지 않았고 「뒤집힌 불결한 신상」의 심연 사도는 여행자의 쌍둥이 남매와 동행했으므로, 이들의 향방은 열린 질문으로 보인다."
+       "t": "세 번의 도주와 층암거연에서의 패배에도 운명이 알려지지 않았다는 점에서, 이 심연 사도의 결말은 열린 물음으로 보인다."
       }
      ],
      "sources": [
@@ -1115,15 +899,47 @@
        "section": "Notable Abyss Heralds > \"Presager of the Abyss\"",
        "paragraph": "A4",
        "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by M9.",
+     "quote": "The operation is still active, although postponed due to Dainsleif safekeeping the first Field Tiller's eye.",
+     "sentences": [
+      {
+       "t_raw": "Abyss Order는 **Loom of Fate operation**을 여전히 추진 중이나, Dainsleif가 첫 Field Tiller의 눈을 직접 보관하면서 operation은 연기된 상태다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연 교단은 **운명의 베틀 작전**을 여전히 추진 중이나, 데인슬레이프가 첫 「경작기」의 눈을 직접 보관하면서 작전은 연기된 상태다.",
+       "polish": {
+        "from": "심연 교단은 **운명의 베틀 operation**을 여전히 추진 중이나, 데인슬레이프가 첫 「경작기」의 눈을 직접 보관하면서 operation은 연기된 상태다.",
+        "text": "심연 교단은 **운명의 베틀 작전**을 여전히 추진 중이나, 데인슬레이프가 첫 「경작기」의 눈을 직접 보관하면서 작전은 연기된 상태다.",
+        "by": "ds"
+       }
       },
       {
-       "kind": "wiki",
-       "page": "Traveler's Sibling",
-       "revision": 1148208,
-       "section": "Story",
-       "paragraph": "M8",
-       "wiki_refs": []
+       "t_raw": "Khaenri'ah의 Field Tillers 기술과 Mt. Aocang 아래의 Defiled Statue를 Osial에게 사용해 통제 가능한 기계 신을 만들 계획이었고, 그 눈은 Traveler와 Dainsleif가 Stormterror's Lair에서 찾았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "켄리아의 「경작기」 기술과 오장산 아래의 「뒤집힌 불결한 신상」을 오셀에게 사용해 통제 가능한 기계 신을 만들 계획이었고, 그 눈은 여행자와 데인슬레이프가 바람 드래곤의 폐허에서 찾았다."
       },
+      {
+       "t_raw": "핵심 재료를 Dainsleif가 보관하고 있다는 사실이 operation의 지연으로 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "핵심 재료를 데인슬레이프가 보관하고 있다는 사실이 작전의 지연으로 이어진 셈이다.",
+       "polish": {
+        "from": "핵심 재료를 데인슬레이프가 보관하고 있다는 사실이 operation의 지연으로 이어진 셈이다.",
+        "text": "핵심 재료를 데인슬레이프가 보관하고 있다는 사실이 작전의 지연으로 이어진 셈이다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Abyss Order",
@@ -1143,64 +959,81 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The operation is still active, although postponed due to Dainsleif safekeeping the first Field Tiller's eye.",
+     "status": "accepted",
+     "note": "All sentences are supported by M6 and M7. The interpretation is hedged.",
+     "quote": "the Pari Zurvan anticipated his betrayal, having known Klingsor from hundreds of years ago and suspecting that the Abyss Herald was reattempting to obtain the Great Songs.",
      "sentences": [
       {
-       "t_raw": "**Loom of Fate** 작전은 Khaenri'ah의 Field Tillers 기술을 바탕으로 첫 Field Tiller의 eye와 Defiled Statue를 Osial에 사용해 통제 가능한 기계화된 신을 만들려 했고, eye를 Dainsleif가 보관해 작전은 여전히 진행 중이나 연기된 상태다.",
+       "t_raw": "Pari Zurvan은 Klingsor를 수백 년 전부터 알고 있었고, 그 Abyss Herald가 Great Songs을 다시 얻으려 한다고 의심했다.",
        "interp": false,
        "dropped": false,
-       "t": "**운명의 베틀** 작전은 켄리아의 「경작기」 기술을 바탕으로 첫 「경작기」의 eye와 「뒤집힌 불결한 신상」을 오셀에 사용해 통제 가능한 기계화된 신을 만들려 했고, eye를 데인슬레이프가 보관해 작전은 여전히 진행 중이나 연기된 상태다."
+       "t": "페리 주르반은 클링조르를 수백 년 전부터 알고 있었고, 그 심연 사도가 크바레나의 노래를 다시 얻으려 한다고 의심했다."
       },
       {
-       "t_raw": "Sinner의 crystal는 Caribert의 마지막 방에 있고, 이름 없는 Cryo Abyss Herald가 Traveler의 자격을 시험했다.",
+       "t_raw": "Nasejuna와 Klingsor는 Great Songs을 힘으로 빼앗으려다 Traveler에게 패배해 도망쳤다.",
        "interp": false,
        "dropped": false,
-       "t": "죄인의 crystal는 카리베르트의 마지막 방에 있고, 이름 없는 얼음 심연 사도가 여행자의 자격을 시험했다."
+       "t": "나세주나와 클링조르는 크바레나의 노래를 힘으로 빼앗으려다 여행자에게 패배해 도망쳤다."
       },
       {
-       "t_raw": "Abyss Herald: Frost Fall을 만난 Chlothar는 그 힘을 'perfect being'이라 하고 사슬에 묶인 crystal 앞에서 무릎을 꿇었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "심연 사도: 서리 내림을 만난 클로타르는 그 힘을 'perfect being'이라 하고 사슬에 묶인 crystal 앞에서 무릎을 꿇었다."
-      },
-      {
-       "t_raw": "eye가 Dainsleif에게 있고 Sinner에 닿는 경로로 crystal과 시험이 제시되므로, Loom of Fate와 Sinner를 둘러싼 물음은 열린 채 남는다.",
+       "t_raw": "과거부터 이어진 의심과 실제 시도가 함께 제시된다는 점에서, Klingsor와 Great Songs의 재시도 가능성은 **떡밥**으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "eye가 데인슬레이프에게 있고 죄인에 닿는 경로로 crystal과 시험이 제시되므로, 운명의 베틀과 죄인을 둘러싼 물음은 열린 채 남는다."
+       "t": "과거부터 이어진 의심과 실제 시도가 함께 제시된다는 점에서, 클링조르와 크바레나의 노래의 재시도 가능성은 **떡밥**으로 보인다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Abyss Herald",
-       "revision": 1238424,
-       "section": "Notable Abyss Heralds > \"Fortune Lector\"",
-       "paragraph": "A5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abyss Order",
-       "revision": 1153860,
-       "section": "Story",
-       "paragraph": "M9",
+       "page": "Nasejuna",
+       "revision": 1186337,
+       "section": "Profile",
+       "paragraph": "M6",
        "wiki_refs": [
         {
          "type": "quest",
-         "name": "A Herald Without Adherents"
+         "name": "As the Khvarena's Light Shows"
         }
        ]
       },
       {
        "kind": "wiki",
-       "page": "Chlothar",
-       "revision": 1115220,
+       "page": "Nasejuna",
+       "revision": 1186337,
        "section": "Profile > Personality",
-       "paragraph": "M10",
+       "paragraph": "M7",
        "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by Q5.",
+     "quote": "Hmm, this talisman seems connected to the Abyss Herald. But why would an Abyss Mage be carrying it...?",
+     "sentences": [
+      {
+       "t_raw": "Dainsleif는 부적이 Abyss Herald와 연결된 것 같다고 보면서, 왜 Abyss Mage가 그것을 지니고 있었는지 의문을 제기했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데인슬레이프는 부적이 심연 사도와 연결된 것 같다고 보면서, 왜 심연 메이지가 그것을 지니고 있었는지 의문을 제기했다."
+      },
+      {
+       "t_raw": "부적이 Abyss Herald와 연결된 듯 보인다는 점과 Abyss Mage가 그 부적을 지녔다는 점이 겹치므로, 둘 사이의 연결고리는 **남은 질문**으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "부적이 심연 사도와 연결된 듯 보인다는 점과 심연 메이지가 그 부적을 지녔다는 점이 겹치므로, 둘 사이의 연결고리는 **남은 질문**으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Herald Without Adherents",
+       "quest_ko": "신자 없는 사도",
+       "version": "1.4",
+       "speaker": "Dainsleif"
       }
      ],
      "heading": "떡밥과 수수께끼",
@@ -1208,27 +1041,82 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences supported by A1/A2.",
+     "quote": "Abyss Heralds are an elite enemy group part of the Abyss Order and who are capable of manipulating intense abyssal energy.",
+     "sentences": [
+      {
+       "t_raw": "Abyss Herald는 Abyss Order의 정예 적 집단으로 강력한 abyssal energy를 다루며, **Abyss Lector의 근접 대응**이지만 일부 원거리 공격도 쓴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연 사도는 심연 교단의 정예 적 집단으로 강력한 심연 에너지를 다루며, **심연 봉독자의 근접 대응**이지만 일부 원거리 공격도 쓴다.",
+       "polish": {
+        "from": "심연 사도는 심연 교단의 정예 적 집단으로 강력한 abyssal energy를 다루며, **심연 봉독자의 근접 대응**이지만 일부 원거리 공격도 쓴다.",
+        "text": "심연 사도는 심연 교단의 정예 적 집단으로 강력한 심연 에너지를 다루며, **심연 봉독자의 근접 대응**이지만 일부 원거리 공격도 쓴다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "전투에서는 칼날로 공격적인 원소 공격을 퍼붓고, 그중 일부는 디버프를 건다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전투에서는 칼날로 공격적인 원소 공격을 퍼붓고, 그중 일부는 디버프를 건다."
+      },
+      {
+       "t_raw": "HP가 낮아지면 단단한 **elemental Shield**를 만들며, 이 Shield는 올바른 Elemental Reactions로 파괴하는 것이 가장 효율적이고 파괴되면 곧바로 쓰러진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체력이 낮아지면 단단한 **원소 보호막**을 만들며, 이 보호막은 올바른 원소 반응으로 파괴하는 것이 가장 효율적이고 파괴되면 곧바로 쓰러진다.",
+       "polish": {
+        "from": "HP가 낮아지면 단단한 **elemental 보호막**을 만들며, 이 보호막은 올바른 원소 반응으로 파괴하는 것이 가장 효율적이고 파괴되면 곧바로 쓰러진다.",
+        "text": "체력이 낮아지면 단단한 **원소 보호막**을 만들며, 이 보호막은 올바른 원소 반응으로 파괴하는 것이 가장 효율적이고 파괴되면 곧바로 쓰러진다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Abyss Herald",
+       "revision": 1238424,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abyss Herald",
+       "revision": 1238424,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by M2 and M3.",
      "quote": "Abyss Herald: Frost Fall · Darkfrost Enchantment · 50 upon activation, 20 for subsequent activation 3s after first activation",
      "sentences": [
       {
-       "t_raw": "Abyss Herald의 **Frost Fall · Darkfrost Enchantment**는 발동 시 스태미나를 50 소모하고, 첫 발동 후 3초가 지난 뒤의 후속 발동에는 20을 소모한다.",
+       "t_raw": "Abyss Herald: Frost Fall의 Darkfrost Enchantment는 발동 시 Stamina를 50 소모하고, 3초 뒤 후속 발동에는 20을 소모한다.",
        "interp": false,
        "dropped": false,
-       "t": "심연 사도의 **서리 내림 · Darkfrost Enchantment**는 발동 시 스태미나를 50 소모하고, 첫 발동 후 3초가 지난 뒤의 후속 발동에는 20을 소모한다."
+       "t": "심연 사도: 서리 내림의 심연의 서리 부여는 발동 시 스태미나를 50 소모하고, 3초 뒤 후속 발동에는 20을 소모한다."
       },
       {
-       "t_raw": "Defiled Statue는 Mt. Aozang 주변의 Call of the Abyss 폐허에서 Abyss Herald와 함께 발견된다.",
+       "t_raw": "Defiled Statue는 Mt. Aozang 주변 Call of the Abyss ruins에서 Abyss Herald와 함께 발견되는 Statue of The Seven이다.",
        "interp": false,
        "dropped": false,
-       "t": "「뒤집힌 불결한 신상」은 Mt. 오장 주변의 「심연」의 유혹 폐허에서 심연 사도와 함께 발견된다."
-      },
-      {
-       "t_raw": "전투 기술의 수치와 유적에서의 동행이 나란히 남아 있는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "전투 기술의 수치와 유적에서의 동행이 나란히 남아 있는 셈이다."
+       "t": "「뒤집힌 불결한 신상」은 Mt. 오장 주변 「심연」의 유혹의 유적에서 심연 사도와 함께 발견되는 일곱신상이다.",
+       "polish": {
+        "from": "「뒤집힌 불결한 신상」은 Mt. 오장 주변 「심연」의 유혹 ruins에서 심연 사도와 함께 발견되는 일곱신상이다.",
+        "text": "「뒤집힌 불결한 신상」은 Mt. 오장 주변 「심연」의 유혹의 유적에서 심연 사도와 함께 발견되는 일곱신상이다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -1251,94 +1139,15 @@
      ],
      "heading": "여담",
      "latin_left": [
-      "Darkfrost Enchantment",
       "Mt"
      ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "An otherwise unnamed Hydro Abyss Herald encountered during 4 separate Archon Quests. It flees after fighting the Traveler the first three times, but in the Chasm, the Traveler finally defeats it. Its fate is unknown.",
-     "sentences": [
-      {
-       "t_raw": "이름이 따로 없는 Hydro Abyss Herald인 **Presager of the Abyss**는 4개의 Archon Quests에서 등장한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이름이 따로 없는 물 심연 사도인 **심연의 예언자**는 4개의 마신 임무에서 등장한다."
-      },
-      {
-       "t_raw": "Traveler와 싸운 뒤 처음 세 번은 도주하지만, Chasm에서는 마침내 Traveler에게 쓰러진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자와 싸운 뒤 처음 세 번은 도주하지만, 층암거연에서는 마침내 여행자에게 쓰러진다."
-      },
-      {
-       "t_raw": "그 뒤의 운명은 알려져 있지 않다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 뒤의 운명은 알려져 있지 않다."
-      },
-      {
-       "t_raw": "네 번의 등장 가운데 세 번은 도주로 끝나고 Chasm에서 쓰러지는 흐름인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "네 번의 등장 가운데 세 번은 도주로 끝나고 층암거연에서 쓰러지는 흐름인 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Abyss Herald",
-       "revision": 1238424,
-       "section": "Notable Abyss Heralds > \"Presager of the Abyss\"",
-       "paragraph": "A4",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
     }
    ],
    "quote_boxes": [
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아! Abyss Herald다! 이런 이상한 곳에서 대체 뭘 꾸미려는 거지?",
-     "en": "Ah! The Abyss Herald! What are you plotting to do in this strange place?",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Silent Seeker of Knowledge",
-      "quest_ko": "침묵하는 지식의 탐구자",
-      "version": "3.0",
-      "speaker": "Paimon"
-     },
-     "t": "아! 심연 사도다! 이런 이상한 곳에서 대체 뭘 꾸미려는 거지?",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "드러난 역사 — Wolvendom",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Abyss Herald조차 Wolf King of the North와 문제를 일으키고 싶어하지 않는 것처럼 보인다.",
-     "en": "It seems that even an Abyss Herald would not wish to make trouble with the Wolf King of the North.",
-     "speaker": "Dainsleif",
-     "source": {
-      "kind": "quest",
-      "quest": "Bough Keeper: Dainsleif",
-      "quest_ko": "「가지의 수호자」・데인슬레이프",
-      "version": "1.3",
-      "speaker": "Dainsleif"
-     },
-     "t": "심연 사도조차 Wolf King of the North와 문제를 일으키고 싶어하지 않는 것처럼 보인다.",
-     "speaker_ko": "데인슬레이프"
-    },
-    {
-     "section": "드러난 역사 — Defiled Statue",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — We Will Be Reunited와 Defiled Statue",
+     "status": "accepted",
+     "note": "Faithful translation of Q9.",
      "t_raw": "Defiled Statue의 힘에 압도되지 않도록 조심해— Abyss Herald가 여기 있어.",
      "en": "Be careful to not be overwhelmed by the power of the Defiled Statue— the Abyss Herald, it's here.",
      "speaker": "Dainsleif",
@@ -1353,10 +1162,10 @@
      "speaker_ko": "데인슬레이프"
     },
     {
-     "section": "드러난 역사 — Chasm과 Girdle of the Sands",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "휴우! 이 Abyss Herald를 아아아주 오래 쫓아다녔는데 — 이제 드디어 그를 잡았구나!",
+     "section": "작중 행적 — Chasm",
+     "status": "accepted",
+     "note": "Faithful translation of Q3.",
+     "t_raw": "휴! 너는 이 Abyss Herald를 아주 오래도록 쫓아다녔어 — 이제 마침내 그를 잡았구나!",
      "en": "Whew! You've been hunting this Abyss Herald for aaages — now you finally got him!",
      "speaker": "Paimon",
      "source": {
@@ -1366,14 +1175,31 @@
       "version": "2.6",
       "speaker": "Paimon"
      },
-     "t": "휴우! 이 심연 사도를 아아아주 오래 쫓아다녔는데 — 이제 드디어 그를 잡았구나!",
+     "t": "휴! 너는 이 심연 사도를 아주 오래도록 쫓아다녔어 — 이제 마침내 그를 잡았구나!",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "작중 행적 — Sumeru와 Great Songs",
+     "status": "accepted",
+     "note": "Faithful translation of Q1.",
+     "t_raw": "아! Abyss Herald! 이 낯선 곳에서 무엇을 꾸미려는 거지?",
+     "en": "Ah! The Abyss Herald! What are you plotting to do in this strange place?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Silent Seeker of Knowledge",
+      "quest_ko": "침묵하는 지식의 탐구자",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "아! 심연 사도! 이 낯선 곳에서 무엇을 꾸미려는 거지?",
      "speaker_ko": "페이몬"
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "흠, 이 부적은 Abyss Herald와 연결된 것 같군. 그런데 왜 Abyss Mage가 이걸 가지고 있었을까...?",
+     "status": "accepted",
+     "note": "Faithful translation of Q5.",
+     "t_raw": "흠, 이 부적은 Abyss Herald와 연결되어 있는 것 같아. 그런데 왜 Abyss Mage가 이걸 지니고 있는 거지...?",
      "en": "Hmm, this talisman seems connected to the Abyss Herald. But why would an Abyss Mage be carrying it...?",
      "speaker": "Dainsleif",
      "source": {
@@ -1383,25 +1209,42 @@
       "version": "1.4",
       "speaker": "Dainsleif"
      },
-     "t": "흠, 이 부적은 심연 사도와 연결된 것 같군. 그런데 왜 심연 메이지가 이걸 가지고 있었을까...?",
+     "t": "흠, 이 부적은 심연 사도와 연결되어 있는 것 같아. 그런데 왜 심연 메이지가 이걸 지니고 있는 거지...?",
      "speaker_ko": "데인슬레이프"
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "휴! 이 Abyss Herald를 아주 오래 추격해 왔는데 — 이제 드디어 잡았구나!",
-     "en": "Whew! You've been hunting this Abyss Herald for aaages — now you finally got him!",
-     "speaker": "Paimon",
+     "status": "accepted",
+     "note": "Faithful translation of the Dainsleif line.",
+     "t_raw": "음, 이 부적은 Abyss Herald와 연결된 것 같아. 그런데 왜 Abyss Mage가 이걸 지니고 있었을까...?",
+     "en": "Hmm, this talisman seems connected to the Abyss Herald. But why would an Abyss Mage be carrying it...?",
+     "speaker": "Dainsleif",
      "source": {
       "kind": "quest",
-      "quest": "Memories of Inteyvat",
-      "quest_ko": "인티바트의 기억",
-      "version": "2.6",
-      "speaker": "Paimon"
+      "quest": "A Herald Without Adherents",
+      "quest_ko": "신자 없는 사도",
+      "version": "1.4",
+      "speaker": "Dainsleif"
      },
-     "t": "휴! 이 심연 사도를 아주 오래 추격해 왔는데 — 이제 드디어 잡았구나!",
-     "speaker_ko": "페이몬"
+     "t": "음, 이 부적은 심연 사도와 연결된 것 같아. 그런데 왜 심연 메이지가 이걸 지니고 있었을까...?",
+     "speaker_ko": "데인슬레이프"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of the Dainsleif line (inverted statue, lucky, Abyss Herald).",
+     "t_raw": "돌아가서 뒤집힌 동상을 파괴하자. 운이 좋다면 그 Abyss Herald도 만나게 될 거다.",
+     "en": "Let's go back to and destroy the inverted statue. If we are lucky, we will also run into that Abyss Herald.",
+     "speaker": "Dainsleif",
+     "source": {
+      "kind": "quest",
+      "quest": "A Soul Set Apart",
+      "quest_ko": "엇갈린 영혼",
+      "version": "1.4",
+      "speaker": "Dainsleif"
+     },
+     "t": "돌아가서 뒤집힌 동상을 파괴하자. 운이 좋다면 그 심연 사도도 만나게 될 거다.",
+     "speaker_ko": "데인슬레이프"
     }
    ]
   }

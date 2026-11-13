@@ -1,0 +1,848 @@
+{
+ "node": "Heyu Tea House",
+ "articles": [
+  {
+   "node": "Heyu Tea House",
+   "from_version": "1.2",
+   "cutoff": "2021-02-02T00:00:00Z",
+   "input": [
+    {
+     "page": "Heyu Tea House",
+     "url": "https://genshin-impact.fandom.com/wiki/Heyu_Tea_House",
+     "revision": 80182
+    }
+   ],
+   "input_counts": {
+    "mentions": 6,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 414,
+   "input_cut": false,
+   "input_hash": "11e1f1cc2522",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, M5 and Q1.",
+     "quote": "Heyu Tea House is a teahouse in Liyue Harbor, located in the upstairs region of the city, just below Northland Bank and the upstairs part of Xinyue Kiosk.",
+     "sentences": [
+      {
+       "t_raw": "**Heyu Tea House**는 Liyue Harbor의 위층 구역, Northland Bank 바로 아래이자 Xinyue Kiosk의 위층 부분에 자리한 찻집이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**화유다관**은 리월항의 위층 구역, 북국 은행 바로 아래이자 신월헌의 위층 부분에 자리한 찻집이다."
+      },
+      {
+       "t_raw": "과거 공연으로 모은 재산으로 이곳을 사들인 **Fan Er'ye**가 현재 주인이며, **Yunjin**이 이곳과 연결되어 있고 Granny Ruoxin은 전성기에 Fan Er'ye와 함께 이곳에서 공연했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "과거 공연으로 모은 재산으로 이곳을 사들인 **범가 어르신**이 현재 주인이며, **운근**이 이곳과 연결되어 있고 약심은 전성기에 범가 어르신과 함께 이곳에서 공연했다."
+      },
+      {
+       "t_raw": "Fan Er'ye는 Tea Master Liu Su를 고용해 이야기꾼으로 두었고, Heyu Tea House는 최근 새 오페라 몇 편을 내놓았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "범가 어르신은 차 명인 유소를 고용해 이야기꾼으로 두었고, 화유다관은 최근 새 오페라 몇 편을 내놓았다."
+      },
+      {
+       "t_raw": "이처럼 Heyu Tea House는 Liyue Harbor의 공연과 여가가 겹치는 장소로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 화유다관은 리월항의 공연과 여가가 겹치는 장소로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tea Master Liu Su",
+       "revision": 43088,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "An Ode to Yonder City",
+       "quest_ko": "도시에 바치는 시",
+       "version": "1.1",
+       "speaker": "Fan Er'ye"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2 and M5.",
+     "quote": "Heyu Tea House is a teahouse in Liyue Harbor, located in the upstairs region of the city, just below Northland Bank and the upstairs part of Xinyue Kiosk.",
+     "sentences": [
+      {
+       "t_raw": "Heyu Tea House는 Liyue Harbor의 찻집으로, 도시의 위층 구역에서 Northland Bank와 Xinyue Kiosk의 위층 부분 바로 아래에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "화유다관은 리월항의 찻집으로, 도시의 위층 구역에서 북국 은행과 신월헌의 위층 부분 바로 아래에 자리한다."
+      },
+      {
+       "t_raw": "이곳에는 Yunjin이 소속되어 있고, Granny Ruoxin은 전성기에 Fan Er'ye와 함께 이곳에서 공연했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이곳에는 운근이 소속되어 있고, 약심은 전성기에 범가 어르신과 함께 이곳에서 공연했다."
+      },
+      {
+       "t_raw": "Tea Master Liu Su는 Northland Bank로 이어지는 계단 앞 무대에 서서 이야기꾼을 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "차 명인 유소는 북국 은행으로 이어지는 계단 앞 무대에 서서 이야기꾼을 맡는다."
+      },
+      {
+       "t_raw": "이처럼 Heyu Tea House는 **차와 공연, 이야기**가 겹치는 장소로 기능한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 화유다관은 **차와 공연, 이야기**가 겹치는 장소로 기능한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tea Master Liu Su",
+       "revision": 43088,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts are supported. The interpretation follows from ownership, the hiring of the storyteller, and the new operas.",
+     "quote": "Why, hello there, Traveler. Well, here's the problem: Heyu Tea House has released a few new operas lately.",
+     "sentences": [
+      {
+       "t_raw": "Heyu Tea House의 현재 소유자는 Fan Er'ye다.",
+       "interp": false,
+       "dropped": false,
+       "t": "화유다관의 현재 소유자는 범가 어르신다."
+      },
+      {
+       "t_raw": "그는 **공연자 시절의 재산**으로 이곳을 사들였고, Tea Master Liu Su를 이야기꾼으로 고용한 사람이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **공연자 시절의 재산**으로 이곳을 사들였고, 차 명인 유소를 이야기꾼으로 고용한 사람이기도 하다."
+      },
+      {
+       "t_raw": "Fan Er'ye는 Heyu Tea House가 최근 새 오페라 몇 편을 발표했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "범가 어르신은 화유다관이 최근 새 오페라 몇 편을 발표했다고 말한다."
+      },
+      {
+       "t_raw": "이 점에서 Fan Er'ye는 공연자 출신의 재산으로 찻집을 소유하면서 새 오페라와 이야기꾼이 있는 공간을 꾸리는 중심 인물인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 점에서 범가 어르신은 공연자 출신의 재산으로 찻집을 소유하면서 새 오페라와 이야기꾼이 있는 공간을 꾸리는 중심 인물인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tea Master Liu Su",
+       "revision": 43088,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "An Ode to Yonder City",
+       "quest_ko": "도시에 바치는 시",
+       "version": "1.1",
+       "speaker": "Fan Er'ye"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The facts are supported. The interpretation is reasonable given the stage.",
+     "quote": "Heyu Tea House is a teahouse in Liyue Harbor, located in the upstairs region of the city, just below Northland Bank and the upstairs part of Xinyue Kiosk.",
+     "sentences": [
+      {
+       "t_raw": "Heyu Tea House는 Liyue Harbor의 위쪽 지역에 있는 **찻집**으로, Northland Bank 바로 아래이자 Xinyue Kiosk의 위층 부분에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "화유다관은 리월항의 위쪽 지역에 있는 **찻집**으로, 북국 은행 바로 아래이자 신월헌의 위층 부분에 자리한다."
+      },
+      {
+       "t_raw": "Northland Bank로 이어지는 계단 앞 무대에는 Tea Master Liu Su가 서 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북국 은행으로 이어지는 계단 앞 무대에는 차 명인 유소가 서 있다."
+      },
+      {
+       "t_raw": "이 위치에 무대가 놓인 점을 보면, Heyu Tea House는 찻집이면서 **공연 공간**으로 기능한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 위치에 무대가 놓인 점을 보면, 화유다관은 찻집이면서 **공연 공간**으로 기능한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tea Master Liu Su",
+       "revision": 43088,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The Xingqiu detail comes from M1, which is from Xingqiu's profile. The other sentences are supported.",
+     "quote": "Why, hello there, Traveler. Well, here's the problem: Heyu Tea House has released a few new operas lately.",
+     "sentences": [
+      {
+       "t_raw": "현재 주인 Fan Er'ye는 공연자 시절 모은 재산으로 Heyu Tea House를 사들였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 주인 범가 어르신은 공연자 시절 모은 재산으로 화유다관을 사들였다."
+      },
+      {
+       "t_raw": "Yunjin은 이곳과 연계되어 있고, Xingqiu는 Yunjin의 최신 음료를 맛보러 Heyu Tea House를 찾는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운근은 이곳과 연계되어 있고, 행추는 운근의 최신 음료를 맛보러 화유다관을 찾는다."
+      },
+      {
+       "t_raw": "Fan Er'ye는 Heyu Tea House가 최근 새 오페라 몇 편을 공개했다고 말하며, 그가 고용한 Tea Master Liu Su는 **이야기꾼**으로 무대에 선다.",
+       "interp": false,
+       "dropped": false,
+       "t": "범가 어르신은 화유다관이 최근 새 오페라 몇 편을 공개했다고 말하며, 그가 고용한 차 명인 유소는 **이야기꾼**으로 무대에 선다."
+      },
+      {
+       "t_raw": "차를 마시는 곳에 오페라와 이야기꾼이 더해진 셈이라, 이곳은 여러 즐길 거리가 겹치는 장소로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "차를 마시는 곳에 오페라와 이야기꾼이 더해진 셈이라, 이곳은 여러 즐길 거리가 겹치는 장소로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Xingqiu/Profile",
+       "revision": 93117,
+       "section": "Character Stories > Story 1",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tea Master Liu Su",
+       "revision": 43088,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "An Ode to Yonder City",
+       "quest_ko": "도시에 바치는 시",
+       "version": "1.1",
+       "speaker": "Fan Er'ye"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Supported by A2, and the interpretation is mild.",
+     "quote": "Using his wealth from his days as a performer, Fan Er'ye purchased the Heyu Tea House some time in the past and is its current owner.",
+     "sentences": [
+      {
+       "t_raw": "Fan Er'ye는 공연자 시절 모은 재산으로 과거 어느 시점 Heyu Tea House를 사들였고, 현재 소유자다.",
+       "interp": false,
+       "dropped": false,
+       "t": "범가 어르신은 공연자 시절 모은 재산으로 과거 어느 시점 화유다관을 사들였고, 현재 소유자다."
+      },
+      {
+       "t_raw": "공연자 시절의 재산이 찻집 구매로 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "공연자 시절의 재산이 찻집 구매로 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences are supported by A2, M3 and M6.",
+     "quote": "I used to be an actress at the Heyu Tea House. I was living the high life, but when you're always acting there's a sense in which you lose touch with reality.",
+     "sentences": [
+      {
+       "t_raw": "Granny Ruoxin은 Liyue Harbor에서 자라 Heyu Tea House에서 배우로 일했고, Fan Er'ye와 함께 그곳에서 전성기에 공연했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약심은 리월항에서 자라 화유다관에서 배우로 일했고, 범가 어르신과 함께 그곳에서 전성기에 공연했다."
+      },
+      {
+       "t_raw": "Granny Ruoxin은 당시를 호화로운 생활로 표현하면서도, 늘 연기하다 보면 현실과 접점을 잃는 면이 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약심은 당시를 호화로운 생활로 표현하면서도, 늘 연기하다 보면 현실과 접점을 잃는 면이 있다고 말한다."
+      },
+      {
+       "t_raw": "**전성기**의 무대는 화려한 삶과 현실 감각의 상실을 함께 안고 있었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**전성기**의 무대는 화려한 삶과 현실 감각의 상실을 함께 안고 있었던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Granny Ruoxin",
+       "revision": 72072,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Granny Ruoxin",
+       "revision": 72072,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Supported by M6. The interpretation is reasonable.",
+     "quote": "Although the man promised to settle down with her at Mt. Qingce, he left on an expedition and never returned.",
+     "sentences": [
+      {
+       "t_raw": "Granny Ruoxin은 Heyu Tea House에서 함께 일하던 남자와 함께 호화로운 생활을 떠나 시골로 옮기기로 결정했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약심은 화유다관에서 함께 일하던 남자와 함께 호화로운 생활을 떠나 시골로 옮기기로 결정했다."
+      },
+      {
+       "t_raw": "남자는 Mt. Qingce에서 그녀와 정착하겠다고 약속했지만, 원정을 떠난 뒤 돌아오지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "남자는 Mt. 경책에서 그녀와 정착하겠다고 약속했지만, 원정을 떠난 뒤 돌아오지 않았다."
+      },
+      {
+       "t_raw": "함께 떠나기로 한 결정과 정착 약속은 남자의 **미귀환**으로 완결되지 못한 채 남는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "함께 떠나기로 한 결정과 정착 약속은 남자의 **미귀환**으로 완결되지 못한 채 남는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Granny Ruoxin",
+       "revision": 72072,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": [
+      "Mt"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by A2 and M1. The interpretation is hedged ('보인다').",
+     "quote": "going to Heyu Tea House to sample Yunjin's latest drink.",
+     "sentences": [
+      {
+       "t_raw": "Yunjin은 Heyu Tea House에 소속되어 있고, Xingqiu는 그곳에서 Yunjin의 최신 음료를 맛본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운근은 화유다관에 소속되어 있고, 행추는 그곳에서 운근의 최신 음료를 맛본다."
+      },
+      {
+       "t_raw": "Yunjin이 Heyu Tea House와 연결되어 있고 Xingqiu가 그곳에서 그녀의 최신 음료를 맛본다는 점에서, 이곳은 Yunjin의 새 음료가 소개되는 자리로도 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "운근이 화유다관과 연결되어 있고 행추가 그곳에서 그녀의 최신 음료를 맛본다는 점에서, 이곳은 운근의 새 음료가 소개되는 자리로도 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Xingqiu/Profile",
+       "revision": 93117,
+       "section": "Character Stories > Story 1",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by A2, M4 and M5. The interpretation is hedged.",
+     "quote": "He was hired by Fan Er'ye, boss of the Heyu Tea House, to serve as its storyteller.",
+     "sentences": [
+      {
+       "t_raw": "Fan Er'ye는 공연자 시절의 재산으로 Heyu Tea House를 사들인 현재 **소유자**이며, 하루 중 어느 때든 그곳에서 만날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "범가 어르신은 공연자 시절의 재산으로 화유다관을 사들인 현재 **소유자**이며, 하루 중 어느 때든 그곳에서 만날 수 있다."
+      },
+      {
+       "t_raw": "그는 Tea Master Liu Su를 **이야기꾼**으로 고용했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 차 명인 유소를 **이야기꾼**으로 고용했다."
+      },
+      {
+       "t_raw": "공연자로 번 재산으로 찻집을 사들인 Fan Er'ye가 Liu Su를 이야기꾼으로 고용했다는 점에서, 이곳의 이야기 프로그램은 소유자의 선택과 관련된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "공연자로 번 재산으로 찻집을 사들인 범가 어르신이 유소를 이야기꾼으로 고용했다는 점에서, 이곳의 이야기 프로그램은 소유자의 선택과 관련된다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fan Er'ye",
+       "revision": 72339,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tea Master Liu Su",
+       "revision": 43088,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M2, M6 and A2.",
+     "quote": "If I were to go to Heyu Tea House and speak before the ladies and gentlemen of Yujing Terrace...",
+     "sentences": [
+      {
+       "t_raw": "Iron Tongue Tian은 Heyu Tea House에 가서 Yujing Terrace의 신사 숙녀들 앞에서 말하는 상황을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전달변은 화유다관에 가서 옥경대의 신사 숙녀들 앞에서 말하는 상황을 언급한다."
+      },
+      {
+       "t_raw": "Granny Ruoxin은 Liyue Harbor에서 자라 Heyu Tea House의 배우로 일했고, **전성기**에는 Fan Er'ye와 함께 공연했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약심은 리월항에서 자라 화유다관의 배우로 일했고, **전성기**에는 범가 어르신과 함께 공연했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Iron Tongue Tian",
+       "revision": 45254,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Granny Ruoxin",
+       "revision": 72072,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by M6. The interpretation only raises a question and asserts no new fact.",
+     "quote": "Although the man promised to settle down with her at Mt. Qingce, he left on an expedition and never returned.",
+     "sentences": [
+      {
+       "t_raw": "Granny Ruoxin은 Liyue Harbor에서 자라 Heyu Tea House의 배우로 일했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약심은 리월항에서 자라 화유다관의 배우로 일했다."
+      },
+      {
+       "t_raw": "그녀와 함께 일하던 남자도 화려한 생활을 떠나 시골로 가기로 했고, 남자는 Mt. Qingce에서 함께 정착하겠다고 약속했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀와 함께 일하던 남자도 화려한 생활을 떠나 시골로 가기로 했고, 남자는 Mt. 경책에서 함께 정착하겠다고 약속했다."
+      },
+      {
+       "t_raw": "그러나 남자는 원정을 떠난 뒤 돌아오지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 남자는 원정을 떠난 뒤 돌아오지 않았다."
+      },
+      {
+       "t_raw": "**약속한 정착지**와 실제 행방 사이의 간격은 그가 왜 돌아오지 않았는지에 대한 물음을 남긴다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**약속한 정착지**와 실제 행방 사이의 간격은 그가 왜 돌아오지 않았는지에 대한 물음을 남긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Granny Ruoxin",
+       "revision": 72072,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Mt"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All supported: the man is unnamed, Fan Er'ye performed with her, and the text never says they are the same person.",
+     "quote": "Granny Ruoxin used to perform there alongside Fan Er'ye in their heyday.",
+     "sentences": [
+      {
+       "t_raw": "Granny Ruoxin이 함께 일하던 남자는 이름 없이 남아 있고, Heyu Tea House의 전성기에는 Fan Er'ye가 그녀와 함께 공연했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약심이 함께 일하던 남자는 이름 없이 남아 있고, 화유다관의 전성기에는 범가 어르신이 그녀와 함께 공연했다."
+      },
+      {
+       "t_raw": "두 사실을 겹쳐 보면 이름 없는 남자와 Fan Er'ye를 떠올릴 수 있지만, **동일 인물이라는 확인**은 없다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 사실을 겹쳐 보면 이름 없는 남자와 범가 어르신을 떠올릴 수 있지만, **동일 인물이라는 확인**은 없다."
+      },
+      {
+       "t_raw": "그 남자의 원정과 미귀환은 Granny Ruoxin의 과거에 남은 **미해결의 수수께끼**로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 남자의 원정과 미귀환은 약심의 과거에 남은 **미해결의 수수께끼**로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Granny Ruoxin",
+       "revision": 72072,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Heyu Tea House",
+       "revision": 80182,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by M1; the interpretation is a mild, reasonable reading.",
+     "quote": "Examples include visiting Wanwen Bookhouse to peruse the latest novels, and going to Heyu Tea House to sample Yunjin's latest drink.",
+     "sentences": [
+      {
+       "t_raw": "Xingqiu는 최신 소설을 보러 Wanwen Bookhouse에 들르는 일과 Heyu Tea House에서 Yunjin의 **최신 음료**를 맛보는 일을 함께 하는 인물로 그려진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "행추는 최신 소설을 보러 만문집사에 들르는 일과 화유다관에서 운근의 **최신 음료**를 맛보는 일을 함께 하는 인물로 그려진다."
+      },
+      {
+       "t_raw": "책을 찾는 발걸음과 차를 맛보는 발걸음이 같은 취향의 연장선에 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "책을 찾는 발걸음과 차를 맛보는 발걸음이 같은 취향의 연장선에 놓인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Xingqiu/Profile",
+       "revision": 93117,
+       "section": "Character Stories > Story 1",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by M2; the interpretation about the audience is reasonable.",
+     "quote": "Iron Tongue Tian: Don't be so skeptical. If I were to go to Heyu Tea House and speak before the ladies and gentlemen of Yujing Terrace...",
+     "sentences": [
+      {
+       "t_raw": "Iron Tongue Tian은 Heyu Tea House에 가서 **Yujing Terrace의 신사 숙녀들** 앞에서 말하는 상황을 가정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전달변은 화유다관에 가서 **옥경대의 신사 숙녀들** 앞에서 말하는 상황을 가정한다."
+      },
+      {
+       "t_raw": "그의 말에서 Heyu Tea House의 무대는 Yujing Terrace의 신사 숙녀들과 연결된 청중을 떠올리게 하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그의 말에서 화유다관의 무대는 옥경대의 신사 숙녀들과 연결된 청중을 떠올리게 하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Iron Tongue Tian",
+       "revision": 45254,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Owner, present at all times, and time-dependent dialogue are all stated in M4.",
+     "quote": "His dialogue changes based on the time of day that you speak to him.",
+     "sentences": [
+      {
+       "t_raw": "Fan Er'ye는 Heyu Tea House의 주인으로서 하루 종일 그곳에 머문다.",
+       "interp": false,
+       "dropped": false,
+       "t": "범가 어르신은 화유다관의 주인으로서 하루 종일 그곳에 머문다."
+      },
+      {
+       "t_raw": "같은 자리에 있는 그를 만나도 **시간대에 따라 대사가 달라지므로**, 하루의 흐름이 인물의 말에 배어나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 자리에 있는 그를 만나도 **시간대에 따라 대사가 달라지므로**, 하루의 흐름이 인물의 말에 배어나는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fan Er'ye",
+       "revision": 72339,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Q1.",
+     "t_raw": "어, 안녕하세요, Traveler. 음, 문제가 있어요: Heyu Tea House가 최근에 새 오페라 몇 편을 발표했거든요.",
+     "en": "Why, hello there, Traveler. Well, here's the problem: Heyu Tea House has released a few new operas lately.",
+     "speaker": "Fan Er'ye",
+     "source": {
+      "kind": "quest",
+      "quest": "An Ode to Yonder City",
+      "quest_ko": "도시에 바치는 시",
+      "version": "1.1",
+      "speaker": "Fan Er'ye"
+     },
+     "t": "어, 안녕하세요, 여행자. 음, 문제가 있어요: 화유다관이 최근에 새 오페라 몇 편을 발표했거든요.",
+     "speaker_ko": "범가 어르신"
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation of Q1.",
+     "t_raw": "이런, 안녕하세요, Traveler. 그런데 문제가 있어요. Heyu Tea House가 최근 새 오페라 몇 편을 공개했거든요.",
+     "en": "Why, hello there, Traveler. Well, here's the problem: Heyu Tea House has released a few new operas lately.",
+     "speaker": "Fan Er'ye",
+     "source": {
+      "kind": "quest",
+      "quest": "An Ode to Yonder City",
+      "quest_ko": "도시에 바치는 시",
+      "version": "1.1",
+      "speaker": "Fan Er'ye"
+     },
+     "t": "이런, 안녕하세요, 여행자. 그런데 문제가 있어요. 화유다관이 최근 새 오페라 몇 편을 공개했거든요.",
+     "speaker_ko": "범가 어르신"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of the Fan Er'ye line; all content matches.",
+     "t_raw": "안녕하세요, Traveler. 음, 문제는 이겁니다: Heyu Tea House가 최근에 새 오페라 몇 편을 발표했습니다.",
+     "en": "Why, hello there, Traveler. Well, here's the problem: Heyu Tea House has released a few new operas lately.",
+     "speaker": "Fan Er'ye",
+     "source": {
+      "kind": "quest",
+      "quest": "An Ode to Yonder City",
+      "quest_ko": "도시에 바치는 시",
+      "version": "1.1",
+      "speaker": "Fan Er'ye"
+     },
+     "t": "안녕하세요, 여행자. 음, 문제는 이겁니다: 화유다관이 최근에 새 오페라 몇 편을 발표했습니다.",
+     "speaker_ko": "범가 어르신"
+    }
+   ]
+  }
+ ]
+}

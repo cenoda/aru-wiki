@@ -1,0 +1,669 @@
+{
+ "node": "HP",
+ "articles": [
+  {
+   "node": "HP",
+   "from_version": "1.6",
+   "cutoff": "2021-07-20T00:00:00Z",
+   "input": [
+    {
+     "page": "HP",
+     "url": "https://genshin-impact.fandom.com/wiki/HP",
+     "revision": 230999
+    }
+   ],
+   "input_counts": {
+    "mentions": 6,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 1069,
+   "input_cut": false,
+   "input_hash": "2e6a67e76300",
+   "writer": "kimi,ds,ds-pro,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1/A2; the interpretation in (3) follows reasonably.",
+     "quote": "If your HP reaches 0, your character will become incapacitated, and another character in your team will be brought onto the field.",
+     "sentences": [
+      {
+       "t_raw": "HP는 '체력' 또는 '생명점'을 뜻하는 약자로, 캐릭터가 지닌 **생명력의 양**을 나타내는 수치다.",
+       "interp": false,
+       "dropped": false,
+       "t": "HP는 '체력' 또는 '생명점'을 뜻하는 약자로, 캐릭터가 지닌 **생명력의 양**을 나타내는 수치다."
+      },
+      {
+       "t_raw": "이 수치가 0에 도달하면 캐릭터는 행동 불능이 되어 팀의 다른 캐릭터가 전장에 투입되며, 전원이 쓰러지면 가장 가까운 워프 포인트에서 HP 50% 미만으로 자동 부활한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 수치가 0에 도달하면 캐릭터는 행동 불능이 되어 팀의 다른 캐릭터가 전장에 투입되며, 전원이 쓰러지면 가장 가까운 워프 포인트에서 HP 50% 미만으로 자동 부활한다."
+      },
+      {
+       "t_raw": "또한 음식, 치유형 천부, 캐릭터나 무기의 패시브, **Statue of the Seven** 방문 등으로 HP를 회복할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 음식, 치유형 천부, 캐릭터나 무기의 패시브, **일곱신상** 방문 등으로 HP를 회복할 수 있다."
+      },
+      {
+       "t_raw": "따라서 HP와 이를 늘릴 수 있는 **Max HP**는 전투에서 캐릭터의 생존 여부를 가늠하는 핵심 수치라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 HP와 이를 늘릴 수 있는 **Max HP**는 전투에서 캐릭터의 생존 여부를 가늠하는 핵심 수치라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "HP",
+       "revision": 230999,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "HP",
+       "revision": 230999,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "HP",
+      "HP",
+      "HP",
+      "HP",
+      "Max HP"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A1. '전투 중' is a minor framing, not a new fact.",
+     "quote": "If your HP reaches 0, your character will become incapacitated, and another character in your team will be brought onto the field.",
+     "sentences": [
+      {
+       "t_raw": "HP, 즉 Health/Health Points는 캐릭터가 지닌 생명력의 양을 나타내는 지표이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "HP, 즉 Health/Health Points는 캐릭터가 지닌 생명력의 양을 나타내는 지표이다."
+      },
+      {
+       "t_raw": "전투 중 HP가 **0이 되는 순간**, 해당 캐릭터는 전투불능이 되고 파티의 다른 캐릭터가 필드로 교체된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전투 중 HP가 **0이 되는 순간**, 해당 캐릭터는 전투불능이 되고 파티의 다른 캐릭터가 필드로 교체된다."
+      },
+      {
+       "t_raw": "만약 모든 캐릭터의 HP가 바닥나면 가장 가까운 teleport waypoint에서 50% 미만의 HP로 자동 **부활**한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "만약 모든 캐릭터의 HP가 바닥나면 가장 가까운 전송 닻에서 50% 미만의 HP로 자동 **부활**한다.",
+       "polish": {
+        "from": "만약 모든 캐릭터의 HP가 바닥나면 가장 가까운 teleport waypoint에서 50% 미만의 HP로 자동 **부활**한다.",
+        "text": "만약 모든 캐릭터의 HP가 바닥나면 가장 가까운 전송 닻에서 50% 미만의 HP로 자동 **부활**한다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "HP",
+       "revision": 230999,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "HP",
+      "Health",
+      "Health Points",
+      "HP",
+      "HP",
+      "HP"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Healing methods match A1. The interpretation in (1) is a reasonable reading.",
+     "quote": "HP can be restored by eating food, by using talents, character passives, or weapon passive that heal, or by visiting a Statue of the Seven.",
+     "sentences": [
+      {
+       "t_raw": "HP는 음식을 먹거나 치유 효과가 있는 재능, 캐릭터 패시브, 무기 패시브를 사용하는 것으로 회복되며, Statue of the Seven을 방문해도 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "HP는 음식을 먹거나 치유 효과가 있는 재능, 캐릭터 패시브, 무기 패시브를 사용하는 것으로 회복되며, 일곱신상을 방문해도 된다."
+      },
+      {
+       "t_raw": "이처럼 **음식과 치유**라는 일상적 수단에서 신성한 조각상에 이르기까지, HP는 단순한 전투용 수치가 아니라 여러 회복 경로를 가진 생명력 지표라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 **음식과 치유**라는 일상적 수단에서 신성한 조각상에 이르기까지, HP는 단순한 전투용 수치가 아니라 여러 회복 경로를 가진 생명력 지표라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "HP",
+       "revision": 230999,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "HP",
+      "HP"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Max HP definition, ways to raise it, flower artifacts and formula all appear in A2/A3. (4) is a fair interpretation of the formula.",
+     "quote": "The relevant in-game attribute is Max HP — the current maximum HP of a character.",
+     "sentences": [
+      {
+       "t_raw": "Max HP는 캐릭터의 현재 최대 HP를 나타내는 게임 내 핵심 수치다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Max HP는 캐릭터의 현재 최대 HP를 나타내는 게임 내 핵심 수치다."
+      },
+      {
+       "t_raw": "Max HP는 캐릭터 레벨 상승과 HP 상승 효과가 있는 무기·유물 장착으로 키울 수 있으며, 무기와 유물을 강화하면 HP 보너스도 커진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Max HP는 캐릭터 레벨 상승과 HP 상승 효과가 있는 무기·유물 장착으로 키울 수 있으며, 무기와 유물을 강화하면 HP 보너스도 커진다."
+      },
+      {
+       "t_raw": "또한 모든 꽃 유물은 HP를 올려 주므로 HP 확보에 특히 유리하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 모든 꽃 유물은 HP를 올려 주므로 HP 확보에 특히 유리하다."
+      },
+      {
+       "t_raw": "이러한 Max HP는 **기본 HP × (1 + HP% 보너스) + 고정 HP 보너스** 공식으로 계산된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이러한 Max HP는 **기본 HP × (1 + HP% 보너스) + 고정 HP 보너스** 공식으로 계산된다."
+      },
+      {
+       "t_raw": "이처럼 HP% 보너스는 기본 HP에 곱해져 증가 폭이 커지고, 고정 보너스는 그 위에 더해지는 구조라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 HP% 보너스는 기본 HP에 곱해져 증가 폭이 커지고, 고정 보너스는 그 위에 더해지는 구조라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "HP",
+       "revision": 230999,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "HP",
+       "revision": 230999,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "Max HP",
+      "HP",
+      "Max HP",
+      "HP",
+      "HP",
+      "HP",
+      "HP",
+      "Max HP",
+      "HP",
+      "HP",
+      "HP",
+      "HP",
+      "HP"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "HP-scaling talents and constellations are in A4/A5. (1) follows from them and is framed as interpretation.",
+     "quote": "These talents scale with the character's HP.",
+     "sentences": [
+      {
+       "t_raw": "**HP Scaling**은 캐릭터의 HP에 비례해 효과가 정해지는 천부와 별자리를 일컫는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**HP Scaling**은 캐릭터의 HP에 비례해 효과가 정해지는 천부와 별자리를 일컫는다."
+      },
+      {
+       "t_raw": "이러한 천부와 별자리는 HP 수치가 높아질수록 위력이 커지는 셈이므로, Max HP를 높이는 것이 해당 능력의 수치를 끌어올리는 직접적인 방법이 되기도 한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이러한 천부와 별자리는 HP 수치가 높아질수록 위력이 커지는 셈이므로, Max HP를 높이는 것이 해당 능력의 수치를 끌어올리는 직접적인 방법이 되기도 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "HP",
+       "revision": 230999,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "HP",
+       "revision": 230999,
+       "section": "HP Scaling Talents",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "HP",
+       "revision": 230999,
+       "section": "HP Scaling Constellations",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "HP Scaling",
+      "HP",
+      "HP",
+      "Max HP"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력 — Inazuma",
+     "status": "accepted",
+     "note": "All sentences match M3. The wording in (3) of not resenting is slightly loose, since the resentment in the source is toward the friend, but it is not a new fact.",
+     "quote": "He drew his sword and stormed into Tenshukaku like a whirlwind... But alas, he arrived too late.",
+     "sentences": [
+      {
+       "t_raw": "Vision Hunt Decree가 내려지자 Kazuha는 정체를 숨겼고, 친구가 **duel before the throne**을 청했다는 소식에 Tenshukaku로 뛰어들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "안수령이 내려지자 카즈하는 정체를 숨겼고, 친구가 **duel before the throne**을 청했다는 소식에 천수각으로 뛰어들었다."
+      },
+      {
+       "t_raw": "친구는 강한 상대와 겨루고 모두에게 용기를 보이려 모든 것을 걸었으나, Kazuha가 도착했을 때 검은 부서지고 Vision은 빈 껍데기가 되어 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "친구는 강한 상대와 겨루고 모두에게 용기를 보이려 모든 것을 걸었으나, 카즈하가 도착했을 때 검은 부서지고 신의 눈은 빈 껍데기가 되어 있었다."
+      },
+      {
+       "t_raw": "그날부터 그는 쫓기는 몸이 되어 슬픔 속에 도망쳤고, 평온한 방랑은 끝나 끝없는 전투가 이어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그날부터 그는 쫓기는 몸이 되어 슬픔 속에 도망쳤고, 평온한 방랑은 끝나 끝없는 전투가 이어졌다."
+      },
+      {
+       "t_raw": "친구를 구하러 간 일을 후회하지도 원망하지도 않았지만, 이상을 내세우는 길이 끝없는 갈등뿐인지 물었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "친구를 구하러 간 일을 후회하지도 원망하지도 않았지만, 이상을 내세우는 길이 끝없는 갈등뿐인지 물었다."
+      },
+      {
+       "t_raw": "모든 것을 건 결투를 향해 달려갔으나 이미 끝난 패배를 마주한 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "모든 것을 건 결투를 향해 달려갔으나 이미 끝난 패배를 마주한 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kaedehara Kazuha/Profile",
+       "revision": 240113,
+       "section": "Character Stories > Story 4",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력 — 이나즈마",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력 — Inazuma",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "The sailor in question was picked up when the Alcor docked at the Inazuman port of Ritou.",
+     "sentences": [
+      {
+       "t_raw": "후에 Liyue의 함대 Crux가 Ritou에 정박했을 때, Kazuha는 기함 **Alcor**에서 선원으로 받아들여졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "후에 리월의 함대 남십자가 이도(離島)에 정박했을 때, 카즈하는 기함 **사조성호**에서 선원으로 받아들여졌다."
+      },
+      {
+       "t_raw": "Beidou는 선원들에게 그를 잘 돌보라 했고, 선원들은 그의 무예와 날씨 읽는 능력을 존중해 과거를 캐묻지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북두는 선원들에게 그를 잘 돌보라 했고, 선원들은 그의 무예와 날씨 읽는 능력을 존중해 과거를 캐묻지 않았다."
+      },
+      {
+       "t_raw": "그래도 호기심에 여러 핑계로 떠보았으나 그는 침묵했고, Juza가 이름을 묻자 Kaedehara Kazuha, 떠도는 사무라이라 밝혔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 호기심에 여러 핑계로 떠보았으나 그는 침묵했고, 중재가 이름을 묻자 카에데하라 카즈하, 떠도는 사무라이라 밝혔다."
+      },
+      {
+       "t_raw": "과거를 말하지 않던 그가 Alcor에 머물며 마침내 이름을 내어놓은 일은, 그가 새 울타리에 몸을 의탁했음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "과거를 말하지 않던 그가 사조성호에 머물며 마침내 이름을 내어놓은 일은, 그가 새 울타리에 몸을 의탁했음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kaedehara Kazuha/Profile",
+       "revision": 240113,
+       "section": "Character Stories > Story 1",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력 — 이나즈마",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력 — Liyue",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Azhdaha would never forgive Morax for his supposed \"betrayal\", and was eventually able to manifest a portion of his power into a vessel called Jiu.",
+     "sentences": [
+      {
+       "t_raw": "Azhdaha는 자신의 처지를 Morax의 이른바 \"배신\"으로 여기며 끝내 용서하지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야타용왕은 자신의 처지를 모락스의 이른바 \"배신\"으로 여기며 끝내 용서하지 않았다."
+      },
+      {
+       "t_raw": "그는 결국 자신의 힘 일부를 Jiu라는 그릇으로 구현해냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 결국 자신의 힘 일부를 옥구라는 그릇으로 구현해냈다."
+      },
+      {
+       "t_raw": "Jiu는 창조자의 Morax 증오를 그대로 이어받았지만, 그릇이 어린아이의 모습이었던 탓에 마주친 이들은 그 분노를 가볍게 넘겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "옥구는 창조자의 모락스 증오를 그대로 이어받았지만, 그릇이 어린아이의 모습이었던 탓에 마주친 이들은 그 분노를 가볍게 넘겼다."
+      },
+      {
+       "t_raw": "분노의 실체와 겉모습이 이처럼 어긋나 있었으니, Jiu의 증오가 주변에서 좀처럼 위협으로 읽히지 않은 것도 무리는 아닌 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "분노의 실체와 겉모습이 이처럼 어긋나 있었으니, 옥구의 증오가 주변에서 좀처럼 위협으로 읽히지 않은 것도 무리는 아닌 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Azhdaha",
+       "revision": 191617,
+       "section": "Profile",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력 — 리월",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력 — Liyue",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Azhdaha then decided to break free from his prison by having Jiu manipulate a group of miners from The Chasm to travel to the Dragon-Queller to unearth the seal",
+     "sentences": [
+      {
+       "t_raw": "Azhdaha는 감옥에서 벗어나기 위해 Jiu를 시켜 The Chasm의 광부 무리를 Dragon-Queller로 향하게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야타용왕은 감옥에서 벗어나기 위해 옥구를 시켜 층암거연의 광부 무리를 복룡목으로 향하게 했다."
+      },
+      {
+       "t_raw": "광부들의 곡괭이와 자신의 공격으로 봉인이 부서지면 다시 Liyue를 누비며 복수할 수 있다는 계산이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "광부들의 곡괭이와 자신의 공격으로 봉인이 부서지면 다시 리월을 누비며 복수할 수 있다는 계산이었다."
+      },
+      {
+       "t_raw": "그 자신도 알지 못한 채, 이 **봉인 파괴** 시도는 남아 있던 **선한 의식**이 빠져나오는 길을 열어 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 자신도 알지 못한 채, 이 **봉인 파괴** 시도는 남아 있던 **선한 의식**이 빠져나오는 길을 열어 주었다."
+      },
+      {
+       "t_raw": "선한 의식은 인간 Kun Jun에게 빙의해 Morax에게 음모를 경고했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "선한 의식은 인간 곤균에게 빙의해 모락스에게 음모를 경고했다."
+      },
+      {
+       "t_raw": "봉인을 깨려는 계획이 봉인을 지키는 이들에게 판을 알려 준 셈이니, 결과는 계획의 의도와 정반대로 돌아간 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "봉인을 깨려는 계획이 봉인을 지키는 이들에게 판을 알려 준 셈이니, 결과는 계획의 의도와 정반대로 돌아간 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Azhdaha",
+       "revision": 191617,
+       "section": "Profile",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력 — 리월",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력 — Liyue",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "The crazed Azhdaha appeared to regain part of his sanity after exhausting his strength before being resealed, while the benevolent consciousness peacefully bid farewell to Morax.",
+     "sentences": [
+      {
+       "t_raw": "결국 Azhdaha는 Traveler, Morax의 인간 그릇인 Zhongli, 그리고 자신의 선한 의식과 맞서 싸우다 패배했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "결국 야타용왕은 여행자, 모락스의 인간 그릇인 종려, 그리고 자신의 선한 의식과 맞서 싸우다 패배했다."
+      },
+      {
+       "t_raw": "광기에 사로잡혔던 Azhdaha는 힘을 다하고 나서야 정신의 일부를 되찾은 듯 보였고, 그렇게 다시 봉인되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "광기에 사로잡혔던 야타용왕은 힘을 다하고 나서야 정신의 일부를 되찾은 듯 보였고, 그렇게 다시 봉인되었다."
+      },
+      {
+       "t_raw": "선한 의식은 Morax에게 조용히 작별을 고했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "선한 의식은 모락스에게 조용히 작별을 고했다."
+      },
+      {
+       "t_raw": "자신의 일부가 자신을 막는 쪽에 섰다는 점에서, 이 싸움은 봉인을 둘러싼 대결인 동시에 Azhdaha 내부가 갈라진 자리였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자신의 일부가 자신을 막는 쪽에 섰다는 점에서, 이 싸움은 봉인을 둘러싼 대결인 동시에 야타용왕 내부가 갈라진 자리였던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Azhdaha",
+       "revision": 191617,
+       "section": "Profile",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력 — 리월",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 3 states as fact that the hut was a bake-danuki's prank. In the English, Kazuha only says 'I think you might have been the victim of a bake-danuki's prank.' That is a guess, not a confirmed fact.",
+     "quote": "The wind is weaker where there are houses. Yet here stood a hut, and there was no change in the mountain breeze.",
+     "sentences": [
+      {
+       "t_raw": "Kazuha가 지닌 재주 가운데 하나는 자연의 소리를 읽는 능력으로, 야외를 떠도는 여행자라면 이런 기술 하나쯤은 갖추게 마련이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카즈하가 지닌 재주 가운데 하나는 자연의 소리를 읽는 능력으로, 야외를 떠도는 여행자라면 이런 기술 하나쯤은 갖추게 마련이라고 한다."
+      },
+      {
+       "t_raw": "초여름 폭우로 산길이 진흙이 된 어느 날, 그는 길 끝의 작은 초가집을 보자 잠시 귀를 기울인 뒤 그곳을 피하는 편이 좋겠다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "초여름 폭우로 산길이 진흙이 된 어느 날, 그는 길 끝의 작은 초가집을 보자 잠시 귀를 기울인 뒤 그곳을 피하는 편이 좋겠다고 말했다."
+      },
+      {
+       "t_raw": "집이 있는 곳에서는 바람이 약해지는데 그 초가집 곁에서는 산바람이 달라지지 않았다는 것이 그의 설명이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "집이 있는 곳에서는 바람이 약해지는데 그 초가집 곁에서는 산바람이 달라지지 않았다는 것이 그의 설명이었다."
+      },
+      {
+       "t_raw": "Kazuha는 집이 있는 곳에서는 바람이 약해지는데도 이곳의 산바람은 변함이 없다며, 상인이 bake-danuki의 장난을 당한 것 같다고 말했고, 하룻밤 신세를 진 상인은 아침에 지붕도 이불도 없이 잎과 진흙을 토해냈다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "카즈하는 집이 있는 곳에서는 바람이 약해지는데도 이곳의 산바람은 변함이 없다며, 상인이 바케다누키의 장난을 당한 것 같다고 말했고, 하룻밤 신세를 진 상인은 아침에 지붕도 이불도 없이 잎과 진흙을 토해냈다.",
+       "polish": {
+        "from": "카즈하는 집이 있는 곳에서는 바람이 약해지는데도 이곳의 산바람은 변함이 없다며, 상인이 bake-danuki의 장난을 당한 것 같다고 말했고, 하룻밤 신세를 진 상인은 아침에 지붕도 이불도 없이 잎과 진흙을 토해냈다.",
+        "text": "카즈하는 집이 있는 곳에서는 바람이 약해지는데도 이곳의 산바람은 변함이 없다며, 상인이 바케다누키의 장난을 당한 것 같다고 말했고, 하룻밤 신세를 진 상인은 아침에 지붕도 이불도 없이 잎과 진흙을 토해냈다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "또 다른 날 그는 혀끝으로 공기가 무겁고 침침하다고 느껴 비가 올 것을 알아챘고, 집주인은 반신반의했지만 정오에 비가 그대로 내렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 다른 날 그는 혀끝으로 공기가 무겁고 침침하다고 느껴 비가 올 것을 알아챘고, 집주인은 반신반의했지만 정오에 비가 그대로 내렸다."
+      },
+      {
+       "t_raw": "바람과 공기의 미세한 변화를 읽는 같은 감각이 가짜 집을 걸러내는 데도, 비를 예고하는 데도 쓰인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "바람과 공기의 미세한 변화를 읽는 같은 감각이 가짜 집을 걸러내는 데도, 비를 예고하는 데도 쓰인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kaedehara Kazuha/Profile",
+       "revision": 240113,
+       "section": "Character Stories > Story 3",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kaedehara Kazuha/Profile",
+       "revision": 240113,
+       "section": "Character Stories > Vision",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "The next day, he awoke to the sound of birds... and a shining Vision lying upon his chest.",
+     "sentences": [
+      {
+       "t_raw": "폭풍우가 밤새 몰아친 뒤 Kazuha는 자신의 심정과 화해하고 마음 편히 잠들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폭풍우가 밤새 몰아친 뒤 카즈하는 자신의 심정과 화해하고 마음 편히 잠들었다."
+      },
+      {
+       "t_raw": "다음 날 그는 새소리와 함께 깨어났고, 가슴 위에 놓인 빛나는 Vision을 발견했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다음 날 그는 새소리와 함께 깨어났고, 가슴 위에 놓인 빛나는 신의 눈을 발견했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kaedehara Kazuha/Profile",
+       "revision": 240113,
+       "section": "Character Stories > Vision",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 0 is supported by M6: Common with 0~2, 10~20, 257~996, 1~3.",
+     "quote": "Common · 0~2 · 10~20 · 257~996 · 1~3",
+     "sentences": [
+      {
+       "t_raw": "Chest 문서의 보상 표에는 Common 등급 옆에 0~2, 10~20, 257~996, 1~3의 네 가지 수치 범위가 나란히 실려 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "보물상자 문서의 보상 표에는 Common 등급 옆에 0~2, 10~20, 257~996, 1~3의 네 가지 수치 범위가 나란히 실려 있다."
+      },
+      {
+       "t_raw": "등급 이름 하나에 이렇게 여러 범위가 붙어 있는 형식이라, 숫자만 훑어도 등급별 보상의 결이 어떠한지 짐작하게 된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "등급 이름 하나에 이렇게 여러 범위가 붙어 있는 형식이라, 숫자만 훑어도 등급별 보상의 결이 어떠한지 짐작하게 된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chest",
+       "revision": 241271,
+       "section": "Chest Rewards",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Common"
+     ]
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

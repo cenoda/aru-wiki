@@ -20,35 +20,41 @@
    "input_chars": 3455,
    "input_cut": false,
    "input_hash": "1466cd7682e6",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
      "quote": "Arkhium is a yellow-green crystal that can be used as a potent energy source.",
      "sentences": [
       {
-       "t_raw": "**Arkhium**은 Fontaine의 일부 지역과 Fortress of Meropide 아래 Geode Mine Shaft에서 자연 산출되는 황록색 결정질 광석으로, 강력한 에너지원이 될 수 있다.",
+       "t_raw": "Arkhium은 **황록색 결정**으로, 뛰어난 에너지원이 될 수 있는 광석이다.",
        "interp": false,
        "dropped": false,
-       "t": "**아르케 광석**은 폰타인의 일부 지역과 메로피드 요새 아래 지오드 갱도에서 자연 산출되는 황록색 결정질 광석으로, 강력한 에너지원이 될 수 있다."
+       "t": "아르케 광석은 **황록색 결정**으로, 뛰어난 에너지원이 될 수 있는 광석이다."
       },
       {
-       "t_raw": "Fontaine Research Institute는 이 힘으로 중력을 거스르는 '하늘의 도시'를 세워 예언된 홍수를 견디려 했지만, **Arkhium Kinetic Core**의 과부하로 일어난 폭발이 연구소 부지를 크게 파괴하면서 연구는 중단되었다.",
+       "t_raw": "Fontaine Research Institute는 이 힘으로 중력을 거스르는 **하늘의 도시**를 세워 예언된 홍수를 피하려 했고, Edwin Eastinghouse와 Nacker, Raimondo가 관여한 Arkhium Kinetic Core는 기계 오작동으로 과부하되어 연구소 대부분을 파괴했다.",
        "interp": false,
        "dropped": false,
-       "t": "폰타인 과학원은 이 힘으로 중력을 거스르는 '하늘의 도시'를 세워 예언된 홍수를 견디려 했지만, **Arkhium Kinetic Core**의 과부하로 일어난 폭발이 연구소 부지를 크게 파괴하면서 연구는 중단되었다."
+       "t": "폰타인 과학원은 이 힘으로 중력을 거스르는 **하늘의 도시**를 세워 예언된 홍수를 피하려 했고, 에드윈 이스팅하우스와 내커, 레이먼드가 관여한 아르케 동력 코어는 기계 오작동으로 과부하되어 연구소 대부분을 파괴했다."
       },
       {
-       "t_raw": "폭발 뒤 결정 조각은 여전히 공명으로 활성화될 수 있었고, 연구소는 Experimental Field Generator로 이를 모아 억제하는 한편 Survey Anchors로 잔류 방사선 수준을 감시했다.",
+       "t_raw": "이후 잔류 Arkhium 흔적은 억제 장치로 안정화되었고, Arkhium Kinetic Core의 도난과 발전기 재활성화를 둘러싼 사건이 이어졌다.",
        "interp": false,
        "dropped": false,
-       "t": "폭발 뒤 결정 조각은 여전히 공명으로 활성화될 수 있었고, 연구소는 실험성 역장 발생 장치로 이를 모아 억제하는 한편 Survey Anchors로 잔류 방사선 수준을 감시했다."
+       "t": "이후 잔류 아르케 광석 흔적은 억제 장치로 안정화되었고, 아르케 동력 코어의 도난과 발전기 재활성화를 둘러싼 사건이 이어졌다."
+      },
+      {
+       "t_raw": "이는 Arkhium의 위험이 연구소 폭발로 끝나지 않았음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 아르케 광석의 위험이 연구소 폭발로 끝나지 않았음을 보여 준다."
       }
      ],
      "sources": [
@@ -64,8 +70,8 @@
        "kind": "wiki",
        "page": "Arkhium",
        "revision": 1805573,
-       "section": "Overview > Properties",
-       "paragraph": "A2",
+       "section": "Overview > Fontaine Research Institute",
+       "paragraph": "A8",
        "wiki_refs": []
       },
       {
@@ -73,8 +79,17 @@
        "page": "Arkhium",
        "revision": 1805573,
        "section": "Overview > Fontaine Research Institute",
-       "paragraph": "A8",
-       "wiki_refs": []
+       "paragraph": "A9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Secret Keepers and Forbidden Zones"
+        },
+        {
+         "type": "quest",
+         "name": "Fontaine Research Institute, Stagnating in the Rubble"
+        }
+       ]
       },
       {
        "kind": "wiki",
@@ -91,45 +106,52 @@
       },
       {
        "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": "Overview > Fontaine Research Institute",
-       "paragraph": "A11",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Fontaine Research Institute, Stagnating in the Rubble"
-        },
-        {
-         "type": "quest",
-         "name": "An Eye for an Eye"
-        }
-       ]
+       "page": "Fontaine Research Institute",
+       "revision": 1702233,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "An Expected Plan",
+       "quest_ko": "예상대로의 계획",
+       "version": "4.2",
+       "speaker": "Raimondo"
       }
      ],
      "heading": null,
-     "latin_left": [
-      "Arkhium Kinetic Core",
-      "Survey Anchors"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
      "quote": "Arkhium is a yellow-green crystal that can be used as a potent energy source.",
      "sentences": [
       {
-       "t_raw": "Arkhium은 노란빛을 띠는 녹색 결정으로, 강력한 에너지원으로 쓰일 수 있다.",
+       "t_raw": "Arkhium은 노란빛이 도는 녹색 결정으로, 강력한 에너지원으로 쓰일 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "아르케 광석은 노란빛을 띠는 녹색 결정으로, 강력한 에너지원으로 쓰일 수 있다."
+       "t": "아르케 광석은 노란빛이 도는 녹색 결정으로, 강력한 에너지원으로 쓰일 수 있다."
       },
       {
-       "t_raw": "Fontaine의 특정 지역, 예컨대 Fortress of Meropide 아래 Geode Mine Shaft에서 자연적으로 산출되는 결정질 광석이기도 하다.",
+       "t_raw": "비활성 상태에서는 화학적으로 안정되어 에너지를 내지 않지만, 활성화되면 불안정해져 강력한 방사선 파동을 내기 시작한다.",
        "interp": false,
        "dropped": false,
-       "t": "폰타인의 특정 지역, 예컨대 메로피드 요새 아래 지오드 갱도에서 자연적으로 산출되는 결정질 광석이기도 하다."
+       "t": "비활성 상태에서는 화학적으로 안정되어 에너지를 내지 않지만, 활성화되면 불안정해져 강력한 방사선 파동을 내기 시작한다."
+      },
+      {
+       "t_raw": "그 에너지 흐름을 정교하게 통제하지 못하면 폭발할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 에너지 흐름을 정교하게 통제하지 못하면 폭발할 수 있다."
+      },
+      {
+       "t_raw": "Fontaine Research Institute는 이 뛰어난 에너지 잠재력에 주목해 중력을 거스르고 예언된 홍수에서 Fontaine 사람들이 살아남을 하늘의 도시를 만들려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인 과학원은 이 뛰어난 에너지 잠재력에 주목해 중력을 거스르고 예언된 홍수에서 폰타인 사람들이 살아남을 하늘의 도시를 만들려 했다."
       }
      ],
      "sources": [
@@ -139,172 +161,6 @@
        "revision": 1805573,
        "section": null,
        "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": "Overview > Properties",
-       "paragraph": "A2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The researchers' main goal was to use Arkhium to \"counteract\" gravity, creating a \"city in the sky\" that would allow the people of Fontaine to survive the prophesied flood.",
-     "sentences": [
-      {
-       "t_raw": "Fontaine Research Institute는 Arkhium의 뛰어난 에너지 잠재력에 주목해 중력을 ‘거스르는’ 데 활용하려 했고, ‘하늘의 도시’를 세워 예언된 홍수에서 Fontaine 사람들이 살아남는 것을 목표로 삼았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "폰타인 과학원은 아르케 광석의 뛰어난 에너지 잠재력에 주목해 중력을 '거스르는' 데 활용하려 했고, '하늘의 도시'를 세워 예언된 홍수에서 폰타인 사람들이 살아남는 것을 목표로 삼았다."
-      },
-      {
-       "t_raw": "Romaritime Harbor의 선박용 승강기를 Arkhium으로 움직이는 방안도 제안되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바다 이슬 항구의 선박용 승강기를 아르케 광석으로 움직이는 방안도 제안되었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": "Overview > Fontaine Research Institute",
-       "paragraph": "A8",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "At some point, a mechanical malfunction caused the Arkhium Kinetic Core to overload, triggering a massive explosion that destroyed much of the Fontaine Research Institute.",
-     "sentences": [
-      {
-       "t_raw": "그러나 기계적 오작동으로 Arkhium Kinetic Core가 과부하되어 거대한 폭발이 일어났고, Fontaine Research Institute의 상당 부분이 파괴되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 기계적 오작동으로 Arkhium Kinetic Core가 과부하되어 거대한 폭발이 일어났고, 폰타인 과학원의 상당 부분이 파괴되었다."
-      },
-      {
-       "t_raw": "폭발은 Central Laboratory Ruins 주변 하늘에 Allogravity-Condensed Water Bodies를 만들었으며, 이후 지역의 Arkhium 결정은 거의 조각으로 부서졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "폭발은 중앙 실험실 유적 주변 하늘에 중력이상 물을 만들었으며, 이후 지역의 아르케 광석 결정은 거의 조각으로 부서졌다."
-      },
-      {
-       "t_raw": "조각들이 공명으로 다시 활성화될 수 있었기에 연구소는 Experimental Field Generator로 이를 모으고 억제했고, Geode Mine Shaft의 Arkhium 채굴도 종료했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "조각들이 공명으로 다시 활성화될 수 있었기에 연구소는 실험성 역장 발생 장치로 이를 모으고 억제했고, 지오드 갱도의 아르케 광석 채굴도 종료했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": "Overview > Fontaine Research Institute",
-       "paragraph": "A10",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Vibro-Crystal Reharmonization"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": "Overview > Fontaine Research Institute",
-       "paragraph": "A11",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Fontaine Research Institute, Stagnating in the Rubble"
-        },
-        {
-         "type": "quest",
-         "name": "An Eye for an Eye"
-        }
-       ]
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "Arkhium Kinetic Core"
-     ]
-    },
-    {
-     "section": "정체와 성질",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Arkhium is a yellow-green crystal that can be used as a potent energy source.",
-     "sentences": [
-      {
-       "t_raw": "Arkhium은 황록색 결정으로 강력한 에너지원으로 쓰일 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아르케 광석은 황록색 결정으로 강력한 에너지원으로 쓰일 수 있다."
-      },
-      {
-       "t_raw": "이 결정질 광석은 Fontaine의 일부 지역, 예컨대 Fortress of Meropide 아래 Geode Mine Shaft 같은 곳에서 자연적으로 산출된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 결정질 광석은 폰타인의 일부 지역, 예컨대 메로피드 요새 아래 지오드 갱도 같은 곳에서 자연적으로 산출된다."
-      },
-      {
-       "t_raw": "Arkhium은 **비활성 상태**와 **활성화 상태**의 두 가지로 존재한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아르케 광석은 **비활성 상태**와 **활성화 상태**의 두 가지로 존재한다."
-      },
-      {
-       "t_raw": "비활성 상태에서는 화학적으로 안정되어 에너지를 내지 않지만, 활성화되면 불안정해져 강력한 방사선 펄스를 방출하기 시작한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "비활성 상태에서는 화학적으로 안정되어 에너지를 내지 않지만, 활성화되면 불안정해져 강력한 방사선 펄스를 방출하기 시작한다."
-      },
-      {
-       "t_raw": "이 강력한 에너지 흐름은 조심스럽게 제어되지 않으면 폭발을 일으킬 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 강력한 에너지 흐름은 조심스럽게 제어되지 않으면 폭발을 일으킬 수 있다."
-      },
-      {
-       "t_raw": "환경에 남은 Arkhium 에너지는 쉽게 사라지지 않는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "환경에 남은 아르케 광석 에너지는 쉽게 사라지지 않는다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": "Overview > Properties",
-       "paragraph": "A2",
        "wiki_refs": []
       },
       {
@@ -319,40 +175,186 @@
          "name": "An Expected Plan"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Arkhium",
+       "revision": 1805573,
+       "section": "Overview > Fontaine Research Institute",
+       "paragraph": "A8",
+       "wiki_refs": []
       }
      ],
-     "heading": "정체와 성질",
+     "heading": "개요",
      "latin_left": []
     },
     {
-     "section": "정체와 성질",
-     "status": "needs_verify",
-     "note": null,
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "a mechanical malfunction caused the Arkhium Kinetic Core to overload, triggering a massive explosion that destroyed much of the Fontaine Research Institute.",
+     "sentences": [
+      {
+       "t_raw": "그러나 Arkhium Kinetic Core의 기계적 오작동이 과부하를 일으키며 Fontaine Research Institute 대부분을 파괴한 대규모 폭발이 일어났고, Central Laboratory Ruins 주변 하늘에는 Allogravity-Condensed Water Bodies가 생겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 아르케 동력 코어의 기계적 오작동이 과부하를 일으키며 폰타인 과학원 대부분을 파괴한 대규모 폭발이 일어났고, 중앙 실험실 유적 주변 하늘에는 중력이상 물이 생겼다."
+      },
+      {
+       "t_raw": "폭발 뒤 지역의 Arkhium 결정은 거의 조각으로 깨졌고, 조각들이 공명으로 활성화될 수 있었기에 Fontaine Research Institute는 Experimental Field Generator로 이를 모아 억제했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폭발 뒤 지역의 아르케 광석 결정은 거의 조각으로 깨졌고, 조각들이 공명으로 활성화될 수 있었기에 폰타인 과학원은 실험성 역장 발생 장치로 이를 모아 억제했다."
+      },
+      {
+       "t_raw": "Survey Anchors로 잔류 방사선을 감시했고, Geode Mine Shaft의 Arkhium 채굴도 중단되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "측정 앵커로 잔류 방사선을 감시했고, 지오드 갱도의 아르케 광석 채굴도 중단되었다."
+      },
+      {
+       "t_raw": "Arkhium의 폭발 위험성과 이를 에너지원으로 쓰려 한 연구가 맞물린 끝에, Arkhium을 둘러싼 연구는 큰 사고를 낳고 채굴은 중단되는 흐름으로 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아르케 광석의 폭발 위험성과 이를 에너지원으로 쓰려 한 연구가 맞물린 끝에, 아르케 광석을 둘러싼 연구는 큰 사고를 낳고 채굴은 중단되는 흐름으로 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arkhium",
+       "revision": 1805573,
+       "section": "Overview > Properties",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "An Expected Plan"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Arkhium",
+       "revision": 1805573,
+       "section": "Overview > Fontaine Research Institute",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arkhium",
+       "revision": 1805573,
+       "section": "Overview > Fontaine Research Institute",
+       "paragraph": "A10",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Vibro-Crystal Reharmonization"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Arkhium",
+       "revision": 1805573,
+       "section": "Overview > Fontaine Research Institute",
+       "paragraph": "A11",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Fontaine Research Institute, Stagnating in the Rubble"
+        },
+        {
+         "type": "quest",
+         "name": "An Eye for an Eye"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체 — 물질과 성질",
+     "status": "accepted",
+     "note": "The claim that separation and its reversibility make Arkhium be treated as more than an ordinary ore is not supported. The English only says little academic interest exists in the reverse direction.",
+     "quote": "Arkhium is a crystalline ore that naturally occurs in certain areas of Fontaine, such as the Geode Mine Shaft beneath the Fortress of Meropide.",
+     "sentences": [
+      {
+       "t_raw": "Arkhium은 Fontaine의 특정 지역, 예컨대 Fortress of Meropide 아래의 Geode Mine Shaft 같은 곳에서 자연 산출되는 결정질 광석이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아르케 광석은 폰타인의 특정 지역, 예컨대 메로피드 요새 아래의 지오드 갱도 같은 곳에서 자연 산출되는 결정질 광석이다."
+      },
+      {
+       "t_raw": "물질 또는 \"물질 외의 특정한 것\"을 분리하는 성질이 있으며, 이 분리는 역전될 수도 있지만 그 방향에는 학문적 관심이 적다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물질 또는 \"물질 외의 특정한 것\"을 분리하는 성질이 있으며, 이 분리는 역전될 수도 있지만 그 방향에는 학문적 관심이 적다."
+      },
+      {
+       "t_raw": "물질을 분리할 수 있고 그 역전도 가능하다는 점은 Arkhium의 주목할 만한 특성으로 보이나, 정작 그 역전 방향에는 학계의 관심이 크지 않은 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "물질을 분리할 수 있고 그 역전도 가능하다는 점은 아르케 광석의 주목할 만한 특성으로 보이나, 정작 그 역전 방향에는 학계의 관심이 크지 않은 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arkhium",
+       "revision": 1805573,
+       "section": "Overview > Properties",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체 — 물질과 성질",
+     "latin_left": []
+    },
+    {
+     "section": "정체 — 물질과 성질",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
      "quote": "Activated Arkhium can also trigger a type of \"resonance\" that activates other crystals within range, potentially causing an explosive chain reaction.",
      "sentences": [
       {
-       "t_raw": "비활성 Arkhium은 촉매 환경에서 활성화될 수 있고, 활성화된 Arkhium은 전용 억제제를 사용해 비활성으로 되돌릴 수 있다.",
+       "t_raw": "Arkhium은 **비활성 상태**와 **활성 상태** 두 가지로 존재한다.",
        "interp": false,
        "dropped": false,
-       "t": "비활성 아르케 광석은 촉매 환경에서 활성화될 수 있고, 활성화된 아르케 광석은 전용 억제제를 사용해 비활성으로 되돌릴 수 있다."
+       "t": "아르케 광석은 **비활성 상태**와 **활성 상태** 두 가지로 존재한다."
       },
       {
-       "t_raw": "활성화된 Arkhium은 일종의 **공명**을 일으켜 범위 안의 다른 결정을 활성화할 수 있으며, 이는 폭발적인 연쇄 반응으로 이어질 수 있다.",
+       "t_raw": "비활성일 때는 화학적으로 안정하고 에너지를 내지 않지만, 활성화되면 불안정해져 강력한 방사선 펄스를 방출한다.",
        "interp": false,
        "dropped": false,
-       "t": "활성화된 아르케 광석은 일종의 **공명**을 일으켜 범위 안의 다른 결정을 활성화할 수 있으며, 이는 폭발적인 연쇄 반응으로 이어질 수 있다."
+       "t": "비활성일 때는 화학적으로 안정하고 에너지를 내지 않지만, 활성화되면 불안정해져 강력한 방사선 펄스를 방출한다."
       },
       {
-       "t_raw": "일정량 활성화된 뒤에는 Arkhium 결정의 에너지 생성 잠재력이 소진되어 사실상 영구적으로 비활성이 된다.",
+       "t_raw": "제어하지 않으면 이 강한 에너지 흐름이 폭발을 일으킬 수 있고, 환경에 남은 Arkhium 에너지는 빠르게 사라지지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "일정량 활성화된 뒤에는 아르케 광석 결정의 에너지 생성 잠재력이 소진되어 사실상 영구적으로 비활성이 된다."
+       "t": "제어하지 않으면 이 강한 에너지 흐름이 폭발을 일으킬 수 있고, 환경에 남은 아르케 광석 에너지는 빠르게 사라지지 않는다."
       },
       {
-       "t_raw": "비활성과 활성화 상태의 차이가 안정성과 에너지 방출 여부를 가르는 만큼, Arkhium을 다루는 일은 상태 제어와 직결된다고 볼 수 있다.",
+       "t_raw": "비활성 Arkhium은 촉매 환경에서 활성화되고, 활성 Arkhium은 전용 억제제로 비활성화할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비활성 아르케 광석은 촉매 환경에서 활성화되고, 활성 아르케 광석은 전용 억제제로 비활성화할 수 있다."
+      },
+      {
+       "t_raw": "활성 Arkhium은 주변의 다른 결정을 활성화하는 **공명**을 일으킬 수 있어 폭발적인 연쇄 반응을 낳을 수 있으며, 일정량 활성화된 결정은 에너지 생성 잠재력이 고갈되어 사실상 영구적으로 비활성이 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "활성 아르케 광석은 주변의 다른 결정을 활성화하는 **공명**을 일으킬 수 있어 폭발적인 연쇄 반응을 낳을 수 있으며, 일정량 활성화된 결정은 에너지 생성 잠재력이 고갈되어 사실상 영구적으로 비활성이 된다."
+      },
+      {
+       "t_raw": "상태 전환과 고갈, 공명이 모두 가능하다는 점은 Arkhium의 위험과 효용이 고정되어 있지 않음을 보여 준다.",
        "interp": true,
        "dropped": false,
-       "t": "비활성과 활성화 상태의 차이가 안정성과 에너지 방출 여부를 가르는 만큼, 아르케 광석을 다루는 일은 상태 제어와 직결된다고 볼 수 있다."
+       "t": "상태 전환과 고갈, 공명이 모두 가능하다는 점은 아르케 광석의 위험과 효용이 고정되어 있지 않음을 보여 준다."
       }
      ],
      "sources": [
@@ -378,13 +380,13 @@
        "wiki_refs": []
       }
      ],
-     "heading": "정체와 성질",
+     "heading": "정체 — 물질과 성질",
      "latin_left": []
     },
     {
-     "section": "정체와 성질",
-     "status": "needs_verify",
-     "note": null,
+     "section": "정체 — 물질과 성질",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
      "quote": "Direct exposure to Arkhium energy can be dangerous; symptoms include nausea, vomiting, subcutaneous bleeding, and even coma.",
      "sentences": [
       {
@@ -394,22 +396,22 @@
        "t": "아르케 광석 에너지에 직접 노출되면 메스꺼움, 구토, 피하 출혈, 심하면 혼수 같은 증상이 나타날 수 있다."
       },
       {
-       "t_raw": "적절한 약물이나 다른 예방 조치 없이는 대부분의 사람이 이를 견디지 못하지만, Traveler와 Paimon은 이러한 영향에 저항성을 지닌다.",
+       "t_raw": "대부분의 사람은 적절한 약물이나 다른 예방 조치 없이는 이를 견디지 못하지만, Traveler와 Paimon은 이런 영향에 저항성이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "적절한 약물이나 다른 예방 조치 없이는 대부분의 사람이 이를 견디지 못하지만, 여행자와 페이몬은 이러한 영향에 저항성을 지닌다."
+       "t": "대부분의 사람은 적절한 약물이나 다른 예방 조치 없이는 이를 견디지 못하지만, 여행자와 페이몬은 이런 영향에 저항성이 있다."
       },
       {
-       "t_raw": "특정 조건에서는 Arkhium 광석이 스스로 융합할 수 있다.",
+       "t_raw": "Chronie는 누군가 Arkhium에서 흐르는 강렬한 에너지에 직접 맞으면 어떤 일이 생길지 Nacker에게 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "특정 조건에서는 아르케 광석 광석이 스스로 융합할 수 있다."
+       "t": "클로니아는 누군가 아르케 광석에서 흐르는 강렬한 에너지에 직접 맞으면 어떤 일이 생길지 내커에게 묻는다."
       },
       {
-       "t_raw": "정제된 Arkhium 광석은 열, 빛, 또는 이상한 윙윙거리는 소리 가운데 하나 이상을 내는 것으로 알려져 있다.",
-       "interp": false,
+       "t_raw": "구체적인 증상과 그 질문이 함께 놓이면, 직접 노출의 위험은 막연한 경고가 아니라 몸에 나타나는 결과로 다뤄진다.",
+       "interp": true,
        "dropped": false,
-       "t": "정제된 아르케 광석 광석은 열, 빛, 또는 이상한 윙윙거리는 소리 가운데 하나 이상을 내는 것으로 알려져 있다."
+       "t": "구체적인 증상과 그 질문이 함께 놓이면, 직접 노출의 위험은 막연한 경고가 아니라 몸에 나타나는 결과로 다뤄진다."
       }
      ],
      "sources": [
@@ -426,6 +428,43 @@
         }
        ]
       },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      }
+     ],
+     "heading": "정체 — 물질과 성질",
+     "latin_left": []
+    },
+    {
+     "section": "정체 — 물질과 성질",
+     "status": "accepted",
+     "note": "All sentences are supported by A6 and A7. The interpretation is reasonable.",
+     "quote": "Refined Arkhium ore has been known to emit heat, light, and/or a strange buzzing sound.",
+     "sentences": [
+      {
+       "t_raw": "특정한 상황에서는 Arkhium 광석이 스스로 융합하기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정한 상황에서는 아르케 광석 광석이 스스로 융합하기도 한다."
+      },
+      {
+       "t_raw": "정련된 Arkhium 광석은 열, 빛, 그리고/또는 기묘한 윙윙거리는 소리를 내는 것으로 알려져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정련된 아르케 광석 광석은 열, 빛, 그리고/또는 기묘한 윙윙거리는 소리를 내는 것으로 알려져 있다."
+      },
+      {
+       "t_raw": "자연 융합과 정련품의 발열·발광·잡음은 원석과 정련품이 서로 다른 물리적 모습을 드러낼 수 있음을 시사한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자연 융합과 정련품의 발열·발광·잡음은 원석과 정련품이 서로 다른 물리적 모습을 드러낼 수 있음을 시사한다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Arkhium",
@@ -457,38 +496,32 @@
        ]
       }
      ],
-     "heading": "정체와 성질",
+     "heading": "정체 — 물질과 성질",
      "latin_left": []
     },
     {
-     "section": "드러난 역사 — 연구와 폭발",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Fontaine Research Institute became interested in Arkhium for its outstanding energy potential, which far surpassed that of Pneumousia Annihilation reactions.",
+     "section": "드러난 역사 — Fontaine Research Institute",
+     "status": "accepted",
+     "note": "A8 and M4 support all the facts. The interpretation is reasonable.",
+     "quote": "The researchers' main goal was to use Arkhium to \"counteract\" gravity, creating a \"city in the sky\" that would allow the people of Fontaine to survive the prophesied flood.",
      "sentences": [
       {
-       "t_raw": "Fontaine Research Institute는 Arkhium의 에너지 잠재력이 Pneumousia Annihilation 반응보다 훨씬 뛰어나다고 보았다.",
+       "t_raw": "Fontaine Research Institute는 Pneumousia Annihilation 반응을 뛰어넘는 Arkhium의 에너지 잠재력에 주목했다.",
        "interp": false,
        "dropped": false,
-       "t": "폰타인 과학원은 아르케 광석의 에너지 잠재력이 프뉴무시아 소멸 반응보다 훨씬 뛰어나다고 보았다."
+       "t": "폰타인 과학원은 프뉴무시아 소멸 반응을 뛰어넘는 아르케 광석의 에너지 잠재력에 주목했다."
       },
       {
-       "t_raw": "연구소의 주요 목적 중 하나는 예언된 홍수의 해결책을 찾는 일이었고, 연구자들은 Arkhium으로 중력을 거스르는 것이 열쇠라고 여겼다.",
+       "t_raw": "연구진은 Arkhium으로 중력을 '상쇄'해 **예언된 홍수**에서 Fontaine 사람들이 살아남을 '하늘의 도시'를 만들려 했고, Edwin Eastinghouse는 물 상황을 완화하기 위해 Prototype Cal. Breguet 계열의 Clockwork Meka를 만들었다.",
        "interp": false,
        "dropped": false,
-       "t": "연구소의 주요 목적 중 하나는 예언된 홍수의 해결책을 찾는 일이었고, 연구자들은 아르케 광석으로 중력을 거스르는 것이 열쇠라고 여겼다."
+       "t": "연구진은 아르케 광석으로 중력을 '상쇄'해 **예언된 홍수**에서 폰타인 사람들이 살아남을 '하늘의 도시'를 만들려 했고, 에드윈 이스팅하우스는 물 상황을 완화하기 위해 프로토타입. 브레게 계열의 태엽 장치를 만들었다."
       },
       {
-       "t_raw": "그래서 중력을 상쇄해 **하늘의 도시**를 만들고 Fontaine의 사람들이 홍수에서 살아남게 하려 했으며, Romaritime Harbor의 선박 승강기를 Arkhium으로 가동하는 방안도 제안되었다.",
-       "interp": false,
+       "t_raw": "이 두 구상은 모두 예언된 홍수에 대응하려는 흐름으로 볼 수 있다.",
+       "interp": true,
        "dropped": false,
-       "t": "그래서 중력을 상쇄해 **하늘의 도시**를 만들고 폰타인의 사람들이 홍수에서 살아남게 하려 했으며, 바다 이슬 항구의 선박 승강기를 아르케 광석으로 가동하는 방안도 제안되었다."
-      },
-      {
-       "t_raw": "결국 이 연구는 폭발로 연구소 부지 상당 부분이 파괴된 뒤 중단되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "결국 이 연구는 폭발로 연구소 부지 상당 부분이 파괴된 뒤 중단되었다."
+       "t": "이 두 구상은 모두 예언된 홍수에 대응하려는 흐름으로 볼 수 있다."
       }
      ],
      "sources": [
@@ -507,48 +540,45 @@
        "section": "Profile",
        "paragraph": "M4",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
       }
      ],
-     "heading": "드러난 역사 — 연구와 폭발",
+     "heading": "드러난 역사 — 폰타인 과학원",
      "latin_left": []
     },
     {
-     "section": "드러난 역사 — 연구와 폭발",
-     "status": "needs_verify",
-     "note": null,
+     "section": "드러난 역사 — Fontaine Research Institute",
+     "status": "accepted",
+     "note": "A9 and A10 support everything.",
      "quote": "At some point, a mechanical malfunction caused the Arkhium Kinetic Core to overload, triggering a massive explosion that destroyed much of the Fontaine Research Institute.",
      "sentences": [
       {
-       "t_raw": "Arkhium 연구 계획은 Arkhium과 중력계를 전문으로 한 선임 연구원 Edwin Eastinghouse가 이끌었고, Nacker와 Raimondo가 협력했다.",
+       "t_raw": "Arkhium Research Project는 Arkhium과 gravimeter를 전문으로 한 선임 연구원 Edwin Eastinghouse가 주도했고, Nacker와 Raimondo가 협력했다.",
        "interp": false,
        "dropped": false,
-       "t": "아르케 광석 연구 계획은 아르케 광석과 중력계를 전문으로 한 선임 연구원 에드윈 이스팅하우스가 이끌었고, 내커와 레이먼드가 협력했다."
+       "t": "아르케 광석 연구 프로젝트는 아르케 광석과 중력계를 전문으로 한 선임 연구원 에드윈 이스팅하우스가 주도했고, 내커와 레이먼드가 협력했다.",
+       "polish": {
+        "from": "아르케 광석 연구 프로젝트는 아르케 광석과 gravimeter를 전문으로 한 선임 연구원 에드윈 이스팅하우스가 주도했고, 내커와 레이먼드가 협력했다.",
+        "text": "아르케 광석 연구 프로젝트는 아르케 광석과 중력계를 전문으로 한 선임 연구원 에드윈 이스팅하우스가 주도했고, 내커와 레이먼드가 협력했다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "Edwin은 Gravity Reduction Field를 만들 수 있는 거대 장치 Experimental Field Generator를 만들었으며, Edwin과 Raimondo는 큰 Arkhium 광석 덩어리로 동력을 얻는 농축 에너지원 **Arkhium Kinetic Core**와 그것을 제어하는 특수 억제 장치를 개발했다.",
+       "t_raw": "Edwin Eastinghouse는 Gravity Reduction Field를 만드는 거대 장치 Experimental Field Generator를 만들었으며, 그와 Raimondo는 큰 Arkhium 광석 덩어리로 동력을 얻는 **Arkhium Kinetic Core**와 이를 제어할 특수 억제 장치를 개발했다.",
        "interp": false,
        "dropped": false,
-       "t": "에드윈은 Gravity Reduction Field를 만들 수 있는 거대 장치 실험성 역장 발생 장치를 만들었으며, 에드윈과 레이먼드는 큰 아르케 광석 광석 덩어리로 동력을 얻는 농축 에너지원 **Arkhium Kinetic Core**와 그것을 제어하는 특수 억제 장치를 개발했다."
+       "t": "에드윈 이스팅하우스는 중력 감소 역장을 만드는 거대 장치 실험성 역장 발생 장치를 만들었으며, 그와 레이먼드는 큰 아르케 광석 광석 덩어리로 동력을 얻는 **아르케 동력 코어**와 이를 제어할 특수 억제 장치를 개발했다."
       },
       {
-       "t_raw": "Arkhium은 활성화되면 불안정해져 강력한 방사선 펄스를 내고, 세심하게 제어되지 않으면 폭발을 일으킬 수 있었다.",
+       "t_raw": "Edwin Eastinghouse는 Nacker에게 운용법을 직접 가르쳤다.",
        "interp": false,
        "dropped": false,
-       "t": "아르케 광석은 활성화되면 불안정해져 강력한 방사선 펄스를 내고, 세심하게 제어되지 않으면 폭발을 일으킬 수 있었다."
+       "t": "에드윈 이스팅하우스는 내커에게 운용법을 직접 가르쳤다."
       },
       {
-       "t_raw": "기계적 오작동으로 Arkhium Kinetic Core가 과부하되어 거대한 폭발이 일어났고, Fontaine Research Institute의 상당 부분이 파괴되며 Central Laboratory Ruins 주변 하늘에 Allogravity-Condensed Water Bodies가 생겼다.",
+       "t_raw": "이후 기계적 오작동으로 Arkhium Kinetic Core가 과부하되면서 대규모 폭발이 Fontaine Research Institute의 상당 부분을 파괴했고, Central Laboratory Ruins 주변 하늘에는 Allogravity-Condensed Water Bodies라는 거대한 물의 정육면체가 생겼다.",
        "interp": false,
        "dropped": false,
-       "t": "기계적 오작동으로 Arkhium Kinetic Core가 과부하되어 거대한 폭발이 일어났고, 폰타인 과학원의 상당 부분이 파괴되며 중앙 실험실 유적 주변 하늘에 중력이상 물이 생겼다."
+       "t": "이후 기계적 오작동으로 아르케 동력 코어가 과부하되면서 대규모 폭발이 폰타인 과학원의 상당 부분을 파괴했고, 중앙 실험실 유적 주변 하늘에는 중력이상 물라는 거대한 물의 정육면체가 생겼다."
       }
      ],
      "sources": [
@@ -573,19 +603,6 @@
        "kind": "wiki",
        "page": "Arkhium",
        "revision": 1805573,
-       "section": "Overview > Properties",
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "An Expected Plan"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
        "section": "Overview > Fontaine Research Institute",
        "paragraph": "A10",
        "wiki_refs": [
@@ -596,42 +613,38 @@
        ]
       }
      ],
-     "heading": "드러난 역사 — 연구와 폭발",
-     "latin_left": [
-      "Gravity Reduction Field",
-      "Arkhium Kinetic Core",
-      "Arkhium Kinetic Core"
-     ]
+     "heading": "드러난 역사 — 폰타인 과학원",
+     "latin_left": []
     },
     {
-     "section": "드러난 역사 — 연구와 폭발",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After the explosion, nearly all Arkhium crystals in the area were shattered into fragments.",
+     "section": "드러난 역사 — Fontaine Research Institute",
+     "status": "accepted",
+     "note": "A11 and Q4 support the facts. The interpretation is reasonable.",
+     "quote": "It's Arkhium. Arkhium mining operations stopped after the Fontaine Research Institute accident.",
      "sentences": [
       {
-       "t_raw": "폭발 뒤 해당 지역의 Arkhium 결정은 거의 모두 파편으로 부서졌고, 파편은 공명으로 여전히 활성화될 수 있어 연구소는 Experimental Field Generator로 그것들을 모으고 억제했다.",
+       "t_raw": "폭발 뒤 지역의 거의 모든 Arkhium 결정은 파편으로 부서졌다.",
        "interp": false,
        "dropped": false,
-       "t": "폭발 뒤 해당 지역의 아르케 광석 결정은 거의 모두 파편으로 부서졌고, 파편은 공명으로 여전히 활성화될 수 있어 연구소는 실험성 역장 발생 장치로 그것들을 모으고 억제했다."
+       "t": "폭발 뒤 지역의 거의 모든 아르케 광석 결정은 파편으로 부서졌다."
       },
       {
-       "t_raw": "주요 지점에는 잔류 방사선 수치를 감시하는 Survey Anchors가 설치되었고, Geode Mine Shaft의 Arkhium 채굴은 종료되었다.",
+       "t_raw": "이 파편들은 공명으로 활성화될 수 있었기에 Institute는 Experimental Field Generator로 이를 모으고 억제했으며, 주요 지점에 Survey Anchors를 두어 잔류 방사선 수치를 감시했다.",
        "interp": false,
        "dropped": false,
-       "t": "주요 지점에는 잔류 방사선 수치를 감시하는 Survey Anchors가 설치되었고, 지오드 갱도의 아르케 광석 채굴은 종료되었다."
+       "t": "이 파편들은 공명으로 활성화될 수 있었기에 Institute는 실험성 역장 발생 장치로 이를 모으고 억제했으며, 주요 지점에 측정 앵커를 두어 잔류 방사선 수치를 감시했다."
       },
       {
-       "t_raw": "사고 이후 Arkhium 채굴 작업이 중단되었다는 설명도 전해진다.",
+       "t_raw": "Geode Mine Shaft의 Arkhium 채굴은 중단되었고, 이는 Fontaine Research Institute 사고 이후의 조치로도 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "사고 이후 아르케 광석 채굴 작업이 중단되었다는 설명도 전해진다."
+       "t": "지오드 갱도의 아르케 광석 채굴은 중단되었고, 이는 폰타인 과학원 사고 이후의 조치로도 전해진다."
       },
       {
-       "t_raw": "환경에 남은 Arkhium 에너지는 빨리 사라지지 않으므로, 잔류 방사선 감시와 파편 억제는 사고 뒤에도 이어져야 했던 수습인 셈이다.",
+       "t_raw": "파편 억제와 방사선 감시, 채굴 중단은 폭발 뒤에도 남은 Arkhium의 활성 가능성과 위험을 함께 관리하려는 대응으로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "환경에 남은 아르케 광석 에너지는 빨리 사라지지 않으므로, 잔류 방사선 감시와 파편 억제는 사고 뒤에도 이어져야 했던 수습인 셈이다."
+       "t": "파편 억제와 방사선 감시, 채굴 중단은 폭발 뒤에도 남은 아르케 광석의 활성 가능성과 위험을 함께 관리하려는 대응으로 볼 수 있다."
       }
      ],
      "sources": [
@@ -658,64 +671,59 @@
        "quest_ko": "자에는 자로",
        "version": "4.1",
        "speaker": "Caterpillar"
-      },
-      {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": "Overview > Properties",
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "An Expected Plan"
-        }
-       ]
       }
      ],
-     "heading": "드러난 역사 — 연구와 폭발",
+     "heading": "드러난 역사 — 폰타인 과학원",
      "latin_left": [
-      "Survey Anchors"
+      "Institute"
      ]
     },
     {
      "section": "작중 행적 — Fontaine Research Institute Chronicles",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Q8, Q10, M1 and M3 support all the sentences.",
      "quote": "Before I ask for your help again, please allow me to briefly explain the case of the Arkhium Kinetic Core's theft.",
      "sentences": [
       {
-       "t_raw": "Fontaine Research Institute Chronicles에서 Traveler는 Fontaine Research Institute를 돕는다.",
+       "t_raw": "Raimondo는 Arkhium Kinetic Core 도난 사건을 설명하며, 그것이 극도로 불안정한 프로토타입이고 가능한 한 빨리 회수해야 할 주 목표라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "폰타인 과학원 연대기에서 여행자는 폰타인 과학원을 돕는다."
+       "t": "레이먼드는 아르케 동력 코어 도난 사건을 설명하며, 그것이 극도로 불안정한 프로토타입이고 가능한 한 빨리 회수해야 할 주 목표라고 말한다."
       },
       {
-       "t_raw": "Nacker가 Arkhium을 과부하시키고 냉각 장치를 손상시켜 폭발을 일으켰고, 그 폭발로 Traveler와 Raimondo가 조사에 나선다.",
+       "t_raw": "Traveler는 Fontaine Research Institute를 돕고, Nacker의 부탁으로 Survey Anchors를 모은다.",
        "interp": false,
        "dropped": false,
-       "t": "내커가 아르케 광석을 과부하시키고 냉각 장치를 손상시켜 폭발을 일으켰고, 그 폭발로 여행자와 레이먼드가 조사에 나선다."
+       "t": "여행자는 폰타인 과학원을 돕고, 내커의 부탁으로 측정 앵커를 모은다."
       },
       {
-       "t_raw": "Raimondo는 다시 도움을 청하기 전에 Arkhium Kinetic Core 도난 사건을 간단히 설명하겠다고 말한다.",
+       "t_raw": "Nacker는 Central Laboratory Ruins에서 폐허를 지면으로 되돌리려 하고, 꼭대기에서 폭발의 원인이 된 Experimental Field Generator를 발견한다.",
        "interp": false,
        "dropped": false,
-       "t": "레이먼드는 다시 도움을 청하기 전에 Arkhium Kinetic Core 도난 사건을 간단히 설명하겠다고 말한다."
+       "t": "내커는 중앙 실험실 유적에서 폐허를 지면으로 되돌리려 하고, 꼭대기에서 폭발의 원인이 된 실험성 역장 발생 장치를 발견한다."
       },
       {
-       "t_raw": "그는 Arkhium Kinetic Core가 매우 불안정한 시제품이므로 가능한 한 빨리 회수하는 것이 주 목표라고 덧붙인다.",
+       "t_raw": "시계태엽 메카가 제거되면 상황이 통제될 것이라 말한 그는 Raimondo의 촉매로 큰 Arkhium 덩어리를 Tri-Arkhium 상태로 바꾼다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 Arkhium Kinetic Core가 매우 불안정한 시제품이므로 가능한 한 빨리 회수하는 것이 주 목표라고 덧붙인다."
-      },
-      {
-       "t_raw": "Nacker의 조작이 폭발을 일으킨 사실과 Traveler·Raimondo의 조사가 맞물리면서, 도난당한 **Arkhium Kinetic Core**의 회수라는 목표가 전면에 놓인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "내커의 조작이 폭발을 일으킨 사실과 여행자·레이먼드의 조사가 맞물리면서, 도난당한 **Arkhium Kinetic Core**의 회수라는 목표가 전면에 놓인 셈이다."
+       "t": "시계태엽 메카가 제거되면 상황이 통제될 것이라 말한 그는 레이먼드의 촉매로 큰 아르케 광석 덩어리를 Tri-Arkhium 상태로 바꾼다."
       }
      ],
      "sources": [
+      {
+       "kind": "quest",
+       "quest": "An Expected Plan",
+       "quest_ko": "예상대로의 계획",
+       "version": "4.2",
+       "speaker": "Raimondo"
+      },
+      {
+       "kind": "quest",
+       "quest": "An Expected Plan",
+       "quest_ko": "예상대로의 계획",
+       "version": "4.2",
+       "speaker": "Raimondo"
+      },
       {
        "kind": "wiki",
        "page": "Fontaine Research Institute",
@@ -729,66 +737,44 @@
        "page": "Nacker",
        "revision": 1440790,
        "section": "Profile",
-       "paragraph": "M5",
+       "paragraph": "M3",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Plan",
-       "quest_ko": "예상대로의 계획",
-       "version": "4.2",
-       "speaker": "Raimondo"
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Plan",
-       "quest_ko": "예상대로의 계획",
-       "version": "4.2",
-       "speaker": "Raimondo"
       }
      ],
      "heading": "작중 행적 — 폰타인 과학원 연대기",
      "latin_left": [
-      "Arkhium Kinetic Core",
-      "Arkhium Kinetic Core",
-      "Arkhium Kinetic Core"
+      "Tri-Arkhium"
      ]
     },
     {
      "section": "작중 행적 — Fontaine Research Institute Chronicles",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nacker was experienced enough to head to the Central Laboratory Ruins, where he wanted to bring the ruins back to the ground.",
+     "status": "accepted",
+     "note": "M5, M13, M14 and M1 support the facts. The interpretation follows from M13 and M14.",
+     "quote": "Hence, this person intentionally activated that large Arkhium chunk, creating a modest, but rather noticeable explosion.",
      "sentences": [
       {
-       "t_raw": "Nacker는 Traveler에게 Survey Anchors 수집을 돕게 하면서 Central Laboratory Ruins로 향하고, 그 폐허를 지면으로 되돌리려 한다.",
+       "t_raw": "그러나 Nacker는 Arkhium을 과부하시키고 냉각 장치를 손상시켜 폭발을 일으키고, Traveler와 Raimondo가 조사에 나선다.",
        "interp": false,
        "dropped": false,
-       "t": "내커는 여행자에게 Survey Anchors 수집을 돕게 하면서 중앙 실험실 유적으로 향하고, 그 폐허를 지면으로 되돌리려 한다."
+       "t": "그러나 내커는 아르케 광석을 과부하시키고 냉각 장치를 손상시켜 폭발을 일으키고, 여행자와 레이먼드가 조사에 나선다."
       },
       {
-       "t_raw": "꼭대기에서 그는 폭발의 원인이 된 Experimental Field Generator를 발견하고, clockwork meka가 치워지면 상황을 통제할 수 있다고 주장한다.",
+       "t_raw": "Raimondo는 큰 Arkhium 덩어리가 의도적으로 활성화되어 작지만 눈에 띄는 폭발이 일어났고, 조사자가 Arkhium Inhibitor를 먼저 고치게 될 것이라고 설명한다.",
        "interp": false,
        "dropped": false,
-       "t": "꼭대기에서 그는 폭발의 원인이 된 실험성 역장 발생 장치를 발견하고, clockwork meka가 치워지면 상황을 통제할 수 있다고 주장한다."
+       "t": "레이먼드는 큰 아르케 광석 덩어리가 의도적으로 활성화되어 작지만 눈에 띄는 폭발이 일어났고, 조사자가 아르케 억제기를 먼저 고치게 될 것이라고 설명한다."
       },
       {
-       "t_raw": "이어 Raimondo의 catalyst로 큰 Arkhium 덩어리를 **Tri-Arkhium** 상태로 바꾼다.",
+       "t_raw": "Nacker의 조작은 Experimental Field Generator를 다시 가동시키지만, Traveler와 Raimondo는 이를 멈추고, Traveler는 억제 장치로 Arkhium 흔적을 안정화해 당분간 폭발을 막는다.",
        "interp": false,
        "dropped": false,
-       "t": "이어 레이먼드의 catalyst로 큰 아르케 광석 덩어리를 **Tri-Arkhium** 상태로 바꾼다."
+       "t": "내커의 조작은 실험성 역장 발생 장치를 다시 가동시키지만, 여행자와 레이먼드는 이를 멈추고, 여행자는 억제 장치로 아르케 광석 흔적을 안정화해 당분간 폭발을 막는다."
       },
       {
-       "t_raw": "통제를 벗어난 기계들은 Arkhium의 에너지 흐름을 감지하고 그곳으로 자동으로 모여들었다.",
-       "interp": false,
+       "t_raw": "이 폭발은 조사자의 시선을 Arkhium Inhibitor로 돌리려는 선택이었던 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "통제를 벗어난 기계들은 아르케 광석의 에너지 흐름을 감지하고 그곳으로 자동으로 모여들었다."
-      },
-      {
-       "t_raw": "Raimondo는 누군가 일부러 큰 Arkhium 덩어리를 활성화해 눈에 띄는 정도의 폭발을 일으켰고, 그렇게 하면 연구소가 조사자를 보냈을 때 Arkhium Inhibitor부터 고칠 것이라고 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "레이먼드는 누군가 일부러 큰 아르케 광석 덩어리를 활성화해 눈에 띄는 정도의 폭발을 일으켰고, 그렇게 하면 연구소가 조사자를 보냈을 때 Arkhium Inhibitor부터 고칠 것이라고 설명한다."
+       "t": "이 폭발은 조사자의 시선을 아르케 억제기로 돌리려는 선택이었던 셈이다."
       }
      ],
      "sources": [
@@ -797,15 +783,8 @@
        "page": "Nacker",
        "revision": 1440790,
        "section": "Profile",
-       "paragraph": "M3",
+       "paragraph": "M5",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
-       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
-       "version": "4.1",
-       "speaker": "Nacker"
       },
       {
        "kind": "wiki",
@@ -822,272 +801,60 @@
        "section": "Dialogue",
        "paragraph": "M14",
        "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 폰타인 과학원 연대기",
-     "latin_left": [
-      "Survey Anchors",
-      "Tri-Arkhium",
-      "Arkhium Inhibitor"
-     ]
-    },
-    {
-     "section": "작중 행적 — Fontaine Research Institute Chronicles",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Raimondo explained that the ruins contained a large amount of excited Arkhium, which could explode and the large chunk was designed to prevent it from occurring.",
-     "sentences": [
-      {
-       "t_raw": "Nacker의 조작으로 다시 작동한 field generator는 Traveler와 Raimondo가 기계를 안정화한 뒤 멈춰 세운다.",
-       "interp": false,
-       "dropped": false,
-       "t": "내커의 조작으로 다시 작동한 field generator는 여행자와 레이먼드가 기계를 안정화한 뒤 멈춰 세운다."
       },
       {
-       "t_raw": "Raimondo는 폐허에 다량의 excited Arkhium이 있어 폭발할 수 있으며, 큰 Arkhium 덩어리는 그 폭발을 막기 위해 설계된 것이라고 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "레이먼드는 폐허에 다량의 excited 아르케 광석이 있어 폭발할 수 있으며, 큰 아르케 광석 덩어리는 그 폭발을 막기 위해 설계된 것이라고 설명한다."
+       "kind": "wiki",
+       "page": "Fontaine Research Institute",
+       "revision": 1702233,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
       },
-      {
-       "t_raw": "Traveler는 **inhibitors**를 통해 폐허의 Arkhium 흔적을 안정화하고, 당장은 폭발을 막는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자는 **inhibitors**를 통해 폐허의 아르케 광석 흔적을 안정화하고, 당장은 폭발을 막는다."
-      },
-      {
-       "t_raw": "이 공로로 Traveler는 Honorary Senior Researcher 칭호를, Paimon은 Assistant to the Honorary Senior Researcher 칭호를 받는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 공로로 여행자는 Honorary Senior Researcher 칭호를, 페이몬은 Assistant to the Honorary Senior Researcher 칭호를 받는다."
-      },
-      {
-       "t_raw": "Raimondo는 Lumidouce Harbor 근처 Arkhium에서 미묘한 단서와 Nacker가 살아 있다는 증거를 발견했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "레이먼드는 루미두스 항구 근처 아르케 광석에서 미묘한 단서와 내커가 살아 있다는 증거를 발견했다고 말한다."
-      },
-      {
-       "t_raw": "폐허의 Arkhium 흔적을 inhibitors로 안정화한 뒤에도 Arkhium Kinetic Core 회수가 남은 목표로 제시된 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "폐허의 아르케 광석 흔적을 inhibitors로 안정화한 뒤에도 Arkhium Kinetic Core 회수가 남은 목표로 제시된 셈이다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Nacker",
        "revision": 1440790,
        "section": "Profile",
-       "paragraph": "M5",
+       "paragraph": "M3",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Fontaine Research Institute",
-       "revision": 1702233,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Plan",
-       "quest_ko": "예상대로의 계획",
-       "version": "4.2",
-       "speaker": "Raimondo"
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Plan",
-       "quest_ko": "예상대로의 계획",
-       "version": "4.2",
-       "speaker": "Raimondo"
       }
      ],
      "heading": "작중 행적 — 폰타인 과학원 연대기",
-     "latin_left": [
-      "Honorary Senior Researcher",
-      "Assistant",
-      "Honorary Senior Researcher",
-      "Arkhium Kinetic Core"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Fontaine Research Institute Chronicles",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Once I successfully synchronize it with the Arkhium Kinetic Core, then... Then I'll be the greatest kinetic engineer ever!",
+     "status": "accepted",
+     "note": "All sentences are supported by Q5 and M1.",
+     "quote": "Presently, we've discovered subtle clues in the Arkhium near Lumidouce Harbor, and... evidence that proves Mr. Nacker is still alive.",
      "sentences": [
       {
-       "t_raw": "Traveler는 결국 Nacker를 추적해 그가 Concini라는 새 후원자를 얻었음을 알게 된다.",
+       "t_raw": "Raimondo는 Lumidouce Harbor 근처 Arkhium에서 Nacker가 살아 있음을 증명하는 미묘한 단서를 발견했다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자는 결국 내커를 추적해 그가 콘치니라는 새 후원자를 얻었음을 알게 된다."
+       "t": "레이먼드는 루미두스 항구 근처 아르케 광석에서 내커가 살아 있음을 증명하는 미묘한 단서를 발견했다고 말한다."
       },
       {
-       "t_raw": "조사 중 Edwin Eastinghouse도 살아 있음이 드러나고, 두 사람은 Arkhium 연구를 계속하려 한다.",
+       "t_raw": "일행은 새 후원자 Concini를 얻은 Nacker를 추적하고, 그 과정에서 Edwin Eastinghouse도 살아 있음을 발견한다.",
        "interp": false,
        "dropped": false,
-       "t": "조사 중 에드윈 이스팅하우스도 살아 있음이 드러나고, 두 사람은 아르케 광석 연구를 계속하려 한다."
+       "t": "일행은 새 후원자 콘치니를 얻은 내커를 추적하고, 그 과정에서 에드윈 이스팅하우스도 살아 있음을 발견한다."
       },
       {
-       "t_raw": "Nacker는 Arkhium Kinetic Core와 동기화에 성공하면 위대한 kinetic engineer가 되겠다고 말한다.",
+       "t_raw": "두 사람은 Arkhium 연구를 계속하려 하지만 Nacker의 계획은 저지되고, 둘은 Institute로 데려와져 해고된 뒤 Fortress of Meropide로 보내진다.",
        "interp": false,
        "dropped": false,
-       "t": "내커는 Arkhium Kinetic Core와 동기화에 성공하면 위대한 kinetic engineer가 되겠다고 말한다."
-      },
-      {
-       "t_raw": "Fusilier는 지금까지의 상황에서 이득을 보았을 수 있는 사람은 그뿐이며 그가 Arkhium Kinetic Core를 가지고 있다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "퓨질리에는 지금까지의 상황에서 이득을 보았을 수 있는 사람은 그뿐이며 그가 Arkhium Kinetic Core를 가지고 있다고 말한다."
-      },
-      {
-       "t_raw": "Raimondo는 Nacker에게 연구와 Arkhium에서 멀어지는 것이 모두에게 낫다고 말하고, Nacker의 계획은 결국 막혀 두 사람은 연구소로 돌아와 해고된 뒤 Fortress of Meropide로 보내진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "레이먼드는 내커에게 연구와 아르케 광석에서 멀어지는 것이 모두에게 낫다고 말하고, 내커의 계획은 결국 막혀 두 사람은 연구소로 돌아와 해고된 뒤 메로피드 요새로 보내진다."
-      },
-      {
-       "t_raw": "새 후원자를 얻은 뒤에도 Arkhium Kinetic Core와의 동기화를 말하는 Nacker의 태도는 그가 Arkhium 연구를 포기하지 않았음을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "새 후원자를 얻은 뒤에도 Arkhium Kinetic Core와의 동기화를 말하는 내커의 태도는 그가 아르케 광석 연구를 포기하지 않았음을 보여 준다."
+       "t": "두 사람은 아르케 광석 연구를 계속하려 하지만 내커의 계획은 저지되고, 둘은 Institute로 데려와져 해고된 뒤 메로피드 요새로 보내진다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fontaine Research Institute",
-       "revision": 1702233,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Lie",
-       "quest_ko": "예상대로의 거짓말",
-       "version": "4.2",
-       "speaker": "Nacker"
-      },
       {
        "kind": "quest",
        "quest": "An Expected Plan",
        "quest_ko": "예상대로의 계획",
        "version": "4.2",
-       "speaker": "Fusilier"
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Lie",
-       "quest_ko": "예상대로의 거짓말",
-       "version": "4.2",
        "speaker": "Raimondo"
-      }
-     ],
-     "heading": "작중 행적 — 폰타인 과학원 연대기",
-     "latin_left": [
-      "Arkhium Kinetic Core",
-      "Arkhium Kinetic Core",
-      "Arkhium Kinetic Core"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Edwin personally taught Nacker how to operate it.",
-     "sentences": [
-      {
-       "t_raw": "Fontaine Research Institute의 Arkhium 연구는 Edwin Eastinghouse가 이끌었고, Nacker와 Raimondo가 협력자로 이름을 올렸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "폰타인 과학원의 아르케 광석 연구는 에드윈 이스팅하우스가 이끌었고, 내커와 레이먼드가 협력자로 이름을 올렸다."
       },
-      {
-       "t_raw": "Edwin은 Arkhium과 중력계를 다루는 선임 연구원으로, Experimental Field Generator를 만들고 Raimondo와 함께 Arkhium Kinetic Core를 개발했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "에드윈은 아르케 광석과 중력계를 다루는 선임 연구원으로, 실험성 역장 발생 장치를 만들고 레이먼드와 함께 Arkhium Kinetic Core를 개발했다."
-      },
-      {
-       "t_raw": "Nacker는 Edwin에게서 운용법을 직접 배웠다.",
-       "interp": false,
-       "dropped": false,
-       "t": "내커는 에드윈에게서 운용법을 직접 배웠다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": "Overview > Fontaine Research Institute",
-       "paragraph": "A9",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Secret Keepers and Forbidden Zones"
-        },
-        {
-         "type": "quest",
-         "name": "Fontaine Research Institute, Stagnating in the Rubble"
-        }
-       ]
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Arkhium Kinetic Core"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Arkhium really has incredible research potential. I have to find a way to get in and take a look...",
-     "sentences": [
-      {
-       "t_raw": "폭발 뒤에도 Edwin Eastinghouse는 살아 있어 Arkhium 연구를 이어 가려 했고, 이후 연구소로 돌아왔을 때 해고되어 Fortress of Meropide로 보내졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "폭발 뒤에도 에드윈 이스팅하우스는 살아 있어 아르케 광석 연구를 이어 가려 했고, 이후 연구소로 돌아왔을 때 해고되어 메로피드 요새로 보내졌다."
-      },
-      {
-       "t_raw": "그는 Arkhium의 연구 잠재력을 높이 평가하면서도, **Arkhium 연구**를 하지 말라는 말을 남긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 아르케 광석의 연구 잠재력을 높이 평가하면서도, **아르케 광석 연구**를 하지 말라는 말을 남긴다."
-      },
-      {
-       "t_raw": "Mora가 가공되지 않은 Arkhium을 반드시 사 주는 것도 아니고, 명성이 뛰어난 연구 조수를 끌어오는 것도 아니라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "모라가 가공되지 않은 아르케 광석을 반드시 사 주는 것도 아니고, 명성이 뛰어난 연구 조수를 끌어오는 것도 아니라고 말한다."
-      },
-      {
-       "t_raw": "Arkhium의 잠재력이 크다며 들어가 볼 방법을 찾아야 한다고도 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아르케 광석의 잠재력이 크다며 들어가 볼 방법을 찾아야 한다고도 한다."
-      },
-      {
-       "t_raw": "Jurieu의 배를 두고는 Arkhium이 아니라면 무슨 에너지원을 썼겠느냐며, 그 배 하나만으로도 그 물질의 가치가 증명된다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "쥐리에의 배를 두고는 아르케 광석이 아니라면 무슨 에너지원을 썼겠느냐며, 그 배 하나만으로도 그 물질의 가치가 증명된다고 말한다."
-      },
-      {
-       "t_raw": "금지와 탐구욕이 한 인물 안에서 맞물리는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "금지와 탐구욕이 한 인물 안에서 맞물리는 셈이다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Fontaine Research Institute",
@@ -1095,21 +862,57 @@
        "section": "Profile",
        "paragraph": "M1",
        "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 폰타인 과학원 연대기",
+     "latin_left": [
+      "Institute"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Quotes match M7, M10, M15, M8 and M11. The interpretations follow from them.",
+     "quote": "Whatever you do, you're not allowed to research Arkhium!",
+     "sentences": [
+      {
+       "t_raw": "Edwin Eastinghouse는 “무슨 일이 있어도 Arkhium을 연구해서는 안 된다”고 말하면서도 Arkhium의 연구 잠재력이 크다며 들어가 볼 방법을 찾겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에드윈 이스팅하우스는 “무슨 일이 있어도 아르케 광석을 연구해서는 안 된다”고 말하면서도 아르케 광석의 연구 잠재력이 크다며 들어가 볼 방법을 찾겠다고 한다."
       },
+      {
+       "t_raw": "Edwin Eastinghouse는 Jurieu가 Arkhium이 아닌 다른 에너지원을 썼겠냐며 그 가치를 말하기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에드윈 이스팅하우스는 쥐리에가 아르케 광석이 아닌 다른 에너지원을 썼겠냐며 그 가치를 말하기도 한다."
+      },
+      {
+       "t_raw": "**금지와 관심이 한 인물 안에서 맞선다**.",
+       "interp": true,
+       "dropped": false,
+       "t": "**금지와 관심이 한 인물 안에서 맞선다**."
+      },
+      {
+       "t_raw": "Nacker는 Choiseul의 뜻에 순순히 따르며 Arkhium을 포기할 수 있냐고 반문하고, 약속에는 개의치 않는다고 하면서 Institute가 Arkhium 연구 프로젝트를 끝내지 않기를 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "내커는 슈아죌의 뜻에 순순히 따르며 아르케 광석을 포기할 수 있냐고 반문하고, 약속에는 개의치 않는다고 하면서 Institute가 아르케 광석 연구 프로젝트를 끝내지 않기를 바란다."
+      },
+      {
+       "t_raw": "Edwin Eastinghouse가 Arkhium을 금하면서도 가치를 좇는 태도와 Nacker가 프로젝트 지속을 우선하는 태도는 서로 다른 동기를 드러낸다.",
+       "interp": true,
+       "dropped": false,
+       "t": "에드윈 이스팅하우스가 아르케 광석을 금하면서도 가치를 좇는 태도와 내커가 프로젝트 지속을 우선하는 태도는 서로 다른 동기를 드러낸다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Edwin Eastinghouse",
        "revision": 1444658,
        "section": "Dialogue",
        "paragraph": "M7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Edwin Eastinghouse",
-       "revision": 1444658,
-       "section": "Dialogue",
-       "paragraph": "M9",
        "wiki_refs": []
       },
       {
@@ -1127,56 +930,6 @@
        "section": "Dialogue",
        "paragraph": "M15",
        "wiki_refs": []
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Once I successfully synchronize it with the Arkhium Kinetic Core, then... Then I'll be the greatest kinetic engineer ever!",
-     "sentences": [
-      {
-       "t_raw": "Nacker는 연구소에서 Arkhium 연구가 중단되는 것을 받아들이지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "내커는 연구소에서 아르케 광석 연구가 중단되는 것을 받아들이지 않았다."
-      },
-      {
-       "t_raw": "Choiseul의 뜻에 순순히 따르며 Arkhium을 포기할 수 있느냐고 되묻고, Choiseul의 약속에는 관심이 없으며 연구소가 Arkhium 연구 계획을 끝내는 것만은 원하지 않는다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "슈아죌의 뜻에 순순히 따르며 아르케 광석을 포기할 수 있느냐고 되묻고, 슈아죌의 약속에는 관심이 없으며 연구소가 아르케 광석 연구 계획을 끝내는 것만은 원하지 않는다고 말한다."
-      },
-      {
-       "t_raw": "그는 **Arkhium Kinetic Core**와 동기화에 성공하면 최고의 동력 엔지니어가 되겠다는 포부도 드러낸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 **Arkhium Kinetic Core**와 동기화에 성공하면 최고의 동력 엔지니어가 되겠다는 포부도 드러낸다."
-      },
-      {
-       "t_raw": "그러나 Arkhium, Arkhium Kinetic Core, 미래의 Fontaine Research Institute를 두고는 '됐다, 다 그렇게 되라'는 식으로 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 아르케 광석, Arkhium Kinetic Core, 미래의 폰타인 과학원을 두고는 '됐다, 다 그렇게 되라'는 식으로 말한다."
-      },
-      {
-       "t_raw": "연구에 걸었던 기대와 체념이 한 사람에게서 크게 갈리는 대목이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "연구에 걸었던 기대와 체념이 한 사람에게서 크게 갈리는 대목이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Nacker",
-       "revision": 1440790,
-       "section": "Dialogue",
-       "paragraph": "M2",
-       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -1193,73 +946,39 @@
        "section": "Dialogue",
        "paragraph": "M11",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Lie",
-       "quest_ko": "예상대로의 거짓말",
-       "version": "4.2",
-       "speaker": "Nacker"
       }
      ],
      "heading": "얽힌 인물과 세력",
      "latin_left": [
-      "Arkhium Kinetic Core",
-      "Arkhium Kinetic Core"
+      "Institute"
      ]
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But our main objective is still to retrieve the Arkhium Kinetic Core as soon as possible. It's an extremely unstable prototype.",
+     "status": "accepted",
+     "note": "Supported by M12, M16 and M11. The interpretation is reasonable.",
+     "quote": "Hmph... Personally, I sincerely hope that both Mr. Nacker and the Arkhium Kinetic Core were both blown to pieces.",
      "sentences": [
       {
-       "t_raw": "Raimondo는 Arkhium Kinetic Core를 극도로 불안정한 시제품으로 보고, 우선 그것을 되찾는 일이 목표라고 말한다.",
+       "t_raw": "Raimondo는 Nacker와 Arkhium Kinetic Core가 모두 조각났으면 한다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "레이먼드는 Arkhium Kinetic Core를 극도로 불안정한 시제품으로 보고, 우선 그것을 되찾는 일이 목표라고 말한다."
+       "t": "레이먼드는 내커와 아르케 동력 코어가 모두 조각났으면 한다고 말한다."
       },
       {
-       "t_raw": "Nacker가 더 작은 폭발을 일으켰을 때 Raimondo는 그가 Arkhium Kinetic Core를 팔아 큰돈을 챙기려 한다고 보았다.",
+       "t_raw": "그러면서도 폐허 속 Arkhium의 에너지 흐름을 최고의 도난 방지책이라며, 평범한 사람은 견디지 못한다고 본다.",
        "interp": false,
        "dropped": false,
-       "t": "내커가 더 작은 폭발을 일으켰을 때 레이먼드는 그가 Arkhium Kinetic Core를 팔아 큰돈을 챙기려 한다고 보았다."
+       "t": "그러면서도 폐허 속 아르케 광석의 에너지 흐름을 최고의 도난 방지책이라며, 평범한 사람은 견디지 못한다고 본다."
       },
       {
-       "t_raw": "그는 Lumidouce Harbor 근처의 Arkhium에서 미세한 단서를 발견했고, Nacker가 살아 있다는 증거도 확보했다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 루미두스 항구 근처의 아르케 광석에서 미세한 단서를 발견했고, 내커가 살아 있다는 증거도 확보했다고 전한다."
-      },
-      {
-       "t_raw": "그는 누군가에게 연구와 Arkhium에서 떨어져 있으라고 경고한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 누군가에게 연구와 아르케 광석에서 떨어져 있으라고 경고한다."
-      },
-      {
-       "t_raw": "Nacker와 Arkhium Kinetic Core 둘 다 산산조각 났으면 좋겠다고까지 말하고, 폐허의 Arkhium 에너지 흐름이 최고의 도난 방지책이라 보통 사람은 견디지 못한다고 평한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "내커와 Arkhium Kinetic Core 둘 다 산산조각 났으면 좋겠다고까지 말하고, 폐허의 아르케 광석 에너지 흐름이 최고의 도난 방지책이라 보통 사람은 견디지 못한다고 평한다."
-      },
-      {
-       "t_raw": "위험한 물질을 되찾으려는 실무적 태도와 Nacker를 향한 적대감이 함께 드러난다.",
+       "t_raw": "Nacker가 약속에는 개의치 않으면서도 Institute의 Arkhium 연구 프로젝트 종료만은 원치 않는다는 점과, Raimondo가 Nacker를 꺼리면서도 Arkhium의 위력을 신뢰하는 점은 **인물마다 다른 셈법**을 보여 준다.",
        "interp": true,
        "dropped": false,
-       "t": "위험한 물질을 되찾으려는 실무적 태도와 내커를 향한 적대감이 함께 드러난다."
+       "t": "내커가 약속에는 개의치 않으면서도 Institute의 아르케 광석 연구 프로젝트 종료만은 원치 않는다는 점과, 레이먼드가 내커를 꺼리면서도 아르케 광석의 위력을 신뢰하는 점은 **인물마다 다른 셈법**을 보여 준다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fontaine Research Institute",
-       "revision": 1702233,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Raimondo",
@@ -1277,139 +996,48 @@
        "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "An Expected Plan",
-       "quest_ko": "예상대로의 계획",
-       "version": "4.2",
-       "speaker": "Raimondo"
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Lie",
-       "quest_ko": "예상대로의 거짓말",
-       "version": "4.2",
-       "speaker": "Raimondo"
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Plan",
-       "quest_ko": "예상대로의 계획",
-       "version": "4.2",
-       "speaker": "Raimondo"
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Arkhium Kinetic Core",
-      "Arkhium Kinetic Core",
-      "Arkhium Kinetic Core"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After all, he is the only one who could have benefited from how things have played out up till now... and he has the Arkhium Kinetic Core.",
-     "sentences": [
-      {
-       "t_raw": "Choiseul은 Nacker의 말에서 Arkhium 연구를 포기하게 하는 뜻과 약속의 주체로 나타난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "슈아죌은 내커의 말에서 아르케 광석 연구를 포기하게 하는 뜻과 약속의 주체로 나타난다."
-      },
-      {
-       "t_raw": "Nacker는 그런 Choiseul의 뜻에 순순히 따르지 않겠다고 되묻고, Arkhium 연구 계획이 종료되는 것만은 원하지 않는다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "내커는 그런 슈아죌의 뜻에 순순히 따르지 않겠다고 되묻고, 아르케 광석 연구 계획이 종료되는 것만은 원하지 않는다고 말한다."
-      },
-      {
-       "t_raw": "이후 Nacker는 Concini라는 또 다른 후원자를 얻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이후 내커는 콘치니라는 또 다른 후원자를 얻는다."
-      },
-      {
-       "t_raw": "Fusilier는 어떤 인물이 지금까지의 경과에서 이득을 보았을 수 있는 유일한 인물이며 Arkhium Kinetic Core를 갖고 있다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "퓨질리에는 어떤 인물이 지금까지의 경과에서 이득을 보았을 수 있는 유일한 인물이며 Arkhium Kinetic Core를 갖고 있다고 말한다."
-      },
-      {
-       "t_raw": "Nacker의 계획은 저지되고, Edwin과 Nacker는 연구소로 돌아와 해고된 뒤 Fortress of Meropide로 보내진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "내커의 계획은 저지되고, 에드윈과 내커는 연구소로 돌아와 해고된 뒤 메로피드 요새로 보내진다."
-      },
-      {
-       "t_raw": "Arkhium 연구를 둘러싼 새 **후원자**의 등장과 Arkhium Kinetic Core 보유자에 대한 의심이 나란히 놓이는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아르케 광석 연구를 둘러싼 새 **후원자**의 등장과 Arkhium Kinetic Core 보유자에 대한 의심이 나란히 놓이는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fontaine Research Institute",
-       "revision": 1702233,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Nacker",
-       "revision": 1440790,
-       "section": "Dialogue",
-       "paragraph": "M8",
-       "wiki_refs": []
-      },
-      {
        "kind": "wiki",
        "page": "Nacker",
        "revision": 1440790,
        "section": "Dialogue",
        "paragraph": "M11",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Plan",
-       "quest_ko": "예상대로의 계획",
-       "version": "4.2",
-       "speaker": "Fusilier"
       }
      ],
      "heading": "얽힌 인물과 세력",
      "latin_left": [
-      "Arkhium Kinetic Core",
-      "Arkhium Kinetic Core"
+      "Institute"
      ]
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Matches A2 and A6. The open-question reading is hedged.",
      "quote": "Apparently, this separation can also be reversed, though there has been little academic interest in this direction.",
      "sentences": [
       {
-       "t_raw": "Arkhium은 물질 또는 '물질 바깥의 어떤 것'을 분리하며, 이 분리를 역방향으로 되돌리는 일도 가능하다고 전해진다.",
+       "t_raw": "Arkhium은 물질, 또는 '물질 밖의 무엇인가'를 분리하는 성질을 지녔고, **물질 분리의 역전**도 가능하다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "아르케 광석은 물질 또는 '물질 바깥의 어떤 것'을 분리하며, 이 분리를 역방향으로 되돌리는 일도 가능하다고 전해진다."
+       "t": "아르케 광석은 물질, 또는 '물질 밖의 무엇인가'를 분리하는 성질을 지녔고, **물질 분리의 역전**도 가능하다고 한다."
       },
       {
-       "t_raw": "특정 조건에서 Arkhium 광석이 스스로 융합한다.",
+       "t_raw": "다만 이 방향에는 학문적 관심이 적었다.",
        "interp": false,
        "dropped": false,
-       "t": "특정 조건에서 아르케 광석 광석이 스스로 융합한다."
+       "t": "다만 이 방향에는 학문적 관심이 적었다."
       },
       {
-       "t_raw": "이 두 성질은 Arkhium의 물질 변형에 관한 의문을 남기는 대목으로 보인다.",
+       "t_raw": "특정 조건에서는 Arkhium 광석이 **자연 융합**을 일으킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정 조건에서는 아르케 광석 광석이 **자연 융합**을 일으킨다."
+      },
+      {
+       "t_raw": "분리 역전과 자연 융합 사이의 관계는 자료만으로 단정하기 어려운 **남은 질문**으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이 두 성질은 아르케 광석의 물질 변형에 관한 의문을 남기는 대목으로 보인다."
+       "t": "분리 역전과 자연 융합 사이의 관계는 자료만으로 단정하기 어려운 **남은 질문**으로 보인다."
       }
      ],
      "sources": [
@@ -1440,85 +1068,37 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But our main objective is still to retrieve the Arkhium Kinetic Core as soon as possible. It's an extremely unstable prototype.",
+     "status": "accepted",
+     "note": "Matches A4 and M16. The interpretation is framed as an open question.",
+     "quote": "The energy flow of the Arkhium in the ruins is the best anti-theft measure there is.",
      "sentences": [
       {
-       "t_raw": "Nacker는 Raimondo의 촉매로 커다란 Arkhium 덩어리를 **Tri-Arkhium** 상태로 바꾸었다.",
+       "t_raw": "Arkhium은 일정량 활성화되면 에너지 생성 잠재력이 고갈되어 사실상 영구적인 비활성 상태가 된다.",
        "interp": false,
        "dropped": false,
-       "t": "내커는 레이먼드의 촉매로 커다란 아르케 광석 덩어리를 **Tri-Arkhium** 상태로 바꾸었다."
+       "t": "아르케 광석은 일정량 활성화되면 에너지 생성 잠재력이 고갈되어 사실상 영구적인 비활성 상태가 된다."
       },
       {
-       "t_raw": "Arkhium Kinetic Core는 매우 불안정한 시제품으로, 회수 자체가 주된 목표로 제시된다.",
+       "t_raw": "Raimondo는 폐허의 Arkhium 에너지 흐름을 최고의 도난 방지책이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "Arkhium Kinetic Core는 매우 불안정한 시제품으로, 회수 자체가 주된 목표로 제시된다."
+       "t": "레이먼드는 폐허의 아르케 광석 에너지 흐름을 최고의 도난 방지책이라고 말한다."
       },
       {
-       "t_raw": "Tri-Arkhium 변형과 불안정한 핵의 관계는 아직 풀리지 않은 의문으로 보인다.",
+       "t_raw": "에너지가 고갈된 뒤의 쓰임과 폐허의 에너지 흐름이 도난을 막는 방식은 남은 질문으로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "Tri-Arkhium 변형과 불안정한 핵의 관계는 아직 풀리지 않은 의문으로 보인다."
+       "t": "에너지가 고갈된 뒤의 쓰임과 폐허의 에너지 흐름이 도난을 막는 방식은 남은 질문으로 볼 수 있다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Nacker",
-       "revision": 1440790,
-       "section": "Profile",
-       "paragraph": "M3",
+       "page": "Arkhium",
+       "revision": 1805573,
+       "section": "Overview > Properties",
+       "paragraph": "A4",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "An Expected Plan",
-       "quest_ko": "예상대로의 계획",
-       "version": "4.2",
-       "speaker": "Raimondo"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Tri-Arkhium",
-      "Arkhium Kinetic Core",
-      "Tri-Arkhium"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Presently, we've discovered subtle clues in the Arkhium near Lumidouce Harbor, and... evidence that proves Mr. Nacker is still alive.",
-     "sentences": [
-      {
-       "t_raw": "Raimondo는 Lumidouce Harbor 근처의 Arkhium에서 미묘한 단서와 Mr. Nacker가 아직 살아 있음을 증명하는 증거를 발견했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "레이먼드는 루미두스 항구 근처의 아르케 광석에서 미묘한 단서와 Mr. 내커가 아직 살아 있음을 증명하는 증거를 발견했다고 말한다."
-      },
-      {
-       "t_raw": "폐허 속 Arkhium의 에너지 흐름은 최고의 도난 방지책이며 보통 사람은 견딜 수 없다고 Raimondo는 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "폐허 속 아르케 광석의 에너지 흐름은 최고의 도난 방지책이며 보통 사람은 견딜 수 없다고 레이먼드는 말한다."
-      },
-      {
-       "t_raw": "Arkhium은 위험한 에너지 흐름으로 접근을 막으면서도 그 흔적으로 사람을 추적하게 하는 **양면**을 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아르케 광석은 위험한 에너지 흐름으로 접근을 막으면서도 그 흔적으로 사람을 추적하게 하는 **양면**을 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "An Expected Plan",
-       "quest_ko": "예상대로의 계획",
-       "version": "4.2",
-       "speaker": "Raimondo"
       },
       {
        "kind": "wiki",
@@ -1530,63 +1110,30 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Mr"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "For their efforts, they were given the title of Honorary Senior Researcher, while Paimon was given the title Assistant to the Honorary Senior Researcher.",
-     "sentences": [
-      {
-       "t_raw": "Fontaine Research Institute Chronicles에서 연구소를 도운 뒤 Traveler는 Honorary Senior Researcher 칭호를, Paimon은 Assistant to the Honorary Senior Researcher 칭호를 받았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "폰타인 과학원 연대기에서 연구소를 도운 뒤 여행자는 Honorary Senior Researcher 칭호를, 페이몬은 Assistant to the Honorary Senior Researcher 칭호를 받았다."
-      },
-      {
-       "t_raw": "Paimon의 칭호는 Traveler의 칭호를 전제로 붙은 이름인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "페이몬의 칭호는 여행자의 칭호를 전제로 붙은 이름인 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Fontaine Research Institute",
-       "revision": 1702233,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Honorary Senior Researcher",
-      "Assistant",
-      "Honorary Senior Researcher"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Matches A7 and M6. 'Mutters' is a mild paraphrase of an idle quote.",
      "quote": "Refined Arkhium ore has been known to emit heat, light, and/or a strange buzzing sound.",
      "sentences": [
       {
-       "t_raw": "정제된 Arkhium 광석은 열, 빛, 그리고/또는 기묘한 윙윙거리는 소리를 내는 것으로 알려져 있다.",
+       "t_raw": "**정련 Arkhium**은 열, 빛, 그리고/또는 이상한 웅웅거리는 소리를 낼 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "정제된 아르케 광석 광석은 열, 빛, 그리고/또는 기묘한 윙윙거리는 소리를 내는 것으로 알려져 있다."
+       "t": "**정련 아르케 광석**은 열, 빛, 그리고/또는 이상한 웅웅거리는 소리를 낼 수 있다."
       },
       {
-       "t_raw": "Edwin Eastinghouse는 'Arkhium research...'라고 말한다.",
+       "t_raw": "Edwin Eastinghouse는 \"Arkhium research...\"라고 중얼거린다.",
        "interp": false,
        "dropped": false,
-       "t": "에드윈 이스팅하우스는 '아르케 광석 research...'라고 말한다."
+       "t": "에드윈 이스팅하우스는 \"아르케 광석 연구...\"라고 중얼거린다.",
+       "polish": {
+        "from": "에드윈 이스팅하우스는 \"아르케 광석 research...\"라고 중얼거린다.",
+        "text": "에드윈 이스팅하우스는 \"아르케 광석 연구...\"라고 중얼거린다.",
+        "by": "or-ds"
+       }
       }
      ],
      "sources": [
@@ -1621,42 +1168,37 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Notably, the Traveler and Paimon are resistant to these effects.",
+     "status": "accepted",
+     "note": "Both sentences match Q3 and Q9.",
+     "quote": "If I may, Mr. Nacker, could you explain what would happen if someone were to be directly hit by intense energy flowing from Arkhium?",
      "sentences": [
       {
-       "t_raw": "Arkhium 에너지에 직접 노출되면 메스꺼움, 구토, 피하 출혈, 심하면 혼수에 이를 수 있으며, 적절한 약이나 대비가 없는 대부분의 사람은 이를 견디지 못한다.",
+       "t_raw": "Chronie는 Nacker에게 Arkhium에서 흐르는 강렬한 에너지에 누군가가 직접 맞으면 어떤 일이 일어날지 설명해 달라고 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "아르케 광석 에너지에 직접 노출되면 메스꺼움, 구토, 피하 출혈, 심하면 혼수에 이를 수 있으며, 적절한 약이나 대비가 없는 대부분의 사람은 이를 견디지 못한다."
+       "t": "클로니아는 내커에게 아르케 광석에서 흐르는 강렬한 에너지에 누군가가 직접 맞으면 어떤 일이 일어날지 설명해 달라고 묻는다."
       },
       {
-       "t_raw": "Traveler와 Paimon은 이런 영향에 내성이 있다.",
+       "t_raw": "Chronie는 하찮은 데이터가 해로운 Arkhium 에너지 흐름을 발산할 리 없다는 데 동의한다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자와 페이몬은 이런 영향에 내성이 있다."
-      },
-      {
-       "t_raw": "그래서 두 사람은 Arkhium 에너지가 남은 현장에서 다른 이들보다 버티기 쉬운 편이라고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그래서 두 사람은 아르케 광석 에너지가 남은 현장에서 다른 이들보다 버티기 쉬운 편이라고 볼 수 있다."
+       "t": "클로니아는 하찮은 데이터가 해로운 아르케 광석 에너지 흐름을 발산할 리 없다는 데 동의한다."
       }
      ],
      "sources": [
       {
-       "kind": "wiki",
-       "page": "Arkhium",
-       "revision": 1805573,
-       "section": "Overview > Properties",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Fontaine Research Institute, Stagnating in the Rubble"
-        }
-       ]
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+       "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+       "version": "4.1",
+       "speaker": "Chronie"
       }
      ],
      "heading": "여담",
@@ -1666,9 +1208,9 @@
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그건 Arkhium이야. Fontaine Research Institute 사고 이후 Arkhium 채굴 작업은 중단됐어.",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Arkhium이다. Fontaine Research Institute 사고 이후 Arkhium 채굴 작업이 중단되었다.",
      "en": "It's Arkhium. Arkhium mining operations stopped after the Fontaine Research Institute accident.",
      "speaker": "Caterpillar",
      "source": {
@@ -1678,14 +1220,14 @@
       "version": "4.1",
       "speaker": "Caterpillar"
      },
-     "t": "그건 아르케 광석이야. 폰타인 과학원 사고 이후 아르케 광석 채굴 작업은 중단됐어.",
+     "t": "아르케 광석이다. 폰타인 과학원 사고 이후 아르케 광석 채굴 작업이 중단되었다.",
      "speaker_ko": "캐터필러"
     },
     {
-     "section": "정체와 성질",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "실례지만, Nacker 씨, 누군가 Arkhium에서 흐르는 강렬한 에너지에 직접 맞으면 어떤 일이 일어날지 설명해 주시겠습니까?",
+     "section": "정체 — 물질과 성질",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "괜찮다면, Nacker 씨, 누군가가 Arkhium에서 흐르는 강렬한 에너지에 직접 맞으면 어떤 일이 일어날지 설명해 주실 수 있나요?",
      "en": "If I may, Mr. Nacker, could you explain what would happen if someone were to be directly hit by intense energy flowing from Arkhium?",
      "speaker": "Chronie",
      "source": {
@@ -1695,14 +1237,14 @@
       "version": "4.1",
       "speaker": "Chronie"
      },
-     "t": "실례지만, 내커 씨, 누군가 아르케 광석에서 흐르는 강렬한 에너지에 직접 맞으면 어떤 일이 일어날지 설명해 주시겠습니까?",
+     "t": "괜찮다면, 내커 씨, 누군가가 아르케 광석에서 흐르는 강렬한 에너지에 직접 맞으면 어떤 일이 일어날지 설명해 주실 수 있나요?",
      "speaker_ko": "클로니아"
     },
     {
-     "section": "드러난 역사 — 연구와 폭발",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그것은 Arkhium이다. Arkhium 채굴 작업은 Fontaine Research Institute 사고 이후 중단되었다.",
+     "section": "드러난 역사 — Fontaine Research Institute",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그건 Arkhium이다. Fontaine Research Institute 사고 이후로 Arkhium 채굴 작업은 중단되었다.",
      "en": "It's Arkhium. Arkhium mining operations stopped after the Fontaine Research Institute accident.",
      "speaker": "Caterpillar",
      "source": {
@@ -1712,14 +1254,14 @@
       "version": "4.1",
       "speaker": "Caterpillar"
      },
-     "t": "그것은 아르케 광석이다. 아르케 광석 채굴 작업은 폰타인 과학원 사고 이후 중단되었다.",
+     "t": "그건 아르케 광석이다. 폰타인 과학원 사고 이후로 아르케 광석 채굴 작업은 중단되었다.",
      "speaker_ko": "캐터필러"
     },
     {
      "section": "작중 행적 — Fontaine Research Institute Chronicles",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "다시 도움을 청하기 전에, Arkhium Kinetic Core 도난 사건에 대해 간단히 설명하도록 하겠습니다.",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "다시 도움을 청하기 전에, Arkhium Kinetic Core 도난 사건에 대해 간단히 설명드리겠습니다.",
      "en": "Before I ask for your help again, please allow me to briefly explain the case of the Arkhium Kinetic Core's theft.",
      "speaker": "Raimondo",
      "source": {
@@ -1729,42 +1271,59 @@
       "version": "4.2",
       "speaker": "Raimondo"
      },
-     "t": "다시 도움을 청하기 전에, Arkhium Kinetic Core 도난 사건에 대해 간단히 설명하도록 하겠습니다.",
+     "t": "다시 도움을 청하기 전에, 아르케 동력 코어 도난 사건에 대해 간단히 설명드리겠습니다.",
      "speaker_ko": "레이먼드"
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "현재 우리는 Lumidouce Harbor 근처의 Arkhium에서 미세한 단서들과... Mr. Nacker가 아직 살아 있다는 것을 증명하는 증거를 발견했습니다.",
-     "en": "Presently, we've discovered subtle clues in the Arkhium near Lumidouce Harbor, and... evidence that proves Mr. Nacker is still alive.",
-     "speaker": "Raimondo",
+     "status": "accepted",
+     "note": "Faithful translation; 'kinetic engineer' rendered as 동력 엔지니어 is acceptable.",
+     "t_raw": "내가 그것을 Arkhium Kinetic Core와 성공적으로 동기화하고 나면, 그때는... 그때는 내가 최고의 동력 엔지니어가 될 거다!",
+     "en": "Once I successfully synchronize it with the Arkhium Kinetic Core, then... Then I'll be the greatest kinetic engineer ever!",
+     "speaker": "Nacker",
      "source": {
       "kind": "quest",
-      "quest": "An Expected Plan",
-      "quest_ko": "예상대로의 계획",
+      "quest": "An Expected Lie",
+      "quest_ko": "예상대로의 거짓말",
       "version": "4.2",
-      "speaker": "Raimondo"
+      "speaker": "Nacker"
      },
-     "t": "현재 우리는 루미두스 항구 근처의 아르케 광석에서 미세한 단서들과... Mr. 내커가 아직 살아 있다는 것을 증명하는 증거를 발견했습니다.",
-     "speaker_ko": "레이먼드"
+     "t": "내가 그것을 아르케 동력 코어와 성공적으로 동기화하고 나면, 그때는... 그때는 내가 최고의 동력 엔지니어가 될 거다!",
+     "speaker_ko": "내커"
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "현재 우리는 Lumidouce Harbor 근처의 Arkhium에서 미묘한 단서를, 그리고... Mr. Nacker가 아직 살아 있음을 증명하는 증거를 발견했다.",
-     "en": "Presently, we've discovered subtle clues in the Arkhium near Lumidouce Harbor, and... evidence that proves Mr. Nacker is still alive.",
-     "speaker": "Raimondo",
+     "status": "accepted",
+     "note": "Faithful translation of Chronie's line (Q3): polite request, Nacker addressed as Mr., direct hit by intense Arkhium energy.",
+     "t_raw": "실례지만, Nacker 씨, 누군가가 Arkhium에서 흐르는 강렬한 에너지에 직접 맞으면 어떻게 될지 설명해 주시겠습니까?",
+     "en": "If I may, Mr. Nacker, could you explain what would happen if someone were to be directly hit by intense energy flowing from Arkhium?",
+     "speaker": "Chronie",
      "source": {
       "kind": "quest",
-      "quest": "An Expected Plan",
-      "quest_ko": "예상대로의 계획",
-      "version": "4.2",
-      "speaker": "Raimondo"
+      "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+      "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+      "version": "4.1",
+      "speaker": "Chronie"
      },
-     "t": "현재 우리는 루미두스 항구 근처의 아르케 광석에서 미묘한 단서를, 그리고... Mr. 내커가 아직 살아 있음을 증명하는 증거를 발견했다.",
-     "speaker_ko": "레이먼드"
+     "t": "실례지만, 내커 씨, 누군가가 아르케 광석에서 흐르는 강렬한 에너지에 직접 맞으면 어떻게 될지 설명해 주시겠습니까?",
+     "speaker_ko": "클로니아"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Chronie's line (Q3). Keeping 'Mr. Nacker' in English is allowed, and the meaning is the same.",
+     "t_raw": "실례가 되지 않는다면, Mr. Nacker, Arkhium에서 흐르는 강렬한 에너지에 누군가가 직접 맞으면 어떤 일이 일어날지 설명해 주실 수 있겠습니까?",
+     "en": "If I may, Mr. Nacker, could you explain what would happen if someone were to be directly hit by intense energy flowing from Arkhium?",
+     "speaker": "Chronie",
+     "source": {
+      "kind": "quest",
+      "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+      "quest_ko": "폐허 위에 정체된 폰타인 과학원",
+      "version": "4.1",
+      "speaker": "Chronie"
+     },
+     "t": "실례가 되지 않는다면, Mr. 내커, 아르케 광석에서 흐르는 강렬한 에너지에 누군가가 직접 맞으면 어떤 일이 일어날지 설명해 주실 수 있겠습니까?",
+     "speaker_ko": "클로니아"
     }
    ]
   }

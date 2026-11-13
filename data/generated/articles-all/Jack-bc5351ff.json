@@ -20,41 +20,41 @@
    "input_chars": 3879,
    "input_cut": false,
    "input_hash": "765dd1765749",
-   "writer": "or-ds",
-   "verifier": "codex-medium",
-   "status": "needs_verify",
+   "writer": "kimi,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Jack is a novice member of the Mondstadt Adventurers' Guild and a former member of Bennett's Adventure Team before leaving due to Bennett's contagious bad luck.",
+     "status": "accepted",
+     "note": "All sentences are supported by A1-A3, A12-A15 and the quest lines. Sentence 3 is a reasonable interpretation of the quests where the Traveler helps or rescues him.",
+     "quote": "If I could finish a commission of that rank, I would definitely rise to prominence throughout the entire Adventurers' Guild.",
      "sentences": [
       {
-       "t_raw": "Jack은 Mondstadt의 Adventurers' Guild에서 활동하는 **신참 모험가**이며, Bennett의 악운 때문에 Benny's Adventure Team을 떠난 전 멤버다.",
+       "t_raw": "Jack은 Mondstadt의 Adventurers' Guild 본부 앞에서 낮에는 신입 모험가로 지내고, 밤에는 Angel's Share에서 Cyrus와 술을 마신다.",
        "interp": false,
        "dropped": false,
-       "t": "잭은 몬드의 모험가 길드에서 활동하는 **신참 모험가**이며, 베넷의 악운 때문에 베니의 모험단을 떠난 전 멤버다."
+       "t": "잭은 몬드의 모험가 길드 본부 앞에서 낮에는 신입 모험가로 지내고, 밤에는 천사의 몫에서 Cyrus와 술을 마신다."
       },
       {
-       "t_raw": "그는 Cyrus와 Stanley를 크게 동경하고 그들의 장대한 이야기를 진심으로 믿는 인물로, 그런 **순진함** 때문에 Mondstadt의 'Four Drunkards' 중 하나로 불리게 되었다.",
+       "t_raw": "그는 Bennett의 불운을 견디지 못해 떠난 전 Benny's Adventure Team 출신이며, Cyrus와 Stanley의 과장된 이야기를 그대로 믿는 **순진한 성격**으로 알려져 있다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 Cyrus와 스탠리를 크게 동경하고 그들의 장대한 이야기를 진심으로 믿는 인물로, 그런 **순진함** 때문에 몬드의 'Four Drunkards' 중 하나로 불리게 되었다."
+       "t": "그는 베넷의 불운을 견디지 못해 떠난 전 베니의 모험단 출신이며, Cyrus와 스탠리의 과장된 이야기를 그대로 믿는 **순진한 성격**으로 알려져 있다."
       },
       {
-       "t_raw": "낮에는 Adventurers' Guild Headquarters 앞에 머물고, 밤에는 Angel's Share에서 Cyrus와 술을 마시며 **술내성 훈련**을 한다.",
+       "t_raw": "Stormterror가 나타났을 때 자신도 **그런 강적과 맞설 기회**를 얻어 Adventurers' Guild 전체에 이름을 떨치고 싶어 했지만, 아직은 Mondstadt 곳곳의 슬라임 퇴치 같은 작은 의뢰만 처리하고 있다.",
        "interp": false,
        "dropped": false,
-       "t": "낮에는 Adventurers' Guild Headquarters 앞에 머물고, 밤에는 천사의 몫에서 Cyrus와 술을 마시며 **술내성 훈련**을 한다."
+       "t": "풍마룡이 나타났을 때 자신도 **그런 강적과 맞설 기회**를 얻어 모험가 길드 전체에 이름을 떨치고 싶어 했지만, 아직은 몬드 곳곳의 슬라임 퇴치 같은 작은 의뢰만 처리하고 있다."
       },
       {
-       "t_raw": "이처럼 Jack은 모험가의 삶을 과장된 이야기 그대로 받아들이는 문자 그대로의 신참으로 보인다.",
+       "t_raw": "의뢰에서 Traveler가 그를 구출하거나 도와 준 사례가 잇따라 보이는데, 이는 그의 열정이 아직 실력보다 앞서 나간다는 뜻으로 읽힌다.",
        "interp": true,
        "dropped": false,
-       "t": "이처럼 잭은 모험가의 삶을 과장된 이야기 그대로 받아들이는 문자 그대로의 신참으로 보인다."
+       "t": "의뢰에서 여행자가 그를 구출하거나 도와 준 사례가 잇따라 보이는데, 이는 그의 열정이 아직 실력보다 앞서 나간다는 뜻으로 읽힌다."
       }
      ],
      "sources": [
@@ -86,187 +86,56 @@
        "kind": "wiki",
        "page": "Jack",
        "revision": 609089,
-       "section": "Dialogue > Nighttime",
-       "paragraph": "A31",
+       "section": "Dialogue > Daytime",
+       "paragraph": "A12",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
-       "page": "Benny's Adventure Team",
-       "revision": 160813,
-       "section": "Members",
-       "paragraph": "M1",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A13",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
-       "page": "Cyrus (Mondstadt)",
-       "revision": 614503,
-       "section": null,
-       "paragraph": "M3",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A14",
        "wiki_refs": []
       }
      ],
      "heading": null,
      "latin_left": [
       "Cyrus",
-      "Four Drunkards",
-      "Adventurers' Guild Headquarters",
       "Cyrus"
      ]
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Jack, who initially thought the rumors of \"Unlucky Bennett\" were just a joke, left after a traumatizing incident involving a rare Geo Turbulence.",
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, A9 and A16-A19. The interpretation in sentence 2 follows from them.",
+     "quote": "I'm Jack. Just Jack. No need to be formal with me, since we're all friends here.",
      "sentences": [
       {
-       "t_raw": "Jack은 Mondstadt의 Adventurers' Guild에 소속된 신참 모험가다.",
+       "t_raw": "Mondstadt의 **Adventurers' Guild Headquarters** 앞에서는 낮에 신입 모험가 Jack을, Angel's Share에서는 밤에 Cyrus와 술 마시는 모습으로 볼 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "잭은 몬드의 모험가 길드에 소속된 신참 모험가다."
+       "t": "몬드의 **모험가 길드 본부** 앞에서는 낮에 신입 모험가 잭을, 천사의 몫에서는 밤에 Cyrus와 술 마시는 모습으로 볼 수 있다."
       },
       {
-       "t_raw": "그는 Bennett가 이끄는 Benny's Adventure Team의 전 멤버다.",
+       "t_raw": "그는 새 모험가에게 팀 가입을 권유하며, 자신에 대해 이야기해 달라는 말에 그냥 Jack이라 친근하게 소개한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 베넷이 이끄는 베니의 모험단의 전 멤버다."
+       "t": "그는 새 모험가에게 팀 가입을 권유하며, 자신에 대해 이야기해 달라는 말에 그냥 잭이라 친근하게 소개한다."
       },
       {
-       "t_raw": "'Unlucky Bennett'에 대한 소문을 처음에는 농담으로 여겼지만, 희귀한 Geo Turbulence가 얽힌 사건을 겪은 뒤 Bennett의 나쁜 운이 옮는다는 이유로 팀을 떠났다.",
-       "interp": false,
-       "dropped": false,
-       "t": "'불운의 베넷'에 대한 소문을 처음에는 농담으로 여겼지만, 희귀한 바위 난류가 얽힌 사건을 겪은 뒤 베넷의 나쁜 운이 옮는다는 이유로 팀을 떠났다."
-      },
-      {
-       "t_raw": "가족은 그가 모험가가 되려는 선택을 지지하지 않지만, Jack은 기회를 찾아 자신을 증명하려 애쓴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "가족은 그가 모험가가 되려는 선택을 지지하지 않지만, 잭은 기회를 찾아 자신을 증명하려 애쓴다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Profile",
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Benny's Adventure Team",
-       "revision": 160813,
-       "section": "Members",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Benny's Adventure Team",
-       "revision": 160813,
-       "section": "Overview",
-       "paragraph": "M5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Besides, I'm sure Stanley still has a few stories left to tell. Hehe... They're what inspired me to become an adventurer in the first place.",
-     "sentences": [
-      {
-       "t_raw": "Jack은 Cyrus와 Stanley를 크게 동경하며 두 사람의 장대한 이야기를 마음에 새긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "잭은 Cyrus와 스탠리를 크게 동경하며 두 사람의 장대한 이야기를 마음에 새긴다."
-      },
-      {
-       "t_raw": "그중 Stanley의 이야기는 그가 모험가가 된 계기였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그중 스탠리의 이야기는 그가 모험가가 된 계기였다."
-      },
-      {
-       "t_raw": "Jack은 Cyrus도 가장 강한 이들과 어깨를 나란히 하는 인물로 꼽으면서도, Mare Jivari의 피에 굶주린 짐승과 맞설 수 있는 사람은 Stanley뿐이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "잭은 Cyrus도 가장 강한 이들과 어깨를 나란히 하는 인물로 꼽으면서도, 잿더미 바다의 피에 굶주린 짐승과 맞설 수 있는 사람은 스탠리뿐이라고 말한다."
-      },
-      {
-       "t_raw": "두 사람의 이야기를 진심으로 받아들이는 태도는 동경을 키우는 동시에, 이야기와 실제 증거 사이의 차이를 변명으로 메우려는 모습으로 이어진다고 볼 수 있다.",
+       "t_raw": "불과 몇 달 전 길드에 들어온 그는 동료들의 흥미로운 이야기에 고무되어 있고, 아직 경험이 짧은 그가 그 이야기에서 모험가의 꿈을 크게 키우고 있는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "두 사람의 이야기를 진심으로 받아들이는 태도는 동경을 키우는 동시에, 이야기와 실제 증거 사이의 차이를 변명으로 메우려는 모습으로 이어진다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Profile",
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Profile > Personality",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Should You Be Trapped in a Windless Land (Quest)",
-       "quest_ko": "바람이 없는 곳에 갇힌다면",
-       "version": "1.0",
-       "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "Who Is Mondstadt's Strongest Fighter?",
-       "quest_ko": "「몬드 최강자」 논쟁",
-       "version": "1.0",
-       "speaker": "Jack"
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": [
-      "Cyrus",
-      "Cyrus"
-     ]
-    },
-    {
-     "section": "작중 행적 — Mondstadt의 길드 생활",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hey! Are you a new adventurer? Wanna join my adventure team?",
-     "sentences": [
-      {
-       "t_raw": "Jack은 낮이면 Mondstadt의 Adventurers' Guild 본부 앞에서 새 모험가인지 묻고 자신의 모험대에 함께하자고 권한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "잭은 낮이면 몬드의 모험가 길드 본부 앞에서 새 모험가인지 묻고 자신의 모험대에 함께하자고 권한다."
-      },
-      {
-       "t_raw": "그는 유적을 탐사할 생각이 있느냐고 묻거나 활공하기 좋은 날이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 유적을 탐사할 생각이 있느냐고 묻거나 활공하기 좋은 날이라고 말한다."
-      },
-      {
-       "t_raw": "이런 **모험가 모집**은 낮의 길드 앞에서 그가 사람을 맞는 방식으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 **모험가 모집**은 낮의 길드 앞에서 그가 사람을 맞는 방식으로 보인다."
+       "t": "불과 몇 달 전 길드에 들어온 그는 동료들의 흥미로운 이야기에 고무되어 있고, 아직 경험이 짧은 그가 그 이야기에서 모험가의 꿈을 크게 키우고 있는 것으로 보인다."
       }
      ],
      "sources": [
@@ -282,16 +151,8 @@
        "kind": "wiki",
        "page": "Jack",
        "revision": 609089,
-       "section": "Idle Quotes",
-       "paragraph": "A4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Idle Quotes",
-       "paragraph": "A6",
+       "section": "Profile",
+       "paragraph": "A2",
        "wiki_refs": []
       },
       {
@@ -301,139 +162,23 @@
        "section": "Dialogue > Daytime",
        "paragraph": "A9",
        "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 몬드의 길드 생활",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Mondstadt의 길드 생활",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Really? Let me see... eight beers, five wines, seven ciders... Not so much!",
-     "sentences": [
-      {
-       "t_raw": "밤이 되면 Jack은 Angel's Share에서 술을 마시며 **주량 훈련**을 한다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "밤이 되면 잭은 천사의 몫에서 술을 마시며 **주량 훈련**을 한다고 말한다."
       },
-      {
-       "t_raw": "그는 맥주 여덟 잔, 포도주 다섯 잔, 사이다 일곱 잔을 마셨다면서 많지 않다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 맥주 여덟 잔, 포도주 다섯 잔, 사이다 일곱 잔을 마셨다면서 많지 않다고 말한다."
-      },
-      {
-       "t_raw": "Jack은 전설의 Mondstadt 모험가들이 Cider Lake 절반만큼 와인을 마신다는 이야기를 듣고, 그게 단지 비유인지 되묻고, 그렇게 많은 와인을 모험가 수입으로 살 수 있는지 의아해한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "잭은 전설의 몬드 모험가들이 시드르 호수 절반만큼 와인을 마신다는 이야기를 듣고, 그게 단지 비유인지 되묻고, 그렇게 많은 와인을 모험가 수입으로 살 수 있는지 의아해한다."
-      },
-      {
-       "t_raw": "맥주를 좋아하진 않지만 취하게 해 주면 된다며, 선택할 처지가 아니라는 말도 서슴지 않는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "맥주를 좋아하진 않지만 취하게 해 주면 된다며, 선택할 처지가 아니라는 말도 서슴지 않는다."
-      },
-      {
-       "t_raw": "한편으로는 술을 더 잘 다뤄야겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한편으로는 술을 더 잘 다뤄야겠다고 말한다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Jack",
        "revision": 609089,
-       "section": null,
-       "paragraph": "A1",
+       "section": "Dialogue > Daytime",
+       "paragraph": "A16",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Jack",
        "revision": 609089,
-       "section": "Idle Quotes",
-       "paragraph": "A8",
+       "section": "Dialogue > Daytime",
+       "paragraph": "A17",
        "wiki_refs": []
       },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Dialogue > Nighttime",
-       "paragraph": "A31",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Dialogue > Nighttime",
-       "paragraph": "A33",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Dialogue > Nighttime",
-       "paragraph": "A34",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Dialogue > Nighttime",
-       "paragraph": "A35",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 몬드의 길드 생활",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Mondstadt의 길드 생활",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Some of the older adventurers in the guild are really hurting from their arthritis again... it could be because of the humidity today...",
-     "sentences": [
-      {
-       "t_raw": "길드에 들어온 지 몇 달 동안 Jack이 완료한 일은 하수구의 슬라임을 정리하는 식의 **소규모 의뢰**였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "길드에 들어온 지 몇 달 동안 잭이 완료한 일은 하수구의 슬라임을 정리하는 식의 **소규모 의뢰**였다."
-      },
-      {
-       "t_raw": "그는 그런 자신을 보며 언제 다른 모험가들처럼 될 수 있냐고 한숨 쉬지만, 길드 사람들이 들려준 이야기는 그를 들뜨게 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 그런 자신을 보며 언제 다른 모험가들처럼 될 수 있냐고 한숨 쉬지만, 길드 사람들이 들려준 이야기는 그를 들뜨게 한다."
-      },
-      {
-       "t_raw": "길드의 나이 든 모험가들이 습도 탓에 관절염이 다시 아프다며 Traveler를 찾는다는 소식을 전하고, 돌아가자며 재촉하기도 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "길드의 나이 든 모험가들이 습도 탓에 관절염이 다시 아프다며 여행자를 찾는다는 소식을 전하고, 돌아가자며 재촉하기도 한다."
-      },
-      {
-       "t_raw": "Traveler를 만나면 별일 없었다고 말하는가 하면, Ellin이 Jack에게 전할 메시지를 부탁하는 일도 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자를 만나면 별일 없었다고 말하는가 하면, 엘린이 잭에게 전할 메시지를 부탁하는 일도 있다."
-      },
-      {
-       "t_raw": "이처럼 소규모 의뢰와 길드 동료들의 잡담이 겹쳐, 그의 길드 생활은 작은 일상의 연속으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이처럼 소규모 의뢰와 길드 동료들의 잡담이 겹쳐, 그의 길드 생활은 작은 일상의 연속으로 보인다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Jack",
@@ -441,13 +186,44 @@
        "section": "Dialogue > Daytime",
        "paragraph": "A18",
        "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Cyrus"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Both sentences are supported by A20, A21 and A30.",
+     "quote": "Ad astra abyssosque! May Lady Luck smiles upon you, friend.",
+     "sentences": [
+      {
+       "t_raw": "하지만 그는 아직 하수구의 슬라임 몇 마리 처치 같은 소소한 의뢰만 맡는 초보 모험가다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하지만 그는 아직 하수구의 슬라임 몇 마리 처치 같은 소소한 의뢰만 맡는 초보 모험가다."
       },
+      {
+       "t_raw": "다른 이들처럼 될 수 있을지 한숨 짓는 그는, 대화를 마칠 때 **Ad astra abyssosque!**라는 말과 함께 행운을 빌어준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다른 이들처럼 될 수 있을지 한숨 짓는 그는, 대화를 마칠 때 **Ad astra abyssosque!**라는 말과 함께 행운을 빌어준다.",
+       "polish": {
+        "from": "다른 이들처럼 될 수 있을지 한숨 짓는 그는, 대화를 마칠 때 **Ad astra abyssosque!**라는 말과 함께 행운을 빌어준다.",
+        "text": "다른 이들처럼 될 수 있을지 한숨 짓는 그는, 대화를 마칠 때 **Ad astra abyssosque!**라는 말과 함께 행운을 빌어준다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Jack",
        "revision": 609089,
-       "section": "Dialogue > Daytime",
-       "paragraph": "A19",
+       "section": "Profile",
+       "paragraph": "A2",
        "wiki_refs": []
       },
       {
@@ -467,52 +243,169 @@
        "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "What Is This, a Day Trip?",
-       "quest_ko": "소풍일까… 모험일까?",
-       "version": "1.4",
-       "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "What Is This, a Day Trip?",
-       "quest_ko": "소풍일까… 모험일까?",
-       "version": "1.4",
-       "speaker": "Jack"
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A30",
+       "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 몬드의 길드 생활",
+     "heading": "개요",
+     "latin_left": [
+      "Ad"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts are supported by A23-A27 and M5, which gives the rare Geo Turbulence incident. The interpretation is supported by M5's 'traumatizing' and A2.",
+     "quote": "I once belonged to a rather nice brigade... But \"Unlucky Bennett\" was also there...",
+     "sentences": [
+      {
+       "t_raw": "Jack은 Mondstadt Adventurers' Guild의 신입 모험가로, 모험가들이 네 명씩 팀을 이루는 이곳에서 한때 **Bennett's Adventure Team**에 속했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잭은 몬드 모험가 길드의 신입 모험가로, 모험가들이 네 명씩 팀을 이루는 이곳에서 한때 **베넷의 모험단**에 속했다."
+      },
+      {
+       "t_raw": "\"Unlucky Bennett\"의 불운설을 농담으로 여기던 그는 Bennett의 의뢰가 번번이 뜻밖에 실패하는 것을 직접 겪었고, 희귀한 Geo Turbulence 사건 뒤 팀을 떠났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "\"불운의 베넷\"의 불운설을 농담으로 여기던 그는 베넷의 의뢰가 번번이 뜻밖에 실패하는 것을 직접 겪었고, 희귀한 바위 난류 사건 뒤 팀을 떠났다."
+      },
+      {
+       "t_raw": "그런 경험은 Jack에게 모험가의 꿈과 두려움이 뒤섞인 상처로 남아 있는 듯하며, 가족의 반대에도 그는 자신을 증명할 기회를 찾아 최선을 다한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그런 경험은 잭에게 모험가의 꿈과 두려움이 뒤섞인 상처로 남아 있는 듯하며, 가족의 반대에도 그는 자신을 증명할 기회를 찾아 최선을 다한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A27",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Stormterror와 모험 소동",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "If I could finish a commission of that rank, I would definitely rise to prominence throughout the entire Adventurers' Guild.",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All the details come from A3. The interpretation about naïveté is fair.",
+     "quote": "\"half of Cider Lake's worth of wine\"",
      "sentences": [
       {
-       "t_raw": "Stormterror를 두고 Jack은 처음에는 걱정했지만 동시에 흥분했다고 말한다.",
+       "t_raw": "Jack은 **Cyrus와 Stanley**의 이야기를 곧이곧대로 믿으며, \"Cider Lake의 절반만큼의 포도주\"를 문자 그대로 받아들여 따라 하고 싶어 한 그는 \"Four Drunkards\"로 불렸다.",
        "interp": false,
        "dropped": false,
-       "t": "풍마룡을 두고 잭은 처음에는 걱정했지만 동시에 흥분했다고 말한다."
+       "t": "잭은 **Cyrus와 스탠리**의 이야기를 곧이곧대로 믿으며, \"시드르 호수의 절반만큼의 포도주\"를 문자 그대로 받아들여 따라 하고 싶어 한 그는 \"네 명의 주정뱅이\"로 불렸다."
       },
       {
-       "t_raw": "용을 처음 보았고, 그런 무서운 상대와 맞설 수 있다고 생각하니 기운이 난다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "용을 처음 보았고, 그런 무서운 상대와 맞설 수 있다고 생각하니 기운이 난다고 한다."
-      },
-      {
-       "t_raw": "그런 등급의 의뢰를 끝내면 Adventurers' Guild 전체에 이름을 떨칠 수 있다고 기대하지만, 현실에서는 slimes 몇 마리 정리 의뢰를 맡을 뿐이라 용을 상대하려면 더 노력해야 한다고 한숨 짓는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그런 등급의 의뢰를 끝내면 모험가 길드 전체에 이름을 떨칠 수 있다고 기대하지만, 현실에서는 slimes 몇 마리 정리 의뢰를 맡을 뿐이라 용을 상대하려면 더 노력해야 한다고 한숨 짓는다."
-      },
-      {
-       "t_raw": "기대와 현실의 간극이 크게 벌어져 있음을 보여 준다.",
+       "t_raw": "Traveler가 Cyrus의 과장된 무용담을 반박해도 그는 핑계를 만들며, Hans Archibald를 진짜 Stanley로, Mare Jivari의 무기를 \"Lionfang's Legacy\"라고 믿었고, Venti가 Hilichurl 캠프의 평범한 물건을 Vennessa의 장비라고 해도 쉽게 믿은 것은 그의 순진함을 보여준다.",
        "interp": true,
        "dropped": false,
-       "t": "기대와 현실의 간극이 크게 벌어져 있음을 보여 준다."
+       "t": "여행자가 Cyrus의 과장된 무용담을 반박해도 그는 핑계를 만들며, 한스 아치볼드를 진짜 스탠리로, 잿더미 바다의 무기를 \"사자 이빨 중의 이빨\"라고 믿었고, 벤티가 츄츄족 캠프의 평범한 물건을 바네사의 장비라고 해도 쉽게 믿은 것은 그의 순진함을 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Profile > Personality",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Cyrus",
+      "Cyrus"
+     ]
+    },
+    {
+     "section": "작중 행적 — Mondstadt의 사고와 의뢰",
+     "status": "accepted",
+     "note": "All sentences match A10-A15. Sentence 3 is a fair interpretation.",
+     "quote": "To tell the truth, I was worried at first. But I was also excited.",
+     "sentences": [
+      {
+       "t_raw": "Stormterror를 두고 Jack은 처음에는 걱정했지만 기대도 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "풍마룡을 두고 잭은 처음에는 걱정했지만 기대도 했다."
+      },
+      {
+       "t_raw": "드래곤을 처음 보고 두려운 상대와 맞설 수 있을지도 모른다는 생각에 흥분했고, 그런 임무를 마치면 Adventurers' Guild 전체에 이름을 떨칠 것이라고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "드래곤을 처음 보고 두려운 상대와 맞설 수 있을지도 모른다는 생각에 흥분했고, 그런 임무를 마치면 모험가 길드 전체에 이름을 떨칠 것이라고 했다."
+      },
+      {
+       "t_raw": "그러나 현실에서는 슬라임을 정리하는 의뢰만 받을 수 있어, 드래곤을 상대하려면 더 노력해야 한다고 한숨 쉬었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 현실에서는 슬라임을 정리하는 의뢰만 받을 수 있어, 드래곤을 상대하려면 더 노력해야 한다고 한숨 쉬었다."
+      },
+      {
+       "t_raw": "큰 상대를 향한 기대와 슬라임 의뢰라는 현실이 나란히 놓여, 그의 야망이 아직 경험에 앞서 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "큰 상대를 향한 기대와 슬라임 의뢰라는 현실이 나란히 놓여, 그의 야망이 아직 경험에 앞서 있는 것으로 보인다."
       }
      ],
      "sources": [
@@ -557,32 +450,97 @@
        "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 풍마룡과 모험 소동",
+     "heading": "작중 행적 — 몬드의 사고와 의뢰",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Stormterror와 모험 소동",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Oh, I see... I feel bad you had to come all this way to find me... and then had to rescue me...",
+     "section": "작중 행적 — Mondstadt의 사고와 의뢰",
+     "status": "accepted",
+     "note": "All supported by Q6 and Q16.",
+     "quote": "Oh, you're... the traveler. *sigh* You must have seen the storm that hit us, too. All of Mondstadt's a mess right now.",
      "sentences": [
       {
-       "t_raw": "Jack은 camp 앞에 hilichurls가 모인 것을 의심해 따라갔고, 다음 의뢰로 Thousand Winds Temple 주변 몬스터를 관찰하러 떠났다.",
+       "t_raw": "Jack은 Mondstadt를 덮친 폭풍에 도시 전체가 엉망이라며 Traveler도 보았느냐고 물었다.",
        "interp": false,
        "dropped": false,
-       "t": "잭은 camp 앞에 hilichurls가 모인 것을 의심해 따라갔고, 다음 의뢰로 천풍 신전 주변 몬스터를 관찰하러 떠났다."
+       "t": "잭은 몬드를 덮친 폭풍에 도시 전체가 엉망이라며 여행자도 보았느냐고 물었다."
       },
       {
-       "t_raw": "현장에 몬스터가 있을 줄은 몰랐다며 Traveler에게 hilichurls를 치워 달라고 부탁하고, 구출 뒤에는 미안하다고 말한다.",
+       "t_raw": "그는 다음 의뢰로 Thousand Winds Temple 주변의 몬스터를 관찰하는 일을 받고 임무를 확인한 뒤 떠났다.",
        "interp": false,
        "dropped": false,
-       "t": "현장에 몬스터가 있을 줄은 몰랐다며 여행자에게 hilichurls를 치워 달라고 부탁하고, 구출 뒤에는 미안하다고 말한다."
+       "t": "그는 다음 의뢰로 천풍 신전 주변의 몬스터를 관찰하는 일을 받고 임무를 확인한 뒤 떠났다."
       },
       {
-       "t_raw": "Cyrus는 숙련자들이 각지로 조사를 나간 상황에서 Jack을 걱정한다.",
+       "t_raw": "폭풍으로 도시가 혼란한 상황과 다음 의뢰로 향한 행동이 함께 놓여, 그가 맡은 일을 이어 갔음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "폭풍으로 도시가 혼란한 상황과 다음 의뢰로 향한 행동이 함께 놓여, 그가 맡은 일을 이어 갔음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Solo Venture",
+       "quest_ko": "홀로 위험 감당",
+       "version": "1.0",
+       "speaker": "Jack"
+      },
+      {
+       "kind": "quest",
+       "quest": "Solo Venture",
+       "quest_ko": "홀로 위험 감당",
+       "version": "1.0",
+       "speaker": "Jack"
+      }
+     ],
+     "heading": "작중 행적 — 몬드의 사고와 의뢰",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt의 사고와 의뢰",
+     "status": "accepted",
+     "note": "All supported by Q4, Q24, Q14; interpretation is reasonable.",
+     "quote": "Thank you so much. I'd thought that I wouldn't be coming home today...",
+     "sentences": [
+      {
+       "t_raw": "Jack은 앞쪽 야영지에 모인 hilichurls를 발견하고, 뭔가 꾸미는 듯해 뒤따랐다.",
        "interp": false,
        "dropped": false,
-       "t": "Cyrus는 숙련자들이 각지로 조사를 나간 상황에서 잭을 걱정한다."
+       "t": "잭은 앞쪽 야영지에 모인 츄츄족을 발견하고, 뭔가 꾸미는 듯해 뒤따랐다.",
+       "polish": {
+        "from": "잭은 앞쪽 야영지에 모인 hilichurls를 발견하고, 뭔가 꾸미는 듯해 뒤따랐다.",
+        "text": "잭은 앞쪽 야영지에 모인 츄츄족을 발견하고, 뭔가 꾸미는 듯해 뒤따랐다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Traveler에게 자신은 신경 쓰지 말고 hilichurls를 쓸어 달라고 부탁했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자에게 자신은 신경 쓰지 말고 츄츄족을 쓸어 달라고 부탁했다.",
+       "polish": {
+        "from": "여행자에게 자신은 신경 쓰지 말고 hilichurls를 쓸어 달라고 부탁했다.",
+        "text": "여행자에게 자신은 신경 쓰지 말고 츄츄족을 쓸어 달라고 부탁했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "일이 끝난 뒤 그는 오늘 집에 돌아오지 못할 줄 알았다며 고마워했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일이 끝난 뒤 그는 오늘 집에 돌아오지 못할 줄 알았다며 고마워했다."
+      },
+      {
+       "t_raw": "hilichurls를 뒤쫓은 뒤 도움을 청하고 집에 돌아오지 못할 줄 알았다는 점에서, 그가 혼자 감당하기 어려운 상황에 있었던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "츄츄족을 뒤쫓은 뒤 도움을 청하고 집에 돌아오지 못할 줄 알았다는 점에서, 그가 혼자 감당하기 어려운 상황에 있었던 것으로 보인다.",
+       "polish": {
+        "from": "hilichurls를 뒤쫓은 뒤 도움을 청하고 집에 돌아오지 못할 줄 알았다는 점에서, 그가 혼자 감당하기 어려운 상황에 있었던 것으로 보인다.",
+        "text": "츄츄족을 뒤쫓은 뒤 도움을 청하고 집에 돌아오지 못할 줄 알았다는 점에서, 그가 혼자 감당하기 어려운 상황에 있었던 것으로 보인다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -595,8 +553,58 @@
       },
       {
        "kind": "quest",
-       "quest": "Solo Venture",
-       "quest_ko": "홀로 위험 감당",
+       "quest": "A Fine Opportunity?",
+       "quest_ko": "하늘이 내린 기회?",
+       "version": "1.0",
+       "speaker": "Jack"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Fine Opportunity?",
+       "quest_ko": "하늘이 내린 기회?",
+       "version": "1.0",
+       "speaker": "Jack"
+      }
+     ],
+     "heading": "작중 행적 — 몬드의 사고와 의뢰",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt의 사고와 의뢰",
+     "status": "accepted",
+     "note": "Supported by Q8, Q10, Q20; the interpretation is a fair inference.",
+     "quote": "Oh, I see... I feel bad you had to come all this way to find me... and then had to rescue me...",
+     "sentences": [
+      {
+       "t_raw": "다른 의뢰에서는 Traveler가 Jack을 찾아가 구해야 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다른 의뢰에서는 여행자가 잭을 찾아가 구해야 했다."
+      },
+      {
+       "t_raw": "Jack은 몬스터가 있을 줄은 몰랐고, Traveler가 먼 길을 와서 찾고 구해 주기까지 한 데 미안해했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잭은 몬스터가 있을 줄은 몰랐고, 여행자가 먼 길을 와서 찾고 구해 주기까지 한 데 미안해했다."
+      },
+      {
+       "t_raw": "그는 수고에 대한 보답으로 물건을 건넸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 수고에 대한 보답으로 물건을 건넸다."
+      },
+      {
+       "t_raw": "몬스터가 있을 줄 몰랐던 자리에서 구해 주어야 했으니, 예상 밖의 위험을 만난 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "몬스터가 있을 줄 몰랐던 자리에서 구해 주어야 했으니, 예상 밖의 위험을 만난 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The South Wind Brings Adventure",
+       "quest_ko": "남풍과 모험",
        "version": "1.0",
        "speaker": "Jack"
       },
@@ -609,57 +617,107 @@
       },
       {
        "kind": "quest",
-       "quest": "A Fine Opportunity?",
-       "quest_ko": "하늘이 내린 기회?",
+       "quest": "Explorer Jack's Dilemma",
+       "quest_ko": "탐험가 잭의 곤경",
        "version": "1.0",
        "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "The South Wind Brings Adventure",
-       "quest_ko": "남풍과 모험",
-       "version": "1.0",
-       "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Fine Opportunity?",
-       "quest_ko": "하늘이 내린 기회?",
-       "version": "1.0",
-       "speaker": "Cyrus"
       }
      ],
-     "heading": "작중 행적 — 풍마룡과 모험 소동",
-     "latin_left": [
-      "Cyrus"
-     ]
+     "heading": "작중 행적 — 몬드의 사고와 의뢰",
+     "latin_left": []
     },
     {
-     "section": "작중 행적 — Stormterror와 모험 소동",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "You're right... you're right! Then this has to be it — this is the Sword of Brilliant Valor!",
+     "section": "작중 행적 — Mondstadt의 사고와 의뢰",
+     "status": "accepted",
+     "note": "Supported by Q32, Q1, Q11, Q21; the interpretation is mild and reasonable.",
+     "quote": "We'd better hurry back. They're all waiting for you.",
      "sentences": [
       {
-       "t_raw": "Jack은 Stanley의 이야기가 자신을 모험가로 만들었다고 하고, Mare Jivari의 피에 굶주린 짐승은 Stanley라야 한다고 말한다.",
+       "t_raw": "Ellin은 Traveler에게 Jack에게 전할 메시지를 부탁했다.",
        "interp": false,
        "dropped": false,
-       "t": "잭은 스탠리의 이야기가 자신을 모험가로 만들었다고 하고, 잿더미 바다의 피에 굶주린 짐승은 스탠리라야 한다고 말한다."
+       "t": "엘린은 여행자에게 잭에게 전할 메시지를 부탁했다."
       },
       {
-       "t_raw": "그는 어떤 물건을 'Sword of Brilliant Valor'라며 Lionfang's Legacy라고 확신하지만, 그 물건의 와인 얼룩을 보고 와인통에서 가져온 것 같다고도 말한다.",
+       "t_raw": "Jack은 습도 탓인지 길드의 나이 든 모험가들이 관절염으로 힘들어한다고 전했고, Traveler가 평소 그들을 돌본다며 모두가 Traveler를 찾는다고 재촉했다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 어떤 물건을 'Sword of Brilliant Valor'라며 사자 이빨 중의 이빨라고 확신하지만, 그 물건의 와인 얼룩을 보고 와인통에서 가져온 것 같다고도 말한다."
+       "t": "잭은 습도 탓인지 길드의 나이 든 모험가들이 관절염으로 힘들어한다고 전했고, 여행자가 평소 그들을 돌본다며 모두가 여행자를 찾는다고 재촉했다."
       },
       {
-       "t_raw": "Venti가 hilichurl camp의 평범한 물건을 Vennessa의 장비라고 설득한 점과 와인 얼룩을 함께 보면, Jack의 확신은 주변의 이야기를 따라 형성된 것으로 보인다.",
+       "t_raw": "이런 메시지와 안부가 함께 오가는 모습은 Jack이 길드 안팎의 자잘한 연락을 주고받는 위치에 있음을 보여 준다.",
        "interp": true,
        "dropped": false,
-       "t": "벤티가 hilichurl camp의 평범한 물건을 바네사의 장비라고 설득한 점과 와인 얼룩을 함께 보면, 잭의 확신은 주변의 이야기를 따라 형성된 것으로 보인다."
+       "t": "이런 메시지와 안부가 함께 오가는 모습은 잭이 길드 안팎의 자잘한 연락을 주고받는 위치에 있음을 보여 준다."
       }
      ],
      "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Ellin"
+      },
+      {
+       "kind": "quest",
+       "quest": "What Is This, a Day Trip?",
+       "quest_ko": "소풍일까… 모험일까?",
+       "version": "1.4",
+       "speaker": "Jack"
+      },
+      {
+       "kind": "quest",
+       "quest": "What Is This, a Day Trip?",
+       "quest_ko": "소풍일까… 모험일까?",
+       "version": "1.4",
+       "speaker": "Jack"
+      },
+      {
+       "kind": "quest",
+       "quest": "What Is This, a Day Trip?",
+       "quest_ko": "소풍일까… 모험일까?",
+       "version": "1.4",
+       "speaker": "Jack"
+      }
+     ],
+     "heading": "작중 행적 — 몬드의 사고와 의뢰",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Stanley와 Mare Jivari",
+     "status": "accepted",
+     "note": "Supported by M4, Q3, Q5; interpretation follows.",
+     "quote": "Besides, I'm sure Stanley still has a few stories left to tell. Hehe... They're what inspired me to become an adventurer in the first place.",
+     "sentences": [
+      {
+       "t_raw": "Stanley는 Mare Jivari까지 갔다고 전해지는 모험가로, Mondstadt 사람들, 특히 Jack에게 자신의 긴 이야기를 들려주지만, 스스로를 3인칭으로 'Stanley'라고 부르는 점은 사람들 눈에 이상하게 비친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스탠리는 잿더미 바다까지 갔다고 전해지는 모험가로, 몬드 사람들, 특히 잭에게 자신의 긴 이야기를 들려주지만, 스스로를 3인칭으로 '스탠리'라고 부르는 점은 사람들 눈에 이상하게 비친다."
+      },
+      {
+       "t_raw": "Jack은 Stanley의 이야기가 자신을 모험가의 길로 이끌었다고 말하고, Mare Jivari의 피에 굶주린 맹수는 Stanley만이 상대할 수 있다고 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잭은 스탠리의 이야기가 자신을 모험가의 길로 이끌었다고 말하고, 잿더미 바다의 피에 굶주린 맹수는 스탠리만이 상대할 수 있다고 여긴다."
+      },
+      {
+       "t_raw": "이는 Stanley의 서사가 Jack의 모험가 되려는 마음에 깊이 자리 잡았음을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 스탠리의 서사가 잭의 모험가 되려는 마음에 깊이 자리 잡았음을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Stanley",
+       "revision": 71617,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
       {
        "kind": "quest",
        "quest": "Should You Be Trapped in a Windless Land (Quest)",
@@ -673,21 +731,48 @@
        "quest_ko": "「몬드 최강자」 논쟁",
        "version": "1.0",
        "speaker": "Jack"
+      }
+     ],
+     "heading": "작중 행적 — 스탠리와 잿더미 바다",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Stanley와 Mare Jivari",
+     "status": "accepted",
+     "note": "Supported by A3, Q7, Q17, Q29, Q34.",
+     "quote": "Venti was also able to easily persuade him to believe that the \"Lionfang's Legacy\", worthless ordinary items found in Hilichurl camps, were truly Vennessa's former gear.",
+     "sentences": [
+      {
+       "t_raw": "Jack은 Hans Archibald가 진짜 Stanley이며, Hans가 Mare Jivari에서 쓴 무기가 'Lionfang's Legacy'라고 굳게 믿는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잭은 한스 아치볼드가 진짜 스탠리이며, 한스가 잿더미 바다에서 쓴 무기가 '사자 이빨 중의 이빨'라고 굳게 믿는다."
       },
       {
-       "kind": "quest",
-       "quest": "Lionfang's Legacy",
-       "quest_ko": "사자 이빨 중의 이빨",
-       "version": "1.0",
-       "speaker": "Jack"
+       "t_raw": "그 물건에는 와인 얼룩이 있어 Jack도 와인통에서 가져온 것 같다고 말하지만, 그러면서도 그것을 Sword of Brilliant Valor라고 받아들인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 물건에는 와인 얼룩이 있어 잭도 와인통에서 가져온 것 같다고 말하지만, 그러면서도 그것을 Sword of Brilliant Valor라고 받아들인다.",
+       "polish": {
+        "from": "그 물건에는 와인 얼룩이 있어 잭도 와인통에서 가져온 것 같다고 말하지만, 그러면서도 그것을 Sword of Brilliant Valor라고 받아들인다.",
+        "text": "그 물건에는 와인 얼룩이 있어 잭도 와인통에서 가져온 것 같다고 말하지만, 그러면서도 그것을 Sword of Brilliant Valor라고 받아들인다.",
+        "by": "ds"
+       }
       },
       {
-       "kind": "quest",
-       "quest": "Lionfang's Legacy",
-       "quest_ko": "사자 이빨 중의 이빨",
-       "version": "1.0",
-       "speaker": "Jack"
+       "t_raw": "Venti는 Jack이 'Lionfang's Legacy'를 Vennessa의 옛 장비라고 쉽게 믿게 만들고, 그에게 Anemo Crystalfly를 본 적이 있는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 잭이 '사자 이빨 중의 이빨'을 바네사의 옛 장비라고 쉽게 믿게 만들고, 그에게 바람수정 나비를 본 적이 있는지 묻는다."
       },
+      {
+       "t_raw": "Paimon은 Stanley가 Jack의 감정을 상하지 않게 하려고 검과 방패를 미리 두었는지 의문을 제기한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 스탠리가 잭의 감정을 상하지 않게 하려고 검과 방패를 미리 두었는지 의문을 제기한다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Jack",
@@ -695,51 +780,79 @@
        "section": "Profile > Personality",
        "paragraph": "A3",
        "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 풍마룡과 모험 소동",
-     "latin_left": [
-      "Sword of Brilliant Valor"
-     ]
-    },
-    {
-     "section": "작중 행적 — Stormterror와 모험 소동",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ah, wonderful! Stanley reconnected with his true self, and Jack can finally go his own way.",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 Stanley가 Jack의 마음을 상하지 않게 하려고 검과 방패를 미리 두었던 것이 아닐까 의문을 제기한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 스탠리가 잭의 마음을 상하지 않게 하려고 검과 방패를 미리 두었던 것이 아닐까 의문을 제기한다."
       },
       {
-       "t_raw": "Stanley는 위대한 모험가가 되려면 쉽게 울면 안 된다고 하고, Venti가 Mondstadt를 떠날 때가 되었느냐고 묻자 Jack은 아직 멀리 떠날 능력이 없다고 답한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "스탠리는 위대한 모험가가 되려면 쉽게 울면 안 된다고 하고, 벤티가 몬드를 떠날 때가 되었느냐고 묻자 잭은 아직 멀리 떠날 능력이 없다고 답한다."
+       "kind": "quest",
+       "quest": "Lionfang's Legacy",
+       "quest_ko": "사자 이빨 중의 이빨",
+       "version": "1.0",
+       "speaker": "Jack"
       },
       {
-       "t_raw": "Venti는 Stanley가 진짜 자신과 다시 만났고 Jack도 이제 자기 길을 갈 수 있게 되었다며 좋아한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "벤티는 스탠리가 진짜 자신과 다시 만났고 잭도 이제 자기 길을 갈 수 있게 되었다며 좋아한다."
+       "kind": "quest",
+       "quest": "Lionfang's Legacy",
+       "quest_ko": "사자 이빨 중의 이빨",
+       "version": "1.0",
+       "speaker": "Jack"
       },
       {
-       "t_raw": "Jack은 다음 날 술이 깬 뒤 Stanley의 이야기를 더 들려줄 수 있겠느냐고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "잭은 다음 날 술이 깬 뒤 스탠리의 이야기를 더 들려줄 수 있겠느냐고 말한다."
-      }
-     ],
-     "sources": [
+       "kind": "quest",
+       "quest": "Lionfang's Legacy",
+       "quest_ko": "사자 이빨 중의 이빨",
+       "version": "1.0",
+       "speaker": "Venti"
+      },
       {
        "kind": "quest",
        "quest": "Lionfang's Legacy",
        "quest_ko": "사자 이빨 중의 이빨",
        "version": "1.0",
        "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 스탠리와 잿더미 바다",
+     "latin_left": [
+      "Sword of Brilliant Valor"
+     ]
+    },
+    {
+     "section": "작중 행적 — Stanley와 Mare Jivari",
+     "status": "accepted",
+     "note": "All sentences match the quotes.",
+     "quote": "No, not yet. I still don't have what it takes to go too far from home just yet.",
+     "sentences": [
+      {
+       "t_raw": "Jack은 Stanley와 함께라면 문제가 없을 것이라며 계속 나아가자고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잭은 스탠리와 함께라면 문제가 없을 것이라며 계속 나아가자고 말한다."
+      },
+      {
+       "t_raw": "Stanley는 위대한 모험가가 되려면 쉽게 울면 안 된다고 Jack을 타이른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스탠리는 위대한 모험가가 되려면 쉽게 울면 안 된다고 잭을 타이른다."
+      },
+      {
+       "t_raw": "Venti가 Mondstadt를 떠나 Teyvat를 여행할 때가 아니냐고 묻자, Jack은 아직 집에서 멀리 갈 힘은 없다고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티가 몬드를 떠나 티바트를 여행할 때가 아니냐고 묻자, 잭은 아직 집에서 멀리 갈 힘은 없다고 답한다."
+      },
+      {
+       "t_raw": "Venti는 Stanley가 진짜 자신을 되찾았고 Jack도 마침내 자기 길을 갈 수 있게 되었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 스탠리가 진짜 자신을 되찾았고 잭도 마침내 자기 길을 갈 수 있게 되었다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The South Wind Brings Adventure",
+       "quest_ko": "남풍과 모험",
+       "version": "1.0",
+       "speaker": "Jack"
       },
       {
        "kind": "quest",
@@ -768,47 +881,40 @@
        "quest_ko": "바람이 없는 곳에 갇힌다면",
        "version": "1.0",
        "speaker": "Venti"
-      },
-      {
-       "kind": "quest",
-       "quest": "Should You Be Trapped in a Windless Land (Quest)",
-       "quest_ko": "바람이 없는 곳에 갇힌다면",
-       "version": "1.0",
-       "speaker": "Jack"
       }
      ],
-     "heading": "작중 행적 — 풍마룡과 모험 소동",
+     "heading": "작중 행적 — 스탠리와 잿더미 바다",
      "latin_left": []
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported; the interpretation is reasonable.",
      "quote": "The Guild's experienced hands have all been sent to various places to investigate. But... I just fear for Jack.",
      "sentences": [
       {
-       "t_raw": "Jack은 Cyrus와 Stanley를 동경하며 그들의 허풍 섞인 이야기를 마음에 새긴다.",
+       "t_raw": "Jack은 **Cyrus와 Stanley를 크게 동경하며** 그들의 장대한 이야기를 마음에 새긴다.",
        "interp": false,
        "dropped": false,
-       "t": "잭은 Cyrus와 스탠리를 동경하며 그들의 허풍 섞인 이야기를 마음에 새긴다."
+       "t": "잭은 **Cyrus와 스탠리를 크게 동경하며** 그들의 장대한 이야기를 마음에 새긴다."
       },
       {
-       "t_raw": "Cyrus는 때가 되면 Jack과 다른 이들을 데리고 세상을 보러 가려 하면서도 Jack을 걱정한다.",
+       "t_raw": "Cyrus의 술자리 영웅담에 과장의 증거가 보여도 Jack은 그 불일치를 설명할 변명을 짜내고, 밤에는 Angel's Share에서 Cyrus와 술을 마신다.",
        "interp": false,
        "dropped": false,
-       "t": "Cyrus는 때가 되면 잭과 다른 이들을 데리고 세상을 보러 가려 하면서도 잭을 걱정한다."
+       "t": "Cyrus의 술자리 영웅담에 과장의 증거가 보여도 잭은 그 불일치를 설명할 변명을 짜내고, 밤에는 천사의 몫에서 Cyrus와 술을 마신다."
       },
       {
-       "t_raw": "Jack은 Cyrus를 강한 축에 들지만 Mare Jivari의 짐승은 Stanley만이 상대할 수 있다고 말한다.",
+       "t_raw": "Cyrus는 경험 많은 인력들이 조사를 나간 상황에서 Jack을 걱정한다.",
        "interp": false,
        "dropped": false,
-       "t": "잭은 Cyrus를 강한 축에 들지만 잿더미 바다의 짐승은 스탠리만이 상대할 수 있다고 말한다."
+       "t": "Cyrus는 경험 많은 인력들이 조사를 나간 상황에서 잭을 걱정한다."
       },
       {
-       "t_raw": "Stanley는 Jack에게 쉽게 울지 말라고 타이른다.",
-       "interp": false,
+       "t_raw": "Jack이 Cyrus의 이야기를 감싸고 Cyrus가 Jack을 걱정하는 모습은 두 사람이 가까운 사이임을 보여 주는 것으로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "스탠리는 잭에게 쉽게 울지 말라고 타이른다."
+       "t": "잭이 Cyrus의 이야기를 감싸고 Cyrus가 잭을 걱정하는 모습은 두 사람이 가까운 사이임을 보여 주는 것으로 보인다."
       }
      ],
      "sources": [
@@ -832,8 +938,8 @@
        "kind": "wiki",
        "page": "Cyrus (Mondstadt)",
        "revision": 614503,
-       "section": "Dialogue > Daytime",
-       "paragraph": "M2",
+       "section": null,
+       "paragraph": "M3",
        "wiki_refs": []
       },
       {
@@ -842,24 +948,13 @@
        "quest_ko": "하늘이 내린 기회?",
        "version": "1.0",
        "speaker": "Cyrus"
-      },
-      {
-       "kind": "quest",
-       "quest": "Who Is Mondstadt's Strongest Fighter?",
-       "quest_ko": "「몬드 최강자」 논쟁",
-       "version": "1.0",
-       "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "The South Wind Brings Adventure",
-       "quest_ko": "남풍과 모험",
-       "version": "1.0",
-       "speaker": "Stanley"
       }
      ],
      "heading": "인간관계",
      "latin_left": [
+      "Cyrus",
+      "Cyrus",
+      "Cyrus",
       "Cyrus",
       "Cyrus",
       "Cyrus"
@@ -867,38 +962,47 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported. Bennett greeting Jack is covered by Q26.",
      "quote": "Hi, Jack! Is something going on? Are you here to see me?",
      "sentences": [
       {
-       "t_raw": "Jack은 Bennett's Adventure Team의 전 멤버로, Bennett의 전염되는 불운 때문에 팀을 떠났다.",
+       "t_raw": "Jack은 한때 **Benny's Adventure Team의 멤버**였고, \"Unlucky Bennett\"에 대한 소문을 농담으로 여겼다.",
        "interp": false,
        "dropped": false,
-       "t": "잭은 베넷의 모험단의 전 멤버로, 베넷의 전염되는 불운 때문에 팀을 떠났다."
+       "t": "잭은 한때 **베니의 모험단의 멤버**였고, \"불운의 베넷\"에 대한 소문을 농담으로 여겼다."
       },
       {
-       "t_raw": "Jack은 그 팀이 꽤 좋은 부대였다면서도 \"Unlucky Bennett\"가 함께 있었다고 말한다.",
+       "t_raw": "그러나 rare Geo Turbulence 사건을 겪은 뒤 팀을 떠났다.",
        "interp": false,
        "dropped": false,
-       "t": "잭은 그 팀이 꽤 좋은 부대였다면서도 \"불운의 베넷\"이 함께 있었다고 말한다."
+       "t": "그러나 희귀한 바위 난류 사건을 겪은 뒤 팀을 떠났다.",
+       "polish": {
+        "from": "그러나 rare 바위 난류 사건을 겪은 뒤 팀을 떠났다.",
+        "text": "그러나 희귀한 바위 난류 사건을 겪은 뒤 팀을 떠났다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "모두가 \"불운\"을 농담으로 여겼지만 Bennett의 의뢰는 예상 밖의 방식으로 실패했고, Bennett는 Jack을 반긴다.",
+       "t_raw": "같은 팀에는 Royce와 Heckler도 있었고, Bennett은 이들을 모두 팀원으로 언급한다.",
        "interp": false,
        "dropped": false,
-       "t": "모두가 \"불운\"을 농담으로 여겼지만 베넷의 의뢰는 예상 밖의 방식으로 실패했고, 베넷은 잭을 반긴다."
+       "t": "같은 팀에는 로이스와 야유꾼도 있었고, 베넷은 이들을 모두 팀원으로 언급한다."
+      },
+      {
+       "t_raw": "Bennett은 Jack에게 먼저 말을 걸어 안부를 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "베넷은 잭에게 먼저 말을 걸어 안부를 묻는다."
+      },
+      {
+       "t_raw": "팀을 떠난 이력과 이런 대화는 두 사람이 여전히 대화할 수 있는 사이임을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "팀을 떠난 이력과 이런 대화는 두 사람이 여전히 대화할 수 있는 사이임을 보여 주는 것으로 보인다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Profile",
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Benny's Adventure Team",
@@ -909,27 +1013,18 @@
       },
       {
        "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Dialogue > Daytime",
-       "paragraph": "A25",
+       "page": "Benny's Adventure Team",
+       "revision": 160813,
+       "section": "Overview",
+       "paragraph": "M5",
        "wiki_refs": []
       },
       {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Dialogue > Daytime",
-       "paragraph": "A26",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Dialogue > Daytime",
-       "paragraph": "A27",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "Expansive Eya",
+       "quest_ko": "에야의 유적 모험",
+       "version": "1.4",
+       "speaker": "Bennett"
       },
       {
        "kind": "quest",
@@ -944,27 +1039,173 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ah, wonderful! Stanley reconnected with his true self, and Jack can finally go his own way.",
+     "status": "accepted",
+     "note": "The English says Stanley's habit of calling himself 'Stanley' strikes people as odd. The Korean says it makes people strange, which is a different meaning.",
+     "quote": "He tells many long stories about himself to the people in Mondstadt, particularly Jack.",
      "sentences": [
       {
-       "t_raw": "Venti는 Hilichurl camp들에서 나온 하찮은 평범한 물건을 Vennessa의 옛 장비라고 Jack에게 쉽게 믿게 했다.",
+       "t_raw": "Jack은 Stanley의 이야기가 자신을 모험가로 이끌었다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "벤티는 츄츄족 camp들에서 나온 하찮은 평범한 물건을 바네사의 옛 장비라고 잭에게 쉽게 믿게 했다."
+       "t": "잭은 스탠리의 이야기가 자신을 모험가로 이끌었다고 말한다."
       },
       {
-       "t_raw": "Venti는 Stanley가 진정한 자신을 되찾았고 Jack이 자기 길을 갈 수 있게 되었다고 말한다.",
+       "t_raw": "Stanley는 Mondstadt 사람들, 그중에서도 Jack에게 자신의 긴 이야기를 들려준다.",
        "interp": false,
        "dropped": false,
-       "t": "벤티는 스탠리가 진정한 자신을 되찾았고 잭이 자기 길을 갈 수 있게 되었다고 말한다."
+       "t": "스탠리는 몬드 사람들, 그중에서도 잭에게 자신의 긴 이야기를 들려준다."
       },
       {
-       "t_raw": "Ellin은 Honorary Knight에게 Jack에게 전할 메시지를 부탁한다.",
+       "t_raw": "Jack은 **Hans Archibald를 진짜 Stanley로 믿고**, Hans가 Mare Jivari에서 사용한 무기들이 \"Lionfang's Legacy\"였다고 굳게 여긴다.",
        "interp": false,
        "dropped": false,
-       "t": "엘린은 명예 기사에게 잭에게 전할 메시지를 부탁한다."
+       "t": "잭은 **한스 아치볼드를 진짜 스탠리로 믿고**, 한스가 잿더미 바다에서 사용한 무기들이 \"사자 이빨 중의 이빨\"였다고 굳게 여긴다."
+      },
+      {
+       "t_raw": "Stanley가 자신을 3인칭으로 \"Stanley\"라고 부르는 버릇은 사람들에게 이상하게 느껴진다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "스탠리가 자신을 3인칭으로 \"스탠리\"라고 부르는 버릇은 사람들에게 이상하게 느껴진다."
+      },
+      {
+       "t_raw": "Jack이 이런 이야기를 문자 그대로 받아들이는 태도는 Stanley를 둘러싼 믿음을 더욱 굳히는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "잭이 이런 이야기를 문자 그대로 받아들이는 태도는 스탠리를 둘러싼 믿음을 더욱 굳히는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Profile > Personality",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Stanley",
+       "revision": 71617,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Should You Be Trapped in a Windless Land (Quest)",
+       "quest_ko": "바람이 없는 곳에 갇힌다면",
+       "version": "1.0",
+       "speaker": "Jack"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All supported; the interpretation is reasonable.",
+     "quote": "No, not yet. I still don't have what it takes to go too far from home just yet.",
+     "sentences": [
+      {
+       "t_raw": "Venti는 Jack에게 Mondstadt와 작별하고 Teyvat를 여행할 때가 된 것인지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 잭에게 몬드와 작별하고 티바트를 여행할 때가 된 것인지 묻는다."
+      },
+      {
+       "t_raw": "Jack은 아직은 아니라고 답하며 집에서 너무 멀리 갈 만한 역량이 아직 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잭은 아직은 아니라고 답하며 집에서 너무 멀리 갈 만한 역량이 아직 없다고 말한다."
+      },
+      {
+       "t_raw": "Cyrus는 때가 되면 Jack과 다른 이들을 데리고 세상을 보러 나가야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Cyrus는 때가 되면 잭과 다른 이들을 데리고 세상을 보러 나가야 한다고 말한다."
+      },
+      {
+       "t_raw": "Venti는 Stanley가 진짜 자신과 다시 이어졌고 Jack도 마침내 **자기 길**을 갈 수 있게 되었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 스탠리가 진짜 자신과 다시 이어졌고 잭도 마침내 **자기 길**을 갈 수 있게 되었다고 말한다."
+      },
+      {
+       "t_raw": "이 대화들을 겹쳐 보면, Jack의 앞날은 당장의 여행보다 Cyrus가 말한 때를 기다리는 자리에 놓여 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 대화들을 겹쳐 보면, 잭의 앞날은 당장의 여행보다 Cyrus가 말한 때를 기다리는 자리에 놓여 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Should You Be Trapped in a Windless Land (Quest)",
+       "quest_ko": "바람이 없는 곳에 갇힌다면",
+       "version": "1.0",
+       "speaker": "Venti"
+      },
+      {
+       "kind": "quest",
+       "quest": "Should You Be Trapped in a Windless Land (Quest)",
+       "quest_ko": "바람이 없는 곳에 갇힌다면",
+       "version": "1.0",
+       "speaker": "Jack"
+      },
+      {
+       "kind": "wiki",
+       "page": "Cyrus (Mondstadt)",
+       "revision": 614503,
+       "section": "Dialogue > Daytime",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Should You Be Trapped in a Windless Land (Quest)",
+       "quest_ko": "바람이 없는 곳에 갇힌다면",
+       "version": "1.0",
+       "speaker": "Venti"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Cyrus",
+      "Cyrus"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Besides, I'm sure Stanley still has a few stories left to tell. Hehe... They're what inspired me to become an adventurer in the first place.",
+     "sentences": [
+      {
+       "t_raw": "Jack은 Hans Archibald가 **진짜 Stanley**이며, 그가 Mare Jivari에서 모험할 때 사용한 무기들이 Lionfang's Legacy라고 굳게 믿는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잭은 한스 아치볼드가 **진짜 스탠리**이며, 그가 잿더미 바다에서 모험할 때 사용한 무기들이 사자 이빨 중의 이빨라고 굳게 믿는다."
+      },
+      {
+       "t_raw": "Jack은 Stanley의 이야기가 아직 남아 있다고 말하며, 그 이야기들이 자신이 모험가가 된 계기였다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잭은 스탠리의 이야기가 아직 남아 있다고 말하며, 그 이야기들이 자신이 모험가가 된 계기였다고 밝힌다."
+      },
+      {
+       "t_raw": "그는 다음 날 숙취가 가시면 이야기를 더 들려달라고 청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 다음 날 숙취가 가시면 이야기를 더 들려달라고 청한다."
+      },
+      {
+       "t_raw": "Stanley에 대한 Jack의 믿음은 그가 모험가가 된 계기로 꼽은 이야기와 맞물려 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스탠리에 대한 잭의 믿음은 그가 모험가가 된 계기로 꼽은 이야기와 맞물려 있는 것으로 보인다."
       }
      ],
      "sources": [
@@ -981,48 +1222,59 @@
        "quest": "Should You Be Trapped in a Windless Land (Quest)",
        "quest_ko": "바람이 없는 곳에 갇힌다면",
        "version": "1.0",
-       "speaker": "Venti"
+       "speaker": "Jack"
       },
       {
        "kind": "quest",
-       "quest": "A Child's Secret",
-       "quest_ko": "동심의 비밀",
+       "quest": "Should You Be Trapped in a Windless Land (Quest)",
+       "quest_ko": "바람이 없는 곳에 갇힌다면",
        "version": "1.0",
-       "speaker": "Ellin"
+       "speaker": "Jack"
       }
      ],
-     "heading": "인간관계",
+     "heading": "떡밥과 수수께끼",
      "latin_left": []
     },
     {
-     "section": "성격과 능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Jack is rather gullible and literal-minded with a naïve outlook on how adventurers live.",
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by A3, Q7, Q17, Q34. The interpretation follows from them.",
+     "quote": "There's also wine stains on it... Yeah, I'm pretty sure this was just taken from a wine barrel...",
      "sentences": [
       {
-       "t_raw": "Jack은 모험가의 삶을 순진하게 바라보며, 말을 문자 그대로 받아들이는 편이다.",
+       "t_raw": "Jack은 Cyrus의 술자리 영웅담에 과장의 증거가 드러나도 그 차이를 설명할 변명을 만들어 낸다.",
        "interp": false,
        "dropped": false,
-       "t": "잭은 모험가의 삶을 순진하게 바라보며, 말을 문자 그대로 받아들이는 편이다."
+       "t": "잭은 Cyrus의 술자리 영웅담에 과장의 증거가 드러나도 그 차이를 설명할 변명을 만들어 낸다."
       },
       {
-       "t_raw": "Mondstadt 모험가들이 Cider Lake의 절반만큼 와인을 마셨다는 이야기를 그대로 믿고 따라 하려다 **Four Drunkards** 중 하나로 알려지게 되었다.",
+       "t_raw": "Venti가 Hilichurl 진영에서 발견된 평범한 물건들이 Vennessa의 옛 장비라고 하자 Jack은 그렇게 믿는다.",
        "interp": false,
        "dropped": false,
-       "t": "몬드 모험가들이 시드르 호수의 절반만큼 와인을 마셨다는 이야기를 그대로 믿고 따라 하려다 **Four Drunkards** 중 하나로 알려지게 되었다."
+       "t": "벤티가 츄츄족 진영에서 발견된 평범한 물건들이 바네사의 옛 장비라고 하자 잭은 그렇게 믿는다."
       },
       {
-       "t_raw": "Cyrus의 술자리 영웅담과 실제 사이에 차이가 드러나도 Jack은 그 차이를 설명할 변명을 만들어 낸다.",
+       "t_raw": "Lionfang's Legacy를 두고 Jack은 와인 통에서 나온 듯한 얼룩을 확인하고도 그것이 Sword of Brilliant Valor라고 받아들인다.",
        "interp": false,
        "dropped": false,
-       "t": "Cyrus의 술자리 영웅담과 실제 사이에 차이가 드러나도 잭은 그 차이를 설명할 변명을 만들어 낸다."
+       "t": "사자 이빨 중의 이빨을 두고 잭은 와인 통에서 나온 듯한 얼룩을 확인하고도 그것이 Sword of Brilliant Valor라고 받아들인다.",
+       "polish": {
+        "from": "사자 이빨 중의 이빨을 두고 잭은 와인 통에서 나온 듯한 얼룩을 확인하고도 그것이 Sword of Brilliant Valor라고 받아들인다.",
+        "text": "사자 이빨 중의 이빨을 두고 잭은 와인 통에서 나온 듯한 얼룩을 확인하고도 그것이 Sword of Brilliant Valor라고 받아들인다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Hans Archibald가 진짜 Stanley이고 Mare Jivari에서 쓴 무기가 Lionfang's Legacy라고 믿으며, Venti가 Hilichurl 야영지의 하찮은 물건을 Vennessa의 옛 장비라고 하자 쉽게 설득되었다.",
+       "t_raw": "Paimon은 Stanley가 Jack의 마음을 상하지 않게 하려고 칼과 방패를 미리 심어 둔 것이 아닐까 의문을 제기한다.",
        "interp": false,
        "dropped": false,
-       "t": "한스 아치볼드가 진짜 스탠리이고 잿더미 바다에서 쓴 무기가 사자 이빨 중의 이빨라고 믿으며, 벤티가 츄츄족 야영지의 하찮은 물건을 바네사의 옛 장비라고 하자 쉽게 설득되었다."
+       "t": "페이몬은 스탠리가 잭의 마음을 상하지 않게 하려고 칼과 방패를 미리 심어 둔 것이 아닐까 의문을 제기한다."
+      },
+      {
+       "t_raw": "이런 대목에서 Jack의 믿음은 전설을 의심하기보다 **전설에 맞춰 현실을 해석**하는 쪽으로 기우는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 대목에서 잭의 믿음은 전설을 의심하기보다 **전설에 맞춰 현실을 해석**하는 쪽으로 기우는 것으로 보인다."
       }
      ],
      "sources": [
@@ -1033,43 +1285,63 @@
        "section": "Profile > Personality",
        "paragraph": "A3",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lionfang's Legacy",
+       "quest_ko": "사자 이빨 중의 이빨",
+       "version": "1.0",
+       "speaker": "Jack"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lionfang's Legacy",
+       "quest_ko": "사자 이빨 중의 이빨",
+       "version": "1.0",
+       "speaker": "Jack"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lionfang's Legacy",
+       "quest_ko": "사자 이빨 중의 이빨",
+       "version": "1.0",
+       "speaker": "Paimon"
       }
      ],
-     "heading": "성격과 능력",
+     "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Four Drunkards",
-      "Cyrus"
+      "Cyrus",
+      "Sword of Brilliant Valor"
      ]
     },
     {
-     "section": "성격과 능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hahaha... So far, I've only completed small commissions like clearing the sewers of a few slimes...",
+     "section": "여담",
+     "status": "accepted",
+     "note": "The idle quotes and the farewell line match A4-A8 and A41.",
+     "quote": "It's a good day to go wind gliding.",
      "sentences": [
       {
-       "t_raw": "Jack이 실제로 완료한 일은 하수도에서 슬라임 몇 마리를 처리하는 식의 **작은 의뢰**뿐이다.",
+       "t_raw": "낮에 Jack은 유적 탐험을 권하는 대사를 하고, 음성 오버에서는 오늘 유적 탐험을 갈 것인지 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "잭이 실제로 완료한 일은 하수도에서 슬라임 몇 마리를 처리하는 식의 **작은 의뢰**뿐이다."
+       "t": "낮에 잭은 유적 탐험을 권하는 대사를 하고, 음성 오버에서는 오늘 유적 탐험을 갈 것인지 묻는다."
       },
       {
-       "t_raw": "밤에는 **주량 훈련**을 한다며 술을 마시고, 여행자가 너무 많이 마신 것 같다고 하자 맥주 여덟 잔, 와인 다섯 잔, 사이더 일곱 잔을 세며 많지 않다고 말한다.",
+       "t_raw": "낮에는 활공하기 좋은 날이라는 대사가 있고, 음성 오버에서는 표현이 조금 달라진다.",
        "interp": false,
        "dropped": false,
-       "t": "밤에는 **주량 훈련**을 한다며 술을 마시고, 여행자가 너무 많이 마신 것 같다고 하자 맥주 여덟 잔, 와인 다섯 잔, 사이더 일곱 잔을 세며 많지 않다고 말한다."
+       "t": "낮에는 활공하기 좋은 날이라는 대사가 있고, 음성 오버에서는 표현이 조금 달라진다."
       },
       {
-       "t_raw": "전설적인 Mondstadt 모험가들이 Cider Lake의 절반만큼 와인을 마신다는 말을 비유라고 듣고서야, 모험가 수입으로 그만큼 살 수 없다는 의문을 풀었다.",
+       "t_raw": "밤에는 술을 더 잘 다뤄야겠다고 말하며, 작별 인사로 \"Laters! Happy adventuring!\"이라고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "전설적인 몬드 모험가들이 시드르 호수의 절반만큼 와인을 마신다는 말을 비유라고 듣고서야, 모험가 수입으로 그만큼 살 수 없다는 의문을 풀었다."
-      },
-      {
-       "t_raw": "좋아하는 술을 묻자 맥주라고 답하지만 그다지 좋아하지는 않으며, 선택할 처지가 아니라고 하며 취하기만 하면 된다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "좋아하는 술을 묻자 맥주라고 답하지만 그다지 좋아하지는 않으며, 선택할 처지가 아니라고 하며 취하기만 하면 된다고 말한다."
+       "t": "밤에는 술을 더 잘 다뤄야겠다고 말하며, 작별 인사로 \"나중에 봐! 기쁨의 모험을!\"이라고 한다.",
+       "polish": {
+        "from": "밤에는 술을 더 잘 다뤄야겠다고 말하며, 작별 인사로 \"Laters! 기쁨 adventuring!\"이라고 한다.",
+        "text": "밤에는 술을 더 잘 다뤄야겠다고 말하며, 작별 인사로 \"나중에 봐! 기쁨의 모험을!\"이라고 한다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -1077,8 +1349,98 @@
        "kind": "wiki",
        "page": "Jack",
        "revision": 609089,
-       "section": "Dialogue > Daytime",
-       "paragraph": "A20",
+       "section": "Idle Quotes",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Idle Quotes",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Idle Quotes",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Idle Quotes",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Idle Quotes",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A41",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The sentences match A31-A39. The interpretation follows from A3.",
+     "quote": "I'm no match for those legendary Mondstadt adventurers who can drink half of Cider Lake's worth of wine.",
+     "sentences": [
+      {
+       "t_raw": "밤에 Jack은 **주량 훈련**이라며 함께 하자고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에 잭은 **주량 훈련**이라며 함께 하자고 권한다."
+      },
+      {
+       "t_raw": "Traveler가 너무 많이 마신 것 같다고 하자, Jack은 맥주 여덟 잔, 와인 다섯 잔, 사이더 일곱 잔을 세며 그리 많지 않다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 너무 많이 마신 것 같다고 하자, 잭은 맥주 여덟 잔, 와인 다섯 잔, 사이더 일곱 잔을 세며 그리 많지 않다고 말한다."
+      },
+      {
+       "t_raw": "그는 Cider Lake의 절반만큼의 와인을 마시는 전설적인 Mondstadt 모험가들에게 자신은 못 미친다고 하고, 그 말이 비유임을 알고는 모험가 수입으로 그만큼의 와인을 어떻게 마련했는지 몰랐다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 시드르 호수의 절반만큼의 와인을 마시는 전설적인 몬드 모험가들에게 자신은 못 미친다고 하고, 그 말이 비유임을 알고는 모험가 수입으로 그만큼의 와인을 어떻게 마련했는지 몰랐다고 말한다."
+      },
+      {
+       "t_raw": "맥주를 좋아하지는 않지만 선택할 수 있는 처지가 아니라며, 취하게 해 주기만 하면 된다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "맥주를 좋아하지는 않지만 선택할 수 있는 처지가 아니라며, 취하게 해 주기만 하면 된다고 말한다."
+      },
+      {
+       "t_raw": "이런 모습은 그가 전설적인 모험가들의 음주담을 문자 그대로 받아들여 **Four Drunkards**라는 평을 얻었다는 사실과 이어져, 술자리에서도 전설을 실제 기준으로 삼는 태도로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 모습은 그가 전설적인 모험가들의 음주담을 문자 그대로 받아들여 **네 명의 주정뱅이**라는 평을 얻었다는 사실과 이어져, 술자리에서도 전설을 실제 기준으로 삼는 태도로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jack",
+       "revision": 609089,
+       "section": "Profile > Personality",
+       "paragraph": "A3",
        "wiki_refs": []
       },
       {
@@ -1088,6 +1450,13 @@
        "section": "Dialogue > Nighttime",
        "paragraph": "A31",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Who Is Mondstadt's Strongest Fighter?",
+       "quest_ko": "「몬드 최강자」 논쟁",
+       "version": "1.0",
+       "speaker": "Jack"
       },
       {
        "kind": "wiki",
@@ -1112,298 +1481,36 @@
        "section": "Dialogue > Nighttime",
        "paragraph": "A34",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Dialogue > Nighttime",
-       "paragraph": "A35",
-       "wiki_refs": []
       }
      ],
-     "heading": "성격과 능력",
-     "latin_left": []
-    },
-    {
-     "section": "성격과 능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "No, not yet. I still don't have what it takes to go too far from home just yet.",
-     "sentences": [
-      {
-       "t_raw": "Jack은 hilichurls가 야영지에 모여 있는 것을 발견하고 수상하다고 여겨 뒤따라갔다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "잭은 hilichurls가 야영지에 모여 있는 것을 발견하고 수상하다고 여겨 뒤따라갔다고 말한다."
-      },
-      {
-       "t_raw": "Thousand Winds Temple 주변 몬스터를 관찰하는 의뢰를 확인하고 떠났지만, 그곳에 몬스터가 있을 줄은 몰랐다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "천풍 신전 주변 몬스터를 관찰하는 의뢰를 확인하고 떠났지만, 그곳에 몬스터가 있을 줄은 몰랐다고 한다."
-      },
-      {
-       "t_raw": "스스로 집에서 멀리 갈 능력은 아직 없다고 인정하며, 자신보다 hilichurls를 먼저 치워 달라고 부탁한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "스스로 집에서 멀리 갈 능력은 아직 없다고 인정하며, 자신보다 hilichurls를 먼저 치워 달라고 부탁한다."
-      },
-      {
-       "t_raw": "관찰 의뢰에서 예상 밖의 몬스터를 만나고 도움을 청하는 모습은 그가 아직 경험을 쌓는 단계임을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "관찰 의뢰에서 예상 밖의 몬스터를 만나고 도움을 청하는 모습은 그가 아직 경험을 쌓는 단계임을 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "A Fine Opportunity?",
-       "quest_ko": "하늘이 내린 기회?",
-       "version": "1.0",
-       "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "Solo Venture",
-       "quest_ko": "홀로 위험 감당",
-       "version": "1.0",
-       "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "Explorer Jack's Dilemma",
-       "quest_ko": "탐험가 잭의 곤경",
-       "version": "1.0",
-       "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "Should You Be Trapped in a Windless Land (Quest)",
-       "quest_ko": "바람이 없는 곳에 갇힌다면",
-       "version": "1.0",
-       "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Fine Opportunity?",
-       "quest_ko": "하늘이 내린 기회?",
-       "version": "1.0",
-       "speaker": "Jack"
-      }
-     ],
-     "heading": "성격과 능력",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "There's also wine stains on it... Yeah, I'm pretty sure this was just taken from a wine barrel...",
-     "sentences": [
-      {
-       "t_raw": "Jack은 Hans Archibald가 진짜 Stanley이며, 그가 Mare Jivari에서 쓴 무기가 **“Lionfang's Legacy”**라고 굳게 믿는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "잭은 한스 아치볼드가 진짜 스탠리이며, 그가 잿더미 바다에서 쓴 무기가 **“사자 이빨 중의 이빨”**라고 굳게 믿는다."
-      },
-      {
-       "t_raw": "Venti가 Hilichurl camps의 하찮은 평범한 물건들을 Vennessa의 옛 장비라고 설득했을 때도 쉽게 받아들였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "벤티가 츄츄족 camps의 하찮은 평범한 물건들을 바네사의 옛 장비라고 설득했을 때도 쉽게 받아들였다."
-      },
-      {
-       "t_raw": "그러나 Jack은 그 “Lionfang's Legacy”에 와인 얼룩이 있다며 와인통에서 가져온 것 같다고 말하면서도, 그것이 **“Sword of Brilliant Valor”**라고 받아들인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 잭은 그 “사자 이빨 중의 이빨”에 와인 얼룩이 있다며 와인통에서 가져온 것 같다고 말하면서도, 그것이 **“Sword of Brilliant Valor”**라고 받아들인다."
-      },
-      {
-       "t_raw": "이런 흔적과 Venti의 설득 사례가 겹치면, Jack이 믿는 “Lionfang's Legacy”가 실제 전설의 장비인지 단정하기 어려운 대목으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 흔적과 벤티의 설득 사례가 겹치면, 잭이 믿는 “사자 이빨 중의 이빨”이 실제 전설의 장비인지 단정하기 어려운 대목으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Profile > Personality",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Lionfang's Legacy",
-       "quest_ko": "사자 이빨 중의 이빨",
-       "version": "1.0",
-       "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "Lionfang's Legacy",
-       "quest_ko": "사자 이빨 중의 이빨",
-       "version": "1.0",
-       "speaker": "Jack"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Sword of Brilliant Valor"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "(Did Stanley plant the sword and shield here in advance so as to not hurt Jack's feelings?)",
-     "sentences": [
-      {
-       "t_raw": "한편 Paimon은 Stanley가 Jack의 감정을 상하게 하지 않으려고 검과 방패를 미리 이곳에 두었던 것은 아닐지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한편 페이몬은 스탠리가 잭의 감정을 상하게 하지 않으려고 검과 방패를 미리 이곳에 두었던 것은 아닐지 묻는다."
-      },
-      {
-       "t_raw": "Stanley의 배려 가능성과 Jack이 평범한 물건도 전설로 받아들이기 쉬운 성향이 겹치면, “Lionfang's Legacy”가 진짜인지 혹은 Stanley가 Jack을 위해 연출한 것인지는 의문으로 남는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "스탠리의 배려 가능성과 잭이 평범한 물건도 전설로 받아들이기 쉬운 성향이 겹치면, “사자 이빨 중의 이빨”이 진짜인지 혹은 스탠리가 잭을 위해 연출한 것인지는 의문으로 남는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Profile > Personality",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Lionfang's Legacy",
-       "quest_ko": "사자 이빨 중의 이빨",
-       "version": "1.0",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
+     "heading": "여담",
      "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ad astra abyssosque! May Lady Luck smiles upon you, friend.",
+     "status": "accepted",
+     "note": "Q12 and Q27 support both sentences.",
+     "quote": "What!? The Good Hunter's having a promotion today? How did I not hear about that?",
      "sentences": [
       {
-       "t_raw": "낮의 Jack은 유적 탐험을 권하거나 바람글라이딩하기 좋은 날이라고 말하고, 낮에 작별 인사를 할 때는 **Ad astra abyssosque!**로 시작하는 인사를 건넨다.",
+       "t_raw": "Jack은 Good Hunter에서 프로모션이 있다는 말에 놀라며 왜 그런 소식을 듣지 못했는지 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "낮의 잭은 유적 탐험을 권하거나 바람글라이딩하기 좋은 날이라고 말하고, 낮에 작별 인사를 할 때는 **Ad astra abyssosque!**로 시작하는 인사를 건넨다."
+       "t": "잭은 디어 헌터에서 프로모션이 있다는 말에 놀라며 왜 그런 소식을 듣지 못했는지 말한다."
       },
       {
-       "t_raw": "밤에는 술을 더 잘 다뤄야겠다고 말하며, Good Hunter의 프로모션 소식을 듣고는 어떻게 몰랐냐며 놀란다.",
+       "t_raw": "Teucer는 뒤뜰에 두고 있는 대상들로 Commodore Hook, **Blacksteel Jack**, Iron Tony를 언급한다.",
        "interp": false,
        "dropped": false,
-       "t": "밤에는 술을 더 잘 다뤄야겠다고 말하며, 디어 헌터의 프로모션 소식을 듣고는 어떻게 몰랐냐며 놀란다."
-      },
-      {
-       "t_raw": "이렇게 낮의 모험가다운 말투와 밤의 술 걱정이 나란히 놓이는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이렇게 낮의 모험가다운 말투와 밤의 술 걱정이 나란히 놓이는 셈이다."
+       "t": "테우세르는 뒤뜰에 두고 있는 대상들로 Commodore Hook, **Blacksteel Jack**, Iron Tony를 언급한다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Idle Quotes",
-       "paragraph": "A4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Idle Quotes",
-       "paragraph": "A6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Idle Quotes",
-       "paragraph": "A8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jack",
-       "revision": 609089,
-       "section": "Dialogue > Daytime",
-       "paragraph": "A30",
-       "wiki_refs": []
-      },
       {
        "kind": "quest",
        "quest": "Meteorites and Adventure",
        "quest_ko": "운석과 모험",
        "version": "1.1",
-       "speaker": "Jack"
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Ad"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Commodore Hook, Blacksteel Jack, Iron Tony... We keep them all in our backyard.",
-     "sentences": [
-      {
-       "t_raw": "Jack은 길드의 나이 많은 모험가들이 습도 때문에 관절염을 앓는다고 전하고, 그들을 돌보는 사람에게 모두가 그를 찾는다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "잭은 길드의 나이 많은 모험가들이 습도 때문에 관절염을 앓는다고 전하고, 그들을 돌보는 사람에게 모두가 그를 찾는다고 말한다."
-      },
-      {
-       "t_raw": "Teucer는 Commodore Hook, **Blacksteel Jack**, Iron Tony를 뒷마당에 둔다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "테우세르는 Commodore Hook, **Blacksteel Jack**, Iron Tony를 뒷마당에 둔다고 한다."
-      },
-      {
-       "t_raw": "길드의 자잘한 소식과 장난감 이름은 Jack의 여담에 곁들여지는 주변의 소재로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "길드의 자잘한 소식과 장난감 이름은 잭의 여담에 곁들여지는 주변의 소재로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "What Is This, a Day Trip?",
-       "quest_ko": "소풍일까… 모험일까?",
-       "version": "1.4",
-       "speaker": "Jack"
-      },
-      {
-       "kind": "quest",
-       "quest": "What Is This, a Day Trip?",
-       "quest_ko": "소풍일까… 모험일까?",
-       "version": "1.4",
        "speaker": "Jack"
       },
       {
@@ -1424,27 +1531,10 @@
    ],
    "quote_boxes": [
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "게다가 Stanley에게는 아직 들려줄 이야기가 몇 편 더 남아 있을 거예요. 헤헤... 그 이야기들이 바로 제가 처음 모험가가 되도록 영감을 준 것이었어요.",
-     "en": "Besides, I'm sure Stanley still has a few stories left to tell. Hehe... They're what inspired me to become an adventurer in the first place.",
-     "speaker": "Jack",
-     "source": {
-      "kind": "quest",
-      "quest": "Should You Be Trapped in a Windless Land (Quest)",
-      "quest_ko": "바람이 없는 곳에 갇힌다면",
-      "version": "1.0",
-      "speaker": "Jack"
-     },
-     "t": "게다가 스탠리에게는 아직 들려줄 이야기가 몇 편 더 남아 있을 거예요. 헤헤... 그 이야기들이 바로 제가 처음 모험가가 되도록 영감을 준 것이었어요.",
-     "speaker_ko": "잭"
-    },
-    {
-     "section": "작중 행적 — Mondstadt의 길드 생활",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "이봐, 나는 모험가 훈련을 좀 하고 있어... 정확히는 주량 훈련 말이지... 같이 할래?",
+     "section": "개요",
+     "status": "accepted",
+     "note": "The translation is faithful.",
+     "t_raw": "야, 나 지금 모험가 수련 중이야... 정확히 말하면 술 내성 수련... 같이 할래?",
      "en": "Hey, I'm doing some adventurer's training... alcohol tolerance training, to be precise... Wanna join me?",
      "speaker": "Jack",
      "source": {
@@ -1454,48 +1544,82 @@
       "version": "1.0",
       "speaker": "Jack"
      },
-     "t": "이봐, 나는 모험가 훈련을 좀 하고 있어... 정확히는 주량 훈련 말이지... 같이 할래?",
+     "t": "야, 나 지금 모험가 수련 중이야... 정확히 말하면 술 내성 수련... 같이 할래?",
      "speaker_ko": "잭"
     },
     {
-     "section": "작중 행적 — Stormterror와 모험 소동",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아, 멋지다! Stanley가 진짜 자신과 다시 만났고, Jack도 마침내 자기 길을 갈 수 있게 되었어.",
-     "en": "Ah, wonderful! Stanley reconnected with his true self, and Jack can finally go his own way.",
-     "speaker": "Venti",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The translation is faithful.",
+     "t_raw": "하하… 그래. Royce, Heckler, 그리고 Jack은 모두 Benny's Adventure Team의 일원이었다.",
+     "en": "Haha... yeah. Royce, Heckler, and Jack were all members of Benny's Adventure Team.",
+     "speaker": "Bennett",
+     "source": {
+      "kind": "quest",
+      "quest": "Expansive Eya",
+      "quest_ko": "에야의 유적 모험",
+      "version": "1.4",
+      "speaker": "Bennett"
+     },
+     "t": "하하… 그래. 로이스, 야유꾼, 그리고 잭은 모두 베니의 모험단의 일원이었다.",
+     "speaker_ko": "베넷"
+    },
+    {
+     "section": "작중 행적 — Mondstadt의 사고와 의뢰",
+     "status": "accepted",
+     "note": "Faithful translation of Jack's line.",
+     "t_raw": "정말 고마워. 오늘은 집에 돌아오지 못할 줄 알았어...",
+     "en": "Thank you so much. I'd thought that I wouldn't be coming home today...",
+     "speaker": "Jack",
+     "source": {
+      "kind": "quest",
+      "quest": "A Fine Opportunity?",
+      "quest_ko": "하늘이 내린 기회?",
+      "version": "1.0",
+      "speaker": "Jack"
+     },
+     "t": "정말 고마워. 오늘은 집에 돌아오지 못할 줄 알았어...",
+     "speaker_ko": "잭"
+    },
+    {
+     "section": "작중 행적 — Stanley와 Mare Jivari",
+     "status": "accepted",
+     "note": "Faithful translation of Jack's line.",
+     "t_raw": "게다가 Stanley에게는 아직 들려줄 이야기가 몇 가지 더 남아 있을 거야. 헤헤... 그 이야기들이 내가 애초에 모험가가 되고 싶어 한 계기였거든.",
+     "en": "Besides, I'm sure Stanley still has a few stories left to tell. Hehe... They're what inspired me to become an adventurer in the first place.",
+     "speaker": "Jack",
      "source": {
       "kind": "quest",
       "quest": "Should You Be Trapped in a Windless Land (Quest)",
       "quest_ko": "바람이 없는 곳에 갇힌다면",
       "version": "1.0",
-      "speaker": "Venti"
+      "speaker": "Jack"
      },
-     "t": "아, 멋지다! 스탠리가 진짜 자신과 다시 만났고, 잭도 마침내 자기 길을 갈 수 있게 되었어.",
-     "speaker_ko": "벤티"
+     "t": "게다가 스탠리에게는 아직 들려줄 이야기가 몇 가지 더 남아 있을 거야. 헤헤... 그 이야기들이 내가 애초에 모험가가 되고 싶어 한 계기였거든.",
+     "speaker_ko": "잭"
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Jack! 위대한 모험가가 되고 싶다면 그렇게 쉽게 울면 안 돼!",
-     "en": "Jack! You can't cry so easily if you want to be a great adventurer!",
-     "speaker": "Stanley",
+     "status": "accepted",
+     "note": "Faithful translation of Cyrus's line.",
+     "t_raw": "Guild의 경험 많은 인력들은 모두 여러 곳으로 조사를 나갔지. 하지만... 나는 Jack이 걱정될 뿐이야.",
+     "en": "The Guild's experienced hands have all been sent to various places to investigate. But... I just fear for Jack.",
+     "speaker": "Cyrus",
      "source": {
       "kind": "quest",
-      "quest": "The South Wind Brings Adventure",
-      "quest_ko": "남풍과 모험",
+      "quest": "A Fine Opportunity?",
+      "quest_ko": "하늘이 내린 기회?",
       "version": "1.0",
-      "speaker": "Stanley"
+      "speaker": "Cyrus"
      },
-     "t": "잭! 위대한 모험가가 되고 싶다면 그렇게 쉽게 울면 안 돼!",
-     "speaker_ko": "스탠리"
+     "t": "Guild의 경험 많은 인력들은 모두 여러 곳으로 조사를 나갔지. 하지만... 나는 잭이 걱정될 뿐이야.",
+     "speaker_ko": "Cyrus"
     },
     {
-     "section": "성격과 능력",
+     "section": "떡밥과 수수께끼",
      "status": "accepted",
-     "note": "Faithful translation.",
-     "t_raw": "아니, 아직. 나는 아직 집에서 너무 멀리 갈 만한 능력이 없어.",
+     "note": "Faithful translation of Jack's line.",
+     "t_raw": "아니, 아직은. 나는 아직 집에서 너무 멀리 갈 만한 역량이 없어.",
      "en": "No, not yet. I still don't have what it takes to go too far from home just yet.",
      "speaker": "Jack",
      "source": {
@@ -1505,41 +1629,24 @@
       "version": "1.0",
       "speaker": "Jack"
      },
-     "t": "아니, 아직. 나는 아직 집에서 너무 멀리 갈 만한 능력이 없어.",
+     "t": "아니, 아직은. 나는 아직 집에서 너무 멀리 갈 만한 역량이 없어.",
      "speaker_ko": "잭"
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "accepted",
-     "note": "Faithful translation, preserving the speculative question.",
-     "t_raw": "(Stanley가 Jack의 감정을 상하게 하지 않으려고 검과 방패를 미리 이곳에 두었던 걸까?)",
-     "en": "(Did Stanley plant the sword and shield here in advance so as to not hurt Jack's feelings?)",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Lionfang's Legacy",
-      "quest_ko": "사자 이빨 중의 이빨",
-      "version": "1.0",
-      "speaker": "Paimon"
-     },
-     "t": "(스탠리가 잭의 감정을 상하게 하지 않으려고 검과 방패를 미리 이곳에 두었던 걸까?)",
-     "speaker_ko": "페이몬"
     },
     {
      "section": "여담",
      "status": "accepted",
-     "note": "Faithful translation.",
-     "t_raw": "뭐!? Good Hunter가 오늘 프로모션을 한다고? 어떻게 그걸 몰랐지?",
-     "en": "What!? The Good Hunter's having a promotion today? How did I not hear about that?",
+     "note": "Faithful translation of Jack's line.",
+     "t_raw": "이봐, 나는 모험가 훈련을 하는 중이야... 정확히는 주량 훈련이지... 같이 할래?",
+     "en": "Hey, I'm doing some adventurer's training... alcohol tolerance training, to be precise... Wanna join me?",
      "speaker": "Jack",
      "source": {
       "kind": "quest",
-      "quest": "Meteorites and Adventure",
-      "quest_ko": "운석과 모험",
-      "version": "1.1",
+      "quest": "Who Is Mondstadt's Strongest Fighter?",
+      "quest_ko": "「몬드 최강자」 논쟁",
+      "version": "1.0",
       "speaker": "Jack"
      },
-     "t": "뭐!? 디어 헌터가 오늘 프로모션을 한다고? 어떻게 그걸 몰랐지?",
+     "t": "이봐, 나는 모험가 훈련을 하는 중이야... 정확히는 주량 훈련이지... 같이 할래?",
      "speaker_ko": "잭"
     }
    ]

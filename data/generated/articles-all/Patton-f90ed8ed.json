@@ -1,0 +1,1429 @@
+{
+ "node": "Patton",
+ "articles": [
+  {
+   "node": "Patton",
+   "from_version": "3.5",
+   "cutoff": "2023-04-11T00:00:00Z",
+   "input": [
+    {
+     "page": "Patton",
+     "url": "https://genshin-impact.fandom.com/wiki/Patton",
+     "revision": 1125313
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 7,
+    "web": 0
+   },
+   "input_chars": 4770,
+   "input_cut": false,
+   "input_hash": "1e8b561cddda",
+   "writer": "or-ds,glm-flash",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences supported by A1, A3, A24, A25; the interpretation is reasonable.",
+     "quote": "The cost of reimbursement is so high, Patton calculates that without eating or sleeping, he will have to work 48 more years to win back his freedom.",
+     "sentences": [
+      {
+       "t_raw": "Patton은 City of Mondstadt의 Angel's Share 바깥에서 만날 수 있는 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼은 몬드성의 천사의 몫 바깥에서 만날 수 있는 NPC다."
+      },
+      {
+       "t_raw": "그는 Nora의 아버지이며, Angel's Share에서 호객꾼으로 일한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 노라의 아버지이며, 천사의 몫에서 호객꾼으로 일한다."
+      },
+      {
+       "t_raw": "마지막 주인의 **collector's red wine** 병을 깨뜨린 뒤로는 그 값을 갚기 위해 일하며, 먹지도 자지도 않고 **48년**을 더 일해야 한다고 계산한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마지막 주인의 **수집가의 레드 와인** 병을 깨뜨린 뒤로는 그 값을 갚기 위해 일하며, 먹지도 자지도 않고 **48년**을 더 일해야 한다고 계산한다.",
+       "polish": {
+        "from": "마지막 주인의 **collector의 red wine** 병을 깨뜨린 뒤로는 그 값을 갚기 위해 일하며, 먹지도 자지도 않고 **48년**을 더 일해야 한다고 계산한다.",
+        "text": "마지막 주인의 **수집가의 레드 와인** 병을 깨뜨린 뒤로는 그 값을 갚기 위해 일하며, 먹지도 자지도 않고 **48년**을 더 일해야 한다고 계산한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Stormterror가 언제 다시 습격할지 모른다면서도 가게 앞에서 광고를 해야 한다는 말은, 그의 호객이 빚 상환 압박과 맞물려 있음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "풍마룡이 언제 다시 습격할지 모른다면서도 가게 앞에서 광고를 해야 한다는 말은, 그의 호객이 빚 상환 압박과 맞물려 있음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A25",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All supported, including Nora's line (M1).",
+     "quote": "The cost of reimbursement is so high, Patton calculates that without eating or sleeping, he will have to work 48 more years to win back his freedom.",
+     "sentences": [
+      {
+       "t_raw": "Patton은 City of Mondstadt의 NPC이며, Angel's Share 바깥에서 만날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼은 몬드성의 NPC이며, 천사의 몫 바깥에서 만날 수 있다."
+      },
+      {
+       "t_raw": "그는 **Nora의 아버지**이며, Angel's Share의 호객꾼으로 일한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **노라의 아버지**이며, 천사의 몫의 호객꾼으로 일한다."
+      },
+      {
+       "t_raw": "호객꾼이 된 계기는 the \"last owner's collector's red wine\" 한 병을 깨뜨린 일이고, 배상액은 그가 먹지도 자지도 않고 일해도 **48년**을 더 일해야 자유를 되찾을 수 있을 만큼 크다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호객꾼이 된 계기는 \"마지막 주인의 수집가의 레드 와인\" 한 병을 깨뜨린 일이고, 배상액은 그가 먹지도 자지도 않고 일해도 **48년**을 더 일해야 자유를 되찾을 수 있을 만큼 크다.",
+       "polish": {
+        "from": "호객꾼이 된 계기는 the \"last owner의 collector의 red wine\" 한 병을 깨뜨린 일이고, 배상액은 그가 먹지도 자지도 않고 일해도 **48년**을 더 일해야 자유를 되찾을 수 있을 만큼 크다.",
+        "text": "호객꾼이 된 계기는 \"마지막 주인의 수집가의 레드 와인\" 한 병을 깨뜨린 일이고, 배상액은 그가 먹지도 자지도 않고 일해도 **48년**을 더 일해야 자유를 되찾을 수 있을 만큼 크다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Nora는 자신의 아버지가 Patton이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노라는 자신의 아버지가 페이튼이라고 말한다."
+      },
+      {
+       "t_raw": "그가 Angel's Share 앞에서 부르는 호객은 이처럼 빚을 갚기 위한 노동과 맞물려 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 천사의 몫 앞에서 부르는 호객은 이처럼 빚을 갚기 위한 노동과 맞물려 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Nora",
+       "revision": 45183,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A3 and A41-A46: the villa comparison, the advice, 48 years, and the laughing, coughing and sobbing.",
+     "quote": "By my calculations, I need to work 48 more years to pay it back... without sleeping and eating.",
+     "sentences": [
+      {
+       "t_raw": "Patton이 Angel's Share 앞에서 호객꾼으로 일하게 된 계기는 병 하나를 깨뜨린 일이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼이 천사의 몫 앞에서 호객꾼으로 일하게 된 계기는 병 하나를 깨뜨린 일이다."
+      },
+      {
+       "t_raw": "그가 깨뜨린 병은 지난 주인의 수집용 레드 와인이었고, 그 값은 북쪽의 저택에 맞먹을 만큼 비쌌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 깨뜨린 병은 지난 주인의 수집용 레드 와인이었고, 그 값은 북쪽의 저택에 맞먹을 만큼 비쌌다."
+      },
+      {
+       "t_raw": "그는 이곳의 병은 아무리 평범해 보여도 손대지 말라고 조언한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 이곳의 병은 아무리 평범해 보여도 손대지 말라고 조언한다."
+      },
+      {
+       "t_raw": "Patton의 계산으로는 먹지도 자지도 않고 **48년**을 더 일해야 빚을 갚고 자유를 되찾을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼의 계산으로는 먹지도 자지도 않고 **48년**을 더 일해야 빚을 갚고 자유를 되찾을 수 있다."
+      },
+      {
+       "t_raw": "그 값비싼 병 하나가 그의 노동을 오랫동안 붙잡아 둔 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 값비싼 병 하나가 그의 노동을 오랫동안 붙잡아 둔 셈이다."
+      },
+      {
+       "t_raw": "그런데도 그는 그렇게 생각하면 그렇게 절망적이지만은 않다며, 자유를 되사러 가야 한다고 웃다가 기침하고 흐느낀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데도 그는 그렇게 생각하면 그렇게 절망적이지만은 않다며, 자유를 되사러 가야 한다고 웃다가 기침하고 흐느낀다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A41",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A42",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A43",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A44",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A45",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A29-A33.",
+     "quote": "The winery's owner, Master Diluc, still holds the deed to Angel's Share. He really has taken the business to the next level.",
+     "sentences": [
+      {
+       "t_raw": "Angel's Share는 Dawn Winery가 막 세워졌을 때 그 주인이 연 술집이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천사의 몫은 다운 와이너리가 막 세워졌을 때 그 주인이 연 술집이다."
+      },
+      {
+       "t_raw": "지금도 Dawn Winery의 주인 Master Diluc이 Angel's Share의 권리증서를 가지고 있고, 그는 장사를 한 단계 끌어올렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지금도 다운 와이너리의 주인 사범님 다이루크가 천사의 몫의 권리증서를 가지고 있고, 그는 장사를 한 단계 끌어올렸다."
+      },
+      {
+       "t_raw": "Patton은 이곳이 **Mondstadt 최고**라는 말이 사실이라 하고, Master Diluc이 기분이 좋을 때 직접 손님을 응대하며 Charles를 하루나 이틀 쉬게 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼은 이곳이 **몬드 최고**라는 말이 사실이라 하고, 사범님 다이루크가 기분이 좋을 때 직접 손님을 응대하며 찰스를 하루나 이틀 쉬게 한다고 말한다."
+      },
+      {
+       "t_raw": "그는 Master Diluc을 보면 존중하라고 하며 Mondstadt의 큰 부호라고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 사범님 다이루크를 보면 존중하라고 하며 몬드의 큰 부호라고 덧붙인다."
+      },
+      {
+       "t_raw": "술집의 운영과 와이너리의 소유 관계가 맞물려 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "술집의 운영과 와이너리의 소유 관계가 맞물려 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A32",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A33",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A35-A39; the interpretation is reasonable.",
+     "quote": "They make incredible sales over there. Some even call it \"bottled Mora.\"",
+     "sentences": [
+      {
+       "t_raw": "Mondstadt의 기후와 물, 작물은 모두 와인을 만들기에 알맞고, Patton은 Anemo Archon의 축복이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드의 기후와 물, 작물은 모두 와인을 만들기에 알맞고, 페이튼은 바람의 신의 축복이라고 말한다."
+      },
+      {
+       "t_raw": "사과주와 체리주도 맛이 좋지만 Dandelion Wine은 하나뿐이라고 그는 강조한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사과주와 체리주도 맛이 좋지만 민들레술은 하나뿐이라고 그는 강조한다."
+      },
+      {
+       "t_raw": "Mondstadt의 와인은 Liyue의 무역 조합에 수출되어 대륙 곳곳에 팔린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드의 와인은 리월의 무역 조합에 수출되어 대륙 곳곳에 팔린다."
+      },
+      {
+       "t_raw": "그곳에서 엄청난 매출을 올리며 일부는 **bottled Mora**라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그곳에서 엄청난 매출을 올리며 일부는 **병에 든 모라**라고 부른다.",
+       "polish": {
+        "from": "그곳에서 엄청난 매출을 올리며 일부는 **bottled 모라**라고 부른다.",
+        "text": "그곳에서 엄청난 매출을 올리며 일부는 **병에 든 모라**라고 부른다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Patton은 이런 이유로 Dawn Winery의 주인이 그렇게 부유하다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼은 이런 이유로 다운 와이너리의 주인이 그렇게 부유하다고 본다."
+      },
+      {
+       "t_raw": "와인 산업이 Mondstadt의 대외 교역과 Dawn Winery의 부를 함께 떠받치는 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "와인 산업이 몬드의 대외 교역과 다운 와이너리의 부를 함께 떠받치는 모습으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A35",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A36",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A37",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A38",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A39",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Angel's Share",
+     "status": "accepted",
+     "note": "The English says only 'a discount' (A16), not a big discount. '큰 할인가' adds a degree that isn't given.",
+     "quote": "Come in, come in! We are having a discount at Angel's Share!",
+     "sentences": [
+      {
+       "t_raw": "Patton은 Angel's Share 밖에서 손님을 부르며, 할인가가 있다는 말과 오늘 특선 메뉴가 있다는 말로 사람들을 불러들인다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "페이튼은 천사의 몫 밖에서 손님을 부르며, 할인가가 있다는 말과 오늘 특선 메뉴가 있다는 말로 사람들을 불러들인다."
+      },
+      {
+       "t_raw": "그는 Dawn Winery의 Dandelion Wine을 맛보라고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 다운 와이너리의 민들레술을 맛보라고 권한다."
+      },
+      {
+       "t_raw": "문 앞에서 던지는 이런 말들은 손님을 안으로 들이려는 장사의 첫 단추로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "문 앞에서 던지는 이런 말들은 손님을 안으로 들이려는 장사의 첫 단추로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Idle Quotes",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Idle Quotes",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 천사의 몫",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Angel's Share",
+     "status": "accepted",
+     "note": "All sentences are supported by the quest lines Q1-Q6.",
+     "quote": "One is the Dandelion Knight, the other is the Darknight Hero.",
+     "sentences": [
+      {
+       "t_raw": "손님과 대화할 때 Patton은 최근 술집 손님들이 **Mondstadt 최강의 싸움꾼**을 두고 같은 주제로 토론한다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손님과 대화할 때 페이튼은 최근 술집 손님들이 **몬드 최강의 싸움꾼**을 두고 같은 주제로 토론한다고 전한다."
+      },
+      {
+       "t_raw": "주류 의견은 Dandelion Knight와 Darknight Hero 두 후보로 갈리며, 그는 창 너머로 듣기만 하고 논쟁에 끼지 못하는 처지를 아쉬워한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주류 의견은 민들레 기사와 다크 히어로 두 후보로 갈리며, 그는 창 너머로 듣기만 하고 논쟁에 끼지 못하는 처지를 아쉬워한다."
+      },
+      {
+       "t_raw": "그러면서 자신은 상대의 한가한 삶이 부럽다고 말하고, 결국 일로 돌아간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 자신은 상대의 한가한 삶이 부럽다고 말하고, 결국 일로 돌아간다."
+      },
+      {
+       "t_raw": "밖에서 일하는 사람과 창안에서 토론하는 손님들 사이의 거리가 그의 푸념에 배어 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "밖에서 일하는 사람과 창안에서 토론하는 손님들 사이의 거리가 그의 푸념에 배어 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Who Is Mondstadt's Strongest Fighter?",
+       "quest_ko": "「몬드 최강자」 논쟁",
+       "version": "1.0",
+       "speaker": "Patton"
+      },
+      {
+       "kind": "quest",
+       "quest": "Who Is Mondstadt's Strongest Fighter?",
+       "quest_ko": "「몬드 최강자」 논쟁",
+       "version": "1.0",
+       "speaker": "Patton"
+      },
+      {
+       "kind": "quest",
+       "quest": "Who Is Mondstadt's Strongest Fighter?",
+       "quest_ko": "「몬드 최강자」 논쟁",
+       "version": "1.0",
+       "speaker": "Patton"
+      },
+      {
+       "kind": "quest",
+       "quest": "Who Is Mondstadt's Strongest Fighter?",
+       "quest_ko": "「몬드 최강자」 논쟁",
+       "version": "1.0",
+       "speaker": "Patton"
+      },
+      {
+       "kind": "quest",
+       "quest": "Who Is Mondstadt's Strongest Fighter?",
+       "quest_ko": "「몬드 최강자」 논쟁",
+       "version": "1.0",
+       "speaker": "Patton"
+      }
+     ],
+     "heading": "작중 행적 — 천사의 몫",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Angel's Share",
+     "status": "accepted",
+     "note": "All sentences are supported. The win/loss lines are correctly mapped to Patton's perspective, and the interpretation is reasonable.",
+     "quote": "I won! I didn't make a mistake this time!",
+     "sentences": [
+      {
+       "t_raw": "대화 선택지에서 대련을 고르면 **Genius Invokation TCG 대련**이 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대화 선택지에서 대련을 고르면 **일곱 성인의 소환 대련**이 열린다."
+      },
+      {
+       "t_raw": "Patton이 이기면 자신이 이겼다며 이번에는 실수하지 않았다고 말하고, 자신이 지면 실수했다는 말을 내뱉는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼이 이기면 자신이 이겼다며 이번에는 실수하지 않았다고 말하고, 자신이 지면 실수했다는 말을 내뱉는다."
+      },
+      {
+       "t_raw": "승리할 때조차 '이번에는' 실수하지 않았다고 말하는 점은 그가 평소 자기 실수를 의식해 왔음을 드러내는 것으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "승리할 때조차 '이번에는' 실수하지 않았다고 말하는 점은 그가 평소 자기 실수를 의식해 왔음을 드러내는 것으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A22",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 천사의 몫",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Angel's Share",
+     "status": "accepted",
+     "note": "All sentences are supported by A2 and A47-A52.",
+     "quote": "Currently, we're giving every customer a free Chicken-Mushroom Skewer. It goes great with any drink!",
+     "sentences": [
+      {
+       "t_raw": "특선 메뉴가 있느냐고 묻는 대화 가지에서 Patton은 현재 모든 손님에게 Chicken-Mushroom Skewer를 무료로 준다고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특선 메뉴가 있느냐고 묻는 대화 가지에서 페이튼은 현재 모든 손님에게 버섯 닭꼬치를 무료로 준다고 답한다."
+      },
+      {
+       "t_raw": "그는 이 음식이 어떤 음료와도 잘 어울린다며 하나를 건네고 앉으라고 권하고, 그 대화 가지를 처음 따라가면 **Chicken-Mushroom Skewer 네 개**를 얻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 이 음식이 어떤 음료와도 잘 어울린다며 하나를 건네고 앉으라고 권하고, 그 대화 가지를 처음 따라가면 **버섯 닭꼬치 네 개**를 얻는다."
+      },
+      {
+       "t_raw": "손님이 괜찮다고 물러나면 Patton은 벌써 가느냐며, Mondstadt 최고의 와인을 맛보려면 이곳이 맞다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손님이 괜찮다고 물러나면 페이튼은 벌써 가느냐며, 몬드 최고의 와인을 맛보려면 이곳이 맞다고 말한다."
+      },
+      {
+       "t_raw": "특선을 묻는 권유가 실제 음식 증정으로 이어지는 대목이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "특선을 묻는 권유가 실제 음식 증정으로 이어지는 대목이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A47",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A48",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A49",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A50",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A51",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 천사의 몫",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Stormterror",
+     "status": "accepted",
+     "note": "All sentences are supported by A23-A25. The interpretation follows from the debt.",
+     "quote": "*sigh* Honestly, that scared me to death. We don't know when Stormterror might attack again, either... but even so, I have to stand here and advertise the tavern.",
+     "sentences": [
+      {
+       "t_raw": "Stormterror에 관한 Patton의 대화는 “Dragon Storm”과 “A Long Shot” 사이에 들을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "풍마룡에 관한 페이튼의 대화는 “용의 재앙”과 “푸른 그림자를 위해” 사이에 들을 수 있다."
+      },
+      {
+       "t_raw": "Patton은 한숨을 쉬며 **죽을 만큼 무서웠다**고 털어놓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼은 한숨을 쉬며 **죽을 만큼 무서웠다**고 털어놓는다."
+      },
+      {
+       "t_raw": "Stormterror가 언제 다시 습격할지 모르지만, 그는 계속 선술집 앞에 서서 Angel's Share를 홍보해야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "풍마룡이 언제 다시 습격할지 모르지만, 그는 계속 선술집 앞에 서서 천사의 몫을 홍보해야 한다."
+      },
+      {
+       "t_raw": "공포를 느끼면서도 빚 때문에 자리를 비울 수 없는 처지인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "공포를 느끼면서도 빚 때문에 자리를 비울 수 없는 처지인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A25",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 풍마룡",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Stormterror",
+     "status": "accepted",
+     "note": "All sentences are supported by A25-A27.",
+     "quote": "Probably not, haha... *sobs*",
+     "sentences": [
+      {
+       "t_raw": "그는 Master Diluc에게 빚을 졌고, 그 빚은 먹지도 마시지도 자지도 않은 채 48년을 더 서 있어야 할 만큼 크다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 사범님 다이루크에게 빚을 졌고, 그 빚은 먹지도 마시지도 자지도 않은 채 48년을 더 서 있어야 할 만큼 크다고 말한다."
+      },
+      {
+       "t_raw": "지금 게을리하면 그 기간이 늘어난다고도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지금 게을리하면 그 기간이 늘어난다고도 한다."
+      },
+      {
+       "t_raw": "그러면서 용의 습격을 이유로 Master Diluc이 빚을 탕감해 주지 않을지 궁금해하지만, 곧 **아니라고** 웃다가 흐느낀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 용의 습격을 이유로 사범님 다이루크가 빚을 탕감해 주지 않을지 궁금해하지만, 곧 **아니라고** 웃다가 흐느낀다."
+      },
+      {
+       "t_raw": "빚 탕감에 대한 기대와 체념이 연달아 드러나는 모습이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "빚 탕감에 대한 기대와 체념이 연달아 드러나는 모습이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A27",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 풍마룡",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 축제들",
+     "status": "accepted",
+     "note": "All sentences are supported by A12 and A53-A54. The interpretation is a reasonable reading.",
+     "quote": "If you pass by Springvale, don't forget to stop by our stand and have a look!",
+     "sentences": [
+      {
+       "t_raw": "Of Ballads and Brews 기간에 Patton은 Angel's Share에서 **Weinlesefest 할인**이 있다고 외치며 손님을 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잔 속에서 울리는 노래 기간에 페이튼은 천사의 몫에서 **돌아온 바람의 와인 축제 할인**이 있다고 외치며 손님을 부른다."
+      },
+      {
+       "t_raw": "그는 **Springvale의 Angel's Share 부스**가 Weinlesefest 기간에만 열린다고 알리고, Springvale을 지나가면 들러 보라고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **샘물 마을의 천사의 몫 부스**가 돌아온 바람의 와인 축제 기간에만 열린다고 알리고, 샘물 마을을 지나가면 들러 보라고 권한다."
+      },
+      {
+       "t_raw": "주점의 할인과 Springvale 부스 방문이 함께 권해지는 점에서, 그의 호객은 축제 손님을 두 장소로 나누어 부르는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "주점의 할인과 샘물 마을 부스 방문이 함께 권해지는 점에서, 그의 호객은 축제 손님을 두 장소로 나누어 부르는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Idle Quotes",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Idle Quotes",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "A53",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "A54",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 축제들",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 축제들",
+     "status": "accepted",
+     "note": "All sentences match A14 and A56-A59.",
+     "quote": "Angel's Share is a great place to bring a date!",
+     "sentences": [
+      {
+       "t_raw": "Windblume's Breath 때 Patton은 Angel's Share를 **데이트 장소**로 권하며 데이트 상대를 데려오라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윈드블룸의 숨결 때 페이튼은 천사의 몫을 **데이트 장소**로 권하며 데이트 상대를 데려오라고 말한다."
+      },
+      {
+       "t_raw": "Starsnatch Cliff까지 걸어 올라갈 필요도, Cape Oath의 높이를 오를 이유도 없이 술집에 들어가 두 잔을 시키고 동행과 이야기하면 된다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "별을 따는 절벽까지 걸어 올라갈 필요도, 맹세의 갑각의 높이를 오를 이유도 없이 술집에 들어가 두 잔을 시키고 동행과 이야기하면 된다고 한다."
+      },
+      {
+       "t_raw": "Apple cider, cherry cider, Dandelion Wine을 갖췄고, 모든 음료가 Dawn Winery에서 곧장 공급되어 Master Diluc의 눈 아래 산업이 번성한다고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사과 사이다, 체리 사이다, 민들레술을 갖췄고, 모든 음료가 다운 와이너리에서 곧장 공급되어 사범님 다이루크의 눈 아래 산업이 번성한다고 소개한다.",
+       "polish": {
+        "from": "사과 cider, cherry cider, 민들레술을 갖췄고, 모든 음료가 다운 와이너리에서 곧장 공급되어 사범님 다이루크의 눈 아래 산업이 번성한다고 소개한다.",
+        "text": "사과 사이다, 체리 사이다, 민들레술을 갖췄고, 모든 음료가 다운 와이너리에서 곧장 공급되어 사범님 다이루크의 눈 아래 산업이 번성한다고 소개한다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Idle Quotes",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A56",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A57",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A58",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A59",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 축제들",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 축제들",
+     "status": "accepted",
+     "note": "All sentences match A60-A64.",
+     "quote": "You leaving already? If you want to try Mondstadt's best wine, this is the place!",
+     "sentences": [
+      {
+       "t_raw": "그는 들어올 생각이 있는지 물어 손님을 맞이한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 들어올 생각이 있는지 물어 손님을 맞이한다."
+      },
+      {
+       "t_raw": "축제 대화에서도 Angel's Share에 대해 묻는 응답과 괜찮다는 응답이 이어지며, 그 응답은 평소와 같다.",
+       "interp": false,
+       "dropped": false,
+       "t": "축제 대화에서도 천사의 몫에 대해 묻는 응답과 괜찮다는 응답이 이어지며, 그 응답은 평소와 같다."
+      },
+      {
+       "t_raw": "떠나는 이에게는 Mondstadt의 최고 와인을 맛보려면 이곳이 맞다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "떠나는 이에게는 몬드의 최고 와인을 맛보려면 이곳이 맞다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A60",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A61",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A62",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A63",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Event Dialogue > Windblume's Breath",
+       "paragraph": "A64",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 축제들",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Facts match M1 and M2. The interpretation in (3) follows from M2.",
+     "quote": "My dad is Patton!",
+     "sentences": [
+      {
+       "t_raw": "Patton은 Nora의 아버지다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼은 노라의 아버지다."
+      },
+      {
+       "t_raw": "Nora는 보통 Anemo God statue 곁에서 혼자 놀고, Patton은 Angel's Share에서 일하느라 바쁘다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노라는 보통 바람 마신 조각상 곁에서 혼자 놀고, 페이튼은 천사의 몫에서 일하느라 바쁘다.",
+       "polish": {
+        "from": "노라는 보통 바람 마신 statue 곁에서 혼자 놀고, 페이튼은 천사의 몫에서 일하느라 바쁘다.",
+        "text": "노라는 보통 바람 마신 조각상 곁에서 혼자 놀고, 페이튼은 천사의 몫에서 일하느라 바쁘다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그래서 Nora를 돌보는 쪽은 Anemo God statue에서 기도하는 Sister Grace다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래서 노라를 돌보는 쪽은 바람 마신 조각상에서 기도하는 Sister Grace다.",
+       "polish": {
+        "from": "그래서 노라를 돌보는 쪽은 바람 마신 statue에서 기도하는 Sister Grace다.",
+        "text": "그래서 노라를 돌보는 쪽은 바람 마신 조각상에서 기도하는 Sister Grace다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "**아버지가 바쁜 동안 딸 곁을 지키는 이는 Sister Grace인 셈**이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**아버지가 바쁜 동안 딸 곁을 지키는 이는 Sister Grace인 셈**이다."
+      },
+      {
+       "t_raw": "Nora는 'My dad is Patton!'이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노라는 'My dad is 페이튼!'이라고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Nora",
+       "revision": 45183,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Nora",
+       "revision": 45183,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Sister Grace",
+      "Sister Grace",
+      "My"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Facts match A3, A30 and A32. The interpretation in (2) is reasonable.",
+     "quote": "Master Diluc serves the customers here personally when he's in a good mood, and lets Charles off for a day or two.",
+     "sentences": [
+      {
+       "t_raw": "Patton은 Angel's Share의 호객꾼으로 일한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼은 천사의 몫의 호객꾼으로 일한다."
+      },
+      {
+       "t_raw": "그 Angel's Share의 권리는 Master Diluc이 쥐고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 천사의 몫의 권리는 사범님 다이루크가 쥐고 있다."
+      },
+      {
+       "t_raw": "**Patton의 일자리와 Master Diluc의 소유권이 한 술집에서 겹치는 셈**이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**페이튼의 일자리와 사범님 다이루크의 소유권이 한 술집에서 겹치는 셈**이다."
+      },
+      {
+       "t_raw": "Master Diluc은 기분이 좋을 때 직접 손님을 응대하며, Charles를 하루 이틀 쉬게 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사범님 다이루크는 기분이 좋을 때 직접 손님을 응대하며, 찰스를 하루 이틀 쉬게 한다."
+      },
+      {
+       "t_raw": "Charles는 Master Diluc이 하루 이틀 쉬게 해 주는 사람으로 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "찰스는 사범님 다이루크가 하루 이틀 쉬게 해 주는 사람으로 언급된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A32",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Facts match M1 and M2. The interpretation in (2) is hedged and follows from M2, which says the mother is absent or has passed away.",
+     "quote": "She doesn't talk about her mother, so it can be assumed her mother is either not present or has passed away; Sister Grace, who prays by the Anemo God statue, takes care of her instead.",
+     "sentences": [
+      {
+       "t_raw": "Nora는 Anemo God statue 곁에서 주로 혼자 놀며, Patton은 Angel's Share 일로 바쁘다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노라는 바람 마신 조각상 곁에서 주로 혼자 놀며, 페이튼은 천사의 몫 일로 바쁘다.",
+       "polish": {
+        "from": "노라는 바람 마신 statue 곁에서 주로 혼자 놀며, 페이튼은 천사의 몫 일로 바쁘다.",
+        "text": "노라는 바람 마신 조각상 곁에서 주로 혼자 놀며, 페이튼은 천사의 몫 일로 바쁘다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Nora 자신은 Patton을 아빠라고 말하지만, **어머니에 대해서는 말하지 않는다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "노라 자신은 페이튼을 아빠라고 말하지만, **어머니에 대해서는 말하지 않는다**."
+      },
+      {
+       "t_raw": "Nora가 어머니를 말하지 않는 점과 Sister Grace가 Anemo God statue에서 기도하며 Nora를 대신 돌본다는 점을 함께 놓으면, 가족사에서 **어머니의 자리가 비어 있다**고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "노라가 어머니를 말하지 않는 점과 Sister Grace가 바람 마신 조각상에서 기도하며 노라를 대신 돌본다는 점을 함께 놓으면, 가족사에서 **어머니의 자리가 비어 있다**고 볼 수 있다.",
+       "polish": {
+        "from": "노라가 어머니를 말하지 않는 점과 Sister Grace가 바람 마신 statue에서 기도하며 노라를 대신 돌본다는 점을 함께 놓으면, 가족사에서 **어머니의 자리가 비어 있다**고 볼 수 있다.",
+        "text": "노라가 어머니를 말하지 않는 점과 Sister Grace가 바람 마신 조각상에서 기도하며 노라를 대신 돌본다는 점을 함께 놓으면, 가족사에서 **어머니의 자리가 비어 있다**고 볼 수 있다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Nora",
+       "revision": 45183,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Nora",
+       "revision": 45183,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Sister Grace"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "A4 and A5 say \"To be added.\" The interpretation follows from that.",
+     "quote": "(To be added.)",
+     "sentences": [
+      {
+       "t_raw": "Patton의 프로필에서 Personality와 Appearance 항목은 아직 \"To be added.\"로 표시되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이튼의 프로필에서 성격과 외모 항목은 아직 \"추가 예정.\"으로 표시되어 있다.",
+       "polish": {
+        "from": "페이튼의 프로필에서 Personality와 Appearance 항목은 아직 \"To be added.\"로 표시되어 있다.",
+        "text": "페이튼의 프로필에서 성격과 외모 항목은 아직 \"추가 예정.\"으로 표시되어 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "따라서 프로필의 Personality와 Appearance 항목만으로는 그의 성격과 외형을 설명하는 내용을 확인할 수 없는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 프로필의 Personality와 Appearance 항목만으로는 그의 성격과 외형을 설명하는 내용을 확인할 수 없는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Profile > Personality",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Profile > Appearance",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Personality",
+      "Appearance"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 3 is an interpretation that follows from the contrasting reactions (triumph vs. dismay). Sentences 0-2 match A17-A22.",
+     "quote": "I won! I didn't make a mistake this time!",
+     "sentences": [
+      {
+       "t_raw": "Adventure Challenge를 고르면 Genius Invokation TCG 대련 화면이 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모험 도전을 고르면 일곱 성인의 소환 대련 화면이 열린다."
+      },
+      {
+       "t_raw": "대련에서 플레이어가 지면 Patton은 이번에는 실수하지 않았다며 이겼다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대련에서 플레이어가 지면 페이튼은 이번에는 실수하지 않았다며 이겼다고 말한다."
+      },
+      {
+       "t_raw": "반대로 플레이어가 이기면 이런 실수라니, 어떻게 이럴 수가 있냐며 당황한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "반대로 플레이어가 이기면 이런 실수라니, 어떻게 이럴 수가 있냐며 당황한다."
+      },
+      {
+       "t_raw": "승패에 따라 반응이 확연히 갈린다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "승패에 따라 반응이 확연히 갈린다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Patton",
+       "revision": 1125313,
+       "section": "Dialogue",
+       "paragraph": "A22",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적 — Angel's Share",
+     "status": "accepted",
+     "note": "Faithful translation of Q5.",
+     "t_raw": "한 명은 Dandelion Knight이고, 다른 한 명은 Darknight Hero다.",
+     "en": "One is the Dandelion Knight, the other is the Darknight Hero.",
+     "speaker": "Patton",
+     "source": {
+      "kind": "quest",
+      "quest": "Who Is Mondstadt's Strongest Fighter?",
+      "quest_ko": "「몬드 최강자」 논쟁",
+      "version": "1.0",
+      "speaker": "Patton"
+     },
+     "t": "한 명은 민들레 기사이고, 다른 한 명은 다크 히어로다.",
+     "speaker_ko": "페이튼"
+    }
+   ]
+  }
+ ]
+}

@@ -21,40 +21,44 @@
    "input_cut": false,
    "input_hash": "e8bdd8f1a24b",
    "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hertha is a Coordinator of the Knights of Favonius, and the Reputation Advisor for Mondstadt. She is located in the Market District area of the City of Mondstadt.",
+     "status": "accepted",
+     "note": "All sentences are supported by A1-A4.",
+     "quote": "Hertha is a Coordinator of the Knights of Favonius, and the Reputation Advisor for Mondstadt.",
      "sentences": [
       {
-       "t_raw": "Hertha는 Knights of Favonius의 Coordinator이자 Mondstadt의 Reputation Advisor이며, City of Mondstadt의 Market District에서 만날 수 있다.",
+       "t_raw": "Hertha는 Knights of Favonius의 6th Company 대장이며 조정관이고, Mondstadt의 평판 담당관으로 City of Mondstadt의 Market District에 있다.",
        "interp": false,
        "dropped": false,
-       "t": "헤르타는 페보니우스 기사단의 Coordinator이자 몬드의 Reputation Advisor이며, 몬드성의 Market District에서 만날 수 있다."
+       "t": "헤르타는 페보니우스 기사단의 6th Company 대장이며 조정관이고, 몬드의 평판 담당관으로 몬드성의 Market District에 있다.",
+       "polish": {
+        "from": "헤르타는 페보니우스 기사단의 6th Company 대장이며 조정관이고, 몬드의 평판 담당관으로 몬드성의 Market District에 있다.",
+        "text": "헤르타는 페보니우스 기사단의 6th Company 대장이며 조정관이고, 몬드의 평판 담당관으로 몬드성의 Market District에 있다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그녀는 Knights of Favonius 6th Company의 Captain으로서 baggage train의 charter and administration, resource management, record-keeping을 맡는다.",
+       "t_raw": "그녀는 Knight of the Realm 퀘스트를 통해 Mondstadt의 평판 메뉴를 열어 주고, 6th Company는 수송대 편성과 행정, 자원 관리, 기록 보관을 맡는다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 페보니우스 기사단 6th Company의 대장으로서 baggage train의 charter and administration, resource management, record-keeping을 맡는다."
+       "t": "그녀는 몬드성의 기사 퀘스트를 통해 몬드의 평판 메뉴를 열어 주고, 6th Company는 수송대 편성과 행정, 자원 관리, 기록 보관을 맡는다.",
+       "polish": {
+        "from": "그녀는 몬드성의 기사 퀘스트를 통해 몬드의 평판 메뉴를 열어 주고, 6th Company는 수송대 편성과 행정, 자원 관리, 기록 보관을 맡는다.",
+        "text": "그녀는 몬드성의 기사 퀘스트를 통해 몬드의 평판 메뉴를 열어 주고, 6th Company는 수송대 편성과 행정, 자원 관리, 기록 보관을 맡는다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Knight of the Realm은 Mondstadt의 Reputation 메뉴를 여는 World Quest이고, Hertha는 그 퀘스트를 주는 인물로 지도 아이콘 아래에서 발견된다.",
+       "t_raw": "Paralogism 무렵, 그녀는 반년 전 지원한 작전에서 실종으로 처리되었으나, 이는 Durin의 에너지 변화를 눈치챈 Albedo가 세운 계획이었고, Durin의 잔해가 만든 대체 Hertha는 다른 Knights의 신뢰를 얻은 뒤 Albedo의 재판에서 검사로 나섰다가 재심 중 진짜 Hertha가 도착하면서 함정에 빠졌다.",
        "interp": false,
        "dropped": false,
-       "t": "몬드성의 기사는 몬드의 평판 메뉴를 여는 월드 임무이고, 헤르타는 그 퀘스트를 주는 인물로 지도 아이콘 아래에서 발견된다."
-      },
-      {
-       "t_raw": "Albedo가 Durin의 에너지 변화를 알아차리고 세운 계획 속에서 Hertha는 실종으로 처리되었고, Durin의 잔해가 만든 대체자가 Knights의 신뢰를 얻는 동안 진짜 Hertha는 재심리에 도착한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "알베도가 두린의 에너지 변화를 알아차리고 세운 계획 속에서 헤르타는 실종으로 처리되었고, 두린의 잔해가 만든 대체자가 기사단의 신뢰를 얻는 동안 진짜 헤르타는 재심리에 도착한다."
+       "t": "배리의 순간 무렵, 그녀는 반년 전 지원한 작전에서 실종으로 처리되었으나, 이는 두린의 에너지 변화를 눈치챈 알베도가 세운 계획이었고, 두린의 잔해가 만든 대체 헤르타는 다른 기사단의 신뢰를 얻은 뒤 알베도의 재판에서 검사로 나섰다가 재심 중 진짜 헤르타가 도착하면서 함정에 빠졌다."
       }
      ],
      "sources": [
@@ -94,67 +98,48 @@
          "name": "Crimes One and Two"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A23",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A24",
-       "wiki_refs": []
       }
      ],
      "heading": null,
      "latin_left": [
-      "Coordinator",
-      "Reputation Advisor",
+      "Company",
       "Market District",
       "Company"
      ]
     },
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hertha is a Coordinator of the Knights of Favonius, and the Reputation Advisor for Mondstadt.",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Facts are supported, and the interpretation in sentence 2 follows reasonably from the material.",
+     "quote": "Hertha is the Captain of the Knights of Favonius' 6th Company — which is in charge of logistics — and takes on the role of Coordinator.",
      "sentences": [
       {
-       "t_raw": "Hertha는 Knights of Favonius의 Coordinator이자 Mondstadt의 Reputation Advisor다.",
+       "t_raw": "Hertha는 Knights of Favonius의 조정관이자 Mondstadt의 평판 고문이며, **물류**를 맡는 **6th Company**의 대장이다.",
        "interp": false,
        "dropped": false,
-       "t": "헤르타는 페보니우스 기사단의 Coordinator이자 몬드의 Reputation Advisor다."
+       "t": "헤르타는 페보니우스 기사단의 조정관이자 몬드의 평판 고문이며, **물류**를 맡는 **6th Company**의 대장이다.",
+       "polish": {
+        "from": "헤르타는 페보니우스 기사단의 조정관이자 몬드의 평판 고문이며, **물류**를 맡는 **6th Company**의 대장이다.",
+        "text": "헤르타는 페보니우스 기사단의 조정관이자 몬드의 평판 고문이며, **물류**를 맡는 **6th Company**의 대장이다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그녀는 City of Mondstadt의 Market District 지역에 있으며, 지도 위 아이콘 아래에서 만날 수 있다.",
+       "t_raw": "그녀의 업무는 수송대의 편성과 행정, 자원 관리, 기록 보관을 포함한다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 몬드성의 Market District 지역에 있으며, 지도 위 아이콘 아래에서 만날 수 있다."
+       "t": "그녀의 업무는 수송대의 편성과 행정, 자원 관리, 기록 보관을 포함한다."
       },
       {
-       "t_raw": "Knights of Favonius 6th Company의 Captain으로서 물류를 맡고, Coordinator로서 수송대의 편성과 관리, 자원 관리, 기록 업무를 담당한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페보니우스 기사단 6th Company의 대장으로서 물류를 맡고, Coordinator로서 수송대의 편성과 관리, 자원 관리, 기록 업무를 담당한다."
-      },
-      {
-       "t_raw": "그녀가 주는 World Quest Knight of the Realm은 Mondstadt의 Reputation 메뉴를 열어 준다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀가 주는 월드 임무 몬드성의 기사는 몬드의 평판 메뉴를 열어 준다."
-      },
-      {
-       "t_raw": "**Mondstadt의 평판**과 **6th Company의 보급 업무**가 Hertha 한 사람에게서 맞물리는 셈이다.",
+       "t_raw": "6th Company의 물류 역할과 Hertha의 대장 직함이 맞물려, 그녀의 자리는 부대 지휘와 물류 행정을 함께 맡는 자리로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "**몬드의 평판**과 **6th Company의 보급 업무**가 헤르타 한 사람에게서 맞물리는 셈이다."
+       "t": "6th Company의 물류 역할과 헤르타의 대장 직함이 맞물려, 그녀의 자리는 부대 지휘와 물류 행정을 함께 맡는 자리로 보인다.",
+       "polish": {
+        "from": "6th Company의 물류 역할과 헤르타의 대장 직함이 맞물려, 그녀의 자리는 부대 지휘와 물류 행정을 함께 맡는 자리로 보인다.",
+        "text": "6th Company의 물류 역할과 헤르타의 대장 직함이 맞물려, 그녀의 자리는 부대 지휘와 물류 행정을 함께 맡는 자리로 보인다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -164,14 +149,6 @@
        "revision": 2041301,
        "section": null,
        "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": null,
-       "paragraph": "A2",
        "wiki_refs": []
       },
       {
@@ -189,47 +166,229 @@
        "section": "Personnel > Leadership",
        "paragraph": "M2",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Knights of Favonius",
+       "revision": 2052504,
+       "section": "Companies > 6th Company, Logistics",
+       "paragraph": "M5",
+       "wiki_refs": []
       }
      ],
-     "heading": "개요",
+     "heading": "정체와 배경",
      "latin_left": [
-      "Coordinator",
-      "Reputation Advisor",
-      "Market District",
       "Company",
-      "Coordinator",
       "Company"
      ]
     },
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "At the same time, our inventory is running a surplus to match... So I'm more than willing to exchange some of it for a little hand here and there.",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Appearance, uniform and scar details are all stated in A3, A5, A6 and A7.",
+     "quote": "Hertha is a pale woman with hazel eyes, and long light brown hair.",
      "sentences": [
       {
-       "t_raw": "6th Company는 Hertha가 이끌며, 그 업무는 수송대의 편성과 관리, 자원 관리, 기록에 걸쳐 있다.",
+       "t_raw": "Hertha는 창백한 피부에 헤이즐색 눈, 긴 밝은 갈색 머리를 지녔다.",
        "interp": false,
        "dropped": false,
-       "t": "6th Company는 헤르타가 이끌며, 그 업무는 수송대의 편성과 관리, 자원 관리, 기록에 걸쳐 있다."
+       "t": "헤르타는 창백한 피부에 헤이즐색 눈, 긴 밝은 갈색 머리를 지녔다."
       },
       {
-       "t_raw": "이 회사는 위험한 몬스터나 Mondstadt 시민의 문제 같은 잠재적 임무를 위해 도움을 모으고, 그 대가로 남는 자원을 내놓는다.",
+       "t_raw": "그녀는 Knights of Favonius의 표준 제복을 입는데, 검은 긴소매 셔츠와 흰 판금 갑옷, 회색 치마 아래의 몸에 붙는 바지와 정강이 갑옷, 가슴판의 Knights of Favonius 문장을 갖추고 오른쪽 허리춤에는 칼집에 든 검을 찬다.",
        "interp": false,
        "dropped": false,
-       "t": "이 회사는 위험한 몬스터나 몬드 시민의 문제 같은 잠재적 임무를 위해 도움을 모으고, 그 대가로 남는 자원을 내놓는다."
+       "t": "그녀는 페보니우스 기사단의 표준 제복을 입는데, 검은 긴소매 셔츠와 흰 판금 갑옷, 회색 치마 아래의 몸에 붙는 바지와 정강이 갑옷, 가슴판의 페보니우스 기사단 문장을 갖추고 오른쪽 허리춤에는 칼집에 든 검을 찬다."
       },
       {
-       "t_raw": "Hertha는 Grand Master가 많은 인력을 데려간 뒤 계속된 인력 부족 속에서, 경험 있는 이들을 받아들이고 작은 의뢰부터 신뢰를 쌓게 한다.",
+       "t_raw": "복무 중 Miles, Eula 등과 함께한 전투에서 왼쪽 아래팔에 큰 흉터를 얻었고, Crimes One and Two에서 왼팔의 흉터가 드러난다.",
        "interp": false,
        "dropped": false,
-       "t": "헤르타는 대단장이 많은 인력을 데려간 뒤 계속된 인력 부족 속에서, 경험 있는 이들을 받아들이고 작은 의뢰부터 신뢰를 쌓게 한다."
+       "t": "복무 중 마일스, 유라 등과 함께한 전투에서 왼쪽 아래팔에 큰 흉터를 얻었고, 첫 번째 범행과 두 번째 범행에서 왼팔의 흉터가 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile > Appearance",
+       "paragraph": "A5",
+       "wiki_refs": []
       },
       {
-       "t_raw": "인력 부족과 자원의 여유가 맞물려, Hertha가 도움을 받는 대신 보급품을 교환하는 구조로 보인다.",
-       "interp": true,
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile > Appearance",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile > Appearance",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Crimes One and Two"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A1 and M3.",
+     "quote": "Ematol can be found northwest of the Eastern Mondstadt City Teleport Waypoint, next to a streetlight at the top of the stairs that leads to Hertha.",
+     "sentences": [
+      {
+       "t_raw": "Hertha는 City of Mondstadt의 Market District 구역에 있다.",
+       "interp": false,
        "dropped": false,
-       "t": "인력 부족과 자원의 여유가 맞물려, 헤르타가 도움을 받는 대신 보급품을 교환하는 구조로 보인다."
+       "t": "헤르타는 몬드성의 Market District 구역에 있다."
+      },
+      {
+       "t_raw": "Ematol은 Eastern Mondstadt City Teleport Waypoint 북서쪽, Hertha가 있는 곳으로 이어지는 계단 꼭대기의 가로등 옆에서 찾을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "애마톨은 Eastern Mondstadt City Teleport Waypoint 북서쪽, 헤르타가 있는 곳으로 이어지는 계단 꼭대기의 가로등 옆에서 찾을 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ematol",
+       "revision": 1860576,
+       "section": "Location",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Market District",
+      "Eastern Mondstadt City Teleport Waypoint"
+     ]
+    },
+    {
+     "section": "업무와 역할",
+     "status": "accepted",
+     "note": "Supported by the dialogue lines A23, A24 and Q3 and the idle quote A9.",
+     "quote": "My work mostly includes the charter and administration of our baggage train, resource management and record-keeping.",
+     "sentences": [
+      {
+       "t_raw": "Hertha는 Knights of Favonius의 **6th Company**를 맡은 대장으로, 이 부대는 보급을 담당한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤르타는 페보니우스 기사단의 **6th Company**를 맡은 대장으로, 이 부대는 보급을 담당한다.",
+       "polish": {
+        "from": "헤르타는 페보니우스 기사단의 **6th Company**를 맡은 대장으로, 이 부대는 보급을 담당한다.",
+        "text": "헤르타는 페보니우스 기사단의 **6th Company**를 맡은 대장으로, 이 부대는 보급을 담당한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그녀의 업무는 주로 수송대의 편성과 관리, 자원 관리, 기록 보관이며, 보급품 이송은 보고해야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀의 업무는 주로 수송대의 편성과 관리, 자원 관리, 기록 보관이며, 보급품 이송은 보고해야 한다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Dialogue",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Knight of the Realm",
+       "quest_ko": "몬드성의 기사",
+       "version": "1.1",
+       "speaker": "Hertha"
+      },
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Dialogue",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Knight of the Realm",
+       "quest_ko": "몬드성의 기사",
+       "version": "1.1",
+       "speaker": "Hertha"
+      },
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Idle Quotes",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "업무와 역할",
+     "latin_left": [
+      "Company"
+     ]
+    },
+    {
+     "section": "업무와 역할",
+     "status": "accepted",
+     "note": "Supported by dialogue A25-A27 and M5.",
+     "quote": "I'm taking all comers who have experience in solving problems. With any luck, we'll take some of the burden off our Acting Grand Master's shoulders.",
+     "sentences": [
+      {
+       "t_raw": "Mondstadt는 Grand Master가 많은 인력을 데리고 떠난 뒤로 늘 일손이 부족하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드는 대단장이 많은 인력을 데리고 떠난 뒤로 늘 일손이 부족하다."
+      },
+      {
+       "t_raw": "Hertha는 남는 재고를 조금의 도움과 맞바꿀 의향이 있으며, 문제 해결 경험이 있는 사람이라면 누구든 받아 Acting Grand Master의 부담을 덜고자 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤르타는 남는 재고를 조금의 도움과 맞바꿀 의향이 있으며, 문제 해결 경험이 있는 사람이라면 누구든 받아 대리 단장의 부담을 덜고자 한다."
+      },
+      {
+       "t_raw": "6th Company는 위험한 몬스터나 시민의 문제 같은 잠재적 임무를 위해 도움을 모으고, 그 대가로 잉여 자원을 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "6th Company는 위험한 몬스터나 시민의 문제 같은 잠재적 임무를 위해 도움을 모으고, 그 대가로 잉여 자원을 준다.",
+       "polish": {
+        "from": "6th Company는 위험한 몬스터나 시민의 문제 같은 잠재적 임무를 위해 도움을 모으고, 그 대가로 잉여 자원을 준다.",
+        "text": "6th Company는 위험한 몬스터나 시민의 문제 같은 잠재적 임무를 위해 도움을 모으고, 그 대가로 잉여 자원을 준다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -259,6 +418,46 @@
       },
       {
        "kind": "wiki",
+       "page": "Knights of Favonius",
+       "revision": 2052504,
+       "section": "Companies > 6th Company, Logistics",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "업무와 역할",
+     "latin_left": [
+      "Company"
+     ]
+    },
+    {
+     "section": "업무와 역할",
+     "status": "accepted",
+     "note": "All sentences supported.",
+     "quote": "But first, you need to earn everyone's trust. So how about starting from a few small errands for the citizenry?",
+     "sentences": [
+      {
+       "t_raw": "새로 온 사람에게 Hertha는 먼저 시민을 위한 작은 심부름으로 모두의 신뢰를 얻으라고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "새로 온 사람에게 헤르타는 먼저 시민을 위한 작은 심부름으로 모두의 신뢰를 얻으라고 권한다."
+      },
+      {
+       "t_raw": "Mondstadt에서 평판을 쌓으면 길이 열릴 것이라고 말하며, 실제로 그녀가 주는 Knight of the Realm은 Mondstadt의 Reputation 메뉴를 열어 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드에서 평판을 쌓으면 길이 열릴 것이라고 말하며, 실제로 그녀가 주는 몬드성의 기사는 몬드의 평판 메뉴를 열어 준다."
+      },
+      {
+       "t_raw": "최근에도 일손이 부족하다며 도움을 청하는 태도는 이런 충원이 **작은 심부름과 평판**을 거치게 하는 방식과 맞물린다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "최근에도 일손이 부족하다며 도움을 청하는 태도는 이런 충원이 **작은 심부름과 평판**을 거치게 하는 방식과 맞물린다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
        "page": "Hertha",
        "revision": 2041301,
        "section": "Dialogue",
@@ -267,56 +466,18 @@
       },
       {
        "kind": "wiki",
-       "page": "Knights of Favonius",
-       "revision": 2052504,
-       "section": "Companies > 6th Company, Logistics",
-       "paragraph": "M5",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Dialogue",
+       "paragraph": "A30",
        "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "Company"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I'm Hertha, Captain of the Knights of Favonius' 6th Company.",
-     "sentences": [
-      {
-       "t_raw": "Hertha는 Knights of Favonius의 6th Company를 이끄는 **Captain이자 Coordinator**다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헤르타는 페보니우스 기사단의 6th Company를 이끄는 **대장이자 Coordinator**다."
       },
-      {
-       "t_raw": "본인은 자신을 6th Company의 Captain으로 소개하고, 6th Company는 **병참**을 맡아 수송대의 허가와 관리, 자원 관리, 기록 보관을 담당한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "본인은 자신을 6th Company의 대장으로 소개하고, 6th Company는 **병참**을 맡아 수송대의 허가와 관리, 자원 관리, 기록 보관을 담당한다."
-      },
-      {
-       "t_raw": "Hertha도 같은 업무 범위를 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헤르타도 같은 업무 범위를 말한다."
-      },
-      {
-       "t_raw": "6th Company는 위험한 몬스터나 시민의 문제 같은 잠재적 임무에 대비해 남는 자원을 대가로 도움을 모은다.",
-       "interp": false,
-       "dropped": false,
-       "t": "6th Company는 위험한 몬스터나 시민의 문제 같은 잠재적 임무에 대비해 남는 자원을 대가로 도움을 모은다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Hertha",
        "revision": 2041301,
-       "section": "Profile",
-       "paragraph": "A3",
+       "section": null,
+       "paragraph": "A2",
        "wiki_refs": []
       },
       {
@@ -324,90 +485,36 @@
        "page": "Hertha",
        "revision": 2041301,
        "section": "Dialogue",
-       "paragraph": "A23",
+       "paragraph": "A16",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Knights of Favonius",
-       "revision": 2052504,
-       "section": "Personnel > Leadership",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Knights of Favonius",
-       "revision": 2052504,
-       "section": "Companies > 6th Company, Logistics",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Knight of the Realm",
-       "quest_ko": "몬드성의 기사",
-       "version": "1.1",
-       "speaker": "Hertha"
-      },
-      {
-       "kind": "quest",
-       "quest": "Knight of the Realm",
-       "quest_ko": "몬드성의 기사",
-       "version": "1.1",
-       "speaker": "Hertha"
       }
      ],
-     "heading": "정체와 배경",
-     "latin_left": [
-      "Company",
-      "Coordinator",
-      "Company",
-      "Company",
-      "Company"
-     ]
+     "heading": "업무와 역할",
+     "latin_left": []
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "At the same time, our inventory is running a surplus to match... So I'm more than willing to exchange some of it for a little hand here and there.",
+     "section": "작중 행적 — Mondstadt와 Of Ballads and Brews",
+     "status": "accepted",
+     "note": "All sentences supported.",
+     "quote": "If only you were an official Knight. We could definitely use more able hands like yours.",
      "sentences": [
       {
-       "t_raw": "Hertha의 배경에는 인원 부족이 있다.",
+       "t_raw": "Hertha는 최근 또 일손이 부족하다며 도움을 청하고, 한동안 만나지 못했다는 듯 인사를 건넨 뒤 또 일을 도와주러 왔느냐고 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "헤르타의 배경에는 인원 부족이 있다."
+       "t": "헤르타는 최근 또 일손이 부족하다며 도움을 청하고, 한동안 만나지 못했다는 듯 인사를 건넨 뒤 또 일을 도와주러 왔느냐고 묻는다."
       },
       {
-       "t_raw": "Grand Master가 많은 인력을 데리고 떠난 뒤 Mondstadt는 계속 일손이 모자라, 그녀는 오랜만이라며 일을 도와줄 수 있느냐고 묻는다.",
+       "t_raw": "공식 기사라면 쓸 만한 손이 더 필요하다고 말하고, 도시에서 평판을 쌓으면 길이 열릴 것이라고 권한다.",
        "interp": false,
        "dropped": false,
-       "t": "대단장이 많은 인력을 데리고 떠난 뒤 몬드는 계속 일손이 모자라, 그녀는 오랜만이라며 일을 도와줄 수 있느냐고 묻는다."
+       "t": "공식 기사라면 쓸 만한 손이 더 필요하다고 말하고, 도시에서 평판을 쌓으면 길이 열릴 것이라고 권한다."
       },
       {
-       "t_raw": "재고는 남아도는 쪽이라, 그녀는 남는 자원을 조금의 일손과 맞바꾸려 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "재고는 남아도는 쪽이라, 그녀는 남는 자원을 조금의 일손과 맞바꾸려 한다."
-      },
-      {
-       "t_raw": "그녀는 공식 기사가 아닌 이를 아쉬워하면서도 쓸 만한 일손이 더 있으면 좋겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 공식 기사가 아닌 이를 아쉬워하면서도 쓸 만한 일손이 더 있으면 좋겠다고 말한다."
-      },
-      {
-       "t_raw": "도시에서 평판을 쌓으면 길이 열릴 것이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "도시에서 평판을 쌓으면 길이 열릴 것이라고 말한다."
-      },
-      {
-       "t_raw": "이렇게 보면 평판은 명성에 머물지 않고 **인력 확보**와 보급 교환으로 이어지는 실무적 통로로 보인다.",
+       "t_raw": "되풀이되는 도움 요청과 평판 권유를 함께 보면, Hertha에게 **Mondstadt 평판**은 부족한 일손을 확보하는 통로로 운용되는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이렇게 보면 평판은 명성에 머물지 않고 **인력 확보**와 보급 교환으로 이어지는 실무적 통로로 보인다."
+       "t": "되풀이되는 도움 요청과 평판 권유를 함께 보면, 헤르타에게 **몬드 평판**은 부족한 일손을 확보하는 통로로 운용되는 셈이다."
       }
      ],
      "sources": [
@@ -440,818 +547,42 @@
        "page": "Hertha",
        "revision": 2041301,
        "section": "Dialogue",
-       "paragraph": "A25",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A26",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
        "paragraph": "A30",
        "wiki_refs": []
       }
      ],
-     "heading": "정체와 배경",
+     "heading": "작중 행적 — 몬드와 잔 속에서 울리는 노래",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Mondstadt의 평판과 보급",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hertha: At the same time, our inventory is running a surplus to match... So I'm more than willing to exchange some of it for a little hand here and there.",
-     "sentences": [
-      {
-       "t_raw": "Hertha는 Knights of Favonius' 6th Company의 Captain으로서 물류 업무를 맡는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헤르타는 페보니우스 기사단' 6th Company의 대장으로서 물류 업무를 맡는다."
-      },
-      {
-       "t_raw": "그녀가 주는 World Quest Knight of the Realm은 Mondstadt의 평판 메뉴를 연다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀가 주는 월드 임무 몬드성의 기사는 몬드의 평판 메뉴를 연다."
-      },
-      {
-       "t_raw": "Grand Master가 많은 인력을 데려간 뒤 Knights는 constant state of short-handedness에 놓였고, 그에 맞춰 inventory는 surplus를 안고 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대단장이 많은 인력을 데려간 뒤 기사단은 constant state of short-handedness에 놓였고, 그에 맞춰 inventory는 surplus를 안고 있다."
-      },
-      {
-       "t_raw": "Hertha는 잉여 물자를 문제 해결 경험이 있는 지원자들의 손과 맞바꾸려 하며, 그들로 Acting Grand Master의 부담을 덜고자 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헤르타는 잉여 물자를 문제 해결 경험이 있는 지원자들의 손과 맞바꾸려 하며, 그들로 대리 단장의 부담을 덜고자 한다."
-      },
-      {
-       "t_raw": "6th Company도 위험한 몬스터나 시민의 troubles를 해결하는 potential missions에 도움을 모으고 그 대가로 surplus resources를 내놓는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "6th Company도 위험한 몬스터나 시민의 troubles를 해결하는 potential missions에 도움을 모으고 그 대가로 surplus resources를 내놓는다."
-      },
-      {
-       "t_raw": "이처럼 인력 부족과 물자 잉여가 맞물려 평판 사업이 **보급품 교환**으로 이어지는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이처럼 인력 부족과 물자 잉여가 맞물려 평판 사업이 **보급품 교환**으로 이어지는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A23",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A25",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A26",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A27",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Knights of Favonius",
-       "revision": 2052504,
-       "section": "Companies > 6th Company, Logistics",
-       "paragraph": "M5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 몬드의 평판과 보급",
-     "latin_left": [
-      "Company",
-      "Company"
-     ]
-    },
-    {
-     "section": "작중 행적 — Mondstadt의 평판과 보급",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hertha: But first, you need to earn everyone's trust. So how about starting from a few small errands for the citizenry?",
-     "sentences": [
-      {
-       "t_raw": "평판 대화에서 Hertha는 인력이 또 부족해졌다며 도움을 청하고, 공식 기사였다면 유능한 손을 더 쓸 수 있었을 것이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "평판 대화에서 헤르타는 인력이 또 부족해졌다며 도움을 청하고, 공식 기사였다면 유능한 손을 더 쓸 수 있었을 것이라고 말한다."
-      },
-      {
-       "t_raw": "그러면서 먼저 모두의 신뢰를 얻으라고 권하고, 시민을 위한 **작은 심부름**부터 시작하라고 제안한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러면서 먼저 모두의 신뢰를 얻으라고 권하고, 시민을 위한 **작은 심부름**부터 시작하라고 제안한다."
-      },
-      {
-       "t_raw": "평판을 쌓아야 길이 열릴 것이라고 말하며, “How's my reputation in Mondstadt?”라는 물음은 Mondstadt 평판 메뉴를 연다.",
-       "interp": false,
-       "dropped": false,
-       "t": "평판을 쌓아야 길이 열릴 것이라고 말하며, “How의 my reputation in 몬드?”라는 물음은 몬드 평판 메뉴를 연다."
-      },
-      {
-       "t_raw": "이는 Hertha가 도움을 받기 전에 신뢰와 평판을 먼저 쌓게 하는 방식으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 헤르타가 도움을 받기 전에 신뢰와 평판을 먼저 쌓게 하는 방식으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A16",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A19",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A28",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A30",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A20",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A21",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 몬드의 평판과 보급",
-     "latin_left": [
-      "How"
-     ]
-    },
-    {
-     "section": "작중 행적 — Mondstadt의 평판과 보급",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hertha: However, Elzer invited me to collaborate and he helped us solve a lot of our financial problems.",
-     "sentences": [
-      {
-       "t_raw": "Elzer는 Mondstadt Wine Guild의 executive chairman이며, Knights of Favonius는 Church of Favonius, Adventurers' Guild와 함께 Wine Market을 열면서 special budget을 필요로 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "엘저는 몬드 주류업 길드의 executive chairman이며, 페보니우스 기사단은 페보니우스 성당, 모험가 길드와 함께 Wine Market을 열면서 special budget을 필요로 한다."
-      },
-      {
-       "t_raw": "Elzer가 협력을 제안해 재정 문제를 많이 해결했고, Hertha는 그 지원이 한때 senior Knight였던 인물의 부탁에서 나온 것일 수 있다고 짐작한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "엘저가 협력을 제안해 재정 문제를 많이 해결했고, 헤르타는 그 지원이 한때 senior 기사였던 인물의 부탁에서 나온 것일 수 있다고 짐작한다."
-      },
-      {
-       "t_raw": "Diluc은 제기된 재정 문제를 Elzer가 Hertha와 더 자세히 후속 논의하게 하겠다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다이루크는 제기된 재정 문제를 엘저가 헤르타와 더 자세히 후속 논의하게 하겠다고 한다."
-      },
-      {
-       "t_raw": "Bernhard는 Captain Hertha 아래 Logistics Company 소속이라고 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "베른하르트는 대장 헤르타 아래 Logistics Company 소속이라고 밝힌다."
-      },
-      {
-       "t_raw": "이처럼 재정 지원과 현장 보급 인력이 Hertha를 통해 Mondstadt 운영에 맞물리는 구조로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이처럼 재정 지원과 현장 보급 인력이 헤르타를 통해 몬드 운영에 맞물리는 구조로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Event Dialogue > Of Ballads and Brews",
-       "paragraph": "A34",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Event Dialogue > Of Ballads and Brews",
-       "paragraph": "A35",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Event Dialogue > Of Ballads and Brews",
-       "paragraph": "A36",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Event Dialogue > Of Ballads and Brews",
-       "paragraph": "A37",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Bonds of Melody (Quest)",
-       "quest_ko": "노래로 엮인 인연",
-       "version": "3.1",
-       "speaker": "Diluc"
-      },
-      {
-       "kind": "quest",
-       "quest": "Charity Event? Securing Funds?",
-       "quest_ko": "자선 판매 행사? 자금 준비?",
-       "version": "3.1",
-       "speaker": "Bernhard"
-      }
-     ],
-     "heading": "작중 행적 — 몬드의 평판과 보급",
-     "latin_left": [
-      "Wine Market",
-      "Logistics Company"
-     ]
-    },
-    {
-     "section": "작중 행적 — 사라진 Captain과 대체자",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It didn't take long for the fake Hertha to appear on the Knights' patrol route, claiming to have \"survived her mission.\"",
-     "sentences": [
-      {
-       "t_raw": "Paralogism 사건 반년 전, Hertha는 작전에 자원했다가 **실종자로 처리**되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "배리의 순간 사건 반년 전, 헤르타는 작전에 자원했다가 **실종자로 처리**되었다."
-      },
-      {
-       "t_raw": "그러나 그 실종은 Durin의 에너지 변동을 눈치챈 동료 대장 Albedo가 Hertha를 숨기려고 계획한 것이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 그 실종은 두린의 에너지 변동을 눈치챈 동료 대장 알베도가 헤르타를 숨기려고 계획한 것이었다."
-      },
-      {
-       "t_raw": "Simulanka 사건 뒤 Durin의 심장이 Subject Two의 몸과 지식을 받아들이자, Durin의 잔해는 Hertha의 대체자를 만들어 다른 괴물들의 핵심으로 세웠다.",
-       "interp": false,
-       "dropped": false,
-       "t": "시뮬랑카 사건 뒤 두린의 심장이 2호의 몸과 지식을 받아들이자, 두린의 잔해는 헤르타의 대체자를 만들어 다른 괴물들의 핵심으로 세웠다."
-      },
-      {
-       "t_raw": "대체자는 임무에서 살아남았다고 주장하며 Knights of Favonius의 순찰로에 나타났고, Albedo는 그것이 조직에 침투하도록 두어 방심하게 만들었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대체자는 임무에서 살아남았다고 주장하며 페보니우스 기사단의 순찰로에 나타났고, 알베도는 그것이 조직에 침투하도록 두어 방심하게 만들었다."
-      },
-      {
-       "t_raw": "그 실종은 대체자를 조직 안으로 끌어들이는 계기가 되었던 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그 실종은 대체자를 조직 안으로 끌어들이는 계기가 되었던 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Profile",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Crimes One and Two"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Albedo/Storyline",
-       "revision": 2049028,
-       "section": "History > Present",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Paralogism"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Durin (NPC)",
-       "revision": 2044578,
-       "section": "Story > Legacy",
-       "paragraph": "M6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Paralogism"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "The Hunger of Many",
-       "quest_ko": "중생의 갈망",
-       "version": "5.6",
-       "speaker": "Albedo"
-      }
-     ],
-     "heading": "작중 행적 — 사라진 대장과 대체자",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — 사라진 Captain과 대체자",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Miss Hertha, you've presented a meticulous and convincing case, I'll give you that. But, I will not admit to something I didn't do.",
-     "sentences": [
-      {
-       "t_raw": "Traveler가 Windblume Festival을 맞아 돌아왔을 때, 대체자는 Albedo의 재판에서 **검사**로 나섰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자가 윈드블룸 축제를 맞아 돌아왔을 때, 대체자는 알베도의 재판에서 **검사**로 나섰다."
-      },
-      {
-       "t_raw": "Jean은 Hertha가 검사를 대표하고 Kaeya가 변호를 맡는다고 밝혔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "진은 헤르타가 검사를 대표하고 케이아가 변호를 맡는다고 밝혔다."
-      },
-      {
-       "t_raw": "대체자는 칠일 전 새벽에 피고인이 Dragonspine과 Dawn Winery 사이에서 성인 남성의 시신을 처리하는 것을 목격했다는 증언을 제시하고, 보고서의 길이가 알리바이로 충분하지 않다고 주장했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대체자는 칠일 전 새벽에 피고인이 드래곤 스파인과 다운 와이너리 사이에서 성인 남성의 시신을 처리하는 것을 목격했다는 증언을 제시하고, 보고서의 길이가 알리바이로 충분하지 않다고 주장했다."
-      },
-      {
-       "t_raw": "Albedo는 그런 Hertha의 사건 구성이 치밀하고 설득력 있다고 인정하면서도 자신이 하지 않은 일을 인정하지 않겠다고 맞섰고, Hertha가 달리 믿더라도 자신은 단 한 사람도 죽이지 않았다고 말했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "알베도는 그런 헤르타의 사건 구성이 치밀하고 설득력 있다고 인정하면서도 자신이 하지 않은 일을 인정하지 않겠다고 맞섰고, 헤르타가 달리 믿더라도 자신은 단 한 사람도 죽이지 않았다고 말했다."
-      },
-      {
-       "t_raw": "대체자가 쌓은 신뢰는 Albedo가 일부러 기다려준 결과였던 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "대체자가 쌓은 신뢰는 알베도가 일부러 기다려준 결과였던 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Profile",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Crimes One and Two"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Crimes One and Two",
-       "quest_ko": "첫 번째 범행과 두 번째 범행",
-       "version": "5.6",
-       "speaker": "Hertha"
-      },
-      {
-       "kind": "quest",
-       "quest": "Crimes One and Two",
-       "quest_ko": "첫 번째 범행과 두 번째 범행",
-       "version": "5.6",
-       "speaker": "Hertha"
-      },
-      {
-       "kind": "quest",
-       "quest": "Crimes One and Two",
-       "quest_ko": "첫 번째 범행과 두 번째 범행",
-       "version": "5.6",
-       "speaker": "Albedo"
-      },
-      {
-       "kind": "quest",
-       "quest": "Crimes One and Two",
-       "quest_ko": "첫 번째 범행과 두 번째 범행",
-       "version": "5.6",
-       "speaker": "Jean"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Hunger of Many",
-       "quest_ko": "중생의 갈망",
-       "version": "5.6",
-       "speaker": "Albedo"
-      }
-     ],
-     "heading": "작중 행적 — 사라진 대장과 대체자",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — 사라진 Captain과 대체자",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Upon being confronted, the core of these corrupted monsters attempted to flee while others besieged the city, only to be repulsed.",
-     "sentences": [
-      {
-       "t_raw": "재판이 **재심**으로 이어지자 진짜 Hertha가 모습을 드러냈고, 대체자는 Albedo의 계획을 알지 못한 채 함정에 빠졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "재판이 **재심**으로 이어지자 진짜 헤르타가 모습을 드러냈고, 대체자는 알베도의 계획을 알지 못한 채 함정에 빠졌다."
-      },
-      {
-       "t_raw": "대체자가 추궁당하자 그 핵심은 도주하려 했고 다른 괴물들은 도시를 포위했으나 격퇴되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대체자가 추궁당하자 그 핵심은 도주하려 했고 다른 괴물들은 도시를 포위했으나 격퇴되었다."
-      },
-      {
-       "t_raw": "Albedo는 Durin을 완전히 되살리는 일을 걱정해 Durin의 생명을 끝내기로 했고, Hexenzirkel에서 얻은 재료로 Durin의 핵심 에너지를 빼내 Mini Durin으로 대체하는 의식을 성공시켰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "알베도는 두린을 완전히 되살리는 일을 걱정해 두린의 생명을 끝내기로 했고, 마녀회에서 얻은 재료로 두린의 핵심 에너지를 빼내 꼬마 두린으로 대체하는 의식을 성공시켰다."
-      },
-      {
-       "t_raw": "진짜 Hertha의 재심 등장으로 대체자의 신뢰는 뒤집혔고, 그 구도는 Albedo가 노린 방심의 끝이었던 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "진짜 헤르타의 재심 등장으로 대체자의 신뢰는 뒤집혔고, 그 구도는 알베도가 노린 방심의 끝이었던 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Profile",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Crimes One and Two"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Durin (NPC)",
-       "revision": 2044578,
-       "section": "Story > Legacy",
-       "paragraph": "M6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Paralogism"
-        }
-       ]
-      }
-     ],
-     "heading": "작중 행적 — 사라진 대장과 대체자",
-     "latin_left": []
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Transfers of supplies must be reported.",
-     "sentences": [
-      {
-       "t_raw": "Hertha는 Knights of Favonius의 6th Company를 이끌며 **보급·자원 관리**와 기록 보관, 수송대의 인가와 관리를 맡는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헤르타는 페보니우스 기사단의 6th Company를 이끌며 **보급·자원 관리**와 기록 보관, 수송대의 인가와 관리를 맡는다."
-      },
-      {
-       "t_raw": "그녀는 보급품 이전이 보고되어야 한다고 말하고, 6th Company는 위험한 몬스터나 Mondstadt 시민의 문제 같은 잠재 임무를 위해 인력을 모아 잉여 자원과 맞바꾼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 보급품 이전이 보고되어야 한다고 말하고, 6th Company는 위험한 몬스터나 몬드 시민의 문제 같은 잠재 임무를 위해 인력을 모아 잉여 자원과 맞바꾼다."
-      },
-      {
-       "t_raw": "인력이 모자란 상황에서도 문제 해결 경험이 있는 사람을 가리지 않고 받아들이려는 태도는 **인력 확보**를 보급 운영의 일부로 삼는 모습으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "인력이 모자란 상황에서도 문제 해결 경험이 있는 사람을 가리지 않고 받아들이려는 태도는 **인력 확보**를 보급 운영의 일부로 삼는 모습으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Profile",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Idle Quotes",
-       "paragraph": "A9",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A16",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A26",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Dialogue",
-       "paragraph": "A27",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Knights of Favonius",
-       "revision": 2052504,
-       "section": "Companies > 6th Company, Logistics",
-       "paragraph": "M5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "능력",
-     "latin_left": [
-      "Company",
-      "Company"
-     ]
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "All units are now in position.",
-     "sentences": [
-      {
-       "t_raw": "재판에서 Hertha는 증인의 증언을 요구하고, 보고의 길이만으로는 충분한 알리바이가 되지 않는다고 짚는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "재판에서 헤르타는 증인의 증언을 요구하고, 보고의 길이만으로는 충분한 알리바이가 되지 않는다고 짚는다."
-      },
-      {
-       "t_raw": "다른 장면에서는 자기 대열 안에 정보원이 있다고 말하고, 모든 부대가 위치에 도착했음을 확인한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다른 장면에서는 자기 대열 안에 정보원이 있다고 말하고, 모든 부대가 위치에 도착했음을 확인한다."
-      },
-      {
-       "t_raw": "증인 심문과 부대 배치 확인을 함께 보면, 그녀의 실무 역량은 **수사와 지휘**의 장면에서도 드러난다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "증인 심문과 부대 배치 확인을 함께 보면, 그녀의 실무 역량은 **수사와 지휘**의 장면에서도 드러난다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Hunger of Many",
-       "quest_ko": "중생의 갈망",
-       "version": "5.6",
-       "speaker": "Hertha"
-      },
-      {
-       "kind": "quest",
-       "quest": "Crimes One and Two",
-       "quest_ko": "첫 번째 범행과 두 번째 범행",
-       "version": "5.6",
-       "speaker": "Hertha"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Hunger of Many",
-       "quest_ko": "중생의 갈망",
-       "version": "5.6",
-       "speaker": "Hertha"
-      },
-      {
-       "kind": "quest",
-       "quest": "Crimes One and Two",
-       "quest_ko": "첫 번째 범행과 두 번째 범행",
-       "version": "5.6",
-       "speaker": "Hertha"
-      },
-      {
-       "kind": "quest",
-       "quest": "Crimes One and Two",
-       "quest_ko": "첫 번째 범행과 두 번째 범행",
-       "version": "5.6",
-       "speaker": "Hertha"
-      }
-     ],
-     "heading": "능력",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "In reality, her disappearance was planned by fellow captain Albedo, who noticed unusual fluctuations of energy from Durin.",
-     "sentences": [
-      {
-       "t_raw": "Hertha는 6th Company의 Captain으로서 Miles, Eula 등 여러 기사와 함께한 전투에서 왼팔뚝에 큰 흉터를 남겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헤르타는 6th Company의 대장으로서 마일스, 유라 등 여러 기사와 함께한 전투에서 왼팔뚝에 큰 흉터를 남겼다."
-      },
-      {
-       "t_raw": "Albedo는 Durin의 몬스터들을 다루기 위한 계획을 세웠고, 동료 Captain인 Hertha의 실종은 Durin의 비정상적인 에너지 변동을 알아차린 그 계획의 일부였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "알베도는 두린의 몬스터들을 다루기 위한 계획을 세웠고, 동료 대장인 헤르타의 실종은 두린의 비정상적인 에너지 변동을 알아차린 그 계획의 일부였다."
-      },
-      {
-       "t_raw": "Durin의 잔해가 만든 대체자는 다른 Knights의 신뢰를 조금씩 얻었고, Windblume Festival 무렵 Albedo의 재판에서 검사 역할을 맡았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "두린의 잔해가 만든 대체자는 다른 기사단의 신뢰를 조금씩 얻었고, 윈드블룸 축제 무렵 알베도의 재판에서 검사 역할을 맡았다."
-      },
-      {
-       "t_raw": "Jean은 Hertha가 검찰 측을, Kaeya가 변호 측을 맡는다고 알렸으며, Albedo는 대체 Hertha가 자신들이 그녀를 신뢰한다고 믿게 만들 만큼 충분히 기다려야 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "진은 헤르타가 검찰 측을, 케이아가 변호 측을 맡는다고 알렸으며, 알베도는 대체 헤르타가 자신들이 그녀를 신뢰한다고 믿게 만들 만큼 충분히 기다려야 했다."
-      },
-      {
-       "t_raw": "대체자에게 신뢰를 심어 주려는 기다림과 재판의 검사 역할이 겹치는 대목은 **Albedo의 계획**이 Hertha의 실종을 대체자의 방심 유도와 노출에 연결한 장치로 보이게 한다.",
-       "interp": true,
-       "dropped": false,
-       "t": "대체자에게 신뢰를 심어 주려는 기다림과 재판의 검사 역할이 겹치는 대목은 **알베도의 계획**이 헤르타의 실종을 대체자의 방심 유도와 노출에 연결한 장치로 보이게 한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Profile",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Profile",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Crimes One and Two"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Albedo/Storyline",
-       "revision": 2049028,
-       "section": "History > Present",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Paralogism"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Crimes One and Two",
-       "quest_ko": "첫 번째 범행과 두 번째 범행",
-       "version": "5.6",
-       "speaker": "Jean"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Hunger of Many",
-       "quest_ko": "중생의 갈망",
-       "version": "5.6",
-       "speaker": "Albedo"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Company"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Mondstadt와 Of Ballads and Brews",
+     "status": "accepted",
+     "note": "All sentences supported; the interpretation is reasonable.",
      "quote": "However, Elzer invited me to collaborate and he helped us solve a lot of our financial problems.",
      "sentences": [
       {
-       "t_raw": "Elzer는 **Mondstadt Wine Guild**의 executive chairman이며, Hertha는 Elzer가 Dawn Winery에서 자신을 만나러 온 일에 놀라워했다.",
+       "t_raw": "Hertha는 Elzer가 Dawn Winery에서 자신을 보러 왔다고 말하며, Elzer가 Mondstadt Wine Guild의 집행 위원장이라고 설명한다.",
        "interp": false,
        "dropped": false,
-       "t": "엘저는 **몬드 주류업 길드**의 executive chairman이며, 헤르타는 엘저가 다운 와이너리에서 자신을 만나러 온 일에 놀라워했다."
+       "t": "헤르타는 엘저가 다운 와이너리에서 자신을 보러 왔다고 말하며, 엘저가 몬드 주류업 길드의 집행 위원장이라고 설명한다."
       },
       {
-       "t_raw": "이 해 Knights of Favonius는 Church of Favonius, Adventurers' Guild와 함께 Wine Market을 열며 특별 예산이 필요했고, Elzer는 Hertha에게 협력을 제안해 재정 문제를 많이 해결해 주었다.",
+       "t_raw": "Knights of Favonius가 Church of Favonius, Adventurers' Guild와 함께 **Wine Market**을 주최하며 특별 예산이 필요했지만, **Elzer**가 협력을 제안해 재정 문제를 많이 해결해 주었다.",
        "interp": false,
        "dropped": false,
-       "t": "이 해 페보니우스 기사단은 페보니우스 성당, 모험가 길드와 함께 Wine Market을 열며 특별 예산이 필요했고, 엘저는 헤르타에게 협력을 제안해 재정 문제를 많이 해결해 주었다."
+       "t": "페보니우스 기사단이 페보니우스 성당, 모험가 길드와 함께 **Wine Market**을 주최하며 특별 예산이 필요했지만, **엘저**가 협력을 제안해 재정 문제를 많이 해결해 주었다."
       },
       {
-       "t_raw": "Hertha는 그 지원금이 한때 senior Knight of Favonius였던 인물의 요청으로 나온 것 같다고 추측했다.",
+       "t_raw": "Hertha는 그 지원이 한때 Knights of Favonius에서 선임 기사였던 인물의 요청으로 온 것 같다고 추측하고, Diluc는 Elzer가 Hertha와 더 자세히 후속 논의를 하게 하겠다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "헤르타는 그 지원금이 한때 senior 페보니우스 기사였던 인물의 요청으로 나온 것 같다고 추측했다."
+       "t": "헤르타는 그 지원이 한때 페보니우스 기사단에서 선임 기사였던 인물의 요청으로 온 것 같다고 추측하고, 다이루크는 엘저가 헤르타와 더 자세히 후속 논의를 하게 하겠다고 말한다."
       },
       {
-       "t_raw": "Diluc는 Hertha가 제기한 재정 문제를 받아들여 Elzer가 Hertha와 더 자세히 후속 논의를 하게 하겠다고 말했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다이루크는 헤르타가 제기한 재정 문제를 받아들여 엘저가 헤르타와 더 자세히 후속 논의를 하게 하겠다고 말했다."
-      },
-      {
-       "t_raw": "Wine Market의 예산 문제가 Hertha와 Elzer의 협력, Diluc의 후속 지시로 이어지는 장면은 기사단과 Wine Guild 사이의 실무 협력 사례로 보인다.",
+       "t_raw": "Elzer가 Dawn Winery에서 왔다는 점과 Diluc의 후속 논의 발언을 함께 보면, 이 자금 문제에는 Dawn Winery 쪽 인맥이 관여한 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "Wine Market의 예산 문제가 헤르타와 엘저의 협력, 다이루크의 후속 지시로 이어지는 장면은 기사단과 Wine Guild 사이의 실무 협력 사례로 보인다."
+       "t": "엘저가 다운 와이너리에서 왔다는 점과 다이루크의 후속 논의 발언을 함께 보면, 이 자금 문제에는 다운 와이너리 쪽 인맥이 관여한 것으로 보인다."
       }
      ],
      "sources": [
@@ -1303,106 +634,40 @@
        "speaker": "Diluc"
       }
      ],
-     "heading": "인간관계",
+     "heading": "작중 행적 — 몬드와 잔 속에서 울리는 노래",
      "latin_left": [
-      "Wine Market",
-      "Wine Market",
-      "Wine Guild"
+      "Wine Market"
      ]
     },
     {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Setting up tents, lighting fires for cooking, repairing equipment... Even Hertha, the logistics captain, has nothing but praise for Mika's excellent efficiency.",
+     "section": "작중 행적 — Paralogism과 대체 Hertha",
+     "status": "accepted",
+     "note": "All sentences supported by A4 and M1.",
+     "quote": "Durin's remains, which had absorbed the knowledge from Subject Two, created a replacement Hertha",
      "sentences": [
       {
-       "t_raw": "Hertha는 6th Company의 Captain으로서 baggage train의 charter와 administration, resource management, record-keeping을 맡는다.",
+       "t_raw": "Paralogism보다 반년 앞서 Hertha는 한 작전에 자원했고, 그 결과 실종으로 기록되었다.",
        "interp": false,
        "dropped": false,
-       "t": "헤르타는 6th Company의 대장으로서 baggage train의 charter와 administration, resource management, record-keeping을 맡는다."
+       "t": "배리의 순간보다 반년 앞서 헤르타는 한 작전에 자원했고, 그 결과 실종으로 기록되었다."
       },
       {
-       "t_raw": "Mika는 텐트를 세우고 요리용 불을 피우며 장비를 수리하는 일에서 뛰어난 효율성을 보여 Hertha의 칭찬을 받았다.",
+       "t_raw": "Albedo는 예언에 대비해 Durin의 괴물들을 다룰 계획을 세우기 시작했고, Durin에게서 평소와 다른 에너지의 출렁임을 알아차려 Hertha의 실종을 계획했다.",
        "interp": false,
        "dropped": false,
-       "t": "미카는 텐트를 세우고 요리용 불을 피우며 장비를 수리하는 일에서 뛰어난 효율성을 보여 헤르타의 칭찬을 받았다."
+       "t": "알베도는 예언에 대비해 두린의 괴물들을 다룰 계획을 세우기 시작했고, 두린에게서 평소와 다른 에너지의 출렁임을 알아차려 헤르타의 실종을 계획했다."
       },
       {
-       "t_raw": "Bernhard는 Captain Hertha 휘하의 Logistics Company 소속이라고 자신을 소개했다.",
+       "t_raw": "Durin의 잔해는 Subject Two의 지식을 흡수해 **대체 Hertha**를 만들고, 그녀를 Durin의 에너지에 영향받은 이들이나 괴물이 대신 행세한 이들의 \"핵심\"으로 삼았다.",
        "interp": false,
        "dropped": false,
-       "t": "베른하르트는 대장 헤르타 휘하의 Logistics Company 소속이라고 자신을 소개했다."
+       "t": "두린의 잔해는 2호의 지식을 흡수해 **대체 헤르타**를 만들고, 그녀를 두린의 에너지에 영향받은 이들이나 괴물이 대신 행세한 이들의 \"핵심\"으로 삼았다."
       },
       {
-       "t_raw": "Hertha가 Mika의 현장 효율을 칭찬하고 Bernhard가 Logistics Company 소속을 밝히는 점은 6th Company의 보급·기록 업무가 현장 작업의 효율과 조직 소속을 함께 챙기는 성격을 지녔음을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "헤르타가 미카의 현장 효율을 칭찬하고 베른하르트가 Logistics Company 소속을 밝히는 점은 6th Company의 보급·기록 업무가 현장 작업의 효율과 조직 소속을 함께 챙기는 성격을 지녔음을 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Profile",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mika/Profile",
-       "revision": 1044443,
-       "section": "Official Introduction",
-       "paragraph": "M4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Charity Event? Securing Funds?",
-       "quest_ko": "자선 판매 행사? 자금 준비?",
-       "version": "3.1",
-       "speaker": "Bernhard"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Company",
-      "Logistics Company",
-      "Logistics Company",
-      "Company"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Wait, but in that case, what's gonna happen to the fake Hertha? And what about the people who fell under Durin's influence?",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 **가짜 Hertha와 Durin의 영향에 빠진 사람들의 거취**를 묻는다.",
+       "t_raw": "이 대체 Hertha는 Albedo가 경계를 늦추고 정체를 드러내려 한다는 것을 모른 채 다른 Knights의 신뢰를 얻었다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 **가짜 헤르타와 두린의 영향에 빠진 사람들의 거취**를 묻는다."
-      },
-      {
-       "t_raw": "한 기록은 Hertha가 다시 사라지는 일을 어떻게 정했는지, 싸움 뒤에도 정리가 되지 않는다고 적는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한 기록은 헤르타가 다시 사라지는 일을 어떻게 정했는지, 싸움 뒤에도 정리가 되지 않는다고 적는다."
-      },
-      {
-       "t_raw": "Albedo는 가짜 Hertha가 신뢰받았다고 믿을 만큼 기다려야 했다고 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "알베도는 가짜 헤르타가 신뢰받았다고 믿을 만큼 기다려야 했다고 설명한다."
-      },
-      {
-       "t_raw": "계획과 결말이 드러난 뒤에도 대체자와 영향받은 이들의 뒷처리는 질문으로 남은 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "계획과 결말이 드러난 뒤에도 대체자와 영향받은 이들의 뒷처리는 질문으로 남은 셈이다."
+       "t": "이 대체 헤르타는 알베도가 경계를 늦추고 정체를 드러내려 한다는 것을 모른 채 다른 기사단의 신뢰를 얻었다."
       }
      ],
      "sources": [
@@ -1419,6 +684,450 @@
         }
        ]
       },
+      {
+       "kind": "wiki",
+       "page": "Albedo/Storyline",
+       "revision": 2049028,
+       "section": "History > Present",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Paralogism"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 배리의 순간과 대체 헤르타",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Paralogism과 대체 Hertha",
+     "status": "accepted",
+     "note": "All sentences supported by Q19, Q25 and A4.",
+     "quote": "So, we had to wait long enough to convince the fake Hertha that she had our trust.",
+     "sentences": [
+      {
+       "t_raw": "가짜 Hertha는 Knights의 순찰로에 나타나 자신이 \"임무에서 살아남았다\"고 주장했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가짜 헤르타는 기사단의 순찰로에 나타나 자신이 \"임무에서 살아남았다\"고 주장했다."
+      },
+      {
+       "t_raw": "Albedo는 그 가짜가 조직에 침투하는 것을 허용하고, 충분히 오래 기다려 자신들이 신뢰한다고 믿게 만들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알베도는 그 가짜가 조직에 침투하는 것을 허용하고, 충분히 오래 기다려 자신들이 신뢰한다고 믿게 만들었다."
+      },
+      {
+       "t_raw": "Albedo가 충분히 기다린 것은 가짜 Hertha의 경계를 늦춘 뒤 정체를 드러내기 위한 준비였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "알베도가 충분히 기다린 것은 가짜 헤르타의 경계를 늦춘 뒤 정체를 드러내기 위한 준비였던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Crimes One and Two"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Durin (NPC)",
+       "revision": 2044578,
+       "section": "Story > Legacy",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Paralogism"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Albedo"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Albedo"
+      }
+     ],
+     "heading": "작중 행적 — 배리의 순간과 대체 헤르타",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Paralogism과 대체 Hertha",
+     "status": "accepted",
+     "note": "All sentences supported by A4 and M6.",
+     "quote": "the imposter served as a prosecutor in Albedo's trial, only to fall into his trap as the real Hertha arrived during the retrial.",
+     "sentences": [
+      {
+       "t_raw": "Traveler가 Windblume Festival을 맞아 돌아오자, 가짜 Hertha는 Albedo의 재판에서 검사로 나섰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 윈드블룸 축제를 맞아 돌아오자, 가짜 헤르타는 알베도의 재판에서 검사로 나섰다."
+      },
+      {
+       "t_raw": "그러나 그 재판은 Albedo가 준비한 **함정**이었고, 재심리에서 진짜 Hertha가 도착하면서 가짜는 그 함정에 빠졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 그 재판은 알베도가 준비한 **함정**이었고, 재심리에서 진짜 헤르타가 도착하면서 가짜는 그 함정에 빠졌다."
+      },
+      {
+       "t_raw": "대질이 벌어지자 가짜의 핵심은 도주를 시도했고, 다른 괴물들은 도시를 포위했으나 격퇴되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대질이 벌어지자 가짜의 핵심은 도주를 시도했고, 다른 괴물들은 도시를 포위했으나 격퇴되었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Crimes One and Two"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Durin (NPC)",
+       "revision": 2044578,
+       "section": "Story > Legacy",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Paralogism"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 배리의 순간과 대체 헤르타",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Crimes One and Two",
+     "status": "accepted",
+     "note": "All sentences match Q24, Q1, Q10, Q4, Q7, Q13, Q15 and A4.",
+     "quote": "Miss Hertha represents the prosecution, and Mr. Kaeya speaks on behalf of the defense.",
+     "sentences": [
+      {
+       "t_raw": "Albedo 재판에서 Hertha의 모습을 한 사칭자가 검사로 나선다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알베도 재판에서 헤르타의 모습을 한 사칭자가 검사로 나선다."
+      },
+      {
+       "t_raw": "Jean은 Hertha가 검찰을 대표하고 Kaeya가 변호를 맡는다고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "진은 헤르타가 검찰을 대표하고 케이아가 변호를 맡는다고 소개한다."
+      },
+      {
+       "t_raw": "검사 측은 7일 전 새벽 증인이 피고인이 Dragonspine과 Dawn Winery 사이에서 성인 남성의 시신을 처리하는 것을 보았다고 주장하고 Beatrice를 증인석에 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "검사 측은 7일 전 새벽 증인이 피고인이 드래곤 스파인과 다운 와이너리 사이에서 성인 남성의 시신을 처리하는 것을 보았다고 주장하고 베아트리체를 증인석에 부른다."
+      },
+      {
+       "t_raw": "이어 같은 장소가 목격자의 설명과 같다면 범죄가 없었다는 것이 우연인지 묻고, 피고인의 사무실 근무를 입증할 사람이 있는지 캐묻고, 보고서 길이만으로는 알리바이가 충분하지 않다며 재판을 진행할 준비가 되었다고 알린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 같은 장소가 목격자의 설명과 같다면 범죄가 없었다는 것이 우연인지 묻고, 피고인의 사무실 근무를 입증할 사람이 있는지 캐묻고, 보고서 길이만으로는 알리바이가 충분하지 않다며 재판을 진행할 준비가 되었다고 알린다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Crimes One and Two"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Crimes One and Two",
+       "quest_ko": "첫 번째 범행과 두 번째 범행",
+       "version": "5.6",
+       "speaker": "Jean"
+      },
+      {
+       "kind": "quest",
+       "quest": "Crimes One and Two",
+       "quest_ko": "첫 번째 범행과 두 번째 범행",
+       "version": "5.6",
+       "speaker": "Hertha"
+      },
+      {
+       "kind": "quest",
+       "quest": "Crimes One and Two",
+       "quest_ko": "첫 번째 범행과 두 번째 범행",
+       "version": "5.6",
+       "speaker": "Hertha"
+      },
+      {
+       "kind": "quest",
+       "quest": "Crimes One and Two",
+       "quest_ko": "첫 번째 범행과 두 번째 범행",
+       "version": "5.6",
+       "speaker": "Hertha"
+      },
+      {
+       "kind": "quest",
+       "quest": "Crimes One and Two",
+       "quest_ko": "첫 번째 범행과 두 번째 범행",
+       "version": "5.6",
+       "speaker": "Hertha"
+      }
+     ],
+     "heading": "작중 행적 — 첫 번째 범행과 두 번째 범행",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Crimes One and Two",
+     "status": "accepted",
+     "note": "Supported by Q17, Q22, Q26, A4 and A7. The irony reading in (3) is a reasonable, hedged interpretation.",
+     "quote": "Miss Hertha, you've presented a meticulous and convincing case, I'll give you that. But, I will not admit to something I didn't do.",
+     "sentences": [
+      {
+       "t_raw": "Albedo는 결백을 증명하는 데만 관심이 있었다면 지도와의 연결을 부인했겠다고 맞선다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알베도는 결백을 증명하는 데만 관심이 있었다면 지도와의 연결을 부인했겠다고 맞선다."
+      },
+      {
+       "t_raw": "그러면서 Hertha가 치밀하고 설득력 있는 사건을 제시했다고 인정하되, 하지 않은 일을 인정하지는 않겠다고 하고 한 사람도 죽이지 않았다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 헤르타가 치밀하고 설득력 있는 사건을 제시했다고 인정하되, 하지 않은 일을 인정하지는 않겠다고 하고 한 사람도 죽이지 않았다고 말한다."
+      },
+      {
+       "t_raw": "이 재판은 사칭자의 경계를 낮추고 드러내기 위한 Albedo의 계획이었고, 재심에서 진짜 Hertha가 도착하며 사칭자는 함정에 빠진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 재판은 사칭자의 경계를 낮추고 드러내기 위한 알베도의 계획이었고, 재심에서 진짜 헤르타가 도착하며 사칭자는 함정에 빠진다."
+      },
+      {
+       "t_raw": "치밀한 검사 측의 공세와 끝까지 부인하는 Albedo의 대립은 그 함정의 구도와 맞물려 아이러니로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "치밀한 검사 측의 공세와 끝까지 부인하는 알베도의 대립은 그 함정의 구도와 맞물려 아이러니로 보인다."
+      },
+      {
+       "t_raw": "이 사건에서 Hertha의 왼팔 흉터가 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 사건에서 헤르타의 왼팔 흉터가 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Crimes One and Two",
+       "quest_ko": "첫 번째 범행과 두 번째 범행",
+       "version": "5.6",
+       "speaker": "Albedo"
+      },
+      {
+       "kind": "quest",
+       "quest": "Crimes One and Two",
+       "quest_ko": "첫 번째 범행과 두 번째 범행",
+       "version": "5.6",
+       "speaker": "Albedo"
+      },
+      {
+       "kind": "quest",
+       "quest": "Crimes One and Two",
+       "quest_ko": "첫 번째 범행과 두 번째 범행",
+       "version": "5.6",
+       "speaker": "Albedo"
+      },
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Crimes One and Two"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile > Appearance",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Crimes One and Two"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 첫 번째 범행과 두 번째 범행",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Hunger of Many",
+     "status": "accepted",
+     "note": "Supported by Q19, Q25 and Q11.",
+     "quote": "It didn't take long for the fake Hertha to appear on the Knights' patrol route, claiming to have \"survived her mission.\"",
+     "sentences": [
+      {
+       "t_raw": "**가짜 Hertha**는 임무에서 살아남았다고 주장하며 Knights의 순찰로에 나타났고, 등장까지 오래 걸리지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**가짜 헤르타**는 임무에서 살아남았다고 주장하며 기사단의 순찰로에 나타났고, 등장까지 오래 걸리지 않았다."
+      },
+      {
+       "t_raw": "Albedo는 가짜 Hertha가 Knights의 신뢰를 얻었다고 믿게 하려면 충분히 기다려야 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알베도는 가짜 헤르타가 기사단의 신뢰를 얻었다고 믿게 하려면 충분히 기다려야 했다."
+      },
+      {
+       "t_raw": "Hertha는 관련 시점을 6개월도 더 전으로 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤르타는 관련 시점을 6개월도 더 전으로 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Albedo"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Albedo"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Hertha"
+      }
+     ],
+     "heading": "작중 행적 — 중생의 갈망",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Hunger of Many",
+     "status": "accepted",
+     "note": "Q2, Q5 and Q8 support the facts. The interpretation in (2) is hedged with 'suggests' and is a mild inference.",
+     "quote": "There's an informant among our ranks.",
+     "sentences": [
+      {
+       "t_raw": "사건 후 Hertha는 상대가 아직 가짜 Hertha 사건에 붙잡혀 있다고 말하며, 계획을 알고 있었을 것이라고 짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사건 후 헤르타는 상대가 아직 가짜 헤르타 사건에 붙잡혀 있다고 말하며, 계획을 알고 있었을 것이라고 짚는다."
+      },
+      {
+       "t_raw": "그녀는 **정보원**이 우리 대열 안에 있다고 말하고, **모든 부대**가 위치를 잡았다고 알린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 **정보원**이 우리 대열 안에 있다고 말하고, **모든 부대**가 위치를 잡았다고 알린다."
+      },
+      {
+       "t_raw": "정보원 확인과 부대 배치는 사건 수습이 인원 점검과 준비를 동반했음을 시사한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정보원 확인과 부대 배치는 사건 수습이 인원 점검과 준비를 동반했음을 시사한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Hertha"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Hertha"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Hertha"
+      }
+     ],
+     "heading": "작중 행적 — 중생의 갈망",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Hunger of Many",
+     "status": "accepted",
+     "note": "Q18 and Q23 are paraphrased fairly. The interpretation in (2) is reasonable.",
+     "quote": "Wait, but in that case, what's gonna happen to the fake Hertha? And what about the people who fell under Durin's influence?",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 가짜 Hertha와 Durin의 영향 아래 놓인 사람들의 거취를 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 가짜 헤르타와 두린의 영향 아래 놓인 사람들의 거취를 묻는다."
+      },
+      {
+       "t_raw": "한 기록은 Hertha가 다시 사라져야 했던 판단을 두고 싸움 끝에도 정리가 되지 않는다고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 기록은 헤르타가 다시 사라져야 했던 판단을 두고 싸움 끝에도 정리가 되지 않는다고 적는다."
+      },
+      {
+       "t_raw": "이 질문들은 사건의 뒷정리가 완전히 정리되지 않았음을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 질문들은 사건의 뒷정리가 완전히 정리되지 않았음을 보여준다."
+      }
+     ],
+     "sources": [
       {
        "kind": "quest",
        "quest": "The Gardener",
@@ -1432,47 +1141,40 @@
        "quest_ko": "중생의 갈망",
        "version": "5.6",
        "speaker": "Note"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Hunger of Many",
-       "quest_ko": "중생의 갈망",
-       "version": "5.6",
-       "speaker": "Albedo"
       }
      ],
-     "heading": "떡밥과 수수께끼",
+     "heading": "작중 행적 — 중생의 갈망",
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "There's an informant among our ranks.",
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by A4, M1, Q22 and Q26. 'Durin's remains' is a slight loosening of 'Durin's monsters/energies', but it is acceptable.",
+     "quote": "Miss Hertha, you've presented a meticulous and convincing case, I'll give you that. But, I will not admit to something I didn't do.",
      "sentences": [
       {
-       "t_raw": "Hertha는 아군 대열 안에 **정보원**이 있다고 말한다.",
+       "t_raw": "Hertha와 Albedo는 동료 대장이며, Hertha의 실종 위장은 Durin의 잔해를 다루려는 **Albedo의 계획**에 따랐다.",
        "interp": false,
        "dropped": false,
-       "t": "헤르타는 아군 대열 안에 **정보원**이 있다고 말한다."
+       "t": "헤르타와 알베도는 동료 대장이며, 헤르타의 실종 위장은 두린의 잔해를 다루려는 **알베도의 계획**에 따랐다."
       },
       {
-       "t_raw": "그녀는 시점을 두고 \"Over six months ago\"라고 답한다.",
+       "t_raw": "계획을 모르는 가짜 Hertha는 Albedo의 재판에서 검사로 나섰고, Albedo는 자신이 하지 않은 일은 인정하지 않겠다고 맞섰다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 시점을 두고 \"Over six months ago\"라고 답한다."
+       "t": "계획을 모르는 가짜 헤르타는 알베도의 재판에서 검사로 나섰고, 알베도는 자신이 하지 않은 일은 인정하지 않겠다고 맞섰다."
       },
       {
-       "t_raw": "Hertha의 실종은 Paralogism 사건 반년 전에 계획된 일이었다.",
+       "t_raw": "재심에서 진짜 Hertha가 도착하자 함정이 드러났다.",
        "interp": false,
        "dropped": false,
-       "t": "헤르타의 실종은 배리의 순간 사건 반년 전에 계획된 일이었다."
+       "t": "재심에서 진짜 헤르타가 도착하자 함정이 드러났다."
       },
       {
-       "t_raw": "정보원의 존재와 반년 전 시점은 함께 제시되지만, 그 정체는 대화에서 채워지지 않는 셈이다.",
+       "t_raw": "이 대면은 같은 편의 계획을 숨긴 재판의 장면이었다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "정보원의 존재와 반년 전 시점은 함께 제시되지만, 그 정체는 대화에서 채워지지 않는 셈이다."
+       "t": "이 대면은 같은 편의 계획을 숨긴 재판의 장면이었다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -1490,51 +1192,102 @@
        ]
       },
       {
-       "kind": "quest",
-       "quest": "The Hunger of Many",
-       "quest_ko": "중생의 갈망",
-       "version": "5.6",
-       "speaker": "Hertha"
+       "kind": "wiki",
+       "page": "Albedo/Storyline",
+       "revision": 2049028,
+       "section": "History > Present",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Paralogism"
+        }
+       ]
       },
       {
        "kind": "quest",
-       "quest": "The Hunger of Many",
-       "quest_ko": "중생의 갈망",
+       "quest": "Crimes One and Two",
+       "quest_ko": "첫 번째 범행과 두 번째 범행",
        "version": "5.6",
-       "speaker": "Hertha"
+       "speaker": "Albedo"
+      },
+      {
+       "kind": "quest",
+       "quest": "Crimes One and Two",
+       "quest_ko": "첫 번째 범행과 두 번째 범행",
+       "version": "5.6",
+       "speaker": "Albedo"
       }
      ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Over"
-     ]
+     "heading": "인간관계",
+     "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Although he didn't say it explicitly... But my guess is that this grant came at the behest of a once senior Knight of Favonius.",
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported by A34-A37, Q20, Q21 and M4.",
+     "quote": "Duly noted on the financial issues you raised. I'll have Elzer follow up with Hertha in more detail.",
      "sentences": [
       {
-       "t_raw": "Elzer는 Hertha를 협업에 초대해 재정 문제를 많이 해결해 주었다.",
+       "t_raw": "Elzer는 Mondstadt Wine Guild의 executive chairman으로, Hertha는 Wine Market 예산 문제를 그와 협력해 풀었고 Diluc은 후속 논의를 Elzer에게 맡겼다.",
        "interp": false,
        "dropped": false,
-       "t": "엘저는 헤르타를 협업에 초대해 재정 문제를 많이 해결해 주었다."
+       "t": "엘저는 몬드 주류업 길드의 집행 회장으로, 헤르타는 Wine Market 예산 문제를 그와 협력해 풀었고 다이루크는 후속 논의를 엘저에게 맡겼다.",
+       "polish": {
+        "from": "엘저는 몬드 주류업 길드의 executive chairman으로, 헤르타는 Wine Market 예산 문제를 그와 협력해 풀었고 다이루크는 후속 논의를 엘저에게 맡겼다.",
+        "text": "엘저는 몬드 주류업 길드의 집행 회장으로, 헤르타는 Wine Market 예산 문제를 그와 협력해 풀었고 다이루크는 후속 논의를 엘저에게 맡겼다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Hertha는 그 지원이 한때 Knights of Favonius의 선임 기사였던 인물의 청에 따른 것 같다고 추측한다.",
+       "t_raw": "Hertha는 Elzer의 지원이 한때 senior Knight였던 인물의 요청으로 온 것 같다고 추측한다.",
        "interp": false,
        "dropped": false,
-       "t": "헤르타는 그 지원이 한때 페보니우스 기사단의 선임 기사였던 인물의 청에 따른 것 같다고 추측한다."
+       "t": "헤르타는 엘저의 지원이 한때 선임 기사였던 인물의 요청으로 온 것 같다고 추측한다.",
+       "polish": {
+        "from": "헤르타는 엘저의 지원이 한때 senior 기사였던 인물의 요청으로 온 것 같다고 추측한다.",
+        "text": "헤르타는 엘저의 지원이 한때 선임 기사였던 인물의 요청으로 온 것 같다고 추측한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Elzer가 이를 명시하지 않았기에 **Elzer의 지원 배경**은 Hertha의 추측인 셈이다.",
+       "t_raw": "Hertha는 물류 대장으로서 **Mika의 실무 효율**을 높이 사고, Bernhard는 Hertha 휘하의 Logistics Company 소속임을 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤르타는 물류 대장으로서 **미카의 실무 효율**을 높이 사고, 베른하르트는 헤르타 휘하의 Logistics Company 소속임을 밝힌다."
+      },
+      {
+       "t_raw": "이는 Hertha가 자금 협력과 부하 관리에 걸친 물류 책임자임을 보여준다.",
        "interp": true,
        "dropped": false,
-       "t": "엘저가 이를 명시하지 않았기에 **엘저의 지원 배경**은 헤르타의 추측인 셈이다."
+       "t": "이는 헤르타가 자금 협력과 부하 관리에 걸친 물류 책임자임을 보여준다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "A34",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "A35",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Hertha",
@@ -1550,6 +1303,193 @@
        "section": "Event Dialogue > Of Ballads and Brews",
        "paragraph": "A37",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Bonds of Melody (Quest)",
+       "quest_ko": "노래로 엮인 인연",
+       "version": "3.1",
+       "speaker": "Diluc"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Wine Market",
+      "Logistics Company"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by Q2 and Q23. The interpretations are reasonable.",
+     "quote": "What, still caught up on the imposter incident? I thought you knew about the plan...",
+     "sentences": [
+      {
+       "t_raw": "**fake Hertha** 사건은 싸움이 지난 뒤에도 쉽게 정리되지 않는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**가짜 헤르타** 사건은 싸움이 지난 뒤에도 쉽게 정리되지 않는다.",
+       "polish": {
+        "from": "**fake 헤르타** 사건은 싸움이 지난 뒤에도 쉽게 정리되지 않는다.",
+        "text": "**가짜 헤르타** 사건은 싸움이 지난 뒤에도 쉽게 정리되지 않는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Hertha는 상대가 아직 가짜 Hertha 사건에 매달려 있다며, 계획을 알고 있었다고 생각했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤르타는 상대가 아직 가짜 헤르타 사건에 매달려 있다며, 계획을 알고 있었다고 생각했다고 말한다."
+      },
+      {
+       "t_raw": "한 기록은 싸움이 끝난 뒤에도 Hertha가 다시 사라지기로 한 경위를 더듬지 못하겠다고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 기록은 싸움이 끝난 뒤에도 헤르타가 다시 사라지기로 한 경위를 더듬지 못하겠다고 적는다."
+      },
+      {
+       "t_raw": "두 대목은 계획의 순서와 설명이 뒤늦게까지 혼선을 남겼음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 대목은 계획의 순서와 설명이 뒤늦게까지 혼선을 남겼음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Hertha"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Note"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by Q18, A4 and M6. The interpretation is reasonable.",
+     "quote": "Wait, but in that case, what's gonna happen to the fake Hertha? And what about the people who fell under Durin's influence?",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 fake Hertha와 **Durin의 영향** 아래 있던 사람들의 거취를 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 가짜 헤르타와 **두린의 영향** 아래 있던 사람들의 거취를 묻는다.",
+       "polish": {
+        "from": "페이몬은 fake 헤르타와 **두린의 영향** 아래 있던 사람들의 거취를 묻는다.",
+        "text": "페이몬은 가짜 헤르타와 **두린의 영향** 아래 있던 사람들의 거취를 묻는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "대체 Hertha는 Durin의 잔해가 만들어 낸 존재이자, Durin의 에너지에 영향받았거나 괴물이 대신한 이들의 core 역할을 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대체 헤르타는 두린의 잔해가 만들어 낸 존재이자, 두린의 에너지에 영향받았거나 괴물이 대신한 이들의 핵심 역할을 했다.",
+       "polish": {
+        "from": "대체 헤르타는 두린의 잔해가 만들어 낸 존재이자, 두린의 에너지에 영향받았거나 괴물이 대신한 이들의 core 역할을 했다.",
+        "text": "대체 헤르타는 두린의 잔해가 만들어 낸 존재이자, 두린의 에너지에 영향받았거나 괴물이 대신한 이들의 핵심 역할을 했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "대면 당시 core는 도주를 시도했고, 다른 이들은 도시를 포위했으나 격퇴되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대면 당시 핵심은 도주를 시도했고, 다른 이들은 도시를 포위했으나 격퇴되었다.",
+       "polish": {
+        "from": "대면 당시 core는 도주를 시도했고, 다른 이들은 도시를 포위했으나 격퇴되었다.",
+        "text": "대면 당시 핵심은 도주를 시도했고, 다른 이들은 도시를 포위했으나 격퇴되었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그 뒤의 처분과 영향 정리는 남은 쟁점으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 뒤의 처분과 영향 정리는 남은 쟁점으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Gardener",
+       "quest_ko": "정원사",
+       "version": "5.6",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Crimes One and Two"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Durin (NPC)",
+       "revision": 2044578,
+       "section": "Story > Legacy",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Paralogism"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Q5 is stated. The interpretation is reasonable.",
+     "quote": "There's an informant among our ranks.",
+     "sentences": [
+      {
+       "t_raw": "Hertha는 우리 대열 안에 **정보원**이 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤르타는 우리 대열 안에 **정보원**이 있다고 말한다."
+      },
+      {
+       "t_raw": "가짜 Hertha 사건을 둘러싼 혼선이 남아 있는 가운데 이 발언이 나오므로, 사건의 여파가 내부 정보원이라는 물음으로 이어진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가짜 헤르타 사건을 둘러싼 혼선이 남아 있는 가운데 이 발언이 나오므로, 사건의 여파가 내부 정보원이라는 물음으로 이어진다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Hertha"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Hunger of Many",
+       "quest_ko": "중생의 갈망",
+       "version": "5.6",
+       "speaker": "Hertha"
       }
      ],
      "heading": "떡밥과 수수께끼",
@@ -1557,33 +1497,33 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "She wears one of the standard uniforms of the Knights of Favonius.",
+     "status": "accepted",
+     "note": "Matches A5 and A6. The interpretation is fine.",
+     "quote": "Hertha is a pale woman with hazel eyes, and long light brown hair.",
      "sentences": [
       {
-       "t_raw": "Hertha는 창백한 피부에 헤이즐색 눈, 긴 연한 갈색 머리를 지녔다.",
+       "t_raw": "Hertha는 창백한 피부에 헤이즐색 눈, 긴 밝은 갈색 머리를 지닌 인물로 묘사된다.",
        "interp": false,
        "dropped": false,
-       "t": "헤르타는 창백한 피부에 헤이즐색 눈, 긴 연한 갈색 머리를 지녔다."
+       "t": "헤르타는 창백한 피부에 헤이즐색 눈, 긴 밝은 갈색 머리를 지닌 인물로 묘사된다."
       },
       {
-       "t_raw": "**Knights of Favonius의 제복**인 검은 긴소매 셔츠, 흰 판금 갑옷, 회색 치마 아래의 몸에 붙는 바지와 각반을 입고, 흉갑에는 Knights of Favonius의 문장이 장식되어 있다.",
+       "t_raw": "복장은 Knights of Favonius의 **표준 제복**으로, 검은 긴소매 셔츠 위에 흰 판금 갑옷을 입고 회색 치마 아래에 몸에 붙는 바지를 받쳐 입으며 정강이 갑옷을 착용한 모습이다.",
        "interp": false,
        "dropped": false,
-       "t": "**페보니우스 기사단의 제복**인 검은 긴소매 셔츠, 흰 판금 갑옷, 회색 치마 아래의 몸에 붙는 바지와 각반을 입고, 흉갑에는 페보니우스 기사단의 문장이 장식되어 있다."
+       "t": "복장은 페보니우스 기사단의 **표준 제복**으로, 검은 긴소매 셔츠 위에 흰 판금 갑옷을 입고 회색 치마 아래에 몸에 붙는 바지를 받쳐 입으며 정강이 갑옷을 착용한 모습이다."
       },
       {
-       "t_raw": "오른쪽 허리 벨트에는 칼집에 든 검을 찬다.",
+       "t_raw": "가슴판에는 Knights of Favonius의 문장이 장식되어 있고, 오른쪽 허리 벨트에는 칼집에 넣은 검을 매단다.",
        "interp": false,
        "dropped": false,
-       "t": "오른쪽 허리 벨트에는 칼집에 든 검을 찬다."
+       "t": "가슴판에는 페보니우스 기사단의 문장이 장식되어 있고, 오른쪽 허리 벨트에는 칼집에 넣은 검을 매단다."
       },
       {
-       "t_raw": "Crimes One and Two에서는 왼팔의 **흉터**가 드러난다.",
-       "interp": false,
+       "t_raw": "창백한 얼굴과 검은 셔츠, 흰 갑옷의 조합은 제복의 인상을 또렷하게 만드는 것으로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "첫 번째 범행과 두 번째 범행에서는 왼팔의 **흉터**가 드러난다."
+       "t": "창백한 얼굴과 검은 셔츠, 흰 갑옷의 조합은 제복의 인상을 또렷하게 만드는 것으로 보인다."
       }
      ],
      "sources": [
@@ -1602,19 +1542,6 @@
        "section": "Profile > Appearance",
        "paragraph": "A6",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Profile > Appearance",
-       "paragraph": "A7",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Crimes One and Two"
-        }
-       ]
       }
      ],
      "heading": "여담",
@@ -1622,42 +1549,50 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I never thought Mr. Elzer would come all the day from Dawn Winery to see me.",
+     "status": "accepted",
+     "note": "Idle quotes, farewell line and the Ematol location (M3) are all supported.",
+     "quote": "Transfers of supplies must be reported.",
      "sentences": [
       {
-       "t_raw": "Ematol은 Eastern Mondstadt City Teleport Waypoint 북서쪽, Hertha로 이어지는 계단 위 가로등 옆에 있다.",
+       "t_raw": "대기 중에는 보급품 이동을 언급하는 대사와 그 이동은 보고해야 한다는 대사가 나온다.",
        "interp": false,
        "dropped": false,
-       "t": "애마톨은 Eastern Mondstadt City Teleport Waypoint 북서쪽, 헤르타로 이어지는 계단 위 가로등 옆에 있다."
+       "t": "대기 중에는 보급품 이동을 언급하는 대사와 그 이동은 보고해야 한다는 대사가 나온다."
       },
       {
-       "t_raw": "Of Ballads and Brews에서 Hertha는 Mr. Elzer가 Dawn Winery에서 자신을 보러 오리라고는 생각하지 못했다고 말한다.",
+       "t_raw": "Of Ballads and Brews 기간의 대기 대사에서는 Elzer가 Dawn Winery에서 왔다는 이야기를 한다.",
        "interp": false,
        "dropped": false,
-       "t": "잔 속에서 울리는 노래에서 헤르타는 Mr. 엘저가 다운 와이너리에서 자신을 보러 오리라고는 생각하지 못했다고 말한다."
+       "t": "잔 속에서 울리는 노래 기간의 대기 대사에서는 엘저가 다운 와이너리에서 왔다는 이야기를 한다."
       },
       {
-       "t_raw": "같은 행사에서는 평범한 소개 대화 뒤에 새 선택지가 열리고, 'About Elzer...' 화제와 Aroma of the Past 완료 뒤의 대화가 마련되어 있다.",
+       "t_raw": "대화를 마칠 때는 다시 보자는 인사를 건넨다.",
        "interp": false,
        "dropped": false,
-       "t": "같은 행사에서는 평범한 소개 대화 뒤에 새 선택지가 열리고, 'About Elzer...' 화제와 과거에서 풍겨온 술 향기 완료 뒤의 대화가 마련되어 있다."
+       "t": "대화를 마칠 때는 다시 보자는 인사를 건넨다."
       },
       {
-       "t_raw": "평판 대화는 레벨 1–2, 3, 7에 따라 달라지며, 'Mm. See you around, then.'이라는 대사도 있다.",
+       "t_raw": "**Ematol**은 Eastern Mondstadt City Teleport Waypoint의 북서쪽, Hertha가 있는 곳으로 이어지는 계단 꼭대기의 가로등 옆에서 찾을 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "평판 대화는 레벨 1–2, 3, 7에 따라 달라지며, 'Mm. See you around, then.'이라는 대사도 있다."
+       "t": "**애마톨**은 Eastern Mondstadt City Teleport Waypoint의 북서쪽, 헤르타가 있는 곳으로 이어지는 계단 꼭대기의 가로등 옆에서 찾을 수 있다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Ematol",
-       "revision": 1860576,
-       "section": "Location",
-       "paragraph": "M3",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Idle Quotes",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hertha",
+       "revision": 2041301,
+       "section": "Idle Quotes",
+       "paragraph": "A9",
        "wiki_refs": []
       },
       {
@@ -1688,35 +1623,23 @@
        "kind": "wiki",
        "page": "Hertha",
        "revision": 2041301,
-       "section": "Event Dialogue > Of Ballads and Brews",
-       "paragraph": "A31",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Hertha",
-       "revision": 2041301,
-       "section": "Event Dialogue > Of Ballads and Brews",
-       "paragraph": "A32",
+       "section": "Dialogue",
+       "paragraph": "A29",
        "wiki_refs": []
       }
      ],
      "heading": "여담",
      "latin_left": [
-      "Eastern Mondstadt City Teleport Waypoint",
-      "Mr",
-      "About Elzer",
-      "Mm",
-      "See"
+      "Eastern Mondstadt City Teleport Waypoint"
      ]
     }
    ],
    "quote_boxes": [
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "저는 Knights of Favonius 6th Company의 Captain, Hertha입니다.",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "저는 Knights of Favonius 6th Company의 대장 Hertha입니다.",
      "en": "I'm Hertha, Captain of the Knights of Favonius' 6th Company.",
      "speaker": "Hertha",
      "source": {
@@ -1726,65 +1649,14 @@
       "version": "1.1",
       "speaker": "Hertha"
      },
-     "t": "저는 페보니우스 기사단 6th Company의 대장, 헤르타입니다.",
+     "t": "저는 페보니우스 기사단 6th Company의 대장 헤르타입니다.",
      "speaker_ko": "헤르타"
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "간단히 말하면, 저는 병참 업무를 맡고 있습니다.",
-     "en": "Simply put, I work in logistics.",
-     "speaker": "Hertha",
-     "source": {
-      "kind": "quest",
-      "quest": "Knight of the Realm",
-      "quest_ko": "몬드성의 기사",
-      "version": "1.1",
-      "speaker": "Hertha"
-     },
-     "t": "간단히 말하면, 저는 병참 업무를 맡고 있습니다.",
-     "speaker_ko": "헤르타"
-    },
-    {
-     "section": "작중 행적 — Mondstadt의 평판과 보급",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "맞습니다. 저는 Captain Hertha 휘하의 Logistics Company 소속 Bernhard입니다.",
-     "en": "That's right. I am Bernhard, a member of the Logistics Company under Captain Hertha.",
-     "speaker": "Bernhard",
-     "source": {
-      "kind": "quest",
-      "quest": "Charity Event? Securing Funds?",
-      "quest_ko": "자선 판매 행사? 자금 준비?",
-      "version": "3.1",
-      "speaker": "Bernhard"
-     },
-     "t": "맞습니다. 저는 대장 헤르타 휘하의 Logistics Company 소속 베른하르트입니다.",
-     "speaker_ko": "베른하르트"
-    },
-    {
-     "section": "작중 행적 — 사라진 Captain과 대체자",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그래서 우리는 가짜 Hertha가 우리의 신뢰를 얻었다고 확신할 만큼 충분히 오래 기다려야 했다.",
-     "en": "So, we had to wait long enough to convince the fake Hertha that she had our trust.",
-     "speaker": "Albedo",
-     "source": {
-      "kind": "quest",
-      "quest": "The Hunger of Many",
-      "quest_ko": "중생의 갈망",
-      "version": "5.6",
-      "speaker": "Albedo"
-     },
-     "t": "그래서 우리는 가짜 헤르타가 우리의 신뢰를 얻었다고 확신할 만큼 충분히 오래 기다려야 했다.",
-     "speaker_ko": "알베도"
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "저요? 음, 제 업무는 주로 우리 수송대의 인가와 관리, 자원 관리, 기록 보관을 포함합니다.",
+     "section": "업무와 역할",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "저요? 음, 제 업무는 주로 우리 수송대의 편성과 관리, 자원 관리, 기록 보관을 포함합니다.",
      "en": "Me? Well, my work mostly includes the charter and administration of our baggage train, resource management and record-keeping.",
      "speaker": "Hertha",
      "source": {
@@ -1794,58 +1666,109 @@
       "version": "1.1",
       "speaker": "Hertha"
      },
-     "t": "저요? 음, 제 업무는 주로 우리 수송대의 인가와 관리, 자원 관리, 기록 보관을 포함합니다.",
+     "t": "저요? 음, 제 업무는 주로 우리 수송대의 편성과 관리, 자원 관리, 기록 보관을 포함합니다.",
+     "speaker_ko": "헤르타"
+    },
+    {
+     "section": "작중 행적 — Mondstadt와 Of Ballads and Brews",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "제기하신 재정 문제에 대해서는 잘 알겠습니다. Elzer가 Hertha와 더 자세히 후속 논의를 하도록 하겠습니다.",
+     "en": "Duly noted on the financial issues you raised. I'll have Elzer follow up with Hertha in more detail.",
+     "speaker": "Diluc",
+     "source": {
+      "kind": "quest",
+      "quest": "Bonds of Melody (Quest)",
+      "quest_ko": "노래로 엮인 인연",
+      "version": "3.1",
+      "speaker": "Diluc"
+     },
+     "t": "제기하신 재정 문제에 대해서는 잘 알겠습니다. 엘저가 헤르타와 더 자세히 후속 논의를 하도록 하겠습니다.",
+     "speaker_ko": "다이루크"
+    },
+    {
+     "section": "작중 행적 — Paralogism과 대체 Hertha",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그래서 우리는 가짜 Hertha가 자신이 우리의 신뢰를 얻었다고 믿게 할 만큼 충분히 오래 기다려야 했다.",
+     "en": "So, we had to wait long enough to convince the fake Hertha that she had our trust.",
+     "speaker": "Albedo",
+     "source": {
+      "kind": "quest",
+      "quest": "The Hunger of Many",
+      "quest_ko": "중생의 갈망",
+      "version": "5.6",
+      "speaker": "Albedo"
+     },
+     "t": "그래서 우리는 가짜 헤르타가 자신이 우리의 신뢰를 얻었다고 믿게 할 만큼 충분히 오래 기다려야 했다.",
+     "speaker_ko": "알베도"
+    },
+    {
+     "section": "작중 행적 — Crimes One and Two",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Hertha 양은 검찰 측을 대표하고, Kaeya 씨는 변호 측을 대표해 발언합니다.",
+     "en": "Miss Hertha represents the prosecution, and Mr. Kaeya speaks on behalf of the defense.",
+     "speaker": "Jean",
+     "source": {
+      "kind": "quest",
+      "quest": "Crimes One and Two",
+      "quest_ko": "첫 번째 범행과 두 번째 범행",
+      "version": "5.6",
+      "speaker": "Jean"
+     },
+     "t": "헤르타 양은 검찰 측을 대표하고, 케이아 씨는 변호 측을 대표해 발언합니다.",
+     "speaker_ko": "진"
+    },
+    {
+     "section": "작중 행적 — The Hunger of Many",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "우리 대열 안에 정보원이 있다.",
+     "en": "There's an informant among our ranks.",
+     "speaker": "Hertha",
+     "source": {
+      "kind": "quest",
+      "quest": "The Hunger of Many",
+      "quest_ko": "중생의 갈망",
+      "version": "5.6",
+      "speaker": "Hertha"
+     },
+     "t": "우리 대열 안에 정보원이 있다.",
      "speaker_ko": "헤르타"
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "맞습니다. 저는 Captain Hertha 휘하의 Logistics Company 소속 Bernhard입니다.",
-     "en": "That's right. I am Bernhard, a member of the Logistics Company under Captain Hertha.",
-     "speaker": "Bernhard",
+     "status": "accepted",
+     "note": "Faithful translation of Albedo's line (Q22).",
+     "t_raw": "Hertha 양, 당신이 치밀하고 설득력 있는 사건을 제시했다는 점은 인정하겠습니다. 하지만 저는 제가 하지 않은 일을 인정하지 않겠습니다.",
+     "en": "Miss Hertha, you've presented a meticulous and convincing case, I'll give you that. But, I will not admit to something I didn't do.",
+     "speaker": "Albedo",
      "source": {
       "kind": "quest",
-      "quest": "Charity Event? Securing Funds?",
-      "quest_ko": "자선 판매 행사? 자금 준비?",
-      "version": "3.1",
-      "speaker": "Bernhard"
+      "quest": "Crimes One and Two",
+      "quest_ko": "첫 번째 범행과 두 번째 범행",
+      "version": "5.6",
+      "speaker": "Albedo"
      },
-     "t": "맞습니다. 저는 대장 헤르타 휘하의 Logistics Company 소속 베른하르트입니다.",
-     "speaker_ko": "베른하르트"
+     "t": "헤르타 양, 당신이 치밀하고 설득력 있는 사건을 제시했다는 점은 인정하겠습니다. 하지만 저는 제가 하지 않은 일을 인정하지 않겠습니다.",
+     "speaker_ko": "알베도"
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "잠깐, 그렇다면 가짜 Hertha는 어떻게 되는 거야? 그리고 Durin의 영향에 빠진 사람들은?",
-     "en": "Wait, but in that case, what's gonna happen to the fake Hertha? And what about the people who fell under Durin's influence?",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "The Gardener",
-      "quest_ko": "정원사",
-      "version": "5.6",
-      "speaker": "Paimon"
-     },
-     "t": "잠깐, 그렇다면 가짜 헤르타는 어떻게 되는 거야? 그리고 두린의 영향에 빠진 사람들은?",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "앞서 인사드리지 못해 죄송합니다. 하지만 상황이 조금 정신없었습니다.",
-     "en": "My apologies for not greeting you before, but things were a tad too hectic.",
+     "status": "accepted",
+     "note": "Faithful translation of Hertha's line: 'There's an informant among our ranks.'",
+     "t_raw": "우리 대열 안에 정보원이 있다.",
+     "en": "There's an informant among our ranks.",
      "speaker": "Hertha",
      "source": {
       "kind": "quest",
-      "quest": "Knight of the Realm",
-      "quest_ko": "몬드성의 기사",
-      "version": "1.1",
+      "quest": "The Hunger of Many",
+      "quest_ko": "중생의 갈망",
+      "version": "5.6",
       "speaker": "Hertha"
      },
-     "t": "앞서 인사드리지 못해 죄송합니다. 하지만 상황이 조금 정신없었습니다.",
+     "t": "우리 대열 안에 정보원이 있다.",
      "speaker_ko": "헤르타"
     }
    ]

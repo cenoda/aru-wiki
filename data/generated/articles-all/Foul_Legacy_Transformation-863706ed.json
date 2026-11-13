@@ -21,101 +21,15 @@
    "input_cut": false,
    "input_hash": "0e7241e5c3ee",
    "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "While under the effects of Foul Legacy Transformation, Tartaglia is able to wield the powers of his Hydro Vision and Electro Delusion at the same time.",
-     "sentences": [
-      {
-       "t_raw": "Foul Legacy Transformation은 Tartaglia가 사용하는 **전투 기술**로, Enter the Golden House 전투와 Mighty Cyclops' Adventure! 스토리 퀘스트 장면에서 쓰인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마왕 무장은 타르탈리아가 사용하는 **전투 기술**로, 「황금옥」 진입 전투와 외눈박이 이야기 스토리 퀘스트 장면에서 쓰인다."
-      },
-      {
-       "t_raw": "이 기술을 쓰면 Tartaglia는 Hydro Vision과 Electro Delusion의 힘을 동시에 다루고, 몸이 두 배로 커지며 검은색과 보라색 갑옷을 두른 채 떠올라 빠르게 움직인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 기술을 쓰면 타르탈리아는 물 신의 눈과 번개 사안의 힘을 동시에 다루고, 몸이 두 배로 커지며 검은색과 보라색 갑옷을 두른 채 떠올라 빠르게 움직인다."
-      },
-      {
-       "t_raw": "그러나 사용은 극도로 소모가 크고 몸에 **지속적인 영향**을 남기며, 그는 Abyss에 떨어진 뒤 Fatui에 들어가기 전 Skirk에게 이 힘을 배웠고, 이 힘은 그의 Delusion과는 관계가 없다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 사용은 극도로 소모가 크고 몸에 **지속적인 영향**을 남기며, 그는 심연에 떨어진 뒤 우인단에 들어가기 전 스커크에게 이 힘을 배웠고, 이 힘은 그의 사안과는 관계가 없다."
-      },
-      {
-       "t_raw": "As Light Rain Falls Without Reason에서 Oratrice의 유죄 판결 뒤 이 기술을 쓰려 했지만, Neuvillette에게 완전히 변신하기 전에 제압되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이유 없이 내리는 비처럼에서 계시 판결 장치의 유죄 판결 뒤 이 기술을 쓰려 했지만, 느비예트에게 완전히 변신하기 전에 제압되었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Heart of Glaze"
-        },
-        {
-         "type": "quest",
-         "name": "Teucer's Terrific Tour"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": null,
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Tartaglia"
-        },
-        {
-         "type": "item",
-         "name": "Shard of a Foul Legacy"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": "Characteristics",
-       "paragraph": "A4",
-       "wiki_refs": []
-      }
-     ],
-     "heading": null,
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1–A3 and M1. M1 says he defaults to Vision abilities unless the fight calls for more extreme measures, which supports the interpretation.",
      "quote": "Foul Legacy Transformation is a combat technique utilized by Tartaglia.",
      "sentences": [
       {
@@ -125,10 +39,22 @@
        "t": "**마왕 무장**은 타르탈리아가 사용하는 전투 기술이다."
       },
       {
-       "t_raw": "그는 Enter the Golden House의 보스전과 Story Quest Mighty Cyclops' Adventure!의 컷신에서 이 기술을 사용했고, As Light Rain Falls Without Reason에서는 Oratrice의 유죄 판결 뒤 사용하려 했으나 완전히 변신하기 전에 Neuvillette에 의해 제압되었다.",
+       "t_raw": "이 기술은 Hydro Vision과 Electro Delusion의 힘을 동시에 쓰게 하지만, 그를 극도로 소모시키고 신체에 지속적인 영향을 남긴다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 「황금옥」 진입의 보스전과 Story Quest Mighty Cyclops' Adventure!의 컷신에서 이 기술을 사용했고, 이유 없이 내리는 비처럼에서는 계시 판결 장치의 유죄 판결 뒤 사용하려 했으나 완전히 변신하기 전에 느비예트에 의해 제압되었다."
+       "t": "이 기술은 물 신의 눈과 번개 사안의 힘을 동시에 쓰게 하지만, 그를 극도로 소모시키고 신체에 지속적인 영향을 남긴다."
+      },
+      {
+       "t_raw": "이 힘은 Delusion과 무관하며, Tartaglia가 Abyss에 떨어진 뒤 Fatui에 합류하기 전 Skirk에게 배운 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 힘은 사안과 무관하며, 타르탈리아가 심연에 떨어진 뒤 우인단에 합류하기 전 스커크에게 배운 것이다."
+      },
+      {
+       "t_raw": "그가 평소에는 Vision 능력에 기대다가 더 극단적인 상황에서 이 기술을 꺼낸다는 점에서, Foul Legacy Transformation은 몸의 부담을 감수하는 **비장의 수단**으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 평소에는 신의 눈 능력에 기대다가 더 극단적인 상황에서 이 기술을 꺼낸다는 점에서, 마왕 무장은 몸의 부담을 감수하는 **비장의 수단**으로 보인다."
       }
      ],
      "sources": [
@@ -139,6 +65,118 @@
        "section": null,
        "paragraph": "A1",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Foul Legacy Transformation",
+       "revision": 1340785,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Heart of Glaze"
+        },
+        {
+         "type": "quest",
+         "name": "Teucer's Terrific Tour"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Foul Legacy Transformation",
+       "revision": 1340785,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Tartaglia"
+        },
+        {
+         "type": "item",
+         "name": "Shard of a Foul Legacy"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Delusion",
+       "revision": 743124,
+       "section": "Overview > Side Effects",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Stainless Bloom"
+        },
+        {
+         "type": "enemy",
+         "name": "Narukami Island: Tenshukaku"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and A2.",
+     "quote": "While under the effects of Foul Legacy Transformation, Tartaglia is able to wield the powers of his Hydro Vision and Electro Delusion at the same time.",
+     "sentences": [
+      {
+       "t_raw": "**Foul Legacy Transformation**은 Tartaglia가 사용하는 전투 기술이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**마왕 무장**은 타르탈리아가 사용하는 전투 기술이다."
+      },
+      {
+       "t_raw": "이 기술은 Enter the Golden House의 보스전과 Story Quest Mighty Cyclops' Adventure!의 컷신에서 사용되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 기술은 「황금옥」 진입의 보스전과 Story Quest Mighty Cyclops' Adventure!의 컷신에서 사용되었다."
+      },
+      {
+       "t_raw": "변신 상태에서는 Tartaglia가 **Hydro Vision과 Electro Delusion**의 힘을 동시에 다룰 수 있지만, 이 능력의 사용은 그에게 극심한 소모를 남기고 몸에 지속되는 후유증을 남긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "변신 상태에서는 타르탈리아가 **물 신의 눈과 번개 사안**의 힘을 동시에 다룰 수 있지만, 이 능력의 사용은 그에게 극심한 소모를 남기고 몸에 지속되는 후유증을 남긴다."
+      },
+      {
+       "t_raw": "두 힘을 함께 쓰는 대가가 몸에 오래 남는 부담으로 돌아오는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 힘을 함께 쓰는 대가가 몸에 오래 남는 부담으로 돌아오는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Foul Legacy Transformation",
+       "revision": 1340785,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Foul Legacy Transformation",
+       "revision": 1340785,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Heart of Glaze"
+        },
+        {
+         "type": "quest",
+         "name": "Teucer's Terrific Tour"
+        }
+       ]
       }
      ],
      "heading": "개요",
@@ -148,27 +186,21 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "While under the effects of Foul Legacy Transformation, Tartaglia is able to wield the powers of his Hydro Vision and Electro Delusion at the same time.",
+     "status": "accepted",
+     "note": "Supported by A1.",
+     "quote": "he was instead incapacitated by Neuvillette before fully transforming.",
      "sentences": [
       {
-       "t_raw": "변신하면 Tartaglia는 Hydro Vision과 Electro Delusion의 힘을 동시에 다룰 수 있지만, 그 사용은 그에게 **극심한 소모**를 주고 몸에 지속적인 영향을 남긴다.",
+       "t_raw": "As Light Rain Falls Without Reason에서는 Oratrice의 유죄 판결 뒤 Tartaglia가 이 기술을 시도했다.",
        "interp": false,
        "dropped": false,
-       "t": "변신하면 타르탈리아는 물 신의 눈과 번개 사안의 힘을 동시에 다룰 수 있지만, 그 사용은 그에게 **극심한 소모**를 주고 몸에 지속적인 영향을 남긴다."
+       "t": "이유 없이 내리는 비처럼에서는 계시 판결 장치의 유죄 판결 뒤 타르탈리아가 이 기술을 시도했다."
       },
       {
-       "t_raw": "몸은 두 배로 커지고 검은색과 보라색 갑옷을 두르며, 바닥에서 떠올라 매우 빠른 속도로 움직인다.",
+       "t_raw": "그러나 Neuvillette에게 완전히 변신하기 전에 제압되었다.",
        "interp": false,
        "dropped": false,
-       "t": "몸은 두 배로 커지고 검은색과 보라색 갑옷을 두르며, 바닥에서 떠올라 매우 빠른 속도로 움직인다."
-      },
-      {
-       "t_raw": "Hydro Vision과 Electro Delusion을 동시에 쓰는 능력과 몸에 남는 부작용이 함께 제시된다는 점은, 이 변신의 힘과 대가가 맞물린 기술로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "물 신의 눈과 번개 사안을 동시에 쓰는 능력과 몸에 남는 부작용이 함께 제시된다는 점은, 이 변신의 힘과 대가가 맞물린 기술로 보인다."
+       "t": "그러나 느비예트에게 완전히 변신하기 전에 제압되었다."
       }
      ],
      "sources": [
@@ -177,24 +209,7 @@
        "page": "Foul Legacy Transformation",
        "revision": 1340785,
        "section": null,
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Heart of Glaze"
-        },
-        {
-         "type": "quest",
-         "name": "Teucer's Terrific Tour"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": "Characteristics",
-       "paragraph": "A4",
+       "paragraph": "A1",
        "wiki_refs": []
       }
      ],
@@ -203,307 +218,45 @@
     },
     {
      "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This power has no relation to his Delusion; he learned it from Skirk after he fell into the Abyss, before he joined the Fatui.",
+     "status": "accepted",
+     "note": "All appearance details match A4 and A5.",
+     "quote": "When Tartaglia activates this ability, he grows to twice his size and dons a black and violet armor.",
      "sentences": [
       {
-       "t_raw": "Foul Legacy Transformation은 Tartaglia가 Abyss에 떨어진 뒤 Skirk에게 배운 힘으로, 그가 Fatui에 합류하기 전에 익힌 것이다.",
+       "t_raw": "Tartaglia가 Foul Legacy Transformation을 발동하면 몸이 **두 배**로 커지고 검은색과 보라색 갑주를 두른다.",
        "interp": false,
        "dropped": false,
-       "t": "마왕 무장은 타르탈리아가 심연에 떨어진 뒤 스커크에게 배운 힘으로, 그가 우인단에 합류하기 전에 익힌 것이다."
+       "t": "타르탈리아가 마왕 무장을 발동하면 몸이 **두 배**로 커지고 검은색과 보라색 갑주를 두른다."
       },
       {
-       "t_raw": "이 힘은 Tartaglia의 Delusion과는 무관하다.",
+       "t_raw": "갑주는 주로 검은색이며 배에서 허벅지 위쪽으로 보라색이 번지고, 상체에는 원래 옷깃이 남아 있으며 목의 Hydro Vision에는 라벤더색 깃털 장식이 둘러져 있다.",
        "interp": false,
        "dropped": false,
-       "t": "이 힘은 타르탈리아의 사안과는 무관하다."
+       "t": "갑주는 주로 검은색이며 배에서 허벅지 위쪽으로 보라색이 번지고, 상체에는 원래 옷깃이 남아 있으며 목의 물 신의 눈에는 라벤더색 깃털 장식이 둘러져 있다."
       },
       {
-       "t_raw": "그런데도 Foul Legacy Transformation이 발동된 상태에서 Tartaglia는 Hydro Vision과 Electro Delusion의 힘을 동시에 쓸 수 있다.",
+       "t_raw": "그는 바닥에서 떠오르고 엄청난 속도로 움직인다.",
        "interp": false,
        "dropped": false,
-       "t": "그런데도 마왕 무장이 발동된 상태에서 타르탈리아는 물 신의 눈과 번개 사안의 힘을 동시에 쓸 수 있다."
+       "t": "그는 바닥에서 떠오르고 엄청난 속도로 움직인다."
       },
       {
-       "t_raw": "다시 말해 이 힘은 Delusion에서 비롯된 것은 아니지만, 발동 중에는 Hydro Vision과 Electro Delusion을 함께 쓰는 구조인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "다시 말해 이 힘은 사안에서 비롯된 것은 아니지만, 발동 중에는 물 신의 눈과 번개 사안을 함께 쓰는 구조인 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": null,
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Tartaglia"
-        },
-        {
-         "type": "item",
-         "name": "Shard of a Foul Legacy"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Heart of Glaze"
-        },
-        {
-         "type": "quest",
-         "name": "Teucer's Terrific Tour"
-        }
-       ]
-      }
-     ],
-     "heading": "정체",
-     "latin_left": []
-    },
-    {
-     "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Childe has only been seen suffering the repercussions of using his Delusion in conjunction with the Abyss technique Foul Legacy Transformation; he has not been shown using his Delusion alone",
-     "sentences": [
-      {
-       "t_raw": "Fatui 인원이 Delusion 부작용을 겪는지에 대해서는 알려진 바가 적다.",
+       "t_raw": "등에는 **별무늬 망토**가 걸리고, 손가락에는 날카로운 회색 발톱이 생긴다.",
        "interp": false,
        "dropped": false,
-       "t": "우인단 인원이 사안 부작용을 겪는지에 대해서는 알려진 바가 적다."
+       "t": "등에는 **별무늬 망토**가 걸리고, 손가락에는 날카로운 회색 발톱이 생긴다."
       },
       {
-       "t_raw": "Childe와 Signora는 Delusion 사용으로 인한 신체적 부작용을 보인 적이 없지만, 두 사람 모두 평범한 인간이 아니어서 그 이유는 여럿일 수 있다.",
+       "t_raw": "다리 갑주는 은색 테두리와 무릎의 보라색 다이아몬드 무늬로 장식된다.",
        "interp": false,
        "dropped": false,
-       "t": "귀공자와 시뇨라는 사안 사용으로 인한 신체적 부작용을 보인 적이 없지만, 두 사람 모두 평범한 인간이 아니어서 그 이유는 여럿일 수 있다."
+       "t": "다리 갑주는 은색 테두리와 무릎의 보라색 다이아몬드 무늬로 장식된다."
       },
       {
-       "t_raw": "Childe는 Delusion을 Foul Legacy Transformation과 함께 사용했을 때의 후유증만 보였고, Delusion 단독 사용은 보이지 않았으며, 싸움이 더 극단적인 수단을 필요로 하지 않으면 보통 Vision의 능력을 쓴다.",
+       "t_raw": "마지막으로 **뿔 달린 가면**이 얼굴 전체를 덮고 길게 뻗은 뿔이 달리며, 이목구비가 없는 얼굴에 보라색 눈 하나만 남는다.",
        "interp": false,
        "dropped": false,
-       "t": "귀공자는 사안을 마왕 무장과 함께 사용했을 때의 후유증만 보였고, 사안 단독 사용은 보이지 않았으며, 싸움이 더 극단적인 수단을 필요로 하지 않으면 보통 신의 눈의 능력을 쓴다."
-      },
-      {
-       "t_raw": "그래서 관찰된 후유증이 Delusion 자체에서 온 것인지, Foul Legacy Transformation과의 결합에서 온 것인지 가르기 어려운 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그래서 관찰된 후유증이 사안 자체에서 온 것인지, 마왕 무장과의 결합에서 온 것인지 가르기 어려운 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Delusion",
-       "revision": 743124,
-       "section": "Overview > Side Effects",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Stainless Bloom"
-        },
-        {
-         "type": "enemy",
-         "name": "Narukami Island: Tenshukaku"
-        }
-       ]
-      }
-     ],
-     "heading": "정체",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It seems the burden of the Foul Legacy Transformation was too great for my body. I lacked the opportunity to think this through...",
-     "sentences": [
-      {
-       "t_raw": "Tartaglia는 **Enter the Golden House**의 보스전에서 Foul Legacy Transformation을 사용했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "타르탈리아는 **「황금옥」 진입**의 보스전에서 마왕 무장을 사용했다."
-      },
-      {
-       "t_raw": "그는 이 변신의 부담이 자신의 몸에 너무 컸던 모양이라며, 이 일을 생각해 볼 기회가 없었다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 이 변신의 부담이 자신의 몸에 너무 컸던 모양이라며, 이 일을 생각해 볼 기회가 없었다고 말한다."
-      },
-      {
-       "t_raw": "Paimon은 그가 Foul Legacy Transformation을 다시 사용한 뒤 괜찮을지 걱정한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 그가 마왕 무장을 다시 사용한 뒤 괜찮을지 걱정한다."
-      },
-      {
-       "t_raw": "Tartaglia의 말과 Paimon의 걱정을 함께 보면, 이 기술의 사용은 몸에 상당한 부담을 남기는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "타르탈리아의 말과 페이몬의 걱정을 함께 보면, 이 기술의 사용은 몸에 상당한 부담을 남기는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Heart of Glaze",
-       "quest_ko": "대립",
-       "version": "1.1",
-       "speaker": "Childe"
-      },
-      {
-       "kind": "quest",
-       "quest": "Defender of Childhood Dreams",
-       "quest_ko": "동화 속의 꿈을 지키는 자",
-       "version": "1.1",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Foul Legacy Transformation? Does it make you stronger than Mr. Cyclops?",
-     "sentences": [
-      {
-       "t_raw": "**Mighty Cyclops' Adventure!**에서는 컷신에서 Foul Legacy Transformation을 사용하는 장면이 나온다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**외눈박이 이야기**에서는 컷신에서 마왕 무장을 사용하는 장면이 나온다."
-      },
-      {
-       "t_raw": "Teucer는 Foul Legacy Transformation이 Mr. Cyclops보다 강하게 만들어 주느냐고 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "테우세르는 마왕 무장이 Mr. 외눈박이보다 강하게 만들어 주느냐고 묻는다."
-      },
-      {
-       "t_raw": "Tartaglia는 그 말이 자신의 Foul Legacy Transformation을 가리키는 것이라고 받아들인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "타르탈리아는 그 말이 자신의 마왕 무장을 가리키는 것이라고 받아들인다."
-      },
-      {
-       "t_raw": "그는 또 Foul Legacy Transformation을 쓰지 않았다는 뜻이냐고 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 또 마왕 무장을 쓰지 않았다는 뜻이냐고 되묻는다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Teucer's Terrific Tour",
-       "quest_ko": "테우세르의 리월 견문록",
-       "version": "1.1",
-       "speaker": "Childe"
-      },
-      {
-       "kind": "quest",
-       "quest": "Teucer's Terrific Tour",
-       "quest_ko": "테우세르의 리월 견문록",
-       "version": "1.1",
-       "speaker": "Teucer"
-      },
-      {
-       "kind": "quest",
-       "quest": "Teucer's Terrific Tour",
-       "quest_ko": "테우세르의 리월 견문록",
-       "version": "1.1",
-       "speaker": "Childe"
-      }
-     ],
-     "heading": "작중 행적",
-     "latin_left": [
-      "Mr"
-     ]
-    },
-    {
-     "section": "작중 행적",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "he was instead incapacitated by Neuvillette before fully transforming.",
-     "sentences": [
-      {
-       "t_raw": "**As Light Rain Falls Without Reason**에서 Tartaglia는 Oratrice의 유죄 판결을 받은 뒤 Foul Legacy Transformation을 사용하려 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**이유 없이 내리는 비처럼**에서 타르탈리아는 계시 판결 장치의 유죄 판결을 받은 뒤 마왕 무장을 사용하려 했다."
-      },
-      {
-       "t_raw": "Neuvillette는 그가 완전히 변신하기 전에 제압했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "느비예트는 그가 완전히 변신하기 전에 제압했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적",
-     "latin_left": []
-    },
-    {
-     "section": "변신의 모습",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When Tartaglia activates this ability, he grows to twice his size and dons a black and violet armor. He also now levitates off the floor and moves around at breakneck speed.",
-     "sentences": [
-      {
-       "t_raw": "Tartaglia가 이 능력을 발동하면 몸집이 **두 배로 커지고 검은색과 보라색 갑옷**을 두른다.",
-       "interp": false,
-       "dropped": false,
-       "t": "타르탈리아가 이 능력을 발동하면 몸집이 **두 배로 커지고 검은색과 보라색 갑옷**을 두른다."
-      },
-      {
-       "t_raw": "동시에 바닥에서 떠올라 아주 빠른 속도로 움직인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "동시에 바닥에서 떠올라 아주 빠른 속도로 움직인다."
-      },
-      {
-       "t_raw": "몸집이 두 배로 커진 데다 바닥에서 떠올라 빠르게 움직이는 모습은 한눈에 평소와 다른 변신 상태임을 드러내는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "몸집이 두 배로 커진 데다 바닥에서 떠올라 빠르게 움직이는 모습은 한눈에 평소와 다른 변신 상태임을 드러내는 셈이다."
+       "t": "마지막으로 **뿔 달린 가면**이 얼굴 전체를 덮고 길게 뻗은 뿔이 달리며, 이목구비가 없는 얼굴에 보라색 눈 하나만 남는다."
       }
      ],
      "sources": [
@@ -514,49 +267,7 @@
        "section": "Characteristics",
        "paragraph": "A4",
        "wiki_refs": []
-      }
-     ],
-     "heading": "변신의 모습",
-     "latin_left": []
-    },
-    {
-     "section": "변신의 모습",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Finally, his mask takes a new form, covering the entirety of his face, and elongating to sport long horns at his head. The face of the mask is featureless, save for a single purple eye.",
-     "sentences": [
-      {
-       "t_raw": "갑옷은 주로 검은색이며 배 중앙에서 허벅지 위쪽으로 갈수록 보라색이 번진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "갑옷은 주로 검은색이며 배 중앙에서 허벅지 위쪽으로 갈수록 보라색이 번진다."
       },
-      {
-       "t_raw": "상체에는 원래 옷의 깃이 남아 있고, Hydro Vision에는 목의 연보라색 깃털 장식이 더해진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "상체에는 원래 옷의 깃이 남아 있고, 물 신의 눈에는 목의 연보라색 깃털 장식이 더해진다."
-      },
-      {
-       "t_raw": "별무늬가 있는 긴 망토를 두르고, 팔은 갑옷으로 덮이며 손가락에는 날카로운 회색 발톱이 돋는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "별무늬가 있는 긴 망토를 두르고, 팔은 갑옷으로 덮이며 손가락에는 날카로운 회색 발톱이 돋는다."
-      },
-      {
-       "t_raw": "배꼽에는 Electro Delusion이 자리하고, 다리는 은색 선과 무릎의 보라색 다이아몬드 무늬가 있는 갑옷으로 감싸진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "배꼽에는 번개 사안이 자리하고, 다리는 은색 선과 무릎의 보라색 다이아몬드 무늬가 있는 갑옷으로 감싸진다."
-      },
-      {
-       "t_raw": "가면은 얼굴 전체를 덮고 머리 쪽으로 길게 뻗은 뿔을 갖도록 길어지며, 아무 특징도 없는 얼굴에는 **단 하나의 보라색 눈**만 남는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "가면은 얼굴 전체를 덮고 머리 쪽으로 길게 뻗은 뿔을 갖도록 길어지며, 아무 특징도 없는 얼굴에는 **단 하나의 보라색 눈**만 남는다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Foul Legacy Transformation",
@@ -566,38 +277,32 @@
        "wiki_refs": []
       }
      ],
-     "heading": "변신의 모습",
+     "heading": "정체",
      "latin_left": []
     },
     {
-     "section": "대가와 부작용",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It seems the burden of the Foul Legacy Transformation was too great for my body. I lacked the opportunity to think this through...",
+     "section": "정체",
+     "status": "accepted",
+     "note": "The Hydro Vision at the neck and Electro Delusion at the navel are in A5, and the drain is in A2. The interpretation is hedged and reasonable.",
+     "quote": "While under the effects of Foul Legacy Transformation, Tartaglia is able to wield the powers of his Hydro Vision and Electro Delusion at the same time.",
      "sentences": [
       {
-       "t_raw": "Foul Legacy Transformation을 쓰는 동안 Tartaglia는 Hydro Vision과 Electro Delusion의 힘을 동시에 다룰 수 있지만, 그 사용은 그에게 **극심한 소모**를 안긴다.",
+       "t_raw": "Hydro Vision은 목에, Electro Delusion은 배꼽에 자리하며, 변신 중 Tartaglia는 두 힘을 동시에 쓴다.",
        "interp": false,
        "dropped": false,
-       "t": "마왕 무장을 쓰는 동안 타르탈리아는 물 신의 눈과 번개 사안의 힘을 동시에 다룰 수 있지만, 그 사용은 그에게 **극심한 소모**를 안긴다."
+       "t": "물 신의 눈은 목에, 번개 사안은 배꼽에 자리하며, 변신 중 타르탈리아는 두 힘을 동시에 쓴다."
       },
       {
-       "t_raw": "그 사용은 몸에 **지속적인 영향**도 남긴다.",
+       "t_raw": "그러나 그 사용은 그에게 매우 큰 부담을 주고 몸에 지속되는 영향을 남긴다.",
        "interp": false,
        "dropped": false,
-       "t": "그 사용은 몸에 **지속적인 영향**도 남긴다."
+       "t": "그러나 그 사용은 그에게 매우 큰 부담을 주고 몸에 지속되는 영향을 남긴다."
       },
       {
-       "t_raw": "Childe는 자신의 몸에는 Foul Legacy Transformation의 부담이 너무 컸고, 이를 충분히 생각할 기회가 없었다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "귀공자는 자신의 몸에는 마왕 무장의 부담이 너무 컸고, 이를 충분히 생각할 기회가 없었다고 말한다."
-      },
-      {
-       "t_raw": "이는 변신의 대가가 단순한 기력 소모를 넘어 몸에 남는 부담으로 받아들여졌음을 보여 주는 대목으로 볼 수 있다.",
+       "t_raw": "목과 배꼽의 두 매체에 힘을 담은 채 동시에 쓰는 만큼, 이 변신은 몸에 큰 부담과 지속되는 영향을 남기는 형태로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이는 변신의 대가가 단순한 기력 소모를 넘어 몸에 남는 부담으로 받아들여졌음을 보여 주는 대목으로 볼 수 있다."
+       "t": "목과 배꼽의 두 매체에 힘을 담은 채 동시에 쓰는 만큼, 이 변신은 몸에 큰 부담과 지속되는 영향을 남기는 형태로 보인다."
       }
      ],
      "sources": [
@@ -619,33 +324,40 @@
        ]
       },
       {
-       "kind": "quest",
-       "quest": "Heart of Glaze",
-       "quest_ko": "대립",
-       "version": "1.1",
-       "speaker": "Childe"
+       "kind": "wiki",
+       "page": "Foul Legacy Transformation",
+       "revision": 1340785,
+       "section": "Characteristics",
+       "paragraph": "A5",
+       "wiki_refs": []
       }
      ],
-     "heading": "대가와 부작용",
+     "heading": "정체",
      "latin_left": []
     },
     {
-     "section": "대가와 부작용",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But Paimon wonders if he'll be alright after using Foul Legacy Transformation again...",
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Supported by A3. The interpretation is hedged and follows from the English.",
+     "quote": "This power has no relation to his Delusion; he learned it from Skirk after he fell into the Abyss, before he joined the Fatui.",
      "sentences": [
       {
-       "t_raw": "Paimon은 그가 Foul Legacy Transformation을 다시 사용한 뒤 괜찮을지 궁금해한다.",
+       "t_raw": "**Foul Legacy Transformation**은 Tartaglia가 Abyss에 떨어진 뒤, Fatui에 합류하기 전에 Skirk에게서 배운 힘이다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 그가 마왕 무장을 다시 사용한 뒤 괜찮을지 궁금해한다."
+       "t": "**마왕 무장**은 타르탈리아가 심연에 떨어진 뒤, 우인단에 합류하기 전에 스커크에게서 배운 힘이다."
       },
       {
-       "t_raw": "몸에 지속적인 영향을 남기는 기술을 다시 쓰는 모습에 그를 지켜보는 이가 **걱정**을 보이는 셈이다.",
+       "t_raw": "이 힘은 그의 Delusion과 무관하며, 그가 Fatui에 몸담기 전부터 익힌 기술이라는 점이 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 힘은 그의 사안과 무관하며, 그가 우인단에 몸담기 전부터 익힌 기술이라는 점이 드러난다."
+      },
+      {
+       "t_raw": "Abyss에 떨어진 뒤 Skirk에게 배웠다는 사실과 **Delusion과 무관**하다는 사실을 함께 보면, 이 기술은 Fatui의 Delusion과 다른 경로에서 비롯된 능력으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "몸에 지속적인 영향을 남기는 기술을 다시 쓰는 모습에 그를 지켜보는 이가 **걱정**을 보이는 셈이다."
+       "t": "심연에 떨어진 뒤 스커크에게 배웠다는 사실과 **사안과 무관**하다는 사실을 함께 보면, 이 기술은 우인단의 사안과 다른 경로에서 비롯된 능력으로 보인다."
       }
      ],
      "sources": [
@@ -654,52 +366,45 @@
        "page": "Foul Legacy Transformation",
        "revision": 1340785,
        "section": null,
-       "paragraph": "A2",
+       "paragraph": "A3",
        "wiki_refs": [
         {
-         "type": "quest",
-         "name": "Heart of Glaze"
+         "type": "cs",
+         "name": "Tartaglia"
         },
         {
-         "type": "quest",
-         "name": "Teucer's Terrific Tour"
+         "type": "item",
+         "name": "Shard of a Foul Legacy"
         }
        ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Defender of Childhood Dreams",
-       "quest_ko": "동화 속의 꿈을 지키는 자",
-       "version": "1.1",
-       "speaker": "Paimon"
       }
      ],
-     "heading": "대가와 부작용",
+     "heading": "드러난 역사",
      "latin_left": []
     },
     {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He attempted to use this technique during the events of As Light Rain Falls Without Reason following his guilty verdict by the Oratrice",
+     "section": "작중 행적 — Enter the Golden House와 Mighty Cyclops' Adventure!",
+     "status": "accepted",
+     "note": "All sentences supported by A1/A2.",
+     "quote": "However, using this ability is extremely draining on him and has lasting repercussions on his body.",
      "sentences": [
       {
-       "t_raw": "Foul Legacy Transformation은 Tartaglia의 전투 기술로, 그는 Enter the Golden House의 보스전과 Mighty Cyclops' Adventure!의 컷신에서 이 힘을 사용했고, As Light Rain Falls Without Reason에서는 **Oratrice의 유죄 판결** 뒤에 이 기술을 쓰려다 완전히 변신하기 전에 Neuvillette에게 제압되었다.",
+       "t_raw": "Tartaglia는 Enter the Golden House의 보스전에서 **Foul Legacy Transformation**을 사용했고, Mighty Cyclops' Adventure!의 컷신에서도 이 모습을 드러냈다.",
        "interp": false,
        "dropped": false,
-       "t": "마왕 무장은 타르탈리아의 전투 기술로, 그는 「황금옥」 진입의 보스전과 외눈박이 이야기의 컷신에서 이 힘을 사용했고, 이유 없이 내리는 비처럼에서는 **계시 판결 장치의 유죄 판결** 뒤에 이 기술을 쓰려다 완전히 변신하기 전에 느비예트에게 제압되었다."
+       "t": "타르탈리아는 「황금옥」 진입의 보스전에서 **마왕 무장**을 사용했고, 외눈박이 이야기의 컷신에서도 이 모습을 드러냈다."
       },
       {
-       "t_raw": "이 힘은 Delusion과 무관하며, Tartaglia가 Abyss에 떨어진 뒤 **Skirk**에게 배운 것으로, 그가 Fatui에 합류하기 전에 익힌 힘이다.",
+       "t_raw": "이 변신 상태에서 그는 Hydro Vision과 Electro Delusion의 힘을 동시에 다룰 수 있지만, 사용은 극심한 탈진과 몸에 남는 **후유증**을 동반한다.",
        "interp": false,
        "dropped": false,
-       "t": "이 힘은 사안과 무관하며, 타르탈리아가 심연에 떨어진 뒤 **스커크**에게 배운 것으로, 그가 우인단에 합류하기 전에 익힌 힘이다."
+       "t": "이 변신 상태에서 그는 물 신의 눈과 번개 사안의 힘을 동시에 다룰 수 있지만, 사용은 극심한 탈진과 몸에 남는 **후유증**을 동반한다."
       },
       {
-       "t_raw": "이처럼 Foul Legacy Transformation의 뿌리는 Fatui의 Delusion이 아니라 Abyss에서의 경험과 Skirk에게 향해 있어, 그의 세력 소속과 힘의 기원이 겹치지 않는 구도를 만든다.",
+       "t_raw": "동시에 두 힘을 쓰는 변신과 그에 따르는 부담이 함께 드러나는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이처럼 마왕 무장의 뿌리는 우인단의 사안이 아니라 심연에서의 경험과 스커크에게 향해 있어, 그의 세력 소속과 힘의 기원이 겹치지 않는 구도를 만든다."
+       "t": "동시에 두 힘을 쓰는 변신과 그에 따르는 부담이 함께 드러나는 셈이다."
       }
      ],
      "sources": [
@@ -716,6 +421,129 @@
        "page": "Foul Legacy Transformation",
        "revision": 1340785,
        "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Heart of Glaze"
+        },
+        {
+         "type": "quest",
+         "name": "Teucer's Terrific Tour"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 「황금옥」 진입과 외눈박이 이야기",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Enter the Golden House와 Mighty Cyclops' Adventure!",
+     "status": "accepted",
+     "note": "Supported by Q1 and Q2; interpretation is reasonable.",
+     "quote": "But Paimon wonders if he'll be alright after using Foul Legacy Transformation again...",
+     "sentences": [
+      {
+       "t_raw": "Tartaglia는 Foul Legacy Transformation의 부담이 자신의 몸에 너무 컸던 모양이라며, 그 영향을 미처 생각할 틈이 없었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타르탈리아는 마왕 무장의 부담이 자신의 몸에 너무 컸던 모양이라며, 그 영향을 미처 생각할 틈이 없었다고 말한다."
+      },
+      {
+       "t_raw": "Paimon은 그가 Foul Legacy Transformation을 다시 사용한 뒤 괜찮을지 걱정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 그가 마왕 무장을 다시 사용한 뒤 괜찮을지 걱정한다."
+      },
+      {
+       "t_raw": "당사자가 부담을 말하고 주변 인물이 다시 사용한 뒤의 상태를 걱정하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "당사자가 부담을 말하고 주변 인물이 다시 사용한 뒤의 상태를 걱정하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Heart of Glaze",
+       "quest_ko": "대립",
+       "version": "1.1",
+       "speaker": "Childe"
+      },
+      {
+       "kind": "quest",
+       "quest": "Defender of Childhood Dreams",
+       "quest_ko": "동화 속의 꿈을 지키는 자",
+       "version": "1.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 「황금옥」 진입과 외눈박이 이야기",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — As Light Rain Falls Without Reason",
+     "status": "accepted",
+     "note": "Supported by A1.",
+     "quote": "he was instead incapacitated by Neuvillette before fully transforming.",
+     "sentences": [
+      {
+       "t_raw": "As Light Rain Falls Without Reason의 사건에서 Tartaglia는 Oratrice의 **유죄 판결**을 받은 뒤 Foul Legacy Transformation을 사용하려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이유 없이 내리는 비처럼의 사건에서 타르탈리아는 계시 판결 장치의 **유죄 판결**을 받은 뒤 마왕 무장을 사용하려 했다."
+      },
+      {
+       "t_raw": "그러나 그는 **완전히 변신하기 전에** Neuvillette에게 제압되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 그는 **완전히 변신하기 전에** 느비예트에게 제압되었다."
+      },
+      {
+       "t_raw": "이 사건은 Foul Legacy Transformation이 완전한 형태로 발현되기 전에 중단된 사례로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 사건은 마왕 무장이 완전한 형태로 발현되기 전에 중단된 사례로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Foul Legacy Transformation",
+       "revision": 1340785,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이유 없이 내리는 비처럼",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by A3.",
+     "quote": "This power has no relation to his Delusion; he learned it from Skirk after he fell into the Abyss, before he joined the Fatui.",
+     "sentences": [
+      {
+       "t_raw": "**Skirk에게 배운 힘**인 Foul Legacy Transformation은 Tartaglia의 Delusion과 관계가 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**스커크에게 배운 힘**인 마왕 무장은 타르탈리아의 사안과 관계가 없다."
+      },
+      {
+       "t_raw": "Tartaglia는 Abyss에 떨어진 뒤 Fatui에 합류하기 전 Skirk에게 이 힘을 배웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타르탈리아는 심연에 떨어진 뒤 우인단에 합류하기 전 스커크에게 이 힘을 배웠다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Foul Legacy Transformation",
+       "revision": 1340785,
+       "section": null,
        "paragraph": "A3",
        "wiki_refs": [
         {
@@ -734,89 +562,126 @@
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Foul Legacy Transformation? Does it make you stronger than Mr. Cyclops?",
+     "status": "accepted",
+     "note": "Supported by A1; interpretation is modest.",
+     "quote": "he was instead incapacitated by Neuvillette before fully transforming.",
      "sentences": [
       {
-       "t_raw": "Teucer는 Foul Legacy Transformation이 **Mr. Cyclops**보다 강하게 만드는지 묻고, Tartaglia는 그 말이 자신의 Foul Legacy Transformation을 가리킨다고 받아들인다.",
+       "t_raw": "Tartaglia는 Oratrice의 유죄 판결 뒤 Foul Legacy Transformation을 쓰려 했으나, 완전히 변신하기 전 Neuvillette에게 제압되었다.",
        "interp": false,
        "dropped": false,
-       "t": "테우세르는 마왕 무장이 **Mr. 외눈박이**보다 강하게 만드는지 묻고, 타르탈리아는 그 말이 자신의 마왕 무장을 가리킨다고 받아들인다."
+       "t": "타르탈리아는 계시 판결 장치의 유죄 판결 뒤 마왕 무장을 쓰려 했으나, 완전히 변신하기 전 느비예트에게 제압되었다."
       },
       {
-       "t_raw": "Tartaglia는 또 어떤 말이 Foul Legacy Transformation을 쓰지 않았다는 뜻이냐고 확인하는 대사를 남긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "타르탈리아는 또 어떤 말이 마왕 무장을 쓰지 않았다는 뜻이냐고 확인하는 대사를 남긴다."
-      },
-      {
-       "t_raw": "이 대화들은 Foul Legacy Transformation이 Teucer와의 대화에서도 이름이 오르내리는 소재임을 보여 준다.",
+       "t_raw": "**Oratrice의 유죄 판결**과 Neuvillette의 제압은 한 사건 안에서 맞물린 것으로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "이 대화들은 마왕 무장이 테우세르와의 대화에서도 이름이 오르내리는 소재임을 보여 준다."
+       "t": "**계시 판결 장치의 유죄 판결**과 느비예트의 제압은 한 사건 안에서 맞물린 것으로 볼 수 있다."
       }
      ],
      "sources": [
       {
-       "kind": "quest",
-       "quest": "Teucer's Terrific Tour",
-       "quest_ko": "테우세르의 리월 견문록",
-       "version": "1.1",
-       "speaker": "Childe"
-      },
-      {
-       "kind": "quest",
-       "quest": "Teucer's Terrific Tour",
-       "quest_ko": "테우세르의 리월 견문록",
-       "version": "1.1",
-       "speaker": "Teucer"
-      },
-      {
-       "kind": "quest",
-       "quest": "Teucer's Terrific Tour",
-       "quest_ko": "테우세르의 리월 견문록",
-       "version": "1.1",
-       "speaker": "Childe"
+       "kind": "wiki",
+       "page": "Foul Legacy Transformation",
+       "revision": 1340785,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
       }
      ],
      "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Mr"
-     ]
+     "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This power has no relation to his Delusion; he learned it from Skirk after he fell into the Abyss, before he joined the Fatui.",
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M1.",
+     "quote": "Childe has only been seen suffering the repercussions of using his Delusion in conjunction with the Abyss technique Foul Legacy Transformation",
      "sentences": [
       {
-       "t_raw": "Foul Legacy Transformation은 Delusion과 무관한 힘으로, Tartaglia가 Abyss에 떨어진 뒤 Skirk에게 배운 것이다.",
+       "t_raw": "**Delusion 부작용** 비교에는 Childe와 Signora가 언급된다.",
        "interp": false,
        "dropped": false,
-       "t": "마왕 무장은 사안과 무관한 힘으로, 타르탈리아가 심연에 떨어진 뒤 스커크에게 배운 것이다."
+       "t": "**사안 부작용** 비교에는 귀공자와 시뇨라가 언급된다."
       },
       {
-       "t_raw": "그 힘을 쓰면 Hydro Vision과 Electro Delusion을 동시에 다룰 수 있지만, 사용은 극심한 소모와 몸에 남는 영향으로 이어진다.",
+       "t_raw": "Childe가 Delusion 사용의 후유증을 보인 것은 Foul Legacy Transformation과 함께 쓸 때뿐이며, Signora의 Delusion은 대부분의 다른 Delusion과 명시적으로 다르고 그녀의 Cryo Delusion은 Tsaritsa의 'grace'로 만들어졌다.",
        "interp": false,
        "dropped": false,
-       "t": "그 힘을 쓰면 물 신의 눈과 번개 사안을 동시에 다룰 수 있지만, 사용은 극심한 소모와 몸에 남는 영향으로 이어진다."
-      },
-      {
-       "t_raw": "**Delusion 단독 사용**은 확인되지 않았고, Delusion 사용의 후유증을 보인 사례도 Foul Legacy Transformation과 함께 쓴 경우뿐이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**사안 단독 사용**은 확인되지 않았고, 사안 사용의 후유증을 보인 사례도 마왕 무장과 함께 쓴 경우뿐이다."
-      },
-      {
-       "t_raw": "이 때문에 **부작용의 경계**가 어디까지인지는 분명하지 않다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 때문에 **부작용의 경계**가 어디까지인지는 분명하지 않다고 볼 수 있다."
+       "t": "귀공자가 사안 사용의 후유증을 보인 것은 마왕 무장과 함께 쓸 때뿐이며, 시뇨라의 사안은 대부분의 다른 사안과 명시적으로 다르고 그녀의 얼음 사안은 얼음의 여왕의 'grace'로 만들어졌다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Delusion",
+       "revision": 743124,
+       "section": "Overview > Side Effects",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Stainless Bloom"
+        },
+        {
+         "type": "enemy",
+         "name": "Narukami Island: Tenshukaku"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "trimmed",
+     "note": "A3 says the power has no relation to his Delusion, but the sentence's 'Delusion과 관계없는 힘이지만, 그 상태에서는...' is okay; however it says Hydro Vision and Electro Delusion are used simultaneously, which A2 supports. Actually sentence 0 is supported. Correction: only item flagged is none.",
+     "quote": "While under the effects of Foul Legacy Transformation, Tartaglia is able to wield the powers of his Hydro Vision and Electro Delusion at the same time.",
+     "sentences": [
+      {
+       "t_raw": "Foul Legacy Transformation은 Delusion과 관계없는 힘이지만, 그 상태에서는 Hydro Vision과 Electro Delusion의 힘을 동시에 쓸 수 있다.",
+       "interp": false,
+       "dropped": true,
+       "t": "마왕 무장은 사안과 관계없는 힘이지만, 그 상태에서는 물 신의 눈과 번개 사안의 힘을 동시에 쓸 수 있다."
+      },
+      {
+       "t_raw": "그 기술은 Tartaglia에게 매우 큰 소모이며 몸에 남는 영향도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 기술은 타르탈리아에게 매우 큰 소모이며 몸에 남는 영향도 있다."
+      },
+      {
+       "t_raw": "그가 Delusion 사용의 후유증을 보인 사례는 Abyss 기술인 Foul Legacy Transformation과 Delusion을 함께 쓸 때였고, Delusion만 쓴 모습은 나오지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 사안 사용의 후유증을 보인 사례는 심연 기술인 마왕 무장과 사안을 함께 쓸 때였고, 사안만 쓴 모습은 나오지 않았다."
+      },
+      {
+       "t_raw": "이를 보면 **함께 쓰는 부작용**은 Delusion 단독 사용보다 두 힘의 병용과 관련 있을 가능성이 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이를 보면 **함께 쓰는 부작용**은 사안 단독 사용보다 두 힘의 병용과 관련 있을 가능성이 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Foul Legacy Transformation",
+       "revision": 1340785,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Tartaglia"
+        },
+        {
+         "type": "item",
+         "name": "Shard of a Foul Legacy"
+        }
+       ]
+      },
       {
        "kind": "wiki",
        "page": "Foul Legacy Transformation",
@@ -836,23 +701,6 @@
       },
       {
        "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": null,
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Tartaglia"
-        },
-        {
-         "type": "item",
-         "name": "Shard of a Foul Legacy"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
        "page": "Delusion",
        "revision": 743124,
        "section": "Overview > Side Effects",
@@ -874,33 +722,38 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences supported by M1.",
      "quote": "Too little is known about Fatui personnel to tell whether they suffer from the same Delusion side effects as non-Fatui users.",
      "sentences": [
       {
-       "t_raw": "Fatui 인원이 비-Fatui 사용자와 같은 Delusion 부작용을 겪는지 판단하기에는 알려진 정보가 적다.",
+       "t_raw": "Fatui 인물이 일반적인 Delusion 사용자와 같은 부작용을 겪는지 판단할 만큼의 정보는 아직 적다.",
        "interp": false,
        "dropped": false,
-       "t": "우인단 인원이 비-Fatui 사용자와 같은 사안 부작용을 겪는지 판단하기에는 알려진 정보가 적다."
+       "t": "우인단 인물이 일반적인 사안 사용자와 같은 부작용을 겪는지 판단할 만큼의 정보는 아직 적다."
       },
       {
-       "t_raw": "Tartaglia와 Signora 모두 Delusion 사용에서 육체적 결점을 보이지 않았지만, 둘 다 평범한 인간이 아니어서 이유가 여럿일 수 있다.",
+       "t_raw": "Childe와 Signora는 Delusion 사용으로 인한 신체적 결점을 보이지 않았지만, 두 사람 모두 평범한 인간이 아니어서 이유를 여럿 짐작할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "타르탈리아와 시뇨라 모두 사안 사용에서 육체적 결점을 보이지 않았지만, 둘 다 평범한 인간이 아니어서 이유가 여럿일 수 있다."
+       "t": "귀공자와 시뇨라는 사안 사용으로 인한 신체적 결점을 보이지 않았지만, 두 사람 모두 평범한 인간이 아니어서 이유를 여럿 짐작할 수 있다."
       },
       {
-       "t_raw": "Tartaglia는 더 극단적인 수단이 필요하지 않으면 Vision 능력을 기본으로 쓰는 편이다.",
+       "t_raw": "Signora의 Delusion은 대부분의 다른 Delusion과 분명히 다르며, living flame의 기술로 몸을 바꾼 데다 Tsaritsa의 'grace'로 만들어진 Cryo Delusion이 그녀를 삼켜 죽이는 것을 막는다.",
        "interp": false,
        "dropped": false,
-       "t": "타르탈리아는 더 극단적인 수단이 필요하지 않으면 신의 눈 능력을 기본으로 쓰는 편이다."
+       "t": "시뇨라의 사안은 대부분의 다른 사안과 분명히 다르며, 살아있는 불꽃의 기술로 몸을 바꾼 데다 얼음의 여왕의 '은총'으로 만들어진 얼음 사안이 그녀를 삼켜 죽이는 것을 막는다.",
+       "polish": {
+        "from": "시뇨라의 사안은 대부분의 다른 사안과 분명히 다르며, living flame의 기술로 몸을 바꾼 데다 얼음의 여왕의 'grace'로 만들어진 얼음 사안이 그녀를 삼켜 죽이는 것을 막는다.",
+        "text": "시뇨라의 사안은 대부분의 다른 사안과 분명히 다르며, 살아있는 불꽃의 기술로 몸을 바꾼 데다 얼음의 여왕의 '은총'으로 만들어진 얼음 사안이 그녀를 삼켜 죽이는 것을 막는다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그래서 Delusion 단독 사용과 Foul Legacy Transformation을 분리해 부작용을 가늠하기는 어렵다고 보인다.",
+       "t_raw": "그래서 **Fatui 인물의 부작용 정보 부족**은 Foul Legacy Transformation과 Delusion의 병용 문제를 더 불확실하게 만든다.",
        "interp": true,
        "dropped": false,
-       "t": "그래서 사안 단독 사용과 마왕 무장을 분리해 부작용을 가늠하기는 어렵다고 보인다."
+       "t": "그래서 **우인단 인물의 부작용 정보 부족**은 마왕 무장과 사안의 병용 문제를 더 불확실하게 만든다."
       }
      ],
      "sources": [
@@ -923,30 +776,51 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Fatui"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Teucer dialogue: Tartaglia's line in Q3 comes before Teucer's, and Q4 is Teucer asking, not Tartaglia asking back about it in the stated order; see note below.",
      "quote": "The Foul Legacy Transformation? Does it make you stronger than Mr. Cyclops?",
      "sentences": [
       {
-       "t_raw": "Teucer는 Foul Legacy Transformation이 Mr. Cyclops보다 더 강하게 만드는 힘인지 물었다.",
+       "t_raw": "Teucer와의 대화에서 Foul Legacy Transformation이 화제로 오른다.",
        "interp": false,
        "dropped": false,
-       "t": "테우세르는 마왕 무장이 Mr. 외눈박이보다 더 강하게 만드는 힘인지 물었다."
+       "repaired": true,
+       "t": "테우세르와의 대화에서 마왕 무장이 화제로 오른다."
       },
       {
-       "t_raw": "Childe는 웃으며 자신의 Foul Legacy Transformation을 말하는 것 같다고 답했다.",
+       "t_raw": "Tartaglia는 상대가 자신이 Foul Legacy Transformation을 쓰지 않았다는 뜻인지 먼저 되묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "귀공자는 웃으며 자신의 마왕 무장을 말하는 것 같다고 답했다."
+       "repaired": true,
+       "t": "타르탈리아는 상대가 자신이 마왕 무장을 쓰지 않았다는 뜻인지 먼저 되묻는다."
+      },
+      {
+       "t_raw": "그러자 Teucer는 Foul Legacy Transformation이 Mr. Cyclops보다 Tartaglia를 더 강하게 만드는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그러자 테우세르는 마왕 무장이 Mr. 외눈박이보다 타르탈리아를 더 강하게 만드는지 묻는다."
+      },
+      {
+       "t_raw": "Tartaglia는 웃으며 그것이 자신의 Foul Legacy Transformation을 말하는 것이라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "타르탈리아는 웃으며 그것이 자신의 마왕 무장을 말하는 것이라고 답한다."
       }
      ],
      "sources": [
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Childe"
+      },
       {
        "kind": "quest",
        "quest": "Teucer's Terrific Tour",
@@ -966,59 +840,14 @@
      "latin_left": [
       "Mr"
      ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The face of the mask is featureless, save for a single purple eye.",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 Childe가 Foul Legacy Transformation을 다시 사용한 뒤에도 괜찮을지 걱정했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 귀공자가 마왕 무장을 다시 사용한 뒤에도 괜찮을지 걱정했다."
-      },
-      {
-       "t_raw": "한편, 변신한 모습의 가면은 얼굴 전체를 덮고 길게 뻗은 뿔을 갖춘다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한편, 변신한 모습의 가면은 얼굴 전체를 덮고 길게 뻗은 뿔을 갖춘다."
-      },
-      {
-       "t_raw": "가면의 얼굴은 아무 특징이 없고, 하나의 보라색 눈이 자리한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "가면의 얼굴은 아무 특징이 없고, 하나의 보라색 눈이 자리한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Defender of Childhood Dreams",
-       "quest_ko": "동화 속의 꿈을 지키는 자",
-       "version": "1.1",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "wiki",
-       "page": "Foul Legacy Transformation",
-       "revision": 1340785,
-       "section": "Characteristics",
-       "paragraph": "A5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Foul Legacy Transformation의 부담은 내 몸에 너무 컸던 모양이다. 이걸 충분히 생각해 볼 기회가 없었어...",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Foul Legacy Transformation의 부담이 내 몸에 너무 컸던 모양이다. 이 일을 충분히 생각할 기회가 없었다...",
      "en": "It seems the burden of the Foul Legacy Transformation was too great for my body. I lacked the opportunity to think this through...",
      "speaker": "Childe",
      "source": {
@@ -1028,30 +857,13 @@
       "version": "1.1",
       "speaker": "Childe"
      },
-     "t": "마왕 무장의 부담은 내 몸에 너무 컸던 모양이다. 이걸 충분히 생각해 볼 기회가 없었어...",
+     "t": "마왕 무장의 부담이 내 몸에 너무 컸던 모양이다. 이 일을 충분히 생각할 기회가 없었다...",
      "speaker_ko": "귀공자"
     },
     {
-     "section": "작중 행적",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Foul Legacy Transformation의 부담은 내 몸에 너무 컸던 모양이다. 이 일을 생각해 볼 기회가 없었다...",
-     "en": "It seems the burden of the Foul Legacy Transformation was too great for my body. I lacked the opportunity to think this through...",
-     "speaker": "Childe",
-     "source": {
-      "kind": "quest",
-      "quest": "Heart of Glaze",
-      "quest_ko": "대립",
-      "version": "1.1",
-      "speaker": "Childe"
-     },
-     "t": "마왕 무장의 부담은 내 몸에 너무 컸던 모양이다. 이 일을 생각해 볼 기회가 없었다...",
-     "speaker_ko": "귀공자"
-    },
-    {
-     "section": "대가와 부작용",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Enter the Golden House와 Mighty Cyclops' Adventure!",
+     "status": "accepted",
+     "note": "Faithful translation.",
      "t_raw": "하지만 Paimon은 그가 Foul Legacy Transformation을 다시 사용한 뒤 괜찮을지 궁금해한다...",
      "en": "But Paimon wonders if he'll be alright after using Foul Legacy Transformation again...",
      "speaker": "Paimon",
@@ -1066,27 +878,10 @@
      "speaker_ko": "페이몬"
     },
     {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Foul Legacy Transformation? Mr. Cyclops보다 더 강해지는 거야?",
-     "en": "The Foul Legacy Transformation? Does it make you stronger than Mr. Cyclops?",
-     "speaker": "Teucer",
-     "source": {
-      "kind": "quest",
-      "quest": "Teucer's Terrific Tour",
-      "quest_ko": "테우세르의 리월 견문록",
-      "version": "1.1",
-      "speaker": "Teucer"
-     },
-     "t": "마왕 무장? Mr. 외눈박이보다 더 강해지는 거야?",
-     "speaker_ko": "테우세르"
-    },
-    {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Foul Legacy Transformation의 부담이 내 몸에 너무 컸던 모양이다. 이걸 미리 생각해 볼 기회가 없었어...",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Foul Legacy Transformation의 부담이 내 몸에 너무 컸던 모양이다. 이 일을 충분히 생각해 볼 기회가 없었다...",
      "en": "It seems the burden of the Foul Legacy Transformation was too great for my body. I lacked the opportunity to think this through...",
      "speaker": "Childe",
      "source": {
@@ -1096,14 +891,14 @@
       "version": "1.1",
       "speaker": "Childe"
      },
-     "t": "마왕 무장의 부담이 내 몸에 너무 컸던 모양이다. 이걸 미리 생각해 볼 기회가 없었어...",
+     "t": "마왕 무장의 부담이 내 몸에 너무 컸던 모양이다. 이 일을 충분히 생각해 볼 기회가 없었다...",
      "speaker_ko": "귀공자"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Foul Legacy Transformation? Mr. Cyclops보다 더 강해지게 만드는 거야?",
+     "status": "accepted",
+     "note": "Faithful translation of Teucer's line: 'Foul Legacy Transformation? Does it make you stronger than Mr. Cyclops?' (Korean 'you' = Childe is the addressee, fine).",
+     "t_raw": "Foul Legacy Transformation? 그게 Mr. Cyclops보다 너를 더 강하게 만들어?",
      "en": "The Foul Legacy Transformation? Does it make you stronger than Mr. Cyclops?",
      "speaker": "Teucer",
      "source": {
@@ -1113,7 +908,7 @@
       "version": "1.1",
       "speaker": "Teucer"
      },
-     "t": "마왕 무장? Mr. 외눈박이보다 더 강해지게 만드는 거야?",
+     "t": "마왕 무장? 그게 Mr. 외눈박이보다 너를 더 강하게 만들어?",
      "speaker_ko": "테우세르"
     }
    ]

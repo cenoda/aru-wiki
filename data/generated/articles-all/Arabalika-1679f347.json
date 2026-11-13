@@ -20,41 +20,45 @@
    "input_chars": 3751,
    "input_cut": false,
    "input_hash": "2bf4fa81c403",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1-A3, M1 and M3.",
      "quote": "Arabalika has a very powerful Ararakalari, as witnessed by the Traveler when he defeated a Ruin Guard by himself.",
      "sentences": [
       {
-       "t_raw": "Arabalika는 Sumeru의 Vanarana에 있는 Aranara로, Ruins of Dahri에서 Traveler가 처음 만나 Varuna Contraption을 돕는 임무에 함께하는 NPC다.",
+       "t_raw": "Arabalika는 Sumeru의 Vanarana (Subarea)에 사는 Aranara로, Traveler가 Ruins of Dahri에서 처음 만나는 인물이다.",
        "interp": false,
        "dropped": false,
-       "t": "아란바리카는 수메르의 바나라나에 있는 아란나라로, 다흐리의 폐허에서 여행자가 처음 만나 바루나를 돕는 임무에 함께하는 NPC다."
+       "t": "아란바리카는 수메르의 바나라나에 사는 아란나라로, 여행자가 다흐리의 폐허에서 처음 만나는 인물이다."
       },
       {
-       "t_raw": "그는 Ruin Guard를 홀로 쓰러뜨릴 만큼 강한 Ararakalari를 지녔고, Traveler와 함께 Varuna Contraption의 뿌리 문제를 풀기 위해 Ruin Guard와 싸운다.",
+       "t_raw": "그는 Varuna Contraption의 \"branch\"를 치료하는 일에 Traveler와 함께하고, Ruin Guard를 홀로 쓰러뜨릴 만큼 **강력한 Ararakalari**를 지닌 것으로 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 유적 가디언을 홀로 쓰러뜨릴 만큼 강한 아라라칼라리를 지녔고, 여행자와 함께 바루나의 뿌리 문제를 풀기 위해 유적 가디언과 싸운다."
+       "t": "그는 바루나의 \"가지\"를 치료하는 일에 여행자와 함께하고, 유적 가디언을 홀로 쓰러뜨릴 만큼 **강력한 아라라칼라리**를 지닌 것으로 전해진다.",
+       "polish": {
+        "from": "그는 바루나의 \"branch\"를 치료하는 일에 여행자와 함께하고, 유적 가디언을 홀로 쓰러뜨릴 만큼 **강력한 아라라칼라리**를 지닌 것으로 전해진다.",
+        "text": "그는 바루나의 \"가지\"를 치료하는 일에 여행자와 함께하고, 유적 가디언을 홀로 쓰러뜨릴 만큼 **강력한 아라라칼라리**를 지닌 것으로 전해진다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "Arapandu는 Arabalika의 Ararakalari가 강력하다고 말하며 Iron Chunks와 Fungi를 두려워하지 않게 해 준다고 기대하고, Aranakula는 그가 Vana를 지키려 한다는 점에서 Aradasha를 닮았다고 평한다.",
+       "t_raw": "Aranakula는 Arabalika의 힘을 기준으로 자신을 견주고, Aradasha처럼 **Vana를 지키려는 태도**를 brave하다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란판두는 아란바리카의 아라라칼라리가 강력하다고 말하며 Iron Chunks와 버섯몬을 두려워하지 않게 해 준다고 기대하고, 아란나쿨라는 그가 바나를 지키려 한다는 점에서 아란다샤를 닮았다고 평한다."
-      },
-      {
-       "t_raw": "이는 그가 Vanarana의 문제를 직접 해결하는 **전투적 보호자**이자 동료들이 의지하는 존재로 보인다는 뜻이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 그가 바나라나의 문제를 직접 해결하는 **전투적 보호자**이자 동료들이 의지하는 존재로 보인다는 뜻이다."
+       "t": "아란나쿨라는 아란바리카의 힘을 기준으로 자신을 견주고, 아란다샤처럼 **바나를 지키려는 태도**를 용감하다고 말한다.",
+       "polish": {
+        "from": "아란나쿨라는 아란바리카의 힘을 기준으로 자신을 견주고, 아란다샤처럼 **바나를 지키려는 태도**를 brave하다고 말한다.",
+        "text": "아란나쿨라는 아란바리카의 힘을 기준으로 자신을 견주고, 아란다샤처럼 **바나를 지키려는 태도**를 용감하다고 말한다.",
+        "by": "or-ds"
+       }
       }
      ],
      "sources": [
@@ -96,40 +100,54 @@
        "page": "Aranakula",
        "revision": 1038370,
        "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "M3",
+       "paragraph": "M1",
        "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "Memory of Stone",
-       "quest_ko": "돌의 기억",
-       "version": "3.0",
-       "speaker": "Arapandu"
+       "kind": "wiki",
+       "page": "Aranakula",
+       "revision": 1038370,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "M3",
+       "wiki_refs": []
       }
      ],
      "heading": null,
-     "latin_left": [
-      "NPC",
-      "Iron Chunks"
-     ]
+     "latin_left": []
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Arabalika has a light green oval body with a whitish spiral on his chest and two pairs of pointed protrusions on the upper half.",
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A1-A3.",
+     "quote": "They were sent to Ruins of Dahri to help heal the Varuna Contraption's \"branch\" in the area",
      "sentences": [
       {
-       "t_raw": "Arabalika는 Sumeru의 Vanarana (Subarea)에 있는 **Vanarana의 Aranara**다.",
+       "t_raw": "Arabalika는 Sumeru의 Vanarana에 있는 Aranara다.",
        "interp": false,
        "dropped": false,
-       "t": "아란바리카는 수메르의 바나라나에 있는 **바나라나의 아란나라**다."
+       "t": "아란바리카는 수메르의 바나라나에 있는 아란나라다."
       },
       {
-       "t_raw": "연한 초록색 타원형 몸과 가슴의 희끄무레한 나선, 삼각형 문양의 작은 잎과 짙은 초록 잎 프로펠러, 흰 끝의 갈색 갈고리 지팡이가 눈에 띈다.",
+       "t_raw": "Traveler는 Caravan Ribat waypoint 동쪽의 Ruins of Dahri에서 Varuna Gatha World Quest series의 Irate Iron Chunk 퀘스트를 진행하며 그를 처음 만난다.",
        "interp": false,
        "dropped": false,
-       "t": "연한 초록색 타원형 몸과 가슴의 희끄무레한 나선, 삼각형 문양의 작은 잎과 짙은 초록 잎 프로펠러, 흰 끝의 갈색 갈고리 지팡이가 눈에 띈다."
+       "t": "여행자는 카라반 수도원 웨이포인트 동쪽의 다흐리의 폐허에서 바루나 가타 월드 임무 시리즈의 분노의 쇳덩이 퀘스트를 진행하며 그를 처음 만난다.",
+       "polish": {
+        "from": "여행자는 카라반 수도원 waypoint 동쪽의 다흐리의 폐허에서 바루나 가타 월드 임무 series의 분노의 쇳덩이 퀘스트를 진행하며 그를 처음 만난다.",
+        "text": "여행자는 카라반 수도원 웨이포인트 동쪽의 다흐리의 폐허에서 바루나 가타 월드 임무 시리즈의 분노의 쇳덩이 퀘스트를 진행하며 그를 처음 만난다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그는 **Ruin Guard를 혼자 물리칠 만큼 강력한 Ararakalari**를 지녔고, Traveler 일행은 Varuna Contraption의 \"branch\"를 치유하기 위해 Ruins of Dahri에 파견되었으며 Arabalika는 그들에게서 Arapandu의 냄새를 감지하고도 침착함을 유지했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **유적 가디언을 혼자 물리칠 만큼 강력한 아라라칼라리**를 지녔고, 여행자 일행은 바루나의 \"가지\"를 치유하기 위해 다흐리의 폐허에 파견되었으며 아란바리카는 그들에게서 아란판두의 냄새를 감지하고도 침착함을 유지했다.",
+       "polish": {
+        "from": "그는 **유적 가디언을 혼자 물리칠 만큼 강력한 아라라칼라리**를 지녔고, 여행자 일행은 바루나의 \"branch\"를 치유하기 위해 다흐리의 폐허에 파견되었으며 아란바리카는 그들에게서 아란판두의 냄새를 감지하고도 침착함을 유지했다.",
+        "text": "그는 **유적 가디언을 혼자 물리칠 만큼 강력한 아라라칼라리**를 지녔고, 여행자 일행은 바루나의 \"가지\"를 치유하기 위해 다흐리의 폐허에 파견되었으며 아란바리카는 그들에게서 아란판두의 냄새를 감지하고도 침착함을 유지했다.",
+        "by": "or-ds"
+       }
       }
      ],
      "sources": [
@@ -145,58 +163,117 @@
        "kind": "wiki",
        "page": "Arabalika",
        "revision": 1564541,
-       "section": "Profile > Appearance",
-       "paragraph": "A4",
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Irate Iron Chunk"
+        },
+        {
+         "type": "quest",
+         "name": "Varuna Gatha"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts match M1 and M3, and the interpretation follows from them.",
+     "quote": "Very brave, Arabalika, saying things like protect Vana, just like Aradasha.",
+     "sentences": [
+      {
+       "t_raw": "Aranakula는 자신이 Arabalika의 절반만큼도 강하지 않지만, Arabalika의 절반의 절반보다 강해지려 노력한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나쿨라는 자신이 아란바리카의 절반만큼도 강하지 않지만, 아란바리카의 절반의 절반보다 강해지려 노력한다고 말한다."
+      },
+      {
+       "t_raw": "Aranakula는 Arabalika가 Vana를 지키겠다고 말하는 모습을 Aradasha처럼 매우 용감하다고 평한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나쿨라는 아란바리카가 바나를 지키겠다고 말하는 모습을 아란다샤처럼 매우 용감하다고 평한다."
+      },
+      {
+       "t_raw": "Aranakula가 Arabalika를 힘의 기준으로 삼고 Vana를 지키는 용기를 Aradasha에 견주는 점에서, Arabalika는 **힘과 결의를 함께 보여 주는 존재**로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아란나쿨라가 아란바리카를 힘의 기준으로 삼고 바나를 지키는 용기를 아란다샤에 견주는 점에서, 아란바리카는 **힘과 결의를 함께 보여 주는 존재**로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aranakula",
+       "revision": 1038370,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aranakula",
+       "revision": 1038370,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "M3",
        "wiki_refs": []
       }
      ],
-     "heading": "정체와 배경",
+     "heading": "개요",
      "latin_left": []
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Arabalika has a very powerful Ararakalari, as witnessed by the Traveler when he defeated a Ruin Guard by himself.",
+     "status": "accepted",
+     "note": "Supported by A3 and A20, and the interpretation is reasonable.",
+     "quote": "With lots of memories, Ararakalari power builds up.",
      "sentences": [
       {
-       "t_raw": "Traveler가 본 Arabalika는 Ruin Guard를 혼자 쓰러뜨릴 만큼 강한 Ararakalari를 지녔고, 그는 Ararakalari를 더 강하게 하려 수련해야 한다고 말했다.",
+       "t_raw": "Arabalika는 Vanarana에 있는 Aranara다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자가 본 아란바리카는 유적 가디언을 혼자 쓰러뜨릴 만큼 강한 아라라칼라리를 지녔고, 그는 아라라칼라리를 더 강하게 하려 수련해야 한다고 말했다."
+       "t": "아란바리카는 바나라나에 있는 아란나라다."
       },
       {
-       "t_raw": "과거 Arabalika는 Paimon에 견줄 만큼 Ararakalari가 약했고, 그때 Aradasha는 Big Iron Chunks를 걷어찰 수 있었다.",
+       "t_raw": "그는 **Ararakalari**를 더 강하게 만들기 위해 더 훈련해야 한다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "과거 아란바리카는 페이몬에 견줄 만큼 아라라칼라리가 약했고, 그때 아란다샤는 Big Iron Chunks를 걷어찰 수 있었다."
+       "t": "그는 **아라라칼라리**를 더 강하게 만들기 위해 더 훈련해야 한다고 말한다."
       },
       {
-       "t_raw": "달리는 버섯을 이길 무렵 Aradasha는 어디에도 없었고, Big Iron Chunks를 걷어찰 Aranara가 없으면 Vanarana가 엉망이 될 것이라고 한다.",
+       "t_raw": "많은 기억과 함께 Ararakalari의 힘이 쌓인다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "달리는 버섯을 이길 무렵 아란다샤는 어디에도 없었고, Big Iron Chunks를 걷어찰 아란나라가 없으면 바나라나가 엉망이 될 것이라고 한다."
+       "t": "많은 기억과 함께 아라라칼라리의 힘이 쌓인다고 말한다."
       },
       {
-       "t_raw": "지금은 Big Iron Chunks가 Arabalika를 이길 수 없다며 이를 Aradasha의 축복으로 여긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "지금은 Big Iron Chunks가 아란바리카를 이길 수 없다며 이를 아란다샤의 축복으로 여긴다."
-      },
-      {
-       "t_raw": "Arama가 Nara Traveler와 모험 중이라는 말과 함께, 많은 기억이 쌓이면 Ararakalari의 힘이 커져 그때 Arama와 또 다른 대결을 하기를 바란다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란마가 나라 여행자와 모험 중이라는 말과 함께, 많은 기억이 쌓이면 아라라칼라리의 힘이 커져 그때 아란마와 또 다른 대결을 하기를 바란다고 말한다."
-      },
-      {
-       "t_raw": "Aradasha의 부재와 Big Iron Chunks 걱정, Arama와의 대결 욕심은 Ararakalari를 더 강하게 하려는 수련으로 이어지는 것으로 보인다.",
+       "t_raw": "그가 더 훈련해야 한다고 말하는 까닭은 Ararakalari의 힘을 키우려는 바람과 맞닿아 있는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "아란다샤의 부재와 Big Iron Chunks 걱정, 아란마와의 대결 욕심은 아라라칼라리를 더 강하게 하려는 수련으로 이어지는 것으로 보인다."
+       "t": "그가 더 훈련해야 한다고 말하는 까닭은 아라라칼라리의 힘을 키우려는 바람과 맞닿아 있는 것으로 보인다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Arabalika",
@@ -214,6 +291,62 @@
         }
        ]
       },
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A20",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A14-A17, and the contrast in the interpretation is reasonable.",
+     "quote": "Luckily, the Big Iron Chunks now can't beat Arabalika. It must be blessings from Aradasha.",
+     "sentences": [
+      {
+       "t_raw": "과거의 Arabalika는 Ararakalari가 거의 Paimon만큼 약했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "과거의 아란바리카는 아라라칼라리가 거의 페이몬만큼 약했다고 말한다."
+      },
+      {
+       "t_raw": "그때 Aradasha는 Big Iron Chunks를 걷어찰 수 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그때 아란다샤는 Big Iron Chunks를 걷어찰 수 있었다."
+      },
+      {
+       "t_raw": "Arabalika가 마침내 달리는 버섯을 이겼을 때, Aradasha는 어디에도 없었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란바리카가 마침내 달리는 버섯을 이겼을 때, 아란다샤는 어디에도 없었다."
+      },
+      {
+       "t_raw": "그는 Big Iron Chunks를 걷어찰 Aranara가 없으면 Big Iron Chunks가 발을 구르며 Vanarana를 엉망으로 만들 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 Big Iron Chunks를 걷어찰 아란나라가 없으면 Big Iron Chunks가 발을 구르며 바나라나를 엉망으로 만들 것이라고 말한다."
+      },
+      {
+       "t_raw": "그러나 지금은 Big Iron Chunks가 Arabalika를 이길 수 없다며, 그것을 **Aradasha의 축복**으로 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 지금은 Big Iron Chunks가 아란바리카를 이길 수 없다며, 그것을 **아란다샤의 축복**으로 여긴다."
+      },
+      {
+       "t_raw": "Aradasha가 없어진 뒤의 걱정과 지금 Big Iron Chunks가 Arabalika를 이길 수 없다는 말은 서로 대비되는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아란다샤가 없어진 뒤의 걱정과 지금 Big Iron Chunks가 아란바리카를 이길 수 없다는 말은 서로 대비되는 대목으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Arabalika",
@@ -245,14 +378,6 @@
        "section": "Dialogue > Dialogue Set #1",
        "paragraph": "A17",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Arabalika",
-       "revision": 1564541,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "A7",
-       "wiki_refs": []
       }
      ],
      "heading": "정체와 배경",
@@ -260,32 +385,43 @@
       "Big Iron Chunks",
       "Big Iron Chunks",
       "Big Iron Chunks",
+      "Big Iron Chunks",
       "Big Iron Chunks"
      ]
     },
     {
-     "section": "작중 행적 — Ruins of Dahri와 Varuna Contraption",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "No malice. If you wanted to harm Arabalika, you would have attacked when the Big Iron Chunk was still moving.",
+     "section": "작중 행적 — Ruins of Dahri",
+     "status": "accepted",
+     "note": "Supported by A2, Q14, Q16 and A3.",
+     "quote": "Golden Nara has Arapandu's scent.",
      "sentences": [
       {
-       "t_raw": "Traveler는 Caravan Ribat waypoint 동쪽 **Ruins of Dahri**에서 Irate Iron Chunk 퀘스트 중 Arabalika를 처음 만나고, Arabalika는 “A Nara... and something that flies?”라고 말한다.",
+       "t_raw": "Traveler는 Irate Iron Chunk quest 중 Caravan Ribat waypoint 동쪽의 **Ruins of Dahri**에서 Arabalika와 처음 마주친다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자는 카라반 수도원 waypoint 동쪽 **다흐리의 폐허**에서 분노의 쇳덩이 퀘스트 중 아란바리카를 처음 만나고, 아란바리카는 “A 나라... and something that flies?”라고 말한다."
+       "t": "여행자는 분노의 쇳덩이 퀘스트 중 카라반 수도원 웨이포인트 동쪽의 **다흐리의 폐허**에서 아란바리카와 처음 마주친다.",
+       "polish": {
+        "from": "여행자는 분노의 쇳덩이 quest 중 카라반 수도원 waypoint 동쪽의 **다흐리의 폐허**에서 아란바리카와 처음 마주친다.",
+        "text": "여행자는 분노의 쇳덩이 퀘스트 중 카라반 수도원 웨이포인트 동쪽의 **다흐리의 폐허**에서 아란바리카와 처음 마주친다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "Arabalika는 Traveler에게서 Arapandu의 냄새를 감지하고도 침착하며, 해치려 했다면 Big Iron Chunk가 움직일 때 공격했을 것이라며 적의가 없다고 본다.",
+       "t_raw": "Arabalika는 A Nara... and something that flies?라고 묻고 Golden Nara에게서 Arapandu의 냄새가 난다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란바리카는 여행자에게서 아란판두의 냄새를 감지하고도 침착하며, 해치려 했다면 Big Iron Chunk가 움직일 때 공격했을 것이라며 적의가 없다고 본다."
+       "t": "아란바리카는 어떤 나라... 그리고 날아다니는 무언가?라고 묻고 금빛의 나라에게서 아란판두의 냄새가 난다고 말한다.",
+       "polish": {
+        "from": "아란바리카는 A 나라... and something that flies?라고 묻고 금빛의 나라에게서 아란판두의 냄새가 난다고 말한다.",
+        "text": "아란바리카는 어떤 나라... 그리고 날아다니는 무언가?라고 묻고 금빛의 나라에게서 아란판두의 냄새가 난다고 말한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "그가 적이라면 양쪽에서 공격하는 것이 좋은 전술이라고 말하는 태도는 상대의 적의 여부를 전술적 가능성과 함께 판단하는 인상을 준다.",
-       "interp": true,
+       "t_raw": "상대에게서 Arapandu의 냄새를 감지하고도 그는 침착함을 유지한다.",
+       "interp": false,
        "dropped": false,
-       "t": "그가 적이라면 양쪽에서 공격하는 것이 좋은 전술이라고 말하는 태도는 상대의 적의 여부를 전술적 가능성과 함께 판단하는 인상을 준다."
+       "t": "상대에게서 아란판두의 냄새를 감지하고도 그는 침착함을 유지한다."
       }
      ],
      "sources": [
@@ -305,81 +441,12 @@
        "speaker": "Arabalika"
       },
       {
-       "kind": "wiki",
-       "page": "Arabalika",
-       "revision": 1564541,
-       "section": "Profile",
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Irate Iron Chunk"
-        },
-        {
-         "type": "quest",
-         "name": "Varuna Gatha"
-        }
-       ]
-      },
-      {
        "kind": "quest",
        "quest": "Irate Iron Chunk",
        "quest_ko": "분노의 쇳덩이",
        "version": "3.0",
        "speaker": "Arabalika"
       },
-      {
-       "kind": "quest",
-       "quest": "Irate Iron Chunk",
-       "quest_ko": "분노의 쇳덩이",
-       "version": "3.0",
-       "speaker": "Arabalika"
-      },
-      {
-       "kind": "quest",
-       "quest": "Irate Iron Chunk",
-       "quest_ko": "분노의 쇳덩이",
-       "version": "3.0",
-       "speaker": "Arabalika"
-      }
-     ],
-     "heading": "작중 행적 — 다흐리의 폐허와 바루나",
-     "latin_left": [
-      "Big Iron Chunk"
-     ]
-    },
-    {
-     "section": "작중 행적 — Ruins of Dahri와 Varuna Contraption",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "What branch? What leaves? They are more like roots.",
-     "sentences": [
-      {
-       "t_raw": "Arabalika는 Varuna Contraption의 “branch”를 치료하는 일을 돕기 위해 Ruins of Dahri에 파견되었고, “What branch? What leaves? They are more like roots.”라며 그 구조를 roots로 짚는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란바리카는 바루나의 “branch”를 치료하는 일을 돕기 위해 다흐리의 폐허에 파견되었고, “What branch? What leaves? They are more like roots.”라며 그 구조를 roots로 짚는다."
-      },
-      {
-       "t_raw": "뿌리가 땅 아래에 있어 Traveler와 Arabalika는 Ruin Guards를 물리쳐 내려가고, Arabalika는 싸우지 않는 Paimon에게 버섯이 Paimon을 먹을 수도 있다고 경고한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "뿌리가 땅 아래에 있어 여행자와 아란바리카는 유적 가디언을 물리쳐 내려가고, 아란바리카는 싸우지 않는 페이몬에게 버섯이 페이몬을 먹을 수도 있다고 경고한다."
-      },
-      {
-       "t_raw": "Paimon이 Aradasha라면 Ruin Guard를 눈 깜짝할 사이에 이긴다고 하자 Arabalika는 과거에는 강했지만 “now”에는 그렇지 않다며 **Ararakalari** 수련을 이야기한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬이 아란다샤라면 유적 가디언을 눈 깜짝할 사이에 이긴다고 하자 아란바리카는 과거에는 강했지만 “now”에는 그렇지 않다며 **아라라칼라리** 수련을 이야기한다."
-      },
-      {
-       "t_raw": "Traveler와 Arabalika는 “leaves” 장치를 조정한 직후 활성화된 Ruin Graders 두 기와 싸우고, Arabalika는 노래로 돌을 각성시킨 뒤 일행은 Apam Woods의 “rest stop”으로 돌아간다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자와 아란바리카는 “leaves” 장치를 조정한 직후 활성화된 파멸의 유적 가디언 두 기와 싸우고, 아란바리카는 노래로 돌을 각성시킨 뒤 일행은 수천산림의 “rest stop”으로 돌아간다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Arabalika",
@@ -396,68 +463,117 @@
          "name": "Varuna Gatha"
         }
        ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Irate Iron Chunk",
-       "quest_ko": "분노의 쇳덩이",
-       "version": "3.0",
-       "speaker": "Arabalika"
       }
      ],
-     "heading": "작중 행적 — 다흐리의 폐허와 바루나",
-     "latin_left": [
-      "What",
-      "What",
-      "They"
-     ]
+     "heading": "작중 행적 — 다흐리의 폐허",
+     "latin_left": []
     },
     {
-     "section": "작중 행적 — Ruins of Dahri와 Varuna Contraption",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Oh right, Arapandu said that Arabalika's Ararakalari is very powerful. He must have used his Ararakalari to defeat that Ruin Guard earlier!",
+     "section": "작중 행적 — Ruins of Dahri",
+     "status": "accepted",
+     "note": "All supported by A3 and Q19.",
+     "quote": "He must have used his Ararakalari to defeat that Ruin Guard earlier!",
      "sentences": [
       {
-       "t_raw": "Paimon은 앞서 Ruin Guard를 이긴 것도 Arabalika의 Ararakalari 덕분이라고 짚고, Arabalika는 Paimon이 Ararakalari를 아는지 묻는다.",
+       "t_raw": "**Ruin Guard** 전투에서 Arabalika는 혼자서 Ruin Guard를 쓰러뜨린다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 앞서 유적 가디언을 이긴 것도 아란바리카의 아라라칼라리 덕분이라고 짚고, 아란바리카는 페이몬이 아라라칼라리를 아는지 묻는다."
+       "t": "**유적 가디언** 전투에서 아란바리카는 혼자서 유적 가디언을 쓰러뜨린다."
       },
       {
-       "t_raw": "Traveler가 Varunastra 아래 지하 공간의 Fungi를 없앤 뒤, Arabalika는 Arapandu, Aranakula, Arakunti와 함께 포자로 뒤덮인 **Varuna Contraption 수리**에 나선다.",
+       "t_raw": "Paimon은 Arapandu가 Arabalika의 Ararakalari가 매우 강하다고 했다며, 그 승리도 Ararakalari 덕분일 것이라고 짚는다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자가 바루나 법보 아래 지하 공간의 버섯몬을 없앤 뒤, 아란바리카는 아란판두, 아란나쿨라, 아란쿤티와 함께 포자로 뒤덮인 **바루나 수리**에 나선다."
+       "t": "페이몬은 아란판두가 아란바리카의 아라라칼라리가 매우 강하다고 했다며, 그 승리도 아라라칼라리 덕분일 것이라고 짚는다."
       },
       {
-       "t_raw": "Arapandu는 자신은 Arabalika처럼 강한 Ararakalari가 없고 이상한 비 탓에 Fungi가 사나워졌다며, Arabalika가 돌아오면 Iron Chunks와 Fungi가 두렵지 않을 것이라고 기대한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란판두는 자신은 아란바리카처럼 강한 아라라칼라리가 없고 이상한 비 탓에 버섯몬이 사나워졌다며, 아란바리카가 돌아오면 Iron Chunks와 버섯몬이 두렵지 않을 것이라고 기대한다."
-      },
-      {
-       "t_raw": "Ruin Guard 격파와 장치 조정, 돌 각성 뒤 동료들과 수리에 나서는 흐름은 이 수리가 전투와 Ararakalari가 함께 엮인 작업이었음을 보여 준다.",
+       "t_raw": "실제 전투와 Arapandu의 평가가 겹쳐, Arabalika의 Ararakalari가 강하다는 인상은 더 분명해진다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "유적 가디언 격파와 장치 조정, 돌 각성 뒤 동료들과 수리에 나서는 흐름은 이 수리가 전투와 아라라칼라리가 함께 엮인 작업이었음을 보여 준다."
+       "t": "실제 전투와 아란판두의 평가가 겹쳐, 아란바리카의 아라라칼라리가 강하다는 인상은 더 분명해진다고 볼 수 있다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Irate Iron Chunk"
+        },
+        {
+         "type": "quest",
+         "name": "Varuna Gatha"
+        }
+       ]
+      },
       {
        "kind": "quest",
        "quest": "Irate Iron Chunk",
        "quest_ko": "분노의 쇳덩이",
        "version": "3.0",
        "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 다흐리의 폐허",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Ruins of Dahri",
+     "status": "accepted",
+     "note": "All supported by A3 and Q11.",
+     "quote": "What branch? What leaves? They are more like roots.",
+     "sentences": [
+      {
+       "t_raw": "Varuna Contraption의 \"branch\"를 치료하는 일을 돕기 위해 Ruins of Dahri로 보내진 이들은 뿌리가 지하에 있어 내려가기 위해 주변의 Ruin Guards를 쓰러뜨려야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바루나의 \"가지\"를 치료하는 일을 돕기 위해 다흐리의 폐허로 보내진 이들은 뿌리가 지하에 있어 내려가기 위해 주변의 유적 가디언을 쓰러뜨려야 한다.",
+       "polish": {
+        "from": "바루나의 \"branch\"를 치료하는 일을 돕기 위해 다흐리의 폐허로 보내진 이들은 뿌리가 지하에 있어 내려가기 위해 주변의 유적 가디언을 쓰러뜨려야 한다.",
+        "text": "바루나의 \"가지\"를 치료하는 일을 돕기 위해 다흐리의 폐허로 보내진 이들은 뿌리가 지하에 있어 내려가기 위해 주변의 유적 가디언을 쓰러뜨려야 한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "kind": "quest",
-       "quest": "Irate Iron Chunk",
-       "quest_ko": "분노의 쇳덩이",
-       "version": "3.0",
-       "speaker": "Arabalika"
+       "t_raw": "Arabalika는 What branch? What leaves? They are more like roots.라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란바리카는 무슨 가지? 무슨 잎? 그것들은 뿌리에 더 가깝다.라고 말한다.",
+       "polish": {
+        "from": "아란바리카는 What branch? What leaves? They are more like roots.라고 말한다.",
+        "text": "아란바리카는 무슨 가지? 무슨 잎? 그것들은 뿌리에 더 가깝다.라고 말한다.",
+        "by": "or-ds"
+       }
       },
+      {
+       "t_raw": "\"leaves\" 메커니즘을 조정한 직후 Traveler와 Arabalika는 활성화된 Ruin Graders 두 기와 싸운다.",
+       "interp": false,
+       "dropped": false,
+       "t": "\"잎\" 메커니즘을 조정한 직후 여행자와 아란바리카는 활성화된 파멸의 유적 가디언 두 기와 싸운다.",
+       "polish": {
+        "from": "\"leaves\" 메커니즘을 조정한 직후 여행자와 아란바리카는 활성화된 파멸의 유적 가디언 두 기와 싸운다.",
+        "text": "\"잎\" 메커니즘을 조정한 직후 여행자와 아란바리카는 활성화된 파멸의 유적 가디언 두 기와 싸운다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그 뒤 Arabalika는 노래로 돌을 깨우고, 일행은 Apam Woods의 \"rest stop\"으로 돌아간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 뒤 아란바리카는 노래로 돌을 깨우고, 일행은 수천산림의 \"쉼터\"로 돌아간다.",
+       "polish": {
+        "from": "그 뒤 아란바리카는 노래로 돌을 깨우고, 일행은 수천산림의 \"rest stop\"으로 돌아간다.",
+        "text": "그 뒤 아란바리카는 노래로 돌을 깨우고, 일행은 수천산림의 \"쉼터\"로 돌아간다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Arabalika",
@@ -477,65 +593,101 @@
       },
       {
        "kind": "quest",
-       "quest": "Varuna Gatha (Quest)",
-       "quest_ko": "바루나 가타",
+       "quest": "Irate Iron Chunk",
+       "quest_ko": "분노의 쇳덩이",
        "version": "3.0",
-       "speaker": "Arapandu"
-      },
-      {
-       "kind": "quest",
-       "quest": "Memory of Stone",
-       "quest_ko": "돌의 기억",
-       "version": "3.0",
-       "speaker": "Arapandu"
+       "speaker": "Arabalika"
       }
      ],
-     "heading": "작중 행적 — 다흐리의 폐허와 바루나",
-     "latin_left": [
-      "Iron Chunks"
-     ]
+     "heading": "작중 행적 — 다흐리의 폐허",
+     "latin_left": []
     },
     {
-     "section": "작중 행적 — Aranara 동료와 축제",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Varuna Contraption과 Vana",
+     "status": "accepted",
+     "note": "Supported by A3 and M3; the interpretation is reasonable.",
+     "quote": "Arabalika, alongside Arapandu, Aranakula, and Arakunti, fixed the spore-covered Varuna Contraption once the Traveler got rid of the Fungi in the underground space below Varunastra.",
+     "sentences": [
+      {
+       "t_raw": "Traveler가 Varunastra 아래 지하 공간의 Fungi를 없앤 뒤, Arabalika는 Arapandu, Aranakula, Arakunti와 함께 포자에 뒤덮인 Varuna Contraption을 고쳤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 바루나 법보 아래 지하 공간의 버섯몬을 없앤 뒤, 아란바리카는 아란판두, 아란나쿨라, 아란쿤티와 함께 포자에 뒤덮인 바루나를 고쳤다."
+      },
+      {
+       "t_raw": "Aranakula는 Arabalika가 Vana를 지키겠다는 말을 할 만큼 매우 용감하고 Aradasha를 닮았다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나쿨라는 아란바리카가 바나를 지키겠다는 말을 할 만큼 매우 용감하고 아란다샤를 닮았다고 말한다."
+      },
+      {
+       "t_raw": "수리를 함께 마친 일과 Vana를 지키겠다는 말이 맞물려, Arabalika의 보호 의지는 동료와 함께한 행동으로도 드러난 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "수리를 함께 마친 일과 바나를 지키겠다는 말이 맞물려, 아란바리카의 보호 의지는 동료와 함께한 행동으로도 드러난 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Irate Iron Chunk"
+        },
+        {
+         "type": "quest",
+         "name": "Varuna Gatha"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Aranakula",
+       "revision": 1038370,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 바루나와 바나",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Varuna Contraption과 Vana",
+     "status": "accepted",
+     "note": "Sentence 0 puts Arapandu's Yasna Monument line in 'A Prayer for Rain on the Fecund Land', but Q24 is from 'Slumbering Roots'. Sentence 3 says Paimon spoke after Arabalika's Q3 line, but Q3 is from 'Memory of Stone' and Q22 is from 'A Prayer for Rain', so the sequence is not given.",
      "quote": "Toughen up, Aranakula. Do not back down. We are already here. We solve the problem, whether it be spores or Fungi. This is all for Vana.",
      "sentences": [
       {
-       "t_raw": "Arapandu는 Aranakula가 Yasna Monument에 있고 그곳에 나쁜 버섯이 많다며 걱정한다.",
+       "t_raw": "Slumbering Roots에서 Arapandu는 Aranakula가 Yasna Monument에 있고 그곳에 나쁜 버섯이 많아 걱정된다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란판두는 아란나쿨라가 야스나 유경에 있고 그곳에 나쁜 버섯이 많다며 걱정한다."
+       "repaired": true,
+       "t": "깊게 잠든 뿌리에서 아란판두는 아란나쿨라가 야스나 유경에 있고 그곳에 나쁜 버섯이 많아 걱정된다고 말한다."
       },
       {
-       "t_raw": "Arabalika는 Aranakula에게 **굳세지고 물러서지 말라**며 포자든 Fungi든 Vana를 위해 문제를 해결한다고 말한다.",
+       "t_raw": "Arabalika는 Aranakula에게 정신 차려 물러서지 말라며, 포자든 Fungi든 문제를 해결하고 이는 모두 Vana를 위한 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란바리카는 아란나쿨라에게 **굳세지고 물러서지 말라**며 포자든 버섯몬든 바나를 위해 문제를 해결한다고 말한다."
+       "t": "아란바리카는 아란나쿨라에게 정신 차려 물러서지 말라며, 포자든 버섯몬든 문제를 해결하고 이는 모두 바나를 위한 것이라고 말한다."
       },
       {
-       "t_raw": "Paimon은 그런 그가 너무 엄격하다며 Aranakula가 잠시 기뻐하게 두자고 한다.",
+       "t_raw": "그는 두려울 것 없다며 Arabalika가 곁에 있다고 하고, Nara에게 자신도 돕게 해 달라고 하며, Nara가 Marana를 물리칠 것이라 믿는다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 그런 그가 너무 엄격하다며 아란나쿨라가 잠시 기뻐하게 두자고 한다."
+       "t": "그는 두려울 것 없다며 아란바리카가 곁에 있다고 하고, 나라에게 자신도 돕게 해 달라고 하며, 나라가 마라나를 물리칠 것이라 믿는다고 말한다."
       },
       {
-       "t_raw": "Yasna Monument에 나쁜 상대가 많았지만 Aranakula가 돌아왔고, Arabalika는 좋다고 말한다.",
+       "t_raw": "Memory of Stone에서 Arabalika는 Yasna Monument에 나쁜 상대가 많았지만 Aranakula가 돌아왔다며 좋다고 하고, A Prayer for Rain on the Fecund Land에서 Paimon은 Arabalika가 너무 엄격하다며 일 하나를 끝냈으니 Aranakula가 잠시 기뻐하게 두자고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "야스나 유경에 나쁜 상대가 많았지만 아란나쿨라가 돌아왔고, 아란바리카는 좋다고 말한다."
-      },
-      {
-       "t_raw": "Festival Utsava에서 그는 용감한 Nara와 Paimon에게 Aranara flower를 건네고, 축제가 꽤 좋아 보이지만 **아무것도 영원하지 않다**고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "우트사바 축제에서 그는 용감한 나라와 페이몬에게 아란나라 flower를 건네고, 축제가 꽤 좋아 보이지만 **아무것도 영원하지 않다**고 말한다."
-      },
-      {
-       "t_raw": "독려와 엄격함, 꽃과 무상함이 겹쳐 동료를 챙기면서도 지속됨을 전제하지 않는 태도로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "독려와 엄격함, 꽃과 무상함이 겹쳐 동료를 챙기면서도 지속됨을 전제하지 않는 태도로 보인다."
+       "repaired": true,
+       "t": "돌의 기억에서 아란바리카는 야스나 유경에 나쁜 상대가 많았지만 아란나쿨라가 돌아왔다며 좋다고 하고, 비옥한 땅 아래, 비를 부르는 노래에서 페이몬은 아란바리카가 너무 엄격하다며 일 하나를 끝냈으니 아란나쿨라가 잠시 기뻐하게 두자고 한다."
       }
      ],
      "sources": [
@@ -558,71 +710,14 @@
        "quest": "A Prayer for Rain on the Fecund Land",
        "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
        "version": "3.0",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Memory of Stone",
-       "quest_ko": "돌의 기억",
-       "version": "3.0",
        "speaker": "Arabalika"
       },
-      {
-       "kind": "quest",
-       "quest": "Festival Utsava",
-       "quest_ko": "우트사바 축제",
-       "version": "3.0",
-       "speaker": "Arabalika"
-      },
-      {
-       "kind": "quest",
-       "quest": "Festival Utsava",
-       "quest_ko": "우트사바 축제",
-       "version": "3.0",
-       "speaker": "Arabalika"
-      }
-     ],
-     "heading": "작중 행적 — 아란나라 동료와 축제",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Aranara 동료와 축제",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Arabalika won't come to see Paimon so often. But will bring mushrooms. Cook for her.",
-     "sentences": [
-      {
-       "t_raw": "Arakunti는 Arabalika가 Paimon을 자주 보러 오지는 않겠지만 버섯을 가져올 것이라며 요리하라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란쿤티는 아란바리카가 페이몬을 자주 보러 오지는 않겠지만 버섯을 가져올 것이라며 요리하라고 말한다."
-      },
-      {
-       "t_raw": "Arabalika는 Nara가 Marana를 물리칠 것이라 확신하며 믿음을 보인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란바리카는 나라가 마라나를 물리칠 것이라 확신하며 믿음을 보인다."
-      },
-      {
-       "t_raw": "Slumbering Roots에서 Arabalika는 가지 않겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "깊게 잠든 뿌리에서 아란바리카는 가지 않겠다고 말한다."
-      },
-      {
-       "t_raw": "Arakunti가 전한 돌봄과 Slumbering Roots에서의 거절이 함께 남아, 동료를 챙기는 모습과 가지 않겠다는 태도가 나란히 드러난다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아란쿤티가 전한 돌봄과 깊게 잠든 뿌리에서의 거절이 함께 남아, 동료를 챙기는 모습과 가지 않겠다는 태도가 나란히 드러난다고 볼 수 있다."
-      }
-     ],
-     "sources": [
       {
        "kind": "quest",
        "quest": "A Prayer for Rain on the Fecund Land",
        "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
        "version": "3.0",
-       "speaker": "Arakunti"
+       "speaker": "Arabalika"
       },
       {
        "kind": "quest",
@@ -633,44 +728,32 @@
       },
       {
        "kind": "quest",
-       "quest": "Slumbering Roots",
-       "quest_ko": "깊게 잠든 뿌리",
+       "quest": "Memory of Stone",
+       "quest_ko": "돌의 기억",
        "version": "3.0",
        "speaker": "Arabalika"
       }
      ],
-     "heading": "작중 행적 — 아란나라 동료와 축제",
+     "heading": "작중 행적 — 바루나와 바나",
      "latin_left": []
     },
     {
      "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Oh right, Arapandu said that Arabalika's Ararakalari is very powerful. He must have used his Ararakalari to defeat that Ruin Guard earlier!",
+     "status": "accepted",
+     "note": "Supported by A3, Q19, A14 and A17.",
+     "quote": "Arabalika has a very powerful Ararakalari, as witnessed by the Traveler when he defeated a Ruin Guard by himself.",
      "sentences": [
       {
-       "t_raw": "Arabalika는 Traveler가 보는 앞에서 Ruin Guard를 혼자 쓰러뜨렸고, Ararakalari를 더 강하게 만들기 위해 수련해야 한다고 말한다.",
+       "t_raw": "Arabalika는 Traveler가 보는 앞에서 Ruin Guard를 혼자서 쓰러뜨릴 만큼 **매우 강력한 Ararakalari**를 지녔고, Paimon도 그 Ruin Guard를 Ararakalari로 이겼을 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란바리카는 여행자가 보는 앞에서 유적 가디언을 혼자 쓰러뜨렸고, 아라라칼라리를 더 강하게 만들기 위해 수련해야 한다고 말한다."
+       "t": "아란바리카는 여행자가 보는 앞에서 유적 가디언을 혼자서 쓰러뜨릴 만큼 **매우 강력한 아라라칼라리**를 지녔고, 페이몬도 그 유적 가디언을 아라라칼라리로 이겼을 것이라고 말한다."
       },
       {
-       "t_raw": "Paimon은 Arapandu가 그의 Ararakalari가 아주 강하다고 했다며 그 Ruin Guard를 쓰러뜨릴 때 Ararakalari를 썼을 것이라고 말한다.",
+       "t_raw": "과거의 Arabalika는 Ararakalari가 Paimon만큼 약할 정도였지만, 지금은 **Big Iron Chunks**가 Arabalika를 이길 수 없으며 그는 이를 Aradasha의 축복이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 아란판두가 그의 아라라칼라리가 아주 강하다고 했다며 그 유적 가디언을 쓰러뜨릴 때 아라라칼라리를 썼을 것이라고 말한다."
-      },
-      {
-       "t_raw": "Arapandu는 Arabalika의 Ararakalari가 있으면 Iron Chunks와 Fungi가 무섭지 않을 것이라고 하고, Aranakula는 자신이 Arabalika의 절반만큼도 강하지 않다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란판두는 아란바리카의 아라라칼라리가 있으면 Iron Chunks와 버섯몬이 무섭지 않을 것이라고 하고, 아란나쿨라는 자신이 아란바리카의 절반만큼도 강하지 않다고 말한다."
-      },
-      {
-       "t_raw": "주변 인물들이 그의 Ararakalari를 강함의 기준으로 삼는 모습은 그 힘이 널리 인정받는 수준임을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "주변 인물들이 그의 아라라칼라리를 강함의 기준으로 삼는 모습은 그 힘이 널리 인정받는 수준임을 보여 준다."
+       "t": "과거의 아란바리카는 아라라칼라리가 페이몬만큼 약할 정도였지만, 지금은 **Big Iron Chunks**가 아란바리카를 이길 수 없으며 그는 이를 아란다샤의 축복이라고 말한다."
       }
      ],
      "sources": [
@@ -698,53 +781,6 @@
        "version": "3.0",
        "speaker": "Paimon"
       },
-      {
-       "kind": "quest",
-       "quest": "Memory of Stone",
-       "quest_ko": "돌의 기억",
-       "version": "3.0",
-       "speaker": "Arapandu"
-      },
-      {
-       "kind": "wiki",
-       "page": "Aranakula",
-       "revision": 1038370,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "능력",
-     "latin_left": [
-      "Iron Chunks"
-     ]
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Luckily, the Big Iron Chunks now can't beat Arabalika. It must be blessings from Aradasha.",
-     "sentences": [
-      {
-       "t_raw": "오래전 Arabalika의 Ararakalari는 Paimon에 견줄 만큼 약했고, 그때 Aradasha는 Big Iron Chunks를 차서 넘길 수 있었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오래전 아란바리카의 아라라칼라리는 페이몬에 견줄 만큼 약했고, 그때 아란다샤는 Big Iron Chunks를 차서 넘길 수 있었다."
-      },
-      {
-       "t_raw": "이제 Big Iron Chunks는 Arabalika를 이길 수 없으며, 그는 그것을 Aradasha의 축복이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이제 Big Iron Chunks는 아란바리카를 이길 수 없으며, 그는 그것을 아란다샤의 축복이라고 말한다."
-      },
-      {
-       "t_raw": "많은 기억이 쌓이면 Ararakalari의 힘이 커진다는 말은 약했던 시절과 지금의 차이를 기억의 축적으로 설명하는 대목으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "많은 기억이 쌓이면 아라라칼라리의 힘이 커진다는 말은 약했던 시절과 지금의 차이를 기억의 축적으로 설명하는 대목으로 보인다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Arabalika",
@@ -760,7 +796,45 @@
        "section": "Dialogue > Dialogue Set #1",
        "paragraph": "A17",
        "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": [
+      "Big Iron Chunks"
+     ]
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Supported by A20, Q20, Q25, M1 and M3; the interpretation is reasonable.",
+     "quote": "Arabalika should be back from the Ruins of Dahri soon. With Arabalika's Ararakalari, the Iron Chunks and Fungi won't be scary anymore.",
+     "sentences": [
+      {
+       "t_raw": "Arabalika는 기억이 많아질수록 Ararakalari의 힘이 쌓인다고 말하며, 그때 Arama와 다시 한판 붙는 일을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란바리카는 기억이 많아질수록 아라라칼라리의 힘이 쌓인다고 말하며, 그때 아란마와 다시 한판 붙는 일을 언급한다."
       },
+      {
+       "t_raw": "Arapandu는 자신에게는 Arabalika처럼 강력한 Ararakalari가 없지만, Arabalika의 Ararakalari가 있으면 Iron Chunks와 Fungi가 두렵지 않을 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란판두는 자신에게는 아란바리카처럼 강력한 아라라칼라리가 없지만, 아란바리카의 아라라칼라리가 있으면 철광과 버섯몬이 두렵지 않을 것이라고 말한다."
+      },
+      {
+       "t_raw": "Aranakula는 자신이 Arabalika의 절반에도 못 미친다면서 절반의 절반보다 나아지려 하고, Arabalika가 Vana를 지키겠다고 하는 모습을 Aradasha처럼 아주 용감하다고 평가한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나쿨라는 자신이 아란바리카의 절반에도 못 미친다면서 절반의 절반보다 나아지려 하고, 아란바리카가 바나를 지키겠다고 하는 모습을 아란다샤처럼 아주 용감하다고 평가한다."
+      },
+      {
+       "t_raw": "이런 발언은 주변 Aranara가 Arabalika를 강함과 용기의 기준으로 삼는 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 발언은 주변 아란나라가 아란바리카를 강함과 용기의 기준으로 삼는 모습으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Arabalika",
@@ -768,31 +842,76 @@
        "section": "Dialogue > Dialogue Set #2",
        "paragraph": "A20",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory of Stone",
+       "quest_ko": "돌의 기억",
+       "version": "3.0",
+       "speaker": "Arapandu"
+      },
+      {
+       "kind": "quest",
+       "quest": "Varuna Gatha (Quest)",
+       "quest_ko": "바루나 가타",
+       "version": "3.0",
+       "speaker": "Arapandu"
+      },
+      {
+       "kind": "wiki",
+       "page": "Aranakula",
+       "revision": 1038370,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aranakula",
+       "revision": 1038370,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "M3",
+       "wiki_refs": []
       }
      ],
      "heading": "능력",
-     "latin_left": [
-      "Big Iron Chunks",
-      "Big Iron Chunks"
-     ]
+     "latin_left": []
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences follow A7, A10-A12, A19, A20.",
      "quote": "When Arama becomes stronger, Arabalika wants another match with Arama.",
      "sentences": [
       {
-       "t_raw": "Arabalika는 Arama와 Ararakalari 대결을 원하고, Arama가 Nara Traveler와 모험하며 Big Iron Chunks를 언젠가 이길 것이라고 말한다.",
+       "t_raw": "Arama는 Nara Traveler와 모험 중이고, Arabalika는 Arama와의 Ararakalari 승부를 원한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란바리카는 아란마와 아라라칼라리 대결을 원하고, 아란마가 나라 여행자와 모험하며 Big Iron Chunks를 언젠가 이길 것이라고 말한다."
+       "t": "아란마는 나라 여행자와 모험 중이고, 아란바리카는 아란마와의 아라라칼라리 승부를 원한다."
       },
       {
-       "t_raw": "Arama가 강해진 뒤 다시 붙고 Vanarana 안에서 수련을 잇는 일은 **Arama와의 재대결**을 자신의 수련 계획과 묶은 셈이다.",
+       "t_raw": "Arama가 Nara Traveler와의 모험에서 언젠가 Big Iron Chunk를 이기면, Arabalika는 강해진 Arama와 **Arama와의 재대결**을 바라고, 그 뒤에도 Vanarana를 떠나지 않고 Ararakalari 훈련을 이어가고 싶어 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란마가 나라 여행자와의 모험에서 언젠가 큰 쇳덩이를 이기면, 아란바리카는 강해진 아란마와 **아란마와의 재대결**을 바라고, 그 뒤에도 바나라나를 떠나지 않고 아라라칼라리 훈련을 이어가고 싶어 한다."
+      },
+      {
+       "t_raw": "Arabalika는 Arama와 또 한 번 승부하게 될 때를 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란바리카는 아란마와 또 한 번 승부하게 될 때를 묻는다."
+      },
+      {
+       "t_raw": "Arabalika는 많은 기억이 쌓여 Ararakalari 힘이 커질 때의 Arama와의 재대결을 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란바리카는 많은 기억이 쌓여 아라라칼라리 힘이 커질 때의 아란마와의 재대결을 말한다."
+      },
+      {
+       "t_raw": "Arama와의 재대결을 바라는 마음과 Vanarana를 떠나지 않고 Ararakalari 훈련을 이어가려는 뜻이 함께 나타난다.",
        "interp": true,
        "dropped": false,
-       "t": "아란마가 강해진 뒤 다시 붙고 바나라나 안에서 수련을 잇는 일은 **아란마와의 재대결**을 자신의 수련 계획과 묶은 셈이다."
+       "t": "아란마와의 재대결을 바라는 마음과 바나라나를 떠나지 않고 아라라칼라리 훈련을 이어가려는 뜻이 함께 나타난다."
       }
      ],
      "sources": [
@@ -827,36 +946,62 @@
        "section": "Dialogue > Dialogue Set #1",
        "paragraph": "A12",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A20",
+       "wiki_refs": []
       }
      ],
      "heading": "인간관계",
-     "latin_left": [
-      "Big Iron Chunks"
-     ]
+     "latin_left": []
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It must be blessings from Aradasha.",
+     "status": "accepted",
+     "note": "Facts match A14, A15, A17, M1, M3, Q1. The interpretation is a modest reading.",
+     "quote": "Very brave, Arabalika, saying things like protect Vana, just like Aradasha.",
      "sentences": [
       {
-       "t_raw": "Arabalika는 Ararakalari가 Paimon만큼 약하던 때 Aradasha가 Big Iron Chunks를 걷어찰 수 있었다고 회상하고, 달리는 버섯을 이겼을 무렵 Aradasha는 어디에도 없었다고 말한다.",
+       "t_raw": "Arabalika는 예전 Ararakalari가 Paimon에 견줄 만큼 약했고, 그때 Aradasha가 Big Iron Chunk를 차 버릴 수 있었다고 회상한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란바리카는 아라라칼라리가 페이몬만큼 약하던 때 아란다샤가 Big Iron Chunks를 걷어찰 수 있었다고 회상하고, 달리는 버섯을 이겼을 무렵 아란다샤는 어디에도 없었다고 말한다."
+       "t": "아란바리카는 예전 아라라칼라리가 페이몬에 견줄 만큼 약했고, 그때 아란다샤가 큰 쇳덩이를 차 버릴 수 있었다고 회상한다."
       },
       {
-       "t_raw": "지금 Big Iron Chunks가 자신을 이기지 못하는 것은 **Aradasha의 축복**으로 여기고, Aranakula는 Vana를 지키려는 Arabalika의 용감함을 Aradasha와 같다고 본다.",
+       "t_raw": "Arabalika가 마침내 달리는 버섯을 이겼을 때 Aradasha는 어디에도 보이지 않았고, 지금은 Big Iron Chunk가 자신을 이길 수 없다며 그것을 **Aradasha의 축복**이라고 여긴다.",
        "interp": false,
        "dropped": false,
-       "t": "지금 Big Iron Chunks가 자신을 이기지 못하는 것은 **아란다샤의 축복**으로 여기고, 아란나쿨라는 바나를 지키려는 아란바리카의 용감함을 아란다샤와 같다고 본다."
+       "t": "아란바리카가 마침내 달리는 버섯을 이겼을 때 아란다샤는 어디에도 보이지 않았고, 지금은 큰 쇳덩이가 자신을 이길 수 없다며 그것을 **아란다샤의 축복**이라고 여긴다."
       },
       {
-       "t_raw": "Aradasha가 어디에도 보이지 않게 된 뒤에도 Arabalika에게 Aradasha는 힘과 용기의 기준으로 남은 셈이다.",
+       "t_raw": "Aranakula는 자신이 Arabalika의 절반에도 못 미친다면서도 그 절반의 절반보다 나아지려고 하고, Arabalika가 Vana를 지키겠다고 말하는 모습을 Aradasha와 닮았다고 평가한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나쿨라는 자신이 아란바리카의 절반에도 못 미친다면서도 그 절반의 절반보다 나아지려고 하고, 아란바리카가 바나를 지키겠다고 말하는 모습을 아란다샤와 닮았다고 평가한다."
+      },
+      {
+       "t_raw": "Arabalika는 Aranakula에게 포기하지 말고 Vana를 위해 문제를 풀라고 다그친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란바리카는 아란나쿨라에게 포기하지 말고 바나를 위해 문제를 풀라고 다그친다."
+      },
+      {
+       "t_raw": "Aradasha가 보이지 않게 된 뒤에도 Arabalika가 현재의 힘을 Aradasha의 축복으로 설명하는 것은 그 빈자리가 Arabalika의 자기 인식에 남아 있음을 보여 준다.",
        "interp": true,
        "dropped": false,
-       "t": "아란다샤가 어디에도 보이지 않게 된 뒤에도 아란바리카에게 아란다샤는 힘과 용기의 기준으로 남은 셈이다."
+       "t": "아란다샤가 보이지 않게 된 뒤에도 아란바리카가 현재의 힘을 아란다샤의 축복으로 설명하는 것은 그 빈자리가 아란바리카의 자기 인식에 남아 있음을 보여 준다."
       }
      ],
      "sources": [
@@ -889,50 +1034,132 @@
        "page": "Aranakula",
        "revision": 1038370,
        "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "M3",
+       "paragraph": "M1",
        "wiki_refs": []
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Big Iron Chunks",
-      "Big Iron Chunks"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Eh, you're so strict, Arabalika. We've finished one thing, haven't we? Just let Aranakula be happy for a bit!",
-     "sentences": [
-      {
-       "t_raw": "Aranakula는 Arabalika의 절반의 절반을 넘으려 하고, Paimon은 Arabalika가 엄격하다고 말하며, Arapandu는 Arabalika가 Ruins of Dahri에서 돌아오면 Arabalika의 Ararakalari로 Iron Chunks와 Fungi가 두렵지 않을 것이라고 기대한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란나쿨라는 아란바리카의 절반의 절반을 넘으려 하고, 페이몬은 아란바리카가 엄격하다고 말하며, 아란판두는 아란바리카가 다흐리의 폐허에서 돌아오면 아란바리카의 아라라칼라리로 Iron Chunks와 버섯몬이 두렵지 않을 것이라고 기대한다."
       },
-      {
-       "t_raw": "Arakunti는 Arabalika가 Paimon을 자주 보러 오지는 않지만 버섯을 가져와 Paimon을 위해 요리하라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란쿤티는 아란바리카가 페이몬을 자주 보러 오지는 않지만 버섯을 가져와 페이몬을 위해 요리하라고 말한다."
-      },
-      {
-       "t_raw": "Arabalika의 강함은 Aranakula에게는 목표로, Arapandu에게는 안심으로, Paimon에게는 버섯을 챙기는 관계로 이어지는 것이라고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아란바리카의 강함은 아란나쿨라에게는 목표로, 아란판두에게는 안심으로, 페이몬에게는 버섯을 챙기는 관계로 이어지는 것이라고 볼 수 있다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Aranakula",
        "revision": 1038370,
        "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "M1",
+       "paragraph": "M3",
        "wiki_refs": []
       },
+      {
+       "kind": "quest",
+       "quest": "A Prayer for Rain on the Fecund Land",
+       "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
+       "version": "3.0",
+       "speaker": "Arabalika"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Facts match Q24, Q27, A27, A28. The interpretation is reasonable.",
+     "quote": "Aranakula is at the Yasna Monument. There's so many bad mushrooms there, Arapandu's worried... Arabalika...",
+     "sentences": [
+      {
+       "t_raw": "Arapandu는 Yasna Monument의 Aranakula와 그곳의 나쁜 버섯들을 걱정하며 Arabalika를 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란판두는 야스나 유경의 아란나쿨라와 그곳의 나쁜 버섯들을 걱정하며 아란바리카를 언급한다."
+      },
+      {
+       "t_raw": "Aranakula는 Nara가 키가 크고 덩치가 크며 Arabalika만큼 강할지도 모른다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나쿨라는 나라가 키가 크고 덩치가 크며 아란바리카만큼 강할지도 모른다고 말한다."
+      },
+      {
+       "t_raw": "Arabalika는 Nara가 승부를 좋아하기에 강하다고 보고, Nara Traveler도 승부를 좋아할 것이라고 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란바리카는 나라가 승부를 좋아하기에 강하다고 보고, 나라 여행자도 승부를 좋아할 것이라고 여긴다."
+      },
+      {
+       "t_raw": "Arapandu가 어려운 상황에서 Arabalika를 언급하고 Aranakula가 Nara의 힘을 Arabalika에 견주는 것은 주변 Aranara가 Arabalika를 강함의 기준으로 삼는 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아란판두가 어려운 상황에서 아란바리카를 언급하고 아란나쿨라가 나라의 힘을 아란바리카에 견주는 것은 주변 아란나라가 아란바리카를 강함의 기준으로 삼는 모습으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Slumbering Roots",
+       "quest_ko": "깊게 잠든 뿌리",
+       "version": "3.0",
+       "speaker": "Arapandu"
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory of Stone",
+       "quest_ko": "돌의 기억",
+       "version": "3.0",
+       "speaker": "Aranakula"
+      },
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A28",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Facts match Q22, Q28, A29, A31. The interpretation is fine.",
+     "quote": "Nara Varuna, and Nara Traveler, which one is stronger? A match between Golden Nara, Arabalika wants to see.",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Arabalika가 너무 엄격하다고 말하며 Aranakula가 잠깐 기뻐하게 두자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아란바리카가 너무 엄격하다고 말하며 아란나쿨라가 잠깐 기뻐하게 두자고 한다."
+      },
+      {
+       "t_raw": "Arakunti는 Arabalika가 Paimon을 자주 보러 오지는 않겠지만 버섯을 가져올 것이라고 말하며 Paimon을 위해 요리하라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란쿤티는 아란바리카가 페이몬을 자주 보러 오지는 않겠지만 버섯을 가져올 것이라고 말하며 페이몬을 위해 요리하라고 한다."
+      },
+      {
+       "t_raw": "Arabalika는 Nara Varuna와 Nara Traveler 중 누가 더 강한지 묻고, Golden Nara와의 **Nara Varuna와의 승부**를 보고 싶어 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란바리카는 나라 바루나와 나라 여행자 중 누가 더 강한지 묻고, 금빛의 나라와의 **나라 바루나와의 승부**를 보고 싶어 한다."
+      },
+      {
+       "t_raw": "Arabalika는 Nara Traveler에게 Nara Varuna를 만나기를 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란바리카는 나라 여행자에게 나라 바루나를 만나기를 바란다."
+      },
+      {
+       "t_raw": "Paimon과의 장면에서는 엄격함이, Nara Varuna와 Nara Traveler를 둘러싼 장면에서는 승부에 대한 기대가 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "페이몬과의 장면에서는 엄격함이, 나라 바루나와 나라 여행자를 둘러싼 장면에서는 승부에 대한 기대가 드러난다."
+      }
+     ],
+     "sources": [
       {
        "kind": "quest",
        "quest": "A Prayer for Rain on the Fecund Land",
@@ -942,44 +1169,11 @@
       },
       {
        "kind": "quest",
-       "quest": "Memory of Stone",
-       "quest_ko": "돌의 기억",
-       "version": "3.0",
-       "speaker": "Arapandu"
-      },
-      {
-       "kind": "quest",
        "quest": "A Prayer for Rain on the Fecund Land",
        "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
        "version": "3.0",
        "speaker": "Arakunti"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Iron Chunks"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nara Varuna, and Nara Traveler, which one is stronger? A match between Golden Nara, Arabalika wants to see.",
-     "sentences": [
-      {
-       "t_raw": "Arabalika는 Nara Varuna와 Nara Traveler 중 누가 강한지 묻고 **Golden Nara**와의 대결을 보고 싶어 하며, Nara Traveler가 Nara Varuna를 만나기를 바란다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란바리카는 나라 바루나와 나라 여행자 중 누가 강한지 묻고 **Golden Nara**와의 대결을 보고 싶어 하며, 나라 여행자가 나라 바루나를 만나기를 바란다."
       },
-      {
-       "t_raw": "Arabalika는 Golden Nara에게서 Arapandu의 냄새를 맡는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란바리카는 Golden Nara에게서 아란판두의 냄새를 맡는다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Arabalika",
@@ -995,50 +1189,34 @@
        "section": "Dialogue > Dialogue Set #2",
        "paragraph": "A31",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Irate Iron Chunk",
-       "quest_ko": "분노의 쇳덩이",
-       "version": "3.0",
-       "speaker": "Arabalika"
       }
      ],
      "heading": "인간관계",
-     "latin_left": [
-      "Golden Nara",
-      "Golden Nara"
-     ]
+     "latin_left": []
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Luckily, the Big Iron Chunks now can't beat Arabalika. It must be blessings from Aradasha.",
+     "status": "accepted",
+     "note": "Facts match A14-A17. The interpretation is reasonable.",
+     "quote": "Later, when Arabalika finally beats running mushroom, Aradasha is nowhere to be found.",
      "sentences": [
       {
-       "t_raw": "Arabalika는 한때 자신의 Ararakalari가 거의 Paimon만큼 약했고, 그 시절 Aradasha가 Big Iron Chunks를 걷어찰 수 있었다고 말한다.",
+       "t_raw": "Aradasha는 Big Iron Chunks를 걷어찰 수 있었지만, Arabalika가 달리는 버섯을 이기게 되었을 때 Aradasha는 찾을 수 없었다.",
        "interp": false,
        "dropped": false,
-       "t": "아란바리카는 한때 자신의 아라라칼라리가 거의 페이몬만큼 약했고, 그 시절 아란다샤가 Big Iron Chunks를 걷어찰 수 있었다고 말한다."
+       "t": "아란다샤는 Big Iron Chunks를 걷어찰 수 있었지만, 아란바리카가 달리는 버섯을 이기게 되었을 때 아란다샤는 찾을 수 없었다."
       },
       {
-       "t_raw": "그러나 마침내 달리는 버섯을 이겼을 때 Aradasha는 어디에도 보이지 않았다.",
+       "t_raw": "Aranara가 Big Iron Chunks를 걷어차지 못하면 Big Iron Chunks가 발을 구르며 Vanarana를 엉망으로 만들 것이라고 Arabalika는 말하고, 지금은 Big Iron Chunks가 자신을 이길 수 없다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 마침내 달리는 버섯을 이겼을 때 아란다샤는 어디에도 보이지 않았다."
+       "t": "아란나라가 Big Iron Chunks를 걷어차지 못하면 Big Iron Chunks가 발을 구르며 바나라나를 엉망으로 만들 것이라고 아란바리카는 말하고, 지금은 Big Iron Chunks가 자신을 이길 수 없다고 한다."
       },
       {
-       "t_raw": "Arabalika는 Big Iron Chunks를 걷어찰 Aranara가 없으면 Vanarana가 엉망이 될 것이라고 말하지만, 이제 Big Iron Chunks가 자신을 이기지 못하는 것은 Aradasha의 축복일 것이라고 본다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란바리카는 Big Iron Chunks를 걷어찰 아란나라가 없으면 바나라나가 엉망이 될 것이라고 말하지만, 이제 Big Iron Chunks가 자신을 이기지 못하는 것은 아란다샤의 축복일 것이라고 본다."
-      },
-      {
-       "t_raw": "Aradasha의 부재와 현재의 강함을 한데 묶는 ‘축복’이라는 표현은 행방을 알 수 없는 Aradasha를 떠올리게 하는 말로 보인다.",
+       "t_raw": "찾을 수 없는 Aradasha를 축복의 근원으로 부르는 점에서, **Aradasha의 행방**은 남은 물음으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "아란다샤의 부재와 현재의 강함을 한데 묶는 '축복'이라는 표현은 행방을 알 수 없는 아란다샤를 떠올리게 하는 말로 보인다."
+       "t": "찾을 수 없는 아란다샤를 축복의 근원으로 부르는 점에서, **아란다샤의 행방**은 남은 물음으로 보인다."
       }
      ],
      "sources": [
@@ -1079,32 +1257,33 @@
      "latin_left": [
       "Big Iron Chunks",
       "Big Iron Chunks",
+      "Big Iron Chunks",
       "Big Iron Chunks"
      ]
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nara Varuna, and Nara Traveler, which one is stronger? A match between Golden Nara, Arabalika wants to see.",
+     "status": "accepted",
+     "note": "Facts match A20, A14, A11, A12. The interpretation is acceptable.",
+     "quote": "With lots of memories, Ararakalari power builds up.",
      "sentences": [
       {
-       "t_raw": "Ararakalari는 많은 기억으로 힘이 쌓이고, Arabalika는 그때 Arama와 다시 겨루고 싶어 한다.",
+       "t_raw": "Arabalika는 기억이 많이 쌓일수록 Ararakalari의 힘이 커진다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아라라칼라리는 많은 기억으로 힘이 쌓이고, 아란바리카는 그때 아란마와 다시 겨루고 싶어 한다."
+       "t": "아란바리카는 기억이 많이 쌓일수록 아라라칼라리의 힘이 커진다고 말한다."
       },
       {
-       "t_raw": "Nara Varuna와 Nara Traveler 중 누가 강한지 묻고, Golden Nara의 경기를 보고 싶다는 바람도 남긴다.",
+       "t_raw": "예전에는 Paimon만큼 약했다고 회고하며, Arama가 더 강해지면 다시 겨루고 그 뒤 Vanarana를 떠나지 않고 Ararakalari 수련을 이어가겠다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "나라 바루나와 나라 여행자 중 누가 강한지 묻고, Golden Nara의 경기를 보고 싶다는 바람도 남긴다."
+       "t": "예전에는 페이몬만큼 약했다고 회고하며, 아란마가 더 강해지면 다시 겨루고 그 뒤 바나라나를 떠나지 않고 아라라칼라리 수련을 이어가겠다고 한다."
       },
       {
-       "t_raw": "기억이 쌓인 뒤의 Arama와의 재대결과 Golden Nara의 경기를 나란히 바라는 점에서, 남은 물음은 누구와 언제 겨룰 것인가로 모인다.",
+       "t_raw": "과거의 약함과 기억의 축적, 재대결 뒤의 수련 계획이 맞물려 **기억과 Ararakalari**의 관계는 남은 물음으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "기억이 쌓인 뒤의 아란마와의 재대결과 Golden Nara의 경기를 나란히 바라는 점에서, 남은 물음은 누구와 언제 겨룰 것인가로 모인다."
+       "t": "과거의 약함과 기억의 축적, 재대결 뒤의 수련 계획이 맞물려 **기억과 아라라칼라리**의 관계는 남은 물음으로 보인다."
       }
      ],
      "sources": [
@@ -1120,34 +1299,99 @@
        "kind": "wiki",
        "page": "Arabalika",
        "revision": 1564541,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "A29",
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A12",
        "wiki_refs": []
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Golden Nara",
-      "Golden Nara"
-     ]
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences match A29 and A31. The interpretation is reasonable.",
+     "quote": "Nara Varuna, and Nara Traveler, which one is stronger? A match between Golden Nara, Arabalika wants to see.",
+     "sentences": [
+      {
+       "t_raw": "Arabalika는 Nara Varuna와 Nara Traveler 중 누가 더 강한지 묻고, Golden Nara 사이의 대결을 보고 싶어 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란바리카는 나라 바루나와 나라 여행자 중 누가 더 강한지 묻고, 금빛의 나라 사이의 대결을 보고 싶어 한다."
+      },
+      {
+       "t_raw": "작별 인사에서는 Nara Traveler가 Nara Varuna를 만나기를 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작별 인사에서는 나라 여행자가 나라 바루나를 만나기를 바란다."
+      },
+      {
+       "t_raw": "대결을 보고 싶다는 바람과 만남을 비는 인사가 함께 놓여, **Nara Varuna와의 대결 구상**은 두 Nara의 만남을 전제로 한 남은 물음으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "대결을 보고 싶다는 바람과 만남을 비는 인사가 함께 놓여, **나라 바루나와의 대결 구상**은 두 나라의 만남을 전제로 한 남은 물음으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arabalika",
+       "revision": 1564541,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A31",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He holds a brown hooked staff with a white tip in his right hand.",
+     "status": "accepted",
+     "note": "Appearance and idle quotes match A4-A6.",
+     "quote": "Very skilled...",
      "sentences": [
       {
-       "t_raw": "Arabalika는 **연두색 타원형 몸**에 가슴의 희끄무레한 나선 무늬를 지녔고, 몸 위쪽에는 뾰족한 돌출부가 두 쌍 있다.",
+       "t_raw": "Arabalika는 연한 초록색 타원형 몸에 가슴의 흰 나선무늬와 위쪽으로 뻗은 두 쌍의 뾰족한 돌출부를 지녔다.",
        "interp": false,
        "dropped": false,
-       "t": "아란바리카는 **연두색 타원형 몸**에 가슴의 희끄무레한 나선 무늬를 지녔고, 몸 위쪽에는 뾰족한 돌출부가 두 쌍 있다."
+       "t": "아란바리카는 연한 초록색 타원형 몸에 가슴의 흰 나선무늬와 위쪽으로 뻗은 두 쌍의 뾰족한 돌출부를 지녔다."
       },
       {
-       "t_raw": "머리에는 삼각형 표시가 있는 작은 초록 잎 두 장이 있고, 짙은 초록 잎 두 장이 프로펠러를 이루며, 오른손에는 끝이 흰 갈색 갈고리 모양 지팡이를 쥔다.",
+       "t_raw": "머리에는 삼각형 표시가 있는 작은 초록 잎 두 장과 더 진한 초록 잎 두 장으로 된 프로펠러가 있고, 오른손에는 흰 끝의 갈색 갈고리 지팡이를 쥔다.",
        "interp": false,
        "dropped": false,
-       "t": "머리에는 삼각형 표시가 있는 작은 초록 잎 두 장이 있고, 짙은 초록 잎 두 장이 프로펠러를 이루며, 오른손에는 끝이 흰 갈색 갈고리 모양 지팡이를 쥔다."
+       "t": "머리에는 삼각형 표시가 있는 작은 초록 잎 두 장과 더 진한 초록 잎 두 장으로 된 프로펠러가 있고, 오른손에는 흰 끝의 갈색 갈고리 지팡이를 쥔다."
+      },
+      {
+       "t_raw": "대기 대사로는 ‘아주 능숙한데…’와 ‘아쉽군…’이 확인된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대기 대사로는 '아주 능숙한데…'와 '아쉽군…'이 확인된다."
       }
      ],
      "sources": [
@@ -1158,43 +1402,7 @@
        "section": "Profile > Appearance",
        "paragraph": "A4",
        "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Here is an Aranara flower for brave Nara and Paimon.",
-     "sentences": [
-      {
-       "t_raw": "대기 중에는 '아주 능숙해...'와 '아쉽군...' 같은 말을 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대기 중에는 '아주 능숙해...'와 '아쉽군...' 같은 말을 한다."
       },
-      {
-       "t_raw": "Festival Utsava에서 brave Nara와 Paimon에게 **Aranara flower**를 건넨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "우트사바 축제에서 brave 나라와 페이몬에게 **아란나라 flower**를 건넨다."
-      },
-      {
-       "t_raw": "Arabalika는 축제가 재미있을 수 있지만 아무것도 영원하지 않다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란바리카는 축제가 재미있을 수 있지만 아무것도 영원하지 않다고 말한다."
-      },
-      {
-       "t_raw": "그는 그것이 이상하게 들리지만 제법 괜찮게도 들린다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 그것이 이상하게 들리지만 제법 괜찮게도 들린다고 말한다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Arabalika",
@@ -1210,7 +1418,42 @@
        "section": "Idle Quotes",
        "paragraph": "A6",
        "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches Q4, Q9 and Q12. The ambivalence reading is fair.",
+     "quote": "Here is an Aranara flower for brave Nara and Paimon.",
+     "sentences": [
+      {
+       "t_raw": "Festival Utsava에서 Arabalika는 용감한 Nara와 Paimon에게 Aranara flower를 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "우트사바 축제에서 아란바리카는 용감한 나라와 페이몬에게 아란나라 꽃을 건넨다.",
+       "polish": {
+        "from": "우트사바 축제에서 아란바리카는 용감한 나라와 페이몬에게 아란나라 flower를 건넨다.",
+        "text": "우트사바 축제에서 아란바리카는 용감한 나라와 페이몬에게 아란나라 꽃을 건넨다.",
+        "by": "or-ds"
+       }
       },
+      {
+       "t_raw": "그는 그것이 이상하게 들리지만 꽤 괜찮아 보인다고 말하는가 하면, 축제는 재미있을 수 있으나 아무것도 영원하지 않다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 그것이 이상하게 들리지만 꽤 괜찮아 보인다고 말하는가 하면, 축제는 재미있을 수 있으나 아무것도 영원하지 않다고 덧붙인다."
+      },
+      {
+       "t_raw": "즐거움을 인정하면서도 오래가지 않음을 짚는 **양가적인 태도**가 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즐거움을 인정하면서도 오래가지 않음을 짚는 **양가적인 태도**가 드러난다."
+      }
+     ],
+     "sources": [
       {
        "kind": "quest",
        "quest": "Festival Utsava",
@@ -1238,37 +1481,24 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Matches Q28.",
      "quote": "Arabalika won't come to see Paimon so often. But will bring mushrooms. Cook for her.",
      "sentences": [
       {
-       "t_raw": "Paimon은 Arabalika가 너무 엄격하다고 말하며, 한 가지 일을 끝냈으니 Aranakula를 잠깐 기뻐하게 두자고 한다.",
+       "t_raw": "Arakunti는 Arabalika가 Paimon을 자주 보러 오지는 않겠다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 아란바리카가 너무 엄격하다고 말하며, 한 가지 일을 끝냈으니 아란나쿨라를 잠깐 기뻐하게 두자고 한다."
+       "t": "아란쿤티는 아란바리카가 페이몬을 자주 보러 오지는 않겠다고 말한다."
       },
       {
-       "t_raw": "Arakunti는 Arabalika가 Paimon을 자주 보러 오지는 않지만 버섯을 가져와 Paimon을 위해 요리해 줄 것이라고 말한다.",
+       "t_raw": "그러면서 버섯을 가져올 것이라고 전하고 Paimon을 위해 요리하라고 덧붙인다.",
        "interp": false,
        "dropped": false,
-       "t": "아란쿤티는 아란바리카가 페이몬을 자주 보러 오지는 않지만 버섯을 가져와 페이몬을 위해 요리해 줄 것이라고 말한다."
-      },
-      {
-       "t_raw": "Paimon의 말과 Arakunti의 말을 함께 보면, Arabalika의 **엄격함**과 Paimon을 챙기는 면이 함께 드러난다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "페이몬의 말과 아란쿤티의 말을 함께 보면, 아란바리카의 **엄격함**과 페이몬을 챙기는 면이 함께 드러난다고 볼 수 있다."
+       "t": "그러면서 버섯을 가져올 것이라고 전하고 페이몬을 위해 요리하라고 덧붙인다."
       }
      ],
      "sources": [
-      {
-       "kind": "quest",
-       "quest": "A Prayer for Rain on the Fecund Land",
-       "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
-       "version": "3.0",
-       "speaker": "Paimon"
-      },
       {
        "kind": "quest",
        "quest": "A Prayer for Rain on the Fecund Land",
@@ -1283,60 +1513,9 @@
    ],
    "quote_boxes": [
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아, 맞다. Arapandu가 Arabalika의 Ararakalari가 아주 강력하다고 했어. 분명 아까 그 Ruin Guard를 쓰러뜨릴 때 Ararakalari를 쓴 거야!",
-     "en": "Oh right, Arapandu said that Arabalika's Ararakalari is very powerful. He must have used his Ararakalari to defeat that Ruin Guard earlier!",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Irate Iron Chunk",
-      "quest_ko": "분노의 쇳덩이",
-      "version": "3.0",
-      "speaker": "Paimon"
-     },
-     "t": "아, 맞다. 아란판두가 아란바리카의 아라라칼라리가 아주 강력하다고 했어. 분명 아까 그 유적 가디언을 쓰러뜨릴 때 아라라칼라리를 쓴 거야!",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "작중 행적 — Ruins of Dahri와 Varuna Contraption",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Golden Nara에게서 Arapandu의 냄새가 난다.",
-     "en": "Golden Nara has Arapandu's scent.",
-     "speaker": "Arabalika",
-     "source": {
-      "kind": "quest",
-      "quest": "Irate Iron Chunk",
-      "quest_ko": "분노의 쇳덩이",
-      "version": "3.0",
-      "speaker": "Arabalika"
-     },
-     "t": "Golden Nara에게서 아란판두의 냄새가 난다.",
-     "speaker_ko": "아란바리카"
-    },
-    {
-     "section": "작중 행적 — Aranara 동료와 축제",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "굳세져라, Aranakula. 물러서지 마라. 우리는 이미 여기 있다. 포자든 Fungi든 문제를 해결한다. 이는 모두 Vana를 위한 것이다.",
-     "en": "Toughen up, Aranakula. Do not back down. We are already here. We solve the problem, whether it be spores or Fungi. This is all for Vana.",
-     "speaker": "Arabalika",
-     "source": {
-      "kind": "quest",
-      "quest": "A Prayer for Rain on the Fecund Land",
-      "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
-      "version": "3.0",
-      "speaker": "Arabalika"
-     },
-     "t": "굳세져라, 아란나쿨라. 물러서지 마라. 우리는 이미 여기 있다. 포자든 버섯몬든 문제를 해결한다. 이는 모두 바나를 위한 것이다.",
-     "speaker_ko": "아란바리카"
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of the Arapandu line.",
      "t_raw": "Arabalika는 곧 Ruins of Dahri에서 돌아올 것이다. Arabalika의 Ararakalari가 있으면 Iron Chunks와 Fungi는 더 이상 무섭지 않을 것이다.",
      "en": "Arabalika should be back from the Ruins of Dahri soon. With Arabalika's Ararakalari, the Iron Chunks and Fungi won't be scary anymore.",
      "speaker": "Arapandu",
@@ -1347,14 +1526,82 @@
       "version": "3.0",
       "speaker": "Arapandu"
      },
-     "t": "아란바리카는 곧 다흐리의 폐허에서 돌아올 것이다. 아란바리카의 아라라칼라리가 있으면 Iron Chunks와 버섯몬은 더 이상 무섭지 않을 것이다.",
+     "t": "아란바리카는 곧 다흐리의 폐허에서 돌아올 것이다. 아란바리카의 아라라칼라리가 있으면 철광과 버섯몬은 더 이상 무섭지 않을 것이다.",
      "speaker_ko": "아란판두"
     },
     {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of the Arapandu line.",
+     "t_raw": "Arabalika는 곧 Ruins of Dahri에서 돌아올 것이다. Arabalika의 Ararakalari가 있으면 Iron Chunks와 Fungi는 더 이상 무섭지 않을 것이다.",
+     "en": "Arabalika should be back from the Ruins of Dahri soon. With Arabalika's Ararakalari, the Iron Chunks and Fungi won't be scary anymore.",
+     "speaker": "Arapandu",
+     "source": {
+      "kind": "quest",
+      "quest": "Memory of Stone",
+      "quest_ko": "돌의 기억",
+      "version": "3.0",
+      "speaker": "Arapandu"
+     },
+     "t": "아란바리카는 곧 다흐리의 폐허에서 돌아올 것이다. 아란바리카의 아라라칼라리가 있으면 철광과 버섯몬은 더 이상 무섭지 않을 것이다.",
+     "speaker_ko": "아란판두"
+    },
+    {
+     "section": "작중 행적 — Ruins of Dahri",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "Golden Nara에게서 Arapandu의 냄새가 난다.",
+     "en": "Golden Nara has Arapandu's scent.",
+     "speaker": "Arabalika",
+     "source": {
+      "kind": "quest",
+      "quest": "Irate Iron Chunk",
+      "quest_ko": "분노의 쇳덩이",
+      "version": "3.0",
+      "speaker": "Arabalika"
+     },
+     "t": "금빛의 나라에게서 아란판두의 냄새가 난다.",
+     "speaker_ko": "아란바리카"
+    },
+    {
+     "section": "작중 행적 — Varuna Contraption과 Vana",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "정신 차려, Aranakula. 물러서지 마. 우리는 이미 여기 왔어. 포자든 Fungi든 문제를 해결할 거야. 이건 모두 Vana를 위한 거야.",
+     "en": "Toughen up, Aranakula. Do not back down. We are already here. We solve the problem, whether it be spores or Fungi. This is all for Vana.",
+     "speaker": "Arabalika",
+     "source": {
+      "kind": "quest",
+      "quest": "A Prayer for Rain on the Fecund Land",
+      "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
+      "version": "3.0",
+      "speaker": "Arabalika"
+     },
+     "t": "정신 차려, 아란나쿨라. 물러서지 마. 우리는 이미 여기 왔어. 포자든 버섯몬든 문제를 해결할 거야. 이건 모두 바나를 위한 거야.",
+     "speaker_ko": "아란바리카"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아, 맞다. Arapandu가 Arabalika의 Ararakalari가 아주 강하다고 했어. 분명 아까 그 Ruin Guard를 쓰러뜨릴 때 Arabalika가 Ararakalari를 사용했을 거야!",
+     "en": "Oh right, Arapandu said that Arabalika's Ararakalari is very powerful. He must have used his Ararakalari to defeat that Ruin Guard earlier!",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Irate Iron Chunk",
+      "quest_ko": "분노의 쇳덩이",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "아, 맞다. 아란판두가 아란바리카의 아라라칼라리가 아주 강하다고 했어. 분명 아까 그 유적 가디언을 쓰러뜨릴 때 아란바리카가 아라라칼라리를 사용했을 거야!",
+     "speaker_ko": "페이몬"
+    },
+    {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "어휴, Arabalika는 정말 엄격하네. 우리 한 가지는 끝냈잖아? Aranakula가 잠깐 기뻐하도록 놔두라니까!",
+     "status": "accepted",
+     "note": "Faithful translation (\"you're so strict, Arabalika\" is addressed to Arabalika; Korean renders this acceptably).",
+     "t_raw": "에휴, Arabalika는 너무 엄격하다. 우리 하나는 끝냈잖아? Aranakula가 잠깐 기뻐하게 두자!",
      "en": "Eh, you're so strict, Arabalika. We've finished one thing, haven't we? Just let Aranakula be happy for a bit!",
      "speaker": "Paimon",
      "source": {
@@ -1364,14 +1611,14 @@
       "version": "3.0",
       "speaker": "Paimon"
      },
-     "t": "어휴, 아란바리카는 정말 엄격하네. 우리 한 가지는 끝냈잖아? 아란나쿨라가 잠깐 기뻐하도록 놔두라니까!",
+     "t": "에휴, 아란바리카는 너무 엄격하다. 우리 하나는 끝냈잖아? 아란나쿨라가 잠깐 기뻐하게 두자!",
      "speaker_ko": "페이몬"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "여기, 용감한 Nara와 Paimon을 위한 Aranara flower가 있다.",
+     "status": "accepted",
+     "note": "Faithful translation; \"brave Nara and Paimon\" matches.",
+     "t_raw": "여기 용감한 Nara와 Paimon을 위한 Aranara flower가 있다.",
      "en": "Here is an Aranara flower for brave Nara and Paimon.",
      "speaker": "Arabalika",
      "source": {
@@ -1381,7 +1628,7 @@
       "version": "3.0",
       "speaker": "Arabalika"
      },
-     "t": "여기, 용감한 나라와 페이몬을 위한 아란나라 flower가 있다.",
+     "t": "여기 용감한 나라와 페이몬을 위한 아란나라 flower가 있다.",
      "speaker_ko": "아란바리카"
     }
    ]

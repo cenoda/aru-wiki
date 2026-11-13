@@ -1,0 +1,881 @@
+{
+ "node": "Ninette",
+ "articles": [
+  {
+   "node": "Ninette",
+   "from_version": "Luna IV",
+   "cutoff": "2026-02-24T00:00:00Z",
+   "input": [
+    {
+     "page": "Ninette",
+     "url": "https://genshin-impact.fandom.com/wiki/Ninette",
+     "revision": 2045311
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 11,
+    "web": 0
+   },
+   "input_chars": 1027,
+   "input_cut": false,
+   "input_hash": "bf3aedf5ceb9",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A5, A6, A9, Q1 and A10.",
+     "quote": "Then... please take this special Kamera with the Shutterflash lens. I'll be counting on you to handle it!",
+     "sentences": [
+      {
+       "t_raw": "Ninette는 **Hot in a Flash, or Cold Just as Fast**에서 처음 등장한 이벤트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 **「순간」 렌즈! 위기의 순간!**에서 처음 등장한 이벤트 전용 NPC다."
+      },
+      {
+       "t_raw": "사진 촬영을 부탁하며 **Shutterflash lens**가 달린 특별한 Kamera를 건네고, Lepine-Pauline은 새 설계 아이디어를 떠올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사진 촬영을 부탁하며 **Shutterflash 렌즈**가 달린 특별한 사진기를 건네고, 르핀 폴린은 새 설계 아이디어를 떠올린다.",
+       "polish": {
+        "from": "사진 촬영을 부탁하며 **Shutterflash lens**가 달린 특별한 사진기를 건네고, 르핀 폴린은 새 설계 아이디어를 떠올린다.",
+        "text": "사진 촬영을 부탁하며 **Shutterflash 렌즈**가 달린 특별한 사진기를 건네고, 르핀 폴린은 새 설계 아이디어를 떠올린다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "촬영 의뢰와 새 설계 이야기가 이어지면서 Ninette가 가만히 있지 않으려는 태도와 Lepine-Pauline을 스승이라 부르는 관계가 함께 드러나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "촬영 의뢰와 새 설계 이야기가 이어지면서 니네트가 가만히 있지 않으려는 태도와 르핀 폴린을 스승이라 부르는 관계가 함께 드러나는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Well Done! What's the Next Big Plan?",
+       "quest_ko": "원만한 마무리와 대박 사업!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC",
+      "Shutterflash"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is modest and follows from A5 and A6.",
+     "quote": "Then... please take this special Kamera with the Shutterflash lens. I'll be counting on you to handle it!",
+     "sentences": [
+      {
+       "t_raw": "Ninette는 Hot in a Flash, or Cold Just as Fast에서 처음 등장한 **이벤트 전용 NPC**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 「순간」 렌즈! 위기의 순간!에서 처음 등장한 **이벤트 전용 NPC**다."
+      },
+      {
+       "t_raw": "그녀는 Shutterflash 렌즈가 달린 특별한 Kamera를 건네며 **촬영을 부탁**한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 Shutterflash 렌즈가 달린 특별한 사진기를 건네며 **촬영을 부탁**한다."
+      },
+      {
+       "t_raw": "친구들의 가장 자연스럽고 표정이 살아 있는 순간을 찍어 달라고 당부한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "친구들의 가장 자연스럽고 표정이 살아 있는 순간을 찍어 달라고 당부한다."
+      },
+      {
+       "t_raw": "이벤트 전용 NPC라는 점과 촬영 부탁 및 Kamera 전달을 함께 보면, Ninette는 촬영 의뢰를 매개하는 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이벤트 전용 NPC라는 점과 촬영 부탁 및 사진기 전달을 함께 보면, 니네트는 촬영 의뢰를 매개하는 인물로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC",
+      "Shutterflash",
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts match Q9 and Q4. The independence reading is hedged and reasonable.",
+     "quote": "I wanted to make it on my own someday, so I spent all my savings on the best Kamera equipment I could afford.",
+     "sentences": [
+      {
+       "t_raw": "Ninette는 다른 스승 밑에서 사진을 공부한 적이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 다른 스승 밑에서 사진을 공부한 적이 있다."
+      },
+      {
+       "t_raw": "언젠가 **자기 힘으로 해내고 싶어** 모은 돈을 전부 살 수 있는 최고의 Kamera 장비에 썼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "언젠가 **자기 힘으로 해내고 싶어** 모은 돈을 전부 살 수 있는 최고의 사진기 장비에 썼다."
+      },
+      {
+       "t_raw": "스승에게 배우면서도 혼자서 해내겠다는 목표를 품고 장비를 마련했다는 점에서, 그 지출은 독립을 향한 준비로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스승에게 배우면서도 혼자서 해내겠다는 목표를 품고 장비를 마련했다는 점에서, 그 지출은 독립을 향한 준비로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Q6 and Q9 support the facts. The interpretations link the teacher to the help she gave, which is a reasonable reading and is hedged.",
+     "quote": "I used to study photography under another teacher.",
+     "sentences": [
+      {
+       "t_raw": "Ninette는 정말 힘든 시기를 겪은 뒤 다시 일어설 수 있었던 것이 모두 그녀 덕분이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 정말 힘든 시기를 겪은 뒤 다시 일어설 수 있었던 것이 모두 그녀 덕분이라고 말한다."
+      },
+      {
+       "t_raw": "사진 공부와 힘든 시기를 딛게 한 도움의 기억은 Ninette가 스승과 맺은 인연으로 함께 이어져 온 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사진 공부와 힘든 시기를 딛게 한 도움의 기억은 니네트가 스승과 맺은 인연으로 함께 이어져 온 셈이다."
+      },
+      {
+       "t_raw": "Ninette가 **힘든 시기를 딛고** 다시 일어서는 데 바탕이 된 것은 사진을 배우며 맺은 인연이었다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "니네트가 **힘든 시기를 딛고** 다시 일어서는 데 바탕이 된 것은 사진을 배우며 맺은 인연이었다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Hot in a Flash, or Cold Just as Fast",
+     "status": "accepted",
+     "note": "The facts match A5 and A6. The interpretation is reasonable and hedged.",
+     "quote": "Then... please take this special Kamera with the Shutterflash lens. I'll be counting on you to handle it!",
+     "sentences": [
+      {
+       "t_raw": "Ninette는 Shutterflash 렌즈를 갖춘 특별한 Kamera를 건네며 **촬영을 부탁한다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 Shutterflash 렌즈를 갖춘 특별한 사진기를 건네며 **촬영을 부탁한다**."
+      },
+      {
+       "t_raw": "친구들의 가장 자연스럽고 표정이 살아 있는 순간을 찍어 달라고 당부한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "친구들의 가장 자연스럽고 표정이 살아 있는 순간을 찍어 달라고 당부한다."
+      },
+      {
+       "t_raw": "특별한 Kamera와 자연스러운 표정이라는 두 요소가 겹치는 만큼, 이 부탁은 장비의 성능과 인물의 표정을 함께 염두에 둔 촬영 의뢰로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "특별한 사진기와 자연스러운 표정이라는 두 요소가 겹치는 만큼, 이 부탁은 장비의 성능과 인물의 표정을 함께 염두에 둔 촬영 의뢰로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 「순간」 렌즈! 위기의 순간!",
+     "latin_left": [
+      "Shutterflash"
+     ]
+    },
+    {
+     "section": "작중 행적 — Hot in a Flash, or Cold Just as Fast",
+     "status": "accepted",
+     "note": "The facts match Q2, Q7 and Q8. The fluster and awe reading is a fair interpretation.",
+     "quote": "I... I never imagined I'd really get to see you in person...",
+     "sentences": [
+      {
+       "t_raw": "Ninette는 마주한 이들이 스승이 말한 금발의 여행자와 하얀 옷을 입은 날아다니는 요정인지 떠올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 마주한 이들이 스승이 말한 금발의 여행자와 하얀 옷을 입은 날아다니는 요정인지 떠올린다."
+      },
+      {
+       "t_raw": "이어서 Ninette는 말을 더듬으며 사과하고, 정말로 직접 보게 될 줄은 상상도 못 했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 니네트는 말을 더듬으며 사과하고, 정말로 직접 보게 될 줄은 상상도 못 했다고 말한다."
+      },
+      {
+       "t_raw": "말을 더듬는 사과와 직접 보게 될 줄 몰랐다는 말은 예상 밖의 만남 앞에서 **당황한 모습**이자, 스승이 말한 사람을 실제로 만난 데 대한 감탄으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "말을 더듬는 사과와 직접 보게 될 줄 몰랐다는 말은 예상 밖의 만남 앞에서 **당황한 모습**이자, 스승이 말한 사람을 실제로 만난 데 대한 감탄으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      }
+     ],
+     "heading": "작중 행적 — 「순간」 렌즈! 위기의 순간!",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Well Done! What's the Next Big Plan?",
+     "status": "accepted",
+     "note": "Q1 says she cannot stand by and do nothing or she will never progress while the listener takes photos; the Korean turns that into her being unable to keep still during the shoot and ties the separate thank-you (Q3) to the moment Paimon returns (Q5).",
+     "quote": "That's wonderful! Thank you so much for your help!",
+     "sentences": [
+      {
+       "t_raw": "Ninette는 여행자가 사진을 찍는 동안 자신이 가만히 있을 수 없고, 그러지 않으면 발전이 없을 거라고 생각하게 되었다고 말한다. Paimon이 돌아오자 반긴다. 도움에 고맙다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "니네트는 여행자가 사진을 찍는 동안 자신이 가만히 있을 수 없고, 그러지 않으면 발전이 없을 거라고 생각하게 되었다고 말한다. 페이몬이 돌아오자 반긴다. 도움에 고맙다고 전한다."
+      },
+      {
+       "t_raw": "Paimon은 Lepine-Pauline에게 언제 돌아왔느냐고 묻고, Ninette가 요즘 다른 일로 바쁘다고 했음을 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 르핀 폴린에게 언제 돌아왔느냐고 묻고, 니네트가 요즘 다른 일로 바쁘다고 했음을 전한다."
+      },
+      {
+       "t_raw": "Lepine-Pauline은 최근 꽤 바빴고, Ninette를 도와준 상대가 있어 기쁘다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "르핀 폴린은 최근 꽤 바빴고, 니네트를 도와준 상대가 있어 기쁘다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Well Done! What's the Next Big Plan?",
+       "quest_ko": "원만한 마무리와 대박 사업!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "quest",
+       "quest": "Well Done! What's the Next Big Plan?",
+       "quest_ko": "원만한 마무리와 대박 사업!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "quest",
+       "quest": "Well Done! What's the Next Big Plan?",
+       "quest_ko": "원만한 마무리와 대박 사업!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "quest",
+       "quest": "Well Done! What's the Next Big Plan?",
+       "quest_ko": "원만한 마무리와 대박 사업!",
+       "version": "Luna IV",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Well Done! What's the Next Big Plan?",
+       "quest_ko": "원만한 마무리와 대박 사업!",
+       "version": "Luna IV",
+       "speaker": "Lepine-Pauline"
+      }
+     ],
+     "heading": "작중 행적 — Well Done! What의 the Next Big Plan?",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Well Done! What's the Next Big Plan?",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "I've gone over the test data. The Shutterflash lens didn't just meet the theoretical specs — it actually outperformed them, with capture precision nearly flawless!",
+     "sentences": [
+      {
+       "t_raw": "Lepine-Pauline은 테스트 데이터를 검토한 뒤 Shutterflash lens가 이론 사양을 충족했을 뿐 아니라 능가했고, 촬영 정밀도가 거의 완벽했다고 평가한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "르핀 폴린은 테스트 데이터를 검토한 뒤 Shutterflash 렌즈가 이론 사양을 충족했을 뿐 아니라 능가했고, 촬영 정밀도가 거의 완벽했다고 평가한다.",
+       "polish": {
+        "from": "르핀 폴린은 테스트 데이터를 검토한 뒤 Shutterflash lens가 이론 사양을 충족했을 뿐 아니라 능가했고, 촬영 정밀도가 거의 완벽했다고 평가한다.",
+        "text": "르핀 폴린은 테스트 데이터를 검토한 뒤 Shutterflash 렌즈가 이론 사양을 충족했을 뿐 아니라 능가했고, 촬영 정밀도가 거의 완벽했다고 평가한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그 성능 데이터로 새로운 아이디어가 흘러넘쳐 **차세대 설계**가 머릿속에 그려진다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 성능 데이터로 새로운 아이디어가 흘러넘쳐 **차세대 설계**가 머릿속에 그려진다고 말한다."
+      },
+      {
+       "t_raw": "Ninette는 차세대라는 말에 이 버전의 테스트를 막 마쳤을 뿐이라고 되묻고, Lepine-Pauline은 아이디어가 사라지기 전에 적어야 한다며 노트를 빨리 가져오라고 재촉한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 차세대라는 말에 이 버전의 테스트를 막 마쳤을 뿐이라고 되묻고, 르핀 폴린은 아이디어가 사라지기 전에 적어야 한다며 노트를 빨리 가져오라고 재촉한다."
+      },
+      {
+       "t_raw": "Ninette는 예라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 예라고 답한다."
+      },
+      {
+       "t_raw": "테스트 데이터가 이론 사양을 웃돌았다는 평가가 곧바로 다음 설계 구상으로 이어지는 흐름은, 당혹한 Ninette와 들뜬 Lepine-Pauline의 대비를 만든다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "테스트 데이터가 이론 사양을 웃돌았다는 평가가 곧바로 다음 설계 구상으로 이어지는 흐름은, 당혹한 니네트와 들뜬 르핀 폴린의 대비를 만든다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — Well Done! What의 the Next Big Plan?",
+     "latin_left": [
+      "Shutterflash"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "I used to study photography under another teacher.",
+     "sentences": [
+      {
+       "t_raw": "Ninette는 예전에 다른 선생님 밑에서 사진을 공부했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 예전에 다른 선생님 밑에서 사진을 공부했다."
+      },
+      {
+       "t_raw": "지금은 Lepine-Pauline을 **Master**라고 부르며, Lepine-Pauline이 차세대 설계 이야기를 꺼내자 '다음 세대?'라고 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지금은 르핀 폴린을 **사범님**라고 부르며, 르핀 폴린이 차세대 설계 이야기를 꺼내자 '다음 세대?'라고 되묻는다."
+      },
+      {
+       "t_raw": "이어 노트북을 가져오라는 재촉에 'Y—Yes...'라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 노트북을 가져오라는 재촉에 'Y—Yes...'라고 답한다."
+      },
+      {
+       "t_raw": "예전에 다른 선생님 밑에서 사진을 공부했다는 사실과 Lepine-Pauline을 Master라고 부르는 모습을 함께 보면, Lepine-Pauline은 Ninette가 따르는 현재의 스승으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "예전에 다른 선생님 밑에서 사진을 공부했다는 사실과 르핀 폴린을 사범님라고 부르는 모습을 함께 보면, 르핀 폴린은 니네트가 따르는 현재의 스승으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Yes"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "Lepine-Pauline! When did you get back? Ninette said you've been busy with something else lately.",
+     "sentences": [
+      {
+       "t_raw": "Ninette는 golden-haired traveler와 하얀 옷을 입은 날아다니는 요정을 보며, 이들이 Master가 말한 사람들인지 생각한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 금발의 여행자와 하얀 옷을 입은 날아다니는 요정을 보며, 이들이 사범님이 말한 사람들인지 생각한다.",
+       "polish": {
+        "from": "니네트는 golden-haired traveler와 하얀 옷을 입은 날아다니는 요정을 보며, 이들이 사범님이 말한 사람들인지 생각한다.",
+        "text": "니네트는 금발의 여행자와 하얀 옷을 입은 날아다니는 요정을 보며, 이들이 사범님이 말한 사람들인지 생각한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Paimon은 Lepine-Pauline에게 언제 돌아왔는지 묻고, Ninette가 Lepine-Pauline이 요즘 다른 일로 바쁘다고 했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 르핀 폴린에게 언제 돌아왔는지 묻고, 니네트가 르핀 폴린이 요즘 다른 일로 바쁘다고 했다고 전한다."
+      },
+      {
+       "t_raw": "Lepine-Pauline은 요즘 꽤 바빴고, 상대가 Ninette를 도와줘서 정말 기뻤다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "르핀 폴린은 요즘 꽤 바빴고, 상대가 니네트를 도와줘서 정말 기뻤다고 말한다."
+      },
+      {
+       "t_raw": "Ninette는 정말 힘든 시기를 겪은 뒤 **다시 일어설 수 있었던** 데에는 '그녀'의 도움이 있었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 정말 힘든 시기를 겪은 뒤 **다시 일어설 수 있었던** 데에는 '그녀'의 도움이 있었다고 말한다."
+      },
+      {
+       "t_raw": "Paimon이 Lepine-Pauline의 귀환을 묻고 Lepine-Pauline이 상대의 도움을 언급하는 흐름은, Ninette를 둘러싼 인연들이 서로 이어져 있음을 보여준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "페이몬이 르핀 폴린의 귀환을 묻고 르핀 폴린이 상대의 도움을 언급하는 흐름은, 니네트를 둘러싼 인연들이 서로 이어져 있음을 보여준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "quest",
+       "quest": "Well Done! What's the Next Big Plan?",
+       "quest_ko": "원만한 마무리와 대박 사업!",
+       "version": "Luna IV",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Well Done! What's the Next Big Plan?",
+       "quest_ko": "원만한 마무리와 대박 사업!",
+       "version": "Luna IV",
+       "speaker": "Lepine-Pauline"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "Ninette is an event-exclusive NPC who first appeared in the Hot in a Flash, or Cold Just as Fast.",
+     "sentences": [
+      {
+       "t_raw": "Ninette는 **이벤트 전용 NPC**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 **이벤트 전용 NPC**다."
+      },
+      {
+       "t_raw": "Ninette는 Hot in a Flash, or Cold Just as Fast에 처음 등장했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니네트는 「순간」 렌즈! 위기의 순간!에 처음 등장했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "Available after completing Hot in a Flash, or Cold Just as Fast",
+     "sentences": [
+      {
+       "t_raw": "첫 번째 대화 세트는 Hot in a Flash, or Cold Just as Fast를 완료한 뒤 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "첫 번째 대화 세트는 「순간」 렌즈! 위기의 순간!을 완료한 뒤 열린다."
+      },
+      {
+       "t_raw": "두 번째 대화 세트는 Well Done! What's the Next Big Plan?를 완료한 뒤 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 번째 대화 세트는 Well Done! What's the Next Big Plan?를 완료한 뒤 열린다.",
+       "polish": {
+        "from": "두 번째 대화 세트는 Well Done! What의 the Next Big Plan?를 완료한 뒤 열린다.",
+        "text": "두 번째 대화 세트는 Well Done! What's the Next Big Plan?를 완료한 뒤 열린다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "두 대화 세트는 각 퀘스트를 끝내야 볼 수 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 대화 세트는 각 퀘스트를 끝내야 볼 수 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ninette",
+       "revision": 2045311,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Well Done",
+      "What's the Next Big Plan"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Both quests are labeled Luna IV in the full material, and organizing her lines around those two quests is a fair reading.",
+     "quote": "While you were busy taking those photos, I started thinking I can't just stand by and do nothing, or I'll never make any progress...",
+     "sentences": [
+      {
+       "t_raw": "Hot in a Flash, or Cold Just as Fast의 대화와 Well Done! What's the Next Big Plan?의 대화는 각각 **Luna IV**에 공개된 퀘스트에서 확인된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「순간」 렌즈! 위기의 순간!의 대화와 Well Done! What's the Next Big Plan?의 대화는 각각 **Luna IV**에 공개된 퀘스트에서 확인된다.",
+       "polish": {
+        "from": "「순간」 렌즈! 위기의 순간!의 대화와 Well Done! What의 the Next Big Plan?의 대화는 각각 **Luna IV**에 공개된 퀘스트에서 확인된다.",
+        "text": "「순간」 렌즈! 위기의 순간!의 대화와 Well Done! What's the Next Big Plan?의 대화는 각각 **Luna IV**에 공개된 퀘스트에서 확인된다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그래서 Ninette의 대화 기록은 Luna IV에 공개된 두 퀘스트를 기준으로 정리할 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 니네트의 대화 기록은 Luna IV에 공개된 두 퀘스트를 기준으로 정리할 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Well Done! What's the Next Big Plan?",
+       "quest_ko": "원만한 마무리와 대박 사업!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hot in a Flash, or Cold Just as Fast",
+       "quest_ko": "「순간」 렌즈! 위기의 순간!",
+       "version": "Luna IV",
+       "speaker": "Ninette"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Well Done",
+      "What's the Next Big Plan",
+      "Luna IV",
+      "Luna IV"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful: own success, all savings, best affordable Kamera gear.",
+     "t_raw": "언젠가 내 힘으로 해내고 싶어서, 내가 살 수 있는 최고의 Kamera 장비에 모은 돈을 전부 썼다.",
+     "en": "I wanted to make it on my own someday, so I spent all my savings on the best Kamera equipment I could afford.",
+     "speaker": "Ninette",
+     "source": {
+      "kind": "quest",
+      "quest": "Hot in a Flash, or Cold Just as Fast",
+      "quest_ko": "「순간」 렌즈! 위기의 순간!",
+      "version": "Luna IV",
+      "speaker": "Ninette"
+     },
+     "t": "언젠가 내 힘으로 해내고 싶어서, 내가 살 수 있는 최고의 사진기 장비에 모은 돈을 전부 썼다.",
+     "speaker_ko": "니네트"
+    },
+    {
+     "section": "작중 행적 — Hot in a Flash, or Cold Just as Fast",
+     "status": "accepted",
+     "note": "Faithful rendering of never imagining an in-person meeting.",
+     "t_raw": "저... 제가 정말로 당신을 직접 뵙게 될 줄은 상상도 못 했어요...",
+     "en": "I... I never imagined I'd really get to see you in person...",
+     "speaker": "Ninette",
+     "source": {
+      "kind": "quest",
+      "quest": "Hot in a Flash, or Cold Just as Fast",
+      "quest_ko": "「순간」 렌즈! 위기의 순간!",
+      "version": "Luna IV",
+      "speaker": "Ninette"
+     },
+     "t": "저... 제가 정말로 당신을 직접 뵙게 될 줄은 상상도 못 했어요...",
+     "speaker_ko": "니네트"
+    },
+    {
+     "section": "작중 행적 — Well Done! What's the Next Big Plan?",
+     "status": "accepted",
+     "note": "Faithful: return timing and Ninette saying she was busy with something else lately.",
+     "t_raw": "Lepine-Pauline! 언제 돌아온 거야? Ninette가 네가 요즘 다른 일로 바쁘다고 했어.",
+     "en": "Lepine-Pauline! When did you get back? Ninette said you've been busy with something else lately.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Well Done! What's the Next Big Plan?",
+      "quest_ko": "원만한 마무리와 대박 사업!",
+      "version": "Luna IV",
+      "speaker": "Paimon"
+     },
+     "t": "르핀 폴린! 언제 돌아온 거야? 니네트가 네가 요즘 다른 일로 바쁘다고 했어.",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful: used to study photography under another teacher.",
+     "t_raw": "저는 예전에 다른 선생님 밑에서 사진을 공부했었어요.",
+     "en": "I used to study photography under another teacher.",
+     "speaker": "Ninette",
+     "source": {
+      "kind": "quest",
+      "quest": "Hot in a Flash, or Cold Just as Fast",
+      "quest_ko": "「순간」 렌즈! 위기의 순간!",
+      "version": "Luna IV",
+      "speaker": "Ninette"
+     },
+     "t": "저는 예전에 다른 선생님 밑에서 사진을 공부했었어요.",
+     "speaker_ko": "니네트"
+    }
+   ]
+  }
+ ]
+}

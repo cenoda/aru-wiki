@@ -1,0 +1,768 @@
+{
+ "node": "Draught of Lucidity",
+ "articles": [
+  {
+   "node": "Draught of Lucidity",
+   "from_version": "5.3",
+   "cutoff": "2025-02-11T00:00:00Z",
+   "input": [
+    {
+     "page": "Draught of Lucidity",
+     "url": "https://genshin-impact.fandom.com/wiki/Draught_of_Lucidity",
+     "revision": 1704478
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 3,
+    "web": 0
+   },
+   "input_chars": 1137,
+   "input_cut": false,
+   "input_hash": "01cd7262e758",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1-A4 and M1. Sentence 3 is a reasonable interpretation.",
+     "quote": "The Draught of Lucidity is a medicine developed by Guthred, a Khaenri'ahn military doctor who lived during the cataclysm.",
+     "sentences": [
+      {
+       "t_raw": "Draught of Lucidity는 cataclysm 당시 Khaenri'ah의 군의관 Guthred가 Abyssal power 노출로 생기는 Abyssal Corrosion Syndrome을 치료하기 위해 개발한 약이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「환각 제거제」는 cataclysm 당시 켄리아의 군의관 구스레드가 Abyssal power 노출로 생기는 「심연 침식 증후군」을 치료하기 위해 개발한 약이다."
+      },
+      {
+       "t_raw": "이 약은 Abyss가 남기는 심리적 영향을 없애지만, 심각한 부작용 때문에 Abyssal Corrosion Syndrome의 가장 심한 경우에 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 약은 심연이 남기는 심리적 영향을 없애지만, 심각한 부작용 때문에 「심연 침식 증후군」의 가장 심한 경우에 쓰인다."
+      },
+      {
+       "t_raw": "Guthred는 개발을 빠르게 하기 위해 자신을 실험 대상으로 삼았고, 약이 완성된 직후 세상을 떠났으며, 이후 Natlan의 Flower-Feather Clan에는 Capitano가 이 약을 나누어 병든 전사들을 치료했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구스레드는 개발을 빠르게 하기 위해 자신을 실험 대상으로 삼았고, 약이 완성된 직후 세상을 떠났으며, 이후 나타의 꽃깃회에는 카피타노가 이 약을 나누어 병든 전사들을 치료했다."
+      },
+      {
+       "t_raw": "이 약은 cataclysm의 Khaenri'ah와 Natlan의 Abyssal invasion을 잇는 치료제로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 약은 대재앙의 켄리아와 나타의 심연 침공을 잇는 치료제로 보인다.",
+       "polish": {
+        "from": "이 약은 cataclysm의 켄리아와 나타의 Abyssal invasion을 잇는 치료제로 보인다.",
+        "text": "이 약은 대재앙의 켄리아와 나타의 심연 침공을 잇는 치료제로 보인다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        },
+        {
+         "type": "quest",
+         "name": "As the Sun Rises and Sets"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": "History",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": "History",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Capitano",
+       "revision": 1712957,
+       "section": "Story > In-Game",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Abyssal"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "A1 and Paimon's line Q1 support all sentences.",
+     "quote": "He was the one who developed the Draught of Lucidity, a drug that can help people with hallucinations.",
+     "sentences": [
+      {
+       "t_raw": "Draught of Lucidity는 cataclysm 당시 Khaenri'ahn 군의관 Guthred가 개발한 약이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「환각 제거제」는 대재앙 당시 켄리아인 군의관 구스레드가 개발한 약이다.",
+       "polish": {
+        "from": "「환각 제거제」는 cataclysm 당시 켄리아인 군의관 구스레드가 개발한 약이다.",
+        "text": "「환각 제거제」는 대재앙 당시 켄리아인 군의관 구스레드가 개발한 약이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "**Abyssal Corrosion Syndrome**은 Abyss의 힘에 노출되어 생기는 병이며, 이 약은 그 치료를 목적으로 만들어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**「심연 침식 증후군」**은 심연의 힘에 노출되어 생기는 병이며, 이 약은 그 치료를 목적으로 만들어졌다."
+      },
+      {
+       "t_raw": "Paimon은 이 약을 환각을 겪는 사람들을 도울 수 있는 약이라고 설명했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 이 약을 환각을 겪는 사람들을 도울 수 있는 약이라고 설명했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "As the Sun Rises and Sets",
+       "quest_ko": "해가 뜨고 지는 것처럼",
+       "version": "5.3",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "A2 supports the facts. The interpretation follows from the Saurian/Ayo detail.",
+     "quote": "Although the draught was designed for humans, it is also effective on Saurians, as seen when a small dosage helped to uplift Ayo's mood.",
+     "sentences": [
+      {
+       "t_raw": "이 약은 Abyss가 남기는 심리적 영향을 떨쳐내지만, 부작용이 심해 **만성 편두통**이 평생 남는 등의 문제가 있어 최악의 Abyssal Corrosion Syndrome 환자에게 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 약은 심연이 남기는 심리적 영향을 떨쳐내지만, 부작용이 심해 **만성 편두통**이 평생 남는 등의 문제가 있어 최악의 「심연 침식 증후군」 환자에게 쓰인다."
+      },
+      {
+       "t_raw": "인간을 위해 설계되었어도 Saurians에게도 효력이 있어, 소량 투여가 Ayo의 기분을 올리는 데 도움을 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "인간을 위해 설계되었어도 용에게도 효력이 있어, 소량 투여가 뇽뇽의 기분을 올리는 데 도움을 주었다."
+      },
+      {
+       "t_raw": "인간용으로 설계된 약이 Saurians에게도 효력을 보이고 Ayo의 기분을 올린 점은 적용 범위가 인간을 넘어 Saurians에도 이어진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "인간용으로 설계된 약이 용에게도 효력을 보이고 뇽뇽의 기분을 올린 점은 적용 범위가 인간을 넘어 용에도 이어진다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        },
+        {
+         "type": "quest",
+         "name": "As the Sun Rises and Sets"
+        }
+       ]
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "A3 supports both sentences.",
+     "quote": "During the cataclysm, the endless battles against the Abyss inflicted many hallucinations among Khaenri'ahn soldiers, to the point where some attempted to kill each other.",
+     "sentences": [
+      {
+       "t_raw": "cataclysm 당시 Abyss와의 끝없는 전투는 Khaenri'ahn 병사들에게 많은 환각을 일으켰고, 일부가 서로를 죽이려 할 정도였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "cataclysm 당시 심연와의 끝없는 전투는 켄리아인 병사들에게 많은 환각을 일으켰고, 일부가 서로를 죽이려 할 정도였다."
+      },
+      {
+       "t_raw": "Guthred는 치료법을 가능한 한 빠르게 개발하려 자신을 실험대상으로 삼았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구스레드는 치료법을 가능한 한 빠르게 개발하려 자신을 실험대상으로 삼았다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": "History",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "A3, A4, M1 and M2 support the facts. The interpretation is reasonable.",
+     "quote": "Following the Abyssal invasion of Natlan in The Rainbow Destined to Burn, the Fatui Harbinger Capitano distributed doses of the draught among the Flower-Feather Clan to cure their afflicted warriors.",
+     "sentences": [
+      {
+       "t_raw": "Guthred는 자신을 실험한 끝에 Draught of Lucidity를 완성했고, 약이 완성된 직후 세상을 떠났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구스레드는 자신을 실험한 끝에 「환각 제거제」를 완성했고, 약이 완성된 직후 세상을 떠났다."
+      },
+      {
+       "t_raw": "이 약은 결국 성공한 치료법이었지만, Guthred는 실험으로 목숨을 잃었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 약은 결국 성공한 치료법이었지만, 구스레드는 실험으로 목숨을 잃었다."
+      },
+      {
+       "t_raw": "The Rainbow Destined to Burn에서 Abyss의 Natlan 침공 뒤, Fatui의 집행관 Capitano는 Flower-Feather Clan의 전사들을 치료하려 이 약을 나누어 주었고, 그 약은 최악의 Abyssal Corrosion Syndrome 사례를 치료하는 데 도움을 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타오를 운명의 무지개에서 심연의 나타 침공 뒤, 우인단의 집행관 카피타노는 꽃깃회의 전사들을 치료하려 이 약을 나누어 주었고, 그 약은 최악의 「심연 침식 증후군」 사례를 치료하는 데 도움을 주었다."
+      },
+      {
+       "t_raw": "완성 직후의 죽음과 Natlan에서의 배포는 이 약의 역사가 희생을 거쳐 치료로 이어진 흐름임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "완성 직후의 죽음과 나타에서의 배포는 이 약의 역사가 희생을 거쳐 치료로 이어진 흐름임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": "History",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": "History",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Capitano",
+       "revision": 1712957,
+       "section": "Story > In-Game",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Guthred",
+       "revision": 1703121,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "M2 supports all facts. The interpretation is a fair reading of Capitano tolerating the differences.",
+     "quote": "Though he shared much different views of justice compared to his commander, Capitano tolerated them; Mavuika believed that it made them the perfect partners.",
+     "sentences": [
+      {
+       "t_raw": "Guthred는 Khaenri'ah의 전직 병사로, cataclysm 동안 Capitano 밑에서 **신뢰받는 2인자**로 복무했고 존경받는 군의관이기도 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구스레드는 켄리아의 전직 병사로, 대재앙 동안 카피타노 밑에서 **신뢰받는 2인자**로 복무했고 존경받는 군의관이기도 했다.",
+       "polish": {
+        "from": "구스레드는 켄리아의 전직 병사로, cataclysm 동안 카피타노 밑에서 **신뢰받는 2인자**로 복무했고 존경받는 군의관이기도 했다.",
+        "text": "구스레드는 켄리아의 전직 병사로, 대재앙 동안 카피타노 밑에서 **신뢰받는 2인자**로 복무했고 존경받는 군의관이기도 했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그는 Capitano와 정의관이 크게 달랐지만 Capitano는 그 차이를 받아들였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 카피타노와 정의관이 크게 달랐지만 카피타노는 그 차이를 받아들였다."
+      },
+      {
+       "t_raw": "Mavuika는 그 점이 두 사람을 **완벽한 파트너**로 만들었다고 보았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마비카는 그 점이 두 사람을 **완벽한 파트너**로 만들었다고 보았다."
+      },
+      {
+       "t_raw": "두 사람의 관계는 정의관의 차이를 받아들이는 방식으로 유지된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 사람의 관계는 정의관의 차이를 받아들이는 방식으로 유지된 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guthred",
+       "revision": 1703121,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by A4 and M1.",
+     "quote": "Following the Abyssal invasion of Natlan in The Rainbow Destined to Burn, the Fatui Harbinger Capitano distributed doses of the draught among the Flower-Feather Clan to cure their afflicted warriors.",
+     "sentences": [
+      {
+       "t_raw": "Natlan에서 Abyssal invasion이 있은 뒤, Fatui 집행관 Capitano는 Flower-Feather Clan에 Draught of Lucidity를 나누어 가장 심한 Abyssal Corrosion Syndrome 환자를 치료하는 데 도움을 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나타에서 심연 침공이 있은 뒤, 우인단 집행관 카피타노는 꽃깃회에 「환각 제거제」를 나누어 가장 심한 「심연 침식 증후군」 환자를 치료하는 데 도움을 주었다.",
+       "polish": {
+        "from": "나타에서 Abyssal invasion이 있은 뒤, 우인단 집행관 카피타노는 꽃깃회에 「환각 제거제」를 나누어 가장 심한 「심연 침식 증후군」 환자를 치료하는 데 도움을 주었다.",
+        "text": "나타에서 심연 침공이 있은 뒤, 우인단 집행관 카피타노는 꽃깃회에 「환각 제거제」를 나누어 가장 심한 「심연 침식 증후군」 환자를 치료하는 데 도움을 주었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이 약은 Guthred가 개발한 것이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 약은 구스레드가 개발한 것이었다."
+      },
+      {
+       "t_raw": "Capitano가 약을 전달한 대상은 피해를 입은 Flower-Feather Clan의 전사들이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카피타노가 약을 전달한 대상은 피해를 입은 꽃깃회의 전사들이었다."
+      },
+      {
+       "t_raw": "Guthred의 약이 Natlan에서 Capitano의 손을 거쳐 쓰인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "구스레드의 약이 나타에서 카피타노의 손을 거쳐 쓰인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": "History",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Capitano",
+       "revision": 1712957,
+       "section": "Story > In-Game",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported. The private conversation and the undisclosed personal matters are in M1, and the mystery reading is a fair interpretation.",
+     "quote": "Following the Abyssal invasion of Natlan in The Rainbow Destined to Burn, the Fatui Harbinger Capitano distributed doses of the draught among the Flower-Feather Clan to cure their afflicted warriors.",
+     "sentences": [
+      {
+       "t_raw": "Natlan에서 Abyssal invasion 뒤 Capitano는 Flower-Feather Clan에 **Draught of Lucidity**를 나눠 Abyssal Corrosion Syndrome에 시달린 전사들을 치료했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나타에서 심연 침공 뒤 카피타노는 꽃깃회에 **「환각 제거제」**를 나눠 「심연 침식 증후군」에 시달린 전사들을 치료했다.",
+       "polish": {
+        "from": "나타에서 Abyssal invasion 뒤 카피타노는 꽃깃회에 **「환각 제거제」**를 나눠 「심연 침식 증후군」에 시달린 전사들을 치료했다.",
+        "text": "나타에서 심연 침공 뒤 카피타노는 꽃깃회에 **「환각 제거제」**를 나눠 「심연 침식 증후군」에 시달린 전사들을 치료했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그 뒤 그는 Traveler와 Paimon에게 이 나라에서 할 일이 남았지만 자세한 내용은 밝히지 않고 대체로 개인적인 일이라고만 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 뒤 그는 여행자와 페이몬에게 이 나라에서 할 일이 남았지만 자세한 내용은 밝히지 않고 대체로 개인적인 일이라고만 말했다."
+      },
+      {
+       "t_raw": "그 내용은 아직 **수수께끼**로 남는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 내용은 아직 **수수께끼**로 남는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": "History",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Capitano",
+       "revision": 1712957,
+       "section": "Story > In-Game",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The face reveal and disdain are in M1. The interpretation that the link to his personal matters is not shown is reasonable.",
+     "quote": "Capitano decided to reveal his true face beneath his helmet to them to showcase his disdain for the Ruler of Death for what she did to him and his people.",
+     "sentences": [
+      {
+       "t_raw": "Traveler가 **Ruler of Death**를 꺼내자 Capitano는 투구 아래의 진짜 얼굴을 드러내 그녀가 자신과 자신의 백성에게 한 일에 대한 혐오를 보였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 **죽음의 집정관**을 꺼내자 카피타노는 투구 아래의 진짜 얼굴을 드러내 그녀가 자신과 자신의 백성에게 한 일에 대한 혐오를 보였다."
+      },
+      {
+       "t_raw": "그가 밝히지 않은 개인적인 일과 이 혐오가 어떻게 이어지는지는 드러나지 않은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 밝히지 않은 개인적인 일과 이 혐오가 어떻게 이어지는지는 드러나지 않은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Capitano",
+       "revision": 1712957,
+       "section": "Story > In-Game",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by M2, including the soul persisting because of the modified heart.",
+     "quote": "Guthred ultimately succumbed from the experiments, though his soul persisted due to Capitano's modified heart and watched him from afar.",
+     "sentences": [
+      {
+       "t_raw": "Guthred는 cataclysm 당시 Capitano의 신뢰받는 부관이자 존경받는 군의관이었고, Capitano와 정의관이 달랐지만 Capitano는 이를 받아들였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구스레드는 대재앙 당시 카피타노의 신뢰받는 부관이자 존경받는 군의관이었고, 카피타노와 정의관이 달랐지만 카피타노는 이를 받아들였다.",
+       "polish": {
+        "from": "구스레드는 cataclysm 당시 카피타노의 신뢰받는 부관이자 존경받는 군의관이었고, 카피타노와 정의관이 달랐지만 카피타노는 이를 받아들였다.",
+        "text": "구스레드는 대재앙 당시 카피타노의 신뢰받는 부관이자 존경받는 군의관이었고, 카피타노와 정의관이 달랐지만 카피타노는 이를 받아들였다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Mavuika는 그 점이 두 사람을 완벽한 파트너로 만들었다고 보았으나, Guthred는 Capitano가 비명예로운 전술을 쓰지 않은 것이 결정적 순간의 승리를 앗아갔다고 믿었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마비카는 그 점이 두 사람을 완벽한 파트너로 만들었다고 보았으나, 구스레드는 카피타노가 비명예로운 전술을 쓰지 않은 것이 결정적 순간의 승리를 앗아갔다고 믿었다."
+      },
+      {
+       "t_raw": "Capitano의 개조된 심장 때문에 Guthred의 영혼이 남아 멀리서 그를 지켜보았다는 점에서, 두 사람의 관계는 죽음 이후에도 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "카피타노의 개조된 심장 때문에 구스레드의 영혼이 남아 멀리서 그를 지켜보았다는 점에서, 두 사람의 관계는 죽음 이후에도 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guthred",
+       "revision": 1703121,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by A2. The Saurian interpretation is reasonable.",
+     "quote": "Although the draught was designed for humans, it is also effective on Saurians, as seen when a small dosage helped to uplift Ayo's mood.",
+     "sentences": [
+      {
+       "t_raw": "Draught of Lucidity는 인간을 위해 설계되었지만 Saurian에게도 효능이 있으며, 소량 투여가 **Ayo**의 기분을 올리는 데 도움을 준 사례가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「환각 제거제」는 인간을 위해 설계되었지만 용에게도 효능이 있으며, 소량 투여가 **뇽뇽**의 기분을 올리는 데 도움을 준 사례가 있다."
+      },
+      {
+       "t_raw": "다만 그 효능에는 대가가 따라, **만성 편두통**이 평생 지속되는 심각한 부작용 때문에 최악의 Abyssal Corrosion Syndrome 환자에게 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 그 효능에는 대가가 따라, **만성 편두통**이 평생 지속되는 심각한 부작용 때문에 최악의 「심연 침식 증후군」 환자에게 쓰인다."
+      },
+      {
+       "t_raw": "소량으로 Saurian의 기분이 나아진 일은 약이 인간 밖의 대상에도 작동한 예로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "소량으로 용의 기분이 나아진 일은 약이 인간 밖의 대상에도 작동한 예로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Draught of Lucidity",
+       "revision": 1704478,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Same Land"
+        },
+        {
+         "type": "quest",
+         "name": "As the Sun Rises and Sets"
+        }
+       ]
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Both Paimon lines are in Q2 and Q3. The interpretations are reasonable readings of the hesitant repetition.",
+     "quote": "The Draught of... Lucidity?",
+     "sentences": [
+      {
+       "t_raw": "대화 중 **Paimon**은 \"Like with the Draught of Lucidity?\"라고 말했고, \"The Draught of... Lucidity?\"라고 약 이름을 다시 짚었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대화 중 **페이몬**은 \"Like with the 「환각 제거제」?\"라고 말했고, \"The Draught of... Lucidity?\"라고 약 이름을 다시 짚었다."
+      },
+      {
+       "t_raw": "두 번째 대사는 약 이름을 확인하듯 더듬는 형태라, 약 이름을 다시 떠올린 장면으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 번째 대사는 약 이름을 확인하듯 더듬는 형태라, 약 이름을 다시 떠올린 장면으로 읽힌다."
+      },
+      {
+       "t_raw": "두 대사는 약 이름이 대화에서 반복해 되짚어진 예로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 대사는 약 이름이 대화에서 반복해 되짚어진 예로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "For the Same Land",
+       "quest_ko": "우리의 땅을 위하여",
+       "version": "5.2",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "For the Same Land",
+       "quest_ko": "우리의 땅을 위하여",
+       "version": "5.2",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Like",
+      "The Draught of",
+      "Lucidity"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "그는 환각을 겪는 사람들을 도울 수 있는 약인 Draught of Lucidity를 개발한 사람이었다.",
+     "en": "He was the one who developed the Draught of Lucidity, a drug that can help people with hallucinations.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "As the Sun Rises and Sets",
+      "quest_ko": "해가 뜨고 지는 것처럼",
+      "version": "5.3",
+      "speaker": "Paimon"
+     },
+     "t": "그는 환각을 겪는 사람들을 도울 수 있는 약인 「환각 제거제」를 개발한 사람이었다.",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Faithful translation; the split into two sentences keeps the meaning.",
+     "t_raw": "그가 Draught of Lucidity를 개발한 사람이야. 환각을 겪는 사람들을 도울 수 있는 약이지.",
+     "en": "He was the one who developed the Draught of Lucidity, a drug that can help people with hallucinations.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "As the Sun Rises and Sets",
+      "quest_ko": "해가 뜨고 지는 것처럼",
+      "version": "5.3",
+      "speaker": "Paimon"
+     },
+     "t": "그가 「환각 제거제」를 개발한 사람이야. 환각을 겪는 사람들을 도울 수 있는 약이지.",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation; the appositive is rendered as '즉' and the meaning is unchanged.",
+     "t_raw": "그가 Draught of Lucidity, 즉 환각을 겪는 사람들을 도울 수 있는 약을 개발한 사람이었다.",
+     "en": "He was the one who developed the Draught of Lucidity, a drug that can help people with hallucinations.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "As the Sun Rises and Sets",
+      "quest_ko": "해가 뜨고 지는 것처럼",
+      "version": "5.3",
+      "speaker": "Paimon"
+     },
+     "t": "그가 「환각 제거제」, 즉 환각을 겪는 사람들을 도울 수 있는 약을 개발한 사람이었다.",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of the hesitant question.",
+     "t_raw": "그 Draught of... Lucidity?",
+     "en": "The Draught of... Lucidity?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "For the Same Land",
+      "quest_ko": "우리의 땅을 위하여",
+      "version": "5.2",
+      "speaker": "Paimon"
+     },
+     "t": "그 Draught of... Lucidity?",
+     "speaker_ko": "페이몬"
+    }
+   ]
+  }
+ ]
+}

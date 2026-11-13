@@ -30,44 +30,52 @@
    "input_chars": 11065,
    "input_cut": false,
    "input_hash": "c5b0defc6537",
-   "writer": "ds,or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "kimi,or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Escoffier is a famous Fontainian chef. Formerly the head chef of the Hotel Debord, she currently operates a restaurant in the Fleuve Cendre.",
+     "status": "accepted",
+     "note": "The English says she became Furina's Patissiere Supreme and later ran Hotel Debord, serving Furina and others. It never says she went back and forth between Palais Mermonia and Hotel Debord, so that detail is added.",
+     "quote": "Escoffier, the ex-Head Chef of Hotel Debord, and her \"precision gastronomy\" are all the more famed in Fontaine.",
      "sentences": [
       {
-       "t_raw": "Escoffier는 Fontaine의 이름난 셰프로, 한때 Hotel Debord의 헤드 셰프였으며 지금은 Fleuve Cendre에서 식당을 운영하고 있다.",
+       "t_raw": "Escoffier는 Genshin Impact의 playable 캐릭터이자 Fontaine의 유명한 요리사로, Hotel Debord의 전 주방장이며 The Steambird 미식 칼럼에서 **\"precision gastronomy\"**로 이름을 날린 인물이다.",
        "interp": false,
        "dropped": false,
-       "t": "에스코피에는 폰타인의 이름난 셰프로, 한때 드보르 호텔의 헤드 셰프였으며 지금은 잿빛의 강에서 식당을 운영하고 있다."
+       "t": "에스코피에는 원신의 playable 캐릭터이자 폰타인의 유명한 요리사로, 드보르 호텔의 전 주방장이며 스팀버드 미식 칼럼에서 **\"precision gastronomy\"**로 이름을 날린 인물이다."
       },
       {
-       "t_raw": "요리의 품질에 한없이 엄격한 것으로 유명하고, 그 기준 때문에 'demon chef'라는 별명과 함께 두려움의 대상이 되었다.",
+       "t_raw": "그녀는 재료와 요리의 품질에 까다로워 한 가지 흠이라도 발견되면 주문 전체를 반려하며, 이런 엄격함 때문에 **\"demon chef\"**라 불리고 주변으로부터 두려움을 사기도 한다.",
        "interp": false,
        "dropped": false,
-       "t": "요리의 품질에 한없이 엄격한 것으로 유명하고, 그 기준 때문에 'demon chef'라는 별명과 함께 두려움의 대상이 되었다."
+       "t": "그녀는 재료와 요리의 품질에 까다로워 한 가지 흠이라도 발견되면 주문 전체를 반려하며, 이런 엄격함 때문에 **\"악마 셰프\"**라 불리고 주변으로부터 두려움을 사기도 한다.",
+       "polish": {
+        "from": "그녀는 재료와 요리의 품질에 까다로워 한 가지 흠이라도 발견되면 주문 전체를 반려하며, 이런 엄격함 때문에 **\"demon chef\"**라 불리고 주변으로부터 두려움을 사기도 한다.",
+        "text": "그녀는 재료와 요리의 품질에 까다로워 한 가지 흠이라도 발견되면 주문 전체를 반려하며, 이런 엄격함 때문에 **\"악마 셰프\"**라 불리고 주변으로부터 두려움을 사기도 한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "The Steambird의 Gourmet Column에 단골로 등장하는 인물이며, 그녀의 'precision gastronomy'는 Fontaine에서 더욱 이름이 높다.",
+       "t_raw": "한때 Furina의 Patissiere Supreme이 되어 Hotel Debord에서 Furina와 다른 상류층 인사들에게 음식을 대접하던 그녀는, 현재는 Fleuve Cendre의 이름 없는 식당을 운영한다.",
        "interp": false,
        "dropped": false,
-       "t": "스팀버드의 Gourmet Column에 단골로 등장하는 인물이며, 그녀의 'precision gastronomy'는 폰타인에서 더욱 이름이 높다."
-      },
-      {
-       "t_raw": "평론가들은 이 천재 셰프에게 아낌없는 찬사를 보내면서도, 그녀를 둘러싼 논란에서는 한발 물러서지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "평론가들은 이 천재 셰프에게 아낌없는 찬사를 보내면서도, 그녀를 둘러싼 논란에서는 한발 물러서지 않았다."
+       "repaired": true,
+       "t": "한때 푸리나의 최고의 파티시에가 되어 드보르 호텔에서 푸리나와 다른 상류층 인사들에게 음식을 대접하던 그녀는, 현재는 잿빛의 강의 이름 없는 식당을 운영한다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier",
+       "revision": 1861702,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Escoffier",
@@ -88,8 +96,102 @@
        "kind": "wiki",
        "page": "Escoffier/Profile",
        "revision": 1889701,
-       "section": "Official Introduction",
-       "paragraph": "B6",
+       "section": "Personality",
+       "paragraph": "B1",
+       "wiki_refs": [
+        {
+         "type": "vo",
+         "name": "Varesa"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Past",
+       "paragraph": "C7",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Escoffier"
+        },
+        {
+         "type": "quest",
+         "name": "Ice-Frosted Endgame"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": null,
+       "paragraph": "C1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Escoffier is a renowned Fontainian chef that maintains extreme quality on her dishes. She is also feared for her ferocity due to these standards, scolding those who improperly waste food.",
+     "sentences": [
+      {
+       "t_raw": "Escoffier는 Fontaine에서 이름난 요리사로, 한때 Hotel Debord의 주방장을 맡았으며 현재는 Fleuve Cendre에서 자신의 식당을 운영하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에는 폰타인에서 이름난 요리사로, 한때 드보르 호텔의 주방장을 맡았으며 현재는 잿빛의 강에서 자신의 식당을 운영하고 있다."
+      },
+      {
+       "t_raw": "그녀의 요리에 대한 기준은 극도로 엄격하여 재료 하나의 흠집까지 용납하지 않으며, 이러한 태도 때문에 동료와 제자들에게 두려움을 주는 **'demon chef'**로 불리기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀의 요리에 대한 기준은 극도로 엄격하여 재료 하나의 흠집까지 용납하지 않으며, 이러한 태도 때문에 동료와 제자들에게 두려움을 주는 **'악마 셰프'**로 불리기도 한다.",
+       "polish": {
+        "from": "그녀의 요리에 대한 기준은 극도로 엄격하여 재료 하나의 흠집까지 용납하지 않으며, 이러한 태도 때문에 동료와 제자들에게 두려움을 주는 **'demon chef'**로 불리기도 한다.",
+        "text": "그녀의 요리에 대한 기준은 극도로 엄격하여 재료 하나의 흠집까지 용납하지 않으며, 이러한 태도 때문에 동료와 제자들에게 두려움을 주는 **'악마 셰프'**로 불리기도 한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "하지만 Furina, Navia, Traveler 같은 친구들에게는 실수를 지적하면서도 개선 방향을 알려주는 다정한 면모도 지니고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하지만 푸리나, 나비아, 여행자 같은 친구들에게는 실수를 지적하면서도 개선 방향을 알려주는 다정한 면모도 지니고 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier",
+       "revision": 1861702,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Profile",
+       "revision": 1889701,
+       "section": "Personality",
+       "paragraph": "B1",
+       "wiki_refs": [
+        {
+         "type": "vo",
+         "name": "Varesa"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Profile",
+       "revision": 1889701,
+       "section": "Personality",
+       "paragraph": "B2",
        "wiki_refs": []
       },
       {
@@ -99,67 +201,154 @@
        "section": null,
        "paragraph": "C1",
        "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "For a long time, The Steambird's Gourmet Column has been known by food afficionados as a culinary weathervane.",
+     "sentences": [
+      {
+       "t_raw": "The Steambird의 미식 칼럼에 단골로 등장하는 Escoffier와 그녀의 **'precision gastronomy'**는 Fontaine에서 특히 유명하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스팀버드의 미식 칼럼에 단골로 등장하는 에스코피에와 그녀의 **'precision gastronomy'**는 폰타인에서 특히 유명하다."
+      },
+      {
+       "t_raw": "그녀는 '맛'을 분석하고 추출하며 조화시키는 과정에서 Fontaine 사람들이 '맛'이라 여기는 관점은 물론, '맛있음'에 대한 근본적인 인식까지 해체하고 재구성했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 '맛'을 분석하고 추출하며 조화시키는 과정에서 폰타인 사람들이 '맛'이라 여기는 관점은 물론, '맛있음'에 대한 근본적인 인식까지 해체하고 재구성했다."
+      },
+      {
+       "t_raw": "평론가들은 그녀를 천재 요리사라 칭찬하면서도, 동시에 그녀의 냉정한 비판과 철저한 주방 운영을 둘러싼 논란 역시 피하지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "평론가들은 그녀를 천재 요리사라 칭찬하면서도, 동시에 그녀의 냉정한 비판과 철저한 주방 운영을 둘러싼 논란 역시 피하지 않았다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Profile",
+       "revision": 1889701,
+       "section": "Official Introduction",
+       "paragraph": "B4",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "Profile > Personality",
-       "paragraph": "C2",
+       "page": "Escoffier/Profile",
+       "revision": 1889701,
+       "section": "Official Introduction",
+       "paragraph": "B5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Profile",
+       "revision": 1889701,
+       "section": "Official Introduction",
+       "paragraph": "B6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The fact is supported. The interpretation follows reasonably from the material.",
+     "quote": "Critics have never been stingy with praise for this genius chef, but neither have they ever shied away from the controversies surrounding her.",
+     "sentences": [
+      {
+       "t_raw": "Escoffier는 **Hotel Debord**의 전 주방장이라는 위상을 유지한 채, The Steambird 미식 칼럼에서 그녀의 **'precision gastronomy'**를 꾸준히 조명받고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에는 **드보르 호텔**의 전 주방장이라는 위상을 유지한 채, 스팀버드 미식 칼럼에서 그녀의 **'precision gastronomy'**를 꾸준히 조명받고 있다."
+      },
+      {
+       "t_raw": "이처럼 Hotel Debord의 전 주방장이라는 위상과 'demon chef'라는 평판, 그리고 The Steambird 미식 칼럼에서 주목받는 'precision gastronomy'가 한 사람에게 모두 얽혀 있는 것은, Escoffier가 단순히 맛있는 음식을 만드는 요리사가 아니라 Fontaine 요리계의 기준과 논란을 동시에 일구어내는 상징적인 인물이라고 볼 수 있음을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 드보르 호텔의 전 주방장이라는 위상과 '악마 셰프'라는 평판, 그리고 스팀버드 미식 칼럼에서 주목받는 '정밀 미식'이 한 사람에게 모두 얽혀 있는 것은, 에스코피에가 단순히 맛있는 음식을 만드는 요리사가 아니라 폰타인 요리계의 기준과 논란을 동시에 일구어내는 상징적인 인물이라고 볼 수 있음을 보여준다.",
+       "polish": {
+        "from": "이처럼 드보르 호텔의 전 주방장이라는 위상과 'demon chef'라는 평판, 그리고 스팀버드 미식 칼럼에서 주목받는 'precision gastronomy'가 한 사람에게 모두 얽혀 있는 것은, 에스코피에가 단순히 맛있는 음식을 만드는 요리사가 아니라 폰타인 요리계의 기준과 논란을 동시에 일구어내는 상징적인 인물이라고 볼 수 있음을 보여준다.",
+        "text": "이처럼 드보르 호텔의 전 주방장이라는 위상과 '악마 셰프'라는 평판, 그리고 스팀버드 미식 칼럼에서 주목받는 '정밀 미식'이 한 사람에게 모두 얽혀 있는 것은, 에스코피에가 단순히 맛있는 음식을 만드는 요리사가 아니라 폰타인 요리계의 기준과 논란을 동시에 일구어내는 상징적인 인물이라고 볼 수 있음을 보여준다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier",
+       "revision": 1861702,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Profile",
+       "revision": 1889701,
+       "section": "Personality",
+       "paragraph": "B1",
        "wiki_refs": [
         {
          "type": "vo",
          "name": "Varesa"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Profile",
+       "revision": 1889701,
+       "section": "Official Introduction",
+       "paragraph": "B4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Profile",
+       "revision": 1889701,
+       "section": "Official Introduction",
+       "paragraph": "B6",
+       "wiki_refs": []
       }
      ],
-     "heading": null,
-     "latin_left": [
-      "Gourmet Column"
-     ]
+     "heading": "개요",
+     "latin_left": []
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported.",
      "quote": "Escoffier would quickly develop her skills in her home kitchen and eventually offered to make her parents dinner, creating a Golden Trinity Roulade.",
      "sentences": [
       {
-       "t_raw": "Escoffier는 Fontaine의 유명한 셰프로, 어린 시절 요리사인 부모 아래에서 부엌에 매료되었고 부모는 그런 호기심을 살펴 부엌에서 놀게 해 주었다.",
+       "t_raw": "Escoffier의 부모는 요리사였고 살림은 그리 넉넉하지 않았다.",
        "interp": false,
        "dropped": false,
-       "t": "에스코피에는 폰타인의 유명한 셰프로, 어린 시절 요리사인 부모 아래에서 부엌에 매료되었고 부모는 그런 호기심을 살펴 부엌에서 놀게 해 주었다."
+       "t": "에스코피에의 부모는 요리사였고 살림은 그리 넉넉하지 않았다."
       },
       {
-       "t_raw": "집안 부엌에서 솜씨를 빠르게 키운 그녀는 부모를 위해 Golden Trinity Roulade를 만들었고, 부모는 그 솜씨를 칭찬했다.",
+       "t_raw": "어린 Escoffier는 부엌에 빠져들었고, 부모는 그 호기심을 살펴 부엌에서 놀도록 했다.",
        "interp": false,
        "dropped": false,
-       "t": "집안 부엌에서 솜씨를 빠르게 키운 그녀는 부모를 위해 Golden Trinity Roulade를 만들었고, 부모는 그 솜씨를 칭찬했다."
+       "t": "어린 에스코피에는 부엌에 빠져들었고, 부모는 그 호기심을 살펴 부엌에서 놀도록 했다."
       },
       {
-       "t_raw": "그러나 부모가 자리를 비운 뒤 스스로 맛본 결과에 그녀는 실망했다.",
+       "t_raw": "그녀는 집 부엌에서 재주를 키워 부모에게 Golden Trinity Roulade를 만들어 주었지만, 부모가 자리를 비운 뒤 직접 맛보고는 그 결과에 실망했다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 부모가 자리를 비운 뒤 스스로 맛본 결과에 그녀는 실망했다."
-      },
-      {
-       "t_raw": "부모의 칭찬과 자신의 판단이 갈렸다는 점은 그녀의 기준이 일찍부터 자기 입맛을 향해 있었음을 보여준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "부모의 칭찬과 자신의 판단이 갈렸다는 점은 그녀의 기준이 일찍부터 자기 입맛을 향해 있었음을 보여준다."
-      },
-      {
-       "t_raw": "재능을 더 다듬으려는 마음으로 그녀는 **Vasari Passage의 작은 주방**에서 요리사로 일하기 시작했고, 곧 petit chef까지 올라갔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "재능을 더 다듬으려는 마음으로 그녀는 **바사리 회랑의 작은 주방**에서 요리사로 일하기 시작했고, 곧 petit chef까지 올라갔다."
-      },
-      {
-       "t_raw": "그곳에서 번 Mora로 다른 식당의 음식을 맛보며 뿌리까지 외웠고, Gateau Debord의 존재를 알게 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그곳에서 번 모라로 다른 식당의 음식을 맛보며 뿌리까지 외웠고, 드보르 케이크의 존재를 알게 되었다."
+       "t": "그녀는 집 부엌에서 재주를 키워 부모에게 Golden Trinity Roulade를 만들어 주었지만, 부모가 자리를 비운 뒤 직접 맛보고는 그 결과에 실망했다."
       }
      ],
      "sources": [
@@ -167,29 +356,8 @@
        "kind": "wiki",
        "page": "Escoffier/Storyline",
        "revision": 1892577,
-       "section": null,
-       "paragraph": "C1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
        "section": "History > Past",
        "paragraph": "C5",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Escoffier"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "History > Past",
-       "paragraph": "C6",
        "wiki_refs": [
         {
          "type": "cs",
@@ -205,45 +373,38 @@
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After tasting the cake made by the Spina di Rosula, Escoffier set to work creating her own version of the Gateau Debord, which became a massive success across Fontaine.",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "In gratitude for returning her hat, Navia offered Escoffier a piece of the cake",
      "sentences": [
       {
-       "t_raw": "Gateau Debord를 먹어 보고 싶었지만 가능성이 낮자, 그녀는 부모에게 적어도 호텔까지 데려가 달라고 졸랐다.",
+       "t_raw": "요리를 더 다듬고 싶었던 그녀는 Vasari Passage의 소박한 식당에서 일하며 petit chef까지 올라갔고, 번 Mora로 다른 식당의 음식을 맛보며 맛의 뿌리까지 기억했다.",
        "interp": false,
        "dropped": false,
-       "t": "드보르 케이크를 먹어 보고 싶었지만 가능성이 낮자, 그녀는 부모에게 적어도 호텔까지 데려가 달라고 졸랐다."
+       "t": "요리를 더 다듬고 싶었던 그녀는 바사리 회랑의 소박한 식당에서 일하며 쁘띠 셰프까지 올라갔고, 번 모라로 다른 식당의 음식을 맛보며 맛의 뿌리까지 기억했다.",
+       "polish": {
+        "from": "요리를 더 다듬고 싶었던 그녀는 바사리 회랑의 소박한 식당에서 일하며 petit chef까지 올라갔고, 번 모라로 다른 식당의 음식을 맛보며 맛의 뿌리까지 기억했다.",
+        "text": "요리를 더 다듬고 싶었던 그녀는 바사리 회랑의 소박한 식당에서 일하며 쁘띠 셰프까지 올라갔고, 번 모라로 다른 식당의 음식을 맛보며 맛의 뿌리까지 기억했다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "호텔 밖에서 기다리던 중 정교한 모자가 그녀의 손에 떨어졌고, 그녀는 주인을 추적해 Navia를 찾아냈다.",
+       "t_raw": "그러다 **Gateau Debord**를 알게 되어 호텔에라도 가 보기를 졸랐다.",
        "interp": false,
        "dropped": false,
-       "t": "호텔 밖에서 기다리던 중 정교한 모자가 그녀의 손에 떨어졌고, 그녀는 주인을 추적해 나비아를 찾아냈다."
+       "t": "그러다 **드보르 케이크**를 알게 되어 호텔에라도 가 보기를 졸랐다."
       },
       {
-       "t_raw": "모자를 돌려준 감사로 Navia가 Gateau Debord 한 조각을 건넸지만, 맛본 케이크는 그녀가 시험해 본 다른 Gateau Debord와 같았다.",
+       "t_raw": "호텔 밖에서 정교한 모자가 그녀의 손에 떨어졌고, Escoffier는 주인 Navia에게 그것을 돌려주었다.",
        "interp": false,
        "dropped": false,
-       "t": "모자를 돌려준 감사로 나비아가 드보르 케이크 한 조각을 건넸지만, 맛본 케이크는 그녀가 시험해 본 다른 드보르 케이크와 같았다."
+       "t": "호텔 밖에서 정교한 모자가 그녀의 손에 떨어졌고, 에스코피에는 주인 나비아에게 그것을 돌려주었다."
       },
       {
-       "t_raw": "여러 Gateau Debord가 모두 같았다는 경험은, 그녀가 Spina di Rosula의 케이크를 맛본 뒤 자기 버전을 만들고 Fontaine 전역에서 대성공을 거두는 계기로 이어진 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "여러 드보르 케이크가 모두 같았다는 경험은, 그녀가 가시 장미회의 케이크를 맛본 뒤 자기 버전을 만들고 폰타인 전역에서 대성공을 거두는 계기로 이어진 것으로 보인다."
-      },
-      {
-       "t_raw": "소문은 Furina에게까지 닿았고, 공연 뒤 Vasari Passage에서 식사하러 온 Furina는 음식에 매료되어 헤드 셰프를 만나겠다고 했다.",
+       "t_raw": "감사의 뜻으로 받은 케이크는 그녀가 시험해 본 다른 Gateau Debord와 같은 맛이었다.",
        "interp": false,
        "dropped": false,
-       "t": "소문은 푸리나에게까지 닿았고, 공연 뒤 바사리 회랑에서 식사하러 온 푸리나는 음식에 매료되어 헤드 셰프를 만나겠다고 했다."
-      },
-      {
-       "t_raw": "당시 Escoffier는 집정관이 온 줄 몰랐다가, 나와서 집정관이 식사 중인 것을 보고 놀랐으며 곧바로 Lily Sugar-Glazed Opera Cake를 준비해 Furina의 칭찬을 받았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "당시 에스코피에는 집정관이 온 줄 몰랐다가, 나와서 집정관이 식사 중인 것을 보고 놀랐으며 곧바로 백합 설탕 코팅 오페라 케이크를 준비해 푸리나의 칭찬을 받았다."
+       "t": "감사의 뜻으로 받은 케이크는 그녀가 시험해 본 다른 드보르 케이크와 같은 맛이었다."
       }
      ],
      "sources": [
@@ -259,36 +420,6 @@
          "name": "Escoffier"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "History > Past",
-       "paragraph": "C7",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Escoffier"
-        },
-        {
-         "type": "quest",
-         "name": "Ice-Frosted Endgame"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Furina/Storyline",
-       "revision": 1889332,
-       "section": "History > Past",
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Escoffier"
-        }
-       ]
       }
      ],
      "heading": "정체와 배경",
@@ -296,39 +427,27 @@
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Fortunately, the Hotel Debord offered their services to her.",
+     "status": "accepted",
+     "note": "All sentences match C7/M2.",
+     "quote": "She immediately prepared a Lily Sugar-Glazed Opera Cake for her, which Furina enjoyed and praised.",
      "sentences": [
       {
-       "t_raw": "그날 밤 Escoffier는 꿈인 줄 여기며 잠들지 못했고, 다음 날 Furina가 **Patissiere Supreme**이 되어 달라는 편지를 보내왔다.",
+       "t_raw": "Spina di Rosula의 케이크를 맛본 뒤 Escoffier는 자신만의 Gateau Debord를 만들어 Fontaine 전역에서 큰 성공을 거두었다.",
        "interp": false,
        "dropped": false,
-       "t": "그날 밤 에스코피에는 꿈인 줄 여기며 잠들지 못했고, 다음 날 푸리나가 **최고의 파티시에**가 되어 달라는 편지를 보내왔다."
+       "t": "가시 장미회의 케이크를 맛본 뒤 에스코피에는 자신만의 드보르 케이크를 만들어 폰타인 전역에서 큰 성공을 거두었다."
       },
       {
-       "t_raw": "그녀는 이를 꿈이 이루어진 일로 여기며 수락했지만, Palais Mermonia가 예산을 유지해야 했기에 음식을 만들 식당을 찾아야 했다.",
+       "t_raw": "소문을 들은 Furina가 찾아오자 그녀는 놀라며 Lily Sugar-Glazed Opera Cake를 준비했고, Furina는 이를 즐기며 칭찬했다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 이를 꿈이 이루어진 일로 여기며 수락했지만, 멜모니아궁이 예산을 유지해야 했기에 음식을 만들 식당을 찾아야 했다."
+       "t": "소문을 들은 푸리나가 찾아오자 그녀는 놀라며 백합 설탕 코팅 오페라 케이크를 준비했고, 푸리나는 이를 즐기며 칭찬했다."
       },
       {
-       "t_raw": "다행히 Hotel Debord가 협력을 제안했고, 그 식당의 후계자로 여겨지던 인물과의 친선 요리 대결에서 이전 헤드 셰프와 후계자 모두 Escoffier가 식당을 운영하는 것이 최선이라고 동의했다.",
+       "t_raw": "그날 밤 꿈이라 여기며 잠을 이루지 못했지만, 다음 날 Furina의 편지로 Patissiere Supreme 제안을 받아들였다.",
        "interp": false,
        "dropped": false,
-       "t": "다행히 드보르 호텔이 협력을 제안했고, 그 식당의 후계자로 여겨지던 인물과의 친선 요리 대결에서 이전 헤드 셰프와 후계자 모두 에스코피에가 식당을 운영하는 것이 최선이라고 동의했다."
-      },
-      {
-       "t_raw": "이로써 그녀는 Hotel Debord의 헤드 셰프가 되어 Furina와 다른 상류층 Fontainians에게 동시에 음식을 내게 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이로써 그녀는 드보르 호텔의 헤드 셰프가 되어 푸리나와 다른 상류층 폰타인 사람들에게 동시에 음식을 내게 되었다."
-      },
-      {
-       "t_raw": "호텔의 헤드 셰프로서 Modeste의 원본 요리책도 맡았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "호텔의 헤드 셰프로서 모데스트의 원본 요리책도 맡았다."
+       "t": "그날 밤 꿈이라 여기며 잠을 이루지 못했지만, 다음 날 푸리나의 편지로 최고의 파티시에 제안을 받아들였다."
       }
      ],
      "sources": [
@@ -368,45 +487,32 @@
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Escoffier was sentenced to the prison following a food safety incident regarding lumitide, which had actually been planted by Monica.",
+     "status": "accepted",
+     "note": "All sentences match C7.",
+     "quote": "As the hotel's head chef, she was also entrusted Modeste's original cookbook.",
      "sentences": [
       {
-       "t_raw": "헤드 셰프로 일하던 Escoffier는 자신의 재능이 정점에 이르렀다고 느끼며 사임을 고려했지만, 곧 호텔에 심각한 lumiline 중독 사건이 닥쳤다.",
+       "t_raw": "Palais Mermonia의 예산 문제로 요리를 만들 식당을 찾던 중 Hotel Debord가 손을 내밀었다.",
        "interp": false,
        "dropped": false,
-       "t": "헤드 셰프로 일하던 에스코피에는 자신의 재능이 정점에 이르렀다고 느끼며 사임을 고려했지만, 곧 호텔에 심각한 lumiline 중독 사건이 닥쳤다."
+       "t": "멜모니아궁의 예산 문제로 요리를 만들 식당을 찾던 중 드보르 호텔이 손을 내밀었다."
       },
       {
-       "t_raw": "사건은 비교적 가벼운 것으로 여겨지고 범인도 찾지 못했으나, 그녀는 책임을 지고 Fortress of Meropide에서 형기를 살게 되었다.",
+       "t_raw": "후계자로 여겨지던 사람과의 친선 요리 대결에서 이전 주방장과 후계자 모두 Escoffier가 식당을 운영하는 것이 낫다고 동의했고, 그녀는 Furina와 상류층 손님을 함께 상대하며 Modeste의 원본 요리책을 맡았다.",
        "interp": false,
        "dropped": false,
-       "t": "사건은 비교적 가벼운 것으로 여겨지고 범인도 찾지 못했으나, 그녀는 책임을 지고 메로피드 요새에서 형기를 살게 되었다."
+       "t": "후계자로 여겨지던 사람과의 친선 요리 대결에서 이전 주방장과 후계자 모두 에스코피에가 식당을 운영하는 것이 낫다고 동의했고, 그녀는 푸리나와 상류층 손님을 함께 상대하며 모데스트의 원본 요리책을 맡았다."
       },
       {
-       "t_raw": "Gardes는 양이 적어 악의가 없다고 보았지만 Escoffier는 스스로 책임을 지겠다고 했고, 실제로 그 사건은 Monica가 그녀가 가진 요리책을 얻으려 일으킨 일이었다.",
+       "t_raw": "재능이 정점에 이르렀다고 느껴 사직을 고려하던 차에 호텔에 심각한 **lumiline 중독 사건**이 닥쳤다.",
        "interp": false,
        "dropped": false,
-       "t": "경비대원은 양이 적어 악의가 없다고 보았지만 에스코피에는 스스로 책임을 지겠다고 했고, 실제로 그 사건은 모니카가 그녀가 가진 요리책을 얻으려 일으킨 일이었다."
-      },
-      {
-       "t_raw": "수감 전 그녀는 Savanna를 후임으로 지목했고, Savanna는 훗날 Hotel Debord의 헤드 셰프가 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "수감 전 그녀는 사바나를 후임으로 지목했고, 사바나는 훗날 드보르 호텔의 헤드 셰프가 되었다."
-      },
-      {
-       "t_raw": "Fortress of Meropide에서 그녀는 Coupon Cafeteria의 음식을 맛보고 Wriothesley를 진짜 옛날식 신사로 여겼으며, Sigewinne와도 잘 지내며 Melusines가 사물을 느끼는 방식 탓에 맛있게 여기지 않으면서도 밀크셰이크를 맛보았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "메로피드 요새에서 그녀는 특별 허가 식당의 음식을 맛보고 라이오슬리를 진짜 옛날식 신사로 여겼으며, 시그윈와도 잘 지내며 멜뤼진이 사물을 느끼는 방식 탓에 맛있게 여기지 않으면서도 밀크셰이크를 맛보았다."
-      },
-      {
-       "t_raw": "수감 중 Furina와 Navia가 음악 재생기를 가지고 찾아왔고, 그 재생기는 그녀에게 큰 영감을 주었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "수감 중 푸리나와 나비아가 음악 재생기를 가지고 찾아왔고, 그 재생기는 그녀에게 큰 영감을 주었다."
+       "t": "재능이 정점에 이르렀다고 느껴 사직을 고려하던 차에 호텔에 심각한 **루미라인 중독 사건**이 닥쳤다.",
+       "polish": {
+        "from": "재능이 정점에 이르렀다고 느껴 사직을 고려하던 차에 호텔에 심각한 **lumiline 중독 사건**이 닥쳤다.",
+        "text": "재능이 정점에 이르렀다고 느껴 사직을 고려하던 차에 호텔에 심각한 **루미라인 중독 사건**이 닥쳤다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -426,21 +532,57 @@
          "name": "Ice-Frosted Endgame"
         }
        ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Facts supported by C7, M5 and M6. The interpretation is reasonable.",
+     "quote": "Though the Gardes noted the amount was so little that there was no malicious intent, Escoffier insisted on taking responsibility.",
+     "sentences": [
+      {
+       "t_raw": "사건은 비교적 가볍게 여겨지고 범인도 발견되지 않았지만, Escoffier는 책임을 지고 Fortress of Meropide로 향했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사건은 비교적 가볍게 여겨지고 범인도 발견되지 않았지만, 에스코피에는 책임을 지고 메로피드 요새로 향했다."
       },
+      {
+       "t_raw": "실제로는 Monica가 그녀가 가진 요리책을 손에 넣기 위해 일으킨 일이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "실제로는 모니카가 그녀가 가진 요리책을 손에 넣기 위해 일으킨 일이었다."
+      },
+      {
+       "t_raw": "감옥에 가기 전 그녀는 Savanna를 후임자로 임명했고, Savanna는 그 뒤 Hotel Debord의 주방장 자리를 이어받았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감옥에 가기 전 그녀는 사바나를 후임자로 임명했고, 사바나는 그 뒤 드보르 호텔의 주방장 자리를 이어받았다."
+      },
+      {
+       "t_raw": "사건이 가볍게 여겨졌고 실제 배후도 따로 있었는데 책임을 자처한 점은 그녀가 사건을 대하는 태도를 보여 주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사건이 가볍게 여겨졌고 실제 배후도 따로 있었는데 책임을 자처한 점은 그녀가 사건을 대하는 태도를 보여 주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Escoffier/Storyline",
        "revision": 1892577,
        "section": "History > Past",
-       "paragraph": "C8",
+       "paragraph": "C7",
        "wiki_refs": [
         {
-         "type": "vo",
+         "type": "cs",
          "name": "Escoffier"
         },
         {
-         "type": "vo",
-         "name": "Sigewinne"
+         "type": "quest",
+         "name": "Ice-Frosted Endgame"
         }
        ]
       },
@@ -466,45 +608,33 @@
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The player gave Escoffier significant inspiration and upon her release from prison, she secluded herself once more to discover a new peak of gastronomic pleasure.",
+     "status": "accepted",
+     "note": "All sentences match C8 and C9.",
+     "quote": "During her stay, both Furina and Navia visited her with a music player.",
      "sentences": [
       {
-       "t_raw": "출소한 Escoffier는 다시 자신을 은둔시켜 요리의 새로운 경지를 찾으려 했고, 그 은둔이 길어 Furina가 집정관 자리에서 물러나 더 이상 Palais Mermonia에 살지 않는다는 사실도 몰랐다.",
+       "t_raw": "Fortress of Meropide에서 그녀는 Coupon Cafeteria의 음식을 맛보고 Wriothesley를 진짜 옛 신사라 여겼으며, Sigewinne와 잘 지내며 밀크셰이크도 맛보았다.",
        "interp": false,
        "dropped": false,
-       "t": "출소한 에스코피에는 다시 자신을 은둔시켜 요리의 새로운 경지를 찾으려 했고, 그 은둔이 길어 푸리나가 집정관 자리에서 물러나 더 이상 멜모니아궁에 살지 않는다는 사실도 몰랐다."
+       "t": "메로피드 요새에서 그녀는 특별 허가 식당의 음식을 맛보고 라이오슬리를 진짜 옛 신사라 여겼으며, 시그윈과 잘 지내며 밀크셰이크도 맛보았다."
       },
       {
-       "t_raw": "그녀는 Mondstadt와 Natlan에서 희귀 재료를 구하는 과정에서 Vision을 얻었고, Cryo Hypostasis와 여러 Avatars of Lava를 가까이 마주쳤다.",
+       "t_raw": "수감 중 Furina와 Navia가 음악 재생기를 들고 찾아왔고, 그 재생기는 그녀에게 큰 영감을 주었다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 몬드와 나타에서 희귀 재료를 구하는 과정에서 신의 눈을 얻었고, 무상의 얼음과 여러 Avatars of Lava를 가까이 마주쳤다."
+       "t": "수감 중 푸리나와 나비아가 음악 재생기를 들고 찾아왔고, 그 재생기는 그녀에게 큰 영감을 주었다."
       },
       {
-       "t_raw": "Xiangling을 만나 그녀의 독특한 재료와 모험 정신에서 비슷한 마음가짐을 얻었다.",
+       "t_raw": "출소 후에는 미식의 새로운 경지를 찾아 오래 칩거했고, 그 사이 Furina가 집정관 자리에서 물러나 Palais Mermonia에 더 살지 않는다는 사실도 몰랐다.",
        "interp": false,
        "dropped": false,
-       "t": "향릉을 만나 그녀의 독특한 재료와 모험 정신에서 비슷한 마음가짐을 얻었다."
+       "t": "출소 후에는 미식의 새로운 경지를 찾아 오래 칩거했고, 그 사이 푸리나가 집정관 자리에서 물러나 멜모니아궁에 더 살지 않는다는 사실도 몰랐다."
       },
       {
-       "t_raw": "주방에서 더 잘 돕기 위해 Fontaine Research Institute에 Mek Multi-Purpose Gastromek Assembly를 만들게 했다.",
+       "t_raw": "그 뒤 Mondstadt와 Natlan에서 희귀 재료를 구하다 Vision을 얻고 Xiangling에게서도 자극을 받았다.",
        "interp": false,
        "dropped": false,
-       "t": "주방에서 더 잘 돕기 위해 폰타인 과학원에 Mek Multi-Purpose Gastromek Assembly를 만들게 했다."
-      },
-      {
-       "t_raw": "현재 그녀는 **Fleuve Cendre의 식당**을 운영한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "현재 그녀는 **잿빛의 강의 식당**을 운영한다."
-      },
-      {
-       "t_raw": "감옥 이후의 긴 침잠과 Fontaine 밖에서의 재료 탐색은 그녀가 Hotel Debord의 주방을 떠나 Fleuve Cendre에서 자기 요리를 이어 가는 흐름으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "감옥 이후의 긴 침잠과 폰타인 밖에서의 재료 탐색은 그녀가 드보르 호텔의 주방을 떠나 잿빛의 강에서 자기 요리를 이어 가는 흐름으로 볼 수 있다."
+       "t": "그 뒤 몬드와 나타에서 희귀 재료를 구하다 신의 눈을 얻고 향릉에게서도 자극을 받았다."
       }
      ],
      "sources": [
@@ -541,57 +671,707 @@
          "name": "Escoffier"
         }
        ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Hotel Debord 사건",
+     "status": "accepted",
+     "note": "Supported by C11, M3, Q28 and Q34. The 'compensation' wording is a slight stretch of Q28 but acceptable. M7 backs up the Monica interpretation.",
+     "quote": "So I'm guessing what Monica wants is for us to convince Escoffier to try and negotiate with Savanna on the staff's behalf.",
+     "sentences": [
+      {
+       "t_raw": "Hotel Debord이 Savanna를 주방장으로 둔 뒤 식당 운영에 어려움을 겪자, Navia의 부탁으로 Escoffier가 돌아오게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "드보르 호텔이 사바나를 주방장으로 둔 뒤 식당 운영에 어려움을 겪자, 나비아의 부탁으로 에스코피에가 돌아오게 된다."
+      },
+      {
+       "t_raw": "Navia는 계획대로 Fleuve Cendre로 돌아가 그곳에서 Escoffier를 찾기로 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아는 계획대로 잿빛의 강으로 돌아가 그곳에서 에스코피에를 찾기로 한다."
+      },
+      {
+       "t_raw": "Monica는 은밀히 Traveler 일행에게 Escoffier를 찾아가라고 말했고, Navia는 Monica가 Escoffier를 통해 Savanna와 직원들의 보상을 협상하려는 것이라고 짐작했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모니카는 은밀히 여행자 일행에게 에스코피에를 찾아가라고 말했고, 나비아는 모니카가 에스코피에를 통해 사바나와 직원들의 보상을 협상하려는 것이라고 짐작했다."
+      },
+      {
+       "t_raw": "Escoffier는 마지못해 돌아오기로 하지만, 자신이 없던 동안 Savanna의 태도가 크게 변한 것을 보고 분노한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에는 마지못해 돌아오기로 하지만, 자신이 없던 동안 사바나의 태도가 크게 변한 것을 보고 분노한다."
+      },
+      {
+       "t_raw": "Escoffier는 Savanna의 막말에 놀라며 그 태도에 정면으로 맞선다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에는 사바나의 막말에 놀라며 그 태도에 정면으로 맞선다."
+      },
+      {
+       "t_raw": "여러 정황상 **Monica의 음모**가 Savanna의 사태를 이용해 Escoffier를 Hotel Debord로 불러들인 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "여러 정황상 **모니카의 음모**가 사바나의 사태를 이용해 에스코피에를 드보르 호텔로 불러들인 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Present",
+       "paragraph": "C11",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Ice-Frosted Endgame"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Shaped by Fame",
+       "quest_ko": "명성으로 반죽하기",
+       "version": "5.6",
+       "speaker": "Navia"
+      },
+      {
+       "kind": "wiki",
+       "page": "Savanna",
+       "revision": 1759914,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Shaped by Fame",
+       "quest_ko": "명성으로 반죽하기",
+       "version": "5.6",
+       "speaker": "Navia"
+      }
+     ],
+     "heading": "작중 행적 — 드보르 호텔 사건",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Hotel Debord 사건",
+     "status": "accepted",
+     "note": "Supported by C11, Q24, Q29 and M4. The interpretation follows from the sabotage.",
+     "quote": "Savanna, I've brought the original copy of the Codex you asked for.",
+     "sentences": [
+      {
+       "t_raw": "Savanna는 Escoffier에게 **Gateau Debord 대결**을 제안했고, 자신이 이기면 Modeste의 원본 요리책을, Escoffier가 이기면 자신이 물러나겠다고 요구했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사바나는 에스코피에에게 **드보르 케이크 대결**을 제안했고, 자신이 이기면 모데스트의 원본 요리책을, 에스코피에가 이기면 자신이 물러나겠다고 요구했다."
+      },
+      {
+       "t_raw": "Escoffier는 Savanna가 요청한 Codex 원본을 가져왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에는 사바나가 요청한 Codex 원본을 가져왔다."
+      },
+      {
+       "t_raw": "Savanna는 Escoffier가 실력을 잃었을 가능성과 조수들이 팀을 망쳤을 가능성을 입에 올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사바나는 에스코피에가 실력을 잃었을 가능성과 조수들이 팀을 망쳤을 가능성을 입에 올린다."
+      },
+      {
+       "t_raw": "대결 중 Savanna는 Monica에게 Escoffier의 케이크를 방해하라고 지시했고, 그 결과 Savanna가 승리했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대결 중 사바나는 모니카에게 에스코피에의 케이크를 방해하라고 지시했고, 그 결과 사바나가 승리했다."
+      },
+      {
+       "t_raw": "Escoffier는 패배하고 책을 넘겼지만, 곧 장비가 대결 시작부터 손상되어 있었다는 것을 분석해 낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에는 패배하고 책을 넘겼지만, 곧 장비가 대결 시작부터 손상되어 있었다는 것을 분석해 낸다."
+      },
+      {
+       "t_raw": "Savanna의 도발과 승리는 Escoffier의 실력이 줄었다기보다 사보타주에서 비롯된 것으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사바나의 도발과 승리는 에스코피에의 실력이 줄었다기보다 사보타주에서 비롯된 것으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Present",
+       "paragraph": "C11",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Ice-Frosted Endgame"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Roasted by Flames",
+       "quest_ko": "고온으로 굽기",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
+      {
+       "kind": "quest",
+       "quest": "Roasted by Flames",
+       "quest_ko": "고온으로 굽기",
+       "version": "5.6",
+       "speaker": "Savanna"
+      },
+      {
+       "kind": "wiki",
+       "page": "Savanna",
+       "revision": 1759914,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 드보르 호텔 사건",
+     "latin_left": [
+      "Codex"
+     ]
+    },
+    {
+     "section": "작중 행적 — Hotel Debord 사건",
+     "status": "accepted",
+     "note": "All sentences are supported by M4, C11, M1, Q32 and Q26.",
+     "quote": "Ha, don't be so self-righteous. Admit it, you've always been jealous of Escoffier! That's why you lapped up everything I told you...",
+     "sentences": [
+      {
+       "t_raw": "대결 뒤 Codex에서 찾던 것을 발견하지 못한 Savanna는 정신적으로 무너졌다가 Monica에게 협박당해 유적으로 끌려간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대결 뒤 Codex에서 찾던 것을 발견하지 못한 사바나는 정신적으로 무너졌다가 모니카에게 협박당해 유적으로 끌려간다."
+      },
+      {
+       "t_raw": "Escoffier와 Traveler는 Savanna의 실종을 알고 유적으로 향하지만, 처음에는 그녀가 무엇을 하려는지 몰랐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에와 여행자는 사바나의 실종을 알고 유적으로 향하지만, 처음에는 그녀가 무엇을 하려는지 몰랐다."
+      },
+      {
+       "t_raw": "여파 분석으로 Monica가 실제 흑막이고 불길한 동기를 지녔음을 알아차린 뒤, 이들은 Realm of Feasts Long Forgotten에서 Savanna가 인질로 잡혀 있음을 발견한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여파 분석으로 모니카가 실제 흑막이고 불길한 동기를 지녔음을 알아차린 뒤, 이들은 지난날의 연회장에서 사바나가 인질로 잡혀 있음을 발견한다."
+      },
+      {
+       "t_raw": "Savanna는 Escoffier가 비밀을 감추고 있다는 암시 역시 Monica의 큰 계획의 일부였음을 깨닫고, Monica는 Savanna에게 Escoffier를 질투해 왔음을 인정하라고 조롱한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사바나는 에스코피에가 비밀을 감추고 있다는 암시 역시 모니카의 큰 계획의 일부였음을 깨닫고, 모니카는 사바나에게 에스코피에를 질투해 왔음을 인정하라고 조롱한다."
+      },
+      {
+       "t_raw": "유적 끝에서 Monica는 아무것도 없다는 사실에 충격을 받고 Escoffier를 함께 끝장내려 했으며, 항아리를 부숴 깨어난 두 Praetorian Golems가 일행과 싸운다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유적 끝에서 모니카는 아무것도 없다는 사실에 충격을 받고 에스코피에를 함께 끝장내려 했으며, 항아리를 부숴 깨어난 두 Praetorian Golems가 일행과 싸운다."
+      },
+      {
+       "t_raw": "Monica가 다시 Escoffier를 총구로 겨누자 Savanna가 회복해 Monica를 덮쳐 쓰러뜨리고, 무너지는 유적 속에서 일행은 Monica를 남겨둔 채 빠져나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모니카가 다시 에스코피에를 총구로 겨누자 사바나가 회복해 모니카를 덮쳐 쓰러뜨리고, 무너지는 유적 속에서 일행은 모니카를 남겨둔 채 빠져나온다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Savanna",
+       "revision": 1759914,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Escoffier/Storyline",
        "revision": 1892577,
-       "section": null,
-       "paragraph": "C1",
+       "section": "History > Present",
+       "paragraph": "C11",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Ice-Frosted Endgame"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Ice-Frosted Endgame",
+       "quest_ko": "얼음으로 데코하기",
+       "version": "5.6",
+       "speaker": "Savanna"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ice-Frosted Endgame",
+       "quest_ko": "얼음으로 데코하기",
+       "version": "5.6",
+       "speaker": "Monica"
+      },
+      {
+       "kind": "wiki",
+       "page": "Savanna",
+       "revision": 1759914,
+       "section": "Profile",
+       "paragraph": "M1",
        "wiki_refs": []
       }
      ],
-     "heading": "정체와 배경",
+     "heading": "작중 행적 — 드보르 호텔 사건",
      "latin_left": [
-      "Avatars of Lava",
-      "Mek Multi-Purpose Gastromek Assembly"
+      "Codex",
+      "Praetorian Golems"
      ]
     },
     {
-     "section": "성격과 명성",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "She is very strict with the quality of the food she uses and her dishes; she examines her orders meticulously, rejecting it completely if she discovers even just one imperfection in the order.",
+     "section": "작중 행적 — Hotel Debord 사건",
+     "status": "accepted",
+     "note": "All sentences match M1 and C11. The interpretation in sentence 5 is reasonable.",
+     "quote": "Outside the now-collapsed ruins, Savanna begs Escoffier to return as head chef, an offer which she rejects stating that Savanna needed to grow.",
      "sentences": [
       {
-       "t_raw": "Escoffier는 식재료와 요리의 질에 매우 엄격해, 주문을 꼼꼼히 살피고 작은 흠 하나만 발견해도 전부 거절한다.",
+       "t_raw": "무너진 유적 밖에서 Savanna는 Escoffier에게 주방장으로 돌아와 달라고 간청했지만, Escoffier는 Savanna가 성장해야 한다며 거절한다.",
        "interp": false,
        "dropped": false,
-       "t": "에스코피에는 식재료와 요리의 질에 매우 엄격해, 주문을 꼼꼼히 살피고 작은 흠 하나만 발견해도 전부 거절한다."
+       "t": "무너진 유적 밖에서 사바나는 에스코피에에게 주방장으로 돌아와 달라고 간청했지만, 에스코피에는 사바나가 성장해야 한다며 거절한다."
       },
       {
-       "t_raw": "이 기준 때문에 극도로 엄격하다는 평가와 함께 **demon chef**라는 별명이 붙었고, 아주 작은 판단 실수에도 빠르고 매서운 꾸지람이 돌아온다는 명성이 생겼다.",
+       "t_raw": "Savanna는 결국 Escoffier의 결정을 존중한다.",
        "interp": false,
        "dropped": false,
-       "t": "이 기준 때문에 극도로 엄격하다는 평가와 함께 **demon chef**라는 별명이 붙었고, 아주 작은 판단 실수에도 빠르고 매서운 꾸지람이 돌아온다는 명성이 생겼다."
+       "t": "사바나는 결국 에스코피에의 결정을 존중한다."
       },
       {
-       "t_raw": "주방과 운영 모두 꼼꼼하다는 이미지는 오래갔고, 동료와 견습생을 향한 무자비한 비판은 요리계의 뜨거운 화젯거리가 되었다.",
+       "t_raw": "Escoffier는 사보타주 때문에 즉시 재대결을 요구했고, Savanna가 이를 받아들인다.",
        "interp": false,
        "dropped": false,
-       "t": "주방과 운영 모두 꼼꼼하다는 이미지는 오래갔고, 동료와 견습생을 향한 무자비한 비판은 요리계의 뜨거운 화젯거리가 되었다."
+       "t": "에스코피에는 사보타주 때문에 즉시 재대결을 요구했고, 사바나가 이를 받아들인다."
       },
       {
-       "t_raw": "그녀는 다시 해 오라며 손님이 아직 기다리고 있다고 말하고, 어디서 잘못했는지 기억해 같은 실수를 두 번 반복하지 말라고 다그친다.",
+       "t_raw": "재대결에서 Escoffier는 Savanna를 큰 차이로 이겼고, Savanna는 패배를 받아들이며 더 잘하겠다고 다짐한다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 다시 해 오라며 손님이 아직 기다리고 있다고 말하고, 어디서 잘못했는지 기억해 같은 실수를 두 번 반복하지 말라고 다그친다."
+       "t": "재대결에서 에스코피에는 사바나를 큰 차이로 이겼고, 사바나는 패배를 받아들이며 더 잘하겠다고 다짐한다."
       },
       {
-       "t_raw": "거친 말을 들었다면 사과하면서도 그 말이 전적으로 필요하다고 단언하는 태도는, 꾸지람이 기준을 지키기 위한 장치로 쓰인다는 인상을 준다.",
+       "t_raw": "Escoffier는 **주방장이 아닌 방문자**로서 Hotel Debord의 음식이 자신의 기준에 맞는지 확인하겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에는 **주방장이 아닌 방문자**로서 드보르 호텔의 음식이 자신의 기준에 맞는지 확인하겠다고 말한다."
+      },
+      {
+       "t_raw": "그녀는 직책은 내려놓되 음식의 기준을 확인하는 방문자의 길을 택한 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "거친 말을 들었다면 사과하면서도 그 말이 전적으로 필요하다고 단언하는 태도는, 꾸지람이 기준을 지키기 위한 장치로 쓰인다는 인상을 준다."
+       "t": "그녀는 직책은 내려놓되 음식의 기준을 확인하는 방문자의 길을 택한 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Savanna",
+       "revision": 1759914,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Present",
+       "paragraph": "C11",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Ice-Frosted Endgame"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 드보르 호텔 사건",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Whirling Waltz와 Nod-Krai",
+     "status": "accepted",
+     "note": "All sentences are supported by C10, Q25, Q33, Q18 and Q12.",
+     "quote": "Escoffier is first seen in-person during the Whirling Waltz event, serving as the amusement park's head chef.",
+     "sentences": [
+      {
+       "t_raw": "Escoffier는 Whirling Waltz에서 **놀이공원의 주방장**으로 처음 모습을 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에는 조화의 왈츠에서 **놀이공원의 주방장**으로 처음 모습을 드러낸다."
+      },
+      {
+       "t_raw": "Navia의 도움으로 초대된 그녀는 놀이공원의 테마 레스토랑을 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아의 도움으로 초대된 그녀는 놀이공원의 테마 레스토랑을 맡는다."
+      },
+      {
+       "t_raw": "이는 Escoffier의 최상급 요리로 방문객을 끌어들이려는 사업 전략과 이어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 에스코피에의 최상급 요리로 방문객을 끌어들이려는 사업 전략과 이어지는 셈이다."
+      },
+      {
+       "t_raw": "그녀는 매서운 말이 들렸다면 사과하면서도 전적으로 필요한 일이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 매서운 말이 들렸다면 사과하면서도 전적으로 필요한 일이라고 말한다."
+      },
+      {
+       "t_raw": "새로 들어온 채소의 품질은 뛰어나지만 새 직원들의 솜씨에는 아쉬움을 표하며, 그럼에도 직원과 방문객 모두에게 우아한 음식을 낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "새로 들어온 채소의 품질은 뛰어나지만 새 직원들의 솜씨에는 아쉬움을 표하며, 그럼에도 직원과 방문객 모두에게 우아한 음식을 낸다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Present",
+       "paragraph": "C10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "An Overnight Fantasyland",
+       "quest_ko": "하룻밤 사이에 세워진 낙원",
+       "version": "5.6",
+       "speaker": "Lepine-Pauline"
+      },
+      {
+       "kind": "quest",
+       "quest": "Business Acumen From the Spina",
+       "quest_ko": "가시 장미회의 경영학",
+       "version": "5.6",
+       "speaker": "Navia"
+      },
+      {
+       "kind": "quest",
+       "quest": "An Overnight Fantasyland",
+       "quest_ko": "하룻밤 사이에 세워진 낙원",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
+      {
+       "kind": "quest",
+       "quest": "An Overnight Fantasyland",
+       "quest_ko": "하룻밤 사이에 세워진 낙원",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      }
+     ],
+     "heading": "작중 행적 — 조화의 왈츠와 노드크라이",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Whirling Waltz와 Nod-Krai",
+     "status": "accepted",
+     "note": "All sentences are supported by Q4, Q11, Q23, Q27 and Q17. The interpretation in sentence 4 follows from Q33.",
+     "quote": "Now, here's the twist: To get the most out of this strategy, the menu can't be made public.",
+     "sentences": [
+      {
+       "t_raw": "식단에는 'Chef's Surprise'처럼 메뉴를 공개하지 않는 방식이 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "식단에는 '주방장의 Surprise'처럼 메뉴를 공개하지 않는 방식이 쓰인다."
+      },
+      {
+       "t_raw": "그녀는 순환별 테마 요리를 정하는 데 도움을 주려는 것인지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 순환별 테마 요리를 정하는 데 도움을 주려는 것인지 묻는다."
+      },
+      {
+       "t_raw": "핵심 재료에서 영감을 받은 **mystery dishes**라는 즉흥적 방식도 그녀의 요리로 소개된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "핵심 재료에서 영감을 받은 **미스터리 요리**라는 즉흥적 방식도 그녀의 요리로 소개된다.",
+       "polish": {
+        "from": "핵심 재료에서 영감을 받은 **mystery dishes**라는 즉흥적 방식도 그녀의 요리로 소개된다.",
+        "text": "핵심 재료에서 영감을 받은 **미스터리 요리**라는 즉흥적 방식도 그녀의 요리로 소개된다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "조리 전에는 재료와 조리 도구를 하나하나 확인하며 준비를 마친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조리 전에는 재료와 조리 도구를 하나하나 확인하며 준비를 마친다."
+      },
+      {
+       "t_raw": "비공개 메뉴와 핵심 재료 중심의 즉흥 요리는 Escoffier의 요리를 방문객 유인책으로 삼으려는 전략과 맞물려 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "비공개 메뉴와 핵심 재료 중심의 즉흥 요리는 에스코피에의 요리를 방문객 유인책으로 삼으려는 전략과 맞물려 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Business Acumen From the Spina",
+       "quest_ko": "가시 장미회의 경영학",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
+      {
+       "kind": "quest",
+       "quest": "Business Acumen From the Spina",
+       "quest_ko": "가시 장미회의 경영학",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
+      {
+       "kind": "quest",
+       "quest": "Business Acumen From the Spina",
+       "quest_ko": "가시 장미회의 경영학",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
+      {
+       "kind": "quest",
+       "quest": "Business Acumen From the Spina",
+       "quest_ko": "가시 장미회의 경영학",
+       "version": "5.6",
+       "speaker": "Navia"
+      },
+      {
+       "kind": "quest",
+       "quest": "Business Acumen From the Spina",
+       "quest_ko": "가시 장미회의 경영학",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
+      {
+       "kind": "quest",
+       "quest": "Business Acumen From the Spina",
+       "quest_ko": "가시 장미회의 경영학",
+       "version": "5.6",
+       "speaker": "Navia"
+      }
+     ],
+     "heading": "작중 행적 — 조화의 왈츠와 노드크라이",
+     "latin_left": [
+      "Surprise"
+     ]
+    },
+    {
+     "section": "작중 행적 — Whirling Waltz와 Nod-Krai",
+     "status": "accepted",
+     "note": "All sentences are supported by C12 and the M9, M14, M16 and M12 dialogue.",
+     "quote": "When she arrived, she was surprised to see the Traveler and Paimon, believing they had fallen on hard times.",
+     "sentences": [
+      {
+       "t_raw": "이후 Escoffier는 Nod-Krai로 향해 Curatorium of Secrets에 의뢰를 넣는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 에스코피에는 노드크라이로 향해 비밀의 집에 의뢰를 넣는다."
+      },
+      {
+       "t_raw": "도착한 그곳에서 Traveler와 Paimon을 보고 반가워하며, 두 사람이 어려운 처지에 놓였다고 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도착한 그곳에서 여행자와 페이몬을 보고 반가워하며, 두 사람이 어려운 처지에 놓였다고 여긴다."
+      },
+      {
+       "t_raw": "그녀는 젊은 로봇 소녀에게 간단한 팬케이크 레시피를 묻고 싶어 했다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 젊은 로봇 소녀에게 간단한 팬케이크 레시피를 묻고 싶어 했다고 밝힌다."
+      },
+      {
+       "t_raw": "Traveler와 Paimon이 Ineffa와 그 창작자 Aino를 알려 주자 Aino가 누구인지 묻고, Aino의 단맛 중독을 듣고 놀라며 아이가 단것을 너무 많이 먹는 것은 좋지 않다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬이 이네파와 그 창작자 아이노를 알려 주자 아이노가 누구인지 묻고, 아이노의 단맛 중독을 듣고 놀라며 아이가 단것을 너무 많이 먹는 것은 좋지 않다고 말한다."
+      },
+      {
+       "t_raw": "그녀는 덜 단 간식을 만들어 주려 계획하고 Aino가 사는 곳을 물어 방문하려 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 덜 단 간식을 만들어 주려 계획하고 아이노가 사는 곳을 물어 방문하려 한다."
+      },
+      {
+       "t_raw": "묻기도 전에 상대가 이미 떠났다는 사정도 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "묻기도 전에 상대가 이미 떠났다는 사정도 전해진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Present",
+       "paragraph": "C12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Curatorium of Secrets (Point of Interest)",
+       "revision": 1891019,
+       "section": "Dialogue > Escoffier",
+       "paragraph": "M9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Curatorium of Secrets (Point of Interest)",
+       "revision": 1891019,
+       "section": "Dialogue > Escoffier",
+       "paragraph": "M14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Curatorium of Secrets (Point of Interest)",
+       "revision": 1891019,
+       "section": "Dialogue > Escoffier",
+       "paragraph": "M16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Curatorium of Secrets (Point of Interest)",
+       "revision": 1891019,
+       "section": "Dialogue > Escoffier",
+       "paragraph": "M12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 조화의 왈츠와 노드크라이",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Whirling Waltz와 Nod-Krai",
+     "status": "accepted",
+     "note": "Sentence 0 matches C12. The interpretation in sentence 1 follows from C12 and M15 and is worded as interpretation.",
+     "quote": "Like very... simple pancakes. Like pancakes made without too many fancy ingredients.",
+     "sentences": [
+      {
+       "t_raw": "여행은 새 재료와 레시피를 얻은 성과로 마무리된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행은 새 재료와 레시피를 얻은 성과로 마무리된다."
+      },
+      {
+       "t_raw": "Curatorium of Secrets에 의뢰를 넣고 로봇 소녀의 **단순한 팬케이크** 레시피를 찾은 일은, 그녀의 관심이 새로운 재료와 화려하지 않은 레시피 모두에 닿아 있음을 보여주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "비밀의 집에 의뢰를 넣고 로봇 소녀의 **단순한 팬케이크** 레시피를 찾은 일은, 그녀의 관심이 새로운 재료와 화려하지 않은 레시피 모두에 닿아 있음을 보여주는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Present",
+       "paragraph": "C12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Curatorium of Secrets (Point of Interest)",
+       "revision": 1891019,
+       "section": "Dialogue > Escoffier",
+       "paragraph": "M15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 조화의 왈츠와 노드크라이",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "All sentences are supported by B5 and Q6; the interpretation is reasonable.",
+     "quote": "Even the best chef in the world can't flavor their food without prepping the flavoring, right?",
+     "sentences": [
+      {
+       "t_raw": "Escoffier의 요리 철학은 **분석·추출·조화**의 과정으로 설명된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에의 요리 철학은 **분석·추출·조화**의 과정으로 설명된다."
+      },
+      {
+       "t_raw": "그 과정에서 그는 Fontaine의 풍미에 대한 관점뿐 아니라 맛있음에 대한 기초 인식까지 해체하고, 이렇게 해체·재구성된 맛의 비밀 코드를 혀끝에서 섬세함으로 재정의한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 과정에서 그는 폰타인의 풍미에 대한 관점뿐 아니라 맛있음에 대한 기초 인식까지 해체하고, 이렇게 해체·재구성된 맛의 비밀 코드를 혀끝에서 섬세함으로 재정의한다."
+      },
+      {
+       "t_raw": "그는 최고의 요리사도 조미를 준비하지 않고서는 음식에 맛을 낼 수 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 최고의 요리사도 조미를 준비하지 않고서는 음식에 맛을 낼 수 없다고 말한다."
+      },
+      {
+       "t_raw": "분석·추출·조화라는 철학과 조미 준비를 앞세우는 태도를 함께 보면, 그의 요리는 맛을 여러 단계로 구성해 완성하는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "분석·추출·조화라는 철학과 조미 준비를 앞세우는 태도를 함께 보면, 그의 요리는 맛을 여러 단계로 구성해 완성하는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Profile",
+       "revision": 1889701,
+       "section": "Official Introduction",
+       "paragraph": "B5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Roasted by Flames",
+       "quest_ko": "고온으로 굽기",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Matches B1.",
+     "quote": "with even the tiniest lapse of judgement resulting in a quick and harsh scolding from her.",
+     "sentences": [
+      {
+       "t_raw": "Escoffier는 재료와 요리의 품질에 매우 엄격해, 주문을 꼼꼼히 검사하고 흠을 하나라도 발견하면 주문 전체를 거부한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에는 재료와 요리의 품질에 매우 엄격해, 주문을 꼼꼼히 검사하고 흠을 하나라도 발견하면 주문 전체를 거부한다."
+      },
+      {
+       "t_raw": "이런 **엄격한 기준** 때문에 그는 극도로 엄격한 요리사로 알려져 있으며, 아주 작은 판단 착오에도 그의 빠르고 매서운 꾸짖음이 따른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이런 **엄격한 기준** 때문에 그는 극도로 엄격한 요리사로 알려져 있으며, 아주 작은 판단 착오에도 그의 빠르고 매서운 꾸짖음이 따른다."
       }
      ],
      "sources": [
@@ -607,17 +1387,95 @@
          "name": "Varesa"
         }
        ]
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Q13 and Q19 support the facts; the interpretation is reasonable.",
+     "quote": "(Stay calm, Escoffier! There has to be a way to balance the flavors, just think!)",
+     "sentences": [
+      {
+       "t_raw": "주방에서 맛의 균형이 흔들리면 Escoffier는 침착함을 되찾으려 애쓰며 맛을 균형 잡을 방법을 찾는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주방에서 맛의 균형이 흔들리면 에스코피에는 침착함을 되찾으려 애쓰며 맛을 균형 잡을 방법을 찾는다."
       },
+      {
+       "t_raw": "조미가 충분해졌다고 판단하면 곧바로 맛의 균형을 맞추라고 재촉한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조미가 충분해졌다고 판단하면 곧바로 맛의 균형을 맞추라고 재촉한다."
+      },
+      {
+       "t_raw": "이 두 장면을 겹쳐 보면, 그에게 맛은 조미와 균형을 조정해 완성하는 대상으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 두 장면을 겹쳐 보면, 그에게 맛은 조미와 균형을 조정해 완성하는 대상으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Roasted by Flames",
+       "quest_ko": "고온으로 굽기",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
+      {
+       "kind": "quest",
+       "quest": "Roasted by Flames",
+       "quest_ko": "고온으로 굽기",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "C9 supports the facts; the interpretation is hedged and reasonable.",
+     "quote": "She also had the Fontaine Research Institute create the Mek Multi-Purpose Gastromek Assembly in order to help her out better in the kitchen.",
+     "sentences": [
+      {
+       "t_raw": "Escoffier는 Mondstadt와 Natlan에서 희귀 재료를 구하는 과정에서 Vision을 얻었고, Cryo Hypostasis와 여러 Avatars of Lava를 가까이서 마주쳤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스코피에는 몬드와 나타에서 희귀 재료를 구하는 과정에서 신의 눈을 얻었고, 무상의 얼음과 여러 용암 형상을 가까이서 마주쳤다."
+      },
+      {
+       "t_raw": "그는 또한 주방에서 더 잘 돕기 위해 Fontaine Research Institute에 **Mek Multi-Purpose Gastromek Assembly** 제작을 의뢰했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 또한 주방에서 더 잘 돕기 위해 폰타인 과학원에 **Mek Multi-Purpose Gastromek Assembly** 제작을 의뢰했다."
+      },
+      {
+       "t_raw": "분석·추출·조화로 맛을 다루는 요리 철학과 이런 장비, Vision을 함께 놓으면, 그의 능력은 정교한 조리 보조 수단으로 뒷받침되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "분석·추출·조화로 맛을 다루는 요리 철학과 이런 장비, 신의 눈을 함께 놓으면, 그의 능력은 정교한 조리 보조 수단으로 뒷받침되는 셈이다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Escoffier/Storyline",
        "revision": 1892577,
-       "section": "Profile > Personality",
-       "paragraph": "C2",
+       "section": "History > Past",
+       "paragraph": "C9",
        "wiki_refs": [
         {
+         "type": "cs",
+         "name": "Escoffier"
+        },
+        {
          "type": "vo",
-         "name": "Varesa"
+         "name": "Escoffier"
         }
        ]
       },
@@ -626,190 +1484,38 @@
        "page": "Escoffier/Profile",
        "revision": 1889701,
        "section": "Official Introduction",
-       "paragraph": "B6",
+       "paragraph": "B5",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Shaped by Fame",
-       "quest_ko": "명성으로 반죽하기",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "An Overnight Fantasyland",
-       "quest_ko": "하룻밤 사이에 세워진 낙원",
-       "version": "5.6",
-       "speaker": "Escoffier"
       }
      ],
-     "heading": "성격과 명성",
-     "latin_left": []
-    },
-    {
-     "section": "성격과 명성",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Wait! Take these home with you. We can't serve them now, and there's no sense in letting them go to waste.",
-     "sentences": [
-      {
-       "t_raw": "그런 사나움과 별개로, Escoffier는 Furina, Navia, Traveler처럼 자신이 친구라고 여기는 사람들에게는 더 배려 깊다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그런 사나움과 별개로, 에스코피에는 푸리나, 나비아, 여행자처럼 자신이 친구라고 여기는 사람들에게는 더 배려 깊다."
-      },
-      {
-       "t_raw": "친구의 실수도 비판하지만 시간을 들여 문제를 짚고 요리를 개선하도록 이끌며, 재능을 인정해 더 나아질 수 있다고 안심시킨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "친구의 실수도 비판하지만 시간을 들여 문제를 짚고 요리를 개선하도록 이끌며, 재능을 인정해 더 나아질 수 있다고 안심시킨다."
-      },
-      {
-       "t_raw": "실패를 만나도 멈추지 않고, 무엇을 잘못했는지 돌아보는 계기로 삼아 기준에 맞을 때까지 요리를 다듬는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "실패를 만나도 멈추지 않고, 무엇을 잘못했는지 돌아보는 계기로 삼아 기준에 맞을 때까지 요리를 다듬는다."
-      },
-      {
-       "t_raw": "손님에게 나갈 수 없게 된 음식이라도 버리지 않고 집에 가져가라고 챙긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "손님에게 나갈 수 없게 된 음식이라도 버리지 않고 집에 가져가라고 챙긴다."
-      },
-      {
-       "t_raw": "음식을 함부로 낭비하는 사람을 꾸짖는다는 점과 겹쳐 보면, 이는 낭비를 줄이려는 태도로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "음식을 함부로 낭비하는 사람을 꾸짖는다는 점과 겹쳐 보면, 이는 낭비를 줄이려는 태도로 읽힌다."
-      },
-      {
-       "t_raw": "그래서 **친구에게는 배려 깊은 태도**는 엄격함의 부재가 아니라 같은 기준을 함께 향해 가도록 돕는 방식으로 드러난다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그래서 **친구에게는 배려 깊은 태도**는 엄격함의 부재가 아니라 같은 기준을 함께 향해 가도록 돕는 방식으로 드러난다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Profile",
-       "revision": 1889701,
-       "section": "Personality",
-       "paragraph": "B2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "Profile > Personality",
-       "paragraph": "C3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier",
-       "revision": 1861702,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Shaped by Fame",
-       "quest_ko": "명성으로 반죽하기",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      }
-     ],
-     "heading": "성격과 명성",
-     "latin_left": []
-    },
-    {
-     "section": "성격과 명성",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "You lousy swine!",
-     "sentences": [
-      {
-       "t_raw": "친구에게는 실수를 짚으며 개선을 이끄는 배려가 따르지만, 그녀의 대사에는 상대를 \"You lousy swine!\"라고 부르는 거친 장면도 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "친구에게는 실수를 짚으며 개선을 이끄는 배려가 따르지만, 그녀의 대사에는 상대를 \"You lousy swine!\"라고 부르는 거친 장면도 있다."
-      },
-      {
-       "t_raw": "친구에게 보이는 배려와 거친 말이 함께 놓이면서, 그녀의 **완벽주의**가 친밀도에 따라 다른 얼굴로 드러난다는 인상을 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "친구에게 보이는 배려와 거친 말이 함께 놓이면서, 그녀의 **완벽주의**가 친밀도에 따라 다른 얼굴로 드러난다는 인상을 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Profile",
-       "revision": 1889701,
-       "section": "Personality",
-       "paragraph": "B2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "Profile > Personality",
-       "paragraph": "C3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Price of Every Price",
-       "quest_ko": "피할 수 없는 대가",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      }
-     ],
-     "heading": "성격과 명성",
+     "heading": "능력",
      "latin_left": [
-      "You"
+      "Mek Multi-Purpose Gastromek Assembly"
      ]
     },
     {
-     "section": "능력과 요리 철학",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "She also had the Fontaine Research Institute create the Mek Multi-Purpose Gastromek Assembly in order to help her out better in the kitchen.",
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "B2, C3, C7 and C9 support all the facts.",
+     "quote": "Furina sent a letter to her asking her to be her Patissiere Supreme.",
      "sentences": [
       {
-       "t_raw": "The Steambird의 Gourmet Column은 미식가들에게 요리 경향을 가늠하는 지표로 알려져 왔고, 그 정기 기사에 등장하는 Escoffier의 **precision gastronomy**는 Fontaine에서 더욱 이름이 높다.",
+       "t_raw": "Escoffier는 요리에 엄격하지만 친구에게는 **한결 너그러운 태도**를 보인다.",
        "interp": false,
        "dropped": false,
-       "t": "스팀버드의 Gourmet Column은 미식가들에게 요리 경향을 가늠하는 지표로 알려져 왔고, 그 정기 기사에 등장하는 에스코피에의 **precision gastronomy**는 폰타인에서 더욱 이름이 높다."
+       "t": "에스코피에는 요리에 엄격하지만 친구에게는 **한결 너그러운 태도**를 보인다."
       },
       {
-       "t_raw": "그 방법은 **analyzing, extracting, harmonizing**으로 요약되며, 그 과정에서 Fontainian의 'flavor' 관념뿐 아니라 'tastiness'에 대한 기초 인식까지 해체하고 다시 세운다.",
+       "t_raw": "Furina, Navia, Traveler의 실수도 지적한 뒤 시간을 들여 고치도록 이끌고, 재능을 인정해 기준에 닿을 수 있다고 북돋운다.",
        "interp": false,
        "dropped": false,
-       "t": "그 방법은 **analyzing, extracting, harmonizing**으로 요약되며, 그 과정에서 Fontainian의 'flavor' 관념뿐 아니라 'tastiness'에 대한 기초 인식까지 해체하고 다시 세운다."
+       "t": "푸리나, 나비아, 여행자의 실수도 지적한 뒤 시간을 들여 고치도록 이끌고, 재능을 인정해 기준에 닿을 수 있다고 북돋운다."
       },
       {
-       "t_raw": "이렇게 분해와 재구성을 거친 맛의 암호는 혀끝에서 섬세한 맛으로 다시 정의된다.",
+       "t_raw": "Furina는 Escoffier의 식당에서 Lily Sugar-Glazed Opera Cake를 즐긴 뒤 그녀를 Patissiere Supreme으로 초청했고, Xiangling의 독특한 재료 사용에서는 배울 점을 찾았다.",
        "interp": false,
        "dropped": false,
-       "t": "이렇게 분해와 재구성을 거친 맛의 암호는 혀끝에서 섬세한 맛으로 다시 정의된다."
-      },
-      {
-       "t_raw": "희귀 재료를 구하러 Mondstadt와 Natlan을 오가며 Cryo Hypostasis와 여러 Avatars of Lava를 가까이 마주쳤고, Xiangling의 독특한 재료와 모험은 그녀에게 비슷한 마인드를 심어 주었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "희귀 재료를 구하러 몬드와 나타를 오가며 무상의 얼음과 여러 Avatars of Lava를 가까이 마주쳤고, 향릉의 독특한 재료와 모험은 그녀에게 비슷한 마인드를 심어 주었다."
-      },
-      {
-       "t_raw": "Fontaine Research Institute에 의뢰한 Mek Multi-Purpose Gastromek Assembly는 주방에서 그녀를 돕는 장치다.",
-       "interp": false,
-       "dropped": false,
-       "t": "폰타인 과학원에 의뢰한 Mek Multi-Purpose Gastromek Assembly는 주방에서 그녀를 돕는 장치다."
+       "t": "푸리나는 에스코피에의 식당에서 백합 설탕 코팅 오페라 케이크를 즐긴 뒤 그녀를 최고의 파티시에로 초청했고, 향릉의 독특한 재료 사용에서는 배울 점을 찾았다."
       }
      ],
      "sources": [
@@ -817,17 +1523,34 @@
        "kind": "wiki",
        "page": "Escoffier/Profile",
        "revision": 1889701,
-       "section": "Official Introduction",
-       "paragraph": "B4",
+       "section": "Personality",
+       "paragraph": "B2",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
-       "page": "Escoffier/Profile",
-       "revision": 1889701,
-       "section": "Official Introduction",
-       "paragraph": "B5",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "Profile > Personality",
+       "paragraph": "C3",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Past",
+       "paragraph": "C7",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Escoffier"
+        },
+        {
+         "type": "quest",
+         "name": "Ice-Frosted Endgame"
+        }
+       ]
       },
       {
        "kind": "wiki",
@@ -847,196 +1570,32 @@
        ]
       }
      ],
-     "heading": "능력과 요리 철학",
-     "latin_left": [
-      "Gourmet Column",
-      "Fontainian",
-      "Avatars of Lava",
-      "Mek Multi-Purpose Gastromek Assembly"
-     ]
-    },
-    {
-     "section": "능력과 요리 철학",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "That should be enough flavoring... Now hurry up and balance the flavors.",
-     "sentences": [
-      {
-       "t_raw": "재료와 조리 도구를 하나씩 확인하는 모습과 양념 준비를 강조하는 말을 함께 보면, 그녀의 조리는 준비 단계를 중시한다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "재료와 조리 도구를 하나씩 확인하는 모습과 양념 준비를 강조하는 말을 함께 보면, 그녀의 조리는 준비 단계를 중시한다고 볼 수 있다."
-      },
-      {
-       "t_raw": "문제가 생기면 침착하라고 스스로 다잡으며 맛의 균형을 맞출 방법을 찾고, 양념이 충분해진 뒤에는 서둘러 맛의 균형을 맞추라고 지시한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "문제가 생기면 침착하라고 스스로 다잡으며 맛의 균형을 맞출 방법을 찾고, 양념이 충분해진 뒤에는 서둘러 맛의 균형을 맞추라고 지시한다."
-      },
-      {
-       "t_raw": "후추를 디저트에 활용할 길을 찾고 소금 한 줌을 시험한 뒤에는 감탄하기도 하며, 커피에서는 강하고 쓴 원두와 풍부하고 크리미한 스팀 밀크가 완벽하게 균형을 이룬다고 감탄한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "후추를 디저트에 활용할 길을 찾고 소금 한 줌을 시험한 뒤에는 감탄하기도 하며, 커피에서는 강하고 쓴 원두와 풍부하고 크리미한 스팀 밀크가 완벽하게 균형을 이룬다고 감탄한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Ice-Frosted Endgame",
-       "quest_ko": "얼음으로 데코하기",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Wish For Smooth Sailing",
-       "quest_ko": "조화로운 경영",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "Roasted by Flames",
-       "quest_ko": "고온으로 굽기",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "Roasted by Flames",
-       "quest_ko": "고온으로 굽기",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Wish For Smooth Sailing",
-       "quest_ko": "조화로운 경영",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "Business Acumen From the Spina",
-       "quest_ko": "가시 장미회의 경영학",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      }
-     ],
-     "heading": "능력과 요리 철학",
+     "heading": "인간관계",
      "latin_left": []
     },
     {
-     "section": "능력과 요리 철학",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Now, here's the twist: To get the most out of this strategy, the menu can't be made public.",
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "C6, C8, C11 and M3 support the facts. 'Childhood' is loosely stated but fits 'in her youth'.",
+     "quote": "Escoffier reluctantly decided to return, but became enraged when she saw Savanna's sudden shift in attitude",
      "sentences": [
       {
-       "t_raw": "식품 브랜딩 컨설턴트의 연구를 근거로 많은 식당이 특별한 **Chef's Surprise** 요리를 내놓기 시작했고, 그녀는 같은 논리가 catering에도 적용된다고 말한다.",
+       "t_raw": "Navia와의 인연은 Escoffier가 어린 시절 Navia의 모자를 돌려주고 Gateau Debord 한 조각을 받은 데서 시작되었다.",
        "interp": false,
        "dropped": false,
-       "t": "식품 브랜딩 컨설턴트의 연구를 근거로 많은 식당이 특별한 **Chef의 Surprise** 요리를 내놓기 시작했고, 그녀는 같은 논리가 catering에도 적용된다고 말한다."
+       "t": "나비아와의 인연은 에스코피에가 어린 시절 나비아의 모자를 돌려주고 드보르 케이크 한 조각을 받은 데서 시작되었다."
       },
       {
-       "t_raw": "전략을 최대로 살리려면 메뉴를 공개해서는 안 된다는 것이 그녀의 설명이다.",
+       "t_raw": "훗날 Navia는 Hotel Debord가 Savanna 때문에 흔들리자 Escoffier에게 돌아와 달라고 청했고, Escoffier는 마지못해 복귀를 결정했다.",
        "interp": false,
        "dropped": false,
-       "t": "전략을 최대로 살리려면 메뉴를 공개해서는 안 된다는 것이 그녀의 설명이다."
+       "t": "훗날 나비아는 드보르 호텔이 사바나 때문에 흔들리자 에스코피에에게 돌아와 달라고 청했고, 에스코피에는 마지못해 복귀를 결정했다."
       },
       {
-       "t_raw": "Navia는 Escoffier의 고전적인 즉흥 조리법의 정수를 'mystery dishes inspired by key ingredients'라고 부르고, Escoffier의 최상급 요리로 방문객을 끌어들이는 전략을 세운다.",
+       "t_raw": "Fortress of Meropide에서 Furina와 Navia가 찾아온 음악 플레이어는 Escoffier에게 큰 영감을 주었다.",
        "interp": false,
        "dropped": false,
-       "t": "나비아는 에스코피에의 고전적인 즉흥 조리법의 정수를 'mystery dishes inspired by key ingredients'라고 부르고, 에스코피에의 최상급 요리로 방문객을 끌어들이는 전략을 세운다."
-      },
-      {
-       "t_raw": "Escoffier는 순환마다 테마 요리를 정하는 일에 참여하고 새 케이크를 만들기도 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "에스코피에는 순환마다 테마 요리를 정하는 일에 참여하고 새 케이크를 만들기도 한다."
-      },
-      {
-       "t_raw": "메뉴를 숨기고 핵심 재료에서 영감을 받은 즉흥 요리를 내는 방식은 방문객을 끌어들이는 기획으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "메뉴를 숨기고 핵심 재료에서 영감을 받은 즉흥 요리를 내는 방식은 방문객을 끌어들이는 기획으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Business Acumen From the Spina",
-       "quest_ko": "가시 장미회의 경영학",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Wish For Smooth Sailing",
-       "quest_ko": "조화로운 경영",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "Business Acumen From the Spina",
-       "quest_ko": "가시 장미회의 경영학",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "Business Acumen From the Spina",
-       "quest_ko": "가시 장미회의 경영학",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "Business Acumen From the Spina",
-       "quest_ko": "가시 장미회의 경영학",
-       "version": "5.6",
-       "speaker": "Navia"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Wish For Smooth Sailing",
-       "quest_ko": "조화로운 경영",
-       "version": "5.6",
-       "speaker": "Navia"
-      }
-     ],
-     "heading": "능력과 요리 철학",
-     "latin_left": [
-      "Chef",
-      "Surprise"
-     ]
-    },
-    {
-     "section": "작중 행적 — Whirling Waltz와 Hotel Debord",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The fresh vegetables from the new batch are of exceptional quality. I just wish I could say the same about the new staff...",
-     "sentences": [
-      {
-       "t_raw": "Whirling Waltz에서 Escoffier는 놀이공원의 **헤드 셰프**로 모습을 드러낸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "조화의 왈츠에서 에스코피에는 놀이공원의 **헤드 셰프**로 모습을 드러낸다."
-      },
-      {
-       "t_raw": "Navia의 도움으로 테마 레스토랑 운영을 맡았고, 직원들의 수준은 의심스러워도 직원과 방문객 모두에게 우아한 음식을 내놓았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나비아의 도움으로 테마 레스토랑 운영을 맡았고, 직원들의 수준은 의심스러워도 직원과 방문객 모두에게 우아한 음식을 내놓았다."
-      },
-      {
-       "t_raw": "새 채소의 품질은 뛰어나지만 새 직원은 그렇지 않다고 말하면서도, 방금 들린 독한 말이 필요하다고 단언하고 팔 수 없게 된 음식은 집에 가져가라고 챙긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "새 채소의 품질은 뛰어나지만 새 직원은 그렇지 않다고 말하면서도, 방금 들린 독한 말이 필요하다고 단언하고 팔 수 없게 된 음식은 집에 가져가라고 챙긴다."
+       "t": "메로피드 요새에서 푸리나와 나비아가 찾아온 음악 플레이어는 에스코피에에게 큰 영감을 주었다."
       }
      ],
      "sources": [
@@ -1044,136 +1603,32 @@
        "kind": "wiki",
        "page": "Escoffier/Storyline",
        "revision": 1892577,
-       "section": "History > Present",
-       "paragraph": "C10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "An Overnight Fantasyland",
-       "quest_ko": "하룻밤 사이에 세워진 낙원",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "Shaped by Fame",
-       "quest_ko": "명성으로 반죽하기",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "An Overnight Fantasyland",
-       "quest_ko": "하룻밤 사이에 세워진 낙원",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "An Overnight Fantasyland",
-       "quest_ko": "하룻밤 사이에 세워진 낙원",
-       "version": "5.6",
-       "speaker": "Lepine-Pauline"
-      }
-     ],
-     "heading": "작중 행적 — 조화의 왈츠와 드보르 호텔",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Whirling Waltz와 Hotel Debord",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "In order to lure Escoffier back to the Debord, Monica spiked Savanna with lumiline, a drug created from Lumitoile which was banned after its long-term effects became known.",
-     "sentences": [
-      {
-       "t_raw": "Hotel Debord에서는 Escoffier가 떠난 뒤 Savanna가 헤드 셰프를 맡고 있었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "드보르 호텔에서는 에스코피에가 떠난 뒤 사바나가 헤드 셰프를 맡고 있었다."
-      },
-      {
-       "t_raw": "Escoffier의 명성 때문에 Debord의 처지는 위태로웠고, 경험이 부족한 Savanna는 직원들을 붙잡아 두었지만 실력에 대한 의심을 받았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "에스코피에의 명성 때문에 Debord의 처지는 위태로웠고, 경험이 부족한 사바나는 직원들을 붙잡아 두었지만 실력에 대한 의심을 받았다."
-      },
-      {
-       "t_raw": "Monica는 원본 Gateau Debord의 비밀 재료를 군수품으로 팔려고 Escoffier가 가진 Codex 원본을 노렸고, Escoffier를 끌어들이기 위해 Savanna에게 금지된 lumiline을 먹였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "모니카는 원본 드보르 케이크의 비밀 재료를 군수품으로 팔려고 에스코피에가 가진 Codex 원본을 노렸고, 에스코피에를 끌어들이기 위해 사바나에게 금지된 lumiline을 먹였다."
-      },
-      {
-       "t_raw": "그 약은 Savanna의 불안정을 키워 완벽한 음식만 받아들이고 직원들을 심하게 꾸짖게 만들었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 약은 사바나의 불안정을 키워 완벽한 음식만 받아들이고 직원들을 심하게 꾸짖게 만들었다."
-      },
-      {
-       "t_raw": "Monica가 Savanna의 불안정을 이용해 Escoffier를 끌어들이고 Codex 원본을 노린 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "모니카가 사바나의 불안정을 이용해 에스코피에를 끌어들이고 Codex 원본을 노린 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Savanna",
-       "revision": 1759914,
-       "section": "Profile",
-       "paragraph": "M6",
-       "wiki_refs": []
+       "section": "History > Past",
+       "paragraph": "C6",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Escoffier"
+        }
+       ]
       },
       {
        "kind": "wiki",
-       "page": "Savanna",
-       "revision": 1759914,
-       "section": "Profile",
-       "paragraph": "M7",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 조화의 왈츠와 드보르 호텔",
-     "latin_left": [
-      "Debord",
-      "Codex",
-      "Codex"
-     ]
-    },
-    {
-     "section": "작중 행적 — Whirling Waltz와 Hotel Debord",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Savanna, I've brought the original copy of the Codex you asked for.",
-     "sentences": [
-      {
-       "t_raw": "Navia가 돌아와 달라고 요청하고 Monica가 Escoffier를 찾아보라고 일러, Escoffier는 마지못해 Hotel Debord로 돌아오기로 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나비아가 돌아와 달라고 요청하고 모니카가 에스코피에를 찾아보라고 일러, 에스코피에는 마지못해 드보르 호텔로 돌아오기로 한다."
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Past",
+       "paragraph": "C8",
+       "wiki_refs": [
+        {
+         "type": "vo",
+         "name": "Escoffier"
+        },
+        {
+         "type": "vo",
+         "name": "Sigewinne"
+        }
+       ]
       },
-      {
-       "t_raw": "돌아온 그녀는 Savanna의 돌변한 태도에 격분했고, Savanna는 Escoffier가 실력을 잃었거나 조수들이 팀을 실망시킨 것 아니냐고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "돌아온 그녀는 사바나의 돌변한 태도에 격분했고, 사바나는 에스코피에가 실력을 잃었거나 조수들이 팀을 실망시킨 것 아니냐고 말한다."
-      },
-      {
-       "t_raw": "Savanna는 Gateau Debord를 만드는 **요리 대결**을 걸어 이기면 Modeste의 원본 요리책을, 지면 헤드 셰프 자리에서 물러나라는 조건을 내걸었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "사바나는 드보르 케이크를 만드는 **요리 대결**을 걸어 이기면 모데스트의 원본 요리책을, 지면 헤드 셰프 자리에서 물러나라는 조건을 내걸었다."
-      },
-      {
-       "t_raw": "Escoffier는 요청받은 Codex 원본을 가져왔다고 말했지만 대결에서 지고 책을 넘겨주게 된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "에스코피에는 요청받은 Codex 원본을 가져왔다고 말했지만 대결에서 지고 책을 넘겨주게 된다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Escoffier/Storyline",
@@ -1194,62 +1649,93 @@
        "section": "Profile",
        "paragraph": "M3",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Roasted by Flames",
-       "quest_ko": "고온으로 굽기",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "Roasted by Flames",
-       "quest_ko": "고온으로 굽기",
-       "version": "5.6",
-       "speaker": "Savanna"
       }
      ],
-     "heading": "작중 행적 — 조화의 왈츠와 드보르 호텔",
-     "latin_left": [
-      "Codex"
-     ]
+     "heading": "인간관계",
+     "latin_left": []
     },
     {
-     "section": "작중 행적 — Whirling Waltz와 Hotel Debord",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "During the contest, Savanna ordered Monica to sabotage Escoffier's cakes, resulting in her winning the contest.",
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "M14 says too many sweets are bad for children; the sentence states sweets in general are not good.",
+     "quote": "She found the trip productive, as she found both new ingredients and a recipe.",
      "sentences": [
       {
-       "t_raw": "대결 중 Savanna의 지시로 Monica가 Escoffier의 케이크를 방해해 Savanna가 이겼고, 뒤늦게 Escoffier는 장비가 시작부터 조작되었음을 알아차린다.",
+       "t_raw": "Traveler와 Paimon은 Nod-Krai의 Curatorium of Secrets에서 Escoffier와 재회했고, Escoffier는 두 사람이 어려운 처지가 된 줄 알고 놀랐다.",
        "interp": false,
        "dropped": false,
-       "t": "대결 중 사바나의 지시로 모니카가 에스코피에의 케이크를 방해해 사바나가 이겼고, 뒤늦게 에스코피에는 장비가 시작부터 조작되었음을 알아차린다."
+       "t": "여행자와 페이몬은 노드크라이의 비밀의 집에서 에스코피에와 재회했고, 에스코피에는 두 사람이 어려운 처지가 된 줄 알고 놀랐다."
       },
       {
-       "t_raw": "Monica는 Savanna에게 Escoffier를 질투한다고 비꼬았고, Savanna는 Escoffier가 비밀을 감추고 있다는 암시까지 Monica의 계획이었느냐고 따진다.",
+       "t_raw": "Escoffier는 단순한 팬케이크 레시피를 묻기 위해 로봇 소녀를 찾았고, Traveler 일행이 Ineffa와 Aino를 알려 주었다.",
        "interp": false,
        "dropped": false,
-       "t": "모니카는 사바나에게 에스코피에를 질투한다고 비꼬았고, 사바나는 에스코피에가 비밀을 감추고 있다는 암시까지 모니카의 계획이었느냐고 따진다."
+       "t": "에스코피에는 단순한 팬케이크 레시피를 묻기 위해 로봇 소녀를 찾았고, 여행자 일행이 이네파와 아이노를 알려 주었다."
       },
       {
-       "t_raw": "Escoffier와 Traveler는 사라진 Savanna를 찾아 Realm of Feasts Long Forgotten으로 향하고, Savanna는 무너지는 유적에서 Monica를 붙잡아 쓰러뜨린 뒤 일행은 Monica를 남겨 두고 빠져나온다.",
+       "t_raw": "Aino의 단것 중독을 들은 Escoffier는 아이에게는 단것을 너무 많이 먹는 것이 좋지 않다며 덜 단 간식을 계획했고, 이 여행에서 새 재료와 레시피를 얻어 생산적이었다고 평했다.",
        "interp": false,
        "dropped": false,
-       "t": "에스코피에와 여행자는 사라진 사바나를 찾아 지난날의 연회장으로 향하고, 사바나는 무너지는 유적에서 모니카를 붙잡아 쓰러뜨린 뒤 일행은 모니카를 남겨 두고 빠져나온다."
+       "repaired": true,
+       "t": "아이노의 단것 중독을 들은 에스코피에는 아이에게는 단것을 너무 많이 먹는 것이 좋지 않다며 덜 단 간식을 계획했고, 이 여행에서 새 재료와 레시피를 얻어 생산적이었다고 평했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Present",
+       "paragraph": "C12",
+       "wiki_refs": []
       },
       {
-       "t_raw": "밖에서 Savanna는 헤드 셰프로 돌아와 달라고 간청하지만, Escoffier는 Savanna가 성장해야 한다며 거절하고 즉시 재대결을 요구한다.",
+       "kind": "wiki",
+       "page": "Curatorium of Secrets (Point of Interest)",
+       "revision": 1891019,
+       "section": "Dialogue > Escoffier",
+       "paragraph": "M14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Hotel trouble follows Savanna's attitude (lumiline/Monica). Treating internal tension as a co-cause of that attitude adds an unsupported cause.",
+     "quote": "Ha, don't be so self-righteous. Admit it, you've always been jealous of Escoffier! That's why you lapped up everything I told you...",
+     "sentences": [
+      {
+       "t_raw": "Hotel Debord에서는 Savanna가 주방장이 된 뒤 Escoffier와의 대결에서 사보타주가 벌어졌다.",
        "interp": false,
        "dropped": false,
-       "t": "밖에서 사바나는 헤드 셰프로 돌아와 달라고 간청하지만, 에스코피에는 사바나가 성장해야 한다며 거절하고 즉시 재대결을 요구한다."
+       "t": "드보르 호텔에서는 사바나가 주방장이 된 뒤 에스코피에와의 대결에서 사보타주가 벌어졌다."
       },
       {
-       "t_raw": "Savanna는 재대결에서 큰 차이로 패배하고, Escoffier는 헤드 셰프가 아니라 호텔 음식이 기준에 맞는지 보러 오는 방문객으로 오겠다고 말한다.",
+       "t_raw": "Monica는 Savanna에게 Escoffier를 질투해 왔다고 비꼬았고, Savanna는 Monica에게 협박당해 유적까지 끌려간 뒤 인질이 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "사바나는 재대결에서 큰 차이로 패배하고, 에스코피에는 헤드 셰프가 아니라 호텔 음식이 기준에 맞는지 보러 오는 방문객으로 오겠다고 말한다."
+       "t": "모니카는 사바나에게 에스코피에를 질투해 왔다고 비꼬았고, 사바나는 모니카에게 협박당해 유적까지 끌려간 뒤 인질이 되었다."
+      },
+      {
+       "t_raw": "그러나 Savanna는 위기에서 Monica를 쓰러뜨렸고, Escoffier는 유적 밖에서 주방장 복귀를 거절한 채 방문객으로 남겠다고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 사바나는 위기에서 모니카를 쓰러뜨렸고, 에스코피에는 유적 밖에서 주방장 복귀를 거절한 채 방문객으로 남겠다고 했다."
+      },
+      {
+       "t_raw": "Savanna의 날카로운 태도는 Monica가 몰래 쓴 lumiline으로 불안과 좌절이 커진 결과로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "사바나의 날카로운 태도는 모니카가 몰래 쓴 루미라인으로 불안과 좌절이 커진 결과로 보인다.",
+       "polish": {
+        "from": "사바나의 날카로운 태도는 모니카가 몰래 쓴 lumiline으로 불안과 좌절이 커진 결과로 보인다.",
+        "text": "사바나의 날카로운 태도는 모니카가 몰래 쓴 루미라인으로 불안과 좌절이 커진 결과로 보인다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -1288,509 +1774,6 @@
        "quest_ko": "얼음으로 데코하기",
        "version": "5.6",
        "speaker": "Monica"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ice-Frosted Endgame",
-       "quest_ko": "얼음으로 데코하기",
-       "version": "5.6",
-       "speaker": "Savanna"
-      }
-     ],
-     "heading": "작중 행적 — 조화의 왈츠와 드보르 호텔",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Nod-Krai",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Traveler, Paimon? What a coincidence! I wasn't expecting to see you here...",
-     "sentences": [
-      {
-       "t_raw": "Escoffier는 Nod-Krai로 향하면서 Curatorium of Secrets에 의뢰를 넣었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "에스코피에는 노드크라이로 향하면서 비밀의 집에 의뢰를 넣었다."
-      },
-      {
-       "t_raw": "그녀는 Curatorium of Secrets에 도착해 장소를 확인하며 고개를 갸웃했고, Traveler와 Paimon을 만나자 **뜻밖의 재회**라며 놀랐다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 비밀의 집에 도착해 장소를 확인하며 고개를 갸웃했고, 여행자와 페이몬을 만나자 **뜻밖의 재회**라며 놀랐다."
-      },
-      {
-       "t_raw": "두 사람을 보곤 한숨과 함께 몰락한 처지라고 여긴 그녀가 찾던 것은 아주 단순한 팬케이크의 조리법이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "두 사람을 보곤 한숨과 함께 몰락한 처지라고 여긴 그녀가 찾던 것은 아주 단순한 팬케이크의 조리법이었다."
-      },
-      {
-       "t_raw": "화려한 재료를 쓰지 않은 팬케이크의 조리법은 구하기 어려운 것이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "화려한 재료를 쓰지 않은 팬케이크의 조리법은 구하기 어려운 것이었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "History > Present",
-       "paragraph": "C12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Curatorium of Secrets (Point of Interest)",
-       "revision": 1891019,
-       "section": "Dialogue > Escoffier",
-       "paragraph": "M10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Curatorium of Secrets (Point of Interest)",
-       "revision": 1891019,
-       "section": "Dialogue > Escoffier",
-       "paragraph": "M11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Curatorium of Secrets (Point of Interest)",
-       "revision": 1891019,
-       "section": "Dialogue > Escoffier",
-       "paragraph": "M13",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Curatorium of Secrets (Point of Interest)",
-       "revision": 1891019,
-       "section": "Dialogue > Escoffier",
-       "paragraph": "M15",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 노드크라이",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Nod-Krai",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "So it's like that... It isn't good for children to eat too many sweet things.",
-     "sentences": [
-      {
-       "t_raw": "그녀는 젊은 로봇 아가씨에게 조리법을 묻고자 했고, Ineffa를 아는 사람이 있다는 말에 반가워하며 어디 사는지 묻고 방문하려 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 젊은 로봇 아가씨에게 조리법을 묻고자 했고, 이네파를 아는 사람이 있다는 말에 반가워하며 어디 사는지 묻고 방문하려 했다."
-      },
-      {
-       "t_raw": "다만 묻기 전에 그녀가 이미 떠났다는 사정이 전해진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다만 묻기 전에 그녀가 이미 떠났다는 사정이 전해진다."
-      },
-      {
-       "t_raw": "Traveler와 Paimon이 Ineffa와 그녀의 창조자 Aino를 언급하자 Escoffier는 Aino가 누구인지 되물었고, Aino가 단것에 중독되어 있다는 이야기에 놀랐다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자와 페이몬이 이네파와 그녀의 창조자 아이노를 언급하자 에스코피에는 아이노가 누구인지 되물었고, 아이노가 단것에 중독되어 있다는 이야기에 놀랐다."
-      },
-      {
-       "t_raw": "그래서 아이에게 단 음식을 너무 많이 먹는 것은 좋지 않다며 **덜 단 간식**을 만들어 주려 계획했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그래서 아이에게 단 음식을 너무 많이 먹는 것은 좋지 않다며 **덜 단 간식**을 만들어 주려 계획했다."
-      },
-      {
-       "t_raw": "단순한 팬케이크를 찾은 일과 덜 단 간식을 계획한 일을 함께 보면, 그녀의 기준은 재료의 단순함과 먹는 사람의 섭취량을 함께 살피는 쪽으로 움직인다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "단순한 팬케이크를 찾은 일과 덜 단 간식을 계획한 일을 함께 보면, 그녀의 기준은 재료의 단순함과 먹는 사람의 섭취량을 함께 살피는 쪽으로 움직인다고 볼 수 있다."
-      },
-      {
-       "t_raw": "결국 여행은 새 재료와 조리법을 모두 얻은 **생산적인 방문**이 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "결국 여행은 새 재료와 조리법을 모두 얻은 **생산적인 방문**이 되었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "History > Present",
-       "paragraph": "C12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Curatorium of Secrets (Point of Interest)",
-       "revision": 1891019,
-       "section": "Dialogue > Escoffier",
-       "paragraph": "M9",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Curatorium of Secrets (Point of Interest)",
-       "revision": 1891019,
-       "section": "Dialogue > Escoffier",
-       "paragraph": "M12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Curatorium of Secrets (Point of Interest)",
-       "revision": 1891019,
-       "section": "Dialogue > Escoffier",
-       "paragraph": "M14",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Curatorium of Secrets (Point of Interest)",
-       "revision": 1891019,
-       "section": "Dialogue > Escoffier",
-       "paragraph": "M15",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Curatorium of Secrets (Point of Interest)",
-       "revision": 1891019,
-       "section": "Dialogue > Escoffier",
-       "paragraph": "M16",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 노드크라이",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Aha! The essence of Escoffier's classic improvisational method — \"mystery dishes inspired by key ingredients,\" as she puts it!",
-     "sentences": [
-      {
-       "t_raw": "Escoffier가 **친구로 여기는 이들**로는 Furina, Navia, Traveler가 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "에스코피에가 **친구로 여기는 이들**로는 푸리나, 나비아, 여행자가 있다."
-      },
-      {
-       "t_raw": "이들에게도 실수는 지적하지만, 시간을 들여 함께 살피고 요리를 개선하도록 이끌며 재능을 알아보면 기준을 충족할 수 있다고 안심시킨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이들에게도 실수는 지적하지만, 시간을 들여 함께 살피고 요리를 개선하도록 이끌며 재능을 알아보면 기준을 충족할 수 있다고 안심시킨다."
-      },
-      {
-       "t_raw": "Furina는 예전에 Escoffier가 만든 Lily Sugar-Glazed Opera Cake를 즐기고 칭찬한 뒤 그녀를 Patissiere Supreme으로 삼았고, Escoffier는 이를 받아들였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "푸리나는 예전에 에스코피에가 만든 백합 설탕 코팅 오페라 케이크를 즐기고 칭찬한 뒤 그녀를 최고의 파티시에로 삼았고, 에스코피에는 이를 받아들였다."
-      },
-      {
-       "t_raw": "Navia와 Furina는 Escoffier가 Fortress of Meropide에 있을 때 음악 재생기를 가지고 찾아왔고, 그 음악 재생기는 Escoffier에게 큰 영감을 주었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나비아와 푸리나는 에스코피에가 메로피드 요새에 있을 때 음악 재생기를 가지고 찾아왔고, 그 음악 재생기는 에스코피에에게 큰 영감을 주었다."
-      },
-      {
-       "t_raw": "Navia는 Escoffier의 즉흥 방식을 '핵심 재료에서 영감을 받은 미스터리 요리'라고 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나비아는 에스코피에의 즉흥 방식을 '핵심 재료에서 영감을 받은 미스터리 요리'라고 설명한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "Profile > Personality",
-       "paragraph": "C3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "History > Past",
-       "paragraph": "C7",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Escoffier"
-        },
-        {
-         "type": "quest",
-         "name": "Ice-Frosted Endgame"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "History > Past",
-       "paragraph": "C8",
-       "wiki_refs": [
-        {
-         "type": "vo",
-         "name": "Escoffier"
-        },
-        {
-         "type": "vo",
-         "name": "Sigewinne"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Business Acumen From the Spina",
-       "quest_ko": "가시 장미회의 경영학",
-       "version": "5.6",
-       "speaker": "Navia"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Traveler and Paimon told them about Ineffa and her creator Aino.",
-     "sentences": [
-      {
-       "t_raw": "Traveler와 Paimon은 Nod-Krai에서 Escoffier와 재회했고, Escoffier는 두 사람이 어려운 처지에 놓였다고 여겨 놀랐다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자와 페이몬은 노드크라이에서 에스코피에와 재회했고, 에스코피에는 두 사람이 어려운 처지에 놓였다고 여겨 놀랐다."
-      },
-      {
-       "t_raw": "두 사람이 Ineffa와 그녀의 창조자 Aino를 알려 주자, Escoffier는 Aino의 단것 중독에 놀라 덜 단 간식을 만들 계획을 세웠다.",
-       "interp": false,
-       "dropped": false,
-       "t": "두 사람이 이네파와 그녀의 창조자 아이노를 알려 주자, 에스코피에는 아이노의 단것 중독에 놀라 덜 단 간식을 만들 계획을 세웠다."
-      },
-      {
-       "t_raw": "Xiangling과 만난 일은 Escoffier에게 비슷한 마음가짐을 심어 주었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "향릉과 만난 일은 에스코피에에게 비슷한 마음가짐을 심어 주었다."
-      },
-      {
-       "t_raw": "Escoffier는 Xiangling의 모험 정신과 독특한 재료 사용을 존중하며, 자신이 아직 배울 것이 많다는 점을 인정한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "에스코피에는 향릉의 모험 정신과 독특한 재료 사용을 존중하며, 자신이 아직 배울 것이 많다는 점을 인정한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "History > Present",
-       "paragraph": "C12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "History > Past",
-       "paragraph": "C9",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Escoffier"
-        },
-        {
-         "type": "vo",
-         "name": "Escoffier"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "Profile > Personality",
-       "paragraph": "C3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Outside the now-collapsed ruins, Savanna begs Escoffier to return as head chef, an offer which she rejects stating that Savanna needed to grow.",
-     "sentences": [
-      {
-       "t_raw": "Escoffier는 Fortress of Meropide로 떠나기 전 Savanna를 후임으로 임명했고, Savanna는 Escoffier가 물러난 뒤 Hotel Debord의 헤드 셰프가 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "에스코피에는 메로피드 요새로 떠나기 전 사바나를 후임으로 임명했고, 사바나는 에스코피에가 물러난 뒤 드보르 호텔의 헤드 셰프가 되었다."
-      },
-      {
-       "t_raw": "Monica는 Gateau Debord의 비밀 재료를 군사 자산으로 팔려 했고, Escoffier가 가진 원본 Codex를 얻기 위해 Savanna에게 lumiline을 주입해 Escoffier를 Hotel Debord로 끌어들이려 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "모니카는 드보르 케이크의 비밀 재료를 군사 자산으로 팔려 했고, 에스코피에가 가진 원본 Codex를 얻기 위해 사바나에게 lumiline을 주입해 에스코피에를 드보르 호텔로 끌어들이려 했다."
-      },
-      {
-       "t_raw": "폐허에서 Monica는 Escoffier에게 총구를 들이밀며 함께 무너지려 했지만, Savanna가 Monica를 몸으로 들이받아 쓰러뜨렸고 일행은 Monica를 남겨 두고 탈출했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "폐허에서 모니카는 에스코피에에게 총구를 들이밀며 함께 무너지려 했지만, 사바나가 모니카를 몸으로 들이받아 쓰러뜨렸고 일행은 모니카를 남겨 두고 탈출했다."
-      },
-      {
-       "t_raw": "바깥에서 Savanna가 헤드 셰프 복귀를 간청하자 Escoffier는 거절하며 Savanna가 성장해야 한다고 말했고, 곧바로 재대결을 요구해 Savanna를 크게 이겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바깥에서 사바나가 헤드 셰프 복귀를 간청하자 에스코피에는 거절하며 사바나가 성장해야 한다고 말했고, 곧바로 재대결을 요구해 사바나를 크게 이겼다."
-      },
-      {
-       "t_raw": "Monica는 Savanna를 도구로 삼아 Escoffier를 끌어들였지만, 마지막에 Savanna가 Escoffier를 구하면서 그 계획은 뒤집힌 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "모니카는 사바나를 도구로 삼아 에스코피에를 끌어들였지만, 마지막에 사바나가 에스코피에를 구하면서 그 계획은 뒤집힌 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "History > Past",
-       "paragraph": "C7",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Escoffier"
-        },
-        {
-         "type": "quest",
-         "name": "Ice-Frosted Endgame"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Savanna",
-       "revision": 1759914,
-       "section": "Profile",
-       "paragraph": "M6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Savanna",
-       "revision": 1759914,
-       "section": "Profile",
-       "paragraph": "M7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Savanna",
-       "revision": 1759914,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Codex"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The only potential issue... is with Miss Escoffier.",
-     "sentences": [
-      {
-       "t_raw": "Fortress of Meropide에서 Escoffier는 Coupon Cafeteria의 음식을 맛보고 Wriothesley를 진짜 옛 방식의 신사로 여겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "메로피드 요새에서 에스코피에는 특별 허가 식당의 음식을 맛보고 라이오슬리를 진짜 옛 방식의 신사로 여겼다."
-      },
-      {
-       "t_raw": "Sigewinne와는 잘 지냈고, Melusines가 사물을 지각하는 방식 때문에 맛을 즐기지 못하면서도 그녀의 밀크셰이크를 맛보았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "시그윈와는 잘 지냈고, 멜뤼진이 사물을 지각하는 방식 때문에 맛을 즐기지 못하면서도 그녀의 밀크셰이크를 맛보았다."
-      },
-      {
-       "t_raw": "Wriothesley는 유일한 잠재적 문제가 Escoffier와 관련되어 있다고 말했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라이오슬리는 유일한 잠재적 문제가 에스코피에와 관련되어 있다고 말했다."
-      },
-      {
-       "t_raw": "Escoffier의 식당은 Collective of Plenty에 Varesa의 과일을 자주 주문하지만, 그녀는 주문을 꼼꼼히 검사해 흠 하나라도 발견하면 전부 거절할 만큼 엄격하다.",
-       "interp": false,
-       "dropped": false,
-       "t": "에스코피에의 식당은 비옥한 터전에 바레사의 과일을 자주 주문하지만, 그녀는 주문을 꼼꼼히 검사해 흠 하나라도 발견하면 전부 거절할 만큼 엄격하다."
-      },
-      {
-       "t_raw": "그래서 Varesa와 Collective of Plenty와의 관계는 **품질 기준**을 통과해야 유지되는 거래로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그래서 바레사와 비옥한 터전와의 관계는 **품질 기준**을 통과해야 유지되는 거래로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "History > Past",
-       "paragraph": "C8",
-       "wiki_refs": [
-        {
-         "type": "vo",
-         "name": "Escoffier"
-        },
-        {
-         "type": "vo",
-         "name": "Sigewinne"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "The Price of Every Price",
-       "quest_ko": "피할 수 없는 대가",
-       "version": "5.6",
-       "speaker": "Wriothesley"
-      },
-      {
-       "kind": "wiki",
-       "page": "Escoffier/Profile",
-       "revision": 1889701,
-       "section": "Personality",
-       "paragraph": "B1",
-       "wiki_refs": [
-        {
-         "type": "vo",
-         "name": "Varesa"
-        }
-       ]
       }
      ],
      "heading": "인간관계",
@@ -1798,97 +1781,110 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Escoffier is the owner of an unnamed restaurant that frequently places orders with the Collective of Plenty for Varesa's fruits.",
+     "status": "accepted",
+     "note": "Claims match C7 and M7, including the Codex lure and lumiline effects.",
+     "quote": "In reality, Monica had caused the crisis in order to acquire the cookbook in her possession.",
      "sentences": [
       {
-       "t_raw": "Escoffier는 현재 Fleuve Cendre에서 식당을 운영한다.",
+       "t_raw": "Escoffier는 Hotel Debord의 주방장으로서 Modeste의 원본 요리책을 맡았고, 자신의 재능이 정점에 이르자 사임을 고려했다.",
        "interp": false,
        "dropped": false,
-       "t": "에스코피에는 현재 잿빛의 강에서 식당을 운영한다."
+       "t": "에스코피에는 드보르 호텔의 주방장으로서 모데스트의 원본 요리책을 맡았고, 자신의 재능이 정점에 이르자 사임을 고려했다."
       },
       {
-       "t_raw": "그녀가 주인인 식당은 이름이 밝혀지지 않은 **이름 없는 식당**이며, Collective of Plenty에 Varesa의 과일을 자주 주문한다.",
+       "t_raw": "호텔의 lumiline 중독 사건은 범인 없이 끝났지만 Escoffier가 책임을 지고 Fortress of Meropide에 다녀왔으며, 실제로는 Monica가 그 요리책을 노려 사건을 일으켰다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀가 주인인 식당은 이름이 밝혀지지 않은 **이름 없는 식당**이며, 비옥한 터전에 바레사의 과일을 자주 주문한다."
+       "t": "호텔의 루미라인 중독 사건은 범인 없이 끝났지만 에스코피에가 책임을 지고 메로피드 요새에 다녀왔으며, 실제로는 모니카가 그 요리책을 노려 사건을 일으켰다.",
+       "polish": {
+        "from": "호텔의 lumiline 중독 사건은 범인 없이 끝났지만 에스코피에가 책임을 지고 메로피드 요새에 다녀왔으며, 실제로는 모니카가 그 요리책을 노려 사건을 일으켰다.",
+        "text": "호텔의 루미라인 중독 사건은 범인 없이 끝났지만 에스코피에가 책임을 지고 메로피드 요새에 다녀왔으며, 실제로는 모니카가 그 요리책을 노려 사건을 일으켰다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "두 서술이 같은 식당을 가리킬 가능성이 있다.",
+       "t_raw": "Monica는 원본 Gateau Debord의 비밀 재료를 군수 물자로 팔려 했고, Escoffier가 가진 원본 Codex가 필요해 Escoffier를 Hotel Debord로 끌어들이기 위해 Savanna에게 lumiline을 먹여 불안정과 극단적 완벽주의를 키웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모니카는 원본 드보르 케이크의 비밀 재료를 군수 물자로 팔려 했고, 에스코피에가 가진 원본 Codex가 필요해 에스코피에를 드보르 호텔로 끌어들이기 위해 사바나에게 루미라인을 먹여 불안정과 극단적 완벽주의를 키웠다.",
+       "polish": {
+        "from": "모니카는 원본 드보르 케이크의 비밀 재료를 군수 물자로 팔려 했고, 에스코피에가 가진 원본 Codex가 필요해 에스코피에를 드보르 호텔로 끌어들이기 위해 사바나에게 lumiline을 먹여 불안정과 극단적 완벽주의를 키웠다.",
+        "text": "모니카는 원본 드보르 케이크의 비밀 재료를 군수 물자로 팔려 했고, 에스코피에가 가진 원본 Codex가 필요해 에스코피에를 드보르 호텔로 끌어들이기 위해 사바나에게 루미라인을 먹여 불안정과 극단적 완벽주의를 키웠다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "**원본 Codex**와 비밀 재료를 둘러싼 Monica의 계획은 호텔의 혼란과 Escoffier의 복귀를 함께 움직인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "두 서술이 같은 식당을 가리킬 가능성이 있다."
+       "t": "**원본 Codex**와 비밀 재료를 둘러싼 모니카의 계획은 호텔의 혼란과 에스코피에의 복귀를 함께 움직인 셈이다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Escoffier/Profile",
-       "revision": 1889701,
-       "section": "Personality",
-       "paragraph": "B1",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Past",
+       "paragraph": "C7",
        "wiki_refs": [
         {
-         "type": "vo",
-         "name": "Varesa"
+         "type": "cs",
+         "name": "Escoffier"
+        },
+        {
+         "type": "quest",
+         "name": "Ice-Frosted Endgame"
         }
        ]
       },
       {
        "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": null,
-       "paragraph": "C1",
+       "page": "Savanna",
+       "revision": 1759914,
+       "section": "Profile",
+       "paragraph": "M7",
        "wiki_refs": []
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": []
+     "latin_left": [
+      "Codex",
+      "Codex"
+     ]
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Monica, another chef at the Hotel, learned of the secret ingredient used in the original Gateau Debord and sought to acquire this ingredient to sell as a military asset.",
+     "status": "accepted",
+     "note": "Contest, blackmail, empty domain, and the interpretive gap all follow the cited text.",
+     "quote": "At the end of the domain, Monica was shocked to discover that nothing was in the domain",
      "sentences": [
       {
-       "t_raw": "Hotel Debord의 또 다른 셰프 Monica는 원본 Gateau Debord의 비밀 재료를 군사 자산으로 팔려 했고, 이를 위해 Escoffier가 지닌 원본 Codex를 노렸다.",
+       "t_raw": "Savanna는 대결에서 Monica에게 Escoffier의 케이크 훼손을 지시했고, Escoffier는 패해 원본 요리책을 넘겼지만 사후 분석으로 장비 훼손을 알아차리고 Monica가 실제 배후임을 깨달았다.",
        "interp": false,
        "dropped": false,
-       "t": "드보르 호텔의 또 다른 셰프 모니카는 원본 드보르 케이크의 비밀 재료를 군사 자산으로 팔려 했고, 이를 위해 에스코피에가 지닌 원본 Codex를 노렸다."
+       "t": "사바나는 대결에서 모니카에게 에스코피에의 케이크 훼손을 지시했고, 에스코피에는 패해 원본 요리책을 넘겼지만 사후 분석으로 장비 훼손을 알아차리고 모니카가 실제 배후임을 깨달았다."
       },
       {
-       "t_raw": "그녀는 Savanna에게 lumiline을 투여해 Escoffier를 Debord로 끌어들였고, Savanna는 대결에서 Monica에게 케이크 사보타주를 지시했다.",
+       "t_raw": "Savanna는 요리책에서 찾던 것을 발견하지 못해 무너졌고, Monica에게 협박당해 **Realm of Feasts Long Forgotten**으로 끌려갔다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 사바나에게 lumiline을 투여해 에스코피에를 Debord로 끌어들였고, 사바나는 대결에서 모니카에게 케이크 사보타주를 지시했다."
+       "t": "사바나는 요리책에서 찾던 것을 발견하지 못해 무너졌고, 모니카에게 협박당해 **지난날의 연회장**으로 끌려갔다."
       },
       {
-       "t_raw": "Escoffier는 패해 Modeste의 원본 요리책을 넘겼지만, 뒤에 장비 사보타주와 Monica가 실제 장본인임을 알아차린다.",
+       "t_raw": "그곳에서 Monica는 아무것도 없음을 발견하고 충격받았으며, Savanna가 Monica를 제압한 뒤 일행은 붕괴하는 유적에 Monica를 남겨두고 떠났다.",
        "interp": false,
        "dropped": false,
-       "t": "에스코피에는 패해 모데스트의 원본 요리책을 넘겼지만, 뒤에 장비 사보타주와 모니카가 실제 장본인임을 알아차린다."
+       "t": "그곳에서 모니카는 아무것도 없음을 발견하고 충격받았으며, 사바나가 모니카를 제압한 뒤 일행은 붕괴하는 유적에 모니카를 남겨두고 떠났다."
+      },
+      {
+       "t_raw": "비밀 재료를 군수 물자로 팔려 한 목적과 유적에 아무것도 없었다는 결과 사이에는 풀리지 않은 의문이 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "비밀 재료를 군수 물자로 팔려 한 목적과 유적에 아무것도 없었다는 결과 사이에는 풀리지 않은 의문이 남는다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Savanna",
-       "revision": 1759914,
-       "section": "Profile",
-       "paragraph": "M7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Savanna",
-       "revision": 1759914,
-       "section": "Profile",
-       "paragraph": "M4",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Escoffier/Storyline",
@@ -1901,40 +1897,21 @@
          "name": "Ice-Frosted Endgame"
         }
        ]
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Codex",
-      "Debord"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Escoffier was sentenced to the prison following a food safety incident regarding lumitide, which had actually been planted by Monica.",
-     "sentences": [
-      {
-       "t_raw": "Escoffier가 복역하게 된 식품 안전 사고는 Monica가 심은 lumitide에서 비롯되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "에스코피에가 복역하게 된 식품 안전 사고는 모니카가 심은 lumitide에서 비롯되었다."
       },
       {
-       "t_raw": "이렇게 보면 Monica의 계획은 과거의 식품 안전 사고와 Debord 재방문 소동을 관통하는 셈이지만, 비밀 재료의 정체와 군사적 용도는 **풀리지 않은 물음**으로 남는다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이렇게 보면 모니카의 계획은 과거의 식품 안전 사고와 Debord 재방문 소동을 관통하는 셈이지만, 비밀 재료의 정체와 군사적 용도는 **풀리지 않은 물음**으로 남는다."
-      }
-     ],
-     "sources": [
+       "kind": "wiki",
+       "page": "Savanna",
+       "revision": 1759914,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
-       "page": "Fortress of Meropide",
-       "revision": 1748652,
-       "section": "Lore",
-       "paragraph": "M5",
+       "page": "Savanna",
+       "revision": 1759914,
+       "section": "Profile",
+       "paragraph": "M1",
        "wiki_refs": []
       },
       {
@@ -1947,27 +1924,42 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Debord"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "B6 says the meticulous image lasted and that her critiques made her the hot topic; the sentence makes both the image and the critiques the hot topic.",
      "quote": "She has pale skin, and bluish cyan eyes with pink heart-outlined pupils.",
      "sentences": [
       {
-       "t_raw": "Escoffier는 창백한 피부와 분홍 하트 윤곽의 동공이 있는 푸른빛 도는 시안색 눈, 엉덩이 길이까지 내려오는 곱슬한 밝은 생강색 머리를 지녔다.",
+       "t_raw": "Escoffier는 medium female model을 쓰며, 창백한 피부와 푸른빛이 도는 cyan 눈, **핑크 하트 모양 테두리의 동공**을 지녔다.",
        "interp": false,
        "dropped": false,
-       "t": "에스코피에는 창백한 피부와 분홍 하트 윤곽의 동공이 있는 푸른빛 도는 시안색 눈, 엉덩이 길이까지 내려오는 곱슬한 밝은 생강색 머리를 지녔다."
+       "t": "에스코피에는 중간 여성 모델을 쓰며, 창백한 피부와 푸른빛이 도는 청록색 눈, **핑크 하트 모양 테두리의 동공**을 지녔다.",
+       "polish": {
+        "from": "에스코피에는 medium female model을 쓰며, 창백한 피부와 푸른빛이 도는 cyan 눈, **핑크 하트 모양 테두리의 동공**을 지녔다.",
+        "text": "에스코피에는 중간 여성 모델을 쓰며, 창백한 피부와 푸른빛이 도는 청록색 눈, **핑크 하트 모양 테두리의 동공**을 지녔다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "주름 장식이 달린 작은 흰 셰프 모자에는 짙은 청록색 리본과 금색 하트 모양 금속 장식, 금색 테두리의 검은 부분, 두 개의 작은 청록색 리본이 달렸고, **Vision**은 그 리본에 붙어 있다.",
+       "t_raw": "길게 컬이 진 hip-length의 연한 ginger 머리에는 주름 장식이 달린 작은 흰 셰프 모자와 dark teal 리본, 금색 하트 모양 장식, 금색 테두리의 검은 부분, 두 개의 작은 teal blue 리본이 더해져 있고, 리본에는 Vision이 붙어 있다.",
        "interp": false,
        "dropped": false,
-       "t": "주름 장식이 달린 작은 흰 셰프 모자에는 짙은 청록색 리본과 금색 하트 모양 금속 장식, 금색 테두리의 검은 부분, 두 개의 작은 청록색 리본이 달렸고, **신의 눈**은 그 리본에 붙어 있다."
+       "t": "길게 컬이 진 엉덩이 길이의 연한 생강색 머리에는 주름 장식이 달린 작은 흰 셰프 모자와 짙은 청록색 리본, 금색 하트 모양 장식, 금색 테두리의 검은 부분, 두 개의 작은 청록빛 파란색 리본이 더해져 있고, 리본에는 신의 눈이 붙어 있다.",
+       "polish": {
+        "from": "길게 컬이 진 hip-length의 연한 ginger 머리에는 주름 장식이 달린 작은 흰 셰프 모자와 dark teal 리본, 금색 하트 모양 장식, 금색 테두리의 검은 부분, 두 개의 작은 teal blue 리본이 더해져 있고, 리본에는 신의 눈이 붙어 있다.",
+        "text": "길게 컬이 진 엉덩이 길이의 연한 생강색 머리에는 주름 장식이 달린 작은 흰 셰프 모자와 짙은 청록색 리본, 금색 하트 모양 장식, 금색 테두리의 검은 부분, 두 개의 작은 청록빛 파란색 리본이 더해져 있고, 리본에는 신의 눈이 붙어 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "비평가들은 천재 요리사에게 칭찬을 아끼지 않으면서도 논란을 피하지 않았고, 주방과 경영 모두 꼼꼼하다는 이미지는 오래도록 이어졌으며, 가차 없는 비평이 그녀를 요리계 화제로 만들었다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "비평가들은 천재 요리사에게 칭찬을 아끼지 않으면서도 논란을 피하지 않았고, 주방과 경영 모두 꼼꼼하다는 이미지는 오래도록 이어졌으며, 가차 없는 비평이 그녀를 요리계 화제로 만들었다고 전한다."
       }
      ],
      "sources": [
@@ -1981,10 +1973,10 @@
       },
       {
        "kind": "wiki",
-       "page": "Escoffier/Storyline",
-       "revision": 1892577,
-       "section": "Profile > Appearance",
-       "paragraph": "C4",
+       "page": "Escoffier/Profile",
+       "revision": 1889701,
+       "section": "Official Introduction",
+       "paragraph": "B6",
        "wiki_refs": []
       }
      ],
@@ -1993,92 +1985,138 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Mmm... Strong, bitter coffee beans, transformed through expert brewing, and balanced perfectly with rich, creamy steamed milk... Wonderful!",
+     "status": "accepted",
+     "note": "Youth, petit chef, hat return, and the cake tasting match C5–C6.",
+     "quote": "She was enamored by the kitchen and her parents, taking note of her curiosity, would allow her to play in the kitchen.",
      "sentences": [
       {
-       "t_raw": "Escoffier는 강하고 쓴 커피콩이 전문적인 추출을 거쳐 풍부하고 크리미한 스팀 밀크와 완벽하게 균형을 이룬 커피를 훌륭하다고 말한다.",
+       "t_raw": "어린 Escoffier의 부모는 요리사였고 집안은 그리 넉넉하지 않았지만, 그는 부엌과 부모에게 매료되어 부엌에서 놀며 솜씨를 키웠고 Golden Trinity Roulade로 저녁을 만들었다.",
        "interp": false,
        "dropped": false,
-       "t": "에스코피에는 강하고 쓴 커피콩이 전문적인 추출을 거쳐 풍부하고 크리미한 스팀 밀크와 완벽하게 균형을 이룬 커피를 훌륭하다고 말한다."
+       "t": "어린 에스코피에의 부모는 요리사였고 집안은 그리 넉넉하지 않았지만, 그는 부엌과 부모에게 매료되어 부엌에서 놀며 솜씨를 키웠고 Golden Trinity Roulade로 저녁을 만들었다."
       },
       {
-       "t_raw": "정신을 차려야 할 때는 더 많은 커피가 필요하다고 하고, 잠깐 사이에 커피를 전부 마셔 버렸는지 스스로 묻는다.",
+       "t_raw": "부모는 솜씨를 칭찬했으나 부모가 떠난 뒤 직접 맛본 그는 결과에 실망했다.",
        "interp": false,
        "dropped": false,
-       "t": "정신을 차려야 할 때는 더 많은 커피가 필요하다고 하고, 잠깐 사이에 커피를 전부 마셔 버렸는지 스스로 묻는다."
+       "t": "부모는 솜씨를 칭찬했으나 부모가 떠난 뒤 직접 맛본 그는 결과에 실망했다."
       },
       {
-       "t_raw": "하품을 한 뒤에는 감사하다고 말한다.",
+       "t_raw": "솜씨를 더 다듬으려 Vasari Passage의 소박한 식당에서 petit chef까지 올랐고, 번 Mora로 다른 식당 음식을 맛보며 뿌리까지 기억했으며, **Gateau Debord**를 알게 되자 먹어 보기를 간절히 바랐다.",
        "interp": false,
        "dropped": false,
-       "t": "하품을 한 뒤에는 감사하다고 말한다."
+       "t": "솜씨를 더 다듬으려 바사리 회랑의 소박한 식당에서 쁘띠 셰프까지 올랐고, 번 모라로 다른 식당 음식을 맛보며 뿌리까지 기억했으며, **드보르 케이크**를 알게 되자 먹어 보기를 간절히 바랐다.",
+       "polish": {
+        "from": "솜씨를 더 다듬으려 바사리 회랑의 소박한 식당에서 petit chef까지 올랐고, 번 모라로 다른 식당 음식을 맛보며 뿌리까지 기억했으며, **드보르 케이크**를 알게 되자 먹어 보기를 간절히 바랐다.",
+        "text": "솜씨를 더 다듬으려 바사리 회랑의 소박한 식당에서 쁘띠 셰프까지 올랐고, 번 모라로 다른 식당 음식을 맛보며 뿌리까지 기억했으며, **드보르 케이크**를 알게 되자 먹어 보기를 간절히 바랐다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "잠깐 사이에 커피를 다 마셨는지 묻고 더 필요하다고 말하는 모습에서, 그녀에게 **커피에 대한 집착**은 일상의 중요한 부분으로 보인다.",
-       "interp": true,
+       "t_raw": "호텔 밖에서 기다리다가 떨어진 정교한 모자를 주인 Navia에게 돌려주고, 보답으로 받은 Gateau Debord 한 조각이 그가 시험해 본 다른 Gateau Debord와 같음을 발견했다.",
+       "interp": false,
        "dropped": false,
-       "t": "잠깐 사이에 커피를 다 마셨는지 묻고 더 필요하다고 말하는 모습에서, 그녀에게 **커피에 대한 집착**은 일상의 중요한 부분으로 보인다."
+       "t": "호텔 밖에서 기다리다가 떨어진 정교한 모자를 주인 나비아에게 돌려주고, 보답으로 받은 드보르 케이크 한 조각이 그가 시험해 본 다른 드보르 케이크와 같음을 발견했다."
       }
      ],
      "sources": [
       {
-       "kind": "quest",
-       "quest": "Ice-Frosted Endgame",
-       "quest_ko": "얼음으로 데코하기",
-       "version": "5.6",
-       "speaker": "Escoffier"
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Past",
+       "paragraph": "C5",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Escoffier"
+        }
+       ]
       },
       {
-       "kind": "quest",
-       "quest": "Ice-Frosted Endgame",
-       "quest_ko": "얼음으로 데코하기",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ice-Frosted Endgame",
-       "quest_ko": "얼음으로 데코하기",
-       "version": "5.6",
-       "speaker": "Escoffier"
-      },
-      {
-       "kind": "quest",
-       "quest": "Ice-Frosted Endgame",
-       "quest_ko": "얼음으로 데코하기",
-       "version": "5.6",
-       "speaker": "Escoffier"
+       "kind": "wiki",
+       "page": "Escoffier/Storyline",
+       "revision": 1892577,
+       "section": "History > Past",
+       "paragraph": "C6",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Escoffier"
+        }
+       ]
       }
      ],
      "heading": "여담",
-     "latin_left": []
+     "latin_left": [
+      "Golden Trinity Roulade"
+     ]
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ahem... So, you two must be the world-famous and companion, Paimon, yes? Is there something I can help you with?",
+     "status": "accepted",
+     "note": "Sentence 3 calls the addressee a customer (손님). Q15 only says “you,” and nothing in the cited lines or full material identifies that listener as a customer.",
+     "quote": "Wait! Take these home with you. We can't serve them now, and there's no sense in letting them go to waste.",
      "sentences": [
       {
-       "t_raw": "Escoffier는 두 사람을 보며 세계적으로 유명한 인물과 동행 Paimon이 맞는지 되묻는다.",
+       "t_raw": "Escoffier는 강하고 쓴 커피 원두가 전문적인 추출을 거쳐 진하고 크리미한 스팀 밀크와 완벽하게 균형을 이룬 맛을 훌륭하다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "에스코피에는 두 사람을 보며 세계적으로 유명한 인물과 동행 페이몬이 맞는지 되묻는다."
+       "t": "에스코피에는 강하고 쓴 커피 원두가 전문적인 추출을 거쳐 진하고 크리미한 스팀 밀크와 완벽하게 균형을 이룬 맛을 훌륭하다고 말한다."
       },
       {
-       "t_raw": "이어서 무엇을 도와줄 수 있느냐고 묻는다.",
+       "t_raw": "커피를 다 마셨는지 묻고 더 마셔야 한다며 커피를 찾고, 하품하며 고맙다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "이어서 무엇을 도와줄 수 있느냐고 묻는다."
+       "t": "커피를 다 마셨는지 묻고 더 마셔야 한다며 커피를 찾고, 하품하며 고맙다고 한다."
+      },
+      {
+       "t_raw": "이는 **커피**를 각별히 즐기는 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 **커피**를 각별히 즐기는 모습으로 보인다."
+      },
+      {
+       "t_raw": "Escoffier는 지금은 내놓을 수 없는 음식을 집에 가져가라며, 버릴 이유가 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "에스코피에는 지금은 내놓을 수 없는 음식을 집에 가져가라며, 버릴 이유가 없다고 말한다."
       }
      ],
      "sources": [
+      {
+       "kind": "quest",
+       "quest": "Ice-Frosted Endgame",
+       "quest_ko": "얼음으로 데코하기",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ice-Frosted Endgame",
+       "quest_ko": "얼음으로 데코하기",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ice-Frosted Endgame",
+       "quest_ko": "얼음으로 데코하기",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
       {
        "kind": "quest",
        "quest": "Shaped by Fame",
        "quest_ko": "명성으로 반죽하기",
+       "version": "5.6",
+       "speaker": "Escoffier"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ice-Frosted Endgame",
+       "quest_ko": "얼음으로 데코하기",
        "version": "5.6",
        "speaker": "Escoffier"
       }
@@ -2089,44 +2127,27 @@
    ],
    "quote_boxes": [
     {
-     "section": "성격과 명성",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그럼 돌아가서 다시 하세요! 손님들이 아직 기다리고 있으니까요... 어디서 잘못했는지 기억하고, 같은 실수를 두 번 반복하지 마세요!",
-     "en": "Then go back and do it again! The customers are still waiting... Remember where you went wrong, and don't repeat the same mistake twice!",
+     "section": "개요",
+     "status": "accepted",
+     "note": "The line apologizes if the harsh words were overheard and assures that they were necessary. The Korean drops the apology and turns the assurance into a request to understand.",
+     "t_raw": "[번역] 인사드린다. 방금 내 거친 말을 엿들었다면 사과드린다. 하지만 그건 전적으로 필요한 일임을 장담한다.",
+     "en": "Greetings. Apologies if you overheard my harsh words just now, but I assure you it is entirely necessary.",
      "speaker": "Escoffier",
      "source": {
       "kind": "quest",
-      "quest": "Shaped by Fame",
-      "quest_ko": "명성으로 반죽하기",
+      "quest": "An Overnight Fantasyland",
+      "quest_ko": "하룻밤 사이에 세워진 낙원",
       "version": "5.6",
       "speaker": "Escoffier"
      },
-     "t": "그럼 돌아가서 다시 하세요! 손님들이 아직 기다리고 있으니까요... 어디서 잘못했는지 기억하고, 같은 실수를 두 번 반복하지 마세요!",
+     "t": "[번역] 인사드린다. 방금 내 거친 말을 엿들었다면 사과드린다. 하지만 그건 전적으로 필요한 일임을 장담한다.",
      "speaker_ko": "에스코피에"
     },
     {
-     "section": "능력과 요리 철학",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아하! Escoffier의 고전적인 즉흥 조리법의 정수 — '핵심 재료에서 영감을 받은 미스터리 요리'라고 그녀가 표현한 것이지!",
-     "en": "Aha! The essence of Escoffier's classic improvisational method — \"mystery dishes inspired by key ingredients,\" as she puts it!",
-     "speaker": "Navia",
-     "source": {
-      "kind": "quest",
-      "quest": "Business Acumen From the Spina",
-      "quest_ko": "가시 장미회의 경영학",
-      "version": "5.6",
-      "speaker": "Navia"
-     },
-     "t": "아하! 에스코피에의 고전적인 즉흥 조리법의 정수 — '핵심 재료에서 영감을 받은 미스터리 요리'라고 그녀가 표현한 것이지!",
-     "speaker_ko": "나비아"
-    },
-    {
-     "section": "작중 행적 — Whirling Waltz와 Hotel Debord",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Savanna, 네가 요청한 Codex의 원본을 가져왔어.",
+     "section": "작중 행적 — Hotel Debord 사건",
+     "status": "accepted",
+     "note": "Faithful translation of the Codex line.",
+     "t_raw": "Savanna, 네가 요청한 Codex 원본을 가져왔어.",
      "en": "Savanna, I've brought the original copy of the Codex you asked for.",
      "speaker": "Escoffier",
      "source": {
@@ -2136,48 +2157,82 @@
       "version": "5.6",
       "speaker": "Escoffier"
      },
-     "t": "사바나, 네가 요청한 Codex의 원본을 가져왔어.",
+     "t": "사바나, 네가 요청한 Codex 원본을 가져왔어.",
+     "speaker_ko": "에스코피에"
+    },
+    {
+     "section": "작중 행적 — Whirling Waltz와 Nod-Krai",
+     "status": "accepted",
+     "note": "Faithful translation of the vegetables and new-staff line.",
+     "t_raw": "새로 들어온 채소는 품질이 매우 뛰어나다. 새 직원들에 대해서도 같은 말을 할 수 있으면 좋겠지만...",
+     "en": "The fresh vegetables from the new batch are of exceptional quality. I just wish I could say the same about the new staff...",
+     "speaker": "Escoffier",
+     "source": {
+      "kind": "quest",
+      "quest": "An Overnight Fantasyland",
+      "quest_ko": "하룻밤 사이에 세워진 낙원",
+      "version": "5.6",
+      "speaker": "Escoffier"
+     },
+     "t": "새로 들어온 채소는 품질이 매우 뛰어나다. 새 직원들에 대해서도 같은 말을 할 수 있으면 좋겠지만...",
+     "speaker_ko": "에스코피에"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation of the parenthetical flavor-balance line.",
+     "t_raw": "(침착해, Escoffier! 맛의 균형을 맞출 방법이 반드시 있을 거야, 생각해!)",
+     "en": "(Stay calm, Escoffier! There has to be a way to balance the flavors, just think!)",
+     "speaker": "Escoffier",
+     "source": {
+      "kind": "quest",
+      "quest": "Roasted by Flames",
+      "quest_ko": "고온으로 굽기",
+      "version": "5.6",
+      "speaker": "Escoffier"
+     },
+     "t": "(침착해, 에스코피에! 맛의 균형을 맞출 방법이 반드시 있을 거야, 생각해!)",
      "speaker_ko": "에스코피에"
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아하! Escoffier의 고전적인 즉흥 방식의 정수 — 그녀의 표현대로 '핵심 재료에서 영감을 받은 미스터리 요리' 말이지!",
-     "en": "Aha! The essence of Escoffier's classic improvisational method — \"mystery dishes inspired by key ingredients,\" as she puts it!",
-     "speaker": "Navia",
-     "source": {
-      "kind": "quest",
-      "quest": "Business Acumen From the Spina",
-      "quest_ko": "가시 장미회의 경영학",
-      "version": "5.6",
-      "speaker": "Navia"
-     },
-     "t": "아하! 에스코피에의 고전적인 즉흥 방식의 정수 — 그녀의 표현대로 '핵심 재료에서 영감을 받은 미스터리 요리' 말이지!",
-     "speaker_ko": "나비아"
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "...Escoffier가 나에게 비밀을 숨기고 있다는 암시조차... 전부 네 큰 계획의 일부였던 거지, Monica?",
-     "en": "...Even the suggestion that Escoffier was keeping secrets from me... It was all part of your grand plan — wasn't it, Monica?",
-     "speaker": "Savanna",
+     "status": "accepted",
+     "note": "Faithful translation of Monica’s line, including jealousy and eagerly accepting what she said.",
+     "t_raw": "하, 그렇게 잘난 척하지 마. 인정해, 너는 항상 Escoffier를 질투해 왔어! 그래서 내가 말한 모든 것을 그대로 받아들인 거야...",
+     "en": "Ha, don't be so self-righteous. Admit it, you've always been jealous of Escoffier! That's why you lapped up everything I told you...",
+     "speaker": "Monica",
      "source": {
       "kind": "quest",
       "quest": "Ice-Frosted Endgame",
       "quest_ko": "얼음으로 데코하기",
       "version": "5.6",
-      "speaker": "Savanna"
+      "speaker": "Monica"
      },
-     "t": "...에스코피에가 나에게 비밀을 숨기고 있다는 암시조차... 전부 네 큰 계획의 일부였던 거지, 모니카?",
-     "speaker_ko": "사바나"
+     "t": "하, 그렇게 잘난 척하지 마. 인정해, 너는 항상 에스코피에를 질투해 왔어! 그래서 내가 말한 모든 것을 그대로 받아들인 거야...",
+     "speaker_ko": "모니카"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful: original copy of the Codex you asked for, brought to Savanna.",
+     "t_raw": "Savanna, 네가 요청한 Codex의 원본을 가져왔다.",
+     "en": "Savanna, I've brought the original copy of the Codex you asked for.",
+     "speaker": "Escoffier",
+     "source": {
+      "kind": "quest",
+      "quest": "Roasted by Flames",
+      "quest_ko": "고온으로 굽기",
+      "version": "5.6",
+      "speaker": "Escoffier"
+     },
+     "t": "사바나, 네가 요청한 Codex의 원본을 가져왔다.",
+     "speaker_ko": "에스코피에"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "음... 강하고 쓴 커피콩이 전문적인 추출을 거쳐, 풍부하고 크리미한 스팀 밀크와 완벽하게 균형을 이룬다... 훌륭해!",
+     "status": "accepted",
+     "note": "Faithful: strong bitter beans, expert brewing, balance with rich creamy steamed milk, Wonderful.",
+     "t_raw": "음... 강하고 쓴 커피 원두가 전문적인 추출을 거쳐, 진하고 크리미한 스팀 밀크와 완벽하게 균형을 이루었어... 훌륭해!",
      "en": "Mmm... Strong, bitter coffee beans, transformed through expert brewing, and balanced perfectly with rich, creamy steamed milk... Wonderful!",
      "speaker": "Escoffier",
      "source": {
@@ -2187,7 +2242,7 @@
       "version": "5.6",
       "speaker": "Escoffier"
      },
-     "t": "음... 강하고 쓴 커피콩이 전문적인 추출을 거쳐, 풍부하고 크리미한 스팀 밀크와 완벽하게 균형을 이룬다... 훌륭해!",
+     "t": "음... 강하고 쓴 커피 원두가 전문적인 추출을 거쳐, 진하고 크리미한 스팀 밀크와 완벽하게 균형을 이루었어... 훌륭해!",
      "speaker_ko": "에스코피에"
     }
    ]

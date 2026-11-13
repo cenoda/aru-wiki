@@ -1,0 +1,488 @@
+{
+ "node": "Eurydates",
+ "articles": [
+  {
+   "node": "Eurydates",
+   "from_version": "3.7",
+   "cutoff": "2023-07-04T00:00:00Z",
+   "input": [
+    {
+     "page": "Eurydates",
+     "url": "https://genshin-impact.fandom.com/wiki/Eurydates",
+     "revision": 1240094
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 2,
+    "web": 0
+   },
+   "input_chars": 275,
+   "input_cut": false,
+   "input_hash": "964576a87839",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2 and Q1; the interpretation is reasonable.",
+     "quote": "Eurydates is a mentioned NPC from Enkanomiya and the father of Date.",
+     "sentences": [
+      {
+       "t_raw": "Eurydates는 Enkanomiya에서 언급되는 NPC이자 Date의 아버지이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에우리다테는 연하궁에서 언급되는 NPC이자 다테의 아버지이다."
+      },
+      {
+       "t_raw": "Ema에 따르면 Eurydates는 Byakuyakoku의 부유하고 명망 있는 가문 출신이며, Date는 아버지가 목발로 자신을 때렸다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에마에 따르면 에우리다테는 백야국의 부유하고 명망 있는 가문 출신이며, 다테는 아버지가 목발로 자신을 때렸다고 말한다."
+      },
+      {
+       "t_raw": "Date는 자신이 Daedalus, Eurydates의 아들이자 미궁 장인이라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다테는 자신이 Daedalus, 에우리다테의 아들이자 미궁 장인이라고 밝힌다."
+      },
+      {
+       "t_raw": "이 단편들은 Date의 출신과 아버지와의 관계를 보여 주며, **Date의 정체**를 이해하는 실마리가 된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 단편들은 다테의 출신과 아버지와의 관계를 보여 주며, **다테의 정체**를 이해하는 실마리가 된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eurydates",
+       "revision": 1240094,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eurydates",
+       "revision": 1240094,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Collection of Dragons and Snakes"
+        },
+        {
+         "type": "quest",
+         "name": "Date's Challenge"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Date's Challenge",
+       "quest_ko": "다테의 도전장",
+       "version": "2.4",
+       "speaker": "Date"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC",
+      "Daedalus"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A1.",
+     "quote": "Eurydates is a mentioned NPC from Enkanomiya and the father of Date.",
+     "sentences": [
+      {
+       "t_raw": "Eurydates는 Enkanomiya에서 언급되는 NPC이자 Date의 아버지다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에우리다테는 연하궁에서 언급되는 NPC이자 다테의 아버지다."
+      },
+      {
+       "t_raw": "**Enkanomiya에서 언급되는 인물**이며 **Date의 아버지**라는 점이 그에 대해 확인되는 기본 정보다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**연하궁에서 언급되는 인물**이며 **다테의 아버지**라는 점이 그에 대해 확인되는 기본 정보다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eurydates",
+       "revision": 1240094,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A2 (wealthy and distinguished clan, per Ema).",
+     "quote": "According to Ema, Eurydates was from a wealthy and distinguished clan of Byakuyakoku.",
+     "sentences": [
+      {
+       "t_raw": "Eurydates의 배경은 **Ema의 증언**을 통해 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에우리다테의 배경은 **에마의 증언**을 통해 전해진다."
+      },
+      {
+       "t_raw": "Ema에 따르면 Eurydates는 Byakuyakoku의 **부유하고 명망 있는 가문** 출신이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에마에 따르면 에우리다테는 백야국의 **부유하고 명망 있는 가문** 출신이다."
+      },
+      {
+       "t_raw": "이 증언은 Eurydates의 집안을 재력과 명성을 함께 갖춘 가문으로 묘사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 증언은 에우리다테의 집안을 재력과 명성을 함께 갖춘 가문으로 묘사한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eurydates",
+       "revision": 1240094,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Collection of Dragons and Snakes"
+        },
+        {
+         "type": "quest",
+         "name": "Date's Challenge"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Date's Challenge",
+     "status": "accepted",
+     "note": "Matches Q1; the interpretation is reasonable.",
+     "quote": "The name's Date. They used to call me Daedalus, son of Eurydates. I'm a labyrinth artisan! The puzzle you just went through is my work.",
+     "sentences": [
+      {
+       "t_raw": "Date's Challenge에서 Date는 자신을 Date라 소개한 뒤, 과거에는 **Daedalus**라 불렸고 **Eurydates의 아들**이라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다테의 도전장에서 다테는 자신을 다테라 소개한 뒤, 과거에는 **Daedalus**라 불렸고 **에우리다테의 아들**이라고 밝힌다."
+      },
+      {
+       "t_raw": "이어 스스로를 미궁 장인이라 칭하며 방금 지나온 퍼즐이 자신의 작품이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 스스로를 미궁 장인이라 칭하며 방금 지나온 퍼즐이 자신의 작품이라고 말한다."
+      },
+      {
+       "t_raw": "현재의 이름 Date, 과거의 이름 Daedalus, 아버지 Eurydates, 자신의 작업이 한자리에서 제시되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "현재의 이름 다테, 과거의 이름 Daedalus, 아버지 에우리다테, 자신의 작업이 한자리에서 제시되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Date's Challenge",
+       "quest_ko": "다테의 도전장",
+       "version": "2.4",
+       "speaker": "Date"
+      }
+     ],
+     "heading": "작중 행적 — 다테의 도전장",
+     "latin_left": [
+      "Daedalus",
+      "Daedalus"
+     ]
+    },
+    {
+     "section": "작중 행적 — Date's Challenge",
+     "status": "accepted",
+     "note": "Matches Q2 and Q1; the interpretation is hedged and reasonable.",
+     "quote": "My father, Eurydates, gave me a few strokes on the backside with his crutches.",
+     "sentences": [
+      {
+       "t_raw": "퀘스트의 태블릿 텍스트에는 아버지 Eurydates가 **목발**로 Date의 엉덩이를 몇 대 때렸다는 기록이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트의 태블릿 텍스트에는 아버지 에우리다테가 **목발**로 다테의 엉덩이를 몇 대 때렸다는 기록이 있다."
+      },
+      {
+       "t_raw": "이 기록은 Date가 밝힌 아버지 관계를 사적인 일화로 구체화하며, 퍼즐을 만든 장인이라는 자기소개와 목발로 맞았다는 기억이 나란히 놓여 작업과 가족사가 겹쳐지는 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 기록은 다테가 밝힌 아버지 관계를 사적인 일화로 구체화하며, 퍼즐을 만든 장인이라는 자기소개와 목발로 맞았다는 기억이 나란히 놓여 작업과 가족사가 겹쳐지는 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Date's Challenge",
+       "quest_ko": "다테의 도전장",
+       "version": "2.4",
+       "speaker": "Date"
+      },
+      {
+       "kind": "quest",
+       "quest": "Date's Challenge",
+       "quest_ko": "다테의 도전장",
+       "version": "2.4",
+       "speaker": "Tablet Text"
+      }
+     ],
+     "heading": "작중 행적 — 다테의 도전장",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Facts are in A2 and Q2; the interpretations follow from them without adding new facts.",
+     "quote": "My father, Eurydates, gave me a few strokes on the backside with his crutches.",
+     "sentences": [
+      {
+       "t_raw": "Ema의 증언에 따르면 Eurydates는 Byakuyakoku의 **부유하고 명망 있는 가문** 출신이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에마의 증언에 따르면 에우리다테는 백야국의 **부유하고 명망 있는 가문** 출신이다."
+      },
+      {
+       "t_raw": "Date의 발언에 따르면 Eurydates는 목발을 짚었고, Date의 글에 운율이나 수사가 빠졌다는 이유로 그 목발로 **Date를 때렸다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "다테의 발언에 따르면 에우리다테는 목발을 짚었고, 다테의 글에 운율이나 수사가 빠졌다는 이유로 그 목발로 **다테를 때렸다**."
+      },
+      {
+       "t_raw": "Date는 아버지가 자신의 엉덩이를 목발로 몇 대 때렸다고 적었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다테는 아버지가 자신의 엉덩이를 목발로 몇 대 때렸다고 적었다."
+      },
+      {
+       "t_raw": "이렇게 집안의 명망을 말하는 증언과 아들을 목발로 체벌했다는 기억이 한 인물을 두고 나란히 전해지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 집안의 명망을 말하는 증언과 아들을 목발로 체벌했다는 기억이 한 인물을 두고 나란히 전해지는 셈이다."
+      },
+      {
+       "t_raw": "Eurydates와 Date의 부자 관계는 가문의 명성만으로는 다 설명되지 않는 사적인 장면을 남긴다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "에우리다테와 다테의 부자 관계는 가문의 명성만으로는 다 설명되지 않는 사적인 장면을 남긴다고 볼 수 있다."
+      },
+      {
+       "t_raw": "Date의 글을 둘러싼 평가가 아버지의 체벌로 이어졌다는 점에서, 두 사람의 관계는 글에 대한 평가와 체벌이 얽힌 기억으로 제시된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "다테의 글을 둘러싼 평가가 아버지의 체벌로 이어졌다는 점에서, 두 사람의 관계는 글에 대한 평가와 체벌이 얽힌 기억으로 제시된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eurydates",
+       "revision": 1240094,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Collection of Dragons and Snakes"
+        },
+        {
+         "type": "quest",
+         "name": "Date's Challenge"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Date's Challenge",
+       "quest_ko": "다테의 도전장",
+       "version": "2.4",
+       "speaker": "Tablet Text"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by A2 and Q2.",
+     "quote": "My father, Eurydates, gave me a few strokes on the backside with his crutches.",
+     "sentences": [
+      {
+       "t_raw": "Eurydates는 목발을 짚고 다녔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에우리다테는 목발을 짚고 다녔다."
+      },
+      {
+       "t_raw": "태블릿 글에는 아버지 Eurydates가 목발로 자신의 엉덩이를 몇 대 때렸다는 기록이 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "태블릿 글에는 아버지 에우리다테가 목발로 자신의 엉덩이를 몇 대 때렸다는 기록이 남아 있다."
+      },
+      {
+       "t_raw": "아버지의 목발은 Date에게 글에 대한 꾸짖음과 함께 기억된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아버지의 목발은 다테에게 글에 대한 꾸짖음과 함께 기억된 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eurydates",
+       "revision": 1240094,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Collection of Dragons and Snakes"
+        },
+        {
+         "type": "quest",
+         "name": "Date's Challenge"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Date's Challenge",
+       "quest_ko": "다테의 도전장",
+       "version": "2.4",
+       "speaker": "Tablet Text"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A2; the interpretation follows from it.",
+     "quote": "his writing \"lacked rhyme or rhetoric.\"",
+     "sentences": [
+      {
+       "t_raw": "목발 일화와 함께 Date의 글에 대한 평가도 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목발 일화와 함께 다테의 글에 대한 평가도 전해진다."
+      },
+      {
+       "t_raw": "Date에 따르면 Eurydates는 Date의 글에 운율이나 수사가 빠졌다는 이유로 그를 때렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다테에 따르면 에우리다테는 다테의 글에 운율이나 수사가 빠졌다는 이유로 그를 때렸다."
+      },
+      {
+       "t_raw": "아버지의 기준에서 Date의 글은 운율과 수사를 갖추지 못한 글이었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아버지의 기준에서 다테의 글은 운율과 수사를 갖추지 못한 글이었던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eurydates",
+       "revision": 1240094,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Collection of Dragons and Snakes"
+        },
+        {
+         "type": "quest",
+         "name": "Date's Challenge"
+        }
+       ]
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적 — Date's Challenge",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "내 아버지 Eurydates는 목발로 내 엉덩이를 몇 대 때렸다.",
+     "en": "My father, Eurydates, gave me a few strokes on the backside with his crutches.",
+     "speaker": "Tablet Text",
+     "source": {
+      "kind": "quest",
+      "quest": "Date's Challenge",
+      "quest_ko": "다테의 도전장",
+      "version": "2.4",
+      "speaker": "Tablet Text"
+     },
+     "t": "내 아버지 에우리다테는 목발로 내 엉덩이를 몇 대 때렸다.",
+     "speaker_ko": "Tablet Text"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "나의 아버지, Eurydates는 목발로 내 엉덩이를 몇 대 때렸다.",
+     "en": "My father, Eurydates, gave me a few strokes on the backside with his crutches.",
+     "speaker": "Tablet Text",
+     "source": {
+      "kind": "quest",
+      "quest": "Date's Challenge",
+      "quest_ko": "다테의 도전장",
+      "version": "2.4",
+      "speaker": "Tablet Text"
+     },
+     "t": "나의 아버지, 에우리다테는 목발로 내 엉덩이를 몇 대 때렸다.",
+     "speaker_ko": "Tablet Text"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "내 아버지 Eurydates는 목발로 내 엉덩이를 몇 대 때렸다.",
+     "en": "My father, Eurydates, gave me a few strokes on the backside with his crutches.",
+     "speaker": "Tablet Text",
+     "source": {
+      "kind": "quest",
+      "quest": "Date's Challenge",
+      "quest_ko": "다테의 도전장",
+      "version": "2.4",
+      "speaker": "Tablet Text"
+     },
+     "t": "내 아버지 에우리다테는 목발로 내 엉덩이를 몇 대 때렸다.",
+     "speaker_ko": "Tablet Text"
+    }
+   ]
+  }
+ ]
+}

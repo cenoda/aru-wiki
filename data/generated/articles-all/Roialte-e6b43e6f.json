@@ -1,0 +1,1968 @@
+{
+ "node": "Roialte",
+ "articles": [
+  {
+   "node": "Roialte",
+   "from_version": "4.0",
+   "cutoff": "2023-09-26T00:00:00Z",
+   "input": [
+    {
+     "page": "Roialte",
+     "url": "https://genshin-impact.fandom.com/wiki/Roialte",
+     "revision": 1347559
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 27,
+    "web": 0
+   },
+   "input_chars": 1645,
+   "input_cut": false,
+   "input_hash": "d1c7f54f107d",
+   "writer": "or-ds,ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A9, Q2 and Q21.",
+     "quote": "Work done without error is work well done.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 Fontaine의 Court of Fontaine Region에 있는 NPC로, A Certain Stamp 완료 후 낮에는 Palais Mermonia에서, 밤에는 Court of Fontaine: Vasari Passage의 조각상 광장을 걷는 모습으로 만날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 폰타인의 폰타인성 구역에 있는 NPC로, 한 개의 인장 완료 후 낮에는 멜모니아궁에서, 밤에는 폰타인성·바사리 회랑의 조각상 광장을 걷는 모습으로 만날 수 있다."
+      },
+      {
+       "t_raw": "그는 \"Work done without error is work well done\"이라고 말하며, Iaune에게 문서에 서명받는 법을 가르치고, Cornelia가 가져온 IOU에 서명하는 인물로 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 \"실수 없이 해낸 일은 잘한 일이다\"라고 말하며, 윤에게 문서에 서명받는 법을 가르치고, 코넬리아가 가져온 차용증에 서명하는 인물로 등장한다.",
+       "polish": {
+        "from": "그는 \"Work done without error is work well done\"이라고 말하며, 윤에게 문서에 서명받는 법을 가르치고, 코넬리아가 가져온 IOU에 서명하는 인물로 등장한다.",
+        "text": "그는 \"실수 없이 해낸 일은 잘한 일이다\"라고 말하며, 윤에게 문서에 서명받는 법을 가르치고, 코넬리아가 가져온 차용증에 서명하는 인물로 등장한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이런 모습은 그가 문서와 서명 문제를 직접 다루는 위치에 있음을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 모습은 그가 문서와 서명 문제를 직접 다루는 위치에 있음을 보여 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Cornelia"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The location and the three Conch Madeleines are in A1 and A2. The interpretation is reasonable.",
+     "quote": "After completing A Certain Stamp, he can be found within Palais Mermonia during the day and walking around the statue plaza in Court of Fontaine: Vasari Passage during the night.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 **A Certain Stamp를 완료한 뒤** 낮에는 Palais Mermonia 안에서, 밤에는 Court of Fontaine: Vasari Passage의 조각상 광장 주변을 걷는 모습으로 만날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 **한 개의 인장을 완료한 뒤** 낮에는 멜모니아궁 안에서, 밤에는 폰타인성·바사리 회랑의 조각상 광장 주변을 걷는 모습으로 만날 수 있다."
+      },
+      {
+       "t_raw": "특정 대화 분기를 처음 따라가면 **Conch Madeleines 세 개**를 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정 대화 분기를 처음 따라가면 **Conch Madeleines 세 개**를 받는다."
+      },
+      {
+       "t_raw": "완료 조건과 낮·밤의 장소 변화를 함께 보면, 그의 등장은 퀘스트 진행과 시간대에 따라 달라지는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "완료 조건과 낮·밤의 장소 변화를 함께 보면, 그의 등장은 퀘스트 진행과 시간대에 따라 달라지는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Conch Madeleines"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The idle quotes and greetings match A5-A8, A18-A19 and A26-A27. The interpretation is hedged.",
+     "quote": "See you, then. Tomorrow will be another lovely day.",
+     "sentences": [
+      {
+       "t_raw": "낮에는 신중히 생각하라는 혼잣말과 행동 전에 생각하라는 혼잣말을 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에는 신중히 생각하라는 혼잣말과 행동 전에 생각하라는 혼잣말을 한다."
+      },
+      {
+       "t_raw": "밤에는 바쁜 하루를 언급하는 혼잣말을 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에는 바쁜 하루를 언급하는 혼잣말을 한다."
+      },
+      {
+       "t_raw": "짧은 인사로는 낮에 또 보자는 말과 몸조심하라는 말을, 밤에 좋은 저녁이라는 말과 또 보자는 말, 내일도 좋은 날이 되리라는 말을 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "짧은 인사로는 낮에 또 보자는 말과 몸조심하라는 말을, 밤에 좋은 저녁이라는 말과 또 보자는 말, 내일도 좋은 날이 되리라는 말을 건넨다."
+      },
+      {
+       "t_raw": "시간대에 따라 혼잣말과 인사의 내용이 달라지는 점은 낮과 밤의 분위기 차이를 드러내는 **짧은 인사말** 구성으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "시간대에 따라 혼잣말과 인사의 내용이 달라지는 점은 낮과 밤의 분위기 차이를 드러내는 **짧은 인사말** 구성으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Idle Quotes > Daytime",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Idle Quotes > Daytime",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Idle Quotes > Nighttime",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Idle Quotes > Nighttime",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A19",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by Q2, Q27, Q14 and Q21.",
+     "quote": "I shall leave this to you. Have them sign the document, just like I taught you, and return it to me before the weekend.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 문서에 서명을 받아 주말 전에 돌려받는 일을 맡기며 자신이 가르친 대로 하라고 지시한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 문서에 서명을 받아 주말 전에 돌려받는 일을 맡기며 자신이 가르친 대로 하라고 지시한다."
+      },
+      {
+       "t_raw": "Iaune은 Roialte에게 'Yessir, Mr. Roialte'라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윤은 로이알트에게 'Yessir, Mr. 로이알트'라고 답한다."
+      },
+      {
+       "t_raw": "Roialte는 **경비 영수증** 처리 때문에 Carsix가 계속 재촉한다고 말하고, Cornelia는 IOU를 Roialte에게 가져가 서명을 받은 뒤 Estelle에게 구매 금액 검증을 맡기겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 **경비 영수증** 처리 때문에 Carsix가 계속 재촉한다고 말하고, 코넬리아는 IOU를 로이알트에게 가져가 서명을 받은 뒤 에스타블레에게 구매 금액 검증을 맡기겠다고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Cornelia"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Yessir",
+      "Mr",
+      "Carsix",
+      "IOU"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts match Q5, Q22, Q8, Q19 and Q4. The interpretations are hedged with 보인다 and follow from the dialogue.",
+     "quote": "Don't worry, let's just go back and look for Mr. Roialte.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 Kameras를 이용한 **비밀 유출**을 막는 책임이 논리적으로 Gattineo에게 있다고 말하지만, Iaune은 Kameras 전담 부서가 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 사진기를 이용한 **비밀 유출**을 막는 책임이 논리적으로 가테리오에게 있다고 말하지만, 윤은 사진기 전담 부서가 없다고 말한다."
+      },
+      {
+       "t_raw": "전담 부서가 없다는 점과 Gattineo에게 책임이 있다는 말을 함께 보면, Roialte는 논리적 책임 배분으로 문제를 정리하려는 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "전담 부서가 없다는 점과 가테리오에게 책임이 있다는 말을 함께 보면, 로이알트는 논리적 책임 배분으로 문제를 정리하려는 인물로 보인다."
+      },
+      {
+       "t_raw": "Roialte는 상식이 흔한 것이라면 Maison Gestion이 내일 해산해도 된다고 Iaune에게 말하고, Iaune은 Maison Gestion 직원 관련 일은 Difor에게 묻으라는 말을 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 상식이 흔한 것이라면 행정청이 내일 해산해도 된다고 윤에게 말하고, 윤은 행정청 직원 관련 일은 뒤포르에게 묻으라는 말을 전한다."
+      },
+      {
+       "t_raw": "Roialte는 누군가의 논리적이고 정확한 추론으로 이전에 풀기 어려웠던 여러 문제의 해결책을 찾을 수 있었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 누군가의 논리적이고 정확한 추론으로 이전에 풀기 어려웠던 여러 문제의 해결책을 찾을 수 있었다고 말한다."
+      },
+      {
+       "t_raw": "Iaune이 Roialte에게 'Yessir, Mr. Roialte'라고 답하고, 다시 돌아가 Roialte를 찾아보자고 말하는 모습은 Iaune이 Roialte를 실무에서 의지하는 관계로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "윤이 로이알트에게 'Yessir, Mr. 로이알트'라고 답하고, 다시 돌아가 로이알트를 찾아보자고 말하는 모습은 윤이 로이알트를 실무에서 의지하는 관계로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Yessir",
+      "Mr"
+     ]
+    },
+    {
+     "section": "작중 행적 — A Certain Stamp",
+     "status": "accepted",
+     "note": "Supported by Q20, Q3 and Q12. The interpretation is reasonable.",
+     "quote": "Mr. Roialte and Mr. Semaine stayed with me half the night. With their guidance, I finally managed to finish the proposal.",
+     "sentences": [
+      {
+       "t_raw": "A Certain Stamp에서 Iaune은 Roialte와 Semaine이 밤의 절반을 함께하며 지도해 준 덕분에 제안서를 마무리했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 개의 인장에서 윤은 로이알트와 세멘이 밤의 절반을 함께하며 지도해 준 덕분에 제안서를 마무리했다고 말한다."
+      },
+      {
+       "t_raw": "Roialte는 누구도 그 실제 여부를 시험하려 들지 않는다며 Iaune을 진정시키고, 그런 문제를 계속 걱정하면 **압박**만 커진다고 일러 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 누구도 그 실제 여부를 시험하려 들지 않는다며 윤을 진정시키고, 그런 문제를 계속 걱정하면 **압박**만 커진다고 일러 준다."
+      },
+      {
+       "t_raw": "밤샘 작업과 압박에 대한 조언이 맞물려, Roialte가 Iaune의 조급함을 누그러뜨리는 역할을 맡은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "밤샘 작업과 압박에 대한 조언이 맞물려, 로이알트가 윤의 조급함을 누그러뜨리는 역할을 맡은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      }
+     ],
+     "heading": "작중 행적 — 한 개의 인장",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — A Certain Stamp",
+     "status": "trimmed",
+     "note": "Q18 sighs that “that kid” always thinks about those things; the English never names Iaune.",
+     "quote": "\"The point of work\"... Such a grand topic can't be easily explained in just a few words.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 '일의 의미'가 몇 마디로 쉽게 설명할 수 없는 거창한 주제라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 '일의 의미'가 몇 마디로 쉽게 설명할 수 없는 거창한 주제라고 말한다."
+      },
+      {
+       "t_raw": "그래도 답을 찾고 싶다면 시간을 내어 더 이야기하자고 제안하고, Iaune이 그런 문제를 늘 생각한다는 데에는 한숨을 쉰다.",
+       "interp": false,
+       "dropped": true,
+       "t": "그래도 답을 찾고 싶다면 시간을 내어 더 이야기하자고 제안하고, 윤이 그런 문제를 늘 생각한다는 데에는 한숨을 쉰다."
+      },
+      {
+       "t_raw": "스트레스는 자기 나름의 방식으로 다룬다고도 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스트레스는 자기 나름의 방식으로 다룬다고도 밝힌다."
+      },
+      {
+       "t_raw": "이 대화에서 그는 **일의 의미**를 바로 답하지 않고 **시간을 내어 더 이야기하자**는 쪽으로 열어 두는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 대화에서 그는 **일의 의미**를 바로 답하지 않고 **시간을 내어 더 이야기하자**는 쪽으로 열어 두는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      }
+     ],
+     "heading": "작중 행적 — 한 개의 인장",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — A Certain Trifle",
+     "status": "accepted",
+     "note": "Coffee, the return visit, the business question, and the guards line all match; the welcome reading stays interpretive.",
+     "quote": "Traveler, glad to see you've come back for another visit. Coffee?",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 다시 찾아온 Traveler에게 커피를 권하며 용건을 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 다시 찾아온 여행자에게 커피를 권하며 용건을 묻는다."
+      },
+      {
+       "t_raw": "경비가 들여보냈으니 내쫓을 이유가 없다고 안심시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경비가 들여보냈으니 내쫓을 이유가 없다고 안심시킨다."
+      },
+      {
+       "t_raw": "이런 맞이는 방문객을 편하게 맞이하려는 응대로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 맞이는 방문객을 편하게 맞이하려는 응대로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Roialte"
+      }
+     ],
+     "heading": "작중 행적 — 한 건의 사소한 일",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — A Certain Trifle",
+     "status": "accepted",
+     "note": "The path, the document lesson, and the keycap line match; treating the keycap moment as a small practical fix is a fair reading.",
+     "quote": "Alas! All is doom and ruin! ...Mr. Roialte, do you have spare keycaps for the typewriter?",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 Iaune가 겪는 일을 누구나 지나야 할 길로 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 윤이 겪는 일을 누구나 지나야 할 길로 본다."
+      },
+      {
+       "t_raw": "대신 문서를 써 주면 Iaune가 교훈을 기억하지 못할 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대신 문서를 써 주면 윤이 교훈을 기억하지 못할 것이라고 말한다."
+      },
+      {
+       "t_raw": "Iaune는 \"Alas! All is doom and ruin!\"을 외친 뒤 Roialte에게 **타자기 여분 키캡**이 있느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윤은 \"아아! 모든 것이 파멸과 폐허다!\"을 외친 뒤 로이알트에게 **타자기 여분 키캡**이 있느냐고 묻는다.",
+       "polish": {
+        "from": "윤은 \"Alas! All is doom and ruin!\"을 외친 뒤 로이알트에게 **타자기 여분 키캡**이 있느냐고 묻는다.",
+        "text": "윤은 \"아아! 모든 것이 파멸과 폐허다!\"을 외친 뒤 로이알트에게 **타자기 여분 키캡**이 있느냐고 묻는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이는 작은 실무 문제를 수습하려는 장면으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 작은 실무 문제를 수습하려는 장면으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Iaune"
+      }
+     ],
+     "heading": "작중 행적 — 한 건의 사소한 일",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — A Certain Trifle",
+     "status": "accepted",
+     "note": "The IOU signature-and-verification steps and the “weight of words” line are both stated; the procedure reading follows from them.",
+     "quote": "And if the balancing act is simply impossible, then I can tip the scales with the \"weight of words.\"",
+     "sentences": [
+      {
+       "t_raw": "Cornelia는 **IOU**를 Roialte에게 가져가 서명을 받고, 이어 Estelle에게 가서 구매 금액을 확인할 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "코넬리아는 **IOU**를 로이알트에게 가져가 서명을 받고, 이어 에스타블레에게 가서 구매 금액을 확인할 것이라고 말한다."
+      },
+      {
+       "t_raw": "Roialte는 균형 잡기가 불가능하면 **weight of words**로 저울을 기울일 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 균형 잡기가 불가능하면 **말의 무게**로 저울을 기울일 수 있다고 말한다.",
+       "polish": {
+        "from": "로이알트는 균형 잡기가 불가능하면 **weight of words**로 저울을 기울일 수 있다고 말한다.",
+        "text": "로이알트는 균형 잡기가 불가능하면 **말의 무게**로 저울을 기울일 수 있다고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "IOU 한 장이 서명과 금액 확인이라는 여러 절차를 거치는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "IOU 한 장이 서명과 금액 확인이라는 여러 절차를 거치는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Cornelia"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Roialte"
+      }
+     ],
+     "heading": "작중 행적 — 한 건의 사소한 일",
+     "latin_left": [
+      "IOU",
+      "IOU"
+     ]
+    },
+    {
+     "section": "작중 행적 — A Certain Notice",
+     "status": "accepted",
+     "note": "Gattineo’s Kamera duty, the missing office, Difor’s staff role, the common-sense line, and both men’s confusion are all in the English.",
+     "quote": "If common sense was common, Mr. Iaune, then the Maison Gestion could simply disband tomorrow.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 Kameras 유출을 막는 책임이 논리적으로 Gattineo에게 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 사진기 유출을 막는 책임이 논리적으로 가테리오에게 있다고 본다."
+      },
+      {
+       "t_raw": "Iaune은 전담 사무소가 없다고 묻고, Roialte가 Difor를 찾으라고 했다며 Difor가 Maison Gestion 직원 업무 전반을 맡는다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윤은 전담 사무소가 없다고 묻고, 로이알트가 뒤포르를 찾으라고 했다며 뒤포르가 행정청 직원 업무 전반을 맡는다고 전한다."
+      },
+      {
+       "t_raw": "Roialte는 상식이 흔한 것이라면 Maison Gestion은 내일 당장 해산해도 될 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 상식이 흔한 것이라면 행정청은 내일 당장 해산해도 될 것이라고 말한다."
+      },
+      {
+       "t_raw": "Difor와 Gattineo는 각각 그 뜻을 이해하지 못하겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "뒤포르와 가테리오는 각각 그 뜻을 이해하지 못하겠다고 말한다."
+      },
+      {
+       "t_raw": "**책임 배분**을 둘러싼 논리와 당사자들의 이해 사이에는 간극이 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**책임 배분**을 둘러싼 논리와 당사자들의 이해 사이에는 간극이 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Difor"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Gattineo"
+      }
+     ],
+     "heading": "작중 행적 — 한 통의 공지",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — A Certain Notice",
+     "status": "accepted",
+     "note": "The weekend signature order, the trifling-matter line, receipts, catching leakers, and both of Iaune’s lines are stated; the clustering reading stays interpretive.",
+     "quote": "I shall leave this to you. Have them sign the document, just like I taught you, and return it to me before the weekend.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 문서에 서명을 받아 주말 전에 돌려오라고 지시한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 문서에 서명을 받아 주말 전에 돌려오라고 지시한다."
+      },
+      {
+       "t_raw": "사소한 일로 화낼 필요가 없다며 진정하라고도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사소한 일로 화낼 필요가 없다며 진정하라고도 한다."
+      },
+      {
+       "t_raw": "아직 비용 영수증을 처리해야 하고 Carsix가 계속 조른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아직 비용 영수증을 처리해야 하고 Carsix가 계속 조른다."
+      },
+      {
+       "t_raw": "유출 단속에 대해서는 더 할 일 없이 전처럼 유출자를 잡으라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유출 단속에 대해서는 더 할 일 없이 전처럼 유출자를 잡으라고 말한다."
+      },
+      {
+       "t_raw": "Iaune은 Yessir, Mr. Roialte라고 응답하고, 돌아가 Roialte를 찾자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윤은 Yessir, Mr. 로이알트라고 응답하고, 돌아가 로이알트를 찾자고 한다."
+      },
+      {
+       "t_raw": "**문서 서명**과 유출 단속, 영수증 처리가 한 사람 주변에서 뒤섞이는 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**문서 서명**과 유출 단속, 영수증 처리가 한 사람 주변에서 뒤섞이는 모습으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      }
+     ],
+     "heading": "작중 행적 — 한 통의 공지",
+     "latin_left": [
+      "Carsix",
+      "Yessir",
+      "Mr"
+     ]
+    },
+    {
+     "section": "업무 태도와 말투",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Work done without error is work well done.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 'Work done without error is work well done.'라며 **실수 없는 일**을 잘한 일로 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 '실수 없이 해낸 일은 잘한 일이다.'라며 **실수 없는 일**을 잘한 일로 본다.",
+       "polish": {
+        "from": "로이알트는 'Work done without error is work well done.'라며 **실수 없는 일**을 잘한 일로 본다.",
+        "text": "로이알트는 '실수 없이 해낸 일은 잘한 일이다.'라며 **실수 없는 일**을 잘한 일로 본다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "평상시에는 'Think carefully...' 하고 'You have to think before you act.'라고 중얼거린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "평상시에는 '신중하게 생각해...' 하고 '행동하기 전에 생각해야 해.'라고 중얼거린다.",
+       "polish": {
+        "from": "평상시에는 'Think carefully...' 하고 'You have to think before you act.'라고 중얼거린다.",
+        "text": "평상시에는 '신중하게 생각해...' 하고 '행동하기 전에 생각해야 해.'라고 중얼거린다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "한 대화에서 일이 순조로운지 묻는 말이 나오고, Roialte는 Autostamper 3000이 가끔 내는 소란 외에는 괜찮다고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 대화에서 일이 순조로운지 묻는 말이 나오고, 로이알트는 Autostamper 3000이 가끔 내는 소란 외에는 괜찮다고 답한다."
+      },
+      {
+       "t_raw": "이렇게 보면 그가 말하는 실수 없는 일은 행동 전에 충분히 생각하는 절차와 맞물려 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 보면 그가 말하는 실수 없는 일은 행동 전에 충분히 생각하는 절차와 맞물려 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Idle Quotes > Daytime",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Idle Quotes > Daytime",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "업무 태도와 말투",
+     "latin_left": [
+      "Autostamper"
+     ]
+    },
+    {
+     "section": "업무 태도와 말투",
+     "status": "trimmed",
+     "note": "Q4 says 'his logical and precise deductions' without naming whose; attributing them to Iaune is not given in the English.",
+     "quote": "Using his logical and precise deductions, we were able to find solutions to many previously intractable problems.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 Iaune의 논리적이고 정확한 추론으로 이전에 풀기 어려웠던 많은 문제의 해결책을 찾았다고 말한다.",
+       "interp": false,
+       "dropped": true,
+       "t": "로이알트는 윤의 논리적이고 정확한 추론으로 이전에 풀기 어려웠던 많은 문제의 해결책을 찾았다고 말한다."
+      },
+      {
+       "t_raw": "그는 상식이 흔한 것이라면 Mr. Iaune, Maison Gestion은 내일 해산해도 된다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 상식이 흔한 것이라면 Mr. 윤, 행정청은 내일 해산해도 된다고 말한다."
+      },
+      {
+       "t_raw": "누구도 그 물을 시험해 그것이 실제로 진실인지 확인하려 하지 않는다면서, Iaune에게 진정하고 자기 말을 들으라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "누구도 그 물을 시험해 그것이 실제로 진실인지 확인하려 하지 않는다면서, 윤에게 진정하고 자기 말을 들으라고 한다."
+      },
+      {
+       "t_raw": "모든 사람이 언젠가 걸어야 할 길이 있다며, 자신이 문서 작성을 도와주면 Iaune가 이 교훈을 기억하지 못할 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모든 사람이 언젠가 걸어야 할 길이 있다며, 자신이 문서 작성을 도와주면 윤이 이 교훈을 기억하지 못할 것이라고 말한다."
+      },
+      {
+       "t_raw": "논리적 추론을 높이 평가하면서도 문서 작성을 도와주면 교훈을 기억하지 못한다고 보는 태도는 업무 능력과 배움의 책임을 구분하는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "논리적 추론을 높이 평가하면서도 문서 작성을 도와주면 교훈을 기억하지 못한다고 보는 태도는 업무 능력과 배움의 책임을 구분하는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      }
+     ],
+     "heading": "업무 태도와 말투",
+     "latin_left": [
+      "Mr"
+     ]
+    },
+    {
+     "section": "업무 태도와 말투",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "You see, even the most energetic little creatures know that a little rest will allow one to run further the next day.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 가장 기운 넘치는 작은 생명들도 하루의 **휴식**이 다음 날 더 멀리 달리는 데 도움이 된다는 것을 안다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 가장 기운 넘치는 작은 생명들도 하루의 **휴식**이 다음 날 더 멀리 달리는 데 도움이 된다는 것을 안다고 말한다."
+      },
+      {
+       "t_raw": "이어지는 대화에서 'Work-life balance, I get it...'라는 말이 나오자 'Well said. It could be a motto.'라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어지는 대화에서 '일과 삶의 균형, 알겠어...'라는 말이 나오자 '좋은 말이야. 좌우명이 될 수도 있겠어.'라고 답한다.",
+       "polish": {
+        "from": "이어지는 대화에서 'Work-life balance, I get it...'라는 말이 나오자 'Well said. It could be a motto.'라고 답한다.",
+        "text": "이어지는 대화에서 '일과 삶의 균형, 알겠어...'라는 말이 나오자 '좋은 말이야. 좌우명이 될 수도 있겠어.'라고 답한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "밤에는 젊은이들이 있어 낮이 활기차고 그에 비해 밤은 더 조용해 보인다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에는 젊은이들이 있어 낮이 활기차고 그에 비해 밤은 더 조용해 보인다고 말한다."
+      },
+      {
+       "t_raw": "Traveler에게도 하루가 꽤 바빴을 것 같다며 Mr. Iaune와 비슷하다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자에게도 하루가 꽤 바빴을 것 같다며 Mr. 윤과 비슷하다고 한다."
+      },
+      {
+       "t_raw": "그러면서 Iaune는 너무 열정적이라 지치며, 젊은이에게 흔한 일이고 조정할 시간이 필요하다고 평한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 윤은 너무 열정적이라 지치며, 젊은이에게 흔한 일이고 조정할 시간이 필요하다고 평한다."
+      },
+      {
+       "t_raw": "이는 휴식을 다음날을 위한 조건으로 보면서 젊은 열정과 그 소진을 조정의 문제로 바라보는 태도로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 휴식을 다음날을 위한 조건으로 보면서 젊은 열정과 그 소진을 조정의 문제로 바라보는 태도로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A24",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "업무 태도와 말투",
+     "latin_left": [
+      "Mr"
+     ]
+    },
+    {
+     "section": "업무 태도와 말투",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "You'll only heap more pressure on yourself by constantly worrying about such issues.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 가끔은 생각하지만 스트레스에 대처하는 자신만의 방식이 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 가끔은 생각하지만 스트레스에 대처하는 자신만의 방식이 있다고 말한다."
+      },
+      {
+       "t_raw": "그런 문제를 끊임없이 걱정하면 스스로에게 더 큰 압박을 쌓을 뿐이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런 문제를 끊임없이 걱정하면 스스로에게 더 큰 압박을 쌓을 뿐이라고 한다."
+      },
+      {
+       "t_raw": "그러면서도 그 아이가 그런 종류의 일을 늘 생각한다며 한숨을 쉰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서도 그 아이가 그런 종류의 일을 늘 생각한다며 한숨을 쉰다."
+      },
+      {
+       "t_raw": "스트레스를 오래 붙잡지 않으려는 태도와 걱정이 압박을 키운다는 경고가 함께 나타나, 그는 문제를 곱씹기보다 자기 방식으로 처리하는 쪽을 택하는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스트레스를 오래 붙잡지 않으려는 태도와 걱정이 압박을 키운다는 경고가 함께 나타나, 그는 문제를 곱씹기보다 자기 방식으로 처리하는 쪽을 택하는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      }
+     ],
+     "heading": "업무 태도와 말투",
+     "latin_left": []
+    },
+    {
+     "section": "업무 태도와 말투",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "And if the balancing act is simply impossible, then I can tip the scales with the \"weight of words.\"",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 '일의 의미' 같은 큰 주제는 몇 마디로 쉽게 설명할 수 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 '일의 의미' 같은 큰 주제는 몇 마디로 쉽게 설명할 수 없다고 말한다."
+      },
+      {
+       "t_raw": "정말 답을 찾고 싶다면 시간을 내어 더 이야기하자고 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정말 답을 찾고 싶다면 시간을 내어 더 이야기하자고 제안한다."
+      },
+      {
+       "t_raw": "균형 잡기가 도저히 불가능하면 **'weight of words'**로 저울을 기울일 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "균형 잡기가 도저히 불가능하면 **'말의 무게'**로 저울을 기울일 수 있다고 말한다.",
+       "polish": {
+        "from": "균형 잡기가 도저히 불가능하면 **'weight of words'**로 저울을 기울일 수 있다고 말한다.",
+        "text": "균형 잡기가 도저히 불가능하면 **'말의 무게'**로 저울을 기울일 수 있다고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "큰 주제를 쉽게 단정하지 않으면서도 필요할 때 말의 무게를 활용하겠다는 태도가 함께 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "큰 주제를 쉽게 단정하지 않으면서도 필요할 때 말의 무게를 활용하겠다는 태도가 함께 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Roialte"
+      }
+     ],
+     "heading": "업무 태도와 말투",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Mr. Roialte and Mr. Semaine stayed with me half the night. With their guidance, I finally managed to finish the proposal.",
+     "sentences": [
+      {
+       "t_raw": "밤에 Roialte는 Traveler에게 하루가 꽤 바빴던 것 같다고 묻고, 그 모습이 Iaune과 같다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에 로이알트는 여행자에게 하루가 꽤 바빴던 것 같다고 묻고, 그 모습이 윤과 같다고 말한다."
+      },
+      {
+       "t_raw": "다만 Traveler가 Iaune보다 훨씬 행복해 보인다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 여행자가 윤보다 훨씬 행복해 보인다고 덧붙인다."
+      },
+      {
+       "t_raw": "Roialte는 Iaune이 너무 열정적이라 지치며, 젊은 이들에게 흔한 일이라 적응할 시간이 필요하다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 윤이 너무 열정적이라 지치며, 젊은 이들에게 흔한 일이라 적응할 시간이 필요하다고 본다."
+      },
+      {
+       "t_raw": "Semaine과 자신이 Iaune을 지켜보겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "세멘과 자신이 윤을 지켜보겠다고 말한다."
+      },
+      {
+       "t_raw": "Iaune은 Roialte와 Semaine이 밤의 절반을 함께하며 안내해 제안서를 끝낼 수 있었다고 전하고, Roialte의 말에는 \"Yessir, Mr. Roialte\"라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윤은 로이알트와 세멘이 밤의 절반을 함께하며 안내해 제안서를 끝낼 수 있었다고 전하고, 로이알트의 말에는 \"Yessir, Mr. 로이알트\"라고 답한다."
+      },
+      {
+       "t_raw": "이런 대화는 Roialte가 Iaune을 **너무 열정적인 젊은이**로 보면서도 Semaine과 함께 지켜보는 관계로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 대화는 로이알트가 윤을 **너무 열정적인 젊은이**로 보면서도 세멘과 함께 지켜보는 관계로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Stamp",
+       "quest_ko": "한 개의 인장",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Yessir",
+      "Mr"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by A16, Q19, Q21, Q25 and Q26. The interpretation is reasonable.",
+     "quote": "Then I will take the IOU to Mr. Roialte for him to sign, and then take it to Miss Estelle to verify the purchase amount.",
+     "sentences": [
+      {
+       "t_raw": "Cornelia가 다과를 가져왔다며 Roialte는 Traveler에게 함께 먹어 보라고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "코넬리아가 다과를 가져왔다며 로이알트는 여행자에게 함께 먹어 보라고 권한다."
+      },
+      {
+       "t_raw": "Cornelia는 IOU를 Roialte에게 서명받으러 가져가겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "코넬리아는 IOU를 로이알트에게 서명받으러 가져가겠다고 말한다."
+      },
+      {
+       "t_raw": "Iaune은 직원 관련 일은 Difor가 맡고 있다며 Roialte가 Difor를 찾으라고 했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윤은 직원 관련 일은 뒤포르가 맡고 있다며 로이알트가 뒤포르를 찾으라고 했다고 전한다."
+      },
+      {
+       "t_raw": "Difor는 Roialte의 생각의 흐름을 잘 따르지 못하겠다고 하고, Gattineo도 Roialte의 뜻을 이해하지 못하겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "뒤포르는 로이알트의 생각의 흐름을 잘 따르지 못하겠다고 하고, 가테리오도 로이알트의 뜻을 이해하지 못하겠다고 말한다."
+      },
+      {
+       "t_raw": "이는 Roialte가 업무를 지시하고 서명받는 위치에 있으면서도 Difor와 Gattineo에게는 그의 설명이 곧바로 통하지 않는 사이로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 로이알트가 업무를 지시하고 서명받는 위치에 있으면서도 뒤포르와 가테리오에게는 그의 설명이 곧바로 통하지 않는 사이로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Cornelia"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Difor"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Gattineo"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "IOU"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Q14 and A12 support the facts. The interpretation is modest.",
+     "quote": "I still have to handle the expense receipts. Carsix keeps hassling me about it.",
+     "sentences": [
+      {
+       "t_raw": "Roialte는 경비 영수증을 아직 처리해야 한다고 말하며 Carsix가 그것 때문에 계속 자신을 귀찮게 한다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 경비 영수증을 아직 처리해야 한다고 말하며 Carsix가 그것 때문에 계속 자신을 귀찮게 한다고 한다."
+      },
+      {
+       "t_raw": "Thales가 없을 때 더 조용하다고 말하며, 카페 앞에 묶인 개를 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "세일러가 없을 때 더 조용하다고 말하며, 카페 앞에 묶인 개를 언급한다."
+      },
+      {
+       "t_raw": "이 두 발언은 Roialte가 주변 사람들의 요구와 소란을 실무 속에서 체감하고 있음을 보여 주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 두 발언은 로이알트가 주변 사람들의 요구와 소란을 실무 속에서 체감하고 있음을 보여 주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Carsix"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "A11 supports the daytime remark and the Autostamper 3000 racket exception. The interpretation is fine.",
+     "quote": "Thanks to you, other than the occasional racket the Autostamper 3000 makes, everything else is going quite alright.",
+     "sentences": [
+      {
+       "t_raw": "낮에 Roialte는 업무가 대체로 순조롭다고 말하면서 **Autostamper 3000**이 가끔 내는 소란을 예외로 든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에 로이알트는 업무가 대체로 순조롭다고 말하면서 **Autostamper 3000**이 가끔 내는 소란을 예외로 든다."
+      },
+      {
+       "t_raw": "업무가 대체로 순조롭다는 말과 가끔 소란을 낸다는 예외가 함께 놓여, Autostamper 3000은 안정된 실무에 잡음을 더하는 존재로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "업무가 대체로 순조롭다는 말과 가끔 소란을 낸다는 예외가 함께 놓여, Autostamper 3000은 안정된 실무에 잡음을 더하는 존재로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Autostamper",
+      "Autostamper"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Q5, Q22, Q25, Q26 and Q17 support the facts. The interpretation follows from them.",
+     "quote": "The responsibility of preventing people from leaking secrets using Kameras should logically fall to Gattineo.",
+     "sentences": [
+      {
+       "t_raw": "**Kameras 유출** 단속은 Roialte가 Gattineo에게 논리적으로 맡겨야 한다고 말하는 데서 실마리가 시작된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**사진기 유출** 단속은 로이알트가 가테리오에게 논리적으로 맡겨야 한다고 말하는 데서 실마리가 시작된다."
+      },
+      {
+       "t_raw": "그러나 Iaune은 Kameras를 전담하는 사무소가 없다고 되묻고, Difor와 Gattineo는 Roialte의 설명을 이해하지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 윤은 사진기를 전담하는 사무소가 없다고 되묻고, 뒤포르와 가테리오는 로이알트의 설명을 이해하지 못한다."
+      },
+      {
+       "t_raw": "Roialte는 계속 유출자를 잡으라고 지시한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로이알트는 계속 유출자를 잡으라고 지시한다."
+      },
+      {
+       "t_raw": "이 지시와 책임을 둘러싼 혼선을 함께 보면, 책임 소재와 현장의 이해 사이에는 빈틈이 남는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 지시와 책임을 둘러싼 혼선을 함께 보면, 책임 소재와 현장의 이해 사이에는 빈틈이 남는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Difor"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Gattineo"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Q10 and Q11 support the facts. The interpretation is reasonable.",
+     "quote": "And if the balancing act is simply impossible, then I can tip the scales with the \"weight of words.\"",
+     "sentences": [
+      {
+       "t_raw": "**\"weight of words\"**는 Roialte가 균형 잡기가 불가능할 때 저울을 기울이는 수단으로 꺼낸 표현이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**\"말의 무게\"**는 로이알트가 균형 잡기가 불가능할 때 저울을 기울이는 수단으로 꺼낸 표현이다.",
+       "polish": {
+        "from": "**\"weight of words\"**는 로이알트가 균형 잡기가 불가능할 때 저울을 기울이는 수단으로 꺼낸 표현이다.",
+        "text": "**\"말의 무게\"**는 로이알트가 균형 잡기가 불가능할 때 저울을 기울이는 수단으로 꺼낸 표현이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그는 갈등이 생기면 사소한 일로 흥분할 필요가 없다고 진정시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 갈등이 생기면 사소한 일로 흥분할 필요가 없다고 진정시킨다."
+      },
+      {
+       "t_raw": "이 장면과 \"weight of words\"를 함께 보면, 말의 무게로 분위기를 조정하려는 태도로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 장면과 \"말의 무게\"를 함께 보면, 말의 무게로 분위기를 조정하려는 태도로 읽힌다.",
+       "polish": {
+        "from": "이 장면과 \"weight of words\"를 함께 보면, 말의 무게로 분위기를 조정하려는 태도로 읽힌다.",
+        "text": "이 장면과 \"말의 무게\"를 함께 보면, 말의 무게로 분위기를 조정하려는 태도로 읽힌다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Certain Trifle",
+       "quest_ko": "한 건의 사소한 일",
+       "version": "4.0",
+       "speaker": "Roialte"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Roialte"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "A3 and A4 both read '(To be added.)'. The interpretation follows from that.",
+     "quote": "(To be added.)",
+     "sentences": [
+      {
+       "t_raw": "프로필 항목과 외형 항목에는 \"(To be added.)\"라는 표시만 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프로필 항목과 외형 항목에는 \"(추가 예정.)\"라는 표시만 남아 있다.",
+       "polish": {
+        "from": "프로필 항목과 외형 항목에는 \"(To be added.)\"라는 표시만 남아 있다.",
+        "text": "프로필 항목과 외형 항목에는 \"(추가 예정.)\"라는 표시만 남아 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "두 항목이 모두 비어 있으니, 그의 복장이나 인상에 대한 서술은 아직 채워지지 않은 자리로 남아 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 항목이 모두 비어 있으니, 그의 복장이나 인상에 대한 서술은 아직 채워지지 않은 자리로 남아 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Profile > Appearance",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All supported. The refreshments line is followed by (Obtain), and A2 gives three Conch Madeleines. The link between them is hedged as 'appears'.",
+     "quote": "Cornelia just brought some refreshments, please be my guest and have some.",
+     "sentences": [
+      {
+       "t_raw": "낮에 그와 이야기하다 보면 Cornelia가 가져온 다과를 권하는 대목이 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에 그와 이야기하다 보면 코넬리아가 가져온 다과를 권하는 대목이 나온다."
+      },
+      {
+       "t_raw": "이 권유를 받아들이면 아이템을 얻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 권유를 받아들이면 아이템을 얻는다."
+      },
+      {
+       "t_raw": "특정 대화 분기를 처음 따라갈 때 받는 것은 Conch Madeleines 세 개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정 대화 분기를 처음 따라갈 때 받는 것은 Conch Madeleines 세 개다."
+      },
+      {
+       "t_raw": "그가 내미는 다과가 곧 Conch Madeleines인 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 내미는 다과가 곧 Conch Madeleines인 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Conch Madeleines",
+      "Conch Madeleines"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All quotes match the daytime and nighttime farewells, the greeting and the idle quotes. The contrast in the last sentence is a fair interpretation.",
+     "quote": "See you, then. Tomorrow will be another lovely day.",
+     "sentences": [
+      {
+       "t_raw": "낮의 작별은 짧게 주고받는다. \"See you.\"라고 하고 \"Take care.\"라고 답하는 두 마디면 끝난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮의 작별은 짧게 주고받는다. \"또 봐.\"라고 하고 \"잘 지내.\"라고 답하는 두 마디면 끝난다.",
+       "polish": {
+        "from": "낮의 작별은 짧게 주고받는다. \"See you.\"라고 하고 \"Take care.\"라고 답하는 두 마디면 끝난다.",
+        "text": "낮의 작별은 짧게 주고받는다. \"또 봐.\"라고 하고 \"잘 지내.\"라고 답하는 두 마디면 끝난다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "밤에는 \"Good evening.\"으로 먼저 인사를 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에는 \"Good evening.\"으로 먼저 인사를 건넨다."
+      },
+      {
+       "t_raw": "헤어질 때는 \"See you, then. Tomorrow will be another lovely day.\"라며 다음 날을 한 번 더 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤어질 때는 \"그럼 또 봐. 내일도 또 멋진 날이 될 거야.\"라며 다음 날을 한 번 더 언급한다.",
+       "polish": {
+        "from": "헤어질 때는 \"See you, then. Tomorrow will be another lovely day.\"라며 다음 날을 한 번 더 언급한다.",
+        "text": "헤어질 때는 \"그럼 또 봐. 내일도 또 멋진 날이 될 거야.\"라며 다음 날을 한 번 더 언급한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "밤에 곁에 서 있으면 \"A busy day...\"나 \"Another busy day's coming to the close.\" 같은 혼잣말도 들을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에 곁에 서 있으면 \"바쁜 하루...\"나 \"또 바쁜 하루가 끝나가고 있어.\" 같은 혼잣말도 들을 수 있다.",
+       "polish": {
+        "from": "밤에 곁에 서 있으면 \"A busy day...\"나 \"Another busy day의 coming to the close.\" 같은 혼잣말도 들을 수 있다.",
+        "text": "밤에 곁에 서 있으면 \"바쁜 하루...\"나 \"또 바쁜 하루가 끝나가고 있어.\" 같은 혼잣말도 들을 수 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "낮의 작별이 안부 한 마디로 끝나는 데 비해, 밤의 작별은 내일을 언급하며 끝난다는 차이가 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "낮의 작별이 안부 한 마디로 끝나는 데 비해, 밤의 작별은 내일을 언급하며 끝난다는 차이가 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Idle Quotes > Nighttime",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Idle Quotes > Nighttime",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Daytime",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Roialte",
+       "revision": 1347559,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A27",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Good"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Traveler, 또 찾아와 줘서 반갑네. 커피?",
+     "en": "Traveler, glad to see you've come back for another visit. Coffee?",
+     "speaker": "Roialte",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Trifle",
+      "quest_ko": "한 건의 사소한 일",
+      "version": "4.0",
+      "speaker": "Roialte"
+     },
+     "t": "여행자, 또 찾아와 줘서 반갑네. 커피?",
+     "speaker_ko": "로이알트"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "이 일은 자네에게 맡기겠네. 내가 가르친 대로 그들이 문서에 서명하게 하고, 주말 전에 내게 돌려주게.",
+     "en": "I shall leave this to you. Have them sign the document, just like I taught you, and return it to me before the weekend.",
+     "speaker": "Roialte",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Notice",
+      "quest_ko": "한 통의 공지",
+      "version": "4.0",
+      "speaker": "Roialte"
+     },
+     "t": "이 일은 자네에게 맡기겠네. 내가 가르친 대로 그들이 문서에 서명하게 하고, 주말 전에 내게 돌려주게.",
+     "speaker_ko": "로이알트"
+    },
+    {
+     "section": "작중 행적 — A Certain Stamp",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "\"일의 의미\"... 그런 거창한 주제는 몇 마디로 쉽게 설명할 수 없어.",
+     "en": "\"The point of work\"... Such a grand topic can't be easily explained in just a few words.",
+     "speaker": "Roialte",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Stamp",
+      "quest_ko": "한 개의 인장",
+      "version": "4.0",
+      "speaker": "Roialte"
+     },
+     "t": "\"일의 의미\"... 그런 거창한 주제는 몇 마디로 쉽게 설명할 수 없어.",
+     "speaker_ko": "로이알트"
+    },
+    {
+     "section": "작중 행적 — A Certain Trifle",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아아! 모든 것이 파멸과 몰락이다! ...Roialte 씨, 타자기 여분 키캡 있으신가요?",
+     "en": "Alas! All is doom and ruin! ...Mr. Roialte, do you have spare keycaps for the typewriter?",
+     "speaker": "Iaune",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Trifle",
+      "quest_ko": "한 건의 사소한 일",
+      "version": "4.0",
+      "speaker": "Iaune"
+     },
+     "t": "아아! 모든 것이 파멸과 몰락이다! ...로이알트 씨, 타자기 여분 키캡 있으신가요?",
+     "speaker_ko": "윤"
+    },
+    {
+     "section": "작중 행적 — A Certain Notice",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "여러분, 여러분! 진정하십시오! 그런 사소한 일로 화낼 필요는 없습니다!",
+     "en": "Gentlemen, gentlemen! Calm down! There's no need to be upset over such a trifling matter!",
+     "speaker": "Roialte",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Notice",
+      "quest_ko": "한 통의 공지",
+      "version": "4.0",
+      "speaker": "Roialte"
+     },
+     "t": "여러분, 여러분! 진정하십시오! 그런 사소한 일로 화낼 필요는 없습니다!",
+     "speaker_ko": "로이알트"
+    },
+    {
+     "section": "업무 태도와 말투",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그리고 만약 균형 잡기가 도저히 불가능하다면, 나는 \"weight of words\"로 저울을 기울일 수 있다.",
+     "en": "And if the balancing act is simply impossible, then I can tip the scales with the \"weight of words.\"",
+     "speaker": "Roialte",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Trifle",
+      "quest_ko": "한 건의 사소한 일",
+      "version": "4.0",
+      "speaker": "Roialte"
+     },
+     "t": "그리고 만약 균형 잡기가 도저히 불가능하다면, 나는 \"weight of words\"로 저울을 기울일 수 있다.",
+     "speaker_ko": "로이알트"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Mr. Roialte and Mr. Semaine이 밤의 절반 동안 저와 함께 있어 주셨습니다. 그분들의 안내로 저는 마침내 제안서를 끝낼 수 있었습니다.",
+     "en": "Mr. Roialte and Mr. Semaine stayed with me half the night. With their guidance, I finally managed to finish the proposal.",
+     "speaker": "Iaune",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Stamp",
+      "quest_ko": "한 개의 인장",
+      "version": "4.0",
+      "speaker": "Iaune"
+     },
+     "t": "Mr. Roialte and Mr. 세멘이 밤의 절반 동안 저와 함께 있어 주셨습니다. 그분들의 안내로 저는 마침내 제안서를 끝낼 수 있었습니다.",
+     "speaker_ko": "윤"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation; 'simply impossible' rendered as '정말 불가능'.",
+     "t_raw": "그리고 균형 잡기가 정말 불가능하다면, 나는 \"weight of words\"로 저울을 기울일 수 있다.",
+     "en": "And if the balancing act is simply impossible, then I can tip the scales with the \"weight of words.\"",
+     "speaker": "Roialte",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Trifle",
+      "quest_ko": "한 건의 사소한 일",
+      "version": "4.0",
+      "speaker": "Roialte"
+     },
+     "t": "그리고 균형 잡기가 정말 불가능하다면, 나는 \"weight of words\"로 저울을 기울일 수 있다.",
+     "speaker_ko": "로이알트"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Traveler, 또 찾아와 줘서 반갑군. Coffee?",
+     "en": "Traveler, glad to see you've come back for another visit. Coffee?",
+     "speaker": "Roialte",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Trifle",
+      "quest_ko": "한 건의 사소한 일",
+      "version": "4.0",
+      "speaker": "Roialte"
+     },
+     "t": "여행자, 또 찾아와 줘서 반갑군. 커피?",
+     "speaker_ko": "로이알트"
+    }
+   ]
+  }
+ ]
+}

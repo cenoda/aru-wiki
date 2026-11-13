@@ -1,0 +1,527 @@
+{
+ "node": "Genta",
+ "articles": [
+  {
+   "node": "Genta",
+   "from_version": "2.3",
+   "cutoff": "2022-01-04T00:00:00Z",
+   "input": [
+    {
+     "page": "Genta",
+     "url": "https://genshin-impact.fandom.com/wiki/Genta",
+     "revision": 525073
+    }
+   ],
+   "input_counts": {
+    "mentions": 3,
+    "lines": 3,
+    "web": 0
+   },
+   "input_chars": 306,
+   "input_cut": false,
+   "input_hash": "dfce3c84199b",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, A3, M1 and Q1.",
+     "quote": "Granny Oni sent us. We're here to lend a hand!",
+     "sentences": [
+      {
+       "t_raw": "Genta는 Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul에 등장하는 퀘스트 전용 NPC이며 Arataki Gang의 현재 구성원이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겐타는 하늘 소의 장, Act I: 적금색의 영혼에 등장하는 퀘스트 전용 NPC이며 아라타키파의 현재 구성원이다."
+      },
+      {
+       "t_raw": "Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"에서 Akira, Mamoru와 함께 처음 모습을 보였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"에서 아키라, 마모루와 함께 처음 모습을 보였다."
+      },
+      {
+       "t_raw": "The Oni's Pride에서는 Granny Oni가 보내와 돕겠다고 나선다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오니의 긍지에서는 오니 할멈이 보내와 돕겠다고 나선다."
+      },
+      {
+       "t_raw": "Arataki Gang의 현재 구성원이면서 Arataki Itto가 성격 문제를 언급하는 인물이라는 점에서, 조직 내 위치와 개인적 평가가 함께 드러나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아라타키파의 현재 구성원이면서 아라타키 이토가 성격 문제를 언급하는 인물이라는 점에서, 조직 내 위치와 개인적 평가가 함께 드러나는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": "Profile > Personality",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arataki Gang",
+       "revision": 522671,
+       "section": "Members > Current",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Genta"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Act",
+      "NPC",
+      "That"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A1 and M1. The interpretation is reasonable.",
+     "quote": "Genta is a quest-exclusive NPC that appears in the Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul.",
+     "sentences": [
+      {
+       "t_raw": "Genta는 **Arataki Gang의 현재 구성원**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겐타는 **아라타키파의 현재 구성원**이다."
+      },
+      {
+       "t_raw": "작중에서는 Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul에 등장하는 퀘스트 전용 NPC로 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작중에서는 하늘 소의 장, Act I: 적금색의 영혼에 등장하는 퀘스트 전용 NPC로 제시된다."
+      },
+      {
+       "t_raw": "Arataki Gang 소속이라는 설정과 해당 퀘스트 전용 NPC라는 위치가 함께 제시되어, Genta의 소속과 등장 범위가 한데 규정된 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아라타키파 소속이라는 설정과 해당 퀘스트 전용 NPC라는 위치가 함께 제시되어, 겐타의 소속과 등장 범위가 한데 규정된 인물로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arataki Gang",
+       "revision": 522671,
+       "section": "Members > Current",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Act",
+      "NPC",
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "A3 says Itto states Genta has a serious temper problem. Rendering it as a 성격 problem is a fair paraphrase.",
+     "quote": "According to Arataki Itto, he has a serious temper problem.",
+     "sentences": [
+      {
+       "t_raw": "성격에 관해서는 Arataki Itto의 평가가 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "성격에 관해서는 아라타키 이토의 평가가 전해진다."
+      },
+      {
+       "t_raw": "Arataki Itto에 따르면 Genta는 **심각한 성격 문제**를 지니고 있다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라타키 이토에 따르면 겐타는 **심각한 성격 문제**를 지니고 있다고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": "Profile > Personality",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Character Teaser",
+     "status": "accepted",
+     "note": "A2, M2 and M3 all support the claims. The interpretation follows from them.",
+     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Akira and Mamoru.",
+     "sentences": [
+      {
+       "t_raw": "Genta는 Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"에서 Arataki Gang의 동료 **Akira, Mamoru와 함께** 처음 모습을 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겐타는 캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"에서 아라타키파의 동료 **아키라, 마모루와 함께** 처음 모습을 보인다."
+      },
+      {
+       "t_raw": "Mamoru의 기록은 그가 같은 Character Teaser에서 Akira, Genta와 함께 첫 등장했다고 전하고, Akira의 기록도 Akira가 Genta, Mamoru와 함께 같은 Character Teaser에서 처음 등장했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마모루의 기록은 그가 같은 캐릭터 티저에서 아키라, 겐타와 함께 첫 등장했다고 전하고, 아키라의 기록도 아키라가 겐타, 마모루와 함께 같은 캐릭터 티저에서 처음 등장했다고 말한다."
+      },
+      {
+       "t_raw": "세 사람의 첫 등장이 서로의 기록에서 교차로 확인되므로, 이 Character Teaser는 세 동료가 **한 묶음으로** 소개되는 공통의 출발점인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세 사람의 첫 등장이 서로의 기록에서 교차로 확인되므로, 이 캐릭터 티저는 세 동료가 **한 묶음으로** 소개되는 공통의 출발점인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 캐릭터 티저",
+     "latin_left": [
+      "That"
+     ]
+    },
+    {
+     "section": "작중 행적 — The Oni's Pride",
+     "status": "accepted",
+     "note": "Q1 supports the facts. The interpretation is modest and follows from the line.",
+     "quote": "Granny Oni sent us. We're here to lend a hand!",
+     "sentences": [
+      {
+       "t_raw": "The Oni's Pride에서 Genta는 **Granny Oni가 보냈다**고 전하며, 자신들은 돕기 위해 왔다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오니의 긍지에서 겐타는 **오니 할멈이 보냈다**고 전하며, 자신들은 돕기 위해 왔다고 말한다."
+      },
+      {
+       "t_raw": "Granny Oni가 보냈다는 말과 돕기 위해 왔다는 말이 이어지면서, Genta가 그 보냄을 받고 도우러 온 인물임이 드러난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오니 할멈이 보냈다는 말과 돕기 위해 왔다는 말이 이어지면서, 겐타가 그 보냄을 받고 도우러 온 인물임이 드러난다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Genta"
+      }
+     ],
+     "heading": "작중 행적 — 오니의 긍지",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Oni's Pride",
+     "status": "accepted",
+     "note": "Q2 and Q3 support the facts. The urgency reading is hedged as an interpretation.",
+     "quote": "Run for it, Boss!",
+     "sentences": [
+      {
+       "t_raw": "Genta는 Boss에게 **할 일을 하라**고 외치고, 도망치라고도 외친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겐타는 Boss에게 **할 일을 하라**고 외치고, 도망치라고도 외친다."
+      },
+      {
+       "t_raw": "한쪽에서는 Boss가 해야 할 일을 밀어붙이고 다른 쪽에서는 피하라고 소리치는 셈이라, Genta의 외침에는 상황을 타개하려는 다급함이 묻어나는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한쪽에서는 Boss가 해야 할 일을 밀어붙이고 다른 쪽에서는 피하라고 소리치는 셈이라, 겐타의 외침에는 상황을 타개하려는 다급함이 묻어나는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Genta"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Genta"
+      }
+     ],
+     "heading": "작중 행적 — 오니의 긍지",
+     "latin_left": [
+      "Boss",
+      "Boss"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported: M1 lists Genta as a current member, A2 gives the first appearance.",
+     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Akira and Mamoru.",
+     "sentences": [
+      {
+       "t_raw": "Genta는 Arataki Gang의 현재 구성원이며, Akira, Mamoru와 함께 Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"에서 처음 모습을 보인 **Arataki Gang 동료**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겐타는 아라타키파의 현재 구성원이며, 아키라, 마모루와 함께 캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"에서 처음 모습을 보인 **아라타키파 동료**다."
+      },
+      {
+       "t_raw": "Akira와 Mamoru 역시 같은 Character Teaser에서 Genta와 함께 Arataki Gang 동료로 첫 등장한 것으로 서술된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아키라와 마모루 역시 같은 캐릭터 티저에서 겐타와 함께 아라타키파 동료로 첫 등장한 것으로 서술된다."
+      },
+      {
+       "t_raw": "세 사람이 같은 장면에서 함께 소개된 점은 Genta가 Akira, Mamoru와 한 묶음의 Arataki Gang 동료로 자리 잡은 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세 사람이 같은 장면에서 함께 소개된 점은 겐타가 아키라, 마모루와 한 묶음의 아라타키파 동료로 자리 잡은 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arataki Gang",
+       "revision": 522671,
+       "section": "Members > Current",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "That"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported. 'Temper problem' is rendered loosely as 'personality problem', but it is acceptable as a rewording and the interpretation is hedged.",
+     "quote": "Granny Oni sent us. We're here to lend a hand!",
+     "sentences": [
+      {
+       "t_raw": "The Oni's Pride에서 Genta는 Granny Oni가 보냈다며 도우러 왔다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오니의 긍지에서 겐타는 오니 할멈이 보냈다며 도우러 왔다고 말한다."
+      },
+      {
+       "t_raw": "Arataki Itto는 Genta에게 **심각한 성격 문제**가 있다고 평가한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라타키 이토는 겐타에게 **심각한 성격 문제**가 있다고 평가한다."
+      },
+      {
+       "t_raw": "Granny Oni의 부탁으로 돕겠다고 나선 점과 Itto가 말한 성격 문제를 함께 보면, Genta는 동료를 돕는 일에는 나서지만 성격 면에서는 Itto의 지적을 받는 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오니 할멈의 부탁으로 돕겠다고 나선 점과 이토가 말한 성격 문제를 함께 보면, 겐타는 동료를 돕는 일에는 나서지만 성격 면에서는 이토의 지적을 받는 인물로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": "Profile > Personality",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Genta"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "M2 and M3 back the claims, and the interpretations follow from them.",
+     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Akira and Mamoru.",
+     "sentences": [
+      {
+       "t_raw": "**Akira 문서와 Mamoru 문서**에서도 각각 Akira와 Mamoru가 **Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"**에서 Genta와 함께 Arataki Gang 동료로 처음 등장했다고 서술한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**아키라 문서와 마모루 문서**에서도 각각 아키라와 마모루가 **캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"**에서 겐타와 함께 아라타키파 동료로 처음 등장했다고 서술한다."
+      },
+      {
+       "t_raw": "Genta의 첫 등장을 다룬 서술과 Akira, Mamoru의 첫 등장을 다룬 서술이 같은 Character Teaser를 가리키므로, 세 사람의 첫 등장은 **한 teaser에서 함께** 제시된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "겐타의 첫 등장을 다룬 서술과 아키라, 마모루의 첫 등장을 다룬 서술이 같은 캐릭터 티저를 가리키므로, 세 사람의 첫 등장은 **한 티저에서 함께** 제시된 셈이다.",
+       "polish": {
+        "from": "겐타의 첫 등장을 다룬 서술과 아키라, 마모루의 첫 등장을 다룬 서술이 같은 캐릭터 티저를 가리키므로, 세 사람의 첫 등장은 **한 teaser에서 함께** 제시된 셈이다.",
+        "text": "겐타의 첫 등장을 다룬 서술과 아키라, 마모루의 첫 등장을 다룬 서술이 같은 캐릭터 티저를 가리키므로, 세 사람의 첫 등장은 **한 티저에서 함께** 제시된 셈이다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "따라서 Akira와 Mamoru 문서를 보면 Genta가 Arataki Gang 동료로 처음 모습을 보인 맥락을 함께 확인할 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 아키라와 마모루 문서를 보면 겐타가 아라타키파 동료로 처음 모습을 보인 맥락을 함께 확인할 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "That"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적 — The Oni's Pride",
+     "status": "accepted",
+     "note": "Faithful translation of 'Run for it, Boss!'.",
+     "t_raw": "Boss, 도망쳐!",
+     "en": "Run for it, Boss!",
+     "speaker": "Genta",
+     "source": {
+      "kind": "quest",
+      "quest": "The Oni's Pride",
+      "quest_ko": "오니의 긍지",
+      "version": "2.3",
+      "speaker": "Genta"
+     },
+     "t": "Boss, 도망쳐!",
+     "speaker_ko": "겐타"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation of the Q1 line.",
+     "t_raw": "Granny Oni가 우리를 보냈어. 우리가 도우러 왔어!",
+     "en": "Granny Oni sent us. We're here to lend a hand!",
+     "speaker": "Genta",
+     "source": {
+      "kind": "quest",
+      "quest": "The Oni's Pride",
+      "quest_ko": "오니의 긍지",
+      "version": "2.3",
+      "speaker": "Genta"
+     },
+     "t": "오니 할멈이 우리를 보냈어. 우리가 도우러 왔어!",
+     "speaker_ko": "겐타"
+    }
+   ]
+  }
+ ]
+}

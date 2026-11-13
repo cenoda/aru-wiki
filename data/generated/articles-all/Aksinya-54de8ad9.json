@@ -20,35 +20,36 @@
    "input_chars": 5123,
    "input_cut": false,
    "input_hash": "576f55074498",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "The English says she led Hvergelmir before the Cataclysm, which was 500 years ago. The Korean says it was 500 years before the Cataclysm, which is wrong.",
      "quote": "Aksinya is a survivor of Hyperborea who covertly served as the leader of the Hvergelmir research institute in Snezhnaya prior to the Cataclysm 500 years ago.",
      "sentences": [
       {
-       "t_raw": "Aksinya는 Hyperborea의 생존자로, **Snezhnaya의 Hvergelmir 연구소**를 이끌었으며 Belyi Tsar의 양녀 겸 측근이었다.",
+       "t_raw": "Aksinya는 Hyperborea의 생존자로, 500년 전 일어난 Cataclysm 이전에 Snezhnaya의 Hvergelmir 연구소를 이끌었던 인물이다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 휘페르보레아의 생존자로, **스네즈나야의 근원 연구소 연구소**를 이끌었으며 하얀 차르의 양녀 겸 측근이었다."
+       "repaired": true,
+       "t": "악시냐는 휘페르보레아의 생존자로, 500년 전 일어난 대재앙 이전에 스네즈나야의 근원 연구소 연구소를 이끌었던 인물이다."
       },
       {
-       "t_raw": "그는 Belyi Tsar의 **Court Jester**라는 공적 직함으로 Pale Star Court 안의 실제 영향력을 가렸다.",
+       "t_raw": "Belyi Tsar의 양녀이자 측근이었고, 공식적으로는 Court Jester였으나 Pale Star Court 안에서 실제 영향력을 행사했다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 하얀 차르의 **궁정 광대**라는 공적 직함으로 창백한 별 왕정 안의 실제 영향력을 가렸다."
+       "t": "하얀 차르의 양녀이자 측근이었고, 공식적으로는 궁정 광대였으나 창백한 별 왕정 안에서 실제 영향력을 행사했다."
       },
       {
-       "t_raw": "Belyi Tsar 사후에는 **Primordial Human** 창조라는 그의 목표를 이어갔지만, Traveler와의 대면 끝에 계획이 좌절되었고 지금은 Shadow Realm에 갇혀 있다.",
+       "t_raw": "Tsar 사후에는 **Primordial Human**을 만들려는 그의 목표를 이어 갔고, Traveler와의 대립 끝에 계획이 좌절되어 **Shadow Realm**에 갇혔다.",
        "interp": false,
        "dropped": false,
-       "t": "하얀 차르 사후에는 **「원초의 인간」** 창조라는 그의 목표를 이어갔지만, 여행자와의 대면 끝에 계획이 좌절되었고 지금은 그림자 영역에 갇혀 있다."
+       "t": "차르 사후에는 **「원초의 인간」**을 만들려는 그의 목표를 이어 갔고, 여행자와의 대립 끝에 계획이 좌절되어 **그림자 영역**에 갇혔다."
       }
      ],
      "sources": [
@@ -65,34 +66,28 @@
      "latin_left": []
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
+     "section": "정체와 배경 — Hyperborea와 Belyi Tsar",
+     "status": "accepted",
+     "note": "All sentences are supported.",
      "quote": "Aksinya was a survivor from Hyperborea who was put in a time capsule as an infant and was later found by the Belyi Tsar during one of his many wanderings through the Hyperborean ruins.",
      "sentences": [
       {
-       "t_raw": "Aksinya는 Hyperborea의 생존자로, 유아 시절 시간 캡슐에 들어 있었다가 Hyperborean ruins를 떠돌던 Belyi Tsar에게 발견된 인물이다.",
+       "t_raw": "**Aksinya**는 Hyperborea의 생존자로, 유아 시절 타임캡슐에 들어 있었다가 Hyperborea의 폐허를 떠돌던 Belyi Tsar에게 발견되었다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 휘페르보레아의 생존자로, 유아 시절 시간 캡슐에 들어 있었다가 휘페르보레아 ruins를 떠돌던 하얀 차르에게 발견된 인물이다."
+       "t": "**악시냐**는 휘페르보레아의 생존자로, 유아 시절 타임캡슐에 들어 있었다가 휘페르보레아의 폐허를 떠돌던 하얀 차르에게 발견되었다."
       },
       {
-       "t_raw": "Tsar는 그녀를 Snezhnaya로 데려가 **양녀**로 삼았고, 그녀는 Tsar에 의해 Fae의 궁정으로 이끌려졌다.",
+       "t_raw": "Belyi Tsar는 그녀를 Fae의 궁정으로 데려갔고, 그녀는 Snezhnaya에서 그의 양녀이자 가까운 측근이 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "차르는 그녀를 스네즈나야로 데려가 **양녀**로 삼았고, 그녀는 차르에 의해 요정의 궁정으로 이끌려졌다."
+       "t": "하얀 차르는 그녀를 요정의 궁정으로 데려갔고, 그녀는 스네즈나야에서 그의 양녀이자 가까운 측근이 되었다."
       },
       {
-       "t_raw": "훗날 그녀는 Snezhnaya의 Hvergelmir 연구소를 이끌며 Hyperborean ruins를 조사하고 금기를 배우는 일에 시간을 썼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "훗날 그녀는 스네즈나야의 근원 연구소 연구소를 이끌며 휘페르보레아 ruins를 조사하고 금기를 배우는 일에 시간을 썼다."
-      },
-      {
-       "t_raw": "시간 캡슐 속 유아가 Hyperborea의 폐허에서 발견되어 궁정의 양녀로 자란 일은, 그녀의 출발점과 Snezhnaya에서의 위치가 Hyperborea와 깊게 얽혀 있음을 보여주는 대목이라고 볼 수 있다.",
+       "t_raw": "폐허에서 발견된 유아가 궁정의 양녀이자 측근으로 자리 잡았다는 점은, 그녀의 출신과 Belyi Tsar의 보호가 그녀의 궁정 내 위치를 형성한 배경으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "시간 캡슐 속 유아가 휘페르보레아의 폐허에서 발견되어 궁정의 양녀로 자란 일은, 그녀의 출발점과 스네즈나야에서의 위치가 휘페르보레아와 깊게 얽혀 있음을 보여주는 대목이라고 볼 수 있다."
+       "t": "폐허에서 발견된 유아가 궁정의 양녀이자 측근으로 자리 잡았다는 점은, 그녀의 출신과 하얀 차르의 보호가 그녀의 궁정 내 위치를 형성한 배경으로 보인다."
       }
      ],
      "sources": [
@@ -139,44 +134,50 @@
        ]
       }
      ],
-     "heading": "정체와 배경",
+     "heading": "정체와 배경 — 휘페르보레아와 하얀 차르",
      "latin_left": []
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
+     "section": "정체와 배경 — Hyperborea와 Belyi Tsar",
+     "status": "accepted",
+     "note": "All sentences are supported by A7, M5, Q3, Q9, Q10 and M13.",
      "quote": "Izmaylov always complains that my introductions are far too humble. But personally? I see it as a deliberate choice in style.",
      "sentences": [
       {
-       "t_raw": "Belyi Tsar는 그녀를 **Court Jester**로 임명해 Pale Star Court 안에서의 실제 영향력을 공적인 직함 뒤에 가리게 했다.",
+       "t_raw": "성장한 Aksinya는 Belyi Tsar에게 귀걸이를 선물받고, 그에게 무엇을 해 주면 좋을지 물었다.",
        "interp": false,
        "dropped": false,
-       "t": "하얀 차르는 그녀를 **궁정 광대**로 임명해 창백한 별 왕정 안에서의 실제 영향력을 공적인 직함 뒤에 가리게 했다."
+       "t": "성장한 악시냐는 하얀 차르에게 귀걸이를 선물받고, 그에게 무엇을 해 주면 좋을지 물었다."
       },
       {
-       "t_raw": "Hvergelmir의 구성원 명단에도 Aksinya는 Court Jester로 올라 있다.",
+       "t_raw": "Tsar는 그녀에게 Hyperborea에서 발견한 비밀 일부를 털어놓고, 세계의 비밀을 연구하며 별들의 궁정에 놓인 빈 자리로 통하는 계단을 찾으라고 맡겼다.",
        "interp": false,
        "dropped": false,
-       "t": "근원 연구소의 구성원 명단에도 악시냐는 궁정 광대로 올라 있다."
+       "t": "차르는 그녀에게 휘페르보레아에서 발견한 비밀 일부를 털어놓고, 세계의 비밀을 연구하며 별들의 궁정에 놓인 빈 자리로 통하는 계단을 찾으라고 맡겼다."
       },
       {
-       "t_raw": "그녀 스스로는 자신을 폐하를 섬겼던 하찮은 Royal Jester라 소개하고, Izmaylov가 이런 지나치게 겸손한 소개에 불평한다고 말한다.",
+       "t_raw": "Belyi Tsar는 Alvis, Pavlina, Koshchei, Aksinya에게 같은 과업을 맡겼다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀 스스로는 자신을 폐하를 섬겼던 하찮은 Royal Jester라 소개하고, 이즈마일로프가 이런 지나치게 겸손한 소개에 불평한다고 말한다."
+       "t": "하얀 차르는 알비스, 파블리나, 코셰이, 악시냐에게 같은 과업을 맡겼다."
       },
       {
-       "t_raw": "그녀는 그 호칭이 우스운 것이 아니며 지금도 쓸모가 있다고 여긴다.",
+       "t_raw": "그녀의 공적 직함은 **Court Jester**였고, 이는 Pale Star Court 안의 실제 영향력을 감추기 위한 것이었다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 그 호칭이 우스운 것이 아니며 지금도 쓸모가 있다고 여긴다."
+       "t": "그녀의 공적 직함은 **궁정 광대**였고, 이는 창백한 별 왕정 안의 실제 영향력을 감추기 위한 것이었다."
       },
       {
-       "t_raw": "이 직함은 단순한 별명이 아니라 실제 권한을 가리는 공적 장치였던 셈이다.",
+       "t_raw": "그녀는 스스로를 한낱 \"Royal Jester\"라 소개하고, 그 호칭이 우스운 것이 아니며 지금도 쓰임이 있다고 말하며, Izmaylov가 자기소개가 지나치게 겸손하다고 불평해도 그것을 의도된 문체 선택으로 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 스스로를 한낱 \"Royal Jester\"라 소개하고, 그 호칭이 우스운 것이 아니며 지금도 쓰임이 있다고 말하며, 이즈마일로프가 자기소개가 지나치게 겸손하다고 불평해도 그것을 의도된 문체 선택으로 여긴다."
+      },
+      {
+       "t_raw": "공적 직함이 실제 영향력을 감추는 장치였고 그녀가 그 직함의 쓰임을 인정한다는 점을 함께 보면, Court Jester는 단순한 조롱거리가 아니라 그녀가 관리하는 정체성인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이 직함은 단순한 별명이 아니라 실제 권한을 가리는 공적 장치였던 셈이다."
+       "t": "공적 직함이 실제 영향력을 감추는 장치였고 그녀가 그 직함의 쓰임을 인정한다는 점을 함께 보면, 궁정 광대는 단순한 조롱거리가 아니라 그녀가 관리하는 정체성인 셈이다."
       }
      ],
      "sources": [
@@ -187,6 +188,48 @@
        "section": null,
        "paragraph": "A1",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aksinya",
+       "revision": 2177436,
+       "section": "Story",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Pendulum That Ceased Amidst a Great Fall"
+        },
+        {
+         "type": "arti",
+         "name": "Ovations That Ceased Upon Festivity"
+        },
+        {
+         "type": "arti",
+         "name": "Sharpness That Ceased Upon Wondrous Creation"
+        },
+        {
+         "type": "arti",
+         "name": "Moment That Ceased Upon Waking From Grand Dreams"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Belyi Tsar",
+       "revision": 2178690,
+       "section": "Story",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Pendulum That Ceased Amidst a Great Fall"
+        },
+        {
+         "type": "arti",
+         "name": "Ovations That Ceased Upon Festivity"
+        }
+       ]
       },
       {
        "kind": "wiki",
@@ -209,58 +252,41 @@
        "quest_ko": "하얀 왕관의 꿈",
        "version": "7.0",
        "speaker": "Aksinya"
-      },
-      {
-       "kind": "quest",
-       "quest": "Chorus of Solace",
-       "quest_ko": "위로의 합창",
-       "version": "7.0",
-       "speaker": "Aksinya"
       }
      ],
-     "heading": "정체와 배경",
+     "heading": "정체와 배경 — 휘페르보레아와 하얀 차르",
      "latin_left": [
       "Royal Jester"
      ]
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "to seek the stairway leading to the vacant seat in the court of the stars, a passage to a place where worry and sorrow would no longer trouble them ever again.",
+     "section": "정체와 배경 — Hvergelmir와 금기 연구",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "she and other researchers did not hesitate about investigating the taboos and limits of the world.",
      "sentences": [
       {
-       "t_raw": "성장한 Aksinya는 Tsar에게 귀걸이를 선물받고 그에게 무엇을 해 줄 수 있느냐고 묻는다.",
+       "t_raw": "Aksinya는 Snezhnaya의 Hvergelmir 연구소를 이끌었고, Belyi Tsar는 Hyperborea에서 발견한 비밀을 그녀에게 나누며 세계의 비밀을 연구하라고 맡겼다.",
        "interp": false,
        "dropped": false,
-       "t": "성장한 악시냐는 차르에게 귀걸이를 선물받고 그에게 무엇을 해 줄 수 있느냐고 묻는다."
+       "t": "악시냐는 스네즈나야의 근원 연구소 연구소를 이끌었고, 하얀 차르는 휘페르보레아에서 발견한 비밀을 그녀에게 나누며 세계의 비밀을 연구하라고 맡겼다."
       },
       {
-       "t_raw": "Tsar는 처음에는 아무것도 바라지 않으려 했지만, 끝내 자신이 품었던 꿈을 털어놓고 Alvis, Pavlina, Koshchei, Aksinya에게 ‘the vacant seat in the court of the stars’로 이어지는 계단을 찾는 임무를 맡긴다.",
+       "t_raw": "목표는 별들의 궁정에 있는 빈 자리로 통하는 계단을 찾는 것이었고, 그녀와 연구자들은 금기와 세계의 한계를 조사하는 데 주저하지 않았다.",
        "interp": false,
        "dropped": false,
-       "t": "차르는 처음에는 아무것도 바라지 않으려 했지만, 끝내 자신이 품었던 꿈을 털어놓고 알비스, 파블리나, 코셰이, 악시냐에게 'the vacant seat in the court of the stars'로 이어지는 계단을 찾는 임무를 맡긴다."
-      },
-      {
-       "t_raw": "그 계획은 Tsar가 Hyperborea에서 얻은 정보에 뿌리를 두었고, Aksinya와 Hvergelmir는 Belyi Tsar의 **Primordial Human**으로서의 승천을 완성하기 위해 Eye of Graeae를 만들었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 계획은 차르가 휘페르보레아에서 얻은 정보에 뿌리를 두었고, 악시냐와 근원 연구소는 하얀 차르의 **「원초의 인간」**으로서의 승천을 완성하기 위해 「잿빛 눈동자」를 만들었다."
-      },
-      {
-       "t_raw": "그녀는 세계의 금기와 한계를 조사하는 데도 망설이지 않았고, Domovoy 제자 Izmaylov에게 Hyperborea의 몰락을 두려워하지 말라고 격려하며 펜을 쥐여 주었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 세계의 금기와 한계를 조사하는 데도 망설이지 않았고, 난쟁이 요정 제자 이즈마일로프에게 휘페르보레아의 몰락을 두려워하지 말라고 격려하며 펜을 쥐여 주었다."
-      },
-      {
-       "t_raw": "Tsar의 Hyperborea 유산에 대한 꿈은 이후 Hvergelmir의 Eye of Graeae와 Primordial Human 계획으로 이어지는 축이 된 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "차르의 휘페르보레아 유산에 대한 꿈은 이후 근원 연구소의 「잿빛 눈동자」와 「원초의 인간」 계획으로 이어지는 축이 된 것으로 보인다."
+       "t": "목표는 별들의 궁정에 있는 빈 자리로 통하는 계단을 찾는 것이었고, 그녀와 연구자들은 금기와 세계의 한계를 조사하는 데 주저하지 않았다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aksinya",
+       "revision": 2177436,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Aksinya",
@@ -285,293 +311,40 @@
          "name": "Moment That Ceased Upon Waking From Grand Dreams"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Belyi Tsar",
-       "revision": 2178690,
-       "section": "Story",
-       "paragraph": "M5",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Pendulum That Ceased Amidst a Great Fall"
-        },
-        {
-         "type": "arti",
-         "name": "Ovations That Ceased Upon Festivity"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Primordial Human",
-       "revision": 2178311,
-       "section": "Story",
-       "paragraph": "M6",
-       "wiki_refs": []
       }
      ],
-     "heading": "정체와 배경",
+     "heading": "정체와 배경 — 근원 연구소와 금기 연구",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Belyi Tsar 시대",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The two became friends, with Pavlina promising to always welcome her in her manor.",
+     "section": "정체와 배경 — Hvergelmir와 금기 연구",
+     "status": "accepted",
+     "note": "All sentences are supported by Q1, Q8, A8 and M12.",
+     "quote": "Aksinya has not perceived the terrifying essence of eternal love.",
      "sentences": [
       {
-       "t_raw": "어린 Aksinya는 Belyi Tsar를 따라 Pavlina가 연 연회에 갔고, fae의 잡담과 인간인 자신을 향한 시선에 지쳐 연회장 밖에서 길을 잃었다.",
+       "t_raw": "그녀는 실험 대상들이 끝없는 기쁨의 영역에 들어가 다시는 슬픔과 고통을 겪지 않게 되었다고 보고했고, 첫 실험의 완료를 알렸다.",
        "interp": false,
        "dropped": false,
-       "t": "어린 악시냐는 하얀 차르를 따라 파블리나가 연 연회에 갔고, fae의 잡담과 인간인 자신을 향한 시선에 지쳐 연회장 밖에서 길을 잃었다."
+       "t": "그녀는 실험 대상들이 끝없는 기쁨의 영역에 들어가 다시는 슬픔과 고통을 겪지 않게 되었다고 보고했고, 첫 실험의 완료를 알렸다."
       },
       {
-       "t_raw": "Pavlina는 저택을 안내했고, Aksinya는 또래와 다른 재치로 응답해 두 사람은 친구가 되었다.",
+       "t_raw": "실험은 성공했지만 결과는 공개되지 않았으며, 그 성과는 인간을 모두 아래로 보던 Alvis조차 그녀를 존중하게 만들었다.",
        "interp": false,
        "dropped": false,
-       "t": "파블리나는 저택을 안내했고, 악시냐는 또래와 다른 재치로 응답해 두 사람은 친구가 되었다."
+       "t": "실험은 성공했지만 결과는 공개되지 않았으며, 그 성과는 인간을 모두 아래로 보던 알비스조차 그녀를 존중하게 만들었다."
       },
       {
-       "t_raw": "훗날 이 둘이 Belyi Tsar의 계획에 함께 동원되는 점을 보면, 이 첫 만남은 사적인 우정과 공적인 임무가 겹치는 관계의 출발로 볼 수 있다.",
+       "t_raw": "그러나 기록자는 영원한 사랑과 영원한 행복의 뜰을 변화도 개선도 없는 막다른 길로 보았고, Aksinya가 영원한 사랑의 두려운 본질을 깨닫지 못했다고 적었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 기록자는 영원한 사랑과 영원한 행복의 뜰을 변화도 개선도 없는 막다른 길로 보았고, 악시냐가 영원한 사랑의 두려운 본질을 깨닫지 못했다고 적었다."
+      },
+      {
+       "t_raw": "성공 선언과 별개로 그 성과의 의미는 이미 의심받고 있었던 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "훗날 이 둘이 하얀 차르의 계획에 함께 동원되는 점을 보면, 이 첫 만남은 사적인 우정과 공적인 임무가 겹치는 관계의 출발로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aksinya",
-       "revision": 2177436,
-       "section": "Story",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Iridescence That Ceased Amidst Glory"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Pavlina",
-       "revision": 2178615,
-       "section": "Story",
-       "paragraph": "M4",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Iridescence That Ceased Amidst Glory"
-        },
-        {
-         "type": "arti",
-         "name": "Ovations That Ceased Upon Festivity"
-        }
-       ]
-      }
-     ],
-     "heading": "작중 행적 — 하얀 차르 시대",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Belyi Tsar 시대",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "a plan that had roots in the information he had gleaned from Hyperborea.",
-     "sentences": [
-      {
-       "t_raw": "성장한 Aksinya는 Belyi Tsar에게 귀걸이 한 쌍을 선물받고 그 대가로 무엇을 할 수 있는지 물었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "성장한 악시냐는 하얀 차르에게 귀걸이 한 쌍을 선물받고 그 대가로 무엇을 할 수 있는지 물었다."
-      },
-      {
-       "t_raw": "Tsar는 처음에는 아무것도 바라지 않으려 했으나, 결국 자신이 품었던 **Belyi Tsar의 꿈**을 털어놓고 Hyperborea에서 얻은 정보에 뿌리를 둔 계획을 맡겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "차르는 처음에는 아무것도 바라지 않으려 했으나, 결국 자신이 품었던 **하얀 차르의 꿈**을 털어놓고 휘페르보레아에서 얻은 정보에 뿌리를 둔 계획을 맡겼다."
-      },
-      {
-       "t_raw": "그 계획은 Alvis, Pavlina, Koshchei, Aksinya에게 \"seek the stairway leading to the vacant seat in the court of the stars\"라는 임무로 주어졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 계획은 알비스, 파블리나, 코셰이, 악시냐에게 \"seek the stairway leading to the vacant seat in the court of the stars\"라는 임무로 주어졌다."
-      },
-      {
-       "t_raw": "Aksinya는 세계의 금기와 한계를 조사하는 데 망설이지 않았고, Hvergelmir의 구성원 명단에는 \"Court Jester\"로 이름을 올렸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "악시냐는 세계의 금기와 한계를 조사하는 데 망설이지 않았고, 근원 연구소의 구성원 명단에는 \"궁정 광대\"로 이름을 올렸다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aksinya",
-       "revision": 2177436,
-       "section": "Story",
-       "paragraph": "A7",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Pendulum That Ceased Amidst a Great Fall"
-        },
-        {
-         "type": "arti",
-         "name": "Ovations That Ceased Upon Festivity"
-        },
-        {
-         "type": "arti",
-         "name": "Sharpness That Ceased Upon Wondrous Creation"
-        },
-        {
-         "type": "arti",
-         "name": "Moment That Ceased Upon Waking From Grand Dreams"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Belyi Tsar",
-       "revision": 2178690,
-       "section": "Story",
-       "paragraph": "M5",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Pendulum That Ceased Amidst a Great Fall"
-        },
-        {
-         "type": "arti",
-         "name": "Ovations That Ceased Upon Festivity"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Hvergelmir",
-       "revision": 2175422,
-       "section": "Members",
-       "paragraph": "M13",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 하얀 차르 시대",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Belyi Tsar 시대",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Aksinya and the Hvergelmir created the Eye of Graeae, with the goal of using it to finish the Belyi Tsar's ascension as the Primordial Human.",
-     "sentences": [
-      {
-       "t_raw": "Hvergelmir에서 Aksinya는 감시자로 들어온 Izmaylov의 진짜 충성심을 알고 있었으나, 그를 제자로 이끌며 Hyperborea 유적 원정에서 붙잡아 주고 펜을 건넸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "근원 연구소에서 악시냐는 감시자로 들어온 이즈마일로프의 진짜 충성심을 알고 있었으나, 그를 제자로 이끌며 휘페르보레아 유적 원정에서 붙잡아 주고 펜을 건넸다."
-      },
-      {
-       "t_raw": "Koshchei는 그녀의 부드러운 태도에 분노해 손에 귀를 자라게 했지만, Aksinya는 기능 없는 귀에 실망할 뿐 공식 요청을 내라 하고 일정을 지키라는 시계를 주었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "코셰이는 그녀의 부드러운 태도에 분노해 손에 귀를 자라게 했지만, 악시냐는 기능 없는 귀에 실망할 뿐 공식 요청을 내라 하고 일정을 지키라는 시계를 주었다."
-      },
-      {
-       "t_raw": "그녀와 Hvergelmir는 **Eye of Graeae**를 만들어 Belyi Tsar의 Primordial Human으로서의 승천을 끝내려 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀와 근원 연구소는 **「잿빛 눈동자」**를 만들어 하얀 차르의 「원초의 인간」으로서의 승천을 끝내려 했다."
-      },
-      {
-       "t_raw": "그녀는 폐하에게 첫 실험이 완료되었고 피험자들이 끝없는 기쁨의 영역에 들어가 다시는 슬픔이나 고통을 겪지 않게 되었다고 보고했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 폐하에게 첫 실험이 완료되었고 피험자들이 끝없는 기쁨의 영역에 들어가 다시는 슬픔이나 고통을 겪지 않게 되었다고 보고했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Izmaylov",
-       "revision": 2168028,
-       "section": "Story",
-       "paragraph": "M7",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Foundryman's Observation"
-        },
-        {
-         "type": "arti",
-         "name": "Sharpness That Ceased Upon Wondrous Creation"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Koshchei",
-       "revision": 2175939,
-       "section": "Profile",
-       "paragraph": "M11",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Moment That Ceased Upon Waking From Grand Dreams"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Primordial Human",
-       "revision": 2178311,
-       "section": "Story",
-       "paragraph": "M6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Stone Beasts, Like Ghouls Seated",
-       "quest_ko": "궁전의 야수",
-       "version": "7.0",
-       "speaker": "Aksinya"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Stone Beasts, Like Ghouls Seated",
-       "quest_ko": "궁전의 야수",
-       "version": "7.0",
-       "speaker": "Aksinya"
-      }
-     ],
-     "heading": "작중 행적 — 하얀 차르 시대",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Belyi Tsar 시대",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The experiment is complete. Aksinya believes it finished as per its designated direction, and thus, a success.",
-     "sentences": [
-      {
-       "t_raw": "결국 연구는 성과를 냈지만 결과는 공개되지 않았고, Aksinya는 인간을 모두 자신 아래로 보던 Domovoy Lord Alvis에게서도 존중을 얻었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "결국 연구는 성과를 냈지만 결과는 공개되지 않았고, 악시냐는 인간을 모두 자신 아래로 보던 Domovoy Lord Alvis에게서도 존중을 얻었다."
-      },
-      {
-       "t_raw": "The Alchemist's Notes는 실험이 Aksinya가 의도한 방향대로 완료되어 성공으로 여겨졌다고 적으면서도, 소위 **영원한 사랑**과 영원한 행복의 정원이 변화도 개선도 없는 막다른 길인지 묻고, 달걀 안의 인물이 옳다며 Aksinya가 영원한 사랑의 무서운 본질을 깨닫지 못했고 자신은 계획이 결실을 맺게 둘 수 없다고 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "연금술사의 Notes는 실험이 악시냐가 의도한 방향대로 완료되어 성공으로 여겨졌다고 적으면서도, 소위 **영원한 사랑**과 영원한 행복의 정원이 변화도 개선도 없는 막다른 길인지 묻고, 달걀 안의 인물이 옳다며 악시냐가 영원한 사랑의 무서운 본질을 깨닫지 못했고 자신은 계획이 결실을 맺게 둘 수 없다고 밝힌다."
-      },
-      {
-       "t_raw": "이 대비는 성공으로 여겨진 실험도 내부에서 의심받았음을 보여 주는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 대비는 성공으로 여겨진 실험도 내부에서 의심받았음을 보여 주는 셈이다."
+       "t": "성공 선언과 별개로 그 성과의 의미는 이미 의심받고 있었던 셈이다."
       }
      ],
      "sources": [
@@ -595,37 +368,285 @@
        "section": "Interactables > The Alchemist's Notes (II)",
        "paragraph": "M12",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Stone Beasts, Like Ghouls Seated",
+       "quest_ko": "궁전의 야수",
+       "version": "7.0",
+       "speaker": "Aksinya"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Stone Beasts, Like Ghouls Seated",
+       "quest_ko": "궁전의 야수",
+       "version": "7.0",
+       "speaker": "Aksinya"
       }
      ],
-     "heading": "작중 행적 — 하얀 차르 시대",
-     "latin_left": [
-      "Domovoy Lord Alvis",
-      "Notes"
-     ]
+     "heading": "정체와 배경 — 근원 연구소와 금기 연구",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경 — Hvergelmir와 금기 연구",
+     "status": "accepted",
+     "note": "All sentences are supported by M7 and M8.",
+     "quote": "As time went on, she went from his mark to his mentor, guiding him and helping him grow.",
+     "sentences": [
+      {
+       "t_raw": "Alvis는 Belyi Tsar의 양녀 Aksinya를 못마땅해하며 Izmaylov를 Hvergelmir의 첩자로 보냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알비스는 하얀 차르의 양녀 악시냐를 못마땅해하며 이즈마일로프를 근원 연구소의 첩자로 보냈다."
+      },
+      {
+       "t_raw": "Izmaylov는 큰 성과를 내지 못했고 Aksinya도 그의 진짜 충성을 알고 있었지만, 시간이 지나며 그녀는 표적에서 스승이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이즈마일로프는 큰 성과를 내지 못했고 악시냐도 그의 진짜 충성을 알고 있었지만, 시간이 지나며 그녀는 표적에서 스승이 되었다."
+      },
+      {
+       "t_raw": "Shadow Realm의 Hyperborean ruins에서 그를 붙잡아 주고 펜을 건넨 일로 그는 진심의 충성을 갖게 되어 Hvergelmir의 야망에 적극적인 일원이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그림자 영역의 휘페르보레아 폐허에서 그를 붙잡아 주고 펜을 건넨 일로 그는 진심의 충성을 갖게 되어 근원 연구소의 야망에 적극적인 일원이 되었다.",
+       "polish": {
+        "from": "그림자 영역의 휘페르보레아 ruins에서 그를 붙잡아 주고 펜을 건넨 일로 그는 진심의 충성을 갖게 되어 근원 연구소의 야망에 적극적인 일원이 되었다.",
+        "text": "그림자 영역의 휘페르보레아 폐허에서 그를 붙잡아 주고 펜을 건넨 일로 그는 진심의 충성을 갖게 되어 근원 연구소의 야망에 적극적인 일원이 되었다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "Alvis가 심은 첩자는 결국 Aksinya의 사람이 된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "알비스가 심은 첩자는 결국 악시냐의 사람이 된 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Izmaylov",
+       "revision": 2168028,
+       "section": "Story",
+       "paragraph": "M7",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Foundryman's Observation"
+        },
+        {
+         "type": "arti",
+         "name": "Sharpness That Ceased Upon Wondrous Creation"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Izmaylov",
+       "revision": 2168028,
+       "section": "Story",
+       "paragraph": "M8",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Ovations That Ceased Upon Festivity"
+        },
+        {
+         "type": "arti",
+         "name": "Foundryman's Conjecture"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경 — 근원 연구소와 금기 연구",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경 — Hvergelmir와 금기 연구",
+     "status": "accepted",
+     "note": "All sentences follow M11.",
+     "quote": "She calmly told him that if he wanted to do so again, he'd have to submit an official request.",
+     "sentences": [
+      {
+       "t_raw": "Koshchei는 Snowland Fae를 실험했지만 처형되는 대신 Belyi Tsar에 의해 Hvergelmir로 들어왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "코셰이는 설국 요정을 실험했지만 처형되는 대신 하얀 차르에 의해 근원 연구소로 들어왔다."
+      },
+      {
+       "t_raw": "Aksinya가 온화한 태도를 보이자 그는 그녀의 손에 귀를 돋아나게 했고, 그녀는 기능도 없는 귀에 실망하며 다시 하려면 공식 요청을 내라고 말한 뒤 일정을 지키라는 시계를 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐가 온화한 태도를 보이자 그는 그녀의 손에 귀를 돋아나게 했고, 그녀는 기능도 없는 귀에 실망하며 다시 하려면 공식 요청을 내라고 말한 뒤 일정을 지키라는 시계를 주었다."
+      },
+      {
+       "t_raw": "Koshchei는 멍해지며 동경을 느꼈고, 그녀의 대응은 제압이 아니라 절차와 일정 관리였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "코셰이는 멍해지며 동경을 느꼈고, 그녀의 대응은 제압이 아니라 절차와 일정 관리였던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Koshchei",
+       "revision": 2175939,
+       "section": "Profile",
+       "paragraph": "M11",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Moment That Ceased Upon Waking From Grand Dreams"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경 — 근원 연구소와 금기 연구",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Pavlina와의 우정",
+     "status": "accepted",
+     "note": "Supported by M4 and A6.",
+     "quote": "Tired of the idle talk of the fae and the attention toward her as a human, Aksinya ventured outside the banquet hall and got lost in the maze of the manor.",
+     "sentences": [
+      {
+       "t_raw": "Pavlina는 cataclysm 이전부터 최소 500년을 살아온 Snegovik 연금술사다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파블리나는 대재앙 이전부터 최소 500년을 살아온 눈 요정 연금술사다.",
+       "polish": {
+        "from": "파블리나는 cataclysm 이전부터 최소 500년을 살아온 눈 요정 연금술사다.",
+        "text": "파블리나는 대재앙 이전부터 최소 500년을 살아온 눈 요정 연금술사다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "어린 Aksinya는 Belyi Tsar를 따라 Pavlina가 주최한 연회에 갔고, fae들의 한담과 인간인 자신을 향한 시선에 지쳐 홀 밖으로 나갔다가 저택의 미로에서 길을 잃었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어린 악시냐는 하얀 차르를 따라 파블리나가 주최한 연회에 갔고, 요정들의 한담과 인간인 자신을 향한 시선에 지쳐 홀 밖으로 나갔다가 저택의 미로에서 길을 잃었다.",
+       "polish": {
+        "from": "어린 악시냐는 하얀 차르를 따라 파블리나가 주최한 연회에 갔고, fae들의 한담과 인간인 자신을 향한 시선에 지쳐 홀 밖으로 나갔다가 저택의 미로에서 길을 잃었다.",
+        "text": "어린 악시냐는 하얀 차르를 따라 파블리나가 주최한 연회에 갔고, 요정들의 한담과 인간인 자신을 향한 시선에 지쳐 홀 밖으로 나갔다가 저택의 미로에서 길을 잃었다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "손님들의 상투적인 말에 역시 지쳐 있던 Pavlina가 그녀를 찾아 저택을 안내하며 그림과 조각, 퍼즐을 소개했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손님들의 상투적인 말에 역시 지쳐 있던 파블리나가 그녀를 찾아 저택을 안내하며 그림과 조각, 퍼즐을 소개했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pavlina",
+       "revision": 2178615,
+       "section": "Story",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Iridescence That Ceased Amidst Glory"
+        },
+        {
+         "type": "arti",
+         "name": "Ovations That Ceased Upon Festivity"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Aksinya",
+       "revision": 2177436,
+       "section": "Story",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Iridescence That Ceased Amidst Glory"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 파블리나와의 우정",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Pavlina와의 우정",
+     "status": "accepted",
+     "note": "Supported by A6. The interpretation is reasonable.",
+     "quote": "In turn, the maiden replied with wit and acuity unlike any of her peers. The two became friends, with Pavlina promising to always welcome her in her manor.",
+     "sentences": [
+      {
+       "t_raw": "Aksinya는 또래 누구와도 다른 재치와 예리함으로 응답했고, 둘은 친구가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐는 또래 누구와도 다른 재치와 예리함으로 응답했고, 둘은 친구가 되었다."
+      },
+      {
+       "t_raw": "Pavlina는 자신의 저택에서 Aksinya를 언제나 환영하겠다고 약속했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파블리나는 자신의 저택에서 악시냐를 언제나 환영하겠다고 약속했다."
+      },
+      {
+       "t_raw": "둘 다 연회의 분위기에 지쳐 있었고 Aksinya가 Pavlina의 안내에 재치 있게 응답한 끝에 친구가 되었다는 점에서, 이 만남은 말이 통하는 상대로부터 시작된 우정으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "둘 다 연회의 분위기에 지쳐 있었고 악시냐가 파블리나의 안내에 재치 있게 응답한 끝에 친구가 되었다는 점에서, 이 만남은 말이 통하는 상대로부터 시작된 우정으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aksinya",
+       "revision": 2177436,
+       "section": "Story",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Iridescence That Ceased Amidst Glory"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 파블리나와의 우정",
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Cataclysm과 Shadow Realm",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Aksinya's creation, the Eye of Graeae, realized what would happen if Aksinya's plan was successful, and he managed to convince the trio to betray Aksinya, shoving her into the Shadow Realm.",
+     "status": "accepted",
+     "note": "Supported by A9 and M3. The interpretation follows from M3.",
+     "quote": "It asked to be divided into three segments, persuading Koshchei, Pavlina and Alvis to stop Aksinya from finishing the experiment.",
      "sentences": [
       {
-       "t_raw": "**Eye of Graeae**는 Aksinya의 계획이 성공할 경우 벌어질 일을 깨달았다.",
+       "t_raw": "Cataclysm과 Tsaritsa의 즉위 뒤, Aksinya는 Shadow Realm에서 죽었다고 전해졌다.",
        "interp": false,
        "dropped": false,
-       "t": "**「잿빛 눈동자」**는 악시냐의 계획이 성공할 경우 벌어질 일을 깨달았다."
+       "t": "대재앙과 얼음의 여왕의 즉위 뒤, 악시냐는 그림자 영역에서 죽었다고 전해졌다."
       },
       {
-       "t_raw": "자신이 융합해 Primordial Human의 권위를 얻으면 모든 인간과 fae에게 위협이 되리라고 보았고, 세 조각으로 나뉘기를 요청해 Koshchei, Pavlina, Alvis를 설득하여 Aksinya가 실험을 끝내지 못하게 했다.",
+       "t_raw": "Eye of Graeae는 Aksinya의 계획이 세계에 재앙적 결과를 낳을 것을 깨닫고 Pavlina, Alvis, Koshchei를 설득해 그녀를 Shadow Realm으로 밀어 넣게 했다.",
        "interp": false,
        "dropped": false,
-       "t": "자신이 융합해 「원초의 인간」의 권위를 얻으면 모든 인간과 fae에게 위협이 되리라고 보았고, 세 조각으로 나뉘기를 요청해 코셰이, 파블리나, 알비스를 설득하여 악시냐가 실험을 끝내지 못하게 했다."
+       "t": "「잿빛 눈동자」는 악시냐의 계획이 세계에 재앙적 결과를 낳을 것을 깨닫고 파블리나, 알비스, 코셰이를 설득해 그녀를 그림자 영역으로 밀어 넣게 했다."
       },
       {
-       "t_raw": "세 사람은 각자의 이유로 움직였고, Cataclysm과 Tsaritsa의 즉위 뒤 Aksinya는 그들에게 밀려 **Shadow Realm**에서 죽은 것으로 전해졌다.",
+       "t_raw": "세 사람이 각자의 이유로 움직였다 해도, **Eye of Graeae의 경고**가 실험을 멈춘 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세 사람이 각자의 이유로 움직였다 해도, **「잿빛 눈동자」의 경고**가 실험을 멈춘 셈이다."
+      },
+      {
+       "t_raw": "실제로 그녀는 Shadow Realm에 갇혀 영역의 성질에 따라 젊음을 유지했다.",
        "interp": false,
        "dropped": false,
-       "t": "세 사람은 각자의 이유로 움직였고, 대재앙과 얼음의 여왕의 즉위 뒤 악시냐는 그들에게 밀려 **그림자 영역**에서 죽은 것으로 전해졌다."
+       "t": "실제로 그녀는 그림자 영역에 갇혀 영역의 성질에 따라 젊음을 유지했다."
       }
      ],
      "sources": [
@@ -673,72 +694,44 @@
     },
     {
      "section": "작중 행적 — Cataclysm과 Shadow Realm",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I know, however, that she will one day surely return, breaking free from the shackles of the land of shadows.",
+     "status": "accepted",
+     "note": "Supported by M12. The interpretation is mild and rests on M3 for the Eye of Graeae's warning.",
+     "quote": "Aksinya has not perceived the terrifying essence of eternal love. I cannot... allow her plan to come to final fruition.",
      "sentences": [
       {
-       "t_raw": "Cataclysm 뒤 Alvis는 그녀가 Shadow Realm에서 죽었다고 선언했지만, Izmaylov는 그 말이 진실이 아님을 알고 그녀나 시신을 찾겠다고 맹세했다.",
+       "t_raw": "실험이 완료된 뒤 Aksinya는 지정된 방향대로 성공했다고 믿었지만, 남겨진 기록은 영원한 사랑이 변화도 개선도 없는 막다른 길이며 모든 차이가 하나로 섞이면 사랑할 대상도 내면도 남지 않는다고 보았다.",
        "interp": false,
        "dropped": false,
-       "t": "대재앙 뒤 알비스는 그녀가 그림자 영역에서 죽었다고 선언했지만, 이즈마일로프는 그 말이 진실이 아님을 알고 그녀나 시신을 찾겠다고 맹세했다."
+       "t": "실험이 완료된 뒤 악시냐는 지정된 방향대로 성공했다고 믿었지만, 남겨진 기록은 영원한 사랑이 변화도 개선도 없는 막다른 길이며 모든 차이가 하나로 섞이면 사랑할 대상도 내면도 남지 않는다고 보았다."
       },
       {
-       "t_raw": "Aksinya는 실제로 그곳에 갇혀 그 성질에 따라 젊음을 유지했고, 500년 뒤 돌아왔다.",
+       "t_raw": "기록의 주인은 그녀의 계획이 끝까지 실현되는 것을 막아야 한다고 했고, 그녀가 언젠가 Shadow Realm의 속박에서 벗어나 돌아오리라는 것도 알고 있었다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 실제로 그곳에 갇혀 그 성질에 따라 젊음을 유지했고, 500년 뒤 돌아왔다."
+       "t": "기록의 주인은 그녀의 계획이 끝까지 실현되는 것을 막아야 한다고 했고, 그녀가 언젠가 그림자 영역의 속박에서 벗어나 돌아오리라는 것도 알고 있었다."
       },
       {
-       "t_raw": "실험에 관한 기록은 영원한 사랑과 영원한 행복의 뜰이 변화도 개선도 없는 막다른 길인지 의심하면서도, 그녀가 언젠가 Shadow Realm의 속박에서 벗어나리라고 보았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "실험에 관한 기록은 영원한 사랑과 영원한 행복의 뜰이 변화도 개선도 없는 막다른 길인지 의심하면서도, 그녀가 언젠가 그림자 영역의 속박에서 벗어나리라고 보았다."
-      },
-      {
-       "t_raw": "죽음으로 공표된 시간과 실제로 이어진 젊음이 어긋난 셈이다.",
+       "t_raw": "성공의 확신과 Eye of Graeae의 경고가 어긋나는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "죽음으로 공표된 시간과 실제로 이어진 젊음이 어긋난 셈이다."
+       "t": "성공의 확신과 「잿빛 눈동자」의 경고가 어긋나는 셈이다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aksinya",
-       "revision": 2177436,
-       "section": "Story",
-       "paragraph": "A9",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Foundryman's Observation"
-        },
-        {
-         "type": "arti",
-         "name": "Foundryman's Legacy"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Izmaylov",
-       "revision": 2168028,
-       "section": "Story",
-       "paragraph": "M9",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Foundryman's Calculus"
-        }
-       ]
-      },
       {
        "kind": "wiki",
        "page": "The Ruined Hvergelmir",
        "revision": 2175423,
        "section": "Interactables > The Alchemist's Notes (II)",
        "paragraph": "M12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eye of Graeae",
+       "revision": 2171144,
+       "section": "Profile",
+       "paragraph": "M3",
        "wiki_refs": []
       }
      ],
@@ -747,33 +740,33 @@
     },
     {
      "section": "작중 행적 — Cataclysm과 Shadow Realm",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Once he had answered her questions, he stood and bowed to her, confessing how happy he was to see her return, and gave her back her pen.",
+     "status": "accepted",
+     "note": "Supported by A9 and M9. The interpretation is reasonable.",
+     "quote": "After 500 years, she returned and came to the now elderly Izmaylov. She questioned him on what had become of the world.",
      "sentences": [
       {
-       "t_raw": "돌아온 Aksinya는 노인이 된 **Izmaylov**를 찾아가 세상이 어떻게 변했는지 물었다.",
+       "t_raw": "Alvis는 Cataclysm 뒤 Aksinya가 Shadow Realm에서 죽었다고 선언했지만, Izmaylov는 그 말이 진실이 아님을 알고 그녀나 시신을 찾겠다고 맹세했다.",
        "interp": false,
        "dropped": false,
-       "t": "돌아온 악시냐는 노인이 된 **이즈마일로프**를 찾아가 세상이 어떻게 변했는지 물었다."
+       "t": "알비스는 대재앙 뒤 악시냐가 그림자 영역에서 죽었다고 선언했지만, 이즈마일로프는 그 말이 진실이 아님을 알고 그녀나 시신을 찾겠다고 맹세했다."
       },
       {
-       "t_raw": "Izmaylov는 답한 뒤 일어나 절하며 귀환을 기뻐했고, 그녀의 펜을 돌려주었다.",
+       "t_raw": "500년 뒤 돌아온 Aksinya는 노인이 된 Izmaylov에게 세상이 어떻게 되었는지 물었고, 그는 답한 뒤 절하며 **펜**을 돌려주었다.",
        "interp": false,
        "dropped": false,
-       "t": "이즈마일로프는 답한 뒤 일어나 절하며 귀환을 기뻐했고, 그녀의 펜을 돌려주었다."
+       "t": "500년 뒤 돌아온 악시냐는 노인이 된 이즈마일로프에게 세상이 어떻게 되었는지 물었고, 그는 답한 뒤 절하며 **펜**을 돌려주었다."
       },
       {
-       "t_raw": "두 사람은 더 이상 빚이 없다는 것을 알고 헤어졌다.",
+       "t_raw": "두 사람은 더 이상 서로에게 빚이 없다는 것을 알고 헤어졌다.",
        "interp": false,
        "dropped": false,
-       "t": "두 사람은 더 이상 빚이 없다는 것을 알고 헤어졌다."
+       "t": "두 사람은 더 이상 서로에게 빚이 없다는 것을 알고 헤어졌다."
       },
       {
-       "t_raw": "죽음을 믿지 않고 찾아 나섰던 Izmaylov가 돌아온 그녀와 빚을 청산한 채 작별한 셈이다.",
+       "t_raw": "오랜 추적 끝의 재회는 그의 의심을 매듭짓고 두 사람의 빚을 정리하는 장면으로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "죽음을 믿지 않고 찾아 나섰던 이즈마일로프가 돌아온 그녀와 빚을 청산한 채 작별한 셈이다."
+       "t": "오랜 추적 끝의 재회는 그의 의심을 매듭짓고 두 사람의 빚을 정리하는 장면으로 볼 수 있다."
       }
      ],
      "sources": [
@@ -812,40 +805,34 @@
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 7.0 Snezhnaya",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Eye of Graeae의 회수",
+     "status": "accepted",
+     "note": "All sentences follow A10 and M3.",
      "quote": "the arrival of the Traveler and Paimon in Snezhnaya allowed the plans to accelerate as she allowed them to slowly recover the Eye of Graeae's powers.",
      "sentences": [
       {
-       "t_raw": "Snezhnaya에 도착한 Traveler와 Paimon 덕분에 Aksinya의 20년 계획은 앞당겨졌고, 그는 두 사람이 **Eye of Graeae의 힘**을 조금씩 되찾도록 두었다.",
+       "t_raw": "Aksinya는 Eye of Graeae의 **완전한 힘**을 20년에 걸쳐 되찾으려 했으나, Snezhnaya에 Traveler와 Paimon이 오자 계획이 빨라졌다.",
        "interp": false,
        "dropped": false,
-       "t": "스네즈나야에 도착한 여행자와 페이몬 덕분에 악시냐의 20년 계획은 앞당겨졌고, 그는 두 사람이 **「잿빛 눈동자」의 힘**을 조금씩 되찾도록 두었다."
+       "t": "악시냐는 「잿빛 눈동자」의 **완전한 힘**을 20년에 걸쳐 되찾으려 했으나, 스네즈나야에 여행자와 페이몬이 오자 계획이 빨라졌다."
       },
       {
-       "t_raw": "Aksinya는 Flamefeather Valley에서 Zhara의 시체에 주문을 걸어 되살아나기 전에 분해했다.",
+       "t_raw": "그녀는 두 사람이 Eye of Graeae의 힘을 천천히 회복하도록 두었다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 화염깃 골짜기에서 자라의 시체에 주문을 걸어 되살아나기 전에 분해했다."
+       "t": "그녀는 두 사람이 「잿빛 눈동자」의 힘을 천천히 회복하도록 두었다."
       },
       {
-       "t_raw": "Aksinya는 파편들을 제대로 보냈는지 묻고, 자신은 여기에 갇혀 한동안 떠나야 하니 나머지는 두 사람에게 맡긴다고 말했다.",
+       "t_raw": "Eye of Graeae는 Aksinya와 Hvergelmir가 만든 것이며, Cataclysm 이전 세 조각으로 나뉘었다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 파편들을 제대로 보냈는지 묻고, 자신은 여기에 갇혀 한동안 떠나야 하니 나머지는 두 사람에게 맡긴다고 말했다."
+       "t": "「잿빛 눈동자」는 악시냐와 근원 연구소가 만든 것이며, 대재앙 이전 세 조각으로 나뉘었다."
       },
       {
-       "t_raw": "Paimon은 도움에 감사한 뒤 상대가 Aksinya임을 알아보고 놀랐다.",
-       "interp": false,
+       "t_raw": "그 회수는 그녀의 계획을 앞당기는 데 쓰인 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "페이몬은 도움에 감사한 뒤 상대가 악시냐임을 알아보고 놀랐다."
-      },
-      {
-       "t_raw": "Aksinya는 Eye of Graeae를 잠시 자신에게 맡겨 달라며, 그것이 어떤 의미에서는 귀향과 같다고 평했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "악시냐는 「잿빛 눈동자」를 잠시 자신에게 맡겨 달라며, 그것이 어떤 의미에서는 귀향과 같다고 평했다."
+       "t": "그 회수는 그녀의 계획을 앞당기는 데 쓰인 셈이다."
       }
      ],
      "sources": [
@@ -875,9 +862,60 @@
        ]
       },
       {
+       "kind": "wiki",
+       "page": "Eye of Graeae",
+       "revision": 2171144,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 「잿빛 눈동자」의 회수",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Eye of Graeae의 회수",
+     "status": "accepted",
+     "note": "All sentences are supported by Q5, Q22, Q6 and Q31, and the interpretation is reasonable.",
+     "quote": "You may leave the Eye of Graeae in my keeping for a time. In my estimation, it is a form of homecoming for it anyhow.",
+     "sentences": [
+      {
+       "t_raw": "Aksinya는 조각들을 보냈기를 바란다고 말하며 자신이 곤경에 처했다고 했고, 가벼운 휴대형 장치를 'Eye of Graeae'라 부르자고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐는 조각들을 보냈기를 바란다고 말하며 자신이 곤경에 처했다고 했고, 가벼운 휴대형 장치를 '「잿빛 눈동자」'라 부르자고 했다."
+      },
+      {
+       "t_raw": "그녀는 Eye of Graeae를 한동안 자신에게 맡겨도 된다며 그것이 일종의 귀향이라고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 「잿빛 눈동자」를 한동안 자신에게 맡겨도 된다며 그것이 일종의 귀향이라고 했다."
+      },
+      {
+       "t_raw": "Eye of Graeae는 Aksinya가 아직 Pavlina를 상대하고 있다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「잿빛 눈동자」는 악시냐가 아직 파블리나를 상대하고 있다고 전한다."
+      },
+      {
+       "t_raw": "자신에게 돌아오는 존재로 장치를 다루는 태도가 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자신에게 돌아오는 존재로 장치를 다루는 태도가 드러난다."
+      }
+     ],
+     "sources": [
+      {
        "kind": "quest",
        "quest": "Procrustes' Iron Bed",
        "quest_ko": "프로크루스테스의 침실",
+       "version": "7.0",
+       "speaker": "Aksinya"
+      },
+      {
+       "kind": "quest",
+       "quest": "To Gaze Upon the Dreaming Pale Crown",
+       "quest_ko": "하얀 왕관의 꿈",
        "version": "7.0",
        "speaker": "Aksinya"
       },
@@ -893,60 +931,117 @@
        "quest": "Procrustes' Iron Bed",
        "quest_ko": "프로크루스테스의 침실",
        "version": "7.0",
-       "speaker": "Aksinya"
-      },
-      {
-       "kind": "quest",
-       "quest": "Chorus of Solace",
-       "quest_ko": "위로의 합창",
-       "version": "7.0",
-       "speaker": "Paimon"
+       "speaker": "Eye of Graeae"
       }
      ],
-     "heading": "작중 행적 — 7.0 스네즈나야",
+     "heading": "작중 행적 — 「잿빛 눈동자」의 회수",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 7.0 Snezhnaya",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But how about you, Aksinya? Have you ever given \"him\" a chance to choose \"his\" path?",
+     "section": "작중 행적 — Eye of Graeae의 회수",
+     "status": "accepted",
+     "note": "Supported by Q26, Q29, Q34 and M3; the interpretation is reasonable.",
+     "quote": "it asked to be divided into three segments, persuading Koshchei, Pavlina and Alvis to stop Aksinya from finishing the experiment.",
      "sentences": [
       {
-       "t_raw": "House of Hesperides에서 Aksinya는 Pavlina가 Ikhor의 힘을 오용해 자신의 백성에게 영혼을 주는 것을 막으려 했고, Traveler와 함께 Pavlina를 멈춰 세웠다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헤스페리데스 저택에서 악시냐는 파블리나가 이코르의 힘을 오용해 자신의 백성에게 영혼을 주는 것을 막으려 했고, 여행자와 함께 파블리나를 멈춰 세웠다."
-      },
-      {
-       "t_raw": "의식이 이어질 때 Aksinya는 나타나 의식에 반대했지만, Pavlina는 Aksinya를 환영하지 않으며 그런 술책은 얼마간 시간을 벌 뿐이라고 말했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "의식이 이어질 때 악시냐는 나타나 의식에 반대했지만, 파블리나는 악시냐를 환영하지 않으며 그런 술책은 얼마간 시간을 벌 뿐이라고 말했다."
-      },
-      {
-       "t_raw": "Aksinya는 Pavlina에게, 한때 Pavlina가 자신에게 그들은 무엇이 최선인지 모른다고 말했지만 Pavlina도 그들과 다르지 않다고 말했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "악시냐는 파블리나에게, 한때 파블리나가 자신에게 그들은 무엇이 최선인지 모른다고 말했지만 파블리나도 그들과 다르지 않다고 말했다."
-      },
-      {
-       "t_raw": "Aksinya가 Pavlina를 멈추려 했고 Pavlina가 '그'의 선택을 물었다는 점에서, 두 사람은 서로의 계획을 다른 방식으로 문제 삼은 셈이다.",
+       "t_raw": "**배신의 진실**은 Eye of Graeae의 말을 통해 드러난다.",
        "interp": true,
        "dropped": false,
-       "t": "악시냐가 파블리나를 멈추려 했고 파블리나가 '그'의 선택을 물었다는 점에서, 두 사람은 서로의 계획을 다른 방식으로 문제 삼은 셈이다."
+       "t": "**배신의 진실**은 「잿빛 눈동자」의 말을 통해 드러난다."
       },
       {
-       "t_raw": "다음 의식에서 Pavlina는 Ikhor의 힘을 받아 Cloudborne Palace로 올라갔고, Traveler와 Aksinya는 Pavlina를 싸워 이겼다.",
+       "t_raw": "Paimon은 Snegurochka와 Novokitezhgrad의 Domovoy Grand Duke 등이 Eye of Graeae 때문에 Aksinya를 배신했느냐고 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "다음 의식에서 파블리나는 이코르의 힘을 받아 Cloudborne Palace로 올라갔고, 여행자와 악시냐는 파블리나를 싸워 이겼다."
+       "t": "페이몬은 눈 여인과 신 키테시성의 난쟁이 요정 대공 등이 「잿빛 눈동자」 때문에 악시냐를 배신했느냐고 묻는다."
       },
       {
-       "t_raw": "죽어가며 Pavlina는 Aksinya에게 Aksinya 자신의 계획을 충분히 생각했는지, '그'에게 '그의' 길을 선택할 기회를 주었는지 물었고, 마지막 의식이 완성되자 흩어지며 Graeae의 힘의 파편을 남겼다.",
+       "t_raw": "Eye of Graeae는 Aksinya가 배신당한 일을 언급하고, Pale Crown Palace에서 본 일이 실제라면 Pavlina가 배신자 중 하나였다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "죽어가며 파블리나는 악시냐에게 악시냐 자신의 계획을 충분히 생각했는지, '그'에게 '그의' 길을 선택할 기회를 주었는지 물었고, 마지막 의식이 완성되자 흩어지며 Graeae의 힘의 파편을 남겼다."
+       "t": "「잿빛 눈동자」는 악시냐가 배신당한 일을 언급하고, 하얀 왕관궁에서 본 일이 실제라면 파블리나가 배신자 중 하나였다고 말한다."
+      },
+      {
+       "t_raw": "그 배경에는 자신이 융합해 **Primordial Human의 권능**을 얻으면 모든 인간과 fae에게 위협이 된다는 판단이 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 배경에는 자신이 융합해 **「원초의 인간」의 권능**을 얻으면 모든 인간과 요정에게 위협이 된다는 판단이 있었다.",
+       "polish": {
+        "from": "그 배경에는 자신이 융합해 **「원초의 인간」의 권능**을 얻으면 모든 인간과 fae에게 위협이 된다는 판단이 있었다.",
+        "text": "그 배경에는 자신이 융합해 **「원초의 인간」의 권능**을 얻으면 모든 인간과 요정에게 위협이 된다는 판단이 있었다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "그래서 Eye of Graeae는 세 조각으로 나뉘어 Koshchei, Pavlina, Alvis를 설득해 Aksinya의 실험을 막았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래서 「잿빛 눈동자」는 세 조각으로 나뉘어 코셰이, 파블리나, 알비스를 설득해 악시냐의 실험을 막았다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "An Ark That Used to Be a Soul",
+       "quest_ko": "영혼의 배",
+       "version": "7.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "To Gaze Upon the Dreaming Pale Crown",
+       "quest_ko": "하얀 왕관의 꿈",
+       "version": "7.0",
+       "speaker": "Eye of Graeae"
+      },
+      {
+       "kind": "quest",
+       "quest": "Through the Gates of Ivory",
+       "quest_ko": "상아로 만든 문을 지나",
+       "version": "7.0",
+       "speaker": "Eye of Graeae"
+      },
+      {
+       "kind": "wiki",
+       "page": "Eye of Graeae",
+       "revision": 2171144,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 「잿빛 눈동자」의 회수",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Pavlina와 Ikhor",
+     "status": "accepted",
+     "note": "Supported by A10, M1, Q20 and Q27.",
+     "quote": "...Aksinya. Though I do not know how you managed to escape that inescapable prison... But you were not invited to today's proceedings.",
+     "sentences": [
+      {
+       "t_raw": "Pavlina는 Snegovik에게 영혼이 없어 **Ikhor의 힘**으로 그들에게 영혼을 주려는 의식을 거듭 열었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파블리나는 눈 요정에게 영혼이 없어 **이코르의 힘**으로 그들에게 영혼을 주려는 의식을 거듭 열었다."
+      },
+      {
+       "t_raw": "Ikhor는 Eye of Graeae가 셋으로 나뉜 파편 하나가 변한 존재였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이코르는 「잿빛 눈동자」가 셋으로 나뉜 파편 하나가 변한 존재였다."
+      },
+      {
+       "t_raw": "Aksinya는 House of Hesperides에서 Traveler와 함께 Pavlina가 Ikhor의 힘을 그르게 쓰는 것을 막았고, 의식 중 나타나 반대했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐는 헤스페리데스 저택에서 여행자와 함께 파블리나가 이코르의 힘을 그르게 쓰는 것을 막았고, 의식 중 나타나 반대했다."
+      },
+      {
+       "t_raw": "Pavlina는 Aksinya를 반기지 않으며 그런 방해가 불가피한 일을 얼마간 늦출 뿐이라고 했고, Aksinya는 불청객으로서 이 자리에 있을 권리가 있다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파블리나는 악시냐를 반기지 않으며 그런 방해가 불가피한 일을 얼마간 늦출 뿐이라고 했고, 악시냐는 불청객으로서 이 자리에 있을 권리가 있다고 말했다."
       }
      ],
      "sources": [
@@ -990,6 +1085,76 @@
       },
       {
        "kind": "quest",
+       "quest": "Through the Gates of Ivory",
+       "quest_ko": "상아로 만든 문을 지나",
+       "version": "7.0",
+       "speaker": "Aksinya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Through the Gates of Ivory",
+       "quest_ko": "상아로 만든 문을 지나",
+       "version": "7.0",
+       "speaker": "Pavlina"
+      }
+     ],
+     "heading": "작중 행적 — 파블리나와 이코르",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Pavlina와 Ikhor",
+     "status": "accepted",
+     "note": "Supported by Q31, M1, Q24, Q25 and Q18.",
+     "quote": "No, Aksinya, they won't. Both you and I know full well that the cycle has run its course and there will not be new civilizations henceforth.",
+     "sentences": [
+      {
+       "t_raw": "Eye of Graeae는 Aksinya가 아직 Pavlina를 막고 있다고 전했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「잿빛 눈동자」는 악시냐가 아직 파블리나를 막고 있다고 전했다."
+      },
+      {
+       "t_raw": "다음 의식에서 Pavlina는 Ikhor의 힘을 빼앗아 Cloudborne Palace로 올라갔고, Traveler와 Aksinya는 그곳에서 그녀를 이겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다음 의식에서 파블리나는 이코르의 힘을 빼앗아 구름 제단으로 올라갔고, 여행자와 악시냐는 그곳에서 그녀를 이겼다."
+      },
+      {
+       "t_raw": "Aksinya는 새 뜰에서 다시 태어날 것이라고 했지만, Pavlina는 **순환이 끝났고** 새로운 문명은 없을 것이라고 답했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐는 새 뜰에서 다시 태어날 것이라고 했지만, 파블리나는 **순환이 끝났고** 새로운 문명은 없을 것이라고 답했다."
+      },
+      {
+       "t_raw": "Aksinya는 그것을 알면서도 Pavlina를 잃는 것을 바란 적은 없다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐는 그것을 알면서도 파블리나를 잃는 것을 바란 적은 없다고 말했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pavlina",
+       "revision": 2178615,
+       "section": "Story",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Hesperides of Love and Hate"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Bell Ringing at Dusk",
+       "quest_ko": "만종",
+       "version": "7.0",
+       "speaker": "Aksinya"
+      },
+      {
+       "kind": "quest",
        "quest": "Bell Ringing at Dusk",
        "quest_ko": "만종",
        "version": "7.0",
@@ -1001,49 +1166,117 @@
        "quest_ko": "만종",
        "version": "7.0",
        "speaker": "Pavlina"
+      },
+      {
+       "kind": "quest",
+       "quest": "Procrustes' Iron Bed",
+       "quest_ko": "프로크루스테스의 침실",
+       "version": "7.0",
+       "speaker": "Eye of Graeae"
       }
      ],
-     "heading": "작중 행적 — 7.0 스네즈나야",
-     "latin_left": [
-      "Cloudborne Palace",
-      "Graeae"
-     ]
+     "heading": "작중 행적 — 파블리나와 이코르",
+     "latin_left": []
     },
     {
-     "section": "작중 행적 — 7.0 Snezhnaya",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Traveler responded that they would learn to love the person they became",
+     "section": "작중 행적 — Pavlina와 Ikhor",
+     "status": "accepted",
+     "note": "Supported by M1, Q14, Q32 and Q4; both interpretations are reasonable.",
+     "quote": "But how about you, Aksinya? Have you ever given \"him\" a chance to choose \"his\" path?",
      "sentences": [
       {
-       "t_raw": "Traveler가 Pale Crown Palace에서 마지막 파편을 되찾자 Eye of Graeae는 자신에게 배정된 'Tomorrow'를 보기로 했고, 문이 열리자 Aksinya는 Eye of Graeae를 가져가 Traveler에게 계획을 설명했다.",
+       "t_raw": "Pavlina는 쓰러지며 Aksinya에게 Aksinya의 계획을 충분히 생각했는지, \"그\"에게 \"그\"의 길을 선택할 기회를 주었는지 물었다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자가 하얀 왕관궁에서 마지막 파편을 되찾자 「잿빛 눈동자」는 자신에게 배정된 'Tomorrow'를 보기로 했고, 문이 열리자 악시냐는 「잿빛 눈동자」를 가져가 여행자에게 계획을 설명했다."
+       "t": "파블리나는 쓰러지며 악시냐에게 악시냐의 계획을 충분히 생각했는지, \"그\"에게 \"그\"의 길을 선택할 기회를 주었는지 물었다."
       },
       {
-       "t_raw": "Traveler가 반대하며 Court of Bliss까지 추격하자 Aksinya는 되찾은 힘을 Belyi Tsar의 몸에 옮겼고, Eye of Graeae의 의식은 그 몸에 업로드되어 **Primordial Human**이 움직일 수 있게 되었다.",
+       "t_raw": "그 전에 Aksinya는 무엇이 Pavlina를 바꾸었는지, 채워지지 못한 야망의 고통이었는지 되물었다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자가 반대하며 Court of Bliss까지 추격하자 악시냐는 되찾은 힘을 하얀 차르의 몸에 옮겼고, 「잿빛 눈동자」의 의식은 그 몸에 업로드되어 **「원초의 인간」**이 움직일 수 있게 되었다."
+       "t": "그 전에 악시냐는 무엇이 파블리나를 바꾸었는지, 채워지지 못한 야망의 고통이었는지 되물었다."
       },
       {
-       "t_raw": "Primordial Human은 이제 모든 것을 기억한다고 말하며, 많은 시간이 Aksinya와 자신 모두에게 흘렀다고 했다.",
-       "interp": false,
+       "t_raw": "이 마지막 질문은 Aksinya가 Pavlina에게서 들은 \"그들은 무엇이 자신에게 가장 좋은지 모른다\"는 말과 대조를 이루는 것으로 읽힌다.",
+       "interp": true,
        "dropped": false,
-       "t": "「원초의 인간」은 이제 모든 것을 기억한다고 말하며, 많은 시간이 악시냐와 자신 모두에게 흘렀다고 했다."
+       "t": "이 마지막 질문은 악시냐가 파블리나에게서 들은 \"그들은 무엇이 자신에게 가장 좋은지 모른다\"는 말과 대조를 이루는 것으로 읽힌다."
       },
       {
-       "t_raw": "Eye of Graeae는 자신의 처지를 아이러니하게 여기며 Traveler에게 형제가 완전히 다른 사람이 된다면 어떻게 할지 물었고, Traveler가 그 사람을 사랑하는 법을 배우겠다고 답하자 자신과 Aksinya를 막아 달라고 청했다.",
-       "interp": false,
+       "t_raw": "또한 **자기 계획** 안의 \"그\"의 선택을 겨냥한 것으로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "「잿빛 눈동자」는 자신의 처지를 아이러니하게 여기며 여행자에게 형제가 완전히 다른 사람이 된다면 어떻게 할지 물었고, 여행자가 그 사람을 사랑하는 법을 배우겠다고 답하자 자신과 악시냐를 막아 달라고 청했다."
+       "t": "또한 **자기 계획** 안의 \"그\"의 선택을 겨냥한 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pavlina",
+       "revision": 2178615,
+       "section": "Story",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Hesperides of Love and Hate"
+        }
+       ]
       },
       {
-       "t_raw": "Aksinya는 상대가 '열쇠'로서 이미 완벽한 창조물이지만 더 나아갈 수 있었으면 했다고 말했고, 그가 기억을 온전히 되찾으면 스스로 이해할 일이라고 했다.",
+       "kind": "quest",
+       "quest": "Bell Ringing at Dusk",
+       "quest_ko": "만종",
+       "version": "7.0",
+       "speaker": "Aksinya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Through the Gates of Ivory",
+       "quest_ko": "상아로 만든 문을 지나",
+       "version": "7.0",
+       "speaker": "Aksinya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Bell Ringing at Dusk",
+       "quest_ko": "만종",
+       "version": "7.0",
+       "speaker": "Pavlina"
+      }
+     ],
+     "heading": "작중 행적 — 파블리나와 이코르",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Pale Crown Palace와 Primordial Human",
+     "status": "accepted",
+     "note": "All sentences are supported by A10, M6 and M10.",
+     "quote": "Finally, the Traveler recovered the final fragment at Pale Crown Palace, where the Eye of Graeae decided to see the \"Tomorrow\" it was assigned to.",
+     "sentences": [
+      {
+       "t_raw": "**Pale Crown Palace**에서 Traveler가 마지막 파편을 회수하자 Eye of Graeae는 자신에게 주어진 \"Tomorrow\"를 보기로 한다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 상대가 '열쇠'로서 이미 완벽한 창조물이지만 더 나아갈 수 있었으면 했다고 말했고, 그가 기억을 온전히 되찾으면 스스로 이해할 일이라고 했다."
+       "t": "**하얀 왕관궁**에서 여행자가 마지막 파편을 회수하자 「잿빛 눈동자」는 자신에게 주어진 \"Tomorrow\"를 보기로 한다."
+      },
+      {
+       "t_raw": "문이 열리자 Aksinya는 Eye of Graeae를 가져가 계획을 설명하고, 반대하는 Traveler는 그녀를 Court of Bliss까지 쫓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문이 열리자 악시냐는 「잿빛 눈동자」를 가져가 계획을 설명하고, 반대하는 여행자는 그녀를 근심 없는 정원까지 쫓는다."
+      },
+      {
+       "t_raw": "그곳에서 그녀는 Eye of Graeae의 복원된 힘을 Belyi Tsar의 몸에 옮긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그곳에서 그녀는 「잿빛 눈동자」의 복원된 힘을 하얀 차르의 몸에 옮긴다."
+      },
+      {
+       "t_raw": "Belyi Tsar의 몸은 생물학적으로 살아 있는 허물이었으므로, 이는 오래전부터 준비된 **Primordial Human** 완성으로 이어지는 움직임인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "하얀 차르의 몸은 생물학적으로 살아 있는 허물이었으므로, 이는 오래전부터 준비된 **「원초의 인간」** 완성으로 이어지는 움직임인 셈이다."
       }
      ],
      "sources": [
@@ -1074,10 +1307,10 @@
       },
       {
        "kind": "wiki",
-       "page": "Eye of Graeae",
-       "revision": 2171144,
-       "section": "Profile",
-       "paragraph": "M2",
+       "page": "Primordial Human",
+       "revision": 2178311,
+       "section": "Story",
+       "paragraph": "M6",
        "wiki_refs": []
       },
       {
@@ -1092,7 +1325,56 @@
          "name": "An Ark That Used to Be a Soul"
         }
        ]
+      }
+     ],
+     "heading": "작중 행적 — 하얀 왕관궁과 「원초의 인간」",
+     "latin_left": [
+      "Tomorrow"
+     ]
+    },
+    {
+     "section": "작중 행적 — Pale Crown Palace와 Primordial Human",
+     "status": "accepted",
+     "note": "All sentences are supported by Q16, Q19, Q33 and M10. The interpretation in sentence 1 follows from Q19.",
+     "quote": "Yes, it is I... I now remember everything. Much time has passed... both for you, Aksinya, and for me.",
+     "sentences": [
+      {
+       "t_raw": "Primordial Human은 자신이 모든 것을 기억하며 Aksinya와 자신 모두에게 많은 시간이 흘렀다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「원초의 인간」은 자신이 모든 것을 기억하며 악시냐와 자신 모두에게 많은 시간이 흘렀다고 말한다."
       },
+      {
+       "t_raw": "이는 그가 기억을 되찾으면 스스로 깨달을 일이라고 한 Aksinya의 말로 이어진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 그가 기억을 되찾으면 스스로 깨달을 일이라고 한 악시냐의 말로 이어진다고 볼 수 있다."
+      },
+      {
+       "t_raw": "Aksinya는 그 \"key\"가 이미 완벽한 창조물이라 했고, 더 나아가지 못한 점을 아쉬워했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐는 그 \"열쇠\"가 이미 완벽한 창조물이라 했고, 더 나아가지 못한 점을 아쉬워했다.",
+       "polish": {
+        "from": "악시냐는 그 \"key\"가 이미 완벽한 창조물이라 했고, 더 나아가지 못한 점을 아쉬워했다.",
+        "text": "악시냐는 그 \"열쇠\"가 이미 완벽한 창조물이라 했고, 더 나아가지 못한 점을 아쉬워했다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "Traveler와 Paimon은 새로 완성된 Primordial Human과 맞서고, Eye of Graeae의 남은 기능을 활용해 이를 물리친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬은 새로 완성된 「원초의 인간」과 맞서고, 「잿빛 눈동자」의 남은 기능을 활용해 이를 물리친다."
+      },
+      {
+       "t_raw": "Belyi Tsar의 몸은 그 과정에서 먼지로 흩어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하얀 차르의 몸은 그 과정에서 먼지로 흩어진다."
+      }
+     ],
+     "sources": [
       {
        "kind": "quest",
        "quest": "To Gaze Upon the Dreaming Pale Crown",
@@ -1113,43 +1395,53 @@
        "quest_ko": "영혼의 배",
        "version": "7.0",
        "speaker": "Primordial Human"
+      },
+      {
+       "kind": "wiki",
+       "page": "Belyi Tsar",
+       "revision": 2178690,
+       "section": "Story > Legacy",
+       "paragraph": "M10",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "An Ark That Used to Be a Soul"
+        }
+       ]
       }
      ],
-     "heading": "작중 행적 — 7.0 스네즈나야",
-     "latin_left": [
-      "Tomorrow",
-      "Court of Bliss"
-     ]
+     "heading": "작중 행적 — 하얀 왕관궁과 「원초의 인간」",
+     "latin_left": []
     },
     {
-     "section": "작중 행적 — 7.0 Snezhnaya",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "the Primordial Human did not blame her for them, and she came to the realization that she longed for everything her colleagues also wanted.",
+     "section": "작중 행적 — Pale Crown Palace와 Primordial Human",
+     "status": "accepted",
+     "note": "All sentences are supported by A10 and M2.",
+     "quote": "Initially lamenting her failures, the Primordial Human did not blame her for them, and she came to the realization that she longed for everything her colleagues also wanted.",
      "sentences": [
       {
-       "t_raw": "Traveler는 Aksinya와 Primordial Human을 싸워 이겼고, Belyi Tsar의 몸은 재가 되어 흩어졌으며, Eye of Graeae와 Aksinya는 **Shadow Realm** 깊은 곳으로 떨어져 서로를 받아들였다.",
+       "t_raw": "Traveler의 승리로 Aksinya와 Primordial Human은 **Shadow Realm** 깊은 곳으로 떨어진다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자는 악시냐와 「원초의 인간」을 싸워 이겼고, 하얀 차르의 몸은 재가 되어 흩어졌으며, 「잿빛 눈동자」와 악시냐는 **그림자 영역** 깊은 곳으로 떨어져 서로를 받아들였다."
+       "t": "여행자의 승리로 악시냐와 「원초의 인간」은 **그림자 영역** 깊은 곳으로 떨어진다."
       },
       {
-       "t_raw": "처음에 Primordial Human은 자신의 실패를 한탄했지만 Aksinya를 탓하지 않았고, Aksinya는 자신이 동료들이 바랐던 모든 것을 갈망했다는 깨달음에 이르렀다.",
+       "t_raw": "처음에는 실패를 한탄하던 Primordial Human은 그녀를 탓하지 않았고, Aksinya는 자신이 동료들이 바라던 모든 것을 갈망해 왔다는 사실을 깨닫는다.",
        "interp": false,
        "dropped": false,
-       "t": "처음에 「원초의 인간」은 자신의 실패를 한탄했지만 악시냐를 탓하지 않았고, 악시냐는 자신이 동료들이 바랐던 모든 것을 갈망했다는 깨달음에 이르렀다."
+       "t": "처음에는 실패를 한탄하던 「원초의 인간」은 그녀를 탓하지 않았고, 악시냐는 자신이 동료들이 바라던 모든 것을 갈망해 왔다는 사실을 깨닫는다."
       },
       {
-       "t_raw": "Pavlina는 Aksinya가 그들이 새로운 뜰에서 다시 태어날 것이라고 말하자, 그런 일은 없을 것이라고 답했다.",
+       "t_raw": "Shadow Realm에서 Graeae와 Aksinya는 서로를 받아들인다.",
        "interp": false,
        "dropped": false,
-       "t": "파블리나는 악시냐가 그들이 새로운 뜰에서 다시 태어날 것이라고 말하자, 그런 일은 없을 것이라고 답했다."
+       "t": "그림자 영역에서 그라이아이와 악시냐는 서로를 받아들인다."
       },
       {
-       "t_raw": "Aksinya는 자신이 초대받지 않은 손님으로서 이곳에 있을 권리가 있다고 말했고, 상대가 머무는 장치를 만든 사람의 이름이 'Goggles'라며 그것을 돌려 달라고 했다.",
+       "t_raw": "Traveler가 지닌 장치는 기능은 그대로지만 인격은 지니지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 자신이 초대받지 않은 손님으로서 이곳에 있을 권리가 있다고 말했고, 상대가 머무는 장치를 만든 사람의 이름이 '고글'라며 그것을 돌려 달라고 했다."
+       "t": "여행자가 지닌 장치는 기능은 그대로지만 인격은 지니지 않는다."
       }
      ],
      "sources": [
@@ -1185,68 +1477,28 @@
        "section": "Profile",
        "paragraph": "M2",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Belyi Tsar",
-       "revision": 2178690,
-       "section": "Story > Legacy",
-       "paragraph": "M10",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "An Ark That Used to Be a Soul"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Chorus of Solace",
-       "quest_ko": "위로의 합창",
-       "version": "7.0",
-       "speaker": "Aksinya"
-      },
-      {
-       "kind": "quest",
-       "quest": "Through the Gates of Ivory",
-       "quest_ko": "상아로 만든 문을 지나",
-       "version": "7.0",
-       "speaker": "Aksinya"
-      },
-      {
-       "kind": "quest",
-       "quest": "Chorus of Solace",
-       "quest_ko": "위로의 합창",
-       "version": "7.0",
-       "speaker": "Aksinya"
       }
      ],
-     "heading": "작중 행적 — 7.0 스네즈나야",
+     "heading": "작중 행적 — 하얀 왕관궁과 「원초의 인간」",
      "latin_left": []
     },
     {
      "section": "능력",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "A3 and A7 support the facts. The interpretation is reasonable.",
      "quote": "Aksinya possessed a staff that gave her the ability to wield Cryo.",
      "sentences": [
       {
-       "t_raw": "Aksinya는 Cryo를 다룰 수 있는 지팡이를 가졌다.",
+       "t_raw": "Aksinya는 **Cryo를 다룰 수 있는 지팡이**를 지녔고, 세계의 비밀과 금기, 세계의 한계를 조사하는 연구를 맡았다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 얼음을 다룰 수 있는 지팡이를 가졌다."
+       "t": "악시냐는 **얼음을 다룰 수 있는 지팡이**를 지녔고, 세계의 비밀과 금기, 세계의 한계를 조사하는 연구를 맡았다."
       },
       {
-       "t_raw": "그녀는 Belyi Tsar가 Hyperborea에서 발견한 비밀을 전해 듣고, 세계의 비밀과 금기, 한계를 조사하는 일을 맡았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 하얀 차르가 휘페르보레아에서 발견한 비밀을 전해 듣고, 세계의 비밀과 금기, 한계를 조사하는 일을 맡았다."
-      },
-      {
-       "t_raw": "**지팡이의 Cryo 운용과 금기 연구**는 그녀의 수단이 능력과 연구 양쪽에 걸쳐 있음을 보여 준다.",
+       "t_raw": "이 둘을 함께 보면, 그녀의 능력은 힘을 휘두르는 수단과 금기 탐구 양쪽에 걸쳐 있었다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "**지팡이의 얼음 운용과 금기 연구**는 그녀의 수단이 능력과 연구 양쪽에 걸쳐 있음을 보여 준다."
+       "t": "이 둘을 함께 보면, 그녀의 능력은 힘을 휘두르는 수단과 금기 탐구 양쪽에 걸쳐 있었다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -1294,44 +1546,41 @@
     },
     {
      "section": "능력",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Supported by Q2, Q22, M3, A7, A8, Q1 and M12 (the alchemist's doubt about calling it a success).",
      "quote": "They'll be absolutely stunned to learn that I can upload your consciousness here, fully intact, using ancient Hyperborean technology.",
      "sentences": [
       {
-       "t_raw": "Aksinya는 Hvergelmir와 함께 Belyi Tsar를 Primordial Human으로 승천시키기 위해 Eye of Graeae를 만들었다.",
+       "t_raw": "그녀는 고대 Hyperborean 기술로 의식을 이곳에 완전한 상태로 업로드할 수 있다고 말했고, 가볍고 휴대 가능한 장치를 **Eye of Graeae**라 불렀다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 근원 연구소와 함께 하얀 차르를 「원초의 인간」으로 승천시키기 위해 「잿빛 눈동자」를 만들었다."
+       "t": "그녀는 고대 휘페르보레아 기술로 의식을 이곳에 완전한 상태로 업로드할 수 있다고 말했고, 가볍고 휴대 가능한 장치를 **「잿빛 눈동자」**라 불렀다."
       },
       {
-       "t_raw": "그녀는 고대 Hyperborean 기술로 의식을 완전한 상태로 업로드할 수 있다고 말했고, 가벼운 휴대 장치를 Eye of Graeae라 부르자고 했다.",
+       "t_raw": "Eye of Graeae는 Aksinya와 Hvergelmir의 창조물로, 최초의 'prototype human'을 만들기 위해 세 조각으로 나뉘었다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 고대 휘페르보레아 기술로 의식을 완전한 상태로 업로드할 수 있다고 말했고, 가벼운 휴대 장치를 「잿빛 눈동자」라 부르자고 했다."
+       "t": "「잿빛 눈동자」는 악시냐와 근원 연구소의 창조물로, 최초의 '원형 인간'을 만들기 위해 세 조각으로 나뉘었다.",
+       "polish": {
+        "from": "「잿빛 눈동자」는 악시냐와 근원 연구소의 창조물로, 최초의 'prototype human'을 만들기 위해 세 조각으로 나뉘었다.",
+        "text": "「잿빛 눈동자」는 악시냐와 근원 연구소의 창조물로, 최초의 '원형 인간'을 만들기 위해 세 조각으로 나뉘었다.",
+        "by": "qwen"
+       }
       },
       {
-       "t_raw": "회복된 Eye of Graeae로 Belyi Tsar의 몸에 의식을 업로드한 일은 이 장치가 승천 계획의 핵심 수단이었음을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "회복된 「잿빛 눈동자」로 하얀 차르의 몸에 의식을 업로드한 일은 이 장치가 승천 계획의 핵심 수단이었음을 보여 준다."
-      },
-      {
-       "t_raw": "다만 Eye of Graeae를 Paimon의 몸에 동화시키는 일에는 다른 문제가 생길 수 있다고 우려했다.",
+       "t_raw": "한 긴 머리의 연금술사가 행한 파격적인 연금술은 그녀에게 연구에 유용한 것으로 여겨졌다.",
        "interp": false,
        "dropped": false,
-       "t": "다만 「잿빛 눈동자」를 페이몬의 몸에 동화시키는 일에는 다른 문제가 생길 수 있다고 우려했다."
+       "t": "한 긴 머리의 연금술사가 행한 파격적인 연금술은 그녀에게 연구에 유용한 것으로 여겨졌다."
+      },
+      {
+       "t_raw": "그 연구는 성공했지만 결과는 밝혀지지 않았고, 그녀는 시험 대상자들이 무한한 기쁨의 영역에 들어가 다시는 슬픔이나 고통을 겪지 않게 되었다고 보고했으며, 한 연금술사의 기록은 그 실험을 '성공'이라 부를 수 있는지 의문을 제기했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 연구는 성공했지만 결과는 밝혀지지 않았고, 그녀는 시험 대상자들이 무한한 기쁨의 영역에 들어가 다시는 슬픔이나 고통을 겪지 않게 되었다고 보고했으며, 한 연금술사의 기록은 그 실험을 '성공'이라 부를 수 있는지 의문을 제기했다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Primordial Human",
-       "revision": 2178311,
-       "section": "Story",
-       "paragraph": "M6",
-       "wiki_refs": []
-      },
       {
        "kind": "quest",
        "quest": "To Gaze Upon the Dreaming Pale Crown",
@@ -1345,70 +1594,6 @@
        "quest_ko": "하얀 왕관의 꿈",
        "version": "7.0",
        "speaker": "Aksinya"
-      },
-      {
-       "kind": "wiki",
-       "page": "Eye of Graeae",
-       "revision": 2171144,
-       "section": "Profile",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "An Ark That Used to Be a Soul",
-       "quest_ko": "영혼의 배",
-       "version": "7.0",
-       "speaker": "Aksinya"
-      }
-     ],
-     "heading": "능력",
-     "latin_left": []
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "At Flamefeather Valley, she went up to Zhara's corpse and cast a spell to disintegrate its body before it could revive.",
-     "sentences": [
-      {
-       "t_raw": "Aksinya는 Zhara의 시신이 되살아나기 전에 주문을 걸어 분해했고, 최종 조각이 회수된 뒤에는 복원된 힘을 Belyi Tsar의 무기력한 육체에 옮겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "악시냐는 자라의 시신이 되살아나기 전에 주문을 걸어 분해했고, 최종 조각이 회수된 뒤에는 복원된 힘을 하얀 차르의 무기력한 육체에 옮겼다."
-      },
-      {
-       "t_raw": "Eye of Graeae가 세 조각으로 나뉘어 첫 \"prototype human\"을 만든 점과 함께 보면, 그 힘은 인간 창조 실험과 Belyi Tsar의 육체라는 두 방향에 쓰인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "「잿빛 눈동자」가 세 조각으로 나뉘어 첫 \"prototype human\"을 만든 점과 함께 보면, 그 힘은 인간 창조 실험과 하얀 차르의 육체라는 두 방향에 쓰인 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aksinya",
-       "revision": 2177436,
-       "section": "Story",
-       "paragraph": "A10",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Chorus of Solace"
-        },
-        {
-         "type": "quest",
-         "name": "Bell Ringing at Dusk"
-        },
-        {
-         "type": "quest",
-         "name": "The Stone Beasts, Like Ghouls Seated"
-        },
-        {
-         "type": "quest",
-         "name": "An Ark That Used to Be a Soul"
-        }
-       ]
       },
       {
        "kind": "wiki",
@@ -1417,6 +1602,51 @@
        "section": "Profile",
        "paragraph": "M3",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aksinya",
+       "revision": 2177436,
+       "section": "Story",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Pendulum That Ceased Amidst a Great Fall"
+        },
+        {
+         "type": "arti",
+         "name": "Ovations That Ceased Upon Festivity"
+        },
+        {
+         "type": "arti",
+         "name": "Sharpness That Ceased Upon Wondrous Creation"
+        },
+        {
+         "type": "arti",
+         "name": "Moment That Ceased Upon Waking From Grand Dreams"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Aksinya",
+       "revision": 2177436,
+       "section": "Story",
+       "paragraph": "A8",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Ovations That Ceased Upon Festivity"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Stone Beasts, Like Ghouls Seated",
+       "quest_ko": "궁전의 야수",
+       "version": "7.0",
+       "speaker": "Aksinya"
       }
      ],
      "heading": "능력",
@@ -1424,27 +1654,33 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "During an expedition into Hyperborean ruins within the Shadow Realm, Aksinya helped anchor him and gifted him a pen.",
+     "status": "accepted",
+     "note": "Supported by A1, M5 and Q3. The interpretation is reasonable.",
+     "quote": "I am but a lowly \"Royal Jester\" who once served His Majesty, the late Belyi Tsar. My name, insignificant as it is, is Aksinya.",
      "sentences": [
       {
-       "t_raw": "Belyi Tsar는 Aksinya를 **양녀이자 측근**으로 두고 귀걸이를 주며 자신의 꿈을 나누었고, 그녀는 Alvis, Pavlina, Koshchei와 함께 Hyperborea에서 얻은 정보에 뿌리를 둔 계획에 따라 별들의 궁정으로 향하는 길을 찾는 임무를 맡았다.",
+       "t_raw": "Belyi Tsar는 Aksinya를 양녀로 받아들여 **가까운 측근**으로 두었고, Court Jester라는 공적 직함을 주어 실제 영향력을 가리게 했다.",
        "interp": false,
        "dropped": false,
-       "t": "하얀 차르는 악시냐를 **양녀이자 측근**으로 두고 귀걸이를 주며 자신의 꿈을 나누었고, 그녀는 알비스, 파블리나, 코셰이와 함께 휘페르보레아에서 얻은 정보에 뿌리를 둔 계획에 따라 별들의 궁정으로 향하는 길을 찾는 임무를 맡았다."
+       "t": "하얀 차르는 악시냐를 양녀로 받아들여 **가까운 측근**으로 두었고, 궁정 광대라는 공적 직함을 주어 실제 영향력을 가리게 했다."
       },
       {
-       "t_raw": "Izmaylov는 Alvis의 명으로 Hvergelmir에 스파이로 들어왔지만, Aksinya는 그의 진의를 알면서도 그를 가르치고 펜을 쥐여 주어 충성을 얻었다.",
+       "t_raw": "어른이 된 Aksinya에게 귀걸이를 선물하고, 그녀가 무엇을 해 주면 좋겠느냐 묻자 자신이 품었던 꿈을 털어놓은 뒤 Alvis, Pavlina, Koshchei, Aksinya에게 별들의 궁정의 빈 자리로 향하는 계단을 찾으라고 맡겼다.",
        "interp": false,
        "dropped": false,
-       "t": "이즈마일로프는 알비스의 명으로 근원 연구소에 스파이로 들어왔지만, 악시냐는 그의 진의를 알면서도 그를 가르치고 펜을 쥐여 주어 충성을 얻었다."
+       "t": "어른이 된 악시냐에게 귀걸이를 선물하고, 그녀가 무엇을 해 주면 좋겠느냐 묻자 자신이 품었던 꿈을 털어놓은 뒤 알비스, 파블리나, 코셰이, 악시냐에게 별들의 궁정의 빈 자리로 향하는 계단을 찾으라고 맡겼다."
       },
       {
-       "t_raw": "500년 뒤 노인이 된 Izmaylov는 돌아온 그녀에게 펜을 돌려주고, 두 사람은 서로에게 빚이 없음을 알며 헤어졌다.",
+       "t_raw": "Aksinya 자신은 늦은 Belyi Tsar를 섬긴 하찮은 Royal Jester라고 소개한다.",
        "interp": false,
        "dropped": false,
-       "t": "500년 뒤 노인이 된 이즈마일로프는 돌아온 그녀에게 펜을 돌려주고, 두 사람은 서로에게 빚이 없음을 알며 헤어졌다."
+       "t": "악시냐 자신은 늦은 하얀 차르를 섬긴 하찮은 Royal Jester라고 소개한다."
+      },
+      {
+       "t_raw": "실제로는 Tsar의 꿈을 나눠 맡은 측근이면서 스스로는 하찮은 광대라 낮추어 말하는 태도는 그녀의 공적 겸손과 내밀한 영향력 사이의 간극을 드러낸다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "실제로는 차르의 꿈을 나눠 맡은 측근이면서 스스로는 하찮은 광대라 낮추어 말하는 태도는 그녀의 공적 겸손과 내밀한 영향력 사이의 간극을 드러낸다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -1474,36 +1710,72 @@
        ]
       },
       {
-       "kind": "wiki",
-       "page": "Izmaylov",
-       "revision": 2168028,
-       "section": "Story",
-       "paragraph": "M8",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Ovations That Ceased Upon Festivity"
-        },
-        {
-         "type": "arti",
-         "name": "Foundryman's Conjecture"
-        }
-       ]
+       "kind": "quest",
+       "quest": "Chorus of Solace",
+       "quest_ko": "위로의 합창",
+       "version": "7.0",
+       "speaker": "Aksinya"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Royal Jester"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences supported by A6, A9, M1, Q18, Q29.",
+     "quote": "I am aware of that. But I have never hoped for your loss... Pavlina.",
+     "sentences": [
+      {
+       "t_raw": "Snegurochka의 Pavlina가 연회에서 길을 잃은 Aksinya를 안내하며 두 사람은 친구가 되었고, Pavlina는 자신의 저택에서 그녀를 언제든 환영하겠다고 약속했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "눈 여인의 파블리나가 연회에서 길을 잃은 악시냐를 안내하며 두 사람은 친구가 되었고, 파블리나는 자신의 저택에서 그녀를 언제든 환영하겠다고 약속했다."
       },
       {
+       "t_raw": "그러나 Cataclysm 뒤 Eye of Graeae가 계획의 결과를 깨닫고 세 사람을 설득하자 Pavlina는 Alvis, Koshchei와 함께 Aksinya를 Shadow Realm으로 밀어 넣었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 대재앙 뒤 「잿빛 눈동자」가 계획의 결과를 깨닫고 세 사람을 설득하자 파블리나는 알비스, 코셰이와 함께 악시냐를 그림자 영역으로 밀어 넣었다."
+      },
+      {
+       "t_raw": "훗날 Pavlina는 죽는 순간 Aksinya에게 자신의 계획을 충분히 생각했는지, ‘그’에게 선택할 기회를 주었는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "훗날 파블리나는 죽는 순간 악시냐에게 자신의 계획을 충분히 생각했는지, '그'에게 선택할 기회를 주었는지 묻는다."
+      },
+      {
+       "t_raw": "Aksinya는 그 점을 알고 있다면서도 Pavlina가 사라지기를 바란 적은 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐는 그 점을 알고 있다면서도 파블리나가 사라지기를 바란 적은 없다고 말한다."
+      },
+      {
+       "t_raw": "Eye of Graeae는 누군가들이 꽤 가까웠다고 말하며 Aksinya가 배신당한 일을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「잿빛 눈동자」는 누군가들이 꽤 가까웠다고 말하며 악시냐가 배신당한 일을 언급한다."
+      },
+      {
+       "t_raw": "한때 친구였던 사이가 Shadow Realm으로 밀어내는 **배신**으로 끝났고, 마지막 질문과 Aksinya의 대답, 그리고 꽤 가까웠다는 회고가 겹치면서 두 사람의 관계는 단순한 적대가 아니었던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한때 친구였던 사이가 그림자 영역으로 밀어내는 **배신**으로 끝났고, 마지막 질문과 악시냐의 대답, 그리고 꽤 가까웠다는 회고가 겹치면서 두 사람의 관계는 단순한 적대가 아니었던 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
        "kind": "wiki",
-       "page": "Izmaylov",
-       "revision": 2168028,
+       "page": "Aksinya",
+       "revision": 2177436,
        "section": "Story",
-       "paragraph": "M7",
+       "paragraph": "A6",
        "wiki_refs": [
         {
          "type": "arti",
-         "name": "Foundryman's Observation"
-        },
-        {
-         "type": "arti",
-         "name": "Sharpness That Ceased Upon Wondrous Creation"
+         "name": "Iridescence That Ceased Amidst Glory"
         }
        ]
       },
@@ -1523,49 +1795,6 @@
          "name": "Foundryman's Legacy"
         }
        ]
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I am aware of that. But I have never hoped for your loss... Pavlina.",
-     "sentences": [
-      {
-       "t_raw": "Pavlina는 연회에서 길을 잃은 Aksinya를 안내해 친구가 되었고, 자신의 저택에서 언제든 맞이하겠다고 약속했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "파블리나는 연회에서 길을 잃은 악시냐를 안내해 친구가 되었고, 자신의 저택에서 언제든 맞이하겠다고 약속했다."
-      },
-      {
-       "t_raw": "그러나 Eye of Graeae가 셋을 설득하자 Pavlina, Alvis, Koshchei는 Aksinya를 Shadow Realm으로 밀어 넣었고, 뒤에 Aksinya는 Pavlina를 잃기를 바란 적이 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 「잿빛 눈동자」가 셋을 설득하자 파블리나, 알비스, 코셰이는 악시냐를 그림자 영역으로 밀어 넣었고, 뒤에 악시냐는 파블리나를 잃기를 바란 적이 없다고 말한다."
-      },
-      {
-       "t_raw": "Alvis는 연구 성공 뒤 Aksinya를 존중했으나 그녀를 못마땅해했고, Koshchei는 그녀의 손에 쓸모없는 귀를 돋구었다가 정식 요청을 내라는 응대에 시계를 받고 동경을 품었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "알비스는 연구 성공 뒤 악시냐를 존중했으나 그녀를 못마땅해했고, 코셰이는 그녀의 손에 쓸모없는 귀를 돋구었다가 정식 요청을 내라는 응대에 시계를 받고 동경을 품었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aksinya",
-       "revision": 2177436,
-       "section": "Story",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Iridescence That Ceased Amidst Glory"
-        }
-       ]
       },
       {
        "kind": "wiki",
@@ -1581,14 +1810,6 @@
        ]
       },
       {
-       "kind": "wiki",
-       "page": "Eye of Graeae",
-       "revision": 2171144,
-       "section": "Profile",
-       "paragraph": "M3",
-       "wiki_refs": []
-      },
-      {
        "kind": "quest",
        "quest": "Bell Ringing at Dusk",
        "quest_ko": "만종",
@@ -1596,15 +1817,153 @@
        "speaker": "Aksinya"
       },
       {
+       "kind": "quest",
+       "quest": "Bell Ringing at Dusk",
+       "quest_ko": "만종",
+       "version": "7.0",
+       "speaker": "Pavlina"
+      },
+      {
+       "kind": "quest",
+       "quest": "To Gaze Upon the Dreaming Pale Crown",
+       "quest_ko": "하얀 왕관의 꿈",
+       "version": "7.0",
+       "speaker": "Eye of Graeae"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported by M8, M11 and the interpretation is reasonable.",
+     "quote": "She calmly told him that if he wanted to do so again, he'd have to submit an official request.",
+     "sentences": [
+      {
+       "t_raw": "Alvis는 Belyi Tsar의 양녀인 Aksinya를 못마땅해했고, Izmaylov를 Hvergelmir에 파견해 첩자로 쓰려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알비스는 하얀 차르의 양녀인 악시냐를 못마땅해했고, 이즈마일로프를 근원 연구소에 파견해 첩자로 쓰려 했다."
+      },
+      {
+       "t_raw": "Koshchei는 Hvergelmir에서 Aksinya를 만났고, 그녀의 부드러운 태도에 화가 나 손에 귀를 자라게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "코셰이는 근원 연구소에서 악시냐를 만났고, 그녀의 부드러운 태도에 화가 나 손에 귀를 자라게 했다."
+      },
+      {
+       "t_raw": "Aksinya는 그 귀가 아무 기능도 없다는 점에 실망했을 뿐 동요하지 않았고, 다시 그러려면 공식 요청을 내라고 말한 뒤 그에게 일정표를 챙길 시계를 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐는 그 귀가 아무 기능도 없다는 점에 실망했을 뿐 동요하지 않았고, 다시 그러려면 공식 요청을 내라고 말한 뒤 그에게 일정표를 챙길 시계를 주었다."
+      },
+      {
+       "t_raw": "Koshchei는 그 자리에서 멍해졌고 갈망을 느꼈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "코셰이는 그 자리에서 멍해졌고 갈망을 느꼈다."
+      },
+      {
+       "t_raw": "Alvis의 반감과 Koshchei의 당황스러운 시험은 Aksinya가 주변의 적의와 기행을 절차와 관찰로 다루는 인물임을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "알비스의 반감과 코셰이의 당황스러운 시험은 악시냐가 주변의 적의와 기행을 절차와 관찰로 다루는 인물임을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
        "kind": "wiki",
-       "page": "Aksinya",
-       "revision": 2177436,
+       "page": "Izmaylov",
+       "revision": 2168028,
        "section": "Story",
-       "paragraph": "A8",
+       "paragraph": "M8",
        "wiki_refs": [
         {
          "type": "arti",
          "name": "Ovations That Ceased Upon Festivity"
+        },
+        {
+         "type": "arti",
+         "name": "Foundryman's Conjecture"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Koshchei",
+       "revision": 2175939,
+       "section": "Profile",
+       "paragraph": "M11",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Moment That Ceased Upon Waking From Grand Dreams"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported by M7, M9, A9, Q10; interpretation follows.",
+     "quote": "he stood and bowed to her, confessing how happy he was to see her return, and gave her back her pen.",
+     "sentences": [
+      {
+       "t_raw": "Alvis가 보낸 첩자 Izmaylov는 Hvergelmir에서 제 역할을 못했고, Aksinya는 그의 진짜 충성 대상도 알고 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알비스가 보낸 첩자 이즈마일로프는 근원 연구소에서 제 역할을 못했고, 악시냐는 그의 진짜 충성 대상도 알고 있었다."
+      },
+      {
+       "t_raw": "시간이 지나며 Aksinya는 그를 가르치는 멘토가 되었고, Shadow Realm의 Hyperborea 폐허 원정에서 그를 붙잡아 주며 펜을 선물하자 Izmaylov는 진심으로 충성하게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시간이 지나며 악시냐는 그를 가르치는 멘토가 되었고, 그림자 영역의 휘페르보레아 폐허 원정에서 그를 붙잡아 주며 펜을 선물하자 이즈마일로프는 진심으로 충성하게 되었다."
+      },
+      {
+       "t_raw": "Cataclysm 뒤 Alvis가 Aksinya의 죽음을 선언했지만 Izmaylov는 그 말을 믿지 않고 Aksinya 또는 그 시신을 찾겠다고 맹세했으며, Tsaritsa와 알 수 없는 거래를 통해 Royal Energy Commission의 President가 되어 Alvis와 경쟁했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대재앙 뒤 알비스가 악시냐의 죽음을 선언했지만 이즈마일로프는 그 말을 믿지 않고 악시냐 또는 그 시신을 찾겠다고 맹세했으며, 얼음의 여왕과 알 수 없는 거래를 통해 에너지 협회의 President가 되어 알비스와 경쟁했다."
+      },
+      {
+       "t_raw": "500년 뒤 돌아온 Aksinya는 늙은 Izmaylov에게 세상이 어떻게 되었는지 묻고, Izmaylov는 기뻐하며 절하고 펜을 돌려준 뒤 두 사람은 더 이상 서로 빚지지 않음을 알고 헤어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "500년 뒤 돌아온 악시냐는 늙은 이즈마일로프에게 세상이 어떻게 되었는지 묻고, 이즈마일로프는 기뻐하며 절하고 펜을 돌려준 뒤 두 사람은 더 이상 서로 빚지지 않음을 알고 헤어진다."
+      },
+      {
+       "t_raw": "Aksinya는 Izmaylov가 자신의 소개가 지나치게 겸손하다고 늘 불평한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐는 이즈마일로프가 자신의 소개가 지나치게 겸손하다고 늘 불평한다고 말한다."
+      },
+      {
+       "t_raw": "첩자로 시작한 사이가 멘토와 제자로 뒤집히고, 재회 뒤 펜을 돌려받은 두 사람이 빚의 종결을 인정하는 흐름은 이 관계가 의심에서 신뢰로, 그리고 빚의 종결로 이동했다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "첩자로 시작한 사이가 멘토와 제자로 뒤집히고, 재회 뒤 펜을 돌려받은 두 사람이 빚의 종결을 인정하는 흐름은 이 관계가 의심에서 신뢰로, 그리고 빚의 종결로 이동했다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Izmaylov",
+       "revision": 2168028,
+       "section": "Story",
+       "paragraph": "M7",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Foundryman's Observation"
+        },
+        {
+         "type": "arti",
+         "name": "Sharpness That Ceased Upon Wondrous Creation"
         }
        ]
       },
@@ -1624,34 +1983,90 @@
          "name": "Foundryman's Conjecture"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Izmaylov",
+       "revision": 2168028,
+       "section": "Story",
+       "paragraph": "M9",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Foundryman's Calculus"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Aksinya",
+       "revision": 2177436,
+       "section": "Story",
+       "paragraph": "A9",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Foundryman's Observation"
+        },
+        {
+         "type": "arti",
+         "name": "Foundryman's Legacy"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Chorus of Solace",
+       "quest_ko": "위로의 합창",
+       "version": "7.0",
+       "speaker": "Aksinya"
       }
      ],
      "heading": "인간관계",
-     "latin_left": []
+     "latin_left": [
+      "President"
+     ]
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "it asked to be divided into three segments, persuading Koshchei, Pavlina and Alvis to stop Aksinya from finishing the experiment.",
+     "status": "accepted",
+     "note": "All supported by M3, M1, Q29, M2.",
+     "quote": "both tumbled into the depths of the Shadow Realm, where Graeae and Aksinya accepted each other.",
      "sentences": [
       {
-       "t_raw": "Eye of Graeae는 Aksinya와 Hvergelmir의 창조물이었지만, 계획이 인류와 fae에 위협이 되고 세계에 격변을 부를 수 있음을 깨닫고 스스로 세 조각으로 나뉘기를 청해 셋을 설득했다.",
+       "t_raw": "Eye of Graeae는 Aksinya와 Hvergelmir가 만든 창조물로, 세 조각으로 나뉘어 첫 prototype human을 만들게 했다.",
        "interp": false,
        "dropped": false,
-       "t": "「잿빛 눈동자」는 악시냐와 근원 연구소의 창조물이었지만, 계획이 인류와 fae에 위협이 되고 세계에 격변을 부를 수 있음을 깨닫고 스스로 세 조각으로 나뉘기를 청해 셋을 설득했다."
+       "t": "「잿빛 눈동자」는 악시냐와 근원 연구소가 만든 창조물로, 세 조각으로 나뉘어 첫 원형 인간을 만들게 했다.",
+       "polish": {
+        "from": "「잿빛 눈동자」는 악시냐와 근원 연구소가 만든 창조물로, 세 조각으로 나뉘어 첫 prototype human을 만들게 했다.",
+        "text": "「잿빛 눈동자」는 악시냐와 근원 연구소가 만든 창조물로, 세 조각으로 나뉘어 첫 원형 인간을 만들게 했다.",
+        "by": "qwen"
+       }
       },
       {
-       "t_raw": "복원된 Eye는 모든 것을 기억한 뒤 자신과 Aksinya를 막아 달라고 청했고, 둘은 Shadow Realm에서 서로를 받아들였다.",
+       "t_raw": "그러나 Eye of Graeae는 Aksinya의 계획이 성공할 경우 일어날 일을 깨닫고 Koshchei, Pavlina, Alvis를 설득해 그녀를 막게 했다.",
        "interp": false,
        "dropped": false,
-       "t": "복원된 Eye는 모든 것을 기억한 뒤 자신과 악시냐를 막아 달라고 청했고, 둘은 그림자 영역에서 서로를 받아들였다."
+       "t": "그러나 「잿빛 눈동자」는 악시냐의 계획이 성공할 경우 일어날 일을 깨닫고 코셰이, 파블리나, 알비스를 설득해 그녀를 막게 했다."
       },
       {
-       "t_raw": "창조물이 창조자의 계획을 멈추게 했으나 **창조물과 창조자의 화해**를 이룬 관계인 셈이다.",
+       "t_raw": "Eye of Graeae는 이후 대화에서 Aksinya가 배신당한 일을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「잿빛 눈동자」는 이후 대화에서 악시냐가 배신당한 일을 언급한다."
+      },
+      {
+       "t_raw": "Shadow Realm 깊이 떨어진 뒤 Eye of Graeae와 Aksinya는 서로를 받아들였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그림자 영역 깊이 떨어진 뒤 「잿빛 눈동자」와 악시냐는 서로를 받아들였다."
+      },
+      {
+       "t_raw": "자신의 창조물이 계획을 막기 위해 배신을 주도했지만 마지막에는 서로를 받아들였다는 점은 Aksinya의 관계가 배신과 화해를 함께 지니는 또 하나의 축을 이룬다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "창조물이 창조자의 계획을 멈추게 했으나 **창조물과 창조자의 화해**를 이룬 관계인 셈이다."
+       "t": "자신의 창조물이 계획을 막기 위해 배신을 주도했지만 마지막에는 서로를 받아들였다는 점은 악시냐의 관계가 배신과 화해를 함께 지니는 또 하나의 축을 이룬다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -1665,182 +2080,88 @@
       },
       {
        "kind": "wiki",
-       "page": "Eye of Graeae",
-       "revision": 2171144,
-       "section": "Profile",
-       "paragraph": "M2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Eye"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Its goal was to bring humanity to \"Tomorrow.\"",
-     "sentences": [
-      {
-       "t_raw": "Eye of Graeae는 인류를 **Tomorrow**로 이끄는 것을 목표로 한 Aksinya와 Hvergelmir의 창조물이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "「잿빛 눈동자」는 인류를 **Tomorrow**로 이끄는 것을 목표로 한 악시냐와 근원 연구소의 창조물이다."
-      },
-      {
-       "t_raw": "완전한 힘으로 융합해 Primordial Human의 권위를 얻는 것은 모든 인간과 fae에게 위협이 되며, 세계에 피할 수 없는 혁명을 뜻한다고 여겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "완전한 힘으로 융합해 「원초의 인간」의 권위를 얻는 것은 모든 인간과 fae에게 위협이 되며, 세계에 피할 수 없는 혁명을 뜻한다고 여겼다."
-      },
-      {
-       "t_raw": "그래서 Koshchei, Pavlina, Alvis를 설득해 Aksinya의 실험을 막게 했고, 세 사람은 각자의 이유로 이를 실행했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그래서 코셰이, 파블리나, 알비스를 설득해 악시냐의 실험을 막게 했고, 세 사람은 각자의 이유로 이를 실행했다."
-      },
-      {
-       "t_raw": "인류를 Tomorrow로 이끌려는 목표와 완전한 힘이 인간과 fae 모두에게 위협이 된다는 판단이 겹치면서, 그 Tomorrow의 완성이 누구를 위한 것인지가 물음으로 남는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "인류를 Tomorrow로 이끌려는 목표와 완전한 힘이 인간과 fae 모두에게 위협이 된다는 판단이 겹치면서, 그 Tomorrow의 완성이 누구를 위한 것인지가 물음으로 남는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eye of Graeae",
-       "revision": 2171144,
-       "section": "Profile",
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Tomorrow",
-      "Tomorrow",
-      "Tomorrow"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "His husk remained biologically alive, continuously extending outward through an ever-growing network of \"nerves\" as a physical manifestation of his unceasing longing.",
-     "sentences": [
-      {
-       "t_raw": "Belyi Tsar의 몸은 의식이 떠난 뒤에도 생물학적으로 살아 있는 껍질로 남아, 끝없는 갈망이 뻗는 신경망을 이루었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "하얀 차르의 몸은 의식이 떠난 뒤에도 생물학적으로 살아 있는 껍질로 남아, 끝없는 갈망이 뻗는 신경망을 이루었다."
-      },
-      {
-       "t_raw": "Aksinya와 Hvergelmir는 Eye of Graeae로 그의 Primordial Human 승천을 완성하려 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "악시냐와 근원 연구소는 「잿빛 눈동자」로 그의 「원초의 인간」 승천을 완성하려 했다."
-      },
-      {
-       "t_raw": "복원된 Eye of Graeae가 Belyi Tsar의 몸에서 기억을 되찾자, 형제가 완전히 다른 사람이 되면 어떻게 할지 Traveler에게 묻고 스스로와 Aksinya를 멈춰 달라고 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "복원된 「잿빛 눈동자」가 하얀 차르의 몸에서 기억을 되찾자, 형제가 완전히 다른 사람이 되면 어떻게 할지 여행자에게 묻고 스스로와 악시냐를 멈춰 달라고 했다."
-      },
-      {
-       "t_raw": "Aksinya는 'key'인 존재를 이미 완벽한 창조물이라고 했지만, 더 나아갈 수 있었으면 하고 아쉬워했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "악시냐는 'key'인 존재를 이미 완벽한 창조물이라고 했지만, 더 나아갈 수 있었으면 하고 아쉬워했다."
-      },
-      {
-       "t_raw": "Pavlina는 Aksinya에게 '그'에게 그의 길을 선택할 기회를 준 적이 있느냐고 물었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "파블리나는 악시냐에게 '그'에게 그의 길을 선택할 기회를 준 적이 있느냐고 물었다."
-      },
-      {
-       "t_raw": "Eye of Graeae의 질문과 멈춤 요청, Pavlina의 물음이 겹치면서 **선택의 주체**가 누구였는지가 남는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "「잿빛 눈동자」의 질문과 멈춤 요청, 파블리나의 물음이 겹치면서 **선택의 주체**가 누구였는지가 남는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Primordial Human",
-       "revision": 2178311,
+       "page": "Pavlina",
+       "revision": 2178615,
        "section": "Story",
-       "paragraph": "M6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Eye of Graeae",
-       "revision": 2171144,
-       "section": "Profile",
-       "paragraph": "M2",
-       "wiki_refs": []
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Hesperides of Love and Hate"
+        }
+       ]
       },
       {
        "kind": "quest",
        "quest": "To Gaze Upon the Dreaming Pale Crown",
        "quest_ko": "하얀 왕관의 꿈",
        "version": "7.0",
-       "speaker": "Aksinya"
+       "speaker": "Eye of Graeae"
       },
       {
-       "kind": "quest",
-       "quest": "Bell Ringing at Dusk",
-       "quest_ko": "만종",
-       "version": "7.0",
-       "speaker": "Pavlina"
+       "kind": "wiki",
+       "page": "Eye of Graeae",
+       "revision": 2171144,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": []
       }
      ],
-     "heading": "떡밥과 수수께끼",
+     "heading": "인간관계",
      "latin_left": []
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "No, Aksinya, they won't. Both you and I know full well that the cycle has run its course and there will not be new civilizations henceforth.",
+     "status": "accepted",
+     "note": "Supported by A8, Q1, M12; interpretation is reasonable.",
+     "quote": "The experiment is complete. Aksinya believes it finished as per its designated direction, and thus, a success.",
      "sentences": [
       {
-       "t_raw": "한 기록은 모두가 모두를 사랑하는 영원한 사랑을 차이를 지워 아무것도 사랑할 수 없게 만드는 거짓이자 빈 껍질로 비판하며, Aksinya가 그 공포스러운 본질을 깨닫지 못했다고 적는다.",
+       "t_raw": "Hvergelmir의 연구는 성공했다고 전해지지만 결과는 공개되지 않았다.",
        "interp": false,
        "dropped": false,
-       "t": "한 기록은 모두가 모두를 사랑하는 영원한 사랑을 차이를 지워 아무것도 사랑할 수 없게 만드는 거짓이자 빈 껍질로 비판하며, 악시냐가 그 공포스러운 본질을 깨닫지 못했다고 적는다."
+       "t": "근원 연구소의 연구는 성공했다고 전해지지만 결과는 공개되지 않았다."
       },
       {
-       "t_raw": "그 기록은 Aksinya가 Shadow Realm에서 돌아올 것이라고도 한다.",
+       "t_raw": "시험 대상자들이 끝없는 기쁨의 영역에서 슬픔과 고통을 겪지 않게 되었다는 보고가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "그 기록은 악시냐가 그림자 영역에서 돌아올 것이라고도 한다."
+       "t": "시험 대상자들이 끝없는 기쁨의 영역에서 슬픔과 고통을 겪지 않게 되었다는 보고가 있다."
       },
       {
-       "t_raw": "Pavlina는 Aksinya에게 순환이 이미 끝났고 앞으로 새로운 문명은 없을 것이라고 말했다.",
+       "t_raw": "The Alchemist's Notes는 Aksinya가 그것을 **성공**으로 믿는다고 적으면서도, 영원한 사랑의 정원이 변화도 개선도 없는 막다른 길인지 의문을 남긴다.",
        "interp": false,
        "dropped": false,
-       "t": "파블리나는 악시냐에게 순환이 이미 끝났고 앞으로 새로운 문명은 없을 것이라고 말했다."
+       "t": "연금술사의 Notes는 악시냐가 그것을 **성공**으로 믿는다고 적으면서도, 영원한 사랑의 정원이 변화도 개선도 없는 막다른 길인지 의문을 남긴다."
       },
       {
-       "t_raw": "Court of Bliss에서 패한 뒤 Primordial Human은 Aksinya를 탓하지 않았고, 그녀는 동료들도 원하던 것을 자신도 갈망했음을 깨달았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Court of Bliss에서 패한 뒤 「원초의 인간」은 악시냐를 탓하지 않았고, 그녀는 동료들도 원하던 것을 자신도 갈망했음을 깨달았다."
-      },
-      {
-       "t_raw": "영원한 사랑을 거짓으로 보는 기록과 새로운 문명이 없으리라는 Pavlina의 말이 겹치면서, 그 계획이 어디에 닿으려는 것인지는 열린 물음으로 보인다.",
+       "t_raw": "성공했다는 보고와 이를 의심하는 기록이 함께 남아, 실험의 결과는 확정되지 않은 수수께끼라고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "영원한 사랑을 거짓으로 보는 기록과 새로운 문명이 없으리라는 파블리나의 말이 겹치면서, 그 계획이 어디에 닿으려는 것인지는 열린 물음으로 보인다."
+       "t": "성공했다는 보고와 이를 의심하는 기록이 함께 남아, 실험의 결과는 확정되지 않은 수수께끼라고 볼 수 있다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aksinya",
+       "revision": 2177436,
+       "section": "Story",
+       "paragraph": "A8",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Ovations That Ceased Upon Festivity"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Stone Beasts, Like Ghouls Seated",
+       "quest_ko": "궁전의 야수",
+       "version": "7.0",
+       "speaker": "Aksinya"
+      },
       {
        "kind": "wiki",
        "page": "The Ruined Hvergelmir",
@@ -1848,6 +2169,112 @@
        "section": "Interactables > The Alchemist's Notes (II)",
        "paragraph": "M12",
        "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Notes"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Sentence 3 says the Eye of Graeae split and persuaded the three 'following that warning' (the Alchemist's Notes). The English gives the Eye's own reasons (fusion would be a threat). The Notes are a separate writer's warning and are not said to have caused the Eye's action. That causal link is added.",
+     "quote": "Aksinya has not perceived the terrifying essence of eternal love. I cannot... allow her plan to come to final fruition.",
+     "sentences": [
+      {
+       "t_raw": "Eye of Graeae는 Aksinya와 Hvergelmir의 창조물로, 인간을 “Tomorrow”로 이끄는 것이 목표였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「잿빛 눈동자」는 악시냐와 근원 연구소의 창조물로, 인간을 “Tomorrow”로 이끄는 것이 목표였다."
+      },
+      {
+       "t_raw": "자신이 온전히 융합해 Primordial Human이 지녔던 권위를 얻으면 모든 인간과 fae에게 위협이 되고, 세계가 거스를 수 없는 혁명을 겪게 될 것임을 깨달았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자신이 온전히 융합해 「원초의 인간」이 지녔던 권위를 얻으면 모든 인간과 요정에게 위협이 되고, 세계가 거스를 수 없는 혁명을 겪게 될 것임을 깨달았다.",
+       "polish": {
+        "from": "자신이 온전히 융합해 「원초의 인간」이 지녔던 권위를 얻으면 모든 인간과 fae에게 위협이 되고, 세계가 거스를 수 없는 혁명을 겪게 될 것임을 깨달았다.",
+        "text": "자신이 온전히 융합해 「원초의 인간」이 지녔던 권위를 얻으면 모든 인간과 요정에게 위협이 되고, 세계가 거스를 수 없는 혁명을 겪게 될 것임을 깨달았다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "The Alchemist's Notes는 모든 차이가 하나로 섞이면 사랑할 대상도 주체도 남지 않는다며, Aksinya가 **영원한 사랑**의 무서운 본질을 깨닫지 못했다고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "연금술사의 Notes는 모든 차이가 하나로 섞이면 사랑할 대상도 주체도 남지 않는다며, 악시냐가 **영원한 사랑**의 무서운 본질을 깨닫지 못했다고 적는다."
+      },
+      {
+       "t_raw": "Aksinya의 계획이 재앙적인 결과를 낳을 것임을 스스로 깨달은 Eye of Graeae가 분열을 택하고 Pavlina, Alvis, Koshchei를 설득한 일은 Aksinya의 계획을 가로막은 핵심으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "악시냐의 계획이 재앙적인 결과를 낳을 것임을 스스로 깨달은 「잿빛 눈동자」가 분열을 택하고 파블리나, 알비스, 코셰이를 설득한 일은 악시냐의 계획을 가로막은 핵심으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eye of Graeae",
+       "revision": 2171144,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Ruined Hvergelmir",
+       "revision": 2175423,
+       "section": "Interactables > The Alchemist's Notes (II)",
+       "paragraph": "M12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Tomorrow",
+      "Notes"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by Q24, Q25 and Q33. The interpretation is reasonable.",
+     "quote": "They... will be reborn in a new courtyard.",
+     "sentences": [
+      {
+       "t_raw": "Aksinya는 그들이 ‘새로운 정원’에서 다시 태어날 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "악시냐는 그들이 '새로운 정원'에서 다시 태어날 것이라고 말한다."
+      },
+      {
+       "t_raw": "Pavlina는 순환이 이미 끝났고 앞으로 새로운 문명은 없을 것이라고 반박한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파블리나는 순환이 이미 끝났고 앞으로 새로운 문명은 없을 것이라고 반박한다."
+      },
+      {
+       "t_raw": "Primordial Human은 모든 것을 기억하게 되었다고 말하며, Aksinya와 자신 모두에게 많은 시간이 흘렀다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「원초의 인간」은 모든 것을 기억하게 되었다고 말하며, 악시냐와 자신 모두에게 많은 시간이 흘렀다고 한다."
+      },
+      {
+       "t_raw": "새로운 정원과 끝난 **순환**이 맞서는 만큼, 재생의 의미는 확정되지 않은 수수께끼라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "새로운 정원과 끝난 **순환**이 맞서는 만큼, 재생의 의미는 확정되지 않은 수수께끼라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Bell Ringing at Dusk",
+       "quest_ko": "만종",
+       "version": "7.0",
+       "speaker": "Aksinya"
       },
       {
        "kind": "quest",
@@ -1857,56 +2284,68 @@
        "speaker": "Pavlina"
       },
       {
-       "kind": "wiki",
-       "page": "Aksinya",
-       "revision": 2177436,
-       "section": "Story",
-       "paragraph": "A10",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Chorus of Solace"
-        },
-        {
-         "type": "quest",
-         "name": "Bell Ringing at Dusk"
-        },
-        {
-         "type": "quest",
-         "name": "The Stone Beasts, Like Ghouls Seated"
-        },
-        {
-         "type": "quest",
-         "name": "An Ark That Used to Be a Soul"
-        }
-       ]
+       "kind": "quest",
+       "quest": "An Ark That Used to Be a Soul",
+       "quest_ko": "영혼의 배",
+       "version": "7.0",
+       "speaker": "Primordial Human"
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Court of Bliss"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Aksinya has silver hair fading into blue at the tips and yellow eyes with white pupils.",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A4, Q3, Q9 and Q10. The interpretation is reasonable.",
+     "quote": "Izmaylov always complains that my introductions are far too humble. But personally? I see it as a deliberate choice in style.",
      "sentences": [
       {
-       "t_raw": "Aksinya는 끝으로 갈수록 푸르게 물드는 은발과, 노란 눈에 흰 동공을 지녔다.",
+       "t_raw": "Aksinya는 은발 끝이 푸르고, 흰 동공이 있는 노란 눈을 지녔다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 끝으로 갈수록 푸르게 물드는 은발과, 노란 눈에 흰 동공을 지녔다."
+       "t": "악시냐는 은발 끝이 푸르고, 흰 동공이 있는 노란 눈을 지녔다."
       },
       {
-       "t_raw": "Aksinya는 단추가 두 줄로 달린 검은 코트드레스에 짙은 푸른색과 금색 장식, 털깃과 털단, 검은 장갑, 짙은 푸른색 무릎 높이 부츠를 갖춰 입는다.",
+       "t_raw": "검은 더블 버튼 코트드레스에 남색·금색 장식, 털깃과 털단, 검은 장갑, 짙은 남색 무릎 높이 부츠를 갖춰 입는다.",
        "interp": false,
        "dropped": false,
-       "t": "악시냐는 단추가 두 줄로 달린 검은 코트드레스에 짙은 푸른색과 금색 장식, 털깃과 털단, 검은 장갑, 짙은 푸른색 무릎 높이 부츠를 갖춰 입는다."
+       "t": "검은 더블 버튼 코트드레스에 남색·금색 장식, 털깃과 털단, 검은 장갑, 짙은 남색 무릎 높이 부츠를 갖춰 입는다."
+      },
+      {
+       "t_raw": "Belyi Tsar는 그녀를 **Court Jester**로 임명해 Pale Star Court 안의 실제 영향력을 가리는 공적 겉포장으로 삼았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하얀 차르는 그녀를 **궁정 광대**로 임명해 창백한 별 왕정 안의 실제 영향력을 가리는 공적 겉포장으로 삼았다."
+      },
+      {
+       "t_raw": "그녀는 스스로를 한때 고 Belyi Tsar를 섬긴 낮은 \"Royal Jester\"라 소개하면서, 그 칭호에 문제가 없고 지금도 쓰임이 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 스스로를 한때 고 하얀 차르를 섬긴 낮은 \"Royal Jester\"라 소개하면서, 그 칭호에 문제가 없고 지금도 쓰임이 있다고 말한다."
+      },
+      {
+       "t_raw": "Izmaylov가 자기소개가 너무 겸손하다고 불평한다는 점을 전하며, 그녀는 그것을 **의도적인 스타일 선택**으로 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이즈마일로프가 자기소개가 너무 겸손하다고 불평한다는 점을 전하며, 그녀는 그것을 **의도적인 스타일 선택**으로 여긴다."
+      },
+      {
+       "t_raw": "실제 영향력을 가리는 직함을 스스로 낮추어 소개하고 그 겸손함을 의도된 스타일이라 말하는 태도는 자기 표현을 계산해 운용하는 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "실제 영향력을 가리는 직함을 스스로 낮추어 소개하고 그 겸손함을 의도된 스타일이라 말하는 태도는 자기 표현을 계산해 운용하는 모습으로 보인다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aksinya",
+       "revision": 2177436,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Aksinya",
@@ -1914,49 +2353,7 @@
        "section": "Profile > Appearance",
        "paragraph": "A4",
        "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Izmaylov always complains that my introductions are far too humble. But personally? I see it as a deliberate choice in style.",
-     "sentences": [
-      {
-       "t_raw": "Aksinya는 한때 Belyi Tsar를 모셨던 보잘것없는 **Royal Jester**일 뿐이라며, 자신의 이름은 하찮은 것이라고 낮춘다.",
-       "interp": false,
-       "dropped": false,
-       "t": "악시냐는 한때 하얀 차르를 모셨던 보잘것없는 **Royal Jester**일 뿐이라며, 자신의 이름은 하찮은 것이라고 낮춘다."
       },
-      {
-       "t_raw": "Izmaylov는 그런 소개가 너무 겸손하다고 늘 불평하지만, Aksinya는 그것을 의도적인 스타일 선택이라고 본다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이즈마일로프는 그런 소개가 너무 겸손하다고 늘 불평하지만, 악시냐는 그것을 의도적인 스타일 선택이라고 본다."
-      },
-      {
-       "t_raw": "Aksinya는 Royal Jester라는 칭호에 웃을 일이 없다며, 지금도 쓰임이 있다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "악시냐는 Royal Jester라는 칭호에 웃을 일이 없다며, 지금도 쓰임이 있다고 말한다."
-      },
-      {
-       "t_raw": "**Goggles**는 자신의 것이라며 상대들을 작은 도둑들이라고 부르는 장난스러운 면도 보인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**고글**은 자신의 것이라며 상대들을 작은 도둑들이라고 부르는 장난스러운 면도 보인다."
-      },
-      {
-       "t_raw": "이런 낮춤과 장난스러운 말투가 겹치면서, 스스로를 낮추는 소개와 달리 자신의 칭호와 물건은 분명히 챙기는 인상이 생긴다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 낮춤과 장난스러운 말투가 겹치면서, 스스로를 낮추는 소개와 달리 자신의 칭호와 물건은 분명히 챙기는 인상이 생긴다."
-      }
-     ],
-     "sources": [
       {
        "kind": "quest",
        "quest": "Chorus of Solace",
@@ -1977,6 +2374,51 @@
        "quest_ko": "위로의 합창",
        "version": "7.0",
        "speaker": "Aksinya"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Royal Jester"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by Q17, Q23 and Q30. The interpretation is reasonable.",
+     "quote": "Haha, so you see, \"Goggles\" belongs to me. Do be good and return it now, you little thieves!",
+     "sentences": [
+      {
+       "t_raw": "그녀는 **\"Goggles\"**가 자신의 것이라며 얌전히 돌려주라고 하고 상대를 작은 도둑들이라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 **\"고글\"**이 자신의 것이라며 얌전히 돌려주라고 하고 상대를 작은 도둑들이라고 부른다."
+      },
+      {
+       "t_raw": "그 명칭이 상대가 지금 머무는 장치를 만든 사람의 이름이라고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 명칭이 상대가 지금 머무는 장치를 만든 사람의 이름이라고 설명한다."
+      },
+      {
+       "t_raw": "Paimon은 고맙다고 하다가 그녀가 Aksinya임을 알아보고 놀란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 고맙다고 하다가 그녀가 악시냐임을 알아보고 놀란다."
+      },
+      {
+       "t_raw": "\"Goggles\"를 자기 것이라 말하면서 그 명칭이 장치 제작자의 이름임을 밝히는 대목은, 그녀가 호칭의 유래와 소유를 따져 말하는 인물임을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "\"고글\"을 자기 것이라 말하면서 그 명칭이 장치 제작자의 이름임을 밝히는 대목은, 그녀가 호칭의 유래와 소유를 따져 말하는 인물임을 보여 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Chorus of Solace",
+       "quest_ko": "위로의 합창",
+       "version": "7.0",
+       "speaker": "Aksinya"
       },
       {
        "kind": "quest",
@@ -1984,21 +2426,25 @@
        "quest_ko": "위로의 합창",
        "version": "7.0",
        "speaker": "Aksinya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Chorus of Solace",
+       "quest_ko": "위로의 합창",
+       "version": "7.0",
+       "speaker": "Paimon"
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Royal Jester",
-      "Royal Jester"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "나는 한때 폐하, 고(故) Belyi Tsar를 섬겼던 하찮은 Royal Jester일 뿐이다. 내 이름은, 하찮기 그지없지만, Aksinya다.",
+     "section": "정체와 배경 — Hyperborea와 Belyi Tsar",
+     "status": "accepted",
+     "note": "Faithful translation of Q3.",
+     "t_raw": "저는 한때 폐하, 고 Belyi Tsar를 섬겼던 한낱 \"Royal Jester\"일 뿐입니다. 제 이름은 하찮지만, Aksinya입니다.",
      "en": "I am but a lowly \"Royal Jester\" who once served His Majesty, the late Belyi Tsar. My name, insignificant as it is, is Aksinya.",
      "speaker": "Aksinya",
      "source": {
@@ -2008,82 +2454,31 @@
       "version": "7.0",
       "speaker": "Aksinya"
      },
-     "t": "나는 한때 폐하, 고(故) 하얀 차르를 섬겼던 하찮은 Royal Jester일 뿐이다. 내 이름은, 하찮기 그지없지만, 악시냐다.",
+     "t": "저는 한때 폐하, 고 하얀 차르를 섬겼던 한낱 \"Royal Jester\"일 뿐입니다. 제 이름은 하찮지만, 악시냐입니다.",
      "speaker_ko": "악시냐"
     },
     {
-     "section": "작중 행적 — Belyi Tsar 시대",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "정말 인상적인 기술이군요. 좋습니다. 이 가볍고 휴대 가능한 장치를 \"Eye of Graeae\"라고 부릅시다.",
-     "en": "Impressive technology indeed. Very well. Let's call this lightweight, portable device the \"Eye of Graeae.\"",
+     "section": "정체와 배경 — Hvergelmir와 금기 연구",
+     "status": "accepted",
+     "note": "Faithful translation of Q8.",
+     "t_raw": "폐하, 첫 실험이 완료되었음을 보고하게 되어 기쁩니다.",
+     "en": "Your Majesty, I am pleased to report that the first experiment have been completed.",
      "speaker": "Aksinya",
      "source": {
       "kind": "quest",
-      "quest": "To Gaze Upon the Dreaming Pale Crown",
-      "quest_ko": "하얀 왕관의 꿈",
+      "quest": "The Stone Beasts, Like Ghouls Seated",
+      "quest_ko": "궁전의 야수",
       "version": "7.0",
       "speaker": "Aksinya"
      },
-     "t": "정말 인상적인 기술이군요. 좋습니다. 이 가볍고 휴대 가능한 장치를 \"「잿빛 눈동자」\"라고 부릅시다.",
+     "t": "폐하, 첫 실험이 완료되었음을 보고하게 되어 기쁩니다.",
      "speaker_ko": "악시냐"
     },
     {
-     "section": "작중 행적 — Cataclysm과 Shadow Realm",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "…나는 마침내 자유로워졌어. Pavlina, 내가 아는 모든 것은 네가 가르쳐 준 것이고, 네 함정의 이모저모도 나에게는 새롭지 않아.",
-     "en": "...I'm finally free. You have taught me all I know, Pavlina, and the ins and outs of your traps are no news to me.",
-     "speaker": "Aksinya",
-     "source": {
-      "kind": "quest",
-      "quest": "Bell Ringing at Dusk",
-      "quest_ko": "만종",
-      "version": "7.0",
-      "speaker": "Aksinya"
-     },
-     "t": "…나는 마침내 자유로워졌어. 파블리나, 내가 아는 모든 것은 네가 가르쳐 준 것이고, 네 함정의 이모저모도 나에게는 새롭지 않아.",
-     "speaker_ko": "악시냐"
-    },
-    {
-     "section": "작중 행적 — 7.0 Snezhnaya",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "하지만 너는 어떠니, Aksinya? 네가 \"그\"에게 \"그의\" 길을 선택할 기회를 준 적이 있니?",
-     "en": "But how about you, Aksinya? Have you ever given \"him\" a chance to choose \"his\" path?",
-     "speaker": "Pavlina",
-     "source": {
-      "kind": "quest",
-      "quest": "Bell Ringing at Dusk",
-      "quest_ko": "만종",
-      "version": "7.0",
-      "speaker": "Pavlina"
-     },
-     "t": "하지만 너는 어떠니, 악시냐? 네가 \"그\"에게 \"그의\" 길을 선택할 기회를 준 적이 있니?",
-     "speaker_ko": "파블리나"
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그들은 내가 고대 Hyperborean 기술을 사용해 당신의 의식을 이곳에 완전한 상태로 업로드할 수 있다는 사실을 알고는 정말 깜짝 놀랄 것이다.",
-     "en": "They'll be absolutely stunned to learn that I can upload your consciousness here, fully intact, using ancient Hyperborean technology.",
-     "speaker": "Aksinya",
-     "source": {
-      "kind": "quest",
-      "quest": "To Gaze Upon the Dreaming Pale Crown",
-      "quest_ko": "하얀 왕관의 꿈",
-      "version": "7.0",
-      "speaker": "Aksinya"
-     },
-     "t": "그들은 내가 고대 휘페르보레아 기술을 사용해 당신의 의식을 이곳에 완전한 상태로 업로드할 수 있다는 사실을 알고는 정말 깜짝 놀랄 것이다.",
-     "speaker_ko": "악시냐"
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그 점은 알고 있다. 하지만 나는 당신을 잃기를 바란 적이 없다... Pavlina.",
+     "section": "작중 행적 — Pavlina와의 우정",
+     "status": "accepted",
+     "note": "Faithful translation of Q18. 'Loss' is rendered as '사라지기를', which is acceptable.",
+     "t_raw": "그건 알고 있다. 하지만 나는 한 번도 네가 사라지기를 바란 적은 없다... Pavlina.",
      "en": "I am aware of that. But I have never hoped for your loss... Pavlina.",
      "speaker": "Aksinya",
      "source": {
@@ -2093,14 +2488,48 @@
       "version": "7.0",
       "speaker": "Aksinya"
      },
-     "t": "그 점은 알고 있다. 하지만 나는 당신을 잃기를 바란 적이 없다... 파블리나.",
+     "t": "그건 알고 있다. 하지만 나는 한 번도 네가 사라지기를 바란 적은 없다... 파블리나.",
      "speaker_ko": "악시냐"
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "하지만 Aksinya, 당신은 어떻습니까? 당신은 \"그\"에게 \"그\"의 길을 선택할 기회를 준 적이 있습니까?",
+     "section": "작중 행적 — Cataclysm과 Shadow Realm",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그들은 꽤 가까웠지... 마지막에 네가 본 것에 대해 묻는 건가? Aksinya가 배신당한 일에 대해?",
+     "en": "They were quite close... Do you mean to ask about what you saw at the end? About Aksinya being betrayed?",
+     "speaker": "Eye of Graeae",
+     "source": {
+      "kind": "quest",
+      "quest": "To Gaze Upon the Dreaming Pale Crown",
+      "quest_ko": "하얀 왕관의 꿈",
+      "version": "7.0",
+      "speaker": "Eye of Graeae"
+     },
+     "t": "그들은 꽤 가까웠지... 마지막에 네가 본 것에 대해 묻는 건가? 악시냐가 배신당한 일에 대해?",
+     "speaker_ko": "「잿빛 눈동자」"
+    },
+    {
+     "section": "작중 행적 — Eye of Graeae의 회수",
+     "status": "accepted",
+     "note": "Faithful; the missing subject in the English is handled naturally.",
+     "t_raw": "만약 Pale Crown Palace에서 본 일이 정말로 일어난 일이라면, Pavlina는 Aksinya 양을 배신한 사람들 중 하나였어... 그렇다면...",
+     "en": "If what saw in the Pale Crown Palace really happened, then Pavlina was one of the people who betrayed Miss Aksinya... Which means...",
+     "speaker": "Eye of Graeae",
+     "source": {
+      "kind": "quest",
+      "quest": "Through the Gates of Ivory",
+      "quest_ko": "상아로 만든 문을 지나",
+      "version": "7.0",
+      "speaker": "Eye of Graeae"
+     },
+     "t": "만약 하얀 왕관궁에서 본 일이 정말로 일어난 일이라면, 파블리나는 악시냐 양을 배신한 사람들 중 하나였어... 그렇다면...",
+     "speaker_ko": "「잿빛 눈동자」"
+    },
+    {
+     "section": "작중 행적 — Pavlina와 Ikhor",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "하지만 너는 어떻지, Aksinya? 너는 \"그\"에게 \"그\"의 길을 선택할 기회를 준 적이 있나?",
      "en": "But how about you, Aksinya? Have you ever given \"him\" a chance to choose \"his\" path?",
      "speaker": "Pavlina",
      "source": {
@@ -2110,15 +2539,83 @@
       "version": "7.0",
       "speaker": "Pavlina"
      },
-     "t": "하지만 악시냐, 당신은 어떻습니까? 당신은 \"그\"에게 \"그\"의 길을 선택할 기회를 준 적이 있습니까?",
+     "t": "하지만 너는 어떻지, 악시냐? 너는 \"그\"에게 \"그\"의 길을 선택할 기회를 준 적이 있나?",
+     "speaker_ko": "파블리나"
+    },
+    {
+     "section": "작중 행적 — Pale Crown Palace와 Primordial Human",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그래, 나다... 나는 이제 모든 것을 기억한다. 많은 시간이 흘렀다... 너에게도, Aksinya, 그리고 나에게도.",
+     "en": "Yes, it is I... I now remember everything. Much time has passed... both for you, Aksinya, and for me.",
+     "speaker": "Primordial Human",
+     "source": {
+      "kind": "quest",
+      "quest": "An Ark That Used to Be a Soul",
+      "quest_ko": "영혼의 배",
+      "version": "7.0",
+      "speaker": "Primordial Human"
+     },
+     "t": "그래, 나다... 나는 이제 모든 것을 기억한다. 많은 시간이 흘렀다... 너에게도, 악시냐, 그리고 나에게도.",
+     "speaker_ko": "「원초의 인간」"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그들은 내가 고대 Hyperborean 기술을 사용해 당신의 의식을 이곳에 완전한 상태로 업로드할 수 있다는 사실을 알고 몹시 놀랄 것이다.",
+     "en": "They'll be absolutely stunned to learn that I can upload your consciousness here, fully intact, using ancient Hyperborean technology.",
+     "speaker": "Aksinya",
+     "source": {
+      "kind": "quest",
+      "quest": "To Gaze Upon the Dreaming Pale Crown",
+      "quest_ko": "하얀 왕관의 꿈",
+      "version": "7.0",
+      "speaker": "Aksinya"
+     },
+     "t": "그들은 내가 고대 휘페르보레아 기술을 사용해 당신의 의식을 이곳에 완전한 상태로 업로드할 수 있다는 사실을 알고 몹시 놀랄 것이다.",
+     "speaker_ko": "악시냐"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그건 알고 있다. 하지만 나는 네가 사라지기를 바란 적은 없다... Pavlina.",
+     "en": "I am aware of that. But I have never hoped for your loss... Pavlina.",
+     "speaker": "Aksinya",
+     "source": {
+      "kind": "quest",
+      "quest": "Bell Ringing at Dusk",
+      "quest_ko": "만종",
+      "version": "7.0",
+      "speaker": "Aksinya"
+     },
+     "t": "그건 알고 있다. 하지만 나는 네가 사라지기를 바란 적은 없다... 파블리나.",
+     "speaker_ko": "악시냐"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Pavlina's line (Q25).",
+     "t_raw": "아니, Aksinya, 그들은 그러지 않을 것이다. 너도 나도 충분히 잘 알고 있듯이, 순환은 이미 끝났고 앞으로 새로운 문명은 없을 것이다.",
+     "en": "No, Aksinya, they won't. Both you and I know full well that the cycle has run its course and there will not be new civilizations henceforth.",
+     "speaker": "Pavlina",
+     "source": {
+      "kind": "quest",
+      "quest": "Bell Ringing at Dusk",
+      "quest_ko": "만종",
+      "version": "7.0",
+      "speaker": "Pavlina"
+     },
+     "t": "아니, 악시냐, 그들은 그러지 않을 것이다. 너도 나도 충분히 잘 알고 있듯이, 순환은 이미 끝났고 앞으로 새로운 문명은 없을 것이다.",
      "speaker_ko": "파블리나"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Izmaylov는 내 소개가 너무 겸손하다고 늘 불평한다. 하지만 개인적으로? 나는 그것을 의도적인 스타일 선택이라고 본다.",
-     "en": "Izmaylov always complains that my introductions are far too humble. But personally? I see it as a deliberate choice in style.",
+     "status": "accepted",
+     "note": "Faithful translation of Aksinya's line (Q3).",
+     "t_raw": "나는 한때 고 Belyi Tsar 폐하를 섬긴 낮은 \"Royal Jester\"일 뿐이다. 하찮은 내 이름은 Aksinya다.",
+     "en": "I am but a lowly \"Royal Jester\" who once served His Majesty, the late Belyi Tsar. My name, insignificant as it is, is Aksinya.",
      "speaker": "Aksinya",
      "source": {
       "kind": "quest",
@@ -2127,7 +2624,7 @@
       "version": "7.0",
       "speaker": "Aksinya"
      },
-     "t": "이즈마일로프는 내 소개가 너무 겸손하다고 늘 불평한다. 하지만 개인적으로? 나는 그것을 의도적인 스타일 선택이라고 본다.",
+     "t": "나는 한때 고 하얀 차르 폐하를 섬긴 낮은 \"Royal Jester\"일 뿐이다. 하찮은 내 이름은 악시냐다.",
      "speaker_ko": "악시냐"
     }
    ]

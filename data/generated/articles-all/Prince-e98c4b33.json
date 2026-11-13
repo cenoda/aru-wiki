@@ -21,40 +21,40 @@
    "input_cut": false,
    "input_hash": "ac7836fd8888",
    "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Prince is a Black Cat owned by Margaret.",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "In the Margaret's Longing Quest, Prince steals Venti's lyre strings and runs off. The Traveler is then tasked to retrieve and return the cat and strings, coaxing it with fish.",
      "sentences": [
       {
-       "t_raw": "**Prince**는 Margaret가 기르는 **검은 고양이**다.",
+       "t_raw": "Prince는 Margaret이 기르는 검은 고양이로, Marketplace 근처를 돌아다니는 모습이 확인된다.",
        "interp": false,
        "dropped": false,
-       "t": "**왕자**는 마가렛이 기르는 **검은 고양이**다."
+       "t": "왕자는 마가렛이 기르는 검은 고양이로, Marketplace 근처를 돌아다니는 모습이 확인된다."
       },
       {
-       "t_raw": "물고기를 좋아하고 실뭉치를 가지고 노는, Margaret가 장난기 많은 말썽꾸러기라고 부르는 고양이로 묘사된다.",
+       "t_raw": "Margaret's Longing에서 Prince는 Venti의 리라 줄을 훔쳐 달아나고, Traveler는 생선으로 꾀어 고양이와 줄을 되찾는 임무를 맡는다.",
        "interp": false,
        "dropped": false,
-       "t": "물고기를 좋아하고 실뭉치를 가지고 노는, 마가렛이 장난기 많은 말썽꾸러기라고 부르는 고양이로 묘사된다."
+       "t": "의뢰인 마가렛의 그리움에서 왕자는 벤티의 리라 줄을 훔쳐 달아나고, 여행자는 생선으로 꾀어 고양이와 줄을 되찾는 임무를 맡는다."
       },
       {
-       "t_raw": "Margaret's Longing에서는 Venti의 리라 줄을 훔쳐 달아나고, Traveler가 물고기로 꾀어 고양이와 줄을 되찾는 사건이 벌어진다.",
+       "t_raw": "같은 Prince라는 이름·호칭은 Abyss Order의 새 지도자, Prince Charming이라는 표현, The Chalk Prince and the Dragon 이벤트 제목에도 겹쳐 나타난다.",
        "interp": false,
        "dropped": false,
-       "t": "의뢰인 마가렛의 그리움에서는 벤티의 리라 줄을 훔쳐 달아나고, 여행자가 물고기로 꾀어 고양이와 줄을 되찾는 사건이 벌어진다."
+       "t": "같은 왕자라는 이름·호칭은 심연 교단의 새 지도자, Prince Charming이라는 표현, 백악과 흑룡 이벤트 제목에도 겹쳐 나타난다."
       },
       {
-       "t_raw": "한편 Prince라는 이름은 **Abyss Order의 새 지도자**를 가리키는 호칭으로도 전해지며, 그 정체는 Traveler의 형제자매와 같다고 식별된다.",
-       "interp": false,
+       "t_raw": "이렇게 여러 맥락에 같은 이름이 등장하는 점은 이 문서에서 고양이 Prince와 동명의 호칭들을 구분해 읽어야 하는 이유로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "한편 왕자라는 이름은 **심연 교단의 새 지도자**를 가리키는 호칭으로도 전해지며, 그 정체는 여행자의 형제자매와 같다고 식별된다."
+       "t": "이렇게 여러 맥락에 같은 이름이 등장하는 점은 이 문서에서 고양이 왕자와 동명의 호칭들을 구분해 읽어야 하는 이유로 보인다."
       }
      ],
      "sources": [
@@ -64,14 +64,6 @@
        "revision": 239785,
        "section": null,
        "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Prince",
-       "revision": 239785,
-       "section": null,
-       "paragraph": "A2",
        "wiki_refs": []
       },
       {
@@ -84,120 +76,10 @@
       },
       {
        "kind": "wiki",
-       "page": "Traveler's Sibling",
-       "revision": 165442,
-       "section": "Story",
-       "paragraph": "M6",
-       "wiki_refs": []
-      }
-     ],
-     "heading": null,
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Margaret describes him as a \"mischievous little rascal,\" despite often spoiling him.",
-     "sentences": [
-      {
-       "t_raw": "Prince는 Margaret의 **검은 고양이**이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "왕자는 마가렛의 **검은 고양이**이다."
-      },
-      {
-       "t_raw": "Margaret의 여러 고양이 중에는 Prince와 Butterfly가 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마가렛의 여러 고양이 중에는 왕자와 나비가 있다."
-      },
-      {
-       "t_raw": "Prince는 생선을 먹고 실뭉치를 가지고 노는 것을 좋아하며, Margaret는 그를 장난꾸러기라고 부르면서도 자주 애지중지한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "왕자는 생선을 먹고 실뭉치를 가지고 노는 것을 좋아하며, 마가렛은 그를 장난꾸러기라고 부르면서도 자주 애지중지한다."
-      },
-      {
-       "t_raw": "감각이 매우 예민해서 Traveler가 붙잡지 못하면 재빨리 도망친다.",
-       "interp": false,
-       "dropped": false,
-       "t": "감각이 매우 예민해서 여행자가 붙잡지 못하면 재빨리 도망친다."
-      },
-      {
-       "t_raw": "Prince는 여러 고양이 중 하나이면서도 장난기 많고 예민한 성격이 두드러지는 개체로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "왕자는 여러 고양이 중 하나이면서도 장난기 많고 예민한 성격이 두드러지는 개체로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Prince",
-       "revision": 239785,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Prince",
-       "revision": 239785,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Margaret",
-       "revision": 238328,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "the Abyss Order has recently gained a new leader, named the Prince (or Princess)",
-     "sentences": [
-      {
-       "t_raw": "Siyu는 Prince Charming과 결혼하는 꿈을 이루었고, Wrench Wang은 그런 Siyu의 꿈을 언급한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "사여는 Prince Charming과 결혼하는 꿈을 이루었고, 왕반자는 그런 사여의 꿈을 언급한다."
-      },
-      {
-       "t_raw": "이를 볼 때 Prince Charming은 이상적인 신랑감을 가리키는 호칭으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이를 볼 때 Prince Charming은 이상적인 신랑감을 가리키는 호칭으로 보인다."
-      },
-      {
-       "t_raw": "Abyss Order에는 최근 Prince(또는 Princess)라는 새 지도자가 생겼으며, Kaeya에게서 전해진 정보와 Venti의 배경 설명에 따르면 그 정체는 Traveler의 형제자매와 동일한 인물로 쉽게 확인된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "심연 교단에는 최근 왕자(또는 「공주」)라는 새 지도자가 생겼으며, 케이아에게서 전해진 정보와 벤티의 배경 설명에 따르면 그 정체는 여행자의 형제자매와 동일한 인물로 쉽게 확인된다."
-      },
-      {
-       "t_raw": "따라서 **Prince Charming**과 **Abyss Order의 Prince**는 Margaret의 고양이 Prince와 이름이 겹칠 뿐 서로 다른 층위를 이루는 호칭으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "따라서 **Prince Charming**과 **심연 교단의 왕자**는 마가렛의 고양이 왕자와 이름이 겹칠 뿐 서로 다른 층위를 이루는 호칭으로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Prince",
-       "revision": 239785,
-       "section": null,
-       "paragraph": "A1",
+       "page": "Vile",
+       "revision": 67071,
+       "section": "Dialogue",
+       "paragraph": "M2",
        "wiki_refs": []
       },
       {
@@ -206,6 +88,125 @@
        "revision": 72300,
        "section": "Dialogue",
        "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 164291,
+       "section": "Travel Log > Story Quests",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wrench Wang",
+       "revision": 72300,
+       "section": "Profile",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Marketplace",
+      "Prince Charming"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Both sentences match A1 and A3.",
+     "quote": "In the Margaret's Longing Quest, Prince steals Venti's lyre strings and runs off. The Traveler is then tasked to retrieve and return the cat and strings, coaxing it with fish.",
+     "sentences": [
+      {
+       "t_raw": "Prince는 Margaret이 기르는 **검은 고양이**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "왕자는 마가렛이 기르는 **검은 고양이**다."
+      },
+      {
+       "t_raw": "Prince는 **Venti의 리라 줄**을 훔쳐 달아났고, Traveler는 생선으로 꾀어 고양이와 줄을 되찾는 임무를 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "왕자는 **벤티의 리라 줄**을 훔쳐 달아났고, 여행자는 생선으로 꾀어 고양이와 줄을 되찾는 임무를 맡는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Prince",
+       "revision": 239785,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Prince",
+       "revision": 239785,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by M2, M3, M5, M6, M7 and M4.",
+     "quote": "she fulfilled her dreams of becoming the bride of a real Prince Charming.",
+     "sentences": [
+      {
+       "t_raw": "Prince라는 이름은 Abyss Order의 새 지도자인 Prince(또는 Princess)에게도 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "왕자라는 이름은 심연 교단의 새 지도자인 왕자(또는 「공주」)에게도 쓰인다."
+      },
+      {
+       "t_raw": "Vile는 더 나은 수가 없을 때 **Prince Charming**을 보낼 수도 있다고 말하고, Wrench Wang 관련 기록은 Siyu가 Prince Charming의 신부가 되는 꿈을 이뤘다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "베일은 더 나은 수가 없을 때 **Prince Charming**을 보낼 수도 있다고 말하고, 왕반자 관련 기록은 사여가 Prince Charming의 신부가 되는 꿈을 이뤘다고 전한다."
+      },
+      {
+       "t_raw": "Dragonspine은 Version 1.2의 The Chalk Prince and the Dragon과 함께 공개된 지역이며, 그 이벤트는 Travel Log의 Story Quests 기록에서 제외된 사례로 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "드래곤 스파인은 Version 1.2의 백악과 흑룡과 함께 공개된 지역이며, 그 이벤트는 여행 일지의 전설 임무 기록에서 제외된 사례로 언급된다."
+      },
+      {
+       "t_raw": "이처럼 Prince라는 이름과 호칭은 여러 대상과 문맥에 겹쳐 쓰인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 왕자라는 이름과 호칭은 여러 대상과 문맥에 겹쳐 쓰인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vile",
+       "revision": 67071,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wrench Wang",
+       "revision": 72300,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 164291,
+       "section": "Travel Log > Story Quests",
+       "paragraph": "M4",
        "wiki_refs": []
       },
       {
@@ -223,32 +224,46 @@
        "section": "Story",
        "paragraph": "M6",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Dragonspine",
+       "revision": 239050,
+       "section": null,
+       "paragraph": "M7",
+       "wiki_refs": []
       }
      ],
      "heading": "개요",
      "latin_left": [
       "Prince Charming",
       "Prince Charming",
-      "Prince Charming"
+      "Version"
      ]
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Prince is a Black Cat owned by Margaret.",
+     "status": "accepted",
+     "note": "Supported by A1, M1 and Q4.",
+     "quote": "Prince should be somewhere around the Marketplace. It's a black cat you're looking for.",
      "sentences": [
       {
-       "t_raw": "Prince는 Margaret가 기르는 **검은 고양이**다.",
+       "t_raw": "Prince는 Margaret이 기르는 **검은 고양이**다.",
        "interp": false,
        "dropped": false,
        "t": "왕자는 마가렛이 기르는 **검은 고양이**다."
       },
       {
-       "t_raw": "Margaret는 찾는 고양이가 검은 고양이라고 말한다.",
+       "t_raw": "Margaret은 여러 고양이를 기르며, 그중에는 Prince와 Butterfly가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "마가렛은 찾는 고양이가 검은 고양이라고 말한다."
+       "t": "마가렛은 여러 고양이를 기르며, 그중에는 왕자와 나비가 있다."
+      },
+      {
+       "t_raw": "Margaret은 Prince가 Marketplace 근처에 있을 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마가렛은 왕자가 Marketplace 근처에 있을 것이라고 말한다."
       }
      ],
      "sources": [
@@ -261,6 +276,14 @@
        "wiki_refs": []
       },
       {
+       "kind": "wiki",
+       "page": "Margaret",
+       "revision": 238328,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
        "kind": "quest",
        "quest": "Margaret's Longing",
        "quest_ko": "의뢰인 마가렛의 그리움",
@@ -269,37 +292,33 @@
       }
      ],
      "heading": "정체와 배경",
-     "latin_left": []
+     "latin_left": [
+      "Marketplace"
+     ]
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Supported by A2 and Q10. The interpretation is reasonable.",
      "quote": "Haha, Prince is a mischievous little rascal alright!",
      "sentences": [
       {
-       "t_raw": "Prince는 물고기와 실뭉치를 좋아한다.",
+       "t_raw": "Prince는 생선을 먹는 것과 실뭉치를 가지고 노는 것을 좋아한다.",
        "interp": false,
        "dropped": false,
-       "t": "왕자는 물고기와 실뭉치를 좋아한다."
+       "t": "왕자는 생선을 먹는 것과 실뭉치를 가지고 노는 것을 좋아한다."
       },
       {
-       "t_raw": "Margaret는 Prince를 **장난기 많은 말썽꾸러기**라고 부르면서도 자주 응석을 받아 준다.",
+       "t_raw": "Margaret은 Prince의 응석을 자주 받아 주면서도 **장난꾸러기 꼬마 말썽꾸러기**라고 묘사한다.",
        "interp": false,
        "dropped": false,
-       "t": "마가렛은 왕자를 **장난기 많은 말썽꾸러기**라고 부르면서도 자주 응석을 받아 준다."
+       "t": "마가렛은 왕자의 응석을 자주 받아 주면서도 **장난꾸러기 꼬마 말썽꾸러기**라고 묘사한다."
       },
       {
-       "t_raw": "Prince는 감각이 예민해 Traveler가 붙잡기에 실패하면 재빨리 도망친다.",
-       "interp": false,
+       "t_raw": "장난꾸러기라는 평과 Margaret이 자주 응석을 받아 주는 모습이 함께 드러나는 점은 Prince가 장난스러우면서도 Margaret의 돌봄을 받는 고양이임을 보여 준다고 볼 수 있다.",
+       "interp": true,
        "dropped": false,
-       "t": "왕자는 감각이 예민해 여행자가 붙잡기에 실패하면 재빨리 도망친다."
-      },
-      {
-       "t_raw": "Margaret는 Prince의 가장 좋아하는 먹이라며 먹이를 건넨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마가렛은 왕자의 가장 좋아하는 먹이라며 먹이를 건넨다."
+       "t": "장난꾸러기라는 평과 마가렛이 자주 응석을 받아 주는 모습이 함께 드러나는 점은 왕자가 장난스러우면서도 마가렛의 돌봄을 받는 고양이임을 보여 준다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -317,6 +336,308 @@
        "quest_ko": "의뢰인 마가렛의 그리움",
        "version": "1.0",
        "speaker": "Margaret"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Margaret's Longing와 Master's Day Off",
+     "status": "accepted",
+     "note": "Supported by A3, Q6 and Q1.",
+     "quote": "Ahaha, yes, quite... quite... Ahem! Now, let's see about getting ourselves an audience with his little highness, Prince Rascal of Mondstadt!",
+     "sentences": [
+      {
+       "t_raw": "Margaret's Longing에서 Prince가 Venti의 리라 줄을 훔쳐 달아난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "의뢰인 마가렛의 그리움에서 왕자가 벤티의 리라 줄을 훔쳐 달아난다."
+      },
+      {
+       "t_raw": "Traveler는 Prince와 줄을 되찾아 돌려주어야 하고, 생선으로 Prince를 꾀한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자는 왕자와 줄을 되찾아 돌려주어야 하고, 생선으로 왕자를 꾀한다."
+      },
+      {
+       "t_raw": "Margaret은 Prince가 가장 좋아하는 음식을 건네며 찾는 데 도움이 될지도 모른다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마가렛은 왕자가 가장 좋아하는 음식을 건네며 찾는 데 도움이 될지도 모른다고 말한다."
+      },
+      {
+       "t_raw": "Venti는 Prince를 **Prince Rascal of Mondstadt**라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 왕자를 **Prince Rascal of Mondstadt**라고 부른다.",
+       "polish": {
+        "from": "벤티는 왕자를 **Prince Rascal of Mondstadt**라고 부른다.",
+        "text": "벤티는 왕자를 **Prince Rascal of Mondstadt**라고 부른다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Prince",
+       "revision": 239785,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Margaret's Longing",
+       "quest_ko": "의뢰인 마가렛의 그리움",
+       "version": "1.0",
+       "speaker": "Margaret"
+      },
+      {
+       "kind": "quest",
+       "quest": "Margaret's Longing",
+       "quest_ko": "의뢰인 마가렛의 그리움",
+       "version": "1.0",
+       "speaker": "Venti"
+      }
+     ],
+     "heading": "작중 행적 — 의뢰인 마가렛의 그리움과 기사단 단장의 하루 휴가",
+     "latin_left": [
+      "Prince Rascal of Mondstadt"
+     ]
+    },
+    {
+     "section": "작중 행적 — Margaret's Longing와 Master's Day Off",
+     "status": "accepted",
+     "note": "All sentences are supported by Q2, Q9, Q10 and A3.",
+     "quote": "Haha, Prince is a mischievous little rascal alright!",
+     "sentences": [
+      {
+       "t_raw": "Master's Day Off에서 Venti는 장난꾸러기 Prince가 붙잡혔고 자신의 소중한 astral iron strings도 되찾았다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기사단 단장의 하루 휴가에서 벤티는 장난꾸러기 왕자가 붙잡혔고 자신의 소중한 별철 줄도 되찾았다고 말한다.",
+       "polish": {
+        "from": "기사단 단장의 하루 휴가에서 벤티는 장난꾸러기 왕자가 붙잡혔고 자신의 소중한 astral iron strings도 되찾았다고 말한다.",
+        "text": "기사단 단장의 하루 휴가에서 벤티는 장난꾸러기 왕자가 붙잡혔고 자신의 소중한 별철 줄도 되찾았다고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Paimon은 Margaret과 Prince에 관해 이야기하는 장면을 보았다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 마가렛과 왕자에 관해 이야기하는 장면을 보았다고 한다."
+      },
+      {
+       "t_raw": "Margaret은 Prince를 **장난꾸러기 꼬마 말썽쟁이**라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마가렛은 왕자를 **장난꾸러기 꼬마 말썽쟁이**라고 부른다."
+      },
+      {
+       "t_raw": "Prince를 찾는 일은 astral iron strings 회수와 Prince의 귀환으로 이어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "왕자를 찾는 일은 별철 줄 회수와 왕자의 귀환으로 이어지는 셈이다.",
+       "polish": {
+        "from": "왕자를 찾는 일은 astral iron strings 회수와 왕자의 귀환으로 이어지는 셈이다.",
+        "text": "왕자를 찾는 일은 별철 줄 회수와 왕자의 귀환으로 이어지는 셈이다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Master's Day Off (Quest)",
+       "quest_ko": "기사단 단장의 하루 휴가",
+       "version": "1.0",
+       "speaker": "Venti"
+      },
+      {
+       "kind": "quest",
+       "quest": "Margaret's Longing",
+       "quest_ko": "의뢰인 마가렛의 그리움",
+       "version": "1.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Margaret's Longing",
+       "quest_ko": "의뢰인 마가렛의 그리움",
+       "version": "1.0",
+       "speaker": "Margaret"
+      },
+      {
+       "kind": "wiki",
+       "page": "Prince",
+       "revision": 239785,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 의뢰인 마가렛의 그리움과 기사단 단장의 하루 휴가",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — When the West Wind Arises",
+     "status": "accepted",
+     "note": "All sentences are supported by Q3, Q5 and Q7. The interpretation follows from them.",
+     "quote": "Ugh, unbelievable! Guess the case of Prince the missing cat is now added to the agenda for our meeting with Jean.",
+     "sentences": [
+      {
+       "t_raw": "Margaret는 Prince를 little Princey라고 부르며, Prince가 방금 집에 있었는데 이제는 없다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마가렛은 왕자를 꼬마 왕자님이라고 부르며, 왕자가 방금 집에 있었는데 이제는 없다고 전한다.",
+       "polish": {
+        "from": "마가렛은 왕자를 little Princey라고 부르며, 왕자가 방금 집에 있었는데 이제는 없다고 전한다.",
+        "text": "마가렛은 왕자를 꼬마 왕자님이라고 부르며, 왕자가 방금 집에 있었는데 이제는 없다고 전한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Prince가 집을 비우자 Margaret는 그가 집으로 돌아오는 길을 찾지 못할까 걱정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "왕자가 집을 비우자 마가렛은 그가 집으로 돌아오는 길을 찾지 못할까 걱정한다."
+      },
+      {
+       "t_raw": "Paimon은 Prince라는 이름의 고양이 실종 사건이 Jean과의 면담 안건에 추가되었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 왕자라는 이름의 고양이 실종 사건이 진과의 면담 안건에 추가되었다고 말한다."
+      },
+      {
+       "t_raw": "Margaret의 걱정과 Jean과의 면담 안건이라는 두 사실이 맞물려, Prince가 집을 비운 일은 Margaret에게는 돌아올 길을 걱정하게 하는 일이자 Jean과의 면담에서 다뤄질 안건으로 겹친 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마가렛의 걱정과 진과의 면담 안건이라는 두 사실이 맞물려, 왕자가 집을 비운 일은 마가렛에게는 돌아올 길을 걱정하게 하는 일이자 진과의 면담에서 다뤄질 안건으로 겹친 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "When the West Wind Arises (Quest)",
+       "quest_ko": "서풍이 부는 일상",
+       "version": "1.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "When the West Wind Arises (Quest)",
+       "quest_ko": "서풍이 부는 일상",
+       "version": "1.0",
+       "speaker": "Margaret"
+      },
+      {
+       "kind": "quest",
+       "quest": "When the West Wind Arises (Quest)",
+       "quest_ko": "서풍이 부는 일상",
+       "version": "1.0",
+       "speaker": "Margaret"
+      }
+     ],
+     "heading": "작중 행적 — When the West Wind Arises",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "All sentences match A2.",
+     "quote": "Prince enjoys eating fish, and playing with balls of string.",
+     "sentences": [
+      {
+       "t_raw": "Prince는 **생선**을 좋아하고 **실뭉치**를 가지고 노는 것을 즐긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "왕자는 **생선**을 좋아하고 **실뭉치**를 가지고 노는 것을 즐긴다."
+      },
+      {
+       "t_raw": "Margaret는 그를 'mischievous little rascal'이라고 부르면서도 자주 애지중지한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마가렛은 그를 '장난꾸러기 꼬마 말썽꾸러기'라고 부르면서도 자주 애지중지한다.",
+       "polish": {
+        "from": "마가렛은 그를 'mischievous little rascal'이라고 부르면서도 자주 애지중지한다.",
+        "text": "마가렛은 그를 '장난꾸러기 꼬마 말썽꾸러기'라고 부르면서도 자주 애지중지한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "감각이 매우 예민해 Traveler가 붙잡는 데 실패하면 재빨리 도망친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감각이 매우 예민해 여행자가 붙잡는 데 실패하면 재빨리 도망친다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Prince",
+       "revision": 239785,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "All sentences are supported by A3 and Q6. The interpretation follows from the fish coaxing in A3.",
+     "quote": "Prince steals Venti's lyre strings and runs off. The Traveler is then tasked to retrieve and return the cat and strings, coaxing it with fish.",
+     "sentences": [
+      {
+       "t_raw": "Margaret's Longing에서 Prince는 Venti의 lyre strings를 훔쳐 달아난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "의뢰인 마가렛의 그리움에서 왕자는 벤티의 리라 줄을 훔쳐 달아난다.",
+       "polish": {
+        "from": "의뢰인 마가렛의 그리움에서 왕자는 벤티의 lyre strings를 훔쳐 달아난다.",
+        "text": "의뢰인 마가렛의 그리움에서 왕자는 벤티의 리라 줄을 훔쳐 달아난다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Traveler는 생선으로 Prince를 꾀해 고양이와 줄을 되찾는 임무를 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자는 생선으로 왕자를 꾀해 고양이와 줄을 되찾는 임무를 맡는다."
+      },
+      {
+       "t_raw": "Margaret는 Prince가 가장 좋아하는 음식이라며, 그것이 그를 찾는 데 도움이 될지도 모른다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마가렛은 왕자가 가장 좋아하는 음식이라며, 그것이 그를 찾는 데 도움이 될지도 모른다고 말한다."
+      },
+      {
+       "t_raw": "생선을 좋아하는 습성과 생선으로 꾀었다는 대목을 함께 보면, Prince의 식성은 그를 되찾는 과정에서 실제로 활용된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "생선을 좋아하는 습성과 생선으로 꾀었다는 대목을 함께 보면, 왕자의 식성은 그를 되찾는 과정에서 실제로 활용된 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Prince",
+       "revision": 239785,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Prince",
+       "revision": 239785,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
       },
       {
        "kind": "quest",
@@ -326,29 +647,51 @@
        "speaker": "Margaret"
       }
      ],
-     "heading": "정체와 배경",
+     "heading": "능력",
      "latin_left": []
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "She owns several cats, amongst others are Prince and Butterfly.",
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, M1, Q5 and Q10. The interpretation is reasonable.",
+     "quote": "Haha, Prince is a mischievous little rascal alright!",
      "sentences": [
       {
-       "t_raw": "Margaret는 Butterfly 등 여러 고양이를 기르며, 그중 Prince도 한 마리다.",
+       "t_raw": "Prince는 Margaret이 기르는 검은 고양이이며, Margaret은 Butterfly를 포함한 여러 고양이를 기른다.",
        "interp": false,
        "dropped": false,
-       "t": "마가렛은 나비 등 여러 고양이를 기르며, 그중 왕자도 한 마리다."
+       "t": "왕자는 마가렛이 기르는 검은 고양이이며, 마가렛은 나비를 포함한 여러 고양이를 기른다."
       },
       {
-       "t_raw": "Margaret가 Prince의 응석을 자주 받아 준다는 점에서, Prince는 여러 고양이 가운데서도 애정을 받는 **고양이 중 하나**로 보인다.",
+       "t_raw": "Margaret은 Prince를 장난스러운 꼬마 말썽꾸러기라 부르면서도 자주 애지중지하고, 그가 집을 비우면 집을 찾지 못할까 걱정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마가렛은 왕자를 장난스러운 꼬마 말썽꾸러기라 부르면서도 자주 애지중지하고, 그가 집을 비우면 집을 찾지 못할까 걱정한다."
+      },
+      {
+       "t_raw": "이런 호칭과 걱정이 겹쳐 **Margaret의 애호**가 드러나는 대목으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "마가렛이 왕자의 응석을 자주 받아 준다는 점에서, 왕자는 여러 고양이 가운데서도 애정을 받는 **고양이 중 하나**로 보인다."
+       "t": "이런 호칭과 걱정이 겹쳐 **마가렛의 애호**가 드러나는 대목으로 보인다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Prince",
+       "revision": 239785,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Prince",
+       "revision": 239785,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Margaret",
@@ -358,37 +701,86 @@
        "wiki_refs": []
       },
       {
+       "kind": "quest",
+       "quest": "When the West Wind Arises (Quest)",
+       "quest_ko": "서풍이 부는 일상",
+       "version": "1.0",
+       "speaker": "Margaret"
+      },
+      {
+       "kind": "quest",
+       "quest": "When the West Wind Arises (Quest)",
+       "quest_ko": "서풍이 부는 일상",
+       "version": "1.0",
+       "speaker": "Margaret"
+      },
+      {
+       "kind": "quest",
+       "quest": "Margaret's Longing",
+       "quest_ko": "의뢰인 마가렛의 그리움",
+       "version": "1.0",
+       "speaker": "Margaret"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by Q1 to Q4 and A3. The interpretation is reasonable.",
+     "quote": "Ahaha, yes, quite... quite... Ahem! Now, let's see about getting ourselves an audience with his little highness, Prince Rascal of Mondstadt!",
+     "sentences": [
+      {
+       "t_raw": "Prince는 Venti의 리라 줄을 훔쳐 달아나고, Venti는 그를 Prince Rascal of Mondstadt라 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "왕자는 벤티의 리라 줄을 훔쳐 달아나고, 벤티는 그를 Prince Rascal of Mondstadt라 부른다.",
+       "polish": {
+        "from": "왕자는 벤티의 리라 줄을 훔쳐 달아나고, 벤티는 그를 Prince Rascal of Mondstadt라 부른다.",
+        "text": "왕자는 벤티의 리라 줄을 훔쳐 달아나고, 벤티는 그를 Prince Rascal of Mondstadt라 부른다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Traveler는 Prince와 리라 줄을 되찾는 일을 맡아 생선으로 Prince를 꾀며, Paimon은 Venti가 Margaret과 Prince에 대해 이야기하는 것을 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자는 왕자와 리라 줄을 되찾는 일을 맡아 생선으로 왕자를 꾀며, 페이몬은 벤티가 마가렛과 왕자에 대해 이야기하는 것을 본다."
+      },
+      {
+       "t_raw": "Venti는 장난꾸러기 Prince가 붙잡혔고 astral iron strings도 되찾았다고 말하며, Margaret은 Prince가 Marketplace 근처에 있을 것이라 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 장난꾸러기 왕자가 붙잡혔고 별철 줄도 되찾았다고 말하며, 마가렛은 왕자가 Marketplace 근처에 있을 것이라 말한다.",
+       "polish": {
+        "from": "벤티는 장난꾸러기 왕자가 붙잡혔고 astral iron strings도 되찾았다고 말하며, 마가렛은 왕자가 Marketplace 근처에 있을 것이라 말한다.",
+        "text": "벤티는 장난꾸러기 왕자가 붙잡혔고 별철 줄도 되찾았다고 말하며, 마가렛은 왕자가 Marketplace 근처에 있을 것이라 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Paimon은 Prince 실종을 Jean과의 면담 안건에 올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 왕자 실종을 진과의 면담 안건에 올린다."
+      },
+      {
+       "t_raw": "Prince의 먹성과 Traveler의 생선 미끼, Marketplace라는 단서가 맞물려 **Traveler와 Paimon의 추적**이 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "왕자의 먹성과 여행자의 생선 미끼, Marketplace라는 단서가 맞물려 **여행자와 페이몬의 추적**이 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
        "kind": "wiki",
        "page": "Prince",
        "revision": 239785,
        "section": null,
        "paragraph": "A2",
        "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Margaret's Longing",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I mean little Princey. Prince was just home, now he's gone.",
-     "sentences": [
-      {
-       "t_raw": "Margaret's Longing에서 Prince는 **Venti의 리라 줄을 훔쳐 달아난다**.",
-       "interp": false,
-       "dropped": false,
-       "t": "의뢰인 마가렛의 그리움에서 왕자는 **벤티의 리라 줄을 훔쳐 달아난다**."
       },
-      {
-       "t_raw": "Margaret는 Prince가 방금 집에 있었는데 사라졌다며 집을 찾지 못할까 걱정하고, Paimon는 사라진 고양이 사건을 Jean과의 회의 안건에 올린다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마가렛은 왕자가 방금 집에 있었는데 사라졌다며 집을 찾지 못할까 걱정하고, 페이몬은 사라진 고양이 사건을 진과의 회의 안건에 올린다고 말한다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Prince",
@@ -399,130 +791,10 @@
       },
       {
        "kind": "quest",
-       "quest": "When the West Wind Arises (Quest)",
-       "quest_ko": "서풍이 부는 일상",
-       "version": "1.0",
-       "speaker": "Margaret"
-      },
-      {
-       "kind": "quest",
-       "quest": "When the West Wind Arises (Quest)",
-       "quest_ko": "서풍이 부는 일상",
-       "version": "1.0",
-       "speaker": "Margaret"
-      },
-      {
-       "kind": "quest",
-       "quest": "When the West Wind Arises (Quest)",
-       "quest_ko": "서풍이 부는 일상",
-       "version": "1.0",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — 의뢰인 마가렛의 그리움",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Margaret's Longing",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Aha! So, Prince is the name of the feline fiend who thieved my spare !",
-     "sentences": [
-      {
-       "t_raw": "Margaret는 Prince가 Marketplace 근처에 있을 검은 고양이라 하고, 좋아하는 음식을 건넨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마가렛은 왕자가 Marketplace 근처에 있을 검은 고양이라 하고, 좋아하는 음식을 건넨다."
-      },
-      {
-       "t_raw": "Venti는 Prince를 'Prince Rascal of Mondstadt'라 부르며 알현하러 가 보자고 하고, 그가 자신의 예비품을 훔친 고양이임을 알아차린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "벤티는 왕자를 'Prince Rascal of Mondstadt'라 부르며 알현하러 가 보자고 하고, 그가 자신의 예비품을 훔친 고양이임을 알아차린다."
-      },
-      {
-       "t_raw": "Paimon는 방금 Margaret와 Prince 이야기를 했던 점을 짚는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 방금 마가렛과 왕자 이야기를 했던 점을 짚는다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Margaret's Longing",
-       "quest_ko": "의뢰인 마가렛의 그리움",
-       "version": "1.0",
-       "speaker": "Margaret"
-      },
-      {
-       "kind": "quest",
-       "quest": "Margaret's Longing",
-       "quest_ko": "의뢰인 마가렛의 그리움",
-       "version": "1.0",
-       "speaker": "Margaret"
-      },
-      {
-       "kind": "quest",
        "quest": "Margaret's Longing",
        "quest_ko": "의뢰인 마가렛의 그리움",
        "version": "1.0",
        "speaker": "Venti"
-      },
-      {
-       "kind": "quest",
-       "quest": "Margaret's Longing",
-       "quest_ko": "의뢰인 마가렛의 그리움",
-       "version": "1.0",
-       "speaker": "Venti"
-      },
-      {
-       "kind": "quest",
-       "quest": "Margaret's Longing",
-       "quest_ko": "의뢰인 마가렛의 그리움",
-       "version": "1.0",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — 의뢰인 마가렛의 그리움",
-     "latin_left": [
-      "Marketplace",
-      "Prince Rascal of Mondstadt"
-     ]
-    },
-    {
-     "section": "작중 행적 — Margaret's Longing",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "That rascally Prince was apprehended by the brilliant ! And also reclaimed my precious astral iron strings while was at it.",
-     "sentences": [
-      {
-       "t_raw": "Traveler는 Prince와 리라 줄을 되찾아 돌려주는 임무를 맡고, **물고기로 Prince를 꾼다**.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자는 왕자와 리라 줄을 되찾아 돌려주는 임무를 맡고, **물고기로 왕자를 꾼다**."
-      },
-      {
-       "t_raw": "Venti는 Prince가 붙잡혔고 자신의 소중한 astral iron strings도 되찾혔다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "벤티는 왕자가 붙잡혔고 자신의 소중한 astral iron strings도 되찾혔다고 전한다."
-      },
-      {
-       "t_raw": "고양이와 줄이 **모두 회수된 셈이다**.",
-       "interp": true,
-       "dropped": false,
-       "t": "고양이와 줄이 **모두 회수된 셈이다**."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Prince",
-       "revision": 239785,
-       "section": null,
-       "paragraph": "A3",
-       "wiki_refs": []
       },
       {
        "kind": "quest",
@@ -530,34 +802,101 @@
        "quest_ko": "기사단 단장의 하루 휴가",
        "version": "1.0",
        "speaker": "Venti"
+      },
+      {
+       "kind": "quest",
+       "quest": "When the West Wind Arises (Quest)",
+       "quest_ko": "서풍이 부는 일상",
+       "version": "1.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Margaret's Longing",
+       "quest_ko": "의뢰인 마가렛의 그리움",
+       "version": "1.0",
+       "speaker": "Margaret"
       }
      ],
-     "heading": "작중 행적 — 의뢰인 마가렛의 그리움",
+     "heading": "인간관계",
+     "latin_left": [
+      "Prince Rascal of Mondstadt",
+      "Marketplace",
+      "Marketplace"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences match M6.",
+     "quote": "the Abyss Order has recently gained a new leader, named the Prince (or Princess)",
+     "sentences": [
+      {
+       "t_raw": "Abyss Order에 새 지도자가 생겼고, 그 이름은 Prince 또는 Princess라고 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연 교단에 새 지도자가 생겼고, 그 이름은 왕자 또는 「공주」라고 전해진다."
+      },
+      {
+       "t_raw": "Kaeya에게서 전달된 정보와 Venti의 배경 이야기를 통해, 그 지도자의 정체가 Traveler의 형제자매와 동일 인물로 식별된다는 내용이 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "케이아에게서 전달된 정보와 벤티의 배경 이야기를 통해, 그 지도자의 정체가 여행자의 형제자매와 동일 인물로 식별된다는 내용이 나온다."
+      },
+      {
+       "t_raw": "즉 이 문맥의 Prince는 Abyss Order의 새 지도자를 가리키는 호칭인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즉 이 문맥의 왕자는 심연 교단의 새 지도자를 가리키는 호칭인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Traveler's Sibling",
+       "revision": 165442,
+       "section": "Story",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
      "latin_left": []
     },
     {
-     "section": "명칭과 동명이인",
-     "status": "needs_verify",
-     "note": null,
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by M2, M3 and M5.",
      "quote": "she fulfilled her dreams of becoming the bride of a real Prince Charming.",
      "sentences": [
       {
-       "t_raw": "Vile는 더 나은 방도가 없으면 **Prince Charming**을 보내야 할지도 모른다고 말한다.",
+       "t_raw": "Vile는 더 나은 방법이 떠오르지 않으면 Prince Charming을 보내야 할지도 모른다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "베일은 더 나은 방도가 없으면 **Prince Charming**을 보내야 할지도 모른다고 말한다."
+       "t": "베일은 더 나은 방법이 떠오르지 않으면 Prince Charming을 보내야 할지도 모른다고 말한다."
       },
       {
-       "t_raw": "Wrench Wang는 Siyu가 진짜 Prince Charming의 신부가 되려는 꿈을 이루었다고 전하며, 그녀가 Prince Charming과 결혼하는 꿈을 실현했다고도 한다.",
+       "t_raw": "Wrench Wang는 Siyu가 \"a real Prince Charming\"의 신부가 되는 꿈을 이루었다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "왕반자는 사여가 진짜 Prince Charming의 신부가 되려는 꿈을 이루었다고 전하며, 그녀가 Prince Charming과 결혼하는 꿈을 실현했다고도 한다."
+       "t": "왕반자는 사여가 \"진짜 멋진 왕자님\"의 신부가 되는 꿈을 이루었다고 전한다.",
+       "polish": {
+        "from": "왕반자는 사여가 \"a real Prince Charming\"의 신부가 되는 꿈을 이루었다고 전한다.",
+        "text": "왕반자는 사여가 \"진짜 멋진 왕자님\"의 신부가 되는 꿈을 이루었다고 전한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "이 용례에서 **Prince Charming**은 이상적인 상대를 가리키는 일반 호칭으로 보인다.",
+       "t_raw": "Wrench Wang의 프로필에서도 Siyu가 Prince Charming과 결혼하는 꿈을 실현했다고 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "왕반자의 프로필에서도 사여가 Prince Charming과 결혼하는 꿈을 실현했다고 언급된다."
+      },
+      {
+       "t_raw": "같은 **Prince Charming** 표현이 Vile에게는 보낼 인물을 뜻하는 말로, Wrench Wang에게는 Siyu의 결혼 상대를 가리키는 말로 쓰인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이 용례에서 **Prince Charming**은 이상적인 상대를 가리키는 일반 호칭으로 보인다."
+       "t": "같은 **Prince Charming** 표현이 베일에게는 보낼 인물을 뜻하는 말로, 왕반자에게는 사여의 결혼 상대를 가리키는 말로 쓰인 셈이다."
       }
      ],
      "sources": [
@@ -586,46 +925,69 @@
        "wiki_refs": []
       }
      ],
-     "heading": "명칭과 동명이인",
+     "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Prince Charming",
       "Prince Charming",
       "Prince Charming",
       "Prince Charming"
      ]
     },
     {
-     "section": "명칭과 동명이인",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "the Abyss Order has recently gained a new leader, named the Prince (or Princess), who's identity is easily identified as being one and the same as the Traveler's sibling.",
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "M4 and M7 support the facts. The interpretation is reasonable.",
+     "quote": "is an area released in Version 1.2, \"The Chalk Prince and the Dragon.\"",
      "sentences": [
       {
-       "t_raw": "**Abyss Order의 Prince**는 고양이 Prince와 다른 층위의 호칭으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "**심연 교단의 왕자**는 고양이 왕자와 다른 층위의 호칭으로 볼 수 있다."
-      },
-      {
-       "t_raw": "Kaeya에게서 전달된 정보와 Venti의 배경 이야기에 따르면 Abyss Order에는 Prince (or Princess)라는 새 지도자가 생겼고, 그 정체는 Traveler의 sibling과 동일인으로 확인된다.",
+       "t_raw": "**The Chalk Prince and the Dragon**은 Archive가 이벤트 퀘스트를 담지 않는다는 설명에서 이벤트의 예로 언급된다.",
        "interp": false,
        "dropped": false,
-       "t": "케이아에게서 전달된 정보와 벤티의 배경 이야기에 따르면 심연 교단에는 왕자 (or 「공주」)라는 새 지도자가 생겼고, 그 정체는 여행자의 sibling과 동일인으로 확인된다."
+       "t": "**백악과 흑룡**은 도감이 이벤트 퀘스트를 담지 않는다는 설명에서 이벤트의 예로 언급된다."
       },
       {
-       "t_raw": "Margaret가 기르는 검은 고양이 Prince와 이 지도자는 이름은 같지만 서로 다른 대상을 가리키는 셈이다.",
+       "t_raw": "Dragonspine은 Version 1.2, \"The Chalk Prince and the Dragon\"에서 공개된 지역이며 Mondstadt 남부에 위치한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "드래곤 스파인은 Version 1.2, \"백악과 흑룡\"에서 공개된 지역이며 몬드 남부에 위치한다."
+      },
+      {
+       "t_raw": "이렇게 **Prince**라는 이름·호칭은 Abyss Order의 지도자, Prince Charming, The Chalk Prince and the Dragon이라는 제목에서 서로 다른 대상을 가리키는 사례로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "마가렛이 기르는 검은 고양이 왕자와 이 지도자는 이름은 같지만 서로 다른 대상을 가리키는 셈이다."
+       "t": "이렇게 **왕자**라는 이름·호칭은 심연 교단의 지도자, Prince Charming, 백악과 흑룡이라는 제목에서 서로 다른 대상을 가리키는 사례로 보인다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Prince",
-       "revision": 239785,
-       "section": null,
-       "paragraph": "A1",
+       "page": "Vile",
+       "revision": 67071,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wrench Wang",
+       "revision": 72300,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 164291,
+       "section": "Travel Log > Story Quests",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wrench Wang",
+       "revision": 72300,
+       "section": "Profile",
+       "paragraph": "M5",
        "wiki_refs": []
       },
       {
@@ -634,50 +996,6 @@
        "revision": 165442,
        "section": "Story",
        "paragraph": "M6",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "명칭과 동명이인",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Does not contain quests from Events, such as Unreconciled Stars or The Chalk Prince and the Dragon.",
-     "sentences": [
-      {
-       "t_raw": "Prince가 들어간 명칭으로 **The Chalk Prince and the Dragon**이 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "왕자가 들어간 명칭으로 **백악과 흑룡**이 있다."
-      },
-      {
-       "t_raw": "이 명칭은 Dragonspine이 공개된 Version 1.2의 이름이기도 하다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 명칭은 드래곤 스파인이 공개된 Version 1.2의 이름이기도 하다."
-      },
-      {
-       "t_raw": "**Archive**의 Travel Log > Story Quests는 이벤트에서 비롯된 퀘스트를 수록하지 않으며, Unreconciled Stars나 The Chalk Prince and the Dragon 같은 사례가 그 범위 밖에 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**도감**의 Travel Log > 전설 임무는 이벤트에서 비롯된 퀘스트를 수록하지 않으며, 돌아오지 않는 꺼진 별이나 백악과 흑룡 같은 사례가 그 범위 밖에 있다."
-      },
-      {
-       "t_raw": "따라서 이 명칭에 관한 이벤트 퀘스트는 Archive의 Story Quests에서 다루지 않는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "따라서 이 명칭에 관한 이벤트 퀘스트는 도감의 전설 임무에서 다루지 않는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Archive",
-       "revision": 164291,
-       "section": "Travel Log > Story Quests",
-       "paragraph": "M4",
        "wiki_refs": []
       },
       {
@@ -689,36 +1007,131 @@
        "wiki_refs": []
       }
      ],
-     "heading": "여담",
+     "heading": "떡밥과 수수께끼",
      "latin_left": [
       "Version",
-      "Travel Log"
+      "Prince Charming"
      ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Q1 and Q2 support the facts. The nickname reading is a reasonable interpretation, backed by A2 and Q10.",
+     "quote": "Ahaha, yes, quite... quite... Ahem! Now, let's see about getting ourselves an audience with his little highness, Prince Rascal of Mondstadt!",
+     "sentences": [
+      {
+       "t_raw": "Venti는 Prince를 **Prince Rascal of Mondstadt**라고 부르며, 그의 작은 전하를 만나러 가자고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 왕자를 **Prince Rascal of Mondstadt**라고 부르며, 그의 작은 전하를 만나러 가자고 말한다.",
+       "polish": {
+        "from": "벤티는 왕자를 **Prince Rascal of Mondstadt**라고 부르며, 그의 작은 전하를 만나러 가자고 말한다.",
+        "text": "벤티는 왕자를 **Prince Rascal of Mondstadt**라고 부르며, 그의 작은 전하를 만나러 가자고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Venti는 Prince를 장난꾸러기 Prince라고도 일컬었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 왕자를 장난꾸러기 왕자라고도 일컬었다."
+      },
+      {
+       "t_raw": "두 표현은 장난스러운 성격을 놀리듯 부르는 별칭으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 표현은 장난스러운 성격을 놀리듯 부르는 별칭으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Margaret's Longing",
+       "quest_ko": "의뢰인 마가렛의 그리움",
+       "version": "1.0",
+       "speaker": "Venti"
+      },
+      {
+       "kind": "quest",
+       "quest": "Master's Day Off (Quest)",
+       "quest_ko": "기사단 단장의 하루 휴가",
+       "version": "1.0",
+       "speaker": "Venti"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Prince Rascal of Mondstadt"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Q2 and M1 support both sentences.",
+     "quote": "She owns several cats, amongst others are Prince and Butterfly.",
+     "sentences": [
+      {
+       "t_raw": "Venti는 Prince가 붙잡혔고, 그 과정에서 소중한 **astral iron strings**도 되찾았다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 왕자가 붙잡혔고, 그 과정에서 소중한 **별철 줄**도 되찾았다고 말한다.",
+       "polish": {
+        "from": "벤티는 왕자가 붙잡혔고, 그 과정에서 소중한 **astral iron strings**도 되찾았다고 말한다.",
+        "text": "벤티는 왕자가 붙잡혔고, 그 과정에서 소중한 **별철 줄**도 되찾았다고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Margaret은 여러 고양이를 기르며, 그중에는 Prince와 Butterfly가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마가렛은 여러 고양이를 기르며, 그중에는 왕자와 나비가 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Master's Day Off (Quest)",
+       "quest_ko": "기사단 단장의 하루 휴가",
+       "version": "1.0",
+       "speaker": "Venti"
+      },
+      {
+       "kind": "wiki",
+       "page": "Margaret",
+       "revision": 238328,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "모두 고마워요. Prince는 Marketplace 근처 어딘가에 있을 거예요. 찾는 건 검은 고양이예요.",
-     "en": "Thank you all. Prince should be somewhere around the Marketplace. It's a black cat you're looking for.",
-     "speaker": "Margaret",
+     "status": "accepted",
+     "note": "The Korean is a faithful translation of the Venti line.",
+     "t_raw": "아하하, 그래, 꽤... 꽤... 에헴! 이제 Mondstadt의 Prince Rascal, 그 작은 전하를 알현하러 가 볼까!",
+     "en": "Ahaha, yes, quite... quite... Ahem! Now, let's see about getting ourselves an audience with his little highness, Prince Rascal of Mondstadt!",
+     "speaker": "Venti",
      "source": {
       "kind": "quest",
       "quest": "Margaret's Longing",
       "quest_ko": "의뢰인 마가렛의 그리움",
       "version": "1.0",
-      "speaker": "Margaret"
+      "speaker": "Venti"
      },
-     "t": "모두 고마워요. 왕자는 Marketplace 근처 어딘가에 있을 거예요. 찾는 건 검은 고양이예요.",
-     "speaker_ko": "마가렛"
+     "t": "아하하, 그래, 꽤... 꽤... 에헴! 이제 몬드의 Prince Rascal, 그 작은 전하를 알현하러 가 볼까!",
+     "speaker_ko": "벤티"
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "하하, Prince는 정말 장난기 많은 말썽꾸러기다!",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "하하, Prince는 정말 장난꾸러기 꼬마 말썽꾸러기구나!",
      "en": "Haha, Prince is a mischievous little rascal alright!",
      "speaker": "Margaret",
      "source": {
@@ -728,25 +1141,93 @@
       "version": "1.0",
       "speaker": "Margaret"
      },
-     "t": "하하, 왕자는 정말 장난기 많은 말썽꾸러기다!",
+     "t": "하하, 왕자는 정말 장난꾸러기 꼬마 말썽꾸러기구나!",
      "speaker_ko": "마가렛"
     },
     {
-     "section": "작중 행적 — Margaret's Longing",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "이건 조금 걱정되네요. Prince가 집으로 돌아오는 길을 찾지 못하면 어쩌죠?",
-     "en": "This is a bit worrying. What if Prince can't find his way home?",
+     "section": "작중 행적 — Margaret's Longing와 Master's Day Off",
+     "status": "accepted",
+     "note": "Faithful; '틀림없이' fits 'alright'.",
+     "t_raw": "하하, Prince는 틀림없이 장난꾸러기 꼬마 말썽쟁이예요!",
+     "en": "Haha, Prince is a mischievous little rascal alright!",
      "speaker": "Margaret",
+     "source": {
+      "kind": "quest",
+      "quest": "Margaret's Longing",
+      "quest_ko": "의뢰인 마가렛의 그리움",
+      "version": "1.0",
+      "speaker": "Margaret"
+     },
+     "t": "하하, 왕자는 틀림없이 장난꾸러기 꼬마 말썽쟁이예요!",
+     "speaker_ko": "마가렛"
+    },
+    {
+     "section": "작중 행적 — When the West Wind Arises",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아, 정말 믿을 수 없어! Prince라는 실종 고양이 사건이 이제 Jean과의 면담 안건에 추가된 모양이야.",
+     "en": "Ugh, unbelievable! Guess the case of Prince the missing cat is now added to the agenda for our meeting with Jean.",
+     "speaker": "Paimon",
      "source": {
       "kind": "quest",
       "quest": "When the West Wind Arises (Quest)",
       "quest_ko": "서풍이 부는 일상",
       "version": "1.0",
+      "speaker": "Paimon"
+     },
+     "t": "아, 정말 믿을 수 없어! 왕자라는 실종 고양이 사건이 이제 진과의 면담 안건에 추가된 모양이야.",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "오— 이걸 받아, little Prince가 가장 좋아하는 음식이야. 아마 그를 찾는 데 도움이 될지도 몰라.",
+     "en": "Oh— Take this , it's little Prince's favorite food. Maybe it will help you find him.",
+     "speaker": "Margaret",
+     "source": {
+      "kind": "quest",
+      "quest": "Margaret's Longing",
+      "quest_ko": "의뢰인 마가렛의 그리움",
+      "version": "1.0",
       "speaker": "Margaret"
      },
-     "t": "이건 조금 걱정되네요. 왕자가 집으로 돌아오는 길을 찾지 못하면 어쩌죠?",
+     "t": "오— 이걸 받아, little 왕자가 가장 좋아하는 음식이야. 아마 그를 찾는 데 도움이 될지도 몰라.",
      "speaker_ko": "마가렛"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "하하, Prince는 정말 장난꾸러기 꼬마 말썽꾸러기구나!",
+     "en": "Haha, Prince is a mischievous little rascal alright!",
+     "speaker": "Margaret",
+     "source": {
+      "kind": "quest",
+      "quest": "Margaret's Longing",
+      "quest_ko": "의뢰인 마가렛의 그리움",
+      "version": "1.0",
+      "speaker": "Margaret"
+     },
+     "t": "하하, 왕자는 정말 장난꾸러기 꼬마 말썽꾸러기구나!",
+     "speaker_ko": "마가렛"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아하하, 그래, 꽤... 꽤... 흠! 자, 이제 그의 작은 전하, Prince Rascal of Mondstadt를 알현하러 가 볼까!",
+     "en": "Ahaha, yes, quite... quite... Ahem! Now, let's see about getting ourselves an audience with his little highness, Prince Rascal of Mondstadt!",
+     "speaker": "Venti",
+     "source": {
+      "kind": "quest",
+      "quest": "Margaret's Longing",
+      "quest_ko": "의뢰인 마가렛의 그리움",
+      "version": "1.0",
+      "speaker": "Venti"
+     },
+     "t": "아하하, 그래, 꽤... 꽤... 흠! 자, 이제 그의 작은 전하, Prince Rascal of Mondstadt를 알현하러 가 볼까!",
+     "speaker_ko": "벤티"
     }
    ]
   }

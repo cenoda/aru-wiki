@@ -20,41 +20,51 @@
    "input_chars": 2326,
    "input_cut": false,
    "input_hash": "b7a6017b5781",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He was the creator of the Dainichi Mikoshi, the artificial sun that saved the nation from the threat of the Bathysmal Vishaps.",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Aberaku no Mikoto, also known as Abrax, was a historical figure who lived in Enkanomiya.",
      "sentences": [
       {
-       "t_raw": "Aberaku no Mikoto는 Enkanomiya에 살았던 역사적 인물이자 **Dainichi Mikoshi**의 창조자이며, Abrax로도 알려져 있다.",
+       "t_raw": "Aberaku no Mikoto는 Abrax라고도 불린 **Enkanomiya의 역사적 인물**이며, Bathysmal Vishaps의 위협에서 나라를 구한 인공 태양 Dainichi Mikoshi의 **창조자**다.",
        "interp": false,
        "dropped": false,
-       "t": "아베라쿠 no 미코토는 연하궁에 살았던 역사적 인물이자 **다이니치 미코시**의 창조자이며, 아브락스로도 알려져 있다."
+       "t": "아베라쿠노 미코토는 아브락스라고도 불린 **연하궁의 역사적 인물**이며, 심해 용 도마뱀의 위협에서 나라를 구한 인공 태양 다이니치 미코시의 **창조자**다.",
+       "polish": {
+        "from": "아베라쿠 no 미코토는 아브락스라고도 불린 **연하궁의 역사적 인물**이며, 심해 용 도마뱀의 위협에서 나라를 구한 인공 태양 다이니치 미코시의 **창조자**다.",
+        "text": "아베라쿠노 미코토는 아브락스라고도 불린 **연하궁의 역사적 인물**이며, 심해 용 도마뱀의 위협에서 나라를 구한 인공 태양 다이니치 미코시의 **창조자**다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그는 Bathysmal Vishaps의 위협에서 나라를 구한 인공 태양 **Helios**를 세웠고, 그 빛으로 Whitenight이 찾아오고 Evernight가 물러나 Sun and Moon의 첫해가 시작되었다.",
+       "t_raw": "그는 Tokoyo Ookami에게 깨달음을 얻어 Helios를 세웠지만, 완성 2년째에 Sunchild에게 투옥되었고 10년째에는 세상에 남아 있지 않은 상태가 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 심해 용 도마뱀의 위협에서 나라를 구한 인공 태양 **헬리오스**를 세웠고, 그 빛으로 Whitenight이 찾아오고 Evernight가 물러나 Sun and Moon의 첫해가 시작되었다."
+       "t": "그는 토코요노카미에게 깨달음을 얻어 헬리오스를 세웠지만, 완성 2년째에 태양의 아이에게 투옥되었고 10년째에는 세상에 남아 있지 않은 상태가 되었다."
       },
       {
-       "t_raw": "그러나 Helios 완성 2년째에 그는 Sunchild에게 반역죄로 고발되어 투옥되었고, Sun and Moon 10년째에는 감옥에서 죽은 뒤였다.",
+       "t_raw": "사후 그의 감정과 기억은 Sinshade로 보존되었고, 기억은 ley lines에 남아 Shade of Tokoyo로 나타나게 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 헬리오스 완성 2년째에 그는 Sunchild에게 반역죄로 고발되어 투옥되었고, Sun and Moon 10년째에는 감옥에서 죽은 뒤였다."
+       "t": "사후 그의 감정과 기억은 죄의 그림자로 보존되었고, 기억은 지맥에 남아 영원의 정령으로 나타나게 되었다.",
+       "polish": {
+        "from": "사후 그의 감정과 기억은 죄의 그림자로 보존되었고, 기억은 ley lines에 남아 영원의 정령으로 나타나게 되었다.",
+        "text": "사후 그의 감정과 기억은 죄의 그림자로 보존되었고, 기억은 지맥에 남아 영원의 정령으로 나타나게 되었다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "사후 그의 감정과 기억은 Sinshade로 보존되었고 기억은 지맥에 남아 Shade of Tokoyo로 나타났지만, 옷과 신체가 여러 곳에 안치되며 영혼은 조각나 오랫동안 편히 쉬지 못했다.",
-       "interp": false,
+       "t_raw": "구국을 이룬 창조자라는 자부심과 Sunchild에게 투옥된 몰락이 한 인물 안에서 겹치는 점은 그의 생애를 비극적으로 읽게 만든다.",
+       "interp": true,
        "dropped": false,
-       "t": "사후 그의 감정과 기억은 Sinshade로 보존되었고 기억은 지맥에 남아 영원의 정령으로 나타났지만, 옷과 신체가 여러 곳에 안치되며 영혼은 조각나 오랫동안 편히 쉬지 못했다."
+       "t": "구국을 이룬 창조자라는 자부심과 태양의 아이에게 투옥된 몰락이 한 인물 안에서 겹치는 점은 그의 생애를 비극적으로 읽게 만든다."
       }
      ],
      "sources": [
@@ -84,129 +94,52 @@
       },
       {
        "kind": "wiki",
-       "page": "Dainichi Mikoshi",
-       "revision": 562449,
-       "section": "Lore",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Dainichi Mikoshi",
-       "revision": 562449,
-       "section": "Lore",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Enkanomiya",
-       "revision": 572306,
-       "section": "Lore",
-       "paragraph": "M4",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": "Profile > Personality",
+       "paragraph": "A14",
        "wiki_refs": []
       }
      ],
      "heading": null,
-     "latin_left": [
-      "Whitenight",
-      "Evernight",
-      "Sun and Moon",
-      "Sunchild",
-      "Sun and Moon",
-      "Sinshade"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "As result, in the Year of Blindness, Aberaku's wisdom had been awakened and the people began constructing the Helios under his command.",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Aberaku no Mikoto, also known as Abrax, was a historical figure who lived in Enkanomiya.",
      "sentences": [
       {
-       "t_raw": "Aberaku no Mikoto는 Enkanomiya 역사의 \"Year of Blindness\"에 Tokoyo Ookami에게 깨우침을 받은 현자로, 빛이 없는 나라에 빛을 가져올 방법을 찾아 Helios를 세웠다.",
+       "t_raw": "Aberaku no Mikoto는 Abrax라고도 불린 Enkanomiya의 역사적 인물이며, Bathysmal Vishaps의 위협에서 나라를 구한 인공 태양 **Dainichi Mikoshi의 창조자**로 기록된다.",
        "interp": false,
        "dropped": false,
-       "t": "아베라쿠 no 미코토는 연하궁 역사의 \"Year of Blindness\"에 Tokoyo Ookami에게 깨우침을 받은 현자로, 빛이 없는 나라에 빛을 가져올 방법을 찾아 헬리오스를 세웠다."
+       "t": "아베라쿠노 미코토는 아브락스라고도 불린 연하궁의 역사적 인물이며, 심해 용 도마뱀의 위협에서 나라를 구한 인공 태양 **다이니치 미코시의 창조자**로 기록된다.",
+       "polish": {
+        "from": "아베라쿠 no 미코토는 아브락스라고도 불린 연하궁의 역사적 인물이며, 심해 용 도마뱀의 위협에서 나라를 구한 인공 태양 **다이니치 미코시의 창조자**로 기록된다.",
+        "text": "아베라쿠노 미코토는 아브락스라고도 불린 연하궁의 역사적 인물이며, 심해 용 도마뱀의 위협에서 나라를 구한 인공 태양 **다이니치 미코시의 창조자**로 기록된다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Byakuyakoku가 바다 아래로 가라앉아 Dragonheir of the Depths의 위협을 받자 Istaroth가 주민들의 간청을 듣고 Aberaku에게 지혜를 주어 **Dainichi Mikoshi**를 만들게 했으며, 그 빛이 Dragonheirs를 몰아내 Whitenight가 찾아오고 Evernight가 쫓겨나 첫 번째 Sun and Moon의 해가 열렸다.",
+       "t_raw": "그는 \"Year of Blindness\"에 Tokoyo Ookami에게 깨우침을 받은 현자로, 빛 없는 나라에 빛을 가져올 방법을 찾아 Helios라는 탑을 세웠고 이 탑은 후에 Dainichi Mikoshi로 알려졌다.",
        "interp": false,
        "dropped": false,
-       "t": "백야국이 바다 아래로 가라앉아 심해 용의 자손의 위협을 받자 이스타로트가 주민들의 간청을 듣고 아베라쿠에게 지혜를 주어 **다이니치 미코시**를 만들게 했으며, 그 빛이 용의 자손을 몰아내 Whitenight가 찾아오고 Evernight가 쫓겨나 첫 번째 Sun and Moon의 해가 열렸다."
+       "t": "그는 \"눈이 먼 해\"에 토코요노카미에게 깨우침을 받은 현자로, 빛 없는 나라에 빛을 가져올 방법을 찾아 헬리오스라는 탑을 세웠고 이 탑은 후에 다이니치 미코시로 알려졌다."
+      },
+      {
+       "t_raw": "죽은 뒤 그의 감정과 기억은 Sinshade로 보존되었고, ley lines에 보존된 기억은 그가 Shade of Tokoyo로 나타나게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "죽은 뒤 그의 감정과 기억은 죄의 그림자로 보존되었고, 지맥에 보존된 기억은 그가 영원의 정령으로 나타나게 했다.",
+       "polish": {
+        "from": "죽은 뒤 그의 감정과 기억은 죄의 그림자로 보존되었고, ley lines에 보존된 기억은 그가 영원의 정령으로 나타나게 했다.",
+        "text": "죽은 뒤 그의 감정과 기억은 죄의 그림자로 보존되었고, 지맥에 보존된 기억은 그가 영원의 정령으로 나타나게 했다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Profile",
-       "paragraph": "A12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Enkanomiya",
-       "revision": 572306,
-       "section": "Lore",
-       "paragraph": "M3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Dainichi Mikoshi",
-       "revision": 562449,
-       "section": "Lore",
-       "paragraph": "M2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": [
-      "Year of Blindness",
-      "Tokoyo Ookami",
-      "Whitenight",
-      "Evernight",
-      "Sun and Moon"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After his death, his emotions and memories were preserved as a Sinshade.",
-     "sentences": [
-      {
-       "t_raw": "Helios 완성 이듬해 부패한 귀족 무리가 Dainichi Mikoshi를 신으로 숭배하게 하고 Sunchild를 허수아비 통치자로 세웠으며, Aberaku가 이에 반대하자 Sunchild는 그를 반역죄로 몰아 투옥했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헬리오스 완성 이듬해 부패한 귀족 무리가 다이니치 미코시를 신으로 숭배하게 하고 Sunchild를 허수아비 통치자로 세웠으며, 아베라쿠가 이에 반대하자 Sunchild는 그를 반역죄로 몰아 투옥했다."
-      },
-      {
-       "t_raw": "Helios 완성 10년째에 그는 세상을 떠났고, 옷과 몸은 공적을 인정받아 여러 곳에 안치되었으나 그 일로 영혼이 조각나 오랫동안 편히 쉬지 못했으며, 죽은 뒤 그의 감정과 기억은 **Sinshade**로 보존되고 기억은 ley lines에 남아 Shade of Tokoyo로 현현했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헬리오스 완성 10년째에 그는 세상을 떠났고, 옷과 몸은 공적을 인정받아 여러 곳에 안치되었으나 그 일로 영혼이 조각나 오랫동안 편히 쉬지 못했으며, 죽은 뒤 그의 감정과 기억은 **Sinshade**로 보존되고 기억은 ley lines에 남아 영원의 정령으로 현현했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dainichi Mikoshi",
-       "revision": 562449,
-       "section": "Lore",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Enkanomiya",
-       "revision": 572306,
-       "section": "Lore",
-       "paragraph": "M4",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Aberaku",
@@ -220,120 +153,63 @@
        "page": "Aberaku",
        "revision": 567261,
        "section": "Profile",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": "Profile",
        "paragraph": "A13",
        "wiki_refs": []
       }
      ],
      "heading": "정체와 배경",
-     "latin_left": [
-      "Sunchild",
-      "Sunchild",
-      "Sinshade"
-     ]
+     "latin_left": []
     },
     {
-     "section": "작중 행적 — Helios와 Dainichi Mikoshi",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Only Istaroth, one of the other shining shades, heard and taught Aberaku enough knowledge such that he could create Dainichi Mikoshi",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Before the establishment of the Inazuman Watatsumi culture it was known as Hyperion (or Byakuya no Hikari).",
      "sentences": [
       {
-       "t_raw": "Byakuyakoku가 바다 아래로 가라앉은 뒤, 이곳을 다스리던 Dragonheir of the Depths는 어둠을 좋아하고 빛을 싫어하며 사람들을 위협했다.",
+       "t_raw": "Dainichi Mikoshi는 Byakuyakoku를 Dragonheir of the Depths로부터 지키기 위해 Aberaku no Mikoto가 만든 인공 태양이다.",
        "interp": false,
        "dropped": false,
-       "t": "백야국이 바다 아래로 가라앉은 뒤, 이곳을 다스리던 심해 용의 자손은 어둠을 좋아하고 빛을 싫어하며 사람들을 위협했다."
+       "t": "다이니치 미코시는 백야국을 심해 용의 자손으로부터 지키기 위해 아베라쿠노 미코토가 만든 인공 태양이다.",
+       "polish": {
+        "from": "다이니치 미코시는 백야국을 심해 용의 자손으로부터 지키기 위해 아베라쿠 no 미코토가 만든 인공 태양이다.",
+        "text": "다이니치 미코시는 백야국을 심해 용의 자손으로부터 지키기 위해 아베라쿠노 미코토가 만든 인공 태양이다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "사람들은 수천 개의 등불로 이를 막아 보았지만 효과가 크지 않았고, Primordial One과 Shining Shades에 구원을 빌었으나 응답을 듣지 못했다.",
+       "t_raw": "그가 세운 탑 Helios는 후에 Dainichi Mikoshi로 알려졌고, Inazuman Watatsumi 문화 이전에는 Hyperion 혹은 Byakuya no Hikari로, Aberaku 자신은 Helios라 불렀다.",
        "interp": false,
        "dropped": false,
-       "t": "사람들은 수천 개의 등불로 이를 막아 보았지만 효과가 크지 않았고, 원초의 그분과 Shining Shades에 구원을 빌었으나 응답을 듣지 못했다."
+       "t": "그가 세운 탑 헬리오스는 후에 다이니치 미코시로 알려졌고, 이나즈마 와타츠미 문화 이전에는 히페리온 혹은 백야의 백야의 빛으로, 아베라쿠 자신은 헬리오스라 불렀다.",
+       "polish": {
+        "from": "그가 세운 탑 헬리오스는 후에 다이니치 미코시로 알려졌고, 이나즈마 와타츠미 문화 이전에는 히페리온 혹은 백야 no 백야의 빛으로, 아베라쿠 자신은 헬리오스라 불렀다.",
+        "text": "그가 세운 탑 헬리오스는 후에 다이니치 미코시로 알려졌고, 이나즈마 와타츠미 문화 이전에는 히페리온 혹은 백야의 백야의 빛으로, 아베라쿠 자신은 헬리오스라 불렀다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그러던 Third Year of Darkness에 Istaroth가 그 비탄을 듣고 Aberaku no Mikoto에게 지혜를 주어, 그가 **Dainichi Mikoshi**를 만들 수 있게 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러던 Third Year of Darkness에 이스타로트가 그 비탄을 듣고 아베라쿠 no 미코토에게 지혜를 주어, 그가 **다이니치 미코시**를 만들 수 있게 했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dainichi Mikoshi",
-       "revision": 562449,
-       "section": "Lore",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Enkanomiya",
-       "revision": 572306,
-       "section": "Lore",
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 헬리오스와 다이니치 미코시",
-     "latin_left": [
-      "Shining Shades",
-      "Third Year of Darkness"
-     ]
-    },
-    {
-     "section": "작중 행적 — Helios와 Dainichi Mikoshi",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "How the people gazed upon it then! How they wept hot tears, raised their arms with joyful cries, unable to restrain their intense emotions!",
-     "sentences": [
-      {
-       "t_raw": "Year of Blindness에 Aberaku의 지혜가 깨어나자 사람들은 그의 지휘 아래 Helios를 짓기 시작했고, Helios가 완성된 해는 First Year of Sun and Moon이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Year of Blindness에 아베라쿠의 지혜가 깨어나자 사람들은 그의 지휘 아래 헬리오스를 짓기 시작했고, 헬리오스가 완성된 해는 First Year of Sun and Moon이었다."
-      },
-      {
-       "t_raw": "Helios의 빛은 Dragonheir of the Depths를 몰아내 Whitenight가 찾아오고 Evernight가 물러나게 했으며, 사람들은 뜨거운 눈물을 흘리며 기쁨의 외침과 함께 팔을 들어 올렸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "헬리오스의 빛은 심해 용의 자손을 몰아내 Whitenight가 찾아오고 Evernight가 물러나게 했으며, 사람들은 뜨거운 눈물을 흘리며 기쁨의 외침과 함께 팔을 들어 올렸다."
-      },
-      {
-       "t_raw": "Inazuman Watatsumi 문화가 서기 전에는 이 빛이 Hyperion 혹은 Byakuya no Hikari로도 불렸고, Aberaku는 그것을 **Helios**라 불렀다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이나즈마 와타츠미 문화가 서기 전에는 이 빛이 Hyperion 혹은 Byakuya no Hikari로도 불렸고, 아베라쿠는 그것을 **헬리오스**라 불렀다."
-      },
-      {
-       "t_raw": "오랜 어둠 속에서 수천 개의 등불로도 Dragonheir of the Depths를 막지 못했던 이들이 빛을 얻은 뒤 보인 환호는, 해방의 감정이 터진 장면으로 읽힌다.",
+       "t_raw": "**Dainichi Mikoshi, Helios, Hyperion은 같은 인공 태양에 붙은 이름들로 보인다.**",
        "interp": true,
        "dropped": false,
-       "t": "오랜 어둠 속에서 수천 개의 등불로도 심해 용의 자손을 막지 못했던 이들이 빛을 얻은 뒤 보인 환호는, 해방의 감정이 터진 장면으로 읽힌다."
+       "t": "**다이니치 미코시, 헬리오스, 히페리온은 같은 인공 태양에 붙은 이름들로 보인다.**"
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Dainichi Mikoshi",
-       "revision": 562449,
-       "section": "Lore",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Enkanomiya",
-       "revision": 572306,
-       "section": "Lore",
-       "paragraph": "M3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Enkanomiya",
-       "revision": 572306,
-       "section": "Lore",
-       "paragraph": "M4",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": "Profile",
+       "paragraph": "A12",
        "wiki_refs": []
       },
       {
@@ -345,6 +221,154 @@
        "wiki_refs": []
       },
       {
+       "kind": "wiki",
+       "page": "Enkanomiya",
+       "revision": 572306,
+       "section": "Subareas",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Helios 건조",
+     "status": "accepted",
+     "note": "All supported; interpretation is reasonable.",
+     "quote": "The people of Byakuyakoku pleaded to be saved from the Dragonheirs, but the Primordial One and three of its four shining shades did not answer.",
+     "sentences": [
+      {
+       "t_raw": "Byakuyakoku가 바다 아래로 가라앉은 뒤, 이곳을 다스리던 Dragonheir of the Depths — 지금의 Bathysmal Vishaps — 가 사람들을 위협했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백야국이 바다 아래로 가라앉은 뒤, 이곳을 다스리던 심해 용의 자손 — 지금의 심해 용 도마뱀 — 가 사람들을 위협했다."
+      },
+      {
+       "t_raw": "Dragonheir는 어둠을 좋아하고 빛을 싫어했으므로 사람들은 수천 개의 등불로 막아 보려 했지만 충분히 효과가 없었고, 결국 기도하고 탄식했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "용의 자손은 어둠을 좋아하고 빛을 싫어했으므로 사람들은 수천 개의 등불로 막아 보려 했지만 충분히 효과가 없었고, 결국 기도하고 탄식했다."
+      },
+      {
+       "t_raw": "Primordial One과 그 Shining Shades는 응답하지 않았고, Third Year of Darkness에 이르러 Istaroth, 네 Shining Shades 중 하나이자 'Ruler of Time'인 존재가 그들의 탄식을 들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원초의 그분과 그 빛나는 그림자는 응답하지 않았고, 암흑의 세 번째 해에 이르러 이스타로트, 네 빛나는 그림자 중 하나이자 '시간의 집정관'인 존재가 그들의 탄식을 들었다."
+      },
+      {
+       "t_raw": "등불이 충분히 효과가 없었다는 기록과 사람들이 기도하고 탄식했다는 기록을 함께 보면, Dragonheir의 위협은 사람들의 힘만으로는 감당하기 어려운 재난이었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "등불이 충분히 효과가 없었다는 기록과 사람들이 기도하고 탄식했다는 기록을 함께 보면, 용의 자손의 위협은 사람들의 힘만으로는 감당하기 어려운 재난이었던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dainichi Mikoshi",
+       "revision": 562449,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Enkanomiya",
+       "revision": 572306,
+       "section": "Lore",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 헬리오스 건조",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Helios 건조",
+     "status": "accepted",
+     "note": "Quote Q1 only says 'it'; it never says the people gazed at the light. Korean specifies '그 빛' (the light), which the English doesn't state.",
+     "quote": "How the people gazed upon it then! How they wept hot tears, raised their arms with joyful cries, unable to restrain their intense emotions!",
+     "sentences": [
+      {
+       "t_raw": "Third Year of Darkness에 Istaroth는 Aberaku no Mikoto에게 Dainichi Mikoshi를 만들 수 있을 만큼의 지혜를 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "암흑의 세 번째 해에 이스타로트는 아베라쿠노 미코토에게 다이니치 미코시를 만들 수 있을 만큼의 지혜를 주었다.",
+       "polish": {
+        "from": "암흑의 세 번째 해에 이스타로트는 아베라쿠 no 미코토에게 다이니치 미코시를 만들 수 있을 만큼의 지혜를 주었다.",
+        "text": "암흑의 세 번째 해에 이스타로트는 아베라쿠노 미코토에게 다이니치 미코시를 만들 수 있을 만큼의 지혜를 주었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그때 이 탑의 이름은 'Helios'였고, Year of Blindness에 Aberaku의 지혜가 깨어나자 사람들은 그의 지휘 아래 **Helios 건조**를 시작했는데, 그는 Tokoyo Ookami에게 깨우침을 받은 현자로 인정되어 빛 없는 나라에 빛을 가져올 방법을 찾아낸 인물로도 기록된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그때 이 탑의 이름은 '헬리오스'였고, 눈이 먼 해에 아베라쿠의 지혜가 깨어나자 사람들은 그의 지휘 아래 **헬리오스 건조**를 시작했는데, 그는 토코요노카미에게 깨우침을 받은 현자로 인정되어 빛 없는 나라에 빛을 가져올 방법을 찾아낸 인물로도 기록된다."
+      },
+      {
+       "t_raw": "Dainichi Mikoshi는 Bathysmal Vishaps의 위협에서 나라를 구한 인공 태양으로 기록된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다이니치 미코시는 심해 용 도마뱀의 위협에서 나라를 구한 인공 태양으로 기록된다."
+      },
+      {
+       "t_raw": "Helios가 완성된 해는 First Year of Sun and Moon이었고, 그 빛으로 사람들은 Dragonheir를 몰아내고 살아남았으며 **Whitenight**가 찾아오고 Evernight는 쫓겨났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헬리오스가 완성된 해는 일월 원년이었고, 그 빛으로 사람들은 용의 자손을 몰아내고 살아남았으며 **백야**가 찾아오고 상야는 쫓겨났다."
+      },
+      {
+       "t_raw": "사람들은 그것을 바라보며 뜨거운 눈물을 흘리고 팔을 들어 기쁨의 외침을 올리며 감정을 주체하지 못했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "사람들은 그것을 바라보며 뜨거운 눈물을 흘리고 팔을 들어 기쁨의 외침을 올리며 감정을 주체하지 못했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Enkanomiya",
+       "revision": 572306,
+       "section": "Lore",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": "Profile",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Dainichi Mikoshi",
+       "revision": 562449,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Enkanomiya",
+       "revision": 572306,
+       "section": "Lore",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
        "kind": "quest",
        "quest": "Narrow Inquiry",
        "quest_ko": "협곡의 질문",
@@ -352,49 +376,89 @@
        "speaker": "Aberaku"
       }
      ],
-     "heading": "작중 행적 — 헬리오스와 다이니치 미코시",
-     "latin_left": [
-      "Year of Blindness",
-      "First Year of Sun and Moon",
-      "Whitenight",
-      "Evernight",
-      "Hyperion",
-      "Byakuya",
-      "Hikari"
-     ]
+     "heading": "작중 행적 — 헬리오스 건조",
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Sunchild와 투옥",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "the Sunchildren could not truly rule competently, and were instead manipulated to commit heinous deeds",
+     "status": "accepted",
+     "note": "All supported by M9/M4.",
+     "quote": "a cabal of corrupt nobles would manipulate the people of Enkanomiya into worshipping the Dainichi Mikoshi as a god",
      "sentences": [
       {
-       "t_raw": "Helios가 완성되어 Dragonheirs의 위협이 물러간 뒤 Byakuyakoku에 평화가 찾아왔지만, Sun and Moon의 둘째 해에 부패한 귀족 무리가 사람들을 움직여 Dainichi Mikoshi를 신처럼 숭배하게 하고 아이를 **Sunchild**로 세워 통치하게 했다.",
+       "t_raw": "Helios 완성 뒤 Dragonheir의 위협이 물러나 평화가 서자, 부패한 귀족들은 **Dainichi Mikoshi를 신으로 숭배**하게 하고 아이를 Sunchild로 세웠다.",
        "interp": false,
        "dropped": false,
-       "t": "헬리오스가 완성되어 용의 자손의 위협이 물러간 뒤 백야국에 평화가 찾아왔지만, Sun and Moon의 둘째 해에 부패한 귀족 무리가 사람들을 움직여 다이니치 미코시를 신처럼 숭배하게 하고 아이를 **Sunchild**로 세워 통치하게 했다."
+       "t": "헬리오스 완성 뒤 용의 자손의 위협이 물러나 평화가 서자, 부패한 귀족들은 **다이니치 미코시를 신으로 숭배**하게 하고 아이를 태양의 아이로 세웠다."
       },
       {
-       "t_raw": "Sunchildren은 어려서 제대로 다스릴 수 없었고 귀족들은 그들의 악행으로 이득을 보았으며, 사람들은 그런 Sunchildren을 미움과 원망의 대상으로 삼았다.",
+       "t_raw": "Sunchild는 어린아이였기에 제대로 통치할 수 없었고, 귀족들은 그를 조종해 악행을 저지르게 하면서 이익을 얻었다.",
        "interp": false,
        "dropped": false,
-       "t": "태양의 아이는 어려서 제대로 다스릴 수 없었고 귀족들은 그들의 악행으로 이득을 보았으며, 사람들은 그런 태양의 아이를 미움과 원망의 대상으로 삼았다."
+       "t": "태양의 아이는 어린아이였기에 제대로 통치할 수 없었고, 귀족들은 그를 조종해 악행을 저지르게 하면서 이익을 얻었다."
       },
       {
-       "t_raw": "Aberaku는 Sunchild와 그를 조종하던 세력에 맞섰다가 **반역죄**로 몰려 Dainichi Mikoshi에 종신 감금되었고, 훗날 자신이 간악한 중상으로 무너졌고 꼭두각시 아이들에게 갇혔다고 되새기면서도 그 아이에게는 원한이 아니라 연민을 느꼈다고 말한다.",
+       "t_raw": "백성들은 Sunchild를 희생양으로 삼아 탓했지만, 조종당했음을 알고 있었다.",
        "interp": false,
        "dropped": false,
-       "t": "아베라쿠는 Sunchild와 그를 조종하던 세력에 맞섰다가 **반역죄**로 몰려 다이니치 미코시에 종신 감금되었고, 훗날 자신이 간악한 중상으로 무너졌고 꼭두각시 아이들에게 갇혔다고 되새기면서도 그 아이에게는 원한이 아니라 연민을 느꼈다고 말한다."
-      },
-      {
-       "t_raw": "권력의 실질적 주체는 귀족들이었지만, 반역죄의 칼날은 Sunchild의 이름으로 Aberaku에게 향한 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "권력의 실질적 주체는 귀족들이었지만, 반역죄의 칼날은 Sunchild의 이름으로 아베라쿠에게 향한 셈이다."
+       "t": "백성들은 태양의 아이를 희생양으로 삼아 탓했지만, 조종당했음을 알고 있었다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Enkanomiya",
+       "revision": 572306,
+       "section": "Lore",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sunchildren",
+       "revision": 556155,
+       "section": "Story",
+       "paragraph": "M9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 태양의 아이와 투옥",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Sunchild와 투옥",
+     "status": "accepted",
+     "note": "All supported by M8, Q7, Q8, Q16 and Q11.",
+     "quote": "How could I have been felled by your vile slander, or imprisoned by your puppet infants!?",
+     "sentences": [
+      {
+       "t_raw": "Aberaku는 Sunchild를 조종하는 귀족들에게 맞섰고, Sunchild는 그를 **반역죄**로 몰아 Dainichi Mikoshi에 종신 감금했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아베라쿠는 태양의 아이를 조종하는 귀족들에게 맞섰고, 태양의 아이는 그를 **반역죄**로 몰아 다이니치 미코시에 종신 감금했다."
+      },
+      {
+       "t_raw": "그는 악의적인 중상과 꼭두각시 같은 아이들의 손에 감금되었다고 되짚었고, 배신당해 감옥에서 썩었다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 악의적인 중상과 꼭두각시 같은 아이들의 손에 감금되었다고 되짚었고, 배신당해 감옥에서 썩었다고 말했다."
+      },
+      {
+       "t_raw": "그래도 그 아이에게는 증오 대신 연민을 느꼈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 그 아이에게는 증오 대신 연민을 느꼈다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": "Profile > Personality",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Dainichi Mikoshi",
@@ -420,14 +484,6 @@
        "wiki_refs": []
       },
       {
-       "kind": "wiki",
-       "page": "Sunchildren",
-       "revision": 556155,
-       "section": "Story",
-       "paragraph": "M9",
-       "wiki_refs": []
-      },
-      {
        "kind": "quest",
        "quest": "Temple Inquiry",
        "quest_ko": "사당 앞의 질문",
@@ -436,60 +492,46 @@
       },
       {
        "kind": "quest",
-       "quest": "Temple Inquiry",
-       "quest_ko": "사당 앞의 질문",
+       "quest": "Serpent's Heart Inquiry",
+       "quest_ko": "뱀 심장의 질문",
        "version": "2.4",
        "speaker": "Aberaku"
       }
      ],
-     "heading": "작중 행적 — Sunchild와 투옥",
-     "latin_left": [
-      "Sun and Moon",
-      "Sunchild",
-      "Sunchild",
-      "Sunchild"
-     ]
+     "heading": "작중 행적 — 태양의 아이와 투옥",
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Sunchild와 투옥",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "On the tenth year of Sun and Moon, Aberaku died in prison and his clothes and body were enshrined in various places in acknowledgement of his achievements for creating the Helios.",
+     "status": "accepted",
+     "note": "Supported by M1, Q3 and Q13.",
+     "quote": "However, this had the effect of splitting apart his soul into fragments, rendering him unable to rest for many years.",
      "sentences": [
       {
-       "t_raw": "Helios 완성 뒤 열째 해가 될 무렵 Aberaku는 이미 오래전에 세상을 떠난 상태였고, 감옥에서 죽은 그의 옷과 유해는 공적을 기려 여러 곳에 안치되었다.",
+       "t_raw": "Sun and Moon의 10년째에 Aberaku는 감옥에서 죽었고, 그의 의복과 신체는 Helios를 만든 공적을 인정받아 여러 곳에 안치되었다.",
        "interp": false,
        "dropped": false,
-       "t": "헬리오스 완성 뒤 열째 해가 될 무렵 아베라쿠는 이미 오래전에 세상을 떠난 상태였고, 감옥에서 죽은 그의 옷과 유해는 공적을 기려 여러 곳에 안치되었다."
+       "t": "Sun and Moon의 10년째에 아베라쿠는 감옥에서 죽었고, 그의 의복과 신체는 헬리오스를 만든 공적을 인정받아 여러 곳에 안치되었다.",
+       "polish": {
+        "from": "Sun and Moon의 10년째에 아베라쿠는 감옥에서 죽었고, 그의 의복과 신체는 헬리오스를 만든 공적을 인정받아 여러 곳에 안치되었다.",
+        "text": "Sun and Moon의 10년째에 아베라쿠는 감옥에서 죽었고, 그의 의복과 신체는 헬리오스를 만든 공적을 인정받아 여러 곳에 안치되었다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그러나 그 안치는 그의 영혼을 조각내어 오랫동안 쉬지 못하게 만들었다.",
+       "t_raw": "그러나 이 안치로 그의 **영혼은 조각났고**, 그는 오랫동안 편히 쉬지 못했다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 그 안치는 그의 영혼을 조각내어 오랫동안 쉬지 못하게 만들었다."
+       "t": "그러나 이 안치로 그의 **영혼은 조각났고**, 그는 오랫동안 편히 쉬지 못했다."
       },
       {
-       "t_raw": "그는 자신이 셀 수 없이 긴 세월 감금되어 있었다고 말하며 현재의 모습이 사후의 모습인지 스스로 묻는다.",
+       "t_raw": "그는 자신이 셀 수 없이 오랜 세월 감금되어 있었다며 사후의 모습인지 묻고, 영혼이 온전해져야 편히 쉴 수 있다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 자신이 셀 수 없이 긴 세월 감금되어 있었다고 말하며 현재의 모습이 사후의 모습인지 스스로 묻는다."
-      },
-      {
-       "t_raw": "그를 가둔 권력과 그를 기린 이들이 모두 그의 운명을 흔들었다는 점에서, 영혼의 분열은 공적에 대한 보상이 낳은 역설로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그를 가둔 권력과 그를 기린 이들이 모두 그의 운명을 흔들었다는 점에서, 영혼의 분열은 공적에 대한 보상이 낳은 역설로 보인다."
+       "t": "그는 자신이 셀 수 없이 오랜 세월 감금되어 있었다며 사후의 모습인지 묻고, 영혼이 온전해져야 편히 쉴 수 있다고 말한다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Profile",
-       "paragraph": "A12",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Dainichi Mikoshi",
@@ -504,31 +546,60 @@
        "quest_ko": "사당 앞의 질문",
        "version": "2.4",
        "speaker": "Aberaku"
-      }
-     ],
-     "heading": "작중 행적 — Sunchild와 투옥",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — 2.4 퀘스트: 흩어진 영혼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Wait, but if he's Aberaku, what's the Helios?",
-     "sentences": [
-      {
-       "t_raw": "Narrow Inquiry와 Temple Inquiry에서 Aberaku는 **Key Sigil** 봉인을 풀어야 나타난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "협곡의 질문과 사당 앞의 질문에서 아베라쿠는 **건문** 봉인을 풀어야 나타난다."
       },
       {
-       "t_raw": "Narrow Inquiry에서 Paimon은 그가 Aberaku라면 Helios는 무엇인지 되묻는다.",
+       "kind": "quest",
+       "quest": "Narrow Inquiry",
+       "quest_ko": "협곡의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      }
+     ],
+     "heading": "작중 행적 — 태양의 아이와 투옥",
+     "latin_left": [
+      "Sun and Moon"
+     ]
+    },
+    {
+     "section": "작중 행적 — 2.4의 잔영",
+     "status": "accepted",
+     "note": "Supported by A3, A5, A7 and A9. The interpretation is reasonable.",
+     "quote": "The player must unseal the Key Sigil seals for Aberaku to appear.",
+     "sentences": [
+      {
+       "t_raw": "Dainichi Mikoshi 중앙 순간이동 웨이포인트 바로 아래에는 Aberaku의 잔영이 있는데, 주변에는 Ruin Guards 둘이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "협곡의 질문에서 페이몬은 그가 아베라쿠라면 헬리오스는 무엇인지 되묻는다."
+       "t": "다이니치 미코시 중앙 순간이동 웨이포인트 바로 아래에는 아베라쿠의 잔영이 있는데, 주변에는 유적 가디언 둘이 있다."
+      },
+      {
+       "t_raw": "Ruin Guards를 물리치고 횃불 두 개에 불을 밝히면 숨겨진 방이 드러나고, 그곳에서 그와 대화할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유적 가디언을 물리치고 횃불 두 개에 불을 밝히면 숨겨진 방이 드러나고, 그곳에서 그와 대화할 수 있다."
+      },
+      {
+       "t_raw": "Narrow Inquiry, Temple Inquiry, Serpent's Heart Inquiry의 현장에서는 **Key Sigil 봉인**을 풀어야 Aberaku가 모습을 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "협곡의 질문, 사당 앞의 질문, 뱀 심장의 질문의 현장에서는 **건문 봉인**을 풀어야 아베라쿠가 모습을 드러낸다."
+      },
+      {
+       "t_raw": "이처럼 Ruin Guards와 횃불, Key Sigil 봉인이라는 절차를 거쳐야 그를 만날 수 있다는 점은, 2.4의 잔영 추적이 숨겨진 흔적을 하나씩 여는 과정으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 유적 가디언과 횃불, 건문 봉인이라는 절차를 거쳐야 그를 만날 수 있다는 점은, 2.4의 잔영 추적이 숨겨진 흔적을 하나씩 여는 과정으로 보인다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": "Location",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Aberaku",
@@ -562,295 +633,107 @@
        "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
-       "version": "2.4",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — 2.4 퀘스트: 흩어진 영혼",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — 2.4 퀘스트: 흩어진 영혼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I remember now! My soul is rent! If it can be made whole, I can be at peace once more.",
-     "sentences": [
-      {
-       "t_raw": "Narrow Inquiry에서 Aberaku는 Helios를 바라보던 이들의 눈물과 환호를 떠올리며 'Ah, Helios! Helios!'라고 외친다.",
-       "interp": false,
-       "dropped": false,
-       "t": "협곡의 질문에서 아베라쿠는 헬리오스를 바라보던 이들의 눈물과 환호를 떠올리며 'Ah, 헬리오스! 헬리오스!'라고 외친다."
-      },
-      {
-       "t_raw": "안치될 뼈의 일부가 오래전에 썩어 버렸다며 간청한 뒤, 영혼이 꿈의 영역에서 쉬지 못하는 이유를 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "안치될 뼈의 일부가 오래전에 썩어 버렸다며 간청한 뒤, 영혼이 꿈의 영역에서 쉬지 못하는 이유를 되묻는다."
-      },
-      {
-       "t_raw": "곧 **영혼이 찢겨 있다**는 사실을 기억하고, 온전해지면 평온을 찾을 수 있다며 상대가 중요한 역할을 맡아야 한다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "곧 **영혼이 찢겨 있다**는 사실을 기억하고, 온전해지면 평온을 찾을 수 있다며 상대가 중요한 역할을 맡아야 한다고 말한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      }
-     ],
-     "heading": "작중 행적 — 2.4 퀘스트: 흩어진 영혼",
-     "latin_left": [
-      "Ah"
-     ]
-    },
-    {
-     "section": "작중 행적 — 2.4 퀘스트: 흩어진 영혼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "And yet, though it shames me to say so, I know not just how I died...",
-     "sentences": [
-      {
-       "t_raw": "Temple Inquiry에서 Aberaku는 오랜 투옥 끝에 지금의 모습이 사후의 모습인 듯하다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "사당 앞의 질문에서 아베라쿠는 오랜 투옥 끝에 지금의 모습이 사후의 모습인 듯하다고 말한다."
-      },
-      {
-       "t_raw": "그는 악의적인 참언에 쓰러지고 꼭두각시 같은 아이들에게 감금된 일을 분개하면서도, 그 아이에게는 오늘날까지 증오 없이 연민만 느낀다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 악의적인 참언에 쓰러지고 꼭두각시 같은 아이들에게 감금된 일을 분개하면서도, 그 아이에게는 오늘날까지 증오 없이 연민만 느낀다고 말한다."
-      },
-      {
-       "t_raw": "아이의 명령으로 투옥되었다는 기억을 떠올리지만, 자신이 어떻게 죽었는지는 알지 못한다고 고백한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아이의 명령으로 투옥되었다는 기억을 떠올리지만, 자신이 어떻게 죽었는지는 알지 못한다고 고백한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Temple Inquiry",
-       "quest_ko": "사당 앞의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Temple Inquiry",
-       "quest_ko": "사당 앞의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Temple Inquiry",
-       "quest_ko": "사당 앞의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Temple Inquiry",
-       "quest_ko": "사당 앞의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Temple Inquiry",
-       "quest_ko": "사당 앞의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      }
-     ],
-     "heading": "작중 행적 — 2.4 퀘스트: 흩어진 영혼",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Hyperion's Dirge와 현재 모습",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I... I was betrayed...",
-     "sentences": [
-      {
-       "t_raw": "Serpent's Heart Inquiry의 장소에서는 Key Sigil seals를 풀어야 Aberaku가 모습을 드러낸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "뱀 심장의 질문의 장소에서는 건문 seals를 풀어야 아베라쿠가 모습을 드러낸다."
-      },
-      {
-       "t_raw": "그는 자신의 위업을 Byakuyakoku에서 자신 외에는 해낼 수 없었다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 자신의 위업을 백야국에서 자신 외에는 해낼 수 없었다고 말한다."
-      },
-      {
-       "t_raw": "또한 자신도 그들의 계략에 휘말려 감옥에서 썩었다고 회고하고, **배신**을 떠올리며 저주를 퍼붓는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "또한 자신도 그들의 계략에 휘말려 감옥에서 썩었다고 회고하고, **배신**을 떠올리며 저주를 퍼붓는다."
-      },
-      {
-       "t_raw": "그가 배신의 기억과 분노를 함께 드러내는 것은 과거의 상처가 현재까지 남아 있음을 보여 주는 대목으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그가 배신의 기억과 분노를 함께 드러내는 것은 과거의 상처가 현재까지 남아 있음을 보여 주는 대목으로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
        "kind": "wiki",
        "page": "Aberaku",
        "revision": 567261,
        "section": "Location",
        "paragraph": "A8",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Location",
-       "paragraph": "A9",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Serpent's Heart Inquiry",
-       "quest_ko": "뱀 심장의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Serpent's Heart Inquiry",
-       "quest_ko": "뱀 심장의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Serpent's Heart Inquiry",
-       "quest_ko": "뱀 심장의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Serpent's Heart Inquiry",
-       "quest_ko": "뱀 심장의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
       }
      ],
-     "heading": "작중 행적 — 히페리온의 애가와 현재 모습",
+     "heading": "작중 행적 — 2.4의 잔영",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Hyperion's Dirge와 현재 모습",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I... I am the creator of the Helios, and this place is my... final resting place.",
+     "section": "작중 행적 — 2.4의 잔영",
+     "status": "accepted",
+     "note": "Supported by Q5, Q9, Q13 and Q17. The interpretation is reasonable.",
+     "quote": "I remember now! My soul is rent! If it can be made whole, I can be at peace once more.",
      "sentences": [
       {
-       "t_raw": "Hyperion's Dirge에서는 Dainichi Mikoshi 중앙 순간이동 지점 아래 숨겨진 방에서 Aberaku를 만난다.",
+       "t_raw": "Narrow Inquiry에서 Aberaku의 잔영은 이곳에 안치되어 있어야 할 뼈 일부가 오래전 썩어 없어졌다며 간구하고, 자신이 왜 이곳에 있으며 영혼이 꿈의 영역에서 길을 잃어 편히 쉬지 못하는지 되묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "히페리온의 애가에서는 다이니치 미코시 중앙 순간이동 지점 아래 숨겨진 방에서 아베라쿠를 만난다."
+       "t": "협곡의 질문에서 아베라쿠의 잔영은 이곳에 안치되어 있어야 할 뼈 일부가 오래전 썩어 없어졌다며 간구하고, 자신이 왜 이곳에 있으며 영혼이 꿈의 영역에서 길을 잃어 편히 쉬지 못하는지 되묻는다."
       },
       {
-       "t_raw": "그 방은 두 Ruin Guards를 물리치고 두 횃불을 밝히면 드러난다.",
+       "t_raw": "그는 이내 기억을 되찾고 자신의 **영혼이 찢겨** 있으며 온전해질 수 있다면 다시 편히 쉴 수 있다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그 방은 두 유적 가디언을 물리치고 두 횃불을 밝히면 드러난다."
+       "t": "그는 이내 기억을 되찾고 자신의 **영혼이 찢겨** 있으며 온전해질 수 있다면 다시 편히 쉴 수 있다고 말한다."
       },
       {
-       "t_raw": "Aberaku는 자신을 **Aberaku, Helios-Forger!**라고 부르며, 자신이 Helios의 창조자이고 이곳이 자신의 마지막 안식처라고 말한다.",
+       "t_raw": "이 일에서 상대가 결정적 역할을 해야 한다고도 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "아베라쿠는 자신을 **아베라쿠, Helios-Forger!**라고 부르며, 자신이 헬리오스의 창조자이고 이곳이 자신의 마지막 안식처라고 말한다."
+       "t": "이 일에서 상대가 결정적 역할을 해야 한다고도 전한다."
       },
       {
-       "t_raw": "그는 먼 곳에서 온 손님을 알아보고, 자신이 초라한 모습으로 맞이하게 된 것을 유감스러워한다.",
-       "interp": false,
+       "t_raw": "찢긴 영혼과 편히 쉬지 못하는 상태가 함께 제시되고, 온전해짐이 안식의 조건으로 제시된다는 점에서, 이 대화는 잔영이 남은 문제를 푸는 단서로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "그는 먼 곳에서 온 손님을 알아보고, 자신이 초라한 모습으로 맞이하게 된 것을 유감스러워한다."
-      },
-      {
-       "t_raw": "Hyperion's Dirge를 완료한 뒤 Aberaku는 재능과 능력이 무슨 소용이냐고 탄식하고, Dainichi Mikoshi의 **최고점**으로 영구히 이동한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "히페리온의 애가를 완료한 뒤 아베라쿠는 재능과 능력이 무슨 소용이냐고 탄식하고, 다이니치 미코시의 **최고점**으로 영구히 이동한다."
-      },
-      {
-       "t_raw": "그 최고점은 그 숨겨진 방의 Phase Gate를 통해 갈 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 최고점은 그 숨겨진 방의 위상의 문을 통해 갈 수 있다."
+       "t": "찢긴 영혼과 편히 쉬지 못하는 상태가 함께 제시되고, 온전해짐이 안식의 조건으로 제시된다는 점에서, 이 대화는 잔영이 남은 문제를 푸는 단서로 보인다."
       }
      ],
      "sources": [
       {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Location",
-       "paragraph": "A2",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "Narrow Inquiry",
+       "quest_ko": "협곡의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
       },
       {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Location",
-       "paragraph": "A3",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "Narrow Inquiry",
+       "quest_ko": "협곡의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
       },
+      {
+       "kind": "quest",
+       "quest": "Narrow Inquiry",
+       "quest_ko": "협곡의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
+       "quest": "Narrow Inquiry",
+       "quest_ko": "협곡의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      }
+     ],
+     "heading": "작중 행적 — 2.4의 잔영",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 2.4의 잔영",
+     "status": "accepted",
+     "note": "Supported by Q6, Q14, Q18 and A11. The interpretation is reasonable.",
+     "quote": "After completing Hyperion's Dirge, Aberaku will permanently move to the highest point of Dainichi Mikoshi.",
+     "sentences": [
+      {
+       "t_raw": "Hyperion's Dirge에서 그는 자신이 Helios의 창조자이며 이곳이 자신의 안식처라고 밝히고, 먼 곳에서 온 손님임을 알아본 뒤 자신을 Aberaku, Helios-Forger!라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히페리온의 애가에서 그는 자신이 헬리오스의 창조자이며 이곳이 자신의 안식처라고 밝히고, 먼 곳에서 온 손님임을 알아본 뒤 자신을 아베라쿠, 헬리오스 건축자!라고 소개한다."
+      },
+      {
+       "t_raw": "Hyperion's Dirge를 완료한 뒤에는 **Dainichi Mikoshi 최고점**으로 영구히 이동하며, 중앙 순간이동 웨이포인트 아래 비밀 방의 Phase Gate를 이용해 그곳에 갈 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히페리온의 애가를 완료한 뒤에는 **다이니치 미코시 최고점**으로 영구히 이동하며, 중앙 순간이동 웨이포인트 아래 비밀 방의 위상의 문을 이용해 그곳에 갈 수 있다."
+      },
+      {
+       "t_raw": "그가 스스로 안식처라 부른 Dainichi Mikoshi 안에서, 완료 후 최고점으로 자리를 옮긴다는 점은 그 이동이 잔영의 서사가 일단락된 뒤의 변화로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 스스로 안식처라 부른 다이니치 미코시 안에서, 완료 후 최고점으로 자리를 옮긴다는 점은 그 이동이 잔영의 서사가 일단락된 뒤의 변화로 볼 수 있다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Aberaku",
@@ -860,12 +743,168 @@
        "wiki_refs": []
       },
       {
+       "kind": "quest",
+       "quest": "Hyperion's Dirge (Quest)",
+       "quest_ko": "히페리온의 애가",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyperion's Dirge (Quest)",
+       "quest_ko": "히페리온의 애가",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyperion's Dirge (Quest)",
+       "quest_ko": "히페리온의 애가",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      }
+     ],
+     "heading": "작중 행적 — 2.4의 잔영",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 모습",
+     "status": "accepted",
+     "note": "Supported by A14, Q4 and Q21. Both interpretations are reasonable.",
+     "quote": "This unsurpassed deed could have been done by no other in Byakuyakoku — none save I!",
+     "sentences": [
+      {
+       "t_raw": "Aberaku는 Dainichi Mikoshi를 만든 자부심 때문에 다소 자기중심적인 면이 있었고, 대화 중에 스스로를 **Aberaku, Helios-Forger**라고 극적으로 소개하곤 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아베라쿠는 다이니치 미코시를 만든 자부심 때문에 다소 자기중심적인 면이 있었고, 대화 중에 스스로를 **아베라쿠, 헬리오스 건축자**라고 극적으로 소개하곤 했다."
+      },
+      {
+       "t_raw": "그 자부심은 “This unsurpassed deed could have been done by no other in Byakuyakoku — none save I!”라는 말에서도 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 자부심은 “This unsurpassed deed could have been done by no other in 백야국 — none save I!”라는 말에서도 드러난다.",
+       "polish": {
+        "from": "그 자부심은 “This unsurpassed deed could have been done by no other in 백야국 — none save I!”라는 말에서도 드러난다.",
+        "text": "그 자부심은 “This unsurpassed deed could have been done by no other in 백야국 — none save I!”라는 말에서도 드러난다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그가 “Ah, Helios! Helios!”라고 말하는 장면에서도 Helios에 대한 애착이 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 “Ah, 헬리오스! 헬리오스!”라고 말하는 장면에서도 헬리오스에 대한 애착이 읽힌다."
+      }
+     ],
+     "sources": [
+      {
        "kind": "wiki",
        "page": "Aberaku",
        "revision": 567261,
-       "section": "Dialogue",
-       "paragraph": "A16",
+       "section": "Profile > Personality",
+       "paragraph": "A14",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyperion's Dirge (Quest)",
+       "quest_ko": "히페리온의 애가",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
+       "quest": "Serpent's Heart Inquiry",
+       "quest_ko": "뱀 심장의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
+       "quest": "Narrow Inquiry",
+       "quest_ko": "협곡의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      }
+     ],
+     "heading": "성격과 모습",
+     "latin_left": [
+      "This",
+      "Ah"
+     ]
+    },
+    {
+     "section": "성격과 모습",
+     "status": "accepted",
+     "note": "All sentences are supported by A14 and the quoted lines Q7, Q10, Q11, Q12 and A17.",
+     "quote": "Indeed. But till today, I can never feel any hatred for that child, only pity.",
+     "sentences": [
+      {
+       "t_raw": "그러나 그는 귀족들이 Sunchildren을 지배하는 데 반대했고, Enkanomiya 백성 다수가 Sunchildren을 비난해도 그들을 탓하지 않았으며, 그들과 Enkanomiya를 구하지 못한 것을 후회했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 그는 귀족들이 태양의 아이를 지배하는 데 반대했고, 연하궁 백성 다수가 태양의 아이를 비난해도 그들을 탓하지 않았으며, 그들과 연하궁을 구하지 못한 것을 후회했다."
+      },
+      {
+       "t_raw": "그 아이에 대해서는 “Indeed. But till today, I can never feel any hatred for that child, only pity.”라고 말해 **연민**을 보이지만, “A pox! A pox upon them all!”이라며 저주하고 “How could I have been felled by your vile slander, or imprisoned by your puppet infants!?”라고 외친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 아이에 대해서는 “Indeed. But till today, I can never feel any hatred for that child, only pity.”라고 말해 **연민**을 보이지만, “A pox! A pox upon them all!”이라며 저주하고 “How could I have been felled by your vile slander, or imprisoned by your puppet infants!?”라고 외친다.",
+       "polish": {
+        "from": "그 아이에 대해서는 “Indeed. But till today, I can never feel any hatred for that child, only pity.”라고 말해 **연민**을 보이지만, “A pox! A pox upon them all!”이라며 저주하고 “How could I have been felled by your vile slander, or imprisoned by your puppet infants!?”라고 외친다.",
+        "text": "그 아이에 대해서는 “Indeed. But till today, I can never feel any hatred for that child, only pity.”라고 말해 **연민**을 보이지만, “A pox! A pox upon them all!”이라며 저주하고 “How could I have been felled by your vile slander, or imprisoned by your puppet infants!?”라고 외친다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그는 만남을 앞두고 “I only regret that I have come to meet you in such a horrid state.”라고 말하고, “Ah... All the talent, all the ability... But what use was it?”라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 만남을 앞두고 “I only regret that I have come to meet you in such a horrid state.”라고 말하고, “Ah... All the talent, all the ability... But what use was it?”라고 말한다.",
+       "polish": {
+        "from": "그는 만남을 앞두고 “I only regret that I have come to meet you in such a horrid state.”라고 말하고, “Ah... All the talent, all the ability... But what use was it?”라고 말한다.",
+        "text": "그는 만남을 앞두고 “I only regret that I have come to meet you in such a horrid state.”라고 말하고, “Ah... All the talent, all the ability... But what use was it?”라고 말한다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": "Profile > Personality",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Temple Inquiry",
+       "quest_ko": "사당 앞의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
+       "quest": "Serpent's Heart Inquiry",
+       "quest_ko": "뱀 심장의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
+       "quest": "Temple Inquiry",
+       "quest_ko": "사당 앞의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyperion's Dirge (Quest)",
+       "quest_ko": "히페리온의 애가",
+       "version": "2.4",
+       "speaker": "Aberaku"
       },
       {
        "kind": "wiki",
@@ -874,6 +913,50 @@
        "section": "Dialogue",
        "paragraph": "A17",
        "wiki_refs": []
+      }
+     ],
+     "heading": "성격과 모습",
+     "latin_left": [
+      "Indeed",
+      "But",
+      "How",
+      "Ah",
+      "All the",
+      "But"
+     ]
+    },
+    {
+     "section": "성격과 모습",
+     "status": "accepted",
+     "note": "A15 gives the translucent humanoid shade. The link to Q10 is framed as a reading, so it passes as interpretation.",
+     "quote": "I only regret that I have come to meet you in such a horrid state.",
+     "sentences": [
+      {
+       "t_raw": "모습은 대부분의 잔영처럼 뚜렷한 신체적 특징이 없는 **반투명 인간형**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모습은 대부분의 잔영처럼 뚜렷한 신체적 특징이 없는 **반투명 인간형**이다."
+      },
+      {
+       "t_raw": "스스로를 “such a horrid state”라고 표현한 장면은 그런 모습과 겹쳐 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스스로를 “such a horrid state”라고 표현한 장면은 그런 모습과 겹쳐 읽힌다.",
+       "polish": {
+        "from": "스스로를 “such a horrid state”라고 표현한 장면은 그런 모습과 겹쳐 읽힌다.",
+        "text": "스스로를 “such a horrid state”라고 표현한 장면은 그런 모습과 겹쳐 읽힌다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": "Profile > Appearance",
+       "paragraph": "A15",
+       "wiki_refs": []
       },
       {
        "kind": "quest",
@@ -883,277 +966,47 @@
        "speaker": "Aberaku"
       }
      ],
-     "heading": "작중 행적 — 히페리온의 애가와 현재 모습",
-     "latin_left": [
-      "Helios-Forger"
-     ]
-    },
-    {
-     "section": "성격과 능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Aberaku had something of an ego due to his pride over his creation of the Dainichi Mikoshi",
-     "sentences": [
-      {
-       "t_raw": "Aberaku는 Dainichi Mikoshi를 만든 일에 자부심을 가져 다소 자존심이 강한 면이 있었고, 대화에서 **Aberaku, Helios-Forger**라고 극적으로 자신을 소개했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아베라쿠는 다이니치 미코시를 만든 일에 자부심을 가져 다소 자존심이 강한 면이 있었고, 대화에서 **아베라쿠, Helios-Forger**라고 극적으로 자신을 소개했다."
-      },
-      {
-       "t_raw": "그는 Byakuyakoku에서 이 불세출의 업적을 이룰 이가 자신밖에 없다고 말하기도 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 백야국에서 이 불세출의 업적을 이룰 이가 자신밖에 없다고 말하기도 했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Profile > Personality",
-       "paragraph": "A14",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Serpent's Heart Inquiry",
-       "quest_ko": "뱀 심장의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      }
-     ],
-     "heading": "성격과 능력",
-     "latin_left": [
-      "Helios-Forger"
-     ]
-    },
-    {
-     "section": "성격과 능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But till today, I can never feel any hatred for that child, only pity.",
-     "sentences": [
-      {
-       "t_raw": "그러나 그는 부패한 귀족들이 Sunchildren을 조종하던 권력에 맞섰고, Sunchildren이 포학을 저질렀다는 이유로 많은 Enkanomiya 사람들이 그들을 탓했어도 아이들 자체는 원망하지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 그는 부패한 귀족들이 태양의 아이를 조종하던 권력에 맞섰고, 태양의 아이가 포학을 저질렀다는 이유로 많은 연하궁 사람들이 그들을 탓했어도 아이들 자체는 원망하지 않았다."
-      },
-      {
-       "t_raw": "오히려 그 아이들에게 증오가 아니라 **연민**만 느꼈다고 말하며, 그들과 Enkanomiya를 구하지 못한 자신의 무능을 **후회**했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오히려 그 아이들에게 증오가 아니라 **연민**만 느꼈다고 말하며, 그들과 연하궁을 구하지 못한 자신의 무능을 **후회**했다."
-      },
-      {
-       "t_raw": "귀족들의 비방과 꼭두각시 아이들 때문에 자신이 쓰러지고 투옥되었다고 분노한 것과 대조적으로, 조종당한 아이들을 향한 태도는 원한과 구분된다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "귀족들의 비방과 꼭두각시 아이들 때문에 자신이 쓰러지고 투옥되었다고 분노한 것과 대조적으로, 조종당한 아이들을 향한 태도는 원한과 구분된다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Profile > Personality",
-       "paragraph": "A14",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Temple Inquiry",
-       "quest_ko": "사당 앞의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Temple Inquiry",
-       "quest_ko": "사당 앞의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      }
-     ],
-     "heading": "성격과 능력",
+     "heading": "성격과 모습",
      "latin_left": []
     },
     {
-     "section": "성격과 능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Aberaku was recognized as a sage who was enlightened by the Tokoyo Ookami during the \"Year of Blindness\"",
-     "sentences": [
-      {
-       "t_raw": "**지혜** 면에서 Aberaku는 Tokoyo Ookami에게 깨우침을 받은 현자로 인정받아, 빛이 없던 나라에 빛을 가져올 방법을 찾아냈다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**지혜** 면에서 아베라쿠는 Tokoyo Ookami에게 깨우침을 받은 현자로 인정받아, 빛이 없던 나라에 빛을 가져올 방법을 찾아냈다."
-      },
-      {
-       "t_raw": "그 방법으로 Helios를 세웠고, 훗날 이는 Dainichi Mikoshi로 불렸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 방법으로 헬리오스를 세웠고, 훗날 이는 다이니치 미코시로 불렸다."
-      },
-      {
-       "t_raw": "그는 Helios의 창조자이자 이곳이 자신의 안식처라고 밝히면서도, 상대를 끔찍한 상태로 만나게 된 것을 후회했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 헬리오스의 창조자이자 이곳이 자신의 안식처라고 밝히면서도, 상대를 끔찍한 상태로 만나게 된 것을 후회했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Profile",
-       "paragraph": "A12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyperion's Dirge (Quest)",
-       "quest_ko": "히페리온의 애가",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyperion's Dirge (Quest)",
-       "quest_ko": "히페리온의 애가",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      }
-     ],
-     "heading": "성격과 능력",
-     "latin_left": [
-      "Tokoyo Ookami"
-     ]
-    },
-    {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Only Istaroth, one of the other shining shades, heard and taught Aberaku enough knowledge such that he could create Dainichi Mikoshi",
+     "status": "accepted",
+     "note": "M1, M8 and M9 support the nobles, the child ruler, the opposition, the treason charge and the imprisonment. Sentence 3 is a reasonable interpretation.",
+     "quote": "a cabal of corrupt nobles would manipulate the people of Enkanomiya into worshipping the Dainichi Mikoshi as a god, and chose a child to be the Sunchild and rule over the land.",
      "sentences": [
       {
-       "t_raw": "Aberaku는 Enkanomiya의 Year of Blindness에 **Tokoyo Ookami의 깨우침**을 받은 현자로 여겨졌고, 빛이 없는 나라에 빛을 가져올 방법을 찾아 Helios를 만들게 되었다.",
+       "t_raw": "Dainichi Mikoshi를 신으로 숭배하게 만든 부패한 귀족 무리는 어린아이를 Sunchild로 세워 통치하게 했다.",
        "interp": false,
        "dropped": false,
-       "t": "아베라쿠는 연하궁의 Year of Blindness에 **Tokoyo Ookami의 깨우침**을 받은 현자로 여겨졌고, 빛이 없는 나라에 빛을 가져올 방법을 찾아 헬리오스를 만들게 되었다."
+       "t": "다이니치 미코시를 신으로 숭배하게 만든 부패한 귀족 무리는 어린아이를 태양의 아이로 세워 통치하게 했다."
       },
       {
-       "t_raw": "Byakuyakoku가 바다 밑에서 Dragonheir of the Depths에게 시달릴 때 Primordial One과 네 Shining Shades 가운데 셋은 간청에 응답하지 않았고, Istaroth만이 그 소리를 듣고 Aberaku에게 Dainichi Mikoshi를 만들 만한 지혜를 주었다.",
+       "t_raw": "Aberaku는 이에 반대했고, 그 뒤 Sunchild는 그를 반역죄로 몰아 감옥에 가두었다.",
        "interp": false,
        "dropped": false,
-       "t": "백야국이 바다 밑에서 심해 용의 자손에게 시달릴 때 원초의 그분과 네 Shining Shades 가운데 셋은 간청에 응답하지 않았고, 이스타로트만이 그 소리를 듣고 아베라쿠에게 다이니치 미코시를 만들 만한 지혜를 주었다."
+       "t": "아베라쿠는 이에 반대했고, 그 뒤 태양의 아이는 그를 반역죄로 몰아 감옥에 가두었다."
       },
       {
-       "t_raw": "Tokoyo Ookami와 Istaroth라는 이름은 서로 다르지만, Aberaku가 가르침을 받아 빛을 만든 점은 이 전승들에서 함께 확인되는 셈이다.",
+       "t_raw": "첫 Sunchild는 그를 Dainichi Mikoshi에 평생 구금했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "첫 태양의 아이는 그를 다이니치 미코시에 평생 구금했다."
+      },
+      {
+       "t_raw": "Aberaku의 반대는 Dainichi Mikoshi의 신격화와 어린 통치자의 이용에 맞선 것이었다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "Tokoyo Ookami와 이스타로트라는 이름은 서로 다르지만, 아베라쿠가 가르침을 받아 빛을 만든 점은 이 전승들에서 함께 확인되는 셈이다."
+       "t": "아베라쿠의 반대는 다이니치 미코시의 신격화와 어린 통치자의 이용에 맞선 것이었다고 볼 수 있다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Profile",
-       "paragraph": "A12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Dainichi Mikoshi",
-       "revision": 562449,
-       "section": "Lore",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Enkanomiya",
-       "revision": 572306,
-       "section": "Lore",
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Year of Blindness",
-      "Tokoyo Ookami",
-      "Shining Shades",
-      "Tokoyo Ookami"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Indeed. But till today, I can never feel any hatred for that child, only pity.",
-     "sentences": [
-      {
-       "t_raw": "Dainichi Mikoshi가 완성된 뒤 부패한 귀족들은 사람들을 Dainichi Mikoshi 숭배로 이끌고 어린아이를 Sunchild로 세워 통치하게 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다이니치 미코시가 완성된 뒤 부패한 귀족들은 사람들을 다이니치 미코시 숭배로 이끌고 어린아이를 Sunchild로 세워 통치하게 했다."
-      },
-      {
-       "t_raw": "Sunchildren은 어려서 제대로 다스리지 못하고 귀족들의 조종을 받았으며, 백성은 그들을 미워하고 희생양으로 삼았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "태양의 아이는 어려서 제대로 다스리지 못하고 귀족들의 조종을 받았으며, 백성은 그들을 미워하고 희생양으로 삼았다."
-      },
-      {
-       "t_raw": "그러나 Aberaku는 Sunchildren을 탓하지 않고 그 아이에게 증오가 아닌 **Sunchildren에 대한 연민**을 보였으며, 그들과 Enkanomiya를 구하지 못한 것을 후회했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 아베라쿠는 태양의 아이를 탓하지 않고 그 아이에게 증오가 아닌 **태양의 아이에 대한 연민**을 보였으며, 그들과 연하궁을 구하지 못한 것을 후회했다."
-      },
-      {
-       "t_raw": "Aberaku가 이에 맞서자 Sunchild는 그를 반역죄로 몰아 투옥했고, 그는 자신을 겨눈 중상과 책략, 감옥에서 썩은 일을 떠올리며 'A pox! A pox upon them all!'이라고 외친다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아베라쿠가 이에 맞서자 Sunchild는 그를 반역죄로 몰아 투옥했고, 그는 자신을 겨눈 중상과 책략, 감옥에서 썩은 일을 떠올리며 'A pox! A pox upon them all!'이라고 외친다."
-      },
-      {
-       "t_raw": "이 저주는 **부패한 귀족들에 대한 분노**를 드러낸 것으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 저주는 **부패한 귀족들에 대한 분노**를 드러낸 것으로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Profile > Personality",
-       "paragraph": "A14",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Dainichi Mikoshi",
        "revision": 562449,
        "section": "Lore",
        "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Enkanomiya",
-       "revision": 572306,
-       "section": "Lore",
-       "paragraph": "M4",
        "wiki_refs": []
       },
       {
@@ -1171,6 +1024,50 @@
        "section": "Story",
        "paragraph": "M9",
        "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "M9, A14 and Q11 support all the facts. Sentence 3 is a fair interpretation.",
+     "quote": "Indeed. But till today, I can never feel any hatred for that child, only pity.",
+     "sentences": [
+      {
+       "t_raw": "Sunchildren은 어려서 제대로 통치할 수 없었고, 귀족들에게 조종당해 악행을 저질렀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "태양의 아이는 어려서 제대로 통치할 수 없었고, 귀족들에게 조종당해 악행을 저질렀다."
+      },
+      {
+       "t_raw": "그럼에도 Enkanomiya의 백성은 Sunchildren을 미워하며 책임을 돌렸고, 그들이 조종당했음을 알고도 외면했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그럼에도 연하궁의 백성은 태양의 아이를 미워하며 책임을 돌렸고, 그들이 조종당했음을 알고도 외면했다."
+      },
+      {
+       "t_raw": "Aberaku는 그런 Sunchildren을 탓하지 않았고, 그 아이에게 증오를 느끼지 않고 연민만 느낀다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아베라쿠는 그런 태양의 아이를 탓하지 않았고, 그 아이에게 증오를 느끼지 않고 연민만 느낀다고 말했다."
+      },
+      {
+       "t_raw": "백성의 원망과 Aberaku의 연민이 같은 대상에서 갈라지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "백성의 원망과 아베라쿠의 연민이 같은 대상에서 갈라지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sunchildren",
+       "revision": 556155,
+       "section": "Story",
+       "paragraph": "M9",
+       "wiki_refs": []
       },
       {
        "kind": "quest",
@@ -1178,31 +1075,47 @@
        "quest_ko": "사당 앞의 질문",
        "version": "2.4",
        "speaker": "Aberaku"
+      },
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": "Profile > Personality",
+       "paragraph": "A14",
+       "wiki_refs": []
       }
      ],
      "heading": "인간관계",
-     "latin_left": [
-      "Sunchild",
-      "Sunchild"
-     ]
+     "latin_left": []
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Q25 and Q27 support the facts. Sentence 2 is hedged with '것으로 보인다', so it passes as interpretation.",
      "quote": "Honestly, these labyrinths are just a means, not the end. What I really wish to do is serve the people, like Aberaku did.",
      "sentences": [
       {
-       "t_raw": "Date는 미로가 목적이 아니라 백성을 섬기는 일이 소망이라며, Aberaku가 그랬던 것처럼 백성을 섬기고 싶어 한다.",
+       "t_raw": "후대에 Date는 Aberaku처럼 백성을 섬기고 싶다는 뜻을 밝혔다.",
        "interp": false,
        "dropped": false,
-       "t": "다테는 미로가 목적이 아니라 백성을 섬기는 일이 소망이라며, 아베라쿠가 그랬던 것처럼 백성을 섬기고 싶어 한다."
+       "t": "후대에 다테는 아베라쿠처럼 백성을 섬기고 싶다는 뜻을 밝혔다."
       },
       {
-       "t_raw": "Clymene은 'From Aberaku no Mikoto himself?'라고 되묻는다.",
+       "t_raw": "Clymene는 Aberaku no Mikoto 본인에게서 온 것인지 되묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "클리메네는 'From Aberaku no 미코토 himself?'라고 되묻는다."
+       "t": "클리메네는 아베라쿠노 미코토 본인에게서 온 것인지 되묻는다.",
+       "polish": {
+        "from": "클리메네는 아베라쿠 no 미코토 본인에게서 온 것인지 되묻는다.",
+        "text": "클리메네는 아베라쿠노 미코토 본인에게서 온 것인지 되묻는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "후대 인물들에게 Aberaku는 봉사의 귀감이자, 어떤 것의 유래를 확인하고 싶은 대상으로 남아 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "후대 인물들에게 아베라쿠는 봉사의 귀감이자, 어떤 것의 유래를 확인하고 싶은 대상으로 남아 있는 것으로 보인다."
       }
      ],
      "sources": [
@@ -1222,98 +1135,59 @@
       }
      ],
      "heading": "인간관계",
-     "latin_left": [
-      "From Aberaku"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "And yet, though it shames me to say so, I know not just how I died...",
-     "sentences": [
-      {
-       "t_raw": "Aberaku는 자신이 오랜 감옥 생활을 했고 지금은 **사후의 모습**이라고 짐작하지만, 자신이 어떻게 죽었는지는 알지 못한다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아베라쿠는 자신이 오랜 감옥 생활을 했고 지금은 **사후의 모습**이라고 짐작하지만, 자신이 어떻게 죽었는지는 알지 못한다고 말한다."
-      },
-      {
-       "t_raw": "이곳을 자신의 안식처라고 말하면서도, 영혼은 꿈의 영역에서 안식을 얻지 못한다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이곳을 자신의 안식처라고 말하면서도, 영혼은 꿈의 영역에서 안식을 얻지 못한다고 한다."
-      },
-      {
-       "t_raw": "안식처라 부르는 곳과 안식을 얻지 못하는 영혼의 상태가 어긋나, 죽음의 경위와 현재 처지는 수수께끼로 남는다.",
-       "interp": true,
-       "dropped": false,
-       "t": "안식처라 부르는 곳과 안식을 얻지 못하는 영혼의 상태가 어긋나, 죽음의 경위와 현재 처지는 수수께끼로 남는다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Temple Inquiry",
-       "quest_ko": "사당 앞의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Temple Inquiry",
-       "quest_ko": "사당 앞의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyperion's Dirge (Quest)",
-       "quest_ko": "히페리온의 애가",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
      "latin_left": []
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I... I was betrayed...",
+     "status": "accepted",
+     "note": "M8, M1, Q15, Q16 and Q5 support the facts. Sentence 2 is a reasonable interpretation.",
+     "quote": "And yet, though it shames me to say so, I know not just how I died...",
      "sentences": [
       {
-       "t_raw": "그는 자신의 영혼이 **찢겨 있다**고 깨닫고, 영혼이 온전해지면 다시 안식을 얻을 수 있다고 말한다.",
+       "t_raw": "첫 Sunchild가 Aberaku를 Dainichi Mikoshi에 종신 투옥했다는 기록도 있고, 또 다른 기록은 그가 Sun and Moon 10년에 옥중에서 죽어 유품과 유해가 여러 곳에 안치되었다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 자신의 영혼이 **찢겨 있다**고 깨닫고, 영혼이 온전해지면 다시 안식을 얻을 수 있다고 말한다."
+       "t": "첫 태양의 아이가 아베라쿠를 다이니치 미코시에 종신 투옥했다는 기록도 있고, 또 다른 기록은 그가 Sun and Moon 10년에 옥중에서 죽어 유품과 유해가 여러 곳에 안치되었다고 전한다.",
+       "polish": {
+        "from": "첫 태양의 아이가 아베라쿠를 다이니치 미코시에 종신 투옥했다는 기록도 있고, 또 다른 기록은 그가 Sun and Moon 10년에 옥중에서 죽어 유품과 유해가 여러 곳에 안치되었다고 전한다.",
+        "text": "첫 태양의 아이가 아베라쿠를 다이니치 미코시에 종신 투옥했다는 기록도 있고, 또 다른 기록은 그가 Sun and Moon 10년에 옥중에서 죽어 유품과 유해가 여러 곳에 안치되었다고 전한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그러면서 자신은 배신당했다고 하고, 자신을 감옥에 가둔 것은 아이의 명령이었다고 기억한다.",
+       "t_raw": "그러나 잔영은 어떻게 죽었는지 모르겠다고 말하면서도 배신당했다고 털어놓고, 안치되었어야 할 뼈가 이미 썩었다는 간구를 남긴다.",
        "interp": false,
        "dropped": false,
-       "t": "그러면서 자신은 배신당했다고 하고, 자신을 감옥에 가둔 것은 아이의 명령이었다고 기억한다."
+       "t": "그러나 잔영은 어떻게 죽었는지 모르겠다고 말하면서도 배신당했다고 털어놓고, 안치되었어야 할 뼈가 이미 썩었다는 간구를 남긴다."
       },
       {
-       "t_raw": "배신당했다는 말과 아이의 명령으로 투옥되었다는 기억은 서로 어떻게 이어지는지 분명하지 않아 의문으로 남는다.",
+       "t_raw": "옥중 사망 기록과 배신당했다는 말이 겹치면서, 죽음의 경위는 쉽게 정리되지 않는 수수께끼가 된다.",
        "interp": true,
        "dropped": false,
-       "t": "배신당했다는 말과 아이의 명령으로 투옥되었다는 기억은 서로 어떻게 이어지는지 분명하지 않아 의문으로 남는다."
+       "t": "옥중 사망 기록과 배신당했다는 말이 겹치면서, 죽음의 경위는 쉽게 정리되지 않는 수수께끼가 된다."
       }
      ],
      "sources": [
       {
+       "kind": "wiki",
+       "page": "Sunchildren",
+       "revision": 556155,
+       "section": "Story",
+       "paragraph": "M8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Dainichi Mikoshi",
+       "revision": 562449,
+       "section": "Lore",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
        "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
+       "quest": "Temple Inquiry",
+       "quest_ko": "사당 앞의 질문",
        "version": "2.4",
        "speaker": "Aberaku"
       },
@@ -1326,6 +1200,149 @@
       },
       {
        "kind": "quest",
+       "quest": "Narrow Inquiry",
+       "quest_ko": "협곡의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Sun and Moon"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by Q9, Q13, M1, A1 and A13. The interpretations are hedged and add no new facts.",
+     "quote": "After his death, his emotions and memories were preserved as a Sinshade.",
+     "sentences": [
+      {
+       "t_raw": "잔영은 영혼이 꿈의 영역에서 길을 잃어 쉬지 못한다고 되묻고, 조각난 영혼이 온전해지면 편히 쉴 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잔영은 영혼이 꿈의 영역에서 길을 잃어 쉬지 못한다고 되묻고, 조각난 영혼이 온전해지면 편히 쉴 수 있다고 말한다."
+      },
+      {
+       "t_raw": "안치된 유해가 영혼을 조각냈다는 기록과 맞물려, **영혼이 조각난 상태**는 사후 안치의 역설로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "안치된 유해가 영혼을 조각냈다는 기록과 맞물려, **영혼이 조각난 상태**는 사후 안치의 역설로 보인다."
+      },
+      {
+       "t_raw": "기록은 그를 사후 감정과 기억이 보존된 Sinshade로도, 기억이 남아 나타난 Shade of Tokoyo로도 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기록은 그를 사후 감정과 기억이 보존된 죄의 그림자로도, 기억이 남아 나타난 영원의 정령으로도 전한다."
+      },
+      {
+       "t_raw": "두 호칭이 같은 존재의 다른 측면인지, 서로 다른 기록인지는 이 시점에서는 **Sinshade와 Shade of Tokoyo**라는 이름 아래 수수께끼로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 호칭이 같은 존재의 다른 측면인지, 서로 다른 기록인지는 이 시점에서는 **죄의 그림자와 영원의 정령**라는 이름 아래 수수께끼로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Narrow Inquiry",
+       "quest_ko": "협곡의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
+       "quest": "Narrow Inquiry",
+       "quest_ko": "협곡의 질문",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "wiki",
+       "page": "Dainichi Mikoshi",
+       "revision": 562449,
+       "section": "Lore",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": "Profile",
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by M5, Q26, Q22 and Q3. The interpretations follow from them.",
+     "quote": "Wait, but if he's Aberaku, what's the Helios?",
+     "sentences": [
+      {
+       "t_raw": "Aberaku가 만든 Dainichi Mikoshi를 그가 Helios라 불렀다는 기록과, Paimon이 Aberaku라면 Helios는 무엇이냐고 묻는 장면은 **Helios를 둘러싼 혼동**을 드러낸다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아베라쿠가 만든 다이니치 미코시를 그가 헬리오스라 불렀다는 기록과, 페이몬이 아베라쿠라면 헬리오스는 무엇이냐고 묻는 장면은 **헬리오스를 둘러싼 혼동**을 드러낸다."
+      },
+      {
+       "t_raw": "잔영은 자신의 이름을 더듬고, 오랜 투옥 끝에 지금의 모습이 사후의 형체인지 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잔영은 자신의 이름을 더듬고, 오랜 투옥 끝에 지금의 모습이 사후의 형체인지 되묻는다."
+      },
+      {
+       "t_raw": "이는 정체와 이름의 기억이 온전하지 않다는 의문으로 이어진다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 정체와 이름의 기억이 온전하지 않다는 의문으로 이어진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aberaku",
+       "revision": 567261,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Dainichi Mikoshi",
+       "revision": 562449,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Narrow Inquiry",
+       "quest_ko": "협곡의 질문",
+       "version": "2.4",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyperion's Dirge (Quest)",
+       "quest_ko": "히페리온의 애가",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
        "quest": "Temple Inquiry",
        "quest_ko": "사당 앞의 질문",
        "version": "2.4",
@@ -1336,88 +1353,99 @@
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "he would theatrically introduce himself as \"Aberaku, Helios-Forger\" in conversation.",
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by M5, M6 and M7.",
+     "quote": "Before the establishment of the Inazuman Watatsumi culture it was known as Hyperion (or Byakuya no Hikari). Aberaku also called it the Helios.",
      "sentences": [
       {
-       "t_raw": "이름을 더듬던 그는 이어서 **Aberaku, Helios-Forger!**라고 자신을 소개한다.",
+       "t_raw": "**Dainichi Mikoshi**는 Enkanomiya의 인공 태양에서 이름을 딴 중앙 지역이며, Inazuma의 Enkanomiya에 있는 하위 지역 이름이기도 하다.",
        "interp": false,
        "dropped": false,
-       "t": "이름을 더듬던 그는 이어서 **아베라쿠, Helios-Forger!**라고 자신을 소개한다."
+       "t": "**다이니치 미코시**는 연하궁의 인공 태양에서 이름을 딴 중앙 지역이며, 이나즈마의 연하궁에 있는 하위 지역 이름이기도 하다."
       },
       {
-       "t_raw": "자신의 이름을 떠올리던 끝에 'Helios를 만든 자'라는 별칭을 앞세운 셈이다.",
-       "interp": true,
+       "t_raw": "그 인공 태양은 켜고 끌 수 있어 Enkanomiya의 낮과 밤, 곧 Whitenight와 Evernight를 조절한다.",
+       "interp": false,
        "dropped": false,
-       "t": "자신의 이름을 떠올리던 끝에 '헬리오스를 만든 자'라는 별칭을 앞세운 셈이다."
+       "t": "그 인공 태양은 켜고 끌 수 있어 연하궁의 낮과 밤, 곧 백야와 상야를 조절한다."
       },
       {
-       "t_raw": "이는 Helios에 대한 자부심이 기억의 혼란 속에서도 남아 있음을 보여 준다.",
+       "t_raw": "Inazuman Watatsumi 문화가 자리 잡기 전에는 **Hyperion**(또는 Byakuya no Hikari)로 알려졌고, Aberaku는 Helios라고도 불렀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이나즈마 와타츠미 문화가 자리 잡기 전에는 **히페리온**(또는 백야의 백야의 빛)로 알려졌고, 아베라쿠는 헬리오스라고도 불렀다.",
+       "polish": {
+        "from": "이나즈마 와타츠미 문화가 자리 잡기 전에는 **히페리온**(또는 백야 no 백야의 빛)로 알려졌고, 아베라쿠는 헬리오스라고도 불렀다.",
+        "text": "이나즈마 와타츠미 문화가 자리 잡기 전에는 **히페리온**(또는 백야의 백야의 빛)로 알려졌고, 아베라쿠는 헬리오스라고도 불렀다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "하나의 인공 태양과 그 주변 지역에 여러 이름이 겹쳐 남은 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이는 헬리오스에 대한 자부심이 기억의 혼란 속에서도 남아 있음을 보여 준다."
+       "t": "하나의 인공 태양과 그 주변 지역에 여러 이름이 겹쳐 남은 셈이다."
       }
      ],
      "sources": [
       {
-       "kind": "quest",
-       "quest": "Hyperion's Dirge (Quest)",
-       "quest_ko": "히페리온의 애가",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyperion's Dirge (Quest)",
-       "quest_ko": "히페리온의 애가",
-       "version": "2.4",
-       "speaker": "Aberaku"
+       "kind": "wiki",
+       "page": "Dainichi Mikoshi",
+       "revision": 562449,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Profile > Personality",
-       "paragraph": "A14",
+       "page": "Enkanomiya",
+       "revision": 572306,
+       "section": "Subareas",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Dainichi Mikoshi",
+       "revision": 562449,
+       "section": null,
+       "paragraph": "M7",
        "wiki_refs": []
       }
      ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Helios-Forger"
-     ]
+     "heading": "여담",
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "At this location, Aberaku can be found directly under the central teleport waypoint of Dainichi Mikoshi where there are two Ruin Guards.",
+     "status": "accepted",
+     "note": "Supported by A3 and A11. The final interpretation follows from them.",
+     "quote": "After completing Hyperion's Dirge, Aberaku will permanently move to the highest point of Dainichi Mikoshi.",
      "sentences": [
       {
-       "t_raw": "Dainichi Mikoshi 중앙 순간이동 지점 바로 아래에는 **Ruin Guards** 두 기가 있고, 그곳에서 Aberaku를 만날 수 있다.",
+       "t_raw": "Hyperion's Dirge를 완료한 뒤 Aberaku는 Dainichi Mikoshi의 가장 높은 지점으로 영구히 이동한다.",
        "interp": false,
        "dropped": false,
-       "t": "다이니치 미코시 중앙 순간이동 지점 바로 아래에는 **유적 가디언** 두 기가 있고, 그곳에서 아베라쿠를 만날 수 있다."
+       "t": "히페리온의 애가를 완료한 뒤 아베라쿠는 다이니치 미코시의 가장 높은 지점으로 영구히 이동한다."
       },
       {
-       "t_raw": "Ruin Guards를 쓰러뜨리고 횃불 두 개에 불을 밝히면 숨겨진 방이 드러나 Aberaku와 대화할 수 있다.",
+       "t_raw": "그곳으로 가려면 Dainichi Mikoshi 중앙 순간이동 지점 아래의 비밀 방에 있는 **Phase Gate**를 이용하면 된다.",
        "interp": false,
        "dropped": false,
-       "t": "유적 가디언을 쓰러뜨리고 횃불 두 개에 불을 밝히면 숨겨진 방이 드러나 아베라쿠와 대화할 수 있다."
+       "t": "그곳으로 가려면 다이니치 미코시 중앙 순간이동 지점 아래의 비밀 방에 있는 **위상의 문**을 이용하면 된다."
       },
       {
-       "t_raw": "Hyperion's Dirge를 완료한 뒤 Aberaku는 Dainichi Mikoshi 최고점으로 영구히 옮겨 가며, 그 최고점에는 중앙 순간이동 지점 아래 숨겨진 방의 **Phase Gate**를 통해 갈 수 있다.",
+       "t_raw": "Dainichi Mikoshi 중앙 순간이동 지점 바로 아래, 두 Ruin Guards가 있는 곳에서 Aberaku를 찾을 수 있고, Ruin Guards를 물리치고 두 횃불을 밝히면 숨겨진 방이 드러나 대화할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "히페리온의 애가를 완료한 뒤 아베라쿠는 다이니치 미코시 최고점으로 영구히 옮겨 가며, 그 최고점에는 중앙 순간이동 지점 아래 숨겨진 방의 **위상의 문**을 통해 갈 수 있다."
+       "t": "다이니치 미코시 중앙 순간이동 지점 바로 아래, 두 유적 가디언이 있는 곳에서 아베라쿠를 찾을 수 있고, 유적 가디언을 물리치고 두 횃불을 밝히면 숨겨진 방이 드러나 대화할 수 있다."
       },
       {
-       "t_raw": "즉 숨겨진 방을 드러낸 뒤 그 안의 Phase Gate로 최고점에 이르는 흐름으로 이어진다고 볼 수 있다.",
+       "t_raw": "완료 후에는 중앙 순간이동 지점 아래가 아니라 가장 높은 지점에서 Aberaku를 만나게 되는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "즉 숨겨진 방을 드러낸 뒤 그 안의 위상의 문으로 최고점에 이르는 흐름으로 이어진다고 볼 수 있다."
+       "t": "완료 후에는 중앙 순간이동 지점 아래가 아니라 가장 높은 지점에서 아베라쿠를 만나게 되는 셈이다."
       }
      ],
      "sources": [
@@ -1443,123 +1471,55 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Like most shades, he is a translucent humanoid figure without defining physical features.",
-     "sentences": [
-      {
-       "t_raw": "겉모습은 대부분의 그림자처럼 **반투명한 인간형**이며, 뚜렷한 신체적 특징이 없다.",
-       "interp": false,
-       "dropped": false,
-       "t": "겉모습은 대부분의 그림자처럼 **반투명한 인간형**이며, 뚜렷한 신체적 특징이 없다."
-      },
-      {
-       "t_raw": "그는 자신의 뼈 일부가 이곳에 안치되어 있어야 하지만 오래전 삭아 버렸다며, 그것을 되찾아 달라고 간청한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 자신의 뼈 일부가 이곳에 안치되어 있어야 하지만 오래전 삭아 버렸다며, 그것을 되찾아 달라고 간청한다."
-      },
-      {
-       "t_raw": "그는 별일 아니라며 자신이 오히려 비참한 모습으로 그대를 맞이해 소홀히 대했다고 말하고, 이런 끔찍한 모습으로 만나게 된 것만을 후회한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 별일 아니라며 자신이 오히려 비참한 모습으로 그대를 맞이해 소홀히 대했다고 말하고, 이런 끔찍한 모습으로 만나게 된 것만을 후회한다."
-      },
-      {
-       "t_raw": "먼 곳에서 온 손님임을 알아차리기도 하고, '아... 모든 재능과 능력이... 그러나 무슨 소용이 있었나'라는 짧은 탄식도 남긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "먼 곳에서 온 손님임을 알아차리기도 하고, '아... 모든 재능과 능력이... 그러나 무슨 소용이 있었나'라는 짧은 탄식도 남긴다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Profile > Appearance",
-       "paragraph": "A15",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyperion's Dirge (Quest)",
-       "quest_ko": "히페리온의 애가",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyperion's Dirge (Quest)",
-       "quest_ko": "히페리온의 애가",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyperion's Dirge (Quest)",
-       "quest_ko": "히페리온의 애가",
-       "version": "2.4",
-       "speaker": "Aberaku"
-      },
-      {
-       "kind": "wiki",
-       "page": "Aberaku",
-       "revision": 567261,
-       "section": "Dialogue",
-       "paragraph": "A17",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Supported by Q10, Q14, Q25 and Q27.",
      "quote": "Honestly, these labyrinths are just a means, not the end. What I really wish to do is serve the people, like Aberaku did.",
      "sentences": [
       {
-       "t_raw": "Date는 미로는 수단일 뿐이며 Aberaku처럼 사람들을 섬기고 싶다고 말한다.",
+       "t_raw": "Hyperion's Dirge에서 Aberaku는 자신이 초라한 모습으로 손님을 맞이하게 되어 아쉬워하며, 상대가 먼 곳에서 온 손님임을 알아차린다.",
        "interp": false,
        "dropped": false,
-       "t": "다테는 미로는 수단일 뿐이며 아베라쿠처럼 사람들을 섬기고 싶다고 말한다."
+       "t": "히페리온의 애가에서 아베라쿠는 자신이 초라한 모습으로 손님을 맞이하게 되어 아쉬워하며, 상대가 먼 곳에서 온 손님임을 알아차린다."
       },
       {
-       "t_raw": "Paimon은 그가 Aberaku라면 Helios는 무엇인지 되묻는다.",
+       "t_raw": "Date는 미궁들이 목적이 아니라 수단일 뿐이라며, 정말 하고 싶은 일은 Aberaku처럼 사람들을 섬기는 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 그가 아베라쿠라면 헬리오스는 무엇인지 되묻는다."
+       "t": "다테는 미궁들이 목적이 아니라 수단일 뿐이라며, 정말 하고 싶은 일은 아베라쿠처럼 사람들을 섬기는 것이라고 말한다."
       },
       {
-       "t_raw": "Clymene은 'Aberaku no Mikoto 본인으로부터?'라고 묻는다.",
+       "t_raw": "Clymene는 'Aberaku no Mikoto himself?'라고 되묻는 대사를 남긴다.",
        "interp": false,
        "dropped": false,
-       "t": "클리메네는 '아베라쿠 no 미코토 본인으로부터?'라고 묻는다."
+       "t": "클리메네는 '아베라쿠노 미코토 본인?'이라고 되묻는 대사를 남긴다.",
+       "polish": {
+        "from": "클리메네는 '아베라쿠 no 미코토 himself?'라고 되묻는 대사를 남긴다.",
+        "text": "클리메네는 '아베라쿠노 미코토 본인?'이라고 되묻는 대사를 남긴다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
+      {
+       "kind": "quest",
+       "quest": "Hyperion's Dirge (Quest)",
+       "quest_ko": "히페리온의 애가",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyperion's Dirge (Quest)",
+       "quest_ko": "히페리온의 애가",
+       "version": "2.4",
+       "speaker": "Aberaku"
+      },
       {
        "kind": "quest",
        "quest": "Date's Challenge",
        "quest_ko": "다테의 도전장",
        "version": "2.4",
        "speaker": "Date"
-      },
-      {
-       "kind": "quest",
-       "quest": "Narrow Inquiry",
-       "quest_ko": "협곡의 질문",
-       "version": "2.4",
-       "speaker": "Paimon"
       },
       {
        "kind": "quest",
@@ -1576,26 +1536,26 @@
    "quote_boxes": [
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "내 뼈의 일부가 이곳에 안치되어 있어야 하는데, 그것들은 오래전에 썩어 버렸다... 부디, 간청하오...",
-     "en": "A portion of my bones should be enshrined in this place, but they have long rotted away... Please, I beseech you...",
+     "status": "accepted",
+     "note": "The Korean is a faithful translation of the line.",
+     "t_raw": "나는... 나는 Helios의 창조자이며, 이곳은 나의... 마지막 안식처다.",
+     "en": "I... I am the creator of the Helios, and this place is my... final resting place.",
      "speaker": "Aberaku",
      "source": {
       "kind": "quest",
-      "quest": "Narrow Inquiry",
-      "quest_ko": "협곡의 질문",
+      "quest": "Hyperion's Dirge (Quest)",
+      "quest_ko": "히페리온의 애가",
       "version": "2.4",
       "speaker": "Aberaku"
      },
-     "t": "내 뼈의 일부가 이곳에 안치되어 있어야 하는데, 그것들은 오래전에 썩어 버렸다... 부디, 간청하오...",
+     "t": "나는... 나는 헬리오스의 창조자이며, 이곳은 나의... 마지막 안식처다.",
      "speaker_ko": "아베라쿠"
     },
     {
-     "section": "작중 행적 — Helios와 Dainichi Mikoshi",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그때 사람들이 그것을 얼마나 바라보았던가! 그들이 얼마나 뜨거운 눈물을 흘리며 기쁨의 외침과 함께 팔을 들어 올렸는지, 격한 감정을 주체하지 못했구나!",
+     "section": "작중 행적 — Helios 건조",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그때 사람들이 그것을 바라보던 모습이란! 뜨거운 눈물을 흘리고, 기쁨의 외침과 함께 팔을 들어 올리며, 그 격한 감정을 주체하지 못하던 모습이란!",
      "en": "How the people gazed upon it then! How they wept hot tears, raised their arms with joyful cries, unable to restrain their intense emotions!",
      "speaker": "Aberaku",
      "source": {
@@ -1605,14 +1565,14 @@
       "version": "2.4",
       "speaker": "Aberaku"
      },
-     "t": "그때 사람들이 그것을 얼마나 바라보았던가! 그들이 얼마나 뜨거운 눈물을 흘리며 기쁨의 외침과 함께 팔을 들어 올렸는지, 격한 감정을 주체하지 못했구나!",
+     "t": "그때 사람들이 그것을 바라보던 모습이란! 뜨거운 눈물을 흘리고, 기쁨의 외침과 함께 팔을 들어 올리며, 그 격한 감정을 주체하지 못하던 모습이란!",
      "speaker_ko": "아베라쿠"
     },
     {
      "section": "작중 행적 — Sunchild와 투옥",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그렇다. 그러나 오늘날까지 나는 그 아이에게 어떤 원한도 느낄 수 없고, 오직 연민뿐이다.",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그렇다. 하지만 오늘날까지도 나는 그 아이에게 결코 어떤 증오도 느낄 수 없으며, 오직 연민뿐이다.",
      "en": "Indeed. But till today, I can never feel any hatred for that child, only pity.",
      "speaker": "Aberaku",
      "source": {
@@ -1622,14 +1582,14 @@
       "version": "2.4",
       "speaker": "Aberaku"
      },
-     "t": "그렇다. 그러나 오늘날까지 나는 그 아이에게 어떤 원한도 느낄 수 없고, 오직 연민뿐이다.",
+     "t": "그렇다. 하지만 오늘날까지도 나는 그 아이에게 결코 어떤 증오도 느낄 수 없으며, 오직 연민뿐이다.",
      "speaker_ko": "아베라쿠"
     },
     {
-     "section": "작중 행적 — 2.4 퀘스트: 흩어진 영혼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "이제 기억난다! 내 영혼은 찢겨 있다! 그것이 온전해질 수 있다면, 나는 다시 평온을 찾을 수 있다.",
+     "section": "작중 행적 — 2.4의 잔영",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "이제 기억났다! 나의 영혼은 찢겨 있다! 그것이 온전해질 수 있다면, 나는 다시 편히 쉴 수 있을 것이다.",
      "en": "I remember now! My soul is rent! If it can be made whole, I can be at peace once more.",
      "speaker": "Aberaku",
      "source": {
@@ -1639,48 +1599,14 @@
       "version": "2.4",
       "speaker": "Aberaku"
      },
-     "t": "이제 기억난다! 내 영혼은 찢겨 있다! 그것이 온전해질 수 있다면, 나는 다시 평온을 찾을 수 있다.",
+     "t": "이제 기억났다! 나의 영혼은 찢겨 있다! 그것이 온전해질 수 있다면, 나는 다시 편히 쉴 수 있을 것이다.",
      "speaker_ko": "아베라쿠"
     },
     {
-     "section": "작중 행적 — Hyperion's Dirge와 현재 모습",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "나는... 나는 배신당했다...",
-     "en": "I... I was betrayed...",
-     "speaker": "Aberaku",
-     "source": {
-      "kind": "quest",
-      "quest": "Serpent's Heart Inquiry",
-      "quest_ko": "뱀 심장의 질문",
-      "version": "2.4",
-      "speaker": "Aberaku"
-     },
-     "t": "나는... 나는 배신당했다...",
-     "speaker_ko": "아베라쿠"
-    },
-    {
-     "section": "성격과 능력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "이 불세출의 업적은 Byakuyakoku에서 나 외에는 누구도 해낼 수 없었다!",
-     "en": "This unsurpassed deed could have been done by no other in Byakuyakoku — none save I!",
-     "speaker": "Aberaku",
-     "source": {
-      "kind": "quest",
-      "quest": "Serpent's Heart Inquiry",
-      "quest_ko": "뱀 심장의 질문",
-      "version": "2.4",
-      "speaker": "Aberaku"
-     },
-     "t": "이 불세출의 업적은 백야국에서 나 외에는 누구도 해낼 수 없었다!",
-     "speaker_ko": "아베라쿠"
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그렇다. 그러나 오늘날까지도 나는 그 아이에게 어떤 증오도 느낄 수 없다, 오직 연민뿐이다.",
+     "section": "성격과 모습",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그렇다. 하지만 오늘날까지도 나는 그 아이에게 어떤 증오도 느낄 수 없으며, 오직 연민만을 느낀다.",
      "en": "Indeed. But till today, I can never feel any hatred for that child, only pity.",
      "speaker": "Aberaku",
      "source": {
@@ -1690,14 +1616,31 @@
       "version": "2.4",
       "speaker": "Aberaku"
      },
-     "t": "그렇다. 그러나 오늘날까지도 나는 그 아이에게 어떤 증오도 느낄 수 없다, 오직 연민뿐이다.",
+     "t": "그렇다. 하지만 오늘날까지도 나는 그 아이에게 어떤 증오도 느낄 수 없으며, 오직 연민만을 느낀다.",
+     "speaker_ko": "아베라쿠"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그래. 하지만 오늘날까지 나는 그 아이에게 어떤 증오도 느낄 수 없고, 오직 연민만 느낀다.",
+     "en": "Indeed. But till today, I can never feel any hatred for that child, only pity.",
+     "speaker": "Aberaku",
+     "source": {
+      "kind": "quest",
+      "quest": "Temple Inquiry",
+      "quest_ko": "사당 앞의 질문",
+      "version": "2.4",
+      "speaker": "Aberaku"
+     },
+     "t": "그래. 하지만 오늘날까지 나는 그 아이에게 어떤 증오도 느낄 수 없고, 오직 연민만 느낀다.",
      "speaker_ko": "아베라쿠"
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그런데, 이렇게 말하기 부끄럽지만, 나는 내가 어떻게 죽었는지조차 알지 못한다...",
+     "status": "accepted",
+     "note": "\"I know not just how I died\" means he doesn't know exactly how he died. The Korean \"어떻게 죽었는지조차 모르겠구나\" (\"don't even know how I died\") overstates this into total ignorance.",
+     "t_raw": "그런데, 이렇게 말하기 부끄럽지만, 나는 내가 어떻게 죽었는지 정확히 모르겠구나...",
      "en": "And yet, though it shames me to say so, I know not just how I died...",
      "speaker": "Aberaku",
      "source": {
@@ -1707,25 +1650,25 @@
       "version": "2.4",
       "speaker": "Aberaku"
      },
-     "t": "그런데, 이렇게 말하기 부끄럽지만, 나는 내가 어떻게 죽었는지조차 알지 못한다...",
+     "t": "그런데, 이렇게 말하기 부끄럽지만, 나는 내가 어떻게 죽었는지 정확히 모르겠구나...",
      "speaker_ko": "아베라쿠"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "...그렇군. 그대는 먼 곳에서 온 손님이로군.",
-     "en": "...I see. So you are a guest from afar.",
-     "speaker": "Aberaku",
+     "status": "accepted",
+     "note": "Faithful translation: means not the end, and the wish to serve the people as Aberaku did.",
+     "t_raw": "솔직히, 이 미궁들은 목적이 아니라 수단일 뿐이야. 내가 정말 하고 싶은 것은 Aberaku가 그랬던 것처럼 사람들을 섬기는 일이야.",
+     "en": "Honestly, these labyrinths are just a means, not the end. What I really wish to do is serve the people, like Aberaku did.",
+     "speaker": "Date",
      "source": {
       "kind": "quest",
-      "quest": "Hyperion's Dirge (Quest)",
-      "quest_ko": "히페리온의 애가",
+      "quest": "Date's Challenge",
+      "quest_ko": "다테의 도전장",
       "version": "2.4",
-      "speaker": "Aberaku"
+      "speaker": "Date"
      },
-     "t": "...그렇군. 그대는 먼 곳에서 온 손님이로군.",
-     "speaker_ko": "아베라쿠"
+     "t": "솔직히, 이 미궁들은 목적이 아니라 수단일 뿐이야. 내가 정말 하고 싶은 것은 아베라쿠가 그랬던 것처럼 사람들을 섬기는 일이야.",
+     "speaker_ko": "다테"
     }
    ]
   }

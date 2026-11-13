@@ -20,35 +20,35 @@
    "input_chars": 2425,
    "input_cut": false,
    "input_hash": "f624e5c5ee7a",
-   "writer": "or-ds",
-   "verifier": "codex-medium",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported.",
      "quote": "The lodge's exterior is unlocked by completing the Witch's Lodge (Quest) while the interior can be accessed after The Joyous Floating Island",
      "sentences": [
       {
-       "t_raw": "**Witch's Lodge**는 Witch's Lodge (Quest)를 완료하면 외부가 열리고, The Joyous Floating Island를 완료하면 내부에 들어갈 수 있는 장소다.",
+       "t_raw": "Witch's Lodge는 Witch's Lodge (Quest)를 완료하면 외관이 열리고, The Joyous Floating Island 이후 내부에 접근할 수 있는 장소다.",
        "interp": false,
        "dropped": false,
-       "t": "**마녀의 오두막**은 마녀의 오두막을 완료하면 외부가 열리고, 떠들썩한 부유섬을 완료하면 내부에 들어갈 수 있는 장소다."
+       "t": "마녀의 오두막은 마녀의 오두막을 완료하면 외관이 열리고, 떠들썩한 부유섬 이후 내부에 접근할 수 있는 장소다."
       },
       {
-       "t_raw": "Beyond Silver and Fine Gold의 후속 퀘스트를 진행할 때마다 내부 방이 하나씩 열리며, 입구 왼쪽 위층 방은 Witch's Homework: The Role of a Guide...? 완료 후, 입구 오른쪽 숨겨진 방은 A Window Into the World 완료 후 열린다.",
+       "t_raw": "Beyond Silver and Fine Gold의 후속 퀘스트를 완료할 때마다 내부 방이 하나씩 열리며, 입구 왼쪽 위층 방은 Witch's Homework: The Role of a Guide...? 완료 후, 입구 오른쪽 숨겨진 방은 A Window Into the World 완료 후 열린다.",
        "interp": false,
        "dropped": false,
-       "t": "정금과 천은보다 귀한 것의 후속 퀘스트를 진행할 때마다 내부 방이 하나씩 열리며, 입구 왼쪽 위층 방은 마녀의 과제・인도자의 역할…? 완료 후, 입구 오른쪽 숨겨진 방은 세상을 내다보는 창 완료 후 열린다."
+       "t": "정금과 천은보다 귀한 것의 후속 퀘스트를 완료할 때마다 내부 방이 하나씩 열리며, 입구 왼쪽 위층 방은 마녀의 과제・인도자의 역할…? 완료 후, 입구 오른쪽 숨겨진 방은 세상을 내다보는 창 완료 후 열린다."
       },
       {
-       "t_raw": "**Nicole**은 Tea Room의 Mandragora Statue, Study의 Painting, Studio의 Angel Statue, Tall Study의 Bookshelves, Hidden Room의 Platform을 관찰할 때 대사를 남긴다.",
-       "interp": false,
+       "t_raw": "퀘스트 진행에 따라 외관과 내부, 방이 단계적으로 열리는 구조이므로, Witch's Lodge는 여러 임무의 결과가 공간에 쌓이는 장소로 볼 수 있다.",
+       "interp": true,
        "dropped": false,
-       "t": "**니콜**은 Tea Room의 Mandragora Statue, Study의 Painting, Studio의 Angel Statue, Tall Study의 Bookshelves, Hidden Room의 Platform을 관찰할 때 대사를 남긴다."
+       "t": "퀘스트 진행에 따라 외관과 내부, 방이 단계적으로 열리는 구조이므로, 마녀의 오두막은 여러 임무의 결과가 공간에 쌓이는 장소로 볼 수 있다."
       }
      ],
      "sources": [
@@ -66,129 +66,78 @@
        "revision": 2112937,
        "section": null,
        "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Mandragora Statue in the Tea Room",
-       "paragraph": "A4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Mandragora Statue in the Tea Room",
-       "paragraph": "A6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Painting in the Study",
-       "paragraph": "A10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Painting in the Study",
-       "paragraph": "A12",
        "wiki_refs": []
       }
      ],
      "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "trimmed",
+     "note": "The English never gives an order of unlocking (exterior first, then interior via other quests). It only says the exterior unlocks via one quest and the interior is accessible after The Joyous Floating Island. The sequence is an addition.",
+     "quote": "The lodge's exterior is unlocked by completing the Witch's Lodge (Quest) while the interior can be accessed after The Joyous Floating Island",
+     "sentences": [
+      {
+       "t_raw": "Witch's Lodge의 외관은 **Witch's Lodge (Quest)**를 완료하면 열리고, 내부는 The Joyous Floating Island를 완료한 뒤에 들어갈 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마녀의 오두막의 외관은 **마녀의 오두막**을 완료하면 열리고, 내부는 떠들썩한 부유섬을 완료한 뒤에 들어갈 수 있다."
+      },
+      {
+       "t_raw": "먼저 퀘스트 하나로 건물의 바깥이 열린 뒤, 다른 퀘스트 완료를 거쳐 안쪽 공간이 열리는 순서다.",
+       "interp": false,
+       "dropped": true,
+       "t": "먼저 퀘스트 하나로 건물의 바깥이 열린 뒤, 다른 퀘스트 완료를 거쳐 안쪽 공간이 열리는 순서다."
+      },
+      {
+       "t_raw": "이는 Lodge가 한 번에 전체가 열리는 장소가 아니라, 퀘스트 진행에 따라 접근 범위가 나뉘어 열리는 구조임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 Lodge가 한 번에 전체가 열리는 장소가 아니라, 퀘스트 진행에 따라 접근 범위가 나뉘어 열리는 구조임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
      "latin_left": [
-      "Tea Room",
-      "Mandragora Statue",
-      "Study",
-      "Painting",
-      "Studio",
-      "Angel Statue",
-      "Tall Study",
-      "Bookshelves",
-      "Hidden Room",
-      "Platform"
+      "Lodge"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The lodge's exterior is unlocked by completing the Witch's Lodge (Quest) while the interior can be accessed after The Joyous Floating Island",
-     "sentences": [
-      {
-       "t_raw": "Witch's Lodge는 Witch's Lodge (Quest)를 완료하면 외형이 열리고, The Joyous Floating Island 이후 내부에 들어갈 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마녀의 오두막은 마녀의 오두막을 완료하면 외형이 열리고, 떠들썩한 부유섬 이후 내부에 들어갈 수 있다."
-      },
-      {
-       "t_raw": "내부는 Beyond Silver and Fine Gold의 후속 퀘스트마다 **방이 하나씩 열리는 구조**다.",
-       "interp": false,
-       "dropped": false,
-       "t": "내부는 정금과 천은보다 귀한 것의 후속 퀘스트마다 **방이 하나씩 열리는 구조**다."
-      },
-      {
-       "t_raw": "입구 왼쪽 위층 방은 Witch's Homework: The Role of a Guide...? 완료 후, 입구 오른쪽 숨겨진 방은 A Window Into the World 완료 후 들어갈 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "입구 왼쪽 위층 방은 마녀의 과제・인도자의 역할…? 완료 후, 입구 오른쪽 숨겨진 방은 세상을 내다보는 창 완료 후 들어갈 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported.",
      "quote": "Each subsequent quest of Beyond Silver and Fine Gold unlocks another room inside.",
      "sentences": [
       {
-       "t_raw": "이처럼 Witch's Lodge는 외형 개방, 내부 진입, 개별 방 해금이 각기 다른 퀘스트 완료를 거치는 **단계형 공간**으로 볼 수 있다.",
-       "interp": true,
+       "t_raw": "**Beyond Silver and Fine Gold**의 후속 퀘스트를 완료할 때마다 Lodge 내부의 방이 하나씩 열린다.",
+       "interp": false,
        "dropped": false,
-       "t": "이처럼 마녀의 오두막은 외형 개방, 내부 진입, 개별 방 해금이 각기 다른 퀘스트 완료를 거치는 **단계형 공간**으로 볼 수 있다."
+       "t": "**정금과 천은보다 귀한 것**의 후속 퀘스트를 완료할 때마다 Lodge 내부의 방이 하나씩 열린다."
       },
       {
-       "t_raw": "입구를 기준으로 왼쪽 위층 방과 오른쪽 숨겨진 방의 해금 조건이 따로 제시되어, 내부가 퀘스트 진행에 따라 확장되는 셈이다.",
+       "t_raw": "입구 왼쪽의 위층 방은 Witch's Homework: The Role of a Guide...? 완료 뒤에 열리고, 입구 오른쪽의 숨겨진 방은 A Window Into the World 완료 뒤에 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "입구 왼쪽의 위층 방은 마녀의 과제・인도자의 역할…? 완료 뒤에 열리고, 입구 오른쪽의 숨겨진 방은 세상을 내다보는 창 완료 뒤에 열린다."
+      },
+      {
+       "t_raw": "이렇게 보면 Lodge의 방 해금은 후속 퀘스트의 진행과 맞물려 내부 공간을 하나씩 넓혀 가는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "입구를 기준으로 왼쪽 위층 방과 오른쪽 숨겨진 방의 해금 조건이 따로 제시되어, 내부가 퀘스트 진행에 따라 확장되는 셈이다."
+       "t": "이렇게 보면 Lodge의 방 해금은 후속 퀘스트의 진행과 맞물려 내부 공간을 하나씩 넓혀 가는 셈이다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Witch's Lodge",
@@ -199,31 +148,40 @@
       }
      ],
      "heading": "개요",
-     "latin_left": []
+     "latin_left": [
+      "Lodge",
+      "Lodge"
+     ]
     },
     {
-     "section": "공간 구성과 해금",
-     "status": "needs_verify",
-     "note": null,
+     "section": "공간과 해금",
+     "status": "accepted",
+     "note": "All supported.",
      "quote": "The lodge's exterior is unlocked by completing the Witch's Lodge (Quest) while the interior can be accessed after The Joyous Floating Island",
      "sentences": [
       {
-       "t_raw": "Witch's Lodge 외부는 Witch's Lodge (Quest)를 완료하면 열리고, 내부는 The Joyous Floating Island를 완료한 뒤 접근할 수 있다.",
+       "t_raw": "Witch's Lodge의 **외관**은 Witch's Lodge (Quest)를 완료하면 열리고, **내부**는 The Joyous Floating Island를 마친 뒤 들어갈 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "마녀의 오두막 외부는 마녀의 오두막을 완료하면 열리고, 내부는 떠들썩한 부유섬을 완료한 뒤 접근할 수 있다."
+       "t": "마녀의 오두막의 **외관**은 마녀의 오두막을 완료하면 열리고, **내부**는 떠들썩한 부유섬을 마친 뒤 들어갈 수 있다."
       },
       {
-       "t_raw": "Beyond Silver and Fine Gold의 후속 퀘스트를 완료할 때마다 내부 방이 하나씩 해금된다.",
+       "t_raw": "이후 Beyond Silver and Fine Gold의 퀘스트를 하나씩 완료할 때마다 내부의 방이 하나씩 열린다.",
        "interp": false,
        "dropped": false,
-       "t": "정금과 천은보다 귀한 것의 후속 퀘스트를 완료할 때마다 내부 방이 하나씩 해금된다."
+       "t": "이후 정금과 천은보다 귀한 것의 퀘스트를 하나씩 완료할 때마다 내부의 방이 하나씩 열린다."
       },
       {
-       "t_raw": "Tea Room에서는 Mandragora Statue가 The Joyous Floating Island를 완료한 후 해금되고, Nicole을 활성 캐릭터로 두고 찻상을 관찰한다.",
+       "t_raw": "입구 왼쪽 위층 방은 Witch's Homework: The Role of a Guide...? 완료 후, 입구 오른쪽 Hidden Room은 A Window Into the World 완료 후 모습을 드러낸다.",
        "interp": false,
        "dropped": false,
-       "t": "Tea Room에서는 Mandragora Statue가 떠들썩한 부유섬을 완료한 후 해금되고, 니콜을 활성 캐릭터로 두고 찻상을 관찰한다."
+       "t": "입구 왼쪽 위층 방은 마녀의 과제・인도자의 역할…? 완료 후, 입구 오른쪽 Hidden Room은 세상을 내다보는 창 완료 후 모습을 드러낸다."
+      },
+      {
+       "t_raw": "이처럼 외관과 내부, 방의 해금이 서로 다른 퀘스트에 걸려 있어 공간은 이야기 진행의 단계처럼 열리는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 외관과 내부, 방의 해금이 서로 다른 퀘스트에 걸려 있어 공간은 이야기 진행의 단계처럼 열리는 셈이다."
       }
      ],
      "sources": [
@@ -242,7 +200,39 @@
        "section": null,
        "paragraph": "A2",
        "wiki_refs": []
+      }
+     ],
+     "heading": "공간과 해금",
+     "latin_left": [
+      "Hidden Room"
+     ]
+    },
+    {
+     "section": "공간과 해금",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Unlocks after completing The Silent Theater",
+     "sentences": [
+      {
+       "t_raw": "The Joyous Floating Island를 마치면 Tea Room의 Mandragora Statue가 **관찰 지점**으로 열리며, Nicole을 활성 캐릭터로 두고 찻상을 관찰한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "떠들썩한 부유섬을 마치면 다실의 만드라고라 조각상이 **관찰 지점**으로 열리며, 니콜을 활성 캐릭터로 두고 찻상을 관찰한다."
       },
+      {
+       "t_raw": "The Silent Theater를 완료하면 Study의 Painting이 열리고, Nicole을 활성 캐릭터로 두고 오른쪽 그림을 관찰한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "침묵의 극장을 완료하면 Study의 Painting이 열리고, 니콜을 활성 캐릭터로 두고 오른쪽 그림을 관찰한다."
+      },
+      {
+       "t_raw": "The Lost Palace를 완료하면 Studio의 Angel Statue가 열리며, Nicole을 활성 캐릭터로 두고 왼쪽 천사상을 관찰한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잊힌 궁전을 완료하면 Studio의 Angel Statue가 열리며, 니콜을 활성 캐릭터로 두고 왼쪽 천사상을 관찰한다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Witch's Lodge",
@@ -257,53 +247,6 @@
        "revision": 2112937,
        "section": "Interactables > Mandragora Statue in the Tea Room",
        "paragraph": "A4",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "공간 구성과 해금",
-     "latin_left": [
-      "Tea Room",
-      "Mandragora Statue"
-     ]
-    },
-    {
-     "section": "공간 구성과 해금",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Unlocks after completing The Silent Theater",
-     "sentences": [
-      {
-       "t_raw": "Study의 Painting은 The Silent Theater를 완료한 후 해금되고, Nicole을 활성 캐릭터로 두고 오른쪽 그림을 관찰한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Study의 Painting은 침묵의 극장을 완료한 후 해금되고, 니콜을 활성 캐릭터로 두고 오른쪽 그림을 관찰한다."
-      },
-      {
-       "t_raw": "Studio의 Angel Statue는 The Lost Palace를 완료한 후 해금되며, Nicole을 활성 캐릭터로 두고 왼쪽 천사상을 관찰한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Studio의 Angel Statue는 잊힌 궁전을 완료한 후 해금되며, 니콜을 활성 캐릭터로 두고 왼쪽 천사상을 관찰한다."
-      },
-      {
-       "t_raw": "Tall Study의 Bookshelves는 The Forgotten Lighthouse를 완료한 후 해금되고, Nicole을 활성 캐릭터로 두고 왼쪽 소파 옆 책장을 관찰한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Tall Study의 Bookshelves는 인도의 등대를 완료한 후 해금되고, 니콜을 활성 캐릭터로 두고 왼쪽 소파 옆 책장을 관찰한다."
-      },
-      {
-       "t_raw": "방 해금은 Beyond Silver and Fine Gold의 후속 퀘스트와 이어지고 이 관찰 지점들도 지정 퀘스트 완료 뒤 열리므로, 관찰 지점은 방 해금 흐름을 따라 배치된 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "방 해금은 정금과 천은보다 귀한 것의 후속 퀘스트와 이어지고 이 관찰 지점들도 지정 퀘스트 완료 뒤 열리므로, 관찰 지점은 방 해금 흐름을 따라 배치된 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": null,
-       "paragraph": "A2",
        "wiki_refs": []
       },
       {
@@ -337,43 +280,33 @@
        "section": "Interactables > Angel Statue in the Studio",
        "paragraph": "A15",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A18",
-       "wiki_refs": []
       }
      ],
-     "heading": "공간 구성과 해금",
+     "heading": "공간과 해금",
      "latin_left": [
       "Study",
       "Painting",
       "Studio",
-      "Angel Statue",
-      "Tall Study",
-      "Bookshelves"
+      "Angel Statue"
      ]
     },
     {
-     "section": "공간 구성과 해금",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "the hidden room to the right of the entrance is unlocked after completing A Window Into the World",
+     "section": "공간과 해금",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Unlocks after completing A Window Into the World",
      "sentences": [
       {
-       "t_raw": "Hidden Room의 Platform은 A Window Into the World를 완료한 후 해금되며, Nicole을 활성 캐릭터로 두고 방 끝의 플랫폼을 관찰한다.",
+       "t_raw": "The Forgotten Lighthouse를 완료하면 Tall Study의 Bookshelves가 열리고, Nicole을 활성 캐릭터로 두고 왼쪽 소파 옆 책장을 관찰한다.",
        "interp": false,
        "dropped": false,
-       "t": "Hidden Room의 Platform은 세상을 내다보는 창을 완료한 후 해금되며, 니콜을 활성 캐릭터로 두고 방 끝의 플랫폼을 관찰한다."
+       "t": "인도의 등대를 완료하면 높은 서재의 Bookshelves가 열리고, 니콜을 활성 캐릭터로 두고 왼쪽 소파 옆 책장을 관찰한다."
       },
       {
-       "t_raw": "이 방은 입구 오른쪽에 있고 A Window Into the World를 완료해 열리므로, Hidden Room의 관찰은 방 해금과 관찰 지점 해금이 같은 퀘스트에 묶인 사례로 볼 수 있다.",
-       "interp": true,
+       "t_raw": "Hidden Room 안 끝의 Platform은 A Window Into the World 완료 뒤 열리며, Nicole을 활성 캐릭터로 두고 관찰하는 지점이다.",
+       "interp": false,
        "dropped": false,
-       "t": "이 방은 입구 오른쪽에 있고 세상을 내다보는 창을 완료해 열리므로, Hidden Room의 관찰은 방 해금과 관찰 지점 해금이 같은 퀘스트에 묶인 사례로 볼 수 있다."
+       "t": "Hidden Room 안 끝의 Platform은 세상을 내다보는 창 완료 뒤 열리며, 니콜을 활성 캐릭터로 두고 관찰하는 지점이다."
       }
      ],
      "sources": [
@@ -381,8 +314,16 @@
        "kind": "wiki",
        "page": "Witch's Lodge",
        "revision": 2112937,
-       "section": null,
-       "paragraph": "A2",
+       "section": "Interactables > Bookshelves in the Tall Study",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Bookshelves in the Tall Study",
+       "paragraph": "A19",
        "wiki_refs": []
       },
       {
@@ -402,42 +343,463 @@
        "wiki_refs": []
       }
      ],
-     "heading": "공간 구성과 해금",
+     "heading": "공간과 해금",
      "latin_left": [
+      "Bookshelves",
       "Hidden Room",
-      "Platform",
+      "Platform"
+     ]
+    },
+    {
+     "section": "Nicole의 관찰",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Hmm, come to think of it, having a tiny little Mandragora statue play the role of the Dodo-King does seem a little... underwhelming.",
+     "sentences": [
+      {
+       "t_raw": "Tea Room의 Mandragora 조각상을 관찰하면 Nicole은 작은 조각상이 Dodo-King 역할을 맡기에는 빈약해 보인다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다실의 만드라고라 조각상을 관찰하면 니콜은 작은 조각상이 도도 대왕 역할을 맡기에는 빈약해 보인다고 말한다."
+      },
+      {
+       "t_raw": "기회가 되면 조각상을 더 새겨 사람들이 놀러 오면 활기차게 하겠다고도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기회가 되면 조각상을 더 새겨 사람들이 놀러 오면 활기차게 하겠다고도 한다."
+      },
+      {
+       "t_raw": "조각상으로 놀이의 역을 상상하고 손님을 그리는 태도에서 이 방은 **살아 있는 장난감 상자**처럼 느껴진다.",
+       "interp": true,
+       "dropped": false,
+       "t": "조각상으로 놀이의 역을 상상하고 손님을 그리는 태도에서 이 방은 **살아 있는 장난감 상자**처럼 느껴진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Mandragora Statue in the Tea Room",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Mandragora Statue in the Tea Room",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Mandragora Statue in the Tea Room",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "니콜의 관찰",
+     "latin_left": []
+    },
+    {
+     "section": "Nicole의 관찰",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Everyone seems to be so busy lately. It's been ages since we last got together...",
+     "sentences": [
+      {
+       "t_raw": "Study의 그림 앞에서 Nicole은 모두가 바빠 마지막으로 모인 지 오래되었다고 말하고, Dodocos가 대신 행복한 모임을 즐기게 하자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Study의 그림 앞에서 니콜은 모두가 바빠 마지막으로 모인 지 오래되었다고 말하고, 도도코가 대신 행복한 모임을 즐기게 하자고 한다."
+      },
+      {
+       "t_raw": "Studio의 Angel Statue 앞에서는 자매들에게 오늘날의 인간들이 편안한 삶을 산다고 안심시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Studio의 Angel Statue 앞에서는 자매들에게 오늘날의 인간들이 편안한 삶을 산다고 안심시킨다."
+      },
+      {
+       "t_raw": "모임을 Dodocos에게 맡기면서도 자매들의 안위를 전하는 대목에서 **자리를 비운 이들을 향한 안부**가 느껴진다.",
+       "interp": true,
+       "dropped": false,
+       "t": "모임을 도도코에게 맡기면서도 자매들의 안위를 전하는 대목에서 **자리를 비운 이들을 향한 안부**가 느껴진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Painting in the Study",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Painting in the Study",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Painting in the Study",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Angel Statue in the Studio",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Angel Statue in the Studio",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "니콜의 관찰",
+     "latin_left": [
+      "Study",
+      "Studio",
+      "Angel Statue"
+     ]
+    },
+    {
+     "section": "Nicole의 관찰",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation about traces of work is reasonable given the books and typewriter.",
+     "quote": "Not this one. Where's the book I was reading last time? I even left a bookmark in it specifically... Where in Teyvat did I put it...?",
+     "sentences": [
+      {
+       "t_raw": "Tall Study의 책장을 관찰하면 Nicole은 읽던 책을 찾지 못해, 책갈피까지 끼워 두었는데 Teyvat 어디에 두었는지 모르겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "높은 서재의 책장을 관찰하면 니콜은 읽던 책을 찾지 못해, 책갈피까지 끼워 두었는데 티바트 어디에 두었는지 모르겠다고 말한다."
+      },
+      {
+       "t_raw": "설마 Study의 위쪽 선반에 두지 않았겠냐는 걱정 끝에 바람 통로가 나타나고, 가장 높은 플랫폼의 타자기 왼쪽 책 더미로 시선이 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "설마 Study의 위쪽 선반에 두지 않았겠냐는 걱정 끝에 바람 통로가 나타나고, 가장 높은 플랫폼의 타자기 왼쪽 책 더미로 시선이 이어진다."
+      },
+      {
+       "t_raw": "독서의 흔적과 집필 도구가 위층까지 이어지는 점에서 이곳은 **작업의 흔적**이 남은 공간으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "독서의 흔적과 집필 도구가 위층까지 이어지는 점에서 이곳은 **작업의 흔적**이 남은 공간으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Bookshelves in the Tall Study",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Bookshelves in the Tall Study",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Bookshelves in the Tall Study",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Bookshelves in the Tall Study",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Bookshelves in the Tall Study",
+       "paragraph": "A24",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "니콜의 관찰",
+     "latin_left": [
+      "Study"
+     ]
+    },
+    {
+     "section": "Nicole의 관찰",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Observation... commencing.",
+     "sentences": [
+      {
+       "t_raw": "Hidden Room 끝의 플랫폼을 관찰하면 Nicole은 관찰을 시작한다는 말을 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Hidden Room 끝의 플랫폼을 관찰하면 니콜은 관찰을 시작한다는 말을 한다."
+      },
+      {
+       "t_raw": "이어서 카메라는 물러나 방 전체를 비춘다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 카메라는 물러나 방 전체를 비춘다."
+      },
+      {
+       "t_raw": "대사와 화면의 움직임이 맞물려 이 플랫폼이 관찰 작업의 출발점처럼 느껴진다.",
+       "interp": true,
+       "dropped": false,
+       "t": "대사와 화면의 움직임이 맞물려 이 플랫폼이 관찰 작업의 출발점처럼 느껴진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Platform Inside the Hidden Room",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Platform Inside the Hidden Room",
+       "paragraph": "A32",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Platform Inside the Hidden Room",
+       "paragraph": "A33",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "니콜의 관찰",
+     "latin_left": [
       "Hidden Room"
      ]
     },
     {
-     "section": "Nicole의 관찰 기록",
-     "status": "needs_verify",
-     "note": null,
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is mild and reasonable.",
      "quote": "Nicole: (Hmm, come to think of it, having a tiny little Mandragora statue play the role of the Dodo-King does seem a little... underwhelming.)",
      "sentences": [
       {
-       "t_raw": "Mandragora Statue를 관찰하면 Nicole은 깊은 물약으로 몸이 작아지고 찻잔이 부딪히는 가운데 깃털을 찾으며 생각할 시간이라고 말한다.",
+       "t_raw": "Nicole의 말에 따르면 Tea Room의 **작은 Mandragora 조각상**이 Dodo-King 역할을 맡는 것은 조금 아쉬워 보인다.",
        "interp": false,
        "dropped": false,
-       "t": "Mandragora Statue를 관찰하면 니콜은 깊은 물약으로 몸이 작아지고 찻잔이 부딪히는 가운데 깃털을 찾으며 생각할 시간이라고 말한다."
+       "t": "니콜의 말에 따르면 다실의 **작은 만드라고라 조각상**이 도도 대왕 역할을 맡는 것은 조금 아쉬워 보인다."
       },
       {
-       "t_raw": "작은 Mandragora Statue가 **Dodo-King 역할**을 맡는 것은 조금 아쉽다고 한다.",
+       "t_raw": "기회가 되면 조각상을 더 새겨 사람들이 놀러 왔을 때 더 활기차게 하려 한다.",
        "interp": false,
        "dropped": false,
-       "t": "작은 Mandragora Statue가 **도도 대왕 역할**을 맡는 것은 조금 아쉽다고 한다."
+       "t": "기회가 되면 조각상을 더 새겨 사람들이 놀러 왔을 때 더 활기차게 하려 한다."
       },
       {
-       "t_raw": "기회가 되면 조각을 더 만들어, 사람들이 놀러 오면 더 활기차길 바란다.",
-       "interp": false,
-       "dropped": false,
-       "t": "기회가 되면 조각을 더 만들어, 사람들이 놀러 오면 더 활기차길 바란다."
-      },
-      {
-       "t_raw": "그 아쉬움과 추가 제작 계획이 맞물려, 이 소품은 방문객의 놀이를 위한 준비로 읽힌다.",
+       "t_raw": "조각상의 역할과 놀이 준비가 겹치며, 이 조각상들은 놀이용 소품으로 남는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "그 아쉬움과 추가 제작 계획이 맞물려, 이 소품은 방문객의 놀이를 위한 준비로 읽힌다."
+       "t": "조각상의 역할과 놀이 준비가 겹치며, 이 조각상들은 놀이용 소품으로 남는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Mandragora Statue in the Tea Room",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Mandragora Statue in the Tea Room",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is reasonable.",
+     "quote": "Nicole: (Not this one. Where's the book I was reading last time? I even left a bookmark in it specifically... Where in Teyvat did I put it...?)",
+     "sentences": [
+      {
+       "t_raw": "Nicole의 말에 따르면 Tall Study의 책장에서 지난번 읽던 책을 찾지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니콜의 말에 따르면 높은 서재의 책장에서 지난번 읽던 책을 찾지 못한다."
+      },
+      {
+       "t_raw": "그 책에는 일부러 **책갈피**를 꽂아 두었고, Teyvat 어디에 두었는지 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 책에는 일부러 **책갈피**를 꽂아 두었고, 티바트 어디에 두었는지 되묻는다."
+      },
+      {
+       "t_raw": "공부방 위쪽 선반에 두지 않았을까 걱정하는 대목은 독서 습관과 정리의 빈틈을 함께 보여 주는 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "공부방 위쪽 선반에 두지 않았을까 걱정하는 대목은 독서 습관과 정리의 빈틈을 함께 보여 주는 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Bookshelves in the Tall Study",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Bookshelves in the Tall Study",
+       "paragraph": "A22",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "trimmed",
+     "note": "The English says the camera pans out to show the whole area. The claim that the observed object is left to the reader's imagination contradicts that.",
+     "quote": "(The camera pans out to show the whole area)",
+     "sentences": [
+      {
+       "t_raw": "Hidden Room 안쪽의 플랫폼은 A Window Into the World를 완료한 뒤 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Hidden Room 안쪽의 플랫폼은 세상을 내다보는 창을 완료한 뒤 열린다."
+      },
+      {
+       "t_raw": "방 끝의 플랫폼에서 Nicole과 함께 관찰하면, 이제 일할 시간이라는 말과 함께 \"Observation... commencing.\"이라고 선언한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방 끝의 플랫폼에서 니콜과 함께 관찰하면, 이제 일할 시간이라는 말과 함께 \"관측... 개시.\"라고 선언한다.",
+       "polish": {
+        "from": "방 끝의 플랫폼에서 니콜과 함께 관찰하면, 이제 일할 시간이라는 말과 함께 \"Observation... commencing.\"이라고 선언한다.",
+        "text": "방 끝의 플랫폼에서 니콜과 함께 관찰하면, 이제 일할 시간이라는 말과 함께 \"관측... 개시.\"라고 선언한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "카메라가 물러나 공간 전체를 비추며, **관찰의 대상**은 독자가 상상할 몫으로 남는 셈이다.",
+       "interp": true,
+       "dropped": true,
+       "t": "카메라가 물러나 공간 전체를 비추며, **관찰의 대상**은 독자가 상상할 몫으로 남는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Platform Inside the Hidden Room",
+       "paragraph": "A28",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Platform Inside the Hidden Room",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Platform Inside the Hidden Room",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Platform Inside the Hidden Room",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Platform Inside the Hidden Room",
+       "paragraph": "A32",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Witch's Lodge",
+       "revision": 2112937,
+       "section": "Interactables > Platform Inside the Hidden Room",
+       "paragraph": "A33",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Hidden Room"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Hmm, come to think of it, having a tiny little Mandragora statue play the role of the Dodo-King does seem a little... underwhelming.",
+     "sentences": [
+      {
+       "t_raw": "Nicole은 약을 마시면 몸이 줄어들고 탁자 위 찻잔이 짤랑거린다며, 깃털은 어디 있지, 생각할 시간이라며 즐거워한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니콜은 약을 마시면 몸이 줄어들고 탁자 위 찻잔이 짤랑거린다며, 깃털은 어디 있지, 생각할 시간이라며 즐거워한다."
+      },
+      {
+       "t_raw": "다만 작은 **Mandragora 조각상**이 Dodo-King 역할을 맡는 것은 조금 아쉽다고 여기며, 기회가 되면 조각상을 더 깎아 사람들이 놀러 왔을 때 더 활기차게 하고 싶어 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 작은 **만드라고라 조각상**이 도도 대왕 역할을 맡는 것은 조금 아쉽다고 여기며, 기회가 되면 조각상을 더 깎아 사람들이 놀러 왔을 때 더 활기차게 하고 싶어 한다."
       }
      ],
      "sources": [
@@ -466,41 +828,27 @@
        "wiki_refs": []
       }
      ],
-     "heading": "니콜의 관찰 기록",
-     "latin_left": [
-      "Mandragora Statue",
-      "Mandragora Statue"
-     ]
+     "heading": "여담",
+     "latin_left": []
     },
     {
-     "section": "Nicole의 관찰 기록",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nicole: (Steady the candlesticks, brew a steaming pot of tea, and let the Dodocos enjoy this happy gathering in our stead!)",
+     "section": "여담",
+     "status": "accepted",
+     "note": "The English says it has been ages since they last got together, and the Dodocos enjoy the gathering in their stead. Saying Nicole states that everyone is gathering after a long time misstates this.",
+     "quote": "Steady the candlesticks, brew a steaming pot of tea, and let the Dodocos enjoy this happy gathering in our stead!",
      "sentences": [
       {
-       "t_raw": "Study의 Painting을 관찰하면 Nicole은 모두가 바쁘고 마지막으로 모인 지 오래되었다고 말한다.",
+       "t_raw": "Nicole은 모두가 요즘 바쁜 것 같다며 함께 모인 지 오래되었다고 말하고, 촛대를 고정하고 김이 나는 차 한 주전자를 우려 **Dodocos**가 대신 즐거운 모임을 누리게 하자고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "Study의 Painting을 관찰하면 니콜은 모두가 바쁘고 마지막으로 모인 지 오래되었다고 말한다."
+       "repaired": true,
+       "t": "니콜은 모두가 요즘 바쁜 것 같다며 함께 모인 지 오래되었다고 말하고, 촛대를 고정하고 김이 나는 차 한 주전자를 우려 **도도코**가 대신 즐거운 모임을 누리게 하자고 한다."
       },
       {
-       "t_raw": "이어서 촛대를 세우고 김이 나는 차를 우려, Dodocos가 그들 대신 즐거운 모임을 누리게 하자고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어서 촛대를 세우고 김이 나는 차를 우려, Dodocos가 그들 대신 즐거운 모임을 누리게 하자고 한다."
-      },
-      {
-       "t_raw": "Studio의 Angel Statue에서는 자매들에게 안심하라며 오늘날의 인간들은 편안한 삶을 산다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Studio의 Angel Statue에서는 자매들에게 안심하라며 오늘날의 인간들은 편안한 삶을 산다고 전한다."
-      },
-      {
-       "t_raw": "모임의 빈자리를 Dodocos의 모임으로 대신하는 대목과 자매들에게 안심하라는 말이 이어져, Nicole의 관찰은 사람들과 자매들의 현재를 향한 위로처럼 보인다.",
+       "t_raw": "사람들이 모이지 못한 자리를 Dodocos가 대신 채우는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "모임의 빈자리를 Dodocos의 모임으로 대신하는 대목과 자매들에게 안심하라는 말이 이어져, 니콜의 관찰은 사람들과 자매들의 현재를 향한 위로처럼 보인다."
+       "t": "사람들이 모이지 못한 자리를 도도코가 대신 채우는 셈이다."
       }
      ],
      "sources": [
@@ -519,413 +867,28 @@
        "section": "Interactables > Painting in the Study",
        "paragraph": "A13",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Angel Statue in the Studio",
-       "paragraph": "A17",
-       "wiki_refs": []
       }
      ],
-     "heading": "니콜의 관찰 기록",
-     "latin_left": [
-      "Study",
-      "Painting",
-      "Dodocos",
-      "Studio",
-      "Angel Statue",
-      "Dodocos"
-     ]
+     "heading": "여담",
+     "latin_left": []
     },
     {
-     "section": "Nicole의 관찰 기록",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nicole: (Found it! Thank you, memory, for your guidance. It's like I'm my very own guiding angel, hehe...)",
-     "sentences": [
-      {
-       "t_raw": "Tall Study의 Bookshelves를 관찰하면 Nicole은 지난번 읽던 책에 책갈피까지 꽂아 두었는데 Teyvat 어디에 두었는지 모르겠다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Tall Study의 Bookshelves를 관찰하면 니콜은 지난번 읽던 책에 책갈피까지 꽂아 두었는데 티바트 어디에 두었는지 모르겠다고 한다."
-      },
-      {
-       "t_raw": "혹시 Study의 맨 위 선반에 두지 않았느냐는 말이 이어지고, 바람 통로가 나타난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "혹시 Study의 맨 위 선반에 두지 않았느냐는 말이 이어지고, 바람 통로가 나타난다."
-      },
-      {
-       "t_raw": "가장 높은 플랫폼에 올라 타자기 왼쪽 카운터의 책 더미를 관찰하자 Nicole은 찾았다며 기억에게 고맙다고 하고, 자신이 자신만의 **길잡이 천사**인 것 같다고 웃는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "가장 높은 플랫폼에 올라 타자기 왼쪽 카운터의 책 더미를 관찰하자 니콜은 찾았다며 기억에게 고맙다고 하고, 자신이 자신만의 **길잡이 천사**인 것 같다고 웃는다."
-      },
-      {
-       "t_raw": "책을 찾지 못해 위치를 되짚는 대사와 찾은 뒤 기억에게 고맙다고 말하는 대사가 이어져, 책 찾기는 Nicole의 기억을 확인하는 장면처럼 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "책을 찾지 못해 위치를 되짚는 대사와 찾은 뒤 기억에게 고맙다고 말하는 대사가 이어져, 책 찾기는 니콜의 기억을 확인하는 장면처럼 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A21",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A22",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A23",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A24",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A25",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A26",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "니콜의 관찰 기록",
-     "latin_left": [
-      "Tall Study",
-      "Bookshelves",
-      "Study"
-     ]
-    },
-    {
-     "section": "Nicole의 관찰 기록",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nicole: \"Observation... commencing.\"",
-     "sentences": [
-      {
-       "t_raw": "Hidden Room의 Platform을 관찰하면 Nicole은 이제 일할 시간이라며 **관찰... 시작**이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Hidden Room의 Platform을 관찰하면 니콜은 이제 일할 시간이라며 **관찰... 시작**이라고 말한다."
-      },
-      {
-       "t_raw": "그 뒤 카메라가 물러나 전체 공간을 비춘다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 뒤 카메라가 물러나 전체 공간을 비춘다."
-      },
-      {
-       "t_raw": "짧은 선언과 시야가 넓어지는 연출이 맞물려, Nicole의 관찰이 공간 전체를 향하는 장면으로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "짧은 선언과 시야가 넓어지는 연출이 맞물려, 니콜의 관찰이 공간 전체를 향하는 장면으로 읽힌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Platform Inside the Hidden Room",
-       "paragraph": "A31",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Platform Inside the Hidden Room",
-       "paragraph": "A32",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Platform Inside the Hidden Room",
-       "paragraph": "A33",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "니콜의 관찰 기록",
-     "latin_left": [
-      "Hidden Room",
-      "Platform"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hmm, come to think of it, having a tiny little Mandragora statue play the role of the Dodo-King does seem a little... underwhelming.",
-     "sentences": [
-      {
-       "t_raw": "Nicole은 Mandragora Statue가 **Dodo-King** 역할을 맡는 것을 조금 아쉽게 여긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "니콜은 Mandragora Statue가 **도도 대왕** 역할을 맡는 것을 조금 아쉽게 여긴다."
-      },
-      {
-       "t_raw": "기회가 되면 조각을 더 만들어 사람들이 놀러 올 때 활기를 더하겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "기회가 되면 조각을 더 만들어 사람들이 놀러 올 때 활기를 더하겠다고 말한다."
-      },
-      {
-       "t_raw": "작은 조각상의 역할에 아쉬움을 표하면서도 조각을 더 구상하는 대목은, 이 소품이 사람들이 모여 노는 장면을 염두에 둔 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "작은 조각상의 역할에 아쉬움을 표하면서도 조각을 더 구상하는 대목은, 이 소품이 사람들이 모여 노는 장면을 염두에 둔 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Mandragora Statue in the Tea Room",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Mandragora Statue in the Tea Room",
-       "paragraph": "A8",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Mandragora Statue"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
      "quote": "Found it! Thank you, memory, for your guidance. It's like I'm my very own guiding angel, hehe...",
      "sentences": [
       {
-       "t_raw": "Nicole은 자매들에게 오늘날의 인간들이 편안한 삶을 산다며 안심시킨다.",
+       "t_raw": "Nicole은 지난번 읽던 책과 책갈피까지 꽂아 둔 책을 찾지 못해 Teyvat 어디에 두었는지 되묻고, 혹시 위쪽 선반에 두지 않았나 걱정한다.",
        "interp": false,
        "dropped": false,
-       "t": "니콜은 자매들에게 오늘날의 인간들이 편안한 삶을 산다며 안심시킨다."
+       "t": "니콜은 지난번 읽던 책과 책갈피까지 꽂아 둔 책을 찾지 못해 티바트 어디에 두었는지 되묻고, 혹시 위쪽 선반에 두지 않았나 걱정한다."
       },
       {
-       "t_raw": "한편 서재에서는 읽던 책을 못 찾아 가장 높은 선반을 걱정하고, 찾은 뒤에는 **기억**이 길을 안내했다며 자신이 안내 천사 같다고 웃는다.",
+       "t_raw": "책을 찾은 뒤에는 기억에게 길을 알려 줘서 고맙다며 자신이 자신만의 **안내 천사**인 것 같다고 히히 웃는다.",
        "interp": false,
        "dropped": false,
-       "t": "한편 서재에서는 읽던 책을 못 찾아 가장 높은 선반을 걱정하고, 찾은 뒤에는 **기억**이 길을 안내했다며 자신이 안내 천사 같다고 웃는다."
-      },
-      {
-       "t_raw": "자매를 안심시키는 말과 기억을 안내자로 부르는 말이 나란히 남아, Nicole이 타인과 자신 모두에게 '안내'의 언어를 쓰는 모습으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "자매를 안심시키는 말과 기억을 안내자로 부르는 말이 나란히 남아, 니콜이 타인과 자신 모두에게 '안내'의 언어를 쓰는 모습으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Angel Statue in the Studio",
-       "paragraph": "A17",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A22",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A26",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "accepted",
-     "note": "All sentences are supported; the interpretation reasonably follows from the dialogue and camera movement.",
-     "quote": "Observation... commencing.",
-     "sentences": [
-      {
-       "t_raw": "Nicole은 이제 일할 시간이라며 **관찰을 시작한다**고 알린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "니콜은 이제 일할 시간이라며 **관찰을 시작한다**고 알린다."
-      },
-      {
-       "t_raw": "이어 카메라가 물러나 전체 공간을 비춘다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어 카메라가 물러나 전체 공간을 비춘다."
-      },
-      {
-       "t_raw": "관찰을 시작한다는 대사 직후 시야가 넓어지는 구성은 관찰이 한 대상에 머물지 않고 공간 전체를 향하는 것으로 보이게 한다.",
-       "interp": true,
-       "dropped": false,
-       "t": "관찰을 시작한다는 대사 직후 시야가 넓어지는 구성은 관찰이 한 대상에 머물지 않고 공간 전체를 향하는 것으로 보이게 한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Platform Inside the Hidden Room",
-       "paragraph": "A31",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Platform Inside the Hidden Room",
-       "paragraph": "A32",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Platform Inside the Hidden Room",
-       "paragraph": "A33",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "accepted",
-     "note": "Both sentences faithfully paraphrase Nicole's remarks.",
-     "quote": "Nicole: (Hmm, come to think of it, having a tiny little Mandragora statue play the role of the Dodo-King does seem a little... underwhelming.)",
-     "sentences": [
-      {
-       "t_raw": "Tea Room의 Mandragora Statue는 **Dodo-King 역할**을 맡지만, Nicole는 그 작은 조각이 역을 맡는 것이 조금 초라해 보인다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Tea Room의 Mandragora Statue는 **도도 대왕 역할**을 맡지만, 니콜은 그 작은 조각이 역을 맡는 것이 조금 초라해 보인다고 말한다."
-      },
-      {
-       "t_raw": "기회가 되면 **조각을 더** 만들어 두고 싶어 하며, 사람들이 정말 놀러 온다면 더 활기찰 것이라고 덧붙인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "기회가 되면 **조각을 더** 만들어 두고 싶어 하며, 사람들이 정말 놀러 온다면 더 활기찰 것이라고 덧붙인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Mandragora Statue in the Tea Room",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Mandragora Statue in the Tea Room",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Mandragora Statue in the Tea Room",
-       "paragraph": "A8",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Tea Room",
-      "Mandragora Statue"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "accepted",
-     "note": "All factual details are supported, and the interpretation reasonably summarizes the sequence.",
-     "quote": "Nicole: (Not this one. Where's the book I was reading last time? I even left a bookmark in it specifically... Where in Teyvat did I put it...?)",
-     "sentences": [
-      {
-       "t_raw": "Tall Study의 Bookshelves에서는 Nicole가 지난번 읽던 책을 찾지 못해 헤맨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Tall Study의 Bookshelves에서는 니콜이 지난번 읽던 책을 찾지 못해 헤맨다."
-      },
-      {
-       "t_raw": "책갈피까지 꽂아 두었는데 Teyvat 어디에 두었는지 모르겠다고 하고, 설마 Study의 맨 위 선반에 두지 않았나 걱정한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "책갈피까지 꽂아 두었는데 티바트 어디에 두었는지 모르겠다고 하고, 설마 Study의 맨 위 선반에 두지 않았나 걱정한다."
-      },
-      {
-       "t_raw": "그러자 **바람 통로**가 나타나고, 가장 높은 플랫폼에 올라가 타자기 왼쪽 카운터의 책 더미를 관찰하면 책을 찾는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러자 **바람 통로**가 나타나고, 가장 높은 플랫폼에 올라가 타자기 왼쪽 카운터의 책 더미를 관찰하면 책을 찾는다."
-      },
-      {
-       "t_raw": "Nicole는 기억이 길을 안내해 줬다며 자신이 자기만의 안내 천사 같다고 웃는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "니콜은 기억이 길을 안내해 줬다며 자신이 자기만의 안내 천사 같다고 웃는다."
-      },
-      {
-       "t_raw": "책을 찾는 일이 기억과 공간 이동에 기대는 작은 소동으로 그려진 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "책을 찾는 일이 기억과 공간 이동에 기대는 작은 소동으로 그려진 셈이다."
+       "t": "책을 찾은 뒤에는 기억에게 길을 알려 줘서 고맙다며 자신이 자신만의 **안내 천사**인 것 같다고 히히 웃는다."
       }
      ],
      "sources": [
@@ -950,32 +913,12 @@
        "page": "Witch's Lodge",
        "revision": 2112937,
        "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A23",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
-       "paragraph": "A24",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Witch's Lodge",
-       "revision": 2112937,
-       "section": "Interactables > Bookshelves in the Tall Study",
        "paragraph": "A26",
        "wiki_refs": []
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Tall Study",
-      "Bookshelves",
-      "Study"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": []

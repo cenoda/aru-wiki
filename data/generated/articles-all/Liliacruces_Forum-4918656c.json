@@ -1,0 +1,611 @@
+{
+ "node": "Liliacruces Forum",
+ "articles": [
+  {
+   "node": "Liliacruces Forum",
+   "from_version": "4.0",
+   "cutoff": "2023-09-26T00:00:00Z",
+   "input": [
+    {
+     "page": "Liliacruces Forum",
+     "url": "https://genshin-impact.fandom.com/wiki/Liliacruces_Forum",
+     "revision": 1340827
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 4,
+    "web": 0
+   },
+   "input_chars": 424,
+   "input_cut": false,
+   "input_hash": "9f1075627acb",
+   "writer": "ds-pro,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "Sentence 0 says the Liliacruces Forum is the secret society aiming to overthrow Fontaine. The English gives that description for the fictional Liliacruces Ordo. The Forum is only said to be mentioned by Virgil and to be located in the Institute of Natural Philosophy. The sentence also drops the 'fictional' qualifier.",
+     "quote": "Liliacruces Ordo is a fictional secret society within a literary work that aims to overthrow Fontaine.",
+     "sentences": [
+      {
+       "t_raw": "Liliacruces Ordo는 소설 속에서 Fontaine을 전복하는 것을 노리는 **가공의 비밀결사**다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "은방울꽃 십자 결사회는 소설 속에서 폰타인을 전복하는 것을 노리는 **가공의 비밀결사**다."
+      },
+      {
+       "t_raw": "다만 이 결사는 실재하는 조직이 아니라, The Steambird에 연재된 추리소설 \"Great Detective Hurlock\" 속에 등장하는 **가공의 존재**로, 그 원형은 Narzissenkreuz Ordo에서 따온 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "다만 이 결사는 실재하는 조직이 아니라, 스팀버드에 연재된 추리소설 \"대탐정 헐록\" 속에 등장하는 **가공의 존재**로, 그 원형은 수선화 십자 결사회에서 따온 것으로 보인다."
+      },
+      {
+       "t_raw": "Virgil의 연구에 따르면 결사의 보물고로 여겨지는 유적이 Institute of Natural Philosophy 안에 자리하고 있으며, 여기에는 Kameras 등 결사가 남긴 연구의 흔적들이 가득하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "버질의 연구에 따르면 결사의 보물고로 여겨지는 유적이 자연철학 학원 안에 자리하고 있으며, 여기에는 사진기 등 결사가 남긴 연구의 흔적들이 가득하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Liliacruces Forum",
+       "revision": 1340827,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Virgil"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Both sentences match the English.",
+     "quote": "Liliacruces Ordo is a fictional secret society within a literary work that aims to overthrow Fontaine.",
+     "sentences": [
+      {
+       "t_raw": "소설 속 Liliacruces Ordo는 Fontaine을 전복하려는 **가공의 비밀결사**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소설 속 은방울꽃 십자 결사회는 폰타인을 전복하려는 **가공의 비밀결사**다."
+      },
+      {
+       "t_raw": "그 기원은 The Steambird가 연재한 스릴러 소설 \"Great Detective Hurlock\"로 거슬러 올라가고, 실제 모티프는 Narzissenkreuz Ordo에서 가져왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 기원은 스팀버드가 연재한 스릴러 소설 \"대탐정 헐록\"으로 거슬러 올라가고, 실제 모티프는 수선화 십자 결사회에서 가져왔다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Liliacruces Forum",
+       "revision": 1340827,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by the English, and the interpretation is reasonable.",
+     "quote": "Behold, the ruins of the Liliacruces Forum!",
+     "sentences": [
+      {
+       "t_raw": "Liliacruces Forum은 Virgil이 언급하며, 그 **실제 위치**는 Institute of Natural Philosophy 안이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "십자 은방울꽃 학회는 버질이 언급하며, 그 **실제 위치**는 자연철학 학원 안이다."
+      },
+      {
+       "t_raw": "Virgil은 그곳을 Liliacruces Forum의 폐허라고 외친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "버질은 그곳을 십자 은방울꽃 학회의 폐허라고 외친다."
+      },
+      {
+       "t_raw": "소설 속 결사와 실제 유적이 Liliacruces라는 이름으로 이어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "소설 속 결사와 실제 유적이 Liliacruces라는 이름으로 이어지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Liliacruces Forum",
+       "revision": 1340827,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Virgil"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Liliacruces"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "quote_mismatch",
+     "note": null,
+     "quote": "The Liliacruces Ordo is a fictional secret society within a literary work that aims to overthrow Fontaine.",
+     "sentences": [
+      {
+       "t_raw": "Liliacruces Ordo는 문학 작품 속에서 Fontaine 전복을 꾀하는 **가공의 비밀결사**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "은방울꽃 십자 결사회는 문학 작품 속에서 폰타인 전복을 꾀하는 **가공의 비밀결사**다."
+      },
+      {
+       "t_raw": "그 기원은 The Steambird가 연재한 스릴러 소설 Great Detective Hurlock으로 거슬러 올라가고, 진짜 모티프는 Narzissenkreuz Ordo다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 기원은 스팀버드가 연재한 스릴러 소설 대탐정 헐록으로 거슬러 올라가고, 진짜 모티프는 수선화 십자 결사회다."
+      },
+      {
+       "t_raw": "따라서 소설 속 결사는 Narzissenkreuz Ordo를 바탕으로 한 존재라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 소설 속 결사는 수선화 십자 결사회를 바탕으로 한 존재라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Liliacruces Forum",
+       "revision": 1340827,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The fact is supported. The interpretation is hedged and follows from the English.",
+     "quote": "The Liliacruces Forum is mentioned by Virgil, and its actual location is within the Institute of Natural Philosophy.",
+     "sentences": [
+      {
+       "t_raw": "Liliacruces Forum는 Virgil이 언급하며, **실제 위치**는 Institute of Natural Philosophy 안에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "십자 은방울꽃 학회는 버질이 언급하며, **실제 위치**는 자연철학 학원 안에 있다."
+      },
+      {
+       "t_raw": "소설 속 결사와 실제 장소가 함께 제시되는 구도에서, Forum의 위치는 허구의 결사와 실제 장소를 잇는 단서로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "소설 속 결사와 실제 장소가 함께 제시되는 구도에서, Forum의 위치는 허구의 결사와 실제 장소를 잇는 단서로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Liliacruces Forum",
+       "revision": 1340827,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "Forum"
+     ]
+    },
+    {
+     "section": "작중 행적 — Aqueous Tidemarks",
+     "status": "accepted",
+     "note": "All sentences are supported by Q1–Q3, and the interpretation is reasonable.",
+     "quote": "According to my research, this should be the treasure vault of the Liliacruces Forum. The riches we seek should be within.",
+     "sentences": [
+      {
+       "t_raw": "Virgil은 자신의 조사에 따르면 이곳이 Liliacruces Forum의 보물고일 것이며, 찾는 재물이 그 안에 있을 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "버질은 자신의 조사에 따르면 이곳이 십자 은방울꽃 학회의 보물고일 것이며, 찾는 재물이 그 안에 있을 것이라고 말한다."
+      },
+      {
+       "t_raw": "Paimon은 Liliacruces Forum가 연구를 많이 했다며, 오는 길에 Kameras를 많이 보았다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 십자 은방울꽃 학회가 연구를 많이 했다며, 오는 길에 사진기를 많이 보았다고 말한다."
+      },
+      {
+       "t_raw": "Virgil은 \"Knowledge is power\"라는 말이 Liliacruces Forum에 특히 들어맞는다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "버질은 \"아는 것이 힘이다\"라는 말이 십자 은방울꽃 학회에 특히 들어맞는다고 덧붙인다.",
+       "polish": {
+        "from": "버질은 \"Knowledge is power\"라는 말이 십자 은방울꽃 학회에 특히 들어맞는다고 덧붙인다.",
+        "text": "버질은 \"아는 것이 힘이다\"라는 말이 십자 은방울꽃 학회에 특히 들어맞는다고 덧붙인다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "보물고를 찾는 일과 연구의 흔적이 드러나는 일이 같은 여정에 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "보물고를 찾는 일과 연구의 흔적이 드러나는 일이 같은 여정에 놓인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Virgil"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Virgil"
+      }
+     ],
+     "heading": "작중 행적 — 물빛 파도 자국",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Aqueous Tidemarks",
+     "status": "accepted",
+     "note": "The fact is supported by Q4. The interpretation is reasonable.",
+     "quote": "Behold, the ruins of the Liliacruces Forum!",
+     "sentences": [
+      {
+       "t_raw": "Virgil은 Liliacruces Forum의 유적을 보라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "버질은 십자 은방울꽃 학회의 유적을 보라고 말한다."
+      },
+      {
+       "t_raw": "보물고를 찾던 흐름에서 결사의 유적이 제시되면서, 재물 탐색은 결사의 흔적을 마주하는 장면으로 이어진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "보물고를 찾던 흐름에서 결사의 유적이 제시되면서, 재물 탐색은 결사의 흔적을 마주하는 장면으로 이어진다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Virgil"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Virgil"
+      }
+     ],
+     "heading": "작중 행적 — 물빛 파도 자국",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The English never links the Narzissenkreuz Ordo inspiration to the Forum's actual location. Calling it a clue that the novel's society and the real place are related is an unsupported guess.",
+     "quote": "Liliacruces Ordo is a fictional secret society within a literary work that aims to overthrow Fontaine.",
+     "sentences": [
+      {
+       "t_raw": "Liliacruces Ordo는 문학 작품 속에서 Fontaine을 전복하려는 가공의 비밀결사로, 그 기원은 The Steambird가 연재한 스릴러 소설 \"Great Detective Hurlock\"으로 거슬러 올라가며 진짜 모티프는 Narzissenkreuz Ordo에서 가져왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "은방울꽃 십자 결사회는 문학 작품 속에서 폰타인을 전복하려는 가공의 비밀결사로, 그 기원은 스팀버드가 연재한 스릴러 소설 \"대탐정 헐록\"으로 거슬러 올라가며 진짜 모티프는 수선화 십자 결사회에서 가져왔다."
+      },
+      {
+       "t_raw": "**가공의 결사가 Narzissenkreuz Ordo를 모티프로 삼았다는 점**은 그 설정의 뿌리를 엿보게 하는 단서로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "**가공의 결사가 수선화 십자 결사회를 모티프로 삼았다는 점**은 그 설정의 뿌리를 엿보게 하는 단서로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Liliacruces Forum",
+       "revision": 1340827,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and Q1-Q4. The interpretation is hedged and stays within the stated fictional/actual contrast.",
+     "quote": "This is especially true for the Liliacruces Forum.",
+     "sentences": [
+      {
+       "t_raw": "Liliacruces Forum은 Virgil이 언급하며, 실제 위치는 Institute of Natural Philosophy 안에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "십자 은방울꽃 학회는 버질이 언급하며, 실제 위치는 자연철학 학원 안에 있다."
+      },
+      {
+       "t_raw": "Paimon은 Liliacruces Forum이 연구를 많이 했다고 말하고, 오는 길에 Kameras를 많이 보았다고도 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 십자 은방울꽃 학회가 연구를 많이 했다고 말하고, 오는 길에 사진기를 많이 보았다고도 말한다."
+      },
+      {
+       "t_raw": "Virgil은 연구에 따르면 이곳이 Liliacruces Forum의 보물고여야 한다고 말하고, 그 유적을 가리킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "버질은 연구에 따르면 이곳이 십자 은방울꽃 학회의 보물고여야 한다고 말하고, 그 유적을 가리킨다."
+      },
+      {
+       "t_raw": "Virgil은 \"지식은 힘\"이 Liliacruces Forum에 특히 들어맞는다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "버질은 \"지식은 힘\"이 십자 은방울꽃 학회에 특히 들어맞는다고 말한다."
+      },
+      {
+       "t_raw": "**지식과 보물, 유적이라는 층위가 겹치는 점**은 가공의 결사와 실제 유적을 잇는 떡밥으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**지식과 보물, 유적이라는 층위가 겹치는 점**은 가공의 결사와 실제 유적을 잇는 떡밥으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Liliacruces Forum",
+       "revision": 1340827,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Virgil"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Virgil"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Virgil"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Paimon links the Forum's research to the many Kameras seen on the way. The interpretation is reasonable.",
+     "quote": "But now that you mention it, this Liliacruces Forum really did a lot of research, didn't they? We saw so many Kameras along the way...",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Liliacruces Forum이 연구를 많이 했다고 말하며, 그 근거로 길에서 만난 많은 Kameras를 든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 십자 은방울꽃 학회가 연구를 많이 했다고 말하며, 그 근거로 길에서 만난 많은 사진기를 든다."
+      },
+      {
+       "t_raw": "여정 중 많은 Kameras를 보았다는 말은 Forum의 연구를 언급하는 대사 안에 놓인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여정 중 많은 사진기를 보았다는 말은 Forum의 연구를 언급하는 대사 안에 놓인다."
+      },
+      {
+       "t_raw": "많은 Kameras와 활발한 연구를 나란히 놓은 점에서, Kameras는 Forum의 연구 흔적을 환기하는 소품으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "많은 사진기와 활발한 연구를 나란히 놓은 점에서, 사진기는 Forum의 연구 흔적을 환기하는 소품으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Forum",
+      "Forum"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The quote and the Paimon/Virgil pairing are supported. The interpretations are reasonable and hedged.",
+     "quote": "As the saying goes, dear Paimon, \"Knowledge is power.\" This is especially true for the Liliacruces Forum.",
+     "sentences": [
+      {
+       "t_raw": "Virgil은 Paimon에게 \"Knowledge is power.\"라는 속담을 인용하며, 그 말이 Liliacruces Forum에 특히 들어맞는다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "버질은 페이몬에게 \"아는 것이 힘이다.\"라는 속담을 인용하며, 그 말이 십자 은방울꽃 학회에 특히 들어맞는다고 말한다.",
+       "polish": {
+        "from": "버질은 페이몬에게 \"Knowledge is power.\"라는 속담을 인용하며, 그 말이 십자 은방울꽃 학회에 특히 들어맞는다고 말한다.",
+        "text": "버질은 페이몬에게 \"아는 것이 힘이다.\"라는 속담을 인용하며, 그 말이 십자 은방울꽃 학회에 특히 들어맞는다고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Paimon이 Forum의 연구를 언급한 데 이어 Virgil이 지식의 힘을 강조하므로, 두 사람의 대사는 Forum을 연구와 연결해 그리는 쪽에서 서로 맞물린다.",
+       "interp": true,
+       "dropped": false,
+       "t": "페이몬이 Forum의 연구를 언급한 데 이어 버질이 지식의 힘을 강조하므로, 두 사람의 대사는 Forum을 연구와 연결해 그리는 쪽에서 서로 맞물린다."
+      },
+      {
+       "t_raw": "속담을 그대로 인용해 Forum에 적용하는 말투는 Forum이 지닌 연구의 성격을 지식의 힘과 연결하는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "속담을 그대로 인용해 Forum에 적용하는 말투는 Forum이 지닌 연구의 성격을 지식의 힘과 연결하는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aqueous Tidemarks",
+       "quest_ko": "물빛 파도 자국",
+       "version": "4.0",
+       "speaker": "Virgil"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Forum",
+      "Forum",
+      "Forum",
+      "Forum"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "보라, Liliacruces Forum의 유적을!",
+     "en": "Behold, the ruins of the Liliacruces Forum!",
+     "speaker": "Virgil",
+     "source": {
+      "kind": "quest",
+      "quest": "Aqueous Tidemarks",
+      "quest_ko": "물빛 파도 자국",
+      "version": "4.0",
+      "speaker": "Virgil"
+     },
+     "t": "보라, 십자 은방울꽃 학회의 유적을!",
+     "speaker_ko": "버질"
+    },
+    {
+     "section": "작중 행적 — Aqueous Tidemarks",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "보라, Liliacruces Forum의 유적을!",
+     "en": "Behold, the ruins of the Liliacruces Forum!",
+     "speaker": "Virgil",
+     "source": {
+      "kind": "quest",
+      "quest": "Aqueous Tidemarks",
+      "quest_ko": "물빛 파도 자국",
+      "version": "4.0",
+      "speaker": "Virgil"
+     },
+     "t": "보라, 십자 은방울꽃 학회의 유적을!",
+     "speaker_ko": "버질"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Virgil's line, including the quoted saying.",
+     "t_raw": "속담에 말하길, 친애하는 Paimon, \"지식은 힘이다.\" 이 말은 Liliacruces Forum에 특히 들어맞는다.",
+     "en": "As the saying goes, dear Paimon, \"Knowledge is power.\" This is especially true for the Liliacruces Forum.",
+     "speaker": "Virgil",
+     "source": {
+      "kind": "quest",
+      "quest": "Aqueous Tidemarks",
+      "quest_ko": "물빛 파도 자국",
+      "version": "4.0",
+      "speaker": "Virgil"
+     },
+     "t": "속담에 말하길, 친애하는 페이몬, \"지식은 힘이다.\" 이 말은 십자 은방울꽃 학회에 특히 들어맞는다.",
+     "speaker_ko": "버질"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The quoted saying \"Knowledge is power\" is left in English instead of being translated into Korean. The rest of the line is faithful, but the translation is incomplete.",
+     "t_raw": "속담에도 있듯이, 친애하는 Paimon, ‘아는 것이 힘이다.’ 이 말은 Liliacruces Forum에 특히 들어맞는다.",
+     "en": "As the saying goes, dear Paimon, \"Knowledge is power.\" This is especially true for the Liliacruces Forum.",
+     "speaker": "Virgil",
+     "source": {
+      "kind": "quest",
+      "quest": "Aqueous Tidemarks",
+      "quest_ko": "물빛 파도 자국",
+      "version": "4.0",
+      "speaker": "Virgil"
+     },
+     "t": "속담에도 있듯이, 친애하는 페이몬, '아는 것이 힘이다.' 이 말은 십자 은방울꽃 학회에 특히 들어맞는다.",
+     "speaker_ko": "버질"
+    }
+   ]
+  }
+ ]
+}

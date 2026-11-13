@@ -20,35 +20,41 @@
    "input_chars": 2729,
    "input_cut": false,
    "input_hash": "c18550b10035",
-   "writer": "or-ds,glm-flash",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences follow from the English; the interpretation is reasonable.",
      "quote": "Karkata was created by the researcher Abattouy in order to prove that mechanical beings were also true lifeforms.",
      "sentences": [
       {
-       "t_raw": "Karkata는 Pardis Dhyai에 있는 NPC로, 낮에는 온실에서 큐브 형태로 머무르고 Tighnari's Story Quest: Vulpes Zerda Chapter: Act I - The Unanswerable Problems를 완료한 뒤에는 밤에 큐브에서 나와 상호작용할 수 있다.",
+       "t_raw": "Karkata는 Pardis Dhyai에 있는 NPC로, 낮에는 온실에서 큐브 형태로 발견되고 Tighnari의 Story Quest인 The Unanswerable Problems를 마친 뒤에는 밤에 온실 밖에서 모습을 드러낸다.",
        "interp": false,
        "dropped": false,
-       "t": "카르카타는 선나원에 있는 NPC로, 낮에는 온실에서 큐브 형태로 머무르고 타이나리의 전설 임무: 사막여우의 장: Act I - 답이 없는 과제를 완료한 뒤에는 밤에 큐브에서 나와 상호작용할 수 있다."
+       "t": "카르카타는 선나원에 있는 NPC로, 낮에는 온실에서 큐브 형태로 발견되고 타이나리의 전설 임무인 답이 없는 과제를 마친 뒤에는 밤에 온실 밖에서 모습을 드러낸다."
       },
       {
-       "t_raw": "Sumerian researcher Abattouy가 기계 생명체도 진정한 생명체임을 증명하려고 만든 존재이며, 기계 생명체 연구는 Akademiya에서 금지된 분야였다.",
+       "t_raw": "Sumerian 연구자 Abattouy가 기계도 진정한 생명체임을 증명하려고 만든 존재이며, Akademiya는 다른 연구자들이 지나치게 나아가자 기계 생명체 연구를 금지했다.",
        "interp": false,
        "dropped": false,
-       "t": "Sumerian researcher 아바투이가 기계 생명체도 진정한 생명체임을 증명하려고 만든 존재이며, 기계 생명체 연구는 아카데미아에서 금지된 분야였다."
+       "t": "Sumerian 연구자 아바투이가 기계도 진정한 생명체임을 증명하려고 만든 존재이며, 아카데미아는 다른 연구자들이 지나치게 나아가자 기계 생명체 연구를 금지했다."
       },
       {
-       "t_raw": "Tighnari가 Karkata를 연구 조수로 받아들인 뒤 Matra는 이를 그대로 두었으므로, Karkata는 금지된 연구의 산물이면서도 Pardis Dhyai에 남게 된 셈이다.",
+       "t_raw": "Abattouy가 죽은 뒤 Karkata는 그를 '수리'하려 했고, Tighnari가 이를 거두어 Pardis Dhyai에서 연구 조수로 삼았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아바투이가 죽은 뒤 카르카타는 그를 '수리'하려 했고, 타이나리가 이를 거두어 선나원에서 연구 조수로 삼았다."
+      },
+      {
+       "t_raw": "기계 생명체 연구가 금지된 상황에서 Karkata는 생명의 정의를 둘러싼 논쟁을 몸으로 보여 주는 존재인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "타이나리가 카르카타를 연구 조수로 받아들인 뒤 풍기관은 이를 그대로 두었으므로, 카르카타는 금지된 연구의 산물이면서도 선나원에 남게 된 셈이다."
+       "t": "기계 생명체 연구가 금지된 상황에서 카르카타는 생명의 정의를 둘러싼 논쟁을 몸으로 보여 주는 존재인 셈이다."
       }
      ],
      "sources": [
@@ -89,6 +95,14 @@
        "page": "Karkata",
        "revision": 851680,
        "section": "Profile",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile",
        "paragraph": "A9",
        "wiki_refs": []
       }
@@ -96,33 +110,32 @@
      "heading": null,
      "latin_left": [
       "NPC",
-      "Act",
       "Sumerian"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "During the day, it can be found in Pardis Dhyai's greenhouse in the form of a cube.",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Karkata is an NPC located at Pardis Dhyai. During the day, it can be found in Pardis Dhyai's greenhouse in the form of a cube.",
      "sentences": [
       {
-       "t_raw": "Karkata는 Pardis Dhyai에서 만날 수 있는 NPC로, 낮에는 온실 안에서 큐브 형태로 머무른다.",
+       "t_raw": "Karkata는 Pardis Dhyai에서 만나는 NPC다.",
        "interp": false,
        "dropped": false,
-       "t": "카르카타는 선나원에서 만날 수 있는 NPC로, 낮에는 온실 안에서 큐브 형태로 머무른다."
+       "t": "카르카타는 선나원에서 만나는 NPC다."
       },
       {
-       "t_raw": "Tighnari's Story Quest: Vulpes Zerda Chapter: Act I - The Unanswerable Problems를 마친 뒤에는 큐브에서 벗어나 밤에 온실 밖에서 상호 작용이 가능해진다.",
+       "t_raw": "**낮에는 Pardis Dhyai의 온실 안에서 큐브 형태**로 발견된다.",
        "interp": false,
        "dropped": false,
-       "t": "타이나리의 전설 임무: 사막여우의 장: Act I - 답이 없는 과제를 마친 뒤에는 큐브에서 벗어나 밤에 온실 밖에서 상호 작용이 가능해진다."
+       "t": "**낮에는 선나원의 온실 안에서 큐브 형태**로 발견된다."
       },
       {
-       "t_raw": "같은 장소에서 시간대에 따라 다른 모습으로 만나는 셈이다.",
-       "interp": true,
+       "t_raw": "Tighnari의 Story Quest: Vulpes Zerda Chapter: Act I - The Unanswerable Problems를 완료한 뒤에는 **밤에 큐브 형태에서 나와 온실 밖에서** 상호작용할 수 있다.",
+       "interp": false,
        "dropped": false,
-       "t": "같은 장소에서 시간대에 따라 다른 모습으로 만나는 셈이다."
+       "t": "타이나리의 전설 임무: 사막여우의 장: Act I - 답이 없는 과제를 완료한 뒤에는 **밤에 큐브 형태에서 나와 온실 밖에서** 상호작용할 수 있다."
       }
      ],
      "sources": [
@@ -167,537 +180,21 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Karkata was created by the researcher Abattouy in order to prove that mechanical beings were also true lifeforms.",
-     "sentences": [
-      {
-       "t_raw": "Karkata는 Sumeru의 연구자 Abattouy가 만든 기계로, Ruin Defender를 닮은 모습에 금빛과 흰색의 특별한 색을 띤다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카르카타는 수메르의 연구자 아바투이가 만든 기계로, 유적 방어자를 닮은 모습에 금빛과 흰색의 특별한 색을 띤다."
-      },
-      {
-       "t_raw": "Abattouy가 Karkata를 만든 것은 기계 생명체 역시 진짜 생명체임을 증명하기 위해서였으나, 과열된 다른 연구자들이 허용 범위를 넘어서면서 Akademiya가 기계 생명체 연구를 금지했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아바투이가 카르카타를 만든 것은 기계 생명체 역시 진짜 생명체임을 증명하기 위해서였으나, 과열된 다른 연구자들이 허용 범위를 넘어서면서 아카데미아가 기계 생명체 연구를 금지했다."
-      },
-      {
-       "t_raw": "창조자의 증명을 위해 태어난 존재가 연구 금지 속에서도 이어진 그 연구의 결과라는 점에서, Karkata 자체가 Abattouy의 신념을 보여주는 산물이라고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "창조자의 증명을 위해 태어난 존재가 연구 금지 속에서도 이어진 그 연구의 결과라는 점에서, 카르카타 자체가 아바투이의 신념을 보여주는 산물이라고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": null,
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile",
-       "paragraph": "A6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile > Appearance",
-       "paragraph": "A11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abattouy",
-       "revision": 845820,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "the machine had the mindset of a child and could only understand simple responses",
-     "sentences": [
-      {
-       "t_raw": "Abattouy는 Ley Lines를 너무 많이 수확하다 죽었고, 죽음을 이해하지 못한 Karkata는 그를 \"수리\"하려 애썼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아바투이는 지맥을 너무 많이 수확하다 죽었고, 죽음을 이해하지 못한 카르카타는 그를 \"수리\"하려 애썼다."
-      },
-      {
-       "t_raw": "그 결과 생긴 오염 지대를 조사하던 Traveler와 Tighnari가 Karkata를 발견했고, 이후 Tighnari가 연구 조수로 삼아 Pardis Dhyai로 데려왔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 결과 생긴 오염 지대를 조사하던 여행자와 타이나리가 카르카타를 발견했고, 이후 타이나리가 연구 조수로 삼아 선나원으로 데려왔다."
-      },
-      {
-       "t_raw": "어린아이 같은 마음가짐에 단순한 반응만 이해하는 존재지만, 그런 Karkata가 생명체라는 물음을 지니고 Pardis Dhyai에 남게 된 것이 이 NPC의 중요한 지점이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "어린아이 같은 마음가짐에 단순한 반응만 이해하는 존재지만, 그런 카르카타가 생명체라는 물음을 지니고 선나원에 남게 된 것이 이 NPC의 중요한 지점이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile",
-       "paragraph": "A8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile",
-       "paragraph": "A9",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile > Personality",
-       "paragraph": "A10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abattouy",
-       "revision": 845820,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abattouy",
-       "revision": 845820,
-       "section": "Profile",
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Foolish Fatuus"
-        }
-       ]
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "NPC"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Karkata was created by the researcher Abattouy in order to prove that mechanical beings were also true lifeforms.",
-     "sentences": [
-      {
-       "t_raw": "Karkata는 Sumerian 연구자 Abattouy가 **기계 생명체도 진짜 생명체임을 증명**하려 만든 존재다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카르카타는 Sumerian 연구자 아바투이가 **기계 생명체도 진짜 생명체임을 증명**하려 만든 존재다."
-      },
-      {
-       "t_raw": "Akademiya는 다른 연구자들이 규범을 넘어서자 기계 생명체 연구를 금지했고, Abattouy는 축출된 뒤에도 Ruin Defender와 닮은 Karkata를 살아 있게 하려 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카데미아는 다른 연구자들이 규범을 넘어서자 기계 생명체 연구를 금지했고, 아바투이는 축출된 뒤에도 유적 방어자와 닮은 카르카타를 살아 있게 하려 했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": null,
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile",
-       "paragraph": "A6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abattouy",
-       "revision": 845820,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": [
-      "Sumerian"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Abattouy was intending to gradually improve Karkata over time, first by attempting to make it learn how to make coffee which it appeared to have mastered.",
-     "sentences": [
-      {
-       "t_raw": "그는 Karkata를 조금씩 개량하려 했고, 먼저 커피 만드는 일을 익히게 해 Karkata가 이를 익힌 듯했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 카르카타를 조금씩 개량하려 했고, 먼저 커피 만드는 일을 익히게 해 카르카타가 이를 익힌 듯했다."
-      },
-      {
-       "t_raw": "이어 스스로 부품을 찾아 수리하는 프로그램과 **기본 생존 본능**을 더했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어 스스로 부품을 찾아 수리하는 프로그램과 **기본 생존 본능**을 더했다."
-      },
-      {
-       "t_raw": "다만 Karkata는 한정된 프로그램을 가진 프로토타입이라, 해당 프로그램이 없는 주제는 이해하기 어려워했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다만 카르카타는 한정된 프로그램을 가진 프로토타입이라, 해당 프로그램이 없는 주제는 이해하기 어려워했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile > Personality",
-       "paragraph": "A10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abattouy",
-       "revision": 845820,
-       "section": "Profile",
-       "paragraph": "M4",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "In order to make the most of his limited Mora, Abattouy began taking power from the Ley Lines by creating three generators and selling the failures to an Eremite named Kasim for some Mora.",
-     "sentences": [
-      {
-       "t_raw": "Mora가 부족하고 고립된 Abattouy는 Ley Lines 추출기 세 개를 동력원으로 삼았고, 실패한 추출기는 Eremite Kasim에게 팔았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "모라가 부족하고 고립된 아바투이는 지맥 추출기 세 개를 동력원으로 삼았고, 실패한 추출기는 도금 여단 카심에게 팔았다."
-      },
-      {
-       "t_raw": "그는 Ley Lines를 지나치게 뽑아냈으며, 영양실조 상태로 추출기에 몸이 압도된 가운데 심장 발작으로 사망했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 지맥을 지나치게 뽑아냈으며, 영양실조 상태로 추출기에 몸이 압도된 가운데 심장 발작으로 사망했다."
-      },
-      {
-       "t_raw": "Karkata는 곁에서 보았지만 추출기를 끄라는 요청을 이해하지 못했고, Abattouy는 끄는 프로그램을 넣지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카르카타는 곁에서 보았지만 추출기를 끄라는 요청을 이해하지 못했고, 아바투이는 끄는 프로그램을 넣지 않았다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abattouy",
-       "revision": 845820,
-       "section": "Profile",
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Foolish Fatuus"
-        }
-       ]
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Heart of the Machine",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Paimon doesn't feel like he's a bad person. He even changed out Karkata's broken parts. Why would he mess with Ley Lines?",
-     "sentences": [
-      {
-       "t_raw": "Ley Lines에서 비롯된 **오염 구역**에 Ruin Sentinels가 모여들었고, Traveler는 Adventurers' Guild의 의뢰를 받아 조사에 나섰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "지맥에서 비롯된 **오염 구역**에 유적 기계 병사가 모여들었고, 여행자는 모험가 길드의 의뢰를 받아 조사에 나섰다."
-      },
-      {
-       "t_raw": "우림 안의 일이었기에 Tighnari도 원인을 조사했고, 그 과정에서 Karkata를 발견했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "우림 안의 일이었기에 타이나리도 원인을 조사했고, 그 과정에서 카르카타를 발견했다."
-      },
-      {
-       "t_raw": "Karkata는 죽은 창조자를 호송대에서 훔친 부품으로 **'수리'**하려 했으며, Paimon은 Abattouy가 나쁜 사람 같지 않다며 왜 Ley Lines를 건드렸는지 의아해했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카르카타는 죽은 창조자를 호송대에서 훔친 부품으로 **'수리'**하려 했으며, 페이몬은 아바투이가 나쁜 사람 같지 않다며 왜 지맥을 건드렸는지 의아해했다."
-      },
-      {
-       "t_raw": "이를 함께 보면 이 사건의 중심에는 창조자와 Karkata의 관계가 있다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이를 함께 보면 이 사건의 중심에는 창조자와 카르카타의 관계가 있다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile",
-       "paragraph": "A8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Heart of the Machine",
-       "quest_ko": "기계의 마음",
-       "version": "3.0",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — 기계의 마음",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Heart of the Machine",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I'm glad. Karkata, did you know? Yesterday, I dreamed that you could talk.",
-     "sentences": [
-      {
-       "t_raw": "Karkata는 Traveler와 Tighnari를 Abattouy의 실험실로 데려갔고, 두 사람은 Karkata가 부품을 훔친 이유를 알게 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카르카타는 여행자와 타이나리를 아바투이의 실험실로 데려갔고, 두 사람은 카르카타가 부품을 훔친 이유를 알게 되었다."
-      },
-      {
-       "t_raw": "Karkata는 Abattouy를 '수리'하려 했으나 창조자를 위해 자신을 돌보지 않은 탓에 작동을 멈췄다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카르카타는 아바투이를 '수리'하려 했으나 창조자를 위해 자신을 돌보지 않은 탓에 작동을 멈췄다."
-      },
-      {
-       "t_raw": "Abattouy는 Karkata에게 어제 네가 말을 할 수 있는 꿈을 꿨다며 기뻐했고, 무엇을 하려는지 아느냐고 물었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아바투이는 카르카타에게 어제 네가 말을 할 수 있는 꿈을 꿨다며 기뻐했고, 무엇을 하려는지 아느냐고 물었다."
-      },
-      {
-       "t_raw": "Tighnari는 Abattouy의 연구가 Akademiya에 넘어가지 않도록 서류를 챙기고 실험실을 불태운 뒤, Karkata를 고쳐 Pardis Dhyai로 데려갔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "타이나리는 아바투이의 연구가 아카데미아에 넘어가지 않도록 서류를 챙기고 실험실을 불태운 뒤, 카르카타를 고쳐 선나원으로 데려갔다."
-      },
-      {
-       "t_raw": "말을 할 수 있는 Karkata를 꿈꾼 Abattouy의 기대와 그를 '수리'하려다 멈춘 Karkata의 행동을 함께 보면, 실험실의 사건은 창조자의 바람과 기계의 실제 모습이 겹쳐진 순간으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "말을 할 수 있는 카르카타를 꿈꾼 아바투이의 기대와 그를 '수리'하려다 멈춘 카르카타의 행동을 함께 보면, 실험실의 사건은 창조자의 바람과 기계의 실제 모습이 겹쳐진 순간으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile",
-       "paragraph": "A9",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Heart of the Machine",
-       "quest_ko": "기계의 마음",
-       "version": "3.0",
-       "speaker": "Abattouy"
-      },
-      {
-       "kind": "quest",
-       "quest": "Heart of the Machine",
-       "quest_ko": "기계의 마음",
-       "version": "3.0",
-       "speaker": "Abattouy"
-      }
-     ],
-     "heading": "작중 행적 — 기계의 마음",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Garden Memories",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Alright then! We'll find Tighnari tomorrow and tell him not to disassemble Karkata!",
-     "sentences": [
-      {
-       "t_raw": "Garden Memories에서 Paimon은 다음 날 Tighnari를 찾아가 Karkata를 **분해**하지 말라고 말하자고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "화원의 기억에서 페이몬은 다음 날 타이나리를 찾아가 카르카타를 **분해**하지 말라고 말하자고 한다."
-      },
-      {
-       "t_raw": "Paimon은 Karkata가 Akademiya로 돌려보내질지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 카르카타가 아카데미아로 돌려보내질지 묻는다."
-      },
-      {
-       "t_raw": "Paimon은 Tighnari가 Karkata를 분해하지 않았는지 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 타이나리가 카르카타를 분해하지 않았는지 되묻는다."
-      },
-      {
-       "t_raw": "이런 물음에는 Karkata의 거취를 둘러싼 불안이 드러난 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 물음에는 카르카타의 거취를 둘러싼 불안이 드러난 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Garden Memories",
-       "quest_ko": "화원의 기억",
-       "version": "3.0",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Garden Memories",
-       "quest_ko": "화원의 기억",
-       "version": "3.0",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Garden Memories",
-       "quest_ko": "화원의 기억",
-       "version": "3.0",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — 화원의 기억",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Garden Memories",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Wait, you just said \"life form.\" You recognize Karkata as a true living being now?",
-     "sentences": [
-      {
-       "t_raw": "Tighnari는 Karkata가 Abattouy를 '수리'하려 한 일을 설명하기 어렵다며 가능성이 있다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "타이나리는 카르카타가 아바투이를 '수리'하려 한 일을 설명하기 어렵다며 가능성이 있다고 말한다."
-      },
-      {
-       "t_raw": "Paimon은 Tighnari가 'life form'이라고 한 말을 되짚어 Karkata를 **진짜 생명체**로 인정한 것이냐고 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 타이나리가 'life form'이라고 한 말을 되짚어 카르카타를 **진짜 생명체**로 인정한 것이냐고 묻는다."
-      },
-      {
-       "t_raw": "이는 Karkata를 생명체로 볼 수 있는지의 물음이 드러난 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 카르카타를 생명체로 볼 수 있는지의 물음이 드러난 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Garden Memories",
-       "quest_ko": "화원의 기억",
-       "version": "3.0",
-       "speaker": "Tighnari"
-      },
-      {
-       "kind": "quest",
-       "quest": "Garden Memories",
-       "quest_ko": "화원의 기억",
-       "version": "3.0",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — 화원의 기억",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Garden Memories",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A9.",
      "quote": "The Matra eventually discovered Karkata there, but Tighnari stated that he had taken it on as a research assistant and they left it alone.",
      "sentences": [
       {
-       "t_raw": "Tighnari는 Karkata를 수리해 Pardis Dhyai로 데려갔고, Matra가 Karkata를 발견했을 때 **연구 조수**로 삼았다고 말해 Matra는 그대로 두었다.",
+       "t_raw": "Tighnari는 Karkata를 수리해 Pardis Dhyai로 데려왔다.",
        "interp": false,
        "dropped": false,
-       "t": "타이나리는 카르카타를 수리해 선나원으로 데려갔고, 풍기관이 카르카타를 발견했을 때 **연구 조수**로 삼았다고 말해 풍기관은 그대로 두었다."
+       "t": "타이나리는 카르카타를 수리해 선나원으로 데려왔다."
       },
       {
-       "t_raw": "Tighnari's Story Quest: Vulpes Zerda Chapter: Act I - The Unanswerable Problems를 마친 뒤 Karkata는 밤에 큐브 형태에서 나와 온실 밖에서 만날 수 있다.",
+       "t_raw": "Matra가 그곳에서 Karkata를 발견했지만, Tighnari가 자신이 Karkata를 **연구 조수**로 맡았다고 말하자 Matra는 Karkata를 그대로 두었다.",
        "interp": false,
        "dropped": false,
-       "t": "타이나리의 전설 임무: 사막여우의 장: Act I - 답이 없는 과제를 마친 뒤 카르카타는 밤에 큐브 형태에서 나와 온실 밖에서 만날 수 있다."
-      },
-      {
-       "t_raw": "이는 Karkata가 Pardis Dhyai에 남게 된 결과로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 카르카타가 선나원에 남게 된 결과로 볼 수 있다."
+       "t": "풍기관이 그곳에서 카르카타를 발견했지만, 타이나리가 자신이 카르카타를 **연구 조수**로 맡았다고 말하자 풍기관은 카르카타를 그대로 두었다."
       }
      ],
      "sources": [
@@ -708,105 +205,63 @@
        "section": "Profile",
        "paragraph": "A9",
        "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by A6, M1 and M4; the interpretation is reasonable.",
+     "quote": "Karkata was created by the researcher Abattouy in order to prove that mechanical beings were also true lifeforms.",
+     "sentences": [
+      {
+       "t_raw": "Karkata는 Sumerian 연구자 Abattouy가 만든 기계다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카르카타는 Sumerian 연구자 아바투이가 만든 기계다."
       },
+      {
+       "t_raw": "Abattouy는 **기계 생명체도 진정한 생명체임을 증명하려고** Karkata를 만들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아바투이는 **기계 생명체도 진정한 생명체임을 증명하려고** 카르카타를 만들었다."
+      },
+      {
+       "t_raw": "그러나 다른 연구자들이 수용 가능한 규범을 넘어서면서 Akademiya는 **기계 생명체 연구를 금지했다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 다른 연구자들이 수용 가능한 규범을 넘어서면서 아카데미아는 **기계 생명체 연구를 금지했다**."
+      },
+      {
+       "t_raw": "Abattouy는 퇴출 이후에도 연구를 이어 갔고, Akademiya에서 만난 이들과 연락이 끊겼으며 Tighnari도 그중 하나였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아바투이는 퇴출 이후에도 연구를 이어 갔고, 아카데미아에서 만난 이들과 연락이 끊겼으며 타이나리도 그중 하나였다."
+      },
+      {
+       "t_raw": "기계 생명체 연구가 금지된 상황에서 Karkata를 살아 있게 만들려고 개조한 것은 Abattouy가 자신의 연구를 포기하지 않았음을 보여 주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "기계 생명체 연구가 금지된 상황에서 카르카타를 살아 있게 만들려고 개조한 것은 아바투이가 자신의 연구를 포기하지 않았음을 보여 주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Karkata",
        "revision": 851680,
        "section": null,
-       "paragraph": "A2",
+       "paragraph": "A3",
        "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 화원의 기억",
-     "latin_left": [
-      "Act"
-     ]
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Later, he implemented a program that allowed Karkata to look for parts on its own to repair itself.",
-     "sentences": [
-      {
-       "t_raw": "Abattouy는 Karkata를 점차 개선하려 했고, 먼저 커피를 만드는 법을 익히게 했으며 Karkata는 이를 익힌 듯했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아바투이는 카르카타를 점차 개선하려 했고, 먼저 커피를 만드는 법을 익히게 했으며 카르카타는 이를 익힌 듯했다."
       },
-      {
-       "t_raw": "이후 **스스로 부품을 찾아 수리하는 프로그램**을 넣었고, 손상되거나 에너지가 부족할 때 스스로를 유지하도록 기본 생존 본능을 부여했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이후 **스스로 부품을 찾아 수리하는 프로그램**을 넣었고, 손상되거나 에너지가 부족할 때 스스로를 유지하도록 기본 생존 본능을 부여했다."
-      },
-      {
-       "t_raw": "이는 Karkata가 스스로를 돌보게 하려는 설계로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 카르카타가 스스로를 돌보게 하려는 설계로 보인다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Karkata",
        "revision": 851680,
        "section": "Profile",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abattouy",
-       "revision": 845820,
-       "section": "Profile",
-       "paragraph": "M4",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "능력",
-     "latin_left": []
-    },
-    {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "However, being a prototype, Karkata has limited programs and has trouble comprehending some subjects unless installed with a respective program.",
-     "sentences": [
-      {
-       "t_raw": "그러나 Karkata는 프로토타입이라 프로그램이 제한적이었고, 해당 프로그램이 설치되지 않은 주제는 이해하는 데 어려움을 겪었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 카르카타는 프로토타입이라 프로그램이 제한적이었고, 해당 프로그램이 설치되지 않은 주제는 이해하는 데 어려움을 겪었다."
-      },
-      {
-       "t_raw": "아이의 사고방식을 지녀 간단한 반응만 이해할 수 있었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아이의 사고방식을 지녀 간단한 반응만 이해할 수 있었다."
-      },
-      {
-       "t_raw": "Ley Line extractors의 작동을 멈추는 프로그램은 설치되지 않아 Karkata는 그 장치를 끄지 못했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "지맥 extractors의 작동을 멈추는 프로그램은 설치되지 않아 카르카타는 그 장치를 끄지 못했다."
-      },
-      {
-       "t_raw": "이러한 점을 종합하면 Karkata의 인식과 프로그램은 **아이 수준의 이해**에 머문 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이러한 점을 종합하면 카르카타의 인식과 프로그램은 **아이 수준의 이해**에 머문 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile > Personality",
-       "paragraph": "A10",
+       "paragraph": "A6",
        "wiki_refs": []
       },
       {
@@ -817,44 +272,6 @@
        "paragraph": "M1",
        "wiki_refs": []
       },
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile",
-       "paragraph": "A7",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "능력",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Karkata views Abattouy with high regard due to it being created by him.",
-     "sentences": [
-      {
-       "t_raw": "Abattouy는 Karkata를 만든 인물이며, Karkata는 그를 높게 평가한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아바투이는 카르카타를 만든 인물이며, 카르카타는 그를 높게 평가한다."
-      },
-      {
-       "t_raw": "Abattouy의 실험실에서 Karkata는 그를 수리하려 했고, 창조자를 위해 자신을 돌보지 않은 채 작동을 멈췄다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아바투이의 실험실에서 카르카타는 그를 수리하려 했고, 창조자를 위해 자신을 돌보지 않은 채 작동을 멈췄다."
-      },
-      {
-       "t_raw": "자신을 만든 존재를 높이 여기는 태도가, 자기 몸을 돌보지 않고 Abattouy를 수리하려는 행동으로 이어진 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "자신을 만든 존재를 높이 여기는 태도가, 자기 몸을 돌보지 않고 아바투이를 수리하려는 행동으로 이어진 것으로 보인다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Abattouy",
@@ -865,6 +282,58 @@
       },
       {
        "kind": "wiki",
+       "page": "Abattouy",
+       "revision": 845820,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Sumerian"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by A10, A11, M1 and M4; the interpretation is reasonable.",
+     "quote": "Abattouy was determined to bring Karkata to life, as the machine had the mindset of a child and could only understand simple responses.",
+     "sentences": [
+      {
+       "t_raw": "Karkata는 특유의 금·백색 도색을 지닌 Ruin Defender다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카르카타는 특유의 금·백색 도색을 지닌 유적 방어자다."
+      },
+      {
+       "t_raw": "Karkata는 Ruin Defender를 닮은 기계로 만들어졌고, 아이 같은 사고방식을 지녀 간단한 반응만 이해할 수 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카르카타는 유적 방어자를 닮은 기계로 만들어졌고, 아이 같은 사고방식을 지녀 간단한 반응만 이해할 수 있었다."
+      },
+      {
+       "t_raw": "프로토타입인 Karkata는 프로그램이 제한되어 있어, 해당 프로그램이 설치되지 않은 주제는 이해하는 데 어려움을 겪는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프로토타입인 카르카타는 프로그램이 제한되어 있어, 해당 프로그램이 설치되지 않은 주제는 이해하는 데 어려움을 겪는다."
+      },
+      {
+       "t_raw": "Abattouy는 Karkata가 손상되거나 에너지가 부족할 때 스스로를 유지하도록 기본 생존 본능을 주는 개조를 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아바투이는 카르카타가 손상되거나 에너지가 부족할 때 스스로를 유지하도록 기본 생존 본능을 주는 개조를 했다."
+      },
+      {
+       "t_raw": "아이 같은 이해력과 제한된 프로그램, 스스로를 유지하려는 본능은 Karkata가 Abattouy의 실험과 개조를 거치며 형성된 존재임을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아이 같은 이해력과 제한된 프로그램, 스스로를 유지하려는 본능은 카르카타가 아바투이의 실험과 개조를 거치며 형성된 존재임을 보여 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
        "page": "Karkata",
        "revision": 851680,
        "section": "Profile > Personality",
@@ -875,37 +344,59 @@
        "kind": "wiki",
        "page": "Karkata",
        "revision": 851680,
+       "section": "Profile > Appearance",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abattouy",
+       "revision": 845820,
        "section": "Profile",
-       "paragraph": "A9",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abattouy",
+       "revision": 845820,
+       "section": "Profile",
+       "paragraph": "M4",
        "wiki_refs": []
       }
      ],
-     "heading": "인간관계",
+     "heading": "정체와 배경",
      "latin_left": []
     },
     {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Tighnari stated that he had taken it on as a research assistant and they left it alone.",
+     "section": "작중 행적 — Abattouy의 실험",
+     "status": "accepted",
+     "note": "All sentences are supported by A7, M4, Q3 and Q5; the interpretation is reasonable.",
+     "quote": "Later, he implemented a program that allowed Karkata to look for parts on its own to repair itself.",
      "sentences": [
       {
-       "t_raw": "Tighnari는 Karkata를 수리해 Pardis Dhyai로 데려갔다.",
+       "t_raw": "Abattouy는 Karkata를 점차 개선하려 했고, 먼저 Karkata가 **커피 제조**를 배우도록 시도했으며 Karkata는 커피 만드는 법을 익힌 듯했다.",
        "interp": false,
        "dropped": false,
-       "t": "타이나리는 카르카타를 수리해 선나원으로 데려갔다."
+       "t": "아바투이는 카르카타를 점차 개선하려 했고, 먼저 카르카타가 **커피 제조**를 배우도록 시도했으며 카르카타는 커피 만드는 법을 익힌 듯했다."
       },
       {
-       "t_raw": "이후 Matra가 Karkata를 발견했지만, Tighnari가 Karkata를 **연구 조수**로 맡았다고 말하자 Matra는 Karkata를 그대로 두었다.",
+       "t_raw": "Abattouy는 이어 스스로 부품을 찾아 **자신을 수리**하는 프로그램과, 손상되거나 에너지가 부족할 때 자신을 유지하는 기본 생존 본능을 넣었다.",
        "interp": false,
        "dropped": false,
-       "t": "이후 풍기관이 카르카타를 발견했지만, 타이나리가 카르카타를 **연구 조수**로 맡았다고 말하자 풍기관은 카르카타를 그대로 두었다."
+       "t": "아바투이는 이어 스스로 부품을 찾아 **자신을 수리**하는 프로그램과, 손상되거나 에너지가 부족할 때 자신을 유지하는 기본 생존 본능을 넣었다."
       },
       {
-       "t_raw": "Karkata를 연구 조수로 둔다는 Tighnari의 설명은 Matra가 Karkata를 데려가지 않게 한 근거가 된 셈이다.",
+       "t_raw": "Abattouy는 Karkata에게 어제 네가 말을 하는 꿈을 꿨다며 기뻐했고, 무엇을 하려는지 아느냐고 물었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아바투이는 카르카타에게 어제 네가 말을 하는 꿈을 꿨다며 기뻐했고, 무엇을 하려는지 아느냐고 물었다."
+      },
+      {
+       "t_raw": "이는 Karkata를 조금씩 개선하며 말을 할 수 있기를 바란 제작자의 기대를 보여 주는 대목으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "카르카타를 연구 조수로 둔다는 타이나리의 설명은 풍기관이 카르카타를 데려가지 않게 한 근거가 된 셈이다."
+       "t": "이는 카르카타를 조금씩 개선하며 말을 할 수 있기를 바란 제작자의 기대를 보여 주는 대목으로 보인다."
       }
      ],
      "sources": [
@@ -914,96 +405,159 @@
        "page": "Karkata",
        "revision": 851680,
        "section": "Profile",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abattouy",
+       "revision": 845820,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Heart of the Machine",
+       "quest_ko": "기계의 마음",
+       "version": "3.0",
+       "speaker": "Abattouy"
+      },
+      {
+       "kind": "quest",
+       "quest": "Heart of the Machine",
+       "quest_ko": "기계의 마음",
+       "version": "3.0",
+       "speaker": "Abattouy"
+      }
+     ],
+     "heading": "작중 행적 — 아바투이의 실험",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Abattouy의 실험",
+     "status": "accepted",
+     "note": "All sentences are supported by A7, M2 and Q1; sentence 4 is a reasonable interpretation.",
+     "quote": "a malnourished Abattouy died when his heart acted up as his body became overwhelmed by the energy from Ley Line energy extractor",
+     "sentences": [
+      {
+       "t_raw": "Abattouy는 연구를 이어갈 Mora가 필요해 Ley Line 추출기 세 대를 만들었고, Ley Line을 한계를 넘도록 추출했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아바투이는 연구를 이어갈 모라가 필요해 지맥 추출기 세 대를 만들었고, 지맥을 한계를 넘도록 추출했다."
+      },
+      {
+       "t_raw": "그는 심장 약을 지출에서 빼고 평소보다 적게 먹은 듯했으며, 영양 실조 상태에서 Ley Line 에너지에 몸이 압도되어 심장이 문제를 일으키자 죽었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 심장 약을 지출에서 빼고 평소보다 적게 먹은 듯했으며, 영양 실조 상태에서 지맥 에너지에 몸이 압도되어 심장이 문제를 일으키자 죽었다."
+      },
+      {
+       "t_raw": "Karkata는 곁에서 지켜보았지만 끄라는 요청을 이해하지 못했고, 장치를 끄는 프로그램도 없어 끄지 못했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카르카타는 곁에서 지켜보았지만 끄라는 요청을 이해하지 못했고, 장치를 끄는 프로그램도 없어 끄지 못했다."
+      },
+      {
+       "t_raw": "Paimon은 그가 Karkata의 고장 난 부품을 바꿔 줄 정도로 나쁜 사람 같지 않다며 왜 Ley Line을 건드렸는지 의아해했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 그가 카르카타의 고장 난 부품을 바꿔 줄 정도로 나쁜 사람 같지 않다며 왜 지맥을 건드렸는지 의아해했다."
+      },
+      {
+       "t_raw": "연구를 이어가려 한 **전력 확보**가 제작자의 죽음으로 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "연구를 이어가려 한 **전력 확보**가 제작자의 죽음으로 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abattouy",
+       "revision": 845820,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Foolish Fatuus"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Heart of the Machine",
+       "quest_ko": "기계의 마음",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 아바투이의 실험",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Abattouy의 실험",
+     "status": "accepted",
+     "note": "All supported by A8, A9, M2 and Q2.",
+     "quote": "they learned why Karkata had been stealing parts and watched as it tried to repair Abattouy",
+     "sentences": [
+      {
+       "t_raw": "Abattouy가 죽은 뒤 Karkata는 죽음의 개념을 이해하지 못한 채 지나가는 호송대에서 빼낸 기계 부품으로 그를 '수리'하려 했지만 허사였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아바투이가 죽은 뒤 카르카타는 죽음의 개념을 이해하지 못한 채 지나가는 호송대에서 빼낸 기계 부품으로 그를 '수리'하려 했지만 허사였다."
+      },
+      {
+       "t_raw": "Ley Line 장치들은 많은 Ruin Sentinels을 끌어들여 그 에너지를 쓰게 해 Withering과 다른 특수한 오염 구역을 만들었고, 그 결과 Traveler는 Adventurers' Guild의 의뢰를 받아 조사에 나섰고, 우림에 있던 Tighnari도 원인을 조사해 이들은 Karkata를 발견했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지맥 장치들은 많은 유적 기계 병사를 끌어들여 그 에너지를 쓰게 해 죽음의 땅과 다른 특수한 오염 구역을 만들었고, 그 결과 여행자는 모험가 길드의 의뢰를 받아 조사에 나섰고, 우림에 있던 타이나리도 원인을 조사해 이들은 카르카타를 발견했다."
+      },
+      {
+       "t_raw": "Karkata는 이들을 Abattouy의 실험실로 데려갔고, 그들은 Karkata가 부품을 훔친 이유를 알게 되었으며, Karkata가 제작자를 위해 자신을 돌보지 않은 채 Abattouy를 수리하려다 정지하는 모습을 지켜보았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카르카타는 이들을 아바투이의 실험실로 데려갔고, 그들은 카르카타가 부품을 훔친 이유를 알게 되었으며, 카르카타가 제작자를 위해 자신을 돌보지 않은 채 아바투이를 수리하려다 정지하는 모습을 지켜보았다."
+      },
+      {
+       "t_raw": "Tighnari는 Karkata의 '수리' 시도를 설명하기 어렵다면서도 그런 가능성은 있다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이나리는 카르카타의 '수리' 시도를 설명하기 어렵다면서도 그런 가능성은 있다고 말했다."
+      },
+      {
+       "t_raw": "Karkata의 행동은 죽음을 이해하지 못한 채 제작자를 '수리'해야 할 대상으로 본 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "카르카타의 행동은 죽음을 이해하지 못한 채 제작자를 '수리'해야 할 대상으로 본 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile",
        "paragraph": "A9",
        "wiki_refs": []
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Alright then! We'll find Tighnari tomorrow and tell him not to disassemble Karkata!",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 Karkata가 Akademiya로 돌려보내질지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 카르카타가 아카데미아로 돌려보내질지 묻는다."
       },
-      {
-       "t_raw": "Paimon은 Tighnari가 Karkata를 **진짜 생명체로 인정하는지** 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 타이나리가 카르카타를 **진짜 생명체로 인정하는지** 묻는다."
-      },
-      {
-       "t_raw": "Paimon은 Tighnari에게 Karkata를 **분해하지 말라고** 전하자고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 타이나리에게 카르카타를 **분해하지 말라고** 전하자고 말한다."
-      },
-      {
-       "t_raw": "이는 Karkata의 처분과 생명체 여부를 함께 신경 쓰는 태도로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 카르카타의 처분과 생명체 여부를 함께 신경 쓰는 태도로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Garden Memories",
-       "quest_ko": "화원의 기억",
-       "version": "3.0",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Garden Memories",
-       "quest_ko": "화원의 기억",
-       "version": "3.0",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Garden Memories",
-       "quest_ko": "화원의 기억",
-       "version": "3.0",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The possibility exists is all. It's hard to explain Karkata's efforts to \"repair\" Abattouy.",
-     "sentences": [
-      {
-       "t_raw": "Karkata는 Abattouy가 정지해 달라고 요청했을 때 그 뜻을 이해하지 못했고, Abattouy가 죽은 뒤에도 죽음의 개념을 알지 못한 채 부품을 모아 그를 '수리'하려 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카르카타는 아바투이가 정지해 달라고 요청했을 때 그 뜻을 이해하지 못했고, 아바투이가 죽은 뒤에도 죽음의 개념을 알지 못한 채 부품을 모아 그를 '수리'하려 했다."
-      },
-      {
-       "t_raw": "Tighnari도 Karkata가 Abattouy를 '수리'하려 한 노력을 설명하기 어렵다고 말하면서, 가능성은 있을 뿐이라고 표현했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "타이나리도 카르카타가 아바투이를 '수리'하려 한 노력을 설명하기 어렵다고 말하면서, 가능성은 있을 뿐이라고 표현했다."
-      },
-      {
-       "t_raw": "Karkata가 아이 수준의 사고와 제한된 프로그램을 지녔다는 점을 함께 놓으면, 이 '수리'는 **죽음을 모르는 인식의 한계**가 빚은 시도로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "카르카타가 아이 수준의 사고와 제한된 프로그램을 지녔다는 점을 함께 놓으면, 이 '수리'는 **죽음을 모르는 인식의 한계**가 빚은 시도로 보인다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Abattouy",
@@ -1023,128 +577,37 @@
        "quest_ko": "화원의 기억",
        "version": "3.0",
        "speaker": "Tighnari"
-      },
-      {
-       "kind": "wiki",
-       "page": "Abattouy",
-       "revision": 845820,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile > Personality",
-       "paragraph": "A10",
-       "wiki_refs": []
       }
      ],
-     "heading": "떡밥과 수수께끼",
+     "heading": "작중 행적 — 아바투이의 실험",
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Wait, you just said \"life form.\" You recognize Karkata as a true living being now?",
+     "section": "작중 행적 — Pardis Dhyai",
+     "status": "accepted",
+     "note": "All supported by A1, A2 and A9.",
+     "quote": "he repaired Karkata and took him to Pardis Dhyai. The Matra eventually discovered Karkata there, but Tighnari stated that he had taken it on as a research assistant and they left it alone.",
      "sentences": [
       {
-       "t_raw": "Abattouy는 Karkata를 기계 생명체도 진짜 생명체임을 증명하기 위해 만들었지만, Karkata는 아직 아이 수준에 머문 프로토타입이라 제한된 프로그램을 지녔고 일부 주제를 이해하는 데 어려움을 겪었다.",
+       "t_raw": "Tighnari가 Abattouy의 연구 자료 일부를 챙긴 뒤 연구실을 불태우고, Karkata를 수리해 Pardis Dhyai로 데려왔다.",
        "interp": false,
        "dropped": false,
-       "t": "아바투이는 카르카타를 기계 생명체도 진짜 생명체임을 증명하기 위해 만들었지만, 카르카타는 아직 아이 수준에 머문 프로토타입이라 제한된 프로그램을 지녔고 일부 주제를 이해하는 데 어려움을 겪었다."
+       "t": "타이나리가 아바투이의 연구 자료 일부를 챙긴 뒤 연구실을 불태우고, 카르카타를 수리해 선나원으로 데려왔다."
       },
       {
-       "t_raw": "다른 연구자들이 받아들일 수 있는 규범을 넘어서자 Akademiya는 기계 생명체 연구를 금지했고, Paimon은 Karkata를 이제 진짜 생명체로 인정하는지 묻는다.",
+       "t_raw": "Karkata는 낮에는 온실 안 **큐브 형태**로 있다가, Tighnari의 Story Quest: Vulpes Zerda Chapter: Act I - The Unanswerable Problems를 완료하면 밤에는 온실 밖으로 나와 대화할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "다른 연구자들이 받아들일 수 있는 규범을 넘어서자 아카데미아는 기계 생명체 연구를 금지했고, 페이몬은 카르카타를 이제 진짜 생명체로 인정하는지 묻는다."
+       "t": "카르카타는 낮에는 온실 안 **큐브 형태**로 있다가, 타이나리의 전설 임무: 사막여우의 장: Act I - 답이 없는 과제를 완료하면 밤에는 온실 밖으로 나와 대화할 수 있다."
       },
       {
-       "t_raw": "창조자의 목적과 Karkata의 미숙한 인식 사이의 간극은, 기계 생명체를 어디까지 생명체로 볼 수 있는지라는 **남은 물음**으로 이어진다.",
-       "interp": true,
+       "t_raw": "Matra가 Pardis Dhyai에서 Karkata를 발견했으나, Tighnari가 이를 **연구 조수**로 데리고 있다고 말해 내버려 두었다.",
+       "interp": false,
        "dropped": false,
-       "t": "창조자의 목적과 카르카타의 미숙한 인식 사이의 간극은, 기계 생명체를 어디까지 생명체로 볼 수 있는지라는 **남은 물음**으로 이어진다."
+       "t": "풍기관이 선나원에서 카르카타를 발견했으나, 타이나리가 이를 **연구 조수**로 데리고 있다고 말해 내버려 두었다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile",
-       "paragraph": "A6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abattouy",
-       "revision": 845820,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile > Personality",
-       "paragraph": "A10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Garden Memories",
-       "quest_ko": "화원의 기억",
-       "version": "3.0",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Karkata is a Ruin Defender with a special gold and white color scheme.",
-     "sentences": [
-      {
-       "t_raw": "Karkata는 특별한 **금빛과 흰색** 배색을 한 Ruin Defender다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카르카타는 특별한 **금빛과 흰색** 배색을 한 유적 방어자다."
-      },
-      {
-       "t_raw": "낮에는 Pardis Dhyai의 온실에서 **큐브 형태**로 머문다.",
-       "interp": false,
-       "dropped": false,
-       "t": "낮에는 선나원의 온실에서 **큐브 형태**로 머문다."
-      },
-      {
-       "t_raw": "Tighnari's Story Quest: Vulpes Zerda Chapter: Act I - The Unanswerable Problems를 마치면 밤에는 큐브에서 나와 온실 밖에서 만날 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "타이나리의 전설 임무: 사막여우의 장: Act I - 답이 없는 과제를 마치면 밤에는 큐브에서 나와 온실 밖에서 만날 수 있다."
-      },
-      {
-       "t_raw": "낮의 큐브 형태와 밤의 모습은 시간대에 따라 나뉜 같은 존재의 두 가지 상태로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "낮의 큐브 형태와 밤의 모습은 시간대에 따라 나뉜 같은 존재의 두 가지 상태로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Karkata",
-       "revision": 851680,
-       "section": "Profile > Appearance",
-       "paragraph": "A11",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Karkata",
@@ -1160,33 +623,175 @@
        "section": null,
        "paragraph": "A2",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile",
+       "paragraph": "A9",
+       "wiki_refs": []
       }
      ],
-     "heading": "여담",
+     "heading": "작중 행적 — 선나원",
      "latin_left": [
       "Act"
      ]
     },
     {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Karkata: Kalu! Kalu!",
+     "section": "작중 행적 — Pardis Dhyai",
+     "status": "accepted",
+     "note": "Sentence 1 asserts Paimon felt relief and that it was thanks to the research-assistant arrangement. Q10 is only a stuttering question, so the English gives no relief, and no causal link is given.",
+     "quote": "Y—You didn't disassemble Karkata?",
      "sentences": [
       {
-       "t_raw": "밤에 Karkata는 **Kalu!** 같은 소리를 낸다.",
+       "t_raw": "Paimon은 Tighnari가 Karkata를 해체하지 않도록 미리 말해야 한다고 했고, Karkata가 Akademiya로 돌려보내질지도 모른다고 걱정했다.",
        "interp": false,
        "dropped": false,
-       "t": "밤에 카르카타는 **Kalu!** 같은 소리를 낸다."
+       "t": "페이몬은 타이나리가 카르카타를 해체하지 않도록 미리 말해야 한다고 했고, 카르카타가 아카데미아로 돌려보내질지도 모른다고 걱정했다."
       },
       {
-       "t_raw": "들뜬 상태에서는 'Kalu! Kalu!'가, 혼란스러운 상태에서는 'Kulilu?'가, 기쁜 상태에서는 'Kalu!'가 대사로 제시된다.",
-       "interp": false,
+       "t_raw": "Tighnari를 만난 Paimon이 \"Y—You didn't disassemble Karkata?\"라며 조마조마하게 Karkata가 해체되지 않았는지 확인한 것은, 그녀가 Karkata의 안위를 신경 썼던 것으로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "들뜬 상태에서는 'Kalu! Kalu!'가, 혼란스러운 상태에서는 'Kulilu?'가, 기쁜 상태에서는 'Kalu!'가 대사로 제시된다."
+       "repaired": true,
+       "t": "타이나리를 만난 페이몬이 \"Y—You didn't disassemble 카르카타?\"라며 조마조마하게 카르카타가 해체되지 않았는지 확인한 것은, 그녀가 카르카타의 안위를 신경 썼던 것으로 보인다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 선나원",
+     "latin_left": [
+      "You"
+     ]
+    },
+    {
+     "section": "능력과 성격",
+     "status": "accepted",
+     "note": "All supported by A10 and M4; sentence 4 is a fair interpretation.",
+     "quote": "Karkata views Abattouy with high regard due to it being created by him.",
+     "sentences": [
+      {
+       "t_raw": "Karkata는 Abattouy가 만든 **프로토타입**으로, 설치된 프로그램의 범위가 정해져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카르카타는 아바투이가 만든 **프로토타입**으로, 설치된 프로그램의 범위가 정해져 있다."
+      },
+      {
+       "t_raw": "특정 주제는 관련 프로그램이 추가로 설치되지 않으면 이해하기 어려운 듯하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정 주제는 관련 프로그램이 추가로 설치되지 않으면 이해하기 어려운 듯하다."
+      },
+      {
+       "t_raw": "Abattouy는 Karkata가 **손상되거나 에너지가 부족할 때 스스로를 돌볼 수 있도록 생존 본능**을 추가했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아바투이는 카르카타가 **손상되거나 에너지가 부족할 때 스스로를 돌볼 수 있도록 생존 본능**을 추가했다."
+      },
+      {
+       "t_raw": "Karkata는 이런 생존 본능과는 별개로, 자신을 만들어준 Abattouy를 높이 평가한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카르카타는 이런 생존 본능과는 별개로, 자신을 만들어준 아바투이를 높이 평가한다."
+      },
+      {
+       "t_raw": "스스로를 지키라는 설정과 창조자를 우선하는 인식이 Karkata 안에 공존하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스스로를 지키라는 설정과 창조자를 우선하는 인식이 카르카타 안에 공존하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile > Personality",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abattouy",
+       "revision": 845820,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력과 성격",
+     "latin_left": []
+    },
+    {
+     "section": "능력과 성격",
+     "status": "accepted",
+     "note": "The utterances match A12-A21, and the interpretations are reasonable given A10's limited programs.",
+     "quote": "Karkata: Kalu! Kalu!",
+     "sentences": [
+      {
+       "t_raw": "The Unanswerable Problems를 마친 뒤 밤에 Karkata는 **감정별 짧은 발화**를 내놓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "답이 없는 과제를 마친 뒤 밤에 카르카타는 **감정별 짧은 발화**를 내놓는다."
+      },
+      {
+       "t_raw": "흥분하면 ‘Kalu! Kalu!’, 혼란스러우면 ‘Kulilu?’, 기쁘면 ‘Kalu!’, 슬프면 ‘Kuli…’, 평온하면 ‘Kelukulo.’라고 낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "흥분하면 'Kalu! Kalu!', 혼란스러우면 'Kulilu?', 기쁘면 'Kalu!', 슬프면 'Kuli…', 평온하면 'Kelukulo.'라고 낸다."
+      },
+      {
+       "t_raw": "길고 복잡한 문장 대신 감정 상태에 따라 달라지는 짧은 소리만이 Karkata의 현재 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "길고 복잡한 문장 대신 감정 상태에 따라 달라지는 짧은 소리만이 카르카타의 현재 모습으로 보인다."
+      },
+      {
+       "t_raw": "제한된 프로그램을 지닌 Karkata가 쓸 수 있는 대화 방식은 이런 형태에 머무르고 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "제한된 프로그램을 지닌 카르카타가 쓸 수 있는 대화 방식은 이런 형태에 머무르고 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile > Personality",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Karkata",
@@ -1226,42 +831,409 @@
        "section": "Dialogue",
        "paragraph": "A16",
        "wiki_refs": []
+      }
+     ],
+     "heading": "능력과 성격",
+     "latin_left": [
+      "Kalu",
+      "Kalu",
+      "Kulilu",
+      "Kalu",
+      "Kuli",
+      "Kelukulo"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by the material.",
+     "quote": "I'm glad. Karkata, did you know? Yesterday, I dreamed that you could talk.",
+     "sentences": [
+      {
+       "t_raw": "Abattouy는 Karkata를 **창조한 이**로, 기계를 살아 있는 존재로 만들고 싶어했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아바투이는 카르카타를 **창조한 이**로, 기계를 살아 있는 존재로 만들고 싶어했다."
+      },
+      {
+       "t_raw": "그는 Akademiya의 사람들과의 연락을 끊고 외딴 곳에서 연구를 이어갔으며, Karkata가 말할 수 있게 되는 꿈을 꾸기도 했고, Karkata와 함께하는 일에 기쁨을 느끼기도 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 아카데미아의 사람들과의 연락을 끊고 외딴 곳에서 연구를 이어갔으며, 카르카타가 말할 수 있게 되는 꿈을 꾸기도 했고, 카르카타와 함께하는 일에 기쁨을 느끼기도 했다."
+      },
+      {
+       "t_raw": "Abattouy가 숨을 거둔 뒤, Karkata는 죽음을 이해하지 못한 채 그를 '수리'하려 부품을 모았고, 결국 돌이킬 수 없었던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아바투이가 숨을 거둔 뒤, 카르카타는 죽음을 이해하지 못한 채 그를 '수리'하려 부품을 모았고, 결국 돌이킬 수 없었던 것으로 보인다."
+      },
+      {
+       "t_raw": "Tighnari조차 Karkata의 이런 행동을 쉽게 설명할 수는 없었지만, 그 안에 어떤 가능성이 있다고 생각했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이나리조차 카르카타의 이런 행동을 쉽게 설명할 수는 없었지만, 그 안에 어떤 가능성이 있다고 생각했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Karkata",
        "revision": 851680,
-       "section": "Dialogue",
-       "paragraph": "A17",
+       "section": "Profile",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abattouy",
+       "revision": 845820,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abattouy",
+       "revision": 845820,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Foolish Fatuus"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Tighnari"
+      },
+      {
+       "kind": "quest",
+       "quest": "Heart of the Machine",
+       "quest_ko": "기계의 마음",
+       "version": "3.0",
+       "speaker": "Abattouy"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by the material.",
+     "quote": "Alright then! We'll find Tighnari tomorrow and tell him not to disassemble Karkata!",
+     "sentences": [
+      {
+       "t_raw": "Tighnari는 Abattouy의 연구가 Akademiya에 넘어가지 않도록 연구실을 불태우고, Karkata를 수리해 Pardis Dhyai로 데려왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이나리는 아바투이의 연구가 아카데미아에 넘어가지 않도록 연구실을 불태우고, 카르카타를 수리해 선나원으로 데려왔다."
+      },
+      {
+       "t_raw": "Matra가 Karkata를 발견했을 때 그는 이를 **연구 조수**로 받아들였다고 말해 그대로 남겨두었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "풍기관이 카르카타를 발견했을 때 그는 이를 **연구 조수**로 받아들였다고 말해 그대로 남겨두었다."
+      },
+      {
+       "t_raw": "Traveler와 Paimon 일행은 Karkata가 Akademiya로 돌려보내지거나 분해당할까 봐 걱정했고, Paimon은 직접 Tighnari에게 분해하지 말라고 말하려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬 일행은 카르카타가 아카데미아로 돌려보내지거나 분해당할까 봐 걱정했고, 페이몬은 직접 타이나리에게 분해하지 말라고 말하려 했다."
+      },
+      {
+       "t_raw": "Paimon은 Abattouy가 Karkata의 부서진 부품까지 교체해 준 것을 보며 그를 나쁜 사람으로 보지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아바투이가 카르카타의 부서진 부품까지 교체해 준 것을 보며 그를 나쁜 사람으로 보지 않았다."
+      },
+      {
+       "t_raw": "Karkata가 '생명체'라고 불리고 분해당하지 않은 모습을 본 Paimon은 안도하는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "카르카타가 '생명체'라고 불리고 분해당하지 않은 모습을 본 페이몬은 안도하는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Heart of the Machine",
+       "quest_ko": "기계의 마음",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported. Q6 does not name the addressee, but it is the same quest as Tighnari's line, so sentence 3 is a fair reading.",
+     "quote": "Karkata was created by the researcher Abattouy in order to prove that mechanical beings were also true lifeforms.",
+     "sentences": [
+      {
+       "t_raw": "Abattouy는 Karkata를 만들어 기계 생명체 또한 **진정한 생명체**임을 증명하려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아바투이는 카르카타를 만들어 기계 생명체 또한 **진정한 생명체**임을 증명하려 했다."
+      },
+      {
+       "t_raw": "그러나 과도한 연구자들이 용인 기준을 넘어서자, Akademiya는 **기계 생명체 연구**를 금지했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 과도한 연구자들이 용인 기준을 넘어서자, 아카데미아는 **기계 생명체 연구**를 금지했다."
+      },
+      {
+       "t_raw": "Tighnari는 Karkata가 Abattouy를 \"수리\"하려 한 노력을 설명하기 어렵지만, 그곳에 가능성이 존재한다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이나리는 카르카타가 아바투이를 \"수리\"하려 한 노력을 설명하기 어렵지만, 그곳에 가능성이 존재한다고 말했다."
+      },
+      {
+       "t_raw": "Paimon은 Tighnari가 Karkata를 진정한 생명체로 인정하는지 물었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 타이나리가 카르카타를 진정한 생명체로 인정하는지 물었다."
+      },
+      {
+       "t_raw": "Akademiya의 금지와는 별개로, Karkata가 생명체로 인정받을 가능성은 완전히 사라진 것은 아닌 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아카데미아의 금지와는 별개로, 카르카타가 생명체로 인정받을 가능성은 완전히 사라진 것은 아닌 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Tighnari"
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation in sentence 2 is hedged and follows from A10 and Q2.",
+     "quote": "The possibility exists is all. It's hard to explain Karkata's efforts to \"repair\" Abattouy.",
+     "sentences": [
+      {
+       "t_raw": "Karkata는 prototype으로서 프로그램이 제한되어 있어, 각 주제에 대한 프로그램이 설치되지 않으면 이해에 어려움을 겪는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카르카타는 프로토타입으로서 프로그램이 제한되어 있어, 각 주제에 대한 프로그램이 설치되지 않으면 이해에 어려움을 겪는다.",
+       "polish": {
+        "from": "카르카타는 prototype으로서 프로그램이 제한되어 있어, 각 주제에 대한 프로그램이 설치되지 않으면 이해에 어려움을 겪는다.",
+        "text": "카르카타는 프로토타입으로서 프로그램이 제한되어 있어, 각 주제에 대한 프로그램이 설치되지 않으면 이해에 어려움을 겪는다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Tighnari는 Karkata가 Abattouy를 \"수리\"하려 한 노력을 설명하기 어렵지만, 가능성이 존재한다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이나리는 카르카타가 아바투이를 \"수리\"하려 한 노력을 설명하기 어렵지만, 가능성이 존재한다고 말했다."
+      },
+      {
+       "t_raw": "따라서 Karkata의 수리 시도는 제한된 프로그램과 생명체로서의 가능성이 교차하는 지점에서 나온 행동으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 카르카타의 수리 시도는 제한된 프로그램과 생명체로서의 가능성이 교차하는 지점에서 나온 행동으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile > Personality",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Tighnari"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation in sentence 1 is hedged.",
+     "quote": "During the day, it can be found in Pardis Dhyai's greenhouse in the form of a cube.",
+     "sentences": [
+      {
+       "t_raw": "Karkata는 낮에는 Pardis Dhyai의 온실 안에서 큐브 형태로 머무르다가, Tighnari의 스토리 퀘스트 The Unanswerable Problems를 클리어한 뒤에는 밤의 모습을 드러내고 온실 밖에서 교류할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카르카타는 낮에는 선나원의 온실 안에서 큐브 형태로 머무르다가, 타이나리의 스토리 퀘스트 답이 없는 과제를 클리어한 뒤에는 밤의 모습을 드러내고 온실 밖에서 교류할 수 있다."
+      },
+      {
+       "t_raw": "이처럼 **낮의 큐브와 밤의 모습**이 나뉘는 것은 Karkata가 상황에 따라 형태를 바꾸는 듯하다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 **낮의 큐브와 밤의 모습**이 나뉘는 것은 카르카타가 상황에 따라 형태를 바꾸는 듯하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": null,
+       "paragraph": "A2",
        "wiki_refs": []
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Kalu",
-      "Kalu",
-      "Kalu",
-      "Kulilu",
-      "Kalu"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Karkata: Kelukulo.",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation in sentence 1 is hedged and speculative but not stated as fact.",
+     "quote": "Karkata is a Ruin Defender with a special gold and white color scheme.",
      "sentences": [
       {
-       "t_raw": "슬픈 상태에서는 'Kuli…'가, 중립적인 상태에서는 'Kelukulo.'가 대사로 제시된다.",
+       "t_raw": "Karkata는 일반적인 Ruin Defender와 구별되는 **금·백색 도색**을 하고 있다.",
        "interp": false,
        "dropped": false,
-       "t": "슬픈 상태에서는 'Kuli…'가, 중립적인 상태에서는 'Kelukulo.'가 대사로 제시된다."
+       "t": "카르카타는 일반적인 유적 방어자와 구별되는 **금·백색 도색**을 하고 있다."
       },
       {
-       "t_raw": "'Kuli…'와 'Kelukulo.'처럼 짧은 소리만으로 이루어진 대사도 있다.",
+       "t_raw": "Abattouy가 Karkata를 직접 만들었다는 점과 맞물려, 이 색상은 그가 만든 기계임을 눈에 띄게 하는 특징으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아바투이가 카르카타를 직접 만들었다는 점과 맞물려, 이 색상은 그가 만든 기계임을 눈에 띄게 하는 특징으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Profile > Appearance",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All five utterances match the dialogue. The interpretation is hedged and follows from the limited-programs and comprehension note.",
+     "quote": "Karkata: Kalu! Kalu!",
+     "sentences": [
+      {
+       "t_raw": "Karkata는 흥분하면 'Kalu! Kalu!', 혼란스러우면 'Kulilu?', 행복하면 'Kalu!', 슬플 때는 'Kuli…', 평온할 때는 'Kelukulo.'라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "'Kuli…'와 'Kelukulo.'처럼 짧은 소리만으로 이루어진 대사도 있다."
+       "t": "카르카타는 흥분하면 'Kalu! Kalu!', 혼란스러우면 'Kulilu?', 행복하면 'Kalu!', 슬플 때는 'Kuli…', 평온할 때는 'Kelukulo.'라고 말한다."
+      },
+      {
+       "t_raw": "이처럼 짧고 반복된 음절들은 **감정별 짧은 발화**가 Karkata의 언어 능력에 한계가 있음을 보여주는 작은 디테일로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 짧고 반복된 음절들은 **감정별 짧은 발화**가 카르카타의 언어 능력에 한계가 있음을 보여주는 작은 디테일로 보인다."
       }
      ],
      "sources": [
@@ -1270,7 +1242,23 @@
        "page": "Karkata",
        "revision": 851680,
        "section": "Dialogue",
-       "paragraph": "A18",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Karkata",
+       "revision": 851680,
+       "section": "Dialogue",
+       "paragraph": "A17",
        "wiki_refs": []
       },
       {
@@ -1286,22 +1274,24 @@
        "page": "Karkata",
        "revision": 851680,
        "section": "Dialogue",
-       "paragraph": "A20",
+       "paragraph": "A21",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Karkata",
        "revision": 851680,
-       "section": "Dialogue",
-       "paragraph": "A21",
+       "section": "Profile > Personality",
+       "paragraph": "A10",
        "wiki_refs": []
       }
      ],
      "heading": "여담",
      "latin_left": [
-      "Kuli",
-      "Kelukulo",
+      "Kalu",
+      "Kalu",
+      "Kulilu",
+      "Kalu",
       "Kuli",
       "Kelukulo"
      ]
@@ -1309,61 +1299,27 @@
    ],
    "quote_boxes": [
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "잠깐, 방금 \"생명체\"라고 말했잖아. 이제 Karkata를 진짜 살아있는 존재로 인정하는 거야?",
-     "en": "Wait, you just said \"life form.\" You recognize Karkata as a true living being now?",
-     "speaker": "Paimon",
+     "section": "작중 행적 — Abattouy의 실험",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "가능성은 있을 뿐이야. Karkata가 Abattouy를 '수리'하려는 노력을 설명하기란 어려워.",
+     "en": "The possibility exists is all. It's hard to explain Karkata's efforts to \"repair\" Abattouy.",
+     "speaker": "Tighnari",
      "source": {
       "kind": "quest",
       "quest": "Garden Memories",
       "quest_ko": "화원의 기억",
       "version": "3.0",
-      "speaker": "Paimon"
+      "speaker": "Tighnari"
      },
-     "t": "잠깐, 방금 \"생명체\"라고 말했잖아. 이제 카르카타를 진짜 살아있는 존재로 인정하는 거야?",
-     "speaker_ko": "페이몬"
+     "t": "가능성은 있을 뿐이야. 카르카타가 아바투이를 '수리'하려는 노력을 설명하기란 어려워.",
+     "speaker_ko": "타이나리"
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "기쁘구나. Karkata, 너도 알겠니? 어제 나는 네가 말을 할 수 있는 꿈을 꿨어.",
-     "en": "I'm glad. Karkata, did you know? Yesterday, I dreamed that you could talk.",
-     "speaker": "Abattouy",
-     "source": {
-      "kind": "quest",
-      "quest": "Heart of the Machine",
-      "quest_ko": "기계의 마음",
-      "version": "3.0",
-      "speaker": "Abattouy"
-     },
-     "t": "기쁘구나. 카르카타, 너도 알겠니? 어제 나는 네가 말을 할 수 있는 꿈을 꿨어.",
-     "speaker_ko": "아바투이"
-    },
-    {
-     "section": "작중 행적 — Heart of the Machine",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "기쁘구나. Karkata, 알고 있니? 어제 나는 네가 말을 할 수 있는 꿈을 꿨단다.",
-     "en": "I'm glad. Karkata, did you know? Yesterday, I dreamed that you could talk.",
-     "speaker": "Abattouy",
-     "source": {
-      "kind": "quest",
-      "quest": "Heart of the Machine",
-      "quest_ko": "기계의 마음",
-      "version": "3.0",
-      "speaker": "Abattouy"
-     },
-     "t": "기쁘구나. 카르카타, 알고 있니? 어제 나는 네가 말을 할 수 있는 꿈을 꿨단다.",
-     "speaker_ko": "아바투이"
-    },
-    {
-     "section": "작중 행적 — Garden Memories",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "너, 너 Karkata를 분해하지 않은 거야?",
+     "section": "작중 행적 — Pardis Dhyai",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "너—너 Karkata를 해체하지 않은 거야?",
      "en": "Y—You didn't disassemble Karkata?",
      "speaker": "Paimon",
      "source": {
@@ -1373,14 +1329,14 @@
       "version": "3.0",
       "speaker": "Paimon"
      },
-     "t": "너, 너 카르카타를 분해하지 않은 거야?",
+     "t": "너—너 카르카타를 해체하지 않은 거야?",
      "speaker_ko": "페이몬"
     },
     {
-     "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "오? 너도 꽤 기쁜가 보구나! Karkata, 우리가 이제 뭘 하려는지 아니?",
+     "section": "능력과 성격",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "오? 너도 꽤 기쁜가 보구나! Karkata, 우리가 이제 뭘 하려는 줄 아니?",
      "en": "Oh? You're also quite happy! Karkata, do you know what we're about to do?",
      "speaker": "Abattouy",
      "source": {
@@ -1390,15 +1346,15 @@
       "version": "3.0",
       "speaker": "Abattouy"
      },
-     "t": "오? 너도 꽤 기쁜가 보구나! 카르카타, 우리가 이제 뭘 하려는지 아니?",
+     "t": "오? 너도 꽤 기쁜가 보구나! 카르카타, 우리가 이제 뭘 하려는 줄 아니?",
      "speaker_ko": "아바투이"
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "잠깐, 방금 \"생명체\"라고 했어. 이제 Karkata를 진짜 생명체로 인정하는 거야?",
-     "en": "Wait, you just said \"life form.\" You recognize Karkata as a true living being now?",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "좋았어! 내일 Tighnari를 찾아가서 Karkata를 분해하지 말라고 할 거야!",
+     "en": "Alright then! We'll find Tighnari tomorrow and tell him not to disassemble Karkata!",
      "speaker": "Paimon",
      "source": {
       "kind": "quest",
@@ -1407,14 +1363,14 @@
       "version": "3.0",
       "speaker": "Paimon"
      },
-     "t": "잠깐, 방금 \"생명체\"라고 했어. 이제 카르카타를 진짜 생명체로 인정하는 거야?",
+     "t": "좋았어! 내일 타이나리를 찾아가서 카르카타를 분해하지 말라고 할 거야!",
      "speaker_ko": "페이몬"
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "잠깐, 방금 '생명체'라고 했어. 이제 Karkata를 진짜 살아 있는 존재로 인정하는 거야?",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "잠깐, 방금 '생명체'라고 했잖아. 이제 Karkata를 진정한 생명체로 인정하는 거야?",
      "en": "Wait, you just said \"life form.\" You recognize Karkata as a true living being now?",
      "speaker": "Paimon",
      "source": {
@@ -1424,8 +1380,25 @@
       "version": "3.0",
       "speaker": "Paimon"
      },
-     "t": "잠깐, 방금 '생명체'라고 했어. 이제 카르카타를 진짜 살아 있는 존재로 인정하는 거야?",
+     "t": "잠깐, 방금 '생명체'라고 했잖아. 이제 카르카타를 진정한 생명체로 인정하는 거야?",
      "speaker_ko": "페이몬"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Abattouy's line. 'I'm glad' is 기쁘군, and 'Yesterday, I dreamed that you could talk' is conveyed as 어젯밤 꿈에서 네가 말하는 걸 봤어. 'Last night' is a small, acceptable rendering of 'yesterday'.",
+     "t_raw": "기쁘군. Karkata, 알고 있니? 어젯밤 꿈에서 네가 말하는 걸 봤어.",
+     "en": "I'm glad. Karkata, did you know? Yesterday, I dreamed that you could talk.",
+     "speaker": "Abattouy",
+     "source": {
+      "kind": "quest",
+      "quest": "Heart of the Machine",
+      "quest_ko": "기계의 마음",
+      "version": "3.0",
+      "speaker": "Abattouy"
+     },
+     "t": "기쁘군. 카르카타, 알고 있니? 어젯밤 꿈에서 네가 말하는 걸 봤어.",
+     "speaker_ko": "아바투이"
     }
    ]
   }

@@ -20,35 +20,35 @@
    "input_chars": 5998,
    "input_cut": false,
    "input_hash": "aebb6ecd7dc2",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Rahman is the leader of an Eremite faction whose loyalty to King Deshret led him to believe Sumeru Akademiya's misinformation campaign, which claimed that the deceased god would soon return to life.",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2 and A7.",
+     "quote": "Rahman is the leader of an Eremite faction whose loyalty to King Deshret led him to believe Sumeru Akademiya's misinformation campaign",
      "sentences": [
       {
-       "t_raw": "Rahman은 Sumeru의 Land of Upper Setekh에서 만나는 오픈 월드 NPC이자 Eremites faction의 지도자다.",
+       "t_raw": "Rahman은 Sumeru의 Land of Upper Setekh에 위치한 오픈 월드 NPC이자 Sumeru의 마신 임무에서 조연을 맡는 **Eremite 세력의 지도자**다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 수메르의 상 바람 침식지에서 만나는 오픈 월드 NPC이자 도금 여단 faction의 지도자다."
+       "t": "라흐만은 수메르의 상 바람 침식지에 위치한 오픈 월드 NPC이자 수메르의 마신 임무에서 조연을 맡는 **도금 여단 세력의 지도자**다."
       },
       {
-       "t_raw": "King Deshret에 대한 충성과 Sumeru Akademiya의 잘못된 정보 선전이 퍼뜨린 부활설을 믿던 그는, 사막 사람들이 겪은 박대에 대한 반감 때문에 Traveler 일행과 충돌하지만, 결국 진짜 공동의 적이 Akademiya의 현자들이라는 것을 받아들이고 Kusanali 구출과 현자들 전복에 힘을 보탠다.",
+       "t_raw": "King Deshret에 대한 충성과 Akademiya의 잘못된 정보 때문에 그는 처음에 Traveler 일행과 Dehya에게 적대하지만, 공동의 적이 Akademiya의 현자들이라는 사실을 받아들인 뒤 자신과 부하들을 **Traveler의 편**에 보태 현자들을 몰아내는 데 힘을 보탠다.",
        "interp": false,
        "dropped": false,
-       "t": "적왕에 대한 충성과 수메르 아카데미아의 잘못된 정보 선전이 퍼뜨린 부활설을 믿던 그는, 사막 사람들이 겪은 박대에 대한 반감 때문에 여행자 일행과 충돌하지만, 결국 진짜 공동의 적이 아카데미아의 현자들이라는 것을 받아들이고 쿠사나리 구출과 현자들 전복에 힘을 보탠다."
+       "t": "적왕에 대한 충성과 아카데미아의 잘못된 정보 때문에 그는 처음에 여행자 일행과 데히야에게 적대하지만, 공동의 적이 아카데미아의 현자들이라는 사실을 받아들인 뒤 자신과 부하들을 **여행자의 편**에 보태 현자들을 몰아내는 데 힘을 보탠다."
       },
       {
-       "t_raw": "이후에는 Setaria와 함께 사막의 교육과 학술 자료 보급을 도모하는 인물로 남는다.",
+       "t_raw": "이후 그는 **Setaria와 함께 사막으로 돌아가** Eremites 가운데 가르칠 이들을 찾고 사막 사람들에게 지식과 학술 자료를 전하는 일을 도모한다.",
        "interp": false,
        "dropped": false,
-       "t": "이후에는 세타르와 함께 사막의 교육과 학술 자료 보급을 도모하는 인물로 남는다."
+       "t": "이후 그는 **세타르와 함께 사막으로 돌아가** 도금 여단 가운데 가르칠 이들을 찾고 사막 사람들에게 지식과 학술 자료를 전하는 일을 도모한다."
       }
      ],
      "sources": [
@@ -67,23 +67,6 @@
        "section": "Profile",
        "paragraph": "A2",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Story",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Through the Predawn Night"
-        },
-        {
-         "type": "quest",
-         "name": "Jnagarbha Day"
-        }
-       ]
       },
       {
        "kind": "wiki",
@@ -105,34 +88,22 @@
      ]
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Rahman is the leader of an Eremite faction whose loyalty to King Deshret led him to believe Sumeru Akademiya's misinformation campaign, which claimed that the deceased god would soon return to life.",
+     "section": "개요",
+     "status": "accepted",
+     "note": "Both sentences match A1 and A2.",
+     "quote": "Rahman is the leader of an Eremite faction whose loyalty to King Deshret led him to believe Sumeru Akademiya's misinformation campaign",
      "sentences": [
       {
-       "t_raw": "Rahman은 Sumeru의 Land of Upper Setekh에서 만나는 Eremite faction의 지도자다.",
+       "t_raw": "Rahman은 Sumeru의 Land of Upper Setekh에 있는 오픈 월드 NPC로, Cry From the Eleazar Hospital에서 처음 나와 Sumeru Archon Quest에서 조연을 맡는다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 수메르의 상 바람 침식지에서 만나는 도금 여단 faction의 지도자다."
+       "t": "라흐만은 수메르의 상 바람 침식지에 있는 오픈 월드 NPC로, 비늘병 병원의 울음소리에서 처음 나와 수메르 마신 임무에서 조연을 맡는다."
       },
       {
-       "t_raw": "그의 faction은 Valley of Dahri 부근에 자리하며, Ayn Al-Ahmar처럼 King Deshret을 믿는 무리다.",
+       "t_raw": "King Deshret를 따르는 Eremite 세력의 지도자인 그는 Sumeru Akademiya의 허위 정보를 믿고, 사막 사람들이 겪은 박대에 대한 반감으로 Traveler 일행과 Dehya에 맞선다.",
        "interp": false,
        "dropped": false,
-       "t": "그의 faction은 다흐리 계곡 부근에 자리하며, 아인 알아흐마르처럼 적왕을 믿는 무리다."
-      },
-      {
-       "t_raw": "이들은 처음에 Greater Lord Rukkhadevata와 숲의 사람들을 경멸했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이들은 처음에 위대한 룩카데바타와 숲의 사람들을 경멸했다."
-      },
-      {
-       "t_raw": "**King Deshret에 대한 충성**은 그를 Akademiya의 잘못된 정보에 빠뜨려, 죽은 신이 곧 되살아난다는 소문을 믿게 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**적왕에 대한 충성**은 그를 아카데미아의 잘못된 정보에 빠뜨려, 죽은 신이 곧 되살아난다는 소문을 믿게 했다."
+       "t": "적왕을 따르는 도금 여단 세력의 지도자인 그는 수메르 아카데미아의 허위 정보를 믿고, 사막 사람들이 겪은 박대에 대한 반감으로 여행자 일행과 데히야에 맞선다."
       }
      ],
      "sources": [
@@ -151,36 +122,31 @@
        "section": "Profile",
        "paragraph": "A2",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "The Eremites",
-       "revision": 1338250,
-       "section": "Factions > Rahman's faction",
-       "paragraph": "M3",
-       "wiki_refs": []
       }
      ],
-     "heading": "정체와 배경",
-     "latin_left": []
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "after witnessing the truth about the great deed of the previous Dendro Archon, Rahman and his group abandoned their prejudice.",
+     "section": "개요",
+     "status": "accepted",
+     "note": "A7 says Rahman and Setaria plan to find Eremites suited to teach. Only Cyno joins in bringing academic materials. The Korean has Cyno taking part in finding the Eremites too, which the English does not say.",
+     "quote": "After the sages' plot is foiled and Kusanali freed, Rahman returns to the desert with Setaria.",
      "sentences": [
       {
-       "t_raw": "Akademiya 통치 아래 사막 사람들이 겪은 냉대에 대한 Dharma Forest 사람들로의 원망은 그를 Traveler 일행과 충돌하게 했다.",
+       "t_raw": "결국 진짜 공동의 적이 Akademiya의 현자들이라고 확신한 뒤, Rahman과 부하들은 Traveler를 도와 현자들 타도에 힘을 보탠다.",
        "interp": false,
        "dropped": false,
-       "t": "아카데미아 통치 아래 사막 사람들이 겪은 냉대에 대한 다르마의 숲 사람들로의 원망은 그를 여행자 일행과 충돌하게 했다."
+       "t": "결국 진짜 공동의 적이 아카데미아의 현자들이라고 확신한 뒤, 라흐만과 부하들은 여행자를 도와 현자들 타도에 힘을 보탠다."
       },
       {
-       "t_raw": "그러나 이전 Dendro Archon의 위업에 관한 진실을 본 뒤 Rahman과 그의 무리는 편견을 버리고, **진짜 적은 Akademiya의 현자들**이며 Dharma Forest 전체나 Dendro Archon이 아니라는 점을 받아들였다.",
+       "t_raw": "이후 Setaria와 사막으로 돌아가, Setaria와 함께 가르침에 맞는 Eremites 인재를 찾아 사막에 지식을 퍼뜨리고, Cyno와 함께 사막 사람들을 위한 학술 자료를 보급하려 한다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 이전 풀의 신의 위업에 관한 진실을 본 뒤 라흐만과 그의 무리는 편견을 버리고, **진짜 적은 아카데미아의 현자들**이며 다르마의 숲 전체나 풀의 신이 아니라는 점을 받아들였다."
+       "repaired": true,
+       "t": "이후 세타르와 사막으로 돌아가, 세타르와 함께 가르침에 맞는 도금 여단 인재를 찾아 사막에 지식을 퍼뜨리고, 사이노와 함께 사막 사람들을 위한 학술 자료를 보급하려 한다."
       }
      ],
      "sources": [
@@ -191,6 +157,183 @@
        "section": "Profile",
        "paragraph": "A2",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Story",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Toast to Victory"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts match M3 and Q30. Sentence 2 is a reasonable, hedged interpretation.",
+     "quote": "*sigh* Rahman's no fool. Being the leader of your own faction in the desert is no easy feat.",
+     "sentences": [
+      {
+       "t_raw": "Rahman은 Valley of Dahri 부근에서 King Deshret를 따르는 Eremite 세력의 지도자다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라흐만은 다흐리 계곡 부근에서 적왕을 따르는 도금 여단 세력의 지도자다."
+      },
+      {
+       "t_raw": "그와 일행은 처음에 Greater Lord Rukkhadevata와 숲 사람들을 멸시했고, Aaru Village의 Village Keepers를 납치하는 일이 **King Deshret의 부활**에 도움이 된다고 여겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그와 일행은 처음에 위대한 룩카데바타와 숲 사람들을 멸시했고, 아루 마을의 마을 지킴이를 납치하는 일이 **적왕의 부활**에 도움이 된다고 여겼다."
+      },
+      {
+       "t_raw": "신앙과 세력의 수장이라는 두 요소가 겹치면서 그의 선택은 일행 전체의 행동으로 번지는 구조라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "신앙과 세력의 수장이라는 두 요소가 겹치면서 그의 선택은 일행 전체의 행동으로 번지는 구조라고 볼 수 있다."
+      },
+      {
+       "t_raw": "Dehya는 Rahman이 바보가 아니며 사막에서 자기 세력을 이끄는 일이 쉽지 않다고 평한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데히야는 라흐만이 바보가 아니며 사막에서 자기 세력을 이끄는 일이 쉽지 않다고 평한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Eremites",
+       "revision": 1338250,
+       "section": "Factions > Rahman's faction",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Dehya"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts match A2. The interpretation in sentence 3 follows from the English.",
+     "quote": "His faith in this widespread rumor, and resentment towards the people of Dharma Forest for the mistreatment that the desert people suffered under the Akademiya's rule",
+     "sentences": [
+      {
+       "t_raw": "그가 Traveler 일행과 충돌한 배경에는 **Akademiya의 허위 정보**와 사막 사람들이 겪은 차별이 함께 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 여행자 일행과 충돌한 배경에는 **아카데미아의 허위 정보**와 사막 사람들이 겪은 차별이 함께 있다."
+      },
+      {
+       "t_raw": "그는 Sumeru Akademiya가 퍼뜨린, 죽은 신이 곧 되살아난다는 잘못된 정보를 믿었고, Akademiya 통치 아래 사막 사람들이 차별받은 데 대한 Dharma Forest 사람들로의 반감을 품었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 수메르 아카데미아가 퍼뜨린, 죽은 신이 곧 되살아난다는 잘못된 정보를 믿었고, 아카데미아 통치 아래 사막 사람들이 차별받은 데 대한 다르마의 숲 사람들로의 반감을 품었다."
+      },
+      {
+       "t_raw": "그 결과 Traveler와 그 일행, 오랜 친구인 Dehya와도 맞서게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 결과 여행자와 그 일행, 오랜 친구인 데히야와도 맞서게 된다."
+      },
+      {
+       "t_raw": "이 충돌은 숲 전체나 Dendro Archon 자체보다 Akademiya의 현자들과 허위 정보에 뿌리를 둔 것으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 충돌은 숲 전체나 풀의 신 자체보다 아카데미아의 현자들과 허위 정보에 뿌리를 둔 것으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts match A4, Q11, Q5 and M4. The interpretation in sentence 3 is reasonable and hedged.",
+     "quote": "With these scholars in our custody, we'll stomp the Akademiya's forces and fight our way beyond the Wall of Samiel.",
+     "sentences": [
+      {
+       "t_raw": "그의 세력은 Village Keepers를 납치한 Akademiya 측 인원을 가로채 Village Keepers를 포함한 이들을 인질로 삼았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그의 세력은 마을 지킴이를 납치한 아카데미아 측 인원을 가로채 마을 지킴이를 포함한 이들을 인질로 삼았다."
+      },
+      {
+       "t_raw": "Rahman은 그들을 이용해 Akademiya의 힘을 꺾고 Wall of Samiel 너머로 나아가려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라흐만은 그들을 이용해 아카데미아의 힘을 꺾고 방사벽 너머로 나아가려 했다."
+      },
+      {
+       "t_raw": "Alhaitham과 Cyno가 나타나자 그는 Dehya와 Alhaitham의 설득에도 적대감을 드러냈으며, Greater Lord Rukkhadevata를 따르는 사람들의 말을 들을 이유가 없다고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알하이탐과 사이노가 나타나자 그는 데히야와 알하이탐의 설득에도 적대감을 드러냈으며, 위대한 룩카데바타를 따르는 사람들의 말을 들을 이유가 없다고 했다."
+      },
+      {
+       "t_raw": "이처럼 상대를 Akademiya의 앞잡이로 보는 시각은 Alhaitham과 Cyno가 나타났을 때 곧바로 적대감으로 이어진 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 상대를 아카데미아의 앞잡이로 보는 시각은 알하이탐과 사이노가 나타났을 때 곧바로 적대감으로 이어진 것으로 보인다."
+      },
+      {
+       "t_raw": "이후 이전 Dendro Archon의 위업에 관한 진실을 목격한 뒤 Rahman과 일행은 편견을 버리고 Akademiya를 진짜 적으로 인식한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 이전 풀의 신의 위업에 관한 진실을 목격한 뒤 라흐만과 일행은 편견을 버리고 아카데미아를 진짜 적으로 인식한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Story",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Cry From the Eleazar Hospital"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Cry From the Eleazar Hospital",
+       "quest_ko": "비늘병 병원의 울음소리",
+       "version": "3.1",
+       "speaker": "Rahman"
+      },
+      {
+       "kind": "quest",
+       "quest": "Cry From the Eleazar Hospital",
+       "quest_ko": "비늘병 병원의 울음소리",
+       "version": "3.1",
+       "speaker": "Rahman"
       },
       {
        "kind": "wiki",
@@ -205,34 +348,40 @@
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Village Keepers와 Aaru Village의 대치",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "They even kidnapped the Village Keepers of Aaru Village, believing that it would help bring about King Deshret's resurrection.",
+     "section": "작중 행적 — Aaru Village와 Village Keepers",
+     "status": "accepted",
+     "note": "All sentences are supported by A4; the interpretation is reasonable.",
+     "quote": "Dehya planned on leveraging her camaraderie with Rahman to infiltrate his group, only for Isak to accidentally expose her during their talk.",
      "sentences": [
       {
-       "t_raw": "Rahman은 Aaru Village의 Village Keepers가 사라진 사건을 조사하던 중에 모습을 드러냈고, Village Keepers는 Sumeru Akademiya를 위해 연구하다 정신을 잃은 추방 학자들이었다.",
+       "t_raw": "Rahman은 Aaru Village의 **Village Keepers 실종 조사**에서 모습을 드러낸다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 아루 마을의 마을 지킴이가 사라진 사건을 조사하던 중에 모습을 드러냈고, 마을 지킴이는 수메르 아카데미아를 위해 연구하다 정신을 잃은 추방 학자들이었다."
+       "t": "라흐만은 아루 마을의 **마을 지킴이 실종 조사**에서 모습을 드러낸다."
       },
       {
-       "t_raw": "Rahman의 Eremites 세력은 Village Keepers를 납치한 Akademiya 사람들을 가로채 그들까지 인질로 잡고, 인질로 Akademiya 군을 밟아 Wall of Samiel 너머로 나아갈 계획을 세운다.",
+       "t_raw": "Village Keepers는 Sumeru Akademiya를 위해 연구하다 정신을 잃고 추방된 학자들이며, Rahman과 그의 Eremite 세력은 이들을 납치한 Akademiya 측 인원을 가로채 Village Keepers와 함께 모두 인질로 잡는다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만의 도금 여단 세력은 마을 지킴이를 납치한 아카데미아 사람들을 가로채 그들까지 인질로 잡고, 인질로 아카데미아 군을 밟아 방사벽 너머로 나아갈 계획을 세운다."
+       "t": "마을 지킴이는 수메르 아카데미아를 위해 연구하다 정신을 잃고 추방된 학자들이며, 라흐만과 그의 도금 여단 세력은 이들을 납치한 아카데미아 측 인원을 가로채 마을 지킴이와 함께 모두 인질로 잡는다."
       },
       {
-       "t_raw": "이들은 Valley of Dahri 부근의 King Deshret 신자들로, Village Keepers 납치가 King Deshret의 부활에 도움이 된다고 믿었고, Rahman은 Greater Lord Rukkhadevata의 사람들에게 왜 귀를 기울여야 하느냐고 말한다.",
+       "t_raw": "Rahman은 이들을 이용해 Sumeru Akademiya로 가는 안전한 길을 확보하고 Akademiya를 부수려 한다.",
        "interp": false,
        "dropped": false,
-       "t": "이들은 다흐리 계곡 부근의 적왕 신자들로, 마을 지킴이 납치가 적왕의 부활에 도움이 된다고 믿었고, 라흐만은 위대한 룩카데바타의 사람들에게 왜 귀를 기울여야 하느냐고 말한다."
+       "t": "라흐만은 이들을 이용해 수메르 아카데미아로 가는 안전한 길을 확보하고 아카데미아를 부수려 한다."
       },
       {
-       "t_raw": "King Deshret 부활을 믿는 신앙과 Akademiya 쪽에 대한 반감이 Village Keepers를 인질로 삼는 행동으로 이어졌다고 볼 수 있다.",
+       "t_raw": "Dehya는 Rahman과의 친분을 이용해 그의 무리에 잠입하려 하지만, 대화 중 Isak이 실수로 그녀를 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데히야는 라흐만과의 친분을 이용해 그의 무리에 잠입하려 하지만, 대화 중 이사크가 실수로 그녀를 드러낸다."
+      },
+      {
+       "t_raw": "이는 Rahman의 목표가 Village Keepers 자체보다 Akademiya와의 충돌에 놓여 있음을 보여 준다.",
        "interp": true,
        "dropped": false,
-       "t": "적왕 부활을 믿는 신앙과 아카데미아 쪽에 대한 반감이 마을 지킴이를 인질로 삼는 행동으로 이어졌다고 볼 수 있다."
+       "t": "이는 라흐만의 목표가 마을 지킴이 자체보다 아카데미아와의 충돌에 놓여 있음을 보여 준다."
       }
      ],
      "sources": [
@@ -246,6 +395,268 @@
         {
          "type": "quest",
          "name": "Cry From the Eleazar Hospital"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 아루 마을과 마을 지킴이",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Aaru Village와 Village Keepers",
+     "status": "accepted",
+     "note": "Supported by A4, Q5, Q17, Q22, Q29, Q30 and Q33.",
+     "quote": "Hah, they look more like pawns of the Akademiya to me. Why would I listen to anything the people of Greater Lord Rukkhadevata have to say?",
+     "sentences": [
+      {
+       "t_raw": "Rahman은 '누가 왔는지 보라'는 말로 일행을 맞고, 그 안에 Akademiya의 고위 인물인 Alhaitham과 Cyno가 있음을 보자마자 적대감을 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라흐만은 '누가 왔는지 보라'는 말로 일행을 맞고, 그 안에 아카데미아의 고위 인물인 알하이탐과 사이노가 있음을 보자마자 적대감을 드러낸다."
+      },
+      {
+       "t_raw": "Dehya와 Alhaitham이 설득하려 해도 그는 Greater Lord Rukkhadevata의 사람들 말을 왜 들어야 하냐며 상대를 Akademiya의 도구처럼 취급하고, Cyno를 '위대한 General Mahamatra'라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데히야와 알하이탐이 설득하려 해도 그는 위대한 룩카데바타의 사람들 말을 왜 들어야 하냐며 상대를 아카데미아의 도구처럼 취급하고, 사이노를 '위대한 대마하마트라'라고 부른다."
+      },
+      {
+       "t_raw": "Dehya는 Rahman에게 겁내지 말고 Akademiya와 맞설 생각이라면 각오를 단단히 하라고 말하면서도, 자신은 Rahman이 알다시피 쉽게 흔들리는 사람이 아니라고 맞선다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데히야는 라흐만에게 겁내지 말고 아카데미아와 맞설 생각이라면 각오를 단단히 하라고 말하면서도, 자신은 라흐만이 알다시피 쉽게 흔들리는 사람이 아니라고 맞선다."
+      },
+      {
+       "t_raw": "Dehya는 Rahman이 바보가 아니며, 그가 사막에서 자기 세력을 이끄는 일이 쉬운 일이 아니라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데히야는 라흐만이 바보가 아니며, 그가 사막에서 자기 세력을 이끄는 일이 쉬운 일이 아니라고 말한다."
+      },
+      {
+       "t_raw": "Dehya가 친분에 기대어 설득하려는 태도와 Rahman이 Akademiya 소속이라는 이유로 경계를 늦추지 않는 태도가 맞물려, 두 사람의 관계에는 신뢰와 적대가 함께 드러난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "데히야가 친분에 기대어 설득하려는 태도와 라흐만이 아카데미아 소속이라는 이유로 경계를 늦추지 않는 태도가 맞물려, 두 사람의 관계에는 신뢰와 적대가 함께 드러난다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Story",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Cry From the Eleazar Hospital"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Cry From the Eleazar Hospital",
+       "quest_ko": "비늘병 병원의 울음소리",
+       "version": "3.1",
+       "speaker": "Rahman"
+      },
+      {
+       "kind": "quest",
+       "quest": "Cry From the Eleazar Hospital",
+       "quest_ko": "비늘병 병원의 울음소리",
+       "version": "3.1",
+       "speaker": "Rahman"
+      },
+      {
+       "kind": "quest",
+       "quest": "Cry From the Eleazar Hospital",
+       "quest_ko": "비늘병 병원의 울음소리",
+       "version": "3.1",
+       "speaker": "Rahman"
+      },
+      {
+       "kind": "quest",
+       "quest": "Cry From the Eleazar Hospital",
+       "quest_ko": "비늘병 병원의 울음소리",
+       "version": "3.1",
+       "speaker": "Dehya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Dehya"
+      }
+     ],
+     "heading": "작중 행적 — 아루 마을과 마을 지킴이",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Aaru Village와 Village Keepers",
+     "status": "accepted",
+     "note": "Supported by A4, Q11 and Q18; the interpretation is reasonable.",
+     "quote": "It's a one-for-one exchange. Sounds fair, don't ya think?",
+     "sentences": [
+      {
+       "t_raw": "Dehya가 Alhaitham의 정직함을 믿는다는 표시로 자신의 팔을 내걸겠다는 **결심**이 Rahman을 움직인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데히야가 알하이탐의 정직함을 믿는다는 표시로 자신의 팔을 내걸겠다는 **결심**이 라흐만을 움직인다."
+      },
+      {
+       "t_raw": "그 결심으로 Rahman은 Alhaitham과 실종된 Village Keepers를 맞바꾸는 **인질 교환**을 고려하게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 결심으로 라흐만은 알하이탐과 실종된 마을 지킴이를 맞바꾸는 **인질 교환**을 고려하게 된다."
+      },
+      {
+       "t_raw": "Rahman은 그것이 1대1 교환이라며 공정하지 않냐고 묻고, 맡겨진 학자들로 Akademiya의 군대를 짓밟고 Wall of Samiel 너머로 싸워 나가겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라흐만은 그것이 1대1 교환이라며 공정하지 않냐고 묻고, 맡겨진 학자들로 아카데미아의 군대를 짓밟고 방사벽 너머로 싸워 나가겠다고 말한다."
+      },
+      {
+       "t_raw": "이 말은 그가 교환을 고려하면서도 학자들을 Akademiya에 맞설 힘으로 삼으려는 태도를 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 말은 그가 교환을 고려하면서도 학자들을 아카데미아에 맞설 힘으로 삼으려는 태도를 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Story",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Cry From the Eleazar Hospital"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Cry From the Eleazar Hospital",
+       "quest_ko": "비늘병 병원의 울음소리",
+       "version": "3.1",
+       "speaker": "Rahman"
+      },
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Rahman"
+      }
+     ],
+     "heading": "작중 행적 — 아루 마을과 마을 지킴이",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — King Deshret 유적과 진실",
+     "status": "accepted",
+     "note": "Matches A5.",
+     "quote": "However, when the day comes, Rahman reneges on his promise by only bringing one Village Keeper, Khalil.",
+     "sentences": [
+      {
+       "t_raw": "약속한 날, Rahman은 Village Keeper를 Khalil 한 명만 데리고 나와 **약속을 어긴다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "약속한 날, 라흐만은 마을 지킴이를 카릴 한 명만 데리고 나와 **약속을 어긴다**."
+      },
+      {
+       "t_raw": "분노한 Dehya가 Rahman과 그의 부하들을 공격하자, 한 부하가 Khalil을 인질로 잡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "분노한 데히야가 라흐만과 그의 부하들을 공격하자, 한 부하가 카릴을 인질로 잡는다."
+      },
+      {
+       "t_raw": "그 순간 지진이 일어나 일행 전체가 King Deshret 시대의 정체불명 유적에 떨어지고, Traveler 일행과 Rahman은 그곳을 조사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 순간 지진이 일어나 일행 전체가 적왕 시대의 정체불명 유적에 떨어지고, 여행자 일행과 라흐만은 그곳을 조사한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Story",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Secret of the Scorching Desert"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 적왕 유적과 진실",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — King Deshret 유적과 진실",
+     "status": "accepted",
+     "note": "Quotes and paraphrases match Q6, Q12, Q23, A5 and M3; the interpretation is reasonable.",
+     "quote": "Ohhh... A miracle! Praise King Deshret!",
+     "sentences": [
+      {
+       "t_raw": "유적 안에서 Rahman은 “I'll just let them lay here — King Deshret will take care of his people... Right now, I'm going inside.”라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유적 안에서 라흐만은 “그냥 여기 누워 있게 두지 — 적왕이 그의 백성을 돌볼 것이다... 지금 안으로 들어가겠다.”라고 말한다.",
+       "polish": {
+        "from": "유적 안에서 라흐만은 “I'll just let them lay here — 적왕 will take care of his people... Right now, I'm going inside.”라고 말한다.",
+        "text": "유적 안에서 라흐만은 “그냥 여기 누워 있게 두지 — 적왕이 그의 백성을 돌볼 것이다... 지금 안으로 들어가겠다.”라고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그는 지금은 다툴 때가 아니라며, 높은 군주가 자신의 신성한 궁전으로 가는 길을 보여 주었다고 말하고, 이 상황을 기적이라 부르며 King Deshret를 찬양한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 지금은 다툴 때가 아니라며, 높은 군주가 자신의 신성한 궁전으로 가는 길을 보여 주었다고 말하고, 이 상황을 기적이라 부르며 적왕을 찬양한다."
+      },
+      {
+       "t_raw": "일행은 Kasala라는 전직 사제가 남긴 기록을 찾는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일행은 카살레라는 전직 사제가 남긴 기록을 찾는다."
+      },
+      {
+       "t_raw": "기록에 따르면 Greater Lord Rukkhadevata와 King Deshret는 Deshret가 실수로 풀어놓은 금지된 지식을 함께 억제했고, Deshret는 목숨을 희생했으며 Rukkhadevata는 힘을 크게 쓴 끝에 아이의 모습으로 줄어들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기록에 따르면 위대한 룩카데바타와 적왕은 적왕이 실수로 풀어놓은 금지된 지식을 함께 억제했고, 적왕은 목숨을 희생했으며 룩카데바타는 힘을 크게 쓴 끝에 아이의 모습으로 줄어들었다."
+      },
+      {
+       "t_raw": "Rahman과 그의 세력은 처음에 Greater Lord Rukkhadevata와 숲 사람들을 경멸했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라흐만과 그의 세력은 처음에 위대한 룩카데바타와 숲 사람들을 경멸했다."
+      },
+      {
+       "t_raw": "그런 그가 두 신의 **공동 작업** 기록을 접하는 것은 기존의 적대감과 정면으로 부딪히는 경험으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그런 그가 두 신의 **공동 작업** 기록을 접하는 것은 기존의 적대감과 정면으로 부딪히는 경험으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Story",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Secret of the Scorching Desert"
         }
        ]
       },
@@ -259,143 +670,10 @@
       },
       {
        "kind": "quest",
-       "quest": "Cry From the Eleazar Hospital",
-       "quest_ko": "비늘병 병원의 울음소리",
-       "version": "3.1",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
-       "quest": "Cry From the Eleazar Hospital",
-       "quest_ko": "비늘병 병원의 울음소리",
-       "version": "3.1",
-       "speaker": "Rahman"
-      }
-     ],
-     "heading": "작중 행적 — 마을 지킴이와 아루 마을의 대치",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Village Keepers와 Aaru Village의 대치",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Come on, Rahman, don't be a coward. If you're serious about taking on the Akademiya, you need to steel yourself. You can't be afraid.",
-     "sentences": [
-      {
-       "t_raw": "Dehya는 Rahman과의 친분을 이용해 그의 조직에 잠입하려 했지만 Isak이 대화 중 그녀를 실수로 드러낸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데히야는 라흐만과의 친분을 이용해 그의 조직에 잠입하려 했지만 이사크가 대화 중 그녀를 실수로 드러낸다."
-      },
-      {
-       "t_raw": "일행에 Akademiya 고위 인물인 Alhaitham과 Cyno가 있음을 확인하자 Rahman은 곧바로 적대적으로 변하고 Dehya와 Alhaitham의 설득도 듣지 않는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "일행에 아카데미아 고위 인물인 알하이탐과 사이노가 있음을 확인하자 라흐만은 곧바로 적대적으로 변하고 데히야와 알하이탐의 설득도 듣지 않는다."
-      },
-      {
-       "t_raw": "Dehya는 Rahman에게 겁내지 말고 마음을 단단히 먹으라고 말하며, 자신이 쉽게 흔들리는 타입이 아니라는 점을 Rahman도 안다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데히야는 라흐만에게 겁내지 말고 마음을 단단히 먹으라고 말하며, 자신이 쉽게 흔들리는 타입이 아니라는 점을 라흐만도 안다고 한다."
-      },
-      {
-       "t_raw": "Dehya는 Rahman이 바보가 아니며 사막에서 자기 세력의 지도자 노릇이 쉽지 않다는 말도 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데히야는 라흐만이 바보가 아니며 사막에서 자기 세력의 지도자 노릇이 쉽지 않다는 말도 한다."
-      },
-      {
-       "t_raw": "Dehya는 Alhaitham의 정직함을 믿는다는 표시로 **팔을 내거는 태도**를 보이고, 그 태도에 Rahman은 흔들려 Alhaitham과 Village Keepers를 맞바꾸는 **인질 교환**을 고려하게 되며, 일대일 교환이 공정하다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데히야는 알하이탐의 정직함을 믿는다는 표시로 **팔을 내거는 태도**를 보이고, 그 태도에 라흐만은 흔들려 알하이탐과 마을 지킴이를 맞바꾸는 **인질 교환**을 고려하게 되며, 일대일 교환이 공정하다고 말한다."
-      },
-      {
-       "t_raw": "Dehya의 팔을 내거는 태도는 Rahman이 Alhaitham을 신뢰할 수 있는 상대로 보게 만든 계기로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "데히야의 팔을 내거는 태도는 라흐만이 알하이탐을 신뢰할 수 있는 상대로 보게 만든 계기로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Story",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Cry From the Eleazar Hospital"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Cry From the Eleazar Hospital",
-       "quest_ko": "비늘병 병원의 울음소리",
-       "version": "3.1",
-       "speaker": "Dehya"
-      },
-      {
-       "kind": "quest",
-       "quest": "Cry From the Eleazar Hospital",
-       "quest_ko": "비늘병 병원의 울음소리",
-       "version": "3.1",
-       "speaker": "Dehya"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Dehya"
-      },
-      {
-       "kind": "quest",
        "quest": "Secret of the Scorching Desert",
        "quest_ko": "뜨거운 모래의 비밀",
        "version": "3.1",
        "speaker": "Rahman"
-      }
-     ],
-     "heading": "작중 행적 — 마을 지킴이와 아루 마을의 대치",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — King Deshret 유적의 진실",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "No no, this isn't the time for conflict... Our exalted lord has shown us the way to his sacred palace.",
-     "sentences": [
-      {
-       "t_raw": "Dehya와 충돌하던 순간 지진이 일어나 일행은 King Deshret 시대의 수수께끼 같은 유적 안으로 떨어진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데히야와 충돌하던 순간 지진이 일어나 일행은 적왕 시대의 수수께끼 같은 유적 안으로 떨어진다."
-      },
-      {
-       "t_raw": "Rahman은 지금은 다툴 때가 아니라며 우리의 숭고한 군주가 신성한 궁전으로 가는 길을 보여주었다고 말하고, 기적이라며 King Deshret를 찬양한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라흐만은 지금은 다툴 때가 아니라며 우리의 숭고한 군주가 신성한 궁전으로 가는 길을 보여주었다고 말하고, 기적이라며 적왕을 찬양한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Story",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Secret of the Scorching Desert"
-        }
-       ]
       },
       {
        "kind": "quest",
@@ -412,75 +690,38 @@
        "speaker": "Rahman"
       }
      ],
-     "heading": "작중 행적 — 적왕 유적의 진실",
+     "heading": "작중 행적 — 적왕 유적과 진실",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — King Deshret 유적의 진실",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Greater Lord Rukkhadevata and King Deshret worked together to suppress the forbidden knowledge Deshret accidentally released",
+     "section": "작중 행적 — King Deshret 유적과 진실",
+     "status": "accepted",
+     "note": "Supported by A5, M1 and M2.",
+     "quote": "After this revelation, Rahman apologizes to the group for being misled and informs the rest of his group of the truth.",
      "sentences": [
       {
-       "t_raw": "일행은 유적을 조사해 Kasala라는 전직 사제가 남긴 기록을 발견한다.",
+       "t_raw": "이 기록을 접한 뒤 Rahman은 자신이 잘못 인도되었다며 일행에게 사과하고, 자신의 세력에도 **진실**을 알린다.",
        "interp": false,
        "dropped": false,
-       "t": "일행은 유적을 조사해 카살레라는 전직 사제가 남긴 기록을 발견한다."
+       "t": "이 기록을 접한 뒤 라흐만은 자신이 잘못 인도되었다며 일행에게 사과하고, 자신의 세력에도 **진실**을 알린다."
       },
       {
-       "t_raw": "기록에 따르면 Greater Lord Rukkhadevata와 King Deshret는 Deshret가 실수로 풀어놓은 금단의 지식을 함께 억제했으며, Deshret는 목숨을 바치고 Rukkhadevata는 힘을 크게 소모해 어린아이의 모습으로 작아졌다.",
+       "t_raw": "그는 Akademiya가 Rahman 세력의 도움을 받아 Village Keepers를 납치하도록 보낸 연구자 Judar와 Morghi를 넘긴다.",
        "interp": false,
        "dropped": false,
-       "t": "기록에 따르면 위대한 룩카데바타와 적왕은 적왕이 실수로 풀어놓은 금단의 지식을 함께 억제했으며, 적왕은 목숨을 바치고 룩카데바타는 힘을 크게 소모해 어린아이의 모습으로 작아졌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Story",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Secret of the Scorching Desert"
-        }
-       ]
-      }
-     ],
-     "heading": "작중 행적 — 적왕 유적의 진실",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — King Deshret 유적의 진실",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After realizing the truth about King Deshret's resurrection, Rahman later turns them in to be punished by Dehya, Alhaitham, Cyno, and others.",
-     "sentences": [
-      {
-       "t_raw": "계시를 확인한 Rahman은 속았다고 일행에게 사과하고 자기 무리에도 진실을 알린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "계시를 확인한 라흐만은 속았다고 일행에게 사과하고 자기 무리에도 진실을 알린다."
+       "t": "그는 아카데미아가 라흐만 세력의 도움을 받아 마을 지킴이를 납치하도록 보낸 연구자 주다르와 모르기를 넘긴다."
       },
       {
-       "t_raw": "그는 Village Keepers를 납치한 책임이 있는 Akademiya 연구자 Judar와 Morghi를 넘긴다.",
+       "t_raw": "Judar와 Morghi는 Dehya, Alhaitham, Cyno 및 다른 이들의 처벌을 받게 되고, Alhaitham과 Cyno를 보자 자비를 구하며 Scaramouche를 이용해 새 신을 만들려는 현자들의 계획과 Divine Knowledge Capsules을 이야기한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 마을 지킴이를 납치한 책임이 있는 아카데미아 연구자 주다르와 모르기를 넘긴다."
+       "t": "주다르와 모르기는 데히야, 알하이탐, 사이노 및 다른 이들의 처벌을 받게 되고, 알하이탐과 사이노를 보자 자비를 구하며 스카라무슈를 이용해 새 신을 만들려는 현자들의 계획과 신성한 지식 캡슐을 이야기한다."
       },
       {
-       "t_raw": "Judar는 Cyno 앞에서 산산조각 날까 두려워하고, Judar와 Morghi는 Alhaitham과 Cyno에게 자비를 구하며 Sages가 Scaramouche로 새 신을 만들려 한 계획을 드러낸다.",
+       "t_raw": "Judar는 Cyno를 보자 몸을 움츠리며 토막 날까 봐 두려워한다.",
        "interp": false,
        "dropped": false,
-       "t": "주다르는 사이노 앞에서 산산조각 날까 두려워하고, 주다르와 모르기는 알하이탐과 사이노에게 자비를 구하며 현자가 스카라무슈로 새 신을 만들려 한 계획을 드러낸다."
-      },
-      {
-       "t_raw": "잘못된 믿음이 걷힌 뒤 Rahman이 택한 것은 변명이 아니라 책임자 인도와 진실 공유였다.",
-       "interp": true,
-       "dropped": false,
-       "t": "잘못된 믿음이 걷힌 뒤 라흐만이 택한 것은 변명이 아니라 책임자 인도와 진실 공유였다."
+       "t": "주다르는 사이노를 보자 몸을 움츠리며 토막 날까 봐 두려워한다."
       }
      ],
      "sources": [
@@ -524,38 +765,43 @@
        ]
       }
      ],
-     "heading": "작중 행적 — 적왕 유적의 진실",
+     "heading": "작중 행적 — 적왕 유적과 진실",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Sumeru City 잠입과 현자들 전복",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Rahman, the Akademiya has caught wind of your smuggling and illicit sales. If you value your life, I advise you to surrender.",
+     "section": "작중 행적 — Akademiya의 현자들 타도",
+     "status": "accepted",
+     "note": "All sentences are supported by A6, Q3, Q7, Q1, Q25 and Q31.",
+     "quote": "My plan will clear us of any possible suspicion, and also let us enter the city as a big group. There is no better way.",
      "sentences": [
       {
-       "t_raw": "Alhaitham의 계획 아래 Rahman과 부하들은 Cyno에게 \"체포\"되는 형식으로 Sumeru City에 들어갔고, 이 과정에는 Alhaitham이 Akasha에 심은 가짜 체포 공고와 Corps of Thirty의 뜻하지 않은 도움이 작용했다.",
+       "t_raw": "**Alhaitham의 계획**은 현자들을 몰아내고 Lesser Lord Kusanali를 구하는 것이었고, 그 일부로 Rahman과 그의 부하들은 Cyno에게 \"체포\"되는 방식으로 Sumeru City에 잠입한다.",
        "interp": false,
        "dropped": false,
-       "t": "알하이탐의 계획 아래 라흐만과 부하들은 사이노에게 \"체포\"되는 형식으로 수메르성에 들어갔고, 이 과정에는 알하이탐이 「허공」에 심은 가짜 체포 공고와 「30인단」의 뜻하지 않은 도움이 작용했다."
+       "t": "**알하이탐의 계획**은 현자들을 몰아내고 쿠사나리 데비를 구하는 것이었고, 그 일부로 라흐만과 그의 부하들은 사이노에게 \"체포\"되는 방식으로 수메르성에 잠입한다."
       },
       {
-       "t_raw": "Cyno는 Rahman에게 Akademiya가 그의 밀수와 불법 판매를 알아챘다며 목숨을 아끼려면 항복하라고 권했다.",
+       "t_raw": "Rahman은 이 계획이 의심을 씻고 큰 무리로 도시에 들어가게 해 준다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "사이노는 라흐만에게 아카데미아가 그의 밀수와 불법 판매를 알아챘다며 목숨을 아끼려면 항복하라고 권했다."
+       "t": "라흐만은 이 계획이 의심을 씻고 큰 무리로 도시에 들어가게 해 준다고 말한다."
       },
       {
-       "t_raw": "Rahman은 Traveler에게 Cyno를 설득해 달라며, 합의한 계획을 어찌 저버리느냐고 하고 모두 같은 편임을 강조했다.",
+       "t_raw": "Dehya는 Corps of Thirty의 senior consultant Asfand에게 모든 것을 설명했고, Asfand는 Dendro Archon을 구하는 일이라면 도왔을 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 여행자에게 사이노를 설득해 달라며, 합의한 계획을 어찌 저버리느냐고 하고 모두 같은 편임을 강조했다."
+       "t": "데히야는 「30인단」의 선임 고문 아스판드에게 모든 것을 설명했고, 아스판드는 풀의 신을 구하는 일이라면 도왔을 것이라고 말한다.",
+       "polish": {
+        "from": "데히야는 「30인단」의 senior consultant 아스판드에게 모든 것을 설명했고, 아스판드는 풀의 신을 구하는 일이라면 도왔을 것이라고 말한다.",
+        "text": "데히야는 「30인단」의 선임 고문 아스판드에게 모든 것을 설명했고, 아스판드는 풀의 신을 구하는 일이라면 도왔을 것이라고 말한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "**가짜 체포**라는 겉모습은 도시 입성과 경비병 유인을 함께 노린 장치로 보인다.",
-       "interp": true,
+       "t_raw": "Cyno는 Rahman의 밀수와 불법 판매를 언급하며 투항하라고 경고하고, 이틀 뒤 Rahman의 Eremites와 교전해 모두 사로잡겠다고 말한다.",
+       "interp": false,
        "dropped": false,
-       "t": "**가짜 체포**라는 겉모습은 도시 입성과 경비병 유인을 함께 노린 장치로 보인다."
+       "t": "사이노는 라흐만의 밀수와 불법 판매를 언급하며 투항하라고 경고하고, 이틀 뒤 라흐만의 도금 여단과 교전해 모두 사로잡겠다고 말한다."
       }
      ],
      "sources": [
@@ -575,6 +821,27 @@
          "name": "Jnagarbha Day"
         }
        ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Through the Predawn Night",
+       "quest_ko": "여명 전의 어둠 속을 걷다",
+       "version": "3.2",
+       "speaker": "Rahman"
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Boat of Consciousness Lies",
+       "quest_ko": "의식의 배가 당도한 곳",
+       "version": "3.2",
+       "speaker": "Rahman"
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Boat of Consciousness Lies",
+       "quest_ko": "의식의 배가 당도한 곳",
+       "version": "3.2",
+       "speaker": "Rahman"
       },
       {
        "kind": "quest",
@@ -588,61 +855,47 @@
        "quest": "Through the Predawn Night",
        "quest_ko": "여명 전의 어둠 속을 걷다",
        "version": "3.2",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
-       "quest": "Through the Predawn Night",
-       "quest_ko": "여명 전의 어둠 속을 걷다",
-       "version": "3.2",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
-       "quest": "Through the Predawn Night",
-       "quest_ko": "여명 전의 어둠 속을 걷다",
-       "version": "3.2",
-       "speaker": "Rahman"
+       "speaker": "Cyno"
       }
      ],
-     "heading": "작중 행적 — 수메르성 잠입과 현자들 전복",
+     "heading": "작중 행적 — 아카데미아의 현자들 타도",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Sumeru City 잠입과 현자들 전복",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Indeed. The \"trap\" has been set. All we need to do is lead them there.",
+     "section": "작중 행적 — Akademiya의 현자들 타도",
+     "status": "accepted",
+     "note": "All facts are supported by A6, Q19, Q24 and Q26. The interpretation follows reasonably from them.",
+     "quote": "Here they come. Did you see that, Rahman? They came out from the Akademiya in droves!",
      "sentences": [
       {
-       "t_raw": "Rahman은 도시에서 오래 숨어 지내며 기다린 순간이라 말했고, 자신의 계획이 의심을 씻고 큰 무리로 도시에 들어가게 해 줄 것이라고 했다.",
+       "t_raw": "Alhaitham이 Akasha에 심어 둔 가짜 체포 발표를 이용해 Dehya, Rahman, Isak가 Akademiya의 경비병들을 **함정**으로 유인해 제압한다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 도시에서 오래 숨어 지내며 기다린 순간이라 말했고, 자신의 계획이 의심을 씻고 큰 무리로 도시에 들어가게 해 줄 것이라고 했다."
+       "t": "알하이탐이 「허공」에 심어 둔 가짜 체포 발표를 이용해 데히야, 라흐만, 이사크가 아카데미아의 경비병들을 **함정**으로 유인해 제압한다."
       },
       {
-       "t_raw": "Rahman은 그들이 오는 것 같다며 나가자고 했고, Dehya는 Akademiya에서 경비병들이 떼로 나왔다고 알렸다.",
+       "t_raw": "Rahman은 함정이 설치되었고 이제 그들을 그곳으로 이끌면 된다고 말한 뒤, 오는 이들이 보인다며 나아간다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 그들이 오는 것 같다며 나가자고 했고, 데히야는 아카데미아에서 경비병들이 떼로 나왔다고 알렸다."
+       "t": "라흐만은 함정이 설치되었고 이제 그들을 그곳으로 이끌면 된다고 말한 뒤, 오는 이들이 보인다며 나아간다."
       },
       {
-       "t_raw": "Rahman은 함정이 설치됐다며 그들을 그곳으로 유인하자고 했고, Dehya를 암사자에 비유하며 그런 사냥꾼과 함께라면 사냥감이 멀리 도망가지 못할 것이라 웃었다.",
+       "t_raw": "Dehya는 Akademiya에서 경비병들이 떼로 나오는 것을 보고 Rahman에게 그들을 보라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 함정이 설치됐다며 그들을 그곳으로 유인하자고 했고, 데히야를 암사자에 비유하며 그런 사냥꾼과 함께라면 사냥감이 멀리 도망가지 못할 것이라 웃었다."
+       "t": "데히야는 아카데미아에서 경비병들이 떼로 나오는 것을 보고 라흐만에게 그들을 보라고 말한다."
       },
       {
-       "t_raw": "Dehya, Rahman, Isak은 유인된 Akademiya 경비병들을 제압했다.",
+       "t_raw": "Sumeru City의 다른 Corps of Thirty는 현자들의 대우에 지쳐 있었고, 이 사건에 눈감아 주기로 한다.",
        "interp": false,
        "dropped": false,
-       "t": "데히야, 라흐만, 이사크는 유인된 아카데미아 경비병들을 제압했다."
+       "t": "수메르성의 다른 「30인단」은 현자들의 대우에 지쳐 있었고, 이 사건에 눈감아 주기로 한다."
       },
       {
-       "t_raw": "Corps of Thirty의 다른 이들은 현자들의 처우에 지쳐 있었고, 이 일에 눈감아 주기로 했다.",
-       "interp": false,
+       "t_raw": "Rahman과 Dehya가 경비병들의 이동을 함께 확인하며 함정으로 이끄는 모습은 두 사람이 이 작전에서 호흡을 맞췄음을 보여 준다.",
+       "interp": true,
        "dropped": false,
-       "t": "「30인단」의 다른 이들은 현자들의 처우에 지쳐 있었고, 이 일에 눈감아 주기로 했다."
+       "t": "라흐만과 데히야가 경비병들의 이동을 함께 확인하며 함정으로 이끄는 모습은 두 사람이 이 작전에서 호흡을 맞췄음을 보여 준다."
       }
      ],
      "sources": [
@@ -672,13 +925,6 @@
       },
       {
        "kind": "quest",
-       "quest": "Through the Predawn Night",
-       "quest_ko": "여명 전의 어둠 속을 걷다",
-       "version": "3.2",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
        "quest": "Jnagarbha Day",
        "quest_ko": "식장일(識藏日)",
        "version": "3.2",
@@ -689,85 +935,61 @@
        "quest": "Jnagarbha Day",
        "quest_ko": "식장일(識藏日)",
        "version": "3.2",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
-       "quest": "Jnagarbha Day",
-       "quest_ko": "식장일(識藏日)",
-       "version": "3.2",
-       "speaker": "Rahman"
+       "speaker": "Dehya"
       }
      ],
-     "heading": "작중 행적 — 수메르성 잠입과 현자들 전복",
+     "heading": "작중 행적 — 아카데미아의 현자들 타도",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Sumeru City 잠입과 현자들 전복",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Akademiya의 현자들 타도",
+     "status": "accepted",
+     "note": "All sentences are supported by M1, Q15, Q16 and Q28. The interpretation is reasonable.",
      "quote": "It's all thanks to Rahman and his brave team, as well as their bold strategy.",
      "sentences": [
       {
-       "t_raw": "Dehya는 Corps of Thirty의 선임 고문 Asfand를 찾아가 사정을 설명했고, Asfand는 Dendro Archon 구출을 위한 일이었다면 일찍 말했더라면 도왔을 것이라고 했다.",
+       "t_raw": "Rahman이 넘긴 Judar와 Morghi는 Alhaitham과 Cyno를 보자 살려 달라고 빌며, 현자들이 Scaramouche를 이용해 Divine Knowledge Capsules로 새 신을 만들려는 계획을 드러낸다.",
        "interp": false,
        "dropped": false,
-       "t": "데히야는 「30인단」의 선임 고문 아스판드를 찾아가 사정을 설명했고, 아스판드는 풀의 신 구출을 위한 일이었다면 일찍 말했더라면 도왔을 것이라고 했다."
+       "t": "라흐만이 넘긴 주다르와 모르기는 알하이탐과 사이노를 보자 살려 달라고 빌며, 현자들이 스카라무슈를 이용해 신성한 지식 캡슐로 새 신을 만들려는 계획을 드러낸다."
       },
       {
-       "t_raw": "Rahman은 Traveler에게 Lesser Lord Kusanali 구출에 성공했는지 물었다.",
+       "t_raw": "Rahman은 일행에게 같은 편임을 확인시키고 이들은 친구이니 경계할 필요가 없다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 여행자에게 쿠사나리 데비 구출에 성공했는지 물었다."
+       "t": "라흐만은 일행에게 같은 편임을 확인시키고 이들은 친구이니 경계할 필요가 없다고 말한다."
       },
       {
-       "t_raw": "Rahman과 부하들의 잠입은 Lesser Lord Kusanali 구출과 **현자들 전복** 계획의 일부로 진행되었다.",
+       "t_raw": "Cyno는 Rahman과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만과 부하들의 잠입은 쿠사나리 데비 구출과 **현자들 전복** 계획의 일부로 진행되었다."
+       "t": "사이노는 라흐만과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분이라고 말한다."
       },
       {
-       "t_raw": "Cyno는 Rahman과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분이라고 말했다.",
-       "interp": false,
+       "t_raw": "Cyno의 이 말은 Rahman 일행이 현자들 타도 작전에서 중요한 역할을 했음을 인정한 것으로 볼 수 있다.",
+       "interp": true,
        "dropped": false,
-       "t": "사이노는 라흐만과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분이라고 말했다."
-      },
-      {
-       "t_raw": "Rahman은 그 밖에도 Cyno와 논의할 일이 있다고 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라흐만은 그 밖에도 사이노와 논의할 일이 있다고 했다."
+       "t": "사이노의 이 말은 라흐만 일행이 현자들 타도 작전에서 중요한 역할을 했음을 인정한 것으로 볼 수 있다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Story",
-       "paragraph": "A6",
+       "page": "Morghi",
+       "revision": 1326969,
+       "section": "Profile",
+       "paragraph": "M1",
        "wiki_refs": [
         {
          "type": "quest",
-         "name": "Through the Predawn Night"
-        },
-        {
-         "type": "quest",
-         "name": "Jnagarbha Day"
+         "name": "Secret of the Scorching Desert"
         }
        ]
       },
       {
        "kind": "quest",
-       "quest": "Where the Boat of Consciousness Lies",
-       "quest_ko": "의식의 배가 당도한 곳",
-       "version": "3.2",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
-       "quest": "Where the Boat of Consciousness Lies",
-       "quest_ko": "의식의 배가 당도한 곳",
+       "quest": "Through the Predawn Night",
+       "quest_ko": "여명 전의 어둠 속을 걷다",
        "version": "3.2",
        "speaker": "Rahman"
       },
@@ -780,45 +1002,67 @@
       },
       {
        "kind": "quest",
-       "quest": "Where the Boat of Consciousness Lies",
-       "quest_ko": "의식의 배가 당도한 곳",
-       "version": "3.2",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
        "quest": "As by a God's Side",
        "quest_ko": "신의 곁에서",
        "version": "3.2",
        "speaker": "Cyno"
+      },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Story",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Through the Predawn Night"
+        },
+        {
+         "type": "quest",
+         "name": "Jnagarbha Day"
+        }
+       ]
       }
      ],
-     "heading": "작중 행적 — 수메르성 잠입과 현자들 전복",
+     "heading": "작중 행적 — 아카데미아의 현자들 타도",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 사막으로 돌아온 뒤",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After the sages' plot is foiled and Kusanali freed, Rahman returns to the desert with Setaria.",
+     "section": "작중 행적 — 사막으로 돌아가다",
+     "status": "accepted",
+     "note": "All sentences are supported by A7 and Q4. The interpretation is reasonable.",
+     "quote": "Setaria will return to support education here and teach people from the desert.",
      "sentences": [
       {
-       "t_raw": "Kusanali가 구출되고 현자들의 계획이 무산된 뒤, Rahman은 Setaria와 함께 **사막으로 돌아간다**.",
+       "t_raw": "현자들의 계획이 좌절되고 Kusanali가 풀려난 뒤, Rahman은 Setaria와 함께 사막으로 돌아간다.",
        "interp": false,
        "dropped": false,
-       "t": "쿠사나리가 구출되고 현자들의 계획이 무산된 뒤, 라흐만은 세타르와 함께 **사막으로 돌아간다**."
+       "t": "현자들의 계획이 좌절되고 쿠사나리가 풀려난 뒤, 라흐만은 세타르와 함께 사막으로 돌아간다."
       },
       {
-       "t_raw": "Traveler가 Cyno의 General Mahamatra 재임 축하 연회에 초대하려 찾아오자 Rahman은 **초대를 사양**하고, Setaria와 함께 사막에서 가르칠 Eremites를 찾으며 Cyno와 학술 자료를 전하는 일을 계획한다.",
+       "t_raw": "Traveler가 Cyno의 General Mahamatra 복직 축하연에 그를 초대하려 찾아오자, Rahman은 초대를 사양하고 자신과 Setaria가 가르치고 사막 전역에 지식을 전할 Eremites를 찾을 계획이라고 설명한다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자가 사이노의 대마하마트라 재임 축하 연회에 초대하려 찾아오자 라흐만은 **초대를 사양**하고, 세타르와 함께 사막에서 가르칠 도금 여단을 찾으며 사이노와 학술 자료를 전하는 일을 계획한다."
+       "t": "여행자가 사이노의 대마하마트라 복직 축하연에 그를 초대하려 찾아오자, 라흐만은 초대를 사양하고 자신과 세타르가 가르치고 사막 전역에 지식을 전할 도금 여단을 찾을 계획이라고 설명한다."
       },
       {
-       "t_raw": "Setaria의 교육 지원 구상과 이 계획은 맞물린다고 볼 수 있다.",
+       "t_raw": "그리고 Cyno와 함께 사막 사람들에게 꼭 필요한 학술 자료를 가져갈 계획도 세운다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그리고 사이노와 함께 사막 사람들에게 꼭 필요한 학술 자료를 가져갈 계획도 세운다."
+      },
+      {
+       "t_raw": "Setaria는 이곳으로 돌아와 교육을 지원하고 사막 사람들을 가르칠 예정이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "세타르는 이곳으로 돌아와 교육을 지원하고 사막 사람들을 가르칠 예정이다."
+      },
+      {
+       "t_raw": "**교육**과 학술 자료 보급이라는 목표가 Setaria의 귀환 및 Cyno와의 협력과 맞물려 있음은 이 계획이 단순한 귀향이 아니라 사막 사람들의 학습 조건을 바꾸려는 시도로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "세타르의 교육 지원 구상과 이 계획은 맞물린다고 볼 수 있다."
+       "t": "**교육**과 학술 자료 보급이라는 목표가 세타르의 귀환 및 사이노와의 협력과 맞물려 있음은 이 계획이 단순한 귀향이 아니라 사막 사람들의 학습 조건을 바꾸려는 시도로 보인다."
       }
      ],
      "sources": [
@@ -843,26 +1087,55 @@
        "speaker": "Rahman"
       }
      ],
-     "heading": "작중 행적 — 사막으로 돌아온 뒤",
+     "heading": "작중 행적 — 사막으로 돌아가다",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 사막으로 돌아온 뒤",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ah, this is a blessing that is hard to come by, especially for us, the children of King Deshret. We must hold it most dear indeed.",
+     "section": "작중 행적 — 사막으로 돌아가다",
+     "status": "accepted",
+     "note": "All sentences are supported by A32 to A35, M4 and M5. The interpretation is reasonable.",
+     "quote": "She wants to pass on the things she knows to the desert people. Both Lesser Lord Kusanali and Cyno have approved of this plan, and they've both helped quite a bit, too.",
      "sentences": [
       {
-       "t_raw": "Setaria는 허가를 받아 Akademiya를 떠나 사막 사람들에게 지식을 전하려 하고, Lesser Lord Kusanali와 Cyno가 이를 승인하고 도왔다.",
+       "t_raw": "Setaria는 허가를 받고 Akademiya를 떠났고, 자신이 아는 것을 사막 사람들에게 전하고 싶어 한다.",
        "interp": false,
        "dropped": false,
-       "t": "세타르는 허가를 받아 아카데미아를 떠나 사막 사람들에게 지식을 전하려 하고, 쿠사나리 데비와 사이노가 이를 승인하고 도왔다."
+       "t": "세타르는 허가를 받고 아카데미아를 떠났고, 자신이 아는 것을 사막 사람들에게 전하고 싶어 한다."
       },
       {
-       "t_raw": "Rahman은 Cyno가 맡긴 일과 Setaria 보호로 바빠졌으며, 이 일을 King Deshret의 자손인 자신들에게 쉽게 오지 않는 축복이라며 소중히 여겨야 한다고 말한다.",
+       "t_raw": "그녀는 Nahida를 만난 뒤 교사가 되어 배움에서 소외된 자신의 사람들에게 지식을 나누고자 했으며, 그 이름의 뜻처럼 사람들을 위한 별이 되기를 바란다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 사이노가 맡긴 일과 세타르 보호로 바빠졌으며, 이 일을 적왕의 자손인 자신들에게 쉽게 오지 않는 축복이라며 소중히 여겨야 한다고 말한다."
+       "t": "그녀는 나히다를 만난 뒤 교사가 되어 배움에서 소외된 자신의 사람들에게 지식을 나누고자 했으며, 그 이름의 뜻처럼 사람들을 위한 별이 되기를 바란다."
+      },
+      {
+       "t_raw": "Lesser Lord Kusanali와 Cyno는 이 계획을 승인했고 적지 않게 도왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쿠사나리 데비와 사이노는 이 계획을 승인했고 적지 않게 도왔다."
+      },
+      {
+       "t_raw": "Rahman은 최근 더 바빠졌다며, Cyno가 맡긴 일을 마치는 것 외에도 my lady인 Setaria를 보호하는 일을 걱정해야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라흐만은 최근 더 바빠졌다며, 사이노가 맡긴 일을 마치는 것 외에도 나의 레이디인 세타르를 보호하는 일을 걱정해야 한다고 말한다.",
+       "polish": {
+        "from": "라흐만은 최근 더 바빠졌다며, 사이노가 맡긴 일을 마치는 것 외에도 my lady인 세타르를 보호하는 일을 걱정해야 한다고 말한다.",
+        "text": "라흐만은 최근 더 바빠졌다며, 사이노가 맡긴 일을 마치는 것 외에도 나의 레이디인 세타르를 보호하는 일을 걱정해야 한다고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Rahman과 그 무리는 Setaria 및 개편된 Akademiya와 함께 Eremites와 다른 사막 사람들 사이의 교육을 도모하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라흐만과 그 무리는 세타르 및 개편된 아카데미아와 함께 도금 여단과 다른 사막 사람들 사이의 교육을 도모하고 있다."
+      },
+      {
+       "t_raw": "이처럼 Setaria의 교육 의지와 Kusanali·Cyno의 지원, Rahman의 호위가 겹치면서, Rahman이 말한 **어렵게 얻은 축복**은 개인의 바람만이 아니라 사막 사람들을 위한 교육 계획이 주변의 협력으로 구체화되는 흐름으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 세타르의 교육 의지와 쿠사나리·사이노의 지원, 라흐만의 호위가 겹치면서, 라흐만이 말한 **어렵게 얻은 축복**은 개인의 바람만이 아니라 사막 사람들을 위한 교육 계획이 주변의 협력으로 구체화되는 흐름으로 보인다."
       }
      ],
      "sources": [
@@ -897,87 +1170,7 @@
        "section": "Dialogue > Dialogue Set #2",
        "paragraph": "A35",
        "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 사막으로 돌아온 뒤",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — 사막으로 돌아온 뒤",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "We're friends now, I say — should you need me, I won't just stand idly by and watch.",
-     "sentences": [
-      {
-       "t_raw": "Rahman은 Wall of Samiel 건너편 사람들을 좋아하지 않으면서도 King Deshret의 부활에 더는 헛된 믿음을 품지 않겠다고 하고, Traveler를 친구로 부르며 필요하면 가만히 보지 않겠다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라흐만은 방사벽 건너편 사람들을 좋아하지 않으면서도 적왕의 부활에 더는 헛된 믿음을 품지 않겠다고 하고, 여행자를 친구로 부르며 필요하면 가만히 보지 않겠다고 한다."
       },
-      {
-       "t_raw": "그는 높은 Akademiya와 맞서는 만큼 조심하라고 경고하고, 도움이 필요하면 주저하지 말라고 하며 가까운 앞으로는 이곳에 있겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 높은 아카데미아와 맞서는 만큼 조심하라고 경고하고, 도움이 필요하면 주저하지 말라고 하며 가까운 앞으로는 이곳에 있겠다고 말한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "A24",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "A25",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "A26",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "A38",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 사막으로 돌아온 뒤",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — 사막으로 돌아온 뒤",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Setaria's meeting with Nahida made her realize her that she should become a teacher and bring knowledge to her people.",
-     "sentences": [
-      {
-       "t_raw": "이후 Rahman은 Setaria와 개혁된 Akademiya와 함께 Eremites와 다른 사막 사람들 사이에 **교육을 보급**하는 일을 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이후 라흐만은 세타르와 개혁된 아카데미아와 함께 도금 여단과 다른 사막 사람들 사이에 **교육을 보급**하는 일을 한다."
-      },
-      {
-       "t_raw": "Setaria는 Nahida를 만난 뒤 교사가 되기로 했고, Aaru Village에서 Cyno와 함께 Rahman을 만나 이전 Akademiya로부터 심하게 방치된 사막 사람들의 삶의 질을 높이는 방법을 논의했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "세타르는 나히다를 만난 뒤 교사가 되기로 했고, 아루 마을에서 사이노와 함께 라흐만을 만나 이전 아카데미아로부터 심하게 방치된 사막 사람들의 삶의 질을 높이는 방법을 논의했다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "The Eremites",
@@ -995,32 +1188,44 @@
        "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 사막으로 돌아온 뒤",
+     "heading": "작중 행적 — 사막으로 돌아가다",
      "latin_left": []
     },
     {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Rahman, I've always thought of you as a man of his word. What's this about?",
+     "section": "작중 행적 — 사막으로 돌아가다",
+     "status": "accepted",
+     "note": "All sentences are supported by A29 to A33, A38, Q10, Q16, Q21, Q27 and Q32. The interpretation is reasonable.",
+     "quote": "If there's anything I can help you with, don't hesitate to ask. I'll be here for the foreseeable future, in any case.",
      "sentences": [
       {
-       "t_raw": "Rahman에게 Dehya는 **오랜 친구**다.",
+       "t_raw": "Where the Boat of Consciousness Lies 완료 후 Rahman은 Traveler를 다시 만나 근황을 묻고, Traveler가 조금은 괜찮아졌다고 답하자 자신은 최근 더 바빠졌으며 Cyno가 맡긴 일과 Setaria 보호를 함께 신경 써야 한다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만에게 데히야는 **오랜 친구**다."
+       "t": "의식의 배가 당도한 곳 완료 후 라흐만은 여행자를 다시 만나 근황을 묻고, 여행자가 조금은 괜찮아졌다고 답하자 자신은 최근 더 바빠졌으며 사이노가 맡긴 일과 세타르 보호를 함께 신경 써야 한다고 말한다."
       },
       {
-       "t_raw": "Rahman이 Akademiya의 잘못된 정보로 Traveler 일행과 충돌했을 때 Dehya도 그 일행에 있었고, Dehya가 친분을 이용해 잠입하려다 Isak의 실수로 드러나자 Rahman은 Alhaitham과 Cyno를 보고 적대했다.",
+       "t_raw": "그는 자신이 잘 지내고 있으며 최근 좋은 일이 많이 생겼다고 말하고, 그 외에도 Cyno와 논의할 일이 있다고 덧붙인다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만이 아카데미아의 잘못된 정보로 여행자 일행과 충돌했을 때 데히야도 그 일행에 있었고, 데히야가 친분을 이용해 잠입하려다 이사크의 실수로 드러나자 라흐만은 알하이탐과 사이노를 보고 적대했다."
+       "t": "그는 자신이 잘 지내고 있으며 최근 좋은 일이 많이 생겼다고 말하고, 그 외에도 사이노와 논의할 일이 있다고 덧붙인다."
       },
       {
-       "t_raw": "Dehya가 Alhaitham의 정직함을 믿는다는 표시로 팔을 내걸자 Rahman은 인질 교환을 고려했으나, 약속한 날 Village Keeper 한 명만 데려와 Dehya가 격분해 공격했고 Dehya는 그를 약속을 지키는 사람으로 여겨 왔다며 따져 묻는다.",
+       "t_raw": "또한 이들은 우리 친구이니 그렇게 경계할 필요가 없다고 말하며, 도움이 필요하면 주저하지 말라고 하고 앞으로도 이곳에 있을 것이라고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "데히야가 알하이탐의 정직함을 믿는다는 표시로 팔을 내걸자 라흐만은 인질 교환을 고려했으나, 약속한 날 마을 지킴이 한 명만 데려와 데히야가 격분해 공격했고 데히야는 그를 약속을 지키는 사람으로 여겨 왔다며 따져 묻는다."
+       "t": "또한 이들은 우리 친구이니 그렇게 경계할 필요가 없다고 말하며, 도움이 필요하면 주저하지 말라고 하고 앞으로도 이곳에 있을 것이라고 전한다."
+      },
+      {
+       "t_raw": "Paimon이 Cyno와 Rahman의 행방을 묻자, Nilou는 Rahman의 소재를 잘 모르지만 Dehya와 함께 있을 것이라고 짐작한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬이 사이노와 라흐만의 행방을 묻자, 닐루는 라흐만의 소재를 잘 모르지만 데히야와 함께 있을 것이라고 짐작한다."
+      },
+      {
+       "t_raw": "Cyno가 맡긴 일과 Setaria 보호, 도움을 주겠다는 태도가 함께 나타나며, Rahman이 주변의 협력과 지원에 자신의 역할을 두고 있음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사이노가 맡긴 일과 세타르 보호, 도움을 주겠다는 태도가 함께 나타나며, 라흐만이 주변의 협력과 지원에 자신의 역할을 두고 있음을 보여 준다."
       }
      ],
      "sources": [
@@ -1028,10 +1233,85 @@
        "kind": "wiki",
        "page": "Rahman",
        "revision": 1403965,
-       "section": "Profile",
-       "paragraph": "A2",
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A29",
        "wiki_refs": []
       },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A32",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "A33",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Toast to Victory",
+       "quest_ko": "승리의 축배를 들어라",
+       "version": "3.2",
+       "speaker": "Rahman"
+      }
+     ],
+     "heading": "작중 행적 — 사막으로 돌아가다",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by A4.",
+     "quote": "Only Dehya's willingness to sacrifice her arm as a token of her faith in Alhaitham's honesty moves Rahman enough to consider a hostage exchange: Alhaitham for the missing Village Keepers.",
+     "sentences": [
+      {
+       "t_raw": "Dehya는 Rahman과의 친분을 이용해 그의 무리에 접근하려 했지만, Isak가 대화 중 실수로 그녀를 드러냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데히야는 라흐만과의 친분을 이용해 그의 무리에 접근하려 했지만, 이사크가 대화 중 실수로 그녀를 드러냈다."
+      },
+      {
+       "t_raw": "Rahman은 Alhaitham과 Cyno가 포함된 일행을 보고 적대했고, Dehya와 Alhaitham의 설득도 받아들이지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라흐만은 알하이탐과 사이노가 포함된 일행을 보고 적대했고, 데히야와 알하이탐의 설득도 받아들이지 않았다."
+      },
+      {
+       "t_raw": "Dehya가 Alhaitham의 정직함을 믿는 표시로 **팔을 내거는 결심**을 하자, Rahman은 인질 교환을 고려했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데히야가 알하이탐의 정직함을 믿는 표시로 **팔을 내거는 결심**을 하자, 라흐만은 인질 교환을 고려했다."
+      },
+      {
+       "t_raw": "친분은 충돌을 막지 못했지만, Dehya의 결심이 Rahman을 움직여 교환을 검토하게 만든 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "친분은 충돌을 막지 못했지만, 데히야의 결심이 라흐만을 움직여 교환을 검토하게 만든 셈이다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Rahman",
@@ -1044,7 +1324,43 @@
          "name": "Cry From the Eleazar Hospital"
         }
        ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported by A5 and Q30. The interpretation is reasonable.",
+     "quote": "After this revelation, Rahman apologizes to the group for being misled and informs the rest of his group of the truth.",
+     "sentences": [
+      {
+       "t_raw": "약속한 날 Rahman은 Village Keeper Khalil 한 명만 데려와 약속을 어겼고, Dehya는 격분해 그와 부하들을 공격했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약속한 날 라흐만은 마을 지킴이 카릴 한 명만 데려와 약속을 어겼고, 데히야는 격분해 그와 부하들을 공격했다."
       },
+      {
+       "t_raw": "지진으로 King Deshret 시대 유적에 떨어진 뒤, Rahman은 Kasala의 기록을 접하고 일행에게 사과하고 부하들에게 진실을 알렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지진으로 적왕 시대 유적에 떨어진 뒤, 라흐만은 카살레의 기록을 접하고 일행에게 사과하고 부하들에게 진실을 알렸다."
+      },
+      {
+       "t_raw": "그는 Judar와 Morghi를 넘겼고, Dehya는 Rahman이 바보가 아니며 사막에서 세력을 이끄는 일이 쉽지 않다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 주다르와 모르기를 넘겼고, 데히야는 라흐만이 바보가 아니며 사막에서 세력을 이끄는 일이 쉽지 않다고 말한다."
+      },
+      {
+       "t_raw": "약속 위반으로 갈등이 폭발했지만, 진실을 받아들인 뒤의 사과와 책임자 인도는 두 사람의 관계가 적대에서 협력으로 돌아서는 계기가 된 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "약속 위반으로 갈등이 폭발했지만, 진실을 받아들인 뒤의 사과와 책임자 인도는 두 사람의 관계가 적대에서 협력으로 돌아서는 계기가 된 것으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Rahman",
@@ -1071,33 +1387,40 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "The request to persuade Cyno (Q9) is from the operation. The line about other business to discuss with Cyno (Q10) comes from the later quest 'A Toast to Victory'. The English does not place it during the operation.",
      "quote": "It's all thanks to Rahman and his brave team, as well as their bold strategy.",
      "sentences": [
       {
-       "t_raw": "Rahman은 Akademiya의 고위 인물인 Cyno가 일행에 있자 적대했다.",
+       "t_raw": "처음 Rahman은 Alhaitham과 Cyno를 Akademiya의 고위 인물로 보고 적대했지만, 이후 Alhaitham의 계획에 따라 Cyno가 Rahman과 부하들을 **가짜 체포**하는 방식으로 Sumeru City에 들어갔다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 아카데미아의 고위 인물인 사이노가 일행에 있자 적대했다."
+       "t": "처음 라흐만은 알하이탐과 사이노를 아카데미아의 고위 인물로 보고 적대했지만, 이후 알하이탐의 계획에 따라 사이노가 라흐만과 부하들을 **가짜 체포**하는 방식으로 수메르성에 들어갔다."
       },
       {
-       "t_raw": "Cyno는 Rahman의 Eremites를 체포할 계획을 세웠지만, Rahman과 부하들은 Cyno에게 ‘체포’되는 방식으로 Sumeru City에 잠입했고, Rahman은 Cyno가 계획에 반대하자 Traveler에게 설득을 부탁한다.",
+       "t_raw": "Dehya는 Asfand, Corps of Thirty의 선임 고문에게 사정을 설명했고, 현자들의 처우에 지친 다른 Corps of Thirty도 사건을 모른 척했다.",
        "interp": false,
        "dropped": false,
-       "t": "사이노는 라흐만의 도금 여단을 체포할 계획을 세웠지만, 라흐만과 부하들은 사이노에게 '체포'되는 방식으로 수메르성에 잠입했고, 라흐만은 사이노가 계획에 반대하자 여행자에게 설득을 부탁한다."
+       "t": "데히야는 아스판드, 「30인단」의 선임 고문에게 사정을 설명했고, 현자들의 처우에 지친 다른 「30인단」도 사건을 모른 척했다."
       },
       {
-       "t_raw": "Cyno는 Rahman과 그의 팀의 과감한 전략 덕분이라고 말하고, 이후 Rahman은 Cyno와 학술 자료를 마련할 계획을 세운다.",
+       "t_raw": "작전 중 Rahman은 Cyno가 계획에 반대한다며 Traveler에게 설득을 부탁하고, 이후 'A Toast to Victory' 퀘스트에서 Cyno와 논의할 다른 일이 있다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "사이노는 라흐만과 그의 팀의 과감한 전략 덕분이라고 말하고, 이후 라흐만은 사이노와 학술 자료를 마련할 계획을 세운다."
+       "repaired": true,
+       "t": "작전 중 라흐만은 사이노가 계획에 반대한다며 여행자에게 설득을 부탁하고, 이후 '승리의 축배를 들어라' 퀘스트에서 사이노와 논의할 다른 일이 있다고 말한다."
       },
       {
-       "t_raw": "**적대에서 협력으로**의 전환은 서로의 역할을 인정하고 같은 목표를 공유한 데서 나온 것으로 보인다.",
+       "t_raw": "성공 후 Cyno는 Rahman과 그의 용감한 팀, 대담한 전략 덕분이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "성공 후 사이노는 라흐만과 그의 용감한 팀, 대담한 전략 덕분이라고 말한다."
+      },
+      {
+       "t_raw": "가짜 체포와 실제 협력이 겹치면서, Rahman과 Cyno의 관계는 Akademiya 쪽 적대에서 같은 편의 협력으로 바뀐 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "**적대에서 협력으로**의 전환은 서로의 역할을 인정하고 같은 목표를 공유한 데서 나온 것으로 보인다."
+       "t": "가짜 체포와 실제 협력이 겹치면서, 라흐만과 사이노의 관계는 아카데미아 쪽 적대에서 같은 편의 협력으로 바뀐 것으로 보인다."
       }
      ],
      "sources": [
@@ -1132,17 +1455,11 @@
        ]
       },
       {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Story",
-       "paragraph": "A7",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "A Toast to Victory"
-        }
-       ]
+       "kind": "quest",
+       "quest": "Where the Boat of Consciousness Lies",
+       "quest_ko": "의식의 배가 당도한 곳",
+       "version": "3.2",
+       "speaker": "Rahman"
       },
       {
        "kind": "quest",
@@ -1153,15 +1470,15 @@
       },
       {
        "kind": "quest",
-       "quest": "As by a God's Side",
-       "quest_ko": "신의 곁에서",
+       "quest": "A Toast to Victory",
+       "quest_ko": "승리의 축배를 들어라",
        "version": "3.2",
-       "speaker": "Cyno"
+       "speaker": "Rahman"
       },
       {
        "kind": "quest",
-       "quest": "Through the Predawn Night",
-       "quest_ko": "여명 전의 어둠 속을 걷다",
+       "quest": "As by a God's Side",
+       "quest_ko": "신의 곁에서",
        "version": "3.2",
        "speaker": "Cyno"
       }
@@ -1171,44 +1488,36 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ah, this is a blessing that is hard to come by, especially for us, the children of King Deshret. We must hold it most dear indeed.",
+     "status": "accepted",
+     "note": "All supported by A7, M5 and A19-A26. The interpretation is reasonable.",
+     "quote": "We're friends now, I say — should you need me, I won't just stand idly by and watch.",
      "sentences": [
       {
-       "t_raw": "Rahman은 Setaria와 사막으로 돌아가 교육을 펼칠 Eremites를 찾고, Cyno와 함께 학술 자료를 보급하려 한다.",
+       "t_raw": "Setaria는 Nahida와의 만남 뒤 교사가 되기로 결심했고, Cyno와 함께 Aaru Village에서 Rahman과 사막 사람들의 삶의 질을 논의한 뒤 그와 사막으로 돌아가 교육과 학술 자료 보급을 도모한다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 세타르와 사막으로 돌아가 교육을 펼칠 도금 여단을 찾고, 사이노와 함께 학술 자료를 보급하려 한다."
+       "t": "세타르는 나히다와의 만남 뒤 교사가 되기로 결심했고, 사이노와 함께 아루 마을에서 라흐만과 사막 사람들의 삶의 질을 논의한 뒤 그와 사막으로 돌아가 교육과 학술 자료 보급을 도모한다."
       },
       {
-       "t_raw": "Setaria는 Nahida와 만난 뒤 Akademiya를 떠나 Aaru Village에서 Rahman과 사막 사람들의 삶의 질을 높일 방법을 논의했다.",
+       "t_raw": "Rahman은 Traveler를 새 친구라 부르고, 변화가 갑작스러워 길을 잃을 것 같다고 털어놓으며 King Deshret의 부활에 더는 망상을 품지 않겠다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "세타르는 나히다와 만난 뒤 아카데미아를 떠나 아루 마을에서 라흐만과 사막 사람들의 삶의 질을 높일 방법을 논의했다."
+       "t": "라흐만은 여행자를 새 친구라 부르고, 변화가 갑작스러워 길을 잃을 것 같다고 털어놓으며 적왕의 부활에 더는 망상을 품지 않겠다고 말한다."
       },
       {
-       "t_raw": "Rahman은 Setaria의 계획을 King Deshret의 아이들에게 어렵게 온 축복으로 여긴다.",
+       "t_raw": "그는 이제 친구라며 필요하면 가만히 보지 않겠다고 하고, Akademiya에 맞서는 Traveler에게 조심하라고 경고한다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 세타르의 계획을 적왕의 아이들에게 어렵게 온 축복으로 여긴다."
+       "t": "그는 이제 친구라며 필요하면 가만히 보지 않겠다고 하고, 아카데미아에 맞서는 여행자에게 조심하라고 경고한다."
       },
       {
-       "t_raw": "과거 King Deshret의 부활을 믿었던 Rahman이 이제는 교육과 학술 자료 보급으로 **사막 사람들**을 돕는 쪽으로 관심을 옮긴 것으로 보인다.",
+       "t_raw": "Setaria와의 사막 교육 구상과 Traveler에 대한 우호적인 태도는 그가 King Deshret 부활에 대한 믿음을 접고 주변과 협력 관계를 넓히고 있음을 보여주는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "과거 적왕의 부활을 믿었던 라흐만이 이제는 교육과 학술 자료 보급으로 **사막 사람들**을 돕는 쪽으로 관심을 옮긴 것으로 보인다."
+       "t": "세타르와의 사막 교육 구상과 여행자에 대한 우호적인 태도는 그가 적왕 부활에 대한 믿음을 접고 주변과 협력 관계를 넓히고 있음을 보여주는 것으로 보인다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Profile",
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Rahman",
@@ -1234,16 +1543,32 @@
        "kind": "wiki",
        "page": "Rahman",
        "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "A34",
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A19",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Rahman",
        "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "A35",
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "A25",
        "wiki_refs": []
       }
      ],
@@ -1251,191 +1576,28 @@
      "latin_left": []
     },
     {
-     "section": "능력과 처세",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It's a one-for-one exchange. Sounds fair, don't ya think?",
-     "sentences": [
-      {
-       "t_raw": "Rahman은 Aaru Village의 Village Keepers를 인질로 잡아 Akademiya와 맞서려 했고, 그 인질들로 Akademiya 세력을 밟아 Wall of Samiel 너머로 싸워 나가겠다고 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라흐만은 아루 마을의 마을 지킴이를 인질로 잡아 아카데미아와 맞서려 했고, 그 인질들로 아카데미아 세력을 밟아 방사벽 너머로 싸워 나가겠다고 했다."
-      },
-      {
-       "t_raw": "Alhaitham과 Cyno 앞에서 적대하던 그는 Dehya가 Alhaitham의 정직함을 믿는다는 표시로 팔을 내걸자 Alhaitham과 Village Keepers의 1대1 교환을 고려했고, 이를 공정한 교환이라고 표현했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "알하이탐과 사이노 앞에서 적대하던 그는 데히야가 알하이탐의 정직함을 믿는다는 표시로 팔을 내걸자 알하이탐과 마을 지킴이의 1대1 교환을 고려했고, 이를 공정한 교환이라고 표현했다."
-      },
-      {
-       "t_raw": "Dehya는 그에게 겁먹지 말라고 했으며, 사막에서 자기 세력을 이끄는 일이 쉽지 않다고 평했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "데히야는 그에게 겁먹지 말라고 했으며, 사막에서 자기 세력을 이끄는 일이 쉽지 않다고 평했다."
-      },
-      {
-       "t_raw": "이는 **인질 협상**이 Akademiya와의 충돌을 전제로 한 판단임을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 **인질 협상**이 아카데미아와의 충돌을 전제로 한 판단임을 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Story",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Cry From the Eleazar Hospital"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Cry From the Eleazar Hospital",
-       "quest_ko": "비늘병 병원의 울음소리",
-       "version": "3.1",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
-       "quest": "Cry From the Eleazar Hospital",
-       "quest_ko": "비늘병 병원의 울음소리",
-       "version": "3.1",
-       "speaker": "Dehya"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Dehya"
-      }
-     ],
-     "heading": "능력과 처세",
-     "latin_left": []
-    },
-    {
-     "section": "능력과 처세",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It's all thanks to Rahman and his brave team, as well as their bold strategy.",
-     "sentences": [
-      {
-       "t_raw": "그는 체포되는 척하는 계획으로 의심을 씻고 큰 무리로 Sumeru City에 들어갔으며, 이보다 나은 방법은 없다고 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 체포되는 척하는 계획으로 의심을 씻고 큰 무리로 수메르성에 들어갔으며, 이보다 나은 방법은 없다고 했다."
-      },
-      {
-       "t_raw": "Alhaitham이 Akasha에 심은 가짜 체포 공고를 이용해 Dehya, Rahman, Isak은 Akademiya 경비병들을 함정으로 유인해 제압했고, 현자들의 대우에 지친 다른 Corps of Thirty는 눈감아 주었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "알하이탐이 「허공」에 심은 가짜 체포 공고를 이용해 데히야, 라흐만, 이사크는 아카데미아 경비병들을 함정으로 유인해 제압했고, 현자들의 대우에 지친 다른 「30인단」은 눈감아 주었다."
-      },
-      {
-       "t_raw": "Rahman은 함정이 설치됐으니 적을 그곳으로 유인하면 된다고 했고, Cyno는 Rahman과 그의 용감한 팀, 대담한 전략 덕분이라고 평했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라흐만은 함정이 설치됐으니 적을 그곳으로 유인하면 된다고 했고, 사이노는 라흐만과 그의 용감한 팀, 대담한 전략 덕분이라고 평했다."
-      },
-      {
-       "t_raw": "이 **함정 작전**은 체포와 공고를 역이용해 상대를 묶어 두는 판단을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 **함정 작전**은 체포와 공고를 역이용해 상대를 묶어 두는 판단을 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Story",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Through the Predawn Night"
-        },
-        {
-         "type": "quest",
-         "name": "Jnagarbha Day"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Through the Predawn Night",
-       "quest_ko": "여명 전의 어둠 속을 걷다",
-       "version": "3.2",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
-       "quest": "Jnagarbha Day",
-       "quest_ko": "식장일(識藏日)",
-       "version": "3.2",
-       "speaker": "Rahman"
-      },
-      {
-       "kind": "quest",
-       "quest": "As by a God's Side",
-       "quest_ko": "신의 곁에서",
-       "version": "3.2",
-       "speaker": "Cyno"
-      }
-     ],
-     "heading": "능력과 처세",
-     "latin_left": []
-    },
-    {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Supported by A3, A8-A10 and A14-A15.",
      "quote": "I hope I made the right decision...",
      "sentences": [
       {
-       "t_raw": "외형 항목은 아직 비어 있다.",
+       "t_raw": "Rahman의 **외모 항목**은 아직 추가되지 않았다.",
        "interp": false,
        "dropped": false,
-       "t": "외형 항목은 아직 비어 있다."
+       "t": "라흐만의 **외모 항목**은 아직 추가되지 않았다."
       },
       {
-       "t_raw": "King Deshret and the Three Magi를 완료한 뒤에는 '올바른 결정…'과 '내가 올바른 결정을 내렸기를…' 같은 대기 대사가 남는다.",
+       "t_raw": "King Deshret and the Three Magi 완료 뒤의 **대기 대사**에는 '올바른 결정...'과 '올바른 결정을 내렸기를 바란다...'가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "적토의 왕과 세 순례자를 완료한 뒤에는 '올바른 결정…'과 '내가 올바른 결정을 내렸기를…' 같은 대기 대사가 남는다."
+       "t": "적토의 왕과 세 순례자 완료 뒤의 **대기 대사**에는 '올바른 결정...'과 '올바른 결정을 내렸기를 바란다...'가 있다."
       },
       {
-       "t_raw": "같은 완료 시점의 속생각은 '네 눈과 네가 보는 것을 믿어라.'이다.",
+       "t_raw": "같은 시점의 **생각**은 '네 눈과 네가 보는 것을 믿으라'는 내용이다.",
        "interp": false,
        "dropped": false,
-       "t": "같은 완료 시점의 속생각은 '네 눈과 네가 보는 것을 믿어라.'이다."
-      },
-      {
-       "t_raw": "Akasha Pulses, the Kalpa Flame Rises를 완료한 뒤에는 '어렵게 얻은…'과 '지금 우리가 가진 모든 것은 어렵게 얻은 것이다…'가 나오고, 속으로는 '다른 이들에게 새 친구들을 많이 지원하라고 해야겠다.'라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "허공의 선동, 타오르는 겁화를 완료한 뒤에는 '어렵게 얻은…'과 '지금 우리가 가진 모든 것은 어렵게 얻은 것이다…'가 나오고, 속으로는 '다른 이들에게 새 친구들을 많이 지원하라고 해야겠다.'라고 한다."
-      },
-      {
-       "t_raw": "이 대사들은 결정을 되짚는 망설임과, 어렵게 얻은 것과 새 친구들에 대한 인식을 함께 보여 주는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 대사들은 결정을 되짚는 망설임과, 어렵게 얻은 것과 새 친구들에 대한 인식을 함께 보여 주는 것으로 보인다."
+       "t": "같은 시점의 **생각**은 '네 눈과 네가 보는 것을 믿으라'는 내용이다."
       }
      ],
      "sources": [
@@ -1475,6 +1637,46 @@
        "kind": "wiki",
        "page": "Rahman",
        "revision": 1403965,
+       "section": "Thoughts",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
+       "section": "Thoughts",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A11-A13 and A16-A17.",
+     "quote": "Everything we now have is hard-earned...",
+     "sentences": [
+      {
+       "t_raw": "Akasha Pulses, the Kalpa Flame Rises 완료 뒤의 대기 대사에는 '힘들게 얻은...'과 '지금 우리가 가진 모든 것은 힘들게 얻은 것이다...'가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "허공의 선동, 타오르는 겁화 완료 뒤의 대기 대사에는 '힘들게 얻은...'과 '지금 우리가 가진 모든 것은 힘들게 얻은 것이다...'가 있다."
+      },
+      {
+       "t_raw": "그때의 생각으로 다른 이들에게 우리의 새 친구들을 많이 지원하라고 말해야겠다는 내용이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그때의 생각으로 다른 이들에게 우리의 새 친구들을 많이 지원하라고 말해야겠다는 내용이 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 1403965,
        "section": "Idle Quotes",
        "paragraph": "A11",
        "wiki_refs": []
@@ -1486,185 +1688,29 @@
        "section": "Idle Quotes",
        "paragraph": "A12",
        "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Though I'm not fond of the people on the other side of the Wall of Samiel, I'd like to think myself the sensible sort — I won't be having any further delusions about King Deshret's revival.",
-     "sentences": [
-      {
-       "t_raw": "Where the Boat of Consciousness Lies를 완료하기 전에는 **새 친구**라 부르며 안부를 묻는 대사가 열린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "의식의 배가 당도한 곳을 완료하기 전에는 **새 친구**라 부르며 안부를 묻는 대사가 열린다."
       },
-      {
-       "t_raw": "그는 상황이 갑자기 변해 길을 잃을 것 같다고 털어놓으면서도, Wall of Samiel 건너편 사람들을 좋아하지는 않지만 이제 King Deshret의 부활에 **헛된 기대**는 두지 않겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 상황이 갑자기 변해 길을 잃을 것 같다고 털어놓으면서도, 방사벽 건너편 사람들을 좋아하지는 않지만 이제 적왕의 부활에 **헛된 기대**는 두지 않겠다고 말한다."
-      },
-      {
-       "t_raw": "친구가 되었으니 필요하면 가만히 보지 않겠다면서도, 상대가 높은 Akademiya와 맞서는 일이니 조심하라고 경고한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "친구가 되었으니 필요하면 가만히 보지 않겠다면서도, 상대가 높은 아카데미아와 맞서는 일이니 조심하라고 경고한다."
-      },
-      {
-       "t_raw": "상대가 '별일 없다.'라고 답하면 웃으며 '그렇구나. 뭐, 그럼 계속 힘내라.'라고 받아넘긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "상대가 '별일 없다.'라고 답하면 웃으며 '그렇구나. 뭐, 그럼 계속 힘내라.'라고 받아넘긴다."
-      },
-      {
-       "t_raw": "이 대화는 Wall of Samiel 건너편에 대한 적대감을 남긴 채도 협력 관계를 인정하는 태도로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 대화는 방사벽 건너편에 대한 적대감을 남긴 채도 협력 관계를 인정하는 태도로 보인다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Rahman",
        "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "A18",
+       "section": "Idle Quotes",
+       "paragraph": "A13",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Rahman",
        "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "A19",
+       "section": "Thoughts",
+       "paragraph": "A16",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Rahman",
        "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "A20",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "A22",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "A24",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "A25",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ah, this is a blessing that is hard to come by, especially for us, the children of King Deshret. We must hold it most dear indeed.",
-     "sentences": [
-      {
-       "t_raw": "Where the Boat of Consciousness Lies를 완료한 뒤에는 다시 만나 근황을 묻고, 최근 Cyno가 맡긴 일과 자신이 보호하는 Setaria로 더 바빠졌다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "의식의 배가 당도한 곳을 완료한 뒤에는 다시 만나 근황을 묻고, 최근 사이노가 맡긴 일과 자신이 보호하는 세타르로 더 바빠졌다고 말한다."
-      },
-      {
-       "t_raw": "Setaria는 허락을 받고 Akademiya를 떠나 사막 사람들에게 아는 것을 전하려 하며, Lesser Lord Kusanali와 Cyno가 그 계획을 승인하고 도왔다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "세타르는 허락을 받고 아카데미아를 떠나 사막 사람들에게 아는 것을 전하려 하며, 쿠사나리 데비와 사이노가 그 계획을 승인하고 도왔다고 한다."
-      },
-      {
-       "t_raw": "그는 이것이 King Deshret의 아이들인 자신들에게 특히 어려운 축복이라며 소중히 여겨야 한다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 이것이 적왕의 아이들인 자신들에게 특히 어려운 축복이라며 소중히 여겨야 한다고 말한다."
-      },
-      {
-       "t_raw": "상대가 '내 처지는 크게 다르지 않다.'라고 답하면 안전을 당부하고, 도울 일이 있으면 주저하지 말라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "상대가 '내 처지는 크게 다르지 않다.'라고 답하면 안전을 당부하고, 도울 일이 있으면 주저하지 말라고 한다."
-      },
-      {
-       "t_raw": "Setaria를 보호 대상으로 두고 바쁘다고 말하는 대목과 그녀의 계획을 소개하는 태도에서 그가 Setaria를 각별히 챙기는 마음이 드러나는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "세타르를 보호 대상으로 두고 바쁘다고 말하는 대목과 그녀의 계획을 소개하는 태도에서 그가 세타르를 각별히 챙기는 마음이 드러나는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "A29",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "A30",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "A32",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "A33",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "A34",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Rahman",
-       "revision": 1403965,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "A35",
+       "section": "Thoughts",
+       "paragraph": "A17",
        "wiki_refs": []
       }
      ],
@@ -1674,112 +1720,10 @@
    ],
    "quote_boxes": [
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "하, 내가 보기엔 그들은 Akademiya의 꼭두각시에 더 가깝군. 내가 무슨 이유로 Greater Lord Rukkhadevata의 사람들 말을 들어야 하지?",
-     "en": "Hah, they look more like pawns of the Akademiya to me. Why would I listen to anything the people of Greater Lord Rukkhadevata have to say?",
-     "speaker": "Rahman",
-     "source": {
-      "kind": "quest",
-      "quest": "Cry From the Eleazar Hospital",
-      "quest_ko": "비늘병 병원의 울음소리",
-      "version": "3.1",
-      "speaker": "Rahman"
-     },
-     "t": "하, 내가 보기엔 그들은 아카데미아의 꼭두각시에 더 가깝군. 내가 무슨 이유로 위대한 룩카데바타의 사람들 말을 들어야 하지?",
-     "speaker_ko": "라흐만"
-    },
-    {
-     "section": "작중 행적 — Village Keepers와 Aaru Village의 대치",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "일대일 교환이다. 공정하다고 생각하지 않나?",
-     "en": "It's a one-for-one exchange. Sounds fair, don't ya think?",
-     "speaker": "Rahman",
-     "source": {
-      "kind": "quest",
-      "quest": "Secret of the Scorching Desert",
-      "quest_ko": "뜨거운 모래의 비밀",
-      "version": "3.1",
-      "speaker": "Rahman"
-     },
-     "t": "일대일 교환이다. 공정하다고 생각하지 않나?",
-     "speaker_ko": "라흐만"
-    },
-    {
-     "section": "작중 행적 — King Deshret 유적의 진실",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "오오... 기적이다! King Deshret를 찬양하라!",
-     "en": "Ohhh... A miracle! Praise King Deshret!",
-     "speaker": "Rahman",
-     "source": {
-      "kind": "quest",
-      "quest": "Secret of the Scorching Desert",
-      "quest_ko": "뜨거운 모래의 비밀",
-      "version": "3.1",
-      "speaker": "Rahman"
-     },
-     "t": "오오... 기적이다! 적왕을 찬양하라!",
-     "speaker_ko": "라흐만"
-    },
-    {
-     "section": "작중 행적 — Sumeru City 잠입과 현자들 전복",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그렇지. \"함정\"은 설치됐다. 우리가 할 일은 그들을 그곳으로 유인하는 것뿐이다.",
-     "en": "Indeed. The \"trap\" has been set. All we need to do is lead them there.",
-     "speaker": "Rahman",
-     "source": {
-      "kind": "quest",
-      "quest": "Jnagarbha Day",
-      "quest_ko": "식장일(識藏日)",
-      "version": "3.2",
-      "speaker": "Rahman"
-     },
-     "t": "그렇지. \"함정\"은 설치됐다. 우리가 할 일은 그들을 그곳으로 유인하는 것뿐이다.",
-     "speaker_ko": "라흐만"
-    },
-    {
-     "section": "작중 행적 — 사막으로 돌아온 뒤",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Setaria는 이곳으로 돌아와 교육을 지원하고 사막 출신 사람들을 가르칠 것이다.",
-     "en": "Setaria will return to support education here and teach people from the desert.",
-     "speaker": "Rahman",
-     "source": {
-      "kind": "quest",
-      "quest": "A Toast to Victory",
-      "quest_ko": "승리의 축배를 들어라",
-      "version": "3.2",
-      "speaker": "Rahman"
-     },
-     "t": "세타르는 이곳으로 돌아와 교육을 지원하고 사막 출신 사람들을 가르칠 것이다.",
-     "speaker_ko": "라흐만"
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "*한숨* Rahman은 바보가 아니야. 사막에서 자기 세력의 지도자가 되는 건 쉬운 일이 아니지.",
-     "en": "*sigh* Rahman's no fool. Being the leader of your own faction in the desert is no easy feat.",
-     "speaker": "Dehya",
-     "source": {
-      "kind": "quest",
-      "quest": "Secret of the Scorching Desert",
-      "quest_ko": "뜨거운 모래의 비밀",
-      "version": "3.1",
-      "speaker": "Dehya"
-     },
-     "t": "*한숨* 라흐만은 바보가 아니야. 사막에서 자기 세력의 지도자가 되는 건 쉬운 일이 아니지.",
-     "speaker_ko": "데히야"
-    },
-    {
-     "section": "능력과 처세",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그건 모두 Rahman과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분이다.",
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Cyno's line.",
+     "t_raw": "모두 Rahman과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분입니다.",
      "en": "It's all thanks to Rahman and his brave team, as well as their bold strategy.",
      "speaker": "Cyno",
      "source": {
@@ -1789,14 +1733,116 @@
       "version": "3.2",
       "speaker": "Cyno"
      },
-     "t": "그건 모두 라흐만과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분이다.",
+     "t": "모두 라흐만과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분입니다.",
+     "speaker_ko": "사이노"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of Rahman's line.",
+     "t_raw": "하, 내가 보기엔 그들은 오히려 Akademiya의 앞잡이처럼 보인다. 내가 무슨 이유로 Greater Lord Rukkhadevata의 사람들이 하는 말을 들어야 하겠나?",
+     "en": "Hah, they look more like pawns of the Akademiya to me. Why would I listen to anything the people of Greater Lord Rukkhadevata have to say?",
+     "speaker": "Rahman",
+     "source": {
+      "kind": "quest",
+      "quest": "Cry From the Eleazar Hospital",
+      "quest_ko": "비늘병 병원의 울음소리",
+      "version": "3.1",
+      "speaker": "Rahman"
+     },
+     "t": "하, 내가 보기엔 그들은 오히려 아카데미아의 앞잡이처럼 보인다. 내가 무슨 이유로 위대한 룩카데바타의 사람들이 하는 말을 들어야 하겠나?",
+     "speaker_ko": "라흐만"
+    },
+    {
+     "section": "작중 행적 — Aaru Village와 Village Keepers",
+     "status": "accepted",
+     "note": "Faithful translation of Rahman's line.",
+     "t_raw": "1대1 교환이야. 공정하다고 생각하지 않나?",
+     "en": "It's a one-for-one exchange. Sounds fair, don't ya think?",
+     "speaker": "Rahman",
+     "source": {
+      "kind": "quest",
+      "quest": "Secret of the Scorching Desert",
+      "quest_ko": "뜨거운 모래의 비밀",
+      "version": "3.1",
+      "speaker": "Rahman"
+     },
+     "t": "1대1 교환이야. 공정하다고 생각하지 않나?",
+     "speaker_ko": "라흐만"
+    },
+    {
+     "section": "작중 행적 — King Deshret 유적과 진실",
+     "status": "accepted",
+     "note": "Faithful translation of Dehya's line.",
+     "t_raw": "Rahman, 나는 항상 당신이 말을 지키는 사람이라고 생각했어. 이게 무슨 일이야?",
+     "en": "Rahman, I've always thought of you as a man of his word. What's this about?",
+     "speaker": "Dehya",
+     "source": {
+      "kind": "quest",
+      "quest": "Secret of the Scorching Desert",
+      "quest_ko": "뜨거운 모래의 비밀",
+      "version": "3.1",
+      "speaker": "Dehya"
+     },
+     "t": "라흐만, 나는 항상 당신이 말을 지키는 사람이라고 생각했어. 이게 무슨 일이야?",
+     "speaker_ko": "데히야"
+    },
+    {
+     "section": "작중 행적 — Akademiya의 현자들 타도",
+     "status": "accepted",
+     "note": "Faithful translation of Cyno's line.",
+     "t_raw": "그것은 모두 Rahman과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분이다.",
+     "en": "It's all thanks to Rahman and his brave team, as well as their bold strategy.",
+     "speaker": "Cyno",
+     "source": {
+      "kind": "quest",
+      "quest": "As by a God's Side",
+      "quest_ko": "신의 곁에서",
+      "version": "3.2",
+      "speaker": "Cyno"
+     },
+     "t": "그것은 모두 라흐만과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분이다.",
+     "speaker_ko": "사이노"
+    },
+    {
+     "section": "작중 행적 — 사막으로 돌아가다",
+     "status": "accepted",
+     "note": "Faithful translation of Rahman's line.",
+     "t_raw": "Setaria는 이곳으로 돌아와 교육을 지원하고 사막 사람들을 가르칠 것이다.",
+     "en": "Setaria will return to support education here and teach people from the desert.",
+     "speaker": "Rahman",
+     "source": {
+      "kind": "quest",
+      "quest": "A Toast to Victory",
+      "quest_ko": "승리의 축배를 들어라",
+      "version": "3.2",
+      "speaker": "Rahman"
+     },
+     "t": "세타르는 이곳으로 돌아와 교육을 지원하고 사막 사람들을 가르칠 것이다.",
+     "speaker_ko": "라흐만"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation of Cyno's line (Q28).",
+     "t_raw": "그것은 모두 Rahman과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분입니다.",
+     "en": "It's all thanks to Rahman and his brave team, as well as their bold strategy.",
+     "speaker": "Cyno",
+     "source": {
+      "kind": "quest",
+      "quest": "As by a God's Side",
+      "quest_ko": "신의 곁에서",
+      "version": "3.2",
+      "speaker": "Cyno"
+     },
+     "t": "그것은 모두 라흐만과 그의 용감한 팀, 그리고 그들의 대담한 전략 덕분입니다.",
      "speaker_ko": "사이노"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "나는 잘 지내고 있다. 최근에 좋은 일이 많이 생겼다.",
+     "status": "accepted",
+     "note": "Faithful translation of Rahman's line (Q21). Tone is plain/casual, but the content matches.",
+     "t_raw": "잘 지내고 있다. 최근에 좋은 일이 많이 생겼다.",
      "en": "I'm doing well. Many good things have happened recently.",
      "speaker": "Rahman",
      "source": {
@@ -1806,7 +1852,7 @@
       "version": "3.2",
       "speaker": "Rahman"
      },
-     "t": "나는 잘 지내고 있다. 최근에 좋은 일이 많이 생겼다.",
+     "t": "잘 지내고 있다. 최근에 좋은 일이 많이 생겼다.",
      "speaker_ko": "라흐만"
     }
    ]

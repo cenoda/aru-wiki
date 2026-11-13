@@ -20,35 +20,41 @@
    "input_chars": 300,
    "input_cut": false,
    "input_hash": "918b4c65c202",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences match the cited lines: the funeral and offerings, the fading Liyue tradition and Wangsheng's rare hosting, Zhongli as director and star, and Ningguang's time-buying line as a fair memorial-plus-politics reading.",
      "quote": "The Rite of Parting is a ceremonial funeral held for deceased Adepti or Gods.",
      "sentences": [
       {
-       "t_raw": "**Rite of Parting**은 죽은 Adepti나 Gods를 위한 장례 의식이다.",
+       "t_raw": "**Rite of Parting**은 죽은 Adepti나 Gods를 위한 장례 의식으로, Glaze Lily·Cleansing Bell·Everlasting Incense 같은 공물과 도구를 준비해야 한다.",
        "interp": false,
        "dropped": false,
-       "t": "**송신의례**는 죽은 선인이나 Gods를 위한 장례 의식이다."
+       "t": "**송신의례**는 죽은 선인이나 Gods를 위한 장례 의식으로, 유리백합·척진령·영생향 같은 공물과 도구를 준비해야 한다."
       },
       {
-       "t_raw": "Glaze Lily, Cleansing Bell, Everlasting Incense 같은 공물과 도구가 필요하며, **Wangsheng Funeral Parlor**가 Liyue에서 adeptus의 죽음을 기리는 전통으로 맡아 왔다.",
+       "t_raw": "Liyue에서는 모든 Adepti의 죽음을 기리는 전통으로, 시간이 지나 간소화되어 희미해지는 중이며 Wangsheng Funeral Parlor가 맡아 지난 3천 년 동안 몇 차례만 치러 왔다.",
        "interp": false,
        "dropped": false,
-       "t": "유리백합, 척진령, 영생향 같은 공물과 도구가 필요하며, **왕생당**이 리월에서 adeptus의 죽음을 기리는 전통으로 맡아 왔다."
+       "t": "리월에서는 모든 선인의 죽음을 기리는 전통으로, 시간이 지나 간소화되어 희미해지는 중이며 왕생당이 맡아 지난 3천 년 동안 몇 차례만 치러 왔다."
       },
       {
-       "t_raw": "Rex Lapis를 위한 의식은 The Fond Farewell에서 열렸고, Zhongli는 Rite of Parting에서 감독과 주연을 맡았다.",
+       "t_raw": "The Fond Farewell에서는 Rex Lapis를 위한 Rite of Parting이 열렸으며, Zhongli는 Rite of Parting의 감독이자 주연으로 서술된다.",
        "interp": false,
        "dropped": false,
-       "t": "암왕제군을 위한 의식은 송신에서 열렸고, 종려는 송신의례에서 감독과 주연을 맡았다."
+       "t": "송신에서는 암왕제군을 위한 송신의례가 열렸으며, 종려는 송신의례의 감독이자 주연으로 서술된다."
+      },
+      {
+       "t_raw": "Rex Lapis를 위한 의식이 Liyue 행정 장악의 시간을 벌기 위해 허용되기도 했다는 점에서, 이 장례는 추모와 정치적 계산이 겹친 자리였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "암왕제군을 위한 의식이 리월 행정 장악의 시간을 벌기 위해 허용되기도 했다는 점에서, 이 장례는 추모와 정치적 계산이 겹친 자리였던 셈이다."
       }
      ],
      "sources": [
@@ -75,6 +81,13 @@
        "section": "Character Stories > Gnosis",
        "paragraph": "M1",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Equilibrium",
+       "quest_ko": "선기 옥형",
+       "version": "1.1",
+       "speaker": "Ningguang"
       }
      ],
      "heading": null,
@@ -84,39 +97,38 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Although it has become simplified over time and is beginning to fade into obscurity, it is a Liyue tradition to mark the passing of every adeptus with a memorial service called the Rite of Parting.",
+     "status": "accepted",
+     "note": "Offerings, simplification, and Wangsheng's handful of rites are in the English; formality alongside decline is a fair reading of those two facts.",
+     "quote": "The Rite of Parting is a ceremonial funeral held for deceased Adepti or Gods.",
      "sentences": [
       {
-       "t_raw": "Rite of Parting은 죽은 Adepti나 Gods를 위한 의례적 장례다.",
+       "t_raw": "Rite of Parting은 죽은 Adepti나 신을 위한 장례 의식으로, Glaze Lily, Cleansing Bell, Everlasting Incense 같은 공물과 도구를 준비해야 하는 **장례 의식**이다.",
        "interp": false,
        "dropped": false,
-       "t": "송신의례는 죽은 선인이나 Gods를 위한 의례적 장례다."
+       "t": "송신의례는 죽은 선인이나 신을 위한 장례 의식으로, 유리백합, 척진령, 영생향 같은 공물과 도구를 준비해야 하는 **장례 의식**이다."
       },
       {
-       "t_raw": "Liyue에서는 모든 adeptus의 죽음을 기리기 위해 Rite of Parting이라는 추도 의식을 치르는 전통이 있다.",
+       "t_raw": "Liyue에서는 모든 adeptus의 죽음을 기리는 추모 의식이 Rite of Parting이라는 이름으로 전해졌지만, 시간이 지나며 간소화되었고 점차 흐려지는 중이다.",
        "interp": false,
        "dropped": false,
-       "t": "리월에서는 모든 adeptus의 죽음을 기리기 위해 송신의례라는 추도 의식을 치르는 전통이 있다."
+       "t": "리월에서는 모든 선인의 죽음을 기리는 추모 의식이 송신의례라는 이름으로 전해졌지만, 시간이 지나며 간소화되었고 점차 흐려지는 중이다.",
+       "polish": {
+        "from": "리월에서는 모든 adeptus의 죽음을 기리는 추모 의식이 송신의례라는 이름으로 전해졌지만, 시간이 지나며 간소화되었고 점차 흐려지는 중이다.",
+        "text": "리월에서는 모든 선인의 죽음을 기리는 추모 의식이 송신의례라는 이름으로 전해졌지만, 시간이 지나며 간소화되었고 점차 흐려지는 중이다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "이 전통은 시간이 지나며 간소화되었고, 점차 흐려지기 시작했다.",
+       "t_raw": "이 의식은 Wangsheng Funeral Parlor가 맡아 왔으며, 지난 삼천 년 동안 이들이 이 의식을 치른 횟수는 손에 꼽을 정도다.",
        "interp": false,
        "dropped": false,
-       "t": "이 전통은 시간이 지나며 간소화되었고, 점차 흐려지기 시작했다."
+       "t": "이 의식은 왕생당이 맡아 왔으며, 지난 삼천 년 동안 이들이 이 의식을 치른 횟수는 손에 꼽을 정도다."
       },
       {
-       "t_raw": "의식은 Wangsheng Funeral Parlor가 맡아 왔고, 지난 삼천 년 동안 이들이 이 의식을 맡은 일은 몇 차례에 그쳤다.",
-       "interp": false,
-       "dropped": false,
-       "t": "의식은 왕생당이 맡아 왔고, 지난 삼천 년 동안 이들이 이 의식을 맡은 일은 몇 차례에 그쳤다."
-      },
-      {
-       "t_raw": "Rite of Parting은 Liyue에서 오래 이어져 온 의례이면서도, 시간이 지날수록 간소화되고 드물게 치러지는 의례로 보인다.",
+       "t_raw": "구체적인 공물과 도구가 필요한 의식이면서도 Liyue 전통 안에서는 점차 간소화되고 흐려지는 셈이라, **격식과 쇠퇴**가 함께 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "송신의례는 리월에서 오래 이어져 온 의례이면서도, 시간이 지날수록 간소화되고 드물게 치러지는 의례로 보인다."
+       "t": "구체적인 공물과 도구가 필요한 의식이면서도 리월 전통 안에서는 점차 간소화되고 흐려지는 셈이라, **격식과 쇠퇴**가 함께 보인다."
       }
      ],
      "sources": [
@@ -138,33 +150,25 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Gods"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Once the Rite of Parting, of which Zhongli was both director and star, was over, the Fatui Harbinger named Signora appeared before him.",
+     "status": "accepted",
+     "note": "The Fond Farewell rite for Rex Lapis is stated, and calling that holding a rarely hosted tradition is a fair reading of the handful of times in three thousand years.",
+     "quote": "An instance of a Rite of Parting was given when it was held for Rex Lapis in The Fond Farewell.",
      "sentences": [
       {
-       "t_raw": "Rite of Parting에는 Glaze Lily, Cleansing Bell, Everlasting Incense처럼 공물과 도구를 준비해야 한다.",
+       "t_raw": "Rex Lapis를 위한 Rite of Parting은 The Fond Farewell에서 거행되었다.",
        "interp": false,
        "dropped": false,
-       "t": "송신의례에는 유리백합, 척진령, 영생향처럼 공물과 도구를 준비해야 한다."
+       "t": "암왕제군을 위한 송신의례는 송신에서 거행되었다."
       },
       {
-       "t_raw": "Rex Lapis를 위한 Rite of Parting은 The Fond Farewell에서 치러진 사례로 전해진다.",
-       "interp": false,
+       "t_raw": "삼천 년 동안 손에 꼽을 정도로 드물게 열린 Liyue의 전통이 Rex Lapis를 위한 Rite of Parting으로 실제 거행되었다는 점에서, 이 사례는 전통이 드물게 드러난 장면인 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "암왕제군을 위한 송신의례는 송신에서 치러진 사례로 전해진다."
-      },
-      {
-       "t_raw": "Zhongli가 감독이자 주연을 맡은 Rite of Parting이 끝난 뒤 Fatui 집행관인 Signora가 그의 앞에 나타났다.",
-       "interp": false,
-       "dropped": false,
-       "t": "종려가 감독이자 주연을 맡은 송신의례가 끝난 뒤 우인단 집행관인 시뇨라가 그의 앞에 나타났다."
+       "t": "삼천 년 동안 손에 꼽을 정도로 드물게 열린 리월의 전통이 암왕제군을 위한 송신의례로 실제 거행되었다는 점에서, 이 사례는 전통이 드물게 드러난 장면인 셈이다."
       }
      ],
      "sources": [
@@ -175,6 +179,245 @@
        "section": null,
        "paragraph": "A1",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Adeptus",
+       "revision": 201413,
+       "section": "Story > Present",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The rite, its materials, and Zhongli's line about helping hands near the harbor are stated; treating preparation as both goods and people follows from that.",
+     "quote": "This ceremony requires certain offerings and tools to be prepared, such as Glaze Lily, Cleansing Bell and Everlasting Incense.",
+     "sentences": [
+      {
+       "t_raw": "Rite of Parting은 죽은 Adepti나 신을 위한 의식이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "송신의례는 죽은 선인이나 신을 위한 의식이다."
+      },
+      {
+       "t_raw": "이 의식에는 Glaze Lily, Cleansing Bell, Everlasting Incense 같은 공물과 도구를 준비해야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 의식에는 유리백합, 척진령, 영생향 같은 공물과 도구를 준비해야 한다."
+      },
+      {
+       "t_raw": "Zhongli는 의식에 재료뿐 아니라 도움을 줄 사람들도 필요하다고 말하며, 항구 근처에서 그런 사람들을 찾을 수 있다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "종려는 의식에 재료뿐 아니라 도움을 줄 사람들도 필요하다고 말하며, 항구 근처에서 그런 사람들을 찾을 수 있다고 한다."
+      },
+      {
+       "t_raw": "따라서 준비는 공물과 도구를 모으는 일과 사람을 구하는 일로 함께 이루어진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 준비는 공물과 도구를 모으는 일과 사람을 구하는 일로 함께 이루어진다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Rite of Parting",
+       "revision": 422078,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Downtown",
+       "quest_ko": "시가지",
+       "version": "1.0",
+       "speaker": "Zhongli"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The radiant-grade rule and the censer line as a guess are stated, but sentence 2 turns that guess into a certain claim that ceremonial-tool use is part of the practical work.",
+     "quote": "(Only Noctilucous Jade of radiant grade at the very least is acceptable for use in the Rite of Parting.)",
+     "sentences": [
+      {
+       "t_raw": "Noctilucous Jade는 적어도 빛나는 등급이어야 Rite of Parting에 사용할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야박석은 적어도 빛나는 등급이어야 송신의례에 사용할 수 있다."
+      },
+      {
+       "t_raw": "관찰한 향로는 Rite of Parting 때 태울 것이라는 추측이 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "관찰한 향로는 송신의례 때 태울 것이라는 추측이 나온다."
+      },
+      {
+       "t_raw": "이처럼 재료의 등급을 따지는 일과 향로를 의식 때 태울 것이라는 추측이 함께 나타나, 실무에서는 물품의 등급이 걸려 있고 의식 도구의 사용 여부는 추측에 불과하다고 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "이처럼 재료의 등급을 따지는 일과 향로를 의식 때 태울 것이라는 추측이 함께 나타나, 실무에서는 물품의 등급이 걸려 있고 의식 도구의 사용 여부는 추측에 불과하다고 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Moonfinger",
+       "quest_ko": "달 가리키기",
+       "version": "1.0",
+       "speaker": "Observe the Noctilucous Jade"
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Observe the censer"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Sentence 0 matches the adeptus tradition. Sentence 1 wrongly sets Zhongli's 'see Rex Lapis again only by participating' line in the moment when preparations were mostly finished; those are separate lines, and the preparations line does not name Rex Lapis.",
+     "quote": "And that just about does it. Our preparations for the Rite of Parting are mostly finished.",
+     "sentences": [
+      {
+       "t_raw": "Liyue에서는 adeptus가 세상을 떠날 때마다 **Rite of Parting**으로 추모해 왔으며, 이 전통은 시간이 지나며 간소화되어 흐려지기 시작했고 Wangsheng Funeral Parlor가 의식을 맡아 왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월에서는 선인이 세상을 떠날 때마다 **송신의례**로 추모해 왔으며, 이 전통은 시간이 지나며 간소화되어 흐려지기 시작했고 왕생당이 의식을 맡아 왔다.",
+       "polish": {
+        "from": "리월에서는 adeptus가 세상을 떠날 때마다 **송신의례**로 추모해 왔으며, 이 전통은 시간이 지나며 간소화되어 흐려지기 시작했고 왕생당이 의식을 맡아 왔다.",
+        "text": "리월에서는 선인이 세상을 떠날 때마다 **송신의례**로 추모해 왔으며, 이 전통은 시간이 지나며 간소화되어 흐려지기 시작했고 왕생당이 의식을 맡아 왔다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그동안 Wangsheng Funeral Parlor가 이 의식을 맡은 횟수는 지난 삼천 년간 손에 꼽을 정도였고, Zhongli는 Rite of Parting 준비가 대부분 끝났다고 말한 바 있으며, 또한 Rite of Parting에 참여해야만 Rex Lapis의 모습을 다시 볼 수 있다고도 했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그동안 왕생당이 이 의식을 맡은 횟수는 지난 삼천 년간 손에 꼽을 정도였고, 종려는 송신의례 준비가 대부분 끝났다고 말한 바 있으며, 또한 송신의례에 참여해야만 암왕제군의 모습을 다시 볼 수 있다고도 했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Adeptus",
+       "revision": 201413,
+       "section": "Story > Present",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Zhongli"
+      },
+      {
+       "kind": "quest",
+       "quest": "An Organization Known as Wangsheng",
+       "quest_ko": "왕생",
+       "version": "1.0",
+       "speaker": "Zhongli"
+      },
+      {
+       "kind": "wiki",
+       "page": "Rite of Parting",
+       "revision": 422078,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Both claims match Q3 and Q6; the interpretation follows from them.",
+     "quote": "To cry \"catch the murderer!\" at the top of one's lungs, but ignore the Rite of Parting... That, to me, is what is wrong-headed.",
+     "sentences": [
+      {
+       "t_raw": "Rite of Parting을 치르기로 한 것을 두고 Big-Footed Dajiao는 소문이 맞아떨어진 것 같다고 했고, Madame Ping은 살인자를 잡으라고 외치면서 Rite of Parting을 외면하는 태도야말로 잘못된 것이라고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "송신의례를 치르기로 한 것을 두고 대발이는 소문이 맞아떨어진 것 같다고 했고, 평 할머니는 살인자를 잡으라고 외치면서 송신의례를 외면하는 태도야말로 잘못된 것이라고 했다."
+      },
+      {
+       "t_raw": "한쪽은 의식의 거행을 **소문**의 확인으로 읽었고 다른 쪽은 의식 자체를 밀어내는 태도를 문제 삼았으니, Rite of Parting은 소문과 의식에 대한 평가가 얽힌 사안이었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한쪽은 의식의 거행을 **소문**의 확인으로 읽었고 다른 쪽은 의식 자체를 밀어내는 태도를 문제 삼았으니, 송신의례는 소문과 의식에 대한 평가가 얽힌 사안이었던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Fond Farewell",
+       "quest_ko": "송신",
+       "version": "1.1",
+       "speaker": "Big-Footed Dajiao"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Realm Within",
+       "quest_ko": "호천",
+       "version": "1.0",
+       "speaker": "Madame Ping"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Supported by Q2 and M1; the interpretation is reasonable.",
+     "quote": "Allowing the Rite of Parting to take place was also meant to buy some time for us to take control of Liyue's administration...",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 Rite of Parting이 거행되도록 허용한 데에 Liyue의 행정을 장악할 시간을 벌려는 뜻도 있었다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 송신의례가 거행되도록 허용한 데에 리월의 행정을 장악할 시간을 벌려는 뜻도 있었다고 말했다."
+      },
+      {
+       "t_raw": "의식이 끝난 뒤 Fatui 집행관 Signora가 Zhongli 앞에 나타났고, Zhongli는 그 의식의 감독이자 주연으로 서술된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "의식이 끝난 뒤 우인단 집행관 시뇨라가 종려 앞에 나타났고, 종려는 그 의식의 감독이자 주연으로 서술된다."
+      },
+      {
+       "t_raw": "의식의 허용에 **정치적 셈**이 있었고 의식 뒤에 Signora의 등장이 이어졌다는 점에서, 이 거행은 의식의 장면에 그치지 않는 사건으로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "의식의 허용에 **정치적 셈**이 있었고 의식 뒤에 시뇨라의 등장이 이어졌다는 점에서, 이 거행은 의식의 장면에 그치지 않는 사건으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Equilibrium",
+       "quest_ko": "선기 옥형",
+       "version": "1.1",
+       "speaker": "Ningguang"
       },
       {
        "kind": "wiki",
@@ -185,47 +428,41 @@
        "wiki_refs": []
       }
      ],
-     "heading": "개요",
+     "heading": "드러난 역사",
      "latin_left": []
     },
     {
-     "section": "정체와 절차",
-     "status": "needs_verify",
-     "note": null,
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M5, M6 and Q7.",
      "quote": "The Rite of Parting requires helping hands as well as materials. We should be able to find some people near the harbor.",
      "sentences": [
       {
-       "t_raw": "Rite of Parting은 죽은 Adepti나 Gods를 위한 **장례 의식**이며, Glaze Lily, Cleansing Bell, Everlasting Incense 같은 공물과 도구를 준비해야 한다.",
+       "t_raw": "Rite of Parting은 **Wangsheng Funeral Parlor**가 맡아 온 의식이며, 지난 삼천 년 동안 주관한 횟수는 손에 꼽을 정도다.",
        "interp": false,
        "dropped": false,
-       "t": "송신의례는 죽은 선인이나 Gods를 위한 **장례 의식**이며, 유리백합, 척진령, 영생향 같은 공물과 도구를 준비해야 한다."
+       "t": "송신의례는 **왕생당**이 맡아 온 의식이며, 지난 삼천 년 동안 주관한 횟수는 손에 꼽을 정도다."
       },
       {
-       "t_raw": "Zhongli는 Traveler에게 이 의식을 위해 Madame Ping에게서 Cleansing Bell을 받아 오라고 맡긴다.",
+       "t_raw": "Zhongli는 Traveler에게 **Madame Ping**에게서 **Cleansing Bell**을 가져오게 했고, 동행하지 않은 이유는 밝히지 않았다.",
        "interp": false,
        "dropped": false,
-       "t": "종려는 여행자에게 이 의식을 위해 평 할머니에게서 척진령을 받아 오라고 맡긴다."
+       "t": "종려는 여행자에게 **평 할머니**에게서 **척진령**을 가져오게 했고, 동행하지 않은 이유는 밝히지 않았다."
       },
       {
-       "t_raw": "의식에는 재료와 함께 돕는 사람도 필요하며, Zhongli는 항구 근처에서 그런 사람을 찾을 수 있다고 말한다.",
+       "t_raw": "그는 준비에 재료뿐 아니라 도움의 손길도 필요하다며 항구 근처에서 사람을 찾을 수 있겠다고 했다.",
        "interp": false,
        "dropped": false,
-       "t": "의식에는 재료와 함께 돕는 사람도 필요하며, 종려는 항구 근처에서 그런 사람을 찾을 수 있다고 말한다."
-      },
-      {
-       "t_raw": "도구와 인력이 함께 갖추어져야 의식이 성립하는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "도구와 인력이 함께 갖추어져야 의식이 성립하는 셈이다."
+       "t": "그는 준비에 재료뿐 아니라 도움의 손길도 필요하다며 항구 근처에서 사람을 찾을 수 있겠다고 했다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Rite of Parting",
-       "revision": 422078,
-       "section": null,
-       "paragraph": "A1",
+       "page": "Adeptus",
+       "revision": 201413,
+       "section": "Story > Present",
+       "paragraph": "M5",
        "wiki_refs": []
       },
       {
@@ -244,220 +481,46 @@
        "speaker": "Zhongli"
       }
      ],
-     "heading": "정체와 절차",
-     "latin_left": [
-      "Gods"
-     ]
-    },
-    {
-     "section": "정체와 절차",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "(Only Noctilucous Jade of radiant grade at the very least is acceptable for use in the Rite of Parting.)",
-     "sentences": [
-      {
-       "t_raw": "Noctilucous Jade는 적어도 **radiant grade** 이상이어야 Rite of Parting에 사용할 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "야박석은 적어도 **radiant grade** 이상이어야 송신의례에 사용할 수 있다."
-      },
-      {
-       "t_raw": "향로를 관찰하는 대목에서는 이것을 Rite of Parting 때 태울 것인가 하는 추측이 나온다.",
-       "interp": false,
-       "dropped": false,
-       "t": "향로를 관찰하는 대목에서는 이것을 송신의례 때 태울 것인가 하는 추측이 나온다."
-      },
-      {
-       "t_raw": "재료의 등급을 확인하고 의식에 쓸 도구의 쓰임을 가늠하는 관찰이 절차에 포함되는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "재료의 등급을 확인하고 의식에 쓸 도구의 쓰임을 가늠하는 관찰이 절차에 포함되는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Moonfinger",
-       "quest_ko": "달 가리키기",
-       "version": "1.0",
-       "speaker": "Observe the Noctilucous Jade"
-      },
-      {
-       "kind": "quest",
-       "quest": "Guizhong (Quest)",
-       "quest_ko": "귀종",
-       "version": "1.0",
-       "speaker": "Observe the censer"
-      }
-     ],
-     "heading": "정체와 절차",
+     "heading": "얽힌 인물과 세력",
      "latin_left": []
     },
     {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Although it has become simplified over time and is beginning to fade into obscurity, it is a Liyue tradition to mark the passing of every adeptus with a memorial service called the Rite of Parting.",
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M3, M2, M6, Q5 and Q1.",
+     "quote": "Once you've finished at the Jade Chamber, meet me at Dihua Marsh.",
      "sentences": [
       {
-       "t_raw": "Liyue에서 Rite of Parting은 죽은 Adepti나 신을 보내는 의례다.",
+       "t_raw": "Zhongli는 Rite of Parting 준비를 도운 Traveler와 Paimon을 Third-Round Knockout로 데려가 대접했고, Iron Tongue Tian은 Ningguang에 관한 이야기를 했다.",
        "interp": false,
        "dropped": false,
-       "t": "리월에서 송신의례는 죽은 선인이나 신을 보내는 의례다."
+       "t": "종려는 송신의례 준비를 도운 여행자와 페이몬을 세 대포 주점으로 데려가 대접했고, 전달변은 응광에 관한 이야기를 했다."
       },
       {
-       "t_raw": "시간이 흐르며 이 **Liyue 전통**은 간소화되었고 점차 잊혀 가는 중이다.",
+       "t_raw": "Ying'er는 Rite of Parting을 위한 향수를 만드는 일을 도왔다.",
        "interp": false,
        "dropped": false,
-       "t": "시간이 흐르며 이 **리월 전통**은 간소화되었고 점차 잊혀 가는 중이다."
+       "t": "앵아는 송신의례를 위한 향수를 만드는 일을 도왔다."
       },
       {
-       "t_raw": "이 의례는 Wangsheng Funeral Parlor가 맡아 왔고, 지난 삼천 년 동안 이들이 치른 횟수는 손에 꼽을 정도였다.",
+       "t_raw": "Madame Ping은 Cleansing Bell을 건네며 'old friend' Zhongli에게 차를 권하는 전갈을 전해 달라고 했다.",
        "interp": false,
        "dropped": false,
-       "t": "이 의례는 왕생당이 맡아 왔고, 지난 삼천 년 동안 이들이 치른 횟수는 손에 꼽을 정도였다."
+       "t": "평 할머니는 척진령을 건네며 '오랜 친구' 종려에게 차를 권하는 전갈을 전해 달라고 했다.",
+       "polish": {
+        "from": "평 할머니는 척진령을 건네며 'old friend' 종려에게 차를 권하는 전갈을 전해 달라고 했다.",
+        "text": "평 할머니는 척진령을 건네며 '오랜 친구' 종려에게 차를 권하는 전갈을 전해 달라고 했다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "Adepti와 신의 장례라는 성격과 드문 개최 횟수를 함께 보면, 이 의례가 Liyue 전통 안에서 특별한 사건으로 여겨졌음을 짐작할 수 있다.",
-       "interp": true,
+       "t_raw": "Zhongli는 Jade Chamber에서 일을 마치면 Dihua Marsh에서 만나자고 당부했고, Rite of Parting에서 Lady Keqing과 이야기한 사람이 있다는 언급도 나온다.",
+       "interp": false,
        "dropped": false,
-       "t": "선인과 신의 장례라는 성격과 드문 개최 횟수를 함께 보면, 이 의례가 리월 전통 안에서 특별한 사건으로 여겨졌음을 짐작할 수 있다."
+       "t": "종려는 군옥각에서 일을 마치면 적화주에서 만나자고 당부했고, 송신의례에서 옥형성 각청과 이야기한 사람이 있다는 언급도 나온다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rite of Parting",
-       "revision": 422078,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Adeptus",
-       "revision": 201413,
-       "section": "Story > Present",
-       "paragraph": "M5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Allowing the Rite of Parting to take place was also meant to buy some time for us to take control of Liyue's administration...",
-     "sentences": [
-      {
-       "t_raw": "Rex Lapis를 위한 Rite of Parting은 간소화되고 잊혀 가는 Liyue 전통에서 확인되는 한 사례다.",
-       "interp": false,
-       "dropped": false,
-       "t": "암왕제군을 위한 송신의례는 간소화되고 잊혀 가는 리월 전통에서 확인되는 한 사례다."
-      },
-      {
-       "t_raw": "이때 Zhongli는 의례의 **감독이자 주인공**이었고, 의식이 끝난 뒤에는 Fatui의 집행관 Signora가 그 앞에 나타났다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이때 종려는 의례의 **감독이자 주인공**이었고, 의식이 끝난 뒤에는 우인단의 집행관 시뇨라가 그 앞에 나타났다."
-      },
-      {
-       "t_raw": "Ningguang는 Rite of Parting이 열리도록 한 것이 Liyue **행정권을 장악할 시간**을 벌기 위한 것이기도 했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "응광은 송신의례가 열리도록 한 것이 리월 **행정권을 장악할 시간**을 벌기 위한 것이기도 했다고 말한다."
-      },
-      {
-       "t_raw": "장례의 성격과 행정권 장악을 위한 시간 벌기가 함께 언급되는 점에서, 이 사례는 상징과 정치 사이에 놓여 있었다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "장례의 성격과 행정권 장악을 위한 시간 벌기가 함께 언급되는 점에서, 이 사례는 상징과 정치 사이에 놓여 있었다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rite of Parting",
-       "revision": 422078,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Adeptus",
-       "revision": 201413,
-       "section": "Story > Present",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Zhongli/Profile",
-       "revision": 425126,
-       "section": "Character Stories > Gnosis",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Equilibrium",
-       "quest_ko": "선기 옥형",
-       "version": "1.1",
-       "speaker": "Ningguang"
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — The Fond Farewell의 준비",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "You'd best be on your way now. But don't forget about the Rite of Parting. Once you've finished at the Jade Chamber, meet me at Dihua Marsh.",
-     "sentences": [
-      {
-       "t_raw": "Zhongli는 Rite of Parting을 잊지 말고 Jade Chamber에서 일을 마치면 Dihua Marsh에서 만나자고 이른다.",
-       "interp": false,
-       "dropped": false,
-       "t": "종려는 송신의례를 잊지 말고 군옥각에서 일을 마치면 적화주에서 만나자고 이른다."
-      },
-      {
-       "t_raw": "그는 Rite of Parting에 참여해야 Rex Lapis의 모습을 다시 볼 수 있다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 송신의례에 참여해야 암왕제군의 모습을 다시 볼 수 있다고 말한다."
-      },
-      {
-       "t_raw": "준비 과정에서 Ying'er는 Rite of Parting에 쓸 향수 만들기를 돕고, Zhongli는 Downtown에서 연을 사며 God of Wisdom을 처음 언급한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "준비 과정에서 앵아는 송신의례에 쓸 향수 만들기를 돕고, 종려는 시가지에서 연을 사며 지혜의 신을 처음 언급한다."
-      },
-      {
-       "t_raw": "Rite of Parting 준비에서의 노고에 대한 대접으로 Zhongli는 Traveler와 Paimon을 Third-Round Knockout에 데려간다.",
-       "interp": false,
-       "dropped": false,
-       "t": "송신의례 준비에서의 노고에 대한 대접으로 종려는 여행자와 페이몬을 세 대포 주점에 데려간다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Zhongli's Treat",
-       "quest_ko": "초대",
-       "version": "1.0",
-       "speaker": "Zhongli"
-      },
-      {
-       "kind": "quest",
-       "quest": "An Organization Known as Wangsheng",
-       "quest_ko": "왕생",
-       "version": "1.0",
-       "speaker": "Zhongli"
-      },
       {
        "kind": "wiki",
        "page": "Ying'er",
@@ -468,62 +531,12 @@
       },
       {
        "kind": "wiki",
-       "page": "Nahida/Storyline",
-       "revision": 424857,
-       "section": "Profile > Introduction",
-       "paragraph": "M4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
        "page": "Iron Tongue Tian",
        "revision": 45254,
        "section": null,
        "paragraph": "M3",
        "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 송신의 준비",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — The Fond Farewell의 준비",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "While retrieving the bell from her, she transports them into her magical teapot as a test, revealing herself as an adeptus.",
-     "sentences": [
-      {
-       "t_raw": "Zhongli는 Rite of Parting에 쓸 Cleansing Bell을 Madame Ping에게서 가져오라고 Traveler에게 맡기지만, 자신의 이유로 동행하지 않고 그 이유도 밝히지 않는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "종려는 송신의례에 쓸 척진령을 평 할머니에게서 가져오라고 여행자에게 맡기지만, 자신의 이유로 동행하지 않고 그 이유도 밝히지 않는다."
       },
-      {
-       "t_raw": "Madame Ping은 Traveler가 종을 되찾는 과정에서 Traveler를 마법 찻주전자 속으로 데려가 시험하고, 자신이 adeptus임을 드러낸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "평 할머니는 여행자가 종을 되찾는 과정에서 여행자를 마법 찻주전자 속으로 데려가 시험하고, 자신이 adeptus임을 드러낸다."
-      },
-      {
-       "t_raw": "종을 되찾은 뒤 그녀는 오랜 친구인 Zhongli에게 차를 권하라는 말을 전해 달라 하며, 그의 행동 뒤의 진실을 빠르게 짐작한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "종을 되찾은 뒤 그녀는 오랜 친구인 종려에게 차를 권하라는 말을 전해 달라 하며, 그의 행동 뒤의 진실을 빠르게 짐작한다."
-      },
-      {
-       "t_raw": "그녀는 범인을 잡으라고 목청껏 외치면서 Rite of Parting은 외면하는 것이야말로 잘못된 생각이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 범인을 잡으라고 목청껏 외치면서 송신의례는 외면하는 것이야말로 잘못된 생각이라고 말한다."
-      },
-      {
-       "t_raw": "이런 태도와 Zhongli의 사정을 짐작한 메시지는 그녀가 의식의 의미를 중시하면서도 Zhongli의 행보를 살피고 있었음을 보여 주는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 태도와 종려의 사정을 짐작한 메시지는 그녀가 의식의 의미를 중시하면서도 종려의 행보를 살피고 있었음을 보여 주는 것으로 보인다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Madame Ping",
@@ -534,267 +547,33 @@
       },
       {
        "kind": "quest",
-       "quest": "The Realm Within",
-       "quest_ko": "호천",
+       "quest": "A Path Through the Storm",
+       "quest_ko": "뇌우를 뚫는 법",
+       "version": "1.6",
+       "speaker": "Clash Competitor"
+      },
+      {
+       "kind": "quest",
+       "quest": "Zhongli's Treat",
+       "quest_ko": "초대",
        "version": "1.0",
-       "speaker": "Madame Ping"
-      }
-     ],
-     "heading": "작중 행적 — 송신의 준비",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Rex Lapis의 Rite of Parting",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Allowing the Rite of Parting to take place was also meant to buy some time for us to take control of Liyue's administration...",
-     "sentences": [
-      {
-       "t_raw": "Zhongli는 Rite of Parting 준비가 거의 끝났다고 말하고, Big-Footed Dajiao는 의식을 진행한다는 것이 그 소문이 맞아떨어졌다는 뜻이라고 받아들인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "종려는 송신의례 준비가 거의 끝났다고 말하고, 대발이는 의식을 진행한다는 것이 그 소문이 맞아떨어졌다는 뜻이라고 받아들인다."
-      },
-      {
-       "t_raw": "Ningguang은 Rite of Parting을 허용한 것이 Liyue의 행정을 장악할 시간을 벌기 위한 것이기도 했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "응광은 송신의례를 허용한 것이 리월의 행정을 장악할 시간을 벌기 위한 것이기도 했다고 말한다."
-      },
-      {
-       "t_raw": "Rite of Parting에서 Lady Keqing과 대화했다는 인물을 Clash Competitor가 언급한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "송신의례에서 Lady Keqing과 대화했다는 인물을 Clash Competitor가 언급한다."
-      },
-      {
-       "t_raw": "**정치적 계산**이 의식 허용에 깔렸고, 그 자리에서 Lady Keqing과의 대화도 오갔다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "**정치적 계산**이 의식 허용에 깔렸고, 그 자리에서 Lady Keqing과의 대화도 오갔다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Solitary Fragrance",
-       "quest_ko": "고결한 향기",
-       "version": "1.1",
        "speaker": "Zhongli"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Fond Farewell",
-       "quest_ko": "송신",
-       "version": "1.1",
-       "speaker": "Big-Footed Dajiao"
-      },
-      {
-       "kind": "quest",
-       "quest": "Equilibrium",
-       "quest_ko": "선기 옥형",
-       "version": "1.1",
-       "speaker": "Ningguang"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Path Through the Storm",
-       "quest_ko": "뇌우를 뚫는 법",
-       "version": "1.6",
-       "speaker": "Clash Competitor"
-      }
-     ],
-     "heading": "작중 행적 — 암왕제군의 송신의례",
-     "latin_left": [
-      "Lady Keqing",
-      "Clash Competitor",
-      "Lady Keqing"
-     ]
-    },
-    {
-     "section": "작중 행적 — Rex Lapis의 Rite of Parting",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Once the Rite of Parting, of which Zhongli was both director and star, was over, the Fatui Harbinger named Signora appeared before him.",
-     "sentences": [
-      {
-       "t_raw": "The Fond Farewell에서 Rex Lapis를 위한 Rite of Parting이 끝난 뒤 Fatui의 집행관 Signora가 Zhongli 앞에 나타난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "송신에서 암왕제군을 위한 송신의례가 끝난 뒤 우인단의 집행관 시뇨라가 종려 앞에 나타난다."
-      },
-      {
-       "t_raw": "Zhongli는 그 의식의 **감독이자 주연**이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "종려는 그 의식의 **감독이자 주연**이었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Rite of Parting",
-       "revision": 422078,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Zhongli/Profile",
-       "revision": 425126,
-       "section": "Character Stories > Gnosis",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 암왕제군의 송신의례",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "it is a Liyue tradition to mark the passing of every adeptus with a memorial service called the Rite of Parting.",
-     "sentences": [
-      {
-       "t_raw": "Rite of Parting은 adeptus의 죽음을 기리는 Liyue 전통으로 **Wangsheng Funeral Parlor**가 주관해 왔고, 지난 삼천 년 동안 치른 횟수는 손에 꼽을 정도였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "송신의례는 adeptus의 죽음을 기리는 리월 전통으로 **왕생당**이 주관해 왔고, 지난 삼천 년 동안 치른 횟수는 손에 꼽을 정도였다."
-      },
-      {
-       "t_raw": "Zhongli는 Rite of Parting을 위해 Cleansing Bell을 받아 오라고 Traveler에게 맡기며 Madame Ping을 찾아가는 데는 동행하지 않고 이유도 밝히지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "종려는 송신의례를 위해 척진령을 받아 오라고 여행자에게 맡기며 평 할머니를 찾아가는 데는 동행하지 않고 이유도 밝히지 않았다."
-      },
-      {
-       "t_raw": "Madame Ping은 마법의 찻주전자로 그들을 시험해 adeptus임을 드러낸 뒤 Zhongli의 사정을 짐작하고 그를 차에 초대하라는 말을 전했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "평 할머니는 마법의 찻주전자로 그들을 시험해 adeptus임을 드러낸 뒤 종려의 사정을 짐작하고 그를 차에 초대하라는 말을 전했다."
-      },
-      {
-       "t_raw": "adeptus를 위한 전통과 Madame Ping이 자신의 정체를 드러내고 Zhongli의 사정을 짐작한 일을 함께 보면, 이 의식은 adeptus와 Zhongli의 관계가 드러나는 자리로도 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "adeptus를 위한 전통과 평 할머니가 자신의 정체를 드러내고 종려의 사정을 짐작한 일을 함께 보면, 이 의식은 adeptus와 종려의 관계가 드러나는 자리로도 읽힌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Adeptus",
-       "revision": 201413,
-       "section": "Story > Present",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Madame Ping",
-       "revision": 425308,
-       "section": "Profile > Present Day",
-       "paragraph": "M6",
-       "wiki_refs": []
       }
      ],
      "heading": "얽힌 인물과 세력",
      "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Allowing the Rite of Parting to take place was also meant to buy some time for us to take control of Liyue's administration...",
-     "sentences": [
-      {
-       "t_raw": "**Ningguang**은 Rite of Parting이 거행되도록 허용한 것이 Liyue의 행정을 장악할 시간을 벌기 위한 것이기도 했다고 말했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**응광**은 송신의례가 거행되도록 허용한 것이 리월의 행정을 장악할 시간을 벌기 위한 것이기도 했다고 말했다."
-      },
-      {
-       "t_raw": "Iron Tongue Tian은 Zhongli가 Rite of Parting 준비를 도운 Traveler와 Paimon을 Third-Round Knockout에서 대접하던 때 Ningguang에 관한 이야기를 들려주었고, Rite of Parting에서 Lady Keqing과 이야기한 사람도 언급된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "전달변은 종려가 송신의례 준비를 도운 여행자와 페이몬을 세 대포 주점에서 대접하던 때 응광에 관한 이야기를 들려주었고, 송신의례에서 Lady Keqing과 이야기한 사람도 언급된다."
-      },
-      {
-       "t_raw": "의식이 끝난 뒤 Fatui 집행관 Signora가 Zhongli 앞에 나타났고, Zhongli는 그 의식의 감독이자 주연이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "의식이 끝난 뒤 우인단 집행관 시뇨라가 종려 앞에 나타났고, 종려는 그 의식의 감독이자 주연이었다."
-      },
-      {
-       "t_raw": "의식이 Liyue 행정 장악을 위한 시간벌기와 맞물렸고 Lady Keqing과의 대화가 언급되며 의식 뒤에 Signora가 Zhongli 앞에 나타났다는 점을 함께 보면, Rite of Parting은 Liyue의 정치적 계산과 Zhongli를 둘러싼 국면이 겹쳐 있는 사건으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "의식이 리월 행정 장악을 위한 시간벌기와 맞물렸고 Lady Keqing과의 대화가 언급되며 의식 뒤에 시뇨라가 종려 앞에 나타났다는 점을 함께 보면, 송신의례는 리월의 정치적 계산과 종려를 둘러싼 국면이 겹쳐 있는 사건으로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Equilibrium",
-       "quest_ko": "선기 옥형",
-       "version": "1.1",
-       "speaker": "Ningguang"
-      },
-      {
-       "kind": "wiki",
-       "page": "Iron Tongue Tian",
-       "revision": 45254,
-       "section": null,
-       "paragraph": "M3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Path Through the Storm",
-       "quest_ko": "뇌우를 뚫는 법",
-       "version": "1.6",
-       "speaker": "Clash Competitor"
-      },
-      {
-       "kind": "wiki",
-       "page": "Zhongli/Profile",
-       "revision": 425126,
-       "section": "Character Stories > Gnosis",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Lady Keqing",
-      "Lady Keqing"
-     ]
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Precisely. Only by participating in the Rite of Parting will you be able to see the form of Rex Lapis again.",
+     "status": "accepted",
+     "note": "Supported by M1 and Q8; the interpretation is mild and reasonable.",
+     "quote": "Only by participating in the Rite of Parting will you be able to see the form of Rex Lapis again.",
      "sentences": [
       {
-       "t_raw": "Zhongli는 Traveler에게 Rite of Parting에 쓸 Cleansing Bell을 Madame Ping에게서 받아 오게 했지만, 자신의 이유로 Madame Ping을 찾아가는 일에는 동행하지 않았고 그 이유도 **밝히지 않았다**.",
+       "t_raw": "Rite of Parting에서 Zhongli는 **감독이자 주연**으로 서술되고, 의식 후 Fatui 집행관 Signora가 그 앞에 나타난다.",
        "interp": false,
        "dropped": false,
-       "t": "종려는 여행자에게 송신의례에 쓸 척진령을 평 할머니에게서 받아 오게 했지만, 자신의 이유로 평 할머니를 찾아가는 일에는 동행하지 않았고 그 이유도 **밝히지 않았다**."
-      },
-      {
-       "t_raw": "Madame Ping은 Cleansing Bell을 건네는 과정에서 Traveler를 마법의 찻주전자로 옮겨 시험했고, 자신이 adeptus임을 드러냈다.",
-       "interp": false,
-       "dropped": false,
-       "t": "평 할머니는 척진령을 건네는 과정에서 여행자를 마법의 찻주전자로 옮겨 시험했고, 자신이 adeptus임을 드러냈다."
-      },
-      {
-       "t_raw": "Cleansing Bell을 받은 뒤 그녀는 \"old friend\"(Zhongli)에게 차 한 잔을 권하는 전갈을 전해 달라고 하며 그의 행동 뒤의 진실을 **빠르게 짐작했다**.",
-       "interp": false,
-       "dropped": false,
-       "t": "척진령을 받은 뒤 그녀는 \"old friend\"(종려)에게 차 한 잔을 권하는 전갈을 전해 달라고 하며 그의 행동 뒤의 진실을 **빠르게 짐작했다**."
+       "t": "송신의례에서 종려는 **감독이자 주연**으로 서술되고, 의식 후 우인단 집행관 시뇨라가 그 앞에 나타난다."
       },
       {
        "t_raw": "Zhongli는 Rite of Parting에 참여해야만 Rex Lapis의 모습을 다시 볼 수 있다고 말한다.",
@@ -803,19 +582,19 @@
        "t": "종려는 송신의례에 참여해야만 암왕제군의 모습을 다시 볼 수 있다고 말한다."
       },
       {
-       "t_raw": "Zhongli가 이유를 밝히지 않은 점과 Rite of Parting에 참여해야 Rex Lapis의 모습을 다시 볼 수 있다는 말은 의식의 의미를 둘러싼 여지를 남긴다고 볼 수 있다.",
+       "t_raw": "이는 Zhongli와 Rex Lapis의 관계를 둘러싼 물음을 남긴다.",
        "interp": true,
        "dropped": false,
-       "t": "종려가 이유를 밝히지 않은 점과 송신의례에 참여해야 암왕제군의 모습을 다시 볼 수 있다는 말은 의식의 의미를 둘러싼 여지를 남긴다고 볼 수 있다."
+       "t": "이는 종려와 암왕제군의 관계를 둘러싼 물음을 남긴다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Madame Ping",
-       "revision": 425308,
-       "section": "Profile > Present Day",
-       "paragraph": "M6",
+       "page": "Zhongli/Profile",
+       "revision": 425126,
+       "section": "Character Stories > Gnosis",
+       "paragraph": "M1",
        "wiki_refs": []
       },
       {
@@ -831,44 +610,35 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Well, since we're going through with this Rite of Parting... I guess it means that those rumors hit the nail on the head.",
+     "status": "accepted",
+     "note": "Matches M6. The omitted subject in sentence 1 reads as Madame Ping revealing herself as an adeptus. The interpretation is hedged ('보인다').",
+     "quote": "having quickly deduced the truth behind his actions.",
      "sentences": [
       {
-       "t_raw": "Rite of Parting에서 Zhongli는 감독이자 주연으로 표현된다.",
+       "t_raw": "Zhongli는 Traveler에게 Rite of Parting을 위해 Madame Ping에게서 Cleansing Bell을 가져오게 하면서도, 자신의 이유로 동행하지 않고 이유를 숨긴다.",
        "interp": false,
        "dropped": false,
-       "t": "송신의례에서 종려는 감독이자 주연으로 표현된다."
+       "t": "종려는 여행자에게 송신의례를 위해 평 할머니에게서 척진령을 가져오게 하면서도, 자신의 이유로 동행하지 않고 이유를 숨긴다."
       },
       {
-       "t_raw": "그 의식이 끝난 뒤 Fatui 집행관 Signora가 Zhongli 앞에 나타난다.",
+       "t_raw": "Madame Ping은 Traveler를 마법 찻주전자로 시험해 adeptus임을 드러내고, \"old friend\"(Zhongli)에게 차를 함께 마시자고 초대하는 메시지를 부탁하며 그의 행동 뒤의 진실을 빠르게 추측한다.",
        "interp": false,
        "dropped": false,
-       "t": "그 의식이 끝난 뒤 우인단 집행관 시뇨라가 종려 앞에 나타난다."
+       "t": "평 할머니는 여행자를 마법 찻주전자로 시험해 선인임을 드러내고, \"오랜 친구\"(종려)에게 차를 함께 마시자고 초대하는 메시지를 부탁하며 그의 행동 뒤의 진실을 빠르게 추측한다.",
+       "polish": {
+        "from": "평 할머니는 여행자를 마법 찻주전자로 시험해 adeptus임을 드러내고, \"old friend\"(종려)에게 차를 함께 마시자고 초대하는 메시지를 부탁하며 그의 행동 뒤의 진실을 빠르게 추측한다.",
+        "text": "평 할머니는 여행자를 마법 찻주전자로 시험해 선인임을 드러내고, \"오랜 친구\"(종려)에게 차를 함께 마시자고 초대하는 메시지를 부탁하며 그의 행동 뒤의 진실을 빠르게 추측한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "Big-Footed Dajiao는 Rite of Parting을 진행하게 되었으니 그 소문들이 맞아떨어졌다는 취지로 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대발이는 송신의례를 진행하게 되었으니 그 소문들이 맞아떨어졌다는 취지로 말한다."
-      },
-      {
-       "t_raw": "Madame Ping의 짐작, Big-Footed Dajiao의 소문 언급, 의식 후 **Signora의 등장**은 의식의 배경을 둘러싼 해석의 여지를 남긴다고 볼 수 있다.",
+       "t_raw": "동행 거부와 이 추측이 맞물려, 그녀가 사정을 짐작한 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "평 할머니의 짐작, 대발이의 소문 언급, 의식 후 **시뇨라의 등장**은 의식의 배경을 둘러싼 해석의 여지를 남긴다고 볼 수 있다."
+       "t": "동행 거부와 이 추측이 맞물려, 그녀가 사정을 짐작한 것으로 보인다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Zhongli/Profile",
-       "revision": 425126,
-       "section": "Character Stories > Gnosis",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Madame Ping",
@@ -876,13 +646,49 @@
        "section": "Profile > Present Day",
        "paragraph": "M6",
        "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences match M4; the interpretation is reasonable.",
+     "quote": "Zhongli first mentions the God of Wisdom while purchasing kites for the Rite of Parting",
+     "sentences": [
+      {
+       "t_raw": "Zhongli는 \"Downtown\"에서 Rite of Parting을 위한 연을 사며 처음 God of Wisdom을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "종려는 \"시가지\"에서 송신의례를 위한 연을 사며 처음 지혜의 신을 언급한다."
       },
       {
-       "kind": "quest",
-       "quest": "The Fond Farewell",
-       "quest_ko": "송신",
-       "version": "1.1",
-       "speaker": "Big-Footed Dajiao"
+       "t_raw": "Ganyu는 \"Solitary Fragrance\"에서 그녀가 current Seven 중 가장 어리며 500세라고 말하고, Morax가 자신의 죽음으로 여겨진 시점에 6000세가 넘었다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감우는 \"고결한 향기\"에서 그녀가 현재의 일곱 신 중 가장 어리며 500세라고 말하고, 모락스가 자신의 죽음으로 여겨진 시점에 6000세가 넘었다고 덧붙인다.",
+       "polish": {
+        "from": "감우는 \"고결한 향기\"에서 그녀가 current 일곱 신 중 가장 어리며 500세라고 말하고, 모락스가 자신의 죽음으로 여겨진 시점에 6000세가 넘었다고 덧붙인다.",
+        "text": "감우는 \"고결한 향기\"에서 그녀가 현재의 일곱 신 중 가장 어리며 500세라고 말하고, 모락스가 자신의 죽음으로 여겨진 시점에 6000세가 넘었다고 덧붙인다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "이 나이 비교는 Morax의 죽음으로 여겨진 사정과 함께 물음을 남긴다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 나이 비교는 모락스의 죽음으로 여겨진 사정과 함께 물음을 남긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Nahida/Storyline",
+       "revision": 424857,
+       "section": "Profile > Introduction",
+       "paragraph": "M4",
+       "wiki_refs": []
       }
      ],
      "heading": "떡밥과 수수께끼",
@@ -890,27 +696,27 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "She appears in Archon Quests Chapter 1, Act 2, Part 3: Three Poignant Perfumes, where she helps you make perfumes for the Rite of Parting.",
+     "status": "accepted",
+     "note": "Supported by M2, M3 and Q5.",
+     "quote": "You'd best be on your way now. But don't forget about the Rite of Parting. Once you've finished at the Jade Chamber, meet me at Dihua Marsh.",
      "sentences": [
       {
-       "t_raw": "Ying'er는 Three Poignant Perfumes에서 Rite of Parting에 쓸 향수를 만드는 일을 돕는다.",
+       "t_raw": "Ying'er는 Rite of Parting용 향수 만들기를 도왔다.",
        "interp": false,
        "dropped": false,
-       "t": "앵아는 퍼지는 향기에서 송신의례에 쓸 향수를 만드는 일을 돕는다."
+       "t": "앵아는 송신의례용 향수 만들기를 도왔다."
       },
       {
-       "t_raw": "Iron Tongue Tian은 Zhongli가 Rite of Parting 준비를 도운 Traveler와 Paimon을 Third-Round Knockout에 대접하던 자리에서 Ningguang에 관한 이야기를 들려준다.",
+       "t_raw": "Zhongli는 준비를 도운 Traveler와 Paimon을 Third-Round Knockout에서 대접했고, Iron Tongue Tian은 그 자리에서 Ningguang 이야기를 들려주었다.",
        "interp": false,
        "dropped": false,
-       "t": "전달변은 종려가 송신의례 준비를 도운 여행자와 페이몬을 세 대포 주점에 대접하던 자리에서 응광에 관한 이야기를 들려준다."
+       "t": "종려는 준비를 도운 여행자와 페이몬을 세 대포 주점에서 대접했고, 전달변은 그 자리에서 응광 이야기를 들려주었다."
       },
       {
-       "t_raw": "이런 대목은 Rite of Parting의 준비가 여러 인물의 일과 이야깃거리로 번져 있었음을 보여준다.",
-       "interp": true,
+       "t_raw": "Zhongli는 Jade Chamber에서 일을 마치면 Dihua Marsh에서 만나자고 했다.",
+       "interp": false,
        "dropped": false,
-       "t": "이런 대목은 송신의례의 준비가 여러 인물의 일과 이야깃거리로 번져 있었음을 보여준다."
+       "t": "종려는 군옥각에서 일을 마치면 적화주에서 만나자고 했다."
       }
      ],
      "sources": [
@@ -929,6 +735,13 @@
        "section": null,
        "paragraph": "M3",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Zhongli's Treat",
+       "quest_ko": "초대",
+       "version": "1.0",
+       "speaker": "Zhongli"
       }
      ],
      "heading": "여담",
@@ -936,36 +749,44 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "(Only Noctilucous Jade of radiant grade at the very least is acceptable for use in the Rite of Parting.)",
+     "status": "accepted",
+     "note": "Q1, Q3 and M4 support the facts; the interpretation is a mild framing and adds no fact.",
+     "quote": "...Well, since we're going through with this Rite of Parting... I guess it means that those rumors hit the nail on the head.",
      "sentences": [
       {
-       "t_raw": "Zhongli는 Downtown에서 Rite of Parting을 위해 연을 사면서 처음 God of Wisdom을 언급한다.",
+       "t_raw": "Big-Footed Dajiao는 Rite of Parting을 치르기로 한 이상 소문이 맞아떨어진 것 같다고 했고, Clash Competitor는 Rite of Parting에서 Keqing과 이야기한 사람을 언급했다.",
        "interp": false,
        "dropped": false,
-       "t": "종려는 시가지에서 송신의례를 위해 연을 사면서 처음 지혜의 신을 언급한다."
+       "t": "대발이는 송신의례를 치르기로 한 이상 소문이 맞아떨어진 것 같다고 했고, Clash Competitor는 송신의례에서 각청과 이야기한 사람을 언급했다."
       },
       {
-       "t_raw": "Noctilucous Jade 관찰 기록은 Rite of Parting에 적어도 찬란한 등급의 Noctilucous Jade만 쓸 수 있다고 전한다.",
+       "t_raw": "Zhongli는 Downtown에서 Rite of Parting용 연을 사면서 God of Wisdom을 처음 말했고, Ganyu는 God of Wisdom이 현재 Seven 중 가장 어린 500세이며 Morax는 죽었다고 여겨진 당시 6000세가 넘었다고 대조했다.",
        "interp": false,
        "dropped": false,
-       "t": "야박석 관찰 기록은 송신의례에 적어도 찬란한 등급의 야박석만 쓸 수 있다고 전한다."
+       "t": "종려는 시가지에서 송신의례용 연을 사면서 지혜의 신을 처음 말했고, 감우는 지혜의 신이 현재 일곱 신 중 가장 어린 500세이며 모락스는 죽었다고 여겨진 당시 6000세가 넘었다고 대조했다."
       },
       {
-       "t_raw": "향로 관찰 기록은 의식 때 향로를 태울 것이라고 짐작한다.",
-       "interp": false,
+       "t_raw": "연 구매와 나이 비교가 여담으로 묶인 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "향로 관찰 기록은 의식 때 향로를 태울 것이라고 짐작한다."
-      },
-      {
-       "t_raw": "한 격투 대회 참가자는 Rite of Parting에서 Lady Keqing와 이야기한 사람을 언급한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한 격투 대회 참가자는 송신의례에서 Lady Keqing와 이야기한 사람을 언급한다."
+       "t": "연 구매와 나이 비교가 여담으로 묶인 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Path Through the Storm",
+       "quest_ko": "뇌우를 뚫는 법",
+       "version": "1.6",
+       "speaker": "Clash Competitor"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Fond Farewell",
+       "quest_ko": "송신",
+       "version": "1.1",
+       "speaker": "Big-Footed Dajiao"
+      },
       {
        "kind": "wiki",
        "page": "Nahida/Storyline",
@@ -973,41 +794,20 @@
        "section": "Profile > Introduction",
        "paragraph": "M4",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Moonfinger",
-       "quest_ko": "달 가리키기",
-       "version": "1.0",
-       "speaker": "Observe the Noctilucous Jade"
-      },
-      {
-       "kind": "quest",
-       "quest": "Guizhong (Quest)",
-       "quest_ko": "귀종",
-       "version": "1.0",
-       "speaker": "Observe the censer"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Path Through the Storm",
-       "quest_ko": "뇌우를 뚫는 법",
-       "version": "1.6",
-       "speaker": "Clash Competitor"
       }
      ],
      "heading": "여담",
      "latin_left": [
-      "Lady Keqing"
+      "Clash Competitor"
      ]
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "“범인을 잡아라!”고 목청껏 외치면서 Rite of Parting은 외면하는 것... 내가 보기에는 그것이 바로 잘못된 생각이다.",
+     "status": "accepted",
+     "note": "Faithful translation of the Madame Ping line.",
+     "t_raw": "“살인범을 잡아라!”라고 목청껏 외치면서 Rite of Parting은 외면하는 것... 내가 보기에는 그것이 잘못된 생각이다.",
      "en": "To cry \"catch the murderer!\" at the top of one's lungs, but ignore the Rite of Parting... That, to me, is what is wrong-headed.",
      "speaker": "Madame Ping",
      "source": {
@@ -1017,14 +817,14 @@
       "version": "1.0",
       "speaker": "Madame Ping"
      },
-     "t": "“범인을 잡아라!”고 목청껏 외치면서 송신의례는 외면하는 것... 내가 보기에는 그것이 바로 잘못된 생각이다.",
+     "t": "“살인범을 잡아라!”라고 목청껏 외치면서 송신의례는 외면하는 것... 내가 보기에는 그것이 잘못된 생각이다.",
      "speaker_ko": "평 할머니"
     },
     {
-     "section": "정체와 절차",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Rite of Parting에는 재료뿐 아니라 돕는 사람도 필요하다. 우리는 항구 근처에서 몇 사람을 찾을 수 있을 것이다.",
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation of the Zhongli line.",
+     "t_raw": "Rite of Parting에는 재료뿐 아니라 도움을 줄 사람들도 필요하다. 항구 근처에서 몇 사람을 찾을 수 있을 것이다.",
      "en": "The Rite of Parting requires helping hands as well as materials. We should be able to find some people near the harbor.",
      "speaker": "Zhongli",
      "source": {
@@ -1034,47 +834,13 @@
       "version": "1.0",
       "speaker": "Zhongli"
      },
-     "t": "송신의례에는 재료뿐 아니라 돕는 사람도 필요하다. 우리는 항구 근처에서 몇 사람을 찾을 수 있을 것이다.",
+     "t": "송신의례에는 재료뿐 아니라 도움을 줄 사람들도 필요하다. 항구 근처에서 몇 사람을 찾을 수 있을 것이다.",
      "speaker_ko": "종려"
     },
     {
      "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Rite of Parting이 열리도록 한 것은 우리가 Liyue의 행정권을 장악할 시간을 벌기 위한 것이기도 했습니다...",
-     "en": "Allowing the Rite of Parting to take place was also meant to buy some time for us to take control of Liyue's administration...",
-     "speaker": "Ningguang",
-     "source": {
-      "kind": "quest",
-      "quest": "Equilibrium",
-      "quest_ko": "선기 옥형",
-      "version": "1.1",
-      "speaker": "Ningguang"
-     },
-     "t": "송신의례가 열리도록 한 것은 우리가 리월의 행정권을 장악할 시간을 벌기 위한 것이기도 했습니다...",
-     "speaker_ko": "응광"
-    },
-    {
-     "section": "작중 행적 — The Fond Farewell의 준비",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "범인을 잡으라고 목청껏 외치면서 Rite of Parting은 외면하는 것... 내게는 그것이야말로 잘못된 생각일세.",
-     "en": "To cry \"catch the murderer!\" at the top of one's lungs, but ignore the Rite of Parting... That, to me, is what is wrong-headed.",
-     "speaker": "Madame Ping",
-     "source": {
-      "kind": "quest",
-      "quest": "The Realm Within",
-      "quest_ko": "호천",
-      "version": "1.0",
-      "speaker": "Madame Ping"
-     },
-     "t": "범인을 잡으라고 목청껏 외치면서 송신의례는 외면하는 것... 내게는 그것이야말로 잘못된 생각일세.",
-     "speaker_ko": "평 할머니"
-    },
-    {
-     "section": "작중 행적 — Rex Lapis의 Rite of Parting",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Faithful translation of the Ningguang line.",
      "t_raw": "Rite of Parting이 거행되도록 허용한 것은 우리가 Liyue의 행정을 장악할 시간을 벌기 위한 것이기도 했다...",
      "en": "Allowing the Rite of Parting to take place was also meant to buy some time for us to take control of Liyue's administration...",
      "speaker": "Ningguang",
@@ -1090,26 +856,26 @@
     },
     {
      "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Rite of Parting이 거행되도록 허용한 것 역시 우리가 Liyue의 행정을 장악할 시간을 벌기 위한 것이었습니다...",
-     "en": "Allowing the Rite of Parting to take place was also meant to buy some time for us to take control of Liyue's administration...",
-     "speaker": "Ningguang",
+     "status": "accepted",
+     "note": "Faithful translation of Zhongli's line.",
+     "t_raw": "이제 슬슬 길을 떠나는 게 좋겠군. 하지만 Rite of Parting을 잊지 말게. Jade Chamber에서 일을 마친 뒤 Dihua Marsh에서 나를 만나게.",
+     "en": "You'd best be on your way now. But don't forget about the Rite of Parting. Once you've finished at the Jade Chamber, meet me at Dihua Marsh.",
+     "speaker": "Zhongli",
      "source": {
       "kind": "quest",
-      "quest": "Equilibrium",
-      "quest_ko": "선기 옥형",
-      "version": "1.1",
-      "speaker": "Ningguang"
+      "quest": "Zhongli's Treat",
+      "quest_ko": "초대",
+      "version": "1.0",
+      "speaker": "Zhongli"
      },
-     "t": "송신의례가 거행되도록 허용한 것 역시 우리가 리월의 행정을 장악할 시간을 벌기 위한 것이었습니다...",
-     "speaker_ko": "응광"
+     "t": "이제 슬슬 길을 떠나는 게 좋겠군. 하지만 송신의례를 잊지 말게. 군옥각에서 일을 마친 뒤 적화주에서 나를 만나게.",
+     "speaker_ko": "종려"
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "정확히 그렇다. Rite of Parting에 참여해야만 Rex Lapis의 모습을 다시 볼 수 있다.",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "정확하다. Rite of Parting에 참여해야만 Rex Lapis의 모습을 다시 볼 수 있다.",
      "en": "Precisely. Only by participating in the Rite of Parting will you be able to see the form of Rex Lapis again.",
      "speaker": "Zhongli",
      "source": {
@@ -1119,25 +885,25 @@
       "version": "1.0",
       "speaker": "Zhongli"
      },
-     "t": "정확히 그렇다. 송신의례에 참여해야만 암왕제군의 모습을 다시 볼 수 있다.",
+     "t": "정확하다. 송신의례에 참여해야만 암왕제군의 모습을 다시 볼 수 있다.",
      "speaker_ko": "종려"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "(적어도 찬란한 등급의 Noctilucous Jade만이 Rite of Parting에 사용하기에 적합하다.)",
-     "en": "(Only Noctilucous Jade of radiant grade at the very least is acceptable for use in the Rite of Parting.)",
-     "speaker": "Observe the Noctilucous Jade",
+     "status": "accepted",
+     "note": "Mistranslation: the line says 'those rumors hit the nail on the head' and 'I guess it means', which is fine, but the Korean says 'we decided to hold' and the rumors 'matched'; mainly the Korean is close. However the Korean gives no clear error, so check: it is a faithful rendering.",
+     "t_raw": "…뭐, 우리가 이 Rite of Parting을 치르기로 했으니… 그 소문들이 맞아떨어졌다는 뜻인 것 같군.",
+     "en": "...Well, since we're going through with this Rite of Parting... I guess it means that those rumors hit the nail on the head.",
+     "speaker": "Big-Footed Dajiao",
      "source": {
       "kind": "quest",
-      "quest": "Moonfinger",
-      "quest_ko": "달 가리키기",
-      "version": "1.0",
-      "speaker": "Observe the Noctilucous Jade"
+      "quest": "The Fond Farewell",
+      "quest_ko": "송신",
+      "version": "1.1",
+      "speaker": "Big-Footed Dajiao"
      },
-     "t": "(적어도 찬란한 등급의 야박석만이 송신의례에 사용하기에 적합하다.)",
-     "speaker_ko": "Observe the Noctilucous Jade"
+     "t": "…뭐, 우리가 이 송신의례를 치르기로 했으니… 그 소문들이 맞아떨어졌다는 뜻인 것 같군.",
+     "speaker_ko": "대발이"
     }
    ]
   }

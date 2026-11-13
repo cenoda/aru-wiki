@@ -1,0 +1,698 @@
+{
+ "node": "Yanshang Teahouse",
+ "articles": [
+  {
+   "node": "Yanshang Teahouse",
+   "from_version": "1.4",
+   "cutoff": "2021-04-27T00:00:00Z",
+   "input": [
+    {
+     "page": "Yanshang Teahouse",
+     "url": "https://genshin-impact.fandom.com/wiki/Yanshang_Teahouse",
+     "revision": 163595
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 944,
+   "input_cut": false,
+   "input_hash": "50f1b8d28a20",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences match A1, A2 and A4. The interpretation is reasonable.",
+     "quote": "Yanshang Teahouse is a store in Liyue Harbor, but cannot be accessed by the player.",
+     "sentences": [
+      {
+       "t_raw": "Yanshang Teahouse는 Liyue Harbor의 상점이지만 플레이어가 접근할 수 없는 장소다.",
+       "interp": false,
+       "dropped": false,
+       "t": "암상 찻집은 리월항의 상점이지만 플레이어가 접근할 수 없는 장소다."
+      },
+      {
+       "t_raw": "찻집은 고품질의 차와 \"other goods\"를 내건다고 알려져 있으나, 보통 사람에게는 재고를 보여주지 않고 입장 전에 예치금을 먼저 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "찻집은 고품질의 차와 \"기타 상품\"을 내건다고 알려져 있으나, 보통 사람에게는 재고를 보여주지 않고 입장 전에 예치금을 먼저 받는다.",
+       "polish": {
+        "from": "찻집은 고품질의 차와 \"other goods\"를 내건다고 알려져 있으나, 보통 사람에게는 재고를 보여주지 않고 입장 전에 예치금을 먼저 받는다.",
+        "text": "찻집은 고품질의 차와 \"기타 상품\"을 내건다고 알려져 있으나, 보통 사람에게는 재고를 보여주지 않고 입장 전에 예치금을 먼저 받는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그런데 Chuyi는 Traveler가 간단한 질문을 했을 때도 매우 무례하게 굴고, Chihu Rock Bulletin Board의 공지는 그녀가 사람들의 돈을 모두 쓰게 만드는 사기꾼이라고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 초의는 여행자가 간단한 질문을 했을 때도 매우 무례하게 굴고, 흘호암 알림판의 공지는 그녀가 사람들의 돈을 모두 쓰게 만드는 사기꾼이라고 적는다."
+      },
+      {
+       "t_raw": "재고를 숨기고 예치금을 요구하는 방식과 사기꾼이라는 평판이 겹쳐, 이 찻집은 **의심스러운 영업**과 **악명**을 함께 지닌 곳으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "재고를 숨기고 예치금을 요구하는 방식과 사기꾼이라는 평판이 겹쳐, 이 찻집은 **의심스러운 영업**과 **악명**을 함께 지닌 곳으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful to A1 and A2.",
+     "quote": "Yanshang Teahouse is a store in Liyue Harbor, but cannot be accessed by the player.",
+     "sentences": [
+      {
+       "t_raw": "Yanshang Teahouse는 Liyue Harbor에 있는 상점이지만 플레이어가 접근할 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "암상 찻집은 리월항에 있는 상점이지만 플레이어가 접근할 수 없다."
+      },
+      {
+       "t_raw": "찻집은 **고품질 차와 “other goods”**를 제공한다고 알려져 있으나, 일반 사람에게 **재고를 보여주지 않는다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "찻집은 **고품질 차와 “other goods”**를 제공한다고 알려져 있으나, 일반 사람에게 **재고를 보여주지 않는다**."
+      },
+      {
+       "t_raw": "입장하려는 손님은 먼저 예치금을 내야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "입장하려는 손님은 먼저 예치금을 내야 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The roles match A6 to A8. The interpretation is modest and follows from the material.",
+     "quote": "The Halberd · Security",
+     "sentences": [
+      {
+       "t_raw": "Chuyi는 손님을 맞는 역할, The Halberd와 The Fang은 경비 역할로 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "초의는 손님을 맞는 역할, 극과 이는 경비 역할로 제시된다."
+      },
+      {
+       "t_raw": "이처럼 손님을 맞는 역할과 경비 역할이 나뉘고 재고 비공개·예치금 요구가 겹치는 모습은, 찻집이 차를 파는 접객 공간이면서 경비를 둔 곳으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 손님을 맞는 역할과 경비 역할이 나뉘고 재고 비공개·예치금 요구가 겹치는 모습은, 찻집이 차를 파는 접객 공간이면서 경비를 둔 곳으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The facts match A2. Both interpretations are hedged and follow from the deposit and hidden-stock details.",
+     "quote": "In order to enter, customers must pay a deposit up-front.",
+     "sentences": [
+      {
+       "t_raw": "이 찻집은 고품질의 차와 “other goods”를 내건다고 알려져 있지만, 일반인이 **재고를 볼 수 없게 한다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 찻집은 고품질의 차와 “기타 상품”을 내건다고 알려져 있지만, 일반인이 **재고를 볼 수 없게 한다**.",
+       "polish": {
+        "from": "이 찻집은 고품질의 차와 “other goods”를 내건다고 알려져 있지만, 일반인이 **재고를 볼 수 없게 한다**.",
+        "text": "이 찻집은 고품질의 차와 “기타 상품”을 내건다고 알려져 있지만, 일반인이 **재고를 볼 수 없게 한다**.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "**입장을 위해서는 예치금을 먼저 내야 한다**는 점과 맞물려, 손님은 물건을 확인하기 전에 돈부터 내야 하는 구조로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**입장을 위해서는 예치금을 먼저 내야 한다**는 점과 맞물려, 손님은 물건을 확인하기 전에 돈부터 내야 하는 구조로 보인다."
+      },
+      {
+       "t_raw": "차와 “other goods”를 함께 내세우면서도 실물을 보여주지 않는 방식은 이곳을 재고를 확인하기 어려운 상점으로 기울게 한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "차와 “기타 상품”을 함께 내세우면서도 실물을 보여주지 않는 방식은 이곳을 재고를 확인하기 어려운 상점으로 기울게 한다고 볼 수 있다.",
+       "polish": {
+        "from": "차와 “other goods”를 함께 내세우면서도 실물을 보여주지 않는 방식은 이곳을 재고를 확인하기 어려운 상점으로 기울게 한다고 볼 수 있다.",
+        "text": "차와 “기타 상품”을 함께 내세우면서도 실물을 보여주지 않는 방식은 이곳을 재고를 확인하기 어려운 상점으로 기울게 한다고 볼 수 있다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Chuyi's role, her rudeness and the bulletin board notice are all stated in A4 and A6. The interpretation is fair.",
+     "quote": "The teahouse appears to have a notorious reputation, as Chuyi is extremely rude towards the Traveler for asking a simple question.",
+     "sentences": [
+      {
+       "t_raw": "Chuyi는 이 찻집의 호스티스 역할을 맡고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "초의는 이 찻집의 호스티스 역할을 맡고 있다."
+      },
+      {
+       "t_raw": "그런데 Traveler가 간단한 질문을 했을 때 그녀는 극도로 무례하게 굴었고, Chihu Rock Bulletin Board에는 그녀가 사람들의 돈을 모두 쓰게 만드는 사기꾼이라는 공지가 올라와 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 여행자가 간단한 질문을 했을 때 그녀는 극도로 무례하게 굴었고, 흘호암 알림판에는 그녀가 사람들의 돈을 모두 쓰게 만드는 사기꾼이라는 공지가 올라와 있다."
+      },
+      {
+       "t_raw": "호스티스의 응대와 게시판의 평판은 **불친절한 찻집**이라는 이미지를 강화하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "호스티스의 응대와 게시판의 평판은 **불친절한 찻집**이라는 이미지를 강화하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Matches A3. The interpretation only restates the events.",
+     "quote": "Childe easily overwhelmed and killed the owner and his guards, obtaining a Sigil of Permission in the process.",
+     "sentences": [
+      {
+       "t_raw": "Traveler가 Liyue에 도착하기 전 어느 시점, Yanshang Teahouse의 이전 주인에게는 Northland Bank에 갚지 않은 채무가 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 리월에 도착하기 전 어느 시점, 암상 찻집의 이전 주인에게는 북국 은행에 갚지 않은 채무가 있었다."
+      },
+      {
+       "t_raw": "Northland Bank는 Childe와 Javert를 보내 그 빚을 **강제로 회수**하게 했고, Childe는 주인과 경비들을 손쉽게 제압해 죽였으며 그 과정에서 **Sigil of Permission**을 얻었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북국 은행은 귀공자와 자베르를 보내 그 빚을 **강제로 회수**하게 했고, 귀공자는 주인과 경비들을 손쉽게 제압해 죽였으며 그 과정에서 **백무금기 비록**을 얻었다."
+      },
+      {
+       "t_raw": "채무 회수가 죽음과 Sigil of Permission의 획득으로 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "채무 회수가 죽음과 백무금기 비록의 획득으로 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences are supported by A3 and A6.",
+     "quote": "He apparently spared Chuyi for reasons unknown.",
+     "sentences": [
+      {
+       "t_raw": "이전 주인과 경비들이 죽었지만 **Chuyi**는 살아남았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이전 주인과 경비들이 죽었지만 **초의**는 살아남았다."
+      },
+      {
+       "t_raw": "Childe가 Chuyi를 살려둔 것으로 보이지만, 그 이유는 알려지지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀공자가 초의를 살려둔 것으로 보이지만, 그 이유는 알려지지 않았다."
+      },
+      {
+       "t_raw": "Chuyi는 Yanshang Teahouse의 접객 담당자로 기록되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "초의는 암상 찻집의 접객 담당자로 기록되어 있다."
+      },
+      {
+       "t_raw": "주인과 경비들의 죽음, Chuyi의 생존은 이 사건이 남긴 흔적으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "주인과 경비들의 죽음, 초의의 생존은 이 사건이 남긴 흔적으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by A4 and A5-A8.",
+     "quote": "Chuyi is extremely rude towards the Traveler for asking a simple question.",
+     "sentences": [
+      {
+       "t_raw": "Yanshang Teahouse의 구성원은 Chuyi와 The Halberd, The Fang으로 나뉘며, Chuyi는 **접객 담당**, 나머지 둘은 **경비**를 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "암상 찻집의 구성원은 초의와 극, 이로 나뉘며, 초의는 **접객 담당**, 나머지 둘은 **경비**를 맡는다."
+      },
+      {
+       "t_raw": "그런데 Traveler가 간단한 질문을 했을 때 Chuyi가 매우 무례하게 굴었고, Chihu Rock Bulletin Board에는 그녀가 사람들의 돈을 모두 쓰게 만드는 사기꾼이라는 공지가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 여행자가 간단한 질문을 했을 때 초의가 매우 무례하게 굴었고, 흘호암 알림판에는 그녀가 사람들의 돈을 모두 쓰게 만드는 사기꾼이라는 공지가 있다."
+      },
+      {
+       "t_raw": "접객 담당이 Traveler에게 보인 태도와 게시판의 평판이 맞물려 찻집의 인상이 만들어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "접객 담당이 여행자에게 보인 태도와 게시판의 평판이 맞물려 찻집의 인상이 만들어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Facts match A3 and A6. The interpretation in sentence 3 is mild and follows from them.",
+     "quote": "He apparently spared Chuyi for reasons unknown.",
+     "sentences": [
+      {
+       "t_raw": "Traveler가 Liyue에 도착하기 전, 이전 주인은 Northland Bank에 갚지 못한 채무가 있었고, Northland Bank는 Childe와 Javert를 보내 그 채무를 **무력으로 회수**하게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 리월에 도착하기 전, 이전 주인은 북국 은행에 갚지 못한 채무가 있었고, 북국 은행은 귀공자와 자베르를 보내 그 채무를 **무력으로 회수**하게 했다."
+      },
+      {
+       "t_raw": "Childe는 주인과 경비들을 손쉽게 압도해 죽였으며, 그 과정에서 Sigil of Permission을 얻었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀공자는 주인과 경비들을 손쉽게 압도해 죽였으며, 그 과정에서 백무금기 비록을 얻었다."
+      },
+      {
+       "t_raw": "그는 이유가 알려지지 않은 채 Chuyi를 살려둔 것으로 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 이유가 알려지지 않은 채 초의를 살려둔 것으로 보인다."
+      },
+      {
+       "t_raw": "Childe가 Chuyi를 살려둔 것으로 보이고 Chuyi가 Yanshang Teahouse의 접객 담당으로 기록된 점을 함께 보면, 두 사람의 접점은 찻집의 구성에 드러나 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "귀공자가 초의를 살려둔 것으로 보이고 초의가 암상 찻집의 접객 담당으로 기록된 점을 함께 보면, 두 사람의 접점은 찻집의 구성에 드러나 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Facts match A2. The interpretations are hedged ('may') and do not add new facts.",
+     "quote": "Yangshang Teahouse apparently offers high-quality teas and \"other goods\", but they refuse to allow the common person to see what they have in stock.",
+     "sentences": [
+      {
+       "t_raw": "이 찻집은 고품질 차와 **“other goods”**를 내건다고 알려졌지만, 일반인이 재고를 보는 것은 허락하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 찻집은 고품질 차와 **“other goods”**를 내건다고 알려졌지만, 일반인이 재고를 보는 것은 허락하지 않는다."
+      },
+      {
+       "t_raw": "손님은 입장 전에 예치금을 먼저 내야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손님은 입장 전에 예치금을 먼저 내야 한다."
+      },
+      {
+       "t_raw": "차와 ‘other goods’를 함께 내세우면서도 재고를 감추는 점은, 이 찻집의 핵심이 차 자체보다 ‘other goods’에 있을 수 있음을 보여주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "차와 '기타 상품'을 함께 내세우면서도 재고를 감추는 점은, 이 찻집의 핵심이 차 자체보다 '기타 상품'에 있을 수 있음을 보여주는 대목으로 보인다.",
+       "polish": {
+        "from": "차와 'other goods'를 함께 내세우면서도 재고를 감추는 점은, 이 찻집의 핵심이 차 자체보다 'other goods'에 있을 수 있음을 보여주는 대목으로 보인다.",
+        "text": "차와 '기타 상품'을 함께 내세우면서도 재고를 감추는 점은, 이 찻집의 핵심이 차 자체보다 '기타 상품'에 있을 수 있음을 보여주는 대목으로 보인다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "‘other goods’의 실체와 재고를 보여주지 않는 이유는 함께 의문으로 남는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "'기타 상품'의 실체와 재고를 보여주지 않는 이유는 함께 의문으로 남는 셈이다.",
+       "polish": {
+        "from": "'other goods'의 실체와 재고를 보여주지 않는 이유는 함께 의문으로 남는 셈이다.",
+        "text": "'기타 상품'의 실체와 재고를 보여주지 않는 이유는 함께 의문으로 남는 셈이다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by A3.",
+     "quote": "He apparently spared Chuyi for reasons unknown.",
+     "sentences": [
+      {
+       "t_raw": "이전 주인의 Northland Bank 채무를 두고 Childe와 Javert가 강제 회수에 나섰고, 그 과정에서 Childe는 주인과 경비들을 쉽게 제압해 죽이고 Sigil of Permission을 얻었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이전 주인의 북국 은행 채무를 두고 귀공자와 자베르가 강제 회수에 나섰고, 그 과정에서 귀공자는 주인과 경비들을 쉽게 제압해 죽이고 백무금기 비록을 얻었다."
+      },
+      {
+       "t_raw": "Chuyi는 그 자리에서 살아남았지만, 그를 살려둔 이유는 알려지지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "초의는 그 자리에서 살아남았지만, 그를 살려둔 이유는 알려지지 않았다."
+      },
+      {
+       "t_raw": "주인과 경비들의 죽음, Sigil of Permission의 획득은 사건의 결과로 남았으나 **Chuyi를 살려둔 이유**만은 설명되지 않은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "주인과 경비들의 죽음, 백무금기 비록의 획득은 사건의 결과로 남았으나 **초의를 살려둔 이유**만은 설명되지 않은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by A4 and A6.",
+     "quote": "Chuyi is extremely rude towards the Traveler for asking a simple question.",
+     "sentences": [
+      {
+       "t_raw": "Yanshang Teahouse의 접객 담당은 Chuyi다.",
+       "interp": false,
+       "dropped": false,
+       "t": "암상 찻집의 접객 담당은 초의다."
+      },
+      {
+       "t_raw": "**Chuyi**는 Traveler가 단순한 질문을 했을 때도 극도로 무례하게 군다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**초의**는 여행자가 단순한 질문을 했을 때도 극도로 무례하게 군다."
+      },
+      {
+       "t_raw": "Chuyi가 접객 담당이고 Traveler가 단순한 질문을 했을 때도 극도로 무례하게 군다는 점을 함께 보면, 방문객이 받는 인상은 응대에서 먼저 형성되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "초의가 접객 담당이고 여행자가 단순한 질문을 했을 때도 극도로 무례하게 군다는 점을 함께 보면, 방문객이 받는 인상은 응대에서 먼저 형성되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 0 is supported by A4.",
+     "quote": "a notice on the Chihu Rock Bulletin Board states that she is a swindler who makes people spend all of their money.",
+     "sentences": [
+      {
+       "t_raw": "**Chihu Rock Bulletin Board**에는 Chuyi가 사람들의 돈을 모두 쓰게 만드는 사기꾼이라는 공지가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**흘호암 알림판**에는 초의가 사람들의 돈을 모두 쓰게 만드는 사기꾼이라는 공지가 있다."
+      },
+      {
+       "t_raw": "경비로는 **The Halberd**와 The Fang이 이름을 올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경비로는 **극**과 이가 이름을 올린다."
+      },
+      {
+       "t_raw": "게시판의 사기꾼 공지와 The Halberd와 The Fang의 경비 명단이 나란히 놓이면서, 찻집의 여담은 평판과 이름 쪽으로 모인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "게시판의 사기꾼 공지와 극과 이의 경비 명단이 나란히 놓이면서, 찻집의 여담은 평판과 이름 쪽으로 모인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yanshang Teahouse",
+       "revision": 163595,
+       "section": "Members",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

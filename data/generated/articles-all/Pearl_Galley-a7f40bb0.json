@@ -1,0 +1,824 @@
+{
+ "node": "Pearl Galley",
+ "articles": [
+  {
+   "node": "Pearl Galley",
+   "from_version": "1.0",
+   "cutoff": "2020-11-10T00:00:00Z",
+   "input": [
+    {
+     "page": "Pearl Galley",
+     "url": "https://genshin-impact.fandom.com/wiki/Pearl_Galley",
+     "revision": 39355
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 6,
+    "web": 0
+   },
+   "input_chars": 2293,
+   "input_cut": false,
+   "input_hash": "0b05bde0cf60",
+   "writer": "or-ds,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences follow from A1-A3, A5 and Q5.",
+     "quote": "The Pearl Galley is a luxurious ship located close to Liyue Harbor, which is for the exclusive enjoyment of its specially-invited guests.",
+     "sentences": [
+      {
+       "t_raw": "Pearl Galley는 Liyue Harbor 인근에 있는 호화 선박으로, **특별히 초대받은 손님**들이 즐기도록 마련된 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주전방은 리월항 인근에 있는 호화 선박으로, **특별히 초대받은 손님**들이 즐기도록 마련된 곳이다."
+      },
+      {
+       "t_raw": "접수원 Luoxia에 따르면 손님들은 모든 걱정을 잊을 수 있으며, 이곳에서 벌어지는 일은 Liyue Qixing의 묵인을 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "접수원 노을에 따르면 손님들은 모든 걱정을 잊을 수 있으며, 이곳에서 벌어지는 일은 리월 칠성의 묵인을 받는다."
+      },
+      {
+       "t_raw": "처음 방문할 때는 산 정상에서 활강하거나 물을 얼려 배에 오르는 비정규 입장이 가능했고, 그렇게 오른 방문객은 경비에 붙잡혀 Luoxia의 시험을 거친 뒤에야 배를 자유롭게 드나들 수 있게 된다는 점은 이 배의 초대가 **하나의 관문이자 특권**임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "처음 방문할 때는 산 정상에서 활강하거나 물을 얼려 배에 오르는 비정규 입장이 가능했고, 그렇게 오른 방문객은 경비에 붙잡혀 노을의 시험을 거친 뒤에야 배를 자유롭게 드나들 수 있게 된다는 점은 이 배의 초대가 **하나의 관문이자 특권**임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "First Entrance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "First Entrance",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Ocean Pearl",
+       "quest_ko": "바다 위의 장신구",
+       "version": "1.0",
+       "speaker": "Luoxia"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match A1 and A2, and the interpretation is reasonable.",
+     "quote": "The Pearl Galley is a luxurious ship located close to Liyue Harbor, which is for the exclusive enjoyment of its specially-invited guests.",
+     "sentences": [
+      {
+       "t_raw": "Pearl Galley는 Liyue Harbor 인근에 자리한 **호화 선박**으로, 특별히 초대받은 손님들만 즐길 수 있는 공간이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주전방은 리월항 인근에 자리한 **호화 선박**으로, 특별히 초대받은 손님들만 즐길 수 있는 공간이다."
+      },
+      {
+       "t_raw": "배의 접수원 Luoxia의 말에 따르면 이곳의 손님들은 모든 근심과 걱정을 잊을 수 있으며, 이곳에서 벌어지는 모든 일은 Liyue Qixing의 **묵인** 아래 이루어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "배의 접수원 노을의 말에 따르면 이곳의 손님들은 모든 근심과 걱정을 잊을 수 있으며, 이곳에서 벌어지는 모든 일은 리월 칠성의 **묵인** 아래 이루어진다."
+      },
+      {
+       "t_raw": "호화로운 초대 전용 선박이라는 점과 손님들이 걱정을 잊는 공간이라는 점, 그리고 Liyue Qixing의 묵인이라는 조건이 겹쳐 이 배의 특별한 성격을 이룬다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "호화로운 초대 전용 선박이라는 점과 손님들이 걱정을 잊는 공간이라는 점, 그리고 리월 칠성의 묵인이라는 조건이 겹쳐 이 배의 특별한 성격을 이룬다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Q6 supports the Maksim line, and the interpretation is hedged.",
+     "quote": "The Pearl Galley truly is as wonderful as they say...",
+     "sentences": [
+      {
+       "t_raw": "Maksim은 Pearl Galley에 대해 정말 소문대로 훌륭하다는 감상을 남긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "막심은 주전방에 대해 정말 소문대로 훌륭하다는 감상을 남긴다."
+      },
+      {
+       "t_raw": "이 감상은 초대 전용 호화 선박이라는 배의 성격과 손님들이 걱정을 잊는 공간이라는 설명이 한데 이어지는 반응으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 감상은 초대 전용 호화 선박이라는 배의 성격과 손님들이 걱정을 잊는 공간이라는 설명이 한데 이어지는 반응으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Ocean Pearl",
+       "quest_ko": "바다 위의 장신구",
+       "version": "1.0",
+       "speaker": "Maksim"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "입장과 첫 방문",
+     "status": "accepted",
+     "note": "Supported by Q2 and A3, and the interpretation is reasonable.",
+     "quote": "This uninvited entrance gets you seized by security and taken to the receptionist, Luoxia, who gives you a chance to obtain an invitation from a guest.",
+     "sentences": [
+      {
+       "t_raw": "배에 오르려는 방문객에게 한 여성은 그런 방식으로는 Pearl Galley에 오를 수 없다며 이쪽으로 오라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "배에 오르려는 방문객에게 한 여성은 그런 방식으로는 주전방에 오를 수 없다며 이쪽으로 오라고 말한다."
+      },
+      {
+       "t_raw": "산에서 활공하거나 물을 얼려 걸어오는 첫 입장은 경비에 붙잡혀 Luoxia에게 인도된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산에서 활공하거나 물을 얼려 걸어오는 첫 입장은 경비에 붙잡혀 노을에게 인도된다."
+      },
+      {
+       "t_raw": "이런 제지와 안내는 초대 없이 오른 **비정규 입장**이 곧바로 접수 절차로 이어지는 흐름을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 제지와 안내는 초대 없이 오른 **비정규 입장**이 곧바로 접수 절차로 이어지는 흐름을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "First Entrance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Ocean Pearl",
+       "quest_ko": "바다 위의 장신구",
+       "version": "1.0",
+       "speaker": "Gentle Woman's Voice"
+      }
+     ],
+     "heading": "입장과 첫 방문",
+     "latin_left": []
+    },
+    {
+     "section": "입장과 첫 방문",
+     "status": "accepted",
+     "note": "The English says Qui'ge adds you to the list of performers. The Korean '수행 명단' reads as an attendant or escort list, which changes the meaning. The rest is supported.",
+     "quote": "She reveals that this was just a test and from now on, you are have an invitation thanks to her boss, Rouran.",
+     "sentences": [
+      {
+       "t_raw": "초대받은 손님들은 초대장을 내주지 않지만, Qui'ge와 대화해 Qingxin 3송이를 건네면 Qui'ge가 방문객을 배의 공연자 명단에 올려 준다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "초대받은 손님들은 초대장을 내주지 않지만, Qui'ge와 대화해 청심 3송이를 건네면 Qui'ge가 방문객을 배의 공연자 명단에 올려 준다."
+      },
+      {
+       "t_raw": "2층 발코니에서 Luoxia에게 말을 걸면 그동안의 일이 **시험**이었음이 드러나고, Luoxia의 상사 Rouran 덕분에 초대장이 생긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "2층 발코니에서 노을에게 말을 걸면 그동안의 일이 **시험**이었음이 드러나고, 노을의 상사 유연 덕분에 초대장이 생긴다."
+      },
+      {
+       "t_raw": "Luoxia는 첫 입장이 Pearl Galley에 온 방문객 중 거의 가장 이례적인 입장이었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노을은 첫 입장이 주전방에 온 방문객 중 거의 가장 이례적인 입장이었다고 말한다."
+      },
+      {
+       "t_raw": "Qui'ge의 명단 등재와 Luoxia의 시험은 초대장 획득을 향한 연속된 절차로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Qui'ge의 명단 등재와 노을의 시험은 초대장 획득을 향한 연속된 절차로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "First Entrance",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "First Entrance",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Ocean Pearl",
+       "quest_ko": "바다 위의 장신구",
+       "version": "1.0",
+       "speaker": "Luoxia"
+      }
+     ],
+     "heading": "입장과 첫 방문",
+     "latin_left": [
+      "Qui'ge",
+      "Qui'ge",
+      "Qui'ge"
+     ]
+    },
+    {
+     "section": "입장과 첫 방문",
+     "status": "accepted",
+     "note": "Supported by A6, Q1 and Q5.",
+     "quote": "From here on out, you are free to come and go on the Pearl Galley as you please.",
+     "sentences": [
+      {
+       "t_raw": "퀘스트를 마치면 뱃사공을 통한 **정규 왕래**로 Pearl Galley에 오갈 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트를 마치면 뱃사공을 통한 **정규 왕래**로 주전방에 오갈 수 있다."
+      },
+      {
+       "t_raw": "Pinghai는 Adventurer’s Guild 사무소 북동쪽 부두의 가장 동쪽 지점에 있으며, 언제든 배에 태워 주고 돌려보내 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "평해는 모험가의 Guild 사무소 북동쪽 부두의 가장 동쪽 지점에 있으며, 언제든 배에 태워 주고 돌려보내 준다."
+      },
+      {
+       "t_raw": "Luoxia는 다음 방문부터는 활공 경로를 쓸 필요가 없고, 이제 Pearl Galley를 마음대로 오가도 된다고 알려 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노을은 다음 방문부터는 활공 경로를 쓸 필요가 없고, 이제 주전방을 마음대로 오가도 된다고 알려 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "First Entrance",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Ocean Pearl",
+       "quest_ko": "바다 위의 장신구",
+       "version": "1.0",
+       "speaker": "Luoxia"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Ocean Pearl",
+       "quest_ko": "바다 위의 장신구",
+       "version": "1.0",
+       "speaker": "Luoxia"
+      }
+     ],
+     "heading": "입장과 첫 방문",
+     "latin_left": [
+      "Guild"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "From here on out, you are free to come and go on the Pearl Galley as you please.",
+     "sentences": [
+      {
+       "t_raw": "Pearl Galley의 접수 담당 Luoxia에 따르면 손님은 이 배에서 모든 걱정을 잊을 수 있고, 배의 일은 **Liyue Qixing의 묵인** 아래 이루어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주전방의 접수 담당 노을에 따르면 손님은 이 배에서 모든 걱정을 잊을 수 있고, 배의 일은 **리월 칠성의 묵인** 아래 이루어진다."
+      },
+      {
+       "t_raw": "Luoxia는 방문객을 시험한 뒤, 이제부터는 상사인 **Rouran** 덕분에 초대를 받은 것이라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노을은 방문객을 시험한 뒤, 이제부터는 상사인 **유연** 덕분에 초대를 받은 것이라고 밝힌다."
+      },
+      {
+       "t_raw": "Luoxia는 앞으로 Pearl Galley를 자유로이 오갈 수 있다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노을은 앞으로 주전방을 자유로이 오갈 수 있다고 한다."
+      },
+      {
+       "t_raw": "Luoxia의 시험과 Rouran의 초대가 맞물려 출입은 접수 담당과 그 상사의 손에 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "노을의 시험과 유연의 초대가 맞물려 출입은 접수 담당과 그 상사의 손에 놓인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "First Entrance",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Ocean Pearl",
+       "quest_ko": "바다 위의 장신구",
+       "version": "1.0",
+       "speaker": "Luoxia"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is reasonable.",
+     "quote": "Cui'er is a worker of the boat.",
+     "sentences": [
+      {
+       "t_raw": "초대받은 손님들이 초대장을 내주지 않자, Qui'ge는 3송이 Qingxin 꽃을 받고 방문객을 배의 **공연자 명단**에 올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "초대받은 손님들이 초대장을 내주지 않자, Qui'ge는 3송이 청심 꽃을 받고 방문객을 배의 **공연자 명단**에 올린다."
+      },
+      {
+       "t_raw": "배의 일꾼 Cui'er는 유명한 선원인 연인 Chaoxi에게 편지를 전해 달라 부탁하며, 자신이 잘 말해 주겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "배의 일꾼 취아는 유명한 선원인 연인 조석에게 편지를 전해 달라 부탁하며, 자신이 잘 말해 주겠다고 한다."
+      },
+      {
+       "t_raw": "Pinghai는 Adventurer’s Guild office 북동쪽 부두의 동쪽 끝에서 배와 육지를 잇는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "평해는 모험가의 길드 사무소 북동쪽 부두의 동쪽 끝에서 배와 육지를 잇는다.",
+       "polish": {
+        "from": "평해는 모험가의 Guild office 북동쪽 부두의 동쪽 끝에서 배와 육지를 잇는다.",
+        "text": "평해는 모험가의 길드 사무소 북동쪽 부두의 동쪽 끝에서 배와 육지를 잇는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Qui'ge의 명단, Cui'er의 부탁, Pinghai의 배는 각각 손님과 연인, 배와 육지를 잇는 통로가 되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Qui'ge의 명단, 취아의 부탁, 평해의 배는 각각 손님과 연인, 배와 육지를 잇는 통로가 되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "First Entrance",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Letter Delivery",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "First Entrance",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Qui'ge",
+      "Qui'ge"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The facts match. The interpretation is a mild, hedged reading.",
+     "quote": "The Pearl Galley truly is as wonderful as they say...",
+     "sentences": [
+      {
+       "t_raw": "Maksim은 Pearl Galley를 두고 정말 소문대로 멋지다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "막심은 주전방을 두고 정말 소문대로 멋지다고 말한다."
+      },
+      {
+       "t_raw": "손님이 걱정을 잊는 곳이라는 Luoxia의 설명과 Maksim의 감상은 Pearl Galley의 소문이 손님에게 닿는 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "손님이 걱정을 잊는 곳이라는 노을의 설명과 막심의 감상은 주전방의 소문이 손님에게 닿는 모습으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Ocean Pearl",
+       "quest_ko": "바다 위의 장신구",
+       "version": "1.0",
+       "speaker": "Maksim"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "선내의 기록과 흔적",
+     "status": "accepted",
+     "note": "The catalog text is rendered faithfully.",
+     "quote": "This is the Connoisseur Catalog. Peruse wares of beauty exquisite and bright, and demeanor elegeant and gentle. Don't be shy, pick as you please.",
+     "sentences": [
+      {
+       "t_raw": "탁자 위에는 상호작용할 수 있는 두루마리가 놓여 있고, 그것이 **Connoisseur Catalog**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "탁자 위에는 상호작용할 수 있는 두루마리가 놓여 있고, 그것이 **Connoisseur Catalog**다."
+      },
+      {
+       "t_raw": "Catalog는 아름답고 빛나는 물품과 우아하고 온화한 태도를 살펴보라며, 부끄러워 말고 마음껏 고르라고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Catalog는 아름답고 빛나는 물품과 우아하고 온화한 태도를 살펴보라며, 부끄러워 말고 마음껏 고르라고 적는다."
+      },
+      {
+       "t_raw": "물의 아름다움은 품은 진주에 있다는 말과 함께, 빛나는 진주 목걸이를 가져가 그 순수함에 어울리는 집을 주길 바란다는 문구가 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물의 아름다움은 품은 진주에 있다는 말과 함께, 빛나는 진주 목걸이를 가져가 그 순수함에 어울리는 집을 주길 바란다는 문구가 이어진다."
+      },
+      {
+       "t_raw": "상호작용할 수 있는 두루마리에 물품 소개와 권유 문구가 함께 적힌 점은 Catalog가 읽는 이를 물품 선택으로 이끄는 기록임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "상호작용할 수 있는 두루마리에 물품 소개와 권유 문구가 함께 적힌 점은 Catalog가 읽는 이를 물품 선택으로 이끄는 기록임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Connoisseur Catalog",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Connoisseur Catalog",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Connoisseur Catalog",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "선내의 기록과 흔적",
+     "latin_left": [
+      "Connoisseur Catalog",
+      "Catalog",
+      "Catalog"
+     ]
+    },
+    {
+     "section": "선내의 기록과 흔적",
+     "status": "accepted",
+     "note": "The flower names match the English. The interpretation is fine.",
+     "quote": "The names of the flowers on this painted boat are:",
+     "sentences": [
+      {
+       "t_raw": "Catalog에는 이 배의 꽃 이름이 적힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Catalog에는 이 배의 꽃 이름이 적힌다."
+      },
+      {
+       "t_raw": "한 줄은 Black Jade, White Jade, Colored Jade, Jasper Hairpin, Hidden Flower…로, 다른 줄은 Artful Spring, Luminescent Gem, Colored Emerald, Intimate Rain, Young Emerald…로, 또 다른 줄은 Love Pearl, Black Robe, Brilliant Feathers, Colored Pouch, Distant Vine…로 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 줄은 Black Jade, White Jade, Colored Jade, Jasper Hairpin, Hidden Flower…로, 다른 줄은 Artful Spring, Luminescent Gem, Colored Emerald, Intimate Rain, Young Emerald…로, 또 다른 줄은 Love Pearl, Black Robe, Brilliant Feathers, Colored Pouch, Distant Vine…로 이어진다."
+      },
+      {
+       "t_raw": "꽃 이름이 여러 줄에 걸쳐 이어진다는 점은 Catalog가 꽃 이름을 여러 항목으로 나누어 기록한 목록임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "꽃 이름이 여러 줄에 걸쳐 이어진다는 점은 Catalog가 꽃 이름을 여러 항목으로 나누어 기록한 목록임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Connoisseur Catalog",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Connoisseur Catalog",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Connoisseur Catalog",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Connoisseur Catalog",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "선내의 기록과 흔적",
+     "latin_left": [
+      "Catalog",
+      "Black Jade",
+      "White Jade",
+      "Colored Jade",
+      "Jasper Hairpin",
+      "Hidden Flower",
+      "Artful Spring",
+      "Luminescent Gem",
+      "Colored Emerald",
+      "Intimate Rain",
+      "Young Emerald",
+      "Love Pearl",
+      "Black Robe",
+      "Brilliant Feathers",
+      "Colored Pouch",
+      "Distant Vine",
+      "Catalog"
+     ]
+    },
+    {
+     "section": "선내의 기록과 흔적",
+     "status": "accepted",
+     "note": "The locations and access notes match the English. The interpretation is reasonable.",
+     "quote": "Luxurious Chest: climb atop the second story. Use the yellow sides of the ship to reach the roof.",
+     "sentences": [
+      {
+       "t_raw": "선내 곳곳에는 보물과 Geoculus가 놓여 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "선내 곳곳에는 보물과 잃어버린 바위 신의 눈동자가 놓여 있다."
+      },
+      {
+       "t_raw": "뱃머리 병풍 뒤에는 Common Treasure가 있고, 2층 위로 올라가 배의 노란 측면을 이용해 지붕에 오르면 Luxurious Chest가 있으며, 가장 높은 지붕에는 Geoculus가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "뱃머리 병풍 뒤에는 Common Treasure가 있고, 2층 위로 올라가 배의 노란 측면을 이용해 지붕에 오르면 화려한 보물상자가 있으며, 가장 높은 지붕에는 잃어버린 바위 신의 눈동자가 있다."
+      },
+      {
+       "t_raw": "고물에서는 배 모서리에서 걸어 접근하거나 바로 날아 들어갈 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고물에서는 배 모서리에서 걸어 접근하거나 바로 날아 들어갈 수 있다."
+      },
+      {
+       "t_raw": "보물과 Geoculus의 위치가 배의 여러 높이에 걸쳐 있고 고물 쪽 접근법까지 제시된 점에서, **선내 탐방**은 배의 구조를 따라 오르내리며 위치를 찾는 방식으로 이루어진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "보물과 잃어버린 바위 신의 눈동자의 위치가 배의 여러 높이에 걸쳐 있고 고물 쪽 접근법까지 제시된 점에서, **선내 탐방**은 배의 구조를 따라 오르내리며 위치를 찾는 방식으로 이루어진다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Treasures",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Treasures",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Treasures",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "Treasures",
+       "paragraph": "A19",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "선내의 기록과 흔적",
+     "latin_left": [
+      "Common Treasure"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Both sentences are supported by A7: rewards of 2 Hero Wits and 30000 Mora, mentioned as other rewards for completing the quest.",
+     "quote": "You also gain some other rewards for completing this quest. (2 x Hero Wits and 30000 Mora)",
+     "sentences": [
+      {
+       "t_raw": "퀘스트를 완료하면 **Hero Wits 2개와 30000 Mora**가 보상으로 주어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트를 완료하면 **Hero Wits 2개와 30000 모라**가 보상으로 주어진다."
+      },
+      {
+       "t_raw": "이 보상은 퀘스트를 마친 뒤 받는 다른 보상과 함께 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 보상은 퀘스트를 마친 뒤 받는 다른 보상과 함께 언급된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Pearl Galley",
+       "revision": 39355,
+       "section": "First Entrance",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Hero Wits"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Maksim's line (Q6).",
+     "t_raw": "Pearl Galley는 정말 사람들이 말하는 대로 훌륭하군...",
+     "en": "The Pearl Galley truly is as wonderful as they say...",
+     "speaker": "Maksim",
+     "source": {
+      "kind": "quest",
+      "quest": "The Ocean Pearl",
+      "quest_ko": "바다 위의 장신구",
+      "version": "1.0",
+      "speaker": "Maksim"
+     },
+     "t": "주전방은 정말 사람들이 말하는 대로 훌륭하군...",
+     "speaker_ko": "막심"
+    },
+    {
+     "section": "입장과 첫 방문",
+     "status": "accepted",
+     "note": "Faithful translation of Luoxia's line (Q5).",
+     "t_raw": "이제부터 당신은 Pearl Galley를 마음대로 오가도 됩니다.",
+     "en": "From here on out, you are free to come and go on the Pearl Galley as you please.",
+     "speaker": "Luoxia",
+     "source": {
+      "kind": "quest",
+      "quest": "The Ocean Pearl",
+      "quest_ko": "바다 위의 장신구",
+      "version": "1.0",
+      "speaker": "Luoxia"
+     },
+     "t": "이제부터 당신은 주전방을 마음대로 오가도 됩니다.",
+     "speaker_ko": "노을"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of Maksim's line (Q6).",
+     "t_raw": "Pearl Galley는 정말 소문대로 멋지군요...",
+     "en": "The Pearl Galley truly is as wonderful as they say...",
+     "speaker": "Maksim",
+     "source": {
+      "kind": "quest",
+      "quest": "The Ocean Pearl",
+      "quest_ko": "바다 위의 장신구",
+      "version": "1.0",
+      "speaker": "Maksim"
+     },
+     "t": "주전방은 정말 소문대로 멋지군요...",
+     "speaker_ko": "막심"
+    }
+   ]
+  }
+ ]
+}

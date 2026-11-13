@@ -1,0 +1,218 @@
+{
+ "node": "Hydro Mimic",
+ "articles": [
+  {
+   "node": "Hydro Mimic",
+   "from_version": "1.6",
+   "cutoff": "2021-07-20T00:00:00Z",
+   "input": [
+    {
+     "page": "Hydro Mimic",
+     "url": "https://genshin-impact.fandom.com/wiki/Hydro_Mimic",
+     "revision": 239958
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 283,
+   "input_cut": false,
+   "input_hash": "e63557059424",
+   "writer": "qwen,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All facts are stated in A1 and A2.",
+     "quote": "Hydro Mimics are summoned by Oceanids, but can also be encountered on their own during quests.",
+     "sentences": [
+      {
+       "t_raw": "**Hydro Mimics**는 Oceanids가 소환하며, 퀘스트 중에는 단독으로 조우할 수도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**물의 환령**은 물의 정령이 소환하며, 퀘스트 중에는 단독으로 조우할 수도 있다."
+      },
+      {
+       "t_raw": "이들은 평범한 Wildlife와 닮았으며, 일부는 거대한 모습을 띤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 평범한 Wildlife와 닮았으며, 일부는 거대한 모습을 띤다."
+      },
+      {
+       "t_raw": "Hydro Slimes와 마찬가지로 순수한 Hydro 존재라 깊은 물 위를 '걷는' 것처럼 이동하고 **익사하지 않는다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "물 슬라임과 마찬가지로 순수한 물 존재라 깊은 물 위를 '걷는' 것처럼 이동하고 **익사하지 않는다**."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hydro Mimic",
+       "revision": 239958,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hydro Mimic",
+       "revision": 239958,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Wildlife"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts are supported. The interpretation follows reasonably.",
+     "quote": "Hydro Mimics are summoned by Oceanids, but can also be encountered on their own during quests.",
+     "sentences": [
+      {
+       "t_raw": "Hydro Mimics는 Oceanids에 의해 소환된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물의 환령은 물의 정령에 의해 소환된다."
+      },
+      {
+       "t_raw": "퀘스트 중에는 단독으로 마주칠 수도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트 중에는 단독으로 마주칠 수도 있다."
+      },
+      {
+       "t_raw": "이처럼 Oceanids의 소환과 퀘스트에서의 단독 조우가 함께 제시되므로, Hydro Mimics의 등장은 **소환**과 **단독 조우**라는 두 맥락으로 나뉜다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 물의 정령의 소환과 퀘스트에서의 단독 조우가 함께 제시되므로, 물의 환령의 등장은 **소환**과 **단독 조우**라는 두 맥락으로 나뉜다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hydro Mimic",
+       "revision": 239958,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Supported. The interpretation follows from A2, which gives pure Hydro beings as the reason for the similarity.",
+     "quote": "They are similar to Hydro Slimes as they are pure Hydro beings and can \"walk\" on deep water, thus being immune to drowning.",
+     "sentences": [
+      {
+       "t_raw": "Hydro Mimics는 Hydro Slimes와 비슷한 **순수 Hydro 존재**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물의 환령은 물 슬라임과 비슷한 **순수 물 존재**다."
+      },
+      {
+       "t_raw": "Hydro Mimics가 Hydro Slimes와 비슷하게 분류되는 까닭은 순수한 Hydro 존재라는 성질에 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "물의 환령이 물 슬라임과 비슷하게 분류되는 까닭은 순수한 물 존재라는 성질에 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hydro Mimic",
+       "revision": 239958,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Fact is supported. The interpretation is reasonable and hedged.",
+     "quote": "They resemble normal Wildlife, but some are of giant proportions.",
+     "sentences": [
+      {
+       "t_raw": "Hydro Mimics는 평범한 Wildlife를 닮았지만, 그중에는 **거대한 비례**를 지닌 개체도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물의 환령은 평범한 Wildlife를 닮았지만, 그중에는 **거대한 비례**를 지닌 개체도 있다."
+      },
+      {
+       "t_raw": "겉모습이 평범한 Wildlife와 비슷하다는 점과 일부가 거대하다는 점을 함께 보면, 닮은꼴이라는 이유만으로 크기까지 같다고 여기기는 어렵다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "겉모습이 평범한 Wildlife와 비슷하다는 점과 일부가 거대하다는 점을 함께 보면, 닮은꼴이라는 이유만으로 크기까지 같다고 여기기는 어렵다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hydro Mimic",
+       "revision": 239958,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Wildlife",
+      "Wildlife"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A2. The interpretation is hedged and follows from it.",
+     "quote": "They are similar to Hydro Slimes as they are pure Hydro beings and can \"walk\" on deep water, thus being immune to drowning.",
+     "sentences": [
+      {
+       "t_raw": "Hydro Mimics는 Hydro Slimes와 비슷한 순수 Hydro 존재라서 **깊은 물 위를 '걸을' 수** 있고, 그 덕에 익사에 면역이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물의 환령은 물 슬라임과 비슷한 순수 물 존재라서 **깊은 물 위를 '걸을' 수** 있고, 그 덕에 익사에 면역이다."
+      },
+      {
+       "t_raw": "깊은 물 위를 걷는 듯한 이동 방식은 순수 Hydro 존재라는 성질과 맞물린 특징으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "깊은 물 위를 걷는 듯한 이동 방식은 순수 물 존재라는 성질과 맞물린 특징으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hydro Mimic",
+       "revision": 239958,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

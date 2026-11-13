@@ -1,0 +1,804 @@
+{
+ "node": "Weinlesefest",
+ "articles": [
+  {
+   "node": "Weinlesefest",
+   "from_version": "3.2",
+   "cutoff": "2022-12-06T00:00:00Z",
+   "input": [
+    {
+     "page": "Weinlesefest",
+     "url": "https://genshin-impact.fandom.com/wiki/Weinlesefest",
+     "revision": 978441
+    }
+   ],
+   "input_counts": {
+    "mentions": 16,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 427,
+   "input_cut": false,
+   "input_hash": "f34c41b9e26b",
+   "writer": "ds-pro,glm-flash,or-ds,kimi",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences follow A1/M15.",
+     "quote": "Weinlesefest is a festival in Mondstadt that celebrates the return of the Anemo Archon when the west wind blows every fall during the harvest season.",
+     "sentences": [
+      {
+       "t_raw": "Weinlesefest는 Mondstadt의 가을 축제로, 수확철에 서풍이 불 때 Anemo Archon이 돌아옴을 기념하는 축제다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돌아온 바람의 와인 축제는 몬드의 가을 축제로, 수확철에 서풍이 불 때 바람의 신이 돌아옴을 기념하는 축제다."
+      },
+      {
+       "t_raw": "시민들은 수확한 과실로 술을 빚어 Windcoming Day까지 봉해 두었다가, 그날 봉인을 풀어 Anemo Archon에게 한잔 나누자고 청하는 상징적인 의례로 삼는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시민들은 수확한 과실로 술을 빚어 Windcoming Day까지 봉해 두었다가, 그날 봉인을 풀어 바람의 신에게 한잔 나누자고 청하는 상징적인 의례로 삼는다."
+      },
+      {
+       "t_raw": "Anemo Archon이 그 술에 만족하면 산들바람을 일으켜 사람들을 축복한다고 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바람의 신이 그 술에 만족하면 산들바람을 일으켜 사람들을 축복한다고 전해진다."
+      },
+      {
+       "t_raw": "수확의 결실을 술로 바꿔 신에게 바치고, 그 응답을 바람으로 확인하는 구조인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "수확의 결실을 술로 바꿔 신에게 바치고, 그 응답을 바람으로 확인하는 구조인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Weinlesefest",
+       "revision": 978441,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Sounds From Afar (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Lawrence",
+       "revision": 884873,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "M15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Windcoming Day"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All supported by A1 and M15.",
+     "quote": "Weinlesefest is a festival in Mondstadt that celebrates the return of the Anemo Archon when the west wind blows every fall during the harvest season.",
+     "sentences": [
+      {
+       "t_raw": "**Weinlesefest**는 Mondstadt에서 가을 수확철에 열리는 축제다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**돌아온 바람의 와인 축제**는 몬드에서 가을 수확철에 열리는 축제다."
+      },
+      {
+       "t_raw": "해마다 가을에 서풍이 불 때 돌아오는 Anemo Archon을 기리는 자리이자, Mondstadt 사람들의 수확을 축하하는 가을 축제이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "해마다 가을에 서풍이 불 때 돌아오는 바람의 신을 기리는 자리이자, 몬드 사람들의 수확을 축하하는 가을 축제이기도 하다."
+      },
+      {
+       "t_raw": "수확한 과실로 술을 빚어 Anemo Archon에게 바치는 것이 이 축제의 골자다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수확한 과실로 술을 빚어 바람의 신에게 바치는 것이 이 축제의 골자다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Weinlesefest",
+       "revision": 978441,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Sounds From Afar (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Lawrence",
+       "revision": 884873,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "M15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match A1; the interpretation follows from A1 and M15.",
+     "quote": "Citizens celebrate by brewing fresh wine, keeping it sealed until Windcoming Day, during which the wine is uncasked as a symbolic way of inviting the Anemo Archon to share a drink.",
+     "sentences": [
+      {
+       "t_raw": "축제 기간에 사람들은 갓 빚은 술을 준비해 **Windcoming Day**까지 봉해 두고, 그날이 되면 술을 풀어 Anemo Archon과 한잔 나누자고 청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "축제 기간에 사람들은 갓 빚은 술을 준비해 **Windcoming Day**까지 봉해 두고, 그날이 되면 술을 풀어 바람의 신과 한잔 나누자고 청한다."
+      },
+      {
+       "t_raw": "술을 푸는 일 자체가 Anemo Archon을 잔치에 초대하는 상징적 방식인 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "술을 푸는 일 자체가 바람의 신을 잔치에 초대하는 상징적 방식인 것이다."
+      },
+      {
+       "t_raw": "Anemo Archon이 그 술에 만족하면 산들바람을 일으켜 사람들에게 축복을 내린다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바람의 신이 그 술에 만족하면 산들바람을 일으켜 사람들에게 축복을 내린다고 한다."
+      },
+      {
+       "t_raw": "사람들이 수확으로 빚은 술이 서풍이라는 축복으로 되돌아오는 구조인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사람들이 수확으로 빚은 술이 서풍이라는 축복으로 되돌아오는 구조인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Weinlesefest",
+       "revision": 978441,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Sounds From Afar (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Lawrence",
+       "revision": 884873,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "M15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Windcoming Day"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "trimmed",
+     "note": "Sentence 0 is tagged as fact, but the English never says the greeting mirrors the festival's structure. That is the writer's interpretation presented as fact.",
+     "quote": "Hello and welcome to Weinlesefest. May Lord Barbatos bless you.",
+     "sentences": [
+      {
+       "t_raw": "축제 자리에서 오가는 인사는 이 얼개를 그대로 옮겨 놓는다.",
+       "interp": false,
+       "dropped": true,
+       "t": "축제 자리에서 오가는 인사는 이 얼개를 그대로 옮겨 놓는다."
+      },
+      {
+       "t_raw": "방문객을 맞는 사람은 Weinlesefest에 온 것을 환영한다는 말에 이어 Barbatos의 축복을 빌어 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방문객을 맞는 사람은 돌아온 바람의 와인 축제에 온 것을 환영한다는 말에 이어 바르바토스의 축복을 빌어 준다."
+      },
+      {
+       "t_raw": "술을 바치고 서풍의 축복을 받는 축제의 성격이 인사말에도 배어 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "술을 바치고 서풍의 축복을 받는 축제의 성격이 인사말에도 배어 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Fecund Hamper",
+       "quest_ko": "풍요의 상자",
+       "version": "3.1",
+       "speaker": "Annette"
+      },
+      {
+       "kind": "wiki",
+       "page": "Weinlesefest",
+       "revision": 978441,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Sounds From Afar (Quest)"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "Supported by Q1, M8 and M6. Q7 says the festival was in full flow.",
+     "quote": "If you don't have any plans in the immediate future, why not stay in Mondstadt for a while? We'll be celebrating the Weinlesefest very soon.",
+     "sentences": [
+      {
+       "t_raw": "Jean은 당장의 계획이 없다면 Mondstadt에 머물며 곧 열릴 Weinlesefest를 함께 보내는 게 어떻겠냐고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "진은 당장의 계획이 없다면 몬드에 머물며 곧 열릴 돌아온 바람의 와인 축제를 함께 보내는 게 어떻겠냐고 권한다."
+      },
+      {
+       "t_raw": "축제가 한창일 때 Lawrence는 Mondstadt를 찾은 Traveler에게 Weinlesefest를 즐기라고 인사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "축제가 한창일 때 로렌스는 몬드를 찾은 여행자에게 돌아온 바람의 와인 축제를 즐기라고 인사한다."
+      },
+      {
+       "t_raw": "Quinn은 Weinlesefest가 정말 대단한 축제라고 감탄한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀸은 돌아온 바람의 와인 축제가 정말 대단한 축제라고 감탄한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Jean"
+      },
+      {
+       "kind": "wiki",
+       "page": "Lawrence",
+       "revision": 884873,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "M8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Quinn",
+       "revision": 885326,
+       "section": "Event Dialogue > Nighttime",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 몬드",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "Supported by Q3 and Q2; the interpretation is reasonable.",
+     "quote": "Whew, that seems like a lot of work... sounds like you'll be working non-stop around the clock right up until the end of the Weinlesefest!",
+     "sentences": [
+      {
+       "t_raw": "Pauline은 올해 Weinlesefest가 **예년보다 붐벼** 목표 매출을 예상보다 빨리 채웠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폴린은 올해 돌아온 바람의 와인 축제가 **예년보다 붐벼** 목표 매출을 예상보다 빨리 채웠다고 말한다."
+      },
+      {
+       "t_raw": "Paimon은 축제가 끝날 때까지 쉴 틈 없이 일하게 될 것 같다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 축제가 끝날 때까지 쉴 틈 없이 일하게 될 것 같다고 말한다."
+      },
+      {
+       "t_raw": "예년보다 붐비는 축제라는 것과 축제가 끝날 때까지 이어지는 일이라는 것이 겹쳐, 축제 기간이 관계자들에게 분주한 시간인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "예년보다 붐비는 축제라는 것과 축제가 끝날 때까지 이어지는 일이라는 것이 겹쳐, 축제 기간이 관계자들에게 분주한 시간인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Favonian Goodies and Buddies",
+       "quest_ko": "서풍 슝슝 자선 연맹!",
+       "version": "3.1",
+       "speaker": "Pauline"
+      },
+      {
+       "kind": "quest",
+       "quest": "Charity Event! A Great Success!",
+       "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 몬드",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "All sentences match the English.",
+     "quote": "We are ordering specialty drinks from the Weinlesefest for out-of-town clients. We saw your commission, so we decided to come talk to you.",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 외지 손님을 위해 Weinlesefest의 특별 음료를 주문하려던 중 **의뢰를 보고 찾아왔다**고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 외지 손님을 위해 돌아온 바람의 와인 축제의 특별 음료를 주문하려던 중 **의뢰를 보고 찾아왔다**고 전한다."
+      },
+      {
+       "t_raw": "축제에는 장사꾼이 아주 많아 볼 만한 물건이 있을 것 같다는 이야기도 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "축제에는 장사꾼이 아주 많아 볼 만한 물건이 있을 것 같다는 이야기도 나온다."
+      },
+      {
+       "t_raw": "Mona는 누군가 Weinlesefest가 한창인 것을 알아차리고 함께 구경하러 가겠냐고 물었다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모나는 누군가 돌아온 바람의 와인 축제가 한창인 것을 알아차리고 함께 구경하러 가겠냐고 물었다고 전한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Mountain Mixologist",
+       "quest_ko": "산속의 바텐더",
+       "version": "3.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Charity Event? Securing Funds?",
+       "quest_ko": "자선 판매 행사? 자금 준비?",
+       "version": "3.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Favonian Goodies",
+       "quest_ko": "서풍 후후 자선 가게!",
+       "version": "3.1",
+       "speaker": "Mona"
+      }
+     ],
+     "heading": "작중 행적 — 몬드",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "All sentences match the English.",
+     "quote": "It's been pretty fun! Paimon isn't sure if it's because there was this market during Weinlesefest, but we got all sorts of decorations.",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Weinlesefest 기간의 시장 덕인지 온갖 장식품을 얻었다며 축제가 꽤 즐거웠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 돌아온 바람의 와인 축제 기간의 시장 덕인지 온갖 장식품을 얻었다며 축제가 꽤 즐거웠다고 말한다."
+      },
+      {
+       "t_raw": "Weinlesefest 휴가 동안 많이 배운 것 같다는 말도 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돌아온 바람의 와인 축제 휴가 동안 많이 배운 것 같다는 말도 나온다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Good as New",
+       "quest_ko": "새로운 장식 한 스푼",
+       "version": "3.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Target: Master of the Snowy Peaks!",
+       "quest_ko": "목표는 설산의 주인!",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 몬드",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 2 claims that the partnership talks are about Dawn Winery's specialty brew. The English gives no link between the partnership talk and the brew, so this is an added fact.",
+     "quote": "If it's for the Weinlesefest, I've got Master's permission to do what I can to help.",
+     "sentences": [
+      {
+       "t_raw": "Elzer는 방문객을 맞으며 **Weinlesefest 협력**을 이야기하고, Weinlesefest를 위한 일이라면 Master의 허락을 받아 돕겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "엘저는 방문객을 맞으며 **돌아온 바람의 와인 축제 협력**을 이야기하고, 돌아온 바람의 와인 축제를 위한 일이라면 사범님의 허락을 받아 돕겠다고 한다."
+      },
+      {
+       "t_raw": "Quinn은 Dawn Winery의 Weinlesefest **특별주**를 오랜만에 마신다며, 축제가 끝나지 않으면 모두가 매일 그 특별주를 마실 수 있을 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀸은 다운 와이너리의 돌아온 바람의 와인 축제 **특별주**를 오랜만에 마신다며, 축제가 끝나지 않으면 모두가 매일 그 특별주를 마실 수 있을 것이라고 말한다."
+      },
+      {
+       "t_raw": "Dawn Winery의 특별주 이야기와 Weinlesefest 협력 논의가 각각 등장하는 것으로 보아, 이 축제에서는 명물 주류와 사업적 협력이 따로따로 주목받는 화제로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "다운 와이너리의 특별주 이야기와 돌아온 바람의 와인 축제 협력 논의가 각각 등장하는 것으로 보아, 이 축제에서는 명물 주류와 사업적 협력이 따로따로 주목받는 화제로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Elzer",
+       "revision": 885172,
+       "section": "Idle Quotes",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Elzer",
+       "revision": 885172,
+       "section": "Idle Quotes",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Elzer",
+       "revision": 885172,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "M11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Quinn",
+       "revision": 885326,
+       "section": "Idle Quotes",
+       "paragraph": "M12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Quinn",
+       "revision": 885326,
+       "section": "Event Dialogue > Nighttime",
+       "paragraph": "M13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 2 is hedged ('보인다') and follows reasonably from the Guild participation and the 'organizers' line.",
+     "quote": "Now that you mention it, it just so happens that all the institutions you mentioned are organizers of the Weinlesefest!",
+     "sentences": [
+      {
+       "t_raw": "Cyrus는 Librarian의 초청으로 Adventurers' Guild 회원들도 Weinlesefest에 참여할 예정이라고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Cyrus는 사서의 초청으로 모험가 길드 회원들도 돌아온 바람의 와인 축제에 참여할 예정이라고 전한다."
+      },
+      {
+       "t_raw": "Paimon은 당시 언급된 기관들이 모두 Weinlesefest의 **주최 측**이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 당시 언급된 기관들이 모두 돌아온 바람의 와인 축제의 **주최 측**이라고 말한다."
+      },
+      {
+       "t_raw": "두 사실을 함께 보면 Adventurers' Guild의 참여는 축제 주최와 이어지는 참여로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 사실을 함께 보면 모험가 길드의 참여는 축제 주최와 이어지는 참여로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cyrus (Mondstadt)",
+       "revision": 970907,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "M14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Bonds of Melody (Quest)",
+       "quest_ko": "노래로 엮인 인연",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Cyrus"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The facts are in M16, and the interpretation is reasonable.",
+     "quote": "the Knights of Favonius' Reconnaissance Company, led by Eula, has to constantly patrol the trading route between Dornman Port and Mondstadt City during Weinlesefest.",
+     "sentences": [
+      {
+       "t_raw": "Dornman Port와 City of Mondstadt 사이 거리는 멀어서, Weinlesefest 동안 Knights of Favonius의 Reconnaissance Company가 Eula의 지휘 아래 두 곳 사이 교역로를 계속 순찰한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돈만 항구와 몬드성 사이 거리는 멀어서, 돌아온 바람의 와인 축제 동안 페보니우스 기사단의 정찰 중대가 유라의 지휘 아래 두 곳 사이 교역로를 계속 순찰한다."
+      },
+      {
+       "t_raw": "축제의 다른 몫이 협력과 초청 참여로 이야기되는 동안, Knights of Favonius에는 교역로 순찰이라는 임무가 걸린 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "축제의 다른 몫이 협력과 초청 참여로 이야기되는 동안, 페보니우스 기사단에는 교역로 순찰이라는 임무가 걸린 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dornman Port",
+       "revision": 880639,
+       "section": "Overview",
+       "paragraph": "M16",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Henry Morton"
+        },
+        {
+         "type": "quest",
+         "name": "Charity Event! A Great Success!"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Elzer",
+       "revision": 885172,
+       "section": "Idle Quotes",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Elzer",
+       "revision": 885172,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "M11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cyrus (Mondstadt)",
+       "revision": 970907,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "M14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Welcome to the Weinlesefest.",
+     "sentences": [
+      {
+       "t_raw": "**환영 인사**로 Lawrence의 \"Welcome to the Weinlesefest.\"가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**환영 인사**로 로렌스의 \"Welcome to the 돌아온 바람의 와인 축제.\"가 있다."
+      },
+      {
+       "t_raw": "Annette는 Lord Barbatos의 축복을 빌며 Weinlesefest에 오신 것을 환영한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아네트는 바르바토스 님의 축복을 빌며 돌아온 바람의 와인 축제에 오신 것을 환영한다고 말한다."
+      },
+      {
+       "t_raw": "반면 Quinn은 이번 Weinlesefest 때문에 매우 바쁘다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "반면 퀸은 이번 돌아온 바람의 와인 축제 때문에 매우 바쁘다고 말한다."
+      },
+      {
+       "t_raw": "환영과 바쁨이 함께 오가는 점은 축제가 방문객을 맞으면서도 분주함을 보여준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "환영과 바쁨이 함께 오가는 점은 축제가 방문객을 맞으면서도 분주함을 보여준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lawrence",
+       "revision": 884873,
+       "section": "Idle Quotes",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Fecund Hamper",
+       "quest_ko": "풍요의 상자",
+       "version": "3.1",
+       "speaker": "Annette"
+      },
+      {
+       "kind": "wiki",
+       "page": "Beatrice",
+       "revision": 885331,
+       "section": "Event Dialogue > Of Ballads and Brews",
+       "paragraph": "M9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Welcome"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "trimmed",
+     "note": "Sentences 0 and 1 are supported by M10 and Q5. Sentence 2 fails. The songs (Sayid) and the decorations (Paimon) come from separate, unrelated lines, so they are not mentioned together. The claim that this shows small festival elements each catch the eye in different ways does not follow from the English.",
+     "quote": "Hmm, the songs at Weinlesefest seem to have a deeper meaning...",
+     "sentences": [
+      {
+       "t_raw": "Sayid는 Weinlesefest의 노래들을 언급하며 그 노래들이 더 깊은 의미를 지닌 것 같다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사이드는 돌아온 바람의 와인 축제의 노래들을 언급하며 그 노래들이 더 깊은 의미를 지닌 것 같다고 말한다."
+      },
+      {
+       "t_raw": "Paimon은 Weinlesefest 동안 시장이 있었기 때문인지 잘 모르겠다면서도 온갖 **장식품**을 얻었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 돌아온 바람의 와인 축제 동안 시장이 있었기 때문인지 잘 모르겠다면서도 온갖 **장식품**을 얻었다고 말한다."
+      },
+      {
+       "t_raw": "노래와 장식품이 함께 언급된 점은 축제의 작은 요소들이 저마다 다른 방식으로 눈에 들어오는 소재임을 보여준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": true,
+       "t": "노래와 장식품이 함께 언급된 점은 축제의 작은 요소들이 저마다 다른 방식으로 눈에 들어오는 소재임을 보여준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sayid",
+       "revision": 885491,
+       "section": "Idle Quotes",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sayid",
+       "revision": 885491,
+       "section": "Idle Quotes",
+       "paragraph": "M10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Good as New",
+       "quest_ko": "새로운 장식 한 스푼",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "안녕하세요, Weinlesefest에 오신 것을 환영합니다. Barbatos 님의 축복이 함께하시기를.",
+     "en": "Hello and welcome to Weinlesefest. May Lord Barbatos bless you.",
+     "speaker": "Annette",
+     "source": {
+      "kind": "quest",
+      "quest": "Fecund Hamper",
+      "quest_ko": "풍요의 상자",
+      "version": "3.1",
+      "speaker": "Annette"
+     },
+     "t": "안녕하세요, 돌아온 바람의 와인 축제에 오신 것을 환영합니다. 바르바토스 님의 축복이 함께하시기를.",
+     "speaker_ko": "아네트"
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "올해 Weinlesefest는 예년보다 더 붐벼서, 예상보다 빨리 목표 매출을 달성했다. 그것으로 충분하다.",
+     "en": "This year's Weinlesefest is busier than previous years, so we met our target earnings more quickly than we expected. That's enough for us.",
+     "speaker": "Pauline",
+     "source": {
+      "kind": "quest",
+      "quest": "Favonian Goodies and Buddies",
+      "quest_ko": "서풍 슝슝 자선 연맹!",
+      "version": "3.1",
+      "speaker": "Pauline"
+     },
+     "t": "올해 돌아온 바람의 와인 축제는 예년보다 더 붐벼서, 예상보다 빨리 목표 매출을 달성했다. 그것으로 충분하다.",
+     "speaker_ko": "폴린"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그러고 보니, 마침 네가 말한 기관들이 모두 Weinlesefest의 주최 측이네!",
+     "en": "Now that you mention it, it just so happens that all the institutions you mentioned are organizers of the Weinlesefest!",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Bonds of Melody (Quest)",
+      "quest_ko": "노래로 엮인 인연",
+      "version": "3.1",
+      "speaker": "Paimon"
+     },
+     "t": "그러고 보니, 마침 네가 말한 기관들이 모두 돌아온 바람의 와인 축제의 주최 측이네!",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "꽤 즐거웠다! Paimon은 Weinlesefest 동안 이 시장이 있었기 때문인지는 잘 모르겠지만, 우리는 온갖 장식품을 얻었다.",
+     "en": "It's been pretty fun! Paimon isn't sure if it's because there was this market during Weinlesefest, but we got all sorts of decorations.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Good as New",
+      "quest_ko": "새로운 장식 한 스푼",
+      "version": "3.1",
+      "speaker": "Paimon"
+     },
+     "t": "꽤 즐거웠다! 페이몬은 돌아온 바람의 와인 축제 동안 이 시장이 있었기 때문인지는 잘 모르겠지만, 우리는 온갖 장식품을 얻었다.",
+     "speaker_ko": "페이몬"
+    }
+   ]
+  }
+ ]
+}

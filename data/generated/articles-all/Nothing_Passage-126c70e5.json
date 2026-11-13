@@ -20,41 +20,35 @@
    "input_chars": 365,
    "input_cut": false,
    "input_hash": "7d194aa2a671",
-   "writer": "or-ds,ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences follow the English.",
      "quote": "They tell the story of how the situation at the passage came to be, and explains the phenomena experienced by the Traveler during the World Quest Series Colors of Emptiness.",
      "sentences": [
       {
-       "t_raw": "Nothing Passage는 **Private's Notes** 세 개가 흩어져 있는 곳으로, 그 기록은 이곳의 상황이 어떻게 생겨났는지와 Traveler가 **World Quest Series Colors of Emptiness**에서 겪는 현상을 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "적막의 회랑은 **Private의 Notes** 세 개가 흩어져 있는 곳으로, 그 기록은 이곳의 상황이 어떻게 생겨났는지와 여행자가 **World Quest Series Colors of Emptiness**에서 겪는 현상을 설명한다."
-      },
-      {
-       "t_raw": "northern Nothing Passage Teleport Waypoint의 남동쪽에는 Fatui 주둔지가 있고, Nothing Passage를 지나던 여행 상인들의 목숨을 앗아간 Inazuman Kairagi가 있다고 Leszek은 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "northern 적막의 회랑 워프 포인트의 남동쪽에는 우인단 주둔지가 있고, 적막의 회랑을 지나던 여행 상인들의 목숨을 앗아간 이나즈마 해란귀가 있다고 레셰크는 말한다."
-      },
-      {
-       "t_raw": "**Crackjaw Hark**는 몇 달 전 Nothing Passage 근처에서 목격된 뒤 목격 사례가 없으며, Guild는 Nothing Passage 근처에서 마지막으로 목격된 표적을 쓰러뜨리고 죽음을 증명하는 자에게 보상을 약속한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**Crackjaw Hark**는 몇 달 전 적막의 회랑 근처에서 목격된 뒤 목격 사례가 없으며, Guild는 적막의 회랑 근처에서 마지막으로 목격된 표적을 쓰러뜨리고 죽음을 증명하는 자에게 보상을 약속한다."
-      },
-      {
-       "t_raw": "이처럼 Nothing Passage는 World Quest Series Colors of Emptiness의 현상을 설명하는 기록과 주변에서 목격된 인물들의 위험한 흔적이 겹쳐, 사건의 내막과 소문이 함께 읽히는 곳으로 보인다.",
+       "t_raw": "Nothing Passage는 여러 기록에서 언급되는 장소로, 통행로를 둘러싼 사건과 소문이 겹쳐 있는 곳으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이처럼 적막의 회랑은 World Quest Series Colors of Emptiness의 현상을 설명하는 기록과 주변에서 목격된 인물들의 위험한 흔적이 겹쳐, 사건의 내막과 소문이 함께 읽히는 곳으로 보인다."
+       "t": "적막의 회랑은 여러 기록에서 언급되는 장소로, 통행로를 둘러싼 사건과 소문이 겹쳐 있는 곳으로 보인다."
+      },
+      {
+       "t_raw": "이곳에는 **Private's Notes**가 흩어져 있으며, 통행로의 상황이 어떻게 생겨났는지와 Traveler가 **Colors of Emptiness**에서 겪는 현상을 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이곳에는 **Private의 Notes**가 흩어져 있으며, 통행로의 상황이 어떻게 생겨났는지와 여행자가 **적막의 색채**에서 겪는 현상을 설명한다."
+      },
+      {
+       "t_raw": "주변 기록에는 Nothing Passage를 지나던 상인들의 목숨을 앗아간 Inazuman Kairagi, 몇 달 전 이곳 근처에서 목격된 뒤 모습을 드러내지 않은 **\"Crackjaw\" Hark**, 통행로 근처에서 마지막으로 목격된 현상금 대상이 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주변 기록에는 적막의 회랑을 지나던 상인들의 목숨을 앗아간 이나즈마 해란귀, 몇 달 전 이곳 근처에서 목격된 뒤 모습을 드러내지 않은 **\"Crackjaw\" 「찢어진 턱」 할크**, 통행로 근처에서 마지막으로 목격된 현상금 대상이 남아 있다."
       }
      ],
      "sources": [
@@ -64,14 +58,6 @@
        "revision": 1850487,
        "section": "Interactables > Private's Notes",
        "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Someone's Research Notes",
-       "paragraph": "A2",
        "wiki_refs": []
       },
       {
@@ -103,452 +89,26 @@
      "latin_left": [
       "Private",
       "Notes",
-      "World Quest Series Colors of Emptiness",
-      "Crackjaw Hark",
-      "Guild",
-      "World Quest Series Colors of Emptiness"
-     ]
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "They tell the story of how the situation at the passage came to be, and explains the phenomena experienced by the Traveler during the World Quest Series Colors of Emptiness.",
-     "sentences": [
-      {
-       "t_raw": "Nothing Passage에는 Private's Notes 세 개가 흩어져 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "적막의 회랑에는 Private의 Notes 세 개가 흩어져 있다."
-      },
-      {
-       "t_raw": "이 기록들은 통로의 상황이 어떻게 형성되었는지 전하고, Traveler가 World Quest Series Colors of Emptiness에서 겪은 현상을 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 기록들은 통로의 상황이 어떻게 형성되었는지 전하고, 여행자가 World Quest Series Colors of Emptiness에서 겪은 현상을 설명한다."
-      },
-      {
-       "t_raw": "북쪽 Nothing Passage Teleport Waypoint 남동쪽의 Fatui 주둔지 안에서는 Someone's Research Notes가 발견된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "북쪽 적막의 회랑 워프 포인트 남동쪽의 우인단 주둔지 안에서는 Someone의 Research Notes가 발견된다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Private's Notes",
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Someone's Research Notes",
-       "paragraph": "A2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "Private",
-      "Notes",
-      "World Quest Series Colors of Emptiness",
-      "Someone",
-      "Research Notes"
-     ]
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The target was last seen near the Nothing Passage. Those who defeat him and provide proof of his death will be handsomely rewarded by the Guild.",
-     "sentences": [
-      {
-       "t_raw": "통로를 지나던 상인 여럿의 목숨을 앗아간 Inazuman Kairagi가 소란을 일으키고 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "통로를 지나던 상인 여럿의 목숨을 앗아간 이나즈마 해란귀가 소란을 일으키고 있다."
-      },
-      {
-       "t_raw": "\"Crackjaw\" Hark는 몇 달 전 이곳 부근에서 목격된 뒤 모습을 보이지 않아 은신했을 수 있다는 말이 나온다.",
-       "interp": false,
-       "dropped": false,
-       "t": "\"Crackjaw\" 「찢어진 턱」 할크는 몇 달 전 이곳 부근에서 목격된 뒤 모습을 보이지 않아 은신했을 수 있다는 말이 나온다."
-      },
-      {
-       "t_raw": "Guild는 Nothing Passage 부근에서 마지막으로 목격된 표적을 처치하고 사망 증거를 가져오는 이에게 후한 보상을 약속한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Guild는 적막의 회랑 부근에서 마지막으로 목격된 표적을 처치하고 사망 증거를 가져오는 이에게 후한 보상을 약속한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Leszek",
-       "revision": 1856277,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "The Flagship",
-       "revision": 1863843,
-       "section": "Interactables > Bounty Board",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Leszek",
-       "revision": 1856277,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "Crackjaw",
-      "Guild"
-     ]
-    },
-    {
-     "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Private's Notes are three interactables which can be found scattered across Nothing Passage.",
-     "sentences": [
-      {
-       "t_raw": "Nothing Passage에는 세 개의 **Private's Notes**가 흩어져 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "적막의 회랑에는 세 개의 **Private의 Notes**가 흩어져 있다."
-      },
-      {
-       "t_raw": "이 기록들은 이곳의 상황이 어떻게 형성되었는지와 Traveler가 World Quest Series Colors of Emptiness에서 겪는 현상을 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 기록들은 이곳의 상황이 어떻게 형성되었는지와 여행자가 World Quest Series Colors of Emptiness에서 겪는 현상을 설명한다."
-      },
-      {
-       "t_raw": "따라서 Nothing Passage는 Private's Notes를 통해 상황과 현상의 맥락이 드러나는 장소로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "따라서 적막의 회랑은 Private의 Notes를 통해 상황과 현상의 맥락이 드러나는 장소로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Private's Notes",
-       "paragraph": "A1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체",
-     "latin_left": [
-      "Private",
-      "Notes",
-      "World Quest Series Colors of Emptiness",
-      "Private",
-      "Notes"
-     ]
-    },
-    {
-     "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Found inside the Fatui camp to the southeast of the northern Nothing Passage Teleport Waypoint.",
-     "sentences": [
-      {
-       "t_raw": "Someone's Research Notes는 northern Nothing Passage Teleport Waypoint의 남동쪽 **Fatui 주둔지** 안에서 발견된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Someone의 Research Notes는 northern 적막의 회랑 워프 포인트의 남동쪽 **우인단 주둔지** 안에서 발견된다."
-      },
-      {
-       "t_raw": "Nothing Passage 전역의 Private's Notes와 이 주둔지를 함께 놓으면, Nothing Passage의 장소적 범위는 흩어진 기록, northern Nothing Passage Teleport Waypoint, Fatui 주둔지로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "적막의 회랑 전역의 Private의 Notes와 이 주둔지를 함께 놓으면, 적막의 회랑의 장소적 범위는 흩어진 기록, northern 적막의 회랑 워프 포인트, 우인단 주둔지로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Private's Notes",
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Someone's Research Notes",
-       "paragraph": "A2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체",
-     "latin_left": [
-      "Someone",
-      "Research Notes",
-      "Private",
-      "Notes"
-     ]
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Private's Notes are three interactables which can be found scattered across Nothing Passage.",
-     "sentences": [
-      {
-       "t_raw": "**Private's Notes**는 Nothing Passage 곳곳에 흩어진 세 개의 상호작용물이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**Private의 Notes**는 적막의 회랑 곳곳에 흩어진 세 개의 상호작용물이다."
-      },
-      {
-       "t_raw": "이 기록은 Nothing Passage의 상황이 어떻게 형성되었는지 전하고, World Quest Series **Colors of Emptiness**에서 Traveler가 겪는 현상을 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 기록은 적막의 회랑의 상황이 어떻게 형성되었는지 전하고, World Quest Series **적막의 색채**에서 여행자가 겪는 현상을 설명한다."
-      },
-      {
-       "t_raw": "상황의 형성과 Traveler의 체험이 같은 기록에서 다루어지므로, Nothing Passage의 사건과 World Quest Series Colors of Emptiness의 현상은 서로 이어져 서술된다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "상황의 형성과 여행자의 체험이 같은 기록에서 다루어지므로, 적막의 회랑의 사건과 World Quest Series Colors of Emptiness의 현상은 서로 이어져 서술된다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Private's Notes",
-       "paragraph": "A1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": [
-      "Private",
-      "Notes",
-      "World Quest Series",
-      "World Quest Series Colors of Emptiness"
-     ]
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "They tell the story of how the situation at the passage came to be, and explains the phenomena experienced by the Traveler during the World Quest Series Colors of Emptiness.",
-     "sentences": [
-      {
-       "t_raw": "세 기록은 Nothing Passage의 상황이 형성된 이야기와 Traveler가 World Quest Series Colors of Emptiness에서 겪는 현상을 함께 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "세 기록은 적막의 회랑의 상황이 형성된 이야기와 여행자가 World Quest Series Colors of Emptiness에서 겪는 현상을 함께 전한다."
-      },
-      {
-       "t_raw": "기록이 Nothing Passage 전역에 흩어져 있다는 점까지 겹쳐 보면, Nothing Passage의 역사는 여러 위치에 분산된 기록을 통해 드러나는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "기록이 적막의 회랑 전역에 흩어져 있다는 점까지 겹쳐 보면, 적막의 회랑의 역사는 여러 위치에 분산된 기록을 통해 드러나는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Private's Notes",
-       "paragraph": "A1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": [
-      "World Quest Series Colors of Emptiness"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Then there's a rampaging Inazuman Kairagi who's claimed the lives of several traveling merchants passing through the Nothing Passage.",
-     "sentences": [
-      {
-       "t_raw": "Leszek는 Nothing Passage를 지나던 여행 상인들을 죽인 날뛰는 **Inazuman Kairagi**가 있다고 전하고, 몇 달 전 Nothing Passage 근처에서 목격된 뒤 목격담이 없는 **\"Crackjaw\" Hark**가 숨었을지도 모른다고 본다.",
-       "interp": false,
-       "dropped": false,
-       "t": "레셰크는 적막의 회랑을 지나던 여행 상인들을 죽인 날뛰는 **이나즈마 해란귀**가 있다고 전하고, 몇 달 전 적막의 회랑 근처에서 목격된 뒤 목격담이 없는 **\"Crackjaw\" 「찢어진 턱」 할크**가 숨었을지도 모른다고 본다."
-      },
-      {
-       "t_raw": "상인들의 죽음으로 드러난 Inazuman Kairagi와 행방이 끊긴 \"Crackjaw\" Hark는 같은 Passage 주변에서 다른 방식으로 문제가 된 인물로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "상인들의 죽음으로 드러난 이나즈마 해란귀와 행방이 끊긴 \"Crackjaw\" 「찢어진 턱」 할크는 같은 Passage 주변에서 다른 방식으로 문제가 된 인물로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Leszek",
-       "revision": 1856277,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Leszek",
-       "revision": 1856277,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Crackjaw",
-      "Crackjaw",
-      "Passage"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Found inside the Fatui camp to the southeast of the northern Nothing Passage Teleport Waypoint.",
-     "sentences": [
-      {
-       "t_raw": "Nothing Passage 근처에서 마지막으로 목격된 대상에 대해, Guild는 그를 쓰러뜨리고 죽음의 증거를 가져온 이에게 후한 보상을 내건다.",
-       "interp": false,
-       "dropped": false,
-       "t": "적막의 회랑 근처에서 마지막으로 목격된 대상에 대해, Guild는 그를 쓰러뜨리고 죽음의 증거를 가져온 이에게 후한 보상을 내건다."
-      },
-      {
-       "t_raw": "northern Nothing Passage Teleport Waypoint 남동쪽 **Fatui 주둔지** 안에서는 Someone's Research Notes가 발견된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "northern 적막의 회랑 워프 포인트 남동쪽 **우인단 주둔지** 안에서는 Someone의 Research Notes가 발견된다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "The Flagship",
-       "revision": 1863843,
-       "section": "Interactables > Bounty Board",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Someone's Research Notes",
-       "paragraph": "A2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Guild",
-      "Someone",
-      "Research Notes"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Private's Notes are three interactables which can be found scattered across Nothing Passage.",
-     "sentences": [
-      {
-       "t_raw": "Nothing Passage에 흩어진 Private's Notes는 Passage의 상황이 형성된 이야기를 전하며, World Quest Series Colors of Emptiness에서 Traveler가 겪은 현상을 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "적막의 회랑에 흩어진 Private의 Notes는 Passage의 상황이 형성된 이야기를 전하며, World Quest Series Colors of Emptiness에서 여행자가 겪은 현상을 설명한다."
-      },
-      {
-       "t_raw": "그 기록이 Nothing Passage에 흩어져 있고, Leszek가 전하는 Inazuman Kairagi와 \"Crackjaw\" Hark에 관한 이야기가 그 주변에서 전해진다는 점에서, 이곳은 현상과 인물의 이야기가 겹치는 장소로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그 기록이 적막의 회랑에 흩어져 있고, 레셰크가 전하는 이나즈마 해란귀와 \"Crackjaw\" 「찢어진 턱」 할크에 관한 이야기가 그 주변에서 전해진다는 점에서, 이곳은 현상과 인물의 이야기가 겹치는 장소로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Private's Notes",
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Leszek",
-       "revision": 1856277,
-       "section": "Dialogue > Dialogue Set #1",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Leszek",
-       "revision": 1856277,
-       "section": "Dialogue > Dialogue Set #2",
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Private",
-      "Notes",
-      "Passage",
-      "World Quest Series Colors of Emptiness",
       "Crackjaw"
      ]
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "They tell the story of how the situation at the passage came to be, and explains the phenomena experienced by the Traveler during the World Quest Series Colors of Emptiness.",
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful to A1.",
+     "quote": "The Private's Notes are three interactables which can be found scattered across Nothing Passage.",
      "sentences": [
       {
-       "t_raw": "Nothing Passage의 상황이 형성된 이야기를 전하는 기록이 **Private's Notes**다.",
+       "t_raw": "Nothing Passage에는 세 개의 상호작용물인 **Private's Notes**가 곳곳에 흩어져 있다.",
        "interp": false,
        "dropped": false,
-       "t": "적막의 회랑의 상황이 형성된 이야기를 전하는 기록이 **Private의 Notes**다."
+       "t": "적막의 회랑에는 세 개의 상호작용물인 **Private의 Notes**가 곳곳에 흩어져 있다."
       },
       {
-       "t_raw": "이 기록은 Traveler가 World Quest Series Colors of Emptiness에서 겪는 현상도 설명한다.",
+       "t_raw": "이 기록들은 통행로의 상황이 어떻게 생겨났는지 들려주고, Traveler가 Colors of Emptiness에서 겪는 현상을 설명한다.",
        "interp": false,
        "dropped": false,
-       "t": "이 기록은 여행자가 World Quest Series Colors of Emptiness에서 겪는 현상도 설명한다."
-      },
-      {
-       "t_raw": "세 개로 흩어진 Private's Notes를 하나의 흐름으로 읽으려면 기록을 이어 붙여야 하는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "세 개로 흩어진 Private의 Notes를 하나의 흐름으로 읽으려면 기록을 이어 붙여야 하는 셈이다."
+       "t": "이 기록들은 통행로의 상황이 어떻게 생겨났는지 들려주고, 여행자가 적막의 색채에서 겪는 현상을 설명한다."
       }
      ],
      "sources": [
@@ -561,38 +121,268 @@
        "wiki_refs": []
       }
      ],
-     "heading": "떡밥과 수수께끼",
+     "heading": "개요",
      "latin_left": [
-      "Private",
-      "Notes",
-      "World Quest Series Colors of Emptiness",
       "Private",
       "Notes"
      ]
     },
     {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Matches M1, M2 and M3.",
+     "quote": "The target was last seen near the Nothing Passage. Those who defeat him and provide proof of his death will be handsomely rewarded by the Guild.",
+     "sentences": [
+      {
+       "t_raw": "Leszek은 Nothing Passage를 지나던 여행 상인 여러 명의 목숨을 앗아간 Inazuman Kairagi가 날뛰고 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "레셰크는 적막의 회랑을 지나던 여행 상인 여러 명의 목숨을 앗아간 이나즈마 해란귀가 날뛰고 있다고 말한다."
+      },
+      {
+       "t_raw": "현상금이 걸린 대상은 마지막으로 Nothing Passage 근처에서 목격되었고, 그를 쓰러뜨려 죽음을 입증할 증거를 가져오는 이에게 Guild가 후한 보상을 주겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현상금이 걸린 대상은 마지막으로 적막의 회랑 근처에서 목격되었고, 그를 쓰러뜨려 죽음을 입증할 증거를 가져오는 이에게 Guild가 후한 보상을 주겠다고 한다."
+      },
+      {
+       "t_raw": "Leszek은 **\"Crackjaw\" Hark**가 몇 달 전 Nothing Passage 근처에서 목격되었지만 그 뒤로 목격담이 없다고 말하며, 숨어들었을 수 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "레셰크는 **\"Crackjaw\" 「찢어진 턱」 할크**가 몇 달 전 적막의 회랑 근처에서 목격되었지만 그 뒤로 목격담이 없다고 말하며, 숨어들었을 수 있다고 본다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Leszek",
+       "revision": 1856277,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Leszek",
+       "revision": 1856277,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Guild",
+      "Crackjaw"
+     ]
+    },
+    {
+     "section": "드러난 역사 — Private's Notes",
+     "status": "accepted",
+     "note": "Facts match A1, and the interpretation is reasonable.",
+     "quote": "They tell the story of how the situation at the passage came to be, and explains the phenomena experienced by the Traveler during the World Quest Series Colors of Emptiness.",
+     "sentences": [
+      {
+       "t_raw": "Nothing Passage 곳곳에는 **Private's Notes** 세 개가 흩어져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적막의 회랑 곳곳에는 **Private의 Notes** 세 개가 흩어져 있다."
+      },
+      {
+       "t_raw": "이 기록들은 통행로의 상황이 어떻게 생겨났는지 이야기한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 기록들은 통행로의 상황이 어떻게 생겨났는지 이야기한다."
+      },
+      {
+       "t_raw": "또 Traveler가 World Quest Series **Colors of Emptiness**에서 겪는 현상을 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 여행자가 월드 임무 시리즈 **적막의 색채**에서 겪는 현상을 설명한다."
+      },
+      {
+       "t_raw": "통행로의 내력과 Traveler의 체험을 한데 다룬다는 점에서, 이 노트들은 Nothing Passage에서 벌어진 일을 통행로의 사정과 여행자의 경험 양쪽에서 풀어 주는 자료로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "통행로의 내력과 여행자의 체험을 한데 다룬다는 점에서, 이 노트들은 적막의 회랑에서 벌어진 일을 통행로의 사정과 여행자의 경험 양쪽에서 풀어 주는 자료로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Nothing Passage",
+       "revision": 1850487,
+       "section": "Interactables > Private's Notes",
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — Private의 Notes",
+     "latin_left": [
+      "Private",
+      "Notes"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Facts match M1 and M3, and the interpretation is reasonable.",
+     "quote": "This is \"Crackjaw\" Hark. Several months ago, he was spotted near the Nothing Passage, but there haven't been any sightings since.",
+     "sentences": [
+      {
+       "t_raw": "Nothing Passage에서는 지나가던 여행 상인 여러 명의 목숨을 앗아간 **날뛰는 Inazuman Kairagi**가 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적막의 회랑에서는 지나가던 여행 상인 여러 명의 목숨을 앗아간 **날뛰는 이나즈마 해란귀**가 언급된다."
+      },
+      {
+       "t_raw": "몇 달 전에는 **\"Crackjaw\" Hark**가 Nothing Passage 근처에서 목격되었지만, 그 뒤로 목격담이 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몇 달 전에는 **\"Crackjaw\" 「찢어진 턱」 할크**가 적막의 회랑 근처에서 목격되었지만, 그 뒤로 목격담이 없다."
+      },
+      {
+       "t_raw": "그는 숨었을 가능성이 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 숨었을 가능성이 있다고 본다."
+      },
+      {
+       "t_raw": "Kairagi와 Hark가 모두 Nothing Passage 근처에서 언급된다는 점에서, 통행로의 인물 구도는 Kairagi의 피해와 Hark의 행방이라는 두 갈래로 제시되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "해란귀와 「찢어진 턱」 할크가 모두 적막의 회랑 근처에서 언급된다는 점에서, 통행로의 인물 구도는 해란귀의 피해와 「찢어진 턱」 할크의 행방이라는 두 갈래로 제시되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Leszek",
+       "revision": 1856277,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Leszek",
+       "revision": 1856277,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Crackjaw"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "trimmed",
+     "note": "The English never says the bounty target's name is withheld or that he is someone other than Hark. The bounty text simply doesn't give a name, so stating this as fact adds something. The Research Notes location is stated correctly.",
+     "quote": "The target was last seen near the Nothing Passage. Those who defeat him and provide proof of his death will be handsomely rewarded by the Guild.",
+     "sentences": [
+      {
+       "t_raw": "Nothing Passage 근처에서 마지막으로 목격된 현상금 대상이 있으며, 그를 쓰러뜨리고 죽음의 증거를 제공한 자에게 Guild가 후하게 보상한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적막의 회랑 근처에서 마지막으로 목격된 현상금 대상이 있으며, 그를 쓰러뜨리고 죽음의 증거를 제공한 자에게 Guild가 후하게 보상한다."
+      },
+      {
+       "t_raw": "그 대상의 이름은 밝혀지지 않았고, 북쪽 Nothing Passage Teleport Waypoint의 남동쪽 Fatui camp 안에서는 **Someone's Research Notes**가 발견된다.",
+       "interp": false,
+       "dropped": true,
+       "t": "그 대상의 이름은 밝혀지지 않았고, 북쪽 적막의 회랑 워프 포인트의 남동쪽 우인단 camp 안에서는 **Someone의 Research Notes**가 발견된다."
+      },
+      {
+       "t_raw": "Kairagi의 피해, Hark의 행방, 이름이 드러나지 않은 현상금 대상, Fatui camp의 연구 노트가 모두 Nothing Passage를 중심으로 언급된다는 점에서, 이 일대는 여러 인물과 세력의 단서가 겹치는 불투명한 현장으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "해란귀의 피해, 「찢어진 턱」 할크의 행방, 이름이 드러나지 않은 현상금 대상, 우인단 캠프의 연구 노트가 모두 적막의 회랑을 중심으로 언급된다는 점에서, 이 일대는 여러 인물과 세력의 단서가 겹치는 불투명한 현장으로 보인다.",
+       "polish": {
+        "from": "해란귀의 피해, 「찢어진 턱」 할크의 행방, 이름이 드러나지 않은 현상금 대상, 우인단 camp의 연구 노트가 모두 적막의 회랑을 중심으로 언급된다는 점에서, 이 일대는 여러 인물과 세력의 단서가 겹치는 불투명한 현장으로 보인다.",
+        "text": "해란귀의 피해, 「찢어진 턱」 할크의 행방, 이름이 드러나지 않은 현상금 대상, 우인단 캠프의 연구 노트가 모두 적막의 회랑을 중심으로 언급된다는 점에서, 이 일대는 여러 인물과 세력의 단서가 겹치는 불투명한 현장으로 보인다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Leszek",
+       "revision": 1856277,
+       "section": "Dialogue > Dialogue Set #1",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Leszek",
+       "revision": 1856277,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Nothing Passage",
+       "revision": 1850487,
+       "section": "Interactables > Someone's Research Notes",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Guild"
+     ]
+    },
+    {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported. M2 and M3 back the facts, and the interpretations only say the sources leave the target's identity and Hark's whereabouts open.",
      "quote": "This is \"Crackjaw\" Hark. Several months ago, he was spotted near the Nothing Passage, but there haven't been any sightings since. He might've gone into hiding, we think.",
      "sentences": [
       {
-       "t_raw": "Leszek은 Crackjaw Hark가 몇 달 전 Nothing Passage 근처에서 목격된 뒤로 목격담이 없다며, 숨어들었을 수 있다고 본다.",
+       "t_raw": "Nothing Passage 근처에서 목격된 Crackjaw Hark는 몇 달 전 이곳에 모습을 보인 뒤 목격담이 끊겼고, Leszek은 그가 숨어들었을 가능성을 언급한다.",
        "interp": false,
        "dropped": false,
-       "t": "레셰크는 Crackjaw Hark가 몇 달 전 적막의 회랑 근처에서 목격된 뒤로 목격담이 없다며, 숨어들었을 수 있다고 본다."
+       "t": "적막의 회랑 근처에서 목격된 Crackjaw Hark는 몇 달 전 이곳에 모습을 보인 뒤 목격담이 끊겼고, 레셰크는 그가 숨어들었을 가능성을 언급한다."
       },
       {
-       "t_raw": "Nothing Passage 근처에서 마지막으로 목격된 대상의 사망 증거를 가져오면 Guild가 후하게 보상한다는 수배도 있다.",
+       "t_raw": "현상금은 대상이 Nothing Passage 근처에서 마지막으로 목격되었다고 전하고, 그를 쓰러뜨려 죽음을 증명한 이에게 Guild가 후한 보상을 주겠다고 밝힌다.",
        "interp": false,
        "dropped": false,
-       "t": "적막의 회랑 근처에서 마지막으로 목격된 대상의 사망 증거를 가져오면 Guild가 후하게 보상한다는 수배도 있다."
+       "t": "현상금은 대상이 적막의 회랑 근처에서 마지막으로 목격되었다고 전하고, 그를 쓰러뜨려 죽음을 증명한 이에게 Guild가 후한 보상을 주겠다고 밝힌다."
       },
       {
-       "t_raw": "수배가 **사망의 증거**를 요구하는 한편 Leszek은 은신 가능성을 제기하니, Crackjaw Hark의 행방은 수배 정보와 겹쳐 놓고 볼 여지가 있다.",
+       "t_raw": "두 기록 모두 Nothing Passage를 언급하지만, 현상금 대상이 Hark인지 아닌지는 이 자료들만으로 정해지지 않는다.",
        "interp": true,
        "dropped": false,
-       "t": "수배가 **사망의 증거**를 요구하는 한편 레셰크는 은신 가능성을 제기하니, Crackjaw Hark의 행방은 수배 정보와 겹쳐 놓고 볼 여지가 있다."
+       "t": "두 기록 모두 적막의 회랑을 언급하지만, 현상금 대상이 「찢어진 턱」 할크인지 아닌지는 이 자료들만으로 정해지지 않는다."
+      },
+      {
+       "t_raw": "**현상금 대상의 이름**과 Hark의 **현재 행방**은 나란히 미궁으로 남는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**현상금 대상의 이름**과 「찢어진 턱」 할크의 **현재 행방**은 나란히 미궁으로 남는 셈이다."
       }
      ],
      "sources": [
@@ -616,33 +406,73 @@
      "heading": "떡밥과 수수께끼",
      "latin_left": [
       "Crackjaw Hark",
-      "Guild",
-      "Crackjaw Hark"
+      "Guild"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The location in A2 matches. The interpretations are framed as open questions and add no facts.",
+     "quote": "Found inside the Fatui camp to the southeast of the northern Nothing Passage Teleport Waypoint.",
+     "sentences": [
+      {
+       "t_raw": "northern Nothing Passage Teleport Waypoint의 남동쪽에 있는 Fatui camp 안에서 Someone's Research Notes가 발견된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "northern 적막의 회랑 워프 포인트의 남동쪽에 있는 우인단 camp 안에서 Someone의 Research Notes가 발견된다."
+      },
+      {
+       "t_raw": "이 기록은 Fatui camp라는 장소와 'Someone'이라는 이름을 함께 남겨, 작성자가 누구이며 어떤 연구를 담았는지 묻게 만든다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 기록은 우인단 캠프라는 장소와 'Someone'이라는 이름을 함께 남겨, 작성자가 누구이며 어떤 연구를 담았는지 묻게 만든다.",
+       "polish": {
+        "from": "이 기록은 우인단 camp라는 장소와 'Someone'이라는 이름을 함께 남겨, 작성자가 누구이며 어떤 연구를 담았는지 묻게 만든다.",
+        "text": "이 기록은 우인단 캠프라는 장소와 'Someone'이라는 이름을 함께 남겨, 작성자가 누구이며 어떤 연구를 담았는지 묻게 만든다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "**작성자의 정체**와 연구의 목적, 그리고 이 기록이 Nothing Passage를 둘러싼 사안과 어떻게 이어지는지는 아직 풀리지 않은 물음으로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**작성자의 정체**와 연구의 목적, 그리고 이 기록이 적막의 회랑을 둘러싼 사안과 어떻게 이어지는지는 아직 풀리지 않은 물음으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Nothing Passage",
+       "revision": 1850487,
+       "section": "Interactables > Someone's Research Notes",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Someone",
+      "Research Notes",
+      "Someone"
      ]
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Both sentences are faithful to A1.",
      "quote": "The Private's Notes are three interactables which can be found scattered across Nothing Passage.",
      "sentences": [
       {
-       "t_raw": "**Private's Notes**는 Nothing Passage 곳곳에 흩어진 세 개의 상호작용 요소다.",
+       "t_raw": "Private's Notes는 Nothing Passage 곳곳에 흩어진 **세 개의 상호작용 오브젝트**다.",
        "interp": false,
        "dropped": false,
-       "t": "**Private의 Notes**는 적막의 회랑 곳곳에 흩어진 세 개의 상호작용 요소다."
+       "t": "Private의 Notes는 적막의 회랑 곳곳에 흩어진 **세 개의 상호작용 오브젝트**다."
       },
       {
-       "t_raw": "이 기록들은 통로의 상황이 어떻게 형성되었는지 전하고, Traveler가 World Quest Series Colors of Emptiness에서 겪는 현상을 설명한다.",
+       "t_raw": "이 노트들은 통행로의 상황이 어떻게 생겨났는지 전하고, Traveler가 World Quest Series Colors of Emptiness에서 겪는 현상을 설명한다.",
        "interp": false,
        "dropped": false,
-       "t": "이 기록들은 통로의 상황이 어떻게 형성되었는지 전하고, 여행자가 World Quest Series Colors of Emptiness에서 겪는 현상을 설명한다."
-      },
-      {
-       "t_raw": "세 기록이 각각 흩어져 있으므로, 이야기를 온전히 따라가려면 여러 위치를 찾아야 하는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "세 기록이 각각 흩어져 있으므로, 이야기를 온전히 따라가려면 여러 위치를 찾아야 하는 셈이다."
+       "t": "이 노트들은 통행로의 상황이 어떻게 생겨났는지 전하고, 여행자가 월드 임무 시리즈 적막의 색채에서 겪는 현상을 설명한다."
       }
      ],
      "sources": [
@@ -658,38 +488,34 @@
      "heading": "여담",
      "latin_left": [
       "Private",
-      "Notes",
-      "World Quest Series Colors of Emptiness"
+      "Notes"
      ]
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Both sentences are faithful to A2.",
      "quote": "Found inside the Fatui camp to the southeast of the northern Nothing Passage Teleport Waypoint.",
      "sentences": [
       {
-       "t_raw": "**Someone's Research Notes**는 northern Nothing Passage Teleport Waypoint 남동쪽의 Fatui 주둔지 안에서 발견된다.",
+       "t_raw": "Someone's Research Notes는 Fatui camp 안에서 발견된다.",
        "interp": false,
        "dropped": false,
-       "t": "**Someone의 Research Notes**는 northern 적막의 회랑 워프 포인트 남동쪽의 우인단 주둔지 안에서 발견된다."
+       "t": "Someone의 Research Notes는 우인단 캠프 안에서 발견된다.",
+       "polish": {
+        "from": "Someone의 Research Notes는 우인단 camp 안에서 발견된다.",
+        "text": "Someone의 Research Notes는 우인단 캠프 안에서 발견된다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Private's Notes가 통로 곳곳에 흩어져 있는 것과 달리, 이 기록은 Fatui 주둔지 안이라는 특정 위치에 놓여 있다는 점에서 위치의 대비가 두드러진다.",
-       "interp": true,
+       "t_raw": "그 Fatui camp는 northern Nothing Passage Teleport Waypoint의 남동쪽에 있다.",
+       "interp": false,
        "dropped": false,
-       "t": "Private의 Notes가 통로 곳곳에 흩어져 있는 것과 달리, 이 기록은 우인단 주둔지 안이라는 특정 위치에 놓여 있다는 점에서 위치의 대비가 두드러진다."
+       "t": "그 우인단 camp는 northern 적막의 회랑 워프 포인트의 남동쪽에 있다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Nothing Passage",
-       "revision": 1850487,
-       "section": "Interactables > Private's Notes",
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Nothing Passage",
@@ -702,9 +528,7 @@
      "heading": "여담",
      "latin_left": [
       "Someone",
-      "Research Notes",
-      "Private",
-      "Notes"
+      "Research Notes"
      ]
     }
    ],

@@ -20,44 +20,62 @@
    "input_chars": 4251,
    "input_cut": false,
    "input_hash": "42e50c7aa58b",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "ds,kimi,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Istoria is a philosopher of the Unified Civilization who lived during the War of Funerary Flame",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, A3 and A6/M6.",
+     "quote": "Istoria was among the first to be uplifted to the Temple of Space to be preserved as a living memory.",
      "sentences": [
       {
-       "t_raw": "Istoria는 War of Funerary Flame 시대에 살았던 **Unified Civilization의 철학자**이며, 스승 Aristocles에게서 “정신이 물질을 이긴다”는 가르침을 받았고, 제자 Aberaku는 Delphi Pytho로 가 Dainichi Mikoshi를 만들었다.",
+       "t_raw": "Istoria는 A Long Day in the Mountains를 마친 뒤 만날 수 있는 open-world NPC다.",
        "interp": false,
        "dropped": false,
-       "t": "이스토리아는 불바다 전쟁 시대에 살았던 **통일된 문명의 철학자**이며, 스승 아리스토클레스에게서 “정신이 물질을 이긴다”는 가르침을 받았고, 제자 아베라쿠는 델피 피토로 가 다이니치 미코시를 만들었다."
+       "t": "이스토리아는 산속의 긴 하루를 마친 뒤 만날 수 있는 오픈월드 NPC다.",
+       "polish": {
+        "from": "이스토리아는 A 산속의 긴 하루 in the Mountains를 마친 뒤 만날 수 있는 open-world NPC다.",
+        "text": "이스토리아는 산속의 긴 하루를 마친 뒤 만날 수 있는 오픈월드 NPC다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그는 Temple of Space에 **살아 있는 기억으로 보존된 초기 Uplifted** 중 하나로, Apathic Interval에서 수백 년을 보낸 뒤 다른 Uplifted와 지식을 교환하며 역사와 잃어버린 문명에 대한 폭넓은 통찰을 쌓았다.",
+       "t_raw": "그는 War of Funerary Flame 시대를 살아온 Unified Civilization의 철학자로, 자신의 시대를 'mortal paradise'라 부르며 그때를 회고한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 공간의 신전에 **살아 있는 기억으로 보존된 초기 Uplifted** 중 하나로, 무념무상의 공간에서 수백 년을 보낸 뒤 다른 Uplifted와 지식을 교환하며 역사와 잃어버린 문명에 대한 폭넓은 통찰을 쌓았다."
+       "t": "그는 불바다 전쟁 시대를 살아온 통일된 문명의 철학자로, 자신의 시대를 '필멸자의 낙원'이라 부르며 그때를 회고한다.",
+       "polish": {
+        "from": "그는 불바다 전쟁 시대를 살아온 통일된 문명의 철학자로, 자신의 시대를 'mortal paradise'라 부르며 그때를 회고한다.",
+        "text": "그는 불바다 전쟁 시대를 살아온 통일된 문명의 철학자로, 자신의 시대를 '필멸자의 낙원'이라 부르며 그때를 회고한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "A Long Day in the Mountains에서 Traveler와 Paimon이 Temple of Space에서 **처음 만나는 Uplifted**이며, Melanta의 폭정에서 Temple of Space를 해방해 달라고 협력을 청한다.",
+       "t_raw": "Temple of Space에 살아있는 기억으로 보존된 최초의 Uplifted 가운데 하나로, 오랜 세월을 지나 이곳에 이르러 역사와 잃어버린 문명에 대한 방대한 지식을 쌓았다.",
        "interp": false,
        "dropped": false,
-       "t": "A Long Day in the Mountains에서 여행자와 페이몬이 공간의 신전에서 **처음 만나는 Uplifted**이며, 멜란타의 폭정에서 공간의 신전을 해방해 달라고 협력을 청한다."
+       "t": "공간의 신전에 살아있는 기억으로 보존된 최초의 Uplifted 가운데 하나로, 오랜 세월을 지나 이곳에 이르러 역사와 잃어버린 문명에 대한 방대한 지식을 쌓았다."
       },
       {
-       "t_raw": "그의 오랜 체류와 역사·잃어버린 문명에 대한 통찰은 Temple of Space를 둘러싼 사건을 읽는 중요한 배경으로 보인다.",
+       "t_raw": "Melanta의 폭정을 Traveler에게 알리고 Raumhilda의 과거를 꺼내 놓는 그는, Temple of Space를 둘러싼 이야기로 들어가는 입구에 서 있는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "그의 오랜 체류와 역사·잃어버린 문명에 대한 통찰은 공간의 신전을 둘러싼 사건을 읽는 중요한 배경으로 보인다."
+       "t": "멜란타의 폭정을 여행자에게 알리고 라움힐다의 과거를 꺼내 놓는 그는, 공간의 신전을 둘러싼 이야기로 들어가는 입구에 서 있는 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Istoria",
@@ -112,43 +130,72 @@
          "name": "The Final Judgment"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Zeitlind",
+       "revision": 2088506,
+       "section": "Story > Present time",
+       "paragraph": "M6",
+       "wiki_refs": []
       }
      ],
      "heading": null,
      "latin_left": [
-      "Uplifted",
-      "Uplifted",
-      "Long Day",
-      "Mountains",
+      "NPC",
       "Uplifted"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Istoria is a philosopher of the Unified Civilization who lived during the War of Funerary Flame, when Nibelung returned to Teyvat under the influence of the Abyss.",
+     "status": "accepted",
+     "note": "Facts match A1, A2 and A6. The quote matches Q5.",
+     "quote": "Greetings, newcomers. My name is Istoria. I hail from the age when the Dark Dragon King rent the sky open. And you are?",
      "sentences": [
       {
-       "t_raw": "Istoria는 **War of Funerary Flame** 시대를 살았던 Unified Civilization의 철학자다.",
+       "t_raw": "Istoria는 A Long Day in the Mountains를 마친 뒤 Traveler가 **Temple of Space**에서 만날 수 있는 오픈월드 NPC이자, Traveler와 Paimon이 그곳에 도착해 처음 마주한 **Uplifted**이다.",
        "interp": false,
        "dropped": false,
-       "t": "이스토리아는 **불바다 전쟁** 시대를 살았던 통일된 문명의 철학자다."
+       "t": "이스토리아는 산속의 긴 하루를 마친 뒤 여행자가 **공간의 신전**에서 만날 수 있는 오픈월드 NPC이자, 여행자와 페이몬이 그곳에 도착해 처음 마주한 **Uplifted**이다.",
+       "polish": {
+        "from": "이스토리아는 A 산속의 긴 하루 in the Mountains를 마친 뒤 여행자가 **공간의 신전**에서 만날 수 있는 오픈월드 NPC이자, 여행자와 페이몬이 그곳에 도착해 처음 마주한 **Uplifted**이다.",
+        "text": "이스토리아는 산속의 긴 하루를 마친 뒤 여행자가 **공간의 신전**에서 만날 수 있는 오픈월드 NPC이자, 여행자와 페이몬이 그곳에 도착해 처음 마주한 **Uplifted**이다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Nibelung이 Abyss의 영향 아래 Teyvat로 돌아온 때였고, 그는 자신의 시대를 천사들이 인간에게 실용적인 문제의 답을 주던 **인간의 낙원**으로 회고한다.",
+       "t_raw": "그는 Unified Civilization의 철학자로, Nibelung이 Abyss의 영향 아래 Teyvat로 돌아온 War of Funerary Flame 시대를 살았으며, 그 시대를 천사들이 인간에게 실용적 문제의 해답을 내려주던 **mortal paradise**라고 회상한다.",
        "interp": false,
        "dropped": false,
-       "t": "니벨룽겐이 심연의 영향 아래 티바트로 돌아온 때였고, 그는 자신의 시대를 천사들이 인간에게 실용적인 문제의 답을 주던 **인간의 낙원**으로 회고한다."
+       "t": "그는 통일된 문명의 철학자로, 니벨룽겐이 심연의 영향 아래 티바트로 돌아온 불바다 전쟁 시대를 살았으며, 그 시대를 천사들이 인간에게 실용적 문제의 해답을 내려주던 **필멸자의 낙원**이라고 회상한다.",
+       "polish": {
+        "from": "그는 통일된 문명의 철학자로, 니벨룽겐이 심연의 영향 아래 티바트로 돌아온 불바다 전쟁 시대를 살았으며, 그 시대를 천사들이 인간에게 실용적 문제의 해답을 내려주던 **mortal paradise**라고 회상한다.",
+        "text": "그는 통일된 문명의 철학자로, 니벨룽겐이 심연의 영향 아래 티바트로 돌아온 불바다 전쟁 시대를 살았으며, 그 시대를 천사들이 인간에게 실용적 문제의 해답을 내려주던 **필멸자의 낙원**이라고 회상한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "스스로는 Dark Dragon King이 하늘을 찢은 시대에서 왔다고 소개한다.",
+       "t_raw": "그의 스승 Aristocles는 \"정신이 물질을 이긴다\"고 가르쳤고, 제자 Aberaku는 훗날 Delphi Pytho로 가 Dainichi Mikoshi를 만들었다.",
        "interp": false,
        "dropped": false,
-       "t": "스스로는 Dark Dragon King이 하늘을 찢은 시대에서 왔다고 소개한다."
+       "t": "그의 스승 아리스토클레스는 \"정신이 물질을 이긴다\"고 가르쳤고, 제자 아베라쿠는 훗날 델피 피토로 가 다이니치 미코시를 만들었다."
+      },
+      {
+       "t_raw": "Traveler 일행과 처음 만났을 때 Istoria는 \"나는 Dark Dragon King이 하늘을 찢어버린 시대에서 왔다\"고 자신을 소개하며, Melanta의 폭정으로부터 Temple of Space를 구해달라고 호소했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자 일행과 처음 만났을 때 이스토리아는 \"나는 Dark Dragon King이 하늘을 찢어버린 시대에서 왔다\"고 자신을 소개하며, 멜란타의 폭정으로부터 공간의 신전을 구해달라고 호소했다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Istoria",
@@ -171,6 +218,19 @@
        ]
       },
       {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": "Story",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
+      {
        "kind": "quest",
        "quest": "The Wind Has Ceased",
        "quest_ko": "멎은 바람",
@@ -180,38 +240,40 @@
      ],
      "heading": "개요",
      "latin_left": [
+      "NPC",
+      "Uplifted",
       "Dark Dragon King"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "During the A Long Day in the Mountains, Istoria is the first Uplifted encountered by the Traveler and Paimon upon arriving in the Temple of Space.",
+     "status": "accepted",
+     "note": "Facts match A3. The interpretation is supported by Q9, where Istoria says he has been there longer than anyone and witnessed everything.",
+     "quote": "It's true that I've been here longer than anyone else, and I have witnessed all that has transpired. Unfortunately...",
      "sentences": [
       {
-       "t_raw": "그는 Temple of Space에 살아 있는 기억으로 보존되기 위해 처음 Uplifted된 이들 가운데 한 명으로, Apathic Interval에서 수백 년을 갇힌 끝에 그곳에 도착해 다른 Uplifted와 지식을 교환했다.",
+       "t_raw": "Istoria는 살아 있는 기억으로 보존되기 위해 Temple of Space로 끌어올려진 최초의 Uplifted 가운데 한 사람이었다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 공간의 신전에 살아 있는 기억으로 보존되기 위해 처음 Uplifted된 이들 가운데 한 명으로, 무념무상의 공간에서 수백 년을 갇힌 끝에 그곳에 도착해 다른 Uplifted와 지식을 교환했다."
+       "t": "이스토리아는 살아 있는 기억으로 보존되기 위해 공간의 신전으로 끌어올려진 최초의 Uplifted 가운데 한 사람이었다."
       },
       {
-       "t_raw": "Traveler와 Paimon이 사원에서 처음 만난 Uplifted인 그는 Melanta의 폭정에서 사원을 해방해 달라고 부탁하고, 모든 구역이 해방된 뒤 자신이 기억을 포기하겠다고 나선다.",
+       "t_raw": "그러나 그는 수세기를 Apathic Interval에 갇혀 지내며 진리를 추구하던 마음을 내려놓고, 사랑하는 이들을 그리워하기만 했다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자와 페이몬이 사원에서 처음 만난 Uplifted인 그는 멜란타의 폭정에서 사원을 해방해 달라고 부탁하고, 모든 구역이 해방된 뒤 자신이 기억을 포기하겠다고 나선다."
+       "t": "그러나 그는 수세기를 무념무상의 공간에 갇혀 지내며 진리를 추구하던 마음을 내려놓고, 사랑하는 이들을 그리워하기만 했다."
       },
       {
-       "t_raw": "그러나 Traveler와 Zeitlind가 그의 지식이 소중하다고 설득해 Zeitlind가 Path to the Heavens를 만든다.",
+       "t_raw": "Interval을 빠져나와 Temple of Space에 도착한 뒤 그는 다른 Uplifted들과 지식을 교환하며 역사와 잃어버린 문명에 대한 폭넓은 통찰을 쌓았다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 여행자와 차이틀린트가 그의 지식이 소중하다고 설득해 차이틀린트가 Path to the Heavens를 만든다."
+       "t": "Interval을 빠져나와 공간의 신전에 도착한 뒤 그는 다른 Uplifted들과 지식을 교환하며 역사와 잃어버린 문명에 대한 폭넓은 통찰을 쌓았다."
       },
       {
-       "t_raw": "그는 마지막으로 이곳에 온 것이 인간 수명으로 수많은 세대 전이라고 말하며, 현재 시대의 사람들이 자신들을 지원하러 왔다고 이해한다.",
-       "interp": false,
+       "t_raw": "이러한 경험 때문에 그가 Temple of Space에서 가장 오래 머물며 모든 변화를 목격한 존재로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "그는 마지막으로 이곳에 온 것이 인간 수명으로 수많은 세대 전이라고 말하며, 현재 시대의 사람들이 자신들을 지원하러 왔다고 이해한다."
+       "t": "이러한 경험 때문에 그가 공간의 신전에서 가장 오래 머물며 모든 변화를 목격한 존재로 보인다."
       }
      ],
      "sources": [
@@ -237,6 +299,91 @@
        ]
       },
       {
+       "kind": "quest",
+       "quest": "Counterfeit Classics",
+       "quest_ko": "고전 위작",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Uplifted",
+      "Interval",
+      "Uplifted"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match M6, A5, Q21 and A6. The interpretation is supported by M3, where Istoria volunteers to give up his memories.",
+     "quote": "The one who gave up every last memory... was your sister, Lind.",
+     "sentences": [
+      {
+       "t_raw": "Zeitlind가 누이 Raumhilda의 죽음을 믿고 폐 sanatorium을 찾던 여정은 결국 Temple of Space로 이어졌고, Istoria는 Raumhilda가 과거 이곳에 왔었다는 사실과 Melanta가 창조주가 사라진 뒤부터 Temple of Space 주민들을 오랫동안 괴롭혀 왔다는 진실을 밝혔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "차이틀린트가 누이 라움힐다의 죽음을 믿고 폐쇄된 요양원을 찾던 여정은 결국 공간의 신전으로 이어졌고, 이스토리아는 라움힐다가 과거 이곳에 왔었다는 사실과 멜란타가 창조주가 사라진 뒤부터 공간의 신전 주민들을 오랫동안 괴롭혀 왔다는 진실을 밝혔다.",
+       "polish": {
+        "from": "차이틀린트가 누이 라움힐다의 죽음을 믿고 폐 sanatorium을 찾던 여정은 결국 공간의 신전으로 이어졌고, 이스토리아는 라움힐다가 과거 이곳에 왔었다는 사실과 멜란타가 창조주가 사라진 뒤부터 공간의 신전 주민들을 오랫동안 괴롭혀 왔다는 진실을 밝혔다.",
+        "text": "차이틀린트가 누이 라움힐다의 죽음을 믿고 폐쇄된 요양원을 찾던 여정은 결국 공간의 신전으로 이어졌고, 이스토리아는 라움힐다가 과거 이곳에 왔었다는 사실과 멜란타가 창조주가 사라진 뒤부터 공간의 신전 주민들을 오랫동안 괴롭혀 왔다는 진실을 밝혔다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Raumhilda가 Melanta에 맞서기 위해 기억을 바쳐 Path to the Heavens를 만들었을 때, Istoria는 그를 말리려 했으나 결국 허락했고, 이후 이를 비겁한 행동으로 여겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라움힐다가 멜란타에 맞서기 위해 기억을 바쳐 Path to the Heavens를 만들었을 때, 이스토리아는 그를 말리려 했으나 결국 허락했고, 이후 이를 비겁한 행동으로 여겼다.",
+       "polish": {
+        "from": "라움힐다가 멜란타에 맞서기 위해 기억을 바쳐 Path to the Heavens를 만들었을 때, 이스토리아는 그를 말리려 했으나 결국 허락했고, 이후 이를 비겁한 행동으로 여겼다.",
+        "text": "라움힐다가 멜란타에 맞서기 위해 기억을 바쳐 Path to the Heavens를 만들었을 때, 이스토리아는 그를 말리려 했으나 결국 허락했고, 이후 이를 비겁한 행동으로 여겼다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Istoria는 Zeitlind에게 마지막 기억까지 모두 내놓은 사람이 그의 누이 Lind였다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이스토리아는 차이틀린트에게 마지막 기억까지 모두 내놓은 사람이 그의 누이 린드였다고 말했다."
+      },
+      {
+       "t_raw": "Traveler가 모든 구역을 해방한 뒤 Istoria는 다시 기억을 내놓겠다고 했지만, Traveler와 Zeitlind는 그의 지식이 너무 귀중하다고 설득했고, 마침내 Zeitlind가 Path to the Heavens를 대신 건설했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 모든 구역을 해방한 뒤 이스토리아는 다시 기억을 내놓겠다고 했지만, 여행자와 차이틀린트는 그의 지식이 너무 귀중하다고 설득했고, 마침내 차이틀린트가 Path to the Heavens를 대신 건설했다.",
+       "polish": {
+        "from": "여행자가 모든 구역을 해방한 뒤 이스토리아는 다시 기억을 내놓겠다고 했지만, 여행자와 차이틀린트는 그의 지식이 너무 귀중하다고 설득했고, 마침내 차이틀린트가 Path to the Heavens를 대신 건설했다.",
+        "text": "여행자가 모든 구역을 해방한 뒤 이스토리아는 다시 기억을 내놓겠다고 했지만, 여행자와 차이틀린트는 그의 지식이 너무 귀중하다고 설득했고, 마침내 차이틀린트가 Path to the Heavens를 대신 건설했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "따라서 그는 Raumhilda의 과거와 Zeitlind의 현재를 잇는 매개자이자, Temple of Space의 해방을 위해 기꺼이 자신의 기억까지 내놓으려 했던 인물로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 그는 라움힐다의 과거와 차이틀린트의 현재를 잇는 매개자이자, 공간의 신전의 해방을 위해 기꺼이 자신의 기억까지 내놓으려 했던 인물로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": "Story",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Long Live Life"
+        },
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
+      {
        "kind": "wiki",
        "page": "Istoria",
        "revision": 2088140,
@@ -250,64 +397,65 @@
        ]
       },
       {
-       "kind": "quest",
-       "quest": "The Wind Has Ceased",
-       "quest_ko": "멎은 바람",
-       "version": "Luna VI",
-       "speaker": "Istoria"
+       "kind": "wiki",
+       "page": "Zeitlind",
+       "revision": 2088506,
+       "section": "Story > Present time",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Zeitlind",
+       "revision": 2088506,
+       "section": "Story > Present time",
+       "paragraph": "M6",
+       "wiki_refs": []
       },
       {
        "kind": "quest",
-       "quest": "Lion's Celerity",
-       "quest_ko": "질주하는 사자",
+       "quest": "The Final Judgment",
+       "quest_ko": "최후의 심판",
        "version": "Luna VI",
        "speaker": "Istoria"
       }
      ],
      "heading": "개요",
      "latin_left": [
-      "Uplifted",
-      "Uplifted",
-      "Uplifted",
+      "Path",
+      "Heavens",
       "Path",
       "Heavens"
      ]
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Facts match A2 and Q5. The interpretation is hedged and loosely tied to Q19.",
      "quote": "Greetings, newcomers. My name is Istoria. I hail from the age when the Dark Dragon King rent the sky open. And you are?",
      "sentences": [
       {
-       "t_raw": "Istoria는 War of Funerary Flame 당시 Nibelung이 Abyss의 영향을 받아 Teyvat로 돌아오던 시기의 Unified Civilization 철학자다.",
+       "t_raw": "그는 Unified Civilization의 철학자로, Nibelung이 Abyss의 영향 아래 Teyvat로 돌아왔던 War of Funerary Flame 시대를 살았다.",
        "interp": false,
        "dropped": false,
-       "t": "이스토리아는 불바다 전쟁 당시 니벨룽겐이 심연의 영향을 받아 티바트로 돌아오던 시기의 통일된 문명 철학자다."
+       "t": "그는 통일된 문명의 철학자로, 니벨룽겐이 심연의 영향 아래 티바트로 돌아왔던 불바다 전쟁 시대를 살았다."
       },
       {
-       "t_raw": "그는 자기 시대를 “mortal paradise”라 부르며 Hyperborea에서 Lang-Gan, Delphi, Arcadia였던 이곳에 이르는 범위를 떠올린다.",
+       "t_raw": "스스로는 **Dark Dragon King이 하늘을 찢었던 시대** 출신이라고 소개하며, 낯선 이들에게 먼저 이름을 밝히고 상대가 누구인지 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 자기 시대를 “mortal paradise”라 부르며 휘페르보레아에서 낭간, 델포이, 아카디아였던 이곳에 이르는 범위를 떠올린다."
+       "t": "스스로는 **Dark Dragon King이 하늘을 찢었던 시대** 출신이라고 소개하며, 낯선 이들에게 먼저 이름을 밝히고 상대가 누구인지 묻는다."
       },
       {
-       "t_raw": "사제와 천사가 실생활의 답을 주었기에 사람들은 현실 밖의 문제를 생각할 수 있었지만, 하늘이 준 수단에 견줄 만한 것을 만들지 못해 놀이감을 만든 아이들과 같았다고 회고한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "사제와 천사가 실생활의 답을 주었기에 사람들은 현실 밖의 문제를 생각할 수 있었지만, 하늘이 준 수단에 견줄 만한 것을 만들지 못해 놀이감을 만든 아이들과 같았다고 회고한다."
-      },
-      {
-       "t_raw": "그의 시대는 하늘의 답과 수단에 기대면서도 스스로 만든 것은 놀이감에 머문 시대로 보인다.",
+       "t_raw": "어떤 명칭을 소개할 때 더 공식적이고 인상적인 이름을 붙였다고 말하는데, 시대를 부르는 방식도 그런 결로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "그의 시대는 하늘의 답과 수단에 기대면서도 스스로 만든 것은 놀이감에 머문 시대로 보인다."
-      },
-      {
-       "t_raw": "새로 온 이들에게는 Dark Dragon King이 하늘을 찢던 시대에서 왔다고 소개한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "새로 온 이들에게는 Dark Dragon King이 하늘을 찢던 시대에서 왔다고 소개한다."
+       "t": "어떤 명칭을 소개할 때 더 공식적이고 인상적인 이름을 붙였다고 말하는데, 시대를 부르는 방식도 그런 결로 보인다."
       }
      ],
      "sources": [
@@ -333,44 +481,18 @@
        ]
       },
       {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A16",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "The Wind Has Ceased",
+       "quest_ko": "멎은 바람",
+       "version": "Luna VI",
+       "speaker": "Istoria"
       },
       {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A17",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A20",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A21",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A22",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "The Wind Has Ceased",
+       "quest_ko": "멎은 바람",
+       "version": "Luna VI",
+       "speaker": "Istoria"
       }
      ],
      "heading": "정체와 배경",
@@ -380,39 +502,43 @@
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It's true that I've been here longer than anyone else, and I have witnessed all that has transpired. Unfortunately...",
+     "status": "accepted",
+     "note": "Facts match A2 and A16. The interpretation about the teacher-to-student lineage follows from A2.",
+     "quote": "His teacher, Aristocles, taught him that \"the mind prevails over matter.\"",
      "sentences": [
       {
-       "t_raw": "그의 스승 Aristocles는 “the mind prevails over matter”라고 가르쳤고, 제자 Aberaku는 훗날 Delphi Pytho로 가 Dainichi Mikoshi를 만들었다.",
+       "t_raw": "그가 자기 시대를 부르는 말은 **mortal paradise**다.",
        "interp": false,
        "dropped": false,
-       "t": "그의 스승 아리스토클레스는 “the mind prevails over matter”라고 가르쳤고, 제자 아베라쿠는 훗날 델피 피토로 가 다이니치 미코시를 만들었다."
+       "t": "그가 자기 시대를 부르는 말은 **필멸자의 낙원**이다.",
+       "polish": {
+        "from": "그가 자기 시대를 부르는 말은 **mortal paradise**다.",
+        "text": "그가 자기 시대를 부르는 말은 **필멸자의 낙원**이다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Istoria는 Temple of Space에 보존된 살아 있는 기억, Uplifted가 된 첫 사람들 가운데 하나다.",
+       "t_raw": "천사들이 인류에게 실용적인 문제들의 답을 주던 시절이었고, 그는 그런 시대를 두고 지금 되돌아보아도 감히 상상하지 못하겠다는 듯 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "이스토리아는 공간의 신전에 보존된 살아 있는 기억, Uplifted가 된 첫 사람들 가운데 하나다."
+       "t": "천사들이 인류에게 실용적인 문제들의 답을 주던 시절이었고, 그는 그런 시대를 두고 지금 되돌아보아도 감히 상상하지 못하겠다는 듯 말한다."
       },
       {
-       "t_raw": "수백 년 동안 Apathic Interval에 갇혀 진실 추구를 포기하고 사랑하는 이들을 그리워한 끝에 사원에 도착했으며, 다른 Uplifted와 지식을 주고받아 역사와 잃어버린 문명에 대한 통찰을 쌓았다.",
+       "t_raw": "스승 Aristocles는 그에게 \"the mind prevails over matter\"라고 가르쳤으며, 제자 Aberaku는 훗날 Delphi Pytho로 가 Dainichi Mikoshi를 만들었다.",
        "interp": false,
        "dropped": false,
-       "t": "수백 년 동안 무념무상의 공간에 갇혀 진실 추구를 포기하고 사랑하는 이들을 그리워한 끝에 사원에 도착했으며, 다른 Uplifted와 지식을 주고받아 역사와 잃어버린 문명에 대한 통찰을 쌓았다."
+       "t": "스승 아리스토클레스는 그에게 \"정신은 물질을 이긴다\"라고 가르쳤으며, 제자 아베라쿠는 훗날 델피 피토로 가 다이니치 미코시를 만들었다.",
+       "polish": {
+        "from": "스승 아리스토클레스는 그에게 \"the mind prevails over matter\"라고 가르쳤으며, 제자 아베라쿠는 훗날 델피 피토로 가 다이니치 미코시를 만들었다.",
+        "text": "스승 아리스토클레스는 그에게 \"정신은 물질을 이긴다\"라고 가르쳤으며, 제자 아베라쿠는 훗날 델피 피토로 가 다이니치 미코시를 만들었다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그는 이곳에 온 지가 인간 수명으로 여러 세대 전이며, 자신이 누구보다 오래 머물며 벌어진 일을 목격했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 이곳에 온 지가 인간 수명으로 여러 세대 전이며, 자신이 누구보다 오래 머물며 벌어진 일을 목격했다고 말한다."
-      },
-      {
-       "t_raw": "오랜 체류와 다른 Uplifted와의 교류가 그를 사원과 잃어버린 문명의 역사를 해설할 수 있는 인물로 만든 셈이다.",
+       "t_raw": "스승에게 배운 것이 제자에게 이어지는 계보 한가운데에 그가 서 있는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "오랜 체류와 다른 Uplifted와의 교류가 그를 사원과 잃어버린 문명의 역사를 해설할 수 있는 인물로 만든 셈이다."
+       "t": "스승에게 배운 것이 제자에게 이어지는 계보 한가운데에 그가 서 있는 셈이다."
       }
      ],
      "sources": [
@@ -436,7 +562,53 @@
          "name": "Counterfeit Classics"
         }
        ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences match A3 and Q15.",
+     "quote": "The last time I came, by human lifespans, it must have been... many, many, many... generations ago.",
+     "sentences": [
+      {
+       "t_raw": "그는 Temple of Space로 uplift된 최초의 이들 가운데 하나로, 살아 있는 기억으로 보존되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 공간의 신전으로 승천한 최초의 이들 가운데 하나로, 살아 있는 기억으로 보존되었다.",
+       "polish": {
+        "from": "그는 공간의 신전으로 uplift된 최초의 이들 가운데 하나로, 살아 있는 기억으로 보존되었다.",
+        "text": "그는 공간의 신전으로 승천한 최초의 이들 가운데 하나로, 살아 있는 기억으로 보존되었다.",
+        "by": "ds"
+       }
       },
+      {
+       "t_raw": "그 전에 Apathic Interval에 수백 년 갇혀 진리를 좇는 일을 포기하고 그리운 이들을 그리워했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 전에 무념무상의 공간에 수백 년 갇혀 진리를 좇는 일을 포기하고 그리운 이들을 그리워했다."
+      },
+      {
+       "t_raw": "마침내 temple에 도착한 뒤에는 다른 Uplifted와 지식을 주고받으며 역사와 잃어버린 문명에 대한 폭넓은 통찰을 쌓았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마침내 신전에 도착한 뒤에는 다른 Uplifted와 지식을 주고받으며 역사와 잃어버린 문명에 대한 폭넓은 통찰을 쌓았다.",
+       "polish": {
+        "from": "마침내 temple에 도착한 뒤에는 다른 Uplifted와 지식을 주고받으며 역사와 잃어버린 문명에 대한 폭넓은 통찰을 쌓았다.",
+        "text": "마침내 신전에 도착한 뒤에는 다른 Uplifted와 지식을 주고받으며 역사와 잃어버린 문명에 대한 폭넓은 통찰을 쌓았다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "인간 수명으로 따지면 아주 여러 세대 전에 마지막으로 왔었다고 그 자신이 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "인간 수명으로 따지면 아주 여러 세대 전에 마지막으로 왔었다고 그 자신이 말한다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Istoria",
@@ -460,13 +632,6 @@
       },
       {
        "kind": "quest",
-       "quest": "Counterfeit Classics",
-       "quest_ko": "고전 위작",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
        "quest": "Lion's Celerity",
        "quest_ko": "질주하는 사자",
        "version": "Luna VI",
@@ -475,68 +640,59 @@
      ],
      "heading": "정체와 배경",
      "latin_left": [
-      "Uplifted",
-      "Uplifted",
       "Uplifted"
      ]
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But the sisters of that one great god... had other ideas. And so they put whatever they thought interesting in here, willy-nilly.",
+     "section": "작중 행적 — Raumhilda와 Temple of Space",
+     "status": "accepted",
+     "note": "All sentences are supported by M7, Q7 and M6.",
+     "quote": "She also came to know Istoria, and discussed philosophy with him.",
      "sentences": [
       {
-       "t_raw": "그가 설명하는 Temple of Space는 본래 신들이 몰락한 문명을 보존하려는 전시관이었으나, 그 위대한 신의 자매들이 흥미롭다고 여긴 것을 제멋대로 넣어 소장품이 잡다해 보이게 되었다.",
+       "t_raw": "Raumhilda는 Nihilita의 손에 Temple of Space로 보내진 뒤 이곳의 여러 주민과 만났고, Istoria와는 철학을 두고 이야기를 나눴다.",
        "interp": false,
        "dropped": false,
-       "t": "그가 설명하는 공간의 신전은 본래 신들이 몰락한 문명을 보존하려는 전시관이었으나, 그 위대한 신의 자매들이 흥미롭다고 여긴 것을 제멋대로 넣어 소장품이 잡다해 보이게 되었다."
+       "t": "라움힐다는 니힐리타의 손에 공간의 신전으로 보내진 뒤 이곳의 여러 주민과 만났고, 이스토리아와는 철학을 두고 이야기를 나눴다."
       },
       {
-       "t_raw": "Melanta의 광증 초기 징후가 드러나 많은 이가 고통받던 때를 증언하며, “Melanta”와 “Nihilita”라는 이름의 의미를 묻는다.",
+       "t_raw": "그 무렵에는 Melanta의 광기가 초기의 징후를 드러내기 시작해 많은 이가 그 때문에 고통을 겪고 있었다.",
        "interp": false,
        "dropped": false,
-       "t": "멜란타의 광증 초기 징후가 드러나 많은 이가 고통받던 때를 증언하며, “멜란타”와 “니힐리타”라는 이름의 의미를 묻는다."
+       "t": "그 무렵에는 멜란타의 광기가 초기의 징후를 드러내기 시작해 많은 이가 그 때문에 고통을 겪고 있었다."
       },
       {
-       "t_raw": "본래 보존 전시관이 자매들의 취향으로 채워지고 Melanta의 광증이 고통을 낳았다는 증언은 사원의 현재가 본래 목적에서 벗어난 결과임을 보여 준다.",
-       "interp": true,
+       "t_raw": "Istoria는 Zeitlind에게 Raumhilda가 한때 이곳에 머물렀다고 밝히면서, Melanta가 창조주의 자취가 사라진 뒤로 오래도록 주민들을 괴롭혀 왔다고 전한다.",
+       "interp": false,
        "dropped": false,
-       "t": "본래 보존 전시관이 자매들의 취향으로 채워지고 멜란타의 광증이 고통을 낳았다는 증언은 사원의 현재가 본래 목적에서 벗어난 결과임을 보여 준다."
+       "t": "이스토리아는 차이틀린트에게 라움힐다가 한때 이곳에 머물렀다고 밝히면서, 멜란타가 창조주의 자취가 사라진 뒤로 오래도록 주민들을 괴롭혀 왔다고 전한다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A13",
-       "wiki_refs": []
+       "page": "Raumhilda",
+       "revision": 2088608,
+       "section": "Profile",
+       "paragraph": "M7",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        },
+        {
+         "type": "quest",
+         "name": "Long Live Life"
+        },
+        {
+         "type": "quest",
+         "name": "Counterfeit Classics"
+        },
+        {
+         "type": "quest",
+         "name": "Unofficial Chronicle of the Desert Pavilion"
+        }
+       ]
       },
       {
        "kind": "quest",
@@ -546,177 +702,67 @@
        "speaker": "Istoria"
       },
       {
-       "kind": "quest",
-       "quest": "Unofficial Chronicle of the Desert Pavilion",
-       "quest_ko": "「모래 위 누각」의 일화",
-       "version": "Luna VI",
-       "speaker": "Istoria"
+       "kind": "wiki",
+       "page": "Zeitlind",
+       "revision": 2088506,
+       "section": "Story > Present time",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": "Story",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Long Live Life"
+        },
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
       }
      ],
-     "heading": "정체와 배경",
+     "heading": "작중 행적 — 라움힐다와 공간의 신전",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — A Long Day in the Mountains",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Istoria is the first Uplifted encountered by the Traveler and Paimon upon arriving in the Temple of Space.",
+     "section": "작중 행적 — Raumhilda와 Temple of Space",
+     "status": "accepted",
+     "note": "All sentences match A5 and M1.",
+     "quote": "Although Istoria pleaded with her not to do this, he ultimately allowed it, later viewing this as an act of cowardice.",
      "sentences": [
       {
-       "t_raw": "Traveler와 Paimon이 Temple of Space에 도착했을 때 처음 만난 Uplifted는 Istoria였다.",
+       "t_raw": "Melanta의 폭정에 신음하는 사람들을 본 Raumhilda는 직접 그를 마주하기로 결심하고, **자신의 기억을 희생해 Path to the Heavens를 만들었다**.",
        "interp": false,
        "dropped": false,
-       "t": "여행자와 페이몬이 공간의 신전에 도착했을 때 처음 만난 Uplifted는 이스토리아였다."
+       "t": "멜란타의 폭정에 신음하는 사람들을 본 라움힐다는 직접 그를 마주하기로 결심하고, **자신의 기억을 희생해 Path to the Heavens를 만들었다**.",
+       "polish": {
+        "from": "멜란타의 폭정에 신음하는 사람들을 본 라움힐다는 직접 그를 마주하기로 결심하고, **자신의 기억을 희생해 Path to the Heavens를 만들었다**.",
+        "text": "멜란타의 폭정에 신음하는 사람들을 본 라움힐다는 직접 그를 마주하기로 결심하고, **자신의 기억을 희생해 Path to the Heavens를 만들었다**.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그는 사원이 Melanta의 폭정에서 벗어나도록 도와 달라고 청한다.",
+       "t_raw": "Istoria는 그만두라고 간청했지만 끝내 이를 허락했고, 뒤에 그 일을 비겁한 행동으로 여겼다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 사원이 멜란타의 폭정에서 벗어나도록 도와 달라고 청한다."
+       "t": "이스토리아는 그만두라고 간청했지만 끝내 이를 허락했고, 뒤에 그 일을 비겁한 행동으로 여겼다."
       },
       {
-       "t_raw": "Melanta의 광기 초기 징후로 많은 이가 고통받던 때가 있었고, Istoria는 누구보다 오래 이곳에 머물며 벌어진 일을 지켜봤다고 말한다.",
+       "t_raw": "기억을 내놓은 Raumhilda는 Atrium of Suchness에서 Melanta와 만났으나 두 사람이 무엇을 논했는지는 알려지지 않았고, 그 뒤 Melanta가 Path의 일부를 파괴하자 Raumhilda는 temple을 떠났다.",
        "interp": false,
        "dropped": false,
-       "t": "멜란타의 광기 초기 징후로 많은 이가 고통받던 때가 있었고, 이스토리아는 누구보다 오래 이곳에 머물며 벌어진 일을 지켜봤다고 말한다."
-      },
-      {
-       "t_raw": "그의 사원 해방 부탁은 오래 쌓인 목격과 맞물린 첫걸음인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그의 사원 해방 부탁은 오래 쌓인 목격과 맞물린 첫걸음인 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Story",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "The Final Judgment",
-       "quest_ko": "최후의 심판",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
-       "quest": "Counterfeit Classics",
-       "quest_ko": "고전 위작",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      }
-     ],
-     "heading": "작중 행적 — A Long Day in the Mountains",
-     "latin_left": [
-      "Uplifted"
-     ]
-    },
-    {
-     "section": "작중 행적 — A Long Day in the Mountains",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Dex uses his abilities to free the trapped people in the temple, fight the Keepers and restore the area.",
-     "sentences": [
-      {
-       "t_raw": "Traveler가 세 구역을 모두 해방하면 Melanta와 맞설 차례가 되고, 그 무대는 Cage of Suchness다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자가 세 구역을 모두 해방하면 멜란타와 맞설 차례가 되고, 그 무대는 비유비무의 굴레다."
-      },
-      {
-       "t_raw": "Nihilita는 Dex를 Traveler에게 맡겨 사원 해방을 돕게 하고, Dex는 갇힌 사람들을 풀고 Keepers와 싸우며 구역을 되돌린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "니힐리타는 오른쪽이를 여행자에게 맡겨 사원 해방을 돕게 하고, 오른쪽이는 갇힌 사람들을 풀고 Keepers와 싸우며 구역을 되돌린다."
-      },
-      {
-       "t_raw": "Paimon이 세 구역이 거의 해방되고 대부분 사람이 안전해졌다고 전하자, Istoria는 Desert Pavilion의 사람들이 본당으로 돌아왔기에 이곳으로 서둘러 왔다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬이 세 구역이 거의 해방되고 대부분 사람이 안전해졌다고 전하자, 이스토리아는 「모래 위 누각」의 사람들이 본당으로 돌아왔기에 이곳으로 서둘러 왔다고 말한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Story",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": "Story",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Unofficial Chronicle of the Desert Pavilion",
-       "quest_ko": "「모래 위 누각」의 일화",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Day the Grand Temple Inscribed with Ages",
-       "quest_ko": "신전의 긴 하루",
-       "version": "Luna VI",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — A Long Day in the Mountains",
-     "latin_left": [
-      "Keepers"
-     ]
-    },
-    {
-     "section": "작중 행적 — A Long Day in the Mountains",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Afterwards, Istoria reveals that Raumhilda had also once been sent to the temple and, upon witnessing the suffering caused by Melanta, chose to confront him herself.",
-     "sentences": [
-      {
-       "t_raw": "세 가지 물건을 되찾은 뒤 Istoria는 Raumhilda가 아직 살아 있을지도 모른다고 보고, Melanta와 맞서는 것만이 사원을 떠나는 길이라고 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "세 가지 물건을 되찾은 뒤 이스토리아는 라움힐다가 아직 살아 있을지도 모른다고 보고, 멜란타와 맞서는 것만이 사원을 떠나는 길이라고 설명한다."
-      },
-      {
-       "t_raw": "그 직후 Traveler, Istoria, Zeitlind, Dex는 **Apathic Interval**에 던져지고, Dex가 Maranasati Casket을 쓰러뜨리고 Deathmuse Shards를 모아 일행을 빼낸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 직후 여행자, 이스토리아, 차이틀린트, 오른쪽이는 **무념무상의 공간**에 던져지고, 오른쪽이가 죽음 명상의 관을 쓰러뜨리고 Deathmuse Shards를 모아 일행을 빼낸다."
-      },
-      {
-       "t_raw": "돌아온 일행은 Paimon만 함께 끌려가지 않았다는 점을 의아해한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "돌아온 일행은 페이몬만 함께 끌려가지 않았다는 점을 의아해한다."
-      },
-      {
-       "t_raw": "이어 Istoria는 Raumhilda 역시 Melanta의 고통을 보고 스스로 그를 만나러 갔으며, 말렸음에도 기억을 포기해 **Path to the Heavens**를 만들고 Atrium of Suchness에서 그를 만난 뒤 사원을 떠났다고 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어 이스토리아는 라움힐다 역시 멜란타의 고통을 보고 스스로 그를 만나러 갔으며, 말렸음에도 기억을 포기해 **Path to the Heavens**를 만들고 「비유비무의 전당」에서 그를 만난 뒤 사원을 떠났다고 밝힌다."
+       "t": "기억을 내놓은 라움힐다는 「비유비무의 전당」에서 멜란타와 만났으나 두 사람이 무엇을 논했는지는 알려지지 않았고, 그 뒤 멜란타가 Path의 일부를 파괴하자 라움힐다는 신전을 떠났다.",
+       "polish": {
+        "from": "기억을 내놓은 라움힐다는 「비유비무의 전당」에서 멜란타와 만났으나 두 사람이 무엇을 논했는지는 알려지지 않았고, 그 뒤 멜란타가 Path의 일부를 파괴하자 라움힐다는 temple을 떠났다.",
+        "text": "기억을 내놓은 라움힐다는 「비유비무의 전당」에서 멜란타와 만났으나 두 사람이 무엇을 논했는지는 알려지지 않았고, 그 뒤 멜란타가 Path의 일부를 파괴하자 라움힐다는 신전을 떠났다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -757,7 +803,141 @@
          "name": "The Final Judgment"
         }
        ]
+      }
+     ],
+     "heading": "작중 행적 — 라움힐다와 공간의 신전",
+     "latin_left": [
+      "Path",
+      "Heavens",
+      "Path"
+     ]
+    },
+    {
+     "section": "작중 행적 — Raumhilda와 Temple of Space",
+     "status": "accepted",
+     "note": "Sentences 0 and 1 are supported by M6 and Q21. Sentence 2 is a reasonable interpretation.",
+     "quote": "The one who gave up every last memory... was your sister, Lind.",
+     "sentences": [
+      {
+       "t_raw": "그 선택은 Zeitlind가 언니의 죽음을 믿고 무덤을 찾아 나선 끝에 Temple of Space에 닿으면서 다시 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 선택은 차이틀린트가 언니의 죽음을 믿고 무덤을 찾아 나선 끝에 공간의 신전에 닿으면서 다시 드러난다."
       },
+      {
+       "t_raw": "Istoria는 그녀에게 **모든 기억을 포기한 사람이 바로 네 언니, Lind**라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이스토리아는 그녀에게 **모든 기억을 포기한 사람이 바로 네 언니, 린드**라고 말한다."
+      },
+      {
+       "t_raw": "죽은 줄로만 알았던 언니의 행적이 이 한마디로 드러난 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "죽은 줄로만 알았던 언니의 행적이 이 한마디로 드러난 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Final Judgment",
+       "quest_ko": "최후의 심판",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      },
+      {
+       "kind": "wiki",
+       "page": "Zeitlind",
+       "revision": 2088506,
+       "section": "Story > Present time",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 라움힐다와 공간의 신전",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — A Long Day in the Mountains",
+     "status": "accepted",
+     "note": "All sentences match A6.",
+     "quote": "During the A Long Day in the Mountains, Istoria is the first Uplifted encountered by the Traveler and Paimon upon arriving in the Temple of Space.",
+     "sentences": [
+      {
+       "t_raw": "A Long Day in the Mountains에서 Istoria는 Traveler와 Paimon이 Temple of Space에 도착한 뒤 처음 만나는 Uplifted다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산속의 긴 하루에서 이스토리아는 여행자와 페이몬이 공간의 신전에 도착한 뒤 처음 만나는 Uplifted다.",
+       "polish": {
+        "from": "A 산속의 긴 하루 in the Mountains에서 이스토리아는 여행자와 페이몬이 공간의 신전에 도착한 뒤 처음 만나는 Uplifted다.",
+        "text": "산속의 긴 하루에서 이스토리아는 여행자와 페이몬이 공간의 신전에 도착한 뒤 처음 만나는 Uplifted다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그는 두 사람에게 Melanta의 폭정에서 temple을 해방시켜 달라고 청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 두 사람에게 멜란타의 폭정에서 신전을 해방시켜 달라고 청한다.",
+       "polish": {
+        "from": "그는 두 사람에게 멜란타의 폭정에서 temple을 해방시켜 달라고 청한다.",
+        "text": "그는 두 사람에게 멜란타의 폭정에서 신전을 해방시켜 달라고 청한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Traveler가 모든 지역을 해방시키자, 일행은 Cage of Suchness에서 Melanta와 맞설 차례를 맞는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 모든 지역을 해방시키자, 일행은 비유비무의 굴레에서 멜란타와 맞설 차례를 맞는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": "Story",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — A 산속의 긴 하루 in the Mountains",
+     "latin_left": [
+      "Uplifted"
+     ]
+    },
+    {
+     "section": "작중 행적 — A Long Day in the Mountains",
+     "status": "accepted",
+     "note": "All sentences match M4.",
+     "quote": "By destroying the Maranasati Caskets and collecting Deathmuse Shards with Dex, they manage to escape without forgoing their desires.",
+     "sentences": [
+      {
+       "t_raw": "여정 중 일행은 Lion's Celerity 무렵 Traveler, Istoria, Zeitlind, 그리고 어린 Watcher인 Dex와 함께 **Apathic Interval**에 갇힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여정 중 일행은 Lion의 Celerity 무렵 여행자, 이스토리아, 차이틀린트, 그리고 어린 Watcher인 오른쪽이와 함께 **무념무상의 공간**에 갇힌다."
+      },
+      {
+       "t_raw": "이곳에서 Dex와 함께 Maranasati Caskets를 부수고 Deathmuse Shards를 모아, 욕망을 포기하지 않은 채 빠져나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이곳에서 오른쪽이와 함께 죽음 명상의 관을 부수고 망각의 조각을 모아, 욕망을 포기하지 않은 채 빠져나온다."
+      },
+      {
+       "t_raw": "Temple of Space로 돌아온 뒤 일행은 Paimon이 함께 끌려가지 않았다는 사실에 의문을 품는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공간의 신전으로 돌아온 뒤 일행은 페이몬이 함께 끌려가지 않았다는 사실에 의문을 품는다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Apathic Interval",
@@ -770,65 +950,60 @@
          "name": "Lion's Celerity"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Dex",
-       "revision": 2088164,
-       "section": "Story",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Lion's Celerity",
-       "quest_ko": "질주하는 사자",
-       "version": "Luna VI",
-       "speaker": "Istoria"
       }
      ],
-     "heading": "작중 행적 — A Long Day in the Mountains",
+     "heading": "작중 행적 — A 산속의 긴 하루 in the Mountains",
      "latin_left": [
-      "Deathmuse Shards",
-      "Path",
-      "Heavens"
+      "Lion",
+      "Celerity",
+      "Watcher"
      ]
     },
     {
      "section": "작중 행적 — A Long Day in the Mountains",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After the Traveler defeats Melanta and frees the Temple of Space of his influence, Istoria implores Dex to remember the kindness the temple's inhabitants have shown him, when he grows up.",
+     "status": "accepted",
+     "note": "All sentences are supported by A6, M3 and Q30.",
+     "quote": "Though Istoria volunteers, Zeitlind ultimately chooses to take on this burden herself.",
      "sentences": [
       {
-       "t_raw": "Melanta와 맞서려면 Path to the Heavens를 다시 세워야 했고, 그 일에는 또 한 번 **기억의 희생**이 필요했다.",
+       "t_raw": "Melanta와의 결전을 앞두고 **Path to the Heavens**를 다시 세우려면 누군가 기억을 희생해야 한다는 점이 드러난다.",
        "interp": false,
        "dropped": false,
-       "t": "멜란타와 맞서려면 Path to the Heavens를 다시 세워야 했고, 그 일에는 또 한 번 **기억의 희생**이 필요했다."
+       "t": "멜란타와의 결전을 앞두고 **Path to the Heavens**를 다시 세우려면 누군가 기억을 희생해야 한다는 점이 드러난다.",
+       "polish": {
+        "from": "멜란타와의 결전을 앞두고 **Path to the Heavens**를 다시 세우려면 누군가 기억을 희생해야 한다는 점이 드러난다.",
+        "text": "멜란타와의 결전을 앞두고 **Path to the Heavens**를 다시 세우려면 누군가 기억을 희생해야 한다는 점이 드러난다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Istoria는 이번에도 자신이 기억을 내놓겠다고 하지만, Traveler와 Zeitlind는 그의 지식이 너무 귀중하다고 설득한다.",
+       "t_raw": "Istoria가 자원하지만, Zeitlind는 그 부담을 자신이 지겠다고 나선다.",
        "interp": false,
        "dropped": false,
-       "t": "이스토리아는 이번에도 자신이 기억을 내놓겠다고 하지만, 여행자와 차이틀린트는 그의 지식이 너무 귀중하다고 설득한다."
+       "t": "이스토리아가 자원하지만, 차이틀린트는 그 부담을 자신이 지겠다고 나선다."
       },
       {
-       "t_raw": "Zeitlind는 Istoria를 존경한다면서도 그가 역사의 고통을 너무 많이 보았다고 말하고, 예전에 자매가 걸었던 같은 길을 따라 자신이 그 부담을 지기로 한다.",
+       "t_raw": "Traveler와 Zeitlind는 Istoria의 지식이 너무 귀중하다며 그를 설득하고, 결국 Zeitlind가 그 대신 Path to the Heavens를 세운다.",
        "interp": false,
        "dropped": false,
-       "t": "차이틀린트는 이스토리아를 존경한다면서도 그가 역사의 고통을 너무 많이 보았다고 말하고, 예전에 자매가 걸었던 같은 길을 따라 자신이 그 부담을 지기로 한다."
+       "t": "여행자와 차이틀린트는 이스토리아의 지식이 너무 귀중하다며 그를 설득하고, 결국 차이틀린트가 그 대신 Path to the Heavens를 세운다.",
+       "polish": {
+        "from": "여행자와 차이틀린트는 이스토리아의 지식이 너무 귀중하다며 그를 설득하고, 결국 차이틀린트가 그 대신 Path to the Heavens를 세운다.",
+        "text": "여행자와 차이틀린트는 이스토리아의 지식이 너무 귀중하다며 그를 설득하고, 결국 차이틀린트가 그 대신 Path to the Heavens를 세운다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Path to the Heavens가 Zeitlind의 손으로 완성되어 일행이 Melanta 앞에 이르고, Traveler가 Melanta를 쓰러뜨려 사원이 그의 영향에서 벗어난다.",
+       "t_raw": "Zeitlind는 자신의 기억이 이곳을 떠나면 빠르게 희미해질 것이라고 이미 Istoria가 말했다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "Path to the Heavens가 차이틀린트의 손으로 완성되어 일행이 멜란타 앞에 이르고, 여행자가 멜란타를 쓰러뜨려 사원이 그의 영향에서 벗어난다."
+       "t": "차이틀린트는 자신의 기억이 이곳을 떠나면 빠르게 희미해질 것이라고 이미 이스토리아가 말했다고 전한다."
       },
       {
-       "t_raw": "그 뒤 Istoria는 Dex에게 자라면서 사원 주민들이 보여준 친절을 기억해 달라고 당부한다.",
+       "t_raw": "그렇게 일행은 Melanta 앞에 이르러 그의 폭정을 끝낸다.",
        "interp": false,
        "dropped": false,
-       "t": "그 뒤 이스토리아는 오른쪽이에게 자라면서 사원 주민들이 보여준 친절을 기억해 달라고 당부한다."
+       "t": "그렇게 일행은 멜란타 앞에 이르러 그의 폭정을 끝낸다."
       }
      ],
      "sources": [
@@ -845,6 +1020,55 @@
         }
        ]
       },
+      {
+       "kind": "wiki",
+       "page": "Zeitlind",
+       "revision": 2088506,
+       "section": "Story > Present time",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Judgment",
+       "quest_ko": "최후의 심판",
+       "version": "Luna VI",
+       "speaker": "Zeitlind"
+      }
+     ],
+     "heading": "작중 행적 — A 산속의 긴 하루 in the Mountains",
+     "latin_left": [
+      "Path",
+      "Heavens",
+      "Path",
+      "Heavens"
+     ]
+    },
+    {
+     "section": "작중 행적 — A Long Day in the Mountains",
+     "status": "accepted",
+     "note": "Supported by A7 and M2.",
+     "quote": "Istoria implores Dex to remember the kindness the temple's inhabitants have shown him, when he grows up.",
+     "sentences": [
+      {
+       "t_raw": "Traveler가 Melanta를 쓰러뜨리고 Temple of Space를 그의 영향에서 해방한 뒤, Istoria는 Dex에게 부탁을 남긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 멜란타를 쓰러뜨리고 공간의 신전을 그의 영향에서 해방한 뒤, 이스토리아는 오른쪽이에게 부탁을 남긴다."
+      },
+      {
+       "t_raw": "Dex가 자라면 Temple of Space의 주민들이 그에게 보여준 친절을 기억해 달라는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오른쪽이가 자라면 공간의 신전의 주민들이 그에게 보여준 친절을 기억해 달라는 것이다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Istoria",
@@ -870,6 +1094,194 @@
          "name": "The Final Judgment"
         }
        ]
+      }
+     ],
+     "heading": "작중 행적 — A 산속의 긴 하루 in the Mountains",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 능력",
+     "status": "accepted",
+     "note": "Facts match Q8, Q11 and Q1. The interpretation is reasonable.",
+     "quote": "The usual way is through meditation — learning to master your mind and thoughts, and then letting go of every desire.",
+     "sentences": [
+      {
+       "t_raw": "Istoria는 정신과 생각을 다스린 뒤 모든 욕망을 내려놓는 명상을 **명상으로 욕망을 놓는 길**로 설명하며, Temple of Space에서는 그러한 욕망이 멈춘다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이스토리아는 정신과 생각을 다스린 뒤 모든 욕망을 내려놓는 명상을 **명상으로 욕망을 놓는 길**로 설명하며, 공간의 신전에서는 그러한 욕망이 멈춘다고 말한다."
+      },
+      {
+       "t_raw": "다만 세계의 운명을 짊어진 Traveler에게는 욕망을 아마 버리지 못할 것이며 버려서도 안 된다고 이야기한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 세계의 운명을 짊어진 여행자에게는 욕망을 아마 버리지 못할 것이며 버려서도 안 된다고 이야기한다."
+      },
+      {
+       "t_raw": "그에게 명상은 일반적인 방법이지만, 상대에 따라 욕망을 놓지 않아야 한다고 말하는 예외를 둔 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그에게 명상은 일반적인 방법이지만, 상대에 따라 욕망을 놓지 않아야 한다고 말하는 예외를 둔 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Lion's Celerity",
+       "quest_ko": "질주하는 사자",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lion's Celerity",
+       "quest_ko": "질주하는 사자",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Day the Grand Temple Inscribed with Ages",
+       "quest_ko": "신전의 긴 하루",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      }
+     ],
+     "heading": "성격과 능력",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 능력",
+     "status": "accepted",
+     "note": "Supported by Q9, Q25 and A3. The interpretation is reasonable.",
+     "quote": "Oh, Istoria's safe too? That's really good to know. He's the most experienced of us all, and is always open to learning new things.",
+     "sentences": [
+      {
+       "t_raw": "Istoria는 Temple of Space에 가장 오래 머문 이로 그동안 일어난 일을 모두 목격했다고 말하고, Kshama는 그를 가장 경험이 많으며 새로운 것을 배우는 데 늘 열려 있는 사람으로 평가한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이스토리아는 공간의 신전에 가장 오래 머문 이로 그동안 일어난 일을 모두 목격했다고 말하고, 크샤마는 그를 가장 경험이 많으며 새로운 것을 배우는 데 늘 열려 있는 사람으로 평가한다."
+      },
+      {
+       "t_raw": "Apathic Interval에서 수백 년을 보내며 진리 탐구를 포기하고 그리운 이들을 동경한 끝에 Temple of Space에 닿은 뒤, 다른 Uplifted와 지식을 주고받아 역사와 잃어버린 문명에 대한 폭넓은 통찰을 쌓았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무념무상의 공간에서 수백 년을 보내며 진리 탐구를 포기하고 그리운 이들을 동경한 끝에 공간의 신전에 닿은 뒤, 다른 Uplifted와 지식을 주고받아 역사와 잃어버린 문명에 대한 폭넓은 통찰을 쌓았다."
+      },
+      {
+       "t_raw": "오래 머문 시간과 배움에 열린 태도가 겹쳐, 그의 지식은 단순한 연륜 이상의 폭을 지닌 **오랜 시간 쌓아 올린 지식**으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오래 머문 시간과 배움에 열린 태도가 겹쳐, 그의 지식은 단순한 연륜 이상의 폭을 지닌 **오랜 시간 쌓아 올린 지식**으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Wind Has Ceased"
+        },
+        {
+         "type": "quest",
+         "name": "Lion's Celerity"
+        },
+        {
+         "type": "quest",
+         "name": "Unofficial Chronicle of the Desert Pavilion"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Counterfeit Classics",
+       "quest_ko": "고전 위작",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "Unofficial Chronicle of the Desert Pavilion",
+       "quest_ko": "「모래 위 누각」의 일화",
+       "version": "Luna VI",
+       "speaker": "Kshama"
+      }
+     ],
+     "heading": "성격과 능력",
+     "latin_left": [
+      "Uplifted"
+     ]
+    },
+    {
+     "section": "성격과 능력",
+     "status": "accepted",
+     "note": "Supported by A5, A6 and M3. The interpretation follows from the cowardice remark.",
+     "quote": "Once again, Istoria offers to give up his memories but the Traveler and Zeitlind convince him that his knowledge is too valuable.",
+     "sentences": [
+      {
+       "t_raw": "Raumhilda가 Path to the Heavens를 위해 기억을 바치려 했을 때 Istoria는 만류했지만 결국 허락했고, 뒤에 그 일을 비겁한 행동으로 여겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라움힐다가 Path to the Heavens를 위해 기억을 바치려 했을 때 이스토리아는 만류했지만 결국 허락했고, 뒤에 그 일을 비겁한 행동으로 여겼다.",
+       "polish": {
+        "from": "라움힐다가 Path to the Heavens를 위해 기억을 바치려 했을 때 이스토리아는 만류했지만 결국 허락했고, 뒤에 그 일을 비겁한 행동으로 여겼다.",
+        "text": "라움힐다가 Path to the Heavens를 위해 기억을 바치려 했을 때 이스토리아는 만류했지만 결국 허락했고, 뒤에 그 일을 비겁한 행동으로 여겼다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Melanta와의 결전을 앞두고 Path to the Heavens를 되살리는 데 다시 기억의 희생이 필요해지자 Istoria는 자신이 기억을 내놓겠다고 나서지만, Traveler와 Zeitlind는 그의 지식이 너무 귀중하다며 만류하고 Zeitlind가 대신 Path to the Heavens를 만든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "멜란타와의 결전을 앞두고 Path to the Heavens를 되살리는 데 다시 기억의 희생이 필요해지자 이스토리아는 자신이 기억을 내놓겠다고 나서지만, 여행자와 차이틀린트는 그의 지식이 너무 귀중하다며 만류하고 차이틀린트가 대신 Path to the Heavens를 만든다.",
+       "polish": {
+        "from": "멜란타와의 결전을 앞두고 Path to the Heavens를 되살리는 데 다시 기억의 희생이 필요해지자 이스토리아는 자신이 기억을 내놓겠다고 나서지만, 여행자와 차이틀린트는 그의 지식이 너무 귀중하다며 만류하고 차이틀린트가 대신 Path to the Heavens를 만든다.",
+        "text": "멜란타와의 결전을 앞두고 Path to the Heavens를 되살리는 데 다시 기억의 희생이 필요해지자 이스토리아는 자신이 기억을 내놓겠다고 나서지만, 여행자와 차이틀린트는 그의 지식이 너무 귀중하다며 만류하고 차이틀린트가 대신 Path to the Heavens를 만든다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "앞서 스스로를 비겁하다 여겼던 그가 이번에는 자기 기억을 내놓으려 한 점은, **기억을 내놓으려는 결심**이 과거의 자기 평가와 맞물린 변화로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "앞서 스스로를 비겁하다 여겼던 그가 이번에는 자기 기억을 내놓으려 한 점은, **기억을 내놓으려는 결심**이 과거의 자기 평가와 맞물린 변화로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": "Story",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Long Live Life"
+        },
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": "Story",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Final Judgment"
+        }
+       ]
       },
       {
        "kind": "wiki",
@@ -883,17 +1295,12 @@
          "name": "The Final Judgment"
         }
        ]
-      },
-      {
-       "kind": "quest",
-       "quest": "A Day the Grand Temple Inscribed with Ages",
-       "quest_ko": "신전의 긴 하루",
-       "version": "Luna VI",
-       "speaker": "Zeitlind"
       }
      ],
-     "heading": "작중 행적 — A Long Day in the Mountains",
+     "heading": "성격과 능력",
      "latin_left": [
+      "Path",
+      "Heavens",
       "Path",
       "Heavens",
       "Path",
@@ -901,213 +1308,22 @@
      ]
     },
     {
-     "section": "작중 행적 — Luna VI의 대화",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Greetings, newcomers. My name is Istoria. I hail from the age when the Dark Dragon King rent the sky open. And you are?",
-     "sentences": [
-      {
-       "t_raw": "A Long Day in the Mountains를 완료한 뒤 만나는 오픈 월드 NPC Istoria는 The Wind Has Ceased에서 자신을 Istoria라 밝히고, **Dark Dragon King**이 하늘을 찢어 열었던 시대에서 왔다고 소개한 뒤 상대가 누구인지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "A Long Day in the Mountains를 완료한 뒤 만나는 오픈 월드 NPC Istoria는 멎은 바람에서 자신을 이스토리아라 밝히고, **Dark Dragon King**이 하늘을 찢어 열었던 시대에서 왔다고 소개한 뒤 상대가 누구인지 묻는다."
-      },
-      {
-       "t_raw": "상대가 현시대 사람임을 알자 그들이 우리를 지원하러 왔다고 받아들이고, 어떤 대상은 더 공식적이고 인상적으로 들리는 이름으로 소개했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "상대가 현시대 사람임을 알자 그들이 우리를 지원하러 왔다고 받아들이고, 어떤 대상은 더 공식적이고 인상적으로 들리는 이름으로 소개했다고 말한다."
-      },
-      {
-       "t_raw": "자신의 시대를 먼저 제시하고 상대의 시대를 확인하자 지원군으로 해석하는 흐름은 그가 대화 상대를 현재의 필요와 연결해 받아들이는 태도로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "자신의 시대를 먼저 제시하고 상대의 시대를 확인하자 지원군으로 해석하는 흐름은 그가 대화 상대를 현재의 필요와 연결해 받아들이는 태도로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Wind Has Ceased",
-       "quest_ko": "멎은 바람",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Wind Has Ceased",
-       "quest_ko": "멎은 바람",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Wind Has Ceased",
-       "quest_ko": "멎은 바람",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      }
-     ],
-     "heading": "작중 행적 — Luna VI의 대화",
-     "latin_left": [
-      "Long Day",
-      "Mountains",
-      "NPC Istoria",
-      "Dark Dragon King"
-     ]
-    },
-    {
-     "section": "작중 행적 — Luna VI의 대화",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Oh, Istoria's safe too? That's really good to know. He's the most experienced of us all, and is always open to learning new things.",
-     "sentences": [
-      {
-       "t_raw": "Counterfeit Classics에서 Calcerius가 Mahavaipulya Chamber에서 여행자가 개입했다고 전하자, Istoria는 일이 이제부터 풀릴 것이라고 본다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고전 위작에서 칼케리우스가 진리의 공간에서 여행자가 개입했다고 전하자, 이스토리아는 일이 이제부터 풀릴 것이라고 본다."
-      },
-      {
-       "t_raw": "Lion's Celerity에서 그는 인간 수명으로 따지면 아주 여러 세대 전에 마지막으로 왔다고 말하고, Kshama는 그도 무사하다는 소식에 안도하며 그를 가장 경험 많고 배우는 데 열려 있는 사람이라고 평한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Lion의 Celerity에서 그는 인간 수명으로 따지면 아주 여러 세대 전에 마지막으로 왔다고 말하고, 크샤마는 그도 무사하다는 소식에 안도하며 그를 가장 경험 많고 배우는 데 열려 있는 사람이라고 평한다."
-      },
-      {
-       "t_raw": "Yu Huangyi는 그가 읽은 뒤 크게 칭찬했고, 실재론이 유명론으로 무너지는 정확한 순간을 포착했다고 그가 말했다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "우황의는 그가 읽은 뒤 크게 칭찬했고, 실재론이 유명론으로 무너지는 정확한 순간을 포착했다고 그가 말했다고 전한다."
-      },
-      {
-       "t_raw": "Calcerius의 전언과 Kshama의 안도, Yu Huangyi의 평가가 각각 전해지는 점은 그가 여러 전시 구역의 소식이 모이는 인물로 보이게 한다.",
-       "interp": true,
-       "dropped": false,
-       "t": "칼케리우스의 전언과 크샤마의 안도, 우황의의 평가가 각각 전해지는 점은 그가 여러 전시 구역의 소식이 모이는 인물로 보이게 한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Counterfeit Classics",
-       "quest_ko": "고전 위작",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
-       "quest": "Lion's Celerity",
-       "quest_ko": "질주하는 사자",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
-       "quest": "Unofficial Chronicle of the Desert Pavilion",
-       "quest_ko": "「모래 위 누각」의 일화",
-       "version": "Luna VI",
-       "speaker": "Kshama"
-      },
-      {
-       "kind": "quest",
-       "quest": "Counterfeit Classics",
-       "quest_ko": "고전 위작",
-       "version": "Luna VI",
-       "speaker": "Yu Huangyi"
-      }
-     ],
-     "heading": "작중 행적 — Luna VI의 대화",
-     "latin_left": [
-      "Lion",
-      "Celerity"
-     ]
-    },
-    {
-     "section": "작중 행적 — Luna VI의 대화",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Then let's call each other whatever we want. I'll call you \"Grandpa Istoria,\" and you can call me \"young Hilda.\"",
-     "sentences": [
-      {
-       "t_raw": "Unofficial Chronicle of the Desert Pavilion에서 그는 상대의 누나와의 친분에 빗대어, 같은 관심사를 가진 상대와 더 친해질 것이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "「모래 위 누각」의 일화에서 그는 상대의 누나와의 친분에 빗대어, 같은 관심사를 가진 상대와 더 친해질 것이라고 말한다."
-      },
-      {
-       "t_raw": "Raumhilda와는 서로 마음대로 부르자며 그를 **Grandpa Istoria**, 그녀를 **young Hilda**라 부르는 사이가 된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라움힐다와는 서로 마음대로 부르자며 그를 **Grandpa Istoria**, 그녀를 **young Hilda**라 부르는 사이가 된다."
-      },
-      {
-       "t_raw": "다른 자리에서는 그가 멋진 그림들을 그린 Maukie에 대해 이야기한 사실이 Paimon의 입을 통해 드러난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다른 자리에서는 그가 멋진 그림들을 그린 마우키에 대해 이야기한 사실이 페이몬의 입을 통해 드러난다."
-      },
-      {
-       "t_raw": "농담 섞인 호칭과 작품 이야기를 주고받는 대화는 그가 주변 인물들과 가까운 관계를 맺고 있음을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "농담 섞인 호칭과 작품 이야기를 주고받는 대화는 그가 주변 인물들과 가까운 관계를 맺고 있음을 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Unofficial Chronicle of the Desert Pavilion",
-       "quest_ko": "「모래 위 누각」의 일화",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Wind Has Ceased",
-       "quest_ko": "멎은 바람",
-       "version": "Luna VI",
-       "speaker": "Raumhilda"
-      },
-      {
-       "kind": "quest",
-       "quest": "Long Live Life",
-       "quest_ko": "삶이여 영원하라",
-       "version": "Luna VI",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — Luna VI의 대화",
-     "latin_left": [
-      "Grandpa Istoria",
-      "Hilda"
-     ]
-    },
-    {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "His teacher, Aristocles, taught him that \"the mind prevails over matter.\"",
+     "status": "accepted",
+     "note": "Supported by A2. The lineage remark is a mild, acceptable interpretation.",
+     "quote": "His teacher, Aristocles, taught him that \"the mind prevails over matter.\" One of Istoria's students was Aberaku, who later went to Delphi Pytho and created the Dainichi Mikoshi.",
      "sentences": [
       {
-       "t_raw": "Istoria의 스승 Aristocles는 그에게 **정신이 물질을 이긴다**고 가르쳤다.",
+       "t_raw": "스승인 Aristocles는 Istoria에게 '정신이 물질을 이긴다'고 가르쳤고, 제자인 Aberaku는 훗날 Delphi Pytho로 가서 Dainichi Mikoshi를 만들었다.",
        "interp": false,
        "dropped": false,
-       "t": "이스토리아의 스승 아리스토클레스는 그에게 **정신이 물질을 이긴다**고 가르쳤다."
+       "t": "스승인 아리스토클레스는 이스토리아에게 '정신이 물질을 이긴다'고 가르쳤고, 제자인 아베라쿠는 훗날 델피 피토로 가서 다이니치 미코시를 만들었다."
       },
       {
-       "t_raw": "제자 Aberaku는 이후 Delphi Pytho로 가서 Dainichi Mikoshi를 만들었다.",
-       "interp": false,
+       "t_raw": "철학자의 계보가 스승과 제자 양쪽으로 이어지는 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "제자 아베라쿠는 이후 델피 피토로 가서 다이니치 미코시를 만들었다."
+       "t": "철학자의 계보가 스승과 제자 양쪽으로 이어지는 셈이다."
       }
      ],
      "sources": [
@@ -1138,27 +1354,38 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported. Sentence 3 is a loose interpretive contrast but adds no new fact.",
      "quote": "Then let's call each other whatever we want. I'll call you \"Grandpa Istoria,\" and you can call me \"young Hilda.\"",
      "sentences": [
       {
-       "t_raw": "Raumhilda는 Temple of Space에서 Istoria와 철학을 토론했고, 서로 'Grandpa Istoria'와 'young Hilda'라 부르자고 했다.",
+       "t_raw": "Raumhilda는 Temple of Space에서 Istoria와 철학을 논했고, 둘은 서로 'Grandpa Istoria'와 'young Hilda'라 부르기로 했다.",
        "interp": false,
        "dropped": false,
-       "t": "라움힐다는 공간의 신전에서 이스토리아와 철학을 토론했고, 서로 'Grandpa Istoria'와 'young Hilda'라 부르자고 했다."
+       "t": "라움힐다는 공간의 신전에서 이스토리아와 철학을 논했고, 둘은 서로 '이스토리아 할아버지'와 'young 라움힐다'라 부르기로 했다."
       },
       {
-       "t_raw": "그녀가 Melanta의 폭정에 맞서 기억을 희생하려 하자 Istoria는 말렸으나 허락했고, 뒤에 그 허락을 비겁함으로 여겼다.",
+       "t_raw": "그녀가 Melanta의 통치 아래 고통을 보고 직접 맞서기 위해 기억을 희생해 Path to the Heavens를 만들려 하자 Istoria는 만류했지만 결국 허락했고, 뒤에 그 일을 비겁함으로 여겼다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀가 멜란타의 폭정에 맞서 기억을 희생하려 하자 이스토리아는 말렸으나 허락했고, 뒤에 그 허락을 비겁함으로 여겼다."
+       "t": "그녀가 멜란타의 통치 아래 고통을 보고 직접 맞서기 위해 기억을 희생해 Path to the Heavens를 만들려 하자 이스토리아는 만류했지만 결국 허락했고, 뒤에 그 일을 비겁함으로 여겼다.",
+       "polish": {
+        "from": "그녀가 멜란타의 통치 아래 고통을 보고 직접 맞서기 위해 기억을 희생해 Path to the Heavens를 만들려 하자 이스토리아는 만류했지만 결국 허락했고, 뒤에 그 일을 비겁함으로 여겼다.",
+        "text": "그녀가 멜란타의 통치 아래 고통을 보고 직접 맞서기 위해 기억을 희생해 Path to the Heavens를 만들려 하자 이스토리아는 만류했지만 결국 허락했고, 뒤에 그 일을 비겁함으로 여겼다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Zeitlind에게는 언니와 같은 관심사 덕에 더 친해지리라고 말했지만, Zeitlind는 그를 존경하면서도 고통을 너무 많이 보았다고 했다.",
+       "t_raw": "Istoria는 Zeitlind에게 같은 관심사를 가졌다며, Zeitlind의 자매인 Raumhilda와의 친구 사이보다 Zeitlind와 자신이 더 친해질 수 있다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "차이틀린트에게는 언니와 같은 관심사 덕에 더 친해지리라고 말했지만, 차이틀린트는 그를 존경하면서도 고통을 너무 많이 보았다고 했다."
+       "t": "이스토리아는 차이틀린트에게 같은 관심사를 가졌다며, 차이틀린트의 자매인 라움힐다와의 친구 사이보다 차이틀린트와 자신이 더 친해질 수 있다고 말한다."
+      },
+      {
+       "t_raw": "그 일을 비겁함으로 여긴 평가와, Zeitlind에게 같은 관심사를 근거로 더 친해지길 기대한 발언이 대비된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 일을 비겁함으로 여긴 평가와, 차이틀린트에게 같은 관심사를 근거로 더 친해지길 기대한 발언이 대비된다."
       }
      ],
      "sources": [
@@ -1178,35 +1405,6 @@
          "name": "The Final Judgment"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Zeitlind",
-       "revision": 2088506,
-       "section": "Story > Present time",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "A Day the Grand Temple Inscribed with Ages"
-        },
-        {
-         "type": "quest",
-         "name": "Lion's Celerity"
-        },
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Zeitlind",
-       "revision": 2088506,
-       "section": "Story > Present time",
-       "paragraph": "M6",
-       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -1250,39 +1448,39 @@
      ],
      "heading": "인간관계",
      "latin_left": [
-      "Grandpa Istoria",
-      "Hilda"
+      "Path",
+      "Heavens"
      ]
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported. Sentence 1 reasonably links Nihilita entrusting Dex to Istoria's remark about Nihilita's eye for people.",
      "quote": "Oh, Istoria's safe too? That's really good to know. He's the most experienced of us all, and is always open to learning new things.",
      "sentences": [
       {
-       "t_raw": "사원이 자유로워진 뒤 Istoria는 Dex에게 자라면 사원 주민들의 친절을 기억해 달라고 당부했다.",
+       "t_raw": "Temple of Space가 Melanta의 영향에서 벗어난 뒤 Istoria는 Dex에게 자라서도 Temple of Space의 주민들이 보인 친절을 기억해 달라고 부탁한다.",
        "interp": false,
        "dropped": false,
-       "t": "사원이 자유로워진 뒤 이스토리아는 오른쪽이에게 자라면 사원 주민들의 친절을 기억해 달라고 당부했다."
+       "t": "공간의 신전이 멜란타의 영향에서 벗어난 뒤 이스토리아는 오른쪽이에게 자라서도 공간의 신전의 주민들이 보인 친절을 기억해 달라고 부탁한다."
       },
       {
-       "t_raw": "Kshama는 그를 **가장 경험이 많은 사람**이자 새로운 것을 배우는 데 열린 사람으로 평가했다.",
-       "interp": false,
+       "t_raw": "Nihilita는 Dex를 Traveler에게 맡겼고, Istoria가 Nihilita에게 사람을 보는 눈이 있다고 말한 것은 그 판단을 높이 산 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "크샤마는 그를 **가장 경험이 많은 사람**이자 새로운 것을 배우는 데 열린 사람으로 평가했다."
+       "t": "니힐리타는 오른쪽이를 여행자에게 맡겼고, 이스토리아가 니힐리타에게 사람을 보는 눈이 있다고 말한 것은 그 판단을 높이 산 셈이다."
       },
       {
-       "t_raw": "Paimon은 Istoria와 Josephus가 중앙 홀에서 기다리며 지식이 많다고 보았다.",
+       "t_raw": "Istoria는 다른 Uplifted와 지식을 주고받으며 역사와 잃어버린 문명에 대한 통찰을 쌓았고, Kshama는 그를 가장 경험이 많고 새로운 것을 배우는 데 열려 있다고 평한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 이스토리아와 요세푸스가 중앙 홀에서 기다리며 지식이 많다고 보았다."
+       "t": "이스토리아는 다른 Uplifted와 지식을 주고받으며 역사와 잃어버린 문명에 대한 통찰을 쌓았고, 크샤마는 그를 가장 경험이 많고 새로운 것을 배우는 데 열려 있다고 평한다."
       },
       {
-       "t_raw": "Istoria는 Daozi의 말을 듣고 Luyang Academy에 온 Traveler에게 Nihilita의 사람 보는 눈을 칭찬했다.",
+       "t_raw": "Paimon은 Istoria와 Josephus가 해박해 보인다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "이스토리아는 도자의 말을 듣고 녹양 서원에 온 여행자에게 니힐리타의 사람 보는 눈을 칭찬했다."
+       "t": "페이몬은 이스토리아와 요세푸스가 해박해 보인다고 말한다."
       }
      ],
      "sources": [
@@ -1304,13 +1502,8 @@
        "page": "Dex",
        "revision": 2088164,
        "section": "Story",
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
+       "paragraph": "M5",
+       "wiki_refs": []
       },
       {
        "kind": "quest",
@@ -1320,11 +1513,25 @@
        "speaker": "Istoria"
       },
       {
-       "kind": "quest",
-       "quest": "Long Live Life",
-       "quest_ko": "삶이여 영원하라",
-       "version": "Luna VI",
-       "speaker": "Istoria"
+       "kind": "wiki",
+       "page": "Istoria",
+       "revision": 2088140,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Wind Has Ceased"
+        },
+        {
+         "type": "quest",
+         "name": "Lion's Celerity"
+        },
+        {
+         "type": "quest",
+         "name": "Unofficial Chronicle of the Desert Pavilion"
+        }
+       ]
       },
       {
        "kind": "quest",
@@ -1342,25 +1549,32 @@
       }
      ],
      "heading": "인간관계",
-     "latin_left": []
+     "latin_left": [
+      "Uplifted"
+     ]
     },
     {
-     "section": "능력과 지식",
-     "status": "needs_verify",
-     "note": null,
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Facts match A3 and Q9. The interpretation adds no new fact.",
      "quote": "It's true that I've been here longer than anyone else, and I have witnessed all that has transpired. Unfortunately...",
      "sentences": [
       {
-       "t_raw": "Istoria는 Temple of Space에 살아 있는 기억으로 보존된 초기 Uplifted 중 하나로, Apathic Interval에서 수백 년을 갇혀 지낸 뒤 사원에 도착해 다른 Uplifted와 지식을 주고받으며 역사와 사라진 문명에 관한 통찰을 쌓았다.",
+       "t_raw": "Istoria는 Temple of Space로 uplift되어 살아 있는 기억으로 보존된 첫 이들 가운데 하나이며, Apathic Interval에서 수백 년을 갇혀 진리 추구를 포기하고 그리운 이들을 갈망한 뒤에야 Temple of Space에 도착했다.",
        "interp": false,
        "dropped": false,
-       "t": "이스토리아는 공간의 신전에 살아 있는 기억으로 보존된 초기 Uplifted 중 하나로, 무념무상의 공간에서 수백 년을 갇혀 지낸 뒤 사원에 도착해 다른 Uplifted와 지식을 주고받으며 역사와 사라진 문명에 관한 통찰을 쌓았다."
+       "t": "이스토리아는 공간의 신전으로 승천되어 살아 있는 기억으로 보존된 첫 이들 가운데 하나이며, 무념무상의 공간에서 수백 년을 갇혀 진리 추구를 포기하고 그리운 이들을 갈망한 뒤에야 공간의 신전에 도착했다.",
+       "polish": {
+        "from": "이스토리아는 공간의 신전으로 uplift되어 살아 있는 기억으로 보존된 첫 이들 가운데 하나이며, 무념무상의 공간에서 수백 년을 갇혀 진리 추구를 포기하고 그리운 이들을 갈망한 뒤에야 공간의 신전에 도착했다.",
+        "text": "이스토리아는 공간의 신전으로 승천되어 살아 있는 기억으로 보존된 첫 이들 가운데 하나이며, 무념무상의 공간에서 수백 년을 갇혀 진리 추구를 포기하고 그리운 이들을 갈망한 뒤에야 공간의 신전에 도착했다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그는 누구보다 오래 머물며 일어난 일을 목격했다고 말하고, Kshama는 그를 가장 경험 많고 새로운 것을 배우는 데 열린 인물로 평가한다.",
-       "interp": false,
+       "t_raw": "그가 이곳에 오래 머물며 일어난 일을 목격했다는 말은 **Apathic Interval에서 보낸 세월**과 Temple of Space에서 다른 Uplifted들과 지식을 주고받은 경험을 함께 견주게 한다.",
+       "interp": true,
        "dropped": false,
-       "t": "그는 누구보다 오래 머물며 일어난 일을 목격했다고 말하고, 크샤마는 그를 가장 경험 많고 새로운 것을 배우는 데 열린 인물로 평가한다."
+       "t": "그가 이곳에 오래 머물며 일어난 일을 목격했다는 말은 **무념무상의 공간에서 보낸 세월**과 공간의 신전에서 다른 Uplifted들과 지식을 주고받은 경험을 함께 견주게 한다."
       }
      ],
      "sources": [
@@ -1391,304 +1605,44 @@
        "quest_ko": "고전 위작",
        "version": "Luna VI",
        "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
-       "quest": "Unofficial Chronicle of the Desert Pavilion",
-       "quest_ko": "「모래 위 누각」의 일화",
-       "version": "Luna VI",
-       "speaker": "Kshama"
       }
      ],
-     "heading": "능력과 지식",
+     "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Uplifted",
       "Uplifted"
      ]
     },
     {
-     "section": "능력과 지식",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Istoria spoke very highly of it after his read. He said it captured the precise moment when realism collapsed into nominalism.",
-     "sentences": [
-      {
-       "t_raw": "그는 명상으로 마음과 생각을 다스린 뒤 모든 욕망을 놓는 길을 보통 방식으로 들고, Yu Huangyi는 그가 “realism collapsed into nominalism”의 정확한 순간을 포착한 글을 높이 평가했다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 명상으로 마음과 생각을 다스린 뒤 모든 욕망을 놓는 길을 보통 방식으로 들고, 우황의는 그가 “realism collapsed into nominalism”의 정확한 순간을 포착한 글을 높이 평가했다고 전한다."
-      },
-      {
-       "t_raw": "자기 수양을 말하면서도 새 글에서 배우는 태도가 드러나, 그의 철학적 대화는 확신을 늘어놓기보다 배움을 이어가는 방식에 가깝다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "자기 수양을 말하면서도 새 글에서 배우는 태도가 드러나, 그의 철학적 대화는 확신을 늘어놓기보다 배움을 이어가는 방식에 가깝다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Lion's Celerity",
-       "quest_ko": "질주하는 사자",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "quest",
-       "quest": "Counterfeit Classics",
-       "quest_ko": "고전 위작",
-       "version": "Luna VI",
-       "speaker": "Yu Huangyi"
-      }
-     ],
-     "heading": "능력과 지식",
-     "latin_left": []
-    },
-    {
-     "section": "능력과 지식",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Like the relationship between mass and energy, or the definition of certain cosmic laws in bounded sectors...",
-     "sentences": [
-      {
-       "t_raw": "그는 Melanta와 맞서는 것이 사원을 떠나는 유일한 길이고 Path to the Heavens의 복원에는 기억 희생이 필요함을 알고 있었으며, 그 희생을 자원했다가 지식이 귀하다는 만류를 받고 Zeitlind가 대신 길을 만들었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 멜란타와 맞서는 것이 사원을 떠나는 유일한 길이고 Path to the Heavens의 복원에는 기억 희생이 필요함을 알고 있었으며, 그 희생을 자원했다가 지식이 귀하다는 만류를 받고 차이틀린트가 대신 길을 만들었다."
-      },
-      {
-       "t_raw": "시간에 묻힌 비밀을 묻는 이에게는 더 구체적인 질문이 기억을 돕는다며 질량과 에너지의 관계, 유계 구역의 우주 법칙 정의를 예로 든다.",
-       "interp": false,
-       "dropped": false,
-       "t": "시간에 묻힌 비밀을 묻는 이에게는 더 구체적인 질문이 기억을 돕는다며 질량과 에너지의 관계, 유계 구역의 우주 법칙 정의를 예로 든다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Zeitlind",
-       "revision": 2088506,
-       "section": "Story > Present time",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "A Day the Grand Temple Inscribed with Ages"
-        },
-        {
-         "type": "quest",
-         "name": "Lion's Celerity"
-        },
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Zeitlind",
-       "revision": 2088506,
-       "section": "Story > Present time",
-       "paragraph": "M3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Story",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A24",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A25",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A27",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "능력과 지식",
-     "latin_left": [
-      "Path",
-      "Heavens"
-     ]
-    },
-    {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The gods had meant for it to be an exhibition hall for the conservation of fallen civilizations...",
+     "status": "accepted",
+     "note": "Matches M4.",
+     "quote": "Upon returning to the Temple of Space, they are puzzled to find that Paimon was not drawn into the Interval with them.",
      "sentences": [
       {
-       "t_raw": "신들은 이곳을 몰락한 문명을 보존하는 전시관으로 삼으려 했다.",
+       "t_raw": "Lion's Celerity 때 Traveler, Istoria, Zeitlind, juvenile Watcher인 Dex가 Apathic Interval에 던져졌고, 일행은 Dex와 함께 Maranasati Caskets를 파괴하고 Deathmuse Shards를 모아 욕망을 포기하지 않고 빠져나왔다.",
        "interp": false,
        "dropped": false,
-       "t": "신들은 이곳을 몰락한 문명을 보존하는 전시관으로 삼으려 했다."
+       "t": "Lion의 Celerity 때 여행자, 이스토리아, 차이틀린트, 어린 Watcher인 오른쪽이가 무념무상의 공간에 던져졌고, 일행은 오른쪽이와 함께 죽음 명상의 관을 파괴하고 망각의 조각을 모아 욕망을 포기하지 않고 빠져나왔다.",
+       "polish": {
+        "from": "Lion의 Celerity 때 여행자, 이스토리아, 차이틀린트, juvenile Watcher인 오른쪽이가 무념무상의 공간에 던져졌고, 일행은 오른쪽이와 함께 죽음 명상의 관을 파괴하고 망각의 조각을 모아 욕망을 포기하지 않고 빠져나왔다.",
+        "text": "Lion의 Celerity 때 여행자, 이스토리아, 차이틀린트, 어린 Watcher인 오른쪽이가 무념무상의 공간에 던져졌고, 일행은 오른쪽이와 함께 죽음 명상의 관을 파괴하고 망각의 조각을 모아 욕망을 포기하지 않고 빠져나왔다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그러나 그 위대한 신의 자매들은 흥미롭다고 여긴 것을 닥치는 대로 이곳에 넣었다.",
+       "t_raw": "Temple of Space로 돌아온 뒤 일행은 Paimon이 함께 끌려가지 않은 일에 의아해했다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 그 위대한 신의 자매들은 흥미롭다고 여긴 것을 닥치는 대로 이곳에 넣었다."
+       "t": "공간의 신전으로 돌아온 뒤 일행은 페이몬이 함께 끌려가지 않은 일에 의아해했다."
       },
       {
-       "t_raw": "그래서 수집품은 다소 잡다하게 보일 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그래서 수집품은 다소 잡다하게 보일 수 있다."
-      },
-      {
-       "t_raw": "보존 전시관이라는 본래 구상과 자매들의 임의 수집이 겹쳐 잡다한 구성이 생겼다고 볼 수 있다.",
+       "t_raw": "Paimon이 함께 끌려가지 않은 일은 일행의 **의아함**과 함께 남은 수수께끼로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "보존 전시관이라는 본래 구상과 자매들의 임의 수집이 겹쳐 잡다한 구성이 생겼다고 볼 수 있다."
+       "t": "페이몬이 함께 끌려가지 않은 일은 일행의 **의아함**과 함께 남은 수수께끼로 보인다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A13",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "By destroying the Maranasati Caskets and collecting Deathmuse Shards with Dex, they manage to escape without forgoing their desires.",
-     "sentences": [
-      {
-       "t_raw": "Path to the Heavens를 세우려면 기억의 희생이 필요했고, Raumhilda가 먼저 그 길을 택했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Path to the Heavens를 세우려면 기억의 희생이 필요했고, 라움힐다가 먼저 그 길을 택했다."
-      },
-      {
-       "t_raw": "Istoria는 만류했으나 허락했고, 뒤에는 그 일을 비겁한 처사로 여겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이스토리아는 만류했으나 허락했고, 뒤에는 그 일을 비겁한 처사로 여겼다."
-      },
-      {
-       "t_raw": "Path to the Heavens를 복원할 때에도 Istoria가 자원했지만 Zeitlind가 부담을 지고 누나의 길을 따랐다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Path to the Heavens를 복원할 때에도 이스토리아가 자원했지만 차이틀린트가 부담을 지고 누나의 길을 따랐다."
-      },
-      {
-       "t_raw": "이곳을 떠나면 Zeitlind의 기억이 빠르게 흐려질 뿐이라고 Istoria는 말해 두었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이곳을 떠나면 차이틀린트의 기억이 빠르게 흐려질 뿐이라고 이스토리아는 말해 두었다."
-      },
-      {
-       "t_raw": "Lion's Celerity 때 Traveler, Istoria, Zeitlind, Dex는 Apathic Interval에 떨어졌으나, Dex와 함께 Maranasati Caskets를 부수고 Deathmuse Shards를 모아 욕망을 포기하지 않고 빠져나왔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Lion의 Celerity 때 여행자, 이스토리아, 차이틀린트, 오른쪽이는 무념무상의 공간에 떨어졌으나, 오른쪽이와 함께 죽음 명상의 관을 부수고 Deathmuse Shards를 모아 욕망을 포기하지 않고 빠져나왔다."
-      },
-      {
-       "t_raw": "Paimon이 함께 끌려가지 않았다는 점은 의아하게 남는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬이 함께 끌려가지 않았다는 점은 의아하게 남는다."
-      },
-      {
-       "t_raw": "Path to the Heavens가 기억의 희생을 조건으로 삼은 것과 달리, Apathic Interval 탈출은 Maranasati Caskets와 Deathmuse Shards를 통한 별도 조건으로 풀린 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "Path to the Heavens가 기억의 희생을 조건으로 삼은 것과 달리, 무념무상의 공간 탈출은 죽음 명상의 관과 Deathmuse Shards를 통한 별도 조건으로 풀린 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Story",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Long Live Life"
-        },
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Zeitlind",
-       "revision": 2088506,
-       "section": "Story > Present time",
-       "paragraph": "M3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Final Judgment"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "The Final Judgment",
-       "quest_ko": "최후의 심판",
-       "version": "Luna VI",
-       "speaker": "Zeitlind"
-      },
       {
        "kind": "wiki",
        "page": "Apathic Interval",
@@ -1705,48 +1659,35 @@
      ],
      "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Path",
-      "Heavens",
-      "Path",
-      "Heavens",
       "Lion",
       "Celerity",
-      "Deathmuse Shards",
-      "Path",
-      "Heavens",
-      "Deathmuse Shards"
+      "Watcher"
      ]
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Of course, I speak of pathological melancholy, not the sort The One above feels when gazing upon on our suffering.",
+     "status": "accepted",
+     "note": "Matches Q19 and Q24. The open-question reading is fair.",
+     "quote": "As such, I introduced it using the more official, more impressive-sounding name.",
      "sentences": [
       {
-       "t_raw": "그는 Melanta와 Nihilita라는 이름이 무슨 뜻인지 묻는다.",
+       "t_raw": "Istoria는 무엇인가를 더 공식적이고 더 인상적으로 들리는 이름으로 소개했다고 말하고, Melanta와 Nihilita라는 이름이 무슨 뜻인지 아는지 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 멜란타와 니힐리타라는 이름이 무슨 뜻인지 묻는다."
+       "t": "이스토리아는 무엇인가를 더 공식적이고 더 인상적으로 들리는 이름으로 소개했다고 말하고, 멜란타와 니힐리타라는 이름이 무슨 뜻인지 아는지 묻는다."
       },
       {
-       "t_raw": "또 병적인 우울을 말하며, 그것이 우리의 고통을 바라보는 The One above가 느끼는 감정과는 다르다고 구분한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "또 병적인 우울을 말하며, 그것이 우리의 고통을 바라보는 The One above가 느끼는 감정과는 다르다고 구분한다."
-      },
-      {
-       "t_raw": "두 이름의 뜻을 묻는 물음과 고통에 대한 구분이 함께 남아, 이름의 의미가 그 고통과 어떻게 이어지는지는 풀리지 않은 물음으로 보인다.",
+       "t_raw": "그가 소개한 더 공식적인 이름이 무엇을 가리키는지, 두 이름의 의미가 무엇인지는 **남아 있는 물음**으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "두 이름의 뜻을 묻는 물음과 고통에 대한 구분이 함께 남아, 이름의 의미가 그 고통과 어떻게 이어지는지는 풀리지 않은 물음으로 보인다."
+       "t": "그가 소개한 더 공식적인 이름이 무엇을 가리키는지, 두 이름의 의미가 무엇인지는 **남아 있는 물음**으로 보인다."
       }
      ],
      "sources": [
       {
        "kind": "quest",
-       "quest": "Unofficial Chronicle of the Desert Pavilion",
-       "quest_ko": "「모래 위 누각」의 일화",
+       "quest": "The Wind Has Ceased",
+       "quest_ko": "멎은 바람",
        "version": "Luna VI",
        "speaker": "Istoria"
       },
@@ -1759,44 +1700,28 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "The One"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Istoria is a tall, fair-skinned man with long brown hair. He wears a toga made of layers of white and dark blue fabric.",
+     "status": "accepted",
+     "note": "Matches the appearance description in A4.",
+     "quote": "He wears a toga made of layers of white and dark blue fabric.",
      "sentences": [
       {
-       "t_raw": "Istoria는 A Long Day in the Mountains을 마친 뒤 만날 수 있는 **오픈 월드 NPC**다.",
+       "t_raw": "Istoria는 키가 크고 피부가 밝은 남성으로, 긴 갈색 머리를 하고 있다.",
        "interp": false,
        "dropped": false,
-       "t": "이스토리아는 A Long Day in the Mountains을 마친 뒤 만날 수 있는 **오픈 월드 NPC**다."
+       "t": "이스토리아는 키가 크고 피부가 밝은 남성으로, 긴 갈색 머리를 하고 있다."
       },
       {
-       "t_raw": "키가 크고 피부가 밝으며 긴 갈색 머리를 한 남성으로, 하양과 짙은 남색 천을 여러 겹 겹친 **토가**에 금색 장식과 몸통을 감는 끈을 두르고 있다.",
+       "t_raw": "흰색과 짙은 남색 천을 겹친 토가에 금색 장식과 몸통을 감싸는 끈을 더했고, 검은색과 금색 샌들, 월계관을 착용한다.",
        "interp": false,
        "dropped": false,
-       "t": "키가 크고 피부가 밝으며 긴 갈색 머리를 한 남성으로, 하양과 짙은 남색 천을 여러 겹 겹친 **토가**에 금색 장식과 몸통을 감는 끈을 두르고 있다."
-      },
-      {
-       "t_raw": "발에는 검은색과 금색 샌들을 신고 월계관을 쓰고 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "발에는 검은색과 금색 샌들을 신고 월계관을 쓰고 있다."
+       "t": "흰색과 짙은 남색 천을 겹친 토가에 금색 장식과 몸통을 감싸는 끈을 더했고, 검은색과 금색 샌들, 월계관을 착용한다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Istoria",
@@ -1807,56 +1732,65 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Long Day",
-      "Mountains",
-      "NPC"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Greetings, newcomers. My name is Istoria. I hail from the age when the Dark Dragon King rent the sky open. And you are?",
+     "status": "accepted",
+     "note": "All sentences are supported by Q6, Q20, Q26, Q27. Sentence 3 is a reasonable interpretation.",
+     "quote": "Then let's call each other whatever we want. I'll call you \"Grandpa Istoria,\" and you can call me \"young Hilda.\"",
      "sentences": [
       {
-       "t_raw": "새로 온 이들에게는 자신의 이름을 밝히고 Dark Dragon King이 하늘을 찢던 시대에서 왔다고 소개한다.",
+       "t_raw": "Raumhilda는 서로 원하는 대로 부르자며, 자신은 Istoria를 **Grandpa Istoria**라 부르고 Istoria는 자신을 **young Hilda**라 부르자고 제안했다.",
        "interp": false,
        "dropped": false,
-       "t": "새로 온 이들에게는 자신의 이름을 밝히고 Dark Dragon King이 하늘을 찢던 시대에서 왔다고 소개한다."
+       "t": "라움힐다는 서로 원하는 대로 부르자며, 자신은 이스토리아를 **이스토리아 할아버지**라 부르고 이스토리아는 자신을 **젊은 라움힐다**라 부르자고 제안했다.",
+       "polish": {
+        "from": "라움힐다는 서로 원하는 대로 부르자며, 자신은 이스토리아를 **이스토리아 할아버지**라 부르고 이스토리아는 자신을 **young 라움힐다**라 부르자고 제안했다.",
+        "text": "라움힐다는 서로 원하는 대로 부르자며, 자신은 이스토리아를 **이스토리아 할아버지**라 부르고 이스토리아는 자신을 **젊은 라움힐다**라 부르자고 제안했다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Raumhilda는 서로 마음대로 부르자며 그를 'Grandpa Istoria'라 불렀고, 자신은 'young Hilda'라 불러 달라고 했다.",
+       "t_raw": "Istoria는 Luyang Academy에 무엇이 내려왔는지 묻고, Daozi가 Traveler의 도착을 알리자 함께 왔다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "라움힐다는 서로 마음대로 부르자며 그를 'Grandpa Istoria'라 불렀고, 자신은 'young Hilda'라 불러 달라고 했다."
+       "t": "이스토리아는 녹양 서원에 무엇이 내려왔는지 묻고, 도자가 여행자의 도착을 알리자 함께 왔다고 한다."
       },
       {
-       "t_raw": "마지막으로 왔을 때가 인간 수명 기준으로 아주 여러 세대 전쯤일 것이라고 말한다.",
+       "t_raw": "Yu Huangyi는 Istoria가 읽은 뒤 그 글을 높이 평가했으며, 그 글이 리얼리즘이 유명론으로 붕괴하던 정확한 순간을 포착했다고 Istoria가 말했다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "마지막으로 왔을 때가 인간 수명 기준으로 아주 여러 세대 전쯤일 것이라고 말한다."
+       "t": "우황의는 이스토리아가 읽은 뒤 그 글을 높이 평가했으며, 그 글이 리얼리즘이 유명론으로 붕괴하던 정확한 순간을 포착했다고 이스토리아가 말했다고 전한다."
       },
       {
-       "t_raw": "Bosch는 Istoria에게 들은 이야기를 바탕으로 'The Mortal Paradise'를 그렸고, Istoria는 그 그림이 느낌을 정확히 붙잡았다고 말한다.",
-       "interp": false,
+       "t_raw": "이런 대화는 그가 주변의 소식에 관심을 두는 모습으로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "보스는 이스토리아에게 들은 이야기를 바탕으로 'The Mortal Paradise'를 그렸고, 이스토리아는 그 그림이 느낌을 정확히 붙잡았다고 말한다."
-      },
-      {
-       "t_raw": "작별 인사로 다시 보자는 말을 건네면, Istoria는 같은 인사를 되돌려주며 문자 그대로 늘 여기 있을 것이라고 덧붙인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "작별 인사로 다시 보자는 말을 건네면, 이스토리아는 같은 인사를 되돌려주며 문자 그대로 늘 여기 있을 것이라고 덧붙인다."
+       "t": "이런 대화는 그가 주변의 소식에 관심을 두는 모습으로 보인다."
       }
      ],
      "sources": [
       {
        "kind": "quest",
-       "quest": "The Wind Has Ceased",
-       "quest_ko": "멎은 바람",
+       "quest": "Long Live Life",
+       "quest_ko": "삶이여 영원하라",
        "version": "Luna VI",
        "speaker": "Istoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "Long Live Life",
+       "quest_ko": "삶이여 영원하라",
+       "version": "Luna VI",
+       "speaker": "Istoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "Counterfeit Classics",
+       "quest_ko": "고전 위작",
+       "version": "Luna VI",
+       "speaker": "Yu Huangyi"
       },
       {
        "kind": "quest",
@@ -1864,54 +1798,18 @@
        "quest_ko": "멎은 바람",
        "version": "Luna VI",
        "speaker": "Raumhilda"
-      },
-      {
-       "kind": "quest",
-       "quest": "Lion's Celerity",
-       "quest_ko": "질주하는 사자",
-       "version": "Luna VI",
-       "speaker": "Istoria"
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A23",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A28",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Istoria",
-       "revision": 2088140,
-       "section": "Dialogue",
-       "paragraph": "A29",
-       "wiki_refs": []
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Dark Dragon King",
-      "Grandpa Istoria",
-      "Hilda",
-      "The Mortal Paradise"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "안녕하세요, 새로 오신 분들. 제 이름은 Istoria입니다. 저는 Dark Dragon King이 하늘을 찢은 시대에서 왔습니다. 그쪽은 누구십니까?",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "안녕하신가, 새로운 이들이여. 내 이름은 Istoria이다. 나는 Dark Dragon King이 하늘을 찢어버린 시대에서 왔다. 그런데 너희는?",
      "en": "Greetings, newcomers. My name is Istoria. I hail from the age when the Dark Dragon King rent the sky open. And you are?",
      "speaker": "Istoria",
      "source": {
@@ -1921,14 +1819,14 @@
       "version": "Luna VI",
       "speaker": "Istoria"
      },
-     "t": "안녕하세요, 새로 오신 분들. 제 이름은 이스토리아입니다. 저는 Dark Dragon King이 하늘을 찢은 시대에서 왔습니다. 그쪽은 누구십니까?",
+     "t": "안녕하신가, 새로운 이들이여. 내 이름은 이스토리아이다. 나는 Dark Dragon King이 하늘을 찢어버린 시대에서 왔다. 그런데 너희는?",
      "speaker_ko": "이스토리아"
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "안녕하세요, 새로 오신 분들. 제 이름은 Istoria입니다. 저는 Dark Dragon King이 하늘을 찢어 열었던 시대에서 왔습니다. 그런데 당신들은 누구십니까?",
+     "status": "accepted",
+     "note": "Faithful translation, with a more archaic register.",
+     "t_raw": "반갑네, 새로 온 이들이여. 내 이름은 Istoria라 하네. 나는 Dark Dragon King이 하늘을 찢었던 시대에서 왔지. 그쪽은 누구신가?",
      "en": "Greetings, newcomers. My name is Istoria. I hail from the age when the Dark Dragon King rent the sky open. And you are?",
      "speaker": "Istoria",
      "source": {
@@ -1938,15 +1836,49 @@
       "version": "Luna VI",
       "speaker": "Istoria"
      },
-     "t": "안녕하세요, 새로 오신 분들. 제 이름은 이스토리아입니다. 저는 Dark Dragon King이 하늘을 찢어 열었던 시대에서 왔습니다. 그런데 당신들은 누구십니까?",
+     "t": "반갑네, 새로 온 이들이여. 내 이름은 이스토리아라 하네. 나는 Dark Dragon King이 하늘을 찢었던 시대에서 왔지. 그쪽은 누구신가?",
+     "speaker_ko": "이스토리아"
+    },
+    {
+     "section": "작중 행적 — Raumhilda와 Temple of Space",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "모든 기억을 포기한 사람은... 네 언니, Lind였어.",
+     "en": "The one who gave up every last memory... was your sister, Lind.",
+     "speaker": "Istoria",
+     "source": {
+      "kind": "quest",
+      "quest": "The Final Judgment",
+      "quest_ko": "최후의 심판",
+      "version": "Luna VI",
+      "speaker": "Istoria"
+     },
+     "t": "모든 기억을 포기한 사람은... 네 언니, 린드였어.",
      "speaker_ko": "이스토리아"
     },
     {
      "section": "작중 행적 — A Long Day in the Mountains",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "우리 모두 Apathic Interval로 다시 던져진 모양이다.",
-     "en": "Looks like we've all been cast back into the Apathic Interval.",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "이봐, Istoria가 이미 말했잖아, 내 기억은 우리가 이곳을 떠나면 금방 희미해질 거라고.",
+     "en": "Hey, Istoria already said my memories will only fade quickly once we leave this place.",
+     "speaker": "Zeitlind",
+     "source": {
+      "kind": "quest",
+      "quest": "The Final Judgment",
+      "quest_ko": "최후의 심판",
+      "version": "Luna VI",
+      "speaker": "Zeitlind"
+     },
+     "t": "이봐, 이스토리아가 이미 말했잖아, 내 기억은 우리가 이곳을 떠나면 금방 희미해질 거라고.",
+     "speaker_ko": "차이틀린트"
+    },
+    {
+     "section": "성격과 능력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "보통의 방법은 명상을 통하는 것이다 — 자신의 정신과 생각을 다스리는 법을 배우고, 그런 다음 모든 욕망을 내려놓는 것이다.",
+     "en": "The usual way is through meditation — learning to master your mind and thoughts, and then letting go of every desire.",
      "speaker": "Istoria",
      "source": {
       "kind": "quest",
@@ -1955,31 +1887,14 @@
       "version": "Luna VI",
       "speaker": "Istoria"
      },
-     "t": "우리 모두 무념무상의 공간으로 다시 던져진 모양이다.",
-     "speaker_ko": "이스토리아"
-    },
-    {
-     "section": "작중 행적 — Luna VI의 대화",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "반갑다, 새로 온 이들이여. 내 이름은 Istoria다. 나는 Dark Dragon King이 하늘을 찢어 열었던 시대에서 왔다. 그대들은 누구인가?",
-     "en": "Greetings, newcomers. My name is Istoria. I hail from the age when the Dark Dragon King rent the sky open. And you are?",
-     "speaker": "Istoria",
-     "source": {
-      "kind": "quest",
-      "quest": "The Wind Has Ceased",
-      "quest_ko": "멎은 바람",
-      "version": "Luna VI",
-      "speaker": "Istoria"
-     },
-     "t": "반갑다, 새로 온 이들이여. 내 이름은 이스토리아다. 나는 Dark Dragon King이 하늘을 찢어 열었던 시대에서 왔다. 그대들은 누구인가?",
+     "t": "보통의 방법은 명상을 통하는 것이다 — 자신의 정신과 생각을 다스리는 법을 배우고, 그런 다음 모든 욕망을 내려놓는 것이다.",
      "speaker_ko": "이스토리아"
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그럼 서로 마음대로 부르자. 나는 너를 'Grandpa Istoria'라고 부르고, 너는 나를 'young Hilda'라고 부르면 된다.",
+     "status": "accepted",
+     "note": "Faithful translation of Raumhilda's line.",
+     "t_raw": "그럼 서로 마음대로 부르자. 나는 너를 \"Grandpa Istoria\"라고 부르고, 너는 나를 \"young Hilda\"라고 부르면 돼.",
      "en": "Then let's call each other whatever we want. I'll call you \"Grandpa Istoria,\" and you can call me \"young Hilda.\"",
      "speaker": "Raumhilda",
      "source": {
@@ -1989,31 +1904,14 @@
       "version": "Luna VI",
       "speaker": "Raumhilda"
      },
-     "t": "그럼 서로 마음대로 부르자. 나는 너를 'Grandpa Istoria'라고 부르고, 너는 나를 'young Hilda'라고 부르면 된다.",
+     "t": "그럼 서로 마음대로 부르자. 나는 너를 \"이스토리아 할아버지\"라고 부르고, 너는 나를 \"young 라움힐다\"라고 부르면 돼.",
      "speaker_ko": "라움힐다"
     },
     {
-     "section": "능력과 지식",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "제가 누구보다 오래 이곳에 있었고, 일어난 모든 일을 목격한 것은 사실입니다. 유감이지만...",
-     "en": "It's true that I've been here longer than anyone else, and I have witnessed all that has transpired. Unfortunately...",
-     "speaker": "Istoria",
-     "source": {
-      "kind": "quest",
-      "quest": "Counterfeit Classics",
-      "quest_ko": "고전 위작",
-      "version": "Luna VI",
-      "speaker": "Istoria"
-     },
-     "t": "제가 누구보다 오래 이곳에 있었고, 일어난 모든 일을 목격한 것은 사실입니다. 유감이지만...",
-     "speaker_ko": "이스토리아"
-    },
-    {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그런데, \"Melanta\"와 \"Nihilita\"라는 이름이 무슨 뜻인지 아나?",
+     "status": "accepted",
+     "note": "Faithful translation of Istoria's line.",
+     "t_raw": "그런데, 'Melanta'와 'Nihilita'라는 이름이 무슨 뜻인지 아는가?",
      "en": "By the way, do you know what the names \"Melanta\" and \"Nihilita\" mean?",
      "speaker": "Istoria",
      "source": {
@@ -2023,25 +1921,25 @@
       "version": "Luna VI",
       "speaker": "Istoria"
      },
-     "t": "그런데, \"멜란타\"와 \"니힐리타\"라는 이름이 무슨 뜻인지 아나?",
+     "t": "그런데, '멜란타'와 '니힐리타'라는 이름이 무슨 뜻인지 아는가?",
      "speaker_ko": "이스토리아"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "반갑네, 새로 온 사람들이군. 내 이름은 Istoria일세. 나는 Dark Dragon King이 하늘을 찢던 시대에서 왔지. 자네들은?",
-     "en": "Greetings, newcomers. My name is Istoria. I hail from the age when the Dark Dragon King rent the sky open. And you are?",
-     "speaker": "Istoria",
+     "status": "accepted",
+     "note": "Faithful translation of Raumhilda's line.",
+     "t_raw": "그럼 서로 원하는 대로 부르자. 나는 너를 \"Grandpa Istoria\"라고 부르고, 너는 나를 \"young Hilda\"라고 부르면 된다.",
+     "en": "Then let's call each other whatever we want. I'll call you \"Grandpa Istoria,\" and you can call me \"young Hilda.\"",
+     "speaker": "Raumhilda",
      "source": {
       "kind": "quest",
       "quest": "The Wind Has Ceased",
       "quest_ko": "멎은 바람",
       "version": "Luna VI",
-      "speaker": "Istoria"
+      "speaker": "Raumhilda"
      },
-     "t": "반갑네, 새로 온 사람들이군. 내 이름은 이스토리아일세. 나는 Dark Dragon King이 하늘을 찢던 시대에서 왔지. 자네들은?",
-     "speaker_ko": "이스토리아"
+     "t": "그럼 서로 원하는 대로 부르자. 나는 너를 \"이스토리아 할아버지\"라고 부르고, 너는 나를 \"young 라움힐다\"라고 부르면 된다.",
+     "speaker_ko": "라움힐다"
     }
    ]
   }

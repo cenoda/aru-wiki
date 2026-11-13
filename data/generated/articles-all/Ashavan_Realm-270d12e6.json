@@ -1,0 +1,700 @@
+{
+ "node": "Ashavan Realm",
+ "articles": [
+  {
+   "node": "Ashavan Realm",
+   "from_version": "3.0",
+   "cutoff": "2022-09-27T00:00:00Z",
+   "input": [
+    {
+     "page": "Ashavan Realm",
+     "url": "https://genshin-impact.fandom.com/wiki/Ashavan_Realm",
+     "revision": 846247
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 3,
+    "web": 0
+   },
+   "input_chars": 272,
+   "input_cut": false,
+   "input_hash": "93ff338dac90",
+   "writer": "or-ds,glm-flash",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the subarea list, Q2 and Q3.",
+     "quote": "Thanks to your help, the Varuna Contraption is now in good shape, and so is the Ashavan Realm.",
+     "sentences": [
+      {
+       "t_raw": "Apam Woods는 끝나지 않는 비가 내리는 숲으로 묘사되며, Ashavan Realm은 Apam Woods, Caravan Ribat, Pardis Dhyai, Ruins of Dahri, Yasna Monument 같은 하위 지역과 함께 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수천산림은 끝나지 않는 비가 내리는 숲으로 묘사되며, 아샤반의 땅은 수천산림, 카라반 수도원, 선나원, 다흐리의 폐허, 야스나 유경 같은 하위 지역과 함께 제시된다."
+      },
+      {
+       "t_raw": "Arapandu는 Varuna Contraption이 좋은 상태가 되었고 Ashavan Realm도 그렇다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란판두는 바루나가 좋은 상태가 되었고 아샤반의 땅도 그렇다고 말한다."
+      },
+      {
+       "t_raw": "Paimon은 Ashavan Realm에 평화가 돌아왔다고 말하고, 숲의 Fungi에 대해서는 알지 못한다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아샤반의 땅에 평화가 돌아왔다고 말하고, 숲의 버섯몬에 대해서는 알지 못한다고 덧붙인다."
+      },
+      {
+       "t_raw": "이 대사들은 Ashavan Realm의 평화가 Varuna Contraption의 좋아진 상태와 맞물려 서술되면서도, 숲의 Fungi라는 불확실한 요소가 따라붙는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 대사들은 아샤반의 땅의 평화가 바루나의 좋아진 상태와 맞물려 서술되면서도, 숲의 버섯몬라는 불확실한 요소가 따라붙는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arapandu"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported. '우거져' is a loose rewording of 'towering trees'.",
+     "quote": "The forest of a rain without end.",
+     "sentences": [
+      {
+       "t_raw": "Ashavan Realm의 하위 지역으로는 Apam Woods, Caravan Ribat, Pardis Dhyai, Ruins of Dahri, Yasna Monument가 소개되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아샤반의 땅의 하위 지역으로는 수천산림, 카라반 수도원, 선나원, 다흐리의 폐허, 야스나 유경이 소개되어 있다."
+      },
+      {
+       "t_raw": "그중 Apam Woods는 **끝이 없는 비**가 내리는 숲으로, 하늘을 향해 뻗은 나무들이 우거져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그중 수천산림은 **끝이 없는 비**가 내리는 숲으로, 하늘을 향해 뻗은 나무들이 우거져 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by Q2 and Q3. The interpretation is reasonable.",
+     "quote": "Thanks to your help, the Varuna Contraption is now in good shape, and so is the Ashavan Realm.",
+     "sentences": [
+      {
+       "t_raw": "3.0 시점에 Arapandu는 도움 덕분에 Varuna Contraption이 좋은 상태가 되었고 Ashavan Realm도 좋아졌다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "3.0 시점에 아란판두는 도움 덕분에 바루나가 좋은 상태가 되었고 아샤반의 땅도 좋아졌다고 말한다."
+      },
+      {
+       "t_raw": "Paimon은 Ashavan Realm에 **평화가 돌아왔다**고 반응하지만, 숲의 Fungi에 대해서는 모른다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아샤반의 땅에 **평화가 돌아왔다**고 반응하지만, 숲의 버섯몬에 대해서는 모른다고 덧붙인다."
+      },
+      {
+       "t_raw": "이는 Ashavan Realm의 상태가 나아졌다는 말과 숲의 Fungi에 대한 불확실한 언급이 함께 남아 있음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 아샤반의 땅의 상태가 나아졌다는 말과 숲의 버섯몬에 대한 불확실한 언급이 함께 남아 있음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arapandu"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Prayer for Rain on the Fecund Land",
+       "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "지리와 하위 지역",
+     "status": "accepted",
+     "note": "Supported. The contrast reading is a fair interpretation.",
+     "quote": "The forest of a rain without end. The towering trees reach for the sky freely. Perhaps one day its branches will touch the stars. But under their canopy, the rain has never ceased.",
+     "sentences": [
+      {
+       "t_raw": "Ashavan Realm의 하위 지역으로는 Apam Woods, Caravan Ribat, Pardis Dhyai, Ruins of Dahri, Yasna Monument가 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아샤반의 땅의 하위 지역으로는 수천산림, 카라반 수도원, 선나원, 다흐리의 폐허, 야스나 유경이 제시된다."
+      },
+      {
+       "t_raw": "**Apam Woods**는 끝없는 비가 내리는 숲이며, 우뚝 솟은 나무들이 하늘을 향해 자유롭게 뻗어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**수천산림**은 끝없는 비가 내리는 숲이며, 우뚝 솟은 나무들이 하늘을 향해 자유롭게 뻗어 있다."
+      },
+      {
+       "t_raw": "언젠가 그 가지가 별에 닿을지도 모르지만, 그 수관 아래에서 비는 그친 적이 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "언젠가 그 가지가 별에 닿을지도 모르지만, 그 수관 아래에서 비는 그친 적이 없다."
+      },
+      {
+       "t_raw": "이처럼 하늘로 뻗은 나무와 멈추지 않는 비가 대비를 이루어, **끝없는 비**의 숲이라는 인상을 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 하늘로 뻗은 나무와 멈추지 않는 비가 대비를 이루어, **끝없는 비**의 숲이라는 인상을 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ashavan Realm",
+       "revision": 846247,
+       "section": "Subareas",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "지리와 하위 지역",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Festival Utsava",
+     "status": "accepted",
+     "note": "The English only says the Contraption is in good shape 'and so is' the Realm. Saying the two states are 'interlocked' (맞물려 있다) implies a connection the text does not give.",
+     "quote": "Nara and Paimon! Thanks to your help, the Varuna Contraption is now in good shape, and so is the Ashavan Realm.",
+     "sentences": [
+      {
+       "t_raw": "Festival Utsava에서 Arapandu는 Nara와 Paimon을 부르며, 두 사람의 도움 덕분에 **Varuna Contraption이 좋은 상태**가 되었고 **Ashavan Realm도 그렇다**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "우트사바 축제에서 아란판두는 나라와 페이몬을 부르며, 두 사람의 도움 덕분에 **바루나가 좋은 상태**가 되었고 **아샤반의 땅도 그렇다**고 말한다."
+      },
+      {
+       "t_raw": "한 문장에서 Varuna Contraption의 상태와 Ashavan Realm의 상태가 함께 언급되므로, 두 곳 모두 좋은 상태가 되었다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "한 문장에서 바루나의 상태와 아샤반의 땅의 상태가 함께 언급되므로, 두 곳 모두 좋은 상태가 되었다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arapandu"
+      }
+     ],
+     "heading": "작중 행적 — 우트사바 축제",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — A Prayer for Rain on the Fecund Land",
+     "status": "accepted",
+     "note": "Paimon's 'Hehe' supports the laughing.",
+     "quote": "Hehe, peace returns to the Ashavan Realm!",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 웃으며 **Ashavan Realm에 평화가 돌아왔다**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 웃으며 **아샤반의 땅에 평화가 돌아왔다**고 말한다."
+      },
+      {
+       "t_raw": "그 말은 웃음과 함께 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 말은 웃음과 함께 나온다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Prayer for Rain on the Fecund Land",
+       "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 비옥한 땅 아래, 비를 부르는 노래",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — A Prayer for Rain on the Fecund Land",
+     "status": "accepted",
+     "note": "All sentences pass.",
+     "quote": "Paimon doesn't know about those Fungi in the forest though...",
+     "sentences": [
+      {
+       "t_raw": "이어 Paimon은 **숲의 Fungi에 대해서는 모른다**고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 페이몬은 **숲의 버섯몬에 대해서는 모른다**고 덧붙인다."
+      },
+      {
+       "t_raw": "Paimon이 평화가 돌아왔다고 말하면서도 숲의 Fungi는 모른다고 한 점에서, 평화의 귀환이 숲의 Fungi에 대한 앎까지 포함하지는 않는다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "페이몬이 평화가 돌아왔다고 말하면서도 숲의 버섯몬은 모른다고 한 점에서, 평화의 귀환이 숲의 버섯몬에 대한 앎까지 포함하지는 않는다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Prayer for Rain on the Fecund Land",
+       "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 비옥한 땅 아래, 비를 부르는 노래",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences pass.",
+     "quote": "Nara and Paimon! Thanks to your help, the Varuna Contraption is now in good shape, and so is the Ashavan Realm.",
+     "sentences": [
+      {
+       "t_raw": "Arapandu는 Nara와 Paimon에게 자신들의 도움 덕분에 **Varuna Contraption**이 좋은 상태가 되었고 Ashavan Realm도 그렇게 되었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란판두는 나라와 페이몬에게 자신들의 도움 덕분에 **바루나**가 좋은 상태가 되었고 아샤반의 땅도 그렇게 되었다고 말한다."
+      },
+      {
+       "t_raw": "이처럼 Arapandu는 Ashavan Realm의 상태를 Varuna Contraption의 상태와 함께 말하며, Nara와 Paimon을 그 도움을 준 인물로 연결한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 아란판두는 아샤반의 땅의 상태를 바루나의 상태와 함께 말하며, 나라와 페이몬을 그 도움을 준 인물로 연결한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arapandu"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "trimmed",
+     "note": "Sentence 2 treats the two lines as showing Arapandu, Aranakula, and Paimon are entangled around Ashavan Realm; Paimon's line never links them.",
+     "quote": "Nara and Paimon? Aranakula followed Arapandu to Ashavan Realm and still hasn't returned, so why don't we eat some mushrooms now.",
+     "sentences": [
+      {
+       "t_raw": "Arakara는 Nara와 Paimon에게 **Aranakula**가 Arapandu를 따라 Ashavan Realm으로 갔고 아직 돌아오지 않았다고 말하고 이어서 버섯을 먹자고 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란카라는 나라와 페이몬에게 **아란나쿨라**가 아란판두를 따라 아샤반의 땅으로 갔고 아직 돌아오지 않았다고 말하고 이어서 버섯을 먹자고 제안한다."
+      },
+      {
+       "t_raw": "Paimon은 Ashavan Realm에 평화가 돌아왔다고 말하면서도 숲의 Fungi에 대해서는 모른다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아샤반의 땅에 평화가 돌아왔다고 말하면서도 숲의 버섯몬에 대해서는 모른다고 덧붙인다."
+      },
+      {
+       "t_raw": "두 발언은 Ashavan Realm을 중심으로 Arapandu와 Aranakula, 그리고 Paimon이 각기 다른 방식으로 얽혀 있음을 보여 준다.",
+       "interp": true,
+       "dropped": true,
+       "t": "두 발언은 아샤반의 땅을 중심으로 아란판두와 아란나쿨라, 그리고 페이몬이 각기 다른 방식으로 얽혀 있음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sprouting Seedlings",
+       "quest_ko": "움트는 꽃망울",
+       "version": "3.0",
+       "speaker": "Arakara"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Prayer for Rain on the Fecund Land",
+       "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences pass.",
+     "quote": "Aranakula followed Arapandu to Ashavan Realm and still hasn't returned, so why don't we eat some mushrooms now.",
+     "sentences": [
+      {
+       "t_raw": "Arakara는 Aranakula가 Arapandu를 따라 Ashavan Realm에 갔지만 **아직 돌아오지 않았다**고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란카라는 아란나쿨라가 아란판두를 따라 아샤반의 땅에 갔지만 **아직 돌아오지 않았다**고 전한다."
+      },
+      {
+       "t_raw": "그러면서 이어서 지금은 버섯을 먹자고 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 이어서 지금은 버섯을 먹자고 제안한다."
+      },
+      {
+       "t_raw": "돌아오지 않은 일에 대한 경위는 나오지 않고 곧바로 버섯 이야기로 넘어가므로, Aranakula의 미귀환은 이 대사만으로는 이유가 설명되지 않는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "돌아오지 않은 일에 대한 경위는 나오지 않고 곧바로 버섯 이야기로 넘어가므로, 아란나쿨라의 미귀환은 이 대사만으로는 이유가 설명되지 않는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sprouting Seedlings",
+       "quest_ko": "움트는 꽃망울",
+       "version": "3.0",
+       "speaker": "Arakara"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Sentence 1 says Paimon does not know the forest Fungi well; the line says Paimon does not know about them.",
+     "quote": "Hehe, peace returns to the Ashavan Realm! Paimon doesn't know about those Fungi in the forest though...",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Ashavan Realm에 평화가 돌아왔다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아샤반의 땅에 평화가 돌아왔다고 말한다."
+      },
+      {
+       "t_raw": "그러나 숲의 Fungi에 대해서는 **모른다**고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그러나 숲의 버섯몬에 대해서는 **모른다**고 덧붙인다."
+      },
+      {
+       "t_raw": "평화가 돌아왔다는 말과 숲의 Fungi를 모른다는 말이 한 대사에 함께 있으니, 그 평화가 숲의 Fungi에까지 해당하는지는 확실치 않다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "평화가 돌아왔다는 말과 숲의 버섯몬을 모른다는 말이 한 대사에 함께 있으니, 그 평화가 숲의 버섯몬에까지 해당하는지는 확실치 않다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Prayer for Rain on the Fecund Land",
+       "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences pass.",
+     "quote": "Nara and Paimon? Aranakula followed Arapandu to Ashavan Realm and still hasn't returned, so why don't we eat some mushrooms now.",
+     "sentences": [
+      {
+       "t_raw": "Arakara는 Sprouting Seedlings에서 Nara와 Paimon을 부르며, **Aranakula**가 Arapandu를 따라 Ashavan Realm으로 향한 뒤 아직 돌아오지 않았다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란카라는 움트는 꽃망울에서 나라와 페이몬을 부르며, **아란나쿨라**가 아란판두를 따라 아샤반의 땅으로 향한 뒤 아직 돌아오지 않았다고 전한다."
+      },
+      {
+       "t_raw": "이어서 지금 **버섯**을 먹는 게 어떻겠냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 지금 **버섯**을 먹는 게 어떻겠냐고 묻는다."
+      },
+      {
+       "t_raw": "Aranakula의 미귀환과 버섯에 대한 말은 Arakara의 같은 대사에서 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나쿨라의 미귀환과 버섯에 대한 말은 아란카라의 같은 대사에서 나온다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sprouting Seedlings",
+       "quest_ko": "움트는 꽃망울",
+       "version": "3.0",
+       "speaker": "Arakara"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "히히, Ashavan Realm에 평화가 돌아왔어! 그래도 Paimon은 숲에 있는 그 Fungi에 대해서는 모르겠다...",
+     "en": "Hehe, peace returns to the Ashavan Realm! Paimon doesn't know about those Fungi in the forest though...",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "A Prayer for Rain on the Fecund Land",
+      "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "히히, 아샤반의 땅에 평화가 돌아왔어! 그래도 페이몬은 숲에 있는 그 버섯몬에 대해서는 모르겠다...",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "작중 행적 — Festival Utsava",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Nara와 Paimon! 너희의 도움 덕분에 Varuna Contraption은 이제 좋은 상태이고, Ashavan Realm도 그렇다.",
+     "en": "Nara and Paimon! Thanks to your help, the Varuna Contraption is now in good shape, and so is the Ashavan Realm.",
+     "speaker": "Arapandu",
+     "source": {
+      "kind": "quest",
+      "quest": "Festival Utsava",
+      "quest_ko": "우트사바 축제",
+      "version": "3.0",
+      "speaker": "Arapandu"
+     },
+     "t": "나라와 페이몬! 너희의 도움 덕분에 바루나는 이제 좋은 상태이고, 아샤반의 땅도 그렇다.",
+     "speaker_ko": "아란판두"
+    },
+    {
+     "section": "작중 행적 — A Prayer for Rain on the Fecund Land",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "헤헤, Ashavan Realm에 평화가 돌아왔어! Paimon은 숲의 그 Fungi들에 대해서는 모르겠지만...",
+     "en": "Hehe, peace returns to the Ashavan Realm! Paimon doesn't know about those Fungi in the forest though...",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "A Prayer for Rain on the Fecund Land",
+      "quest_ko": "비옥한 땅 아래, 비를 부르는 노래",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "헤헤, 아샤반의 땅에 평화가 돌아왔어! 페이몬은 숲의 그 버섯몬들에 대해서는 모르겠지만...",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation; the suggestion is phrased a bit more loosely but the meaning is kept.",
+     "t_raw": "Nara와 Paimon? Aranakula가 Arapandu를 따라 Ashavan Realm으로 갔고 아직 돌아오지 않았는데, 그럼 이제 버섯을 좀 먹는 게 어떨까.",
+     "en": "Nara and Paimon? Aranakula followed Arapandu to Ashavan Realm and still hasn't returned, so why don't we eat some mushrooms now.",
+     "speaker": "Arakara",
+     "source": {
+      "kind": "quest",
+      "quest": "Sprouting Seedlings",
+      "quest_ko": "움트는 꽃망울",
+      "version": "3.0",
+      "speaker": "Arakara"
+     },
+     "t": "나라와 페이몬? 아란나쿨라가 아란판두를 따라 아샤반의 땅으로 갔고 아직 돌아오지 않았는데, 그럼 이제 버섯을 좀 먹는 게 어떨까.",
+     "speaker_ko": "아란카라"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Nara와 Paimon? Aranakula는 Arapandu를 따라 Ashavan Realm에 갔는데 아직 돌아오지 않았으니, 우리 지금 버섯 좀 먹는 게 어때?",
+     "en": "Nara and Paimon? Aranakula followed Arapandu to Ashavan Realm and still hasn't returned, so why don't we eat some mushrooms now.",
+     "speaker": "Arakara",
+     "source": {
+      "kind": "quest",
+      "quest": "Sprouting Seedlings",
+      "quest_ko": "움트는 꽃망울",
+      "version": "3.0",
+      "speaker": "Arakara"
+     },
+     "t": "나라와 페이몬? 아란나쿨라는 아란판두를 따라 아샤반의 땅에 갔는데 아직 돌아오지 않았으니, 우리 지금 버섯 좀 먹는 게 어때?",
+     "speaker_ko": "아란카라"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Nara와 Paimon? Aranakula는 Arapandu를 따라 Ashavan Realm으로 갔는데 아직 돌아오지 않았으니, 우리 지금 버섯을 먹는 게 어때.",
+     "en": "Nara and Paimon? Aranakula followed Arapandu to Ashavan Realm and still hasn't returned, so why don't we eat some mushrooms now.",
+     "speaker": "Arakara",
+     "source": {
+      "kind": "quest",
+      "quest": "Sprouting Seedlings",
+      "quest_ko": "움트는 꽃망울",
+      "version": "3.0",
+      "speaker": "Arakara"
+     },
+     "t": "나라와 페이몬? 아란나쿨라는 아란판두를 따라 아샤반의 땅으로 갔는데 아직 돌아오지 않았으니, 우리 지금 버섯을 먹는 게 어때.",
+     "speaker_ko": "아란카라"
+    }
+   ]
+  }
+ ]
+}

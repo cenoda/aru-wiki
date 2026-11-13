@@ -42,7 +42,7 @@
        "t_raw": "처음 획득한 아이템이나 처음 처치한 적, 야생동물의 항목이 열리며, 7개 섹션과 Equipment and Materials의 확장 설명을 갖춘다.",
        "interp": false,
        "dropped": false,
-       "t": "처음 획득한 아이템이나 처음 처치한 적, 야생동물의 항목이 열리며, 7개 섹션과 Equipment and Materials의 확장 설명을 갖춘다.",
+       "t": "처음 획득한 아이템이나 처음 처치한 적, 야생동물의 항목이 열리며, 7개 섹션과 장비 도감 및 물산지의 확장 설명을 갖춘다.",
        "polish": {
         "from": "처음 획득한 아이템이나 처음 처치한 적, 야생동물의 항목이 열리며, 7개 섹션과 Equipment and Materials의 확장 설명을 갖춘다.",
         "text": "처음 획득한 아이템이나 처음 처치한 적, 야생동물의 항목이 열리며, 7개 섹션과 Equipment and Materials의 확장 설명을 갖춘다.",
@@ -90,7 +90,6 @@
      ],
      "heading": null,
      "latin_left": [
-      "Equipment and Materials",
       "Version",
       "PC"
      ]
@@ -166,7 +165,7 @@
        "t_raw": "모든 플레이어가 모든 항목을 해금할 수 있는 것은 아니어서, Tutorial 항목인 Show Cursor는 PC에서 플레이할 때만 해금된다.",
        "interp": false,
        "dropped": false,
-       "t": "모든 플레이어가 모든 항목을 해금할 수 있는 것은 아니어서, 튜토리얼 항목인 Show Cursor는 PC에서 플레이할 때만 해금된다."
+       "t": "모든 플레이어가 모든 항목을 해금할 수 있는 것은 아니어서, 튜토리얼 항목인 커서 표시는 PC에서 플레이할 때만 해금된다."
       },
       {
        "t_raw": "같은 메이저 버전 안에 출시될 예정인 항목은 출시 전에 Archive에 먼저 추가될 수 있다.",
@@ -209,7 +208,6 @@
      ],
      "heading": "개요",
      "latin_left": [
-      "Show Cursor",
       "PC"
      ]
     },
@@ -223,7 +221,7 @@
        "t_raw": "Archive는 Equipment, Living Beings, Tutorials, Geography, Travel Log, Books, Materials의 **일곱 섹션**으로 나뉜다.",
        "interp": false,
        "dropped": false,
-       "t": "도감은 Equipment, Living Beings, Tutorials, Geography, Travel Log, Books, Materials의 **일곱 섹션**으로 나뉜다."
+       "t": "도감은 Equipment, 생물지, Tutorials, Geography, 여행 일지, Books, Materials의 **일곱 섹션**으로 나뉜다."
       },
       {
        "t_raw": "Equipment는 Weapons와 Artifacts로 세분되며, Artifacts는 세트별로 묶여 각 세트의 다섯 가지 유물 유형을 모두 모아야 항목이 열린다.",
@@ -235,11 +233,11 @@
        "t_raw": "Weapons는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 alternate Ascension Appearance는 등록되어도 항목 수에 들지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "무기는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 대체 Ascension Appearance는 등록되어도 항목 수에 들지 않는다.",
+       "t": "무기는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 대체 돌파 외형은 등록되어도 항목 수에 들지 않는다.",
        "polish": {
-        "from": "무기는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 alternate Ascension Appearance는 등록되어도 항목 수에 들지 않는다.",
-        "text": "무기는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 대체 Ascension Appearance는 등록되어도 항목 수에 들지 않는다.",
-        "by": "glm-flash"
+        "from": "무기는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 alternate 돌파 외형은 등록되어도 항목 수에 들지 않는다.",
+        "text": "무기는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 대체 돌파 외형은 등록되어도 항목 수에 들지 않는다.",
+        "by": "or-ds"
        }
       }
      ],
@@ -280,14 +278,11 @@
      "heading": "구성과 분류",
      "latin_left": [
       "Equipment",
-      "Living Beings",
       "Tutorials",
       "Geography",
-      "Travel Log",
       "Books",
       "Materials",
-      "Equipment",
-      "Ascension Appearance"
+      "Equipment"
      ]
     },
     {
@@ -300,7 +295,7 @@
        "t_raw": "Living Beings는 Enemies and Monsters와 Wildlife를 담고, 설명·처치 횟수·돌려 보는 모델을 제공한다.",
        "interp": false,
        "dropped": false,
-       "t": "Living Beings는 Enemies and Monsters와 Wildlife를 담고, 설명·처치 횟수·돌려 보는 모델을 제공한다.",
+       "t": "생물지는 적과 마물과 Wildlife를 담고, 설명·처치 횟수·돌려 보는 모델을 제공한다.",
        "polish": {
         "from": "Living Beings는 Enemies and Monsters와 Wildlife를 담고, 설명·처치 횟수·돌려 보는 모델을 제공한다.",
         "text": "Living Beings는 Enemies and Monsters와 Wildlife를 담고, 설명·처치 횟수·돌려 보는 모델을 제공한다.",
@@ -317,11 +312,11 @@
        "t_raw": "Uncategorized tutorials는 Archive에 추가되지 않으며, PC가 아닌 기기에서는 Show Cursor가 없어 System 항목이 하나 적다.",
        "interp": false,
        "dropped": false,
-       "t": "Uncategorized tutorials는 도감에 추가되지 않으며, PC가 아닌 기기에서는 Show Cursor가 없어 System 항목이 하나 적다.",
+       "t": "미분류 튜토리얼은 도감에 추가되지 않으며, PC가 아닌 기기에서는 커서 표시가 없어 시스템 항목이 하나 적다.",
        "polish": {
-        "from": "Uncategorized tutorials는 도감에 추가되지 않으며, PC가 아닌 기기에서는 Show Cursor가 없어 System 항목이 하나 적다.",
-        "text": "Uncategorized tutorials는 도감에 추가되지 않으며, PC가 아닌 기기에서는 Show Cursor가 없어 System 항목이 하나 적다.",
-        "by": "glm-flash"
+        "from": "미분류 tutorials는 도감에 추가되지 않으며, PC가 아닌 기기에서는 커서 표시가 없어 System 항목이 하나 적다.",
+        "text": "미분류 튜토리얼은 도감에 추가되지 않으며, PC가 아닌 기기에서는 커서 표시가 없어 시스템 항목이 하나 적다.",
+        "by": "or-ds"
        }
       }
      ],
@@ -369,14 +364,9 @@
      ],
      "heading": "구성과 분류",
      "latin_left": [
-      "Living Beings",
-      "Enemies and Monsters",
       "Wildlife",
       "Tutorials",
-      "Uncategorized",
-      "PC",
-      "Show Cursor",
-      "System"
+      "PC"
      ]
     },
     {
@@ -395,18 +385,18 @@
        "t_raw": "Travel Log는 Archon Quests, Story Quests, Tribal Chronicles의 대본을 수록하고, 퀘스트 중 재생된 voicelines를 들을 수 있으며, 분기가 있으면 dialog options로 다른 갈래를 볼 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Travel Log는 마신 임무, 전설 임무, 부족 견문의 대본을 수록하고, 퀘스트 중 재생된 음성 대사를 들을 수 있으며, 분기가 있으면 대화 선택지로 다른 갈래를 볼 수 있다.",
+       "t": "여행 일지는 마신 임무, 전설 임무, 부족 견문의 대본을 수록하고, 퀘스트 중 재생된 음성 대사를 들을 수 있으며, 분기가 있으면 대화 선택지로 다른 갈래를 볼 수 있다.",
        "polish": {
-        "from": "Travel Log는 마신 임무, 전설 임무, 부족 견문의 대본을 수록하고, 퀘스트 중 재생된 voicelines를 들을 수 있으며, 분기가 있으면 dialog options로 다른 갈래를 볼 수 있다.",
-        "text": "Travel Log는 마신 임무, 전설 임무, 부족 견문의 대본을 수록하고, 퀘스트 중 재생된 음성 대사를 들을 수 있으며, 분기가 있으면 대화 선택지로 다른 갈래를 볼 수 있다.",
-        "by": "glm-flash"
+        "from": "여행 일지는 마신 임무, 전설 임무, 부족 견문의 대본을 수록하고, 퀘스트 중 재생된 voicelines를 들을 수 있으며, 분기가 있으면 dialog options로 다른 갈래를 볼 수 있다.",
+        "text": "여행 일지는 마신 임무, 전설 임무, 부족 견문의 대본을 수록하고, 퀘스트 중 재생된 음성 대사를 들을 수 있으며, 분기가 있으면 대화 선택지로 다른 갈래를 볼 수 있다.",
+        "by": "or-ds"
        }
       },
       {
        "t_raw": "Event 퀘스트는 Travel Log에 들어가지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "Event 퀘스트는 Travel Log에 들어가지 않는다."
+       "t": "Event 퀘스트는 여행 일지에 들어가지 않는다."
       }
      ],
      "sources": [
@@ -439,9 +429,7 @@
      "latin_left": [
       "Geography",
       "Viewpoints",
-      "Travel Log",
-      "Event",
-      "Travel Log"
+      "Event"
      ]
     },
     {
@@ -503,7 +491,7 @@
        "t_raw": "Materials에는 Teyvat's Resources, Food and Potions, Trophies, Utility Items가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Materials에는 티바트의 Resources, Food and Potions, Trophies, Utility Items가 있다.",
+       "t": "Materials에는 티바트의 Resources, 음식 및 포션, Trophies, 간편 아이템이 있다.",
        "polish": {
         "from": "Materials에는 티바트의 Resources, Food and Potions, Trophies, Utility Items가 있다.",
         "text": "Materials에는 티바트의 Resources, Food and Potions, Trophies, Utility Items가 있다.",
@@ -514,33 +502,33 @@
        "t_raw": "Teyvat's Resources는 mining, foraging, forging, purchasing, 또는 동물 포획으로 얻는 Resources를, Food and Potions는 cooking, crafting, purchasing, 또는 NPC와 대화로 얻는 Food, Food Ingredients, Potions를 담는다.",
        "interp": false,
        "dropped": false,
-       "t": "티바트의 Resources는 채광, 채집, 단조, 구매, 또는 동물 포획으로 얻는 Resources를, Food and Potions는 요리, 제작, 구매, 또는 NPC와 대화로 얻는 Food, Food Ingredients, Potions를 담는다.",
+       "t": "티바트의 자원은 채굴, 채집, 단조, 구매, 또는 동물 포획으로 얻는 자원을, 음식 및 포션은 요리, 제작, 구매, 또는 NPC와 대화로 얻는 음식, 식자재, 포션을 담는다.",
        "polish": {
-        "from": "티바트의 Resources는 mining, foraging, forging, purchasing, 또는 동물 포획으로 얻는 Resources를, Food and Potions는 cooking, crafting, purchasing, 또는 NPC와 대화로 얻는 Food, Food Ingredients, Potions를 담는다.",
-        "text": "티바트의 Resources는 채광, 채집, 단조, 구매, 또는 동물 포획으로 얻는 Resources를, Food and Potions는 요리, 제작, 구매, 또는 NPC와 대화로 얻는 Food, Food Ingredients, Potions를 담는다.",
-        "by": "glm-flash"
+        "from": "티바트의 Resources는 mining, foraging, forging, purchasing, 또는 동물 포획으로 얻는 Resources를, 음식 및 포션은 cooking, crafting, purchasing, 또는 NPC와 대화로 얻는 Food, 식자재, Potions를 담는다.",
+        "text": "티바트의 자원은 채굴, 채집, 단조, 구매, 또는 동물 포획으로 얻는 자원을, 음식 및 포션은 요리, 제작, 구매, 또는 NPC와 대화로 얻는 음식, 식자재, 포션을 담는다.",
+        "by": "or-ds"
        }
       },
       {
        "t_raw": "Trophies는 Character Talent Materials, Character Ascension Materials, Weapon Ascension Materials, Character and Weapon Enhancement Materials를 담고 crafting, domains, monsters를 통해 얻으며, Utility Items는 Gadgets 항목을 담는다.",
        "interp": false,
        "dropped": false,
-       "t": "Trophies는 캐릭터 특성 소재, 캐릭터 돌파 소재, 무기 돌파 소재, Character and Weapon Enhancement Materials를 담고 제작, 비경, 몬스터를 통해 얻으며, Utility Items는 Gadgets 항목을 담는다.",
+       "t": "전리품은 캐릭터 특성 소재, 캐릭터 돌파 소재, 무기 돌파 소재, 캐릭터와 무기 육성 소재를 담고 제작, 비경, 몬스터를 통해 얻으며, 간편 아이템은 간편 아이템 항목을 담는다.",
        "polish": {
-        "from": "Trophies는 캐릭터 특성 소재, 캐릭터 돌파 소재, 무기 돌파 소재, Character and Weapon Enhancement Materials를 담고 crafting, domains, monsters를 통해 얻으며, Utility Items는 Gadgets 항목을 담는다.",
-        "text": "Trophies는 캐릭터 특성 소재, 캐릭터 돌파 소재, 무기 돌파 소재, Character and Weapon Enhancement Materials를 담고 제작, 비경, 몬스터를 통해 얻으며, Utility Items는 Gadgets 항목을 담는다.",
-        "by": "glm-flash"
+        "from": "Trophies는 캐릭터 특성 소재, 캐릭터 돌파 소재, 무기 돌파 소재, 캐릭터와 무기 육성 소재를 담고 crafting, domains, monsters를 통해 얻으며, 간편 아이템은 Gadgets 항목을 담는다.",
+        "text": "전리품은 캐릭터 특성 소재, 캐릭터 돌파 소재, 무기 돌파 소재, 캐릭터와 무기 육성 소재를 담고 제작, 비경, 몬스터를 통해 얻으며, 간편 아이템은 간편 아이템 항목을 담는다.",
+        "by": "or-ds"
        }
       },
       {
        "t_raw": "Food and Potions의 대부분은 특정 캐릭터와 조리해야 얻는 special dishes이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 special dish를 받을 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Food and Potions의 대부분은 특정 캐릭터와 조리해야 얻는 특제 요리이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 특제 요리를 받을 수 있다.",
+       "t": "음식 및 포션의 대부분은 특정 캐릭터와 조리해야 얻는 특별 요리이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 특별 요리를 받을 수 있다.",
        "polish": {
-        "from": "Food and Potions의 대부분은 특정 캐릭터와 조리해야 얻는 special dishes이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 special dish를 받을 수 있다.",
-        "text": "Food and Potions의 대부분은 특정 캐릭터와 조리해야 얻는 특제 요리이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 특제 요리를 받을 수 있다.",
-        "by": "glm-flash"
+        "from": "음식 및 포션의 대부분은 특정 캐릭터와 조리해야 얻는 special dishes이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 special dish를 받을 수 있다.",
+        "text": "음식 및 포션의 대부분은 특정 캐릭터와 조리해야 얻는 특별 요리이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 특별 요리를 받을 수 있다.",
+        "by": "or-ds"
        }
       },
       {
@@ -596,21 +584,8 @@
      "latin_left": [
       "Materials",
       "Resources",
-      "Food and Potions",
       "Trophies",
-      "Utility Items",
-      "Resources",
-      "Resources",
-      "Food and Potions",
       "NPC",
-      "Food",
-      "Food Ingredients",
-      "Potions",
-      "Trophies",
-      "Character and Weapon Enhancement Materials",
-      "Utility Items",
-      "Gadgets",
-      "Food and Potions",
       "Equipment",
       "Materials"
      ]
@@ -697,11 +672,11 @@
        "t_raw": "무기의 alternate Ascension Appearance를 얻으면 Archive에도 등록되지만 항목 수에는 포함되지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "무기의 대체 Ascension Appearance를 얻으면 도감에도 등록되지만 항목 수에는 포함되지 않는다.",
+       "t": "무기의 대체 돌파 외형을 얻으면 도감에도 등록되지만 항목 수에는 포함되지 않는다.",
        "polish": {
-        "from": "무기의 alternate Ascension Appearance를 얻으면 도감에도 등록되지만 항목 수에는 포함되지 않는다.",
-        "text": "무기의 대체 Ascension Appearance를 얻으면 도감에도 등록되지만 항목 수에는 포함되지 않는다.",
-        "by": "glm-flash"
+        "from": "무기의 alternate 돌파 외형을 얻으면 도감에도 등록되지만 항목 수에는 포함되지 않는다.",
+        "text": "무기의 대체 돌파 외형을 얻으면 도감에도 등록되지만 항목 수에는 포함되지 않는다.",
+        "by": "or-ds"
        }
       },
       {
@@ -744,9 +719,7 @@
       }
      ],
      "heading": "수집과 해금",
-     "latin_left": [
-      "Ascension Appearance"
-     ]
+     "latin_left": []
     },
     {
      "section": "수집과 해금",
@@ -758,7 +731,7 @@
        "t_raw": "Food and Potions에는 특정 캐릭터와 조리해야 얻는 특제 요리가 많아, 한정 배너에만 등장하는 탓에 놓치기 쉬운 항목이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Food and Potions에는 특정 캐릭터와 조리해야 얻는 특제 요리가 많아, 한정 배너에만 등장하는 탓에 놓치기 쉬운 항목이 있다.",
+       "t": "음식 및 포션에는 특정 캐릭터와 조리해야 얻는 특제 요리가 많아, 한정 배너에만 등장하는 탓에 놓치기 쉬운 항목이 있다.",
        "polish": {
         "from": "Food and Potions에는 특정 캐릭터와 조리해야 얻는 특제 요리가 많아, 한정 배너에만 등장하는 탓에 놓치기 쉬운 항목이 있다.",
         "text": "Food and Potions에는 특정 캐릭터와 조리해야 얻는 특제 요리가 많아, 한정 배너에만 등장하는 탓에 놓치기 쉬운 항목이 있다.",
@@ -824,7 +797,6 @@
      ],
      "heading": "수집과 해금",
      "latin_left": [
-      "Food and Potions",
       "Suspicious",
       "Delicious",
       "Delicious"
@@ -840,25 +812,25 @@
        "t_raw": "모든 항목을 모든 플레이어가 해금할 수 있는 것은 아니어서, Tutorials의 Show Cursor는 PC로 플레이해야만 해금된다.",
        "interp": false,
        "dropped": false,
-       "t": "모든 항목을 모든 플레이어가 해금할 수 있는 것은 아니어서, Tutorials의 Show Cursor는 PC로 플레이해야만 해금된다."
+       "t": "모든 항목을 모든 플레이어가 해금할 수 있는 것은 아니어서, Tutorials의 커서 표시는 PC로 플레이해야만 해금된다."
       },
       {
        "t_raw": "PC가 아닌 기기에서는 Show Cursor Tutorials가 없어 System 범주의 항목이 하나 적다.",
        "interp": false,
        "dropped": false,
-       "t": "PC가 아닌 기기에서는 Show Cursor Tutorials가 없어 System 범주의 항목이 하나 적다."
+       "t": "PC가 아닌 기기에서는 마우스 호출이 없어 System 범주의 항목이 하나 적다."
       },
       {
        "t_raw": "Utility Items에서는 서로 다른 Mini Seelie 6종이 이벤트로 Archive 항목을 추가했지만, 각 이벤트에서 하나만 고를 수 있어 한 계정에서 최대 4종까지만 얻을 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Utility Items에서는 서로 다른 꼬마 선령 6종이 이벤트로 도감 항목을 추가했지만, 각 이벤트에서 하나만 고를 수 있어 한 계정에서 최대 4종까지만 얻을 수 있다."
+       "t": "간편 아이템에서는 서로 다른 꼬마 선령 6종이 이벤트로 도감 항목을 추가했지만, 각 이벤트에서 하나만 고를 수 있어 한 계정에서 최대 4종까지만 얻을 수 있다."
       },
       {
        "t_raw": "그 결과 현재 Utility Items에서 얻을 수 있는 항목은 최대 79개다.",
        "interp": false,
        "dropped": false,
-       "t": "그 결과 현재 Utility Items에서 얻을 수 있는 항목은 최대 79개다."
+       "t": "그 결과 현재 간편 아이템에서 얻을 수 있는 항목은 최대 79개다."
       },
       {
        "t_raw": "플랫폼과 이벤트 선택 모두 Archive 완성도를 갈라놓는 셈이다.",
@@ -896,13 +868,9 @@
      "heading": "수집과 해금",
      "latin_left": [
       "Tutorials",
-      "Show Cursor",
       "PC",
       "PC",
-      "Show Cursor Tutorials",
-      "System",
-      "Utility Items",
-      "Utility Items"
+      "System"
      ]
     },
     {
@@ -915,7 +883,7 @@
        "t_raw": "Living Beings의 Enemies and Monsters 쪽에도 빠져 있는 적이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Living Beings의 Enemies and Monsters 쪽에도 빠져 있는 적이 있다.",
+       "t": "생물지의 적과 마물 쪽에도 빠져 있는 적이 있다.",
        "polish": {
         "from": "Living Beings의 Enemies and Monsters 쪽에도 빠져 있는 적이 있다.",
         "text": "Living Beings의 Enemies and Monsters 쪽에도 빠져 있는 적이 있다.",
@@ -926,7 +894,7 @@
        "t_raw": "일부 Shogunate 세력은 Archon Quests에서 적으로 등장하지만, 특정 Archon Quests 밖에서 싸울 방법이 없기 때문인지 Living Beings / Enemies and Monsters 항목에서 찾을 수 없다.",
        "interp": false,
        "dropped": false,
-       "t": "일부 막부 세력은 마신 임무에서 적으로 등장하지만, 특정 마신 임무 밖에서 싸울 방법이 없기 때문인지 Living Beings / Enemies and Monsters 항목에서 찾을 수 없다.",
+       "t": "일부 막부 세력은 마신 임무에서 적으로 등장하지만, 특정 마신 임무 밖에서 싸울 방법이 없기 때문인지 생물지 / 적과 마물 항목에서 찾을 수 없다.",
        "polish": {
         "from": "일부 막부 세력은 마신 임무에서 적으로 등장하지만, 특정 마신 임무 밖에서 싸울 방법이 없기 때문인지 Living Beings / Enemies and Monsters 항목에서 찾을 수 없다.",
         "text": "일부 막부 세력은 마신 임무에서 적으로 등장하지만, 특정 마신 임무 밖에서 싸울 방법이 없기 때문인지 Living Beings / Enemies and Monsters 항목에서 찾을 수 없다.",
@@ -979,12 +947,7 @@
       }
      ],
      "heading": "수집과 해금",
-     "latin_left": [
-      "Living Beings",
-      "Enemies and Monsters",
-      "Living Beings",
-      "Enemies and Monsters"
-     ]
+     "latin_left": []
     },
     {
      "section": "판본별 변동",
@@ -1014,7 +977,7 @@
        "t_raw": "1.1과 1.2에는 Living Beings 항목 수가 N/A로 기록된다.",
        "interp": false,
        "dropped": false,
-       "t": "1.1과 1.2에는 Living Beings 항목 수가 N/A로 기록된다."
+       "t": "1.1과 1.2에는 생물지 항목 수가 N/A로 기록된다."
       }
      ],
      "sources": [
@@ -1057,8 +1020,7 @@
       "Tutorials",
       "Geography",
       "Books",
-      "Materials",
-      "Living Beings"
+      "Materials"
      ]
     },
     {
@@ -1071,7 +1033,7 @@
        "t_raw": "Luna I의 총계는 3334개, Luna II는 3353개, Luna III는 3379개, Luna IV는 3475개다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna I의 총계는 3334개, Luna II는 3353개, Luna III는 3379개, Luna IV는 3475개다."
+       "t": "Luna I의 총계는 3334개, 두 번째 달은 3353개, Luna III는 3379개, Luna IV는 3475개다."
       },
       {
        "t_raw": "Luna III의 3379개와 Luna IV의 3475개를 비교하면 96개가 늘어난 셈이다.",
@@ -1117,7 +1079,6 @@
      "heading": "판본별 변동",
      "latin_left": [
       "Luna",
-      "Luna II",
       "Luna III",
       "Luna IV",
       "Luna III",
@@ -1134,13 +1095,13 @@
        "t_raw": "Luna V의 총계는 3486개, Luna VI은 3547개, Luna VII은 3574개, Luna VIII은 3657개다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna V의 총계는 3486개, Luna VI은 3547개, Luna VII은 3574개, Luna VIII은 3657개다."
+       "t": "Luna V의 총계는 3486개, Luna VI은 3547개, Luna VII은 3574개, 여덟 번째 달은 3657개다."
       },
       {
        "t_raw": "Luna VII의 3574개와 Luna VIII의 3657개를 비교하면 83개가 늘어난 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "Luna VII의 3574개와 Luna VIII의 3657개를 비교하면 83개가 늘어난 셈이다."
+       "t": "Luna VII의 3574개와 여덟 번째 달의 3657개를 비교하면 83개가 늘어난 셈이다."
       }
      ],
      "sources": [
@@ -1182,9 +1143,7 @@
       "Luna",
       "Luna VI",
       "Luna VII",
-      "Luna VIII",
-      "Luna VII",
-      "Luna VIII"
+      "Luna VII"
      ]
     },
     {
@@ -1197,7 +1156,7 @@
        "t_raw": "Equipment의 총계는 Luna I 337개, Luna II 340개, Luna III 343개, Luna IV 349개다.",
        "interp": false,
        "dropped": false,
-       "t": "Equipment의 총계는 Luna I 337개, Luna II 340개, Luna III 343개, Luna IV 349개다."
+       "t": "Equipment의 총계는 Luna I 337개, 두 번째 달 340개, Luna III 343개, Luna IV 349개다."
       },
       {
        "t_raw": "Weapons는 220개, 223개, 226개, 228개로 늘어난다.",
@@ -1256,7 +1215,6 @@
      "latin_left": [
       "Equipment",
       "Luna",
-      "Luna II",
       "Luna III",
       "Luna IV",
       "Luna",
@@ -1275,7 +1233,7 @@
        "t_raw": "Equipment의 총계는 Luna V 350개, Luna VI 351개, Luna VII 357개, Luna VIII 358개다.",
        "interp": false,
        "dropped": false,
-       "t": "Equipment의 총계는 Luna V 350개, Luna VI 351개, Luna VII 357개, Luna VIII 358개다."
+       "t": "Equipment의 총계는 Luna V 350개, Luna VI 351개, Luna VII 357개, 여덟 번째 달 358개다."
       },
       {
        "t_raw": "Weapons는 229개, 230개, 232개, 233개다.",
@@ -1287,7 +1245,7 @@
        "t_raw": "Artifacts는 Luna V와 Luna VI에 121개, Luna VII와 Luna VIII에 125개다.",
        "interp": false,
        "dropped": false,
-       "t": "성유물은 Luna V와 Luna VI에 121개, Luna VII와 Luna VIII에 125개다."
+       "t": "성유물은 Luna V와 Luna VI에 121개, Luna VII와 여덟 번째 달에 125개다."
       }
      ],
      "sources": [
@@ -1330,11 +1288,9 @@
       "Luna",
       "Luna VI",
       "Luna VII",
-      "Luna VIII",
       "Luna",
       "Luna VI",
-      "Luna VII",
-      "Luna VIII"
+      "Luna VII"
      ]
     },
     {
@@ -1347,13 +1303,13 @@
        "t_raw": "Living Beings의 총계는 Luna I 515개, Luna II 516개, Luna III 518개, Luna IV 528개다.",
        "interp": false,
        "dropped": false,
-       "t": "Living Beings의 총계는 Luna I 515개, Luna II 516개, Luna III 518개, Luna IV 528개다."
+       "t": "생물지의 총계는 Luna I 515개, 두 번째 달 516개, Luna III 518개, Luna IV 528개다."
       },
       {
        "t_raw": "Enemies and Monsters는 318개, 319개, 320개, 327개이고 Wildlife는 197개, 197개, 198개, 201개다.",
        "interp": false,
        "dropped": false,
-       "t": "Enemies and Monsters는 318개, 319개, 320개, 327개이고 Wildlife는 197개, 197개, 198개, 201개다.",
+       "t": "적과 마물은 318개, 319개, 320개, 327개이고 Wildlife는 197개, 197개, 198개, 201개다.",
        "polish": {
         "from": "Enemies and Monsters는 318개, 319개, 320개, 327개이고 Wildlife는 197개, 197개, 198개, 201개다.",
         "text": "Enemies and Monsters는 318개, 319개, 320개, 327개이고 Wildlife는 197개, 197개, 198개, 201개다.",
@@ -1364,7 +1320,7 @@
        "t_raw": "Luna III의 Enemies and Monsters는 320개, Wildlife는 198개이고 Luna IV는 327개와 201개다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna III의 Enemies and Monsters는 320개, Wildlife는 198개이고 Luna IV는 327개와 201개다.",
+       "t": "Luna III의 적과 마물은 320개, Wildlife는 198개이고 Luna IV는 327개와 201개다.",
        "polish": {
         "from": "Luna III의 Enemies and Monsters는 320개, Wildlife는 198개이고 Luna IV는 327개와 201개다.",
         "text": "Luna III의 Enemies and Monsters는 320개, Wildlife는 198개이고 Luna IV는 327개와 201개다.",
@@ -1408,15 +1364,11 @@
      ],
      "heading": "판본별 변동",
      "latin_left": [
-      "Living Beings",
       "Luna",
-      "Luna II",
       "Luna III",
       "Luna IV",
-      "Enemies and Monsters",
       "Wildlife",
       "Luna III",
-      "Enemies and Monsters",
       "Wildlife",
       "Luna IV"
      ]
@@ -1431,13 +1383,13 @@
        "t_raw": "Living Beings의 총계는 Luna V 529개, Luna VI 535개, Luna VII 536개, Luna VIII 539개다.",
        "interp": false,
        "dropped": false,
-       "t": "Living Beings의 총계는 Luna V 529개, Luna VI 535개, Luna VII 536개, Luna VIII 539개다."
+       "t": "생물지의 총계는 Luna V 529개, Luna VI 535개, Luna VII 536개, 여덟 번째 달 539개다."
       },
       {
        "t_raw": "Enemies and Monsters는 328개, 330개, 331개, 332개이고 Wildlife는 201개, 205개, 205개, 207개다.",
        "interp": false,
        "dropped": false,
-       "t": "Enemies and Monsters는 328개, 330개, 331개, 332개이고 Wildlife는 201개, 205개, 205개, 207개다.",
+       "t": "적과 마물은 328개, 330개, 331개, 332개이고 Wildlife는 201개, 205개, 205개, 207개다.",
        "polish": {
         "from": "Enemies and Monsters는 328개, 330개, 331개, 332개이고 Wildlife는 201개, 205개, 205개, 207개다.",
         "text": "Enemies and Monsters는 328개, 330개, 331개, 332개이고 Wildlife는 201개, 205개, 205개, 207개다.",
@@ -1448,7 +1400,7 @@
        "t_raw": "Luna V에서 Luna VI로 Wildlife가 201개에서 205개로 늘고, Enemies and Monsters도 328개에서 330개가 된다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna V에서 Luna VI로 Wildlife가 201개에서 205개로 늘고, Enemies and Monsters도 328개에서 330개가 된다.",
+       "t": "Luna V에서 Luna VI로 Wildlife가 201개에서 205개로 늘고, 적과 마물도 328개에서 330개가 된다.",
        "polish": {
         "from": "Luna V에서 Luna VI로 Wildlife가 201개에서 205개로 늘고, Enemies and Monsters도 328개에서 330개가 된다.",
         "text": "Luna V에서 Luna VI로 Wildlife가 201개에서 205개로 늘고, Enemies and Monsters도 328개에서 330개가 된다.",
@@ -1492,17 +1444,13 @@
      ],
      "heading": "판본별 변동",
      "latin_left": [
-      "Living Beings",
       "Luna",
       "Luna VI",
       "Luna VII",
-      "Luna VIII",
-      "Enemies and Monsters",
       "Wildlife",
       "Luna",
       "Luna VI",
-      "Wildlife",
-      "Enemies and Monsters"
+      "Wildlife"
      ]
     },
     {
@@ -1515,7 +1463,7 @@
        "t_raw": "Tutorials의 총계는 Luna I 580개, Luna IV 610개, Luna VI 641개, Luna VII 643개, Luna VIII 686개다.",
        "interp": false,
        "dropped": false,
-       "t": "Tutorials의 총계는 Luna I 580개, Luna IV 610개, Luna VI 641개, Luna VII 643개, Luna VIII 686개다."
+       "t": "Tutorials의 총계는 Luna I 580개, Luna IV 610개, Luna VI 641개, Luna VII 643개, 여덟 번째 달 686개다."
       },
       {
        "t_raw": "Luna I의 내역은 Elements 21개, Enemies 142개, System 35개, Adventure 382개다.",
@@ -1527,7 +1475,7 @@
        "t_raw": "Luna VIII의 내역은 Elements 23개, Enemies 150개, System 39개, Adventure 474개다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna VIII의 내역은 Elements 23개, Enemies 150개, System 39개, Adventure 474개다."
+       "t": "여덟 번째 달의 내역은 Elements 23개, Enemies 150개, System 39개, Adventure 474개다."
       },
       {
        "t_raw": "Adventure 항목이 382개에서 474개로 늘어난 것이 총계 상승의 큰 부분을 차지한 것으로 보인다.",
@@ -1585,13 +1533,11 @@
       "Luna IV",
       "Luna VI",
       "Luna VII",
-      "Luna VIII",
       "Luna",
       "Elements",
       "Enemies",
       "System",
       "Adventure",
-      "Luna VIII",
       "Elements",
       "Enemies",
       "System",
@@ -1690,13 +1636,13 @@
        "t_raw": "Geography의 총계는 Luna I 212개, Luna IV 221개, Luna VI 229개, Luna VIII 248개다.",
        "interp": false,
        "dropped": false,
-       "t": "Geography의 총계는 Luna I 212개, Luna IV 221개, Luna VI 229개, Luna VIII 248개다."
+       "t": "Geography의 총계는 Luna I 212개, Luna IV 221개, Luna VI 229개, 여덟 번째 달 248개다."
       },
       {
        "t_raw": "Nod-Krai는 Luna I 13개, Luna IV 22개, Luna VIII 41개다.",
        "interp": false,
        "dropped": false,
-       "t": "노드크라이는 Luna I 13개, Luna IV 22개, Luna VIII 41개다."
+       "t": "노드크라이는 Luna I 13개, Luna IV 22개, 여덟 번째 달 41개다."
       },
       {
        "t_raw": "Mondstadt는 Luna VI에 13개가 되고, Temple of Space 5개가 나타난다.",
@@ -1708,7 +1654,7 @@
        "t_raw": "Luna I부터 Luna VIII까지 Geography의 증가는 Nod-Krai와 Mondstadt, Temple of Space 쪽 변화가 주도한 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "Luna I부터 Luna VIII까지 Geography의 증가는 노드크라이와 몬드, 공간의 신전 쪽 변화가 주도한 것으로 보인다."
+       "t": "Luna I부터 여덟 번째 달까지 Geography의 증가는 노드크라이와 몬드, 공간의 신전 쪽 변화가 주도한 것으로 보인다."
       }
      ],
      "sources": [
@@ -1751,13 +1697,10 @@
       "Luna",
       "Luna IV",
       "Luna VI",
-      "Luna VIII",
       "Luna",
       "Luna IV",
-      "Luna VIII",
       "Luna VI",
       "Luna",
-      "Luna VIII",
       "Geography"
      ]
     },
@@ -1771,7 +1714,7 @@
        "t_raw": "Travel Log는 3.0 221개, 4.0 273개, 5.0 350개, Luna I 418개, Luna VIII 473개다.",
        "interp": false,
        "dropped": false,
-       "t": "Travel Log는 3.0 221개, 4.0 273개, 5.0 350개, Luna I 418개, Luna VIII 473개다."
+       "t": "여행 일지는 3.0 221개, 4.0 273개, 5.0 350개, Luna I 418개, 여덟 번째 달 473개다."
       },
       {
        "t_raw": "Luna I의 내역은 Archon Quests 189개, Story Quests 196개, Tribal Chronicles 33개다.",
@@ -1783,13 +1726,13 @@
        "t_raw": "Luna IV에는 Event Quests 13개가 표에 잡히고, Luna VIII에는 17개가 된다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna IV에는 Event Quests 13개가 표에 잡히고, Luna VIII에는 17개가 된다."
+       "t": "Luna IV에는 이벤트 임무 13개가 표에 잡히고, 여덟 번째 달에는 17개가 된다."
       },
       {
        "t_raw": "Tribal Chronicles는 Luna I과 Luna VIII 모두 33개로 같다.",
        "interp": false,
        "dropped": false,
-       "t": "부족 견문은 Luna I과 Luna VIII 모두 33개로 같다."
+       "t": "부족 견문은 Luna I과 여덟 번째 달 모두 33개로 같다."
       }
      ],
      "sources": [
@@ -1844,15 +1787,10 @@
      ],
      "heading": "판본별 변동",
      "latin_left": [
-      "Travel Log",
       "Luna",
-      "Luna VIII",
       "Luna",
       "Luna IV",
-      "Event Quests",
-      "Luna VIII",
-      "Luna",
-      "Luna VIII"
+      "Luna"
      ]
     },
     {
@@ -1865,19 +1803,19 @@
        "t_raw": "Books의 총계는 Luna I, Luna II, Luna III 모두 254개다.",
        "interp": false,
        "dropped": false,
-       "t": "Books의 총계는 Luna I, Luna II, Luna III 모두 254개다."
+       "t": "Books의 총계는 Luna I, 두 번째 달, Luna III 모두 254개다."
       },
       {
        "t_raw": "Luna IV는 257개, Luna VI은 259개, Luna VIII은 261개다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna IV는 257개, Luna VI은 259개, Luna VIII은 261개다."
+       "t": "Luna IV는 257개, Luna VI은 259개, 여덟 번째 달은 261개다."
       },
       {
        "t_raw": "Luna I에서 Luna VIII까지 Books의 총계는 254개에서 261개로 늘어난다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna I에서 Luna VIII까지 Books의 총계는 254개에서 261개로 늘어난다."
+       "t": "Luna I에서 여덟 번째 달까지 Books의 총계는 254개에서 261개로 늘어난다."
       }
      ],
      "sources": [
@@ -1934,13 +1872,10 @@
      "latin_left": [
       "Books",
       "Luna",
-      "Luna II",
       "Luna III",
       "Luna IV",
       "Luna VI",
-      "Luna VIII",
       "Luna",
-      "Luna VIII",
       "Books"
      ]
     },
@@ -1954,13 +1889,13 @@
        "t_raw": "Materials의 총계는 Luna I 1018개, Luna IV 1057개, Luna VIII 1092개다.",
        "interp": false,
        "dropped": false,
-       "t": "Materials의 총계는 Luna I 1018개, Luna IV 1057개, Luna VIII 1092개다."
+       "t": "Materials의 총계는 Luna I 1018개, Luna IV 1057개, 여덟 번째 달 1092개다."
       },
       {
        "t_raw": "Luna I의 내역은 Teyvat's Resources 110개, Food and Potions 430개, Trophies 399개, Utility Items 79개다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna I의 내역은 티바트의 Resources 110개, Food and Potions 430개, Trophies 399개, Utility Items 79개다.",
+       "t": "Luna I의 내역은 티바트의 Resources 110개, 음식 및 포션 430개, Trophies 399개, 간편 아이템 79개다.",
        "polish": {
         "from": "Luna I의 내역은 티바트의 Resources 110개, Food and Potions 430개, Trophies 399개, Utility Items 79개다.",
         "text": "Luna I의 내역은 티바트의 Resources 110개, Food and Potions 430개, Trophies 399개, Utility Items 79개다.",
@@ -1971,7 +1906,7 @@
        "t_raw": "Luna VIII에는 Teyvat's Resources 115개, Food and Potions 470개, Trophies 420개, Utility Items 87개가 된다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna VIII에는 티바트의 Resources 115개, Food and Potions 470개, Trophies 420개, Utility Items 87개가 된다.",
+       "t": "여덟 번째 달에는 티바트의 Resources 115개, 음식 및 포션 470개, Trophies 420개, 간편 아이템 87개가 된다.",
        "polish": {
         "from": "Luna VIII에는 티바트의 Resources 115개, Food and Potions 470개, Trophies 420개, Utility Items 87개가 된다.",
         "text": "Luna VIII에는 티바트의 Resources 115개, Food and Potions 470개, Trophies 420개, Utility Items 87개가 된다.",
@@ -1982,7 +1917,7 @@
        "t_raw": "Food and Potions가 430개에서 470개로 늘어난 변화가 가장 큰 축으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "Food and Potions가 430개에서 470개로 늘어난 변화가 가장 큰 축으로 보인다.",
+       "t": "음식 및 포션이 430개에서 470개로 늘어난 변화가 가장 큰 축으로 보인다.",
        "polish": {
         "from": "Food and Potions가 430개에서 470개로 늘어난 변화가 가장 큰 축으로 보인다.",
         "text": "Food and Potions가 430개에서 470개로 늘어난 변화가 가장 큰 축으로 보인다.",
@@ -2021,18 +1956,11 @@
       "Materials",
       "Luna",
       "Luna IV",
-      "Luna VIII",
       "Luna",
       "Resources",
-      "Food and Potions",
       "Trophies",
-      "Utility Items",
-      "Luna VIII",
       "Resources",
-      "Food and Potions",
-      "Trophies",
-      "Utility Items",
-      "Food and Potions"
+      "Trophies"
      ]
     },
     {
@@ -2051,7 +1979,7 @@
        "t_raw": "Luna VIII의 분류별 합계는 **3657**개다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna VIII의 분류별 합계는 **3657**개다."
+       "t": "여덟 번째 달의 분류별 합계는 **3657**개다."
       },
       {
        "t_raw": "일부 음식 항목은 획득 전까지 보이지 않아 Archive 총 항목 수와 차이를 만든다.",
@@ -2063,7 +1991,7 @@
        "t_raw": "7.0 전체 3863개와 Luna VIII 분류표 합계 3657개의 차이는 이런 보이지 않는 항목과 관련될 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "7.0 전체 3863개와 Luna VIII 분류표 합계 3657개의 차이는 이런 보이지 않는 항목과 관련될 수 있다."
+       "t": "7.0 전체 3863개와 여덟 번째 달 분류표 합계 3657개의 차이는 이런 보이지 않는 항목과 관련될 수 있다."
       }
      ],
      "sources": [
@@ -2093,10 +2021,7 @@
       }
      ],
      "heading": "판본별 변동",
-     "latin_left": [
-      "Luna VIII",
-      "Luna VIII"
-     ]
+     "latin_left": []
     },
     {
      "section": "세계관 속의 Archive",
@@ -2152,13 +2077,13 @@
        "t_raw": "Paimon은 어떤 항목이 **Arcane Archive**에 들어 있는 것을 보고 의아해한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 어떤 항목이 **Arcane Archive**에 들어 있는 것을 보고 의아해한다."
+       "t": "페이몬은 어떤 항목이 **도서관**에 들어 있는 것을 보고 의아해한다."
       },
       {
        "t_raw": "Customs of Liyue: Flower Ball이 Book Archive에 추가된다는 대사가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "리월 풍토지: Flower Ball이 Book Archive에 추가된다는 대사가 있다."
+       "t": "리월 풍토지: 수구가 서적 도감에 추가된다는 대사가 있다."
       },
       {
        "t_raw": "House of Daena의 일부 책은 Archive에 들어가지 않고 Quest Items로 남는다.",
@@ -2212,11 +2137,7 @@
       }
      ],
      "heading": "세계관 속의 도감",
-     "latin_left": [
-      "Arcane Archive",
-      "Flower Ball",
-      "Book Archive"
-     ]
+     "latin_left": []
     },
     {
      "section": "세계관 속의 Archive",
@@ -2378,7 +2299,7 @@
        "t_raw": "Paimon은 어떤 대상이 Arcane Archive에 있는 이유를 의아해한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 어떤 대상이 Arcane Archive에 있는 이유를 의아해한다."
+       "t": "페이몬은 어떤 대상이 도서관에 있는 이유를 의아해한다."
       },
       {
        "t_raw": "Paimon은 Neuvillette가 사건 파일 아카이브를 관리하는지 묻고, 그를 일 잘하는 Chief Justice라고 말한다.",
@@ -2396,7 +2317,7 @@
        "t_raw": "Arcane Archive, **사건 파일 아카이브**, 후속 사건의 보고가 한데 놓이면서 Archive가 여러 맥락의 기록을 가리키는 이름으로도 쓰이는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "Arcane Archive, **사건 파일 아카이브**, 후속 사건의 보고가 한데 놓이면서 도감이 여러 맥락의 기록을 가리키는 이름으로도 쓰이는 것으로 보인다."
+       "t": "도서관, **사건 파일 아카이브**, 후속 사건의 보고가 한데 놓이면서 도감이 여러 맥락의 기록을 가리키는 이름으로도 쓰이는 것으로 보인다."
       }
      ],
      "sources": [
@@ -2423,10 +2344,7 @@
       }
      ],
      "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Arcane Archive",
-      "Arcane Archive"
-     ]
+     "latin_left": []
     },
     {
      "section": "얽힌 인물과 세력",
@@ -2444,7 +2362,7 @@
        "t_raw": "Soraya의 대화에서는 Customs of Liyue: Flower Ball이 Book Archive에 추가된다.",
        "interp": false,
        "dropped": false,
-       "t": "소라야의 대화에서는 리월 풍토지: Flower Ball이 Book Archive에 추가된다."
+       "t": "소라야의 대화에서는 리월 풍토지: 수구가 서적 도감에 추가된다."
       },
       {
        "t_raw": "Eye of Graeae의 Prime Ice Construct Archive는 청사진으로 해금한 Prime Ice Constructs 정보를 담고, Eye of Graeae의 가젯 인터페이스에서 접근할 수 있다.",
@@ -2456,7 +2374,7 @@
        "t_raw": "책을 Quest Items로 남기는 House of Daena와 Book Archive, 청사진으로 여는 **Prime Ice Construct Archive**를 나란히 보면 Archive가 수집과 보관의 경로가 다른 기록 체계로 갈라지는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "책을 퀘스트 아이템으로 남기는 지혜궁과 Book Archive, 청사진으로 여는 **순얼음 창조물 도감**을 나란히 보면 도감이 수집과 보관의 경로가 다른 기록 체계로 갈라지는 것으로 보인다."
+       "t": "책을 퀘스트 아이템으로 남기는 지혜궁과 서적 도감, 청사진으로 여는 **순얼음 창조물 도감**을 나란히 보면 도감이 수집과 보관의 경로가 다른 기록 체계로 갈라지는 것으로 보인다."
       }
      ],
      "sources": [
@@ -2486,11 +2404,7 @@
       }
      ],
      "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Flower Ball",
-      "Book Archive",
-      "Book Archive"
-     ]
+     "latin_left": []
     },
     {
      "section": "떡밥과 수수께끼",
@@ -2508,7 +2422,7 @@
        "t_raw": "Tutorial의 “Show Cursor” 항목은 PC로 플레이해야 해금할 수 있어 모든 플레이어가 모든 항목을 열 수 있는 것은 아니다.",
        "interp": false,
        "dropped": false,
-       "t": "튜토리얼의 “Show Cursor” 항목은 PC로 플레이해야 해금할 수 있어 모든 플레이어가 모든 항목을 열 수 있는 것은 아니다."
+       "t": "튜토리얼의 “커서 표시” 항목은 PC로 플레이해야 해금할 수 있어 모든 플레이어가 모든 항목을 열 수 있는 것은 아니다."
       },
       {
        "t_raw": "일부 특제 요리 항목은 한정 배너에만 등장해 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일 당일 게임에 접속하면 해당 캐릭터가 없어도 우편으로 받을 수 있다.",
@@ -2563,7 +2477,6 @@
      ],
      "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Show Cursor",
       "PC"
      ]
     },
@@ -2577,7 +2490,7 @@
        "t_raw": "Utility Items에서 얻을 수 있는 항목 수는 최대 79개로 제한된다.",
        "interp": false,
        "dropped": false,
-       "t": "Utility Items에서 얻을 수 있는 항목 수는 최대 79개로 제한된다."
+       "t": "간편 아이템에서 얻을 수 있는 항목 수는 최대 79개로 제한된다."
       },
       {
        "t_raw": "게임 내 이벤트로 6종의 Mini Seelie가 등장해 각각 Archive 항목을 추가하지만, 이벤트마다 하나를 선택할 수 있어 한 계정에서는 지금까지 최대 4종만 얻을 수 있기 때문이다.",
@@ -2603,9 +2516,7 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Utility Items"
-     ]
+     "latin_left": []
     },
     {
      "section": "떡밥과 수수께끼",
@@ -2623,7 +2534,7 @@
        "t_raw": "Equipment에서는 Dark Iron Sword가, Enemies and Monsters에서는 Hydro Mimics와 Millelith, Shogunate Samurai 등이 누락되어 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Equipment에서는 암철검이, Enemies and Monsters에서는 Hydro Mimics와 천암군, 막부 무사 등이 누락되어 있다.",
+       "t": "Equipment에서는 암철검이, 적과 마물에서는 물의 환령과 천암군, 막부 무사 등이 누락되어 있다.",
        "polish": {
         "from": "Equipment에서는 암철검이, Enemies and Monsters에서는 Hydro Mimics와 천암군, 막부 무사 등이 누락되어 있다.",
         "text": "Equipment에서는 암철검이, Enemies and Monsters에서는 Hydro Mimics와 천암군, 막부 무사 등이 누락되어 있다.",
@@ -2634,7 +2545,7 @@
        "t_raw": "Wildlife에서는 Lucklight Fly와 Malachitin Lumibug를 제외한 Butterflies and Fireflies와 Venerable Jadestone Turtle이, Materials에서는 Strange Tooth, Crocodile Jerky, A Magical Mix, Fishing Rods, “Yelena”가 같은 목록에 오른다.",
        "interp": false,
        "dropped": false,
-       "t": "Wildlife에서는 행운의 빛 벌레와 옥빛 벌레를 제외한 Butterflies and Fireflies와 고대 패옥 거북이, Materials에서는 기이한 「이빨」, 악어 육포, A Magical Mix, Fishing Rods, “옐레나”가 같은 목록에 오른다.",
+       "t": "Wildlife에서는 행운의 빛 벌레와 옥빛 벌레를 제외한 나비와 반딧불이와 고대 패옥 거북이, Materials에서는 기이한 「이빨」, 악어 육포, A 특제 마술 음료, 낚싯대, “옐레나”가 같은 목록에 오른다.",
        "polish": {
         "from": "Wildlife에서는 행운의 빛 벌레와 옥빛 벌레를 제외한 Butterflies and Fireflies와 고대 패옥 거북이, Materials에서는 기이한 「이빨」, 악어 육포, A Magical Mix, Fishing Rods, “옐레나”가 같은 목록에 오른다.",
         "text": "Wildlife에서는 행운의 빛 벌레와 옥빛 벌레를 제외한 Butterflies and Fireflies와 고대 패옥 거북이, Materials에서는 기이한 「이빨」, 악어 육포, A Magical Mix, Fishing Rods, “옐레나”가 같은 목록에 오른다.",
@@ -2645,7 +2556,7 @@
        "t_raw": "Equipment, Living Beings, Materials라는 서로 다른 갈래에서 누락이 확인되는 만큼, 이 빈틈은 한 분류에 국한된 실수가 아니라 **여러 분류에 걸친 수록 공백**으로 보인다.",
        "interp": true,
        "dropped": true,
-       "t": "Equipment, Living Beings, Materials라는 서로 다른 갈래에서 누락이 확인되는 만큼, 이 빈틈은 한 분류에 국한된 실수가 아니라 **여러 분류에 걸친 수록 공백**으로 보인다."
+       "t": "Equipment, 생물지, Materials라는 서로 다른 갈래에서 누락이 확인되는 만큼, 이 빈틈은 한 분류에 국한된 실수가 아니라 **여러 분류에 걸친 수록 공백**으로 보인다."
       }
      ],
      "sources": [
@@ -2701,13 +2612,8 @@
      "heading": "떡밥과 수수께끼",
      "latin_left": [
       "Equipment",
-      "Enemies and Monsters",
-      "Hydro Mimics",
       "Wildlife",
-      "Butterflies and Fireflies",
-      "Materials",
-      "Magical Mix",
-      "Fishing Rods"
+      "Materials"
      ]
     },
     {
@@ -2726,22 +2632,22 @@
        "t_raw": "Uncategorized tutorials는 Archive에 추가되지 않으며, Starlight Prisms는 Prism Mirage로 만들어져도 Archive에 실리지 않고 Prime Ice Constructs와 비슷하게 행동한다.",
        "interp": false,
        "dropped": false,
-       "t": "Uncategorized tutorials는 도감에 추가되지 않으며, Starlight Prisms는 프리즘 신기루로 만들어져도 도감에 실리지 않고 순얼음 창조물과 비슷하게 행동한다.",
+       "t": "미분류 튜토리얼은 도감에 추가되지 않으며, 별빛 프리즘은 프리즘 신기루로 만들어져도 도감에 실리지 않고 순얼음 창조물과 비슷하게 행동한다.",
        "polish": {
-        "from": "Uncategorized tutorials는 도감에 추가되지 않으며, Starlight Prisms는 프리즘 신기루로 만들어져도 도감에 실리지 않고 순얼음 창조물과 비슷하게 행동한다.",
-        "text": "Uncategorized tutorials는 도감에 추가되지 않으며, Starlight Prisms는 프리즘 신기루로 만들어져도 도감에 실리지 않고 순얼음 창조물과 비슷하게 행동한다.",
-        "by": "glm-flash"
+        "from": "미분류 tutorials는 도감에 추가되지 않으며, 별빛 프리즘은 프리즘 신기루로 만들어져도 도감에 실리지 않고 순얼음 창조물과 비슷하게 행동한다.",
+        "text": "미분류 튜토리얼은 도감에 추가되지 않으며, 별빛 프리즘은 프리즘 신기루로 만들어져도 도감에 실리지 않고 순얼음 창조물과 비슷하게 행동한다.",
+        "by": "or-ds"
        }
       },
       {
        "t_raw": "Shogunate forces는 Archon Quests에서 적으로 등장하지만 “Living Beings / Enemies and Monsters”에서 찾을 수 없고, 특정 Archon Quests 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
        "interp": false,
        "dropped": false,
-       "t": "막부 병력은 마신 임무에서 적으로 등장하지만 “Living Beings / Enemies and Monsters”에서 찾을 수 없고, 특정 마신 임무 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
+       "t": "막부군은 마신 임무에서 적으로 등장하지만 “생물지 / 적과 마물”에서 찾을 수 없고, 특정 마신 임무 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
        "polish": {
-        "from": "막부 forces는 마신 임무에서 적으로 등장하지만 “Living Beings / Enemies and Monsters”에서 찾을 수 없고, 특정 마신 임무 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
-        "text": "막부 병력은 마신 임무에서 적으로 등장하지만 “Living Beings / Enemies and Monsters”에서 찾을 수 없고, 특정 마신 임무 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
-        "by": "glm-flash"
+        "from": "막부 forces는 마신 임무에서 적으로 등장하지만 “생물지 / 적과 마물”에서 찾을 수 없고, 특정 마신 임무 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
+        "text": "막부군은 마신 임무에서 적으로 등장하지만 “생물지 / 적과 마물”에서 찾을 수 없고, 특정 마신 임무 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
+        "by": "or-ds"
        }
       },
       {
@@ -2778,12 +2684,7 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Uncategorized",
-      "Starlight Prisms",
-      "Living Beings",
-      "Enemies and Monsters"
-     ]
+     "latin_left": []
     },
     {
      "section": "떡밥과 수수께끼",
@@ -2852,7 +2753,7 @@
        "t_raw": "무기 항목에서 얻은 무기의 **Alternate Ascension Appearance**도 Archive에 등록되지만, 항목 수에는 포함되지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "무기 항목에서 얻은 무기의 **Alternate Ascension Appearance**도 도감에 등록되지만, 항목 수에는 포함되지 않는다."
+       "t": "무기 항목에서 얻은 무기의 **돌파 후 외형**도 도감에 등록되지만, 항목 수에는 포함되지 않는다."
       },
       {
        "t_raw": "그래서 모습이 새로 등록되어도 전체 항목 수는 늘지 않는다.",
@@ -2864,7 +2765,7 @@
        "t_raw": "PC가 아닌 기기에서는 **Show Cursor** 튜토리얼이 없어 System 범주 항목이 하나 적다.",
        "interp": false,
        "dropped": false,
-       "t": "PC가 아닌 기기에서는 **Show Cursor** 튜토리얼이 없어 System 범주 항목이 하나 적다."
+       "t": "PC가 아닌 기기에서는 **커서 표시** 튜토리얼이 없어 System 범주 항목이 하나 적다."
       }
      ],
      "sources": [
@@ -2887,9 +2788,7 @@
      ],
      "heading": "여담",
      "latin_left": [
-      "Alternate Ascension Appearance",
       "PC",
-      "Show Cursor",
       "System"
      ]
     },
@@ -2903,7 +2802,7 @@
        "t_raw": "Travel Log에는 Unreconciled Stars와 The Chalk Prince and the Dragon 같은 이벤트 퀘스트가 들어가지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "Travel Log에는 돌아오지 않는 꺼진 별과 백악과 흑룡 같은 이벤트 퀘스트가 들어가지 않는다."
+       "t": "여행 일지에는 돌아오지 않는 꺼진 별과 백악과 흑룡 같은 이벤트 퀘스트가 들어가지 않는다."
       },
       {
        "t_raw": "Books는 1.1 업데이트 이후 Archive에서만 접근할 수 있어 인벤토리 슬롯을 차지하지 않는다.",
@@ -2952,7 +2851,6 @@
      ],
      "heading": "여담",
      "latin_left": [
-      "Travel Log",
       "Books"
      ]
     },
@@ -2966,7 +2864,7 @@
        "t_raw": "Food and Potions의 많은 항목은 특정 캐릭터와 요리해야만 얻는 특제 요리이며, 한정 배너 때문에 놓치기 쉽다고 여겨질 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Food and Potions의 많은 항목은 특정 캐릭터와 요리해야만 얻는 특제 요리이며, 한정 배너 때문에 놓치기 쉽다고 여겨질 수 있다.",
+       "t": "음식 및 포션의 많은 항목은 특정 캐릭터와 요리해야만 얻는 특제 요리이며, 한정 배너 때문에 놓치기 쉽다고 여겨질 수 있다.",
        "polish": {
         "from": "Food and Potions의 많은 항목은 특정 캐릭터와 요리해야만 얻는 특제 요리이며, 한정 배너 때문에 놓치기 쉽다고 여겨질 수 있다.",
         "text": "Food and Potions의 많은 항목은 특정 캐릭터와 요리해야만 얻는 특제 요리이며, 한정 배너 때문에 놓치기 쉽다고 여겨질 수 있다.",
@@ -2983,14 +2881,14 @@
        "t_raw": "Utility Items에서는 **Mini Seelie**가 6종이 있었지만 한 계정에서 최대 4종까지만 얻을 수 있어, 현재 최대 79개 항목만 획득 가능하다.",
        "interp": false,
        "dropped": false,
-       "t": "Utility Items에서는 **꼬마 선령**이 6종이 있었지만 한 계정에서 최대 4종까지만 얻을 수 있어, 현재 최대 79개 항목만 획득 가능하다."
+       "t": "간편 아이템에서는 **꼬마 선령**이 6종이 있었지만 한 계정에서 최대 4종까지만 얻을 수 있어, 현재 최대 79개 항목만 획득 가능하다."
       },
       {
        "t_raw": "Utility Items에서 얻을 수 있는 항목 수가 최대 79개로 제한되는 것은, 이벤트마다 6종의 Mini Seelie 중 하나만 선택할 수 있어 한 계정에서 최대 4종까지만 얻을 수 있기 때문으로 보인다.",
        "interp": true,
        "dropped": false,
        "repaired": true,
-       "t": "Utility Items에서 얻을 수 있는 항목 수가 최대 79개로 제한되는 것은, 이벤트마다 6종의 꼬마 선령 중 하나만 선택할 수 있어 한 계정에서 최대 4종까지만 얻을 수 있기 때문으로 보인다."
+       "t": "간편 아이템에서 얻을 수 있는 항목 수가 최대 79개로 제한되는 것은, 이벤트마다 6종의 꼬마 선령 중 하나만 선택할 수 있어 한 계정에서 최대 4종까지만 얻을 수 있기 때문으로 보인다."
       }
      ],
      "sources": [
@@ -3012,11 +2910,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Food and Potions",
-      "Utility Items",
-      "Utility Items"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [

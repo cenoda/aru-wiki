@@ -1,0 +1,421 @@
+{
+ "node": "Hot Pot Game",
+ "articles": [
+  {
+   "node": "Hot Pot Game",
+   "from_version": "2.4",
+   "cutoff": "2022-02-15T00:00:00Z",
+   "input": [
+    {
+     "page": "Hot Pot Game",
+     "url": "https://genshin-impact.fandom.com/wiki/Hot_Pot_Game",
+     "revision": 554047
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 5,
+    "web": 0
+   },
+   "input_chars": 1141,
+   "input_cut": false,
+   "input_hash": "7225d29eb34f",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English. The sentence 3 interpretation is mild and reads as interpretation.",
+     "quote": "The Hot Pot Game is a guessing game which is often played between 2 or more people.",
+     "sentences": [
+      {
+       "t_raw": "Hot Pot Game은 2명 이상이 함께 즐기는 추리 게임이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전골 게임은 2명 이상이 함께 즐기는 추리 게임이다."
+      },
+      {
+       "t_raw": "Thoma가 Traveler에게 Chapter II: Act I의 A Flower Blooms in a Prison에서 처음 언급했고, Yun Jin의 Hangout Event Half a Day's Leisure에서도 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "토마가 여행자에게 제2장: Act I의 옥중에서 피어나는 꽃에서 처음 언급했고, 운근의 무대 아래 반나절의 여가 a 한나절의 여유에서도 등장한다."
+      },
+      {
+       "t_raw": "각자 재료를 준비해 한 냄비에 넣고, 눈을 감고 맛본 뒤 누구의 재료인지 맞히는 방식으로 진행된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "각자 재료를 준비해 한 냄비에 넣고, 눈을 감고 맛본 뒤 누구의 재료인지 맞히는 방식으로 진행된다."
+      },
+      {
+       "t_raw": "우승자에게 God of Hot Pot의 축복이 따른다는 전통은 게임이 단순한 식사 놀이에 그치지 않음을 보여 주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "우승자에게 훠궈의 신의 축복이 따른다는 전통은 게임이 단순한 식사 놀이에 그치지 않음을 보여 주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Rules",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Rules",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Rules",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Act"
+     ]
+    },
+    {
+     "section": "규칙과 진행",
+     "status": "accepted",
+     "note": "Rules match Thoma's quoted lines. The interpretation follows from them.",
+     "quote": "Simply put, every person prepares an ingredient to add to the hot pot. Once the meal begins, we add all the ingredients together.",
+     "sentences": [
+      {
+       "t_raw": "Hot Pot Game의 규칙은 Thoma가 전한 바에 따르면, **각자 재료를 준비해** 식사가 시작되면 모두의 재료를 함께 넣는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전골 게임의 규칙은 토마가 전한 바에 따르면, **각자 재료를 준비해** 식사가 시작되면 모두의 재료를 함께 넣는 것이다."
+      },
+      {
+       "t_raw": "이어서 차례로 눈을 감고 냄비에서 재료를 하나 집어 맛본 뒤 누구의 재료인지 맞힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 차례로 눈을 감고 냄비에서 재료를 하나 집어 맛본 뒤 누구의 재료인지 맞힌다."
+      },
+      {
+       "t_raw": "정답을 맞힌 사람은 다시 기회를 얻고, 식사를 마쳤을 때 **점수가 가장 많은 사람**이 우승자가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정답을 맞힌 사람은 다시 기회를 얻고, 식사를 마쳤을 때 **점수가 가장 많은 사람**이 우승자가 된다."
+      },
+      {
+       "t_raw": "재료를 함께 넣는 단계와 눈을 감고 맛을 보는 단계가 이어지므로, 이 게임은 같은 냄비를 매개로 서로의 재료를 맞히는 놀이로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "재료를 함께 넣는 단계와 눈을 감고 맛을 보는 단계가 이어지므로, 이 게임은 같은 냄비를 매개로 서로의 재료를 맞히는 놀이로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Rules",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Rules",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Rules",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Rules",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "규칙과 진행",
+     "latin_left": []
+    },
+    {
+     "section": "변형과 God of Hot Pot",
+     "status": "accepted",
+     "note": "Matches the note on Yun Jin's variation. The interpretations are reasonable.",
+     "quote": "Note that in Yun Jin's variation of the game, only one player adds the ingredients while the other guesses (also there was no winner determined).",
+     "sentences": [
+      {
+       "t_raw": "**Yun Jin의 변형**에서는 한 사람이 재료를 넣고 다른 사람이 맞힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**운근의 변형**에서는 한 사람이 재료를 넣고 다른 사람이 맞힌다."
+      },
+      {
+       "t_raw": "이 변형에서는 우승자를 정하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 변형에서는 우승자를 정하지 않는다."
+      },
+      {
+       "t_raw": "재료를 넣는 쪽과 맞히는 쪽이 나뉘므로, 이 놀이에서는 참가자마다 맡는 역할이 뚜렷해지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "재료를 넣는 쪽과 맞히는 쪽이 나뉘므로, 이 놀이에서는 참가자마다 맡는 역할이 뚜렷해지는 셈이다."
+      },
+      {
+       "t_raw": "우승자를 정하지 않는 만큼, 이 변형은 우승자보다 맞히는 과정 자체에 무게가 실린 모습이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "우승자를 정하지 않는 만큼, 이 변형은 우승자보다 맞히는 과정 자체에 무게가 실린 모습이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Rules",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "변형과 훠궈의 신",
+     "latin_left": []
+    },
+    {
+     "section": "변형과 God of Hot Pot",
+     "status": "accepted",
+     "note": "The blessing and the 'edible enough' rule are both in A7. The contrast with Yun Jin's variation is a fair interpretation.",
+     "quote": "Along with the title of winner, apparently tradition has it that the winner also receives blessings from the God of Hot Pot.",
+     "sentences": [
+      {
+       "t_raw": "우승자라는 칭호와 함께, 전하는 바에 따르면 우승자는 **God of Hot Pot의 축복**도 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "우승자라는 칭호와 함께, 전하는 바에 따르면 우승자는 **훠궈의 신의 축복**도 받는다."
+      },
+      {
+       "t_raw": "규칙상 '먹을 수 있다'고 여겨질 만큼 충분하면 무엇이든 냄비에 넣을 수 있어, 거의 무엇이든 가능하다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "규칙상 '먹을 수 있다'고 여겨질 만큼 충분하면 무엇이든 냄비에 넣을 수 있어, 거의 무엇이든 가능하다고 한다."
+      },
+      {
+       "t_raw": "우승자를 정하지 않는 Yun Jin의 변형과 달리, 우승자에게 God of Hot Pot의 축복이 따른다는 전통은 승자를 전제하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "우승자를 정하지 않는 운근의 변형과 달리, 우승자에게 훠궈의 신의 축복이 따른다는 전통은 승자를 전제하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Rules",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Rules",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "변형과 훠궈의 신",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "The quotes from Thoma and Paimon are supported. Sentence 1 merges lines from two different quests, but each claim is stated. Not a fact failure.",
+     "quote": "Funny enough, I learned a new \"hot pot game\" recently. I'm sure you'll find it quite amusing!",
+     "sentences": [
+      {
+       "t_raw": "Hot Pot Game은 Thoma가 Traveler에게 Chapter II: Act I quest A Flower Blooms in a Prison에서 처음 언급한 놀이이며, Thoma는 새로 배운 \"hot pot game\"이라며 Traveler가 재미있어할 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전골 게임은 토마가 여행자에게 제2장: 제1막 퀘스트 옥중에서 피어나는 꽃에서 처음 언급한 놀이이며, 토마는 새로 배운 \"전골 게임\"이라며 여행자가 재미있어할 것이라고 말한다.",
+       "polish": {
+        "from": "전골 게임은 토마가 여행자에게 제2장: Act I quest 옥중에서 피어나는 꽃에서 처음 언급한 놀이이며, 토마는 새로 배운 \"hot pot game\"이라며 여행자가 재미있어할 것이라고 말한다.",
+        "text": "전골 게임은 토마가 여행자에게 제2장: 제1막 퀘스트 옥중에서 피어나는 꽃에서 처음 언급한 놀이이며, 토마는 새로 배운 \"전골 게임\"이라며 여행자가 재미있어할 것이라고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Thoma는 Traveler에게 Hot Pot Game을 다시 하자고 권하고, Paimon은 무엇인지 묻다가 먹는 일과 관련된 것이라면 된다는 식으로 반응한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "토마는 여행자에게 전골 게임을 다시 하자고 권하고, 페이몬은 무엇인지 묻다가 먹는 일과 관련된 것이라면 된다는 식으로 반응한다."
+      },
+      {
+       "t_raw": "새로 배운 놀이를 소개한 뒤 다시 권하는 모습은 그가 이 놀이를 Traveler와 나눌 거리로 여겼다는 뜻으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "새로 배운 놀이를 소개한 뒤 다시 권하는 모습은 그가 이 놀이를 여행자와 나눌 거리로 여겼다는 뜻으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Flower Blooms in a Prison",
+       "quest_ko": "옥중에서 피어나는 꽃",
+       "version": "2.0",
+       "speaker": "Thoma"
+      },
+      {
+       "kind": "quest",
+       "quest": "Proof of Guilt",
+       "quest_ko": "정죄의 공문",
+       "version": "2.1",
+       "speaker": "Thoma"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Flower Blooms in a Prison",
+       "quest_ko": "옥중에서 피어나는 꽃",
+       "version": "2.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "Both Yun Jin lines are given (Q1 and Q4), and the interpretation follows from them.",
+     "quote": "Let's play the hot pot game with the leftover drinks!",
+     "sentences": [
+      {
+       "t_raw": "Yun Jin은 Hangout Event \"Half a Day's Leisure\"에서 Hot Pot Game을 언급하며 상대에게 들어본 적 있는지 묻고, 남은 음료로 Hot Pot Game을 하자고 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운근은 초대 이벤트 \"무대 아래 반나절의 여가\"에서 전골 게임을 언급하며 상대에게 들어본 적 있는지 묻고, 남은 음료로 전골 게임을 하자고 제안한다."
+      },
+      {
+       "t_raw": "이 제안은 그녀가 Hot Pot Game을 함께 할 수 있는 놀이로 여겼다는 뜻으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 제안은 그녀가 전골 게임을 함께 할 수 있는 놀이로 여겼다는 뜻으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Half a Day's Leisure",
+       "quest_ko": "무대 아래 반나절의 여가",
+       "version": "2.4",
+       "speaker": "Yun Jin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Half a Day's Leisure",
+       "quest_ko": "무대 아래 반나절의 여가",
+       "version": "2.4",
+       "speaker": "Yun Jin"
+      }
+     ],
+     "heading": "작중 행적",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "A8 says a list of ingredients used in all mentioned games is given; the Korean restates this fairly.",
+     "quote": "A list of ingredients that have been used in all mentioned games:",
+     "sentences": [
+      {
+       "t_raw": "Hot Pot Game 관련 자료에는 **여러 게임에서 쓰인 재료들을 모은 목록**이 정리되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전골 게임 관련 자료에는 **여러 게임에서 쓰인 재료들을 모은 목록**이 정리되어 있다."
+      },
+      {
+       "t_raw": "이 목록은 언급된 게임들에서 사용된 재료를 모은 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 목록은 언급된 게임들에서 사용된 재료를 모은 것이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hot Pot Game",
+       "revision": 554047,
+       "section": "Ingredients",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "Faithful translation of Yun Jin's line (Q4): leftover drinks, hot pot game.",
+     "t_raw": "남은 음료로 hot pot game을 하자!",
+     "en": "Let's play the hot pot game with the leftover drinks!",
+     "speaker": "Yun Jin",
+     "source": {
+      "kind": "quest",
+      "quest": "Half a Day's Leisure",
+      "quest_ko": "무대 아래 반나절의 여가",
+      "version": "2.4",
+      "speaker": "Yun Jin"
+     },
+     "t": "남은 음료로 hot pot game을 하자!",
+     "speaker_ko": "운근"
+    }
+   ]
+  }
+ ]
+}

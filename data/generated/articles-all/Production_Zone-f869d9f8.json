@@ -1,0 +1,727 @@
+{
+ "node": "Production Zone",
+ "articles": [
+  {
+   "node": "Production Zone",
+   "from_version": "4.1",
+   "cutoff": "2023-11-07T00:00:00Z",
+   "input": [
+    {
+     "page": "Production Zone",
+     "url": "https://genshin-impact.fandom.com/wiki/Production_Zone",
+     "revision": 1386529
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 644,
+   "input_cut": false,
+   "input_hash": "db4127fa2a75",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All supported by Q3, Q6, Q8, M1.",
+     "quote": "In the Fortress of Meropide, criminals usually spend most of their time in either the production zone or the sleeping areas.",
+     "sentences": [
+      {
+       "t_raw": "**Fortress of Meropide**에서 수감자들은 주로 Production Zone이나 수면 구역에서 시간을 보낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**메로피드 요새**에서 수감자들은 주로 생산 구역이나 수면 구역에서 시간을 보낸다."
+      },
+      {
+       "t_raw": "Production Zone에서는 **안전이 우선**이라는 방송이 나오고, 생산과 무관한 물품 반입은 금지된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생산 구역에서는 **안전이 우선**이라는 방송이 나오고, 생산과 무관한 물품 반입은 금지된다."
+      },
+      {
+       "t_raw": "Abandoned Production Zone에 있는 Teleport Waypoint는 **An Eye for an Eye** 중 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "버려진 생산 구역에 있는 워프 포인트는 **자에는 자로** 중 열린다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Fortress of Meropide (Quest)",
+       "quest_ko": "메로피드 요새",
+       "version": "4.1",
+       "speaker": "Wriothesley"
+      },
+      {
+       "kind": "quest",
+       "quest": "An Eye for an Eye",
+       "quest_ko": "자에는 자로",
+       "version": "4.1",
+       "speaker": "Prison Broadcast"
+      },
+      {
+       "kind": "quest",
+       "quest": "Game of the Rich",
+       "quest_ko": "억만장자 게임",
+       "version": "4.1",
+       "speaker": "Rochelle Loudspeaker"
+      },
+      {
+       "kind": "wiki",
+       "page": "Teleport Waypoint",
+       "revision": 1388620,
+       "section": "Unlocking > Automatic Unlocks",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match Q3 and Q6; interpretation is reasonable.",
+     "quote": "In the Fortress of Meropide, criminals usually spend most of their time in either the production zone or the sleeping areas.",
+     "sentences": [
+      {
+       "t_raw": "Fortress of Meropide에서 수감자들은 보통 Production Zone이나 수면 구역에서 대부분의 시간을 보낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "메로피드 요새에서 수감자들은 보통 생산 구역이나 수면 구역에서 대부분의 시간을 보낸다."
+      },
+      {
+       "t_raw": "Production Zone에서는 안전이 먼저라고 말하고, 일을 즐기며 매일 무사히 집에 돌아가기를 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생산 구역에서는 안전이 먼저라고 말하고, 일을 즐기며 매일 무사히 집에 돌아가기를 바란다."
+      },
+      {
+       "t_raw": "수감자들이 오랜 시간을 보내는 곳에서 작업과 안전, 귀환이 함께 강조되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "수감자들이 오랜 시간을 보내는 곳에서 작업과 안전, 귀환이 함께 강조되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Fortress of Meropide (Quest)",
+       "quest_ko": "메로피드 요새",
+       "version": "4.1",
+       "speaker": "Wriothesley"
+      },
+      {
+       "kind": "quest",
+       "quest": "An Eye for an Eye",
+       "quest_ko": "자에는 자로",
+       "version": "4.1",
+       "speaker": "Prison Broadcast"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by Q8; interpretation follows from Q6 and Q8.",
+     "quote": "Bringing items not related to production into the production zone is forbidden.",
+     "sentences": [
+      {
+       "t_raw": "생산과 관련 없는 물품을 Production Zone에 가져오는 것은 금지된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생산과 관련 없는 물품을 생산 구역에 가져오는 것은 금지된다."
+      },
+      {
+       "t_raw": "Production Zone은 작업이 이루어지는 공간이면서 안전과 반입 규칙이 함께 작동하는 장소라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "생산 구역은 작업이 이루어지는 공간이면서 안전과 반입 규칙이 함께 작동하는 장소라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "An Eye for an Eye",
+       "quest_ko": "자에는 자로",
+       "version": "4.1",
+       "speaker": "Prison Broadcast"
+      },
+      {
+       "kind": "quest",
+       "quest": "Game of the Rich",
+       "quest_ko": "억만장자 게임",
+       "version": "4.1",
+       "speaker": "Rochelle Loudspeaker"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "작업 구역의 일상",
+     "status": "accepted",
+     "note": "Matches Q1 and Q2; the contrast is a fair interpretation.",
+     "quote": "Specifically speaking, when I come to the production zone, I get headaches and heart palpitations, and my hands and feet grow cold!",
+     "sentences": [
+      {
+       "t_raw": "Rowan은 웃으며 궁금한 것이 있으면 자신에게 묻고, 자신은 Production Zone의 작업을 **손등보다 잘 안다고** 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로완은 웃으며 궁금한 것이 있으면 자신에게 묻고, 자신은 생산 구역의 작업을 **손등보다 잘 안다고** 말한다."
+      },
+      {
+       "t_raw": "Lechlade는 Production Zone에 오면 **두통과 심계항진**이 생기고 손과 발이 차가워진다고 호소한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "레치레이드는 생산 구역에 오면 **두통과 심계항진**이 생기고 손과 발이 차가워진다고 호소한다."
+      },
+      {
+       "t_raw": "같은 Production Zone을 두고 한 사람은 익숙함을, 다른 사람은 몸의 불편을 말하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 생산 구역을 두고 한 사람은 익숙함을, 다른 사람은 몸의 불편을 말하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Proscribed, Hidden in Plain Sight",
+       "quest_ko": "일상에 숨겨진 금기",
+       "version": "4.1",
+       "speaker": "Rowan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Scenes from Life in Meropide: Treat the Symptoms",
+       "quest_ko": "메로피드의 삶・두통과 의사",
+       "version": "4.1",
+       "speaker": "Lechlade"
+      }
+     ],
+     "heading": "작업 구역의 일상",
+     "latin_left": []
+    },
+    {
+     "section": "작업 구역의 일상",
+     "status": "accepted",
+     "note": "Matches Q4 and M2.",
+     "quote": "I have an idea, but this isn't the place to discuss it... Let's find somewhere in the production zone that's better lit.",
+     "sentences": [
+      {
+       "t_raw": "Genevieve는 Production Zone 안에서 이야기할 **더 밝은 장소**를 찾자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "제네비브는 생산 구역 안에서 이야기할 **더 밝은 장소**를 찾자고 한다."
+      },
+      {
+       "t_raw": "Clynes는 Fortress of Meropide의 Production Zone Upper Level에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클라인즈는 메로피드 요새의 생산 구역 상층에 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Both Brains and Brawn",
+       "quest_ko": "불끈 쥔 지혜와 용기",
+       "version": "4.1",
+       "speaker": "Genevieve"
+      },
+      {
+       "kind": "wiki",
+       "page": "Clynes",
+       "revision": 1366914,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작업 구역의 일상",
+     "latin_left": []
+    },
+    {
+     "section": "질서 유지와 보상",
+     "status": "accepted",
+     "note": "Matches A1-A8; the crate count, Paimon's lines, Grainville's thanks, the Common Chest and the Credit Coupon are all stated.",
+     "quote": "It's you! You maintained order in the production zone.",
+     "sentences": [
+      {
+       "t_raw": "Production Zone 중심의 물속에는 빈 **Wooden Crates** 세 개가 놓여 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생산 구역 중심의 물속에는 빈 **Wooden Crates** 세 개가 놓여 있다."
+      },
+      {
+       "t_raw": "첫 상자를 열자 Paimon은 쓸모가 없어 보인다고 하고, 둘째 상자를 연 뒤에도 쓸모가 없어 보이지만 일단 챙기자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "첫 상자를 열자 페이몬은 쓸모가 없어 보인다고 하고, 둘째 상자를 연 뒤에도 쓸모가 없어 보이지만 일단 챙기자고 한다."
+      },
+      {
+       "t_raw": "셋째 상자까지 조사하면 Grainville이 플레이어가 Production Zone의 질서를 유지했다고 말하고, Common Chest가 생긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "셋째 상자까지 조사하면 그랑빌이 플레이어가 생산 구역의 질서를 유지했다고 말하고, 평범한 보물상자가 생긴다."
+      },
+      {
+       "t_raw": "이어 깨끗한 환경 유지가 질서 유지의 일부라며 **Credit Coupon**을 보상으로 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 깨끗한 환경 유지가 질서 유지의 일부라며 **특별 허가 쿠폰**을 보상으로 건넨다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Production Zone",
+       "revision": 1386529,
+       "section": "Interactables > Common Chest",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Production Zone",
+       "revision": 1386529,
+       "section": "Interactables > Common Chest",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Production Zone",
+       "revision": 1386529,
+       "section": "Interactables > Common Chest",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Production Zone",
+       "revision": 1386529,
+       "section": "Interactables > Common Chest",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Production Zone",
+       "revision": 1386529,
+       "section": "Interactables > Common Chest",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Production Zone",
+       "revision": 1386529,
+       "section": "Interactables > Common Chest",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "질서 유지와 보상",
+     "latin_left": [
+      "Wooden Crates"
+     ]
+    },
+    {
+     "section": "질서 유지와 보상",
+     "status": "accepted",
+     "note": "All sentences are supported by A8, Q5 and A1. The interpretation is a reasonable synthesis.",
+     "quote": "(If you break the hidden rule of the Production Zone, your Welfare Meal might contain some strange meat...)",
+     "sentences": [
+      {
+       "t_raw": "Grainville은 위생 환경을 유지하는 일이 질서 유지의 일부라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그랑빌은 위생 환경을 유지하는 일이 질서 유지의 일부라고 말한다."
+      },
+      {
+       "t_raw": "Production Zone의 **숨은 규칙**을 어기면 Welfare Meal에 괴상한 고기가 들어 있을 수 있다는 경고가 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생산 구역의 **숨은 규칙**을 어기면 특별 메뉴에 괴상한 고기가 들어 있을 수 있다는 경고가 남아 있다."
+      },
+      {
+       "t_raw": "그러므로 이곳의 질서는 물속 Wooden Crates를 조사해 받는 보상만이 아니라, 식사에까지 이어지는 숨은 규칙과 함께 이해해야 하는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그러므로 이곳의 질서는 물속 Wooden Crates를 조사해 받는 보상만이 아니라, 식사에까지 이어지는 숨은 규칙과 함께 이해해야 하는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Production Zone",
+       "revision": 1386529,
+       "section": "Interactables > Common Chest",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Production Zone",
+       "revision": 1386529,
+       "section": "Interactables > Common Chest",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth Shrouded in Shadow",
+       "quest_ko": "그림자에 가려진 진실",
+       "version": "4.1",
+       "speaker": "Strange Meat in Welfare Meal"
+      }
+     ],
+     "heading": "질서 유지와 보상",
+     "latin_left": [
+      "Wooden Crates"
+     ]
+    },
+    {
+     "section": "Abandoned Production Zone",
+     "status": "accepted",
+     "note": "M1 states the waypoint is unlocked during An Eye for an Eye.",
+     "quote": "At the Fortress of Meropide's Abandoned Production Zone · Unlocked during An Eye for an Eye",
+     "sentences": [
+      {
+       "t_raw": "Fortress of Meropide의 Abandoned Production Zone에 있는 Teleport Waypoint는 An Eye for an Eye 중에 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "메로피드 요새의 버려진 생산 구역에 있는 워프 포인트는 자에는 자로 중에 열린다."
+      },
+      {
+       "t_raw": "Teleport Waypoint의 해금 시점은 An Eye for an Eye로 명시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "워프 포인트의 해금 시점은 자에는 자로로 명시된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Teleport Waypoint",
+       "revision": 1388620,
+       "section": "Unlocking > Automatic Unlocks",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "버려진 생산 구역",
+     "latin_left": []
+    },
+    {
+     "section": "Abandoned Production Zone",
+     "status": "accepted",
+     "note": "Q9 and Q10 support the facts. The interpretation about the differing names is reasonable.",
+     "quote": "According to the card he left us, we should go meet him in the production zone.",
+     "sentences": [
+      {
+       "t_raw": "Decembre는 abandoned production zone에서 막 일을 마치고 이곳까지 달려왔다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데쌍브르는 폐허가 된 생산 구역에서 막 일을 마치고 이곳까지 달려왔다고 말한다.",
+       "polish": {
+        "from": "데쌍브르는 abandoned production zone에서 막 일을 마치고 이곳까지 달려왔다고 말한다.",
+        "text": "데쌍브르는 폐허가 된 생산 구역에서 막 일을 마치고 이곳까지 달려왔다고 말한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Paimon은 그가 남긴 카드에 따라 production zone에서 그를 만나러 가야 한다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 그가 남긴 카드에 따라 생산 구역에서 그를 만나러 가야 한다고 전한다.",
+       "polish": {
+        "from": "페이몬은 그가 남긴 카드에 따라 production zone에서 그를 만나러 가야 한다고 전한다.",
+        "text": "페이몬은 그가 남긴 카드에 따라 생산 구역에서 그를 만나러 가야 한다고 전한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Decembre가 일을 마쳤다고 말한 abandoned production zone과 카드가 가리킨 production zone은 서로 다른 이름으로 제시된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "데쌍브르가 일을 마쳤다고 말한 폐허가 된 생산 구역과 카드가 가리킨 생산 구역은 서로 다른 이름으로 제시된 셈이다.",
+       "polish": {
+        "from": "데쌍브르가 일을 마쳤다고 말한 abandoned production zone과 카드가 가리킨 production zone은 서로 다른 이름으로 제시된 셈이다.",
+        "text": "데쌍브르가 일을 마쳤다고 말한 폐허가 된 생산 구역과 카드가 가리킨 생산 구역은 서로 다른 이름으로 제시된 셈이다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Into the Deepwater Murk",
+       "quest_ko": "안갯속으로",
+       "version": "4.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Scenes from Life in Meropide: A Raw Deal",
+       "quest_ko": "메로피드의 삶・대기 줄",
+       "version": "4.1",
+       "speaker": "Decembre"
+      }
+     ],
+     "heading": "버려진 생산 구역",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Q7 and Q9 support the facts. The interpretation is hedged and follows from them.",
+     "quote": "This is also a production zone that Paimon's never seen before... What's going on?",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 이곳도 **처음 보는 production zone**이라면서 무슨 일인지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 이곳도 **처음 보는 생산 구역**이라면서 무슨 일인지 묻는다.",
+       "polish": {
+        "from": "페이몬은 이곳도 **처음 보는 production zone**이라면서 무슨 일인지 묻는다.",
+        "text": "페이몬은 이곳도 **처음 보는 생산 구역**이라면서 무슨 일인지 묻는다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "남겨진 카드에 따르면 그를 만나러 Production Zone으로 가야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "남겨진 카드에 따르면 그를 만나러 생산 구역으로 가야 한다."
+      },
+      {
+       "t_raw": "카드가 가리키는 만남의 장소를 Paimon이 낯설어한다는 점에서, Production Zone은 발걸음은 정해졌지만 정체는 아직 다 드러나지 않은 곳으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "카드가 가리키는 만남의 장소를 페이몬이 낯설어한다는 점에서, 생산 구역은 발걸음은 정해졌지만 정체는 아직 다 드러나지 않은 곳으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Secret Keepers and Forbidden Zones",
+       "quest_ko": "비밀 수호자와 금지 구역",
+       "version": "4.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Into the Deepwater Murk",
+       "quest_ko": "안갯속으로",
+       "version": "4.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Q5 supports the warning. The interpretation is appropriately hedged.",
+     "quote": "(If you break the hidden rule of the Production Zone, your Welfare Meal might contain some strange meat...)",
+     "sentences": [
+      {
+       "t_raw": "Production Zone의 **숨은 규칙**을 어기면 Welfare Meal에 **괴상한 고기**가 들어 있을 수 있다는 경고가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생산 구역의 **숨은 규칙**을 어기면 특별 메뉴에 **괴상한 고기**가 들어 있을 수 있다는 경고가 있다."
+      },
+      {
+       "t_raw": "이 경고는 숨은 규칙을 어기는 일이 식사 내용물까지 좌우할 수 있음을 암시하는 대목으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 경고는 숨은 규칙을 어기는 일이 식사 내용물까지 좌우할 수 있음을 암시하는 대목으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Truth Shrouded in Shadow",
+       "quest_ko": "그림자에 가려진 진실",
+       "version": "4.1",
+       "speaker": "Strange Meat in Welfare Meal"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "M2 and Q10 support the facts. Inferring different sites from the different names is hedged with \"보인다\".",
+     "quote": "I just finished up at the abandoned production zone and ran all the way here.",
+     "sentences": [
+      {
+       "t_raw": "Clynes는 Fortress of Meropide, Fontaine의 **Production Zone Upper Level**에 위치한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클라인즈는 메로피드 요새, 폰타인의 **생산 구역 상층**에 위치한다."
+      },
+      {
+       "t_raw": "Decembre는 **abandoned production zone**에서 막 일을 마치고 여기까지 뛰어왔다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데쌍브르는 **폐허가 된 생산 구역**에서 막 일을 마치고 여기까지 뛰어왔다고 말한다.",
+       "polish": {
+        "from": "데쌍브르는 **abandoned production zone**에서 막 일을 마치고 여기까지 뛰어왔다고 말한다.",
+        "text": "데쌍브르는 **폐허가 된 생산 구역**에서 막 일을 마치고 여기까지 뛰어왔다고 말한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Clynes가 있는 Production Zone Upper Level과 Decembre가 다녀왔다고 말한 abandoned production zone은 이름이 구분되는 만큼 서로 다른 현장으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "클라인즈가 있는 생산 구역 상층과 데쌍브르가 다녀왔다고 말한 폐허가 된 생산 구역은 이름이 구분되는 만큼 서로 다른 현장으로 보인다.",
+       "polish": {
+        "from": "클라인즈가 있는 생산 구역 상층과 데쌍브르가 다녀왔다고 말한 abandoned production zone은 이름이 구분되는 만큼 서로 다른 현장으로 보인다.",
+        "text": "클라인즈가 있는 생산 구역 상층과 데쌍브르가 다녀왔다고 말한 폐허가 된 생산 구역은 이름이 구분되는 만큼 서로 다른 현장으로 보인다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Clynes",
+       "revision": 1366914,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Scenes from Life in Meropide: A Raw Deal",
+       "quest_ko": "메로피드의 삶・대기 줄",
+       "version": "4.1",
+       "speaker": "Decembre"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Production Zone에서는 안전이 먼저다! 일을 즐기고 매일 무사히 집에 돌아가자.",
+     "en": "Safety first in the production zone! Enjoy your work and get home safely every day.",
+     "speaker": "Prison Broadcast",
+     "source": {
+      "kind": "quest",
+      "quest": "An Eye for an Eye",
+      "quest_ko": "자에는 자로",
+      "version": "4.1",
+      "speaker": "Prison Broadcast"
+     },
+     "t": "생산 구역에서는 안전이 먼저다! 일을 즐기고 매일 무사히 집에 돌아가자.",
+     "speaker_ko": "Prison Broadcast"
+    },
+    {
+     "section": "작업 구역의 일상",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "하하하... 알고 싶은 게 있으면 저한테 물어보세요. 저는 여기 production zone의 작업을 손등보다 잘 압니다.",
+     "en": "Hahaha... If there's anything you'd like to know, just ask me. I know the work here in the production zone better than the back of my hand.",
+     "speaker": "Rowan",
+     "source": {
+      "kind": "quest",
+      "quest": "The Proscribed, Hidden in Plain Sight",
+      "quest_ko": "일상에 숨겨진 금기",
+      "version": "4.1",
+      "speaker": "Rowan"
+     },
+     "t": "하하하... 알고 싶은 게 있으면 저한테 물어보세요. 저는 여기 production zone의 작업을 손등보다 잘 압니다.",
+     "speaker_ko": "로완"
+    },
+    {
+     "section": "질서 유지와 보상",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "(Production Zone의 숨은 규칙을 어기면 Welfare Meal에 괴상한 고기가 들어 있을지도 모른다...)",
+     "en": "(If you break the hidden rule of the Production Zone, your Welfare Meal might contain some strange meat...)",
+     "speaker": "Strange Meat in Welfare Meal",
+     "source": {
+      "kind": "quest",
+      "quest": "The Truth Shrouded in Shadow",
+      "quest_ko": "그림자에 가려진 진실",
+      "version": "4.1",
+      "speaker": "Strange Meat in Welfare Meal"
+     },
+     "t": "(생산 구역의 숨은 규칙을 어기면 특별 메뉴에 괴상한 고기가 들어 있을지도 모른다...)",
+     "speaker_ko": "Strange Meat in 특별 메뉴"
+    },
+    {
+     "section": "Abandoned Production Zone",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "나는 방금 abandoned production zone에서 일을 마치고 여기까지 달려왔다.",
+     "en": "I just finished up at the abandoned production zone and ran all the way here.",
+     "speaker": "Decembre",
+     "source": {
+      "kind": "quest",
+      "quest": "Scenes from Life in Meropide: A Raw Deal",
+      "quest_ko": "메로피드의 삶・대기 줄",
+      "version": "4.1",
+      "speaker": "Decembre"
+     },
+     "t": "나는 방금 abandoned production zone에서 일을 마치고 여기까지 달려왔다.",
+     "speaker_ko": "데쌍브르"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "(Production Zone의 숨은 규칙을 어기면, Welfare Meal에 괴상한 고기가 들어 있을지도 모른다...)",
+     "en": "(If you break the hidden rule of the Production Zone, your Welfare Meal might contain some strange meat...)",
+     "speaker": "Strange Meat in Welfare Meal",
+     "source": {
+      "kind": "quest",
+      "quest": "The Truth Shrouded in Shadow",
+      "quest_ko": "그림자에 가려진 진실",
+      "version": "4.1",
+      "speaker": "Strange Meat in Welfare Meal"
+     },
+     "t": "(생산 구역의 숨은 규칙을 어기면, 특별 메뉴에 괴상한 고기가 들어 있을지도 모른다...)",
+     "speaker_ko": "Strange Meat in 특별 메뉴"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "난 방금 abandoned production zone에서 일을 마치고 여기까지 뛰어왔어.",
+     "en": "I just finished up at the abandoned production zone and ran all the way here.",
+     "speaker": "Decembre",
+     "source": {
+      "kind": "quest",
+      "quest": "Scenes from Life in Meropide: A Raw Deal",
+      "quest_ko": "메로피드의 삶・대기 줄",
+      "version": "4.1",
+      "speaker": "Decembre"
+     },
+     "t": "난 방금 abandoned production zone에서 일을 마치고 여기까지 뛰어왔어.",
+     "speaker_ko": "데쌍브르"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,875 @@
+{
+ "node": "Little Zuo",
+ "articles": [
+  {
+   "node": "Little Zuo",
+   "from_version": "1.1",
+   "cutoff": "2020-12-22T00:00:00Z",
+   "input": [
+    {
+     "page": "Little Zuo",
+     "url": "https://genshin-impact.fandom.com/wiki/Little_Zuo",
+     "revision": 72083
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 3,
+    "web": 0
+   },
+   "input_chars": 1525,
+   "input_cut": false,
+   "input_hash": "bbe001ff2603",
+   "writer": "ds,qwen,glm,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "I just caught a frog, and his back was really slippy, and then I let him get away by accident.",
+     "sentences": [
+      {
+       "t_raw": "Little Zuo는 Qingce Village에 사는 NPC로, 19시부터 6시까지 강변을 따라 뛰어다닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 좌는 경책 산장에 사는 NPC로, 19시부터 6시까지 강변을 따라 뛰어다닌다."
+      },
+      {
+       "t_raw": "그가 낯선 이에게 건네는 첫마디는 잃어버린 개구리를 봤느냐는 물음이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 낯선 이에게 건네는 첫마디는 잃어버린 개구리를 봤느냐는 물음이다."
+      },
+      {
+       "t_raw": "그 개구리는 그가 붙잡았다가 미끄러운 등 때문에 놓쳐 버린 것이고, 쓰임새는 여동생에게 주려는 것이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 개구리는 그가 붙잡았다가 미끄러운 등 때문에 놓쳐 버린 것이고, 쓰임새는 여동생에게 주려는 것이었다."
+      },
+      {
+       "t_raw": "여동생은 그림자를 잡으려는 아이이며, Little Zuo는 동생이 자기 말을 듣지 않는다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여동생은 그림자를 잡으려는 아이이며, 꼬마 좌는 동생이 자기 말을 듣지 않는다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "trimmed",
+     "note": "Calling Little Zuo a child (아이) is not stated in the English. The rest matches the wiki and idle quote.",
+     "quote": "...Where'd the froggie go?",
+     "sentences": [
+      {
+       "t_raw": "Little Zuo는 Qingce Village에 있는 NPC로, 19시부터 6시까지 강가를 따라 뛰어다니는 아이이다.",
+       "interp": false,
+       "dropped": true,
+       "t": "꼬마 좌는 경책 산장에 있는 NPC로, 19시부터 6시까지 강가를 따라 뛰어다니는 아이이다."
+      },
+      {
+       "t_raw": "가만히 서 있을 때 흘리는 말은 \"...Where'd the froggie go?\"이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가만히 서 있을 때 흘리는 말은 \"...그 개구리 어디 갔지?\"이다.",
+       "polish": {
+        "from": "가만히 서 있을 때 흘리는 말은 \"...Where'd the froggie go?\"이다.",
+        "text": "가만히 서 있을 때 흘리는 말은 \"...그 개구리 어디 갔지?\"이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "물가를 뛰어다니는 자리와 개구리를 찾는 혼잣말이 겹치면서, 말을 걸기 전부터 그가 어떤 아이인지가 드러나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "물가를 뛰어다니는 자리와 개구리를 찾는 혼잣말이 겹치면서, 말을 걸기 전부터 그가 어떤 아이인지가 드러나는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Idle Quotes",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts are supported. Sentence 3 is a reasonable interpretation.",
+     "quote": "Excuse me, have you seen my frog?",
+     "sentences": [
+      {
+       "t_raw": "그에게 말을 걸면 첫마디부터 개구리를 봤느냐는 질문이 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그에게 말을 걸면 첫마디부터 개구리를 봤느냐는 질문이 나온다."
+      },
+      {
+       "t_raw": "방금 개구리를 잡았는데 등이 미끌미끌해서 실수로 놓쳐 버렸다고 털어놓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방금 개구리를 잡았는데 등이 미끌미끌해서 실수로 놓쳐 버렸다고 털어놓는다."
+      },
+      {
+       "t_raw": "그 개구리는 아주 활발한 녀석이라 처음 잡았을 때는 운이 좋았던 것이라고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 개구리는 아주 활발한 녀석이라 처음 잡았을 때는 운이 좋았던 것이라고 덧붙인다."
+      },
+      {
+       "t_raw": "길가에서 만난 사람에게 개구리부터 묻는 것은, 미끄러운 등을 놓친 자신의 실수를 누군가의 눈으로 메우려는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "길가에서 만난 사람에게 개구리부터 묻는 것은, 미끄러운 등을 놓친 자신의 실수를 누군가의 눈으로 메우려는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Describing Little Zuo as a child (아이) is not stated in the English. The other sentences are supported or acceptable interpretation.",
+     "quote": "I just caught a frog, and his back was really slippy, and then I let him get away by accident.",
+     "sentences": [
+      {
+       "t_raw": "Little Zuo는 Qingce Village의 강가를 따라 개구리를 찾아 달려다닌다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "꼬마 좌는 경책 산장의 강가를 따라 개구리를 찾아 달려다닌다."
+      },
+      {
+       "t_raw": "그가 두고 온 이야기에 따르면, 마침 개구리를 한 마리 잡았는데 **등이 너무 미끄러운 탓에** 우연히 놓쳐버렸다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 두고 온 이야기에 따르면, 마침 개구리를 한 마리 잡았는데 **등이 너무 미끄러운 탓에** 우연히 놓쳐버렸다고 한다."
+      },
+      {
+       "t_raw": "그 개구리는 몹시 활발한 little froggie이었고, 처음으로 잡는 데 성공한 것 자체가 운이 좋았던 일이라고 그는 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 개구리는 몹시 활발한 꼬마 개구리였고, 처음으로 잡는 데 성공한 것 자체가 운이 좋았던 일이라고 그는 말한다.",
+       "polish": {
+        "from": "그 개구리는 몹시 활발한 little froggie이었고, 처음으로 잡는 데 성공한 것 자체가 운이 좋았던 일이라고 그는 말한다.",
+        "text": "그 개구리는 몹시 활발한 꼬마 개구리였고, 처음으로 잡는 데 성공한 것 자체가 운이 좋았던 일이라고 그는 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "잡은 것도 운 덕이었고 놓친 것도 우연이었으니, 이 개구리 한 마리는 애초에 Little Zuo의 손에 붙잡히지 않을 팔자였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "잡은 것도 운 덕이었고 놓친 것도 우연이었으니, 이 개구리 한 마리는 애초에 꼬마 좌의 손에 붙잡히지 않을 팔자였던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts are supported by A9–A11. Sentence 4 is an acceptable interpretation.",
+     "quote": "My sister is that girl over there, the one who is always trying to catch her shadow... even though you can't catch your shadow. I don't get why she likes to do that...",
+     "sentences": [
+      {
+       "t_raw": "그럼에도 굳이 개구리를 붙잡으려는 이유는 단순한데, 잡으면 **여동생에게 주어서 가지고 놀게 하려는** 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그럼에도 굳이 개구리를 붙잡으려는 이유는 단순한데, 잡으면 **여동생에게 주어서 가지고 놀게 하려는** 것이다."
+      },
+      {
+       "t_raw": "그 여동생은 근처에 있는, 늘 자기 그림자를 잡으려고 하는 아이인데, 그림자는 애초에 잡을 수 없는 것이라고 Little Zuo는 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 여동생은 근처에 있는, 늘 자기 그림자를 잡으려고 하는 아이인데, 그림자는 애초에 잡을 수 없는 것이라고 꼬마 좌는 말한다."
+      },
+      {
+       "t_raw": "정작 Little Zuo 본인은 여동생이 왜 그런 짓을 좋아하는지 이해하지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정작 꼬마 좌 본인은 여동생이 왜 그런 짓을 좋아하는지 이해하지 못한다."
+      },
+      {
+       "t_raw": "다만 개구리를 잡아주면 그림자를 쫓는 것보다 더 재미있을 거라고 그는 기대한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 개구리를 잡아주면 그림자를 쫓는 것보다 더 재미있을 거라고 그는 기대한다."
+      },
+      {
+       "t_raw": "그로 보면 이 개구리는 단순한 장난감이 아니라, 여동생이 그림자 대신 쫓아다닐 만한 상대로 만들어주려는 일종의 계획인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그로 보면 이 개구리는 단순한 장난감이 아니라, 여동생이 그림자 대신 쫓아다닐 만한 상대로 만들어주려는 일종의 계획인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Qingce Village",
+     "status": "accepted",
+     "note": "Both dialogue branches match the English.",
+     "quote": "I wanna give him to my little sister to play with.",
+     "sentences": [
+      {
+       "t_raw": "“무슨 개구리?”라고 묻는 갈래에서 Little Zuo는 방금 잡은 **개구리**가 미끄러워서 놓쳤다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "“무슨 개구리?”라고 묻는 갈래에서 꼬마 좌는 방금 잡은 **개구리**가 미끄러워서 놓쳤다고 말한다."
+      },
+      {
+       "t_raw": "“개구리를 어디에 쓰려고?”라고 묻는 갈래에서는 여동생에게 주려 한다고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "“개구리를 어디에 쓰려고?”라고 묻는 갈래에서는 여동생에게 주려 한다고 답한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 경책 산장",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Qingce Village",
+     "status": "accepted",
+     "note": "Both sentences match A10–A13.",
+     "quote": "I think she doesn't like me very much. She doesn't wanna listen to anything I say, let alone play with me.",
+     "sentences": [
+      {
+       "t_raw": "그는 여동생이 저쪽에서 그림자를 잡으려는 아이이며, 개구리를 잡아 주면 그림자 쫓기보다 재미있을 거라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 여동생이 저쪽에서 그림자를 잡으려는 아이이며, 개구리를 잡아 주면 그림자 쫓기보다 재미있을 거라고 말한다."
+      },
+      {
+       "t_raw": "“왜 함께 놀지 않느냐?”고 묻자 여동생이 자신 말을 듣지 않고 함께 놀지도 않는다고 털어놓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "“왜 함께 놀지 않느냐?”고 묻자 여동생이 자신 말을 듣지 않고 함께 놀지도 않는다고 털어놓는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 경책 산장",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Qingce Village",
+     "status": "accepted",
+     "note": "All sentences are supported by A15–A19 and A2.",
+     "quote": "Maybe you could take them? I've gotta keep trying to catch a frog, and I definitely can't do it with my hands full of lizard tails.",
+     "sentences": [
+      {
+       "t_raw": "“행운을 빈다”는 갈래에서 그는 고맙다면서도 개구리는 잡기 매우 어렵다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "“행운을 빈다”는 갈래에서 그는 고맙다면서도 개구리는 잡기 매우 어렵다고 말한다."
+      },
+      {
+       "t_raw": "그동안 잡은 것은 도마뱀 꼬리 몇 개뿐이라며, 손에 도마뱀 꼬리가 가득해 개구리를 잡을 수 없으니 가져가겠냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그동안 잡은 것은 도마뱀 꼬리 몇 개뿐이라며, 손에 도마뱀 꼬리가 가득해 개구리를 잡을 수 없으니 가져가겠냐고 묻는다."
+      },
+      {
+       "t_raw": "그 대화 경로를 처음 지나면 **Lizard Tail ×3**을 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 대화 경로를 처음 지나면 **도마뱀 꼬리 ×3**을 받는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 경책 산장",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Chi of Yore",
+     "status": "accepted",
+     "note": "Q1 and Q2 support the facts. The interpretation follows from them.",
+     "quote": "You should go ask Granny Ruoxin, she might know something about it.",
+     "sentences": [
+      {
+       "t_raw": "Little Zuo는 **Granny Ruoxin에게 가서 물어보라고** 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 좌는 **약심에게 가서 물어보라고** 말한다."
+      },
+      {
+       "t_raw": "Granny Ruoxin이 그것에 대해 뭔가 알지도 모른다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약심이 그것에 대해 뭔가 알지도 모른다고 덧붙인다."
+      },
+      {
+       "t_raw": "그러나 자신은 그것을 평생 본 적이 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 자신은 그것을 평생 본 적이 없다고 말한다."
+      },
+      {
+       "t_raw": "이 여정에서 Little Zuo가 직접 내놓을 정보는 거의 없는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 여정에서 꼬마 좌가 직접 내놓을 정보는 거의 없는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Little Zuo"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Little Zuo"
+      }
+     ],
+     "heading": "작중 행적 — 「교룡」 이야기",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Chi of Yore",
+     "status": "accepted",
+     "note": "Q3 supports the facts. The interpretation is reasonable.",
+     "quote": "A fragment? Hmm... No, I can't read it.",
+     "sentences": [
+      {
+       "t_raw": "Little Zuo는 파편을 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 좌는 파편을 되묻는다."
+      },
+      {
+       "t_raw": "이어 자신은 **그것을 읽을 수 없다고** 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 자신은 **그것을 읽을 수 없다고** 답한다."
+      },
+      {
+       "t_raw": "Granny Ruoxin에게 물어보라고 했던 앞선 태도와 겹쳐 보면, 파편에 대해서도 Little Zuo 자신이 해석을 보태기는 어려운 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "약심에게 물어보라고 했던 앞선 태도와 겹쳐 보면, 파편에 대해서도 꼬마 좌 자신이 해석을 보태기는 어려운 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Little Zuo"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Little Zuo"
+      }
+     ],
+     "heading": "작중 행적 — 「교룡」 이야기",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계 — 여동생",
+     "status": "accepted",
+     "note": "A10 and A11 support the facts. The caring-attitude reading is a fair interpretation.",
+     "quote": "My sister is that girl over there, the one who is always trying to catch her shadow...",
+     "sentences": [
+      {
+       "t_raw": "Little Zuo의 여동생은 저쪽에서 자기 그림자를 잡으려는 아이이며, Little Zuo는 그림자는 잡을 수 없다면서도 여동생이 왜 그런 일을 좋아하는지 이해하지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 좌의 여동생은 저쪽에서 자기 그림자를 잡으려는 아이이며, 꼬마 좌는 그림자는 잡을 수 없다면서도 여동생이 왜 그런 일을 좋아하는지 이해하지 못한다."
+      },
+      {
+       "t_raw": "여동생이 심심해서 그러는 것일 수 있다고 짐작하며, 개구리를 잡아 주면 그림자를 쫓는 것보다 더 재미있을 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여동생이 심심해서 그러는 것일 수 있다고 짐작하며, 개구리를 잡아 주면 그림자를 쫓는 것보다 더 재미있을 것이라고 말한다."
+      },
+      {
+       "t_raw": "그림자를 잡을 수 없다고 말하면서도 심심함이라는 이유와 개구리라는 대안을 떠올리는 데서, Little Zuo가 여동생을 나름대로 챙기려는 태도가 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그림자를 잡을 수 없다고 말하면서도 심심함이라는 이유와 개구리라는 대안을 떠올리는 데서, 꼬마 좌가 여동생을 나름대로 챙기려는 태도가 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계 — 여동생",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계 — 여동생",
+     "status": "accepted",
+     "note": "A13 and A14 support the facts. The interpretation is a fair mismatch reading.",
+     "quote": "I don't get it, I'm always trying my bestest to find her things she wants, so why won't she be happy with me?",
+     "sentences": [
+      {
+       "t_raw": "Little Zuo는 여동생이 자신을 그다지 좋아하지 않는 것 같다고 느낀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 좌는 여동생이 자신을 그다지 좋아하지 않는 것 같다고 느낀다."
+      },
+      {
+       "t_raw": "여동생은 그의 말을 들으려 하지 않고 함께 놀아 주기도 싫어한다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여동생은 그의 말을 들으려 하지 않고 함께 놀아 주기도 싫어한다고 한다."
+      },
+      {
+       "t_raw": "그런데도 Little Zuo는 여동생이 원하는 물건을 찾아 주려 애쓰면서, 여동생이 자신을 보고 기뻐하지 않는 이유를 이해하지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데도 꼬마 좌는 여동생이 원하는 물건을 찾아 주려 애쓰면서, 여동생이 자신을 보고 기뻐하지 않는 이유를 이해하지 못한다."
+      },
+      {
+       "t_raw": "이 애씀과 여동생의 거부가 어긋나, 두 사람의 사이는 Little Zuo의 바람과 여동생의 반응이 맞지 않는 관계로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 애씀과 여동생의 거부가 어긋나, 두 사람의 사이는 꼬마 좌의 바람과 여동생의 반응이 맞지 않는 관계로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계 — 여동생",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 2 is an interpretation that overreaches: the English never says his interest is in catching frogs for its own sake. His goal is a gift for his sister, so 'his interest lies in frog catching' is a shaky inference.",
+     "quote": "Thank you! Frogs are super hard to catch, though...",
+     "sentences": [
+      {
+       "t_raw": "Little Zuo는 대기 중에 “...Where'd the froggie go?”라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 좌는 대기 중에 “...Where'd the froggie go?”라고 말한다."
+      },
+      {
+       "t_raw": "행운을 빌어 주면 “Thank you! Frogs are super hard to catch, though...”라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "행운을 빌어 주면 “고마워! 그런데 개구리는 정말 잡기 어려워...”라고 답한다.",
+       "polish": {
+        "from": "행운을 빌어 주면 “Thank you! Frogs are super hard to catch, though...”라고 답한다.",
+        "text": "행운을 빌어 주면 “고마워! 그런데 개구리는 정말 잡기 어려워...”라고 답한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "개구리를 찾는 대기 대사와 잡기 어렵다는 말이 이어지지만, 그가 개구리를 잡으려는 목적은 여동생에게 주어 갖고 놀게 하려는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "개구리를 찾는 대기 대사와 잡기 어렵다는 말이 이어지지만, 그가 개구리를 잡으려는 목적은 여동생에게 주어 갖고 놀게 하려는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Idle Quotes",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Where'd the"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The English has him offering the lizard tails and saying he can't catch a frog with his hands full of tails. The Korean 'if hands are full of lizard tails' is fine, but the sentence is stated as a fact and matches A18, so it passes. (Re-check: this one is actually supported.)",
+     "quote": "Byeee!",
+     "sentences": [
+      {
+       "t_raw": "도마뱀 꼬리를 가져가겠냐고 묻고, 손에 도마뱀 꼬리가 가득하면 개구리를 잡을 수 없다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "도마뱀 꼬리를 가져가겠냐고 묻고, 손에 도마뱀 꼬리가 가득하면 개구리를 잡을 수 없다고 덧붙인다."
+      },
+      {
+       "t_raw": "작별 인사를 하면 “Byeee!”라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작별 인사를 하면 “Byeee!”라고 답한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": "Dialogue",
+       "paragraph": "A21",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Byeee"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적 — The Chi of Yore",
+     "status": "accepted",
+     "note": "Faithful translation of 'As a matter of fact, I've never seen one in my life.'",
+     "t_raw": "사실, 나는 평생 한 번도 본 적이 없어.",
+     "en": "As a matter of fact, I've never seen one in my life.",
+     "speaker": "Little Zuo",
+     "source": {
+      "kind": "quest",
+      "quest": "The Chi of Yore",
+      "quest_ko": "「교룡」 이야기",
+      "version": "1.0",
+      "speaker": "Little Zuo"
+     },
+     "t": "사실, 나는 평생 한 번도 본 적이 없어.",
+     "speaker_ko": "꼬마 좌"
+    }
+   ]
+  }
+ ]
+}

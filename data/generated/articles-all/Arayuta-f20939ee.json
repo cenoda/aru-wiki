@@ -1,0 +1,893 @@
+{
+ "node": "Arayuta",
+ "articles": [
+  {
+   "node": "Arayuta",
+   "from_version": "3.1",
+   "cutoff": "2022-11-01T00:00:00Z",
+   "input": [
+    {
+     "page": "Arayuta",
+     "url": "https://genshin-impact.fandom.com/wiki/Arayuta",
+     "revision": 903064
+    }
+   ],
+   "input_counts": {
+    "mentions": 1,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 248,
+   "input_cut": false,
+   "input_hash": "8e92449ca8f8",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, M1, Q2, Q5, Q6 and Q9. The interpretation is reasonable.",
+     "quote": "Arayuta is an NPC from Sumeru. It is a part of the Aranara and is responsible for sealing Ruin Machines throughout Sumeru using Stone Pillar Seals.",
+     "sentences": [
+      {
+       "t_raw": "Arayuta는 Sumeru의 NPC이자 Aranara로, Stone Pillar Seals로 Sumeru 전역의 Ruin Machines를 봉인하는 일을 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 수메르의 NPC이자 아란나라로, Stone Pillar Seals로 수메르 전역의 유적 장치를 봉인하는 일을 맡는다."
+      },
+      {
+       "t_raw": "Legends of the Stone Lock을 완료한 뒤에는 Ashavan Realm의 지하에 머문다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바위 자물쇠 장치의 비화를 완료한 뒤에는 아샤반의 땅의 지하에 머문다."
+      },
+      {
+       "t_raw": "Aradasha의 유산을 다루는 이야기에서 Aradashan, Arasata, Arasaha와 함께 모습을 드러내고, Paimon에게 자신의 이름을 알리며 Aradasha가 Big Iron Chunks를 봉인한 이야기를 들려준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란다샤의 유산을 다루는 이야기에서 아란다샨, 아란사타, 아란사하와 함께 모습을 드러내고, 페이몬에게 자신의 이름을 알리며 아란다샤가 Big Iron Chunks를 봉인한 이야기를 들려준다."
+      },
+      {
+       "t_raw": "이처럼 Arayuta는 봉인 작업과 Aradasha 전승의 전달을 함께 맡은 존재로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 아란유타는 봉인 작업과 아란다샤 전승의 전달을 함께 맡은 존재로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arayuta",
+       "revision": 903064,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aradasha",
+       "revision": 847295,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Children of the Past"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC",
+      "Stone Pillar Seals",
+      "Big Iron Chunks"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts match A1, and the interpretation is hedged and follows from them.",
+     "quote": "Arayuta is an NPC from Sumeru. It is a part of the Aranara and is responsible for sealing Ruin Machines throughout Sumeru using Stone Pillar Seals.",
+     "sentences": [
+      {
+       "t_raw": "Arayuta는 Sumeru의 NPC이자 Aranara의 일원이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 수메르의 NPC이자 아란나라의 일원이다."
+      },
+      {
+       "t_raw": "Stone Pillar Seals로 Sumeru 전역의 Ruin Machines를 봉인하는 역할을 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Stone Pillar Seals로 수메르 전역의 유적 장치를 봉인하는 역할을 맡는다."
+      },
+      {
+       "t_raw": "Legends of the Stone Lock World Quest를 완료한 뒤 Ashavan Realm 지하에 머문다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바위 자물쇠 장치의 비화 월드 임무를 완료한 뒤 아샤반의 땅 지하에 머문다."
+      },
+      {
+       "t_raw": "Aranara의 일원이면서 봉인 임무를 맡고, 퀘스트 완료 뒤 Ashavan Realm 지하에 남는다는 점에서 Arayuta의 역할은 봉인 작업과 Ashavan Realm 지하에 연결된 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아란나라의 일원이면서 봉인 임무를 맡고, 퀘스트 완료 뒤 아샤반의 땅 지하에 남는다는 점에서 아란유타의 역할은 봉인 작업과 아샤반의 땅 지하에 연결된 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arayuta",
+       "revision": 903064,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC",
+      "Stone Pillar Seals"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A1, M1, Q1, Q2 and Q4. 'Foliage' rendered as 'forest' is a fair rewording.",
+     "quote": "The great Aradasha defeated many, many Big Iron Chunks with Ararakalari and locked them up with stone locks.",
+     "sentences": [
+      {
+       "t_raw": "Arayuta는 Sumeru의 Aranara이며, Aradasha의 유산은 Legends of the Stone Lock에서 중심 이야기로 다뤄진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 수메르의 아란나라이며, 아란다샤의 유산은 바위 자물쇠 장치의 비화에서 중심 이야기로 다뤄진다."
+      },
+      {
+       "t_raw": "Arayuta는 위험하던 때 Aradasha가 나타나 Ararakalari로 수많은 **Big Iron Chunks**를 물리치고 돌 자물쇠로 가두었다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 위험하던 때 아란다샤가 나타나 아라라칼라리로 수많은 **Big Iron Chunks**를 물리치고 돌 자물쇠로 가두었다고 전한다."
+      },
+      {
+       "t_raw": "Aradasha가 많은 숲에 평화를 되찾아 Nara와 Aranara가 밤에 숲에서 쉴 수 있게 되었다는 이야기도 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란다샤가 많은 숲에 평화를 되찾아 나라와 아란나라가 밤에 숲에서 쉴 수 있게 되었다는 이야기도 전한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arayuta",
+       "revision": 903064,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aradasha",
+       "revision": 847295,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Children of the Past"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Big Iron Chunks"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by M1, Q7, Q8 and Q9. The interpretation follows from the training lines.",
+     "quote": "Nara and Paimon, these are Arasata, Arasaha, and Arayuta.",
+     "sentences": [
+      {
+       "t_raw": "Legends of the Stone Lock에서 Arayuta는 Aradashan, Arasata, Arasaha와 함께 봉인된 Perpetual Mechanical Array를 상대하는 데 힘을 보탠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바위 자물쇠 장치의 비화에서 아란유타는 아란다샨, 아란사타, 아란사하와 함께 봉인된 영구 장치 진영을 상대하는 데 힘을 보탠다."
+      },
+      {
+       "t_raw": "Aradashan은 Nara와 Paimon에게 Arasata, Arasaha와 함께 Arayuta를 소개하고, 느슨한 자물쇠를 놓치지 않기 위해 꿈에서 함께 훈련하러 간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란다샨은 나라와 페이몬에게 아란사타, 아란사하와 함께 아란유타를 소개하고, 느슨한 자물쇠를 놓치지 않기 위해 꿈에서 함께 훈련하러 간다."
+      },
+      {
+       "t_raw": "이는 Arayuta가 **Aradasha의 유산**과 이어지는 봉인 이야기에서 훈련으로 힘을 길러야 하는 Aranara임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 아란유타가 **아란다샤의 유산**과 이어지는 봉인 이야기에서 훈련으로 힘을 길러야 하는 아란나라임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arayuta",
+       "revision": 903064,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aradasha",
+       "revision": 847295,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Children of the Past"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Legends of the Stone Lock",
+     "status": "accepted",
+     "note": "The facts match M1, and the interpretation follows from A1 and M1.",
+     "quote": "defeated a sealed Perpetual Mechanical Array with the help of Aradashan, Arayuta, Arasata, and Arasaha",
+     "sentences": [
+      {
+       "t_raw": "**Legends of the Stone Lock**에서 Traveler는 봉인된 Ruin Machines 열여섯 기를 봉인 해제해 파괴하고, 이어 봉인된 **Perpetual Mechanical Array**를 물리친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**바위 자물쇠 장치의 비화**에서 여행자는 봉인된 유적 장치 열여섯 기를 봉인 해제해 파괴하고, 이어 봉인된 **영구 장치 진영**을 물리친다."
+      },
+      {
+       "t_raw": "이 과정에서 Aradashan, Arayuta, Arasata, Arasaha가 Traveler를 돕는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 과정에서 아란다샨, 아란유타, 아란사타, 아란사하가 여행자를 돕는다."
+      },
+      {
+       "t_raw": "Arayuta는 Stone Pillar Seals로 Ruin Machines를 봉인하는 Aranara인 만큼, Aradasha의 유산을 다루는 이 여정에 함께하는 모습은 자신의 봉인 임무와 이어지는 행보로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아란유타는 Stone Pillar Seals로 유적 장치를 봉인하는 아란나라인 만큼, 아란다샤의 유산을 다루는 이 여정에 함께하는 모습은 자신의 봉인 임무와 이어지는 행보로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arayuta",
+       "revision": 903064,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aradasha",
+       "revision": 847295,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Children of the Past"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 바위 자물쇠 장치의 비화",
+     "latin_left": [
+      "Stone Pillar Seals"
+     ]
+    },
+    {
+     "section": "작중 행적 — Legends of the Stone Lock",
+     "status": "accepted",
+     "note": "The sentences match Q9, Q6, Q10 and Q5, and the order of events is consistent.",
+     "quote": "Paimon knows my name now. I'm so happy!",
+     "sentences": [
+      {
+       "t_raw": "Aradashan은 Nara와 Paimon에게 Arasata, Arasaha, Arayuta를 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란다샨은 나라와 페이몬에게 아란사타, 아란사하, 아란유타를 소개한다."
+      },
+      {
+       "t_raw": "Arayuta는 자신을 Arayuta라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 자신을 아란유타라고 소개한다."
+      },
+      {
+       "t_raw": "Paimon이 알겠다고 답하자, Arayuta는 Paimon이 이제 자신의 이름을 안다며 기뻐한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬이 알겠다고 답하자, 아란유타는 페이몬이 이제 자신의 이름을 안다며 기뻐한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      }
+     ],
+     "heading": "작중 행적 — 바위 자물쇠 장치의 비화",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Legends of the Stone Lock",
+     "status": "accepted",
+     "note": "",
+     "quote": "They remain underground of Ashavan Realm after completing the Legends of the Stone Lock World Quest.",
+     "sentences": [
+      {
+       "t_raw": "Legends of the Stone Lock이 완료된 뒤 Arayuta는 **Ashavan Realm 지하**에 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바위 자물쇠 장치의 비화가 완료된 뒤 아란유타는 **아샤반의 땅 지하**에 남는다."
+      },
+      {
+       "t_raw": "Arayuta가 Sumeru의 Ruin Machines를 Stone Pillar Seals로 봉인하는 역할을 맡고, 퀘스트 완료 뒤 Ashavan Realm 지하에 남는다는 점에서 Arayuta의 행보는 봉인 임무와 연결된 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아란유타가 수메르의 유적 장치를 Stone Pillar Seals로 봉인하는 역할을 맡고, 퀘스트 완료 뒤 아샤반의 땅 지하에 남는다는 점에서 아란유타의 행보는 봉인 임무와 연결된 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arayuta",
+       "revision": 903064,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 바위 자물쇠 장치의 비화",
+     "latin_left": [
+      "Stone Pillar Seals"
+     ]
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Q7 only says missing loose locks would be bad so the four must grow stronger. (1) states that line as being about the Stone Pillar Seal duty, and (2) treats that duty as what requires the power.",
+     "quote": "But it would be bad if we should miss any loose locks, so Aradashan, Arasata, Arasaha, and Arayuta must become more powerful.",
+     "sentences": [
+      {
+       "t_raw": "Arayuta는 Aranara의 일원으로, **Stone Pillar Seals**를 사용해 Sumeru 곳곳의 Ruin Machines를 봉인한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 아란나라의 일원으로, **Stone Pillar Seals**를 사용해 수메르 곳곳의 유적 장치를 봉인한다."
+      },
+      {
+       "t_raw": "Aradashan은 느슨한 자물쇠를 놓치는 일이 나쁠 것이라며 Aradashan, Arasata, Arasaha, Arayuta가 더 강해져야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "아란다샨은 느슨한 자물쇠를 놓치는 일이 나쁠 것이라며 아란다샨, 아란사타, 아란사하, 아란유타가 더 강해져야 한다고 말한다."
+      },
+      {
+       "t_raw": "느슨한 자물쇠를 놓치는 일이 나쁘기 때문에 Aradashan, Arasata, Arasaha, Arayuta가 더 강해져야 하는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "느슨한 자물쇠를 놓치는 일이 나쁘기 때문에 아란다샨, 아란사타, 아란사하, 아란유타가 더 강해져야 하는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arayuta",
+       "revision": 903064,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": [
+      "Stone Pillar Seals"
+     ]
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Dream training is only announced in Q8 after the loose-lock line. Calling it preparation for Arayuta's Ruin Machine sealing adds a purpose the English does not give.",
+     "quote": "Aradashan will go train in dreams with Arasata, Arayuta, and Arasaha now!",
+     "sentences": [
+      {
+       "t_raw": "Aradashan은 Arasata, Arayuta, Arasaha와 함께 **꿈에서 훈련**하러 가겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란다샨은 아란사타, 아란유타, 아란사하와 함께 **꿈에서 훈련**하러 가겠다고 한다."
+      },
+      {
+       "t_raw": "이는 더 강해져야 할 넷으로 Aradashan, Arasata, Arasaha, Arayuta가 꼽힌 점과 이어진다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 더 강해져야 할 넷으로 아란다샨, 아란사타, 아란사하, 아란유타가 꼽힌 점과 이어진다."
+      },
+      {
+       "t_raw": "Arayuta가 이제 Aradashan, Arasata, Arasaha와 함께 꿈속에서 훈련할 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "아란유타가 이제 아란다샨, 아란사타, 아란사하와 함께 꿈속에서 훈련할 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arayuta",
+       "revision": 903064,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "",
+     "quote": "Aradashan will go train in dreams with Arasata, Arayuta, and Arasaha now!",
+     "sentences": [
+      {
+       "t_raw": "Arayuta는 Aradashan, Arasata, Arasaha와 함께 Aradasha의 유산을 둘러싼 이야기에서 힘을 보탠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 아란다샨, 아란사타, 아란사하와 함께 아란다샤의 유산을 둘러싼 이야기에서 힘을 보탠다."
+      },
+      {
+       "t_raw": "Aradashan은 Arayuta를 Arasata, Arasaha와 함께 Nara와 Paimon에게 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란다샨은 아란유타를 아란사타, 아란사하와 함께 나라와 페이몬에게 소개한다."
+      },
+      {
+       "t_raw": "Aradashan은 느슨한 자물쇠를 놓치지 않도록 Aradashan, Arasata, Arasaha, Arayuta가 더 강해져야 한다고 말하고, 함께 꿈에서 훈련하겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란다샨은 느슨한 자물쇠를 놓치지 않도록 아란다샨, 아란사타, 아란사하, 아란유타가 더 강해져야 한다고 말하고, 함께 꿈에서 훈련하겠다고 한다."
+      },
+      {
+       "t_raw": "이 모습은 Arayuta가 Aradashan, Arasata, Arasaha와 힘을 키우는 동료 관계에 있음을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 모습은 아란유타가 아란다샨, 아란사타, 아란사하와 힘을 키우는 동료 관계에 있음을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aradasha",
+       "revision": 847295,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Children of the Past"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Aradashan"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "",
+     "quote": "Okay, Paimon's got it, Arayuta!",
+     "sentences": [
+      {
+       "t_raw": "Arayuta는 자신의 이름이 Arayuta라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 자신의 이름이 아란유타라고 말한다."
+      },
+      {
+       "t_raw": "Paimon은 Arayuta의 이름을 알아듣고 Arayuta를 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아란유타의 이름을 알아듣고 아란유타를 부른다."
+      },
+      {
+       "t_raw": "Arayuta는 Paimon이 이제 자신의 이름을 안다며 기뻐한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 페이몬이 이제 자신의 이름을 안다며 기뻐한다."
+      },
+      {
+       "t_raw": "Arayuta가 이름을 알린 뒤 Paimon이 이를 받아들이고 Arayuta가 기뻐한 점은, Paimon이 Arayuta의 이름을 아는 일이 Arayuta에게 기쁨으로 이어졌음을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아란유타가 이름을 알린 뒤 페이몬이 이를 받아들이고 아란유타가 기뻐한 점은, 페이몬이 아란유타의 이름을 아는 일이 아란유타에게 기쁨으로 이어졌음을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "",
+     "quote": "It is unclear what the eighteenth Ruin Machine that Aradasha sealed was. A possible candidate is the Ruin Golem in Devantaka Mountain.",
+     "sentences": [
+      {
+       "t_raw": "Aradasha가 봉인했다는 **열여덟 번째 Ruin Machine**의 정체는 불분명하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란다샤가 봉인했다는 **열여덟 번째 유적 장치**의 정체는 불분명하다."
+      },
+      {
+       "t_raw": "Legends of the Stone Lock에서는 Traveler가 봉인된 Ruin Machine 열여섯 개를 풀어 파괴하고, 이어 Aradashan, Arayuta, Arasata, Arasaha의 도움을 받아 봉인된 Perpetual Mechanical Array를 쓰러뜨린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바위 자물쇠 장치의 비화에서는 여행자가 봉인된 유적 장치 열여섯 개를 풀어 파괴하고, 이어 아란다샨, 아란유타, 아란사타, 아란사하의 도움을 받아 봉인된 영구 장치 진영을 쓰러뜨린다."
+      },
+      {
+       "t_raw": "Aradasha의 유산이 이 World Quest의 초점이고 열여덟 번째 Ruin Machine의 정체가 불분명하다는 점을 함께 놓으면, 그 봉인은 Aradasha의 유산 가운데 설명되지 않은 몫으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아란다샤의 유산이 이 월드 임무의 초점이고 열여덟 번째 유적 장치의 정체가 불분명하다는 점을 함께 놓으면, 그 봉인은 아란다샤의 유산 가운데 설명되지 않은 몫으로 보인다."
+      },
+      {
+       "t_raw": "가능한 후보로는 **Devantaka Mountain의 Ruin Golem**이 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가능한 후보로는 **데반타카산의 유적 거상**이 제시된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aradasha",
+       "revision": 847295,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "For the Children of the Past"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Both sentences are supported by Q3.",
+     "quote": "Let me tell the story from that point on. I like the rest part of the story.",
+     "sentences": [
+      {
+       "t_raw": "Arayuta는 이야기를 그 시점부터 이어서 들려주겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 이야기를 그 시점부터 이어서 들려주겠다고 말한다."
+      },
+      {
+       "t_raw": "그러면서 자신은 이야기의 **휴식 부분**을 좋아한다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 자신은 이야기의 **휴식 부분**을 좋아한다고 밝힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by Q6, Q10 and Q5.",
+     "quote": "Paimon knows my name now. I'm so happy!",
+     "sentences": [
+      {
+       "t_raw": "Arayuta는 Paimon에게 자신의 이름이 Arayuta라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란유타는 페이몬에게 자신의 이름이 아란유타라고 말한다."
+      },
+      {
+       "t_raw": "Paimon이 알아들었다는 뜻으로 Arayuta의 이름을 부르자, Arayuta는 Paimon이 이제 자신의 이름을 안다며 **기뻐한다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬이 알아들었다는 뜻으로 아란유타의 이름을 부르자, 아란유타는 페이몬이 이제 자신의 이름을 안다며 **기뻐한다**."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Legends of the Stone Lock",
+       "quest_ko": "바위 자물쇠 장치의 비화",
+       "version": "3.0",
+       "speaker": "Arayuta"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "위대한 Aradasha는 Ararakalari로 수많은 Big Iron Chunks를 물리치고 돌 자물쇠로 가두었다.",
+     "en": "The great Aradasha defeated many, many Big Iron Chunks with Ararakalari and locked them up with stone locks.",
+     "speaker": "Arayuta",
+     "source": {
+      "kind": "quest",
+      "quest": "Legends of the Stone Lock",
+      "quest_ko": "바위 자물쇠 장치의 비화",
+      "version": "3.0",
+      "speaker": "Arayuta"
+     },
+     "t": "위대한 아란다샤는 아라라칼라리로 수많은 Big Iron Chunks를 물리치고 돌 자물쇠로 가두었다.",
+     "speaker_ko": "아란유타"
+    },
+    {
+     "section": "작중 행적 — Legends of the Stone Lock",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "Paimon이 이제 내 이름을 안다. 정말 기쁘다!",
+     "en": "Paimon knows my name now. I'm so happy!",
+     "speaker": "Arayuta",
+     "source": {
+      "kind": "quest",
+      "quest": "Legends of the Stone Lock",
+      "quest_ko": "바위 자물쇠 장치의 비화",
+      "version": "3.0",
+      "speaker": "Arayuta"
+     },
+     "t": "페이몬이 이제 내 이름을 안다. 정말 기쁘다!",
+     "speaker_ko": "아란유타"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "하지만 느슨한 자물쇠를 하나라도 놓치면 곤란하니, Aradashan, Arasata, Arasaha, Arayuta는 더 강해져야 한다.",
+     "en": "But it would be bad if we should miss any loose locks, so Aradashan, Arasata, Arasaha, and Arayuta must become more powerful.",
+     "speaker": "Aradashan",
+     "source": {
+      "kind": "quest",
+      "quest": "Legends of the Stone Lock",
+      "quest_ko": "바위 자물쇠 장치의 비화",
+      "version": "3.0",
+      "speaker": "Aradashan"
+     },
+     "t": "하지만 느슨한 자물쇠를 하나라도 놓치면 곤란하니, 아란다샨, 아란사타, 아란사하, 아란유타는 더 강해져야 한다.",
+     "speaker_ko": "아란다샨"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The translation adds '나는' (emphasis on 'I'), which is not in the English; the English says 'I'm so happy', so '나는 정말 기쁘다' is actually acceptable. However, it is a faithful rendering, so no real failure.",
+     "t_raw": "[번역] Paimon이 이제 내 이름을 안다. 나는 정말 기쁘다!",
+     "en": "Paimon knows my name now. I'm so happy!",
+     "speaker": "Arayuta",
+     "source": {
+      "kind": "quest",
+      "quest": "Legends of the Stone Lock",
+      "quest_ko": "바위 자물쇠 장치의 비화",
+      "version": "3.0",
+      "speaker": "Arayuta"
+     },
+     "t": "[번역] 페이몬이 이제 내 이름을 안다. 나는 정말 기쁘다!",
+     "speaker_ko": "아란유타"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 0 is a faithful Korean translation of Arayuta's line [Q3]. Nothing failed.",
+     "t_raw": "그 시점부터 이야기를 이어서 들려줄게. 나는 이야기의 휴식 부분을 좋아해.",
+     "en": "Let me tell the story from that point on. I like the rest part of the story.",
+     "speaker": "Arayuta",
+     "source": {
+      "kind": "quest",
+      "quest": "Legends of the Stone Lock",
+      "quest_ko": "바위 자물쇠 장치의 비화",
+      "version": "3.0",
+      "speaker": "Arayuta"
+     },
+     "t": "그 시점부터 이야기를 이어서 들려줄게. 나는 이야기의 휴식 부분을 좋아해.",
+     "speaker_ko": "아란유타"
+    }
+   ]
+  }
+ ]
+}

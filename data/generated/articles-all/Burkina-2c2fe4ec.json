@@ -20,41 +20,41 @@
    "input_chars": 622,
    "input_cut": false,
    "input_hash": "173686b99948",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He was a Huitztlan warrior who joined Tenoch to fight against the Abyss alongside his Yumkasaurus companion Kongamato",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A4, M2 and Q8.",
+     "quote": "Kongamato became corrupted by the Abyss, and in order to save him, Burkina, the current bearer of the Malipo name, summoned the power of the Turnfire, sacrificing himself in the process.",
      "sentences": [
       {
-       "t_raw": "Burkina는 Huitztlan 출신 전사로, Tenoch의 전투에 합류해 Kongamato와 함께 Abyss에 맞섰으며 Malipo라는 Ancient Name을 지녔다.",
+       "t_raw": "Burkina는 Huitztlan의 전사로, Tenoch와 함께 Abyss에 맞서 싸웠고 Ancient Name Malipo를 지닌 인물이다.",
        "interp": false,
        "dropped": false,
-       "t": "부르키나는 위칠틀란 출신 전사로, 테노치의 전투에 합류해 콩가마토와 함께 심연에 맞섰으며 말리포라는 고대 이름을 지녔다."
+       "t": "부르키나는 위칠틀란의 전사로, 테노치와 함께 심연에 맞서 싸웠고 고대 이름 말리포를 지닌 인물이다."
       },
       {
-       "t_raw": "cataclysm 당시 그는 Kongamato가 Abyssal energy에 오염되어 벌인 난동에 목숨을 잃었고, 죽기 전 자신의 힘과 피 일부를 Kongamato에게 넘겼다.",
+       "t_raw": "Cataclysm 때 그는 Kongamato와 함께 Abyss를 몰아냈지만, 한 전투에서 Abyss에 오염된 Kongamato가 분노에 휩싸여 Burkina를 죽였고, 죽기 전 Burkina는 자신의 힘과 피의 일부를 Kongamato에게 넘겼다.",
        "interp": false,
        "dropped": false,
-       "t": "cataclysm 당시 그는 콩가마토가 Abyssal energy에 오염되어 벌인 난동에 목숨을 잃었고, 죽기 전 자신의 힘과 피 일부를 콩가마토에게 넘겼다."
+       "t": "대재앙 때 그는 콩가마토와 함께 심연을 몰아냈지만, 한 전투에서 심연에 오염된 콩가마토가 분노에 휩싸여 부르키나를 죽였고, 죽기 전 부르키나는 자신의 힘과 피의 일부를 콩가마토에게 넘겼다."
       },
       {
-       "t_raw": "Kongamato는 그 뒤 수백 년을 살아 Mountain King으로 불렸고, Burkina는 **Turnfire**의 힘을 불러 자신을 희생한 인물로 전해진다.",
+       "t_raw": "Scions of the Canopy 대부분은 그가 Natlan을 지키다 전사했다고 전하지만, Scions of the Canopy의 또 다른 전승은 그가 Malipo의 현 계승자로서 Turnfire의 힘을 불러 스스로를 희생해 Kongamato를 구했다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "콩가마토는 그 뒤 수백 년을 살아 산의 왕으로 불렸고, 부르키나는 **회고의 불**의 힘을 불러 자신을 희생한 인물로 전해진다."
+       "t": "나무살이 대부분은 그가 나타를 지키다 전사했다고 전하지만, 나무살이의 또 다른 전승은 그가 말리포의 현 계승자로서 회고의 불의 힘을 불러 스스로를 희생해 콩가마토를 구했다고 말한다."
       },
       {
-       "t_raw": "Burkina는 자신의 죽음으로 Kongamato라는 영광의 상징을 남기고 **Turnfire Night**에 기념되는 중심 인물로 보인다.",
+       "t_raw": "Abyss에 오염된 Kongamato를 구하려 Turnfire를 썼다는 이야기와 그를 기리는 Turnfire Night가 함께 남아, Burkina는 **Kongamato의 생존과 Turnfire Night의 기억을 잇는 인물**로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "부르키나는 자신의 죽음으로 콩가마토라는 영광의 상징을 남기고 **회고의 밤**에 기념되는 중심 인물로 보인다."
+       "t": "심연에 오염된 콩가마토를 구하려 회고의 불을 썼다는 이야기와 그를 기리는 회고의 밤이 함께 남아, 부르키나는 **콩가마토의 생존과 회고의 밤의 기억을 잇는 인물**로 보인다."
       }
      ],
      "sources": [
@@ -81,19 +81,6 @@
        "section": "Lore",
        "paragraph": "M2",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Saurian",
-       "revision": 1629603,
-       "section": "Varieties",
-       "paragraph": "M6",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Talking Stick"
-        }
-       ]
       },
       {
        "kind": "quest",
@@ -104,39 +91,37 @@
       }
      ],
      "heading": null,
-     "latin_left": [
-      "Abyssal"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The fourth warrior to join Tenoch was a young and inexperienced Huitztlan man named Burkina and his reckless Yumkasaurus companion Kongamato.",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, M1, M6 and M3.",
+     "quote": "He was a Huitztlan warrior who joined Tenoch to fight against the Abyss alongside his Yumkasaurus companion Kongamato, and bore the Ancient Name Malipo.",
      "sentences": [
       {
-       "t_raw": "Burkina는 Huitztlan의 전사이자 Tenoch를 따라 Abyss와 싸운 역사적 인물로, Kongamato라는 Yumkasaurus 동반자와 함께했고 Ancient Name Malipo를 지녔다.",
+       "t_raw": "Burkina는 **Huitztlan의 전사**이며 **Ancient Name Malipo**를 지녔다.",
        "interp": false,
        "dropped": false,
-       "t": "부르키나는 위칠틀란의 전사이자 테노치를 따라 심연과 싸운 역사적 인물로, 콩가마토라는 숲룡 동반자와 함께했고 고대 이름 말리포를 지녔다."
+       "t": "부르키나는 **위칠틀란의 전사**이며 **고대 이름 말리포**를 지녔다."
       },
       {
-       "t_raw": "Tenoch에게 합류한 네 번째 전사였던 그는 경험이 적고 젊은 Huitztlan 남성이었으며, Kongamato는 무모한 Yumkasaurus 동반자였다.",
+       "t_raw": "Tenoch의 전사단에 네 번째로 합류한 그는 젊고 전투 경험이 없었지만, Tenoch를 우러러보고 그의 곤봉과 유산에 이끌려 자발적으로 전사 무리에 들어갔다.",
        "interp": false,
        "dropped": false,
-       "t": "테노치에게 합류한 네 번째 전사였던 그는 경험이 적고 젊은 위칠틀란 남성이었으며, 콩가마토는 무모한 숲룡 동반자였다."
+       "t": "테노치의 전사단에 네 번째로 합류한 그는 젊고 전투 경험이 없었지만, 테노치를 우러러보고 그의 곤봉과 유산에 이끌려 자발적으로 전사 무리에 들어갔다."
       },
       {
-       "t_raw": "Burkina는 Tenoch를 동경했지만 전투 경험은 없었고, Tenoch의 곤봉과 유산에 이끌려 언젠가 같은 전사의 길을 걸을 수 있다는 생각에 자발적으로 무리에 들어갔다.",
+       "t_raw": "그의 동료는 무모한 Yumkasaurus Kongamato였고, Kongamato는 Tenoch의 Abyss 원정에서 Burkina와 동행했다.",
        "interp": false,
        "dropped": false,
-       "t": "부르키나는 테노치를 동경했지만 전투 경험은 없었고, 테노치의 곤봉과 유산에 이끌려 언젠가 같은 전사의 길을 걸을 수 있다는 생각에 자발적으로 무리에 들어갔다."
+       "t": "그의 동료는 무모한 숲룡 콩가마토였고, 콩가마토는 테노치의 심연 원정에서 부르키나와 동행했다."
       },
       {
-       "t_raw": "Ancient Name 관련 기록에는 Turnfire, Kinich, Burkina가 함께 제시되어 있다.",
+       "t_raw": "Ancient Name과 그 계승자 항목에는 Turnfire, Kinich, Burkina가 적혀 있다.",
        "interp": false,
        "dropped": false,
-       "t": "고대 이름 관련 기록에는 회고의 불, 키니치, 부르키나가 함께 제시되어 있다."
+       "t": "고대 이름과 그 계승자 항목에는 회고의 불, 키니치, 부르키나가 적혀 있다."
       }
      ],
      "sources": [
@@ -154,128 +139,6 @@
        "revision": 1624345,
        "section": "Story > ~>500 years ago",
        "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ancient Name",
-       "revision": 1630097,
-       "section": "Ancient Names and Their Bearers",
-       "paragraph": "M3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "A Decision (Archon Quest)"
-        },
-        {
-         "type": "quest",
-         "name": "A Hero's Rite"
-        }
-       ]
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Sure has! It went to Burkina, the hero that we celebrate on Turnfire Night. But that was five hundred years ago.",
-     "sentences": [
-      {
-       "t_raw": "Burkina는 Turnfire Night에 기념되는 영웅이며, 그 일은 500년 전의 일이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "부르키나는 회고의 밤에 기념되는 영웅이며, 그 일은 500년 전의 일이다."
-      },
-      {
-       "t_raw": "Kinich는 Burkina를 선조라 부르며, 그가 다섯 다른 영웅과 함께 원정을 벌였고 그곳은 요즘 쉽게 갈 수 있는 곳이 아니라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "키니치는 부르키나를 선조라 부르며, 그가 다섯 다른 영웅과 함께 원정을 벌였고 그곳은 요즘 쉽게 갈 수 있는 곳이 아니라고 말한다."
-      },
-      {
-       "t_raw": "Burkina가 Malipo의 힘을 목숨을 대가로 불러냈다는 점이 핵심 요인으로 전해진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "부르키나가 말리포의 힘을 목숨을 대가로 불러냈다는 점이 핵심 요인으로 전해진다."
-      },
-      {
-       "t_raw": "후대의 선조 호명과 Turnfire Night 기념은 Burkina가 한 시대의 전사이자 기념되는 영웅으로 자리한다는 것을 보여 준다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "후대의 선조 호명과 회고의 밤 기념은 부르키나가 한 시대의 전사이자 기념되는 영웅으로 자리한다는 것을 보여 준다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "I, Flame Bearer",
-       "quest_ko": "나, 불 운반자",
-       "version": "5.0",
-       "speaker": "Kinich"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Mysterious Visitor From Huitztlan",
-       "quest_ko": "위칠틀란의 수수께끼 방문객",
-       "version": "5.0",
-       "speaker": "Toba"
-      },
-      {
-       "kind": "quest",
-       "quest": "I, Flame Bearer",
-       "quest_ko": "나, 불 운반자",
-       "version": "5.0",
-       "speaker": "Ponche"
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Cataclysm",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Our ancestor, Burkina once fought a campaign there alongside the five other heroes.",
-     "sentences": [
-      {
-       "t_raw": "Cataclysm이 Natlan에 닥쳤을 때 Burkina는 Kongamato와 함께 Abyss의 침입자들을 몰아내는 싸움에 나섰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대재앙이 나타에 닥쳤을 때 부르키나는 콩가마토와 함께 심연의 침입자들을 몰아내는 싸움에 나섰다."
-      },
-      {
-       "t_raw": "그는 Tenoch를 따른 Huitztlan의 전사였고, Kinich는 그를 다섯 다른 영웅과 함께 원정에 나선 조상으로 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 테노치를 따른 위칠틀란의 전사였고, 키니치는 그를 다섯 다른 영웅과 함께 원정에 나선 조상으로 전한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Burkina",
-       "revision": 1635539,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Burkina",
-       "revision": 1635539,
-       "section": "Story",
-       "paragraph": "A4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Scions of the Canopy",
-       "revision": 1631474,
-       "section": "Lore",
-       "paragraph": "M2",
        "wiki_refs": []
       },
       {
@@ -292,190 +155,6 @@
        ]
       },
       {
-       "kind": "quest",
-       "quest": "I, Flame Bearer",
-       "quest_ko": "나, 불 운반자",
-       "version": "5.0",
-       "speaker": "Kinich"
-      }
-     ],
-     "heading": "작중 행적 — 대재앙",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Cataclysm",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The key factor is that Burkina summoned the power of \"Malipo,\" at the cost of his own life.",
-     "sentences": [
-      {
-       "t_raw": "한 전투에서 동반자 Kongamato는 Abyss에 오염되었고, 격분한 끝에 Burkina를 죽였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한 전투에서 동반자 콩가마토는 심연에 오염되었고, 격분한 끝에 부르키나를 죽였다."
-      },
-      {
-       "t_raw": "Burkina는 죽기 전 자신의 힘과 피 일부를 Kongamato에게 넘겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "부르키나는 죽기 전 자신의 힘과 피 일부를 콩가마토에게 넘겼다."
-      },
-      {
-       "t_raw": "Malipo의 계승자였던 그는 Kongamato를 구하려 Turnfire의 힘을 소환했고, 그 대가는 자신의 목숨이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "말리포의 계승자였던 그는 콩가마토를 구하려 회고의 불의 힘을 소환했고, 그 대가는 자신의 목숨이었다."
-      },
-      {
-       "t_raw": "그 뒤 Kongamato의 수명은 크게 늘어 수백 년을 살 수 있게 되었고, 부족의 영광을 보여 주는 살아 있는 상징이 되어 Mountain King으로 불리게 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 뒤 콩가마토의 수명은 크게 늘어 수백 년을 살 수 있게 되었고, 부족의 영광을 보여 주는 살아 있는 상징이 되어 산의 왕으로 불리게 되었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Burkina",
-       "revision": 1635539,
-       "section": "Story",
-       "paragraph": "A4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Scions of the Canopy",
-       "revision": 1631474,
-       "section": "Lore",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Cataclysm",
-       "revision": 1633187,
-       "section": "Known Casualties",
-       "paragraph": "M5",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Fang of the Mountain King"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "I, Flame Bearer",
-       "quest_ko": "나, 불 운반자",
-       "version": "5.0",
-       "speaker": "Ponche"
-      }
-     ],
-     "heading": "작중 행적 — 대재앙",
-     "latin_left": []
-    },
-    {
-     "section": "능력과 상징",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Kongamato became corrupted by the Abyss, and in order to save him, Burkina, the current bearer of the Malipo name, summoned the power of the Turnfire, sacrificing himself in the process.",
-     "sentences": [
-      {
-       "t_raw": "Burkina는 Huitztlan의 전사로 Ancient Name **Malipo**를 지녔고, Kongamato와 함께 Abyss에 맞섰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "부르키나는 위칠틀란의 전사로 고대 이름 **말리포**를 지녔고, 콩가마토와 함께 심연에 맞섰다."
-      },
-      {
-       "t_raw": "Scions of the Canopy의 기록은 그가 Malipo 이름의 당시 계승자로서 Kongamato를 구하려 **Turnfire**의 힘을 불러내 자신을 희생했다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나무살이의 기록은 그가 말리포 이름의 당시 계승자로서 콩가마토를 구하려 **회고의 불**의 힘을 불러내 자신을 희생했다고 전한다."
-      },
-      {
-       "t_raw": "Ponche는 자신의 목숨을 대가로 \"Malipo\"의 힘을 불러낸 점을 핵심으로 짚는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "폰츠는 자신의 목숨을 대가로 \"말리포\"의 힘을 불러낸 점을 핵심으로 짚는다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Burkina",
-       "revision": 1635539,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Scions of the Canopy",
-       "revision": 1631474,
-       "section": "Lore",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "I, Flame Bearer",
-       "quest_ko": "나, 불 운반자",
-       "version": "5.0",
-       "speaker": "Ponche"
-      }
-     ],
-     "heading": "능력과 상징",
-     "latin_left": []
-    },
-    {
-     "section": "능력과 상징",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After this incident, Kongamato's lifespan was greatly enhanced, allowing him to live for centuries, thus becoming a living symbol of the tribe's glory, now known as the Mountain King",
-     "sentences": [
-      {
-       "t_raw": "Burkina는 죽기 전 자신의 힘과 피 일부를 Kongamato에게 넘겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "부르키나는 죽기 전 자신의 힘과 피 일부를 콩가마토에게 넘겼다."
-      },
-      {
-       "t_raw": "그 뒤 Kongamato는 수명이 크게 늘어 여러 세기를 살았고, Scions of the Canopy의 영광을 상징하는 **Mountain King**이 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 뒤 콩가마토는 수명이 크게 늘어 여러 세기를 살았고, 나무살이의 영광을 상징하는 **산의 왕**이 되었다."
-      },
-      {
-       "t_raw": "Burkina의 마지막 이전과 희생이 Kongamato의 긴 삶으로 이어졌다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "부르키나의 마지막 이전과 희생이 콩가마토의 긴 삶으로 이어졌다고 볼 수 있다."
-      },
-      {
-       "t_raw": "Ancient Name을 다루는 기록에는 Turnfire, Kinich, Burkina가 나란히 언급된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "고대 이름을 다루는 기록에는 회고의 불, 키니치, 부르키나가 나란히 언급된다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Burkina",
-       "revision": 1635539,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Scions of the Canopy",
-       "revision": 1631474,
-       "section": "Lore",
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
        "kind": "wiki",
        "page": "Ancient Name",
        "revision": 1630097,
@@ -493,29 +172,50 @@
        ]
       }
      ],
-     "heading": "능력과 상징",
+     "heading": "정체와 배경",
      "latin_left": []
     },
     {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Burkina looked up to Tenoch, though he had no battle experience of his own.",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by Q7, A1 and M1.",
+     "quote": "Our ancestor, Burkina once fought a campaign there alongside the five other heroes. But it's not such an easy place to get to these days.",
      "sentences": [
       {
-       "t_raw": "Burkina는 **Tenoch를 동경했고**, 전투 경험 없이 Tenoch의 곤봉과 유산에 이끌려 자발적으로 전사 무리에 합류했다.",
+       "t_raw": "후대의 Kinich는 Burkina를 **우리의 조상**이라고 부르며, 그가 다섯 다른 영웅들과 함께 한 원정에서 싸웠다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "부르키나는 **테노치를 동경했고**, 전투 경험 없이 테노치의 곤봉과 유산에 이끌려 자발적으로 전사 무리에 합류했다."
+       "t": "후대의 키니치는 부르키나를 **우리의 조상**이라고 부르며, 그가 다섯 다른 영웅들과 함께 한 원정에서 싸웠다고 말한다."
       },
       {
-       "t_raw": "같은 전사의 길을 걸을 수 있다고 여긴 그에게 그 동경은 행동의 동력이었던 셈이다.",
+       "t_raw": "Kinich에 따르면 그 원정지는 요즘 가기 쉽지 않은 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "키니치에 따르면 그 원정지는 요즘 가기 쉽지 않은 곳이다."
+      },
+      {
+       "t_raw": "이처럼 Burkina는 Tenoch의 전사단에 합류한 젊은 Huitztlan 전사이면서, 후대의 Kinich가 우리의 조상이라고 부르는 인물이라고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "같은 전사의 길을 걸을 수 있다고 여긴 그에게 그 동경은 행동의 동력이었던 셈이다."
+       "t": "이처럼 부르키나는 테노치의 전사단에 합류한 젊은 위칠틀란 전사이면서, 후대의 키니치가 우리의 조상이라고 부르는 인물이라고 볼 수 있다."
       }
      ],
      "sources": [
+      {
+       "kind": "quest",
+       "quest": "I, Flame Bearer",
+       "quest_ko": "나, 불 운반자",
+       "version": "5.0",
+       "speaker": "Kinich"
+      },
+      {
+       "kind": "wiki",
+       "page": "Burkina",
+       "revision": 1635539,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Tenoch",
@@ -525,35 +225,48 @@
        "wiki_refs": []
       }
      ],
-     "heading": "인간관계",
+     "heading": "정체와 배경",
      "latin_left": []
     },
     {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "in order to save him, Burkina, the current bearer of the Malipo name, summoned the power of the Turnfire, sacrificing himself in the process.",
+     "section": "작중 행적 — Cataclysm",
+     "status": "accepted",
+     "note": "All sentences are supported by A4, M2, M4 and M5.",
+     "quote": "Burkina · Natlan · Killed by his companion Kongamato, which was infested by the Abyss",
      "sentences": [
       {
-       "t_raw": "Kongamato는 Tenoch의 Abyss 원정에서 Burkina를 수행한 Yumkasaur로, 이후 수명이 크게 늘어 수백 년을 살고 Mountain King으로 남았다.",
+       "t_raw": "Cataclysm이 Natlan에 닥치자 Burkina와 Kongamato는 Abyss 침략자들을 막았고, Tenoch와 Pyro Archon Mavuika의 Abyss 전투에도 함께했다.",
        "interp": false,
        "dropped": false,
-       "t": "콩가마토는 테노치의 심연 원정에서 부르키나를 수행한 숲룡으로, 이후 수명이 크게 늘어 수백 년을 살고 산의 왕으로 남았다."
+       "t": "대재앙이 나타에 닥치자 부르키나와 콩가마토는 심연 침략자들을 막았고, 테노치와 불의 신 마비카의 심연 전투에도 함께했다."
       },
       {
-       "t_raw": "Cataclysm 시대에 Burkina는 Abyss에 오염된 Kongamato를 살리려 **Turnfire로 자신을 희생했다**.",
+       "t_raw": "한 전투에서 Kongamato는 Abyssal energy에 심하게 오염되어 격노한 끝에 Burkina를 죽였다.",
        "interp": false,
        "dropped": false,
-       "t": "대재앙 시대에 부르키나는 심연에 오염된 콩가마토를 살리려 **회고의 불로 자신을 희생했다**."
+       "t": "한 전투에서 콩가마토는 심연의 에너지에 심하게 오염되어 격노한 끝에 부르키나를 죽였다.",
+       "polish": {
+        "from": "한 전투에서 콩가마토는 Abyssal energy에 심하게 오염되어 격노한 끝에 부르키나를 죽였다.",
+        "text": "한 전투에서 콩가마토는 심연의 에너지에 심하게 오염되어 격노한 끝에 부르키나를 죽였다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "Scions of the Canopy의 기록은 그가 Abyss에 감염된 Kongamato에게 죽임을 당했다고 전한다.",
+       "t_raw": "Burkina의 죽음은 Abyss에 잠식된 동료 Kongamato가 그를 죽인 것으로 기록된다.",
        "interp": false,
        "dropped": false,
-       "t": "나무살이의 기록은 그가 심연에 감염된 콩가마토에게 죽임을 당했다고 전한다."
+       "t": "부르키나의 죽음은 심연에 잠식된 동료 콩가마토가 그를 죽인 것으로 기록된다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Burkina",
+       "revision": 1635539,
+       "section": "Story",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Scions of the Canopy",
@@ -591,6 +304,231 @@
          "name": "Fang of the Mountain King"
         }
        ]
+      }
+     ],
+     "heading": "작중 행적 — 대재앙",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Cataclysm",
+     "status": "accepted",
+     "note": "All sentences are supported by A4, M2 and Q10. The interpretation in (3) follows from M2.",
+     "quote": "The key factor is that Burkina summoned the power of \"Malipo,\" at the cost of his own life.",
+     "sentences": [
+      {
+       "t_raw": "죽기 전 Burkina는 자신의 힘과 피 일부를 Kongamato에게 넘겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "죽기 전 부르키나는 자신의 힘과 피 일부를 콩가마토에게 넘겼다."
+      },
+      {
+       "t_raw": "Scions of the Canopy에 따르면, Malipo의 계승자였던 Burkina는 Kongamato를 구하려 Turnfire의 힘을 소환해 자신을 희생했고, 그 뒤 Kongamato의 수명은 크게 늘어 수백 년을 살았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나무살이에 따르면, 말리포의 계승자였던 부르키나는 콩가마토를 구하려 회고의 불의 힘을 소환해 자신을 희생했고, 그 뒤 콩가마토의 수명은 크게 늘어 수백 년을 살았다."
+      },
+      {
+       "t_raw": "Ponche는 Burkina가 목숨을 대가로 \"Malipo\"의 힘을 소환한 점을 핵심 요인으로 짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰츠는 부르키나가 목숨을 대가로 \"말리포\"의 힘을 소환한 점을 핵심 요인으로 짚는다."
+      },
+      {
+       "t_raw": "그 희생은 Kongamato를 부족의 영광을 보여주는 Mountain King으로 남긴 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 희생은 콩가마토를 부족의 영광을 보여주는 산의 왕으로 남긴 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Burkina",
+       "revision": 1635539,
+       "section": "Story",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Scions of the Canopy",
+       "revision": 1631474,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "I, Flame Bearer",
+       "quest_ko": "나, 불 운반자",
+       "version": "5.0",
+       "speaker": "Ponche"
+      }
+     ],
+     "heading": "작중 행적 — 대재앙",
+     "latin_left": []
+    },
+    {
+     "section": "능력과 Turnfire",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, M2 and Q10. The interpretation in (2) is reasonable.",
+     "quote": "The key factor is that Burkina summoned the power of \"Malipo,\" at the cost of his own life.",
+     "sentences": [
+      {
+       "t_raw": "Burkina는 Huitztlan의 전사로, Ancient Name **Malipo**를 이어 받았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "부르키나는 위칠틀란의 전사로, 고대 이름 **말리포**를 이어 받았다."
+      },
+      {
+       "t_raw": "Abyss에 오염된 Kongamato를 구하기 위해 그는 **Turnfire의 힘**을 불러냈고, 그 대가로 목숨을 잃었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연에 오염된 콩가마토를 구하기 위해 그는 **회고의 불의 힘**을 불러냈고, 그 대가로 목숨을 잃었다."
+      },
+      {
+       "t_raw": "Ponche는 Burkina가 'Malipo'의 힘을 불러냈다고도 했으므로, Ancient Name Malipo와 Turnfire는 Burkina를 거쳐 긴밀히 연결된 이름과 힘으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "폰츠는 부르키나가 '말리포'의 힘을 불러냈다고도 했으므로, 고대 이름 말리포와 회고의 불은 부르키나를 거쳐 긴밀히 연결된 이름과 힘으로 보인다."
+      },
+      {
+       "t_raw": "Turnfire를 사용한 이 사건은 이후 Kongamato의 장수와 상징성에 큰 영향을 남겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "회고의 불을 사용한 이 사건은 이후 콩가마토의 장수와 상징성에 큰 영향을 남겼다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Burkina",
+       "revision": 1635539,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Scions of the Canopy",
+       "revision": 1631474,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ancient Name",
+       "revision": 1630097,
+       "section": "Ancient Names and Their Bearers",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Decision (Archon Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "A Hero's Rite"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "I, Flame Bearer",
+       "quest_ko": "나, 불 운반자",
+       "version": "5.0",
+       "speaker": "Ponche"
+      }
+     ],
+     "heading": "능력과 회고의 불",
+     "latin_left": []
+    },
+    {
+     "section": "능력과 Turnfire",
+     "status": "accepted",
+     "note": "All sentences are supported by A4 and M2.",
+     "quote": "Before he died, Burkina passed part of his power and blood to Kongamato.",
+     "sentences": [
+      {
+       "t_raw": "죽음 직전 Burkina는 Kongamato에게 자신의 힘과 피 일부를 남겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "죽음 직전 부르키나는 콩가마토에게 자신의 힘과 피 일부를 남겼다."
+      },
+      {
+       "t_raw": "그 후 Kongamato의 수명은 크게 늘어 수백 년을 살았고, **Mountain King**이라 불리며 부족의 살아 있는 영광이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 후 콩가마토의 수명은 크게 늘어 수백 년을 살았고, **산의 왕**이라 불리며 부족의 살아 있는 영광이 되었다."
+      },
+      {
+       "t_raw": "Burkina가 넘겨준 힘과 피가 Kongamato의 오랜 수명과 산의 왕이 되는 데 이어진 것이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "부르키나가 넘겨준 힘과 피가 콩가마토의 오랜 수명과 산의 왕이 되는 데 이어진 것이라고 볼 수 있다."
+      },
+      {
+       "t_raw": "이렇게 Burkina의 희생은 Kongamato의 신체적 변화와 부족의 기억 양쪽에 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이렇게 부르키나의 희생은 콩가마토의 신체적 변화와 부족의 기억 양쪽에 남아 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Burkina",
+       "revision": 1635539,
+       "section": "Story",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Scions of the Canopy",
+       "revision": 1631474,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력과 회고의 불",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by M1 and M6; the interpretation is reasonable.",
+     "quote": "The fourth warrior to join Tenoch was a young and inexperienced Huitztlan man named Burkina and his reckless Yumkasaurus companion Kongamato.",
+     "sentences": [
+      {
+       "t_raw": "Tenoch의 무리에 네 번째로 합류한 이는 **전투 경험이 없던 젊은 Huitztlan 전사** Burkina와, 그와 동행한 **무모한 Yumkasaurus Kongamato**였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "테노치의 무리에 네 번째로 합류한 이는 **전투 경험이 없던 젊은 위칠틀란 전사** 부르키나와, 그와 동행한 **무모한 숲룡 콩가마토**였다."
+      },
+      {
+       "t_raw": "Burkina는 Tenoch를 동경했고, 언젠가 Tenoch와 같은 전사의 길을 걸을 수 있음을 알고 Tenoch의 곤봉과 유산에 이끌려 자발적으로 무리에 들어갔으며, Kongamato는 Tenoch의 Abyss 원정에서도 그와 함께했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "부르키나는 테노치를 동경했고, 언젠가 테노치와 같은 전사의 길을 걸을 수 있음을 알고 테노치의 곤봉과 유산에 이끌려 자발적으로 무리에 들어갔으며, 콩가마토는 테노치의 심연 원정에서도 그와 함께했다."
+      },
+      {
+       "t_raw": "Burkina의 선택에는 전투 경험보다 동경과 전사의 길에 대한 의지가 앞섰던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "부르키나의 선택에는 전투 경험보다 동경과 전사의 길에 대한 의지가 앞섰던 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tenoch",
+       "revision": 1624345,
+       "section": "Story > ~>500 years ago",
+       "paragraph": "M1",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -611,21 +549,27 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Our ancestor, Burkina once fought a campaign there alongside the five other heroes. But it's not such an easy place to get to these days.",
+     "status": "accepted",
+     "note": "Supported by M2 and Q7; the interpretation is hedged.",
+     "quote": "Kongamato became corrupted by the Abyss, and in order to save him, Burkina, the current bearer of the Malipo name, summoned the power of the Turnfire, sacrificing himself in the process.",
      "sentences": [
       {
-       "t_raw": "**Scions of the Canopy의 전승**에서 Burkina는 Tenoch와 Pyro Archon Mavuika와 함께 Abyss에 맞선 영웅이며, Kinich는 그를 \"우리의 조상\"이라 부르며 한때 다섯 다른 영웅들과 그곳에서 원정을 치렀다고 말한다.",
+       "t_raw": "Kongamato가 Abyss에 오염되자 Malipo의 현재 계승자였던 Burkina는 그를 구하려 Turnfire의 힘을 불러 자신을 희생했고, 그 뒤 Kongamato는 수백 년을 살며 부족의 영광을 보여 주는 살아 있는 상징, Mountain King이 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "**나무살이의 전승**에서 부르키나는 테노치와 불의 신 마비카와 함께 심연에 맞선 영웅이며, 키니치는 그를 \"우리의 조상\"이라 부르며 한때 다섯 다른 영웅들과 그곳에서 원정을 치렀다고 말한다."
+       "t": "콩가마토가 심연에 오염되자 말리포의 현재 계승자였던 부르키나는 그를 구하려 회고의 불의 힘을 불러 자신을 희생했고, 그 뒤 콩가마토는 수백 년을 살며 부족의 영광을 보여 주는 살아 있는 상징, 산의 왕이 되었다."
       },
       {
-       "t_raw": "Burkina의 영웅상과 Kongamato의 Mountain King 이미지가 함께 기억되는 점은 두 동료가 부족의 과거를 증언하는 셈임을 보여 준다.",
+       "t_raw": "Kinich는 Burkina를 '우리의 조상'이라 부르며 그가 다섯 명의 다른 영웅들과 함께 싸운 원정을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "키니치는 부르키나를 '우리의 조상'이라 부르며 그가 다섯 명의 다른 영웅들과 함께 싸운 원정을 언급한다."
+      },
+      {
+       "t_raw": "Burkina의 희생은 Kongamato의 긴 삶과 Kinich가 조상으로 기억하는 모습으로 이어졌다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "부르키나의 영웅상과 콩가마토의 산의 왕 이미지가 함께 기억되는 점은 두 동료가 부족의 과거를 증언하는 셈임을 보여 준다."
+       "t": "부르키나의 희생은 콩가마토의 긴 삶과 키니치가 조상으로 기억하는 모습으로 이어졌다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -650,27 +594,44 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Supported by A4, M2 and M4; the interpretation is reasonable.",
      "quote": "The stories from most of the Scions of the Canopy instead claim that he fell in battle defending Natlan.",
      "sentences": [
       {
-       "t_raw": "**Scions of the Canopy의 통설**은 Burkina가 Natlan을 지키다 전사했다고 전한다.",
+       "t_raw": "기록에 따르면 Kongamato가 Abyssal energy에 오염되어 분노 속에서 Burkina를 죽였고, Burkina는 죽기 전 힘과 피를 Kongamato에게 넘겼다.",
        "interp": false,
        "dropped": false,
-       "t": "**나무살이의 통설**은 부르키나가 나타를 지키다 전사했다고 전한다."
+       "t": "기록에 따르면 콩가마토가 심연의 에너지에 오염되어 분노 속에서 부르키나를 죽였고, 부르키나는 죽기 전 힘과 피를 콩가마토에게 넘겼다.",
+       "polish": {
+        "from": "기록에 따르면 콩가마토가 Abyssal energy에 오염되어 분노 속에서 부르키나를 죽였고, 부르키나는 죽기 전 힘과 피를 콩가마토에게 넘겼다.",
+        "text": "기록에 따르면 콩가마토가 심연의 에너지에 오염되어 분노 속에서 부르키나를 죽였고, 부르키나는 죽기 전 힘과 피를 콩가마토에게 넘겼다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "Kongamato가 Abyss에 오염되어 Burkina를 죽였다는 내용도 있으며, Kongamato는 Burkina의 동반자였다.",
+       "t_raw": "다른 한쪽에서는 Kongamato를 구하기 위해 Burkina가 Malipo의 이름으로 Turnfire의 힘을 불러내 자신을 희생했다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "콩가마토가 심연에 오염되어 부르키나를 죽였다는 내용도 있으며, 콩가마토는 부르키나의 동반자였다."
+       "t": "다른 한쪽에서는 콩가마토를 구하기 위해 부르키나가 말리포의 이름으로 회고의 불의 힘을 불러내 자신을 희생했다고 한다."
       },
       {
-       "t_raw": "같은 죽음을 두고 Natlan을 위한 전사라는 기억과 오염된 동반자에 의한 죽음이라는 전언이 나란히 존재하는 셈이다.",
+       "t_raw": "그러나 Scions of the Canopy의 대부분 전승은 그가 Natlan을 지키다 전투에서 쓰러졌다고 주장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 나무살이의 대부분 전승은 그가 나타를 지키다 전투에서 쓰러졌다고 주장한다."
+      },
+      {
+       "t_raw": "또한 Scions of the Canopy의 역사 기록은 Burkina의 죽음을 동료 Kongamato에게 당한 것으로만 간결하게 적고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 나무살이의 역사 기록은 부르키나의 죽음을 동료 콩가마토에게 당한 것으로만 간결하게 적고 있다."
+      },
+      {
+       "t_raw": "**공식 기록, 희생담, 부족 전승은 Burkina의 죽음을 서로 다른 방식으로 담고 있어, 후대의 기억이 영웅으로서의 전사를 강조하면서도 구체적인 경위는 달라졌음을 보여준다.**",
        "interp": true,
        "dropped": false,
-       "t": "같은 죽음을 두고 나타를 위한 전사라는 기억과 오염된 동반자에 의한 죽음이라는 전언이 나란히 존재하는 셈이다."
+       "t": "**공식 기록, 희생담, 부족 전승은 부르키나의 죽음을 서로 다른 방식으로 담고 있어, 후대의 기억이 영웅으로서의 전사를 강조하면서도 구체적인 경위는 달라졌음을 보여준다.**"
       }
      ],
      "sources": [
@@ -680,6 +641,14 @@
        "revision": 1635539,
        "section": "Story",
        "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Scions of the Canopy",
+       "revision": 1631474,
+       "section": "Lore",
+       "paragraph": "M2",
        "wiki_refs": []
       },
       {
@@ -696,19 +665,6 @@
         {
          "type": "quest",
          "name": "I, Flame Bearer"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Cataclysm",
-       "revision": 1633187,
-       "section": "Known Casualties",
-       "paragraph": "M5",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Fang of the Mountain King"
         }
        ]
       }
@@ -718,36 +674,38 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Kongamato became corrupted by the Abyss, and in order to save him, Burkina, the current bearer of the Malipo name, summoned the power of the Turnfire, sacrificing himself in the process.",
+     "status": "accepted",
+     "note": "Supported by A4, M2 and M5; the interpretations are conditional or hedged.",
+     "quote": "After this incident, Kongamato's lifespan was greatly enhanced, allowing him to live for centuries, thus becoming a living symbol of the tribe's glory, now known as the Mountain King",
      "sentences": [
       {
-       "t_raw": "Turnfire를 둘러싼 전승에서는 Burkina가 Malipo의 현 계승자로서 Kongamato를 구하려 **Turnfire의 힘**을 불러냈고, 그 과정에서 자신을 희생했다고 한다.",
+       "t_raw": "Abyss에 침식된 동료 Kongamato에게 살해당했다는 기록은 짧게 남아 있으며, 사건 이후 Kongamato는 수명이 크게 늘어 수세기를 살고 Mountain King이 되어 부족의 영광을 상징한다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "회고의 불을 둘러싼 전승에서는 부르키나가 말리포의 현 계승자로서 콩가마토를 구하려 **회고의 불의 힘**을 불러냈고, 그 과정에서 자신을 희생했다고 한다."
+       "t": "심연에 침식된 동료 콩가마토에게 살해당했다는 기록은 짧게 남아 있으며, 사건 이후 콩가마토는 수명이 크게 늘어 수세기를 살고 산의 왕이 되어 부족의 영광을 상징한다고 한다."
       },
       {
-       "t_raw": "목숨을 대가로 Turnfire의 힘을 불러냈다는 점이 핵심이라는 설명도 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "목숨을 대가로 회고의 불의 힘을 불러냈다는 점이 핵심이라는 설명도 있다."
-      },
-      {
-       "t_raw": "그 결과 Kongamato는 수백 년을 살아 Mountain King으로 남았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 결과 콩가마토는 수백 년을 살아 산의 왕으로 남았다."
-      },
-      {
-       "t_raw": "이 전승은 Burkina의 희생을 Kongamato의 생존과 Mountain King이라는 상징에 연결한다고 볼 수 있다.",
+       "t_raw": "만약 Turnfire 희생담과 Kongamato에 의한 살해가 같은 순간을 다룬다면, **Burkina의 죽음은 동료에게 살해당한 비극과 스스로 Kongamato를 구하기 위한 희생이 겹친 사건으로 볼 수 있다.**",
        "interp": true,
        "dropped": false,
-       "t": "이 전승은 부르키나의 희생을 콩가마토의 생존과 산의 왕이라는 상징에 연결한다고 볼 수 있다."
+       "t": "만약 회고의 불 희생담과 콩가마토에 의한 살해가 같은 순간을 다룬다면, **부르키나의 죽음은 동료에게 살해당한 비극과 스스로 콩가마토를 구하기 위한 희생이 겹친 사건으로 볼 수 있다.**"
+      },
+      {
+       "t_raw": "그리고 Scions of the Canopy의 전승이 Burkina를 Natlan을 지키다 전사한 영웅으로 기억하는 것은, 살아남은 Kongamato라는 산 상징과 더불어 그의 희생을 부족의 영광과 Natlan 수호로 정리한 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그리고 나무살이의 전승이 부르키나를 나타를 지키다 전사한 영웅으로 기억하는 것은, 살아남은 콩가마토라는 산 상징과 더불어 그의 희생을 부족의 영광과 나타 수호로 정리한 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Burkina",
+       "revision": 1635539,
+       "section": "Story",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Scions of the Canopy",
@@ -757,11 +715,17 @@
        "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "I, Flame Bearer",
-       "quest_ko": "나, 불 운반자",
-       "version": "5.0",
-       "speaker": "Ponche"
+       "kind": "wiki",
+       "page": "Cataclysm",
+       "revision": 1633187,
+       "section": "Known Casualties",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Fang of the Mountain King"
+        }
+       ]
       }
      ],
      "heading": "떡밥과 수수께끼",
@@ -769,27 +733,27 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "The six lines match Q1-Q6, and Q8 and Q9 support the factual sentence; the interpretations are hedged.",
      "quote": "Even if one day I fall behind",
      "sentences": [
       {
-       "t_raw": "Turnfire Night에는 Burkina의 **대사 파편**이 남아 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "회고의 밤에는 부르키나의 **대사 파편**이 남아 있다."
-      },
-      {
-       "t_raw": "'언젠가 내가 뒤처지더라도', '우리는 불에 응답할 것이다' 같은 구절과 '계속 앞으로 나아간다', '우리의 모든 행적을 위하여', '결코 뒤를 돌아보지 않는다', '지금의 우리로서'가 그것이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "'언젠가 내가 뒤처지더라도', '우리는 불에 응답할 것이다' 같은 구절과 '계속 앞으로 나아간다', '우리의 모든 행적을 위하여', '결코 뒤를 돌아보지 않는다', '지금의 우리로서'가 그것이다."
-      },
-      {
-       "t_raw": "'계속 앞으로 나아간다'와 '결코 뒤를 돌아보지 않는다'를 나란히 두면 앞으로 나아가라는 당부가 겹쳐 보인다.",
+       "t_raw": "**Turnfire Night에 얽힌 Burkina의 여섯 마디 대사**는 뒤처지더라도 멈추지 말고, 우리가 한 일에 보답하듯 불에 답하며 앞으로 나아가자는 뜻으로 엮인다.",
        "interp": true,
        "dropped": false,
-       "t": "'계속 앞으로 나아간다'와 '결코 뒤를 돌아보지 않는다'를 나란히 두면 앞으로 나아가라는 당부가 겹쳐 보인다."
+       "t": "**회고의 밤에 얽힌 부르키나의 여섯 마디 대사**는 뒤처지더라도 멈추지 말고, 우리가 한 일에 보답하듯 불에 답하며 앞으로 나아가자는 뜻으로 엮인다."
+      },
+      {
+       "t_raw": "이 말들은 그가 Malipo의 이름으로 Turnfire를 불러일으키기 직전의 각오를 드러낸 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 말들은 그가 말리포의 이름으로 회고의 불을 불러일으키기 직전의 각오를 드러낸 것으로 보인다."
+      },
+      {
+       "t_raw": "Toba는 500년 전 그 Burkina를 Turnfire Night에 기린다고 말했고, Paimon은 Burkina가 했던 일을 되풀이하려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "토바는 500년 전 그 부르키나를 회고의 밤에 기린다고 말했고, 페이몬은 부르키나가 했던 일을 되풀이하려 했다."
       }
      ],
      "sources": [
@@ -841,37 +805,51 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Sure has! It went to Burkina, the hero that we celebrate on Turnfire Night. But that was five hundred years ago.",
+     "status": "accepted",
+     "note": "All sentences are supported by M2, M6 and Q8.",
+     "quote": "Kongamato became corrupted by the Abyss, and in order to save him, Burkina, the current bearer of the Malipo name, summoned the power of the Turnfire, sacrificing himself in the process.",
      "sentences": [
       {
-       "t_raw": "Toba는 Turnfire Night에 기념하는 영웅 Burkina에게 그것이 갔지만 그 일은 **500년 전**이라고 말한다.",
+       "t_raw": "Burkina가 Turnfire의 힘으로 자신을 바친 뒤, 그의 Yumkasaur 동료 Kongamato는 수백 년의 수명을 얻어 Scions of the Canopy의 영광을 상징하는 **Mountain King**이 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "토바는 회고의 밤에 기념하는 영웅 부르키나에게 그것이 갔지만 그 일은 **500년 전**이라고 말한다."
+       "t": "부르키나가 회고의 불의 힘으로 자신을 바친 뒤, 그의 숲룡 동료 콩가마토는 수백 년의 수명을 얻어 나무살이의 영광을 상징하는 **산의 왕**이 되었다."
       },
       {
-       "t_raw": "Paimon은 Burkina와 같은 일을 하는 쪽을 두고 '음, 그러니까... Burkina와 같은 일을 하는 것...'이라고 말한다.",
-       "interp": false,
+       "t_raw": "그의 긴 생은 Burkina의 희생이 남긴 결과이며, Turnfire Night은 그 영웅을 기리는 의식이 된 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "페이몬은 부르키나와 같은 일을 하는 쪽을 두고 '음, 그러니까... 부르키나와 같은 일을 하는 것...'이라고 말한다."
+       "t": "그의 긴 생은 부르키나의 희생이 남긴 결과이며, 회고의 밤은 그 영웅을 기리는 의식이 된 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Scions of the Canopy",
+       "revision": 1631474,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Saurian",
+       "revision": 1629603,
+       "section": "Varieties",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Talking Stick"
+        }
+       ]
+      },
       {
        "kind": "quest",
        "quest": "A Mysterious Visitor From Huitztlan",
        "quest_ko": "위칠틀란의 수수께끼 방문객",
        "version": "5.0",
        "speaker": "Toba"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Last Turnfire Night",
-       "quest_ko": "마지막 회고의 밤",
-       "version": "5.0",
-       "speaker": "Paimon"
       }
      ],
      "heading": "여담",
@@ -881,60 +859,9 @@
    "quote_boxes": [
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그럼요! 그것은 우리가 Turnfire Night에 기념하는 영웅 Burkina에게 갔어요. 하지만 그건 500년 전 일이에요.",
-     "en": "Sure has! It went to Burkina, the hero that we celebrate on Turnfire Night. But that was five hundred years ago.",
-     "speaker": "Toba",
-     "source": {
-      "kind": "quest",
-      "quest": "A Mysterious Visitor From Huitztlan",
-      "quest_ko": "위칠틀란의 수수께끼 방문객",
-      "version": "5.0",
-      "speaker": "Toba"
-     },
-     "t": "그럼요! 그것은 우리가 회고의 밤에 기념하는 영웅 부르키나에게 갔어요. 하지만 그건 500년 전 일이에요.",
-     "speaker_ko": "토바"
-    },
-    {
-     "section": "작중 행적 — Cataclysm",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "핵심 요인은 Burkina가 자신의 목숨을 대가로 \"Malipo\"의 힘을 소환했다는 점입니다.",
-     "en": "The key factor is that Burkina summoned the power of \"Malipo,\" at the cost of his own life.",
-     "speaker": "Ponche",
-     "source": {
-      "kind": "quest",
-      "quest": "I, Flame Bearer",
-      "quest_ko": "나, 불 운반자",
-      "version": "5.0",
-      "speaker": "Ponche"
-     },
-     "t": "핵심 요인은 부르키나가 자신의 목숨을 대가로 \"말리포\"의 힘을 소환했다는 점입니다.",
-     "speaker_ko": "폰츠"
-    },
-    {
-     "section": "능력과 상징",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "핵심 요인은 Burkina가 자신의 목숨을 대가로 \"Malipo\"의 힘을 불러냈다는 점이다.",
-     "en": "The key factor is that Burkina summoned the power of \"Malipo,\" at the cost of his own life.",
-     "speaker": "Ponche",
-     "source": {
-      "kind": "quest",
-      "quest": "I, Flame Bearer",
-      "quest_ko": "나, 불 운반자",
-      "version": "5.0",
-      "speaker": "Ponche"
-     },
-     "t": "핵심 요인은 부르키나가 자신의 목숨을 대가로 \"말리포\"의 힘을 불러냈다는 점이다.",
-     "speaker_ko": "폰츠"
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "우리의 조상 Burkina는 한때 그곳에서 다섯 명의 다른 영웅들과 함께 원정을 치렀다. 하지만 요즘 그곳에 가기는 그리 쉽지 않다.",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "우리의 조상 Burkina는 한때 다섯 명의 다른 영웅들과 함께 그곳에서 원정을 치렀다. 하지만 요즘 그곳에 가는 것은 그리 쉬운 일이 아니다.",
      "en": "Our ancestor, Burkina once fought a campaign there alongside the five other heroes. But it's not such an easy place to get to these days.",
      "speaker": "Kinich",
      "source": {
@@ -944,14 +871,14 @@
       "version": "5.0",
       "speaker": "Kinich"
      },
-     "t": "우리의 조상 부르키나는 한때 그곳에서 다섯 명의 다른 영웅들과 함께 원정을 치렀다. 하지만 요즘 그곳에 가기는 그리 쉽지 않다.",
+     "t": "우리의 조상 부르키나는 한때 다섯 명의 다른 영웅들과 함께 그곳에서 원정을 치렀다. 하지만 요즘 그곳에 가는 것은 그리 쉬운 일이 아니다.",
      "speaker_ko": "키니치"
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "핵심 요인은 Burkina가 자신의 목숨을 대가로 \"Malipo\"의 힘을 불러냈다는 점이다.",
+     "section": "작중 행적 — Cataclysm",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "핵심 요인은 Burkina가 자신의 목숨을 대가로 \"Malipo\"의 힘을 소환했다는 점이다.",
      "en": "The key factor is that Burkina summoned the power of \"Malipo,\" at the cost of his own life.",
      "speaker": "Ponche",
      "source": {
@@ -961,14 +888,48 @@
       "version": "5.0",
       "speaker": "Ponche"
      },
-     "t": "핵심 요인은 부르키나가 자신의 목숨을 대가로 \"말리포\"의 힘을 불러냈다는 점이다.",
+     "t": "핵심 요인은 부르키나가 자신의 목숨을 대가로 \"말리포\"의 힘을 소환했다는 점이다.",
      "speaker_ko": "폰츠"
     },
     {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "결코 뒤를 돌아보지 않는다.",
+     "section": "능력과 Turnfire",
+     "status": "accepted",
+     "note": "Faithful translation, casual register.",
+     "t_raw": "핵심은 Burkina가 자신의 목숨을 대가로 \"Malipo\"의 힘을 불러냈다는 점이야.",
+     "en": "The key factor is that Burkina summoned the power of \"Malipo,\" at the cost of his own life.",
+     "speaker": "Ponche",
+     "source": {
+      "kind": "quest",
+      "quest": "I, Flame Bearer",
+      "quest_ko": "나, 불 운반자",
+      "version": "5.0",
+      "speaker": "Ponche"
+     },
+     "t": "핵심은 부르키나가 자신의 목숨을 대가로 \"말리포\"의 힘을 불러냈다는 점이야.",
+     "speaker_ko": "폰츠"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation; 'campaign' rendered as 전투 is acceptable.",
+     "t_raw": "우리의 조상 Burkina는 한때 그곳에서 다섯 명의 다른 영웅들과 함께 전투를 벌였습니다. 하지만 요즘 그곳에 가는 것은 그리 쉬운 일이 아닙니다.",
+     "en": "Our ancestor, Burkina once fought a campaign there alongside the five other heroes. But it's not such an easy place to get to these days.",
+     "speaker": "Kinich",
+     "source": {
+      "kind": "quest",
+      "quest": "I, Flame Bearer",
+      "quest_ko": "나, 불 운반자",
+      "version": "5.0",
+      "speaker": "Kinich"
+     },
+     "t": "우리의 조상 부르키나는 한때 그곳에서 다섯 명의 다른 영웅들과 함께 전투를 벌였습니다. 하지만 요즘 그곳에 가는 것은 그리 쉬운 일이 아닙니다.",
+     "speaker_ko": "키니치"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "뒤돌아보지 마라.",
      "en": "Never look back",
      "speaker": "Burkina",
      "source": {
@@ -978,7 +939,24 @@
       "version": "5.0",
       "speaker": "Burkina"
      },
-     "t": "결코 뒤를 돌아보지 않는다.",
+     "t": "뒤돌아보지 마라.",
+     "speaker_ko": "부르키나"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of 'We will answer to the fire' (Q2); 'answer to' rendered as '답할 것이다' is acceptable.",
+     "t_raw": "우리는 불에 답할 것이다.",
+     "en": "We will answer to the fire",
+     "speaker": "Burkina",
+     "source": {
+      "kind": "quest",
+      "quest": "The Last Turnfire Night",
+      "quest_ko": "마지막 회고의 밤",
+      "version": "5.0",
+      "speaker": "Burkina"
+     },
+     "t": "우리는 불에 답할 것이다.",
      "speaker_ko": "부르키나"
     }
    ]

@@ -21,50 +21,40 @@
    "input_cut": false,
    "input_hash": "9db03447c4eb",
    "writer": "or-ds",
-   "verifier": "grok",
-   "status": "needs_verify",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
      "status": "accepted",
-     "note": "All four sentences match the cited English, and the closing reading stays hedged.",
+     "note": "All sentences supported by A1, A4, A11; the interpretation in (3) is hedged and follows from the material.",
      "quote": "Yumekui-baku are able to enter and influence the dreams of humans and other youkai. They also consume these dreams for sustenance, a characteristic that is unique to their kind.",
      "sentences": [
       {
-       "t_raw": "Yumekui-baku는 Inazuma의 요괴로, 흔히 baku라고도 불리며 인간과 다른 요괴의 꿈에 들어가 영향을 주고 그 꿈을 먹어 생존하는 **꿈을 먹는 요괴**다.",
+       "t_raw": "Yumekui-baku는 Inazuma의 요괴로, **꿈에 들어가 영향을 주고 꿈을 먹어 생존하는 존재**다.",
        "interp": false,
        "dropped": false,
-       "t": "바쿠는 이나즈마의 요괴로, 흔히 바쿠라고도 불리며 인간과 다른 요괴의 꿈에 들어가 영향을 주고 그 꿈을 먹어 생존하는 **꿈을 먹는 요괴**다.",
-       "polish": {
-        "from": "바쿠는 이나즈마의 요괴로, 흔히 baku라고도 불리며 인간과 다른 요괴의 꿈에 들어가 영향을 주고 그 꿈을 먹어 생존하는 **꿈을 먹는 요괴**다.",
-        "text": "바쿠는 이나즈마의 요괴로, 흔히 바쿠라고도 불리며 인간과 다른 요괴의 꿈에 들어가 영향을 주고 그 꿈을 먹어 생존하는 **꿈을 먹는 요괴**다.",
-        "by": "or-ds"
-       }
+       "t": "바쿠는 이나즈마의 요괴로, **꿈에 들어가 영향을 주고 꿈을 먹어 생존하는 존재**다."
       },
       {
-       "t_raw": "이들은 하급 요괴로 kitsune, oni, tengu보다 덜 알려졌고, 전통적으로는 자비롭고 근심 없는, 늘 남을 돕지만 자신의 욕망은 없는 존재로 그려졌다.",
+       "t_raw": "꿈을 먹힌 이는 그 꿈을 기억하지 못하며, 꿈을 소화하려면 Yumekui-baku 자신의 꿈 안에 있어야 한다.",
        "interp": false,
        "dropped": false,
-       "t": "이들은 하급 요괴로 키츠네, 오니, 텐구보다 덜 알려졌고, 전통적으로는 자비롭고 근심 없는, 늘 남을 돕지만 자신의 욕망은 없는 존재로 그려졌다.",
-       "polish": {
-        "from": "이들은 하급 요괴로 kitsune, oni, tengu보다 덜 알려졌고, 전통적으로는 자비롭고 근심 없는, 늘 남을 돕지만 자신의 욕망은 없는 존재로 그려졌다.",
-        "text": "이들은 하급 요괴로 키츠네, 오니, 텐구보다 덜 알려졌고, 전통적으로는 자비롭고 근심 없는, 늘 남을 돕지만 자신의 욕망은 없는 존재로 그려졌다.",
-        "by": "or-ds"
-       }
+       "t": "꿈을 먹힌 이는 그 꿈을 기억하지 못하며, 꿈을 소화하려면 바쿠 자신의 꿈 안에 있어야 한다."
       },
       {
-       "t_raw": "Cataclysm 때에는 전투에 적합하지 않아 숨어 지냈고, 이후 Abyss에 맞선 이들을 괴롭히던 악몽을 빼내는 **악몽 제거**에 나서다 병이나 부상을 입은 이들도 있었으며, 현대에는 **인간 사회로 서서히 통합**되어 Yumemizuki Mizuki가 Aisa Bathhouse의 주요 주주이자 임상 심리사로 일한다.",
+       "t_raw": "이들은 현재 인간 사회에 점차 통합되어 가고, Yumemizuki Mizuki는 Aisa Bathhouse의 주요 주주이자 그곳에서 일하는 임상심리사다.",
        "interp": false,
        "dropped": false,
-       "t": "대재앙 때에는 전투에 적합하지 않아 숨어 지냈고, 이후 심연에 맞선 이들을 괴롭히던 악몽을 빼내는 **악몽 제거**에 나서다 병이나 부상을 입은 이들도 있었으며, 현대에는 **인간 사회로 서서히 통합**되어 유메미즈키 미즈키가 아이사 대중탕의 주요 주주이자 임상 심리사로 일한다."
+       "t": "이들은 현재 인간 사회에 점차 통합되어 가고, 유메미즈키 미즈키는 아이사 대중탕의 주요 주주이자 그곳에서 일하는 임상심리사다."
       },
       {
-       "t_raw": "꿈을 먹는 능력, Cataclysm 뒤의 악몽 제거, Aisa Bathhouse에서의 활동을 함께 보면 이들은 Inazuma의 요괴 사회와 인간 사회 사이에서 독특한 위치를 차지한다고 볼 수 있다.",
+       "t_raw": "전투에 어울리지 않아 숨었던 과거, 재난 뒤 악몽을 풀어내며 몸을 상한 일, 꿈을 먹는 규칙과 위험, 인간 사회로의 통합을 함께 보면, 이들은 **Inazuma의 요괴 사회와 인간 사회를 잇는 조용한 연결점**으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "꿈을 먹는 능력, 대재앙 뒤의 악몽 제거, 아이사 대중탕에서의 활동을 함께 보면 이들은 이나즈마의 요괴 사회와 인간 사회 사이에서 독특한 위치를 차지한다고 볼 수 있다."
+       "t": "전투에 어울리지 않아 숨었던 과거, 재난 뒤 악몽을 풀어내며 몸을 상한 일, 꿈을 먹는 규칙과 위험, 인간 사회로의 통합을 함께 보면, 이들은 **이나즈마의 요괴 사회와 인간 사회를 잇는 조용한 연결점**으로 보인다."
       }
      ],
      "sources": [
@@ -97,338 +87,6 @@
         }
        ]
       },
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A9",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A10",
-       "wiki_refs": [
-        {
-         "type": "vo",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A11",
-       "wiki_refs": []
-      }
-     ],
-     "heading": null,
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "accepted",
-     "note": "Eating dreams for sustenance, uniqueness, and digestion time and energy are all in the English; the interpretation only restates that.",
-     "quote": "Yumekui-baku are able to enter and influence the dreams of humans and other youkai.",
-     "sentences": [
-      {
-       "t_raw": "Yumekui-baku는 Inazuma의 요괴로, **인간과 다른 요괴의 꿈에 들어가 영향을 주고 그 꿈을 먹어 양식으로 삼는다**.",
-       "interp": false,
-       "dropped": false,
-       "t": "바쿠는 이나즈마의 요괴로, **인간과 다른 요괴의 꿈에 들어가 영향을 주고 그 꿈을 먹어 양식으로 삼는다**."
-      },
-      {
-       "t_raw": "꿈을 먹는 능력은 이들 종족에게 고유한 특징이며, 소화에는 시간과 에너지가 든다.",
-       "interp": false,
-       "dropped": false,
-       "t": "꿈을 먹는 능력은 이들 종족에게 고유한 특징이며, 소화에는 시간과 에너지가 든다."
-      },
-      {
-       "t_raw": "꿈에 들어가 영향을 주는 능력과 꿈을 먹어 살아가는 습성이 결합해, 이들에게 꿈은 활동 무대이자 양식인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "꿈에 들어가 영향을 주는 능력과 꿈을 먹어 살아가는 습성이 결합해, 이들에게 꿈은 활동 무대이자 양식인 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "Powers and Abilities",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "vo",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "quest",
-         "name": "Encounter in the Realm of Dreams"
-        }
-       ]
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "trimmed",
-     "note": "Sentence 2 states farming and weaving in the youkai prime as fact, but the English only says they seem to have lived that way.",
-     "quote": "The yumekui-baku are known as lesser youkai, and are thus less famous than the kitsune, oni, or tengu.",
-     "sentences": [
-      {
-       "t_raw": "이들은 kitsune, oni, tengu보다 덜 알려진 **하급 요괴**로, 전통적으로는 자애롭고 근심 없는 존재로 그려진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이들은 키츠네, 오니, 텐구보다 덜 알려진 **하급 요괴**로, 전통적으로는 자애롭고 근심 없는 존재로 그려진다.",
-       "polish": {
-        "from": "이들은 kitsune, oni, tengu보다 덜 알려진 **하급 요괴**로, 전통적으로는 자애롭고 근심 없는 존재로 그려진다.",
-        "text": "이들은 키츠네, 오니, 텐구보다 덜 알려진 **하급 요괴**로, 전통적으로는 자애롭고 근심 없는 존재로 그려진다.",
-        "by": "or-ds"
-       }
-      },
-      {
-       "t_raw": "다른 이들을 도울 준비가 되어 있으나 자신의 욕망은 없다고 묘사된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다른 이들을 도울 준비가 되어 있으나 자신의 욕망은 없다고 묘사된다."
-      },
-      {
-       "t_raw": "요괴 전성기에는 조용히 농사와 베 짜기를 하며 살았고, 필요한 이들에게 꿈을 먹는 서비스를 제공하기도 했다.",
-       "interp": false,
-       "dropped": true,
-       "t": "요괴 전성기에는 조용히 농사와 베 짜기를 하며 살았고, 필요한 이들에게 꿈을 먹는 서비스를 제공하기도 했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A9",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        }
-       ]
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "정체",
-     "status": "trimmed",
-     "note": "Sentence 3 states that human form makes large pointed ears stand out; the English only says they tend to have large, pointed ears.",
-     "quote": "They are often seen floating; this seems to be their primary mode of movement.",
-     "sentences": [
-      {
-       "t_raw": "**원래 모습**은 작고 둥글며, 물컹하고 다채로운 몸과 곱슬거리는 꼬리를 지닌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**원래 모습**은 작고 둥글며, 물컹하고 다채로운 몸과 곱슬거리는 꼬리를 지닌다."
-      },
-      {
-       "t_raw": "작은 눈과 짧은 팔다리, 축 처진 코 때문에 tapir나 boar를 떠올리는 이도 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "작은 눈과 짧은 팔다리, 축 처진 코 때문에 맥이나 멧돼지를 떠올리는 이도 있다.",
-       "polish": {
-        "from": "작은 눈과 짧은 팔다리, 축 처진 코 때문에 tapir나 boar를 떠올리는 이도 있다.",
-        "text": "작은 눈과 짧은 팔다리, 축 처진 코 때문에 맥이나 멧돼지를 떠올리는 이도 있다.",
-        "by": "or-ds"
-       }
-      },
-      {
-       "t_raw": "자주 떠 있는 모습으로 보이며, 이것이 주된 이동 방식인 듯하다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자주 떠 있는 모습으로 보이며, 이것이 주된 이동 방식인 듯하다."
-      },
-      {
-       "t_raw": "**인간형**이 되면 큰 뾰족귀가 두드러진다.",
-       "interp": false,
-       "dropped": true,
-       "t": "**인간형**이 되면 큰 뾰족귀가 두드러진다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "Overview > Appearance",
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "Glimpses of Mysterious Inazuma"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "Overview > Appearance",
-       "paragraph": "A3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체",
-     "latin_left": []
-    },
-    {
-     "section": "정체",
-     "status": "accepted",
-     "note": "Entry, influence, digestion, satiety, nightmare indigestion, digesting in one’s own dream, and memory loss all match.",
-     "quote": "A baku needs to be in their own dream to digest dreams.",
-     "sentences": [
-      {
-       "t_raw": "Yumekui-baku는 인간과 다른 요괴의 꿈에 들어가 영향을 주며, 그 꿈을 **먹고 소화해** 생존한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바쿠는 인간과 다른 요괴의 꿈에 들어가 영향을 주며, 그 꿈을 **먹고 소화해** 생존한다."
-      },
-      {
-       "t_raw": "꿈의 소화는 인간의 소화와 닮은 것으로 보이며, 시간과 에너지를 들여 꿈을 분해하고, 계속 먹으면 포만감을 느끼며 악몽을 먹으면 소화불량에 빠질 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "꿈의 소화는 인간의 소화와 닮은 것으로 보이며, 시간과 에너지를 들여 꿈을 분해하고, 계속 먹으면 포만감을 느끼며 악몽을 먹으면 소화불량에 빠질 수 있다."
-      },
-      {
-       "t_raw": "꿈을 소화하려면 자신의 꿈속에 있어야 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "꿈을 소화하려면 자신의 꿈속에 있어야 한다."
-      },
-      {
-       "t_raw": "꿈을 먹힌 주인은 그 꿈에 대한 기억을 전부 잃는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "꿈을 먹힌 주인은 그 꿈에 대한 기억을 전부 잃는다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "Powers and Abilities",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "vo",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "quest",
-         "name": "Encounter in the Realm of Dreams"
-        }
-       ]
-      }
-     ],
-     "heading": "정체",
-     "latin_left": []
-    },
-    {
-     "section": "정체",
-     "status": "accepted",
-     "note": "Flavor, toxin effects, emotion-dependent aftereffects, the permission rule, and not knowing good dreams’ taste all match; the last line is a hedged reading.",
-     "quote": "As a result, most baku do not know what good dreams taste like.",
-     "sentences": [
-      {
-       "t_raw": "꿈마다 독특한 맛이 있어 긍정적인 꿈은 ‘pleasant, warm, and delicately sweet’라는 인상을 주고, 악몽은 쓰거나 시거나 금속 같은 맛이 난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "꿈마다 독특한 맛이 있어 긍정적인 꿈은 '기분 좋고 따뜻하며 은은하게 달콤한'이라는 인상을 주고, 악몽은 쓰거나 시거나 금속 같은 맛이 난다.",
-       "polish": {
-        "from": "꿈마다 독특한 맛이 있어 긍정적인 꿈은 'pleasant, warm, and delicately sweet'라는 인상을 주고, 악몽은 쓰거나 시거나 금속 같은 맛이 난다.",
-        "text": "꿈마다 독특한 맛이 있어 긍정적인 꿈은 '기분 좋고 따뜻하며 은은하게 달콤한'이라는 인상을 주고, 악몽은 쓰거나 시거나 금속 같은 맛이 난다.",
-        "by": "or-ds"
-       }
-      },
-      {
-       "t_raw": "특히 강한 악몽은 독소처럼 작용해 구역질, 피로, ‘the sensation of being cut or burned’ 같은 급성 통증, 혼수, 어쩌면 죽음까지 일으킬 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "특히 강한 악몽은 독소처럼 작용해 구역질, 피로, '베이거나 타는 듯한 감각' 같은 급성 통증, 혼수, 어쩌면 죽음까지 일으킬 수 있다.",
-       "polish": {
-        "from": "특히 강한 악몽은 독소처럼 작용해 구역질, 피로, 'the sensation of being cut or burned' 같은 급성 통증, 혼수, 어쩌면 죽음까지 일으킬 수 있다.",
-        "text": "특히 강한 악몽은 독소처럼 작용해 구역질, 피로, '베이거나 타는 듯한 감각' 같은 급성 통증, 혼수, 어쩌면 죽음까지 일으킬 수 있다.",
-        "by": "or-ds"
-       }
-      },
-      {
-       "t_raw": "정신적 후유증은 상대 감정을 얼마나 이해하는지에 따라 달라, Mizuki는 환자에게서 먹은 부정적 감정을 모두 느끼지만 대부분의 다른 baku는 거의 알아차리지 못한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "정신적 후유증은 상대 감정을 얼마나 이해하는지에 따라 달라, Mizuki는 환자에게서 먹은 부정적 감정을 모두 느끼지만 대부분의 다른 바쿠는 거의 알아차리지 못한다.",
-       "polish": {
-        "from": "정신적 후유증은 상대 감정을 얼마나 이해하는지에 따라 달라, Mizuki는 환자에게서 먹은 부정적 감정을 모두 느끼지만 대부분의 다른 baku는 거의 알아차리지 못한다.",
-        "text": "정신적 후유증은 상대 감정을 얼마나 이해하는지에 따라 달라, Mizuki는 환자에게서 먹은 부정적 감정을 모두 느끼지만 대부분의 다른 바쿠는 거의 알아차리지 못한다.",
-        "by": "or-ds"
-       }
-      },
-      {
-       "t_raw": "좋은 꿈은 주인의 허락 없이 먹지 않는다는 불문율이 있는데, 이는 주인의 정신 불안정을 일으키기 때문이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "좋은 꿈은 주인의 허락 없이 먹지 않는다는 불문율이 있는데, 이는 주인의 정신 불안정을 일으키기 때문이다."
-      },
-      {
-       "t_raw": "그래서 대부분의 baku는 좋은 꿈의 맛을 모른다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그래서 대부분의 바쿠는 좋은 꿈의 맛을 모른다.",
-       "polish": {
-        "from": "그래서 대부분의 baku는 좋은 꿈의 맛을 모른다.",
-        "text": "그래서 대부분의 바쿠는 좋은 꿈의 맛을 모른다.",
-        "by": "or-ds"
-       }
-      },
-      {
-       "t_raw": "이처럼 꿈의 맛과 위험성이 극단적으로 갈리는 점은 꿈이라는 대상이 기분 좋은 섭취 대상이 되기도 하고 견디기 힘든 고통의 원천이 되기도 함을 보여 주는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이처럼 꿈의 맛과 위험성이 극단적으로 갈리는 점은 꿈이라는 대상이 기분 좋은 섭취 대상이 되기도 하고 견디기 힘든 고통의 원천이 되기도 함을 보여 주는 것으로 보인다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Yumekui-Baku",
@@ -470,42 +128,80 @@
          "name": "Yumemizuki Mizuki"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "History",
+       "paragraph": "A9",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yumemizuki Mizuki"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "History",
+       "paragraph": "A10",
+       "wiki_refs": [
+        {
+         "type": "vo",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "cs",
+         "name": "Yumemizuki Mizuki"
+        }
+       ]
       }
      ],
-     "heading": "정체",
-     "latin_left": [
-      "Mizuki"
-     ]
+     "heading": null,
+     "latin_left": []
     },
     {
-     "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Most yumekui-baku have little to no combat ability.",
+     "section": "개요",
+     "status": "accepted",
+     "note": "All match A1 and A2.",
+     "quote": "Yumekui-baku, also known simply as baku, are a kind of youkai in Inazuma.",
      "sentences": [
       {
-       "t_raw": "Yumekui-baku는 꿈을 만들고 생각을 심으며, 의식에서 분리된 깨어 있는 숙주의 잠재의식에 들어갈 수도 있다.",
+       "t_raw": "Yumekui-baku는 **Inazuma의 요괴** 중 한 갈래로, 흔히 baku라고도 불린다.",
        "interp": false,
        "dropped": false,
-       "t": "바쿠는 꿈을 만들고 생각을 심으며, 의식에서 분리된 깨어 있는 숙주의 잠재의식에 들어갈 수도 있다."
+       "t": "바쿠는 **이나즈마의 요괴** 중 한 갈래로, 흔히 바쿠라고도 불린다.",
+       "polish": {
+        "from": "바쿠는 **이나즈마의 요괴** 중 한 갈래로, 흔히 baku라고도 불린다.",
+        "text": "바쿠는 **이나즈마의 요괴** 중 한 갈래로, 흔히 바쿠라고도 불린다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "꿈을 소비하지 않고 추출하거나 다른 방식으로 꿈에 영향을 줄 가능성도 있다.",
+       "t_raw": "원래 모습은 작고 둥글며, 물렁물렁하고 색색이 다양한 몸에 곱슬곱슬한 꼬리가 달려 있다.",
        "interp": false,
        "dropped": false,
-       "t": "꿈을 소비하지 않고 추출하거나 다른 방식으로 꿈에 영향을 줄 가능성도 있다."
+       "t": "원래 모습은 작고 둥글며, 물렁물렁하고 색색이 다양한 몸에 곱슬곱슬한 꼬리가 달려 있다."
       },
       {
-       "t_raw": "반면 대부분은 전투 능력이 거의 없거나 전혀 없다.",
+       "t_raw": "작은 눈, 짧은 팔다리, 처진 코 탓에 tapir나 boar를 닮았다는 말도 있다.",
        "interp": false,
        "dropped": false,
-       "t": "반면 대부분은 전투 능력이 거의 없거나 전혀 없다."
+       "t": "작은 눈, 짧은 팔다리, 처진 코 탓에 테이퍼나 멧돼지를 닮았다는 말도 있다.",
+       "polish": {
+        "from": "작은 눈, 짧은 팔다리, 처진 코 탓에 tapir나 boar를 닮았다는 말도 있다.",
+        "text": "작은 눈, 짧은 팔다리, 처진 코 탓에 테이퍼나 멧돼지를 닮았다는 말도 있다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "꿈속에서 강한 영향력을 지니는 모습과 전투에서 힘을 거의 쓰지 못하는 모습의 대비가 두드러지는 것으로 보인다.",
-       "interp": true,
+       "t_raw": "대개 떠 있는 모습으로 보이며, 이 부유가 주된 이동 방식으로 여겨진다.",
+       "interp": false,
        "dropped": false,
-       "t": "꿈속에서 강한 영향력을 지니는 모습과 전투에서 힘을 거의 쓰지 못하는 모습의 대비가 두드러지는 것으로 보인다."
+       "t": "대개 떠 있는 모습으로 보이며, 이 부유가 주된 이동 방식으로 여겨진다."
       }
      ],
      "sources": [
@@ -513,26 +209,147 @@
        "kind": "wiki",
        "page": "Yumekui-Baku",
        "revision": 1724376,
-       "section": "Powers and Abilities",
-       "paragraph": "A7",
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "Overview > Appearance",
+       "paragraph": "A2",
        "wiki_refs": [
-        {
-         "type": "vo",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "quest",
-         "name": "Crisis at the Aisa Bathhouse"
-        },
-        {
-         "type": "quest",
-         "name": "A Deceit Called Happiness"
-        },
         {
          "type": "book",
          "name": "Glimpses of Mysterious Inazuma"
         }
        ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A3 and Q2; (3) is a fair contrast with A2.",
+     "quote": "I'm a yumekui-baku, which is a kind of youkai here in Inazuma.",
+     "sentences": [
+      {
+       "t_raw": "인간의 모습을 취할 때는 **큰 뾰족귀**가 두드러진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "인간의 모습을 취할 때는 **큰 뾰족귀**가 두드러진다."
+      },
+      {
+       "t_raw": "Yumemizuki Mizuki는 자신의 이름을 Yumemizuki Mizuki라 밝히며, 줄여서 Mizuki라고 해도 된다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유메미즈키 미즈키는 자신의 이름을 유메미즈키 미즈키라 밝히며, 줄여서 유메미즈키 미즈키라고 해도 된다고 말한다."
+      },
+      {
+       "t_raw": "그녀는 자신이 yumekui-baku이며 Inazuma의 요괴라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 자신이 유메쿠이바쿠이며 이나즈마의 요괴라고 밝힌다.",
+       "polish": {
+        "from": "그녀는 자신이 yumekui-baku이며 이나즈마의 요괴라고 밝힌다.",
+        "text": "그녀는 자신이 유메쿠이바쿠이며 이나즈마의 요괴라고 밝힌다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "원래 모습의 둥글고 물렁한 인상과 달리, 인간형에서는 큰 뾰족귀가 눈에 띄는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "원래 모습의 둥글고 물렁한 인상과 달리, 인간형에서는 큰 뾰족귀가 눈에 띄는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "Overview > Appearance",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "Glimpses of Mysterious Inazuma"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "Overview > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Encounter in the Realm of Dreams",
+       "quest_ko": "꿈속의 만남",
+       "version": "5.4",
+       "speaker": "Yumemizuki Mizuki"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All match A2, A3, A8.",
+     "quote": "In their original form, yumekui-baku are small and round, with squishy, colorful bodies and curly tails.",
+     "sentences": [
+      {
+       "t_raw": "원래 모습의 yumekui-baku는 **작고 둥글며** 말랑하고 알록달록한 몸에 말린 꼬리를 지녔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원래 모습의 유메쿠이바쿠는 **작고 둥글며** 말랑하고 알록달록한 몸에 말린 꼬리를 지녔다.",
+       "polish": {
+        "from": "원래 모습의 yumekui-baku는 **작고 둥글며** 말랑하고 알록달록한 몸에 말린 꼬리를 지녔다.",
+        "text": "원래 모습의 유메쿠이바쿠는 **작고 둥글며** 말랑하고 알록달록한 몸에 말린 꼬리를 지녔다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "작은 눈, 짧은 팔다리, 축 처진 코 때문에 맥이나 멧돼지를 떠올리는 이도 있고, 자주 떠다니는 것이 주된 이동 방식으로 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작은 눈, 짧은 팔다리, 축 처진 코 때문에 맥이나 멧돼지를 떠올리는 이도 있고, 자주 떠다니는 것이 주된 이동 방식으로 보인다."
+      },
+      {
+       "t_raw": "인간형일 때는 크고 뾰족한 귀가 눈에 띄며, 대부분은 전투 능력이 거의 없거나 전무하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "인간형일 때는 크고 뾰족한 귀가 눈에 띄며, 대부분은 전투 능력이 거의 없거나 전무하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "Overview > Appearance",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "Glimpses of Mysterious Inazuma"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "Overview > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -552,502 +369,44 @@
      "latin_left": []
     },
     {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The yumekui-baku are known as lesser youkai, and are thus less famous than the kitsune, oni, or tengu.",
+     "section": "정체",
+     "status": "accepted",
+     "note": "Supported by A4, A7, and Q1 (humans called nightmares their home; natural enemies).",
+     "quote": "They also consume these dreams for sustenance, a characteristic that is unique to their kind.",
      "sentences": [
       {
-       "t_raw": "Yumekui-baku는 kitsune, oni, tengu보다 덜 알려진 하급 요괴로, 전승에서는 자비롭고 태평하며 늘 남을 돕되 자신의 욕망은 없는 존재로 그려진다.",
+       "t_raw": "yumekui-baku는 인간과 다른 요괴의 꿈에 들어가 영향을 주고, 그 꿈을 먹어 생계를 유지한다.",
        "interp": false,
        "dropped": false,
-       "t": "바쿠는 kitsune, oni, tengu보다 덜 알려진 하급 요괴로, 전승에서는 자비롭고 태평하며 늘 남을 돕되 자신의 욕망은 없는 존재로 그려진다."
+       "t": "유메쿠이바쿠는 인간과 다른 요괴의 꿈에 들어가 영향을 주고, 그 꿈을 먹어 생계를 유지한다.",
+       "polish": {
+        "from": "yumekui-baku는 인간과 다른 요괴의 꿈에 들어가 영향을 주고, 그 꿈을 먹어 생계를 유지한다.",
+        "text": "유메쿠이바쿠는 인간과 다른 요괴의 꿈에 들어가 영향을 주고, 그 꿈을 먹어 생계를 유지한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "요괴의 전성기에는 농사와 직조로 생활을 꾸리며 조용히 살았고, 필요한 이들에게 꿈을 먹여 주는 일을 하기도 했다.",
+       "t_raw": "**꿈을 먹는 것**은 이들만의 특징이며, 먹힌 꿈의 주인은 그 꿈에 대한 기억을 모두 잃는다.",
        "interp": false,
        "dropped": false,
-       "t": "요괴의 전성기에는 농사와 직조로 생활을 꾸리며 조용히 살았고, 필요한 이들에게 꿈을 먹여 주는 일을 하기도 했다."
+       "t": "**꿈을 먹는 것**은 이들만의 특징이며, 먹힌 꿈의 주인은 그 꿈에 대한 기억을 모두 잃는다."
       },
       {
-       "t_raw": "Hyakumonogatari Taikai에서도 술을 나르거나 관객석에 조용히 앉아 있는 정도의 역할에 머물렀다.",
+       "t_raw": "꿈을 만들거나 생각을 심고, 의식에서 분리된 깨어 있는 숙주의 잠재의식에 들어가기도 하며, 소비하지 않고 꿈을 추출하거나 다른 방식으로 영향을 줄 가능성도 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Hyakumonogatari Taikai에서도 술을 나르거나 관객석에 조용히 앉아 있는 정도의 역할에 머물렀다."
+       "t": "꿈을 만들거나 생각을 심고, 의식에서 분리된 깨어 있는 숙주의 잠재의식에 들어가기도 하며, 소비하지 않고 꿈을 추출하거나 다른 방식으로 영향을 줄 가능성도 있다."
       },
       {
-       "t_raw": "이런 모습은 이들이 요괴 사회에서 조용히 일상과 봉사를 맡은 존재로 인식되었음을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 모습은 이들이 요괴 사회에서 조용히 일상과 봉사를 맡은 존재로 인식되었음을 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A9",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": [
-      "Hyakumonogatari Taikai"
-     ]
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "During the Cataclysm, the yumekui-baku went into hiding as they were ill-suited to battle.",
-     "sentences": [
-      {
-       "t_raw": "Cataclysm 때 Yumekui-baku는 싸움에 적합하지 않아 몸을 숨겼고, 동료 요괴들과 함께 싸우지 못한 일에 지금도 죄책감을 느끼는 이들이 있다.",
+       "t_raw": "인간은 악몽을 자신들의 집이라 불렀고, 그래서 yumekui-baku와 인간은 천생의 적이었다.",
        "interp": false,
        "dropped": false,
-       "t": "대재앙 때 바쿠는 싸움에 적합하지 않아 몸을 숨겼고, 동료 요괴들과 함께 싸우지 못한 일에 지금도 죄책감을 느끼는 이들이 있다."
-      },
-      {
-       "t_raw": "재앙이 지나간 뒤에는 회복을 돕기 위해 다시 나타나, Abyss에 맞서 싸운 모든 이들을 괴롭히던 악몽을 뽑아내는 데 몸이 닳도록 일했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "재앙이 지나간 뒤에는 회복을 돕기 위해 다시 나타나, 심연에 맞서 싸운 모든 이들을 괴롭히던 악몽을 뽑아내는 데 몸이 닳도록 일했다."
-      },
-      {
-       "t_raw": "그 과로로 큰 병이나 부상을 입은 이들도 있었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 과로로 큰 병이나 부상을 입은 이들도 있었다."
-      },
-      {
-       "t_raw": "이들은 싸움에 적합하지 않았던 만큼, 재앙 뒤에는 악몽을 다루는 방식으로 회복을 도운 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이들은 싸움에 적합하지 않았던 만큼, 재앙 뒤에는 악몽을 다루는 방식으로 회복을 도운 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A10",
-       "wiki_refs": [
-        {
-         "type": "vo",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "In the present day, the yumekui-baku are gradually integrating into human society.",
-     "sentences": [
-      {
-       "t_raw": "현재 Yumekui-baku는 인간 사회에 점차 통합되고 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "현재 바쿠는 인간 사회에 점차 통합되고 있다."
-      },
-      {
-       "t_raw": "대표적인 구성원 Yumemizuki Mizuki는 최근 Aisa Bathhouse의 대주주가 되었고, 여러 동족과 함께 그곳에서 임상 심리사로 일한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대표적인 구성원 유메미즈키 미즈키는 최근 아이사 대중탕의 대주주가 되었고, 여러 동족과 함께 그곳에서 임상 심리사로 일한다."
-      },
-      {
-       "t_raw": "과거에 꿈을 먹여 주던 조용한 역할이 오늘날에는 악몽을 다루는 전문 서비스와 사회 통합으로 이어진 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "과거에 꿈을 먹여 주던 조용한 역할이 오늘날에는 악몽을 다루는 전문 서비스와 사회 통합으로 이어진 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A9",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A11",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Aisa Bathhouse",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nice to meet you, Gyoubu Koban. My name is Yumemizuki Mizuki. I'm a yumekui-baku. We're youkai, just like you.",
-     "sentences": [
-      {
-       "t_raw": "Yumemizuki Mizuki는 자신을 'Mizuki'로 줄여 부를 수 있다며 Inazuma의 요괴인 Yumekui-baku라고 소개하고, Gyoubu Koban에게도 같은 요괴라 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "유메미즈키 미즈키는 자신을 'Mizuki'로 줄여 부를 수 있다며 이나즈마의 요괴인 바쿠라고 소개하고, Gyoubu Koban에게도 같은 요괴라 말한다."
-      },
-      {
-       "t_raw": "**Aisa Bathhouse**에서는 주요 주주이자 임상 심리사로 여러 동족과 함께 일한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**아이사 대중탕**에서는 주요 주주이자 임상 심리사로 여러 동족과 함께 일한다."
-      },
-      {
-       "t_raw": "Paimon은 그런 그녀를 나쁜 꿈을 먹는 Yumekui-baku이자 임상 심리사인지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 그런 그녀를 나쁜 꿈을 먹는 바쿠이자 임상 심리사인지 묻는다."
-      },
-      {
-       "t_raw": "이는 악몽을 먹는 Yumekui-baku라는 정체와 임상 심리사라는 역할이 한 인물 안에서 겹치는 모습으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 악몽을 먹는 바쿠라는 정체와 임상 심리사라는 역할이 한 인물 안에서 겹치는 모습으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Encounter in the Realm of Dreams",
-       "quest_ko": "꿈속의 만남",
-       "version": "5.4",
-       "speaker": "Yumemizuki Mizuki"
-      },
-      {
-       "kind": "quest",
-       "quest": "As Though Caught in a Dream",
-       "quest_ko": "꿈처럼",
-       "version": "5.4",
-       "speaker": "Yumemizuki Mizuki"
-      },
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Encounter in the Realm of Dreams",
-       "quest_ko": "꿈속의 만남",
-       "version": "5.4",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "작중 행적 — 아이사 대중탕",
-     "latin_left": [
-      "Mizuki",
-      "Gyoubu Koban"
-     ]
-    },
-    {
-     "section": "작중 행적 — Aisa Bathhouse",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "We yumekui-baku eat the nightmares of humans, while they called those nightmares their home. So, we were natural enemies.",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 Yumekui-baku가 나쁜 꿈을 먹어 주는 일을 재미있겠다고 받아들이고, 그 서비스가 비할 데 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 바쿠가 나쁜 꿈을 먹어 주는 일을 재미있겠다고 받아들이고, 그 서비스가 비할 데 없다고 말한다."
-      },
-      {
-       "t_raw": "Youko는 Yumekui-Baku 아가씨가 이미 살펴봤다며 만족하고, Yumemizuki Mizuki는 Yumekui-Baku들이 일을 시작한다며 꽉 붙잡으라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여우 요괴는 바쿠 아가씨가 이미 살펴봤다며 만족하고, 유메미즈키 미즈키는 바쿠들이 일을 시작한다며 꽉 붙잡으라고 한다."
-      },
-      {
-       "t_raw": "Ei는 악몽의 고통을 덜어 주는 일이 만만치 않다며 Yumekui-Baku의 유산을 기린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라이덴 에이(影)는 악몽의 고통을 덜어 주는 일이 만만치 않다며 바쿠의 유산을 기린다."
-      },
-      {
-       "t_raw": "Mizuki에 따르면 Yumekui-baku는 인간의 악몽을 먹고, 인간은 그 악몽을 집으로 삼았기에 서로 **천적**이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Mizuki에 따르면 바쿠는 인간의 악몽을 먹고, 인간은 그 악몽을 집으로 삼았기에 서로 **천적**이었다."
-      },
-      {
-       "t_raw": "그런 천적 관계가 악몽의 고통을 덜어 주는 서비스로 이어진 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그런 천적 관계가 악몽의 고통을 덜어 주는 서비스로 이어진 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Crisis at the Aisa Bathhouse",
-       "quest_ko": "아이사 대중탕의 경영난",
-       "version": "5.4",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Crisis at the Aisa Bathhouse",
-       "quest_ko": "아이사 대중탕의 경영난",
-       "version": "5.4",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "As Though Kissed by Dew",
-       "quest_ko": "이슬처럼",
-       "version": "5.4",
-       "speaker": "Youko"
-      },
-      {
-       "kind": "quest",
-       "quest": "Descendant of Nightmares",
-       "quest_ko": "꿈마수 일족의 생존자",
-       "version": "5.4",
-       "speaker": "Yumemizuki Mizuki"
-      },
-      {
-       "kind": "quest",
-       "quest": "As Though Beholding Illusions",
-       "quest_ko": "허상처럼",
-       "version": "5.4",
-       "speaker": "Ei"
-      },
-      {
-       "kind": "quest",
-       "quest": "Descendant of Nightmares",
-       "quest_ko": "꿈마수 일족의 생존자",
-       "version": "5.4",
-       "speaker": "Yumemizuki Mizuki"
-      }
-     ],
-     "heading": "작중 행적 — 아이사 대중탕",
-     "latin_left": [
-      "Mizuki"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Yeah! You yumekui-baku provide an unbeatable service, no scammer's gonna run you girls out of business!",
-     "sentences": [
-      {
-       "t_raw": "Yumemizuki Mizuki는 **Aisa Bathhouse**의 주요 주주이자 그곳에서 동족과 함께 일하는 임상 심리학자다.",
-       "interp": false,
-       "dropped": false,
-       "t": "유메미즈키 미즈키는 **아이사 대중탕**의 주요 주주이자 그곳에서 동족과 함께 일하는 임상 심리학자다."
-      },
-      {
-       "t_raw": "Paimon은 그녀가 악몽을 먹는 Yumekui-baku이자 임상 심리학자냐고 묻고, 그 서비스가 사기꾼에게 밀릴 수 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 그녀가 악몽을 먹는 바쿠이자 임상 심리학자냐고 묻고, 그 서비스가 사기꾼에게 밀릴 수 없다고 말한다."
-      },
-      {
-       "t_raw": "악몽을 먹는 일과 임상 심리 역할이 Yumemizuki Mizuki에게 겹친다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "악몽을 먹는 일과 임상 심리 역할이 유메미즈키 미즈키에게 겹친다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Crisis at the Aisa Bathhouse",
-       "quest_ko": "아이사 대중탕의 경영난",
-       "version": "5.4",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Encounter in the Realm of Dreams",
-       "quest_ko": "꿈속의 만남",
-       "version": "5.4",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nice to meet you, Gyoubu Koban. My name is Yumemizuki Mizuki. I'm a yumekui-baku. We're youkai, just like you.",
-     "sentences": [
-      {
-       "t_raw": "Yumemizuki Mizuki는 Gyoubu Koban에게 자신을 Yumekui-baku라 소개하며 같은 요괴라 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "유메미즈키 미즈키는 Gyoubu Koban에게 자신을 바쿠라 소개하며 같은 요괴라 말한다."
-      },
-      {
-       "t_raw": "Ei는 악몽의 고통을 덜어 주는 일이 작은 일이 아니라며 **Yumekui-Baku의 유산**을 기린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라이덴 에이(影)는 악몽의 고통을 덜어 주는 일이 작은 일이 아니라며 **바쿠의 유산**을 기린다."
-      },
-      {
-       "t_raw": "Youko는 Yumekui-Baku 아가씨가 이미 우리를 살펴봤다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여우 요괴는 바쿠 아가씨가 이미 우리를 살펴봤다고 전한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "As Though Caught in a Dream",
-       "quest_ko": "꿈처럼",
-       "version": "5.4",
-       "speaker": "Yumemizuki Mizuki"
-      },
-      {
-       "kind": "quest",
-       "quest": "As Though Beholding Illusions",
-       "quest_ko": "허상처럼",
-       "version": "5.4",
-       "speaker": "Ei"
-      },
-      {
-       "kind": "quest",
-       "quest": "As Though Kissed by Dew",
-       "quest_ko": "이슬처럼",
-       "version": "5.4",
-       "speaker": "Youko"
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Gyoubu Koban"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The baku re-emerged after the calamity to assist in the recovery efforts, working themselves to the bone to extract the nightmares that plagued everyone who fought against the Abyss.",
-     "sentences": [
-      {
-       "t_raw": "Cataclysm 때 Yumekui-baku는 싸움에 어울리지 않아 숨었고, 동료 요괴와 함께 싸우지 못한 죄책감을 느끼는 이들도 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대재앙 때 바쿠는 싸움에 어울리지 않아 숨었고, 동료 요괴와 함께 싸우지 못한 죄책감을 느끼는 이들도 있다."
-      },
-      {
-       "t_raw": "재앙 뒤에는 회복을 돕기 위해 다시 나타나 **Abyss에 맞선 이들**을 괴롭힌 악몽을 뽑아내는 데 몸을 혹사했고, 일부는 과로로 큰 병이나 부상을 입었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "재앙 뒤에는 회복을 돕기 위해 다시 나타나 **심연에 맞선 이들**을 괴롭힌 악몽을 뽑아내는 데 몸을 혹사했고, 일부는 과로로 큰 병이나 부상을 입었다."
-      },
-      {
-       "t_raw": "Yumemizuki Mizuki는 Yumekui-baku가 인간의 악몽을 먹고 인간은 그 악몽을 집이라 불렀기에 서로 천적이었다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "유메미즈키 미즈키는 바쿠가 인간의 악몽을 먹고 인간은 그 악몽을 집이라 불렀기에 서로 천적이었다고 말한다."
-      },
-      {
-       "t_raw": "싸움에 어울리지 않아 숨었던 이들이 전후에 악몽을 뽑아내며 회복을 도운 것은, 전투 대신 치유를 맡은 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "싸움에 어울리지 않아 숨었던 이들이 전후에 악몽을 뽑아내며 회복을 도운 것은, 전투 대신 치유를 맡은 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A10",
-       "wiki_refs": [
-        {
-         "type": "vo",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Descendant of Nightmares",
-       "quest_ko": "꿈마수 일족의 생존자",
-       "version": "5.4",
-       "speaker": "Yumemizuki Mizuki"
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When a dream is consumed, its owner loses all memory of it.",
-     "sentences": [
-      {
-       "t_raw": "꿈을 먹으면 그 꿈의 주인은 꿈에 대한 기억을 모두 잃는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "꿈을 먹으면 그 꿈의 주인은 꿈에 대한 기억을 모두 잃는다."
-      },
-      {
-       "t_raw": "또한 Yumekui-baku는 꿈을 소비하지 않고 추출하거나 다른 방식으로 꿈에 영향을 줄 수도 있는 것으로 여겨진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "또한 바쿠는 꿈을 소비하지 않고 추출하거나 다른 방식으로 꿈에 영향을 줄 수도 있는 것으로 여겨진다."
-      },
-      {
-       "t_raw": "소비와 추출 사이에서 기억 상실이 어디까지 따라오는지는 **풀리지 않은 물음**이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "소비와 추출 사이에서 기억 상실이 어디까지 따라오는지는 **풀리지 않은 물음**이다."
+       "t": "인간은 악몽을 자신들의 집이라 불렀고, 그래서 유메쿠이바쿠와 인간은 천생의 적이었다.",
+       "polish": {
+        "from": "인간은 악몽을 자신들의 집이라 불렀고, 그래서 yumekui-baku와 인간은 천생의 적이었다.",
+        "text": "인간은 악몽을 자신들의 집이라 불렀고, 그래서 유메쿠이바쿠와 인간은 천생의 적이었다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -1096,6 +455,456 @@
          "name": "Glimpses of Mysterious Inazuma"
         }
        ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Descendant of Nightmares",
+       "quest_ko": "꿈마수 일족의 생존자",
+       "version": "5.4",
+       "speaker": "Yumemizuki Mizuki"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All match A4 and A5.",
+     "quote": "positive dreams tend to taste \"pleasant, warm, and delicately sweet,\" while nightmares can taste bitter, acidic, or metallic.",
+     "sentences": [
+      {
+       "t_raw": "꿈마다 맛은 다르며, 긍정적인 꿈은 대체로 기분 좋고 따뜻하며 섬세하게 달콤하고 악몽은 쓰고 시거나 금속 같은 맛이 난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꿈마다 맛은 다르며, 긍정적인 꿈은 대체로 기분 좋고 따뜻하며 섬세하게 달콤하고 악몽은 쓰고 시거나 금속 같은 맛이 난다."
+      },
+      {
+       "t_raw": "**특히 강한 악몽은 독처럼 작용해** 메스꺼움, 피로, 베이거나 타는 듯한 통증, 혼수, 심하면 죽음에 이를 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**특히 강한 악몽은 독처럼 작용해** 메스꺼움, 피로, 베이거나 타는 듯한 통증, 혼수, 심하면 죽음에 이를 수 있다."
+      },
+      {
+       "t_raw": "정신적 후유증은 감정을 이해하는 능력에 따라 달라질 수 있어, 환자의 부정적 감정을 모두 느끼는 Mizuki와 달리 대부분의 baku는 그런 감정을 거의 알아차리지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정신적 후유증은 감정을 이해하는 능력에 따라 달라질 수 있어, 환자의 부정적 감정을 모두 느끼는 유메미즈키 미즈키와 달리 대부분의 바쿠는 그런 감정을 거의 알아차리지 못한다.",
+       "polish": {
+        "from": "정신적 후유증은 감정을 이해하는 능력에 따라 달라질 수 있어, 환자의 부정적 감정을 모두 느끼는 유메미즈키 미즈키와 달리 대부분의 baku는 그런 감정을 거의 알아차리지 못한다.",
+        "text": "정신적 후유증은 감정을 이해하는 능력에 따라 달라질 수 있어, 환자의 부정적 감정을 모두 느끼는 유메미즈키 미즈키와 달리 대부분의 바쿠는 그런 감정을 거의 알아차리지 못한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "꿈의 소화는 인간의 소화와 비슷한 것으로 보이는데, 시간과 에너지가 들고 계속 먹으면 포만감이 들며 악몽은 소화불량을 부를 수 있고, 꿈을 소화하려면 자신의 꿈속에 있어야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꿈의 소화는 인간의 소화와 비슷한 것으로 보이는데, 시간과 에너지가 들고 계속 먹으면 포만감이 들며 악몽은 소화불량을 부를 수 있고, 꿈을 소화하려면 자신의 꿈속에 있어야 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "Powers and Abilities",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "vo",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "quest",
+         "name": "Encounter in the Realm of Dreams"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "Powers and Abilities",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "vo",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "quest",
+         "name": "Crisis at the Aisa Bathhouse"
+        }
+       ]
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences match A9.",
+     "quote": "They are traditionally depicted as \"benevolent and carefree\" beings who are always ready to help others, but have no wants of their own.",
+     "sentences": [
+      {
+       "t_raw": "Yumekui-Baku는 kitsune, oni, tengu보다 덜 알려진 **lesser youkai**로, 전통적으로는 'benevolent and carefree'하고 남을 돕는 데 나서며 자신의 욕망은 없는 존재로 그려졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바쿠는 여우 요괴, 오니, 텐구보다 덜 알려진 **하급 요괴**로, 전통적으로는 '자애롭고 태평하며' 남을 돕는 데 나서며 자신의 욕망은 없는 존재로 그려졌다.",
+       "polish": {
+        "from": "바쿠는 kitsune, oni, tengu보다 덜 알려진 **lesser youkai**로, 전통적으로는 'benevolent and carefree'하고 남을 돕는 데 나서며 자신의 욕망은 없는 존재로 그려졌다.",
+        "text": "바쿠는 여우 요괴, 오니, 텐구보다 덜 알려진 **하급 요괴**로, 전통적으로는 '자애롭고 태평하며' 남을 돕는 데 나서며 자신의 욕망은 없는 존재로 그려졌다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "요괴의 전성기에는 조용히 농사와 길쌈으로 생계를 꾸리며, 필요로 하는 이에게 꿈을 먹는 서비스를 제공하기도 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요괴의 전성기에는 조용히 농사와 길쌈으로 생계를 꾸리며, 필요로 하는 이에게 꿈을 먹는 서비스를 제공하기도 했다."
+      },
+      {
+       "t_raw": "Hyakumonogatari Taikai에서도 음료를 나르거나 관객석에 앉아 주의를 기울이는 등 **조용한 역할**을 맡았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Hyakumonogatari Taikai에서도 음료를 나르거나 관객석에 앉아 주의를 기울이는 등 **조용한 역할**을 맡았다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "History",
+       "paragraph": "A9",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yumemizuki Mizuki"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": [
+      "Hyakumonogatari Taikai"
+     ]
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Facts match A10; the interpretation follows reasonably.",
+     "quote": "The baku re-emerged after the calamity to assist in the recovery efforts, working themselves to the bone to extract the nightmares that plagued everyone who fought against the Abyss.",
+     "sentences": [
+      {
+       "t_raw": "Cataclysm 때 Yumekui-Baku는 전투에 어울리지 않아 은둔했고, 동료 요괴들과 함께 싸우지 못한 일에 지금도 죄책감을 느끼는 이들이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대재앙 때 바쿠는 전투에 어울리지 않아 은둔했고, 동료 요괴들과 함께 싸우지 못한 일에 지금도 죄책감을 느끼는 이들이 있다."
+      },
+      {
+       "t_raw": "재난 뒤에는 회복 지원에 나서, Abyss에 맞서 싸운 모두를 괴롭히던 **악몽을 빼내는 일**에 몸이 상할 정도로 몰두했으며, 과로로 큰 병이나 부상을 입은 이들도 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "재난 뒤에는 회복 지원에 나서, 심연에 맞서 싸운 모두를 괴롭히던 **악몽을 빼내는 일**에 몸이 상할 정도로 몰두했으며, 과로로 큰 병이나 부상을 입은 이들도 있었다."
+      },
+      {
+       "t_raw": "전투에 어울리지 않아 은둔했던 종족이 재난 뒤 악몽을 빼내며 동료를 도왔다는 점에서, 이들의 회복 지원은 싸움 대신 꿈을 통해 돕는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "전투에 어울리지 않아 은둔했던 종족이 재난 뒤 악몽을 빼내며 동료를 도왔다는 점에서, 이들의 회복 지원은 싸움 대신 꿈을 통해 돕는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "History",
+       "paragraph": "A10",
+       "wiki_refs": [
+        {
+         "type": "vo",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "cs",
+         "name": "Yumemizuki Mizuki"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Facts match A11 and Q10; the integration reading is supported by A11.",
+     "quote": "So she's a yumekui-baku that eats bad dreams and a clinical psychologist, too?",
+     "sentences": [
+      {
+       "t_raw": "Yumemizuki Mizuki는 **Aisa Bathhouse**의 주요 주주이자 그곳에서 동족과 함께 일하는 임상심리사다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유메미즈키 미즈키는 **아이사 대중탕**의 주요 주주이자 그곳에서 동족과 함께 일하는 임상심리사다."
+      },
+      {
+       "t_raw": "Paimon은 Mizuki를 악몽을 먹는 yumekui-baku이자 임상심리사냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 유메미즈키 미즈키를 악몽을 먹는 유메쿠이바쿠이자 임상심리사냐고 묻는다.",
+       "polish": {
+        "from": "페이몬은 유메미즈키 미즈키를 악몽을 먹는 yumekui-baku이자 임상심리사냐고 묻는다.",
+        "text": "페이몬은 유메미즈키 미즈키를 악몽을 먹는 유메쿠이바쿠이자 임상심리사냐고 묻는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Mizuki와 동족이 Aisa Bathhouse에서 일하는 모습은 yumekui-baku가 인간 사회에 통합되어 가는 흐름을 보여 주는 사례로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "유메미즈키 미즈키와 동족이 아이사 대중탕에서 일하는 모습은 유메쿠이바쿠가 인간 사회에 통합되어 가는 흐름을 보여 주는 사례로 보인다.",
+       "polish": {
+        "from": "유메미즈키 미즈키와 동족이 아이사 대중탕에서 일하는 모습은 yumekui-baku가 인간 사회에 통합되어 가는 흐름을 보여 주는 사례로 보인다.",
+        "text": "유메미즈키 미즈키와 동족이 아이사 대중탕에서 일하는 모습은 유메쿠이바쿠가 인간 사회에 통합되어 가는 흐름을 보여 주는 사례로 보인다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "History",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Encounter in the Realm of Dreams",
+       "quest_ko": "꿈속의 만남",
+       "version": "5.4",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Facts match Q2 and Q3; the interpretation is reasonable.",
+     "quote": "Nice to meet you, Gyoubu Koban. My name is Yumemizuki Mizuki. I'm a yumekui-baku. We're youkai, just like you.",
+     "sentences": [
+      {
+       "t_raw": "Mizuki는 스스로를 Inazuma의 요괴인 yumekui-baku라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유메미즈키 미즈키는 스스로를 이나즈마의 요괴인 유메쿠이바쿠라고 소개한다.",
+       "polish": {
+        "from": "유메미즈키 미즈키는 스스로를 이나즈마의 요괴인 yumekui-baku라고 소개한다.",
+        "text": "유메미즈키 미즈키는 스스로를 이나즈마의 요괴인 유메쿠이바쿠라고 소개한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Gyoubu Koban에게도 이름을 밝히며 자신들이 Gyoubu Koban과 **같은 요괴**라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "교부 코반에게도 이름을 밝히며 자신들이 교부 코반과 **같은 요괴**라고 말한다."
+      },
+      {
+       "t_raw": "이 소개는 yumekui-baku와 Gyoubu Koban의 접점을 요괴라는 정체성에서 찾는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 소개는 유메쿠이바쿠와 교부 코반의 접점을 요괴라는 정체성에서 찾는 대목으로 보인다.",
+       "polish": {
+        "from": "이 소개는 yumekui-baku와 교부 코반의 접점을 요괴라는 정체성에서 찾는 대목으로 보인다.",
+        "text": "이 소개는 유메쿠이바쿠와 교부 코반의 접점을 요괴라는 정체성에서 찾는 대목으로 보인다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Encounter in the Realm of Dreams",
+       "quest_ko": "꿈속의 만남",
+       "version": "5.4",
+       "speaker": "Yumemizuki Mizuki"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Caught in a Dream",
+       "quest_ko": "꿈처럼",
+       "version": "5.4",
+       "speaker": "Yumemizuki Mizuki"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Facts match Q4-Q6; the interpretation is mild and acceptable.",
+     "quote": "Even so, relieving the pain of the nightmares is no small feat. You honor the legacy of the Yumekui-Baku.",
+     "sentences": [
+      {
+       "t_raw": "Ei는 악몽의 고통을 덜어 주는 일이 작은 일이 아니라며 **Yumekui-Baku의 유산**을 기린다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)는 악몽의 고통을 덜어 주는 일이 작은 일이 아니라며 **바쿠의 유산**을 기린다고 말한다."
+      },
+      {
+       "t_raw": "Paimon은 yumekui-baku의 서비스가 비할 데 없으며 사기꾼도 그들을 장사에서 몰아내지 못할 것이라 하고, Youko는 이미 Yumekui-Baku 여성이 살펴봤다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 유메쿠이바쿠의 서비스가 비할 데 없으며 사기꾼도 그들을 장사에서 몰아내지 못할 것이라 하고, 여우 요괴는 이미 바쿠 여성이 살펴봤다고 말한다.",
+       "polish": {
+        "from": "페이몬은 yumekui-baku의 서비스가 비할 데 없으며 사기꾼도 그들을 장사에서 몰아내지 못할 것이라 하고, 여우 요괴는 이미 바쿠 여성이 살펴봤다고 말한다.",
+        "text": "페이몬은 유메쿠이바쿠의 서비스가 비할 데 없으며 사기꾼도 그들을 장사에서 몰아내지 못할 것이라 하고, 여우 요괴는 이미 바쿠 여성이 살펴봤다고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Ei의 인정, Paimon의 칭찬, Youko의 확인이 나란히 놓여 같은 yumekui-baku를 향한 시선이 여러 층위에서 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "라이덴 에이(影)의 인정, 페이몬의 칭찬, 여우 요괴의 확인이 나란히 놓여 같은 yumekui-baku를 향한 시선이 여러 층위에서 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "As Though Beholding Illusions",
+       "quest_ko": "허상처럼",
+       "version": "5.4",
+       "speaker": "Ei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Crisis at the Aisa Bathhouse",
+       "quest_ko": "아이사 대중탕의 경영난",
+       "version": "5.4",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Kissed by Dew",
+       "quest_ko": "이슬처럼",
+       "version": "5.4",
+       "speaker": "Youko"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Facts match A4 and A6; the inference that the rule is strictly observed follows from 'most baku do not know'.",
+     "quote": "The yumekui-baku have an unwritten rule among their kind, which is to never eat a good dream without the owner's permission, as it is known to cause mental instability to the owner.",
+     "sentences": [
+      {
+       "t_raw": "yumekui-baku 사이에는 **좋은 꿈을 허락 없이 먹지 않는다**는 불문율이 있는데, 이는 꿈의 주인에게 정신적 불안정을 일으키는 것으로 알려져 있기 때문이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유메쿠이바쿠 사이에는 **좋은 꿈을 허락 없이 먹지 않는다**는 불문율이 있는데, 이는 꿈의 주인에게 정신적 불안정을 일으키는 것으로 알려져 있기 때문이다.",
+       "polish": {
+        "from": "yumekui-baku 사이에는 **좋은 꿈을 허락 없이 먹지 않는다**는 불문율이 있는데, 이는 꿈의 주인에게 정신적 불안정을 일으키는 것으로 알려져 있기 때문이다.",
+        "text": "유메쿠이바쿠 사이에는 **좋은 꿈을 허락 없이 먹지 않는다**는 불문율이 있는데, 이는 꿈의 주인에게 정신적 불안정을 일으키는 것으로 알려져 있기 때문이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그 결과 대부분의 baku는 좋은 꿈의 맛을 모른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 결과 대부분의 바쿠는 좋은 꿈의 맛을 모른다.",
+       "polish": {
+        "from": "그 결과 대부분의 baku는 좋은 꿈의 맛을 모른다.",
+        "text": "그 결과 대부분의 바쿠는 좋은 꿈의 맛을 모른다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "좋은 꿈의 맛을 모른다는 사실은 그 규칙이 baku 사회에서 상당히 철저히 지켜졌음을 보여주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "좋은 꿈의 맛을 모른다는 사실은 그 규칙이 바쿠 사회에서 상당히 철저히 지켜졌음을 보여주는 셈이다.",
+       "polish": {
+        "from": "좋은 꿈의 맛을 모른다는 사실은 그 규칙이 baku 사회에서 상당히 철저히 지켜졌음을 보여주는 셈이다.",
+        "text": "좋은 꿈의 맛을 모른다는 사실은 그 규칙이 바쿠 사회에서 상당히 철저히 지켜졌음을 보여주는 셈이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "꿈을 먹으면 주인은 그 꿈에 대한 기억을 모두 잃고, baku가 **자기 꿈속**에서 소화해야 하며, 계속 먹으면 포만감이 들지만 악몽을 먹으면 소화불량이 생긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꿈을 먹으면 주인은 그 꿈에 대한 기억을 모두 잃고, 바쿠가 **자기 꿈속**에서 소화해야 하며, 계속 먹으면 포만감이 들지만 악몽을 먹으면 소화불량이 생긴다.",
+       "polish": {
+        "from": "꿈을 먹으면 주인은 그 꿈에 대한 기억을 모두 잃고, baku가 **자기 꿈속**에서 소화해야 하며, 계속 먹으면 포만감이 들지만 악몽을 먹으면 소화불량이 생긴다.",
+        "text": "꿈을 먹으면 주인은 그 꿈에 대한 기억을 모두 잃고, 바쿠가 **자기 꿈속**에서 소화해야 하며, 계속 먹으면 포만감이 들지만 악몽을 먹으면 소화불량이 생긴다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "Powers and Abilities",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "vo",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "quest",
+         "name": "Encounter in the Realm of Dreams"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "Powers and Abilities",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Encounter in the Realm of Dreams"
+        },
+        {
+         "type": "vo",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "cs",
+         "name": "Yumemizuki Mizuki"
+        }
+       ]
       }
      ],
      "heading": "떡밥과 수수께끼",
@@ -1103,24 +912,67 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Yumekui-baku are also capable of creating dreams, implanting thoughts, and even entering the subconscious of a wakeful host, if it has been dissociated from their conscious mind.",
+     "status": "accepted",
+     "note": "All sentences are supported by A5/A7. The hedged wording matches the English 'may' and 'possibly'.",
+     "quote": "They may also be able to extract dreams without consuming them, or affect them in other ways.",
      "sentences": [
       {
-       "t_raw": "Yumekui-baku는 꿈을 만들고 생각을 심을 수 있으며, 깨어 있는 숙주의 잠재의식이 의식에서 분리되어 있으면 그 잠재의식에 들어갈 수도 있다.",
+       "t_raw": "특히 **강한 악몽은 독**처럼 작용해 메스꺼움, 피로, 날카로운 통증, 혼수, 심하면 죽음까지 이를 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "바쿠는 꿈을 만들고 생각을 심을 수 있으며, 깨어 있는 숙주의 잠재의식이 의식에서 분리되어 있으면 그 잠재의식에 들어갈 수도 있다."
+       "t": "특히 **강한 악몽은 독**처럼 작용해 메스꺼움, 피로, 날카로운 통증, 혼수, 심하면 죽음까지 이를 수 있다."
       },
       {
-       "t_raw": "그 '분리'가 어떤 상태를 뜻하고, 들어간 뒤 무엇이 가능한지는 **남은 수수께끼**다.",
+       "t_raw": "정신적 후유증은 상대 감정을 얼마나 이해하는지에 따라 달라지는데, Mizuki는 오랜 연구 끝에 환자에게서 먹은 부정적 감정을 모두 느끼는 반면 대부분의 baku는 그것을 거의 알아차리지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정신적 후유증은 상대 감정을 얼마나 이해하는지에 따라 달라지는데, 유메미즈키 미즈키는 오랜 연구 끝에 환자에게서 먹은 부정적 감정을 모두 느끼는 반면 대부분의 바쿠는 그것을 거의 알아차리지 못한다.",
+       "polish": {
+        "from": "정신적 후유증은 상대 감정을 얼마나 이해하는지에 따라 달라지는데, 유메미즈키 미즈키는 오랜 연구 끝에 환자에게서 먹은 부정적 감정을 모두 느끼는 반면 대부분의 baku는 그것을 거의 알아차리지 못한다.",
+        "text": "정신적 후유증은 상대 감정을 얼마나 이해하는지에 따라 달라지는데, 유메미즈키 미즈키는 오랜 연구 끝에 환자에게서 먹은 부정적 감정을 모두 느끼는 반면 대부분의 바쿠는 그것을 거의 알아차리지 못한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "한편 baku는 꿈을 만들거나 생각을 심고, 깨어 있는 주인의 의식에서 분리된 잠재의식에 들어갈 수 있으며, 꿈을 먹지 않고 추출하거나 다른 방식으로 영향을 줄 수도 있는 것으로 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 바쿠는 꿈을 만들거나 생각을 심고, 깨어 있는 주인의 의식에서 분리된 잠재의식에 들어갈 수 있으며, 꿈을 먹지 않고 추출하거나 다른 방식으로 영향을 줄 수도 있는 것으로 전해진다.",
+       "polish": {
+        "from": "한편 baku는 꿈을 만들거나 생각을 심고, 깨어 있는 주인의 의식에서 분리된 잠재의식에 들어갈 수 있으며, 꿈을 먹지 않고 추출하거나 다른 방식으로 영향을 줄 수도 있는 것으로 전해진다.",
+        "text": "한편 바쿠는 꿈을 만들거나 생각을 심고, 깨어 있는 주인의 의식에서 분리된 잠재의식에 들어갈 수 있으며, 꿈을 먹지 않고 추출하거나 다른 방식으로 영향을 줄 수도 있는 것으로 전해진다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "꿈을 먹지 않고 추출하는 등의 가능성과 강한 악몽의 극단적 피해를 함께 놓으면, 능력의 범위와 위험의 경계는 여전히 가능성으로 남아 있는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "그 '분리'가 어떤 상태를 뜻하고, 들어간 뒤 무엇이 가능한지는 **남은 수수께끼**다."
+       "t": "꿈을 먹지 않고 추출하는 등의 가능성과 강한 악몽의 극단적 피해를 함께 놓으면, 능력의 범위와 위험의 경계는 여전히 가능성으로 남아 있는 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yumekui-Baku",
+       "revision": 1724376,
+       "section": "Powers and Abilities",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "vo",
+         "name": "Yumemizuki Mizuki"
+        },
+        {
+         "type": "quest",
+         "name": "Crisis at the Aisa Bathhouse"
+        }
+       ]
+      },
       {
        "kind": "wiki",
        "page": "Yumekui-Baku",
@@ -1151,205 +1003,67 @@
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The baku may also suffer mental side effects, depending on their ability to understand the emotions involved.",
-     "sentences": [
-      {
-       "t_raw": "강한 악몽은 독처럼 작용해 메스꺼움, 피로, 통증, 혼수, 심하면 죽음까지 이르게 할 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "강한 악몽은 독처럼 작용해 메스꺼움, 피로, 통증, 혼수, 심하면 죽음까지 이르게 할 수 있다."
-      },
-      {
-       "t_raw": "Yumekui-baku는 감정을 이해하는 능력에 따라 정신적 후유증을 겪으며, Mizuki는 환자에게서 먹은 부정적 감정을 모두 느끼지만 대부분의 다른 baku는 거의 알아차리지 못한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바쿠는 감정을 이해하는 능력에 따라 정신적 후유증을 겪으며, Mizuki는 환자에게서 먹은 부정적 감정을 모두 느끼지만 대부분의 다른 baku는 거의 알아차리지 못한다."
-      },
-      {
-       "t_raw": "Cataclysm 때 동료 요괴와 함께 싸우지 못한 일부는 그 죄책감을 아직 느낀다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대재앙 때 동료 요괴와 함께 싸우지 못한 일부는 그 죄책감을 아직 느낀다."
-      },
-      {
-       "t_raw": "악몽이 남기는 정신적 부담과 그 죄책감이 어떻게 겹치는지는 **미해결 지점**으로 남는다.",
-       "interp": true,
-       "dropped": false,
-       "t": "악몽이 남기는 정신적 부담과 그 죄책감이 어떻게 겹치는지는 **미해결 지점**으로 남는다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "Powers and Abilities",
-       "paragraph": "A5",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "vo",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "quest",
-         "name": "Crisis at the Aisa Bathhouse"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A10",
-       "wiki_refs": [
-        {
-         "type": "vo",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        }
-       ]
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Mizuki"
-     ]
-    },
-    {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "In their original form, yumekui-baku are small and round, with squishy, colorful bodies and curly tails.",
+     "status": "accepted",
+     "note": "Q5, Q6 and Q9 support each sentence, and the interpretation in (3) is reasonable.",
+     "quote": "Ooh, we get to have our bad dreams eaten by a yumekui-baku? That sounds fun!",
      "sentences": [
       {
-       "t_raw": "원래 모습은 작고 둥글며, 말랑하고 알록달록한 몸에 곱슬한 꼬리를 지녔고 작은 눈과 짧은 팔다리, 처진 코 때문에 맥이나 멧돼지를 닮았다는 비교를 듣는다.",
+       "t_raw": "Paimon은 yumekui-baku가 비할 데 없는 서비스를 제공한다며, 어떤 사기꾼도 이 소녀들을 장사에서 몰아내지 못할 것이라고 했다.",
        "interp": false,
        "dropped": false,
-       "t": "원래 모습은 작고 둥글며, 말랑하고 알록달록한 몸에 곱슬한 꼬리를 지녔고 작은 눈과 짧은 팔다리, 처진 코 때문에 맥이나 멧돼지를 닮았다는 비교를 듣는다."
+       "t": "페이몬은 유메쿠이바쿠가 비할 데 없는 서비스를 제공한다며, 어떤 사기꾼도 이 소녀들을 장사에서 몰아내지 못할 것이라고 했다.",
+       "polish": {
+        "from": "페이몬은 yumekui-baku가 비할 데 없는 서비스를 제공한다며, 어떤 사기꾼도 이 소녀들을 장사에서 몰아내지 못할 것이라고 했다.",
+        "text": "페이몬은 유메쿠이바쿠가 비할 데 없는 서비스를 제공한다며, 어떤 사기꾼도 이 소녀들을 장사에서 몰아내지 못할 것이라고 했다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "이들은 주로 떠다니며 움직이는데, 이것이 주된 이동 방식인 듯하다.",
+       "t_raw": "Youko는 Yumekui-Baku 아가씨가 이미 자신들을 살펴봤다며 모두 좋다고 전했다.",
        "interp": false,
        "dropped": false,
-       "t": "이들은 주로 떠다니며 움직이는데, 이것이 주된 이동 방식인 듯하다."
+       "t": "여우 요괴는 바쿠 아가씨가 이미 자신들을 살펴봤다며 모두 좋다고 전했다."
       },
       {
-       "t_raw": "인간형이 되면 큰 뾰족귀가 눈에 띄는 경향이 있다.",
+       "t_raw": "Paimon은 우리의 나쁜 꿈을 yumekui-baku가 먹어 준다는 말에 재미있겠다고 했다.",
        "interp": false,
        "dropped": false,
-       "t": "인간형이 되면 큰 뾰족귀가 눈에 띄는 경향이 있다."
+       "t": "페이몬은 우리의 나쁜 꿈을 유메쿠이바쿠가 먹어 준다는 말에 재미있겠다고 했다.",
+       "polish": {
+        "from": "페이몬은 우리의 나쁜 꿈을 yumekui-baku가 먹어 준다는 말에 재미있겠다고 했다.",
+        "text": "페이몬은 우리의 나쁜 꿈을 유메쿠이바쿠가 먹어 준다는 말에 재미있겠다고 했다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "요괴 전성기에는 Hyakumonogatari Taikai에서 음료를 나르거나 관객석에 조용히 앉아 있는 등 조용한 역할을 맡았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "요괴 전성기에는 Hyakumonogatari Taikai에서 음료를 나르거나 관객석에 조용히 앉아 있는 등 조용한 역할을 맡았다."
-      },
-      {
-       "t_raw": "덜 알려진 하급 요괴라는 위상과 이런 조용한 역할은 서로 어울려, 이들의 존재감이 소박하게 그려지는 대목으로 보인다.",
+       "t_raw": "Paimon의 서비스 평가와 Youko가 모두 좋다고 한 반응, Paimon이 재미있겠다고 한 반응을 함께 보면, 꿈을 먹는 일은 편안하게 받아들여지는 서비스로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "덜 알려진 하급 요괴라는 위상과 이런 조용한 역할은 서로 어울려, 이들의 존재감이 소박하게 그려지는 대목으로 보인다."
+       "t": "페이몬의 서비스 평가와 여우 요괴가 모두 좋다고 한 반응, 페이몬이 재미있겠다고 한 반응을 함께 보면, 꿈을 먹는 일은 편안하게 받아들여지는 서비스로 보인다."
       }
      ],
      "sources": [
       {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "Overview > Appearance",
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "Glimpses of Mysterious Inazuma"
-        }
-       ]
+       "kind": "quest",
+       "quest": "Crisis at the Aisa Bathhouse",
+       "quest_ko": "아이사 대중탕의 경영난",
+       "version": "5.4",
+       "speaker": "Paimon"
       },
       {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "Overview > Appearance",
-       "paragraph": "A3",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "As Though Kissed by Dew",
+       "quest_ko": "이슬처럼",
+       "version": "5.4",
+       "speaker": "Youko"
       },
       {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "History",
-       "paragraph": "A9",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        }
-       ]
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Hyakumonogatari Taikai"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "As a result, most baku do not know what good dreams taste like.",
-     "sentences": [
-      {
-       "t_raw": "이들 사이에는 주인의 허락 없이 좋은 꿈을 먹지 않는다는 불문율이 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이들 사이에는 주인의 허락 없이 좋은 꿈을 먹지 않는다는 불문율이 있다."
-      },
-      {
-       "t_raw": "좋은 꿈을 먹으면 주인의 정신이 불안정해질 수 있다고 알려져 있어, 대부분은 좋은 꿈의 맛을 모른다.",
-       "interp": false,
-       "dropped": false,
-       "t": "좋은 꿈을 먹으면 주인의 정신이 불안정해질 수 있다고 알려져 있어, 대부분은 좋은 꿈의 맛을 모른다."
-      },
-      {
-       "t_raw": "좋은 꿈의 맛을 모른다는 사실은 이 규칙이 호기심보다 타인의 정신 안정을 앞세운 결과로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "좋은 꿈의 맛을 모른다는 사실은 이 규칙이 호기심보다 타인의 정신 안정을 앞세운 결과로 읽힌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Yumekui-Baku",
-       "revision": 1724376,
-       "section": "Powers and Abilities",
-       "paragraph": "A6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Encounter in the Realm of Dreams"
-        },
-        {
-         "type": "vo",
-         "name": "Yumemizuki Mizuki"
-        },
-        {
-         "type": "cs",
-         "name": "Yumemizuki Mizuki"
-        }
-       ]
+       "kind": "quest",
+       "quest": "Crisis at the Aisa Bathhouse",
+       "quest_ko": "아이사 대중탕의 경영난",
+       "version": "5.4",
+       "speaker": "Paimon"
       }
      ],
      "heading": "여담",
@@ -1359,9 +1073,9 @@
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "제 이름은 Yumemizuki Mizuki — 줄여서 'Mizuki'라고 해도 돼요. 저는 yumekui-baku로, 여기 Inazuma의 요괴 중 하나예요.",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "내 이름은 Yumemizuki Mizuki — 또는 줄여서 'Mizuki'다. 나는 yumekui-baku이며, 여기 Inazuma의 요괴 한 종류다.",
      "en": "My name is Yumemizuki Mizuki — or just \"Mizuki\" for short. I'm a yumekui-baku, which is a kind of youkai here in Inazuma.",
      "speaker": "Yumemizuki Mizuki",
      "source": {
@@ -1371,48 +1085,14 @@
       "version": "5.4",
       "speaker": "Yumemizuki Mizuki"
      },
-     "t": "제 이름은 유메미즈키 미즈키 — 줄여서 'Mizuki'라고 해도 돼요. 저는 yumekui-baku로, 여기 이나즈마의 요괴 중 하나예요.",
+     "t": "내 이름은 유메미즈키 미즈키 — 또는 줄여서 '유메미즈키 미즈키'다. 나는 yumekui-baku이며, 여기 이나즈마의 요괴 한 종류다.",
      "speaker_ko": "유메미즈키 미즈키"
     },
     {
      "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그래서 yumekui-baku는 좋은 꿈도 먹을 수 있구나... 그래도 그게 정말 그렇게 대단한 일인가?",
-     "en": "So yumekui-baku can eat good dreams too, huh... Still, is that really such a big deal?",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Encounter in the Realm of Dreams",
-      "quest_ko": "꿈속의 만남",
-      "version": "5.4",
-      "speaker": "Paimon"
-     },
-     "t": "그래서 yumekui-baku는 좋은 꿈도 먹을 수 있구나... 그래도 그게 정말 그렇게 대단한 일인가?",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그럼에도 악몽의 고통을 덜어 주는 것은 결코 작은 일이 아니다. 너희는 Yumekui-Baku의 유산을 기리고 있다.",
-     "en": "Even so, relieving the pain of the nightmares is no small feat. You honor the legacy of the Yumekui-Baku.",
-     "speaker": "Ei",
-     "source": {
-      "kind": "quest",
-      "quest": "As Though Beholding Illusions",
-      "quest_ko": "허상처럼",
-      "version": "5.4",
-      "speaker": "Ei"
-     },
-     "t": "그럼에도 악몽의 고통을 덜어 주는 것은 결코 작은 일이 아니다. 너희는 바쿠의 유산을 기리고 있다.",
-     "speaker_ko": "라이덴 에이(影)"
-    },
-    {
-     "section": "작중 행적 — Aisa Bathhouse",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "우리 yumekui-baku는 인간의 악몽을 먹고, 인간은 그 악몽을 집으로 삼았다. 그래서 우리는 천적이었다.",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "우리 yumekui-baku는 인간의 악몽을 먹고, 인간들은 그 악몽을 자신들의 집이라고 불렀다. 그래서 우리는 천생의 적이었다.",
      "en": "We yumekui-baku eat the nightmares of humans, while they called those nightmares their home. So, we were natural enemies.",
      "speaker": "Yumemizuki Mizuki",
      "source": {
@@ -1422,14 +1102,14 @@
       "version": "5.4",
       "speaker": "Yumemizuki Mizuki"
      },
-     "t": "우리 yumekui-baku는 인간의 악몽을 먹고, 인간은 그 악몽을 집으로 삼았다. 그래서 우리는 천적이었다.",
+     "t": "우리 yumekui-baku는 인간의 악몽을 먹고, 인간들은 그 악몽을 자신들의 집이라고 불렀다. 그래서 우리는 천생의 적이었다.",
      "speaker_ko": "유메미즈키 미즈키"
     },
     {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그렇더라도 악몽의 고통을 덜어 주는 일은 결코 작은 일이 아니다. 너는 Yumekui-Baku의 유산을 기린다.",
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그렇더라도 악몽의 고통을 덜어 주는 일은 결코 작은 일이 아니다. 그대는 Yumekui-Baku의 유산을 기리고 있다.",
      "en": "Even so, relieving the pain of the nightmares is no small feat. You honor the legacy of the Yumekui-Baku.",
      "speaker": "Ei",
      "source": {
@@ -1439,13 +1119,30 @@
       "version": "5.4",
       "speaker": "Ei"
      },
-     "t": "그렇더라도 악몽의 고통을 덜어 주는 일은 결코 작은 일이 아니다. 너는 바쿠의 유산을 기린다.",
+     "t": "그렇더라도 악몽의 고통을 덜어 주는 일은 결코 작은 일이 아니다. 그대는 바쿠의 유산을 기리고 있다.",
      "speaker_ko": "라이덴 에이(影)"
     },
     {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "그래도 악몽의 고통을 덜어 주는 것은 작은 일이 아니다. 그대는 Yumekui-Baku의 유산을 기리고 있다.",
+     "en": "Even so, relieving the pain of the nightmares is no small feat. You honor the legacy of the Yumekui-Baku.",
+     "speaker": "Ei",
+     "source": {
+      "kind": "quest",
+      "quest": "As Though Beholding Illusions",
+      "quest_ko": "허상처럼",
+      "version": "5.4",
+      "speaker": "Ei"
+     },
+     "t": "그래도 악몽의 고통을 덜어 주는 것은 작은 일이 아니다. 그대는 바쿠의 유산을 기리고 있다.",
+     "speaker_ko": "라이덴 에이(影)"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of the Paimon line.",
      "t_raw": "그래서 yumekui-baku는 좋은 꿈도 먹을 수 있다는 거구나... 그래도 그게 정말 그렇게 대단한 일인가?",
      "en": "So yumekui-baku can eat good dreams too, huh... Still, is that really such a big deal?",
      "speaker": "Paimon",
@@ -1457,6 +1154,23 @@
       "speaker": "Paimon"
      },
      "t": "그래서 yumekui-baku는 좋은 꿈도 먹을 수 있다는 거구나... 그래도 그게 정말 그렇게 대단한 일인가?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of the Paimon line.",
+     "t_raw": "우와, 우리의 나쁜 꿈을 yumekui-baku가 먹어 준다고? 재미있겠는데!",
+     "en": "Ooh, we get to have our bad dreams eaten by a yumekui-baku? That sounds fun!",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Crisis at the Aisa Bathhouse",
+      "quest_ko": "아이사 대중탕의 경영난",
+      "version": "5.4",
+      "speaker": "Paimon"
+     },
+     "t": "우와, 우리의 나쁜 꿈을 yumekui-baku가 먹어 준다고? 재미있겠는데!",
      "speaker_ko": "페이몬"
     }
    ]

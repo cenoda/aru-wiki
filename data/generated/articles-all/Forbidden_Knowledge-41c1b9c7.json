@@ -20,35 +20,42 @@
    "input_chars": 2975,
    "input_cut": false,
    "input_hash": "a18a2a7b93da",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The way that everyone, including me, has forgotten everything about forbidden knowledge may very well be due to her restoration of Irminsul.",
+     "status": "accepted",
+     "note": "The English says the heavens and earth nearly collapsing was the Nibelung surge, which the Heavenly Principles stabilized with the Celestial Nails. Nahida's deletion of Rukkhadevata ended the later Khaenri'ah-era contamination. Sentence 3 wrongly says Nahida's act ended the near-collapse catastrophe.",
+     "quote": "Forbidden knowledge, also referred to as the apocalypse, is a kind of information sourced from the depths of the Abyss that is alien to the world of Teyvat",
      "sentences": [
       {
-       "t_raw": "Forbidden Knowledge는 Teyvat의 세계에 속하지 않는 Abyss 깊은 곳의 정보로, Teyvat의 주민이 이해할 수 없는 일종의 'truth'에 비유된다.",
+       "t_raw": "금단의 지식은 Abyss 깊은 곳에서 유래한, Teyvat의 세계에 낯선 종류의 정보이며, 세계의 주민이 이해할 수 없는 '진실'에 비유된다.",
        "interp": false,
        "dropped": false,
-       "t": "금단의 지식은 티바트의 세계에 속하지 않는 심연 깊은 곳의 정보로, 티바트의 주민이 이해할 수 없는 일종의 'truth'에 비유된다."
+       "t": "금단의 지식은 심연 깊은 곳에서 유래한, 티바트의 세계에 낯선 종류의 정보이며, 세계의 주민이 이해할 수 없는 '진실'에 비유된다."
       },
       {
-       "t_raw": "이 지식은 세계에 끊임없이 거부되며 물건과 생명체 모두에 악영향을 끼친다.",
+       "t_raw": "그 이질성 때문에 세계는 이 지식을 끊임없이 거부하고, 그 영향은 물체와 생명체 모두에 악영향을 남긴다.",
        "interp": false,
        "dropped": false,
-       "t": "이 지식은 세계에 끊임없이 거부되며 물건과 생명체 모두에 악영향을 끼친다."
+       "t": "그 이질성 때문에 세계는 이 지식을 끊임없이 거부하고, 그 영향은 물체와 생명체 모두에 악영향을 남긴다."
       },
       {
-       "t_raw": "Nibelung의 도입과 King Deshret의 추구, Khaenri'ah의 재앙으로 이어진 사례를 보면, Forbidden Knowledge는 세계의 붕괴와 정화, 그리고 기억에서의 삭제를 함께 설명하는 열쇠로 보인다.",
+       "t_raw": "Nibelung의 도입, King Deshret의 추구, Khaenri'ah의 재난은 이 지식이 Heavenly Principles의 질서에 맞서려는 시도와 함께 거대한 재앙으로 돌아온 흐름을 보여 주는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "니벨룽겐의 도입과 적왕의 추구, 켄리아의 재앙으로 이어진 사례를 보면, 금단의 지식은 세계의 붕괴와 정화, 그리고 기억에서의 삭제를 함께 설명하는 열쇠로 보인다."
+       "t": "니벨룽겐의 도입, 적왕의 추구, 켄리아의 재난은 이 지식이 천리의 질서에 맞서려는 시도와 함께 거대한 재앙으로 돌아온 흐름을 보여 주는 셈이다."
+      },
+      {
+       "t_raw": "Khaenri'ah 재앙 때 발생한 마지막 금단의 지식의 유행은 결국 Nahida가 Irminsul에서 Rukkhadevata의 오염된 존재를 지운 뒤 모든 형태의 금단의 지식이 근절되며 끝났다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "켄리아 재앙 때 발생한 마지막 금단의 지식의 유행은 결국 나히다가 세계수에서 룩카데바타의 오염된 존재를 지운 뒤 모든 형태의 금단의 지식이 근절되며 끝났다."
       }
      ],
      "sources": [
@@ -102,13 +109,6 @@
        "section": "Overview",
        "paragraph": "A5",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Where the Boat of Consciousness Lies",
-       "quest_ko": "의식의 배가 당도한 곳",
-       "version": "3.2",
-       "speaker": "Nahida"
       }
      ],
      "heading": null,
@@ -116,21 +116,27 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Forbidden knowledge, also referred to as the apocalypse, is a kind of information sourced from the depths of the Abyss that is alien to the world of Teyvat",
+     "status": "accepted",
+     "note": "All sentences match A1.",
+     "quote": "Because of its extraterrestrial nature, this knowledge is constantly rejected by the world, and has ill effects on objects and living creatures alike.",
      "sentences": [
       {
-       "t_raw": "**Forbidden Knowledge**는 종말이라고도 불리며, Teyvat에 낯선 Abyss 깊은 곳에서 온 정보의 한 종류다.",
+       "t_raw": "**금단의 지식**은 Teyvat에 이질적인, Abyss 깊은 곳에서 비롯한 정보의 한 종류다.",
        "interp": false,
        "dropped": false,
-       "t": "**금단의 지식**은 종말이라고도 불리며, 티바트에 낯선 심연 깊은 곳에서 온 정보의 한 종류다."
+       "t": "**금단의 지식**은 티바트에 이질적인, 심연 깊은 곳에서 비롯한 정보의 한 종류다."
       },
       {
-       "t_raw": "이는 토착 존재들이 이해할 수 없는 'truth'에 비유되고, 세계는 이 외래적 지식을 계속 거부해 물체와 생명체 모두에 나쁜 영향을 미친다.",
+       "t_raw": "Teyvat의 원주민이 이해할 수 없는 '진리'에 비유되며, 그 천외적인 성질 때문에 세계에서 끊임없이 거부된다.",
        "interp": false,
        "dropped": false,
-       "t": "이는 토착 존재들이 이해할 수 없는 'truth'에 비유되고, 세계는 이 외래적 지식을 계속 거부해 물체와 생명체 모두에 나쁜 영향을 미친다."
+       "t": "티바트의 원주민이 이해할 수 없는 '진리'에 비유되며, 그 천외적인 성질 때문에 세계에서 끊임없이 거부된다."
+      },
+      {
+       "t_raw": "이 지식은 물체와 생명체 모두에 해를 끼친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 지식은 물체와 생명체 모두에 해를 끼친다."
       }
      ],
      "sources": [
@@ -153,106 +159,46 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Oozing Filth, present in The Chasm: Underground Mines",
+     "status": "accepted",
+     "note": "Supported by A2 and Q10. The interpretation in sentence 3 follows from them.",
+     "quote": "Forbidden knowledge? Hmm, it seems you know about a concept that even I don't completely understand. Could you tell me what you know?",
      "sentences": [
       {
-       "t_raw": "그 영향으로 The Chasm: Underground Mines의 Oozing Filth, Sumeru의 Dharma Forest의 **The Withering**, Sumeru 시민에게 나타나는 Eleazar가 제시된다.",
+       "t_raw": "Nahida에 따르면 금단의 지식은 Sumeru를 겨냥해 맞춤화된 **Abyss적 오염**의 한 형태다.",
        "interp": false,
        "dropped": false,
-       "t": "그 영향으로 지하 광산의 Oozing Filth, 수메르의 다르마의 숲의 **죽음의 땅**, 수메르 시민에게 나타나는 비늘병이 제시된다."
+       "t": "나히다에 따르면 금단의 지식은 수메르를 겨냥해 맞춤화된 **심연적 오염**의 한 형태다."
       },
       {
-       "t_raw": "이들은 각각 지하 광산, 숲, 사람에게 나타난다.",
+       "t_raw": "Abyss는 공격하는 지역에 가장 위험하게 발현되는 방식으로 동적으로 나타나며, Natlan의 Gosoythoth와 Nod-Krai의 The Wild Hunt가 그 예로 제시된다.",
        "interp": false,
        "dropped": false,
-       "t": "이들은 각각 지하 광산, 숲, 사람에게 나타난다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Effects of Forbidden Knowledge",
-       "paragraph": "A6",
-       "wiki_refs": []
+       "t": "심연은 공격하는 지역에 가장 위험하게 발현되는 방식으로 동적으로 나타나며, 나타의 그소요토스와 노드크라이의 광란의 사냥이 그 예로 제시된다."
       },
       {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Effects of Forbidden Knowledge",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Effects of Forbidden Knowledge",
-       "paragraph": "A8",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "Oozing Filth"
-     ]
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Forbidden knowledge? Hmm, it seems you know about a concept that even I don't completely understand.",
-     "sentences": [
-      {
-       "t_raw": "**Khvarena**는 Abyssal energy와 Forbidden Knowledge를 정화할 수 있고, The Chasm에서는 Lumenstone Adjuvant가 Dark Mud를 없앨 수 있다.",
+       "t_raw": "한편 Nahida는 금단의 지식을 **완전히 이해하지 못한다**고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "**크바레나**는 Abyssal energy와 금단의 지식을 정화할 수 있고, 층암거연에서는 유명석 촉매가 「검은 진흙」을 없앨 수 있다."
+       "t": "한편 나히다는 금단의 지식을 **완전히 이해하지 못한다**고 말한다."
       },
       {
-       "t_raw": "그러나 Nahida는 Forbidden Knowledge를 자신조차 완전히 이해하지 못한다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 나히다는 금단의 지식을 자신조차 완전히 이해하지 못한다고 말한다."
-      },
-      {
-       "t_raw": "정화 수단이 여럿 있어도 그 이해는 불완전한 셈이다.",
+       "t_raw": "Sumeru를 겨냥한 오염이라는 점과 완전히 이해되지 않는다는 점을 함께 놓으면, 금단의 지식은 지역에 맞춰 작동하면서도 정체를 완전히 이해하기 어려운 개념으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "정화 수단이 여럿 있어도 그 이해는 불완전한 셈이다."
+       "t": "수메르를 겨냥한 오염이라는 점과 완전히 이해되지 않는다는 점을 함께 놓으면, 금단의 지식은 지역에 맞춰 작동하면서도 정체를 완전히 이해하기 어려운 개념으로 보인다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Khvarena",
-       "revision": 1708823,
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
        "section": null,
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Abyssal Corruption",
-       "revision": 1690858,
-       "section": "Overview > Purification",
-       "paragraph": "M6",
+       "paragraph": "A2",
        "wiki_refs": [
         {
-         "type": "quest",
-         "name": "Leaves on the Wind"
-        },
-        {
-         "type": "quest",
-         "name": "Let the Wind Lead (Quest)"
-        },
-        {
-         "type": "quest",
-         "name": "Chasm Spelunkers"
+         "type": "vo",
+         "name": "Nahida"
         }
        ]
       },
@@ -265,33 +211,37 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Abyssal"
-     ]
+     "latin_left": []
     },
     {
-     "section": "정체 — Teyvat 바깥의 정보와 거부 반응",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "a kind of information sourced from the depths of the Abyss that is alien to the world of Teyvat",
+     "section": "정체 — Abyss에서 온 거부되는 정보",
+     "status": "accepted",
+     "note": "Supported by A1 and A2. The interpretation is reasonable.",
+     "quote": "Because of its extraterrestrial nature, this knowledge is constantly rejected by the world, and has ill effects on objects and living creatures alike.",
      "sentences": [
       {
-       "t_raw": "금지된 지식은 Abyss 깊은 곳에서 온 **Teyvat 바깥의 정보**로, 주민이 이해할 수 없는 'truth'에 비유된다.",
+       "t_raw": "금단의 지식은 **Abyss에서 온 이질적인 정보**로, Teyvat의 원주민이 이해할 수 없는 일종의 진리에 비유된다.",
        "interp": false,
        "dropped": false,
-       "t": "금지된 지식은 심연 깊은 곳에서 온 **티바트 바깥의 정보**로, 주민이 이해할 수 없는 'truth'에 비유된다."
+       "t": "금단의 지식은 **심연에서 온 이질적인 정보**로, 티바트의 원주민이 이해할 수 없는 일종의 진리에 비유된다."
       },
       {
-       "t_raw": "세계에 이질적이라 끊임없이 **거부**되며, 사물과 생명체 모두에 나쁜 영향을 미친다.",
+       "t_raw": "이 정보는 세계에서 계속 거부되며, 물건과 생명체 모두에 나쁜 영향을 끼친다.",
        "interp": false,
        "dropped": false,
-       "t": "세계에 이질적이라 끊임없이 **거부**되며, 사물과 생명체 모두에 나쁜 영향을 미친다."
+       "t": "이 정보는 세계에서 계속 거부되며, 물건과 생명체 모두에 나쁜 영향을 끼친다."
       },
       {
-       "t_raw": "Nahida에 따르면 이는 Sumeru를 겨냥한 Abyss 부패이고, Abyss는 공격하는 지역에 가장 위험하게 발현되며 Natlan의 Gosoythoth와 Nod-Krai의 The Wild Hunt가 그 예로 언급된다.",
+       "t_raw": "Nahida에 따르면 이는 **Sumeru를 겨냥한 Abyss적 오염**의 한 형태이고, Abyss는 공격하는 지역에 가장 위험한 방식으로 동적으로 현현한다.",
        "interp": false,
        "dropped": false,
-       "t": "나히다에 따르면 이는 수메르를 겨냥한 심연 부패이고, 심연은 공격하는 지역에 가장 위험하게 발현되며 나타의 그소요토스와 노드크라이의 광란의 사냥이 그 예로 언급된다."
+       "t": "나히다에 따르면 이는 **수메르를 겨냥한 심연적 오염**의 한 형태이고, 심연은 공격하는 지역에 가장 위험한 방식으로 동적으로 현현한다."
+      },
+      {
+       "t_raw": "그래서 금단의 지식은 세계가 거부하면서도 오염으로 작동하는 이질적 정보라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 금단의 지식은 세계가 거부하면서도 오염으로 작동하는 이질적 정보라고 볼 수 있다."
       }
      ],
      "sources": [
@@ -322,1032 +272,37 @@
        ]
       }
      ],
-     "heading": "정체 — 티바트 바깥의 정보와 거부 반응",
+     "heading": "정체 — 심연에서 온 거부되는 정보",
      "latin_left": []
     },
     {
-     "section": "정체 — Teyvat 바깥의 정보와 거부 반응",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The forbidden knowledge influenced you ever since you were contaminated, greatly amplifying your hatred and rage.",
-     "sentences": [
-      {
-       "t_raw": "오염된 순간부터 금지된 지식은 **증오와 분노를 크게 증폭**시킨다고 Nahida는 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오염된 순간부터 금지된 지식은 **증오와 분노를 크게 증폭**시킨다고 나히다는 말한다."
-      },
-      {
-       "t_raw": "Alhaitham은 미친 학자와 용병들이 금지된 지식의 부패성에 희생된 것일 수 있다고 본다.",
-       "interp": false,
-       "dropped": false,
-       "t": "알하이탐은 미친 학자와 용병들이 금지된 지식의 부패성에 희생된 것일 수 있다고 본다."
-      },
-      {
-       "t_raw": "이는 오염이 정신의 격정을 증폭시키는 방식으로 나타나는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 오염이 정신의 격정을 증폭시키는 방식으로 나타나는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "What Shape Does the Self Hold",
-       "quest_ko": "내가 무엇인지 잊는다면",
-       "version": "3.6",
-       "speaker": "Nahida"
-      },
-      {
-       "kind": "quest",
-       "quest": "Through the Predawn Night",
-       "quest_ko": "여명 전의 어둠 속을 걷다",
-       "version": "3.2",
-       "speaker": "Alhaitham"
-      }
-     ],
-     "heading": "정체 — 티바트 바깥의 정보와 거부 반응",
-     "latin_left": []
-    },
-    {
-     "section": "정체 — Teyvat 바깥의 정보와 거부 반응",
-     "status": "needs_verify",
-     "note": null,
+     "section": "정체 — Abyss에서 온 거부되는 정보",
+     "status": "accepted",
+     "note": "Supported by M1 and M6. The interpretation is reasonable.",
      "quote": "The power of Celestia and the elements can repel Abyssal corruption.",
      "sentences": [
       {
-       "t_raw": "금지된 지식에 대한 세계의 거부는 Celestia와 원소의 힘이 Abyss 부패를 물리치는 방식으로도 나타나는 것으로 볼 수 있다.",
+       "t_raw": "Khvarena는 Nabu Malikata가 Cataclysm에 맞서기 위해 만든 에너지로, 신성한 본성 덕분에 Abyss적 에너지와 금단의 지식을 **정화**할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "크바레나는 나부·말리카타가 대재앙에 맞서기 위해 만든 에너지로, 신성한 본성 덕분에 심연적 에너지와 금단의 지식을 **정화**할 수 있다."
+      },
+      {
+       "t_raw": "Celestia와 원소의 힘은 Abyss적 오염을 밀어낼 수 있고, 원소와 연결된 Vision-holder는 금단의 지식을 포함한 Abyss적 에너지에 더 큰 저항력을 지닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "셀레스티아와 원소의 힘은 심연적 오염을 밀어낼 수 있고, 원소와 연결된 신의 눈 소지자는 금단의 지식을 포함한 심연적 에너지에 더 큰 저항력을 지닌다.",
+       "polish": {
+        "from": "셀레스티아와 원소의 힘은 심연적 오염을 밀어낼 수 있고, 원소와 연결된 Vision-holder는 금단의 지식을 포함한 심연적 에너지에 더 큰 저항력을 지닌다.",
+        "text": "셀레스티아와 원소의 힘은 심연적 오염을 밀어낼 수 있고, 원소와 연결된 신의 눈 소지자는 금단의 지식을 포함한 심연적 에너지에 더 큰 저항력을 지닌다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이 둘을 함께 보면 금단의 지식에 맞서는 수단이 Khvarena 같은 신성한 에너지와 Celestia·원소의 힘 양쪽에 있다는 점이 드러난다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "금지된 지식에 대한 세계의 거부는 셀레스티아와 원소의 힘이 심연 부패를 물리치는 방식으로도 나타나는 것으로 볼 수 있다."
-      },
-      {
-       "t_raw": "Vision-holders는 Abyss 에너지와 금지된 지식에 더 큰 저항력을 지닌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Vision-holders는 심연 에너지와 금지된 지식에 더 큰 저항력을 지닌다."
-      },
-      {
-       "t_raw": "Venti는 Abyssal corruption에 중독되었을 때 Anemo의 힘을 지닌 Symbol of Mondstadt's Hero를 찾아 회복한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "벤티는 Abyssal corruption에 중독되었을 때 바람의 힘을 지닌 몬드 영웅의 상징을 찾아 회복한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Where the Boat of Consciousness Lies"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Abyssal Corruption",
-       "revision": 1690858,
-       "section": "Overview > Purification",
-       "paragraph": "M6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Leaves on the Wind"
-        },
-        {
-         "type": "quest",
-         "name": "Let the Wind Lead (Quest)"
-        },
-        {
-         "type": "quest",
-         "name": "Chasm Spelunkers"
-        }
-       ]
-      }
-     ],
-     "heading": "정체 — 티바트 바깥의 정보와 거부 반응",
-     "latin_left": [
-      "Vision-holders",
-      "Abyssal"
-     ]
-    },
-    {
-     "section": "드러난 역사 — Nibelung와 War of Funerary Flame",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "starting the War of Funerary Flame that brought the world to the brink of collapse.",
-     "sentences": [
-      {
-       "t_raw": "Teyvat에 **금단의 지식**이 들어온 첫 사례는 Nibelung으로 거슬러 올라간다.",
-       "interp": false,
-       "dropped": false,
-       "t": "티바트에 **금단의 지식**이 들어온 첫 사례는 니벨룽겐으로 거슬러 올라간다."
-      },
-      {
-       "t_raw": "그는 Abyss에서 금단의 지식을 발견한 뒤 Teyvat로 돌아와 용족을 규합해 Heavenly Principles에 맞섰고, **War of Funerary Flame**을 시작했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 심연에서 금단의 지식을 발견한 뒤 티바트로 돌아와 용족을 규합해 천리에 맞섰고, **불바다 전쟁**을 시작했다."
-      },
-      {
-       "t_raw": "이 전쟁은 세계를 붕괴 직전까지 몰아갔고, 전세를 뒤집고자 했던 Nibelung이 들여온 지식은 세계와 거주민에게 막대한 파괴를 일으켰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 전쟁은 세계를 붕괴 직전까지 몰아갔고, 전세를 뒤집고자 했던 니벨룽겐이 들여온 지식은 세계와 거주민에게 막대한 파괴를 일으켰다."
-      },
-      {
-       "t_raw": "Heavenly Principles는 세계를 안정시키기 위해 **Celestial Nails**를 내렸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "천리는 세계를 안정시키기 위해 **하늘의 못**을 내렸다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "What Shape Does the Self Hold"
-        },
-        {
-         "type": "arti",
-         "name": "Amethyst Crown"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Descender",
-       "revision": 1967456,
-       "section": "Known Descenders > Nibelung",
-       "paragraph": "M5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사 — 니벨룽겐과 불바다 전쟁",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Nibelung와 War of Funerary Flame",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "causing the heavens and earth to nearly collapse before the Heavenly Principles cast down the Celestial Nails to stabilize the world.",
-     "sentences": [
-      {
-       "t_raw": "Nibelung은 끝내 Heavenly Principles에게 죽임을 당했으나, 그들을 치명적으로 다치게 해 세계의 원래 질서를 억누르는 그들의 권위를 흔들었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "니벨룽겐은 끝내 천리에게 죽임을 당했으나, 그들을 치명적으로 다치게 해 세계의 원래 질서를 억누르는 그들의 권위를 흔들었다."
-      },
-      {
-       "t_raw": "전세를 뒤집으려 한 시도가 세계 안정을 위한 Celestial Nails 투하로 이어진 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "전세를 뒤집으려 한 시도가 세계 안정을 위한 하늘의 못 투하로 이어진 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "What Shape Does the Self Hold"
-        },
-        {
-         "type": "arti",
-         "name": "Amethyst Crown"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Descender",
-       "revision": 1967456,
-       "section": "Known Descenders > Nibelung",
-       "paragraph": "M5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사 — 니벨룽겐과 불바다 전쟁",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Great Red Sand와 King Deshret",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "A second surge happened in the Great Red Sand several thousand years ago",
-     "sentences": [
-      {
-       "t_raw": "Great Red Sand에서 몇 천 년 전, King Deshret는 Heavenly Principles에 반항하려 **금단의 지식**을 좇았고, 그 지식은 사막 민족을 광기에 몰아넣고 Eleazar 유행을 일으켰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "적색 모래바다에서 몇 천 년 전, 적왕은 천리에 반항하려 **금단의 지식**을 좇았고, 그 지식은 사막 민족을 광기에 몰아넣고 비늘병 유행을 일으켰다."
-      },
-      {
-       "t_raw": "사막 문명은 거의 파괴되었고 마지막 불씨는 **Aaru Village**에 남았으며, Eleazar는 Sumeru 시민에게 고유했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "사막 문명은 거의 파괴되었고 마지막 불씨는 **아루 마을**에 남았으며, 비늘병은 수메르 시민에게 고유했다."
-      },
-      {
-       "t_raw": "Kasala는 King Deshret가 이 금단의 지식을 세계로 들여왔다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카살레는 적왕이 이 금단의 지식을 세계로 들여왔다고 말한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Staff of the Scarlet Sands"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Effects of Forbidden Knowledge",
-       "paragraph": "A8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Kasala"
-      }
-     ],
-     "heading": "드러난 역사 — 적색 모래바다와 적왕",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Great Red Sand와 King Deshret",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This apparently spelled the end of the disaster, but actually transferred the brunt of the consequences upon Apep",
-     "sentences": [
-      {
-       "t_raw": "Greater Lord Rukkhadevata는 힘의 상당 부분을 써서 사막 신전에 생명의 신성한 힘을 불어넣고 재앙을 봉쇄했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "위대한 룩카데바타는 힘의 상당 부분을 써서 사막 신전에 생명의 신성한 힘을 불어넣고 재앙을 봉쇄했다."
-      },
-      {
-       "t_raw": "King Deshret는 과거의 거래에 따라 **Apep**이 자신을 삼키게 했고, 그 선택은 재앙을 끝낸 듯 보였지만 실제로는 결과의 무게를 Apep에게 옮겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "적왕은 과거의 거래에 따라 **아펩**이 자신을 삼키게 했고, 그 선택은 재앙을 끝낸 듯 보였지만 실제로는 결과의 무게를 아펩에게 옮겼다."
-      },
-      {
-       "t_raw": "Apep은 King Deshret의 몸을 삼켜 오염되었고, 금단의 지식이 곪아 통증과 세계에 대한 혐오가 커진 채 지식을 분석하지 못하고 모든 힘으로 버텨야 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아펩은 적왕의 몸을 삼켜 오염되었고, 금단의 지식이 곪아 통증과 세계에 대한 혐오가 커진 채 지식을 분석하지 못하고 모든 힘으로 버텨야 했다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Staff of the Scarlet Sands"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Dragon",
-       "revision": 1960633,
-       "section": "History > The Archon War",
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "What Shape Does the Self Hold"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사 — 적색 모래바다와 적왕",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Great Red Sand와 King Deshret",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "At some point, King Deshret banished Heryshaf, Sobek, and Thoth to Aaru, where they remain imprisoned to the present day.",
-     "sentences": [
-      {
-       "t_raw": "King Deshret는 Heryshaf, Sobek, Thoth를 Aaru로 추방했고, 그들은 현재까지 그곳에 갇혀 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "적왕은 헤리샤프, 소베크, 토트를 아루로 추방했고, 그들은 현재까지 그곳에 갇혀 있다."
-      },
-      {
-       "t_raw": "Bamoun은 King Deshret가 들여온 금단의 지식을 계속 막아내는 일을 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바문은 적왕이 들여온 금단의 지식을 계속 막아내는 일을 말한다."
-      },
-      {
-       "t_raw": "봉쇄와 Aaru Village의 잔존이 함께 이어지는 것은 이 재앙의 후과가 사막에 오래 남은 부담으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "봉쇄와 아루 마을의 잔존이 함께 이어지는 것은 이 재앙의 후과가 사막에 오래 남은 부담으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Staff of the Scarlet Sands"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Seven Pillars",
-       "revision": 1918481,
-       "section": "History",
-       "paragraph": "M4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Echoes of Fate"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage of Sages",
-       "quest_ko": "현자들의 현자",
-       "version": "4.6",
-       "speaker": "Bamoun"
-      }
-     ],
-     "heading": "드러난 역사 — 적색 모래바다와 적왕",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Khaenri'ah와 Cataclysm",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "forbidden knowledge managed to contaminate the consciousness of Greater Lord Rukkhadevata herself",
-     "sentences": [
-      {
-       "t_raw": "**세 번째이자 마지막으로 알려진 금단의 지식의 파동**은 500년 전 Khaenri'ah의 재앙 때 일어났다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**세 번째이자 마지막으로 알려진 금단의 지식의 파동**은 500년 전 켄리아의 재앙 때 일어났다."
-      },
-      {
-       "t_raw": "정확한 경위는 불명확하지만, Khaenri'ahns가 Heavenly Principles 아래 세계의 규칙에 맞서기 위해 금단의 지식을 구했고, 그 결과 Cataclysm을 초래한 것으로 암시된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "정확한 경위는 불명확하지만, 켄리아인이 천리 아래 세계의 규칙에 맞서기 위해 금단의 지식을 구했고, 그 결과 대재앙을 초래한 것으로 암시된다."
-      },
-      {
-       "t_raw": "금단의 지식은 Rukkhadevata 자신의 의식까지 오염시켜 Irminsul 전역에 Abyss의 오염을 퍼뜨릴 위협이 되었고, 그녀는 500년 동안 그 상태로 버텼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "금단의 지식은 룩카데바타 자신의 의식까지 오염시켜 세계수 전역에 심연의 오염을 퍼뜨릴 위협이 되었고, 그녀는 500년 동안 그 상태로 버텼다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사 — 켄리아와 대재앙",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Khaenri'ah와 Cataclysm",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The way that everyone, including me, has forgotten everything about forbidden knowledge may very well be due to her restoration of Irminsul.",
-     "sentences": [
-      {
-       "t_raw": "후계자 Nahida의 **Irminsul 개입**으로 Rukkhadevata의 오염된 존재가 세계에서 삭제되자, 모든 형태의 금단의 지식이 완전히 사라졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "후계자 나히다의 **세계수 개입**으로 룩카데바타의 오염된 존재가 세계에서 삭제되자, 모든 형태의 금단의 지식이 완전히 사라졌다."
-      },
-      {
-       "t_raw": "Nahida는 자신을 포함한 모두가 금단의 지식에 관한 모든 것을 잊은 것이 Irminsul 복원 때문일 수 있다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나히다는 자신을 포함한 모두가 금단의 지식에 관한 모든 것을 잊은 것이 세계수 복원 때문일 수 있다고 말한다."
-      },
-      {
-       "t_raw": "세상에 남은 금단의 지식을 이미 없앴느냐는 물음도 나온다.",
-       "interp": false,
-       "dropped": false,
-       "t": "세상에 남은 금단의 지식을 이미 없앴느냐는 물음도 나온다."
-      },
-      {
-       "t_raw": "Nahida는 금단의 지식과 싸우며 모든 종이 큰 대가를 치렀고, 그 책임을 혼자 짊어질 필요는 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나히다는 금단의 지식과 싸우며 모든 종이 큰 대가를 치렀고, 그 책임을 혼자 짊어질 필요는 없다고 말한다."
-      },
-      {
-       "t_raw": "금단의 지식의 소거는 Rukkhadevata의 오염된 존재 삭제와 Irminsul 복원, 여러 종의 대가가 겹친 사건으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "금단의 지식의 소거는 룩카데바타의 오염된 존재 삭제와 세계수 복원, 여러 종의 대가가 겹친 사건으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Where the Boat of Consciousness Lies",
-       "quest_ko": "의식의 배가 당도한 곳",
-       "version": "3.2",
-       "speaker": "Nahida"
-      },
-      {
-       "kind": "quest",
-       "quest": "Where Lies the Path Home",
-       "quest_ko": "고향이 어디인지 잊는다면",
-       "version": "3.6",
-       "speaker": "Elemental Being"
-      },
-      {
-       "kind": "quest",
-       "quest": "Where Lies the Path Home",
-       "quest_ko": "고향이 어디인지 잊는다면",
-       "version": "3.6",
-       "speaker": "Nahida"
-      }
-     ],
-     "heading": "드러난 역사 — 켄리아와 대재앙",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Upon returning to Teyvat, Nibelung rallied his dragon kin to fight against the Heavenly Principles, starting the War of Funerary Flame that brought the world to the brink of collapse.",
-     "sentences": [
-      {
-       "t_raw": "Nibelung은 Teyvat를 다스리던 용왕으로, Abyss에서 금단의 지식을 발견한 뒤 Teyvat로 돌아와 용의 무리를 규합해 Heavenly Principles에 맞섰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "니벨룽겐은 티바트를 다스리던 용왕으로, 심연에서 금단의 지식을 발견한 뒤 티바트로 돌아와 용의 무리를 규합해 천리에 맞섰다."
-      },
-      {
-       "t_raw": "그가 시작한 War of Funerary Flame은 세계를 붕괴 직전까지 몰았고, 금단의 지식은 세계와 주민에게 파괴적이어서 하늘과 땅이 거의 무너졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그가 시작한 불바다 전쟁은 세계를 붕괴 직전까지 몰았고, 금단의 지식은 세계와 주민에게 파괴적이어서 하늘과 땅이 거의 무너졌다."
-      },
-      {
-       "t_raw": "Heavenly Principles는 Celestial Nails를 내려 세계를 안정시켰고, Nibelung은 끝내 살해되었지만 Heavenly Principles에게 중상을 입혀 세계의 원래 질서를 억제하던 권위에 균열을 냈다.",
-       "interp": false,
-       "dropped": false,
-       "t": "천리는 하늘의 못을 내려 세계를 안정시켰고, 니벨룽겐은 끝내 살해되었지만 천리에게 중상을 입혀 세계의 원래 질서를 억제하던 권위에 균열을 냈다."
-      },
-      {
-       "t_raw": "그가 전쟁의 전세를 뒤집으려 들여온 지식은 **세계를 붕괴 직전까지 몰아간 지식**이 된 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그가 전쟁의 전세를 뒤집으려 들여온 지식은 **세계를 붕괴 직전까지 몰아간 지식**이 된 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "What Shape Does the Self Hold"
-        },
-        {
-         "type": "arti",
-         "name": "Amethyst Crown"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Descender",
-       "revision": 1967456,
-       "section": "Known Descenders > Nibelung",
-       "paragraph": "M5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "King Deshret's dabbling in forbidden knowledge brought disaster upon the desert people, driving them insane and causing an Eleazar epidemic.",
-     "sentences": [
-      {
-       "t_raw": "King Deshret은 Heavenly Principles에 반항하려 금단의 지식을 추구했고, Kasala는 그가 이 지식을 우리 세계에 들여왔다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "적왕은 천리에 반항하려 금단의 지식을 추구했고, 카살레는 그가 이 지식을 우리 세계에 들여왔다고 말한다."
-      },
-      {
-       "t_raw": "그 결과 사막 민족은 광기에 빠지고 Eleazar 유행을 겪었으며, 문명은 거의 파괴되어 마지막 불씨만 Aaru Village에 남았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 결과 사막 민족은 광기에 빠지고 비늘병 유행을 겪었으며, 문명은 거의 파괴되어 마지막 불씨만 아루 마을에 남았다."
-      },
-      {
-       "t_raw": "Rukkhadevata는 생명의 신성한 힘을 사막 신전에 불어넣어 재앙을 봉쇄했고, Bamoun은 King Deshret이 들여온 금단의 지식을 막아내는 일을 언급한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "룩카데바타는 생명의 신성한 힘을 사막 신전에 불어넣어 재앙을 봉쇄했고, 바문은 적왕이 들여온 금단의 지식을 막아내는 일을 언급한다."
-      },
-      {
-       "t_raw": "**사막의 추구와 봉쇄**가 맞물린 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "**사막의 추구와 봉쇄**가 맞물린 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Staff of the Scarlet Sands"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Sage of Sages",
-       "quest_ko": "현자들의 현자",
-       "version": "4.6",
-       "speaker": "Bamoun"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Kasala"
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After Deshret's own death, Apep acted on their prior agreement and consumed his physical body, but became contaminated by Forbidden Knowledge.",
-     "sentences": [
-      {
-       "t_raw": "Apep은 King Deshret에게 자신의 땅에 왕국을 세우도록 허락하는 대가로 그가 죽으면 그의 지식을 위해 육체를 먹기로 했고, Deshret 사후 그 약속을 실행해 그의 육체를 먹었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아펩은 적왕에게 자신의 땅에 왕국을 세우도록 허락하는 대가로 그가 죽으면 그의 지식을 위해 육체를 먹기로 했고, 적왕 사후 그 약속을 실행해 그의 육체를 먹었다."
-      },
-      {
-       "t_raw": "그러나 Deshret은 금단의 지식을 지닌 채 죽었고, Apep은 그 지식을 분석하지 못한 채 살아남기 위해 모든 힘을 짜내야 할 만큼 고통받았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 적왕은 금단의 지식을 지닌 채 죽었고, 아펩은 그 지식을 분석하지 못한 채 살아남기 위해 모든 힘을 짜내야 할 만큼 고통받았다."
-      },
-      {
-       "t_raw": "금단의 지식은 Apep 안에서 계속 곪아 그녀의 고통과 세계에 대한 혐오를 크게 증폭시켰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "금단의 지식은 아펩 안에서 계속 곪아 그녀의 고통과 세계에 대한 혐오를 크게 증폭시켰다."
-      },
-      {
-       "t_raw": "Deshret의 희생은 재앙의 끝처럼 보였지만, 그 무게는 **Apep에게 옮겨간 재앙의 무게**인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "적왕의 희생은 재앙의 끝처럼 보였지만, 그 무게는 **아펩에게 옮겨간 재앙의 무게**인 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "weapon",
-         "name": "Staff of the Scarlet Sands"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Dragon",
-       "revision": 1960633,
-       "section": "History > The Archon War",
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "What Shape Does the Self Hold"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Seven Pillars",
-       "revision": 1918481,
-       "section": "History",
-       "paragraph": "M4",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Echoes of Fate"
-        }
-       ]
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nahida entered Irminsul and deleted Rukkhadevata's tainted existence from the world",
-     "sentences": [
-      {
-       "t_raw": "세 번째 금단의 지식 유입은 Khaenri'ah의 재앙 때 일어났고, 이때 Rukkhadevata는 직접 오염된 채 500년을 견뎠다.",
-       "interp": false,
-       "dropped": false,
-       "t": "세 번째 금단의 지식 유입은 켄리아의 재앙 때 일어났고, 이때 룩카데바타는 직접 오염된 채 500년을 견뎠다."
-      },
-      {
-       "t_raw": "후계자인 Nahida가 Irminsul에 들어가 오염된 Rukkhadevata의 존재를 세계에서 삭제하자 모든 형태의 금단의 지식이 완전히 사라졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "후계자인 나히다가 세계수에 들어가 오염된 룩카데바타의 존재를 세계에서 삭제하자 모든 형태의 금단의 지식이 완전히 사라졌다."
-      },
-      {
-       "t_raw": "Nahida는 모든 종이 금단의 지식과의 싸움에서 큰 대가를 치렀으며 이것은 한 사람이 짊어질 책임이 아니라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나히다는 모든 종이 금단의 지식과의 싸움에서 큰 대가를 치렀으며 이것은 한 사람이 짊어질 책임이 아니라고 말한다."
-      },
-      {
-       "t_raw": "전임자의 오염을 후계가 Irminsul 개입으로 끊어낸 구도인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "전임자의 오염을 후계가 세계수 개입으로 끊어낸 구도인 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Where Lies the Path Home",
-       "quest_ko": "고향이 어디인지 잊는다면",
-       "version": "3.6",
-       "speaker": "Nahida"
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Akademiya is going out of their way to look for forbidden knowledge, but what is their ultimate goal?",
-     "sentences": [
-      {
-       "t_raw": "Akademiya는 금단의 지식을 찾기 위해 애쓰고 있었고, Alhaitham은 그 궁극적 목표가 무엇인지 의문을 제기한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아카데미아는 금단의 지식을 찾기 위해 애쓰고 있었고, 알하이탐은 그 궁극적 목표가 무엇인지 의문을 제기한다."
-      },
-      {
-       "t_raw": "그는 만난 미친 학자와 용병들이 금단의 지식의 부패한 성질에 희생되었을 수 있다고 본다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 만난 미친 학자와 용병들이 금단의 지식의 부패한 성질에 희생되었을 수 있다고 본다."
-      },
-      {
-       "t_raw": "지식을 추구하는 기관과 그 추구에 휩쓸린 개인들이 같은 장면에 놓인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "지식을 추구하는 기관과 그 추구에 휩쓸린 개인들이 같은 장면에 놓인 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Through the Predawn Night",
-       "quest_ko": "여명 전의 어둠 속을 걷다",
-       "version": "3.2",
-       "speaker": "Alhaitham"
-      },
-      {
-       "kind": "quest",
-       "quest": "Cry From the Eleazar Hospital",
-       "quest_ko": "비늘병 병원의 울음소리",
-       "version": "3.1",
-       "speaker": "Alhaitham"
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "While the exact details are unclear",
-     "sentences": [
-      {
-       "t_raw": "Khaenri'ah 사례의 **정확한 세부는 불명확하다**.",
-       "interp": false,
-       "dropped": false,
-       "t": "켄리아 사례의 **정확한 세부는 불명확하다**."
-      },
-      {
-       "t_raw": "Khaenri'ahns가 Heavenly Principles 아래의 규칙에 저항하려 금단의 지식을 추구했고, 그 결과 Cataclysm을 초래한 것으로 암시된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "켄리아인이 천리 아래의 규칙에 저항하려 금단의 지식을 추구했고, 그 결과 대재앙을 초래한 것으로 암시된다."
-      },
-      {
-       "t_raw": "그 동기와 전모는 암시에 머문 사례로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그 동기와 전모는 암시에 머문 사례로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Overview",
-       "paragraph": "A5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "it seems you know about a concept that even I don't completely understand",
-     "sentences": [
-      {
-       "t_raw": "Nahida는 금단의 지식이 자신조차 **완전히 이해하지 못하는 개념**이라고 말하며, 상대가 무엇을 아는지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나히다는 금단의 지식이 자신조차 **완전히 이해하지 못하는 개념**이라고 말하며, 상대가 무엇을 아는지 묻는다."
-      },
-      {
-       "t_raw": "이는 금단의 지식에 대한 이해가 아직 닫히지 않았음을 보여 준다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 금단의 지식에 대한 이해가 아직 닫히지 않았음을 보여 준다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Where the Boat of Consciousness Lies",
-       "quest_ko": "의식의 배가 당도한 곳",
-       "version": "3.2",
-       "speaker": "Nahida"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "it is possible that Ixlel was investigating the Abyss or Forbidden Knowledge in this location",
-     "sentences": [
-      {
-       "t_raw": "Ixlel은 Chichen Uctokah의 통치자로, 다른 용들이 두려워한 우물에 관심을 두었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이렐은 치첸우토카의 통치자로, 다른 용들이 두려워한 우물에 관심을 두었다."
-      },
-      {
-       "t_raw": "그곳은 Abyss 활동의 온상이며, Ixlel이 Abyss나 금단의 지식을 조사했을 가능성이 제기된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그곳은 심연 활동의 온상이며, 이렐이 심연이나 금단의 지식을 조사했을 가능성이 제기된다."
-      },
-      {
-       "t_raw": "이 조사 가능성은 확정된 사건이 아니라, Abyss 활동의 온상이라는 장소와 함께 제시된 가설로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 조사 가능성은 확정된 사건이 아니라, 심연 활동의 온상이라는 장소와 함께 제시된 가설로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ix Uxul Tz'ib Bolon",
-       "revision": 1863398,
-       "section": "Story",
-       "paragraph": "M3",
-       "wiki_refs": [
-        {
-         "type": "item",
-         "name": "Perfect Heart of the Sacred Dragon"
-        }
-       ]
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Would our world become the same if the forbidden knowledge was allowed to rampage across Teyvat...?",
-     "sentences": [
-      {
-       "t_raw": "Nahida는 금단의 지식이 Teyvat 전역에서 날뛰면 우리 세계도 같은 꼴이 될지를 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나히다는 금단의 지식이 티바트 전역에서 날뛰면 우리 세계도 같은 꼴이 될지를 묻는다."
-      },
-      {
-       "t_raw": "이는 **세계 규모의 폭주**를 가정한 물음으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 **세계 규모의 폭주**를 가정한 물음으로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "What Shape Does the Self Hold",
-       "quest_ko": "내가 무엇인지 잊는다면",
-       "version": "3.6",
-       "speaker": "Nahida"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Oozing Filth, present in The Chasm: Underground Mines",
-     "sentences": [
-      {
-       "t_raw": "Oozing Filth는 The Chasm: Underground Mines에, The Withering은 Sumeru's Dharma Forest에, Eleazar는 Sumeru 시민에게 고유하게 나타난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Oozing Filth는 지하 광산에, 죽음의 땅은 수메르의 다르마의 숲에, 비늘병은 수메르 시민에게 고유하게 나타난다."
-      },
-      {
-       "t_raw": "세 현상의 무대와 대상이 서로 달라, Forbidden Knowledge의 영향이 하나의 이름으로 묶이지 않는다는 점이 드러난다.",
-       "interp": true,
-       "dropped": false,
-       "t": "세 현상의 무대와 대상이 서로 달라, 금단의 지식의 영향이 하나의 이름으로 묶이지 않는다는 점이 드러난다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Effects of Forbidden Knowledge",
-       "paragraph": "A6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Effects of Forbidden Knowledge",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Forbidden Knowledge",
-       "revision": 2052034,
-       "section": "Effects of Forbidden Knowledge",
-       "paragraph": "A8",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Oozing Filth"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Due to its divine nature, it has the ability to purify Abyssal energy and Forbidden Knowledge.",
-     "sentences": [
-      {
-       "t_raw": "Khvarena는 Nabu Malikata가 Cataclysm에 맞서려 만든 에너지로, 신성한 성질 덕에 Abyssal energy와 Forbidden Knowledge를 정화한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "크바레나는 나부·말리카타가 대재앙에 맞서려 만든 에너지로, 신성한 성질 덕에 Abyssal energy와 금단의 지식을 정화한다."
-      },
-      {
-       "t_raw": "Celestia와 원소의 힘도 Abyssal corruption을 밀어내며, Vision-holders는 Forbidden Knowledge를 포함한 Abyssal energy에 더 강한 저항을 지닌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "셀레스티아와 원소의 힘도 Abyssal corruption을 밀어내며, Vision-holders는 금단의 지식을 포함한 Abyssal energy에 더 강한 저항을 지닌다."
-      },
-      {
-       "t_raw": "The Chasm에서는 Lumenstone Adjuvant가 Lumenstone Ore와 Lumenspar로 강화되어 Dark Mud를 제거할 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "층암거연에서는 유명석 촉매가 유명석 원석과 유명 수정석으로 강화되어 「검은 진흙」을 제거할 수 있다."
-      },
-      {
-       "t_raw": "이처럼 정화의 매개가 신성한 에너지, Celestia·원소, Lumenstone 계열로 갈린다는 점은 대응 방식이 하나로 정리되지 않음을 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이처럼 정화의 매개가 신성한 에너지, 셀레스티아·원소, 유명석(流明石) 계열로 갈린다는 점은 대응 방식이 하나로 정리되지 않음을 보여 준다."
+       "t": "이 둘을 함께 보면 금단의 지식에 맞서는 수단이 크바레나 같은 신성한 에너지와 셀레스티아·원소의 힘 양쪽에 있다는 점이 드러난다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -1381,21 +336,970 @@
        ]
       }
      ],
-     "heading": "여담",
+     "heading": "정체 — 심연에서 온 거부되는 정보",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Nibelung과 War of Funerary Flame",
+     "status": "accepted",
+     "note": "Supported by M5.",
+     "quote": "At some point during his journey, Nibelung encountered the Abyss and discovered Forbidden Knowledge.",
+     "sentences": [
+      {
+       "t_raw": "Nibelung은 Heavenly Principles가 오기 전 Teyvat을 다스리던 Dragon King으로, 여행 중 Abyss에서 **금단의 지식**을 발견했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니벨룽겐은 천리가 오기 전 티바트를 다스리던 용왕으로, 여행 중 심연에서 **금단의 지식**을 발견했다."
+      },
+      {
+       "t_raw": "Teyvat으로 돌아온 그는 dragon kin을 규합해 Heavenly Principles에 맞서 **War of Funerary Flame**을 시작했고, 이 전쟁은 세계를 붕괴 직전까지 몰아넣었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "티바트로 돌아온 그는 용족을 규합해 천리에 맞서 **불바다 전쟁**을 시작했고, 이 전쟁은 세계를 붕괴 직전까지 몰아넣었다.",
+       "polish": {
+        "from": "티바트로 돌아온 그는 dragon kin을 규합해 천리에 맞서 **불바다 전쟁**을 시작했고, 이 전쟁은 세계를 붕괴 직전까지 몰아넣었다.",
+        "text": "티바트로 돌아온 그는 용족을 규합해 천리에 맞서 **불바다 전쟁**을 시작했고, 이 전쟁은 세계를 붕괴 직전까지 몰아넣었다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Descender",
+       "revision": 1967456,
+       "section": "Known Descenders > Nibelung",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 니벨룽겐과 불바다 전쟁",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Nibelung과 War of Funerary Flame",
+     "status": "accepted",
+     "note": "All sentences follow the English; the interpretation is reasonable.",
+     "quote": "Forbidden knowledge was first introduced to Teyvat by the Dragon King Nibelung",
+     "sentences": [
+      {
+       "t_raw": "금단의 지식은 Nibelung이 Heavenly Principles에 맞서 전쟁의 판도를 뒤집으려 Teyvat에 처음 들여온 것이었으나, 세계와 거주민에게 크게 파괴적이어서 천지가 거의 붕괴했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "금단의 지식은 니벨룽겐이 천리에 맞서 전쟁의 판도를 뒤집으려 티바트에 처음 들여온 것이었으나, 세계와 거주민에게 크게 파괴적이어서 천지가 거의 붕괴했다."
+      },
+      {
+       "t_raw": "Heavenly Principles는 **Celestial Nails**를 내려 세계를 안정화했고, Nibelung은 끝내 살해되면서도 그들에게 치명상을 입혀 세계의 원래 질서를 억누르던 권위를 흔들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천리는 **하늘의 못**을 내려 세계를 안정화했고, 니벨룽겐은 끝내 살해되면서도 그들에게 치명상을 입혀 세계의 원래 질서를 억누르던 권위를 흔들었다."
+      },
+      {
+       "t_raw": "그가 대항의 수단으로 들여온 지식이 세계를 거의 붕괴시킨 뒤 Heavenly Principles의 Celestial Nails가 세계를 안정화했다는 점에서, 이는 대항의 수단이 대항 대상의 개입을 부른 셈으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 대항의 수단으로 들여온 지식이 세계를 거의 붕괴시킨 뒤 천리의 하늘의 못이 세계를 안정화했다는 점에서, 이는 대항의 수단이 대항 대상의 개입을 부른 셈으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "What Shape Does the Self Hold"
+        },
+        {
+         "type": "arti",
+         "name": "Amethyst Crown"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Descender",
+       "revision": 1967456,
+       "section": "Known Descenders > Nibelung",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 니벨룽겐과 불바다 전쟁",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Great Red Sand와 King Deshret",
+     "status": "accepted",
+     "note": "All supported by A4 and Q7.",
+     "quote": "King Deshret pursued forbidden knowledge in an attempt to rebel against the Heavenly Principles.",
+     "sentences": [
+      {
+       "t_raw": "Great Red Sand에서는 수천 년 전 **두 번째 금단의 지식 유입**이 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적색 모래바다에서는 수천 년 전 **두 번째 금단의 지식 유입**이 있었다."
+      },
+      {
+       "t_raw": "King Deshret는 Heavenly Principles에 반항하려 금단의 지식을 좇았고, The Scarlet King (King Deshret)가 이 지식을 세계로 가져와 사막 사람들을 미치게 하고 Eleazar 역병을 일으켰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적왕은 천리에 반항하려 금단의 지식을 좇았고, 적왕 (적왕)가 이 지식을 세계로 가져와 사막 사람들을 미치게 하고 비늘병 역병을 일으켰다."
+      },
+      {
+       "t_raw": "Greater Lord Rukkhadevata는 많은 힘을 써 사막 신전에 생명의 신성한 힘을 주입해 재앙을 억제했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "위대한 룩카데바타는 많은 힘을 써 사막 신전에 생명의 신성한 힘을 주입해 재앙을 억제했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Staff of the Scarlet Sands"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Kasala"
+      }
+     ],
+     "heading": "드러난 역사 — 적색 모래바다와 적왕",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Great Red Sand와 King Deshret",
+     "status": "accepted",
+     "note": "In Q1, Bamoun is the speaker of the line, not a term for the act of keeping forbidden knowledge at bay. Sentence 3 treats Bamoun as a concept, which the English does not support.",
+     "quote": "After Deshret's own death, Apep acted on their prior agreement and consumed his physical body, but became contaminated by Forbidden Knowledge.",
+     "sentences": [
+      {
+       "t_raw": "King Deshret가 Forbidden Knowledge를 지닌 채 죽자, Apep은 과거의 약속대로 그의 육체를 먹었지만 오염됐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적왕이 금단의 지식을 지닌 채 죽자, 아펩은 과거의 약속대로 그의 육체를 먹었지만 오염됐다."
+      },
+      {
+       "t_raw": "Apep은 그 지식을 분석하지 못한 채 살아남기 위해 모든 힘을 써야 했고, Forbidden Knowledge가 계속 곪아 Apep의 세계에 대한 고통과 혐오는 크게 증폭됐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아펩은 그 지식을 분석하지 못한 채 살아남기 위해 모든 힘을 써야 했고, 금단의 지식이 계속 곪아 아펩의 세계에 대한 고통과 혐오는 크게 증폭됐다."
+      },
+      {
+       "t_raw": "King Deshret의 희생은 재앙을 끝낸 듯 보였으나 실제로는 **Apep이 오염을 떠안은 셈**이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "적왕의 희생은 재앙을 끝낸 듯 보였으나 실제로는 **아펩이 오염을 떠안은 셈**이다."
+      },
+      {
+       "t_raw": "Bamoun은 King Deshret가 들여온 금단의 지식을 억제하는 발언을 한 화자이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "바문은 적왕이 들여온 금단의 지식을 억제하는 발언을 한 화자이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Staff of the Scarlet Sands"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Dragon",
+       "revision": 1960633,
+       "section": "History > The Archon War",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "What Shape Does the Self Hold"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Seven Pillars",
+       "revision": 1918481,
+       "section": "History",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Echoes of Fate"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Sage of Sages",
+       "quest_ko": "현자들의 현자",
+       "version": "4.6",
+       "speaker": "Bamoun"
+      }
+     ],
+     "heading": "드러난 역사 — 적색 모래바다와 적왕",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Khaenri'ah의 재난과 Irminsul",
+     "status": "accepted",
+     "note": "Matches A5, including the hedged wording about what is implied.",
+     "quote": "forbidden knowledge managed to contaminate the consciousness of Greater Lord Rukkhadevata herself, threatening to spread abyssal corruption throughout Irminsul.",
+     "sentences": [
+      {
+       "t_raw": "세 번째이자 마지막으로 알려진 금단의 지식의 확산은 오백 년 전 **Khaenri'ahn disaster** 때 일어났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "세 번째이자 마지막으로 알려진 금단의 지식의 확산은 오백 년 전 **켄리아인 대재앙** 때 일어났다.",
+       "polish": {
+        "from": "세 번째이자 마지막으로 알려진 금단의 지식의 확산은 오백 년 전 **켄리아인 disaster** 때 일어났다.",
+        "text": "세 번째이자 마지막으로 알려진 금단의 지식의 확산은 오백 년 전 **켄리아인 대재앙** 때 일어났다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Khaenri'ahns가 Heavenly Principles 아래 세계의 규칙에 저항하려 금단의 지식을 찾았다가 Cataclysm을 초래한 것으로 암시되며, 이때 금단의 지식은 Greater Lord Rukkhadevata의 의식마저 오염시켜 **Irminsul**로 Abyss의 오염이 퍼질 위협을 만들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "켄리아인이 천리 아래 세계의 규칙에 저항하려 금단의 지식을 찾았다가 대재앙을 초래한 것으로 암시되며, 이때 금단의 지식은 위대한 룩카데바타의 의식마저 오염시켜 **세계수**로 심연의 오염이 퍼질 위협을 만들었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Overview",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 켄리아의 재난과 세계수",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Khaenri'ah의 재난과 Irminsul",
+     "status": "accepted",
+     "note": "Supported by A5, Q2 and Q4. The interpretation is hedged and reasonable.",
+     "quote": "The way that everyone, including me, has forgotten everything about forbidden knowledge may very well be due to her restoration of Irminsul.",
+     "sentences": [
+      {
+       "t_raw": "Rukkhadevata는 오염된 채 오백 년을 버텼고, 후계자 Nahida가 Irminsul에 들어가 그 오염된 존재를 삭제하자 모든 형태의 금단의 지식도 사라졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "룩카데바타는 오염된 채 오백 년을 버텼고, 후계자 나히다가 세계수에 들어가 그 오염된 존재를 삭제하자 모든 형태의 금단의 지식도 사라졌다."
+      },
+      {
+       "t_raw": "Nahida는 자신을 포함한 모두가 금단의 지식에 관한 모든 것을 잊은 일이 Irminsul의 복원 때문일 수 있다고 말하고, 한 Elemental Being은 세계에 남은 금단의 지식이 이미 사라졌는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나히다는 자신을 포함한 모두가 금단의 지식에 관한 모든 것을 잊은 일이 세계수의 복원 때문일 수 있다고 말하고, 한 Elemental Being은 세계에 남은 금단의 지식이 이미 사라졌는지 묻는다."
+      },
+      {
+       "t_raw": "삭제와 망각이 겹치면서 Irminsul을 통한 정리가 금단의 지식의 흔적을 지우는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "삭제와 망각이 겹치면서 세계수를 통한 정리가 금단의 지식의 흔적을 지우는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Overview",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Where Lies the Path Home",
+       "quest_ko": "고향이 어디인지 잊는다면",
+       "version": "3.6",
+       "speaker": "Elemental Being"
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Boat of Consciousness Lies",
+       "quest_ko": "의식의 배가 당도한 곳",
+       "version": "3.2",
+       "speaker": "Nahida"
+      }
+     ],
+     "heading": "드러난 역사 — 켄리아의 재난과 세계수",
+     "latin_left": [
+      "Elemental Being"
+     ]
+    },
+    {
+     "section": "드러난 역사 — Khaenri'ah의 재난과 Irminsul",
+     "status": "accepted",
+     "note": "Supported by Q3 and Q8. The interpretation follows from them.",
+     "quote": "The forbidden knowledge influenced you ever since you were contaminated, greatly amplifying your hatred and rage.",
+     "sentences": [
+      {
+       "t_raw": "Nahida는 금단의 지식이 오염된 이후 계속 영향을 주어 증오와 분노를 **크게 증폭**시켰다고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나히다는 금단의 지식이 오염된 이후 계속 영향을 주어 증오와 분노를 **크게 증폭**시켰다고 설명한다."
+      },
+      {
+       "t_raw": "또 금단의 지식과의 싸움에서 모든 종족이 큰 대가를 치렀으며, 이것은 혼자 짊어질 책임이 아니라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 금단의 지식과의 싸움에서 모든 종족이 큰 대가를 치렀으며, 이것은 혼자 짊어질 책임이 아니라고 말한다."
+      },
+      {
+       "t_raw": "감정의 증폭과 모든 종족이 치른 대가를 함께 놓으면, 금단의 지식의 피해는 한 개인의 감정 문제로만 남지 않는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "감정의 증폭과 모든 종족이 치른 대가를 함께 놓으면, 금단의 지식의 피해는 한 개인의 감정 문제로만 남지 않는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "What Shape Does the Self Hold",
+       "quest_ko": "내가 무엇인지 잊는다면",
+       "version": "3.6",
+       "speaker": "Nahida"
+      },
+      {
+       "kind": "quest",
+       "quest": "Where Lies the Path Home",
+       "quest_ko": "고향이 어디인지 잊는다면",
+       "version": "3.6",
+       "speaker": "Nahida"
+      }
+     ],
+     "heading": "드러난 역사 — 켄리아의 재난과 세계수",
+     "latin_left": []
+    },
+    {
+     "section": "영향과 정화",
+     "status": "accepted",
+     "note": "All sentences match the English.",
+     "quote": "I think... those mad scholars and mercenaries we encountered may have all fallen victim to the corrupting qualities of forbidden knowledge.",
+     "sentences": [
+      {
+       "t_raw": "금단의 지식의 영향으로 **Oozing Filth**는 The Chasm: Underground Mines에, **The Withering**은 Sumeru의 Dharma Forest에, **Eleazar**는 Sumeru 시민에게 고유하게 나타난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "금단의 지식의 영향으로 **Oozing Filth**는 지하 광산에, **죽음의 땅**은 수메르의 다르마의 숲에, **비늘병**은 수메르 시민에게 고유하게 나타난다."
+      },
+      {
+       "t_raw": "Alhaitham은 마주친 미친 학자와 용병들이 금단의 지식의 부패하는 성질에 희생된 것일 수 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알하이탐은 마주친 미친 학자와 용병들이 금단의 지식의 부패하는 성질에 희생된 것일 수 있다고 본다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Effects of Forbidden Knowledge",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Effects of Forbidden Knowledge",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Effects of Forbidden Knowledge",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Through the Predawn Night",
+       "quest_ko": "여명 전의 어둠 속을 걷다",
+       "version": "3.2",
+       "speaker": "Alhaitham"
+      }
+     ],
+     "heading": "영향과 정화",
+     "latin_left": [
+      "Oozing Filth"
+     ]
+    },
+    {
+     "section": "영향과 정화",
+     "status": "accepted",
+     "note": "Supported by Q3 and Q9; the interpretation is reasonable.",
+     "quote": "The forbidden knowledge influenced you ever since you were contaminated, greatly amplifying your hatred and rage.",
+     "sentences": [
+      {
+       "t_raw": "금단의 지식은 오염된 이의 증오와 분노를 크게 증폭시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "금단의 지식은 오염된 이의 증오와 분노를 크게 증폭시킨다."
+      },
+      {
+       "t_raw": "Nahida는 금단의 지식이 Teyvat 전역을 날뛰게 내버려 둔다면 세계도 같은 꼴이 될지를 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나히다는 금단의 지식이 티바트 전역을 날뛰게 내버려 둔다면 세계도 같은 꼴이 될지를 묻는다."
+      },
+      {
+       "t_raw": "오염된 이의 감정을 증폭시키는 힘은 방치될 경우 Teyvat 전체의 모습까지 바꿀 수 있는 위협으로 번지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오염된 이의 감정을 증폭시키는 힘은 방치될 경우 티바트 전체의 모습까지 바꿀 수 있는 위협으로 번지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "What Shape Does the Self Hold",
+       "quest_ko": "내가 무엇인지 잊는다면",
+       "version": "3.6",
+       "speaker": "Nahida"
+      },
+      {
+       "kind": "quest",
+       "quest": "What Shape Does the Self Hold",
+       "quest_ko": "내가 무엇인지 잊는다면",
+       "version": "3.6",
+       "speaker": "Nahida"
+      }
+     ],
+     "heading": "영향과 정화",
+     "latin_left": []
+    },
+    {
+     "section": "영향과 정화",
+     "status": "accepted",
+     "note": "Supported by M1 and M6; the interpretation is reasonable.",
+     "quote": "Due to its divine nature, it has the ability to purify Abyssal energy and Forbidden Knowledge.",
+     "sentences": [
+      {
+       "t_raw": "Khvarena는 Nabu Malikata가 Cataclysm에 맞서기 위해 만든 에너지이며, 신성한 성질 덕에 Abyssal 에너지와 금단의 지식을 정화할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "크바레나는 나부·말리카타가 대재앙에 맞서기 위해 만든 에너지이며, 신성한 성질 덕에 Abyssal 에너지와 금단의 지식을 정화할 수 있다."
+      },
+      {
+       "t_raw": "원소와 연결된 Vision-holders는 금단의 지식을 포함한 Abyssal 에너지에 더 큰 저항력을 지닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원소와 연결된 신의 눈 소지자들은 금단의 지식을 포함한 심연의 에너지에 더 큰 저항력을 지닌다.",
+       "polish": {
+        "from": "원소와 연결된 Vision-holders는 금단의 지식을 포함한 Abyssal 에너지에 더 큰 저항력을 지닌다.",
+        "text": "원소와 연결된 신의 눈 소지자들은 금단의 지식을 포함한 심연의 에너지에 더 큰 저항력을 지닌다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "The Chasm에서 Chasm Nail 조각이 발굴된 일로 Abyssal Dark Mud와 Celestial Lumenstones 및 Lumenspar가 광산 전역에 대량으로 자라기 시작했고, Lumenstone Adjuvant는 Dark Mud를 청소할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "층암거연에서 수정못 조각이 발굴된 일로 Abyssal Dark Mud와 Celestial Lumenstones 및 유명 수정석이 광산 전역에 대량으로 자라기 시작했고, 유명석 촉매는 「검은 진흙」을 청소할 수 있다."
+      },
+      {
+       "t_raw": "정화와 저항은 Khvarena의 신성한 힘, Lumenstone Adjuvant, 원소와 연결된 Vision-holders의 저항처럼 서로 다른 자리에서 나타나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정화와 저항은 크바레나의 신성한 힘, 유명석 촉매, 원소와 연결된 신의 눈 소지자들의 저항처럼 서로 다른 자리에서 나타나는 셈이다.",
+       "polish": {
+        "from": "정화와 저항은 크바레나의 신성한 힘, 유명석 촉매, 원소와 연결된 Vision-holders의 저항처럼 서로 다른 자리에서 나타나는 셈이다.",
+        "text": "정화와 저항은 크바레나의 신성한 힘, 유명석 촉매, 원소와 연결된 신의 눈 소지자들의 저항처럼 서로 다른 자리에서 나타나는 셈이다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Khvarena",
+       "revision": 1708823,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abyssal Corruption",
+       "revision": 1690858,
+       "section": "Overview > Purification",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Leaves on the Wind"
+        },
+        {
+         "type": "quest",
+         "name": "Let the Wind Lead (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "Chasm Spelunkers"
+        }
+       ]
+      }
+     ],
+     "heading": "영향과 정화",
      "latin_left": [
       "Abyssal",
-      "Abyssal",
-      "Vision-holders",
-      "Abyssal"
+      "Abyssal Dark Mud",
+      "Celestial Lumenstones"
      ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M2 and M4.",
+     "quote": "King Deshret died with Forbidden Knowledge, causing great anguish to Apep",
+     "sentences": [
+      {
+       "t_raw": "**Apep의 고통**은 King Deshret가 금단의 지식을 지닌 채 죽으면서 시작된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**아펩의 고통**은 적왕이 금단의 지식을 지닌 채 죽으면서 시작된다."
+      },
+      {
+       "t_raw": "Apep는 그 지식을 분석하지 못한 채 모든 힘을 쏟아 살아남아야 했고, 이전의 약속에 따라 King Deshret의 육체를 먹은 뒤에는 금단의 지식에 오염되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아펩은 그 지식을 분석하지 못한 채 모든 힘을 쏟아 살아남아야 했고, 이전의 약속에 따라 적왕의 육체를 먹은 뒤에는 금단의 지식에 오염되었다."
+      },
+      {
+       "t_raw": "Deshret 사후 Hermanubis는 추종자들을 Tulaytullah로 데려가 Temple of Silence를 세웠으며, Gurabad의 왕에게 공격받자 방어를 위해 자신을 Ba fragments로 부쉈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적왕 사후 헤르마누비스는 추종자들을 툴레이툴라로 데려가 침묵의 신전을 세웠으며, 구라바드의 왕에게 공격받자 방어를 위해 자신을 Ba 조각으로 부쉈다.",
+       "polish": {
+        "from": "적왕 사후 헤르마누비스는 추종자들을 툴레이툴라로 데려가 침묵의 신전을 세웠으며, 구라바드의 왕에게 공격받자 방어를 위해 자신을 Ba fragments로 부쉈다.",
+        "text": "적왕 사후 헤르마누비스는 추종자들을 툴레이툴라로 데려가 침묵의 신전을 세웠으며, 구라바드의 왕에게 공격받자 방어를 위해 자신을 Ba 조각으로 부쉈다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "두 Ba fragments는 현재 Cyno 안에 융합되어 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 Ba 조각은 현재 사이노 안에 융합되어 남아 있다.",
+       "polish": {
+        "from": "두 Ba fragments는 현재 사이노 안에 융합되어 남아 있다.",
+        "text": "두 Ba 조각은 현재 사이노 안에 융합되어 남아 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Deshret 사후라는 공통 배경 위에 Apep의 오염과 Hermanubis의 분신이 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "적왕 사후라는 공통 배경 위에 아펩의 오염과 헤르마누비스의 분신이 놓인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dragon",
+       "revision": 1960633,
+       "section": "History > The Archon War",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "What Shape Does the Self Hold"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Seven Pillars",
+       "revision": 1918481,
+       "section": "History",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Echoes of Fate"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Ba",
+      "Ba"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M1 and M6.",
+     "quote": "Due to its divine nature, it has the ability to purify Abyssal energy and Forbidden Knowledge.",
+     "sentences": [
+      {
+       "t_raw": "**Khvarena**는 Nabu Malikata가 Cataclysm에 맞서기 위해 만든 에너지이며, 신성한 성질로 Abyss의 에너지와 금단의 지식을 정화할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**크바레나**는 나부·말리카타가 대재앙에 맞서기 위해 만든 에너지이며, 신성한 성질로 심연의 에너지와 금단의 지식을 정화할 수 있다."
+      },
+      {
+       "t_raw": "Celestia와 원소의 힘은 Abyss의 오염을 막아내며, 원소와 연결된 **Vision-holder**는 금단의 지식을 포함한 Abyss의 에너지에 더 큰 저항력을 지닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "셀레스티아와 원소의 힘은 심연의 오염을 막아내며, 원소와 연결된 **신의 눈 소지자**는 금단의 지식을 포함한 심연의 에너지에 더 큰 저항력을 지닌다.",
+       "polish": {
+        "from": "셀레스티아와 원소의 힘은 심연의 오염을 막아내며, 원소와 연결된 **Vision-holder**는 금단의 지식을 포함한 심연의 에너지에 더 큰 저항력을 지닌다.",
+        "text": "셀레스티아와 원소의 힘은 심연의 오염을 막아내며, 원소와 연결된 **신의 눈 소지자**는 금단의 지식을 포함한 심연의 에너지에 더 큰 저항력을 지닌다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그래서 금단의 지식에 맞서는 방식에는 Khvarena의 정화와 원소 연결을 통한 저항이 나란히 놓이는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 금단의 지식에 맞서는 방식에는 크바레나의 정화와 원소 연결을 통한 저항이 나란히 놓이는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Khvarena",
+       "revision": 1708823,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Abyssal Corruption",
+       "revision": 1690858,
+       "section": "Overview > Purification",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Leaves on the Wind"
+        },
+        {
+         "type": "quest",
+         "name": "Let the Wind Lead (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "Chasm Spelunkers"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by Q1 and Q6; the contrast is a fair reading.",
+     "quote": "The Akademiya is going out of their way to look for forbidden knowledge, but what is their ultimate goal?",
+     "sentences": [
+      {
+       "t_raw": "Bamoun은 King Deshret가 들여온 금단의 지식을 억제하는 일을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바문은 적왕이 들여온 금단의 지식을 억제하는 일을 언급한다."
+      },
+      {
+       "t_raw": "반면 Alhaitham은 **Akademiya**가 금단의 지식을 찾기 위해 나서고 있다고 말하며, 그 궁극적인 목표가 무엇인지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "반면 알하이탐은 **아카데미아**가 금단의 지식을 찾기 위해 나서고 있다고 말하며, 그 궁극적인 목표가 무엇인지 묻는다."
+      },
+      {
+       "t_raw": "한쪽은 억제하고 다른 쪽은 탐색한다는 대비가 드러나며, Akademiya의 목적은 여전히 물음표로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한쪽은 억제하고 다른 쪽은 탐색한다는 대비가 드러나며, 아카데미아의 목적은 여전히 물음표로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sage of Sages",
+       "quest_ko": "현자들의 현자",
+       "version": "4.6",
+       "speaker": "Bamoun"
+      },
+      {
+       "kind": "quest",
+       "quest": "Cry From the Eleazar Hospital",
+       "quest_ko": "비늘병 병원의 울음소리",
+       "version": "3.1",
+       "speaker": "Alhaitham"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All supported by Q10 and A2; the interpretation is reasonable.",
+     "quote": "Forbidden knowledge? Hmm, it seems you know about a concept that even I don't completely understand. Could you tell me what you know?",
+     "sentences": [
+      {
+       "t_raw": "Nahida는 금단의 지식을 **자신조차 완전히 이해하지 못하는 개념**이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나히다는 금단의 지식을 **자신조차 완전히 이해하지 못하는 개념**이라고 말한다."
+      },
+      {
+       "t_raw": "그래도 Nahida에 따르면 그것은 Sumeru를 겨냥한 Abyss적 오염이며, Abyss는 공격 지역에 가장 위험한 방식으로 발현한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 나히다에 따르면 그것은 수메르를 겨냥한 심연적 오염이며, 심연은 공격 지역에 가장 위험한 방식으로 발현한다."
+      },
+      {
+       "t_raw": "그 설명만으로 개념의 전모가 밝혀진 것은 아닌 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 설명만으로 개념의 전모가 밝혀진 것은 아닌 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Where the Boat of Consciousness Lies",
+       "quest_ko": "의식의 배가 당도한 곳",
+       "version": "3.2",
+       "speaker": "Nahida"
+      },
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "vo",
+         "name": "Nahida"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches Q6.",
+     "quote": "The Akademiya is going out of their way to look for forbidden knowledge, but what is their ultimate goal?",
+     "sentences": [
+      {
+       "t_raw": "Alhaitham은 Akademiya가 금단의 지식을 찾기 위해 애쓴다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알하이탐은 아카데미아가 금단의 지식을 찾기 위해 애쓴다고 말한다."
+      },
+      {
+       "t_raw": "그리고 그들의 **궁극적 목표**가 무엇인지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그리고 그들의 **궁극적 목표**가 무엇인지 묻는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Cry From the Eleazar Hospital",
+       "quest_ko": "비늘병 병원의 울음소리",
+       "version": "3.1",
+       "speaker": "Alhaitham"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches M3, including the hedged wording.",
+     "quote": "In addition to maintaining the city, she also had an interest in a certain \"well,\" likely the pit of the Old Core of Chu'ulel, which other dragons are known to have feared.",
+     "sentences": [
+      {
+       "t_raw": "Chichen Uctokah의 통치자였던 Ix Uxul Tz'ib Bolon Ch'ule-L은 다른 용들이 두려워한 **우물**에 관심을 두었고, 그 우물은 Old Core of Chu'ulel의 구덩이일 가능성이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치첸우토카의 통치자였던 이쉬·우슐·티즈입볼론·추·렐은 다른 용들이 두려워한 **우물**에 관심을 두었고, 그 우물은 옛 통솔의 심장의 구덩이일 가능성이 있다."
+      },
+      {
+       "t_raw": "그 장소는 Abyss 활동의 온상이며 Ixlel은 Tenebrous Mimiflora의 보호를 받아, Abyss나 금단의 지식을 조사했을 가능성이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 장소는 심연 활동의 온상이며 이렐은 그윽한 의태 잎뭉치의 보호를 받아, 심연이나 금단의 지식을 조사했을 가능성이 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ix Uxul Tz'ib Bolon",
+       "revision": 1863398,
+       "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Perfect Heart of the Sacred Dragon"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches A6-A8.",
+     "quote": "Eleazar, unique to citizens of Sumeru",
+     "sentences": [
+      {
+       "t_raw": "금단의 지식의 영향으로 언급되는 항목에는 **Oozing Filth**, **The Withering**, **Eleazar**가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "금단의 지식의 영향으로 언급되는 항목에는 **Oozing Filth**, **죽음의 땅**, **비늘병**이 있다."
+      },
+      {
+       "t_raw": "Oozing Filth는 The Chasm: Underground Mines에, The Withering은 Sumeru의 Dharma Forest에 존재한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Oozing Filth는 지하 광산에, 죽음의 땅은 수메르의 다르마의 숲에 존재한다."
+      },
+      {
+       "t_raw": "Eleazar는 Sumeru 시민에게 고유하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비늘병은 수메르 시민에게 고유하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Effects of Forbidden Knowledge",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Effects of Forbidden Knowledge",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Forbidden Knowledge",
+       "revision": 2052034,
+       "section": "Effects of Forbidden Knowledge",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Oozing Filth",
+      "Oozing Filth"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches M3 and Q1.",
+     "quote": "it is possible that Ixlel was investigating the Abyss or Forbidden Knowledge in this location",
+     "sentences": [
+      {
+       "t_raw": "Ix Uxul Tz'ib Bolon Ch'ule-L가 관심을 둔 'well'은 Old Core of Chu'ulel의 구덩이로 여겨지며, 다른 용들이 두려워한 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이쉬·우슐·티즈입볼론·추·렐이 관심을 둔 'well'은 옛 통솔의 심장의 구덩이로 여겨지며, 다른 용들이 두려워한 곳이다."
+      },
+      {
+       "t_raw": "그곳은 Abyss 활동의 온상이고 Tenebrous Mimiflora가 활발히 지키고 있어, 그녀가 Abyss나 금단의 지식을 조사했을 가능성이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그곳은 심연 활동의 온상이고 그윽한 의태 잎뭉치가 활발히 지키고 있어, 그녀가 심연이나 금단의 지식을 조사했을 가능성이 있다."
+      },
+      {
+       "t_raw": "Bamoun은 King Deshret가 들여온 금단의 지식을 막아내는 일을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바문은 적왕이 들여온 금단의 지식을 막아내는 일을 언급한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ix Uxul Tz'ib Bolon",
+       "revision": 1863398,
+       "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Perfect Heart of the Sacred Dragon"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Sage of Sages",
+       "quest_ko": "현자들의 현자",
+       "version": "4.6",
+       "speaker": "Bamoun"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Forbidden knowledge? 흐음, 그대는 나조차 완전히 이해하지 못하는 개념을 알고 있는 모양이군. 내게 무엇을 아는지 말해 줄 수 있겠나?",
+     "status": "accepted",
+     "note": "Faithful translation of the Nahida line.",
+     "t_raw": "금단의 지식? 흠, 너는 내가 완전히 이해하지 못하는 개념을 알고 있는 것 같구나. 네가 아는 것을 말해 줄 수 있겠니?",
      "en": "Forbidden knowledge? Hmm, it seems you know about a concept that even I don't completely understand. Could you tell me what you know?",
      "speaker": "Nahida",
      "source": {
@@ -1405,82 +1309,31 @@
       "version": "3.2",
       "speaker": "Nahida"
      },
-     "t": "Forbidden knowledge? 흐음, 그대는 나조차 완전히 이해하지 못하는 개념을 알고 있는 모양이군. 내게 무엇을 아는지 말해 줄 수 있겠나?",
+     "t": "금단의 지식? 흠, 너는 내가 완전히 이해하지 못하는 개념을 알고 있는 것 같구나. 네가 아는 것을 말해 줄 수 있겠니?",
      "speaker_ko": "나히다"
     },
     {
-     "section": "정체 — Teyvat 바깥의 정보와 거부 반응",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "금지된 지식은 당신이 오염된 이후로 계속 당신에게 영향을 주었고, 당신의 증오와 분노를 크게 증폭시켰다.",
-     "en": "The forbidden knowledge influenced you ever since you were contaminated, greatly amplifying your hatred and rage.",
-     "speaker": "Nahida",
-     "source": {
-      "kind": "quest",
-      "quest": "What Shape Does the Self Hold",
-      "quest_ko": "내가 무엇인지 잊는다면",
-      "version": "3.6",
-      "speaker": "Nahida"
-     },
-     "t": "금지된 지식은 당신이 오염된 이후로 계속 당신에게 영향을 주었고, 당신의 증오와 분노를 크게 증폭시켰다.",
-     "speaker_ko": "나히다"
-    },
-    {
-     "section": "드러난 역사 — Great Red Sand와 King Deshret",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "The Scarlet King (King Deshret)이 이 금단의 지식을 우리 세계로 가져왔다.",
-     "en": "The Scarlet King (King Deshret) brought this forbidden knowledge into our world",
-     "speaker": "Kasala",
-     "source": {
-      "kind": "quest",
-      "quest": "Secret of the Scorching Desert",
-      "quest_ko": "뜨거운 모래의 비밀",
-      "version": "3.1",
-      "speaker": "Kasala"
-     },
-     "t": "적왕 (적왕)이 이 금단의 지식을 우리 세계로 가져왔다.",
-     "speaker_ko": "카살레"
-    },
-    {
-     "section": "드러난 역사 — Khaenri'ah와 Cataclysm",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "나를 포함한 모두가 금단의 지식에 관한 모든 것을 잊게 된 것은 그녀의 Irminsul 복원 때문일 수 있다.",
-     "en": "The way that everyone, including me, has forgotten everything about forbidden knowledge may very well be due to her restoration of Irminsul.",
-     "speaker": "Nahida",
-     "source": {
-      "kind": "quest",
-      "quest": "Where the Boat of Consciousness Lies",
-      "quest_ko": "의식의 배가 당도한 곳",
-      "version": "3.2",
-      "speaker": "Nahida"
-     },
-     "t": "나를 포함한 모두가 금단의 지식에 관한 모든 것을 잊게 된 것은 그녀의 세계수 복원 때문일 수 있다.",
-     "speaker_ko": "나히다"
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Akademiya는 금단의 지식을 찾기 위해 애쓰고 있는데, 그들의 궁극적인 목표는 무엇인가?",
-     "en": "The Akademiya is going out of their way to look for forbidden knowledge, but what is their ultimate goal?",
+     "section": "정체 — Abyss에서 온 거부되는 정보",
+     "status": "accepted",
+     "note": "Faithful rendering of Alhaitham's line: mad scholars and mercenaries may all have fallen victim to forbidden knowledge's corrupting qualities.",
+     "t_raw": "내 생각에는... 우리가 마주친 그 미친 학자들과 용병들은 모두 금단의 지식이 지닌 부패하게 만드는 성질의 희생자가 되었을지도 모르다.",
+     "en": "I think... those mad scholars and mercenaries we encountered may have all fallen victim to the corrupting qualities of forbidden knowledge.",
      "speaker": "Alhaitham",
      "source": {
       "kind": "quest",
-      "quest": "Cry From the Eleazar Hospital",
-      "quest_ko": "비늘병 병원의 울음소리",
-      "version": "3.1",
+      "quest": "Through the Predawn Night",
+      "quest_ko": "여명 전의 어둠 속을 걷다",
+      "version": "3.2",
       "speaker": "Alhaitham"
      },
-     "t": "아카데미아는 금단의 지식을 찾기 위해 애쓰고 있는데, 그들의 궁극적인 목표는 무엇인가?",
+     "t": "내 생각에는... 우리가 마주친 그 미친 학자들과 용병들은 모두 금단의 지식이 지닌 부패하게 만드는 성질의 희생자가 되었을지도 모르다.",
      "speaker_ko": "알하이탐"
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "금단의 지식이 Teyvat 전역에서 날뛰도록 내버려둔다면, 우리 세계도 같은 꼴이 되었을까...?",
+     "section": "드러난 역사 — Nibelung과 War of Funerary Flame",
+     "status": "accepted",
+     "note": "Faithful rendering of Nahida's question about the world becoming the same if forbidden knowledge rampaged across Teyvat.",
+     "t_raw": "금단의 지식이 Teyvat 전역에서 날뛰도록 내버려 둔다면, 우리 세계도 그렇게 될까...?",
      "en": "Would our world become the same if the forbidden knowledge was allowed to rampage across Teyvat...?",
      "speaker": "Nahida",
      "source": {
@@ -1490,8 +1343,110 @@
       "version": "3.6",
       "speaker": "Nahida"
      },
-     "t": "금단의 지식이 티바트 전역에서 날뛰도록 내버려둔다면, 우리 세계도 같은 꼴이 되었을까...?",
+     "t": "금단의 지식이 티바트 전역에서 날뛰도록 내버려 둔다면, 우리 세계도 그렇게 될까...?",
      "speaker_ko": "나히다"
+    },
+    {
+     "section": "드러난 역사 — Great Red Sand와 King Deshret",
+     "status": "accepted",
+     "note": "Faithful rendering of Kasala's line that the Scarlet King brought this forbidden knowledge into our world.",
+     "t_raw": "The Scarlet King (King Deshret)가 이 금단의 지식을 우리 세계로 가져왔다.",
+     "en": "The Scarlet King (King Deshret) brought this forbidden knowledge into our world",
+     "speaker": "Kasala",
+     "source": {
+      "kind": "quest",
+      "quest": "Secret of the Scorching Desert",
+      "quest_ko": "뜨거운 모래의 비밀",
+      "version": "3.1",
+      "speaker": "Kasala"
+     },
+     "t": "적왕 (적왕)가 이 금단의 지식을 우리 세계로 가져왔다.",
+     "speaker_ko": "카살레"
+    },
+    {
+     "section": "드러난 역사 — Khaenri'ah의 재난과 Irminsul",
+     "status": "accepted",
+     "note": "Faithful rendering of Nahida's line that the shared forgetting may very well be due to her restoration of Irminsul.",
+     "t_raw": "나를 포함한 모두가 금단의 지식에 관한 모든 것을 잊은 것은 그녀의 Irminsul 복원 때문일 가능성이 매우 크다.",
+     "en": "The way that everyone, including me, has forgotten everything about forbidden knowledge may very well be due to her restoration of Irminsul.",
+     "speaker": "Nahida",
+     "source": {
+      "kind": "quest",
+      "quest": "Where the Boat of Consciousness Lies",
+      "quest_ko": "의식의 배가 당도한 곳",
+      "version": "3.2",
+      "speaker": "Nahida"
+     },
+     "t": "나를 포함한 모두가 금단의 지식에 관한 모든 것을 잊은 것은 그녀의 세계수 복원 때문일 가능성이 매우 크다.",
+     "speaker_ko": "나히다"
+    },
+    {
+     "section": "영향과 정화",
+     "status": "accepted",
+     "note": "Faithful rendering of Nahida's line that forbidden knowledge influenced the listener since contamination and amplified hatred and rage.",
+     "t_raw": "금단의 지식은 당신이 오염된 이후로 당신에게 영향을 미쳐, 당신의 증오와 분노를 크게 증폭시켰다.",
+     "en": "The forbidden knowledge influenced you ever since you were contaminated, greatly amplifying your hatred and rage.",
+     "speaker": "Nahida",
+     "source": {
+      "kind": "quest",
+      "quest": "What Shape Does the Self Hold",
+      "quest_ko": "내가 무엇인지 잊는다면",
+      "version": "3.6",
+      "speaker": "Nahida"
+     },
+     "t": "금단의 지식은 당신이 오염된 이후로 당신에게 영향을 미쳐, 당신의 증오와 분노를 크게 증폭시켰다.",
+     "speaker_ko": "나히다"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful rendering of Alhaitham's line that the Akademiya is going out of its way to seek forbidden knowledge and asking their ultimate goal.",
+     "t_raw": "Akademiya는 금단의 지식을 찾기 위해 애쓰고 있는데, 그들의 궁극적인 목표는 무엇일까?",
+     "en": "The Akademiya is going out of their way to look for forbidden knowledge, but what is their ultimate goal?",
+     "speaker": "Alhaitham",
+     "source": {
+      "kind": "quest",
+      "quest": "Cry From the Eleazar Hospital",
+      "quest_ko": "비늘병 병원의 울음소리",
+      "version": "3.1",
+      "speaker": "Alhaitham"
+     },
+     "t": "아카데미아는 금단의 지식을 찾기 위해 애쓰고 있는데, 그들의 궁극적인 목표는 무엇일까?",
+     "speaker_ko": "알하이탐"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Nahida's line.",
+     "t_raw": "금단의 지식? 흐음, 그대는 나조차 완전히 이해하지 못하는 개념에 대해 알고 있는 것 같군. 내게 무엇을 아는지 말해줄 수 있겠나?",
+     "en": "Forbidden knowledge? Hmm, it seems you know about a concept that even I don't completely understand. Could you tell me what you know?",
+     "speaker": "Nahida",
+     "source": {
+      "kind": "quest",
+      "quest": "Where the Boat of Consciousness Lies",
+      "quest_ko": "의식의 배가 당도한 곳",
+      "version": "3.2",
+      "speaker": "Nahida"
+     },
+     "t": "금단의 지식? 흐음, 그대는 나조차 완전히 이해하지 못하는 개념에 대해 알고 있는 것 같군. 내게 무엇을 아는지 말해줄 수 있겠나?",
+     "speaker_ko": "나히다"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Bamoun's line.",
+     "t_raw": "King Deshret가 들여온 금단의 지식을 막아내는 것",
+     "en": "Keeping the forbidden knowledge introduced by King Deshret at bay",
+     "speaker": "Bamoun",
+     "source": {
+      "kind": "quest",
+      "quest": "Sage of Sages",
+      "quest_ko": "현자들의 현자",
+      "version": "4.6",
+      "speaker": "Bamoun"
+     },
+     "t": "적왕이 들여온 금단의 지식을 막아내는 것",
+     "speaker_ko": "바문"
     }
    ]
   }

@@ -1,0 +1,756 @@
+{
+ "node": "The Five Kasen",
+ "articles": [
+  {
+   "node": "The Five Kasen",
+   "from_version": "2.6",
+   "cutoff": "2022-05-30T00:00:00Z",
+   "input": [
+    {
+     "page": "The Five Kasen",
+     "url": "https://genshin-impact.fandom.com/wiki/The_Five_Kasen",
+     "revision": 675801
+    }
+   ],
+   "input_counts": {
+    "mentions": 4,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 1487,
+   "input_cut": false,
+   "input_hash": "92ba026732a6",
+   "writer": "glm-flash,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "Sentence 0 says the poems were given to the 집정관 (Archon), but the English says the Shogun. Sentence 1 is tagged as fact but says the story is a 'symbol of Inazuma culture', which the English does not state.",
+     "quote": "As a sign of the appreciation for the great works of The Five Kasen that enriched the lives of the people of Inazuma, the Irodori Festival was developed.",
+     "sentences": [
+      {
+       "t_raw": "The Five Kasen은 고대 Inazuma의 재능 있는 가인이자 시인들로, 매년 돌아가며 Shogun에게 시집을 바치며 Inazuma의 문화를 크게 꽃피웠던 전설의 다섯 사람이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "다섯 가선은 고대 이나즈마의 재능 있는 가인이자 시인들로, 매년 돌아가며 쇼군에게 시집을 바치며 이나즈마의 문화를 크게 꽃피웠던 전설의 다섯 사람이다."
+      },
+      {
+       "t_raw": "그들의 위대한 작품이 Inazuma 사람들의 삶을 풍요롭게 했기에, 그 감사의 표시로 Irodori Festival이 만들어졌다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그들의 위대한 작품이 이나즈마 사람들의 삶을 풍요롭게 했기에, 그 감사의 표시로 이로도리 축제가 만들어졌다."
+      },
+      {
+       "t_raw": "다만 전설이 워낙 오래되어 다섯 사람의 실체에 대해서는 알려진 것이 많지 않다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 전설이 워낙 오래되어 다섯 사람의 실체에 대해서는 알려진 것이 많지 않다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Irodori Festival",
+       "revision": 679811,
+       "section": "History",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences follow from the English.",
+     "quote": "Their great works would spark cultured discussions which caused Inazuma's culture to blossom and gain great influence at that time.",
+     "sentences": [
+      {
+       "t_raw": "The Five Kasen은 고대 Inazuma의 뛰어난 가겐(歌者)이자 시인들로, 매년 돌아가며 무리의 시 모음집을 쇼군에게 헌상했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다섯 가선은 고대 이나즈마의 뛰어난 가겐(歌者)이자 시인들로, 매년 돌아가며 무리의 시 모음집을 쇼군에게 헌상했다."
+      },
+      {
+       "t_raw": "그들의 뛰어난 작품들은 문화적 논의를 불러일으켰고, 이 덕분에 Inazuma의 문화가 크게 꽃피며 당시 큰 영향력을 얻었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그들의 뛰어난 작품들은 문화적 논의를 불러일으켰고, 이 덕분에 이나즈마의 문화가 크게 꽃피며 당시 큰 영향력을 얻었다."
+      },
+      {
+       "t_raw": "The Five Kasen은 Inazuma에 문화 혁명을 일으킨 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "다섯 가선은 이나즈마에 문화 혁명을 일으킨 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Irodori Festival",
+       "revision": 679811,
+       "section": "History",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Both sentences are supported by A1, M1 and M2.",
+     "quote": "As a sign of the appreciation for the great works of The Five Kasen that enriched the lives of the people of Inazuma, the Irodori Festival was developed.",
+     "sentences": [
+      {
+       "t_raw": "Inazuma 사람들의 삶을 풍요롭게 만든 그들의 업적에 대한 감사의 표시로, Irodori Festival이 탄생했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이나즈마 사람들의 삶을 풍요롭게 만든 그들의 업적에 대한 감사의 표시로, 이로도리 축제가 탄생했다."
+      },
+      {
+       "t_raw": "Irodori Festival은 Inazuma에서 The Five Kasen의 작품을 기리는 축제이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이로도리 축제는 이나즈마에서 다섯 가선의 작품을 기리는 축제이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Irodori Festival",
+       "revision": 679811,
+       "section": "History",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Irodori Festival",
+       "revision": 679811,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 색의 전설",
+     "status": "accepted",
+     "note": "The facts are supported by A3 and Q1. The interpretation in sentence 3 is reasonable.",
+     "quote": "Monikers such as \"Suikou\" and \"Aoi no Okina\" aren't the real names of The Five Kasen.",
+     "sentences": [
+      {
+       "t_raw": "The Five Kasen의 **실명**은 시간이 지나며 잃어버려졌지만, 그 전설은 여러 번 각색되어 무대에 올랐고 등장인물은 저마다 뚜렷한 색의 옷을 입었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다섯 가선의 **실명**은 시간이 지나며 잃어버려졌지만, 그 전설은 여러 번 각색되어 무대에 올랐고 등장인물은 저마다 뚜렷한 색의 옷을 입었다."
+      },
+      {
+       "t_raw": "관객들은 이내 멤버들을 **색으로 부르기 시작해** Green은 Suikou, blue는 Aoi no Okina, red는 Akahito, white는 Sumizome, black은 Kuronushi로 통하게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "관객들은 이내 멤버들을 **색으로 부르기 시작해** 초록색은 수광, 파란색은 아오이 no Okina, 빨간색은 아카히토, 하얀색은 Sumizome, 검은색은 Kuronushi로 통하게 되었다.",
+       "polish": {
+        "from": "관객들은 이내 멤버들을 **색으로 부르기 시작해** Green은 수광, blue는 아오이 no Okina, red는 아카히토, white는 Sumizome, black은 Kuronushi로 통하게 되었다.",
+        "text": "관객들은 이내 멤버들을 **색으로 부르기 시작해** 초록색은 수광, 파란색은 아오이 no Okina, 빨간색은 아카히토, 하얀색은 Sumizome, 검은색은 Kuronushi로 통하게 되었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Suikou와 Aoi no Okina 같은 호칭은 The Five Kasen의 실제 이름이 아니다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수광과 아오이 no Okina 같은 호칭은 다섯 가선의 실제 이름이 아니다.",
+       "polish": {
+        "from": "수광과 아오이 no Okina 같은 호칭은 다섯 가선의 실제 이름이 아니다.",
+        "text": "수광과 아오이 no Okina 같은 호칭은 다섯 가선의 실제 이름이 아니다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "실명이 사라진 인물들이 무대의 색으로 다시 이름을 얻은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "실명이 사라진 인물들이 무대의 색으로 다시 이름을 얻은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": "Members",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Strange Tale of Suikou's Tipsy Tincture (Quest)",
+       "quest_ko": "취중 취암의 괴이한 사건",
+       "version": "2.6",
+       "speaker": "Albedo"
+      }
+     ],
+     "heading": "정체와 색의 전설",
+     "latin_left": [
+      "Okina",
+      "Sumizome",
+      "Kuronushi",
+      "Okina"
+     ]
+    },
+    {
+     "section": "정체와 색의 전설",
+     "status": "accepted",
+     "note": "Supported by A10–A13 and Q7.",
+     "quote": "Moreover, Kuronushi lacks a dedicated chapter among the stories. It's as if he is a \"behind-the-scenes role\" of The Five Kasen.",
+     "sentences": [
+      {
+       "t_raw": "The Five Kasen's Splendor 연작시에는 Suikou, Aoi no Okina, Akahito, Sumizome를 다룬 편이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다섯 가선의 Splendor 연작시에는 수광, 아오이 no Okina, 아카히토, Sumizome를 다룬 편이 있다.",
+       "polish": {
+        "from": "다섯 가선의 Splendor 연작시에는 수광, 아오이 no Okina, 아카히토, Sumizome를 다룬 편이 있다.",
+        "text": "다섯 가선의 Splendor 연작시에는 수광, 아오이 no Okina, 아카히토, Sumizome를 다룬 편이 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Kuronushi는 그 이야기들 가운데 **전용 장이 없고**, The Five Kasen의 \"뒤에서 움직이는 역할\" 같은 존재로 묘사된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Kuronushi는 그 이야기들 가운데 **전용 장이 없고**, 다섯 가선의 \"뒤에서 움직이는 역할\" 같은 존재로 묘사된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": "Members",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": "Members",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": "Members",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": "Members",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": "Members",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Five Colors' True Form",
+       "quest_ko": "오색의 빛나는 진상",
+       "version": "2.6",
+       "speaker": "Albedo"
+      }
+     ],
+     "heading": "정체와 색의 전설",
+     "latin_left": [
+      "Splendor",
+      "Okina",
+      "Sumizome",
+      "Kuronushi"
+     ]
+    },
+    {
+     "section": "잃어버린 역사",
+     "status": "accepted",
+     "note": "Supported by A2. The interpretation in sentence 2 is reasonable.",
+     "quote": "Due to the age of the tale of The Five Kasen, tales of their identities and accomplishments are highly varied",
+     "sentences": [
+      {
+       "t_raw": "The Five Kasen의 이야기는 세월이 오래되어 정체와 업적에 관한 전승이 매우 다양하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다섯 가선의 이야기는 세월이 오래되어 정체와 업적에 관한 전승이 매우 다양하다."
+      },
+      {
+       "t_raw": "그들에 관해 현존하는 정보 가운데 상당수는 **500년 전 재해** 때 소실된 것으로 여겨진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그들에 관해 현존하는 정보 가운데 상당수는 **500년 전 재해** 때 소실된 것으로 여겨진다."
+      },
+      {
+       "t_raw": "남은 기록으로 다섯 사람의 온전한 모습을 되살리기는 어려운 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "남은 기록으로 다섯 사람의 온전한 모습을 되살리기는 어려운 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "잃어버린 역사",
+     "latin_left": []
+    },
+    {
+     "section": "잃어버린 역사",
+     "status": "accepted",
+     "note": "All supported by Q2 and Q7; sentence 2 reads as interpretation.",
+     "quote": "Moreover, Kuronushi lacks a dedicated chapter among the stories. It's as if he is a \"behind-the-scenes role\" of The Five Kasen.",
+     "sentences": [
+      {
+       "t_raw": "Kuronushi는 The Five Kasen 가운데 가장 깊고 가장 다른 인물로 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Kuronushi는 다섯 가선 가운데 가장 깊고 가장 다른 인물로 전해진다."
+      },
+      {
+       "t_raw": "그런데 이야기들 가운데 Kuronushi를 위한 독립된 장은 없고, 마치 The Five Kasen의 '**뒤에서 움직이는 역할**'처럼 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 이야기들 가운데 Kuronushi를 위한 독립된 장은 없고, 마치 다섯 가선의 '**뒤에서 움직이는 역할**'처럼 남아 있다."
+      },
+      {
+       "t_raw": "가장 다른 인물이면서도 그를 위한 장이 없다는 점은 전승에서 빠진 부분을 더욱 수수께끼로 만든다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가장 다른 인물이면서도 그를 위한 장이 없다는 점은 전승에서 빠진 부분을 더욱 수수께끼로 만든다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Five Colors' True Form",
+       "quest_ko": "오색의 빛나는 진상",
+       "version": "2.6",
+       "speaker": "Albedo"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Five Colors' True Form",
+       "quest_ko": "오색의 빛나는 진상",
+       "version": "2.6",
+       "speaker": "Albedo"
+      }
+     ],
+     "heading": "잃어버린 역사",
+     "latin_left": [
+      "Kuronushi",
+      "Kuronushi"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentences 0-2 match M4 and A2; sentence 3 is a reasonable interpretation.",
+     "quote": "Ayato then masterminded a plan to relay the truth he had uncovered to Kazuha over the course of the Irodori Festival, using a fabricated legend of The Five Kasen as a metaphor.",
+     "sentences": [
+      {
+       "t_raw": "Ayato는 Fatui 첩자가 압수된 Kaedehara Clan의 물품을 뒤진 일을 조사하다가 Yoshinori가 남긴 문서를 발견하고, 물에 닿아야 드러나는 잉크에 감춰진 진실을 알아냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아야토는 우인단 첩자가 압수된 카에데하라 가문의 물품을 뒤진 일을 조사하다가 요시노리가 남긴 문서를 발견하고, 물에 닿아야 드러나는 잉크에 감춰진 진실을 알아냈다."
+      },
+      {
+       "t_raw": "Ayato는 그 진실을 Irodori Festival 기간에 Kaedehara Kazuha에게 전하려 **꾸며낸 The Five Kasen의 전설을 은유로 삼는 계획**을 세웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아야토는 그 진실을 이로도리 축제 기간에 카에데하라 카즈하에게 전하려 **꾸며낸 다섯 가선의 전설을 은유로 삼는 계획**을 세웠다."
+      },
+      {
+       "t_raw": "Hues of the Violet Garden에서 일행이 듣는 The Five Kasen 이야기의 판본은 Kazuha를 Raiden Gokaden과 Kaedehara Clan의 몰락에 관한 진실로 이끌기 위해 Ayato가 꾸민 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빛나는 자색 정원에서 일행이 듣는 다섯 가선 이야기의 판본은 카즈하를 뇌전오전과 카에데하라 가문의 몰락에 관한 진실로 이끌기 위해 아야토가 꾸민 것이다."
+      },
+      {
+       "t_raw": "문서에서 찾은 진실을 꾸며낸 전설로 전하는 셈이라, 이 이야기는 **진실 전달의 장치**로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "문서에서 찾은 진실을 꾸며낸 전설로 전하는 셈이라, 이 이야기는 **진실 전달의 장치**로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Raiden Gokaden",
+       "revision": 677497,
+       "section": "History > Legacy",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Five Kasen",
+       "revision": 675801,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M4 and Q5; the interpretation follows from them.",
+     "quote": "Kazuha said he would wait for us at The Five Kasen Plaza today. Let's go find him there.",
+     "sentences": [
+      {
+       "t_raw": "Ayato의 계획은 Irodori Festival이 진행되는 동안 이어졌고, 한편 Kaedehara Kazuha는 The Five Kasen Plaza에서 기다리겠다고 했으며 일행은 그를 찾아가기로 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아야토의 계획은 이로도리 축제가 진행되는 동안 이어졌고, 한편 카에데하라 카즈하는 고카센 광장에서 기다리겠다고 했으며 일행은 그를 찾아가기로 한다."
+      },
+      {
+       "t_raw": "Ayato의 계획과 Kazuha가 기다리는 The Five Kasen Plaza가 The Five Kasen이라는 이름으로 이어지는 구도인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아야토의 계획과 카즈하가 기다리는 고카센 광장이 다섯 가선이라는 이름으로 이어지는 구도인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Raiden Gokaden",
+       "revision": 677497,
+       "section": "History > Legacy",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Palace, Dyed in Black (Quest)",
+       "quest_ko": "검게 물든 궁전",
+       "version": "2.6",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches Q3, Q9 and Q8; the interpretation is reasonable.",
+     "quote": "Yes, and now that all four stories have all been collected, the story of The Five Kasen is now fully completed.",
+     "sentences": [
+      {
+       "t_raw": "The Five Kasen의 이야기를 완성한 뒤에도 Paimon에게는 아직 풀지 못한 것이 하나 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다섯 가선의 이야기를 완성한 뒤에도 페이몬에게는 아직 풀지 못한 것이 하나 남아 있다."
+      },
+      {
+       "t_raw": "Paimon은 The Five Kasen에 관한 이야기를 남긴 사람을 말하는 거냐고 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 다섯 가선에 관한 이야기를 남긴 사람을 말하는 거냐고 되묻는다."
+      },
+      {
+       "t_raw": "한편 네 편의 이야기가 모두 모이자 The Five Kasen의 이야기는 **완성**되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 네 편의 이야기가 모두 모이자 다섯 가선의 이야기는 **완성**되었다."
+      },
+      {
+       "t_raw": "이야기는 완성되었지만 그 **이야기를 남긴 사람**을 둘러싼 물음은 남아 있으므로, 이 대목은 아직 풀리지 않은 떡밥으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이야기는 완성되었지만 그 **이야기를 남긴 사람**을 둘러싼 물음은 남아 있으므로, 이 대목은 아직 풀리지 않은 떡밥으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A New Painting in Pale Scarlet (Quest)",
+       "quest_ko": "옅은 주홍색의 새 그림",
+       "version": "2.6",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "What the Blue Flowers Left Behind (Quest)",
+       "quest_ko": "파란 꽃이 남긴 것",
+       "version": "2.6",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "A New Painting in Pale Scarlet (Quest)",
+       "quest_ko": "옅은 주홍색의 새 그림",
+       "version": "2.6",
+       "speaker": "Albedo"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches M3 and Q5.",
+     "quote": "Kazuha said he would wait for us at The Five Kasen Plaza today. Let's go find him there.",
+     "sentences": [
+      {
+       "t_raw": "이번에 새로 열린 축제 기간에 International Trade Association 앞 작은 광장은 **The Five Kasen Plaza**라고 불렸고, 근처 상점들은 특별한 라이트 노벨 상품을 팔았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이번에 새로 열린 축제 기간에 만국 상회 앞 작은 광장은 **고카센 광장**라고 불렸고, 근처 상점들은 특별한 라이트 노벨 상품을 팔았다."
+      },
+      {
+       "t_raw": "Paimon은 Kazuha가 **The Five Kasen Plaza**에서 기다리겠다고 했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 카즈하가 **고카센 광장**에서 기다리겠다고 했다고 전한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Irodori Festival",
+       "revision": 679811,
+       "section": "History",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Palace, Dyed in Black (Quest)",
+       "quest_ko": "검게 물든 궁전",
+       "version": "2.6",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches Q6, Q4 and Q10.",
+     "quote": "All the information that we could find is compiled here.",
+     "sentences": [
+      {
+       "t_raw": "Hirayama는 **The Five Kasen**에 관한 자료를 모아 두었고, 찾을 수 있는 정보는 모두 그곳에 정리되어 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히라야마는 **다섯 가선**에 관한 자료를 모아 두었고, 찾을 수 있는 정보는 모두 그곳에 정리되어 있다고 말한다."
+      },
+      {
+       "t_raw": "Calx는 축제 동안 The Five Kasen의 초상화를 그리느라 바쁘다는 소식이 전해졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "칼크스는 축제 동안 다섯 가선의 초상화를 그리느라 바쁘다는 소식이 전해졌다."
+      },
+      {
+       "t_raw": "Kuroda는 축제를 위해 The Five Kasen을 그리도록 초대받은 사람이 Calx가 맞느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쿠로다는 축제를 위해 다섯 가선을 그리도록 초대받은 사람이 칼크스가 맞느냐고 묻는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Strange Tale of Suikou's Tipsy Tincture (Quest)",
+       "quest_ko": "취중 취암의 괴이한 사건",
+       "version": "2.6",
+       "speaker": "Hirayama"
+      },
+      {
+       "kind": "quest",
+       "quest": "What the Blue Flowers Left Behind (Quest)",
+       "quest_ko": "파란 꽃이 남긴 것",
+       "version": "2.6",
+       "speaker": "Xingqiu"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Strange Tale of Suikou's Tipsy Tincture (Quest)",
+       "quest_ko": "취중 취암의 괴이한 사건",
+       "version": "2.6",
+       "speaker": "Kuroda"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of the Albedo line.",
+     "t_raw": "네, 이제 네 개의 이야기가 모두 모였으니, The Five Kasen의 이야기가 완전히 완성되었군요.",
+     "en": "Yes, and now that all four stories have all been collected, the story of The Five Kasen is now fully completed.",
+     "speaker": "Albedo",
+     "source": {
+      "kind": "quest",
+      "quest": "A New Painting in Pale Scarlet (Quest)",
+      "quest_ko": "옅은 주홍색의 새 그림",
+      "version": "2.6",
+      "speaker": "Albedo"
+     },
+     "t": "네, 이제 네 개의 이야기가 모두 모였으니, 다섯 가선의 이야기가 완전히 완성되었군요.",
+     "speaker_ko": "알베도"
+    },
+    {
+     "section": "정체와 색의 전설",
+     "status": "accepted",
+     "note": "Faithful translation of the Albedo line.",
+     "t_raw": "어디 보자... 그래, 내가 의심했던 그대로다. \"Suikou\"와 \"Aoi no Okina\" 같은 호칭은 The Five Kasen의 실제 이름이 아니다.",
+     "en": "Let's see here... Yes, it's just as I had suspected. Monikers such as \"Suikou\" and \"Aoi no Okina\" aren't the real names of The Five Kasen.",
+     "speaker": "Albedo",
+     "source": {
+      "kind": "quest",
+      "quest": "The Strange Tale of Suikou's Tipsy Tincture (Quest)",
+      "quest_ko": "취중 취암의 괴이한 사건",
+      "version": "2.6",
+      "speaker": "Albedo"
+     },
+     "t": "어디 보자... 그래, 내가 의심했던 그대로다. \"수광\"과 \"아오이 no Okina\" 같은 호칭은 다섯 가선의 실제 이름이 아니다.",
+     "speaker_ko": "알베도"
+    },
+    {
+     "section": "잃어버린 역사",
+     "status": "accepted",
+     "note": "Faithful translation of the Albedo line.",
+     "t_raw": "게다가 Kuronushi는 이야기들 가운데 전용 장이 없다. 마치 그가 The Five Kasen의 \"무대 뒤 역할\"인 것처럼 보인다.",
+     "en": "Moreover, Kuronushi lacks a dedicated chapter among the stories. It's as if he is a \"behind-the-scenes role\" of The Five Kasen.",
+     "speaker": "Albedo",
+     "source": {
+      "kind": "quest",
+      "quest": "The Five Colors' True Form",
+      "quest_ko": "오색의 빛나는 진상",
+      "version": "2.6",
+      "speaker": "Albedo"
+     },
+     "t": "게다가 Kuronushi는 이야기들 가운데 전용 장이 없다. 마치 그가 다섯 가선의 \"무대 뒤 역할\"인 것처럼 보인다.",
+     "speaker_ko": "알베도"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of the Paimon line.",
+     "t_raw": "Kazuha가 오늘 The Five Kasen Plaza에서 우리를 기다리겠다고 했다. 그곳에서 그를 찾아가자.",
+     "en": "Kazuha said he would wait for us at The Five Kasen Plaza today. Let's go find him there.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Palace, Dyed in Black (Quest)",
+      "quest_ko": "검게 물든 궁전",
+      "version": "2.6",
+      "speaker": "Paimon"
+     },
+     "t": "카즈하가 오늘 고카센 광장에서 우리를 기다리겠다고 했다. 그곳에서 그를 찾아가자.",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of the Paimon line.",
+     "t_raw": "응? The Five Kasen에 관한 그 이야기들을 남긴 사람을 말하는 거야?",
+     "en": "Huh? You mean whoever left behind those stories about The Five Kasen?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "What the Blue Flowers Left Behind (Quest)",
+      "quest_ko": "파란 꽃이 남긴 것",
+      "version": "2.6",
+      "speaker": "Paimon"
+     },
+     "t": "응? 다섯 가선에 관한 그 이야기들을 남긴 사람을 말하는 거야?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of the Kuroda line.",
+     "t_raw": "어, 실례지만, 축제를 위해 The Five Kasen을 그리도록 초대받은 Calx가 바로 당신인가요?",
+     "en": "Uh, excuse me, but you must be Calx, the one who was invited to paint The Five Kasen for the festival?",
+     "speaker": "Kuroda",
+     "source": {
+      "kind": "quest",
+      "quest": "The Strange Tale of Suikou's Tipsy Tincture (Quest)",
+      "quest_ko": "취중 취암의 괴이한 사건",
+      "version": "2.6",
+      "speaker": "Kuroda"
+     },
+     "t": "어, 실례지만, 축제를 위해 다섯 가선을 그리도록 초대받은 칼크스가 바로 당신인가요?",
+     "speaker_ko": "쿠로다"
+    }
+   ]
+  }
+ ]
+}

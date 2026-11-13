@@ -1,0 +1,538 @@
+{
+ "node": "Sea of Clouds",
+ "articles": [
+  {
+   "node": "Sea of Clouds",
+   "from_version": "1.2",
+   "cutoff": "2021-02-02T00:00:00Z",
+   "input": [
+    {
+     "page": "Sea of Clouds",
+     "url": "https://genshin-impact.fandom.com/wiki/Sea_of_Clouds",
+     "revision": 91993
+    }
+   ],
+   "input_counts": {
+    "mentions": 5,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 340,
+   "input_cut": false,
+   "input_hash": "86baeebd51df",
+   "writer": "glm,or-ds,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported. The Aoyin sighting quote backs the interpretation.",
+     "quote": "The Sea of Clouds is a region in the southeast part of the Liyue nation.",
+     "sentences": [
+      {
+       "t_raw": "Sea of Clouds는 Liyue 국가의 남동부에 위치한 지역이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운래해는 리월 국가의 남동부에 위치한 지역이다."
+      },
+      {
+       "t_raw": "Guyun Stone Forest, Liyue Harbor, Mt. Tianheng 같은 주요 지물이 이 지역 안에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고운각, 리월항, 천형산 같은 주요 지물이 이 지역 안에 자리한다."
+      },
+      {
+       "t_raw": "바다 근처에서 전설의 존재 Aoyin의 목격담이 전해지는 등, 단순한 지명이 아니라 Liyue의 역사와 모험이 교차하는 땅이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "바다 근처에서 전설의 존재 오인의 목격담이 전해지는 등, 단순한 지명이 아니라 리월의 역사와 모험이 교차하는 땅이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chongyun/Profile",
+       "revision": 95941,
+       "section": "Character Stories > Story 4",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "(1) The English gives no scenery of sea, harbor and mountain connected together. (2) Calling it a good 'starting point' for a Liyue journey is a guess with no basis. (3) The claim that you won't need to plan your route from there is unsupported. The Handbook only says to visit the Statue of The Seven.",
+     "quote": "The Sea of Clouds is a region in the southeast part of the Liyue nation.",
+     "sentences": [
+      {
+       "t_raw": "Sea of Clouds는 **Liyue 남동부**에 자리한 지역이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운래해는 **리월 남동부**에 자리한 지역이다."
+      },
+      {
+       "t_raw": "지역 안에는 Guyun Stone Forest, Liyue Harbor, Mt. Tianheng 같은 주요 지역들이 함께 속해 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "지역 안에는 고운각, 리월항, 천형산 같은 주요 지역들이 함께 속해 있다."
+      },
+      {
+       "t_raw": "모험가라면 Adventurer Handbook의 경험 챕터 안내처럼 이곳 Sea of Clouds의 Statue of The Seven을 방문해 보는 일이 Liyue 여정의 한 장면으로 잘 어울리는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "모험가라면 모험 핸드북의 경험 챕터 안내처럼 이곳 운래해의 일곱신상을 방문해 보는 일이 리월 여정의 한 장면으로 잘 어울리는 것으로 보인다."
+      },
+      {
+       "t_raw": "Adventurer Handbook의 경험 챕터에서도 Sea of Clouds의 Statue of The Seven을 방문할 것이 안내되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "모험 핸드북의 경험 챕터에서도 운래해의 일곱신상을 방문할 것이 안내되어 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Adventurer Handbook",
+       "revision": 84446,
+       "section": "Experience > Chapter 5",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "trimmed",
+     "note": "(0) 'Flagship attraction' and islands 'scattered over the sea' are not stated. (1) The view from Liyue Harbor, puzzles and sleeping bosses in the rock forest are not in the English. (2) The reference to detailed documents below is not a fact from the material.",
+     "quote": "It is an archipelago of seven large islands and smaller offshoots.",
+     "sentences": [
+      {
+       "t_raw": "그중 Guyun Stone Forest는 Sea of Clouds, Liyue에 속한 지역으로, 일곱 개의 큰 섬과 더 작은 부속 섬들로 이루어진 군도다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그중 고운각은 운래해, 리월에 속한 지역으로, 일곱 개의 큰 섬과 더 작은 부속 섬들로 이루어진 군도다."
+      },
+      {
+       "t_raw": "Guyun Stone Forest, Liyue Harbor, Mt. Tianheng 같은 주요 지역에 Domain of Guyun, Golden House, Anemo Monument와 Pressure Sensor 퍼즐, Geo Hypostasis, Treasure Hoarders 같은 요소까지 더해져, 이 지역 하나에도 둘러볼 거리가 겹겹이 쌓여 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "고운각, 리월항, 천형산 같은 주요 지역에 하늘을 찌르는 땅, 황금옥, Anemo Monument와 Pressure Sensor 퍼즐, 무상의 바위, 보물 사냥단 같은 요소까지 더해져, 이 지역 하나에도 둘러볼 거리가 겹겹이 쌓여 있는 것으로 보인다."
+      },
+      {
+       "t_raw": "자세한 명소와 그곳에 얽힌 이야기는 아래 문서에서 하나씩 짚어 본다.",
+       "interp": false,
+       "dropped": true,
+       "t": "자세한 명소와 그곳에 얽힌 이야기는 아래 문서에서 하나씩 짚어 본다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Guyun Stone Forest",
+       "revision": 45034,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Anemo Monument",
+      "Pressure Sensor"
+     ]
+    },
+    {
+     "section": "주요 지물과 명소",
+     "status": "accepted",
+     "note": "Matches M4: an archipelago of seven large islands and smaller offshoots.",
+     "quote": "Guyun Stone Forest is an area in the Sea of Clouds, Liyue. It is an archipelago of seven large islands and smaller offshoots.",
+     "sentences": [
+      {
+       "t_raw": "Guyun Stone Forest는 Sea of Clouds 안에 있는 Liyue의 지역이며, **7개의 큰 섬**과 더 작은 부속 섬들로 이루어진 군도다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고운각은 운래해 안에 있는 리월의 지역이며, **7개의 큰 섬**과 더 작은 부속 섬들로 이루어진 군도다."
+      },
+      {
+       "t_raw": "큰 섬 일곱과 부속 섬들이 함께 있다는 점에서 이곳은 한 섬이 아니라 여러 섬이 모인 장소로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "큰 섬 일곱과 부속 섬들이 함께 있다는 점에서 이곳은 한 섬이 아니라 여러 섬이 모인 장소로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guyun Stone Forest",
+       "revision": 45034,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "주요 지물과 명소",
+     "latin_left": []
+    },
+    {
+     "section": "주요 지물과 명소",
+     "status": "accepted",
+     "note": "All sentences match A3–A6, and the interpretation is reasonable.",
+     "quote": "Enter the Golden House (Trounce Domain)",
+     "sentences": [
+      {
+       "t_raw": "Sea of Clouds의 주요 지물에는 **Domain of Guyun**과 **Golden House**가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운래해의 주요 지물에는 **하늘을 찌르는 땅**과 **황금옥**이 있다."
+      },
+      {
+       "t_raw": "Domain of Guyun은 Artifact Domain이고, Golden House는 Trounce Domain이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하늘을 찌르는 땅은 성유물 비경이고, 황금옥은 영역 토벌이다."
+      },
+      {
+       "t_raw": "Anemo Monument와 Pressure Sensor 퍼즐도 주요 지물로 제시되며, Geo Hypostasis는 일반 보스로 분류된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Anemo Monument와 Pressure Sensor 퍼즐도 주요 지물로 제시되며, 무상의 바위는 일반 보스로 분류된다."
+      },
+      {
+       "t_raw": "이러한 지물이 한 지역의 주요 목록에 함께 오르는 점에서 Sea of Clouds의 모험 요소는 여러 갈래로 나뉜다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이러한 지물이 한 지역의 주요 목록에 함께 오르는 점에서 운래해의 모험 요소는 여러 갈래로 나뉜다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": "Notable Features",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": "Notable Features",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": "Notable Features",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": "Notable Features > Enemies",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "주요 지물과 명소",
+     "latin_left": [
+      "Anemo Monument",
+      "Pressure Sensor"
+     ]
+    },
+    {
+     "section": "주요 지물과 명소",
+     "status": "accepted",
+     "note": "Matches M2 and the Handbook Chapter 5 Experience section. The interpretation is reasonable.",
+     "quote": "Visit the Statue of The Seven at Sea of Clouds",
+     "sentences": [
+      {
+       "t_raw": "Adventurer Handbook의 Chapter 5 경험 항목은 Sea of Clouds의 Statue of The Seven 방문을 제시한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모험 핸드북의 Chapter 5 경험 항목은 운래해의 일곱신상 방문을 제시한다."
+      },
+      {
+       "t_raw": "Chapter 5의 경험 항목에서 방문 목표로 등장한다는 점은 Statue of The Seven이 Sea of Clouds에서 모험가가 찾아가도록 제시된 지물임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Chapter 5의 경험 항목에서 방문 목표로 등장한다는 점은 일곱신상이 운래해에서 모험가가 찾아가도록 제시된 지물임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Adventurer Handbook",
+       "revision": 84446,
+       "section": "Experience > Chapter 5",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "주요 지물과 명소",
+     "latin_left": [
+      "Chapter",
+      "Chapter"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences supported; Treasure Hoarders is listed as an enemy of the region in the full material.",
+     "quote": "What? Sightings of the legendary Aoyin near the Sea of Clouds? Leave it to me!",
+     "sentences": [
+      {
+       "t_raw": "Sea of Clouds 근처에서 전설의 **Aoyin** 목격담이 돌자 Chongyun은 “What? Sightings of the legendary Aoyin near the Sea of Clouds? Leave it to me!”라고 응답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운래해 근처에서 전설의 **오인** 목격담이 돌자 중운은 “뭐? 운래해 근처에서 전설의 오인을 목격했다고? 나에게 맡겨!”라고 응답한다.",
+       "polish": {
+        "from": "운래해 근처에서 전설의 **오인** 목격담이 돌자 중운은 “What? Sightings of the legendary 오인 near the 운래해? Leave it to me!”라고 응답한다.",
+        "text": "운래해 근처에서 전설의 **오인** 목격담이 돌자 중운은 “뭐? 운래해 근처에서 전설의 오인을 목격했다고? 나에게 맡겨!”라고 응답한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그는 목격담의 주체를 전설의 Aoyin으로 언급하며, 자신에게 맡기라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 목격담의 주체를 전설의 오인으로 언급하며, 자신에게 맡기라고 말한다."
+      },
+      {
+       "t_raw": "같은 지역에서는 **Treasure Hoarders**가 적으로 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "같은 지역에서는 **보물 사냥단**이 적으로 등장한다."
+      },
+      {
+       "t_raw": "전설을 좇는 Chongyun의 움직임과 Treasure Hoarders라는 적대 세력을 나란히 두면, Sea of Clouds는 목격담과 적대 세력이 함께 얽힌 곳으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "전설을 좇는 중운의 움직임과 보물 사냥단라는 적대 세력을 나란히 두면, 운래해는 목격담과 적대 세력이 함께 얽힌 곳으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chongyun/Profile",
+       "revision": 95941,
+       "section": "Character Stories > Story 4",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": "Notable Features > Enemies",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences supported.",
+     "quote": "What? Sightings of the legendary Aoyin near the Sea of Clouds? Leave it to me!",
+     "sentences": [
+      {
+       "t_raw": "Sea of Clouds는 Liyue 남동부의 지역이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운래해는 리월 남동부의 지역이다."
+      },
+      {
+       "t_raw": "Chongyun은 **전설의 Aoyin**이 Sea of Clouds 근처에서 목격되었다는 이야기에 “What? Sightings of the legendary Aoyin near the Sea of Clouds? Leave it to me!”라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "중운은 **전설의 오인**이 운래해 근처에서 목격되었다는 이야기에 “뭐? 운래해 근처에서 전설의 오인을 목격했다고? 나에게 맡겨!”라고 답한다.",
+       "polish": {
+        "from": "중운은 **전설의 오인**이 운래해 근처에서 목격되었다는 이야기에 “What? Sightings of the legendary 오인 near the 운래해? Leave it to me!”라고 답한다.",
+        "text": "중운은 **전설의 오인**이 운래해 근처에서 목격되었다는 이야기에 “뭐? 운래해 근처에서 전설의 오인을 목격했다고? 나에게 맡겨!”라고 답한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "지역명과 목격담이 한 대사에서 맞물리면서, Aoyin에 대한 이야기는 Sea of Clouds 근처를 무대로 떠오른다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "지역명과 목격담이 한 대사에서 맞물리면서, 오인에 대한 이야기는 운래해 근처를 무대로 떠오른다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chongyun/Profile",
+       "revision": 95941,
+       "section": "Character Stories > Story 4",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The English names the Story Quest itself 'Sea of Clouds, Sea of People'. It does not say that this is the title of the first act.",
+     "quote": "His dialogue also changes after completing the first act of Ganyu's Story Quest, Sea of Clouds, Sea of People.",
+     "sentences": [
+      {
+       "t_raw": "Ganyu의 Story Quest 제목은 **Sea of Clouds, Sea of People**이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "감우의 전설 임무 제목은 **구름의 바다, 인간의 바다**이다."
+      },
+      {
+       "t_raw": "Uncle Tian의 대화는 이 Story Quest 첫 막을 완료한 뒤 달라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천추 아저씨의 대화는 이 전설 임무 첫 막을 완료한 뒤 달라진다."
+      },
+      {
+       "t_raw": "Sea of Clouds가 Liyue 남동부의 지역명임을 고려하면, 제목은 지역명과 사람을 나란히 놓아 지역과 그 사람들 이야기를 함께 가리키는 것으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "운래해가 리월 남동부의 지역명임을 고려하면, 제목은 지역명과 사람을 나란히 놓아 지역과 그 사람들 이야기를 함께 가리키는 것으로 읽힌다."
+      },
+      {
+       "t_raw": "Uncle Tian의 대화 변화는 이 Story Quest가 지역의 인물과 맞닿아 있음을 보여주는 단서로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "천추 아저씨의 대화 변화는 이 전설 임무가 지역의 인물과 맞닿아 있음을 보여주는 단서로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sea of Clouds",
+       "revision": 91993,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Uncle Tian",
+       "revision": 98483,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences supported.",
+     "quote": "Following a certain dialogue branch for the first time gives you Fish x5.",
+     "sentences": [
+      {
+       "t_raw": "Uncle Tian의 특정 대화 분기를 처음 따라가면 **Fish 5개**를 얻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천추 아저씨의 특정 대화 분기를 처음 따라가면 **생선 살코기 5개**를 얻는다."
+      },
+      {
+       "t_raw": "Ganyu의 Story Quest 첫 막, Sea of Clouds, Sea of People을 완료한 뒤에는 Uncle Tian의 **대화가 달라진다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "감우의 전설 임무 첫 막, 구름의 바다, 인간의 바다를 완료한 뒤에는 천추 아저씨의 **대화가 달라진다**."
+      },
+      {
+       "t_raw": "Uncle Tian에 관한 보상과 대사 변화가 함께 확인되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "천추 아저씨에 관한 보상과 대사 변화가 함께 확인되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Uncle Tian",
+       "revision": 98483,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

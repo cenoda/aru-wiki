@@ -20,41 +20,41 @@
    "input_chars": 258,
    "input_cut": false,
    "input_hash": "5220d512c359",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1-A4 and M2.",
      "quote": "It specializes in opera, theater, and musical performances, and it's very popular in Snezhnayan circles, especially with the Fatui Harbingers.",
      "sentences": [
       {
-       "t_raw": "Korolevskiy Troupe는 Snezhnaya에 기반을 둔 공연단이다.",
+       "t_raw": "**Korolevskiy Troupe**는 **Snezhnaya에 기반을 둔 공연단**이다.",
        "interp": false,
        "dropped": false,
-       "t": "코롤레프스키 극단은 스네즈나야에 기반을 둔 공연단이다."
+       "t": "**코롤레프스키 극단**은 **스네즈나야에 기반을 둔 공연단**이다."
       },
       {
-       "t_raw": "오페라, 연극, 음악 공연을 전문으로 하며 Snezhnaya의 사교계, 특히 Fatui 집행관들 사이에서 매우 인기가 높다.",
+       "t_raw": "오페라, 연극, 음악 공연을 전문으로 하며 Snezhnaya의 여러 범위에서 인기가 높고, 특히 **Fatui 집행관들** 사이에서 인기가 높다.",
        "interp": false,
        "dropped": false,
-       "t": "오페라, 연극, 음악 공연을 전문으로 하며 스네즈나야의 사교계, 특히 우인단 집행관들 사이에서 매우 인기가 높다."
+       "t": "오페라, 연극, 음악 공연을 전문으로 하며 스네즈나야의 여러 범위에서 인기가 높고, 특히 **우인단 집행관들** 사이에서 인기가 높다."
       },
       {
-       "t_raw": "구성원으로는 Prima Ballerina Odette와 Prima Soprano Vodyanitsa가 알려져 있다.",
+       "t_raw": "Odette는 Prima Ballerina이고 Vodyanitsa는 Prima Soprano이며, Odette는 Fatui 일원으로서 스승인 Signora의 집행관 자리를 이어받을 유력 후보이다.",
        "interp": false,
        "dropped": false,
-       "t": "구성원으로는 Prima Ballerina Odette와 Prima Soprano Vodyanitsa가 알려져 있다."
+       "t": "오데트는 Prima Ballerina이고 보댜니차는 수석 소프라노이며, 오데트는 우인단 일원으로서 스승인 시뇨라의 집행관 자리를 이어받을 유력 후보이다."
       },
       {
-       "t_raw": "Snezhnaya의 공연단이 Fatui 집행관들 사이에서 인기가 높다는 점은 이 극단의 활동이 Fatui의 관심과 맞닿아 있음을 보여준다고 볼 수 있다.",
+       "t_raw": "이처럼 공연단이 Fatui 집행관들의 관심을 받고 그 구성원이 집행관 후계 후보라는 점은 이 공연단이 Fatui와 맞닿아 있다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "스네즈나야의 공연단이 우인단 집행관들 사이에서 인기가 높다는 점은 이 극단의 활동이 우인단의 관심과 맞닿아 있음을 보여준다고 볼 수 있다."
+       "t": "이처럼 공연단이 우인단 집행관들의 관심을 받고 그 구성원이 집행관 후계 후보라는 점은 이 공연단이 우인단과 맞닿아 있다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -89,43 +89,49 @@
        "section": "Members",
        "paragraph": "A4",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Odette",
+       "revision": 2141487,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Fire and Ice"
+        }
+       ]
       }
      ],
      "heading": null,
      "latin_left": [
-      "Prima Ballerina Odette",
-      "Prima Soprano Vodyanitsa"
+      "Prima Ballerina"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "The interpretation is hedged and follows from the Harbingers' popularity.",
      "quote": "It specializes in opera, theater, and musical performances, and it's very popular in Snezhnayan circles, especially with the Fatui Harbingers.",
      "sentences": [
       {
-       "t_raw": "Korolevskiy Troupe는 Snezhnaya를 기반으로 활동하는 공연단이다.",
+       "t_raw": "Korolevskiy Troupe는 **Snezhnaya에 기반을 둔 공연단**으로, 오페라·연극·음악 공연을 전문으로 한다.",
        "interp": false,
        "dropped": false,
-       "t": "코롤레프스키 극단은 스네즈나야를 기반으로 활동하는 공연단이다."
+       "t": "코롤레프스키 극단은 **스네즈나야에 기반을 둔 공연단**으로, 오페라·연극·음악 공연을 전문으로 한다."
       },
       {
-       "t_raw": "**오페라, 연극, 음악 공연**을 전문으로 하며 Snezhnaya 사교계에서 큰 인기를 얻고 있고, 특히 **Fatui Harbingers** 사이에서 인기가 높다.",
+       "t_raw": "Snezhnaya 사교계에서 인기가 높으며, 특히 Fatui 집행관들 사이에서 큰 호응을 얻고 있다.",
        "interp": false,
        "dropped": false,
-       "t": "**오페라, 연극, 음악 공연**을 전문으로 하며 스네즈나야 사교계에서 큰 인기를 얻고 있고, 특히 **우인단 집행관** 사이에서 인기가 높다."
+       "t": "스네즈나야 사교계에서 인기가 높으며, 특히 우인단 집행관들 사이에서 큰 호응을 얻고 있다."
       },
       {
-       "t_raw": "알려진 구성원으로는 Prima Ballerina Odette와 Prima Soprano Vodyanitsa가 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "알려진 구성원으로는 Prima Ballerina Odette와 Prima Soprano Vodyanitsa가 있다."
-      },
-      {
-       "t_raw": "이처럼 여러 장르를 아우르며 Fatui Harbingers에게 특히 인기를 끈다는 점은 이 공연단이 Snezhnaya 사교계에서 두드러지는 존재임을 보여 준다고 볼 수 있다.",
+       "t_raw": "이러한 인기는 단순한 예술적 명성을 넘어, 권력의 중심부와도 밀접하게 맞닿아 있는 한 축으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이처럼 여러 장르를 아우르며 우인단 집행관에게 특히 인기를 끈다는 점은 이 공연단이 스네즈나야 사교계에서 두드러지는 존재임을 보여 준다고 볼 수 있다."
+       "t": "이러한 인기는 단순한 예술적 명성을 넘어, 권력의 중심부와도 밀접하게 맞닿아 있는 한 축으로 보인다."
       }
      ],
      "sources": [
@@ -144,7 +150,43 @@
        "section": null,
        "paragraph": "A2",
        "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts match A3, A4 and M1/M2. The interpretation is reasonable.",
+     "quote": "She is the Prima Ballerina of the Korolevskiy Troupe, known for her frosty elegance on stage.",
+     "sentences": [
+      {
+       "t_raw": "현재 공연단의 구성원으로 알려진 인물은 **Odette Spessiva**와 Vodyanitsa 두 명이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 공연단의 구성원으로 알려진 인물은 **Odette Spessiva**와 보댜니차 두 명이다."
       },
+      {
+       "t_raw": "Odette Spessiva는 프리마 발레리나로, 얼음 같은 우아함이 무대를 빛낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Odette Spessiva는 프리마 발레리나로, 얼음 같은 우아함이 무대를 빛낸다."
+      },
+      {
+       "t_raw": "Vodyanitsa는 프리마 소프라노를 맡고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "보댜니차는 프리마 소프라노를 맡고 있다."
+      },
+      {
+       "t_raw": "이처럼 직책이 함께 거론된 두 사람은 공연단의 상징적 얼굴로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 직책이 함께 거론된 두 사람은 공연단의 상징적 얼굴로 볼 수 있다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Korolevskiy Troupe",
@@ -159,53 +201,6 @@
        "revision": 2128978,
        "section": "Members",
        "paragraph": "A4",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": [
-      "Prima Ballerina Odette",
-      "Prima Soprano Vodyanitsa"
-     ]
-    },
-    {
-     "section": "정체와 구성",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "She is the Prima Ballerina of the Korolevskiy Troupe, known for her frosty elegance on stage.",
-     "sentences": [
-      {
-       "t_raw": "구성원 가운데 Odette Spessiva는 Korolevskiy Troupe의 **Prima Ballerina**이며, 무대에서는 서리 같은 우아함으로 알려져 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "구성원 가운데 Odette Spessiva는 코롤레프스키 극단의 **Prima Ballerina**이며, 무대에서는 서리 같은 우아함으로 알려져 있다."
-      },
-      {
-       "t_raw": "Odette는 **Fatui** 소속으로, 현재 자신의 스승인 Signora의 집행관 자리를 이어받을 유력 후보로 거론된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오데트는 **우인단** 소속으로, 현재 자신의 스승인 시뇨라의 집행관 자리를 이어받을 유력 후보로 거론된다."
-      },
-      {
-       "t_raw": "어린 시절 Signora에게 발레를 배운 Odette는 이후 Signora의 Fatui 부대에서 고통을 느끼지 못할 만큼 혹독한 훈련을 받았고, Signora의 지도 아래 Prima Ballerina가 될 정도로 발레 실력을 쌓았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "어린 시절 시뇨라에게 발레를 배운 오데트는 이후 시뇨라의 우인단 부대에서 고통을 느끼지 못할 만큼 혹독한 훈련을 받았고, 시뇨라의 지도 아래 Prima Ballerina가 될 정도로 발레 실력을 쌓았다."
-      },
-      {
-       "t_raw": "스승의 지도와 혹독한 훈련을 거쳐 Prima Ballerina가 된 점은 무대에서의 서리 같은 우아함과 맞물려, 그 우아함이 훈련과 지도에서 비롯된 것으로 보이게 한다.",
-       "interp": true,
-       "dropped": false,
-       "t": "스승의 지도와 혹독한 훈련을 거쳐 Prima Ballerina가 된 점은 무대에서의 서리 같은 우아함과 맞물려, 그 우아함이 훈련과 지도에서 비롯된 것으로 보이게 한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Korolevskiy Troupe",
-       "revision": 2128978,
-       "section": "Members",
-       "paragraph": "A3",
        "wiki_refs": []
       },
       {
@@ -216,6 +211,341 @@
        "paragraph": "M1",
        "wiki_refs": []
       },
+      {
+       "kind": "wiki",
+       "page": "Odette",
+       "revision": 2141487,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Fire and Ice"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Odette Spessiva",
+      "Odette Spessiva"
+     ]
+    },
+    {
+     "section": "정체 — 공연단의 구성과 명성",
+     "status": "accepted",
+     "note": "The facts match the English.",
+     "quote": "It specializes in opera, theater, and musical performances, and it's very popular in Snezhnayan circles, especially with the Fatui Harbingers.",
+     "sentences": [
+      {
+       "t_raw": "Korolevskiy Troupe는 오페라·연극·음악 공연을 전문으로 하며, Snezhnaya 내에서 특히 Fatui 집행관들 사이에서 인기가 높다.",
+       "interp": false,
+       "dropped": false,
+       "t": "코롤레프스키 극단은 오페라·연극·음악 공연을 전문으로 하며, 스네즈나야 내에서 특히 우인단 집행관들 사이에서 인기가 높다."
+      },
+      {
+       "t_raw": "공연단에는 Odette Spessiva가 무대 위에서 **frosty elegance**를 보이는 **Prima Ballerina**로, Vodyanitsa가 **Prima Soprano**로 이름을 올리고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공연단에는 Odette Spessiva가 무대 위에서 **frosty elegance**를 보이는 **Prima Ballerina**로, 보댜니차가 **수석 소프라노**로 이름을 올리고 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Korolevskiy Troupe",
+       "revision": 2128978,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Korolevskiy Troupe",
+       "revision": 2128978,
+       "section": "Members",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Korolevskiy Troupe",
+       "revision": 2128978,
+       "section": "Members",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Odette/Storyline",
+       "revision": 2140903,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Odette",
+       "revision": 2141487,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Fire and Ice"
+        }
+       ]
+      }
+     ],
+     "heading": "정체 — 공연단의 구성과 명성",
+     "latin_left": [
+      "Odette Spessiva",
+      "Prima Ballerina"
+     ]
+    },
+    {
+     "section": "정체 — 공연단의 구성과 명성",
+     "status": "accepted",
+     "note": "The fact matches M2. The interpretation is hedged and reasonable.",
+     "quote": "She is the Prima Ballerina of the Korolevskiy Troupe, known for her frosty elegance on stage.",
+     "sentences": [
+      {
+       "t_raw": "또한 Odette Spessiva는 Fatui의 일원이며, 스승 Signora의 집행관 자리를 이을 후보로 거론되고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 Odette Spessiva는 우인단의 일원이며, 스승 시뇨라의 집행관 자리를 이을 후보로 거론되고 있다."
+      },
+      {
+       "t_raw": "이러한 배경은 예술적 명성과 집행관들의 호응, 그리고 Odette Spessiva의 입지가 어우러지며 Korolevskiy Troupe를 Snezhnaya 권력과 밀접하게 연결된 문화 거점으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이러한 배경은 예술적 명성과 집행관들의 호응, 그리고 Odette Spessiva의 입지가 어우러지며 코롤레프스키 극단을 스네즈나야 권력과 밀접하게 연결된 문화 거점으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Korolevskiy Troupe",
+       "revision": 2128978,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Odette",
+       "revision": 2141487,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Fire and Ice"
+        }
+       ]
+      }
+     ],
+     "heading": "정체 — 공연단의 구성과 명성",
+     "latin_left": [
+      "Odette Spessiva",
+      "Odette Spessiva"
+     ]
+    },
+    {
+     "section": "드러난 역사 — The Mountain Sparrow와 집행관 회동",
+     "status": "accepted",
+     "note": "The English only says the meeting came a short time after the performance. It gives no link between them. Saying the performance was not merely cultural, and was a social scene tied to the Fatui plan, goes beyond the material and presents a guess as an implication.",
+     "quote": "Shortly before the start of the Traveler's journey, Dottore attended a performance, \"The Mountain Sparrow,\" by the Korolevskiy Troupe, with Signora, Sandrone, Columbina, and Pantalone.",
+     "sentences": [
+      {
+       "t_raw": "Traveler의 여정 직전, Dottore, Signora, Sandrone, Columbina, Pantalone이 Korolevskiy Troupe의 **The Mountain Sparrow** 공연을 함께 관람했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자의 여정 직전, 도토레, 시뇨라, 산드로네, 콜롬비나, 판탈로네가 코롤레프스키 극단의 **산참새** 공연을 함께 관람했다."
+      },
+      {
+       "t_raw": "이들이 공연을 본 뒤 불과 얼마 지나지 않아 모든 집행관이 회의에 모였다는 점은, 두 사건이 시간상 가까운 시기에 이어진 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "이들이 공연을 본 뒤 불과 얼마 지나지 않아 모든 집행관이 회의에 모였다는 점은, 두 사건이 시간상 가까운 시기에 이어진 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dottore",
+       "revision": 2117364,
+       "section": "Story > Pre-Sumeru",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pantalone",
+       "revision": 2117365,
+       "section": "Story > Past",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sandrone/Storyline",
+       "revision": 2140319,
+       "section": "History > Past",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 산참새와 집행관 회동",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — The Mountain Sparrow와 집행관 회동",
+     "status": "accepted",
+     "note": "All supported: the meeting, Pantalone's financial oversight, and Sandrone's technical needs. The interpretation is reasonable.",
+     "quote": "A short time later, every Harbinger including Pantalone attended a meeting in which Pierro outlined the Tsaritsa's plan to collect all the Gnoses.",
+     "sentences": [
+      {
+       "t_raw": "그로부터 얼마 지나지 않아, 모든 집행관이 모인 회의에서 Pierro가 Tsaritsa의 **Gnoses 수집 계획**을 설명했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그로부터 얼마 지나지 않아, 모든 집행관이 모인 회의에서 피에로가 얼음의 여왕의 **신의 심장 수집 계획**을 설명했다."
+      },
+      {
+       "t_raw": "Pantalone은 재정 안배를 감독하는 역할을 맡았고, Sandrone은 동료 집행관들의 기술적 필요를 책임졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "판탈로네는 재정 안배를 감독하는 역할을 맡았고, 산드로네는 동료 집행관들의 기술적 필요를 책임졌다."
+      },
+      {
+       "t_raw": "Pantalone과 Sandrone이 재정과 기술을 각각 맡은 것은, Gnoses 수집을 위한 집행관들의 역할 분담이 구체적으로 시작되었음을 뜻한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "판탈로네와 산드로네가 재정과 기술을 각각 맡은 것은, 신의 심장 수집을 위한 집행관들의 역할 분담이 구체적으로 시작되었음을 뜻한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dottore",
+       "revision": 2117364,
+       "section": "Story > Pre-Sumeru",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Pantalone",
+       "revision": 2117365,
+       "section": "Story > Past",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sandrone/Storyline",
+       "revision": 2140319,
+       "section": "History > Past",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 산참새와 집행관 회동",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력 — Odette Spessiva와 Signora",
+     "status": "accepted",
+     "note": "Facts match M6. The interpretation is a mild, reasonable reading.",
+     "quote": "Under Signora's tutelage, Odette's proficiency as a ballet progressed enough for her to become the Prima Ballerina of the Korolevskiy Troupe, famed for her frosty elegance on stage.",
+     "sentences": [
+      {
+       "t_raw": "Odette Spessiva는 어린 시절 Signora와 알게 되어 발레를 배웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Odette Spessiva는 어린 시절 시뇨라와 알게 되어 발레를 배웠다."
+      },
+      {
+       "t_raw": "그녀는 이후 Signora가 맡던 Fatui 부대에 들어가 혹독한 훈련을 받았고, 그 훈련은 아픔을 느끼지 않을 정도였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 이후 시뇨라가 맡던 우인단 부대에 들어가 혹독한 훈련을 받았고, 그 훈련은 아픔을 느끼지 않을 정도였다."
+      },
+      {
+       "t_raw": "Signora의 지도 아래 Odette Spessiva의 발레 실력은 Korolevskiy Troupe의 Prima Ballerina가 될 만큼 성장했으며, 무대에서는 **frosty elegance**로 유명해졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시뇨라의 지도 아래 Odette Spessiva의 발레 실력은 코롤레프스키 극단의 프리마 발레리나가 될 만큼 성장했으며, 무대에서는 **서늘한 우아함**으로 유명해졌다.",
+       "polish": {
+        "from": "시뇨라의 지도 아래 Odette Spessiva의 발레 실력은 코롤레프스키 극단의 Prima Ballerina가 될 만큼 성장했으며, 무대에서는 **frosty elegance**로 유명해졌다.",
+        "text": "시뇨라의 지도 아래 Odette Spessiva의 발레 실력은 코롤레프스키 극단의 프리마 발레리나가 될 만큼 성장했으며, 무대에서는 **서늘한 우아함**으로 유명해졌다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이처럼 발레 스승과 조직적 스승이 같은 인물이었다는 점은, Odette Spessiva의 성장이 무대 안팎에서 하나로 이어졌음을 보여주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 발레 스승과 조직적 스승이 같은 인물이었다는 점은, Odette Spessiva의 성장이 무대 안팎에서 하나로 이어졌음을 보여주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Odette/Storyline",
+       "revision": 2140903,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Odette/Storyline",
+       "revision": 2140903,
+       "section": "History",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Fire and Ice"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력 — Odette Spessiva와 시뇨라",
+     "latin_left": [
+      "Odette Spessiva",
+      "Odette Spessiva",
+      "Odette Spessiva"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력 — Odette Spessiva와 Signora",
+     "status": "accepted",
+     "note": "Facts match M2 and M6. '구체적으로' is a slight embellishment but the rumor is still conveyed. The interpretation is acceptable.",
+     "quote": "She is also a member of the Fatui and is currently the favored candidate to inherit the Harbinger seat of her mentor, Signora.",
+     "sentences": [
+      {
+       "t_raw": "Odette Spessiva는 Fatui의 일원이기도 하며, 현재로서는 자신의 멘토인 Signora의 집행관 자리를 물려받을 유력 후보로 여겨진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Odette Spessiva는 우인단의 일원이기도 하며, 현재로서는 자신의 멘토인 시뇨라의 집행관 자리를 물려받을 유력 후보로 여겨진다."
+      },
+      {
+       "t_raw": "Rosalyne가 사망한 지 5년이 지나, 그녀는 멘토의 호칭인 The Fair Lady를 이을 후보로 구체적으로 거론되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로잘린이 사망한 지 5년이 지나, 그녀는 멘토의 호칭인 숙녀를 이을 후보로 구체적으로 거론되었다."
+      },
+      {
+       "t_raw": "발레 스승에서 집행관 후계자로 이어지는 이 거론은, Odette Spessiva가 Signora의 가르침을 무대뿐 아니라 Fatui 내부에서도 계승하고 있음을 보여주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "발레 스승에서 집행관 후계자로 이어지는 이 거론은, Odette Spessiva가 시뇨라의 가르침을 무대뿐 아니라 우인단 내부에서도 계승하고 있음을 보여주는 것으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Odette",
@@ -243,217 +573,29 @@
        ]
       }
      ],
-     "heading": "정체와 구성",
+     "heading": "얽힌 인물과 세력 — Odette Spessiva와 시뇨라",
      "latin_left": [
       "Odette Spessiva",
-      "Prima Ballerina",
-      "Prima Ballerina",
-      "Prima Ballerina"
+      "Odette Spessiva"
      ]
     },
     {
-     "section": "정체와 구성",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Vodyanitsa — Prima Soprano",
-     "sentences": [
-      {
-       "t_raw": "Korolevskiy Troupe의 구성원에는 **Prima Soprano** Vodyanitsa도 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "코롤레프스키 극단의 구성원에는 **Prima Soprano** 보댜니차도 있다."
-      },
-      {
-       "t_raw": "Prima Ballerina Odette와 Prima Soprano Vodyanitsa가 함께 이름을 올린 구성은 공연단의 대표적 구성원에 발레와 성악의 프리마가 함께 있는 것으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "Prima Ballerina Odette와 Prima Soprano Vodyanitsa가 함께 이름을 올린 구성은 공연단의 대표적 구성원에 발레와 성악의 프리마가 함께 있는 것으로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Korolevskiy Troupe",
-       "revision": 2128978,
-       "section": "Members",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Korolevskiy Troupe",
-       "revision": 2128978,
-       "section": "Members",
-       "paragraph": "A4",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 구성",
-     "latin_left": [
-      "Prima Soprano",
-      "Prima Ballerina Odette",
-      "Prima Soprano Vodyanitsa"
-     ]
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "she later lamented how awful it was to be stuck sitting next to the latter two.",
-     "sentences": [
-      {
-       "t_raw": "Traveler의 여정이 시작되기 직전, Korolevskiy Troupe는 **\"The Mountain Sparrow\"**를 공연했고 Dottore, Pantalone, Columbina, Sandrone, Signora가 관람했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자의 여정이 시작되기 직전, 코롤레프스키 극단은 **\"산참새\"**를 공연했고 도토레, 판탈로네, 콜롬비나, 산드로네, 시뇨라가 관람했다."
-      },
-      {
-       "t_raw": "Sandrone는 훗날 Dottore와 Pantalone 옆자리에 앉은 일을 못마땅해했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "산드로네는 훗날 도토레와 판탈로네 옆자리에 앉은 일을 못마땅해했다."
-      },
-      {
-       "t_raw": "얼마 지나지 않아 Sandrone는 Alain의 장례식 꿈을 꾸어 기분이 크게 상했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "얼마 지나지 않아 산드로네는 알랭의 장례식 꿈을 꾸어 기분이 크게 상했다."
-      },
-      {
-       "t_raw": "바로 그 뒤 모든 집행관이 모인 회의가 열렸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "바로 그 뒤 모든 집행관이 모인 회의가 열렸다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dottore",
-       "revision": 2117364,
-       "section": "Story > Pre-Sumeru",
-       "paragraph": "M3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Pantalone",
-       "revision": 2117365,
-       "section": "Story > Past",
-       "paragraph": "M4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Columbina/Storyline",
-       "revision": 2141704,
-       "section": "History > Fatui Recruitment",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Sandrone/Storyline",
-       "revision": 2140319,
-       "section": "History > Past",
-       "paragraph": "M7",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After the meeting, Columbina, Arlecchino, and Signora had a tea party in Sandrone's bedroom, in order to comfort her—as she had been visibly preoccupied with sadness over Alain Guillotin.",
-     "sentences": [
-      {
-       "t_raw": "회의에서 Pierro는 Tsaritsa가 **모든 Gnoses**를 수집하려는 계획을 설명했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "회의에서 피에로는 얼음의 여왕이 **모든 신의 심장**을 수집하려는 계획을 설명했다."
-      },
-      {
-       "t_raw": "Pantalone는 재정 마련을 감독하고, Sandrone는 동료들의 'technical needs'를 맡았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "판탈로네는 재정 마련을 감독하고, 산드로네는 동료들의 'technical needs'를 맡았다."
-      },
-      {
-       "t_raw": "회의 뒤 Columbina, Arlecchino, Signora는 Sandrone의 방에서 **차 모임**을 열어, Alain Guillotin에 대한 슬픔에 잠긴 Sandrone를 위로했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "회의 뒤 콜롬비나, 아를레키노, 시뇨라는 산드로네의 방에서 **차 모임**을 열어, 알랭·기요틴에 대한 슬픔에 잠긴 산드로네를 위로했다."
-      },
-      {
-       "t_raw": "공연, 전원 회의, 차 모임이 짧은 간격으로 이어졌다는 점은 집행관들의 사교와 임무가 맞물려 있었음을 보여준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "공연, 전원 회의, 차 모임이 짧은 간격으로 이어졌다는 점은 집행관들의 사교와 임무가 맞물려 있었음을 보여준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Dottore",
-       "revision": 2117364,
-       "section": "Story > Pre-Sumeru",
-       "paragraph": "M3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Pantalone",
-       "revision": 2117365,
-       "section": "Story > Past",
-       "paragraph": "M4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Columbina/Storyline",
-       "revision": 2141704,
-       "section": "History > Fatui Recruitment",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Sandrone/Storyline",
-       "revision": 2140319,
-       "section": "History > Past",
-       "paragraph": "M7",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사",
-     "latin_left": []
-    },
-    {
-     "section": "작중 언급 — Luna VIII",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Luna VIII",
+     "status": "accepted",
+     "note": "The quote matches Q1 and Q2. The interpretation is reasonable.",
      "quote": "Indeed. Though we should still have time to stop for a cup of tea every now and then, or even catch a performance by the Korolevskiy Troupe.",
      "sentences": [
       {
-       "t_raw": "Luna VIII의 \"Fire and Ice\"에서 The Knave는 **차 한 잔**과 **Korolevskiy Troupe의 공연**을 함께 언급한다.",
+       "t_raw": "Luna VIII의 \"Fire and Ice\" 퀘스트에서 The Knave는 바쁜 일정 속에서도 **차 한 잔** 여유를 가지거나 **Korolevskiy Troupe**의 공연을 보러 갈 시간은 있어야 한다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "Luna VIII의 \"불과 얼음\"에서 「아를레키노」는 **차 한 잔**과 **코롤레프스키 극단의 공연**을 함께 언급한다."
+       "t": "여덟 번째 달의 \"불과 얼음\" 퀘스트에서 「아를레키노」는 바쁜 일정 속에서도 **차 한 잔** 여유를 가지거나 **코롤레프스키 극단**의 공연을 보러 갈 시간은 있어야 한다고 말한다."
       },
       {
-       "t_raw": "The Knave는 그래도 때때로 차를 마시러 멈추거나 Korolevskiy Troupe의 공연을 볼 시간은 여전히 있을 것이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "「아를레키노」는 그래도 때때로 차를 마시러 멈추거나 코롤레프스키 극단의 공연을 볼 시간은 여전히 있을 것이라고 말한다."
-      },
-      {
-       "t_raw": "이 대사에서 공연 관람은 차를 마시는 일과 나란히 놓인 여유의 예로 제시된 것으로 보인다.",
+       "t_raw": "그가 차와 공연을 같은 맥락에서 거론한 것은, 둘 모두 잠시 쉴 수 있는 여유를 상징하는 표현으로 풀이된다.",
        "interp": true,
        "dropped": false,
-       "t": "이 대사에서 공연 관람은 차를 마시는 일과 나란히 놓인 여유의 예로 제시된 것으로 보인다."
+       "t": "그가 차와 공연을 같은 맥락에서 거론한 것은, 둘 모두 잠시 쉴 수 있는 여유를 상징하는 표현으로 풀이된다."
       }
      ],
      "sources": [
@@ -472,40 +614,80 @@
        "speaker": "The Knave"
       }
      ],
-     "heading": "작중 언급 — Luna VIII",
-     "latin_left": [
-      "Luna VIII"
-     ]
+     "heading": "작중 행적 — 여덟 번째 달",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Luna VIII",
+     "status": "accepted",
+     "note": "A2 states the troupe is popular with the Harbingers. The interpretation is reasonable.",
+     "quote": "Though we should still have time to stop for a cup of tea every now and then, or even catch a performance by the Korolevskiy Troupe.",
+     "sentences": [
+      {
+       "t_raw": "이 대사는 Snezhnaya에 기반을 둔 Korolevskiy Troupe의 공연이 Fatui 집행관들 사이에서 인기 있는 여가거리임을 다시 확인시켜 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 대사는 스네즈나야에 기반을 둔 코롤레프스키 극단의 공연이 우인단 집행관들 사이에서 인기 있는 여가거리임을 다시 확인시켜 준다."
+      },
+      {
+       "t_raw": "The Knave가 차와 공연을 함께 언급한 점은, 이 공연이 집행관들의 일상 속에서 낯설지 않은 문화 코드로 자리 잡고 있음을 보여주는 대목이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "「아를레키노」가 차와 공연을 함께 언급한 점은, 이 공연이 집행관들의 일상 속에서 낯설지 않은 문화 코드로 자리 잡고 있음을 보여주는 대목이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Korolevskiy Troupe",
+       "revision": 2128978,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Korolevskiy Troupe",
+       "revision": 2128978,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Fire and Ice",
+       "quest_ko": "불과 얼음",
+       "version": "Luna VIII",
+       "speaker": "The Knave"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fire and Ice",
+       "quest_ko": "불과 얼음",
+       "version": "Luna VIII",
+       "speaker": "The Knave"
+      }
+     ],
+     "heading": "작중 행적 — 여덟 번째 달",
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "After the meeting, Columbina, Arlecchino, and Signora had a tea party in Sandrone's bedroom, in order to comfort her—as she had been visibly preoccupied with sadness over Alain Guillotin.",
+     "status": "accepted",
+     "note": "M7 says Sandrone was stuck next to 'the latter two', Dottore and Pantalone. The interpretation is reasonable.",
+     "quote": "she later lamented how awful it was to be stuck sitting next to the latter two.",
      "sentences": [
       {
-       "t_raw": "Sandrone는 이야기 시작 직전 Korolevskiy Troupe의 \"The Mountain Sparrow\" 공연을 Signora, Columbina, Dottore, Pantalone와 함께 봤고, **Dottore와 Pantalone 옆자리**에 앉은 일을 끔찍했다고 한탄했다.",
+       "t_raw": "산드로네는 The Mountain Sparrow 공연에서 **Dottore와 Pantalone 옆자리**에 앉아야 했고, 그 자리가 끔찍했다고 한탄했다.",
        "interp": false,
        "dropped": false,
-       "t": "산드로네는 이야기 시작 직전 코롤레프스키 극단의 \"산참새\" 공연을 시뇨라, 콜롬비나, 도토레, 판탈로네와 함께 봤고, **도토레와 판탈로네 옆자리**에 앉은 일을 끔찍했다고 한탄했다."
+       "t": "산드로네는 산참새 공연에서 **도토레와 판탈로네 옆자리**에 앉아야 했고, 그 자리가 끔찍했다고 한탄했다."
       },
       {
-       "t_raw": "회의 뒤 Columbina, Arlecchino, Signora는 Alain Guillotin에 대한 슬픔으로 눈에 띄게 가라앉은 Sandrone를 위로하려 그녀의 방에서 차 모임을 열었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "회의 뒤 콜롬비나, 아를레키노, 시뇨라는 알랭·기요틴에 대한 슬픔으로 눈에 띄게 가라앉은 산드로네를 위로하려 그녀의 방에서 차 모임을 열었다."
-      },
-      {
-       "t_raw": "Korolevskiy Troupe의 구성원 Vodyanitsa는 Prima Soprano다.",
-       "interp": false,
-       "dropped": false,
-       "t": "코롤레프스키 극단의 구성원 보댜니차는 Prima Soprano다."
-      },
-      {
-       "t_raw": "**Sandrone의 방에서의 차 모임**은 공연 관람 뒤 집행관들이 사적인 위로를 나눈 장면으로 볼 수 있다.",
+       "t_raw": "이는 공연이 집행관들이 함께 모이는 사교적 자리이기도 했음을 보여준다.",
        "interp": true,
        "dropped": false,
-       "t": "**산드로네의 방에서의 차 모임**은 공연 관람 뒤 집행관들이 사적인 위로를 나눈 장면으로 볼 수 있다."
+       "t": "이는 공연이 집행관들이 함께 모이는 사교적 자리이기도 했음을 보여준다."
       }
      ],
      "sources": [
@@ -515,37 +697,105 @@
        "revision": 2140319,
        "section": "History > Past",
        "paragraph": "M7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Columbina/Storyline",
-       "revision": 2141704,
-       "section": "History > Fatui Recruitment",
-       "paragraph": "M5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Korolevskiy Troupe",
-       "revision": 2128978,
-       "section": "Members",
-       "paragraph": "A4",
        "wiki_refs": []
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Prima Soprano"
-     ]
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by M5/M7 (tea party in the bedroom, dream of Alain's funeral disturbing her mood). The interpretation is reasonable.",
+     "quote": "Columbina, Arlecchino, and Signora had a tea party in Sandrone's bedroom, in order to comfort her—as she had been visibly preoccupied with sadness over Alain Guillotin.",
+     "sentences": [
+      {
+       "t_raw": "Gnoses 수집 계획 회의 직후, Columbina, Arlecchino, Signora는 Alain Guillotin에 대한 슬픔에 잠겨 있던 산드로네를 위로하기 위해 그녀의 침실에서 차 모임을 열었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "신의 심장 수집 계획 회의 직후, 콜롬비나, 아를레키노, 시뇨라는 알랭·기요틴에 대한 슬픔에 잠겨 있던 산드로네를 위로하기 위해 그녀의 침실에서 차 모임을 열었다."
+      },
+      {
+       "t_raw": "산드로네는 Alain의 장례를 꾸는 꿈으로 크게 언짢아져 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산드로네는 알랭의 장례를 꾸는 꿈으로 크게 언짢아져 있었다."
+      },
+      {
+       "t_raw": "이처럼 사적인 침실에서 동료 집행관들이 그녀를 달랜 것은, 그들 사이에 격식 밖의 위로가 있었음을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 사적인 침실에서 동료 집행관들이 그녀를 달랜 것은, 그들 사이에 격식 밖의 위로가 있었음을 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Columbina/Storyline",
+       "revision": 2141704,
+       "section": "History > Fatui Recruitment",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sandrone/Storyline",
+       "revision": 2140319,
+       "section": "History > Past",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The line says only 'we'. The material never says the speaker means the Harbingers, and it never says they were busy. Those details are added. The interpretation sentence is fine.",
+     "quote": "Indeed. Though we should still have time to stop for a cup of tea every now and then, or even catch a performance by the Korolevskiy Troupe.",
+     "sentences": [
+      {
+       "t_raw": "The Knave는 Luna VIII에서 \"우리는 가끔 차 한 잔 마실 시간이나 Korolevskiy Troupe 공연을 볼 시간은 있을 것\"이라고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "「아를레키노」는 여덟 번째 달에서 \"우리는 가끔 차 한 잔 마실 시간이나 코롤레프스키 극단 공연을 볼 시간은 있을 것\"이라고 말했다."
+      },
+      {
+       "t_raw": "차 모임이 산드로네를 위로하는 사적 교류였던 점과 함께 보면, 차와 Korolevskiy Troupe 공연은 집행관들에게 익숙한 여가로 여겨지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "차 모임이 산드로네를 위로하는 사적 교류였던 점과 함께 보면, 차와 코롤레프스키 극단 공연은 집행관들에게 익숙한 여가로 여겨지는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Fire and Ice",
+       "quest_ko": "불과 얼음",
+       "version": "Luna VIII",
+       "speaker": "The Knave"
+      },
+      {
+       "kind": "wiki",
+       "page": "Columbina/Storyline",
+       "revision": 2141704,
+       "section": "History > Fatui Recruitment",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그렇지. 그래도 우리는 가끔 차 한 잔을 마시러 들르거나, 심지어 Korolevskiy Troupe의 공연을 관람할 시간은 있어야 한다.",
+     "status": "accepted",
+     "note": "Faithful enough: cup of tea or a performance, 'still have time'. The reason-style '테니까' is a natural rendering.",
+     "t_raw": "그래. 가끔 차 한 잔 마실 시간, 아니면 Korolevskiy Troupe의 공연을 보러 갈 시간은 여전히 날 테니까.",
      "en": "Indeed. Though we should still have time to stop for a cup of tea every now and then, or even catch a performance by the Korolevskiy Troupe.",
      "speaker": "The Knave",
      "source": {
@@ -555,14 +805,14 @@
       "version": "Luna VIII",
       "speaker": "The Knave"
      },
-     "t": "그렇지. 그래도 우리는 가끔 차 한 잔을 마시러 들르거나, 심지어 코롤레프스키 극단의 공연을 관람할 시간은 있어야 한다.",
+     "t": "그래. 가끔 차 한 잔 마실 시간, 아니면 코롤레프스키 극단의 공연을 보러 갈 시간은 여전히 날 테니까.",
      "speaker_ko": "「아를레키노」"
     },
     {
-     "section": "작중 언급 — Luna VIII",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그렇지. 그래도 우리는 가끔 차 한 잔을 마시러 들르거나, 심지어 Korolevskiy Troupe의 공연을 볼 시간은 여전히 있을 것이다.",
+     "section": "정체 — 공연단의 구성과 명성",
+     "status": "accepted",
+     "note": "Faithful translation. It keeps the tea or performance, 'every now and then', and 'still have time'.",
+     "t_raw": "그래. 가끔 차 한 잔 할 시간, 아니면 Korolevskiy Troupe의 공연을 볼 시간은 여전히 있을 테니까.",
      "en": "Indeed. Though we should still have time to stop for a cup of tea every now and then, or even catch a performance by the Korolevskiy Troupe.",
      "speaker": "The Knave",
      "source": {
@@ -572,14 +822,31 @@
       "version": "Luna VIII",
       "speaker": "The Knave"
      },
-     "t": "그렇지. 그래도 우리는 가끔 차 한 잔을 마시러 들르거나, 심지어 코롤레프스키 극단의 공연을 볼 시간은 여전히 있을 것이다.",
+     "t": "그래. 가끔 차 한 잔 할 시간, 아니면 코롤레프스키 극단의 공연을 볼 시간은 여전히 있을 테니까.",
+     "speaker_ko": "「아를레키노」"
+    },
+    {
+     "section": "작중 행적 — Luna VIII",
+     "status": "accepted",
+     "note": "'should have time' expresses expectation, but '있어야 한다' turns it into an obligation. That changes the meaning.",
+     "t_raw": "그래. 그래도 우리는 가끔 차 한 잔 마실 시간이나 Korolevskiy Troupe의 공연을 보러 갈 시간은 있을 거다.",
+     "en": "Indeed. Though we should still have time to stop for a cup of tea every now and then, or even catch a performance by the Korolevskiy Troupe.",
+     "speaker": "The Knave",
+     "source": {
+      "kind": "quest",
+      "quest": "Fire and Ice",
+      "quest_ko": "불과 얼음",
+      "version": "Luna VIII",
+      "speaker": "The Knave"
+     },
+     "t": "그래. 그래도 우리는 가끔 차 한 잔 마실 시간이나 코롤레프스키 극단의 공연을 보러 갈 시간은 있을 거다.",
      "speaker_ko": "「아를레키노」"
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그렇지. 그래도 우리는 가끔 차 한 잔을 마시러 잠시 멈추거나, 심지어 Korolevskiy Troupe의 공연을 볼 시간은 여전히 있을 거다.",
+     "status": "accepted",
+     "note": "It turns 'or even catch a performance' into an inference (time for tea, so time for a performance). The original does not say that; it is an alternative. The meaning is distorted.",
+     "t_raw": "그래. 그래도 우리는 가끔 차 한 잔 마실 시간이나, 아니면 Korolevskiy Troupe의 공연을 관람할 시간은 있을 거다.",
      "en": "Indeed. Though we should still have time to stop for a cup of tea every now and then, or even catch a performance by the Korolevskiy Troupe.",
      "speaker": "The Knave",
      "source": {
@@ -589,7 +856,7 @@
       "version": "Luna VIII",
       "speaker": "The Knave"
      },
-     "t": "그렇지. 그래도 우리는 가끔 차 한 잔을 마시러 잠시 멈추거나, 심지어 코롤레프스키 극단의 공연을 볼 시간은 여전히 있을 거다.",
+     "t": "그래. 그래도 우리는 가끔 차 한 잔 마실 시간이나, 아니면 코롤레프스키 극단의 공연을 관람할 시간은 있을 거다.",
      "speaker_ko": "「아를레키노」"
     }
    ]

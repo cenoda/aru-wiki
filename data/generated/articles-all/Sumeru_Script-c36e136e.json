@@ -20,35 +20,41 @@
    "input_chars": 338,
    "input_cut": false,
    "input_hash": "5842b7a49c8b",
-   "writer": "glm-flash,or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This script seems to be based on the Teyvat alphabet and appears to be inspired by Devanagari script.",
+     "status": "accepted",
+     "note": "All sentences are supported by A1/A2; the interpretation is reasonable.",
+     "quote": "The Sumeru Language (unofficial name) refers to one of the written languages of Sumeru.",
      "sentences": [
       {
-       "t_raw": "Sumeru Script는 Sumeru에서 사용되는 문자 언어 중 하나를 가리키는 비공식 명칭이다.",
+       "t_raw": "Sumeru Language(비공식 명칭)는 **Sumeru의 문자 언어 가운데 하나**다.",
        "interp": false,
        "dropped": false,
-       "t": "수메르 문자는 수메르에서 사용되는 문자 언어 중 하나를 가리키는 비공식 명칭이다."
+       "t": "Sumeru Language(비공식 명칭)는 **수메르의 문자 언어 가운데 하나**다."
       },
       {
-       "t_raw": "Teyvat alphabet을 기반으로 하고 Devanagari 문자에서 영감을 받은 것으로 보이며, 게임 내에서 눈에 띄는 문자 체계라 관심을 끈다.",
+       "t_raw": "이 문자는 **Teyvat 알파벳**에 바탕을 둔 것으로 보이며 **Devanagari 문자**에서 영감을 받은 것으로 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 문자는 **티바트 알파벳**에 바탕을 둔 것으로 보이며 **Devanagari 문자**에서 영감을 받은 것으로 보인다."
+      },
+      {
+       "t_raw": "이 언어는 일반적으로 English 단어와 문장을 적는 데 쓰이지만, English와 달리 뚜렷한 대소문자나 문장 부호가 없는 것으로 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 언어는 일반적으로 English 단어와 문장을 적는 데 쓰이지만, English와 달리 뚜렷한 대소문자나 문장 부호가 없는 것으로 보인다."
+      },
+      {
+       "t_raw": "따라서 이 문자는 Sumeru의 표기 체계가 Teyvat 알파벳과 Devanagari, English 표기 관습 사이에서 어떤 모습을 띠는지 보여주는 사례라고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "티바트 alphabet을 기반으로 하고 Devanagari 문자에서 영감을 받은 것으로 보이며, 게임 내에서 눈에 띄는 문자 체계라 관심을 끈다."
-      },
-      {
-       "t_raw": "주로 영어 단어와 문장을 적는 데 쓰이지만, 영어와 달리 대소문자나 문장부호의 구분이 없는 점이 특징이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "주로 영어 단어와 문장을 적는 데 쓰이지만, 영어와 달리 대소문자나 문장부호의 구분이 없는 점이 특징이다."
+       "t": "따라서 이 문자는 수메르의 표기 체계가 티바트 알파벳과 Devanagari, English 표기 관습 사이에서 어떤 모습을 띠는지 보여주는 사례라고 볼 수 있다."
       }
      ],
      "sources": [
@@ -71,38 +77,37 @@
      ],
      "heading": null,
      "latin_left": [
-      "Devanagari"
+      "Sumeru Language",
+      "Devanagari",
+      "English",
+      "English",
+      "Devanagari",
+      "English"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This script seems to be based on the Teyvat alphabet and appears to be inspired by Devanagari script.",
+     "status": "accepted",
+     "note": "Supported by A1; the interpretation is reasonable.",
+     "quote": "The Sumeru Language (unofficial name) refers to one of the written languages of Sumeru.",
      "sentences": [
       {
-       "t_raw": "**Sumeru Script**(비공식 명칭)는 Sumeru에서 사용되는 문자 언어 중 하나를 가리킨다.",
+       "t_raw": "**Sumeru Language**는 Sumeru의 문자 언어 중 하나를 가리키는 호칭이다.",
        "interp": false,
        "dropped": false,
-       "t": "**수메르 문자**(비공식 명칭)는 수메르에서 사용되는 문자 언어 중 하나를 가리킨다."
+       "t": "**Sumeru Language**는 수메르의 문자 언어 중 하나를 가리키는 호칭이다."
       },
       {
-       "t_raw": "이 문자는 Teyvat alphabet을 기반으로 하는 것으로 보이며, Devanagari 문자에서 영감을 받은 디자인이다.",
+       "t_raw": "이 명칭은 **비공식 명칭**으로, 공식적으로 확정된 이름이라기보다 해당 문자 언어를 부르기 위한 호칭으로 제시된다.",
        "interp": false,
        "dropped": false,
-       "t": "이 문자는 티바트 alphabet을 기반으로 하는 것으로 보이며, Devanagari 문자에서 영감을 받은 디자인이다."
+       "t": "이 명칭은 **비공식 명칭**으로, 공식적으로 확정된 이름이라기보다 해당 문자 언어를 부르기 위한 호칭으로 제시된다."
       },
       {
-       "t_raw": "일반적으로 이 언어는 영어 단어와 문장을 적는 데 쓰이지만, 영어와 달리 뚜렷한 **대소문자나 문장부호가 없는 것으로 보인다**.",
-       "interp": false,
-       "dropped": false,
-       "t": "일반적으로 이 언어는 영어 단어와 문장을 적는 데 쓰이지만, 영어와 달리 뚜렷한 **대소문자나 문장부호가 없는 것으로 보인다**."
-      },
-      {
-       "t_raw": "기반이 되는 공통 문자 위에 지역적 디자인이 얹힌 셈이라, Sumeru 문자도 Teyvat의 문자 체계와 이어져 있다고 볼 수 있다.",
+       "t_raw": "Sumeru Language가 Sumeru의 문자 언어 중 하나라는 점과 그 이름이 비공식 명칭이라는 점을 함께 놓으면, 이 표제어는 대상 자체의 공식 명칭이라기보다 범위를 한정한 편의적 호칭인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "기반이 되는 공통 문자 위에 지역적 디자인이 얹힌 셈이라, 수메르 문자도 티바트의 문자 체계와 이어져 있다고 볼 수 있다."
+       "t": "Sumeru Language가 수메르의 문자 언어 중 하나라는 점과 그 이름이 비공식 명칭이라는 점을 함께 놓으면, 이 표제어는 대상 자체의 공식 명칭이라기보다 범위를 한정한 편의적 호칭인 셈이다."
       }
      ],
      "sources": [
@@ -112,45 +117,56 @@
        "revision": 843521,
        "section": null,
        "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Sumeru Script",
-       "revision": 843521,
-       "section": null,
-       "paragraph": "A2",
        "wiki_refs": []
       }
      ],
      "heading": "개요",
      "latin_left": [
-      "Devanagari"
+      "Sumeru Language",
+      "Sumeru Language"
      ]
     },
     {
-     "section": "문자 체계의 특징",
-     "status": "needs_verify",
-     "note": null,
+     "section": "정체",
+     "status": "accepted",
+     "note": "Facts match A2; the interpretations are hedged and follow from it.",
      "quote": "This script seems to be based on the Teyvat alphabet and appears to be inspired by Devanagari script.",
      "sentences": [
       {
-       "t_raw": "Sumeru Script는 Teyvat alphabet을 기반으로 하는 것으로 보인다.",
+       "t_raw": "이 문자는 Teyvat 알파벳에 바탕을 둔 것으로 보이며, Devanagari에서 영감을 받은 것으로 여겨진다.",
        "interp": false,
        "dropped": false,
-       "t": "수메르 문자는 티바트 alphabet을 기반으로 하는 것으로 보인다."
+       "t": "이 문자는 티바트 알파벳에 바탕을 둔 것으로 보이며, Devanagari에서 영감을 받은 것으로 여겨진다."
       },
       {
-       "t_raw": "동시에 Devanagari 문자에서 영감을 받은 디자인이라고 알려져 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "동시에 Devanagari 문자에서 영감을 받은 디자인이라고 알려져 있다."
-      },
-      {
-       "t_raw": "즉 티바트 공통 문자의 뼈대 위에 인도계 문자 특유의 곡선적 외형이 얹힌 셈이다.",
+       "t_raw": "한쪽은 바탕이 되고 다른 쪽은 영감의 원천으로 제시된다는 점에서, 그 정체는 **두 겹의 영향** 아래 놓인 것으로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "즉 티바트 공통 문자의 뼈대 위에 인도계 문자 특유의 곡선적 외형이 얹힌 셈이다."
+       "t": "한쪽은 바탕이 되고 다른 쪽은 영감의 원천으로 제시된다는 점에서, 그 정체는 **두 겹의 영향** 아래 놓인 것으로 볼 수 있다."
+      },
+      {
+       "t_raw": "이 언어는 일반적으로 English 단어와 문장을 적는 데 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 언어는 일반적으로 English 단어와 문장을 적는 데 쓰인다."
+      },
+      {
+       "t_raw": "그러나 English와 달리 뚜렷한 대소문자 구분이나 문장부호가 없는 것으로 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 English와 달리 뚜렷한 대소문자 구분이나 문장부호가 없는 것으로 보인다."
+      },
+      {
+       "t_raw": "English 단어와 문장을 적는 용도와 대소문자·문장부호를 구별하지 않는 표기 방식이 함께 나타난다는 점이 이 문자의 특징으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "English 단어와 문장을 적는 용도와 대소문자·문장부호를 구별하지 않는 표기 방식이 함께 나타난다는 점이 이 문자의 특징으로 보인다."
+      },
+      {
+       "t_raw": "Teyvat 알파벳과 Devanagari의 영향 아래 English 표기를 수용하면서도 English의 대소문자·문장부호 규칙은 따르지 않는, **English를 적기 위한 별도의 표기 체계**로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "티바트 알파벳과 Devanagari의 영향 아래 English 표기를 수용하면서도 English의 대소문자·문장부호 규칙은 따르지 않는, **English를 적기 위한 별도의 표기 체계**로 읽힌다."
       }
      ],
      "sources": [
@@ -163,78 +179,41 @@
        "wiki_refs": []
       }
      ],
-     "heading": "문자 체계의 특징",
+     "heading": "정체",
      "latin_left": [
-      "Devanagari"
+      "Devanagari",
+      "English",
+      "English",
+      "English",
+      "Devanagari",
+      "English",
+      "English",
+      "English"
      ]
     },
     {
-     "section": "문자 체계의 특징",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This language is generally used to write English words and sentences, but unlike English, there appears to be no distinct letter case or punctuation.",
-     "sentences": [
-      {
-       "t_raw": "이 문자에는 일반적으로 영어의 단어와 문장이 기록된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 문자에는 일반적으로 영어의 단어와 문장이 기록된다."
-      },
-      {
-       "t_raw": "다만 영어와 달리 대소문자의 구분도, 문장부호도 없는 것이 특징이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다만 영어와 달리 대소문자의 구분도, 문장부호도 없는 것이 특징이다."
-      },
-      {
-       "t_raw": "알파벳을 옮겨 적으면서도 표기 규칙은 영어와 다른 자기만의 체계를 유지하고 있는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "알파벳을 옮겨 적으면서도 표기 규칙은 영어와 다른 자기만의 체계를 유지하고 있는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Sumeru Script",
-       "revision": 843521,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "문자 체계의 특징",
-     "latin_left": []
-    },
-    {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This language is generally used to write English words and sentences, but unlike English, there appears to be no distinct letter case or punctuation.",
+     "status": "accepted",
+     "note": "Supported by A1; the interpretation is mild and acceptable.",
+     "quote": "The Sumeru Language (unofficial name) refers to one of the written languages of Sumeru.",
      "sentences": [
       {
-       "t_raw": "이 문자는 **비공식 명칭**으로 Sumeru Language라고 불린다.",
+       "t_raw": "‘Sumeru Language’는 비공식 명칭이다.",
        "interp": false,
        "dropped": false,
-       "t": "이 문자는 **비공식 명칭**으로 Sumeru Language라고 불린다."
+       "t": "'Sumeru Language'는 비공식 명칭이다."
       },
       {
-       "t_raw": "이 명칭은 공식 명칭이 아니다.",
+       "t_raw": "이 명칭은 Sumeru의 문자 언어 가운데 하나를 가리킨다.",
        "interp": false,
        "dropped": false,
-       "t": "이 명칭은 공식 명칭이 아니다."
+       "t": "이 명칭은 수메르의 문자 언어 가운데 하나를 가리킨다."
       },
       {
-       "t_raw": "한편 이 문자는 English 단어와 문장을 적는 데 쓰이지만, English와 달리 **대소문자와 문장부호의 구분이 없다**고 보인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한편 이 문자는 English 단어와 문장을 적는 데 쓰이지만, English와 달리 **대소문자와 문장부호의 구분이 없다**고 보인다."
-      },
-      {
-       "t_raw": "English 표기를 다루면서도 English의 대소문자·문장부호 규칙을 그대로 따르지는 않는 셈이다.",
+       "t_raw": "비공식 명칭이면서 대상이 Sumeru의 문자 언어 가운데 하나라는 점에서, 이 호칭은 범위를 느슨하게 잡는 이름이라고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "English 표기를 다루면서도 English의 대소문자·문장부호 규칙을 그대로 따르지는 않는 셈이다."
+       "t": "비공식 명칭이면서 대상이 수메르의 문자 언어 가운데 하나라는 점에서, 이 호칭은 범위를 느슨하게 잡는 이름이라고 볼 수 있다."
       }
      ],
      "sources": [
@@ -245,7 +224,44 @@
        "section": null,
        "paragraph": "A1",
        "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Sumeru Language"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The hedging wording (seems/appears) is present in A2; the interpretation follows.",
+     "quote": "This script seems to be based on the Teyvat alphabet and appears to be inspired by Devanagari script.",
+     "sentences": [
+      {
+       "t_raw": "이 스크립트가 Teyvat alphabet을 바탕으로 하는 듯하고 Devanagari script에서 영감을 받은 듯하다는 대목에는 seems to be, appears to be 같은 추정의 표현이 붙는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 스크립트가 티바트 알파벳을 바탕으로 하는 듯하고 Devanagari 문자에서 영감을 받은 듯하다는 대목에는 ‘~인 듯하다’, ‘~로 보인다’ 같은 추정의 표현이 붙는다.",
+       "polish": {
+        "from": "이 스크립트가 티바트 alphabet을 바탕으로 하는 듯하고 Devanagari script에서 영감을 받은 듯하다는 대목에는 seems to be, appears to be 같은 추정의 표현이 붙는다.",
+        "text": "이 스크립트가 티바트 알파벳을 바탕으로 하는 듯하고 Devanagari 문자에서 영감을 받은 듯하다는 대목에는 ‘~인 듯하다’, ‘~로 보인다’ 같은 추정의 표현이 붙는다.",
+        "by": "or-ds"
+       }
       },
+      {
+       "t_raw": "English와 달리 대소문자나 문장부호가 뚜렷이 없는 듯하다는 서술도 단정 대신 추정으로 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "English와 달리 대소문자나 문장부호가 뚜렷이 없는 듯하다는 서술도 단정 대신 추정으로 남아 있다."
+      },
+      {
+       "t_raw": "그래서 이 항목은 계보와 표기 규칙을 확정하기보다, 추정의 여지를 함께 남긴다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 이 항목은 계보와 표기 규칙을 확정하기보다, 추정의 여지를 함께 남긴다고 볼 수 있다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Sumeru Script",
@@ -257,10 +273,7 @@
      ],
      "heading": "여담",
      "latin_left": [
-      "Sumeru Language",
-      "English",
-      "English",
-      "English",
+      "Devanagari",
       "English"
      ]
     }

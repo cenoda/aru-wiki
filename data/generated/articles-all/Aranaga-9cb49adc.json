@@ -1,0 +1,1020 @@
+{
+ "node": "Aranaga",
+ "articles": [
+  {
+   "node": "Aranaga",
+   "from_version": "3.8",
+   "cutoff": "2023-08-15T00:00:00Z",
+   "input": [
+    {
+     "page": "Aranaga",
+     "url": "https://genshin-impact.fandom.com/wiki/Aranaga",
+     "revision": 1259605
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 32,
+    "web": 0
+   },
+   "input_chars": 1403,
+   "input_cut": false,
+   "input_hash": "ca6ae6110062",
+   "writer": "glm-flash,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "quote_mismatch",
+     "note": null,
+     "quote": "Speaking of the Mawtiyima Forest, Aranaga is waiting for you there. He presides over the Arahaoma ritual. Go see him!",
+     "sentences": [
+      {
+       "t_raw": "Aranaga는 Sumeru의 Aranyaka 퀘스트라인에서 첫등장하는 Aranara이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나가는 수메르의 숲의 책 퀘스트라인에서 첫등장하는 아란나라이다."
+      },
+      {
+       "t_raw": "Mawtiyima 숲을 정화하는 Arahaoma 의식을 주재하며, Marana의 위협으로 시들어가는 숲과 기억을 주제로 이야기의 중심에 선다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마우티이마 숲을 정화하는 아란하오마 의식을 주재하며, 마라나의 위협으로 시들어가는 숲과 기억을 주제로 이야기의 중심에 선다."
+      },
+      {
+       "t_raw": "여행자와의 만남과 이별을 통해 \"숲은 기억한다\"는 Aranyaka의 주제를 가장 잘 보여주는 존재라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "여행자와의 만남과 이별을 통해 \"숲은 기억한다\"는 숲의 책의 주제를 가장 잘 보여주는 존재라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aranaga",
+       "revision": 1259605,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aranakin",
+       "revision": 1203675,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory's Final Chapter",
+       "quest_ko": "추억의 종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All supported by A1 and A2.",
+     "quote": "Aranaga is an open-world NPC from Sumeru who first appears in the The World of Aranara quest of the Aranyaka questline.",
+     "sentences": [
+      {
+       "t_raw": "Aranaga는 수메르의 오픈 월드 NPC로, Aranyaka 퀘스트라인의 The World of Aranara 퀘스트에서 처음 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나가는 수메르의 오픈 월드 NPC로, 숲의 책 퀘스트라인의 「아란나라의 세계」 퀘스트에서 처음 등장한다."
+      },
+      {
+       "t_raw": "이후 Agnihotra Sutra 월드 퀘스트 시리즈에도 모습을 드러내며, Aranara의 일원이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 아그니호트라 수트라 월드 퀘스트 시리즈에도 모습을 드러내며, 아란나라의 일원이다."
+      },
+      {
+       "t_raw": "Memory's Final Chapter를 완료한 뒤에는 Vanarana에서 그를 다시 만날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "추억의 종장을 완료한 뒤에는 바나라나에서 그를 다시 만날 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aranaga",
+       "revision": 1259605,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aranaga",
+       "revision": 1259605,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Sentence 0 says Aranaga is one of three Aranara in charge of purifying Mawtiyima Forest with Aranakin and Aragaru and presides over Arahaoma. M1 and Q25 support this, so it is fine. Sentence 1 is supported by Q31. Nothing fails except that 'Aranakin' is described as 'in charge of purification', which M1 supports only loosely; the 'three Aranara' phrasing is acceptable. Flagging 0 is a weak call: 'Aranakin, Aragaru ... 세 아란나라 중 한 명' is fair, but 'Mawtiyima 숲의 정화를 맡은' is acceptable per M1. Treat as minor.",
+     "quote": "Aranaga is the eldest and most interesting of us three! He can say a lot of funny things and he knows a lot about Nara.",
+     "sentences": [
+      {
+       "t_raw": "그는 Aranakin, Aragaru와 함께 Mawtiyima 숲을 정화한 세 아란나라 중 한 명이며, Arahaoma 의식을 주관하는 존재다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 아란나킨, 아란가루와 함께 마우티이마 숲을 정화한 세 아란나라 중 한 명이며, 아란하오마 의식을 주관하는 존재다."
+      },
+      {
+       "t_raw": "Aragaru는 Aranaga가 셋 중 맏형이면서 가장 재미있는 아란나라라고 소개하며, 말솜씨가 좋고 Nara에 대해 많이 안다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란가루는 아란나가가 셋 중 맏형이면서 가장 재미있는 아란나라라고 소개하며, 말솜씨가 좋고 나라에 대해 많이 안다고 덧붙인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aranakin",
+       "revision": 1203675,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Risen Moon Chapter",
+       "quest_ko": "떠오르는 달의 장",
+       "version": "3.0",
+       "speaker": "Aragaru"
+      },
+      {
+       "kind": "quest",
+       "quest": "Starry Night Chapter",
+       "quest_ko": "별이 빛나는 밤",
+       "version": "3.0",
+       "speaker": "Aranakin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Risen Moon Chapter",
+       "quest_ko": "떠오르는 달의 장",
+       "version": "3.0",
+       "speaker": "Aragaru"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A1.",
+     "quote": "Aranaga is an open-world NPC from Sumeru who first appears in the The World of Aranara quest of the Aranyaka questline.",
+     "sentences": [
+      {
+       "t_raw": "Aranaga는 Sumeru의 Aranara로, Aranyaka 퀘스트라인의 The World of Aranara 퀘스트에서 처음 등장하며 Agnihotra Sutra 월드 퀘스트 시리즈에도 모습을 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나가는 수메르의 아란나라로, 숲의 책 퀘스트라인의 「아란나라의 세계」 퀘스트에서 처음 등장하며 아그니호트라 수트라 월드 퀘스트 시리즈에도 모습을 드러낸다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aranaga",
+       "revision": 1259605,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Q1 and Q6 support the garden, the forest protecting them, gathering with friends, and flora and mushroom friends loving it.",
+     "quote": "Welcome to the Mawtiyima Forest, my garden, this is.",
+     "sentences": [
+      {
+       "t_raw": "그가 사는 곳은 **Mawtiyima 숲**이다. Aranaga 자신은 이곳을 \"나의 정원\"이라 부르며, 숲이 Aranara들을 지켜 주기 때문에 친구들과 모여 서로를 돕으며 지낼 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 사는 곳은 **마우티이마 숲**이다. 아란나가 자신은 이곳을 \"나의 정원\"이라 부르며, 숲이 아란나라들을 지켜 주기 때문에 친구들과 모여 서로를 돕으며 지낼 수 있다고 말한다."
+      },
+      {
+       "t_raw": "수많은 식물 친구와 버섯 친구들이 이곳을 사랑한다는 것도 그의 자랑거리다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수많은 식물 친구와 버섯 친구들이 이곳을 사랑한다는 것도 그의 자랑거리다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Sentence 0 is supported by Q31. Sentence 1 is interpretation, but it says '나를 소개할 때' (when introducing me), which is wrong; it should be 'himself'. It also treats 'little bean' as a playful correction showing humor, which is a guess; Q17 gives no indication of humor.",
+     "quote": "Aranaga is the eldest and most interesting of us three! He can say a lot of funny things and he knows a lot about Nara.",
+     "sentences": [
+      {
+       "t_raw": "Aragaru에 따르면 Aranaga는 Aranakin, Aragaru와 함께한 세 Aranara 중 **맏형이자 가장 재미있는 존재**로, 재치 넘치는 말을 많이 하고 Nara에 대해서도 잘 안다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란가루에 따르면 아란나가는 아란나킨, 아란가루와 함께한 세 아란나라 중 **맏형이자 가장 재미있는 존재**로, 재치 넘치는 말을 많이 하고 나라에 대해서도 잘 안다고 한다."
+      },
+      {
+       "t_raw": "자신을 소개할 때도 \"작은 콩이 아니라 Aranaga\"라고 정정하는 모습은, 세 아란나라 중 맏형이자 재미있는 말을 곧잘 한다는 점과 맞물려 맏형다운 여유를 드러내는 셈으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "자신을 소개할 때도 \"작은 콩이 아니라 아란나가\"라고 정정하는 모습은, 세 아란나라 중 맏형이자 재미있는 말을 곧잘 한다는 점과 맞물려 맏형다운 여유를 드러내는 셈으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Risen Moon Chapter",
+       "quest_ko": "떠오르는 달의 장",
+       "version": "3.0",
+       "speaker": "Aragaru"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mawtiyima 정화",
+     "status": "accepted",
+     "note": "Sentence 1: Q5 says 'The Yajna Grass... Must get it.' It is a quest line, and the dialogue does not say that Aranaga says it must be obtained as a requirement; this is supported roughly. However, sentences 0, 2 are supported by Q24 and Q25. Sentence 3 is a reasonable interpretation. Sentence 1 is marginal and is only loosely a fair rewording.",
+     "quote": "Speaking of the Mawtiyima Forest, Aranaga is waiting for you there. He presides over the Arahaoma ritual. Go see him!",
+     "sentences": [
+      {
+       "t_raw": "Aragaru는 Barsam Flower를 확보한 뒤 Zohrah Mushroom과 Yajna Grass를 찾아야 Aranaga에게 Arahaoma 제작을 부탁할 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란가루는 발삼꽃을 확보한 뒤 조흐라 버섯과 야즈나 풀을 찾아야 아란나가에게 아란하오마 제작을 부탁할 수 있다고 말한다."
+      },
+      {
+       "t_raw": "Aranaga는 Yajna Grass를 \"반드시 얻어야 한다\"고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "아란나가는 야즈나 풀을 \"반드시 얻어야 한다\"고 말한다."
+      },
+      {
+       "t_raw": "Aranakin은 Mawtiyima Forest에서 Aranaga가 기다리고 있으며 Arahaoma 의식을 주관한다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나킨은 마우티이마 숲에서 아란나가가 기다리고 있으며 아란하오마 의식을 주관한다고 전한다."
+      },
+      {
+       "t_raw": "재료를 모으는 과정과 의식 진행이 Aranaga를 중심으로 이어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "재료를 모으는 과정과 의식 진행이 아란나가를 중심으로 이어지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The World of Aranara",
+       "quest_ko": "「아란나라의 세계」",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Risen Moon Chapter",
+       "quest_ko": "떠오르는 달의 장",
+       "version": "3.0",
+       "speaker": "Aragaru"
+      },
+      {
+       "kind": "quest",
+       "quest": "Starry Night Chapter",
+       "quest_ko": "별이 빛나는 밤",
+       "version": "3.0",
+       "speaker": "Aranakin"
+      }
+     ],
+     "heading": "작중 행적 — 마우티이마 정화",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mawtiyima 정화",
+     "status": "accepted",
+     "note": "All sentences are supported by M1, Q16 and M2.",
+     "quote": "Upon acquiring the Yajna Grass and Barsam Flower, Aranakin and the other caretakers, Aranaga and Aragaru made the Arahaoma and ventured into Mawtiyima and cleansed it of the Withering.",
+     "sentences": [
+      {
+       "t_raw": "Yajna Grass와 Barsam Flower를 얻은 뒤 Aranakin과 다른 돌보미들인 Aranaga, Aragaru가 Arahaoma를 만들고 Mawtiyima로 들어가 Withering을 씻어냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야즈나 풀과 발삼꽃을 얻은 뒤 아란나킨과 다른 돌보미들인 아란나가, 아란가루가 아란하오마를 만들고 마우티이마로 들어가 죽음의 땅을 씻어냈다."
+      },
+      {
+       "t_raw": "Aranaga는 Aranakin, Aragaru와 함께 의식을 시작하자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나가는 아란나킨, 아란가루와 함께 의식을 시작하자고 한다."
+      },
+      {
+       "t_raw": "Aranaga는 Mawtiyima 정화에 관여한 Aranara로 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나가는 마우티이마 정화에 관여한 아란나라로 언급된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aranakin",
+       "revision": 1203675,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aranara",
+       "revision": 1205571,
+       "section": "Members > Involved in cleaning Mawtiyima",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory's Final Chapter",
+       "quest_ko": "추억의 종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      }
+     ],
+     "heading": "작중 행적 — 마우티이마 정화",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Aranaga's Memory와 여행자와의 만남",
+     "status": "accepted",
+     "note": "All sentences are supported by Q6, Q10, Q14, Q17 and Q20.",
+     "quote": "Hello, Aranaga, I am! Been waiting here for a long time, I have!",
+     "sentences": [
+      {
+       "t_raw": "Aranaga는 **Mawtiyima Forest**를 자신의 정원이라고 하며 여행자와 White Floaty를 그곳으로 맞아들인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나가는 **마우티이마 숲**을 자신의 정원이라고 하며 여행자와 하얀 둥둥이를 그곳으로 맞아들인다."
+      },
+      {
+       "t_raw": "그는 자신을 Aranaga라고 밝히며 작은 콩이 아니라고 하고, White Floaty를 Soft-Fluffy White-Mushroom Floaty라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 자신을 아란나가라고 밝히며 작은 콩이 아니라고 하고, 하얀 둥둥이를 Soft-Fluffy White-Mushroom Floaty라고 부른다."
+      },
+      {
+       "t_raw": "또한 **오랫동안 기다려 왔다**고 말하고, 자신의 친구들이 여행자를 이곳으로 데려왔는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 **오랫동안 기다려 왔다**고 말하고, 자신의 친구들이 여행자를 이곳으로 데려왔는지 묻는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      }
+     ],
+     "heading": "작중 행적 — 아란나가의 추억과 여행자와의 만남",
+     "latin_left": [
+      "Soft-Fluffy White-Mushroom Floaty"
+     ]
+    },
+    {
+     "section": "작중 행적 — Aranaga's Memory와 여행자와의 만남",
+     "status": "accepted",
+     "note": "The facts match Q7, Q15, Q11, Q2 and Q23. The interpretation is hedged and follows from them.",
+     "quote": "Well, Aranaga invited us to his garden, though... That means he didn't refuse to be friends with us, right? Let's pay him a visit sometime!",
+     "sentences": [
+      {
+       "t_raw": "“Aranaga's Memory”에서 Aranaga는 두 사람이 자신의 이름을 안다면서도, 자신은 이곳에서 그들을 본 적이 없다고 말하고, 무엇하러 왔는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "“아란나가의 추억”에서 아란나가는 두 사람이 자신의 이름을 안다면서도, 자신은 이곳에서 그들을 본 적이 없다고 말하고, 무엇하러 왔는지 묻는다."
+      },
+      {
+       "t_raw": "그는 여행자들을 **나쁜 녀석들처럼 보이지 않는다**고 하면서도, 숲이 아직 회복 중이라 머물지 말고 곧 떠나라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 여행자들을 **나쁜 녀석들처럼 보이지 않는다**고 하면서도, 숲이 아직 회복 중이라 머물지 말고 곧 떠나라고 한다."
+      },
+      {
+       "t_raw": "Paimon은 Aranaga가 자신의 정원에 초대한 것이 친구가 되는 것을 거부하지 않은 뜻일 수 있다고 보고, 그를 만나러 가자고 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아란나가가 자신의 정원에 초대한 것이 친구가 되는 것을 거부하지 않은 뜻일 수 있다고 보고, 그를 만나러 가자고 제안한다."
+      },
+      {
+       "t_raw": "이는 경계와 초대가 함께 남아 있던 만남이 친구 관계로 이어질 수 있음을 보여 주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 경계와 초대가 함께 남아 있던 만남이 친구 관계로 이어질 수 있음을 보여 주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Aranaga's Memory",
+       "quest_ko": "아란나가의 추억",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aranaga's Memory",
+       "quest_ko": "아란나가의 추억",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aranaga's Memory",
+       "quest_ko": "아란나가의 추억",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aranaga's Memory",
+       "quest_ko": "아란나가의 추억",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Aranaga's Memory",
+       "quest_ko": "아란나가의 추억",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 아란나가의 추억과 여행자와의 만남",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Memory's Final Chapter와 재회",
+     "status": "accepted",
+     "note": "The facts match Q27, Q29, Q13, Q9 and Q16. The interpretation is reasonable.",
+     "quote": "Here you are, Nara , White Floaty. Welcome you, the three of us.",
+     "sentences": [
+      {
+       "t_raw": "Arama에 따르면 Aranakin, Aragaru, Aranaga는 여행자를 기억하지 못하지만 숲은 기억하고 이야기는 살아남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란마에 따르면 아란나킨, 아란가루, 아란나가는 여행자를 기억하지 못하지만 숲은 기억하고 이야기는 살아남는다."
+      },
+      {
+       "t_raw": "그런 가운데 Aranakin은 Aranaga가 왔고 여행자들이 왔다고 알리며, Aranaga는 Nara와 White Floaty를 맞이해 셋이 너희를 환영한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런 가운데 아란나킨은 아란나가가 왔고 여행자들이 왔다고 알리며, 아란나가는 나라와 하얀 둥둥이를 맞이해 셋이 너희를 환영한다고 말한다."
+      },
+      {
+       "t_raw": "달이 뜨자 꽃을 심을 시간이라며 Aranaga가 준비를 묻고, Aranakin과 Aragaru에게 의식을 시작하자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "달이 뜨자 꽃을 심을 시간이라며 아란나가가 준비를 묻고, 아란나킨과 아란가루에게 의식을 시작하자고 한다."
+      },
+      {
+       "t_raw": "**기억이 이어지지 않아도 다시 만나 의식을 함께하는 장면**인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**기억이 이어지지 않아도 다시 만나 의식을 함께하는 장면**인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arama"
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory's Final Chapter",
+       "quest_ko": "추억의 종장",
+       "version": "3.0",
+       "speaker": "Aranakin"
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory's Final Chapter",
+       "quest_ko": "추억의 종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory's Final Chapter",
+       "quest_ko": "추억의 종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory's Final Chapter",
+       "quest_ko": "추억의 종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      }
+     ],
+     "heading": "작중 행적 — 추억의 종장과 재회",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Memory's Final Chapter와 재회",
+     "status": "accepted",
+     "note": "The ritual lines match Q4, Q19 and Q22, and the Vanarana location matches A2. The interpretation is reasonable.",
+     "quote": "Be back home, be back home, dreams of the garden, memories of the forest...",
+     "sentences": [
+      {
+       "t_raw": "의식에서는 집으로 돌아오라는 노랫말과 더 깊은 꿈, 영원한 행복, 포옹하자는 구절이 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "의식에서는 집으로 돌아오라는 노랫말과 더 깊은 꿈, 영원한 행복, 포옹하자는 구절이 이어진다."
+      },
+      {
+       "t_raw": "**정원의 꿈과 숲의 기억을 부르는 의식의 분위기**가 이런 구절에서 드러나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**정원의 꿈과 숲의 기억을 부르는 의식의 분위기**가 이런 구절에서 드러나는 셈이다."
+      },
+      {
+       "t_raw": "Memory's Final Chapter를 마친 뒤 Aranaga는 Vanarana에서 찾을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "추억의 종장을 마친 뒤 아란나가는 바나라나에서 찾을 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Memory's Final Chapter",
+       "quest_ko": "추억의 종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory's Final Chapter",
+       "quest_ko": "추억의 종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory's Final Chapter",
+       "quest_ko": "추억의 종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Memory's Final Chapter",
+       "quest_ko": "추억의 종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "wiki",
+       "page": "Aranaga",
+       "revision": 1259605,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 추억의 종장과 재회",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The quotes match Q8 and Q12. The interpretation is hedged (\"leaves room for\") and does not state a new fact.",
+     "quote": "The forest will remember, but...",
+     "sentences": [
+      {
+       "t_raw": "Aranaga는 Festival Utsava에서 \"The forest will remember, but...\"라고 말하고, 이어 \"What is it... Can't remember...\"라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나가는 우트사바 축제에서 \"숲은 기억할 테지만...\"이라고 말하고, 이어 \"뭐였더라... 기억이 안 나...\"라고 한다.",
+       "polish": {
+        "from": "아란나가는 우트사바 축제에서 \"The forest will remember, but...\"라고 말하고, 이어 \"What is it... Can't remember...\"라고 한다.",
+        "text": "아란나가는 우트사바 축제에서 \"숲은 기억할 테지만...\"이라고 말하고, 이어 \"뭐였더라... 기억이 안 나...\"라고 한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "여기서 Aranaga는 기억하지 못한다고 말하고, 숲은 기억할 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여기서 아란나가는 기억하지 못한다고 말하고, 숲은 기억할 것이라고 말한다."
+      },
+      {
+       "t_raw": "**개인의 기억 상실**과 숲의 기억을 나란히 놓는 구성은 Aranaga의 망각이 숲이라는 더 넓은 기억과 연결될 여지를 남긴다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**개인의 기억 상실**과 숲의 기억을 나란히 놓는 구성은 아란나가의 망각이 숲이라는 더 넓은 기억과 연결될 여지를 남긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences follow Q27 and Q28; the interpretation is reasonable.",
+     "quote": "Although Aranakin, Aranaga, and Aragaru don't remember you, the forest does. The story will live on.",
+     "sentences": [
+      {
+       "t_raw": "Arama는 Aranakin, Aranaga, Aragaru가 상대를 기억하지 못해도 **숲은 기억한다**고 말하며 이야기는 살아남는다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란마는 아란나킨, 아란나가, 아란가루가 상대를 기억하지 못해도 **숲은 기억한다**고 말하며 이야기는 살아남는다고 한다."
+      },
+      {
+       "t_raw": "Arama는 또 Aranaga의 노래와 Aramaha의 노래가 같은 근원을 가진다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란마는 또 아란나가의 노래와 아란마하의 노래가 같은 근원을 가진다고 본다."
+      },
+      {
+       "t_raw": "이 두 진술을 함께 놓으면, Aranaga의 노래는 개인의 기억이 끊긴 뒤에도 숲과 이야기로 이어지는 맥락을 지닌다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 두 진술을 함께 놓으면, 아란나가의 노래는 개인의 기억이 끊긴 뒤에도 숲과 이야기로 이어지는 맥락을 지닌다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arama"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Arama"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by Q14, Q17 and Q31; the interpretation is reasonable.",
+     "quote": "It's not little bean, it's Aranaga. Golden melon Nara is doofus Nara, likes to be bad.",
+     "sentences": [
+      {
+       "t_raw": "Aranaga는 자신을 little bean이라 부르는 말을 바로잡으며, Golden melon Nara를 doofus Nara라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나가는 자신을 작은 콩이라 부르는 말을 바로잡으며, Golden melon 나라를 얼간이 나라라고 말한다.",
+       "polish": {
+        "from": "아란나가는 자신을 little bean이라 부르는 말을 바로잡으며, Golden melon 나라를 doofus 나라라고 말한다.",
+        "text": "아란나가는 자신을 작은 콩이라 부르는 말을 바로잡으며, Golden melon 나라를 얼간이 나라라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "다른 대사에서도 little bean이 아니라고 말하고, Aragaru는 Aranaga가 재미있는 말을 많이 한다고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다른 대사에서도 작은 콩이 아니라고 말하고, 아란가루는 아란나가가 재미있는 말을 많이 한다고 소개한다.",
+       "polish": {
+        "from": "다른 대사에서도 little bean이 아니라고 말하고, 아란가루는 아란나가가 재미있는 말을 많이 한다고 소개한다.",
+        "text": "다른 대사에서도 작은 콩이 아니라고 말하고, 아란가루는 아란나가가 재미있는 말을 많이 한다고 소개한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이런 농담의 반복은 Aranaga의 **유쾌한 면**으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 농담의 반복은 아란나가의 **유쾌한 면**으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aranaga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Risen Moon Chapter",
+       "quest_ko": "떠오르는 달의 장",
+       "version": "3.0",
+       "speaker": "Aragaru"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Golden"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by Q26, the idle quotes A6 and A7, and Q32.",
+     "quote": "I wanted to give you meaty bugs... But Aranaga said Nara don't like eating those... so I gave you a flower too!",
+     "sentences": [
+      {
+       "t_raw": "Aragaru는 Nara에게 **고기 벌레**를 주고 싶었지만, Aranaga가 Nara는 그런 것을 먹지 않는다고 해서 대신 꽃을 주었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란가루는 나라에게 **고기 벌레**를 주고 싶었지만, 아란나가가 나라는 그런 것을 먹지 않는다고 해서 대신 꽃을 주었다고 말한다."
+      },
+      {
+       "t_raw": "Aranaga는 \"Arama...\"라거나 \"The Yajna Grass...\"를 중얼거린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나가는 \"아란마...\"라거나 \"야즈나 풀...\"를 중얼거린다."
+      },
+      {
+       "t_raw": "Paimon은 Aranaga의 정원에 Yajna Grass가 하나뿐이라고 짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아란나가의 정원에 야즈나 풀이 하나뿐이라고 짚는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Aragaru"
+      },
+      {
+       "kind": "wiki",
+       "page": "Aranaga",
+       "revision": 1259605,
+       "section": "Idle Quotes",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aranaga",
+       "revision": 1259605,
+       "section": "Idle Quotes",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Final Chapter",
+       "quest_ko": "종장",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The 'translation' is the untranslated English line copied as-is. It is not a Korean translation.",
+     "t_raw": "[번역] \"여기 있으니까, Mawtiyima. 우리를 지킨다, 숲을 지킨다, Mawtiyima. 그래서 친구들과 모일 수 있고, 친구들이 잘 자라도록 돕는다, Aranaga.\"",
+     "en": "Because is here, Mawtiyima. Protects us, protects the forest, Mawtiyima. So can gather with friends, help friends thrive, Aranaga.",
+     "speaker": "Aranaga",
+     "source": {
+      "kind": "quest",
+      "quest": "The Final Chapter",
+      "quest_ko": "종장",
+      "version": "3.0",
+      "speaker": "Aranaga"
+     },
+     "t": "[번역] \"여기 있으니까, 마우티이마. 우리를 지킨다, 숲을 지킨다, 마우티이마. 그래서 친구들과 모일 수 있고, 친구들이 잘 자라도록 돕는다, 아란나가.\"",
+     "speaker_ko": "아란나가"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of Q31.",
+     "t_raw": "Aranaga는 우리 셋 중 맏형이면서 가장 재미있는 녀석이야! 재미있는 말을 잔뜩 할 수 있고, Nara에 대해서도 많이 알고 있어.",
+     "en": "Aranaga is the eldest and most interesting of us three! He can say a lot of funny things and he knows a lot about Nara.",
+     "speaker": "Aragaru",
+     "source": {
+      "kind": "quest",
+      "quest": "Risen Moon Chapter",
+      "quest_ko": "떠오르는 달의 장",
+      "version": "3.0",
+      "speaker": "Aragaru"
+     },
+     "t": "아란나가는 우리 셋 중 맏형이면서 가장 재미있는 녀석이야! 재미있는 말을 잔뜩 할 수 있고, 나라에 대해서도 많이 알고 있어.",
+     "speaker_ko": "아란가루"
+    },
+    {
+     "section": "작중 행적 — Mawtiyima 정화",
+     "status": "accepted",
+     "note": "Faithful translation of Q25.",
+     "t_raw": "Mawtiyima Forest 이야기가 나왔으니, Aranaga가 그곳에서 너를 기다리고 있다. 그는 Arahaoma 의식을 주관한다. 가서 그를 만나 보라!",
+     "en": "Speaking of the Mawtiyima Forest, Aranaga is waiting for you there. He presides over the Arahaoma ritual. Go see him!",
+     "speaker": "Aranakin",
+     "source": {
+      "kind": "quest",
+      "quest": "Starry Night Chapter",
+      "quest_ko": "별이 빛나는 밤",
+      "version": "3.0",
+      "speaker": "Aranakin"
+     },
+     "t": "마우티이마 숲 이야기가 나왔으니, 아란나가가 그곳에서 너를 기다리고 있다. 그는 아란하오마 의식을 주관한다. 가서 그를 만나 보라!",
+     "speaker_ko": "아란나킨"
+    },
+    {
+     "section": "작중 행적 — Aranaga's Memory와 여행자와의 만남",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "음, Aranaga가 우리를 자신의 정원에 초대했어, 그런데... 그건 그가 우리와 친구가 되는 걸 거부하지 않았다는 뜻이지, 그렇지? 언젠가 그를 만나러 가자!",
+     "en": "Well, Aranaga invited us to his garden, though... That means he didn't refuse to be friends with us, right? Let's pay him a visit sometime!",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Aranaga's Memory",
+      "quest_ko": "아란나가의 추억",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "음, 아란나가가 우리를 자신의 정원에 초대했어, 그런데... 그건 그가 우리와 친구가 되는 걸 거부하지 않았다는 뜻이지, 그렇지? 언젠가 그를 만나러 가자!",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "작중 행적 — Memory's Final Chapter와 재회",
+     "status": "accepted",
+     "note": "Faithful translation of Aranaga's line.",
+     "t_raw": "여기 왔구나, Nara, White Floaty. 우리 셋이 너희를 환영한다.",
+     "en": "Here you are, Nara , White Floaty. Welcome you, the three of us.",
+     "speaker": "Aranaga",
+     "source": {
+      "kind": "quest",
+      "quest": "Memory's Final Chapter",
+      "quest_ko": "추억의 종장",
+      "version": "3.0",
+      "speaker": "Aranaga"
+     },
+     "t": "여기 왔구나, 나라, 하얀 둥둥이. 우리 셋이 너희를 환영한다.",
+     "speaker_ko": "아란나가"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Arama's line.",
+     "t_raw": "Aranakin, Aranaga, Aragaru가 너를 기억하지 못해도, 숲은 기억한다. 이야기는 살아남을 것이다.",
+     "en": "Although Aranakin, Aranaga, and Aragaru don't remember you, the forest does. The story will live on.",
+     "speaker": "Arama",
+     "source": {
+      "kind": "quest",
+      "quest": "Festival Utsava",
+      "quest_ko": "우트사바 축제",
+      "version": "3.0",
+      "speaker": "Arama"
+     },
+     "t": "아란나킨, 아란나가, 아란가루가 너를 기억하지 못해도, 숲은 기억한다. 이야기는 살아남을 것이다.",
+     "speaker_ko": "아란마"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Aragaru's line.",
+     "t_raw": "너희에게 고기 벌레를 주고 싶었는데... 하지만 Aranaga가 Nara는 그런 것을 먹는 걸 좋아하지 않는다고 해서... 그래서 너희에게 꽃도 줬어!",
+     "en": "I wanted to give you meaty bugs... But Aranaga said Nara don't like eating those... so I gave you a flower too!",
+     "speaker": "Aragaru",
+     "source": {
+      "kind": "quest",
+      "quest": "The Final Chapter",
+      "quest_ko": "종장",
+      "version": "3.0",
+      "speaker": "Aragaru"
+     },
+     "t": "너희에게 고기 벌레를 주고 싶었는데... 하지만 아란나가가 나라는 그런 것을 먹는 걸 좋아하지 않는다고 해서... 그래서 너희에게 꽃도 줬어!",
+     "speaker_ko": "아란가루"
+    }
+   ]
+  }
+ ]
+}

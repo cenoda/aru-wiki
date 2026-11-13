@@ -1,0 +1,761 @@
+{
+ "node": "Clementine",
+ "articles": [
+  {
+   "node": "Clementine",
+   "from_version": "4.0",
+   "cutoff": "2023-09-26T00:00:00Z",
+   "input": [
+    {
+     "page": "Clementine",
+     "url": "https://genshin-impact.fandom.com/wiki/Clementine",
+     "revision": 1337615
+    }
+   ],
+   "input_counts": {
+    "mentions": 16,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 827,
+   "input_cut": false,
+   "input_hash": "5d9079237246",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "trimmed",
+     "note": "Sentence 2 says the builder named the lines after the two most important women, but Aeval only says he 'heard' it (hearsay), and the Korean states it as Aeval 'saying' it directly while also implying fact; more importantly it is fine on content, yet it drops the hearsay framing. Judged as a fair rewording of M10 'I heard', it is borderline; flagged because 'says' presents it as Aeval's own assertion.",
+     "quote": "I heard that the builder of the aquabus named the Navia and Clementine Lines after the two most important women in his life.",
+     "sentences": [
+      {
+       "t_raw": "Clementine은 Genshin Impact에서 언급되는 인물로, Callas의 아내이자 Navia의 어머니다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클레멘타인은 원신에서 언급되는 인물로, 칼라스의 아내이자 나비아의 어머니다."
+      },
+      {
+       "t_raw": "그녀는 Spina di Rosula의 전직 대표였던 Callas의 아내였고, Navia를 낳던 중 합병증으로 게임 사건 이전에 세상을 떠났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 가시 장미회의 전직 대표였던 칼라스의 아내였고, 나비아를 낳던 중 합병증으로 게임 사건 이전에 세상을 떠났다."
+      },
+      {
+       "t_raw": "Aeval은 건설자가 인생에서 가장 중요한 두 여성의 이름을 Navia Line과 Clementine Line에 붙였다고 말한다.",
+       "interp": false,
+       "dropped": true,
+       "t": "아이벨은 건설자가 인생에서 가장 중요한 두 여성의 이름을 나비아 노선과 클레멘타인 노선에 붙였다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Aeval"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line K9: About Navia Line and Clementine Line Naming",
+       "paragraph": "M10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The English only says 'Clementine · Deceased' under Former Members of Spina di Rosula. Korean says she is listed as a deceased person in the former-member roster, which is supported, but 'former members list' is fine; however the claim is fine—no failure on that. Failure is sentence 1 absent? No: only sentence 2 flagged for describing a 'roster' (명단) not given; the material just lists her under Former Members.",
+     "quote": "She is Callas' wife and Navia's mother.",
+     "sentences": [
+      {
+       "t_raw": "Clementine은 Genshin Impact에서 언급되는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클레멘타인은 원신에서 언급되는 인물이다."
+      },
+      {
+       "t_raw": "Clementine은 Spina di Rosula의 전 회장 Callas의 아내이자 Navia의 어머니다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클레멘타인은 가시 장미회의 전 회장 칼라스의 아내이자 나비아의 어머니다."
+      },
+      {
+       "t_raw": "Spina di Rosula의 전 구성원 항목에는 Clementine이 사망한 인물로 표시되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "가시 장미회의 전 구성원 항목에는 클레멘타인이 사망한 인물로 표시되어 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Aeval"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Spina di Rosula",
+       "revision": 1342119,
+       "section": "Structure > Former Members",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Sentence 2 is interpretation that adds a framing ('birth and loss overlap in family history') but is mostly reasonable; flagged because it treats the secret as concerning the death circumstances, whereas the English only says Callas kept a secret (the birth of Navia, from her), not that the death circumstances were the secret.",
+     "quote": "she passed away before the events of the game due to complications during the birth of her daughter, Navia",
+     "sentences": [
+      {
+       "t_raw": "Clementine은 게임 사건 이전에 딸 Navia를 낳던 중 합병증으로 사망했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클레멘타인은 게임 사건 이전에 딸 나비아를 낳던 중 합병증으로 사망했다."
+      },
+      {
+       "t_raw": "그 사망 경위는 Callas가 숨긴 비밀이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 사망 경위는 칼라스가 숨긴 비밀이었다."
+      },
+      {
+       "t_raw": "Navia의 출생과 Clementine의 죽음이 맞물려 있고, Callas가 비밀을 숨겼다는 점에서, 이는 가족사에서 출생과 상실이 겹치는 사안으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "나비아의 출생과 클레멘타인의 죽음이 맞물려 있고, 칼라스가 비밀을 숨겼다는 점에서, 이는 가족사에서 출생과 상실이 겹치는 사안으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "Clementine Line",
+     "status": "accepted",
+     "note": "All sentences are supported by M3, M9, M13, M15.",
+     "quote": "Clementine Line — operated by Aeval, with stations at:",
+     "sentences": [
+      {
+       "t_raw": "Clementine Line은 **Aeval이 운영**하며 Romaritime Station을 종점으로 두는 Aquabus 노선이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클레멘타인 노선은 **아이벨이 운영**하며 바다 이슬 역을 종점으로 두는 레일 보트 노선이다."
+      },
+      {
+       "t_raw": "이 노선의 관광은 웅장한 Court of Fontaine으로 향하고, Romaritime Harbor를 목적지로 하는 승객이 이용하도록 안내된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 노선의 관광은 웅장한 폰타인성으로 향하고, 바다 이슬 항구를 목적지로 하는 승객이 이용하도록 안내된다."
+      },
+      {
+       "t_raw": "이처럼 Court of Fontaine 방향 관광과 Romaritime Harbor 방면 안내가 한 노선에서 함께 제시되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 폰타인성 방향 관광과 바다 이슬 항구 방면 안내가 한 노선에서 함께 제시되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Lines",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line J4: Arriving at Romaritime Station",
+       "paragraph": "M9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line A1: Embarking for Main Station",
+       "paragraph": "M13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine: Court Region Waterway Hub",
+       "revision": 1351536,
+       "section": "Interactables > Aquabus Station Notice",
+       "paragraph": "M15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "클레멘타인 노선",
+     "latin_left": []
+    },
+    {
+     "section": "Clementine Line",
+     "status": "trimmed",
+     "note": "Sentence 1 says Aeval described a story of the line becoming the north-south artery and imagined being a merchant sailor without it; M11/M12 support this. But it attributes 'monument to Fontaine's scientific progress' correctly. The imagined-sailor statement is conditional and matches. Flagged due to the wording that Aeval tells the 'story that makes it the north-south artery' as fact when M12 is hypothetical ('would become').",
+     "quote": "Welcome aboard the Clementine Line, I am top-rated tour guide Aeval, at your service!",
+     "sentences": [
+      {
+       "t_raw": "Aeval은 스스로를 최고 등급의 투어 가이드라 소개하며 Clementine Line 승선 인사를 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아이벨은 스스로를 최고 등급의 투어 가이드라 소개하며 클레멘타인 노선 승선 인사를 건넨다."
+      },
+      {
+       "t_raw": "그는 이 노선에 얽힌 이야기를 들려주면서 Clementine Line을 **Fontaine의 과학 발전을 기리는 기념비**라고 말하고, 남북 대동맥이 되는 이야기와 이 노선이 없었다면 자신이 상선 선원이 되었을지도 모른다는 상상을 전한다.",
+       "interp": false,
+       "dropped": true,
+       "t": "그는 이 노선에 얽힌 이야기를 들려주면서 클레멘타인 노선을 **폰타인의 과학 발전을 기리는 기념비**라고 말하고, 남북 대동맥이 되는 이야기와 이 노선이 없었다면 자신이 상선 선원이 되었을지도 모른다는 상상을 전한다."
+      },
+      {
+       "t_raw": "다음에 Clementine Line을 탈 때는 더 나은 해설을 제공하겠다고 약속한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다음에 클레멘타인 노선을 탈 때는 더 나은 해설을 제공하겠다고 약속한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line F3: An Anecdote About the Clementine Line",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line A4: Embarking for Main Station",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line J1: Welcome to Romaritime Station",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line B4: About Clockwork Meka Mass Release",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line G3: A Legend About Beryl Region",
+       "paragraph": "M11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line F3: An Anecdote About the Clementine Line",
+       "paragraph": "M12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "클레멘타인 노선",
+     "latin_left": []
+    },
+    {
+     "section": "Clementine Line",
+     "status": "accepted",
+     "note": "Supported by A2 and M10; the interpretation sentence is reasonable and hedged.",
+     "quote": "I heard that the builder of the aquabus named the Navia and Clementine Lines after the two most important women in his life.",
+     "sentences": [
+      {
+       "t_raw": "Aeval은 Aquabus 제작자가 Navia Line과 Clementine Line을 자신의 삶에서 가장 중요한 두 여성의 이름을 따 명명했다고 들었다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아이벨은 레일 보트 제작자가 나비아 노선과 클레멘타인 노선을 자신의 삶에서 가장 중요한 두 여성의 이름을 따 명명했다고 들었다고 전한다."
+      },
+      {
+       "t_raw": "Poisson은 Clementine Line을 만든 인물의 고향으로 언급되며, 그 인물이 Spina di Rosula와 연관되어 Clementine의 이름을 노선에 붙였을 가능성이 제기된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "푸아송 마을은 클레멘타인 노선을 만든 인물의 고향으로 언급되며, 그 인물이 가시 장미회와 연관되어 클레멘타인의 이름을 노선에 붙였을 가능성이 제기된다."
+      },
+      {
+       "t_raw": "다만 그 인물이 누구인지와 Clementine과의 관계는 확인되지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 그 인물이 누구인지와 클레멘타인과의 관계는 확인되지 않았다."
+      },
+      {
+       "t_raw": "이 명명 이야기는 Spina di Rosula와의 연결 가능성을 시사하는 **미확인 정보**로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 명명 이야기는 가시 장미회와의 연결 가능성을 시사하는 **미확인 정보**로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Aeval"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line K9: About Navia Line and Clementine Line Naming",
+       "paragraph": "M10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "클레멘타인 노선",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences match A1-A3.",
+     "quote": "Clementine is a mentioned character in Genshin Impact. She is Callas' wife and Navia's mother.",
+     "sentences": [
+      {
+       "t_raw": "Clementine은 Spina di Rosula의 전 회장 Callas의 아내이자 Navia의 어머니다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클레멘타인은 가시 장미회의 전 회장 칼라스의 아내이자 나비아의 어머니다."
+      },
+      {
+       "t_raw": "가족 관계는 이렇게 Callas와 Navia를 통해 드러나지만, Clementine 본인에 대해 알려진 것은 많지 않다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가족 관계는 이렇게 칼라스와 나비아를 통해 드러나지만, 클레멘타인 본인에 대해 알려진 것은 많지 않다."
+      },
+      {
+       "t_raw": "그녀는 게임 사건 이전에 Navia의 출생 과정에서 생긴 합병증으로 세상을 떠났고, 그 경위는 Callas가 숨긴 비밀이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 게임 사건 이전에 나비아의 출생 과정에서 생긴 합병증으로 세상을 떠났고, 그 경위는 칼라스가 숨긴 비밀이었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Aeval"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Deceased former member (M2); the interpretation is reasonable; nothing else is known (A3).",
+     "quote": "Clementine · Deceased",
+     "sentences": [
+      {
+       "t_raw": "Spina di Rosula의 전 구성원 항목에는 Clementine이 사망한 인물로 올라 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가시 장미회의 전 구성원 항목에는 클레멘타인이 사망한 인물로 올라 있다."
+      },
+      {
+       "t_raw": "전 회장의 아내이면서 전 구성원으로 기록된 점을 함께 보면, 그녀의 자리는 가족 관계와 조직 소속이 겹치는 곳에 놓여 있었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "전 회장의 아내이면서 전 구성원으로 기록된 점을 함께 보면, 그녀의 자리는 가족 관계와 조직 소속이 겹치는 곳에 놓여 있었던 셈이다."
+      },
+      {
+       "t_raw": "다만 전 구성원 명단 외에 그녀가 맡았던 일이나 활동은 자료에서 확인되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 전 구성원 명단 외에 그녀가 맡았던 일이나 활동은 자료에서 확인되지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Aeval"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Spina di Rosula",
+       "revision": 1342119,
+       "section": "Structure > Former Members",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches A2, with the possibilities kept hedged.",
+     "quote": "It is possible that the person Aeval mentioned is close to the family leading Spina di Rosula, naming the Clementine line after Clementine.",
+     "sentences": [
+      {
+       "t_raw": "Clementine Line을 지은 사람의 고향이 Poisson이라고 Aeval이 언급했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클레멘타인 노선을 지은 사람의 고향이 푸아송 마을이라고 아이벨이 언급했다."
+      },
+      {
+       "t_raw": "그 사람은 Spina di Rosula와 연관된 인물일 가능성이 있으며, 다른 노선들도 작업했을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 사람은 가시 장미회와 연관된 인물일 가능성이 있으며, 다른 노선들도 작업했을 수 있다."
+      },
+      {
+       "t_raw": "Aeval이 말한 인물이 Spina di Rosula를 이끄는 가문과 가까워 Clementine Line의 이름을 Clementine에서 따왔을 가능성도 제기된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아이벨이 말한 인물이 가시 장미회를 이끄는 가문과 가까워 클레멘타인 노선의 이름을 클레멘타인에서 따왔을 가능성도 제기된다."
+      },
+      {
+       "t_raw": "다만 그가 누구인지와 **Clementine과의 관계**는 확인되지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 그가 누구인지와 **클레멘타인과의 관계**는 확인되지 않았다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Aeval"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "M10 supports the quote; the interpretation stays hedged and says the relationship is unconfirmed.",
+     "quote": "I heard that the builder of the aquabus named the Navia and Clementine Lines after the two most important women in his life.",
+     "sentences": [
+      {
+       "t_raw": "Aeval은 aquabus를 지은 사람이 자신의 인생에서 **가장 중요한 두 여성**의 이름을 따서 Navia Line과 Clementine Line을 명명했다고 들었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아이벨은 아쿠아버스를 지은 사람이 자신의 인생에서 **가장 중요한 두 여성**의 이름을 따서 나비아 노선과 클레멘타인 노선을 명명했다고 들었다고 말한다.",
+       "polish": {
+        "from": "아이벨은 aquabus를 지은 사람이 자신의 인생에서 **가장 중요한 두 여성**의 이름을 따서 나비아 노선과 클레멘타인 노선을 명명했다고 들었다고 말한다.",
+        "text": "아이벨은 아쿠아버스를 지은 사람이 자신의 인생에서 **가장 중요한 두 여성**의 이름을 따서 나비아 노선과 클레멘타인 노선을 명명했다고 들었다고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그 인물이 누구이며 Clementine과 어떤 관계인지는 여전히 확인되지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 인물이 누구이며 클레멘타인과 어떤 관계인지는 여전히 확인되지 않았다."
+      },
+      {
+       "t_raw": "이 전언과 앞선 가능성을 함께 보면, Clementine Line의 이름은 그 사람이 중요하게 여긴 Clementine이라는 여성에게서 비롯됐을 수 있으나, 그 구체적 관계는 미확인인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 전언과 앞선 가능성을 함께 보면, 클레멘타인 노선의 이름은 그 사람이 중요하게 여긴 클레멘타인이라는 여성에게서 비롯됐을 수 있으나, 그 구체적 관계는 미확인인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Clementine",
+       "revision": 1337615,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Aeval"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line K9: About Navia Line and Clementine Line Naming",
+       "paragraph": "M10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by M4-M9.",
+     "quote": "Welcome aboard the Clementine Line, I am top-rated tour guide Aeval, at your service!",
+     "sentences": [
+      {
+       "t_raw": "Aeval는 자신을 **top-rated tour guide Aeval**라고 소개하며 Clementine Line 탑승객을 맞는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아이벨은 자신을 **최고 평점의 투어 가이드 아이벨**라고 소개하며 클레멘타인 노선 탑승객을 맞는다.",
+       "polish": {
+        "from": "아이벨은 자신을 **top-rated tour guide 아이벨**라고 소개하며 클레멘타인 노선 탑승객을 맞는다.",
+        "text": "아이벨은 자신을 **최고 평점의 투어 가이드 아이벨**라고 소개하며 클레멘타인 노선 탑승객을 맞는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그녀는 Clementine Line에 관한 재미있는 일화를 들려주겠다고 하고, 다음 탑승 때 더 나은 해설을 제공하겠다고 약속한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 클레멘타인 노선에 관한 재미있는 일화를 들려주겠다고 하고, 다음 탑승 때 더 나은 해설을 제공하겠다고 약속한다."
+      },
+      {
+       "t_raw": "또 Clementine Line을 Fontaine의 과학 발전의 기념비라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 클레멘타인 노선을 폰타인의 과학 발전의 기념비라고 말한다."
+      },
+      {
+       "t_raw": "여유롭고 편안한 관광 끝에 종점인 Romaritime Station에 도착한다고 안내한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여유롭고 편안한 관광 끝에 종점인 바다 이슬 역에 도착한다고 안내한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line F3: An Anecdote About the Clementine Line",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line A4: Embarking for Main Station",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line J1: Welcome to Romaritime Station",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line B4: About Clockwork Meka Mass Release",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Clementine Line J4: Arriving at Romaritime Station",
+       "paragraph": "M9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by M8, M15 and M16.",
+     "quote": "This station serves three lines. Passengers destined for Romaritime Harbor should take the Clementine Line.",
+     "sentences": [
+      {
+       "t_raw": "Court of Fontaine: Court Region Waterway Hub의 2F Clementine Line 엘리베이터 근처에는 상호작용할 수 있는 Aquabus Station Notice 게시판이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인성·수로 터미널의 2F 클레멘타인 노선 엘리베이터 근처에는 상호작용할 수 있는 아쿠아버스 정류장 공지 게시판이 있다."
+      },
+      {
+       "t_raw": "게시판은 이 역이 세 노선을 운영하며 Romaritime Harbor로 향하는 승객은 Clementine Line을 타라고 안내한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게시판은 이 역이 세 노선을 운영하며 바다 이슬 항구로 향하는 승객은 클레멘타인 노선을 타라고 안내한다."
+      },
+      {
+       "t_raw": "Elphane는 Aquabus 여정의 **기념 사진**을 Clementine Line의 Court of Fontaine Station에서 찍으라고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "엘파니는 레일 보트 여정의 **기념 사진**을 클레멘타인 노선의 Court of Fontaine Station에서 찍으라고 권한다.",
+       "polish": {
+        "from": "엘파니는 레일 보트 여정의 **기념 사진**을 클레멘타인 노선의 Court of Fontaine Station에서 찍으라고 권한다.",
+        "text": "엘파니는 레일 보트 여정의 **기념 사진**을 클레멘타인 노선의 Court of Fontaine Station에서 찍으라고 권한다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine: Court Region Waterway Hub",
+       "revision": 1351536,
+       "section": "Interactables > Aquabus Station Notice",
+       "paragraph": "M8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine: Court Region Waterway Hub",
+       "revision": 1351536,
+       "section": "Interactables > Aquabus Station Notice",
+       "paragraph": "M15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aquabus",
+       "revision": 1349703,
+       "section": "Aquabus Tour Voice-Overs > Navia Line C2:",
+       "paragraph": "M16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Court of Fontaine Station"
+     ]
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

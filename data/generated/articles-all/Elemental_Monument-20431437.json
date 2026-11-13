@@ -20,35 +20,41 @@
    "input_chars": 598,
    "input_cut": false,
    "input_hash": "7306c98d7e18",
-   "writer": "or-ds,glm",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Elemental Monuments, sometimes colloquially referred to as Elemental Totems, are small totems that are activated upon striking them with the element indicated on them.",
+     "status": "accepted",
+     "note": "All sentences are supported by A1-A3; the interpretation is reasonable.",
+     "quote": "Oftentimes, elemental monuments are used to reveal hidden chests or unlock domains.",
      "sentences": [
       {
-       "t_raw": "Elemental Monument는 지정된 원소로 공격해 활성화하는 작은 토템이다.",
+       "t_raw": "**Elemental Monuments**는 흔히 **Elemental Totems**라고도 불리는 작은 토템으로, 표시된 원소로 공격하면 활성화된다.",
        "interp": false,
        "dropped": false,
-       "t": "원소 비석은 지정된 원소로 공격해 활성화하는 작은 토템이다."
+       "t": "**원소 비석**은 흔히 **Elemental Totems**라고도 불리는 작은 토템으로, 표시된 원소로 공격하면 활성화된다."
       },
       {
-       "t_raw": "원소 스킬, 원소 폭발, 활 사용자의 완전 충전 조준 사격, 법구 사용자의 일반 공격으로 활성화할 수 있다.",
+       "t_raw": "Elemental Skills, Elemental Bursts, 활을 쓰는 캐릭터의 완전히 충전된 조준 사격, 또는 촉매 무기를 쓰는 캐릭터의 일반 공격이 발동 수단에 포함된다.",
        "interp": false,
        "dropped": false,
-       "t": "원소 스킬, 원소 폭발, 활 사용자의 완전 충전 조준 사격, 법구 사용자의 일반 공격으로 활성화할 수 있다."
+       "t": "원소전투 스킬, 원소폭발, 활을 쓰는 캐릭터의 완전히 충전된 조준 사격, 또는 촉매 무기를 쓰는 캐릭터의 일반 공격이 발동 수단에 포함된다."
       },
       {
-       "t_raw": "한 번 활성화하면 계속 켜져 있는 것도 있고 일정 시간이 지나면 비활성화되는 것도 있으며, 숨겨진 상자를 드러내거나 도메인을 여는 데 쓰이는 경우가 있다.",
+       "t_raw": "한 번 활성화한 뒤 계속 켜져 있는 것도 있고 일정 시간이 지나면 꺼지는 것도 있으며, 숨겨진 상자를 드러내거나 도메인을 여는 데 자주 쓰인다.",
        "interp": false,
        "dropped": false,
-       "t": "한 번 활성화하면 계속 켜져 있는 것도 있고 일정 시간이 지나면 비활성화되는 것도 있으며, 숨겨진 상자를 드러내거나 도메인을 여는 데 쓰이는 경우가 있다."
+       "t": "한 번 활성화한 뒤 계속 켜져 있는 것도 있고 일정 시간이 지나면 꺼지는 것도 있으며, 숨겨진 상자를 드러내거나 도메인을 여는 데 자주 쓰인다."
+      },
+      {
+       "t_raw": "표시된 원소로 작동해 숨겨진 상자나 도메인으로 이어지는 점에서, Elemental Monuments는 원소를 매개로 보상을 여는 장치로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "표시된 원소로 작동해 숨겨진 상자나 도메인으로 이어지는 점에서, 원소 비석은 원소를 매개로 보상을 여는 장치로 볼 수 있다."
       }
      ],
      "sources": [
@@ -78,109 +84,33 @@
       }
      ],
      "heading": null,
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Elemental Monuments, sometimes colloquially referred to as Elemental Totems, are small totems that are activated upon striking them with the element indicated on them.",
-     "sentences": [
-      {
-       "t_raw": "**Elemental Monument**는 그 위에 표시된 원소로 공격하면 활성화되는 작은 토템이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**원소 비석**은 그 위에 표시된 원소로 공격하면 활성화되는 작은 토템이다."
-      },
-      {
-       "t_raw": "때때로 구어적으로는 **Elemental Totems**라고도 불린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "때때로 구어적으로는 **Elemental Totems**라고도 불린다."
-      },
-      {
-       "t_raw": "표시된 원소와 타격이 함께 필요한 구조로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "표시된 원소와 타격이 함께 필요한 구조로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Elemental Monument",
-       "revision": 201462,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
      "latin_left": [
       "Elemental Totems"
      ]
     },
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This includes damage from Elemental Skills, Elemental Bursts, fully-charged Aimed Shots from Bow users, or Normal Attacks from Catalyst users.",
+     "section": "정체 — 발동 조건과 지속 방식",
+     "status": "accepted",
+     "note": "Supported by A1.",
+     "quote": "Elemental Monuments, sometimes colloquially referred to as Elemental Totems, are small totems that are activated upon striking them with the element indicated on them.",
      "sentences": [
       {
-       "t_raw": "활성화를 일으키는 공격에는 원소 스킬과 원소 폭발로 주는 피해가 포함된다.",
+       "t_raw": "**Elemental Monument**는 작은 토템이며, 몸에 표시된 원소로 공격하면 활성화되는 대상이다.",
        "interp": false,
        "dropped": false,
-       "t": "활성화를 일으키는 공격에는 원소 스킬과 원소 폭발로 주는 피해가 포함된다."
+       "t": "**원소 비석**은 작은 토템이며, 몸에 표시된 원소로 공격하면 활성화되는 대상이다."
       },
       {
-       "t_raw": "활 사용자의 완전 충전 조준 사격과 촉매 사용자의 일반 공격으로 주는 피해도 이에 포함된다.",
+       "t_raw": "활성화 판정에는 Elemental Skills, Elemental Bursts, Bow 사용자의 완전히 충전된 Aimed Shots, Catalyst 사용자의 Normal Attacks가 포함된다.",
        "interp": false,
        "dropped": false,
-       "t": "활 사용자의 완전 충전 조준 사격과 촉매 사용자의 일반 공격으로 주는 피해도 이에 포함된다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Elemental Monument",
-       "revision": 201462,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "activated upon striking them with the element indicated on them",
-     "sentences": [
-      {
-       "t_raw": "Elemental Monument는 **지정된 원소**로 때었을 때 활성화되는 작은 토텐이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "원소 비석은 **지정된 원소**로 때었을 때 활성화되는 작은 토텐이다."
+       "t": "활성화 판정에는 원소전투 스킬, 원소폭발, Bow 사용자의 완전히 충전된 Aimed Shots, 법구 사용자의 일반 공격이 포함된다."
       },
       {
-       "t_raw": "흔히 \"Elemental Totem\"이라는 별칭으로도 불린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "흔히 \"Elemental Totem\"이라는 별칭으로도 불린다."
-      },
-      {
-       "t_raw": "활성화로 인정되는 공격의 폭은 생각보다 넓어서, Elemental Skill과 Elemental Burst는 물론이고 활 시위를 끝까지 당긴 fully-charged Aimed Shot, Catalyst 사용자의 Normal Attack까지 모두 통한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "활성화로 인정되는 공격의 폭은 생각보다 넓어서, 원소전투 스킬과 원소폭발은 물론이고 활 시위를 끝까지 당긴 fully-charged 조준 사격, 법구 사용자의 일반 공격까지 모두 통한다."
-      },
-      {
-       "t_raw": "즉 파티를 어떻게 짜느냐보다 원소를 맞출 수 있느냐가 관건인 셈이다.",
+       "t_raw": "이런 점에서 Elemental Monument는 여러 원소 공격 방식에 반응하는 토템으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "즉 파티를 어떻게 짜느냐보다 원소를 맞출 수 있느냐가 관건인 셈이다."
+       "t": "이런 점에서 원소 비석은 여러 원소 공격 방식에 반응하는 토템으로 보인다."
       }
      ],
      "sources": [
@@ -193,37 +123,46 @@
        "wiki_refs": []
       }
      ],
-     "heading": "정체",
+     "heading": "정체 — 발동 조건과 지속 방식",
      "latin_left": [
-      "Elemental Totem"
+      "Bow",
+      "Aimed Shots"
      ]
     },
     {
-     "section": "정체",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "only temporarily activated and will deactivate after a certain amount of time",
+     "section": "정체 — 발동 조건과 지속 방식",
+     "status": "accepted",
+     "note": "Supported by A2; the interpretation follows.",
+     "quote": "Some elemental monuments are permanently lit up upon activating them once, while others are only temporarily activated and will deactivate after a certain amount of time.",
      "sentences": [
       {
-       "t_raw": "다만 한 번 켠다고 해서 전부 같은 방식으로 유지되는 것은 아니다.",
+       "t_raw": "발동 뒤 상태는 모두 같지 않다.",
        "interp": false,
        "dropped": false,
-       "t": "다만 한 번 켠다고 해서 전부 같은 방식으로 유지되는 것은 아니다."
+       "t": "발동 뒤 상태는 모두 같지 않다."
       },
       {
-       "t_raw": "어떤 Elemental Monument는 한 번 활성화하면 **영구적으로 켜진 채** 남지만, 어떤 것은 일시적으로만 활성화되어 일정 시간이 지나면 다시 꺼진다.",
+       "t_raw": "어떤 Elemental Monument는 한 번 켜면 영구히 불이 들어오지만, 다른 것은 일정 시간 동안만 활성화되고 그 뒤 다시 꺼진다.",
        "interp": false,
        "dropped": false,
-       "t": "어떤 원소 비석은 한 번 활성화하면 **영구적으로 켜진 채** 남지만, 어떤 것은 일시적으로만 활성화되어 일정 시간이 지나면 다시 꺼진다."
+       "t": "어떤 원소 비석은 한 번 켜면 영구히 불이 들어오지만, 다른 것은 일정 시간 동안만 활성화되고 그 뒤 다시 꺼진다."
       },
       {
-       "t_raw": "지속 방식이 이렇게 제각각인 만큼, 현장에서는 눈앞의 Monument가 어느 쪽에 속하는지 먼저 가려보고 다가가는 편이 좋다고 볼 수 있다.",
+       "t_raw": "따라서 같은 Elemental Monument라도 한 번 켠 뒤 상태가 계속 남는 경우와 시간이 지나 꺼지는 경우로 갈리는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "지속 방식이 이렇게 제각각인 만큼, 현장에서는 눈앞의 Monument가 어느 쪽에 속하는지 먼저 가려보고 다가가는 편이 좋다고 볼 수 있다."
+       "t": "따라서 같은 원소 비석라도 한 번 켠 뒤 상태가 계속 남는 경우와 시간이 지나 꺼지는 경우로 갈리는 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Elemental Monument",
+       "revision": 201462,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Elemental Monument",
@@ -233,34 +172,26 @@
        "wiki_refs": []
       }
      ],
-     "heading": "정체",
-     "latin_left": [
-      "Monument"
-     ]
+     "heading": "정체 — 발동 조건과 지속 방식",
+     "latin_left": []
     },
     {
-     "section": "쓰임",
-     "status": "needs_verify",
-     "note": null,
+     "section": "쓰임새 — 숨겨진 상자와 도메인",
+     "status": "accepted",
+     "note": "Supported by A3.",
      "quote": "Oftentimes, elemental monuments are used to reveal hidden chests or unlock domains.",
      "sentences": [
       {
-       "t_raw": "Elemental Monument의 쓰임은 대개 **숨겨진 상자**를 드러내거나 도메인의 잠금을 여는 데 쓰인다.",
+       "t_raw": "Elemental Monument는 **숨겨진 상자를 드러내거나 도메인을 여는 데** 종종 쓰인다.",
        "interp": false,
        "dropped": false,
-       "t": "원소 비석의 쓰임은 대개 **숨겨진 상자**를 드러내거나 도메인의 잠금을 여는 데 쓰인다."
+       "t": "원소 비석은 **숨겨진 상자를 드러내거나 도메인을 여는 데** 종종 쓰인다."
       },
       {
-       "t_raw": "토텐에 새겨진 원소로 제대로 두드려 활성화하면 그에 상응하는 보상이나 통로가 열리는 구조다.",
-       "interp": false,
-       "dropped": false,
-       "t": "토텐에 새겨진 원소로 제대로 두드려 활성화하면 그에 상응하는 보상이나 통로가 열리는 구조다."
-      },
-      {
-       "t_raw": "활성화 조건이 원소별로 고정되어 있는 만큼, 여행자의 파티 편성이 곧 쓰임의 성패를 가르는 셈이라고 볼 수 있다.",
+       "t_raw": "상자를 드러내는 일과 도메인을 여는 일이 같은 Monument의 쓰임새로 함께 제시되는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "활성화 조건이 원소별로 고정되어 있는 만큼, 여행자의 파티 편성이 곧 쓰임의 성패를 가르는 셈이라고 볼 수 있다."
+       "t": "상자를 드러내는 일과 도메인을 여는 일이 같은 Monument의 쓰임새로 함께 제시되는 셈이다."
       }
      ],
      "sources": [
@@ -271,88 +202,46 @@
        "section": null,
        "paragraph": "A3",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Elemental Monument",
-       "revision": 201462,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
       }
      ],
-     "heading": "쓰임",
-     "latin_left": []
-    },
-    {
-     "section": "쓰임",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Some elemental monuments are permanently lit up upon activating them once, while others are only temporarily activated and will deactivate after a certain amount of time.",
-     "sentences": [
-      {
-       "t_raw": "다만 모든 기념비가 같은 방식으로 남아 있지는 않다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다만 모든 기념비가 같은 방식으로 남아 있지는 않다."
-      },
-      {
-       "t_raw": "한 번 켜지면 그대로 빛나는 것과, 일정 시간이 지나면 다시 꺼지는 것이 섞여 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한 번 켜지면 그대로 빛나는 것과, 일정 시간이 지나면 다시 꺼지는 것이 섞여 있다."
-      },
-      {
-       "t_raw": "이런 영구형과 일시형의 구별이 존재한다는 점에서, Elemental Monument는 단순한 스위치가 아니라 지역 퍼즐의 한 요소로 설계되었다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 영구형과 일시형의 구별이 존재한다는 점에서, 원소 비석은 단순한 스위치가 아니라 지역 퍼즐의 한 요소로 설계되었다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Elemental Monument",
-       "revision": 201462,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Elemental Monument",
-       "revision": 201462,
-       "section": null,
-       "paragraph": "A3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "쓰임",
-     "latin_left": []
+     "heading": "쓰임새 — 숨겨진 상자와 도메인",
+     "latin_left": [
+      "Monument"
+     ]
     },
     {
      "section": "작중 행적 — Break the Sword Cemetery Seal",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Matches Q1; the interpretation is hedged and reasonable.",
      "quote": "The Elemental Monument is located in the in the camp. When I sneaked in under cover of darkness, there was a huge hilichurl with a shield...",
      "sentences": [
       {
-       "t_raw": "Dr. Livingstone은 야영지에 잠입했을 때의 목격담을 전하며, 그곳에 Elemental Monument가 있다고 알려준다.",
+       "t_raw": "Break the Sword Cemetery Seal에서 Dr. Livingstone은 야영지에 있는 **Elemental Monument**를 언급한다.",
        "interp": false,
        "dropped": false,
-       "t": "리빙스턴 박사는 야영지에 잠입했을 때의 목격담을 전하며, 그곳에 원소 비석이 있다고 알려준다."
+       "t": "검무덤 봉인 탐색에서 리빙스턴 박사는 야영지에 있는 **원소 비석**을 언급한다."
       },
       {
-       "t_raw": "그는 어둠을 틈타 몰래 들어갔고, 그 자리에서 방패를 든 거대한 hilichurl과 마주쳤다고 한다.",
+       "t_raw": "그는 어둠을 이용해 잠입했을 때 방패를 든 **거대한 hilichurl**이 있었다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 어둠을 틈타 몰래 들어갔고, 그 자리에서 방패를 든 거대한 hilichurl과 마주쳤다고 한다."
+       "t": "그는 어둠을 이용해 잠입했을 때 방패를 든 **거대한 츄츄족**이 있었다고 전한다.",
+       "polish": {
+        "from": "그는 어둠을 이용해 잠입했을 때 방패를 든 **거대한 hilichurl**이 있었다고 전한다.",
+        "text": "그는 어둠을 이용해 잠입했을 때 방패를 든 **거대한 츄츄족**이 있었다고 전한다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "야영지 안에 Monument가 있다는 사실과 그 옆에 거대한 hilichurl이 있었다는 목격이 한 화자의 증언 안에서 함께 나온다는 점이 이 이야기의 출발점이다.",
-       "interp": false,
+       "t_raw": "야영지의 Elemental Monument를 말하는 장면과 잠입 중 마주친 거대한 hilichurl에 대한 기억이 한데 이어져, Dr. Livingstone이 전하는 야영지는 그의 잠입 경험과 함께 기억되는 곳으로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "야영지 안에 Monument가 있다는 사실과 그 옆에 거대한 hilichurl이 있었다는 목격이 한 화자의 증언 안에서 함께 나온다는 점이 이 이야기의 출발점이다."
+       "t": "야영지의 원소 비석을 말하는 장면과 잠입 중 마주친 거대한 츄츄족에 대한 기억이 한데 이어져, 리빙스턴 박사가 전하는 야영지는 그의 잠입 경험과 함께 기억되는 곳으로 보인다.",
+       "polish": {
+        "from": "야영지의 원소 비석을 말하는 장면과 잠입 중 마주친 거대한 hilichurl에 대한 기억이 한데 이어져, 리빙스턴 박사가 전하는 야영지는 그의 잠입 경험과 함께 기억되는 곳으로 보인다.",
+        "text": "야영지의 원소 비석을 말하는 장면과 잠입 중 마주친 거대한 츄츄족에 대한 기억이 한데 이어져, 리빙스턴 박사가 전하는 야영지는 그의 잠입 경험과 함께 기억되는 곳으로 보인다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -365,145 +254,31 @@
       }
      ],
      "heading": "작중 행적 — 검무덤 봉인 탐색",
-     "latin_left": [
-      "Monument"
-     ]
+     "latin_left": []
     },
     {
-     "section": "작중 행적 — Break the Sword Cemetery Seal",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Some elemental monuments are permanently lit up upon activating them once, while others are only temporarily activated and will deactivate after a certain amount of time.",
-     "sentences": [
-      {
-       "t_raw": "Elemental Monument는 표시된 원소로 공격해야 활성화되는 작은 토템으로, 원소 스킬이나 원소 폭발, 활의 완전 충전 조준 사격, 촉매 무기의 일반 공격으로도 반응한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "원소 비석은 표시된 원소로 공격해야 활성화되는 작은 토템으로, 원소 스킬이나 원소 폭발, 활의 완전 충전 조준 사격, 촉매 무기의 일반 공격으로도 반응한다."
-      },
-      {
-       "t_raw": "그중에는 한 번 활성화하면 영구히 켜져 있는 것도 있고, 일정 시간이 지나면 다시 꺼지는 것도 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그중에는 한 번 활성화하면 영구히 켜져 있는 것도 있고, 일정 시간이 지나면 다시 꺼지는 것도 있다."
-      },
-      {
-       "t_raw": "Monument가 대개 숨겨진 상자를 드러내거나 도메인을 여는 데 쓰인다는 점을 생각하면, 야영지의 Monument 역시 그런 용도를 염두에 둔 언급으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "Monument가 대개 숨겨진 상자를 드러내거나 도메인을 여는 데 쓰인다는 점을 생각하면, 야영지의 Monument 역시 그런 용도를 염두에 둔 언급으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Elemental Monument",
-       "revision": 201462,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Elemental Monument",
-       "revision": 201462,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Elemental Monument",
-       "revision": 201462,
-       "section": null,
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Break the Sword Cemetery Seal",
-       "quest_ko": "검무덤 봉인 탐색",
-       "version": "1.0",
-       "speaker": "Dr. Livingstone"
-      }
-     ],
-     "heading": "작중 행적 — 검무덤 봉인 탐색",
-     "latin_left": [
-      "Monument",
-      "Monument"
-     ]
-    },
-    {
-     "section": "작중 행적 — Break the Sword Cemetery Seal",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This includes damage from Elemental Skills, Elemental Bursts, fully-charged Aimed Shots from Bow users, or Normal Attacks from Catalyst users.",
-     "sentences": [
-      {
-       "t_raw": "목격담의 무게는 Monument 자체보다 그 옆에 있었다는 방패 든 거대한 hilichurl 쪽에 실려 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "목격담의 무게는 Monument 자체보다 그 옆에 있었다는 방패 든 거대한 hilichurl 쪽에 실려 있다."
-      },
-      {
-       "t_raw": "Monument를 활성화하려면 지정된 원소로 직접 공격해야 하므로, 그 앞을 지키는 존재가 있다면 접근 자체가 만만치 않은 일이 된다.",
-       "interp": true,
-       "dropped": false,
-       "t": "Monument를 활성화하려면 지정된 원소로 직접 공격해야 하므로, 그 앞을 지키는 존재가 있다면 접근 자체가 만만치 않은 일이 된다."
-      },
-      {
-       "t_raw": "Dr. Livingstone이 어둠을 이용해 잠입했다는 점도, 낮에 당당히 걸어 들어가기 어려운 상황이었음을 짐작하게 한다.",
-       "interp": true,
-       "dropped": false,
-       "t": "리빙스턴 박사가 어둠을 이용해 잠입했다는 점도, 낮에 당당히 걸어 들어가기 어려운 상황이었음을 짐작하게 한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Elemental Monument",
-       "revision": 201462,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Break the Sword Cemetery Seal",
-       "quest_ko": "검무덤 봉인 탐색",
-       "version": "1.0",
-       "speaker": "Dr. Livingstone"
-      }
-     ],
-     "heading": "작중 행적 — 검무덤 봉인 탐색",
-     "latin_left": [
-      "Monument",
-      "Monument"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "section": "여담 — 퀘스트·도메인·위치 분류",
+     "status": "accepted",
+     "note": "Matches A4 and A5 categories.",
      "quote": "Element · Quests",
      "sentences": [
       {
-       "t_raw": "퀘스트와 도메인 쪽 분류에서는 **Element · Quests**가 제시된다.",
+       "t_raw": "Elemental Monument는 퀘스트·도메인 쪽에서 **Element · Quests** 항목으로 묶여 소개된다.",
        "interp": false,
        "dropped": false,
-       "t": "퀘스트와 도메인 쪽 분류에서는 **원소 · 임무**가 제시된다."
+       "t": "원소 비석은 퀘스트·도메인 쪽에서 **원소 · 임무** 항목으로 묶여 소개된다."
       },
       {
-       "t_raw": "위치 분류에서는 **Element · Locations**가 제시된다.",
+       "t_raw": "위치 쪽에서는 **Element · Locations** 항목으로 묶여 소개된다.",
        "interp": false,
        "dropped": false,
-       "t": "위치 분류에서는 **원소 · Locations**가 제시된다."
+       "t": "위치 쪽에서는 **원소 · Locations** 항목으로 묶여 소개된다."
       },
       {
-       "t_raw": "두 항목을 나란히 두면 Elemental Monument는 퀘스트·도메인 문맥과 위치 문맥에 함께 걸쳐 정리되는 셈이다.",
+       "t_raw": "이처럼 같은 Elemental Monument가 퀘스트·도메인과 위치라는 서로 다른 두 갈래에 함께 놓이는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "두 항목을 나란히 두면 원소 비석은 퀘스트·도메인 문맥과 위치 문맥에 함께 걸쳐 정리되는 셈이다."
+       "t": "이처럼 같은 원소 비석이 퀘스트·도메인과 위치라는 서로 다른 두 갈래에 함께 놓이는 셈이다."
       }
      ],
      "sources": [
@@ -524,7 +299,7 @@
        "wiki_refs": []
       }
      ],
-     "heading": "여담",
+     "heading": "여담 — 퀘스트·도메인·위치 분류",
      "latin_left": [
       "Locations"
      ]
@@ -533,9 +308,9 @@
    "quote_boxes": [
     {
      "section": "작중 행적 — Break the Sword Cemetery Seal",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Elemental Monument는 야영지 안에 있다. 어둠을 틈타 몰래 들어갔더니, 방패를 든 거대한 hilichurl이 있었다...",
+     "status": "accepted",
+     "note": "Faithful translation of the dialogue line; 'in the in the camp' duplication is just rendered as 야영지에. All content matches.",
+     "t_raw": "Elemental Monument는 야영지에 있다. 내가 어둠을 이용해 잠입했을 때, 방패를 든 거대한 hilichurl이 있었다...",
      "en": "The Elemental Monument is located in the in the camp. When I sneaked in under cover of darkness, there was a huge hilichurl with a shield...",
      "speaker": "Dr. Livingstone",
      "source": {
@@ -545,7 +320,7 @@
       "version": "1.0",
       "speaker": "Dr. Livingstone"
      },
-     "t": "원소 비석은 야영지 안에 있다. 어둠을 틈타 몰래 들어갔더니, 방패를 든 거대한 hilichurl이 있었다...",
+     "t": "원소 비석은 야영지에 있다. 내가 어둠을 이용해 잠입했을 때, 방패를 든 거대한 hilichurl이 있었다...",
      "speaker_ko": "리빙스턴 박사"
     }
    ]

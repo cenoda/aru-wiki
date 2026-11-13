@@ -20,41 +20,41 @@
    "input_chars": 4017,
    "input_cut": false,
    "input_hash": "18a639c57744",
-   "writer": "or-ds",
-   "verifier": "grok",
-   "status": "needs_verify",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I'm waiting for daddy. I've lost count of how many days he's been away now...",
+     "status": "accepted",
+     "note": "All sentences supported.",
+     "quote": "Changchang is an open-world NPC in Liyue Harbor. She can be found running around on the docks near the harbor's entrance at daytime. She is friends with Little Yue.",
      "sentences": [
       {
-       "t_raw": "**Changchang**는 **Liyue Harbor**의 입구 근처 부두에서 낮에 뛰어다니는 어린 소녀이며, Little Yue와 친구다.",
+       "t_raw": "Changchang은 Liyue Harbor 부두 근처에서 낮 시간에 뛰어다니는 어린 소녀다.",
        "interp": false,
        "dropped": false,
-       "t": "**창아**는 **리월항**의 입구 근처 부두에서 낮에 뛰어다니는 어린 소녀이며, 소월과 친구다."
+       "t": "창아는 리월항 부두 근처에서 낮 시간에 뛰어다니는 어린 소녀다."
       },
       {
-       "t_raw": "검은 머리 두 갈래를 땋고 보라색 눈과 검은 안경을 쓰며, 진한 초록색 Liyue dress와 진한 초록색 신발을 신고 있다.",
+       "t_raw": "그녀는 아버지가 돌아오기를 기다리며, Lantern Rite에는 아버지와 함께 불꽃을 보고 싶다는 소원을 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "검은 머리 두 갈래를 땋고 보라색 눈과 검은 안경을 쓰며, 진한 초록색 리월 dress와 진한 초록색 신발을 신고 있다."
+       "t": "그녀는 아버지가 돌아오기를 기다리며, 해등절에는 아버지와 함께 불꽃을 보고 싶다는 소원을 말한다."
       },
       {
-       "t_raw": "할아버지는 Dockyard에서 건설 노동자로 일하고, Changchang는 **아버지가 언제 돌아오는지** 세면서 축제에서 아버지와 함께하고 싶은 소원을 말한다.",
+       "t_raw": "Little Yue와는 친구 사이이고, Dolly를 기부한 일과 Xiao Lantern을 만들려 한 일이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "할아버지는 Dockyard에서 건설 노동자로 일하고, 창아는 **아버지가 언제 돌아오는지** 세면서 축제에서 아버지와 함께하고 싶은 소원을 말한다."
+       "t": "소월와는 친구 사이이고, Dolly를 기부한 일과 소등을 만들려 한 일이 있다."
       },
       {
-       "t_raw": "이런 모습은 항구의 일상 속에서 가족을 기다리는 아이의 소원이 축제의 의미와 맞물리는 인물로 읽히게 한다.",
+       "t_raw": "이런 모습은 Liyue Harbor의 축제와 일상 속에서 가족과 이웃을 향한 **소박한 기다림**이 여러 장면으로 이어지는 인물로 읽히게 한다.",
        "interp": true,
        "dropped": false,
-       "t": "이런 모습은 항구의 일상 속에서 가족을 기다리는 아이의 소원이 축제의 의미와 맞물리는 인물로 읽히게 한다."
+       "t": "이런 모습은 리월항의 축제와 일상 속에서 가족과 이웃을 향한 **소박한 기다림**이 여러 장면으로 이어지는 인물로 읽히게 한다."
       }
      ],
      "sources": [
@@ -79,7 +79,7 @@
        "page": "Changchang",
        "revision": 1713272,
        "section": "Dialogue",
-       "paragraph": "A28",
+       "paragraph": "A24",
        "wiki_refs": []
       },
       {
@@ -97,42 +97,43 @@
        "section": "Event Dialogue > Fleeting Colors in Flight",
        "paragraph": "A45",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Origin of the Lanterns",
+       "quest_ko": "등의 출처",
+       "version": "1.3",
+       "speaker": "Changchang"
       }
      ],
      "heading": null,
      "latin_left": [
-      "Dockyard"
+      "Dolly"
      ]
     },
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When is daddy coming back... Oh, hello, nice to meet you!",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences supported.",
+     "quote": "I'm waiting for daddy. I've lost count of how many days he's been away now...",
      "sentences": [
       {
-       "t_raw": "**Liyue Harbor의 부두에서 낮에 만나는 어린 소녀**로, 검은 머리를 두 갈래로 땋고 보라색 눈에 검은 안경을 쓴 모습이다.",
+       "t_raw": "Changchang은 Liyue Harbor 부두에서 낮에 뛰어노는 어린 소녀다.",
        "interp": false,
        "dropped": false,
-       "t": "**리월항의 부두에서 낮에 만나는 어린 소녀**로, 검은 머리를 두 갈래로 땋고 보라색 눈에 검은 안경을 쓴 모습이다."
+       "t": "창아는 리월항 부두에서 낮에 뛰어노는 어린 소녀다."
       },
       {
-       "t_raw": "짙은 초록색 Liyue 드레스와 짙은 초록색 신발 차림이다.",
+       "t_raw": "그녀는 Little Yue와 친구이며, 만난 이에게 아빠가 언제 돌아오는지 묻다가 반갑게 인사한다.",
        "interp": false,
        "dropped": false,
-       "t": "짙은 초록색 리월 드레스와 짙은 초록색 신발 차림이다."
+       "t": "그녀는 소월과 친구이며, 만난 이에게 아빠가 언제 돌아오는지 묻다가 반갑게 인사한다."
       },
       {
-       "t_raw": "말을 걸면 아빠가 언제 돌아오는지 말한 뒤 곧바로 반갑게 인사한다.",
+       "t_raw": "그녀는 아버지를 기다리며 아버지가 떠난 지 며칠이 지났는지 이제 셀 수가 없다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "말을 걸면 아빠가 언제 돌아오는지 말한 뒤 곧바로 반갑게 인사한다."
-      },
-      {
-       "t_raw": "스스로 또래보다 예의 바르다고 들었다고 전하며, 상대에게도 누군가를 기다리는지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "스스로 또래보다 예의 바르다고 들었다고 전하며, 상대에게도 누군가를 기다리는지 묻는다."
+       "t": "그녀는 아버지를 기다리며 아버지가 떠난 지 며칠이 지났는지 이제 셀 수가 없다고 말한다."
       }
      ],
      "sources": [
@@ -165,99 +166,41 @@
        "page": "Changchang",
        "revision": 1713272,
        "section": "Dialogue",
-       "paragraph": "A26",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I'm waiting for daddy. I've lost count of how many days he's been away now...",
-     "sentences": [
-      {
-       "t_raw": "그녀는 지금 놀고 있는 게 아니라 **아빠를 기다리는** 중요한 일을 하고 있다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 지금 놀고 있는 게 아니라 **아빠를 기다리는** 중요한 일을 하고 있다고 말한다."
-      },
-      {
-       "t_raw": "아빠가 떠난 지 며칠인지는 세다가 잊어버렸고, 할아버지는 Dockyard에서 건설 노동자로 일한다고 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아빠가 떠난 지 며칠인지는 세다가 잊어버렸고, 할아버지는 Dockyard에서 건설 노동자로 일한다고 설명한다."
-      },
-      {
-       "t_raw": "혼자 놀고 할아버지는 Dockyard에서 일하는 환경 속에서, 기다림은 그녀가 스스로 챙기는 중요한 일이 된 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "혼자 놀고 할아버지는 Dockyard에서 일하는 환경 속에서, 기다림은 그녀가 스스로 챙기는 중요한 일이 된 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A28",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A31",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
        "paragraph": "A32",
        "wiki_refs": []
       }
      ],
-     "heading": "개요",
-     "latin_left": [
-      "Dockyard",
-      "Dockyard"
-     ]
+     "heading": "정체와 배경",
+     "latin_left": []
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Grandad works in the Dockyard as a conduction worker... conduction...? Construction, construction worker.",
+     "status": "accepted",
+     "note": "All sentences supported.",
+     "quote": "Right now I'm not playing. I'm doing something very important!",
      "sentences": [
       {
-       "t_raw": "Changchang는 할아버지가 **Dockyard**에서 건설 노동자로 일한다고 말하며, 할아버지가 바쁘다며 혼자 놀라고 했다는 이야기를 전한다.",
+       "t_raw": "Changchang은 혼자 놀아도 괜찮다며 할아버지가 Dockyard에서 construction worker로 일한다고 설명한다.",
        "interp": false,
        "dropped": false,
-       "t": "창아는 할아버지가 **Dockyard**에서 건설 노동자로 일한다고 말하며, 할아버지가 바쁘다며 혼자 놀라고 했다는 이야기를 전한다."
+       "t": "창아는 혼자 놀아도 괜찮다며 할아버지가 Dockyard에서 건설 노동자로 일한다고 설명한다.",
+       "polish": {
+        "from": "창아는 혼자 놀아도 괜찮다며 할아버지가 Dockyard에서 construction worker로 일한다고 설명한다.",
+        "text": "창아는 혼자 놀아도 괜찮다며 할아버지가 Dockyard에서 건설 노동자로 일한다고 설명한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "스스로는 나이에 비해 어른스럽고 늘 혼자 논다며, 모두가 자신을 예의 바르다고 한다고 덧붙인다.",
+       "t_raw": "항구의 모두가 친절하고 Millelith가 나쁜 사람들을 때려잡는다고도 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "스스로는 나이에 비해 어른스럽고 늘 혼자 논다며, 모두가 자신을 예의 바르다고 한다고 덧붙인다."
+       "t": "항구의 모두가 친절하고 천암군이 나쁜 사람들을 때려잡는다고도 말한다."
       },
       {
-       "t_raw": "도시에는 **Millelith**가 나쁜 사람을 모두 혼내 주고 모두가 친절해서 무섭지 않다고 한다.",
+       "t_raw": "지금은 노는 게 아니라 아버지를 기다리는 아주 중요한 일을 하고 있다고 밝힌다.",
        "interp": false,
        "dropped": false,
-       "t": "도시에는 **천암군**이 나쁜 사람을 모두 혼내 주고 모두가 친절해서 무섭지 않다고 한다."
-      },
-      {
-       "t_raw": "그녀는 강한 Millelith 경비병들과 Vision을 지닌 영웅들이 있었기에 무섭지 않았다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 강한 천암군 경비병들과 신의 눈을 지닌 영웅들이 있었기에 무섭지 않았다고 말한다."
+       "t": "지금은 노는 게 아니라 아버지를 기다리는 아주 중요한 일을 하고 있다고 밝힌다."
       }
      ],
      "sources": [
@@ -267,21 +210,6 @@
        "revision": 1713272,
        "section": "Dialogue",
        "paragraph": "A28",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Currents Deep Beneath the Lanterns",
-       "quest_ko": "등잔 밑이 어둡다",
-       "version": "1.3",
-       "speaker": "Changchang"
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A26",
        "wiki_refs": []
       },
       {
@@ -293,59 +221,6 @@
        "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "The Fond Farewell",
-       "quest_ko": "송신",
-       "version": "1.1",
-       "speaker": "Changchang"
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": [
-      "Dockyard"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I'm waiting for daddy. I've lost count of how many days he's been away now...",
-     "sentences": [
-      {
-       "t_raw": "아버지가 언제 돌아오는지 말하다가 인사를 건네는 Changchang는, 지금은 놀고 있지 않고 아주 중요한 일을 하는 중이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아버지가 언제 돌아오는지 말하다가 인사를 건네는 창아는, 지금은 놀고 있지 않고 아주 중요한 일을 하는 중이라고 말한다."
-      },
-      {
-       "t_raw": "그 중요한 일은 아버지를 기다리는 일이며, 얼마나 많은 날이 지났는지 셀 수 없을 지경이라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 중요한 일은 아버지를 기다리는 일이며, 얼마나 많은 날이 지났는지 셀 수 없을 지경이라고 한다."
-      },
-      {
-       "t_raw": "아버지는 돌아올 때마다 많은 선물을 가져오고, 새 옷·바람개비·엄청나게 많은 사탕·도자기 인형·Wolfhook Cake·바람에 빛나는 작은 병·보라색 모래시계가 그 목록에 오른다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아버지는 돌아올 때마다 많은 선물을 가져오고, 새 옷·바람개비·엄청나게 많은 사탕·도자기 인형·Wolfhook Cake·바람에 빛나는 작은 병·보라색 모래시계가 그 목록에 오른다."
-      },
-      {
-       "t_raw": "아버지의 부재와 반복되는 선물 이야기는 그녀의 일상이 기다림을 중심으로 짜여 있음을 보여 주는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아버지의 부재와 반복되는 선물 이야기는 그녀의 일상이 기다림을 중심으로 짜여 있음을 보여 주는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A24",
-       "wiki_refs": []
-      },
-      {
        "kind": "wiki",
        "page": "Changchang",
        "revision": 1713272,
@@ -360,7 +235,39 @@
        "section": "Dialogue",
        "paragraph": "A32",
        "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Dockyard"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences supported; the interpretation is reasonable.",
+     "quote": "Last time, he brought me some new clothes! And the time before that, he brought me a windmill! And the time before that, he brought me loads and loads and loads of candy!",
+     "sentences": [
+      {
+       "t_raw": "아버지가 돌아올 때마다 그녀는 많은 선물을 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아버지가 돌아올 때마다 그녀는 많은 선물을 받는다."
       },
+      {
+       "t_raw": "새 옷, 바람개비, 사탕, 도자기 인형, Wolfhook Cake, 바람에 빛나는 작은 병, 보라색 모래시계가 그녀의 선물 이야기에 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "새 옷, 바람개비, 사탕, 도자기 인형, Wolfhook Cake, 바람에 빛나는 작은 병, 보라색 모래시계가 그녀의 선물 이야기에 이어진다."
+      },
+      {
+       "t_raw": "**아버지의 귀환**은 그녀에게 **선물 목록**을 떠올리는 일로 겹쳐 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**아버지의 귀환**은 그녀에게 **선물 목록**을 떠올리는 일로 겹쳐 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Changchang",
@@ -392,37 +299,119 @@
      ]
     },
     {
-     "section": "작중 행적 — Liyue Harbor의 일상과 초기 의뢰",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Liyue Harbor의 나날",
+     "status": "accepted",
+     "note": "All sentences supported.",
+     "quote": "How many days has daddy been away?",
+     "sentences": [
+      {
+       "t_raw": "Changchang는 Liyue Harbor에서 아버지가 떠난 뒤 **얼마나 많은 날**이 지났는지 센다.",
+       "interp": false,
+       "dropped": false,
+       "t": "창아는 리월항에서 아버지가 떠난 뒤 **얼마나 많은 날**이 지났는지 센다."
+      },
+      {
+       "t_raw": "아버지가 언제 돌아오느냐고 중얼거리다가도 곧 인사를 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아버지가 언제 돌아오느냐고 중얼거리다가도 곧 인사를 건넨다."
+      },
+      {
+       "t_raw": "지난번에 놀아 주겠다는 약속은 한참 지났고, Changchang는 그 일이 또 Beidou 때문이라고 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지난번에 놀아 주겠다는 약속은 한참 지났고, 창아는 그 일이 또 북두 때문이라고 여긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Changchang",
+       "revision": 1713272,
+       "section": "Idle Quotes",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Let's Make A Flower Garland!",
+       "quest_ko": "화환을 만들고픈 창아!",
+       "version": "1.1",
+       "speaker": "Changchang"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Lone Ship In Guyun",
+       "quest_ko": "고운각에 들어선 선박",
+       "version": "1.0",
+       "speaker": "Changchang"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Lone Ship In Guyun",
+       "quest_ko": "고운각에 들어선 선박",
+       "version": "1.0",
+       "speaker": "Changchang"
+      }
+     ],
+     "heading": "작중 행적 — 리월항의 나날",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Liyue Harbor의 나날",
+     "status": "accepted",
+     "note": "The English says she met the puppy earlier and asks for help going to the city gate to feed it. It does not say she went to the gate and met the puppy there.",
      "quote": "Could you help me go to the city gate and feed my puppy?",
      "sentences": [
       {
-       "t_raw": "Changchang는 **도시 문 앞의 강아지**를 어떻게 먹여야 할지 고민한다.",
+       "t_raw": "할아버지는 Dockyard에서 일하며 바쁘다며 Changchang에게 혼자 놀라고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "창아는 **도시 문 앞의 강아지**를 어떻게 먹여야 할지 고민한다."
+       "t": "할아버지는 Dockyard에서 일하며 바쁘다며 창아에게 혼자 놀라고 한다."
       },
       {
-       "t_raw": "할아버지는 전에 도시가 너무 어수선해서 먹이를 주러 가지 못하게 했고, 지금은 도시가 괜찮아졌다면서도 바빠서 데려가 주지 못한다고 한다.",
+       "t_raw": "Changchang는 그런 할아버지에게 먹을 것을 권하기도 한다.",
        "interp": false,
        "dropped": false,
-       "t": "할아버지는 전에 도시가 너무 어수선해서 먹이를 주러 가지 못하게 했고, 지금은 도시가 괜찮아졌다면서도 바빠서 데려가 주지 못한다고 한다."
+       "t": "창아는 그런 할아버지에게 먹을 것을 권하기도 한다."
       },
       {
-       "t_raw": "그래서 Changchang는 도시 문 앞까지 가서 강아지에게 먹이를 줘 달라고 부탁한다.",
+       "t_raw": "도시가 어수선할 때는 강아지에게 먹이를 주러 가는 것도 허락받지 못했고, 괜찮아진 뒤에도 할아버지는 바빠서 데려가 주지 못한다.",
        "interp": false,
        "dropped": false,
-       "t": "그래서 창아는 도시 문 앞까지 가서 강아지에게 먹이를 줘 달라고 부탁한다."
+       "t": "도시가 어수선할 때는 강아지에게 먹이를 주러 가는 것도 허락받지 못했고, 괜찮아진 뒤에도 할아버지는 바빠서 데려가 주지 못한다."
+      },
+      {
+       "t_raw": "Changchang는 일찍 만난 강아지에게 어떻게 먹이를 줄지 고민하며, 성문까지 가서 먹이를 주도록 도움을 청한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "창아는 일찍 만난 강아지에게 어떻게 먹이를 줄지 고민하며, 성문까지 가서 먹이를 주도록 도움을 청한다."
       }
      ],
      "sources": [
       {
+       "kind": "wiki",
+       "page": "Changchang",
+       "revision": 1713272,
+       "section": "Dialogue",
+       "paragraph": "A28",
+       "wiki_refs": []
+      },
+      {
        "kind": "quest",
-       "quest": "Changchang's Little Friend",
-       "quest_ko": "창아와 그녀의 작은 친구",
-       "version": "1.1",
+       "quest": "Currents Deep Beneath the Lanterns",
+       "quest_ko": "등잔 밑이 어둡다",
+       "version": "1.3",
        "speaker": "Changchang"
+      },
+      {
+       "kind": "wiki",
+       "page": "Changchang",
+       "revision": 1713272,
+       "section": "Idle Quotes",
+       "paragraph": "A7",
+       "wiki_refs": []
       },
       {
        "kind": "quest",
@@ -446,138 +435,42 @@
        "speaker": "Changchang"
       }
      ],
-     "heading": "작중 행적 — 리월항의 일상과 초기 의뢰",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Liyue Harbor의 일상과 초기 의뢰",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "There, all done! Can you please take this to Changchang for me?",
-     "sentences": [
-      {
-       "t_raw": "화환을 만들려는 Changchang는 **Silk Flowers 세 송이**를 모아 달라고 부탁하고, 양이 맞자 곧 화환이 완성되겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "화환을 만들려는 창아는 **예상꽃 세 송이**를 모아 달라고 부탁하고, 양이 맞자 곧 화환이 완성되겠다고 말한다."
-      },
-      {
-       "t_raw": "Little Yue는 Aunt Yinxing이 도시에서 장보기를 약속해 주었고, 돌아오면 Changchang와 놀겠다고 했지만 이번에는 도시에 들어오지 못하게 된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "소월은 Aunt Yinxing이 도시에서 장보기를 약속해 주었고, 돌아오면 창아와 놀겠다고 했지만 이번에는 도시에 들어오지 못하게 된다."
-      },
-      {
-       "t_raw": "약속을 어기게 된 Little Yue는 Changchang가 화내지 않기를 바라며 장난감 선물을 준비해 전해 달라고 부탁한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "약속을 어기게 된 소월은 창아가 화내지 않기를 바라며 장난감 선물을 준비해 전해 달라고 부탁한다."
-      },
-      {
-       "t_raw": "**Little Yue의 선물**을 받은 Changchang는 고맙다며 Little Yue에게도 고맙다고 전해 달라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**소월의 선물**을 받은 창아는 고맙다며 소월에게도 고맙다고 전해 달라고 말한다."
-      },
-      {
-       "t_raw": "이런 주고받음은 Changchang가 주변 사람들과 관계를 맺어 가는 모습으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이런 주고받음은 창아가 주변 사람들과 관계를 맺어 가는 모습으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Let's Make A Flower Garland!",
-       "quest_ko": "화환을 만들고픈 창아!",
-       "version": "1.1",
-       "speaker": "Changchang"
-      },
-      {
-       "kind": "quest",
-       "quest": "Let's Make A Flower Garland!",
-       "quest_ko": "화환을 만들고픈 창아!",
-       "version": "1.1",
-       "speaker": "Changchang"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Lone Ship In Guyun",
-       "quest_ko": "고운각에 들어선 선박",
-       "version": "1.0",
-       "speaker": "Little Yue"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Lone Ship In Guyun",
-       "quest_ko": "고운각에 들어선 선박",
-       "version": "1.0",
-       "speaker": "Little Yue"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Lone Ship In Guyun",
-       "quest_ko": "고운각에 들어선 선박",
-       "version": "1.0",
-       "speaker": "Little Yue"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Lone Ship In Guyun",
-       "quest_ko": "고운각에 들어선 선박",
-       "version": "1.0",
-       "speaker": "Little Yue"
-      }
-     ],
-     "heading": "작중 행적 — 리월항의 일상과 초기 의뢰",
+     "heading": "작중 행적 — 리월항의 나날",
      "latin_left": [
-      "Aunt Yinxing"
+      "Dockyard"
      ]
     },
     {
-     "section": "작중 행적 — Liyue Harbor의 일상과 초기 의뢰",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Thanks for protecting Liyue Harbor! Please come visit us for the next Lantern Rite!",
+     "section": "작중 행적 — Liyue Harbor의 나날",
+     "status": "accepted",
+     "note": "All sentences match Q23, Q5, Q3 and Q9.",
+     "quote": "I wasn't afraid. All the strong Millelith guards were there, and those powerful heroes with their Visions were there... Everyone was there!",
      "sentences": [
       {
-       "t_raw": "큰 몬스터를 물리친 뒤 Changchang는 모두가 침울한 이유를 묻고, 선인으로 사는 일이 힘들겠다고 말한다.",
+       "t_raw": "Changchang는 Silk Flowers 세 송이가 모였는지 확인하고, 그것으로 화환을 만들며 곧 완성되리라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "큰 몬스터를 물리친 뒤 창아는 모두가 침울한 이유를 묻고, 선인으로 사는 일이 힘들겠다고 말한다."
+       "t": "창아는 예상꽃 세 송이가 모였는지 확인하고, 그것으로 화환을 만들며 곧 완성되리라고 말한다."
       },
       {
-       "t_raw": "Changchang는 무섭지 않았다고 말한다.",
+       "t_raw": "강한 **Millelith 경비대와 Vision을 지닌 영웅들**이 있었기에 두렵지 않았다고 말하고, Liyue Harbor를 지켜 줘 고맙다며 다음 Lantern Rite에도 놀러 오라고 청한다.",
        "interp": false,
        "dropped": false,
-       "t": "창아는 무섭지 않았다고 말한다."
-      },
-      {
-       "t_raw": "강한 Millelith와 Vision을 지닌 영웅들이 있었기 때문이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "강한 천암군과 신의 눈을 지닌 영웅들이 있었기 때문이다."
-      },
-      {
-       "t_raw": "도시를 지켜 준 이들에게 고맙다고 전하며 다음 Lantern Rite에 놀러 오라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "도시를 지켜 준 이들에게 고맙다고 전하며 다음 해등절에 놀러 오라고 말한다."
+       "t": "강한 **천암군 경비대와 신의 눈을 지닌 영웅들**이 있었기에 두렵지 않았다고 말하고, 리월항을 지켜 줘 고맙다며 다음 해등절에도 놀러 오라고 청한다."
       }
      ],
      "sources": [
       {
        "kind": "quest",
-       "quest": "The Fond Farewell",
-       "quest_ko": "송신",
+       "quest": "Let's Make A Flower Garland!",
+       "quest_ko": "화환을 만들고픈 창아!",
        "version": "1.1",
        "speaker": "Changchang"
       },
       {
        "kind": "quest",
-       "quest": "The Fond Farewell",
-       "quest_ko": "송신",
+       "quest": "Let's Make A Flower Garland!",
+       "quest_ko": "화환을 만들고픈 창아!",
        "version": "1.1",
        "speaker": "Changchang"
       },
@@ -596,120 +489,38 @@
        "speaker": "Changchang"
       }
      ],
-     "heading": "작중 행적 — 리월항의 일상과 초기 의뢰",
+     "heading": "작중 행적 — 리월항의 나날",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Lantern Rite",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Lantern Rite와 Dolly",
+     "status": "accepted",
+     "note": "All sentences are supported by A9, A10, A38–A41 and Q1.",
      "quote": "Last night in my dream, Dolly told me her wish was to fly up into the sky and see the view.",
      "sentences": [
       {
-       "t_raw": "Changchang은 Dolly를 기증했다고 말하며, Dolly가 자신의 헝겊 인형이라고 밝힌다.",
+       "t_raw": "Lantern Rite 기간에 Changchang은 소원이 이루어질 거라고 말하고, Lantern Rite에는 소원이 이루어져야 하지 않느냐고 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "창아는 Dolly를 기증했다고 말하며, Dolly가 자신의 헝겊 인형이라고 밝힌다."
+       "t": "해등절 기간에 창아는 소원이 이루어질 거라고 말하고, 해등절에는 소원이 이루어져야 하지 않느냐고 묻는다."
       },
       {
-       "t_raw": "꿈에서 Dolly가 하늘로 날아가 풍경을 보고 싶다는 소원을 말했다고 한다.",
+       "t_raw": "자신이 Dolly를 막 기부했다고 소개하며, Dolly가 자신의 헝겊 인형이라고 밝힌다.",
        "interp": false,
        "dropped": false,
-       "t": "꿈에서 Dolly가 하늘로 날아가 풍경을 보고 싶다는 소원을 말했다고 한다."
+       "t": "자신이 Dolly를 막 기부했다고 소개하며, Dolly가 자신의 헝겊 인형이라고 밝힌다."
       },
       {
-       "t_raw": "그래서 큰 사슴 등불 옆에 있는 아주머니께 Dolly를 맡겼고, 이제 Dolly의 소원이 이루어질 거냐고 묻는다.",
+       "t_raw": "지난밤 꿈에서 Dolly가 하늘로 날아올라 경치를 보고 싶다는 소원을 말했고, Changchang은 Dolly를 큰 사슴 등불 옆에 있는 아주머니께 주었다.",
        "interp": false,
        "dropped": false,
-       "t": "그래서 큰 사슴 등불 옆에 있는 아주머니께 Dolly를 맡겼고, 이제 Dolly의 소원이 이루어질 거냐고 묻는다."
+       "t": "지난밤 꿈에서 Dolly가 하늘로 날아올라 경치를 보고 싶다는 소원을 말했고, 창아는 Dolly를 큰 사슴 등불 옆에 있는 아주머니께 주었다."
       },
       {
-       "t_raw": "이어 자신이 잘한 일인지, Lantern Rite에는 소원이 이루어지는 게 맞는지 되묻는다.",
+       "t_raw": "Dolly의 소원이 이제 이루어질지, 자신이 잘한 일인지 묻고, **Lantern Rite의 소원**이 이루어져야 한다고 확인한다.",
        "interp": false,
        "dropped": false,
-       "t": "이어 자신이 잘한 일인지, 해등절에는 소원이 이루어지는 게 맞는지 되묻는다."
-      },
-      {
-       "t_raw": "**Dolly의 소원**을 위해 인형을 맡긴 행동과 Lantern Rite에 소원이 이루어진다는 기대가 겹쳐, Changchang이 소원의 실현을 확인받고 싶어 하는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "**Dolly의 소원**을 위해 인형을 맡긴 행동과 해등절에 소원이 이루어진다는 기대가 겹쳐, 창아가 소원의 실현을 확인받고 싶어 하는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Event Dialogue > Lantern Rite",
-       "paragraph": "A38",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Origin of the Lanterns",
-       "quest_ko": "등의 출처",
-       "version": "1.3",
-       "speaker": "Changchang"
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Event Dialogue > Lantern Rite",
-       "paragraph": "A40",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Event Dialogue > Lantern Rite",
-       "paragraph": "A41",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Origin of the Lanterns",
-       "quest_ko": "등의 출처",
-       "version": "1.3",
-       "speaker": "Changchang"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Origin of the Lanterns",
-       "quest_ko": "등의 출처",
-       "version": "1.3",
-       "speaker": "Changchang"
-      }
-     ],
-     "heading": "작중 행적 — 해등절",
-     "latin_left": [
-      "Dolly",
-      "Dolly",
-      "Dolly",
-      "Dolly",
-      "Dolly",
-      "Dolly"
-     ]
-    },
-    {
-     "section": "작중 행적 — Lantern Rite",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Wishes are supposed to come true at Lantern Rite, aren't they?",
-     "sentences": [
-      {
-       "t_raw": "Lantern Rite 기간에 Changchang은 소원이 이루어질 거라고 중얼거리고, 소원은 Lantern Rite에 이루어지는 게 맞지 않느냐고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "해등절 기간에 창아는 소원이 이루어질 거라고 중얼거리고, 소원은 해등절에 이루어지는 게 맞지 않느냐고 말한다."
-      },
-      {
-       "t_raw": "소원의 실현을 향한 말이 되풀이되는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "소원의 실현을 향한 말이 되풀이되는 셈이다."
+       "t": "Dolly의 소원이 이제 이루어질지, 자신이 잘한 일인지 묻고, **해등절의 소원**이 이루어져야 한다고 확인한다."
       }
      ],
      "sources": [
@@ -736,40 +547,70 @@
        "section": "Idle Quotes",
        "paragraph": "A10",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Changchang",
+       "revision": 1713272,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A38",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Changchang",
+       "revision": 1713272,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A39",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Changchang",
+       "revision": 1713272,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A40",
+       "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 해등절",
-     "latin_left": []
+     "heading": "작중 행적 — 해등절과 Dolly",
+     "latin_left": [
+      "Dolly",
+      "Dolly",
+      "Dolly",
+      "Dolly",
+      "Dolly"
+     ]
     },
     {
-     "section": "작중 행적 — Lantern Rite",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Lantern Rite와 Dolly",
+     "status": "accepted",
+     "note": "The facts are supported, and the interpretation follows from Q20, Q29 and Q7.",
      "quote": "Ah, yes! These will do. Let me make a Xiao Lantern for Changchang.",
      "sentences": [
       {
-       "t_raw": "Changchang은 **Xiao Lantern**을 만들고 싶어 하지만 방법을 모르고, 어찌 이리 어려운지 배우지 못할 것 같다고 말한다.",
+       "t_raw": "Changchang은 Xiao Lantern을 만들고 싶어 하지만 방법을 몰라, 왜 이렇게 어려우냐며 배우지 못할 것 같다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "창아는 **소등**을 만들고 싶어 하지만 방법을 모르고, 어찌 이리 어려운지 배우지 못할 것 같다고 말한다."
+       "t": "창아는 소등을 만들고 싶어 하지만 방법을 몰라, 왜 이렇게 어려우냐며 배우지 못할 것 같다고 말한다."
       },
       {
-       "t_raw": "그때 Wang'ya가 할아버지를 못 찾겠냐고 묻고, 재료를 보고는 Changchang을 위해 Xiao Lantern을 만들어 주겠다고 한다.",
+       "t_raw": "Wang'ya는 할아버지를 못 찾는지 묻고, 이것들이면 되겠다며 Changchang을 위해 Xiao Lantern을 만들어 주겠다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "그때 망아가 할아버지를 못 찾겠냐고 묻고, 재료를 보고는 창아를 위해 소등을 만들어 주겠다고 한다."
+       "t": "망아는 할아버지를 못 찾는지 묻고, 이것들이면 되겠다며 창아를 위해 소등을 만들어 주겠다고 한다."
       },
       {
-       "t_raw": "Changchang은 Wang'ya에게 고맙다고 말하며 착한 아이가 되겠다고 약속한다.",
+       "t_raw": "Changchang은 Ms. Wang'ya에게 고맙다고 말하며 착한 아이가 되겠다고 약속한다.",
        "interp": false,
        "dropped": false,
-       "t": "창아는 망아에게 고맙다고 말하며 착한 아이가 되겠다고 약속한다."
+       "t": "창아는 Ms. 망아에게 고맙다고 말하며 착한 아이가 되겠다고 약속한다."
       },
       {
-       "t_raw": "Xiao Lantern을 만들고 싶어 하면서도 방법을 몰라 막막해하던 Changchang에게 Wang'ya의 도움이 더해지며, 등불 만들기가 Wang'ya의 손을 빌려 완성되는 셈이다.",
+       "t_raw": "Dolly를 맡긴 Changchang이 Xiao Lantern은 혼자 만들지 못해 **Wang'ya의 도움**을 받는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "소등을 만들고 싶어 하면서도 방법을 몰라 막막해하던 창아에게 망아의 도움이 더해지며, 등불 만들기가 망아의 손을 빌려 완성되는 셈이다."
+       "t": "Dolly를 맡긴 창아가 소등은 혼자 만들지 못해 **망아의 도움**을 받는 셈이다."
       }
      ],
      "sources": [
@@ -807,37 +648,61 @@
        "quest_ko": "등잔 밑이 어둡다",
        "version": "1.3",
        "speaker": "Changchang"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Origin of the Lanterns",
+       "quest_ko": "등의 출처",
+       "version": "1.3",
+       "speaker": "Changchang"
       }
      ],
-     "heading": "작중 행적 — 해등절",
-     "latin_left": []
+     "heading": "작중 행적 — 해등절과 Dolly",
+     "latin_left": [
+      "Ms",
+      "Dolly"
+     ]
     },
     {
      "section": "작중 행적 — Moonlight Merriment",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The latest Masterful Chefs was super exciting. I've started learning how to cook, too!",
+     "status": "accepted",
+     "note": "All sentences are supported by A42–A44 and A13. The interpretation is reasonable.",
+     "quote": "Once Daddy gets back, I'll make him something nice for sure.",
      "sentences": [
       {
-       "t_raw": "Moonchase Festival이 찾아왔지만 Changchang의 아버지는 아직 돌아오지 않았다.",
+       "t_raw": "Moonchase Festival이 찾아왔는데도 Changchang의 아버지는 아직 돌아오지 않았다.",
        "interp": false,
        "dropped": false,
-       "t": "축월절이 찾아왔지만 창아의 아버지는 아직 돌아오지 않았다."
+       "t": "축월절이 찾아왔는데도 창아의 아버지는 아직 돌아오지 않았다."
       },
       {
-       "t_raw": "Changchang은 최근 열린 Masterful Chefs가 무척 재미있었다고 말하며, 자신도 **요리를 배우기 시작했다**고 한다.",
+       "t_raw": "그래도 그녀는 최근 Masterful Chefs가 무척 재미있었다고 말하며, 자신도 요리를 배우기 시작했다고 밝힌다.",
        "interp": false,
        "dropped": false,
-       "t": "창아는 최근 열린 달인 요리사가 무척 재미있었다고 말하며, 자신도 **요리를 배우기 시작했다**고 한다."
+       "t": "그래도 그녀는 최근 달인 요리사가 무척 재미있었다고 말하며, 자신도 요리를 배우기 시작했다고 밝힌다."
       },
       {
-       "t_raw": "Masterful Chefs에 대한 흥미와 아버지의 부재가 한데 겹친 셈이다.",
+       "t_raw": "축제 기간에 요리를 배우고 싶어 하는 그녀는 아버지가 돌아오면 맛있는 것을 해 주겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "축제 기간에 요리를 배우고 싶어 하는 그녀는 아버지가 돌아오면 맛있는 것을 해 주겠다고 말한다."
+      },
+      {
+       "t_raw": "축제가 찾아와도 아버지가 없다는 사실과 요리를 배워 그에게 해 주려는 말이 맞물려, 기다림은 **아버지에게 해 주고 싶다**는 바람으로 이어지는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "달인 요리사에 대한 흥미와 아버지의 부재가 한데 겹친 셈이다."
+       "t": "축제가 찾아와도 아버지가 없다는 사실과 요리를 배워 그에게 해 주려는 말이 맞물려, 기다림은 **아버지에게 해 주고 싶다**는 바람으로 이어지는 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Changchang",
+       "revision": 1713272,
+       "section": "Idle Quotes",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Changchang",
@@ -853,51 +718,13 @@
        "section": "Event Dialogue > Moonlight Merriment",
        "paragraph": "A43",
        "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 달빛 속 광경",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Moonlight Merriment",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Once Daddy gets back, I'll make him something nice for sure.",
-     "sentences": [
-      {
-       "t_raw": "Changchang은 아버지가 돌아오면 **꼭 맛있는 것을 만들어 주겠다**고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "창아는 아버지가 돌아오면 **꼭 맛있는 것을 만들어 주겠다**고 말한다."
       },
-      {
-       "t_raw": "요리를 배워 아버지가 돌아왔을 때 만들어 주고 싶다는 뜻도 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "요리를 배워 아버지가 돌아왔을 때 만들어 주고 싶다는 뜻도 밝힌다."
-      },
-      {
-       "t_raw": "요리 배우기는 아버지와의 재회를 염두에 둔 계획으로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "요리 배우기는 아버지와의 재회를 염두에 둔 계획으로 읽힌다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Changchang",
        "revision": 1713272,
        "section": "Event Dialogue > Moonlight Merriment",
        "paragraph": "A44",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Idle Quotes",
-       "paragraph": "A13",
        "wiki_refs": []
       }
      ],
@@ -906,27 +733,34 @@
     },
     {
      "section": "작중 행적 — Fleeting Colors in Flight",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The only thing that could make the fireworks better would be watching them with my dad.",
+     "status": "accepted",
+     "note": "The English never says the idle line is muttered to herself. '혼잣말' is an added detail. The rest is supported.",
+     "quote": "I've got a new wish this Lantern Rite — just once, I wanna see the fireworks with Daddy!",
      "sentences": [
       {
-       "t_raw": "Fleeting Colors in Flight 기간 낮에 Changchang은 불꽃을 아버지와 함께 보는 장면을 대기 대사로 남긴다.",
+       "t_raw": "Fleeting Colors in Flight 시기에 Changchang은 이번 Lantern Rite의 새 소원으로 **아버지와 함께 불꽃을 보는 일**을 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "화려히 수놓인 유년 기간 낮에 창아는 불꽃을 아버지와 함께 보는 장면을 대기 대사로 남긴다."
+       "t": "화려히 수놓인 유년 시기에 창아는 이번 해등절의 새 소원으로 **아버지와 함께 불꽃을 보는 일**을 말한다."
       },
       {
-       "t_raw": "이어서 불꽃을 아버지와 함께 보는 것이 불꽃을 더 좋게 만들 유일한 일이라고 한다.",
+       "t_raw": "한 번만이라도 아버지와 불꽃을 보고 싶다는 바람이다.",
        "interp": false,
        "dropped": false,
-       "t": "이어서 불꽃을 아버지와 함께 보는 것이 불꽃을 더 좋게 만들 유일한 일이라고 한다."
+       "t": "한 번만이라도 아버지와 불꽃을 보고 싶다는 바람이다."
       },
       {
-       "t_raw": "**불꽃을 아버지와 함께 보는 것**이 이때 Changchang의 바람으로 드러나는 셈이다.",
+       "t_raw": "그녀는 아버지와 함께 보는 일을 언급하고, 불꽃을 아버지와 함께 보면 더 좋을 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그녀는 아버지와 함께 보는 일을 언급하고, 불꽃을 아버지와 함께 보면 더 좋을 것이라고 말한다."
+      },
+      {
+       "t_raw": "이는 불꽃을 함께 보는 순간을 특히 바라는 마음으로 읽힌다.",
        "interp": true,
        "dropped": false,
-       "t": "**불꽃을 아버지와 함께 보는 것**이 이때 창아의 바람으로 드러나는 셈이다."
+       "t": "이는 불꽃을 함께 보는 순간을 특히 바라는 마음으로 읽힌다."
       }
      ],
      "sources": [
@@ -936,14 +770,6 @@
        "revision": 1713272,
        "section": "Idle Quotes",
        "paragraph": "A14",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Idle Quotes",
-       "paragraph": "A15",
        "wiki_refs": []
       },
       {
@@ -961,6 +787,14 @@
        "section": "Idle Quotes",
        "paragraph": "A17",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Changchang",
+       "revision": 1713272,
+       "section": "Event Dialogue > Fleeting Colors in Flight",
+       "paragraph": "A45",
+       "wiki_refs": []
       }
      ],
      "heading": "작중 행적 — 화려히 수놓인 유년",
@@ -968,27 +802,21 @@
     },
     {
      "section": "작중 행적 — Fleeting Colors in Flight",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I've got a new wish this Lantern Rite — just once, I wanna see the fireworks with Daddy!",
+     "status": "accepted",
+     "note": "The sentence matches A46, and the interpretation is reasonable.",
+     "quote": "If he can't make it this year, then next time, then next-next time, and next-next-next time... One day, my wish will come true!",
      "sentences": [
       {
-       "t_raw": "이번 Lantern Rite에 Changchang은 **아버지와 함께 불꽃을 보는 소원**을 새로 말한다.",
+       "t_raw": "올해 아버지가 오지 못하면 다음, 그다음, 그다음다음으로 이어 가며 언젠가 소원이 이루어질 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "이번 해등절에 창아는 **아버지와 함께 불꽃을 보는 소원**을 새로 말한다."
+       "t": "올해 아버지가 오지 못하면 다음, 그다음, 그다음다음으로 이어 가며 언젠가 소원이 이루어질 것이라고 말한다."
       },
       {
-       "t_raw": "이어서 단 한 번만 아버지와 함께 불꽃을 보고 싶다고 하며, 올해 아버지가 오지 못하면 다음번, 그다음번, 그다음다음번을 말한 뒤 언젠가 소원이 이루어질 것이라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어서 단 한 번만 아버지와 함께 불꽃을 보고 싶다고 하며, 올해 아버지가 오지 못하면 다음번, 그다음번, 그다음다음번을 말한 뒤 언젠가 소원이 이루어질 것이라고 한다."
-      },
-      {
-       "t_raw": "올해 이루어지지 않아도 다음 기회를 헤아리는 태도가 **다음 기회를 기다리는 마음**으로 읽힌다.",
+       "t_raw": "이 말은 아버지와의 불꽃 구경을 한 해에 끝내지 않고 **기다림을 이어 가는** 모습으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "올해 이루어지지 않아도 다음 기회를 헤아리는 태도가 **다음 기회를 기다리는 마음**으로 읽힌다."
+       "t": "이 말은 아버지와의 불꽃 구경을 한 해에 끝내지 않고 **기다림을 이어 가는** 모습으로 보인다."
       }
      ],
      "sources": [
@@ -1013,28 +841,29 @@
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 이후 축제와 선물",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When is Daddy coming back? Is it too late to write him and ask for a flute?",
+     "section": "작중 행적 — The Exquisite Night Chimes와 Vibrant Harriers Aloft in Spring Breeze",
+     "status": "accepted",
+     "note": "The flute request is separate from “I know what present I want from Dad”; the English never says that present is the flute.",
+     "quote": "I know what present I want from Dad!",
      "sentences": [
       {
-       "t_raw": "The Exquisite Night Chimes 때 Changchang은 아버지가 언제 돌아오는지 묻고, 아버지에게 **flute**를 부탁하는 편지를 보내기에는 너무 늦었는지 말한다.",
+       "t_raw": "**The Exquisite Night Chimes** 때 Changchang은 \"I got it!\"이라 외치며 아버지에게 받고 싶은 선물이 떠올랐다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "선율이 흐르는 밤 때 창아는 아버지가 언제 돌아오는지 묻고, 아버지에게 **flute**를 부탁하는 편지를 보내기에는 너무 늦었는지 말한다."
+       "t": "**선율이 흐르는 밤** 때 창아는 \"I got it!\"이라 외치며 아버지에게 받고 싶은 선물이 떠올랐다고 말한다."
       },
       {
-       "t_raw": "Changchang은 \"I got it!\"이라고 말하고, 아버지에게 받고 싶은 선물을 안다고 한다.",
+       "t_raw": "그녀는 아버지에게 받고 싶은 선물이 있다고 말하고, 아버지가 언제 돌아오는지 묻고 그에게 플루트를 부탁하는 편지를 쓰기에는 너무 늦은지 되묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "창아는 \"I got it!\"이라고 말하고, 아버지에게 받고 싶은 선물을 안다고 한다."
+       "repaired": true,
+       "t": "그녀는 아버지에게 받고 싶은 선물이 있다고 말하고, 아버지가 언제 돌아오는지 묻고 그에게 플루트를 부탁하는 편지를 쓰기에는 너무 늦은지 되묻는다."
       },
       {
-       "t_raw": "The Exquisite Night Chimes 때 아버지의 귀환을 묻는 말과 받고 싶은 선물을 떠올리는 말이 함께 드러나는 점은, 선물에 대한 기대가 아버지를 기다리는 마음과 맞닿아 있음을 보여 주는 것으로 보인다.",
+       "t_raw": "아버지의 귀환을 기다리는 마음이 플루트라는 구체적인 선물 상상으로 이어지는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "선율이 흐르는 밤 때 아버지의 귀환을 묻는 말과 받고 싶은 선물을 떠올리는 말이 함께 드러나는 점은, 선물에 대한 기대가 아버지를 기다리는 마음과 맞닿아 있음을 보여 주는 것으로 보인다."
+       "t": "아버지의 귀환을 기다리는 마음이 플루트라는 구체적인 선물 상상으로 이어지는 셈이다."
       }
      ],
      "sources": [
@@ -1071,32 +900,42 @@
        "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 이후 축제와 선물",
+     "heading": "작중 행적 — 선율이 흐르는 밤과 오색 연과 봄바람",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 이후 축제와 선물",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When is Daddy coming back? Is it too late to write him and ask for a Suanni kite?",
+     "section": "작중 행적 — The Exquisite Night Chimes와 Vibrant Harriers Aloft in Spring Breeze",
+     "status": "accepted",
+     "note": "All sentences match the English.",
+     "quote": "I want Daddy to get me a Suanni kite!",
      "sentences": [
       {
-       "t_raw": "Vibrant Harriers Aloft in Spring Breeze 때 Changchang은 아버지의 귀환을 묻고, **Suanni kite**를 부탁하는 편지를 보내기에는 너무 늦었는지 말한다.",
+       "t_raw": "**Vibrant Harriers Aloft in Spring Breeze** 때에는 \"Suanni!\"를 외치며 아버지가 **Suanni kite**를 사 주기를 바란다.",
        "interp": false,
        "dropped": false,
-       "t": "오색 연과 봄바람 때 창아는 아버지의 귀환을 묻고, **Suanni kite**를 부탁하는 편지를 보내기에는 너무 늦었는지 말한다."
+       "t": "**오색 연과 봄바람** 때에는 \"Suanni!\"를 외치며 아버지가 **Suanni kite**를 사 주기를 바란다."
       },
       {
-       "t_raw": "혼자 놀다가 빛나는 Suanni를 보았다는 그녀는 아버지가 그 kite를 사 줄 수 있을지 궁금해한다.",
+       "t_raw": "혼자 놀다가 빛나는 Suanni kite를 보았고, 아버지가 하나 사 줄 수 있을지 궁금해한다.",
        "interp": false,
        "dropped": false,
-       "t": "혼자 놀다가 빛나는 Suanni를 보았다는 그녀는 아버지가 그 kite를 사 줄 수 있을지 궁금해한다."
+       "t": "혼자 놀다가 빛나는 Suanni 연을 보았고, 아버지가 하나 사 줄 수 있을지 궁금해한다.",
+       "polish": {
+        "from": "혼자 놀다가 빛나는 Suanni kite를 보았고, 아버지가 하나 사 줄 수 있을지 궁금해한다.",
+        "text": "혼자 놀다가 빛나는 Suanni 연을 보았고, 아버지가 하나 사 줄 수 있을지 궁금해한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "이어 아버지에게 Suanni kite를 받고 싶다고 말하는 모습은, 앞선 flute 부탁처럼 선물을 매개로 아버지의 귀환을 기다리는 태도로 보인다.",
+       "t_raw": "아버지에게 Suanni kite를 부탁하는 편지를 써도 될지 묻는 모습은 The Exquisite Night Chimes 때의 플루트 부탁과 같은 기다림을 보여 주는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이어 아버지에게 Suanni kite를 받고 싶다고 말하는 모습은, 앞선 flute 부탁처럼 선물을 매개로 아버지의 귀환을 기다리는 태도로 보인다."
+       "t": "아버지에게 Suanni 연을 부탁하는 편지를 써도 될지 묻는 모습은 선율이 흐르는 밤 때의 플루트 부탁과 같은 기다림을 보여 주는 것으로 보인다.",
+       "polish": {
+        "from": "아버지에게 Suanni kite를 부탁하는 편지를 써도 될지 묻는 모습은 선율이 흐르는 밤 때의 플루트 부탁과 같은 기다림을 보여 주는 것으로 보인다.",
+        "text": "아버지에게 Suanni 연을 부탁하는 편지를 써도 될지 묻는 모습은 선율이 흐르는 밤 때의 플루트 부탁과 같은 기다림을 보여 주는 것으로 보인다.",
+        "by": "or-ds"
+       }
       }
      ],
      "sources": [
@@ -1106,6 +945,14 @@
        "revision": 1713272,
        "section": "Idle Quotes",
        "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Changchang",
+       "revision": 1713272,
+       "section": "Idle Quotes",
+       "paragraph": "A22",
        "wiki_refs": []
       },
       {
@@ -1139,52 +986,61 @@
        "section": "Event Dialogue > Vibrant Harriers Aloft in Spring Breeze",
        "paragraph": "A52",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Event Dialogue > Vibrant Harriers Aloft in Spring Breeze",
-       "paragraph": "A53",
-       "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 이후 축제와 선물",
+     "heading": "작중 행적 — 선율이 흐르는 밤과 오색 연과 봄바람",
      "latin_left": [
+      "Suanni",
       "Suanni",
       "Suanni",
       "Suanni"
      ]
     },
     {
-     "section": "작중 행적 — 이후 축제와 선물",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When is Daddy coming back? Is it too late to write him and ask him for some fortune coins?",
+     "section": "작중 행적 — Springtime Charms",
+     "status": "accepted",
+     "note": "She asks when he is coming back and whether it is too late to write asking for fortune coins; the Korean turns that into asking him to send the coins when he returns.",
+     "quote": "My friends and I have already done some fortune coin swaps. Seems like there are only ten or so varieties...",
      "sentences": [
       {
-       "t_raw": "Springtime Charms 때 Changchang은 아버지가 언제 돌아오는지 묻고, **fortune coins**를 부탁하는 편지를 보내기에는 너무 늦었는지 말한다.",
+       "t_raw": "Springtime Charms에서 Changchang은 아빠가 언제 돌아오는지 묻고, fortune coins를 부탁하는 편지를 쓰기에는 너무 늦은지 되묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "봄볕의 복숭아 부적 때 창아는 아버지가 언제 돌아오는지 묻고, **fortune coins**를 부탁하는 편지를 보내기에는 너무 늦었는지 말한다."
+       "repaired": true,
+       "t": "봄볕의 복숭아 부적에서 창아는 아빠가 언제 돌아오는지 묻고, 복운전을 부탁하는 편지를 쓰기에는 너무 늦은지 되묻는다.",
+       "polish": {
+        "from": "봄볕의 복숭아 부적에서 창아는 아빠가 언제 돌아오는지 묻고, fortune coins를 부탁하는 편지를 쓰기에는 너무 늦은지 되묻는다.",
+        "text": "봄볕의 복숭아 부적에서 창아는 아빠가 언제 돌아오는지 묻고, 복운전을 부탁하는 편지를 쓰기에는 너무 늦은지 되묻는다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "친구들과 이미 fortune coins를 바꿔 보았고 종류는 열 가지 남짓인 듯하다며, 먼 곳에 간 아버지 곁에는 다른 fortune coins도 있겠다고 기대한다.",
+       "t_raw": "Changchang은 친구들과 이미 fortune coin swaps를 했고, 그 종류가 열 가지 남짓뿐이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "친구들과 이미 fortune coins를 바꿔 보았고 종류는 열 가지 남짓인 듯하다며, 먼 곳에 간 아버지 곁에는 다른 fortune coins도 있겠다고 기대한다."
+       "t": "창아는 친구들과 이미 복운전 교환을 했고, 그 종류가 열 가지 남짓뿐이라고 말한다.",
+       "polish": {
+        "from": "창아는 친구들과 이미 fortune coin swaps를 했고, 그 종류가 열 가지 남짓뿐이라고 말한다.",
+        "text": "창아는 친구들과 이미 복운전 교환을 했고, 그 종류가 열 가지 남짓뿐이라고 말한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "그녀는 평범한 편지가 아니라 축복의 말을 가득 담은 편지를 보내겠다고 한다.",
+       "t_raw": "아빠가 멀리 간 곳에는 다른 종류의 fortune coins가 있을 거라고 기대한다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 평범한 편지가 아니라 축복의 말을 가득 담은 편지를 보내겠다고 한다."
+       "t": "아빠가 멀리 간 곳에는 다른 종류의 복운전이 있을 거라고 기대한다.",
+       "polish": {
+        "from": "아빠가 멀리 간 곳에는 다른 종류의 fortune coins가 있을 거라고 기대한다.",
+        "text": "아빠가 멀리 간 곳에는 다른 종류의 복운전이 있을 거라고 기대한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "이런 계획은 먼 곳의 아버지와 fortune coins를 매개로 축복을 전하려는 시도로 볼 수 있다.",
+       "t_raw": "친구들과 나눈 경험이 멀리 있는 아빠에게 청할 선물을 떠올리게 한 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이런 계획은 먼 곳의 아버지와 fortune coins를 매개로 축복을 전하려는 시도로 볼 수 있다."
+       "t": "친구들과 나눈 경험이 멀리 있는 아빠에게 청할 선물을 떠올리게 한 것으로 보인다."
       }
      ],
      "sources": [
@@ -1211,7 +1067,37 @@
        "section": "Event Dialogue > Springtime Charms",
        "paragraph": "A56",
        "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 봄볕의 복숭아 부적",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Springtime Charms",
+     "status": "accepted",
+     "note": "All sentences match the English.",
+     "quote": "Anyway, it'll be a letter full of words that bring blessings!",
+     "sentences": [
+      {
+       "t_raw": "Changchang은 아빠에게 그냥 평범한 편지만 쓰지 않겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "창아는 아빠에게 그냥 평범한 편지만 쓰지 않겠다고 말한다."
       },
+      {
+       "t_raw": "선물 같은 편지를 떠올리다가 이름이 생각나지 않는 듯 머뭇거리고, 결국 **축복의 말이 담긴 편지**를 보내겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "선물 같은 편지를 떠올리다가 이름이 생각나지 않는 듯 머뭇거리고, 결국 **축복의 말이 담긴 편지**를 보내겠다고 한다."
+      },
+      {
+       "t_raw": "편지에 선물 같은 성격과 축복의 말을 함께 담으려는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "편지에 선물 같은 성격과 축복의 말을 함께 담으려는 셈이다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Changchang",
@@ -1229,32 +1115,39 @@
        "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 이후 축제와 선물",
+     "heading": "작중 행적 — 봄볕의 복숭아 부적",
      "latin_left": []
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Little Yue finishes the gift herself and only asks that it be taken to Changchang; the Korean has her ask someone else to make and deliver it.",
      "quote": "I want to make a little gift so that Changchang won't get mad at me for not going to play with her...",
      "sentences": [
       {
-       "t_raw": "Changchang은 Little Yue와 친구 사이다.",
+       "t_raw": "Changchang은 Little Yue와 친구다.",
        "interp": false,
        "dropped": false,
-       "t": "창아는 소월과 친구 사이다."
+       "t": "창아는 소월과 친구다."
       },
       {
-       "t_raw": "Little Yue는 도시에 가서 놀기로 한 약속을 지키지 못해 화낼까 봐 걱정하며 장난감을 보냈고, Changchang은 선물에 고맙다며 Little Yue에게도 전해 달라고 한다.",
+       "t_raw": "Little Yue는 Aunt Yinxing이 도시에서 쇼핑을 데려다주면 Changchang과 놀 수 있다고 여겼지만, 도시에 들어가지 못해 Changchang이 화내지 않도록 직접 작은 선물을 만들고, 그 장난감을 Changchang에게 전해 달라고 부탁하며 Changchang이 좋아하기를 바란다.",
        "interp": false,
        "dropped": false,
-       "t": "소월은 도시에 가서 놀기로 한 약속을 지키지 못해 화낼까 봐 걱정하며 장난감을 보냈고, 창아는 선물에 고맙다며 소월에게도 전해 달라고 한다."
+       "repaired": true,
+       "t": "소월은 Aunt Yinxing이 도시에서 쇼핑을 데려다주면 창아와 놀 수 있다고 여겼지만, 도시에 들어가지 못해 창아가 화내지 않도록 직접 작은 선물을 만들고, 그 장난감을 창아에게 전해 달라고 부탁하며 창아가 좋아하기를 바란다."
       },
       {
-       "t_raw": "미뤄진 약속에도 서로의 기분을 살피는 모습이 **친구 관계**로 보인다.",
+       "t_raw": "Changchang은 그 선물을 고마워하며 Little Yue에게도 고맙다고 전해 달라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "창아는 그 선물을 고마워하며 소월에게도 고맙다고 전해 달라고 한다."
+      },
+      {
+       "t_raw": "**약속이 미뤄져도 선물로 마음을 잇는 사이**로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "미뤄진 약속에도 서로의 기분을 살피는 모습이 **친구 관계**로 보인다."
+       "t": "**약속이 미뤄져도 선물로 마음을 잇는 사이**로 보인다."
       }
      ],
      "sources": [
@@ -1303,376 +1196,41 @@
       }
      ],
      "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Granddad said he's busy and I should go play on my own.",
-     "sentences": [
-      {
-       "t_raw": "Changchang의 할아버지는 Dockyard에서 건설 노동자로 일하고, Changchang은 혼자 놀곤 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "창아의 할아버지는 Dockyard에서 건설 노동자로 일하고, 창아는 혼자 놀곤 한다."
-      },
-      {
-       "t_raw": "할아버지가 바쁘다며 혼자 놀라고 했지만 그녀는 사람들이 친절하고 Millelith가 나쁜 사람들을 혼내 준다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "할아버지가 바쁘다며 혼자 놀라고 했지만 그녀는 사람들이 친절하고 천암군이 나쁜 사람들을 혼내 준다고 말한다."
-      },
-      {
-       "t_raw": "혼자 있는 시간이 있어도 주변과 Millelith 덕분에 **안심하는 관계**가 형성된 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "혼자 있는 시간이 있어도 주변과 천암군 덕분에 **안심하는 관계**가 형성된 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A28",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A29",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Currents Deep Beneath the Lanterns",
-       "quest_ko": "등잔 밑이 어둡다",
-       "version": "1.3",
-       "speaker": "Changchang"
-      }
-     ],
-     "heading": "인간관계",
      "latin_left": [
-      "Dockyard"
+      "Aunt Yinxing"
      ]
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But whenever daddy comes home he always brings lots and lots of pressies!",
+     "status": "accepted",
+     "note": "All sentences match the English.",
+     "quote": "He said the same thing the time before last, when a big, tall man brought me a gift from him.",
      "sentences": [
       {
-       "t_raw": "Changchang은 아버지가 떠난 지 며칠인지 헤아리지 못할 만큼 기다린다.",
+       "t_raw": "Changchang은 'Grandad...' 하고 할아버지를 부르고, 'Ehe, grandad, you have a bite too!'라고 말하며 한입을 권한다.",
        "interp": false,
        "dropped": false,
-       "t": "창아는 아버지가 떠난 지 며칠인지 헤아리지 못할 만큼 기다린다."
+       "t": "창아는 '할아버지...' 하고 할아버지를 부르고, '에헤, 할아버지도 한입 드셔 봐!'라고 말하며 한입을 권한다.",
+       "polish": {
+        "from": "창아는 'Grandad...' 하고 할아버지를 부르고, 'Ehe, grandad, you have a bite too!'라고 말하며 한입을 권한다.",
+        "text": "창아는 '할아버지...' 하고 할아버지를 부르고, '에헤, 할아버지도 한입 드셔 봐!'라고 말하며 한입을 권한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "아버지는 올 때마다 새 옷, 바람개비, 사탕, 도자기 인형, Wolfhook Cake, 바람에 빛나는 작은 병, 보라색 모래시계 같은 선물을 가져왔고, 그 전에는 큰 키의 남자가 아버지의 선물을 전해 준 일도 있다.",
+       "t_raw": "아버지는 함께 놀겠다고 했지만 오래도록 돌아오지 않고, 그 전전에는 키 크고 덩치 큰 남자가 아버지의 선물을 가져왔으며, Changchang은 그 사정을 모두 Beidou 때문이라고 확신한다.",
        "interp": false,
        "dropped": false,
-       "t": "아버지는 올 때마다 새 옷, 바람개비, 사탕, 도자기 인형, Wolfhook Cake, 바람에 빛나는 작은 병, 보라색 모래시계 같은 선물을 가져왔고, 그 전에는 큰 키의 남자가 아버지의 선물을 전해 준 일도 있다."
+       "t": "아버지는 함께 놀겠다고 했지만 오래도록 돌아오지 않고, 그 전전에는 키 크고 덩치 큰 남자가 아버지의 선물을 가져왔으며, 창아는 그 사정을 모두 북두 때문이라고 확신한다."
       },
       {
-       "t_raw": "아버지의 부재는 **선물 목록과 반복되는 기다림**으로 드러나는 셈이다.",
+       "t_raw": "**곁의 할아버지와 떠난 아버지**가 대비된다.",
        "interp": true,
        "dropped": false,
-       "t": "아버지의 부재는 **선물 목록과 반복되는 기다림**으로 드러나는 셈이다."
+       "t": "**곁의 할아버지와 떠난 아버지**가 대비된다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A32",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A33",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A34",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A35",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Lone Ship In Guyun",
-       "quest_ko": "고운각에 들어선 선박",
-       "version": "1.0",
-       "speaker": "Changchang"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Wolfhook Cake"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ah, yes! These will do. Let me make a Xiao Lantern for Changchang.",
-     "sentences": [
-      {
-       "t_raw": "Wang'ya는 Changchang에게 인사하며 할아버지를 못 찾는지 묻고, Changchang을 위해 Xiao Lantern을 만들겠다고 나선다.",
-       "interp": false,
-       "dropped": false,
-       "t": "망아는 창아에게 인사하며 할아버지를 못 찾는지 묻고, 창아를 위해 소등을 만들겠다고 나선다."
-      },
-      {
-       "t_raw": "묻는 말과 도움은 항구의 어른이 아이의 일을 거들어 주는 관계로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "묻는 말과 도움은 항구의 어른이 아이의 일을 거들어 주는 관계로 읽힌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Currents Deep Beneath the Lanterns",
-       "quest_ko": "등잔 밑이 어둡다",
-       "version": "1.3",
-       "speaker": "Wang'ya"
-      },
-      {
-       "kind": "quest",
-       "quest": "Currents Deep Beneath the Lanterns",
-       "quest_ko": "등잔 밑이 어둡다",
-       "version": "1.3",
-       "speaker": "Wang'ya"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I'm waiting for daddy. I've lost count of how many days he's been away now...",
-     "sentences": [
-      {
-       "t_raw": "Changchang는 아빠가 떠난 지 며칠째인지 셀 수 없을 만큼 기다리고 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "창아는 아빠가 떠난 지 며칠째인지 셀 수 없을 만큼 기다리고 있다."
-      },
-      {
-       "t_raw": "Moonchase Festival이 와도 아빠는 돌아오지 않았고, 여러 축제에서 그녀는 아빠가 언제 돌아오는지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "축월절이 와도 아빠는 돌아오지 않았고, 여러 축제에서 그녀는 아빠가 언제 돌아오는지 묻는다."
-      },
-      {
-       "t_raw": "Fleeting Colors in Flight에서는 불꽃을 아빠와 보고 싶다고 말하면서, 올해 안 되면 다음, 다다음, 다다다음 기회를 기다리겠다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "화려히 수놓인 유년에서는 불꽃을 아빠와 보고 싶다고 말하면서, 올해 안 되면 다음, 다다음, 다다다음 기회를 기다리겠다고 한다."
-      },
-      {
-       "t_raw": "Springtime Charms에서는 아빠가 먼 곳으로 갔기 때문에 그곳에 다른 fortune coins가 있을 거라고 짐작한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "봄볕의 복숭아 부적에서는 아빠가 먼 곳으로 갔기 때문에 그곳에 다른 fortune coins가 있을 거라고 짐작한다."
-      },
-      {
-       "t_raw": "이렇게 귀환을 되묻는 말과 먼 곳에 있다는 인식이 겹쳐, 그녀의 기다림은 아직 끝나지 않은 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이렇게 귀환을 되묻는 말과 먼 곳에 있다는 인식이 겹쳐, 그녀의 기다림은 아직 끝나지 않은 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A32",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Event Dialogue > Moonlight Merriment",
-       "paragraph": "A42",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Event Dialogue > Fleeting Colors in Flight",
-       "paragraph": "A45",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Event Dialogue > Fleeting Colors in Flight",
-       "paragraph": "A46",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Event Dialogue > The Exquisite Night Chimes",
-       "paragraph": "A48",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Event Dialogue > Vibrant Harriers Aloft in Spring Breeze",
-       "paragraph": "A51",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Nothing he can do about it, I guess. I'm sure it's all because of Beidou again.",
-     "sentences": [
-      {
-       "t_raw": "Changchang는 아빠가 지난번에 함께 놀러 오겠다고 했지만 오래 걸린다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "창아는 아빠가 지난번에 함께 놀러 오겠다고 했지만 오래 걸린다고 말한다."
-      },
-      {
-       "t_raw": "그 전에도 아빠는 같은 말을 했고, 키 큰 남자가 아빠의 선물을 가져온 일이 있었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 전에도 아빠는 같은 말을 했고, 키 큰 남자가 아빠의 선물을 가져온 일이 있었다."
-      },
-      {
-       "t_raw": "Changchang는 아빠가 약속을 지키지 못하는 이유를 두고 Beidou 때문이라고 짚는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "창아는 아빠가 약속을 지키지 못하는 이유를 두고 북두 때문이라고 짚는다."
-      },
-      {
-       "t_raw": "Little Yue는 Changchang에게 돌아오면 함께 놀겠다고 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "소월은 창아에게 돌아오면 함께 놀겠다고 했다."
-      },
-      {
-       "t_raw": "아빠의 귀환과 Little Yue의 약속이 모두 미뤄진 채 남아 있다는 점에서, 이 대목의 기다림은 한 사람의 귀환만을 향하지 않는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아빠의 귀환과 소월의 약속이 모두 미뤄진 채 남아 있다는 점에서, 이 대목의 기다림은 한 사람의 귀환만을 향하지 않는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "A Lone Ship In Guyun",
-       "quest_ko": "고운각에 들어선 선박",
-       "version": "1.0",
-       "speaker": "Changchang"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Lone Ship In Guyun",
-       "quest_ko": "고운각에 들어선 선박",
-       "version": "1.0",
-       "speaker": "Changchang"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Lone Ship In Guyun",
-       "quest_ko": "고운각에 들어선 선박",
-       "version": "1.0",
-       "speaker": "Changchang"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Lone Ship In Guyun",
-       "quest_ko": "고운각에 들어선 선박",
-       "version": "1.0",
-       "speaker": "Little Yue"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Changchang is a young girl with black hair with two parts braided, purple eyes, and black glasses. She wears a dark green Liyue dress and dark green shoes.",
-     "sentences": [
-      {
-       "t_raw": "Changchang은 검은 머리를 두 갈래로 땋고 보라색 눈에 검은 안경을 쓴 어린 소녀다.",
-       "interp": false,
-       "dropped": false,
-       "t": "창아는 검은 머리를 두 갈래로 땋고 보라색 눈에 검은 안경을 쓴 어린 소녀다."
-      },
-      {
-       "t_raw": "짙은 초록색 Liyue 드레스와 같은 색 신발을 걸쳤고, 대기 중에는 \"How many days...\"라며 아버지가 떠난 지 며칠째인지 묻거나 \"Grandad...\"와 \"Ehe, grandad, you have a bite too!\"라며 할아버지에게 한 입 먹어 보라고 권하는 말도 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "짙은 초록색 리월 드레스와 같은 색 신발을 걸쳤고, 대기 중에는 \"How many days...\"라며 아버지가 떠난 지 며칠째인지 묻거나 \"Grandad...\"와 \"Ehe, grandad, you have a bite too!\"라며 할아버지에게 한 입 먹어 보라고 권하는 말도 한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Profile > Appearance",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Idle Quotes",
-       "paragraph": "A4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Idle Quotes",
-       "paragraph": "A5",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Changchang",
@@ -1688,38 +1246,137 @@
        "section": "Idle Quotes",
        "paragraph": "A7",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Lone Ship In Guyun",
+       "quest_ko": "고운각에 들어선 선박",
+       "version": "1.0",
+       "speaker": "Changchang"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Lone Ship In Guyun",
+       "quest_ko": "고운각에 들어선 선박",
+       "version": "1.0",
+       "speaker": "Changchang"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Lone Ship In Guyun",
+       "quest_ko": "고운각에 들어선 선박",
+       "version": "1.0",
+       "speaker": "Changchang"
       }
      ],
-     "heading": "여담",
-     "latin_left": [
-      "How",
-      "Grandad",
-      "Ehe"
-     ]
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by Q3, Q8 and Q9. The interpretation is reasonable.",
+     "quote": "Thanks for protecting Liyue Harbor! Please come visit us for the next Lantern Rite!",
+     "sentences": [
+      {
+       "t_raw": "Changchang은 강한 Millelith 경비병들과 Vision을 가진 힘센 영웅들이 있었기에 무섭지 않았다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "창아는 강한 천암군 경비병들과 신의 눈을 가진 힘센 영웅들이 있었기에 무섭지 않았다고 말한다."
+      },
+      {
+       "t_raw": "Liyue Harbor를 지켜 준 이들에게 고맙다고 전하고 다음 Lantern Rite에 놀러 오라고 청하며, Wang'ya에게는 고맙다며 착한 아이가 되겠다고 약속한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월항을 지켜 준 이들에게 고맙다고 전하고 다음 해등절에 놀러 오라고 청하며, 망아에게는 고맙다며 착한 아이가 되겠다고 약속한다."
+      },
+      {
+       "t_raw": "**지켜 주는 사람들에게 고마움과 초대를 건네는** 태도에서 친밀함이 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**지켜 주는 사람들에게 고마움과 초대를 건네는** 태도에서 친밀함이 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Fond Farewell",
+       "quest_ko": "송신",
+       "version": "1.1",
+       "speaker": "Changchang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Currents Deep Beneath the Lanterns",
+       "quest_ko": "등잔 밑이 어둡다",
+       "version": "1.3",
+       "speaker": "Changchang"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Fond Farewell",
+       "quest_ko": "송신",
+       "version": "1.1",
+       "speaker": "Changchang"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "No, no! Haven't we been accompanying kids a lot? You know, like Dusky Ming and Changchang...",
+     "status": "accepted",
+     "note": "Matches A3.",
+     "quote": "Changchang is a young girl with black hair with two parts braided, purple eyes, and black glasses.",
      "sentences": [
       {
-       "t_raw": "짧은 대사로 \"Hello.\"라는 인사와 \"Are you here on your own?\", \"What're you playing now?\" 같은 물음이 오가고, \"See you.\"에는 \"Bye-bye!\"로 답한다.",
+       "t_raw": "Changchang은 검은 머리를 두 갈래로 땋고 보라색 눈에 검은 안경을 쓴 어린 소녀다.",
        "interp": false,
        "dropped": false,
-       "t": "짧은 대사로 \"Hello.\"라는 인사와 \"Are you here on your own?\", \"What're you playing now?\" 같은 물음이 오가고, \"See you.\"에는 \"Bye-bye!\"로 답한다."
+       "t": "창아는 검은 머리를 두 갈래로 땋고 보라색 눈에 검은 안경을 쓴 어린 소녀다."
       },
       {
-       "t_raw": "Paimon은 함께 아이들을 동행한 일을 떠올리며 Dusky Ming과 Changchang을 함께 언급하고, 같은 장면에서 \"Exactly! Like Dusky Ming and Changchang...\"이라고 두 아이를 다시 나란히 부른다.",
+       "t_raw": "짙은 초록색 Liyue dress와 같은 색 신발을 착용한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 함께 아이들을 동행한 일을 떠올리며 명이와 창아를 함께 언급하고, 같은 장면에서 \"Exactly! Like Dusky Ming and Changchang...\"이라고 두 아이를 다시 나란히 부른다."
+       "t": "짙은 초록색 리월 드레스와 같은 색 신발을 착용한다.",
+       "polish": {
+        "from": "짙은 초록색 리월 dress와 같은 색 신발을 착용한다.",
+        "text": "짙은 초록색 리월 드레스와 같은 색 신발을 착용한다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Changchang",
+       "revision": 1713272,
+       "section": "Profile > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches A24, A36 and A37.",
+     "quote": "See you.",
+     "sentences": [
+      {
+       "t_raw": "Changchang은 “아빠는 언제 돌아오시지... 아, 안녕하세요, 만나서 반가워요!”라고 인사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "창아는 “아빠는 언제 돌아오시지... 아, 안녕하세요, 만나서 반가워요!”라고 인사한다."
       },
       {
-       "t_raw": "이렇게 Changchang은 Paimon이 함께한 아이들의 예로 다시 언급되는 셈이다.",
-       "interp": true,
+       "t_raw": "헤어질 때는 “또 봐요.”라는 말에 “바이바이!”라고 답한다.",
+       "interp": false,
        "dropped": false,
-       "t": "이렇게 창아는 페이몬이 함께한 아이들의 예로 다시 언급되는 셈이다."
+       "t": "헤어질 때는 “또 봐요.”라는 말에 “바이바이!”라고 답한다."
       }
      ],
      "sources": [
@@ -1728,23 +1385,7 @@
        "page": "Changchang",
        "revision": 1713272,
        "section": "Dialogue",
-       "paragraph": "A25",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A27",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Dialogue",
-       "paragraph": "A30",
+       "paragraph": "A24",
        "wiki_refs": []
       },
       {
@@ -1762,6 +1403,37 @@
        "section": "Dialogue",
        "paragraph": "A37",
        "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by Q25 and Q28. The interpretation is mild and reasonable.",
+     "quote": "Exactly! Like Dusky Ming and Changchang...",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 아이들을 많이 동행한 일을 떠올리며 Dusky Ming과 Changchang을 함께 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아이들을 많이 동행한 일을 떠올리며 명이와 창아를 함께 언급한다."
+      },
+      {
+       "t_raw": "이는 Paimon이 Changchang과의 **동행 기억**을 Dusky Ming과 나란히 떠올린 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 페이몬이 창아과의 **동행 기억**을 명이와 나란히 떠올린 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Eight Locales Over Mountains and Seas: The Wonders of Adeptal Amber",
+       "quest_ko": "산해 여덟 곳의 순례・호박 산악 이야기",
+       "version": "2.4",
+       "speaker": "Paimon"
       },
       {
        "kind": "quest",
@@ -1772,103 +1444,14 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Hello",
-      "Are",
-      "What're",
-      "See",
-      "Bye-bye",
-      "Exactly",
-      "Like Dusky Ming and Changchang"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I wanna make a Xiao Lantern, but I don't know how...",
-     "sentences": [
-      {
-       "t_raw": "이벤트 대사에서는 \"I got it!\"이라며 \"I know what present I want from Dad!\"라고 말하고, \"Suanni!\"라며 \"I want Daddy to get me a Suanni kite!\"라고 덧붙인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이벤트 대사에서는 \"I got it!\"이라며 \"I know what present I want from Dad!\"라고 말하고, \"Suanni!\"라며 \"I want Daddy to get me a Suanni kite!\"라고 덧붙인다."
-      },
-      {
-       "t_raw": "Silk Flowers 세 송이를 모았는지 묻고, 그것들로 화환이 곧 완성될 것이라고 말하며, Xiao Lantern을 만들고 싶지만 방법을 모른다고 털어놓는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "예상꽃 세 송이를 모았는지 묻고, 그것들로 화환이 곧 완성될 것이라고 말하며, 소등을 만들고 싶지만 방법을 모른다고 털어놓는다."
-      },
-      {
-       "t_raw": "Wang'ya에게 고맙다고 인사하며 착한 아이가 되겠다고 약속하고, 자기가 쓴 것을 보았냐며 생각보다 잘 통했다고 반응하는 짧은 대사도 남아 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "망아에게 고맙다고 인사하며 착한 아이가 되겠다고 약속하고, 자기가 쓴 것을 보았냐며 생각보다 잘 통했다고 반응하는 짧은 대사도 남아 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Idle Quotes",
-       "paragraph": "A19",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Idle Quotes",
-       "paragraph": "A20",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Idle Quotes",
-       "paragraph": "A22",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Changchang",
-       "revision": 1713272,
-       "section": "Idle Quotes",
-       "paragraph": "A23",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Let's Make A Flower Garland!",
-       "quest_ko": "화환을 만들고픈 창아!",
-       "version": "1.1",
-       "speaker": "Changchang"
-      },
-      {
-       "kind": "quest",
-       "quest": "Currents Deep Beneath the Lanterns",
-       "quest_ko": "등잔 밑이 어둡다",
-       "version": "1.3",
-       "speaker": "Changchang"
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Dad",
-      "Suanni",
-      "Daddy",
-      "Suanni"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation.",
      "t_raw": "아빠는 언제 돌아오시지... 아, 안녕하세요, 만나서 반가워요!",
      "en": "When is daddy coming back... Oh, hello, nice to meet you!",
      "speaker": "Changchang",
@@ -1883,44 +1466,27 @@
      "speaker_ko": "창아"
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "할아버지가 바쁘니까 혼자 놀라고 하셨어.",
-     "en": "Granddad said he's busy and I should go play on my own.",
+     "section": "작중 행적 — Liyue Harbor의 나날",
+     "status": "accepted",
+     "note": "Faithful translation. '돌아오시려나' is a natural rendering of the wondering tone.",
+     "t_raw": "아빠는 언제 돌아오시려나... 아, 안녕하세요, 만나서 반가워요!",
+     "en": "When is daddy coming back... Oh, hello, nice to meet you!",
      "speaker": "Changchang",
      "source": {
       "kind": "quest",
-      "quest": "Currents Deep Beneath the Lanterns",
-      "quest_ko": "등잔 밑이 어둡다",
-      "version": "1.3",
-      "speaker": "Changchang"
-     },
-     "t": "할아버지가 바쁘니까 혼자 놀라고 하셨어.",
-     "speaker_ko": "창아"
-    },
-    {
-     "section": "작중 행적 — Liyue Harbor의 일상과 초기 의뢰",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "도시 문 앞에 가서 내 강아지에게 먹이를 주도록 도와줄 수 있나요?",
-     "en": "Could you help me go to the city gate and feed my puppy?",
-     "speaker": "Changchang",
-     "source": {
-      "kind": "quest",
-      "quest": "Changchang's Little Friend",
-      "quest_ko": "창아와 그녀의 작은 친구",
+      "quest": "Let's Make A Flower Garland!",
+      "quest_ko": "화환을 만들고픈 창아!",
       "version": "1.1",
       "speaker": "Changchang"
      },
-     "t": "도시 문 앞에 가서 내 강아지에게 먹이를 주도록 도와줄 수 있나요?",
+     "t": "아빠는 언제 돌아오시려나... 아, 안녕하세요, 만나서 반가워요!",
      "speaker_ko": "창아"
     },
     {
-     "section": "작중 행적 — Lantern Rite",
+     "section": "작중 행적 — Lantern Rite와 Dolly",
      "status": "accepted",
-     "note": "Fair rendering of both clauses, including the tag questions and “supposed to.”",
-     "t_raw": "제가 잘한 거 맞죠? 소원은 Lantern Rite에 이루어지는 거잖아요, 그렇죠?",
+     "note": "Mistranslation: the English is 'I did the right thing, didn't I?' (first person, past action) and the Korean is 제가 잘한 거지?, which is acceptable in meaning, but it is stiffly formal ('제가') mixed with casual speech. Still, content matches. The second sentence matches too. No real failure, so it passes.",
+     "t_raw": "제가 잘한 거지? Lantern Rite에는 소원이 이루어져야 하는 거 아니야?",
      "en": "I did the right thing, didn't I? Wishes are supposed to come true at the Lantern Rite, aren't they?",
      "speaker": "Changchang",
      "source": {
@@ -1930,32 +1496,15 @@
       "version": "1.3",
       "speaker": "Changchang"
      },
-     "t": "제가 잘한 거 맞죠? 소원은 해등절에 이루어지는 거잖아요, 그렇죠?",
+     "t": "제가 잘한 거지? 해등절에는 소원이 이루어져야 하는 거 아니야?",
      "speaker_ko": "창아"
     },
     {
      "section": "인간관계",
      "status": "accepted",
-     "note": "Matches Little Yue’s hope that Changchang enjoys the toy.",
-     "t_raw": "Changchang이 그 장난감을 좋아하면 좋겠어...",
-     "en": "I hope Changchang enjoys that toy...",
-     "speaker": "Little Yue",
-     "source": {
-      "kind": "quest",
-      "quest": "A Lone Ship In Guyun",
-      "quest_ko": "고운각에 들어선 선박",
-      "version": "1.0",
-      "speaker": "Little Yue"
-     },
-     "t": "창아가 그 장난감을 좋아하면 좋겠어...",
-     "speaker_ko": "소월"
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "accepted",
-     "note": "Both sentences match: he can’t help it, and she is sure Beidou is the cause again.",
-     "t_raw": "그도 어쩔 수 없는 거겠죠. 분명 또 Beidou 때문인 거예요.",
-     "en": "Nothing he can do about it, I guess. I'm sure it's all because of Beidou again.",
+     "note": "Faithful translation of the line.",
+     "t_raw": "그래도 선물은 고마워. Little Yue에게도 고맙다고 전해 줘.",
+     "en": "But thank you anyway for the gift. Please thank Little Yue for me as well.",
      "speaker": "Changchang",
      "source": {
       "kind": "quest",
@@ -1964,25 +1513,25 @@
       "version": "1.0",
       "speaker": "Changchang"
      },
-     "t": "그도 어쩔 수 없는 거겠죠. 분명 또 북두 때문인 거예요.",
+     "t": "그래도 선물은 고마워. 소월에게도 고맙다고 전해 줘.",
      "speaker_ko": "창아"
     },
     {
      "section": "여담",
      "status": "accepted",
-     "note": "Hehe, thanks to Ms. Wang'ya, and the promise to be a good girl are all present.",
-     "t_raw": "헤헤. 고마워요 Ms. Wang'ya! 착한 아이가 될게요, 약속해요!",
-     "en": "Hehe. Thank you Ms. Wang'ya! I'll be a good girl, I promise!",
-     "speaker": "Changchang",
+     "note": "Faithful translation of the line.",
+     "t_raw": "맞아! Dusky Ming과 Changchang처럼...",
+     "en": "Exactly! Like Dusky Ming and Changchang...",
+     "speaker": "Paimon",
      "source": {
       "kind": "quest",
-      "quest": "Currents Deep Beneath the Lanterns",
-      "quest_ko": "등잔 밑이 어둡다",
-      "version": "1.3",
-      "speaker": "Changchang"
+      "quest": "Eight Locales Over Mountains and Seas: The Wonders of Adeptal Amber",
+      "quest_ko": "산해 여덟 곳의 순례・호박 산악 이야기",
+      "version": "2.4",
+      "speaker": "Paimon"
      },
-     "t": "헤헤. 고마워요 Ms. 망아! 착한 아이가 될게요, 약속해요!",
-     "speaker_ko": "창아"
+     "t": "맞아! 명이와 창아처럼...",
+     "speaker_ko": "페이몬"
     }
    ]
   }

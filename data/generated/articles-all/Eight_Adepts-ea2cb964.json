@@ -20,41 +20,46 @@
    "input_chars": 6422,
    "input_cut": false,
    "input_hash": "b5c5410b22c7",
-   "writer": "or-ds,glm",
-   "verifier": "codex-medium",
-   "status": "needs_verify",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Today, the Eight Adepts' feat is recounted by storytellers as the \"Sanctification of Tao Dou.\"",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2 and M1. The interpretation is reasonable and hedged.",
+     "quote": "The Eight Adepts lived in Liyue around the time of the Archon War.",
      "sentences": [
       {
-       "t_raw": "**Eight Adepts**는 Liyue에서 마신 전쟁 무렵 활동한 집단으로, 실제 adepti는 아니었지만 adeptus에 가까운 능력을 지녔다고 전해진다.",
+       "t_raw": "Eight Adepts는 Archon War 무렵 Liyue에 있었던 집단으로, 실제 adepti는 아니었지만 adeptus에 가까운 능력을 지녔다고 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "**팔기**는 리월에서 마신 전쟁 무렵 활동한 집단으로, 실제 adepti는 아니었지만 adeptus에 가까운 능력을 지녔다고 전해진다."
+       "t": "팔기는 마신 전쟁 무렵 리월에 있었던 집단으로, 실제 선인은 아니었지만 선인에 가까운 능력을 지녔다고 전해진다.",
+       "polish": {
+        "from": "팔기는 마신 전쟁 무렵 리월에 있었던 집단으로, 실제 adepti는 아니었지만 adeptus에 가까운 능력을 지녔다고 전해진다.",
+        "text": "팔기는 마신 전쟁 무렵 리월에 있었던 집단으로, 실제 선인은 아니었지만 선인에 가까운 능력을 지녔다고 전해진다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "이들은 생과 사의 경계가 흐려지는 사태 속에서 Tao Dou를 제압했고, 그 공적은 이야기꾼들에게 **Sanctification of Tao Dou**로 회자된다.",
+       "t_raw": "이들은 Archon War 중 생사 경계를 흐트러뜨린 신 Tao Dou를 함께 제압했고, 그 과정에서 Seven-and-Eight-Gates Method를 사용해 Lone Butterfly of the Crimson Flame을 잃었다.",
        "interp": false,
        "dropped": false,
-       "t": "이들은 생과 사의 경계가 흐려지는 사태 속에서 도도를 제압했고, 그 공적은 이야기꾼들에게 **Sanctification of Tao Dou**로 회자된다."
+       "t": "이들은 마신 전쟁 중 생사 경계를 흐트러뜨린 신 도도를 함께 제압했고, 그 과정에서 팔문 칠문 진을 사용해 붉은 불꽃의 외로운 나비를 잃었다."
       },
       {
-       "t_raw": "그 과정에서 **Seven-and-Eight-Gates Method**가 쓰였고 Lone Butterfly of the Crimson Flame이 목숨을 잃었다.",
+       "t_raw": "그 공적은 오늘날 이야기꾼들에 의해 “Sanctification of Tao Dou”로 회자된다.",
        "interp": false,
        "dropped": false,
-       "t": "그 과정에서 **팔문 칠문 진**이 쓰였고 붉은 불꽃의 외로운 나비가 목숨을 잃었다."
+       "t": "그 공적은 오늘날 이야기꾼들에 의해 “팔기연도도”로 회자된다."
       },
       {
-       "t_raw": "이는 신으로 불린 Tao Dou를 제압하는 일의 대가가 작지 않았음을 보여 주는 대목으로 보인다.",
+       "t_raw": "이처럼 구체적인 사건명과 희생이 함께 전해진다는 점에서, Eight Adepts는 Liyue의 이야기 속 집단을 넘어 신을 상대한 사건의 주역으로 기억된다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "이는 신으로 불린 도도를 제압하는 일의 대가가 작지 않았음을 보여 주는 대목으로 보인다."
+       "t": "이처럼 구체적인 사건명과 희생이 함께 전해진다는 점에서, 팔기는 리월의 이야기 속 집단을 넘어 신을 상대한 사건의 주역으로 기억된다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -91,23 +96,6 @@
        "section": "Profile",
        "paragraph": "M1",
        "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Tao Dou",
-       "revision": 1714009,
-       "section": null,
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "furnishing",
-         "name": "Divine Remains, Left to Pacify the Nether"
-        },
         {
          "type": "quest",
          "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
@@ -116,27 +104,46 @@
       }
      ],
      "heading": null,
-     "latin_left": [
-      "Sanctification of Tao Dou"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Those Eight Adepts must be super powerful if they could purify a god... Are we sure they weren't just adepti?",
+     "status": "accepted",
+     "note": "Supported by A1. The interpretation only restates the contrast.",
+     "quote": "They were said to have had adeptus-like abilities, despite not being actual adepti.",
      "sentences": [
       {
-       "t_raw": "**Eight Adepts**는 마신 전쟁 무렵 Liyue에 있었던 존재들이며, 실제 선인은 아니었지만 선인에 가까운 능력을 지녔다고 전해진다.",
+       "t_raw": "Eight Adepts는 마신 전쟁 무렵 Liyue에 있던 이들로, adepti와 비슷한 능력을 지녔다고 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "**팔기**는 마신 전쟁 무렵 리월에 있었던 존재들이며, 실제 선인은 아니었지만 선인에 가까운 능력을 지녔다고 전해진다."
+       "t": "팔기는 마신 전쟁 무렵 리월에 있던 이들로, 선인과 비슷한 능력을 지녔다고 전해진다.",
+       "polish": {
+        "from": "팔기는 마신 전쟁 무렵 리월에 있던 이들로, adepti와 비슷한 능력을 지녔다고 전해진다.",
+        "text": "팔기는 마신 전쟁 무렵 리월에 있던 이들로, 선인과 비슷한 능력을 지녔다고 전해진다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Paimon은 그들이 마신을 정화할 만큼 강력하다면 정말 선인이 아니었는지 의문을 제기했고, 이들이 선인 같은 존재인지 묻기도 했다.",
+       "t_raw": "다만 그들은 실제 adepti는 아니었다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 그들이 마신을 정화할 만큼 강력하다면 정말 선인이 아니었는지 의문을 제기했고, 이들이 선인 같은 존재인지 묻기도 했다."
+       "t": "다만 그들은 실제 선인은 아니었다고 한다.",
+       "polish": {
+        "from": "다만 그들은 실제 adepti는 아니었다고 한다.",
+        "text": "다만 그들은 실제 선인은 아니었다고 한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "비슷한 능력을 지녔다는 전승과 실제 adepti는 아니었다는 구분이 함께 전해지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "비슷한 능력을 지녔다는 전승과 실제 선인은 아니었다는 구분이 함께 전해지는 셈이다.",
+       "polish": {
+        "from": "비슷한 능력을 지녔다는 전승과 실제 adepti는 아니었다는 구분이 함께 전해지는 셈이다.",
+        "text": "비슷한 능력을 지녔다는 전승과 실제 선인은 아니었다는 구분이 함께 전해지는 셈이다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -152,20 +159,6 @@
          "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
         }
        ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
-       "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
-       "version": "5.3",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
-       "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
-       "version": "5.3",
-       "speaker": "Paimon"
       }
      ],
      "heading": "개요",
@@ -173,33 +166,33 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Today, the Eight Adepts' feat is recounted by storytellers as the \"Sanctification of Tao Dou.\"",
+     "status": "accepted",
+     "note": "Facts match A2 and M1. The interpretation is hedged with '보인다'.",
+     "quote": "During the Archon War, they worked together to subdue the god Tao Dou when he disrupted the boundary between life and death.",
      "sentences": [
       {
-       "t_raw": "마신 전쟁 중 Eight Adepts는 생사의 경계를 흔든 마신 Tao Dou를 함께 제압하고 정화했다.",
+       "t_raw": "마신 전쟁 중에 Eight Adepts는 생사 경계를 흐트러뜨린 신 Tao Dou를 함께 제압했다.",
        "interp": false,
        "dropped": false,
-       "t": "마신 전쟁 중 팔기는 생사의 경계를 흔든 마신 도도를 함께 제압하고 정화했다."
+       "t": "마신 전쟁 중에 팔기는 생사 경계를 흐트러뜨린 신 도도를 함께 제압했다."
       },
       {
-       "t_raw": "Tao Dou는 나무의 모습을 한 마신으로, 싸움에 휘말려 죽음이 산 자의 영역으로 번지자 제압되었다.",
+       "t_raw": "그 과정에는 Seven-and-Eight-Gates Method가 쓰였고, 그로 인해 일원인 Lone Butterfly of the Crimson Flame이 목숨을 잃었다.",
        "interp": false,
        "dropped": false,
-       "t": "도도는 나무의 모습을 한 마신으로, 싸움에 휘말려 죽음이 산 자의 영역으로 번지자 제압되었다."
+       "t": "그 과정에는 팔문 칠문 진이 쓰였고, 그로 인해 일원인 붉은 불꽃의 외로운 나비가 목숨을 잃었다."
       },
       {
-       "t_raw": "그 공적은 오늘날 이야기꾼들 사이에서 **Sanctification of Tao Dou**로 전해지며, Seven-and-Eight-Gates Method를 쓰는 과정에서 Lone Butterfly of the Crimson Flame이 목숨을 잃었다.",
+       "t_raw": "오늘날 이들의 업적은 이야기꾼들에 의해 Sanctification of Tao Dou라는 이름으로 회자된다.",
        "interp": false,
        "dropped": false,
-       "t": "그 공적은 오늘날 이야기꾼들 사이에서 **Sanctification of Tao Dou**로 전해지며, 팔문 칠문 진을 쓰는 과정에서 붉은 불꽃의 외로운 나비가 목숨을 잃었다."
+       "t": "오늘날 이들의 업적은 이야기꾼들에 의해 팔기연도도라는 이름으로 회자된다."
       },
       {
-       "t_raw": "이 전승은 마신을 정화한 공적과 그 대가를 함께 담고 있는 셈이다.",
+       "t_raw": "신을 제압한 사건과 그에 따른 희생이 함께 전해지기에, Eight Adepts의 업적은 Sanctification of Tao Dou라는 이름으로 회자되는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이 전승은 마신을 정화한 공적과 그 대가를 함께 담고 있는 셈이다."
+       "t": "신을 제압한 사건과 그에 따른 희생이 함께 전해지기에, 팔기의 업적은 팔기연도도라는 이름으로 회자되는 것으로 보인다."
       }
      ],
      "sources": [
@@ -210,23 +203,6 @@
        "section": null,
        "paragraph": "A2",
        "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Tao Dou",
-       "revision": 1714009,
-       "section": null,
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "furnishing",
-         "name": "Divine Remains, Left to Pacify the Nether"
-        },
         {
          "type": "quest",
          "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
@@ -248,33 +224,46 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Sanctification of Tao Dou"
-     ]
+     "latin_left": []
     },
     {
-     "section": "정체와 명단",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "It is said that Wind Reader and the Silverwing went traveling together following the defeat of Tao Dou.",
+     "section": "정체",
+     "status": "accepted",
+     "note": "Supported by A1. The interpretation is a reasonable reading.",
+     "quote": "They were said to have had adeptus-like abilities, despite not being actual adepti.",
      "sentences": [
       {
-       "t_raw": "Eight Adepts의 알려진 구성원에는 Three Hermits of Guizang, Wind Reader, Yunlai Angler, Wuwang Kid 등이 있다.",
+       "t_raw": "Eight Adepts는 Archon War 무렵 Liyue에 살았던 이들로, **adeptus와 유사한 능력**을 지녔다고 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "팔기의 알려진 구성원에는 Three Hermits of Guizang, Wind Reader, Yunlai Angler, 무망동자 등이 있다."
+       "t": "팔기는 마신 전쟁 무렵 리월에 살았던 이들로, **선인과 유사한 능력**을 지녔다고 전해진다.",
+       "polish": {
+        "from": "팔기는 마신 전쟁 무렵 리월에 살았던 이들로, **adeptus와 유사한 능력**을 지녔다고 전해진다.",
+        "text": "팔기는 마신 전쟁 무렵 리월에 살았던 이들로, **선인과 유사한 능력**을 지녔다고 전해진다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "**Wind Reader**는 Qimen arts를 특기로 한 Lan clan의 창시자이며 사망한 것으로 추정되고, Lan Yan은 그 clan에서 태어났다.",
+       "t_raw": "그러나 그들은 **실제 adepti가 아니었다**고 기록된다.",
        "interp": false,
        "dropped": false,
-       "t": "**Wind Reader**는 기문 arts를 특기로 한 란 누님 clan의 창시자이며 사망한 것으로 추정되고, 남연은 그 clan에서 태어났다."
+       "t": "그러나 그들은 **실제 선인이 아니었다**고 기록된다.",
+       "polish": {
+        "from": "그러나 그들은 **실제 adepti가 아니었다**고 기록된다.",
+        "text": "그러나 그들은 **실제 선인이 아니었다**고 기록된다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Tao Dou가 패배한 뒤 Wind Reader는 Silverwing과 함께 여행했다고 전해지고, 계보에 따르면 그의 후손은 Chenyu Vale의 Lan Clan이 되어 오늘날까지 Qimen Arts를 이어가며 Silverwing을 소중한 상징 중 하나로 여긴다고 전한다.",
-       "interp": false,
+       "t_raw": "능력만 보면 adepti를 떠올리게 하지만, 정체 면에서는 두 범주가 갈린다고 볼 수 있다.",
+       "interp": true,
        "dropped": false,
-       "t": "도도가 패배한 뒤 Wind Reader는 현조 선인과 함께 여행했다고 전해지고, 계보에 따르면 그의 후손은 침옥 협곡의 Lan Clan이 되어 오늘날까지 Qimen Arts를 이어가며 현조 선인을 소중한 상징 중 하나로 여긴다고 전한다."
+       "t": "능력만 보면 선인을 떠올리게 하지만, 정체 면에서는 두 범주가 갈린다고 볼 수 있다.",
+       "polish": {
+        "from": "능력만 보면 adepti를 떠올리게 하지만, 정체 면에서는 두 범주가 갈린다고 볼 수 있다.",
+        "text": "능력만 보면 선인을 떠올리게 하지만, 정체 면에서는 두 범주가 갈린다고 볼 수 있다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -282,8 +271,86 @@
        "kind": "wiki",
        "page": "Eight Adepts",
        "revision": 2053416,
-       "section": "Known Members",
-       "paragraph": "A3",
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Paimon's questions come from Q7 and Q5. The Ziqiao aliases come from M4. The interpretation is hedged.",
+     "quote": "Sounds amazing! But what are the Eight Adepts? Are they like, adepti?",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Eight Adepts가 무엇인지, adepti와 같은 존재인지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 팔기가 무엇인지, 선인과 같은 존재인지 묻는다.",
+       "polish": {
+        "from": "페이몬은 팔기가 무엇인지, adepti와 같은 존재인지 묻는다.",
+        "text": "페이몬은 팔기가 무엇인지, 선인과 같은 존재인지 묻는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "신을 정화할 만큼 강력하다는 이야기를 들은 뒤에는 정말 adepti가 아니었는지 의문을 제기하기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "신을 정화할 만큼 강력하다는 이야기를 들은 뒤에는 정말 선인이 아니었는지 의문을 제기하기도 한다.",
+       "polish": {
+        "from": "신을 정화할 만큼 강력하다는 이야기를 들은 뒤에는 정말 adepti가 아니었는지 의문을 제기하기도 한다.",
+        "text": "신을 정화할 만큼 강력하다는 이야기를 들은 뒤에는 정말 선인이 아니었는지 의문을 제기하기도 한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이는 Eight Adepts의 강력함과 adepti를 연상시키는 이름이 정체를 혼동하게 만들기 때문인 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 팔기의 강력함과 선인을 연상시키는 이름이 정체를 혼동하게 만들기 때문인 것으로 보인다.",
+       "polish": {
+        "from": "이는 팔기의 강력함과 adepti를 연상시키는 이름이 정체를 혼동하게 만들기 때문인 것으로 보인다.",
+        "text": "이는 팔기의 강력함과 선인을 연상시키는 이름이 정체를 혼동하게 만들기 때문인 것으로 보인다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Ziqiao는 White Horse Adeptus, Gold-Eyed Celadon Mare라는 별칭으로도 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자교는 백마 선인, 백마 선인라는 별칭으로도 전해진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
+       "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
+       "version": "5.3",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
+       "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
+       "version": "5.3",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "wiki",
+       "page": "Zibai/Storyline",
+       "revision": 2052907,
+       "section": null,
+       "paragraph": "M4",
        "wiki_refs": []
       },
       {
@@ -291,9 +358,591 @@
        "page": "Eight Adepts",
        "revision": 2053416,
        "section": "Known Members",
-       "paragraph": "A4",
+       "paragraph": "A14",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Realm of Clouds"
+        },
+        {
+         "type": "book",
+         "name": "Springs of Hidden Jade"
+        },
+        {
+         "type": "book",
+         "name": "Moonlit Bamboo Forest"
+        }
+       ]
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Tao Dou와 Sanctification",
+     "status": "accepted",
+     "note": "Facts match M6 and M1. The interpretation is hedged and does not add a new fact.",
+     "quote": "When the Archon War began, Tao Dou was dragged into the fighting, causing the boundary between life and death to blur and death to encroach into the realm of the living.",
+     "sentences": [
+      {
+       "t_raw": "마신 전쟁이 시작되자 Tao Dou는 싸움에 휘말렸고, 생과 사의 경계가 흐려져 죽음이 산 자의 영역으로 번졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마신 전쟁이 시작되자 도도는 싸움에 휘말렸고, 생과 사의 경계가 흐려져 죽음이 산 자의 영역으로 번졌다."
+      },
+      {
+       "t_raw": "Eight Adepts는 함께 모여 마법진을 펼쳐 Tao Dou를 정화했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "팔기는 함께 모여 마법진을 펼쳐 도도를 정화했다."
+      },
+      {
+       "t_raw": "이 공적은 이야기꾼들에 의해 **Sanctification of Tao Dou**로 회자된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 공적은 이야기꾼들에 의해 **팔기연도도**로 회자된다."
+      },
+      {
+       "t_raw": "경계가 흐려진 사건과 이를 정화한 행위가 함께 전승되며 이 이름으로 굳어진 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "경계가 흐려진 사건과 이를 정화한 행위가 함께 전승되며 이 이름으로 굳어진 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tao Dou",
+       "revision": 1714009,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        },
+        {
+         "type": "furnishing",
+         "name": "Divine Remains, Left to Pacify the Nether"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Tao Dou",
+       "revision": 1714009,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 도도와 Sanctification",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Tao Dou와 Sanctification",
+     "status": "accepted",
+     "note": "All sentences are supported by A2, M6, M7, A12 and A22. Sentence 4 is a hedged interpretation.",
+     "quote": "To do so, they used the Seven-and-Eight-Gates Method, which cost the life of one of their members, the Lone Butterfly of the Crimson Flame.",
+     "sentences": [
+      {
+       "t_raw": "정화에는 **Seven-and-Eight-Gates Method**가 쓰였고, 그 대가로 Lone Butterfly of the Crimson Flame가 목숨을 잃었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정화에는 **팔문 칠문 진**이 쓰였고, 그 대가로 붉은 불꽃의 외로운 나비가 목숨을 잃었다."
+      },
+      {
+       "t_raw": "Tao Dou의 유해는 Ley Lines로 가라앉아 산 자와 죽은 자를 가르는 경계가 되었고, Mt. Qingce 아래의 유해는 Seven-and-Eight-Gates Method로 봉인된 Hidden Palace of Zhou Formula에 억제되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도도의 유해는 지맥으로 가라앉아 산 자와 죽은 자를 가르는 경계가 되었고, Mt. 경책 아래의 유해는 팔문 칠문 진으로 봉인된 무망 인구 밀궁에 억제되었다."
+      },
+      {
+       "t_raw": "전쟁 뒤 Lone Butterfly of the Crimson Flame가 Tao Dou를 정화하려 Seven-and-Eight-Gates Method를 행하다 희생하자, Wuwang Kid가 그 뒤를 이어받아 Hu Family에 기술을 가르쳤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전쟁 뒤 붉은 불꽃의 외로운 나비가 도도를 정화하려 팔문 칠문 진을 행하다 희생하자, 무망동자가 그 뒤를 이어받아 호 가문에 기술을 가르쳤다."
+      },
+      {
+       "t_raw": "그 전승은 Wangsheng Funeral Parlor의 설립자들에게까지 이어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 전승은 왕생당의 설립자들에게까지 이어졌다."
+      },
+      {
+       "t_raw": "Lone Butterfly of the Crimson Flame의 희생과 Wuwang Kid의 계승이 맞물려, Tao Dou 정화의 방법이 Wangsheng Funeral Parlor의 가르침으로 이어지는 흐름이 만들어진 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "붉은 불꽃의 외로운 나비의 희생과 무망동자의 계승이 맞물려, 도도 정화의 방법이 왕생당의 가르침으로 이어지는 흐름이 만들어진 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Tao Dou",
+       "revision": 1714009,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        },
+        {
+         "type": "furnishing",
+         "name": "Divine Remains, Left to Pacify the Nether"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Hu Tao/Storyline",
+       "revision": 2050152,
+       "section": "History > Past",
+       "paragraph": "M7",
        "wiki_refs": []
       },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A12",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Staff of Homa"
+        },
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 도도와 Sanctification",
+     "latin_left": [
+      "Mt"
+     ]
+    },
+    {
+     "section": "드러난 역사 — Tao Dou와 Sanctification",
+     "status": "accepted",
+     "note": "Sentences 0 and 1 match M7. Sentence 2 is a hedged interpretation.",
+     "quote": "Thus, the parlor was formed and maintained the balance between life and death, though at first, it was more of a doctor's office.",
+     "sentences": [
+      {
+       "t_raw": "Hu Family는 마신 전쟁 무렵이나 그 뒤에 Wangsheng Funeral Parlor를 세웠고, 처음에는 의원에 가까운 곳이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호 가문은 마신 전쟁 무렵이나 그 뒤에 왕생당을 세웠고, 처음에는 의원에 가까운 곳이었다."
+      },
+      {
+       "t_raw": "이들은 산 자와 죽은 자의 균형을 유지하는 역할을 맡았으며, Staff of Homa도 가문에 전해져 현재 Hu Tao가 소유하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 산 자와 죽은 자의 균형을 유지하는 역할을 맡았으며, 호마의 지팡이도 가문에 전해져 현재 호두가 소유하고 있다."
+      },
+      {
+       "t_raw": "Lone Butterfly of the Crimson Flame의 희생과 그 계승이 Wangsheng Funeral Parlor가 생사의 균형을 맡는 정체성과 맞닿아 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "붉은 불꽃의 외로운 나비의 희생과 그 계승이 왕생당이 생사의 균형을 맡는 정체성과 맞닿아 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hu Tao/Storyline",
+       "revision": 2050152,
+       "section": "History > Past",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 도도와 Sanctification",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Zibai와 세 영혼",
+     "status": "accepted",
+     "note": "Sentences 0 to 2 match A16 and M3. Sentence 3 is a hedged interpretation based on Istaroth preserving the soul.",
+     "quote": "In her moments of death, Zibai used her Three Deadly Selves technique to split herself into three shades; Ziju, Zizhi, and Ziqiao.",
+     "sentences": [
+      {
+       "t_raw": "Zibai는 한때 Lang-Gan의 문명을 인도한 Angel이었고, Lang-Gan이 파괴되기 전에는 God of Soil and Grain으로 숭배되었으며 훗날 Eight Adepts의 일원이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자백은 한때 낭간의 문명을 인도한 천사이었고, 낭간이 파괴되기 전에는 사직신으로 숭배되었으며 훗날 팔기의 일원이 되었다."
+      },
+      {
+       "t_raw": "War of Funerary Flame에서 Lang-Gan은 Celestial Nail에 의한 정화를 선고받았고, Zibai는 하늘의 뜻을 거슬러 그들을 보호하려다 대신 파괴되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "불바다 전쟁에서 낭간은 하늘의 못에 의한 정화를 선고받았고, 자백은 하늘의 뜻을 거슬러 그들을 보호하려다 대신 파괴되었다."
+      },
+      {
+       "t_raw": "죽음의 순간 Zibai는 **Three Deadly Selves technique**으로 자신을 Ziju, Zizhi, Ziqiao 세 그림자로 나누었고, Istaroth가 깨진 영혼을 그림자들과 결합시켜 보존했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "죽음의 순간 자백은 **삼시 기법**으로 자신을 자거, 자궐, 자교 세 그림자로 나누었고, 이스타로트가 깨진 영혼을 그림자들과 결합시켜 보존했다.",
+       "polish": {
+        "from": "죽음의 순간 자백은 **삼시 technique**으로 자신을 자거, 자궐, 자교 세 그림자로 나누었고, 이스타로트가 깨진 영혼을 그림자들과 결합시켜 보존했다.",
+        "text": "죽음의 순간 자백은 **삼시 기법**으로 자신을 자거, 자궐, 자교 세 그림자로 나누었고, 이스타로트가 깨진 영혼을 그림자들과 결합시켜 보존했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이 분열은 Istaroth가 영혼을 보존한 점에서 완전한 소멸을 막기 위한 조치로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 분열은 이스타로트가 영혼을 보존한 점에서 완전한 소멸을 막기 위한 조치로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Lore",
+       "paragraph": "A16",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Realm of Clouds"
+        },
+        {
+         "type": "quest",
+         "name": "Welkin Moon's Homecoming"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Zibai",
+       "revision": 2050405,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 자백과 세 영혼",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Zibai와 세 영혼",
+     "status": "accepted",
+     "note": "Both sentences match A16.",
+     "quote": "Ziju, merged with the Heavenly Soul, then later ascended and became one with the Moon's Reflection.",
+     "sentences": [
+      {
+       "t_raw": "Ziju는 Heavenly Soul과 결합해 승천하여 **Moon's Reflection**과 하나가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자거는 천혼과 결합해 승천하여 **달의 반영**과 하나가 되었다."
+      },
+      {
+       "t_raw": "Lantern Rite에서 Traveler의 의식이 Moon's Reflection으로 끌려 들어갔을 때, Columbina가 Traveler에게 남긴 달빛의 인도가 한 유물과 공명하면서 Traveler는 Ziju와 마주했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "해등절에서 여행자의 의식이 달의 반영으로 끌려 들어갔을 때, 콜롬비나가 여행자에게 남긴 달빛의 인도가 한 유물과 공명하면서 여행자는 자거와 마주했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Lore",
+       "paragraph": "A16",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Realm of Clouds"
+        },
+        {
+         "type": "quest",
+         "name": "Welkin Moon's Homecoming"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 자백과 세 영혼",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Zibai와 세 영혼",
+     "status": "accepted",
+     "note": "All sentences match A17.",
+     "quote": "By passing the trial, Zizhi then acknowledged them and told them her tale and later entrusted the Earth Soul within her to the Traveler, dematerializing herself in the process.",
+     "sentences": [
+      {
+       "t_raw": "Zizhi는 Earth Soul과 결합한 채 The Chasm에서 잠들었다가 Frost Moon의 귀환과 함께 옥 마차 유물로 나왔고, 그 유물은 같은 Lantern Rite를 며칠 앞두고 Huishan Hall의 탐사에서 발굴되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자궐은 대지 혼과 결합한 채 층암거연에서 잠들었다가 서리달의 귀환과 함께 옥 마차 유물로 나왔고, 그 유물은 같은 해등절을 며칠 앞두고 휘산청의 탐사에서 발굴되었다."
+      },
+      {
+       "t_raw": "Lu Xiangxiang을 빙의해 Wanmin Restaurant에서 소동을 피운 Zizhi는 Shenhe에게 제압되었다가 Bubu Pharmacy에서 탈출했고, Yelan·Traveler·Gaming과 Moon Carver·Mountain Shaper를 거치며 빙의를 옮겨 다녔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노향향을 빙의해 만민당에서 소동을 피운 자궐은 신학에게 제압되었다가 불복려에서 탈출했고, 야란·여행자·가명과 소월축양진군·리수첩산진군을 거치며 빙의를 옮겨 다녔다."
+      },
+      {
+       "t_raw": "마침내 Traveler 앞에서 모습을 드러낸 Zizhi는 시험을 주고, 통과한 Traveler에게 자신의 이야기를 들려준 뒤 Earth Soul을 맡기고 흩어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마침내 여행자 앞에서 모습을 드러낸 자궐은 시험을 주고, 통과한 여행자에게 자신의 이야기를 들려준 뒤 대지 혼을 맡기고 흩어졌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Lore",
+       "paragraph": "A17",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Realm of Clouds"
+        },
+        {
+         "type": "quest",
+         "name": "The Realm of Rocks"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 자백과 세 영혼",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Zibai와 세 영혼",
+     "status": "accepted",
+     "note": "All sentences are supported by A14, A18, A19, M4 and M5.",
+     "quote": "At the peak of Lantern Rite Festival night, the Traveler and Zhongli released a Xiao Lantern imbued with both the Earth and Human Soul, hoping that Ziju might respond.",
+     "sentences": [
+      {
+       "t_raw": "Human Soul과 결합한 Ziqiao는 Zhanzhu painting에 갇혀 있었으나 Archon War 시기 Morax가 그녀를 풀어 주며 계약을 맺었고, 이후 Morax를 도운 뒤 Eight Adepts의 God Tree Tao Dou 제압에 힘을 보태 **Gold-Eyed Celadon Mare**이자 White Horse Adeptus로 이름을 남겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "인간 혼과 결합한 자교는 Zhanzhu 그림에 갇혀 있었으나 마신 전쟁 시기 모락스가 그녀를 풀어 주며 계약을 맺었고, 이후 모락스를 도운 뒤 팔기의 신목 도도 제압에 힘을 보태 **백마 선인**이자 백마 선인으로 이름을 남겼다.",
+       "polish": {
+        "from": "인간 혼과 결합한 자교는 Zhanzhu painting에 갇혀 있었으나 마신 전쟁 시기 모락스가 그녀를 풀어 주며 계약을 맺었고, 이후 모락스를 도운 뒤 팔기의 신목 도도 제압에 힘을 보태 **백마 선인**이자 백마 선인으로 이름을 남겼다.",
+        "text": "인간 혼과 결합한 자교는 Zhanzhu 그림에 갇혀 있었으나 마신 전쟁 시기 모락스가 그녀를 풀어 주며 계약을 맺었고, 이후 모락스를 도운 뒤 팔기의 신목 도도 제압에 힘을 보태 **백마 선인**이자 백마 선인으로 이름을 남겼다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "힘이 다하자 그녀는 Qingce mountain range로 물러나 백마의 모습으로 떠돌았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "힘이 다하자 그녀는 경책 산맥으로 물러나 백마의 모습으로 떠돌았다.",
+       "polish": {
+        "from": "힘이 다하자 그녀는 경책 mountain range로 물러나 백마의 모습으로 떠돌았다.",
+        "text": "힘이 다하자 그녀는 경책 산맥으로 물러나 백마의 모습으로 떠돌았다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "같은 Lantern Rite에서 Zhongli는 만족하면 Human Soul을 넘기는 조건으로 Traveler와 Paimon을 안내자로 삼아 오늘의 Liyue를 보고 Lantern Rite를 즐기라는 새 계약을 제안했고, Lang-Gan의 유산이 Liyue에 이어짐을 확인한 Ziqiao는 Human Soul을 맡기고 흩어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "같은 해등절에서 종려는 만족하면 인간 혼을 넘기는 조건으로 여행자와 페이몬을 안내자로 삼아 오늘의 리월을 보고 해등절을 즐기라는 새 계약을 제안했고, 낭간의 유산이 리월에 이어짐을 확인한 자교는 인간 혼을 맡기고 흩어졌다."
+      },
+      {
+       "t_raw": "축제 밤의 정점에서 Traveler와 Zhongli가 Earth Soul과 Human Soul을 담은 Xiao Lantern을 띄워 Ziju의 응답을 바랐고, 그 기도에 응답해 Ziju가 두 영혼과 결합해 진정한 Zibai가 되살아났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "축제 밤의 정점에서 여행자와 종려가 대지 혼과 인간 혼을 담은 소등을 띄워 자거의 응답을 바랐고, 그 기도에 응답해 자거가 두 영혼과 결합해 진정한 자백이 되살아났다."
+      },
+      {
+       "t_raw": "Zibai는 현재 Wangsheng Funeral Parlor의 주선으로 Baiju Guesthouse에 머문다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자백은 현재 왕생당의 주선으로 백마 객잔에 머문다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Lore",
+       "paragraph": "A18",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Zibai"
+        },
+        {
+         "type": "quest",
+         "name": "The Realm of Clouds"
+        },
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        },
+        {
+         "type": "book",
+         "name": "Springs of Hidden Jade"
+        },
+        {
+         "type": "book",
+         "name": "Moonlit Bamboo Forest"
+        },
+        {
+         "type": "quest",
+         "name": "The Realm of People"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Lore",
+       "paragraph": "A19",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Realm of People"
+        },
+        {
+         "type": "quest",
+         "name": "White Horse's Leisurely Journey"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A14",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Realm of Clouds"
+        },
+        {
+         "type": "book",
+         "name": "Springs of Hidden Jade"
+        },
+        {
+         "type": "book",
+         "name": "Moonlit Bamboo Forest"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Zibai/Storyline",
+       "revision": 2052907,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Zibai/Storyline",
+       "revision": 2052907,
+       "section": "History > Past",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Realm of People"
+        },
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        },
+        {
+         "type": "cs",
+         "name": "Zibai"
+        },
+        {
+         "type": "quest",
+         "name": "The Realm of Clouds"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 자백과 세 영혼",
+     "latin_left": [
+      "Zhanzhu"
+     ]
+    },
+    {
+     "section": "구성원과 계보",
+     "status": "accepted",
+     "note": "All sentences are supported by A5, A13 and A15.",
+     "quote": "According to clan genealogies, Wind Reader's descendants became the Lan Clan of Chenyu Vale.",
+     "sentences": [
+      {
+       "t_raw": "Wind Reader는 사망한 것으로 추정되며 Qimen arts를 다뤘고, **Lan Clan**의 창시자로 Lan Yan이 그 가문에서 태어났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "만상풍각영관은 사망한 것으로 추정되며 기문 술법을 다뤘고, **Lan Clan**의 창시자로 남연이 그 가문에서 태어났다.",
+       "polish": {
+        "from": "만상풍각영관은 사망한 것으로 추정되며 기문 arts를 다뤘고, **Lan Clan**의 창시자로 남연이 그 가문에서 태어났다.",
+        "text": "만상풍각영관은 사망한 것으로 추정되며 기문 술법을 다뤘고, **Lan Clan**의 창시자로 남연이 그 가문에서 태어났다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Wind Reader와 Jade-Plumed Silverwing은 Tao Dou의 패배 후 함께 여행했다고 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "만상풍각영관과 옥우은익은 도도의 패배 후 함께 여행했다고 전해진다."
+      },
+      {
+       "t_raw": "족보에 따르면 그 후손은 Chenyu Vale의 Lan Clan이 되어 Qimen Arts와 Silverwing—은빛 참새—상징을 오늘날까지 이어 간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "족보에 따르면 그 후손은 침옥 협곡의 Lan Clan이 되어 기문술과 현조 선인—은빛 참새—상징을 오늘날까지 이어 간다."
+      },
+      {
+       "t_raw": "Lan Yan의 은발 머리 장식은 Silverwing을 본뜬 가보로, 가문의 상징이 물질로 남은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "남연의 은발 머리 장식은 현조 선인을 본뜬 가보로, 가문의 상징이 물질로 남은 셈이다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Eight Adepts",
@@ -312,24 +961,15 @@
        "page": "Eight Adepts",
        "revision": 2053416,
        "section": "Known Members",
-       "paragraph": "A6",
+       "paragraph": "A13",
        "wiki_refs": [
         {
          "type": "quest",
          "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Known Members",
-       "paragraph": "A7",
-       "wiki_refs": [
+        },
         {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+         "type": "vo",
+         "name": "Lan Yan"
         }
        ]
       },
@@ -347,34 +987,46 @@
        ]
       }
      ],
-     "heading": "정체와 명단",
+     "heading": "구성원과 계보",
      "latin_left": [
-      "Three Hermits of Guizang",
-      "Wind Reader",
-      "Yunlai Angler",
-      "Wind Reader",
-      "Wind Reader",
       "Lan Clan",
-      "Qimen Arts"
+      "Lan Clan"
      ]
     },
     {
-     "section": "정체와 명단",
-     "status": "needs_verify",
-     "note": null,
+     "section": "구성원과 계보",
+     "status": "accepted",
+     "note": "All sentences are supported by A6, A9, A10, A20 and A21. The interpretation in sentence 3 is reasonable.",
      "quote": "The Yunlai Angler's rod-wielding techniques are believed to have formed the basis of Yunlai Swordsmanship, a sword-fighting style that is still practiced today (e.g., by Keqing).",
      "sentences": [
       {
-       "t_raw": "**Yunlai Angler**는 Yunlai Swordsmanship을 특기로 한 인물로, 사망한 것으로 추정된다.",
+       "t_raw": "Yunlai Angler는 사망한 것으로 추정되며, 낚싯대 기술이 **Yunlai Swordsmanship**의 기초가 되었다고 믿어진다.",
        "interp": false,
        "dropped": false,
-       "t": "**Yunlai Angler**는 운래 검법을 특기로 한 인물로, 사망한 것으로 추정된다."
+       "t": "Yunlai Angler는 사망한 것으로 추정되며, 낚싯대 기술이 **운래 검법**의 기초가 되었다고 믿어진다."
       },
       {
-       "t_raw": "그의 장대를 다루는 기술은 Yunlai Swordsmanship의 기초가 된 것으로 여겨지며, 이 검술은 오늘날 Qiqi와 Keqing 같은 이들이 익히고 있다.",
+       "t_raw": "Qiqi와 Keqing은 그 수행자로 전해지고, Keqing은 오늘날까지 이어지는 예로 언급된다.",
        "interp": false,
        "dropped": false,
-       "t": "그의 장대를 다루는 기술은 운래 검법의 기초가 된 것으로 여겨지며, 이 검술은 오늘날 치치와 각청 같은 이들이 익히고 있다."
+       "t": "치치와 각청은 그 수행자로 전해지고, 각청은 오늘날까지 이어지는 예로 언급된다."
+      },
+      {
+       "t_raw": "Two Sages of Lianshan은 Lianshan의 비전을 익히고 은둔을 선호했으며, Hidden Palace of Lianshan Formula가 한때 그들의 수련 장소였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Two Sages of Lianshan은 Lianshan의 비전을 익히고 은둔을 선호했으며, 천둥 연산 밀궁이 한때 그들의 수련 장소였다.",
+       "polish": {
+        "from": "Two Sages of Lianshan은 Lianshan의 비전을 익히고 은둔을 선호했으며, 천둥 연산 밀궁이 한때 그들의 수련 장소였다.",
+        "text": "Two Sages of Lianshan은 Lianshan의 비전을 익히고 은둔을 선호했으며, 천둥 연산 밀궁이 한때 그들의 수련 장소였다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Sage Hu와 Sage Jian은 각각 조롱박 공예와 청동 거울을 다뤘고 사망한 것으로 추정되며, 같은 Hidden Palace에서 함께 수련해 Lianshan 전승권과의 연결을 시사하는 단서로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Sage Hu와 Sage Jian은 각각 조롱박 공예와 청동 거울을 다뤘고 사망한 것으로 추정되며, 같은 Hidden Palace에서 함께 수련해 Lianshan 전승권과의 연결을 시사하는 단서로 보인다."
       }
      ],
      "sources": [
@@ -395,86 +1047,10 @@
        "kind": "wiki",
        "page": "Eight Adepts",
        "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A21",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      }
-     ],
-     "heading": "정체와 명단",
-     "latin_left": [
-      "Yunlai Angler"
-     ]
-    },
-    {
-     "section": "정체와 명단",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The founders of Wangsheng Funeral Parlor studied under him.",
-     "sentences": [
-      {
-       "t_raw": "**Wuwang Kid**는 Qihuang sigils를 특기로 한 인물이고, Wangsheng Funeral Parlor의 창시자들은 그에게 배웠다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**무망동자**는 Qihuang sigils를 특기로 한 인물이고, 왕생당의 창시자들은 그에게 배웠다."
-      },
-      {
-       "t_raw": "Wuwang Kid는 사망한 것으로 추정된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "무망동자는 사망한 것으로 추정된다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
        "section": "Known Members",
-       "paragraph": "A7",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      }
-     ],
-     "heading": "정체와 명단",
-     "latin_left": [
-      "Qihuang"
-     ]
-    },
-    {
-     "section": "구성원 — Lianshan과 Tao Dou의 세 짐승",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Very little is known of the Two Sages of Lianshan, except that they practiced the secret art of Lianshan and preferred to live in seclusion.",
-     "sentences": [
-      {
-       "t_raw": "**Two Sages of Lianshan**은 Lianshan의 비법을 익혔고 은둔을 선호했으며, Hidden Palace of Lianshan Formula는 이들의 수련 장소였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**Two Sages of Lianshan**은 Lianshan의 비법을 익혔고 은둔을 선호했으며, 천둥 연산 밀궁은 이들의 수련 장소였다."
+       "paragraph": "A8",
+       "wiki_refs": []
       },
-      {
-       "t_raw": "Sage Hu는 조롱박 공예를, Sage Jian은 청동 거울을 다뤘고 두 Sage는 그곳에서 함께 수련한 것으로 기록되며, 둘 다 사망한 것으로 추정된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Sage Hu는 조롱박 공예를, Sage Jian은 청동 거울을 다뤘고 두 세이지는 그곳에서 함께 수련한 것으로 기록되며, 둘 다 사망한 것으로 추정된다."
-      },
-      {
-       "t_raw": "같은 처소에서 서로 다른 기술을 익혔다는 점은 Lianshan의 비법이 공동 전통으로 전해졌음을 보여 주는 대목으로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "같은 처소에서 서로 다른 기술을 익혔다는 점은 Lianshan의 비법이 공동 전통으로 전해졌음을 보여 주는 대목으로 읽힌다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Eight Adepts",
@@ -513,43 +1089,261 @@
          "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Lore",
+       "paragraph": "A21",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
       }
      ],
-     "heading": "구성원 — Lianshan과 도도의 세 짐승",
+     "heading": "구성원과 계보",
      "latin_left": [
+      "Yunlai Angler",
       "Two Sages of Lianshan",
       "Lianshan",
       "Sage Hu",
       "Sage Jian",
+      "Hidden Palace",
       "Lianshan"
      ]
     },
     {
-     "section": "구성원 — Lianshan과 Tao Dou의 세 짐승",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Wuwang Kid took up her mantle and passed her legacy down to the Wangsheng Funeral Parlor founders.",
+     "section": "구성원과 계보",
+     "status": "accepted",
+     "note": "All sentences are supported by A7, A12, A22 and M7. The interpretation in sentence 3 follows from them.",
+     "quote": "Old Man Wuwang, who is said to have looked up to the Lone Butterfly, took up her mantle after she disappeared.",
      "sentences": [
       {
-       "t_raw": "**Three Beasts of Tao Dou**의 구성원으로 Lone Butterfly of the Crimson Flame과 Jade-Plumed Silverwing이 전한다.",
+       "t_raw": "Wuwang Kid는 Old Man Wuwang으로도 전해지며 사망한 것으로 추정된다.",
        "interp": false,
        "dropped": false,
-       "t": "**Three Beasts of Tao Dou**의 구성원으로 붉은 불꽃의 외로운 나비와 Jade-Plumed Silverwing이 전한다."
+       "t": "무망동자는 Old Man Wuwang으로도 전해지며 사망한 것으로 추정된다."
       },
       {
-       "t_raw": "Lone Butterfly of the Crimson Flame은 Art of Homa를 다뤘고, Wuwang Kid는 그 자취를 이어받아 Wangsheng Funeral Parlor의 창립자들에게 전승을 넘겼다.",
+       "t_raw": "그는 Lone Butterfly of the Crimson Flame을 따랐고, 그녀가 사라진 뒤 역할을 이어받아 **Wangsheng Funeral Parlor**의 설립자들에게 그녀의 방식과 생사 경계를 지키는 책임을 전수했으며, 자신의 전공인 Qihuang sigils도 가르쳤다고 여겨진다.",
        "interp": false,
        "dropped": false,
-       "t": "붉은 불꽃의 외로운 나비는 호마의 술을 다뤘고, 무망동자는 그 자취를 이어받아 왕생당의 창립자들에게 전승을 넘겼다."
+       "t": "그는 붉은 불꽃의 외로운 나비를 따랐고, 그녀가 사라진 뒤 역할을 이어받아 **왕생당**의 설립자들에게 그녀의 방식과 생사 경계를 지키는 책임을 전수했으며, 자신의 전공인 Qihuang 인장도 가르쳤다고 여겨진다.",
+       "polish": {
+        "from": "그는 붉은 불꽃의 외로운 나비를 따랐고, 그녀가 사라진 뒤 역할을 이어받아 **왕생당**의 설립자들에게 그녀의 방식과 생사 경계를 지키는 책임을 전수했으며, 자신의 전공인 Qihuang sigils도 가르쳤다고 여겨진다.",
+        "text": "그는 붉은 불꽃의 외로운 나비를 따랐고, 그녀가 사라진 뒤 역할을 이어받아 **왕생당**의 설립자들에게 그녀의 방식과 생사 경계를 지키는 책임을 전수했으며, 자신의 전공인 Qihuang 인장도 가르쳤다고 여겨진다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Lone Butterfly의 Art of Homa가 Wuwang Kid를 거쳐 Wangsheng Funeral Parlor의 창립자들에게 전해졌다는 사실은, 이 기술이 Wangsheng Funeral Parlor의 초기 전통과 맞닿아 있음을 보여 준다.",
+       "t_raw": "Hu Family는 Wangsheng Funeral Parlor를 세워 Wuwang Kid에게서 Lone Butterfly의 기술을 배웠고, Staff of Homa를 전해 Hu Tao가 현재 소유자다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호 가문은 왕생당을 세워 무망동자에게서 불을 인도하는 붉은 저승 나비의 기술을 배웠고, 호마의 지팡이를 전해 호두가 현재 소유자다."
+      },
+      {
+       "t_raw": "Lone Butterfly의 희생 뒤 그 유산이 Hu Family와 Wangsheng Funeral Parlor의 생사 관리로 이어진 점은 Eight Adepts의 기술이 기관 계보로 굳어진 모습으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "Lone Butterfly의 호마의 술이 무망동자를 거쳐 왕생당의 창립자들에게 전해졌다는 사실은, 이 기술이 왕생당의 초기 전통과 맞닿아 있음을 보여 준다."
+       "t": "불을 인도하는 붉은 저승 나비의 희생 뒤 그 유산이 호 가문과 왕생당의 생사 관리로 이어진 점은 팔기의 기술이 기관 계보로 굳어진 모습으로 보인다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A7",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A12",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Staff of Homa"
+        },
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Lore",
+       "paragraph": "A22",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Hu Tao/Storyline",
+       "revision": 2050152,
+       "section": "History > Past",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "구성원과 계보",
+     "latin_left": [
+      "Old Man Wuwang",
+      "Qihuang"
+     ]
+    },
+    {
+     "section": "구성원과 계보",
+     "status": "accepted",
+     "note": "All sentences are supported by A4, A11, A14, Q3 and Q6.",
+     "quote": "We were actually learning about the Eight Adepts earlier, but we never found out who the Three Beasts of Tao Dou were.",
+     "sentences": [
+      {
+       "t_raw": "구성원 목록에는 Three Hermits of Guizang과 Three Beasts of Tao Dou도 묶음으로 올라 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구성원 목록에는 Three Hermits of Guizang과 도도 삼수도 묶음으로 올라 있다.",
+       "polish": {
+        "from": "구성원 목록에는 Three Hermits of Guizang과 도도 삼수도 묶음으로 올라 있다.",
+        "text": "구성원 목록에는 Three Hermits of Guizang과 도도 삼수도 묶음으로 올라 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Paimon은 Three Beasts of Tao Dou가 누구인지 끝내 알지 못했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 도도 삼수가 누구인지 끝내 알지 못했다고 말한다."
+      },
+      {
+       "t_raw": "Gold-Eyed Celadon Mare는 Three Deadly Selves technique을 쓰는 구성원으로 생존 상태에 기록되며, Lang-Gan의 문명을 인도하도록 보내진 천사였다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백마 선인은 삼시 기법을 쓰는 구성원으로 생존 상태에 기록되며, 낭간의 문명을 인도하도록 보내진 천사였다고 전한다.",
+       "polish": {
+        "from": "백마 선인은 삼시 technique을 쓰는 구성원으로 생존 상태에 기록되며, 낭간의 문명을 인도하도록 보내진 천사였다고 전한다.",
+        "text": "백마 선인은 삼시 기법을 쓰는 구성원으로 생존 상태에 기록되며, 낭간의 문명을 인도하도록 보내진 천사였다고 전한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Lan Yan은 Eight Adepts 중 누가 최고인지 토론하고 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "남연은 팔기 중 누가 최고인지 토론하고 있다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A14",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Realm of Clouds"
+        },
+        {
+         "type": "book",
+         "name": "Springs of Hidden Jade"
+        },
+        {
+         "type": "book",
+         "name": "Moonlit Bamboo Forest"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
+       "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
+       "version": "5.3",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Final Stanza: The Sanctification of Tao Dou",
+       "quest_ko": "종막·팔기연도도",
+       "version": "5.3",
+       "speaker": "Lan Yan"
+      }
+     ],
+     "heading": "구성원과 계보",
+     "latin_left": [
+      "Three Hermits of Guizang"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Sentence 0 is supported by Q3 and A11. Sentence 1 is a reasonable interpretation of A12.",
+     "quote": "We were actually learning about the Eight Adepts earlier, but we never found out who the Three Beasts of Tao Dou were.",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Eight Adepts를 배우던 중 **Three Beasts of Tao Dou**가 누구인지 알아내지 못했다고 말하며, 알려진 구성원 항목에는 이 이름이 올라 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 팔기를 배우던 중 **도도 삼수**가 누구인지 알아내지 못했다고 말하며, 알려진 구성원 항목에는 이 이름이 올라 있다."
+      },
+      {
+       "t_raw": "Lone Butterfly of the Crimson Flame는 불분명한 상태로 남았고, Wuwang Kid가 그 역할을 이어받아 Wangsheng Funeral Parlor 창립자들에게 유산을 전했으니, 정체의 물음표와 전승의 실체가 함께 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "붉은 불꽃의 외로운 나비는 불분명한 상태로 남았고, 무망동자가 그 역할을 이어받아 왕생당 창립자들에게 유산을 전했으니, 정체의 물음표와 전승의 실체가 함께 놓인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
+       "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
+       "version": "5.3",
+       "speaker": "Paimon"
+      },
       {
        "kind": "wiki",
        "page": "Eight Adepts",
@@ -574,7 +1368,31 @@
          "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
         }
        ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Sentence 0 is supported by A13. Sentence 1 is a reasonable interpretation of A13 and A15.",
+     "quote": "Lan Yan's silver hairpiece is a family heirloom modeled after them.",
+     "sentences": [
+      {
+       "t_raw": "**Jade-Plumed Silverwing**의 상태는 미상이고, Lan Yan의 은색 머리 장식은 이들을 본뜬 가보이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**옥우은익**의 상태는 미상이고, 남연의 은색 머리 장식은 이들을 본뜬 가보이다."
       },
+      {
+       "t_raw": "Tao Dou 격파 뒤 Silverwing은 Wind Reader와 함께 여행했다고 전하며, 가문 족보에 따르면 Wind Reader의 후손인 Lan Clan은 Silverwing을 은빛 참새이자 소중한 상징으로 삼지만, 그 상태는 미상인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도도 격파 뒤 현조 선인은 만상풍각영관과 함께 여행했다고 전하며, 가문 족보에 따르면 만상풍각영관의 후손인 Lan Clan은 현조 선인을 은빛 참새이자 소중한 상징으로 삼지만, 그 상태는 미상인 셈이다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Eight Adepts",
@@ -591,38 +1409,128 @@
          "name": "Lan Yan"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Lore",
+       "paragraph": "A15",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
       }
      ],
-     "heading": "구성원 — Lianshan과 도도의 세 짐승",
+     "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Three Beasts of Tao Dou",
-      "Jade-Plumed Silverwing",
-      "Lone Butterfly"
+      "Lan Clan"
      ]
     },
     {
-     "section": "구성원 — Lianshan과 Tao Dou의 세 짐승",
-     "status": "needs_verify",
-     "note": null,
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All supported. The interpretation follows from the two sages cultivating together and very little being known about them.",
+     "quote": "Very little is known of the Two Sages of Lianshan, except that they practiced the secret art of Lianshan and preferred to live in seclusion.",
+     "sentences": [
+      {
+       "t_raw": "**Two Sages of Lianshan**은 Lianshan의 비술을 익히고 은둔을 선호했다는 정도만 알려졌으며, Hidden Palace of Lianshan Formula는 한때 그들의 수련 장소였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**Two Sages of Lianshan**은 Lianshan의 비술을 익히고 은둔을 선호했다는 정도만 알려졌으며, 천둥 연산 밀궁은 한때 그들의 수련 장소였다.",
+       "polish": {
+        "from": "**Two Sages of Lianshan**은 Lianshan의 비술을 익히고 은둔을 선호했다는 정도만 알려졌으며, 천둥 연산 밀궁은 한때 그들의 수련 장소였다.",
+        "text": "**Two Sages of Lianshan**은 Lianshan의 비술을 익히고 은둔을 선호했다는 정도만 알려졌으며, 천둥 연산 밀궁은 한때 그들의 수련 장소였다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Sage Hu와 Sage Jian이 그곳에서 함께 수련했다는 기록이 있지만, 그 이상의 행적은 드러나지 않아 은둔의 수수께끼로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Sage Hu와 Sage Jian이 그곳에서 함께 수련했다는 기록이 있지만, 그 이상의 행적은 드러나지 않아 은둔의 수수께끼로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Lore",
+       "paragraph": "A20",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A10",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Two Sages of Lianshan",
+      "Lianshan",
+      "Sage Hu",
+      "Sage Jian"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are stated in A5, A15 and A13.",
      "quote": "Lan Yan's silver hairpiece is a family heirloom modeled after them.",
      "sentences": [
       {
-       "t_raw": "Jade-Plumed Silverwing의 전공은 알려지지 않았지만, Lan Yan의 은 장신구는 이들을 본뜬 가문의 가보다.",
+       "t_raw": "Wind Reader는 Lan Clan의 창시자이며, Lan Yan은 그 Lan Clan에서 태어났다.",
        "interp": false,
        "dropped": false,
-       "t": "Jade-Plumed Silverwing의 전공은 알려지지 않았지만, 남연의 은 장신구는 이들을 본뜬 가문의 가보다."
+       "t": "만상풍각영관은 Lan Clan의 창시자이며, 남연은 그 Lan Clan에서 태어났다."
       },
       {
-       "t_raw": "Tao Dou가 제압된 뒤 Wind Reader와 은빛 참새인 **Silverwing**은 함께 여행했다고 전해지고, Wind Reader의 후손은 Chenyu Vale의 Lan Clan이 되어 Qimen Arts를 이어 오며 Silverwing을 소중한 상징으로 여긴다.",
+       "t_raw": "Tao Dou가 패배한 뒤 Wind Reader와 Silverwing은 함께 여행했다고 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "도도가 제압된 뒤 Wind Reader와 은빛 참새인 **현조 선인**은 함께 여행했다고 전해지고, Wind Reader의 후손은 침옥 협곡의 Lan Clan이 되어 Qimen Arts를 이어 오며 현조 선인을 소중한 상징으로 여긴다."
+       "t": "도도가 패배한 뒤 만상풍각영관과 현조 선인은 함께 여행했다고 전해진다."
       },
       {
-       "t_raw": "Lan Yan이 Lan Clan 출신이고 그 가보가 Silverwing을 본뜬 점, Lan Clan이 Silverwing을 소중한 상징으로 여긴 점은, 이 장신구가 가문의 Silverwing 전승을 잇는 표식으로 읽히게 한다.",
-       "interp": true,
+       "t_raw": "Lan Clan의 계보에 따르면 Wind Reader의 후손이 Chenyu Vale의 Lan Clan이 되었고, 그들은 지금도 Qimen Arts를 익히며 Silverwing, 즉 은빛 참새를 소중한 상징 가운데 하나로 여긴다.",
+       "interp": false,
        "dropped": false,
-       "t": "남연이 Lan Clan 출신이고 그 가보가 현조 선인을 본뜬 점, Lan Clan이 현조 선인을 소중한 상징으로 여긴 점은, 이 장신구가 가문의 현조 선인 전승을 잇는 표식으로 읽히게 한다."
+       "t": "Lan Clan의 계보에 따르면 만상풍각영관의 후손이 침옥 협곡의 Lan Clan이 되었고, 그들은 지금도 기문술을 익히며 현조 선인, 즉 은빛 참새를 소중한 상징 가운데 하나로 여긴다."
+      },
+      {
+       "t_raw": "Lan Yan의 은발 머리 장식은 Jade-Plumed Silverwing을 본뜬 가보이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "남연의 은발 머리 장식은 옥우은익을 본뜬 가보이다."
       }
      ],
      "sources": [
@@ -643,6 +1551,19 @@
        "kind": "wiki",
        "page": "Eight Adepts",
        "revision": 2053416,
+       "section": "Lore",
+       "paragraph": "A15",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
        "section": "Known Members",
        "paragraph": "A13",
        "wiki_refs": [
@@ -655,694 +1576,45 @@
          "name": "Lan Yan"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A15",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
       }
      ],
-     "heading": "구성원 — Lianshan과 도도의 세 짐승",
+     "heading": "여담",
      "latin_left": [
-      "Jade-Plumed Silverwing",
-      "Wind Reader",
-      "Wind Reader",
       "Lan Clan",
-      "Qimen Arts",
+      "Lan Clan",
       "Lan Clan",
       "Lan Clan"
      ]
     },
     {
-     "section": "구성원 — Zibai와 세 영혼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "In her moments of death, Zibai used her Three Deadly Selves technique to split herself into three shades; Ziju, Zizhi, and Ziqiao.",
+     "section": "여담",
+     "status": "accepted",
+     "note": "A21 and A6 support the facts. The interpretation is a reasonable synthesis of them.",
+     "quote": "The Yunlai Angler's rod-wielding techniques are believed to have formed the basis of Yunlai Swordsmanship, a sword-fighting style that is still practiced today (e.g., by Keqing).",
      "sentences": [
       {
-       "t_raw": "Gold-Eyed Celadon Mare Ziqiao는 Eight Adepts의 구성원으로 전해지며, Lang-Gan의 문명을 인도하도록 보내진 천사였다고 기록된다.",
+       "t_raw": "Yunlai Angler의 장대를 다루는 기술은 Yunlai Swordsmanship의 바탕이 된 것으로 여겨진다.",
        "interp": false,
        "dropped": false,
-       "t": "Gold-Eyed Celadon Mare Ziqiao는 팔기의 구성원으로 전해지며, 낭간의 문명을 인도하도록 보내진 천사였다고 기록된다."
+       "t": "Yunlai Angler의 장대를 다루는 기술은 운래 검법의 바탕이 된 것으로 여겨진다."
       },
       {
-       "t_raw": "Zibai는 War of Funerary Flame 때 Lang-Gan이 Celestial Nail에 의한 정화를 선고받자 하늘의 뜻을 거슬러 사람들을 지키다 파괴되었고, 죽음의 순간 **Three Deadly Selves technique**으로 Ziju, Zizhi, Ziqiao 세 그림자로 갈라졌다.",
+       "t_raw": "이 검술은 오늘날에도 이어지며 Keqing이 그 수행자로 언급된다.",
        "interp": false,
        "dropped": false,
-       "t": "자백은 불바다 전쟁 때 낭간이 하늘의 못에 의한 정화를 선고받자 하늘의 뜻을 거슬러 사람들을 지키다 파괴되었고, 죽음의 순간 **삼시 technique**으로 자거, 자궐, 자교 세 그림자로 갈라졌다."
+       "t": "이 검술은 오늘날에도 이어지며 각청이 그 수행자로 언급된다."
       },
       {
-       "t_raw": "Istaroth는 부서진 영혼을 세 그림자와 결합해 보존했고, Heavenly Soul과 결합한 Ziju는 뒤에 Moon's Reflection과 하나가 되었다.",
+       "t_raw": "Qiqi도 Yunlai Swordsmanship 수행자로 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "이스타로트는 부서진 영혼을 세 그림자와 결합해 보존했고, 천혼과 결합한 자거는 뒤에 달의 반영과 하나가 되었다."
+       "t": "치치도 운래 검법 수행자로 전해진다."
       },
       {
-       "t_raw": "Zibai는 Lang-Gan 멸망 전 토지와 곡식의 신으로 숭배받았고, 이후 Eight Adepts의 일원이 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자백은 낭간 멸망 전 토지와 곡식의 신으로 숭배받았고, 이후 팔기의 일원이 되었다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Known Members",
-       "paragraph": "A14",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Realm of Clouds"
-        },
-        {
-         "type": "book",
-         "name": "Springs of Hidden Jade"
-        },
-        {
-         "type": "book",
-         "name": "Moonlit Bamboo Forest"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A16",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Realm of Clouds"
-        },
-        {
-         "type": "quest",
-         "name": "Welkin Moon's Homecoming"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Zibai",
-       "revision": 2050405,
-       "section": null,
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "구성원 — 자백과 세 영혼",
-     "latin_left": [
-      "Gold-Eyed Celadon Mare Ziqiao"
-     ]
-    },
-    {
-     "section": "구성원 — Zibai와 세 영혼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "By passing the trial, Zizhi then acknowledged them and told them her tale and later entrusted the Earth Soul within her to the Traveler, dematerializing herself in the process.",
-     "sentences": [
-      {
-       "t_raw": "**Earth Soul**과 결합한 Zizhi는 The Chasm에서 잠들어 있었고, Frost Moon이 창공으로 돌아오자 옥 수레 유물로 깨어나 Huishan Hall의 탐사에서 발굴되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**Earth Soul**과 결합한 자궐은 층암거연에서 잠들어 있었고, 서리달이 창공으로 돌아오자 옥 수레 유물로 깨어나 휘산청의 탐사에서 발굴되었다."
-      },
-      {
-       "t_raw": "Zizhi는 고고학자 Lu Xiangxiang을 빙의해 Wanmin Restaurant에서 소란을 피웠고, Shenhe에게 제압된 뒤 Bubu Pharmacy에서 탈출해 Yelan, Traveler, Gaming과 마주쳤다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자궐은 고고학자 노향향을 빙의해 만민당에서 소란을 피웠고, 신학에게 제압된 뒤 불복려에서 탈출해 야란, 여행자, 가명과 마주쳤다."
-      },
-      {
-       "t_raw": "이어 Gaming과 Mountain Shaper를 차례로 빙의해 도망쳤으나, Traveler가 빙의된 Mountain Shaper와 마주쳐 Zizhi를 드러내게 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어 가명과 리수첩산진군을 차례로 빙의해 도망쳤으나, 여행자가 빙의된 리수첩산진군과 마주쳐 자궐을 드러내게 했다."
-      },
-      {
-       "t_raw": "Zizhi는 Traveler에게 시련을 주고 통과하자 자신의 이야기를 들려준 뒤 Earth Soul을 맡기고 흩어졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자궐은 여행자에게 시련을 주고 통과하자 자신의 이야기를 들려준 뒤 Earth Soul을 맡기고 흩어졌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A17",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Realm of Clouds"
-        },
-        {
-         "type": "quest",
-         "name": "The Realm of Rocks"
-        }
-       ]
-      }
-     ],
-     "heading": "구성원 — 자백과 세 영혼",
-     "latin_left": [
-      "Earth Soul",
-      "Earth Soul"
-     ]
-    },
-    {
-     "section": "구성원 — Zibai와 세 영혼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ziqiao, merged with the Human Soul, severed from the other two and was imprisoned within the Zhanzhu painting.",
-     "sentences": [
-      {
-       "t_raw": "**Human Soul**과 결합한 Ziqiao는 다른 두 영혼과 갈라져 Zhanzhu painting에 봉인되었고, Archon War 시기 Morax가 풀어 주며 계약을 맺었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**Human Soul**과 결합한 자교는 다른 두 영혼과 갈라져 Zhanzhu painting에 봉인되었고, 마신 전쟁 시기 모락스가 풀어 주며 계약을 맺었다."
-      },
-      {
-       "t_raw": "Liyue를 떠돌던 Ziqiao는 Archon War에서 Morax를 도왔고, Eight Adepts로서 God Tree Tao Dou 제압에도 힘을 보탰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "리월을 떠돌던 자교는 마신 전쟁에서 모락스를 도왔고, 팔기로서 신목 도도 제압에도 힘을 보탰다."
-      },
-      {
-       "t_raw": "힘이 소진되자 Qingce mountain range로 물러나 백마의 모습으로 계속 떠돌았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "힘이 소진되자 경책 mountain range로 물러나 백마의 모습으로 계속 떠돌았다."
-      },
-      {
-       "t_raw": "같은 Lantern Rite 때 Zhongli가 새 계약을 제안했으니, Traveler와 Paimon의 안내로 오늘의 Liyue를 보고 Lantern Rite를 즐긴 뒤 만족하면 Human Soul을 넘기라는 것이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "같은 해등절 때 종려가 새 계약을 제안했으니, 여행자와 페이몬의 안내로 오늘의 리월을 보고 해등절을 즐긴 뒤 만족하면 Human Soul을 넘기라는 것이었다."
-      },
-      {
-       "t_raw": "Lang-Gan은 사라졌어도 그 유산이 Liyue에 이어짐을 확인한 Ziqiao는 만족하고 Traveler에게 Human Soul을 맡긴 뒤 흩어졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "낭간은 사라졌어도 그 유산이 리월에 이어짐을 확인한 자교는 만족하고 여행자에게 Human Soul을 맡긴 뒤 흩어졌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A18",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Zibai"
-        },
-        {
-         "type": "quest",
-         "name": "The Realm of Clouds"
-        },
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        },
-        {
-         "type": "book",
-         "name": "Springs of Hidden Jade"
-        },
-        {
-         "type": "book",
-         "name": "Moonlit Bamboo Forest"
-        },
-        {
-         "type": "quest",
-         "name": "The Realm of People"
-        }
-       ]
-      }
-     ],
-     "heading": "구성원 — 자백과 세 영혼",
-     "latin_left": [
-      "Human Soul",
-      "Zhanzhu",
-      "Human Soul",
-      "Human Soul"
-     ]
-    },
-    {
-     "section": "구성원 — Zibai와 세 영혼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "At the peak of Lantern Rite Festival night, the Traveler and Zhongli released a Xiao Lantern imbued with both the Earth and Human Soul, hoping that Ziju might respond.",
-     "sentences": [
-      {
-       "t_raw": "Ziju는 Heavenly Soul과 결합해 Moon's Reflection과 하나가 되었고, Lantern Rite Festival 때 Columbina가 남긴 달빛의 인도가 그녀의 유물과 공명하면서 Traveler의 의식이 Reflection으로 끌려가 Ziju와 마주쳤다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자거는 천혼과 결합해 달의 반영과 하나가 되었고, 해등절 때 콜롬비나가 남긴 달빛의 인도가 그녀의 유물과 공명하면서 여행자의 의식이 Reflection으로 끌려가 자거와 마주쳤다."
-      },
-      {
-       "t_raw": "축제 밤의 정점에 Traveler와 Zhongli가 Earth Soul과 Human Soul을 담은 Xiao Lantern을 띄워 Ziju의 응답을 바랐고, Ziju가 기도에 응해 두 영혼과 결합하자 진정한 Zibai가 되살아났다.",
-       "interp": false,
-       "dropped": false,
-       "t": "축제 밤의 정점에 여행자와 종려가 Earth Soul과 Human Soul을 담은 소등을 띄워 자거의 응답을 바랐고, 자거가 기도에 응해 두 영혼과 결합하자 진정한 자백이 되살아났다."
-      },
-      {
-       "t_raw": "True Moon 이후의 Lantern Rite에서 Traveler와 Zhongli가 세 조각을 다시 모아 원래 모습을 되찾았다는 기록도 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "진실의 달 이후의 해등절에서 여행자와 종려가 세 조각을 다시 모아 원래 모습을 되찾았다는 기록도 전한다."
-      },
-      {
-       "t_raw": "세 영혼이 각기 다른 처지에서 Lantern Rite를 계기로 Zibai로 다시 합쳐진 셈이다.",
+       "t_raw": "Yunlai Angler의 장대 기술이 Yunlai Swordsmanship의 바탕이 되었다는 전승과 Keqing·Qiqi가 그 수행자라는 점을 함께 보면, 이 검술이 오늘날까지 계보를 이어 온 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "세 영혼이 각기 다른 처지에서 해등절을 계기로 자백으로 다시 합쳐진 셈이다."
-      },
-      {
-       "t_raw": "Zibai는 현재 Wangsheng Funeral Parlor가 마련한 Baiju Guesthouse에 머문다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자백은 현재 왕생당이 마련한 백마 객잔에 머문다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A16",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Realm of Clouds"
-        },
-        {
-         "type": "quest",
-         "name": "Welkin Moon's Homecoming"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A17",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Realm of Clouds"
-        },
-        {
-         "type": "quest",
-         "name": "The Realm of Rocks"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A18",
-       "wiki_refs": [
-        {
-         "type": "cs",
-         "name": "Zibai"
-        },
-        {
-         "type": "quest",
-         "name": "The Realm of Clouds"
-        },
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        },
-        {
-         "type": "book",
-         "name": "Springs of Hidden Jade"
-        },
-        {
-         "type": "book",
-         "name": "Moonlit Bamboo Forest"
-        },
-        {
-         "type": "quest",
-         "name": "The Realm of People"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A19",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Realm of People"
-        },
-        {
-         "type": "quest",
-         "name": "White Horse's Leisurely Journey"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Zibai",
-       "revision": 2050405,
-       "section": null,
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "구성원 — 자백과 세 영혼",
-     "latin_left": [
-      "Reflection",
-      "Earth Soul",
-      "Human Soul"
-     ]
-    },
-    {
-     "section": "드러난 역사 — Tao Dou와 경계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The god's remains sank into the Ley Lines and became the border that separated the living from the dead.",
-     "sentences": [
-      {
-       "t_raw": "Tao Dou는 마신 전쟁 이전과 전쟁 중에 살았고 죽은 자의 영역 앞에 선 나무의 모습을 한 신이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "도도는 마신 전쟁 이전과 전쟁 중에 살았고 죽은 자의 영역 앞에 선 나무의 모습을 한 신이었다."
-      },
-      {
-       "t_raw": "마신 전쟁이 시작되자 Tao Dou는 싸움에 휘말렸고, 그로 인해 **생과 사의 경계**가 흐려져 죽음이 산 자의 영역으로 번졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마신 전쟁이 시작되자 도도는 싸움에 휘말렸고, 그로 인해 **생과 사의 경계**가 흐려져 죽음이 산 자의 영역으로 번졌다."
-      },
-      {
-       "t_raw": "Eight Adepts는 함께 마법진을 세워 Tao Dou를 정화했고, 그 유해는 Ley Lines로 가라앉아 산 자와 죽은 자를 가르는 경계가 되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "팔기는 함께 마법진을 세워 도도를 정화했고, 그 유해는 지맥으로 가라앉아 산 자와 죽은 자를 가르는 경계가 되었다."
-      },
-      {
-       "t_raw": "이 공적은 오늘날 \"Sanctification of Tao Dou\"로 이야기된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 공적은 오늘날 \"Sanctification of Tao Dou\"로 이야기된다."
-      },
-      {
-       "t_raw": "정화가 경계의 재형성으로 이어졌다는 점에서, 이 사건은 단순한 퇴치가 아니라 산 자와 죽은 자의 경계를 다시 세운 사건으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "정화가 경계의 재형성으로 이어졌다는 점에서, 이 사건은 단순한 퇴치가 아니라 산 자와 죽은 자의 경계를 다시 세운 사건으로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Tao Dou",
-       "revision": 1714009,
-       "section": null,
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "furnishing",
-         "name": "Divine Remains, Left to Pacify the Nether"
-        },
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Tao Dou",
-       "revision": 1714009,
-       "section": "Profile",
-       "paragraph": "M6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        },
-        {
-         "type": "furnishing",
-         "name": "Divine Remains, Left to Pacify the Nether"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Tao Dou",
-       "revision": 1714009,
-       "section": "Profile",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사 — 도도와 경계",
-     "latin_left": [
-      "Sanctification of Tao Dou"
-     ]
-    },
-    {
-     "section": "드러난 역사 — Tao Dou와 경계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "To do so, they used the Seven-and-Eight-Gates Method, which cost the life of one of their members, the Lone Butterfly of the Crimson Flame.",
-     "sentences": [
-      {
-       "t_raw": "Tao Dou를 정화할 때 사용한 **Seven-and-Eight-Gates Method**는 구성원 Lone Butterfly of the Crimson Flame의 목숨을 대가로 치렀다.",
-       "interp": false,
-       "dropped": false,
-       "t": "도도를 정화할 때 사용한 **팔문 칠문 진**은 구성원 붉은 불꽃의 외로운 나비의 목숨을 대가로 치렀다."
-      },
-      {
-       "t_raw": "그녀가 희생된 뒤 Wuwang Kid는 그 역할을 이어받아 Hu Family에 그 기술을 가르쳤다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀가 희생된 뒤 무망동자는 그 역할을 이어받아 호 가문에 그 기술을 가르쳤다."
-      },
-      {
-       "t_raw": "Hu Family는 Wangsheng Funeral Parlor를 세우고 산 자와 죽은 자의 균형을 유지하는 일을 맡았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "호 가문은 왕생당을 세우고 산 자와 죽은 자의 균형을 유지하는 일을 맡았다."
-      },
-      {
-       "t_raw": "한 구성원의 희생과 Wuwang Kid가 그 역할을 이어받아 Hu Family를 가르친 일은 방법의 대가가 이후의 책무로 이어졌음을 보여 준다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "한 구성원의 희생과 무망동자가 그 역할을 이어받아 호 가문을 가르친 일은 방법의 대가가 이후의 책무로 이어졌음을 보여 준다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Hu Tao/Storyline",
-       "revision": 2050152,
-       "section": "History > Past",
-       "paragraph": "M7",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "드러난 역사 — 도도와 경계",
-     "latin_left": []
-    },
-    {
-     "section": "드러난 역사 — Tao Dou와 경계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Its remains, which lie beneath Mt. Qingce, were suppressed by the Hidden Palace of Zhou Formula, which was enchanted with the seven-and-eight-gates method.",
-     "sentences": [
-      {
-       "t_raw": "Tao Dou의 유해는 Mt. Qingce 아래에 있었고, Hidden Palace of Zhou Formula가 seven-and-eight-gates method로 그것을 억눌렀다.",
-       "interp": false,
-       "dropped": false,
-       "t": "도도의 유해는 Mt. 경책 아래에 있었고, 무망 인구 밀궁이 seven-and-eight-gates method로 그것을 억눌렀다."
-      },
-      {
-       "t_raw": "Ziqiao는 마신 전쟁에서 Rex Lapis를 도와 Chenyu Vale과 Mt. Qingce를 제압하는 데 힘을 보탰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자교는 마신 전쟁에서 암왕제군을 도와 침옥 협곡과 Mt. 경책을 제압하는 데 힘을 보탰다."
-      },
-      {
-       "t_raw": "Mt. Qingce의 싸움은 Eight Adepts로서 Tao Dou에 맞선 전투와 관련이 있었을 수 있으며, 그 공으로 그녀는 Gold-Eyed Celadon Mare로 이름을 얻었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Mt. 경책의 싸움은 팔기로서 도도에 맞선 전투와 관련이 있었을 수 있으며, 그 공으로 그녀는 Gold-Eyed Celadon Mare로 이름을 얻었다."
-      },
-      {
-       "t_raw": "유해가 봉인된 곳과 그 전투에 참여한 인물의 행적이 Mt. Qingce에서 겹치는 것은 이곳이 Tao Dou 사건의 핵심 무대였음을 보여 주는 대목으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "유해가 봉인된 곳과 그 전투에 참여한 인물의 행적이 Mt. 경책에서 겹치는 것은 이곳이 도도 사건의 핵심 무대였음을 보여 주는 대목으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Tao Dou",
-       "revision": 1714009,
-       "section": "Profile",
-       "paragraph": "M6",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        },
-        {
-         "type": "furnishing",
-         "name": "Divine Remains, Left to Pacify the Nether"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Zibai/Storyline",
-       "revision": 2052907,
-       "section": "History > Past",
-       "paragraph": "M5",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Realm of People"
-        },
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        },
-        {
-         "type": "cs",
-         "name": "Zibai"
-        },
-        {
-         "type": "quest",
-         "name": "The Realm of Clouds"
-        }
-       ]
-      }
-     ],
-     "heading": "드러난 역사 — 도도와 경계",
-     "latin_left": [
-      "Mt",
-      "Mt",
-      "Mt",
-      "Gold-Eyed Celadon Mare",
-      "Mt"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Wind Reader's descendants became the Lan Clan of Chenyu Vale.",
-     "sentences": [
-      {
-       "t_raw": "Tao Dou를 제압한 뒤 Wind Reader와 Silverwing은 함께 여행했다고 전해진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "도도를 제압한 뒤 Wind Reader와 현조 선인은 함께 여행했다고 전해진다."
-      },
-      {
-       "t_raw": "가계 계보에 따르면 Wind Reader의 후손은 Chenyu Vale의 Lan Clan이 되었고, 그들은 Qimen Arts를 이어 익히며 Silverwing을 소중한 상징으로 여긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "가계 계보에 따르면 Wind Reader의 후손은 침옥 협곡의 Lan Clan이 되었고, 그들은 Qimen Arts를 이어 익히며 현조 선인을 소중한 상징으로 여긴다."
-      },
-      {
-       "t_raw": "이 전승은 Lan Clan의 후대 정체성이 두 존재의 동행에 기대고 있음을 보여준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 전승은 Lan Clan의 후대 정체성이 두 존재의 동행에 기대고 있음을 보여준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A15",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Wind Reader",
-      "Wind Reader",
-      "Lan Clan",
-      "Qimen Arts",
-      "Lan Clan"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Yunlai Angler's rod-wielding techniques are believed to have formed the basis of Yunlai Swordsmanship",
-     "sentences": [
-      {
-       "t_raw": "Yunlai Angler의 낚싯대 기술은 Yunlai Swordsmanship의 기초가 된 것으로 여겨진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Yunlai Angler의 낚싯대 기술은 운래 검법의 기초가 된 것으로 여겨진다."
-      },
-      {
-       "t_raw": "이 검술은 Keqing 같은 이들이 익히는 형태로 오늘날까지 이어진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 검술은 각청 같은 이들이 익히는 형태로 오늘날까지 이어진다."
-      },
-      {
-       "t_raw": "Eight Adepts의 무예가 실제로 배워지는 검술로 남았다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "팔기의 무예가 실제로 배워지는 검술로 남았다고 볼 수 있다."
+       "t": "Yunlai Angler의 장대 기술이 운래 검법의 바탕이 되었다는 전승과 각청·치치가 그 수행자라는 점을 함께 보면, 이 검술이 오늘날까지 계보를 이어 온 셈이다."
       }
      ],
      "sources": [
@@ -1358,555 +1630,68 @@
          "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Adepts",
+       "revision": 2053416,
+       "section": "Known Members",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+        }
+       ]
       }
      ],
-     "heading": "얽힌 인물과 세력",
+     "heading": "여담",
      "latin_left": [
+      "Yunlai Angler",
       "Yunlai Angler"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "passing down the responsibility of guarding the border between life and death.",
-     "sentences": [
-      {
-       "t_raw": "Old Man Wuwang은 Lone Butterfly를 따랐다고 전해지며, 그녀가 사라진 뒤 그녀의 역할을 이어받았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Old Man Wuwang은 Lone Butterfly를 따랐다고 전해지며, 그녀가 사라진 뒤 그녀의 역할을 이어받았다."
-      },
-      {
-       "t_raw": "그는 Wangsheng Funeral Parlor의 창시자들을 그녀의 방식으로 훈련해 생과 사의 경계를 지키는 책임을 전했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 왕생당의 창시자들을 그녀의 방식으로 훈련해 생과 사의 경계를 지키는 책임을 전했다."
-      },
-      {
-       "t_raw": "그 책임은 Lone Butterfly의 흔적과 Old Man Wuwang의 전수에서 비롯된 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그 책임은 Lone Butterfly의 흔적과 Old Man Wuwang의 전수에서 비롯된 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A22",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Old Man Wuwang",
-      "Lone Butterfly",
-      "Lone Butterfly",
-      "Old Man Wuwang"
-     ]
-    },
-    {
-     "section": "얽힌 인물과 세력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The Hidden Palace of Lianshan Formula was once their place of cultivation.",
-     "sentences": [
-      {
-       "t_raw": "Ziqiao는 Archon War에서 Rex Lapis를 도우며 White Horse Adeptus와 Gold-Eyed Celdon Mare로 Liyue 전설에 이름을 남겼다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자교는 마신 전쟁에서 암왕제군을 도우며 백마 선인과 황금 눈의 청자색 암말로 리월 전설에 이름을 남겼다."
-      },
-      {
-       "t_raw": "Two Sages of Lianshan은 Lianshan의 비술을 익히고 은둔했으며, Hidden Palace of Lianshan Formula는 그들의 수행 장소였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Two Sages of Lianshan은 Lianshan의 비술을 익히고 은둔했으며, 천둥 연산 밀궁은 그들의 수행 장소였다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Zibai/Storyline",
-       "revision": 2052907,
-       "section": null,
-       "paragraph": "M4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A20",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      }
-     ],
-     "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Two Sages of Lianshan",
-      "Lianshan"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "We were actually learning about the Eight Adepts earlier, but we never found out who the Three Beasts of Tao Dou were.",
-     "sentences": [
-      {
-       "t_raw": "Yun Jin은 악을 물리치겠다는 맹세와 함께 Eight Adepts가 Tao Dou를 향해 칼을 들었다는 구절을 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "운근은 악을 물리치겠다는 맹세와 함께 팔기가 도도를 향해 칼을 들었다는 구절을 말한다."
-      },
-      {
-       "t_raw": "그러나 Eight Adepts를 배우던 이들은 **Three Beasts of Tao Dou**가 누구인지 알지 못했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 팔기를 배우던 이들은 **Three Beasts of Tao Dou**가 누구인지 알지 못했다."
-      },
-      {
-       "t_raw": "사람들은 Eight Adepts 중 누가 가장 뛰어난지를 두고 의견을 나눈다.",
-       "interp": false,
-       "dropped": false,
-       "t": "사람들은 팔기 중 누가 가장 뛰어난지를 두고 의견을 나눈다."
-      },
-      {
-       "t_raw": "Tao Dou 퇴치의 구도는 전해지지만, 구성원의 일부와 우열은 확인되지 않은 채 논의되는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "도도 퇴치의 구도는 전해지지만, 구성원의 일부와 우열은 확인되지 않은 채 논의되는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
-       "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
-       "version": "5.3",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Final Stanza: The Sanctification of Tao Dou",
-       "quest_ko": "종막·팔기연도도",
-       "version": "5.3",
-       "speaker": "Yun Jin"
-      },
-      {
-       "kind": "quest",
-       "quest": "Final Stanza: The Sanctification of Tao Dou",
-       "quest_ko": "종막·팔기연도도",
-       "version": "5.3",
-       "speaker": "Lan Yan"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Three Beasts of Tao Dou"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Wait, I thought she was the Gold-Eyed Celadon Mare of the Eight Adepts?",
-     "sentences": [
-      {
-       "t_raw": "Hu Tao는 Zibai가 Wangsheng Funeral Parlor와 Eight Adepts를 안다는 말에 놀라 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "호두는 자백이 왕생당과 팔기를 안다는 말에 놀라 묻는다."
-      },
-      {
-       "t_raw": "이어 Zibai를 Eight Adepts의 **Gold-Eyed Celadon Mare**라고 생각했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어 자백을 팔기의 **Gold-Eyed Celadon Mare**라고 생각했다고 말한다."
-      },
-      {
-       "t_raw": "이 반응은 Zibai의 별칭과 Wangsheng Funeral Parlor에 대한 인식이 대화에서 확인 대상으로 떠오르는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 반응은 자백의 별칭과 왕생당에 대한 인식이 대화에서 확인 대상으로 떠오르는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "White Horse's Leisurely Journey",
-       "quest_ko": "백마 여행기",
-       "version": "Luna IV",
-       "speaker": "Hu Tao"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Realm of Clouds",
-       "quest_ko": "구름 사이 달",
-       "version": "Luna IV",
-       "speaker": "Hu Tao"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Gold-Eyed Celadon Mare"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Those Eight Adepts must be super powerful if they could purify a god... Are we sure they weren't just adepti?",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 Eight Adepts가 신을 정화할 만큼 강하다면 혹시 선인이 아니냐고 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 팔기가 신을 정화할 만큼 강하다면 혹시 선인이 아니냐고 되묻는다."
-      },
-      {
-       "t_raw": "전승에서는 Eight Adepts가 선인 같은 능력을 지녔지만 실제 선인은 아니었다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "전승에서는 팔기가 선인 같은 능력을 지녔지만 실제 선인은 아니었다고 한다."
-      },
-      {
-       "t_raw": "이 물음은 그들의 강함을 선인이라는 범주에 비추어 이해하려는 시도로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 물음은 그들의 강함을 선인이라는 범주에 비추어 이해하려는 시도로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
-       "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
-       "version": "5.3",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Lan Yan's silver hairpiece is a family heirloom modeled after them.",
-     "sentences": [
-      {
-       "t_raw": "Lan Yan의 은 장신구는 Jade-Plumed Silverwing을 본떠 만든 집안의 가보다.",
-       "interp": false,
-       "dropped": false,
-       "t": "남연의 은 장신구는 Jade-Plumed Silverwing을 본떠 만든 집안의 가보다."
-      },
-      {
-       "t_raw": "Chenyu Vale의 Lan Clan은 은색 참새인 Silverwing을 대대로 소중한 상징으로 여겨 왔고, 조상의 Qimen Arts와 함께 이를 지금까지 이어 온다.",
-       "interp": false,
-       "dropped": false,
-       "t": "침옥 협곡의 Lan Clan은 은색 참새인 현조 선인을 대대로 소중한 상징으로 여겨 왔고, 조상의 Qimen Arts와 함께 이를 지금까지 이어 온다."
-      },
-      {
-       "t_raw": "구성원의 흔적이 이름이 아니라 물건과 예법의 형태로 후손에게 남았다는 점이, Eight Adepts 전승이 지닌 특징이라고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "구성원의 흔적이 이름이 아니라 물건과 예법의 형태로 후손에게 남았다는 점이, 팔기 전승이 지닌 특징이라고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Known Members",
-       "paragraph": "A13",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        },
-        {
-         "type": "vo",
-         "name": "Lan Yan"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A15",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Jade-Plumed Silverwing",
-      "Lan Clan",
-      "Qimen Arts"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Zibai currently resides in Baiju Guesthouse, arranged by the Wangsheng Funeral Parlor.",
-     "sentences": [
-      {
-       "t_raw": "부활한 Zibai는 Wangsheng Funeral Parlor가 마련해 준 Baiju Guesthouse에 머물고 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "부활한 자백은 왕생당이 마련해 준 백마 객잔에 머물고 있다."
-      },
-      {
-       "t_raw": "Hu Tao는 Zibai가 점집과 Eight Adepts를 알고 있기에 '어라?' 하고 놀라는 반응을 보였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "호두는 자백이 점집과 팔기를 알고 있기에 '어라?' 하고 놀라는 반응을 보였다."
-      },
-      {
-       "t_raw": "앞서 Hu Tao는 그녀를 Eight Adepts의 Gold-Eyed Celadon Mare로 착각했다는 취지의 말도 흘렸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "앞서 호두는 그녀를 팔기의 Gold-Eyed Celadon Mare로 착각했다는 취지의 말도 흘렸다."
-      },
-      {
-       "t_raw": "죽음의 경계를 지키는 장의사가 부활한 존재의 거처를 마련했다는 점은, 이번 이야기가 생사의 문제 한가운데서 이루어졌음을 드러내는 아이러니로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "죽음의 경계를 지키는 장의사가 부활한 존재의 거처를 마련했다는 점은, 이번 이야기가 생사의 문제 한가운데서 이루어졌음을 드러내는 아이러니로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A19",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Realm of People"
-        },
-        {
-         "type": "quest",
-         "name": "White Horse's Leisurely Journey"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A22",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "White Horse's Leisurely Journey",
-       "quest_ko": "백마 여행기",
-       "version": "Luna IV",
-       "speaker": "Hu Tao"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Realm of Clouds",
-       "quest_ko": "구름 사이 달",
-       "version": "Luna IV",
-       "speaker": "Hu Tao"
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Gold-Eyed Celadon Mare"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "could be used to \"catch demons, heal disease, and protect lives from the encroaching presence of death.\"",
-     "sentences": [
-      {
-       "t_raw": "Old Man Wuwang가 전한 Qihuang sigils는 'demons를 잡고, 병을 고치고, 다가오는 죽음으로부터 목숨을 지킨다'는 용도로 소개된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Old Man Wuwang가 전한 Qihuang sigils는 'demons를 잡고, 병을 고치고, 다가오는 죽음으로부터 목숨을 지킨다'는 용도로 소개된다."
-      },
-      {
-       "t_raw": "은 장신구 하나, 여관 한 곳처럼 사소한 것들 사이에서도 전승의 결이 고스란히 묻어 나오는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "은 장신구 하나, 여관 한 곳처럼 사소한 것들 사이에서도 전승의 결이 고스란히 묻어 나오는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Known Members",
-       "paragraph": "A13",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        },
-        {
-         "type": "vo",
-         "name": "Lan Yan"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A15",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Eight Adepts",
-       "revision": 2053416,
-       "section": "Lore",
-       "paragraph": "A22",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
-        }
-       ]
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "Old Man Wuwang",
-      "Qihuang"
      ]
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그 Eight Adepts는 마신을 정화할 수 있을 만큼이라면 정말 엄청 강한 게 틀림없어... 정말 선인이 아니었던 거 맞아?",
-     "en": "Those Eight Adepts must be super powerful if they could purify a god... Are we sure they weren't just adepti?",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
-      "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
-      "version": "5.3",
-      "speaker": "Paimon"
-     },
-     "t": "그 팔기는 마신을 정화할 수 있을 만큼이라면 정말 엄청 강한 게 틀림없어... 정말 선인이 아니었던 거 맞아?",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "정체와 명단",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그 Eight Adepts는 신을 정화할 수 있을 만큼 엄청나게 강력한 사람들이겠네... 정말 그냥 adepti가 아닌 게 확실해?",
-     "en": "Those Eight Adepts must be super powerful if they could purify a god... Are we sure they weren't just adepti?",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
-      "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
-      "version": "5.3",
-      "speaker": "Paimon"
-     },
-     "t": "그 팔기는 신을 정화할 수 있을 만큼 엄청나게 강력한 사람들이겠네... 정말 그냥 adepti가 아닌 게 확실해?",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "구성원 — Lianshan과 Tao Dou의 세 짐승",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "우리는 실제로 앞서 Eight Adepts에 대해 배우고 있었지만, Three Beasts of Tao Dou가 누구인지는 끝내 알지 못했어.",
-     "en": "We were actually learning about the Eight Adepts earlier, but we never found out who the Three Beasts of Tao Dou were.",
-     "speaker": "Paimon",
-     "source": {
-      "kind": "quest",
-      "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
-      "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
-      "version": "5.3",
-      "speaker": "Paimon"
-     },
-     "t": "우리는 실제로 앞서 팔기에 대해 배우고 있었지만, Three Beasts of Tao Dou가 누구인지는 끝내 알지 못했어.",
-     "speaker_ko": "페이몬"
-    },
-    {
-     "section": "구성원 — Zibai와 세 영혼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "잠깐, 나는 그녀가 Eight Adepts의 Gold-Eyed Celadon Mare라고 생각했는데?",
-     "en": "Wait, I thought she was the Gold-Eyed Celadon Mare of the Eight Adepts?",
-     "speaker": "Hu Tao",
-     "source": {
-      "kind": "quest",
-      "quest": "The Realm of Clouds",
-      "quest_ko": "구름 사이 달",
-      "version": "Luna IV",
-      "speaker": "Hu Tao"
-     },
-     "t": "잠깐, 나는 그녀가 팔기의 Gold-Eyed Celadon Mare라고 생각했는데?",
-     "speaker_ko": "호두"
-    },
-    {
-     "section": "드러난 역사 — Tao Dou와 경계",
      "status": "accepted",
-     "note": "Faithful translation of the dialogue.",
-     "t_raw": "악을 물리치겠다는 서약이 세워졌고, eight Adepts는 Tao Dou에 맞서 칼을 들었다.",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "그 Eight Adepts는 신을 정화할 수 있었다니 정말 강력한 게 틀림없어... 그들이 그냥 adepti가 아니었는지 확실해?",
+     "en": "Those Eight Adepts must be super powerful if they could purify a god... Are we sure they weren't just adepti?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
+      "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
+      "version": "5.3",
+      "speaker": "Paimon"
+     },
+     "t": "그 팔기는 신을 정화할 수 있었다니 정말 강력한 게 틀림없어... 그들이 그냥 adepti가 아니었는지 확실해?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation. The wording differs slightly but the meaning is the same.",
+     "t_raw": "그 Eight Adepts는 신을 정화할 수 있었다니 엄청 강력한 게 틀림없어... 정말 그냥 adepti가 아니었던 거 맞아?",
+     "en": "Those Eight Adepts must be super powerful if they could purify a god... Are we sure they weren't just adepti?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity",
+      "quest_ko": "명절로 떠들썩한 리월항・팔기와 재액",
+      "version": "5.3",
+      "speaker": "Paimon"
+     },
+     "t": "그 팔기는 신을 정화할 수 있었다니 엄청 강력한 게 틀림없어... 정말 그냥 adepti가 아니었던 거 맞아?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "드러난 역사 — Tao Dou와 Sanctification",
+     "status": "accepted",
+     "note": "Faithful translation of Yun Jin's line.",
+     "t_raw": "악을 물리치겠다는 맹세가 세워지고, Eight Adepts가 Tao Dou에 맞서 칼을 들어 올렸다.",
      "en": "Pledges were made to vanquish evil, eight Adepts raised their blades against Tao Dou",
      "speaker": "Yun Jin",
      "source": {
@@ -1916,31 +1701,48 @@
       "version": "5.3",
       "speaker": "Yun Jin"
      },
-     "t": "악을 물리치겠다는 서약이 세워졌고, eight 선인은 도도에 맞서 칼을 들었다.",
+     "t": "악을 물리치겠다는 맹세가 세워지고, 팔기가 도도에 맞서 칼을 들어 올렸다.",
      "speaker_ko": "운근"
     },
     {
-     "section": "얽힌 인물과 세력",
+     "section": "드러난 역사 — Zibai와 세 영혼",
      "status": "accepted",
-     "note": "Faithful translation of the dialogue.",
-     "t_raw": "어라? Zibai 아가씨, Wangsheng Funeral Parlor와 Eight Adepts에 대해 알고 계신가요?",
-     "en": "Huh? Miss Zibai, you know about the Wangsheng Funeral Parlor and the Eight Adepts?",
+     "note": "Faithful translation of Hu Tao's line.",
+     "t_raw": "잠깐, 그녀가 Eight Adepts의 Gold-Eyed Celadon Mare라고 생각했는데?",
+     "en": "Wait, I thought she was the Gold-Eyed Celadon Mare of the Eight Adepts?",
      "speaker": "Hu Tao",
      "source": {
       "kind": "quest",
-      "quest": "White Horse's Leisurely Journey",
-      "quest_ko": "백마 여행기",
+      "quest": "The Realm of Clouds",
+      "quest_ko": "구름 사이 달",
       "version": "Luna IV",
       "speaker": "Hu Tao"
      },
-     "t": "어라? 자백 아가씨, 왕생당과 팔기에 대해 알고 계신가요?",
+     "t": "잠깐, 그녀가 팔기의 백마 선인라고 생각했는데?",
      "speaker_ko": "호두"
+    },
+    {
+     "section": "구성원과 계보",
+     "status": "accepted",
+     "note": "Faithful translation; present progressive 'We're debating' rendered as present tense, acceptable.",
+     "t_raw": "우리는 Eight Adepts 중 누가 최고인지 토론하고 있다.",
+     "en": "We're debating who's the best out of the Eight Adepts.",
+     "speaker": "Lan Yan",
+     "source": {
+      "kind": "quest",
+      "quest": "Final Stanza: The Sanctification of Tao Dou",
+      "quest_ko": "종막·팔기연도도",
+      "version": "5.3",
+      "speaker": "Lan Yan"
+     },
+     "t": "우리는 팔기 중 누가 최고인지 토론하고 있다.",
+     "speaker_ko": "남연"
     },
     {
      "section": "떡밥과 수수께끼",
      "status": "accepted",
-     "note": "Faithful translation of the dialogue.",
-     "t_raw": "우리는 아까 Eight Adepts에 대해 배우고 있었는데, Three Beasts of Tao Dou가 누구인지는 끝내 알지 못했어.",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "우리는 사실 아까 Eight Adepts에 대해 배우고 있었는데, Three Beasts of Tao Dou가 누구인지는 끝내 알아내지 못했어.",
      "en": "We were actually learning about the Eight Adepts earlier, but we never found out who the Three Beasts of Tao Dou were.",
      "speaker": "Paimon",
      "source": {
@@ -1950,25 +1752,8 @@
       "version": "5.3",
       "speaker": "Paimon"
      },
-     "t": "우리는 아까 팔기에 대해 배우고 있었는데, Three Beasts of Tao Dou가 누구인지는 끝내 알지 못했어.",
+     "t": "우리는 사실 아까 팔기에 대해 배우고 있었는데, 도도 삼수가 누구인지는 끝내 알아내지 못했어.",
      "speaker_ko": "페이몬"
-    },
-    {
-     "section": "여담",
-     "status": "accepted",
-     "note": "Faithful translation of the dialogue.",
-     "t_raw": "어라? Zibai 양, Wangsheng Funeral Parlor랑 Eight Adepts를 알아요?",
-     "en": "Huh? Miss Zibai, you know about the Wangsheng Funeral Parlor and the Eight Adepts?",
-     "speaker": "Hu Tao",
-     "source": {
-      "kind": "quest",
-      "quest": "White Horse's Leisurely Journey",
-      "quest_ko": "백마 여행기",
-      "version": "Luna IV",
-      "speaker": "Hu Tao"
-     },
-     "t": "어라? 자백 양, 왕생당랑 팔기를 알아요?",
-     "speaker_ko": "호두"
     }
    ]
   }

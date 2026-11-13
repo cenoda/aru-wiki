@@ -1,0 +1,737 @@
+{
+ "node": "Penny",
+ "articles": [
+  {
+   "node": "Penny",
+   "from_version": "4.2",
+   "cutoff": "2023-12-19T00:00:00Z",
+   "input": [
+    {
+     "page": "Penny",
+     "url": "https://genshin-impact.fandom.com/wiki/Penny",
+     "revision": 1437515
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 16,
+    "web": 0
+   },
+   "input_chars": 399,
+   "input_cut": false,
+   "input_hash": "79f4a58c663c",
+   "writer": "or-ds,glm-flash",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, Q7 and Q14.",
+     "quote": "Penny is the daughter of Parker and Barrow, two wanderers who left her with their friend Rouge after they decided their nomadic lifestyle was not ideal for a child.",
+     "sentences": [
+      {
+       "t_raw": "Penny는 Free Verse에서 등장하는 퀘스트 전용 NPC이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페니는 규칙 없는 자유시에서 등장하는 퀘스트 전용 NPC이다."
+      },
+      {
+       "t_raw": "Penny는 Parker와 Barrow의 딸로, 방랑 생활이 아이에게 적합하지 않다고 판단한 부모가 친구 Rouge에게 맡긴 아이이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페니는 Parker와 Barrow의 딸로, 방랑 생활이 아이에게 적합하지 않다고 판단한 부모가 친구 루즈에게 맡긴 아이이다."
+      },
+      {
+       "t_raw": "Traveler와 Paimon은 Foggy Forest Path 남동쪽의 Waverider Waypoint 근처에서 Don Quijano와 Nana와 함께 있는 그녀를 만난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬은 그윽한 숲속 안갯길 남동쪽의 파도 배 워프 포인트 근처에서 돈·시라노와 나나와 함께 있는 그녀를 만난다."
+      },
+      {
+       "t_raw": "Don Quijano는 Penny가 어른이 될지 아이로 남을지 갈림길에 서 있다고 말하며, 그런 그녀를 어떻게 지킬지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돈·시라노는 페니가 어른이 될지 아이로 남을지 갈림길에 서 있다고 말하며, 그런 그녀를 어떻게 지킬지 묻는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Penny",
+       "revision": 1437515,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Penny",
+       "revision": 1437515,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Rainbow Rose's Ideals"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Don Quijano"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Don Quijano"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC",
+      "Parker",
+      "Barrow"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts are in A1 and A2. The interpretation follows reasonably from them.",
+     "quote": "Penny is a quest-exclusive NPC that appears in the Free Verse.",
+     "sentences": [
+      {
+       "t_raw": "Penny는 **Free Verse**에서 등장하는 **퀘스트 전용 NPC**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페니는 **규칙 없는 자유시**에서 등장하는 **퀘스트 전용 NPC**다."
+      },
+      {
+       "t_raw": "Traveler와 Paimon은 Foggy Forest Path 남동쪽의 Waverider Waypoint 부근에서 Penny를 만난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬은 그윽한 숲속 안갯길 남동쪽의 파도 배 워프 포인트 부근에서 페니를 만난다."
+      },
+      {
+       "t_raw": "퀘스트 전용 NPC라는 점과 Free Verse에서 Traveler와 Paimon이 그녀를 만난다는 점을 함께 보면, Penny는 이 퀘스트의 만남을 통해 소개되는 인물이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "퀘스트 전용 NPC라는 점과 규칙 없는 자유시에서 여행자와 페이몬이 그녀를 만난다는 점을 함께 보면, 페니는 이 퀘스트의 만남을 통해 소개되는 인물이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Penny",
+       "revision": 1437515,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Penny",
+       "revision": 1437515,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Rainbow Rose's Ideals"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC",
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "A2 supports both sentences.",
+     "quote": "Penny is the daughter of Parker and Barrow, two wanderers who left her with their friend Rouge after they decided their nomadic lifestyle was not ideal for a child.",
+     "sentences": [
+      {
+       "t_raw": "Penny는 **Parker와 Barrow의 딸**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페니는 **Parker와 Barrow의 딸**이다."
+      },
+      {
+       "t_raw": "Parker와 Barrow는 두 명의 방랑자이며, 이들은 방랑 생활이 아이에게 이상적이지 않다고 판단한 뒤 Penny를 **친구 Rouge에게 맡겼다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "Parker와 Barrow는 두 명의 방랑자이며, 이들은 방랑 생활이 아이에게 이상적이지 않다고 판단한 뒤 페니를 **친구 루즈에게 맡겼다**."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Penny",
+       "revision": 1437515,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Rainbow Rose's Ideals"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Parker",
+      "Barrow",
+      "Parker",
+      "Barrow"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Q15 supports this.",
+     "quote": "And he is Penny's guardian, as well as our friend.",
+     "sentences": [
+      {
+       "t_raw": "Don Quijano는 Penny의 보호자이자 우리의 친구인 인물을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돈·시라노는 페니의 보호자이자 우리의 친구인 인물을 언급한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Don Quijano"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Free Verse",
+     "status": "accepted",
+     "note": "A2 and Q1–Q6 support the facts. The interpretation is reasonable.",
+     "quote": "And this is Nana, a particularly elegant and very considerate lady.",
+     "sentences": [
+      {
+       "t_raw": "Traveler와 Paimon은 Foggy Forest Path 남동쪽의 Waverider Waypoint 근처에서 Penny와 친구인 고양이 Don Quijano, 개 Nana를 만난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬은 그윽한 숲속 안갯길 남동쪽의 파도 배 워프 포인트 근처에서 페니와 친구인 고양이 돈·시라노, 개 나나를 만난다."
+      },
+      {
+       "t_raw": "Penny는 Nana에 대해 조금 이야기해도 되냐고 묻고, 자신의 이름과 검은 모자를 쓴 협객 Don Quijano, Court of Fontaine 출신에 Le...라는 성을 가진 우아하고 사려 깊은 Nana를 소개하며 두 동료가 상상 속 인물이 아니고 말할 수 있다고 강조한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페니는 나나에 대해 조금 이야기해도 되냐고 묻고, 자신의 이름과 검은 모자를 쓴 협객 돈·시라노, 폰타인성 출신에 Le...라는 성을 가진 우아하고 사려 깊은 나나를 소개하며 두 동료가 상상 속 인물이 아니고 말할 수 있다고 강조한다."
+      },
+      {
+       "t_raw": "이는 두 동료를 실제 인물로 대하며 대화를 이어 가려는 태도로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 두 동료를 실제 인물로 대하며 대화를 이어 가려는 태도로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Penny",
+       "revision": 1437515,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Rainbow Rose's Ideals"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Penny"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Penny"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Penny"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Penny"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Penny"
+      }
+     ],
+     "heading": "작중 행적 — 규칙 없는 자유시",
+     "latin_left": [
+      "Le"
+     ]
+    },
+    {
+     "section": "작중 행적 — Free Verse",
+     "status": "accepted",
+     "note": "Q7, Q13 and Q14 support the facts. The interpretation is reasonable.",
+     "quote": "Our dear Penny stands at a fork in the road. She knows not whether to grow up, or remain a child.",
+     "sentences": [
+      {
+       "t_raw": "Don Quijano는 Penny가 갈림길에 서서 **성장할지 아이로 남을지** 모른다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돈·시라노는 페니가 갈림길에 서서 **성장할지 아이로 남을지** 모른다고 말한다."
+      },
+      {
+       "t_raw": "Nana는 Penny의 **친구가 될 기사**를 찾아야 하며 그러면 그녀가 답을 찾을 수 있을 것이라고 말하고, Don Quijano는 어떻게 해야 Penny를 가장 잘 보호할 수 있을지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나나는 페니의 **친구가 될 기사**를 찾아야 하며 그러면 그녀가 답을 찾을 수 있을 것이라고 말하고, 돈·시라노는 어떻게 해야 페니를 가장 잘 보호할 수 있을지 묻는다."
+      },
+      {
+       "t_raw": "Penny를 둘러싼 고민이 성장의 갈림길과 보호라는 두 축으로 드러나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "페니를 둘러싼 고민이 성장의 갈림길과 보호라는 두 축으로 드러나는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Don Quijano"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Nana"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Don Quijano"
+      }
+     ],
+     "heading": "작중 행적 — 규칙 없는 자유시",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The English says the Waverider Waypoint is southeast of Foggy Forest Path. The Korean reverses this and puts the meeting southeast of the Waypoint.",
+     "quote": "Penny is the daughter of Parker and Barrow, two wanderers who left her with their friend Rouge after they decided their nomadic lifestyle was not ideal for a child.",
+     "sentences": [
+      {
+       "t_raw": "Penny는 방랑 생활을 하던 Parker와 Barrow의 **딸**이며, 두 사람은 아이를 기르기에 방랑 생활이 적절하지 않다고 판단해 그녀를 친구 Rouge에게 맡겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페니는 방랑 생활을 하던 Parker와 Barrow의 **딸**이며, 두 사람은 아이를 기르기에 방랑 생활이 적절하지 않다고 판단해 그녀를 친구 루즈에게 맡겼다."
+      },
+      {
+       "t_raw": "Traveler와 Paimon은 Foggy Forest Path 남동쪽의 Waverider Waypoint 근처에서 Penny와 Don Quijano, Nana를 만난다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "여행자와 페이몬은 그윽한 숲속 안갯길 남동쪽의 파도 배 워프 포인트 근처에서 페니와 돈·시라노, 나나를 만난다."
+      },
+      {
+       "t_raw": "Paimon은 Penny가 Rouge라는 이름을 언급했다고 기억하며 그가 누구인지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 페니가 루즈라는 이름을 언급했다고 기억하며 그가 누구인지 묻는다."
+      },
+      {
+       "t_raw": "Rouge는 Penny가 자신을 언급했는지 묻고 우연이라고 반응한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "루즈는 페니가 자신을 언급했는지 묻고 우연이라고 반응한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Penny",
+       "revision": 1437515,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "item",
+         "name": "Rainbow Rose's Ideals"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Impromptu Poem of the Crimson Dawn",
+       "quest_ko": "붉은 여명의 즉흥시",
+       "version": "4.2",
+       "speaker": "Rouge"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Parker",
+      "Barrow"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported. The contrast in (2) is a reasonable interpretation.",
+     "quote": "The furry gentleman with the black hat here is Don Quijano, a swashbuckler.",
+     "sentences": [
+      {
+       "t_raw": "Penny는 검은 모자를 쓴 털복숭이 신사 Don Quijano를 모험가라고 소개하고, Nana를 특히 우아하고 매우 사려 깊은 숙녀로 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페니는 검은 모자를 쓴 털복숭이 신사 돈·시라노를 모험가라고 소개하고, 나나를 특히 우아하고 매우 사려 깊은 숙녀로 소개한다."
+      },
+      {
+       "t_raw": "Don Quijano는 Penny를 어떻게 보호할지 고민한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돈·시라노는 페니를 어떻게 보호할지 고민한다."
+      },
+      {
+       "t_raw": "Penny가 Don Quijano를 모험가로 소개하는 모습과 Don Quijano가 Penny를 보호할지 고민하는 모습은 서로 대비된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "페니가 돈·시라노를 모험가로 소개하는 모습과 돈·시라노가 페니를 보호할지 고민하는 모습은 서로 대비된다."
+      },
+      {
+       "t_raw": "Don Quijano는 한 인물을 Penny의 **보호자이자 자신들의 친구**라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돈·시라노는 한 인물을 페니의 **보호자이자 자신들의 친구**라고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Penny"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Penny"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Don Quijano"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Don Quijano"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by Q7 and Q14. The interpretation in (2) is hedged.",
+     "quote": "Our dear Penny stands at a fork in the road. She knows not whether to grow up, or remain a child.",
+     "sentences": [
+      {
+       "t_raw": "Don Quijano는 Penny가 **갈림길**에 서서 자라날지 아이로 남을지 알지 못한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돈·시라노는 페니가 **갈림길**에 서서 자라날지 아이로 남을지 알지 못한다고 말한다."
+      },
+      {
+       "t_raw": "그러면서 그는 Penny를 어떻게 가장 잘 보호할 수 있을지 고민한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 그는 페니를 어떻게 가장 잘 보호할 수 있을지 고민한다."
+      },
+      {
+       "t_raw": "성장의 갈림길이 곧 보호의 방식과 맞닿아 있는 문제로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "성장의 갈림길이 곧 보호의 방식과 맞닿아 있는 문제로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Don Quijano"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Don Quijano"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by Q13. Nothing in the material explains the answer or the reason for finding a knight.",
+     "quote": "We need to find a knight to be Penny's friend. Perhaps then, she can find the answers.",
+     "sentences": [
+      {
+       "t_raw": "Nana는 Penny의 **친구가 될 기사**를 찾아야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나나는 페니의 **친구가 될 기사**를 찾아야 한다고 말한다."
+      },
+      {
+       "t_raw": "기사가 친구가 되면 Penny가 답을 찾을 수 있을지도 모른다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기사가 친구가 되면 페니가 답을 찾을 수 있을지도 모른다고 덧붙인다."
+      },
+      {
+       "t_raw": "그 답의 내용과 기사를 찾아야 하는 이유는 제시되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 답의 내용과 기사를 찾아야 하는 이유는 제시되지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Nana"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by Q3 and Q5. The interpretation in (2) is hedged with '보인다'.",
+     "quote": "Okay! Lady Nana is from the Court of Fontaine. She has a nice surname, Le...",
+     "sentences": [
+      {
+       "t_raw": "Penny는 Nana가 Court of Fontaine 출신이며 '**Le...**'로 시작하는 좋은 성씨를 지녔다고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페니는 나나가 폰타인성 출신이며 '**Le...**'로 시작하는 좋은 성씨를 지녔다고 소개한다."
+      },
+      {
+       "t_raw": "이어 Penny는 어떤 이야기를 더 꺼내지 않겠다며 Nana에게 사과한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 페니는 어떤 이야기를 더 꺼내지 않겠다며 나나에게 사과한다."
+      },
+      {
+       "t_raw": "끊긴 성씨 소개와 사과가 맞물려, Le... 성씨에는 쉽게 말하기 어려운 사정이 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "끊긴 성씨 소개와 사과가 맞물려, Le... 성씨에는 쉽게 말하기 어려운 사정이 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Penny"
+      },
+      {
+       "kind": "quest",
+       "quest": "Free Verse",
+       "quest_ko": "규칙 없는 자유시",
+       "version": "4.2",
+       "speaker": "Penny"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Le",
+      "Le"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The Appearance section exists and holds a '(To be added.)' placeholder, so both sentences are supported.",
+     "quote": "To be added.",
+     "sentences": [
+      {
+       "t_raw": "Penny의 프로필에는 외형 항목이 있으나, 그 내용은 아직 작성되지 않은 상태다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페니의 프로필에는 외형 항목이 있으나, 그 내용은 아직 작성되지 않은 상태다."
+      },
+      {
+       "t_raw": "자료에서는 이 항목이 작성 예정임을 알리는 메모를 확인할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자료에서는 이 항목이 작성 예정임을 알리는 메모를 확인할 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Penny",
+       "revision": 1437515,
+       "section": "Profile > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation. '허세 부리는 검객' is a reasonable rendering of 'swashbuckler'.",
+     "t_raw": "Penny는 내 이름이야. 여기 검은 모자를 쓴 털복숭이 신사는 허세 부리는 검객인 Don Quijano야.",
+     "en": "Penny is my name. The furry gentleman with the black hat here is Don Quijano, a swashbuckler.",
+     "speaker": "Penny",
+     "source": {
+      "kind": "quest",
+      "quest": "Free Verse",
+      "quest_ko": "규칙 없는 자유시",
+      "version": "4.2",
+      "speaker": "Penny"
+     },
+     "t": "페니는 내 이름이야. 여기 검은 모자를 쓴 털복숭이 신사는 허세 부리는 검객인 돈·시라노야.",
+     "speaker_ko": "페니"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of the Don Quijano line.",
+     "t_raw": "그리고 그는 Penny의 보호자이자 우리의 친구입니다.",
+     "en": "And he is Penny's guardian, as well as our friend.",
+     "speaker": "Don Quijano",
+     "source": {
+      "kind": "quest",
+      "quest": "Free Verse",
+      "quest_ko": "규칙 없는 자유시",
+      "version": "4.2",
+      "speaker": "Don Quijano"
+     },
+     "t": "그리고 그는 페니의 보호자이자 우리의 친구입니다.",
+     "speaker_ko": "돈·시라노"
+    },
+    {
+     "section": "작중 행적 — Free Verse",
+     "status": "accepted",
+     "note": "Faithful translation of the fork-in-the-road line.",
+     "t_raw": "우리의 사랑스러운 Penny는 갈림길에 서 있다. 그녀는 자라야 할지, 아이로 남아야 할지 알지 못한다.",
+     "en": "Our dear Penny stands at a fork in the road. She knows not whether to grow up, or remain a child.",
+     "speaker": "Don Quijano",
+     "source": {
+      "kind": "quest",
+      "quest": "Free Verse",
+      "quest_ko": "규칙 없는 자유시",
+      "version": "4.2",
+      "speaker": "Don Quijano"
+     },
+     "t": "우리의 사랑스러운 페니는 갈림길에 서 있다. 그녀는 자라야 할지, 아이로 남아야 할지 알지 못한다.",
+     "speaker_ko": "돈·시라노"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation of Rouge's line.",
+     "t_raw": "Penny를 아나요? 그 애가 당신에게 제 이야기를 했나요? 참 우연이네요.",
+     "en": "You know Penny? She's spoken to you about me? What a coincidence.",
+     "speaker": "Rouge",
+     "source": {
+      "kind": "quest",
+      "quest": "Impromptu Poem of the Crimson Dawn",
+      "quest_ko": "붉은 여명의 즉흥시",
+      "version": "4.2",
+      "speaker": "Rouge"
+     },
+     "t": "페니를 아나요? 그 애가 당신에게 제 이야기를 했나요? 참 우연이네요.",
+     "speaker_ko": "루즈"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation, same as item 2.",
+     "t_raw": "우리의 사랑스러운 Penny는 갈림길에 서 있다. 그녀는 자라야 할지, 아이로 남아야 할지 알지 못한다.",
+     "en": "Our dear Penny stands at a fork in the road. She knows not whether to grow up, or remain a child.",
+     "speaker": "Don Quijano",
+     "source": {
+      "kind": "quest",
+      "quest": "Free Verse",
+      "quest_ko": "규칙 없는 자유시",
+      "version": "4.2",
+      "speaker": "Don Quijano"
+     },
+     "t": "우리의 사랑스러운 페니는 갈림길에 서 있다. 그녀는 자라야 할지, 아이로 남아야 할지 알지 못한다.",
+     "speaker_ko": "돈·시라노"
+    }
+   ]
+  }
+ ]
+}

@@ -418,13 +418,13 @@
        "t_raw": "Climbing은 정확한 수치가 알려지지 않았으나 시작하려면 최소 5 Stamina가 필요하고, Climb-Jump는 1회당 25를 쓴다.",
        "interp": false,
        "dropped": false,
-       "t": "Climbing은 정확한 수치가 알려지지 않았으나 시작하려면 최소 5 스태미나가 필요하고, Climb-Jump는 1회당 25를 쓴다."
+       "t": "Climbing은 정확한 수치가 알려지지 않았으나 시작하려면 최소 5 스태미나가 필요하고, 등반 점프는 1회당 25를 쓴다."
       },
       {
        "t_raw": "**Swimming은 애니메이션 기반 동작당 4**이고, Swim Dash는 처음 2를 쓴 뒤 이동하는 동안 초당 10.2를 소모한다.",
        "interp": false,
        "dropped": false,
-       "t": "**Swimming은 애니메이션 기반 동작당 4**이고, Swim Dash는 처음 2를 쓴 뒤 이동하는 동안 초당 10.2를 소모한다."
+       "t": "**Swimming은 애니메이션 기반 동작당 4**이고, 수영 중 대시는 처음 2를 쓴 뒤 이동하는 동안 초당 10.2를 소모한다."
       },
       {
        "t_raw": "Gliding은 이동하는 동안 초당 3을 소모한다.",
@@ -494,9 +494,7 @@
       "Dash",
       "Sprinting",
       "Climbing",
-      "Climb-Jump",
       "Swimming",
-      "Swim Dash",
       "Gliding",
       "Sprinting",
       "Swimming"
@@ -524,7 +522,7 @@
        "t_raw": "예외적으로 Keqing의 Charged Attack은 25, Tartaglia의 Foul Legacy: Raging Tide Charged Attack과 Raiden Shogun의 Secret Art: Musou Shinsetsu Charged Attack, Arataki Itto의 Charged Attack은 20이며, Shikanoin Heizou의 Charged Attack은 25, Kinich와 Mavuika의 Charged Attack은 50이다.",
        "interp": false,
        "dropped": false,
-       "t": "예외적으로 각청의 강공격은 25, 타르탈리아의 마왕 무장: Raging Tide Charged Attack과 라이덴 쇼군의 「특별 비법」: Musou Shinsetsu Charged Attack, 아라타키 이토의 강공격은 20이며, 시카노인 헤이조의 강공격은 25, 키니치와 마비카의 강공격은 50이다."
+       "t": "예외적으로 각청의 강공격은 25, 타르탈리아의 마왕 무장: 마왕 무장·광란 강공격과 라이덴 쇼군의 「특별 비법」: 오의·몽상진설 강공격, 아라타키 이토의 강공격은 20이며, 시카노인 헤이조의 강공격은 25, 키니치와 마비카의 강공격은 50이다."
       }
      ],
      "sources": [
@@ -578,10 +576,7 @@
       }
      ],
      "heading": "행동별 소모량",
-     "latin_left": [
-      "Raging Tide Charged Attack",
-      "Musou Shinsetsu Charged Attack"
-     ]
+     "latin_left": []
     },
     {
      "section": "행동별 소모량",
@@ -593,24 +588,24 @@
        "t_raw": "Alternate Sprint는 처음 10을 쓰고 이동 중 초당 15를 소모하며, Jean의 Gale Blade Hold State는 초당 20, Arlecchino의 High-Speed Movement는 초당 40을 쓴다.",
        "interp": false,
        "dropped": false,
-       "t": "Alternate Sprint는 처음 10을 쓰고 이동 중 초당 15를 소모하며, 진의 Gale Blade Hold State는 초당 20, 아를레키노의 High-Speed Movement는 초당 40을 쓴다."
+       "t": "대시 대체는 처음 10을 쓰고 이동 중 초당 15를 소모하며, 진의 풍압검 홀드 상태는 초당 20, 아를레키노의 빠른 이동은 초당 40을 쓴다."
       },
       {
        "t_raw": "Ororon의 Flowing Fog, Spritely Shadows와 Citlali의 Smoke, Mirrors, and the Flowing Winds는 점프를 유지할 때 75를 쓰고, 공중에서 Aiming Mode를 쓰는 동안 초당 20을 소모한다.",
        "interp": false,
        "dropped": false,
-       "t": "올로룬의 Flowing Fog, Spritely Shadows와 시틀라리의 Smoke, Mirrors, and the Flowing Winds는 점프를 유지할 때 75를 쓰고, 공중에서 조준 모드를 쓰는 동안 초당 20을 소모한다.",
+       "t": "올로룬의 밤 영역의 선물 · 안개를 넘는 도약, 밤 영역의 선물·안개를 넘는 도약과 시틀라리의 연기, 거울, 그리고 바람을 타는 거울은 점프를 유지할 때 75를 쓰고, 공중에서 조준 모드를 쓰는 동안 초당 20을 소모한다.",
        "polish": {
-        "from": "올로룬의 Flowing Fog, Spritely Shadows와 시틀라리의 Smoke, Mirrors, and the Flowing Winds는 점프를 유지할 때 75를 쓰고, 공중에서 Aiming Mode를 쓰는 동안 초당 20을 소모한다.",
-        "text": "올로룬의 Flowing Fog, Spritely Shadows와 시틀라리의 Smoke, Mirrors, and the Flowing Winds는 점프를 유지할 때 75를 쓰고, 공중에서 조준 모드를 쓰는 동안 초당 20을 소모한다.",
-        "by": "or-ds"
+        "from": "올로룬의 밤 영역의 선물 · 안개를 넘는 도약, 밤 영역의 선물·안개를 넘는 도약과 시틀라리의 Smoke, Mirrors, and the 바람을 타는 거울은 점프를 유지할 때 75를 쓰고, 공중에서 Aiming Mode를 쓰는 동안 초당 20을 소모한다.",
+        "text": "올로룬의 밤 영역의 선물 · 안개를 넘는 도약, 밤 영역의 선물·안개를 넘는 도약과 시틀라리의 연기, 거울, 그리고 바람을 타는 거울은 점프를 유지할 때 75를 쓰고, 공중에서 조준 모드를 쓰는 동안 초당 20을 소모한다.",
+        "by": "ds"
        }
       },
       {
        "t_raw": "Abyss Herald: Frost Fall의 **Darkfrost Enchantment는 발동 시 50**, 첫 발동 3초 뒤의 후속 발동에는 20을 쓰며, Iniquitous Baptist의 Dark Frost Icicles는 첫 성공타에 80, 첫 발동 3초 뒤의 후속타에는 25를 쓴다.",
        "interp": false,
        "dropped": false,
-       "t": "심연 사도: 서리 내림의 **Darkfrost Enchantment는 발동 시 50**, 첫 발동 3초 뒤의 후속 발동에는 20을 쓰며, 죄 깊은 침례자의 Dark Frost Icicles는 첫 성공타에 80, 첫 발동 3초 뒤의 후속타에는 25를 쓴다."
+       "t": "심연 사도: 서리 내림의 **심연의 서리 부여는 발동 시 50**, 첫 발동 3초 뒤의 후속 발동에는 20을 쓰며, 죄 깊은 침례자의 암흑 서리 고드름은 첫 성공타에 80, 첫 발동 3초 뒤의 후속타에는 25를 쓴다."
       }
      ],
      "sources": [
@@ -664,18 +659,7 @@
       }
      ],
      "heading": "행동별 소모량",
-     "latin_left": [
-      "Alternate Sprint",
-      "Gale Blade Hold State",
-      "High-Speed Movement",
-      "Flowing Fog",
-      "Spritely Shadows",
-      "Smoke",
-      "Mirrors",
-      "Flowing Winds",
-      "Darkfrost Enchantment",
-      "Dark Frost Icicles"
-     ]
+     "latin_left": []
     },
     {
      "section": "소모 감소와 계산",
@@ -749,13 +733,13 @@
        "t_raw": "Anemo Resonance인 Impetuous Winds는 Stamina 소모를 15% 줄인다.",
        "interp": false,
        "dropped": false,
-       "t": "Anemo Resonance인 Impetuous Winds는 스태미나 소모를 15% 줄인다."
+       "t": "바람 원소 공명인 신속의 바람은 스태미나 소모를 15% 줄인다."
       },
       {
        "t_raw": "Anemograna가 1개 이상 따라다니면 Stamina 소모가 30% 줄어든다.",
        "interp": false,
        "dropped": false,
-       "t": "Anemograna가 1개 이상 따라다니면 스태미나 소모가 30% 줄어든다."
+       "t": "바람 씨앗이 1개 이상 따라다니면 스태미나 소모가 30% 줄어든다."
       },
       {
        "t_raw": "음식은 **두 번째 요리가 첫 번째 요리 효과를 덮어쓴다**.",
@@ -833,9 +817,6 @@
      ],
      "heading": "소모 감소와 계산",
      "latin_left": [
-      "Anemo Resonance",
-      "Impetuous Winds",
-      "Anemograna",
       "Sprinting",
       "Gliding"
      ]
@@ -850,7 +831,7 @@
        "t_raw": "Ley Line Disorder의 Ranged Buff는 주변에 상대가 없을 때 Sprinting과 Alternative Sprint Stamina 소모를 50% 줄인다.",
        "interp": false,
        "dropped": false,
-       "t": "지맥 이상의 Ranged Buff는 주변에 상대가 없을 때 Sprinting과 Alternative Sprint Stamina 소모를 50% 줄인다."
+       "t": "지맥 이상의 원거리 버프는 주변에 상대가 없을 때 Sprinting과 대시 대체 스태미나 소모를 50% 줄인다."
       },
       {
        "t_raw": "반대로 Condensed Ice는 Stamina 소모를 200% 또는 100% 늘린다.",
@@ -862,13 +843,13 @@
        "t_raw": "이 디버프는 주기적으로 걸리고, Cryo 속성을 Elemental Reaction으로 제거하면 더 이상 적용되지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "이 디버프는 주기적으로 걸리고, 얼음 속성을 Elemental Reaction으로 제거하면 더 이상 적용되지 않는다."
+       "t": "이 디버프는 주기적으로 걸리고, 얼음 속성을 원소 반응으로 제거하면 더 이상 적용되지 않는다."
       },
       {
        "t_raw": "Ley Line Disorder의 조건에서 Ranged Buff와 Condensed Ice는 소모 방향을 다르게 만드는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "지맥 이상의 조건에서 Ranged Buff와 응결의 얼음은 소모 방향을 다르게 만드는 것으로 보인다."
+       "t": "지맥 이상의 조건에서 원거리 버프와 응결의 얼음은 소모 방향을 다르게 만드는 것으로 보인다."
       }
      ],
      "sources": [
@@ -907,11 +888,7 @@
      ],
      "heading": "소모 감소와 계산",
      "latin_left": [
-      "Ranged Buff",
-      "Sprinting",
-      "Alternative Sprint Stamina",
-      "Elemental Reaction",
-      "Ranged Buff"
+      "Sprinting"
      ]
     },
     {
@@ -924,7 +901,7 @@
        "t_raw": "Impetuous Winds의 15%, Wolvensprint의 20%, Delicious Barbatos Ratatouille의 25%가 겹치면 초당 18 Stamina인 Sprinting 소모가 초당 7.2 Stamina가 된다.",
        "interp": false,
        "dropped": false,
-       "t": "Impetuous Winds의 15%, 늑대의 질주의 20%, Delicious Barbatos Ratatouille의 25%가 겹치면 초당 18 스태미나인 Sprinting 소모가 초당 7.2 스태미나가 된다."
+       "t": "신속의 바람의 15%, 늑대의 질주의 20%, 맛있는 바르바토스 라따뚜이의 25%가 겹치면 초당 18 스태미나인 Sprinting 소모가 초당 7.2 스태미나가 된다."
       },
       {
        "t_raw": "이는 18 × (1 - 0.15 - 0.20 - 0.25) = 7.2로 계산된 결과다.",
@@ -981,8 +958,6 @@
      ],
      "heading": "소모 감소와 계산",
      "latin_left": [
-      "Impetuous Winds",
-      "Delicious Barbatos Ratatouille",
       "Sprinting"
      ]
     },
@@ -1110,7 +1085,7 @@
        "t_raw": "Ley Line Disorder III와 IV에서는 캐릭터가 맞으면 Stamina가 **100** 감소한다.",
        "interp": false,
        "dropped": false,
-       "t": "Ley Line Disorder III와 IV에서는 캐릭터가 맞으면 스태미나가 **100** 감소한다."
+       "t": "지맥 이상 Ⅲ과 IV에서는 캐릭터가 맞으면 스태미나가 **100** 감소한다."
       },
       {
        "t_raw": "III의 222 Cryo 피해와 IV의 570 Cryo 피해가 다른데도 Stamina 감소량은 같다.",
@@ -1139,7 +1114,6 @@
      ],
      "heading": "회복과 특수 환경",
      "latin_left": [
-      "Ley Line Disorder III",
       "IV",
       "III",
       "IV"
@@ -1435,13 +1409,13 @@
        "t_raw": "Alternate Sprint는 처음에 10 Stamina를 쓰고, 움직이는 동안 매초 15 Stamina를 소모한다.",
        "interp": false,
        "dropped": false,
-       "t": "Alternate Sprint는 처음에 10 스태미나를 쓰고, 움직이는 동안 매초 15 스태미나를 소모한다."
+       "t": "대시 대체는 처음에 10 스태미나를 쓰고, 움직이는 동안 매초 15 스태미나를 소모한다."
       },
       {
        "t_raw": "즉 Alternate Sprint는 시작과 이동 중 소모를 모두 계산해야 하고, Climb은 시작 가능 여부에 최소 5 Stamina가 걸리는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "즉 Alternate Sprint는 시작과 이동 중 소모를 모두 계산해야 하고, Climb은 시작 가능 여부에 최소 5 스태미나가 걸리는 셈이다."
+       "t": "즉 대시 대체는 시작과 이동 중 소모를 모두 계산해야 하고, Climb은 시작 가능 여부에 최소 5 스태미나가 걸리는 셈이다."
       }
      ],
      "sources": [
@@ -1467,8 +1441,6 @@
       "Climbing",
       "Unknown",
       "Climb",
-      "Alternate Sprint",
-      "Alternate Sprint",
       "Climb"
      ]
     }

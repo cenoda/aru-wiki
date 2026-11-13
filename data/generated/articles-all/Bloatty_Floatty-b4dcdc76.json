@@ -1,0 +1,332 @@
+{
+ "node": "Bloatty Floatty",
+ "articles": [
+  {
+   "node": "Bloatty Floatty",
+   "from_version": "1.5",
+   "cutoff": "2021-06-08T00:00:00Z",
+   "input": [
+    {
+     "page": "Bloatty Floatty",
+     "url": "https://genshin-impact.fandom.com/wiki/Bloatty_Floatty",
+     "revision": 201097
+    }
+   ],
+   "input_counts": {
+    "mentions": 1,
+    "lines": 2,
+    "web": 0
+   },
+   "input_chars": 402,
+   "input_cut": false,
+   "input_hash": "777fc55028a4",
+   "writer": "or-ds,glm-flash",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "In Q1 Venti speaks about Flora in the third person ('for floaty-headed Flora'). The English never says he introduces the plant to Flora. Only Q2 is addressed to Flora.",
+     "quote": "There it is. Behold, a floaty imaginary friend for floaty-headed Flora: A Bloatty Floatty!",
+     "sentences": [
+      {
+       "t_raw": "Bloatty Floatty는 절벽 가장자리 근처에서 자라는 기이한 식물로, Balloon Flowers라는 통칭으로도 불린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퐁퐁나무는 절벽 가장자리 근처에서 자라는 기이한 식물로, Balloon Flowers라는 통칭으로도 불린다."
+      },
+      {
+       "t_raw": "공격하거나 조사하면 세 개의 풍선이 떨어져 나와 주변을 떠다니고, 풍선을 터뜨리면 상자가 생긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공격하거나 조사하면 세 개의 풍선이 떨어져 나와 주변을 떠다니고, 풍선을 터뜨리면 상자가 생긴다."
+      },
+      {
+       "t_raw": "활을 쓰는 캐릭터로 풍선을 터뜨릴 수 있고, 가까이 있으면 다른 근접 공격으로도 충분하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "활을 쓰는 캐릭터로 풍선을 터뜨릴 수 있고, 가까이 있으면 다른 근접 공격으로도 충분하다."
+      },
+      {
+       "t_raw": "Venti는 이렇게 말한다: \"저기 있네. 보라, 어리둥절한 Flora를 위한 둥둥 떠다니는 상상 속 친구, Bloatty Floatty여!\"",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "벤티는 이렇게 말한다: \"저기 있네. 보라, 어리둥절한 플로라를 위한 둥둥 떠다니는 상상 속 친구, 퐁퐁나무여!\""
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bloatty Floatty",
+       "revision": 201097,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bloatty Floatty",
+       "revision": 201097,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Venti"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Venti"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Balloon Flowers"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation follows from the English.",
+     "quote": "Attacking or investigating them causes the three balloons to pop off and float around the vicinity. Upon popping the balloons, a chest will spawn.",
+     "sentences": [
+      {
+       "t_raw": "Bloatty Floatty는 절벽 가장자리 근처에서 자라는 낯선 식물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퐁퐁나무는 절벽 가장자리 근처에서 자라는 낯선 식물이다."
+      },
+      {
+       "t_raw": "공격하거나 조사하면 **세 개의 풍선**이 떨어져 나와 주변을 떠다닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공격하거나 조사하면 **세 개의 풍선**이 떨어져 나와 주변을 떠다닌다."
+      },
+      {
+       "t_raw": "이 풍선을 터뜨리면 **상자**가 생긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 풍선을 터뜨리면 **상자**가 생긴다."
+      },
+      {
+       "t_raw": "공격이나 조사로 풍선이 떨어져 나오고, 그 풍선을 터뜨리면 상자가 생기므로, 풍선을 매개로 상자가 나타나는 구조로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "공격이나 조사로 풍선이 떨어져 나오고, 그 풍선을 터뜨리면 상자가 생기므로, 풍선을 매개로 상자가 나타나는 구조로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bloatty Floatty",
+       "revision": 201097,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "They can be popped with the help of a Bow character. However, if they are close enough, other close-combat attacks can suffice too.",
+     "sentences": [
+      {
+       "t_raw": "풍선은 활 캐릭터의 도움으로 터뜨릴 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "풍선은 활 캐릭터의 도움으로 터뜨릴 수 있다."
+      },
+      {
+       "t_raw": "충분히 가까이 있다면 다른 근접 공격으로도 충분하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "충분히 가까이 있다면 다른 근접 공격으로도 충분하다."
+      },
+      {
+       "t_raw": "활 캐릭터의 도움으로도, 가까운 거리의 근접 공격으로도 터뜨릴 수 있으므로, 터뜨리는 수단이 하나로 한정되지는 않는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "활 캐릭터의 도움으로도, 가까운 거리의 근접 공격으로도 터뜨릴 수 있으므로, 터뜨리는 수단이 하나로 한정되지는 않는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bloatty Floatty",
+       "revision": 201097,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "There it is. Behold, a floaty imaginary friend for floaty-headed Flora: A Bloatty Floatty!",
+     "sentences": [
+      {
+       "t_raw": "Venti는 Bloatty Floatty를 Flora를 위한 둥실둥실한 상상 속 친구로 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 퐁퐁나무를 플로라를 위한 둥실둥실한 상상 속 친구로 소개한다."
+      },
+      {
+       "t_raw": "그는 Flora를 머리가 둥실둥실한 Flora라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 플로라를 머리가 둥실둥실한 플로라라고 부른다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Venti"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation is reasonable.",
+     "quote": "Flora... Why exactly are you friends with a Bloatty Floatty?",
+     "sentences": [
+      {
+       "t_raw": "Venti는 Bloatty Floatty를 Flora를 위한 둥실둥실한 상상 속 친구라고 소개하고, Flora에게 왜 정확히 Bloatty Floatty와 친구인지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 퐁퐁나무를 플로라를 위한 둥실둥실한 상상 속 친구라고 소개하고, 플로라에게 왜 정확히 퐁퐁나무와 친구인지 묻는다."
+      },
+      {
+       "t_raw": "소개에서 Flora를 둥실둥실한 머리의 Flora로 부른 점과, 친구 관계의 이유를 되묻는 점이 함께 나타난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소개에서 플로라를 둥실둥실한 머리의 플로라로 부른 점과, 친구 관계의 이유를 되묻는 점이 함께 나타난다."
+      },
+      {
+       "t_raw": "Venti가 Flora의 성향을 둥실둥실한 표현으로 소개하면서도 그 친구 관계의 이유는 Flora에게 묻는 점에서, 이 장면은 소개와 궁금증이 맞물린 대화로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "벤티가 플로라의 성향을 둥실둥실한 표현으로 소개하면서도 그 친구 관계의 이유는 플로라에게 묻는 점에서, 이 장면은 소개와 궁금증이 맞물린 대화로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Venti"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Child's Secret",
+       "quest_ko": "동심의 비밀",
+       "version": "1.0",
+       "speaker": "Venti"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported. The Guili Plains location comes from M1.",
+     "quote": "Bloatty Floatties, colloquially known as Balloon Flowers, are strange plants that can be found growing near the cliff edges.",
+     "sentences": [
+      {
+       "t_raw": "Bloatty Floatties는 **Balloon Flowers**라는 통칭으로도 불리는 기이한 식물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Bloatty Floatties는 **Balloon Flowers**라는 통칭으로도 불리는 기이한 식물이다."
+      },
+      {
+       "t_raw": "이 식물은 절벽 가장자리 부근에서 자라는 것으로 설명된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 식물은 절벽 가장자리 부근에서 자라는 것으로 설명된다."
+      },
+      {
+       "t_raw": "**Guili Plains**에서는 Domain of Forsaken Ruins 북동쪽, Yaoguang Shoal을 마주한 곳에 Bloatty Floatty가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**귀리 평원**에서는 버림받은 폐허 북동쪽, 요광 해안을 마주한 곳에 퐁퐁나무가 있다."
+      },
+      {
+       "t_raw": "절벽 가장자리에서 자란다는 설명과 Guili Plains의 세부 위치가 함께 제시된 점은, 이 식물이 절벽 지형과 연결된 장소에서 발견되는 식물로 보이게 한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "절벽 가장자리에서 자란다는 설명과 귀리 평원의 세부 위치가 함께 제시된 점은, 이 식물이 절벽 지형과 연결된 장소에서 발견되는 식물로 보이게 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bloatty Floatty",
+       "revision": 201097,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Guili Plains",
+       "revision": 62745,
+       "section": "Notable Features",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Bloatty Floatties",
+      "Balloon Flowers"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of Venti's line; all parts match.",
+     "t_raw": "Flora... 넌 왜 정확히 Bloatty Floatty와 친구인 거지?",
+     "en": "Flora... Why exactly are you friends with a Bloatty Floatty?",
+     "speaker": "Venti",
+     "source": {
+      "kind": "quest",
+      "quest": "A Child's Secret",
+      "quest_ko": "동심의 비밀",
+      "version": "1.0",
+      "speaker": "Venti"
+     },
+     "t": "플로라... 넌 왜 정확히 퐁퐁나무와 친구인 거지?",
+     "speaker_ko": "벤티"
+    }
+   ]
+  }
+ ]
+}

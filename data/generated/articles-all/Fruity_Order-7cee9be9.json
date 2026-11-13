@@ -1,0 +1,1309 @@
+{
+ "node": "Fruity Order",
+ "articles": [
+  {
+   "node": "Fruity Order",
+   "from_version": "Luna VI",
+   "cutoff": "2026-05-19T00:00:00Z",
+   "input": [
+    {
+     "page": "Fruity Order",
+     "url": "https://genshin-impact.fandom.com/wiki/Fruity_Order",
+     "revision": 2090370
+    }
+   ],
+   "input_counts": {
+    "mentions": 8,
+    "lines": 3,
+    "web": 0
+   },
+   "input_chars": 2164,
+   "input_cut": false,
+   "input_hash": "afc982569c88",
+   "writer": "glm-flash,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "Sentence 1 states as fact that the group 'values cohesion', which the English doesn't say (only that betrayal is punishable by death). Sentence 3 claims Fontaine's group is more reputable than the Mondstadt/Liyue groups and that Fruity Order sits at its apex. The English only says the Fontainian group has a fairly high reputation and says nothing of Fruity Order's rank.",
+     "quote": "the order exists to maintain order and balance in the world",
+     "sentences": [
+      {
+       "t_raw": "Fruity Order는 주로 Fontaine에서 활동하는 Treasure Hoarders 그룹이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "질서 과일단은 주로 폰타인에서 활동하는 보물 사냥단 그룹이다."
+      },
+      {
+       "t_raw": "이름 없는 'the boss'와 식물 관련 코드네임을 가진 Five Great Operatives, 그리고 수십 명의 부하로 구성되어 있으며, 배신은 사형에 처해지는 조직이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "이름 없는 '보스'와 식물 관련 코드네임을 가진 다섯 대요원, 그리고 수십 명의 부하로 구성되어 있으며, 배신은 사형에 처해지는 조직이다.",
+       "polish": {
+        "from": "이름 없는 'the boss'와 식물 관련 코드네임을 가진 다섯 대요원, 그리고 수십 명의 부하로 구성되어 있으며, 배신은 사형에 처해지는 조직이다.",
+        "text": "이름 없는 '보스'와 식물 관련 코드네임을 가진 다섯 대요원, 그리고 수십 명의 부하로 구성되어 있으며, 배신은 사형에 처해지는 조직이다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "표면상으로는 보물 사냥꾼이지만, 스스로는 '세계의 질서와 균형을 유지한다'는 명분을 내걸고 있는 것이 이 그룹의 특이한 점이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "표면상으로는 보물 사냥꾼이지만, 스스로는 '세계의 질서와 균형을 유지한다'는 명분을 내걸고 있는 것이 이 그룹의 특이한 점이다."
+      },
+      {
+       "t_raw": "또한 Fontaine의 Treasure Hoarders가 상당히 높은 평판을 누리고 있다고 묘사되는 점으로 보아, 그 안에서 활동하는 Fruity Order 역시 무시할 수 없는 위치에 있지 않을까 추측해 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "또한 폰타인의 보물 사냥단이 상당히 높은 평판을 누리고 있다고 묘사되는 점으로 보아, 그 안에서 활동하는 질서 과일단 역시 무시할 수 없는 위치에 있지 않을까 추측해 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Villains"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Treasure Hoarders",
+       "revision": 1660929,
+       "section": "Description",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported or are reasonable interpretation.",
+     "quote": "Betrayal is punishable by death.",
+     "sentences": [
+      {
+       "t_raw": "Fruity Order는 Fontaine을 중심으로 활동하는 Treasure Hoarders 계열의 조직이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "질서 과일단은 폰타인을 중심으로 활동하는 보물 사냥단 계열의 조직이다."
+      },
+      {
+       "t_raw": "구성은 'the boss'라 불리는 이름 없는 보스, 식물에서 딴 코드네임을 지닌 Five Great Operatives, 그리고 수십 명의 일반 멤버로 이루어져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구성은 '보스'라 불리는 이름 없는 보스, 식물에서 딴 코드네임을 지닌 다섯 대요원, 그리고 수십 명의 일반 멤버로 이루어져 있다.",
+       "polish": {
+        "from": "구성은 'the boss'라 불리는 이름 없는 보스, 식물에서 딴 코드네임을 지닌 다섯 대요원, 그리고 수십 명의 일반 멤버로 이루어져 있다.",
+        "text": "구성은 '보스'라 불리는 이름 없는 보스, 식물에서 딴 코드네임을 지닌 다섯 대요원, 그리고 수십 명의 일반 멤버로 이루어져 있다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "특히 배신은 사형에 처해질 정도로 엄격한 규율을 자랑하는데, 보물찾고 조직답지 않은 이 격식은 조직이 단순한 무리가 아니라는 인상을 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "특히 배신은 사형에 처해질 정도로 엄격한 규율을 자랑하는데, 보물찾고 조직답지 않은 이 격식은 조직이 단순한 무리가 아니라는 인상을 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Villains"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by the Peach profile and quote. The interpretation is reasonable.",
+     "quote": "to maintain order and balance lost in this world",
+     "sentences": [
+      {
+       "t_raw": "조직의 존재 목적에 대해서는 \"Trendy Zaytun Peach\"가 세계에 잃어버린 질서와 균형을 지키기 위한 것이라고 밝힌 바 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조직의 존재 목적에 대해서는 「트렌디한 뚠뚠 복숭아」가 세계에 잃어버린 질서와 균형을 지키기 위한 것이라고 밝힌 바 있다."
+      },
+      {
+       "t_raw": "보물찾고가 세계의 질서를 논한다는 점은 어딘가 아이러니하지만, Peach가 투표 절차까지 강조하는 모습을 보면 이들은 스스로를 그런 조직으로 여기고 있는 것이 분명해 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "보물찾고가 세계의 질서를 논한다는 점은 어딘가 아이러니하지만, Peach가 투표 절차까지 강조하는 모습을 보면 이들은 스스로를 그런 조직으로 여기고 있는 것이 분명해 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Villains"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Villains",
+       "quest_ko": "나쁜 녀석들",
+       "version": "4.1",
+       "speaker": "\"Trendy Zaytun Peach\""
+      },
+      {
+       "kind": "wiki",
+       "page": "\"Trendy Zaytun Peach\"",
+       "revision": 1386447,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Peach"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The high reputation applies to the Fontainian Treasure Hoarders in general. The English doesn't say Fruity Order has high standing or is a 'branch' (지부) with renown among other groups. Sentence 1 is supported by A3.",
+     "quote": "The Fontainian group of Treasure Hoarders appear to be in somewhat of a high reputation",
+     "sentences": [
+      {
+       "t_raw": "Treasure Hoarders 중 Fontaine 지역 조직은 Mondstadt와 Liyue의 그룹들이 Grand Thief를 설득해 도움을 청할 만큼 상당히 높은 평판을 누리는 것으로 묘사되며, Fruity Order는 그러한 Treasure Hoarders에 속한 조직이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "보물 사냥단 중 폰타인 지역 조직은 몬드와 리월의 그룹들이 대보물사냥가를 설득해 도움을 청할 만큼 상당히 높은 평판을 누리는 것으로 묘사되며, 질서 과일단은 그러한 보물 사냥단에 속한 조직이다."
+      },
+      {
+       "t_raw": "다만 최근에는 \"Tricky Bulle Fruit\"와 \"Intrepid Valberry\"가 탈퇴하면서 Five Great Operatives 중 세 명만 남게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 최근에는 「교활한 풍선귤」과 「용맹한 낙락베리」가 탈퇴하면서 다섯 대요원 중 세 명만 남게 되었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Treasure Hoarders",
+       "revision": 1660929,
+       "section": "Description",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Description",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Wolfhook's family view and no-vote belief, and Calla Lily's status, are supported. The interpretation is acceptable.",
+     "quote": "Wolfhook views the order as a family.",
+     "sentences": [
+      {
+       "t_raw": "멤버들의 성향도 제각각인데, Wolfhook은 조직을 가족으로 여기며 다수결 따위 투표가 필요 없다고 생각하고, Calla Lily는 사정하는 일이라면 보스조차 결과를 묻지 않을 만큼 조직 안에서 확고한 지위를 지닌 암살자다.",
+       "interp": false,
+       "dropped": false,
+       "t": "멤버들의 성향도 제각각인데, 고리고리 열매는 조직을 가족으로 여기며 다수결 따위 투표가 필요 없다고 생각하고, 통통 연꽃은 사정하는 일이라면 보스조차 결과를 묻지 않을 만큼 조직 안에서 확고한 지위를 지닌 암살자다."
+      },
+      {
+       "t_raw": "가족이라며 화합을 말하는 멤버와 냉혹한 암살자가 한 지붕 아래 있다는 점에서, 이 조직의 '질서'가 실제로는 어떤 모습인지 궁금해지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가족이라며 화합을 말하는 멤버와 냉혹한 암살자가 한 지붕 아래 있다는 점에서, 이 조직의 '질서'가 실제로는 어떤 모습인지 궁금해지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "\"Guileless Wolfhook\"",
+       "revision": 1389533,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "\"Ruthless Calla Lily\"",
+       "revision": 2090425,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체 — Five Great Operatives",
+     "status": "accepted",
+     "note": "Supported by the Calla Lily profile. The interpretation is reasonable.",
+     "quote": "She is a formidable assassin and a high-ranking member, as the boss does not investigate matters that she personally deals with regardless of the outcome.",
+     "sentences": [
+      {
+       "t_raw": "Ruthless Calla Lily는 Five Great Operatives 중 한 명이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Ruthless Calla Lily는 다섯 대요원 중 한 명이다."
+      },
+      {
+       "t_raw": "그녀는 강력한 암살자이며, 보스가 그녀가 직접 처리하는 일은 결과와 관계없이 조사하지 않을 만큼 높은 직위에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 강력한 암살자이며, 보스가 그녀가 직접 처리하는 일은 결과와 관계없이 조사하지 않을 만큼 높은 직위에 있다."
+      },
+      {
+       "t_raw": "이는 그녀가 조직 안에서 상당한 재량을 가진 위치에 있다는 뜻으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 그녀가 조직 안에서 상당한 재량을 가진 위치에 있다는 뜻으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Villains"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Members > Current Members",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "\"Ruthless Calla Lily\"",
+       "revision": 2090425,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체 — 다섯 대요원",
+     "latin_left": [
+      "Ruthless Calla Lily"
+     ]
+    },
+    {
+     "section": "정체 — Five Great Operatives",
+     "status": "accepted",
+     "note": "All supported by M3 and A2/A8.",
+     "quote": "Wolfhook believes there is no need to vote as family members are supposed to look after another, regardless of who is the majority or minority.",
+     "sentences": [
+      {
+       "t_raw": "Guileless Wolfhook는 Five Great Operatives 중 한 명이며, 조직을 가족으로 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Guileless Wolfhook는 다섯 대요원 중 한 명이며, 조직을 가족으로 여긴다."
+      },
+      {
+       "t_raw": "Guileless Wolfhook은 가족끼리는 다수와 소수의 구분 없이 서로를 돌봐야 하므로 투표할 필요가 없다고 생각한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Guileless Wolfhook은 가족끼리는 다수와 소수의 구분 없이 서로를 돌봐야 하므로 투표할 필요가 없다고 생각한다."
+      },
+      {
+       "t_raw": "조직의 의사 결정을 가족 관계로 이해하는 태도가 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "조직의 의사 결정을 가족 관계로 이해하는 태도가 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Villains"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Members > Current Members",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "\"Guileless Wolfhook\"",
+       "revision": 1389533,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체 — 다섯 대요원",
+     "latin_left": [
+      "Guileless Wolfhook",
+      "Guileless Wolfhook"
+     ]
+    },
+    {
+     "section": "정체 — Five Great Operatives",
+     "status": "accepted",
+     "note": "Supported: Q1 is stated in English; Peach asks the Traveler to tell Wolfhook to come at once (M2).",
+     "quote": "And I'm one of the Five Great Operatives of the Fruity Order. Do I look like a child to you?",
+     "sentences": [
+      {
+       "t_raw": "Trendy Zaytun Peach는 스스로를 Five Great Operatives 중 하나라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Trendy Zaytun Peach는 스스로를 다섯 대요원 중 하나라고 소개한다."
+      },
+      {
+       "t_raw": "또한 Traveler에게 Guileless Wolfhook을 보거든 자신에게 곧바로 오라고 전해 달라고 부탁한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 여행자에게 Guileless Wolfhook을 보거든 자신에게 곧바로 오라고 전해 달라고 부탁한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Members > Current Members",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "\"Trendy Zaytun Peach\"",
+       "revision": 1386447,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Villains",
+       "quest_ko": "나쁜 녀석들",
+       "version": "4.1",
+       "speaker": "\"Trendy Zaytun Peach\""
+      }
+     ],
+     "heading": "정체 — 다섯 대요원",
+     "latin_left": [
+      "Trendy Zaytun Peach",
+      "Guileless Wolfhook"
+     ]
+    },
+    {
+     "section": "드러난 역사 — Nod-Krai의 기원",
+     "status": "accepted",
+     "note": "Supported by A4.",
+     "quote": "The Fruity Order was originally established some time after the cataclysm by Soini, a man known as the Godfather in Nod-Krai's black market.",
+     "sentences": [
+      {
+       "t_raw": "Fruity Order라는 이름의 원조 조직은 **cataclysm 이후** 어느 시점에 Nod-Krai의 암시장에서 Godfather로 알려진 Soini에 의해 세워졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "질서 과일단라는 이름의 원조 조직은 **대재앙 이후** 어느 시점에 노드크라이의 암시장에서 Godfather로 알려진 소이니에 의해 세워졌다.",
+       "polish": {
+        "from": "질서 과일단라는 이름의 원조 조직은 **cataclysm 이후** 어느 시점에 노드크라이의 암시장에서 Godfather로 알려진 소이니에 의해 세워졌다.",
+        "text": "질서 과일단라는 이름의 원조 조직은 **대재앙 이후** 어느 시점에 노드크라이의 암시장에서 Godfather로 알려진 소이니에 의해 세워졌다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "Soini 자신이 Zaytun Peach였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소이니 자신이 뚠뚠 복숭아였다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "History",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Blackmarrow Lantern"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 노드크라이의 기원",
+     "latin_left": [
+      "Godfather"
+     ]
+    },
+    {
+     "section": "드러난 역사 — Nod-Krai의 기원",
+     "status": "accepted",
+     "note": "Sentences 0 and 1 are supported by A4. Sentence 2 says these five codenames make up the original organization's five codenames. The English lists these five roles but never says they were the original Five Great Operatives or the only codenames, so that is an added claim.",
+     "quote": "Nashchokin was the \"Bulle Fruit,\" Schanzkowska was the \"Wolfhook,\" Dmitri Dubrovich Sukhotin was the \"Valberry,\"",
+     "sentences": [
+      {
+       "t_raw": "원조 조직에는 Soini 외에도 Nashchokin이 Bulle Fruit, Schanzkowska가 Wolfhook, Dmitri Dubrovich Sukhotin이 Valberry라는 코드네임으로 이름을 올렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원조 조직에는 소이니 외에도 나쇼킨이 풍선귤, Schanzkowska가 고리고리 열매, Dmitri Dubrovich Sukhotin이 낙락베리라는 코드네임으로 이름을 올렸다."
+      },
+      {
+       "t_raw": "**Godfather의 이름 없는 집사**는 Calla Lily였고, 이 인물은 결국 Godfather를 배신했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**Godfather의 이름 없는 집사**는 통통 연꽃였고, 이 인물은 결국 Godfather를 배신했다."
+      },
+      {
+       "t_raw": "이렇게 Zaytun Peach, Bulle Fruit, Wolfhook, Valberry, Calla Lily가 원조 조직에서 쓰이던 다섯 개의 코드네임으로 알려져 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "이렇게 뚠뚠 복숭아, 풍선귤, 고리고리 열매, 낙락베리, 통통 연꽃이 원조 조직에서 쓰이던 다섯 개의 코드네임으로 알려져 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "History",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Blackmarrow Lantern"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 노드크라이의 기원",
+     "latin_left": [
+      "Schanzkowska",
+      "Dmitri Dubrovich Sukhotin",
+      "Godfather",
+      "Godfather"
+     ]
+    },
+    {
+     "section": "드러난 역사 — Nod-Krai의 기원",
+     "status": "accepted",
+     "note": "Sentence 0 is supported by A4, and sentence 1 by A1. Sentence 2 is a reasonable hedged interpretation.",
+     "quote": "It is unknown if the present-day Fruity Order is descended from the same organization, or an unrelated group using their name and traditional codenames.",
+     "sentences": [
+      {
+       "t_raw": "현재의 Fruity Order가 이 원조 조직의 후손인지, 아니면 그 이름과 **전통적인 코드네임**을 사용하는 무관한 집단인지는 알 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재의 질서 과일단이 이 원조 조직의 후손인지, 아니면 그 이름과 **전통적인 코드네임**을 사용하는 무관한 집단인지는 알 수 없다."
+      },
+      {
+       "t_raw": "현재의 Fruity Order는 주로 Fontaine에서 활동한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재의 질서 과일단은 주로 폰타인에서 활동한다."
+      },
+      {
+       "t_raw": "원조 조직을 세운 Soini가 Nod-Krai의 암시장에서 Godfather로 알려졌고 현재의 Fruity Order가 주로 Fontaine에서 활동한다는 점을 고려하면, 두 조직의 연결 여부는 쉽게 단정하기 어렵다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "원조 조직을 세운 소이니가 노드크라이의 암시장에서 Godfather로 알려졌고 현재의 질서 과일단이 주로 폰타인에서 활동한다는 점을 고려하면, 두 조직의 연결 여부는 쉽게 단정하기 어렵다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "History",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Blackmarrow Lantern"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 노드크라이의 기원",
+     "latin_left": [
+      "Godfather"
+     ]
+    },
+    {
+     "section": "작중 행적 — Nod-Krai Trade Expo",
+     "status": "accepted",
+     "note": "Sentences 0 and 1 are supported by A6 and M7. Sentence 2 is a fair interpretation.",
+     "quote": "The Fruity Order has won the rights to the Treasure Hoarder booth in the Nod-Krai Trade Expo several years in a row.",
+     "sentences": [
+      {
+       "t_raw": "Fruity Order는 **Nod-Krai Trade Expo**의 Treasure Hoarder 부스를 여러 해 연속 차지했지만, 가장 최근 expo에서는 다른 Treasure Hoarder 조직들과의 충돌을 피하려고 물러났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "질서 과일단은 **Nod-Krai Trade Expo**의 보물 사냥단 부스를 여러 해 연속 차지했지만, 가장 최근 엑스포에서는 다른 보물 사냥단 조직들과의 충돌을 피하려고 물러났다.",
+       "polish": {
+        "from": "질서 과일단은 **Nod-Krai Trade Expo**의 보물 사냥단 부스를 여러 해 연속 차지했지만, 가장 최근 expo에서는 다른 보물 사냥단 조직들과의 충돌을 피하려고 물러났다.",
+        "text": "질서 과일단은 **Nod-Krai Trade Expo**의 보물 사냥단 부스를 여러 해 연속 차지했지만, 가장 최근 엑스포에서는 다른 보물 사냥단 조직들과의 충돌을 피하려고 물러났다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "그런데 조직원 지망생 **Lakkaberry**가 그 이름으로 부스를 신청해 다른 조직들을 분노하게 했고, **Calla Lily**와 운영진들이 경쟁 조직들을 상대하게 됐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 조직원 지망생 **백령과**가 그 이름으로 부스를 신청해 다른 조직들을 분노하게 했고, **통통 연꽃**과 운영진들이 경쟁 조직들을 상대하게 됐다."
+      },
+      {
+       "t_raw": "물러나려던 조직이 이름을 빌린 신청 때문에 분쟁에 휘말린 구도다.",
+       "interp": true,
+       "dropped": false,
+       "t": "물러나려던 조직이 이름을 빌린 신청 때문에 분쟁에 휘말린 구도다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "History",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "\"Ruthless Calla Lily\"",
+       "revision": 2090425,
+       "section": "Story",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — Nod-Krai Trade Expo",
+     "latin_left": [
+      "Nod-Krai Trade Expo"
+     ]
+    },
+    {
+     "section": "작중 행적 — Nod-Krai Trade Expo",
+     "status": "accepted",
+     "note": "All sentences are supported by M7 and A14. The interpretation in (4) is a reasonable inference.",
+     "quote": "Calla Lily stated that they could not make trouble at the expo and told him to meet her at the harbor once the expo ended.",
+     "sentences": [
+      {
+       "t_raw": "사태를 정리한 뒤 Calla Lily는 expo에서 Lakkaberry를 만났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사태를 정리한 뒤 통통 연꽃은 엑스포에서 백령과를 만났다.",
+       "polish": {
+        "from": "사태를 정리한 뒤 통통 연꽃은 expo에서 백령과를 만났다.",
+        "text": "사태를 정리한 뒤 통통 연꽃은 엑스포에서 백령과를 만났다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "Lakkaberry가 가입 의사를 묻자 Calla Lily는 expo에서 문제를 일으킬 수 없다며 expo가 끝난 뒤 항구에서 만나자고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백령과가 가입 의사를 묻자 통통 연꽃은 엑스포에서 문제를 일으킬 수 없다며 엑스포가 끝난 뒤 항구에서 만나자고 했다.",
+       "polish": {
+        "from": "백령과가 가입 의사를 묻자 통통 연꽃은 expo에서 문제를 일으킬 수 없다며 expo가 끝난 뒤 항구에서 만나자고 했다.",
+        "text": "백령과가 가입 의사를 묻자 통통 연꽃은 엑스포에서 문제를 일으킬 수 없다며 엑스포가 끝난 뒤 항구에서 만나자고 했다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "떠나기 전에는 패배를 곱게 받아들이지 않는 동료들이 많음을 알고 Traveler와 Jahoda에게 아이들을 살펴봐 달라고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "떠나기 전에는 패배를 곱게 받아들이지 않는 동료들이 많음을 알고 여행자와 야호다에게 아이들을 살펴봐 달라고 했다."
+      },
+      {
+       "t_raw": "한편 Fruity Order의 구성원 목록에는 Lakkaberry가 이름을 올리고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 질서 과일단의 구성원 목록에는 백령과가 이름을 올리고 있다."
+      },
+      {
+       "t_raw": "사칭 사건을 일으킨 인물이 구성원 목록에 오른 것은 그를 단순한 외부 사칭자로만 보기 어렵게 만든다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사칭 사건을 일으킨 인물이 구성원 목록에 오른 것은 그를 단순한 외부 사칭자로만 보기 어렵게 만든다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "\"Ruthless Calla Lily\"",
+       "revision": 2090425,
+       "section": "Story",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Members > \"Members\"",
+       "paragraph": "A14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — Nod-Krai Trade Expo",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Curve의 core 탈취",
+     "status": "accepted",
+     "note": "All sentences are supported by A5 and M4.",
+     "quote": "Sandrone's subordinates were able to recover Curve's core, but while transporting it to Nod-Krai it was stolen by the Fruity Order",
+     "sentences": [
+      {
+       "t_raw": "Problem-Sorting Robot 당시 Fruity Order는 Fatui에게서 **Curve의 core**를 훔쳤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문제 로봇 당시 질서 과일단은 우인단에게서 **「곡선」의 코어**를 훔쳤다.",
+       "polish": {
+        "from": "문제 로봇 당시 질서 과일단은 우인단에게서 **「곡선」의 core**를 훔쳤다.",
+        "text": "문제 로봇 당시 질서 과일단은 우인단에게서 **「곡선」의 코어**를 훔쳤다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "Sandrone의 부하들이 회수한 core를 Nod-Krai로 운반하던 중 Fruity Order가 빼앗은 것이며, Aino의 prospector 로봇 하나에 숨긴 뒤 종적을 감췄다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산드로네의 부하들이 회수한 코어를 노드크라이로 운반하던 중 질서 과일단이 빼앗은 것이며, 아이노의 탐광 로봇 하나에 숨긴 뒤 종적을 감췄다.",
+       "polish": {
+        "from": "산드로네의 부하들이 회수한 core를 노드크라이로 운반하던 중 질서 과일단이 빼앗은 것이며, 아이노의 prospector 로봇 하나에 숨긴 뒤 종적을 감췄다.",
+        "text": "산드로네의 부하들이 회수한 코어를 노드크라이로 운반하던 중 질서 과일단이 빼앗은 것이며, 아이노의 탐광 로봇 하나에 숨긴 뒤 종적을 감췄다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "이들은 외부인이라고 전해지고, Traveler와 Paimon은 설명만으로 이들을 알아보지 못했지만 당시 인물들은 아마 Wolfhook, Calla Lily, Zaytun Peach였을 것으로 여겨진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 외부인이라고 전해지고, 여행자와 페이몬은 설명만으로 이들을 알아보지 못했지만 당시 인물들은 아마 고리고리 열매, 통통 연꽃, 뚠뚠 복숭아였을 것으로 여겨진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "History",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Problem-Sorting Robot"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Sandrone",
+       "revision": 2053624,
+       "section": "Story > In Fontaine",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Problem-Sorting Robot"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 「곡선」의 core 탈취",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Curve의 core 탈취",
+     "status": "accepted",
+     "note": "The facts are supported by M4 and A5. The interpretation in (2) follows from them.",
+     "quote": "ultimately leading to Curve's reconstruction as Chard Lombro",
+     "sentences": [
+      {
+       "t_raw": "Curve의 손상된 core는 Talochard를 기반으로 한 새 인격으로 다시 깨어나 Chard Lombro라는 이름을 얻었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「곡선」의 손상된 코어는 탈로샤를 기반으로 한 새 인격으로 다시 깨어나 샤샤·롬브로라는 이름을 얻었다.",
+       "polish": {
+        "from": "「곡선」의 손상된 core는 탈로샤를 기반으로 한 새 인격으로 다시 깨어나 샤샤·롬브로라는 이름을 얻었다.",
+        "text": "「곡선」의 손상된 코어는 탈로샤를 기반으로 한 새 인격으로 다시 깨어나 샤샤·롬브로라는 이름을 얻었다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "이 사건은 Curve가 **Chard Lombro**로 재건되는 일로 이어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 사건은 「곡선」이 **샤샤·롬브로**로 재건되는 일로 이어졌다."
+      },
+      {
+       "t_raw": "탈취와 재탄생이 한 줄로 이어지면서, core를 숨긴 행위는 곧 Curve의 새 이름과 인격을 불러온 계기로 남게 된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "탈취와 재탄생이 한 줄로 이어지면서, 코어를 숨긴 행위는 곧 「곡선」의 새 이름과 인격을 불러온 계기로 남게 된 셈이다.",
+       "polish": {
+        "from": "탈취와 재탄생이 한 줄로 이어지면서, core를 숨긴 행위는 곧 「곡선」의 새 이름과 인격을 불러온 계기로 남게 된 셈이다.",
+        "text": "탈취와 재탄생이 한 줄로 이어지면서, 코어를 숨긴 행위는 곧 「곡선」의 새 이름과 인격을 불러온 계기로 남게 된 셈이다.",
+        "by": "qwen"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "History",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Problem-Sorting Robot"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Sandrone",
+       "revision": 2053624,
+       "section": "Story > In Fontaine",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Problem-Sorting Robot"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 「곡선」의 core 탈취",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Bulle Fruit의 배신",
+     "status": "accepted",
+     "note": "All sentences are supported by A3 and M8.",
+     "quote": "After \"Tricky Bulle Fruit\" betrays the order, the Fruity Order's higher-ups send Ruthless Calla Lily to eliminate him.",
+     "sentences": [
+      {
+       "t_raw": "Tricky Bulle Fruit는 Fruity Order의 Five Great Operatives 중 하나였으나, Villains와 Questions and Answers 사건 이후 Intrepid Valberry와 함께 조직을 떠나 Fortress of Meropide에서 오픈 월드 NPC로 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "교활한 풍선귤은 질서 과일단의 다섯 대요원 중 하나였으나, 나쁜 녀석들과 문제와 정답 사건 이후 「용맹한 낙락베리」와 함께 조직을 떠나 메로피드 요새에서 오픈 월드 NPC로 등장한다."
+      },
+      {
+       "t_raw": "**Tricky Bulle Fruit의 배신** 이후 Fruity Order의 상부는 그를 제거하기 위해 Ruthless Calla Lily를 보낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**교활한 풍선귤의 배신** 이후 질서 과일단의 상부는 그를 제거하기 위해 Ruthless Calla Lily를 보낸다."
+      },
+      {
+       "t_raw": "그녀는 배신 경위를 조사하다가 Tricky Bulle Fruit가 Blanche라는 고아를 거두고 모든 일을 그녀를 위해 했음을 알게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 배신 경위를 조사하다가 교활한 풍선귤이 Blanche라는 고아를 거두고 모든 일을 그녀를 위해 했음을 알게 된다."
+      },
+      {
+       "t_raw": "대면 자리에서 Tricky Bulle Fruit는 처벌을 받아들이지만, 옛 동료인 Trendy Zaytun Peach와 Guileless Wolfhook가 그를 변호한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대면 자리에서 교활한 풍선귤은 처벌을 받아들이지만, 옛 동료인 Trendy Zaytun Peach와 Guileless Wolfhook가 그를 변호한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Description",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Members > Former Members",
+       "paragraph": "A12",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Red and the Black"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Members > Former Members",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "\"Ruthless Calla Lily\"",
+       "revision": 2090425,
+       "section": "Story",
+       "paragraph": "M8",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Villains"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Villains",
+       "quest_ko": "나쁜 녀석들",
+       "version": "4.1",
+       "speaker": "Blanche"
+      }
+     ],
+     "heading": "작중 행적 — 풍선귤의 배신",
+     "latin_left": [
+      "NPC",
+      "Ruthless Calla Lily",
+      "Blanche",
+      "Trendy Zaytun Peach",
+      "Guileless Wolfhook"
+     ]
+    },
+    {
+     "section": "작중 행적 — Bulle Fruit의 배신",
+     "status": "accepted",
+     "note": "The facts are supported by M8. The interpretation in (3) is a reasonable reading of her holding back out of mercy after investigating.",
+     "quote": "In the ensuing fight, she holds back out of mercy and allows herself to be defeated by the Traveler and the others.",
+     "sentences": [
+      {
+       "t_raw": "이어진 싸움에서 그녀는 **자비를 베풀어** 힘을 덜 쓰고 Traveler와 일행에게 패배를 허용한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어진 싸움에서 그녀는 **자비를 베풀어** 힘을 덜 쓰고 여행자와 일행에게 패배를 허용한다."
+      },
+      {
+       "t_raw": "떠나기 전 Blanche는 자신을 거둔 오라비가 모든 일을 자신을 위해 했음을 알고 Pure Water 조제법 사본을 사과로 건네고, 그녀는 이를 받아들인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "떠나기 전 Blanche는 자신을 거둔 오라비가 모든 일을 자신을 위해 했음을 알고 Pure Water 조제법 사본을 사과로 건네고, 그녀는 이를 받아들인다."
+      },
+      {
+       "t_raw": "그녀는 Blanche에게 오라비의 말을 들으라고 당부한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 Blanche에게 오라비의 말을 들으라고 당부한다."
+      },
+      {
+       "t_raw": "제거 명령을 밀어붙이지 않고 물러난 것은 조사로 알게 된 두 사람의 사정을 외면하지 않은 선택으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "제거 명령을 밀어붙이지 않고 물러난 것은 조사로 알게 된 두 사람의 사정을 외면하지 않은 선택으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "\"Ruthless Calla Lily\"",
+       "revision": 2090425,
+       "section": "Story",
+       "paragraph": "M8",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Villains"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 풍선귤의 배신",
+     "latin_left": [
+      "Blanche",
+      "Pure Water",
+      "Blanche"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by A4 and A5, including the hedged 'presumably' and 'unknown' points. The interpretation in (5) is reasonable.",
+     "quote": "It is unknown if the present-day Fruity Order is descended from the same organization, or an unrelated group using their name and traditional codenames.",
+     "sentences": [
+      {
+       "t_raw": "원조 Fruity Order는 cataclysm 이후 Nod-Krai의 암시장에서 Godfather로 불린 Soini가 세운 조직이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원조 질서 과일단은 대재앙 이후 노드크라이의 암시장에서 Godfather로 불린 소이니가 세운 조직이다.",
+       "polish": {
+        "from": "원조 질서 과일단은 cataclysm 이후 노드크라이의 암시장에서 Godfather로 불린 소이니가 세운 조직이다.",
+        "text": "원조 질서 과일단은 대재앙 이후 노드크라이의 암시장에서 Godfather로 불린 소이니가 세운 조직이다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "Soini 자신이 Zaytun Peach였고, Nashchokin은 Bulle Fruit, Schanzkowska는 Wolfhook, Dmitri Dubrovich Sukhotin은 Valberry였으며, Godfather의 이름 없는 집사가 Calla Lily로서 그를 배신했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소이니 자신이 뚠뚠 복숭아였고, 나쇼킨은 풍선귤, Schanzkowska는 고리고리 열매, Dmitri Dubrovich Sukhotin은 낙락베리였으며, Godfather의 이름 없는 집사가 통통 연꽃으로서 그를 배신했다."
+      },
+      {
+       "t_raw": "현재 조직이 이 원조의 후손인지, 이름과 전통적인 코드네임만 빌린 무관한 집단인지는 알 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 조직이 이 원조의 후손인지, 이름과 전통적인 코드네임만 빌린 무관한 집단인지는 알 수 없다."
+      },
+      {
+       "t_raw": "Problem-Sorting Robot 당시 Fruity Order는 Fatui에게서 Curve의 core를 훔쳐 Aino의 탐광 로봇에 숨겼고, 그 일은 Chard Lombro의 재탄생으로 이어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문제 로봇 당시 질서 과일단은 우인단에게서 「곡선」의 코어를 훔쳐 아이노의 탐광 로봇에 숨겼고, 그 일은 샤샤·롬브로의 재탄생으로 이어졌다.",
+       "polish": {
+        "from": "문제 로봇 당시 질서 과일단은 우인단에게서 「곡선」의 core를 훔쳐 아이노의 탐광 로봇에 숨겼고, 그 일은 샤샤·롬브로의 재탄생으로 이어졌다.",
+        "text": "문제 로봇 당시 질서 과일단은 우인단에게서 「곡선」의 코어를 훔쳐 아이노의 탐광 로봇에 숨겼고, 그 일은 샤샤·롬브로의 재탄생으로 이어졌다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "당시 행동한 인물은 Wolfhook, Calla Lily, Zaytun Peach로 추정된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "당시 행동한 인물은 고리고리 열매, 통통 연꽃, 뚠뚠 복숭아로 추정된다."
+      },
+      {
+       "t_raw": "원조와 현재에 같은 코드네임이 겹친다는 점은 계보를 단정하기 어렵게 만든다.",
+       "interp": true,
+       "dropped": false,
+       "t": "원조와 현재에 같은 코드네임이 겹친다는 점은 계보를 단정하기 어렵게 만든다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "History",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Blackmarrow Lantern"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "History",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Problem-Sorting Robot"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Godfather",
+      "Schanzkowska",
+      "Dmitri Dubrovich Sukhotin",
+      "Godfather"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences supported: the unnamed boss and several dozen unnamed members (A7, A11), and the unknown link to the original order (A4). The interpretation in sentence 1 is reasonable.",
+     "quote": "Several dozen unnamed members",
+     "sentences": [
+      {
+       "t_raw": "현재 조직에는 이름이 밝혀지지 않은 두목과 수십 명의 이름 없는 구성원이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 조직에는 이름이 밝혀지지 않은 두목과 수십 명의 이름 없는 구성원이 있다."
+      },
+      {
+       "t_raw": "원조에서 Godfather Soini와 여러 이름이 남은 인물들이 보이는 구성과 달리, 현재는 이름 없는 두목과 수십 명의 이름 없는 구성원이 있다는 점이 두 조직의 인물 구성을 바로 맞추기 어렵게 만든다.",
+       "interp": true,
+       "dropped": false,
+       "t": "원조에서 Godfather Soini와 여러 이름이 남은 인물들이 보이는 구성과 달리, 현재는 이름 없는 두목과 수십 명의 이름 없는 구성원이 있다는 점이 두 조직의 인물 구성을 바로 맞추기 어렵게 만든다."
+      },
+      {
+       "t_raw": "그래서 현재 조직이 원조 Fruity Order의 후손인지, 별개 집단인지는 여전히 수수께끼로 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래서 현재 조직이 원조 질서 과일단의 후손인지, 별개 집단인지는 여전히 수수께끼로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "History",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "weapon",
+         "name": "Blackmarrow Lantern"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Members > Current Members",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Members > Current Members",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Godfather Soini"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All supported by A3 and A11. The size remark is a reasonable interpretation.",
+     "quote": "only three of the Five Great Operatives remain, as both \"Tricky Bulle Fruit\" and \"Intrepid Valberry\" have left the order",
+     "sentences": [
+      {
+       "t_raw": "World Quests Villains and Questions and Answers 이후 **Five Great Operatives** 가운데 셋만 남았고, 떠난 Tricky Bulle Fruit과 Intrepid Valberry는 Fortress of Meropide에서 오픈 월드 NPC로 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "World Quests Villains and Questions and Answers 이후 **다섯 대요원** 가운데 셋만 남았고, 떠난 교활한 풍선귤과 「용맹한 낙락베리」는 메로피드 요새에서 오픈 월드 NPC로 등장한다.",
+       "polish": {
+        "from": "World Quests Villains and Questions and Answers 이후 **다섯 대요원** 가운데 셋만 남았고, 떠난 교활한 풍선귤과 「용맹한 낙락베리」는 메로피드 요새에서 오픈 월드 NPC로 등장한다.",
+        "text": "World Quests Villains and Questions and Answers 이후 **다섯 대요원** 가운데 셋만 남았고, 떠난 교활한 풍선귤과 「용맹한 낙락베리」는 메로피드 요새에서 오픈 월드 NPC로 등장한다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "조직에는 이름이 밝혀지지 않은 구성원이 수십 명 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조직에는 이름이 밝혀지지 않은 구성원이 수십 명 있다."
+      },
+      {
+       "t_raw": "운영진의 변화와 별개로 조직 규모는 작지 않아 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "운영진의 변화와 별개로 조직 규모는 작지 않아 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Description",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fruity Order",
+       "revision": 2090370,
+       "section": "Members > Current Members",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "World Quests Villains and Questions and Answers",
+      "NPC"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches M5.",
+     "quote": "At some point, \"Intrepid Valberry\" joined the organization after being kicked out of the Fruity Order and became Director 42.",
+     "sentences": [
+      {
+       "t_raw": "Intrepid Valberry는 Fruity Order에서 쫓겨난 뒤 한 조직에 합류해 **Director 42**가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「용맹한 낙락베리」는 질서 과일단에서 쫓겨난 뒤 한 조직에 합류해 **수장 42**가 되었다."
+      },
+      {
+       "t_raw": "그 조직은 The Steambird에 의해 드러났고, Directors 2부터 41까지는 Marechaussee Phantom에 체포되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 조직은 스팀버드에 의해 드러났고, Directors 2부터 41까지는 그림자 수사청에 체포되었다."
+      },
+      {
+       "t_raw": "Boss는 체포된 이들이 임시 직원일 뿐이며 계정을 완전히 분리해 두었다고 주장했고, 조직은 온전히 남았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Boss는 체포된 이들이 임시 직원일 뿐이며 계정을 완전히 분리해 두었다고 주장했고, 조직은 온전히 남았다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Boss (The Red and the Black)",
+       "revision": 1590752,
+       "section": "Profile",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Directors",
+      "Boss"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Q2.",
+     "t_raw": "\"Fruity Order는 세계의 질서를 지키기 위해 존재한다! 우리는 투표를 건너뛰어서는 안 된다!\"",
+     "en": "The Fruity Order exists to maintain order in the world! We must not skip the vote!",
+     "speaker": "\"Trendy Zaytun Peach\"",
+     "source": {
+      "kind": "quest",
+      "quest": "Villains",
+      "quest_ko": "나쁜 녀석들",
+      "version": "4.1",
+      "speaker": "\"Trendy Zaytun Peach\""
+     },
+     "t": "\"질서 과일단은 세계의 질서를 지키기 위해 존재한다! 우리는 투표를 건너뛰어서는 안 된다!\"",
+     "speaker_ko": "「트렌디한 뚠뚠 복숭아」"
+    },
+    {
+     "section": "정체 — Five Great Operatives",
+     "status": "accepted",
+     "note": "Faithful translation of Q1.",
+     "t_raw": "그리고 나는 Fruity Order의 Five Great Operatives 중 하나다. 네가 보기에 내가 아이처럼 보이나?",
+     "en": "And I'm one of the Five Great Operatives of the Fruity Order. Do I look like a child to you?",
+     "speaker": "\"Trendy Zaytun Peach\"",
+     "source": {
+      "kind": "quest",
+      "quest": "Villains",
+      "quest_ko": "나쁜 녀석들",
+      "version": "4.1",
+      "speaker": "\"Trendy Zaytun Peach\""
+     },
+     "t": "그리고 나는 질서 과일단의 다섯 대요원 중 하나다. 네가 보기에 내가 아이처럼 보이나?",
+     "speaker_ko": "「트렌디한 뚠뚠 복숭아」"
+    },
+    {
+     "section": "작중 행적 — Bulle Fruit의 배신",
+     "status": "accepted",
+     "note": "Faithful translation of Q3.",
+     "t_raw": "그—그건 “Tricky Bulle Fruit”이에요. 그도 Fruity Order의 운영진 중 하나예요.",
+     "en": "I—It's \"Tricky Bulle Fruit.\" He's also one of the Fruity Order's operatives.",
+     "speaker": "Blanche",
+     "source": {
+      "kind": "quest",
+      "quest": "Villains",
+      "quest_ko": "나쁜 녀석들",
+      "version": "4.1",
+      "speaker": "Blanche"
+     },
+     "t": "그—그건 “교활한 풍선귤”이에요. 그도 질서 과일단의 운영진 중 하나예요.",
+     "speaker_ko": "Blanche"
+    }
+   ]
+  }
+ ]
+}

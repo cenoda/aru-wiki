@@ -20,41 +20,41 @@
    "input_chars": 733,
    "input_cut": false,
    "input_hash": "066776cf9534",
-   "writer": "or-ds,glm-flash,ds-pro,ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Mikko: O—Oh, it's nothing really, I just... dropped a few things... that broke.",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "If I'm going to say sorry, shouldn't I also get her a gift? I could probably get something from the Voynich Guild...",
      "sentences": [
       {
-       "t_raw": "Mikko는 **Speranza**에 있는 오픈 월드 비플레이어 캐릭터이자 **Conch Gang**의 현재 구성원으로 알려진 인물이다.",
+       "t_raw": "Mikko는 Speranza에 있는 오픈 월드 비플레이어 캐릭터이며, Conch Gang의 현재 구성원으로 알려져 있다.",
        "interp": false,
        "dropped": false,
-       "t": "미크호는 **스페란자**에 있는 오픈 월드 비플레이어 캐릭터이자 **소라단**의 현재 구성원으로 알려진 인물이다."
+       "t": "미크호는 스페란자에 있는 오픈 월드 비플레이어 캐릭터이며, 소라단의 현재 구성원으로 알려져 있다."
       },
       {
-       "t_raw": "그는 Katya가 아직 자신에게 화나 있는지 걱정하고, 떨어뜨려 깨진 물건들에 대해 왜 자신이 사과해야 하느냐고 되묻는다.",
+       "t_raw": "Mikko는 물건을 떨어뜨려 깨뜨린 일을 두고 Katya가 아직 화났는지 걱정한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 카르야가 아직 자신에게 화나 있는지 걱정하고, 떨어뜨려 깨진 물건들에 대해 왜 자신이 사과해야 하느냐고 되묻는다."
+       "t": "미크호는 물건을 떨어뜨려 깨뜨린 일을 두고 카르야가 아직 화났는지 걱정한다."
       },
       {
-       "t_raw": "그러면서도 사과를 하려면 선물을 함께 건네야 한다고 생각해 **Voynich Guild**에서 무언가를 구할 수 있지 않을까 기대한다.",
+       "t_raw": "그는 그 일이 전적으로 자신의 잘못은 아니라고 여기며, Katya가 자신의 말을 듣고 모든 것을 목재나 철로 바꿨다면 일어나지 않았을 일이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그러면서도 사과를 하려면 선물을 함께 건네야 한다고 생각해 **보이니치 상회**에서 무언가를 구할 수 있지 않을까 기대한다."
+       "t": "그는 그 일이 전적으로 자신의 잘못은 아니라고 여기며, 카르야가 자신의 말을 듣고 모든 것을 목재나 철로 바꿨다면 일어나지 않았을 일이라고 말한다."
       },
       {
-       "t_raw": "깨진 물건에 대한 책임을 인정하기보다 남의 탓으로 돌리는 듯한 태도와, 그럼에도 관계를 수습하려는 고민이 한 대화에 함께 드러나 Mikko의 처지를 보여 주는 장면으로 볼 수 있다.",
-       "interp": true,
+       "t_raw": "사과했느냐는 물음에 그는 왜 사과해야 하느냐고 되묻고, 사과한다면 Voynich Guild에서 선물을 구하는 편이 좋겠다고 생각한다.",
+       "interp": false,
        "dropped": false,
-       "t": "깨진 물건에 대한 책임을 인정하기보다 남의 탓으로 돌리는 듯한 태도와, 그럼에도 관계를 수습하려는 고민이 한 대화에 함께 드러나 미크호의 처지를 보여 주는 장면으로 볼 수 있다."
+       "t": "사과했느냐는 물음에 그는 왜 사과해야 하느냐고 되묻고, 사과한다면 보이니치 상회에서 선물을 구하는 편이 좋겠다고 생각한다."
       }
      ],
      "sources": [
@@ -111,28 +111,28 @@
      "latin_left": []
     },
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Mikko: Katya isn't still angry with me, is she?",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts are supported, and the interpretation is reasonable.",
+     "quote": "Mikko is an open-world NPC located at Speranza in.",
      "sentences": [
       {
-       "t_raw": "Mikko는 Speranza에 위치한 오픈 월드 비플레이어 캐릭터이다.",
+       "t_raw": "Mikko는 Speranza에서 만나는 오픈 월드 비플레이어 캐릭터다.",
        "interp": false,
        "dropped": false,
-       "t": "미크호는 스페란자에 위치한 오픈 월드 비플레이어 캐릭터이다."
+       "t": "미크호는 스페란자에서 만나는 오픈 월드 비플레이어 캐릭터다."
       },
       {
-       "t_raw": "Conch Gang 문서의 현재 구성원 목록에 이름이 올라 있어, 현재 Conch Gang의 일원으로 묶인다.",
+       "t_raw": "동시에 Conch Gang의 현재 구성원으로 이름을 올린 인물이기도 하다.",
        "interp": false,
        "dropped": false,
-       "t": "소라단 문서의 현재 구성원 목록에 이름이 올라 있어, 현재 소라단의 일원으로 묶인다."
+       "t": "동시에 소라단의 현재 구성원으로 이름을 올린 인물이기도 하다."
       },
       {
-       "t_raw": "이웃 Katya와는 물건을 깨뜨린 일을 둘러싼 갈등을 안고 있으며, 상대가 아직 화를 풀었는지 걱정하는 모습이 대화에서 드러난다.",
+       "t_raw": "Speranza에서의 만남과 Conch Gang 소속이라는 두 정보가 Mikko를 소개하는 기본 좌표가 되는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이웃 카르야와는 물건을 깨뜨린 일을 둘러싼 갈등을 안고 있으며, 상대가 아직 화를 풀었는지 걱정하는 모습이 대화에서 드러난다."
+       "t": "스페란자에서의 만남과 소라단 소속이라는 두 정보가 미크호를 소개하는 기본 좌표가 되는 셈이다."
       }
      ],
      "sources": [
@@ -151,90 +151,46 @@
        "section": "Known Members > Current",
        "paragraph": "M1",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A5",
-       "wiki_refs": []
       }
      ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But it's not all my fault. If she'd listened to me and replaced everything with wood or iron, then none of this would've happened!",
-     "sentences": [
-      {
-       "t_raw": "스스로는 몇 가지 물건을 떨어뜨려 부쳤을 뿐이며 상대가 나무나 쇠로 바꿨더라면 일어나지 않았을 일이라고 책임을 다소 분산시키는 입장을 취한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "스스로는 몇 가지 물건을 떨어뜨려 부쳤을 뿐이며 상대가 나무나 쇠로 바꿨더라면 일어나지 않았을 일이라고 책임을 다소 분산시키는 입장을 취한다."
-      },
-      {
-       "t_raw": "그러면서도 여전히 화가 날지 모른다고 한숨을 쉬는 등, 억울함과 미안함이 뒤섞인 태도를 보여 준다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그러면서도 여전히 화가 날지 모른다고 한숨을 쉬는 등, 억울함과 미안함이 뒤섞인 태도를 보여 준다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A9",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
+     "heading": "정체와 배경",
      "latin_left": []
     },
     {
      "section": "작중 행적 — Speranza",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation follows from the dialogue.",
      "quote": "But it's not all my fault. If she'd listened to me and replaced everything with wood or iron, then none of this would've happened!",
      "sentences": [
       {
-       "t_raw": "플레이어가 Mikko에게 말을 걸면 Mikko는 먼저 Katya가 아직도 자신에게 화가 나 있지는 않은지 묻는다.",
+       "t_raw": "Mikko는 Katya가 아직 자신에게 화가 나 있는지 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "플레이어가 미크호에게 말을 걸면 미크호는 먼저 카르야가 아직도 자신에게 화가 나 있지는 않은지 묻는다."
+       "t": "미크호는 카르야가 아직 자신에게 화가 나 있는지 묻는다."
       },
       {
-       "t_raw": "무슨 일이냐고 되묻자 Mikko는 별일 아니라며, 물건 몇 개를 떨어뜨려 깨뜨렸다고 더듬거린다.",
+       "t_raw": "무슨 일이냐는 질문에는 별일 아니라며 물건 몇 개를 떨어뜨려 깨뜨렸다고 털어놓는다.",
        "interp": false,
        "dropped": false,
-       "t": "무슨 일이냐고 되묻자 미크호는 별일 아니라며, 물건 몇 개를 떨어뜨려 깨뜨렸다고 더듬거린다."
+       "t": "무슨 일이냐는 질문에는 별일 아니라며 물건 몇 개를 떨어뜨려 깨뜨렸다고 털어놓는다."
       },
       {
-       "t_raw": "그러나 곧 자기 탓만은 아니라며, Katya가 자신의 말을 듣고 물건을 **전부 나무나 철**로 바꿨더라면 이런 일은 없었을 것이라고 항변한다.",
+       "t_raw": "이어서 Katya가 자신의 말을 듣고 모든 것을 나무나 쇠로 바꿨다면 이런 일은 없었을 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 곧 자기 탓만은 아니라며, 카르야가 자신의 말을 듣고 물건을 **전부 나무나 철**로 바꿨더라면 이런 일은 없었을 것이라고 항변한다."
+       "t": "이어서 카르야가 자신의 말을 듣고 모든 것을 나무나 쇠로 바꿨다면 이런 일은 없었을 것이라고 말한다."
+      },
+      {
+       "t_raw": "자신이 물건을 떨어뜨렸다고 인정하면서도 원인을 Katya의 선택에 함께 돌리는 태도로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자신이 물건을 떨어뜨렸다고 인정하면서도 원인을 카르야의 선택에 함께 돌리는 태도로 보인다."
+      },
+      {
+       "t_raw": "그러면서도 Katya가 여전히 화가 나 있으면 어쩌지 모르겠다며 한숨 쉰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서도 카르야가 여전히 화가 나 있으면 어쩌지 모르겠다며 한숨 쉰다."
       }
      ],
      "sources": [
@@ -269,6 +225,14 @@
        "section": "Dialogue",
        "paragraph": "A8",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mikko",
+       "revision": 1846783,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
       }
      ],
      "heading": "작중 행적 — 스페란자",
@@ -276,44 +240,36 @@
     },
     {
      "section": "작중 행적 — Speranza",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation follows from the dialogue.",
      "quote": "...So, you think it's my fault, too?... Hmm. If I'm going to say sorry, shouldn't I also get her a gift? I could probably get something from the Voynich Guild...",
      "sentences": [
       {
-       "t_raw": "한숨을 내쉰 Mikko는 Katya가 여전히 화가 나 있으면 어쩌나 걱정한다.",
+       "t_raw": "**사과**했느냐는 물음에 Mikko는 전부 자신의 잘못은 아니라며 왜 사과해야 하냐고 되묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "한숨을 내쉰 미크호는 카르야가 여전히 화가 나 있으면 어쩌나 걱정한다."
+       "t": "**사과**했느냐는 물음에 미크호는 전부 자신의 잘못은 아니라며 왜 사과해야 하냐고 되묻는다."
       },
       {
-       "t_raw": "사과했느냐는 물음에는 오히려 전부 자기 잘못은 아니라며 왜 사과해야 하냐고 되받는다.",
+       "t_raw": "이어서 상대도 Mikko의 잘못이라고 생각하는지 묻고는, 사과할 거라면 Katya에게 줄 **선물**도 챙겨야 하지 않겠느냐고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "사과했느냐는 물음에는 오히려 전부 자기 잘못은 아니라며 왜 사과해야 하냐고 되받는다."
+       "t": "이어서 상대도 미크호의 잘못이라고 생각하는지 묻고는, 사과할 거라면 카르야에게 줄 **선물**도 챙겨야 하지 않겠느냐고 말한다."
       },
       {
-       "t_raw": "그러다 상대도 자기 잘못이라고 보는 듯하냐고 되물은 끝에, 사과를 할 거라면 **선물**도 함께 줘야 하지 않겠냐며 Voynich Guild에서 뭔가를 구할 수 있을 것 같다고 말한다.",
+       "t_raw": "**Voynich Guild**에서 무언가를 구할 수 있을 것 같다고 덧붙인다.",
        "interp": false,
        "dropped": false,
-       "t": "그러다 상대도 자기 잘못이라고 보는 듯하냐고 되물은 끝에, 사과를 할 거라면 **선물**도 함께 줘야 하지 않겠냐며 보이니치 상회에서 뭔가를 구할 수 있을 것 같다고 말한다."
+       "t": "**보이니치 상회**에서 무언가를 구할 수 있을 것 같다고 덧붙인다."
       },
       {
-       "t_raw": "깨진 물건의 책임을 Katya에게 돌리던 말과 사과와 선물을 함께 준비하겠다는 말이 한 대화 안에서 오가는 셈이라, Mikko의 미안함과 억울함이 뒤섞인 태도를 보여 주는 대목으로 보인다.",
+       "t_raw": "사과를 피하던 태도에서 선물을 함께 준비하는 쪽으로 생각이 옮겨가는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "깨진 물건의 책임을 카르야에게 돌리던 말과 사과와 선물을 함께 준비하겠다는 말이 한 대화 안에서 오가는 셈이라, 미크호의 미안함과 억울함이 뒤섞인 태도를 보여 주는 대목으로 보인다."
+       "t": "사과를 피하던 태도에서 선물을 함께 준비하는 쪽으로 생각이 옮겨가는 셈이다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A9",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Mikko",
@@ -344,33 +300,27 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But it's not all my fault. If she'd listened to me and replaced everything with wood or iron, then none of this would've happened!",
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation is reasonable.",
+     "quote": "Katya isn't still angry with me, is she?",
      "sentences": [
       {
-       "t_raw": "Mikko는 Katya가 아직 자신에게 화가 났는지 걱정하며 말을 꺼낸다.",
+       "t_raw": "Mikko는 **Katya가 아직 화났는지** 걱정하며, 그녀가 계속 화나 있으면 어쩌지 몰라 한숨 쉰다.",
        "interp": false,
        "dropped": false,
-       "t": "미크호는 카르야가 아직 자신에게 화가 났는지 걱정하며 말을 꺼낸다."
+       "t": "미크호는 **카르야가 아직 화났는지** 걱정하며, 그녀가 계속 화나 있으면 어쩌지 몰라 한숨 쉰다."
       },
       {
-       "t_raw": "무언가를 떨어뜨려 깨뜨렸다고 털어놓지만, 곧 자신만의 잘못은 아니라고 주장한다.",
+       "t_raw": "문제가 된 물건들에 대해서는 Katya가 자신의 말을 듣고 나무나 철로 바꿨다면 일어나지 않았을 일이라며, 자기 잘못만은 아니라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "무언가를 떨어뜨려 깨뜨렸다고 털어놓지만, 곧 자신만의 잘못은 아니라고 주장한다."
+       "t": "문제가 된 물건들에 대해서는 카르야가 자신의 말을 듣고 나무나 철로 바꿨다면 일어나지 않았을 일이라며, 자기 잘못만은 아니라고 말한다."
       },
       {
-       "t_raw": "Katya가 자신의 말을 듣고 물건을 나무나 철로 바꿨다면 그런 일은 없었을 거라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카르야가 자신의 말을 듣고 물건을 나무나 철로 바꿨다면 그런 일은 없었을 거라고 말한다."
-      },
-      {
-       "t_raw": "이 대목에서는 **미안함과 억울함**이 함께 드러나는 것으로 보인다.",
+       "t_raw": "이런 모습에서는 화가 남아 있을까 걱정하면서도 책임을 자기 쪽으로만 두지 않으려는 태도가 함께 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이 대목에서는 **미안함과 억울함**이 함께 드러나는 것으로 보인다."
+       "t": "이런 모습에서는 화가 남아 있을까 걱정하면서도 책임을 자기 쪽으로만 두지 않으려는 태도가 함께 보인다."
       }
      ],
      "sources": [
@@ -387,7 +337,7 @@
        "page": "Mikko",
        "revision": 1846783,
        "section": "Dialogue",
-       "paragraph": "A7",
+       "paragraph": "A8",
        "wiki_refs": []
       },
       {
@@ -395,7 +345,7 @@
        "page": "Mikko",
        "revision": 1846783,
        "section": "Dialogue",
-       "paragraph": "A8",
+       "paragraph": "A9",
        "wiki_refs": []
       }
      ],
@@ -404,58 +354,31 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "If I'm going to say sorry, shouldn't I also get her a gift? I could probably get something from the Voynich Guild...",
+     "status": "trimmed",
+     "note": "Sentence 0: the player's line 'Have you apologized?' is only a question, not a recommendation to apologize. Sentence 1: the player never says it is Mikko's fault. Only Mikko's own line 'So, you think it's my fault, too?' implies that, so presenting it as something the other person said adds a fact.",
+     "quote": "...So, you think it's my fault, too?... Hmm. If I'm going to say sorry, shouldn't I also get her a gift? I could probably get something from the Voynich Guild...",
      "sentences": [
       {
-       "t_raw": "Katya가 여전히 화가 나 있으면 어쩌지 몰라 한숨 쉬는 모습도 보인다.",
+       "t_raw": "사과를 권하는 말에는 자신이 전적으로 잘못한 것이 아니라며 왜 사과해야 하냐고 되묻는다.",
        "interp": false,
-       "dropped": false,
-       "t": "카르야가 여전히 화가 나 있으면 어쩌지 몰라 한숨 쉬는 모습도 보인다."
+       "dropped": true,
+       "t": "사과를 권하는 말에는 자신이 전적으로 잘못한 것이 아니라며 왜 사과해야 하냐고 되묻는다."
       },
       {
-       "t_raw": "사과했냐는 물음에는 전부 자신의 잘못은 아니라며 왜 사과해야 하냐고 되묻는다.",
+       "t_raw": "그러다 '당신도 내 잘못이라고 생각하는 거지?'라고 되묻고는, 사과할 거면 그녀에게 줄 선물도 함께 구하는 게 좋겠다고 생각하며 Voynich Guild에서 무엇을 얻을 수 있을지 떠올린다.",
        "interp": false,
        "dropped": false,
-       "t": "사과했냐는 물음에는 전부 자신의 잘못은 아니라며 왜 사과해야 하냐고 되묻는다."
+       "repaired": true,
+       "t": "그러다 '당신도 내 잘못이라고 생각하는 거지?'라고 되묻고는, 사과할 거면 그녀에게 줄 선물도 함께 구하는 게 좋겠다고 생각하며 보이니치 상회에서 무엇을 얻을 수 있을지 떠올린다."
       },
       {
-       "t_raw": "그러다 상대가 자신의 잘못이라고 생각하느냐고 되물은 뒤, 사과할 거라면 선물도 챙겨야 하지 않겠냐고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러다 상대가 자신의 잘못이라고 생각하느냐고 되물은 뒤, 사과할 거라면 선물도 챙겨야 하지 않겠냐고 말한다."
-      },
-      {
-       "t_raw": "선물은 Voynich Guild에서 구할 수 있을 것 같다고 덧붙인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "선물은 보이니치 상회에서 구할 수 있을 것 같다고 덧붙인다."
-      },
-      {
-       "t_raw": "사과를 피하던 태도에서 선물을 언급하는 쪽으로 **한 걸음** 나아간 셈이다.",
+       "t_raw": "사과를 선물 준비와 함께 생각하는 쪽으로 마음을 기울인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "사과를 피하던 태도에서 선물을 언급하는 쪽으로 **한 걸음** 나아간 셈이다."
+       "t": "사과를 선물 준비와 함께 생각하는 쪽으로 마음을 기울인 셈이다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A9",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A10",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Mikko",
@@ -477,184 +400,39 @@
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Mikko: Katya isn't still angry with me, is she?",
-     "sentences": [
-      {
-       "t_raw": "Mikko는 Conch Gang의 현재 구성원으로 이름을 올리고 있지만, Speranza에서 Mikko가 꺼내는 이야기는 Katya다.",
-       "interp": false,
-       "dropped": false,
-       "t": "미크호는 소라단의 현재 구성원으로 이름을 올리고 있지만, 스페란자에서 미크호가 꺼내는 이야기는 카르야다."
-      },
-      {
-       "t_raw": "Katya가 아직 자신에게 화가 나 있는지 묻고, 계속 화가 나 있으면 어쩌지 모르겠다며 한숨을 쉰다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카르야가 아직 자신에게 화가 나 있는지 묻고, 계속 화가 나 있으면 어쩌지 모르겠다며 한숨을 쉰다."
-      },
-      {
-       "t_raw": "소속으로 소개되는 모습과 대화에서 드러나는 관심사가 이렇게 벌어져 있어, Conch Gang 구성원이라는 사실만으로 Mikko의 처지를 다 알 수는 없는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "소속으로 소개되는 모습과 대화에서 드러나는 관심사가 이렇게 벌어져 있어, 소라단 구성원이라는 사실만으로 미크호의 처지를 다 알 수는 없는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Conch Gang",
-       "revision": 1865324,
-       "section": "Known Members > Current",
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A9",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Mikko: B—But it's not entirely my fault! Why should I apologize?",
-     "sentences": [
-      {
-       "t_raw": "깨진 물건을 두고 Mikko는 전적으로 자기 잘못은 아니라며, 나무나 쇠로 바꿨어야 했다고 항변한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "깨진 물건을 두고 미크호는 전적으로 자기 잘못은 아니라며, 나무나 쇠로 바꿨어야 했다고 항변한다."
-      },
-      {
-       "t_raw": "그러면서도 Katya가 아직 화가 났는지 걱정하고, 사과를 해야 하는지 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러면서도 카르야가 아직 화가 났는지 걱정하고, 사과를 해야 하는지 되묻는다."
-      },
-      {
-       "t_raw": "잘못을 인정하기보다 상대의 반응을 살피는 쪽에 가까운 태도다.",
-       "interp": true,
-       "dropped": false,
-       "t": "잘못을 인정하기보다 상대의 반응을 살피는 쪽에 가까운 태도다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A9",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Mikko:...So, you think it's my fault, too?... Hmm. If I'm going to say sorry, shouldn't I also get her a gift? I could probably get something from the Voynich Guild...",
-     "sentences": [
-      {
-       "t_raw": "사과를 하기로 마음먹은 뒤에도 Mikko는 선물을 함께 건네야 하는지 고민한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "사과를 하기로 마음먹은 뒤에도 미크호는 선물을 함께 건네야 하는지 고민한다."
-      },
-      {
-       "t_raw": "Voynich Guild에서 무언가를 구할 수 있을 것 같다고 말할 뿐, 무엇을 고를지까지는 나오지 않는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "보이니치 상회에서 무언가를 구할 수 있을 것 같다고 말할 뿐, 무엇을 고를지까지는 나오지 않는다."
-      },
-      {
-       "t_raw": "Katya의 화가 풀렸는지 걱정하면서도 그 해결책으로 물건을 떠올리는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "카르야의 화가 풀렸는지 걱정하면서도 그 해결책으로 물건을 떠올리는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A9",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Sentence 2: the idle line \"Putting in more effort...\" is a trailing phrase, and the goodbye reply is not a short single remark. Calling Mikko's speech style terse is not supported; the other dialogue shows hesitant, rambling speech.",
      "quote": "Putting in more effort...",
      "sentences": [
       {
-       "t_raw": "대화 밖에서 Mikko가 두고두고 중얼거리는 말은 \"Putting in more effort...\", 즉 무언가에 더 신경을 써야 한다는 한숨 섞인 독백이다.",
+       "t_raw": "Mikko의 대기 대사는 \"Putting in more effort...\"이다.",
        "interp": false,
        "dropped": false,
-       "t": "대화 밖에서 미크호가 두고두고 중얼거리는 말은 \"Putting in more effort...\", 즉 무언가에 더 신경을 써야 한다는 한숨 섞인 독백이다."
+       "t": "미크호의 대기 대사는 \"더 많은 노력을 기울이는 중...\"이다.",
+       "polish": {
+        "from": "미크호의 대기 대사는 \"Putting in more effort...\"이다.",
+        "text": "미크호의 대기 대사는 \"더 많은 노력을 기울이는 중...\"이다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "깨진 물건 건으로 Katya에게 사과하고 선물까지 준비해야 하는 처지를 생각하면, 이 말투에도 미안함과 부담이 겹쳐 나온다고 볼 수 있다.",
+       "t_raw": "상대가 \"Goodbye.\"라고 인사하면 Mikko는 \"Huh? Oh. G—Goodbye!\"라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상대가 \"Goodbye.\"라고 인사하면 미크호는 \"Huh? Oh. G—Goodbye!\"라고 답한다."
+      },
+      {
+       "t_raw": "대기 대사는 'Putting in more effort...'처럼 꼬리를 흐리고, 작별 인사도 'Huh? Oh. G—Goodbye!'처럼 말을 더듬는 모습이라 Mikko의 말투는 다소 당황스럽고 우물쭈물하는 편으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "깨진 물건 건으로 카르야에게 사과하고 선물까지 준비해야 하는 처지를 생각하면, 이 말투에도 미안함과 부담이 겹쳐 나온다고 볼 수 있다."
+       "repaired": true,
+       "t": "대기 대사는 '더 많은 노력을 기울이는 중...'처럼 꼬리를 흐리고, 작별 인사도 '어? 아. 안—안녕!'처럼 말을 더듬는 모습이라 미크호의 말투는 다소 당황스럽고 우물쭈물하는 편으로 보인다.",
+       "polish": {
+        "from": "대기 대사는 'Putting in more effort...'처럼 꼬리를 흐리고, 작별 인사도 'Huh? Oh. G—Goodbye!'처럼 말을 더듬는 모습이라 미크호의 말투는 다소 당황스럽고 우물쭈물하는 편으로 보인다.",
+        "text": "대기 대사는 '더 많은 노력을 기울이는 중...'처럼 꼬리를 흐리고, 작별 인사도 '어? 아. 안—안녕!'처럼 말을 더듬는 모습이라 미크호의 말투는 다소 당황스럽고 우물쭈물하는 편으로 보인다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -671,38 +449,43 @@
        "page": "Mikko",
        "revision": 1846783,
        "section": "Dialogue",
-       "paragraph": "A12",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mikko",
+       "revision": 1846783,
+       "section": "Dialogue",
+       "paragraph": "A14",
        "wiki_refs": []
       }
      ],
      "heading": "여담",
      "latin_left": [
-      "Putting"
+      "Goodbye",
+      "Huh",
+      "Oh",
+      "Goodbye"
      ]
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Huh? Oh. G—Goodbye!",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Mikko: Huh? Oh. G—Goodbye!",
      "sentences": [
       {
-       "t_raw": "작별 인사도 어색하다.",
+       "t_raw": "작별 장면에서 Mikko의 반응은 \"Huh? Oh.\"로 시작해 곧 \"G—Goodbye!\"로 이어진다.",
        "interp": false,
        "dropped": false,
-       "t": "작별 인사도 어색하다."
+       "t": "작별 장면에서 미크호의 반응은 \"Huh? Oh.\"로 시작해 곧 \"G—Goodbye!\"로 이어진다."
       },
       {
-       "t_raw": "인사를 건네면 Mikko는 \"Huh? Oh. G—Goodbye!\"라며 잠깐 놀란 뒤, 더듬더듬 인사를 되돌려 준다.",
-       "interp": false,
-       "dropped": false,
-       "t": "인사를 건네면 미크호는 \"Huh? Oh. G—Goodbye!\"라며 잠깐 놀란 뒤, 더듬더듬 인사를 되돌려 준다."
-      },
-      {
-       "t_raw": "Katya 문제로 마음이 급한 탓에 사람을 맞대고 이야기할 때보다 더 무심한 듯하면서도 서툰 분위기가 느껴진다.",
+       "t_raw": "상대의 \"Goodbye.\" 뒤에 오는 Mikko의 답에는 놀람과 머뭇거림이 짧게 섞여 있는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "카르야 문제로 마음이 급한 탓에 사람을 맞대고 이야기할 때보다 더 무심한 듯하면서도 서툰 분위기가 느껴진다."
+       "t": "상대의 \"Goodbye.\" 뒤에 오는 미크호의 답에는 놀람과 머뭇거림이 짧게 섞여 있는 셈이다."
       }
      ],
      "sources": [
@@ -721,20 +504,13 @@
        "section": "Dialogue",
        "paragraph": "A14",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mikko",
-       "revision": 1846783,
-       "section": "Dialogue",
-       "paragraph": "A5",
-       "wiki_refs": []
       }
      ],
      "heading": "여담",
      "latin_left": [
       "Huh",
       "Oh",
+      "Goodbye",
       "Goodbye"
      ]
     }

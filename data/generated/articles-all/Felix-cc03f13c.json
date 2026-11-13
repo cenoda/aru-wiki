@@ -1,0 +1,1087 @@
+{
+ "node": "Felix",
+ "articles": [
+  {
+   "node": "Felix",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Felix",
+     "url": "https://genshin-impact.fandom.com/wiki/Felix",
+     "revision": 297345
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 210,
+   "input_cut": false,
+   "input_hash": "7f7dd3b76e34",
+   "writer": "qwen,kimi,glm-flash,ds-pro,or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All three match the profile and the Millelith line.",
+     "quote": "The Millelith are watching our every move now. These are desperate times, we mustn't act rashly.",
+     "sentences": [
+      {
+       "t_raw": "Felix는 **Fatui** 소속 외교관으로, **Liyue**에 파견된 여러 사절 중 하나인 퀘스트 전용 NPC이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "펠릭스는 **우인단** 소속 외교관으로, **리월**에 파견된 여러 사절 중 하나인 퀘스트 전용 NPC이다."
+      },
+      {
+       "t_raw": "그는 Chapter I의 Act III와 Monoceros Caeli Chapter의 Act I에서 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 Chapter I의 제3막과 경천의 장의 Act I에서 등장한다."
+      },
+      {
+       "t_raw": "그의 대사에는 Millelith의 감시 속에서 쉽사리 움직일 수 없는 Fatui 외교관의 처지가 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그의 대사에는 천암군의 감시 속에서 쉽사리 움직일 수 없는 우인단 외교관의 처지가 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Felix",
+       "revision": 297345,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC",
+      "Chapter",
+      "Act"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "“Sent to Liyue” does not say those diplomats are resident (상주) staff.",
+     "quote": "He is a diplomat, one of several sent to Liyue.",
+     "sentences": [
+      {
+       "t_raw": "Felix는 Fatui 소속의 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "펠릭스는 우인단 소속의 인물이다."
+      },
+      {
+       "t_raw": "그는 Liyue에 파견된 여러 외교관 가운데 한 사람으로, **Fatui의 외교관** 신분으로 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 리월에 파견된 여러 외교관 가운데 한 사람으로, **우인단의 외교관** 신분으로 등장한다."
+      },
+      {
+       "t_raw": "그가 Liyue에 파견된 여러 외교관 중 한 명이라는 점은, Fatui가 Liyue에 외교관을 여럿 보냈다는 뜻으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "그가 리월에 파견된 여러 외교관 중 한 명이라는 점은, 우인단이 리월에 외교관을 여럿 보냈다는 뜻으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Felix",
+       "revision": 297345,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The two acts are not said to share a place, so a local Liyue diplomatic post does not follow.",
+     "quote": "He is a quest-exclusive NPC who makes an appearance in Act III of Chapter I and Act I of the Monoceros Caeli Chapter.",
+     "sentences": [
+      {
+       "t_raw": "그는 Chapter I의 **Act III**와 Monoceros Caeli Chapter의 **Act I**에서 퀘스트 전용 NPC로 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 Chapter I의 **제3막**과 경천의 장의 **Act I**에서 퀘스트 전용 NPC로 등장한다."
+      },
+      {
+       "t_raw": "그가 Liyue에 파견된 외교관 중 한 명이라는 점은, 그가 Fatui의 외교 업무와 관련된 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "그가 리월에 파견된 외교관 중 한 명이라는 점은, 그가 우인단의 외교 업무와 관련된 인물로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Felix",
+       "revision": 297345,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Chapter",
+      "Act",
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "He only states that Harbingers’ words baptize recruits; he is not said to deliver that baptism or to enforce Fatui doctrine.",
+     "quote": "Every new batch of recruits must be baptized by the Tsaritsa's will through the words of her Harbingers. This has always been our rule.",
+     "sentences": [
+      {
+       "t_raw": "Felix는 Liyue에 파견된 Fatui 외교관 중 한 명으로, 지정된 퀘스트에서 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "펠릭스는 리월에 파견된 우인단 외교관 중 한 명으로, 지정된 퀘스트에서 등장한다."
+      },
+      {
+       "t_raw": "그는 모든 신병이 Harbingers의 말을 통해 Tsaritsa의 뜻으로 세례를 받아야 하며, 이것이 항상 Fatui의 규칙이었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 모든 신병이 집행관의 말을 통해 얼음의 여왕의 뜻으로 세례를 받아야 하며, 이것이 항상 우인단의 규칙이었다고 말한다."
+      },
+      {
+       "t_raw": "그가 Fatui의 일원으로서 이 규칙을 전한다는 점은, 그가 조직의 규칙을 숙지한 인물임을 보여주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "그가 우인단의 일원으로서 이 규칙을 전한다는 점은, 그가 조직의 규칙을 숙지한 인물임을 보여주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Felix",
+       "revision": 297345,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "“Always our rule” is not stated as a firm living tradition, and the line does not assign him ideological control.",
+     "quote": "Every new batch of recruits must be baptized by the Tsaritsa's will through the words of her Harbingers. This has always been our rule.",
+     "sentences": [
+      {
+       "t_raw": "그가 거론한 세례 규칙은 새 신병 모두가 집행관의 말을 통해 Tsaritsa의 뜻을 접해야 한다는 내용을 담고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 거론한 세례 규칙은 새 신병 모두가 집행관의 말을 통해 얼음의 여왕의 뜻을 접해야 한다는 내용을 담고 있다."
+      },
+      {
+       "t_raw": "그는 이 규칙이 '항상 우리의 규칙'이었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 이 규칙이 '항상 우리의 규칙'이었다고 말한다."
+      },
+      {
+       "t_raw": "이로 미루어 Felix는 Fatui의 외교관이면서 조직의 규칙을 언급하는 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "이로 미루어 펠릭스는 우인단의 외교관이면서 조직의 규칙을 언급하는 인물로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "wiki",
+       "page": "Felix",
+       "revision": 297345,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Teucer's Terrific Tour",
+     "status": "accepted",
+     "note": "“They are waiting” is not tied to the recruits, and nothing here says Childe is a Harbinger whose presence the rite required.",
+     "quote": "I must apologize for troubling you, Master Childe, but they are already waiting for you ...",
+     "sentences": [
+      {
+       "t_raw": "Felix는 Childe를 맞이하는 Fatui 외교관이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "펠릭스는 귀공자를 맞이하는 우인단 외교관이다."
+      },
+      {
+       "t_raw": "Childe가 도착하자 **\"Master Childe, you're here\"**라며 반긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀공자가 도착하자 **\"사범님 귀공자, 오셨군요\"**라며 반긴다.",
+       "polish": {
+        "from": "귀공자가 도착하자 **\"사범님 귀공자, you're here\"**라며 반긴다.",
+        "text": "귀공자가 도착하자 **\"사범님 귀공자, 오셨군요\"**라며 반긴다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이어서 그를 괴롭힌 데 대해 사과하며, 사람들이 이미 기다리고 있다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 그를 괴롭힌 데 대해 사과하며, 사람들이 이미 기다리고 있다고 전한다."
+      },
+      {
+       "t_raw": "그는 모든 새 신병이 Harbingers의 말을 통해 Tsaritsa의 뜻으로 세례를 받아야 한다는 규칙을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 모든 새 신병이 집행관의 말을 통해 얼음의 여왕의 뜻으로 세례를 받아야 한다는 규칙을 언급한다."
+      },
+      {
+       "t_raw": "Harbingers의 말을 통해 세례가 이루어진다는 점에서, 이 규칙에서 Harbingers의 역할이 두드러지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "집행관의 말을 통해 세례가 이루어진다는 점에서, 이 규칙에서 집행관의 역할이 두드러지는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Felix",
+       "revision": 297345,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "작중 행적 — 테우세르의 리월 견문록",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Solitary Fragrance",
+     "status": "accepted",
+     "note": "Sentence 0 adds that the scene begins as he addresses Zhongli. Sentence 2 treats one presumptive greeting as evidence that he is surveying Liyue's people.",
+     "quote": "Ah, you're the consultant to Wangsheng Funeral Parlor — Mr. Zhongli, I presume?",
+     "sentences": [
+      {
+       "t_raw": "Felix는 Liyue에 파견된 Fatui 외교관 가운데 한 명으로, Zhongli에게 Wangsheng Funeral Parlor의 고문인지 묻는 말을 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "펠릭스는 리월에 파견된 우인단 외교관 가운데 한 명으로, 종려에게 왕생당의 고문인지 묻는 말을 건넨다."
+      },
+      {
+       "t_raw": "그는 Zhongli를 Wangsheng Funeral Parlor의 고문으로 짚으며 'Zhongli 씨이시죠?'라고 확인을 구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 종려를 왕생당의 고문으로 짚으며 '종려 씨이시죠?'라고 확인을 구한다."
+      },
+      {
+       "t_raw": "상대를 Wangsheng Funeral Parlor의 고문으로 짚어 묻는 말은, 그가 Zhongli의 소속과 직함을 추측해 확인하려는 말로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "상대를 왕생당의 고문으로 짚어 묻는 말은, 그가 종려의 소속과 직함을 추측해 확인하려는 말로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Felix",
+       "revision": 297345,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "작중 행적 — 고결한 향기",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Solitary Fragrance",
+     "status": "accepted",
+     "note": "Sentences 2 and 3 name Ningguang as the source of the proclamation; the English only says \"She.\"",
+     "quote": "The Millelith are watching our every move now. These are desperate times, we mustn't act rashly.",
+     "sentences": [
+      {
+       "t_raw": "Felix는 지금 **Millelith의 감시**가 Fatui의 일거수일투족을 좇고 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "펠릭스는 지금 **천암군의 감시**가 우인단의 일거수일투족을 좇고 있다고 말한다."
+      },
+      {
+       "t_raw": "그가 보기에 지금은 절박한 시기이기에, 섣불리 움직여서는 안 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 보기에 지금은 절박한 시기이기에, 섣불리 움직여서는 안 된다."
+      },
+      {
+       "t_raw": "그는 '혼란스러운 시기에 Millelith가 Fatui의 행동을 단속해야 한다'고 그녀가 선포했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 '혼란스러운 시기에 천암군이 우인단의 행동을 단속해야 한다'고 그녀가 선포했다고 전한다."
+      },
+      {
+       "t_raw": "감시를 이야기하면서 그 선포를 함께 꺼내는 대목은, Millelith의 움직임이 그녀의 결정과 맞닿아 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "감시를 이야기하면서 그 선포를 함께 꺼내는 대목은, 천암군의 움직임이 그녀의 결정과 맞닿아 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "작중 행적 — 고결한 향기",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Solitary Fragrance",
+     "status": "accepted",
+     "note": "Sentence 1 makes the impasse the result of surveillance plus caution and a display of Felix's own situation; the line only says both sides were obstinate and hit an impasse.",
+     "quote": "However, both sides were quite obstinate, and hit an impasse.",
+     "sentences": [
+      {
+       "t_raw": "그는 양측이 모두 완강해 **교착**에 빠졌다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 양측이 모두 완강해 **교착**에 빠졌다고 전한다."
+      },
+      {
+       "t_raw": "양측이 완강하게 맞서 교착에 빠졌다는 그의 말은, 어느 한쪽도 쉽게 물러서지 못하는 상황을 보여주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "양측이 완강하게 맞서 교착에 빠졌다는 그의 말은, 어느 한쪽도 쉽게 물러서지 못하는 상황을 보여주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "작중 행적 — 고결한 향기",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Solitary Fragrance",
+     "status": "accepted",
+     "note": "None failed.",
+     "quote": "Ugh... that's all Ningguang's doing...",
+     "sentences": [
+      {
+       "t_raw": "그는 Jueyun Karst의 adepti들이 마침내 움직이기 시작했다고도 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 절운간의 선인들이 마침내 움직이기 시작했다고도 전한다.",
+       "polish": {
+        "from": "그는 절운간의 adepti들이 마침내 움직이기 시작했다고도 전한다.",
+        "text": "그는 절운간의 선인들이 마침내 움직이기 시작했다고도 전한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "입에서는 '윽… 전부 Ningguang의 짓이야…'라는 탄식도 새어 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "입에서는 '윽… 전부 응광의 짓이야…'라는 탄식도 새어 나온다."
+      },
+      {
+       "t_raw": "adepti의 움직임과 Ningguang을 향한 원망이 한 사람의 입에서 함께 나오는 것을 보면, 그에게 두 화젯거리가 따로 떨어져 있지 않은 듯 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "선인의 움직임과 응광을 향한 원망이 한 사람의 입에서 함께 나오는 것을 보면, 그에게 두 화젯거리가 따로 떨어져 있지 않은 듯 읽힌다.",
+       "polish": {
+        "from": "adepti의 움직임과 응광을 향한 원망이 한 사람의 입에서 함께 나오는 것을 보면, 그에게 두 화젯거리가 따로 떨어져 있지 않은 듯 읽힌다.",
+        "text": "선인의 움직임과 응광을 향한 원망이 한 사람의 입에서 함께 나오는 것을 보면, 그에게 두 화젯거리가 따로 떨어져 있지 않은 듯 읽힌다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "작중 행적 — 고결한 향기",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Sentence 3 adds that the scene opens when Childe appears and that Felix recognizes him first; the line only greets him as already here.",
+     "quote": "I must apologize for troubling you, Master Childe, but they are already waiting for you ...",
+     "sentences": [
+      {
+       "t_raw": "Felix는 Childe를 만날 때 그를 **Master Childe**라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "펠릭스는 귀공자를 만날 때 그를 **사범님 귀공자**라고 부른다."
+      },
+      {
+       "t_raw": "Teucer's Terrific Tour에서 그가 Childe에게 건넨 말은 사과로 시작해, 기다리는 사람이 있다는 소식으로 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "테우세르의 리월 견문록에서 그가 귀공자에게 건넨 말은 사과로 시작해, 기다리는 사람이 있다는 소식으로 이어진다."
+      },
+      {
+       "t_raw": "\"I must apologize for troubling you, Master Childe, but they are already waiting for you ...\"라는 대사 한 줄에 호칭과 사과, 용건이 함께 놓인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "\"폐를 끼쳐 죄송합니다, 사범님 귀공자, 하지만 그들은 이미 당신을 기다리고 있습니다 ...\"라는 대사 한 줄에 호칭과 사과, 용건이 함께 놓인다.",
+       "polish": {
+        "from": "\"I must apologize for troubling you, 사범님 귀공자, but they are already waiting for you ...\"라는 대사 한 줄에 호칭과 사과, 용건이 함께 놓인다.",
+        "text": "\"폐를 끼쳐 죄송합니다, 사범님 귀공자, 하지만 그들은 이미 당신을 기다리고 있습니다 ...\"라는 대사 한 줄에 호칭과 사과, 용건이 함께 놓인다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그는 'Ah, Master Childe, you're here.'라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 '아, 사범님 귀공자, 오셨군요.'라고 말한다.",
+       "polish": {
+        "from": "그는 'Ah, 사범님 귀공자, you're here.'라고 말한다.",
+        "text": "그는 '아, 사범님 귀공자, 오셨군요.'라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "호칭을 붙여 예우하면서도 사과와 함께 볼일을 먼저 알리는 태도는, 그를 자기편에서 대접해야 할 인물로 다루는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "호칭을 붙여 예우하면서도 사과와 함께 볼일을 먼저 알리는 태도는, 그를 자기편에서 대접해야 할 인물로 다루는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Sentence 0 states a difference in tone as fact, which the English never says. Sentence 3 states that he already knows the name; the line only says \"I presume.\"",
+     "quote": "Ah, you're the consultant to Wangsheng Funeral Parlor — Mr. Zhongli, I presume?",
+     "sentences": [
+      {
+       "t_raw": "그는 Zhongli에게 'Ah, you're the consultant to Wangsheng Funeral Parlor — Mr. Zhongli, I presume?'라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 종려에게 '아, 왕생당의 고문이시군요 — 종려 씨, 그렇지요?'라고 말한다.",
+       "polish": {
+        "from": "그는 종려에게 'Ah, you're the consultant to 왕생당 — Mr. 종려, I presume?'라고 말한다.",
+        "text": "그는 종려에게 '아, 왕생당의 고문이시군요 — 종려 씨, 그렇지요?'라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Felix는 그를 **Mr. Zhongli**라고 부르기에 앞서, Wangsheng Funeral Parlor의 컨설턴트라는 신원을 먼저 짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "펠릭스는 그를 **Mr. 종려**라고 부르기에 앞서, 왕생당의 컨설턴트라는 신원을 먼저 짚는다."
+      },
+      {
+       "t_raw": "\"Ah, you're the consultant to Wangsheng Funeral Parlor — Mr. Zhongli, I presume?\"에서는 상대가 누구인지 확인하는 형태로 말이 시작된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "\"아, 왕생당의 고문이시군요 — 종려 씨, 그렇지요?\"에서는 상대가 누구인지 확인하는 형태로 말이 시작된다.",
+       "polish": {
+        "from": "\"Ah, you're the consultant to 왕생당 — Mr. 종려, I presume?\"에서는 상대가 누구인지 확인하는 형태로 말이 시작된다.",
+        "text": "\"아, 왕생당의 고문이시군요 — 종려 씨, 그렇지요?\"에서는 상대가 누구인지 확인하는 형태로 말이 시작된다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "소속과 이름을 함께 대며 'I presume'이라고 묻는 것은, 상대의 신원을 추측해 확인하려는 말로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "소속과 이름을 함께 대며 '그렇지요'라고 묻는 것은, 상대의 신원을 추측해 확인하려는 말로 보인다.",
+       "polish": {
+        "from": "소속과 이름을 함께 대며 'I presume'이라고 묻는 것은, 상대의 신원을 추측해 확인하려는 말로 보인다.",
+        "text": "소속과 이름을 함께 대며 '그렇지요'라고 묻는 것은, 상대의 신원을 추측해 확인하려는 말로 보인다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Mr"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Calling “Master Childe” a form of address for someone he already knows, and treating both lines as how he opens, is not stated; only Zhongli’s affiliation-plus-“I presume” line is.",
+     "quote": "Ah, Master Childe, you're here.",
+     "sentences": [
+      {
+       "t_raw": "그는 Childe에게 'Ah, Master Childe, you're here.'라고 말하며, Zhongli에게는 Wangsheng Funeral Parlor의 고문인지 'I presume'이라고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 귀공자에게 '아, 사범님 귀공자, 오셨군요.'라고 말하며, 종려에게는 왕생당의 고문인지 '그렇지요'라고 묻는다.",
+       "polish": {
+        "from": "그는 귀공자에게 'Ah, 사범님 귀공자, you're here.'라고 말하며, 종려에게는 왕생당의 고문인지 'I presume'이라고 묻는다.",
+        "text": "그는 귀공자에게 '아, 사범님 귀공자, 오셨군요.'라고 말하며, 종려에게는 왕생당의 고문인지 '그렇지요'라고 묻는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "같은 외교관의 입에서 나온 두 호칭이 한쪽은 예우로, 다른 쪽은 확인으로 갈리는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 외교관의 입에서 나온 두 호칭이 한쪽은 예우로, 다른 쪽은 확인으로 갈리는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Q5 does not say the cutoff line was meant for Childe, and nothing places it immediately after the baptism rule; that sequence is added.",
+     "quote": "Every new batch of recruits must be baptized by the Tsaritsa's will through the words of her Harbingers. This has always been our rule.",
+     "sentences": [
+      {
+       "t_raw": "Felix는 신병 세례에 대해 \"새로 들어오는 신병은 반드시 Tsaritsa의 뜻을 그녀의 Harbinger들의 말을 통해 세례받아야 한다\"는 규칙을 언급하며, 이것이 \"언제나 그래 왔던\" 그들의 규칙이라고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "펠릭스는 신병 세례에 대해 \"새로 들어오는 신병은 반드시 얼음의 여왕의 뜻을 그녀의 집행관들의 말을 통해 세례받아야 한다\"는 규칙을 언급하며, 이것이 \"언제나 그래 왔던\" 그들의 규칙이라고 말했다."
+      },
+      {
+       "t_raw": "그의 말은 'A new batch of fresh recruits have just...'에서 끊긴다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그의 말은 '새로 뽑힌 신병들이 막...'에서 끊긴다.",
+       "polish": {
+        "from": "그의 말은 'A new batch of fresh recruits have just...'에서 끊긴다.",
+        "text": "그의 말은 '새로 뽑힌 신병들이 막...'에서 끊긴다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그의 말이 'A new batch of fresh recruits have just...'에서 끊긴다는 점은, 이 장면에 여러 가지 상상을 남기는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "그의 말이 '새로 뽑힌 신병들이 막...'에서 끊긴다는 점은, 이 장면에 여러 가지 상상을 남기는 대목으로 보인다.",
+       "polish": {
+        "from": "그의 말이 'A new batch of fresh recruits have just...'에서 끊긴다는 점은, 이 장면에 여러 가지 상상을 남기는 대목으로 보인다.",
+        "text": "그의 말이 '새로 뽑힌 신병들이 막...'에서 끊긴다는 점은, 이 장면에 여러 가지 상상을 남기는 대목으로 보인다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The adepti line is stated, but the English does not show that this news stacks on the impasse or that Liyue’s situation is revealed to have begun shaking hard.",
+     "quote": "The adepti of Jueyun Karst are finally on the move.",
+     "sentences": [
+      {
+       "t_raw": "Liyue에서의 Fatui와 Millelith의 관계는 교착 상태에 놓였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월에서의 우인단과 천암군의 관계는 교착 상태에 놓였다."
+      },
+      {
+       "t_raw": "Felix는 \"양측 모두 상당히 완고했고, 교착에 부딪혔다\"고 설명하면서도 Millelith가 Fatui의 일거수일투족을 지켜보고 있어 경솔하게 움직일 수 없다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "펠릭스는 \"양측 모두 상당히 완고했고, 교착에 부딪혔다\"고 설명하면서도 천암군이 우인단의 일거수일투족을 지켜보고 있어 경솔하게 움직일 수 없다고 말했다."
+      },
+      {
+       "t_raw": "그는 'The adepti of Jueyun Karst are finally on the move.'라고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 '절운간의 선인들이 마침내 움직이기 시작했다.'라고 전한다.",
+       "polish": {
+        "from": "그는 'The adepti of 절운간 are finally on the move.'라고 전한다.",
+        "text": "그는 '절운간의 선인들이 마침내 움직이기 시작했다.'라고 전한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "교착으로 움직이지 못하는 Fatui와 움직이기 시작한 선인들의 대비는, 이 교착이 곧 깨질 변화의 전조로 읽히는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "교착으로 움직이지 못하는 우인단과 움직이기 시작한 선인들의 대비는, 이 교착이 곧 깨질 변화의 전조로 읽히는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "“Ugh…” is not the hesitant “저기…,” and the line never names the impasse; a confident tone and Fatui grievance are not in the wording.",
+     "quote": "Ugh... that's all Ningguang's doing...",
+     "sentences": [
+      {
+       "t_raw": "그는 'Ugh... that's all Ningguang's doing...'이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 '윽... 그건 모두 응광의 소행이야...'라고 말한다.",
+       "polish": {
+        "from": "그는 'Ugh... that의 all 응광의 doing...'이라고 말한다.",
+        "text": "그는 '윽... 그건 모두 응광의 소행이야...'라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그가 'Ugh... that's all Ningguang's doing...'이라고 말한다는 점은, 그가 Ningguang을 원인으로 지목하는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "그가 '윽... 그건 모두 응광의 소행이야...'라고 말한다는 점은, 그가 응광을 원인으로 지목하는 것으로 보인다.",
+       "polish": {
+        "from": "그가 'Ugh... that의 all 응광의 doing...'이라고 말한다는 점은, 그가 응광을 원인으로 지목하는 것으로 보인다.",
+        "text": "그가 '윽... 그건 모두 응광의 소행이야...'라고 말한다는 점은, 그가 응광을 원인으로 지목하는 것으로 보인다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이 말이 어떤 사건을 가리키는 것인지, 그리고 Ningguang과 Fatui 사이에 무슨 일이 있었는지는 자세히 밝혀지지 않아 떡밥으로 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 말이 어떤 사건을 가리키는 것인지, 그리고 응광과 우인단 사이에 무슨 일이 있었는지는 자세히 밝혀지지 않아 떡밥으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The two Childe lines are real, but the English does not say he speaks on seeing Childe or that the greeting comes before the apology.",
+     "quote": "I must apologize for troubling you, Master Childe, but they are already waiting for you ...",
+     "sentences": [
+      {
+       "t_raw": "Felix는 'Ah, Master Childe, you're here.'라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "펠릭스는 '아, 사범님 귀공자, 오셨군요.'라고 말한다.",
+       "polish": {
+        "from": "펠릭스는 'Ah, 사범님 귀공자, you're here.'라고 말한다.",
+        "text": "펠릭스는 '아, 사범님 귀공자, 오셨군요.'라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그는 'I must apologize for troubling you, Master Childe, but they are already waiting for you ...'라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 '폐를 끼쳐 죄송합니다, 사범님 귀공자, 하지만 그들은 이미 당신을 기다리고 있습니다 ...'라고 말한다.",
+       "polish": {
+        "from": "그는 'I must apologize for troubling you, 사범님 귀공자, but they are already waiting for you ...'라고 말한다.",
+        "text": "그는 '폐를 끼쳐 죄송합니다, 사범님 귀공자, 하지만 그들은 이미 당신을 기다리고 있습니다 ...'라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Childe를 **Master Childe**로 부르며 사과하는 모습은 그를 예의를 갖춘 상대로 대하는 태도로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "귀공자를 **사범님 귀공자**로 부르며 사과하는 모습은 그를 예의를 갖춘 상대로 대하는 태도로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The Zhongli line matches, and the contrast with the Childe greeting is a fair reading.",
+     "quote": "Ah, Master Childe, you're here.",
+     "sentences": [
+      {
+       "t_raw": "Zhongli에게는 “Ah, you're the consultant to Wangsheng Funeral Parlor — Mr. Zhongli, I presume?”라고 말을 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "종려에게는 “아, 왕생당의 고문이시군요 — 종려 씨, 그렇지요?”라고 말을 건넨다.",
+       "polish": {
+        "from": "종려에게는 “Ah, you're the consultant to 왕생당 — Mr. 종려, I presume?”라고 말을 건넨다.",
+        "text": "종려에게는 “아, 왕생당의 고문이시군요 — 종려 씨, 그렇지요?”라고 말을 건넨다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "상대의 소속과 직함을 먼저 짚고 **Mr. Zhongli**인지 짐작하는 방식이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상대의 소속과 직함을 먼저 짚고 **Mr. 종려**인지 짐작하는 방식이다."
+      },
+      {
+       "t_raw": "Childe에게 호칭으로 인사한 것과 달리, Zhongli에게는 상대를 짐작하는 말로 시작하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "귀공자에게 호칭으로 인사한 것과 달리, 종려에게는 상대를 짐작하는 말로 시작하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Solitary Fragrance",
+       "quest_ko": "고결한 향기",
+       "version": "1.1",
+       "speaker": "Felix"
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Felix"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Mr"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Q7.",
+     "t_raw": "아, Master Childe, 오셨군요.",
+     "en": "Ah, Master Childe, you're here.",
+     "speaker": "Felix",
+     "source": {
+      "kind": "quest",
+      "quest": "Teucer's Terrific Tour",
+      "quest_ko": "테우세르의 리월 견문록",
+      "version": "1.1",
+      "speaker": "Felix"
+     },
+     "t": "아, 사범님 귀공자, 오셨군요.",
+     "speaker_ko": "펠릭스"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of Q1.",
+     "t_raw": "새로운 신병 무리마다 집행관의 말을 통해 Tsaritsa의 뜻에 따라 세례를 받아야 한다. 이것은 항상 우리의 규칙이었다.",
+     "en": "Every new batch of recruits must be baptized by the Tsaritsa's will through the words of her Harbingers. This has always been our rule.",
+     "speaker": "Felix",
+     "source": {
+      "kind": "quest",
+      "quest": "Teucer's Terrific Tour",
+      "quest_ko": "테우세르의 리월 견문록",
+      "version": "1.1",
+      "speaker": "Felix"
+     },
+     "t": "새로운 신병 무리마다 집행관의 말을 통해 얼음의 여왕의 뜻에 따라 세례를 받아야 한다. 이것은 항상 우리의 규칙이었다.",
+     "speaker_ko": "펠릭스"
+    },
+    {
+     "section": "작중 행적 — Teucer's Terrific Tour",
+     "status": "accepted",
+     "note": "Faithful translation of Q3. Rendering 'they' as 그분들 is a tone choice, not an added fact.",
+     "t_raw": "Master Childe, 폐를 끼쳐 드려 죄송합니다만, 그분들이 이미 당신을 기다리고 계십니다…",
+     "en": "I must apologize for troubling you, Master Childe, but they are already waiting for you ...",
+     "speaker": "Felix",
+     "source": {
+      "kind": "quest",
+      "quest": "Teucer's Terrific Tour",
+      "quest_ko": "테우세르의 리월 견문록",
+      "version": "1.1",
+      "speaker": "Felix"
+     },
+     "t": "사범님 귀공자, 폐를 끼쳐 드려 죄송합니다만, 그분들이 이미 당신을 기다리고 계십니다…",
+     "speaker_ko": "펠릭스"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation of Q3.",
+     "t_raw": "Master Childe, 귀찮게 해 드려 죄송합니다만, 이미 당신을 기다리는 이들이 있습니다…",
+     "en": "I must apologize for troubling you, Master Childe, but they are already waiting for you ...",
+     "speaker": "Felix",
+     "source": {
+      "kind": "quest",
+      "quest": "Teucer's Terrific Tour",
+      "quest_ko": "테우세르의 리월 견문록",
+      "version": "1.1",
+      "speaker": "Felix"
+     },
+     "t": "사범님 귀공자, 귀찮게 해 드려 죄송합니다만, 이미 당신을 기다리는 이들이 있습니다…",
+     "speaker_ko": "펠릭스"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Q9.",
+     "t_raw": "Jueyun Karst의 선인들이 마침내 움직이기 시작했다.",
+     "en": "The adepti of Jueyun Karst are finally on the move.",
+     "speaker": "Felix",
+     "source": {
+      "kind": "quest",
+      "quest": "Solitary Fragrance",
+      "quest_ko": "고결한 향기",
+      "version": "1.1",
+      "speaker": "Felix"
+     },
+     "t": "절운간의 선인들이 마침내 움직이기 시작했다.",
+     "speaker_ko": "펠릭스"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Q6.",
+     "t_raw": "아, 당신은 Wangsheng Funeral Parlor의 고문이시군요 — Mr. Zhongli, 그렇지요?",
+     "en": "Ah, you're the consultant to Wangsheng Funeral Parlor — Mr. Zhongli, I presume?",
+     "speaker": "Felix",
+     "source": {
+      "kind": "quest",
+      "quest": "Solitary Fragrance",
+      "quest_ko": "고결한 향기",
+      "version": "1.1",
+      "speaker": "Felix"
+     },
+     "t": "아, 당신은 왕생당의 고문이시군요 — Mr. 종려, 그렇지요?",
+     "speaker_ko": "펠릭스"
+    }
+   ]
+  }
+ ]
+}

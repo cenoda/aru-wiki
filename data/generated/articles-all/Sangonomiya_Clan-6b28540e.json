@@ -1,0 +1,440 @@
+{
+ "node": "Sangonomiya Clan",
+ "articles": [
+  {
+   "node": "Sangonomiya Clan",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Sangonomiya Clan",
+     "url": "https://genshin-impact.fandom.com/wiki/Sangonomiya_Clan",
+     "revision": 249395
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 781,
+   "input_cut": false,
+   "input_hash": "228af263d13c",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "(0) 'Unlike other clans, no known positions... worship Orobashi' is supported, fine; but the sentence is said to be a major noble clan - OK. Actually fails: none on (0) beyond phrasing? Flagged conservatively: (0) is supported, so see (1). (1) says they went to war with the Tenryou Commission 'immediately' upon the decree, which is supported for opposition, but 'immediately opposed' ≠ immediately war; also text says 'once more' opposed. Mildly overstated.",
+     "quote": "The Sangonomiya Clan is one of the major noble clans of Inazuma.",
+     "sentences": [
+      {
+       "t_raw": "Sangonomiya Clan은 Inazuma의 주요 귀족 가문 중 하나이며, 현재 정부에서 알려진 직책은 없고 Raiden Shogun 대신 Orobashi를 섬긴다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "산고노미야 가문은 이나즈마의 주요 귀족 가문 중 하나이며, 현재 정부에서 알려진 직책은 없고 라이덴 쇼군 대신 오로바시 님을 섬긴다."
+      },
+      {
+       "t_raw": "Vision Hunt Decree가 선포되자 이들은 다시 한 번 곧바로 반대했고, 현재 Tenryou Commission과 전쟁 중이며 Sangonomiya Resistance라는 저항 단체를 이뤘다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "안수령이 선포되자 이들은 다시 한 번 곧바로 반대했고, 현재 텐료 봉행(天領奉行)과 전쟁 중이며 산고노미야 저항군라는 저항 단체를 이뤘다."
+      },
+      {
+       "t_raw": "Watatsumi Island 주민들이 Orobashi를 수호신으로 모시는 신앙과 Shogunate와의 대립은 이 가문을 이해하는 중요한 두 축이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "와타츠미섬 주민들이 오로바시 님을 수호신으로 모시는 신앙과 막부와의 대립은 이 가문을 이해하는 중요한 두 축이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sangonomiya Clan",
+       "revision": 249395,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Orobashi",
+       "revision": 321086,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Orobashi",
+       "revision": 321086,
+       "section": "Story > Attack on Yashiori Island and Death",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "정체 — Shogunate 밖의 신앙과 저항",
+     "status": "accepted",
+     "note": "All sentences supported by A1 and M1; interpretation is reasonable.",
+     "quote": "Unlike the other known clans of Inazuma, they do not have any known positions in the current government and worship Orobashi instead of the Raiden Shogun.",
+     "sentences": [
+      {
+       "t_raw": "Sangonomiya Clan은 Inazuma의 주요 귀족 가문이지만, 현재 정부에서 알려진 직책이 없고 Raiden Shogun 대신 Orobashi를 섬긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산고노미야 가문은 이나즈마의 주요 귀족 가문이지만, 현재 정부에서 알려진 직책이 없고 라이덴 쇼군 대신 오로바시 님을 섬긴다."
+      },
+      {
+       "t_raw": "Orobashi가 Dark Sea에서 이들을 발견해 농경과 제련을 가르쳤기에, Watatsumi Island 주민들과 그 지도자인 Sangonomiya Clan은 Orobashi를 수호신으로 여기며 섬긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오로바시 님이 어둠의 외해에서 이들을 발견해 농경과 제련을 가르쳤기에, 와타츠미섬 주민들과 그 지도자인 산고노미야 가문은 오로바시 님을 수호신으로 여기며 섬긴다."
+      },
+      {
+       "t_raw": "정부 직책이 없다는 점과 Raiden Shogun 대신 Orobashi를 섬긴다는 점이 겹쳐, 이 가문은 **Shogunate 밖의 신앙**을 이끄는 귀족 가문으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정부 직책이 없다는 점과 라이덴 쇼군 대신 오로바시 님을 섬긴다는 점이 겹쳐, 이 가문은 **막부 밖의 신앙**을 이끄는 귀족 가문으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sangonomiya Clan",
+       "revision": 249395,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Orobashi",
+       "revision": 321086,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체 — 막부 밖의 신앙과 저항",
+     "latin_left": []
+    },
+    {
+     "section": "정체 — Shogunate 밖의 신앙과 저항",
+     "status": "accepted",
+     "note": "All supported; interpretation follows from the material.",
+     "quote": "When the Vision Hunt Decree was declared, the clan immediately opposed her once more and is currently at war with the Tenryou Commission, forming a resistance group.",
+     "sentences": [
+      {
+       "t_raw": "Sangonomiya Clan은 과거 Shogun과 그 정부에 맞서 이름 없는 전쟁을 벌였고, Raiden Shogun이 그들의 뱀 신을 죽이면서 패배했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산고노미야 가문은 과거 쇼군과 그 정부에 맞서 이름 없는 전쟁을 벌였고, 라이덴 쇼군이 그들의 뱀 신을 죽이면서 패배했다."
+      },
+      {
+       "t_raw": "Vision Hunt Decree가 선포되자 Sangonomiya Clan은 다시 이에 반대했고, Shogunate와 공공연한 충돌에 들어가 Tenryou Commission과 대규모 접전을 벌이는 Sangonomiya Resistance를 결성했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "안수령이 선포되자 산고노미야 가문은 다시 이에 반대했고, 막부와 공공연한 충돌에 들어가 텐료 봉행(天領奉行)과 대규모 접전을 벌이는 산고노미야 저항군을 결성했다."
+      },
+      {
+       "t_raw": "과거의 패배와 Vision Hunt Decree 이후의 재충돌을 겹쳐 보면, 이 가문은 Shogunate의 정책에 맞서는 **저항 세력**으로 자리한 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "과거의 패배와 안수령 이후의 재충돌을 겹쳐 보면, 이 가문은 막부의 정책에 맞서는 **저항 세력**으로 자리한 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sangonomiya Clan",
+       "revision": 249395,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Orobashi",
+       "revision": 321086,
+       "section": "Story > Attack on Yashiori Island and Death",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체 — 막부 밖의 신앙과 저항",
+     "latin_left": []
+    },
+    {
+     "section": "거점 — Watatsumi Island와 Yashiori Island 전초",
+     "status": "accepted",
+     "note": "Supported; interpretation follows.",
+     "quote": "Their residence is located on Watatsumi Island, the outermost of the Inazuma archipelago.",
+     "sentences": [
+      {
+       "t_raw": "Sangonomiya Clan의 거주지는 Inazuma 열도에서 가장 바깥쪽에 있는 **Watatsumi Island**에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산고노미야 가문의 거주지는 이나즈마 열도에서 가장 바깥쪽에 있는 **와타츠미섬**에 자리한다."
+      },
+      {
+       "t_raw": "이 섬이 Inazuma 열도의 최외곽에 해당하므로, 이들의 생활 근거지는 열도의 바깥 경계에 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 섬이 이나즈마 열도의 최외곽에 해당하므로, 이들의 생활 근거지는 열도의 바깥 경계에 놓인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sangonomiya Clan",
+       "revision": 249395,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "거점 — 와타츠미섬과 야시오리섬 전초",
+     "latin_left": []
+    },
+    {
+     "section": "거점 — Watatsumi Island와 Yashiori Island 전초",
+     "status": "accepted",
+     "note": "(1) asserts a structure with Yashiori as the activity base; the English gives only outposts and war camps there, and the 'structure' reading is presented fairly firmly but is a reasonable inference. Passed on balance? Flagged: 'activity base' is a mild stretch.",
+     "quote": "Additionally, they set up a few forward outposts and war camps as on Yashiori Island.",
+     "sentences": [
+      {
+       "t_raw": "이들은 **Yashiori Island**에도 몇몇 **전초와 전쟁 야영지**를 두었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 **야시오리섬**에도 몇몇 **전초와 전쟁 야영지**를 두었다."
+      },
+      {
+       "t_raw": "거주지와 전초가 서로 다른 섬에 나뉘어 있다는 점은, Watatsumi Island에 거주지를 두고 Yashiori Island에는 전방 전초와 전쟁 야영지를 마련한 구조로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "거주지와 전초가 서로 다른 섬에 나뉘어 있다는 점은, 와타츠미섬에 거주지를 두고 야시오리섬에는 전방 전초와 전쟁 야영지를 마련한 구조로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sangonomiya Clan",
+       "revision": 249395,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "거점 — 와타츠미섬과 야시오리섬 전초",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Orobashi의 은혜와 Shogunate와의 충돌",
+     "status": "accepted",
+     "note": "All supported; interpretation follows from the material.",
+     "quote": "as it taught them how to farm and smelt after discovering them in the Dark Sea",
+     "sentences": [
+      {
+       "t_raw": "Watatsumi Island의 주민과 지도자들인 Sangonomiya Clan은 Orobashi를 섬긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "와타츠미섬의 주민과 지도자들인 산고노미야 가문은 오로바시 님을 섬긴다."
+      },
+      {
+       "t_raw": "Orobashi는 Dark Sea에서 그들을 발견해 **농경과 제련**을 가르쳤고, 주민들은 그 은혜에 감사하며 Orobashi를 수호신으로 숭배한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오로바시 님은 어둠의 외해에서 그들을 발견해 **농경과 제련**을 가르쳤고, 주민들은 그 은혜에 감사하며 오로바시 님을 수호신으로 숭배한다."
+      },
+      {
+       "t_raw": "가르침과 숭배가 맞물려 Orobashi는 이들의 생활과 신앙의 중심에 선 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가르침과 숭배가 맞물려 오로바시 님은 이들의 생활과 신앙의 중심에 선 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Orobashi",
+       "revision": 321086,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 오로바시 님의 은혜와 막부와의 충돌",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Orobashi의 은혜와 Shogunate와의 충돌",
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and M2; the interpretation in (3) follows reasonably.",
+     "quote": "Ever since the Raiden Shogun's enactment of the Vision Hunt Decree, the Sangonomiya Clan has been at odds with the Shogunate, who have since engaged in open conflict",
+     "sentences": [
+      {
+       "t_raw": "Sangonomiya Clan은 역사적으로 Raiden Shogun과 그 정부에 대해 비교적 좋지 않은 관계였고, **이름 없는 전쟁**에서 Raiden Shogun에 맞서 싸웠으나 그녀가 그들의 뱀 신을 죽이면서 패배했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산고노미야 가문은 역사적으로 라이덴 쇼군과 그 정부에 대해 비교적 좋지 않은 관계였고, **이름 없는 전쟁**에서 라이덴 쇼군에 맞서 싸웠으나 그녀가 그들의 뱀 신을 죽이면서 패배했다."
+      },
+      {
+       "t_raw": "**Vision Hunt Decree**가 선포되자 Clan은 즉시 다시 반대했고, 현재 Tenryou Commission과 전쟁을 벌이며 저항 세력을 이루고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**안수령**이 선포되자 Clan은 즉시 다시 반대했고, 현재 텐료 봉행(天領奉行)과 전쟁을 벌이며 저항 세력을 이루고 있다."
+      },
+      {
+       "t_raw": "Raiden Shogun이 Vision Hunt Decree를 제정한 뒤에는 Sangonomiya Resistance와 Shogunate의 Tenryou Commission 사이에 대규모 접전이 일어났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 쇼군이 안수령을 제정한 뒤에는 산고노미야 저항군과 막부의 텐료 봉행(天領奉行) 사이에 대규모 접전이 일어났다."
+      },
+      {
+       "t_raw": "과거의 전쟁 뒤 다시 충돌한 흐름은 법령을 계기로 재연된 대립으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "과거의 전쟁 뒤 다시 충돌한 흐름은 법령을 계기로 재연된 대립으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sangonomiya Clan",
+       "revision": 249395,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Orobashi",
+       "revision": 321086,
+       "section": "Story > Attack on Yashiori Island and Death",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 오로바시 님의 은혜와 막부와의 충돌",
+     "latin_left": [
+      "Clan"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Kokomi is listed as a present known member (A3). Orobashi worship and its teaching of farming and smelting are in A1 and M1. The gratitude reading in (2) follows from M1.",
+     "quote": "The residents of Watatsumi Island and their leaders, the Sangonomiya Clan, worship Orobashi",
+     "sentences": [
+      {
+       "t_raw": "현재 알려진 Sangonomiya Clan의 구성원은 Sangonomiya Kokomi다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 알려진 산고노미야 가문의 구성원은 산고노미야 코코미다."
+      },
+      {
+       "t_raw": "Sangonomiya Clan은 **Raiden Shogun 대신 Orobashi를 섬기며**, Watatsumi Island의 주민과 지도자들은 농경과 제련을 가르친 Orobashi를 수호신으로 공경한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산고노미야 가문은 **라이덴 쇼군 대신 오로바시 님을 섬기며**, 와타츠미섬의 주민과 지도자들은 농경과 제련을 가르친 오로바시 님을 수호신으로 공경한다."
+      },
+      {
+       "t_raw": "이들의 Orobashi 신앙은 은혜에 대한 감사의 성격을 띤다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이들의 오로바시 님 신앙은 은혜에 대한 감사의 성격을 띤다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sangonomiya Clan",
+       "revision": 249395,
+       "section": "Known Members > Present",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sangonomiya Clan",
+       "revision": 249395,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Orobashi",
+       "revision": 321086,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The war, the loss, the snake god's death, the Resistance, the open conflict and the skirmishes are all stated in A1 and M2. The interpretation in (2) is reasonable.",
+     "quote": "Ever since the Raiden Shogun's enactment of the Vision Hunt Decree, the Sangonomiya Clan has been at odds with the Shogunate",
+     "sentences": [
+      {
+       "t_raw": "Sangonomiya Clan은 과거 Raiden Shogun과 그 정부에 맞서 이름 없는 전쟁을 벌였다가 패배했고, Raiden Shogun이 그들의 뱀 신을 죽였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산고노미야 가문은 과거 라이덴 쇼군과 그 정부에 맞서 이름 없는 전쟁을 벌였다가 패배했고, 라이덴 쇼군이 그들의 뱀 신을 죽였다."
+      },
+      {
+       "t_raw": "Vision Hunt Decree가 선포되자 Clan은 곧바로 다시 맞서 **Sangonomiya Resistance**를 이루었고, Shogunate와 공개적 충돌에 들어가 Tenryou Commission과 대규모 접전을 벌였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "안수령이 선포되자 Clan은 곧바로 다시 맞서 **산고노미야 저항군**을 이루었고, 막부와 공개적 충돌에 들어가 텐료 봉행(天領奉行)과 대규모 접전을 벌였다."
+      },
+      {
+       "t_raw": "과거의 패배 뒤에도 Raiden Shogun의 Vision Hunt Decree에 다시 맞서는 관계가 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "과거의 패배 뒤에도 라이덴 쇼군의 안수령에 다시 맞서는 관계가 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sangonomiya Clan",
+       "revision": 249395,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Orobashi",
+       "revision": 321086,
+       "section": "Story > Attack on Yashiori Island and Death",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Clan"
+     ]
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

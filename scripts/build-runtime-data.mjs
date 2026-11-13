@@ -17,8 +17,8 @@ const graph = {
   versions,
   quests: quests.map((q) => ({
     ...pick(q, ['id', 'level', 'quest_type', 'act', 'names', 'first_version', 'replayable', 'event', 'region']),
-    // the detail panel links the first source; revision ids are for the data pipeline
-    sources: (q.sources ?? []).slice(0, 1).map((s) => ({ url: s.url })),
+    // the detail panel credits the first source page at the revision the data was read from (LICENSE-CONTENT.md 1절)
+    sources: (q.sources ?? []).slice(0, 1).map((s) => pick(s, ['url', 'revision'])),
   })),
   questEdges: edges.map((e) => pick(e, ['source', 'target', 'relation', 'basis', 'revealed_version'])),
   units: {
@@ -29,7 +29,11 @@ const graph = {
   },
   recommended: recommended
     .filter((e) => !e.already_required) // the game enforces this order already; the site drops them too
-    .map((e) => pick(e, ['source', 'target', 'tier', 'reason_ko', 'gist_ko', 'links', 'revealed_version', 'review'])),
+    .map((e) => ({
+      ...pick(e, ['source', 'target', 'tier', 'reason_ko', 'gist_ko', 'links', 'revealed_version', 'review']),
+      // the wiki pages (and revisions) the reason was written from, credited under it
+      sources: (e.sources ?? []).map((s) => pick(s, ['url', 'revision'])),
+    })),
   // card figures and their icon files (docs/image-policy.md)
   figures: { acts: figures.acts, characters: Object.fromEntries(Object.entries(figures.characters).map(([k, v]) => [k, { ko: v.ko ?? null }])) },
   imageFiles: imageFiles.files.map((f) => pick(f, ['file', 'character', 'source_url', 'fetched', 'release_version'])),

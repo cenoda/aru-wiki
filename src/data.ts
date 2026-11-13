@@ -15,8 +15,10 @@ export interface Quest {
   replayable: boolean;
   event?: string;
   region?: string;
-  sources: { url: string }[];
+  /** the wiki page the quest's data was read from, and its revision */
+  sources: WikiSource[];
 }
+export interface WikiSource { url: string; revision?: number }
 
 export interface QuestEdge {
   source: string;
@@ -187,6 +189,8 @@ export interface RecommendedEdge {
   revealed: number;
   /** a person checked the LLM edge (data/manual/edge-reviews.json); infobox edges count as checked */
   reviewed: boolean;
+  /** the wiki pages an LLM reason was written from */
+  sources?: WikiSource[];
 }
 
 /**
@@ -213,11 +217,11 @@ export function recommendedGraph() {
     if (out.has(id)) continue; // the infobox says so already
     out.set(id, { id, source: e.source, target: e.target, basis: 'llm', tier: e.tier,
       reason_ko: e.reason_ko, gist_ko: e.gist_ko, characters: e.links, reviewed: e.review === 'verified',
-      revealed: versionOrder.get(e.revealed_version) ?? 0 });
+      revealed: versionOrder.get(e.revealed_version) ?? 0, sources: e.sources });
   }
   return [...out.values()];
 }
-interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string; review: 'unreviewed' | 'verified' }
+interface LlmEdge { source: string; target: string; tier: RecTier; reason_ko: string; gist_ko?: string; links: string[]; revealed_version: string; review: 'unreviewed' | 'verified'; sources?: WikiSource[] }
 
 // ---------- card figures and their images (docs/image-policy.md) ----------
 

@@ -46,7 +46,7 @@ for (const [page, list] of Object.entries(data.pages)) {
 data.refreshed = new Date().toISOString();
 fs.writeFileSync(FILE, JSON.stringify(data, null, 1));
 // the title caches are only for matching; they do not outlive the 30 days
-for (const f of fs.readdirSync('.cache/youtube')) {
+for (const f of fs.existsSync('.cache/youtube') ? fs.readdirSync('.cache/youtube') : []) {
   const p = `.cache/youtube/${f}`;
   if (Date.now() - fs.statSync(p).mtimeMs > 30 * 864e5) { fs.rmSync(p); console.log('deleted old cache', p); }
 }

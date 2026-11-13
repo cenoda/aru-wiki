@@ -619,9 +619,9 @@ export default function WikiGraph3D() {
       .onNodeClick((n) => setSelected((cur) => (cur === n.id ? null : n.id)))
       .onBackgroundClick(() => setSelected(null))
       .onEngineStop(() => { if (!fitted) { fitted = true; layoutTimer = window.setTimeout(afterLayout, 30); } })
-      // the centre page sits on the plane; it is not pinned to the middle, so a lopsided wiki (more
-      // pages on one side of Teyvat) still lands centred on screen
-      .graphData({ nodes: theme.nodes.map((n) => (n.hub ? { ...n, fy: 0 } : { ...n })), links: theme.links.map((l) => ({ ...l })) });
+      // the centre page (티바트) is pinned at the origin so it sits at the exact centre of the
+      // orbital rings and serves as the horizontal rotation centre
+      .graphData({ nodes: theme.nodes.map((n) => (n.hub ? { ...n, fx: 0, fy: 0, fz: 0 } : { ...n })), links: theme.links.map((l) => ({ ...l })) });
 
     // pages with no lines are pulled in instead of drifting to the rim
     const pull = (n: PageNode) => (index.near.has(n.id) ? 0.03 : 0.25);
@@ -810,9 +810,8 @@ export default function WikiGraph3D() {
       const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
       const p = new Vector3();
       let dist = r90 * 2.5;
-      // the point looked at: moved over the plane until the stars sit in the middle of the screen (the
-      // near half of a tilted plane looks bigger than the far half, so the plane's centre is not enough)
-      let tx = 0, tz = 0;
+      // look at (0, cy, 0) so the rotation axis passes through 티바트 and the centre of the orbital rings
+      const tx = 0, tz = 0;
       const place = () => {
         camera.position.set(tx, cy + Math.sin(tilt) * dist, tz + Math.cos(tilt) * dist);
         camera.lookAt(tx, cy, tz);
@@ -826,21 +825,15 @@ export default function WikiGraph3D() {
         sx.sort((a, b) => a - b); sy.sort((a, b) => a - b);
         const cut = portrait ? 0.035 : 0.005;
         const [x0, x1, y0, y1] = [q(sx, cut), q(sx, 1 - cut), q(sy, cut), q(sy, 1 - cut)];
-        // half the visible width/height at the target's depth, in chart units
-        const halfH = dist / camera.projectionMatrix.elements[5], halfW = halfH * camera.aspect;
-        const k = i < 12 ? 0.6 : 0; // the last passes only settle the distance
-        tx += k * ((x0 + x1) / 2) * halfW;
-        // screen up at the target is mostly toward the far side of the plane (-z), foreshortened by the tilt
-        tz -= k * ((y0 + y1) / 2) * halfH / Math.sin(tilt + 0.35);
-        dist *= Math.max((x1 - x0) / 2 / 0.84, (y1 - y0) / 2 / 0.82);
+        dist *= Math.max(Math.abs(x0) / 0.84, Math.abs(x1) / 0.84, Math.abs(y0) / 0.82, Math.abs(y1) / 0.82);
       }
       place();
       g.cameraPosition({ x: tx, y: cy + Math.sin(tilt) * dist, z: tz + Math.cos(tilt) * dist }, { x: tx, y: cy, z: tz }, 0);
-      // zoom limits: out to a little under twice the first view (the background stars start at 1600,
-      // so the chart never shrinks to a speck inside a ball of dots), in to about a star's neighbourhood
+      // zoom limits: allow zooming out comfortably past the initial view (background stars start at 2800),
+      // and in to about a star's neighbourhood
       {
         const c = g.controls() as { minDistance: number; maxDistance: number };
-        c.maxDistance = Math.min(dist * 1.8, 1400);
+        c.maxDistance = Math.min(Math.max(dist * 3.0, 2000), 2600);
         c.minDistance = Math.max(60, dist * 0.3);
       }
       // on first view the chart turns slowly into place once (about 40 degrees, easing out), then rests;
@@ -883,7 +876,7 @@ export default function WikiGraph3D() {
     const layer = (count: number, inBand: number, size: number, opacity: number) => {
       const pos: number[] = [], col: number[] = [];
       for (let i = 0; i < count; i++) {
-        const R = 1600 + rnd() * 1400;
+        const R = 2800 + rnd() * 1600;
         const v = new Vector3();
         if (i < inBand) {
           const a = rnd() * Math.PI * 2, lat = gauss() * 0.12;
@@ -913,7 +906,7 @@ export default function WikiGraph3D() {
     dayDust.material.blending = NormalBlending; dayDust.material.vertexColors = false; dayDust.material.color.set('#7a87ad');
     dayDust.visible = !night0;
     // the Milky Way: a sky sphere around everything, seen from inside
-    const milky = new Mesh(new SphereGeometry(4200, 64, 32), new MeshBasicMaterial({ map: milkyWayTexture(), side: BackSide,
+    const milky = new Mesh(new SphereGeometry(5500, 64, 32), new MeshBasicMaterial({ map: milkyWayTexture(), side: BackSide,
       transparent: true, opacity: 0.3, depthWrite: false, fog: false, blending: AdditiveBlending }));
     milky.rotation.copy(GALAXY);
     milky.renderOrder = -3;
@@ -927,9 +920,9 @@ export default function WikiGraph3D() {
         blending: day ? NormalBlending : AdditiveBlending, opacity: day ? 0.9 : 0.45 });
       const sp = new Sprite(mat);
       sp.visible = day !== night0;
-      const d = new Vector3(...nb.dir).normalize().multiplyScalar(2200 + (nb.seed % 7) * 60);
+      const d = new Vector3(...nb.dir).normalize().multiplyScalar(3200 + (nb.seed % 7) * 90);
       sp.position.copy(d);
-      sp.scale.setScalar(nb.size);
+      sp.scale.setScalar(nb.size * 1.45);
       sp.renderOrder = -2;
       sp.raycast = () => {};
       g.scene().add(sp);

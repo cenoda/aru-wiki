@@ -31,11 +31,12 @@ for (let i = 0; i < ids.length; i += 50) {
   for (const v of j.items) info.set(v.id, v);
 }
 const why = {};
+const dropped = new Set(data.dropped ?? []); // judge.mjs leaves these out when it rebuilds the list
 const ok = (id) => {
   const v = info.get(id);
   const bad = !v ? 'gone' : v.status.privacyStatus !== 'public' ? 'not public' : !v.status.embeddable ? 'not embeddable'
     : v.status.madeForKids ? 'made for kids' : null;
-  if (bad) why[bad] = (why[bad] ?? 0) + 1;
+  if (bad) { why[bad] = (why[bad] ?? 0) + 1; dropped.add(id); }
   return !bad;
 };
 for (const [page, list] of Object.entries(data.pages)) {
@@ -43,6 +44,7 @@ for (const [page, list] of Object.entries(data.pages)) {
   if (kept.length && !kept.some((x) => x.role === 'main')) kept[0].role = 'main';
   if (kept.length) data.pages[page] = kept; else delete data.pages[page];
 }
+if (dropped.size) data.dropped = [...dropped].sort();
 data.refreshed = new Date().toISOString();
 fs.writeFileSync(FILE, JSON.stringify(data, null, 1));
 // the title caches are only for matching; they do not outlive the 30 days

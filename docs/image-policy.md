@@ -49,7 +49,10 @@
 ## 4-1. 공식 영상 (2026-11-13)
 
 - 문서에 원신 공식 YouTube 채널(한국, `@genshinimpact_kr`)의 영상을 붙인다. 파일을 받지 않고 YouTube 미리보기 그림(`i.ytimg.com`)과 누를 때만 열리는 플레이어(`youtube-nocookie.com`)로 보여 준다(`src/Videos.tsx`).
-- 짝짓기: `scripts/youtube/fetch-uploads.mjs`(업로드 목록, YouTube Data API) → `candidates.mjs`(제목에 문서 한국어 이름이 나오는 영상) → `judge.mjs`(Gemini 3.8 Flash·Gemini 4 Hydrogen이 문서를 다룬 영상만 고름, 2026-11-13 사용자 결정) → `refresh.mjs`. 결과는 `data/generated/videos.json`(영상 ID, 대표 여부, 버전, 제목).
+- 짝짓기: `scripts/youtube/fetch-uploads.mjs`(업로드 목록, YouTube Data API) → `candidates.mjs`(제목에 문서 한국어 이름이 나오는 영상, 아래 후보 넓히기) → `judge.mjs`(Gemini 3.8 Flash·Gemini 4 Hydrogen이 문서를 다룬 영상만 고름, 2026-11-13 사용자 결정) → `refresh.mjs`. 결과는 `data/generated/videos.json`(영상 ID, 대표 여부, 버전, 제목).
+- 후보 넓히기(2026-11-13): 한 글자 이름(진, 소)은 「진: …」처럼 그 인물을 다룬 제목만 잡는다. 제목 후보에 시연·트레일러·PV가 하나도 없으면, 설명에 그 문서의 해시태그(`#베넷`)가 달린 영상도 후보로 넣는다(제목에 이름이 없는 스토리 PV 등). 후보가 바뀐 문서만 다시 판정한다.
+- 대표 영상(정보 상자): `scripts/youtube/video-kind.mjs`가 제목으로 영상 종류를 세 단계로 나눈다(시연·트레일러·PV·티저·풍물집·OST > 일반 영상 > 생일 축하·짧은 영상·이벤트/기원 알림). LLM이 고른 영상 가운데 가장 높은 단계가 대표가 되고, 같은 단계면 LLM의 대표, 그다음 「이름: …」 제목이 앞선다. 한국 채널에 시연 영상이 없는 1.0 4성(북두, 레이저 등)은 생일 축하 영상이 대표로 남는다.
+- `videos.json`에는 제목도 들어간다(정지 화면 아래에 보임). `refresh.mjs`가 뺀 영상(아동용·비공개·삽입 불가·삭제)은 `dropped`에 남겨 `judge.mjs`가 다시 넣지 않는다.
 - 버전: 영상 게시일 + 20일 이전에 나온 마지막 버전. 버전 선택기가 그보다 앞이면 보이지 않는다.
 - HoYoFair(팬 창작)는 후보에서 뺀다. 아동용(Made for Kids)·비공개·삽입 불가 영상은 `refresh.mjs`가 뺀다(YouTube API 정책 III.E.4(j)).
 - **30일마다 `with-youtube node scripts/youtube/refresh.mjs`를 돌린다**(cron이 매달 1일·15일 `scripts/youtube/auto-refresh.sh`로 갱신·push·배포한다). YouTube API 정책 III.E.4(c)(d)는 받은 데이터를 30일 안에 새로 받거나 지우게 한다. ID에 대한 예외 조항은 찾지 못했다. 제목 캐시(`.cache/youtube/`)도 30일이 지나면 같은 스크립트가 지운다.

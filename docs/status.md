@@ -107,7 +107,7 @@
 - [x] 아이콘 PNG를 리포지토리와 이력에서 뺐다(2026-11-11 결정). `main`·`feat/3d-main`을 다시 써서 강제 push했다. 배포 순서: `npm run fetch:icons` → `npm run build`.
 - [x] GitHub의 옛 이력 정리(2026-11-12): 사용자가 저장소를 지우고 사용자가 같은 이름(공개)으로 다시 만든 뒤 `main`·`feat/3d-main`·`feat/quest-3d`를 push했다. 옛 커밋(6218e8b)은 웹 404·API 422로 더는 보이지 않는다. push한 세 브랜치 이력에 PNG는 없다. PR #1~#3 기록은 사라졌다.
 - [x] `~/projects/aru-wiki-3d` 폴더를 새 이력으로 맞췄다(2026-11-11). 옛 브랜치(`backup/old-main`·`backup/old-feat-3d-main`)는 2026-11-12 사용자 결정으로 지웠다. 5174 미리보기 서버는 껐다.
-- [ ] 화면에서 출처·라이선스 표시(카드 이미지는 2026-11-11 완료: 화면 아래 고지, 갈래 정보 카드에 출처·받은 날짜·공개 버전).
+- [x] 화면에서 출처·라이선스 표시(카드 이미지는 2026-11-11 완료: 화면 아래 고지, 갈래 정보 카드에 출처·받은 날짜·공개 버전). 글은 2026-11-13: 3D 카드(스냅샷·첫 문단), 문서의 「출처와 라이선스」(원문 문서·판·기여자 목록, CC BY-SA 3.0/4.0 링크, 바꾼 점, 독자 작성자), 임무 지도 정보 칸(임무 문서·판·기여자, 권장 이유의 근거 문서), 검색엔진용 정적 문서, WebGL 없는 첫 화면에 표시. 사이트 전체 안내는 `public/license.html`(`/license.html`, 모든 화면에서 링크). 공통 부품은 `src/license.tsx`.
 - [x] 삭제 요청 수단(2026-11-12, [docs/takedown.md](takedown.md)): `node scripts/takedown.mjs find|block|clean|check|list|unblock`, 막은 목록 `data/manual/takedown.json`. 아이콘은 받지 않고 카드는 지역 문장으로 바뀐다. `--apply` 없이는 아무것도 바꾸지 않는다.
   - [ ] 글(위키 문서) 막기: `scripts/build-runtime-data.mjs`가 `takedown.json`의 `pages`를 읽어 테마·스냅샷·본문·연표에서 빼야 실제로 사라진다(문서 작업이 끝난 뒤 넣는다). 그때 `src/data.ts`가 `takedown.json`을 통째로 가져오지 않게(요청자·사유가 번들에 실림) 막은 이름 목록만 넘긴다.
 - [x] contact@aru.wiki 수신과 알림 확인(2026-11-12, 사용자).

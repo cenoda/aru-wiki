@@ -29,9 +29,10 @@ import { useLinker } from './Linked';
 import { Search } from './Search';
 import { articleKeyFromUrl, articleUrl, isArticleUrl, pathNameOf, resolvePage } from './route';
 import { Logo } from './Logo';
+import { BY_SA_3, BY_SA_4, Lic, LicensePageLink, SourceCredit } from './license';
 import { versions } from './data';
 import {
-  idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, articleAt, loadPageData, type PageData, revisionUrl, snapshotAt, type Snapshots, type Theme,
+  idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, articleAt, loadPageData, type PageData, snapshotAt, type Snapshots, type Theme,
 } from './lore';
 import { VersionPicker } from './VersionPicker';
 import { ThemeToggle, useTheme } from './theme';
@@ -1300,10 +1301,12 @@ export default function WikiGraph3D() {
             <p className="w3d-portal-sub">원신 이야기 위키</p>
             <Search big autoFocus nodes={allNodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />
             <p className="w3d-portal-note">이 브라우저에서는 3D 지도를 그릴 수 없어(WebGL을 쓸 수 없음) 검색 화면을 보여 줍니다. <a href={hrefOf(theme.page)} onClick={(e) => { e.preventDefault(); openArticle(theme.page); }}>{themeName}</a> 문서에서 시작해도 됩니다.</p>
+            <p className="w3d-portal-note">문서의 글은 Fandom 원신 위키(<Lic l={BY_SA_3} />)의 글을 번역·요약해 고쳐 쓴 것이고 <Lic l={BY_SA_4} />으로 배포합니다. 원문과 판은 문서마다 적혀 있습니다. <LicensePageLink /></p>
           </div>
         )}
       </div>
       {gl && <div className={`w3d-ruler${article ? ' behind' : ''}`} ref={rulerBox} aria-hidden="true" />}
+      {theme && gl && !article && <p className="w3d-license"><LicensePageLink>출처·라이선스</LicensePageLink></p>}
       {sel && !article && (
         <aside className="w3d-card" aria-live="polite">
           <p className="w3d-type">{KIND_LABEL[sel.kind]} · {versions[sel.revealed]?.id}부터</p>
@@ -1321,11 +1324,7 @@ export default function WikiGraph3D() {
               </p>
               {snap.summary && <p className="w3d-summary">{link(snap.summary.t, cardSeen)}</p>}
               <ul className="w3d-points">{snap.bullets.map((b, i) => <li key={i}>{link(b.t, cardSeen)}</li>)}</ul>
-              <p className="w3d-src">
-                출처: {snap.sources.filter((x, i, a) => a.findIndex((y) => y.revision === x.revision) === i).map((x, i) => (
-                  <span key={x.revision}>{i > 0 && ', '}<a href={revisionUrl(x.page, x.revision)} target="_blank" rel="noreferrer">{x.page}</a> ({x.date} 판)</span>
-                ))}. Fandom 원신 위키(CC BY-SA 3.0)의 글을 요약·번역했습니다.
-              </p>
+              <SourceCredit className="w3d-src" sources={snap.sources.map((x) => ({ kind: 'wiki' as const, ...x }))} what="요약·번역했습니다." />
             </section>
           ) : lead && leadArt ? (
             <section className="w3d-snap">
@@ -1334,7 +1333,8 @@ export default function WikiGraph3D() {
                 {' '}{versions[leadArt.from]?.id} 때의 자료 기준 · 문서 첫 문단
               </p>
               <p className="w3d-summary">{rich(lead.s.map((x) => x.t).join(' '), link, cardSeen)}</p>
-              <p className="w3d-src">Fandom 원신 위키(CC BY-SA 3.0)의 글과 게임 대사를 바탕으로 썼습니다. 출처는 문서의 각주에 있습니다.</p>
+              <SourceCredit className="w3d-src" sources={lead.r.map((r) => leadArt.sources[r])} what="번역·요약해 고쳐 썼습니다."
+                extra={lead.r.some((r) => leadArt.sources[r]?.kind !== 'wiki') && ' 게임 대사와 웹 출처는 문서의 각주에 있습니다.'} />
             </section>
           ) : <p className="w3d-meta w3d-snap-none">{cardData?.id === sel.id ? '이 버전까지의 요약이 아직 없습니다.' : '불러오는 중…'}</p>)}
           <p className="w3d-meta">나오는 이야기 {sel.units}개</p>

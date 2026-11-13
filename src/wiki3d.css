@@ -88,3 +88,6 @@
 .site .newpage-box button[type=submit] { padding: 6px 14px; font: inherit; font-size: .9rem; color: #fff; background: var(--accent); border: 0; border-radius: 2px; cursor: pointer; }
 .site .newpage-box button[type=submit]:disabled { opacity: .4; cursor: default; }
 @media (max-width: 640px) { .newpage-box { right: auto; left: 0; } }
+/* the site-wide sources and licence page, always reachable from the chart (bottom left; the card is bottom right) */
+.site.w3d .w3d-license { position: absolute; left: 10px; bottom: 6px; z-index: 3; margin: 0; padding: 1px 6px; border-radius: 2px; font-size: .7rem; background: color-mix(in srgb, var(--card) 70%, transparent); }
+.site.w3d .w3d-license a { color: var(--muted); }

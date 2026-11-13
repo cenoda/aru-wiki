@@ -9,10 +9,10 @@ import { type MouseEvent, type ReactNode, useEffect, useMemo, useRef, useState }
 import { versions } from './data';
 import { type Linker, useLinker } from './Linked';
 import {
-  type ArtPara, type ArtSource, articleAt, idOf, KIND_LABEL, loadPageData, nameOf, type PageData, type PageNode, pageUrl, revisionUrl,
-  snapshotAt, type Snapshots, type Theme,
+  type ArtPara, type ArtSource, articleAt, idOf, KIND_LABEL, loadPageData, loadRedNames, nameOf, type PageData, type PageNode, pageUrl, revisionUrl,
+  type RedName, snapshotAt, type Snapshots, type Theme,
 } from './lore';
-import { editsFor, hasHumanPage, humanPage, overlay, type Para, paraText } from './readerEdits';
+import { editsFor, hasHumanPage, humanPage, overlay, type Para, paraText, versionOrder } from './readerEdits';
 import { ReportBox } from './ReportBox';
 import { AddBlock, MySuggestions, ParaBlock, type Target, useReaderEdits } from './Suggest';
 import './article.css';
@@ -89,6 +89,9 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
   const shown = useMemo(() => (art ? overlay(art, edits) : null), [art, edits]);
   /** a page only readers wrote (no generated page has this title) */
   const written = !node ? humanPage(page, edits) : null;
+  /** no page by this title at all, at any version: a new page, titled as the reader typed it (`＋ 새 문서`, a red link).
+   * A page that exists but is not revealed yet (a generated one, or one readers wrote at a later version) keeps its name hidden. */
+  const fresh = !node && !written && pub !== null && !hasHumanPage(page, pub);
   const vId = versions[vIdx]?.id ?? '';
   const timeline = loading ? [] : data.d.timeline.filter((t) => t.v <= vIdx);
   const snapSrc = (r: number): ArtSource | undefined => { const s = current?.sources[r]; return s && { kind: 'wiki', ...s }; };
@@ -107,7 +110,12 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [art, current, timeline.length, vIdx]);
   const notes = useFootnotes(cites);
-  const link = useLinker(nodes, vIdx, page, hrefOf, onOpen);
+  // red links: names with no article yet (loaded once); pages readers wrote, shown at this version, link as pages
+  const [red, setRed] = useState<RedName[] | null>(null);
+  useEffect(() => { let live = true; loadRedNames().then((r) => live && setRed(r)); return () => { live = false; }; }, []);
+  const writtenTitles = useMemo(() => [...new Set((pub?.edits ?? [])
+    .filter((e) => e.kind === 'page' && versionOrder(e.v) >= 0 && versionOrder(e.v) <= vIdx).map((e) => e.page))], [pub, vIdx]);
+  const link = useLinker(nodes, vIdx, page, hrefOf, onOpen, red, writtenTitles);
 
   const related = useMemo(() => {
     if (!node) return [];
@@ -122,9 +130,9 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
   useEffect(() => { root.current?.scrollTo(0, 0); }, [page]);
   useEffect(() => {
     const before = document.title;
-    document.title = revealed && node ? `${nameOf(node)} - aru.wiki` : written ? `${written.title} - aru.wiki` : 'aru.wiki';
+    document.title = revealed && node ? `${nameOf(node)} - aru.wiki` : written ? `${written.title} - aru.wiki` : fresh ? `${page} - aru.wiki` : 'aru.wiki';
     return () => { document.title = before; };
-  }, [revealed, node, written?.title]);
+  }, [revealed, node, written?.title, fresh, page]);
 
   /** In-page links: plain clicks stay in the app; modified clicks open the address as usual. */
   const go = (id: string) => (e: MouseEvent) => {
@@ -189,8 +197,9 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
     return (
       <main className="wa" ref={root}>
         <article className="wa-body">
-          <h1 className="wa-title">공개되지 않은 항목</h1>
-          <p className="wa-hidden">{node || later ? `이 항목은 ${versions[vIdx]?.id ?? ''}까지의 버전에서는 공개되지 않았습니다. 위에서 버전을 바꾸면 볼 수 있습니다.` : `「${page}」 문서는 아직 없습니다.`}</p>
+          <h1 className="wa-title">{fresh ? page : '공개되지 않은 항목'}</h1>
+          {fresh && <p className="wa-sub">aru.wiki · 새 문서</p>}
+          <p className="wa-hidden">{node || later ? `이 항목은 ${versions[vIdx]?.id ?? ''}까지의 버전에서는 공개되지 않았습니다. 위에서 버전을 바꾸면 볼 수 있습니다.` : '이 문서는 아직 없습니다. 첫 문단을 써서 문서를 시작할 수 있습니다.'}</p>
           {canWrite && <AddBlock big target={{ kind: 'page', page, v: vId }} label="이 문서의 첫 문단 쓰기" />}
           <MySuggestions page={page} />
         </article>

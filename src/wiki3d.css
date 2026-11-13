@@ -47,6 +47,9 @@
 /* inline links to other articles, in the card and in articles (Linked.tsx) */
 .site a.wl { color: var(--accent); text-decoration: none; }
 .site a.wl:hover { text-decoration: underline; }
+/* red links: a name with no article yet; opens the new page (first paragraph). Red in both themes, AA contrast on the card */
+.site a.wl-red { color: #b3261e; }
+:root:not([data-theme=light]) .site a.wl-red { color: #f28b82; }
 
 @media (max-width: 640px) {
   .site.w3d header nav { width: 100%; gap: 8px; flex-wrap: wrap; }

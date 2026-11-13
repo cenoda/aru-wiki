@@ -69,6 +69,8 @@ export const titleKey = (s: string) => s.replace(/_/g, ' ').replace(/\s+/g, ' ')
 const flat = (t: string | undefined) => (t ?? '').replace(/\s+/g, ' ').trim();
 export const paraText = (p: ArtPara) => flat(p.s.map((x) => x.t).join(' '));
 const orderOf = (id: string | undefined) => (id === undefined ? -1 : versions.findIndex((v) => v.id === id));
+/** the order of a version id, -1 when unknown */
+export const versionOrder = orderOf;
 const human = (e: ReaderEdit, pending: boolean): Human => ({ id: e.id, kind: e.kind, pending, nick: e.nick, evidence: e.evidence, date: e.approved ?? e.submitted });
 const paras = (e: ReaderEdit, pending: boolean): Para[] => e.text.split(/\n+/).map((t) => t.trim()).filter(Boolean).map((t) => ({ s: [{ t }], r: [], h: human(e, pending) }));
 

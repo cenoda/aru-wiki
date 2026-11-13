@@ -1,4 +1,5 @@
 // Shared by the lore theme's 3D chart (WikiGraph3D) and its article pages (WikiArticle).
+import redNamesUrl from '../data/runtime/redlinks.json?url';
 
 /** One line of a snapshot and the footnote (index into the snapshot's sources) behind it. */
 export interface SnapLine { t: string; r: number }
@@ -69,3 +70,9 @@ export async function loadPageData(page: string): Promise<PageData> {
 }
 /** The latest article written for the version (order) or before it. */
 export const articleAt = (list: Article[] | undefined, order: number) => (list ?? []).filter((a) => a.from <= order).at(-1) ?? null;
+
+/** A name with no article yet and the version (order) of its first story: [name, revealed]. */
+export type RedName = readonly [name: string, revealed: number];
+let redCache: Promise<RedName[]> | null = null;
+/** Names that become red links (scripts/build-runtime-data.mjs redlinks.json), fetched once. */
+export const loadRedNames = (): Promise<RedName[]> => (redCache ??= fetch(redNamesUrl).then((r) => (r.ok ? r.json() : [])).catch(() => []));

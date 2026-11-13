@@ -48,7 +48,7 @@
        "t_raw": "그는 플레이테스트 참가자들의 의견을 모으며, Rebels의 탈출 선택지나 Hunters의 수색, 잡힌 Rebel이 끝까지 할 일 없이 지켜봐야 하는 문제를 듣고, 이어 **Signaling Device**와 Surveillance Zone을 도입한 새 버전을 선보인다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 플레이테스트 참가자들의 의견을 모으며, Rebels의 탈출 선택지나 Hunters의 수색, 잡힌 Rebel이 끝까지 할 일 없이 지켜봐야 하는 문제를 듣고, 이어 **Signaling Device**와 Surveillance Zone을 도입한 새 버전을 선보인다."
+       "t": "그는 플레이테스트 참가자들의 의견을 모으며, 반란군의 탈출 선택지나 사냥꾼의 수색, 잡힌 반란군이 끝까지 할 일 없이 지켜봐야 하는 문제를 듣고, 이어 **신호 장치**와 감시 구역을 도입한 새 버전을 선보인다."
       },
       {
        "t_raw": "이는 Windtrace를 더 많은 사람이 즐길 수 있게 하려는 시도로 보인다.",
@@ -109,12 +109,7 @@
      ],
      "heading": null,
      "latin_left": [
-      "NPC",
-      "Rebels",
-      "Hunters",
-      "Rebel",
-      "Signaling Device",
-      "Surveillance Zone"
+      "NPC"
      ]
     },
     {
@@ -133,7 +128,7 @@
        "t_raw": "그는 만난 이에게 **Windtrace**를 한번 해 보겠느냐고 묻고, Windtrace Matching Menu를 연다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 만난 이에게 **바람의 행방**을 한번 해 보겠느냐고 묻고, Windtrace Matching Menu를 연다."
+       "t": "그는 만난 이에게 **바람의 행방**을 한번 해 보겠느냐고 묻고, 바람의 행방 매칭 메뉴를 연다."
       },
       {
        "t_raw": "이벤트 전용 NPC가 직접 참여를 권하고 매칭 메뉴를 여는 점에서, 그를 Windtrace의 **안내자**로 보는 인상을 준다.",
@@ -171,7 +166,6 @@
      "heading": "개요",
      "latin_left": [
       "NPC",
-      "Windtrace Matching Menu",
       "NPC"
      ]
     },
@@ -503,13 +497,18 @@
        "t_raw": "그는 \"Hey there, fancy trying your hand at Windtrace?\"라고 말을 걸어 바로 플레이를 권한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 \"Hey there, fancy trying your hand at 바람의 행방?\"라고 말을 걸어 바로 플레이를 권한다."
+       "t": "그는 \"Hey there, fancy trying your hand at 바람의 행방?\"라고 말을 걸어 바로 플레이를 권한다.",
+       "polish": {
+        "from": "그는 \"Hey there, fancy trying your hand at 바람의 행방?\"라고 말을 걸어 바로 플레이를 권한다.",
+        "text": "그는 \"Hey there, fancy trying your hand at 바람의 행방?\"라고 말을 걸어 바로 플레이를 권한다.",
+        "by": "glm-flash"
+       }
       },
       {
        "t_raw": "플레이를 택하면 Windtrace Matching Menu가 열리고, 무엇인지 묻는 선택지도 열린다.",
        "interp": false,
        "dropped": false,
-       "t": "플레이를 택하면 Windtrace Matching Menu가 열리고, 무엇인지 묻는 선택지도 열린다."
+       "t": "플레이를 택하면 바람의 행방 매칭 메뉴가 열리고, 무엇인지 묻는 선택지도 열린다."
       }
      ],
      "sources": [
@@ -555,8 +554,7 @@
      ],
      "heading": "작중 행적 — 클래식 게임과 초기 바람의 행방",
      "latin_left": [
-      "Hey the",
-      "Windtrace Matching Menu"
+      "Hey the"
      ]
     },
     {
@@ -677,7 +675,7 @@
        "t_raw": "바뀐 Windtrace를 직접 해보라며 권하고, 플레이를 고르면 Windtrace Matching Menu가 열린다.",
        "interp": false,
        "dropped": false,
-       "t": "바뀐 바람의 행방을 직접 해보라며 권하고, 플레이를 고르면 Windtrace Matching Menu가 열린다."
+       "t": "바뀐 바람의 행방을 직접 해보라며 권하고, 플레이를 고르면 바람의 행방 매칭 메뉴가 열린다."
       },
       {
        "t_raw": "떠나겠다고 하면 언젠가 해보고 싶어지면 자기를 찾으라고 말한다.",
@@ -737,9 +735,7 @@
       }
      ],
      "heading": "작중 행적 — 클래식 게임과 초기 바람의 행방",
-     "latin_left": [
-      "Windtrace Matching Menu"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — 2.4 Windtrace",
@@ -763,7 +759,7 @@
        "t_raw": "그러나 많은 참가자가 게임이 꽤 어렵다고 했는데, Rebels는 도망칠 선택지가 적다고 했고 Hunters는 아무도 찾지 못한다고 불평했다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 많은 참가자가 게임이 꽤 어렵다고 했는데, Rebels는 도망칠 선택지가 적다고 했고 Hunters는 아무도 찾지 못한다고 불평했다."
+       "t": "그러나 많은 참가자가 게임이 꽤 어렵다고 했는데, 반란군은 도망칠 선택지가 적다고 했고 사냥꾼은 아무도 찾지 못한다고 불평했다."
       },
       {
        "t_raw": "일부는 각 맵에 익숙해야 제대로 플레이할 수 있다며 게임플레이를 단순화해 달라고 했다.",
@@ -835,10 +831,7 @@
       }
      ],
      "heading": "작중 행적 — 2.4 바람의 행방",
-     "latin_left": [
-      "Rebels",
-      "Hunters"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — 2.4 Windtrace",
@@ -1068,13 +1061,13 @@
        "t_raw": "참가자들의 불만은 Rebels가 도망갈 곳이 적다거나 Hunters가 아무도 찾지 못한다는 데서 그치지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "참가자들의 불만은 Rebels가 도망갈 곳이 적다거나 Hunters가 아무도 찾지 못한다는 데서 그치지 않는다."
+       "t": "참가자들의 불만은 반란군이 도망갈 곳이 적다거나 사냥꾼이 아무도 찾지 못한다는 데서 그치지 않는다."
       },
       {
        "t_raw": "잡힌 Rebels가 게임이 끝날 때까지 아무것도 하지 못한 채 옆에서 구경만 해야 해 지루하다는 목소리도 나온다.",
        "interp": false,
        "dropped": false,
-       "t": "잡힌 Rebels가 게임이 끝날 때까지 아무것도 하지 못한 채 옆에서 구경만 해야 해 지루하다는 목소리도 나온다."
+       "t": "잡힌 반란군이 게임이 끝날 때까지 아무것도 하지 못한 채 옆에서 구경만 해야 해 지루하다는 목소리도 나온다."
       },
       {
        "t_raw": "Gygax는 한숨을 쉬며 누구 말을 들어야 할지 모르겠다고 하고, 또 한 무리의 사람들을 초대해 플레이테스트를 한 뒤 피드백을 나누겠다고 한다.",
@@ -1086,7 +1079,7 @@
        "t_raw": "대화 중 Windtrace Matching Menu를 연다.",
        "interp": false,
        "dropped": false,
-       "t": "대화 중 Windtrace Matching Menu를 연다."
+       "t": "대화 중 바람의 행방 매칭 메뉴를 연다."
       },
       {
        "t_raw": "관심이 생기면 자신을 찾으라고 말한다.",
@@ -1144,12 +1137,7 @@
       }
      ],
      "heading": "작중 행적 — 3.3 바람의 행방",
-     "latin_left": [
-      "Rebels",
-      "Hunters",
-      "Rebels",
-      "Windtrace Matching Menu"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Windtrace: Seekers and Strategy",
@@ -1167,19 +1155,19 @@
        "t_raw": "새 규칙을 묻자 그는 새로 들인 것이라며 **Signaling Device**를 소개한다.",
        "interp": false,
        "dropped": false,
-       "t": "새 규칙을 묻자 그는 새로 들인 것이라며 **Signaling Device**를 소개한다."
+       "t": "새 규칙을 묻자 그는 새로 들인 것이라며 **신호 장치**를 소개한다."
       },
       {
        "t_raw": "Rebels가 Signaling Device를 4개 활성화하면 Hunter를 이기고 승리하며, Hunter는 모든 Rebels를 잡으면 이긴다는 점은 그대로다.",
        "interp": false,
        "dropped": false,
-       "t": "Rebels가 Signaling Device를 4개 활성화하면 헌트를 이기고 승리하며, 헌트는 모든 Rebels를 잡으면 이긴다는 점은 그대로다."
+       "t": "반란군이 신호 장치를 4개 활성화하면 헌트를 이기고 승리하며, 헌트는 모든 반란군을 잡으면 이긴다는 점은 그대로다."
       },
       {
        "t_raw": "Rebels에게 새 승리 수단이 생긴 반면 Hunter의 승리 조건은 그대로인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "Rebels에게 새 승리 수단이 생긴 반면 헌트의 승리 조건은 그대로인 셈이다."
+       "t": "반란군에게 새 승리 수단이 생긴 반면 헌트의 승리 조건은 그대로인 셈이다."
       }
      ],
      "sources": [
@@ -1233,13 +1221,7 @@
       }
      ],
      "heading": "작중 행적 — 바람의 행방: Seekers and Strategy",
-     "latin_left": [
-      "Signaling Device",
-      "Rebels",
-      "Signaling Device",
-      "Rebels",
-      "Rebels"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Windtrace: Seekers and Strategy",
@@ -1251,19 +1233,19 @@
        "t_raw": "이번 버전에서는 Rebels가 Hunter에게 잡혀도 곧바로 탈락하지 않고 **Surveillance Zone**에 갇힌다.",
        "interp": false,
        "dropped": false,
-       "t": "이번 버전에서는 Rebels가 헌트에게 잡혀도 곧바로 탈락하지 않고 **Surveillance Zone**에 갇힌다."
+       "t": "이번 버전에서는 반란군이 헌트에게 잡혀도 곧바로 탈락하지 않고 **감시 구역**에 갇힌다."
       },
       {
        "t_raw": "잠시 기다리거나 다른 Rebels의 도움을 받으면 그곳에서 벗어나 다시 플레이할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "잠시 기다리거나 다른 Rebels의 도움을 받으면 그곳에서 벗어나 다시 플레이할 수 있다."
+       "t": "잠시 기다리거나 다른 반란군의 도움을 받으면 그곳에서 벗어나 다시 플레이할 수 있다."
       },
       {
        "t_raw": "다만 한 번 잡혔던 Rebel이 두 번째로 잡히면 게임에서 완전히 탈락한다.",
        "interp": false,
        "dropped": false,
-       "t": "다만 한 번 잡혔던 Rebel이 두 번째로 잡히면 게임에서 완전히 탈락한다."
+       "t": "다만 한 번 잡혔던 반란군이 두 번째로 잡히면 게임에서 완전히 탈락한다."
       },
       {
        "t_raw": "Gygax는 규칙이 실제로 단순하며 몇 번 해 보면 익숙해질 것이라고 말하고, 새 버전 Windtrace를 해 보라고 권한다.",
@@ -1329,12 +1311,7 @@
       }
      ],
      "heading": "작중 행적 — 바람의 행방: Seekers and Strategy",
-     "latin_left": [
-      "Rebels",
-      "Surveillance Zone",
-      "Rebels",
-      "Rebel"
-     ]
+     "latin_left": []
     },
     {
      "section": "Windtrace의 규칙",
@@ -1346,13 +1323,13 @@
        "t_raw": "새 버전에서 Gygax는 재미있는 새 요소를 넣었다며 **Signaling Device**를 소개한다.",
        "interp": false,
        "dropped": false,
-       "t": "새 버전에서 가이각스는 재미있는 새 요소를 넣었다며 **Signaling Device**를 소개한다."
+       "t": "새 버전에서 가이각스는 재미있는 새 요소를 넣었다며 **신호 장치**를 소개한다."
       },
       {
        "t_raw": "Rebels가 Signaling Device 4개를 작동시키면 Hunter를 물리치고 승리하며, Hunter는 모든 Rebels를 붙잡으면 이긴다.",
        "interp": false,
        "dropped": false,
-       "t": "Rebels가 Signaling Device 4개를 작동시키면 헌트를 물리치고 승리하며, 헌트는 모든 Rebels를 붙잡으면 이긴다."
+       "t": "반란군이 신호 장치 4개를 작동시키면 헌트를 물리치고 승리하며, 헌트는 모든 반란군을 붙잡으면 이긴다."
       },
       {
        "t_raw": "Hunter의 승리 조건은 이전과 달라지지 않았다.",
@@ -1410,12 +1387,7 @@
       }
      ],
      "heading": "바람의 행방의 규칙",
-     "latin_left": [
-      "Signaling Device",
-      "Rebels",
-      "Signaling Device",
-      "Rebels"
-     ]
+     "latin_left": []
     },
     {
      "section": "Windtrace의 규칙",
@@ -1427,19 +1399,19 @@
        "t_raw": "잡힌 Rebels는 곧바로 탈락하지 않고 **Surveillance Zone**에 머문다.",
        "interp": false,
        "dropped": false,
-       "t": "잡힌 Rebels는 곧바로 탈락하지 않고 **Surveillance Zone**에 머문다."
+       "t": "잡힌 반란군은 곧바로 탈락하지 않고 **감시 구역**에 머문다."
       },
       {
        "t_raw": "잠시 기다리거나 다른 Rebels의 도움을 받으면 Surveillance Zone에서 빠져나와 계속 플레이할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "잠시 기다리거나 다른 Rebels의 도움을 받으면 Surveillance Zone에서 빠져나와 계속 플레이할 수 있다."
+       "t": "잠시 기다리거나 다른 반란군의 도움을 받으면 감시 구역에서 빠져나와 계속 플레이할 수 있다."
       },
       {
        "t_raw": "이전에 잡힌 적 있는 Rebel이 두 번째로 잡히면 게임에서 완전히 탈락한다.",
        "interp": false,
        "dropped": false,
-       "t": "이전에 잡힌 적 있는 Rebel이 두 번째로 잡히면 게임에서 완전히 탈락한다."
+       "t": "이전에 잡힌 적 있는 반란군이 두 번째로 잡히면 게임에서 완전히 탈락한다."
       },
       {
        "t_raw": "잡히면 게임이 끝날 때까지 할 일 없이 구경만 해야 한다는 불만과 비교하면, 잡힌 뒤에도 다시 플레이할 여지가 생긴 변화로 보인다.",
@@ -1483,13 +1455,7 @@
       }
      ],
      "heading": "바람의 행방의 규칙",
-     "latin_left": [
-      "Rebels",
-      "Surveillance Zone",
-      "Rebels",
-      "Surveillance Zone",
-      "Rebel"
-     ]
+     "latin_left": []
     },
     {
      "section": "Windtrace의 규칙",
@@ -1501,7 +1467,7 @@
        "t_raw": "Gygax는 이전 플레이테스트에서 Rebels가 도망칠 곳이 적다거나 Hunters가 아무도 찾지 못한다는 말을 들었고, 맵에 익숙해야 제대로 플레이할 수 있다는 불만과 게임플레이를 단순화해 달라는 요청도 들었다.",
        "interp": false,
        "dropped": false,
-       "t": "가이각스는 이전 플레이테스트에서 Rebels가 도망칠 곳이 적다거나 Hunters가 아무도 찾지 못한다는 말을 들었고, 맵에 익숙해야 제대로 플레이할 수 있다는 불만과 게임플레이를 단순화해 달라는 요청도 들었다."
+       "t": "가이각스는 이전 플레이테스트에서 반란군이 도망칠 곳이 적다거나 사냥꾼이 아무도 찾지 못한다는 말을 들었고, 맵에 익숙해야 제대로 플레이할 수 있다는 불만과 게임플레이를 단순화해 달라는 요청도 들었다."
       },
       {
        "t_raw": "한편 Gygax는 규칙이 사실 매우 단순하며 몇 번 해 보면 요령을 익힐 수 있다고 말한다.",
@@ -1559,10 +1525,7 @@
       }
      ],
      "heading": "바람의 행방의 규칙",
-     "latin_left": [
-      "Rebels",
-      "Hunters"
-     ]
+     "latin_left": []
     },
     {
      "section": "인간관계",
@@ -1724,11 +1687,11 @@
        "t_raw": "Gygax는 첫 세 차례 Windtrace event에서 지도 위 아이콘 아래에서 찾을 수 있었고, Windtrace: Seekers and Strategy에서도 지도 위 아이콘 아래에서 찾을 수 있었다.",
        "interp": false,
        "dropped": false,
-       "t": "가이각스는 첫 세 차례 바람의 행방 event에서 지도 위 아이콘 아래에서 찾을 수 있었고, 바람의 행방: Seekers and Strategy에서도 지도 위 아이콘 아래에서 찾을 수 있었다.",
+       "t": "가이각스는 첫 세 차례 바람의 행방 이벤트에서 지도 위 아이콘 아래에서 찾을 수 있었고, 바람의 행방: 추적자와 전략에서도 지도 위 아이콘 아래에서 찾을 수 있었다.",
        "polish": {
-        "from": "가이각스는 첫 세 차례 바람의 행방 이벤트에서 지도 위 아이콘 아래에서 찾을 수 있었고, 바람의 행방: Seekers and Strategy에서도 지도 위 아이콘 아래에서 찾을 수 있었다.",
-        "text": "가이각스는 첫 세 차례 바람의 행방 이벤트에서 지도 위 아이콘 아래에서 찾을 수 있었고, 바람의 행방: Seekers and Strategy에서도 지도 위 아이콘 아래에서 찾을 수 있었다.",
-        "by": "ds"
+        "from": "가이각스는 첫 세 차례 바람의 행방 event에서 지도 위 아이콘 아래에서 찾을 수 있었고, 바람의 행방: 추적자와 전략에서도 지도 위 아이콘 아래에서 찾을 수 있었다.",
+        "text": "가이각스는 첫 세 차례 바람의 행방 이벤트에서 지도 위 아이콘 아래에서 찾을 수 있었고, 바람의 행방: 추적자와 전략에서도 지도 위 아이콘 아래에서 찾을 수 있었다.",
+        "by": "glm-flash"
        }
       },
       {
@@ -1763,9 +1726,7 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Seekers and Strategy"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
@@ -1795,7 +1756,7 @@
        "t_raw": "Windtrace: Seekers and Strategy에서는 «지금은 안 할래요»라고 미룰 때 «괜찮아요. 시간 날 때 돌아오세요 — 저는 한동안 여기 있을게요»라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "바람의 행방: Seekers and Strategy에서는 «지금은 안 할래요»라고 미룰 때 «괜찮아요. 시간 날 때 돌아오세요 — 저는 한동안 여기 있을게요»라고 말한다.",
+       "t": "바람의 행방: 술래와 전략에서는 «지금은 안 할래요»라고 미룰 때 «괜찮아요. 시간 날 때 돌아오세요 — 저는 한동안 여기 있을게요»라고 말한다.",
        "polish": {
         "from": "바람의 행방: Seekers and Strategy에서는 «지금은 안 할래요»라고 미룰 때 «괜찮아요. 시간 날 때 돌아오세요 — 저는 한동안 여기 있을게요»라고 말한다.",
         "text": "바람의 행방: Seekers and Strategy에서는 «지금은 안 할래요»라고 미룰 때 «괜찮아요. 시간 날 때 돌아오세요 — 저는 한동안 여기 있을게요»라고 말한다.",
@@ -1862,8 +1823,7 @@
      "heading": "여담",
      "latin_left": [
       "Windtrace",
-      "Windtrace",
-      "Seekers and Strategy"
+      "Windtrace"
      ]
     },
     {
@@ -1876,7 +1836,7 @@
        "t_raw": "지도에서는 Gygax가 아이콘 아래에 표시되었고, Windtrace가 처음 세 번 열렸을 때와 Windtrace: Seekers and Strategy에서 모두 그러했다.",
        "interp": false,
        "dropped": false,
-       "t": "지도에서는 가이각스가 아이콘 아래에 표시되었고, 바람의 행방이 처음 세 번 열렸을 때와 바람의 행방: Seekers and Strategy에서 모두 그러했다.",
+       "t": "지도에서는 가이각스가 아이콘 아래에 표시되었고, 바람의 행방이 처음 세 번 열렸을 때와 바람의 행방: 술래와 전략에서 모두 그러했다.",
        "polish": {
         "from": "지도에서는 가이각스가 아이콘 아래에 표시되었고, 바람의 행방이 처음 세 번 열렸을 때와 바람의 행방: Seekers and Strategy에서 모두 그러했다.",
         "text": "지도에서는 가이각스가 아이콘 아래에 표시되었고, 바람의 행방이 처음 세 번 열렸을 때와 바람의 행방: Seekers and Strategy에서 모두 그러했다.",
@@ -1909,9 +1869,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Seekers and Strategy"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [

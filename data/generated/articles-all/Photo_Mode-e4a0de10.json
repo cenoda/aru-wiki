@@ -53,7 +53,7 @@
        "t_raw": "Expressions는 캐릭터의 얼굴 표정을, Poses는 캐릭터의 자세를 바꾼다.",
        "interp": false,
        "dropped": false,
-       "t": "Expressions는 캐릭터의 얼굴 표정을, Poses는 캐릭터의 자세를 바꾼다."
+       "t": "표정은 캐릭터의 얼굴 표정을, 자세는 캐릭터의 자세를 바꾼다."
       },
       {
        "t_raw": "사진을 찍는 자리에서 표정과 자세까지 바꿀 수 있고 원치 않는 요소를 지울 수 있다는 점을 보면, Photo Mode는 화면을 그대로 담는 수단에 머무르지 않고 한 장면을 **연출**하는 도구로 볼 수 있다.",
@@ -115,9 +115,7 @@
      "heading": null,
      "latin_left": [
       "UI",
-      "UID",
-      "Expressions",
-      "Poses"
+      "UID"
      ]
     },
     {
@@ -168,13 +166,13 @@
        "t_raw": "Photo Mode에서는 카메라 설정과 Expressions, Poses를 다룰 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "사진 촬영 모드에서는 카메라 설정과 Expressions, Poses를 다룰 수 있다."
+       "t": "사진 촬영 모드에서는 카메라 설정과 표정, 자세를 다룰 수 있다."
       },
       {
        "t_raw": "카메라 설정은 배경 흐림이나 캐릭터 숨기기처럼 찍히는 화면 쪽을 바꾸고, Expressions와 Poses는 찍히는 캐릭터의 표정과 자세를 바꾼다.",
        "interp": false,
        "dropped": false,
-       "t": "카메라 설정은 배경 흐림이나 캐릭터 숨기기처럼 찍히는 화면 쪽을 바꾸고, Expressions와 Poses는 찍히는 캐릭터의 표정과 자세를 바꾼다."
+       "t": "카메라 설정은 배경 흐림이나 캐릭터 숨기기처럼 찍히는 화면 쪽을 바꾸고, 표정과 자세는 찍히는 캐릭터의 표정과 자세를 바꾼다."
       },
       {
        "t_raw": "화면을 손보는 항목과 대상를 손보는 항목이 나뉘어 있어, 같은 장면이라도 무엇을 만지느냐에 따라 다른 결과로 남는 구조인 셈이다.",
@@ -226,12 +224,7 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Expressions",
-      "Poses",
-      "Expressions",
-      "Poses"
-     ]
+     "latin_left": []
     },
     {
      "section": "촬영 설정",
@@ -414,25 +407,25 @@
        "t_raw": "Expressions는 캐릭터의 얼굴 표정을 바꾸는 항목이다.",
        "interp": false,
        "dropped": false,
-       "t": "Expressions는 캐릭터의 얼굴 표정을 바꾸는 항목이다."
+       "t": "표정은 캐릭터의 얼굴 표정을 바꾸는 항목이다."
       },
       {
        "t_raw": "첫 번째 표정인 **Default**는 캐릭터를 얻으면 열리고, 두 번째와 세 번째 표정은 **Friendship Level 2와 4**에서 각각 열리며 캐릭터마다 다르다.",
        "interp": false,
        "dropped": false,
-       "t": "첫 번째 표정인 **Default**는 캐릭터를 얻으면 열리고, 두 번째와 세 번째 표정은 **Friendship Level 2와 4**에서 각각 열리며 캐릭터마다 다르다."
+       "t": "첫 번째 표정인 **기본**은 캐릭터를 얻으면 열리고, 두 번째와 세 번째 표정은 **우정 레벨 2와 4**에서 각각 열리며 캐릭터마다 다르다."
       },
       {
        "t_raw": "목록에는 Default, Happy, Wink, Disappointed, Smiley, Serious, Expectant, Confident, Pensive가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "목록에는 Default, 기쁨, Wink, Disappointed, Smiley, Serious, Expectant, Confident, 고민이 있다."
+       "t": "목록에는 기본, 기쁨, 윙크, 낙담, 미소, 진지, 기대, 자신감, 고민이 있다."
       },
       {
        "t_raw": "그래서 캐릭터를 얻으면 Default가 열리고, Friendship Level을 올리면서 캐릭터별로 준비된 표정이 차례로 늘어나는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "그래서 캐릭터를 얻으면 Default가 열리고, Friendship Level을 올리면서 캐릭터별로 준비된 표정이 차례로 늘어나는 셈이다."
+       "t": "그래서 캐릭터를 얻으면 기본이 열리고, 우정 레벨을 올리면서 캐릭터별로 준비된 표정이 차례로 늘어나는 셈이다."
       }
      ],
      "sources": [
@@ -486,20 +479,7 @@
       }
      ],
      "heading": "표정 — Expressions",
-     "latin_left": [
-      "Expressions",
-      "Default",
-      "Friendship Level",
-      "Default",
-      "Wink",
-      "Disappointed",
-      "Smiley",
-      "Serious",
-      "Expectant",
-      "Confident",
-      "Default",
-      "Friendship Level"
-     ]
+     "latin_left": []
     },
     {
      "section": "포즈 — Poses",
@@ -511,13 +491,13 @@
        "t_raw": "**Poses**는 캐릭터의 자세를 바꾸는 기능이다.",
        "interp": false,
        "dropped": false,
-       "t": "**Poses**는 캐릭터의 자세를 바꾸는 기능이다."
+       "t": "**자세**는 캐릭터의 자세를 바꾸는 기능이다."
       },
       {
        "t_raw": "목록에는 **Alpha Pose**, Standby, Thinking이 제시된다.",
        "interp": false,
        "dropped": false,
-       "t": "목록에는 **Alpha Pose**, Standby, Thinking이 제시된다."
+       "t": "목록에는 **알파 포즈**, 대기, 생각이 제시된다."
       },
       {
        "t_raw": "세 항목이 나란히 놓인 구성은 자세 선택지가 세 갈래로 나뉘어 있음을 보여 준다.",
@@ -529,7 +509,7 @@
        "t_raw": "Standby와 Thinking은 일상적인 몸가짐을, Alpha Pose는 추상적인 출발점을 연상시키는 이름으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "Standby와 Thinking은 일상적인 몸가짐을, Alpha Pose는 추상적인 출발점을 연상시키는 이름으로 보인다."
+       "t": "대기와 생각은 일상적인 몸가짐을, 알파 포즈는 추상적인 출발점을 연상시키는 이름으로 보인다."
       }
      ],
      "sources": [
@@ -575,15 +555,7 @@
       }
      ],
      "heading": "포즈 — Poses",
-     "latin_left": [
-      "Poses",
-      "Alpha Pose",
-      "Standby",
-      "Thinking",
-      "Standby",
-      "Thinking",
-      "Alpha Pose"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
@@ -677,13 +649,13 @@
        "t_raw": "Poses 목록에는 **Alpha Pose**가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Poses 목록에는 **Alpha Pose**가 있다."
+       "t": "포즈 목록에는 **알파 포즈**가 있다."
       },
       {
        "t_raw": "Standby와 Thinking도 같은 목록에 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Standby와 Thinking도 같은 목록에 있다."
+       "t": "대기와 생각도 같은 목록에 있다."
       },
       {
        "t_raw": "동작을 연상시키는 Standby, Thinking과 달리 **Alpha Pose**는 이름만으로 자세의 성격이 잘 드러나지 않아, 목록에서 이색적인 자잘한 항목으로 볼 수 있다.",
@@ -727,12 +699,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Poses",
-      "Alpha Pose",
-      "Standby",
-      "Thinking"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": []

@@ -42,7 +42,7 @@
        "t_raw": "그 효과에는 AoE 피해, 재사용 대기시간 증가, 에너지 감소, 특정 능력치 강화 따위가 포함된다.",
        "interp": false,
        "dropped": false,
-       "t": "그 효과에는 AoE 피해, 재사용 대기시간 증가, 에너지 감소, 특정 능력치 강화 따위가 포함된다."
+       "t": "그 효과에는 범위 피해, 재사용 대기시간 증가, 에너지 감소, 특정 능력치 강화 따위가 포함된다."
       },
       {
        "t_raw": "Thunderbird가 Thunderbird Civilization을 학살한 뒤 Tsurumi Island는 사람이 살지 않게 되었고 **vicious Ley Line Disorder**에 시달리게 되었다.",
@@ -89,9 +89,7 @@
       }
      ],
      "heading": null,
-     "latin_left": [
-      "AoE"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
@@ -115,7 +113,7 @@
        "t_raw": "다만 이는 몬스터에게 붙는 Enemy Special Element Skill Aura나 Elemental Node와는 별개의 체계로 구분된다.",
        "interp": false,
        "dropped": false,
-       "t": "다만 이는 몬스터에게 붙는 Enemy Special Element Skill Aura나 Elemental Node와는 별개의 체계로 구분된다."
+       "t": "다만 이는 몬스터에게 붙는 적 특수 원소 스킬 오라나 원소 노드와는 별개의 체계로 구분된다."
       }
      ],
      "sources": [
@@ -129,10 +127,7 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Enemy Special Element Skill Aura",
-      "Elemental Node"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
@@ -202,7 +197,7 @@
        "t_raw": "Icicles, Lightning Bolts, Powerful Blast, Energy Blast가 그 예로, 이런 직접 피해 효과는 피해 배율과 Domain의 Element Level Coefficient, 그리고 대상의 해당 피해 타입에 대한 저항을 기준으로 산정된다.",
        "interp": false,
        "dropped": false,
-       "t": "Icicles, Lightning Bolts, Powerful Blast, 에너지 폭발이 그 예로, 이런 직접 피해 효과는 피해 배율과 비경의 Element Level Coefficient, 그리고 대상의 해당 피해 타입에 대한 저항을 기준으로 산정된다."
+       "t": "고드름, 낙뢰, 강력한 폭발, 에너지 폭발이 그 예로, 이런 직접 피해 효과는 피해 배율과 비경의 원소 레벨 계수, 그리고 대상의 해당 피해 타입에 대한 저항을 기준으로 산정된다."
       },
       {
        "t_raw": "일부 능력의 피해 배율은 Domain마다 다르게 적용된다.",
@@ -214,7 +209,7 @@
        "t_raw": "같은 Lightning Bolts라도 Domain의 등급에 따라 한 번 맞을 때의 피해가 크게 달라지는 식이다.",
        "interp": true,
        "dropped": false,
-       "t": "같은 Lightning Bolts라도 비경의 등급에 따라 한 번 맞을 때의 피해가 크게 달라지는 식이다."
+       "t": "같은 낙뢰라도 비경의 등급에 따라 한 번 맞을 때의 피해가 크게 달라지는 식이다."
       }
      ],
      "sources": [
@@ -244,13 +239,7 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Icicles",
-      "Lightning Bolts",
-      "Powerful Blast",
-      "Element Level Coefficient",
-      "Lightning Bolts"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
@@ -323,7 +312,7 @@
        "interp": false,
        "dropped": false,
        "repaired": true,
-       "t": "일부 지맥 이상은 Icicles, Lightning Bolts, Powerful Blast, 에너지 폭발처럼 캐릭터나 적에게 직접 피해를 주는 효과를 포함한다."
+       "t": "일부 지맥 이상은 고드름, 낙뢰, 강력한 폭발, 에너지 폭발처럼 캐릭터나 적에게 직접 피해를 주는 효과를 포함한다."
       }
      ],
      "sources": [
@@ -345,11 +334,7 @@
       }
      ],
      "heading": "정체 — 환경 위험",
-     "latin_left": [
-      "Icicles",
-      "Lightning Bolts",
-      "Powerful Blast"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체 — 환경 위험",
@@ -396,7 +381,7 @@
        "t_raw": "Lightning Bolts는 주기적으로 위에서 떨어져 Electro DMG를 주고, 맞은 캐릭터의 Energy를 완전히 고갈시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "Lightning Bolts는 주기적으로 위에서 떨어져 번개 원소 피해를 주고, 맞은 캐릭터의 에너지를 완전히 고갈시킨다."
+       "t": "낙뢰는 주기적으로 위에서 떨어져 번개 원소 피해를 주고, 맞은 캐릭터의 에너지를 완전히 고갈시킨다."
       },
       {
        "t_raw": "떨어진 뒤에는 번개 구슬을 남길 수 있다.",
@@ -408,7 +393,7 @@
        "t_raw": "Plasma Field는 도전이 시작되면 도전 영역 가장자리에 생기고, 필드 안에서는 2초 또는 5초마다 번개에 맞아 Electro DMG를 받는다.",
        "interp": false,
        "dropped": false,
-       "t": "Plasma Field는 도전이 시작되면 도전 영역 가장자리에 생기고, 필드 안에서는 2초 또는 5초마다 번개에 맞아 번개 원소 피해를 받는다."
+       "t": "플라스마 필드는 도전이 시작되면 도전 영역 가장자리에 생기고, 필드 안에서는 2초 또는 5초마다 번개에 맞아 번개 원소 피해를 받는다."
       },
       {
        "t_raw": "도전이 진행될수록 필드의 범위는 점차 넓어진다.",
@@ -436,10 +421,7 @@
       }
      ],
      "heading": "정체 — 환경 위험",
-     "latin_left": [
-      "Lightning Bolts",
-      "Plasma Field"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체 — 환경 위험",
@@ -451,25 +433,25 @@
        "t_raw": "Powerful Blast는 Overloaded, Superconduct, Electro-Charged, Melt, Vaporize가 발동하면 캐릭터를 강력한 폭발로 때려 피해를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "Powerful Blast는 과부하, 초전도, 감전, 융해, 증발이 발동하면 캐릭터를 강력한 폭발로 때려 피해를 준다."
+       "t": "강력한 폭발은 과부하, 초전도, 감전, 융해, 증발이 발동하면 캐릭터를 강력한 폭발로 때려 피해를 준다."
       },
       {
        "t_raw": "Icicles는 주기적으로 위에서 떨어져 Cryo DMG를 주고, Frozen Duration Increase는 Frozen 상태의 지속 시간을 크게 늘린다.",
        "interp": false,
        "dropped": false,
-       "t": "Icicles는 주기적으로 위에서 떨어져 얼음 원소 피해를 주고, Frozen Duration Increase는 빙결 상태의 지속 시간을 크게 늘린다."
+       "t": "고드름은 주기적으로 위에서 떨어져 얼음 원소 피해를 주고, 빙결 지속 시간 증가는 빙결 상태의 지속 시간을 크게 늘린다."
       },
       {
        "t_raw": "High-Energy Crystal Cores는 쓰러진 적이 불안정한 Core를 떨어뜨려 캐릭터가 가까이 가면 폭발하며 주변 캐릭터에게 Geo DMG를 주는 환경 위험이다.",
        "interp": false,
        "dropped": false,
-       "t": "고에너지 수정 코어는 쓰러진 적이 불안정한 Core를 떨어뜨려 캐릭터가 가까이 가면 폭발하며 주변 캐릭터에게 바위 원소 피해를 주는 환경 위험이다."
+       "t": "고에너지 수정 코어는 쓰러진 적이 불안정한 코어를 떨어뜨려 캐릭터가 가까이 가면 폭발하며 주변 캐릭터에게 바위 원소 피해를 주는 환경 위험이다."
       },
       {
        "t_raw": "Chaos Cluster는 도전이 시작되면 캐릭터를 쫓아다니고, 캐릭터나 적과 닿으면 막대한 피해를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "Chaos Cluster는 도전이 시작되면 캐릭터를 쫓아다니고, 캐릭터나 적과 닿으면 막대한 피해를 준다."
+       "t": "혼돈 덩어리는 도전이 시작되면 캐릭터를 쫓아다니고, 캐릭터나 적과 닿으면 막대한 피해를 준다."
       },
       {
        "t_raw": "캐릭터와 닿으면 사라지며, 그 크기와 피해는 점차 줄어들지만 속도는 점차 빨라진다.",
@@ -521,13 +503,7 @@
       }
      ],
      "heading": "정체 — 환경 위험",
-     "latin_left": [
-      "Powerful Blast",
-      "Icicles",
-      "Frozen Duration Increase",
-      "Core",
-      "Chaos Cluster"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체 — 환경 위험",
@@ -539,7 +515,7 @@
        "t_raw": "Attendants는 지정된 적 하나가 여러 다른 적을 데리고 나오는 환경 위험으로, 그 다른 적들은 보통 지정된 적의 Resistances를 10% 올리고 12초마다 하나당 지정된 적 HP의 5%를 회복시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "노부시 진영은 지정된 적 하나가 여러 다른 적을 데리고 나오는 환경 위험으로, 그 다른 적들은 보통 지정된 적의 Resistances를 10% 올리고 12초마다 하나당 지정된 적 HP의 5%를 회복시킨다."
+       "t": "노부시 진영은 지정된 적 하나가 여러 다른 적을 데리고 나오는 환경 위험으로, 그 다른 적들은 보통 지정된 적의 저항을 10% 올리고 12초마다 하나당 지정된 적 HP의 5%를 회복시킨다."
       },
       {
        "t_raw": "Energy Tides는 Elemental High Tide와 Elemental Low Tide를 10초 주기로 오간다.",
@@ -557,7 +533,7 @@
        "t_raw": "Low Tide에는 파티의 모든 캐릭터가 Elemental Energy를 얻을 수 없다.",
        "interp": false,
        "dropped": false,
-       "t": "Low Tide에는 파티의 모든 캐릭터가 원소 에너지를 얻을 수 없다."
+       "t": "썰물에는 파티의 모든 캐릭터가 원소 에너지를 얻을 수 없다."
       }
      ],
      "sources": [
@@ -580,9 +556,7 @@
      ],
      "heading": "정체 — 환경 위험",
      "latin_left": [
-      "Resistances",
-      "HP",
-      "Low Tide"
+      "HP"
      ]
     },
     {
@@ -595,25 +569,25 @@
        "t_raw": "직접 피해를 주는 Ley Line Disorder의 피해는 효과의 **Damage Multiplier**, Domain의 Element Level Coefficient, 대상의 해당 피해 속성에 대한 Resistance를 바탕으로 산정된다.",
        "interp": false,
        "dropped": false,
-       "t": "직접 피해를 주는 지맥 이상의 피해는 효과의 **Damage Multiplier**, 비경의 Element Level Coefficient, 대상의 해당 피해 속성에 대한 저항군을 바탕으로 산정된다."
+       "t": "직접 피해를 주는 지맥 이상의 피해는 효과의 **피해 배율**, 비경의 원소 레벨 계수, 대상의 해당 피해 속성에 대한 저항군을 바탕으로 산정된다."
       },
       {
        "t_raw": "Element Level Coefficient는 변환 반응의 Element Level Coefficient와 같다.",
        "interp": false,
        "dropped": false,
-       "t": "Element Level Coefficient는 변환 반응의 Element Level Coefficient와 같다."
+       "t": "원소 레벨 계수는 변환 반응의 원소 레벨 계수와 같다."
       },
       {
        "t_raw": "일부 효과의 Damage Multiplier는 Domain마다 다를 수 있고, Resistance에 의한 피해 감소의 관계는 Damage Resistance에서 다룬다.",
        "interp": false,
        "dropped": false,
-       "t": "일부 효과의 Damage Multiplier는 비경마다 다를 수 있고, 저항군에 의한 피해 감소의 관계는 Damage Resistance에서 다룬다."
+       "t": "일부 효과의 피해 배율은 비경마다 다를 수 있고, 저항군에 의한 피해 감소의 관계는 피해 내성에서 다룬다."
       },
       {
        "t_raw": "계산식은 Damage = Damage Multiplier × Element Level Coefficient × Damage Reduction by Resistance로 제시된다.",
        "interp": false,
        "dropped": false,
-       "t": "계산식은 Damage = Damage Multiplier × Element Level Coefficient × Damage Reduction by 저항군으로 제시된다."
+       "t": "계산식은 피해 = 피해 배율 × 원소 레벨 계수 × 피해 감소 by 저항군으로 제시된다."
       },
       {
        "t_raw": "직접 피해 효과가 이 공통 계산 틀을 쓴다는 점에서, Domain별 수치 차이는 같은 구조 안에서 값이 달라지는 차이로 보인다.",
@@ -665,18 +639,7 @@
       }
      ],
      "heading": "정체 — 환경 위험",
-     "latin_left": [
-      "Damage Multiplier",
-      "Element Level Coefficient",
-      "Element Level Coefficient",
-      "Element Level Coefficient",
-      "Damage Multiplier",
-      "Damage Resistance",
-      "Damage",
-      "Damage Multiplier",
-      "Element Level Coefficient",
-      "Damage Reduction"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체 — 원소 디버프",
@@ -836,9 +799,9 @@
        "t_raw": "Barbara의 Let the Show Begin이나 Xingqiu의 Guhua Sword: Fatal Rainscreen처럼 현재 캐릭터에게 Wet을 부여하는 능력이 대표적이며, 이렇게 캐릭터가 스스로 얻는 원소를 **Self Aura**라고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "바바라의 Let the Show Begin이나 행추의 고화검: 화우농산처럼 현재 캐릭터에게 Wet을 부여하는 능력이 대표적이며, 이렇게 캐릭터가 스스로 얻는 원소를 **Self Aura**라고 한다.",
+       "t": "바바라의 공연의 시작이나 행추의 고화검: 화우농산처럼 현재 캐릭터에게 Wet을 부여하는 능력이 대표적이며, 이렇게 캐릭터가 스스로 얻는 원소를 **Self Aura**라고 한다.",
        "polish": {
-        "from": "바바라의 Let the Show Begin이나 행추의 고화검: 화우농산처럼 현재 캐릭터에게 습윤을 부여하는 능력이 대표적이며, 이렇게 캐릭터가 스스로 얻는 원소를 **Self Aura**라고 한다.",
+        "from": "바바라의 Let the Show Begin이나 행추의 고화검: 화우농산처럼 현재 캐릭터에게 Wet을 부여하는 능력이 대표적이며, 이렇게 캐릭터가 스스로 얻는 원소를 **Self Aura**라고 한다.",
         "text": "바바라의 Let the Show Begin이나 행추의 고화검: 화우농산처럼 현재 캐릭터에게 습윤을 부여하는 능력이 대표적이며, 이렇게 캐릭터가 스스로 얻는 원소를 **셀프 오라**라고 한다.",
         "by": "or-ds"
        }
@@ -847,13 +810,13 @@
        "t_raw": "Self Aura는 Frozen을 제외하면 해로운 효과를 일으키지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "Self Aura는 빙결을 제외하면 해로운 효과를 일으키지 않는다."
+       "t": "셀프 오라는 빙결을 제외하면 해로운 효과를 일으키지 않는다."
       },
       {
        "t_raw": "다만 모든 Self Aura가 모든 디버프를 정화하는 것은 아니며, Slowing Water는 Frozen Self Aura로, Engulfing Storm은 Wet Self Aura로 정화되지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "다만 모든 Self Aura가 모든 디버프를 정화하는 것은 아니며, 지체의 물은 Frozen Self Aura로, 흡능의 번개는 Wet Self Aura로 정화되지 않는다."
+       "t": "다만 모든 셀프 오라가 모든 디버프를 정화하는 것은 아니며, 지체의 물은 빙결 셀프 오라로, 흡능의 번개는 습윤 셀프 오라로 정화되지 않는다."
       },
       {
        "t_raw": "원소 부여를 통한 정화에는 조합에 따라 정화되지 않는 예외가 있는 셈이다.",
@@ -898,13 +861,8 @@
      ],
      "heading": "정체 — 원소 디버프",
      "latin_left": [
-      "Let the Show Begin",
       "Wet",
-      "Self Aura",
-      "Self Aura",
-      "Self Aura",
-      "Frozen Self Aura",
-      "Wet Self Aura"
+      "Self Aura"
      ]
     },
     {
@@ -923,19 +881,19 @@
        "t_raw": "Elemental DMG Buff는 모든 파티원이 주는 해당 원소의 DMG를 75% 증가시키고, Energy Blast는 Overloaded/Melt/Vaporize/Electro-Charged/Superconduct가 발동할 때 발생해 주변 적에게 DMG를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "Elemental DMG Buff는 모든 파티원이 주는 해당 원소의 DMG를 75% 증가시키고, 에너지 폭발은 과부하/융해/증발/감전/초전도가 발동할 때 발생해 주변 적에게 DMG를 준다."
+       "t": "원소 피해 버프는 모든 파티원이 주는 해당 원소의 피해를 75% 증가시키고, 에너지 폭발은 과부하/융해/증발/감전/초전도가 발동할 때 발생해 주변 적에게 피해를 준다."
       },
       {
        "t_raw": "반응 피해를 강화하는 효과도 있어 Electro-Charged Buff는 Electro-Charged DMG를 150% 증가시키고 그 AoE를 100% 늘리며, Overloaded Buff는 Overloaded DMG를 200% 증가시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "반응 피해를 강화하는 효과도 있어 Electro-Charged Buff는 Electro-Charged DMG를 150% 증가시키고 그 AoE를 100% 늘리며, Overloaded Buff는 Overloaded DMG를 200% 증가시킨다."
+       "t": "반응 피해를 강화하는 효과도 있어 감전 버프는 감전 피해를 150% 증가시키고 그 범위를 100% 늘리며, 과부하 버프는 과부하 피해를 200% 증가시킨다."
       },
       {
        "t_raw": "Swirl Buff는 Swirl 반응 DMG를 300%, AoE를 100% 증가시키고, Superconduct Buff는 Superconduct DMG를 300% 증가시키며 대상의 물리 내성을 추가로 20% 낮춘다.",
        "interp": false,
        "dropped": false,
-       "t": "Swirl Buff는 확산 반응 DMG를 300%, AoE를 100% 증가시키고, Superconduct Buff는 Superconduct DMG를 300% 증가시키며 대상의 물리 내성을 추가로 20% 낮춘다."
+       "t": "확산 버프는 확산 반응 피해를 300%, 범위를 100% 증가시키고, 초전도 버프는 초전도 피해를 300% 증가시키며 대상의 물리 내성을 추가로 20% 낮춘다."
       },
       {
        "t_raw": "반응 피해를 직접 키우는 효과와 반응 발동 시 주변 피해를 더하는 효과가 나란히 있어, 파티의 반응 활용에 따라 체감이 갈리는 구조로 보인다.",
@@ -995,21 +953,7 @@
       }
      ],
      "heading": "정체 — 강화 효과",
-     "latin_left": [
-      "Elemental DMG Buff",
-      "DMG",
-      "DMG",
-      "Electro-Charged Buff",
-      "Electro-Charged DMG",
-      "AoE",
-      "Overloaded Buff",
-      "Overloaded DMG",
-      "Swirl Buff",
-      "DMG",
-      "AoE",
-      "Superconduct Buff",
-      "Superconduct DMG"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체 — 강화 효과",
@@ -1021,7 +965,7 @@
        "t_raw": "HP Conditional Buff는 HP가 50%보다 높을 때 공격력과 방어력을 25% 증가시키며, HP가 80%보다 높으면 일반 공격 속도와 이동 속도가 각각 20%, 95%보다 높으면 치명타 확률 10%와 치명타 피해 20%가 증가한다.",
        "interp": false,
        "dropped": false,
-       "t": "HP Conditional Buff는 HP가 50%보다 높을 때 공격력과 방어력을 25% 증가시키며, HP가 80%보다 높으면 일반 공격 속도와 이동 속도가 각각 20%, 95%보다 높으면 치명타 확률 10%와 치명타 피해 20%가 증가한다."
+       "t": "생명력 조건부 버프는 HP가 50%보다 높을 때 공격력과 방어력을 25% 증가시키며, HP가 80%보다 높으면 일반 공격 속도와 이동 속도가 각각 20%, 95%보다 높으면 치명타 확률 10%와 치명타 피해 20%가 증가한다."
       },
       {
        "t_raw": "반대로 HP가 60%보다 낮으면 공격력과 방어력이 50% 증가하고, 45%보다 낮으면 일반 공격 속도와 이동 속도가 각각 30%, 30%보다 낮으면 치명타 확률 20%와 치명타 피해 40%가 증가한다.",
@@ -1033,19 +977,19 @@
        "t_raw": "활성 캐릭터의 HP가 90%보다 높으면 주는 DMG가 50% 증가하고, 활성 캐릭터가 HP를 회복하면 1.5초마다 한 번 파티 모든 캐릭터에게 에너지 3을 회복시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "활성 캐릭터의 HP가 90%보다 높으면 주는 DMG가 50% 증가하고, 활성 캐릭터가 HP를 회복하면 1.5초마다 한 번 파티 모든 캐릭터에게 에너지 3을 회복시킨다."
+       "t": "활성 캐릭터의 HP가 90%보다 높으면 주는 피해가 50% 증가하고, 활성 캐릭터가 HP를 회복하면 1.5초마다 한 번 파티 모든 캐릭터에게 에너지 3을 회복시킨다."
       },
       {
        "t_raw": "Action Conditional Buff는 원소 폭발 사용 시 모든 파티원의 공격력과 방어력을 6% 증가시키며 최대 10중첩까지 쌓이고, 5중첩 이상이면 일반 공격 속도와 이동 속도를 추가로 30% 증가시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "Action Conditional Buff는 원소 폭발 사용 시 모든 파티원의 공격력과 방어력을 6% 증가시키며 최대 10중첩까지 쌓이고, 5중첩 이상이면 일반 공격 속도와 이동 속도를 추가로 30% 증가시킨다."
+       "t": "행동 조건부 버프는 원소 폭발 사용 시 모든 파티원의 공격력과 방어력을 6% 증가시키며 최대 10중첩까지 쌓이고, 5중첩 이상이면 일반 공격 속도와 이동 속도를 추가로 30% 증가시킨다."
       },
       {
        "t_raw": "CRIT Elemental Particle Generation은 치명타 시 원소 입자와 원소 구슬을 생성하되 15초마다 한 번만 발동하며, CRIT DMG Buff는 모든 파티원의 치명타 피해를 120% 증가시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "CRIT Elemental Particle Generation은 치명타 시 원소 입자와 원소 구슬을 생성하되 15초마다 한 번만 발동하며, CRIT DMG Buff는 모든 파티원의 치명타 피해를 120% 증가시킨다."
+       "t": "치명타 원소 입자 생성은 치명타 시 원소 입자와 원소 구슬을 생성하되 15초마다 한 번만 발동하며, 치명타 피해 버프는 모든 파티원의 치명타 피해를 120% 증가시킨다."
       },
       {
        "t_raw": "같은 HP 조건 강화라도 높은 HP를 유지할수록 강해지는 효과와 HP를 일정 아래로 떨어뜨려야 강해지는 효과가 함께 있어, 운용에 따라 유리한 HP 구간이 갈리는 셈이다.",
@@ -1106,16 +1050,11 @@
      ],
      "heading": "정체 — 강화 효과",
      "latin_left": [
-      "HP Conditional Buff",
       "HP",
       "HP",
       "HP",
       "HP",
-      "DMG",
       "HP",
-      "Action Conditional Buff",
-      "CRIT Elemental Particle Generation",
-      "CRIT DMG Buff",
       "HP",
       "HP",
       "HP",
@@ -1132,31 +1071,31 @@
        "t_raw": "Backlash는 보호막의 보호를 받는 캐릭터를 적이 공격할 때 공격한 적의 위치에서 충격파를 일으켜 한 번의 AoE DMG를 주며, 2초마다 한 번 발생할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Backlash는 보호막의 보호를 받는 캐릭터를 적이 공격할 때 공격한 적의 위치에서 충격파를 일으켜 한 번의 AoE DMG를 주며, 2초마다 한 번 발생할 수 있다."
+       "t": "반발은 보호막의 보호를 받는 캐릭터를 적이 공격할 때 공격한 적의 위치에서 충격파를 일으켜 한 번의 범위 피해를 주며, 2초마다 한 번 발생할 수 있다."
       },
       {
        "t_raw": "Plunging Attack Buff는 낙하 공격이 적에게 적중할 때 맞은 적 하나마다 모든 파티원의 공격력을 30초 동안 6%씩, 최대 60%까지 올리고 모든 파티원의 낙하 공격 DMG를 120% 증가시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "Plunging Attack Buff는 낙하 공격이 적에게 적중할 때 맞은 적 하나마다 모든 파티원의 공격력을 30초 동안 6%씩, 최대 60%까지 올리고 모든 파티원의 낙하 공격 DMG를 120% 증가시킨다."
+       "t": "낙하 공격 버프는 낙하 공격이 적에게 적중할 때 맞은 적 하나마다 모든 파티원의 공격력을 30초 동안 6%씩, 최대 60%까지 올리고 모든 파티원의 낙하 공격 피해를 120% 증가시킨다."
       },
       {
        "t_raw": "Melee Buff는 한손검·양손검·장병기 캐릭터의 일반 공격과 강공격 DMG를 75% 증가시키고 적중 시 2초마다 AoE DMG를 주는 충격파를 일으킨다.",
        "interp": false,
        "dropped": false,
-       "t": "Melee Buff는 한손검·양손검·장병기 캐릭터의 일반 공격과 강공격 DMG를 75% 증가시키고 적중 시 2초마다 AoE DMG를 주는 충격파를 일으킨다."
+       "t": "근접 버프는 한손검·양손검·장병기 캐릭터의 일반 공격과 강공격 피해를 75% 증가시키고 적중 시 2초마다 범위 피해를 주는 충격파를 일으킨다."
       },
       {
        "t_raw": "Ranged Buff는 현재 캐릭터 주변에 적이 없을 때 파티 모든 캐릭터의 DMG를 75% 증가시키고 이동 속도를 20% 높이며 대시와 대체 대시의 스태미나 소모를 50% 줄인다.",
        "interp": false,
        "dropped": false,
-       "t": "원거리 버프는 현재 캐릭터 주변에 적이 없을 때 파티 모든 캐릭터의 DMG를 75% 증가시키고 이동 속도를 20% 높이며 대시와 대체 대시의 스태미나 소모를 50% 줄인다."
+       "t": "원거리 버프는 현재 캐릭터 주변에 적이 없을 때 파티 모든 캐릭터의 피해를 75% 증가시키고 이동 속도를 20% 높이며 대시와 대체 대시의 스태미나 소모를 50% 줄인다."
       },
       {
        "t_raw": "Shield Buff는 보호막의 보호를 받는 동안 주는 DMG를 50% 증가시키고 Geo Reaction으로 생성된 Elemental Shard를 얻으면 1초마다 한 번 AoE DMG 충격파를 일으킬 수 있으며, Elemental Mastery Buff는 모든 파티원의 원소 마스터리를 300 증가시키고 근처 적에게 원소 반응을 일으킬 때 1초마다 한 번 충격파로 DMG를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "Shield Buff는 보호막의 보호를 받는 동안 주는 DMG를 50% 증가시키고 Geo Reaction으로 생성된 Elemental Shard를 얻으면 1초마다 한 번 AoE DMG 충격파를 일으킬 수 있으며, Elemental Mastery Buff는 모든 파티원의 원소 마스터리를 300 증가시키고 근처 적에게 원소 반응을 일으킬 때 1초마다 한 번 충격파로 DMG를 준다."
+       "t": "보호막 버프는 보호막의 보호를 받는 동안 주는 피해를 50% 증가시키고 바위 원소 반응으로 생성된 원소 결정을 얻으면 1초마다 한 번 범위 피해 충격파를 일으킬 수 있으며, 원소 마스터리 버프는 모든 파티원의 원소 마스터리를 300 증가시키고 근처 적에게 원소 반응을 일으킬 때 1초마다 한 번 충격파로 피해를 준다."
       },
       {
        "t_raw": "공격 방식·거리·보호막·원소 반응처럼 전투 행동의 조건을 충족해야 하는 강화 효과가 많아, 파티 구성과 캐릭터 운용이 활용도를 가르는 구조로 보인다.",
@@ -1216,23 +1155,7 @@
       }
      ],
      "heading": "정체 — 강화 효과",
-     "latin_left": [
-      "Backlash",
-      "AoE DMG",
-      "Plunging Attack Buff",
-      "DMG",
-      "Melee Buff",
-      "DMG",
-      "AoE DMG",
-      "DMG",
-      "Shield Buff",
-      "DMG",
-      "Geo Reaction",
-      "Elemental Shard",
-      "AoE DMG",
-      "Elemental Mastery Buff",
-      "DMG"
-     ]
+     "latin_left": []
     },
     {
      "section": "드러난 역사 — Tsurumi Island",
@@ -1250,7 +1173,7 @@
        "t_raw": "첫 번째는 **Pre-Thunderbird Civilization**이다.",
        "interp": false,
        "dropped": false,
-       "t": "첫 번째는 **Pre-Thunderbird Civilization**이다."
+       "t": "첫 번째는 **뇌조 이전 문명**이다."
       },
       {
        "t_raw": "이 문명은 지하의 벽화라는 무너져 가는 흔적만 남겼다.",
@@ -1270,9 +1193,7 @@
       }
      ],
      "heading": "드러난 역사 — 츠루미",
-     "latin_left": [
-      "Pre-Thunderbird Civilization"
-     ]
+     "latin_left": []
     },
     {
      "section": "드러난 역사 — Tsurumi Island",
@@ -1372,7 +1293,7 @@
        "t_raw": "Beneath the Dragon-Queller에서 Azdhaha의 Cryo, Pyro, Electro, Hydro 공격이 보호막 밖의 캐릭터에게 맞으면 그 캐릭터에 표식이 붙고, 표식이 붙은 캐릭터는 계속 원소 피해를 받는다.",
        "interp": false,
        "dropped": false,
-       "t": "「복룡목」 아래에서 Azdhaha의 얼음, 불, 번개, 물 공격이 보호막 밖의 캐릭터에게 맞으면 그 캐릭터에 표식이 붙고, 표식이 붙은 캐릭터는 계속 원소 피해를 받는다."
+       "t": "「복룡목」 아래에서 아즈다하의 얼음, 불, 번개, 물 공격이 보호막 밖의 캐릭터에게 맞으면 그 캐릭터에 표식이 붙고, 표식이 붙은 캐릭터는 계속 원소 피해를 받는다."
       },
       {
        "t_raw": "이 때문에 이 전투에서는 보호막 유무가 표식 부여와 지속 피해를 가르는 조건으로 보인다.",
@@ -1400,9 +1321,7 @@
       }
      ],
      "heading": "얽힌 인물과 세력 — 영역 토벌",
-     "latin_left": [
-      "Azdhaha"
-     ]
+     "latin_left": []
     },
     {
      "section": "얽힌 인물과 세력 — Trounce Domains",
@@ -1420,13 +1339,13 @@
        "t_raw": "필드에 있으면 온도 상태가 쌓이고 한계에 이르면 HP를 계속 잃으며, 상응하는 공격에 맞거나 Frosted Floor·Embered Earth 위에 서면 축적 속도가 빨라진다.",
        "interp": false,
        "dropped": false,
-       "t": "필드에 있으면 온도 상태가 쌓이고 한계에 이르면 HP를 계속 잃으며, 상응하는 공격에 맞거나 Frosted Floor·Embered Earth 위에 서면 축적 속도가 빨라진다."
+       "t": "필드에 있으면 온도 상태가 쌓이고 한계에 이르면 HP를 계속 잃으며, 상응하는 공격에 맞거나 서리 바닥·잿불 대지 위에 서면 축적 속도가 빨라진다."
       },
       {
        "t_raw": "Hearts of Flame과 Eyes of Frost는 근처 캐릭터의 축적을 줄여 주고, 파괴하면 해당 온도 상태와 주변 Frosted Floor·Embered Earth의 효과를 크게 무력화한다.",
        "interp": false,
        "dropped": false,
-       "t": "Hearts of Flame과 Eyes of Frost는 근처 캐릭터의 축적을 줄여 주고, 파괴하면 해당 온도 상태와 주변 Frosted Floor·Embered Earth의 효과를 크게 무력화한다.",
+       "t": "불꽃의 심장과 서리의 눈은 근처 캐릭터의 축적을 줄여 주고, 파괴하면 해당 온도 상태와 주변 서리 바닥·잿불 대지의 효과를 크게 무력화한다.",
        "polish": {
         "from": "Hearts of Flame과 Eyes of Frost는 근처 캐릭터의 축적을 줄여 주고, 파괴하면 해당 온도 상태와 주변 Frosted Floor·Embered Earth의 효과를 크게 무력화한다.",
         "text": "Hearts of Flame과 Eyes of Frost는 근처 캐릭터의 축적을 줄여 주고, 파괴하면 해당 온도 상태와 주변 Frosted Floor·Embered Earth의 효과를 크게 무력화한다.",
@@ -1437,7 +1356,7 @@
        "t_raw": "또한 Signora가 Max HP의 일정 비율을 넘는 단일 피해를 받으면 초과분은 무효화되고, 이후 냉기나 열기의 파동으로 온도 상태가 빠르게 쌓이며 강한 반격이 이어진다.",
        "interp": false,
        "dropped": false,
-       "t": "또한 시뇨라가 Max HP의 일정 비율을 넘는 단일 피해를 받으면 초과분은 무효화되고, 이후 냉기나 열기의 파동으로 온도 상태가 빠르게 쌓이며 강한 반격이 이어진다."
+       "t": "또한 시뇨라가 최대 체력의 일정 비율을 넘는 단일 피해를 받으면 초과분은 무효화되고, 이후 냉기나 열기의 파동으로 온도 상태가 빠르게 쌓이며 강한 반격이 이어진다."
       },
       {
        "t_raw": "이 전장에서는 바닥과 부착물, 피해 한도가 모두 온도 관리와 맞물려 있어 위치와 공격량을 함께 조절해야 하는 구조로 보인다.",
@@ -1474,14 +1393,7 @@
      ],
      "heading": "얽힌 인물과 세력 — 영역 토벌",
      "latin_left": [
-      "HP",
-      "Frosted Floor",
-      "Embered Earth",
-      "Hearts of Flame",
-      "Eyes of Frost",
-      "Frosted Floor",
-      "Embered Earth",
-      "Max HP"
+      "HP"
      ]
     },
     {
@@ -1494,31 +1406,31 @@
        "t_raw": "End of the Oneiric Euthymia의 Magatsu Mitake Narukami no Mikoto는 **Ominous Destiny**를 계속 흡수하고, 캐릭터를 맞히면 더 많이 얻는다.",
        "interp": false,
        "dropped": false,
-       "t": "몽상 낙토의 죽음의 마가츠 미타케 나루카미노 미코토노 미코토는 **Ominous Destiny**를 계속 흡수하고, 캐릭터를 맞히면 더 많이 얻는다.",
+       "t": "몽상 낙토의 죽음의 마가츠 미타케 나루카미노 미코토의 미코토는 **흉조의 운명**을 계속 흡수하고, 캐릭터를 맞히면 더 많이 얻는다.",
        "polish": {
-        "from": "몽상 낙토의 죽음의 마가츠 미타케 나루카미노 미코토 no 미코토는 **Ominous Destiny**를 계속 흡수하고, 캐릭터를 맞히면 더 많이 얻는다.",
-        "text": "몽상 낙토의 죽음의 마가츠 미타케 나루카미노 미코토노 미코토는 **Ominous Destiny**를 계속 흡수하고, 캐릭터를 맞히면 더 많이 얻는다.",
-        "by": "ds"
+        "from": "몽상 낙토의 죽음의 마가츠 미타케 나루카미노 미코토 no 미코토는 **흉조의 운명**을 계속 흡수하고, 캐릭터를 맞히면 더 많이 얻는다.",
+        "text": "몽상 낙토의 죽음의 마가츠 미타케 나루카미노 미코토의 미코토는 **흉조의 운명**을 계속 흡수하고, 캐릭터를 맞히면 더 많이 얻는다.",
+        "by": "glm-flash"
        }
       },
       {
        "t_raw": "이것이 가득 차면 Baleful Shadowlord 형태가 되며, 그동안 현장 캐릭터는 일정 간격으로 Elemental Energy를 잃는다.",
        "interp": false,
        "dropped": false,
-       "t": "이것이 가득 차면 Baleful Shadowlord 형태가 되며, 그동안 현장 캐릭터는 일정 간격으로 원소 에너지를 잃는다."
+       "t": "이것이 가득 차면 재앙의 그림자 군주 형태가 되며, 그동안 현장 캐릭터는 일정 간격으로 원소 에너지를 잃는다."
       },
       {
        "t_raw": "이 형태에서 그녀는 큰 DMG RES를 얻고 더 치명적인 공격을 하므로, 적절한 원소 공격으로 형태를 더 빨리 해제하고 그 과정에서 Energy를 얻어야 한다.",
        "interp": false,
        "dropped": false,
-       "t": "이 형태에서 그녀는 큰 DMG RES를 얻고 더 치명적인 공격을 하므로, 적절한 원소 공격으로 형태를 더 빨리 해제하고 그 과정에서 에너지를 얻어야 한다."
+       "t": "이 형태에서 그녀는 큰 피해 내성을 얻고 더 치명적인 공격을 하므로, 적절한 원소 공격으로 형태를 더 빨리 해제하고 그 과정에서 에너지를 얻어야 한다."
       },
       {
        "t_raw": "그녀가 캐릭터를 맞히면 Ominous Destiny를 더 얻으므로, 피격을 줄이고 원소 공격으로 형태를 빨리 풀어내는 선택이 전투의 리듬을 가르는 것으로 보인다.",
        "interp": true,
        "dropped": false,
        "repaired": true,
-       "t": "그녀가 캐릭터를 맞히면 Ominous Destiny를 더 얻으므로, 피격을 줄이고 원소 공격으로 형태를 빨리 풀어내는 선택이 전투의 리듬을 가르는 것으로 보인다."
+       "t": "그녀가 캐릭터를 맞히면 흉조의 운명을 더 얻으므로, 피격을 줄이고 원소 공격으로 형태를 빨리 풀어내는 선택이 전투의 리듬을 가르는 것으로 보인다."
       }
      ],
      "sources": [
@@ -1540,12 +1452,7 @@
       }
      ],
      "heading": "얽힌 인물과 세력 — 영역 토벌",
-     "latin_left": [
-      "Ominous Destiny",
-      "Baleful Shadowlord",
-      "DMG RES",
-      "Ominous Destiny"
-     ]
+     "latin_left": []
     },
     {
      "section": "얽힌 인물과 세력 — Trounce Domains",
@@ -1563,19 +1470,19 @@
        "t_raw": "전투 1단계에서 바닥의 **Elemental Matrix** 위에 서면 Raw Frost나 Remnant Flames를 지우고, Upcurrent를 만들거나 지속 치유 효과를 내고 Shouki no Kami를 억제하는 효과를 발동할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "전투 1단계에서 바닥의 **Elemental Matrix** 위에 서면 Raw Frost나 Remnant Flames를 지우고, Upcurrent를 만들거나 지속 치유 효과를 내고 「정기(正機)의 신」을 억제하는 효과를 발동할 수 있다."
+       "t": "전투 1단계에서 바닥의 **원소 매트릭스** 위에 서면 원시 서리나 잔불을 지우고, 상승기류를 만들거나 지속 치유 효과를 내고 「정기(正機)의 신」을 억제하는 효과를 발동할 수 있다."
       },
       {
        "t_raw": "억제 효과가 활성화된 동안 다른 Electro Matrix를 발동하면 과부하로 그를 마비시킬 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "억제 효과가 활성화된 동안 다른 Electro Matrix를 발동하면 과부하로 그를 마비시킬 수 있다."
+       "t": "억제 효과가 활성화된 동안 다른 번개 매트릭스를 발동하면 과부하로 그를 마비시킬 수 있다."
       },
       {
        "t_raw": "이처럼 Energy Blocks로 Neo Akasha Terminal을 충전하는 일과 바닥의 Elemental Matrix 효과를 고르는 일이 모두 전투의 대응 수단이 되는 구조로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이처럼 에너지 덩어리로 신형 허공 단말기를 충전하는 일과 바닥의 Elemental Matrix 효과를 고르는 일이 모두 전투의 대응 수단이 되는 구조로 보인다."
+       "t": "이처럼 에너지 덩어리로 신형 허공 단말기를 충전하는 일과 바닥의 원소 매트릭스 효과를 고르는 일이 모두 전투의 대응 수단이 되는 구조로 보인다."
       }
      ],
      "sources": [
@@ -1597,14 +1504,7 @@
       }
      ],
      "heading": "얽힌 인물과 세력 — 영역 토벌",
-     "latin_left": [
-      "Elemental Matrix",
-      "Raw Frost",
-      "Remnant Flames",
-      "Upcurrent",
-      "Electro Matrix",
-      "Elemental Matrix"
-     ]
+     "latin_left": []
     },
     {
      "section": "얽힌 인물과 세력 — Trounce Domains",
@@ -1622,13 +1522,13 @@
        "t_raw": "Shouki no Kami가 Setsuna Shoumetsu 공격을 충전할 때 이 공격을 약점에 맞히면 그를 넘어뜨리고 움직이지 못하게 한다.",
        "interp": false,
        "dropped": false,
-       "t": "「정기(正機)의 신」이 Setsuna Shoumetsu 공격을 충전할 때 이 공격을 약점에 맞히면 그를 넘어뜨리고 움직이지 못하게 한다."
+       "t": "「정기(正機)의 신」이 찰나소멸 공격을 충전할 때 이 공격을 약점에 맞히면 그를 넘어뜨리고 움직이지 못하게 한다."
       },
       {
        "t_raw": "Neo Akasha Terminal의 조준 공격은 보호막을 깎는 데에도, Setsuna Shoumetsu 충전 중 약점을 맞히는 데에도 쓰인다.",
        "interp": false,
        "dropped": false,
-       "t": "신형 허공 단말기의 조준 공격은 보호막을 깎는 데에도, Setsuna Shoumetsu 충전 중 약점을 맞히는 데에도 쓰인다."
+       "t": "신형 허공 단말기의 조준 공격은 보호막을 깎는 데에도, 찰나소멸 충전 중 약점을 맞히는 데에도 쓰인다."
       }
      ],
      "sources": [
@@ -1642,10 +1542,7 @@
       }
      ],
      "heading": "얽힌 인물과 세력 — 영역 토벌",
-     "latin_left": [
-      "Setsuna Shoumetsu",
-      "Setsuna Shoumetsu"
-     ]
+     "latin_left": []
     },
     {
      "section": "떡밥과 수수께끼",
@@ -1772,7 +1669,7 @@
        "t_raw": "예를 들어 Engulfing Storm의 기본 지속 시간은 약 20초이고, Prayers for Wisdom과 Shattering Ice가 있으면 20 × (1 - 0.4) × (1 - 0.4) = 7.2초가 된다.",
        "interp": false,
        "dropped": false,
-       "t": "예를 들어 흡능의 번개의 기본 지속 시간은 약 20초이고, Prayers for 「지혜」와 Shattering Ice가 있으면 20 × (1 - 0.4) × (1 - 0.4) = 7.2초가 된다.",
+       "t": "예를 들어 흡능의 번개의 기본 지속 시간은 약 20초이고, 기도 for 「지혜」와 부서지는 얼음이 있으면 20 × (1 - 0.4) × (1 - 0.4) = 7.2초가 된다.",
        "polish": {
         "from": "예를 들어 흡능의 번개의 기본 지속 시간은 약 20초이고, Prayers for 「지혜」와 Shattering Ice가 있으면 20 × (1 - 0.4) × (1 - 0.4) = 7.2초가 된다.",
         "text": "예를 들어 흡능의 번개의 기본 지속 시간은 약 20초이고, Prayers for 「지혜」와 Shattering Ice가 있으면 20 × (1 - 0.4) × (1 - 0.4) = 7.2초가 된다.",
@@ -1845,10 +1742,7 @@
       }
      ],
      "heading": "여담 — 정화·수치·예외",
-     "latin_left": [
-      "Prayers",
-      "Shattering Ice"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담 — 정화·수치·예외",
@@ -1860,9 +1754,9 @@
        "t_raw": "원소 디버프는 캐릭터에게 원소 반응을 일으켜 순간적으로 정화할 수 있고, Barbara의 Let the Show Begin이나 Xingqiu의 Guhua Sword: Fatal Rainscreen처럼 활성 캐릭터에게 Wet을 부여하는 능력이 **Self Aura**로 불린다.",
        "interp": false,
        "dropped": false,
-       "t": "원소 디버프는 캐릭터에게 원소 반응을 일으켜 순간적으로 정화할 수 있고, 바바라의 Let the Show Begin이나 행추의 고화검: 화우농산처럼 활성 캐릭터에게 Wet을 부여하는 능력이 **Self Aura**로 불린다.",
+       "t": "원소 디버프는 캐릭터에게 원소 반응을 일으켜 순간적으로 정화할 수 있고, 바바라의 공연 시작이나 행추의 고화검: 화우농산처럼 활성 캐릭터에게 Wet을 부여하는 능력이 **Self Aura**로 불린다.",
        "polish": {
-        "from": "원소 디버프는 캐릭터에게 원소 반응을 일으켜 순간적으로 정화할 수 있고, 바바라의 Let the Show Begin이나 행추의 고화검: 화우농산처럼 활성 캐릭터에게 습윤을 부여하는 능력이 **Self Aura**로 불린다.",
+        "from": "원소 디버프는 캐릭터에게 원소 반응을 일으켜 순간적으로 정화할 수 있고, 바바라의 Let the Show Begin이나 행추의 고화검: 화우농산처럼 활성 캐릭터에게 Wet을 부여하는 능력이 **Self Aura**로 불린다.",
         "text": "원소 디버프는 캐릭터에게 원소 반응을 일으켜 순간적으로 정화할 수 있고, 바바라의 Let the Show Begin이나 행추의 고화검: 화우농산처럼 활성 캐릭터에게 습윤을 부여하는 능력이 **셀프 오라**로 불린다.",
         "by": "or-ds"
        }
@@ -1871,19 +1765,19 @@
        "t_raw": "Self Aura는 Frozen 외에는 해로운 효과를 일으키지 못한다.",
        "interp": false,
        "dropped": false,
-       "t": "Self Aura는 빙결 외에는 해로운 효과를 일으키지 못한다."
+       "t": "셀프 오라는 빙결 외에는 해로운 효과를 일으키지 못한다."
       },
       {
        "t_raw": "Slowing Water는 Frozen Self Aura로, Engulfing Storm은 Wet Self Aura로 정화되지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "지체의 물은 Frozen Self Aura로, 흡능의 번개는 Wet Self Aura로 정화되지 않는다."
+       "t": "지체의 물은 빙결 셀프 오라로, 흡능의 번개는 습윤 셀프 오라로 정화되지 않는다."
       },
       {
        "t_raw": "대부분의 Self Aura 특성은 해당 원소의 원소 게이지 1을 부여하며, Diona의 Icy Paws는 2를 부여한다.",
        "interp": false,
        "dropped": false,
-       "t": "대부분의 Self Aura 특성은 해당 원소의 원소 게이지 1을 부여하며, 디오나의 꽁꽁젤리는 2를 부여한다."
+       "t": "대부분의 셀프 오라 특성은 해당 원소의 원소 게이지 1을 부여하며, 디오나의 꽁꽁젤리는 2를 부여한다."
       },
       {
        "t_raw": "Diona의 Icy Paws와 Xinyan의 Sweeping Fervor 같은 보호막 특성은 보호막에 보호받는 동안 다른 캐릭터로 교체하면 다음 캐릭터에게 원소를 주입하고, 보호막이 사라질 때까지 교체로 무한히 다시 주입할 수 있다.",
@@ -1950,12 +1844,7 @@
      ],
      "heading": "여담 — 정화·수치·예외",
      "latin_left": [
-      "Let the Show Begin",
       "Wet",
-      "Self Aura",
-      "Self Aura",
-      "Frozen Self Aura",
-      "Wet Self Aura",
       "Self Aura"
      ]
     },
@@ -1969,7 +1858,7 @@
        "t_raw": "Self Aura 표에서는 대부분의 원소 게이지가 1이고 Frozen은 2로 제시된다.",
        "interp": false,
        "dropped": false,
-       "t": "Self Aura 표에서는 대부분의 원소 게이지가 1이고 빙결은 2로 제시된다."
+       "t": "셀프 오라 표에서는 대부분의 원소 게이지가 1이고 빙결은 2로 제시된다."
       },
       {
        "t_raw": "지속 시간은 0.1초부터 2.1초까지, 간격은 1초·2초·5초 등으로 원소와 능력에 따라 다르게 적혀 있다.",
@@ -1981,19 +1870,19 @@
        "t_raw": "Pyro, Wet, Electro, Frozen, Anemo가 표에 오르고, 각 행에는 Elemental Gauge와 Duration, Interval이 따로 적힌다.",
        "interp": false,
        "dropped": false,
-       "t": "불, Wet, 번개, 빙결, 바람이 표에 오르고, 각 행에는 Elemental Gauge와 Duration, Interval이 따로 적힌다."
+       "t": "불, 습윤, 번개, 빙결, 바람이 표에 오르고, 각 행에는 원소 게이지와 지속 시간, 간격이 따로 적힌다."
       },
       {
        "t_raw": "같은 원소라도 Wet의 지속 시간이 0.3초·0.5초·0.2초로 갈리고, Pyro도 2.1초·1초·1초로 갈리는 식이다.",
        "interp": false,
        "dropped": false,
-       "t": "같은 원소라도 Wet의 지속 시간이 0.3초·0.5초·0.2초로 갈리고, 불도 2.1초·1초·1초로 갈리는 식이다."
+       "t": "같은 원소라도 습윤의 지속 시간이 0.3초·0.5초·0.2초로 갈리고, 불도 2.1초·1초·1초로 갈리는 식이다."
       },
       {
        "t_raw": "Self Aura의 지속과 간격은 원소 이름 하나로 묶이지 않고, 어떤 능력인지와 표의 수치에 따라 달라지는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "Self Aura의 지속과 간격은 원소 이름 하나로 묶이지 않고, 어떤 능력인지와 표의 수치에 따라 달라지는 것으로 보인다."
+       "t": "셀프 오라의 지속과 간격은 원소 이름 하나로 묶이지 않고, 어떤 능력인지와 표의 수치에 따라 달라지는 것으로 보인다."
       }
      ],
      "sources": [
@@ -2047,15 +1936,7 @@
       }
      ],
      "heading": "여담 — 정화·수치·예외",
-     "latin_left": [
-      "Self Aura",
-      "Wet",
-      "Elemental Gauge",
-      "Duration",
-      "Interval",
-      "Wet",
-      "Self Aura"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담 — 정화·수치·예외",
@@ -2067,13 +1948,13 @@
        "t_raw": "직접 피해를 주는 Ley Line Disorder의 피해는 효과의 피해 배율, Domain의 **Element Level Coefficient**, 대상의 피해 원소 저항에 따른 감소로 계산된다.",
        "interp": false,
        "dropped": false,
-       "t": "직접 피해를 주는 지맥 이상의 피해는 효과의 피해 배율, 비경의 **Element Level Coefficient**, 대상의 피해 원소 저항에 따른 감소로 계산된다."
+       "t": "직접 피해를 주는 지맥 이상의 피해는 효과의 피해 배율, 비경의 **원소 레벨 계수**, 대상의 피해 원소 저항에 따른 감소로 계산된다."
       },
       {
        "t_raw": "Element Level Coefficient는 변화 반응의 Element Level Coefficient와 같다.",
        "interp": false,
        "dropped": false,
-       "t": "Element Level Coefficient는 변화 반응의 Element Level Coefficient와 같다."
+       "t": "원소 레벨 계수는 변화 반응의 원소 레벨 계수와 같다."
       },
       {
        "t_raw": "일부 능력의 피해 배율은 Domain마다 다를 수 있다.",
@@ -2085,7 +1966,7 @@
        "t_raw": "기술들은 고정 쿨다운을 가지며, Powerful Blast의 쿨다운은 3초로 캐릭터마다 따로 계산된다.",
        "interp": false,
        "dropped": false,
-       "t": "기술들은 고정 쿨다운을 가지며, Powerful Blast의 쿨다운은 3초로 캐릭터마다 따로 계산된다."
+       "t": "기술들은 고정 쿨다운을 가지며, 강력한 폭발의 쿨다운은 3초로 캐릭터마다 따로 계산된다."
       },
       {
        "t_raw": "Energy Blast의 쿨다운도 3초이고, 단일 모드에서는 파티의 모든 캐릭터가 쿨다운을 공유한다.",
@@ -2097,7 +1978,7 @@
        "t_raw": "Spiral Blessing의 Energy Blast는 400%만이 아닌 다른 피해 배율을 사용할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Spiral Blessing의 에너지 폭발은 400%만이 아닌 다른 피해 배율을 사용할 수 있다."
+       "t": "나선의 축복의 에너지 폭발은 400%만이 아닌 다른 피해 배율을 사용할 수 있다."
       }
      ],
      "sources": [
@@ -2151,13 +2032,7 @@
       }
      ],
      "heading": "여담 — 정화·수치·예외",
-     "latin_left": [
-      "Element Level Coefficient",
-      "Element Level Coefficient",
-      "Element Level Coefficient",
-      "Powerful Blast",
-      "Spiral Blessing"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담 — 정화·수치·예외",
@@ -2169,19 +2044,19 @@
        "t_raw": "Forsaken Rift의 Icicles는 III에서 타격당 222 Cryo DMG, 71레벨, 배율 30%, Cryo 게이지 1, 지속 시간 9.5초, 피격 시 Stamina -100으로 제시되고, IV에서는 타격당 570 Cryo DMG, 88레벨, 배율 50%, Cryo 게이지 1, 지속 시간 9.5초, Stamina -100이다.",
        "interp": false,
        "dropped": false,
-       "t": "잊혀진 협곡의 Icicles는 III에서 타격당 222 얼음 원소 피해, 71레벨, 배율 30%, 얼음 게이지 1, 지속 시간 9.5초, 피격 시 스태미나 -100으로 제시되고, IV에서는 타격당 570 얼음 원소 피해, 88레벨, 배율 50%, 얼음 게이지 1, 지속 시간 9.5초, 스태미나 -100이다."
+       "t": "잊혀진 협곡의 고드름은 III에서 타격당 222 얼음 원소 피해, 71레벨, 배율 30%, 얼음 게이지 1, 지속 시간 9.5초, 피격 시 스태미나 -100으로 제시되고, IV에서는 타격당 570 얼음 원소 피해, 88레벨, 배율 50%, 얼음 게이지 1, 지속 시간 9.5초, 스태미나 -100이다."
       },
       {
        "t_raw": "Hidden Palace of Lianshan Formula의 Lightning Bolts는 III에서 471 Electro DMG, 59레벨, 배율 100%, Electro 게이지 2, 지속 시간 12초, 피격 시 Energy -30이며, IV에서는 1419 Electro DMG, 80레벨, 배율 150%, Electro 게이지 2, 지속 시간 12초, Energy -40이다.",
        "interp": false,
        "dropped": false,
-       "t": "천둥 연산 밀궁의 Lightning Bolts는 III에서 471 번개 원소 피해, 59레벨, 배율 100%, 번개 게이지 2, 지속 시간 12초, 피격 시 에너지 -30이며, IV에서는 1419 번개 원소 피해, 80레벨, 배율 150%, 번개 게이지 2, 지속 시간 12초, 에너지 -40이다."
+       "t": "천둥 연산 밀궁의 낙뢰는 III에서 471 번개 원소 피해, 59레벨, 배율 100%, 번개 게이지 2, 지속 시간 12초, 피격 시 에너지 -30이며, IV에서는 1419 번개 원소 피해, 80레벨, 배율 150%, 번개 게이지 2, 지속 시간 12초, 에너지 -40이다."
       },
       {
        "t_raw": "같은 Domain의 Balls of Lightning은 III에서 141 Electro DMG, 59레벨, 배율 30%, 게이지 0, 지속 시간 0, 피격 시 Energy -1이고, IV에서는 283 Electro DMG, 80레벨, 배율 30%, 게이지 0, 지속 시간 0, Energy -1.5이다.",
        "interp": false,
        "dropped": false,
-       "t": "같은 비경의 Balls of Lightning은 III에서 141 번개 원소 피해, 59레벨, 배율 30%, 게이지 0, 지속 시간 0, 피격 시 에너지 -1이고, IV에서는 283 번개 원소 피해, 80레벨, 배율 30%, 게이지 0, 지속 시간 0, 에너지 -1.5이다.",
+       "t": "같은 비경의 번개 구슬은 III에서 141 번개 원소 피해, 59레벨, 배율 30%, 게이지 0, 지속 시간 0, 피격 시 에너지 -1이고, IV에서는 283 번개 원소 피해, 80레벨, 배율 30%, 게이지 0, 지속 시간 0, 에너지 -1.5이다.",
        "polish": {
         "from": "같은 비경의 Balls of Lightning은 III에서 141 번개 원소 피해, 59레벨, 배율 30%, 게이지 0, 지속 시간 0, 피격 시 에너지 -1이고, IV에서는 283 번개 원소 피해, 80레벨, 배율 30%, 게이지 0, 지속 시간 0, 에너지 -1.5이다.",
         "text": "같은 비경의 Balls of Lightning은 III에서 141 번개 원소 피해, 59레벨, 배율 30%, 게이지 0, 지속 시간 0, 피격 시 에너지 -1이고, IV에서는 283 번개 원소 피해, 80레벨, 배율 30%, 게이지 0, 지속 시간 0, 에너지 -1.5이다.",
@@ -2192,7 +2067,7 @@
        "t_raw": "Artifact Domains의 Powerful Blast와 Energy Blast는 일부 레벨에서 400% Physical로 제시된다.",
        "interp": false,
        "dropped": false,
-       "t": "성유물 비경의 Powerful Blast와 에너지 폭발은 일부 레벨에서 400% Physical로 제시된다."
+       "t": "성유물 비경의 강력한 폭발과 에너지 폭발은 일부 레벨에서 400% 물리 피해로 제시된다."
       },
       {
        "t_raw": "같은 이름의 효과라도 Domain과 레벨에 따라 피해 수치, 원소 게이지, 지속 시간, 자원 감소량이 달라지는 셈이다.",
@@ -2253,17 +2128,12 @@
      ],
      "heading": "여담 — 정화·수치·예외",
      "latin_left": [
-      "Icicles",
       "III",
       "IV",
-      "Lightning Bolts",
       "III",
       "IV",
-      "Balls of Lightning",
       "III",
-      "IV",
-      "Powerful Blast",
-      "Physical"
+      "IV"
      ]
     }
    ],

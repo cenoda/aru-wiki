@@ -36,13 +36,13 @@
        "t_raw": "**Hidden Exploration Objectives**(비공식 명칭)는 Teyvat 세계 곳곳에서 일반 Exploration과는 다르지만 Quests로 공식 인정되지도, 어떤 표시로도 드러나지도 않는 여러 요소를 가리킨다.",
        "interp": false,
        "dropped": false,
-       "t": "**숨은 탐색 목표**(비공식 명칭)는 티바트 세계 곳곳에서 일반 Exploration과는 다르지만 임무로 공식 인정되지도, 어떤 표시로도 드러나지도 않는 여러 요소를 가리킨다."
+       "t": "**숨은 탐색 목표**(비공식 명칭)는 티바트 세계 곳곳에서 일반 탐색과는 다르지만 임무로 공식 인정되지도, 어떤 표시로도 드러나지도 않는 여러 요소를 가리킨다."
       },
       {
        "t_raw": "이들은 **Wonders of the World Achievements**와 연결되는 경향이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "이들은 **Wonders of the World Achievements**와 연결되는 경향이 있다.",
+       "t": "이들은 **세계의 불가사의 업적**과 연결되는 경향이 있다.",
        "polish": {
         "from": "이들은 **Wonders of the World Achievements**와 연결되는 경향이 있다.",
         "text": "이들은 **Wonders of the World Achievements**와 연결되는 경향이 있다.",
@@ -67,10 +67,7 @@
       }
      ],
      "heading": null,
-     "latin_left": [
-      "Exploration",
-      "Wonders of the World Achievements"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
@@ -88,7 +85,7 @@
        "t_raw": "이들은 **Wonders of the World Achievements**와 연관되는 경향이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "이들은 **Wonders of the World Achievements**와 연관되는 경향이 있다.",
+       "t": "이들은 **세계의 불가사의 업적**과 연관되는 경향이 있다.",
        "polish": {
         "from": "이들은 **Wonders of the World Achievements**와 연관되는 경향이 있다.",
         "text": "이들은 **Wonders of the World Achievements**와 연관되는 경향이 있다.",
@@ -113,9 +110,7 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Wonders of the World Achievements"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체",
@@ -133,13 +128,13 @@
        "t_raw": "Quest-Like는 **일반 퀘스트의 구조**를 따라 정해진 단계를 지니고, 일부 설정을 명시적으로 드러낸다.",
        "interp": false,
        "dropped": false,
-       "t": "Quest-Like는 **일반 퀘스트의 구조**를 따라 정해진 단계를 지니고, 일부 설정을 명시적으로 드러낸다."
+       "t": "퀘스트형은 **일반 퀘스트의 구조**를 따라 정해진 단계를 지니고, 일부 설정을 명시적으로 드러낸다."
       },
       {
        "t_raw": "Unordered는 정해진 구조나 명시적인 설정 없이 **퍼즐과 도전** 등을 모아 둔 갈래다.",
        "interp": false,
        "dropped": false,
-       "t": "Unordered는 정해진 구조나 명시적인 설정 없이 **퍼즐과 도전** 등을 모아 둔 갈래다."
+       "t": "무질서형은 정해진 구조나 명시적인 설정 없이 **퍼즐과 도전** 등을 모아 둔 갈래다."
       }
      ],
      "sources": [
@@ -169,10 +164,7 @@
       }
      ],
      "heading": "정체",
-     "latin_left": [
-      "Quest-Like",
-      "Unordered"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체",
@@ -184,7 +176,7 @@
        "t_raw": "Quest-Like는 **절차와 설정**이 앞에 드러나는 유형이고, Unordered는 그러한 틀 없이 여러 퍼즐과 도전을 묶어 놓은 유형이다.",
        "interp": false,
        "dropped": false,
-       "t": "Quest-Like는 **절차와 설정**이 앞에 드러나는 유형이고, Unordered는 그러한 틀 없이 여러 퍼즐과 도전을 묶어 놓은 유형이다."
+       "t": "퀘스트형은 **절차와 설정**이 앞에 드러나는 유형이고, 무질서형은 그러한 틀 없이 여러 퍼즐과 도전을 묶어 놓은 유형이다."
       },
       {
        "t_raw": "두 유형을 나란히 두면, 같은 갈래 안에서도 한쪽은 퀘스트처럼 읽히고 다른 쪽은 놀이의 모음으로 남는 셈이다.",
@@ -196,7 +188,7 @@
        "t_raw": "이 대비 때문에 Quest-Like는 설정을 풀어내는 쪽으로, Unordered는 퍼즐과 도전을 경험하는 쪽으로 성격이 갈린다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "이 대비 때문에 Quest-Like는 설정을 풀어내는 쪽으로, Unordered는 퍼즐과 도전을 경험하는 쪽으로 성격이 갈린다고 볼 수 있다."
+       "t": "이 대비 때문에 퀘스트형은 설정을 풀어내는 쪽으로, 무질서형은 퍼즐과 도전을 경험하는 쪽으로 성격이 갈린다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -226,12 +218,7 @@
       }
      ],
      "heading": "정체",
-     "latin_left": [
-      "Quest-Like",
-      "Unordered",
-      "Quest-Like",
-      "Unordered"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
@@ -249,13 +236,13 @@
        "t_raw": "Teyvat 곳곳에는 일반 Exploration으로 보기 어렵지만 Quests로 공식 인정되지도 않고 별도의 표식도 없는 요소들이 많다.",
        "interp": false,
        "dropped": false,
-       "t": "티바트 곳곳에는 일반 Exploration으로 보기 어렵지만 임무로 공식 인정되지도 않고 별도의 표식도 없는 요소들이 많다."
+       "t": "티바트 곳곳에는 일반 탐색으로 보기 어렵지만 임무로 공식 인정되지도 않고 별도의 표식도 없는 요소들이 많다."
       },
       {
        "t_raw": "이런 요소들은 **Wonders of the World Achievements**와 연결되는 경우가 많다.",
        "interp": false,
        "dropped": false,
-       "t": "이런 요소들은 **Wonders of the World Achievements**와 연결되는 경우가 많다.",
+       "t": "이런 요소들은 **세계의 경이 업적**과 연결되는 경우가 많다.",
        "polish": {
         "from": "이런 요소들은 **Wonders of the World Achievements**와 연결되는 경우가 많다.",
         "text": "이런 요소들은 **Wonders of the World Achievements**와 연결되는 경우가 많다.",
@@ -266,7 +253,7 @@
        "t_raw": "공식 표식 없이 업적과 연결되는 경우가 많다는 점에서, 이들은 일반 Exploration과 Quests 사이의 빈틈을 업적 쪽에서 드러내는 위치에 있다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "공식 표식 없이 업적과 연결되는 경우가 많다는 점에서, 이들은 일반 Exploration과 임무 사이의 빈틈을 업적 쪽에서 드러내는 위치에 있다고 볼 수 있다."
+       "t": "공식 표식 없이 업적과 연결되는 경우가 많다는 점에서, 이들은 일반 탐색과 임무 사이의 빈틈을 업적 쪽에서 드러내는 위치에 있다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -280,11 +267,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Exploration",
-      "Wonders of the World Achievements",
-      "Exploration"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
@@ -296,13 +279,13 @@
        "t_raw": "이 명칭 아래 요소들은 Quest-Like와 Unordered로 나뉜다.",
        "interp": false,
        "dropped": false,
-       "t": "이 명칭 아래 요소들은 Quest-Like와 Unordered로 나뉜다."
+       "t": "이 명칭 아래 요소들은 퀘스트형과 무질서형으로 나뉜다."
       },
       {
        "t_raw": "Quest-Like는 정해진 단계를 따라가며 설정을 명시적으로 제시하지만, Unordered는 정해진 구조 없이 퍼즐과 도전 등을 모아 둔 성격이다.",
        "interp": false,
        "dropped": false,
-       "t": "Quest-Like는 정해진 단계를 따라가며 설정을 명시적으로 제시하지만, Unordered는 정해진 구조 없이 퍼즐과 도전 등을 모아 둔 성격이다."
+       "t": "퀘스트형은 정해진 단계를 따라가며 설정을 명시적으로 제시하지만, 무질서형은 정해진 구조 없이 퍼즐과 도전 등을 모아 둔 성격이다."
       },
       {
        "t_raw": "같은 명칭 아래에서도 일반 퀘스트의 구조를 닮은 쪽과 퍼즐·도전의 묶음에 가까운 쪽이 갈리는 셈이다.",
@@ -314,7 +297,7 @@
        "t_raw": "이 대비 때문에 Hidden Exploration Objectives는 일반 Exploration이나 Quests 어느 한쪽으로 단정하기 어려운 위치를 갖는다.",
        "interp": true,
        "dropped": false,
-       "t": "이 대비 때문에 숨은 탐색 목표는 일반 Exploration이나 임무 어느 한쪽으로 단정하기 어려운 위치를 갖는다."
+       "t": "이 대비 때문에 숨은 탐색 목표는 일반 탐색이나 임무 어느 한쪽으로 단정하기 어려운 위치를 갖는다."
       }
      ],
      "sources": [
@@ -352,13 +335,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Quest-Like",
-      "Unordered",
-      "Quest-Like",
-      "Unordered",
-      "Exploration"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": []

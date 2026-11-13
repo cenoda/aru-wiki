@@ -36,19 +36,19 @@
        "t_raw": "Domain은 Genshin Impact에서 사원 같은 입구에 자리한 인스턴스이며, 그중 대부분의 Permanent Domains에서 도전을 완수하면 Artifacts·Talent Level-Up Materials·Weapon Ascension Materials·Mora 같은 보상을 얻는다.",
        "interp": false,
        "dropped": false,
-       "t": "비경은 원신에서 사원 같은 입구에 자리한 인스턴스이며, 그중 대부분의 Permanent Domains에서 도전을 완수하면 성유물·특성 육성 소재·무기 돌파 소재·모라 같은 보상을 얻는다."
+       "t": "비경은 원신에서 사원 같은 입구에 자리한 인스턴스이며, 그중 대부분의 영구 비경에서 도전을 완수하면 성유물·특성 육성 소재·무기 돌파 소재·모라 같은 보상을 얻는다."
       },
       {
        "t_raw": "대부분의 Permanent Domains는 Original Resin을 대가로 보상을 주고, One-Time Domains는 첫 완료 때 보상을 준다.",
        "interp": false,
        "dropped": false,
-       "t": "대부분의 Permanent Domains는 퓨어 레진을 대가로 보상을 주고, 일회성 비경은 첫 완료 때 보상을 준다."
+       "t": "대부분의 영구 비경은 퓨어 레진을 대가로 보상을 주고, 일회성 비경은 첫 완료 때 보상을 준다."
       },
       {
        "t_raw": "Permanent Domains는 Teyvat의 랜드마크이자 해금된 뒤 Teleport Waypoint로 쓸 수 있고 지도에 표시되므로, **탐색과 보상을 잇는 거점**으로 기능한다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "Permanent Domains는 티바트의 랜드마크이자 해금된 뒤 워프 포인트로 쓸 수 있고 지도에 표시되므로, **탐색과 보상을 잇는 거점**으로 기능한다고 볼 수 있다."
+       "t": "영구 비경은 티바트의 랜드마크이자 해금된 뒤 워프 포인트로 쓸 수 있고 지도에 표시되므로, **탐색과 보상을 잇는 거점**으로 기능한다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -94,11 +94,7 @@
       }
      ],
      "heading": null,
-     "latin_left": [
-      "Permanent Domains",
-      "Permanent Domains",
-      "Permanent Domains"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
@@ -116,7 +112,7 @@
        "t_raw": "**Permanent Domains**는 Teyvat의 랜드마크로, 뚜렷하게 표시된 Domain Entrance를 가지며 해금 후 **Teleport Waypoint**로 사용할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "**Permanent Domains**는 티바트의 랜드마크로, 뚜렷하게 표시된 비경 입구를 가지며 해금 후 **워프 포인트**로 사용할 수 있다."
+       "t": "**영구 비경**은 티바트의 랜드마크로, 뚜렷하게 표시된 비경 입구를 가지며 해금 후 **워프 포인트**로 사용할 수 있다."
       },
       {
        "t_raw": "지도에서 Spiral Abyss는 그에 해당하는 표식으로 표시된다.",
@@ -128,7 +124,7 @@
        "t_raw": "Challenge Domains와 Trounce 및 One-Time Domains도 지도에 표식으로 나타난다.",
        "interp": false,
        "dropped": false,
-       "t": "도전 비경과 Trounce 및 일회성 비경도 지도에 표식으로 나타난다."
+       "t": "도전 비경과 토벌 및 일회성 비경도 지도에 표식으로 나타난다."
       }
      ],
      "sources": [
@@ -158,10 +154,7 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Permanent Domains",
-      "Trounce"
-     ]
+     "latin_left": []
     },
     {
      "section": "Permanent Domains의 갈래",
@@ -429,7 +422,7 @@
        "t_raw": "Permanent Domains 중 Challenge Domains와 Trounce Domains를 완료하면 Artifacts, Talent Level-Up Materials, Weapon Ascension Materials, Mora, Adventure EXP 등 다양한 아이템과 재료를 얻고, 그 대가로 **Original Resin**을 쓴다.",
        "interp": false,
        "dropped": false,
-       "t": "Permanent Domains 중 도전 비경과 영역 토벌을 완료하면 성유물, 특성 육성 소재, 무기 돌파 소재, 모라, 모험 경력 등 다양한 아이템과 재료를 얻고, 그 대가로 **퓨어 레진**을 쓴다."
+       "t": "영구 비경 중 도전 비경과 영역 토벌을 완료하면 성유물, 특성 육성 소재, 무기 돌파 소재, 모라, 모험 경력 등 다양한 아이템과 재료를 얻고, 그 대가로 **퓨어 레진**을 쓴다."
       },
       {
        "t_raw": "Trounce Domains는 몇 번이든 완료할 수 있지만 보상은 주 1회만 받을 수 있고, 첫 세 Weekly Bosses는 30 Original Resin, 그 뒤에는 60 Original Resin으로 Ley Line Blossom을 연다.",
@@ -463,9 +456,7 @@
       }
      ],
      "heading": "도전과 보상",
-     "latin_left": [
-      "Permanent Domains"
-     ]
+     "latin_left": []
     },
     {
      "section": "도전과 보상",
@@ -577,7 +568,7 @@
        "t_raw": "Domain 입구 화면에서 **Match** 버튼을 누르면 다른 플레이어를 자신의 세계로 초대하거나 다른 플레이어의 세계에 참가할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "비경 입구 화면에서 **Match** 버튼을 누르면 다른 플레이어를 자신의 세계로 초대하거나 다른 플레이어의 세계에 참가할 수 있다."
+       "t": "비경 입구 화면에서 **매치** 버튼을 누르면 다른 플레이어를 자신의 세계로 초대하거나 다른 플레이어의 세계에 참가할 수 있다."
       },
       {
        "t_raw": "그 뒤 호스트는 자신의 세계에 있는 다른 플레이어를 Co-Op 세션에 초대해 Domain이나 보스전을 함께 완료할 수 있다.",
@@ -597,9 +588,7 @@
       }
      ],
      "heading": "협동 모드",
-     "latin_left": [
-      "Match"
-     ]
+     "latin_left": []
     },
     {
      "section": "협동 모드",
@@ -731,7 +720,7 @@
        "t_raw": "Cecilia Garden에는 캐릭터로부터의 자기 적용으로 Slowing Water가, Forsaken Rift에는 피해 능력으로 Icicles와 캐릭터로부터의 자기 적용으로 Condensed Ice가 연결된다.",
        "interp": false,
        "dropped": false,
-       "t": "세실리아의 모밭에는 캐릭터로부터의 자기 적용으로 지체의 물이, 잊혀진 협곡에는 피해 능력으로 Icicles와 캐릭터로부터의 자기 적용으로 응결의 얼음이 연결된다."
+       "t": "세실리아의 모밭에는 캐릭터로부터의 자기 적용으로 지체의 물이, 잊혀진 협곡에는 피해 능력으로 고드름과 캐릭터로부터의 자기 적용으로 응결의 얼음이 연결된다."
       },
       {
        "t_raw": "Forsaken Rift는 피해 능력형과 자기 적용형 장애를 함께 가진 셈이다.",
@@ -783,9 +772,7 @@
       }
      ],
      "heading": "티바트의 비경 지도",
-     "latin_left": [
-      "Icicles"
-     ]
+     "latin_left": []
     },
     {
      "section": "Teyvat의 Domain 지도",
@@ -804,7 +791,7 @@
        "interp": true,
        "dropped": false,
        "repaired": true,
-       "t": "한 여름의 정원처럼 한 비경에 여러 Debuff Abilities가 겹쳐 표기된 사례도 있는 셈이다."
+       "t": "한 여름의 정원처럼 한 비경에 여러 디버프 능력이 겹쳐 표기된 사례도 있는 셈이다."
       }
      ],
      "sources": [
@@ -842,9 +829,7 @@
       }
      ],
      "heading": "티바트의 비경 지도",
-     "latin_left": [
-      "Debuff Abilities"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Domain이 사건의 실마리가 된 퀘스트",
@@ -868,7 +853,7 @@
        "t_raw": "Katheryne은 Guild가 그 Domain을 광범위하게 조사했지만 별다른 성과를 얻지 못했다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "캐서린은 Guild가 그 비경을 광범위하게 조사했지만 별다른 성과를 얻지 못했다고 전한다."
+       "t": "캐서린은 모험가 길드가 그 비경을 광범위하게 조사했지만 별다른 성과를 얻지 못했다고 전한다."
       },
       {
        "t_raw": "Yanfei는 상대를 보내주고, Domain에 들어갈 생각이라면 자신과 함께 가자고 제안한다.",
@@ -915,9 +900,7 @@
       }
      ],
      "heading": "작중 행적 — 비경이 사건의 실마리가 된 퀘스트",
-     "latin_left": [
-      "Guild"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Domain이 사건의 실마리가 된 퀘스트",
@@ -1193,7 +1176,7 @@
        "t_raw": "Katheryne은 Guild가 그 Domain을 두고 광범위한 조사를 벌였다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "캐서린은 Guild가 그 비경을 두고 광범위한 조사를 벌였다고 전한다."
+       "t": "캐서린은 모험가 길드가 그 비경을 두고 광범위한 조사를 벌였다고 전한다."
       },
       {
        "t_raw": "그러나 그 조사에서 특별히 가치 있는 결과는 아직 얻지 못했다고 말한다.",
@@ -1205,7 +1188,7 @@
        "t_raw": "**Guild의 조사**는 광범위하게 이뤄졌지만 가치 있는 결과를 얻지 못한 셈이라고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "**Guild의 조사**는 광범위하게 이뤄졌지만 가치 있는 결과를 얻지 못한 셈이라고 볼 수 있다."
+       "t": "**모험가 길드의 조사**는 광범위하게 이뤄졌지만 가치 있는 결과를 얻지 못한 셈이라고 볼 수 있다."
       }
      ],
      "sources": [
@@ -1218,10 +1201,7 @@
       }
      ],
      "heading": "얽힌 인물과 세력",
-     "latin_left": [
-      "Guild",
-      "Guild"
-     ]
+     "latin_left": []
     },
     {
      "section": "떡밥과 수수께끼",
@@ -1338,7 +1318,7 @@
        "t_raw": "Katheryne는 Guild가 그 Domain을 광범위하게 조사했지만 가치 있는 결과를 얻지 못했다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "캐서린은 Guild가 그 비경을 광범위하게 조사했지만 가치 있는 결과를 얻지 못했다고 말한다."
+       "t": "캐서린은 모험가 길드가 그 비경을 광범위하게 조사했지만 가치 있는 결과를 얻지 못했다고 말한다."
       },
       {
        "t_raw": "Yelan이 변화가 우리를 겨냥하는 듯하다고 느낀 Domain에 대한 Guild의 조사가 이처럼 뚜렷한 성과를 내지 못했으니, Guild의 조사에도 의문이 남는 셈이다.",
@@ -1364,9 +1344,7 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Guild"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",

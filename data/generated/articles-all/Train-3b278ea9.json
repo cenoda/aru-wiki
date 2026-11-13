@@ -132,7 +132,7 @@
        "t_raw": "Snezhnaya에 있을 때는 Map 좌측 상단 Notifications에 Train이 추가된다.",
        "interp": false,
        "dropped": false,
-       "t": "스네즈나야에 있을 때는 맵 좌측 상단 Notifications에 열차가 추가된다."
+       "t": "스네즈나야에 있을 때는 맵 좌측 상단 알림에 열차가 추가된다."
       }
      ],
      "sources": [
@@ -178,9 +178,7 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Notifications"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
@@ -302,7 +300,7 @@
        "t_raw": "Train 내부는 **Normal Temperature Zone**이며, 그 범위는 뒷문 바로 바깥과 객차 사이 문까지 이어진다.",
        "interp": false,
        "dropped": false,
-       "t": "열차 내부는 **Normal Temperature Zone**이며, 그 범위는 뒷문 바로 바깥과 객차 사이 문까지 이어진다."
+       "t": "열차 내부는 **일반 온도 구역**이며, 그 범위는 뒷문 바로 바깥과 객차 사이 문까지 이어진다."
       },
       {
        "t_raw": "앞 칸에 여러 장치와 시설이 모여 있는 점은 Train이 이동 수단이면서 기능 거점의 성격도 지니도록 개조된 것으로 보인다.",
@@ -362,9 +360,7 @@
       }
      ],
      "heading": "정체",
-     "latin_left": [
-      "Normal Temperature Zone"
-     ]
+     "latin_left": []
     },
     {
      "section": "운행과 접근",
@@ -575,17 +571,17 @@
        "t_raw": "차량 내부는 **Normal Temperature Zone**로, 이 구역은 뒷문 바로 바깥과 객차 사이 문까지 이어진다.",
        "interp": false,
        "dropped": false,
-       "t": "차량 내부는 **Normal Temperature Zone**로, 이 구역은 뒷문 바로 바깥과 객차 사이 문까지 이어진다."
+       "t": "차량 내부는 **일반 온도 구역**으로, 이 구역은 뒷문 바로 바깥과 객차 사이 문까지 이어진다."
       },
       {
        "t_raw": "앞 칸 Eye of Graeae terminal에서 **Navigation FoV**를 활성화하면 Navigation FoV Menu가 열린다.",
        "interp": false,
        "dropped": false,
-       "t": "앞 칸 「잿빛 눈동자」 터미널에서 **Navigation FoV**를 활성화하면 Navigation FoV 메뉴가 열린다.",
+       "t": "앞 칸 「잿빛 눈동자」 터미널에서 **탐색 시야각**을 활성화하면 탐색 시야각 메뉴가 열린다.",
        "polish": {
-        "from": "앞 칸 「잿빛 눈동자」 terminal에서 **Navigation FoV**를 활성화하면 Navigation FoV Menu가 열린다.",
-        "text": "앞 칸 「잿빛 눈동자」 터미널에서 **Navigation FoV**를 활성화하면 Navigation FoV 메뉴가 열린다.",
-        "by": "glm-flash"
+        "from": "앞 칸 「잿빛 눈동자」 terminal에서 **탐색 시야각**을 활성화하면 탐색 시야각 Menu가 열린다.",
+        "text": "앞 칸 「잿빛 눈동자」 터미널에서 **탐색 시야각**을 활성화하면 탐색 시야각 메뉴가 열린다.",
+        "by": "ds"
        }
       }
      ],
@@ -624,11 +620,7 @@
       }
      ],
      "heading": "차량 구조와 시설",
-     "latin_left": [
-      "Normal Temperature Zone",
-      "Navigation FoV",
-      "Navigation FoV"
-     ]
+     "latin_left": []
     },
     {
      "section": "차량 구조와 시설",
@@ -868,7 +860,7 @@
        "t_raw": "앞 칸 테이블은 Observe로 조사할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "앞 칸 테이블은 Observe로 조사할 수 있다."
+       "t": "앞 칸 테이블은 관찰로 조사할 수 있다."
       },
       {
        "t_raw": "소장품을 모으기 전에는 Paimon이 테이블 위에 아무것도 없다고 말한다. 한편 Mistilteinn 완료 후에는 matryoshka doll들이 Odette와 Vodyanitsa로 보인다고 덧붙인다.",
@@ -926,9 +918,7 @@
       }
      ],
      "heading": "차량 구조와 시설",
-     "latin_left": [
-      "Observe"
-     ]
+     "latin_left": []
     },
     {
      "section": "차량 구조와 시설",
@@ -1023,11 +1013,11 @@
        "t_raw": "두 번째 칸 창문의 Paimon 그림과 상호작용하면 Enjoy the scenery를 실행하고, Observe On the Move로 측면 창문과 상단 시점을 전환한다.",
        "interp": false,
        "dropped": false,
-       "t": "두 번째 칸 창문의 페이몬 그림과 상호작용하면 Enjoy the scenery를 실행하고, Observe On the Move로 측면 창문과 상단 시점을 전환한다.",
+       "t": "두 번째 칸 창문의 페이몬 그림과 상호작용하면 풍경 감상 기능을 실행하고, 이동 중 관찰로 측면 창문과 상단 시점을 전환한다.",
        "polish": {
-        "from": "두 번째 칸 창문의 페이몬 그림과 상호작용하면 Enjoy the scenery를 실행하고, Observe On the Move로 측면 창문과 상단 시점을 전환한다.",
-        "text": "두 번째 칸 창문의 페이몬 그림과 상호작용하면 Enjoy the scenery를 실행하고, Observe On the Move로 측면 창문과 상단 시점을 전환한다.",
-        "by": "glm-flash"
+        "from": "두 번째 칸 창문의 페이몬 그림과 상호작용하면 풍경 감상 scenery를 실행하고, 이동 중 관찰로 측면 창문과 상단 시점을 전환한다.",
+        "text": "두 번째 칸 창문의 페이몬 그림과 상호작용하면 풍경 감상 기능을 실행하고, 이동 중 관찰로 측면 창문과 상단 시점을 전환한다.",
+        "by": "ds"
        }
       }
      ],
@@ -1066,10 +1056,7 @@
       }
      ],
      "heading": "차량 구조와 시설",
-     "latin_left": [
-      "Enjoy the",
-      "Observe On the Move"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Gunfire in the Silent Lands 이후",
@@ -1472,7 +1459,7 @@
        "t_raw": "Snezhnayans가 툰드라 개발에 대한 의욕이 줄어든 현재에도 누군가 이 위태로운 임시역을 유지하려 한다는 점은 꽤 낭만적으로 비친다.",
        "interp": true,
        "dropped": false,
-       "t": "Snezhnayans가 툰드라 개발에 대한 의욕이 줄어든 현재에도 누군가 이 위태로운 임시역을 유지하려 한다는 점은 꽤 낭만적으로 비친다."
+       "t": "스네즈나야인이 툰드라 개발에 대한 의욕이 줄어든 현재에도 누군가 이 위태로운 임시역을 유지하려 한다는 점은 꽤 낭만적으로 비친다."
       },
       {
        "t_raw": "Svetloledovka 역은 Snezhnaya의 얼어붙은 봉우리 그늘에 지어졌고, Prime Ice를 캐는 많은 노동자가 Snezhnograd에 살면서 이 Train으로 두 곳을 오간다.",
@@ -1500,9 +1487,7 @@
       }
      ],
      "heading": "드러난 역사와 장소",
-     "latin_left": [
-      "Snezhnayans"
-     ]
+     "latin_left": []
     },
     {
      "section": "드러난 역사와 장소",
@@ -2039,18 +2024,18 @@
        "t_raw": "**Paimon의 그림**은 두 번째 칸 창문에 있고, 상호작용하면 Enjoy the scenery가 열린다.",
        "interp": false,
        "dropped": false,
-       "t": "**페이몬의 그림**은 두 번째 칸 창문에 있고, 상호작용하면 Enjoy the scenery가 열린다.",
+       "t": "**페이몬의 그림**은 두 번째 칸 창문에 있고, 상호작용하면 풍경 감상 기능이 열린다.",
        "polish": {
-        "from": "**페이몬의 그림**은 두 번째 칸 창문에 있고, 상호작용하면 Enjoy the scenery가 열린다.",
-        "text": "**페이몬의 그림**은 두 번째 칸 창문에 있고, 상호작용하면 Enjoy the scenery가 열린다.",
-        "by": "glm-flash"
+        "from": "**페이몬의 그림**은 두 번째 칸 창문에 있고, 상호작용하면 풍경 감상 scenery가 열린다.",
+        "text": "**페이몬의 그림**은 두 번째 칸 창문에 있고, 상호작용하면 풍경 감상 기능이 열린다.",
+        "by": "ds"
        }
       },
       {
        "t_raw": "Observe On the Move로 옆창과 위쪽 시점을 오갈 수 있고, 위쪽 시점에서는 경적 버튼으로 Train의 경적을 울린다.",
        "interp": false,
        "dropped": false,
-       "t": "Observe On the Move로 옆창과 위쪽 시점을 오갈 수 있고, 위쪽 시점에서는 경적 버튼으로 열차의 경적을 울린다.",
+       "t": "이동 중 관찰로 옆창과 위쪽 시점을 오갈 수 있고, 위쪽 시점에서는 경적 버튼으로 열차의 경적을 울린다.",
        "polish": {
         "from": "Observe On the Move로 옆창과 위쪽 시점을 오갈 수 있고, 위쪽 시점에서는 경적 버튼으로 열차의 경적을 울린다.",
         "text": "Observe On the Move로 옆창과 위쪽 시점을 오갈 수 있고, 위쪽 시점에서는 경적 버튼으로 열차의 경적을 울린다.",
@@ -2061,11 +2046,11 @@
        "t_raw": "Nastya's picture를 보면 Primon이 Nastya를 떠올리고, Paimon은 Nastya가 함께 나오기를 거부한 이유를 이해하지 못하며, 지금 처지에서도 외로울지 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "나스챠의 그림을 보면 Primon이 나스챠를 떠올리고, 페이몬은 나스챠가 함께 나오기를 거부한 이유를 이해하지 못하며, 지금 처지에서도 외로울지 묻는다.",
+       "t": "나스챠의 그림을 보면 프리몬이 나스챠를 떠올리고, 페이몬은 나스챠가 함께 나오기를 거부한 이유를 이해하지 못하며, 지금 처지에서도 외로울지 묻는다.",
        "polish": {
-        "from": "나스챠의 picture를 보면 Primon이 나스챠를 떠올리고, 페이몬은 나스챠가 함께 나오기를 거부한 이유를 이해하지 못하며, 지금 처지에서도 외로울지 묻는다.",
-        "text": "나스챠의 그림을 보면 Primon이 나스챠를 떠올리고, 페이몬은 나스챠가 함께 나오기를 거부한 이유를 이해하지 못하며, 지금 처지에서도 외로울지 묻는다.",
-        "by": "glm-flash"
+        "from": "나스챠의 picture를 보면 프리몬이 나스챠를 떠올리고, 페이몬은 나스챠가 함께 나오기를 거부한 이유를 이해하지 못하며, 지금 처지에서도 외로울지 묻는다.",
+        "text": "나스챠의 그림을 보면 프리몬이 나스챠를 떠올리고, 페이몬은 나스챠가 함께 나오기를 거부한 이유를 이해하지 못하며, 지금 처지에서도 외로울지 묻는다.",
+        "by": "ds"
        }
       }
      ],
@@ -2120,11 +2105,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Enjoy the",
-      "Observe On the Move",
-      "Primon"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [

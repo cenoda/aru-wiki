@@ -1357,7 +1357,7 @@
        "t_raw": "파고들기 중 Jump는 평지에서 3, 벽 오르기 중에는 10 Phlogiston을 쓰고, 낙하 전에 이미 파고들고 있었다면 낙하 중 3 Phlogiston으로 앞으로 나아갈 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "파고들기 중 Jump는 평지에서 3, 벽 오르기 중에는 10 열소를 쓰고, 낙하 전에 이미 파고들고 있었다면 낙하 중 3 열소로 앞으로 나아갈 수 있다."
+       "t": "파고들기 중 도약은 평지에서 3, 벽 오르기 중에는 10 열소를 쓰고, 낙하 전에 이미 파고들고 있었다면 낙하 중 3 열소로 앞으로 나아갈 수 있다."
       },
       {
        "t_raw": "이동과 도약이 모두 Phlogiston을 소비한다는 점에서, 이 능력은 **Phlogiston 관리**와 함께 운용해야 하는 것으로 보인다.",
@@ -1417,9 +1417,7 @@
       }
      ],
      "heading": "용별 능력 — 산룡과 숲룡",
-     "latin_left": [
-      "Jump"
-     ]
+     "latin_left": []
     },
     {
      "section": "Saurian별 능력 — Tepetlisaurus와 Yumkasaurus",
@@ -1519,7 +1517,7 @@
        "t_raw": "Shoot은 입에 저장한 물체를 직선으로 발사하며, 잡고 있으면 조준해 지정한 방향으로 쏠 수 있고, 발사한 Flamegranate나 Phlogiston Explosive Barrel은 명중 시 폭발해 True Pyro DMG를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "Shoot은 입에 저장한 물체를 직선으로 발사하며, 잡고 있으면 조준해 지정한 방향으로 쏠 수 있고, 발사한 화염류탄 열매나 열소 폭발 통은 명중 시 폭발해 불 원소 피해를 준다."
+       "t": "발사는 입에 저장한 물체를 직선으로 발사하며, 잡고 있으면 조준해 지정한 방향으로 쏠 수 있고, 발사한 화염류탄 열매나 열소 폭발 통은 명중 시 폭발해 불 원소 피해를 준다."
       }
      ],
      "sources": [
@@ -1557,9 +1555,7 @@
       }
      ],
      "heading": "용별 능력 — 산룡과 숲룡",
-     "latin_left": [
-      "Shoot"
-     ]
+     "latin_left": []
     },
     {
      "section": "Saurian별 능력 — Koholasaurus와 Qucusaurus",
@@ -1826,7 +1822,7 @@
        "t_raw": "Iktomisaurus의 Jump는 작은 도약이지만, 길게 누르면 5 Phlogiston을 소모해 훨씬 높이 도약한다.",
        "interp": false,
        "dropped": false,
-       "t": "명룡의 Jump는 작은 도약이지만, 길게 누르면 5 열소를 소모해 훨씬 높이 도약한다."
+       "t": "명룡의 도약은 작은 도약이지만, 길게 누르면 5 열소를 소모해 훨씬 높이 도약한다."
       },
       {
        "t_raw": "공중에서 흡수한 Phlogiston은 현재 점프에 영향이 없고 다음 점프에 영향을 주며, 강화된 점프는 플레이어 주변의 푸른 고리로 표시된다.",
@@ -1910,9 +1906,7 @@
       }
      ],
      "heading": "용별 능력 — 명룡, 뿔룡, 꼬마 용",
-     "latin_left": [
-      "Jump"
-     ]
+     "latin_left": []
     },
     {
      "section": "Saurian별 능력 — Iktomisaurus, Tatankasaurus, Little One",
@@ -1930,7 +1924,7 @@
        "t_raw": "Downward Stomp는 앞다리로 Electro DMG를 주며 돌진 중 사용할 수 있고, 공중에서는 Plunge로 내려찍어 착지 시 Electro DMG를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "내려찍기는 앞다리로 번개 원소 피해를 주며 돌진 중 사용할 수 있고, 공중에서는 Plunge로 내려찍어 착지 시 번개 원소 피해를 준다."
+       "t": "내려찍기는 앞다리로 번개 원소 피해를 주며 돌진 중 사용할 수 있고, 공중에서는 낙하 공격으로 내려찍어 착지 시 번개 원소 피해를 준다."
       },
       {
        "t_raw": "Quick Charge는 누르면 10 Phlogiston을 소모하는 짧은 돌진, 길게 누르면 Phlogiston을 계속 소모하며 닿는 모든 적에게 Electro DMG를 주는 지속 돌진이 된다.",
@@ -2012,9 +2006,7 @@
       }
      ],
      "heading": "용별 능력 — 명룡, 뿔룡, 꼬마 용",
-     "latin_left": [
-      "Plunge"
-     ]
+     "latin_left": []
     },
     {
      "section": "Saurian별 능력 — Iktomisaurus, Tatankasaurus, Little One",

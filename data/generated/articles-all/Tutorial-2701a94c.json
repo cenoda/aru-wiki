@@ -342,7 +342,7 @@
        "t_raw": "Cryo 공격을 받은 대상은 Cryo의 영향을 받아 Movement SPD가 감소한다.",
        "interp": false,
        "dropped": false,
-       "t": "얼음 공격을 받은 대상은 얼음의 영향을 받아 Movement SPD가 감소한다."
+       "t": "얼음 공격을 받은 대상은 얼음의 영향을 받아 이동 속도가 감소한다."
       },
       {
        "t_raw": "원소 공격은 피해를 주는 것과 동시에 대상에게 해당 원소의 속성을 남기고, 그 속성이 다음 반응의 재료가 되는 구조인 셈이다.",
@@ -370,9 +370,7 @@
       }
      ],
      "heading": "원소와 원소 반응",
-     "latin_left": [
-      "Movement SPD"
-     ]
+     "latin_left": []
     },
     {
      "section": "원소와 원소 반응",
@@ -564,13 +562,13 @@
        "t_raw": "Pyro가 Electro를 만나면 Overloaded가 일어나, 폭발이 AoE Pyro DMG를 입히고 단단한 물체도 힘들이지 않고 부순다.",
        "interp": false,
        "dropped": false,
-       "t": "불이 번개를 만나면 과부하가 일어나, 폭발이 AoE Pyro DMG를 입히고 단단한 물체도 힘들이지 않고 부순다."
+       "t": "불이 번개를 만나면 과부하가 일어나, 폭발이 범위 불 원소 피해를 입히고 단단한 물체도 힘들이지 않고 부순다."
       },
       {
        "t_raw": "Superconduct는 AoE Cryo DMG를 입히고, 영향을 받은 존재의 Physical RES를 크게 감소시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "초전도는 AoE Cryo DMG를 입히고, 영향을 받은 존재의 Physical RES를 크게 감소시킨다."
+       "t": "초전도는 범위 얼음 원소 피해를 입히고, 영향을 받은 존재의 물리 내성을 크게 감소시킨다."
       },
       {
        "t_raw": "Burning은 효과가 사라질 때까지 계속 Pyro DMG를 입힌다.",
@@ -588,7 +586,7 @@
        "t_raw": "직접 피해를 주는 반응들 가운데서도 Overloaded는 물체를 부수고 Superconduct는 Physical RES를 깎아, 원소 반응이 피해량뿐 아니라 적의 방어를 무너뜨리는 쪽으로도 쓰인다는 점이 드러난다.",
        "interp": true,
        "dropped": false,
-       "t": "직접 피해를 주는 반응들 가운데서도 과부하는 물체를 부수고 초전도는 Physical RES를 깎아, 원소 반응이 피해량뿐 아니라 적의 방어를 무너뜨리는 쪽으로도 쓰인다는 점이 드러난다."
+       "t": "직접 피해를 주는 반응들 가운데서도 과부하는 물체를 부수고 초전도는 물리 내성을 깎아, 원소 반응이 피해량뿐 아니라 적의 방어를 무너뜨리는 쪽으로도 쓰인다는 점이 드러난다."
       }
      ],
      "sources": [
@@ -626,12 +624,7 @@
       }
      ],
      "heading": "원소와 원소 반응",
-     "latin_left": [
-      "AoE Pyro DMG",
-      "AoE Cryo DMG",
-      "Physical RES",
-      "Physical RES"
-     ]
+     "latin_left": []
     },
     {
      "section": "원소와 원소 반응",
@@ -643,13 +636,13 @@
        "t_raw": "Geo가 Hydro/Pyro/Cryo/Electro와 접촉하면 Crystallize가 일어나, 해당 원소의 Elemental Shard를 만들고 캐릭터에게 Elemental Shield를 제공한다.",
        "interp": false,
        "dropped": false,
-       "t": "바위가 물/불/얼음/번개와 접촉하면 결정이 일어나, 해당 원소의 Elemental Shard를 만들고 캐릭터에게 Elemental Shield를 제공한다."
+       "t": "바위가 물/불/얼음/번개와 접촉하면 결정이 일어나, 해당 원소의 결정 조각을 만들고 캐릭터에게 원소 방패를 제공한다."
       },
       {
        "t_raw": "이 방패로 전투에서 받는 DMG를 효과적으로 줄일 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "이 방패로 전투에서 받는 DMG를 효과적으로 줄일 수 있다."
+       "t": "이 방패로 전투에서 받는 피해를 효과적으로 줄일 수 있다."
       },
       {
        "t_raw": "Swirl은 특정 원소와 만나면 일어나 원소 피해를 주고 존재에게 영향을 미치며, 추가 원소 반응을 만들어 내기도 한다.",
@@ -691,11 +684,7 @@
       }
      ],
      "heading": "원소와 원소 반응",
-     "latin_left": [
-      "Elemental Shard",
-      "Elemental Shield",
-      "DMG"
-     ]
+     "latin_left": []
     },
     {
      "section": "전투와 적 공략",
@@ -1031,13 +1020,13 @@
        "t_raw": "Anemo Hypostasis는 상승 기류로 구슬을 흡수해야 하고, Geo Hypostasis는 생성한 구조물을 부숴야 하며, Cryo Hypostasis는 강공격으로 Frostfruit을 되돌려 보내 재생을 끊어야 한다.",
        "interp": false,
        "dropped": false,
-       "t": "무상의 바람은 상승 기류로 구슬을 흡수해야 하고, 무상의 바위는 생성한 구조물을 부숴야 하며, 무상의 얼음은 강공격으로 Frostfruit을 되돌려 보내 재생을 끊어야 한다."
+       "t": "무상의 바람은 상승 기류로 구슬을 흡수해야 하고, 무상의 바위는 생성한 구조물을 부숴야 하며, 무상의 얼음은 강공격으로 서리 열매를 되돌려 보내 재생을 끊어야 한다."
       },
       {
        "t_raw": "Pyro Hypostasis는 Ignited 상태에서 코어가 드러나지 않고 HP를 회복하며, 올바른 원소 반응으로 Extinguished 상태를 만들어야 공격 기회가 생긴다.",
        "interp": false,
        "dropped": false,
-       "t": "무상의 불은 Ignited 상태에서 코어가 드러나지 않고 HP를 회복하며, 올바른 원소 반응으로 Extinguished 상태를 만들어야 공격 기회가 생긴다."
+       "t": "무상의 불은 점화 상태에서 코어가 드러나지 않고 HP를 회복하며, 올바른 원소 반응으로 소화 상태를 만들어야 공격 기회가 생긴다."
       },
       {
        "t_raw": "**재생과 회복을 끊는 방법이 개체마다 다르다**는 점이 다섯 항목에서 겹쳐 보인다.",
@@ -1099,10 +1088,7 @@
      "heading": "전투와 적 공략",
      "latin_left": [
       "HP",
-      "Frostfruit",
-      "Ignited",
-      "HP",
-      "Extinguished"
+      "HP"
      ]
     },
     {
@@ -1121,20 +1107,20 @@
        "t_raw": "Cryogunner Legionnaire는 Cryo, Hydrogunner Legionnaire는 Hydro, Electrohammer Vanguard는 Electro, Geochanter Bracer는 Geo, Pyroslinger Bracer는 Pyro를 다룬다.",
        "interp": false,
        "dropped": false,
-       "t": "얼음총 중보병은 얼음, Hydrogunner Legionnaire는 물, Electrohammer Vanguard는 번개, Geochanter Bracer는 바위, Pyroslinger Bracer는 불을 다룬다."
+       "t": "얼음총 중보병은 얼음, 물총 중보병은 물, 번개 망치병은 번개, 바위 술사는 바위, 불 사격병은 불을 다룬다."
       },
       {
        "t_raw": "Anemoboxer Vanguard는 Anemo 에너지로 아군을 지원하며, 버프를 잃은 아군에게 회복의 Anemo 힘을 걸어 전장에 빠르게 복귀시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "Anemoboxer Vanguard는 바람 에너지로 아군을 지원하며, 버프를 잃은 아군에게 회복의 바람 힘을 걸어 전장에 빠르게 복귀시킨다."
+       "t": "바람 권투사는 바람 에너지로 아군을 지원하며, 버프를 잃은 아군에게 회복의 바람 힘을 걸어 전장에 빠르게 복귀시킨다."
       },
       {
        "t_raw": "**버프를 잃고 약해진 아군을 다시 전투에 뛰어들게 하는 Anemo 힘을 쓰는 Anemoboxer Vanguard**가 있는 한, 버프를 하나씩 벗겨내는 것만으로 적 무리가 쉽게 무너지지는 않을 것으로 보인다.",
        "interp": true,
        "dropped": false,
        "repaired": true,
-       "t": "**버프를 잃고 약해진 아군을 다시 전투에 뛰어들게 하는 바람 힘을 쓰는 Anemoboxer Vanguard**가 있는 한, 버프를 하나씩 벗겨내는 것만으로 적 무리가 쉽게 무너지지는 않을 것으로 보인다."
+       "t": "**버프를 잃고 약해진 아군을 다시 전투에 뛰어들게 하는 바람 힘을 쓰는 바람 권투사**가 있는 한, 버프를 하나씩 벗겨내는 것만으로 적 무리가 쉽게 무너지지는 않을 것으로 보인다."
       }
      ],
      "sources": [
@@ -1188,14 +1174,7 @@
       }
      ],
      "heading": "전투와 적 공략",
-     "latin_left": [
-      "Hydrogunner Legionnaire",
-      "Electrohammer Vanguard",
-      "Geochanter Bracer",
-      "Pyroslinger Bracer",
-      "Anemoboxer Vanguard",
-      "Anemoboxer Vanguard"
-     ]
+     "latin_left": []
     },
     {
      "section": "전투와 적 공략",
@@ -1213,13 +1192,13 @@
        "t_raw": "Elemental Orb와 Elemental Particle을 흡수하면 Energy가 보충되고, 원소 피해를 주거나 적을 쓰러뜨리는 등의 행동으로도 Elemental Orb가 생성될 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Elemental Orb와 원소 입자를 흡수하면 에너지가 보충되고, 원소 피해를 주거나 적을 쓰러뜨리는 등의 행동으로도 Elemental Orb가 생성될 수 있다."
+       "t": "원소 구슬과 원소 입자를 흡수하면 에너지가 보충되고, 원소 피해를 주거나 적을 쓰러뜨리는 등의 행동으로도 원소 구슬이 생성될 수 있다."
       },
       {
        "t_raw": "Abyss Lector: Violet Lightning은 일부 공격으로 원소 에너지를 빼앗고, Abyss Herald: Wicked Torrents는 스킬이 재사용 대기 중일 때 공격을 맞으면 그 대기 시간을 늘린다.",
        "interp": false,
        "dropped": false,
-       "t": "심연 봉독자: 심연 봉독자·자색 뇌전은 일부 공격으로 원소 에너지를 빼앗고, 심연 사도: Wicked Torrents는 스킬이 재사용 대기 중일 때 공격을 맞으면 그 대기 시간을 늘린다."
+       "t": "심연 봉독자: 심연 봉독자·자색 뇌전은 일부 공격으로 원소 에너지를 빼앗고, 심연 사도: 흉류는 스킬이 재사용 대기 중일 때 공격을 맞으면 그 대기 시간을 늘린다."
       },
       {
        "t_raw": "**Energy는 싸우는 동안 스스로 차오르는 자원**이지만, 이를 빼앗는 적 앞에서는 Burst 타이밍이 흔들릴 수밖에 없다.",
@@ -1263,11 +1242,7 @@
       }
      ],
      "heading": "전투와 적 공략",
-     "latin_left": [
-      "Elemental Orb",
-      "Elemental Orb",
-      "Wicked Torrents"
-     ]
+     "latin_left": []
     },
     {
      "section": "모험의 기교 — 시스템과 생활",
@@ -1297,7 +1272,7 @@
        "t_raw": "World Level이 늘 자동으로 오르는 것은 아니어서 Adventure Rank Ascension Quest를 완료해야 오르는 구간이 있고, 그 자세한 내용은 Adventurers' Guild에서 확인할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "월드 레벨이 늘 자동으로 오르는 것은 아니어서 Adventure Rank Ascension Quest를 완료해야 오르는 구간이 있고, 그 자세한 내용은 모험가 길드에서 확인할 수 있다."
+       "t": "월드 레벨이 늘 자동으로 오르는 것은 아니어서 모험 등급 돌파 임무를 완료해야 오르는 구간이 있고, 그 자세한 내용은 모험가 길드에서 확인할 수 있다."
       },
       {
        "t_raw": "Adventure Rank가 최대에 이르면 이후 받는 Adventure EXP는 전부 Mora로 환산된다.",
@@ -1355,9 +1330,7 @@
       }
      ],
      "heading": "모험의 기교 — 시스템과 생활",
-     "latin_left": [
-      "Adventure Rank Ascension Quest"
-     ]
+     "latin_left": []
     },
     {
      "section": "모험의 기교 — 시스템과 생활",
@@ -1387,7 +1360,7 @@
        "t_raw": "결국 Resin은 세계를 돌며 쓸 곳을 찾아야 비로소 값이 매겨지는 자원인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "결국 Resin은 세계를 돌며 쓸 곳을 찾아야 비로소 값이 매겨지는 자원인 셈이다."
+       "t": "결국 레진은 세계를 돌며 쓸 곳을 찾아야 비로소 값이 매겨지는 자원인 셈이다."
       },
       {
        "t_raw": "쓴 Original Resin은 시간이 지나면 한도까지 회복되고, Primogems를 쓰면 즉시 채울 수 있다.",
@@ -1431,9 +1404,7 @@
       }
      ],
      "heading": "모험의 기교 — 시스템과 생활",
-     "latin_left": [
-      "Resin"
-     ]
+     "latin_left": []
     },
     {
      "section": "모험의 기교 — 시스템과 생활",
@@ -1451,13 +1422,13 @@
        "t_raw": "Creation Screen에서는 온갖 물건을 만들 수 있고, 그 재료는 세계 곳곳에서 모아 온다.",
        "interp": false,
        "dropped": false,
-       "t": "Creation Screen에서는 온갖 물건을 만들 수 있고, 그 재료는 세계 곳곳에서 모아 온다."
+       "t": "제작 화면에서는 온갖 물건을 만들 수 있고, 그 재료는 세계 곳곳에서 모아 온다."
       },
       {
        "t_raw": "얻은 가구는 Place 기능으로 배치하며, 가구를 놓을수록 Adeptal Energy Rank가 올라 Realm Currency가 더 빠르게 쌓인다.",
        "interp": false,
        "dropped": false,
-       "t": "얻은 가구는 Place 기능으로 배치하며, 가구를 놓을수록 선력 등급이 올라 선계 화폐가 더 빠르게 쌓인다."
+       "t": "얻은 가구는 배치 기능으로 배치하며, 가구를 놓을수록 선력 등급이 올라 선계 화폐가 더 빠르게 쌓인다."
       },
       {
        "t_raw": "집을 꾸미는 일이 곧 재화 수급으로 이어지는 구조인 셈이다.",
@@ -1469,13 +1440,13 @@
        "t_raw": "모인 Realm Currency는 Realm Depot에서 물건을 사는 데 쓰이고, 때때로 Teapot Traveling Salesman이 찾아와 진귀한 보물을 들고 오기도 한다.",
        "interp": false,
        "dropped": false,
-       "t": "모인 선계 화폐는 Realm Depot에서 물건을 사는 데 쓰이고, 때때로 여행하는 주전자 정령이 찾아와 진귀한 보물을 들고 오기도 한다."
+       "t": "모인 선계 화폐는 선계 상점에서 물건을 사는 데 쓰이고, 때때로 여행하는 주전자 정령이 찾아와 진귀한 보물을 들고 오기도 한다."
       },
       {
        "t_raw": "Furnishing Set 설계도를 얻으면 가구를 한꺼번에 배치할 수 있고 그 뒤에도 개별 가구를 손볼 수 있으며, 주전자를 소환해 안으로 들어갔다가 그 안에서 다시 주전자와 상호작용해 나오거나 지도의 Teleport Waypoint로 곧장 빠져나올 수도 있다.",
        "interp": false,
        "dropped": false,
-       "t": "Furnishing Set 설계도를 얻으면 가구를 한꺼번에 배치할 수 있고 그 뒤에도 개별 가구를 손볼 수 있으며, 주전자를 소환해 안으로 들어갔다가 그 안에서 다시 주전자와 상호작용해 나오거나 지도의 워프 포인트로 곧장 빠져나올 수도 있다."
+       "t": "가구 세트 설계도를 얻으면 가구를 한꺼번에 배치할 수 있고 그 뒤에도 개별 가구를 손볼 수 있으며, 주전자를 소환해 안으로 들어갔다가 그 안에서 다시 주전자와 상호작용해 나오거나 지도의 워프 포인트로 곧장 빠져나올 수도 있다."
       }
      ],
      "sources": [
@@ -1529,12 +1500,7 @@
       }
      ],
      "heading": "모험의 기교 — 시스템과 생활",
-     "latin_left": [
-      "Creation Screen",
-      "Place",
-      "Realm Depot",
-      "Furnishing Set"
-     ]
+     "latin_left": []
     },
     {
      "section": "모험의 기교 — 시스템과 생활",
@@ -1552,30 +1518,30 @@
        "t_raw": "Birch는 먼 북방에서 비롯해 온대륙에 퍼진 나무로, 가지를 많이 뻗어 여러 나라의 핵심 목재로 쓰인다.",
        "interp": false,
        "dropped": false,
-       "t": "Birch는 먼 북방에서 비롯해 온대륙에 퍼진 나무로, 가지를 많이 뻗어 여러 나라의 핵심 목재로 쓰인다."
+       "t": "자작나무는 먼 북방에서 비롯해 온대륙에 퍼진 나무로, 가지를 많이 뻗어 여러 나라의 핵심 목재로 쓰인다."
       },
       {
        "t_raw": "Pine은 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 'winter pine'이라는 별칭을 얻었고, Sandbearer Tree는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
        "interp": false,
        "dropped": false,
-       "t": "소나무는 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 '겨울 소나무'라는 별칭을 얻었고, Sandbearer Tree는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
+       "t": "소나무는 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 '겨울 소나무'라는 별칭을 얻었고, 모래버팀나무는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
        "polish": {
-        "from": "Pine은 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 'winter pine'이라는 별칭을 얻었고, Sandbearer Tree는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
-        "text": "소나무는 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 '겨울 소나무'라는 별칭을 얻었고, Sandbearer Tree는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
-        "by": "or-ds"
+        "from": "Pine은 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 'winter pine'이라는 별칭을 얻었고, 모래버팀나무는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
+        "text": "소나무는 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 '겨울 소나무'라는 별칭을 얻었고, 모래버팀나무는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
+        "by": "qwen"
        }
       },
       {
        "t_raw": "Qingce Bamboo는 곧게 뻗은 모습으로 청렴하고 굳센 군자를 상징하며, Sakura Tree는 꽃이 필 때 떠가는 분홍 구름 같아 Inazuma의 가장 아름다운 풍경 중 하나로 꼽힌다.",
        "interp": false,
        "dropped": false,
-       "t": "Qingce Bamboo는 곧게 뻗은 모습으로 청렴하고 굳센 군자를 상징하며, Sakura Tree는 꽃이 필 때 떠가는 분홍 구름 같아 이나즈마의 가장 아름다운 풍경 중 하나로 꼽힌다."
+       "t": "경책 대나무는 곧게 뻗은 모습으로 청렴하고 굳센 군자를 상징하며, 벚나무는 꽃이 필 때 떠가는 분홍 구름 같아 이나즈마의 가장 아름다운 풍경 중 하나로 꼽힌다."
       },
       {
        "t_raw": "Amur Maple의 붉은 잎은 늦가을의 상징으로 노래에 인용되고, Otogi Tree는 동요에서 '자연의 속삭임'으로 그려진 곁을 지켜 주는 나무다.",
        "interp": false,
        "dropped": false,
-       "t": "Amur Maple의 붉은 잎은 늦가을의 상징으로 노래에 인용되고, Otogi Tree는 동요에서 '자연의 속삭임'으로 그려진 곁을 지켜 주는 나무다."
+       "t": "아무르단풍나무의 붉은 잎은 늦가을의 상징으로 노래에 인용되고, 오토기나무는 동요에서 '자연의 속삭임'으로 그려진 곁을 지켜 주는 나무다."
       }
      ],
      "sources": [
@@ -1629,14 +1595,7 @@
       }
      ],
      "heading": "모험의 기교 — 시스템과 생활",
-     "latin_left": [
-      "Birch",
-      "Sandbearer Tree",
-      "Qingce Bamboo",
-      "Sakura Tree",
-      "Amur Maple",
-      "Otogi Tree"
-     ]
+     "latin_left": []
     },
     {
      "section": "모험의 기교 — 시스템과 생활",
@@ -1648,7 +1607,7 @@
        "t_raw": "물가에 물결이 일렁이면 그곳이 Fishing Point다.",
        "interp": false,
        "dropped": false,
-       "t": "물가에 물결이 일렁이면 그곳이 Fishing Point다."
+       "t": "물가에 물결이 일렁이면 그곳이 낚시터다."
       },
       {
        "t_raw": "물고기는 주변에 민감해서 너무 가까이 서거나 전투 행동을 하면 놀라 흩어지고, 다시 다가오는 데 한참 걸린다.",
@@ -1666,13 +1625,13 @@
        "t_raw": "Cast Rod를 눌러 조준하다 놓으면 미끼가 날아가는데, 너무 멀면 유인하는 힘이 크게 줄고 너무 가까우면 물고기가 달아난다.",
        "interp": false,
        "dropped": false,
-       "t": "Cast Rod를 눌러 조준하다 놓으면 미끼가 날아가는데, 너무 멀면 유인하는 힘이 크게 줄고 너무 가까우면 물고기가 달아난다."
+       "t": "낚싯대 던지기를 눌러 조준하다 놓으면 미끼가 날아가는데, 너무 멀면 유인하는 힘이 크게 줄고 너무 가까우면 물고기가 달아난다."
       },
       {
        "t_raw": "입질이 오면 Raise Hook으로 챙기고, 그 뒤에는 줄의 장력을 노란 Ideal Tension Zone 안에 두어야 낚시 진행도가 오른다.",
        "interp": false,
        "dropped": false,
-       "t": "입질이 오면 Raise Hook으로 챙기고, 그 뒤에는 줄의 장력을 노란 Ideal Tension Zone 안에 두어야 낚시 진행도가 오른다."
+       "t": "입질이 오면 낚싯대 올리기로 챙기고, 그 뒤에는 줄의 장력을 노란 적정 장력 구역 안에 두어야 낚시 진행도가 오른다."
       },
       {
        "t_raw": "잡은 물고기는 각지의 Fishing Association에서 여러 재료로 교환하거나 요리 재료로 쓸 수 있다.",
@@ -1732,12 +1691,7 @@
       }
      ],
      "heading": "모험의 기교 — 시스템과 생활",
-     "latin_left": [
-      "Fishing Point",
-      "Cast Rod",
-      "Raise Hook",
-      "Ideal Tension Zone"
-     ]
+     "latin_left": []
     },
     {
      "section": "모험의 기교 — 시스템과 생활",
@@ -1761,7 +1715,7 @@
        "t_raw": "NRE(Menu 30)는 회복 요리와 부활 요리를 하나씩 담아 두고 빠르게 꺼내 먹는 주머니로, 쓰러진 동료가 있으면 부활 요리가 우선이다.",
        "interp": false,
        "dropped": false,
-       "t": "NRE(Menu 30)는 회복 요리와 부활 요리를 하나씩 담아 두고 빠르게 꺼내 먹는 주머니로, 쓰러진 동료가 있으면 부활 요리가 우선이다."
+       "t": "NRE(메뉴 30)는 회복 요리와 부활 요리를 하나씩 담아 두고 빠르게 꺼내 먹는 주머니로, 쓰러진 동료가 있으면 부활 요리가 우선이다."
       },
       {
        "t_raw": "Portable Waypoint는 Teleport Waypoint를 본뜬 기구로 사용한 자리에 Waypoint를 세우지만, 7일이 지나면 사라지고 한 번에 하나만 둘 수 있으며 새로 놓으면 앞서 있던 것이 사라진다.",
@@ -1779,7 +1733,7 @@
        "t_raw": "Anemoculi는 Mondstadt 곳곳에 흩어져 있어 모아서 Statues of The Seven에 바치면 여러 보상을 받는다.",
        "interp": false,
        "dropped": false,
-       "t": "Anemoculi는 몬드 곳곳에 흩어져 있어 모아서 일곱신상에 바치면 여러 보상을 받는다."
+       "t": "바람의 신의 눈은 몬드 곳곳에 흩어져 있어 모아서 일곱신상에 바치면 여러 보상을 받는다."
       }
      ],
      "sources": [
@@ -1835,9 +1789,7 @@
      "heading": "모험의 기교 — 시스템과 생활",
      "latin_left": [
       "HP",
-      "NRE",
-      "Menu",
-      "Anemoculi"
+      "NRE"
      ]
     },
     {
@@ -1862,7 +1814,7 @@
        "t_raw": "Snowstorms나 수영 같은 행동은 Sheer Cold 축적을 더 빨리 만들므로, 준비 없이 이런 날씨를 만나면 곤란해진다.",
        "interp": false,
        "dropped": false,
-       "t": "Snowstorms나 수영 같은 행동은 혹한 축적을 더 빨리 만들므로, 준비 없이 이런 날씨를 만나면 곤란해진다."
+       "t": "눈보라나 수영 같은 행동은 혹한 축적을 더 빨리 만들므로, 준비 없이 이런 날씨를 만나면 곤란해진다."
       },
       {
        "t_raw": "모닥불과 열원은 Sheer Cold를 줄여 주며, 그 효과를 덜어 주는 특별한 물건도 있다.",
@@ -1907,8 +1859,7 @@
      ],
      "heading": "대지의 이병과 대응 — 드래곤 스파인과 이나즈마",
      "latin_left": [
-      "HP",
-      "Snowstorms"
+      "HP"
      ]
     },
     {
@@ -2589,7 +2540,7 @@
        "t_raw": "Crash Course에서는 주변에 물이 있으면 적이 젖은(Wet) 상태가 될 수 있다는 점과, Cryo 스킬로 물이나 Hydro 적, 젖은 적을 얼려서 우위를 점할 수 있다는 반응의 기초가 다뤄진다.",
        "interp": false,
        "dropped": false,
-       "t": "기사의 현장학습에서는 주변에 물이 있으면 적이 젖은(Wet) 상태가 될 수 있다는 점과, 얼음 스킬로 물이나 물 적, 젖은 적을 얼려서 우위를 점할 수 있다는 반응의 기초가 다뤄진다."
+       "t": "기사의 현장학습에서는 주변에 물이 있으면 적이 젖은(젖음) 상태가 될 수 있다는 점과, 얼음 스킬로 물이나 물 적, 젖은 적을 얼려서 우위를 점할 수 있다는 반응의 기초가 다뤄진다."
       },
       {
        "t_raw": "방 안 중앙의 파란 돌인 Hydro Amber를 부수면 비가 내려 범위 안의 모든 것이 젖는다는 장치도 등장해, 환경 자체가 원소 반응의 재료가 됨을 보여준다.",
@@ -2647,9 +2598,7 @@
       }
      ],
      "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
-     "latin_left": [
-      "Wet"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
@@ -2786,7 +2735,7 @@
        "t_raw": "Unexpected Encounter에서는 Elemental Sight로 주변 존재의 원소 속성을 살피는 법이 반복 학습되고, Anemo 발자국을 남긴 Green Fellow를 추적하는 미션으로 이어진다.",
        "interp": false,
        "dropped": false,
-       "t": "예상치 못한 만남에서는 원소 시야로 주변 존재의 원소 속성을 살피는 법이 반복 학습되고, 바람 발자국을 남긴 Green Fellow를 추적하는 미션으로 이어진다."
+       "t": "예상치 못한 만남에서는 원소 시야로 주변 존재의 원소 속성을 살피는 법이 반복 학습되고, 바람 발자국을 남긴 초록 녀석을 추적하는 미션으로 이어진다."
       },
       {
        "t_raw": "Venti's New Plan에서는 시간대를 빠르게 넘기는 법, 즉 Paimon Menu에서 시간 메뉴를 열고 바늘을 원하는 시각으로 옮긴 뒤 확인하는 조작이 안내된다.",
@@ -2799,7 +2748,7 @@
        "interp": false,
        "dropped": false,
        "repaired": true,
-       "t": "시간을 빠르게 진행하려면 페이몬 메뉴를 열고 Time Menu에서 원하는 시각으로 손을 옮긴 뒤 Confirm을 누르면 된다."
+       "t": "시간을 빠르게 진행하려면 페이몬 메뉴를 열고 시간 메뉴에서 원하는 시각으로 손을 옮긴 뒤 확인을 누르면 된다."
       }
      ],
      "sources": [
@@ -2845,11 +2794,7 @@
       }
      ],
      "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
-     "latin_left": [
-      "Green Fellow",
-      "Time Menu",
-      "Confirm"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
@@ -2986,7 +2931,7 @@
        "interp": false,
        "dropped": false,
        "repaired": true,
-       "t": "Switch Element에서는 리월의 일곱신상에서 바위와 공명해 원소를 바위로 바꾸고 바위 원소전투 스킬과 원소폭발을 얻는 법을 배운다."
+       "t": "원소 전환에서는 리월의 일곱신상에서 바위와 공명해 원소를 바위로 바꾸고 바위 원소전투 스킬과 원소폭발을 얻는 법을 배운다."
       },
       {
        "t_raw": "Liyue의 Statue of The Seven에서 Geo에 공명해 원소를 Geo로 바꾸고 Geo의 원소 스킬과 원소 폭발을 얻은 뒤, Mondstadt의 Statue of The Seven으로 돌아가 Anemo에 다시 공명해 Anemo 능력을 되찾는 과정이 안내된다.",
@@ -2999,7 +2944,7 @@
        "interp": false,
        "dropped": false,
        "repaired": true,
-       "t": "Switch Element에서는 몬드의 일곱신상으로 돌아가 바람과 공명해 바람 능력을 다시 얻는 방법도 설명한다."
+       "t": "원소 전환에서는 몬드의 일곱신상으로 돌아가 바람과 공명해 바람 능력을 다시 얻는 방법도 설명한다."
       }
      ],
      "sources": [
@@ -3013,10 +2958,7 @@
       }
      ],
      "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
-     "latin_left": [
-      "Switch Element",
-      "Switch Element"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
@@ -3076,13 +3018,13 @@
        "interp": false,
        "dropped": false,
        "repaired": true,
-       "t": "수계 사냥개는 Rifthound Whelp의 성숙한 모습으로 보이지만, 자연스러운 생활 주기가 없고 성장 방식은 수수께끼로 남아 있다."
+       "t": "수계 사냥개는 수계 사냥개 새끼의 성숙한 모습으로 보이지만, 자연스러운 생활 주기가 없고 성장 방식은 수수께끼로 남아 있다."
       },
       {
        "t_raw": "Thundercraven Rifthound와 Rockfond Rifthound는 Rifthound Whelp의 성체 형태처럼 보이지만, 실제로는 자연적인 생애 주기가 없으며 그 성장은 미스터리로 남아 있다고 튜토리얼은 명시한다.",
        "interp": false,
        "dropped": false,
-       "t": "기뢰·수계(獸界) 사냥개와 기암·수계(獸界) 사냥개는 Rifthound Whelp의 성체 형태처럼 보이지만, 실제로는 자연적인 생애 주기가 없으며 그 성장은 미스터리로 남아 있다고 튜토리얼은 명시한다."
+       "t": "기뢰·수계(獸界) 사냥개와 기암·수계(獸界) 사냥개는 수계 사냥개 새끼의 성체 형태처럼 보이지만, 실제로는 자연적인 생애 주기가 없으며 그 성장은 미스터리로 남아 있다고 튜토리얼은 명시한다."
       },
       {
        "t_raw": "즉 \"어린 개체가 자라 성체가 된다\"는 당연한 그림이 의도적으로 무너져 있는 셈이다.",
@@ -3139,8 +3081,6 @@
      ],
      "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Rifthound Whelp",
-      "Rifthound Whelp",
       "HP"
      ]
     },
@@ -3333,7 +3273,7 @@
        "t_raw": "Thunder Manifestation이 \"천둥의 분노\"의 화신으로 태어난 원소 생명체라는 사실과 Tsurumi의 Thunderbird 전승을 나란히 놓고 보면, 이 섬의 미스터리들이 같은 실마리를 향하고 있을 가능성을 상상하게 된다.",
        "interp": true,
        "dropped": false,
-       "t": "뇌음의 권현이 \"천둥의 분노\"의 화신으로 태어난 원소 생명체라는 사실과 Tsurumi의 뇌조 전승을 나란히 놓고 보면, 이 섬의 미스터리들이 같은 실마리를 향하고 있을 가능성을 상상하게 된다."
+       "t": "뇌음의 권현이 \"천둥의 분노\"의 화신으로 태어난 원소 생명체라는 사실과 츠루미의 뇌조 전승을 나란히 놓고 보면, 이 섬의 미스터리들이 같은 실마리를 향하고 있을 가능성을 상상하게 된다."
       }
      ],
      "sources": [
@@ -3363,9 +3303,7 @@
       }
      ],
      "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Tsurumi"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
@@ -3383,7 +3321,7 @@
        "t_raw": "PC에서만 잠금 해제되는 System 항목 Show Cursor가 대표적인데, Left-Alt를 길게 눌러 커서를 표시하고 화면의 버튼을 클릭하는 방법을 알려준다.",
        "interp": false,
        "dropped": false,
-       "t": "PC에서만 잠금 해제되는 System 항목 커서 표시가 대표적인데, Left-Alt를 길게 눌러 커서를 표시하고 화면의 버튼을 클릭하는 방법을 알려준다."
+       "t": "PC에서만 잠금 해제되는 시스템 항목 커서 표시가 대표적인데, 왼쪽 알트를 길게 눌러 커서를 표시하고 화면의 버튼을 클릭하는 방법을 알려준다."
       },
       {
        "t_raw": "Archive 문서도 이를 예시로 들며, 모든 플레이어가 모든 항목을 해금할 수 있는 것은 아니라고 짚는다.",
@@ -3420,9 +3358,7 @@
      ],
      "heading": "여담",
      "latin_left": [
-      "PC",
-      "System",
-      "Left-Alt"
+      "PC"
      ]
     },
     {
@@ -3489,11 +3425,11 @@
        "t_raw": "Adventure 항목 NRE (Menu 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
        "interp": false,
        "dropped": false,
-       "t": "모험 항목 NRE (Menu 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
+       "t": "모험 항목 NRE (메뉴 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
        "polish": {
-        "from": "Adventure 항목 NRE (Menu 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
-        "text": "모험 항목 NRE (Menu 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
-        "by": "or-ds"
+        "from": "모험 항목 NRE (메뉴 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
+        "text": "모험 항목 NRE (메뉴 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
+        "by": "qwen"
        }
       },
       {
@@ -3507,7 +3443,7 @@
        "interp": true,
        "dropped": false,
        "repaired": true,
-       "t": "NRE (Menu 30)는 완성된 요리를 담아 두고 필요할 때 빠르게 섭취하며, 파티원이 쓰러져 있으면 Revival Dish를 우선 사용한다는 점에서, 이 연금술사의 재능이 모험 중 식사와 회복 쪽으로 향한 물건으로 보인다."
+       "t": "NRE (메뉴 30)는 완성된 요리를 담아 두고 필요할 때 빠르게 섭취하며, 파티원이 쓰러져 있으면 부활 요리를 우선 사용한다는 점에서, 이 연금술사의 재능이 모험 중 식사와 회복 쪽으로 향한 물건으로 보인다."
       }
      ],
      "sources": [
@@ -3531,12 +3467,9 @@
      "heading": "여담",
      "latin_left": [
       "NRE",
-      "Menu",
       "Nutrition",
       "Ready-to-Eat",
-      "NRE",
-      "Menu",
-      "Revival Dish"
+      "NRE"
      ]
     },
     {
@@ -3550,24 +3483,24 @@
        "interp": false,
        "dropped": false,
        "repaired": true,
-       "t": "Inazuman Cedar 항목의 본문에는 Amur Maple을 베면 공작나무 원목을 얻는다고 되어 있어, 이름과 설명이 살짝 어긋난다."
+       "t": "이나즈마 삼나무 항목의 본문에는 아무르 단풍나무를 베면 공작나무 원목을 얻는다고 되어 있어, 이름과 설명이 살짝 어긋난다."
       },
       {
        "t_raw": "벌목 튜토리얼의 Inazuman Cedar 항목은 나무를 베면 Aralia Wood를 얻는다고 안내하지만, 그 문장은 \"Cut an Amur Maple down\"이라고 적혀 있다.",
        "interp": false,
        "dropped": false,
-       "t": "벌목 튜토리얼의 Inazuman Cedar 항목은 나무를 베면 공작나무 원목을 얻는다고 안내하지만, 그 문장은 \"Amur Maple을 베세요\"라고 적혀 있다.",
+       "t": "벌목 튜토리얼의 이나즈마 삼나무 항목은 나무를 베면 공작나무 원목을 얻는다고 안내하지만, 그 문장은 \"아무르 단풍나무를 베어 낼 것\"이라고 적혀 있다.",
        "polish": {
-        "from": "벌목 튜토리얼의 Inazuman Cedar 항목은 나무를 베면 공작나무 원목을 얻는다고 안내하지만, 그 문장은 \"Cut an Amur Maple down\"이라고 적혀 있다.",
-        "text": "벌목 튜토리얼의 Inazuman Cedar 항목은 나무를 베면 공작나무 원목을 얻는다고 안내하지만, 그 문장은 \"Amur Maple을 베세요\"라고 적혀 있다.",
-        "by": "or-ds"
+        "from": "벌목 튜토리얼의 이나즈마 삼나무 항목은 나무를 베면 공작나무 원목을 얻는다고 안내하지만, 그 문장은 \"Cut an 아무르 단풍나무 down\"이라고 적혀 있다.",
+        "text": "벌목 튜토리얼의 이나즈마 삼나무 항목은 나무를 베면 공작나무 원목을 얻는다고 안내하지만, 그 문장은 \"아무르 단풍나무를 베어 낼 것\"이라고 적혀 있다.",
+        "by": "qwen"
        }
       },
       {
        "t_raw": "Inazuman Cedar를 소개하면서 Amur Maple을 베라고 하는 셈이라, 이름과 내용이 어긋난 대표적인 예다.",
        "interp": true,
        "dropped": false,
-       "t": "Inazuman Cedar를 소개하면서 Amur Maple을 베라고 하는 셈이라, 이름과 내용이 어긋난 대표적인 예다."
+       "t": "이나즈마 삼나무를 소개하면서 아무르 단풍나무를 베라고 하는 셈이라, 이름과 내용이 어긋난 대표적인 예다."
       }
      ],
      "sources": [
@@ -3589,14 +3522,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Inazuman Cedar",
-      "Amur Maple",
-      "Inazuman Cedar",
-      "Amur Maple",
-      "Inazuman Cedar",
-      "Amur Maple"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": []

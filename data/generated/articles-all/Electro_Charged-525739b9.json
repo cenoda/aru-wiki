@@ -48,13 +48,13 @@
        "t_raw": "이 피해는 주변의 Wet 적에게 전기로 튀고, 물에 Electro 공격이 닿으면 물 자체가 Electro-Charged가 되어 범위 안의 존재를 공격하며, Lisa는 물 근처에서 이 반응으로 우위를 점하라고 가르친다.",
        "interp": false,
        "dropped": false,
-       "t": "이 피해는 주변의 Wet 적에게 전기로 튀고, 물에 번개 공격이 닿으면 물 자체가 감전이 되어 범위 안의 존재를 공격하며, 리사는 물 근처에서 이 반응으로 우위를 점하라고 가르친다."
+       "t": "이 피해는 주변의 젖음 적에게 전기로 튀고, 물에 번개 공격이 닿으면 물 자체가 감전이 되어 범위 안의 존재를 공격하며, 리사는 물 근처에서 이 반응으로 우위를 점하라고 가르친다."
       },
       {
        "t_raw": "물가에서의 우위와 주변 Wet 대상으로의 연쇄를 함께 보면, Electro-Charged는 위치와 원소 상태를 같이 읽게 하는 전투 수단으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "물가에서의 우위와 주변 Wet 대상으로의 연쇄를 함께 보면, 감전은 위치와 원소 상태를 같이 읽게 하는 전투 수단으로 보인다."
+       "t": "물가에서의 우위와 주변 젖음 대상으로의 연쇄를 함께 보면, 감전은 위치와 원소 상태를 같이 읽게 하는 전투 수단으로 보인다."
       }
      ],
      "sources": [
@@ -108,10 +108,7 @@
       }
      ],
      "heading": null,
-     "latin_left": [
-      "Wet",
-      "Wet"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
@@ -169,19 +166,19 @@
        "t_raw": "Electro-Charged 상태인 상대는 근처의 Wet 상대에게 상당한 Electro 피해를 줄 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "감전 상태인 상대는 근처의 Wet 상대에게 상당한 번개 피해를 줄 수 있다."
+       "t": "감전 상태인 상대는 근처의 젖음 상대에게 상당한 번개 피해를 줄 수 있다."
       },
       {
        "t_raw": "Electro-Charged 피해가 들어갈 때에는 5m 안의 다른 Wet 상대 하나에게도 피해가 들어가며, 그 상대의 Electro RES가 고려된다.",
        "interp": false,
        "dropped": false,
-       "t": "감전 피해가 들어갈 때에는 5m 안의 다른 Wet 상대 하나에게도 피해가 들어가며, 그 상대의 Electro RES가 고려된다."
+       "t": "감전 피해가 들어갈 때에는 5m 안의 다른 물 원소 부착 상대 하나에게도 피해가 들어가며, 그 상대의 번개 원소 내성이 고려된다."
       },
       {
        "t_raw": "이 연쇄 피해로 **주변 Wet 대상**의 Wet 오라는 소모되지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "이 연쇄 피해로 **주변 Wet 대상**의 Wet 오라는 소모되지 않는다."
+       "t": "이 연쇄 피해로 **주변 물 원소 부착 대상**의 물 원소 부착 오라는 소모되지 않는다."
       }
      ],
      "sources": [
@@ -211,13 +208,7 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Wet",
-      "Wet",
-      "Electro RES",
-      "Wet",
-      "Wet"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체 — 오라와 틱",
@@ -375,7 +366,7 @@
        "t_raw": "반응 피해는 **5m 이내**의 다른 Wet 상대 하나에게도 번지며, 그 대상의 Electro RES를 고려하고 Wet 오라는 소모하지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "반응 피해는 **5m 이내**의 다른 Wet 상대 하나에게도 번지며, 그 대상의 Electro RES를 고려하고 Wet 오라는 소모하지 않는다."
+       "t": "반응 피해는 **5m 이내**의 다른 물 원소 부착 상대 하나에게도 번지며, 그 대상의 번개 원소 내성을 고려하고 물 원소 부착 오라는 소모하지 않는다."
       },
       {
        "t_raw": "주변 Hydro 상태 대상에게도 피해를 주지만 Electro 오라를 부여하지 않는다.",
@@ -387,7 +378,7 @@
        "t_raw": "Electro-Charged 상태의 적은 주변 Wet 상대에게 상당한 Electro DMG를 줄 수 있고, 전기가 간헐적으로 튀어 주변 Hydro 영향을 받은 적을 감전시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "감전 상태의 적은 주변 Wet 상대에게 상당한 번개 원소 피해를 줄 수 있고, 전기가 간헐적으로 튀어 주변 물 영향을 받은 적을 감전시킨다."
+       "t": "감전 상태의 적은 주변 물 원소 부착 상대에게 상당한 번개 원소 피해를 줄 수 있고, 전기가 간헐적으로 튀어 주변 물 영향을 받은 적을 감전시킨다."
       },
       {
        "t_raw": "Electro-Charged 상태의 적들 사이에서도 연쇄 번개가 일어날 수 있고, 원소 마스터리 보너스와 대상의 저항 배수는 기본 피해에 **곱연산으로 적용된다**.",
@@ -446,12 +437,7 @@
       }
      ],
      "heading": "전투와 피해",
-     "latin_left": [
-      "Wet",
-      "Electro RES",
-      "Wet",
-      "Wet"
-     ]
+     "latin_left": []
     },
     {
      "section": "물과 환경",
@@ -469,7 +455,7 @@
        "t_raw": "Electro 공격이 물에 닿으면 물이 짧은 시간 Electro-Charged가 되고, 그 물은 AoE 안의 모든 존재와 물에 들어간 대상에게 Electro DMG를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "번개 공격이 물에 닿으면 물이 짧은 시간 감전이 되고, 그 물은 AoE 안의 모든 존재와 물에 들어간 대상에게 번개 원소 피해를 준다."
+       "t": "번개 공격이 물에 닿으면 물이 짧은 시간 감전이 되고, 그 물은 효과 범위 안의 모든 존재와 물에 들어간 대상에게 번개 원소 피해를 준다."
       },
       {
        "t_raw": "이 물은 Pyro 공격에는 Overloaded, Cryo 공격에는 Superconduct를 일으킬 수 있다.",
@@ -487,7 +473,7 @@
        "t_raw": "물은 Electro-Charged를 일으키는 매개이자 AoE로 피해를 넓히는 환경인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "물은 감전을 일으키는 매개이자 AoE로 피해를 넓히는 환경인 셈이다."
+       "t": "물은 감전을 일으키는 매개이자 광역 공격으로 피해를 넓히는 환경인 셈이다."
       }
      ],
      "sources": [
@@ -533,10 +519,7 @@
       }
      ],
      "heading": "물과 환경",
-     "latin_left": [
-      "AoE",
-      "AoE"
-     ]
+     "latin_left": []
     },
     {
      "section": "물과 환경",
@@ -571,7 +554,7 @@
        "t_raw": "Yashiori Island에서는 비와 뇌우가 상시 Wet 환경을 만들고 Electro-Charged를 불러오는 조건이 되는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "야시오리섬에서는 비와 뇌우가 상시 Wet 환경을 만들고 감전을 불러오는 조건이 되는 셈이다."
+       "t": "야시오리섬에서는 비와 뇌우가 상시 물 원소 부착 환경을 만들고 감전을 불러오는 조건이 되는 셈이다."
       }
      ],
      "sources": [
@@ -585,9 +568,7 @@
       }
      ],
      "heading": "물과 환경",
-     "latin_left": [
-      "Wet"
-     ]
+     "latin_left": []
     },
     {
      "section": "변형 규칙과 장치",
@@ -599,7 +580,7 @@
        "t_raw": "Ley Line Disorder의 **Electro-Charged Buff**는 Electro-Charged 피해를 150% 증가시키고 AoE를 100% 늘린다.",
        "interp": false,
        "dropped": false,
-       "t": "지맥 이상의 **Electro-Charged Buff**는 감전 피해를 150% 증가시키고 AoE를 100% 늘린다."
+       "t": "지맥 이상의 **감전 강화 효과**는 감전 피해를 150% 증가시키고 효과 범위를 100% 늘린다."
       },
       {
        "t_raw": "Ley Line Disorder에서 Electro-Charged가 발동하면 **Energy Blast**가 일어나 주변 적에게 피해를 준다.",
@@ -611,7 +592,7 @@
        "t_raw": "Powerful Blast가 걸린 환경에서는 Electro-Charged 발동 시 강력한 폭발이 일어나 캐릭터가 피해를 받는다.",
        "interp": false,
        "dropped": false,
-       "t": "Powerful Blast가 걸린 환경에서는 감전 발동 시 강력한 폭발이 일어나 캐릭터가 피해를 받는다."
+       "t": "강력한 폭발이 걸린 환경에서는 감전 발동 시 강력한 폭발이 일어나 캐릭터가 피해를 받는다."
       },
       {
        "t_raw": "따라서 같은 Electro-Charged 발동도 어떤 Ley Line Disorder 아래에 있느냐에 따라 주변 적을 타격하는 폭발이 되기도 하고, 캐릭터를 위협하는 폭발이 되기도 하는 셈이다.",
@@ -647,11 +628,7 @@
       }
      ],
      "heading": "변형 규칙과 장치",
-     "latin_left": [
-      "Electro-Charged Buff",
-      "AoE",
-      "Powerful Blast"
-     ]
+     "latin_left": []
     },
     {
      "section": "변형 규칙과 장치",
@@ -780,7 +757,7 @@
        "t_raw": "날씨가 지속적인 Wet 상태를 만들고 뇌우가 Electro-Charged를 일으킬 수 있으므로, 이 섬에서는 기상 자체가 반응의 조건을 계속 공급하는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "날씨가 지속적인 Wet 상태를 만들고 뇌우가 감전을 일으킬 수 있으므로, 이 섬에서는 기상 자체가 반응의 조건을 계속 공급하는 셈이다."
+       "t": "날씨가 지속적인 물 원소 부착 상태를 만들고 뇌우가 감전을 일으킬 수 있으므로, 이 섬에서는 기상 자체가 반응의 조건을 계속 공급하는 셈이다."
       }
      ],
      "sources": [
@@ -794,9 +771,7 @@
       }
      ],
      "heading": "얽힌 인물과 장소",
-     "latin_left": [
-      "Wet"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
@@ -814,13 +789,13 @@
        "t_raw": "Electro-Charged에 걸린 적은 주변의 **Wet 적**에게 Electro 피해를 일으킬 수 있으며, 이때 상당한 Electro 피해가 들어간다.",
        "interp": false,
        "dropped": false,
-       "t": "감전에 걸린 적은 주변의 **Wet 적**에게 번개 피해를 일으킬 수 있으며, 이때 상당한 번개 피해가 들어간다."
+       "t": "감전에 걸린 적은 주변의 **물 원소 부착 적**에게 번개 피해를 일으킬 수 있으며, 이때 상당한 번개 피해가 들어간다."
       },
       {
        "t_raw": "Electro-Charged 피해가 발생하면 5m 안의 다른 Wet 적 하나에도 피해가 들어가며, 그 적의 Electro RES가 반영되고 Wet 오라는 소모되지 않는다.",
        "interp": false,
        "dropped": false,
-       "t": "감전 피해가 발생하면 5m 안의 다른 Wet 적 하나에도 피해가 들어가며, 그 적의 Electro RES가 반영되고 Wet 오라는 소모되지 않는다."
+       "t": "감전 피해가 발생하면 5m 안의 다른 물 원소 부착 적 하나에도 피해가 들어가며, 그 적의 번개 원소 내성이 반영되고 물 원소 부착 오라는 소모되지 않는다."
       },
       {
        "t_raw": "물가에서 Electro-Charged를 활용해 Lisa에게 이점을 주는 방식이 제시된다.",
@@ -869,12 +844,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Wet",
-      "Wet",
-      "Electro RES",
-      "Wet"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [

@@ -36,7 +36,7 @@
        "t_raw": "Ward는 적이 사용하는 보호성 버프로, 별도의 내구도 바로 표현되며 DMG를 막는 효과를 자주 준다.",
        "interp": false,
        "dropped": false,
-       "t": "결계는 적이 사용하는 보호성 버프로, 별도의 내구도 바로 표현되며 DMG를 막는 효과를 자주 준다."
+       "t": "결계는 적이 사용하는 보호성 버프로, 별도의 내구도 바로 표현되며 피해를 막는 효과를 자주 준다."
       },
       {
        "t_raw": "Void Ward는 Natlan의 적에게 고유한 메커니즘이다.",
@@ -85,9 +85,7 @@
       }
      ],
      "heading": null,
-     "latin_left": [
-      "DMG"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
@@ -309,13 +307,13 @@
        "t_raw": "그중 **DMG-Nullifying Wards**는 적을 DMG로부터 완전히 보호하며, Abyss Mages가 그 예다.",
        "interp": false,
        "dropped": false,
-       "t": "그중 **DMG-Nullifying Wards**는 적을 DMG로부터 완전히 보호하며, 심연 메이지가 그 예다."
+       "t": "그중 **피해 무효화 결계**는 적을 피해로부터 완전히 보호하며, 심연 메이지가 그 예다."
       },
       {
        "t_raw": "반면 **Penetrable Wards**는 완전히 보호하지는 않지만 RES 증가 같은 피해 감소 효과를 자주 동반하고, Fatui Skirmishers가 대표적이다.",
        "interp": false,
        "dropped": false,
-       "t": "반면 **Penetrable Wards**는 완전히 보호하지는 않지만 RES 증가 같은 피해 감소 효과를 자주 동반하고, 우인단 선발대가 대표적이다."
+       "t": "반면 **관통 가능 결계**는 완전히 보호하지는 않지만 내성 증가 같은 피해 감소 효과를 자주 동반하고, 우인단 선발대가 대표적이다."
       },
       {
        "t_raw": "두 유형을 맞세우면 전자는 피해를 막는 데, 후자는 피해를 줄이는 데 무게가 있는 것으로 보인다.",
@@ -351,12 +349,7 @@
       }
      ],
      "heading": "정체 — 결계의 분류",
-     "latin_left": [
-      "DMG-Nullifying Wards",
-      "DMG",
-      "Penetrable Wards",
-      "RES"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체 — Ward의 분류",
@@ -368,7 +361,7 @@
        "t_raw": "**Warded Objects**는 적이 소환하거나 사용하는 물체로, 보호 효과가 있을 수도 없을 수도 있다.",
        "interp": false,
        "dropped": false,
-       "t": "**Warded Objects**는 적이 소환하거나 사용하는 물체로, 보호 효과가 있을 수도 없을 수도 있다."
+       "t": "**결계 물체**는 적이 소환하거나 사용하는 물체로, 보호 효과가 있을 수도 없을 수도 있다."
       },
       {
        "t_raw": "원소 오라가 깃들어 그 오라가 소진되면 부서지며, 이를 만든 적과는 별개의 개체로 취급된다.",
@@ -380,7 +373,7 @@
        "t_raw": "그래서 Warded Objects는 이를 만든 적과 별개로, 원소 오라가 소진될 때까지 존재하는 대상으로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "그래서 Warded Objects는 이를 만든 적과 별개로, 원소 오라가 소진될 때까지 존재하는 대상으로 볼 수 있다."
+       "t": "그래서 결계 물체는 이를 만든 적과 별개로, 원소 오라가 소진될 때까지 존재하는 대상으로 볼 수 있다."
       }
      ],
      "sources": [
@@ -394,10 +387,7 @@
       }
      ],
      "heading": "정체 — 결계의 분류",
-     "latin_left": [
-      "Warded Objects",
-      "Warded Objects"
-     ]
+     "latin_left": []
     },
     {
      "section": "작동 방식 — 내구도와 원소 반응",
@@ -420,7 +410,7 @@
        "t_raw": "이때 Ward에 들어간 총 피해는 **Total Ward Damage** = Reaction Cost + Damage Cost + Poise Cost로 나타내어진다.",
        "interp": false,
        "dropped": false,
-       "t": "이때 결계에 들어간 총 피해는 **Total Ward Damage** = Reaction Cost + Damage Cost + Poise Cost로 나타내어진다."
+       "t": "이때 결계에 들어간 총 피해는 **총 결계 피해** = 반응 비용 + 피해 비용 + 경직 비용으로 나타내어진다."
       },
       {
        "t_raw": "대부분의 원소 Ward는 원소 반응으로 제거하는 것이 가장 효율적이며(드문 예외는 있지만), 반응은 일반 aura처럼 Elemental Ward의 gauge unit을 직접 소모한다.",
@@ -438,7 +428,7 @@
        "t_raw": "**Reaction Cost**는 반응을 일으킨 원소의 Elemental Gauge에 Reaction Coefficient를 곱해 구하고, 이 계수는 해당 공격이 Ward에 얼마나 영향을 주었는지를 보여주는 비율이다.",
        "interp": false,
        "dropped": false,
-       "t": "**Reaction Cost**는 반응을 일으킨 원소의 Elemental Gauge에 Reaction Coefficient를 곱해 구하고, 이 계수는 해당 공격이 결계에 얼마나 영향을 주었는지를 보여주는 비율이다."
+       "t": "**반응 비용**은 반응을 일으킨 원소의 원소 게이지에 반응 계수를 곱해 구하고, 이 계수는 해당 공격이 결계에 얼마나 영향을 주었는지를 보여주는 비율이다."
       },
       {
        "t_raw": "Reaction Cost가 공격의 원소 gauge와 Reaction Coefficient의 곱으로 정해지고, Reaction Coefficient가 공격이 Ward에 준 영향의 비율을 뜻하므로, 같은 원소량이라도 어떤 계수에 닿느냐에 따라 Ward를 깎는 효율이 달라진다고 볼 수 있다.",
@@ -503,15 +493,7 @@
       }
      ],
      "heading": "작동 방식 — 내구도와 원소 반응",
-     "latin_left": [
-      "Total Ward Damage",
-      "Reaction Cost",
-      "Damage Cost",
-      "Poise Cost",
-      "Reaction Cost",
-      "Elemental Gauge",
-      "Reaction Coefficient"
-     ]
+     "latin_left": []
     },
     {
      "section": "작동 방식 — 내구도와 원소 반응",
@@ -529,7 +511,7 @@
        "t_raw": "대부분의 반응은 Ward에 즉시 피해를 주지만, Electro-Charged는 Electro 및 Hydro Ward에, Burning은 Dendro 및 Wood Ward에 **0.4 gauge unit per second**의 DoT로 피해를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "대부분의 반응은 결계에 즉시 피해를 주지만, 감전은 번개 및 물 결계에, 연소는 풀 및 목재 결계에 **0.4 gauge unit per second**의 DoT로 피해를 준다."
+       "t": "대부분의 반응은 결계에 즉시 피해를 주지만, 감전은 번개 및 물 결계에, 연소는 풀 및 목재 결계에 **0.4 gauge unit per second**의 지속 피해로 피해를 준다."
       },
       {
        "t_raw": "두 DoT 반응의 속도는 반응을 일으키는 원소의 gauge unit을 얼마나 넣었든 일정하게 유지된다.",
@@ -546,7 +528,7 @@
        "t_raw": "Electro-Charged와 Burning은 즉시 피해가 아니라 0.4 gauge unit per second의 DoT로 Ward를 깎고, 그 속도가 trigger element gauge에 좌우되지 않으므로 이 두 반응에서는 원소량을 많이 넣는 것만으로 더 빨라지지는 않는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "감전과 연소는 즉시 피해가 아니라 0.4 gauge unit per second의 DoT로 결계를 깎고, 그 속도가 trigger element gauge에 좌우되지 않으므로 이 두 반응에서는 원소량을 많이 넣는 것만으로 더 빨라지지는 않는 셈이다."
+       "t": "감전과 연소는 즉시 피해가 아니라 0.4 gauge unit per second의 지속 피해로 결계를 깎고, 그 속도가 trigger element gauge에 좌우되지 않으므로 이 두 반응에서는 원소량을 많이 넣는 것만으로 더 빨라지지는 않는 셈이다."
       }
      ],
      "sources": [
@@ -584,10 +566,7 @@
       }
      ],
      "heading": "작동 방식 — 내구도와 원소 반응",
-     "latin_left": [
-      "DoT",
-      "DoT"
-     ]
+     "latin_left": []
     },
     {
      "section": "작동 방식 — 내구도와 원소 반응",
@@ -718,7 +697,7 @@
        "t_raw": "Cost Ratio는 Ward Element와 Strike Type·Attack Type에 따라 정해지며, 중첩되지 않고 가장 큰 피해를 주는 공격 유형 하나로 결정된다.",
        "interp": false,
        "dropped": false,
-       "t": "Cost Ratio는 결계 원소와 Strike Type·Attack Type에 따라 정해지며, 중첩되지 않고 가장 큰 피해를 주는 공격 유형 하나로 결정된다."
+       "t": "비용 비율은 결계 원소와 타격 유형·공격 유형에 따라 정해지며, 중첩되지 않고 가장 큰 피해를 주는 공격 유형 하나로 결정된다."
       },
       {
        "t_raw": "즉 Geo와 Frozen Ward에서는 poise damage가 Ward를 깎는 별도의 계산 경로로 쓰이는 셈이다.",
@@ -783,11 +762,7 @@
       }
      ],
      "heading": "작동 방식 — 피해와 등가 HP",
-     "latin_left": [
-      "Cost Ratio",
-      "Strike Type",
-      "Attack Type"
-     ]
+     "latin_left": []
     },
     {
      "section": "작동 방식 — 피해와 등가 HP",
@@ -821,7 +796,7 @@
        "t_raw": "Blunt에는 Claymore 캐릭터의 대부분 공격, 근접 캐릭터의 대부분 낙하 공격, 대부분의 Geo 공격, 그리고 Overloaded·Amber의 Baron Bunny·Klee의 폭탄·Yoimiya의 Aurous Blaze 같은 대부분의 폭발이 포함된다.",
        "interp": false,
        "dropped": false,
-       "t": "Blunt에는 양손검 캐릭터의 대부분 공격, 근접 캐릭터의 대부분 낙하 공격, 대부분의 바위 공격, 그리고 과부하·엠버의 토끼 백작·클레의 폭탄·요이미야의 황금빛 불꽃 같은 대부분의 폭발이 포함된다."
+       "t": "둔기에는 양손검 캐릭터의 대부분 공격, 근접 캐릭터의 대부분 낙하 공격, 대부분의 바위 공격, 그리고 과부하·엠버의 토끼 백작·클레의 폭탄·요이미야의 황금빛 불꽃 같은 대부분의 폭발이 포함된다."
       },
       {
        "t_raw": "같은 Claymore 공격이라도 Ward Element와 공격 유형에 따라 poise 피해의 효율이 크게 갈리는 셈이다.",
@@ -886,9 +861,7 @@
       }
      ],
      "heading": "작동 방식 — 피해와 등가 HP",
-     "latin_left": [
-      "Blunt"
-     ]
+     "latin_left": []
     },
     {
      "section": "작동 방식 — 피해와 등가 HP",
@@ -923,7 +896,7 @@
        "t_raw": "Damage Ratio가 0이면 그 원소 Ward는 피해로 부술 수 없다.",
        "interp": false,
        "dropped": false,
-       "t": "Damage Ratio가 0이면 그 원소 결계는 피해로 부술 수 없다."
+       "t": "피해 비율이 0이면 그 원소 결계는 피해로 부술 수 없다."
       }
      ],
      "sources": [
@@ -982,8 +955,7 @@
       "HP",
       "HP",
       "HP",
-      "HP",
-      "Damage Ratio"
+      "HP"
      ]
     },
     {
@@ -996,7 +968,7 @@
        "t_raw": "실제 공격 피해는 Equivalent HP와 Ward의 Elemental Gauge를 거쳐 Ward 피해로 환산된다.",
        "interp": false,
        "dropped": false,
-       "t": "실제 공격 피해는 Equivalent HP와 결계의 Elemental Gauge를 거쳐 결계 피해로 환산된다."
+       "t": "실제 공격 피해는 Equivalent HP와 결계의 원소 게이지를 거쳐 결계 피해로 환산된다."
       },
       {
        "t_raw": "이 환산에서 Melt와 Vaporize의 피해 증폭 배율은 원소 Ward에 작동하지 않는다.",
@@ -1061,8 +1033,7 @@
      ],
      "heading": "작동 방식 — 피해와 등가 HP",
      "latin_left": [
-      "Equivalent HP",
-      "Elemental Gauge"
+      "Equivalent HP"
      ]
     },
     {
@@ -1147,7 +1118,7 @@
        "t_raw": "특히 강력한 Mimesis의 Void Ward를 없애기 위해 Guthred가 도착했을 때, Bona는 Night Kingdom에서 외부인을 보고 놀랐다.",
        "interp": false,
        "dropped": false,
-       "t": "특히 강력한 Mimesis의 허계 방어막을 없애기 위해 구스레드가 도착했을 때, 파우나는 밤의 신의 나라에서 외부인을 보고 놀랐다."
+       "t": "특히 강력한 미메시스의 허계 방어막을 없애기 위해 구스레드가 도착했을 때, 파우나는 밤의 신의 나라에서 외부인을 보고 놀랐다."
       },
       {
        "t_raw": "그녀는 Night Kingdom이 보통 외부인을 받아들이지 않는다는 것을 알고 있었다.",
@@ -1179,9 +1150,7 @@
       }
      ],
      "heading": "작중 행적 — 나타의 허계 방어막",
-     "latin_left": [
-      "Mimesis"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Inazuma의 wards",
@@ -1199,7 +1168,7 @@
        "t_raw": "떠나기 전 Kaji는 Serpent's Head의 **Narukami Ward** 근처에서 **Waterlogged Note**를 발견했고, 그 기록은 Resistance가 Ward 파괴에 관여했음을 드러냈다.",
        "interp": false,
        "dropped": false,
-       "t": "떠나기 전 카지는 뱀 바위 동굴의 Head의 **나루카미 결계** 근처에서 **물에 젖은 쪽지**를 발견했고, 그 기록은 저항군이 결계 파괴에 관여했음을 드러냈다."
+       "t": "떠나기 전 카지는 뱀 바위 동굴의 머리의 **나루카미 결계** 근처에서 **물에 젖은 쪽지**를 발견했고, 그 기록은 저항군이 결계 파괴에 관여했음을 드러냈다."
       },
       {
        "t_raw": "그는 같은 곳에 Shogunate 병사들에게 Musoujin Gorge로 와서 자신을 찾으라는 쪽지를 남겼다.",
@@ -1244,9 +1213,7 @@
       }
      ],
      "heading": "작중 행적 — 이나즈마의 wards",
-     "latin_left": [
-      "Head"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Inazuma의 wards",
@@ -1327,10 +1294,10 @@
        "t_raw": "Loyal Servant는 누군가가 세심한 주의로 위험을 ward against할 수 있다면 무모하게 고통받을 필요가 없다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "Loyal Servant는 누군가가 세심한 주의로 위험을 막아낼 수 있다면 무모하게 고통받을 필요가 없다고 한다.",
+       "t": "충직한 하인은 누군가가 세심한 주의로 위험을 막아낼 수 있다면 무모하게 고통받을 필요가 없다고 한다.",
        "polish": {
-        "from": "Loyal Servant는 누군가가 세심한 주의로 위험을 ward against할 수 있다면 무모하게 고통받을 필요가 없다고 한다.",
-        "text": "Loyal Servant는 누군가가 세심한 주의로 위험을 막아낼 수 있다면 무모하게 고통받을 필요가 없다고 한다.",
+        "from": "충직한 하인은 누군가가 세심한 주의로 위험을 ward against할 수 있다면 무모하게 고통받을 필요가 없다고 한다.",
+        "text": "충직한 하인은 누군가가 세심한 주의로 위험을 막아낼 수 있다면 무모하게 고통받을 필요가 없다고 한다.",
         "by": "ds"
        }
       },
@@ -1394,9 +1361,7 @@
       }
      ],
      "heading": "결계라는 말의 용례",
-     "latin_left": [
-      "Loyal Servant"
-     ]
+     "latin_left": []
     },
     {
      "section": "Ward라는 말의 용례",
@@ -1419,10 +1384,10 @@
        "t_raw": "Ancient Stone Tablet의 기록은 나무 눈들이 용의 후계자를 ward off하기 위해 무자비하게 빛났다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "Ancient Stone Tablet의 기록은 나무 눈들이 용의 후계자를 막아내기 위해 무자비하게 빛났다고 전한다.",
+       "t": "고대 석판의 기록은 나무 눈들이 용의 후계자를 막아내기 위해 무자비하게 빛났다고 전한다.",
        "polish": {
-        "from": "Ancient Stone Tablet의 기록은 나무 눈들이 용의 후계자를 ward off하기 위해 무자비하게 빛났다고 전한다.",
-        "text": "Ancient Stone Tablet의 기록은 나무 눈들이 용의 후계자를 막아내기 위해 무자비하게 빛났다고 전한다.",
+        "from": "고대 석판의 기록은 나무 눈들이 용의 후계자를 ward off하기 위해 무자비하게 빛났다고 전한다.",
+        "text": "고대 석판의 기록은 나무 눈들이 용의 후계자를 막아내기 위해 무자비하게 빛났다고 전한다.",
         "by": "ds"
        }
       },
@@ -1450,9 +1415,7 @@
       }
      ],
      "heading": "결계라는 말의 용례",
-     "latin_left": [
-      "Ancient Stone Tablet"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
@@ -1476,10 +1439,10 @@
        "t_raw": "Seymour는 자신의 ward인 Ms. Mary-Ann을 찾아야 하므로 함께 가겠다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "시모어는 자신의 피보호자인 Ms. 마리안을 찾아야 하므로 함께 가겠다고 말한다.",
+       "t": "시모어는 자신의 피보호자인 미스. 마리안을 찾아야 하므로 함께 가겠다고 말한다.",
        "polish": {
-        "from": "시모어는 자신의 ward인 Ms. 마리안을 찾아야 하므로 함께 가겠다고 말한다.",
-        "text": "시모어는 자신의 피보호자인 Ms. 마리안을 찾아야 하므로 함께 가겠다고 말한다.",
+        "from": "시모어는 자신의 ward인 미스. 마리안을 찾아야 하므로 함께 가겠다고 말한다.",
+        "text": "시모어는 자신의 피보호자인 미스. 마리안을 찾아야 하므로 함께 가겠다고 말한다.",
         "by": "ds"
        }
       },
@@ -1514,9 +1477,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Ms"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [

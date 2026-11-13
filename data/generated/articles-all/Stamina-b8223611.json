@@ -36,7 +36,7 @@
        "t_raw": "Stamina는 Sprinting(또는 Dodging), Climbing, Swimming, Gliding, Charged Attacks 등 여러 전투와 이동 기술에 쓰이는 자원이자 속성이다.",
        "interp": false,
        "dropped": false,
-       "t": "스태미나는 Sprinting(또는 Dodging), Climbing, Swimming, Gliding, 강공격 등 여러 전투와 이동 기술에 쓰이는 자원이자 속성이다."
+       "t": "스태미나는 달리기(또는 회피), 등반, 수영, 활공, 강공격 등 여러 전투와 이동 기술에 쓰이는 자원이자 속성이다."
       },
       {
        "t_raw": "Stamina는 파티 전체가 공유하는 하나의 풀이라서, HP처럼 캐릭터별로 따로 추적되지 않으며, Stamina가 부족할 때 다른 캐릭터로 바꾸어도 아무 변화가 없다.",
@@ -86,11 +86,6 @@
      ],
      "heading": null,
      "latin_left": [
-      "Sprinting",
-      "Dodging",
-      "Climbing",
-      "Swimming",
-      "Gliding",
       "HP"
      ]
     },
@@ -104,7 +99,7 @@
        "t_raw": "**Stamina**는 Sprinting(또는 Dodging), Climbing, Swimming, Gliding, Charged Attacks처럼 다양한 전투 및 이동 기술에 쓰이는 자원이자 속성이다.",
        "interp": false,
        "dropped": false,
-       "t": "**스태미나**는 Sprinting(또는 Dodging), Climbing, Swimming, Gliding, 강공격처럼 다양한 전투 및 이동 기술에 쓰이는 자원이자 속성이다."
+       "t": "**스태미나**는 달리기(또는 회피), 등반, 수영, 활공, 강공격처럼 다양한 전투 및 이동 기술에 쓰이는 자원이자 속성이다."
       },
       {
        "t_raw": "이들 행동을 1.5초 동안 하지 않으면 Stamina가 **초당 25**씩 자연 회복된다.",
@@ -130,13 +125,7 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Sprinting",
-      "Dodging",
-      "Climbing",
-      "Swimming",
-      "Gliding"
-     ]
+     "latin_left": []
     },
     {
      "section": "개요",
@@ -160,7 +149,7 @@
        "t_raw": "기본 수치 100과 자연 회복이라는 큰 틀 위에서, Sprinting이나 Swimming 같은 행동에 Stamina를 쓰게 되는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "기본 수치 100과 자연 회복이라는 큰 틀 위에서, Sprinting이나 Swimming 같은 행동에 스태미나를 쓰게 되는 셈이다."
+       "t": "기본 수치 100과 자연 회복이라는 큰 틀 위에서, 달리기나 수영 같은 행동에 스태미나를 쓰게 되는 셈이다."
       }
      ],
      "sources": [
@@ -190,10 +179,7 @@
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Sprinting",
-      "Swimming"
-     ]
+     "latin_left": []
     },
     {
      "section": "게이지와 공유 구조",
@@ -295,7 +281,7 @@
        "t_raw": "한 Statue를 Level 10까지 올리면 총 70의 추가 Stamina를 얻는다.",
        "interp": false,
        "dropped": false,
-       "t": "한 Statue를 Level 10까지 올리면 총 70의 추가 스태미나를 얻는다."
+       "t": "한 신상을 레벨 10까지 올리면 총 70의 추가 스태미나를 얻는다."
       }
      ],
      "sources": [
@@ -317,10 +303,7 @@
       }
      ],
      "heading": "최대 스태미나와 일곱신상",
-     "latin_left": [
-      "Statue",
-      "Level"
-     ]
+     "latin_left": []
     },
     {
      "section": "최대 Stamina와 Statue of The Seven",
@@ -338,13 +321,13 @@
        "t_raw": "도달 가능한 최대 Stamina는 240으로, 어느 두 국가의 Statue of The Seven에서 18회 업그레이드하거나 여섯 국가의 Statue에서 합계 19회 이상 업그레이드하면 달성할 수 있다.",
        "interp": false,
        "dropped": false,
-       "t": "도달 가능한 최대 스태미나는 240으로, 어느 두 국가의 일곱신상에서 18회 업그레이드하거나 여섯 국가의 Statue에서 합계 19회 이상 업그레이드하면 달성할 수 있다."
+       "t": "도달 가능한 최대 스태미나는 240으로, 어느 두 국가의 일곱신상에서 18회 업그레이드하거나 여섯 국가의 신상에서 합계 19회 이상 업그레이드하면 달성할 수 있다."
       },
       {
        "t_raw": "기본 100과 한 Statue의 추가분 70을 합친 170을 넘어서려면 여러 국가의 Statue 업그레이드가 합산되어야 하므로, **240**은 국가를 가로지른 누적 업그레이드의 결과로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "기본 100과 한 Statue의 추가분 70을 합친 170을 넘어서려면 여러 국가의 Statue 업그레이드가 합산되어야 하므로, **240**은 국가를 가로지른 누적 업그레이드의 결과로 보인다."
+       "t": "기본 100과 한 신상의 추가분 70을 합친 170을 넘어서려면 여러 국가의 신상 업그레이드가 합산되어야 하므로, **240**은 국가를 가로지른 누적 업그레이드의 결과로 보인다."
       }
      ],
      "sources": [
@@ -390,11 +373,7 @@
       }
      ],
      "heading": "최대 스태미나와 일곱신상",
-     "latin_left": [
-      "Statue",
-      "Statue",
-      "Statue"
-     ]
+     "latin_left": []
     },
     {
      "section": "행동별 소모량",
@@ -412,31 +391,31 @@
        "t_raw": "모든 캐릭터의 **Dash는 1회 이동당 18**, Sprinting은 초당 18을 소모한다.",
        "interp": false,
        "dropped": false,
-       "t": "모든 캐릭터의 **Dash는 1회 이동당 18**, Sprinting은 초당 18을 소모한다."
+       "t": "모든 캐릭터의 **대시는 1회 이동당 18**, 달리기는 초당 18을 소모한다."
       },
       {
        "t_raw": "Climbing은 정확한 수치가 알려지지 않았으나 시작하려면 최소 5 Stamina가 필요하고, Climb-Jump는 1회당 25를 쓴다.",
        "interp": false,
        "dropped": false,
-       "t": "Climbing은 정확한 수치가 알려지지 않았으나 시작하려면 최소 5 스태미나가 필요하고, 등반 점프는 1회당 25를 쓴다."
+       "t": "등반은 정확한 수치가 알려지지 않았으나 시작하려면 최소 5 스태미나가 필요하고, 등반 점프는 1회당 25를 쓴다."
       },
       {
        "t_raw": "**Swimming은 애니메이션 기반 동작당 4**이고, Swim Dash는 처음 2를 쓴 뒤 이동하는 동안 초당 10.2를 소모한다.",
        "interp": false,
        "dropped": false,
-       "t": "**Swimming은 애니메이션 기반 동작당 4**이고, 수영 중 대시는 처음 2를 쓴 뒤 이동하는 동안 초당 10.2를 소모한다."
+       "t": "**수영은 애니메이션 기반 동작당 4**이고, 수영 중 대시는 처음 2를 쓴 뒤 이동하는 동안 초당 10.2를 소모한다."
       },
       {
        "t_raw": "Gliding은 이동하는 동안 초당 3을 소모한다.",
        "interp": false,
        "dropped": false,
-       "t": "Gliding은 이동하는 동안 초당 3을 소모한다."
+       "t": "활공은 이동하는 동안 초당 3을 소모한다."
       },
       {
        "t_raw": "Sprinting이 초당, Swimming이 애니메이션 기반 동작당 계산되는 것은 모든 행동의 소모가 같은 시간 기준으로 통일되어 있지 않다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "Sprinting이 초당, Swimming이 애니메이션 기반 동작당 계산되는 것은 모든 행동의 소모가 같은 시간 기준으로 통일되어 있지 않다고 볼 수 있다."
+       "t": "달리기가 초당, 수영이 애니메이션 기반 동작당 계산되는 것은 모든 행동의 소모가 같은 시간 기준으로 통일되어 있지 않다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -490,15 +469,7 @@
       }
      ],
      "heading": "행동별 소모량",
-     "latin_left": [
-      "Dash",
-      "Sprinting",
-      "Climbing",
-      "Swimming",
-      "Gliding",
-      "Sprinting",
-      "Swimming"
-     ]
+     "latin_left": []
     },
     {
      "section": "행동별 소모량",
@@ -762,7 +733,7 @@
        "t_raw": "Kaeya의 Hidden Strength는 Sprinting, Amber의 Gliding Champion은 Gliding에서 조건부 감소를 제공한다.",
        "interp": false,
        "dropped": false,
-       "t": "케이아의 숨겨진 실력은 Sprinting, 엠버의 비행 챔피언은 Gliding에서 조건부 감소를 제공한다."
+       "t": "케이아의 숨겨진 실력은 달리기, 엠버의 비행 챔피언은 활공에서 조건부 감소를 제공한다."
       }
      ],
      "sources": [
@@ -816,10 +787,7 @@
       }
      ],
      "heading": "소모 감소와 계산",
-     "latin_left": [
-      "Sprinting",
-      "Gliding"
-     ]
+     "latin_left": []
     },
     {
      "section": "소모 감소와 계산",
@@ -831,7 +799,7 @@
        "t_raw": "Ley Line Disorder의 Ranged Buff는 주변에 상대가 없을 때 Sprinting과 Alternative Sprint Stamina 소모를 50% 줄인다.",
        "interp": false,
        "dropped": false,
-       "t": "지맥 이상의 원거리 버프는 주변에 상대가 없을 때 Sprinting과 대시 대체 스태미나 소모를 50% 줄인다."
+       "t": "지맥 이상의 원거리 버프는 주변에 상대가 없을 때 달리기와 대시 대체 스태미나 소모를 50% 줄인다."
       },
       {
        "t_raw": "반대로 Condensed Ice는 Stamina 소모를 200% 또는 100% 늘린다.",
@@ -887,9 +855,7 @@
       }
      ],
      "heading": "소모 감소와 계산",
-     "latin_left": [
-      "Sprinting"
-     ]
+     "latin_left": []
     },
     {
      "section": "소모 감소와 계산",
@@ -901,7 +867,7 @@
        "t_raw": "Impetuous Winds의 15%, Wolvensprint의 20%, Delicious Barbatos Ratatouille의 25%가 겹치면 초당 18 Stamina인 Sprinting 소모가 초당 7.2 Stamina가 된다.",
        "interp": false,
        "dropped": false,
-       "t": "신속의 바람의 15%, 늑대의 질주의 20%, 맛있는 바르바토스 라따뚜이의 25%가 겹치면 초당 18 스태미나인 Sprinting 소모가 초당 7.2 스태미나가 된다."
+       "t": "신속의 바람의 15%, 늑대의 질주의 20%, 맛있는 바르바토스 라따뚜이의 25%가 겹치면 초당 18 스태미나인 달리기 소모가 초당 7.2 스태미나가 된다."
       },
       {
        "t_raw": "이는 18 × (1 - 0.15 - 0.20 - 0.25) = 7.2로 계산된 결과다.",
@@ -957,9 +923,7 @@
       }
      ],
      "heading": "소모 감소와 계산",
-     "latin_left": [
-      "Sprinting"
-     ]
+     "latin_left": []
     },
     {
      "section": "회복과 특수 환경",
@@ -977,7 +941,7 @@
        "t_raw": "Stamina Flower는 접근하면 **80 Stamina**를 회복시킨다.",
        "interp": false,
        "dropped": false,
-       "t": "Stamina Flower는 접근하면 **80 스태미나**를 회복시킨다."
+       "t": "스태미나 꽃은 접근하면 **80 스태미나**를 회복시킨다."
       },
       {
        "t_raw": "섭취와 접근이라는 방식은 달라도 정해진 회복량을 주는 수단이라는 점은 같다.",
@@ -1013,9 +977,7 @@
       }
      ],
      "heading": "회복과 특수 환경",
-     "latin_left": [
-      "Stamina Flower"
-     ]
+     "latin_left": []
     },
     {
      "section": "회복과 특수 환경",
@@ -1403,7 +1365,7 @@
        "t_raw": "Climbing의 소모량은 Unknown으로 남아 있지만, Climb을 시작하려면 **최소 5 Stamina**가 필요하다.",
        "interp": false,
        "dropped": false,
-       "t": "Climbing의 소모량은 Unknown으로 남아 있지만, Climb을 시작하려면 **최소 5 스태미나**가 필요하다."
+       "t": "등반의 소모량은 미확인으로 남아 있지만, 등반을 시작하려면 **최소 5 스태미나**가 필요하다."
       },
       {
        "t_raw": "Alternate Sprint는 처음에 10 Stamina를 쓰고, 움직이는 동안 매초 15 Stamina를 소모한다.",
@@ -1415,7 +1377,7 @@
        "t_raw": "즉 Alternate Sprint는 시작과 이동 중 소모를 모두 계산해야 하고, Climb은 시작 가능 여부에 최소 5 Stamina가 걸리는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "즉 대시 대체는 시작과 이동 중 소모를 모두 계산해야 하고, Climb은 시작 가능 여부에 최소 5 스태미나가 걸리는 셈이다."
+       "t": "즉 대시 대체는 시작과 이동 중 소모를 모두 계산해야 하고, 등반은 시작 가능 여부에 최소 5 스태미나가 걸리는 셈이다."
       }
      ],
      "sources": [
@@ -1437,12 +1399,7 @@
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Climbing",
-      "Unknown",
-      "Climb",
-      "Climb"
-     ]
+     "latin_left": []
     }
    ],
    "quote_boxes": [

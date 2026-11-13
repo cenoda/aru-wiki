@@ -64,6 +64,8 @@ const TOOLS = {
   'ds-pro': (prompt, schema) => rateDs('deepseek-v4-pro', prompt, schema),
   // GLM 5.3 (Zhipu) from the same provider and key, 4 slots (2026-11-12)
   glm: (prompt, schema) => rateDs('glm-5.3', prompt, schema),
+  // GLM 5.3 Flash (Zhipu), same provider and key, 4 slots (2026-11-13)
+  'glm-flash': (prompt, schema) => rateDs('glm-5.3-flash', prompt, schema),
   // DeepSeek V4.1 Flash through the OpenRouter Batch API, cheapest batch variant ($0.05/$0.15 per 1M, 2026-11-13); thinking on
   'or-ds': (prompt, schema) => orAsk('deepseek/deepseek-v4.1-flash-1017', prompt, schema),
   deepseek: (prompt, schema) => ollama('deepseek-v4.1-flash:cloud', prompt, schema),
@@ -460,7 +462,7 @@ export async function ask(tool, prompt, schema) {
 // ---------- several tools at once ----------
 // Which company each tool's model comes from: a writer's text is checked by another company's model.
 export const COMPANY = { ds: 'deepseek', 'ds-pro': 'deepseek', 'or-ds': 'deepseek', claude: 'anthropic', 'claude-sonnet': 'anthropic', 'sonnet-api': 'anthropic', haiku: 'anthropic', sonnet: 'anthropic', 'agy-sonnet': 'anthropic',
-  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg', deepseek: 'deepseek', mimo: 'xiaomi', kimi: 'moonshot', glm: 'zhipu' };
+  codex: 'openai', 'codex-medium': 'openai', ember: 'meta', spark: 'meta', flash: 'google', 'flash-medium': 'google', grok: 'xai', exaone: 'lg', deepseek: 'deepseek', mimo: 'xiaomi', kimi: 'moonshot', glm: 'zhipu', 'glm-flash': 'zhipu' };
 const slots = new Map();
 /** At most `limit` calls of one tool at a time (LLM_SLOTS="grok=6,flash-medium=4" overrides). */
 function slotOf(tool) {

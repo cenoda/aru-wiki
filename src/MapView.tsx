@@ -5,6 +5,7 @@ import {
 import '@xyflow/react/dist/style.css';
 import { memo, useEffect, useMemo, useState } from 'react';
 import { actGraph, displayName, type Quest, questById, quests, TYPE_LABEL, versionOrder, versions } from './data';
+import { BY_SA_3, Lic, LicensePageLink } from './license';
 import { type LayoutMode, layoutActs, NODE_H, NODE_W } from './layout';
 
 type ActData = { quest: Quest; dim: boolean; selected: boolean };
@@ -136,7 +137,7 @@ function Graph() {
             <p>{TYPE_LABEL[sel.quest_type]} · {sel.first_version}{sel.event ? ` · ${sel.event}` : ''}</p>
             <h3>소속 임무</h3>
             <ol>{(questsByAct.get(sel.id) ?? []).filter(visible).map((q) => <li key={q.id}>{displayName(q)}</li>)}</ol>
-            <p className="src"><a href={sel.sources[0].url} target="_blank" rel="noreferrer">Fandom 출처</a></p>
+            <p className="src"><a href={sel.sources[0].revision ? `${sel.sources[0].url}?oldid=${sel.sources[0].revision}` : sel.sources[0].url} target="_blank" rel="noreferrer">Fandom 출처</a> (<a href={`${sel.sources[0].url}?action=history`} target="_blank" rel="noreferrer">기여자</a>, <Lic l={BY_SA_3} />) · <LicensePageLink>안내</LicensePageLink></p>
           </aside>
         )}
       </main>

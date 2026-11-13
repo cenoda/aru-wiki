@@ -113,7 +113,7 @@ if (cmd === 'pull') {
   }
   const text = opt('text', r.text);
   const { hint, ts, ...pub } = r;
-  d.edits.push({ ...pub, v, text, ...(text !== r.text ? { edited_by_operator: true } : {}), submitted: ts?.slice(0, 10) ?? null, approved: today() });
+  d.edits.push({ ...pub, v, text, ...(text !== r.text ? { edited_by_operator: true } : {}), submitted: ts?.slice(0, 10) ?? null, approved: today(), approved_at: new Date().toISOString() });
   writeEdits(d);
   const place = attaches({ ...r, v });
   console.log(`실음: ${head(r)}${place === false ? '\n  ! 붙을 자리가 없어 화면에는 나오지 않습니다(stale로 확인).' : ''}\n커밋하고 배포하면 사이트에 나옵니다.`);

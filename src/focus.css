@@ -243,3 +243,11 @@
 .site .ver-stem path { fill: none; stroke: color-mix(in srgb, var(--gold) 55%, transparent); stroke-width: 1.5; }
 .site .stage.far .ver-stem { visibility: hidden; }
 .site header nav a.band { display: inline-flex; align-items: center; opacity: 1; text-decoration: none; white-space: nowrap; }
+/* where the panel's data came from: source pages, revisions, licences */
+.site .img-notice a { pointer-events: auto; color: inherit; }
+.site .info .q-credit { margin-top: 12px; padding-top: 8px; border-top: 1px solid var(--line); font-size: .72rem; line-height: 1.5; color: var(--muted); }
+.site .info .q-credit p, .site .info .q-credit-src { margin: 0 0 4px; }
+.site .info .q-credit a, .site .rec-src a { color: inherit; }
+.site .info .q-credit details { display: inline; }
+.site .info .q-credit summary { display: inline; cursor: pointer; text-decoration: underline dotted; margin-left: 4px; }
+.site .rec-src { margin: 3px 0 0; font-size: .72rem; line-height: 1.45; color: var(--muted); }

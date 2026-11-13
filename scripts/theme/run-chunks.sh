@@ -10,7 +10,7 @@ while :; do
   log=.cache/theme/chunk-$n.log
   echo "$(date -u +%FT%TZ) chunk $n start"
   node scripts/theme/articles.mjs all --latest --order units --skip-theme khaenriah --limit "${CHUNK:-400}" \
-    --writer kimi,ds,ds-pro,glm-flash,or-ds,glm --verify claude-sonnet,codex-medium,grok --polish ds,glm-flash,or-ds,kimi --jobs "${JOBS:-96}" > "$log" 2>&1
+    --writer "${WRITERS:-kimi,ds,ds-pro,glm-flash,or-ds,glm}" --verify claude-sonnet,codex-medium,grok --polish "${POLISH:-ds,glm-flash,or-ds,kimi}" --jobs "${JOBS:-96}" > "$log" 2>&1
   status=$?
   echo "$(date -u +%FT%TZ) chunk $n end: $(grep -c paragraphs "$log") written, $(grep -c '^error' "$log") errors"
   # between chunks the file holds Korean names and clean-up; mid-chunk saves do not (articles.mjs

@@ -70,6 +70,8 @@
   - 세로 화면은 시간 축을 별 수에 맞춰 늘린다(가로로 납작해지지 않게).
   - [ ] 1,400개쯤 되면 휴대폰에서 느려질 수 있다. 그때 다시 본다.
 - 모델(사용자 2026-11-12): 한도 있는 모델 먼저(Kimi), 프로바이더 DeepSeek Flash 12·Pro 8·GLM 4 동시, 생각 켬. 검증은 Sonnet→Codex→Grok(MiMo·Kimi는 검증이 약해 안 씀). 섹션도 빈 자리 모델이 쓴다.
+- 모델 바꿈(2026-11-13): Rate cloud(DeepSeek Flash 12·Pro 8·Qwen 3.8 Max 4·GLM 4·GLM Flash 4, 모두 32슬롯)는 **문서 쓰기에만** 쓴다. 이름 단계를 opencode 에이전트로 Rate cloud에서 돌렸더니 429(분당 요청 한도)와 Exa 무료 검색 한도에 막혀 묶음(이름 5개) 하나에 30분이 넘었다. 쓰기 순서는 kimi → ds → ds-pro → qwen → glm-flash → glm → or-ds(OpenRouter 배치, 돈 듦, 마지막). `run-chunks.sh`는 `WRITERS`·`POLISH`·`LLM_SLOTS`로 바꾼다.
+- 이름 단계(2026-11-13): **Parallel Task API**(lite, 이름 하나 약 0.005달러, 출처 URL과 근거 수준 official/namu-only/guess가 붙음)로 옮겼다. 정답을 아는 이름 4개 시험에서 3/4로 opencode+웹 검색 최고 기록과 같고, 10개에 3분(opencode는 18분). `scripts/theme/px-names.mjs`, 키는 `~/.config/aru/parallel.env`. 흔한 낱말(Gate, Siege)을 고유명으로 정하거나 영어 인용 조각을 번역하는 버릇이 있어 따로 거른다. Parallel은 고객 데이터로 학습하지 않는다(공식 FAQ). 소넷 서브에이전트는 웹 검색을 거의 하지 않고 추측해서(54묶음 1~2분) 안 쓴다.
 - [ ] 프로바이더 연결이 응답 없이 멈추면 호출 하나가 한 시간 넘게 묶인다(20분 제한 × 재시도). 스트림 무응답 감지가 필요하다.
 - [x] 남은 영어(2026-11-12): 전체 위키 259개 문서의 보이는 문단에 남은 영어 3,421번 → 475번. 이름 976개를 에이전트가 번역해 `ko-names-llm.json`에 넣고(덤프 후보 우선), 문장별 단계(`ko-llm.mjs tasks context`)가 이제 본문 문장(키는 문장의 t_raw)과 타임라인도 읽는다. 문장별 답 878건(Master 다시 고른 52건 포함)을 `ko-context.json`에 넣었다. Master는 문장마다(마스터·단장·스승님·도련님) 정해 남은 문장 74개 → 0개. Mr./Dr.는 마침표까지 바꾼다.
   - [ ] 남은 475번: 영어 인용 조각(Hail, Let the, May the Mighty God), 제목 조각(Ignition Teaser, Name Forged), Mt.(어순이 바뀌어 낱말만 못 바꿈), S-Rank·NPC·Lv(영어로 둠), Luna, Carp's Rest(금락정?) 등. 문장 전체 고쳐 쓰기(`tasks rewrite`)를 본문에도 붙이면 더 줄일 수 있다.

@@ -215,7 +215,7 @@ if (cmd === 'import' && step === 'names') {
       if (!['name', 'context', 'keep'].includes(r.kind)) { errors.push(`${where}: kind ${r.kind}`); continue; }
       if (r.kind === 'name' && (!r.ko || !hasHangul(r.ko) || hasLatin(r.ko))) { errors.push(`${where}: ko "${r.ko}"`); continue; }
       const kind = isContextDependent(r.name) ? 'context' : r.kind;
-      data[r.name] = { ...(kind === 'name' ? { ko: r.ko.trim() } : {}), kind, by: BY, date: today(), ...(r.note ? { note: r.note } : {}) };
+      data[r.name] = { ...(kind === 'name' ? { ko: r.ko.trim() } : {}), kind, by: r.by ?? BY, date: today(), ...(r.note ? { note: r.note } : {}) };
       asked.delete(r.name);
       added++;
     }

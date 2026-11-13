@@ -1,0 +1,3605 @@
+{
+ "node": "Tutorial",
+ "articles": [
+  {
+   "node": "Tutorial",
+   "from_version": "2.2",
+   "cutoff": "2021-11-23T00:00:00Z",
+   "input": [
+    {
+     "page": "Tutorial",
+     "url": "https://genshin-impact.fandom.com/wiki/Tutorial",
+     "revision": 443209
+    }
+   ],
+   "input_counts": {
+    "mentions": 1,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 40690,
+   "input_cut": false,
+   "input_hash": "d132d120d77b",
+   "writer": "glm,ds-pro,glm-flash,qwen,ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "trimmed",
+     "note": "Sentence 3 is tagged as fact. The English only shows that Amber's and Lisa's abilities are explained in some tutorials. It does not say these tutorials come from a first meeting with them, or that they are tied to the story's starting point.",
+     "quote": "Tutorials are unlocked by encountering or triggering its relevant entry. Unlocked tutorials can be revisited in the Archive.",
+     "sentences": [
+      {
+       "t_raw": "**Tutorial**은 Teyvat 곳곳에서 시스템과 전투, 탐험의 기본을 알려 주는 안내 항목으로, 해당 내용을 직접 마주치거나 발동했을 때 해금된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**튜토리얼**은 티바트 곳곳에서 시스템과 전투, 탐험의 기본을 알려 주는 안내 항목으로, 해당 내용을 직접 마주치거나 발동했을 때 해금된다."
+      },
+      {
+       "t_raw": "해금된 튜토리얼은 Archive에서 언제든 다시 볼 수 있고, 해금할 때마다 보상도 주어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "해금된 튜토리얼은 도감에서 언제든 다시 볼 수 있고, 해금할 때마다 보상도 주어진다."
+      },
+      {
+       "t_raw": "겉보기에는 조작 설명의 나열이지만 그 안을 들여다보면 원소 반응의 법칙부터 지역별 이병까지 망라하고 있어, 모험가에게는 세계의 법칙을 요약해 놓은 교과서라 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "겉보기에는 조작 설명의 나열이지만 그 안을 들여다보면 원소 반응의 법칙부터 지역별 이병까지 망라하고 있어, 모험가에게는 세계의 법칙을 요약해 놓은 교과서라 볼 수 있다."
+      },
+      {
+       "t_raw": "게다가 일부 튜토리얼은 Amber나 Lisa 같은 인물과의 첫 만남 속에서 배워 나가도록 되어 있어, 시스템 안내가 곧 이야기의 출발점과 맞물려 있다.",
+       "interp": false,
+       "dropped": true,
+       "t": "게다가 일부 튜토리얼은 엠버나 리사 같은 인물과의 첫 만남 속에서 배워 나가도록 되어 있어, 시스템 안내가 곧 이야기의 출발점과 맞물려 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > About Hydro",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Crystallize",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Subzero Climate...",
+       "paragraph": "A143",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Winds of the Past",
+       "paragraph": "A189",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Tutorials are unlocked by encountering or triggering its relevant entry. Unlocked tutorials can be revisited in the Archive.",
+     "sentences": [
+      {
+       "t_raw": "Tutorial은 모험 중 특정 항목과 마주치거나 그 항목을 발동시키는 순간 해금되는 안내 항목이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "튜토리얼은 모험 중 특정 항목과 마주치거나 그 항목을 발동시키는 순간 해금되는 안내 항목이다."
+      },
+      {
+       "t_raw": "한 번 해금된 Tutorial은 Archive에서 다시 펼쳐 볼 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 번 해금된 튜토리얼은 도감에서 다시 펼쳐 볼 수 있다."
+      },
+      {
+       "t_raw": "해금의 방아쇠가 '조우'와 '발동' 두 갈래로 제시된 점을 보면, 가만히 있는 것으로는 열리지 않고 무언가에 실제로 부딪쳐야 열리는 항목이라고 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "해금의 방아쇠가 '조우'와 '발동' 두 갈래로 제시된 점을 보면, 가만히 있는 것으로는 열리지 않고 무언가에 실제로 부딪쳐야 열리는 항목이라고 읽힌다."
+      },
+      {
+       "t_raw": "다시 읽을 수 있다는 것은 해금된 항목이 그 순간의 화면 안내로만 흩어지지 않고 기록으로 남는다는 뜻이기도 하다.",
+       "interp": true,
+       "dropped": false,
+       "t": "다시 읽을 수 있다는 것은 해금된 항목이 그 순간의 화면 안내로만 흩어지지 않고 기록으로 남는다는 뜻이기도 하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Each tutorial unlocked rewards.",
+     "sentences": [
+      {
+       "t_raw": "Tutorial이 하나 해금될 때마다 보상이 따른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "튜토리얼이 하나 해금될 때마다 보상이 따른다."
+      },
+      {
+       "t_raw": "보상이 붙는 지점은 항목을 손에 넣는 사건, 즉 해금 그 자체다.",
+       "interp": false,
+       "dropped": false,
+       "t": "보상이 붙는 지점은 항목을 손에 넣는 사건, 즉 해금 그 자체다."
+      },
+      {
+       "t_raw": "해금의 계기가 탐험 중의 조우라면, 낯선 적이나 장치를 처음 만나는 일 자체가 보상을 얻는 절차가 되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "해금의 계기가 탐험 중의 조우라면, 낯선 적이나 장치를 처음 만나는 일 자체가 보상을 얻는 절차가 되는 셈이다."
+      },
+      {
+       "t_raw": "열람이 Archive에서 이루어진다는 점과 겹쳐 보면, 해금은 보상을 받는 계기이고 Archive는 그 뒤에 남는 기록이라는 식으로 두 기능의 역할이 갈린다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "열람이 도감에서 이루어진다는 점과 겹쳐 보면, 해금은 보상을 받는 계기이고 도감은 그 뒤에 남는 기록이라는 식으로 두 기능의 역할이 갈린다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Uncategorized tutorials are not added to the Archive.",
+     "sentences": [
+      {
+       "t_raw": "다만 모든 Tutorial이 Archive에 모이는 것은 아니다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 모든 튜토리얼이 도감에 모이는 것은 아니다."
+      },
+      {
+       "t_raw": "Uncategorized로 분류된 Tutorial은 Archive에 추가되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미분류로 분류된 튜토리얼은 도감에 추가되지 않는다."
+      },
+      {
+       "t_raw": "해금된 Tutorial이 Archive에서 다시 읽힌다는 규칙과 나란히 놓으면, Archive의 목록은 세상에 존재하는 Tutorial 전체가 아니라 그중 수집된 것만의 목록인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "해금된 튜토리얼이 도감에서 다시 읽힌다는 규칙과 나란히 놓으면, 도감의 목록은 세상에 존재하는 튜토리얼 전체가 아니라 그중 수집된 것만의 목록인 셈이다."
+      },
+      {
+       "t_raw": "그래서 Archive의 항목 수는 Tutorial을 얼마나 만났는지를 보여주되, 만난 Tutorial 전부를 세는 수치는 아니라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 도감의 항목 수는 튜토리얼을 얼마나 만났는지를 보여주되, 만난 튜토리얼 전부를 세는 수치는 아니라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized",
+       "paragraph": "A187",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "the Tutorial entry \"Show Cursor\" can only be unlocked by playing on PC.",
+     "sentences": [
+      {
+       "t_raw": "Archive의 목록은 플레이어마다 같지 않다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감의 목록은 플레이어마다 같지 않다."
+      },
+      {
+       "t_raw": "모든 플레이어가 모든 항목을 해금할 수 있는 것은 아니며, Show Cursor 항목은 PC로 플레이해야만 해금된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모든 플레이어가 모든 항목을 해금할 수 있는 것은 아니며, 커서 표시 항목은 PC로 플레이해야만 해금된다."
+      },
+      {
+       "t_raw": "같은 메이저 버전 안에서 출시가 예상되는 항목은 출시 전에 Archive에 먼저 추가되기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "같은 메이저 버전 안에서 출시가 예상되는 항목은 출시 전에 도감에 먼저 추가되기도 한다."
+      },
+      {
+       "t_raw": "해금이 조우와 발동에 달려 있고 그 조건이 플랫폼에까지 매여 있으니, Archive를 어디까지 채웠는지는 플레이어가 무엇을 어떤 환경에서 플레이했는지를 드러내는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "해금이 조우와 발동에 달려 있고 그 조건이 플랫폼에까지 매여 있으니, 도감을 어디까지 채웠는지는 플레이어가 무엇을 어떤 환경에서 플레이했는지를 드러내는 셈이다."
+      },
+      {
+       "t_raw": "목록에 이름이 올라 있다고 해서 이미 해금할 수 있는 항목이라는 뜻은 아니며, 보상이 따르는 것은 어디까지나 실제 해금 시점이라는 점도 여기서 함께 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "목록에 이름이 올라 있다고 해서 이미 해금할 수 있는 항목이라는 뜻은 아니며, 보상이 따르는 것은 어디까지나 실제 해금 시점이라는 점도 여기서 함께 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 416668,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "PC"
+     ]
+    },
+    {
+     "section": "원소와 원소 반응",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Being hit by a Cryo attack leaves the victim affected by Cryo and decreases Movement SPD.",
+     "sentences": [
+      {
+       "t_raw": "Hydro 공격을 맞거나 물에 젖은 존재는 Hydro의 영향을 받게 되고, Hydro는 다른 원소를 만나면 흔히 원소 반응을 일으킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물 공격을 맞거나 물에 젖은 존재는 물의 영향을 받게 되고, 물은 다른 원소를 만나면 흔히 원소 반응을 일으킨다."
+      },
+      {
+       "t_raw": "Cryo 공격을 받은 대상은 Cryo의 영향을 받아 Movement SPD가 감소한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼음 공격을 받은 대상은 얼음의 영향을 받아 Movement SPD가 감소한다."
+      },
+      {
+       "t_raw": "원소 공격은 피해를 주는 것과 동시에 대상에게 해당 원소의 속성을 남기고, 그 속성이 다음 반응의 재료가 되는 구조인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "원소 공격은 피해를 주는 것과 동시에 대상에게 해당 원소의 속성을 남기고, 그 속성이 다음 반응의 재료가 되는 구조인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > About Hydro",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > About Cryo",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "원소와 원소 반응",
+     "latin_left": [
+      "Movement SPD"
+     ]
+    },
+    {
+     "section": "원소와 원소 반응",
+     "status": "accepted",
+     "note": "All sentences follow A7/A195; the interpretation is reasonable.",
+     "quote": "When Cryo meets Hydro, Frozen occurs. Frozen beings are rendered immobile, but also become rock-hard.",
+     "sentences": [
+      {
+       "t_raw": "Cryo가 Hydro를 만나면 Frozen이 일어난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼음이 물을 만나면 빙결이 일어난다."
+      },
+      {
+       "t_raw": "Frozen 상태가 된 존재는 이동할 수 없게 되지만, 그 대신 돌처럼 단단해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빙결 상태가 된 존재는 이동할 수 없게 되지만, 그 대신 돌처럼 단단해진다."
+      },
+      {
+       "t_raw": "Cryo 기술은 물, Hydro 상태의 상대, 젖은 상대를 얼릴 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼음 기술은 물, 물 상태의 상대, 젖은 상대를 얼릴 수 있다."
+      },
+      {
+       "t_raw": "젖은 대상과 Cryo가 만나는 조합이 Frozen의 핵심이므로, 물가에서 Hydro를 다루는 적을 상대로 노려볼 만한 반응인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "젖은 대상과 얼음이 만나는 조합이 빙결의 핵심이므로, 물가에서 물을 다루는 적을 상대로 노려볼 만한 반응인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Frozen",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Crash Course",
+       "paragraph": "A195",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "원소와 원소 반응",
+     "latin_left": []
+    },
+    {
+     "section": "원소와 원소 반응",
+     "status": "accepted",
+     "note": "Supported by A8, A9, A17 and A18; the interpretation is fair.",
+     "quote": "Vaporize itself does not inflict DMG. However, the or attack that triggers Vaporize deals increased DMG.",
+     "sentences": [
+      {
+       "t_raw": "Pyro가 Hydro를 만나면 Vaporize가 일어나고, Cryo가 Pyro를 만나면 Melt가 일어난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "불이 물을 만나면 증발이 일어나고, 얼음이 불을 만나면 융해가 일어난다."
+      },
+      {
+       "t_raw": "두 반응이 발생하면 관여한 원소의 효과는 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 반응이 발생하면 관여한 원소의 효과는 사라진다."
+      },
+      {
+       "t_raw": "반응 자체는 피해를 주지 않지만, 반응을 일으킨 공격의 피해량이 증가한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "반응 자체는 피해를 주지 않지만, 반응을 일으킨 공격의 피해량이 증가한다."
+      },
+      {
+       "t_raw": "원소의 효과를 지우는 대신 그 공격 한 번의 위력을 키우는 방식이라, Vaporize와 Melt는 같은 틀을 공유하는 반응으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "원소의 효과를 지우는 대신 그 공격 한 번의 위력을 키우는 방식이라, 증발과 융해는 같은 틀을 공유하는 반응으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Vaporize (I)",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Vaporize (II)",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Melt (I)",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Melt (II)",
+       "paragraph": "A18",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "원소와 원소 반응",
+     "latin_left": []
+    },
+    {
+     "section": "원소와 원소 반응",
+     "status": "accepted",
+     "note": "Supported by A10, A11 and A12; the interpretation is reasonable.",
+     "quote": "When Electro meets Hydro, Electro-Charged occurs. Electro-Charged continuously deals Electro DMG until it wears off.",
+     "sentences": [
+      {
+       "t_raw": "Electro가 Hydro를 만나면 Electro-Charged가 일어나, 효과가 사라질 때까지 계속 Electro DMG를 입힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "번개가 물을 만나면 감전이 일어나, 효과가 사라질 때까지 계속 번개 원소 피해를 입힌다."
+      },
+      {
+       "t_raw": "Electro-Charged 상태의 존재에게서는 전기가 간헐적으로 튀어, 근처의 Hydro 영향을 받은 상대를 감전시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감전 상태의 존재에게서는 전기가 간헐적으로 튀어, 근처의 물 영향을 받은 상대를 감전시킨다."
+      },
+      {
+       "t_raw": "Electro 공격은 물을 통전시킬 수 있고, 통전된 물은 범위 안의 모든 존재에게 Electro DMG를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "번개 공격은 물을 통전시킬 수 있고, 통전된 물은 범위 안의 모든 존재에게 번개 원소 피해를 준다."
+      },
+      {
+       "t_raw": "한 번 걸리면 주변으로 번지고 물이라는 지형까지 전도체로 바꾼다는 점에서, Electro-Charged는 대상과 자리의 배치를 함께 보게 만드는 반응인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 번 걸리면 주변으로 번지고 물이라는 지형까지 전도체로 바꾼다는 점에서, 감전은 대상과 자리의 배치를 함께 보게 만드는 반응인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Electro-Charged (I)",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Electro-Charged (II)",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Electro-Charged Water",
+       "paragraph": "A12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "원소와 원소 반응",
+     "latin_left": []
+    },
+    {
+     "section": "원소와 원소 반응",
+     "status": "accepted",
+     "note": "Supported by A13, A14, A15 and A192; the interpretation is reasonable.",
+     "quote": "When Pyro meets Electro, Overloaded occurs. The resulting explosion deals AoE Pyro DMG, and tears effortlessly through otherwise sturdy objects.",
+     "sentences": [
+      {
+       "t_raw": "Pyro가 Electro를 만나면 Overloaded가 일어나, 폭발이 AoE Pyro DMG를 입히고 단단한 물체도 힘들이지 않고 부순다.",
+       "interp": false,
+       "dropped": false,
+       "t": "불이 번개를 만나면 과부하가 일어나, 폭발이 AoE Pyro DMG를 입히고 단단한 물체도 힘들이지 않고 부순다."
+      },
+      {
+       "t_raw": "Superconduct는 AoE Cryo DMG를 입히고, 영향을 받은 존재의 Physical RES를 크게 감소시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "초전도는 AoE Cryo DMG를 입히고, 영향을 받은 존재의 Physical RES를 크게 감소시킨다."
+      },
+      {
+       "t_raw": "Burning은 효과가 사라질 때까지 계속 Pyro DMG를 입힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "연소는 효과가 사라질 때까지 계속 불 원소 피해를 입힌다."
+      },
+      {
+       "t_raw": "Dendro는 Pyro로 점화될 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "풀은 불로 점화될 수 있다."
+      },
+      {
+       "t_raw": "직접 피해를 주는 반응들 가운데서도 Overloaded는 물체를 부수고 Superconduct는 Physical RES를 깎아, 원소 반응이 피해량뿐 아니라 적의 방어를 무너뜨리는 쪽으로도 쓰인다는 점이 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "직접 피해를 주는 반응들 가운데서도 과부하는 물체를 부수고 초전도는 Physical RES를 깎아, 원소 반응이 피해량뿐 아니라 적의 방어를 무너뜨리는 쪽으로도 쓰인다는 점이 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Overloaded",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Superconduct",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Burning",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Winds of the Past",
+       "paragraph": "A192",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "원소와 원소 반응",
+     "latin_left": [
+      "AoE Pyro DMG",
+      "AoE Cryo DMG",
+      "Physical RES",
+      "Physical RES"
+     ]
+    },
+    {
+     "section": "원소와 원소 반응",
+     "status": "accepted",
+     "note": "Supported by A16, A19 and A20; the contrast in the interpretation is reasonable.",
+     "quote": "This type of elemental reaction can generate corresponding Elemental Shards and provide your character with various Elemental Shields!",
+     "sentences": [
+      {
+       "t_raw": "Geo가 Hydro/Pyro/Cryo/Electro와 접촉하면 Crystallize가 일어나, 해당 원소의 Elemental Shard를 만들고 캐릭터에게 Elemental Shield를 제공한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바위가 물/불/얼음/번개와 접촉하면 결정이 일어나, 해당 원소의 Elemental Shard를 만들고 캐릭터에게 Elemental Shield를 제공한다."
+      },
+      {
+       "t_raw": "이 방패로 전투에서 받는 DMG를 효과적으로 줄일 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 방패로 전투에서 받는 DMG를 효과적으로 줄일 수 있다."
+      },
+      {
+       "t_raw": "Swirl은 특정 원소와 만나면 일어나 원소 피해를 주고 존재에게 영향을 미치며, 추가 원소 반응을 만들어 내기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "확산은 특정 원소와 만나면 일어나 원소 피해를 주고 존재에게 영향을 미치며, 추가 원소 반응을 만들어 내기도 한다."
+      },
+      {
+       "t_raw": "피해를 키우거나 방어를 깎는 쪽으로 작동하는 반응들과 달리, Crystallize는 방패를 만들어 받는 피해를 줄이는 쪽으로 쓰인다는 점이 대조된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "피해를 키우거나 방어를 깎는 쪽으로 작동하는 반응들과 달리, 결정은 방패를 만들어 받는 피해를 줄이는 쪽으로 쓰인다는 점이 대조된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Swirl",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Crystallize",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Elements > Elemental Reaction: Crystallize",
+       "paragraph": "A20",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "원소와 원소 반응",
+     "latin_left": [
+      "Elemental Shard",
+      "Elemental Shield",
+      "DMG"
+     ]
+    },
+    {
+     "section": "전투와 적 공략",
+     "status": "accepted",
+     "note": "Supported by A110, A111, A21 and A22; the closing interpretation is acceptable.",
+     "quote": "Elemental shields absorb damage for a character. But sustain too much damage and the shield will fail.",
+     "sentences": [
+      {
+       "t_raw": "원소 방패는 캐릭터를 대신해 피해를 흡수하지만, 일정량 이상 맞으면 부서진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원소 방패는 캐릭터를 대신해 피해를 흡수하지만, 일정량 이상 맞으면 부서진다."
+      },
+      {
+       "t_raw": "단단한 물체를 부수는 데에는 큰검과 Overloaded 폭발이 좋은 예로 꼽힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "단단한 물체를 부수는 데에는 큰검과 과부하 폭발이 좋은 예로 꼽힌다."
+      },
+      {
+       "t_raw": "적도 같은 원리로 방패를 쓴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적도 같은 원리로 방패를 쓴다."
+      },
+      {
+       "t_raw": "Large Cryo Slime은 얼린 Cryo 방패를, Large Geo Slime은 단단한 Geo 방패를 두른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "거대 얼음 슬라임은 얼린 얼음 방패를, 거대 바위 슬라임은 단단한 바위 방패를 두른다."
+      },
+      {
+       "t_raw": "Cryo Slime의 방패는 Pyro처럼 반응하는 원소 공격으로, Geo Slime의 방패는 무거운 Geo 공격이나 큰검, 강한 폭발로 부수는 방법이 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼음 슬라임의 방패는 불처럼 반응하는 원소 공격으로, 바위 슬라임의 방패는 무거운 바위 공격이나 큰검, 강한 폭발로 부수는 방법이 제시된다."
+      },
+      {
+       "t_raw": "**반응 원소로 녹이거나 중량 공격으로 밀어붙이는 것**, 이 두 갈래가 방패 공략의 뼈대인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**반응 원소로 녹이거나 중량 공격으로 밀어붙이는 것**, 이 두 갈래가 방패 공략의 뼈대인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Large Cryo Slime",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Large Geo Slime",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > An Unstoppable Force!",
+       "paragraph": "A110",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Shields",
+       "paragraph": "A111",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투와 적 공략",
+     "latin_left": []
+    },
+    {
+     "section": "전투와 적 공략",
+     "status": "accepted",
+     "note": "All sentences follow the English.",
+     "quote": "Wards off attacks using a wooden shield, which is comprised of Dendro. Maybe there's a way to set it on fire.",
+     "sentences": [
+      {
+       "t_raw": "Wooden Shield Hilichurl Guard와 Wooden Shieldwall Mitachurl의 방패는 Dendro 성질의 나무라서, 불을 붙일 방법이 있을지 모른다고 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나무방패 츄츄와 나무방패 츄츄 폭도의 방패는 풀 성질의 나무라서, 불을 붙일 방법이 있을지 모른다고 적혀 있다."
+      },
+      {
+       "t_raw": "Rock Shield Hilichurl Guard와 Rock Shieldwall Mitachurl의 방패는 Geo 성질이라, 나무 방패와 달리 Geo 원소 공격이나 큰검, Overloaded 같은 무거운 공격으로 부순다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돌방패 츄츄와 돌방패 츄츄 폭도의 방패는 바위 성질이라, 나무 방패와 달리 바위 원소 공격이나 큰검, 과부하 같은 무거운 공격으로 부순다."
+      },
+      {
+       "t_raw": "Geo Samachurl은 돌기둥을 세워 몸을 가리지만, 이 기둥도 무거운 공격으로 부술 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바위 츄츄 샤먼은 돌기둥을 세워 몸을 가리지만, 이 기둥도 무거운 공격으로 부술 수 있다."
+      },
+      {
+       "t_raw": "Ice Shieldwall Mitachurl의 Cryo 방패는 Subzero Climate에서 재생되므로, Pyro 등 Cryo와 반응하는 원소로 밀어붙여야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼음방패 츄츄 폭도의 얼음 방패는 혹한 환경에서 재생되므로, 불 등 얼음과 반응하는 원소로 밀어붙여야 한다."
+      },
+      {
+       "t_raw": "**방패의 재질이 곧 공략법**이 되는 셈이라, 같은 Hilichurl 계열이라도 상대에 따라 쓸 공격이 갈린다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**방패의 재질이 곧 공략법**이 되는 셈이라, 같은 츄츄족 계열이라도 상대에 따라 쓸 공격이 갈린다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Wooden Shield Hilichurl Guard",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Wooden Shieldwall Mitachurl",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Rock Shield Hilichurl Guard",
+       "paragraph": "A32",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Rock Shieldwall Mitachurl",
+       "paragraph": "A33",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Geo Samachurl",
+       "paragraph": "A36",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Ice Shieldwall Mitachurl",
+       "paragraph": "A47",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투와 적 공략",
+     "latin_left": []
+    },
+    {
+     "section": "전투와 적 공략",
+     "status": "accepted",
+     "note": "Supported by A26-A28; the interpretation follows.",
+     "quote": "Uses a Pyro shield to protect itself. Perhaps you can break down its defenses with Electro or other Elemental Attacks that react with Pyro.",
+     "sentences": [
+      {
+       "t_raw": "Abyss Mage는 각자 속성 방패를 두르고 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연 메이지는 각자 속성 방패를 두르고 나온다."
+      },
+      {
+       "t_raw": "Pyro Abyss Mage는 Electro 등 Pyro와 반응하는 원소로, Cryo Abyss Mage는 Cryo와 반응하는 원소로, Hydro Abyss Mage는 Hydro와 반응하는 원소로 방패를 부술 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "화염의 심연 메이지는 번개 등 불과 반응하는 원소로, 얼음의 심연 메이지는 얼음과 반응하는 원소로, 물의 심연 메이지는 물과 반응하는 원소로 방패를 부술 수 있다."
+      },
+      {
+       "t_raw": "셋 다 '반응하는 원소'를 해법으로 내걸지만, 어떤 원소가 그 반응을 일으키는지는 방패마다 다른 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "셋 다 '반응하는 원소'를 해법으로 내걸지만, 어떤 원소가 그 반응을 일으키는지는 방패마다 다른 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Pyro Abyss Mage",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Cryo Abyss Mage",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Hydro Abyss Mage",
+       "paragraph": "A28",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투와 적 공략",
+     "latin_left": []
+    },
+    {
+     "section": "전투와 적 공략",
+     "status": "accepted",
+     "note": "Supported by A29, A31, A48, A112, A113.",
+     "quote": "The key weak spots are where the core is exposed on the head and the back. Try to hit one of them.",
+     "sentences": [
+      {
+       "t_raw": "Ruin Guard의 약점은 머리와 등에 드러난 코어다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유적 가디언의 약점은 머리와 등에 드러난 코어다."
+      },
+      {
+       "t_raw": "Ruin Hunter는 공중에 떠 있을 때 위험하지만, 그때 머리의 코어가 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "유적 헌터는 공중에 떠 있을 때 위험하지만, 그때 머리의 코어가 드러난다."
+      },
+      {
+       "t_raw": "Ruin Grader는 특정 공격을 하는 동안 머리와 발의 코어를 노출한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파멸의 유적 가디언은 특정 공격을 하는 동안 머리와 발의 코어를 노출한다."
+      },
+      {
+       "t_raw": "조준 사격은 약점을 정밀하게 때리는 데 적합하고, 약점을 맞으면 적이 잠시 마비되거나 균형을 잃는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조준 사격은 약점을 정밀하게 때리는 데 적합하고, 약점을 맞으면 적이 잠시 마비되거나 균형을 잃는다."
+      },
+      {
+       "t_raw": "**코어가 드러난 틈을 노리는 것**이 이들 기계의 공통된 공략법인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**코어가 드러난 틈을 노리는 것**이 이들 기계의 공통된 공략법인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Ruin Guard",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Ruin Hunter",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Ruin Grader",
+       "paragraph": "A48",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Attacking Weak Spots (I)",
+       "paragraph": "A112",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Attacking Weak Spots (II)",
+       "paragraph": "A113",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투와 적 공략",
+     "latin_left": []
+    },
+    {
+     "section": "전투와 적 공략",
+     "status": "accepted",
+     "note": "Supported; the interpretation is reasonable.",
+     "quote": "Attacks are only effective when its elemental core is exposed.",
+     "sentences": [
+      {
+       "t_raw": "Hypostasis 계열은 단단한 껍질로 몸을 감싸고, 원소 코어가 드러난 틈에만 타격이 통한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무상 계열은 단단한 껍질로 몸을 감싸고, 원소 코어가 드러난 틈에만 타격이 통한다."
+      },
+      {
+       "t_raw": "Electro Hypostasis는 원소적으로 불활성인 입방체 껍질을 쓰며, HP가 낮아지면 원소 에너지를 흡수하는 세 개의 수정 프리즘으로 갈라져 전부 부숴야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무상의 뇌전은 원소적으로 불활성인 입방체 껍질을 쓰며, HP가 낮아지면 원소 에너지를 흡수하는 세 개의 수정 프리즘으로 갈라져 전부 부숴야 한다."
+      },
+      {
+       "t_raw": "Hydro Hypostasis도 코어로 향하는 세 개의 물방울로 갈라지므로, 제때 부숴 부활을 막아야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무상의 물도 코어로 향하는 세 개의 물방울로 갈라지므로, 제때 부숴 부활을 막아야 한다."
+      },
+      {
+       "t_raw": "Anemo Hypostasis는 상승 기류로 구슬을 흡수해야 하고, Geo Hypostasis는 생성한 구조물을 부숴야 하며, Cryo Hypostasis는 강공격으로 Frostfruit을 되돌려 보내 재생을 끊어야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무상의 바람은 상승 기류로 구슬을 흡수해야 하고, 무상의 바위는 생성한 구조물을 부숴야 하며, 무상의 얼음은 강공격으로 Frostfruit을 되돌려 보내 재생을 끊어야 한다."
+      },
+      {
+       "t_raw": "Pyro Hypostasis는 Ignited 상태에서 코어가 드러나지 않고 HP를 회복하며, 올바른 원소 반응으로 Extinguished 상태를 만들어야 공격 기회가 생긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무상의 불은 Ignited 상태에서 코어가 드러나지 않고 HP를 회복하며, 올바른 원소 반응으로 Extinguished 상태를 만들어야 공격 기회가 생긴다."
+      },
+      {
+       "t_raw": "**재생과 회복을 끊는 방법이 개체마다 다르다**는 점이 다섯 항목에서 겹쳐 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**재생과 회복을 끊는 방법이 개체마다 다르다**는 점이 다섯 항목에서 겹쳐 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Electro Hypostasis",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Anemo Hypostasis",
+       "paragraph": "A34",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Geo Hypostasis",
+       "paragraph": "A35",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Cryo Hypostasis",
+       "paragraph": "A53",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Pyro Hypostasis",
+       "paragraph": "A55",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Hydro Hypostasis",
+       "paragraph": "A57",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투와 적 공략",
+     "latin_left": [
+      "HP",
+      "Frostfruit",
+      "Ignited",
+      "HP",
+      "Extinguished"
+     ]
+    },
+    {
+     "section": "전투와 적 공략",
+     "status": "accepted",
+     "note": "The English says the Anemoboxer heals weakened allies who lost buffs so they return to the fight. It never says the buffs are restored. The sentence adds that fact and states a conclusion about the group as certain.",
+     "quote": "They use restorative Anemo powers on weakened allied skirmishers who've lost their elemental buffs, allowing them to quickly jump back into the fray.",
+     "sentences": [
+      {
+       "t_raw": "Fatui Skirmisher들은 전투 중 어떤 원소 버프를 받는데, 그 원소와 반응하는 원소를 쓰면 버프를 걷어낼 수 있을지 모른다고 안내된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "우인단 선발대들은 전투 중 어떤 원소 버프를 받는데, 그 원소와 반응하는 원소를 쓰면 버프를 걷어낼 수 있을지 모른다고 안내된다."
+      },
+      {
+       "t_raw": "Cryogunner Legionnaire는 Cryo, Hydrogunner Legionnaire는 Hydro, Electrohammer Vanguard는 Electro, Geochanter Bracer는 Geo, Pyroslinger Bracer는 Pyro를 다룬다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼음총 중보병은 얼음, Hydrogunner Legionnaire는 물, Electrohammer Vanguard는 번개, Geochanter Bracer는 바위, Pyroslinger Bracer는 불을 다룬다."
+      },
+      {
+       "t_raw": "Anemoboxer Vanguard는 Anemo 에너지로 아군을 지원하며, 버프를 잃은 아군에게 회복의 Anemo 힘을 걸어 전장에 빠르게 복귀시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Anemoboxer Vanguard는 바람 에너지로 아군을 지원하며, 버프를 잃은 아군에게 회복의 바람 힘을 걸어 전장에 빠르게 복귀시킨다."
+      },
+      {
+       "t_raw": "**버프를 잃고 약해진 아군을 다시 전투에 뛰어들게 하는 Anemo 힘을 쓰는 Anemoboxer Vanguard**가 있는 한, 버프를 하나씩 벗겨내는 것만으로 적 무리가 쉽게 무너지지는 않을 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "**버프를 잃고 약해진 아군을 다시 전투에 뛰어들게 하는 바람 힘을 쓰는 Anemoboxer Vanguard**가 있는 한, 버프를 하나씩 벗겨내는 것만으로 적 무리가 쉽게 무너지지는 않을 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Fatui Skirmisher - Cryogunner Legionnaire",
+       "paragraph": "A37",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Fatui Skirmisher - Hydrogunner Legionnaire",
+       "paragraph": "A38",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Fatui Skirmisher - Electrohammer Vanguard",
+       "paragraph": "A39",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Fatui Skirmisher - Geochanter Bracer",
+       "paragraph": "A40",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Fatui Skirmisher - Anemoboxer Vanguard",
+       "paragraph": "A41",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Fatui Skirmisher - Pyroslinger Bracer",
+       "paragraph": "A42",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투와 적 공략",
+     "latin_left": [
+      "Hydrogunner Legionnaire",
+      "Electrohammer Vanguard",
+      "Geochanter Bracer",
+      "Pyroslinger Bracer",
+      "Anemoboxer Vanguard",
+      "Anemoboxer Vanguard"
+     ]
+    },
+    {
+     "section": "전투와 적 공략",
+     "status": "trimmed",
+     "note": "The English says Energy is replenished by absorbing orbs and particles, not that it fills on its own. It also never says Burst timing is necessarily disrupted. The sentence states a guess as certain.",
+     "quote": "Absorb Elemental Orbs and Elemental Particles to replenish energy.",
+     "sentences": [
+      {
+       "t_raw": "Elemental Burst는 캐릭터의 Energy를 전부 소모한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원소폭발은 캐릭터의 에너지를 전부 소모한다."
+      },
+      {
+       "t_raw": "Elemental Orb와 Elemental Particle을 흡수하면 Energy가 보충되고, 원소 피해를 주거나 적을 쓰러뜨리는 등의 행동으로도 Elemental Orb가 생성될 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Elemental Orb와 원소 입자를 흡수하면 에너지가 보충되고, 원소 피해를 주거나 적을 쓰러뜨리는 등의 행동으로도 Elemental Orb가 생성될 수 있다."
+      },
+      {
+       "t_raw": "Abyss Lector: Violet Lightning은 일부 공격으로 원소 에너지를 빼앗고, Abyss Herald: Wicked Torrents는 스킬이 재사용 대기 중일 때 공격을 맞으면 그 대기 시간을 늘린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "심연 봉독자: 심연 봉독자·자색 뇌전은 일부 공격으로 원소 에너지를 빼앗고, 심연 사도: Wicked Torrents는 스킬이 재사용 대기 중일 때 공격을 맞으면 그 대기 시간을 늘린다."
+      },
+      {
+       "t_raw": "**Energy는 싸우는 동안 스스로 차오르는 자원**이지만, 이를 빼앗는 적 앞에서는 Burst 타이밍이 흔들릴 수밖에 없다.",
+       "interp": true,
+       "dropped": true,
+       "t": "**에너지는 싸우는 동안 스스로 차오르는 자원**이지만, 이를 빼앗는 적 앞에서는 Burst 타이밍이 흔들릴 수밖에 없다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Abyss Herald: Wicked Torrents",
+       "paragraph": "A51",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Abyss Lector: Violet Lightning",
+       "paragraph": "A52",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Elemental Burst",
+       "paragraph": "A107",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Obtaining Energy",
+       "paragraph": "A109",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투와 적 공략",
+     "latin_left": [
+      "Elemental Orb",
+      "Elemental Orb",
+      "Wicked Torrents"
+     ]
+    },
+    {
+     "section": "모험의 기교 — 시스템과 생활",
+     "status": "accepted",
+     "note": "All sentences are supported by A66-A68, A75 and A76.",
+     "quote": "The World Level will increase along with your Adventure Rank, giving more bountiful treasures. But naturally, the opponents you encounter will also grow stronger...",
+     "sentences": [
+      {
+       "t_raw": "**World Level**은 Adventure Rank를 따라 오르고, 그때마다 더 풍성한 보물을 얻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**월드 레벨**은 모험 등급을 따라 오르고, 그때마다 더 풍성한 보물을 얻는다."
+      },
+      {
+       "t_raw": "대신 세계를 떠도는 적들도 함께 강해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대신 세계를 떠도는 적들도 함께 강해진다."
+      },
+      {
+       "t_raw": "보상과 난이도를 같은 손잡이에 묶어 둔 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "보상과 난이도를 같은 손잡이에 묶어 둔 셈이다."
+      },
+      {
+       "t_raw": "World Level이 늘 자동으로 오르는 것은 아니어서 Adventure Rank Ascension Quest를 완료해야 오르는 구간이 있고, 그 자세한 내용은 Adventurers' Guild에서 확인할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "월드 레벨이 늘 자동으로 오르는 것은 아니어서 Adventure Rank Ascension Quest를 완료해야 오르는 구간이 있고, 그 자세한 내용은 모험가 길드에서 확인할 수 있다."
+      },
+      {
+       "t_raw": "Adventure Rank가 최대에 이르면 이후 받는 Adventure EXP는 전부 Mora로 환산된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모험 등급이 최대에 이르면 이후 받는 모험 경력은 전부 모라로 환산된다."
+      },
+      {
+       "t_raw": "World Level 조정 기능이 열리면 World Level 상세 화면에서 단계를 1 낮추거나 원래대로 되돌릴 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "월드 레벨 조정 기능이 열리면 월드 레벨 상세 화면에서 단계를 1 낮추거나 원래대로 되돌릴 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > World Level Increase (I)",
+       "paragraph": "A66",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > World Level Increase (I)",
+       "paragraph": "A67",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > World Level Increase (II)",
+       "paragraph": "A68",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Adventure Rank",
+       "paragraph": "A75",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > World Level Adjustment",
+       "paragraph": "A76",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "모험의 기교 — 시스템과 생활",
+     "latin_left": [
+      "Adventure Rank Ascension Quest"
+     ]
+    },
+    {
+     "section": "모험의 기교 — 시스템과 생활",
+     "status": "accepted",
+     "note": "All supported by A69, A72-A74. The interpretation in sentence 3 follows reasonably.",
+     "quote": "Original Resin can be used to vitalize Petrified Trees found deep in Domains, as well as various Ley Line Blossoms found across Teyvat. Doing so will grant you valuable treasure.",
+     "sentences": [
+      {
+       "t_raw": "새 Domain이 열렸다는 안내는 그 안에 귀한 보물이 숨겨져 있음을 알려 주고, 세계 곳곳에 흩어진 Domain을 찾아다니는 일이 탐험의 몫이 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "새 비경이 열렸다는 안내는 그 안에 귀한 보물이 숨겨져 있음을 알려 주고, 세계 곳곳에 흩어진 비경을 찾아다니는 일이 탐험의 몫이 된다."
+      },
+      {
+       "t_raw": "Domain 깊은 곳의 Petrified Tree를 깨우는 데도, Teyvat 곳곳의 Ley Line Blossom에 쓰는 데도 **Original Resin**이 든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비경 깊은 곳의 석화된 나무를 깨우는 데도, 티바트 곳곳의 지맥의 꽃에 쓰는 데도 **퓨어 레진**이 든다."
+      },
+      {
+       "t_raw": "Ley Line Blossom은 누군가의 의지에 응답해 생겨난 Ley Line의 틈으로, 틈에 닿아 적을 모두 물리치면 꽃이 드러나고 그때 Original Resin을 지불하면 값진 보물을 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지맥의 꽃은 누군가의 의지에 응답해 생겨난 지맥의 틈으로, 틈에 닿아 적을 모두 물리치면 꽃이 드러나고 그때 퓨어 레진을 지불하면 값진 보물을 받는다."
+      },
+      {
+       "t_raw": "결국 Resin은 세계를 돌며 쓸 곳을 찾아야 비로소 값이 매겨지는 자원인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "결국 Resin은 세계를 돌며 쓸 곳을 찾아야 비로소 값이 매겨지는 자원인 셈이다."
+      },
+      {
+       "t_raw": "쓴 Original Resin은 시간이 지나면 한도까지 회복되고, Primogems를 쓰면 즉시 채울 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쓴 퓨어 레진은 시간이 지나면 한도까지 회복되고, 원석을 쓰면 즉시 채울 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Unlocking Domains",
+       "paragraph": "A69",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Original Resin",
+       "paragraph": "A72",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Original Resin",
+       "paragraph": "A73",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Ley Line Blossom",
+       "paragraph": "A74",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "모험의 기교 — 시스템과 생활",
+     "latin_left": [
+      "Resin"
+     ]
+    },
+    {
+     "section": "모험의 기교 — 시스템과 생활",
+     "status": "accepted",
+     "note": "All supported by A77-A85, including the salesman, Furnishing Set and pot entry/exit details.",
+     "quote": "Place furnishings to increase the Adeptal Energy Rank of your Serenitea Pot. As your Adeptal Energy Rank increases, Realm Currency will accumulate at a faster rate.",
+     "sentences": [
+      {
+       "t_raw": "**Serenitea Pot** 안의 주전자 정령과 대화하면 주전자에 관한 온갖 일을 배우고 관리할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**속세의 주전자** 안의 주전자 정령과 대화하면 주전자에 관한 온갖 일을 배우고 관리할 수 있다."
+      },
+      {
+       "t_raw": "Creation Screen에서는 온갖 물건을 만들 수 있고, 그 재료는 세계 곳곳에서 모아 온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Creation Screen에서는 온갖 물건을 만들 수 있고, 그 재료는 세계 곳곳에서 모아 온다."
+      },
+      {
+       "t_raw": "얻은 가구는 Place 기능으로 배치하며, 가구를 놓을수록 Adeptal Energy Rank가 올라 Realm Currency가 더 빠르게 쌓인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얻은 가구는 Place 기능으로 배치하며, 가구를 놓을수록 선력 등급이 올라 선계 화폐가 더 빠르게 쌓인다."
+      },
+      {
+       "t_raw": "집을 꾸미는 일이 곧 재화 수급으로 이어지는 구조인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "집을 꾸미는 일이 곧 재화 수급으로 이어지는 구조인 셈이다."
+      },
+      {
+       "t_raw": "모인 Realm Currency는 Realm Depot에서 물건을 사는 데 쓰이고, 때때로 Teapot Traveling Salesman이 찾아와 진귀한 보물을 들고 오기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모인 선계 화폐는 Realm Depot에서 물건을 사는 데 쓰이고, 때때로 여행하는 주전자 정령이 찾아와 진귀한 보물을 들고 오기도 한다."
+      },
+      {
+       "t_raw": "Furnishing Set 설계도를 얻으면 가구를 한꺼번에 배치할 수 있고 그 뒤에도 개별 가구를 손볼 수 있으며, 주전자를 소환해 안으로 들어갔다가 그 안에서 다시 주전자와 상호작용해 나오거나 지도의 Teleport Waypoint로 곧장 빠져나올 수도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Furnishing Set 설계도를 얻으면 가구를 한꺼번에 배치할 수 있고 그 뒤에도 개별 가구를 손볼 수 있으며, 주전자를 소환해 안으로 들어갔다가 그 안에서 다시 주전자와 상호작용해 나오거나 지도의 워프 포인트로 곧장 빠져나올 수도 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Serenitea Pot",
+       "paragraph": "A77",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Serenitea Pot",
+       "paragraph": "A78",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Serenitea Pot",
+       "paragraph": "A79",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Serenitea Pot",
+       "paragraph": "A80",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Serenitea Pot",
+       "paragraph": "A81",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Serenitea Pot",
+       "paragraph": "A82",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "모험의 기교 — 시스템과 생활",
+     "latin_left": [
+      "Creation Screen",
+      "Place",
+      "Realm Depot",
+      "Furnishing Set"
+     ]
+    },
+    {
+     "section": "모험의 기교 — 시스템과 생활",
+     "status": "accepted",
+     "note": "All tree descriptions match A86-A96.",
+     "quote": "A tall tree that originates in the far north but which has since spread all over Teyvat.",
+     "sentences": [
+      {
+       "t_raw": "벌목은 나무를 베어 그 나무의 목재를 얻는 일이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벌목은 나무를 베어 그 나무의 목재를 얻는 일이다."
+      },
+      {
+       "t_raw": "Birch는 먼 북방에서 비롯해 온대륙에 퍼진 나무로, 가지를 많이 뻗어 여러 나라의 핵심 목재로 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Birch는 먼 북방에서 비롯해 온대륙에 퍼진 나무로, 가지를 많이 뻗어 여러 나라의 핵심 목재로 쓰인다."
+      },
+      {
+       "t_raw": "Pine은 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 'winter pine'이라는 별칭을 얻었고, Sandbearer Tree는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소나무는 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 '겨울 소나무'라는 별칭을 얻었고, Sandbearer Tree는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
+       "polish": {
+        "from": "Pine은 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 'winter pine'이라는 별칭을 얻었고, Sandbearer Tree는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
+        "text": "소나무는 천 년을 살 수 있는 침엽수로 혹한을 견뎌 온 명성 덕에 '겨울 소나무'라는 별칭을 얻었고, Sandbearer Tree는 뿌리가 깊어 사막에서도 염해와 가뭄을 견뎌내는 나무로 여겨진다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Qingce Bamboo는 곧게 뻗은 모습으로 청렴하고 굳센 군자를 상징하며, Sakura Tree는 꽃이 필 때 떠가는 분홍 구름 같아 Inazuma의 가장 아름다운 풍경 중 하나로 꼽힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Qingce Bamboo는 곧게 뻗은 모습으로 청렴하고 굳센 군자를 상징하며, Sakura Tree는 꽃이 필 때 떠가는 분홍 구름 같아 이나즈마의 가장 아름다운 풍경 중 하나로 꼽힌다."
+      },
+      {
+       "t_raw": "Amur Maple의 붉은 잎은 늦가을의 상징으로 노래에 인용되고, Otogi Tree는 동요에서 '자연의 속삭임'으로 그려진 곁을 지켜 주는 나무다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Amur Maple의 붉은 잎은 늦가을의 상징으로 노래에 인용되고, Otogi Tree는 동요에서 '자연의 속삭임'으로 그려진 곁을 지켜 주는 나무다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Collecting Wood",
+       "paragraph": "A86",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Collecting Wood",
+       "paragraph": "A88",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Collecting Wood",
+       "paragraph": "A89",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Collecting Wood",
+       "paragraph": "A90",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Collecting Wood",
+       "paragraph": "A93",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Collecting Wood",
+       "paragraph": "A94",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "모험의 기교 — 시스템과 생활",
+     "latin_left": [
+      "Birch",
+      "Sandbearer Tree",
+      "Qingce Bamboo",
+      "Sakura Tree",
+      "Amur Maple",
+      "Otogi Tree"
+     ]
+    },
+    {
+     "section": "모험의 기교 — 시스템과 생활",
+     "status": "accepted",
+     "note": "All fishing statements match A97-A106.",
+     "quote": "If you should see ripples in a nearby water body, this means that it is a Fishing Point.",
+     "sentences": [
+      {
+       "t_raw": "물가에 물결이 일렁이면 그곳이 Fishing Point다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물가에 물결이 일렁이면 그곳이 Fishing Point다."
+      },
+      {
+       "t_raw": "물고기는 주변에 민감해서 너무 가까이 서거나 전투 행동을 하면 놀라 흩어지고, 다시 다가오는 데 한참 걸린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물고기는 주변에 민감해서 너무 가까이 서거나 전투 행동을 하면 놀라 흩어지고, 다시 다가오는 데 한참 걸린다."
+      },
+      {
+       "t_raw": "물길마다 사는 물고기가 달라 낚싯대와 미끼를 골라야 하고, 미끼 설계도는 Mondstadt Fishing Association에서 얻어 Crafting Bench에서 만든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물길마다 사는 물고기가 달라 낚싯대와 미끼를 골라야 하고, 미끼 설계도는 몬드 낚시 협회에서 얻어 합성대에서 만든다."
+      },
+      {
+       "t_raw": "Cast Rod를 눌러 조준하다 놓으면 미끼가 날아가는데, 너무 멀면 유인하는 힘이 크게 줄고 너무 가까우면 물고기가 달아난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Cast Rod를 눌러 조준하다 놓으면 미끼가 날아가는데, 너무 멀면 유인하는 힘이 크게 줄고 너무 가까우면 물고기가 달아난다."
+      },
+      {
+       "t_raw": "입질이 오면 Raise Hook으로 챙기고, 그 뒤에는 줄의 장력을 노란 Ideal Tension Zone 안에 두어야 낚시 진행도가 오른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "입질이 오면 Raise Hook으로 챙기고, 그 뒤에는 줄의 장력을 노란 Ideal Tension Zone 안에 두어야 낚시 진행도가 오른다."
+      },
+      {
+       "t_raw": "잡은 물고기는 각지의 Fishing Association에서 여러 재료로 교환하거나 요리 재료로 쓸 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잡은 물고기는 각지의 낚시 협회에서 여러 재료로 교환하거나 요리 재료로 쓸 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Fishing",
+       "paragraph": "A97",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Fishing",
+       "paragraph": "A98",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Fishing",
+       "paragraph": "A99",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Fishing",
+       "paragraph": "A100",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Fishing",
+       "paragraph": "A101",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Capacities of the Catch",
+       "paragraph": "A105",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "모험의 기교 — 시스템과 생활",
+     "latin_left": [
+      "Fishing Point",
+      "Cast Rod",
+      "Raise Hook",
+      "Ideal Tension Zone"
+     ]
+    },
+    {
+     "section": "모험의 기교 — 시스템과 생활",
+     "status": "accepted",
+     "note": "All supported by A116 and A125-A135.",
+     "quote": "You may store one type of Restorative and Revival Dish each within the pouch. Once equipped, you may swiftly ingest these foods.",
+     "sentences": [
+      {
+       "t_raw": "모험을 받쳐 주는 소지품도 여럿이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모험을 받쳐 주는 소지품도 여럿이다."
+      },
+      {
+       "t_raw": "HP가 크게 줄면 요리와 Statues of The Seven이 회복 수단이 되고, Seelie를 따라 끝까지 이끌어 주면 무언가 특별한 일이 일어날지도 모른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "HP가 크게 줄면 요리와 일곱신상이 회복 수단이 되고, 선령을 따라 끝까지 이끌어 주면 무언가 특별한 일이 일어날지도 모른다."
+      },
+      {
+       "t_raw": "NRE(Menu 30)는 회복 요리와 부활 요리를 하나씩 담아 두고 빠르게 꺼내 먹는 주머니로, 쓰러진 동료가 있으면 부활 요리가 우선이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "NRE(Menu 30)는 회복 요리와 부활 요리를 하나씩 담아 두고 빠르게 꺼내 먹는 주머니로, 쓰러진 동료가 있으면 부활 요리가 우선이다."
+      },
+      {
+       "t_raw": "Portable Waypoint는 Teleport Waypoint를 본뜬 기구로 사용한 자리에 Waypoint를 세우지만, 7일이 지나면 사라지고 한 번에 하나만 둘 수 있으며 새로 놓으면 앞서 있던 것이 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "포켓 워프 포인트는 워프 포인트를 본뜬 기구로 사용한 자리에 워프 포인트를 세우지만, 7일이 지나면 사라지고 한 번에 하나만 둘 수 있으며 새로 놓으면 앞서 있던 것이 사라진다."
+      },
+      {
+       "t_raw": "Wind Catcher는 Anemograna의 힘을 저장해 바람길을 만드는 장치이고, Parametric Transformer는 넣은 재료를 다른 재료로 바꾸되 원소 공격으로 에너지를 채워야 작동한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바람 잡는 병은 바람 씨앗의 힘을 저장해 바람길을 만드는 장치이고, 매개 변수 변환기는 넣은 재료를 다른 재료로 바꾸되 원소 공격으로 에너지를 채워야 작동한다."
+      },
+      {
+       "t_raw": "Anemoculi는 Mondstadt 곳곳에 흩어져 있어 모아서 Statues of The Seven에 바치면 여러 보상을 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Anemoculi는 몬드 곳곳에 흩어져 있어 모아서 일곱신상에 바치면 여러 보상을 받는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > HP Too Low",
+       "paragraph": "A116",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Mysterious Seelie",
+       "paragraph": "A125",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > NRE (Menu 30)",
+       "paragraph": "A126",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > NRE (Menu 30)",
+       "paragraph": "A127",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Portable Waypoint",
+       "paragraph": "A128",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Portable Waypoint",
+       "paragraph": "A129",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "모험의 기교 — 시스템과 생활",
+     "latin_left": [
+      "HP",
+      "NRE",
+      "Menu",
+      "Anemoculi"
+     ]
+    },
+    {
+     "section": "대지의 이병과 대응 — Dragonspine과 Inazuma",
+     "status": "accepted",
+     "note": "All sentences match the English.",
+     "quote": "In Subzero Climate, you will continuously accumulate Sheer Cold. When Sheer Cold reaches its limit, your character will start rapidly losing HP.",
+     "sentences": [
+      {
+       "t_raw": "Dragonspine의 Subzero Climate에서는 끊임없이 **Sheer Cold**가 쌓이고, 한계에 도달하면 캐릭터가 급격히 HP를 잃는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "드래곤 스파인의 혹한 환경에서는 끊임없이 **혹한**이 쌓이고, 한계에 도달하면 캐릭터가 급격히 HP를 잃는다."
+      },
+      {
+       "t_raw": "이 산의 독특한 Ley Line 구조와 기후 때문에 일부 도구는 사용하지 못할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 산의 독특한 지맥 구조와 기후 때문에 일부 도구는 사용하지 못할 수 있다."
+      },
+      {
+       "t_raw": "Snowstorms나 수영 같은 행동은 Sheer Cold 축적을 더 빨리 만들므로, 준비 없이 이런 날씨를 만나면 곤란해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Snowstorms나 수영 같은 행동은 혹한 축적을 더 빨리 만들므로, 준비 없이 이런 날씨를 만나면 곤란해진다."
+      },
+      {
+       "t_raw": "모닥불과 열원은 Sheer Cold를 줄여 주며, 그 효과를 덜어 주는 특별한 물건도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모닥불과 열원은 혹한을 줄여 주며, 그 효과를 덜어 주는 특별한 물건도 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Subzero Climate...",
+       "paragraph": "A143",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Snowstorms",
+       "paragraph": "A142",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Subzero Climate...",
+       "paragraph": "A145",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Subzero Climate...",
+       "paragraph": "A144",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "대지의 이병과 대응 — 드래곤 스파인과 이나즈마",
+     "latin_left": [
+      "HP",
+      "Snowstorms"
+     ]
+    },
+    {
+     "section": "대지의 이병과 대응 — Dragonspine과 Inazuma",
+     "status": "accepted",
+     "note": "All sentences match the English.",
+     "quote": "Dragonspine is home to mutated creatures called Warming Seelie. They continuously emit heat that diminishes Sheer Cold.",
+     "sentences": [
+      {
+       "t_raw": "Dragonspine에는 열을 계속 내뿜어 Sheer Cold를 덜어 주는 변이 생물 Warming Seelie가 산다.",
+       "interp": false,
+       "dropped": false,
+       "t": "드래곤 스파인에는 열을 계속 내뿜어 혹한을 덜어 주는 변이 생물 온기 선령이 산다."
+      },
+      {
+       "t_raw": "Scarlet Quartz라는 기묘한 보석은 깨뜨려 파편을 모으면 캐릭터가 따뜻한 에너지에 휩싸인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적색의 돌라는 기묘한 보석은 깨뜨려 파편을 모으면 캐릭터가 따뜻한 에너지에 휩싸인다."
+      },
+      {
+       "t_raw": "이 효과가 지속되는 동안에는 Sheer Cold가 쌓이지 않아 오래 몸을 녹일 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 효과가 지속되는 동안에는 혹한이 쌓이지 않아 오래 몸을 녹일 수 있다."
+      },
+      {
+       "t_raw": "다만 적을 공격하면 쌓인 에너지가 한꺼번에 방출되고, Teleport Waypoint나 Statue of The Seven으로 이동하면 Scarlet Quartz의 힘이 흩어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 적을 공격하면 쌓인 에너지가 한꺼번에 방출되고, 워프 포인트나 일곱신상으로 이동하면 적색의 돌의 힘이 흩어진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Warming Seelie",
+       "paragraph": "A136",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Scarlet Quartz",
+       "paragraph": "A137",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Scarlet Quartz",
+       "paragraph": "A138",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "대지의 이병과 대응 — 드래곤 스파인과 이나즈마",
+     "latin_left": []
+    },
+    {
+     "section": "대지의 이병과 대응 — Dragonspine과 Inazuma",
+     "status": "accepted",
+     "note": "The English never says Ancient Rime was designed as an obstacle solved with Dragonspine local resources. That is a claim about intent and about location that the text does not give.",
+     "quote": "Only with an attack affected by a Scarlet Quartz can you neutralize the mysterious energy within this kind of solid ice...",
+     "sentences": [
+      {
+       "t_raw": "Ancient Rime은 특별한 무늬로 덮인 얼음덩어리로, Pyro 공격으로는 녹일 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고대의 빙하는 특별한 무늬로 덮인 얼음덩어리로, 불 공격으로는 녹일 수 없다."
+      },
+      {
+       "t_raw": "Scarlet Quartz의 영향을 받은 공격만이 이 단단한 얼음 속의 신비한 에너지를 중화할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적색의 돌의 영향을 받은 공격만이 이 단단한 얼음 속의 신비한 에너지를 중화할 수 있다."
+      },
+      {
+       "t_raw": "Pyro가 통하지 않고 Scarlet Quartz의 영향을 받은 공격으로만 중화할 수 있다는 점은, Ancient Rime이 일반적인 불 공격만으로는 풀리지 않는 단단한 얼음이라는 걸 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "불이 통하지 않고 적색의 돌의 영향을 받은 공격으로만 중화할 수 있다는 점은, 고대의 빙하가 일반적인 불 공격만으로는 풀리지 않는 단단한 얼음이라는 걸 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Ancient Rime",
+       "paragraph": "A139",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Ancient Rime",
+       "paragraph": "A140",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Ancient Rime",
+       "paragraph": "A141",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "대지의 이병과 대응 — 드래곤 스파인과 이나즈마",
+     "latin_left": []
+    },
+    {
+     "section": "대지의 이병과 대응 — Dragonspine과 Inazuma",
+     "status": "accepted",
+     "note": "All sentences match the English.",
+     "quote": "Some regions in Inazuma are affected by high Electro concentration. While in these regions, you will gradually lose HP. This phenomenon is known as Balethunder.",
+     "sentences": [
+      {
+       "t_raw": "Inazuma의 일부 지역은 Electro 농도가 높아 머물수록 HP가 조금씩 줄어드는 Balethunder가 발생한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이나즈마의 일부 지역은 번개 농도가 높아 머물수록 HP가 조금씩 줄어드는 번개 재앙이 발생한다."
+      },
+      {
+       "t_raw": "이 해로운 현상에서 몸을 지키는 존재가 Thunder Sakura의 가지에서 태어나 Electro의 가호를 주는 **Electrograna**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 해로운 현상에서 몸을 지키는 존재가 뇌앵나무의 가지에서 태어나 번개의 가호를 주는 **번개 씨앗**이다."
+      },
+      {
+       "t_raw": "Electrograna를 지니면 Thunder Sphere로 빠르게 이동하고, Thunder Barrier를 지나며, Balethunder를 견딜 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "번개 씨앗을 지니면 뇌극으로 빠르게 이동하고, 번개의 결계를 지나며, 번개 재앙을 견딜 수 있다."
+      },
+      {
+       "t_raw": "한편 Thunderwood는 Balethunder를 상쇄하는 나무로, 이 신비한 나무 곁에 서면 피해를 피할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 벼락 나무는 번개 재앙을 상쇄하는 나무로, 이 신비한 나무 곁에 서면 피해를 피할 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Excessive Electro...",
+       "paragraph": "A152",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Electrograna...",
+       "paragraph": "A163",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Electrograna...",
+       "paragraph": "A164",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Lightning-Struck Tree",
+       "paragraph": "A172",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "대지의 이병과 대응 — 드래곤 스파인과 이나즈마",
+     "latin_left": [
+      "HP"
+     ]
+    },
+    {
+     "section": "대지의 이병과 대응 — Dragonspine과 Inazuma",
+     "status": "accepted",
+     "note": "All sentences match the English, and the hedged 'perhaps' in (4) is kept.",
+     "quote": "You can offer Electro Sigils to the Sacred Sakura at the Grand Narukami Shrine to enhance Electrogranum strength.",
+     "sentences": [
+      {
+       "t_raw": "Inazuma의 **Thunder Barrier**는 뚫리지 않는 방패라 불리는 장막이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이나즈마의 **번개의 결계**는 뚫리지 않는 방패라 불리는 장막이다."
+      },
+      {
+       "t_raw": "그러나 이유를 알 수 없게도 Electrograna의 인정을 받아 지니면 일부 장벽은 막힘없이 통과할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 이유를 알 수 없게도 번개 씨앗의 인정을 받아 지니면 일부 장벽은 막힘없이 통과할 수 있다."
+      },
+      {
+       "t_raw": "더 강한 장벽은 훨씬 강한 Electrograna가 필요하며, Grand Narukami Shrine의 Sacred Sakura에 Electro Sigils를 바치면 Electrogranum의 힘을 키울 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "더 강한 장벽은 훨씬 강한 번개 씨앗이 필요하며, 나루카미 다이샤의 신성한 벚나무에 번개 인장을 바치면 번개 씨앗의 힘을 키울 수 있다."
+      },
+      {
+       "t_raw": "강화된 Electrograna는 이어진 여행자의 전투를 돕기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강화된 번개 씨앗은 이어진 여행자의 전투를 돕기도 한다."
+      },
+      {
+       "t_raw": "또 이렇게 바치다 보면 언젠가는 Thunder Barrier로 막힌 모든 구역을 지나갈 수 있을지 모른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 이렇게 바치다 보면 언젠가는 번개의 결계로 막힌 모든 구역을 지나갈 수 있을지 모른다."
+      },
+      {
+       "t_raw": "어떤 Thunder Barrier는 Thunderstone을 품고 있는데, Electrograna로 이 돌을 일시적으로 억누르면 주위 장벽도 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어떤 번개의 결계는 번개석을 품고 있는데, 번개 씨앗으로 이 돌을 일시적으로 억누르면 주위 장벽도 사라진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Inexplicable Barrier...",
+       "paragraph": "A160",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Inexplicable Barrier...",
+       "paragraph": "A161",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Inexplicable Barrier...",
+       "paragraph": "A162",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Electrograna...",
+       "paragraph": "A165",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "대지의 이병과 대응 — 드래곤 스파인과 이나즈마",
+     "latin_left": []
+    },
+    {
+     "section": "대지의 이병과 대응 — Dragonspine과 Inazuma",
+     "status": "accepted",
+     "note": "All sentences match the English, and the interpretation in (0) is reasonable.",
+     "quote": "A giant and powerful cannon. Normally, it requires a special kind of ammunition to fire, but you can also charge it using Electro energy...",
+     "sentences": [
+      {
+       "t_raw": "Inazuma의 여러 장치는 Electro와 맞물려 움직인다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이나즈마의 여러 장치는 번개와 맞물려 움직인다고 볼 수 있다."
+      },
+      {
+       "t_raw": "Thunder Sphere는 Electro 힘을 쓰는 캐릭터나 Inazuma의 돌봄을 받는 캐릭터가 번개처럼 이동하는 데 쓰이며, Electrogranum을 지니거나 Electro에 닿은 존재는 구체 쪽으로 빠르게 이동할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "뇌극은 번개 힘을 쓰는 캐릭터나 이나즈마의 돌봄을 받는 캐릭터가 번개처럼 이동하는 데 쓰이며, 번개 씨앗을 지니거나 번개에 닿은 존재는 구체 쪽으로 빠르게 이동할 수 있다."
+      },
+      {
+       "t_raw": "거대한 대포 Kamuijima Cannon은 원래 특별한 탄약이 필요하지만, 곁에서 Electrogranum을 지니거나 Electro 상태가 되면 충전할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "거대한 대포 「카무이섬 붕괴포」는 원래 특별한 탄약이 필요하지만, 곁에서 번개 씨앗을 지니거나 번개 상태가 되면 충전할 수 있다."
+      },
+      {
+       "t_raw": "이 대포에는 겨냥 장치가 없으므로 발사 전에 높이와 방향을 맞춰야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 대포에는 겨냥 장치가 없으므로 발사 전에 높이와 방향을 맞춰야 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Thunder Sphere",
+       "paragraph": "A153",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Kamuijima Cannon",
+       "paragraph": "A154",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Kamuijima Cannon",
+       "paragraph": "A155",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Kamuijima Cannon",
+       "paragraph": "A156",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "대지의 이병과 대응 — 드래곤 스파인과 이나즈마",
+     "latin_left": []
+    },
+    {
+     "section": "대지의 이병과 대응 — Dragonspine과 Inazuma",
+     "status": "accepted",
+     "note": "All sentences match A157-A159.",
+     "quote": "On Yashiori Island, there are two kinds of mechanical devices that suppress Tatarigami power. They are the Sacred Stone Mound and the Thunderbearer Mirror.",
+     "sentences": [
+      {
+       "t_raw": "Yashiori Island에는 Tatarigami의 힘을 억누르는 Sacred Stone Mound와 Thunderbearer Mirror라는 기계 장치가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야시오리섬에는 재앙신의 힘을 억누르는 신성한 돌무더기와 뇌전을 짊어진 거울라는 기계 장치가 있다."
+      },
+      {
+       "t_raw": "Sacred Stone Mound는 공격받으면 특정 방향으로 전류를 쏘며, 이 전류는 Tatarigami의 의지가 만든 장막을 지울 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "신성한 돌무더기는 공격받으면 특정 방향으로 전류를 쏘며, 이 전류는 재앙신의 의지가 만든 장막을 지울 수 있다."
+      },
+      {
+       "t_raw": "Thunderbearer Mirror는 Sacred Stone Mound가 쏜 전류를 받아 다른 방향으로 다시 쏜다.",
+       "interp": false,
+       "dropped": false,
+       "t": "뇌전을 짊어진 거울은 신성한 돌무더기가 쏜 전류를 받아 다른 방향으로 다시 쏜다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Marvelous Installation...",
+       "paragraph": "A157",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Marvelous Installation...",
+       "paragraph": "A158",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Marvelous Installation...",
+       "paragraph": "A159",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "대지의 이병과 대응 — 드래곤 스파인과 이나즈마",
+     "latin_left": []
+    },
+    {
+     "section": "대지의 이병과 대응 — Dragonspine과 Inazuma",
+     "status": "accepted",
+     "note": "All sentences are supported by A182-A186.",
+     "quote": "These appear to be ritual stone piles set up by the Tsurumi Island civilization. You can activate them using Electro.",
+     "sentences": [
+      {
+       "t_raw": "Tsurumi Island에는 짙은 안개 속에서 길을 잃지 않게 하는 의식용 돌무더기 Stormstones가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "츠루미에는 짙은 안개 속에서 길을 잃지 않게 하는 의식용 돌무더기 「뇌석」이 있다."
+      },
+      {
+       "t_raw": "Electro로 활성화하면 근처 사람들이 안개에서 헤매지 않게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "번개로 활성화하면 근처 사람들이 안개에서 헤매지 않게 된다."
+      },
+      {
+       "t_raw": "바위에 새겨진 Ishine Script는 올바른 순서로 만지면 특별한 일이 생기며, 순서에 대한 단서는 대개 바위 주변에서 찾을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바위에 새겨진 「이시네 문자」는 올바른 순서로 만지면 특별한 일이 생기며, 순서에 대한 단서는 대개 바위 주변에서 찾을 수 있다."
+      },
+      {
+       "t_raw": "섬에서 볼 수 있는 독특한 석상은 불이 켜진 상태에서 feather를 쓰면 또 다른 반응이 일어날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "섬에서 볼 수 있는 독특한 석상은 불이 켜진 상태에서 깃털을 쓰면 또 다른 반응이 일어날 수 있다.",
+       "polish": {
+        "from": "섬에서 볼 수 있는 독특한 석상은 불이 켜진 상태에서 feather를 쓰면 또 다른 반응이 일어날 수 있다.",
+        "text": "섬에서 볼 수 있는 독특한 석상은 불이 켜진 상태에서 깃털을 쓰면 또 다른 반응이 일어날 수 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "섬 주민들은 Thunderbird가 한때 나무 위에 내려앉았기에 그 나무에 공물을 바쳐야 한다고 여기며, perch를 만지면 힘이 3개의 feather로 변해 날아가므로 흩어진 힘을 모아 공물을 마쳐야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "섬 주민들은 뇌조가 한때 나무 위에 내려앉았기에 그 나무에 공물을 바쳐야 한다고 여기며, 횃대를 만지면 힘이 3개의 깃털로 변해 날아가므로 흩어진 힘을 모아 공물을 마쳐야 한다.",
+       "polish": {
+        "from": "섬 주민들은 뇌조가 한때 나무 위에 내려앉았기에 그 나무에 공물을 바쳐야 한다고 여기며, perch를 만지면 힘이 3개의 feather로 변해 날아가므로 흩어진 힘을 모아 공물을 마쳐야 한다.",
+        "text": "섬 주민들은 뇌조가 한때 나무 위에 내려앉았기에 그 나무에 공물을 바쳐야 한다고 여기며, 횃대를 만지면 힘이 3개의 깃털로 변해 날아가므로 흩어진 힘을 모아 공물을 마쳐야 한다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Tsurumi Island's Stormstones...",
+       "paragraph": "A182",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Ishine Script",
+       "paragraph": "A184",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Mysterious Carvings",
+       "paragraph": "A183",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Tsurumi Island's \"Perches\"",
+       "paragraph": "A185",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Tsurumi Island's \"Perches\"",
+       "paragraph": "A186",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "대지의 이병과 대응 — 드래곤 스파인과 이나즈마",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "The English only gives the Wanderer's Trail steps: open the map and select a Teleport Waypoint. It does not say tutorials are learned within quest scenes rather than as system notices, and it does not say tutorials are placed wherever the player goes from the start.",
+     "quote": "1. Open the world map. 2. Select an unlocked Teleport Waypoint to teleport to that location.",
+     "sentences": [
+      {
+       "t_raw": "튜토리얼 가운데에는 Wanderer's Trail처럼 지도에서 이미 해금된 Teleport Waypoint를 선택해 그곳으로 이동하는 법을 알려 주는 것도 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "튜토리얼 가운데에는 방랑자의 발자취처럼 지도에서 이미 해금된 워프 포인트를 선택해 그곳으로 이동하는 법을 알려 주는 것도 있다."
+      },
+      {
+       "t_raw": "여행자의 첫 발자국에 해당하는 Wanderer's Trail에서는 세계 지도를 열고 잠금 해제된 Teleport Waypoint를 선택해 그곳으로 이동하는 법을 익힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자의 첫 발자국에 해당하는 방랑자의 발자취에서는 세계 지도를 열고 잠금 해제된 워프 포인트를 선택해 그곳으로 이동하는 법을 익힌다."
+      },
+      {
+       "t_raw": "Wanderer's Trail의 안내는 월드 지도를 열고, 해금된 Teleport Waypoint를 선택해 그 위치로 이동하는 두 단계로 되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "방랑자의 발자취의 안내는 월드 지도를 열고, 해금된 워프 포인트를 선택해 그 위치로 이동하는 두 단계로 되어 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Wanderer's Trail",
+       "paragraph": "A188",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "The English only covers Adventure EXP and Adventure Rank. It does not say this is Mondstadt's first quest, and it does not say the quest teaches how to move around the world. It also does not say the design makes players absorb things through quest flow instead of guide text.",
+     "quote": "More challenges and opportunities will also open up to you as your Adventure Rank increases.",
+     "sentences": [
+      {
+       "t_raw": "The Outlander Who Caught the Wind에서는 퀘스트 완료, 상자 찾기, Adventurer Handbook 조사, Ley Line Blossom 활성화 등으로 Adventure EXP를 얻어 Adventure Rank를 올릴 수 있다고 알려 준다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "바람 잡는 이방인에서는 퀘스트 완료, 상자 찾기, 모험 핸드북 조사, 지맥의 꽃 활성화 등으로 모험 경력을 얻어 모험 등급을 올릴 수 있다고 알려 준다."
+      },
+      {
+       "t_raw": "퀘스트 수행, 상자 찾기, 모험자 수첩의 조사, Ley Line Blossom 되살리기 등 다양한 활동으로 모험 EXP를 얻어 모험 랭크를 올릴 수 있음이 소개되고, 랭크가 오를수록 더 많은 도전과 기회가 열린다고 안내된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트 수행, 상자 찾기, 모험자 수첩의 조사, 지맥의 꽃 되살리기 등 다양한 활동으로 모험 경험치를 얻어 모험 랭크를 올릴 수 있음이 소개되고, 랭크가 오를수록 더 많은 도전과 기회가 열린다고 안내된다."
+      },
+      {
+       "t_raw": "Adventure Rank가 오르면 더 많은 도전과 기회가 열린다는 점도 함께 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "모험 등급이 오르면 더 많은 도전과 기회가 열린다는 점도 함께 설명한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > The Outlander Who Caught the Wind",
+       "paragraph": "A209",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > The Outlander Who Caught the Wind",
+       "paragraph": "A210",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "All sentences are supported by A189-A191.",
+     "quote": "While aiming, her arrows will accumulate charge. Once fully charged, the arrow will be imbued with Pyro.",
+     "sentences": [
+      {
+       "t_raw": "Amber와 함께하는 Winds of the Past에서는 원소의 눈에 띄는 성질들이 차례로 배워진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "엠버와 함께하는 지난날의 바람에서는 원소의 눈에 띄는 성질들이 차례로 배워진다."
+      },
+      {
+       "t_raw": "Amber는 조준 사격이 가능하고, 조준 중 화살에 차지가 쌓여 완전히 차지되면 화살에 Pyro가 서린다는 점, 그리고 Pyro 스킬로 불에 타는 물체를 점화할 수 있다는 점이 안내된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "엠버는 조준 사격이 가능하고, 조준 중 화살에 차지가 쌓여 완전히 차지되면 화살에 불이 서린다는 점, 그리고 불 스킬로 불에 타는 물체를 점화할 수 있다는 점이 안내된다."
+      },
+      {
+       "t_raw": "또 Elemental Sight로 물체의 원소 속성을 볼 수 있으며 각 원소에는 고유한 색이 있다는 것도 이 장면에서 익힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 원소 시야로 물체의 원소 속성을 볼 수 있으며 각 원소에는 고유한 색이 있다는 것도 이 장면에서 익힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Winds of the Past",
+       "paragraph": "A189",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Winds of the Past",
+       "paragraph": "A190",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Winds of the Past",
+       "paragraph": "A191",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "Sentence 2 claims that colors seen with Elemental Sight lead immediately to the combat solution. The English never states that link. It only says green is Dendro and that wooden shields are Dendro and can be ignited.",
+     "quote": "Opponents' wooden shields are attributed to Dendro, which can be ignited with Pyro Skills, rendering them defenseless.",
+     "sentences": [
+      {
+       "t_raw": "이 지식은 곧바로 실전에 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 지식은 곧바로 실전에 쓰인다."
+      },
+      {
+       "t_raw": "초록은 Dendro를 뜻하며 Pyro로 점화할 수 있고, 적들의 나무 방패 역시 Dendro 속성이라 Pyro 스킬로 불을 붙이면 방어태세가 무너진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "초록은 풀을 뜻하며 불로 점화할 수 있고, 적들의 나무 방패 역시 풀 속성이라 불 스킬로 불을 붙이면 방어태세가 무너진다."
+      },
+      {
+       "t_raw": "Elemental Sight로 보면 각 원소마다 고유의 색이 있고, 초록색은 Dendro를 뜻한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "원소 시야로 보면 각 원소마다 고유의 색이 있고, 초록색은 풀을 뜻한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Winds of the Past",
+       "paragraph": "A192",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Winds of the Past",
+       "paragraph": "A193",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "All three sentences match A194-A198.",
+     "quote": "Breaking it will make it rain, making everything in its range Wet.",
+     "sentences": [
+      {
+       "t_raw": "Crash Course에서는 주변에 물이 있으면 적이 젖은(Wet) 상태가 될 수 있다는 점과, Cryo 스킬로 물이나 Hydro 적, 젖은 적을 얼려서 우위를 점할 수 있다는 반응의 기초가 다뤄진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기사의 현장학습에서는 주변에 물이 있으면 적이 젖은(Wet) 상태가 될 수 있다는 점과, 얼음 스킬로 물이나 물 적, 젖은 적을 얼려서 우위를 점할 수 있다는 반응의 기초가 다뤄진다."
+      },
+      {
+       "t_raw": "방 안 중앙의 파란 돌인 Hydro Amber를 부수면 비가 내려 범위 안의 모든 것이 젖는다는 장치도 등장해, 환경 자체가 원소 반응의 재료가 됨을 보여준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방 안 중앙의 파란 돌인 물 엠버를 부수면 비가 내려 범위 안의 모든 것이 젖는다는 장치도 등장해, 환경 자체가 원소 반응의 재료가 됨을 보여준다."
+      },
+      {
+       "t_raw": "화염방사기의 핵이 불을 쏘는 에너지원이며, Cryo 스킬로 핵을 잠시 무력화하면 불을 못 쏘게 만들 수 있다는 약점 공략도 함께 배운다.",
+       "interp": false,
+       "dropped": false,
+       "t": "화염방사기의 핵이 불을 쏘는 에너지원이며, 얼음 스킬로 핵을 잠시 무력화하면 불을 못 쏘게 만들 수 있다는 약점 공략도 함께 배운다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Crash Course",
+       "paragraph": "A194",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Crash Course",
+       "paragraph": "A195",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Crash Course",
+       "paragraph": "A196",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Crash Course",
+       "paragraph": "A197",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Crash Course",
+       "paragraph": "A198",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": [
+      "Wet"
+     ]
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "trimmed",
+     "note": "Sentence 1 is interpretation (learning reactions by hand rather than knowledge) tagged as fact. The English does not state it.",
+     "quote": "Use Electro skills to trigger Overloaded explosions on Pyro Slimes and extinguish them.",
+     "sentences": [
+      {
+       "t_raw": "같은 퀘스트에서 Pyro가 Electro와 닿으면 Overloaded 폭발이 일어난다는 법칙이 소개되고, Electro 스킬로 Pyro Slime에게 폭발을 일으켜 불을 끄는 훈련이 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "같은 퀘스트에서 불이 번개와 닿으면 과부하 폭발이 일어난다는 법칙이 소개되고, 번개 스킬로 화염 슬라임에게 폭발을 일으켜 불을 끄는 훈련이 이어진다."
+      },
+      {
+       "t_raw": "원소 반응을 지식이 아니라 손으로 익히게 만드는 흐름이다.",
+       "interp": false,
+       "dropped": true,
+       "t": "원소 반응을 지식이 아니라 손으로 익히게 만드는 흐름이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Crash Course",
+       "paragraph": "A199",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Crash Course",
+       "paragraph": "A200",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "Sentence 2 claims the quest setting has many seas and rivers and that this fits the reaction. The English gives no such setting.",
+     "quote": "Utilize Electro-Charged to give Lisa an advantage near water.",
+     "sentences": [
+      {
+       "t_raw": "Lisa와 함께하는 Sparks Amongst the Pages는 Electro 반응 편이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리사와 함께하는 페이지 속의 스파크는 번개 반응 편이다."
+      },
+      {
+       "t_raw": "Hydro와 Electro가 만나 Electro-Charged가 발동하며, Electro-Charged 상태의 적이 주변의 젖은 적에게 상당한 Electro 피해를 줄 수 있다는 점, 그리고 Lisa의 원소 폭발 Lightning Rose가 넓은 범위의 적에게 자동으로 피해를 준다는 점이 안내된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물과 번개가 만나 감전이 발동하며, 감전 상태의 적이 주변의 젖은 적에게 상당한 번개 피해를 줄 수 있다는 점, 그리고 리사의 원소 폭발 장미의 뇌광이 넓은 범위의 적에게 자동으로 피해를 준다는 점이 안내된다."
+      },
+      {
+       "t_raw": "물가에서는 Electro-Charged를 활용하는 편이 Lisa에게 유리하다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "물가에서는 감전을 활용하는 편이 리사에게 유리하다."
+      },
+      {
+       "t_raw": "Lisa의 원소 스킬은 눌러서 발동하거나 길게 눌러 차지할 수 있고, 완전히 차지된 상태에서 놓으면 범위 공격으로 막대한 Electro 피해를 준다는 조작법도 이 장면에서 익힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리사의 원소 스킬은 눌러서 발동하거나 길게 눌러 차지할 수 있고, 완전히 차지된 상태에서 놓으면 범위 공격으로 막대한 번개 피해를 준다는 조작법도 이 장면에서 익힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "A203",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "A204",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "A205",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "A206",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "A207",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Sparks Amongst the Pages",
+       "paragraph": "A208",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "Sentence 2 says the story purpose is waiting for an appointment time. The English does not say this. It is also interpretation tagged as fact.",
+     "quote": "Move the hand to the time you want to wait until and press Confirm",
+     "sentences": [
+      {
+       "t_raw": "Unexpected Encounter에서는 Elemental Sight로 주변 존재의 원소 속성을 살피는 법이 반복 학습되고, Anemo 발자국을 남긴 Green Fellow를 추적하는 미션으로 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "예상치 못한 만남에서는 원소 시야로 주변 존재의 원소 속성을 살피는 법이 반복 학습되고, 바람 발자국을 남긴 Green Fellow를 추적하는 미션으로 이어진다."
+      },
+      {
+       "t_raw": "Venti's New Plan에서는 시간대를 빠르게 넘기는 법, 즉 Paimon Menu에서 시간 메뉴를 열고 바늘을 원하는 시각으로 옮긴 뒤 확인하는 조작이 안내된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티의 새로운 계획에서는 시간대를 빠르게 넘기는 법, 즉 페이몬 메뉴에서 시간 메뉴를 열고 바늘을 원하는 시각으로 옮긴 뒤 확인하는 조작이 안내된다."
+      },
+      {
+       "t_raw": "시간을 빠르게 진행하려면 Paimon Menu를 열고 Time Menu에서 원하는 시각으로 손을 옮긴 뒤 Confirm을 누르면 된다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "시간을 빠르게 진행하려면 페이몬 메뉴를 열고 Time Menu에서 원하는 시각으로 손을 옮긴 뒤 Confirm을 누르면 된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Unexpected Encounter",
+       "paragraph": "A211",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Unexpected Encounter",
+       "paragraph": "A212",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Venti's New Plan",
+       "paragraph": "A213",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Venti's New Plan",
+       "paragraph": "A214",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Venti's New Plan",
+       "paragraph": "A215",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": [
+      "Green Fellow",
+      "Time Menu",
+      "Confirm"
+     ]
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "Sentence 0 names Amber and a flight training. Outrider Style in the English does not mention Amber. Sentence 1 is interpretation tagged as fact.",
+     "quote": "While gliding, you can drop bombs. Defeat all opponents this way.",
+     "sentences": [
+      {
+       "t_raw": "Outrider Style에서는 주변 Wind Currents를 이용해 떠 있는 채로 적의 공격을 피하고, 활공 중 폭탄을 떨어뜨려 모든 적을 처치하는 법을 배운다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "정찰 기사의 풍격에서는 주변 윈드 필드를 이용해 떠 있는 채로 적의 공격을 피하고, 활공 중 폭탄을 떨어뜨려 모든 적을 처치하는 법을 배운다."
+      },
+      {
+       "t_raw": "Outrider Style의 과제는 활공 중 폭탄을 떨어뜨려 모든 적을 처치하는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "정찰 기사의 풍격의 과제는 활공 중 폭탄을 떨어뜨려 모든 적을 처치하는 것이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Outrider Style",
+       "paragraph": "A216",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Outrider Style",
+       "paragraph": "A217",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "Sentence 1 is interpretation (daily travel life as the tutorial) tagged as fact. The English does not state it.",
+     "quote": "The Adventurer Handbook also keeps a record of many things. Check it regularly.",
+     "sentences": [
+      {
+       "t_raw": "Every Day a New Adventure에서는 지도를 열어 이벤트가 진행 중인 지역을 확인하고 찾아가는 법과, 모험자 수첩에 여러 기록이 남으니 수시로 확인하라는 안내가 이뤄진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하루하루는 새로운 모험에서는 지도를 열어 이벤트가 진행 중인 지역을 확인하고 찾아가는 법과, 모험자 수첩에 여러 기록이 남으니 수시로 확인하라는 안내가 이뤄진다."
+      },
+      {
+       "t_raw": "Every Day a New Adventure에서는 지도에서 진행 중인 이벤트가 있는 지역을 확인한 뒤 그곳으로 가 보라고 안내한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "하루하루는 새로운 모험에서는 지도에서 진행 중인 이벤트가 있는 지역을 확인한 뒤 그곳으로 가 보라고 안내한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Every Day a New Adventure",
+       "paragraph": "A218",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "(0) 'hunter's wisdom introduced' is not stated; only the Wolves' Territory entry exists. (1) English says traps can't be detected by boars and that Hunting Traps cannot attract boars; Korean says the boar doesn't detect it (ok) but the 'cannot attract' nuance is lost; it's mostly fine, yet 'boars flee from people in the opposite direction' is stated. Main issue: (2) claims it teaches life skills not combat and shows the Traveler's widening learning range, which is not in the English.",
+     "quote": "boars tend to avoid people and run away in the exact opposite direction. Use this to your advantage",
+     "sentences": [
+      {
+       "t_raw": "Wolves' Territory에서는 가방에서 Hunting Trap을 꺼내 설치하는 법을 안내한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "울프의 영지에서는 가방에서 수렵 함정을 꺼내 설치하는 법을 안내한다."
+      },
+      {
+       "t_raw": "가방에서 Hunting Trap을 꺼내 설치하면 멧돼지가 감지하지 못한다. Hunting Trap은 멧돼지를 유인하지는 못하지만, 멧돼지는 사람을 피해 정반대 방향으로 도망치는 습성이 있으므로 이를 이용해 함정에 걸리게 하면 더 많은 생고기를 얻을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "가방에서 수렵 함정을 꺼내 설치하면 멧돼지가 감지하지 못한다. 수렵 함정은 멧돼지를 유인하지는 못하지만, 멧돼지는 사람을 피해 정반대 방향으로 도망치는 습성이 있으므로 이를 이용해 함정에 걸리게 하면 더 많은 생고기를 얻을 수 있다."
+      },
+      {
+       "t_raw": "Wolves' Territory는 Hunting Trap으로 멧돼지를 잡아 생고기를 얻는 방법을 알려 주는 항목이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "울프의 영지는 수렵 함정으로 멧돼지를 잡아 생고기를 얻는 방법을 알려 주는 항목이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Wolves' Territory",
+       "paragraph": "A219",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Wolves' Territory",
+       "paragraph": "A220",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "(0) 'major mid-game turning point' is not stated. (2) The claim that the power source is the homeland's statue and this is woven into the setting is not in the English. (1) is supported.",
+     "quote": "Resonate with Geo at the Statue of The Seven in Liyue to convert your element to Geo",
+     "sentences": [
+      {
+       "t_raw": "Switch Element에서는 Liyue의 Statue of The Seven에서 Geo와 공명해 원소를 Geo로 바꾸고 Geo Elemental Skill과 Elemental Burst를 얻는 법을 배운다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "Switch Element에서는 리월의 일곱신상에서 바위와 공명해 원소를 바위로 바꾸고 바위 원소전투 스킬과 원소폭발을 얻는 법을 배운다."
+      },
+      {
+       "t_raw": "Liyue의 Statue of The Seven에서 Geo에 공명해 원소를 Geo로 바꾸고 Geo의 원소 스킬과 원소 폭발을 얻은 뒤, Mondstadt의 Statue of The Seven으로 돌아가 Anemo에 다시 공명해 Anemo 능력을 되찾는 과정이 안내된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월의 일곱신상에서 바위에 공명해 원소를 바위로 바꾸고 바위의 원소 스킬과 원소 폭발을 얻은 뒤, 몬드의 일곱신상으로 돌아가 바람에 다시 공명해 바람 능력을 되찾는 과정이 안내된다."
+      },
+      {
+       "t_raw": "Switch Element에서는 Mondstadt의 Statue of The Seven으로 돌아가 Anemo와 공명해 Anemo 능력을 다시 얻는 방법도 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "Switch Element에서는 몬드의 일곱신상으로 돌아가 바람과 공명해 바람 능력을 다시 얻는 방법도 설명한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Switch Element",
+       "paragraph": "A221",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": [
+      "Switch Element",
+      "Switch Element"
+     ]
+    },
+    {
+     "section": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "status": "accepted",
+     "note": "(0) 'near the end of the Liyue arc' is not given in the English. (1) is supported; (2) is acceptable interpretation.",
+     "quote": "As a result of the buildup of divine karma in the area, Xiao will have Bane of All Evil permanently activated",
+     "sentences": [
+      {
+       "t_raw": "Karma-Heavy Cavern에서는 퀘스트 전용 효과가 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "「업장」의 기운이 느껴지는 선계에서는 퀘스트 전용 효과가 등장한다."
+      },
+      {
+       "t_raw": "지역에 신성한 업(karma)이 쌓인 결과로 Xiao의 Bane of All Evil이 영구 발동 상태가 되어 끊임없이 HP를 잃는 반면, 그 신성한 업의 효과로 적에게 피해를 줄 때 HP를 회복하게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지역에 신성한 업(karma)이 쌓인 결과로 소의 나자의 춤이 영구 발동 상태가 되어 끊임없이 HP를 잃는 반면, 그 신성한 업의 효과로 적에게 피해를 줄 때 HP를 회복하게 된다.",
+       "polish": {
+        "from": "지역에 신성한 업(karma)이 쌓인 결과로 소의 나자의 춤이 영구 발동 상태가 되어 끊임없이 HP를 잃는 반면, 그 신성한 업의 효과로 적에게 피해를 줄 때 HP를 회복하게 된다.",
+        "text": "지역에 신성한 업(karma)이 쌓인 결과로 소의 나자의 춤이 영구 발동 상태가 되어 끊임없이 HP를 잃는 반면, 그 신성한 업의 효과로 적에게 피해를 줄 때 HP를 회복하게 된다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "통상의 튜토리얼이 시스템을 가르친다면 이 항목은 이야기의 설정이 그대로 메커니즘이 된 사례로, 손실과 회복이 한몸에 공존하는 Xiao의 존재 방식을 시스템 언어로 옮긴 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "통상의 튜토리얼이 시스템을 가르친다면 이 항목은 이야기의 설정이 그대로 메커니즘이 된 사례로, 손실과 회복이 한몸에 공존하는 소의 존재 방식을 시스템 언어로 옮긴 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Karma-Heavy Cavern",
+       "paragraph": "A222",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이야기와 함께 등장한 튜토리얼",
+     "latin_left": [
+      "HP",
+      "HP"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "(0) says Rifthound's growth is a mystery as stemming from being from Riftworld; the English says 'another world' not 'Riftworld', and the sentence ties the mystery to origin. (1) is supported (the English says only 'seems to be' the mature form, 'no natural life cycles'). (3) and (4) are supported; (2) is acceptable interpretation.",
+     "quote": "These monsters do not have natural life cycles, and their growth remains a mystery.",
+     "sentences": [
+      {
+       "t_raw": "Rifthound는 Rifthound Whelp의 성숙한 모습으로 보이지만, 자연스러운 생활 주기가 없고 성장 방식은 수수께끼로 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "수계 사냥개는 Rifthound Whelp의 성숙한 모습으로 보이지만, 자연스러운 생활 주기가 없고 성장 방식은 수수께끼로 남아 있다."
+      },
+      {
+       "t_raw": "Thundercraven Rifthound와 Rockfond Rifthound는 Rifthound Whelp의 성체 형태처럼 보이지만, 실제로는 자연적인 생애 주기가 없으며 그 성장은 미스터리로 남아 있다고 튜토리얼은 명시한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기뢰·수계(獸界) 사냥개와 기암·수계(獸界) 사냥개는 Rifthound Whelp의 성체 형태처럼 보이지만, 실제로는 자연적인 생애 주기가 없으며 그 성장은 미스터리로 남아 있다고 튜토리얼은 명시한다."
+      },
+      {
+       "t_raw": "즉 \"어린 개체가 자라 성체가 된다\"는 당연한 그림이 의도적으로 무너져 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즉 \"어린 개체가 자라 성체가 된다\"는 당연한 그림이 의도적으로 무너져 있는 셈이다."
+      },
+      {
+       "t_raw": "어느 쪽이든 공통으로 지니는 힘은 물질을 침식하는 능력으로, 공격은 \"Corrosion\" 상태를 중첩시켜 파티 전원이 지속적으로 HP를 잃게 만든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어느 쪽이든 공통으로 지니는 힘은 물질을 침식하는 능력으로, 공격은 \"침식\" 상태를 중첩시켜 파티 전원이 지속적으로 HP를 잃게 만든다."
+      },
+      {
+       "t_raw": "게다가 각자의 원소 피해를 받으면 Elemental Devourer 상태에 돌입해, 그 원소에 대한 내성이 떨어지는 대가로 더 맹렬히 싸운다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게다가 각자의 원소 피해를 받으면 마력의 갈증 상태에 돌입해, 그 원소에 대한 내성이 떨어지는 대가로 더 맹렬히 싸운다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Thundercraven Rifthound Whelp",
+       "paragraph": "A62",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Rockfond Rifthound Whelp",
+       "paragraph": "A63",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Thundercraven Rifthound",
+       "paragraph": "A64",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Rockfond Rifthound",
+       "paragraph": "A65",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Rifthound Whelp",
+      "Rifthound Whelp",
+      "HP"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "trimmed",
+     "note": "(3) refers to 'Inazuma의 무언가가 발키리를 가늠하는 장치' — 'valkyrie' is invented, and the claim that the barrier is a device by which something in Inazuma measures the player is a guess presented as fact. (0)-(2) are supported.",
+     "quote": "For some mysterious reason, receiving the acknowledgment of Electrograna and carrying them with you allows you to pass through some such barriers unimpeded.",
+     "sentences": [
+      {
+       "t_raw": "Inazuma에는 Thunder Barrier라 불리는 뚫을 수 없는 장벽이 존재한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이나즈마에는 번개의 결계라 불리는 뚫을 수 없는 장벽이 존재한다."
+      },
+      {
+       "t_raw": "튜토리얼은 Electrograna에게 인정받아 함께하는 것이 일부 장벽을 통과하게 해 준다고 설명하지만, 그 이유에 대해서는 \"미스터리한 이유로\"라는 표현 외에 아무런 해설을 내놓지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "튜토리얼은 번개 씨앗에게 인정받아 함께하는 것이 일부 장벽을 통과하게 해 준다고 설명하지만, 그 이유에 대해서는 \"미스터리한 이유로\"라는 표현 외에 아무런 해설을 내놓지 않는다."
+      },
+      {
+       "t_raw": "더 강한 장벽은 더 강한 Electrograna를 필요로 하며, Grand Narukami Shrine의 Sacred Sakura에 Electro Sigil을 바치는 것이 언젠가 모든 지역을 열어 줄지도 모른다는 정도로만 힌트가 주어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "더 강한 장벽은 더 강한 번개 씨앗을 필요로 하며, 나루카미 다이샤의 신성한 벚나무에 번개의 인장을 바치는 것이 언젠가 모든 지역을 열어 줄지도 모른다는 정도로만 힌트가 주어진다."
+      },
+      {
+       "t_raw": "원리를 모른 채 '인정'이라는 조건만으로 통과가 허락된다는 점에서, 이 장벽은 단순한 장애물이 아니라 Inazuma의 무언가가 발키리를 가늠하는 장치라고 볼 수 있다.",
+       "interp": true,
+       "dropped": true,
+       "t": "원리를 모른 채 '인정'이라는 조건만으로 통과가 허락된다는 점에서, 이 장벽은 단순한 장애물이 아니라 이나즈마의 무언가가 발키리를 가늠하는 장치라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Inexplicable Barrier...",
+       "paragraph": "A160",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Inexplicable Barrier...",
+       "paragraph": "A161",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Inexplicable Barrier...",
+       "paragraph": "A162",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "(2) calls the structure a 'strong clue' about the barrier's nature and says the tutorial explains no more; this goes beyond the English and asserts an unsupported conclusion; also the Korean says the energy shard builds the barrier, which the English doesn't state (it only says barriers seal Thunderstones within). (0) and (1) are supported.",
+     "quote": "These fragments of raw, unbridled energy can be temporarily suppressed with Electrograna.",
+     "sentences": [
+      {
+       "t_raw": "장벽 안에는 Thunderstone이 봉인된 경우도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "장벽 안에는 번개석이 봉인된 경우도 있다."
+      },
+      {
+       "t_raw": "이 조악하고 거친 에너지의 파편은 Electrograna로 일시적으로 억압할 수 있고, 억압되는 동안 주위의 Thunder Barrier가 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 조악하고 거친 에너지의 파편은 번개 씨앗으로 일시적으로 억압할 수 있고, 억압되는 동안 주위의 번개의 결계가 사라진다."
+      },
+      {
+       "t_raw": "Thunder Barrier 안에 봉인된 Thunderstone을 Electrograna로 일시적으로 억누르면 그 주변의 장벽이 걷힌다는 점은, 장벽과 Thunderstone이 서로 맞물려 있다는 것을 보여 주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "번개의 결계 안에 봉인된 번개석을 번개 씨앗으로 일시적으로 억누르면 그 주변의 장벽이 걷힌다는 점은, 장벽과 번개석이 서로 맞물려 있다는 것을 보여 주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Inexplicable Barrier...",
+       "paragraph": "A162",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "trimmed",
+     "note": "The English never says Tsurumi holds a two-layer mystery of lore plus script; that framing is added as fact.",
+     "quote": "According to the native people of Tsurumi Island, the Thunderbird once perched upon these trees, and thus it is necessary to make offerings to them.",
+     "sentences": [
+      {
+       "t_raw": "Tsurumi Island는 전승과 문자 두 겹의 미스터리를 안고 있다.",
+       "interp": false,
+       "dropped": true,
+       "t": "츠루미는 전승과 문자 두 겹의 미스터리를 안고 있다."
+      },
+      {
+       "t_raw": "섬의 문명이 세운 것으로 보이는 Stormstone은 Electro로 활성화하면 짙은 안개 속에서 사람이 길을 잃는 것을 막아 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "섬의 문명이 세운 것으로 보이는 「뇌석」은 번개로 활성화하면 짙은 안개 속에서 사람이 길을 잃는 것을 막아 준다."
+      },
+      {
+       "t_raw": "섬 주민들에 따르면 Thunderbird는 옛날 이 나무들에 깃들었기에 제물을 바쳐야 하며, Perch를 만지면 그 안의 힘이 깃털 3개로 변해 흩어지고, 흩어진 힘을 모아 제의를 완성하게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "섬 주민들에 따르면 뇌조는 옛날 이 나무들에 깃들었기에 제물을 바쳐야 하며, 서목(栖木)을 만지면 그 안의 힘이 깃털 3개로 변해 흩어지고, 흩어진 힘을 모아 제의를 완성하게 된다."
+      },
+      {
+       "t_raw": "Thunderbird라는 존재 자체는 주민의 증언과 의식의 흔적으로만 전해질 뿐, 튜토리얼은 그 실체에 대해 아무것도 확증해 주지 않는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "뇌조라는 존재 자체는 주민의 증언과 의식의 흔적으로만 전해질 뿐, 튜토리얼은 그 실체에 대해 아무것도 확증해 주지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Tsurumi Island's Stormstones...",
+       "paragraph": "A182",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Tsurumi Island's \"Perches\"",
+       "paragraph": "A185",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Tsurumi Island's \"Perches\"",
+       "paragraph": "A186",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The Ishine Script name is only 'according to the illusions,' and the claim that the island's rituals as a whole survive only as hints is not stated.",
+     "quote": "Touch these stones in the correct order, and special things may occur.",
+     "sentences": [
+      {
+       "t_raw": "섬 곳곳에는 기호가 새겨진 돌이 있고, 환영에 따르면 이것을 Ishine Script라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "섬 곳곳에는 기호가 새겨진 돌이 있고, 환영에 따르면 이것을 「이시네 문자」라고 부른다."
+      },
+      {
+       "t_raw": "환영에 따르면 이 문자가 그렇게 불린다고만 하며, 올바른 순서로 돌을 만지면 특별한 일이 일어날 수 있고 순서의 단서는 보통 돌 근처에서 찾을 수 있다고 안내할 뿐이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "환영에 따르면 이 문자가 그렇게 불린다고만 하며, 올바른 순서로 돌을 만지면 특별한 일이 일어날 수 있고 순서의 단서는 보통 돌 근처에서 찾을 수 있다고 안내할 뿐이다."
+      },
+      {
+       "t_raw": "또한 빛난 상태의 독특한 석상 근처에서 '깃털'을 사용하면 특별한 일이 일어날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "또한 빛난 상태의 독특한 석상 근처에서 '깃털'을 사용하면 특별한 일이 일어날 수 있다."
+      },
+      {
+       "t_raw": "Thunder Manifestation이 \"천둥의 분노\"의 화신으로 태어난 원소 생명체라는 사실과 Tsurumi의 Thunderbird 전승을 나란히 놓고 보면, 이 섬의 미스터리들이 같은 실마리를 향하고 있을 가능성을 상상하게 된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "뇌음의 권현이 \"천둥의 분노\"의 화신으로 태어난 원소 생명체라는 사실과 Tsurumi의 뇌조 전승을 나란히 놓고 보면, 이 섬의 미스터리들이 같은 실마리를 향하고 있을 가능성을 상상하게 된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Enemies > Thunder Manifestation",
+       "paragraph": "A58",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Mysterious Carvings",
+       "paragraph": "A183",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > Ishine Script",
+       "paragraph": "A184",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Tsurumi"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Show Cursor is a PC-only System entry, and the Archive page uses it to say not every player can unlock every entry.",
+     "quote": "Not all players can unlock all entries; for example, the Tutorial entry \"Show Cursor\" can only be unlocked by playing on PC.",
+     "sentences": [
+      {
+       "t_raw": "튜토리얼 항목 중에는 플레이 환경에 따라 도저히 볼 수 없는 것도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "튜토리얼 항목 중에는 플레이 환경에 따라 도저히 볼 수 없는 것도 있다."
+      },
+      {
+       "t_raw": "PC에서만 잠금 해제되는 System 항목 Show Cursor가 대표적인데, Left-Alt를 길게 눌러 커서를 표시하고 화면의 버튼을 클릭하는 방법을 알려준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "PC에서만 잠금 해제되는 System 항목 커서 표시가 대표적인데, Left-Alt를 길게 눌러 커서를 표시하고 화면의 버튼을 클릭하는 방법을 알려준다."
+      },
+      {
+       "t_raw": "Archive 문서도 이를 예시로 들며, 모든 플레이어가 모든 항목을 해금할 수 있는 것은 아니라고 짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감 문서도 이를 예시로 들며, 모든 플레이어가 모든 항목을 해금할 수 있는 것은 아니라고 짚는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Show Cursor",
+       "paragraph": "A71",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Collecting Wood",
+       "paragraph": "A95",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 416668,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "PC",
+      "System",
+      "Left-Alt"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "trimmed",
+     "note": "Uncategorized tutorials are absent from the Archive, but the English does not say most are learned in quest scenes.",
+     "quote": "Uncategorized tutorials are not added to the Archive.",
+     "sentences": [
+      {
+       "t_raw": "해금되지 않은 채 남는 항목도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "해금되지 않은 채 남는 항목도 있다."
+      },
+      {
+       "t_raw": "Uncategorized 분류의 튜토리얼들은 Archive에 수집되지 않는데, Wanderer's Trail이나 Amber의 화살, Lisa의 Lightning Rose처럼 퀘스트 장면에서 배우는 항목들이 대부분 여기에 속한다.",
+       "interp": false,
+       "dropped": true,
+       "t": "미분류 분류의 튜토리얼들은 도감에 수집되지 않는데, 방랑자의 발자취나 엠버의 화살, 리사의 장미의 뇌광처럼 퀘스트 장면에서 배우는 항목들이 대부분 여기에 속한다."
+      },
+      {
+       "t_raw": "즉 게임을 가르쳐 주는 문구들이 Archive라는 도감 밖에 흩어져 있는 셈이라, 수집가 입장에서는 아쉬운 구석이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즉 게임을 가르쳐 주는 문구들이 도감라는 도감 밖에 흩어져 있는 셈이라, 수집가 입장에서는 아쉬운 구석이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized",
+       "paragraph": "A187",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized > Wanderer's Trail",
+       "paragraph": "A188",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Revival-dish priority when a party member is down is given; calling the NRE not a combat item adds a fact.",
+     "quote": "The NRE (Menu 30), or \"Nutrition, Ready-to-Eat\" to use the full term, is a special item created by a certain alchemist.",
+     "sentences": [
+      {
+       "t_raw": "Adventure 항목 NRE (Menu 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모험 항목 NRE (Menu 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
+       "polish": {
+        "from": "Adventure 항목 NRE (Menu 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
+        "text": "모험 항목 NRE (Menu 30)은 정식 명칭이 \"Nutrition, Ready-to-Eat\"인 휴대용 파우치로, 어느 연금술사가 만든 특별한 아이템이다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "완성된 요리를 넣어두면 다양한 상황에서 빠르게 섭취할 수 있고, 회복 요리와 부활 요리를 한 종류씩 보관하며, 파티원이 쓰러져 있으면 부활 요리 사용이 우선된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "완성된 요리를 넣어두면 다양한 상황에서 빠르게 섭취할 수 있고, 회복 요리와 부활 요리를 한 종류씩 보관하며, 파티원이 쓰러져 있으면 부활 요리 사용이 우선된다."
+      },
+      {
+       "t_raw": "NRE (Menu 30)는 완성된 요리를 담아 두고 필요할 때 빠르게 섭취하며, 파티원이 쓰러져 있으면 Revival Dish를 우선 사용한다는 점에서, 이 연금술사의 재능이 모험 중 식사와 회복 쪽으로 향한 물건으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "NRE (Menu 30)는 완성된 요리를 담아 두고 필요할 때 빠르게 섭취하며, 파티원이 쓰러져 있으면 Revival Dish를 우선 사용한다는 점에서, 이 연금술사의 재능이 모험 중 식사와 회복 쪽으로 향한 물건으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > NRE (Menu 30)",
+       "paragraph": "A126",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Adventure > NRE (Menu 30)",
+       "paragraph": "A127",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "NRE",
+      "Menu",
+      "Nutrition",
+      "Ready-to-Eat",
+      "NRE",
+      "Menu",
+      "Revival Dish"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The Amur Maple line under Inazuman Cedar is a body mismatch, not a stated typo in entry names.",
+     "quote": "Cut an Amur Maple down to obtain Aralia Wood.",
+     "sentences": [
+      {
+       "t_raw": "Inazuman Cedar 항목의 본문에는 Amur Maple을 베면 Aralia Wood를 얻는다고 되어 있어, 이름과 설명이 살짝 어긋난다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "Inazuman Cedar 항목의 본문에는 Amur Maple을 베면 공작나무 원목을 얻는다고 되어 있어, 이름과 설명이 살짝 어긋난다."
+      },
+      {
+       "t_raw": "벌목 튜토리얼의 Inazuman Cedar 항목은 나무를 베면 Aralia Wood를 얻는다고 안내하지만, 그 문장은 \"Cut an Amur Maple down\"이라고 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벌목 튜토리얼의 Inazuman Cedar 항목은 나무를 베면 공작나무 원목을 얻는다고 안내하지만, 그 문장은 \"Amur Maple을 베세요\"라고 적혀 있다.",
+       "polish": {
+        "from": "벌목 튜토리얼의 Inazuman Cedar 항목은 나무를 베면 공작나무 원목을 얻는다고 안내하지만, 그 문장은 \"Cut an Amur Maple down\"이라고 적혀 있다.",
+        "text": "벌목 튜토리얼의 Inazuman Cedar 항목은 나무를 베면 공작나무 원목을 얻는다고 안내하지만, 그 문장은 \"Amur Maple을 베세요\"라고 적혀 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Inazuman Cedar를 소개하면서 Amur Maple을 베라고 하는 셈이라, 이름과 내용이 어긋난 대표적인 예다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Inazuman Cedar를 소개하면서 Amur Maple을 베라고 하는 셈이라, 이름과 내용이 어긋난 대표적인 예다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Collecting Wood",
+       "paragraph": "A95",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Collecting Wood",
+       "paragraph": "A94",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Inazuman Cedar",
+      "Amur Maple",
+      "Inazuman Cedar",
+      "Amur Maple",
+      "Inazuman Cedar",
+      "Amur Maple"
+     ]
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

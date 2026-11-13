@@ -1,0 +1,408 @@
+{
+ "node": "Syavushi Bakshesh Shoppe",
+ "articles": [
+  {
+   "node": "Syavushi Bakshesh Shoppe",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Syavushi Bakshesh Shoppe",
+     "url": "https://genshin-impact.fandom.com/wiki/Syavushi_Bakshesh_Shoppe",
+     "revision": 279581
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 213,
+   "input_cut": false,
+   "input_hash": "d72e38303231",
+   "writer": "ds-pro,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "The English says Alrani helps with marketing the fertilisers. It does not say she took over selling them. Vahid is the one who sells them.",
+     "quote": "Syavushi Bakshesh Shoppe only sells specialties from Sumeru.",
+     "sentences": [
+      {
+       "t_raw": "**Syavushi Bakshesh Shoppe**는 Inazuma의 Ritou에 있는 상점으로, **Vahid**가 운영한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**짙푸른 소원**은 이나즈마의 이도(離島)에 있는 상점으로, **바히드**가 운영한다."
+      },
+      {
+       "t_raw": "이 상점은 Sumeru 특산품만 취급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 상점은 수메르 특산품만 취급한다."
+      },
+      {
+       "t_raw": "In Another Land 무렵 Alrani가 Vahid를 도와 그가 가게에서 파는 비료의 마케팅을 하게 되면서, 이 상점은 Ritou의 장사와 외부 학자의 조사가 만나는 지점으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "타향에서 무렵 엘라니가 바히드를 도와 그가 가게에서 파는 비료의 마케팅을 하게 되면서, 이 상점은 이도(離島)의 장사와 외부 학자의 조사가 만나는 지점으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Syavushi Bakshesh Shoppe",
+       "revision": 279581,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vahid",
+       "revision": 306037,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Alrani",
+       "revision": 281778,
+       "section": "Profile > History",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences pass. Sentence 3 follows from the shop selling only Sumeru specialties and selling fertilisers.",
+     "quote": "Syavushi Bakshesh Shoppe only sells specialties from Sumeru.",
+     "sentences": [
+      {
+       "t_raw": "Syavushi Bakshesh Shoppe는 Ritou에 자리한 상점이며, 주인은 Vahid다.",
+       "interp": false,
+       "dropped": false,
+       "t": "짙푸른 소원은 이도(離島)에 자리한 상점이며, 주인은 바히드다."
+      },
+      {
+       "t_raw": "이 가게가 내놓는 물건은 **Sumeru의 특산품뿐**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 가게가 내놓는 물건은 **수메르의 특산품뿐**이다."
+      },
+      {
+       "t_raw": "Inazuma의 땅 Ritou에서 Sumeru의 특산품만을 걸어 두었다는 점에서, 이곳은 두 지역의 물건이 만나는 자리인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이나즈마의 땅 이도(離島)에서 수메르의 특산품만을 걸어 두었다는 점에서, 이곳은 두 지역의 물건이 만나는 자리인 셈이다."
+      },
+      {
+       "t_raw": "Vahid가 파는 비료 역시 이 특산품 가운데 하나다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바히드가 파는 비료 역시 이 특산품 가운데 하나다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Syavushi Bakshesh Shoppe",
+       "revision": 279581,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vahid",
+       "revision": 306037,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Alrani joins Vahid and works on marketing the fertilisers that are sold by Vahid at the shop.",
+     "sentences": [
+      {
+       "t_raw": "In Another Land에서 Alrani는 Vahid와 합류하여, 가게에서 파는 비료의 **판촉**을 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타향에서에서 엘라니는 바히드와 합류하여, 가게에서 파는 비료의 **판촉**을 맡는다."
+      },
+      {
+       "t_raw": "가게의 주인은 Vahid로 남고 Alrani는 비료를 알리는 쪽에 선다는 이 역할 분담이, 이 무렵 이 가게가 보여 주는 모습인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가게의 주인은 바히드로 남고 엘라니는 비료를 알리는 쪽에 선다는 이 역할 분담이, 이 무렵 이 가게가 보여 주는 모습인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Syavushi Bakshesh Shoppe",
+       "revision": 279581,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation is hedged.",
+     "quote": "Syavushi Bakshesh Shoppe only sells specialties from Sumeru.",
+     "sentences": [
+      {
+       "t_raw": "가게의 주인은 Vahid이며, 이 가게는 **Sumeru의 특산품만을** 취급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가게의 주인은 바히드이며, 이 가게는 **수메르의 특산품만을** 취급한다."
+      },
+      {
+       "t_raw": "In Another Land가 벌어지는 동안 Alrani가 Vahid와 함께 가게에 들어와, 가게에서 파는 비료의 마케팅을 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타향에서가 벌어지는 동안 엘라니가 바히드와 함께 가게에 들어와, 가게에서 파는 비료의 마케팅을 맡는다."
+      },
+      {
+       "t_raw": "Sumeru Academia의 학자가 Sumeru 특산품만을 파는 가게의 마케팅을 맡는다는 점에서, Alrani의 처지와 가게의 성격이 맞물린 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "수메르 아카데미아의 학자가 수메르 특산품만을 파는 가게의 마케팅을 맡는다는 점에서, 엘라니의 처지와 가게의 성격이 맞물린 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Syavushi Bakshesh Shoppe",
+       "revision": 279581,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vahid",
+       "revision": 306037,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Alrani",
+       "revision": 281778,
+       "section": "Profile > History",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by the Alrani history.",
+     "quote": "After having that paper rejected by her tutor, she leaves for Inazuma to write her paper on life in Inazuma.",
+     "sentences": [
+      {
+       "t_raw": "Alrani는 Sumeru Academia에서 학기 논문을 쓰는 학자인데, In Another Land 시점에서 이미 **세 번째 고쳐 쓰기**를 하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "엘라니는 수메르 아카데미아에서 학기 논문을 쓰는 학자인데, 타향에서 시점에서 이미 **세 번째 고쳐 쓰기**를 하고 있다."
+      },
+      {
+       "t_raw": "처음에는 Mondstadt와 Four Winds를 다루려 했지만 Dvalin이 Mondstadt를 공격했다는 사실을 알고 Liyue로 방향을 바꾼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "처음에는 몬드와 바람 사신수를 다루려 했지만 드발린이 몬드를 공격했다는 사실을 알고 리월로 방향을 바꾼다."
+      },
+      {
+       "t_raw": "Liyue에서 Treasure Hoarders에게 붙잡혔다가 Traveler에게 구조된 뒤에는, Vision 없이 원소를 다루는 Traveler의 능력을 논문 주제로 삼았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월에서 보물 사냥단에게 붙잡혔다가 여행자에게 구조된 뒤에는, 신의 눈 없이 원소를 다루는 여행자의 능력을 논문 주제로 삼았다."
+      },
+      {
+       "t_raw": "그 논문마저 지도 교수에게 거절당하자 Inazuma로 떠나, Inazuma의 삶을 주제로 글을 쓰기 시작한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 논문마저 지도 교수에게 거절당하자 이나즈마로 떠나, 이나즈마의 삶을 주제로 글을 쓰기 시작한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Alrani",
+       "revision": 281778,
+       "section": "Profile > History",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation is reasonable.",
+     "quote": "she enlists their help to take photos around Ritou and ends up helping Vahid market the fertilisiers sold at Syavushi Bakshesh Shoppe",
+     "sentences": [
+      {
+       "t_raw": "Ritou에서 Traveler와 다시 마주친 Alrani는 Ritou 곳곳의 사진 촬영에 Traveler의 도움을 청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이도(離島)에서 여행자와 다시 마주친 엘라니는 이도(離島) 곳곳의 사진 촬영에 여행자의 도움을 청한다."
+      },
+      {
+       "t_raw": "그 인연은 결국 **비료의 마케팅**을 도우는 일로 이어지고, 그 대가로 In Another Land에서 Vahid의 도움을 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 인연은 결국 **비료의 마케팅**을 도우는 일로 이어지고, 그 대가로 타향에서에서 바히드의 도움을 받는다."
+      },
+      {
+       "t_raw": "논문을 쓰겠다고 Inazuma까지 건너온 학자가 상점의 마케팅을 맡게 된 셈이니, 여정의 목적과 실제로 맡은 일이 어긋난 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "논문을 쓰겠다고 이나즈마까지 건너온 학자가 상점의 마케팅을 맡게 된 셈이니, 여정의 목적과 실제로 맡은 일이 어긋난 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Syavushi Bakshesh Shoppe",
+       "revision": 279581,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Alrani",
+       "revision": 281778,
+       "section": "Profile > History",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences follow the English. The interpretation in 3 is hedged and consistent with the topic changes described.",
+     "quote": "She first wanted to write about Mondstadt, especially the Four Winds, but then learned that Dvalin had attacked Mondstadt.",
+     "sentences": [
+      {
+       "t_raw": "Alrani는 Sumeru Academia의 학자로 학기 논문을 쓰고 있었고, In Another Land 무렵에는 이미 **세 번째 개고**를 거친 상태였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "엘라니는 수메르 아카데미아의 학자로 학기 논문을 쓰고 있었고, 타향에서 무렵에는 이미 **세 번째 개고**를 거친 상태였다."
+      },
+      {
+       "t_raw": "처음에는 Mondstadt와 Four Winds를 다루려 했지만 Dvalin이 Mondstadt를 습격했다는 사실을 알게 되면서 Liyue로 방향을 틀었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "처음에는 몬드와 바람 사신수를 다루려 했지만 드발린이 몬드를 습격했다는 사실을 알게 되면서 리월로 방향을 틀었다."
+      },
+      {
+       "t_raw": "Liyue에서 Treasure Hoarders에게 붙잡혔다가 Traveler에게 구조된 뒤에는 **Vision 없이 Elements를 다루는 Traveler의 능력**을 주제로 Endless Research를 썼으나, 지도 교수에게 거절당하자 Inazuma의 삶을 다루기 위해 Inazuma로 떠난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월에서 보물 사냥단에게 붙잡혔다가 여행자에게 구조된 뒤에는 **신의 눈 없이 Elements를 다루는 여행자의 능력**을 주제로 끝없는 연구를 썼으나, 지도 교수에게 거절당하자 이나즈마의 삶을 다루기 위해 이나즈마로 떠난다."
+      },
+      {
+       "t_raw": "이렇게 주제가 Mondstadt에서 Liyue로, 다시 Inazuma로 옮겨 간 것은 그가 주제를 먼저 정하고 움직였다기보다 겪은 일에 따라 논문을 갈아탄 결과로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 주제가 몬드에서 리월로, 다시 이나즈마로 옮겨 간 것은 그가 주제를 먼저 정하고 움직였다기보다 겪은 일에 따라 논문을 갈아탄 결과로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Alrani",
+       "revision": 281778,
+       "section": "Profile > History",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Elements"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation in 1 is hedged and reasonable.",
+     "quote": "She encounters the Traveler again in Ritou, where she enlists their help to take photos around Ritou",
+     "sentences": [
+      {
+       "t_raw": "Ritou에서 Traveler와 다시 마주친 Alrani는 그에게 Ritou 곳곳의 **사진을 찍어 달라** 부탁한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이도(離島)에서 여행자와 다시 마주친 엘라니는 그에게 이도(離島) 곳곳의 **사진을 찍어 달라** 부탁한다."
+      },
+      {
+       "t_raw": "Inazuma의 삶을 논문 주제로 삼은 사람이 Ritou의 사진을 모으는 것은 새 주제를 위한 자료 수집으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이나즈마의 삶을 논문 주제로 삼은 사람이 이도(離島)의 사진을 모으는 것은 새 주제를 위한 자료 수집으로 보인다."
+      },
+      {
+       "t_raw": "그리고 Vahid가 In Another Land에서 도움을 주는 대신, Alrani는 Vahid가 Syavushi Bakshesh Shoppe에서 파는 비료의 홍보를 맡게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그리고 바히드가 타향에서에서 도움을 주는 대신, 엘라니는 바히드가 짙푸른 소원에서 파는 비료의 홍보를 맡게 된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Syavushi Bakshesh Shoppe",
+       "revision": 279581,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Alrani",
+       "revision": 281778,
+       "section": "Profile > History",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

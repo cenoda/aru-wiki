@@ -1,0 +1,723 @@
+{
+ "node": "Theater Mechanicus",
+ "articles": [
+  {
+   "node": "Theater Mechanicus",
+   "from_version": "1.6",
+   "cutoff": "2021-07-20T00:00:00Z",
+   "input": [
+    {
+     "page": "Theater Mechanicus",
+     "url": "https://genshin-impact.fandom.com/wiki/Theater_Mechanicus",
+     "revision": 233758
+    }
+   ],
+   "input_counts": {
+    "mentions": 6,
+    "lines": 3,
+    "web": 2
+   },
+   "input_chars": 587,
+   "input_cut": false,
+   "input_hash": "905cfef31129",
+   "writer": "glm-flash,ds-pro,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "Sentence 2 claims the event shows everyday Liyue Harbor scenery apart from rewards. The English says nothing about rewards or daily life, so this is an added claim.",
+     "quote": "Theater Mechanicus is a kind of tabletop game invented by yours truly.",
+     "sentences": [
+      {
+       "t_raw": "Theater Mechanicus는 Liyue Harbor 주민 Ruijin이 만든 일종의 보드게임으로, Liyue의 Lantern Rite 이벤트를 구성하는 네 부분 중 하나였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기관 디펜스는 리월항 주민 서금이 만든 일종의 보드게임으로, 리월의 해등절 이벤트를 구성하는 네 부분 중 하나였다."
+      },
+      {
+       "t_raw": "적이 출구에 닿지 않도록 Mechanici를 배치해 막는 타워 디펜스 방식의 이벤트로, 여러 판에 걸쳐 반복 등장하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적이 출구에 닿지 않도록 Mechanici를 배치해 막는 타워 디펜스 방식의 이벤트로, 여러 판에 걸쳐 반복 등장하고 있다."
+      },
+      {
+       "t_raw": "Liyue의 명절 Lantern Rite를 구성한 네 섹션 중 하나였던 이 게임은, Liyue Harbor 주민 Ruijin이 고안한 탁상 게임이라는 점에서 명절의 색다른 즐길 거리로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "리월의 명절 해등절을 구성한 네 섹션 중 하나였던 이 게임은, 리월항 주민 서금이 고안한 탁상 게임이라는 점에서 명절의 색다른 즐길 거리로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Theater Mechanicus",
+       "revision": 233758,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Theater Mechanicus",
+       "revision": 233758,
+       "section": "Basic Gameplay",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Theater Mechanicus",
+       "revision": 233758,
+       "section": "Basic Gameplay",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": null,
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103846",
+       "title": "Lantern Rite Gameplay Details",
+       "published": "2021-02-09",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Mechanici"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Players are limited to a certain number of Mechanici during a given run, and players cannot directly deal damage.",
+     "sentences": [
+      {
+       "t_raw": "Theater Mechanicus는 되풀이해서 열리는 이벤트로, 경기장 곳곳에 미리 지정된 자리에 **Mechanici**를 세워 원소 및 물리 피해로 적을 상대하는 방식이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기관 디펜스는 되풀이해서 열리는 이벤트로, 경기장 곳곳에 미리 지정된 자리에 **Mechanici**를 세워 원소 및 물리 피해로 적을 상대하는 방식이다."
+      },
+      {
+       "t_raw": "한 번의 도전에서 세울 수 있는 Mechanici 수는 정해져 있고, 이용자는 **직접 피해를 줄 수 없다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 번의 도전에서 세울 수 있는 Mechanici 수는 정해져 있고, 이용자는 **직접 피해를 줄 수 없다**."
+      },
+      {
+       "t_raw": "Mechanici를 사려면 포인트가 들며, 되팔면 들인 포인트의 50~75%까지 회수된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Mechanici를 사려면 포인트가 들며, 되팔면 들인 포인트의 50~75%까지 회수된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Theater Mechanicus",
+       "revision": 233758,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Theater Mechanicus",
+       "revision": 233758,
+       "section": "Basic Gameplay",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Mechanici",
+      "Mechanici",
+      "Mechanici"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation follows from the no-direct-damage rule and the 50-75% recovery.",
+     "quote": "The objective, like other Tower Defense games, is to stop enemies from reaching the exit.",
+     "sentences": [
+      {
+       "t_raw": "목표는 다른 타워 디펜스 게임과 마찬가지로 적이 출구에 닿지 못하게 막는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목표는 다른 타워 디펜스 게임과 마찬가지로 적이 출구에 닿지 못하게 막는 것이다."
+      },
+      {
+       "t_raw": "출구에 닿는 적이 너무 많아지면 그 스테이지는 곧바로 실패한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "출구에 닿는 적이 너무 많아지면 그 스테이지는 곧바로 실패한다."
+      },
+      {
+       "t_raw": "직접 피해를 줄 수 없어 Mechanici의 배치와 운용에만 기대야 하고, 되파는 회수율이 100%가 아니므로 포인트를 어디에 쓸지가 진행을 가르는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "직접 피해를 줄 수 없어 Mechanici의 배치와 운용에만 기대야 하고, 되파는 회수율이 100%가 아니므로 포인트를 어디에 쓸지가 진행을 가르는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Theater Mechanicus",
+       "revision": 233758,
+       "section": "Basic Gameplay",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Theater Mechanicus",
+       "revision": 233758,
+       "section": "Basic Gameplay",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Mechanici"
+     ]
+    },
+    {
+     "section": "정체와 기원",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Ruijin is an NPC in Liyue Harbor, Liyue. She is the inventor of Theater Mechanicus.",
+     "sentences": [
+      {
+       "t_raw": "Ruijin은 Liyue Harbor에 있는 NPC로, Theater Mechanicus의 발명자다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 리월항에 있는 NPC로, 기관 디펜스의 발명자다."
+      },
+      {
+       "t_raw": "Liyue Harbor 주민인 그녀는 Theater Mechanicus를 테이블탑 게임으로 만들어 냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월항 주민인 그녀는 기관 디펜스를 테이블탑 게임으로 만들어 냈다."
+      },
+      {
+       "t_raw": "그녀 자신은 이것이 자신이 막 발명한 새로운 종류의 보드게임이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀 자신은 이것이 자신이 막 발명한 새로운 종류의 보드게임이라고 말한다."
+      },
+      {
+       "t_raw": "테이블탑 게임과 보드게임이라는 두 표현이 같은 대상을 가리키며, 그 대상은 Ruijin의 손에서 태어난 놀이인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "테이블탑 게임과 보드게임이라는 두 표현이 같은 대상을 가리키며, 그 대상은 서금의 손에서 태어난 놀이인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": null,
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103846",
+       "title": "Lantern Rite Gameplay Details",
+       "published": "2021-02-09",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": "정체와 기원",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 기원",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is hedged.",
+     "quote": "Do you see these things laid out on the table here? These are all important items used in Theater Mechanicus.",
+     "sentences": [
+      {
+       "t_raw": "Ruijin은 테이블 위에 놓인 물건들을 모두 Theater Mechanicus에서 쓰이는 중요한 아이템이라고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 테이블 위에 놓인 물건들을 모두 기관 디펜스에서 쓰이는 중요한 아이템이라고 설명한다."
+      },
+      {
+       "t_raw": "이렇게 보면 Theater Mechanicus의 출발점은 테이블 위에 펼쳐 놓고 즐기는 놀이이며, 그 구성 요소가 되는 물건들이 따로 마련되어 있었던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 보면 기관 디펜스의 출발점은 테이블 위에 펼쳐 놓고 즐기는 놀이이며, 그 구성 요소가 되는 물건들이 따로 마련되어 있었던 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103846",
+       "title": "Lantern Rite Gameplay Details",
+       "published": "2021-02-09",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": "정체와 기원",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "All sentences are supported by the quotes and the Lantern Rite fact.",
+     "quote": "Hello! Would you like to play a round of Theater Mechanicus?",
+     "sentences": [
+      {
+       "t_raw": "Lantern Rite에서 Theater Mechanicus는 축제를 이루는 **네 구획 가운데 하나**로 마련되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "해등절에서 기관 디펜스는 축제를 이루는 **네 구획 가운데 하나**로 마련되었다."
+      },
+      {
+       "t_raw": "Ruijin은 지나가는 이들에게 인사를 건네고는 Theater Mechanicus를 한 판 해보지 않겠느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 지나가는 이들에게 인사를 건네고는 기관 디펜스를 한 판 해보지 않겠느냐고 묻는다."
+      },
+      {
+       "t_raw": "권유에는 \"It's loads of fun!\" 같은 말이 따라붙고, 한가한 때에도 \"Try your hand at Theater Mechanicus...\"라고 중얼거린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "권유에는 \"It의 loads of fun!\" 같은 말이 따라붙고, 한가한 때에도 \"Try your hand at 기관 디펜스...\"라고 중얼거린다."
+      },
+      {
+       "t_raw": "헤어질 때에도 해보고 싶으면 말을 걸라고 남긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤어질 때에도 해보고 싶으면 말을 걸라고 남긴다."
+      },
+      {
+       "t_raw": "시작과 끝이 같은 권유로 묶이는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "시작과 끝이 같은 권유로 묶이는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103846",
+       "title": "Lantern Rite Gameplay Details",
+       "published": "2021-02-09",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Idle Quotes",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": [
+      "It",
+      "Try"
+     ]
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "All sentences follow from Q2 and the surrounding dialogue.",
+     "quote": "Do you see these things laid out on the table here? These are all important items used in Theater Mechanicus.",
+     "sentences": [
+      {
+       "t_raw": "Ruijin의 테이블 위에는 Theater Mechanicus에 쓰이는 물건들이 늘어져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금의 테이블 위에는 기관 디펜스에 쓰이는 물건들이 늘어져 있다."
+      },
+      {
+       "t_raw": "Ruijin은 그것들을 가리키며 모두 게임에 쓰이는 **중요한 물건**이라고 일러준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 그것들을 가리키며 모두 게임에 쓰이는 **중요한 물건**이라고 일러준다."
+      },
+      {
+       "t_raw": "무엇인지 묻는 말에는 테이블 위의 물건들을 앞세워 답하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "무엇인지 묻는 말에는 테이블 위의 물건들을 앞세워 답하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A1, M3, W2 and Q1; the interpretation follows.",
+     "quote": "Theater Mechanicus is a recurring event in Genshin Impact.",
+     "sentences": [
+      {
+       "t_raw": "Theater Mechanicus는 Genshin Impact에서 **반복해서 등장하는 이벤트**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기관 디펜스는 원신에서 **반복해서 등장하는 이벤트**다."
+      },
+      {
+       "t_raw": "Ruijin은 Liyue Harbor에서 이 게임을 만들었다고 말하며, 그것을 새로운 종류의 보드게임이라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서금은 리월항에서 이 게임을 만들었다고 말하며, 그것을 새로운 종류의 보드게임이라고 소개한다."
+      },
+      {
+       "t_raw": "그런데 Ruijin의 대사 제목은 'What's Theater Mechanicus?'이고, 그녀는 'Oh, never heard of it?'이라며 모르는 사람을 전제로 설명을 시작한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 서금의 대사 제목은 'What의 기관 디펜스?'이고, 그녀는 'Oh, never heard of it?'이라며 모르는 사람을 전제로 설명을 시작한다."
+      },
+      {
+       "t_raw": "발명가가 자기 게임을 소개하는 장면과, 그것을 모르는 이가 있다는 전제가 나란히 놓이는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "발명가가 자기 게임을 소개하는 장면과, 그것을 모르는 이가 있다는 전제가 나란히 놓이는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Theater Mechanicus",
+       "revision": 233758,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Theater Mechanicus/2021-02-10/Story",
+       "quest_ko": "리월・기관 디펜스",
+       "version": "1.3",
+       "speaker": "Ruijin"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103846",
+       "title": "Lantern Rite Gameplay Details",
+       "published": "2021-02-09",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "What",
+      "Oh"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by W1, and the interpretations are hedged and reasonable.",
+     "quote": "Theater Mechanicus is new kind of board game that I just invented.",
+     "sentences": [
+      {
+       "t_raw": "Theater Mechanicus는 Lantern Rite의 네 구획 중 하나로 등장했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기관 디펜스는 해등절의 네 구획 중 하나로 등장했다."
+      },
+      {
+       "t_raw": "이 게임의 이름에는 Theater가 들어가지만, 그것이 탁상 게임인 점과 어떻게 맞물리는지는 설명을 요구하는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 게임의 이름에는 Theater가 들어가지만, 그것이 탁상 게임인 점과 어떻게 맞물리는지는 설명을 요구하는 대목으로 보인다."
+      },
+      {
+       "t_raw": "탁상 게임에 Theater라는 이름이 붙은 까닭은 **남는 의문**이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "탁상 게임에 Theater라는 이름이 붙은 까닭은 **남는 의문**이다."
+      },
+      {
+       "t_raw": "Lantern Rite의 한 부분으로 등장한 이 이벤트가 반복 이벤트로 규정된 점은 이후 다시 모습을 드러낼 수 있음을 시사한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "해등절의 한 부분으로 등장한 이 이벤트가 반복 이벤트로 규정된 점은 이후 다시 모습을 드러낼 수 있음을 시사한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103846",
+       "title": "Lantern Rite Gameplay Details",
+       "published": "2021-02-09",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ruijin",
+       "revision": 127641,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103846",
+       "title": "Lantern Rite Gameplay Details",
+       "published": "2021-02-09",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "wiki",
+       "page": "Theater Mechanicus",
+       "revision": 233758,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Theater",
+      "Theater"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "A2 supports the point cost, the 50-75% refund and the cap on Mechanici. The interpretations follow from these.",
+     "quote": "Buying Mechanici requires a certain number of points, and selling Mechanici recuperates up to 50-75% of points spent.",
+     "sentences": [
+      {
+       "t_raw": "Mechanici를 세우려면 포인트를 지불해야 하고, 되팔면 들인 포인트의 **50~75%**가 돌아온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Mechanici를 세우려면 포인트를 지불해야 하고, 되팔면 들인 포인트의 **50~75%**가 돌아온다."
+      },
+      {
+       "t_raw": "환급률이 100%가 아니라는 것은 사고파는 과정에서 포인트가 온전히 보존되지 않는다는 뜻이므로, 배치를 바꾸려고 Mechanici를 자주 사고파는 운영은 그만큼 포인트를 흘리는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "환급률이 100%가 아니라는 것은 사고파는 과정에서 포인트가 온전히 보존되지 않는다는 뜻이므로, 배치를 바꾸려고 Mechanici를 자주 사고파는 운영은 그만큼 포인트를 흘리는 셈이다."
+      },
+      {
+       "t_raw": "게다가 한 판에 배치할 수 있는 Mechanici 수에는 제한이 있어, 포인트가 넉넉해도 배치 규모를 마음대로 늘릴 수는 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게다가 한 판에 배치할 수 있는 Mechanici 수에는 제한이 있어, 포인트가 넉넉해도 배치 규모를 마음대로 늘릴 수는 없다."
+      },
+      {
+       "t_raw": "결국 이 모드에서 포인트는 '얼마나 많이 세우느냐'만이 아니라 '어디에 세웠다가 어디로 옮기느냐'까지 함께 저울질해야 하는 자원이 된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "결국 이 모드에서 포인트는 '얼마나 많이 세우느냐'만이 아니라 '어디에 세웠다가 어디로 옮기느냐'까지 함께 저울질해야 하는 자원이 된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Theater Mechanicus",
+       "revision": 233758,
+       "section": "Basic Gameplay",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Mechanici",
+      "Mechanici",
+      "Mechanici"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "여기 탁자 위에 늘어놓은 것들이 보이나요? 이것들은 모두 Theater Mechanicus에서 쓰이는 중요한 물건들입니다.",
+     "en": "Do you see these things laid out on the table here? These are all important items used in Theater Mechanicus.",
+     "speaker": "Ruijin",
+     "source": {
+      "kind": "quest",
+      "quest": "Theater Mechanicus/2021-02-10/Story",
+      "quest_ko": "리월・기관 디펜스",
+      "version": "1.3",
+      "speaker": "Ruijin"
+     },
+     "t": "여기 탁자 위에 늘어놓은 것들이 보이나요? 이것들은 모두 기관 디펜스에서 쓰이는 중요한 물건들입니다.",
+     "speaker_ko": "서금"
+    },
+    {
+     "section": "정체와 기원",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아, 들어본 적이 없으신가요? 그럼 제가 소개해 드리죠. Theater Mechanicus는 바로 제가 발명한 일종의 테이블탑 게임입니다.",
+     "en": "Oh, never heard of it? Allow me to introduce it to you then. Theater Mechanicus is a kind of tabletop game invented by yours truly.",
+     "speaker": "Ruijin",
+     "source": {
+      "kind": "quest",
+      "quest": "Theater Mechanicus/2021-02-10/Story",
+      "quest_ko": "리월・기관 디펜스",
+      "version": "1.3",
+      "speaker": "Ruijin"
+     },
+     "t": "아, 들어본 적이 없으신가요? 그럼 제가 소개해 드리죠. 기관 디펜스는 바로 제가 발명한 일종의 테이블탑 게임입니다.",
+     "speaker_ko": "서금"
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "안녕하세요! Theater Mechanicus를 한 판 해보시겠어요?",
+     "en": "Hello! Would you like to play a round of Theater Mechanicus?",
+     "speaker": "Ruijin",
+     "source": {
+      "kind": "quest",
+      "quest": "Theater Mechanicus/2021-02-10/Story",
+      "quest_ko": "리월・기관 디펜스",
+      "version": "1.3",
+      "speaker": "Ruijin"
+     },
+     "t": "안녕하세요! 기관 디펜스를 한 판 해보시겠어요?",
+     "speaker_ko": "서금"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아, 들어본 적이 없으신가요? 그럼 제가 소개해 드리죠. Theater Mechanicus는 바로 제가 발명한 일종의 탁상 게임입니다.",
+     "en": "Oh, never heard of it? Allow me to introduce it to you then. Theater Mechanicus is a kind of tabletop game invented by yours truly.",
+     "speaker": "Ruijin",
+     "source": {
+      "kind": "quest",
+      "quest": "Theater Mechanicus/2021-02-10/Story",
+      "quest_ko": "리월・기관 디펜스",
+      "version": "1.3",
+      "speaker": "Ruijin"
+     },
+     "t": "아, 들어본 적이 없으신가요? 그럼 제가 소개해 드리죠. 기관 디펜스는 바로 제가 발명한 일종의 탁상 게임입니다.",
+     "speaker_ko": "서금"
+    }
+   ]
+  }
+ ]
+}

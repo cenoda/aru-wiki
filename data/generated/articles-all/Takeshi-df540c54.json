@@ -1,0 +1,913 @@
+{
+ "node": "Takeshi",
+ "articles": [
+  {
+   "node": "Takeshi",
+   "from_version": "5.4",
+   "cutoff": "2025-03-25T00:00:00Z",
+   "input": [
+    {
+     "page": "Takeshi",
+     "url": "https://genshin-impact.fandom.com/wiki/Takeshi",
+     "revision": 1723988
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 2365,
+   "input_cut": false,
+   "input_hash": "7d708d5d3127",
+   "writer": "ds-pro,glm-flash,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "S2: the Korean grammar makes the Shogun the speaker, but in the English Takeshi says the areas have shifted, and he says it at the ramen stand, not while controlling access. S3: the English never calls the Shogun a god, so 'between god and people' adds a fact.",
+     "quote": "I am a member of the Okuzumeshuu. I only take orders from the Almighty Shogun.",
+     "sentences": [
+      {
+       "t_raw": "Takeshi는 Inazuma City에 있는 NPC이자 Almighty Shogun의 경호를 맡는 Okuzumeshuu의 일원이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타케시는 이나즈마성에 있는 NPC이자 전능한 쇼군의 경호를 맡는 오쿠즈메슈의 일원이다."
+      },
+      {
+       "t_raw": "그는 Okuzumeshuu의 존재 이유를 Shogun이 언제나 믿고 부릴 수 있는 힘을 곁에 두는 것이라고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 오쿠즈메슈의 존재 이유를 쇼군이 언제나 믿고 부릴 수 있는 힘을 곁에 두는 것이라고 설명한다."
+      },
+      {
+       "t_raw": "라멘 가게에서 그는 Almighty Shogun이 Tenshukaku를 떠난 뒤에는 Okuzumeshuu가 지켜야 할 구역도 달라졌다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "라멘 가게에서 그는 전능한 쇼군이 천수각을 떠난 뒤에는 오쿠즈메슈가 지켜야 할 구역도 달라졌다고 말한다."
+      },
+      {
+       "t_raw": "Shogun의 호위대인 Okuzumeshuu 소속이면서도 정작 자신이 지키는 것은 일반 시민이라고 말하는 대목은, 그가 자신의 임무를 시민 보호 쪽으로도 이해하고 있음을 보여주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "쇼군의 호위대인 오쿠즈메슈 소속이면서도 정작 자신이 지키는 것은 일반 시민이라고 말하는 대목은, 그가 자신의 임무를 시민 보호 쪽으로도 이해하고 있음을 보여주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is hedged and follows from the trust and loyalty lines.",
+     "quote": "Generally speaking, we are the Almighty Shogun's bodyguards.",
+     "sentences": [
+      {
+       "t_raw": "Takeshi는 자신을 Okuzumeshuu의 일원이라고 소개하며, Almighty Shogun의 명만 따른다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타케시는 자신을 오쿠즈메슈의 일원이라고 소개하며, 전능한 쇼군의 명만 따른다고 밝힌다."
+      },
+      {
+       "t_raw": "Okuzumeshuu는 대체로 Almighty Shogun의 호위대다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오쿠즈메슈는 대체로 전능한 쇼군의 호위대다."
+      },
+      {
+       "t_raw": "조직이 존재하는 이유는 Almighty Shogun의 곁에 언제든 신뢰하고 배치할 수 있는 병력을 두는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조직이 존재하는 이유는 전능한 쇼군의 곁에 언제든 신뢰하고 배치할 수 있는 병력을 두는 것이다."
+      },
+      {
+       "t_raw": "그런 자리인 만큼 이곳에서는 **충성**이 가장 중요한 덕목으로 꼽힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런 자리인 만큼 이곳에서는 **충성**이 가장 중요한 덕목으로 꼽힌다."
+      },
+      {
+       "t_raw": "존재 이유가 신뢰와 배치로 설명되고 충성이 최우선으로 강조되는 점을 보면, Okuzumeshuu의 핵심은 전투력보다 충성에 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "존재 이유가 신뢰와 배치로 설명되고 충성이 최우선으로 강조되는 점을 보면, 오쿠즈메슈의 핵심은 전투력보다 충성에 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "trimmed",
+     "note": "The English only says he protects regular folks. It does not tie them to the area around the forbidden zone or to their daily life, so that detail is invented.",
+     "quote": "Of course the Almighty Shogun doesn't need people like us for protection. I'm just here to protect the regular folks.",
+     "sentences": [
+      {
+       "t_raw": "다만 Takeshi는 Almighty Shogun이 그들 같은 사람의 보호를 필요로 하지 않는다고 잘라 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 타케시는 전능한 쇼군이 그들 같은 사람의 보호를 필요로 하지 않는다고 잘라 말한다."
+      },
+      {
+       "t_raw": "자신이 지키는 것은 **일반 주민들**이라고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자신이 지키는 것은 **일반 주민들**이라고 덧붙인다."
+      },
+      {
+       "t_raw": "금지 구역에 누군가 침입하면 Almighty Shogun은 그 이유를 따지지 않을 것이라고도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "금지 구역에 누군가 침입하면 전능한 쇼군은 그 이유를 따지지 않을 것이라고도 한다."
+      },
+      {
+       "t_raw": "호위대라는 이름과 달리, 그가 실제로 신경 쓰는 대상은 Shogun의 안위가 아니라 금지 구역을 둘러싼 주민들의 일상 쪽에 가깝다고 볼 수 있다.",
+       "interp": true,
+       "dropped": true,
+       "t": "호위대라는 이름과 달리, 그가 실제로 신경 쓰는 대상은 쇼군의 안위가 아니라 금지 구역을 둘러싼 주민들의 일상 쪽에 가깝다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Tenshukaku",
+     "status": "accepted",
+     "note": "The English never places the off-limits area at Tenshukaku. Tenshukaku appears only in the ramen-stand dialogue, as where the player saw him before.",
+     "quote": "This place is off-limits. No unauthorized access for outlanders.",
+     "sentences": [
+      {
+       "t_raw": "Takeshi는 outlander에게 이곳은 출입 금지 구역이며 허가 없는 접근은 안 된다고 알린다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "타케시는 외지인에게 이곳은 출입 금지 구역이며 허가 없는 접근은 안 된다고 알린다.",
+       "polish": {
+        "from": "타케시는 outlander에게 이곳은 출입 금지 구역이며 허가 없는 접근은 안 된다고 알린다.",
+        "text": "타케시는 외지인에게 이곳은 출입 금지 구역이며 허가 없는 접근은 안 된다고 알린다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그가 내세우는 근거는 Almighty Shogun께서 홀로 있기를 청했다는 것이고, 그래서 방문객은 허락되지 않는다는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 내세우는 근거는 전능한 쇼군께서 홀로 있기를 청했다는 것이고, 그래서 방문객은 허락되지 않는다는 것이다."
+      },
+      {
+       "t_raw": "허가증을 확인하는 통상의 출입 통제와 Shogun의 은둔이라는 두 사정이 같은 자리에서 겹쳐 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "허가증을 확인하는 통상의 출입 통제와 쇼군의 은둔이라는 두 사정이 같은 자리에서 겹쳐 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Lonesome Euthymia",
+       "quest_ko": "쇼군 홀로 정토에",
+       "version": "2.1",
+       "speaker": "Takeshi"
+      }
+     ],
+     "heading": "작중 행적 — 천수각",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Tenshukaku",
+     "status": "accepted",
+     "note": "All sentences are supported by Q5, Q10 and Q7, and by Q2 for the Pass Permit.",
+     "quote": "Wait... This is... authentic!?",
+     "sentences": [
+      {
+       "t_raw": "여행자들이 Guuji Yae의 **Pass Permit**을 내세우자 Takeshi는 어리석은 소리라며, Lady Guuji는 그 Pass Permit을 다른 사람에게 건네지 않는다고, 이름난 여행자라 해도 마찬가지라고 잘라 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자들이 구우지 야에의 **통행증**을 내세우자 타케시는 어리석은 소리라며, Lady Guuji는 그 통행증을 다른 사람에게 건네지 않는다고, 이름난 여행자라 해도 마찬가지라고 잘라 말한다."
+      },
+      {
+       "t_raw": "그러나 Pass Permit을 직접 확인한 순간 그는 이것이 진짜라며 놀라고 만다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 통행증을 직접 확인한 순간 그는 이것이 진짜라며 놀라고 만다."
+      },
+      {
+       "t_raw": "이내 Shogun께서 명하신 바이니 막아설 수는 없다며 길을 비켜 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이내 쇼군께서 명하신 바이니 막아설 수는 없다며 길을 비켜 준다."
+      },
+      {
+       "t_raw": "Guuji Yae의 신뢰에 대한 확신으로 완강하게 막아섰던 그는 그 확신이 뒤집히자 Shogun의 명령이라는 원칙으로 되돌아간 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "구우지 야에의 신뢰에 대한 확신으로 완강하게 막아섰던 그는 그 확신이 뒤집히자 쇼군의 명령이라는 원칙으로 되돌아간 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Lonesome Euthymia",
+       "quest_ko": "쇼군 홀로 정토에",
+       "version": "2.1",
+       "speaker": "Takeshi"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Lonesome Euthymia",
+       "quest_ko": "쇼군 홀로 정토에",
+       "version": "2.1",
+       "speaker": "Takeshi"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Lonesome Euthymia",
+       "quest_ko": "쇼군 홀로 정토에",
+       "version": "2.1",
+       "speaker": "Takeshi"
+      }
+     ],
+     "heading": "작중 행적 — 천수각",
+     "latin_left": [
+      "Lady Guuji"
+     ]
+    },
+    {
+     "section": "작중 행적 — 라멘 가게",
+     "status": "accepted",
+     "note": "All sentences are supported by A22, Q4 and Q1.",
+     "quote": "Glory to— Err, I mean, glorious day we're having! How may I help you?",
+     "sentences": [
+      {
+       "t_raw": "라멘 가게에 선 Takeshi는 손님을 맞으며 **\"Glory to—\"**까지 말했다가 황급히 \"glorious day\"로 말을 바꾸고 무엇을 도와드릴지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라멘 가게에 선 타케시는 손님을 맞으며 **\"글로리 to—\"**까지 말했다가 황급히 \"glorious day\"로 말을 바꾸고 무엇을 도와드릴지 묻는다."
+      },
+      {
+       "t_raw": "여행자에게는 Guuji Yae가 방문을 미리 알려 주었다며 들어오라고 안내하고, Almighty Shogun도 안에 계시니 기다리게 하지 않는 편이 좋겠다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자에게는 구우지 야에가 방문을 미리 알려 주었다며 들어오라고 안내하고, 전능한 쇼군도 안에 계시니 기다리게 하지 않는 편이 좋겠다고 덧붙인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Caught in a Dream",
+       "quest_ko": "꿈처럼",
+       "version": "5.4",
+       "speaker": "Takeshi"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Caught in a Dream",
+       "quest_ko": "꿈처럼",
+       "version": "5.4",
+       "speaker": "Takeshi"
+      }
+     ],
+     "heading": "작중 행적 — 라멘 가게",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 라멘 가게",
+     "status": "accepted",
+     "note": "The English has Takeshi cough and say 'I guess nothing gets past you', but he is never described as laughing it off. The laughing is an addition.",
+     "quote": "I guess nothing gets past you, huh? Anyway... since the Almighty Shogun is no longer at Tenshukaku, the areas that we, the Okuzumeshuu, must protect have... also shifted.",
+     "sentences": [
+      {
+       "t_raw": "라멘 가게에서 여행자가 Tenshukaku에서 본 적이 있다고 하자 그는 *cough* 하며 “I guess nothing gets past you, huh?”라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "라멘 가게에서 여행자가 천수각에서 본 적이 있다고 하자 그는 *기침* 하며 “역시 당신은 아무것도 못 속이시는군요, 그렇죠?”라고 말한다.",
+       "polish": {
+        "from": "라멘 가게에서 여행자가 천수각에서 본 적이 있다고 하자 그는 *cough* 하며 “I guess nothing gets past you, huh?”라고 말한다.",
+        "text": "라멘 가게에서 여행자가 천수각에서 본 적이 있다고 하자 그는 *기침* 하며 “역시 당신은 아무것도 못 속이시는군요, 그렇죠?”라고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그러고는 Almighty Shogun이 더 이상 Tenshukaku에 머물지 않게 되면서 **Okuzumeshuu가 지켜야 할 구역**도 옮겨졌다고 털어놓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러고는 전능한 쇼군이 더 이상 천수각에 머물지 않게 되면서 **오쿠즈메슈가 지켜야 할 구역**도 옮겨졌다고 털어놓는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A24",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 라멘 가게",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 라멘 가게",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation in (2) follows reasonably from his being at the ramen stand.",
+     "quote": "Our thoughts and prayers go out to you, however. And if you should need a bowl of Kitsune Ramen to replenish your strength, just say the word!",
+     "sentences": [
+      {
+       "t_raw": "상황은 전해 들었다며, Okuzumeshuu의 일원으로서 여행자와 Shogun이 적을 만나러 가는 동안 **아무것도 할 수 없다**는 것이 부끄럽다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상황은 전해 들었다며, 오쿠즈메슈의 일원으로서 여행자와 쇼군이 적을 만나러 가는 동안 **아무것도 할 수 없다**는 것이 부끄럽다고 말한다."
+      },
+      {
+       "t_raw": "그래도 마음과 기도는 보낸다며, 기력을 보충하려면 Kitsune Ramen 한 그릇을 말하라고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 마음과 기도는 보낸다며, 기력을 보충하려면 Kitsune Ramen 한 그릇을 말하라고 권한다."
+      },
+      {
+       "t_raw": "싸울 수 없다고 털어놓은 직후 라멘 한 그릇을 권하는 대목은, 그가 할 수 있는 몫이 손님 응대로 좁혀진 처지를 보여주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "싸울 수 없다고 털어놓은 직후 라멘 한 그릇을 권하는 대목은, 그가 할 수 있는 몫이 손님 응대로 좁혀진 처지를 보여주는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A28",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 라멘 가게",
+     "latin_left": [
+      "Kitsune Ramen"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by A10, A13, Q3, Q6 and Q8. The interpretation in (2) is reasonable.",
+     "quote": "I only take orders from the Almighty Shogun.",
+     "sentences": [
+      {
+       "t_raw": "Takeshi에게 Almighty Shogun은 Okuzumeshuu가 유일하게 명을 받는 존재이며, 그 존재 이유부터가 Shogun 곁에 언제나 신뢰할 수 있는 힘을 두는 데 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타케시에게 전능한 쇼군은 오쿠즈메슈가 유일하게 명을 받는 존재이며, 그 존재 이유부터가 쇼군 곁에 언제나 신뢰할 수 있는 힘을 두는 데 있다."
+      },
+      {
+       "t_raw": "그 자리를 비춘 시선은 단순한 복종을 넘어, Shogun이 병을 앓았다는 소문을 듣고 '사실인가'라고 되묻고, 회복된 모습을 보고는 '무사해서 다행이다'라고 안도하는 데서 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 자리를 비춘 시선은 단순한 복종을 넘어, 쇼군이 병을 앓았다는 소문을 듣고 '사실인가'라고 되묻고, 회복된 모습을 보고는 '무사해서 다행이다'라고 안도하는 데서 드러난다."
+      },
+      {
+       "t_raw": "호위라는 직분을 넘어 진심으로 주군의 안위를 걱정하는 인물이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "호위라는 직분을 넘어 진심으로 주군의 안위를 걱정하는 인물이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "To Traverse the Mortal Plane",
+       "quest_ko": "부세의 풍류를 겪고",
+       "version": "2.1",
+       "speaker": "Takeshi"
+      },
+      {
+       "kind": "quest",
+       "quest": "To Traverse the Mortal Plane",
+       "quest_ko": "부세의 풍류를 겪고",
+       "version": "2.1",
+       "speaker": "Takeshi"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Lonesome Euthymia",
+       "quest_ko": "쇼군 홀로 정토에",
+       "version": "2.1",
+       "speaker": "Takeshi"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Q4 only shows Guuji Yae told him about the visit. The claim that this trust extends to everyday service is an interpretation stated as fact.",
+     "quote": "Guuji Yae is only authorized to hold that Pass Permit because of the trust that the Almighty Shogun places in her and her alone...",
+     "sentences": [
+      {
+       "t_raw": "Guuji Yae에 대한 그의 태도도 신뢰의 연장선에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구우지 야에에 대한 그의 태도도 신뢰의 연장선에 있다."
+      },
+      {
+       "t_raw": "여행자가 Pass Permit을 빌리자고 하자 그는 Lady Guuji가 다른 이에게 허락증을 넘겨준 적이 없다며 일축했지만, 동시에 그녀가 Permit을 가질 수 있는 것은 Almighty Shogun이 오직 그녀에게만 거는 신뢰 덕분이라고 설명했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 통행증을 빌리자고 하자 그는 Lady Guuji가 다른 이에게 허락증을 넘겨준 적이 없다며 일축했지만, 동시에 그녀가 Permit을 가질 수 있는 것은 전능한 쇼군이 오직 그녀에게만 거는 신뢰 덕분이라고 설명했다."
+      },
+      {
+       "t_raw": "Shogun이 신뢰하는 사람은 Takeshi에게도 신뢰할 대상인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "쇼군이 신뢰하는 사람은 타케시에게도 신뢰할 대상인 셈이다."
+      },
+      {
+       "t_raw": "5.4에는 Takeshi가 Guuji Yae가 방문 이야기를 미리 전해주었다며 손님을 맞이하고 들어오라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "5.4에는 타케시가 구우지 야에가 방문 이야기를 미리 전해주었다며 손님을 맞이하고 들어오라고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Lonesome Euthymia",
+       "quest_ko": "쇼군 홀로 정토에",
+       "version": "2.1",
+       "speaker": "Takeshi"
+      },
+      {
+       "kind": "quest",
+       "quest": "As Though Caught in a Dream",
+       "quest_ko": "꿈처럼",
+       "version": "5.4",
+       "speaker": "Takeshi"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Lonesome Euthymia",
+       "quest_ko": "쇼군 홀로 정토에",
+       "version": "2.1",
+       "speaker": "Takeshi"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Lady Guuji",
+      "Permit"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The armor has 'pale gold' accents, not pale purple (연보라빛).",
+     "quote": "He is equipped with a juumonji yari (cross-shaped spear), whose shaft is lavender colored, and contains the Shogunate crest under the spearhead.",
+     "sentences": [
+      {
+       "t_raw": "Takeshi의 복장은 일본 봉건 시대의 ashigaru를 본떠 표준화된 제복으로, 보라빛 회색 shitagi에 라벤더색 kobakama, 흰 양말과 waraji 샌들을 신고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타케시의 복장은 일본 봉건 시대의 아시가루를 본떠 표준화된 제복으로, 보라빛 회색 시타기에 라벤더색 고바카마, 흰 양말과 와라지 샌들을 신고 있다.",
+       "polish": {
+        "from": "타케시의 복장은 일본 봉건 시대의 ashigaru를 본떠 표준화된 제복으로, 보라빛 회색 shitagi에 라벤더색 kobakama, 흰 양말과 waraji 샌들을 신고 있다.",
+        "text": "타케시의 복장은 일본 봉건 시대의 아시가루를 본떠 표준화된 제복으로, 보라빛 회색 시타기에 라벤더색 고바카마, 흰 양말과 와라지 샌들을 신고 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "옅은 금색 장식이 들어간 가지색 갑옷은 Inazuma Shogunate의 문장이 새겨진 dou(흉갑)를 비롯해 kote, haidate, sune-ate로 이루어져 있으며, 같은 문장이 들어간 jingasa도 쓰고 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "옅은 금색 장식이 들어간 가지색 갑옷은 이나즈마 막부의 문장이 새겨진 도우(흉갑)를 비롯해 코테, 하이다테, 스네아테로 이루어져 있으며, 같은 문장이 들어간 진가사도 쓰고 있다.",
+       "polish": {
+        "from": "옅은 금색 장식이 들어간 가지색 갑옷은 이나즈마 막부의 문장이 새겨진 dou(흉갑)를 비롯해 kote, haidate, sune-ate로 이루어져 있으며, 같은 문장이 들어간 jingasa도 쓰고 있다.",
+        "text": "옅은 금색 장식이 들어간 가지색 갑옷은 이나즈마 막부의 문장이 새겨진 도우(흉갑)를 비롯해 코테, 하이다테, 스네아테로 이루어져 있으며, 같은 문장이 들어간 진가사도 쓰고 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "무장은 창끝 아래에 막부 문장이 새겨진 라벤더색 자루의 juumonji yari(십자창)이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무장은 창끝 아래에 막부 문장이 새겨진 라벤더색 자루의 주몬지 야리(십자창)이다.",
+       "polish": {
+        "from": "무장은 창끝 아래에 막부 문장이 새겨진 라벤더색 자루의 juumonji yari(십자창)이다.",
+        "text": "무장은 창끝 아래에 막부 문장이 새겨진 라벤더색 자루의 주몬지 야리(십자창)이다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Profile > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Both idle quotes are supported. The wording about settling into a duty posture is a mild paraphrase.",
+     "quote": "\"This is no place to loaf around.\"",
+     "sentences": [
+      {
+       "t_raw": "idle 대사에서는 \"이곳에서 빈둥거릴 곳은 아니다\"라며 근무 태세를 다지는 모습이 보이고, \"Duel Before the Throne\" 이벤트 중에는 \"무슨 일이 일어나고 있는 거지...\"라고 혼잣말을 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대기 대사에서는 \"이곳에서 빈둥거릴 곳은 아니다\"라며 근무 태세를 다지는 모습이 보이고, \"어전시합\" 이벤트 중에는 \"무슨 일이 일어나고 있는 거지...\"라고 혼잣말을 한다.",
+       "polish": {
+        "from": "idle 대사에서는 \"이곳에서 빈둥거릴 곳은 아니다\"라며 근무 태세를 다지는 모습이 보이고, \"어전시합\" 이벤트 중에는 \"무슨 일이 일어나고 있는 거지...\"라고 혼잣말을 한다.",
+        "text": "대기 대사에서는 \"이곳에서 빈둥거릴 곳은 아니다\"라며 근무 태세를 다지는 모습이 보이고, \"어전시합\" 이벤트 중에는 \"무슨 일이 일어나고 있는 거지...\"라고 혼잣말을 한다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Idle Quotes",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Idle Quotes",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Idle Quotes",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Idle Quotes",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 0 adds 'Executor-style speech' (집행관식 화법); the English only shows him starting 'Glory to—' and correcting himself, and never mentions Executors. Sentence 1 mistranslates 'I guess nothing gets past you' (he is admitting the player is sharp) as him admitting he will not let anything through.",
+     "quote": "Glory to— Err, I mean, glorious day we're having! How may I help you?",
+     "sentences": [
+      {
+       "t_raw": "라멘 가게에서 그는 “영광이— 아니, 제 말은, 훌륭한 날씨네요! 무엇을 도와드릴까요?”라며 손님을 맞이한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "라멘 가게에서 그는 “영광이— 아니, 제 말은, 훌륭한 날씨네요! 무엇을 도와드릴까요?”라며 손님을 맞이한다."
+      },
+      {
+       "t_raw": "이때 손님이 Tenshukaku에서 본 적이 있다고 지적하면 그는 기침을 하며 “I guess nothing gets past you, huh?”라고 말한 뒤, Almighty Shogun이 더 이상 Tenshukaku에 없게 되면서 Okuzumeshuu가 지켜야 할 구역도 달라졌다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "이때 손님이 천수각에서 본 적이 있다고 지적하면 그는 기침을 하며 “역시 당신은 아무것도 못 속이시는군요, 그렇죠?”라고 말한 뒤, 전능한 쇼군이 더 이상 천수각에 없게 되면서 오쿠즈메슈가 지켜야 할 구역도 달라졌다고 말한다.",
+       "polish": {
+        "from": "이때 손님이 천수각에서 본 적이 있다고 지적하면 그는 기침을 하며 “I guess nothing gets past you, huh?”라고 말한 뒤, 전능한 쇼군이 더 이상 천수각에 없게 되면서 오쿠즈메슈가 지켜야 할 구역도 달라졌다고 말한다.",
+        "text": "이때 손님이 천수각에서 본 적이 있다고 지적하면 그는 기침을 하며 “역시 당신은 아무것도 못 속이시는군요, 그렇죠?”라고 말한 뒤, 전능한 쇼군이 더 이상 천수각에 없게 되면서 오쿠즈메슈가 지켜야 할 구역도 달라졌다고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "경비병의 충성이 몸에 밴 나머지 인사까지 섞여 나오는 셈으로, 조직의 역할이 바뀌어도 성격은 그대로라는 인상을 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "경비병의 충성이 몸에 밴 나머지 인사까지 섞여 나오는 셈으로, 조직의 역할이 바뀌어도 성격은 그대로라는 인상을 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A24",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 1 says he has the same standing as ordinary Shogunate troops. The English says he is an Okuzumeshuu member who takes orders only from the Shogun, so the interpretation conflicts with the material. The farewell in sentence 0 is fine.",
+     "quote": "Yes, depart now.",
+     "sentences": [
+      {
+       "t_raw": "작별 인사는 정중한 \"예, 이제 가시죠\" 정도로 짧다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작별 인사는 정중한 \"예, 이제 가시죠\" 정도로 짧다."
+      },
+      {
+       "t_raw": "복장은 막부 병사의 틀을 따르지만, 대사에서는 Okuzumeshuu 소속으로 Almighty Shogun의 명령만 받는다고 밝힌다는 점에서, 그가 일반 병력과는 다른 위치에 있는 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "복장은 막부 병사의 틀을 따르지만, 대사에서는 오쿠즈메슈 소속으로 전능한 쇼군의 명령만 받는다고 밝힌다는 점에서, 그가 일반 병력과는 다른 위치에 있는 인물로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Profile > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Takeshi",
+       "revision": 1723988,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "알겠습니다. 그렇다면 Almighty Shogun의 명이니, 저는 당신들을 막을 수 없습니다.",
+     "en": "Understood. Then, as the Shogun has ordered, I must not stand in your way.",
+     "speaker": "Takeshi",
+     "source": {
+      "kind": "quest",
+      "quest": "The Lonesome Euthymia",
+      "quest_ko": "쇼군 홀로 정토에",
+      "version": "2.1",
+      "speaker": "Takeshi"
+     },
+     "t": "알겠습니다. 그렇다면 전능한 쇼군의 명이니, 저는 당신들을 막을 수 없습니다.",
+     "speaker_ko": "타케시"
+    },
+    {
+     "section": "작중 행적 — Tenshukaku",
+     "status": "accepted",
+     "note": "Faithful translation. The plain register differs from the English but the meaning is the same.",
+     "t_raw": "Almighty Shogun께서는 홀로 있기를 청하셨다. 방문객은 허락되지 않는다.",
+     "en": "The Almighty Shogun has requested solitude. No visitors allowed.",
+     "speaker": "Takeshi",
+     "source": {
+      "kind": "quest",
+      "quest": "The Lonesome Euthymia",
+      "quest_ko": "쇼군 홀로 정토에",
+      "version": "2.1",
+      "speaker": "Takeshi"
+     },
+     "t": "전능한 쇼군께서는 홀로 있기를 청하셨다. 방문객은 허락되지 않는다.",
+     "speaker_ko": "타케시"
+    },
+    {
+     "section": "작중 행적 — 라멘 가게",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "에헴... Almighty Shogun께서도 안에 계십니다. 기다리게 하지 않는 편이 좋겠습니다.",
+     "en": "Ahem... The Almighty Shogun is also inside. It's best not to keep her waiting.",
+     "speaker": "Takeshi",
+     "source": {
+      "kind": "quest",
+      "quest": "As Though Caught in a Dream",
+      "quest_ko": "꿈처럼",
+      "version": "5.4",
+      "speaker": "Takeshi"
+     },
+     "t": "에헴... 전능한 쇼군께서도 안에 계십니다. 기다리게 하지 않는 편이 좋겠습니다.",
+     "speaker_ko": "타케시"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Guuji Yae가 그 Pass Permit을 소지할 수 있는 것은, Almighty Shogun이 오직 그녀 하나에게만 거는 신뢰 때문입니다...",
+     "en": "Guuji Yae is only authorized to hold that Pass Permit because of the trust that the Almighty Shogun places in her and her alone...",
+     "speaker": "Takeshi",
+     "source": {
+      "kind": "quest",
+      "quest": "The Lonesome Euthymia",
+      "quest_ko": "쇼군 홀로 정토에",
+      "version": "2.1",
+      "speaker": "Takeshi"
+     },
+     "t": "구우지 야에가 그 통행증을 소지할 수 있는 것은, 전능한 쇼군이 오직 그녀 하나에게만 거는 신뢰 때문입니다...",
+     "speaker_ko": "타케시"
+    }
+   ]
+  }
+ ]
+}

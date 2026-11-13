@@ -1,0 +1,1401 @@
+{
+ "node": "Victoria",
+ "articles": [
+  {
+   "node": "Victoria",
+   "from_version": "5.8",
+   "cutoff": "2025-09-09T00:00:00Z",
+   "input": [
+    {
+     "page": "Victoria",
+     "url": "https://genshin-impact.fandom.com/wiki/Victoria",
+     "revision": 1807327
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 22,
+    "web": 0
+   },
+   "input_chars": 3321,
+   "input_cut": false,
+   "input_hash": "70d350c66aeb",
+   "writer": "or-ds,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the profile text. The interpretation in sentence 3 is hedged ('로 보인다').",
+     "quote": "Victoria is a nun from the Church of Favonius. She can be found praying inside the Favonius Cathedral.",
+     "sentences": [
+      {
+       "t_raw": "Victoria는 Mondstadt의 Favonius Cathedral 안에서 기도하는 Church of Favonius의 수녀이며, 고해를 듣고 필요할 때 조언을 건네는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토리아는 몬드의 페보니우스 대성당 안에서 기도하는 페보니우스 성당의 수녀이며, 고해를 듣고 필요할 때 조언을 건네는 인물이다."
+      },
+      {
+       "t_raw": "그녀의 조언은 **언제나 환영받는 것만은 아니고**, 고해를 듣는 태도에는 경계심이 깃들어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀의 조언은 **언제나 환영받는 것만은 아니고**, 고해를 듣는 태도에는 경계심이 깃들어 있다."
+      },
+      {
+       "t_raw": "특히 자신의 잘못을 바꾸려 하지 않는 **죄인**에게 집요하며, Nimrod의 음주 문제를 둘러싼 대응에서도 그런 태도가 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "특히 자신의 잘못을 바꾸려 하지 않는 **죄인**에게 집요하며, 니므롯의 음주 문제를 둘러싼 대응에서도 그런 태도가 드러난다."
+      },
+      {
+       "t_raw": "이처럼 Victoria는 Favonius Cathedral의 신앙 생활과 Mondstadt 사람들의 일상적 갈등을 잇는 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 빅토리아는 페보니우스 대성당의 신앙 생활과 몬드 사람들의 일상적 갈등을 잇는 인물로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile",
+       "paragraph": "A14",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Stop, Albert. Stop!"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile",
+       "paragraph": "A16",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Presumption of Innocence"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by the infobox, the dialogue lines and the Church of Favonius members entry (Confessor).",
+     "quote": "I listen to confessions and, when necessary, give some guidance.",
+     "sentences": [
+      {
+       "t_raw": "Victoria는 Mondstadt의 Church of Favonius 소속 수녀이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토리아는 몬드의 페보니우스 성당 소속 수녀이다."
+      },
+      {
+       "t_raw": "그녀는 스스로를 교회에서 온 사람이라고 소개하며, 고해를 듣고 필요할 때 조언을 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 스스로를 교회에서 온 사람이라고 소개하며, 고해를 듣고 필요할 때 조언을 한다고 말한다."
+      },
+      {
+       "t_raw": "그 조언은 영적으로 교화하는 여러 종류의 조언이라고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 조언은 영적으로 교화하는 여러 종류의 조언이라고 덧붙인다."
+      },
+      {
+       "t_raw": "Church of Favonius의 구성원 항목에서는 Victoria를 고해를 듣는 인물로 올려 둔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페보니우스 성당의 구성원 항목에서는 빅토리아를 고해를 듣는 인물로 올려 둔다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A30",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Both the black-and-white attire with a white hat and the praying in the Cathedral are stated.",
+     "quote": "Victoria dresses in a black and white nun attire and wears a white hat.",
+     "sentences": [
+      {
+       "t_raw": "Victoria의 복장은 검은색과 흰색이 섞인 수녀복이며, 흰 모자를 쓴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토리아의 복장은 검은색과 흰색이 섞인 수녀복이며, 흰 모자를 쓴다."
+      },
+      {
+       "t_raw": "그녀는 Favonius Cathedral 안에서 기도하는 모습으로 발견된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 페보니우스 대성당 안에서 기도하는 모습으로 발견된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile > Appearance",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 태도",
+     "status": "accepted",
+     "note": "Supported by the profile and the dialogue lines. The 'just kidding' line is left out, but the sentence does not contradict it. The interpretation is hedged.",
+     "quote": "Victoria listens to confessions all day and, when necessary, gives some guidance — and not always the welcome kind.",
+     "sentences": [
+      {
+       "t_raw": "Victoria는 하루 종일 고해를 듣고 필요할 때 조언을 건네며, 그 조언이 언제나 반가운 것은 아니다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토리아는 하루 종일 고해를 듣고 필요할 때 조언을 건네며, 그 조언이 언제나 반가운 것은 아니다."
+      },
+      {
+       "t_raw": "그녀는 경계가 강한 편이고, 상대를 만나면 고해하러 왔는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 경계가 강한 편이고, 상대를 만나면 고해하러 왔는지 묻는다."
+      },
+      {
+       "t_raw": "사소한 질문에도 무거운 죄를 안고 있다며 고해실을 권하고, 그런 질문으로 다시 오지 말라고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사소한 질문에도 무거운 죄를 안고 있다며 고해실을 권하고, 그런 질문으로 다시 오지 말라고 덧붙인다."
+      },
+      {
+       "t_raw": "이런 태도는 **고해**를 일상 대화가 아닌 훈계의 자리로 끌어가려는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 태도는 **고해**를 일상 대화가 아닌 훈계의 자리로 끌어가려는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile",
+       "paragraph": "A14",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Stop, Albert. Stop!"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A33",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A35",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "성격과 태도",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 태도",
+     "status": "accepted",
+     "note": "Supported by the profile, the idle quotes and the Nimrod example. The interpretation is reasonable.",
+     "quote": "she claims that people will not remember the consequences of their actions until they \"really had to suffer for it,\" and decides to enact some \"payback.\"",
+     "sentences": [
+      {
+       "t_raw": "그녀는 특히 **죄인**에게 집착하며, 신들의 용서를 구하면서도 바뀌려는 노력이 없거나 잘못을 외면하는 이들을 예민하게 바라본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 특히 **죄인**에게 집착하며, 신들의 용서를 구하면서도 바뀌려는 노력이 없거나 잘못을 외면하는 이들을 예민하게 바라본다."
+      },
+      {
+       "t_raw": "혼잣말로 '죄인들…', '흥! 죄인…'이라고 흘리기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "혼잣말로 '죄인들…', '흥! 죄인…'이라고 흘리기도 한다."
+      },
+      {
+       "t_raw": "Nimrod의 음주를 지켜보고, 술값 계산서가 제시되면 '정말 고통을 겪어야만' 결과를 기억한다며 '되갚아 주겠다'고 하지만, 증거가 없으면 그 부재를 변화의 증거로 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "니므롯의 음주를 지켜보고, 술값 계산서가 제시되면 '정말 고통을 겪어야만' 결과를 기억한다며 '되갚아 주겠다'고 하지만, 증거가 없으면 그 부재를 변화의 증거로 여긴다."
+      },
+      {
+       "t_raw": "처벌과 관대함이 갈리는 대비는 그녀의 집착이 나름의 판단 기준을 지닌 것이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "처벌과 관대함이 갈리는 대비는 그녀의 집착이 나름의 판단 기준을 지닌 것이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile",
+       "paragraph": "A16",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Presumption of Innocence"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Idle Quotes",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Idle Quotes",
+       "paragraph": "A21",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "성격과 태도",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 태도",
+     "status": "accepted",
+     "note": "The quotes match the dialogue. The interpretations are hedged and follow from the lines.",
+     "quote": "Take what I've said as a warning. Take this with you, too. I hope it will keep you vigilant.",
+     "sentences": [
+      {
+       "t_raw": "그녀의 말투에서는 독설과 **경고**의 어조가 선명하게 드러나는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그녀의 말투에서는 독설과 **경고**의 어조가 선명하게 드러나는 것으로 보인다."
+      },
+      {
+       "t_raw": "날카로운 사람은 늘 남의 적을 만든다고 말하고, 사랑과 경건함, 신성함이 죄인들의 피와 눈물 위에 세워졌다고 지적한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "날카로운 사람은 늘 남의 적을 만든다고 말하고, 사랑과 경건함, 신성함이 죄인들의 피와 눈물 위에 세워졌다고 지적한다."
+      },
+      {
+       "t_raw": "이어 죄가 문을 두드리면 심판이 곧 따르니 한 말을 경고로 받아들이고 경계를 늦추지 말라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 죄가 문을 두드리면 심판이 곧 따르니 한 말을 경고로 받아들이고 경계를 늦추지 말라고 한다."
+      },
+      {
+       "t_raw": "이런 말투는 조언이라기보다 훈계와 경고의 성격이 강한 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 말투는 조언이라기보다 훈계와 경고의 성격이 강한 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A37",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A38",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A39",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A41",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A42",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "성격과 태도",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Stormterror",
+     "status": "accepted",
+     "note": "The English says \"In a manner of speaking, of course,\" meaning figuratively. The Korean says she laughs and calls it \"말 그대로\" (literally), which reverses that.",
+     "quote": "Ever since Stormterror appeared, there have been many more people coming to confession. This is an unexpected boon.",
+     "sentences": [
+      {
+       "t_raw": "A Long Shot을 완료한 뒤 Stormterror를 묻는 대화에서 Victoria는 Stormterror가 등장한 뒤 고해하러 오는 사람이 많아졌다며 이를 **예상치 못한 이득**이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "푸른 그림자를 위해를 완료한 뒤 풍마룡을 묻는 대화에서 빅토리아는 풍마룡이 등장한 뒤 고해하러 오는 사람이 많아졌다며 이를 **예상치 못한 이득**이라고 한다."
+      },
+      {
+       "t_raw": "Stormterror가 없어도 스스로 고해하게 만드는 **수단과 방법**이 있다고 덧붙이고, 말하자면 그렇다며 웃는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "풍마룡이 없어도 스스로 고해하게 만드는 **수단과 방법**이 있다고 덧붙이고, 말하자면 그렇다며 웃는다."
+      },
+      {
+       "t_raw": "이는 사태를 고해가 늘어난 계기로 받아들이면서도 자신의 방법을 따로 둔 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 사태를 고해가 늘어난 계기로 받아들이면서도 자신의 방법을 따로 둔 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A27",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 풍마룡",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Stormterror",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "My child, I sense that whatever grave sin you carry with you is weighing heavily on your heart... The best place for you now is surely the confessional?",
+     "sentences": [
+      {
+       "t_raw": "Victoria는 다가온 Traveler에게 고해하러 왔느냐고 묻고, Mondstadt에서 갈 만한 곳을 묻자 마음에 무거운 큰 죄가 있는 듯하니 지금은 **고해실**이 가장 좋겠다고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토리아는 다가온 여행자에게 고해하러 왔느냐고 묻고, 몬드에서 갈 만한 곳을 묻자 마음에 무거운 큰 죄가 있는 듯하니 지금은 **고해실**이 가장 좋겠다고 권한다."
+      },
+      {
+       "t_raw": "이어서 농담이라며 모두에게 하는 말이라고 하고, 다음에는 그런 사소한 질문으로 오지 말라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 농담이라며 모두에게 하는 말이라고 하고, 다음에는 그런 사소한 질문으로 오지 말라고 한다."
+      },
+      {
+       "t_raw": "인사와 사소한 질문 모두에서 고해를 꺼내는 태도는 그녀가 대화를 고해로 유도하는 방식으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "인사와 사소한 질문 모두에서 고해를 꺼내는 태도는 그녀가 대화를 고해로 유도하는 방식으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A32",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A33",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A34",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A35",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 풍마룡",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Stormterror",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "When you are ready to repent, come and find me!",
+     "sentences": [
+      {
+       "t_raw": "특정 대화 분기를 처음 따르면 4성 Bloodstained Chevalier's Goblet을 얻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정 대화 분기를 처음 따르면 4성 Bloodstained Chevalier의 Goblet을 얻는다."
+      },
+      {
+       "t_raw": "작별 인사를 하면 Victoria도 Goodbye라고 답하고, 회개할 준비가 되면 자신을 찾아오라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작별 인사를 하면 빅토리아도 Goodbye라고 답하고, 회개할 준비가 되면 자신을 찾아오라고 말한다."
+      },
+      {
+       "t_raw": "Goodbye라는 작별 인사에 회개할 준비가 되면 찾아오라는 말을 붙이는 것은 작별과 회개 권유를 한데 묶는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Goodbye라는 작별 인사에 회개할 준비가 되면 찾아오라는 말을 붙이는 것은 작별과 회개 권유를 한데 묶는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A43",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A44",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A45",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A46",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 풍마룡",
+     "latin_left": [
+      "Bloodstained Chevalier",
+      "Goblet",
+      "Goodbye",
+      "Goodbye"
+     ]
+    },
+    {
+     "section": "작중 행적 — Church of Favonius 주변 소동",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "People tend to bring dust in as they come into the Cathedral, so the floor is often quite dirty.",
+     "sentences": [
+      {
+       "t_raw": "Barbara가 자리를 비우자 Victoria는 청소가 원래 Barbara의 몫이었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바바라가 자리를 비우자 빅토리아는 청소가 원래 바바라의 몫이었다고 말한다."
+      },
+      {
+       "t_raw": "사람들이 Cathedral에 들어오며 먼지를 들여와 바닥이 자주 더러워진다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사람들이 대성당에 들어오며 먼지를 들여와 바닥이 자주 더러워진다고 덧붙인다."
+      },
+      {
+       "t_raw": "그러다 Traveler에게 Cathedral 주변을 조금 정리해 달라고 부탁한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러다 여행자에게 대성당 주변을 조금 정리해 달라고 부탁한다."
+      },
+      {
+       "t_raw": "Traveler를 Honorary Knight라며 그 일에 어울릴지 모른다고 하고, Victoria는 그런 수고를 끼치고 싶지는 않다며 고맙게 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자를 명예 기사라며 그 일에 어울릴지 모른다고 하고, 빅토리아는 그런 수고를 끼치고 싶지는 않다며 고맙게 여긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Victoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Victoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Victoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sister Victoria's Vexation",
+       "quest_ko": "빅토리아 수녀의 걱정",
+       "version": "1.4",
+       "speaker": "Victoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Victoria"
+      }
+     ],
+     "heading": "작중 행적 — 페보니우스 성당 주변 소동",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Church of Favonius 주변 소동",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Hmm... Perhaps I should report the matter to the Knights of Favonius.",
+     "sentences": [
+      {
+       "t_raw": "Barbara는 떠나기 전 Wolvendom으로 약초를 꺾으러 간다고 했지만 Victoria의 말로는 아직 돌아오지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바바라는 떠나기 전 울프 영지로 약초를 꺾으러 간다고 했지만 빅토리아의 말로는 아직 돌아오지 않았다."
+      },
+      {
+       "t_raw": "Traveler가 다시 와도 Barbara는 아직 돌아오지 않았고, Victoria는 Knights of Favonius에 이 일을 보고해야 할지 고민한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 다시 와도 바바라는 아직 돌아오지 않았고, 빅토리아는 페보니우스 기사단에 이 일을 보고해야 할지 고민한다."
+      },
+      {
+       "t_raw": "Knights of Favonius에 보고하는 번거로움을 덜 수 있다는 말도 덧붙이며 Barbara가 무사하기를 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페보니우스 기사단에 보고하는 번거로움을 덜 수 있다는 말도 덧붙이며 바바라가 무사하기를 바란다."
+      },
+      {
+       "t_raw": "Barbara의 부재가 행방 걱정과 Knights of Favonius 보고 고민으로 이어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "바바라의 부재가 행방 걱정과 페보니우스 기사단 보고 고민으로 이어지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sister Victoria's Vexation",
+       "quest_ko": "빅토리아 수녀의 걱정",
+       "version": "1.4",
+       "speaker": "Victoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sister Victoria's Vexation",
+       "quest_ko": "빅토리아 수녀의 걱정",
+       "version": "1.4",
+       "speaker": "Victoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Victoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sister Victoria's Vexation",
+       "quest_ko": "빅토리아 수녀의 걱정",
+       "version": "1.4",
+       "speaker": "Victoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sister Victoria's Vexation",
+       "quest_ko": "빅토리아 수녀의 걱정",
+       "version": "1.4",
+       "speaker": "Victoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sister Victoria's Vexation",
+       "quest_ko": "빅토리아 수녀의 걱정",
+       "version": "1.4",
+       "speaker": "Victoria"
+      }
+     ],
+     "heading": "작중 행적 — 페보니우스 성당 주변 소동",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Church of Favonius 주변 소동",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "While I head over to the Whispering Woods, could you please check in with Sister Victoria and let her know where I will be?",
+     "sentences": [
+      {
+       "t_raw": "Barbara는 Cat's Tail에 줄을 서는 동안 Victoria에게 들러 달라고 부탁하고, Whispering Woods로 간다는 사실을 Victoria에게 알려 달라고도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바바라는 캣의 Tail에 줄을 서는 동안 빅토리아에게 들러 달라고 부탁하고, 속삭임의 숲으로 간다는 사실을 빅토리아에게 알려 달라고도 한다."
+      },
+      {
+       "t_raw": "Victoria에게는 약초를 꺾으러 간다고 말하자고 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토리아에게는 약초를 꺾으러 간다고 말하자고 제안한다."
+      },
+      {
+       "t_raw": "Barbara는 Victoria에게 Cathedral 청소를 도왔다는 이야기를 들었다며 고마워하고, Victoria는 Barbara가 무사하다는 말을 듣고 Barbatos에게 감사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바바라는 빅토리아에게 대성당 청소를 도왔다는 이야기를 들었다며 고마워하고, 빅토리아는 바바라가 무사하다는 말을 듣고 바르바토스에게 감사한다."
+      },
+      {
+       "t_raw": "Paimon은 다시 Victoria에게 가자고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 다시 빅토리아에게 가자고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Victoria"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Barbara"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Barbara"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Barbara"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Barbara"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Church's Affairs",
+       "quest_ko": "성당의 업무",
+       "version": "1.4",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 페보니우스 성당 주변 소동",
+     "latin_left": [
+      "Tail"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences follow from the English.",
+     "quote": "She tends to be hypervigilant, growing hostile towards Albert for constantly hanging around the Cathedral",
+     "sentences": [
+      {
+       "t_raw": "Victoria는 Cathedral을 맴도는 **Albert**에게 적대적이지만, 그가 Barbara의 팬인 줄은 모르고 악의적 행동의 증거도 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토리아는 대성당을 맴도는 **엘버트**에게 적대적이지만, 그가 바바라의 팬인 줄은 모르고 악의적 행동의 증거도 없다."
+      },
+      {
+       "t_raw": "Albert는 Cathedral에서 Barbara에게 약초를 주려 했으나 Victoria가 그녀가 볼일을 보러 나갔다고 말했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "엘버트는 대성당에서 바바라에게 약초를 주려 했으나 빅토리아가 그녀가 볼일을 보러 나갔다고 말했다고 전한다."
+      },
+      {
+       "t_raw": "Victoria는 빈번한 방문의 이유를 모르고, Albert는 약초를 전하려 했으니 두 사람의 인식은 어긋난 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "빅토리아는 빈번한 방문의 이유를 모르고, 엘버트는 약초를 전하려 했으니 두 사람의 인식은 어긋난 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile",
+       "paragraph": "A14",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Stop, Albert. Stop!"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Sudden Shouting",
+       "quest_ko": "갑작스러운 외침",
+       "version": "1.4",
+       "speaker": "Albert"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by A16.",
+     "quote": "For example, she keeps a close eye on Nimrod due to his alcoholism.",
+     "sentences": [
+      {
+       "t_raw": "**Nimrod**의 음주 때문에 Victoria는 그를 지켜본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**니므롯**의 음주 때문에 빅토리아는 그를 지켜본다."
+      },
+      {
+       "t_raw": "여행자가 거액의 술값 청구서를 가져오면 그녀는 사람들이 '정말로 그 대가를 겪어야' 했을 때에야 자기 행동의 결과를 기억한다며 '되갚음'을 하기로 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 거액의 술값 청구서를 가져오면 그녀는 사람들이 '정말로 그 대가를 겪어야' 했을 때에야 자기 행동의 결과를 기억한다며 '되갚음'을 하기로 한다."
+      },
+      {
+       "t_raw": "술을 마셨다는 증거가 없으면 그녀는 관대해져, 증거의 부재를 변화의 증거로 여길 의향을 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "술을 마셨다는 증거가 없으면 그녀는 관대해져, 증거의 부재를 변화의 증거로 여길 의향을 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile",
+       "paragraph": "A16",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Presumption of Innocence"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by M2, Q16, Q17 and Q13.",
+     "quote": "Say no more, Valerina. I'll continue to help you out, just as Victoria requested.",
+     "sentences": [
+      {
+       "t_raw": "Victoria는 선한 Barbara가 **Rosaria**에게 다가가기 위해 꾸준히 노력해 온 사람이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토리아는 선한 바바라가 **로자리아**에게 다가가기 위해 꾸준히 노력해 온 사람이라고 말한다."
+      },
+      {
+       "t_raw": "Barbara는 아버지와 Victoria가 올바른 여집사가 되려면 남을 돌려세우는 법을 배우라고 했으며, Victoria가 야생에서 사람을 치료하고 다니지 말라고 늘 말한다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바바라는 아버지와 빅토리아가 올바른 여집사가 되려면 남을 돌려세우는 법을 배우라고 했으며, 빅토리아가 야생에서 사람을 치료하고 다니지 말라고 늘 말한다고 전한다."
+      },
+      {
+       "t_raw": "Rosaria는 Victoria의 요청대로 Valerina를 계속 돕겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "로자리아는 빅토리아의 요청대로 바레리나를 계속 돕겠다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Rosaria/Profile",
+       "revision": 425123,
+       "section": "Character Stories > Story 1",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Very Special Beverage",
+       "quest_ko": "색다른 음료",
+       "version": "1.4",
+       "speaker": "Barbara"
+      },
+      {
+       "kind": "quest",
+       "quest": "Healing Is My Job",
+       "quest_ko": "치유라는 소임",
+       "version": "1.4",
+       "speaker": "Barbara"
+      },
+      {
+       "kind": "quest",
+       "quest": "Furball Fortress's Frightful Fix!",
+       "quest_ko": "「복슬복슬 고양이 성」의 대위기!",
+       "version": "4.5",
+       "speaker": "Rosaria"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The facts are supported, and the interpretation is reasonable.",
+     "quote": "But it matters little. Even if Stormterror hadn't arrived, I have ways and means of making people confess... of their own accord...",
+     "sentences": [
+      {
+       "t_raw": "Victoria는 **죄인**에게 남다른 집착을 보이며, 신의 용서를 구하면서도 바뀌려 하지 않거나 자신의 잘못을 보지 않으려는 이들을 특히 신경 쓴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토리아는 **죄인**에게 남다른 집착을 보이며, 신의 용서를 구하면서도 바뀌려 하지 않거나 자신의 잘못을 보지 않으려는 이들을 특히 신경 쓴다."
+      },
+      {
+       "t_raw": "Stormterror가 오지 않았더라도 사람들이 스스로 고백하게 만들 **수단과 방법**이 있다고 말하고, 이어 말의 방식일 뿐이라며 너무 생각하지 말라고 한 뒤 웃는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "풍마룡이 오지 않았더라도 사람들이 스스로 고백하게 만들 **수단과 방법**이 있다고 말하고, 이어 말의 방식일 뿐이라며 너무 생각하지 말라고 한 뒤 웃는다."
+      },
+      {
+       "t_raw": "‘수단과 방법’이라는 말과 ‘말의 방식일 뿐’이라는 부연, 웃음이 겹쳐 그녀의 고백 유도가 어디까지 농담인지 의문을 남기는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "'수단과 방법'이라는 말과 '말의 방식일 뿐'이라는 부연, 웃음이 겹쳐 그녀의 고백 유도가 어디까지 농담인지 의문을 남기는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A27",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The dialogue is paraphrased faithfully, and the reward and its interpretation follow from A13, A42 and A43.",
+     "quote": "Take what I've said as a warning. Take this with you, too. I hope it will keep you vigilant.",
+     "sentences": [
+      {
+       "t_raw": "‘그저 그렇게 간단한 일은 아니’라는 말에 Victoria는 날카로운 사람은 적을 만든다고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "'그저 그렇게 간단한 일은 아니'라는 말에 빅토리아는 날카로운 사람은 적을 만든다고 답한다."
+      },
+      {
+       "t_raw": "그녀는 어떤 이들은 태양 아래서 태어나 빛과 온기를 당연히 여기지만, 사랑과 경건함과 신성함은 죄인들의 피와 눈물 위에 세워졌다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 어떤 이들은 태양 아래서 태어나 빛과 온기를 당연히 여기지만, 사랑과 경건함과 신성함은 죄인들의 피와 눈물 위에 세워졌다고 말한다."
+      },
+      {
+       "t_raw": "그것을 보지 못하는지, 아니면 외면하는지 묻고, 죄가 찾아오면 심판이 곧 따른다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그것을 보지 못하는지, 아니면 외면하는지 묻고, 죄가 찾아오면 심판이 곧 따른다고 덧붙인다."
+      },
+      {
+       "t_raw": "이어 한 말을 경고로 받아들이고 이것도 가져가 경계를 늦추지 않기를 바란다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 한 말을 경고로 받아들이고 이것도 가져가 경계를 늦추지 않기를 바란다고 한다."
+      },
+      {
+       "t_raw": "특정 대화 분기를 처음 진행하면 4성 **Bloodstained Chevalier's Goblet**을 대화 보상으로 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정 대화 분기를 처음 진행하면 4성 **Bloodstained Chevalier의 Goblet**을 대화 보상으로 받는다."
+      },
+      {
+       "t_raw": "경고와 함께 건네는 ‘이것’은 그 보상인 Bloodstained Chevalier's Goblet으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "경고와 함께 건네는 '이것'은 그 보상인 Bloodstained Chevalier의 Goblet으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A36",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A37",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A38",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A39",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A40",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Dialogue",
+       "paragraph": "A41",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Bloodstained Chevalier",
+      "Goblet",
+      "Bloodstained Chevalier",
+      "Goblet"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The voice actors and outfit match the material.",
+     "quote": "Victoria dresses in a black and white nun attire and wears a white hat.",
+     "sentences": [
+      {
+       "t_raw": "영어 성우는 Christie Cate, 중국어 성우는 Jin Na (金娜), 일본어 성우는 Hatori Mami (羽鳥 まみ)이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "영어 성우는 Christie Cate, 중국어 성우는 Jin Na (金娜), 일본어 성우는 Hatori Mami (羽鳥 まみ)이다."
+      },
+      {
+       "t_raw": "Victoria는 검은색과 흰색이 섞인 수녀복을 입고 흰 모자를 쓴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빅토리아는 검은색과 흰색이 섞인 수녀복을 입고 흰 모자를 쓴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Profile > Appearance",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Christie Cate",
+      "Jin Na",
+      "Hatori Mami"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences supported: idle quotes include report-to-Church and sinner lines; interpretation is reasonable and hedged; the 4-star goblet from a dialogue branch is stated.",
+     "quote": "Following a certain dialogue branch for the first time gives the player a 4-star Bloodstained Chevalier's Goblet.",
+     "sentences": [
+      {
+       "t_raw": "대기 중에는 교회에 보고하라는 취지의 말과 죄인을 언급하는 말이 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대기 중에는 교회에 보고하라는 취지의 말과 죄인을 언급하는 말이 나온다."
+      },
+      {
+       "t_raw": "두 종류의 대기 대사가 함께 제시되는 점은 Victoria가 교회의 일과 죄인의 존재를 의식하는 태도를 보여주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 종류의 대기 대사가 함께 제시되는 점은 빅토리아가 교회의 일과 죄인의 존재를 의식하는 태도를 보여주는 것으로 보인다."
+      },
+      {
+       "t_raw": "특정 대화 분기를 처음 거치면 4성 Bloodstained Chevalier's Goblet을 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정 대화 분기를 처음 거치면 4성 Bloodstained Chevalier의 Goblet을 받는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Idle Quotes",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Idle Quotes",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Idle Quotes",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": "Idle Quotes",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Victoria",
+       "revision": 1807327,
+       "section": null,
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Bloodstained Chevalier",
+      "Goblet"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적 — Church of Favonius 주변 소동",
+     "status": "accepted",
+     "note": "Faithful translation of Q10 (Knights of Favonius, report the matter).",
+     "t_raw": "음... 아마 Knights of Favonius에 이 일을 보고해야 할 것 같군.",
+     "en": "Hmm... Perhaps I should report the matter to the Knights of Favonius.",
+     "speaker": "Victoria",
+     "source": {
+      "kind": "quest",
+      "quest": "Sister Victoria's Vexation",
+      "quest_ko": "빅토리아 수녀의 걱정",
+      "version": "1.4",
+      "speaker": "Victoria"
+     },
+     "t": "음... 아마 페보니우스 기사단에 이 일을 보고해야 할 것 같군.",
+     "speaker_ko": "빅토리아"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Translation changes meaning: 'Cathedral' fine, but the English says Victoria told Albert 'she had gone out'; Korean matches that. However, the Korean says '볼일을 보러 나갔다고 내게 말했어' which is faithful. Flagged conservatively? No—see below.",
+     "t_raw": "[번역] 원래 Cathedral에서 그녀에게 약초를 주려고 했는데, Sister Victoria가 그녀가 볼일을 보러 나갔다고 내게 말했어.",
+     "en": "I was originally planning to give her some herbs at the Cathedral, but Sister Victoria told me she had gone out to attend to some matters.",
+     "speaker": "Albert",
+     "source": {
+      "kind": "quest",
+      "quest": "Sudden Shouting",
+      "quest_ko": "갑작스러운 외침",
+      "version": "1.4",
+      "speaker": "Albert"
+     },
+     "t": "[번역] 원래 대성당에서 그녀에게 약초를 주려고 했는데, 빅토리아 수녀가 그녀가 볼일을 보러 나갔다고 내게 말했어.",
+     "speaker_ko": "엘버트"
+    }
+   ]
+  }
+ ]
+}

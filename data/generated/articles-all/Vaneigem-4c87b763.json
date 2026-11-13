@@ -1,0 +1,626 @@
+{
+ "node": "Vaneigem",
+ "articles": [
+  {
+   "node": "Vaneigem",
+   "from_version": "4.0",
+   "cutoff": "2023-09-26T00:00:00Z",
+   "input": [
+    {
+     "page": "Vaneigem",
+     "url": "https://genshin-impact.fandom.com/wiki/Vaneigem",
+     "revision": 1347576
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 1274,
+   "input_cut": false,
+   "input_hash": "ba3273dc43ae",
+   "writer": "or-ds,qwen,glm-flash,ds-pro,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "It is a pleasure to have met you on this fine day, dear guest. My name is Vaneigem, and I am the owner of this establishment.",
+     "sentences": [
+      {
+       "t_raw": "Vaneigem은 Fontaine의 Court of Fontaine에 있는 Hotel Debord의 주인이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바네겜은 폰타인의 폰타인성에 있는 드보르 호텔의 주인이다."
+      },
+      {
+       "t_raw": "그는 **Art is the key ingredient in fine dining**이라는 말을 자신이 가장 강하게 믿는 신념으로 내세우며, 식당에 예술가들을 자주 초대해 공연을 연다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **Art is the key ingredient in fine dining**이라는 말을 자신이 가장 강하게 믿는 신념으로 내세우며, 식당에 예술가들을 자주 초대해 공연을 연다고 말한다."
+      },
+      {
+       "t_raw": "그중 특히 인기 있는 공연자로 마술 공연자 Mr. Lyney와 Ms. Lynette를 꼽는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그중 특히 인기 있는 공연자로 마술 공연자 Mr. 리니와 Ms. 리넷을 꼽는다."
+      },
+      {
+       "t_raw": "메뉴와 공연에 대한 의견을 묻고 더 포괄적인 서비스를 제공하겠다는 태도와 예술을 식사의 핵심 재료로 보는 신념을 함께 보면, 그는 식사와 예술을 한 공간에서 즐기게 하려는 주인으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "메뉴와 공연에 대한 의견을 묻고 더 포괄적인 서비스를 제공하겠다는 태도와 예술을 식사의 핵심 재료로 보는 신념을 함께 보면, 그는 식사와 예술을 한 공간에서 즐기게 하려는 주인으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Art",
+      "Mr",
+      "Ms"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The English does not say Vaneigem greets first. The player says 'Hello there' (A6) and he replies. 'First greeted' adds an unsupported detail.",
+     "quote": "It is a pleasure to have met you on this fine day, dear guest. My name is Vaneigem, and I am the owner of this establishment.",
+     "sentences": [
+      {
+       "t_raw": "Vaneigem은 Fontaine의 Court of Fontaine에 있는 Hotel Debord에 자리한 오픈 월드 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바네겜은 폰타인의 폰타인성에 있는 드보르 호텔에 자리한 오픈 월드 NPC다."
+      },
+      {
+       "t_raw": "그는 찾아온 손님에게 좋은 날 만나게 되어 기쁘다며, 자신의 이름이 Vaneigem이고 이곳의 주인이라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 찾아온 손님에게 좋은 날 만나게 되어 기쁘다며, 자신의 이름이 바네겜이고 이곳의 주인이라고 밝힌다."
+      },
+      {
+       "t_raw": "손님을 dear guest라 부르며 인사와 자기소개로 대화를 여는 태도에서, 그가 응대의 출발점을 손님을 맞이하는 말에 두고 있음이 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "손님을 친애하는 손님이라 부르며 인사와 자기소개로 대화를 여는 태도에서, 그가 응대의 출발점을 손님을 맞이하는 말에 두고 있음이 드러난다.",
+       "polish": {
+        "from": "손님을 dear guest라 부르며 인사와 자기소개로 대화를 여는 태도에서, 그가 응대의 출발점을 손님을 맞이하는 말에 두고 있음이 드러난다.",
+        "text": "손님을 친애하는 손님이라 부르며 인사와 자기소개로 대화를 여는 태도에서, 그가 응대의 출발점을 손님을 맞이하는 말에 두고 있음이 드러난다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts are supported, and the interpretation follows from the English.",
+     "quote": "If you have any comments or suggestions regarding the menu or performances, please do speak your mind. I will do my best to provide you with more comprehensive services.",
+     "sentences": [
+      {
+       "t_raw": "**Hotel Debord의 주인**으로서 그는 메뉴나 공연에 관해 의견이나 제안이 있으면 주저하지 말고 말해 달라고 청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**드보르 호텔의 주인**으로서 그는 메뉴나 공연에 관해 의견이나 제안이 있으면 주저하지 말고 말해 달라고 청한다."
+      },
+      {
+       "t_raw": "그리고 손님에게 더욱 포괄적인 서비스를 제공하기 위해 최선을 다하겠다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그리고 손님에게 더욱 포괄적인 서비스를 제공하기 위해 최선을 다하겠다고 덧붙인다."
+      },
+      {
+       "t_raw": "손님이 들려주는 말을 서비스 개선의 재료로 삼는 셈인데, 자기소개 직후에 이 청을 꺼내는 점에서 응대 원칙이 손님의 목소리를 듣는 일과 맞닿아 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "손님이 들려주는 말을 서비스 개선의 재료로 삼는 셈인데, 자기소개 직후에 이 청을 꺼내는 점에서 응대 원칙이 손님의 목소리를 듣는 일과 맞닿아 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Hotel Debord",
+     "status": "accepted",
+     "note": "The sentences are supported. The idle line and the greeting are combined loosely but not falsely.",
+     "quote": "Art is the key ingredient in fine dining",
+     "sentences": [
+      {
+       "t_raw": "Vaneigem은 Hotel Debord에서 **좋은 예술과 좋은 음식**을 감탄하며 좋은 날 만난 손님을 맞는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바네겜은 드보르 호텔에서 **좋은 예술과 좋은 음식**을 감탄하며 좋은 날 만난 손님을 맞는다."
+      },
+      {
+       "t_raw": "그는 메뉴나 공연에 대한 의견과 제안을 말해 달라고 권하고, 예술 이야기를 꺼내면 식당에 자주 초청하는 예술가들 중 가장 인기 있는 마술 공연자로 Mr. Lyney와 Ms. Lynette를 꼽는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 메뉴나 공연에 대한 의견과 제안을 말해 달라고 권하고, 예술 이야기를 꺼내면 식당에 자주 초청하는 예술가들 중 가장 인기 있는 마술 공연자로 Mr. 리니와 Ms. 리넷을 꼽는다."
+      },
+      {
+       "t_raw": "그가 강하게 믿는 **예술은 정찬의 핵심 재료**라는 신념은 이런 문화적 분위기가 널리 퍼지기를 바라는 말로 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 강하게 믿는 **예술은 정찬의 핵심 재료**라는 신념은 이런 문화적 분위기가 널리 퍼지기를 바라는 말로 이어진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 드보르 호텔",
+     "latin_left": [
+      "Mr",
+      "Ms"
+     ]
+    },
+    {
+     "section": "작중 행적 — Hotel Debord",
+     "status": "accepted",
+     "note": "The sentences are supported. 'Impressive' is the player's line, and Vaneigem's thanks, treat, and farewell are all given.",
+     "quote": "Farewell, dear guest. I hope that Hotel Debord shall leave you with wondrous memories.",
+     "sentences": [
+      {
+       "t_raw": "손님이 \"Impressive.\"라며 감탄하면 Vaneigem은 감사를 표하고 개인적인 감사 선물로 달콤한 간식을 내놓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손님이 \"Impressive.\"라며 감탄하면 바네겜은 감사를 표하고 개인적인 감사 선물로 달콤한 간식을 내놓는다."
+      },
+      {
+       "t_raw": "식사 인사와 \"Farewell, dear guest.\"라는 작별 인사로 대화를 마무리하며 Hotel Debord가 좋은 추억으로 남기를 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "식사 인사와 \"안녕히 가세요, 친애하는 손님.\"라는 작별 인사로 대화를 마무리하며 드보르 호텔이 좋은 추억으로 남기를 바란다.",
+       "polish": {
+        "from": "식사 인사와 \"Farewell, dear guest.\"라는 작별 인사로 대화를 마무리하며 드보르 호텔이 좋은 추억으로 남기를 바란다.",
+        "text": "식사 인사와 \"안녕히 가세요, 친애하는 손님.\"라는 작별 인사로 대화를 마무리하며 드보르 호텔이 좋은 추억으로 남기를 바란다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "감사 선물과 작별 인사는 손님의 기억에 식당을 남기려는 배려로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "감사 선물과 작별 인사는 손님의 기억에 식당을 남기려는 배려로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 드보르 호텔",
+     "latin_left": [
+      "Impressive"
+     ]
+    },
+    {
+     "section": "운영과 예술관",
+     "status": "accepted",
+     "note": "The sentences are supported, and the interpretation is a reasonable reading of 'key ingredient'.",
+     "quote": "Art is the key ingredient in fine dining.",
+     "sentences": [
+      {
+       "t_raw": "Vaneigem는 **예술은 훌륭한 식사의 핵심 재료**라는 말을 가장 강하게 믿는다고 밝히며, 혼잣말에서도 ‘핵심 재료’라는 대목이 흘러나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바네겜은 **예술은 훌륭한 식사의 핵심 재료**라는 말을 가장 강하게 믿는다고 밝히며, 혼잣말에서도 '핵심 재료'라는 대목이 흘러나온다."
+      },
+      {
+       "t_raw": "좋은 예술과 좋은 음식이 함께하는 삶을 두고 그는 멋진 삶이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "좋은 예술과 좋은 음식이 함께하는 삶을 두고 그는 멋진 삶이라고 말한다."
+      },
+      {
+       "t_raw": "이렇게 예술과 음식을 같은 편에 놓는 태도는, 예술이 접시 위의 요리와 다름없이 식사를 완성하는 한 재료라는 뜻으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 예술과 음식을 같은 편에 놓는 태도는, 예술이 접시 위의 요리와 다름없이 식사를 완성하는 한 재료라는 뜻으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Idle Quotes",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Idle Quotes",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "운영과 예술관",
+     "latin_left": []
+    },
+    {
+     "section": "운영과 예술관",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation in 3 follows from A8, A10 and A11.",
+     "quote": "As you know, we often invite artists to perform here at our restaurant. The most popular of these are the magical performers Mr. Lyney and Ms. Lynette.",
+     "sentences": [
+      {
+       "t_raw": "Hotel Debord에는 자주 예술가들이 초대되어 공연을 하고, 그중 가장 인기 있는 이들은 마술 공연자 Mr. Lyney와 Ms. Lynette라고 그는 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "드보르 호텔에는 자주 예술가들이 초대되어 공연을 하고, 그중 가장 인기 있는 이들은 마술 공연자 Mr. 리니와 Ms. 리넷라고 그는 설명한다."
+      },
+      {
+       "t_raw": "손님에게는 메뉴와 공연에 대한 의견을 함께 말해 달라고 청한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손님에게는 메뉴와 공연에 대한 의견을 함께 말해 달라고 청한다."
+      },
+      {
+       "t_raw": "그는 이곳의 문화적 분위기가 널리 퍼지기를 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 이곳의 문화적 분위기가 널리 퍼지기를 바란다."
+      },
+      {
+       "t_raw": "예술을 식사의 핵심 재료로 여기는 신념은 공연 초대와 공연에 대한 의견 청취로 이어지며, 식당의 예술은 메뉴와 나란히 **운영의 한 축**을 이루는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "예술을 식사의 핵심 재료로 여기는 신념은 공연 초대와 공연에 대한 의견 청취로 이어지며, 식당의 예술은 메뉴와 나란히 **운영의 한 축**을 이루는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "운영과 예술관",
+     "latin_left": [
+      "Mr",
+      "Ms"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The owner role is given in A7. The two interpretations are hedged or reasonably inferred from 'most popular' and the art-and-dining belief.",
+     "quote": "The most popular of these are the magical performers Mr. Lyney and Ms. Lynette.",
+     "sentences": [
+      {
+       "t_raw": "Hotel Debord의 주인 Vaneigem은 식당에서 예술가들을 초청해 공연을 선보이고 있으며, 그중에서도 가장 인기 있는 공연자로 마술 공연자인 Mr. Lyney와 Ms. Lynette를 꼽는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "드보르 호텔의 주인 바네겜은 식당에서 예술가들을 초청해 공연을 선보이고 있으며, 그중에서도 가장 인기 있는 공연자로 마술 공연자인 Mr. 리니와 Ms. 리넷을 꼽는다."
+      },
+      {
+       "t_raw": "그는 이 두 사람의 공연이 Hotel Debord의 손님들에게 제공하는 볼거리라는 점을 자랑스럽게 여기는 듯 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그는 이 두 사람의 공연이 드보르 호텔의 손님들에게 제공하는 볼거리라는 점을 자랑스럽게 여기는 듯 보인다."
+      },
+      {
+       "t_raw": "즉 Mr. Lyney와 Ms. Lynette의 마술 공연은 Vaneigem의 예술과 미식을 결합하려는 운영 철학이 실제로 손님들의 사랑을 받고 있다는 증거라 할 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즉 Mr. 리니와 Ms. 리넷의 마술 공연은 바네겜의 예술과 미식을 결합하려는 운영 철학이 실제로 손님들의 사랑을 받고 있다는 증거라 할 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Mr",
+      "Ms",
+      "Mr",
+      "Ms"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "trimmed",
+     "note": "Sentence 4 claims he never omits 'dear guest' in his greetings. This is false: A8 and A14 ('Enjoy your meal') omit it, and the claim overgeneralizes.",
+     "quote": "Farewell, dear guest. I hope that Hotel Debord shall leave you with wondrous memories.",
+     "sentences": [
+      {
+       "t_raw": "Vaneigem과의 대화에서 특정 분기를 처음으로 선택하면 보상으로 Ile flottante 세 개를 받을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바네겜과의 대화에서 특정 분기를 처음으로 선택하면 보상으로 일 플로탕트 세 개를 받을 수 있다.",
+       "polish": {
+        "from": "바네겜과의 대화에서 특정 분기를 처음으로 선택하면 보상으로 Ile flottante 세 개를 받을 수 있다.",
+        "text": "바네겜과의 대화에서 특정 분기를 처음으로 선택하면 보상으로 일 플로탕트 세 개를 받을 수 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "손님이 그의 이야기에 감탄한다고 말하면 Vaneigem은 고마움을 전하며 달콤한 간식을 개인적인 감사 선물로 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손님이 그의 이야기에 감탄한다고 말하면 바네겜은 고마움을 전하며 달콤한 간식을 개인적인 감사 선물로 건넨다."
+      },
+      {
+       "t_raw": "헤어질 때는 \"즐거운 식사 되길\"이라는 말과 함께 잠시 인사를 나눈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤어질 때는 \"즐거운 식사 되길\"이라는 말과 함께 잠시 인사를 나눈다."
+      },
+      {
+       "t_raw": "마지막 작별 인사에서는 Hotel Debord가 손님에게 아름다운 추억을 남겨 주기를 바란다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마지막 작별 인사에서는 드보르 호텔이 손님에게 아름다운 추억을 남겨 주기를 바란다고 덧붙인다."
+      },
+      {
+       "t_raw": "인사말마다 \"친애하는 손님\"이라는 호칭을 빠뜨리지 않는 것으로 보아, 손님 응대가 그의 대화 스타일에 깊이 밴 습관이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": true,
+       "t": "인사말마다 \"친애하는 손님\"이라는 호칭을 빠뜨리지 않는 것으로 보아, 손님 응대가 그의 대화 스타일에 깊이 밴 습관이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaneigem",
+       "revision": 1347576,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

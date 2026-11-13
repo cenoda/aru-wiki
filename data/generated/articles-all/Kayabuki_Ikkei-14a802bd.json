@@ -15,46 +15,46 @@
    "input_counts": {
     "mentions": 0,
     "lines": 24,
-    "web": 0
+    "web": 1
    },
    "input_chars": 6219,
    "input_cut": false,
-   "input_hash": "32393eae7d79",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "input_hash": "ad8c2e1aa063",
+   "writer": "ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Me? I don't have any fighting chops. I only wish to record the dazzling performances of the fighters.",
+     "status": "accepted",
+     "note": "All sentences are supported or reasonable interpretation.",
+     "quote": "Being able to recreate such glorious splendor using words on a page could also be considered a crowning achievement of martial artistry, right?",
      "sentences": [
       {
-       "t_raw": "Kayabuki Ikkei는 Hyakunin Ikki와 Hues of the Violet Garden에서 등장한 이벤트 전용 NPC다.",
+       "t_raw": "Kayabuki Ikkei는 Hyakunin Ikki와 Hues of the Violet Garden에서 등장한 이벤트 전용 NPC이자, 스스로를 소설가라 부르는 Inazuma의 인물이다.",
        "interp": false,
        "dropped": false,
-       "t": "카야부키 잇케이는 백 명의 봉기와 빛나는 자색 정원에서 등장한 이벤트 전용 NPC다."
+       "t": "카야부키 잇케이는 백 명의 봉기와 빛나는 자색 정원에서 등장한 이벤트 전용 NPC이자, 스스로를 소설가라 부르는 이나즈마의 인물이다."
       },
       {
-       "t_raw": "**무사의 싸움을 글로 남기려는 작가**로, 어릴 적에는 Iwakura나 Kitain 같은 무사와 악마 사냥꾼을 꿈꾸었지만 재능이 부족함을 깨닫고 무사 이야기를 쓰기로 했다.",
+       "t_raw": "여러 차례 열린 Hyakunin Ikki 자리에서 그는 낯익은 얼굴로 참가자들에게 말을 걸어 대회의 내력과 소식을 늘어놓고, 자신이 쓴 소설을 권하는 사람이다.",
        "interp": false,
        "dropped": false,
-       "t": "**무사의 싸움을 글로 남기려는 작가**로, 어릴 적에는 Iwakura나 키타인 같은 무사와 악마 사냥꾼을 꿈꾸었지만 재능이 부족함을 깨닫고 무사 이야기를 쓰기로 했다."
+       "t": "여러 차례 열린 백 명의 봉기 자리에서 그는 낯익은 얼굴로 참가자들에게 말을 걸어 대회의 내력과 소식을 늘어놓고, 자신이 쓴 소설을 권하는 사람이다."
       },
       {
-       "t_raw": "자신이 본 Hyakunin Ikki의 활약을 글로 옮겨 Yae Publishing House에 투고했고, **\"Outlander Brigade\"라는 연재물**의 첫 권을 내놓았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "자신이 본 백 명의 봉기의 활약을 글로 옮겨 야에 출판사에 투고했고, **\"Outlander Brigade\"라는 연재물**의 첫 권을 내놓았다."
-      },
-      {
-       "t_raw": "전투에는 소질이 없다고 말하면서도 무사들의 눈부신 싸움을 기록하려는 태도를 보아, 그의 글쓰기는 무예를 향한 동경을 다른 방식으로 이어가는 시도로 보인다.",
+       "t_raw": "정작 자신은 싸움 실력이 없다고 말하면서도, **전사의 싸움을 글로 남기는 일이야말로 무예의 완성**이라고 주장하는 태도에는 무예에 대한 동경과 글쓰기가 겹쳐 있는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "전투에는 소질이 없다고 말하면서도 무사들의 눈부신 싸움을 기록하려는 태도를 보아, 그의 글쓰기는 무예를 향한 동경을 다른 방식으로 이어가는 시도로 보인다."
+       "t": "정작 자신은 싸움 실력이 없다고 말하면서도, **전사의 싸움을 글로 남기는 일이야말로 무예의 완성**이라고 주장하는 태도에는 무예에 대한 동경과 글쓰기가 겹쳐 있는 것으로 보인다."
+      },
+      {
+       "t_raw": "첫 소설이 한 권도 팔리지 않았다는 사실과 다음 권들의 제목이 **이미 정해져 있다**는 사실이 나란히 놓이면서, 그의 낙관은 웃음과 안타까움을 함께 남기는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "첫 소설이 한 권도 팔리지 않았다는 사실과 다음 권들의 제목이 **이미 정해져 있다**는 사실이 나란히 놓이면서, 그의 낙관은 웃음과 안타까움을 함께 남기는 셈이다."
       }
      ],
      "sources": [
@@ -70,24 +70,23 @@
        "kind": "wiki",
        "page": "Kayabuki Ikkei",
        "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A11",
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A23",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyakunin Ikki: The Greatest Battle",
+       "quest_ko": "「백 명의 봉기・최강 무술 대회」",
+       "version": "2.1",
+       "speaker": "Kayabuki Ikkei"
       },
       {
        "kind": "wiki",
        "page": "Kayabuki Ikkei",
        "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A14",
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A33",
        "wiki_refs": []
       },
       {
@@ -95,7 +94,7 @@
        "page": "Kayabuki Ikkei",
        "revision": 879985,
        "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A23",
+       "paragraph": "A28",
        "wiki_refs": []
       },
       {
@@ -109,40 +108,32 @@
      ],
      "heading": null,
      "latin_left": [
-      "NPC",
-      "Iwakura",
-      "Outlander Brigade"
+      "NPC"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The art of making lines of words shine is a martial art in and of itself, wouldn't you say?",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A23 and Q6.",
+     "quote": "Who's this \"Kawabunga\"? It's pronounced \"Kayabuki Ikkei.\" Heh... that would be me.",
      "sentences": [
       {
-       "t_raw": "Kayabuki Ikkei는 Hyakunin Ikki와 Hues of the Violet Garden에서 등장한 이벤트 전용 NPC다.",
+       "t_raw": "Kayabuki Ikkei는 Hyakunin Ikki와 Hues of the Violet Garden에서 등장한 **이벤트 전용 NPC**다.",
        "interp": false,
        "dropped": false,
-       "t": "카야부키 잇케이는 백 명의 봉기와 빛나는 자색 정원에서 등장한 이벤트 전용 NPC다."
+       "t": "카야부키 잇케이는 백 명의 봉기와 빛나는 자색 정원에서 등장한 **이벤트 전용 NPC**다."
       },
       {
-       "t_raw": "어릴 적 이야기책과 소설을 읽으며 Iwakura나 Kitain 같은 무사를 꿈꾸었지만, 성장한 뒤 재능이 없음을 깨닫고 무사 이야기를 쓰는 길을 택했다.",
+       "t_raw": "그는 자신의 'Outlander Brigade'가 Inazuma의 대중문학에 막 데뷔한 신작이라며, 책을 한번 보겠냐고 권한다.",
        "interp": false,
        "dropped": false,
-       "t": "어릴 적 이야기책과 소설을 읽으며 Iwakura나 키타인 같은 무사를 꿈꾸었지만, 성장한 뒤 재능이 없음을 깨닫고 무사 이야기를 쓰는 길을 택했다."
+       "t": "그는 자신의 'Outlander Brigade'가 이나즈마의 대중문학에 막 데뷔한 신작이라며, 책을 한번 보겠냐고 권한다."
       },
       {
-       "t_raw": "그는 단어의 줄을 빛나게 하는 일 자체가 무예라고 말하며, Hyakunin Ikki에서는 자신에게 싸움 재주가 없고 싸우는 이들의 눈부신 활약을 기록하고 싶다고 밝힌다.",
+       "t_raw": "누군가 이름을 'Kawabunga'로 잘못 부르면, 발음은 'Kayabuki Ikkei'라며 **자신이 바로 그 사람**이라고 밝힌다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 단어의 줄을 빛나게 하는 일 자체가 무예라고 말하며, 백 명의 봉기에서는 자신에게 싸움 재주가 없고 싸우는 이들의 눈부신 활약을 기록하고 싶다고 밝힌다."
-      },
-      {
-       "t_raw": "이처럼 무사의 길 대신 글쓰기를 무예로 세우는 태도는 그를 전투자가 아닌 **기록자이자 작가**로 보이게 한다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이처럼 무사의 길 대신 글쓰기를 무예로 세우는 태도는 그를 전투자가 아닌 **기록자이자 작가**로 보이게 한다."
+       "t": "누군가 이름을 'Kawabunga'로 잘못 부르면, 발음은 '카야부키 잇케이'라며 **자신이 바로 그 사람**이라고 밝힌다."
       }
      ],
      "sources": [
@@ -158,50 +149,48 @@
        "kind": "wiki",
        "page": "Kayabuki Ikkei",
        "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A11",
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A23",
        "wiki_refs": []
       },
       {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A64",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "A Story for You",
+       "quest_ko": "「너에게 보내는 이야기」",
+       "version": "2.6",
+       "speaker": "Kayabuki Ikkei"
       }
      ],
      "heading": "개요",
      "latin_left": [
       "NPC",
-      "Iwakura"
+      "Outlander Brigade",
+      "Kawabunga"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "\"Outlander Brigade,\" the latest trailblazer in Inazuman light literature, has just made its debut. Wanna have a look?",
+     "status": "accepted",
+     "note": "Supported by Q17 and Q20; the interpretation is reasonable.",
+     "quote": "Indeed we meet again! You cut as dazzling a figure as ever...",
      "sentences": [
       {
-       "t_raw": "Hues of the Violet Garden에서는 \"Outlander Brigade\"를 Inazuman light literature의 최신 선구자라 소개하며 여행자에게 한번 보겠냐고 묻는다.",
+       "t_raw": "Hyakunin Ikki에서 그는 상대를 알아보고, 다시 만났다며 상대가 여전히 눈부신 모습이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "빛나는 자색 정원에서는 \"Outlander Brigade\"를 이나즈마 light literature의 최신 선구자라 소개하며 여행자에게 한번 보겠냐고 묻는다."
+       "t": "백 명의 봉기에서 그는 상대를 알아보고, 다시 만났다며 상대가 여전히 눈부신 모습이라고 말한다."
       },
       {
-       "t_raw": "Hyakunin Ikki에서 활약을 기록하겠다는 말과 Hues of the Violet Garden에서 책을 권하는 모습을 겹쳐 보면, 그가 **이야기꾼**의 얼굴을 드러내는 장면이라고 볼 수 있다.",
+       "t_raw": "그는 외국에서 온 무사에게 먼저 말을 건네며 반가운 기색을 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 외국에서 온 무사에게 먼저 말을 건네며 반가운 기색을 드러낸다."
+      },
+      {
+       "t_raw": "이런 인사는 그가 대회 자리에서 낯익은 상대를 기억하고 말을 트는 쪽임을 보여 준다.",
        "interp": true,
        "dropped": false,
-       "t": "백 명의 봉기에서 활약을 기록하겠다는 말과 빛나는 자색 정원에서 책을 권하는 모습을 겹쳐 보면, 그가 **이야기꾼**의 얼굴을 드러내는 장면이라고 볼 수 있다."
+       "t": "이런 인사는 그가 대회 자리에서 낯익은 상대를 기억하고 말을 트는 쪽임을 보여 준다."
       }
      ],
      "sources": [
@@ -209,53 +198,51 @@
        "kind": "wiki",
        "page": "Kayabuki Ikkei",
        "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A23",
+       "section": null,
+       "paragraph": "A1",
        "wiki_refs": []
       },
       {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A64",
-       "wiki_refs": []
+       "kind": "quest",
+       "quest": "Hyakunin Ikki: Narukami Arena",
+       "quest_ko": "「백 명의 봉기・나루카미 아레나」",
+       "version": "3.1",
+       "speaker": "Kayabuki Ikkei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyakunin Ikki: Narukami Arena",
+       "quest_ko": "「백 명의 봉기・나루카미 아레나」",
+       "version": "3.1",
+       "speaker": "Kayabuki Ikkei"
       }
      ],
      "heading": "개요",
-     "latin_left": [
-      "Outlander Brigade"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Supported by A11 and A12.",
      "quote": "I grew up reading storybooks and novels, and back then, I dreamed of becoming like Iwakura or Kitain, an unparalleled warrior and slayer of demons.",
      "sentences": [
       {
-       "t_raw": "Kayabuki Ikkei는 어린 시절 이야기책과 소설을 읽으며 자랐고, 그때는 Iwakura나 Kitain처럼 무쌍한 무사이자 요괴를 베는 자가 되기를 꿈꿨다.",
+       "t_raw": "Kayabuki Ikkei는 어린 시절 이야기책과 소설을 읽으며 자랐고, 그때는 Iwakura나 Kitain처럼 비할 데 없는 무사이자 악귀를 베는 자가 되기를 꿈꿨다.",
        "interp": false,
        "dropped": false,
-       "t": "카야부키 잇케이는 어린 시절 이야기책과 소설을 읽으며 자랐고, 그때는 Iwakura나 키타인처럼 무쌍한 무사이자 요괴를 베는 자가 되기를 꿈꿨다."
+       "t": "카야부키 잇케이는 어린 시절 이야기책과 소설을 읽으며 자랐고, 그때는 Iwakura나 키타인처럼 비할 데 없는 무사이자 악귀를 베는 자가 되기를 꿈꿨다."
       },
       {
-       "t_raw": "다 자란 뒤에야 자신에게 그런 재능이 없다는 것을 깨달았다.",
+       "t_raw": "그런 재능이 자신에게 없다는 사실은 **자라서야 깨달았다**고 그는 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "다 자란 뒤에야 자신에게 그런 재능이 없다는 것을 깨달았다."
+       "t": "그런 재능이 자신에게 없다는 사실은 **자라서야 깨달았다**고 그는 말한다."
       },
       {
-       "t_raw": "그래서 무사에 관한 이야기를 쓰기로 했고, **말의 줄을 빛나게 하는 일** 자체를 하나의 무예라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그래서 무사에 관한 이야기를 쓰기로 했고, **말의 줄을 빛나게 하는 일** 자체를 하나의 무예라고 말한다."
-      },
-      {
-       "t_raw": "무사가 되려던 꿈과 달리 재능의 벽 앞에서 글을 택한 셈이다.",
+       "t_raw": "무사가 되려 했으나 재능이 없었던 경험이 훗날 무사의 이야기를 쓰는 사람이 된 배경이라는 점을 이 대목에서 읽을 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "무사가 되려던 꿈과 달리 재능의 벽 앞에서 글을 택한 셈이다."
+       "t": "무사가 되려 했으나 재능이 없었던 경험이 훗날 무사의 이야기를 쓰는 사람이 된 배경이라는 점을 이 대목에서 읽을 수 있다."
       }
      ],
      "sources": [
@@ -283,39 +270,33 @@
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Me? I don't have any fighting chops. I only wish to record the dazzling performances of the fighters.",
+     "status": "accepted",
+     "note": "Supported by A12 and A13.",
+     "quote": "I mean, I could've still have chosen to become an attaché to some military officer, but I must say that I'd prefer penning the tale of a carefree outland warrior like yourself.",
      "sentences": [
       {
-       "t_raw": "그는 군 장교의 부관이 될 길도 있었지만, 자유분방한 이방의 무사 이야기를 쓰는 쪽을 더 좋아한다고 말한다.",
+       "t_raw": "그는 무사 대신 무사에 관한 이야기를 쓰기로 했다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 군 장교의 부관이 될 길도 있었지만, 자유분방한 이방의 무사 이야기를 쓰는 쪽을 더 좋아한다고 말한다."
+       "t": "그는 무사 대신 무사에 관한 이야기를 쓰기로 했다."
       },
       {
-       "t_raw": "자신에게는 싸움의 소질이 없다고 하면서, 오로지 투사들의 눈부신 활약을 기록하고 싶어 한다.",
+       "t_raw": "**말을 엮어 빛나게 하는 일 자체가 하나의 무예**라고 그는 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "자신에게는 싸움의 소질이 없다고 하면서, 오로지 투사들의 눈부신 활약을 기록하고 싶어 한다."
+       "t": "**말을 엮어 빛나게 하는 일 자체가 하나의 무예**라고 그는 말한다."
       },
       {
-       "t_raw": "특히 상대의 검술을 본 뒤에는, **강철의 춤**을 태양처럼 오래도록 말로 남기는 일이 대회에 나가는 것보다 자신의 소명에 가깝다고 여긴다.",
+       "t_raw": "군 장교의 수행원이 되는 길도 있었지만, 자신처럼 태평한 이방의 무사의 이야기를 쓰는 쪽을 더 좋아한다고 밝힌다.",
        "interp": false,
        "dropped": false,
-       "t": "특히 상대의 검술을 본 뒤에는, **강철의 춤**을 태양처럼 오래도록 말로 남기는 일이 대회에 나가는 것보다 자신의 소명에 가깝다고 여긴다."
+       "t": "군 장교의 수행원이 되는 길도 있었지만, 자신처럼 태평한 이방의 무사의 이야기를 쓰는 쪽을 더 좋아한다고 밝힌다."
       },
       {
-       "t_raw": "글로 그러한 광휘를 다시 만들어 내는 일도 무예의 정점에 이르는 성취로 볼 수 있다고 그는 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "글로 그러한 광휘를 다시 만들어 내는 일도 무예의 정점에 이르는 성취로 볼 수 있다고 그는 말한다."
-      },
-      {
-       "t_raw": "싸움에 나서기보다 싸움을 기록하는 길을 택한 태도는, 글쓰기를 무예로 여기는 그의 관점과 맞물린다.",
+       "t_raw": "싸움의 바깥에 서서 그 싸움을 문장으로 옮기는 길을 스스로 고른 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "싸움에 나서기보다 싸움을 기록하는 길을 택한 태도는, 글쓰기를 무예로 여기는 그의 관점과 맞물린다."
+       "t": "싸움의 바깥에 서서 그 싸움을 문장으로 옮기는 길을 스스로 고른 셈이다."
       }
      ],
      "sources": [
@@ -324,9 +305,53 @@
        "page": "Kayabuki Ikkei",
        "revision": 879985,
        "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A13",
+       "paragraph": "A12",
        "wiki_refs": []
       },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A64–A66.",
+     "quote": "I don't have any fighting chops. I only wish to record the dazzling performances of the fighters.",
+     "sentences": [
+      {
+       "t_raw": "Hyakunin Ikki에서 다시 만난 그는 자신에게는 싸움 실력이 없다고 말하면서, 바라는 것은 싸움꾼들의 눈부신 활약을 기록하는 일이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백 명의 봉기에서 다시 만난 그는 자신에게는 싸움 실력이 없다고 말하면서, 바라는 것은 싸움꾼들의 눈부신 활약을 기록하는 일이라고 한다."
+      },
+      {
+       "t_raw": "Traveler의 검술을 본 뒤로는 강철의 춤을 태양처럼 오래 남는 문장으로 남기는 일이 대회에 나가는 것보다 자신의 소명에 가깝다고 여긴다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자의 검술을 본 뒤로는 강철의 춤을 태양처럼 오래 남는 문장으로 남기는 일이 대회에 나가는 것보다 자신의 소명에 가깝다고 여긴다고 한다."
+      },
+      {
+       "t_raw": "문장으로 그런 광경을 되살리는 일도 무예의 극치라고 부를 수 있지 않겠느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문장으로 그런 광경을 되살리는 일도 무예의 극치라고 부를 수 있지 않겠느냐고 묻는다."
+      },
+      {
+       "t_raw": "싸울 실력은 없다고 말하면서도 문장으로 무예의 극치를 이루겠다고 하는 태도에서, 무예에 대한 동경이 기록 쪽으로 옮겨간 모습을 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "싸울 실력은 없다고 말하면서도 문장으로 무예의 극치를 이루겠다고 하는 태도에서, 무예에 대한 동경이 기록 쪽으로 옮겨간 모습을 볼 수 있다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Kayabuki Ikkei",
@@ -357,57 +382,30 @@
     },
     {
      "section": "작중 행적 — Hyakunin Ikki",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ah, wonderful! Glad I had my eye on the right person.",
+     "status": "accepted",
+     "note": "All sentences match Q8, Q12 and Q16.",
+     "quote": "Why hello there, outlander! Do you have any interest in a little scrap, by any chance?",
      "sentences": [
       {
-       "t_raw": "Hyakunin Ikki에서 Kayabuki Ikkei는 여행자에게 말을 걸어 싸움에 흥미가 있는지 묻고, 상대가 Hyakunin Isshu를 떠올리자 이것은 Hyakunin Ikki라고 바로잡는다.",
+       "t_raw": "2.1의 Hyakunin Ikki에서 Kayabuki Ikkei는 이방인에게 한판 붙어 볼 생각이 없냐고 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "백 명의 봉기에서 카야부키 잇케이는 여행자에게 말을 걸어 싸움에 흥미가 있는지 묻고, 상대가 Hyakunin Isshu를 떠올리자 이것은 백 명의 봉기라고 바로잡는다."
+       "t": "2.1의 백 명의 봉기에서 카야부키 잇케이는 이방인에게 한판 붙어 볼 생각이 없냐고 묻는다."
       },
       {
-       "t_raw": "이어 최근 누군가가 **Hyakunin Ikki**를 은밀히 다시 열었다고 알리며, 이 의식이 원래 Tengu-Kin 사이에서 텐구를 흉내 내며 돌던 것이라고 설명한다.",
+       "t_raw": "이어 최근 어떤 이들이 **Hyakunin Ikki**를 비밀리에 다시 열었다고 알린다.",
        "interp": false,
        "dropped": false,
-       "t": "이어 최근 누군가가 **백 명의 봉기**를 은밀히 다시 열었다고 알리며, 이 의식이 원래 Tengu-Kin 사이에서 텐구를 흉내 내며 돌던 것이라고 설명한다."
+       "t": "이어 최근 어떤 이들이 **백 명의 봉기**를 비밀리에 다시 열었다고 알린다."
       },
       {
-       "t_raw": "그는 이 일을 의뢰라고 부르기는 어렵다면서도, 대회를 찾아온 여행자를 두고 “Glad I had my eye on the right person”이라고 말한다.",
+       "t_raw": "상대가 Hyakunin Isshu로 알아듣자 Hyakunin Ikki라고 바로잡는다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 이 일을 의뢰라고 부르기는 어렵다면서도, 대회를 찾아온 여행자를 두고 “Glad I had my eye on the right person”이라고 말한다."
-      },
-      {
-       "t_raw": "이 장면에서 그는 대회의 내력을 설명하는 안내자이자, 참가자를 눈여겨보는 관찰자로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 장면에서 그는 대회의 내력을 설명하는 안내자이자, 참가자를 눈여겨보는 관찰자로 보인다."
+       "t": "상대가 Hyakunin Isshu로 알아듣자 백 명의 봉기라고 바로잡는다."
       }
      ],
      "sources": [
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: The Greatest Battle",
-       "quest_ko": "「백 명의 봉기・최강 무술 대회」",
-       "version": "2.1",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: The Greatest Battle",
-       "quest_ko": "「백 명의 봉기・최강 무술 대회」",
-       "version": "2.1",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: The Greatest Battle",
-       "quest_ko": "「백 명의 봉기・최강 무술 대회」",
-       "version": "2.1",
-       "speaker": "Kayabuki Ikkei"
-      },
       {
        "kind": "quest",
        "quest": "Hyakunin Ikki: The Greatest Battle",
@@ -432,40 +430,38 @@
      ],
      "heading": "작중 행적 — 백 명의 봉기",
      "latin_left": [
-      "Hyakunin Isshu",
-      "Tengu-Kin",
-      "Glad"
+      "Hyakunin Isshu"
      ]
     },
     {
      "section": "작중 행적 — Hyakunin Ikki",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by Q3, A16, A17, Q7 and Q11.",
      "quote": "Ah yes! You are the eye-catching Golden Whirlwind from the Hyakunin Ikki last time...",
      "sentences": [
       {
-       "t_raw": "다시 여행자 앞에 나타난 그는 금발의 이방인을 보고 지난 Hyakunin Ikki의 Golden Whirlwind인지 확인한다.",
+       "t_raw": "2.5의 Hyakunin Ikki 자리에서 그는 Traveler를 지난 대회의 **Golden Whirlwind**로 알아보고 반갑게 맞는다.",
        "interp": false,
        "dropped": false,
-       "t": "다시 여행자 앞에 나타난 그는 금발의 이방인을 보고 지난 백 명의 봉기의 Golden Whirlwind인지 확인한다."
+       "t": "2.5의 백 명의 봉기 자리에서 그는 여행자를 지난 대회의 **Golden Whirlwind**로 알아보고 반갑게 맞는다."
       },
       {
-       "t_raw": "여행자의 싸움에 영감을 받아 이야기를 썼다고 말한 뒤, 또 어떤 이들이 Hyakunin Ikki를 열었다고 전한다.",
+       "t_raw": "지난 대회의 활약이 훌륭했다고 칭찬하며, Shinryuu의 주인 Shousen도 Traveler 같은 무사는 상상하지 못했을 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자의 싸움에 영감을 받아 이야기를 썼다고 말한 뒤, 또 어떤 이들이 백 명의 봉기를 열었다고 전한다."
+       "t": "지난 대회의 활약이 훌륭했다고 칭찬하며, 심류의 주인 시부카와도 여행자 같은 무사는 상상하지 못했을 것이라고 말한다."
       },
       {
-       "t_raw": "대회에서 두각을 나타내는 이에게 여러 보물이 주어진다는 소문도 꺼낸다.",
+       "t_raw": "대회에서 두각을 나타낸 이에게는 여러 보물이 주어진다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "대회에서 두각을 나타내는 이에게 여러 보물이 주어진다는 소문도 꺼낸다."
+       "t": "대회에서 두각을 나타낸 이에게는 여러 보물이 주어진다고 전한다."
       },
       {
-       "t_raw": "여행자를 알아보고 새 대회 소식을 전한 뒤 그 싸움에서 영감을 받았다고 말하는 대목은, 그가 대회를 관찰하고 기록하는 쪽에 서 있음을 보여 준다.",
-       "interp": true,
+       "t_raw": "사람들이 최근 Hyakunin Ikki를 다시 열었다고 말한다.",
+       "interp": false,
        "dropped": false,
-       "t": "여행자를 알아보고 새 대회 소식을 전한 뒤 그 싸움에서 영감을 받았다고 말하는 대목은, 그가 대회를 관찰하고 기록하는 쪽에 서 있음을 보여 준다."
+       "t": "사람들이 최근 백 명의 봉기를 다시 열었다고 말한다."
       }
      ],
      "sources": [
@@ -477,25 +473,20 @@
        "speaker": "Kayabuki Ikkei"
       },
       {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: Golden Whirlwind",
-       "quest_ko": "「백 명의 봉기・황금 돌풍」",
-       "version": "2.5",
-       "speaker": "Kayabuki Ikkei"
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A16",
+       "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: Golden Whirlwind",
-       "quest_ko": "「백 명의 봉기・황금 돌풍」",
-       "version": "2.5",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: Golden Whirlwind",
-       "quest_ko": "「백 명의 봉기・황금 돌풍」",
-       "version": "2.5",
-       "speaker": "Kayabuki Ikkei"
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A17",
+       "wiki_refs": []
       },
       {
        "kind": "quest",
@@ -519,43 +510,36 @@
     },
     {
      "section": "작중 행적 — Hyakunin Ikki",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hello there, warrior from a foreign land!",
+     "status": "accepted",
+     "note": "All sentences are supported by Q20, Q17, Q13, Q1 and Q9.",
+     "quote": "Indeed we meet again! You cut as dazzling a figure as ever...",
      "sentences": [
       {
-       "t_raw": "Hyakunin Ikki가 다시 열린 뒤, 그는 이국 땅에서 온 무사에게 인사하며 여행자와 다시 만났다고 말한다.",
+       "t_raw": "3.1의 Hyakunin Ikki에서도 그는 외국에서 온 전사에게 먼저 인사를 건다.",
        "interp": false,
        "dropped": false,
-       "t": "백 명의 봉기가 다시 열린 뒤, 그는 이국 땅에서 온 무사에게 인사하며 여행자와 다시 만났다고 말한다."
+       "t": "3.1의 백 명의 봉기에서도 그는 외국에서 온 전사에게 먼저 인사를 건다."
       },
       {
-       "t_raw": "다음 대회가 이렇게 빨리 열릴 줄은 몰랐다면서도, 또 누군가가 Hyakunin Ikki를 은밀히 열고 있다고 전한다.",
+       "t_raw": "다시 만났다며 Traveler가 여전히 눈부신 모습이라고 말하고, 다음 Hyakunin Ikki가 이렇게 빨리 열릴 줄은 몰랐다고 털어놓는다.",
        "interp": false,
        "dropped": false,
-       "t": "다음 대회가 이렇게 빨리 열릴 줄은 몰랐다면서도, 또 누군가가 백 명의 봉기를 은밀히 열고 있다고 전한다."
+       "t": "다시 만났다며 여행자가 여전히 눈부신 모습이라고 말하고, 다음 백 명의 봉기가 이렇게 빨리 열릴 줄은 몰랐다고 털어놓는다."
       },
       {
-       "t_raw": "사람이 많은 곳에서는 이야기하기 어렵다며 여행자를 다른 곳으로 데려가고, 대회에서 승리한 무사가 여러 보물을 얻는다는 이야기를 꺼낸다.",
+       "t_raw": "그러면서 또 누군가가 비밀리에 대회를 열고 있는 듯하다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "사람이 많은 곳에서는 이야기하기 어렵다며 여행자를 다른 곳으로 데려가고, 대회에서 승리한 무사가 여러 보물을 얻는다는 이야기를 꺼낸다."
+       "t": "그러면서 또 누군가가 비밀리에 대회를 열고 있는 듯하다고 전한다."
       },
       {
-       "t_raw": "이처럼 그는 새 대회가 열릴 때 여행자를 찾아와 소식을 전하는 안내자로 보인다.",
-       "interp": true,
+       "t_raw": "사람이 많은 곳에서는 논의하기 어렵다며, 전처럼 따라오라고 한다.",
+       "interp": false,
        "dropped": false,
-       "t": "이처럼 그는 새 대회가 열릴 때 여행자를 찾아와 소식을 전하는 안내자로 보인다."
+       "t": "사람이 많은 곳에서는 논의하기 어렵다며, 전처럼 따라오라고 한다."
       }
      ],
      "sources": [
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: Narukami Arena",
-       "quest_ko": "「백 명의 봉기・나루카미 아레나」",
-       "version": "3.1",
-       "speaker": "Kayabuki Ikkei"
-      },
       {
        "kind": "quest",
        "quest": "Hyakunin Ikki: Narukami Arena",
@@ -597,33 +581,110 @@
     },
     {
      "section": "작중 행적 — Hyakunin Ikki",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The current Hyakunin Ikki is a rather rowdy brawl, all things considered. Anyone can participate in this blood-boiling festival, be they warriors or monsters.",
+     "status": "accepted",
+     "note": "The facts match A19-A22. The interpretation in sentence 3 follows reasonably from the origin and nature he describes.",
+     "quote": "In the early days, this was a mysterious rite used by the Tengu-Kin as a means of making a ruckus.",
      "sentences": [
       {
-       "t_raw": "그가 전하는 Hyakunin Ikki의 내력은 대회의 성격과 규모를 함께 보여 주는 것으로 보인다.",
+       "t_raw": "Hyakunin Ikki는 초창기에 **Tengu-Kin**이 소란을 피우기 위해 벌이던 신비로운 의식이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백 명의 봉기는 초창기에 **Tengu-Kin**이 소란을 피우기 위해 벌이던 신비로운 의식이었다."
+      },
+      {
+       "t_raw": "Tengu-Kin이 금지된 뒤에도 사람들은 가끔 이를 비밀리에 열었고, 주최자들의 신원은 수수께끼에 싸여 있다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Tengu-Kin이 금지된 뒤에도 사람들은 가끔 이를 비밀리에 열었고, 주최자들의 신원은 수수께끼에 싸여 있다고 한다."
+      },
+      {
+       "t_raw": "현재의 Hyakunin Ikki는 필멸자든 괴물이든 누구나 참가하는 난투이며, 전투를 갈망하는 이들에게 꿈 같은 무대가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재의 백 명의 봉기는 필멸자든 괴물이든 누구나 참가하는 난투이며, 전투를 갈망하는 이들에게 꿈 같은 무대가 된다."
+      },
+      {
+       "t_raw": "그가 대회의 유래와 성격을 풀어놓는 사이, 대회는 오래된 의식의 후손처럼 그려진다.",
        "interp": true,
        "dropped": false,
-       "t": "그가 전하는 백 명의 봉기의 내력은 대회의 성격과 규모를 함께 보여 주는 것으로 보인다."
+       "t": "그가 대회의 유래와 성격을 풀어놓는 사이, 대회는 오래된 의식의 후손처럼 그려진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A19",
+       "wiki_refs": []
       },
       {
-       "t_raw": "처음에는 Tengu-kin이 소란을 피우기 위해 벌인 의식이었고, 이들이 법 밖으로 밀려난 뒤에도 사람들은 때때로 이를 비밀리에 열었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "처음에는 Tengu-kin이 소란을 피우기 위해 벌인 의식이었고, 이들이 법 밖으로 밀려난 뒤에도 사람들은 때때로 이를 비밀리에 열었다."
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A20",
+       "wiki_refs": []
       },
       {
-       "t_raw": "주최자의 정체는 여전히 오리무중이지만, 현재의 Hyakunin Ikki는 무사든 괴물이든 누구나 참가할 수 있는 소란스러운 싸움판이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "주최자의 정체는 여전히 오리무중이지만, 현재의 백 명의 봉기는 무사든 괴물이든 누구나 참가할 수 있는 소란스러운 싸움판이다."
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A21",
+       "wiki_refs": []
       },
       {
-       "t_raw": "그는 이 대회가 **전투를 갈망하는 이들**에게 꿈 같은 일이라고 말하며, 이번에도 여행자의 화려한 검술을 보고 싶다고 바란다.",
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A22",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 백 명의 봉기",
+     "latin_left": [
+      "Tengu-Kin",
+      "Tengu-Kin"
+     ]
+    },
+    {
+     "section": "작중 행적 — Hyakunin Ikki",
+     "status": "accepted",
+     "note": "The facts match A64-A68. The interpretation in sentence 3 follows from A66.",
+     "quote": "Me? I don't have any fighting chops. I only wish to record the dazzling performances of the fighters.",
+     "sentences": [
+      {
+       "t_raw": "그러나 그는 자신에게 싸움 실력이 없으며, 싸우는 이들의 눈부신 활약을 기록하고 싶을 뿐이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 이 대회가 **전투를 갈망하는 이들**에게 꿈 같은 일이라고 말하며, 이번에도 여행자의 화려한 검술을 보고 싶다고 바란다."
+       "t": "그러나 그는 자신에게 싸움 실력이 없으며, 싸우는 이들의 눈부신 활약을 기록하고 싶을 뿐이라고 말한다."
+      },
+      {
+       "t_raw": "Traveler의 검술을 본 뒤로는 태양처럼 영원한 강철의 춤을 글로 남기는 일이 직접 대회에 나가는 것보다 자신의 소명에 가깝다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자의 검술을 본 뒤로는 태양처럼 영원한 강철의 춤을 글로 남기는 일이 직접 대회에 나가는 것보다 자신의 소명에 가깝다고 한다."
+      },
+      {
+       "t_raw": "페이지 위의 문장으로 그런 장관을 되살리는 것도 무예의 궁극적인 성취가 아니냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이지 위의 문장으로 그런 장관을 되살리는 것도 무예의 궁극적인 성취가 아니냐고 묻는다."
+      },
+      {
+       "t_raw": "그가 말하는 무예에 문장의 성취도 포함된다고 보는 태도가 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 말하는 무예에 문장의 성취도 포함된다고 보는 태도가 드러난다."
+      },
+      {
+       "t_raw": "이번에도 그런 화려한 검술을 보고 싶다고 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이번에도 그런 화려한 검술을 보고 싶다고 바란다."
       }
      ],
      "sources": [
@@ -632,7 +693,7 @@
        "page": "Kayabuki Ikkei",
        "revision": 879985,
        "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A45",
+       "paragraph": "A64",
        "wiki_refs": []
       },
       {
@@ -640,7 +701,7 @@
        "page": "Kayabuki Ikkei",
        "revision": 879985,
        "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A46",
+       "paragraph": "A65",
        "wiki_refs": []
       },
       {
@@ -648,15 +709,7 @@
        "page": "Kayabuki Ikkei",
        "revision": 879985,
        "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A47",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A48",
+       "paragraph": "A66",
        "wiki_refs": []
       },
       {
@@ -669,39 +722,31 @@
       }
      ],
      "heading": "작중 행적 — 백 명의 봉기",
-     "latin_left": [
-      "Tengu-kin"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Hues of the Violet Garden",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A23, A25 and A26.",
      "quote": "\"Outlander Brigade,\" the latest trailblazer in Inazuman light literature, has just made its debut. Wanna have a look?",
      "sentences": [
       {
-       "t_raw": "Hues of the Violet Garden에서 Kayabuki Ikkei는 **\"Outlander Brigade\"**의 첫 권인 \"When the Wind of Death Blew Towards the Blond Samurai\"를 소개하며, Inazuma 경문학의 새 선구자라며 한번 보겠냐고 권한다.",
+       "t_raw": "Hues of the Violet Garden이 열린 시기, Kayabuki Ikkei는 Inazuma의 가벼운 문학에 새로 등장한 개척자라며 **Outlander Brigade**를 들고 사람들을 붙잡는다.",
        "interp": false,
        "dropped": false,
-       "t": "빛나는 자색 정원에서 카야부키 잇케이는 **\"Outlander Brigade\"**의 첫 권인 \"When the Wind of Death Blew Towards the Blond Samurai\"를 소개하며, 이나즈마 경문학의 새 선구자라며 한번 보겠냐고 권한다."
+       "t": "빛나는 자색 정원이 열린 시기, 카야부키 잇케이는 이나즈마의 가벼운 문학에 새로 등장한 개척자라며 **Outlander Brigade**를 들고 사람들을 붙잡는다."
       },
       {
-       "t_raw": "제목이 눈에 띄지 않냐며 본문도 제목이 주는 느낌만큼 읽힐 것이라고 말하고, 이 시리즈가 대히트할 것이라고 장담한다.",
+       "t_raw": "이름부터가 멋지지 않냐며, 본문도 이름값을 톡톡히 한다고 장담한다.",
        "interp": false,
        "dropped": false,
-       "t": "제목이 눈에 띄지 않냐며 본문도 제목이 주는 느낌만큼 읽힐 것이라고 말하고, 이 시리즈가 대히트할 것이라고 장담한다."
+       "t": "이름부터가 멋지지 않냐며, 본문도 이름값을 톡톡히 한다고 장담한다."
       },
       {
-       "t_raw": "2권은 \"The Fatal Flowery Blade\", 3권은 \"Blond Samurai, Go With the Wind\"라고 이름 붙일 예정이라고 말한다.",
+       "t_raw": "그리고 이 시리즈는 틀림없이 대박이 날 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "2권은 \"The Fatal Flowery Blade\", 3권은 \"Blond Samurai, Go With the Wind\"라고 이름 붙일 예정이라고 말한다."
-      },
-      {
-       "t_raw": "정작 무엇을 쓸지는 아직 정하지 못했지만 지금은 중요하지 않다고 덧붙인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "정작 무엇을 쓸지는 아직 정하지 못했지만 지금은 중요하지 않다고 덧붙인다."
+       "t": "그리고 이 시리즈는 틀림없이 대박이 날 것이라고 말한다."
       }
      ],
      "sources": [
@@ -728,75 +773,41 @@
        "section": "Event Dialogue > Hues of the Violet Garden",
        "paragraph": "A26",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A28",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A30",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Story for You",
-       "quest_ko": "「너에게 보내는 이야기」",
-       "version": "2.6",
-       "speaker": "Kayabuki Ikkei"
       }
      ],
      "heading": "작중 행적 — 빛나는 자색 정원",
      "latin_left": [
-      "Outlander Brigade",
-      "When the Wind of Death Blew Towards the Blond Samurai",
-      "The Fatal Flowery Blade",
-      "Blond Samurai",
-      "Go With the Wind"
+      "Outlander Brigade"
      ]
     },
     {
      "section": "작중 행적 — Hues of the Violet Garden",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hey, Miss, don't go! Are you sure you don't want a copy? I'll give you 40% off!",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "That said, I haven't decided on what to write exactly... although that's not really important at the moment.",
      "sentences": [
       {
-       "t_raw": "판매량에 대해 Kayabuki Ikkei는 현재 없다고 답한다.",
+       "t_raw": "이 시리즈의 1권은 \"When the Wind of Death Blew Towards the Blond Samurai\"이고, 2권은 \"The Fatal Flowery Blade\", 3권은 \"Blond Samurai, Go With the Wind\"로 이름이 이미 정해져 있다.",
        "interp": false,
        "dropped": false,
-       "t": "판매량에 대해 카야부키 잇케이는 현재 없다고 답한다."
+       "t": "이 시리즈의 1권은 \"When the Wind of Death Blew Towards the Blond Samurai\"이고, 2권은 \"The Fatal Flowery Blade\", 3권은 \"Blond Samurai, Go With the Wind\"로 이름이 이미 정해져 있다.",
+       "polish": {
+        "from": "이 시리즈의 1권은 \"When the Wind of Death Blew Towards the Blond Samurai\"이고, 2권은 \"The Fatal Flowery Blade\", 3권은 \"Blond Samurai, Go With the Wind\"로 이름이 이미 정해져 있다.",
+        "text": "이 시리즈의 1권은 \"When the Wind of Death Blew Towards the Blond Samurai\"이고, 2권은 \"The Fatal Flowery Blade\", 3권은 \"Blond Samurai, Go With the Wind\"로 이름이 이미 정해져 있다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "그래도 그것은 일시적인 상태라고 믿으며, 유명한 작가도 한때는 무명이었다고 말한다.",
+       "t_raw": "그는 스스로를 이름 짓는 재주가 뛰어난 천재라고 일컫는다.",
        "interp": false,
        "dropped": false,
-       "t": "그래도 그것은 일시적인 상태라고 믿으며, 유명한 작가도 한때는 무명이었다고 말한다."
+       "t": "그는 스스로를 이름 짓는 재주가 뛰어난 천재라고 일컫는다."
       },
       {
-       "t_raw": "이런 난관은 책에 쓰인 무예 수련처럼 마음과 인품을 시험하는 일이라 버텨야 하고, 언젠가 자신의 작품이 세상에 인정받을 것이라고 말한다.",
+       "t_raw": "정작 무엇을 쓸지는 아직 정하지 못했는데, 지금으로서는 그다지 중요한 일이 아니라고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "이런 난관은 책에 쓰인 무예 수련처럼 마음과 인품을 시험하는 일이라 버텨야 하고, 언젠가 자신의 작품이 세상에 인정받을 것이라고 말한다."
-      },
-      {
-       "t_raw": "이야기를 마친 뒤 Kayabuki Ikkei는 그렇게까지 말했는데 한 권 사 가지 않겠냐며 붙잡고, **40% 할인**을 제안한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이야기를 마친 뒤 카야부키 잇케이는 그렇게까지 말했는데 한 권 사 가지 않겠냐며 붙잡고, **40% 할인**을 제안한다."
-      },
-      {
-       "t_raw": "판매 부진에도 할인과 붙잡는 말이 이어지는 것은 그가 책을 계속 밀어 보려는 태도로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "판매 부진에도 할인과 붙잡는 말이 이어지는 것은 그가 책을 계속 밀어 보려는 태도로 보인다."
+       "t": "정작 무엇을 쓸지는 아직 정하지 못했는데, 지금으로서는 그다지 중요한 일이 아니라고 한다."
       }
      ],
      "sources": [
@@ -805,168 +816,9 @@
        "page": "Kayabuki Ikkei",
        "revision": 879985,
        "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A33",
+       "paragraph": "A27",
        "wiki_refs": []
       },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A37",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A38",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A39",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A42",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Story for You",
-       "quest_ko": "「너에게 보내는 이야기」",
-       "version": "2.6",
-       "speaker": "Kayabuki Ikkei"
-      }
-     ],
-     "heading": "작중 행적 — 빛나는 자색 정원",
-     "latin_left": []
-    },
-    {
-     "section": "문필 활동과 \"Outlander Brigade\"",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hey, Miss, don't go! Are you sure you don't want a copy? I'll give you 40% off!",
-     "sentences": [
-      {
-       "t_raw": "Kayabuki Ikkei는 Inazuma의 라이트 문학에 막 데뷔한 **Outlander Brigade**를 소개하며, 여행자에게 한번 보겠냐고 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카야부키 잇케이는 이나즈마의 라이트 문학에 막 데뷔한 **Outlander Brigade**를 소개하며, 여행자에게 한번 보겠냐고 묻는다."
-      },
-      {
-       "t_raw": "Outlander Brigade는 그의 새로운 시리즈이며, 「When the Wind of Death Blew Towards the Blond Samurai」가 그 첫 권이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Outlander Brigade는 그의 새로운 시리즈이며, 「When the Wind of Death Blew Towards the Blond Samurai」가 그 첫 권이다."
-      },
-      {
-       "t_raw": "그는 여행자의 지난 Hyakunin Ikki 활약을 글로 써서 Yae Publishing House에 검토를 위해 보냈고, 그 심사가 어떻게 될지 궁금해한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 여행자의 지난 백 명의 봉기 활약을 글로 써서 야에 출판사에 검토를 위해 보냈고, 그 심사가 어떻게 될지 궁금해한다."
-      },
-      {
-       "t_raw": "그러나 이 첫 권은 Irodori Festival에서 그다지 잘 팔리지 않았고, 그는 손님에게 40% 할인을 제안하기도 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 이 첫 권은 이로도리 축제에서 그다지 잘 팔리지 않았고, 그는 손님에게 40% 할인을 제안하기도 한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A23",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Story for You",
-       "quest_ko": "「너에게 보내는 이야기」",
-       "version": "2.6",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A14",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A60",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "A Story for You",
-       "quest_ko": "「너에게 보내는 이야기」",
-       "version": "2.6",
-       "speaker": "Kayabuki Ikkei"
-      }
-     ],
-     "heading": "문필 활동과 \"Outlander Brigade\"",
-     "latin_left": [
-      "Outlander Brigade",
-      "Outlander Brigade",
-      "When the Wind of Death Blew Towards the Blond Samurai"
-     ]
-    },
-    {
-     "section": "문필 활동과 \"Outlander Brigade\"",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "But it's fine! That was just the prologue of the \"Outlander Brigade\" series. My next work, \"The Fatal Flowery Blade\", is sure to be a hit!",
-     "sentences": [
-      {
-       "t_raw": "그는 자신을 이름 붙이는 재주가 뛰어난 사람이라 여기며 2권을 「The Fatal Flowery Blade」, 3권을 「Blond Samurai, Go With the Wind」로 정해 둔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 자신을 이름 붙이는 재주가 뛰어난 사람이라 여기며 2권을 「The Fatal Flowery Blade」, 3권을 「Blond Samurai, Go With the Wind」로 정해 둔다."
-      },
-      {
-       "t_raw": "정작 무엇을 쓸지는 아직 정하지 못했고, 그 점은 당장 중요하지 않다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "정작 무엇을 쓸지는 아직 정하지 못했고, 그 점은 당장 중요하지 않다고 말한다."
-      },
-      {
-       "t_raw": "그는 시리즈가 반드시 대박이 날 것이라고 믿고, 다음 작품 「The Fatal Flowery Blade」도 성공할 것이라고 장담한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 시리즈가 반드시 대박이 날 것이라고 믿고, 다음 작품 「The Fatal Flowery Blade」도 성공할 것이라고 장담한다."
-      },
-      {
-       "t_raw": "이런 자신감과 별개로 뻔한 전개는 소설에 허용하지 않겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이런 자신감과 별개로 뻔한 전개는 소설에 허용하지 않겠다고 말한다."
-      },
-      {
-       "t_raw": "영감에 대해서는 여행자의 싸움을 보면 훌륭한 소설을 쓸 영감을 얻을 수 있다고 기대하고, 여행자의 멋진 싸움에서 영감을 받아 이야기를 썼다고도 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "영감에 대해서는 여행자의 싸움을 보면 훌륭한 소설을 쓸 영감을 얻을 수 있다고 기대하고, 여행자의 멋진 싸움에서 영감을 받아 이야기를 썼다고도 한다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Kayabuki Ikkei",
@@ -992,22 +844,6 @@
        "wiki_refs": []
       },
       {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A26",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A61",
-       "wiki_refs": []
-      },
-      {
        "kind": "quest",
        "quest": "A Story for You",
        "quest_ko": "「너에게 보내는 이야기」",
@@ -1015,65 +851,77 @@
        "speaker": "Kayabuki Ikkei"
       }
      ],
-     "heading": "문필 활동과 \"Outlander Brigade\"",
+     "heading": "작중 행적 — 빛나는 자색 정원",
      "latin_left": [
+      "When the Wind of Death Blew Towards the Blond Samurai",
       "The Fatal Flowery Blade",
       "Blond Samurai",
-      "Go With the Wind",
-      "The Fatal Flowery Blade"
+      "Go With the Wind"
      ]
     },
     {
-     "section": "문필 활동과 \"Outlander Brigade\"",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Hold on, I only know one Kayabuki Ikkei, and everything he submitted to the Yae Publishing House always got rejected.",
+     "section": "작중 행적 — Hues of the Violet Garden",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "That said, I believe that this state is only temporary. I mean, even the most famous authors were unknown once.",
      "sentences": [
       {
-       "t_raw": "Sasano는 Kayabuki Ikkei를 한 명만 안다며, 그가 Yae Publishing House에 투고한 모든 것이 늘 거절당했다고 말한다.",
+       "t_raw": "판매는 어떤지 묻자 그는 한동안 말이 없다가, 지금은 없다고 답한다.",
        "interp": false,
        "dropped": false,
-       "t": "사사노는 카야부키 잇케이를 한 명만 안다며, 그가 야에 출판사에 투고한 모든 것이 늘 거절당했다고 말한다."
+       "t": "판매는 어떤지 묻자 그는 한동안 말이 없다가, 지금은 없다고 답한다."
       },
       {
-       "t_raw": "Okazaki Rikuto는 그를 흥미로운 젊은이라고 평한다.",
+       "t_raw": "한 권도 없느냐는 물음 끝에 결국 그렇다고 인정한다.",
        "interp": false,
        "dropped": false,
-       "t": "오카자키 리쿠토는 그를 흥미로운 젊은이라고 평한다."
+       "t": "한 권도 없느냐는 물음 끝에 결국 그렇다고 인정한다."
       },
       {
-       "t_raw": "그런데도 그는 현재의 부진이 일시적이라고 믿고, 유명한 작가도 처음에는 무명이었다며 버틴다.",
+       "t_raw": "그래도 이런 상태는 **일시적일 뿐**이라고 그는 믿는다.",
        "interp": false,
        "dropped": false,
-       "t": "그런데도 그는 현재의 부진이 일시적이라고 믿고, 유명한 작가도 처음에는 무명이었다며 버틴다."
+       "t": "그래도 이런 상태는 **일시적일 뿐**이라고 그는 믿는다."
       },
       {
-       "t_raw": "이런 시련을 책에 나오는 무예 수련처럼 마음과 인격을 시험하는 일로 여기고, 언젠가 세상에 인정받겠다고 말한다.",
+       "t_raw": "가장 유명한 작가들도 한때는 무명이었다는 것이 그의 설명이다.",
        "interp": false,
        "dropped": false,
-       "t": "이런 시련을 책에 나오는 무예 수련처럼 마음과 인격을 시험하는 일로 여기고, 언젠가 세상에 인정받겠다고 말한다."
-      },
-      {
-       "t_raw": "투고가 거절당했다는 주변의 말과 다음 권의 성공을 장담하는 태도를 함께 보면, 그의 현재 문필 활동은 **자신감**과 **주변의 평가**가 맞서는 자리에 있는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "투고가 거절당했다는 주변의 말과 다음 권의 성공을 장담하는 태도를 함께 보면, 그의 현재 문필 활동은 **자신감**과 **주변의 평가**가 맞서는 자리에 있는 셈이다."
+       "t": "가장 유명한 작가들도 한때는 무명이었다는 것이 그의 설명이다."
       }
      ],
      "sources": [
       {
-       "kind": "quest",
-       "quest": "\"Outlander Brigade!\"",
-       "quest_ko": "《이방인의 싸움 여행기!!》",
-       "version": "2.8",
-       "speaker": "Sasano"
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A32",
+       "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "\"Outlander Brigade!\"",
-       "quest_ko": "《이방인의 싸움 여행기!!》",
-       "version": "2.8",
-       "speaker": "Okazaki Rikuto"
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A33",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A34",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A36",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -1082,7 +930,43 @@
        "section": "Event Dialogue > Hues of the Violet Garden",
        "paragraph": "A37",
        "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 빛나는 자색 정원",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Hues of the Violet Garden",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Wait a moment — you're not going to buy a copy after all that?",
+     "sentences": [
+      {
+       "t_raw": "이런 난관은 책에 적힌 무예 수련처럼 마음과 됨됨이를 시험하는 것이니 버텨야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이런 난관은 책에 적힌 무예 수련처럼 마음과 됨됨이를 시험하는 것이니 버텨야 한다고 말한다."
       },
+      {
+       "t_raw": "언젠가 자신의 작품이 세상 모두에게 인정받을 것이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "언젠가 자신의 작품이 세상 모두에게 인정받을 것이라고 한다."
+      },
+      {
+       "t_raw": "그렇게까지 이야기해 놓고, 헤어지려는 Traveler를 한 권도 사 가지 않겠느냐며 붙잡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그렇게까지 이야기해 놓고, 헤어지려는 여행자를 한 권도 사 가지 않겠느냐며 붙잡는다."
+      },
+      {
+       "t_raw": "아가씨, 가지 마시라며 40% 할인까지 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아가씨, 가지 마시라며 40% 할인까지 제안한다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Kayabuki Ikkei",
@@ -1103,116 +987,8 @@
        "kind": "wiki",
        "page": "Kayabuki Ikkei",
        "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A61",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "문필 활동과 \"Outlander Brigade\"",
-     "latin_left": []
-    },
-    {
-     "section": "능력과 문필관",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The art of making lines of words shine is a martial art in and of itself, wouldn't you say?",
-     "sentences": [
-      {
-       "t_raw": "Kayabuki Ikkei는 자라서야 자신에게 무사의 재능이 없음을 깨달았고, 군 장교의 부관이 될 수도 있었지만 무사에 관한 이야기를 쓰기로 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카야부키 잇케이는 자라서야 자신에게 무사의 재능이 없음을 깨달았고, 군 장교의 부관이 될 수도 있었지만 무사에 관한 이야기를 쓰기로 했다."
-      },
-      {
-       "t_raw": "그는 **말과 글귀를 빛나게 만드는 일** 자체가 하나의 무예라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 **말과 글귀를 빛나게 만드는 일** 자체가 하나의 무예라고 말한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A12",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A13",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "능력과 문필관",
-     "latin_left": []
-    },
-    {
-     "section": "능력과 문필관",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Me? I don't have any fighting chops. I only wish to record the dazzling performances of the fighters.",
-     "sentences": [
-      {
-       "t_raw": "대회에 나서지 않느냐는 물음에 그는 싸움 재주가 없고, 싸우는 이들의 활약을 기록하고 싶을 뿐이라고 답한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대회에 나서지 않느냐는 물음에 그는 싸움 재주가 없고, 싸우는 이들의 활약을 기록하고 싶을 뿐이라고 답한다."
-      },
-      {
-       "t_raw": "여행자의 검술을 본 뒤로는 태양처럼 변치 않는 **강철의 춤을 글로 길이 남기는 일**이 자신의 소명에 가깝다고 여긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자의 검술을 본 뒤로는 태양처럼 변치 않는 **강철의 춤을 글로 길이 남기는 일**이 자신의 소명에 가깝다고 여긴다."
-      },
-      {
-       "t_raw": "그런 글로 영광을 재현하는 일을 **무예의 궁극적인 성취**로 볼 수 있다고 말하고, 난관이 책에 적힌 무예 수련처럼 마음과 인격을 시험하는 일이라며 견뎌야 한다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그런 글로 영광을 재현하는 일을 **무예의 궁극적인 성취**로 볼 수 있다고 말하고, 난관이 책에 적힌 무예 수련처럼 마음과 인격을 시험하는 일이라며 견뎌야 한다고 말한다."
-      },
-      {
-       "t_raw": "싸움에 소질이 없다는 말과 기록자로서의 소명 의식은 그가 무예를 직접 겨루는 대신 글로 재현하는 길을 하나의 무예로 여겼음을 보여 주는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "싸움에 소질이 없다는 말과 기록자로서의 소명 의식은 그가 무예를 직접 겨루는 대신 글로 재현하는 길을 하나의 무예로 여겼음을 보여 주는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A63",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A64",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A65",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A66",
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A40",
        "wiki_refs": []
       },
       {
@@ -1220,194 +996,51 @@
        "page": "Kayabuki Ikkei",
        "revision": 879985,
        "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A38",
+       "paragraph": "A41",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A42",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Story for You",
+       "quest_ko": "「너에게 보내는 이야기」",
+       "version": "2.6",
+       "speaker": "Kayabuki Ikkei"
       }
      ],
-     "heading": "능력과 문필관",
+     "heading": "작중 행적 — 빛나는 자색 정원",
      "latin_left": []
     },
     {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ah yes! You are the eye-catching Golden Whirlwind from the Hyakunin Ikki last time...",
-     "sentences": [
-      {
-       "t_raw": "여행자를 만날 때 Kayabuki Ikkei는 상대를 **Golden Whirlwind**라 부르며 알아본다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자를 만날 때 카야부키 잇케이는 상대를 **Golden Whirlwind**라 부르며 알아본다."
-      },
-      {
-       "t_raw": "다시 만나면 또 만났다며 여행자가 언제나처럼 눈부신 모습이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다시 만나면 또 만났다며 여행자가 언제나처럼 눈부신 모습이라고 말한다."
-      },
-      {
-       "t_raw": "금발 머리가 낯익다며 누구인지 확인하고, 자신이 눈여겨본 사람이 맞았다며 기뻐한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "금발 머리가 낯익다며 누구인지 확인하고, 자신이 눈여겨본 사람이 맞았다며 기뻐한다."
-      },
-      {
-       "t_raw": "이방의 전사, 금발의 이방인 같은 호칭도 여행자에게 쓴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이방의 전사, 금발의 이방인 같은 호칭도 여행자에게 쓴다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: Golden Whirlwind",
-       "quest_ko": "「백 명의 봉기・황금 돌풍」",
-       "version": "2.5",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: Narukami Arena",
-       "quest_ko": "「백 명의 봉기・나루카미 아레나」",
-       "version": "3.1",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: Golden Whirlwind",
-       "quest_ko": "「백 명의 봉기・황금 돌풍」",
-       "version": "2.5",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: The Greatest Battle",
-       "quest_ko": "「백 명의 봉기・최강 무술 대회」",
-       "version": "2.1",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: Narukami Arena",
-       "quest_ko": "「백 명의 봉기・나루카미 아레나」",
-       "version": "3.1",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: Golden Whirlwind",
-       "quest_ko": "「백 명의 봉기・황금 돌풍」",
-       "version": "2.5",
-       "speaker": "Kayabuki Ikkei"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Golden Whirlwind"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Even Shousen, the master of Shinryuu, could have never imagined such a doughty martial artist like you...",
-     "sentences": [
-      {
-       "t_raw": "여행자의 지난 Hyakunin Ikki 활약을 훌륭하다고 평한 그는 그 활약을 글로 써서 Yae Publishing House에 검토용 원고로 보냈다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자의 지난 백 명의 봉기 활약을 훌륭하다고 평한 그는 그 활약을 글로 써서 야에 출판사에 검토용 원고로 보냈다고 말한다."
-      },
-      {
-       "t_raw": "어린 시절에는 Iwakura나 Kitain 같은 비할 데 없는 무사이자 악마를 베는 자가 되기를 꿈꾸었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "어린 시절에는 Iwakura나 키타인 같은 비할 데 없는 무사이자 악마를 베는 자가 되기를 꿈꾸었다."
-      },
-      {
-       "t_raw": "여행자 같은 무사는 Shousen, the master of Shinryuu조차 상상하지 못했을 것이라며 **Shousen**에 견준다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자 같은 무사는 시부카와, the master of 심류조차 상상하지 못했을 것이라며 **시부카와**에 견준다."
-      },
-      {
-       "t_raw": "한편 자신의 책은 Irodori Festival에서 잘 팔리지 않았다고 털어놓는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한편 자신의 책은 이로도리 축제에서 잘 팔리지 않았다고 털어놓는다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A14",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A16",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A17",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A60",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
-       "paragraph": "A11",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": [
-      "Iwakura"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — Hues of the Violet Garden",
+     "status": "accepted",
+     "note": "Supported; the interpretation follows from the quotes.",
      "quote": "Hold on, I only know one Kayabuki Ikkei, and everything he submitted to the Yae Publishing House always got rejected.",
      "sentences": [
       {
-       "t_raw": "Sasano는 자신이 아는 Kayabuki Ikkei는 하나뿐이라며, 그가 Yae Publishing House에 투고한 글은 모두 반려되었다고 말한다.",
+       "t_raw": "Yae Publishing House 쪽 사정을 아는 Sasano는 자신이 아는 Kayabuki Ikkei는 하나뿐이라며, 그가 Yae Publishing House에 제출한 원고는 늘 반려되었다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "사사노는 자신이 아는 카야부키 잇케이는 하나뿐이라며, 그가 야에 출판사에 투고한 글은 모두 반려되었다고 말한다."
+       "t": "야에 출판사 쪽 사정을 아는 사사노는 자신이 아는 카야부키 잇케이는 하나뿐이라며, 그가 야에 출판사에 제출한 원고는 늘 반려되었다고 말한다."
       },
       {
-       "t_raw": "Okazaki Rikuto는 Kayabuki Ikkei를 흥미로운 청년이라고 평한다.",
+       "t_raw": "Okazaki Rikuto는 그를 두고 재미있는 친구라고 평한다.",
        "interp": false,
        "dropped": false,
-       "t": "오카자키 리쿠토는 카야부키 잇케이를 흥미로운 청년이라고 평한다."
+       "t": "오카자키 리쿠토는 그를 두고 재미있는 친구라고 평한다."
       },
       {
-       "t_raw": "출판사 쪽의 반려와 주변 인물의 이런 평가가 나란히 놓이면서, 작가를 바라보는 시선이 한 방향으로만 정리되지 않는다는 점이 드러난다.",
+       "t_raw": "대박을 장담하는 자신감과, 제출한 것이 번번이 반려되어 왔다는 주변의 기억은 나란히 놓으면 뚜렷한 대조를 이룬다.",
        "interp": true,
        "dropped": false,
-       "t": "출판사 쪽의 반려와 주변 인물의 이런 평가가 나란히 놓이면서, 작가를 바라보는 시선이 한 방향으로만 정리되지 않는다는 점이 드러난다."
+       "t": "대박을 장담하는 자신감과, 제출한 것이 번번이 반려되어 왔다는 주변의 기억은 나란히 놓으면 뚜렷한 대조를 이룬다."
       }
      ],
      "sources": [
@@ -1424,46 +1057,424 @@
        "quest_ko": "《이방인의 싸움 여행기!!》",
        "version": "2.8",
        "speaker": "Okazaki Rikuto"
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A26",
+       "wiki_refs": []
       }
      ],
-     "heading": "인간관계",
+     "heading": "작중 행적 — 빛나는 자색 정원",
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "In the early days, this was a mysterious rite used by the Tengu-Kin as a means of making a ruckus.",
+     "section": "작중 행적 — Hues of the Violet Garden",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "That said, I still haven't figured out exactly what I want to write yet... Nonetheless, I believe that watching you fight will be just the inspiration I need to write a brilliant novel!",
      "sentences": [
       {
-       "t_raw": "초기 **Tengu-Kin**은 **Hyakunin Ikki**를 소란을 피우기 위한 신비로운 의식으로 썼다.",
+       "t_raw": "나중에 Hyakunin Ikki 자리에서 그는 Irodori Festival에서 \"When the Wind of Death Blew Towards the Blond Samurai\"가 그다지 잘 팔리지 않았다고 털어놓는다.",
        "interp": false,
        "dropped": false,
-       "t": "초기 **Tengu-Kin**은 **백 명의 봉기**를 소란을 피우기 위한 신비로운 의식으로 썼다."
+       "t": "나중에 백 명의 봉기 자리에서 그는 이로도리 축제에서 \"When the Wind of Death Blew Towards the Blond Samurai\"가 그다지 잘 팔리지 않았다고 털어놓는다.",
+       "polish": {
+        "from": "나중에 백 명의 봉기 자리에서 그는 이로도리 축제에서 \"When the Wind of Death Blew Towards the Blond Samurai\"가 그다지 잘 팔리지 않았다고 털어놓는다.",
+        "text": "나중에 백 명의 봉기 자리에서 그는 이로도리 축제에서 \"When the Wind of Death Blew Towards the Blond Samurai\"가 그다지 잘 팔리지 않았다고 털어놓는다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "Tengu-kin은 텐구 무사의 삶을 숭상해 두려움 없는 싸움을 자아실현의 길로 여겼다.",
+       "t_raw": "그래도 그것은 시리즈의 서장일 뿐이라며, 다음 작품인 \"The Fatal Flowery Blade\"는 분명 성공할 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "Tengu-kin은 텐구 무사의 삶을 숭상해 두려움 없는 싸움을 자아실현의 길로 여겼다."
+       "t": "그래도 그것은 시리즈의 서장일 뿐이라며, 다음 작품인 \"The Fatal Flowery Blade\"는 분명 성공할 것이라고 말한다."
       },
       {
-       "t_raw": "기분이 가라앉거나 축하할 일이 있거나 심심할 때도 그들은 싸움을 벌였다.",
+       "t_raw": "무엇을 쓸지 아직 정하지 못한 점은 여전하지만, Traveler의 싸움을 지켜보면 훌륭한 소설을 쓸 영감이 떠오를 것이라고 기대한다.",
        "interp": false,
        "dropped": false,
-       "t": "기분이 가라앉거나 축하할 일이 있거나 심심할 때도 그들은 싸움을 벌였다."
+       "t": "무엇을 쓸지 아직 정하지 못한 점은 여전하지만, 여행자의 싸움을 지켜보면 훌륭한 소설을 쓸 영감이 떠오를 것이라고 기대한다."
       },
       {
-       "t_raw": "그 결과 Tenryou Commission은 공공질서를 어지럽힌다며 이들을 무법자로 규정했다.",
-       "interp": false,
+       "t_raw": "1권의 부진을 시리즈 전체의 실패가 아니라 아직 남은 **서장**의 몫으로 돌리는 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "그 결과 텐료 봉행(天領奉行)은 공공질서를 어지럽힌다며 이들을 무법자로 규정했다."
+       "t": "1권의 부진을 시리즈 전체의 실패가 아니라 아직 남은 **서장**의 몫으로 돌리는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A60",
+       "wiki_refs": []
       },
       {
-       "t_raw": "이 관행은 텐구를 모방한 Tengu-Kin 사이에서 유행했다.",
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A61",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A62",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 빛나는 자색 정원",
+     "latin_left": [
+      "When the Wind of Death Blew Towards the Blond Samurai",
+      "The Fatal Flowery Blade"
+     ]
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Me? I don't have any fighting chops. I only wish to record the dazzling performances of the fighters.",
+     "sentences": [
+      {
+       "t_raw": "Kayabuki Ikkei는 자신에게는 싸울 재주가 없다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "이 관행은 텐구를 모방한 Tengu-Kin 사이에서 유행했다."
+       "t": "카야부키 잇케이는 자신에게는 싸울 재주가 없다고 말한다."
+      },
+      {
+       "t_raw": "그는 싸움꾼들의 눈부신 활약을 기록하고 싶어 하며, 특히 Traveler의 검술을 본 뒤로는 경기에 직접 나서기보다 검의 춤을 글로 길이 남기는 일이 자신의 길이라고 여긴다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 싸움꾼들의 눈부신 활약을 기록하고 싶어 하며, 특히 여행자의 검술을 본 뒤로는 경기에 직접 나서기보다 검의 춤을 글로 길이 남기는 일이 자신의 길이라고 여긴다고 밝힌다."
+      },
+      {
+       "t_raw": "아레나에 서는 대신 그 아레나를 글로 옮기는 쪽을 택한 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아레나에 서는 대신 그 아레나를 글로 옮기는 쪽을 택한 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A64",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A65",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "All supported by A12 and A66; interpretation is reasonable.",
+     "quote": "I only realized that I lacked that talent after I'd grown up. That's why I decided to write stories about warriors instead.",
+     "sentences": [
+      {
+       "t_raw": "그는 어른이 된 뒤에야 자신에게 그런 재능이 없음을 깨달았고, 그래서 전사들의 이야기를 쓰기로 마음먹었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 어른이 된 뒤에야 자신에게 그런 재능이 없음을 깨달았고, 그래서 전사들의 이야기를 쓰기로 마음먹었다고 말한다."
+      },
+      {
+       "t_raw": "**글줄을 빛나게 다루는 일** 역시 그 자체로 하나의 무예이며, 글로 그러한 장관을 되살려내는 것 또한 무예의 빛나는 성취라고 그는 주장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**글줄을 빛나게 다루는 일** 역시 그 자체로 하나의 무예이며, 글로 그러한 장관을 되살려내는 것 또한 무예의 빛나는 성취라고 그는 주장한다."
+      },
+      {
+       "t_raw": "싸울 재능이 없다는 자각과 문장 쪽에서 무예를 다시 세우려는 태도가 맞물려 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "싸울 재능이 없다는 자각과 문장 쪽에서 무예를 다시 세우려는 태도가 맞물려 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A66",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Supported by A29, A28, Q14. The title-first interpretation follows from A27 and A30.",
+     "quote": "Heh, I guess you could call me a prodigious talent in naming things.",
+     "sentences": [
+      {
+       "t_raw": "그는 스스로를 **이름 짓는 재주가 비상한 사람**이라고 자평한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 스스로를 **이름 짓는 재주가 비상한 사람**이라고 자평한다."
+      },
+      {
+       "t_raw": "실제로 시리즈의 2권과 3권 제목을 각각 \"The Fatal Flowery Blade\"와 \"Blond Samurai, Go With the Wind\"로 이미 지어 두었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "실제로 시리즈의 2권과 3권 제목을 각각 \"The Fatal Flowery Blade\"와 \"Blond Samurai, Go With the Wind\"로 이미 지어 두었다.",
+       "polish": {
+        "from": "실제로 시리즈의 2권과 3권 제목을 각각 \"The Fatal Flowery Blade\"와 \"Blond Samurai, Go With the Wind\"로 이미 지어 두었다.",
+        "text": "실제로 시리즈의 2권과 3권 제목을 각각 \"The Fatal Flowery Blade\"와 \"Blond Samurai, Go With the Wind\"로 이미 지어 두었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "반면 자기 소설에 진부한 전개를 허용하는 일은 없을 것이라고 잘라 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "반면 자기 소설에 진부한 전개를 허용하는 일은 없을 것이라고 잘라 말한다."
+      },
+      {
+       "t_raw": "이름 짓기에 대한 자신감이 본문보다 제목을 먼저 확정해 두는 방식으로 드러나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이름 짓기에 대한 자신감이 본문보다 제목을 먼저 확정해 두는 방식으로 드러나는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hues of the Violet Garden",
+       "paragraph": "A28",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Story for You",
+       "quest_ko": "「너에게 보내는 이야기」",
+       "version": "2.6",
+       "speaker": "Kayabuki Ikkei"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": [
+      "The Fatal Flowery Blade",
+      "Blond Samurai",
+      "Go With the Wind"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by Q3, Q18, Q21, A14 and A65. The interpretation is reasonable.",
+     "quote": "I've written your performance in the last Hyakunin Ikki down. The draft has been sent to the Yae Publishing House for review... Wonder how it's going...",
+     "sentences": [
+      {
+       "t_raw": "Kayabuki Ikkei는 금발의 낯선 이에게 먼저 말을 걸고, 곧 그가 지난 Hyakunin Ikki에서 눈에 띄었던 \"Golden Whirlwind\"임을 알아본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카야부키 잇케이는 금발의 낯선 이에게 먼저 말을 걸고, 곧 그가 지난 백 명의 봉기에서 눈에 띄었던 \"Golden Whirlwind\"임을 알아본다."
+      },
+      {
+       "t_raw": "그는 Traveler의 검술을 잊지 못해, 쇠의 춤을 글로 길이 남기는 일이 대회에 직접 나가는 것보다 자신의 소명에 가깝다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 여행자의 검술을 잊지 못해, 쇠의 춤을 글로 길이 남기는 일이 대회에 직접 나가는 것보다 자신의 소명에 가깝다고 말한다."
+      },
+      {
+       "t_raw": "지난 대회에서의 활약을 적은 원고를 Yae Publishing House에 검토용으로 보내 두고는, 어떻게 되었을지 궁금해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지난 대회에서의 활약을 적은 원고를 야에 출판사에 검토용으로 보내 두고는, 어떻게 되었을지 궁금해한다."
+      },
+      {
+       "t_raw": "금발이라는 인상과 대회에서의 활약을 함께 기억하고, 그 활약을 원고로 옮긴다는 점에서 Traveler의 싸움은 그에게 붙잡아 두고 싶은 문장의 재료가 되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "금발이라는 인상과 대회에서의 활약을 함께 기억하고, 그 활약을 원고로 옮긴다는 점에서 여행자의 싸움은 그에게 붙잡아 두고 싶은 문장의 재료가 되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Hyakunin Ikki: Golden Whirlwind",
+       "quest_ko": "「백 명의 봉기・황금 돌풍」",
+       "version": "2.5",
+       "speaker": "Kayabuki Ikkei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyakunin Ikki: Golden Whirlwind",
+       "quest_ko": "「백 명의 봉기・황금 돌풍」",
+       "version": "2.5",
+       "speaker": "Kayabuki Ikkei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyakunin Ikki: Golden Whirlwind",
+       "quest_ko": "「백 명의 봉기・황금 돌풍」",
+       "version": "2.5",
+       "speaker": "Kayabuki Ikkei"
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A65",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Golden Whirlwind"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by Q23, A60, A14 and Q24. The interpretation is hedged.",
+     "quote": "Hold on, I only know one Kayabuki Ikkei, and everything he submitted to the Yae Publishing House always got rejected.",
+     "sentences": [
+      {
+       "t_raw": "Yae Publishing House와의 인연은 순탄한 편이 아니다. Sasano는 자신이 아는 Kayabuki Ikkei는 한 명뿐이고, 그가 Yae Publishing House에 낸 원고는 늘 퇴짜를 맞았다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야에 출판사와의 인연은 순탄한 편이 아니다. 사사노는 자신이 아는 카야부키 잇케이는 한 명뿐이고, 그가 야에 출판사에 낸 원고는 늘 퇴짜를 맞았다고 말한다."
+      },
+      {
+       "t_raw": "그가 직접 털어놓은 바에 따르면, \"When the Wind of Death Blew Towards the Blond Samurai\"는 앞서 Irodori Festival에서 그다지 팔리지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 직접 털어놓은 바에 따르면, \"When the Wind of Death Blew Towards the Blond Samurai\"는 앞서 이로도리 축제에서 그다지 팔리지 않았다.",
+       "polish": {
+        "from": "그가 직접 털어놓은 바에 따르면, \"When the Wind of Death Blew Towards the Blond Samurai\"는 앞서 이로도리 축제에서 그다지 팔리지 않았다.",
+        "text": "그가 직접 털어놓은 바에 따르면, \"When the Wind of Death Blew Towards the Blond Samurai\"는 앞서 이로도리 축제에서 그다지 팔리지 않았다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그래도 그는 새 원고를 다시 검토에 맡기는 쪽을 택한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 그는 새 원고를 다시 검토에 맡기는 쪽을 택한다."
+      },
+      {
+       "t_raw": "Okazaki Rikuto는 그런 그를 두고 재미있는 녀석이라고 평한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오카자키 리쿠토는 그런 그를 두고 재미있는 녀석이라고 평한다."
+      },
+      {
+       "t_raw": "퇴짜가 되풀이되는 것과 별개로 다음 원고를 또 보내는 셈이니, 그가 붙잡고 있는 것은 출판사의 평가보다 이야기를 쓰는 일 자체로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "퇴짜가 되풀이되는 것과 별개로 다음 원고를 또 보내는 셈이니, 그가 붙잡고 있는 것은 출판사의 평가보다 이야기를 쓰는 일 자체로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "\"Outlander Brigade!\"",
+       "quest_ko": "《이방인의 싸움 여행기!!》",
+       "version": "2.8",
+       "speaker": "Sasano"
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A60",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "\"Outlander Brigade!\"",
+       "quest_ko": "《이방인의 싸움 여행기!!》",
+       "version": "2.8",
+       "speaker": "Okazaki Rikuto"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "When the Wind of Death Blew Towards the Blond Samurai"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A19, A20, A46 and Q1.",
+     "quote": "Even after they were banned, people would still sometimes organize it in secret. The organizers' identities are still shrouded in mystery.",
+     "sentences": [
+      {
+       "t_raw": "Hyakunin Ikki는 원래 Tengu-Kin이 떠들썩하게 놀기 위해 벌이던 의문의 의식이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백 명의 봉기는 원래 Tengu-Kin이 떠들썩하게 놀기 위해 벌이던 의문의 의식이었다."
+      },
+      {
+       "t_raw": "그들이 금지된 뒤에도 사람들은 이따금 대회를 몰래 열었고, **주최자의 정체는 지금도 밝혀지지 않았다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "그들이 금지된 뒤에도 사람들은 이따금 대회를 몰래 열었고, **주최자의 정체는 지금도 밝혀지지 않았다**."
+      },
+      {
+       "t_raw": "Kayabuki Ikkei는 대회가 다시 열릴 때마다 누군가가 또 Hyakunin Ikki를 몰래 열고 있는 모양이라 전하며, 주최자가 누구인지는 그다지 중요하지 않다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카야부키 잇케이는 대회가 다시 열릴 때마다 누군가가 또 백 명의 봉기를 몰래 열고 있는 모양이라 전하며, 주최자가 누구인지는 그다지 중요하지 않다고 말한다."
       }
      ],
      "sources": [
@@ -1475,6 +1486,71 @@
        "paragraph": "A19",
        "wiki_refs": []
       },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-03-18",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A46",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Hyakunin Ikki: Narukami Arena",
+       "quest_ko": "「백 명의 봉기・나루카미 아레나」",
+       "version": "3.1",
+       "speaker": "Kayabuki Ikkei"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Tengu-Kin"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A50, A51 and A52.",
+     "quote": "Later as a result, the Tengu-kin were deemed outlaws by the Tenryou Commission for disrupting public order and disturbing the peace.",
+     "sentences": [
+      {
+       "t_raw": "Tengu-kin은 Inazuma에서 활동하던 무리로, tengu 무사의 삶을 숭상하며 두려움 없는 싸움을 자기실현의 길로 여겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Tengu-kin은 이나즈마에서 활동하던 무리로, 텐구 무사의 삶을 숭상하며 두려움 없는 싸움을 자기실현의 길로 여겼다.",
+       "polish": {
+        "from": "Tengu-kin은 이나즈마에서 활동하던 무리로, tengu 무사의 삶을 숭상하며 두려움 없는 싸움을 자기실현의 길로 여겼다.",
+        "text": "Tengu-kin은 이나즈마에서 활동하던 무리로, 텐구 무사의 삶을 숭상하며 두려움 없는 싸움을 자기실현의 길로 여겼다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "기분이 가라앉을 때도, 축하할 일이 있을 때도, 심심할 때도 그들은 싸움을 벌였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기분이 가라앉을 때도, 축하할 일이 있을 때도, 심심할 때도 그들은 싸움을 벌였다."
+      },
+      {
+       "t_raw": "그러다 Tenryou Commission이 공공질서를 어지럽히고 치안을 해친다며 Tengu-kin을 불법 세력으로 규정했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러다 텐료 봉행(天領奉行)이 공공질서를 어지럽히고 치안을 해친다며 Tengu-kin을 불법 세력으로 규정했다.",
+       "polish": {
+        "from": "그러다 텐료 봉행(天領奉行)이 공공질서를 어지럽히고 치안을 해친다며 Tengu-kin을 불법 세력으로 규정했다.",
+        "text": "그러다 텐료 봉행(天領奉行)이 공공질서를 어지럽히고 치안을 해친다며 Tengu-kin을 불법 세력으로 규정했다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Kayabuki Ikkei",
@@ -1498,141 +1574,42 @@
        "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
        "paragraph": "A52",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: The Greatest Battle",
-       "quest_ko": "「백 명의 봉기・최강 무술 대회」",
-       "version": "2.1",
-       "speaker": "Kayabuki Ikkei"
       }
      ],
      "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Tengu-Kin",
       "Tengu-kin",
-      "Tengu-Kin"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "No way, definitely not! How would that even be possible?",
-     "sentences": [
-      {
-       "t_raw": "Tengu-kin이 무법자로 규정된 뒤에도 Hyakunin Ikki는 비밀리에 열렸고 주최자의 신원은 알려지지 않았다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Tengu-kin이 무법자로 규정된 뒤에도 백 명의 봉기는 비밀리에 열렸고 주최자의 신원은 알려지지 않았다."
-      },
-      {
-       "t_raw": "최근에도 누군가 비밀리에 대회를 다시 조직했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "최근에도 누군가 비밀리에 대회를 다시 조직했다."
-      },
-      {
-       "t_raw": "Kayabuki Ikkei는 여행자가 주최자가 아니냐고 묻자 부인하고, 자신은 승자에게 줄 자금이 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카야부키 잇케이는 여행자가 주최자가 아니냐고 묻자 부인하고, 자신은 승자에게 줄 자금이 없다고 말한다."
-      },
-      {
-       "t_raw": "승자가 온갖 보물을 얻을 수 있다는 이야기와 그가 개인적으로 자금이 없다는 해명은 서로 다른 층위의 이야기로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "승자가 온갖 보물을 얻을 수 있다는 이야기와 그가 개인적으로 자금이 없다는 해명은 서로 다른 층위의 이야기로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A46",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: The Greatest Battle",
-       "quest_ko": "「백 명의 봉기・최강 무술 대회」",
-       "version": "2.1",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A56",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A57",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A58",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: Narukami Arena",
-       "quest_ko": "「백 명의 봉기・나루카미 아레나」",
-       "version": "3.1",
-       "speaker": "Kayabuki Ikkei"
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
       "Tengu-kin"
      ]
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A53-A58. Sentence 2 is a reasonable interpretation.",
      "quote": "Huh? Hmm. I actually don't know. I've never really thought about it...",
      "sentences": [
       {
-       "t_raw": "그는 Tengu-kin이 실제로 무법자였는지 묻자 자신은 모르며 생각해 본 적 없다고 답한다.",
+       "t_raw": "Traveler가 Tengu-kin이 정말로 불법화된 것인지 묻자, Kayabuki Ikkei는 '나도 사실은 모른다'며 생각해 본 적이 없다고 답하고, 그 탄압은 아주 오래전 일이었을 것이라고 덧붙인다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 Tengu-kin이 실제로 무법자였는지 묻자 자신은 모르며 생각해 본 적 없다고 답한다."
+       "t": "여행자가 Tengu-kin이 정말로 불법화된 것인지 묻자, 카야부키 잇케이는 '나도 사실은 모른다'며 생각해 본 적이 없다고 답하고, 그 탄압은 아주 오래전 일이었을 것이라고 덧붙인다.",
+       "polish": {
+        "from": "여행자가 Tengu-kin이 정말로 불법화된 것인지 묻자, 카야부키 잇케이는 '나도 사실은 모른다'며 생각해 본 적이 없다고 답하고, 그 탄압은 아주 오래전 일이었을 것이라고 덧붙인다.",
+        "text": "여행자가 Tengu-kin이 정말로 불법화된 것인지 묻자, 카야부키 잇케이는 '나도 사실은 모른다'며 생각해 본 적이 없다고 답하고, 그 탄압은 아주 오래전 일이었을 것이라고 덧붙인다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "단속은 오래전 일이었고 Tengu-kin에 관해 들은 지 오래라고 덧붙인다.",
+       "t_raw": "이어 Traveler가 행사를 여는 사람이 아니냐고 묻자 그는 절대 아니라며, 자신에게는 승자에게 줄 상금을 마련할 **자금이 없다**고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "단속은 오래전 일이었고 Tengu-kin에 관해 들은 지 오래라고 덧붙인다."
+       "t": "이어 여행자가 행사를 여는 사람이 아니냐고 묻자 그는 절대 아니라며, 자신에게는 승자에게 줄 상금을 마련할 **자금이 없다**고 말한다."
       },
       {
-       "t_raw": "이는 앞서 전한 무법자 규정과 맞물려, 그의 설명이 전승에 기댄 불확실한 이야기로 보인다.",
+       "t_raw": "대회의 상금 사정까지 입에 올리는 사람이 정작 그 유래의 확인되지 않은 대목에서는 말을 흐린다는 것은, 그가 대회를 남보다 잘 아는 인물이면서도 그 내력은 오래된 이야기로만 알고 있음을 보여 준다.",
        "interp": true,
        "dropped": false,
-       "t": "이는 앞서 전한 무법자 규정과 맞물려, 그의 설명이 전승에 기댄 불확실한 이야기로 보인다."
-      },
-      {
-       "t_raw": "Hyakunin Ikki를 Hyakunin Isshu로 잘못 알아들은 이에게 그는 자신이 말한 것은 Hyakunin Ikki라며 Hyakunin Isshu가 무엇인지 되묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "백 명의 봉기를 Hyakunin Isshu로 잘못 알아들은 이에게 그는 자신이 말한 것은 백 명의 봉기라며 Hyakunin Isshu가 무엇인지 되묻는다."
-      },
-      {
-       "t_raw": "그는 이 일을 의뢰라고 부르지는 않는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 이 일을 의뢰라고 부르지는 않는다."
+       "t": "대회의 상금 사정까지 입에 올리는 사람이 정작 그 유래의 확인되지 않은 대목에서는 말을 흐린다는 것은, 그가 대회를 남보다 잘 아는 인물이면서도 그 내력은 오래된 이야기로만 알고 있음을 보여 준다."
       }
      ],
      "sources": [
@@ -1665,137 +1642,139 @@
        "page": "Kayabuki Ikkei",
        "revision": 879985,
        "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
-       "paragraph": "A52",
+       "paragraph": "A56",
        "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: The Greatest Battle",
-       "quest_ko": "「백 명의 봉기・최강 무술 대회」",
-       "version": "2.1",
-       "speaker": "Kayabuki Ikkei"
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A57",
+       "wiki_refs": []
       },
       {
-       "kind": "quest",
-       "quest": "Hyakunin Ikki: The Greatest Battle",
-       "quest_ko": "「백 명의 봉기・최강 무술 대회」",
-       "version": "2.1",
-       "speaker": "Kayabuki Ikkei"
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Event Dialogue > Hyakunin Ikki/2022-10-10",
+       "paragraph": "A58",
+       "wiki_refs": []
       }
      ],
      "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Tengu-kin",
-      "Tengu-kin",
-      "Hyakunin Isshu",
-      "Hyakunin Isshu"
+      "Tengu-kin"
      ]
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Who's this \"Kawabunga\"? It's pronounced \"Kayabuki Ikkei.\" Heh... that would be me.",
+     "status": "accepted",
+     "note": "All sentences are supported by W1 and Q6.",
+     "quote": "Who's this \"Kawabunga\"? It's pronounced \"Kayabuki Ikkei.\"",
      "sentences": [
       {
-       "t_raw": "Kayabuki Ikkei는 상대가 'Kawabunga'를 언급하자 발음이 'Kayabuki Ikkei'라고 바로잡으며 자기 소개를 한다.",
+       "t_raw": "Kayabuki Ikkei의 이름 표기는 한 차례 바뀐 기록이 있다.",
        "interp": false,
        "dropped": false,
-       "t": "카야부키 잇케이는 상대가 'Kawabunga'를 언급하자 발음이 '카야부키 잇케이'라고 바로잡으며 자기 소개를 한다."
+       "t": "카야부키 잇케이의 이름 표기는 한 차례 바뀐 기록이 있다."
       },
       {
-       "t_raw": "그는 'Outlander Brigade'라는 제목이 멋지다며 본문도 제목만큼 잘 읽힌다고 말한다.",
+       "t_raw": "2.5 업데이트 내역에는 'Kayabuki Kazuyoshi'로 적혀 있던 이름이 'Kayabuki Ikkei'로 변경되었다고 나온다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 'Outlander Brigade'라는 제목이 멋지다며 본문도 제목만큼 잘 읽힌다고 말한다."
+       "t": "2.5 업데이트 내역에는 'Kayabuki Kazuyoshi'로 적혀 있던 이름이 '카야부키 잇케이'로 변경되었다고 나온다."
       },
       {
-       "t_raw": "2권은 'The Fatal Flowery Blade', 3권은 'Blond Samurai, Go With the Wind'로 이름 붙일 예정이라고 밝힌다.",
+       "t_raw": "본인도 이름이 어긋나게 불린 자리에서 'Kayabuki Ikkei'라고 발음을 바로잡으며 자신이 바로 그 사람이라고 밝힌다.",
        "interp": false,
        "dropped": false,
-       "t": "2권은 'The Fatal Flowery Blade', 3권은 'Blond Samurai, Go With the Wind'로 이름 붙일 예정이라고 밝힌다."
+       "t": "본인도 이름이 어긋나게 불린 자리에서 '카야부키 잇케이'라고 발음을 바로잡으며 자신이 바로 그 사람이라고 밝힌다."
       },
       {
-       "t_raw": "스스로 **명명 솜씨**가 뛰어난 재능이라고 자평하는데, 이는 작품의 제목을 앞서 정해 두는 태도와 맞물려 자신감으로 읽힌다.",
+       "t_raw": "공식 표기의 변경과 본인의 발음 정정이 같은 이름으로 모이는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "스스로 **명명 솜씨**가 뛰어난 재능이라고 자평하는데, 이는 작품의 제목을 앞서 정해 두는 태도와 맞물려 자신감으로 읽힌다."
+       "t": "공식 표기의 변경과 본인의 발음 정정이 같은 이름으로 모이는 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/19525",
+       "title": "\"When the Sakura Bloom\" Version 2.5 Update Details",
+       "published": "2022-02-16",
+       "checked": "2026-11-13"
+      },
       {
        "kind": "quest",
        "quest": "A Story for You",
        "quest_ko": "「너에게 보내는 이야기」",
        "version": "2.6",
        "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A25",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A28",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A29",
-       "wiki_refs": []
       }
      ],
      "heading": "여담",
      "latin_left": [
-      "Kawabunga",
-      "Outlander Brigade",
-      "The Fatal Flowery Blade",
-      "Blond Samurai",
-      "Go With the Wind"
+      "Kayabuki Kazuyoshi"
      ]
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A7, A8, Q10 and A42. Sentence 3 is a reasonable interpretation.",
      "quote": "Hey, Miss, don't go! Are you sure you don't want a copy? I'll give you 40% off!",
      "sentences": [
       {
-       "t_raw": "그는 떠나려는 상대를 붙잡으며 한 권을 사지 않겠냐고 묻고 40% 할인을 제안한다.",
+       "t_raw": "Hues of the Violet Garden이 열리는 동안 그의 혼잣말에는 **\"Outlander Brigade\"**라는 제목이 자주 등장한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 떠나려는 상대를 붙잡으며 한 권을 사지 않겠냐고 묻고 40% 할인을 제안한다."
+       "t": "빛나는 자색 정원이 열리는 동안 그의 혼잣말에는 **\"Outlander Brigade\"**라는 제목이 자주 등장한다."
       },
       {
-       "t_raw": "그렇게 권한 뒤에도 구매하지 않으려 하면 '이 모든 이야기를 듣고도 한 권 안 사겠냐'고 되묻는다.",
+       "t_raw": "그 시리즈가 틀림없이 대박이 날 것이라고 장담하는 말도 그중 하나다.",
        "interp": false,
        "dropped": false,
-       "t": "그렇게 권한 뒤에도 구매하지 않으려 하면 '이 모든 이야기를 듣고도 한 권 안 사겠냐'고 되묻는다."
+       "t": "그 시리즈가 틀림없이 대박이 날 것이라고 장담하는 말도 그중 하나다."
       },
       {
-       "t_raw": "한쪽이 'See you.'라고 인사하자 그는 'See you around!'이라고 답한다.",
+       "t_raw": "지나가는 사람을 붙잡는 태도는 더 적극적이다. **40% 할인**을 제안하며 발길을 잡고, 그래도 돌아서려 하면 잠깐만이라며 다시 부른다.",
        "interp": false,
        "dropped": false,
-       "t": "한쪽이 'See you.'라고 인사하자 그는 'See you around!'이라고 답한다."
+       "t": "지나가는 사람을 붙잡는 태도는 더 적극적이다. **40% 할인**을 제안하며 발길을 잡고, 그래도 돌아서려 하면 잠깐만이라며 다시 부른다."
       },
       {
-       "t_raw": "Okazaki Rikuto는 Kayabuki Ikkei를 '재미있는 젊은이'라고 평한다.",
-       "interp": false,
+       "t_raw": "새 시리즈의 제목을 혼잣말로 외울 만큼 그가 그 시리즈에 마음을 쏟고 있는 것으로 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "오카자키 리쿠토는 카야부키 잇케이를 '재미있는 젊은이'라고 평한다."
+       "t": "새 시리즈의 제목을 혼잣말로 외울 만큼 그가 그 시리즈에 마음을 쏟고 있는 것으로 보인다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Idle Quotes",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Idle Quotes",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kayabuki Ikkei",
+       "revision": 879985,
+       "section": "Idle Quotes",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
       {
        "kind": "quest",
        "quest": "A Story for You",
@@ -1810,71 +1789,6 @@
        "section": "Event Dialogue > Hues of the Violet Garden",
        "paragraph": "A42",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A40",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Event Dialogue > Hues of the Violet Garden",
-       "paragraph": "A41",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "\"Outlander Brigade!\"",
-       "quest_ko": "《이방인의 싸움 여행기!!》",
-       "version": "2.8",
-       "speaker": "Okazaki Rikuto"
-      }
-     ],
-     "heading": "여담",
-     "latin_left": [
-      "See",
-      "See"
-     ]
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Absolutely not. I would never allow such clichés in one of my novels.",
-     "sentences": [
-      {
-       "t_raw": "그는 자신의 소설에 **상투적인 전개**를 절대 넣지 않겠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 자신의 소설에 **상투적인 전개**를 절대 넣지 않겠다고 말한다."
-      },
-      {
-       "t_raw": "그가 'Outlander Brigade'가 반드시 **큰 히트**를 칠 것이라고 말하는 자신감과, 상투적인 전개를 배척하는 태도가 함께 드러나는 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그가 'Outlander Brigade'가 반드시 **큰 히트**를 칠 것이라고 말하는 자신감과, 상투적인 전개를 배척하는 태도가 함께 드러나는 것으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "A Story for You",
-       "quest_ko": "「너에게 보내는 이야기」",
-       "version": "2.6",
-       "speaker": "Kayabuki Ikkei"
-      },
-      {
-       "kind": "wiki",
-       "page": "Kayabuki Ikkei",
-       "revision": 879985,
-       "section": "Idle Quotes",
-       "paragraph": "A8",
-       "wiki_refs": []
       }
      ],
      "heading": "여담",
@@ -1885,111 +1799,9 @@
    ],
    "quote_boxes": [
     {
-     "section": "작중 행적 — Hyakunin Ikki",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "정말 다시 만났군! 그대는 언제나처럼 눈부신 모습이야...",
-     "en": "Indeed we meet again! You cut as dazzling a figure as ever...",
-     "speaker": "Kayabuki Ikkei",
-     "source": {
-      "kind": "quest",
-      "quest": "Hyakunin Ikki: Narukami Arena",
-      "quest_ko": "「백 명의 봉기・나루카미 아레나」",
-      "version": "3.1",
-      "speaker": "Kayabuki Ikkei"
-     },
-     "t": "정말 다시 만났군! 그대는 언제나처럼 눈부신 모습이야...",
-     "speaker_ko": "카야부키 잇케이"
-    },
-    {
-     "section": "작중 행적 — Hues of the Violet Garden",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "이봐요, 아가씨, 가지 마세요! 정말 한 권 안 사실 건가요? 40% 할인해 드릴게요!",
-     "en": "Hey, Miss, don't go! Are you sure you don't want a copy? I'll give you 40% off!",
-     "speaker": "Kayabuki Ikkei",
-     "source": {
-      "kind": "quest",
-      "quest": "A Story for You",
-      "quest_ko": "「너에게 보내는 이야기」",
-      "version": "2.6",
-      "speaker": "Kayabuki Ikkei"
-     },
-     "t": "이봐요, 아가씨, 가지 마세요! 정말 한 권 안 사실 건가요? 40% 할인해 드릴게요!",
-     "speaker_ko": "카야부키 잇케이"
-    },
-    {
-     "section": "문필 활동과 \"Outlander Brigade\"",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "잠깐, 나는 Kayabuki Ikkei를 한 명만 아는데, 그가 Yae Publishing House에 투고한 모든 것은 항상 거절당했어.",
-     "en": "Hold on, I only know one Kayabuki Ikkei, and everything he submitted to the Yae Publishing House always got rejected.",
-     "speaker": "Sasano",
-     "source": {
-      "kind": "quest",
-      "quest": "\"Outlander Brigade!\"",
-      "quest_ko": "《이방인의 싸움 여행기!!》",
-      "version": "2.8",
-      "speaker": "Sasano"
-     },
-     "t": "잠깐, 나는 카야부키 잇케이를 한 명만 아는데, 그가 야에 출판사에 투고한 모든 것은 항상 거절당했어.",
-     "speaker_ko": "사사노"
-    },
-    {
-     "section": "능력과 문필관",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "당신의 멋진 싸움에서 영감을 받아 이 이야기를 썼다.",
-     "en": "Having been inspired by your marvelous fight, I wrote this story.",
-     "speaker": "Kayabuki Ikkei",
-     "source": {
-      "kind": "quest",
-      "quest": "Hyakunin Ikki: Golden Whirlwind",
-      "quest_ko": "「백 명의 봉기・황금 돌풍」",
-      "version": "2.5",
-      "speaker": "Kayabuki Ikkei"
-     },
-     "t": "당신의 멋진 싸움에서 영감을 받아 이 이야기를 썼다.",
-     "speaker_ko": "카야부키 잇케이"
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아, 그렇지! 당신은 지난번 Hyakunin Ikki에서 눈에 띄던 Golden Whirlwind였죠...",
-     "en": "Ah yes! You are the eye-catching Golden Whirlwind from the Hyakunin Ikki last time...",
-     "speaker": "Kayabuki Ikkei",
-     "source": {
-      "kind": "quest",
-      "quest": "Hyakunin Ikki: Golden Whirlwind",
-      "quest_ko": "「백 명의 봉기・황금 돌풍」",
-      "version": "2.5",
-      "speaker": "Kayabuki Ikkei"
-     },
-     "t": "아, 그렇지! 당신은 지난번 백 명의 봉기에서 눈에 띄던 Golden Whirlwind였죠...",
-     "speaker_ko": "카야부키 잇케이"
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "이 관행은 텐구를 모방한 Tengu-Kin 사이에서 유행하곤 했다. 기본적으로 그들은 이렇게 했다—",
-     "en": "This practice used to circulate amongst the Tengu-Kin, who imitated the tengu. Basically, they would do this—",
-     "speaker": "Kayabuki Ikkei",
-     "source": {
-      "kind": "quest",
-      "quest": "Hyakunin Ikki: The Greatest Battle",
-      "quest_ko": "「백 명의 봉기・최강 무술 대회」",
-      "version": "2.1",
-      "speaker": "Kayabuki Ikkei"
-     },
-     "t": "이 관행은 텐구를 모방한 Tengu-Kin 사이에서 유행하곤 했다. 기본적으로 그들은 이렇게 했다—",
-     "speaker_ko": "카야부키 잇케이"
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "section": "개요",
+     "status": "accepted",
+     "note": "A faithful translation of Q6.",
      "t_raw": "이 'Kawabunga'가 누구냐고? 발음은 'Kayabuki Ikkei'다. 헤... 그게 바로 접니다.",
      "en": "Who's this \"Kawabunga\"? It's pronounced \"Kayabuki Ikkei.\" Heh... that would be me.",
      "speaker": "Kayabuki Ikkei",
@@ -2001,6 +1813,108 @@
       "speaker": "Kayabuki Ikkei"
      },
      "t": "이 'Kawabunga'가 누구냐고? 발음은 '카야부키 잇케이'다. 헤... 그게 바로 접니다.",
+     "speaker_ko": "카야부키 잇케이"
+    },
+    {
+     "section": "작중 행적 — Hyakunin Ikki",
+     "status": "accepted",
+     "note": "A faithful translation of Q12. The '-더군' ending is a stylistic choice.",
+     "t_raw": "그게 말이지, 최근에 어떤 이들이 Hyakunin Ikki를 다시 비밀리에 열었다더군.",
+     "en": "It's like this: recently, some people have organized a Hyakunin Ikki in secret again.",
+     "speaker": "Kayabuki Ikkei",
+     "source": {
+      "kind": "quest",
+      "quest": "Hyakunin Ikki: The Greatest Battle",
+      "quest_ko": "「백 명의 봉기・최강 무술 대회」",
+      "version": "2.1",
+      "speaker": "Kayabuki Ikkei"
+     },
+     "t": "그게 말이지, 최근에 어떤 이들이 백 명의 봉기를 다시 비밀리에 열었다더군.",
+     "speaker_ko": "카야부키 잇케이"
+    },
+    {
+     "section": "작중 행적 — Hues of the Violet Garden",
+     "status": "accepted",
+     "note": "A faithful translation of Q10.",
+     "t_raw": "이봐요, 아가씨, 가지 마세요! 정말 한 권 안 사 가실 생각인가요? 40% 할인해 드릴게요!",
+     "en": "Hey, Miss, don't go! Are you sure you don't want a copy? I'll give you 40% off!",
+     "speaker": "Kayabuki Ikkei",
+     "source": {
+      "kind": "quest",
+      "quest": "A Story for You",
+      "quest_ko": "「너에게 보내는 이야기」",
+      "version": "2.6",
+      "speaker": "Kayabuki Ikkei"
+     },
+     "t": "이봐요, 아가씨, 가지 마세요! 정말 한 권 안 사 가실 생각인가요? 40% 할인해 드릴게요!",
+     "speaker_ko": "카야부키 잇케이"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation of Q14.",
+     "t_raw": "천만에요. 제 소설에 그런 진부한 전개를 넣는 일은 절대 없을 겁니다.",
+     "en": "Absolutely not. I would never allow such clichés in one of my novels.",
+     "speaker": "Kayabuki Ikkei",
+     "source": {
+      "kind": "quest",
+      "quest": "A Story for You",
+      "quest_ko": "「너에게 보내는 이야기」",
+      "version": "2.6",
+      "speaker": "Kayabuki Ikkei"
+     },
+     "t": "천만에요. 제 소설에 그런 진부한 전개를 넣는 일은 절대 없을 겁니다.",
+     "speaker_ko": "카야부키 잇케이"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation of Sasano line Q23.",
+     "t_raw": "잠깐, 내가 아는 Kayabuki Ikkei는 한 명뿐인데, 그가 Yae Publishing House에 낸 원고는 전부 퇴짜를 맞았어.",
+     "en": "Hold on, I only know one Kayabuki Ikkei, and everything he submitted to the Yae Publishing House always got rejected.",
+     "speaker": "Sasano",
+     "source": {
+      "kind": "quest",
+      "quest": "\"Outlander Brigade!\"",
+      "quest_ko": "《이방인의 싸움 여행기!!》",
+      "version": "2.8",
+      "speaker": "Sasano"
+     },
+     "t": "잠깐, 내가 아는 카야부키 잇케이는 한 명뿐인데, 그가 야에 출판사에 낸 원고는 전부 퇴짜를 맞았어.",
+     "speaker_ko": "사사노"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Q1 ('secretly organizing another Hyakunin Ikki').",
+     "t_raw": "…에헴, 요점은, 누군가가 또 Hyakunin Ikki를 남몰래 열고 있는 모양이라는 거지.",
+     "en": "...Ahem, point is, it would seem that some people have been secretly organizing another Hyakunin Ikki.",
+     "speaker": "Kayabuki Ikkei",
+     "source": {
+      "kind": "quest",
+      "quest": "Hyakunin Ikki: Narukami Arena",
+      "quest_ko": "「백 명의 봉기・나루카미 아레나」",
+      "version": "3.1",
+      "speaker": "Kayabuki Ikkei"
+     },
+     "t": "…에헴, 요점은, 누군가가 또 백 명의 봉기를 남몰래 열고 있는 모양이라는 거지.",
+     "speaker_ko": "카야부키 잇케이"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Q10 (Miss, don't go, 40% off).",
+     "t_raw": "이봐요, 아가씨, 가지 마세요! 정말 한 권 안 사실 건가요? 40% 할인해 드릴게요!",
+     "en": "Hey, Miss, don't go! Are you sure you don't want a copy? I'll give you 40% off!",
+     "speaker": "Kayabuki Ikkei",
+     "source": {
+      "kind": "quest",
+      "quest": "A Story for You",
+      "quest_ko": "「너에게 보내는 이야기」",
+      "version": "2.6",
+      "speaker": "Kayabuki Ikkei"
+     },
+     "t": "이봐요, 아가씨, 가지 마세요! 정말 한 권 안 사실 건가요? 40% 할인해 드릴게요!",
      "speaker_ko": "카야부키 잇케이"
     }
    ]

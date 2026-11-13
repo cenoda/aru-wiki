@@ -20,41 +20,41 @@
    "input_chars": 3008,
    "input_cut": false,
    "input_hash": "8f9d2af668d2",
-   "writer": "qwen,or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "ds,glm,ds-pro,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Any outlander who wishes to stay temporarily at Ritou must have an Entry Permit ready. If you are looking to stay for longer, you also need a Resident Permit.",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "She works as an Inspector for the Outlander Affairs Agency and can be found off the gangplank in Ritou, where she greets new arrivals and checks entry permits.",
      "sentences": [
       {
-       "t_raw": "Kageyama는 Inazuma의 Ritou에 있는 등장인물이며, Outlander Affairs Agency의 조사관이다.",
+       "t_raw": "Kageyama는 Ritou에서 Outlander Affairs Agency의 Inspector로 일하는 NPC다.",
        "interp": false,
        "dropped": false,
-       "t": "카게야마는 이나즈마의 이도(離島)에 있는 등장인물이며, 원국감사의 조사관이다."
+       "t": "카게야마는 이도(離島)에서 원국감사의 Inspector로 일하는 NPC다."
       },
       {
-       "t_raw": "그녀는 Ritou에 잠시 머무는 이방인에게 Entry Permit이 필요하다고 안내한다.",
+       "t_raw": "Ritou의 선착장에서 새로 도착한 사람들을 맞이하며, Entry Permit과 Resident Permit을 확인하는 자리에 서 있다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 이도(離島)에 잠시 머무는 이방인에게 Entry Permit이 필요하다고 안내한다."
+       "t": "이도(離島)의 선착장에서 새로 도착한 사람들을 맞이하며, Entry Permit과 Resident Permit을 확인하는 자리에 서 있다."
       },
       {
-       "t_raw": "Sakoku Decree 폐지 후에는 Ritou를 드나드는 사람과 단기 체류 허가 및 물품 교환 허가 신청이 늘었지만, 기본 서류만으로 당일 처리가 가능할 정도로 절차가 부드러워졌다.",
+       "t_raw": "Sakoku Decree가 폐지된 뒤에는 Ritou를 드나드는 사람과 단기 거주 허가, 물품 교환 허가 신청이 늘었지만, 절차는 오히려 간소해져 대부분 당일에 끝난다고 그녀는 설명한다.",
        "interp": false,
        "dropped": false,
-       "t": "쇄국령 폐지 후에는 이도(離島)를 드나드는 사람과 단기 체류 허가 및 물품 교환 허가 신청이 늘었지만, 기본 서류만으로 당일 처리가 가능할 정도로 절차가 부드러워졌다."
+       "t": "쇄국령이 폐지된 뒤에는 이도(離島)를 드나드는 사람과 단기 거주 허가, 물품 교환 허가 신청이 늘었지만, 절차는 오히려 간소해져 대부분 당일에 끝난다고 그녀는 설명한다."
       },
       {
-       "t_raw": "도착객을 맞으며 출입 심사를 담당하는 위치 때문에, 그녀는 Ritou 출입 행정의 얼굴이라고 볼 수 있다.",
+       "t_raw": "외지인이 Ritou에서 입국 절차를 밟으며 마주하게 되는 심사역이라는 점에서, Inazuma 여행담의 관문을 상징하는 인물로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "도착객을 맞으며 출입 심사를 담당하는 위치 때문에, 그녀는 이도(離島) 출입 행정의 얼굴이라고 볼 수 있다."
+       "t": "외지인이 이도(離島)에서 입국 절차를 밟으며 마주하게 되는 심사역이라는 점에서, 이나즈마 여행담의 관문을 상징하는 인물로 볼 수 있다."
       }
      ],
      "sources": [
@@ -64,14 +64,6 @@
        "revision": 592707,
        "section": null,
        "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A7",
        "wiki_refs": []
       },
       {
@@ -97,42 +89,46 @@
        "section": "Dialogue",
        "paragraph": "A28",
        "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Confessions of an Outlander",
+       "quest_ko": "이방인의 참회록",
+       "version": "2.0",
+       "speaker": "Kageyama"
       }
      ],
      "heading": null,
      "latin_left": [
-      "Entry Permit"
+      "Inspector",
+      "NPC",
+      "Entry Permit",
+      "Resident Permit"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported. '갑판' for gangplank is loose but not a new fact.",
      "quote": "This is the identification checkpoint under the jurisdiction of the Outlander Affairs Agency.",
      "sentences": [
       {
-       "t_raw": "Kageyama는 Inazuma의 Ritou에 있는 NPC로, Outlander Affairs Agency에서 조사관으로 일한다.",
+       "t_raw": "Kageyama는 Inazuma의 Ritou에 있는 NPC로, **Outlander Affairs Agency 소속 Inspector**다.",
        "interp": false,
        "dropped": false,
-       "t": "카게야마는 이나즈마의 이도(離島)에 있는 NPC로, 원국감사에서 조사관으로 일한다."
+       "t": "카게야마는 이나즈마의 이도(離島)에 있는 NPC로, **원국감사 소속 Inspector**다."
       },
       {
-       "t_raw": "그녀는 Ritou의 발판 근처에서 새로 도착한 출입객을 맞고, 그들의 입국 허가를 확인한다.",
+       "t_raw": "그녀는 Ritou의 갑판 옆에 자리 잡고 새로 도착한 이들을 맞으며 입국 허가를 확인한다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 이도(離島)의 발판 근처에서 새로 도착한 출입객을 맞고, 그들의 입국 허가를 확인한다."
+       "t": "그녀는 이도(離島)의 갑판 옆에 자리 잡고 새로 도착한 이들을 맞으며 입국 허가를 확인한다."
       },
       {
-       "t_raw": "그녀는 자신이 서 있는 곳을 Outlander Affairs Agency 관할의 **신분 확인 검문소**라고 소개한다.",
+       "t_raw": "그 자리는 Outlander Affairs Agency가 관할하는 신원 확인 검문소다.",
        "interp": false,
        "dropped": false,
-       "t": "그녀는 자신이 서 있는 곳을 원국감사 관할의 **신분 확인 검문소**라고 소개한다."
-      },
-      {
-       "t_raw": "허가 확인이 도착 지점에서 이뤄진다는 점에서, 이 검문소는 Outlander Affairs Agency의 규정이 출입객에게 닿는 자리라고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "허가 확인이 도착 지점에서 이뤄진다는 점에서, 이 검문소는 원국감사의 규정이 출입객에게 닿는 자리라고 볼 수 있다."
+       "t": "그 자리는 원국감사가 관할하는 신원 확인 검문소다."
       }
      ],
      "sources": [
@@ -150,99 +146,44 @@
        "revision": 592707,
        "section": "Dialogue",
        "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A26",
        "wiki_refs": []
       }
      ],
      "heading": "개요",
      "latin_left": [
-      "NPC"
+      "NPC",
+      "Inspector"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Please show some proof of identification.",
-     "sentences": [
-      {
-       "t_raw": "가만히 서 있을 때는 신분 증명을 보여 달라는 말을 건넨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "가만히 서 있을 때는 신분 증명을 보여 달라는 말을 건넨다."
-      },
-      {
-       "t_raw": "새로 온 이를 맞는 사람과 신분을 확인하는 사람이 동일하다는 점에서, 그녀의 인사에는 **환대와 검문**이 함께 담겨 있는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "새로 온 이를 맞는 사람과 신분을 확인하는 사람이 동일하다는 점에서, 그녀의 인사에는 **환대와 검문**이 함께 담겨 있는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Idle Quotes",
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A7",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported; the interpretation is reasonable.",
      "quote": "Any outlander who wishes to stay temporarily at Ritou must have an Entry Permit ready. If you are looking to stay for longer, you also need a Resident Permit.",
      "sentences": [
       {
-       "t_raw": "Ritou에 잠시 머물려는 외지인은 **Entry Permit**을 준비해야 하고, 더 오래 머물려면 Resident Permit도 필요하다.",
+       "t_raw": "검문의 기준이 되는 것은 허가증이다.",
        "interp": false,
        "dropped": false,
-       "t": "이도(離島)에 잠시 머물려는 외지인은 **Entry Permit**을 준비해야 하고, 더 오래 머물려면 Resident Permit도 필요하다."
+       "t": "검문의 기준이 되는 것은 허가증이다."
       },
       {
-       "t_raw": "이런 허가가 없으면 예외를 두기 어렵다.",
+       "t_raw": "Ritou에 잠시 머물려는 외지인은 **Entry Permit**을 갖추어야 하고, 더 오래 머물려면 Resident Permit도 필요하다.",
        "interp": false,
        "dropped": false,
-       "t": "이런 허가가 없으면 예외를 두기 어렵다."
+       "t": "이도(離島)에 잠시 머물려는 외지인은 **Entry Permit**을 갖추어야 하고, 더 오래 머물려면 Resident Permit도 필요하다."
       },
       {
-       "t_raw": "Narukami Island로 가려면 **Travel Permit**이 필요하며, 절차상 Outlander Affairs Agency 본부에 신청해야 한다.",
+       "t_raw": "허가증이 없으면 예외를 두기 어렵다는 것이 그녀의 설명이다.",
        "interp": false,
        "dropped": false,
-       "t": "나루카미섬으로 가려면 **통행증**이 필요하며, 절차상 원국감사 본부에 신청해야 한다."
+       "t": "허가증이 없으면 예외를 두기 어렵다는 것이 그녀의 설명이다."
       },
       {
-       "t_raw": "다만 특별한 연줄이 없으면 신청이 매우 어려울 수 있다는 설명이 붙는다.",
-       "interp": false,
+       "t_raw": "허가증 확인이 곧 입국 심사의 실질이며, 그녀가 재량으로 넘겨 줄 여지는 좁아 보인다.",
+       "interp": true,
        "dropped": false,
-       "t": "다만 특별한 연줄이 없으면 신청이 매우 어려울 수 있다는 설명이 붙는다."
+       "t": "허가증 확인이 곧 입국 심사의 실질이며, 그녀가 재량으로 넘겨 줄 여지는 좁아 보인다."
       }
      ],
      "sources": [
@@ -260,6 +201,285 @@
        "revision": 592707,
        "section": "Dialogue",
        "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Entry Permit",
+      "Resident Permit"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All supported by Q1-Q3.",
+     "quote": "Hello, please state your name, identity, and the purpose of your visit. Oh, except you, Thoma.",
+     "sentences": [
+      {
+       "t_raw": "여행자와 Thoma가 Ritou에 닿았을 때, 그녀는 이름과 신분, 방문 목적을 밝히고 소지품을 신고하라고 요구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 토마가 이도(離島)에 닿았을 때, 그녀는 이름과 신분, 방문 목적을 밝히고 소지품을 신고하라고 요구한다."
+      },
+      {
+       "t_raw": "다만 그 요구에서 Thoma만은 빠진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 그 요구에서 토마만은 빠진다."
+      },
+      {
+       "t_raw": "서류에 문제가 없다는 확인이 끝난 뒤에야 Ritou에 오신 것을 환영한다는 인사가 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서류에 문제가 없다는 확인이 끝난 뒤에야 이도(離島)에 오신 것을 환영한다는 인사가 나온다."
+      },
+      {
+       "t_raw": "허가와 신고를 확인하는 절차가 끝난 다음에 환영이 따라오는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "허가와 신고를 확인하는 절차가 끝난 다음에 환영이 따라오는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Confessions of an Outlander",
+       "quest_ko": "이방인의 참회록",
+       "version": "2.0",
+       "speaker": "Kageyama"
+      },
+      {
+       "kind": "quest",
+       "quest": "Confessions of an Outlander",
+       "quest_ko": "이방인의 참회록",
+       "version": "2.0",
+       "speaker": "Kageyama"
+      },
+      {
+       "kind": "quest",
+       "quest": "Confessions of an Outlander",
+       "quest_ko": "이방인의 참회록",
+       "version": "2.0",
+       "speaker": "Kageyama"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "This is the identification checkpoint under the jurisdiction of the Outlander Affairs Agency.",
+     "sentences": [
+      {
+       "t_raw": "Kageyama는 Inazuma의 Ritou에서 Outlander Affairs Agency 소속 검문관으로 일한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카게야마는 이나즈마의 이도(離島)에서 원국감사 소속 검문관으로 일한다."
+      },
+      {
+       "t_raw": "그녀는 Ritou의 배 발판 밖에서 새로 도착한 이들을 맞으며 Entry Permit을 확인한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 이도(離島)의 배 발판 밖에서 새로 도착한 이들을 맞으며 Entry Permit을 확인한다."
+      },
+      {
+       "t_raw": "그녀는 이곳을 Outlander Affairs Agency 관할의 신분 확인 검문소라고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 이곳을 원국감사 관할의 신분 확인 검문소라고 설명한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Entry Permit"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All supported; the interpretation follows from A11, A19-A21.",
+     "quote": "The inspector at headquarters will pick out a guest worthy of meeting the Commissioner based on the status and causes of the applicants.",
+     "sentences": [
+      {
+       "t_raw": "Narukami Island로 가려면 Travel Permit이 필요하고, 절차상 Outlander Affairs Agency 본부에 신청해야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나루카미섬으로 가려면 통행증이 필요하고, 절차상 원국감사 본부에 신청해야 한다."
+      },
+      {
+       "t_raw": "Kanjou Commissioner 면담을 원하는 경우에도 명함을 Outlander Affairs Agency 본부로 보내야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "간조 봉행 면담을 원하는 경우에도 명함을 원국감사 본부로 보내야 한다."
+      },
+      {
+       "t_raw": "본부의 inspector가 신청자의 지위와 사유를 기준으로 Commissioner를 만날 손님을 고른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "본부의 조사관이 신청자의 지위와 사유를 기준으로 봉행을 만날 손님을 고른다.",
+       "polish": {
+        "from": "본부의 inspector가 신청자의 지위와 사유를 기준으로 봉행을 만날 손님을 고른다.",
+        "text": "본부의 조사관이 신청자의 지위와 사유를 기준으로 봉행을 만날 손님을 고른다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "평민이라면 그 계획을 접으라는 말이 붙고, 일반적으로 outlander는 Commissioner를 만날 기회가 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "평민이라면 그 계획을 접으라는 말이 붙고, 일반적으로 외지인은 봉행을 만날 기회가 없다.",
+       "polish": {
+        "from": "평민이라면 그 계획을 접으라는 말이 붙고, 일반적으로 outlander는 봉행을 만날 기회가 없다.",
+        "text": "평민이라면 그 계획을 접으라는 말이 붙고, 일반적으로 외지인은 봉행을 만날 기회가 없다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "허가 신청과 면담 요청이 모두 Outlander Affairs Agency의 본부 절차로 이어지고, Kanjou Commissioner 접근에는 별도의 선별이 붙는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "허가 신청과 면담 요청이 모두 원국감사의 본부 절차로 이어지고, 간조 봉행 접근에는 별도의 선별이 붙는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A21",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "업무와 권한 — 허가증의 종류",
+     "status": "accepted",
+     "note": "All sentences follow from A8-A9.",
+     "quote": "Any outlander who wishes to stay temporarily at Ritou must have an Entry Permit ready. If you are looking to stay for longer, you also need a Resident Permit.",
+     "sentences": [
+      {
+       "t_raw": "Ritou에 잠시 머무르려는 외지인은 Entry Permit을 준비해야 하고, 체류가 길어지면 Resident Permit도 함께 갖추어야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이도(離島)에 잠시 머무르려는 외지인은 Entry Permit을 준비해야 하고, 체류가 길어지면 Resident Permit도 함께 갖추어야 한다."
+      },
+      {
+       "t_raw": "두 허가증 가운데 하나라도 빠지면 예외를 두기 어렵다는 것이 그녀의 설명이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 허가증 가운데 하나라도 빠지면 예외를 두기 어렵다는 것이 그녀의 설명이다."
+      },
+      {
+       "t_raw": "체류 기간에 따라 요구되는 허가증의 수가 달라지고, 그것이 없을 때의 예외가 인정되지 않는다는 점에서, 허가증은 Ritou에 머무는 일을 가능하게 하는 조건 그 자체로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "체류 기간에 따라 요구되는 허가증의 수가 달라지고, 그것이 없을 때의 예외가 인정되지 않는다는 점에서, 허가증은 이도(離島)에 머무는 일을 가능하게 하는 조건 그 자체로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "업무와 권한 — 허가증의 종류",
+     "latin_left": [
+      "Entry Permit",
+      "Resident Permit"
+     ]
+    },
+    {
+     "section": "업무와 권한 — 허가증의 종류",
+     "status": "accepted",
+     "note": "Supported by A8 and A11. The interpretation is reasonable.",
+     "quote": "If you wish to travel to Narukami Island, you need a Travel Permit.",
+     "sentences": [
+      {
+       "t_raw": "Ritou 체류를 위해 갖추는 허가증과는 별도로, Narukami Island로 이동하려면 Travel Permit이 필요하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이도(離島) 체류를 위해 갖추는 허가증과는 별도로, 나루카미섬으로 이동하려면 통행증이 필요하다."
+      },
+      {
+       "t_raw": "절차상 이 허가증은 Outlander Affairs Agency 본부에 신청해야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "절차상 이 허가증은 원국감사 본부에 신청해야 한다."
+      },
+      {
+       "t_raw": "머무는 곳을 기준으로 나뉜 허가증 위에 목적지 이동을 위한 허가가 한 겹 더 얹히고, 그 신청처마저 본부로 정해져 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "머무는 곳을 기준으로 나뉜 허가증 위에 목적지 이동을 위한 허가가 한 겹 더 얹히고, 그 신청처마저 본부로 정해져 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A8",
        "wiki_refs": []
       },
       {
@@ -277,169 +497,40 @@
        "section": "Dialogue",
        "paragraph": "A11",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A13",
-       "wiki_refs": []
       }
      ],
-     "heading": "정체와 배경",
-     "latin_left": [
-      "Entry Permit",
-      "Resident Permit"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "In the past, if you didn't have any special connections, it might be very difficult to apply for it.",
-     "sentences": [
-      {
-       "t_raw": "과거에는 특별한 연줄이 없으면 신청이 매우 어려울 수 있었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "과거에는 특별한 연줄이 없으면 신청이 매우 어려울 수 있었다."
-      },
-      {
-       "t_raw": "지금은 Kanjou Commission의 업무가 엄격히 감독되어, 필요한 자료만 준비하면 방문객이 Travel Pass를 쉽게 신청할 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "지금은 간조 봉행(勘定奉行)의 업무가 엄격히 감독되어, 필요한 자료만 준비하면 방문객이 Travel Pass를 쉽게 신청할 수 있다."
-      },
-      {
-       "t_raw": "**Sakoku Decree** 폐지 후 Ritou를 오가는 사람이 점차 늘고, 단기 거주 허가와 물품 교환 허가를 신청하는 사람도 늘었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**쇄국령** 폐지 후 이도(離島)를 오가는 사람이 점차 늘고, 단기 거주 허가와 물품 교환 허가를 신청하는 사람도 늘었다."
-      },
-      {
-       "t_raw": "제한이 더 이상 그렇게 엄격하지 않아 신청 처리가 훨씬 매끄러워졌고, 대개 가장 기본적인 서류만 있으면 당일에 처리가 끝난다.",
-       "interp": false,
-       "dropped": false,
-       "t": "제한이 더 이상 그렇게 엄격하지 않아 신청 처리가 훨씬 매끄러워졌고, 대개 가장 기본적인 서류만 있으면 당일에 처리가 끝난다."
-      },
-      {
-       "t_raw": "과거의 연줄 장벽과 현재의 기본 서류 중심 처리 사이에는 제도 운영의 무게가 신청 자격에서 행정 절차로 옮겨간 변화가 깔린 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "과거의 연줄 장벽과 현재의 기본 서류 중심 처리 사이에는 제도 운영의 무게가 신청 자격에서 행정 절차로 옮겨간 변화가 깔린 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A16",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A17",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A27",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A28",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": [
-      "Travel Pass"
-     ]
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "According to the Almighty Shogun's edict, both Inazumans and outsiders may freely enter Inazuma City.",
-     "sentences": [
-      {
-       "t_raw": "Inazuma City로 가는 절차에 대해서는, Almighty Shogun의 칙령에 따라 Inazumans와 외부인 모두 Inazuma City에 자유롭게 들어갈 수 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이나즈마성으로 가는 절차에 대해서는, 전능한 쇼군의 칙령에 따라 이나즈마 사람과 외부인 모두 이나즈마성에 자유롭게 들어갈 수 있다."
-      },
-      {
-       "t_raw": "다만 안전을 위해 검문소에서 필요한 심사를 계속한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다만 안전을 위해 검문소에서 필요한 심사를 계속한다."
-      },
-      {
-       "t_raw": "자유로운 입성과 검문소 심사가 함께 언급된 점은 개방과 확인이 동시에 유지되는 구조로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "자유로운 입성과 검문소 심사가 함께 언급된 점은 개방과 확인이 동시에 유지되는 구조로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A29",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A30",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A31",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
+     "heading": "업무와 권한 — 허가증의 종류",
      "latin_left": []
     },
     {
-     "section": "작중 행적",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "If you don't have these permits, we can't really make an exception for you...",
+     "section": "업무와 권한 — 허가증의 종류",
+     "status": "accepted",
+     "note": "Supported by A19-A21.",
+     "quote": "If you wish to seek audience with the Kanjou Commissioner, you may send your name card to the headquarters of the Outlander Affairs Agency.",
      "sentences": [
       {
-       "t_raw": "Transient Dreams 완료 전, Kageyama는 **신분 확인 검문소**에서 Entry Permit과 Resident Permit을 요구하고, 허가가 없으면 예외를 둘 수 없다고 말한다.",
+       "t_raw": "Kanjou Commissioner를 만나고 싶다면 명함을 Outlander Affairs Agency 본부로 보내면 된다.",
        "interp": false,
        "dropped": false,
-       "t": "찰나의 꿈 완료 전, 카게야마는 **신분 확인 검문소**에서 Entry Permit과 Resident Permit을 요구하고, 허가가 없으면 예외를 둘 수 없다고 말한다."
+       "t": "간조 봉행을 만나고 싶다면 명함을 원국감사 본부로 보내면 된다."
       },
       {
-       "t_raw": "Narukami Island로 가려면 Travel Permit이 필요하고, 특별한 연줄이 없으면 신청이 매우 어려울 수 있다고 덧붙인다.",
+       "t_raw": "본부의 심사관이 신청자의 지위와 사유를 살펴 만날 만한 손님을 고른다.",
        "interp": false,
        "dropped": false,
-       "t": "나루카미섬으로 가려면 통행증이 필요하고, 특별한 연줄이 없으면 신청이 매우 어려울 수 있다고 덧붙인다."
+       "t": "본부의 심사관이 신청자의 지위와 사유를 살펴 만날 만한 손님을 고른다."
+      },
+      {
+       "t_raw": "평민이라면 그런 생각을 접는 편이 좋고, 일반적으로 외지인이 Commissioner를 만날 기회는 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "평민이라면 그런 생각을 접는 편이 좋고, 일반적으로 외지인이 봉행을 만날 기회는 없다."
+      },
+      {
+       "t_raw": "면담 상대가 신청자의 지위에 따라 본부에서 갈리는 만큼, 허가증 절차 못지않게 Commissioner 면담의 문턱도 높다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "면담 상대가 신청자의 지위에 따라 본부에서 갈리는 만큼, 허가증 절차 못지않게 봉행 면담의 문턱도 높다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -448,7 +539,7 @@
        "page": "Kageyama",
        "revision": 592707,
        "section": "Dialogue",
-       "paragraph": "A5",
+       "paragraph": "A19",
        "wiki_refs": []
       },
       {
@@ -456,7 +547,7 @@
        "page": "Kageyama",
        "revision": 592707,
        "section": "Dialogue",
-       "paragraph": "A7",
+       "paragraph": "A20",
        "wiki_refs": []
       },
       {
@@ -464,57 +555,148 @@
        "page": "Kageyama",
        "revision": 592707,
        "section": "Dialogue",
-       "paragraph": "A8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A9",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A11",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A13",
+       "paragraph": "A21",
        "wiki_refs": []
       }
      ],
-     "heading": "작중 행적",
-     "latin_left": [
-      "Entry Permit",
-      "Resident Permit"
-     ]
+     "heading": "업무와 권한 — 허가증의 종류",
+     "latin_left": []
     },
     {
-     "section": "작중 행적",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "According to the Almighty Shogun's edict, both Inazumans and outsiders may freely enter Inazuma City.",
+     "section": "작중 행적 — Confessions of an Outlander",
+     "status": "accepted",
+     "note": "Supported by Q2, Q5 and Q1. The interpretation is reasonable.",
+     "quote": "Hello, please state your name, identity, and the purpose of your visit. Oh, except you, Thoma.",
      "sentences": [
       {
-       "t_raw": "Transient Dreams 완료 뒤, Sakoku Decree 폐지로 Ritou 출입자와 단기 거주·물품 교환 허가 신청자가 늘었지만 제한이 덜 엄격해져 기본 서류만으로 **당일 처리**되는 일이 많아졌다고 한다.",
+       "t_raw": "Ritou에 도착한 여행자와 Thoma 앞에서 Kageyama가 건네는 첫마디는 인사와 함께 신분 확인 요구다.",
        "interp": false,
        "dropped": false,
-       "t": "찰나의 꿈 완료 뒤, 쇄국령 폐지로 이도(離島) 출입자와 단기 거주·물품 교환 허가 신청자가 늘었지만 제한이 덜 엄격해져 기본 서류만으로 **당일 처리**되는 일이 많아졌다고 한다."
+       "t": "이도(離島)에 도착한 여행자와 토마 앞에서 카게야마가 건네는 첫마디는 인사와 함께 신분 확인 요구다."
       },
       {
-       "t_raw": "Inazuma City는 Almighty Shogun의 칙령으로 Inazumans와 외부인 모두 자유롭게 드나들 수 있되, 안전을 위한 검문소 검사는 계속한다.",
+       "t_raw": "그녀는 이름과 신분, 그리고 방문 목적을 밝히라고 요구하고, Thoma만은 그 대상에서 빼 둔다.",
        "interp": false,
        "dropped": false,
-       "t": "이나즈마성은 전능한 쇼군의 칙령으로 이나즈마 사람과 외부인 모두 자유롭게 드나들 수 있되, 안전을 위한 검문소 검사는 계속한다."
+       "t": "그녀는 이름과 신분, 그리고 방문 목적을 밝히라고 요구하고, 토마만은 그 대상에서 빼 둔다."
+      },
+      {
+       "t_raw": "여행자를 향해서는 '처음 오신 분 같다'고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자를 향해서는 '처음 오신 분 같다'고 말한다."
+      },
+      {
+       "t_raw": "Thoma에게는 절차를 면제하고 여행자에게는 처음 보는 사람이라 말하는 두 대목이 겹치면서, 그녀가 이미 아는 사람과 새로 온 사람을 나눠 대한다는 인상이 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "토마에게는 절차를 면제하고 여행자에게는 처음 보는 사람이라 말하는 두 대목이 겹치면서, 그녀가 이미 아는 사람과 새로 온 사람을 나눠 대한다는 인상이 남는다."
+      },
+      {
+       "t_raw": "이어 요청한 정보와 함께 몸에 지닌 물품도 신고하라고 요구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 요청한 정보와 함께 몸에 지닌 물품도 신고하라고 요구한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Confessions of an Outlander",
+       "quest_ko": "이방인의 참회록",
+       "version": "2.0",
+       "speaker": "Kageyama"
+      },
+      {
+       "kind": "quest",
+       "quest": "Confessions of an Outlander",
+       "quest_ko": "이방인의 참회록",
+       "version": "2.0",
+       "speaker": "Kageyama"
+      },
+      {
+       "kind": "quest",
+       "quest": "Confessions of an Outlander",
+       "quest_ko": "이방인의 참회록",
+       "version": "2.0",
+       "speaker": "Kageyama"
+      }
+     ],
+     "heading": "작중 행적 — 이방인의 참회록",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Confessions of an Outlander",
+     "status": "accepted",
+     "note": "Supported by Q4 and Q3.",
+     "quote": "...I see, okay. Your papers are all in order. Welcome to Ritou.",
+     "sentences": [
+      {
+       "t_raw": "그녀의 대사 가운데에는 사과로 시작해 무언가를 요청하려다 끊긴 줄이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀의 대사 가운데에는 사과로 시작해 무언가를 요청하려다 끊긴 줄이 있다."
+      },
+      {
+       "t_raw": "확인이 끝난 뒤에야 그녀는 서류가 모두 갖추어졌다며 Ritou에 온 것을 환영한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "확인이 끝난 뒤에야 그녀는 서류가 모두 갖추어졌다며 이도(離島)에 온 것을 환영한다."
+      },
+      {
+       "t_raw": "정보 제출과 소지품 신고를 요구하는 단계와, 서류가 정돈된 뒤에 건네는 환영 인사가 한 장면 안에 나란히 놓이면서, 그녀에게 검문은 통과와 환영을 가르는 관문으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정보 제출과 소지품 신고를 요구하는 단계와, 서류가 정돈된 뒤에 건네는 환영 인사가 한 장면 안에 나란히 놓이면서, 그녀에게 검문은 통과와 환영을 가르는 관문으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Confessions of an Outlander",
+       "quest_ko": "이방인의 참회록",
+       "version": "2.0",
+       "speaker": "Kageyama"
+      },
+      {
+       "kind": "quest",
+       "quest": "Confessions of an Outlander",
+       "quest_ko": "이방인의 참회록",
+       "version": "2.0",
+       "speaker": "Kageyama"
+      }
+     ],
+     "heading": "작중 행적 — 이방인의 참회록",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Sakoku Decree 폐지 이후",
+     "status": "accepted",
+     "note": "Supported by A27-A28.",
+     "quote": "But since our restrictions are no longer so stringent, processing these applications has become a far smoother process.",
+     "sentences": [
+      {
+       "t_raw": "Transient Dreams를 완료한 뒤 Kageyama는 **Sakoku Decree 폐지**로 Ritou 출입자와 short-term residential permits, goods exchange permits 신청자가 늘었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "찰나의 꿈을 완료한 뒤 카게야마는 **쇄국령 폐지**로 이도(離島) 출입자와 단기 거주 허가, 물품 교환 허가 신청자가 늘었다고 말한다.",
+       "polish": {
+        "from": "찰나의 꿈을 완료한 뒤 카게야마는 **쇄국령 폐지**로 이도(離島) 출입자와 short-term residential permits, goods exchange permits 신청자가 늘었다고 말한다.",
+        "text": "찰나의 꿈을 완료한 뒤 카게야마는 **쇄국령 폐지**로 이도(離島) 출입자와 단기 거주 허가, 물품 교환 허가 신청자가 늘었다고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "규제가 엄격하지 않아 처리는 매끄러워졌고, 기본 서류만으로 당일 처리가 끝나는 경우가 많다.",
+       "interp": false,
+       "dropped": false,
+       "t": "규제가 엄격하지 않아 처리는 매끄러워졌고, 기본 서류만으로 당일 처리가 끝나는 경우가 많다."
+      },
+      {
+       "t_raw": "입출입은 늘었지만 절차는 간소해진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "입출입은 늘었지만 절차는 간소해진 셈이다."
       }
      ],
      "sources": [
@@ -541,7 +723,79 @@
        "section": "Dialogue",
        "paragraph": "A28",
        "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 쇄국령 폐지 이후",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Sakoku Decree 폐지 이후",
+     "status": "accepted",
+     "note": "All sentences follow the English (A16, A17); the interpretation is reasonable.",
+     "quote": "Nowadays, all the affairs of Kanjou Commission are strictly supervised, so visitors should be able to apply for the Travel Pass easily as long as they prepare the required materials.",
+     "sentences": [
+      {
+       "t_raw": "Kageyama는 과거에는 특별한 인맥이 없으면 신청이 어려울 수 있었다고 말하면서, 이제는 Kanjou Commission의 업무가 엄격히 감독되어 필요한 자료만 준비하면 **Travel Pass**를 쉽게 신청할 수 있다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카게야마는 과거에는 특별한 인맥이 없으면 신청이 어려울 수 있었다고 말하면서, 이제는 간조 봉행(勘定奉行)의 업무가 엄격히 감독되어 필요한 자료만 준비하면 **Travel Pass**를 쉽게 신청할 수 있다고 한다."
       },
+      {
+       "t_raw": "검문의 문턱이 인맥보다 서류와 절차로 옮겨간 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "검문의 문턱이 인맥보다 서류와 절차로 옮겨간 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 쇄국령 폐지 이후",
+     "latin_left": [
+      "Travel Pass"
+     ]
+    },
+    {
+     "section": "작중 행적 — Sakoku Decree 폐지 이후",
+     "status": "accepted",
+     "note": "Supported by A30 and A31; the interpretation is reasonable.",
+     "quote": "However, we are still to conduct necessary examinations at checkpoints, just to be safe.",
+     "sentences": [
+      {
+       "t_raw": "Almighty Shogun의 칙령에 따라 Inazumans와 외지인 모두 Inazuma City에 자유롭게 들어갈 수 있게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전능한 쇼군의 칙령에 따라 이나즈마 사람과 외지인 모두 이나즈마성에 자유롭게 들어갈 수 있게 되었다."
+      },
+      {
+       "t_raw": "그래도 Kageyama는 안전을 위해 검문소에서 필요한 검사를 계속한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 카게야마는 안전을 위해 검문소에서 필요한 검사를 계속한다고 말한다."
+      },
+      {
+       "t_raw": "통행의 자유는 넓어졌지만 **검문소의 심사 기능**은 남아 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "통행의 자유는 넓어졌지만 **검문소의 심사 기능**은 남아 있는 셈이다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Kageyama",
@@ -559,103 +813,26 @@
        "wiki_refs": []
       }
      ],
-     "heading": "작중 행적",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "...I see, okay. Your papers are all in order. Welcome to Ritou.",
-     "sentences": [
-      {
-       "t_raw": "Confessions of an Outlander에서 Kageyama는 이름·신분·방문 목적을 말하라 요구하되 **Thoma만은 예외**로 둔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이방인의 참회록에서 카게야마는 이름·신분·방문 목적을 말하라 요구하되 **토마만은 예외**로 둔다."
-      },
-      {
-       "t_raw": "요청 정보와 소지품 신고를 받고 서류가 갖춰지자 Ritou에 온 것을 환영한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "요청 정보와 소지품 신고를 받고 서류가 갖춰지자 이도(離島)에 온 것을 환영한다."
-      },
-      {
-       "t_raw": "사과하며 요청하려다 말을 멈추는 대사와 처음 온 사람 같다는 대사도 남아 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "사과하며 요청하려다 말을 멈추는 대사와 처음 온 사람 같다는 대사도 남아 있다."
-      },
-      {
-       "t_raw": "이 대사들은 검문의 양상이 한결같지는 않았음을 보여 주는 대목으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 대사들은 검문의 양상이 한결같지는 않았음을 보여 주는 대목으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Confessions of an Outlander",
-       "quest_ko": "이방인의 참회록",
-       "version": "2.0",
-       "speaker": "Kageyama"
-      },
-      {
-       "kind": "quest",
-       "quest": "Confessions of an Outlander",
-       "quest_ko": "이방인의 참회록",
-       "version": "2.0",
-       "speaker": "Kageyama"
-      },
-      {
-       "kind": "quest",
-       "quest": "Confessions of an Outlander",
-       "quest_ko": "이방인의 참회록",
-       "version": "2.0",
-       "speaker": "Kageyama"
-      },
-      {
-       "kind": "quest",
-       "quest": "Confessions of an Outlander",
-       "quest_ko": "이방인의 참회록",
-       "version": "2.0",
-       "speaker": "Kageyama"
-      },
-      {
-       "kind": "quest",
-       "quest": "Confessions of an Outlander",
-       "quest_ko": "이방인의 참회록",
-       "version": "2.0",
-       "speaker": "Kageyama"
-      }
-     ],
-     "heading": "작중 행적",
+     "heading": "작중 행적 — 쇄국령 폐지 이후",
      "latin_left": []
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Q2 and A1 support the facts; the Thoma reading is a fair interpretation.",
      "quote": "Hello, please state your name, identity, and the purpose of your visit. Oh, except you, Thoma.",
      "sentences": [
       {
-       "t_raw": "Kageyama는 상대에게 이름과 신분, 방문 목적을 말하라고 요구한다.",
+       "t_raw": "Kageyama는 Ritou에 도착한 이들에게 이름과 신분, 방문 목적을 대라고 하면서도 \"Oh, except you, Thoma\"라며 Thoma만은 그 대상에서 빼 준다.",
        "interp": false,
        "dropped": false,
-       "t": "카게야마는 상대에게 이름과 신분, 방문 목적을 말하라고 요구한다."
+       "t": "카게야마는 이도(離島)에 도착한 이들에게 이름과 신분, 방문 목적을 대라고 하면서도 \"Oh, except you, 토마\"라며 토마만은 그 대상에서 빼 준다."
       },
       {
-       "t_raw": "그러면서 **Thoma**는 예외로 둔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러면서 **토마**는 예외로 둔다."
-      },
-      {
-       "t_raw": "같은 요구를 받는 자리에서 Thoma를 따로 빼는 태도로 읽힌다.",
+       "t_raw": "새로 온 이의 신분을 확인하는 것이 그녀의 일이니, Thoma는 그런 확인을 따로 받지 않는 사이라는 뜻으로 읽힌다.",
        "interp": true,
        "dropped": false,
-       "t": "같은 요구를 받는 자리에서 토마를 따로 빼는 태도로 읽힌다."
+       "t": "새로 온 이의 신분을 확인하는 것이 그녀의 일이니, 토마는 그런 확인을 따로 받지 않는 사이라는 뜻으로 읽힌다."
       }
      ],
      "sources": [
@@ -665,6 +842,54 @@
        "quest_ko": "이방인의 참회록",
        "version": "2.0",
        "speaker": "Kageyama"
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Oh"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Q6 and Q7 support the facts; the interpretation is reasonable.",
+     "quote": "You're getting more and more suspicious by the minute... You'd better come and see Miss Kageyama with me.",
+     "sentences": [
+      {
+       "t_raw": "Obata는 Outlander Affairs Agency의 허가를 받지 못한 것으로 보이는 이들을 두고 Kageyama에게 데려가겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오바타는 원국감사의 허가를 받지 못한 것으로 보이는 이들을 두고 카게야마에게 데려가겠다고 한다."
+      },
+      {
+       "t_raw": "허가 여부를 확인해 줄 사람으로 Kageyama를 지목하는 대목에서, 외지인 문제의 판단 기준점이 그녀임을 알 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "허가 여부를 확인해 줄 사람으로 카게야마를 지목하는 대목에서, 외지인 문제의 판단 기준점이 그녀임을 알 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "In Another Land",
+       "quest_ko": "타향에서",
+       "version": "2.0",
+       "speaker": "Obata"
+      },
+      {
+       "kind": "quest",
+       "quest": "In Another Land",
+       "quest_ko": "타향에서",
+       "version": "2.0",
+       "speaker": "Obata"
       }
      ],
      "heading": "인간관계",
@@ -672,127 +897,27 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "You're getting more and more suspicious by the minute... You'd better come and see Miss Kageyama with me.",
+     "status": "accepted",
+     "note": "A19 to A21 and A1 support the facts and the distinction between the two inspectors.",
+     "quote": "If you wish to seek audience with the Kanjou Commissioner, you may send your name card to the headquarters of the Outlander Affairs Agency.",
      "sentences": [
       {
-       "t_raw": "Obata는 상대가 Outlander Affairs Agency의 허가를 받지 못한 듯하다고 말하며, 그들을 Kageyama에게 데려가려 한다.",
+       "t_raw": "Kanjou Commissioner를 만나고 싶다면 Outlander Affairs Agency 본부에 명함을 보내면 되고, 면담할 손님을 가려내는 것은 본부의 심사관이다.",
        "interp": false,
        "dropped": false,
-       "t": "오바타는 상대가 원국감사의 허가를 받지 못한 듯하다고 말하며, 그들을 카게야마에게 데려가려 한다."
+       "t": "간조 봉행을 만나고 싶다면 원국감사 본부에 명함을 보내면 되고, 면담할 손님을 가려내는 것은 본부의 심사관이다."
       },
       {
-       "t_raw": "상대가 점점 수상해지자 **Obata**는 함께 Kageyama를 만나러 가자고 요구한다.",
+       "t_raw": "Kageyama는 그 절차를 안내하면서 평민이라면 그만두라고 말하고, 외지인은 일반적으로 Commissioner를 만날 기회가 없다고 덧붙인다.",
        "interp": false,
        "dropped": false,
-       "t": "상대가 점점 수상해지자 **오바타**는 함께 카게야마를 만나러 가자고 요구한다."
+       "t": "카게야마는 그 절차를 안내하면서 평민이라면 그만두라고 말하고, 외지인은 일반적으로 봉행을 만날 기회가 없다고 덧붙인다."
       },
       {
-       "t_raw": "허가 문제와 수상한 사안 모두에서 Obata가 향하는 곳이 Kageyama라는 점은, Obata가 Kageyama에게 판단을 맡겨 보려는 태도로 보인다.",
+       "t_raw": "Ritou 검문소의 심사관인 그녀와 본부에서 손님을 고르는 심사관은 자리가 다르므로, Commissioner와의 면담 여부는 그녀가 정할 수 있는 일이 아닌 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "허가 문제와 수상한 사안 모두에서 오바타가 향하는 곳이 카게야마라는 점은, 오바타가 카게야마에게 판단을 맡겨 보려는 태도로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "In Another Land",
-       "quest_ko": "타향에서",
-       "version": "2.0",
-       "speaker": "Obata"
-      },
-      {
-       "kind": "quest",
-       "quest": "In Another Land",
-       "quest_ko": "타향에서",
-       "version": "2.0",
-       "speaker": "Obata"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Yup, that's about it... I can't really say anything more than this. Please understand.",
-     "sentences": [
-      {
-       "t_raw": "Kageyama는 **특별한 연줄**이 없으면 신청이 매우 어려울 수 있다고 말한 뒤, 그 이상은 **말할 수 없다**며 이해를 구한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "카게야마는 **특별한 연줄**이 없으면 신청이 매우 어려울 수 있다고 말한 뒤, 그 이상은 **말할 수 없다**며 이해를 구한다."
-      },
-      {
-       "t_raw": "이는 절차의 어려움이 단순한 안내만으로 설명되지 않는 사정과 맞물려 있음을 보여 주는 대목으로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 절차의 어려움이 단순한 안내만으로 설명되지 않는 사정과 맞물려 있음을 보여 주는 대목으로 읽힌다."
-      },
-      {
-       "t_raw": "지금은 Kanjou Commission의 업무가 엄격히 감독되어 필요한 자료만 갖추면 Travel Pass를 쉽게 신청할 수 있을 것이라고 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "지금은 간조 봉행(勘定奉行)의 업무가 엄격히 감독되어 필요한 자료만 갖추면 Travel Pass를 쉽게 신청할 수 있을 것이라고 설명한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A13",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A14",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A17",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Travel Pass"
-     ]
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "That being said, you'd better give up on that idea if you're a commoner. Generally, outlanders won't have the opportunity to meet the Commissioner.",
-     "sentences": [
-      {
-       "t_raw": "Kanjou Commissioner를 만나고 싶다는 물음에 Kageyama는 명함을 Outlander Affairs Agency 본부로 보내라고 안내한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "간조 봉행을 만나고 싶다는 물음에 카게야마는 명함을 원국감사 본부로 보내라고 안내한다."
-      },
-      {
-       "t_raw": "본부의 조사관이 신분과 사유를 기준으로 면담할 손님을 고르며, 평민은 그 생각을 포기하라고 하고 일반적으로 외지인에게는 Kanjou Commissioner를 만날 기회가 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "본부의 조사관이 신분과 사유를 기준으로 면담할 손님을 고르며, 평민은 그 생각을 포기하라고 하고 일반적으로 외지인에게는 간조 봉행을 만날 기회가 없다고 말한다."
-      },
-      {
-       "t_raw": "이 절차는 신분과 사유로 면담 대상을 추리는 구조여서, 평민과 일반적인 외지인에게 Kanjou Commissioner 면담은 **높은 장벽**으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 절차는 신분과 사유로 면담 대상을 추리는 구조여서, 평민과 일반적인 외지인에게 간조 봉행 면담은 **높은 장벽**으로 보인다."
+       "t": "이도(離島) 검문소의 심사관인 그녀와 본부에서 손님을 고르는 심사관은 자리가 다르므로, 봉행와의 면담 여부는 그녀가 정할 수 있는 일이 아닌 셈이다."
       }
      ],
      "sources": [
@@ -827,6 +952,188 @@
        "section": "Dialogue",
        "paragraph": "A21",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "A11, A13 and A14 support the facts; the interpretation is hedged and reasonable.",
+     "quote": "However, if you don't have any special connections, it might be very difficult to apply for it.",
+     "sentences": [
+      {
+       "t_raw": "Travel Permit 신청에 관해 설명하던 Kageyama는 **특별한 인맥**이 없으면 신청이 매우 어려울 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "통행증 신청에 관해 설명하던 카게야마는 **특별한 인맥**이 없으면 신청이 매우 어려울 수 있다고 말한다."
+      },
+      {
+       "t_raw": "그 뒤에는 그 이상은 말할 수 없다며 이해를 구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 뒤에는 그 이상은 말할 수 없다며 이해를 구한다."
+      },
+      {
+       "t_raw": "완료 전에 나오는 이 대사는 조건의 실체를 밝히지 않으므로, 신청 난이도와 특별한 인맥의 관계에 여지를 남긴다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "완료 전에 나오는 이 대사는 조건의 실체를 밝히지 않으므로, 신청 난이도와 특별한 인맥의 관계에 여지를 남긴다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences match A16-A17; the interpretation is hedged ('possibility') and follows from A13-A14.",
+     "quote": "Nowadays, all the affairs of Kanjou Commission are strictly supervised, so visitors should be able to apply for the Travel Pass easily as long as they prepare the required materials.",
+     "sentences": [
+      {
+       "t_raw": "완료 후 Kageyama는 과거에는 특별한 인맥이 없으면 신청이 어려울 수 있었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "완료 후 카게야마는 과거에는 특별한 인맥이 없으면 신청이 어려울 수 있었다고 말한다."
+      },
+      {
+       "t_raw": "지금은 Kanjou Commission의 업무가 엄격히 감독되어, 필요한 자료만 갖추면 Travel Pass를 쉽게 신청할 수 있다고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지금은 간조 봉행(勘定奉行)의 업무가 엄격히 감독되어, 필요한 자료만 갖추면 Travel Pass를 쉽게 신청할 수 있다고 설명한다."
+      },
+      {
+       "t_raw": "완료 전의 '그 이상은 말할 수 없다'는 언급과 과거 회고를 함께 보면, 예전의 어려움이 공식 자료만의 문제가 아니었을 가능성이 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "완료 전의 '그 이상은 말할 수 없다'는 언급과 과거 회고를 함께 보면, 예전의 어려움이 공식 자료만의 문제가 아니었을 가능성이 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Travel Pass"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches A20-A21; the interpretation is reasonable.",
+     "quote": "That being said, you'd better give up on that idea if you're a commoner. Generally, outlanders won't have the opportunity to meet the Commissioner.",
+     "sentences": [
+      {
+       "t_raw": "Kanjou Commissioner 면담은 신분과 사유를 기준으로 사람을 고르는 절차를 거치지만, 일반 서민과 외지인은 만날 기회를 얻기 어렵다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "간조 봉행 면담은 신분과 사유를 기준으로 사람을 고르는 절차를 거치지만, 일반 서민과 외지인은 만날 기회를 얻기 어렵다고 말한다."
+      },
+      {
+       "t_raw": "허가 신청이 수월해진 뒤에도 **Kanjou Commissioner** 접근에는 신분이라는 별도의 벽이 남아 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "허가 신청이 수월해진 뒤에도 **간조 봉행** 접근에는 신분이라는 별도의 벽이 남아 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A21",
+       "wiki_refs": []
       }
      ],
      "heading": "떡밥과 수수께끼",
@@ -834,27 +1141,31 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Quotes match A2, A3, A22 and A23.",
      "quote": "Please show some proof of identification.",
      "sentences": [
       {
-       "t_raw": "Kageyama의 **대기 대사**는 'Please show...'에서 끊긴 채 나타난다.",
+       "t_raw": "짧은 대기 대사로 **\"Please show...\"**가 제시되고, 음성 대사로 **\"Please show some proof of identification.\"**가 나온다.",
        "interp": false,
        "dropped": false,
-       "t": "카게야마의 **대기 대사**는 'Please show...'에서 끊긴 채 나타난다."
+       "t": "짧은 대기 대사로 **\"Please show...\"**가 제시되고, 음성 대사로 **\"Please show some proof of identification.\"**가 나온다.",
+       "polish": {
+        "from": "짧은 대기 대사로 **\"Please show...\"**가 제시되고, 음성 대사로 **\"Please show some proof of identification.\"**가 나온다.",
+        "text": "짧은 대기 대사로 **\"Please show...\"**가 제시되고, 음성 대사로 **\"Please show some proof of identification.\"**가 나온다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "음성 대사로는 'Please show some proof of identification.'라고 **신분 증명**을 요구한다.",
+       "t_raw": "작별 대사로 \"Goodbye.\"가 제시되고, Kageyama는 \"Goodbye! Please stay safe.\"로 답한다.",
        "interp": false,
        "dropped": false,
-       "t": "음성 대사로는 'Please show some proof of identification.'라고 **신분 증명**을 요구한다."
-      },
-      {
-       "t_raw": "대화를 열면 'Do you need anything?'이라는 말이 나온다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대화를 열면 'Do you need anything?'이라는 말이 나온다."
+       "t": "작별 대사로 \"Goodbye.\"가 제시되고, 카게야마는 \"Goodbye! Please stay safe.\"로 답한다.",
+       "polish": {
+        "from": "작별 대사로 \"Goodbye.\"가 제시되고, 카게야마는 \"Goodbye! Please stay safe.\"로 답한다.",
+        "text": "작별 대사로 \"Goodbye.\"가 제시되고, 카게야마는 \"Goodbye! Please stay safe.\"로 답한다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
@@ -879,7 +1190,15 @@
        "page": "Kageyama",
        "revision": 592707,
        "section": "Dialogue",
-       "paragraph": "A4",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A23",
        "wiki_refs": []
       }
      ],
@@ -887,35 +1206,49 @@
      "latin_left": [
       "Please",
       "Please",
-      "Do"
+      "Goodbye",
+      "Goodbye",
+      "Please"
      ]
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Goodbye! Please stay safe.",
+     "status": "accepted",
+     "note": "Matches A5, A6, A24 and A25; the interpretation is a fair observation.",
+     "quote": "What is this place?",
      "sentences": [
       {
-       "t_raw": "대화 선택지에는 'What is this place?'와 'What's this place?'가 있다.",
+       "t_raw": "Transient Dreams 완료 전에는 \"What is this place?\"라는 문구가, 완료 후에는 **\"What's this place?\"**라는 문구가 나온다.",
        "interp": false,
        "dropped": false,
-       "t": "대화 선택지에는 'What is this place?'와 'What의 this place?'가 있다."
+       "t": "찰나의 꿈 완료 전에는 \"What is this place?\"라는 문구가, 완료 후에는 **\"What's this place?\"**라는 문구가 나온다.",
+       "polish": {
+        "from": "찰나의 꿈 완료 전에는 \"What is this place?\"라는 문구가, 완료 후에는 **\"What의 this place?\"**라는 문구가 나온다.",
+        "text": "찰나의 꿈 완료 전에는 \"What is this place?\"라는 문구가, 완료 후에는 **\"What's this place?\"**라는 문구가 나온다.",
+        "by": "ds"
+       }
       },
       {
-       "t_raw": "작별 선택지 'Goodbye.'에 Kageyama는 'Goodbye! Please stay safe.'라고 답한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "작별 선택지 'Goodbye.'에 카게야마는 'Goodbye! Please stay safe.'라고 답한다."
-      },
-      {
-       "t_raw": "같은 **작별 인사**가 다른 대화 묶음에서도 같은 문구로 반복되는 셈이다.",
+       "t_raw": "두 문구는 is가 's로 줄어든 정도의 차이를 보이는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "같은 **작별 인사**가 다른 대화 묶음에서도 같은 문구로 반복되는 셈이다."
+       "t": "두 문구는 is가 's로 줄어든 정도의 차이를 보이는 셈이다.",
+       "polish": {
+        "from": "두 문구는 is가 's로 줄어든 정도의 차이를 보이는 셈이다.",
+        "text": "두 문구는 is가 's로 줄어든 정도의 차이를 보이는 셈이다.",
+        "by": "ds"
+       }
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kageyama",
+       "revision": 592707,
+       "section": "Dialogue",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Kageyama",
@@ -929,15 +1262,7 @@
        "page": "Kageyama",
        "revision": 592707,
        "section": "Dialogue",
-       "paragraph": "A22",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A23",
+       "paragraph": "A24",
        "wiki_refs": []
       },
       {
@@ -947,41 +1272,22 @@
        "section": "Dialogue",
        "paragraph": "A25",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A32",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Kageyama",
-       "revision": 592707,
-       "section": "Dialogue",
-       "paragraph": "A33",
-       "wiki_refs": []
       }
      ],
      "heading": "여담",
      "latin_left": [
       "What",
-      "What",
-      "Goodbye",
-      "Goodbye",
-      "Please"
+      "What's"
      ]
     }
    ],
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "당신은... 처음 오신 분이군요.",
-     "en": "You must be... new here.",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "…그렇군요, 알겠습니다. 서류는 모두 문제가 없습니다. Ritou에 오신 것을 환영합니다.",
+     "en": "...I see, okay. Your papers are all in order. Welcome to Ritou.",
      "speaker": "Kageyama",
      "source": {
       "kind": "quest",
@@ -990,15 +1296,32 @@
       "version": "2.0",
       "speaker": "Kageyama"
      },
-     "t": "당신은... 처음 오신 분이군요.",
+     "t": "…그렇군요, 알겠습니다. 서류는 모두 문제가 없습니다. 이도(離島)에 오신 것을 환영합니다.",
      "speaker_ko": "카게야마"
     },
     {
-     "section": "작중 행적",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "실례합니다. 요청된 정보를 제공해 주시고, 가지고 계신 물품도 신고해 주십시오.",
-     "en": "Excuse me? Please provide the information requested, and also declare any goods you are carrying with you.",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "그런데 제가 물어보니, 그들은 Outlander Affairs Agency의 허가를 받지 못한 것 같더군요. 그래서 그들을 Miss Kageyama에게 데려가려던 참이었습니다.",
+     "en": "But when I asked, they don't seem to have permission from the Outlander Affairs Agency. I was going to take them to see Miss Kageyama.",
+     "speaker": "Obata",
+     "source": {
+      "kind": "quest",
+      "quest": "In Another Land",
+      "quest_ko": "타향에서",
+      "version": "2.0",
+      "speaker": "Obata"
+     },
+     "t": "그런데 제가 물어보니, 그들은 원국감사의 허가를 받지 못한 것 같더군요. 그래서 그들을 카게야마 씨에게 데려가려던 참이었습니다.",
+     "speaker_ko": "오바타"
+    },
+    {
+     "section": "업무와 권한 — 허가증의 종류",
+     "status": "accepted",
+     "note": "Faithful translation of Q3.",
+     "t_raw": "…그렇군요, 알겠습니다. 서류는 모두 이상 없습니다. Ritou에 오신 것을 환영합니다.",
+     "en": "...I see, okay. Your papers are all in order. Welcome to Ritou.",
      "speaker": "Kageyama",
      "source": {
       "kind": "quest",
@@ -1007,14 +1330,14 @@
       "version": "2.0",
       "speaker": "Kageyama"
      },
-     "t": "실례합니다. 요청된 정보를 제공해 주시고, 가지고 계신 물품도 신고해 주십시오.",
+     "t": "…그렇군요, 알겠습니다. 서류는 모두 이상 없습니다. 이도(離島)에 오신 것을 환영합니다.",
      "speaker_ko": "카게야마"
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "안녕하세요, 이름과 신분, 방문 목적을 말해 주세요. 아, Thoma는 예외입니다.",
+     "status": "accepted",
+     "note": "Faithful translation of Q2; 'Thoma는 빼고요' matches 'except you, Thoma'.",
+     "t_raw": "안녕하세요, 이름과 신분, 방문 목적을 말씀해 주세요. 아, Thoma는 빼고요.",
      "en": "Hello, please state your name, identity, and the purpose of your visit. Oh, except you, Thoma.",
      "speaker": "Kageyama",
      "source": {
@@ -1024,7 +1347,24 @@
       "version": "2.0",
       "speaker": "Kageyama"
      },
-     "t": "안녕하세요, 이름과 신분, 방문 목적을 말해 주세요. 아, 토마는 예외입니다.",
+     "t": "안녕하세요, 이름과 신분, 방문 목적을 말씀해 주세요. 아, 토마는 빼고요.",
+     "speaker_ko": "카게야마"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Mistranslation: the line addresses Thoma directly ('except you, Thoma'), and the Korean drops the 'except you' sense and omits the 'Oh' address; it also says 'Thoma는 예외입니다', which is ambiguous about whether Thoma is exempt from stating details versus other rules. Overall it is close, but it is treated as a loose rendering of the exemption.",
+     "t_raw": "[번역] 안녕하세요, 이름과 신분, 그리고 방문 목적을 말해 주세요. 아, Thoma, 당신은 말하지 않아도 돼요.",
+     "en": "Hello, please state your name, identity, and the purpose of your visit. Oh, except you, Thoma.",
+     "speaker": "Kageyama",
+     "source": {
+      "kind": "quest",
+      "quest": "Confessions of an Outlander",
+      "quest_ko": "이방인의 참회록",
+      "version": "2.0",
+      "speaker": "Kageyama"
+     },
+     "t": "[번역] 안녕하세요, 이름과 신분, 그리고 방문 목적을 말해 주세요. 아, 토마, 당신은 말하지 않아도 돼요.",
      "speaker_ko": "카게야마"
     }
    ]

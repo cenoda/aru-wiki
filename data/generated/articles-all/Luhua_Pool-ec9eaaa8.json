@@ -15,40 +15,46 @@
    "input_counts": {
     "mentions": 2,
     "lines": 3,
-    "web": 0
+    "web": 3
    },
    "input_chars": 246,
    "input_cut": false,
-   "input_hash": "ca47c782eaa1",
-   "writer": "glm-flash,glm,or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "input_hash": "57637aaa6686",
+   "writer": "ds,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Statues with shining eyes... I wonder what secrets one can uncover in Luhua Pool?",
+     "status": "trimmed",
+     "note": "The English says the adepti created the Realm of Clouds. Guizhong only possessed it as her domain. The Korean says Guizhong built it.",
+     "quote": "Luhua Pool is an area in Qiongji Estuary, Liyue.",
      "sentences": [
       {
-       "t_raw": "Luhua Pool은 Liyue의 Qiongji Estuary에 위치한 지역으로, 풍경 속에 여러 수수께끼를 품고 있는 곳이다.",
+       "t_raw": "**Luhua Pool**은 Liyue의 Qiongji Estuary에 속한 지역이다.",
        "interp": false,
        "dropped": false,
-       "t": "녹화 연못은 리월의 경기 들판에 위치한 지역으로, 풍경 속에 여러 수수께끼를 품고 있는 곳이다."
+       "t": "**녹화 연못**은 리월의 경기 들판에 속한 지역이다."
       },
       {
-       "t_raw": "화가 Vermeer가 풍경을 찾다 버려진 락카를 주워 들며 시작되는 월드 퀘스트 'Luhua Landscape'가 이곳을 무대로 펼쳐진다.",
+       "t_raw": "공식 Liyue 소개는 이곳을 Mt. Tianheng 북쪽 기슭과 석림이 만나는 경계의, 감춰져 있고 인적이 드문 곳으로 설명한다.",
        "interp": false,
        "dropped": false,
-       "t": "화가 베르메르가 풍경을 찾다 버려진 락카를 주워 들며 시작되는 월드 퀘스트 '녹화 풍경화'가 이곳을 무대로 펼쳐진다."
+       "t": "공식 리월 소개는 이곳을 천형산 북쪽 기슭과 석림이 만나는 경계의, 감춰져 있고 인적이 드문 곳으로 설명한다."
       },
       {
-       "t_raw": "또한 옛 지혜와 관련된 유적이 숨겨져 있어, 아름다운 경치 너머의 비밀을 캐묻고 싶게 만드는 곳이라 할 수 있다.",
+       "t_raw": "물에 든 광물이 독특한 빛깔을 만든다고 하며, 겉모습은 매끄럽고 반투명하다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물에 든 광물이 독특한 빛깔을 만든다고 하며, 겉모습은 매끄럽고 반투명하다고 전한다."
+      },
+      {
+       "t_raw": "화려한 물빛으로 알려진 장소이면서 동시에 Guizhong이 악하고 오래된 유물을 보관하려 세운 영역이 있던 곳이기도 해, 이곳에서는 풍경과 유적이 서로 다른 층위를 이룬다고 볼 수 있다.",
        "interp": true,
-       "dropped": false,
-       "t": "또한 옛 지혜와 관련된 유적이 숨겨져 있어, 아름다운 경치 너머의 비밀을 캐묻고 싶게 만드는 곳이라 할 수 있다."
+       "dropped": true,
+       "t": "화려한 물빛으로 알려진 장소이면서 동시에 귀종이 악하고 오래된 유물을 보관하려 세운 영역이 있던 곳이기도 해, 이곳에서는 풍경과 유적이 서로 다른 층위를 이룬다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -60,6 +66,255 @@
        "paragraph": "A1",
        "wiki_refs": []
       },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103671",
+       "title": "Liyue - A bountiful harbor that lies in the East of Teyvat",
+       "published": "2020-01-17",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103671",
+       "title": "Liyue - A bountiful harbor that lies in the East of Teyvat",
+       "published": "2020-01-17",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "wiki",
+       "page": "Guizhong",
+       "revision": 71720,
+       "section": "Story > Realm of Clouds",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is hedged and reasonable.",
+     "quote": "places Luhua Pool at the boundary between the northern foothills of Mt. Tianheng and the stone forest",
+     "sentences": [
+      {
+       "t_raw": "Luhua Pool은 Liyue의 Qiongji Estuary에 속한 지역이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "녹화 연못은 리월의 경기 들판에 속한 지역이다."
+      },
+      {
+       "t_raw": "공식 Liyue 소개는 이곳을 Mt. Tianheng 북쪽 기슭과 stone forest가 만나는 경계에 두고, **감춰져 있고 방해받지 않는 곳**으로 묘사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공식 리월 소개는 이곳을 천형산 북쪽 기슭과 석림이 만나는 경계에 두고, **감춰져 있고 방해받지 않는 곳**으로 묘사한다.",
+       "polish": {
+        "from": "공식 리월 소개는 이곳을 천형산 북쪽 기슭과 stone forest가 만나는 경계에 두고, **감춰져 있고 방해받지 않는 곳**으로 묘사한다.",
+        "text": "공식 리월 소개는 이곳을 천형산 북쪽 기슭과 석림이 만나는 경계에 두고, **감춰져 있고 방해받지 않는 곳**으로 묘사한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "산자락과 돌숲 사이에 끼어 있다는 위치 설명과 감춰진 곳이라는 묘사를 겹쳐 보면, 험한 지형 자체가 이 못을 좀처럼 눈에 띄지 않는 곳으로 만든다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "산자락과 돌숲 사이에 끼어 있다는 위치 설명과 감춰진 곳이라는 묘사를 겹쳐 보면, 험한 지형 자체가 이 못을 좀처럼 눈에 띄지 않는 곳으로 만든다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Luhua Pool",
+       "revision": 67945,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103671",
+       "title": "Liyue - A bountiful harbor that lies in the East of Teyvat",
+       "published": "2020-01-17",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The English never says the water color defines the area. Other notable features exist, such as the Hidden Palace and the Realm of Clouds. The conclusion goes beyond the material.",
+     "quote": "Huanglong’s mysterious, multicolored pools inspired Luhua Pool.",
+     "sentences": [
+      {
+       "t_raw": "이 못의 남다른 빛깔은 **물속의 광물**에서 비롯된 것으로 공식 설명은 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 못의 남다른 빛깔은 **물속의 광물**에서 비롯된 것으로 공식 설명은 전한다."
+      },
+      {
+       "t_raw": "같은 설명에 따르면 수면은 매끄럽고 반투명한 모습으로 빛난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "같은 설명에 따르면 수면은 매끄럽고 반투명한 모습으로 빛난다."
+      },
+      {
+       "t_raw": "그리고 HoYoverse는 Huanglong의 신비롭고 여러 빛깔을 띤 못이 Luhua Pool의 영감이 되었다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그리고 HoYoverse는 황룽의 신비롭고 여러 빛깔을 띤 못이 녹화 연못의 영감이 되었다고 밝힌다."
+      },
+      {
+       "t_raw": "색의 원인을 광물로 짚은 설명과 Huanglong의 여러 빛깔 못을 영감의 출처로 든 설명을 나란히 놓으면, 이곳의 물빛에 관해 광물에서 비롯되었다는 설명과 Huanglong의 여러 빛깔 못에서 영감을 얻었다는 설명이 함께 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "색의 원인을 광물로 짚은 설명과 황룽의 여러 빛깔 못을 영감의 출처로 든 설명을 나란히 놓으면, 이곳의 물빛에 관해 광물에서 비롯되었다는 설명과 황룽의 여러 빛깔 못에서 영감을 얻었다는 설명이 함께 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103671",
+       "title": "Liyue - A bountiful harbor that lies in the East of Teyvat",
+       "published": "2020-01-17",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103775",
+       "title": "\"Travels Afar\" Scenic Spot Collaboration Documentary - Huanglong Chapter | Genshin Impact",
+       "published": "2020-11-24",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "HoYoverse"
+     ]
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "she also possessed her own domain called the Realm of Clouds, located in Luhua Pool.",
+     "sentences": [
+      {
+       "t_raw": "Guizhong은 Guili를 다스린 것 외에도 Luhua Pool에 위치한 **Realm of Clouds**라는 자신의 영역을 두었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀종은 귀리를 다스린 것 외에도 녹화 연못에 위치한 **운경**라는 자신의 영역을 두었다."
+      },
+      {
+       "t_raw": "공식 Liyue 소개는 Luhua Pool을 Mt. Tianheng 북쪽 기슭과 돌숲 사이, 숨겨지고 방해받지 않는 곳으로 묘사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공식 리월 소개는 녹화 연못을 천형산 북쪽 기슭과 돌숲 사이, 숨겨지고 방해받지 않는 곳으로 묘사한다."
+      },
+      {
+       "t_raw": "Realm of Clouds가 Luhua Pool에 위치했다는 사실과 Luhua Pool이 숨겨지고 방해받지 않는 곳이라는 묘사가 겹치면서, 이 영역은 외부에서 감춰지고 방해받지 않는 입지에 놓였다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "운경이 녹화 연못에 위치했다는 사실과 녹화 연못이 숨겨지고 방해받지 않는 곳이라는 묘사가 겹치면서, 이 영역은 외부에서 감춰지고 방해받지 않는 입지에 놓였다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guizhong",
+       "revision": 71720,
+       "section": "Story > Realm of Clouds",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103671",
+       "title": "Liyue - A bountiful harbor that lies in the East of Teyvat",
+       "published": "2020-01-17",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "The adepti created the Realm of Clouds to house them.",
+     "sentences": [
+      {
+       "t_raw": "Guizhong은 기계 연구를 하던 중 사악하고 고대의 유물 여러 점을 마주쳤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀종은 기계 연구를 하던 중 사악하고 고대의 유물 여러 점을 마주쳤다."
+      },
+      {
+       "t_raw": "adepti는 이 유물들을 보관하기 위해 Realm of Clouds를 만들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "선인들은 이 유물들을 보관하기 위해 운경을 만들었다.",
+       "polish": {
+        "from": "adepti는 이 유물들을 보관하기 위해 운경을 만들었다.",
+        "text": "선인들은 이 유물들을 보관하기 위해 운경을 만들었다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그녀가 기계 연구 중 마주친 유물들이 보관 대상이 되었다는 점에서, Realm of Clouds는 그 발견과 맞물려 마련된 보관처였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그녀가 기계 연구 중 마주친 유물들이 보관 대상이 되었다는 점에서, 운경은 그 발견과 맞물려 마련된 보관처였던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guizhong",
+       "revision": 71720,
+       "section": "Story > Realm of Clouds",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by the Vermeer page, the notable-features list and the dialogue lines.",
+     "quote": "Statues with shining eyes... I wonder what secrets one can uncover in Luhua Pool?",
+     "sentences": [
+      {
+       "t_raw": "Vermeer는 Liyue의 NPC로, Luhua Pool 남서쪽 조수 웅덩이 바로 위 두 거대 조각상 사이에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "베르메르는 리월의 NPC로, 녹화 연못 남서쪽 조수 웅덩이 바로 위 두 거대 조각상 사이에 자리한다."
+      },
+      {
+       "t_raw": "그는 Luhua Pool의 주요 요소로 꼽히는 **Luhua Landscape** World Quest를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 녹화 연못의 주요 요소로 꼽히는 **녹화 풍경화** 월드 임무를 준다."
+      },
+      {
+       "t_raw": "그는 빛나는 눈을 한 조각상과 Luhua Pool에서 밝혀질 비밀을 궁금해하며, Luhua Pool에 가 보겠느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 빛나는 눈을 한 조각상과 녹화 연못에서 밝혀질 비밀을 궁금해하며, 녹화 연못에 가 보겠느냐고 묻는다."
+      },
+      {
+       "t_raw": "또한 좋은 경치를 찾다가 어떤 물건을 주웠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 좋은 경치를 찾다가 어떤 물건을 주웠다고 말한다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Luhua Pool",
@@ -84,100 +339,145 @@
        "speaker": "Vermeer"
       },
       {
+       "kind": "quest",
+       "quest": "Luhua Landscape",
+       "quest_ko": "녹화 풍경화",
+       "version": "1.0",
+       "speaker": "Vermeer"
+      },
+      {
+       "kind": "quest",
+       "quest": "Luhua Landscape",
+       "quest_ko": "녹화 풍경화",
+       "version": "1.0",
+       "speaker": "Vermeer"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences follow the Guizhong/Realm of Clouds passage; the interpretation is reasonable.",
+     "quote": "During her mechanical researches, she came across several evil and ancient artifacts. The adepti created the Realm of Clouds to house them.",
+     "sentences": [
+      {
+       "t_raw": "Luhua Pool에는 Guizhong의 영역도 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "녹화 연못에는 귀종의 영역도 자리한다."
+      },
+      {
+       "t_raw": "Guizhong은 Guili 땅을 다스리는 것 외에 Luhua Pool에 위치한 **Realm of Clouds**라는 자신의 영역을 가졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀종은 귀리 땅을 다스리는 것 외에 녹화 연못에 위치한 **운경**라는 자신의 영역을 가졌다."
+      },
+      {
+       "t_raw": "그녀는 기계 연구 중 여러 사악하고 고대인 유물을 마주쳤고, adepti는 그 유물들을 보관하기 위해 Realm of Clouds를 만들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 기계 연구 중 여러 사악하고 고대인 유물을 마주쳤고, 선인들은 그 유물들을 보관하기 위해 운경을 만들었다.",
+       "polish": {
+        "from": "그녀는 기계 연구 중 여러 사악하고 고대인 유물을 마주쳤고, adepti는 그 유물들을 보관하기 위해 운경을 만들었다.",
+        "text": "그녀는 기계 연구 중 여러 사악하고 고대인 유물을 마주쳤고, 선인들은 그 유물들을 보관하기 위해 운경을 만들었다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "따라서 이곳은 Guizhong의 영역이자 adepti가 유물을 보관한 장소라는 두 층위가 겹치는 곳으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 이곳은 귀종의 영역이자 선인들이 유물을 보관한 장소라는 두 층위가 겹치는 곳으로 보인다.",
+       "polish": {
+        "from": "따라서 이곳은 귀종의 영역이자 adepti가 유물을 보관한 장소라는 두 층위가 겹치는 곳으로 보인다.",
+        "text": "따라서 이곳은 귀종의 영역이자 선인들이 유물을 보관한 장소라는 두 층위가 겹치는 곳으로 보인다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Guizhong",
+       "revision": 71720,
+       "section": "Story > Realm of Clouds",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Vermeer's line and the listed features support the facts and the mild interpretation.",
+     "quote": "Statues with shining eyes... I wonder what secrets one can uncover in Luhua Pool?",
+     "sentences": [
+      {
+       "t_raw": "Vermeer는 Luhua Pool에서 **눈이 빛나는 조각상들**을 언급하며, 그곳에서 어떤 비밀을 밝혀낼 수 있을지 궁금해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "베르메르는 녹화 연못에서 **눈이 빛나는 조각상들**을 언급하며, 그곳에서 어떤 비밀을 밝혀낼 수 있을지 궁금해한다."
+      },
+      {
+       "t_raw": "이 물음과 Hidden Palace of Guizang Formula, Geo Monument 같은 주요 지형의 존재를 함께 보면, Luhua Pool의 유적들이 어떤 관계를 맺는지가 수수께끼로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 물음과 화청귀장 밀궁, Geo Monument 같은 주요 지형의 존재를 함께 보면, 녹화 연못의 유적들이 어떤 관계를 맺는지가 수수께끼로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Luhua Landscape",
+       "quest_ko": "녹화 풍경화",
+       "version": "1.0",
+       "speaker": "Vermeer"
+      },
+      {
        "kind": "wiki",
        "page": "Luhua Pool",
        "revision": 67945,
        "section": "Notable Features",
        "paragraph": "A2",
        "wiki_refs": []
-      }
-     ],
-     "heading": null,
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "quote_mismatch",
-     "note": null,
-     "quote": "I picked it up while looking for a good view in Luhua Pool.",
-     "sentences": [
-      {
-       "t_raw": "Luhua Pool은 Liyue의 Qiongji Estuary에 속한 지역이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "녹화 연못은 리월의 경기 들판에 속한 지역이다."
-      },
-      {
-       "t_raw": "물가가 자리 잡은 이곳에는 갯벌 같은 물웅덩이가 펼쳐져 있으며, 그 위쪽에는 두 개의 거대한 석상이 마주 서 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "물가가 자리 잡은 이곳에는 갯벌 같은 물웅덩이가 펼쳐져 있으며, 그 위쪽에는 두 개의 거대한 석상이 마주 서 있다."
-      },
-      {
-       "t_raw": "화가 Vermeer가 좋은 전경을 찾아 이 일대를 돌아다닌다는 점을 생각하면, 풍광 자체가 이 지역의 얼굴이라고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "화가 베르메르가 좋은 전경을 찾아 이 일대를 돌아다닌다는 점을 생각하면, 풍광 자체가 이 지역의 얼굴이라고 볼 수 있다."
-      },
-      {
-       "t_raw": "지역의 특산품도 채집할 수 있어 탐험의 보람이 있는 곳이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "지역의 특산품도 채집할 수 있어 탐험의 보람이 있는 곳이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Luhua Pool",
-       "revision": 67945,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Luhua Pool",
        "revision": 67945,
-       "section": "Notable Features > Materials",
-       "paragraph": "A6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Vermeer",
-       "revision": 32646,
-       "section": null,
-       "paragraph": "M1",
+       "section": "Notable Features",
+       "paragraph": "A4",
        "wiki_refs": []
       }
      ],
-     "heading": "개요",
-     "latin_left": []
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Geo Monument"
+     ]
     },
     {
-     "section": "주요 명소와 퍼즐",
-     "status": "needs_verify",
-     "note": null,
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Pressure Platforms note matches the English; the interpretation is hedged and reasonable.",
      "quote": "Pressure Platforms (requires Geo Traveler or another method of triggering multiple platforms at once)",
      "sentences": [
       {
-       "t_raw": "Luhua Pool에서 주요 명소로 꼽히는 곳 중 하나는 Hidden Palace of Guizang Formula이다.",
+       "t_raw": "Pressure Platforms는 Geo Traveler 또는 여러 발판을 한꺼번에 작동시키는 다른 방법을 필요로 한다.",
        "interp": false,
        "dropped": false,
-       "t": "녹화 연못에서 주요 명소로 꼽히는 곳 중 하나는 화청귀장 밀궁이다."
+       "t": "Pressure Platforms는 바위 여행자 또는 여러 발판을 한꺼번에 작동시키는 다른 방법을 필요로 한다."
       },
       {
-       "t_raw": "Geo Monument도 이 지역의 명소로 함께 소개되고, **Pressure Platforms** 역시 탐험 요소로 이름을 올린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "Geo Monument도 이 지역의 명소로 함께 소개되고, **Pressure Platforms** 역시 탐험 요소로 이름을 올린다."
-      },
-      {
-       "t_raw": "이름이 붙은 구조물과 작동시켜야 하는 장치가 한 지역의 명소로 나란히 제시된다는 점에서, 이곳의 탐험은 구조물을 찾는 일과 장치를 다루는 일을 함께 아우른다고 볼 수 있다.",
+       "t_raw": "Hidden Palace of Guizang Formula와 Geo Monument, Pressure Platforms가 모두 이곳의 주요 요소로 전해지므로, Luhua Pool의 물음은 한 지점이 아니라 **여러 유적과 장치가 겹친 공간** 전체를 향한다고 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "이름이 붙은 구조물과 작동시켜야 하는 장치가 한 지역의 명소로 나란히 제시된다는 점에서, 이곳의 탐험은 구조물을 찾는 일과 장치를 다루는 일을 함께 아우른다고 볼 수 있다."
+       "t": "화청귀장 밀궁과 Geo Monument, Pressure Platforms가 모두 이곳의 주요 요소로 전해지므로, 녹화 연못의 물음은 한 지점이 아니라 **여러 유적과 장치가 겹친 공간** 전체를 향한다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -206,266 +506,79 @@
        "wiki_refs": []
       }
      ],
-     "heading": "주요 명소와 퍼즐",
+     "heading": "떡밥과 수수께끼",
      "latin_left": [
+      "Pressure Platforms",
       "Geo Monument",
       "Pressure Platforms"
      ]
     },
     {
-     "section": "주요 명소와 퍼즐",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "requires Geo Traveler or another method of triggering multiple platforms at once",
+     "section": "여담",
+     "status": "accepted",
+     "note": "Huanglong inspiration and minerals/smooth, translucent description are both stated.",
+     "quote": "HoYoverse says Huanglong’s mysterious, multicolored pools inspired Luhua Pool.",
      "sentences": [
       {
-       "t_raw": "Pressure Platforms는 여러 플랫폼을 **동시에 작동**시키는 방법을 필요로 한다.",
+       "t_raw": "HoYoverse는 **Huanglong의 신비롭고 여러 빛깔이 나는 못**이 Luhua Pool의 영감이 되었다고 밝혔다.",
        "interp": false,
        "dropped": false,
-       "t": "Pressure Platforms는 여러 플랫폼을 **동시에 작동**시키는 방법을 필요로 한다."
+       "t": "HoYoverse는 **황룽의 신비롭고 여러 빛깔이 나는 못**이 녹화 연못의 영감이 되었다고 밝혔다."
       },
       {
-       "t_raw": "Geo Traveler로 여러 플랫폼을 한꺼번에 작동시킬 수 있고, Geo Traveler가 아니더라도 같은 일을 해낼 다른 방법이 있다.",
+       "t_raw": "공식 소개에서는 Luhua Pool의 특이한 색을 **물속 광물**에서 비롯된 것으로 설명하면서, 그 모습을 매끄럽고 반투명하다고 묘사한다.",
        "interp": false,
        "dropped": false,
-       "t": "바위 여행자로 여러 플랫폼을 한꺼번에 작동시킬 수 있고, 바위 여행자가 아니더라도 같은 일을 해낼 다른 방법이 있다."
+       "t": "공식 소개에서는 녹화 연못의 특이한 색을 **물속 광물**에서 비롯된 것으로 설명하면서, 그 모습을 매끄럽고 반투명하다고 묘사한다."
       },
       {
-       "t_raw": "Geo Traveler와 다른 방법이 함께 제시된다는 점에서, 이 장치는 특정 캐릭터를 전제한 관문이라기보다 플랫폼을 동시에 건드리는 조작 자체를 요구하는 셈이다.",
+       "t_raw": "제작진이 밝힌 영감은 Huanglong에 두고, 공식 소개는 물속 광물로 색을 설명하는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "바위 여행자와 다른 방법이 함께 제시된다는 점에서, 이 장치는 특정 캐릭터를 전제한 관문이라기보다 플랫폼을 동시에 건드리는 조작 자체를 요구하는 셈이다."
+       "t": "제작진이 밝힌 영감은 황룽에 두고, 공식 소개는 물속 광물로 색을 설명하는 셈이다."
       }
      ],
      "sources": [
       {
-       "kind": "wiki",
-       "page": "Luhua Pool",
-       "revision": 67945,
-       "section": "Notable Features",
-       "paragraph": "A5",
-       "wiki_refs": []
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103775",
+       "title": "\"Travels Afar\" Scenic Spot Collaboration Documentary - Huanglong Chapter | Genshin Impact",
+       "published": "2020-11-24",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103671",
+       "title": "Liyue - A bountiful harbor that lies in the East of Teyvat",
+       "published": "2020-01-17",
+       "checked": "2026-11-13"
       }
      ],
-     "heading": "주요 명소와 퍼즐",
+     "heading": "여담",
      "latin_left": [
-      "Pressure Platforms"
+      "HoYoverse"
      ]
-    },
-    {
-     "section": "주요 명소와 퍼즐",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Statues with shining eyes... I wonder what secrets one can uncover in Luhua Pool?",
-     "sentences": [
-      {
-       "t_raw": "Luhua Pool 남서쪽, 조수 웅덩이 위쪽에는 두 개의 거대한 조각상이 서 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "녹화 연못 남서쪽, 조수 웅덩이 위쪽에는 두 개의 거대한 조각상이 서 있다."
-      },
-      {
-       "t_raw": "Luhua Pool에서 **눈이 빛나는 조각상**들을 두고 이곳에서 어떤 비밀을 밝혀낼 수 있을지 궁금해하는 말이 나온다.",
-       "interp": false,
-       "dropped": false,
-       "t": "녹화 연못에서 **눈이 빛나는 조각상**들을 두고 이곳에서 어떤 비밀을 밝혀낼 수 있을지 궁금해하는 말이 나온다."
-      },
-      {
-       "t_raw": "거대한 조각상이 있다는 사실과 눈이 빛난다는 언급이 맞물려, 이 조각상들은 지역을 알리는 표지이자 밝혀낼 수 있는 무언가를 가리키는 대상으로 읽힌다.",
-       "interp": true,
-       "dropped": false,
-       "t": "거대한 조각상이 있다는 사실과 눈이 빛난다는 언급이 맞물려, 이 조각상들은 지역을 알리는 표지이자 밝혀낼 수 있는 무언가를 가리키는 대상으로 읽힌다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Vermeer",
-       "revision": 32646,
-       "section": null,
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Luhua Landscape",
-       "quest_ko": "녹화 풍경화",
-       "version": "1.0",
-       "speaker": "Vermeer"
-      }
-     ],
-     "heading": "주요 명소와 퍼즐",
-     "latin_left": []
-    },
-    {
-     "section": "Luhua Landscape — Vermeer와 그림",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Statues with shining eyes... I wonder what secrets one can uncover in Luhua Pool?",
-     "sentences": [
-      {
-       "t_raw": "Vermeer는 Liyue의 NPC로, **Luhua Landscape** 퀘스트를 주는 인물이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "베르메르는 리월의 NPC로, **녹화 풍경화** 퀘스트를 주는 인물이다."
-      },
-      {
-       "t_raw": "그는 Luhua Pool의 남서쪽, 조수 웅덩이 바로 위 두 거대한 조각상 사이에 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 녹화 연못의 남서쪽, 조수 웅덩이 바로 위 두 거대한 조각상 사이에 있다."
-      },
-      {
-       "t_raw": "Vermeer는 **빛나는 눈을 가진 조각상**들을 떠올리며 Luhua Pool에서 어떤 비밀을 밝혀낼 수 있을지 궁금해한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "베르메르는 **빛나는 눈을 가진 조각상**들을 떠올리며 녹화 연못에서 어떤 비밀을 밝혀낼 수 있을지 궁금해한다."
-      },
-      {
-       "t_raw": "그가 두 거대한 조각상 사이에 있다는 사실과 조각상의 비밀을 궁금해한다는 대사는, 이 퀘스트의 화두가 Luhua Pool의 조각상과 맞닿아 있음을 암시한다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그가 두 거대한 조각상 사이에 있다는 사실과 조각상의 비밀을 궁금해한다는 대사는, 이 퀘스트의 화두가 녹화 연못의 조각상과 맞닿아 있음을 암시한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Vermeer",
-       "revision": 32646,
-       "section": null,
-       "paragraph": "M1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Luhua Landscape",
-       "quest_ko": "녹화 풍경화",
-       "version": "1.0",
-       "speaker": "Vermeer"
-      }
-     ],
-     "heading": "녹화 풍경화 — 베르메르와 그림",
-     "latin_left": [
-      "NPC"
-     ]
-    },
-    {
-     "section": "Luhua Landscape — Vermeer와 그림",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I picked it up while looking for a good view in Luhua Pool.",
-     "sentences": [
-      {
-       "t_raw": "Vermeer는 Luhua Pool에서 좋은 경치를 찾던 중 무언가를 주웠다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "베르메르는 녹화 연못에서 좋은 경치를 찾던 중 무언가를 주웠다고 말한다."
-      },
-      {
-       "t_raw": "이어서 Luhua Pool에 가서 한번 보겠느냐고 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어서 녹화 연못에 가서 한번 보겠느냐고 묻는다."
-      },
-      {
-       "t_raw": "좋은 경치를 찾던 행동과 주운 물건, 그리고 함께 가 보자는 제안은 자연스럽게 Luhua Pool로 시선을 돌리게 만든다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "좋은 경치를 찾던 행동과 주운 물건, 그리고 함께 가 보자는 제안은 자연스럽게 녹화 연못으로 시선을 돌리게 만든다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Luhua Landscape",
-       "quest_ko": "녹화 풍경화",
-       "version": "1.0",
-       "speaker": "Vermeer"
-      },
-      {
-       "kind": "quest",
-       "quest": "Luhua Landscape",
-       "quest_ko": "녹화 풍경화",
-       "version": "1.0",
-       "speaker": "Vermeer"
-      }
-     ],
-     "heading": "녹화 풍경화 — 베르메르와 그림",
-     "latin_left": []
-    },
-    {
-     "section": "Guizhong과 Realm of Clouds",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "The adepti created the Realm of Clouds to house them.",
-     "sentences": [
-      {
-       "t_raw": "Guizhong은 Guili를 다스리는 것과 별개로 Luhua Pool에 위치한 자신의 영역 **Realm of Clouds**를 지녔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "귀종은 귀리를 다스리는 것과 별개로 녹화 연못에 위치한 자신의 영역 **운경**을 지녔다."
-      },
-      {
-       "t_raw": "그녀는 **기계 연구**를 하던 중 **사악하고 오래된 유물** 여러 점을 마주쳤다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그녀는 **기계 연구**를 하던 중 **사악하고 오래된 유물** 여러 점을 마주쳤다."
-      },
-      {
-       "t_raw": "adepti는 그 유물들을 보관하기 위해 Realm of Clouds를 만들었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "adepti는 그 유물들을 보관하기 위해 운경을 만들었다."
-      },
-      {
-       "t_raw": "이는 기계 연구 중 마주친 유물을 보관하려 했다는 점에서 Realm of Clouds가 Guizhong의 기계 연구와 무관하지 않은 장소로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 기계 연구 중 마주친 유물을 보관하려 했다는 점에서 운경이 귀종의 기계 연구와 무관하지 않은 장소로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Guizhong",
-       "revision": 71720,
-       "section": "Story > Realm of Clouds",
-       "paragraph": "M2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "귀종과 운경",
-     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Materials section with Item, Specialty, Notes columns is in the English.",
      "quote": "Item · Specialty · Notes",
      "sentences": [
       {
-       "t_raw": "Luhua Pool은 Qiongji Estuary, Liyue에 속한 지역이며, 주요 요소 가운데 재료가 있다.",
+       "t_raw": "주요 볼거리 목록에는 재료 항목이 포함되어 있다.",
        "interp": false,
        "dropped": false,
-       "t": "녹화 연못은 경기 들판, 리월에 속한 지역이며, 주요 요소 가운데 재료가 있다."
+       "t": "주요 볼거리 목록에는 재료 항목이 포함되어 있다."
       },
       {
-       "t_raw": "그 재료 항목은 아이템, 특산품, 비고로 나뉘어 제시된다.",
+       "t_raw": "그 재료 항목은 **아이템·특산물·비고**라는 칸으로 정리된다.",
        "interp": false,
        "dropped": false,
-       "t": "그 재료 항목은 아이템, 특산품, 비고로 나뉘어 제시된다."
+       "t": "그 재료 항목은 **아이템·특산물·비고**라는 칸으로 정리된다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Luhua Pool",
-       "revision": 67945,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Luhua Pool",
@@ -482,10 +595,10 @@
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Luhua Pool로 가서 직접 한번 둘러볼래?",
-     "en": "Do you want to go to Luhua Pool to have a look?",
+     "status": "accepted",
+     "note": "Faithful translation of Vermeer's line.",
+     "t_raw": "Luhua Pool에서 좋은 경치를 찾다가 주웠네.",
+     "en": "I picked it up while looking for a good view in Luhua Pool.",
      "speaker": "Vermeer",
      "source": {
       "kind": "quest",
@@ -494,14 +607,14 @@
       "version": "1.0",
       "speaker": "Vermeer"
      },
-     "t": "녹화 연못으로 가서 직접 한번 둘러볼래?",
+     "t": "녹화 연못에서 좋은 경치를 찾다가 주웠네.",
      "speaker_ko": "베르메르"
     },
     {
-     "section": "주요 명소와 퍼즐",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "눈이 빛나는 조각상들이라... Luhua Pool에서 무슨 비밀을 밝혀낼 수 있을지 궁금하군.",
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of Vermeer's line.",
+     "t_raw": "빛나는 눈을 한 조각상들... Luhua Pool에서 어떤 비밀을 밝혀낼 수 있을지 궁금하군.",
      "en": "Statues with shining eyes... I wonder what secrets one can uncover in Luhua Pool?",
      "speaker": "Vermeer",
      "source": {
@@ -511,13 +624,13 @@
       "version": "1.0",
       "speaker": "Vermeer"
      },
-     "t": "눈이 빛나는 조각상들이라... 녹화 연못에서 무슨 비밀을 밝혀낼 수 있을지 궁금하군.",
+     "t": "빛나는 눈을 한 조각상들... 녹화 연못에서 어떤 비밀을 밝혀낼 수 있을지 궁금하군.",
      "speaker_ko": "베르메르"
     },
     {
-     "section": "Luhua Landscape — Vermeer와 그림",
-     "status": "needs_verify",
-     "note": null,
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation; wording differs slightly but the meaning is the same.",
      "t_raw": "빛나는 눈을 가진 조각상들... Luhua Pool에서 어떤 비밀을 밝혀낼 수 있을지 궁금하군.",
      "en": "Statues with shining eyes... I wonder what secrets one can uncover in Luhua Pool?",
      "speaker": "Vermeer",
@@ -529,6 +642,23 @@
       "speaker": "Vermeer"
      },
      "t": "빛나는 눈을 가진 조각상들... 녹화 연못에서 어떤 비밀을 밝혀낼 수 있을지 궁금하군.",
+     "speaker_ko": "베르메르"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of the line about picking something up while looking for a good view.",
+     "t_raw": "Luhua Pool에서 경치 좋은 곳을 찾다가 주웠다.",
+     "en": "I picked it up while looking for a good view in Luhua Pool.",
+     "speaker": "Vermeer",
+     "source": {
+      "kind": "quest",
+      "quest": "Luhua Landscape",
+      "quest_ko": "녹화 풍경화",
+      "version": "1.0",
+      "speaker": "Vermeer"
+     },
+     "t": "녹화 연못에서 경치 좋은 곳을 찾다가 주웠다.",
      "speaker_ko": "베르메르"
     }
    ]

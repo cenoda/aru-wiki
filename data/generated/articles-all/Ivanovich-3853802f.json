@@ -20,35 +20,41 @@
    "input_chars": 4307,
    "input_cut": false,
    "input_hash": "f30459c0a48f",
-   "writer": "or-ds",
+   "writer": "or-ds,ds",
    "verifier": "claude-sonnet",
-   "status": "needs_verify",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
      "status": "accepted",
-     "note": "All sentences follow from the English; the interpretation is a reasonable reading.",
-     "quote": "Technically I am a distributor, selling everyday items produced in Snezhnaya. As well as that, I also act as an agent for Cor Lapis merchants selling to Snezhnayan factories.",
+     "note": "All sentences are supported by the English.",
+     "quote": "Ivanovich is an open-world NPC in Liyue Harbor. He can be found near the left side of the docks. He is a Snezhnayan merchant stationed in Liyue.",
      "sentences": [
       {
-       "t_raw": "**Ivanovich**는 Liyue Harbor 항구 왼쪽 부두 근처에서 만나는 Snezhnaya 상인이다.",
+       "t_raw": "**Ivanovich**는 Liyue Harbor의 부둣가 왼쪽 근처에서 만나는 **Snezhnayan 상인**이다.",
        "interp": false,
        "dropped": false,
-       "t": "**이바노비치**는 리월항 항구 왼쪽 부두 근처에서 만나는 스네즈나야 상인이다."
+       "t": "**이바노비치**는 리월항의 부둣가 왼쪽 근처에서 만나는 **스네즈나야 상인**이다."
       },
       {
-       "t_raw": "그는 스스로를 Snezhnaya에서 생산한 일상용품을 파는 유통업자이자, Snezhnaya 공장에 보낼 Cor Lapis를 거래하는 상인 측 대리인이라고 소개하며, Liyue 사람들의 소비가 예상을 웃돈다고 말한다.",
+       "t_raw": "그는 Snezhnaya에서 생산된 생활용품을 유통하는 한편, Liyue에서 **Cor Lapis**를 구해 Snezhnaya의 공장으로 보내는 일을 맡는다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 스스로를 스네즈나야에서 생산한 일상용품을 파는 유통업자이자, 스네즈나야 공장에 보낼 콜 라피스를 거래하는 상인 측 대리인이라고 소개하며, 리월 사람들의 소비가 예상을 웃돈다고 말한다."
+       "t": "그는 스네즈나야에서 생산된 생활용품을 유통하는 한편, 리월에서 **콜 라피스**를 구해 스네즈나야의 공장으로 보내는 일을 맡는다."
       },
       {
-       "t_raw": "Liyue Harbor의 혼란과 새 상업 허가 절차를 겪고, 축제에서 새 상품과 사업 아이디어를 떠올리는 모습을 보면, 그는 Liyue를 **새 상품과 사업을 시험할 시장**으로 여기는 것으로 보인다.",
+       "t_raw": "Liyue Qixing이 Snezhnaya 고위 인사들을 살피는 가운데, 그는 새 영업 허가 소식을 확인해야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월 칠성이 스네즈나야 고위 인사들을 살피는 가운데, 그는 새 영업 허가 소식을 확인해야 한다."
+      },
+      {
+       "t_raw": "Moonchase Festival의 활기는 그에게 Snezhnayan 음식 판매 구상을 떠올리게 하는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "리월항의 혼란과 새 상업 허가 절차를 겪고, 축제에서 새 상품과 사업 아이디어를 떠올리는 모습을 보면, 그는 리월을 **새 상품과 사업을 시험할 시장**으로 여기는 것으로 보인다."
+       "t": "축월절의 활기는 그에게 스네즈나야 음식 판매 구상을 떠올리게 하는 것으로 보인다."
       }
      ],
      "sources": [
@@ -73,70 +79,59 @@
        "page": "Ivanovich",
        "revision": 1491521,
        "section": "Dialogue",
-       "paragraph": "A26",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Necessary Procedures",
+       "quest_ko": "필수 절차",
+       "version": "1.1",
+       "speaker": "Ivanovich"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Event Dialogue > Moonlight Merriment",
+       "paragraph": "A44",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Ivanovich",
        "revision": 1491521,
-       "section": "Dialogue",
-       "paragraph": "A31",
+       "section": "Event Dialogue > Moonlight Merriment",
+       "paragraph": "A45",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
-       "version": "1.1",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
-       "version": "1.1",
-       "speaker": "Ivanovich"
       }
      ],
      "heading": null,
      "latin_left": []
     },
     {
-     "section": "정체와 배경",
+     "section": "개요",
      "status": "accepted",
      "note": "All sentences are supported by the English.",
-     "quote": "I am Ivanovich, pleasure to meet you! I am a businessman from Snezhnaya. I am now waiting for my next delivery.",
+     "quote": "Good day, my friend! My apologies, but I am out of stock at the moment. Please try again next time.",
      "sentences": [
       {
-       "t_raw": "Ivanovich는 Liyue Harbor 부두 왼쪽 부근에서 만날 수 있는 Snezhnayan 상인이며, 자신을 Snezhnaya에서 온 사업가로 소개하며 다음 배송을 기다린다고 말한다.",
+       "t_raw": "Ivanovich는 Liyue Harbor **부둣가 왼쪽 부근**에서 만나는 Snezhnayan 상인이다.",
        "interp": false,
        "dropped": false,
-       "t": "이바노비치는 리월항 부두 왼쪽 부근에서 만날 수 있는 스네즈나야 상인이며, 자신을 스네즈나야에서 온 사업가로 소개하며 다음 배송을 기다린다고 말한다."
+       "t": "이바노비치는 리월항 **부둣가 왼쪽 부근**에서 만나는 스네즈나야 상인이다."
       },
       {
-       "t_raw": "그는 재고가 떨어졌다며 다음에 다시 오라고 안내한다.",
+       "t_raw": "만나면 반갑게 인사하면서도 지금은 재고가 없으니 다음에 다시 오라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 재고가 떨어졌다며 다음에 다시 오라고 안내한다."
+       "t": "만나면 반갑게 인사하면서도 지금은 재고가 없으니 다음에 다시 오라고 말한다."
       },
       {
-       "t_raw": "스스로를 **유통업자**로 여겨 Snezhnaya에서 생산된 생활용품을 팔고, 동시에 **Cor Lapis 중개인**으로서 Snezhnayan 공장에 보낼 Cor Lapis를 구한다.",
+       "t_raw": "상대가 Snezhnayan 제품을 사러 온 줄 알았다고 말하기도 한다.",
        "interp": false,
        "dropped": false,
-       "t": "스스로를 **유통업자**로 여겨 스네즈나야에서 생산된 생활용품을 팔고, 동시에 **콜 라피스 중개인**으로서 스네즈나야 공장에 보낼 콜 라피스를 구한다."
-      },
-      {
-       "t_raw": "다만 Cor Lapis는 전부 Snezhnaya의 공장으로 보내고 소매는 하지 않는다고 밝힌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다만 콜 라피스는 전부 스네즈나야의 공장으로 보내고 소매는 하지 않는다고 밝힌다."
-      },
-      {
-       "t_raw": "생활용품 판매와 Cor Lapis 중개를 함께 맡는다는 점은 그의 장사가 Snezhnaya에서 생산된 물건과 Snezhnaya로 보내는 Cor Lapis를 함께 다룬다는 뜻으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "생활용품 판매와 콜 라피스 중개를 함께 맡는다는 점은 그의 장사가 스네즈나야에서 생산된 물건과 스네즈나야로 보내는 콜 라피스를 함께 다룬다는 뜻으로 보인다."
+       "t": "상대가 스네즈나야 제품을 사러 온 줄 알았다고 말하기도 한다."
       }
      ],
      "sources": [
@@ -157,6 +152,49 @@
        "wiki_refs": []
       },
       {
+       "kind": "quest",
+       "quest": "Calm Before the Storm (Story Quest)",
+       "quest_ko": "폭풍 전야",
+       "version": "1.0",
+       "speaker": "Ivanovich"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation follows from the English.",
+     "quote": "The people of Liyue are very wealthy! I import goods from Snezhnaya and everything sells out almost as soon as it arrives.",
+     "sentences": [
+      {
+       "t_raw": "스스로는 Snezhnaya에서 온 사업가라고 소개하며 다음 배송을 기다리는 중이라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스스로는 스네즈나야에서 온 사업가라고 소개하며 다음 배송을 기다리는 중이라고 밝힌다."
+      },
+      {
+       "t_raw": "Liyue 사람들이 매우 부유하다고 평하면서, Snezhnaya에서 들여온 물건이 도착하자마자 거의 다 팔린다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월 사람들이 매우 부유하다고 평하면서, 스네즈나야에서 들여온 물건이 도착하자마자 거의 다 팔린다고 말한다."
+      },
+      {
+       "t_raw": "만약 그런 사정을 더 일찍 알았더라면 **직접 소비자에게 팔** 수 있도록 여기에 자기 가게를 열었을 것이라고 말하고, 그러면 배송을 직접 감독하지 않아도 되었을 것이라고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "만약 그런 사정을 더 일찍 알았더라면 **직접 소비자에게 팔** 수 있도록 여기에 자기 가게를 열었을 것이라고 말하고, 그러면 배송을 직접 감독하지 않아도 되었을 것이라고 덧붙인다."
+      },
+      {
+       "t_raw": "Liyue 사람들이 부유하다는 평과 물건이 도착하자마자 팔린다는 설명, 직접 판매를 택했을 것이라는 가정을 함께 보면, 그는 Liyue를 판매가 빠른 시장으로 보면서도 배송을 직접 감독해야 하는 유통 구조를 번거롭게 여기는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "리월 사람들이 부유하다는 평과 물건이 도착하자마자 팔린다는 설명, 직접 판매를 택했을 것이라는 가정을 함께 보면, 그는 리월을 판매가 빠른 시장으로 보면서도 배송을 직접 감독해야 하는 유통 구조를 번거롭게 여기는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
        "kind": "wiki",
        "page": "Ivanovich",
        "revision": 1491521,
@@ -164,6 +202,52 @@
        "paragraph": "A22",
        "wiki_refs": []
       },
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Dialogue",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Dialogue",
+       "paragraph": "A24",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Technically I am a distributor, selling everyday items produced in Snezhnaya. As well as that, I also act as an agent for Cor Lapis merchants selling to Snezhnayan factories.",
+     "sentences": [
+      {
+       "t_raw": "Ivanovich는 자신을 Snezhnaya에서 생산한 생활용품을 파는 **유통업자**로 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이바노비치는 자신을 스네즈나야에서 생산한 생활용품을 파는 **유통업자**로 여긴다."
+      },
+      {
+       "t_raw": "또한 Snezhnaya의 공장에 Cor Lapis를 팔려는 상인들의 **중개** 역할도 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 스네즈나야의 공장에 콜 라피스를 팔려는 상인들의 **중개** 역할도 맡는다."
+      },
+      {
+       "t_raw": "Cor Lapis는 소매하지 않고 전부 Snezhnaya의 공장으로 보낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "콜 라피스는 소매하지 않고 전부 스네즈나야의 공장으로 보낸다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Ivanovich",
@@ -194,51 +278,29 @@
     {
      "section": "정체와 배경",
      "status": "accepted",
-     "note": "All sentences are supported by the English.",
-     "quote": "The people of Liyue are very wealthy! I import goods from Snezhnaya and everything sells out almost as soon as it arrives.",
+     "note": "All sentences are supported, and the interpretation is reasonable.",
+     "quote": "So I have a high opinion of Liyue consumers... Their spending always exceeds our projections.",
      "sentences": [
       {
-       "t_raw": "Liyue 사람들이 매우 부유하다고 말하는 그는 Snezhnaya에서 물건을 수입하고, 물건이 도착하자마자 거의 다 팔린다고 말한다.",
+       "t_raw": "Ivanovich는 상품이 대량으로 생산되지만 결코 싸지 않다고 본다.",
        "interp": false,
        "dropped": false,
-       "t": "리월 사람들이 매우 부유하다고 말하는 그는 스네즈나야에서 물건을 수입하고, 물건이 도착하자마자 거의 다 팔린다고 말한다."
+       "t": "이바노비치는 상품이 대량으로 생산되지만 결코 싸지 않다고 본다."
       },
       {
-       "t_raw": "그래서 더 일찍 알았더라면 직접 소비자에게 팔 수 있도록 이곳에 자기 가게를 열었을 것이라고 말한다.",
+       "t_raw": "그래도 **Liyue 소비자**에 대해 높은 평가를 내리며, 그들의 지출은 예상치를 웃돈다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그래서 더 일찍 알았더라면 직접 소비자에게 팔 수 있도록 이곳에 자기 가게를 열었을 것이라고 말한다."
+       "t": "그래도 **리월 소비자**에 대해 높은 평가를 내리며, 그들의 지출은 예상치를 웃돈다고 말한다."
       },
       {
-       "t_raw": "그는 자기네 물건이 대량 생산되지만 결코 싸지 않다고 말하며, Liyue 소비자의 소비는 예상을 웃돈다고 높이 평가한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 자기네 물건이 대량 생산되지만 결코 싸지 않다고 말하며, 리월 소비자의 소비는 예상을 웃돈다고 높이 평가한다."
-      },
-      {
-       "t_raw": "물건이 잘 팔리고 소비가 예상을 웃돈다는 점에서 그가 Liyue 소비자를 높이 평가하는 것은 자연스러운 셈이다.",
+       "t_raw": "값이 싸지 않은데도 소비가 예상을 넘긴다는 점은 그에게 Liyue 소비자를 매력적인 고객층으로 보이게 하는 대목이다.",
        "interp": true,
        "dropped": false,
-       "t": "물건이 잘 팔리고 소비가 예상을 웃돈다는 점에서 그가 리월 소비자를 높이 평가하는 것은 자연스러운 셈이다."
+       "t": "값이 싸지 않은데도 소비가 예상을 넘긴다는 점은 그에게 리월 소비자를 매력적인 고객층으로 보이게 하는 대목이다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ivanovich",
-       "revision": 1491521,
-       "section": "Dialogue",
-       "paragraph": "A23",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ivanovich",
-       "revision": 1491521,
-       "section": "Dialogue",
-       "paragraph": "A24",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Ivanovich",
@@ -262,26 +324,26 @@
     {
      "section": "정체와 배경",
      "status": "accepted",
-     "note": "All sentences are supported by the English; the interpretation is reasonable.",
+     "note": "All sentences are supported by the English.",
      "quote": "But I am not privy to the details. So please excuse me from withholding judgment.",
      "sentences": [
       {
-       "t_raw": "Qixing이 최근 Snezhnaya 고위 인사들을 면밀히 지켜보고 있다는 이야기가 있고, Liyue 상인들에게서 Cor Lapis를 살 수 있는 이유가 막후 중재 덕분이라는 소문도 있다.",
+       "t_raw": "Ivanovich는 Qixing이 최근 Snezhnaya의 고위 관리들을 면밀히 지켜보고 있다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "칠성이 최근 스네즈나야 고위 인사들을 면밀히 지켜보고 있다는 이야기가 있고, 리월 상인들에게서 콜 라피스를 살 수 있는 이유가 막후 중재 덕분이라는 소문도 있다."
+       "t": "이바노비치는 칠성이 최근 스네즈나야의 고위 관리들을 면밀히 지켜보고 있다고 전한다."
       },
       {
-       "t_raw": "그러나 그는 자세한 내막을 알지 못한다며 **판단을 유보**한다.",
+       "t_raw": "일부 사람들은 Liyue 상인들에게서 Cor Lapis를 살 수 있는 것이 Qixing의 뒤에서의 중재 덕분이라고 말한다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 그는 자세한 내막을 알지 못한다며 **판단을 유보**한다."
+       "t": "일부 사람들은 리월 상인들에게서 콜 라피스를 살 수 있는 것이 칠성의 뒤에서의 중재 덕분이라고 말한다고 한다."
       },
       {
-       "t_raw": "소문의 진위를 확인할 수 없는 그가 단정을 피하는 것은, 확인되지 않은 이야기에 휩쓸리지 않으려는 태도로 보인다.",
-       "interp": true,
+       "t_raw": "그는 자세한 사정을 알지 못한다며 판단을 보류하는 점 양해를 구한다.",
+       "interp": false,
        "dropped": false,
-       "t": "소문의 진위를 확인할 수 없는 그가 단정을 피하는 것은, 확인되지 않은 이야기에 휩쓸리지 않으려는 태도로 보인다."
+       "t": "그는 자세한 사정을 알지 못한다며 판단을 보류하는 점 양해를 구한다."
       }
      ],
      "sources": [
@@ -314,121 +376,201 @@
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Liyue Harbor의 혼란과 상업 절차",
+     "section": "작중 행적 — Rite of Descension과 Liyue Harbor의 격변",
      "status": "accepted",
-     "note": "All sentences are supported by the English.",
-     "quote": "I thought the city might be in a mess for a while longer, but order was restored very quickly. The Liyue Qixing are quite something, indeed.",
+     "note": "All sentences are supported by Q4, Q14, Q19 and Q9. The interpretation is reasonable.",
+     "quote": "Even for outsiders, the grandeur and solemnity of the proceedings and ceremony leave a deep impression.",
      "sentences": [
       {
-       "t_raw": "Liyue Harbor의 사건은 Ivanovich에게도 꽤 놀라운 일이었다.",
+       "t_raw": "Ivanovich는 Rite of Descension을 처음 보는 입장이라며, 그 의식의 **장엄함과 엄숙함**이 외부인에게도 깊은 인상을 남긴다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "리월항의 사건은 이바노비치에게도 꽤 놀라운 일이었다."
+       "t": "이바노비치는 청신을 처음 보는 입장이라며, 그 의식의 **장엄함과 엄숙함**이 외부인에게도 깊은 인상을 남긴다고 말한다."
       },
       {
-       "t_raw": "그는 도시가 한동안 혼란스러울 줄 알았지만 **질서가 매우 빨리 회복**되었고 Liyue Qixing은 대단하다고 평한다.",
+       "t_raw": "Liyue에서 통제권을 지닌 이들만이 그 의식을 주재할 수 있다고 설명한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 도시가 한동안 혼란스러울 줄 알았지만 **질서가 매우 빨리 회복**되었고 리월 칠성은 대단하다고 평한다."
+       "t": "리월에서 통제권을 지닌 이들만이 그 의식을 주재할 수 있다고 설명한다."
       },
       {
-       "t_raw": "최근 사건에 별 의견이 없다면서도 일상이 바뀌지 않았으니 당황할 이유가 없고, 남들이 당황할 때 침착하면 앞서가는 셈 아니냐고 말한다.",
+       "t_raw": "대부분의 adepti가 여러 짐승의 모습으로 나타난다고 덧붙인다.",
        "interp": false,
        "dropped": false,
-       "t": "최근 사건에 별 의견이 없다면서도 일상이 바뀌지 않았으니 당황할 이유가 없고, 남들이 당황할 때 침착하면 앞서가는 셈 아니냐고 말한다."
+       "t": "대부분의 선인이 여러 짐승의 모습으로 나타난다고 덧붙인다.",
+       "polish": {
+        "from": "대부분의 adepti가 여러 짐승의 모습으로 나타난다고 덧붙인다.",
+        "text": "대부분의 선인이 여러 짐승의 모습으로 나타난다고 덧붙인다.",
+        "by": "glm-flash"
+       }
       },
       {
-       "t_raw": "그런데 Snezhnayan 물품을 대고 가끔 Cor Lapis를 사 가는 이들은 매우 불안해하고 있다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그런데 스네즈나야 물품을 대고 가끔 콜 라피스를 사 가는 이들은 매우 불안해하고 있다."
-      },
-      {
-       "t_raw": "사건에 대한 판단은 유보하면서도 주변 공급자들의 동요를 언급하는 태도로 보인다.",
+       "t_raw": "의식의 장엄함과 주재 권한에 대한 언급이 겹치면서, Rite of Descension은 Liyue의 권력 질서를 드러내는 자리로도 읽힌다.",
        "interp": true,
        "dropped": false,
-       "t": "사건에 대한 판단은 유보하면서도 주변 공급자들의 동요를 언급하는 태도로 보인다."
+       "t": "의식의 장엄함과 주재 권한에 대한 언급이 겹치면서, 청신은 리월의 권력 질서를 드러내는 자리로도 읽힌다."
       }
      ],
      "sources": [
       {
        "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
-       "version": "1.1",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
-       "version": "1.1",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Quiet Day in Liyue Harbor",
-       "quest_ko": "리월항의 평화로운 하루",
+       "quest": "Rite of Descension",
+       "quest_ko": "청신",
        "version": "1.0",
        "speaker": "Ivanovich"
       },
       {
        "kind": "quest",
-       "quest": "A Quiet Day in Liyue Harbor",
-       "quest_ko": "리월항의 평화로운 하루",
+       "quest": "Rite of Descension",
+       "quest_ko": "청신",
        "version": "1.0",
        "speaker": "Ivanovich"
       },
       {
        "kind": "quest",
-       "quest": "A Quiet Day in Liyue Harbor",
-       "quest_ko": "리월항의 평화로운 하루",
+       "quest": "Rite of Descension",
+       "quest_ko": "청신",
        "version": "1.0",
        "speaker": "Ivanovich"
       },
       {
        "kind": "quest",
-       "quest": "A Quiet Day in Liyue Harbor",
-       "quest_ko": "리월항의 평화로운 하루",
+       "quest": "Rite of Descension",
+       "quest_ko": "청신",
        "version": "1.0",
        "speaker": "Ivanovich"
       }
      ],
-     "heading": "작중 행적 — 리월항의 혼란과 상업 절차",
+     "heading": "작중 행적 — 청신과 리월항의 격변",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Liyue Harbor의 혼란과 상업 절차",
+     "section": "작중 행적 — Rite of Descension과 Liyue Harbor의 격변",
      "status": "accepted",
-     "note": "All sentences are supported by the English.",
-     "quote": "This should be the new business permit that Ivanovich wants to apply for. Let's copy the procedures down.",
+     "note": "All sentences are supported by Q3, Q16, Q8, Q18 and Q23. The interpretation about weighing gain is a fair reading of 'ahead of the curve'.",
+     "quote": "If you want to put it another way, if I stay calm while everyone else panics, aren't I ahead of the curve, then?",
      "sentences": [
       {
-       "t_raw": "Ivanovich는 Clerk Zhao에게 새 영업 허가도 신청해야 한다는 말과 추가 공지를 기다리라는 말을 들었다.",
+       "t_raw": "Liyue Harbor 소란에 대해 Ivanovich는 Liyue의 일상이 아직 바뀌지 않았으니 당황할 이유가 없다며 별일 아니라고 본다.",
        "interp": false,
        "dropped": false,
-       "t": "이바노비치는 소소에게 새 영업 허가도 신청해야 한다는 말과 추가 공지를 기다리라는 말을 들었다."
+       "t": "리월항 소란에 대해 이바노비치는 리월의 일상이 아직 바뀌지 않았으니 당황할 이유가 없다며 별일 아니라고 본다."
       },
       {
-       "t_raw": "그는 Traveler에게 Bulletin Board에서 **새 영업 허가** 소식을 확인해 달라고 부탁한다.",
+       "t_raw": "그러나 그 일이 모두를 꽤 놀라게 했다고도 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 여행자에게 게시판에서 **새 영업 허가** 소식을 확인해 달라고 부탁한다."
+       "t": "그러나 그 일이 모두를 꽤 놀라게 했다고도 말한다."
       },
       {
-       "t_raw": "Paimon은 그것이 Ivanovich가 신청하려는 허가라며 절차를 적어 두자고 하고, Clerk Zhao는 Ivanovich에게 연락할 사람을 보내겠다고 한다.",
+       "t_raw": "Snezhnayan goods를 대는 이들과 가끔 Cor Lapis를 사 가는 이들은 몹시 불안해했다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 그것이 이바노비치가 신청하려는 허가라며 절차를 적어 두자고 하고, 소소는 이바노비치에게 연락할 사람을 보내겠다고 한다."
+       "t": "스네즈나야 상품을 대는 이들과 가끔 콜 라피스를 사 가는 이들은 몹시 불안해했다.",
+       "polish": {
+        "from": "스네즈나야 goods를 대는 이들과 가끔 콜 라피스를 사 가는 이들은 몹시 불안해했다.",
+        "text": "스네즈나야 상품을 대는 이들과 가끔 콜 라피스를 사 가는 이들은 몹시 불안해했다.",
+        "by": "glm-flash"
+       }
       },
       {
-       "t_raw": "Ivanovich는 가게를 지켜야 해 Traveler에게 Mr. Bolai에게 Cor Lapis가 있는지 물어봐 달라고 한다.",
+       "t_raw": "Ivanovich는 별 의견이 없다고 하면서도, 모두가 당황할 때 침착하면 앞서가는 셈이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "이바노비치는 가게를 지켜야 해 여행자에게 Mr. 박래에게 콜 라피스가 있는지 물어봐 달라고 한다."
+       "t": "이바노비치는 별 의견이 없다고 하면서도, 모두가 당황할 때 침착하면 앞서가는 셈이라고 말한다."
+      },
+      {
+       "t_raw": "거래처의 동요와 자신의 침착함을 대비하는 태도에는 손익을 재는 계산이 깔린 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "거래처의 동요와 자신의 침착함을 대비하는 태도에는 손익을 재는 계산이 깔린 것으로 보인다."
       }
      ],
      "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Quiet Day in Liyue Harbor",
+       "quest_ko": "리월항의 평화로운 하루",
+       "version": "1.0",
+       "speaker": "Ivanovich"
+      },
+      {
+       "kind": "quest",
+       "quest": "Necessary Procedures",
+       "quest_ko": "필수 절차",
+       "version": "1.1",
+       "speaker": "Ivanovich"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Quiet Day in Liyue Harbor",
+       "quest_ko": "리월항의 평화로운 하루",
+       "version": "1.0",
+       "speaker": "Ivanovich"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Quiet Day in Liyue Harbor",
+       "quest_ko": "리월항의 평화로운 하루",
+       "version": "1.0",
+       "speaker": "Ivanovich"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Quiet Day in Liyue Harbor",
+       "quest_ko": "리월항의 평화로운 하루",
+       "version": "1.0",
+       "speaker": "Ivanovich"
+      }
+     ],
+     "heading": "작중 행적 — 청신과 리월항의 격변",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Rite of Descension과 Liyue Harbor의 격변",
+     "status": "accepted",
+     "note": "All sentences are supported by Q1, Q6, Q11, Q25 and Q28. The interpretation follows from the permit requirement.",
+     "quote": "But Clerk Zhao said that I also need to apply for a new business permit, and told me to stay tuned for any more announcements.",
+     "sentences": [
+      {
+       "t_raw": "소란 뒤 Ivanovich는 도시가 한동안 더 혼란스러울 줄 알았지만 질서가 아주 빠르게 회복되었고 Liyue Qixing은 정말 대단하다고 평가한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소란 뒤 이바노비치는 도시가 한동안 더 혼란스러울 줄 알았지만 질서가 아주 빠르게 회복되었고 리월 칠성은 정말 대단하다고 평가한다."
+      },
+      {
+       "t_raw": "그런데 Clerk Zhao는 **새 영업 허가**도 신청해야 한다고 말했고, 추가 공지가 나올 때까지 기다리라고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 소소는 **새 영업 허가**도 신청해야 한다고 말했고, 추가 공지가 나올 때까지 기다리라고 했다."
+      },
+      {
+       "t_raw": "Ivanovich는 Traveler에게 Bulletin Board에서 새 영업 허가 소식을 확인해 달라고 부탁한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이바노비치는 여행자에게 게시판에서 새 영업 허가 소식을 확인해 달라고 부탁한다."
+      },
+      {
+       "t_raw": "Bulletin Board의 신청 절차를 확인해 적어 두자는 이야기가 이어지고, Clerk Zhao는 누군가를 보내 Ivanovich에게 연락하겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게시판의 신청 절차를 확인해 적어 두자는 이야기가 이어지고, 소소는 누군가를 보내 이바노비치에게 연락하겠다고 한다."
+      },
+      {
+       "t_raw": "Liyue Qixing이 질서를 빠르게 되찾았어도 새 허가 절차가 남아 있었으므로, 그의 영업 재개는 절차를 더 거쳐야 했던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "리월 칠성이 질서를 빠르게 되찾았어도 새 허가 절차가 남아 있었으므로, 그의 영업 재개는 절차를 더 거쳐야 했던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Necessary Procedures",
+       "quest_ko": "필수 절차",
+       "version": "1.1",
+       "speaker": "Ivanovich"
+      },
       {
        "kind": "quest",
        "quest": "Necessary Procedures",
@@ -456,130 +598,46 @@
        "quest_ko": "필수 절차",
        "version": "1.1",
        "speaker": "Clerk Zhao"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Quiet Day in Liyue Harbor",
-       "quest_ko": "리월항의 평화로운 하루",
-       "version": "1.0",
-       "speaker": "Ivanovich"
       }
      ],
-     "heading": "작중 행적 — 리월항의 혼란과 상업 절차",
-     "latin_left": [
-      "Mr"
-     ]
-    },
-    {
-     "section": "작중 행적 — 의례와 축제",
-     "status": "accepted",
-     "note": "All sentences are supported by Q4, Q9, Q14, Q19 and Q24. The interpretation in (3) is hedged and reasonable.",
-     "quote": "Even for outsiders, the grandeur and solemnity of the proceedings and ceremony leave a deep impression.",
-     "sentences": [
-      {
-       "t_raw": "Ivanovich는 Traveler에게 자신도 **Rite of Descension**을 처음 본다고 말하면서, 의식의 장엄함과 엄숙함이 외부인에게도 깊은 인상을 남긴다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이바노비치는 여행자에게 자신도 **청신**을 처음 본다고 말하면서, 의식의 장엄함과 엄숙함이 외부인에게도 깊은 인상을 남긴다고 전한다."
-      },
-      {
-       "t_raw": "그는 Liyue에서 통제권을 가진 이들만이 이 의례를 주관할 수 있다고 덧붙이고, 대부분의 adepti가 여러 짐승의 모습으로 나타난다고도 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 리월에서 통제권을 가진 이들만이 이 의례를 주관할 수 있다고 덧붙이고, 대부분의 선인들이 여러 짐승의 모습으로 나타난다고도 말한다.",
-       "polish": {
-        "from": "그는 리월에서 통제권을 가진 이들만이 이 의례를 주관할 수 있다고 덧붙이고, 대부분의 adepti가 여러 짐승의 모습으로 나타난다고도 말한다.",
-        "text": "그는 리월에서 통제권을 가진 이들만이 이 의례를 주관할 수 있다고 덧붙이고, 대부분의 선인들이 여러 짐승의 모습으로 나타난다고도 말한다.",
-        "by": "or-ds"
-       }
-      },
-      {
-       "t_raw": "그는 Traveler의 소원을 방해해서 미안하다며 이것을 받으라고 건넨다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 여행자의 소원을 방해해서 미안하다며 이것을 받으라고 건넨다."
-      },
-      {
-       "t_raw": "의례의 인상과 주관 권한, adepti의 모습을 함께 언급한 점은 그가 Liyue의 질서를 두루 살피는 태도로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "의례의 인상과 주관 권한, 선인들의 모습을 함께 언급한 점은 그가 리월의 질서를 두루 살피는 태도로 보인다.",
-       "polish": {
-        "from": "의례의 인상과 주관 권한, adepti의 모습을 함께 언급한 점은 그가 리월의 질서를 두루 살피는 태도로 보인다.",
-        "text": "의례의 인상과 주관 권한, 선인들의 모습을 함께 언급한 점은 그가 리월의 질서를 두루 살피는 태도로 보인다.",
-        "by": "or-ds"
-       }
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Rite of Descension",
-       "quest_ko": "청신",
-       "version": "1.0",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Rite of Descension",
-       "quest_ko": "청신",
-       "version": "1.0",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Rite of Descension",
-       "quest_ko": "청신",
-       "version": "1.0",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Rite of Descension",
-       "quest_ko": "청신",
-       "version": "1.0",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Rite of Descension",
-       "quest_ko": "청신",
-       "version": "1.0",
-       "speaker": "Ivanovich"
-      }
-     ],
-     "heading": "작중 행적 — 의례와 축제",
+     "heading": "작중 행적 — 청신과 리월항의 격변",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 의례와 축제",
+     "section": "작중 행적 — Lantern Rite와 Moonchase Festival",
      "status": "accepted",
-     "note": "Supported by A40-A43, A9, A49 and A50.",
+     "note": "All sentences are supported by A40-A43 and A9. The interpretation is reasonable.",
      "quote": "Even as a stranger in this foreign city, seeing the brightly lit streets and Xiao Lanterns above in the night sky still brings some indescribable warmth to my heart.",
      "sentences": [
       {
-       "t_raw": "Lantern Rite 때 Ivanovich는 **Xiao Lanterns**의 빛이 따뜻하다고 말하며, 낯선 도시에서도 밝은 거리와 Xiao Lanterns가 설명하기 어려운 온기를 마음에 안긴다고 전한다.",
+       "t_raw": "Lantern Rite에서 Ivanovich는 Xiao Lanterns의 빛이 매우 따뜻하다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "해등절 때 이바노비치는 **Xiao Lanterns**의 빛이 따뜻하다고 말하며, 낯선 도시에서도 밝은 거리와 Xiao Lanterns가 설명하기 어려운 온기를 마음에 안긴다고 전한다."
+       "t": "해등절에서 이바노비치는 Xiao Lanterns의 빛이 매우 따뜻하다고 말한다."
       },
       {
-       "t_raw": "그 온기는 Snezhnaya의 'Krsnik Noc'을 떠올리게 하고, 그는 기회가 있으면 Snezhnaya의 축제에 와 보라고 권한다.",
+       "t_raw": "이국 도시의 낯선 사람으로서도 밝게 빛나는 거리와 밤하늘의 Xiao Lanterns가 설명하기 어려운 온기를 안긴다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "그 온기는 스네즈나야의 '크레스니크의 밤'을 떠올리게 하고, 그는 기회가 있으면 스네즈나야의 축제에 와 보라고 권한다."
+       "t": "이국 도시의 낯선 사람으로서도 밝게 빛나는 거리와 밤하늘의 Xiao Lanterns가 설명하기 어려운 온기를 안긴다고 한다."
       },
       {
-       "t_raw": "그러나 Xiao Lanterns가 아주 따뜻하니 Snezhnaya에서 잘 팔릴 것이라고도 말한다.",
+       "t_raw": "그 온기는 Snezhnaya의 **Krsnik Noc**을 떠올리게 하고, 기회가 되면 Snezhnaya의 축제에 참여해 보라고 권한다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 Xiao Lanterns가 아주 따뜻하니 스네즈나야에서 잘 팔릴 것이라고도 말한다."
+       "t": "그 온기는 스네즈나야의 **크레스니크의 밤**을 떠올리게 하고, 기회가 되면 스네즈나야의 축제에 참여해 보라고 권한다."
       },
       {
-       "t_raw": "The Exquisite Night Chimes에서는 음악 축제 공연 때문인지 무대 조명이 Xiao Lantern을 더 밝게 만들었고, 그 타오르는 열기가 향수를 불러일으킨다고 말한다.",
+       "t_raw": "Xiao Lanterns가 따뜻하니 Snezhnaya에서도 잘 팔릴 것 같다는 감상도 붙는다.",
        "interp": false,
        "dropped": false,
-       "t": "선율이 흐르는 밤에서는 음악 축제 공연 때문인지 무대 조명이 소등을 더 밝게 만들었고, 그 타오르는 열기가 향수를 불러일으킨다고 말한다."
+       "t": "Xiao Lanterns가 따뜻하니 스네즈나야에서도 잘 팔릴 것 같다는 감상도 붙는다."
+      },
+      {
+       "t_raw": "축제의 빛은 그에게 Snezhnaya의 **Krsnik Noc**과 Snezhnaya에서의 판매 가능성을 함께 떠올리게 한 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "축제의 빛은 그에게 스네즈나야의 **크레스니크의 밤**과 스네즈나야에서의 판매 가능성을 함께 떠올리게 한 셈이다."
       }
      ],
      "sources": [
@@ -622,6 +680,48 @@
        "section": "Idle Quotes",
        "paragraph": "A9",
        "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 해등절과 축월절",
+     "latin_left": [
+      "Xiao Lanterns",
+      "Xiao Lanterns",
+      "Xiao Lanterns"
+     ]
+    },
+    {
+     "section": "작중 행적 — Lantern Rite와 Moonchase Festival",
+     "status": "accepted",
+     "note": "All sentences are supported by A48-A50 and A16.",
+     "quote": "And I don't know if it's because of the music festival performance, but the stage lights made the lantern even brighter.",
+     "sentences": [
+      {
+       "t_raw": "The Exquisite Night Chimes에서도 그는 Xiao Lanterns의 빛이 매우 따뜻하다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "선율이 흐르는 밤에서도 그는 Xiao Lanterns의 빛이 매우 따뜻하다고 말한다."
+      },
+      {
+       "t_raw": "음악 축제 공연 때문인지 무대 조명이 Xiao Lanterns를 더 밝게 만들었다고 하며, 올해 Xiao Lanterns가 더 밝게 타오르는 것 같다고도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "음악 축제 공연 때문인지 무대 조명이 Xiao Lanterns를 더 밝게 만들었다고 하며, 올해 Xiao Lanterns가 더 밝게 타오르는 것 같다고도 한다."
+      },
+      {
+       "t_raw": "이 뜨거운 열기가 향수를 불러일으킨다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 뜨거운 열기가 향수를 불러일으킨다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Event Dialogue > The Exquisite Night Chimes",
+       "paragraph": "A48",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -630,9 +730,25 @@
        "section": "Event Dialogue > The Exquisite Night Chimes",
        "paragraph": "A49",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Idle Quotes",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Event Dialogue > The Exquisite Night Chimes",
+       "paragraph": "A50",
+       "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 의례와 축제",
+     "heading": "작중 행적 — 해등절과 축월절",
      "latin_left": [
       "Xiao Lanterns",
       "Xiao Lanterns",
@@ -640,44 +756,34 @@
      ]
     },
     {
-     "section": "작중 행적 — 의례와 축제",
+     "section": "작중 행적 — Lantern Rite와 Moonchase Festival",
      "status": "accepted",
-     "note": "Supported by A44, A45, A12, A52, A54 and A55.",
-     "quote": "Variety and novelty are a merchant's great loves, after all!",
+     "note": "All sentences are supported by A44, A45 and A12. The interpretation is reasonable.",
+     "quote": "Do you think some Snezhnayan fare and some grilled pies and such would sell well?",
      "sentences": [
       {
-       "t_raw": "Moonchase Festival 때 Ivanovich는 주민들이 음식 준비로 분주한 모습에 자신도 해 보고 싶어진다고 말하고, Snezhnayan fare와 grilled pies가 잘 팔릴지 묻는다.",
+       "t_raw": "**Moonchase Festival**은 Ivanovich에게 분주한 시기다.",
        "interp": false,
        "dropped": false,
-       "t": "축월절 때 이바노비치는 주민들이 음식 준비로 분주한 모습에 자신도 해 보고 싶어진다고 말하고, 스네즈나야 요리와 구운 파이가 잘 팔릴지 묻는다.",
-       "polish": {
-        "from": "축월절 때 이바노비치는 주민들이 음식 준비로 분주한 모습에 자신도 해 보고 싶어진다고 말하고, 스네즈나야 fare와 grilled pies가 잘 팔릴지 묻는다.",
-        "text": "축월절 때 이바노비치는 주민들이 음식 준비로 분주한 모습에 자신도 해 보고 싶어진다고 말하고, 스네즈나야 요리와 구운 파이가 잘 팔릴지 묻는다.",
-        "by": "or-ds"
-       }
+       "t": "**축월절**은 이바노비치에게 분주한 시기다."
       },
       {
-       "t_raw": "Moonchase Festival을 위한 **새로운 사업 아이디어**를 내야 한다고도 한다.",
+       "t_raw": "음식을 준비하는 현지인들을 보면 자신도 해 보고 싶어지며, Snezhnaya 음식과 구운 파이 같은 것이 잘 팔릴지 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "축월절을 위한 **새로운 사업 아이디어**를 내야 한다고도 한다."
+       "t": "음식을 준비하는 현지인들을 보면 자신도 해 보고 싶어지며, 스네즈나야 음식과 구운 파이 같은 것이 잘 팔릴지 묻는다."
       },
       {
-       "t_raw": "Vibrant Harriers Aloft in Spring Breeze에서는 연의 여러 스타일에 놀라면서 다양성과 새로움이 상인의 큰 사랑이라고 밝힌다.",
+       "t_raw": "Moonchase Festival을 위해 새 사업 아이디어를 떠올려야 한다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "오색 연과 봄바람에서는 연의 여러 스타일에 놀라면서 다양성과 새로움이 상인의 큰 사랑이라고 밝힌다."
+       "t": "축월절을 위해 새 사업 아이디어를 떠올려야 한다고 말한다."
       },
       {
-       "t_raw": "이어 그런 스타일을 다른 상품과 수입하는 Fontainian machines에 활용해 유망한 새 시장을 만들 수 있을지 본다.",
-       "interp": false,
+       "t_raw": "현지 음식 준비의 활기를 본 그가 Snezhnaya 음식과 구운 파이를 후보로 삼은 것은 축제의 분위기를 자기 장사로 옮겨 보려는 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "이어 그런 스타일을 다른 상품과 수입하는 Fontainian 기계에 활용해 유망한 새 시장을 만들 수 있을지 본다.",
-       "polish": {
-        "from": "이어 그런 스타일을 다른 상품과 수입하는 Fontainian machines에 활용해 유망한 새 시장을 만들 수 있을지 본다.",
-        "text": "이어 그런 스타일을 다른 상품과 수입하는 Fontainian 기계에 활용해 유망한 새 시장을 만들 수 있을지 본다.",
-        "by": "or-ds"
-       }
+       "t": "현지 음식 준비의 활기를 본 그가 스네즈나야 음식과 구운 파이를 후보로 삼은 것은 축제의 분위기를 자기 장사로 옮겨 보려는 셈이다."
       }
      ],
      "sources": [
@@ -704,7 +810,37 @@
        "section": "Idle Quotes",
        "paragraph": "A12",
        "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 해등절과 축월절",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 연과 새 시장",
+     "status": "accepted",
+     "note": "All sentences match A52-A54.",
+     "quote": "Variety and novelty are a merchant's great loves, after all!",
+     "sentences": [
+      {
+       "t_raw": "Vibrant Harriers Aloft in Spring Breeze의 대사에서 Ivanovich는 연이 이렇게 많은 **양식**으로 나오는 줄 몰랐다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오색 연과 봄바람의 대사에서 이바노비치는 연이 이렇게 많은 **양식**으로 나오는 줄 몰랐다고 말한다."
       },
+      {
+       "t_raw": "그는 그 말에 다른 뜻은 없다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 그 말에 다른 뜻은 없다고 덧붙인다."
+      },
+      {
+       "t_raw": "이어 상인에게 **다양성과 새로움**은 큰 즐거움이라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 상인에게 **다양성과 새로움**은 큰 즐거움이라고 밝힌다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Ivanovich",
@@ -718,7 +854,72 @@
        "page": "Ivanovich",
        "revision": 1491521,
        "section": "Event Dialogue > Vibrant Harriers Aloft in Spring Breeze",
+       "paragraph": "A53",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Event Dialogue > Vibrant Harriers Aloft in Spring Breeze",
        "paragraph": "A54",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 연과 새 시장",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 연과 새 시장",
+     "status": "accepted",
+     "note": "Facts match A19 and A55. The interpretation follows from them.",
+     "quote": "Yes, that could be a promising new market.",
+     "sentences": [
+      {
+       "t_raw": "그는 연의 양식이 많다는 감탄을 입에 올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 연의 양식이 많다는 감탄을 입에 올린다."
+      },
+      {
+       "t_raw": "그는 이런 양식을 다른 상품에도 쓸 수 있지 않을까 생각한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 이런 양식을 다른 상품에도 쓸 수 있지 않을까 생각한다."
+      },
+      {
+       "t_raw": "이어 수입 중인 Fontainian machines를 떠올리며 그것이 **새 시장**이 될 수 있겠다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 수입 중인 폰타인 기계를 떠올리며 그것이 **새 시장**이 될 수 있겠다고 본다.",
+       "polish": {
+        "from": "이어 수입 중인 Fontainian machines를 떠올리며 그것이 **새 시장**이 될 수 있겠다고 본다.",
+        "text": "이어 수입 중인 폰타인 기계를 떠올리며 그것이 **새 시장**이 될 수 있겠다고 본다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "연에서 얻은 착상이 수입품과 맞물려 새 장사 구상으로 이어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "연에서 얻은 착상이 수입품과 맞물려 새 장사 구상으로 이어지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Idle Quotes",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Idle Quotes",
+       "paragraph": "A19",
        "wiki_refs": []
       },
       {
@@ -730,78 +931,32 @@
        "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 의례와 축제",
-     "latin_left": [
-      "Fontainian"
-     ]
-    },
-    {
-     "section": "작중 행적 — 사업 제안과 법",
-     "status": "accepted",
-     "note": "Supported by Q7 and Q17.",
-     "quote": "a wonderful, mysterious, never-before-seen, surefire-profit of a business proposition?",
-     "sentences": [
-      {
-       "t_raw": "Traveler를 만난 Ivanovich는 마침 잘 왔다며 무언가를 권하기 시작한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자를 만난 이바노비치는 마침 잘 왔다며 무언가를 권하기 시작한다."
-      },
-      {
-       "t_raw": "그는 그것을 wonderful, mysterious, never-before-seen, **surefire-profit**한 사업 제안이라고 부른다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 그것을 wonderful, mysterious, never-before-seen, **surefire-profit**한 사업 제안이라고 부른다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Unlimited Opportunity",
-       "quest_ko": "대박날 기회",
-       "version": "1.1",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Unlimited Opportunity",
-       "quest_ko": "대박날 기회",
-       "version": "1.1",
-       "speaker": "Ivanovich"
-      }
-     ],
-     "heading": "작중 행적 — 사업 제안과 법",
+     "heading": "작중 행적 — 연과 새 시장",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 사업 제안과 법",
+     "section": "능력과 처세",
      "status": "accepted",
-     "note": "Supported by Q20, Q12 and Q22. The interpretation in (3) follows from them.",
+     "note": "Facts match Q7, Q12, Q17 and Q22. The interpretation is reasonable and hedged.",
      "quote": "Um, honestly, Liyue's laws are very well written indeed. One can hardly find a single loophole in them.",
      "sentences": [
       {
-       "t_raw": "Ivanovich는 잠시 생각할 시간을 달라고 한다.",
+       "t_raw": "그는 Liyue의 법이 매우 잘 쓰여 허점을 거의 찾기 어렵다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "이바노비치는 잠시 생각할 시간을 달라고 한다."
+       "t": "그는 리월의 법이 매우 잘 쓰여 허점을 거의 찾기 어렵다고 말한다."
       },
       {
-       "t_raw": "Liyue의 법은 매우 잘 쓰여 있어 **빈틈**을 하나 찾기 힘들다고 말한다.",
+       "t_raw": "사업 제안을 꺼낼 때는 '멋지고, 신비롭고, 전에 없던, 확실한 이익이 보이는' 제안이라며 말끝을 흐리고, 이윤을 꽤 남길 수 있다고 보면서도 문제가 하나 있다고 덧붙인다.",
        "interp": false,
        "dropped": false,
-       "t": "리월의 법은 매우 잘 쓰여 있어 **빈틈**을 하나 찾기 힘들다고 말한다."
+       "t": "사업 제안을 꺼낼 때는 '멋지고, 신비롭고, 전에 없던, 확실한 이익이 보이는' 제안이라며 말끝을 흐리고, 이윤을 꽤 남길 수 있다고 보면서도 문제가 하나 있다고 덧붙인다."
       },
       {
-       "t_raw": "그러면서도 그 제안은 나쁘지 않아 꽤 많은 돈을 벌 수 있겠지만, 문제가 하나 있다고 덧붙인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러면서도 그 제안은 나쁘지 않아 꽤 많은 돈을 벌 수 있겠지만, 문제가 하나 있다고 덧붙인다."
-      },
-      {
-       "t_raw": "법의 빈틈이 거의 없다는 인정과 이익 계산이 함께 나타나, 그는 제안의 수익성과 법적 제약을 함께 저울질하는 상인으로 보인다.",
+       "t_raw": "이는 **법의 허점**을 살피는 신중함과 이익 계산이 함께 드러나는 대목으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "법의 빈틈이 거의 없다는 인정과 이익 계산이 함께 나타나, 그는 제안의 수익성과 법적 제약을 함께 저울질하는 상인으로 보인다."
+       "t": "이는 **법의 허점**을 살피는 신중함과 이익 계산이 함께 드러나는 대목으로 보인다."
       }
      ],
      "sources": [
@@ -812,6 +967,62 @@
        "version": "1.1",
        "speaker": "Ivanovich"
       },
+      {
+       "kind": "quest",
+       "quest": "Unlimited Opportunity",
+       "quest_ko": "대박날 기회",
+       "version": "1.1",
+       "speaker": "Ivanovich"
+      },
+      {
+       "kind": "quest",
+       "quest": "Unlimited Opportunity",
+       "quest_ko": "대박날 기회",
+       "version": "1.1",
+       "speaker": "Ivanovich"
+      },
+      {
+       "kind": "quest",
+       "quest": "Unlimited Opportunity",
+       "quest_ko": "대박날 기회",
+       "version": "1.1",
+       "speaker": "Ivanovich"
+      }
+     ],
+     "heading": "능력과 처세",
+     "latin_left": []
+    },
+    {
+     "section": "능력과 처세",
+     "status": "accepted",
+     "note": "Matches Q23 and Q20. The interpretation is hedged.",
+     "quote": "If you want to put it another way, if I stay calm while everyone else panics, aren't I ahead of the curve, then?",
+     "sentences": [
+      {
+       "t_raw": "모두가 당황하는 상황에서 그는 자신이 침착하면 **앞서가는 셈**이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모두가 당황하는 상황에서 그는 자신이 침착하면 **앞서가는 셈**이라고 말한다."
+      },
+      {
+       "t_raw": "그는 'Wha— Ah, no, no, no'라며 생각할 시간을 달라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 'Wha— Ah, no, no, no'라며 생각할 시간을 달라고 한다.",
+       "polish": {
+        "from": "그는 'Wha— Ah, no, no, no'라며 생각할 시간을 달라고 한다.",
+        "text": "그는 'Wha— Ah, no, no, no'라며 생각할 시간을 달라고 한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "침착을 내세우는 말과 달리 실제 반응에서는 한 박자 멈추는 모습이 함께 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "침착을 내세우는 말과 달리 실제 반응에서는 한 박자 멈추는 모습이 함께 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "quest",
        "quest": "Calm Before the Storm (Story Quest)",
@@ -821,56 +1032,41 @@
       },
       {
        "kind": "quest",
-       "quest": "Unlimited Opportunity",
-       "quest_ko": "대박날 기회",
-       "version": "1.1",
+       "quest": "A Quiet Day in Liyue Harbor",
+       "quest_ko": "리월항의 평화로운 하루",
+       "version": "1.0",
        "speaker": "Ivanovich"
       }
      ],
-     "heading": "작중 행적 — 사업 제안과 법",
-     "latin_left": []
+     "heading": "능력과 처세",
+     "latin_left": [
+      "Wha",
+      "Ah"
+     ]
     },
     {
-     "section": "인간관계",
+     "section": "능력과 처세",
      "status": "accepted",
-     "note": "Supported by Q7, Q11, Q21, Q24, Q25 and Q26.",
-     "quote": "Traveler, could you please help me check the Bulletin Board and see if there's any news on the new business permits?",
+     "note": "Matches Q2 and Q7. The interpretation is framed as a reading, not a fact.",
+     "quote": "Well, of course it is. Why, even the guards are from Snezhnaya. So... Wait, what? What were you even thinking about?",
      "sentences": [
       {
-       "t_raw": "Traveler를 보면 Ivanovich는 때가 좋다며 무언가를 권하려 한다.",
+       "t_raw": "Snezhnaya 경비병 이야기를 하다가 '그래서...'에서 멈추고 상대에게 무엇을 생각했느냐고 되묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자를 보면 이바노비치는 때가 좋다며 무언가를 권하려 한다."
+       "t": "스네즈나야 경비병 이야기를 하다가 '그래서...'에서 멈추고 상대에게 무엇을 생각했느냐고 되묻는다."
       },
       {
-       "t_raw": "**새 영업 허가** 소식이 있는지 게시판을 확인해 달라고 부탁한다.",
+       "t_raw": "사업 제안에서도 '...라고 부르자'며 이름을 미룬다.",
        "interp": false,
        "dropped": false,
-       "t": "**새 영업 허가** 소식이 있는지 게시판을 확인해 달라고 부탁한다."
+       "t": "사업 제안에서도 '...라고 부르자'며 이름을 미룬다."
       },
       {
-       "t_raw": "고맙다며 자신이 몹시 지쳤다고 말한다.",
-       "interp": false,
+       "t_raw": "이런 화법은 말을 곧바로 끝맺지 않고 상대의 반응을 살피는 **신중함**으로 읽힌다.",
+       "interp": true,
        "dropped": false,
-       "t": "고맙다며 자신이 몹시 지쳤다고 말한다."
-      },
-      {
-       "t_raw": "Rite of Descension에서는 Traveler의 소원을 가로막지 말았어야 했다며 사과하고 무언가를 받으라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "청신에서는 여행자의 소원을 가로막지 말았어야 했다며 사과하고 무언가를 받으라고 한다."
-      },
-      {
-       "t_raw": "Paimon은 Ivanovich가 신청하려는 새 영업 허가일 것이라며 절차를 베껴 두자고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 이바노비치가 신청하려는 새 영업 허가일 것이라며 절차를 베껴 두자고 한다."
-      },
-      {
-       "t_raw": "Paimon은 Ivanovich에게 할 일이 있고, 걱정할 시간이 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 이바노비치에게 할 일이 있고, 걱정할 시간이 없다고 말한다."
+       "t": "이런 화법은 말을 곧바로 끝맺지 않고 상대의 반응을 살피는 **신중함**으로 읽힌다."
       }
      ],
      "sources": [
@@ -883,96 +1079,35 @@
       },
       {
        "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
+       "quest": "Unlimited Opportunity",
+       "quest_ko": "대박날 기회",
        "version": "1.1",
        "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
-       "version": "1.1",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Rite of Descension",
-       "quest_ko": "청신",
-       "version": "1.0",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
-       "version": "1.1",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
-       "version": "1.1",
-       "speaker": "Paimon"
       }
      ],
-     "heading": "인간관계",
+     "heading": "능력과 처세",
      "latin_left": []
     },
     {
      "section": "인간관계",
      "status": "accepted",
-     "note": "All four sentences match Q6, Q28, Q27 and Q13.",
+     "note": "Matches Q13. The interpretation follows from it.",
      "quote": "I still need to man the store here, so could you help me ask Mr. Bolai if he has Cor Lapis that I could take off his hands?",
      "sentences": [
       {
-       "t_raw": "Clerk Zhao는 Ivanovich에게 새 영업 허가를 신청해야 한다고 말하고 추가 공지를 기다리라고 했다고 Ivanovich가 전한다.",
+       "t_raw": "Ivanovich는 가게를 지켜야 하니 Traveler에게 **Mr. Bolai**가 넘겨줄 만한 Cor Lapis가 있는지 물어봐 달라고 부탁한다.",
        "interp": false,
        "dropped": false,
-       "t": "소소는 이바노비치에게 새 영업 허가를 신청해야 한다고 말하고 추가 공지를 기다리라고 했다고 이바노비치가 전한다."
+       "t": "이바노비치는 가게를 지켜야 하니 여행자에게 **Mr. 박래**가 넘겨줄 만한 콜 라피스가 있는지 물어봐 달라고 부탁한다."
       },
       {
-       "t_raw": "Clerk Zhao는 Ivanovich에게 연락할 사람을 보내겠다고 한다.",
-       "interp": false,
+       "t_raw": "그의 Cor Lapis 확보는 가게를 지키는 일과 충돌하지 않도록 Traveler를 거쳐 이루어지는 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "소소는 이바노비치에게 연락할 사람을 보내겠다고 한다."
-      },
-      {
-       "t_raw": "Nervous An은 Ivanovich를 기억하며 그가 몇 번 왔다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "소안은 이바노비치를 기억하며 그가 몇 번 왔다고 말한다."
-      },
-      {
-       "t_raw": "Ivanovich는 가게를 지켜야 해서 Traveler에게 Mr. Bolai에게 Cor Lapis가 있으면 넘겨받을 수 있는지 물어봐 달라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이바노비치는 가게를 지켜야 해서 여행자에게 Mr. 박래에게 콜 라피스가 있으면 넘겨받을 수 있는지 물어봐 달라고 한다."
+       "t": "그의 콜 라피스 확보는 가게를 지키는 일과 충돌하지 않도록 여행자를 거쳐 이루어지는 셈이다."
       }
      ],
      "sources": [
-      {
-       "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
-       "version": "1.1",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
-       "version": "1.1",
-       "speaker": "Clerk Zhao"
-      },
-      {
-       "kind": "quest",
-       "quest": "Necessary Procedures",
-       "quest_ko": "필수 절차",
-       "version": "1.1",
-       "speaker": "Nervous An"
-      },
       {
        "kind": "quest",
        "quest": "A Quiet Day in Liyue Harbor",
@@ -989,26 +1124,26 @@
     {
      "section": "인간관계",
      "status": "accepted",
-     "note": "Both facts are in Q1 and Q8. The interpretation is reasonable.",
-     "quote": "I thought the city might be in a mess for a while longer, but order was restored very quickly. The Liyue Qixing are quite something, indeed.",
+     "note": "All sentences are supported by Q27 and Q28.",
+     "quote": "Ivanovich? Oh, yes, I remember him. He's been here a few times.",
      "sentences": [
       {
-       "t_raw": "Ivanovich는 Liyue Harbor의 질서가 매우 빨리 회복된 것을 두고 Liyue Qixing이 대단하다고 말한다.",
+       "t_raw": "**Nervous An**은 Ivanovich를 기억하며 그가 이곳에 몇 번 왔다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "이바노비치는 리월항의 질서가 매우 빨리 회복된 것을 두고 리월 칠성이 대단하다고 말한다."
+       "t": "**소안**은 이바노비치를 기억하며 그가 이곳에 몇 번 왔다고 말한다."
       },
       {
-       "t_raw": "Snezhnayan 상품을 대는 공급자와 가끔 Cor Lapis를 사 가는 이들은 매우 불안해한다.",
+       "t_raw": "**Clerk Zhao**는 Ivanovich에게 연락할 사람을 보내겠다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "스네즈나야 상품을 대는 공급자와 가끔 콜 라피스를 사 가는 이들은 매우 불안해한다."
+       "t": "**소소**는 이바노비치에게 연락할 사람을 보내겠다고 한다."
       },
       {
-       "t_raw": "**Liyue Qixing에 대한 감탄과 공급자·구매자의 불안**이 Ivanovich 주변에서 갈리는 셈이다.",
+       "t_raw": "한쪽에서는 되풀이된 방문으로 얼굴이 알려져 있고, 다른 쪽에서는 담당자가 연락을 잡는 관계로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "**리월 칠성에 대한 감탄과 공급자·구매자의 불안**이 이바노비치 주변에서 갈리는 셈이다."
+       "t": "한쪽에서는 되풀이된 방문으로 얼굴이 알려져 있고, 다른 쪽에서는 담당자가 연락을 잡는 관계로 보인다."
       }
      ],
      "sources": [
@@ -1017,14 +1152,14 @@
        "quest": "Necessary Procedures",
        "quest_ko": "필수 절차",
        "version": "1.1",
-       "speaker": "Ivanovich"
+       "speaker": "Nervous An"
       },
       {
        "kind": "quest",
-       "quest": "A Quiet Day in Liyue Harbor",
-       "quest_ko": "리월항의 평화로운 하루",
-       "version": "1.0",
-       "speaker": "Ivanovich"
+       "quest": "Necessary Procedures",
+       "quest_ko": "필수 절차",
+       "version": "1.1",
+       "speaker": "Clerk Zhao"
       }
      ],
      "heading": "인간관계",
@@ -1033,38 +1168,39 @@
     {
      "section": "떡밥과 수수께끼",
      "status": "accepted",
-     "note": "Supported by A32-A35. 'Back home' is reasonably read as Snezhnaya. The interpretation is hedged ('may not be unrelated').",
-     "quote": "I'm wearing plenty of layers, but somehow I'm so cold that I can't stop shivering. Let me see what's going on...",
+     "note": "The English never says the stone is cold. It also never says the pocket stone is the Shivada Jade Fragment. Sentence 4 adds the cold detail and links the two without support.",
+     "quote": "Hmm? Piqued your curiosity, has it? Well, it's not classed as ore, and I certainly can't sell it here... So, I may as well let you have it.",
      "sentences": [
       {
-       "t_raw": "Liyue Harbor에서 Ivanovich를 만난 Traveler는 이곳이 유독 춥다고 묻는다.",
+       "t_raw": "Ivanovich는 상대도 같은지 되묻고, 자신만 추운 게 아니라는 반응을 보인다.",
        "interp": false,
        "dropped": false,
-       "t": "리월항에서 이바노비치를 만난 여행자는 이곳이 유독 춥다고 묻는다."
+       "t": "이바노비치는 상대도 같은지 되묻고, 자신만 추운 게 아니라는 반응을 보인다."
       },
       {
-       "t_raw": "Ivanovich도 같은 추위를 느끼며, 옷을 여러 겹 껴입었는데도 몸이 떨려 멈추지 않는다고 말한다.",
+       "t_raw": "옷을 여러 겹 입었는데도 떨릴 만큼 춥다며 주머니를 살피던 그는 그 안에서 돌을 발견한다.",
        "interp": false,
        "dropped": false,
-       "t": "이바노비치도 같은 추위를 느끼며, 옷을 여러 겹 껴입었는데도 몸이 떨려 멈추지 않는다고 말한다."
+       "t": "옷을 여러 겹 입었는데도 떨릴 만큼 춥다며 주머니를 살피던 그는 그 안에서 돌을 발견한다."
       },
       {
-       "t_raw": "그러고는 주머니를 살펴보고, 그 안에 있던 돌을 발견한다.",
+       "t_raw": "돌은 고향에 있던 시절 주머니에 들어간 듯하고, 광석으로 분류되지 않아 여기서 팔 수 없다는 말과 함께 넘겨진다.",
        "interp": false,
        "dropped": false,
-       "t": "그러고는 주머니를 살펴보고, 그 안에 있던 돌을 발견한다."
+       "t": "돌은 고향에 있던 시절 주머니에 들어간 듯하고, 광석으로 분류되지 않아 여기서 팔 수 없다는 말과 함께 넘겨진다."
       },
       {
-       "t_raw": "그는 그 돌이 Snezhnaya에 있던 때 어딘가로 들어간 것 같다고 말한다.",
+       "t_raw": "돌을 넘겨받은 뒤 획득이 이루어지고, 특정 대화 분기를 처음 따라가면 Shivada Jade Fragment 하나를 얻는다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 그 돌이 스네즈나야에 있던 때 어딘가로 들어간 것 같다고 말한다."
+       "t": "돌을 넘겨받은 뒤 획득이 이루어지고, 특정 대화 분기를 처음 따라가면 서늘한 빙옥 조각 하나를 얻는다."
       },
       {
-       "t_raw": "차가움을 호소하던 끝에 주머니 속 돌이 발견된 흐름은, 그 돌이 추위와 무관하지 않을 수 있다는 여지를 남긴다.",
+       "t_raw": "주머니에서 돌이 나온 뒤 대화가 이어지고, 그 분기를 처음 진행하면 Shivada Jade Fragment를 얻는다는 점에서, 이 장면은 보상으로 이어지는 대화 흐름으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "차가움을 호소하던 끝에 주머니 속 돌이 발견된 흐름은, 그 돌이 추위와 무관하지 않을 수 있다는 여지를 남긴다."
+       "repaired": true,
+       "t": "주머니에서 돌이 나온 뒤 대화가 이어지고, 그 분기를 처음 진행하면 서늘한 빙옥 조각을 얻는다는 점에서, 이 장면은 보상으로 이어지는 대화 흐름으로 보인다."
       }
      ],
      "sources": [
@@ -1072,8 +1208,8 @@
        "kind": "wiki",
        "page": "Ivanovich",
        "revision": 1491521,
-       "section": "Dialogue",
-       "paragraph": "A32",
+       "section": null,
+       "paragraph": "A2",
        "wiki_refs": []
       },
       {
@@ -1090,58 +1226,6 @@
        "revision": 1491521,
        "section": "Dialogue",
        "paragraph": "A34",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Ivanovich",
-       "revision": 1491521,
-       "section": "Dialogue",
-       "paragraph": "A35",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "trimmed",
-     "note": "Sentence 3 calls the stone 'cold' and implies it is linked to the Shivada Jade Fragment. The English never says the stone is cold, and the reward item is blank ('Obtain '). The sentence states an unsupported detail as if it were given.",
-     "quote": "Well, it's not classed as ore, and I certainly can't sell it here... So, I may as well let you have it.",
-     "sentences": [
-      {
-       "t_raw": "그 돌은 광석으로 분류되지 않고, Ivanovich는 Liyue에서 그것을 팔 수도 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 돌은 광석으로 분류되지 않고, 이바노비치는 리월에서 그것을 팔 수도 없다고 말한다."
-      },
-      {
-       "t_raw": "그래서 그는 Traveler에게 돌을 넘긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그래서 그는 여행자에게 돌을 넘긴다."
-      },
-      {
-       "t_raw": "이 대화의 특정 분기를 처음 거치면 Shivada Jade Fragment 하나를 얻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이 대화의 특정 분기를 처음 거치면 서늘한 빙옥 조각 하나를 얻는다."
-      },
-      {
-       "t_raw": "팔 수 없는 돌이 보상으로 이어지는 대화 분기는, 주머니 속 차가운 돌과 Shivada Jade Fragment 사이에 작은 미스터리를 남기는 셈이다.",
-       "interp": true,
-       "dropped": true,
-       "t": "팔 수 없는 돌이 보상으로 이어지는 대화 분기는, 주머니 속 차가운 돌과 서늘한 빙옥 조각 사이에 작은 미스터리를 남기는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ivanovich",
-       "revision": 1491521,
-       "section": null,
-       "paragraph": "A2",
        "wiki_refs": []
       },
       {
@@ -1173,22 +1257,79 @@
      "latin_left": []
     },
     {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A3 and A26.",
+     "quote": "Ivanovich considers himself a distributor, selling everyday items produced in Snezhnaya. He also procures Cor Lapis to send back to Snezhnaya for their yet-unknown purpose in their factories.",
+     "sentences": [
+      {
+       "t_raw": "Ivanovich는 Snezhnaya 생활용품을 유통하면서 Cor Lapis 중개도 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이바노비치는 스네즈나야 생활용품을 유통하면서 콜 라피스 중개도 맡는다."
+      },
+      {
+       "t_raw": "그 Cor Lapis는 Snezhnaya 공장으로 보내지지만, 공장에서의 용도는 아직 알려지지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 콜 라피스는 스네즈나야 공장으로 보내지지만, 공장에서의 용도는 아직 알려지지 않았다."
+      },
+      {
+       "t_raw": "생활용품 유통과 Cor Lapis 중개가 한 사람에게 겹쳐 있는 만큼, 그의 장사는 Snezhnaya 생활용품 판매와 공장향 Cor Lapis 거래를 함께 잇는 구조로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "생활용품 유통과 콜 라피스 중개가 한 사람에게 겹쳐 있는 만큼, 그의 장사는 스네즈나야 생활용품 판매와 공장향 콜 라피스 거래를 함께 잇는 구조로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Dialogue",
+       "paragraph": "A26",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
      "section": "여담",
      "status": "accepted",
-     "note": "Supported by the idle quotes A5 and A6.",
+     "note": "Supported by A5 and A6.",
      "quote": "I should open a store here.",
      "sentences": [
       {
-       "t_raw": "Ivanovich는 대기 중에 **가게를 여는 것**을 입에 올린다.",
+       "t_raw": "대기 대사로 'Open a store here...'와 'I should open a store here.'가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "이바노비치는 대기 중에 **가게를 여는 것**을 입에 올린다."
+       "t": "대기 대사로 'Open a store here...'와 'I should open a store here.'가 있다.",
+       "polish": {
+        "from": "대기 대사로 'Open a store here...'와 'I should open a store here.'가 있다.",
+        "text": "대기 대사로 'Open a store here...'와 'I should open a store here.'가 있다.",
+        "by": "glm-flash"
+       }
       },
       {
-       "t_raw": "이곳에 가게를 열어야겠다는 말을 남긴다.",
+       "t_raw": "두 대사는 모두 매장을 여는 일을 입에 올린다.",
        "interp": false,
        "dropped": false,
-       "t": "이곳에 가게를 열어야겠다는 말을 남긴다."
+       "t": "두 대사는 모두 매장을 여는 일을 입에 올린다."
+      },
+      {
+       "t_raw": "가게를 열고 싶은 마음이 드러난 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가게를 열고 싶은 마음이 드러난 것으로 보인다."
       }
      ],
      "sources": [
@@ -1210,40 +1351,118 @@
       }
      ],
      "heading": "여담",
-     "latin_left": []
+     "latin_left": [
+      "Open"
+     ]
     },
     {
      "section": "여담",
-     "status": "trimmed",
-     "note": "Sentence 0 says Ivanovich gives a short farewell. 'See you.' (A38) is the player's dialogue option, not his line. His reply is 'Take care...' (A39).",
-     "quote": "Take care. Hope to see you again when we are fully stocked.",
+     "status": "accepted",
+     "note": "Supported by A15, A9 and A8.",
+     "quote": "The bright Xiao Lanterns...",
      "sentences": [
       {
-       "t_raw": "그는 짧게 작별 인사를 한다.",
-       "interp": false,
-       "dropped": true,
-       "t": "그는 짧게 작별 인사를 한다."
-      },
-      {
-       "t_raw": "이어서 잘 지내라고 말하며 **재고가 가득 찬 뒤** 다시 만나기를 바란다.",
+       "t_raw": "대기 대사로 'The bright Xiao Lanterns...'가 있고, Xiao Lanterns가 매우 따뜻하다는 말도 나온다.",
        "interp": false,
        "dropped": false,
-       "t": "이어서 잘 지내라고 말하며 **재고가 가득 찬 뒤** 다시 만나기를 바란다."
+       "t": "대기 대사로 'The bright Xiao Lanterns...'가 있고, Xiao Lanterns가 매우 따뜻하다는 말도 나온다.",
+       "polish": {
+        "from": "대기 대사로 'The bright Xiao Lanterns...'가 있고, Xiao Lanterns가 매우 따뜻하다는 말도 나온다.",
+        "text": "대기 대사로 'The bright Xiao Lanterns...'가 있고, Xiao Lanterns가 매우 따뜻하다는 말도 나온다.",
+        "by": "glm-flash"
+       }
       },
       {
-       "t_raw": "손님이 다가오면 Snezhnayan 상품을 사러 온 줄 알았다는 말도 한다.",
+       "t_raw": "또 Snezhnaya에서 잘 팔릴 것이라고 본다.",
        "interp": false,
        "dropped": false,
-       "t": "손님이 다가오면 스네즈나야 상품을 사러 온 줄 알았다는 말도 한다."
+       "t": "또 스네즈나야에서 잘 팔릴 것이라고 본다."
       },
       {
-       "t_raw": "그의 말에는 상품 구매와 재고에 대한 관심이 함께 드러난다고 볼 수 있다.",
+       "t_raw": "Xiao Lanterns의 따뜻함에 대한 감상과 Snezhnaya에서의 판매 가능성이 이어지는 것으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "그의 말에는 상품 구매와 재고에 대한 관심이 함께 드러난다고 볼 수 있다."
+       "t": "Xiao Lanterns의 따뜻함에 대한 감상과 스네즈나야에서의 판매 가능성이 이어지는 것으로 보인다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Idle Quotes",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Idle Quotes",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Idle Quotes",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "The",
+      "Xiao Lanterns",
+      "Xiao Lanterns",
+      "Xiao Lanterns"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A38, A39 and A4.",
+     "quote": "Take care. Hope to see you again when we are fully stocked.",
+     "sentences": [
+      {
+       "t_raw": "작별 인사로 'See you.'라고 하거나 'Take care. Hope to see you again when we are fully stocked.'라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작별 인사로 'See you.'라고 하거나 'Take care. Hope to see you again when we are fully stocked.'라고 한다.",
+       "polish": {
+        "from": "작별 인사로 'See you.'라고 하거나 'Take care. Hope to see you again when we are fully stocked.'라고 한다.",
+        "text": "작별 인사로 'See you.'라고 하거나 'Take care. Hope to see you again when we are fully stocked.'라고 한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "재고가 채워졌을 때 다시 보자는 말이 덧붙는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "재고가 채워졌을 때 다시 보자는 말이 덧붙는다."
+      },
+      {
+       "t_raw": "외형 항목은 아직 'To be added.'로 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "외형 항목은 아직 'To be added.'로 남아 있다.",
+       "polish": {
+        "from": "외형 항목은 아직 'To be added.'로 남아 있다.",
+        "text": "외형 항목은 아직 'To be added.'로 남아 있다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ivanovich",
+       "revision": 1491521,
+       "section": "Profile > Appearance",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Ivanovich",
@@ -1259,76 +1478,40 @@
        "section": "Dialogue",
        "paragraph": "A39",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Calm Before the Storm (Story Quest)",
-       "quest_ko": "폭풍 전야",
-       "version": "1.0",
-       "speaker": "Ivanovich"
       }
      ],
      "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Oh yeah, not sure if you knew, but most of the adepti appear in the form of various beasts.",
-     "sentences": [
-      {
-       "t_raw": "Traveler에게 Liyue에 처음 왔느냐고 묻고는, 자신도 Rite of Descension은 처음 본다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자에게 리월에 처음 왔느냐고 묻고는, 자신도 청신은 처음 본다고 말한다."
-      },
-      {
-       "t_raw": "Liyue에서 통제권을 지닌 이들만이 그 의례를 주재할 수 있다고 덧붙인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "리월에서 통제권을 지닌 이들만이 그 의례를 주재할 수 있다고 덧붙인다."
-      },
-      {
-       "t_raw": "대부분의 adepti가 **여러 짐승의 모습**으로 나타난다는 이야기도 꺼낸다.",
-       "interp": false,
-       "dropped": false,
-       "t": "대부분의 adepti가 **여러 짐승의 모습**으로 나타난다는 이야기도 꺼낸다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Rite of Descension",
-       "quest_ko": "청신",
-       "version": "1.0",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Rite of Descension",
-       "quest_ko": "청신",
-       "version": "1.0",
-       "speaker": "Ivanovich"
-      },
-      {
-       "kind": "quest",
-       "quest": "Rite of Descension",
-       "quest_ko": "청신",
-       "version": "1.0",
-       "speaker": "Ivanovich"
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
+     "latin_left": [
+      "See",
+      "Take",
+      "Hope",
+      "To"
+     ]
     }
    ],
    "quote_boxes": [
     {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "좋은 하루입니다, 친구! 죄송하지만 지금은 재고가 없습니다. 다음에 다시 와 주세요.",
+     "en": "Good day, my friend! My apologies, but I am out of stock at the moment. Please try again next time.",
+     "speaker": "Ivanovich",
+     "source": {
+      "kind": "quest",
+      "quest": "Calm Before the Storm (Story Quest)",
+      "quest_ko": "폭풍 전야",
+      "version": "1.0",
+      "speaker": "Ivanovich"
+     },
+     "t": "좋은 하루입니다, 친구! 죄송하지만 지금은 재고가 없습니다. 다음에 다시 와 주세요.",
+     "speaker_ko": "이바노비치"
+    },
+    {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아니요, 그건 아직 있습니다. 다만 전부 Snezhnaya의 공장으로 보냅니다. 저는 소매는 하지 않습니다.",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "아니요, 그건 아직 가지고 있습니다. 다만 전부 Snezhnaya의 공장으로 보냅니다. 저는 소매는 하지 않습니다.",
      "en": "No, that I still have, although I ship it all to factories in Snezhnaya. I don't do retail.",
      "speaker": "Ivanovich",
      "source": {
@@ -1338,15 +1521,15 @@
       "version": "1.0",
       "speaker": "Ivanovich"
      },
-     "t": "아니요, 그건 아직 있습니다. 다만 전부 스네즈나야의 공장으로 보냅니다. 저는 소매는 하지 않습니다.",
+     "t": "아니요, 그건 아직 가지고 있습니다. 다만 전부 스네즈나야의 공장으로 보냅니다. 저는 소매는 하지 않습니다.",
      "speaker_ko": "이바노비치"
     },
     {
-     "section": "작중 행적 — Liyue Harbor의 혼란과 상업 절차",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그런데 Clerk Zhao가 새 영업 허가도 신청해야 한다고 말했고, 추가 공지가 있으면 계속 지켜보라고 했다.",
-     "en": "But Clerk Zhao said that I also need to apply for a new business permit, and told me to stay tuned for any more announcements.",
+     "section": "작중 행적 — Rite of Descension과 Liyue Harbor의 격변",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "나는 도시가 한동안 더 혼란스러울 줄 알았는데, 질서가 아주 빠르게 회복되었다. Liyue Qixing은 정말 대단하다.",
+     "en": "I thought the city might be in a mess for a while longer, but order was restored very quickly. The Liyue Qixing are quite something, indeed.",
      "speaker": "Ivanovich",
      "source": {
       "kind": "quest",
@@ -1355,31 +1538,14 @@
       "version": "1.1",
       "speaker": "Ivanovich"
      },
-     "t": "그런데 소소가 새 영업 허가도 신청해야 한다고 말했고, 추가 공지가 있으면 계속 지켜보라고 했다.",
+     "t": "나는 도시가 한동안 더 혼란스러울 줄 알았는데, 질서가 아주 빠르게 회복되었다. 리월 칠성은 정말 대단하다.",
      "speaker_ko": "이바노비치"
     },
     {
-     "section": "작중 행적 — 의례와 축제",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "외부인에게도 의식과 의례의 장엄함과 엄숙함은 깊은 인상을 남긴다.",
-     "en": "Even for outsiders, the grandeur and solemnity of the proceedings and ceremony leave a deep impression.",
-     "speaker": "Ivanovich",
-     "source": {
-      "kind": "quest",
-      "quest": "Rite of Descension",
-      "quest_ko": "청신",
-      "version": "1.0",
-      "speaker": "Ivanovich"
-     },
-     "t": "외부인에게도 의식과 의례의 장엄함과 엄숙함은 깊은 인상을 남긴다.",
-     "speaker_ko": "이바노비치"
-    },
-    {
-     "section": "작중 행적 — 사업 제안과 법",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "음, 솔직히 Liyue의 법은 정말 잘 쓰여 있군요. 그 안에서 단 하나의 빈틈을 찾기도 거의 힘듭니다.",
+     "section": "능력과 처세",
+     "status": "accepted",
+     "note": "Faithful translation; wording is a bit awkward but the meaning is preserved.",
+     "t_raw": "음, 솔직히 말해서, Liyue의 법은 정말 잘 쓰였다. 그 안에서 단 하나의 허점도 찾기란 거의 어렵다.",
      "en": "Um, honestly, Liyue's laws are very well written indeed. One can hardly find a single loophole in them.",
      "speaker": "Ivanovich",
      "source": {
@@ -1389,41 +1555,41 @@
       "version": "1.1",
       "speaker": "Ivanovich"
      },
-     "t": "음, 솔직히 리월의 법은 정말 잘 쓰여 있군요. 그 안에서 단 하나의 빈틈을 찾기도 거의 힘듭니다.",
+     "t": "음, 솔직히 말해서, 리월의 법은 정말 잘 쓰였다. 그 안에서 단 하나의 허점도 찾기란 거의 어렵다.",
      "speaker_ko": "이바노비치"
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "Traveler, 게시판을 확인해서 새 영업 허가에 관한 소식이 있는지 좀 봐 줄 수 있겠나?",
-     "en": "Traveler, could you please help me check the Bulletin Board and see if there's any news on the new business permits?",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "저는 아직 여기서 가게를 봐야 하니, Mr. Bolai에게 제가 넘겨받을 수 있는 Cor Lapis가 있는지 물어봐 주시겠어요?",
+     "en": "I still need to man the store here, so could you help me ask Mr. Bolai if he has Cor Lapis that I could take off his hands?",
      "speaker": "Ivanovich",
      "source": {
       "kind": "quest",
-      "quest": "Necessary Procedures",
-      "quest_ko": "필수 절차",
-      "version": "1.1",
+      "quest": "A Quiet Day in Liyue Harbor",
+      "quest_ko": "리월항의 평화로운 하루",
+      "version": "1.0",
       "speaker": "Ivanovich"
      },
-     "t": "여행자, 게시판을 확인해서 새 영업 허가에 관한 소식이 있는지 좀 봐 줄 수 있겠나?",
+     "t": "저는 아직 여기서 가게를 봐야 하니, Mr. 박래에게 제가 넘겨받을 수 있는 콜 라피스가 있는지 물어봐 주시겠어요?",
      "speaker_ko": "이바노비치"
     },
     {
      "section": "여담",
      "status": "accepted",
-     "note": "Sentence 0 is a faithful translation of the dialogue line: 'Oh yeah, not sure if you knew, but most of the adepti appear in the form of various beasts.' Nothing is added or omitted.",
-     "t_raw": "아, 그래, 네가 알고 있었는지 모르겠지만, 대부분의 adepti는 여러 짐승의 모습으로 나타난다.",
-     "en": "Oh yeah, not sure if you knew, but most of the adepti appear in the form of various beasts.",
+     "note": "Faithful translation; the greeting 'Good day' is rendered naturally.",
+     "t_raw": "안녕하세요, 친구! 죄송하지만 지금은 재고가 없습니다. 다음에 다시 와 주세요.",
+     "en": "Good day, my friend! My apologies, but I am out of stock at the moment. Please try again next time.",
      "speaker": "Ivanovich",
      "source": {
       "kind": "quest",
-      "quest": "Rite of Descension",
-      "quest_ko": "청신",
+      "quest": "Calm Before the Storm (Story Quest)",
+      "quest_ko": "폭풍 전야",
       "version": "1.0",
       "speaker": "Ivanovich"
      },
-     "t": "아, 그래, 네가 알고 있었는지 모르겠지만, 대부분의 adepti는 여러 짐승의 모습으로 나타난다.",
+     "t": "안녕하세요, 친구! 죄송하지만 지금은 재고가 없습니다. 다음에 다시 와 주세요.",
      "speaker_ko": "이바노비치"
     }
    ]

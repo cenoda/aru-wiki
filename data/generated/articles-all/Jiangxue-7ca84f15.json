@@ -20,41 +20,51 @@
    "input_chars": 4456,
    "input_cut": false,
    "input_hash": "4fecccde3a3c",
-   "writer": "ds,qwen,or-ds",
-   "verifier": "claude-sonnet",
-   "status": "needs_verify",
+   "writer": "ds,or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Allegedly a fisherman, it is quickly apparent that he's simply fishing to wile away his time, choosing this peaceful lifestyle to repent for the \"bad things\" he's done.",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, A4 and A5. The interpretation in (3) is reasonable.",
+     "quote": "Even without a Vision or even a weapon, he can sense when and where monsters will appear, and singlehandedly takes down a Ruin Hunter within seconds without seemingly moving.",
      "sentences": [
       {
-       "t_raw": "Jiangxue는 Liyue의 Dihua Marsh, Wangshu Inn 근처에서 만날 수 있는 인물이다.",
+       "t_raw": "Jiangxue는 Liyue의 Dihua Marsh에서 Wangshu Inn 근처에 머무는 NPC다.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 리월의 적화주, 망서 객잔 근처에서 만날 수 있는 인물이다."
+       "t": "강설은 리월의 적화주에서 망서 객잔 근처에 머무는 NPC다."
       },
       {
-       "t_raw": "그는 어부라고 알려져 있지만 실제로는 시간을 보내기 위해 낚시할 뿐이며, 스스로 '나쁜 일'이라고 부르는 과거를 속죄하려고 이 평화로운 삶을 택했다고 한다.",
+       "t_raw": "어부라고 알려져 있지만 낚시로 시간을 때우는 것일 뿐이며, 자신이 저지른 \"bad things\"를 속죄하려 이런 평온한 삶을 택했다고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 어부라고 알려져 있지만 실제로는 시간을 보내기 위해 낚시할 뿐이며, 스스로 '나쁜 일'이라고 부르는 과거를 속죄하려고 이 평화로운 삶을 택했다고 한다."
+       "t": "어부라고 알려져 있지만 낚시로 시간을 때우는 것일 뿐이며, 자신이 저지른 \"나쁜 짓\"을 속죄하려 이런 평온한 삶을 택했다고 한다.",
+       "polish": {
+        "from": "어부라고 알려져 있지만 낚시로 시간을 때우는 것일 뿐이며, 자신이 저지른 \"bad things\"를 속죄하려 이런 평온한 삶을 택했다고 한다.",
+        "text": "어부라고 알려져 있지만 낚시로 시간을 때우는 것일 뿐이며, 자신이 저지른 \"나쁜 짓\"을 속죄하려 이런 평온한 삶을 택했다고 한다.",
+        "by": "qwen"
+       }
       },
       {
-       "t_raw": "겉보기보다 훨씬 강력한 그는 한때 Vision을 지녔으나 '나쁜 일'에 쓴 뒤 버렸고, 지금은 Vision도 무기도 없이 괴물이 나타날 때와 장소를 감지해 순식간에 Ruin Hunter를 쓰러뜨린다.",
+       "t_raw": "그는 한때 Vision을 지녔다가 그 힘으로 \"bad things\"를 저지른 뒤 스스로 Vision을 버렸고, 원래 이름도 버린 채 Jiangxue로 불리고 있다.",
        "interp": false,
        "dropped": false,
-       "t": "겉보기보다 훨씬 강력한 그는 한때 신의 눈을 지녔으나 '나쁜 일'에 쓴 뒤 버렸고, 지금은 신의 눈도 무기도 없이 괴물이 나타날 때와 장소를 감지해 순식간에 유적 헌터를 쓰러뜨린다."
+       "t": "그는 한때 신의 눈을 지녔다가 그 힘으로 \"나쁜 짓\"을 저지른 뒤 스스로 신의 눈을 버렸고, 원래 이름도 버린 채 강설로 불리고 있다.",
+       "polish": {
+        "from": "그는 한때 신의 눈을 지녔다가 그 힘으로 \"bad things\"를 저지른 뒤 스스로 신의 눈을 버렸고, 원래 이름도 버린 채 강설로 불리고 있다.",
+        "text": "그는 한때 신의 눈을 지녔다가 그 힘으로 \"나쁜 짓\"을 저지른 뒤 스스로 신의 눈을 버렸고, 원래 이름도 버린 채 강설로 불리고 있다.",
+        "by": "qwen"
+       }
       },
       {
-       "t_raw": "평온한 낚시꾼의 겉모습과 감춰 둔 힘과 과거 사이의 낙차가, 이 인물을 그냥 지나치기 어려운 존재로 만든다고 볼 수 있다.",
+       "t_raw": "낚싯대 하나 들고 앉아 있는 모습과 Vision도 무기도 없이 순식간에 Ruin Hunter를 처리하는 힘이 나란히 놓이면서, 이 조용한 인물은 은퇴한 어부가 아니라 무언가를 감당하고 있는 사람으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "평온한 낚시꾼의 겉모습과 감춰 둔 힘과 과거 사이의 낙차가, 이 인물을 그냥 지나치기 어려운 존재로 만든다고 볼 수 있다."
+       "t": "낚싯대 하나 들고 앉아 있는 모습과 신의 눈도 무기도 없이 순식간에 유적 헌터를 처리하는 힘이 나란히 놓이면서, 이 조용한 인물은 은퇴한 어부가 아니라 무언가를 감당하고 있는 사람으로 보인다."
       }
      ],
      "sources": [
@@ -81,34 +91,282 @@
        "section": "Profile",
        "paragraph": "A4",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Profile",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 523058,
+       "section": "Known Vision Users",
+       "paragraph": "M1",
+       "wiki_refs": []
       }
      ],
      "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by A2, A31 and A32. The interpretation is reasonable.",
+     "quote": "Allegedly a fisherman, it is quickly apparent that he's simply fishing to wile away his time",
+     "sentences": [
+      {
+       "t_raw": "Jiangxue는 어부로 알려져 있지만, 실제로는 낚시로 세월을 흘려보내는 쪽에 가까운 사람이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강설은 어부로 알려져 있지만, 실제로는 낚시로 세월을 흘려보내는 쪽에 가까운 사람이다."
+      },
+      {
+       "t_raw": "그가 이런 생활을 택한 이유는 자신이 저지른 \"bad things\"에 대한 속죄다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 이런 생활을 택한 이유는 자신이 저지른 \"나쁜 짓\"에 대한 속죄다.",
+       "polish": {
+        "from": "그가 이런 생활을 택한 이유는 자신이 저지른 \"bad things\"에 대한 속죄다.",
+        "text": "그가 이런 생활을 택한 이유는 자신이 저지른 \"나쁜 짓\"에 대한 속죄다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "그는 낚시를 생계로 삼지 않는다고 말하며, 낚시의 과정도 결과도 자신에게는 의미가 없다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 낚시를 생계로 삼지 않는다고 말하며, 낚시의 과정도 결과도 자신에게는 의미가 없다고 밝힌다."
+      },
+      {
+       "t_raw": "생업이 아닌 낚시와 속죄라는 동기가 겹치면서, 낚시는 그가 과거를 견디는 방식으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "생업이 아닌 낚시와 속죄라는 동기가 겹치면서, 낚시는 그가 과거를 견디는 방식으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A32",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
      "latin_left": []
     },
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I'm just a guy with a fishing rod and plenty of time on my hands.",
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by A27-A29 and M3. The interpretation in (4) is a reasonable reading.",
+     "quote": "I gave up my Vision. I'm not worthy of it anymore, nor do I have any real use for it.",
      "sentences": [
       {
-       "t_raw": "Jiangxue는 Liyue의 Dihua Marsh에서 Wangshu Inn 근처에 자리 잡고 있는 인물로, 낚싯대를 든 채 앉아 있는 모습으로 처음 마주친다.",
+       "t_raw": "Jiangxue는 한때 Vision을 지녔던 인물이며, 지금은 스스로 그것을 놓은 상태다.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 리월의 적화주에서 망서 객잔 근처에 자리 잡고 있는 인물로, 낚싯대를 든 채 앉아 있는 모습으로 처음 마주친다."
+       "t": "강설은 한때 신의 눈을 지녔던 인물이며, 지금은 스스로 그것을 놓은 상태다."
       },
       {
-       "t_raw": "말을 걸면 낚시 이야기보다 먼저 돌아오는 것은 잡담을 하려거든 목소리를 낮춰 물고기를 놀라게 하지 말라는 당부다.",
+       "t_raw": "그는 자신이 그 힘으로 \"bad things\"를 저질렀고, 이제는 Vision을 지닐 자격도 실용도 없다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "말을 걸면 낚시 이야기보다 먼저 돌아오는 것은 잡담을 하려거든 목소리를 낮춰 물고기를 놀라게 하지 말라는 당부다."
+       "t": "그는 자신이 그 힘으로 \"나쁜 짓\"을 저질렀고, 이제는 신의 눈을 지닐 자격도 실용도 없다고 말한다.",
+       "polish": {
+        "from": "그는 자신이 그 힘으로 \"bad things\"를 저질렀고, 이제는 신의 눈을 지닐 자격도 실용도 없다고 말한다.",
+        "text": "그는 자신이 그 힘으로 \"나쁜 짓\"을 저질렀고, 이제는 신의 눈을 지닐 자격도 실용도 없다고 말한다.",
+        "by": "qwen"
+       }
       },
       {
-       "t_raw": "자신을 소개하는 말도 **낚싯대 하나와 넘치는 시간**을 가진 사람일 뿐이라는, 어부라는 호칭과는 거리가 있는 문장이다.",
+       "t_raw": "Traveler에게 자신도 한때 이 세계의 선택받은 자 중 하나였다고 털어놓기도 한다.",
        "interp": false,
        "dropped": false,
-       "t": "자신을 소개하는 말도 **낚싯대 하나와 넘치는 시간**을 가진 사람일 뿐이라는, 어부라는 호칭과는 거리가 있는 문장이다."
+       "t": "여행자에게 자신도 한때 이 세계의 선택받은 자 중 하나였다고 털어놓기도 한다."
+      },
+      {
+       "t_raw": "한편 그가 구하던 정의는 이미 실현되었고, Vision 없이 사는 지금의 삶을 \"free of desire\"라고 표현했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 그가 구하던 정의는 이미 실현되었고, 신의 눈 없이 사는 지금의 삶을 \"욕망에서 자유롭다\"라고 표현했다고 전한다.",
+       "polish": {
+        "from": "한편 그가 구하던 정의는 이미 실현되었고, 신의 눈 없이 사는 지금의 삶을 \"free of desire\"라고 표현했다고 전한다.",
+        "text": "한편 그가 구하던 정의는 이미 실현되었고, 신의 눈 없이 사는 지금의 삶을 \"욕망에서 자유롭다\"라고 표현했다고 전한다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "스스로에게 자격이 없다고 말하는 쪽과 \"free of desire\"라고 정리하는 쪽은 어조가 다르지만, 같은 사건을 두고 Vision을 내려놓은 뒤의 삶을 스스로 규정한 말이라는 점에서 한 사건의 양면으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스스로에게 자격이 없다고 말하는 쪽과 \"욕망에서 자유롭다\"라고 정리하는 쪽은 어조가 다르지만, 같은 사건을 두고 신의 눈을 내려놓은 뒤의 삶을 스스로 규정한 말이라는 점에서 한 사건의 양면으로 읽힌다.",
+       "polish": {
+        "from": "스스로에게 자격이 없다고 말하는 쪽과 \"free of desire\"라고 정리하는 쪽은 어조가 다르지만, 같은 사건을 두고 신의 눈을 내려놓은 뒤의 삶을 스스로 규정한 말이라는 점에서 한 사건의 양면으로 읽힌다.",
+        "text": "스스로에게 자격이 없다고 말하는 쪽과 \"욕망에서 자유롭다\"라고 정리하는 쪽은 어조가 다르지만, 같은 사건을 두고 신의 눈을 내려놓은 뒤의 삶을 스스로 규정한 말이라는 점에서 한 사건의 양면으로 읽힌다.",
+        "by": "qwen"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 523058,
+       "section": "Known Vision Users",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A28",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 523058,
+       "section": "About Visions > Losing a Vision",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "A5, A20, A21 and A25 support all the facts, including the alias and the order of events. The interpretation is reasonable.",
+     "quote": "I stopped using my real name a long time ago.",
+     "sentences": [
+      {
+       "t_raw": "Jiangxue라는 이름 역시 본명이 아니다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강설라는 이름 역시 본명이 아니다."
+      },
+      {
+       "t_raw": "그는 오래전에 본명을 쓰지 않게 되었다며, 그냥 Jiangxue라고 부르라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 오래전에 본명을 쓰지 않게 되었다며, 그냥 강설라고 부르라고 한다."
+      },
+      {
+       "t_raw": "본명과 Vision을 놓은 시점은 Dihua Marsh에서 \"bad things\"를 했다는 사건 이후이며, 그는 그 일을 두고 \"had to do\"였던 일이라고도 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "본명과 신의 눈을 놓은 시점은 적화주에서 \"bad things\"를 했다는 사건 이후이며, 그는 그 일을 두고 \"had to do\"였던 일이라고도 말한다."
+      },
+      {
+       "t_raw": "이름과 Vision을 같은 사건 뒤에 함께 내려놓았다는 점에서, 두 가지 모두 그가 과거의 자신과 선을 긋는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이름과 신의 눈을 같은 사건 뒤에 함께 내려놓았다는 점에서, 두 가지 모두 그가 과거의 자신과 선을 긋는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Profile",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A25",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "Wangshu Inn에서의 생활",
+     "status": "accepted",
+     "note": "A1 and A7 support the location, the islet and the statues. A7 also says the statues are not discussed in dialogue.",
+     "quote": "Jiangxue can be found slightly northeast of Wangshu Inn, in Dihua Marsh, on a small islet that has several stone beast statues in a circular formation.",
+     "sentences": [
+      {
+       "t_raw": "Jiangxue는 Liyue의 Wangshu Inn 근처, Dihua Marsh에서 만날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강설은 리월의 망서 객잔 근처, 적화주에서 만날 수 있다."
+      },
+      {
+       "t_raw": "그가 자리 잡은 곳은 Wangshu Inn에서 조금 북동쪽으로 떨어진 조그마한 섬으로, 섬에는 돌짐승 석상들이 원형으로 늘어서 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 자리 잡은 곳은 망서 객잔에서 조금 북동쪽으로 떨어진 조그마한 섬으로, 섬에는 돌짐승 석상들이 원형으로 늘어서 있다."
+      },
+      {
+       "t_raw": "이 석상들에 관해서는 그와 나눈 대화에서 따로 언급되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 석상들에 관해서는 그와 나눈 대화에서 따로 언급되지 않는다."
       }
      ],
      "sources": [
@@ -124,62 +382,46 @@
        "kind": "wiki",
        "page": "Jiangxue",
        "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A17",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A19",
+       "section": "Profile",
+       "paragraph": "A7",
        "wiki_refs": []
       }
      ],
-     "heading": "개요",
+     "heading": "망서 객잔에서의 생활",
      "latin_left": []
     },
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "section": "Wangshu Inn에서의 생활",
+     "status": "accepted",
+     "note": "A30-A32 support all the facts. The interpretation follows from them.",
      "quote": "Neither the process nor result of fishing means anything to me. But it does help to pass the time a little quicker.",
      "sentences": [
       {
-       "t_raw": "그에게 어부인지 물으면 그는 오해라며 자신은 낚시로 생계를 꾸리지 않는다고 답한다.",
+       "t_raw": "Traveler가 그를 어부라고 짚으면 Jiangxue는 아니라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그에게 어부인지 물으면 그는 오해라며 자신은 낚시로 생계를 꾸리지 않는다고 답한다."
+       "t": "여행자가 그를 어부라고 짚으면 강설은 아니라고 말한다."
       },
       {
-       "t_raw": "낚시의 과정도 결과도 자신에게는 아무 의미가 없고, 다만 시간을 조금 더 빨리 흘려보내는 데 도움이 될 뿐이라고 말한다.",
+       "t_raw": "낚시로 생계를 꾸리는 게 아니라는 것이다.",
        "interp": false,
        "dropped": false,
-       "t": "낚시의 과정도 결과도 자신에게는 아무 의미가 없고, 다만 시간을 조금 더 빨리 흘려보내는 데 도움이 될 뿐이라고 말한다."
+       "t": "낚시로 생계를 꾸리는 게 아니라는 것이다."
       },
       {
-       "t_raw": "생계를 위한 낚시가 아니고 과정과 결과에도 의미를 두지 않는다면, 그에게 낚시는 물고기를 얻는 일이 아니라 시간을 보내는 방식인 셈이다.",
+       "t_raw": "그에게는 낚시의 과정도 결과도 의미가 없고, 다만 시간이 조금 더 빨리 지나가는 데 도움이 될 뿐이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그에게는 낚시의 과정도 결과도 의미가 없고, 다만 시간이 조금 더 빨리 지나가는 데 도움이 될 뿐이라고 한다."
+      },
+      {
+       "t_raw": "낚시는 그에게 생업이 아니라 **시간을 보내는 수단**인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "생계를 위한 낚시가 아니고 과정과 결과에도 의미를 두지 않는다면, 그에게 낚시는 물고기를 얻는 일이 아니라 시간을 보내는 방식인 셈이다."
-      },
-      {
-       "t_raw": "이런 조용한 삶을 택한 까닭은 자신이 저지른 **\"bad things\"**를 속죄하기 위해서라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이런 조용한 삶을 택한 까닭은 자신이 저지른 **\"bad things\"**를 속죄하기 위해서라고 한다."
+       "t": "낚시는 그에게 생업이 아니라 **시간을 보내는 수단**인 셈이다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Jiangxue",
@@ -205,51 +447,41 @@
        "wiki_refs": []
       }
      ],
-     "heading": "개요",
+     "heading": "망서 객잔에서의 생활",
      "latin_left": []
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Out of guilt, he discarded his Vision and moved to Wangshuu Inn and began fishing to simply pass the time and atone for his sins.",
+     "section": "Wangshu Inn에서의 생활",
+     "status": "accepted",
+     "note": "All supported by A8, M2, Q13.",
+     "quote": "While he is not fond of Jiangxue due to him being a freeloader at the inn, Smiley Yanxiao ensures that he has something to eat.",
      "sentences": [
       {
-       "t_raw": "그의 과거는 자세히 알려져 있지 않지만, 한때 Vision을 지녔던 인물이라는 점은 분명하다.",
+       "t_raw": "Wangshu Inn에서 그는 일에 거의 보태지 않는 처지다.",
        "interp": false,
        "dropped": false,
-       "t": "그의 과거는 자세히 알려져 있지 않지만, 한때 신의 눈을 지녔던 인물이라는 점은 분명하다."
+       "t": "망서 객잔에서 그는 일에 거의 보태지 않는 처지다."
       },
       {
-       "t_raw": "Vision을 쓰던 시절 그는 그 힘으로 **'나쁜 일'**을 저질렀고, 그 죄책감에 Vision을 내려놓았다.",
+       "t_raw": "그래도 Yanxiao는 그를 잘 대해 주고 먹을 것을 챙긴다.",
        "interp": false,
        "dropped": false,
-       "t": "신의 눈을 쓰던 시절 그는 그 힘으로 **'나쁜 일'**을 저질렀고, 그 죄책감에 신의 눈을 내려놓았다."
+       "t": "그래도 언소는 그를 잘 대해 주고 먹을 것을 챙긴다."
       },
       {
-       "t_raw": "이후 Wangshu Inn으로 옮겨 낚시를 시작한 것도 시간을 보내고 죄를 속죄하려는 뜻이었다.",
-       "interp": false,
+       "t_raw": "Yanxiao가 그를 여관에 얹혀사는 사람으로 여겨 탐탁지 않게 보면서도 끼니를 챙기는 셈이다.",
+       "interp": true,
        "dropped": false,
-       "t": "이후 망서 객잔으로 옮겨 낚시를 시작한 것도 시간을 보내고 죄를 속죄하려는 뜻이었다."
+       "t": "언소가 그를 여관에 얹혀사는 사람으로 여겨 탐탁지 않게 보면서도 끼니를 챙기는 셈이다."
+      },
+      {
+       "t_raw": "여관 근처에서 낚시하는 그를 두고 Yanxiao가 Xiao Lantern을 전해 달라고 부탁하는 대목은, 그가 여관 사람들과 오가는 자리에 있음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "여관 근처에서 낚시하는 그를 두고 언소가 소등을 전해 달라고 부탁하는 대목은, 그가 여관 사람들과 오가는 자리에 있음을 보여 준다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Profile",
-       "paragraph": "A4",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Profile",
-       "paragraph": "A5",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Jiangxue",
@@ -260,257 +492,10 @@
       },
       {
        "kind": "wiki",
-       "page": "Vision",
-       "revision": 523058,
-       "section": "Known Vision Users",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "he once went to Dihua Marsh to do \"bad things,\" but that those things were also something he \"had to do.\"",
-     "sentences": [
-      {
-       "t_raw": "Traveler에게 그는 Dihua Marsh에 '나쁜 일'을 하러 갔었다고 털어놓으면서, 그것이 동시에 **'해야만 했던 일'**이었다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자에게 그는 적화주에 '나쁜 일'을 하러 갔었다고 털어놓으면서, 그것이 동시에 **'해야만 했던 일'**이었다고 말한다."
-      },
-      {
-       "t_raw": "무엇이었느냐고 물으면 '해야 할 일을 했고 이제 그것은 끝났다'고 답한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "무엇이었느냐고 물으면 '해야 할 일을 했고 이제 그것은 끝났다'고 답한다."
-      },
-      {
-       "t_raw": "Traveler와 그가 같았던 점은 둘 다 한때 이 세상의 '선택받은 자' 중 하나였다는 것이고, 다른 점은 그가 그 힘으로 나쁜 일을 했다는 것이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자와 그가 같았던 점은 둘 다 한때 이 세상의 '선택받은 자' 중 하나였다는 것이고, 다른 점은 그가 그 힘으로 나쁜 일을 했다는 것이다."
-      },
-      {
-       "t_raw": "나쁜 일이라 부르면서도 해야만 했던 일이라 덧붙이는 것은, 스스로를 변호하기보다 그 책임을 그대로 안고 있다는 뜻으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "나쁜 일이라 부르면서도 해야만 했던 일이라 덧붙이는 것은, 스스로를 변호하기보다 그 책임을 그대로 안고 있다는 뜻으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Profile",
-       "paragraph": "A5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A25",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A27",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A28",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I stopped using my real name a long time ago.",
-     "sentences": [
-      {
-       "t_raw": "그 사건이 끝난 뒤 그는 본래의 이름과 Vision을 함께 버리고 지금의 이름을 택했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그 사건이 끝난 뒤 그는 본래의 이름과 신의 눈을 함께 버리고 지금의 이름을 택했다."
-      },
-      {
-       "t_raw": "'진짜 이름은 오래전에 쓰지 않는다'던 그가 새로 택한 이름이 지금의 Jiangxue다.",
-       "interp": false,
-       "dropped": false,
-       "t": "'진짜 이름은 오래전에 쓰지 않는다'던 그가 새로 택한 이름이 지금의 강설다."
-      },
-      {
-       "t_raw": "그가 '나쁜 일'을 하러 갔던 Dihua Marsh에 지금도 낚싯대를 드리우고 있다는 것은, 속죄의 자리가 곧 과거의 무대와 겹친다는 뜻으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그가 '나쁜 일'을 하러 갔던 적화주에 지금도 낚싯대를 드리우고 있다는 것은, 속죄의 자리가 곧 과거의 무대와 겹친다는 뜻으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Profile",
-       "paragraph": "A5",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
+       "page": "Smiley Yanxiao",
+       "revision": 422571,
        "section": "Profile > Personality",
-       "paragraph": "A8",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A20",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A21",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "Vision을 버린 사연",
-     "status": "accepted",
-     "note": "All sentences are supported by A24, A29 and M1. The interpretation in (3) follows from the guilt and atonement described in A8.",
-     "quote": "I gave up my Vision. I'm not worthy of it anymore, nor do I have any real use for it.",
-     "sentences": [
-      {
-       "t_raw": "Jiangxue는 한때 Vision을 지녔으나 **스스로 그것을 내려놓은** 인물이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "강설은 한때 신의 눈을 지녔으나 **스스로 그것을 내려놓은** 인물이다."
-      },
-      {
-       "t_raw": "그는 이제 자신에게 Vision은 어울리지 않고 쓸모도 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 이제 자신에게 신의 눈은 어울리지 않고 쓸모도 없다고 말한다."
-      },
-      {
-       "t_raw": "그는 상대에게 자신의 발자취를 따르지 말라고 하면서, 자신은 **삶이 끝나기를 기다리는** 처지라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 상대에게 자신의 발자취를 따르지 말라고 하면서, 자신은 **삶이 끝나기를 기다리는** 처지라고 말한다."
-      },
-      {
-       "t_raw": "Vision을 포기한 일을 자격 없는 자의 결단으로 말하고 삶의 마무리를 기다린다는 점에서, 그 행위는 자기 자신을 향한 단죄에 가깝다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "신의 눈을 포기한 일을 자격 없는 자의 결단으로 말하고 삶의 마무리를 기다린다는 점에서, 그 행위는 자기 자신을 향한 단죄에 가깝다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A24",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A29",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Vision",
-       "revision": 523058,
-       "section": "Known Vision Users",
-       "paragraph": "M1",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "신의 눈을 버린 사연",
-     "latin_left": []
-    },
-    {
-     "section": "Vision을 버린 사연",
-     "status": "accepted",
-     "note": "All sentences are supported by M3, Q8 and A5. The interpretation in (3) is reasonable.",
-     "quote": "Time slips by, and yet here I am, still unable to wholly let go. How shameful.",
-     "sentences": [
-      {
-       "t_raw": "그가 찾던 정의를 이룬 뒤, Jiangxue는 Vision 없이 평화로운 삶을 누리고 있으며 스스로 'free of desire'라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그가 찾던 정의를 이룬 뒤, 강설은 신의 눈 없이 평화로운 삶을 누리고 있으며 스스로 '욕망에서 자유롭다'라고 말한다.",
-       "polish": {
-        "from": "그가 찾던 정의를 이룬 뒤, 강설은 신의 눈 없이 평화로운 삶을 누리고 있으며 스스로 'free of desire'라고 말한다.",
-        "text": "그가 찾던 정의를 이룬 뒤, 강설은 신의 눈 없이 평화로운 삶을 누리고 있으며 스스로 '욕망에서 자유롭다'라고 말한다.",
-        "by": "or-ds"
-       }
-      },
-      {
-       "t_raw": "그러나 그는 시간이 흘러도 **아직 완전히 놓아버리지 못했다**고 말하며, 그것을 부끄럽게 여긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 그는 시간이 흘러도 **아직 완전히 놓아버리지 못했다**고 말하며, 그것을 부끄럽게 여긴다."
-      },
-      {
-       "t_raw": "그의 과거는 그에게 무겁게 남아 있는 듯하고, 오랫동안 자신의 Xiao Lantern을 띄우지 않았다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그의 과거는 그에게 무겁게 남아 있는 듯하고, 오랫동안 자신의 소등을 띄우지 않았다고 한다."
-      },
-      {
-       "t_raw": "Vision을 버린 뒤 얻은 평화와 놓지 못한 미련이 함께 남아 있는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "신의 눈을 버린 뒤 얻은 평화와 놓지 못한 미련이 함께 남아 있는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Vision",
-       "revision": 523058,
-       "section": "About Visions > Losing a Vision",
-       "paragraph": "M3",
+       "paragraph": "M2",
        "wiki_refs": []
       },
       {
@@ -518,49 +503,47 @@
        "quest": "Yanxiao's Crazy Kitchen",
        "quest_ko": "떠들썩한 언소의 주방",
        "version": "1.3",
-       "speaker": "Jiangxue"
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Profile",
-       "paragraph": "A5",
-       "wiki_refs": []
+       "speaker": "Smiley Yanxiao"
       }
      ],
-     "heading": "신의 눈을 버린 사연",
+     "heading": "망서 객잔에서의 생활",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Traveler와의 만남",
+     "section": "작중 행적 — Wangshu Inn의 낚시꾼",
      "status": "accepted",
-     "note": "All sentences match A17, A20, A21, A23 and A33.",
-     "quote": "You really want to get on a first-name basis, huh?...I stopped using my real name a long time ago.",
+     "note": "All match the dialogue A17-A25.",
+     "quote": "The inn is straight up there. Oh, you want to chat? Keep your voice down then, don't scare the fish away.",
      "sentences": [
       {
-       "t_raw": "Jiangxue는 대화를 청하는 Traveler에게 목소리를 낮추라며 물고기를 놀라게 하지 말라고 한다.",
+       "t_raw": "Traveler가 낚싯대를 든 Jiangxue에게 말을 걸면, 그는 여관은 바로 위쪽이라며 대화하려면 목소리를 낮추라고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 대화를 청하는 여행자에게 목소리를 낮추라며 물고기를 놀라게 하지 말라고 한다."
+       "t": "여행자가 낚싯대를 든 강설에게 말을 걸면, 그는 여관은 바로 위쪽이라며 대화하려면 목소리를 낮추라고 한다."
       },
       {
-       "t_raw": "Traveler가 이름을 묻자 그는 오래전에 **본명을 쓰지 않았다**며 그저 Jiangxue라고 부르면 된다고 한다.",
+       "t_raw": "**물고기를 놀라게 하지 말라**는 것이다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자가 이름을 묻자 그는 오래전에 **본명을 쓰지 않았다**며 그저 강설라고 부르면 된다고 한다."
+       "t": "**물고기를 놀라게 하지 말라**는 것이다."
       },
       {
-       "t_raw": "Traveler가 낚시를 같이하고 싶다고 하자 그는 네게는 **훨씬 더 중요한 일**이 있다고 답한다.",
+       "t_raw": "그는 스스로를 낚싯대 하나와 넉넉한 시간을 가진 사람일 뿐이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자가 낚시를 같이하고 싶다고 하자 그는 네게는 **훨씬 더 중요한 일**이 있다고 답한다."
+       "t": "그는 스스로를 낚싯대 하나와 넉넉한 시간을 가진 사람일 뿐이라고 말한다."
       },
       {
-       "t_raw": "물고기를 원한다면 그냥 가져가라고 한다.",
+       "t_raw": "Traveler가 낚시를 하고 싶다고 하자, 그는 할 일이 더 중요하다며 자신의 발자취를 따르지 말라고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "물고기를 원한다면 그냥 가져가라고 한다."
+       "t": "여행자가 낚시를 하고 싶다고 하자, 그는 할 일이 더 중요하다며 자신의 발자취를 따르지 말라고 한다."
+      },
+      {
+       "t_raw": "자신은 삶이 끝나기를 기다릴 뿐이고, 해야 할 일을 했으니 이제 끝났다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자신은 삶이 끝나기를 기다릴 뿐이고, 해야 할 일을 했으니 이제 끝났다고 말한다."
       }
      ],
      "sources": [
@@ -577,15 +560,7 @@
        "page": "Jiangxue",
        "revision": 576202,
        "section": "Dialogue",
-       "paragraph": "A20",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A21",
+       "paragraph": "A19",
        "wiki_refs": []
       },
       {
@@ -609,56 +584,6 @@
        "page": "Jiangxue",
        "revision": 576202,
        "section": "Dialogue",
-       "paragraph": "A33",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 여행자와의 만남",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Traveler와의 만남",
-     "status": "accepted",
-     "note": "All sentences match A24-A29. The interpretation in (4) is a reasonable contrast.",
-     "quote": "I think you already know the answer to that. Because like you, I used to be one of the chosen ones in this world.",
-     "sentences": [
-      {
-       "t_raw": "그는 Traveler에게 자신의 발자취를 따르지 말라고 하고, 자신은 삶이 끝나기를 기다릴 뿐이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 여행자에게 자신의 발자취를 따르지 말라고 하고, 자신은 삶이 끝나기를 기다릴 뿐이라고 말한다."
-      },
-      {
-       "t_raw": "이어 해야 할 일을 했고 이제 끝났다고 덧붙인다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어 해야 할 일을 했고 이제 끝났다고 덧붙인다."
-      },
-      {
-       "t_raw": "Traveler도 자신처럼 이 세계에서 선택받은 자 중 하나였지만 자신은 그 힘으로 나쁜 일을 했고, 그래서 Vision을 포기했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자도 자신처럼 이 세계에서 선택받은 자 중 하나였지만 자신은 그 힘으로 나쁜 일을 했고, 그래서 신의 눈을 포기했다고 말한다."
-      },
-      {
-       "t_raw": "그는 자신이 Vision에 어울리지 않고 쓸모도 없다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 자신이 신의 눈에 어울리지 않고 쓸모도 없다고 말한다."
-      },
-      {
-       "t_raw": "이 대화에서 그의 과거는 현재의 Traveler와 대조를 이루는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 대화에서 그의 과거는 현재의 여행자와 대조를 이루는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
        "paragraph": "A24",
        "wiki_refs": []
       },
@@ -669,64 +594,40 @@
        "section": "Dialogue",
        "paragraph": "A25",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A27",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A28",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A29",
-       "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 여행자와의 만남",
+     "heading": "작중 행적 — 망서 객잔의 낚시꾼",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Lantern Rite",
+     "section": "작중 행적 — Wangshu Inn의 낚시꾼",
      "status": "accepted",
-     "note": "All sentences are supported by A5, Q13, Q12 and Q2.",
-     "quote": "Nothing, really. Mere trivial matters that aren't worth any mention. Thanks for coming all this way and sending me that Xiao Lantern.",
+     "note": "Supported by A3, A31-A34; the interpretation is reasonable.",
+     "quote": "If you want fish, you can just have them.",
      "sentences": [
       {
-       "t_raw": "Yanxiao는 오래전부터 Jiangxue를 알고 지내며, Jiangxue의 과거 의문의 사건 뒤로 그에게 먹을 것을 주려는 유일한 사람이다.",
+       "t_raw": "대화 끝에 Jiangxue는 생선을 원하면 그냥 가져가라고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "언소는 오래전부터 강설을 알고 지내며, 강설의 과거 의문의 사건 뒤로 그에게 먹을 것을 주려는 유일한 사람이다."
+       "t": "대화 끝에 강설은 생선을 원하면 그냥 가져가라고 한다."
       },
       {
-       "t_raw": "그런 Yanxiao가 Traveler에게 Xiao Lantern 하나를 Jiangxue에게 전해 달라고 부탁하고, Jiangxue는 보통 여관 근처에서 낚시를 하고 있어 찾기 어렵지 않다.",
+       "t_raw": "처음 이 대화 갈래를 따라가면 실제로 **생선 다섯 마리**를 얻는다.",
        "interp": false,
        "dropped": false,
-       "t": "그런 언소가 여행자에게 소등 하나를 강설에게 전해 달라고 부탁하고, 강설은 보통 여관 근처에서 낚시를 하고 있어 찾기 어렵지 않다."
+       "t": "처음 이 대화 갈래를 따라가면 실제로 **생선 다섯 마리**를 얻는다."
       },
       {
-       "t_raw": "Traveler가 Xiao Lantern을 건네자 Jiangxue는 갑작스러운 선물에 '왜 갑자기'라고 되묻는다.",
+       "t_raw": "그는 낚시를 생계로 삼지 않으며, 낚시의 과정도 결과도 의미가 없지만 시간을 빨리 보내는 데는 도움이 된다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자가 소등을 건네자 강설은 갑작스러운 선물에 '왜 갑자기'라고 되묻는다."
+       "t": "그는 낚시를 생계로 삼지 않으며, 낚시의 과정도 결과도 의미가 없지만 시간을 빨리 보내는 데는 도움이 된다고 말한다."
       },
       {
-       "t_raw": "이어 별일 아니라는 듯 자신을 찾아와 Xiao Lantern을 보내 준 데 **고맙다**고 말한다.",
-       "interp": false,
+       "t_raw": "생선을 쉽게 건네는 태도와 이런 설명은 그가 생선보다 시간 보내기에 무게를 두고 있음을 보여 준다고 볼 수 있다.",
+       "interp": true,
        "dropped": false,
-       "t": "이어 별일 아니라는 듯 자신을 찾아와 소등을 보내 준 데 **고맙다**고 말한다."
+       "t": "생선을 쉽게 건네는 태도와 이런 설명은 그가 생선보다 시간 보내기에 무게를 두고 있음을 보여 준다고 볼 수 있다."
       }
      ],
      "sources": [
@@ -734,9 +635,72 @@
        "kind": "wiki",
        "page": "Jiangxue",
        "revision": 576202,
-       "section": "Profile",
-       "paragraph": "A5",
+       "section": "Dialogue",
+       "paragraph": "A33",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A34",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A32",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 망서 객잔의 낚시꾼",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Xiao Lantern과 요리",
+     "status": "accepted",
+     "note": "Supported by Q13, Q14, Q10, Q2, Q12.",
+     "quote": "I'll take one of them, and I'd like you to help me send the other to Jiangxue. He can usually be found fishing near the inn.",
+     "sentences": [
+      {
+       "t_raw": "Smiley Yanxiao는 Xiao Lantern 두 개 중 하나를 직접 두고 다른 하나를 Jiangxue에게 전해 달라고 Traveler에게 부탁하며, 잊지 말라고 당부한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "언소는 소등 두 개 중 하나를 직접 두고 다른 하나를 강설에게 전해 달라고 여행자에게 부탁하며, 잊지 말라고 당부한다."
+      },
+      {
+       "t_raw": "Xiao Lantern을 받은 Jiangxue는 '또 한 해의 Lantern Rite'라 말하고, 고맙다면서도 왜 갑자기 그러느냐고 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소등을 받은 강설은 '또 한 해의 해등절'라 말하고, 고맙다면서도 왜 갑자기 그러느냐고 되묻는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Yanxiao's Crazy Kitchen",
+       "quest_ko": "떠들썩한 언소의 주방",
+       "version": "1.3",
+       "speaker": "Smiley Yanxiao"
       },
       {
        "kind": "quest",
@@ -758,34 +722,41 @@
        "quest_ko": "떠들썩한 언소의 주방",
        "version": "1.3",
        "speaker": "Jiangxue"
+      },
+      {
+       "kind": "quest",
+       "quest": "Yanxiao's Crazy Kitchen",
+       "quest_ko": "떠들썩한 언소의 주방",
+       "version": "1.3",
+       "speaker": "Jiangxue"
       }
      ],
-     "heading": "작중 행적 — 해등절",
+     "heading": "작중 행적 — 소등과 요리",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Lantern Rite",
+     "section": "작중 행적 — Xiao Lantern과 요리",
      "status": "accepted",
-     "note": "All sentences are supported by Q6, Q8 and Q10. The interpretation in (2) is reasonable and hedged with '보인다'.",
-     "quote": "Time slips by, and yet here I am, still unable to wholly let go. How shameful.",
+     "note": "Supported by Q6 and Q8; the interpretation is hedged and reasonable.",
+     "quote": "I don't have anything to wish for, nor have I released a Xiao Lantern of my own in a long time...",
      "sentences": [
       {
-       "t_raw": "Jiangxue는 Xiao Lantern을 받고도 자신이 바라는 것이 없고, 오랫동안 자기 Xiao Lantern을 놓지 않았다고 말한다.",
+       "t_raw": "Jiangxue는 빌 소원이 없고 자기 Xiao Lantern을 놓아 보낸 지도 오래라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 소등을 받고도 자신이 바라는 것이 없고, 오랫동안 자기 소등을 놓지 않았다고 말한다."
+       "t": "강설은 빌 소원이 없고 자기 소등을 놓아 보낸 지도 오래라고 말한다."
       },
       {
-       "t_raw": "이어 세월이 흘러도 **완전히 놓지 못했다**며 부끄럽다고 하고, 또 한 해의 Lantern Rite가 왔다고 언급한다.",
+       "t_raw": "시간이 흘러도 **온전히 내려놓지 못한** 자신을 부끄러워한다.",
        "interp": false,
        "dropped": false,
-       "t": "이어 세월이 흘러도 **완전히 놓지 못했다**며 부끄럽다고 하고, 또 한 해의 해등절이 왔다고 언급한다."
+       "t": "시간이 흘러도 **온전히 내려놓지 못한** 자신을 부끄러워한다."
       },
       {
-       "t_raw": "바랄 것이 없다는 말과 놓지 못했다는 말이 한자리에 놓이면서, Lantern Rite는 그에게 지나간 일을 다시 꺼내 보게 하는 자리로 보인다.",
+       "t_raw": "오래 미뤄 둔 마음에 Smiley Yanxiao의 Xiao Lantern이 닿은 계기로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "바랄 것이 없다는 말과 놓지 못했다는 말이 한자리에 놓이면서, 해등절은 그에게 지나간 일을 다시 꺼내 보게 하는 자리로 보인다."
+       "t": "오래 미뤄 둔 마음에 언소의 소등이 닿은 계기로 보인다."
       }
      ],
      "sources": [
@@ -808,35 +779,95 @@
        "quest": "Yanxiao's Crazy Kitchen",
        "quest_ko": "떠들썩한 언소의 주방",
        "version": "1.3",
+       "speaker": "Smiley Yanxiao"
+      }
+     ],
+     "heading": "작중 행적 — 소등과 요리",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Xiao Lantern과 요리",
+     "status": "accepted",
+     "note": "The material never says that 'that chef' (Q4, Q5) is Yanxiao. Q5 comes from a different quest, and Q4 and Q5 only say 'chef'. Sentence 2 therefore adds an unsupported identification. Sentence 3 builds on it and also describes the chef as the one who was taught the recipe, which the material does not establish.",
+     "quote": "where he learned the Chicken Tofu Pudding recipe, although he was unable to make it for himself.",
+     "sentences": [
+      {
+       "t_raw": "Jiangxue는 예전에 어떤 사람의 문제를 도와주었고, 그 감사의 회식에서 **Chicken Tofu Pudding** 조리법을 알게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강설은 예전에 어떤 사람의 문제를 도와주었고, 그 감사의 회식에서 **꼬꼬 연두부** 조리법을 알게 되었다."
+      },
+      {
+       "t_raw": "정작 자신은 만들 수 없었지만 후에 Traveler와 Smiley Yanxiao에게 전수했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정작 자신은 만들 수 없었지만 후에 여행자와 언소에게 전수했다."
+      },
+      {
+       "t_raw": "그는 어떤 요리사를 생각이 깊고 처음 만났을 때보다 많이 변한 사람이라 평하며, 어느 날에는 요리사가 크게 걱정하는 기색임을 알아채고 왜 얼굴이 그렇냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 어떤 요리사를 생각이 깊고 처음 만났을 때보다 많이 변한 사람이라 평하며, 어느 날에는 요리사가 크게 걱정하는 기색임을 알아채고 왜 얼굴이 그렇냐고 묻는다."
+      },
+      {
+       "t_raw": "이는 그가 요리사의 기분을 살피는 면모를 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "이는 그가 요리사의 기분을 살피는 면모를 보여 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Profile",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Yanxiao's Crazy Kitchen",
+       "quest_ko": "떠들썩한 언소의 주방",
+       "version": "1.3",
+       "speaker": "Jiangxue"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Dish Beyond Mortal Ken",
+       "quest_ko": "속세를 뛰어넘는 요리",
+       "version": "1.6",
        "speaker": "Jiangxue"
       }
      ],
-     "heading": "작중 행적 — 해등절",
+     "heading": "작중 행적 — 소등과 요리",
      "latin_left": []
     },
     {
      "section": "작중 행적 — Moonchase Festival",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All three match the Moonlight Merriment lines.",
      "quote": "Now that the Moonchase Festival is here, I want to try some new delicacies.",
      "sentences": [
       {
-       "t_raw": "**Moonchase Festival**이 오자 Jiangxue는 축제가 왔다고 말하고, 이제 **새로운 별미**를 맛보고 싶어 한다.",
+       "t_raw": "Moonlight Merriment 기간에 Jiangxue는 Moonchase Festival이 왔다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "**축월절**이 오자 강설은 축제가 왔다고 말하고, 이제 **새로운 별미**를 맛보고 싶어 한다."
+       "t": "달빛 속 광경 기간에 강설은 축월절이 왔다고 말한다."
       },
       {
-       "t_raw": "이 말은 축제 기간에 그가 남긴 혼잣말로 전해진다.",
+       "t_raw": "이어서 그는 **새로운 음식**을 맛보고 싶다는 기대를 내비친다.",
        "interp": false,
        "dropped": false,
-       "t": "이 말은 축제 기간에 그가 남긴 혼잣말로 전해진다."
+       "t": "이어서 그는 **새로운 음식**을 맛보고 싶다는 기대를 내비친다."
       },
       {
-       "t_raw": "축제에 대한 그의 관심은 새로운 별미를 맛보는 쪽으로 기울어 있는 것으로 보인다.",
+       "t_raw": "축제가 왔다는 말에 새 음식에 대한 바람을 붙이는 태도에서, 그는 축제를 새로운 맛을 접하는 계기로 여기는 듯하다.",
        "interp": true,
        "dropped": false,
-       "t": "축제에 대한 그의 관심은 새로운 별미를 맛보는 쪽으로 기울어 있는 것으로 보인다."
+       "t": "축제가 왔다는 말에 새 음식에 대한 바람을 붙이는 태도에서, 그는 축제를 새로운 맛을 접하는 계기로 여기는 듯하다."
       }
      ],
      "sources": [
@@ -870,36 +901,50 @@
     },
     {
      "section": "작중 행적 — Moonchase Festival",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Cooking is much like martial arts. One can only improve when rivals to compete with.",
+     "status": "accepted",
+     "note": "Second place, the shame/not-bad judgment, the martial-arts comparison, and the new-recipe bet are all in the dialogue.",
+     "quote": "Ah, so Yanxiao came in second this year. A shame, but also not a bad thing.",
      "sentences": [
       {
-       "t_raw": "올해 Yanxiao가 2위를 했다는 소식에 Jiangxue는 **아쉽지만 나쁘지 않다**고 평한다.",
+       "t_raw": "Moonlight Merriment의 Part II를 마친 뒤, Jiangxue는 Yanxiao가 올해 **2위**를 했다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "올해 언소가 2위를 했다는 소식에 강설은 **아쉽지만 나쁘지 않다**고 평한다."
+       "t": "달빛 속 광경의 제2막을 마친 뒤, 강설은 언소가 올해 **2위**를 했다고 말한다."
       },
       {
-       "t_raw": "그는 요리가 무술과 비슷해서 겨룰 상대가 있어야 실력이 늘 수 있다고 말한다.",
+       "t_raw": "그는 아쉽지만 나쁘지도 않다고 평한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 요리가 무술과 비슷해서 겨룰 상대가 있어야 실력이 늘 수 있다고 말한다."
+       "t": "그는 아쉽지만 나쁘지도 않다고 평한다."
       },
       {
-       "t_raw": "그리고 Yanxiao가 지금쯤 새 레시피를 만들고 있을 것이라며, 그 요리를 맛보고 싶다는 바람을 내비친다.",
+       "t_raw": "요리는 무예와 같아서 겨룰 상대가 있어야 늘 수 있다고 덧붙인다.",
        "interp": false,
        "dropped": false,
-       "t": "그리고 언소가 지금쯤 새 레시피를 만들고 있을 것이라며, 그 요리를 맛보고 싶다는 바람을 내비친다."
+       "t": "요리는 무예와 같아서 겨룰 상대가 있어야 늘 수 있다고 덧붙인다."
       },
       {
-       "t_raw": "이처럼 그는 Yanxiao의 2위를 아쉬움과 성장의 계기로 함께 받아들이는 셈이다.",
+       "t_raw": "2위라는 결과를 아쉬움과 개선의 계기로 함께 받아들이는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이처럼 그는 언소의 2위를 아쉬움과 성장의 계기로 함께 받아들이는 셈이다."
+       "t": "2위라는 결과를 아쉬움과 개선의 계기로 함께 받아들이는 셈이다."
+      },
+      {
+       "t_raw": "그는 Yanxiao가 **새 요리**를 만들고 있을 것이라 장담하며, 자신도 그 맛을 보길 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 언소가 **새 요리**를 만들고 있을 것이라 장담하며, 자신도 그 맛을 보길 바란다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Event Dialogue > Moonlight Merriment",
+       "paragraph": "A37",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Jiangxue",
@@ -929,142 +974,40 @@
      "latin_left": []
     },
     {
-     "section": "요리와의 인연",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ha, that chef is a thoughtful man indeed. He's... changed a great deal since our initial meeting.",
-     "sentences": [
-      {
-       "t_raw": "Jiangxue는 어떤 이의 문제를 도와준 뒤 감사의 의미로 초대받은 연회에서 **Chicken Tofu Pudding 레시피**를 익혔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "강설은 어떤 이의 문제를 도와준 뒤 감사의 의미로 초대받은 연회에서 **꼬꼬 연두부 레시피**를 익혔다."
-      },
-      {
-       "t_raw": "정작 자신은 그 요리를 직접 만들지는 못했지만, 훗날 Traveler와 Smiley Yanxiao에게 그 레시피를 전수했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "정작 자신은 그 요리를 직접 만들지는 못했지만, 훗날 여행자와 언소에게 그 레시피를 전수했다."
-      },
-      {
-       "t_raw": "Jiangxue는 요리사를 두고 생각이 깊은 사람이라며, 처음 만났을 때와 비교해 그가 많이 변했다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "강설은 요리사를 두고 생각이 깊은 사람이라며, 처음 만났을 때와 비교해 그가 많이 변했다고 말한다."
-      },
-      {
-       "t_raw": "레시피를 얻어 온 과거와 그것을 훗날 다른 이에게 전한 사실이, 그 요리사의 변화에 대한 말과 겹쳐, Jiangxue의 요리 인연이 받는 쪽에만 머물지 않았음을 보여 주는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "레시피를 얻어 온 과거와 그것을 훗날 다른 이에게 전한 사실이, 그 요리사의 변화에 대한 말과 겹쳐, 강설의 요리 인연이 받는 쪽에만 머물지 않았음을 보여 주는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Profile",
-       "paragraph": "A6",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Yanxiao's Crazy Kitchen",
-       "quest_ko": "떠들썩한 언소의 주방",
-       "version": "1.3",
-       "speaker": "Jiangxue"
-      }
-     ],
-     "heading": "요리와의 인연",
-     "latin_left": []
-    },
-    {
-     "section": "요리와의 인연",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Huh? There's crab roe in the meat, no wonder it tastes so unusually fresh.",
-     "sentences": [
-      {
-       "t_raw": "Jiangxue는 고기 완자를 맛보고 고기가 입에서 녹으며 국물에 풍미가 있다고 평한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "강설은 고기 완자를 맛보고 고기가 입에서 녹으며 국물에 풍미가 있다고 평한다."
-      },
-      {
-       "t_raw": "이어 고기 속에 게 알이 들어 있다는 점을 알아채고, 그래서 유난히 신선한 맛이 난다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이어 고기 속에 게 알이 들어 있다는 점을 알아채고, 그래서 유난히 신선한 맛이 난다고 말한다."
-      },
-      {
-       "t_raw": "그는 오늘 요리사가 무언가 크게 걱정하는 듯하다며 왜 그렇게 얼굴이 어두운지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 오늘 요리사가 무언가 크게 걱정하는 듯하다며 왜 그렇게 얼굴이 어두운지 묻는다."
-      },
-      {
-       "t_raw": "맛의 구성 요소를 짚어 내는 혀와 사람의 기색을 읽는 눈이 한자리에서 드러나는 **감식안**으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "맛의 구성 요소를 짚어 내는 혀와 사람의 기색을 읽는 눈이 한자리에서 드러나는 **감식안**으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "A Dish Beyond Mortal Ken",
-       "quest_ko": "속세를 뛰어넘는 요리",
-       "version": "1.6",
-       "speaker": "Jiangxue"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Dish Beyond Mortal Ken",
-       "quest_ko": "속세를 뛰어넘는 요리",
-       "version": "1.6",
-       "speaker": "Jiangxue"
-      },
-      {
-       "kind": "quest",
-       "quest": "A Dish Beyond Mortal Ken",
-       "quest_ko": "속세를 뛰어넘는 요리",
-       "version": "1.6",
-       "speaker": "Jiangxue"
-      }
-     ],
-     "heading": "요리와의 인연",
-     "latin_left": []
-    },
-    {
      "section": "능력",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Power, discarded Vision, weaponless Ruin Hunter feat, and “free of desire” after the justice he sought are all stated.",
      "quote": "Even without a Vision or even a weapon, he can sense when and where monsters will appear, and singlehandedly takes down a Ruin Hunter within seconds without seemingly moving.",
      "sentences": [
       {
-       "t_raw": "Jiangxue는 **겉보기보다 훨씬 강하다**.",
+       "t_raw": "Jiangxue는 겉모습보다 훨씬 강한 인물이다.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 **겉보기보다 훨씬 강하다**."
+       "t": "강설은 겉모습보다 훨씬 강한 인물이다."
       },
       {
-       "t_raw": "한때 Vision을 지녔으나 그 Vision으로 '나쁜 일'을 한 뒤 버렸고, 지금은 **Vision도 무기도 없이** 괴물이 언제 어디에 나타날지 감지한다.",
+       "t_raw": "한때 Vision을 지녔으나 그 힘으로 '나쁜 일'을 저지른 뒤 Vision을 버렸고, 지금은 Vision도 무기도 없다.",
        "interp": false,
        "dropped": false,
-       "t": "한때 신의 눈을 지녔으나 그 신의 눈으로 '나쁜 일'을 한 뒤 버렸고, 지금은 **신의 눈도 무기도 없이** 괴물이 언제 어디에 나타날지 감지한다."
+       "t": "한때 신의 눈을 지녔으나 그 힘으로 '나쁜 일'을 저지른 뒤 신의 눈을 버렸고, 지금은 신의 눈도 무기도 없다."
       },
       {
-       "t_raw": "Ruin Hunter를 혼자서 순식간에 쓰러뜨리며, 겉보기에는 몸을 거의 움직이지 않은 듯하다.",
+       "t_raw": "그럼에도 몬스터가 언제 어디에 나타날지 감지하고, 홀로 Ruin Hunter를 순식간에 쓰러뜨리며 거의 움직이지도 않는 듯하다.",
        "interp": false,
        "dropped": false,
-       "t": "유적 헌터를 혼자서 순식간에 쓰러뜨리며, 겉보기에는 몸을 거의 움직이지 않은 듯하다."
+       "t": "그럼에도 몬스터가 언제 어디에 나타날지 감지하고, 홀로 유적 헌터를 순식간에 쓰러뜨리며 거의 움직이지도 않는 듯하다."
       },
       {
-       "t_raw": "이런 모습은 Vision을 포기한 뒤에도 그에게 남은 힘이 적지 않음을 보여 준다.",
+       "t_raw": "그는 자신이 바라던 정의를 이룬 뒤 Vision 없이 평온한 삶을 즐기며 스스로 '욕망에서 자유로워졌다'고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 자신이 바라던 정의를 이룬 뒤 신의 눈 없이 평온한 삶을 즐기며 스스로 '욕망에서 자유로워졌다'고 말했다."
+      },
+      {
+       "t_raw": "이처럼 Vision 없이도 발휘되는 힘과 욕망에서 벗어난 삶이 대비되어, 그의 강함은 단순한 전투력 이상으로 읽힌다.",
        "interp": true,
        "dropped": false,
-       "t": "이런 모습은 신의 눈을 포기한 뒤에도 그에게 남은 힘이 적지 않음을 보여 준다."
+       "t": "이처럼 신의 눈 없이도 발휘되는 힘과 욕망에서 벗어난 삶이 대비되어, 그의 강함은 단순한 전투력 이상으로 읽힌다."
       }
      ],
      "sources": [
@@ -1074,6 +1017,14 @@
        "revision": 576202,
        "section": "Profile",
        "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A28",
        "wiki_refs": []
       },
       {
@@ -1083,6 +1034,14 @@
        "section": "Known Vision Users",
        "paragraph": "M1",
        "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 523058,
+       "section": "About Visions > Losing a Vision",
+       "paragraph": "M3",
+       "wiki_refs": []
       }
      ],
      "heading": "능력",
@@ -1090,33 +1049,39 @@
     },
     {
      "section": "능력",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He is also one of the few people who is aware that the Traveler is able to manipulate the elements without using a Vision.",
+     "status": "accepted",
+     "note": "Discernment, the inn and the two pasts, the Traveler’s Visionless elements, and the chosen-one / bad-things lines are all stated; the last sentence stays interpretive.",
+     "quote": "When needing to talk, Jiangxue is revealed to be highly discerning and intelligent; he is aware that the inn is not what it seems to be as he is aware of Yanxiao and Verr Goldet's past.",
      "sentences": [
       {
-       "t_raw": "Jiangxue는 대화가 필요할 때 매우 분별력 있고 지적인 면모를 드러낸다.",
+       "t_raw": "Jiangxue는 말이 필요할 때 매우 분별력 있고 영리하다.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 대화가 필요할 때 매우 분별력 있고 지적인 면모를 드러낸다."
+       "t": "강설은 말이 필요할 때 매우 분별력 있고 영리하다."
       },
       {
-       "t_raw": "여관이 겉보기와 다르다는 점을 알고, Yanxiao와 Verr Goldet의 과거도 파악한다.",
+       "t_raw": "Wangshu Inn이 겉모습과 다르다는 점을 알고 있고, Yanxiao와 Verr Goldet의 과거도 파악하고 있다.",
        "interp": false,
        "dropped": false,
-       "t": "여관이 겉보기와 다르다는 점을 알고, 언소와 베르 고데트의 과거도 파악한다."
+       "t": "망서 객잔이 겉모습과 다르다는 점을 알고 있고, 언소와 베르 고데트의 과거도 파악하고 있다."
       },
       {
-       "t_raw": "Traveler가 Vision 없이 원소를 다룰 수 있음을 아는 몇 안 되는 사람이기도 하다.",
+       "t_raw": "Traveler가 Vision 없이 원소를 다룰 수 있음을 아는 드문 인물이기도 하다.",
        "interp": false,
        "dropped": false,
-       "t": "여행자가 신의 눈 없이 원소를 다룰 수 있음을 아는 몇 안 되는 사람이기도 하다."
+       "t": "여행자가 신의 눈 없이 원소를 다룰 수 있음을 아는 드문 인물이기도 하다."
       },
       {
-       "t_raw": "이런 통찰력은 괴물을 감지하는 힘과 겹쳐, 그를 낚시꾼의 겉모습만으로 설명하기 어렵게 만든다.",
+       "t_raw": "그는 Traveler에게 자신도 한때 이 세계에서 선택받은 자 중 하나였고, 그 힘을 '나쁜 일'에 썼다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 여행자에게 자신도 한때 이 세계에서 선택받은 자 중 하나였고, 그 힘을 '나쁜 일'에 썼다고 말한다."
+      },
+      {
+       "t_raw": "이런 통찰력과 선택받은 자였던 과거가 겹치면서, 평범한 낚시꾼이라는 겉모습 뒤의 복잡한 사정이 드러난다.",
        "interp": true,
        "dropped": false,
-       "t": "이런 통찰력은 괴물을 감지하는 힘과 겹쳐, 그를 낚시꾼의 겉모습만으로 설명하기 어렵게 만든다."
+       "t": "이런 통찰력과 선택받은 자였던 과거가 겹치면서, 평범한 낚시꾼이라는 겉모습 뒤의 복잡한 사정이 드러난다."
       }
      ],
      "sources": [
@@ -1124,16 +1089,24 @@
        "kind": "wiki",
        "page": "Jiangxue",
        "revision": 576202,
-       "section": "Profile",
-       "paragraph": "A4",
+       "section": "Profile > Personality",
+       "paragraph": "A9",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Jiangxue",
        "revision": 576202,
-       "section": "Profile > Personality",
-       "paragraph": "A9",
+       "section": "Dialogue",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A28",
        "wiki_refs": []
       }
      ],
@@ -1142,33 +1115,45 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Treated well despite little work, Yanxiao’s long acquaintance and food, freeloader dislike, “thoughtful,” and the two pasts are all stated.",
      "quote": "While he is not fond of Jiangxue due to him being a freeloader at the inn, Smiley Yanxiao ensures that he has something to eat.",
      "sentences": [
       {
-       "t_raw": "Smiley Yanxiao는 Jiangxue가 여관에 얹혀산다고 여기며 탐탁지 않아 하지만, 그에게 먹을거리는 챙긴다.",
+       "t_raw": "Jiangxue는 Wangshu Inn에서 여관 일에 거의 보태지 않지만 **잘 대접받는다**.",
        "interp": false,
        "dropped": false,
-       "t": "언소는 강설이 여관에 얹혀산다고 여기며 탐탁지 않아 하지만, 그에게 먹을거리는 챙긴다."
+       "t": "강설은 망서 객잔에서 여관 일에 거의 보태지 않지만 **잘 대접받는다**."
       },
       {
-       "t_raw": "Jiangxue도 Yanxiao에게 잘 대접받고 있으면서 여관에 크게 기여하지는 않는 처지다.",
+       "t_raw": "Smiley Yanxiao는 그를 오래전부터 알아 왔고, 과거의 의문의 사건 뒤로 그에게 음식을 주는 유일한 사람이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "강설도 언소에게 잘 대접받고 있으면서 여관에 크게 기여하지는 않는 처지다."
+       "t": "언소는 그를 오래전부터 알아 왔고, 과거의 의문의 사건 뒤로 그에게 음식을 주는 유일한 사람이라고 말한다."
       },
       {
-       "t_raw": "Jiangxue는 '내가 먹을 것을 계속 챙겨 왔다고 여관 주인이 너에게 화가 난 건가'라고 묻는다.",
+       "t_raw": "그러나 Yanxiao는 그가 얹혀산다고 여겨 반기지 않으면서도 **먹을 것을 꼭 챙긴다**.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 '내가 먹을 것을 계속 챙겨 왔다고 여관 주인이 너에게 화가 난 건가'라고 묻는다."
+       "t": "그러나 언소는 그가 얹혀산다고 여겨 반기지 않으면서도 **먹을 것을 꼭 챙긴다**."
       },
       {
-       "t_raw": "Yanxiao의 못마땅함과 식사 챙김이 함께 나타나는 대목이라, 둘의 관계는 불만과 돌봄이 겹친 것으로 보인다.",
+       "t_raw": "Jiangxue는 그런 Yanxiao를 사려 깊은 사람이라 평한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강설은 그런 언소를 사려 깊은 사람이라 평한다."
+      },
+      {
+       "t_raw": "그는 Yanxiao와 Verr Goldet의 과거를 알고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 언소와 베르 고데트의 과거를 알고 있다."
+      },
+      {
+       "t_raw": "두 사람의 이런 모습은 서로를 오래 알아 온 사이임을 보여 주는 대목으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "언소의 못마땅함과 식사 챙김이 함께 나타나는 대목이라, 둘의 관계는 불만과 돌봄이 겹친 것으로 보인다."
+       "t": "두 사람의 이런 모습은 서로를 오래 알아 온 사이임을 보여 주는 대목으로 보인다."
       }
      ],
      "sources": [
@@ -1182,6 +1167,14 @@
       },
       {
        "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Profile",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
        "page": "Smiley Yanxiao",
        "revision": 422571,
        "section": "Profile > Personality",
@@ -1190,10 +1183,18 @@
       },
       {
        "kind": "quest",
-       "quest": "A Dish Beyond Mortal Ken",
-       "quest_ko": "속세를 뛰어넘는 요리",
-       "version": "1.6",
+       "quest": "Yanxiao's Crazy Kitchen",
+       "quest_ko": "떠들썩한 언소의 주방",
+       "version": "1.3",
        "speaker": "Jiangxue"
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Profile > Personality",
+       "paragraph": "A9",
+       "wiki_refs": []
       }
      ],
      "heading": "인간관계",
@@ -1201,33 +1202,40 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Last meal you got to cook here... Who told you so?",
+     "status": "accepted",
+     "note": "Sentence 3 turns “Is the innkeeper fed up with you” into the innkeeper being angry, which the line does not say.",
+     "quote": "He would later teach it to the Traveler and Smiley Yanxiao.",
      "sentences": [
       {
-       "t_raw": "Jiangxue는 필요한 말을 할 때 매우 분별력 있고 지적인 인물로 드러난다.",
+       "t_raw": "Traveler에게 Jiangxue는 자신의 과거를 털어놓는 상대다.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 필요한 말을 할 때 매우 분별력 있고 지적인 인물로 드러난다."
+       "t": "여행자에게 강설은 자신의 과거를 털어놓는 상대다."
       },
       {
-       "t_raw": "그는 여관이 보이는 그대로가 아니며 Yanxiao와 Verr Goldet의 과거를 알고, Traveler가 Vision 없이 원소를 다룰 수 있음을 아는 몇 안 되는 사람이다.",
+       "t_raw": "그는 Dihua Marsh에 ‘나쁜 일’을 하러 왔었다고 Traveler에게 털어놓고, 아직 온전히 놓지 못했다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 여관이 보이는 그대로가 아니며 언소와 베르 고데트의 과거를 알고, 여행자가 신의 눈 없이 원소를 다룰 수 있음을 아는 몇 안 되는 사람이다."
+       "t": "그는 적화주에 '나쁜 일'을 하러 왔었다고 여행자에게 털어놓고, 아직 온전히 놓지 못했다고 말한다."
       },
       {
-       "t_raw": "Jiangxue는 '여기서 마지막으로 요리하게 된 식사'를 언급하며 누가 그렇게 말했는지 되묻는다.",
+       "t_raw": "익힌 **Chicken Tofu Pudding** 조리법을 Traveler와 Smiley Yanxiao에게 전수한다.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 '여기서 마지막으로 요리하게 된 식사'를 언급하며 누가 그렇게 말했는지 되묻는다."
+       "t": "익힌 **꼬꼬 연두부** 조리법을 여행자와 언소에게 전수한다."
       },
       {
-       "t_raw": "이 되물음은 상대의 말에 담긴 사정을 캐묻는 장면으로, 그의 분별력이 Traveler를 대할 때도 드러나는 셈이다.",
+       "t_raw": "그는 Traveler가 자신을 먹여 와서 여관 주인이 Traveler에게 싫증이 난 것은 아닌지 걱정하기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 여행자가 자신을 먹여 와서 여관 주인이 여행자에게 싫증이 난 것은 아닌지 걱정하기도 한다."
+      },
+      {
+       "t_raw": "그가 Traveler에게 과거를 열어 보이고 조리법을 건네는 것은 그를 단순한 손님 이상으로 여기는 태도로 읽힌다.",
        "interp": true,
        "dropped": false,
-       "t": "이 되물음은 상대의 말에 담긴 사정을 캐묻는 장면으로, 그의 분별력이 여행자를 대할 때도 드러나는 셈이다."
+       "t": "그가 여행자에게 과거를 열어 보이고 조리법을 건네는 것은 그를 단순한 손님 이상으로 여기는 태도로 읽힌다."
       }
      ],
      "sources": [
@@ -1235,8 +1243,16 @@
        "kind": "wiki",
        "page": "Jiangxue",
        "revision": 576202,
-       "section": "Profile > Personality",
-       "paragraph": "A9",
+       "section": "Profile",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Profile",
+       "paragraph": "A6",
        "wiki_refs": []
       },
       {
@@ -1252,33 +1268,38 @@
     },
     {
      "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "These statues are not discussed in dialogue, but it is possible that they were formerly adepti who asked Rex Lapis to turn their bodies to stone after the Archon War.",
+     "status": "accepted",
+     "note": "All four sentences match A7 and A9, including the adepti-statue idea as only a possibility.",
+     "quote": "It is currently unclear what significance this area has and why Jiangxue can be found near these statues.",
      "sentences": [
       {
-       "t_raw": "Wangshu Inn 북동쪽, Dihua Marsh의 작은 섬에는 **돌짐승 석상들**이 원형으로 놓여 있다.",
+       "t_raw": "Wangshu Inn 북동쪽 Dihua Marsh의 작은 섬에는 짐승 모양 석상들이 원형으로 늘어서 있다.",
        "interp": false,
        "dropped": false,
-       "t": "망서 객잔 북동쪽, 적화주의 작은 섬에는 **돌짐승 석상들**이 원형으로 놓여 있다."
+       "t": "망서 객잔 북동쪽 적화주의 작은 섬에는 짐승 모양 석상들이 원형으로 늘어서 있다."
       },
       {
-       "t_raw": "이 석상들은 대화에서 설명되지 않지만, 마신 전쟁 뒤 adepti가 Rex Lapis에게 몸을 돌로 바꿔 달라고 했을 가능성이 있다.",
+       "t_raw": "이 석상들은 대화에서 다뤄지지 않고, 마신 전쟁 후 adepti들이 Rex Lapis에게 몸을 돌로 바꿔 달라고 청했다는 가능성이 제기된다.",
        "interp": false,
        "dropped": false,
-       "t": "이 석상들은 대화에서 설명되지 않지만, 마신 전쟁 뒤 adepti가 암왕제군에게 몸을 돌로 바꿔 달라고 했을 가능성이 있다."
+       "t": "이 석상들은 대화에서 다뤄지지 않고, 마신 전쟁 후 선인들이 암왕제군에게 몸을 돌로 바꿔 달라고 청했다는 가능성이 제기된다.",
+       "polish": {
+        "from": "이 석상들은 대화에서 다뤄지지 않고, 마신 전쟁 후 adepti들이 암왕제군에게 몸을 돌로 바꿔 달라고 청했다는 가능성이 제기된다.",
+        "text": "이 석상들은 대화에서 다뤄지지 않고, 마신 전쟁 후 선인들이 암왕제군에게 몸을 돌로 바꿔 달라고 청했다는 가능성이 제기된다.",
+        "by": "qwen"
+       }
       },
       {
-       "t_raw": "이곳의 의미와 Jiangxue가 석상 곁에 있는 이유는 불명확하다.",
+       "t_raw": "한편 Jiangxue는 Wangshu Inn이 보이는 그대로가 아님을 알고 Yanxiao와 Verr Goldet의 과거도 아는 인물이다.",
        "interp": false,
        "dropped": false,
-       "t": "이곳의 의미와 강설이 석상 곁에 있는 이유는 불명확하다."
+       "t": "한편 강설은 망서 객잔이 보이는 그대로가 아님을 알고 언소와 베르 고데트의 과거도 아는 인물이다."
       },
       {
-       "t_raw": "석상의 정체에 관한 추측과 그가 그곳에 있는 이유의 불명확함이 겹쳐, 이 섬은 해석의 여지를 남긴 장소로 보인다.",
-       "interp": true,
+       "t_raw": "이곳의 의미와 그가 이 석상들 곁에 머무는 이유는 분명하지 않다.",
+       "interp": false,
        "dropped": false,
-       "t": "석상의 정체에 관한 추측과 그가 그곳에 있는 이유의 불명확함이 겹쳐, 이 섬은 해석의 여지를 남긴 장소로 보인다."
+       "t": "이곳의 의미와 그가 이 석상들 곁에 머무는 이유는 분명하지 않다."
       }
      ],
      "sources": [
@@ -1289,75 +1310,7 @@
        "section": "Profile",
        "paragraph": "A7",
        "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Jiangxue also admits to the Traveler that he once went to Dihua Marsh to do \"bad things,\" but that those things were also something he \"had to do.\"",
-     "sentences": [
-      {
-       "t_raw": "Jiangxue의 과거는 흐릿하게만 언급된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "강설의 과거는 흐릿하게만 언급된다."
       },
-      {
-       "t_raw": "Smiley Yanxiao는 그를 오래 알고 있으며, 과거의 수수께끼 같은 사건 뒤로 그에게 음식을 주려는 유일한 사람이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "언소는 그를 오래 알고 있으며, 과거의 수수께끼 같은 사건 뒤로 그에게 음식을 주려는 유일한 사람이라고 말한다."
-      },
-      {
-       "t_raw": "Jiangxue는 한때 Dihua Marsh에서 **'나쁜 일'**을 했지만 그것도 '해야만 했던 일'이었다고 인정하고, 그 뒤 본래 이름과 Vision을 버리고 현재의 이름을 얻었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "강설은 한때 적화주에서 **'나쁜 일'**을 했지만 그것도 '해야만 했던 일'이었다고 인정하고, 그 뒤 본래 이름과 신의 눈을 버리고 현재의 이름을 얻었다."
-      },
-      {
-       "t_raw": "그의 과거는 그를 무겁게 누르는 듯하며, 그는 '완전히 놓아주지 못하고' 있다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그의 과거는 그를 무겁게 누르는 듯하며, 그는 '완전히 놓아주지 못하고' 있다고 말한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Profile",
-       "paragraph": "A5",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He is also one of the few people who is aware that the Traveler is able to manipulate the elements without using a Vision.",
-     "sentences": [
-      {
-       "t_raw": "그런데 Jiangxue는 Wangshu Inn이 겉모습과 다르다는 점과 Yanxiao, Verr Goldet의 과거를 알고 있고, Traveler가 Vision 없이 원소를 다룬다는 사실을 아는 몇 안 되는 인물이기도 하다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그런데 강설은 망서 객잔이 겉모습과 다르다는 점과 언소, 베르 고데트의 과거를 알고 있고, 여행자가 신의 눈 없이 원소를 다룬다는 사실을 아는 몇 안 되는 인물이기도 하다."
-      },
-      {
-       "t_raw": "주변의 비밀을 읽어 내면서도 자신의 '나쁜 일'은 구체화하지 않는 대비는, 그의 과거가 **풀리지 않은 수수께끼**로 남아 있음을 보여 준다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "주변의 비밀을 읽어 내면서도 자신의 '나쁜 일'은 구체화하지 않는 대비는, 그의 과거가 **풀리지 않은 수수께끼**로 남아 있음을 보여 준다고 볼 수 있다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Jiangxue",
@@ -1365,13 +1318,73 @@
        "section": "Profile > Personality",
        "paragraph": "A9",
        "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "He does say the deeds were bad and necessary, but the line that the aftermath is still heavy is the narrator’s “seems,” not something he states.",
+     "quote": "Time slips by, and yet here I am, still unable to wholly let go. How shameful.",
+     "sentences": [
+      {
+       "t_raw": "Jiangxue는 오래전에 본명을 쓰지 않게 되었고, Vision을 버린 뒤 현재의 이름을 택했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "강설은 오래전에 본명을 쓰지 않게 되었고, 신의 눈을 버린 뒤 현재의 이름을 택했다."
       },
+      {
+       "t_raw": "그는 **나쁜 일**을 했지만 해야만 했던 일이었다고 말하며, 그의 과거는 지금도 무겁게 느껴지는 듯하다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 **나쁜 일**을 했지만 해야만 했던 일이었다고 말하며, 그의 과거는 지금도 무겁게 느껴지는 듯하다."
+      },
+      {
+       "t_raw": "지금은 **욕망에서 자유롭다**고 하면서도 온전히 놓지 못했고, Xiao Lantern도 오랫동안 띄우지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지금은 **욕망에서 자유롭다**고 하면서도 온전히 놓지 못했고, 소등도 오랫동안 띄우지 않았다."
+      },
+      {
+       "t_raw": "정의를 실현하고 욕망에서 자유로워진 평화와 이런 잔여 감정 사이에는 설명되지 않은 간극이 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정의를 실현하고 욕망에서 자유로워진 평화와 이런 잔여 감정 사이에는 설명되지 않은 간극이 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Jiangxue",
        "revision": 576202,
        "section": "Profile",
        "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jiangxue",
+       "revision": 576202,
+       "section": "Dialogue",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Yanxiao's Crazy Kitchen",
+       "quest_ko": "떠들썩한 언소의 주방",
+       "version": "1.3",
+       "speaker": "Jiangxue"
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 523058,
+       "section": "About Visions > Losing a Vision",
+       "paragraph": "M3",
        "wiki_refs": []
       }
      ],
@@ -1380,27 +1393,39 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Those lines are separate idle quotes; the text does not say they are muttered while fishing or spoken as one continuing sequence.",
      "quote": "Mmm...never mind.",
      "sentences": [
       {
-       "t_raw": "Jiangxue는 낚시를 하다가 **“...저쪽.”**이라고 짧게 혼잣말을 흘리기도 한다.",
+       "t_raw": "Jiangxue는 idle 대사로 ‘...That way.’라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 낚시를 하다가 **“...저쪽.”**이라고 짧게 혼잣말을 흘리기도 한다."
+       "repaired": true,
+       "t": "강설은 대기 대사로 '...저쪽이야.'라고 말한다.",
+       "polish": {
+        "from": "강설은 idle 대사로 '...That way.'라고 말한다.",
+        "text": "강설은 대기 대사로 '...저쪽이야.'라고 말한다.",
+        "by": "qwen"
+       }
       },
       {
-       "t_raw": "“음. 위쪽은... 저쪽.”이라고 방향을 짚듯 말하기도 한다.",
+       "t_raw": "Jiangxue의 idle 대사에는 ‘Hmm. Way up is...that way.’, ‘Mmm...’, ‘Mmm...never mind.’가 각각 따로따로 있다.",
        "interp": false,
        "dropped": false,
-       "t": "“음. 위쪽은... 저쪽.”이라고 방향을 짚듯 말하기도 한다."
+       "repaired": true,
+       "t": "강설의 대기 대사에는 '흠. 올라가는 길은...저쪽이야.', '음...', '음... 아무것도 아니야.'가 각각 따로따로 있다.",
+       "polish": {
+        "from": "강설의 idle 대사에는 'Hmm. Way up is...that way.', 'Mmm...', 'Mmm...never mind.'가 각각 따로따로 있다.",
+        "text": "강설의 대기 대사에는 '흠. 올라가는 길은...저쪽이야.', '음...', '음... 아무것도 아니야.'가 각각 따로따로 있다.",
+        "by": "qwen"
+       }
       },
       {
-       "t_raw": "짧게 “음...” 하고 끝나는가 하면, “음... 아무것도 아니다.”라며 말끝을 흐리는 혼잣말도 있다.",
-       "interp": false,
+       "t_raw": "이처럼 **짧게 끊기는 대사**는 무언가를 말하려다가 이내 접는 듯한 인상을 준다.",
+       "interp": true,
        "dropped": false,
-       "t": "짧게 “음...” 하고 끝나는가 하면, “음... 아무것도 아니다.”라며 말끝을 흐리는 혼잣말도 있다."
+       "t": "이처럼 **짧게 끊기는 대사**는 무언가를 말하려다가 이내 접는 듯한 인상을 준다."
       }
      ],
      "sources": [
@@ -1443,26 +1468,69 @@
     {
      "section": "여담",
      "status": "accepted",
-     "note": "All three sentences match A33, A3 and A34.",
-     "quote": "Following a certain dialogue branch for the first time gives five Fish.",
+     "note": "The meatball and crab-roe comments match Q1 and Q7, and the savoring remark is a hedged reading of them.",
+     "quote": "Huh? There's crab roe in the meat, no wonder it tastes so unusually fresh.",
      "sentences": [
       {
-       "t_raw": "Jiangxue는 물고기를 원하면 그냥 가지라고 말한다.",
+       "t_raw": "Jiangxue는 완자가 나쁘지 않다며 고기가 입에서 녹고 국물의 맛도 깊다고 평한다.",
        "interp": false,
        "dropped": false,
-       "t": "강설은 물고기를 원하면 그냥 가지라고 말한다."
+       "t": "강설은 완자가 나쁘지 않다며 고기가 입에서 녹고 국물의 맛도 깊다고 평한다."
       },
       {
-       "t_raw": "대화에서 특정 분기를 처음 따라가면 실제로 **Fish 5마리**를 받는다.",
+       "t_raw": "고기 속에서 게알을 발견하고는 유난히 신선한 맛의 이유를 알아챈다.",
        "interp": false,
        "dropped": false,
-       "t": "대화에서 특정 분기를 처음 따라가면 실제로 **생선 살코기 5마리**를 받는다."
+       "t": "고기 속에서 게알을 발견하고는 유난히 신선한 맛의 이유를 알아챈다."
       },
       {
-       "t_raw": "그 대화의 결과는 **Fish ×5**로 남는다.",
+       "t_raw": "완자의 식감과 국물 맛을 짚은 뒤 고기 속 게알까지 알아채는 모습은 그가 **음식의 맛을 세심하게 음미한다**는 인상을 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "완자의 식감과 국물 맛을 짚은 뒤 고기 속 게알까지 알아채는 모습은 그가 **음식의 맛을 세심하게 음미한다**는 인상을 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Dish Beyond Mortal Ken",
+       "quest_ko": "속세를 뛰어넘는 요리",
+       "version": "1.6",
+       "speaker": "Jiangxue"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Dish Beyond Mortal Ken",
+       "quest_ko": "속세를 뛰어넘는 요리",
+       "version": "1.6",
+       "speaker": "Jiangxue"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Both lines are in the Moonchase / Moonlight Merriment material.",
+     "quote": "Cooking is much like martial arts. One can only improve when rivals to compete with.",
+     "sentences": [
+      {
+       "t_raw": "Moonchase Festival 때 Jiangxue는 ‘Moonchase Festival is here...’라고 한마디 한다.",
        "interp": false,
        "dropped": false,
-       "t": "그 대화의 결과는 **생선 살코기 ×5**로 남는다."
+       "t": "축월절 때 강설은 '축월절이 왔어...'라고 한마디 한다.",
+       "polish": {
+        "from": "축월절 때 강설은 '축월절 is here...'라고 한마디 한다.",
+        "text": "축월절 때 강설은 '축월절이 왔어...'라고 한마디 한다.",
+        "by": "qwen"
+       }
+      },
+      {
+       "t_raw": "그리고 요리는 무예와 비슷해 겨룰 상대가 있어야 늘 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그리고 요리는 무예와 비슷해 겨룰 상대가 있어야 늘 수 있다고 말한다."
       }
      ],
      "sources": [
@@ -1470,24 +1538,16 @@
        "kind": "wiki",
        "page": "Jiangxue",
        "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A33",
+       "section": "Idle Quotes",
+       "paragraph": "A15",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Jiangxue",
        "revision": 576202,
-       "section": null,
-       "paragraph": "A3",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Jiangxue",
-       "revision": 576202,
-       "section": "Dialogue",
-       "paragraph": "A34",
+       "section": "Event Dialogue > Moonlight Merriment",
+       "paragraph": "A39",
        "wiki_refs": []
       }
      ],
@@ -1497,10 +1557,10 @@
    ],
    "quote_boxes": [
     {
-     "section": "Vision을 버린 사연",
+     "section": "정체와 배경",
      "status": "accepted",
-     "note": "Faithful translation.",
-     "t_raw": "시간은 흘러가는데, 나는 아직 완전히 놓아버리지 못한 채 여기 있구나. 참 부끄러운 일이다.",
+     "note": "The Korean line faithfully translates the given dialogue.",
+     "t_raw": "시간은 흘러가는데, 나는 여전히 온전히 놓아주지 못하고 있군. 부끄러운 일이야.",
      "en": "Time slips by, and yet here I am, still unable to wholly let go. How shameful.",
      "speaker": "Jiangxue",
      "source": {
@@ -1510,14 +1570,65 @@
       "version": "1.3",
       "speaker": "Jiangxue"
      },
-     "t": "시간은 흘러가는데, 나는 아직 완전히 놓아버리지 못한 채 여기 있구나. 참 부끄러운 일이다.",
+     "t": "시간은 흘러가는데, 나는 여전히 온전히 놓아주지 못하고 있군. 부끄러운 일이야.",
      "speaker_ko": "강설"
     },
     {
-     "section": "작중 행적 — Lantern Rite",
+     "section": "Wangshu Inn에서의 생활",
      "status": "accepted",
-     "note": "Faithful translation.",
-     "t_raw": "시간은 흘러가는데, 나는 여전히 완전히 놓지 못하고 있다. 부끄러운 일이다.",
+     "note": "Faithful: take one, deliver the other to Jiangxue, usually fishing near the inn.",
+     "t_raw": "하나는 내가 가질 테니, 다른 하나는 자네가 Jiangxue에게 전해 주게나. 그는 보통 여관 근처에서 낚시하고 있네.",
+     "en": "I'll take one of them, and I'd like you to help me send the other to Jiangxue. He can usually be found fishing near the inn.",
+     "speaker": "Smiley Yanxiao",
+     "source": {
+      "kind": "quest",
+      "quest": "Yanxiao's Crazy Kitchen",
+      "quest_ko": "떠들썩한 언소의 주방",
+      "version": "1.3",
+      "speaker": "Smiley Yanxiao"
+     },
+     "t": "하나는 내가 가질 테니, 다른 하나는 자네가 강설에게 전해 주게나. 그는 보통 여관 근처에서 낚시하고 있네.",
+     "speaker_ko": "언소"
+    },
+    {
+     "section": "작중 행적 — Xiao Lantern과 요리",
+     "status": "accepted",
+     "note": "Faithful: nothing to wish for, and he has not released his own Xiao Lantern in a long time.",
+     "t_raw": "나는 빌 소원이 없고, 내 Xiao Lantern을 놓아 보낸 지도 오래다...",
+     "en": "I don't have anything to wish for, nor have I released a Xiao Lantern of my own in a long time...",
+     "speaker": "Jiangxue",
+     "source": {
+      "kind": "quest",
+      "quest": "Yanxiao's Crazy Kitchen",
+      "quest_ko": "떠들썩한 언소의 주방",
+      "version": "1.3",
+      "speaker": "Jiangxue"
+     },
+     "t": "나는 빌 소원이 없고, 내 소등을 놓아 보낸 지도 오래다...",
+     "speaker_ko": "강설"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful: the chef is thoughtful and has changed a great deal since their first meeting.",
+     "t_raw": "하, 그 요리사는 참 사려 깊은 사람이군. 그는... 우리가 처음 만난 뒤로 정말 많이 변했어.",
+     "en": "Ha, that chef is a thoughtful man indeed. He's... changed a great deal since our initial meeting.",
+     "speaker": "Jiangxue",
+     "source": {
+      "kind": "quest",
+      "quest": "Yanxiao's Crazy Kitchen",
+      "quest_ko": "떠들썩한 언소의 주방",
+      "version": "1.3",
+      "speaker": "Jiangxue"
+     },
+     "t": "하, 그 요리사는 참 사려 깊은 사람이군. 그는... 우리가 처음 만난 뒤로 정말 많이 변했어.",
+     "speaker_ko": "강설"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful: time passes, he still cannot wholly let go, and he calls that shameful.",
+     "t_raw": "시간은 흘러가는데, 나는 아직 온전히 놓지 못하고 있다. 참 부끄러운 일이다.",
      "en": "Time slips by, and yet here I am, still unable to wholly let go. How shameful.",
      "speaker": "Jiangxue",
      "source": {
@@ -1527,14 +1638,14 @@
       "version": "1.3",
       "speaker": "Jiangxue"
      },
-     "t": "시간은 흘러가는데, 나는 여전히 완전히 놓지 못하고 있다. 부끄러운 일이다.",
+     "t": "시간은 흘러가는데, 나는 아직 온전히 놓지 못하고 있다. 참 부끄러운 일이다.",
      "speaker_ko": "강설"
     },
     {
-     "section": "요리와의 인연",
+     "section": "여담",
      "status": "accepted",
-     "note": "Faithful translation.",
-     "t_raw": "어? 고기 속에 게 알이 들어 있네, 어쩐지 유난히 신선한 맛이 나는군.",
+     "note": "Faithful: crab roe in the meat explains the unusually fresh taste.",
+     "t_raw": "어라? 고기 안에 게알이 들었네, 그래서 이렇게 유난히 신선한 맛이구나.",
      "en": "Huh? There's crab roe in the meat, no wonder it tastes so unusually fresh.",
      "speaker": "Jiangxue",
      "source": {
@@ -1544,41 +1655,7 @@
       "version": "1.6",
       "speaker": "Jiangxue"
      },
-     "t": "어? 고기 속에 게 알이 들어 있네, 어쩐지 유난히 신선한 맛이 나는군.",
-     "speaker_ko": "강설"
-    },
-    {
-     "section": "인간관계",
-     "status": "accepted",
-     "note": "Faithful translation; 'fed up' is rendered acceptably as 화가 난.",
-     "t_raw": "이런, 나 때문인가? 내가 먹을 것을 계속 챙겨 왔다고 여관 주인이 너에게 화가 난 건가?",
-     "en": "Oh no, is it because of me? Is the innkeeper fed up with you because you've been feeding me all this time?",
-     "speaker": "Jiangxue",
-     "source": {
-      "kind": "quest",
-      "quest": "A Dish Beyond Mortal Ken",
-      "quest_ko": "속세를 뛰어넘는 요리",
-      "version": "1.6",
-      "speaker": "Jiangxue"
-     },
-     "t": "이런, 나 때문인가? 내가 먹을 것을 계속 챙겨 왔다고 여관 주인이 너에게 화가 난 건가?",
-     "speaker_ko": "강설"
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "disputed",
-     "note": "'놓아주지 못하고' means 'unable to set (someone or something) free', which shifts the sense of 'unable to let go' (놓지 못하다, 놓아버리지 못하다). The meaning changes slightly.",
-     "t_raw": "시간은 흘러가는데, 나는 여전히 완전히 놓아주지 못하고 있군. 참 부끄러운 일이야.",
-     "en": "Time slips by, and yet here I am, still unable to wholly let go. How shameful.",
-     "speaker": "Jiangxue",
-     "source": {
-      "kind": "quest",
-      "quest": "Yanxiao's Crazy Kitchen",
-      "quest_ko": "떠들썩한 언소의 주방",
-      "version": "1.3",
-      "speaker": "Jiangxue"
-     },
-     "t": "시간은 흘러가는데, 나는 여전히 완전히 놓아주지 못하고 있군. 참 부끄러운 일이야.",
+     "t": "어라? 고기 안에 게알이 들었네, 그래서 이렇게 유난히 신선한 맛이구나.",
      "speaker_ko": "강설"
     }
    ]

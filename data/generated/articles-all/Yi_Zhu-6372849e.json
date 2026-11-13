@@ -1,0 +1,977 @@
+{
+ "node": "Yi Zhu",
+ "articles": [
+  {
+   "node": "Yi Zhu",
+   "from_version": "1.3",
+   "cutoff": "2021-03-16T00:00:00Z",
+   "input": [
+    {
+     "page": "Yi Zhu",
+     "url": "https://genshin-impact.fandom.com/wiki/Yi_Zhu",
+     "revision": 129713
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 12,
+    "web": 0
+   },
+   "input_chars": 1880,
+   "input_cut": false,
+   "input_hash": "bddad5d738cd",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, A13, A14, Q4 and A16. The interpretation in (3) follows reasonably from them.",
+     "quote": "I can't let Yi Xian see me unhappy.",
+     "sentences": [
+      {
+       "t_raw": "Yi Zhu는 Liyue Harbor의 NPC이자 Yi Xian의 오빠이며, 낮에는 Yi Xian을 달래고 밤에는 Changshun의 노점 곁에서 만날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일주는 리월항의 NPC이자 일현의 오빠이며, 낮에는 일현을 달래고 밤에는 창순의 노점 곁에서 만날 수 있다."
+      },
+      {
+       "t_raw": "어머니가 돌아가신 뒤 빈 집에서 Yi Xian이 외로워할까 봐 장난감을 사려 하고, Changshun이 하나를 무료로 고르게 해 준 호의에 감사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어머니가 돌아가신 뒤 빈 집에서 일현이 외로워할까 봐 장난감을 사려 하고, 창순이 하나를 무료로 고르게 해 준 호의에 감사한다."
+      },
+      {
+       "t_raw": "어머니를 별이라고 설명하면서도 Yi Xian 앞에서는 눈물을 보이지 않으려 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어머니를 별이라고 설명하면서도 일현 앞에서는 눈물을 보이지 않으려 한다."
+      },
+      {
+       "t_raw": "어머니의 부재를 동생에게 설명하면서도 자신의 슬픔을 숨기려는 태도는, 이 인물이 가족을 돌보는 방식을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "어머니의 부재를 동생에게 설명하면서도 자신의 슬픔을 숨기려는 태도는, 이 인물이 가족을 돌보는 방식을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Yi Zhu's Snack",
+       "quest_ko": "일주의 디저트 의뢰",
+       "version": "1.1",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts match A1 and A2. The interpretation in (3) is a modest reading of the day and night locations.",
+     "quote": "During the day, he can be found consoling his sister over their mother's recent passing. During the night, he can be found by Changshun's stall.",
+     "sentences": [
+      {
+       "t_raw": "Yi Zhu는 **Liyue Harbor의 NPC**이자 **Yi Xian의 오빠**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일주는 **리월항의 NPC**이자 **일현의 오빠**다."
+      },
+      {
+       "t_raw": "낮에는 어머니의 최근 별세를 두고 Yi Xian을 달랜다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에는 어머니의 최근 별세를 두고 일현을 달랜다."
+      },
+      {
+       "t_raw": "밤에는 **Changshun의 노점** 곁에서 그를 볼 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에는 **창순의 노점** 곁에서 그를 볼 수 있다."
+      },
+      {
+       "t_raw": "낮의 동생 곁과 밤의 Changshun의 노점이라는 두 자리는 Yi Zhu가 가족을 살피는 시간과 Changshun의 노점에 머무는 시간으로 하루를 나누어 보내는 인물임을 보여주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "낮의 동생 곁과 밤의 창순의 노점이라는 두 자리는 일주가 가족을 살피는 시간과 창순의 노점에 머무는 시간으로 하루를 나누어 보내는 인물임을 보여주는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "작중 행적 — Yi Zhu's Snack",
+     "status": "accepted",
+     "note": "Supported by Q2 and Q10.",
+     "quote": "Yay, Almond Tofu! I'll take that.",
+     "sentences": [
+      {
+       "t_raw": "Yi Zhu는 자신의 의뢰를 보고 찾아온 상대에게 **Almond Tofu**를 준비했는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일주는 자신의 의뢰를 보고 찾아온 상대에게 **행인두부**를 준비했는지 묻는다."
+      },
+      {
+       "t_raw": "Almond Tofu를 받으면 기뻐하며 자기가 받겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "행인두부를 받으면 기뻐하며 자기가 받겠다고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Yi Zhu's Snack",
+       "quest_ko": "일주의 디저트 의뢰",
+       "version": "1.1",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "quest",
+       "quest": "Yi Zhu's Snack",
+       "quest_ko": "일주의 디저트 의뢰",
+       "version": "1.1",
+       "speaker": "Yi Zhu"
+      }
+     ],
+     "heading": "작중 행적 — 일주의 디저트 의뢰",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Yi Zhu's Snack",
+     "status": "accepted",
+     "note": "Supported by Q4, Q12, Q6 and Q8. The interpretation in (4) is reasonable.",
+     "quote": "Yi Xian, what happened was... Mommy is one of the stars in the sky now.",
+     "sentences": [
+      {
+       "t_raw": "Yi Zhu는 Yi Xian에게 무슨 일이 있었냐면 엄마가 이제 **하늘의 별** 중 하나라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일주는 일현에게 무슨 일이 있었냐면 엄마가 이제 **하늘의 별** 중 하나라고 말한다."
+      },
+      {
+       "t_raw": "그러면서 엄마는 집에 오지 않는다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 엄마는 집에 오지 않는다고 덧붙인다."
+      },
+      {
+       "t_raw": "Yi Xian에게 착한 아이가 되라며 집에 갈 시간이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일현에게 착한 아이가 되라며 집에 갈 시간이라고 말한다."
+      },
+      {
+       "t_raw": "Yi Xian이 엉뚱한 말을 하면 그런 말을 하지 말라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일현이 엉뚱한 말을 하면 그런 말을 하지 말라고 한다."
+      },
+      {
+       "t_raw": "별이 되었다는 말과 집에 오지 않는다는 말이 함께 놓여, 어머니의 부재를 돌려 말하면서도 집으로 돌아오지 않는다는 결론을 함께 전하는 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "별이 되었다는 말과 집에 오지 않는다는 말이 함께 놓여, 어머니의 부재를 돌려 말하면서도 집으로 돌아오지 않는다는 결론을 함께 전하는 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Yi Zhu's Snack",
+       "quest_ko": "일주의 디저트 의뢰",
+       "version": "1.1",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "quest",
+       "quest": "Yi Zhu's Snack",
+       "quest_ko": "일주의 디저트 의뢰",
+       "version": "1.1",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "quest",
+       "quest": "Yi Zhu's Snack",
+       "quest_ko": "일주의 디저트 의뢰",
+       "version": "1.1",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "quest",
+       "quest": "Yi Zhu's Snack",
+       "quest_ko": "일주의 디저트 의뢰",
+       "version": "1.1",
+       "speaker": "Yi Zhu"
+      }
+     ],
+     "heading": "작중 행적 — 일주의 디저트 의뢰",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — City of Chores",
+     "status": "accepted",
+     "note": "Supported by Q1, Q3, Q5 and Q7. The interpretation in (3) is mild and reasonable.",
+     "quote": "Little Xian was writing her wish on a Xiao Lantern when she suddenly lost her grip on it, and the Lantern flew away that way...",
+     "sentences": [
+      {
+       "t_raw": "Yi Xian은 Xiao Lantern에 소원을 쓰던 중 손에서 놓쳐 Xiao Lantern이 날아가 버렸고, Yi Zhu는 그것이 저쪽으로 날아갔다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일현은 소등에 소원을 쓰던 중 손에서 놓쳐 소등이 날아가 버렸고, 일주는 그것이 저쪽으로 날아갔다고 전한다."
+      },
+      {
+       "t_raw": "그는 동생에게 **착한 Millelith 아저씨**가 가져오러 갔다고 말하며, 그 Millelith가 Xiao Lantern이 나무에 걸려 있는 것을 보았다고 했다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 동생에게 **착한 천암군 아저씨**가 가져오러 갔다고 말하며, 그 천암군이 소등이 나무에 걸려 있는 것을 보았다고 했다고 덧붙인다."
+      },
+      {
+       "t_raw": "Yi Zhu는 Little Xian에게 그 아저씨가 **곧 가져다줄 것**이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일주는 Little Xian에게 그 아저씨가 **곧 가져다줄 것**이라고 말한다."
+      },
+      {
+       "t_raw": "잃어버린 Xiao Lantern을 두고 동생과 함께 Millelith를 기다리는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "잃어버린 소등을 두고 동생과 함께 천암군을 기다리는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "City of Chores",
+       "quest_ko": "성의 만사",
+       "version": "1.3",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "quest",
+       "quest": "City of Chores",
+       "quest_ko": "성의 만사",
+       "version": "1.3",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "quest",
+       "quest": "City of Chores",
+       "quest_ko": "성의 만사",
+       "version": "1.3",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "quest",
+       "quest": "City of Chores",
+       "quest_ko": "성의 만사",
+       "version": "1.3",
+       "speaker": "Yi Zhu"
+      }
+     ],
+     "heading": "작중 행적 — 성의 만사",
+     "latin_left": [
+      "Little Xian"
+     ]
+    },
+    {
+     "section": "작중 행적 — City of Chores",
+     "status": "accepted",
+     "note": "Supported by Q9 and Q11. The interpretation in (2) is hedged and follows from the English.",
+     "quote": "Are you looking for that nice Millelith?",
+     "sentences": [
+      {
+       "t_raw": "Yi Zhu는 다른 하나를 만들자고 말했다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일주는 다른 하나를 만들자고 말했다고 한다."
+      },
+      {
+       "t_raw": "그는 상대에게 **그 착한 Millelith**를 찾는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 상대에게 **그 착한 천암군**을 찾는지 묻는다."
+      },
+      {
+       "t_raw": "다른 하나를 만들자는 말과 Millelith를 찾는 물음이 겹쳐, Yi Zhu 역시 잃어버린 Xiao Lantern을 마음에 두고 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "다른 하나를 만들자는 말과 천암군을 찾는 물음이 겹쳐, 일주 역시 잃어버린 소등을 마음에 두고 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "City of Chores",
+       "quest_ko": "성의 만사",
+       "version": "1.3",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "quest",
+       "quest": "City of Chores",
+       "quest_ko": "성의 만사",
+       "version": "1.3",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "quest",
+       "quest": "City of Chores",
+       "quest_ko": "성의 만사",
+       "version": "1.3",
+       "speaker": "Yi Zhu"
+      }
+     ],
+     "heading": "작중 행적 — 성의 만사",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "All sentences are supported by the Lantern Rite idle quote lines.",
+     "quote": "Let's make a Xiao Lantern for Mommy. Shall we?",
+     "sentences": [
+      {
+       "t_raw": "Lantern Rite 기간 낮에 Yi Zhu는 어머니를 위한 Xiao Lantern을 함께 만들자고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "해등절 기간 낮에 일주는 어머니를 위한 소등을 함께 만들자고 말한다."
+      },
+      {
+       "t_raw": "낮의 유휴 대사에는 이런 말이 나오고, 밤의 유휴 대사는 평소와 같다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮의 유휴 대사에는 이런 말이 나오고, 밤의 유휴 대사는 평소와 같다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "The sentences match the Lantern Rite night dialogue. The interpretation follows from Changshun setting materials aside.",
+     "quote": "I promised Yi Xian that we would make a Xiao Lantern together for Mommy, but I couldn't gather the materials we needed.",
+     "sentences": [
+      {
+       "t_raw": "Lantern Rite 기간 밤에 Yi Zhu에게 말을 걸면, 그는 자신을 Yi Zhu라 소개하고 여동생 Yi Xian을 아는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "해등절 기간 밤에 일주에게 말을 걸면, 그는 자신을 일주라 소개하고 여동생 일현을 아는지 묻는다."
+      },
+      {
+       "t_raw": "이어 Yi Xian과 어머니를 위한 Xiao Lantern을 함께 만들기로 약속했지만 필요한 재료를 모으지 못했고, Changshun이 따로 남겨 둔 재료를 쓸 수 있었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 일현과 어머니를 위한 소등을 함께 만들기로 약속했지만 필요한 재료를 모으지 못했고, 창순이 따로 남겨 둔 재료를 쓸 수 있었다고 말한다."
+      },
+      {
+       "t_raw": "모두가 자신과 여동생에게 잘해 준다며 훌쩍이다가, 잠시 말을 잇지 못한 뒤 Yi Xian 앞에서 슬픈 모습을 보이지 않으려고 울지 않겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모두가 자신과 여동생에게 잘해 준다며 훌쩍이다가, 잠시 말을 잇지 못한 뒤 일현 앞에서 슬픈 모습을 보이지 않으려고 울지 않겠다고 말한다."
+      },
+      {
+       "t_raw": "Changshun의 배려 덕분에 두 남매가 약속한 Xiao Lantern을 만들 길이 열린 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "창순의 배려 덕분에 두 남매가 약속한 소등을 만들 길이 열린 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A28",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A29",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "The farewell line is stated in the English.",
+     "quote": "Goodbye... May the flames of wisdom spread to all, and never be extinguished.",
+     "sentences": [
+      {
+       "t_raw": "헤어질 때 Yi Zhu는 작별 인사를 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헤어질 때 일주는 작별 인사를 건넨다."
+      },
+      {
+       "t_raw": "그 인사는 지혜의 불꽃이 모든 곳에 퍼져 영원히 꺼지지 않기를 바라는 말로 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 인사는 지혜의 불꽃이 모든 곳에 퍼져 영원히 꺼지지 않기를 바라는 말로 이어진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A31",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계와 태도",
+     "status": "accepted",
+     "note": "Every sentence is supported. The interpretation about hiding sadness from the sister is reasonable and reads as interpretation.",
+     "quote": "Brave girl... Come on, don't cry now...",
+     "sentences": [
+      {
+       "t_raw": "Yi Zhu는 낮에 'Brave girl...'이라 부르며 'Come on, don't cry now...'라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일주는 낮에 '용감한 소녀...'라 부르며 '자, 이제 울지 마...'라고 말한다.",
+       "polish": {
+        "from": "일주는 낮에 'Brave girl...'이라 부르며 'Come on, don't cry now...'라고 말한다.",
+        "text": "일주는 낮에 '용감한 소녀...'라 부르며 '자, 이제 울지 마...'라고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "밤에는 집이 비어 요즘 Yi Xian이 외로울까 걱정해서 새 장난감을 사 줄 생각을 했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에는 집이 비어 요즘 일현이 외로울까 걱정해서 새 장난감을 사 줄 생각을 했다고 전한다."
+      },
+      {
+       "t_raw": "그러면서도 자신은 *sniff*하며 **울지 않으려 하고**, Yi Xian이 자신의 슬픈 모습을 보지 않게 하려 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서도 자신은 *훌쩍*하며 **울지 않으려 하고**, 일현이 자신의 슬픈 모습을 보지 않게 하려 한다.",
+       "polish": {
+        "from": "그러면서도 자신은 *sniff*하며 **울지 않으려 하고**, 일현이 자신의 슬픈 모습을 보지 않게 하려 한다.",
+        "text": "그러면서도 자신은 *훌쩍*하며 **울지 않으려 하고**, 일현이 자신의 슬픈 모습을 보지 않게 하려 한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "낮의 격려와 밤의 참음은 동생 앞에서 **슬픔을 감추려는 태도**로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "낮의 격려와 밤의 참음은 동생 앞에서 **슬픔을 감추려는 태도**로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계와 태도",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계와 태도",
+     "status": "accepted",
+     "note": "Every sentence is supported by the nighttime quote and dialogue. The interpretation is reasonable.",
+     "quote": "Thank you... So very much, lady.",
+     "sentences": [
+      {
+       "t_raw": "밤에 Yi Zhu는 'Thank you... So very much, lady.'라고 감사를 남긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에 일주는 '고마워요... 정말 많이요, 아가씨.'라고 감사를 남긴다.",
+       "polish": {
+        "from": "밤에 일주는 'Thank you... So very much, lady.'라고 감사를 남긴다.",
+        "text": "밤에 일주는 '고마워요... 정말 많이요, 아가씨.'라고 감사를 남긴다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Changshun이 이해해 주어 장난감 하나를 집에 가져가도 된다고 했다는 말을 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "창순이 이해해 주어 장난감 하나를 집에 가져가도 된다고 했다는 말을 전한다."
+      },
+      {
+       "t_raw": "자신과 동생에게 모두가 잘해 준다며 *sniff*한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자신과 동생에게 모두가 잘해 준다며 *훌쩍*한다.",
+       "polish": {
+        "from": "자신과 동생에게 모두가 잘해 준다며 *sniff*한다.",
+        "text": "자신과 동생에게 모두가 잘해 준다며 *훌쩍*한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Changshun이 장난감을 고르게 해 준 일과 밤의 감사 인사, *sniff*는 호의를 받아들이면서도 감정을 누르는 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "창순이 장난감을 고르게 해 준 일과 밤의 감사 인사, *훌쩍*은 호의를 받아들이면서도 감정을 누르는 모습으로 보인다.",
+       "polish": {
+        "from": "창순이 장난감을 고르게 해 준 일과 밤의 감사 인사, *sniff*는 호의를 받아들이면서도 감정을 누르는 모습으로 보인다.",
+        "text": "창순이 장난감을 고르게 해 준 일과 밤의 감사 인사, *훌쩍*은 호의를 받아들이면서도 감정을 누르는 모습으로 보인다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계와 태도",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계와 태도",
+     "status": "accepted",
+     "note": "Every sentence is supported by the quest lines and the night dialogue. The interpretation is reasonable.",
+     "quote": "Shh, please don't. Sorry, it's just... Please don't say the 'd' word again. Especially not in front of my sister.",
+     "sentences": [
+      {
+       "t_raw": "Millelith에 대해서는 Yi Xian에게 'nice uncle'이라 부르며, 그가 물건을 가지러 갔고 곧 돌아올 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천암군에 대해서는 일현에게 '착한 아저씨'라 부르며, 그가 물건을 가지러 갔고 곧 돌아올 것이라고 말한다.",
+       "polish": {
+        "from": "천암군에 대해서는 일현에게 'nice uncle'이라 부르며, 그가 물건을 가지러 갔고 곧 돌아올 것이라고 말한다.",
+        "text": "천암군에 대해서는 일현에게 '착한 아저씨'라 부르며, 그가 물건을 가지러 갔고 곧 돌아올 것이라고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "**Rex Lapis의 죽음** 이야기가 나오면 'd'라는 말을 하지 말아 달라 하고, 특히 Yi Xian 앞에서는 말하지 말아 달라 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**암왕제군의 죽음** 이야기가 나오면 'd'라는 말을 하지 말아 달라 하고, 특히 일현 앞에서는 말하지 말아 달라 한다."
+      },
+      {
+       "t_raw": "뉴스에는 관심이 별로 없고, 지금은 동생이 다시 웃는 모습을 보는 일만 신경 쓴다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "뉴스에는 관심이 별로 없고, 지금은 동생이 다시 웃는 모습을 보는 일만 신경 쓴다고 말한다."
+      },
+      {
+       "t_raw": "Millelith가 곧 물건을 가져올 거라는 말과 죽음 이야기를 피하는 태도는 동생의 기분을 먼저 살피려는 태도로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "천암군이 곧 물건을 가져올 거라는 말과 죽음 이야기를 피하는 태도는 동생의 기분을 먼저 살피려는 태도로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "City of Chores",
+       "quest_ko": "성의 만사",
+       "version": "1.3",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "quest",
+       "quest": "City of Chores",
+       "quest_ko": "성의 만사",
+       "version": "1.3",
+       "speaker": "Yi Zhu"
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A19",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계와 태도",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences match A3-A6; the interpretation is reasonable.",
+     "quote": "Brave girl... Come on, don't cry now...",
+     "sentences": [
+      {
+       "t_raw": "낮에 걸리는 Yi Zhu의 대사는 “용감한 아이...”이고, 별도 음성에서는 “용감한 아이... 자, 이제 울지 마...”라고 한마디가 더 붙는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮에 걸리는 일주의 대사는 “용감한 아이...”이고, 별도 음성에서는 “용감한 아이... 자, 이제 울지 마...”라고 한마디가 더 붙는다."
+      },
+      {
+       "t_raw": "밤에는 “고마워...”가 들리며, 음성에서는 “고마워... 정말 많이 고마워요, 아가씨.”로 감사가 길어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤에는 “고마워...”가 들리며, 음성에서는 “고마워... 정말 많이 고마워요, 아가씨.”로 감사가 길어진다."
+      },
+      {
+       "t_raw": "짧은 대사와 긴 음성이 짝을 이루는 방식은 **낮의 위로**와 **밤의 감사**를 각각 다른 온도로 남긴다.",
+       "interp": true,
+       "dropped": false,
+       "t": "짧은 대사와 긴 음성이 짝을 이루는 방식은 **낮의 위로**와 **밤의 감사**를 각각 다른 온도로 남긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Idle Quotes",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches A20/A21 and A30/A31; the interpretation follows from them.",
+     "quote": "Goodbye... May the flames of wisdom spread to all, and never be extinguished.",
+     "sentences": [
+      {
+       "t_raw": "밤 대화에서 작별 인사를 건네면 Yi Zhu는 “또 봐.”에 “잘 가.”로 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밤 대화에서 작별 인사를 건네면 일주는 “또 봐.”에 “잘 가.”로 답한다."
+      },
+      {
+       "t_raw": "Lantern Rite 기간에는 “잘 가.”에 “잘 가... 지혜의 불꽃이 모든 곳에 퍼져, 결코 꺼지지 않기를.”로 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "해등절 기간에는 “잘 가.”에 “잘 가... 지혜의 불꽃이 모든 곳에 퍼져, 결코 꺼지지 않기를.”로 답한다."
+      },
+      {
+       "t_raw": "같은 작별이라도 짧은 “잘 가.”와 축복이 붙은 긴 인사로 갈린다는 점이 **기간에 따라 달라지는 인사**의 인상을 남긴다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 작별이라도 짧은 “잘 가.”와 축복이 붙은 긴 인사로 갈린다는 점이 **기간에 따라 달라지는 인사**의 인상을 남긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Dialogue > Nighttime",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yi Zhu",
+       "revision": 129713,
+       "section": "Event Dialogue > Lantern Rite",
+       "paragraph": "A31",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적 — Yi Zhu's Snack",
+     "status": "accepted",
+     "note": "Faithful translation of the Q4 line.",
+     "t_raw": "Yi Xian, 무슨 일이 있었냐면... 엄마는 이제 하늘의 별 중 하나야.",
+     "en": "Yi Xian, what happened was... Mommy is one of the stars in the sky now.",
+     "speaker": "Yi Zhu",
+     "source": {
+      "kind": "quest",
+      "quest": "Yi Zhu's Snack",
+      "quest_ko": "일주의 디저트 의뢰",
+      "version": "1.1",
+      "speaker": "Yi Zhu"
+     },
+     "t": "일현, 무슨 일이 있었냐면... 엄마는 이제 하늘의 별 중 하나야.",
+     "speaker_ko": "일주"
+    },
+    {
+     "section": "작중 행적 — City of Chores",
+     "status": "accepted",
+     "note": "Faithful translation of the Q1 line.",
+     "t_raw": "Little Xian이 Xiao Lantern에 소원을 쓰고 있을 때 갑자기 손에서 놓쳐서, 그 Lantern이 저쪽으로 날아가 버렸다...",
+     "en": "Little Xian was writing her wish on a Xiao Lantern when she suddenly lost her grip on it, and the Lantern flew away that way...",
+     "speaker": "Yi Zhu",
+     "source": {
+      "kind": "quest",
+      "quest": "City of Chores",
+      "quest_ko": "성의 만사",
+      "version": "1.3",
+      "speaker": "Yi Zhu"
+     },
+     "t": "Little Xian이 소등에 소원을 쓰고 있을 때 갑자기 손에서 놓쳐서, 그 Lantern이 저쪽으로 날아가 버렸다...",
+     "speaker_ko": "일주"
+    },
+    {
+     "section": "인간관계와 태도",
+     "status": "accepted",
+     "note": "Faithful translation of the Q3 line.",
+     "t_raw": "착하지, Little Xian. 저 Millelith의 친절한 아저씨가 너를 위해 그것을 가지러 갔단다.",
+     "en": "Be a good girl, Little Xian. That nice uncle from the Millelith went to fetch it for you.",
+     "speaker": "Yi Zhu",
+     "source": {
+      "kind": "quest",
+      "quest": "City of Chores",
+      "quest_ko": "성의 만사",
+      "version": "1.3",
+      "speaker": "Yi Zhu"
+     },
+     "t": "착하지, Little Xian. 저 천암군의 친절한 아저씨가 너를 위해 그것을 가지러 갔단다.",
+     "speaker_ko": "일주"
+    }
+   ]
+  }
+ ]
+}

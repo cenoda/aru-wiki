@@ -20,41 +20,41 @@
    "input_chars": 369,
    "input_cut": false,
    "input_hash": "85c7f093f5de",
-   "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "ds,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "When Judar sees Cyno, Judar cowers in fear, afraid of being torn into pieces.",
+     "status": "accepted",
+     "note": "All sentences match A1, A2 and Q5.",
+     "quote": "There's no use hiding it now... Yes, you're right.",
      "sentences": [
       {
-       "t_raw": "Judar는 **마신 임무** Chapter III: Act IV - King Deshret and the Three Magi에 등장하는 퀘스트 전용 NPC다.",
+       "t_raw": "Judar는 Archon Quest Chapter III: Act IV - King Deshret and the Three Magi에 등장하는 퀘스트 전용 NPC이다.",
        "interp": false,
        "dropped": false,
-       "t": "주다르는 **마신 임무** 제3장: 제4막 - 적토의 왕과 세 순례자에 등장하는 퀘스트 전용 NPC다."
+       "t": "주다르는 마신 임무 제3장: 제4막 - 적토의 왕과 세 순례자에 등장하는 퀘스트 전용 NPC이다."
       },
       {
-       "t_raw": "Akademiya가 보낸 인물로, **Village Keepers**를 납치하는 임무를 맡았고, Rahman이 그를 Dehya, Alhaitham, Cyno, 그리고 다른 사람들에게 처벌받도록 넘긴다.",
+       "t_raw": "Akademiya의 지시로 Village Keepers를 납치한 인물로, 이후 Rahman에 의해 Dehya, Alhaitham, Cyno 등에게 넘겨져 처벌받게 된다.",
        "interp": false,
        "dropped": false,
-       "t": "아카데미아가 보낸 인물로, **마을 지킴이**를 납치하는 임무를 맡았고, 라흐만이 그를 데히야, 알하이탐, 사이노, 그리고 다른 사람들에게 처벌받도록 넘긴다."
+       "t": "아카데미아의 지시로 마을 지킴이를 납치한 인물로, 이후 라흐만에 의해 데히야, 알하이탐, 사이노 등에게 넘겨져 처벌받게 된다."
       },
       {
-       "t_raw": "그는 신의 그릇 제작, Sabzeruz Festival samsara를 통한 꿈 수확, Canned Knowledge 추출을 설명하고, 신을 만들고 싶은가라고 묻는 말을 전한다.",
+       "t_raw": "Cyno 앞에서는 몸을 움츠리며 조각날까 두려워한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 신의 그릇 제작, 화신 탄신일 samsara를 통한 꿈 수확, 항아리 지식 추출을 설명하고, 신을 만들고 싶은가라고 묻는 말을 전한다."
+       "t": "사이노 앞에서는 몸을 움츠리며 조각날까 두려워한다."
       },
       {
-       "t_raw": "Cyno를 보자 몸을 움츠리며 찢길까 두려워하는 반응은, 그가 관여한 납치와 처벌을 앞둔 공포가 함께 드러난 장면으로 볼 수 있다.",
-       "interp": true,
+       "t_raw": "더는 숨길 수 없다며 입을 여는 장면도 있다.",
+       "interp": false,
        "dropped": false,
-       "t": "사이노를 보자 몸을 움츠리며 찢길까 두려워하는 반응은, 그가 관여한 납치와 처벌을 앞둔 공포가 함께 드러난 장면으로 볼 수 있다."
+       "t": "더는 숨길 수 없다며 입을 여는 장면도 있다."
       }
      ],
      "sources": [
@@ -85,27 +85,6 @@
        "quest_ko": "뜨거운 모래의 비밀",
        "version": "3.1",
        "speaker": "Judar"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
       }
      ],
      "heading": null,
@@ -115,33 +94,33 @@
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Rahman later turns Judar in to be punished by Dehya, Alhaitham, Cyno, and others.",
+     "status": "accepted",
+     "note": "Supported by A1 and A2. 'Limb from limb' matches Q4 and 'torn into pieces' in A2.",
+     "quote": "Judar was sent by the Akademiya to kidnap the Village Keepers.",
      "sentences": [
       {
-       "t_raw": "Judar는 마신 임무 Chapter III: Act IV - King Deshret and the Three Magi에서 등장하는 **퀘스트 전용 NPC**다.",
+       "t_raw": "Judar는 Archon Quest Chapter III: Act IV - King Deshret and the Three Magi에 등장하는 퀘스트 전용 NPC다.",
        "interp": false,
        "dropped": false,
-       "t": "주다르는 마신 임무 제3장: 제4막 - 적토의 왕과 세 순례자에서 등장하는 **퀘스트 전용 NPC**다."
+       "t": "주다르는 마신 임무 제3장: 제4막 - 적토의 왕과 세 순례자에 등장하는 퀘스트 전용 NPC다."
       },
       {
-       "t_raw": "Akademiya의 보냄을 받아 **Village Keepers**를 납치했고, 이후 Rahman에 의해 Dehya, Alhaitham, Cyno, 그리고 다른 이들의 처벌을 받도록 넘겨진다.",
+       "t_raw": "Akademiya의 지시를 받아 **Village Keepers를 납치**하는 역할을 맡았다.",
        "interp": false,
        "dropped": false,
-       "t": "아카데미아의 보냄을 받아 **마을 지킴이**를 납치했고, 이후 라흐만에 의해 데히야, 알하이탐, 사이노, 그리고 다른 이들의 처벌을 받도록 넘겨진다."
+       "t": "아카데미아의 지시를 받아 **마을 지킴이를 납치**하는 역할을 맡았다."
       },
       {
-       "t_raw": "납치를 맡은 쪽에서 처벌받도록 넘겨지는 쪽으로 처지가 뒤바뀐 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "납치를 맡은 쪽에서 처벌받도록 넘겨지는 쪽으로 처지가 뒤바뀐 셈이다."
-      },
-      {
-       "t_raw": "그런 Judar는 **Cyno** 앞에서 몸을 움츠리며 조각조각 찢길까 두려워한다.",
+       "t_raw": "이후 Rahman이 그를 Dehya, Alhaitham, Cyno 등에게 넘겨 처벌받게 한다.",
        "interp": false,
        "dropped": false,
-       "t": "그런 주다르는 **사이노** 앞에서 몸을 움츠리며 조각조각 찢길까 두려워한다."
+       "t": "이후 라흐만이 그를 데히야, 알하이탐, 사이노 등에게 넘겨 처벌받게 한다."
+      },
+      {
+       "t_raw": "**Cyno**를 보자 몸을 움츠리며 사지가 찢길까 두려워한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**사이노**를 보자 몸을 움츠리며 사지가 찢길까 두려워한다."
       }
      ],
      "sources": [
@@ -173,151 +152,22 @@
      ]
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "First, the Akademiya spent a long time constructing a \"divine vessel,\" which was based on an exquisite humanoid puppet.",
-     "sentences": [
-      {
-       "t_raw": "Judar는 Akademiya가 Village Keepers를 납치하도록 보낸 인물이다.",
-       "interp": false,
-       "dropped": false,
-       "t": "주다르는 아카데미아가 마을 지킴이를 납치하도록 보낸 인물이다."
-      },
-      {
-       "t_raw": "Judar에 따르면 Akademiya는 오랫동안 정교한 인간형 인형을 바탕으로 한 **\"divine vessel\"**을 만드는 데 시간을 들였고, 그 뒤 Sabzeruz Festival samsara를 통해 꿈을 수확해 Akasha의 출력을 최대화했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "주다르에 따르면 아카데미아는 오랫동안 정교한 인간형 인형을 바탕으로 한 **\"divine vessel\"**을 만드는 데 시간을 들였고, 그 뒤 화신 탄신일 samsara를 통해 꿈을 수확해 「허공」의 출력을 최대화했다."
-      },
-      {
-       "t_raw": "그는 Akademiya가 **Canned Knowledge**를 추출하려 했다고 말하고, 더는 숨길 수 없다며 맞다고 인정한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 아카데미아가 **항아리 지식**을 추출하려 했다고 말하고, 더는 숨길 수 없다며 맞다고 인정한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Judar",
-       "revision": 901183,
-       "section": "Profile",
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Secret of the Scorching Desert"
-        }
-       ]
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He asked them: \"Do you wish to create a god?\"",
-     "sentences": [
-      {
-       "t_raw": "Judar는 누군가가 그들에게 '신을 만들고 싶은가?'라고 물었다는 말도 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "주다르는 누군가가 그들에게 '신을 만들고 싶은가?'라고 물었다는 말도 전한다."
-      },
-      {
-       "t_raw": "divine vessel 제작, 꿈 수확, Canned Knowledge 추출 이야기와 이 질문이 이어지면서, Judar의 진술은 **신 만들기 질문**으로 모이고, 그는 Akademiya의 신 만들기 논의에 닿아 있는 인물로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "divine vessel 제작, 꿈 수확, 항아리 지식 추출 이야기와 이 질문이 이어지면서, 주다르의 진술은 **신 만들기 질문**으로 모이고, 그는 아카데미아의 신 만들기 논의에 닿아 있는 인물로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
-      },
-      {
-       "kind": "quest",
-       "quest": "Secret of the Scorching Desert",
-       "quest_ko": "뜨거운 모래의 비밀",
-       "version": "3.1",
-       "speaker": "Judar"
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Chapter III: Act IV",
-     "status": "needs_verify",
-     "note": null,
+     "section": "개요",
+     "status": "accepted",
+     "note": "The fact matches M1. The interpretation follows from A2 and M1.",
      "quote": "He also turns in Judar of the Akademiya as he was responsible for kidnapping the Village Keepers.",
      "sentences": [
       {
-       "t_raw": "Akademiya는 **Village Keepers를 납치하도록** Judar를 보냈다.",
+       "t_raw": "Rahman은 자신이 속았음을 깨닫고 일행에게 사과한 뒤, Village Keepers 납치를 맡았던 Judar를 Akademiya 측 인물로서 넘긴다.",
        "interp": false,
        "dropped": false,
-       "t": "아카데미아는 **마을 지킴이를 납치하도록** 주다르를 보냈다."
+       "t": "라흐만은 자신이 속았음을 깨닫고 일행에게 사과한 뒤, 마을 지킴이 납치를 맡았던 주다르를 아카데미아 측 인물로서 넘긴다."
       },
       {
-       "t_raw": "Rahman은 자신이 속았다는 사실을 깨닫고 동료들에게 진실을 알린 뒤, Judar를 **Dehya, Alhaitham, Cyno 등에게 처벌받도록** 넘긴다.",
-       "interp": false,
-       "dropped": false,
-       "t": "라흐만은 자신이 속았다는 사실을 깨닫고 동료들에게 진실을 알린 뒤, 주다르를 **데히야, 알하이탐, 사이노 등에게 처벌받도록** 넘긴다."
-      },
-      {
-       "t_raw": "Akademiya의 지시로 움직인 Judar가 Rahman에게 책임자로 넘겨지는 대비는 납치의 책임 소재가 Judar에게 향하는 흐름으로 보인다.",
+       "t_raw": "납치를 지시한 쪽은 Akademiya이지만, 그 심부름을 수행한 Judar가 책임을 물어 넘겨지는 처지에 놓인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "아카데미아의 지시로 움직인 주다르가 라흐만에게 책임자로 넘겨지는 대비는 납치의 책임 소재가 주다르에게 향하는 흐름으로 보인다."
+       "t": "납치를 지시한 쪽은 아카데미아이지만, 그 심부름을 수행한 주다르가 책임을 물어 넘겨지는 처지에 놓인 셈이다."
       }
      ],
      "sources": [
@@ -348,38 +198,185 @@
        ]
       }
      ],
-     "heading": "작중 행적 — 제3장: 제4막",
+     "heading": "개요",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Chapter III: Act IV",
-     "status": "needs_verify",
-     "note": null,
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts match A2. The interpretation is reasonable and not a new fact.",
+     "quote": "Judar was sent by the Akademiya to kidnap the Village Keepers.",
+     "sentences": [
+      {
+       "t_raw": "Judar는 Akademiya가 Village Keepers를 납치하도록 보낸 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주다르는 아카데미아가 마을 지킴이를 납치하도록 보낸 인물이다."
+      },
+      {
+       "t_raw": "Rahman은 나중에 Judar를 Dehya, Alhaitham, Cyno, 그리고 다른 이들에게 처벌받도록 넘긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라흐만은 나중에 주다르를 데히야, 알하이탐, 사이노, 그리고 다른 이들에게 처벌받도록 넘긴다."
+      },
+      {
+       "t_raw": "Akademiya의 지시로 납치를 맡았다가 처벌을 받게 넘겨지는 흐름은 그의 위치가 지시와 그 결과 사이에 놓여 있음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아카데미아의 지시로 납치를 맡았다가 처벌을 받게 넘겨지는 흐름은 그의 위치가 지시와 그 결과 사이에 놓여 있음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Judar",
+       "revision": 901183,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Secret of the Scorching Desert"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Q5 and A2 support the facts. The interpretation is a reasonable reading of Q4 and Q5.",
+     "quote": "There's no use hiding it now... Yes, you're right.",
+     "sentences": [
+      {
+       "t_raw": "Judar는 더는 숨길 수 없다고 말하며 상대의 말이 맞다고 인정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주다르는 더는 숨길 수 없다고 말하며 상대의 말이 맞다고 인정한다."
+      },
+      {
+       "t_raw": "Cyno를 보면 두려움에 몸을 움츠리고 찢길까 봐 무서워하는 모습은, 숨길 수 없다며 입을 여는 태도와 함께 그가 두려움 속에서도 사실을 드러내는 쪽으로 기우는 인물임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사이노를 보면 두려움에 몸을 움츠리고 찢길까 봐 무서워하는 모습은, 숨길 수 없다며 입을 여는 태도와 함께 그가 두려움 속에서도 사실을 드러내는 쪽으로 기우는 인물임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Judar",
+       "revision": 901183,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Secret of the Scorching Desert"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Judar"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Secret of the Scorching Desert",
+     "status": "accepted",
+     "note": "The facts match A1, A2 and M1. The link between events is hedged with '이어져 보인다'.",
+     "quote": "He also turns in Judar of the Akademiya as he was responsible for kidnapping the Village Keepers.",
+     "sentences": [
+      {
+       "t_raw": "Judar는 Archon Quest, Chapter III: Act IV - King Deshret and the Three Magi에서 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주다르는 마신 임무, 제3장: 제4막 - 적토의 왕과 세 순례자에서 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "Akademiya의 지시로 **Village Keepers를 납치한 인물**이며, 이후 Rahman이 Judar를 Dehya, Alhaitham, Cyno 등에게 넘겨 처벌받게 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아카데미아의 지시로 **마을 지킴이를 납치한 인물**이며, 이후 라흐만이 주다르를 데히야, 알하이탐, 사이노 등에게 넘겨 처벌받게 한다."
+      },
+      {
+       "t_raw": "이 전환은 일행이 Kasala에게서 Rukkhadevata와 King Deshret가 처음부터 적이 아니었다는 사실을 듣고, Rahman이 속았다고 사과한 뒤 자기 일행에게 진실을 알린 흐름과 이어져 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 전환은 일행이 카살레에게서 룩카데바타와 적왕이 처음부터 적이 아니었다는 사실을 듣고, 라흐만이 속았다고 사과한 뒤 자기 일행에게 진실을 알린 흐름과 이어져 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Judar",
+       "revision": 901183,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Judar",
+       "revision": 901183,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Secret of the Scorching Desert"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 905399,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Secret of the Scorching Desert"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 뜨거운 모래의 비밀",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "작중 행적 — Secret of the Scorching Desert",
+     "status": "accepted",
+     "note": "All supported by A2, Q4 and Q5.",
      "quote": "No, not Cyno... He's gonna tear us limb from limb!",
      "sentences": [
       {
-       "t_raw": "Judar는 Cyno를 보자 두려움에 **몸을 움츠린다**.",
+       "t_raw": "Rahman에게 넘겨진 Judar는 Dehya, Alhaitham, Cyno 등 앞에 서고, **Cyno를 보자 두려움에 몸을 움츠린다**.",
        "interp": false,
        "dropped": false,
-       "t": "주다르는 사이노를 보자 두려움에 **몸을 움츠린다**."
+       "t": "라흐만에게 넘겨진 주다르는 데히야, 알하이탐, 사이노 등 앞에 서고, **사이노를 보자 두려움에 몸을 움츠린다**."
       },
       {
-       "t_raw": "Cyno가 우리를 사지에서 사지로 찢을 것이라고 말한다.",
+       "t_raw": "Cyno가 자신을 사지와 몸통을 찢어 버릴 것이라 여기는 것이다.",
        "interp": false,
        "dropped": false,
-       "t": "사이노가 우리를 사지에서 사지로 찢을 것이라고 말한다."
+       "t": "사이노가 자신을 사지와 몸통을 찢어 버릴 것이라 여기는 것이다."
       },
       {
-       "t_raw": "숨길 수 없다고 여기며 상대의 말이 맞다고 인정한다.",
+       "t_raw": "Judar는 이제 숨길 수 없다며 상대의 말을 인정한다.",
        "interp": false,
        "dropped": false,
-       "t": "숨길 수 없다고 여기며 상대의 말이 맞다고 인정한다."
-      },
-      {
-       "t_raw": "Village Keepers 납치를 맡은 Judar에게 Cyno는 처벌 주체로 다가오고, 그 공포는 몸짓과 말로 함께 드러나는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "마을 지킴이 납치를 맡은 주다르에게 사이노는 처벌 주체로 다가오고, 그 공포는 몸짓과 말로 함께 드러나는 셈이다."
+       "t": "주다르는 이제 숨길 수 없다며 상대의 말을 인정한다."
       }
      ],
      "sources": [
@@ -411,32 +408,154 @@
        "speaker": "Judar"
       }
      ],
-     "heading": "작중 행적 — 제3장: 제4막",
+     "heading": "작중 행적 — 뜨거운 모래의 비밀",
+     "latin_left": []
+    },
+    {
+     "section": "Akademiya의 계획과 증언",
+     "status": "accepted",
+     "note": "Supported by Q1-Q3 and Q5. The sequence 'First... After that' backs the interpretation.",
+     "quote": "After that, they harvested dreams via the Sabzeruz Festival samsara, maximizing the Akasha's output...",
+     "sentences": [
+      {
+       "t_raw": "Judar는 더는 숨길 수 없다고 인정한 뒤 Akademiya의 계획을 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주다르는 더는 숨길 수 없다고 인정한 뒤 아카데미아의 계획을 말한다."
+      },
+      {
+       "t_raw": "Akademiya는 오랜 시간 동안 정교한 인간형 인형을 바탕으로 한 **divine vessel**을 만들었고, Sabzeruz Festival samsara로 꿈을 수확해 Akasha의 출력을 최대화했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아카데미아는 오랜 시간 동안 정교한 인간형 인형을 바탕으로 한 **신의 그릇**을 만들었고, 화신 탄신일 삼사라로 꿈을 수확해 「허공」의 출력을 최대화했다.",
+       "polish": {
+        "from": "아카데미아는 오랜 시간 동안 정교한 인간형 인형을 바탕으로 한 **divine vessel**을 만들었고, 화신 탄신일 samsara로 꿈을 수확해 「허공」의 출력을 최대화했다.",
+        "text": "아카데미아는 오랜 시간 동안 정교한 인간형 인형을 바탕으로 한 **신의 그릇**을 만들었고, 화신 탄신일 삼사라로 꿈을 수확해 「허공」의 출력을 최대화했다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "또한 그들은 **Canned Knowledge**를 추출하려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 그들은 **항아리 지식**을 추출하려 했다."
+      },
+      {
+       "t_raw": "이 divine vessel 제작과 꿈 수확, Canned Knowledge 추출은 한 계획의 단계로 이어지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 신의 그릇 제작과 꿈 수확, 항아리 지식 추출은 한 계획의 단계로 이어지는 것으로 보인다.",
+       "polish": {
+        "from": "이 divine vessel 제작과 꿈 수확, 항아리 지식 추출은 한 계획의 단계로 이어지는 것으로 보인다.",
+        "text": "이 신의 그릇 제작과 꿈 수확, 항아리 지식 추출은 한 계획의 단계로 이어지는 것으로 보인다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Judar"
+      },
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Judar"
+      },
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Judar"
+      },
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Judar"
+      }
+     ],
+     "heading": "아카데미아의 계획과 증언",
+     "latin_left": []
+    },
+    {
+     "section": "Akademiya의 계획과 증언",
+     "status": "accepted",
+     "note": "Q6 and Q1 support the sentences. Sentence 1 is hedged as a reading.",
+     "quote": "He asked them: \"Do you wish to create a god?\"",
+     "sentences": [
+      {
+       "t_raw": "Judar는 그가 그들에게 “**Do you wish to create a god?**”라고 물었다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주다르는 그가 그들에게 “**신을 만들고 싶은가?**”라고 물었다고 전한다.",
+       "polish": {
+        "from": "주다르는 그가 그들에게 “**Do you wish to create a god?**”라고 물었다고 전한다.",
+        "text": "주다르는 그가 그들에게 “**신을 만들고 싶은가?**”라고 물었다고 전한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "앞서 나온 divine vessel과 이 물음이 함께 제시되면서, Akademiya의 계획이 신 창조를 향해 있었음을 보여 주는 증언으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "앞서 나온 신의 그릇과 이 물음이 함께 제시되면서, 아카데미아의 계획이 신 창조를 향해 있었음을 보여 주는 증언으로 읽힌다.",
+       "polish": {
+        "from": "앞서 나온 divine vessel과 이 물음이 함께 제시되면서, 아카데미아의 계획이 신 창조를 향해 있었음을 보여 주는 증언으로 읽힌다.",
+        "text": "앞서 나온 신의 그릇과 이 물음이 함께 제시되면서, 아카데미아의 계획이 신 창조를 향해 있었음을 보여 주는 증언으로 읽힌다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Judar"
+      },
+      {
+       "kind": "quest",
+       "quest": "Secret of the Scorching Desert",
+       "quest_ko": "뜨거운 모래의 비밀",
+       "version": "3.1",
+       "speaker": "Judar"
+      }
+     ],
+     "heading": "아카데미아의 계획과 증언",
      "latin_left": []
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "M1 and A2 support the facts. The interpretation is reasonable.",
      "quote": "He also turns in Judar of the Akademiya as he was responsible for kidnapping the Village Keepers.",
      "sentences": [
       {
-       "t_raw": "Judar는 Akademiya가 Village Keepers를 납치하도록 보낸 인물이며, **Rahman**은 그를 Dehya, Alhaitham, Cyno, 그리고 다른 이들의 처벌에 맡긴다.",
+       "t_raw": "Rahman는 진실을 깨닫고 무리에 사과한 뒤, Village Keepers 납치를 맡았던 **Judar를 책임자로 넘긴다**.",
        "interp": false,
        "dropped": false,
-       "t": "주다르는 아카데미아가 마을 지킴이를 납치하도록 보낸 인물이며, **라흐만**은 그를 데히야, 알하이탐, 사이노, 그리고 다른 이들의 처벌에 맡긴다."
+       "t": "라흐만은 진실을 깨닫고 무리에 사과한 뒤, 마을 지킴이 납치를 맡았던 **주다르를 책임자로 넘긴다**."
       },
       {
-       "t_raw": "Rahman은 Dehya와 싸우다 쉽게 제압된 뒤 폐허에서 Kasala의 설명을 듣고, 자신이 속았음을 사과하며 동료들에게 진실을 알린다.",
+       "t_raw": "Judar는 그렇게 Dehya, Alhaitham, Cyno 등에게 처벌받도록 넘겨진다.",
        "interp": false,
        "dropped": false,
-       "t": "라흐만은 데히야와 싸우다 쉽게 제압된 뒤 폐허에서 카살레의 설명을 듣고, 자신이 속았음을 사과하며 동료들에게 진실을 알린다."
+       "t": "주다르는 그렇게 데히야, 알하이탐, 사이노 등에게 처벌받도록 넘겨진다."
       },
       {
-       "t_raw": "그가 Judar를 넘긴 일은 일행과의 오해를 풀고 진실을 알린 흐름과 이어져 있다고 볼 수 있다.",
+       "t_raw": "Rahman의 진실 수용과 사과가 Judar의 처벌로 이어지는 구도는, 두 사람의 관계가 Rahman의 입장 변화와 Judar의 책임 추궁이 맞물린 형태로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "그가 주다르를 넘긴 일은 일행과의 오해를 풀고 진실을 알린 흐름과 이어져 있다고 볼 수 있다."
+       "t": "라흐만의 진실 수용과 사과가 주다르의 처벌로 이어지는 구도는, 두 사람의 관계가 라흐만의 입장 변화와 주다르의 책임 추궁이 맞물린 형태로 보인다."
       }
      ],
      "sources": [
@@ -472,21 +591,27 @@
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "No, not Cyno... He's gonna tear us limb from limb!",
+     "status": "accepted",
+     "note": "Supported by A2 and Q4. The interpretation is hedged.",
+     "quote": "When Judar sees Cyno, Judar cowers in fear, afraid of being torn into pieces.",
      "sentences": [
       {
-       "t_raw": "Judar는 **Cyno**를 보자 몸을 움츠리며 두려워하고, Cyno가 자신들을 사지(四肢) 하나하나 찢어 버릴 것이라고 말한다.",
+       "t_raw": "Judar는 **Cyno**를 보자 두려움에 몸을 움츠리며, 찢겨 버릴까 봐 무서워한다.",
        "interp": false,
        "dropped": false,
-       "t": "주다르는 **사이노**를 보자 몸을 움츠리며 두려워하고, 사이노가 자신들을 사지(四肢) 하나하나 찢어 버릴 것이라고 말한다."
+       "t": "주다르는 **사이노**를 보자 두려움에 몸을 움츠리며, 찢겨 버릴까 봐 무서워한다."
       },
       {
-       "t_raw": "이 반응은 처벌 주체들 가운데 Cyno를 특히 두려운 대상으로 여기는 모습으로 보인다.",
+       "t_raw": "Cyno의 이름이 나오는 자리에서도 Judar는 사지가 찢길 거라는 공포를 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사이노의 이름이 나오는 자리에서도 주다르는 사지가 찢길 거라는 공포를 드러낸다."
+      },
+      {
+       "t_raw": "처벌을 집행할 사람들 가운데 Cyno 앞에서 이 공포가 두드러지는 것은, Judar에게 Cyno가 처벌의 압박으로 다가오기 때문으로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "이 반응은 처벌 주체들 가운데 사이노를 특히 두려운 대상으로 여기는 모습으로 보인다."
+       "t": "처벌을 집행할 사람들 가운데 사이노 앞에서 이 공포가 두드러지는 것은, 주다르에게 사이노가 처벌의 압박으로 다가오기 때문으로 보인다."
       }
      ],
      "sources": [
@@ -516,21 +641,26 @@
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "A3 and A4 both say 'To be added.'",
      "quote": "(To be added.)",
      "sentences": [
       {
-       "t_raw": "Judar의 프로필에서 **성격** 항목은 작성 예정으로 남아 있다.",
+       "t_raw": "Judar의 프로필에서 **성격** 항목과 **외모** 항목은 모두 “To be added.”로 표시되어 있다.",
        "interp": false,
        "dropped": false,
-       "t": "주다르의 프로필에서 **성격** 항목은 작성 예정으로 남아 있다."
+       "t": "주다르의 프로필에서 **성격** 항목과 **외모** 항목은 모두 “추가 예정.”으로 표시되어 있다.",
+       "polish": {
+        "from": "주다르의 프로필에서 **성격** 항목과 **외모** 항목은 모두 “To be added.”로 표시되어 있다.",
+        "text": "주다르의 프로필에서 **성격** 항목과 **외모** 항목은 모두 “추가 예정.”으로 표시되어 있다.",
+        "by": "glm-flash"
+       }
       },
       {
-       "t_raw": "**외모** 항목도 작성 예정으로 표시되어 있다.",
-       "interp": false,
+       "t_raw": "두 항목이 모두 비어 있으므로, 이 프로필만으로 Judar의 성격이나 외모를 설명하기는 어렵다.",
+       "interp": true,
        "dropped": false,
-       "t": "**외모** 항목도 작성 예정으로 표시되어 있다."
+       "t": "두 항목이 모두 비어 있으므로, 이 프로필만으로 주다르의 성격이나 외모를 설명하기는 어렵다."
       }
      ],
      "sources": [
@@ -558,9 +688,9 @@
    "quote_boxes": [
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아니, Cyno가 아니야... 그가 우리 사지를 하나하나 찢어 버릴 거야!",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아니, Cyno가 아니야... 그가 우리를 사지를 찢어발길 거야!",
      "en": "No, not Cyno... He's gonna tear us limb from limb!",
      "speaker": "Judar",
      "source": {
@@ -570,14 +700,48 @@
       "version": "3.1",
       "speaker": "Judar"
      },
-     "t": "아니, 사이노가 아니야... 그가 우리 사지를 하나하나 찢어 버릴 거야!",
+     "t": "아니, 사이노가 아니야... 그가 우리를 사지를 찢어발길 거야!",
      "speaker_ko": "주다르"
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그는 그들에게 물었다: \"신을 만들고 싶은가?\"",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "이제 숨겨 봐야 소용없어요... 그래요, 당신 말이 맞아요.",
+     "en": "There's no use hiding it now... Yes, you're right.",
+     "speaker": "Judar",
+     "source": {
+      "kind": "quest",
+      "quest": "Secret of the Scorching Desert",
+      "quest_ko": "뜨거운 모래의 비밀",
+      "version": "3.1",
+      "speaker": "Judar"
+     },
+     "t": "이제 숨겨 봐야 소용없어요... 그래요, 당신 말이 맞아요.",
+     "speaker_ko": "주다르"
+    },
+    {
+     "section": "작중 행적 — Secret of the Scorching Desert",
+     "status": "accepted",
+     "note": "'limb from limb' mistranslated as 'limbs and torso' (사지와 몸통), adding torso.",
+     "t_raw": "아니, Cyno가 아니야... 저 사람은 우리 사지를 하나하나 찢어 버릴 거야!",
+     "en": "No, not Cyno... He's gonna tear us limb from limb!",
+     "speaker": "Judar",
+     "source": {
+      "kind": "quest",
+      "quest": "Secret of the Scorching Desert",
+      "quest_ko": "뜨거운 모래의 비밀",
+      "version": "3.1",
+      "speaker": "Judar"
+     },
+     "t": "아니, 사이노가 아니야... 저 사람은 우리 사지를 하나하나 찢어 버릴 거야!",
+     "speaker_ko": "주다르"
+    },
+    {
+     "section": "Akademiya의 계획과 증언",
+     "status": "accepted",
+     "note": "Faithful translation of the line; quoted English kept.",
+     "t_raw": "그가 그들에게 “Do you wish to create a god?”라고 물었다.",
      "en": "He asked them: \"Do you wish to create a god?\"",
      "speaker": "Judar",
      "source": {
@@ -587,31 +751,14 @@
       "version": "3.1",
       "speaker": "Judar"
      },
-     "t": "그는 그들에게 물었다: \"신을 만들고 싶은가?\"",
-     "speaker_ko": "주다르"
-    },
-    {
-     "section": "작중 행적 — Chapter III: Act IV",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아니, Cyno는 안 돼... 그가 우리를 사지에서 사지로 찢어 놓을 거야!",
-     "en": "No, not Cyno... He's gonna tear us limb from limb!",
-     "speaker": "Judar",
-     "source": {
-      "kind": "quest",
-      "quest": "Secret of the Scorching Desert",
-      "quest_ko": "뜨거운 모래의 비밀",
-      "version": "3.1",
-      "speaker": "Judar"
-     },
-     "t": "아니, 사이노는 안 돼... 그가 우리를 사지에서 사지로 찢어 놓을 거야!",
+     "t": "그가 그들에게 “Do you wish to create a god?”라고 물었다.",
      "speaker_ko": "주다르"
     },
     {
      "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "아니, Cyno는 안 돼... 그가 우리 사지를 하나하나 찢어 버릴 거야!",
+     "status": "accepted",
+     "note": "'사지에서 사지로' (from limb to limb) is a mistranslation of 'limb from limb'; it alters the meaning.",
+     "t_raw": "아니, Cyno가 아니라... 그는 우리 사지를 하나하나 찢어 버릴 거야!",
      "en": "No, not Cyno... He's gonna tear us limb from limb!",
      "speaker": "Judar",
      "source": {
@@ -621,7 +768,7 @@
       "version": "3.1",
       "speaker": "Judar"
      },
-     "t": "아니, 사이노는 안 돼... 그가 우리 사지를 하나하나 찢어 버릴 거야!",
+     "t": "아니, 사이노가 아니라... 그는 우리 사지를 하나하나 찢어 버릴 거야!",
      "speaker_ko": "주다르"
     }
    ]

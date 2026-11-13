@@ -1,0 +1,923 @@
+{
+ "node": "The Upper Sanctum",
+ "articles": [
+  {
+   "node": "The Upper Sanctum",
+   "from_version": "5.1",
+   "cutoff": "2024-11-19T00:00:00Z",
+   "input": [
+    {
+     "page": "The Upper Sanctum",
+     "url": "https://genshin-impact.fandom.com/wiki/The_Upper_Sanctum",
+     "revision": 1656689
+    }
+   ],
+   "input_counts": {
+    "mentions": 1,
+    "lines": 7,
+    "web": 0
+   },
+   "input_chars": 869,
+   "input_cut": false,
+   "input_hash": "85c1b8ced106",
+   "writer": "qwen,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2 and Q5.",
+     "quote": "In the present day, the Upper Sanctum is no longer a whole island, but a ring of smaller islands.",
+     "sentences": [
+      {
+       "t_raw": "**The Upper Sanctum**은 사람과 Saurians 모두 닿기 어려워 그렇게 불리는 섬들의 고리이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**부유 정토계**는 사람과 용 모두 닿기 어려워 그렇게 불리는 섬들의 고리이다."
+      },
+      {
+       "t_raw": "전설에 따르면 Hanan Pacha는 Waxaklahun Ubah Kan과 제자 Chaac이 땅을 하늘로 들어 올렸을 때 만들어졌고, 그 곳에서 시련을 통과한 사람들이 **Phlogiston**의 지식을 얻어 첫 인간 부족을 이루었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전설에 따르면 아난파차는 왁샤클라훈우바칸과 제자 차악이 땅을 하늘로 들어 올렸을 때 만들어졌고, 그 곳에서 시련을 통과한 사람들이 **열소**의 지식을 얻어 첫 인간 부족을 이루었다."
+      },
+      {
+       "t_raw": "현재는 Spiritway를 활성화해야만 들어갈 수 있으며, 고대 시련의 장치는 그대로 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재는 흐르는 영혼길을 활성화해야만 들어갈 수 있으며, 고대 시련의 장치는 그대로 남아 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "Records of Hanan Pacha"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Tracer No Tracing",
+       "quest_ko": "좇을 수 없는 과거",
+       "version": "5.0",
+       "speaker": "Chikya"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All supported. The closing interpretation is a reasonable reading of the inaccessibility and Spiritway facts.",
+     "quote": "That's right. We call those the Upper Sanctum, due to their inaccessibility by either humans or Saurians.",
+     "sentences": [
+      {
+       "t_raw": "The Upper Sanctum이라는 이름은 그 땅에 닿기 어렵다는 사정에서 비롯된 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "부유 정토계라는 이름은 그 땅에 닿기 어렵다는 사정에서 비롯된 것이다."
+      },
+      {
+       "t_raw": "Chikya에 따르면 인간도 Saurian도 그곳에 이르지 못하기에, 부족 사람들은 그 섬들을 그렇게 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치키야에 따르면 인간도 용도 그곳에 이르지 못하기에, 부족 사람들은 그 섬들을 그렇게 부른다."
+      },
+      {
+       "t_raw": "오늘날 그곳은 하나의 온전한 섬이 아니라 작은 섬들이 고리를 이룬 모습으로 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오늘날 그곳은 하나의 온전한 섬이 아니라 작은 섬들이 고리를 이룬 모습으로 남아 있다."
+      },
+      {
+       "t_raw": "그곳에 이르려면 Spiritway를 작동시켜야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그곳에 이르려면 흐르는 영혼길을 작동시켜야 한다."
+      },
+      {
+       "t_raw": "이름과 통로가 함께 말해주듯, Upper Sanctum은 걸어서 올라갈 수 있는 땅이 아닌 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이름과 통로가 함께 말해주듯, 부유 정토계는 걸어서 올라갈 수 있는 땅이 아닌 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Tracer No Tracing",
+       "quest_ko": "좇을 수 없는 과거",
+       "version": "5.0",
+       "speaker": "Chikya"
+      },
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by M1 and Q6. The interpretation is reasonable.",
+     "quote": "So this is the Upper Sanctum, huh... From down below, you'd think it was all gray and empty up here...",
+     "sentences": [
+      {
+       "t_raw": "Natlan의 Multi-Layered Map에서는 The Upper Sanctum을 따로 층을 이루어 표시해 둔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나타의 층별 맵에서는 부유 정토계를 따로 층을 이루어 표시해 둔다."
+      },
+      {
+       "t_raw": "Paimon은 아래에서 올려다보면 그 위가 온통 **회색으로 비어 있는 것처럼** 보인다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아래에서 올려다보면 그 위가 온통 **회색으로 비어 있는 것처럼** 보인다고 말한다."
+      },
+      {
+       "t_raw": "지도에서 층을 달리해 놓은 것과 아래에서는 회색 덩어리로만 보인다는 것이 겹쳐, 그곳은 올라가 보기 전에는 실체가 잘 드러나지 않는 곳인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "지도에서 층을 달리해 놓은 것과 아래에서는 회색 덩어리로만 보인다는 것이 겹쳐, 그곳은 올라가 보기 전에는 실체가 잘 드러나지 않는 곳인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Map",
+       "revision": 1633320,
+       "section": "Multi-Layered Map > Natlan",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Seeker No Finding",
+       "quest_ko": "찾을수록 얻기 힘든 법",
+       "version": "5.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Matches A1.",
+     "quote": "According to legend, Hanan Pacha was created when Waxaklahun Ubah Kan and his disciple Chaac raised a tract of land into the sky.",
+     "sentences": [
+      {
+       "t_raw": "The Upper Sanctum의 기원을 다루는 전설에 따르면 Hanan Pacha는 Waxaklahun Ubah Kan과 그의 제자 Chaac이 땅을 하늘로 들어올리면서 만들어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "부유 정토계의 기원을 다루는 전설에 따르면 아난파차는 왁샤클라훈우바칸과 그의 제자 차악이 땅을 하늘로 들어올리면서 만들어졌다."
+      },
+      {
+       "t_raw": "두 존재는 이렇게 떠오른 섬에서 시련을 통과한 이들에게 Phlogiston의 지식을 나누었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 존재는 이렇게 떠오른 섬에서 시련을 통과한 이들에게 열소의 지식을 나누었다."
+      },
+      {
+       "t_raw": "그 뒤 이 사람들이 모여 첫 인간 부족을 이루었다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 뒤 이 사람들이 모여 첫 인간 부족을 이루었다고 전한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "Records of Hanan Pacha"
+        }
+       ]
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Matches A1. The interpretation follows from it.",
+     "quote": "Eventually, these people formed the first human tribe.",
+     "sentences": [
+      {
+       "t_raw": "이 전승에서 Phlogiston 지식은 시련을 통과한 이들에게 주어지고, 그렇게 지식을 얻은 사람들이 첫 인간 부족을 이룬다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 전승에서 열소 지식은 시련을 통과한 이들에게 주어지고, 그렇게 지식을 얻은 사람들이 첫 인간 부족을 이룬다."
+      },
+      {
+       "t_raw": "곧 Hanan Pacha의 전설은 지식의 전수와 인간 부족의 출발을 이어 붙인 기원담으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "곧 아난파차의 전설은 지식의 전수와 인간 부족의 출발을 이어 붙인 기원담으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "Records of Hanan Pacha"
+        }
+       ]
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Sentence 3 says Chikya looked for a place to rest twice. Only Q3 has her asking to rest. In Q1 she mentions back pain and says it should subside, with no rest. The claim of two rests is an added fact.",
+     "quote": "Alright. We're about to reach the Upper Sanctum, but, uh... Let me take five real quick. Goodness, my back hurts.",
+     "sentences": [
+      {
+       "t_raw": "현재의 Upper Sanctum은 온전한 섬이 아니라 작은 섬들이 둥글게 늘어선 형태이며, **Spiritway**를 작동시켜야만 닿을 수 있는 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재의 부유 정토계는 온전한 섬이 아니라 작은 섬들이 둥글게 늘어선 형태이며, **흐르는 영혼길**을 작동시켜야만 닿을 수 있는 곳이다."
+      },
+      {
+       "t_raw": "그곳으로 향하는 길에 Chikya가 동행했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그곳으로 향하는 길에 치키야가 동행했다."
+      },
+      {
+       "t_raw": "Chikya는 조금만 더 가면 허리 통증이 가라앉을 테니 그때 함께 Upper Sanctum으로 가자고 말했고, 정작 Upper Sanctum에 거의 다 와서는 잠깐 쉬겠다며 허리가 아프다고 털어놓았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치키야는 조금만 더 가면 허리 통증이 가라앉을 테니 그때 함께 부유 정토계로 가자고 말했고, 정작 부유 정토계에 거의 다 와서는 잠깐 쉬겠다며 허리가 아프다고 털어놓았다."
+      },
+      {
+       "t_raw": "허리 통증을 호소하며 잠깐 쉬자고 했던 것을 보면, 그 여정은 Chikya에게 적잖은 체력적 부담이었던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "허리 통증을 호소하며 잠깐 쉬자고 했던 것을 보면, 그 여정은 치키야에게 적잖은 체력적 부담이었던 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Tracer No Tracing",
+       "quest_ko": "좇을 수 없는 과거",
+       "version": "5.0",
+       "speaker": "Chikya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Tracer No Tracing",
+       "quest_ko": "좇을 수 없는 과거",
+       "version": "5.0",
+       "speaker": "Chikya"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences are supported by A2, Q2 and Q7.",
+     "quote": "In Seeker No Finding, the Traveler completed the trials, revealing a hidden center island with a Phlogiston hot spring.",
+     "sentences": [
+      {
+       "t_raw": "Seeker No Finding에서 Traveler가 고대 시련을 완료하자, 숨겨진 **중심 섬**과 그곳의 Phlogiston 온천이 모습을 드러냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "찾을수록 얻기 힘든 법에서 여행자가 고대 시련을 완료하자, 숨겨진 **중심 섬**과 그곳의 열소 온천이 모습을 드러냈다."
+      },
+      {
+       "t_raw": "Chikya는 일이 잘 풀려 아주 기쁘다면서, Upper Sanctum에 닿게 될 줄은 몰랐다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치키야는 일이 잘 풀려 아주 기쁘다면서, 부유 정토계에 닿게 될 줄은 몰랐다고 말했다."
+      },
+      {
+       "t_raw": "중심 섬을 바라보는 Paimon에게 Chikya는 눈이 속이지 않는다며 저곳이 바로 Upper Sanctum의 중심이라고 확인해 주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "중심 섬을 바라보는 페이몬에게 치키야는 눈이 속이지 않는다며 저곳이 바로 부유 정토계의 중심이라고 확인해 주었다."
+      },
+      {
+       "t_raw": "시련의 완료가 곧 숨겨진 중심 섬의 발견으로 이어졌다는 점에서, 이 시련은 통과를 가리는 관문이면서 동시에 감춰진 장소를 드러내는 장치였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "시련의 완료가 곧 숨겨진 중심 섬의 발견으로 이어졌다는 점에서, 이 시련은 통과를 가리는 관문이면서 동시에 감춰진 장소를 드러내는 장치였던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Seeker No Finding",
+       "quest_ko": "찾을수록 얻기 힘든 법",
+       "version": "5.0",
+       "speaker": "Chikya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Seeker No Finding",
+       "quest_ko": "찾을수록 얻기 힘든 법",
+       "version": "5.0",
+       "speaker": "Chikya"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "A1 supports the facts. The interpretation is reasonable and hedged.",
+     "quote": "According to legend, Hanan Pacha was created when Waxaklahun Ubah Kan and his disciple Chaac raised a tract of land into the sky.",
+     "sentences": [
+      {
+       "t_raw": "Upper Sanctum, 곧 Hanan Pacha의 전설에 따르면 이 부유하는 섬은 Waxaklahun Ubah Kan과 그의 제자 Chaac이 땅덩어리를 들어 하늘로 올림으로써 만들어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "부유 정토계, 곧 아난파차의 전설에 따르면 이 부유하는 섬은 왁샤클라훈우바칸과 그의 제자 차악이 땅덩어리를 들어 하늘로 올림으로써 만들어졌다."
+      },
+      {
+       "t_raw": "두 사람은 시련을 통과한 이들에게 Phlogiston의 지식을 나누어 주었고, 그렇게 모인 사람들이 **첫 인간 부족**을 이루었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 사람은 시련을 통과한 이들에게 열소의 지식을 나누어 주었고, 그렇게 모인 사람들이 **첫 인간 부족**을 이루었다."
+      },
+      {
+       "t_raw": "스승과 제자가 함께 땅을 올리고 그 위에서 지식을 전했다는 대목은, 이 섬이 처음부터 시련과 가르침을 위한 장소로 그려졌음을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스승과 제자가 함께 땅을 올리고 그 위에서 지식을 전했다는 대목은, 이 섬이 처음부터 시련과 가르침을 위한 장소로 그려졌음을 보여 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "Records of Hanan Pacha"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by Q1, Q2, Q4 and A2.",
+     "quote": "I'm pretty happy with how things have gone. Actually, make that delighted... Hehe, didn't expect to reach the Upper Sanctum.",
+     "sentences": [
+      {
+       "t_raw": "Chikya는 Traveler와 함께 Upper Sanctum을 향하는 길에 오른 동행자다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치키야는 여행자와 함께 부유 정토계를 향하는 길에 오른 동행자다."
+      },
+      {
+       "t_raw": "그는 허리 통증이 조금 더 가라앉기를 기다렸다가 함께 올라가자고 말하고, 막상 도착했을 때는 이곳까지 닿을 줄은 몰랐다며 기쁨을 감추지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 허리 통증이 조금 더 가라앉기를 기다렸다가 함께 올라가자고 말하고, 막상 도착했을 때는 이곳까지 닿을 줄은 몰랐다며 기쁨을 감추지 않는다."
+      },
+      {
+       "t_raw": "부족 사람들 가운데 일부가 Upper Sanctum을 바라볼 때의 이야기를 꺼내는 것도 그다.",
+       "interp": false,
+       "dropped": false,
+       "t": "부족 사람들 가운데 일부가 부유 정토계를 바라볼 때의 이야기를 꺼내는 것도 그다."
+      },
+      {
+       "t_raw": "시련을 통과한 영웅이라면 Phlogiston의 힘을 손에 넣을 수 있다고 전한 것 역시 Chikya였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시련을 통과한 영웅이라면 열소의 힘을 손에 넣을 수 있다고 전한 것 역시 치키야였다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Tracer No Tracing",
+       "quest_ko": "좇을 수 없는 과거",
+       "version": "5.0",
+       "speaker": "Chikya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Seeker No Finding",
+       "quest_ko": "찾을수록 얻기 힘든 법",
+       "version": "5.0",
+       "speaker": "Chikya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Seeker No Finding",
+       "quest_ko": "찾을수록 얻기 힘든 법",
+       "version": "5.0",
+       "speaker": "Chikya"
+      },
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by A2, Q6 and Q7. The interpretation follows from the English.",
+     "quote": "So this is the Upper Sanctum, huh... From down below, you'd think it was all gray and empty up here...",
+     "sentences": [
+      {
+       "t_raw": "Seeker No Finding에서 Traveler가 고대 시련을 완료하자 숨겨진 중심 섬이 모습을 드러냈고, 그 안에는 **Phlogiston 온천**이 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "찾을수록 얻기 힘든 법에서 여행자가 고대 시련을 완료하자 숨겨진 중심 섬이 모습을 드러냈고, 그 안에는 **열소 온천**이 있었다."
+      },
+      {
+       "t_raw": "아래에서 올려다본 Upper Sanctum이 회색이고 텅 빈 것처럼 보였다는 Paimon의 말에, Chikya는 눈이 속이지 않았다며 그곳이 바로 중심부라고 알려 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아래에서 올려다본 부유 정토계가 회색이고 텅 빈 것처럼 보였다는 페이몬의 말에, 치키야는 눈이 속이지 않았다며 그곳이 바로 중심부라고 알려 준다."
+      },
+      {
+       "t_raw": "다만 Traveler는 이미 Phlogiston을 다룰 수 있었기에 온천은 아무 효과도 없었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 여행자는 이미 열소를 다룰 수 있었기에 온천은 아무 효과도 없었다."
+      },
+      {
+       "t_raw": "시련을 통과한 이에게 힘을 주도록 마련된 장치가, 정작 그 힘을 이미 지닌 Traveler 앞에서는 아무 일도 하지 않은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "시련을 통과한 이에게 힘을 주도록 마련된 장치가, 정작 그 힘을 이미 지닌 여행자 앞에서는 아무 일도 하지 않은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Seeker No Finding",
+       "quest_ko": "찾을수록 얻기 힘든 법",
+       "version": "5.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Seeker No Finding",
+       "quest_ko": "찾을수록 얻기 힘든 법",
+       "version": "5.0",
+       "speaker": "Chikya"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A2 and Q5. The interpretation is a reasonable inference.",
+     "quote": "The mechanisms for the ancient trials, a series of Spiritways and Iridescent Inscriptions, are still intact.",
+     "sentences": [
+      {
+       "t_raw": "Upper Sanctum에 이르는 방법은 지금도 Spiritway를 작동시키는 것뿐이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "부유 정토계에 이르는 방법은 지금도 흐르는 영혼길을 작동시키는 것뿐이다."
+      },
+      {
+       "t_raw": "그 너머에는 고대 시련의 장치인 여러 Spiritway와 Iridescent Inscription이 **온전한 모습으로** 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 너머에는 고대 시련의 장치인 여러 흐르는 영혼길과 빛새김 각문이 **온전한 모습으로** 남아 있다."
+      },
+      {
+       "t_raw": "Chikya는 이 섬들이 인간에게도 Saurian에게도 닿을 수 없는 곳이라 그런 이름이 붙었다고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치키야는 이 섬들이 인간에게도 용에게도 닿을 수 없는 곳이라 그런 이름이 붙었다고 설명한다."
+      },
+      {
+       "t_raw": "시련의 장치가 남아 있고 접근 경로가 Spiritway로 한정되어 있다는 점을 겹쳐 보면, 이 장치들이 Upper Sanctum으로 들어서는 관문이었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "시련의 장치가 남아 있고 접근 경로가 흐르는 영혼길로 한정되어 있다는 점을 겹쳐 보면, 이 장치들이 부유 정토계로 들어서는 관문이었던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Tracer No Tracing",
+       "quest_ko": "좇을 수 없는 과거",
+       "version": "5.0",
+       "speaker": "Chikya"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A2 and Q7. The interpretation is hedged and reasonable.",
+     "quote": "Your eyes do not deceive you, Paimon. That... is the center of the Upper Sanctum.",
+     "sentences": [
+      {
+       "t_raw": "Seeker No Finding에서 Traveler가 시련을 완수하자 숨겨져 있던 **중심 섬**이 모습을 드러냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "찾을수록 얻기 힘든 법에서 여행자가 시련을 완수하자 숨겨져 있던 **중심 섬**이 모습을 드러냈다."
+      },
+      {
+       "t_raw": "그 섬에는 Phlogiston 온천이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 섬에는 열소 온천이 있다."
+      },
+      {
+       "t_raw": "Chikya는 눈이 속인 것이 아니라며 저것이 Upper Sanctum의 중심이라고 짚어 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치키야는 눈이 속인 것이 아니라며 저것이 부유 정토계의 중심이라고 짚어 준다."
+      },
+      {
+       "t_raw": "Upper Sanctum이 온전한 섬이 아니라 작은 섬들의 고리로 남은 뒤에도, 시련은 감춰진 중심에 닿는 절차로 기능해 온 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "부유 정토계가 온전한 섬이 아니라 작은 섬들의 고리로 남은 뒤에도, 시련은 감춰진 중심에 닿는 절차로 기능해 온 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Seeker No Finding",
+       "quest_ko": "찾을수록 얻기 힘든 법",
+       "version": "5.0",
+       "speaker": "Chikya"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences match A2. The interpretation is a reasonable inference.",
+     "quote": "According to Chikya, a hero acknowledged by the trials could gain the power to wield Phlogiston by soaking in said spring.",
+     "sentences": [
+      {
+       "t_raw": "Chikya에 따르면 시련이 인정한 영웅은 그 온천에 몸을 담가 Phlogiston을 다룰 힘을 얻을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치키야에 따르면 시련이 인정한 영웅은 그 온천에 몸을 담가 열소를 다룰 힘을 얻을 수 있다."
+      },
+      {
+       "t_raw": "그러나 Traveler는 이미 Phlogiston을 다룰 수 있었기에 온천은 아무 효과도 없었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 여행자는 이미 열소를 다룰 수 있었기에 온천은 아무 효과도 없었다."
+      },
+      {
+       "t_raw": "정작 시련을 통과한 이가 이미 그 힘을 지니고 있었던 탓에, 온천의 효능이 실제로 확인되지는 않은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정작 시련을 통과한 이가 이미 그 힘을 지니고 있었던 탓에, 온천의 효능이 실제로 확인되지는 않은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Q1 and Q3 give the two back-pain mentions. The interpretation is reasonable and adds no hard fact.",
+     "quote": "Alright. We're about to reach the Upper Sanctum, but, uh... Let me take five real quick. Goodness, my back hurts.",
+     "sentences": [
+      {
+       "t_raw": "Chikya는 The Upper Sanctum으로 가는 길에 **허리 통증**을 두 번이나 입에 올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치키야는 부유 정토계로 가는 길에 **허리 통증**을 두 번이나 입에 올린다."
+      },
+      {
+       "t_raw": "출발에 앞서서는 조금만 더 지나면 허리 통증이 가라앉을 테니 그때 함께 The Upper Sanctum에 가자고 말하고, 목전에 닿아서는 잠깐만 쉬겠다며 허리가 아프다고 털어놓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "출발에 앞서서는 조금만 더 지나면 허리 통증이 가라앉을 테니 그때 함께 부유 정토계에 가자고 말하고, 목전에 닿아서는 잠깐만 쉬겠다며 허리가 아프다고 털어놓는다."
+      },
+      {
+       "t_raw": "시련을 통과한 자에게 Phlogiston을 나눠 주는 곳으로 향하는 길의 걸림돌이, 정작 그 길을 아는 동행자의 허리 통증으로 그려지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "시련을 통과한 자에게 열소를 나눠 주는 곳으로 향하는 길의 걸림돌이, 정작 그 길을 아는 동행자의 허리 통증으로 그려지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Tracer No Tracing",
+       "quest_ko": "좇을 수 없는 과거",
+       "version": "5.0",
+       "speaker": "Chikya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Tracer No Tracing",
+       "quest_ko": "좇을 수 없는 과거",
+       "version": "5.0",
+       "speaker": "Chikya"
+      },
+      {
+       "kind": "wiki",
+       "page": "The Upper Sanctum",
+       "revision": 1656689,
+       "section": "Lore",
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "Records of Hanan Pacha"
+        }
+       ]
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Q6 supports the statement. The interpretation is hedged and acceptable.",
+     "quote": "So this is the Upper Sanctum, huh... From down below, you'd think it was all gray and empty up here...",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 The Upper Sanctum에 도착한 직후, 아래에서 올려다보면 이곳이 온통 회색이고 텅 빈 것처럼 보일 거라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 부유 정토계에 도착한 직후, 아래에서 올려다보면 이곳이 온통 회색이고 텅 빈 것처럼 보일 거라고 말한다."
+      },
+      {
+       "t_raw": "실제로 그곳에 올라서서 나온 첫 감상이 그것이니, 아래에서 올려다본 **회색** 인상이 얼마나 강하게 남는지 엿보이는 대목이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "실제로 그곳에 올라서서 나온 첫 감상이 그것이니, 아래에서 올려다본 **회색** 인상이 얼마나 강하게 남는지 엿보이는 대목이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Seeker No Finding",
+       "quest_ko": "찾을수록 얻기 힘든 법",
+       "version": "5.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "M1 puts The Upper Sanctum under Multi-Layered Map > Natlan. The interpretation follows from the quotes.",
+     "quote": "The Upper Sanctum",
+     "sentences": [
+      {
+       "t_raw": "여러 층으로 이루어진 지도에서 The Upper Sanctum은 Natlan 항목 아래에 이름을 올리고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여러 층으로 이루어진 지도에서 부유 정토계는 나타 항목 아래에 이름을 올리고 있다."
+      },
+      {
+       "t_raw": "허리를 붙잡고 쉬어 가던 곳도, 아래에서 회색으로 뭉개져 보이던 곳도 지도 위에서는 같은 이름 하나로 남는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "허리를 붙잡고 쉬어 가던 곳도, 아래에서 회색으로 뭉개져 보이던 곳도 지도 위에서는 같은 이름 하나로 남는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Map",
+       "revision": 1633320,
+       "section": "Multi-Layered Map > Natlan",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Tracer No Tracing",
+       "quest_ko": "좇을 수 없는 과거",
+       "version": "5.0",
+       "speaker": "Chikya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Tracer No Tracing",
+       "quest_ko": "좇을 수 없는 과거",
+       "version": "5.0",
+       "speaker": "Chikya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Seeker No Finding",
+       "quest_ko": "찾을수록 얻기 힘든 법",
+       "version": "5.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "그래. 인간도 Saurian도 그곳에 이르기 어렵기 때문에 우리는 저것들을 Upper Sanctum이라 부른다.",
+     "en": "That's right. We call those the Upper Sanctum, due to their inaccessibility by either humans or Saurians.",
+     "speaker": "Chikya",
+     "source": {
+      "kind": "quest",
+      "quest": "Tracer No Tracing",
+      "quest_ko": "좇을 수 없는 과거",
+      "version": "5.0",
+      "speaker": "Chikya"
+     },
+     "t": "그래. 인간도 용도 그곳에 이르기 어렵기 때문에 우리는 저것들을 부유 정토계이라 부른다.",
+     "speaker_ko": "치키야"
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "일이 잘 풀려서 꽤 만족스러워. 아니, 아주 기쁘다고 해야 하나... 헤헤, Upper Sanctum에 닿게 될 줄은 몰랐네.",
+     "en": "I'm pretty happy with how things have gone. Actually, make that delighted... Hehe, didn't expect to reach the Upper Sanctum.",
+     "speaker": "Chikya",
+     "source": {
+      "kind": "quest",
+      "quest": "Seeker No Finding",
+      "quest_ko": "찾을수록 얻기 힘든 법",
+      "version": "5.0",
+      "speaker": "Chikya"
+     },
+     "t": "일이 잘 풀려서 꽤 만족스러워. 아니, 아주 기쁘다고 해야 하나... 헤헤, 부유 정토계에 닿게 될 줄은 몰랐네.",
+     "speaker_ko": "치키야"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of the Chikya line.",
+     "t_raw": "네 눈은 속이지 않았어, Paimon. 저게... Upper Sanctum의 중심부야.",
+     "en": "Your eyes do not deceive you, Paimon. That... is the center of the Upper Sanctum.",
+     "speaker": "Chikya",
+     "source": {
+      "kind": "quest",
+      "quest": "Seeker No Finding",
+      "quest_ko": "찾을수록 얻기 힘든 법",
+      "version": "5.0",
+      "speaker": "Chikya"
+     },
+     "t": "네 눈은 속이지 않았어, 페이몬. 저게... 부유 정토계의 중심부야.",
+     "speaker_ko": "치키야"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation; wording differs but the meaning matches.",
+     "t_raw": "Paimon, 네 눈이 속인 게 아니야. 저것이... Upper Sanctum의 중심이야.",
+     "en": "Your eyes do not deceive you, Paimon. That... is the center of the Upper Sanctum.",
+     "speaker": "Chikya",
+     "source": {
+      "kind": "quest",
+      "quest": "Seeker No Finding",
+      "quest_ko": "찾을수록 얻기 힘든 법",
+      "version": "5.0",
+      "speaker": "Chikya"
+     },
+     "t": "페이몬, 네 눈이 속인 게 아니야. 저것이... 부유 정토계의 중심이야.",
+     "speaker_ko": "치키야"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation: about to reach, take five, back hurts.",
+     "t_raw": "좋아. 이제 곧 The Upper Sanctum에 닿겠는데, 어… 잠깐만 좀 쉬자. 세상에, 허리가 아파.",
+     "en": "Alright. We're about to reach the Upper Sanctum, but, uh... Let me take five real quick. Goodness, my back hurts.",
+     "speaker": "Chikya",
+     "source": {
+      "kind": "quest",
+      "quest": "Tracer No Tracing",
+      "quest_ko": "좇을 수 없는 과거",
+      "version": "5.0",
+      "speaker": "Chikya"
+     },
+     "t": "좋아. 이제 곧 부유 정토계에 닿겠는데, 어… 잠깐만 좀 쉬자. 세상에, 허리가 아파.",
+     "speaker_ko": "치키야"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,927 @@
+{
+ "node": "Wenyuan",
+ "articles": [
+  {
+   "node": "Wenyuan",
+   "from_version": "2.8",
+   "cutoff": "2022-08-23T00:00:00Z",
+   "input": [
+    {
+     "page": "Wenyuan",
+     "url": "https://genshin-impact.fandom.com/wiki/Wenyuan",
+     "revision": 783045
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 12,
+    "web": 0
+   },
+   "input_chars": 240,
+   "input_cut": false,
+   "input_hash": "b5d5121c418d",
+   "writer": "or-ds,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All supported by A1, A2, Q10, Q11.",
+     "quote": "He is one of Yelan's trusted assistants, who relies on word of mouth in gathering information.",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 Umbrabilis Orchis Chapter Act I: Calculated Gambit에 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 Umbrabilis Orchis Chapter Act I: 계산된 수에 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "그는 **Yelan이 신뢰하는 조수 중 한 명**이며, 정보 수집에서 입소문에 의존하는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **야란이 신뢰하는 조수 중 한 명**이며, 정보 수집에서 입소문에 의존하는 인물이다."
+      },
+      {
+       "t_raw": "Yelan은 그와 Shanghua를 자신을 위해 일하는 사람들이라고 소개하고, Wupei를 두 사람의 동료로 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 그와 상화를 자신을 위해 일하는 사람들이라고 소개하고, 무패를 두 사람의 동료로 설명한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Umbrabilis Orchis Chapter Act",
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A1 and A2.",
+     "quote": "He is one of Yelan's trusted assistants, who relies on word of mouth in gathering information.",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 Umbrabilis Orchis Chapter Act I: Calculated Gambit에 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 Umbrabilis Orchis Chapter Act I: 계산된 수에 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "그는 **Yelan이 신뢰하는 조수** 중 한 명으로, 정보를 모을 때 **입소문**에 의존한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **야란이 신뢰하는 조수** 중 한 명으로, 정보를 모을 때 **입소문**에 의존한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Umbrabilis Orchis Chapter Act",
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Sentence 0 is supported by Q10. Sentence 1 is a reasonable interpretation of A2 and Q10.",
+     "quote": "These two are Wenyuan and Shanghua. They work for me.",
+     "sentences": [
+      {
+       "t_raw": "Seven-Star Selection에서 Yelan은 Wenyuan과 Shanghua를 **자신 밑에서 일하는 사람들**이라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "칠성 선발에서 야란은 문연과 상화를 **자신 밑에서 일하는 사람들**이라고 소개한다."
+      },
+      {
+       "t_raw": "Wenyuan이 Yelan의 조수라는 점은 이 소개와 신뢰하는 조수라는 설명에서 함께 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "문연이 야란의 조수라는 점은 이 소개와 신뢰하는 조수라는 설명에서 함께 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "'Non-player character' is a fair expansion of NPC. Both sentences are supported by A1 and A2.",
+     "quote": "He is one of Yelan's trusted assistants, who relies on word of mouth in gathering information.",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 Umbrabilis Orchis Chapter Act I: Calculated Gambit에 등장하는 퀘스트 전용 비플레이어 캐릭터다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 Umbrabilis Orchis Chapter Act I: 계산된 수에 등장하는 퀘스트 전용 비플레이어 캐릭터다."
+      },
+      {
+       "t_raw": "그는 Yelan이 신뢰하는 조수 중 한 명이며, 정보를 모을 때 입소문에 의존한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 야란이 신뢰하는 조수 중 한 명이며, 정보를 모을 때 입소문에 의존한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Umbrabilis Orchis Chapter Act"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Sentences 0 and 1 are supported by Q10 and Q11. Sentence 2 is a hedged interpretation ('보인다') that follows from them.",
+     "quote": "Don't be alarmed, this is Wupei. He's Wenyuan and Shanghua's colleague.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 Wenyuan과 Shanghua를 자신을 위해 일하는 사람들이라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 문연과 상화를 자신을 위해 일하는 사람들이라고 소개한다."
+      },
+      {
+       "t_raw": "Wupei는 Wenyuan과 Shanghua의 동료라고 Yelan이 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무패는 문연과 상화의 동료라고 야란이 밝힌다."
+      },
+      {
+       "t_raw": "Wenyuan과 Shanghua가 Yelan을 위해 일하고 Wupei가 둘의 동료라는 점에서, 세 사람은 서로 동료로 이어진 관계로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "문연과 상화가 야란을 위해 일하고 무패가 둘의 동료라는 점에서, 세 사람은 서로 동료로 이어진 관계로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Seven-Star Selection",
+     "status": "accepted",
+     "note": "Sentence 0 is supported by Q10. Sentence 1 fails: Q12 is Yelan saying 'For example... Wenyuan. Shanghua.' The English does not say she is giving examples of naming them in a way that the Korean implies. It is also from a different context, and the Korean states it follows directly on from Q10 as a fact. The material gives no ordering or purpose.",
+     "quote": "These two are Wenyuan and Shanghua. They work for me.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 상대가 놀랐는지 묻고, Wenyuan과 Shanghua를 소개하며 두 사람이 **자신을 위해 일한다**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 상대가 놀랐는지 묻고, 문연과 상화를 소개하며 두 사람이 **자신을 위해 일한다**고 말한다."
+      },
+      {
+       "t_raw": "Yelan은 이 둘이 Wenyuan과 Shanghua이며 자신을 위해 일한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "야란은 이 둘이 문연과 상화이며 자신을 위해 일한다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 칠성 선발",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Seven-Star Selection",
+     "status": "accepted",
+     "note": "The English never says the 'meathead' is Wenyuan's colleague. It gives no relationship, so calling him a 동료 adds a fact. Sentence 1 repeats the same claim with '그 동료'.",
+     "quote": "That meathead must've been out there on sea surveillance for some time now... Is he alright? I seem to remember that he can't swim.",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 해상 감시를 꽤 오래 나간 그 근육머리 녀석이 괜찮은지 걱정한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "문연은 해상 감시를 꽤 오래 나간 그 근육머리 녀석이 괜찮은지 걱정한다."
+      },
+      {
+       "t_raw": "그는 그 근육머리 녀석이 **수영하지 못한다**고 기억한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 그 근육머리 녀석이 **수영하지 못한다**고 기억한다."
+      },
+      {
+       "t_raw": "Yelan을 위해 일하는 사람으로 소개된 Wenyuan이 동료의 수영 미숙을 걱정하는 모습은 그가 동료의 안전을 살피는 인물임을 보여주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "야란을 위해 일하는 사람으로 소개된 문연이 동료의 수영 미숙을 걱정하는 모습은 그가 동료의 안전을 살피는 인물임을 보여주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 칠성 선발",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Candidature Analysis",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Lady Yelan, I have finished investigating Mingbo.",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 Yelan에게 **Mingbo 조사**를 마쳤다고 보고한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 야란에게 **명보 조사**를 마쳤다고 보고한다."
+      },
+      {
+       "t_raw": "Wenyuan은 Mingbo가 오늘날의 평판을 천천히 그러나 확실하게 쌓아 온 사람이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 명보가 오늘날의 평판을 천천히 그러나 확실하게 쌓아 온 사람이라고 말한다."
+      },
+      {
+       "t_raw": "조사 완료 보고와 평판 형성에 대한 언급이 함께 놓이면서, Wenyuan의 조사는 Mingbo의 명성 자체보다 그 형성 과정을 확인하는 쪽으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "조사 완료 보고와 평판 형성에 대한 언급이 함께 놓이면서, 문연의 조사는 명보의 명성 자체보다 그 형성 과정을 확인하는 쪽으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      }
+     ],
+     "heading": "작중 행적 — 얼굴로는 알 수 없는 사람의 속마음",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Candidature Analysis",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "I'm back... Huh? How come you're here?",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 조사를 마치고 돌아와, 상대가 어떻게 그 자리에 있게 되었는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 조사를 마치고 돌아와, 상대가 어떻게 그 자리에 있게 되었는지 묻는다."
+      },
+      {
+       "t_raw": "Yelan은 놀라지 말라며 Wupei를 소개하고, Wupei가 Wenyuan과 Shanghua의 동료라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 놀라지 말라며 무패를 소개하고, 무패가 문연과 상화의 동료라고 밝힌다."
+      },
+      {
+       "t_raw": "Wenyuan의 복귀 장면과 **Wupei 소개**가 이어지면서, 현장에는 조사 보고와 동료 소개가 함께 놓인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "문연의 복귀 장면과 **무패 소개**가 이어지면서, 현장에는 조사 보고와 동료 소개가 함께 놓인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 얼굴로는 알 수 없는 사람의 속마음",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Foregone Conclusion",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Lady Yelan, Zhiyi has gone towards Feiyun Slope.",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 Yelan에게 **Zhiyi가 Feiyun Slope 쪽으로 향했다**고 보고한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 야란에게 **지언이 비운 언덕 쪽으로 향했다**고 보고한다."
+      },
+      {
+       "t_raw": "Fatui officials의 소재로는 **Snezhnayan Embassy나 Northland Bank**를 꼽는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Fatui 관료의 소재로는 **Snezhnayan Embassy나 북국 은행**을 꼽는다.",
+       "polish": {
+        "from": "Fatui officials의 소재로는 **Snezhnayan Embassy나 북국 은행**을 꼽는다.",
+        "text": "Fatui 관료의 소재로는 **Snezhnayan Embassy나 북국 은행**을 꼽는다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      }
+     ],
+     "heading": "작중 행적 — 던져진 주사위",
+     "latin_left": [
+      "Fatui",
+      "Snezhnayan Embassy"
+     ]
+    },
+    {
+     "section": "작중 행적 — Foregone Conclusion",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "But Lady Yelan, if we get caught, this could become a major diplomatic incident...",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 발각될 경우 **큰 외교 사건**이 될 수 있다고 우려한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 발각될 경우 **큰 외교 사건**이 될 수 있다고 우려한다."
+      },
+      {
+       "t_raw": "그는 상황을 \"This is turning into a real headache...\"라고 표현한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 상황을 \"이거 점점 골치 아파지는데...\"라고 표현한다.",
+       "polish": {
+        "from": "그는 상황을 \"This is turning into a real headache...\"라고 표현한다.",
+        "text": "그는 상황을 \"이거 점점 골치 아파지는데...\"라고 표현한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Yelan의 지시에는 \"...Yes, Ma'am.\"이라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란의 지시에는 \"...Yes, Ma'am.\"이라고 답한다."
+      },
+      {
+       "t_raw": "우려에도 지시를 받아들이는 태도는 그가 위험을 알면서도 Yelan의 지시에 따르는 쪽을 택한 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "우려에도 지시를 받아들이는 태도는 그가 위험을 알면서도 야란의 지시에 따르는 쪽을 택한 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      }
+     ],
+     "heading": "작중 행적 — 던져진 주사위",
+     "latin_left": [
+      "Yes",
+      "Ma'am"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Did they scare you? These two are Wenyuan and Shanghua. They work for me.",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 Yelan이 **신뢰하는 조수** 중 한 명이며, 정보 수집에서 입소문에 의존한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 야란이 **신뢰하는 조수** 중 한 명이며, 정보 수집에서 입소문에 의존한다."
+      },
+      {
+       "t_raw": "Yelan은 Wenyuan과 Shanghua를 자신을 위해 일하는 사람들이라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 문연과 상화를 자신을 위해 일하는 사람들이라고 소개한다."
+      },
+      {
+       "t_raw": "Yelan은 예시를 들며 Wenyuan과 Shanghua의 이름을 함께 호명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 예시를 들며 문연과 상화의 이름을 함께 호명한다."
+      },
+      {
+       "t_raw": "이런 소개와 호명을 종합하면, Wenyuan과 Shanghua는 Yelan의 지휘 아래 일하는 동료로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 소개와 호명을 종합하면, 문연과 상화는 야란의 지휘 아래 일하는 동료로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported by Q10/Q11; the interpretation is a reasonable grouping.",
+     "quote": "Don't be alarmed, this is Wupei. He's Wenyuan and Shanghua's colleague.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 Wupei를 Wenyuan과 Shanghua의 동료라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 무패를 문연과 상화의 동료라고 소개한다."
+      },
+      {
+       "t_raw": "Wenyuan과 Shanghua는 Yelan을 위해 일하는 사람들로 소개된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연과 상화는 야란을 위해 일하는 사람들로 소개된다."
+      },
+      {
+       "t_raw": "이 두 소개를 합치면, 세 사람은 Yelan 주변의 한 **동료 집단**으로 묶인다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 두 소개를 합치면, 세 사람은 야란 주변의 한 **동료 집단**으로 묶인다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Supported by A2 and Q4; the interpretation follows.",
+     "quote": "Lady Yelan, I have finished investigating Mingbo.",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 Yelan이 신뢰하는 조수 중 하나로, **입소문**을 통해 정보를 모은다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 야란이 신뢰하는 조수 중 하나로, **입소문**을 통해 정보를 모은다."
+      },
+      {
+       "t_raw": "Mingbo에 대한 조사를 마친 뒤에는 Yelan에게 조사를 마쳤다고 보고한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "명보에 대한 조사를 마친 뒤에는 야란에게 조사를 마쳤다고 보고한다."
+      },
+      {
+       "t_raw": "입소문으로 정보를 모으는 조수이면서 조사 결과를 Yelan에게 보고하는 모습은, 그가 **정보 수집과 보고**를 맡는 위치임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "입소문으로 정보를 모으는 조수이면서 조사 결과를 야란에게 보고하는 모습은, 그가 **정보 수집과 보고**를 맡는 위치임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Supported by Q5 and Q7; the interpretation is reasonable.",
+     "quote": "Fatui officials? Should be either the Snezhnayan Embassy or the Northland Bank.",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan은 Zhiyi가 Feiyun Slope 쪽으로 향했다고 Yelan에게 알린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 지언이 비운 언덕 쪽으로 향했다고 야란에게 알린다."
+      },
+      {
+       "t_raw": "Fatui officials에 대해서는 Snezhnayan Embassy나 Northland Bank일 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Fatui 관료에 대해서는 Snezhnayan Embassy나 북국 은행일 것이라고 말한다.",
+       "polish": {
+        "from": "Fatui officials에 대해서는 Snezhnayan Embassy나 북국 은행일 것이라고 말한다.",
+        "text": "Fatui 관료에 대해서는 Snezhnayan Embassy나 북국 은행일 것이라고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Zhiyi의 이동과 Fatui officials의 가능한 장소를 전하는 모습은, 그가 **현장의 동향을 Yelan에게 전달**하는 역할을 맡고 있음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "지언의 이동과 Fatui 관료의 가능한 장소를 전하는 모습은, 그가 **현장의 동향을 야란에게 전달**하는 역할을 맡고 있음을 보여 준다.",
+       "polish": {
+        "from": "지언의 이동과 Fatui officials의 가능한 장소를 전하는 모습은, 그가 **현장의 동향을 야란에게 전달**하는 역할을 맡고 있음을 보여 준다.",
+        "text": "지언의 이동과 Fatui 관료의 가능한 장소를 전하는 모습은, 그가 **현장의 동향을 야란에게 전달**하는 역할을 맡고 있음을 보여 준다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wenyuan"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": [
+      "Fatui",
+      "Snezhnayan Embassy",
+      "Fatui"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "quote_mismatch",
+     "note": null,
+     "quote": "(Profile) (To be added.)",
+     "sentences": [
+      {
+       "t_raw": "Wenyuan의 프로필 항목은 **추가 예정**으로만 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연의 프로필 항목은 **추가 예정**으로만 남아 있다."
+      },
+      {
+       "t_raw": "Wenyuan의 성격 항목도 **추가 예정**으로만 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연의 성격 항목도 **추가 예정**으로만 남아 있다."
+      },
+      {
+       "t_raw": "Wenyuan의 외모 항목 역시 **추가 예정**으로만 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연의 외모 항목 역시 **추가 예정**으로만 남아 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": "Profile > Personality",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": "Profile > Appearance",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful enough; '놀랐나' is a slightly softer rendering of 'scare' but acceptable.",
+     "t_raw": "놀랐나? 이 둘은 Wenyuan과 Shanghua다. 내 밑에서 일한다.",
+     "en": "Did they scare you? These two are Wenyuan and Shanghua. They work for me.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "Seven-Star Selection",
+      "quest_ko": "칠성 선발",
+      "version": "2.7",
+      "speaker": "Yelan"
+     },
+     "t": "놀랐나? 이 둘은 문연과 상화다. 내 밑에서 일한다.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "겁먹었나? 이 둘은 Wenyuan과 Shanghua다. 그들은 나를 위해 일한다.",
+     "en": "Did they scare you? These two are Wenyuan and Shanghua. They work for me.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "Seven-Star Selection",
+      "quest_ko": "칠성 선발",
+      "version": "2.7",
+      "speaker": "Yelan"
+     },
+     "t": "겁먹었나? 이 둘은 문연과 상화다. 그들은 나를 위해 일한다.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "작중 행적 — Seven-Star Selection",
+     "status": "accepted",
+     "note": "'That meathead' is rendered as a plain '저 녀석', which drops the derogatory 'meathead' (muscle-headed) nuance. Not a faithful translation.",
+     "t_raw": "[번역] 저 근육머리 녀석은 해상 감시를 꽤 오래 나가 있었던 게 분명해... 괜찮은 걸까? 그 녀석이 수영을 못 한다고 기억하는데.",
+     "en": "That meathead must've been out there on sea surveillance for some time now... Is he alright? I seem to remember that he can't swim.",
+     "speaker": "Wenyuan",
+     "source": {
+      "kind": "quest",
+      "quest": "Seven-Star Selection",
+      "quest_ko": "칠성 선발",
+      "version": "2.7",
+      "speaker": "Wenyuan"
+     },
+     "t": "[번역] 저 근육머리 녀석은 해상 감시를 꽤 오래 나가 있었던 게 분명해... 괜찮은 걸까? 그 녀석이 수영을 못 한다고 기억하는데.",
+     "speaker_ko": "문연"
+    },
+    {
+     "section": "작중 행적 — Candidature Analysis",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "그렇게는 생각하지 않습니다. Mingbo는 오늘날의 평판을 천천히 그러나 확실하게 쌓아 온 사람입니다.",
+     "en": "I don't believe so. Mingbo is someone who has slowly but surely earned the reputation he has today.",
+     "speaker": "Wenyuan",
+     "source": {
+      "kind": "quest",
+      "quest": "Candidature Analysis",
+      "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+      "version": "2.7",
+      "speaker": "Wenyuan"
+     },
+     "t": "그렇게는 생각하지 않습니다. 명보는 오늘날의 평판을 천천히 그러나 확실하게 쌓아 온 사람입니다.",
+     "speaker_ko": "문연"
+    },
+    {
+     "section": "작중 행적 — Foregone Conclusion",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "하지만 Yelan 부인, 우리가 발각된다면 이건 큰 외교 사건이 될 수 있습니다...",
+     "en": "But Lady Yelan, if we get caught, this could become a major diplomatic incident...",
+     "speaker": "Wenyuan",
+     "source": {
+      "kind": "quest",
+      "quest": "Foregone Conclusion",
+      "quest_ko": "던져진 주사위",
+      "version": "2.7",
+      "speaker": "Wenyuan"
+     },
+     "t": "하지만 야란 부인, 우리가 발각된다면 이건 큰 외교 사건이 될 수 있습니다...",
+     "speaker_ko": "문연"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation; 'Did they scare you?' rendered as '겁먹었나요?' is fine.",
+     "t_raw": "겁먹었나요? 이 두 사람은 Wenyuan과 Shanghua입니다. 그들은 저를 위해 일합니다.",
+     "en": "Did they scare you? These two are Wenyuan and Shanghua. They work for me.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "Seven-Star Selection",
+      "quest_ko": "칠성 선발",
+      "version": "2.7",
+      "speaker": "Yelan"
+     },
+     "t": "겁먹었나요? 이 두 사람은 문연과 상화입니다. 그들은 저를 위해 일합니다.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "Lady Yelan, Mingbo에 대한 조사를 마쳤습니다.",
+     "en": "Lady Yelan, I have finished investigating Mingbo.",
+     "speaker": "Wenyuan",
+     "source": {
+      "kind": "quest",
+      "quest": "Candidature Analysis",
+      "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+      "version": "2.7",
+      "speaker": "Wenyuan"
+     },
+     "t": "Lady Yelan, 명보에 대한 조사를 마쳤습니다.",
+     "speaker_ko": "문연"
+    }
+   ]
+  }
+ ]
+}

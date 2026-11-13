@@ -21,109 +21,40 @@
    "input_cut": false,
    "input_hash": "9059b67f5c4c",
    "writer": "or-ds",
-   "verifier": "",
-   "status": "needs_verify",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Arasudraka is a \"song gatherer\" and often goes to collect all sorts of songs.",
-     "sentences": [
-      {
-       "t_raw": "**Arasudraka**는 Genshin Impact에 등장하는 Aranara이며, 온갖 노래를 모으러 다니는 **song gatherer**다.",
-       "interp": false,
-       "dropped": false,
-       "t": "**아란슈드라카**는 원신에 등장하는 아란나라이며, 온갖 노래를 모으러 다니는 **song gatherer**다."
-      },
-      {
-       "t_raw": "Nara로 불리는 Traveler와 Paimon을 반기며, **Festival Utsava**가 따뜻한 노래가 될 것이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "나라로 불리는 여행자와 페이몬을 반기며, **우트사바 축제**가 따뜻한 노래가 될 것이라고 말한다."
-      },
-      {
-       "t_raw": "Aramaha가 남긴 노래가 있으면 Vasara Tree가 근처에 있다고 보는 대목과, Nara가 아직 Arama와 Festival Utsava 준비를 해야 한다고 말하는 대목을 함께 보면, Arasudraka에게 노래는 길을 찾는 단서이자 축제를 잇는 매개로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아란마하가 남긴 노래가 있으면 바사라 나무가 근처에 있다고 보는 대목과, 나라가 아직 아란마와 우트사바 축제 준비를 해야 한다고 말하는 대목을 함께 보면, 아란슈드라카에게 노래는 길을 찾는 단서이자 축제를 잇는 매개로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Arasudraka",
-       "revision": 848148,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arama"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arasudraka"
-      },
-      {
-       "kind": "wiki",
-       "page": "Arasudraka",
-       "revision": 848148,
-       "section": "Dialogue",
-       "paragraph": "A7",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Arasudraka",
-       "revision": 848148,
-       "section": "Dialogue",
-       "paragraph": "A10",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arasudraka"
-      }
-     ],
-     "heading": null,
-     "latin_left": []
-    },
-    {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported. Sentence 2 is a loose paraphrase: Q2 and Q4 give the name being recorded and the wish to travel and remember songs, which is close enough to 'name and journey'.",
      "quote": "Yes! Arasudraka is a \"song gatherer\" and often goes to collect all sorts of songs.",
      "sentences": [
       {
-       "t_raw": "Arasudraka는 Genshin Impact의 NPC이며 Aranara의 일부다.",
+       "t_raw": "Arasudraka는 Genshin Impact에 등장하는 NPC이자 Aranara 중 하나다.",
        "interp": false,
        "dropped": false,
-       "t": "아란슈드라카는 원신의 NPC이며 아란나라의 일부다."
+       "t": "아란슈드라카는 원신에 등장하는 NPC이자 아란나라 중 하나다."
       },
       {
-       "t_raw": "Arama는 Arasudraka를 노래를 모으는 자라고 소개하며, 여러 노래를 모으러 자주 다닌다고 말한다.",
+       "t_raw": "Arama는 Arasudraka를 **노래를 모으는 자**라고 소개하고, Arasudraka는 여러 노래를 모으러 다닌다.",
        "interp": false,
        "dropped": false,
-       "t": "아란마는 아란슈드라카를 노래를 모으는 자라고 소개하며, 여러 노래를 모으러 자주 다닌다고 말한다."
+       "t": "아란마는 아란슈드라카를 **노래를 모으는 자**라고 소개하고, 아란슈드라카는 여러 노래를 모으러 다닌다."
       },
       {
-       "t_raw": "따라서 Arasudraka는 Aranara 가운데 노래를 모으는 역할을 맡은 존재로 볼 수 있다.",
+       "t_raw": "Traveler와 Paimon은 Arasudraka를 만나고, Arasudraka는 Nara의 이름과 여정을 노래에 남기고 싶어 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬은 아란슈드라카를 만나고, 아란슈드라카는 나라의 이름과 여정을 노래에 남기고 싶어 한다."
+      },
+      {
+       "t_raw": "이 점에서 Arasudraka는 **노래를 매개로** Nara와 Aranara의 만남을 이어 주는 인물로 보인다.",
        "interp": true,
        "dropped": false,
-       "t": "따라서 아란슈드라카는 아란나라 가운데 노래를 모으는 역할을 맡은 존재로 볼 수 있다."
+       "t": "이 점에서 아란슈드라카는 **노래를 매개로** 나라와 아란나라의 만남을 이어 주는 인물로 보인다."
       }
      ],
      "sources": [
@@ -140,116 +71,71 @@
        "quest": "The Rhythm that Nurtures the Sprout",
        "quest_ko": "새싹이 싹 트는 멜로디",
        "version": "3.0",
+       "speaker": "Arasudraka"
+      },
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arasudraka"
+      },
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arasudraka"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Arama"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
        "speaker": "Arama"
       }
      ],
-     "heading": "개요",
+     "heading": null,
      "latin_left": [
       "NPC"
      ]
     },
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "I am getting closer to the Sourcesong, the homeland of songs.",
-     "sentences": [
-      {
-       "t_raw": "Arasudraka는 Aramaha가 남긴 노래가 있다면 Vasara Tree가 근처에 있을 것이라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란슈드라카는 아란마하가 남긴 노래가 있다면 바사라 나무가 근처에 있을 것이라고 말한다."
-      },
-      {
-       "t_raw": "Arama는 Nara가 Arasudraka가 고대의 노래를 찾도록 도왔다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란마는 나라가 아란슈드라카가 고대의 노래를 찾도록 도왔다고 전한다."
-      },
-      {
-       "t_raw": "Arasudraka는 Aramaha의 노래를 들려준 것에 고맙다며, 자신이 Sourcesong, 노래의 고향에 가까워지고 있다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란슈드라카는 아란마하의 노래를 들려준 것에 고맙다며, 자신이 원천의 노래, 노래의 고향에 가까워지고 있다고 말한다."
-      },
-      {
-       "t_raw": "이는 노래를 모으는 자인 Arasudraka의 노래 모으기가 Sourcesong을 향한 목표와 이어져 있음을 보여 주는 대목으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이는 노래를 모으는 자인 아란슈드라카의 노래 모으기가 원천의 노래를 향한 목표와 이어져 있음을 보여 주는 대목으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arasudraka"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arama"
-      },
-      {
-       "kind": "wiki",
-       "page": "Arasudraka",
-       "revision": 848148,
-       "section": "Dialogue",
-       "paragraph": "A13",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Arasudraka",
-       "revision": 848148,
-       "section": "Dialogue",
-       "paragraph": "A14",
-       "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arama"
-      }
-     ],
-     "heading": "개요",
-     "latin_left": []
-    },
-    {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All supported by A1, Q18 and Q22. The interpretation is reasonable.",
      "quote": "Yes! Arasudraka is a \"song gatherer\" and often goes to collect all sorts of songs.",
      "sentences": [
       {
-       "t_raw": "Arasudraka는 Genshin Impact의 NPC이자 Aranara의 일부다.",
+       "t_raw": "Arasudraka는 Genshin Impact의 NPC이며 **Aranara**의 일부다.",
        "interp": false,
        "dropped": false,
-       "t": "아란슈드라카는 원신의 NPC이자 아란나라의 일부다."
+       "t": "아란슈드라카는 원신의 NPC이며 **아란나라**의 일부다."
       },
       {
-       "t_raw": "Arama는 Arasudraka를 **song gatherer**라고 부르며, 여러 노래를 모으러 자주 다닌다고 설명한다.",
+       "t_raw": "Arama는 Arasudraka를 **노래를 모으는 자**라고 소개하며, 여러 노래를 모으러 다니는 존재라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란마는 아란슈드라카를 **song gatherer**라고 부르며, 여러 노래를 모으러 자주 다닌다고 설명한다."
+       "t": "아란마는 아란슈드라카를 **노래를 모으는 자**라고 소개하며, 여러 노래를 모으러 다니는 존재라고 말한다."
       },
       {
-       "t_raw": "Arama는 Arasudraka가 song gatherer이기도 하다고 말한다.",
+       "t_raw": "Arama는 Arasudraka가 또한 노래를 모으는 자라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란마는 아란슈드라카가 song gatherer이기도 하다고 말한다."
+       "t": "아란마는 아란슈드라카가 또한 노래를 모으는 자라고 말한다."
       },
       {
-       "t_raw": "Aranara이면서 song gatherer로 소개되고 여러 노래를 모은다는 점에서, Arasudraka의 활동은 노래 수집을 중심으로 설명된다고 볼 수 있다.",
+       "t_raw": "두 언급이 겹치는 만큼, Arasudraka의 정체성은 Aranara이면서 노래를 모으는 역할로 정리되는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "아란나라이면서 song gatherer로 소개되고 여러 노래를 모은다는 점에서, 아란슈드라카의 활동은 노래 수집을 중심으로 설명된다고 볼 수 있다."
+       "t": "두 언급이 겹치는 만큼, 아란슈드라카의 정체성은 아란나라이면서 노래를 모으는 역할로 정리되는 셈이다."
       }
      ],
      "sources": [
@@ -282,49 +168,108 @@
      ]
     },
     {
-     "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "That's true. We need the Bija, right? I've sent Arayasa, Aradasa, and Arasudraka to look for Ashvattha's Concourses.",
+     "section": "작중 행적 — The Rhythm that Nurtures the Sprout",
+     "status": "accepted",
+     "note": "All supported by Q21, Q19, Q22, Q1 and Q9.",
+     "quote": "Ooh! Nara and Paimon! Nice to meet you! The Golden Nara is tall and strong, just like the song says!",
      "sentences": [
       {
-       "t_raw": "Arakavi는 Bija가 필요하다며 Arayasa, Aradasa, Arasudraka를 **Ashvattha's Concourses**를 찾으러 보냈다고 말한다.",
+       "t_raw": "Arama는 Nara와 Paimon에게 Arasudraka를 소개하고, Paimon이 Arasudraka가 친구인지 묻자 Arama는 Arasudraka 역시 **노래를 모으는 자**라고 답한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란카비는 비야의 열매가 필요하다며 아란야사, 아란다사, 아란슈드라카를 **아슈바타의 전당**을 찾으러 보냈다고 말한다."
+       "t": "아란마는 나라와 페이몬에게 아란슈드라카를 소개하고, 페이몬이 아란슈드라카가 친구인지 묻자 아란마는 아란슈드라카 역시 **노래를 모으는 자**라고 답한다."
       },
       {
-       "t_raw": "그들은 밖에서 Ashvattha's Concourses를 찾고 있으며, Arakavi는 Arama에게 가서 돕라고 한다.",
+       "t_raw": "Arasudraka는 Nara와 Paimon에게 반갑다고 인사하며, Golden Nara가 노래에서 말한 것처럼 키가 크고 힘이 세다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "그들은 밖에서 아슈바타의 전당을 찾고 있으며, 아란카비는 아란마에게 가서 돕라고 한다."
+       "t": "아란슈드라카는 나라와 페이몬에게 반갑다고 인사하며, 금빛의 나라가 노래에서 말한 것처럼 키가 크고 힘이 세다고 말한다."
       },
       {
-       "t_raw": "Arama는 Nara가 Arayasa, Aradasa, Arasudraka를 도와 고대의 노래들을 찾았다고 말한다.",
+       "t_raw": "Arasudraka는 이어 Nara와 Paimon에게 노래를 아느냐고 묻는다.",
        "interp": false,
        "dropped": false,
-       "t": "아란마는 나라가 아란야사, 아란다사, 아란슈드라카를 도와 고대의 노래들을 찾았다고 말한다."
-      },
-      {
-       "t_raw": "Paimon은 Arasudraka가 그 노래를 찾던 중 Aramaha가 언급되었다고 짚는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 아란슈드라카가 그 노래를 찾던 중 아란마하가 언급되었다고 짚는다."
-      },
-      {
-       "t_raw": "이처럼 Arasudraka가 노래를 찾는 일은 Bija와 Ashvattha's Concourses를 찾는 임무, 고대의 노래들 탐색과 함께 언급되어 주변의 요청과 맞물린 활동으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이처럼 아란슈드라카가 노래를 찾는 일은 비야의 열매와 아슈바타의 전당을 찾는 임무, 고대의 노래들 탐색과 함께 언급되어 주변의 요청과 맞물린 활동으로 보인다."
+       "t": "아란슈드라카는 이어 나라와 페이몬에게 노래를 아느냐고 묻는다."
       }
      ],
      "sources": [
       {
        "kind": "quest",
-       "quest": "Encounter in the Woods",
-       "quest_ko": "숲속의 노래",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
        "version": "3.0",
-       "speaker": "Arakavi"
+       "speaker": "Arama"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Arama"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Arasudraka"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Arasudraka"
+      }
+     ],
+     "heading": "작중 행적 — 새싹이 싹 트는 멜로디",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Rhythm that Nurtures the Sprout",
+     "status": "accepted",
+     "note": "All supported by Q5, Q17, Q14, Q15 and Q20. The interpretation is reasonable.",
+     "quote": "This seems to be the song left by Aramaha. So there should be a Vasara Tree nearby!",
+     "sentences": [
+      {
+       "t_raw": "Arasudraka는 이것이 Aramaha가 남긴 노래로 보인다며, 그렇다면 근처에 **Vasara Tree**가 있어야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란슈드라카는 이것이 아란마하가 남긴 노래로 보인다며, 그렇다면 근처에 **바사라 나무**가 있어야 한다고 말한다."
+      },
+      {
+       "t_raw": "Arakavi는 Arayasa, Aradasa, Arasudraka가 **Ashvattha's Concourses**를 찾도록 보냈다고 말하고, Arama는 Nara가 그들이 고대의 노래를 찾는 일을 도왔다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란카비는 아란야사, 아란다사, 아란슈드라카가 **아슈바타의 전당**을 찾도록 보냈다고 말하고, 아란마는 나라가 그들이 고대의 노래를 찾는 일을 도왔다고 전한다."
+      },
+      {
+       "t_raw": "Paimon은 Arasudraka를 도와 그 노래를 찾던 때 Aramaha가 언급되었다고 되짚고, Arasudraka에게 맡겨 달라며 Festival Utsava에서 만나자고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아란슈드라카를 도와 그 노래를 찾던 때 아란마하가 언급되었다고 되짚고, 아란슈드라카에게 맡겨 달라며 우트사바 축제에서 만나자고 말한다."
+      },
+      {
+       "t_raw": "이처럼 Aramaha의 노래를 찾는 일과 Ashvattha's Concourses 탐색은 Nara와 Paimon이 Arasudraka를 도운 흐름 속에 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 아란마하의 노래를 찾는 일과 아슈바타의 전당 탐색은 나라와 페이몬이 아란슈드라카를 도운 흐름 속에 놓인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Arasudraka"
       },
       {
        "kind": "quest",
@@ -346,56 +291,6 @@
        "quest_ko": "과거의 아이들을 위하여",
        "version": "3.0",
        "speaker": "Paimon"
-      }
-     ],
-     "heading": "정체와 배경",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Ashvattha's Concourses",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ooh! Nara and Paimon! Nice to meet you! The Golden Nara is tall and strong, just like the song says!",
-     "sentences": [
-      {
-       "t_raw": "Arama는 Nara와 Paimon에게 Arasudraka를 소개하고, Arasudraka는 **Golden Nara**가 노래에서 말한 것처럼 크고 힘이 세다며 반갑게 맞는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란마는 나라와 페이몬에게 아란슈드라카를 소개하고, 아란슈드라카는 **금빛의 나라**가 노래에서 말한 것처럼 크고 힘이 세다며 반갑게 맞는다."
-      },
-      {
-       "t_raw": "Paimon이 Arasudraka가 Arama의 친구인지 묻자 Arama는 그가 노래 수집가이며 여러 노래를 모으러 다닌다고 설명한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬이 아란슈드라카가 아란마의 친구인지 묻자 아란마는 그가 노래 수집가이며 여러 노래를 모으러 다닌다고 설명한다."
-      },
-      {
-       "t_raw": "Arasudraka는 Nara와 Paimon에게 아는 노래가 있는지 묻고, '그렇다면 그는 많은 노래를 알겠다!'며 감탄한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란슈드라카는 나라와 페이몬에게 아는 노래가 있는지 묻고, '그렇다면 그는 많은 노래를 알겠다!'며 감탄한다."
-      },
-      {
-       "t_raw": "Arasudraka는 초록색 녀석을 두고 Dusk Bird인지 Shroomboar인지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란슈드라카는 초록색 녀석을 두고 황혼새인지 버섯 돼지인지 묻는다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arama"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arasudraka"
       },
       {
        "kind": "quest",
@@ -403,163 +298,34 @@
        "quest_ko": "새싹이 싹 트는 멜로디",
        "version": "3.0",
        "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arama"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arasudraka"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arasudraka"
       }
      ],
-     "heading": "작중 행적 — 아슈바타의 전당",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Ashvattha's Concourses",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Seems like here is a song left by Aramaha. If it's true, there should be a Vasara Tree nearby!",
-     "sentences": [
-      {
-       "t_raw": "Arasudraka는 여기 Aramaha가 남긴 노래가 있는 것 같다며, 그것이 사실이라면 근처에 **Vasara Tree**가 있어야 한다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란슈드라카는 여기 아란마하가 남긴 노래가 있는 것 같다며, 그것이 사실이라면 근처에 **바사라 나무**가 있어야 한다고 말한다."
-      },
-      {
-       "t_raw": "이 대목은 Aramaha의 노래가 Vasara Tree가 근처에 있음을 알려 주는 단서로 기능한다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 대목은 아란마하의 노래가 바사라 나무가 근처에 있음을 알려 주는 단서로 기능한다고 볼 수 있다."
-      },
-      {
-       "t_raw": "Arama는 Nara가 Arayasa, Aradasa, Arasudraka를 도와 옛 노래를 찾았다고 말하고, 그들이 자신의 친구이기도 하다며 고마워한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란마는 나라가 아란야사, 아란다사, 아란슈드라카를 도와 옛 노래를 찾았다고 말하고, 그들이 자신의 친구이기도 하다며 고마워한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arasudraka"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arasudraka"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arama"
-      }
-     ],
-     "heading": "작중 행적 — 아슈바타의 전당",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — Ashvattha's Concourses",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Leave it to us! See you at Festival Utsava, Arasudraka!",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 Arasudraka에게 '우리에게 맡겨! Festival Utsava에서 보자, Arasudraka!'라고 답한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 아란슈드라카에게 '우리에게 맡겨! 우트사바 축제에서 보자, 아란슈드라카!'라고 답한다."
-      },
-      {
-       "t_raw": "Arasudraka와 Nara, Paimon의 만남은 Festival Utsava에서 다시 만나자는 말로 이어지는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아란슈드라카와 나라, 페이몬의 만남은 우트사바 축제에서 다시 만나자는 말로 이어지는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arasudraka"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arama"
-      }
-     ],
-     "heading": "작중 행적 — 아슈바타의 전당",
+     "heading": "작중 행적 — 새싹이 싹 트는 멜로디",
      "latin_left": []
     },
     {
      "section": "작중 행적 — Festival Utsava",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This festival will become a warm song for sure.",
+     "status": "accepted",
+     "note": "All supported by A7, A9, A10 and A11.",
+     "quote": "Arasudraka wants to sing with Nara (Traveler) right now.",
      "sentences": [
       {
-       "t_raw": "Arasudraka는 Nara (Traveler)가 **Festival Utsava**를 준비하고 있으며, 이 축제가 분명 따뜻한 노래가 될 것이라고 말한다.",
+       "t_raw": "Festival Utsava를 앞두고 Arasudraka는 Nara가 축제를 준비 중이며 이 축제가 **따뜻한 노래**가 될 것이라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란슈드라카는 나라 (여행자)가 **우트사바 축제**를 준비하고 있으며, 이 축제가 분명 따뜻한 노래가 될 것이라고 말한다."
+       "t": "우트사바 축제를 앞두고 아란슈드라카는 나라가 축제를 준비 중이며 이 축제가 **따뜻한 노래**가 될 것이라고 말한다."
       },
       {
-       "t_raw": "Arasudraka는 지금 당장 Nara (Traveler)와 노래하고 싶어 하지만, Nara (Traveler)가 아직 Arama와 함께 Festival Utsava를 준비해야 한다고 덧붙인다.",
+       "t_raw": "Arasudraka는 지금 당장 Nara와 노래하고 싶어 하지만, Nara는 아직 Arama와 함께 Festival Utsava를 준비해야 한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란슈드라카는 지금 당장 나라 (여행자)와 노래하고 싶어 하지만, 나라 (여행자)가 아직 아란마와 함께 우트사바 축제를 준비해야 한다고 덧붙인다."
+       "t": "아란슈드라카는 지금 당장 나라와 노래하고 싶어 하지만, 나라는 아직 아란마와 함께 우트사바 축제를 준비해야 한다."
       },
       {
-       "t_raw": "Nara (Traveler)가 피곤하면 Song Gatherers의 노래를 들으러 오라고 권한다.",
+       "t_raw": "Arasudraka는 Nara가 피곤하면 Song Gatherers의 노래를 들으러 오라고 권한다.",
        "interp": false,
        "dropped": false,
-       "t": "나라 (여행자)가 피곤하면 Song Gatherers의 노래를 들으러 오라고 권한다."
-      },
-      {
-       "t_raw": "돌아온 Nara에게 Arasudraka는 함께하는 Festival Utsava가 노래가 될 만한 이야기라고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "돌아온 나라에게 아란슈드라카는 함께하는 우트사바 축제가 노래가 될 만한 이야기라고 말한다."
-      },
-      {
-       "t_raw": "Festival Utsava를 따뜻한 노래로 여기면서도 당장 Nara (Traveler)와 노래하고 싶어 하는 태도에서, 축제와 노래에 대한 기대가 큰 것으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "우트사바 축제를 따뜻한 노래로 여기면서도 당장 나라 (여행자)와 노래하고 싶어 하는 태도에서, 축제와 노래에 대한 기대가 큰 것으로 보인다."
+       "t": "아란슈드라카는 나라가 피곤하면 Song Gatherers의 노래를 들으러 오라고 권한다."
       }
      ],
      "sources": [
@@ -594,13 +360,6 @@
        "section": "Dialogue",
        "paragraph": "A11",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "Festival Utsava",
-       "quest_ko": "우트사바 축제",
-       "version": "3.0",
-       "speaker": "Arasudraka"
       }
      ],
      "heading": "작중 행적 — 우트사바 축제",
@@ -610,45 +369,39 @@
     },
     {
      "section": "작중 행적 — Festival Utsava",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "May this song echo in Vanarana forever!",
+     "status": "accepted",
+     "note": "All supported by Q6, Q2, Q4, Q10 and Q12. The interpretation is reasonable.",
+     "quote": "Regardless, your name shall be recorded in our songs. Nara is a good name, very lyrical!",
      "sentences": [
       {
-       "t_raw": "Arasudraka는 **Nara의 이름**이 우리의 노래에 기록될 것이라고 말하며, Nara라는 이름이 매우 서정적이라고 평가한다.",
+       "t_raw": "Nara가 돌아오자 Arasudraka는 Nara와 함께하는 Festival Utsava가 노래로 삼기에 어울리는 이야기라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란슈드라카는 **나라의 이름**이 우리의 노래에 기록될 것이라고 말하며, 나라라는 이름이 매우 서정적이라고 평가한다."
+       "t": "나라가 돌아오자 아란슈드라카는 나라와 함께하는 우트사바 축제가 노래로 삼기에 어울리는 이야기라고 말한다."
       },
       {
-       "t_raw": "Nara가 멋지다며 함께 여행하면서 Nara의 노래를 기억하고 싶다고도 한다.",
+       "t_raw": "Arasudraka는 **Nara의 이름**이 우리의 노래에 기록될 것이라 하고, Nara가 아주 서정적인 좋은 이름이라고 평한다.",
        "interp": false,
        "dropped": false,
-       "t": "나라가 멋지다며 함께 여행하면서 나라의 노래를 기억하고 싶다고도 한다."
+       "t": "아란슈드라카는 **나라의 이름**이 우리의 노래에 기록될 것이라 하고, 나라가 아주 서정적인 좋은 이름이라고 평한다."
       },
       {
-       "t_raw": "Arasudraka는 Arayasa를 어리석다고 말하며, 태어난 아기 Nara만 울 것이라고 한다.",
+       "t_raw": "또한 Nara와 함께 여행하며 Nara의 노래를 기억하고 싶어 하고, 이 노래가 Vanarana에 영원히 울리기를 바란다.",
        "interp": false,
        "dropped": false,
-       "t": "아란슈드라카는 아란야사를 어리석다고 말하며, 태어난 아기 나라만 울 것이라고 한다."
+       "t": "또한 나라와 함께 여행하며 나라의 노래를 기억하고 싶어 하고, 이 노래가 바나라나에 영원히 울리기를 바란다."
       },
       {
-       "t_raw": "Paimon은 걱정하지 말라며 원래 그렇다고 한다.",
+       "t_raw": "Arasudraka는 Nara에게 전하고 싶은 말이 있다고도 한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 걱정하지 말라며 원래 그렇다고 한다."
+       "t": "아란슈드라카는 나라에게 전하고 싶은 말이 있다고도 한다."
       },
       {
-       "t_raw": "Arasudraka는 이 노래가 **Vanarana**에 영원히 울려 퍼지기를 바란다.",
-       "interp": false,
+       "t_raw": "이는 Arasudraka가 **Nara의 여정**을 노래로 남기려는 태도로 볼 수 있다.",
+       "interp": true,
        "dropped": false,
-       "t": "아란슈드라카는 이 노래가 **바나라나**에 영원히 울려 퍼지기를 바란다."
-      },
-      {
-       "t_raw": "Arasudraka는 Nara에게 하고 싶은 말이 있다고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란슈드라카는 나라에게 하고 싶은 말이 있다고 한다."
+       "t": "이는 아란슈드라카가 **나라의 여정**을 노래로 남기려는 태도로 볼 수 있다."
       }
      ],
      "sources": [
@@ -672,13 +425,6 @@
        "quest_ko": "우트사바 축제",
        "version": "3.0",
        "speaker": "Arasudraka"
-      },
-      {
-       "kind": "quest",
-       "quest": "Festival Utsava",
-       "quest_ko": "우트사바 축제",
-       "version": "3.0",
-       "speaker": "Paimon"
       },
       {
        "kind": "quest",
@@ -699,28 +445,114 @@
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼 — Aramaha와 Sourcesong",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "This seems to be the song left by Aramaha. So there should be a Vasara Tree nearby!",
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by the cited lines.",
+     "quote": "And Nara has helped Arayasa, Aradasa, and Arasudraka find the ancient songs. They're my friends too. Thank you for that, too.",
      "sentences": [
       {
-       "t_raw": "Arasudraka는 Aramaha가 남긴 노래로 보이는 것을 두고, 그것이 사실이라면 근처에 **Vasara Tree**가 있어야 한다고 말한다.",
+       "t_raw": "Paimon이 Arama에게 Arasudraka가 친구인지 묻자, Arama는 그를 Nara와 Paimon에게 소개하며 **노래를 모으는 자**라고 덧붙인다.",
        "interp": false,
        "dropped": false,
-       "t": "아란슈드라카는 아란마하가 남긴 노래로 보이는 것을 두고, 그것이 사실이라면 근처에 **바사라 나무**가 있어야 한다고 말한다."
+       "t": "페이몬이 아란마에게 아란슈드라카가 친구인지 묻자, 아란마는 그를 나라와 페이몬에게 소개하며 **노래를 모으는 자**라고 덧붙인다."
       },
       {
-       "t_raw": "노래의 출처에 조건을 붙이면서도 곧바로 Vasara Tree의 존재를 끌어오는 셈이다.",
-       "interp": true,
+       "t_raw": "Arama는 Nara가 Arayasa, Aradasa, Arasudraka의 고대의 노래 찾기를 도왔다며 그들을 자신의 **친구**라고 말한다.",
+       "interp": false,
        "dropped": false,
-       "t": "노래의 출처에 조건을 붙이면서도 곧바로 바사라 나무의 존재를 끌어오는 셈이다."
+       "t": "아란마는 나라가 아란야사, 아란다사, 아란슈드라카의 고대의 노래 찾기를 도왔다며 그들을 자신의 **친구**라고 말한다."
       },
       {
-       "t_raw": "그에게 **Aramaha의 노래**는 Vasara Tree가 가까이 있음을 알리는 단서로 여겨지는 것으로 보인다.",
+       "t_raw": "Arakavi는 Arayasa, Aradasa, Arasudraka를 Ashvattha's Concourses 찾으러 보냈다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란카비는 아란야사, 아란다사, 아란슈드라카를 아슈바타의 전당 찾으러 보냈다고 말한다."
+      },
+      {
+       "t_raw": "Arasudraka는 Arayasa를 “Stupid Arayasa”라고 부르며 오직 아기 Nara만 태어나 운다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란슈드라카는 아란야사를 “Stupid Arayasa”라고 부르며 오직 아기 나라만 태어나 운다고 말한다."
+      },
+      {
+       "t_raw": "친구로 소개되는 모습과 Arayasa를 향한 이런 발언을 함께 보면, Arasudraka의 관계는 친밀함과 놀림이 섞인 것으로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "그에게 **아란마하의 노래**는 바사라 나무가 가까이 있음을 알리는 단서로 여겨지는 것으로 보인다."
+       "t": "친구로 소개되는 모습과 아란야사를 향한 이런 발언을 함께 보면, 아란슈드라카의 관계는 친밀함과 놀림이 섞인 것으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Arama"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Arama"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Arama"
+      },
+      {
+       "kind": "quest",
+       "quest": "Encounter in the Woods",
+       "quest_ko": "숲속의 노래",
+       "version": "3.0",
+       "speaker": "Arakavi"
+      },
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arasudraka"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Stupid Arayasa"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation is reasonable.",
+     "quote": "Yeah, Nara is awesome! I'd love to travel with you and remember your songs!",
+     "sentences": [
+      {
+       "t_raw": "Arasudraka는 Nara와 Paimon을 만나자 **Golden Nara**가 노래에서 말한 것처럼 크고 강하다고 반기고, 그들에게 노래를 아는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란슈드라카는 나라와 페이몬을 만나자 **금빛의 나라**가 노래에서 말한 것처럼 크고 강하다고 반기고, 그들에게 노래를 아는지 묻는다."
+      },
+      {
+       "t_raw": "그는 Nara가 멋지다며 함께 여행하며 Nara의 노래를 기억하고 싶다고 하고, Nara의 이름이 노래에 기록될 것이라며 Nara가 서정적인 좋은 이름이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 나라가 멋지다며 함께 여행하며 나라의 노래를 기억하고 싶다고 하고, 나라의 이름이 노래에 기록될 것이라며 나라가 서정적인 좋은 이름이라고 말한다."
+      },
+      {
+       "t_raw": "Nara의 이름을 노래에 기록하고 Nara의 노래를 기억하려는 태도는 Nara를 노래에 남길 존재로 여기는 것으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "나라의 이름을 노래에 기록하고 나라의 노래를 기억하려는 태도는 나라를 노래에 남길 존재로 여기는 것으로 볼 수 있다."
       }
      ],
      "sources": [
@@ -737,43 +569,71 @@
        "quest_ko": "새싹이 싹 트는 멜로디",
        "version": "3.0",
        "speaker": "Arasudraka"
+      },
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arasudraka"
+      },
+      {
+       "kind": "quest",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
+       "version": "3.0",
+       "speaker": "Arasudraka"
       }
      ],
-     "heading": "떡밥과 수수께끼 — 아란마하와 원천의 노래",
+     "heading": "인간관계",
      "latin_left": []
     },
     {
-     "section": "떡밥과 수수께끼 — Aramaha와 Sourcesong",
-     "status": "needs_verify",
-     "note": null,
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation follows from A14 and Q5.",
      "quote": "I am getting closer to the Sourcesong, the homeland of songs.",
      "sentences": [
       {
-       "t_raw": "Arasudraka는 Nara (Traveler)에게 Aramaha의 노래를 들려준 것에 고맙다고 말한다.",
+       "t_raw": "Arasudraka에 관해 Aramaha를 주제로 한 대화가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "아란슈드라카는 나라 (여행자)에게 아란마하의 노래를 들려준 것에 고맙다고 말한다."
+       "t": "아란슈드라카에 관해 아란마하를 주제로 한 대화가 있다."
       },
       {
-       "t_raw": "그는 **Sourcesong**, 곧 노래의 고향에 더 가까워지고 있다고 말한다.",
+       "t_raw": "Arasudraka는 Nara에게 **Aramaha의 노래**를 들려준 데 고맙다고 말하며, 자신이 **Sourcesong**, 노래의 고향에 가까워지고 있다고 전한다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 **원천의 노래**, 곧 노래의 고향에 더 가까워지고 있다고 말한다."
+       "t": "아란슈드라카는 나라에게 **아란마하의 노래**를 들려준 데 고맙다고 말하며, 자신이 **원천의 노래**, 노래의 고향에 가까워지고 있다고 전한다."
       },
       {
-       "t_raw": "Paimon은 Arasudraka가 그 노래를 찾도록 도울 때 Aramaha가 언급되었다고 기억한다.",
+       "t_raw": "Arasudraka는 이것이 Aramaha가 남긴 노래로 보이며, 그렇다면 근처에 **Vasara Tree**가 있어야 한다고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "페이몬은 아란슈드라카가 그 노래를 찾도록 도울 때 아란마하가 언급되었다고 기억한다."
+       "t": "아란슈드라카는 이것이 아란마하가 남긴 노래로 보이며, 그렇다면 근처에 **바사라 나무**가 있어야 한다고 말한다."
       },
       {
-       "t_raw": "Aramaha의 노래를 들은 일과 Sourcesong에 가까워졌다는 말이 이어지는 점에서, 그 노래는 Sourcesong으로 향하는 여정의 한 부분으로 보인다.",
+       "t_raw": "Paimon은 Arasudraka가 그 노래를 찾도록 도울 때 Aramaha가 언급되었다고 짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아란슈드라카가 그 노래를 찾도록 도울 때 아란마하가 언급되었다고 짚는다."
+      },
+      {
+       "t_raw": "이렇게 보면 Aramaha의 노래는 Vasara Tree를 찾는 단서이자 Sourcesong에 다가가는 실마리로 이어지는 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "아란마하의 노래를 들은 일과 원천의 노래에 가까워졌다는 말이 이어지는 점에서, 그 노래는 원천의 노래로 향하는 여정의 한 부분으로 보인다."
+       "t": "이렇게 보면 아란마하의 노래는 바사라 나무를 찾는 단서이자 원천의 노래에 다가가는 실마리로 이어지는 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arasudraka",
+       "revision": 848148,
+       "section": "Dialogue",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
       {
        "kind": "wiki",
        "page": "Arasudraka",
@@ -792,166 +652,44 @@
       },
       {
        "kind": "quest",
+       "quest": "The Rhythm that Nurtures the Sprout",
+       "quest_ko": "새싹이 싹 트는 멜로디",
+       "version": "3.0",
+       "speaker": "Arasudraka"
+      },
+      {
+       "kind": "quest",
        "quest": "For the Children of the Past",
        "quest_ko": "과거의 아이들을 위하여",
        "version": "3.0",
        "speaker": "Paimon"
       }
      ],
-     "heading": "떡밥과 수수께끼 — 아란마하와 원천의 노래",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "And Nara has helped Arayasa, Aradasa, and Arasudraka find the ancient songs. They're my friends too. Thank you for that, too.",
-     "sentences": [
-      {
-       "t_raw": "Paimon은 Arasudraka를 만나 반갑다고 말하고 Arama에게 Arasudraka가 친구인지 묻는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 아란슈드라카를 만나 반갑다고 말하고 아란마에게 아란슈드라카가 친구인지 묻는다."
-      },
-      {
-       "t_raw": "Arama는 Nara와 Paimon에게 인사하며 Arasudraka를 소개하고, Arasudraka도 노래 수집가라고 확인한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란마는 나라와 페이몬에게 인사하며 아란슈드라카를 소개하고, 아란슈드라카도 노래 수집가라고 확인한다."
-      },
-      {
-       "t_raw": "Arakavi는 Arayasa, Aradasa, Arasudraka를 Ashvattha's Concourses를 찾도록 보냈고 Arama에게 그들을 도우라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란카비는 아란야사, 아란다사, 아란슈드라카를 아슈바타의 전당을 찾도록 보냈고 아란마에게 그들을 도우라고 한다."
-      },
-      {
-       "t_raw": "Arama는 Nara가 세 Aranara가 고대의 노래들을 찾도록 도왔다며 그들도 자신의 친구라고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란마는 나라가 세 아란나라가 고대의 노래들을 찾도록 도왔다며 그들도 자신의 친구라고 전한다."
-      },
-      {
-       "t_raw": "Paimon의 질문에 Arama가 긍정하고, Arakavi가 탐색에 보낸 이들을 Arama가 친구로 부르는 점에서, Arasudraka는 Arama의 **친구**로 확인되는 사이로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "페이몬의 질문에 아란마가 긍정하고, 아란카비가 탐색에 보낸 이들을 아란마가 친구로 부르는 점에서, 아란슈드라카는 아란마의 **친구**로 확인되는 사이로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Paimon"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arama"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arama"
-      },
-      {
-       "kind": "quest",
-       "quest": "Encounter in the Woods",
-       "quest_ko": "숲속의 노래",
-       "version": "3.0",
-       "speaker": "Arakavi"
-      },
-      {
-       "kind": "quest",
-       "quest": "Encounter in the Woods",
-       "quest_ko": "숲속의 노래",
-       "version": "3.0",
-       "speaker": "Arakavi"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arama"
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Stupid Arayasa, only baby Nara are born and would cry.",
-     "sentences": [
-      {
-       "t_raw": "Arasudraka는 Arayasa를 멍청한 Arayasa라고 부르며 아기 Nara가 태어나 운다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아란슈드라카는 아란야사를 멍청한 아란야사라고 부르며 아기 나라가 태어나 운다고 말한다."
-      },
-      {
-       "t_raw": "Paimon은 Arasudraka에게 걱정하지 말라고 하고, 늘 그래 왔다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "페이몬은 아란슈드라카에게 걱정하지 말라고 하고, 늘 그래 왔다고 말한다."
-      },
-      {
-       "t_raw": "Arayasa를 향한 놀림과 Paimon의 안심시키는 말이 이어져, 이 대화는 **장난스러운 온도**를 띤다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아란야사를 향한 놀림과 페이몬의 안심시키는 말이 이어져, 이 대화는 **장난스러운 온도**를 띤다고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "Festival Utsava",
-       "quest_ko": "우트사바 축제",
-       "version": "3.0",
-       "speaker": "Arasudraka"
-      },
-      {
-       "kind": "quest",
-       "quest": "Festival Utsava",
-       "quest_ko": "우트사바 축제",
-       "version": "3.0",
-       "speaker": "Paimon"
-      }
-     ],
-     "heading": "인간관계",
+     "heading": "떡밥과 수수께끼",
      "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Ooh! Nara and Paimon! Nice to meet you! The Golden Nara is tall and strong, just like the song says!",
+     "status": "accepted",
+     "note": "The idle quotes match A5 and A6, and the interpretation is mild.",
+     "quote": "A Festival Utsava song...",
      "sentences": [
       {
-       "t_raw": "Arasudraka의 Idle Quotes에는 **'A Festival Utsava song...'**과 **'New adventures...'**가 있다.",
+       "t_raw": "Arasudraka의 대기 대사에는 **A Festival Utsava song...**과 **New adventures...**가 있다.",
        "interp": false,
        "dropped": false,
-       "t": "아란슈드라카의 Idle Quotes에는 **'A 우트사바 축제 song...'**과 **'New adventures...'**가 있다."
+       "t": "아란슈드라카의 대기 대사에는 **우트사바 축제의 노래...**와 **새로운 모험...**이 있다.",
+       "polish": {
+        "from": "아란슈드라카의 대기 대사에는 **A 우트사바 축제 song...**과 **New adventures...**가 있다.",
+        "text": "아란슈드라카의 대기 대사에는 **우트사바 축제의 노래...**와 **새로운 모험...**이 있다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "만남의 인사에서 Arasudraka는 Nara와 Paimon을 반기며 **Golden Nara**가 노래에서 말한 것처럼 키가 크고 힘이 세다고 말하고, 상대의 이름을 노래에 기록하겠다며 Nara가 좋은 이름이고 매우 서정적이라고 평한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "만남의 인사에서 아란슈드라카는 나라와 페이몬을 반기며 **금빛의 나라**가 노래에서 말한 것처럼 키가 크고 힘이 세다고 말하고, 상대의 이름을 노래에 기록하겠다며 나라가 좋은 이름이고 매우 서정적이라고 평한다."
-      },
-      {
-       "t_raw": "노래로 상대를 소개하고 이름을 음률로 평가하는 태도는 Arasudraka가 사람을 노래 중심으로 마주하는 모습을 보여주는 셈이다.",
+       "t_raw": "두 문장은 축제 노래와 새로운 모험을 향한 기대를 짧게 흘린 말처럼 들린다.",
        "interp": true,
        "dropped": false,
-       "t": "노래로 상대를 소개하고 이름을 음률로 평가하는 태도는 아란슈드라카가 사람을 노래 중심으로 마주하는 모습을 보여주는 셈이다."
+       "t": "두 문장은 축제 노래와 새로운 모험을 향한 기대를 짧게 흘린 말처럼 들린다."
       }
      ],
      "sources": [
@@ -970,51 +708,39 @@
        "section": "Idle Quotes",
        "paragraph": "A6",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
-       "version": "3.0",
-       "speaker": "Arasudraka"
-      },
-      {
-       "kind": "quest",
-       "quest": "Festival Utsava",
-       "quest_ko": "우트사바 축제",
-       "version": "3.0",
-       "speaker": "Arasudraka"
       }
      ],
      "heading": "여담",
-     "latin_left": [
-      "Idle Quotes",
-      "New"
-     ]
+     "latin_left": []
     },
     {
      "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Stupid Arayasa, only baby Nara are born and would cry.",
+     "status": "accepted",
+     "note": "All quotes and paraphrases match Q7, Q8 and Q16.",
+     "quote": "The green fellow? What's that? A Dusk Bird? A Shroomboar?",
      "sentences": [
       {
-       "t_raw": "Arasudraka는 어떤 대상을 'The green fellow?'라고 부르며 그것이 Dusk Bird인지 Shroomboar인지 묻는다.",
+       "t_raw": "탐색 중 Arasudraka는 초록색 녀석을 두고 Dusk Bird인지 Shroomboar인지 묻는 추측을 늘어놓는다.",
        "interp": false,
        "dropped": false,
-       "t": "아란슈드라카는 어떤 대상을 'The green fellow?'라고 부르며 그것이 황혼새인지 버섯 돼지인지 묻는다."
+       "t": "탐색 중 아란슈드라카는 초록색 녀석을 두고 황혼새인지 버섯 돼지인지 묻는 추측을 늘어놓는다."
       },
       {
-       "t_raw": "Arayasa를 'Stupid Arayasa'라고 부르며 baby Nara만 태어나서 운다고 말하고, 'Wow! Then he must know a lot of songs!'라고 감탄한다.",
+       "t_raw": "Festival Utsava 무렵에는 Arayasa를 향해 \"Stupid Arayasa, only baby Nara are born and would cry.\"라고 말한다.",
        "interp": false,
        "dropped": false,
-       "t": "아란야사를 'Stupid Arayasa'라고 부르며 baby 나라만 태어나서 운다고 말하고, 'Wow! Then he must know a lot of songs!'라고 감탄한다."
+       "t": "우트사바 축제 무렵에는 아란야사를 향해 \"바보 Arayasa, 아기 나라만 태어나서 울 거야.\"라고 말한다.",
+       "polish": {
+        "from": "우트사바 축제 무렵에는 아란야사를 향해 \"Stupid Arayasa, only baby 나라 are born and would cry.\"라고 말한다.",
+        "text": "우트사바 축제 무렵에는 아란야사를 향해 \"바보 Arayasa, 아기 나라만 태어나서 울 거야.\"라고 말한다.",
+        "by": "or-ds"
+       }
       },
       {
-       "t_raw": "이런 별명과 감탄은 Arasudraka의 말투가 장난과 즉흥적인 반응에 기대고 있음을 보여주는 것으로 보인다.",
-       "interp": true,
+       "t_raw": "Paimon은 Arasudraka에게 걱정하지 말라며 \"has always been like that!\"이라고 덧붙인다.",
+       "interp": false,
        "dropped": false,
-       "t": "이런 별명과 감탄은 아란슈드라카의 말투가 장난과 즉흥적인 반응에 기대고 있음을 보여주는 것으로 보인다."
+       "t": "페이몬은 아란슈드라카에게 걱정하지 말라며 \"has always been like that!\"이라고 덧붙인다."
       }
      ],
      "sources": [
@@ -1034,44 +760,24 @@
       },
       {
        "kind": "quest",
-       "quest": "The Rhythm that Nurtures the Sprout",
-       "quest_ko": "새싹이 싹 트는 멜로디",
+       "quest": "Festival Utsava",
+       "quest_ko": "우트사바 축제",
        "version": "3.0",
-       "speaker": "Arasudraka"
+       "speaker": "Paimon"
       }
      ],
      "heading": "여담",
      "latin_left": [
-      "The",
-      "Stupid Arayasa",
-      "Wow",
-      "Then"
+      "Arayasa"
      ]
     }
    ],
    "quote_boxes": [
     {
-     "section": "개요",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "응! Arasudraka는 ‘노래를 모으는 자’이고, 온갖 노래를 모으러 자주 다닌다.",
-     "en": "Yes! Arasudraka is a \"song gatherer\" and often goes to collect all sorts of songs.",
-     "speaker": "Arama",
-     "source": {
-      "kind": "quest",
-      "quest": "The Rhythm that Nurtures the Sprout",
-      "quest_ko": "새싹이 싹 트는 멜로디",
-      "version": "3.0",
-      "speaker": "Arama"
-     },
-     "t": "응! 아란슈드라카는 '노래를 모으는 자'이고, 온갖 노래를 모으러 자주 다닌다.",
-     "speaker_ko": "아란마"
-    },
-    {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그래! Arasudraka는 “song gatherer”이고, 온갖 노래를 모으러 자주 다닌다.",
+     "status": "accepted",
+     "note": "The translation is faithful to the dialogue line.",
+     "t_raw": "그래! Arasudraka는 '노래를 모으는 자'이고, 온갖 노래를 모으러 자주 다닌다.",
      "en": "Yes! Arasudraka is a \"song gatherer\" and often goes to collect all sorts of songs.",
      "speaker": "Arama",
      "source": {
@@ -1081,13 +787,13 @@
       "version": "3.0",
       "speaker": "Arama"
      },
-     "t": "그래! 아란슈드라카는 “song gatherer”이고, 온갖 노래를 모으러 자주 다닌다.",
+     "t": "그래! 아란슈드라카는 '노래를 모으는 자'이고, 온갖 노래를 모으러 자주 다닌다.",
      "speaker_ko": "아란마"
     },
     {
-     "section": "작중 행적 — Ashvattha's Concourses",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적 — The Rhythm that Nurtures the Sprout",
+     "status": "accepted",
+     "note": "Faithful translation.",
      "t_raw": "우와! Nara와 Paimon! 만나서 반가워! Golden Nara는 노래에서 말한 것처럼 키가 크고 힘이 세!",
      "en": "Ooh! Nara and Paimon! Nice to meet you! The Golden Nara is tall and strong, just like the song says!",
      "speaker": "Arasudraka",
@@ -1103,60 +809,9 @@
     },
     {
      "section": "작중 행적 — Festival Utsava",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "이 노래가 Vanarana에 영원히 울려 퍼지기를!",
-     "en": "May this song echo in Vanarana forever!",
-     "speaker": "Arasudraka",
-     "source": {
-      "kind": "quest",
-      "quest": "Festival Utsava",
-      "quest_ko": "우트사바 축제",
-      "version": "3.0",
-      "speaker": "Arasudraka"
-     },
-     "t": "이 노래가 바나라나에 영원히 울려 퍼지기를!",
-     "speaker_ko": "아란슈드라카"
-    },
-    {
-     "section": "떡밥과 수수께끼 — Aramaha와 Sourcesong",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "이것은 Aramaha가 남긴 노래인 것 같아. 그래서 근처에 Vasara Tree가 있어야 해!",
-     "en": "This seems to be the song left by Aramaha. So there should be a Vasara Tree nearby!",
-     "speaker": "Arasudraka",
-     "source": {
-      "kind": "quest",
-      "quest": "The Rhythm that Nurtures the Sprout",
-      "quest_ko": "새싹이 싹 트는 멜로디",
-      "version": "3.0",
-      "speaker": "Arasudraka"
-     },
-     "t": "이것은 아란마하가 남긴 노래인 것 같아. 그래서 근처에 바사라 나무가 있어야 해!",
-     "speaker_ko": "아란슈드라카"
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "그리고 Nara는 Arayasa, Aradasa, Arasudraka가 고대의 노래들을 찾도록 도왔다. 그들은 나의 친구이기도 하다. 그것도 고마워.",
-     "en": "And Nara has helped Arayasa, Aradasa, and Arasudraka find the ancient songs. They're my friends too. Thank you for that, too.",
-     "speaker": "Arama",
-     "source": {
-      "kind": "quest",
-      "quest": "The Rhythm that Nurtures the Sprout",
-      "quest_ko": "새싹이 싹 트는 멜로디",
-      "version": "3.0",
-      "speaker": "Arama"
-     },
-     "t": "그리고 나라는 아란야사, 아란다사, 아란슈드라카가 고대의 노래들을 찾도록 도왔다. 그들은 나의 친구이기도 하다. 그것도 고마워.",
-     "speaker_ko": "아란마"
-    },
-    {
-     "section": "여담",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "어찌 되었든, 너의 이름은 우리의 노래에 기록될 것이다. Nara는 좋은 이름이고, 아주 서정적이다!",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "어쨌든, 네 이름은 우리 노래에 기록될 거야. Nara는 좋은 이름이야, 아주 서정적이야!",
      "en": "Regardless, your name shall be recorded in our songs. Nara is a good name, very lyrical!",
      "speaker": "Arasudraka",
      "source": {
@@ -1166,7 +821,58 @@
       "version": "3.0",
       "speaker": "Arasudraka"
      },
-     "t": "어찌 되었든, 너의 이름은 우리의 노래에 기록될 것이다. 나라는 좋은 이름이고, 아주 서정적이다!",
+     "t": "어쨌든, 네 이름은 우리 노래에 기록될 거야. 나라는 좋은 이름이야, 아주 서정적이야!",
+     "speaker_ko": "아란슈드라카"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Paimon도 만나서 정말 기뻐! Arasudraka는 너의 친구야, Arama?",
+     "en": "Paimon's really happy to meet you, too! Is Arasudraka a friend of yours, Arama?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Rhythm that Nurtures the Sprout",
+      "quest_ko": "새싹이 싹 트는 멜로디",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "페이몬도 만나서 정말 기뻐! 아란슈드라카는 너의 친구야, 아란마?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "이것은 Aramaha가 남긴 노래인 것 같아. 그렇다면 근처에 Vasara Tree가 있어야 해!",
+     "en": "This seems to be the song left by Aramaha. So there should be a Vasara Tree nearby!",
+     "speaker": "Arasudraka",
+     "source": {
+      "kind": "quest",
+      "quest": "The Rhythm that Nurtures the Sprout",
+      "quest_ko": "새싹이 싹 트는 멜로디",
+      "version": "3.0",
+      "speaker": "Arasudraka"
+     },
+     "t": "이것은 아란마하가 남긴 노래인 것 같아. 그렇다면 근처에 바사라 나무가 있어야 해!",
+     "speaker_ko": "아란슈드라카"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "초록색 녀석? 그게 뭐야? Dusk Bird? Shroomboar?",
+     "en": "The green fellow? What's that? A Dusk Bird? A Shroomboar?",
+     "speaker": "Arasudraka",
+     "source": {
+      "kind": "quest",
+      "quest": "The Rhythm that Nurtures the Sprout",
+      "quest_ko": "새싹이 싹 트는 멜로디",
+      "version": "3.0",
+      "speaker": "Arasudraka"
+     },
+     "t": "초록색 녀석? 그게 뭐야? 황혼새? 버섯 돼지?",
      "speaker_ko": "아란슈드라카"
     }
    ]

@@ -1,0 +1,930 @@
+{
+ "node": "Zombie",
+ "articles": [
+  {
+   "node": "Zombie",
+   "from_version": "3.0",
+   "cutoff": "2022-09-27T00:00:00Z",
+   "input": [
+    {
+     "page": "Zombie",
+     "url": "https://genshin-impact.fandom.com/wiki/Zombie",
+     "revision": 852419
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 4,
+    "web": 6
+   },
+   "input_chars": 1834,
+   "input_cut": false,
+   "input_hash": "51f61fa4ad96",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A3, A5 and W2.",
+     "quote": "Because Qiqi is the only frame of reference for how zombies are made, whether her situation applies for every other zombie is unclear.",
+     "sentences": [
+      {
+       "t_raw": "좀비는 죽었다가 되살아난 개체이며, 현재 알려진 유일한 좀비는 Qiqi다.",
+       "interp": false,
+       "dropped": false,
+       "t": "좀비는 죽었다가 되살아난 개체이며, 현재 알려진 유일한 좀비는 치치다."
+      },
+      {
+       "t_raw": "Qiqi는 많은 adepti 에너지를 받아 되살아났고, adepti가 불멸의 몸을 축복한 존재로 어린 모습을 유지했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 많은 선인 에너지를 받아 되살아났고, 선인이 불멸의 몸을 축복한 존재로 어린 모습을 유지했다.",
+       "polish": {
+        "from": "치치는 많은 adepti 에너지를 받아 되살아났고, adepti가 불멸의 몸을 축복한 존재로 어린 모습을 유지했다.",
+        "text": "치치는 많은 선인 에너지를 받아 되살아났고, 선인이 불멸의 몸을 축복한 존재로 어린 모습을 유지했다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Qiqi는 자신을 깨운 주인이 없어 스스로에게 명령을 내리는 자기 자신의 주인이지만, 기억이 매우 나빠 노트에 중요 정보를 기록한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 자신을 깨운 주인이 없어 스스로에게 명령을 내리는 자기 자신의 주인이지만, 기억이 매우 나빠 노트에 중요 정보를 기록한다."
+      },
+      {
+       "t_raw": "Qiqi가 좀비가 만들어진 방식을 보여 주는 유일한 기준이라, 그 사례가 다른 좀비에게도 적용되는지는 불분명하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치가 좀비가 만들어진 방식을 보여 주는 유일한 기준이라, 그 사례가 다른 좀비에게도 적용되는지는 불분명하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        },
+        {
+         "type": "quest",
+         "name": "Guizhong (Archon Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        }
+       ]
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103698",
+       "title": "Fortune Preserver Amidst Everlasting Cold",
+       "published": "2020-09-03",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported. The Paimon quote is translated faithfully.",
+     "quote": "A zombie is an individual who has been resurrected from the dead. Currently, Qiqi is the only known zombie, resurrected after being imbued with a large amount of adeptal energy.",
+     "sentences": [
+      {
+       "t_raw": "좀비는 죽은 뒤 되살아난 존재다.",
+       "interp": false,
+       "dropped": false,
+       "t": "좀비는 죽은 뒤 되살아난 존재다."
+      },
+      {
+       "t_raw": "현재 알려진 유일한 좀비는 Qiqi이며, 그녀는 많은 adepti 에너지를 받아 되살아난 사례다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 알려진 유일한 좀비는 치치이며, 그녀는 많은 선인 에너지를 받아 되살아난 사례다.",
+       "polish": {
+        "from": "현재 알려진 유일한 좀비는 치치이며, 그녀는 많은 adepti 에너지를 받아 되살아난 사례다.",
+        "text": "현재 알려진 유일한 좀비는 치치이며, 그녀는 많은 선인 에너지를 받아 되살아난 사례다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Paimon은 '설마... 그녀가... 좀비라고!?'라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 '설마... 그녀가... 좀비라고!?'라고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Both sentences match A2.",
+     "quote": "Because Qiqi is the only frame of reference for how zombies are made, whether her situation applies for every other zombie is unclear.",
+     "sentences": [
+      {
+       "t_raw": "Qiqi가 좀비가 만들어지는 방식을 보여 주는 유일한 기준이므로, 그녀의 사례가 다른 모든 좀비에게도 적용되는지는 분명하지 않다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치가 좀비가 만들어지는 방식을 보여 주는 유일한 기준이므로, 그녀의 사례가 다른 모든 좀비에게도 적용되는지는 분명하지 않다."
+      },
+      {
+       "t_raw": "Qiqi는 현재까지도 힘을 주는 adepti 에너지를 받아 좀비가 되었고, 모자에 있는 adepti 부적이 그녀를 '살아 있게' 유지한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 현재까지도 힘을 주는 선인 에너지를 받아 좀비가 되었고, 모자에 있는 선인 부적이 그녀를 '살아 있게' 유지한다.",
+       "polish": {
+        "from": "치치는 현재까지도 힘을 주는 adepti 에너지를 받아 좀비가 되었고, 모자에 있는 adepti 부적이 그녀를 '살아 있게' 유지한다.",
+        "text": "치치는 현재까지도 힘을 주는 선인 에너지를 받아 좀비가 되었고, 모자에 있는 선인 부적이 그녀를 '살아 있게' 유지한다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The facts are supported by A1, A2, A3 and W2. The interpretation in sentence 3 follows reasonably from the material and is hedged with '것으로 보인다'.",
+     "quote": "Zombies are limited to acting within the confines of their orders. And somehow, in this case, the zombie issues her own orders to herself.",
+     "sentences": [
+      {
+       "t_raw": "좀비는 죽었다가 되살아난 존재이며, Qiqi는 adepti에게 죽지 않는 몸을 받고 아이의 모습을 유지한 현재 알려진 유일한 좀비다.",
+       "interp": false,
+       "dropped": false,
+       "t": "좀비는 죽었다가 되살아난 존재이며, 치치는 선인에게 죽지 않는 몸을 받고 아이의 모습을 유지한 현재 알려진 유일한 좀비다.",
+       "polish": {
+        "from": "좀비는 죽었다가 되살아난 존재이며, 치치는 adepti에게 죽지 않는 몸을 받고 아이의 모습을 유지한 현재 알려진 유일한 좀비다.",
+        "text": "좀비는 죽었다가 되살아난 존재이며, 치치는 선인에게 죽지 않는 몸을 받고 아이의 모습을 유지한 현재 알려진 유일한 좀비다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Qiqi의 모자에 붙은 **adepti talisman**은 그녀를 “살아 있게” 유지하고, adepti 에너지는 그녀를 정지 상태로 붙잡아 두면서 현재까지 힘을 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치의 모자에 붙은 **선인 부적**은 그녀를 “살아 있게” 유지하고, 선인 에너지는 그녀를 정지 상태로 붙잡아 두면서 현재까지 힘을 준다.",
+       "polish": {
+        "from": "치치의 모자에 붙은 **adepti talisman**은 그녀를 “살아 있게” 유지하고, adepti 에너지는 그녀를 정지 상태로 붙잡아 두면서 현재까지 힘을 준다.",
+        "text": "치치의 모자에 붙은 **선인 부적**은 그녀를 “살아 있게” 유지하고, 선인 에너지는 그녀를 정지 상태로 붙잡아 두면서 현재까지 힘을 준다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "보통 좀비는 자신을 깨운 자의 명령을 따르지만, Qiqi는 누구에게도 깨워지지 않고 스스로 깨어나 **스스로 주인**이 되어 자신에게 명령을 내린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "보통 좀비는 자신을 깨운 자의 명령을 따르지만, 치치는 누구에게도 깨워지지 않고 스스로 깨어나 **스스로 주인**이 되어 자신에게 명령을 내린다."
+      },
+      {
+       "t_raw": "이 때문에 Qiqi의 좀비로서의 기능은 adepti 에너지와 adepti talisman, 그리고 자기 자신이 주인이 되는 명령 구조가 함께 이어 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 때문에 치치의 좀비로서의 기능은 선인 에너지와 선인 부적, 그리고 자기 자신이 주인이 되는 명령 구조가 함께 이어 주는 것으로 보인다.",
+       "polish": {
+        "from": "이 때문에 치치의 좀비로서의 기능은 adepti 에너지와 adepti talisman, 그리고 자기 자신이 주인이 되는 명령 구조가 함께 이어 주는 것으로 보인다.",
+        "text": "이 때문에 치치의 좀비로서의 기능은 선인 에너지와 선인 부적, 그리고 자기 자신이 주인이 되는 명령 구조가 함께 이어 주는 것으로 보인다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        },
+        {
+         "type": "quest",
+         "name": "Guizhong (Archon Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103698",
+       "title": "Fortune Preserver Amidst Everlasting Cold",
+       "published": "2020-09-03",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103698",
+       "title": "Fortune Preserver Amidst Everlasting Cold",
+       "published": "2020-09-03",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Zhongli"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The sentences match A4 and A5. '뛰어다녀야' is a loose rendering of 'hopping' but acceptable.",
+     "quote": "Qiqi's poor memory leads her to carry a notebook to help her remember things.",
+     "sentences": [
+      {
+       "t_raw": "좀비의 몸은 사후 경직으로 차갑고 뻣뻣해 보통 뛰어다녀야 하지만, Qiqi는 매일 체조로 이를 우회하고 전투에서는 언데드 상태로 돌아가 비인간적인 힘을 낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "좀비의 몸은 사후 경직으로 차갑고 뻣뻣해 보통 뛰어다녀야 하지만, 치치는 매일 체조로 이를 우회하고 전투에서는 언데드 상태로 돌아가 비인간적인 힘을 낸다."
+      },
+      {
+       "t_raw": "Qiqi는 기억이 매우 나빠 정기적으로 기억을 강화하지 않으면 사람을 3일 안에 잊고, Baizhu의 얼굴도 자주 잊는다고 인정하며, 중요한 정보는 수첩에 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 기억이 매우 나빠 정기적으로 기억을 강화하지 않으면 사람을 3일 안에 잊고, 백출의 얼굴도 자주 잊는다고 인정하며, 중요한 정보는 수첩에 적는다."
+      },
+      {
+       "t_raw": "말투는 단조롭고 표정 변화가 적지만, Baizhu의 속내를 오래전부터 알아차렸고 Hu Tao를 피하는 법도 익혔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "말투는 단조롭고 표정 변화가 적지만, 백출의 속내를 오래전부터 알아차렸고 호두를 피하는 법도 익혔다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        },
+        {
+         "type": "item",
+         "name": "No Tomorrow"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        }
+       ]
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103698",
+       "title": "Fortune Preserver Amidst Everlasting Cold",
+       "published": "2020-09-03",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "The facts are supported by Q3 and W2. The interpretation in sentence 2 is reasonable and hedged.",
+     "quote": "Once upon a time, Qiqi died. Then, Qiqi was saved by the adepti. Now, Qiqi is a zombie.",
+     "sentences": [
+      {
+       "t_raw": "Qiqi는 한때 죽었고, adepti에게 구원받은 뒤 좀비가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 한때 죽었고, 선인에게 구원받은 뒤 좀비가 되었다.",
+       "polish": {
+        "from": "치치는 한때 죽었고, adepti에게 구원받은 뒤 좀비가 되었다.",
+        "text": "치치는 한때 죽었고, 선인에게 구원받은 뒤 좀비가 되었다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "프로필은 adepti가 그녀에게 **불멸의 몸**을 내렸고, 그녀가 아이의 모습을 유지했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프로필은 선인이 그녀에게 **불멸의 몸**을 내렸고, 그녀가 아이의 모습을 유지했다고 전한다.",
+       "polish": {
+        "from": "프로필은 adepti가 그녀에게 **불멸의 몸**을 내렸고, 그녀가 아이의 모습을 유지했다고 전한다.",
+        "text": "프로필은 선인이 그녀에게 **불멸의 몸**을 내렸고, 그녀가 아이의 모습을 유지했다고 전한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "두 사실을 함께 보면 adepti의 구원은 그녀의 몸을 죽지 않는 상태로 이어지게 한 일로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 사실을 함께 보면 선인의 구원은 그녀의 몸을 죽지 않는 상태로 이어지게 한 일로 보인다.",
+       "polish": {
+        "from": "두 사실을 함께 보면 adepti의 구원은 그녀의 몸을 죽지 않는 상태로 이어지게 한 일로 보인다.",
+        "text": "두 사실을 함께 보면 선인의 구원은 그녀의 몸을 죽지 않는 상태로 이어지게 한 일로 보인다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Qiqi"
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103698",
+       "title": "Fortune Preserver Amidst Everlasting Cold",
+       "published": "2020-09-03",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences match A3; the interpretation follows.",
+     "quote": "Qiqi, however, was never awakened by anyone — she woke up on her own after being dislodged from the amber that trapped her",
+     "sentences": [
+      {
+       "t_raw": "보통 좀비는 자신을 깨운 사람의 명령을 따르고, 그 사람이 주인이 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "보통 좀비는 자신을 깨운 사람의 명령을 따르고, 그 사람이 주인이 된다."
+      },
+      {
+       "t_raw": "Qiqi는 누구에게도 깨어난 적이 없고, 호박에 갇혀 있다가 호박에서 벗어난 뒤 스스로 깨어났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 누구에게도 깨어난 적이 없고, 호박에 갇혀 있다가 호박에서 벗어난 뒤 스스로 깨어났다."
+      },
+      {
+       "t_raw": "그래서 그녀는 **스스로 자신의 주인**이 되어 스스로에게 명령을 내린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래서 그녀는 **스스로 자신의 주인**이 되어 스스로에게 명령을 내린다."
+      },
+      {
+       "t_raw": "이를 보면 Qiqi는 주인에게 명령받는 보통 좀비와 달리 스스로에게 명령을 내려 움직이는 존재라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이를 보면 치치는 주인에게 명령받는 보통 좀비와 달리 스스로에게 명령을 내려 움직이는 존재라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        },
+        {
+         "type": "quest",
+         "name": "Guizhong (Archon Quest)"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Each sentence matches Q1, Q3 and Q4.",
+     "quote": "Once upon a time, Qiqi died. Then, Qiqi was saved by the adepti. Now, Qiqi is a zombie.",
+     "sentences": [
+      {
+       "t_raw": "Qiqi는 자신이 한때 죽었다가 adepti에게 구원받아 좀비가 되었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 자신이 한때 죽었다가 선인에게 구원받아 좀비가 되었다고 말한다.",
+       "polish": {
+        "from": "치치는 자신이 한때 죽었다가 adepti에게 구원받아 좀비가 되었다고 말한다.",
+        "text": "치치는 자신이 한때 죽었다가 선인에게 구원받아 좀비가 되었다고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Shenhe는 좀비라 불리는 Qiqi가 맞다며 바다에 큰 분노가 끓어오른다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "신학은 좀비라 불리는 치치가 맞다며 바다에 큰 분노가 끓어오른다고 전한다."
+      },
+      {
+       "t_raw": "Paimon는 Qiqi를 두고 '설마... 그녀가... 좀비라고!?'라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 치치를 두고 '설마... 그녀가... 좀비라고!?'라고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Bygones Times Like Dust Passing",
+       "quest_ko": "티끌과도 같은 과거",
+       "version": "2.4",
+       "speaker": "Shenhe"
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Qiqi"
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by Q2 and A5; the interpretation is reasonable.",
+     "quote": "Zombies are limited to acting within the confines of their orders. And somehow, in this case, the zombie issues her own orders to herself.",
+     "sentences": [
+      {
+       "t_raw": "Zhongli는 좀비가 명령의 범위 안에서만 행동하며, 이 경우에는 좀비가 **스스로에게 명령을 내린다**고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "종려는 좀비가 명령의 범위 안에서만 행동하며, 이 경우에는 좀비가 **스스로에게 명령을 내린다**고 설명한다."
+      },
+      {
+       "t_raw": "Qiqi는 Baizhu의 얼굴을 규칙적으로 잊는다고 인정하지만, Baizhu가 자신을 거두어들인 데에는 **저변에 깔린 의도**가 있다는 것을 오래전부터 알고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 백출의 얼굴을 규칙적으로 잊는다고 인정하지만, 백출이 자신을 거두어들인 데에는 **저변에 깔린 의도**가 있다는 것을 오래전부터 알고 있다."
+      },
+      {
+       "t_raw": "Qiqi는 Hu Tao에게 묻히지 않으려고 Hu Tao를 피하는 법을 익혔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 호두에게 묻히지 않으려고 호두를 피하는 법을 익혔다."
+      },
+      {
+       "t_raw": "Qiqi가 스스로에게 명령을 내리면서도 Baizhu의 의도를 파악하고 Hu Tao를 피하는 모습은, 그녀가 명령 체계 안에 머무는 존재이면서 주변의 이해관계를 읽는 존재임을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "치치가 스스로에게 명령을 내리면서도 백출의 의도를 파악하고 호두를 피하는 모습은, 그녀가 명령 체계 안에 머무는 존재이면서 주변의 이해관계를 읽는 존재임을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Zhongli"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A2 and A3; the closing interpretation is an open question, not a stated fact.",
+     "quote": "Because Qiqi is the only frame of reference for how zombies are made, whether her situation applies for every other zombie is unclear.",
+     "sentences": [
+      {
+       "t_raw": "Qiqi는 좀비가 어떻게 만들어지는지 가늠할 **유일한 기준**이므로, 그 사례가 다른 모든 좀비에게 적용되는지는 분명하지 않다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 좀비가 어떻게 만들어지는지 가늠할 **유일한 기준**이므로, 그 사례가 다른 모든 좀비에게 적용되는지는 분명하지 않다."
+      },
+      {
+       "t_raw": "좀비는 보통 자신을 깨운 존재의 명령을 따르고 그 존재가 주인이 되지만, Qiqi는 누구에게도 깨워지지 않았고, 호박에서 벗어난 뒤 스스로 깨어났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "좀비는 보통 자신을 깨운 존재의 명령을 따르고 그 존재가 주인이 되지만, 치치는 누구에게도 깨워지지 않았고, 호박에서 벗어난 뒤 스스로 깨어났다."
+      },
+      {
+       "t_raw": "Qiqi는 이렇게 자신의 주인이 되어 스스로에게 명령한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 이렇게 자신의 주인이 되어 스스로에게 명령한다."
+      },
+      {
+       "t_raw": "따라서 Qiqi의 자기 명령 방식이 좀비 일반에 적용되는지는 남은 물음으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 치치의 자기 명령 방식이 좀비 일반에 적용되는지는 남은 물음으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        },
+        {
+         "type": "quest",
+         "name": "Guizhong (Archon Quest)"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A5 and W6; the interpretations are hedged and follow from the material.",
+     "quote": "Qiqi's Collected Miscellany suggests that forgetting her past may be a good thing if it lets her live as an herb gatherer at Bubu Pharmacy.",
+     "sentences": [
+      {
+       "t_raw": "Qiqi의 **망각**은 상실과 함께 Bubu Pharmacy의 일상으로도 이어지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "치치의 **망각**은 상실과 함께 불복려의 일상으로도 이어지는 것으로 보인다."
+      },
+      {
+       "t_raw": "Qiqi는 중요한 정보를 수첩에 적어 기억하고, Baizhu의 얼굴도 자주 잊는다고 인정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 중요한 정보를 수첩에 적어 기억하고, 백출의 얼굴도 자주 잊는다고 인정한다."
+      },
+      {
+       "t_raw": "Collected Miscellany는 Qiqi가 과거를 잊는 것이 Bubu Pharmacy에서 약초 채집꾼으로 살게 해 준다면 좋은 일일 수 있다고 시사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "단편 모음은 치치가 과거를 잊는 것이 불복려에서 약초 채집꾼으로 살게 해 준다면 좋은 일일 수 있다고 시사한다."
+      },
+      {
+       "t_raw": "망각이 Qiqi에게 어떤 의미인지는 남은 물음이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "망각이 치치에게 어떤 의미인지는 남은 물음이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        }
+       ]
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103742",
+       "title": "Genshin Impact Collected Miscellany - \"Qiqi: Fortune-Preserving Talisman\"",
+       "published": "2020-10-23",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by W1, W4 and W5; the interpretation is reasonable.",
+     "quote": "In her character demo, Qiqi introduces herself as a zombie and immediately forgets what she was going to say next.",
+     "sentences": [
+      {
+       "t_raw": "Qiqi는 캐릭터 데모에서 자신을 **좀비**라고 소개한 뒤, 곧바로 무슨 말을 하려 했는지 잊는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치치는 캐릭터 데모에서 자신을 **좀비**라고 소개한 뒤, 곧바로 무슨 말을 하려 했는지 잊는다."
+      },
+      {
+       "t_raw": "기억력이 좋지 않아 기억을 돕는 **노트**를 지니고 다니며, 그 노트에는 아침에 약초를 모으고 오후에 약을 만들며 저녁에 스트레칭을 하는 일과가 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기억력이 좋지 않아 기억을 돕는 **노트**를 지니고 다니며, 그 노트에는 아침에 약초를 모으고 오후에 약을 만들며 저녁에 스트레칭을 하는 일과가 적혀 있다."
+      },
+      {
+       "t_raw": "Qiqi가 노트에 하루의 순서를 적어 두는 것은 잊기 쉬운 그녀가 생활을 유지하려는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "치치가 노트에 하루의 순서를 적어 두는 것은 잊기 쉬운 그녀가 생활을 유지하려는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103697",
+       "title": "Genshin Impact New Character Demo - \"Qiqi: Icy Resurrection\"",
+       "published": "2020-09-03",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103698",
+       "title": "Fortune Preserver Amidst Everlasting Cold",
+       "published": "2020-09-03",
+       "checked": "2026-11-13"
+      },
+      {
+       "kind": "web",
+       "url": "https://genshin.hoyoverse.com/en/news/detail/103698",
+       "title": "Fortune Preserver Amidst Everlasting Cold",
+       "published": "2020-09-03",
+       "checked": "2026-11-13"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All four sentences match A4 and A5.",
+     "quote": "Qiqi circumvents this by performing calisthenics on a daily basis, but reverts to her undead state in combat, which gives her inhuman strength.",
+     "sentences": [
+      {
+       "t_raw": "좀비의 몸은 차갑고 뻣뻣해 보통은 깡충깡충 움직여야 하지만, Qiqi는 매일 체조를 하고 전투에서는 다시 언데드의 상태로 돌아가 인간을 벗어난 힘을 낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "좀비의 몸은 차갑고 뻣뻣해 보통은 깡충깡충 움직여야 하지만, 치치는 매일 체조를 하고 전투에서는 다시 언데드의 상태로 돌아가 인간을 벗어난 힘을 낸다."
+      },
+      {
+       "t_raw": "좀비가 된 뒤 미각을 잃었어도 질감은 구별할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "좀비가 된 뒤 미각을 잃었어도 질감은 구별할 수 있다."
+      },
+      {
+       "t_raw": "기억은 매우 나빠서 정기적으로 기억을 보강하지 않으면 사람을 사흘 안에 잊고, Baizhu의 얼굴도 자주 잊는다고 인정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기억은 매우 나빠서 정기적으로 기억을 보강하지 않으면 사람을 사흘 안에 잊고, 백출의 얼굴도 자주 잊는다고 인정한다."
+      },
+      {
+       "t_raw": "말투는 단조롭고 표정 변화가 적지만, Baizhu가 자신을 거두어들인 데에 다른 속셈이 있음을 오래전부터 알고 Hu Tao에게 매장되지 않으려 숨는 법도 익혔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "말투는 단조롭고 표정 변화가 적지만, 백출이 자신을 거두어들인 데에 다른 속셈이 있음을 오래전부터 알고 호두에게 매장되지 않으려 숨는 법도 익혔다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        },
+        {
+         "type": "item",
+         "name": "No Tomorrow"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Zombie",
+       "revision": 852419,
+       "section": "Overview",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Qiqi"
+        }
+       ]
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "설마... 그녀가... 좀비라고!?",
+     "en": "It can't be... she's... a zombie!?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Guizhong (Quest)",
+      "quest_ko": "귀종",
+      "version": "1.0",
+      "speaker": "Paimon"
+     },
+     "t": "설마... 그녀가... 좀비라고!?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation of Zhongli's line.",
+     "t_raw": "좀비는 자신의 명령의 범위 안에서만 행동하도록 제한된다. 그리고 어찌 된 일인지, 이 경우에는 좀비가 스스로에게 명령을 내린다.",
+     "en": "Zombies are limited to acting within the confines of their orders. And somehow, in this case, the zombie issues her own orders to herself.",
+     "speaker": "Zhongli",
+     "source": {
+      "kind": "quest",
+      "quest": "Guizhong (Quest)",
+      "quest_ko": "귀종",
+      "version": "1.0",
+      "speaker": "Zhongli"
+     },
+     "t": "좀비는 자신의 명령의 범위 안에서만 행동하도록 제한된다. 그리고 어찌 된 일인지, 이 경우에는 좀비가 스스로에게 명령을 내린다.",
+     "speaker_ko": "종려"
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Faithful translation of Qiqi's line.",
+     "t_raw": "옛날에 Qiqi는 죽었다. 그리고 Qiqi는 adepti에게 구원받았다. 지금 Qiqi는 좀비다.",
+     "en": "Once upon a time, Qiqi died. Then, Qiqi was saved by the adepti. Now, Qiqi is a zombie.",
+     "speaker": "Qiqi",
+     "source": {
+      "kind": "quest",
+      "quest": "Guizhong (Quest)",
+      "quest_ko": "귀종",
+      "version": "1.0",
+      "speaker": "Qiqi"
+     },
+     "t": "옛날에 치치는 죽었다. 그리고 치치는 adepti에게 구원받았다. 지금 치치는 좀비다.",
+     "speaker_ko": "치치"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation. Leaving out the possessive before 'orders' is a minor, acceptable wording choice.",
+     "t_raw": "좀비는 명령의 범위 안에서만 행동하도록 제한된다. 그리고 어찌 된 일인지, 이 경우에는 좀비가 스스로에게 명령을 내린다.",
+     "en": "Zombies are limited to acting within the confines of their orders. And somehow, in this case, the zombie issues her own orders to herself.",
+     "speaker": "Zhongli",
+     "source": {
+      "kind": "quest",
+      "quest": "Guizhong (Quest)",
+      "quest_ko": "귀종",
+      "version": "1.0",
+      "speaker": "Zhongli"
+     },
+     "t": "좀비는 명령의 범위 안에서만 행동하도록 제한된다. 그리고 어찌 된 일인지, 이 경우에는 좀비가 스스로에게 명령을 내린다.",
+     "speaker_ko": "종려"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation. '어쩐지' is an acceptable rendering of 'somehow'.",
+     "t_raw": "좀비는 자신의 명령의 범위 안에서만 행동하도록 제한된다. 그리고 이 경우에는 어쩐지 그 좀비가 스스로에게 명령을 내린다.",
+     "en": "Zombies are limited to acting within the confines of their orders. And somehow, in this case, the zombie issues her own orders to herself.",
+     "speaker": "Zhongli",
+     "source": {
+      "kind": "quest",
+      "quest": "Guizhong (Quest)",
+      "quest_ko": "귀종",
+      "version": "1.0",
+      "speaker": "Zhongli"
+     },
+     "t": "좀비는 자신의 명령의 범위 안에서만 행동하도록 제한된다. 그리고 이 경우에는 어쩐지 그 좀비가 스스로에게 명령을 내린다.",
+     "speaker_ko": "종려"
+    }
+   ]
+  }
+ ]
+}

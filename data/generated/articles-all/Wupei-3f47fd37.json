@@ -1,0 +1,948 @@
+{
+ "node": "Wupei",
+ "articles": [
+  {
+   "node": "Wupei",
+   "from_version": "2.8",
+   "cutoff": "2022-08-23T00:00:00Z",
+   "input": [
+    {
+     "page": "Wupei",
+     "url": "https://genshin-impact.fandom.com/wiki/Wupei",
+     "revision": 783047
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 13,
+    "web": 0
+   },
+   "input_chars": 240,
+   "input_cut": false,
+   "input_hash": "fdedb5466589",
+   "writer": "or-ds,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, Q1, Q3 and Q11.",
+     "quote": "*sigh* Forgive my incompetence. I'm afraid I've come up empty-handed.",
+     "sentences": [
+      {
+       "t_raw": "Wupei는 Umbrabilis Orchis Chapter Act I: Calculated Gambit에 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무패는 Umbrabilis Orchis Chapter Act I: 계산된 수에 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "그는 Yelan이 신뢰하는 조수 중 하나지만, 동료들에게는 “meathead”라고 놀림받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 야란이 신뢰하는 조수 중 하나지만, 동료들에게는 “근육바보”라고 놀림받는다.",
+       "polish": {
+        "from": "그는 야란이 신뢰하는 조수 중 하나지만, 동료들에게는 “meathead”라고 놀림받는다.",
+        "text": "그는 야란이 신뢰하는 조수 중 하나지만, 동료들에게는 “근육바보”라고 놀림받는다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Candidature Analysis에서는 Zhiyi를 미행했지만 빈손으로 돌아왔고, Foregone Conclusion에서는 Xinyue Kiosk에서 묻고 다녔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼굴로는 알 수 없는 사람의 속마음에서는 지언을 미행했지만 빈손으로 돌아왔고, 던져진 주사위에서는 신월헌에서 묻고 다녔다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Shanghua"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Shanghua"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Umbrabilis Orchis Chapter Act",
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts match A1 and A2. The interpretation is a mild reading of the trusted-assistant and teasing contrast.",
+     "quote": "He is one of Yelan's trusted assistants, despite being teased as a \"meathead\" by his colleagues.",
+     "sentences": [
+      {
+       "t_raw": "Wupei는 Umbrabilis Orchis Chapter Act I: Calculated Gambit에 등장하는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무패는 Umbrabilis Orchis Chapter Act I: 계산된 수에 등장하는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "그는 Yelan의 신뢰받는 조수 가운데 한 명이지만, 동료들은 그를 'meathead'라고 놀린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 야란의 신뢰받는 조수 가운데 한 명이지만, 동료들은 그를 'meathead'라고 놀린다."
+      },
+      {
+       "t_raw": "Yelan의 신뢰받는 조수라는 위치와 동료들이 'meathead'라고 놀리는 모습이 겹쳐, 그를 한마디로 규정하기는 쉽지 않아 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "야란의 신뢰받는 조수라는 위치와 동료들이 'meathead'라고 놀리는 모습이 겹쳐, 그를 한마디로 규정하기는 쉽지 않아 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Umbrabilis Orchis Chapter Act",
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Q10 supports the colleague claim. The interpretation is hedged and follows from the material.",
+     "quote": "He is one of Yelan's trusted assistants, despite being teased as a \"meathead\" by his colleagues.",
+     "sentences": [
+      {
+       "t_raw": "Wupei는 **Yelan의 신뢰받는 조수** 중 하나다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무패는 **야란의 신뢰받는 조수** 중 하나다."
+      },
+      {
+       "t_raw": "Yelan은 Wupei를 소개하며 그가 Wenyuan과 Shanghua의 동료라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 무패를 소개하며 그가 문연과 상화의 동료라고 밝힌다."
+      },
+      {
+       "t_raw": "그런 Wupei는 동료들에게 **'meathead'**라고 놀림받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런 무패는 동료들에게 **'meathead'**라고 놀림받는다."
+      },
+      {
+       "t_raw": "신뢰받는 조수라는 점과 동료들의 놀림이 함께 제시되어, 그가 Yelan에게는 믿음직한 존재이면서 동료들 사이에서는 가까운 사이로 그려진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "신뢰받는 조수라는 점과 동료들의 놀림이 함께 제시되어, 그가 야란에게는 믿음직한 존재이면서 동료들 사이에서는 가까운 사이로 그려진다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Q11 supports both sentences.",
+     "quote": "So I stopped Wupei, and I stayed here to wait for you while that meathead went to ask around in Xinyue Kiosk.",
+     "sentences": [
+      {
+       "t_raw": "Shanghua는 Wupei를 'that meathead'라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상화는 무패를 '그 근육바보'라고 부른다.",
+       "polish": {
+        "from": "상화는 무패를 'that meathead'라고 부른다.",
+        "text": "상화는 무패를 '그 근육바보'라고 부른다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그러면서 자신이 Wupei를 멈춰 세웠고, 그가 Xinyue Kiosk에 물어보러 간 동안 여기서 Yelan을 기다렸다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 자신이 무패를 멈춰 세웠고, 그가 신월헌에 물어보러 간 동안 여기서 야란을 기다렸다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Shanghua"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Candidature Analysis",
+     "status": "accepted",
+     "note": "Q1 and Q3 support the facts. The interpretation is reasonable.",
+     "quote": "*sigh* Forgive my incompetence. I'm afraid I've come up empty-handed.",
+     "sentences": [
+      {
+       "t_raw": "Wupei는 Zhiyi를 미행해 본 적이 있다고 말하며, Zhiyi가 너무 신중해 의심스러운 사람과는 만나지 않는다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무패는 지언을 미행해 본 적이 있다고 말하며, 지언이 너무 신중해 의심스러운 사람과는 만나지 않는다고 전한다."
+      },
+      {
+       "t_raw": "그는 자신의 무능을 용서해 달라며 **빈손**으로 돌아왔다고 보고한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 자신의 무능을 용서해 달라며 **빈손**으로 돌아왔다고 보고한다."
+      },
+      {
+       "t_raw": "Zhiyi의 신중함과 Wupei의 빈손 보고가 맞물려, 미행은 성과를 내기 어려운 시도였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "지언의 신중함과 무패의 빈손 보고가 맞물려, 미행은 성과를 내기 어려운 시도였던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      }
+     ],
+     "heading": "작중 행적 — 얼굴로는 알 수 없는 사람의 속마음",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Candidature Analysis",
+     "status": "accepted",
+     "note": "Q5, Q7 and Q12 support the facts. The interpretation follows from his confused replies.",
+     "quote": "Fish soup? What fish soup?",
+     "sentences": [
+      {
+       "t_raw": "생선 수프 이야기가 나오자 Wupei는 **생선 수프? 무슨 생선 수프?**라고 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생선 수프 이야기가 나오자 무패는 **생선 수프? 무슨 생선 수프?**라고 되묻는다."
+      },
+      {
+       "t_raw": "어떤 일에 대해서는 '그건 처음 듣는 이야기다'라고 답해 자신이 모르는 사안임을 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어떤 일에 대해서는 '그건 처음 듣는 이야기다'라고 답해 자신이 모르는 사안임을 드러낸다."
+      },
+      {
+       "t_raw": "Yelan은 '나쁘지 않은 생각'이라며 Wupei의 의견을 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 '나쁘지 않은 생각'이라며 무패의 의견을 묻는다."
+      },
+      {
+       "t_raw": "생선 수프와 처음 듣는 이야기에 대한 반응은 Wupei가 대화의 구체적인 내용을 파악하지 못한 상태였음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "생선 수프와 처음 듣는 이야기에 대한 반응은 무패가 대화의 구체적인 내용을 파악하지 못한 상태였음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 얼굴로는 알 수 없는 사람의 속마음",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Foregone Conclusion",
+     "status": "accepted",
+     "note": "The English never says Shanghua is the one Wupei trades the 'you didn't do any better' / 'fair point' lines with. The speaker is not named.",
+     "quote": "*sigh* Okay, fair enough, but didn't you think it was just a little bit strange?",
+     "sentences": [
+      {
+       "t_raw": "Wupei는 그래도 **조금 이상하다**고 생각하지 않았느냐고 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무패는 그래도 **조금 이상하다**고 생각하지 않았느냐고 되묻는다."
+      },
+      {
+       "t_raw": "이어 Yelan에게 나설 때가 되었느냐고 묻고, 그렇다면 자신도 **끼워 달라**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 야란에게 나설 때가 되었느냐고 묻고, 그렇다면 자신도 **끼워 달라**고 말한다."
+      },
+      {
+       "t_raw": "누군가와 '너도 잘한 게 없잖아'라는 말을 주고받고, Wupei는 그 말이 일리 있다며 받아들인다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "누군가와 '너도 잘한 게 없잖아'라는 말을 주고받고, 무패는 그 말이 일리 있다며 받아들인다."
+      },
+      {
+       "t_raw": "문제를 제기하는 동시에 직접 나서겠다고 하는 태도는 그가 상황을 수동적으로 받아들이지 않는다는 점을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "문제를 제기하는 동시에 직접 나서겠다고 하는 태도는 그가 상황을 수동적으로 받아들이지 않는다는 점을 보여 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wupei"
+      }
+     ],
+     "heading": "작중 행적 — 던져진 주사위",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Foregone Conclusion",
+     "status": "accepted",
+     "note": "The English line is 'Wupei says he's much more relaxed than usual'. Wupei is the one reporting, so 'he' is someone else. The Korean makes Wupei the relaxed, perceptive one.",
+     "quote": "Xinyue Kiosk. He only went in briefly. Wupei and I were watching outside the whole time.",
+     "sentences": [
+      {
+       "t_raw": "Shanghua는 Wupei가 누군가 평소보다 훨씬 느긋하다고 말했다고 전하면서, 그것이 타고난 성향일 수 있고 그 사람이 감시당함을 알아채는 눈치가 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "상화는 무패가 누군가 평소보다 훨씬 느긋하다고 말했다고 전하면서, 그것이 타고난 성향일 수 있고 그 사람이 감시당함을 알아채는 눈치가 있다고 본다."
+      },
+      {
+       "t_raw": "Shanghua는 Wupei를 멈춰 세우고, 자신은 Yelan을 기다리는 동안 Wupei가 Xinyue Kiosk에 물어보러 갔다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상화는 무패를 멈춰 세우고, 자신은 야란을 기다리는 동안 무패가 신월헌에 물어보러 갔다고 전한다."
+      },
+      {
+       "t_raw": "Xinyue Kiosk에 관해서는 그가 잠깐 들어갔을 뿐이며, Wupei와 Shanghua가 내내 밖에서 지켜보고 있었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "신월헌에 관해서는 그가 잠깐 들어갔을 뿐이며, 무패와 상화가 내내 밖에서 지켜보고 있었다고 말한다."
+      },
+      {
+       "t_raw": "Shanghua가 Wupei를 멈춰 세우고 대기하는 쪽을 맡았다는 점과, Xinyue Kiosk 밖에서 두 사람이 지켜보았다는 진술은 이들이 현장에서 각자 다른 방식으로 확인 작업을 했음을 시사한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "상화가 무패를 멈춰 세우고 대기하는 쪽을 맡았다는 점과, 신월헌 밖에서 두 사람이 지켜보았다는 진술은 이들이 현장에서 각자 다른 방식으로 확인 작업을 했음을 시사한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Shanghua"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Shanghua"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Shanghua"
+      }
+     ],
+     "heading": "작중 행적 — 던져진 주사위",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Don't be alarmed, this is Wupei. He's Wenyuan and Shanghua's colleague.",
+     "sentences": [
+      {
+       "t_raw": "Wupei는 Yelan의 **신뢰받는 조수**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무패는 야란의 **신뢰받는 조수**다."
+      },
+      {
+       "t_raw": "Yelan은 그를 Wenyuan과 Shanghua의 동료라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 그를 문연과 상화의 동료라고 소개한다."
+      },
+      {
+       "t_raw": "동료들의 놀림을 받는 사람이면서도 Yelan의 신뢰를 받는 조수라는 점이 함께 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "동료들의 놀림을 받는 사람이면서도 야란의 신뢰를 받는 조수라는 점이 함께 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The same misattribution as in #1. The relaxed, perceptive 'he' is not Wupei, since Wupei is the one reporting. Sentence 2 builds on that wrong reading.",
+     "quote": "No, Wupei says he's much more relaxed than usual... Maybe it's just how he's wired. Perceptive enough to sense when he's being watched.",
+     "sentences": [
+      {
+       "t_raw": "Shanghua는 Wupei가 누군가 평소보다 훨씬 편안하다고 말했다고 전하고, 그것이 타고난 성향일지도 모른다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "상화는 무패가 누군가 평소보다 훨씬 편안하다고 말했다고 전하고, 그것이 타고난 성향일지도 모른다고 본다."
+      },
+      {
+       "t_raw": "그러면서 그 사람을 **감시당함을 알아차릴 만큼 눈치가 있다**고 평한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그러면서 그 사람을 **감시당함을 알아차릴 만큼 눈치가 있다**고 평한다."
+      },
+      {
+       "t_raw": "이는 Shanghua가 그 사람의 눈치를 단순한 성향 문제로 보면서도 실제로 인정하는 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "이는 상화가 그 사람의 눈치를 단순한 성향 문제로 보면서도 실제로 인정하는 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Shanghua"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The English says Wupei 'went to ask around'. The Korean says Shanghua 'sent' him, which adds a claim that Shanghua dispatched him.",
+     "quote": "So I stopped Wupei, and I stayed here to wait for you while that meathead went to ask around in Xinyue Kiosk.",
+     "sentences": [
+      {
+       "t_raw": "Shanghua는 Wupei를 막아 자신은 Yelan을 기다리고, Wupei는 Xinyue Kiosk에 물어보러 간다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "상화는 무패를 막아 자신은 야란을 기다리고, 무패는 신월헌에 물어보러 간다."
+      },
+      {
+       "t_raw": "두 사람은 이렇게 현장에서 **역할을 나눠** 움직이는 동료로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 사람은 이렇게 현장에서 **역할을 나눠** 움직이는 동료로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Shanghua"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "능력과 성향",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Honestly, I've already tried following Zhiyi. But the guy's too cautious. Never meets with anyone suspicious.",
+     "sentences": [
+      {
+       "t_raw": "Wupei는 Zhiyi를 **직접 미행**해 본 적이 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무패는 지언을 **직접 미행**해 본 적이 있다고 말한다."
+      },
+      {
+       "t_raw": "Zhiyi가 지나치게 조심스러워 수상한 사람과 만나는 일이 없다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지언이 지나치게 조심스러워 수상한 사람과 만나는 일이 없다고 덧붙인다."
+      },
+      {
+       "t_raw": "그러면서 자신의 무능을 용서해 달라며 빈손이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 자신의 무능을 용서해 달라며 빈손이라고 말한다."
+      },
+      {
+       "t_raw": "Wupei는 상대가 그 일을 조금은 이상하게 생각하지 않았느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무패는 상대가 그 일을 조금은 이상하게 생각하지 않았느냐고 묻는다."
+      },
+      {
+       "t_raw": "직접 미행에 나선 행동과 이상하다는 물음을 함께 놓고 보면, Wupei가 문제를 넘기지 않고 확인하려는 쪽으로 나아가는 성향으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "직접 미행에 나선 행동과 이상하다는 물음을 함께 놓고 보면, 무패가 문제를 넘기지 않고 확인하려는 쪽으로 나아가는 성향으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wupei"
+      }
+     ],
+     "heading": "능력과 성향",
+     "latin_left": []
+    },
+    {
+     "section": "능력과 성향",
+     "status": "accepted",
+     "note": "All supported by Q9.",
+     "quote": "No, Wupei says he's much more relaxed than usual... Maybe it's just how he's wired. Perceptive enough to sense when he's being watched.",
+     "sentences": [
+      {
+       "t_raw": "Shanghua는 Wupei가 평소보다 훨씬 느긋하다고 말한 점을 전하고, 그저 타고난 성향일 수 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상화는 무패가 평소보다 훨씬 느긋하다고 말한 점을 전하고, 그저 타고난 성향일 수 있다고 본다."
+      },
+      {
+       "t_raw": "그러면서 Wupei가 **감시당함을 눈치챌 만큼 눈치가 있다**고 평가한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 무패가 **감시당함을 눈치챌 만큼 눈치가 있다**고 평가한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Shanghua"
+      }
+     ],
+     "heading": "능력과 성향",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Quotes match Q5 and Q7; interpretation is reasonable.",
+     "quote": "Fish soup? What fish soup?",
+     "sentences": [
+      {
+       "t_raw": "Candidature Analysis의 대화에는 Wupei가 **생선 수프**를 두고 '생선 수프? 무슨 생선 수프?'라고 되묻는 장면이 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼굴로는 알 수 없는 사람의 속마음의 대화에는 무패가 **생선 수프**를 두고 '생선 수프? 무슨 생선 수프?'라고 되묻는 장면이 남아 있다."
+      },
+      {
+       "t_raw": "어떤 이야기에는 '뭐? 그건 내게 **처음 듣는 소리**인데.'라고 답하는 반응도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어떤 이야기에는 '뭐? 그건 내게 **처음 듣는 소리**인데.'라고 답하는 반응도 있다."
+      },
+      {
+       "t_raw": "이렇게 생선 수프를 되묻고 어떤 내용을 처음 듣는 이야기로 받아들이는 모습은 그가 해당 사안을 알지 못했음을 보여주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 생선 수프를 되묻고 어떤 내용을 처음 듣는 이야기로 받아들이는 모습은 그가 해당 사안을 알지 못했음을 보여주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches Q2.",
+     "quote": "didn't you think it was just a little bit strange?",
+     "sentences": [
+      {
+       "t_raw": "Foregone Conclusion의 대화에서 Wupei는 한숨을 쉬며 상대에게 그 일이 **조금 이상하다**고 생각하지 않았는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "던져진 주사위의 대화에서 무패는 한숨을 쉬며 상대에게 그 일이 **조금 이상하다**고 생각하지 않았는지 묻는다."
+      },
+      {
+       "t_raw": "그는 상대의 말에 수긍하는 듯한 반응을 보이면서도 그 일이 조금 이상하다고 여기지 않았는지 되짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 상대의 말에 수긍하는 듯한 반응을 보이면서도 그 일이 조금 이상하다고 여기지 않았는지 되짚는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Wupei"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Profile sections are 'To be added'; Q5 supports the fish soup line; the interpretation is mild and acceptable.",
+     "quote": "Fish soup? What fish soup?",
+     "sentences": [
+      {
+       "t_raw": "프로필, 성격, 외형 항목은 **채워질 예정**으로 표시되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프로필, 성격, 외형 항목은 **채워질 예정**으로 표시되어 있다."
+      },
+      {
+       "t_raw": "이 항목들은 아직 채워지지 않은 상태로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 항목들은 아직 채워지지 않은 상태로 보인다."
+      },
+      {
+       "t_raw": "Candidature Analysis에서 **생선 수프** 이야기가 나오자 Wupei는 생선 수프가 무슨 말인지 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼굴로는 알 수 없는 사람의 속마음에서 **생선 수프** 이야기가 나오자 무패는 생선 수프가 무슨 말인지 되묻는다."
+      },
+      {
+       "t_raw": "이 짧은 대화가 남아 있는 자잘한 소재인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 짧은 대화가 남아 있는 자잘한 소재인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": "Profile > Personality",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": "Profile > Appearance",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Wupei"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of Q11.",
+     "t_raw": "그래서 내가 Wupei를 멈춰 세웠고, 저 meathead가 Xinyue Kiosk에 물어보러 가는 동안 나는 여기서 당신을 기다렸다.",
+     "en": "So I stopped Wupei, and I stayed here to wait for you while that meathead went to ask around in Xinyue Kiosk.",
+     "speaker": "Shanghua",
+     "source": {
+      "kind": "quest",
+      "quest": "Foregone Conclusion",
+      "quest_ko": "던져진 주사위",
+      "version": "2.7",
+      "speaker": "Shanghua"
+     },
+     "t": "그래서 내가 무패를 멈춰 세웠고, 저 meathead가 신월헌에 물어보러 가는 동안 나는 여기서 당신을 기다렸다.",
+     "speaker_ko": "상화"
+    },
+    {
+     "section": "작중 행적 — Candidature Analysis",
+     "status": "accepted",
+     "note": "Faithful translation of Q1.",
+     "t_raw": "솔직히, 나는 이미 Zhiyi를 미행해 봤다. 하지만 그 녀석은 너무 신중하다. 의심스러운 사람과는 절대 만나지 않는다.",
+     "en": "Honestly, I've already tried following Zhiyi. But the guy's too cautious. Never meets with anyone suspicious.",
+     "speaker": "Wupei",
+     "source": {
+      "kind": "quest",
+      "quest": "Candidature Analysis",
+      "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+      "version": "2.7",
+      "speaker": "Wupei"
+     },
+     "t": "솔직히, 나는 이미 지언을 미행해 봤다. 하지만 그 녀석은 너무 신중하다. 의심스러운 사람과는 절대 만나지 않는다.",
+     "speaker_ko": "무패"
+    },
+    {
+     "section": "작중 행적 — Foregone Conclusion",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Yelan님, 지금이 우리가 움직일 때인가? 그렇다면 나도 끼워 주십시오.",
+     "en": "Lady Yelan, is it time for us to make our move? If so, you can count me in.",
+     "speaker": "Wupei",
+     "source": {
+      "kind": "quest",
+      "quest": "Foregone Conclusion",
+      "quest_ko": "던져진 주사위",
+      "version": "2.7",
+      "speaker": "Wupei"
+     },
+     "t": "야란님, 지금이 우리가 움직일 때인가? 그렇다면 나도 끼워 주십시오.",
+     "speaker_ko": "무패"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful; 얼간이 is an acceptable rendering of meathead.",
+     "t_raw": "그래서 내가 Wupei를 막았고, 그 얼간이가 Xinyue Kiosk에 물어보러 가는 동안 나는 여기서 당신을 기다렸다.",
+     "en": "So I stopped Wupei, and I stayed here to wait for you while that meathead went to ask around in Xinyue Kiosk.",
+     "speaker": "Shanghua",
+     "source": {
+      "kind": "quest",
+      "quest": "Foregone Conclusion",
+      "quest_ko": "던져진 주사위",
+      "version": "2.7",
+      "speaker": "Shanghua"
+     },
+     "t": "그래서 내가 무패를 막았고, 그 얼간이가 신월헌에 물어보러 가는 동안 나는 여기서 당신을 기다렸다.",
+     "speaker_ko": "상화"
+    },
+    {
+     "section": "능력과 성향",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아니, Wupei가 평소보다 훨씬 느긋하다고 말하더라고... 그냥 타고난 성격일지도 몰라. 감시당하고 있다는 걸 눈치챌 만큼 눈치가 빠르니까.",
+     "en": "No, Wupei says he's much more relaxed than usual... Maybe it's just how he's wired. Perceptive enough to sense when he's being watched.",
+     "speaker": "Shanghua",
+     "source": {
+      "kind": "quest",
+      "quest": "Foregone Conclusion",
+      "quest_ko": "던져진 주사위",
+      "version": "2.7",
+      "speaker": "Shanghua"
+     },
+     "t": "아니, 무패가 평소보다 훨씬 느긋하다고 말하더라고... 그냥 타고난 성격일지도 몰라. 감시당하고 있다는 걸 눈치챌 만큼 눈치가 빠르니까.",
+     "speaker_ko": "상화"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "생선 수프? 무슨 생선 수프?",
+     "en": "Fish soup? What fish soup?",
+     "speaker": "Wupei",
+     "source": {
+      "kind": "quest",
+      "quest": "Candidature Analysis",
+      "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+      "version": "2.7",
+      "speaker": "Wupei"
+     },
+     "t": "생선 수프? 무슨 생선 수프?",
+     "speaker_ko": "무패"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "생선 수프? 무슨 생선 수프?",
+     "en": "Fish soup? What fish soup?",
+     "speaker": "Wupei",
+     "source": {
+      "kind": "quest",
+      "quest": "Candidature Analysis",
+      "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+      "version": "2.7",
+      "speaker": "Wupei"
+     },
+     "t": "생선 수프? 무슨 생선 수프?",
+     "speaker_ko": "무패"
+    }
+   ]
+  }
+ ]
+}

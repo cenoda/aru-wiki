@@ -20,41 +20,35 @@
    "input_chars": 291,
    "input_cut": false,
    "input_hash": "6722a73342ce",
-   "writer": "ds,glm-flash,ds-pro,glm",
-   "verifier": "",
-   "status": "needs_verify",
+   "writer": "ds,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "All sentences supported by A1, A2, A3 and M1. The interpretation is a reasonable reading of the teaser appearance.",
      "quote": "Mamoru is a quest-exclusive NPC that appears in the Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul.",
      "sentences": [
       {
-       "t_raw": "Mamoru는 Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul에 등장하는 퀘스트 전용 NPC이자 **Arataki Gang의 일원**이다.",
+       "t_raw": "Mamoru는 Arataki Gang의 구성원으로, Taurus Iracundus Chapter Act I: Rise Up, Golden Soul에서 등장하는 퀘스트 전용 NPC다.",
        "interp": false,
        "dropped": false,
-       "t": "마모루는 하늘 소의 장, Act I: 적금색의 영혼에 등장하는 퀘스트 전용 NPC이자 **아라타키파의 일원**이다."
+       "t": "마모루는 아라타키파의 구성원으로, Taurus Iracundus Chapter Act I: 적금색의 영혼에서 등장하는 퀘스트 전용 NPC다."
       },
       {
-       "t_raw": "Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"에서 Akira, Genta와 함께 처음 모습을 보였다.",
+       "t_raw": "Arataki Itto의 말에 따르면 그는 색맹이라고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"에서 아키라, 겐타와 함께 처음 모습을 보였다."
+       "t": "아라타키 이토의 말에 따르면 그는 색맹이라고 한다."
       },
       {
-       "t_raw": "Arataki Itto의 말에 따르면 그는 **색맹**이라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아라타키 이토의 말에 따르면 그는 **색맹**이라고 한다."
-      },
-      {
-       "t_raw": "The Oni's Pride에서 적을 도발하며 시간을 벌어 동료에게 기회를 넘기려는 태도는 정면 승부를 피하려는 판단으로 보인다.",
+       "t_raw": "본편 퀘스트에 앞서 Character Teaser에서 먼저 모습을 보였다는 점에서, Arataki Gang을 소개하는 장면에 함께 세워진 얼굴로 볼 수 있다.",
        "interp": true,
        "dropped": false,
-       "t": "오니의 긍지에서 적을 도발하며 시간을 벌어 동료에게 기회를 넘기려는 태도는 정면 승부를 피하려는 판단으로 보인다."
+       "t": "본편 퀘스트에 앞서 캐릭터 티저에서 먼저 모습을 보였다는 점에서, 아라타키파를 소개하는 장면에 함께 세워진 얼굴로 볼 수 있다."
       }
      ],
      "sources": [
@@ -78,63 +72,42 @@
        "kind": "wiki",
        "page": "Mamoru",
        "revision": 525121,
-       "section": null,
-       "paragraph": "A2",
+       "section": "Profile",
+       "paragraph": "A3",
        "wiki_refs": []
       },
       {
        "kind": "wiki",
        "page": "Mamoru",
        "revision": 525121,
-       "section": "Profile",
-       "paragraph": "A3",
+       "section": null,
+       "paragraph": "A2",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Oni's Pride",
-       "quest_ko": "오니의 긍지",
-       "version": "2.3",
-       "speaker": "Mamoru"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Oni's Pride",
-       "quest_ko": "오니의 긍지",
-       "version": "2.3",
-       "speaker": "Mamoru"
       }
      ],
      "heading": null,
      "latin_left": [
-      "Act",
-      "NPC",
-      "That"
+      "Taurus Iracundus Chapter Act",
+      "NPC"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "Current membership is given in M1 and the quest-exclusive NPC status in A1.",
      "quote": "Mamoru is a quest-exclusive NPC that appears in the Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul.",
      "sentences": [
       {
-       "t_raw": "Mamoru는 퀘스트에서만 만날 수 있는 NPC다.",
+       "t_raw": "Mamoru는 Arataki Gang의 현 구성원으로 소개되는 인물이다.",
        "interp": false,
        "dropped": false,
-       "t": "마모루는 퀘스트에서만 만날 수 있는 NPC다."
+       "t": "마모루는 아라타키파의 현 구성원으로 소개되는 인물이다."
       },
       {
-       "t_raw": "그가 등장하는 곳은 Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul이다.",
+       "t_raw": "게임 안에서는 Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul에 등장하는 퀘스트 전용 NPC다.",
        "interp": false,
        "dropped": false,
-       "t": "그가 등장하는 곳은 하늘 소의 장, Act I: 적금색의 영혼이다."
-      },
-      {
-       "t_raw": "등장 범위가 특정 장과 막에 속한 퀘스트로 한정되어 있으므로, 그에 대한 기록은 그 퀘스트의 사건 흐름과 함께 읽어야 하는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "등장 범위가 특정 장과 막에 속한 퀘스트로 한정되어 있으므로, 그에 대한 기록은 그 퀘스트의 사건 흐름과 함께 읽어야 하는 셈이다."
+       "t": "게임 안에서는 하늘 소의 장, Act I: 적금색의 영혼에 등장하는 퀘스트 전용 NPC다."
       }
      ],
      "sources": [
@@ -144,49 +117,43 @@
        "revision": 525121,
        "section": null,
        "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Arataki Gang",
+       "revision": 522671,
+       "section": "Members > Current",
+       "paragraph": "M1",
        "wiki_refs": []
       }
      ],
      "heading": "개요",
      "latin_left": [
-      "NPC",
-      "Act"
+      "Act",
+      "NPC"
      ]
     },
     {
      "section": "개요",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "A2 states the teaser and the Akira/Genta companions.",
      "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Akira and Genta.",
      "sentences": [
       {
-       "t_raw": "그는 Arataki Gang의 현재 일원이기도 하다.",
+       "t_raw": "그의 첫 등장은 캐릭터 티저 \"Arataki Itto: That's How the Show Should Go!\"였다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 아라타키파의 현재 일원이기도 하다."
+       "t": "그의 첫 등장은 캐릭터 티저 \"아라타키 이토: That의 이 정도는 해야지!!\"였다."
       },
       {
-       "t_raw": "Character Teaser \"Arataki Itto: That's How the Show Should Go!\"에서 Akira, Genta와 함께 처음 모습을 보였다.",
+       "t_raw": "이 티저에서 그는 Akira, Genta와 함께 Arataki Gang의 일원으로 모습을 드러냈다.",
        "interp": false,
        "dropped": false,
-       "t": "캐릭터 티저 \"아라타키 이토: That의 이 정도는 해야지!!\"에서 아키라, 겐타와 함께 처음 모습을 보였다."
-      },
-      {
-       "t_raw": "퀘스트 전용 NPC로 소개되면서도 단체 소속이 분명한 인물이라는 두 사실이 겹쳐, 그는 조직의 일원으로서 먼저 자리를 잡고 실제 등장은 특정 퀘스트에서 이루어지는 인물인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "퀘스트 전용 NPC로 소개되면서도 단체 소속이 분명한 인물이라는 두 사실이 겹쳐, 그는 조직의 일원으로서 먼저 자리를 잡고 실제 등장은 특정 퀘스트에서 이루어지는 인물인 셈이다."
+       "t": "이 티저에서 그는 아키라, 겐타와 함께 아라타키파의 일원으로 모습을 드러냈다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Mamoru",
-       "revision": 525121,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
       {
        "kind": "wiki",
        "page": "Mamoru",
@@ -194,6 +161,40 @@
        "section": null,
        "paragraph": "A2",
        "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "That"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "M1 lists him under current members. The interpretation follows from A1 and M1.",
+     "quote": "Mamoru is a quest-exclusive NPC that appears in the Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul.",
+     "sentences": [
+      {
+       "t_raw": "Arataki Gang 문서의 현 구성원 항목에는 Mamoru의 이름이 올라 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라타키파 문서의 현 구성원 항목에는 마모루의 이름이 올라 있다."
+      },
+      {
+       "t_raw": "등장이 퀘스트 전용 NPC로 한정되어 있으면서도 현 구성원 명단에 이름을 올리고 있다는 점을 겹쳐 보면, 무대에 서는 장면은 좁아도 소속은 분명한 인물이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "등장이 퀘스트 전용 NPC로 한정되어 있으면서도 현 구성원 명단에 이름을 올리고 있다는 점을 겹쳐 보면, 무대에 서는 장면은 좁아도 소속은 분명한 인물이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -206,33 +207,26 @@
      ],
      "heading": "개요",
      "latin_left": [
-      "That",
       "NPC"
      ]
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Mamoru is a quest-exclusive NPC that appears in the Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul.",
+     "status": "accepted",
+     "note": "M1 supports both current membership and the member-list entry.",
+     "quote": "Mamoru",
      "sentences": [
       {
-       "t_raw": "Mamoru는 Arataki Gang의 현재 일원 명단에 이름을 올리고 있는 인물이다.",
+       "t_raw": "Mamoru는 **Arataki Gang**의 현재 멤버다.",
        "interp": false,
        "dropped": false,
-       "t": "마모루는 아라타키파의 현재 일원 명단에 이름을 올리고 있는 인물이다."
+       "t": "마모루는 **아라타키파**의 현재 멤버다."
       },
       {
-       "t_raw": "게임 안에서는 Taurus Iracundus Chapter의 Act I: Rise Up, Golden Soul에 등장하는 퀘스트 전용 NPC로, 무리의 두목인 Arataki Itto와 같은 이야기 안에서 모습을 드러낸다.",
+       "t_raw": "Arataki Gang의 멤버 목록에서 그의 이름이 확인된다.",
        "interp": false,
        "dropped": false,
-       "t": "게임 안에서는 하늘 소의 장의 Act I: 적금색의 영혼에 등장하는 퀘스트 전용 NPC로, 무리의 두목인 아라타키 이토와 같은 이야기 안에서 모습을 드러낸다."
-      },
-      {
-       "t_raw": "Arataki Gang의 현재 구성원으로 등재되어 있으면서 실제로 해당 퀘스트에서 등장한다는 두 가지 사실을 겹쳐 보면, 그는 설정상으로도 이야기 속에서도 Arataki Gang의 일원으로 자리하고 있는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아라타키파의 현재 구성원으로 등재되어 있으면서 실제로 해당 퀘스트에서 등장한다는 두 가지 사실을 겹쳐 보면, 그는 설정상으로도 이야기 속에서도 아라타키파의 일원으로 자리하고 있는 셈이다."
+       "t": "아라타키파의 멤버 목록에서 그의 이름이 확인된다."
       }
      ],
      "sources": [
@@ -243,45 +237,34 @@
        "section": "Members > Current",
        "paragraph": "M1",
        "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mamoru",
-       "revision": 525121,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
       }
      ],
      "heading": "정체와 배경",
-     "latin_left": [
-      "Act",
-      "NPC"
-     ]
+     "latin_left": []
     },
     {
      "section": "정체와 배경",
-     "status": "needs_verify",
-     "note": null,
+     "status": "accepted",
+     "note": "A3 supports the colorblind claim via Itto. M1 supports current membership. The interpretation merely combines them.",
      "quote": "According to Arataki Itto, he is colorblind.",
      "sentences": [
       {
-       "t_raw": "그에 대해 전해지는 설정 가운데 하나는 그가 색맹이라는 점이다.",
+       "t_raw": "그의 **색맹**이라는 특징은 Arataki Itto의 입을 통해 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "그에 대해 전해지는 설정 가운데 하나는 그가 색맹이라는 점이다."
+       "t": "그의 **색맹**이라는 특징은 아라타키 이토의 입을 통해 전해진다."
       },
       {
-       "t_raw": "이 설정은 Mamoru 본인이 밝힌 것이 아니라 Arataki Itto의 말로 전해진 것으로, 프로필에서도 Arataki Itto의 언급을 근거로 제시하고 있다.",
+       "t_raw": "Arataki Itto에 따르면 Mamoru는 색맹이다.",
        "interp": false,
        "dropped": false,
-       "t": "이 설정은 마모루 본인이 밝힌 것이 아니라 아라타키 이토의 말로 전해진 것으로, 프로필에서도 아라타키 이토의 언급을 근거로 제시하고 있다."
+       "t": "아라타키 이토에 따르면 마모루는 색맹이다."
       },
       {
-       "t_raw": "색맹이라는 정보가 무리의 두목인 Arataki Itto의 입을 통해 알려져 있다는 점은, 그가 두목이 자연스럽게 언급할 만한 위치의 일원으로 그려지고 있음을 보여주는 대목이기도 하다.",
+       "t_raw": "Arataki Gang의 현 멤버이면서 Arataki Itto의 말로 색맹이라는 특징이 알려진 인물인 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "색맹이라는 정보가 무리의 두목인 아라타키 이토의 입을 통해 알려져 있다는 점은, 그가 두목이 자연스럽게 언급할 만한 위치의 일원으로 그려지고 있음을 보여주는 대목이기도 하다."
+       "t": "아라타키파의 현 멤버이면서 아라타키 이토의 말로 색맹이라는 특징이 알려진 인물인 셈이다."
       }
      ],
      "sources": [
@@ -306,62 +289,28 @@
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Character Teaser",
-     "status": "needs_verify",
-     "note": null,
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and A2.",
      "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Akira and Genta.",
      "sentences": [
       {
-       "t_raw": "Mamoru의 **첫 등장**은 Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"이다.",
+       "t_raw": "**Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"**에서 Mamoru는 Arataki Gang의 Akira, Genta와 함께 처음 등장한다.",
        "interp": false,
        "dropped": false,
-       "t": "마모루의 **첫 등장**은 캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"이다."
+       "t": "**캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"**에서 마모루는 아라타키파의 아키라, 겐타와 함께 처음 등장한다."
       },
       {
-       "t_raw": "그 자리에서 그는 Arataki Gang의 동료인 Akira, Genta와 함께한다.",
+       "t_raw": "이 티저에서 그는 동료들과 한자리에 소개된다.",
        "interp": false,
        "dropped": false,
-       "t": "그 자리에서 그는 아라타키파의 동료인 아키라, 겐타와 함께한다."
+       "t": "이 티저에서 그는 동료들과 한자리에 소개된다."
       },
       {
-       "t_raw": "동료 둘과 함께 등장한다는 점에서, 이 티저는 Mamoru를 개인이 아니라 Arataki Gang의 일원으로서 먼저 보여주는 장면이라고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "동료 둘과 함께 등장한다는 점에서, 이 티저는 마모루를 개인이 아니라 아라타키파의 일원으로서 먼저 보여주는 장면이라고 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Mamoru",
-       "revision": 525121,
-       "section": null,
-       "paragraph": "A2",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 캐릭터 티저",
-     "latin_left": [
-      "That"
-     ]
-    },
-    {
-     "section": "작중 행적 — Character Teaser",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Genta and Mamoru.",
-     "sentences": [
-      {
-       "t_raw": "Akira와 Genta 역시 같은 티저에서 처음 등장했으며, 그 자리에는 Mamoru가 함께 있었다.",
+       "t_raw": "이후 Mamoru는 Taurus Iracundus Chapter, Act I: Rise Up, Golden Soul에서 퀘스트 전용 NPC로 등장한다.",
        "interp": false,
        "dropped": false,
-       "t": "아키라와 겐타 역시 같은 티저에서 처음 등장했으며, 그 자리에는 마모루가 함께 있었다."
-      },
-      {
-       "t_raw": "Akira와 Genta의 첫 등장 서술이 모두 Mamoru를 함께 언급하고 있으니, 이 티저는 세 사람을 **한 묶음으로** 기억하게 하는 출발점인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "아키라와 겐타의 첫 등장 서술이 모두 마모루를 함께 언급하고 있으니, 이 티저는 세 사람을 **한 묶음으로** 기억하게 하는 출발점인 셈이다."
+       "t": "이후 마모루는 하늘 소의 장, Act I: 적금색의 영혼에서 퀘스트 전용 NPC로 등장한다."
       }
      ],
      "sources": [
@@ -373,112 +322,6 @@
        "paragraph": "A2",
        "wiki_refs": []
       },
-      {
-       "kind": "wiki",
-       "page": "Akira",
-       "revision": 524923,
-       "section": null,
-       "paragraph": "M2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Genta",
-       "revision": 525073,
-       "section": null,
-       "paragraph": "M3",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "작중 행적 — 캐릭터 티저",
-     "latin_left": []
-    },
-    {
-     "section": "작중 행적 — The Oni's Pride",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Maybe we can't take 'em, but we can sure slow 'em down. Now's your chance — go!",
-     "sentences": [
-      {
-       "t_raw": "「The Oni's Pride」에서 Mamoru는 적을 정면으로 꺾는 대신 **발목을 잡는 쪽**을 택한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "「오니의 긍지」에서 마모루는 적을 정면으로 꺾는 대신 **발목을 잡는 쪽**을 택한다."
-      },
-      {
-       "t_raw": "그는 상대를 잡을 수 없을지도 모른다고 인정하면서도 분명히 늦출 수는 있다고 말하고, 이어서 동료에게 **지금이 기회**라며 가라고 외친다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그는 상대를 잡을 수 없을지도 모른다고 인정하면서도 분명히 늦출 수는 있다고 말하고, 이어서 동료에게 **지금이 기회**라며 가라고 외친다."
-      },
-      {
-       "t_raw": "그리고 “Hey! You guys want some of this!? There's plenty to go around!”라고 외쳐 적들에게 말을 건다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그리고 “Hey! You guys want some of this!? There의 plenty to go around!”라고 외쳐 적들에게 말을 건다."
-      },
-      {
-       "t_raw": "싸움을 끝내는 역할보다 시간을 버는 역할을 맡은 셈인데, 그가 적을 늦추는 동안 동료가 기회를 잡는 구도가 드러난다.",
-       "interp": true,
-       "dropped": false,
-       "t": "싸움을 끝내는 역할보다 시간을 버는 역할을 맡은 셈인데, 그가 적을 늦추는 동안 동료가 기회를 잡는 구도가 드러난다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "quest",
-       "quest": "The Oni's Pride",
-       "quest_ko": "오니의 긍지",
-       "version": "2.3",
-       "speaker": "Mamoru"
-      },
-      {
-       "kind": "quest",
-       "quest": "The Oni's Pride",
-       "quest_ko": "오니의 긍지",
-       "version": "2.3",
-       "speaker": "Mamoru"
-      }
-     ],
-     "heading": "작중 행적 — 오니의 긍지",
-     "latin_left": [
-      "Hey",
-      "You",
-      "There"
-     ]
-    },
-    {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Akira and Genta.",
-     "sentences": [
-      {
-       "t_raw": "Mamoru는 Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"에서 Arataki Gang의 동료인 Akira, Genta와 함께 첫 등장했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마모루는 캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"에서 아라타키파의 동료인 아키라, 겐타와 함께 첫 등장했다."
-      },
-      {
-       "t_raw": "세 사람은 같은 티저에서 함께 무대에 오른 동료들로, 각각의 문서에도 서로를 언급하며 등장 배경을 공유하고 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "세 사람은 같은 티저에서 함께 무대에 오른 동료들로, 각각의 문서에도 서로를 언급하며 등장 배경을 공유하고 있다."
-      },
-      {
-       "t_raw": "Arataki Itto에 따르면 Mamoru는 색맹이라고 한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "아라타키 이토에 따르면 마모루는 색맹이라고 한다."
-      },
-      {
-       "t_raw": "Taurus Iracundus Chapter의 퀘스트에 등장하는 NPC인 만큼, 갱단 멤버로서 Itto의 이야기와도 접점을 이루는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "하늘 소의 장의 퀘스트에 등장하는 NPC인 만큼, 갱단 멤버로서 이토의 이야기와도 접점을 이루는 셈이다."
-      }
-     ],
-     "sources": [
       {
        "kind": "wiki",
        "page": "Mamoru",
@@ -486,6 +329,97 @@
        "section": null,
        "paragraph": "A1",
        "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적",
+     "latin_left": [
+      "That",
+      "Act",
+      "NPC"
+     ]
+    },
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "Quote and quest name match Q1 and Q2. The interpretation is reasonable.",
+     "quote": "Maybe we can't take 'em, but we can sure slow 'em down. Now's your chance — go!",
+     "sentences": [
+      {
+       "t_raw": "퀘스트 **\"The Oni's Pride\"**에서 Mamoru는 상대를 당해 내지 못할 수도 있지만 느리게 만들 수는 있다며, 지금이 기회라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트 **\"오니의 긍지\"**에서 마모루는 상대를 당해 내지 못할 수도 있지만 느리게 만들 수는 있다며, 지금이 기회라고 말한다."
+      },
+      {
+       "t_raw": "이어서 \"You guys want some of this!? There's plenty to go around!\"라고 외친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 \"너희들, 이거 맞고 싶어!? 아직 많이 남았다고!\"라고 외친다.",
+       "polish": {
+        "from": "이어서 \"You guys want some of this!? There의 plenty to go around!\"라고 외친다.",
+        "text": "이어서 \"너희들, 이거 맞고 싶어!? 아직 많이 남았다고!\"라고 외친다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "상대를 당해 내지 못할 가능성을 인정하면서도 시간을 끌어 기회를 만들고, 이어 상대에게 말을 던지는 모습이 함께 드러난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "상대를 당해 내지 못할 가능성을 인정하면서도 시간을 끌어 기회를 만들고, 이어 상대에게 말을 던지는 모습이 함께 드러난다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Mamoru"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Mamoru"
+      }
+     ],
+     "heading": "작중 행적",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by M1, A2, M2 and M3.",
+     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Akira and Genta.",
+     "sentences": [
+      {
+       "t_raw": "Arataki Gang의 현 구성원 소개에 Mamoru가 이름을 올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라타키파의 현 구성원 소개에 마모루가 이름을 올린다."
+      },
+      {
+       "t_raw": "Mamoru는 Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"에서 **Arataki Gang의 동료** Akira, Genta와 함께 처음 등장했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마모루는 캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"에서 **아라타키파의 동료** 아키라, 겐타와 함께 처음 등장했다."
+      },
+      {
+       "t_raw": "Akira의 소개와 Genta의 소개에서도 같은 Character Teaser에서 Mamoru와 함께 처음 등장한 것으로 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아키라의 소개와 겐타의 소개에서도 같은 캐릭터 티저에서 마모루와 함께 처음 등장한 것으로 언급된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arataki Gang",
+       "revision": 522671,
+       "section": "Members > Current",
+       "paragraph": "M1",
+       "wiki_refs": []
       },
       {
        "kind": "wiki",
@@ -493,14 +427,6 @@
        "revision": 525121,
        "section": null,
        "paragraph": "A2",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Mamoru",
-       "revision": 525121,
-       "section": "Profile",
-       "paragraph": "A3",
        "wiki_refs": []
       },
       {
@@ -522,17 +448,198 @@
      ],
      "heading": "인간관계",
      "latin_left": [
-      "That",
-      "NPC"
+      "That"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Interpretations follow from the cross-references in M1, M2 and M3.",
+     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Akira and Mamoru.",
+     "sentences": [
+      {
+       "t_raw": "세 사람의 소개가 서로의 이름을 맞물려 언급하는 점은 이들이 **한 묶음의 Arataki Gang 동료**로 제시되었음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세 사람의 소개가 서로의 이름을 맞물려 언급하는 점은 이들이 **한 묶음의 아라타키파 동료**로 제시되었음을 보여 준다."
+      },
+      {
+       "t_raw": "Mamoru가 현 구성원이고 Akira와 Genta의 소개에도 함께 등장하므로, 세 사람의 관계는 Character Teaser를 매개로 정리되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마모루가 현 구성원이고 아키라와 겐타의 소개에도 함께 등장하므로, 세 사람의 관계는 캐릭터 티저를 매개로 정리되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Arataki Gang",
+       "revision": 522671,
+       "section": "Members > Current",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Akira",
+       "revision": 524923,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Genta",
+       "revision": 525073,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 1 puts the line in Rise Up, Golden Soul, but the English attributes it to the quest \"The Oni's Pride\". The material never says the two are the same quest.",
+     "quote": "Hey! You guys want some of this!? There's plenty to go around!",
+     "sentences": [
+      {
+       "t_raw": "Arataki Itto의 말에 따르면 Mamoru는 색맹이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라타키 이토의 말에 따르면 마모루는 색맹이다."
+      },
+      {
+       "t_raw": "Rise Up, Golden Soul에 등장하는 Mamoru는 퀘스트 \"The Oni's Pride\"에서 \"Maybe we can't take 'em, but we can sure slow 'em down. Now's your chance — go!\"라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "적금색의 영혼에 등장하는 마모루는 퀘스트 \"오니의 긍지\"에서 \"우리가 놈들을 이길 수는 없겠지만, 발목을 잡을 수는 있어. 지금이야 — 가!\"라고 말한다.",
+       "polish": {
+        "from": "적금색의 영혼에 등장하는 마모루는 퀘스트 \"오니의 긍지\"에서 \"Maybe we can't take 'em, but we can sure slow 'em down. Now의 your chance — go!\"라고 말한다.",
+        "text": "적금색의 영혼에 등장하는 마모루는 퀘스트 \"오니의 긍지\"에서 \"우리가 놈들을 이길 수는 없겠지만, 발목을 잡을 수는 있어. 지금이야 — 가!\"라고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "또 \"Hey! You guys want some of this!? There's plenty to go around!\"라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 \"너희들, 이거 맞고 싶어!? 아직 많이 남았다고!\"라고 한다.",
+       "polish": {
+        "from": "또 \"Hey! You guys want some of this!? There의 plenty to go around!\"라고 한다.",
+        "text": "또 \"너희들, 이거 맞고 싶어!? 아직 많이 남았다고!\"라고 한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "한쪽 대사는 상황을 인정하며 동료에게 기회를 넘기는 쪽이고, 다른 쪽 대사는 상대를 자극하는 쪽이라 **태도의 결이 갈리는 것으로 보인다**.",
+       "interp": true,
+       "dropped": false,
+       "t": "한쪽 대사는 상황을 인정하며 동료에게 기회를 넘기는 쪽이고, 다른 쪽 대사는 상대를 자극하는 쪽이라 **태도의 결이 갈리는 것으로 보인다**."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Mamoru"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Oni's Pride",
+       "quest_ko": "오니의 긍지",
+       "version": "2.3",
+       "speaker": "Mamoru"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A1 and A2. The \"first appeared\" wording supports the interpretation.",
+     "quote": "He first appeared in Character Teaser - \"Arataki Itto: That's How the Show Should Go!\" alongside fellow Arataki Gang members Akira and Genta.",
+     "sentences": [
+      {
+       "t_raw": "Rise Up, Golden Soul에서 Mamoru는 퀘스트 전용 NPC로 등장하지만, 처음 모습을 보인 곳은 Character Teaser - \"Arataki Itto: That's How the Show Should Go!\"이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적금색의 영혼에서 마모루는 퀘스트 전용 NPC로 등장하지만, 처음 모습을 보인 곳은 캐릭터 티저 - \"아라타키 이토: That의 이 정도는 해야지!!\"이다."
+      },
+      {
+       "t_raw": "그는 Akira, Genta와 함께 Arataki Gang의 일원으로 등장했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 아키라, 겐타와 함께 아라타키파의 일원으로 등장했다."
+      },
+      {
+       "t_raw": "퀘스트에서의 등장보다 Character Teaser가 앞서므로, **Character Teaser에서 먼저 소개된 인물**인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "퀘스트에서의 등장보다 캐릭터 티저가 앞서므로, **캐릭터 티저에서 먼저 소개된 인물**인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mamoru",
+       "revision": 525121,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "NPC",
+      "That"
      ]
     }
    ],
    "quote_boxes": [
     {
-     "section": "작중 행적 — The Oni's Pride",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "어쩌면 우리가 저들을 잡을 수는 없겠지만, 분명히 늦출 수는 있다. 지금이 네 기회다 — 가!",
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "Faithful translation of the Mamoru line.",
+     "t_raw": "어쩌면 우리가 놈들을 당해 내지 못할지도 모르지만, 놈들을 느리게 만들 수는 확실해. 지금이 네 기회야 — 가!",
      "en": "Maybe we can't take 'em, but we can sure slow 'em down. Now's your chance — go!",
      "speaker": "Mamoru",
      "source": {
@@ -542,15 +649,15 @@
       "version": "2.3",
       "speaker": "Mamoru"
      },
-     "t": "어쩌면 우리가 저들을 잡을 수는 없겠지만, 분명히 늦출 수는 있다. 지금이 네 기회다 — 가!",
+     "t": "어쩌면 우리가 놈들을 당해 내지 못할지도 모르지만, 놈들을 느리게 만들 수는 확실해. 지금이 네 기회야 — 가!",
      "speaker_ko": "마모루"
     },
     {
-     "section": "인간관계",
-     "status": "needs_verify",
-     "note": null,
-     "t_raw": "어쩌면 우리가 저들을 이길 순 없을지 몰라도, 시간이라도 벌어줄 수는 있어. 기회야 — 가!",
-     "en": "Maybe we can't take 'em, but we can sure slow 'em down. Now's your chance — go!",
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of the Mamoru line.",
+     "t_raw": "이봐! 너희들, 이거 좀 해볼래!? 나눠 줄 게 많아!",
+     "en": "Hey! You guys want some of this!? There's plenty to go around!",
      "speaker": "Mamoru",
      "source": {
       "kind": "quest",
@@ -559,7 +666,7 @@
       "version": "2.3",
       "speaker": "Mamoru"
      },
-     "t": "어쩌면 우리가 저들을 이길 순 없을지 몰라도, 시간이라도 벌어줄 수는 있어. 기회야 — 가!",
+     "t": "이봐! 너희들, 이거 좀 해볼래!? 나눠 줄 게 많아!",
      "speaker_ko": "마모루"
     }
    ]

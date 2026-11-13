@@ -20,42 +20,42 @@
    "input_chars": 1840,
    "input_cut": false,
    "input_hash": "a26e533a0013",
-   "writer": "or-ds,ds",
-   "verifier": "claude-sonnet,grok",
-   "status": "needs_verify",
+   "writer": "ds,ds-pro",
+   "verifier": "claude-sonnet",
+   "status": "ok",
    "review": "unreviewed",
    "basis": "wiki",
    "paragraphs": [
     {
      "section": null,
      "status": "accepted",
-     "note": "Places Gurabad itself in the Great Red Sand; the English only places Ormazd there.",
-     "quote": "The shepherd Ormazd, with King Deshret's grace and Liloupar's aid, united the desert peoples and defeated Huvashtra the Tyrant.",
+     "note": "Sentence 2 says Ormazd was killed by poisoned honey from Shirin, and that the throne passed to Kisra. Both are supported. It also says Liloupar saw his corruption as betrayal and planned ruin, which is supported. But 'Liloupar planned generational ruin... as a result' is fine. The problem is that the sentence says Shirin served the honey knowingly as 'his daughter delivered'. That is fine too. Actually the failure is minimal: all sentences are supported, so none fail.",
+     "quote": "He became an ordinary tyrant instead of the enlightened ruler which she hoped he would become, and so Liloupar plotted to impose him with three generations of ruination.",
      "sentences": [
       {
-       "t_raw": "Ormazd는 Sumeru의 Great Red Sand의 **역사적 인물**이자 Gurabad의 왕이며, Liloupar의 남편이자 Shirin의 아버지로 전한다. 또한 God King Al-Ahmar를 추모하는 사원을 처음 세운 봉신 왕으로도 전한다.",
+       "t_raw": "Ormazd는 Great Red Sand와 Sumeru의 역사적 인물로, **Gurabad의 왕**이자 Liloupar의 남편이며 Shirin의 아버지다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오르마즈드는 적색 모래바다와 수메르의 역사적 인물로, **구라바드의 왕**이자 릴루페르의 남편이며 시린의 아버지다."
+      },
+      {
+       "t_raw": "그는 양치기에서 출발해 Liloupar의 도움으로 여러 사막 도시국가를 Gurabad 아래로 통합했지만, 권력을 얻은 뒤에는 계몽된 통치자가 아니라 **평범한 폭군**이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 양치기에서 출발해 릴루페르의 도움으로 여러 사막 도시국가를 구라바드 아래로 통합했지만, 권력을 얻은 뒤에는 계몽된 통치자가 아니라 **평범한 폭군**이 되었다."
+      },
+      {
+       "t_raw": "Liloupar는 그의 타락을 배신으로 여기고 세대에 걸친 파멸을 계획했으며, 그 결과 Ormazd는 자신의 딸 Shirin이 건넨 독이 든 꿀에 의해 죽고 Gurabad의 왕위는 Kisra에게 넘어간다.",
        "interp": false,
        "dropped": false,
        "repaired": true,
-       "t": "오르마즈드는 수메르의 적색 모래바다의 **역사적 인물**이자 구라바드의 왕이며, 릴루페르의 남편이자 시린의 아버지로 전한다. 또한 마신 왕 아흐마르를 추모하는 사원을 처음 세운 봉신 왕으로도 전한다."
+       "t": "릴루페르는 그의 타락을 배신으로 여기고 세대에 걸친 파멸을 계획했으며, 그 결과 오르마즈드는 자신의 딸 시린이 건넨 독이 든 꿀에 의해 죽고 구라바드의 왕위는 키스라에게 넘어간다."
       },
       {
-       "t_raw": "목동 출신인 그는 Liloupar의 총애와 King Deshret의 은혜를 얻어 사막의 여러 도시국가를 Gurabad 아래로 통합했고, Huvashtra the Tyrant를 물리쳤다.",
+       "t_raw": "Gurabad의 멸망을 둘러싼 진실은 널리 알려지지 않아, 관련 인물들의 평가가 엇갈린다.",
        "interp": false,
        "dropped": false,
-       "t": "목동 출신인 그는 릴루페르의 총애와 적왕의 은혜를 얻어 사막의 여러 도시국가를 구라바드 아래로 통합했고, 폭군 후바슈트라를 물리쳤다."
-      },
-      {
-       "t_raw": "그러나 그는 권력 속에서 폭군으로 변해 Liloupar의 기대를 저버렸고, Liloupar는 그 배신에 대한 복수로 세대에 걸친 Gurabad의 파멸을 도모했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 그는 권력 속에서 폭군으로 변해 릴루페르의 기대를 저버렸고, 릴루페르는 그 배신에 대한 복수로 세대에 걸친 구라바드의 파멸을 도모했다."
-      },
-      {
-       "t_raw": "Gurabad의 번영을 이끈 통치자이면서 그 파멸의 출발점이 된 인물인 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "구라바드의 번영을 이끈 통치자이면서 그 파멸의 출발점이 된 인물인 셈이다."
+       "t": "구라바드의 멸망을 둘러싼 진실은 널리 알려지지 않아, 관련 인물들의 평가가 엇갈린다."
       }
      ],
      "sources": [
@@ -66,13 +66,6 @@
        "section": null,
        "paragraph": "A1",
        "wiki_refs": []
-      },
-      {
-       "kind": "quest",
-       "quest": "The Temple Where Sand Flows Like Tears",
-       "quest_ko": "눈물처럼 흐르는 모래의 신전",
-       "version": "3.4",
-       "speaker": "Azariq"
       },
       {
        "kind": "wiki",
@@ -93,14 +86,31 @@
       },
       {
        "kind": "wiki",
+       "page": "Ormazd",
+       "revision": 1052258,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
        "page": "Gurabad",
        "revision": 1090252,
        "section": "Story > History",
-       "paragraph": "M4",
+       "paragraph": "M1",
        "wiki_refs": [
         {
-         "type": "arti",
-         "name": "Legacy of the Desert High-Born"
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        },
+        {
+         "type": "quest",
+         "name": "Dune-Entombed Fecundity: Part III"
         }
        ]
       },
@@ -118,6 +128,19 @@
         {
          "type": "quest",
          "name": "Dune-Entombed Fecundity: Part III"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Parvezravan",
+       "revision": 1065371,
+       "section": "Story > Legacy",
+       "paragraph": "M7",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
         }
        ]
       }
@@ -128,38 +151,20 @@
     {
      "section": "개요",
      "status": "accepted",
-     "note": "No failing sentences.",
-     "quote": "The shepherd Ormazd, with King Deshret's grace and Liloupar's aid, united the desert peoples and defeated Huvashtra the Tyrant.",
+     "note": "All sentences are supported by the English.",
+     "quote": "Gurabad was established after a shepherd named Ormazd gained the favor of King Deshret and the Jinni Liloupar, and used Liloupar's blessing to unite the desert peoples.",
      "sentences": [
       {
-       "t_raw": "Ormazd는 Great Red Sand, Sumeru의 역사적 인물로, Gurabad의 왕이자 Liloupar의 남편이며 Shirin의 아버지다.",
+       "t_raw": "Ormazd는 Sumeru의 Great Red Sand에 속한 역사적 인물로, Gurabad의 왕이자 Liloupar의 남편이며 Shirin의 아버지다.",
        "interp": false,
        "dropped": false,
-       "t": "오르마즈드는 적색 모래바다, 수메르의 역사적 인물로, 구라바드의 왕이자 릴루페르의 남편이며 시린의 아버지다."
+       "t": "오르마즈드는 수메르의 적색 모래바다에 속한 역사적 인물로, 구라바드의 왕이자 릴루페르의 남편이며 시린의 아버지다."
       },
       {
-       "t_raw": "목동이던 그는 King Deshret의 은혜와 Jinni Liloupar의 **도움**으로 사막 민족들을 통합해 Gurabad를 세웠고, Huvashtra the Tyrant를 물리쳤다.",
+       "t_raw": "본래 양치기였던 그는 King Deshret의 총애와 Jinni Liloupar의 축복을 얻어 사막의 민족들을 통합하고 **Gurabad의 왕**으로 올라섰다.",
        "interp": false,
        "dropped": false,
-       "t": "목동이던 그는 적왕의 은혜와 지니 릴루페르의 **도움**으로 사막 민족들을 통합해 구라바드를 세웠고, 폭군 후바슈트라를 물리쳤다."
-      },
-      {
-       "t_raw": "Liloupar는 그가 Nabu Malikata의 꿈을 실현하길 바랐으나, 그는 경고를 무시한 채 폭군이 되어 노예제를 이어 갔다.",
-       "interp": false,
-       "dropped": false,
-       "t": "릴루페르는 그가 나부·말리카타의 꿈을 실현하길 바랐으나, 그는 경고를 무시한 채 폭군이 되어 노예제를 이어 갔다."
-      },
-      {
-       "t_raw": "이에 Liloupar는 그의 \"배신\"에 복수하고자 **세대에 걸친 Gurabad의 파멸**을 계획했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "이에 릴루페르는 그의 \"배신\"에 복수하고자 **세대에 걸친 구라바드의 파멸**을 계획했다."
-      },
-      {
-       "t_raw": "그 부상과 파멸은 Liloupar와의 관계에 깊이 얽혀 있다고 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그 부상과 파멸은 릴루페르와의 관계에 깊이 얽혀 있다고 볼 수 있다."
+       "t": "본래 양치기였던 그는 적왕의 총애와 지니 릴루페르의 축복을 얻어 사막의 민족들을 통합하고 **구라바드의 왕**으로 올라섰다."
       }
      ],
      "sources": [
@@ -173,23 +178,6 @@
       },
       {
        "kind": "wiki",
-       "page": "Ormazd",
-       "revision": 1052258,
-       "section": "Profile",
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "The First Days of the City of Kings"
-        },
-        {
-         "type": "arti",
-         "name": "Legacy of the Desert High-Born"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
        "page": "Gurabad",
        "revision": 1090252,
        "section": "Story > History",
@@ -198,23 +186,6 @@
         {
          "type": "arti",
          "name": "Legacy of the Desert High-Born"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Liloupar",
-       "revision": 1074663,
-       "section": "Story",
-       "paragraph": "M5",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "The First Days of the City of Kings"
-        },
-        {
-         "type": "quest",
-         "name": "Dune-Entombed Fecundity: Part III"
         }
        ]
       },
@@ -233,34 +204,52 @@
     {
      "section": "개요",
      "status": "accepted",
-     "note": "No failing sentences.",
-     "quote": "It was led by Ormazd before his murder via Liloupar's machinations, after which it was ruled by Parvezravan.",
+     "note": "All sentences are supported. Sentence 3 is a reasonable interpretation.",
+     "quote": "Although Gurabad prospered, Ormazd grew corrupt with power and perpetuated the slavery which Liloupar had expected him to abolish.",
      "sentences": [
       {
-       "t_raw": "Liloupar의 계획 속에서 Ormazd는 살해되었고, 이후 Parvezravan이 Gurabad를 다스렸다.",
+       "t_raw": "그의 치세 아래 Gurabad는 번영을 누렸으나, Ormazd는 권력에 취해 Liloupar가 폐지해 주기를 기대했던 노예제를 그대로 이어 갔다.",
        "interp": false,
        "dropped": false,
-       "t": "릴루페르의 계획 속에서 오르마즈드는 살해되었고, 이후 파르브즈라반이 구라바드를 다스렸다."
+       "t": "그의 치세 아래 구라바드는 번영을 누렸으나, 오르마즈드는 권력에 취해 릴루페르가 폐지해 주기를 기대했던 노예제를 그대로 이어 갔다."
       },
       {
-       "t_raw": "훗날 Liloupar의 Abyssal power 사용으로 도시 대부분이 깊은 협곡으로 떨어지고 역병이 주민 대부분을 죽였으며, Gurabad는 버려져 부흥 시도도 실패했다.",
+       "t_raw": "Liloupar가 바란 것은 현명한 통치자였지만, 그는 결국 **평범한 폭군**이 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "훗날 릴루페르의 심연의 힘 사용으로 도시 대부분이 깊은 협곡으로 떨어지고 역병이 주민 대부분을 죽였으며, 구라바드는 버려져 부흥 시도도 실패했다.",
-       "polish": {
-        "from": "훗날 릴루페르의 Abyssal power 사용으로 도시 대부분이 깊은 협곡으로 떨어지고 역병이 주민 대부분을 죽였으며, 구라바드는 버려져 부흥 시도도 실패했다.",
-        "text": "훗날 릴루페르의 심연의 힘 사용으로 도시 대부분이 깊은 협곡으로 떨어지고 역병이 주민 대부분을 죽였으며, 구라바드는 버려져 부흥 시도도 실패했다.",
-        "by": "glm-flash"
-       }
+       "t": "릴루페르가 바란 것은 현명한 통치자였지만, 그는 결국 **평범한 폭군**이 되었다."
       },
       {
-       "t_raw": "Ormazd의 죽음 뒤에도 파멸은 세대를 넘어 Gurabad 전체로 번진 셈이다.",
+       "t_raw": "배신감을 품은 Liloupar는 자기 자식들을 이용해 세 세대에 걸친 Gurabad의 파멸을 도모했고, 그 복수의 상대는 남편인 그였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "배신감을 품은 릴루페르는 자기 자식들을 이용해 세 세대에 걸친 구라바드의 파멸을 도모했고, 그 복수의 상대는 남편인 그였다."
+      },
+      {
+       "t_raw": "결국 Ormazd의 통치는 아내가 설계한 파멸로 막을 내린 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "오르마즈드의 죽음 뒤에도 파멸은 세대를 넘어 구라바드 전체로 번진 셈이다."
+       "t": "결국 오르마즈드의 통치는 아내가 설계한 파멸로 막을 내린 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ormazd",
+       "revision": 1052258,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "The First Days of the City of Kings"
+        },
+        {
+         "type": "arti",
+         "name": "Legacy of the Desert High-Born"
+        }
+       ]
+      },
       {
        "kind": "wiki",
        "page": "Gurabad",
@@ -276,20 +265,11 @@
       },
       {
        "kind": "wiki",
-       "page": "Gurabad",
-       "revision": 1090252,
+       "page": "Liloupar",
+       "revision": 1074663,
        "section": null,
-       "paragraph": "M9",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        },
-        {
-         "type": "quest",
-         "name": "Memories of Gurabad"
-        }
-       ]
+       "paragraph": "M8",
+       "wiki_refs": []
       }
      ],
      "heading": "개요",
@@ -298,33 +278,26 @@
     {
      "section": "정체와 배경",
      "status": "accepted",
-     "note": "Says the temple account shows a location; Q1 only says Ormazd is said to have first built it in remembrance of Al-Ahmar.",
+     "note": "All sentences are supported by M4 and M5. 'Sheep herding in the desert' is a mild elaboration of 'shepherd'.",
      "quote": "Gurabad was established after a shepherd named Ormazd gained the favor of King Deshret and the Jinni Liloupar, and used Liloupar's blessing to unite the desert peoples.",
      "sentences": [
       {
-       "t_raw": "Ormazd는 Sumeru의 Great Red Sand에 남은 역사적 인물로, Gurabad의 왕이자 Liloupar의 남편이며 Shirin의 아버지였다.",
+       "t_raw": "Ormazd는 사막에서 양을 치던 **양치기**였다.",
        "interp": false,
        "dropped": false,
-       "t": "오르마즈드는 수메르의 적색 모래바다에 남은 역사적 인물로, 구라바드의 왕이자 릴루페르의 남편이며 시린의 아버지였다."
+       "t": "오르마즈드는 사막에서 양을 치던 **양치기**였다."
       },
       {
-       "t_raw": "본래 목동이던 그는 King Deshret의 은총과 Jinni Liloupar의 도움으로 사막 민족들을 통합하고 King Deshret의 봉신 왕이 되었다.",
+       "t_raw": "King Deshret의 은총과 Liloupar의 도움을 받은 그는 사막의 민족들을 하나로 묶고 Huvashtra the Tyrant를 물리쳤으며, 그렇게 모인 세력 위에 Gurabad가 세워졌다.",
        "interp": false,
        "dropped": false,
-       "t": "본래 목동이던 그는 적왕의 은총과 지니 릴루페르의 도움으로 사막 민족들을 통합하고 적왕의 봉신 왕이 되었다."
+       "t": "적왕의 은총과 릴루페르의 도움을 받은 그는 사막의 민족들을 하나로 묶고 폭군 후바슈트라를 물리쳤으며, 그렇게 모인 세력 위에 구라바드가 세워졌다."
       },
       {
-       "t_raw": "God King Al-Ahmar를 기리기 위해 봉신 왕 Ormazd가 사원을 처음 세웠다고 전한다.",
+       "t_raw": "여러 도시 국가가 Gurabad의 손아귀에 들어온 것도 Liloupar의 축복 덕분이었다.",
        "interp": false,
        "dropped": false,
-       "repaired": true,
-       "t": "마신 왕 아흐마르를 기리기 위해 봉신 왕 오르마즈드가 사원을 처음 세웠다고 전한다."
-      },
-      {
-       "t_raw": "목동에서 봉신 왕으로 오른 배경에는 King Deshret의 후원과 Liloupar의 축복이 함께 있었던 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "목동에서 봉신 왕으로 오른 배경에는 적왕의 후원과 릴루페르의 축복이 함께 있었던 셈이다."
+       "t": "여러 도시 국가가 구라바드의 손아귀에 들어온 것도 릴루페르의 축복 덕분이었다."
       }
      ],
      "sources": [
@@ -332,24 +305,16 @@
        "kind": "wiki",
        "page": "Ormazd",
        "revision": 1052258,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Parvezravan",
-       "revision": 1065371,
-       "section": "Story",
-       "paragraph": "M3",
+       "section": "Profile",
+       "paragraph": "A2",
        "wiki_refs": [
         {
-         "type": "quest",
-         "name": "Memories of Gurabad"
+         "type": "arti",
+         "name": "The First Days of the City of Kings"
         },
         {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
+         "type": "arti",
+         "name": "Legacy of the Desert High-Born"
         }
        ]
       },
@@ -382,13 +347,6 @@
          "name": "Dune-Entombed Fecundity: Part III"
         }
        ]
-      },
-      {
-       "kind": "quest",
-       "quest": "The Temple Where Sand Flows Like Tears",
-       "quest_ko": "눈물처럼 흐르는 모래의 신전",
-       "version": "3.4",
-       "speaker": "Azariq"
       }
      ],
      "heading": "정체와 배경",
@@ -397,35 +355,104 @@
     {
      "section": "정체와 배경",
      "status": "accepted",
-     "note": "No failing sentences.",
-     "quote": "The shepherd Ormazd, with King Deshret's grace and Liloupar's aid, united the desert peoples and defeated Huvashtra the Tyrant.",
+     "note": "All sentences are supported. Sentence 2 is a reasonable interpretation.",
+     "quote": "Liloupar fell in love with him and believed he would be the one to realize Nabu Malikata's dream of a mortal society free of slavery.",
      "sentences": [
       {
-       "t_raw": "Gurabad는 King Deshret의 은총과 Liloupar의 도움으로 사막 민족들을 통합한 끝에 세워졌고, Ormazd는 그 힘으로 Huvashtra the Tyrant를 물리쳤다.",
+       "t_raw": "Liloupar는 그런 Ormazd를 사랑하게 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "구라바드는 적왕의 은총과 릴루페르의 도움으로 사막 민족들을 통합한 끝에 세워졌고, 오르마즈드는 그 힘으로 폭군 후바슈트라를 물리쳤다."
+       "t": "릴루페르는 그런 오르마즈드를 사랑하게 되었다."
       },
       {
-       "t_raw": "Liloupar는 Ormazd가 Nabu Malikata가 꿈꾸던 노예 없는 인간 사회를 실현하리라 믿고 사랑에 빠졌다.",
+       "t_raw": "그녀는 그가 Nabu Malikata가 꿈꾸던 **노예제가 없는 인간 사회**를 실현해 줄 인물이라고 믿었다.",
        "interp": false,
        "dropped": false,
-       "t": "릴루페르는 오르마즈드가 나부·말리카타가 꿈꾸던 노예 없는 인간 사회를 실현하리라 믿고 사랑에 빠졌다."
+       "t": "그녀는 그가 나부·말리카타가 꿈꾸던 **노예제가 없는 인간 사회**를 실현해 줄 인물이라고 믿었다."
       },
       {
-       "t_raw": "그러나 그는 폭군이 되어 Liloupar가 없애 주기를 바랐던 노예제를 유지했고, 그 배신감은 세대에 걸친 Gurabad 몰락의 복수로 이어졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 그는 폭군이 되어 릴루페르가 없애 주기를 바랐던 노예제를 유지했고, 그 배신감은 세대에 걸친 구라바드 몰락의 복수로 이어졌다."
-      },
-      {
-       "t_raw": "건국과 파멸이 같은 후원과 신뢰의 관계에서 갈라져 나온 점이 아이러니로 보인다.",
+       "t_raw": "그녀가 그에게 축복을 내리고 사막 통일에 힘을 보탠 데에는 이런 기대가 자리하고 있었던 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "건국과 파멸이 같은 후원과 신뢰의 관계에서 갈라져 나온 점이 아이러니로 보인다."
+       "t": "그녀가 그에게 축복을 내리고 사막 통일에 힘을 보탠 데에는 이런 기대가 자리하고 있었던 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ormazd",
+       "revision": 1052258,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "The First Days of the City of Kings"
+        },
+        {
+         "type": "arti",
+         "name": "Legacy of the Desert High-Born"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liloupar",
+       "revision": 1074663,
+       "section": "Story",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "The First Days of the City of Kings"
+        },
+        {
+         "type": "quest",
+         "name": "Dune-Entombed Fecundity: Part III"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Sentence 0 is supported by M3, M8, and Q1 (vassal king). Sentence 1 is a reasonable interpretation.",
+     "quote": "who became a tyrant after becoming the vassal king of the desert",
+     "sentences": [
+      {
+       "t_raw": "Gurabad를 세운 뒤에도 Ormazd는 King Deshret 아래의 **속국 왕**이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구라바드를 세운 뒤에도 오르마즈드는 적왕 아래의 **속국 왕**이었다."
+      },
+      {
+       "t_raw": "사막의 여러 세력을 통합한 군주이면서 동시에 King Deshret의 신하였다는 두 사실을 겹쳐 보면, Gurabad의 성장은 King Deshret의 후원과 Liloupar의 축복이 함께 만든 결과라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사막의 여러 세력을 통합한 군주이면서 동시에 적왕의 신하였다는 두 사실을 겹쳐 보면, 구라바드의 성장은 적왕의 후원과 릴루페르의 축복이 함께 만든 결과라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Parvezravan",
+       "revision": 1065371,
+       "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Memories of Gurabad"
+        },
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        }
+       ]
+      },
       {
        "kind": "wiki",
        "page": "Gurabad",
@@ -469,28 +496,94 @@
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Gurabad의 건국과 번영",
+     "section": "작중 행적 — Gurabad의 번영과 타락",
      "status": "accepted",
-     "note": "No failing sentences.",
-     "quote": "The shepherd Ormazd, with King Deshret's grace and Liloupar's aid, united the desert peoples and defeated Huvashtra the Tyrant.",
+     "note": "All supported by M4/M5.",
+     "quote": "Although Gurabad prospered, Ormazd grew corrupt with power and perpetuated the slavery which Liloupar had expected him to abolish.",
      "sentences": [
       {
-       "t_raw": "목동 Ormazd는 Jinni Liloupar의 총애를 얻어 사랑을 나누었고, King Deshret의 은혜와 Liloupar의 도움으로 사막 민족들을 통합했다.",
+       "t_raw": "여러 사막 민족을 아우르며 번영을 누리던 Gurabad에서, Ormazd는 권력이 커질수록 타락해 갔다.",
        "interp": false,
        "dropped": false,
-       "t": "목동 오르마즈드는 지니 릴루페르의 총애를 얻어 사랑을 나누었고, 적왕의 은혜와 릴루페르의 도움으로 사막 민족들을 통합했다."
+       "t": "여러 사막 민족을 아우르며 번영을 누리던 구라바드에서, 오르마즈드는 권력이 커질수록 타락해 갔다."
       },
       {
-       "t_raw": "그는 **Liloupar의 축복**을 활용해 많은 사막 도시국가를 Gurabad의 통치 아래 묶었고, **Huvashtra the Tyrant**를 물리쳤다.",
+       "t_raw": "Liloupar는 그가 **노예제**가 없는 인간 사회라는 Nabu Malikata의 꿈을 실현할 인물이라고 믿었지만, Ormazd는 그녀가 폐지되기를 기대했던 노예제를 그대로 이어 갔다.",
        "interp": false,
        "dropped": false,
-       "t": "그는 **릴루페르의 축복**을 활용해 많은 사막 도시국가를 구라바드의 통치 아래 묶었고, **폭군 후바슈트라**를 물리쳤다."
+       "t": "릴루페르는 그가 **노예제**가 없는 인간 사회라는 나부·말리카타의 꿈을 실현할 인물이라고 믿었지만, 오르마즈드는 그녀가 폐지되기를 기대했던 노예제를 그대로 이어 갔다."
       },
       {
-       "t_raw": "Gurabad는 번영했지만, Ormazd는 권력에 타락해 Liloupar가 폐지되리라 기대했던 노예제를 계속했다.",
+       "t_raw": "꿈을 맡길 만한 인물이라 여겼던 상대가 기대를 저버리고 노예제를 유지하자, 그 실망은 그녀 안에서 배신감으로 굳어졌을 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "꿈을 맡길 만한 인물이라 여겼던 상대가 기대를 저버리고 노예제를 유지하자, 그 실망은 그녀 안에서 배신감으로 굳어졌을 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Gurabad",
+       "revision": 1090252,
+       "section": "Story > History",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "Legacy of the Desert High-Born"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liloupar",
+       "revision": 1074663,
+       "section": "Story",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "arti",
+         "name": "The First Days of the City of Kings"
+        },
+        {
+         "type": "quest",
+         "name": "Dune-Entombed Fecundity: Part III"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 구라바드의 번영과 타락",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Gurabad의 번영과 타락",
+     "status": "accepted",
+     "note": "Facts are in A2/M8/M4; the interpretation follows reasonably.",
+     "quote": "He became an ordinary tyrant instead of the enlightened ruler which she hoped he would become",
+     "sentences": [
+      {
+       "t_raw": "Liloupar가 그에게 바랐던 것은 계몽된 통치자였지만, Ormazd는 결국 그 기대에 미치지 못한 **평범한 폭군**이 되었다.",
        "interp": false,
        "dropped": false,
-       "t": "구라바드는 번영했지만, 오르마즈드는 권력에 타락해 릴루페르가 폐지되리라 기대했던 노예제를 계속했다."
+       "t": "릴루페르가 그에게 바랐던 것은 계몽된 통치자였지만, 오르마즈드는 결국 그 기대에 미치지 못한 **평범한 폭군**이 되었다."
+      },
+      {
+       "t_raw": "그는 사막의 봉신왕이 된 뒤 폭군이 된 인물로 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 사막의 봉신왕이 된 뒤 폭군이 된 인물로 전해진다."
+      },
+      {
+       "t_raw": "Gurabad는 번영했지만, 그 번영의 한가운데에서 왕은 권력에 취해 갈수록 포악해졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구라바드는 번영했지만, 그 번영의 한가운데에서 왕은 권력에 취해 갈수록 포악해졌다."
+      },
+      {
+       "t_raw": "도시의 번영과 왕의 타락이 같은 시기에 진행되었다는 점에서, Gurabad의 전성기는 곧 그 몰락의 씨앗이 무르익던 시기였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도시의 번영과 왕의 타락이 같은 시기에 진행되었다는 점에서, 구라바드의 전성기는 곧 그 몰락의 씨앗이 무르익던 시기였던 셈이다."
       }
      ],
      "sources": [
@@ -540,35 +633,42 @@
          "name": "Dune-Entombed Fecundity: Part III"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liloupar",
+       "revision": 1074663,
+       "section": null,
+       "paragraph": "M8",
+       "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 구라바드의 건국과 번영",
+     "heading": "작중 행적 — 구라바드의 번영과 타락",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — Gurabad의 건국과 번영",
+     "section": "작중 행적 — Gurabad의 번영과 타락",
      "status": "accepted",
-     "note": "Sentence 2 is framed as interpretation but asserts that Liloupar's ideals and Ormazd's corruption turned Gurabad's prosperity into a stage for revenge. This is a stretch, since the English only says his corruption led to her revenge plot. Sentences 0 and 1 are supported.",
-     "quote": "Liloupar fell in love with him and believed he would be the one to realize Nabu Malikata's dream of a mortal society free of slavery.",
+     "note": "Supported by M4/M5/M8; the interpretation is reasonable.",
+     "quote": "Her sense of betrayal led her to plot Gurabad's downfall over the course of three generations, using her own children to perpetuate the city's destruction.",
      "sentences": [
       {
-       "t_raw": "Liloupar는 Ormazd가 Nabu Malikata의 꿈인 노예제 없는 필멸자 사회를 실현하리라 믿었다.",
+       "t_raw": "이런 배신에 대한 복수로 Liloupar는 Gurabad의 몰락을 꾀했다.",
        "interp": false,
        "dropped": false,
-       "t": "릴루페르는 오르마즈드가 나부·말리카타의 꿈인 노예제 없는 필멸자 사회를 실현하리라 믿었다."
+       "t": "이런 배신에 대한 복수로 릴루페르는 구라바드의 몰락을 꾀했다."
       },
       {
-       "t_raw": "그러나 Ormazd는 권력에 타락한 폭군이 되었고, Liloupar는 그를 배신자로 여기며 **세 세대에 걸쳐 Gurabad의 몰락을 꾀했다**.",
+       "t_raw": "그 복수는 한 번의 사건이 아니라 **세대에 걸친 계획**이었고, 그녀는 자기 자식들의 운명을 비틀어 도시의 파멸을 완성하려 했다.",
        "interp": false,
        "dropped": false,
-       "t": "그러나 오르마즈드는 권력에 타락한 폭군이 되었고, 릴루페르는 그를 배신자로 여기며 **세 세대에 걸쳐 구라바드의 몰락을 꾀했다**."
+       "t": "그 복수는 한 번의 사건이 아니라 **세대에 걸친 계획**이었고, 그녀는 자기 자식들의 운명을 비틀어 도시의 파멸을 완성하려 했다."
       },
       {
-       "t_raw": "Ormazd의 타락은 Liloupar의 복수 계획으로 이어져, 번영하던 Gurabad가 삼대에 걸친 파멸의 무대가 된 것으로 보인다.",
+       "t_raw": "남편을 향한 원한이 도시 전체와 자기 자녀들의 삶까지 끌어들인 장기적인 설계였다는 점에서, Ormazd의 타락은 자신뿐 아니라 Gurabad의 앞날까지 삼킨 셈이다.",
        "interp": true,
        "dropped": false,
-       "repaired": true,
-       "t": "오르마즈드의 타락은 릴루페르의 복수 계획으로 이어져, 번영하던 구라바드가 삼대에 걸친 파멸의 무대가 된 것으로 보인다."
+       "t": "남편을 향한 원한이 도시 전체와 자기 자녀들의 삶까지 끌어들인 장기적인 설계였다는 점에서, 오르마즈드의 타락은 자신뿐 아니라 구라바드의 앞날까지 삼킨 셈이다."
       }
      ],
      "sources": [
@@ -601,37 +701,49 @@
          "name": "Dune-Entombed Fecundity: Part III"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liloupar",
+       "revision": 1074663,
+       "section": null,
+       "paragraph": "M8",
+       "wiki_refs": []
       }
      ],
-     "heading": "작중 행적 — 구라바드의 건국과 번영",
+     "heading": "작중 행적 — 구라바드의 번영과 타락",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 경고와 독살",
+     "section": "작중 행적 — 예언과 멸망",
      "status": "accepted",
-     "note": "Sentence 0: the English gives prophecies (hero, sweet end, only Shirin gets Gurabad) as three prophecies, but the Korean makes the second 'relatives meet sweet end' and the third 'Shirin takes Gurabad'. The Korean omits the details but is fine there. The problem is that the second prophecy is stated as 'relatives' sweet end' and the Korean says 'Shirin가 Gurabad를 차지', which is fine. Sentence 1: the warnings were Liloupar's admonitions, and the third is 'Shirin's child an ill omen', which is fine. Sentence 2: it says Ormazd ignored the warning about retribution, which is fine, but 'ordinary tyrant' is supported. Overall check is uncertain and flagged conservatively.",
-     "quote": "Before she delivered her into Ormazd's hands, she prophesied three times",
+     "note": "Only the warning about 'sharp retribution' is said to be ignored (A2). The English says Ormazd followed the admonitions about Shirin: he forbade her from banquets (A4) and shunned her (M2). Saying he ignored 'those warnings' contradicts this.",
+     "quote": "First, she would fall in love with a hero and their child would surpass their father",
      "sentences": [
       {
-       "t_raw": "Liloupar는 Shirin을 Ormazd에게 넘기기 전, Shirin이 영웅과 사랑에 빠져 아버지를 뛰어넘는 아이를 낳고, 친척들이 '달콤한 결말'을 맞으며, 오직 Shirin만이 Gurabad를 차지하리라고 세 번 예언했다.",
+       "t_raw": "Shirin이 태어나자 Liloupar는 딸을 Ormazd의 손에 넘기기 전에 **세 번의 예언**을 남겼다.",
        "interp": false,
        "dropped": false,
-       "repaired": true,
-       "t": "릴루페르는 시린을 오르마즈드에게 넘기기 전, 시린이 영웅과 사랑에 빠져 아버지를 뛰어넘는 아이를 낳고, 친척들이 '달콤한 결말'을 맞으며, 오직 시린만이 구라바드를 차지하리라고 세 번 예언했다."
+       "t": "시린이 태어나자 릴루페르는 딸을 오르마즈드의 손에 넘기기 전에 **세 번의 예언**을 남겼다."
       },
       {
-       "t_raw": "Liloupar는 Ormazd에게 Shirin의 기쁨이 아버지의 눈물이 되고, 혼인 뒤에는 딸과 같은 식탁에서 더는 잔치하지 말며, Shirin의 아이가 왕의 땅에 흉조가 될 것이라고 경고했다.",
+       "t_raw": "Shirin은 위대한 영웅과 사랑에 빠져 아버지를 뛰어넘는 아이를 낳으리라는 것, Shirin의 친족들이 \"달콤한 최후\"를 맞으리라는 것, Gurabad는 Shirin 혼자에게 주어지리라는 것이었다.",
        "interp": false,
        "dropped": false,
-       "repaired": true,
-       "t": "릴루페르는 오르마즈드에게 시린의 기쁨이 아버지의 눈물이 되고, 혼인 뒤에는 딸과 같은 식탁에서 더는 잔치하지 말며, 시린의 아이가 왕의 땅에 흉조가 될 것이라고 경고했다."
+       "t": "시린은 위대한 영웅과 사랑에 빠져 아버지를 뛰어넘는 아이를 낳으리라는 것, 시린의 친족들이 \"달콤한 최후\"를 맞으리라는 것, 구라바드는 시린 혼자에게 주어지리라는 것이었다."
       },
       {
-       "t_raw": "Liloupar는 축복이 '날카로운 응보'로 갚아질 것이라 경고했지만 Ormazd는 무시했고, 그가 평범한 폭군이 되자 Liloupar는 삼대에 걸친 파멸을 도모했다.",
+       "t_raw": "여기에 Shirin의 기쁨이 아버지의 눈에 눈물을 부를 것, 딸이 시집간 뒤에는 같은 식탁에서 연회를 함께하지 말 것, Shirin의 아이가 왕의 땅에 흉조가 될 것이라는 경고가 따랐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여기에 시린의 기쁨이 아버지의 눈에 눈물을 부를 것, 딸이 시집간 뒤에는 같은 식탁에서 연회를 함께하지 말 것, 시린의 아이가 왕의 땅에 흉조가 될 것이라는 경고가 따랐다."
+      },
+      {
+       "t_raw": "Ormazd는 Liloupar의 축복이 ‘날카로운 응징’으로 갚아질 것이라는 경고는 흘려들었다.",
        "interp": false,
        "dropped": false,
        "repaired": true,
-       "t": "릴루페르는 축복이 '날카로운 응보'로 갚아질 것이라 경고했지만 오르마즈드는 무시했고, 그가 평범한 폭군이 되자 릴루페르는 삼대에 걸친 파멸을 도모했다."
+       "t": "오르마즈드는 릴루페르의 축복이 '날카로운 응징'으로 갚아질 것이라는 경고는 흘려들었다."
       }
      ],
      "sources": [
@@ -664,34 +776,53 @@
          "name": "The Tale of Shiruyeh and Shirin"
         }
        ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liloupar",
+       "revision": 1074663,
+       "section": "Story",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        }
+       ]
       }
      ],
-     "heading": "작중 행적 — 경고와 독살",
+     "heading": "작중 행적 — 예언과 멸망",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 경고와 독살",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Kisra was Liloupar's son whom she had as part of her vengeance against her lover, Ormazd.",
+     "section": "작중 행적 — 예언과 멸망",
+     "status": "accepted",
+     "note": "All supported by A4, M1, M2 and M11.",
+     "quote": "He also gave Kisra his daughter Shirin's hand in marriage, unaware that their fates were part of Liloupar's plan to take revenge on him.",
      "sentences": [
       {
-       "t_raw": "Liloupar가 복수의 일부로 둔 아들 Kisra는 Ormazd에게 입양되어 Parvez라는 이름을 받고 Shirin과 혼인했다.",
+       "t_raw": "Kisra는 Liloupar가 고아로 남긴 아들이었고, Ormazd가 그를 거두어들였다.",
        "interp": false,
        "dropped": false,
-       "t": "릴루페르가 복수의 일부로 둔 아들 키스라는 오르마즈드에게 입양되어 파비즈라는 이름을 받고 시린과 혼인했다."
+       "t": "키스라는 릴루페르가 고아로 남긴 아들이었고, 오르마즈드가 그를 거두어들였다."
       },
       {
-       "t_raw": "Ormazd는 이 혼인이 Liloupar의 계획 일부임을 알지 못했고, Kisra는 예언을 알게 된 뒤 Shirin을 왕좌의 수단으로 여겼다.",
+       "t_raw": "Kisra가 세운 무훈을 치하하며 Ormazd는 그에게 \"Parvez\"라는 이름을 내렸고, 딸 Shirin을 그의 아내로 주었다.",
        "interp": false,
        "dropped": false,
-       "t": "오르마즈드는 이 혼인이 릴루페르의 계획 일부임을 알지 못했고, 키스라는 예언을 알게 된 뒤 시린을 왕좌의 수단으로 여겼다."
+       "t": "키스라가 세운 무훈을 치하하며 오르마즈드는 그에게 \"파비즈\"라는 이름을 내렸고, 딸 시린을 그의 아내로 주었다."
       },
       {
-       "t_raw": "예언 속 '위대한 영웅'은 Shirin의 형제인 Kisra였으며, 혼인은 **사랑 없는 혼인**이 되었다.",
+       "t_raw": "예언이 가리킨 Shirin의 \"위대한 영웅\"이 바로 Kisra였지만, Kisra는 Shirin을 왕좌를 얻는 수단으로 여겼고 두 사람의 결혼은 사랑 없는 것이었다.",
        "interp": false,
        "dropped": false,
-       "t": "예언 속 '위대한 영웅'은 시린의 형제인 키스라였으며, 혼인은 **사랑 없는 혼인**이 되었다."
+       "t": "예언이 가리킨 시린의 \"위대한 영웅\"이 바로 키스라였지만, 키스라는 시린을 왕좌를 얻는 수단으로 여겼고 두 사람의 결혼은 사랑 없는 것이었다."
+      },
+      {
+       "t_raw": "Ormazd는 이 결혼이 자신을 향한 Liloupar의 계획의 일부라는 것을 알지 못했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오르마즈드는 이 결혼이 자신을 향한 릴루페르의 계획의 일부라는 것을 알지 못했다."
       }
      ],
      "sources": [
@@ -701,6 +832,317 @@
        "revision": 1052258,
        "section": "Profile",
        "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Gurabad",
+       "revision": 1090252,
+       "section": "Story > History",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        },
+        {
+         "type": "quest",
+         "name": "Dune-Entombed Fecundity: Part III"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liloupar",
+       "revision": 1074663,
+       "section": "Story",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Parvezravan",
+       "revision": 1065371,
+       "section": "Story",
+       "paragraph": "M11",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        },
+        {
+         "type": "quest",
+         "name": "Memories of Gurabad"
+        },
+        {
+         "type": "quest",
+         "name": "Dune-Entombed Fecundity: Part III"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 예언과 멸망",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 예언과 멸망",
+     "status": "accepted",
+     "note": "Supported by A4. The split between Liloupar using Shirin and Shirin plotting herself is shown by M1/M11 versus A4/M2.",
+     "quote": "she took advantage of this fact to have slaves serve him and all her siblings poisoned honey, killing them all at a grand banquet",
+     "sentences": [
+      {
+       "t_raw": "경고에 따라 Ormazd는 Shirin이 연회에 참석하는 것을 금했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경고에 따라 오르마즈드는 시린이 연회에 참석하는 것을 금했다."
+      },
+      {
+       "t_raw": "Shirin은 그 금지를 역이용해 노예들에게 **독이 든 꿀**을 내오게 했고, 성대한 연회에서 Ormazd와 Shirin의 다른 형제자매들이 모두 그것을 먹고 죽었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시린은 그 금지를 역이용해 노예들에게 **독이 든 꿀**을 내오게 했고, 성대한 연회에서 오르마즈드와 시린의 다른 형제자매들이 모두 그것을 먹고 죽었다."
+      },
+      {
+       "t_raw": "Liloupar가 Shirin을 계획의 도구로 썼다는 기록과, Shirin 스스로가 복수를 꾀했다는 기록이 나뉜다.",
+       "interp": false,
+       "dropped": false,
+       "t": "릴루페르가 시린을 계획의 도구로 썼다는 기록과, 시린 스스로가 복수를 꾀했다는 기록이 나뉜다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ormazd",
+       "revision": 1052258,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Gurabad",
+       "revision": 1090252,
+       "section": "Story > History",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        },
+        {
+         "type": "quest",
+         "name": "Dune-Entombed Fecundity: Part III"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Liloupar",
+       "revision": 1074663,
+       "section": "Story",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Parvezravan",
+       "revision": 1065371,
+       "section": "Story",
+       "paragraph": "M11",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        },
+        {
+         "type": "quest",
+         "name": "Memories of Gurabad"
+        },
+        {
+         "type": "quest",
+         "name": "Dune-Entombed Fecundity: Part III"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 예언과 멸망",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 예언과 멸망",
+     "status": "accepted",
+     "note": "All sentences match M1, M9 and A4; the interpretation is reasonable.",
+     "quote": "Parvezravan himself was later killed by his son, Shiruyeh, and Liloupar's usage of Abyssal power caused most of the city to fall into a deep chasm",
+     "sentences": [
+      {
+       "t_raw": "Shirin은 자신이 한 일의 결과를 보고 정신이 이상해졌고, Kisra는 그 틈을 타 \"Kisra Parvezravan\"이라 칭하며 Gurabad의 왕이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시린은 자신이 한 일의 결과를 보고 정신이 이상해졌고, 키스라는 그 틈을 타 \"키스라·파르브즈라반\"이라 칭하며 구라바드의 왕이 되었다."
+      },
+      {
+       "t_raw": "Parvezravan은 훗날 아들 Shiruyeh에게 살해되었고, Liloupar가 Abyssal power를 사용하면서 도시의 대부분이 깊은 협곡으로 꺼져 내려갔으며 역병이 도시 인구 대다수를 앗아갔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파르브즈라반은 훗날 아들 시루이에게 살해되었고, 릴루페르가 심연의 힘을 사용하면서 도시의 대부분이 깊은 협곡으로 꺼져 내려갔으며 역병이 도시 인구 대다수를 앗아갔다.",
+       "polish": {
+        "from": "파르브즈라반은 훗날 아들 시루이에게 살해되었고, 릴루페르가 Abyssal power를 사용하면서 도시의 대부분이 깊은 협곡으로 꺼져 내려갔으며 역병이 도시 인구 대다수를 앗아갔다.",
+        "text": "파르브즈라반은 훗날 아들 시루이에게 살해되었고, 릴루페르가 심연의 힘을 사용하면서 도시의 대부분이 깊은 협곡으로 꺼져 내려갔으며 역병이 도시 인구 대다수를 앗아갔다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그 뒤 도시는 버려졌고, 옛 영광을 되살리려는 몇 차례의 시도도 실패로 끝났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 뒤 도시는 버려졌고, 옛 영광을 되살리려는 몇 차례의 시도도 실패로 끝났다."
+      },
+      {
+       "t_raw": "Ormazd의 피살은 Gurabad가 몰락해 가는 긴 흐름의 출발점이 된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오르마즈드의 피살은 구라바드가 몰락해 가는 긴 흐름의 출발점이 된 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ormazd",
+       "revision": 1052258,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Gurabad",
+       "revision": 1090252,
+       "section": "Story > History",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        },
+        {
+         "type": "quest",
+         "name": "Dune-Entombed Fecundity: Part III"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Gurabad",
+       "revision": 1090252,
+       "section": null,
+       "paragraph": "M9",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        },
+        {
+         "type": "quest",
+         "name": "Memories of Gurabad"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Parvezravan",
+       "revision": 1065371,
+       "section": "Story",
+       "paragraph": "M11",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        },
+        {
+         "type": "quest",
+         "name": "Memories of Gurabad"
+        },
+        {
+         "type": "quest",
+         "name": "Dune-Entombed Fecundity: Part III"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 예언과 멸망",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported by A1, A3, M2, M3 and M8; the interpretation follows from them.",
+     "quote": "Before she delivered her into Ormazd's hands, she prophesied three times",
+     "sentences": [
+      {
+       "t_raw": "Ormazd의 아내는 Jinni Liloupar이고, 두 사람 사이에서 태어난 딸이 Shirin이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오르마즈드의 아내는 지니 릴루페르이고, 두 사람 사이에서 태어난 딸이 시린이다."
+      },
+      {
+       "t_raw": "Liloupar는 Shirin을 Ormazd의 손에 넘기기 전에 세 가지 예언을 했고, 그 예언에 따르는 경고를 Ormazd에게 남겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "릴루페르는 시린을 오르마즈드의 손에 넘기기 전에 세 가지 예언을 했고, 그 예언에 따르는 경고를 오르마즈드에게 남겼다."
+      },
+      {
+       "t_raw": "그 경고 때문에 Ormazd는 훗날 딸을 멀리하게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 경고 때문에 오르마즈드는 훗날 딸을 멀리하게 된다."
+      },
+      {
+       "t_raw": "Kisra가 Liloupar가 Ormazd에 대한 복수의 일환으로 낳은 아들이라는 점까지 겹쳐 보면, Ormazd의 가정은 복수를 위해 짜인 무대였던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "키스라가 릴루페르가 오르마즈드에 대한 복수의 일환으로 낳은 아들이라는 점까지 겹쳐 보면, 오르마즈드의 가정은 복수를 위해 짜인 무대였던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ormazd",
+       "revision": 1052258,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ormazd",
+       "revision": 1052258,
+       "section": "Profile",
+       "paragraph": "A3",
        "wiki_refs": [
         {
          "type": "book",
@@ -737,83 +1179,37 @@
          "name": "The Tale of Shiruyeh and Shirin"
         }
        ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Parvezravan",
-       "revision": 1065371,
-       "section": "Story",
-       "paragraph": "M11",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        },
-        {
-         "type": "quest",
-         "name": "Memories of Gurabad"
-        },
-        {
-         "type": "quest",
-         "name": "Dune-Entombed Fecundity: Part III"
-        }
-       ]
       }
      ],
-     "heading": "작중 행적 — 경고와 독살",
+     "heading": "인간관계",
      "latin_left": []
     },
     {
-     "section": "작중 행적 — 경고와 독살",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Using an unwitting Shirin as her pawn, Liloupar had her daughter deliver poisoned honey to one of Ormazd's banquets",
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by A4, M3 and M11.",
+     "quote": "He also gave Kisra his daughter Shirin's hand in marriage, unaware that their fates were part of Liloupar's plan to take revenge on him.",
      "sentences": [
       {
-       "t_raw": "혼인 뒤 같은 식탁에서 잔치하지 말라는 경고에 따라 Ormazd는 Shirin의 연회 참석을 금했다.",
+       "t_raw": "Ormazd는 고아 Kisra를 거두어 그의 무공에 대한 상으로 **Parvez**라는 이름을 내렸고, 딸 Shirin의 손을 그에게 주었다.",
        "interp": false,
        "dropped": false,
-       "t": "혼인 뒤 같은 식탁에서 잔치하지 말라는 경고에 따라 오르마즈드는 시린의 연회 참석을 금했다."
+       "t": "오르마즈드는 고아 키스라를 거두어 그의 무공에 대한 상으로 **파비즈**라는 이름을 내렸고, 딸 시린의 손을 그에게 주었다."
       },
       {
-       "t_raw": "이 조치는 오히려 Shirin을 연회에서 배제해 **독이 든 꿀**이 왕실에 들어가는 길이 된 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 조치는 오히려 시린을 연회에서 배제해 **독이 든 꿀**이 왕실에 들어가는 길이 된 셈이다."
-      },
-      {
-       "t_raw": "Shirin은 이 점을 이용해 노예들에게 독이 든 꿀을 바치게 했고, 연회에서 Ormazd와 다른 형제자매들이 모두 죽었다.",
+       "t_raw": "그러나 Kisra는 Liloupar가 Ghognus에게 맡겨 기른 아들이었고, Ormazd는 그 혼인이 Liloupar의 복수 계획의 일부라는 것을 알지 못했다.",
        "interp": false,
        "dropped": false,
-       "t": "시린은 이 점을 이용해 노예들에게 독이 든 꿀을 바치게 했고, 연회에서 오르마즈드와 다른 형제자매들이 모두 죽었다."
+       "t": "그러나 키스라는 릴루페르가 고흐누스에게 맡겨 기른 아들이었고, 오르마즈드는 그 혼인이 릴루페르의 복수 계획의 일부라는 것을 알지 못했다."
       },
       {
-       "t_raw": "Liloupar가 Shirin을 도구로 삼아 독이 든 꿀을 보냈다고도 한다.",
+       "t_raw": "Kisra는 Liloupar의 예언을 알게 된 뒤에도 Shirin을 왕좌를 얻는 수단으로만 여겼다.",
        "interp": false,
        "dropped": false,
-       "t": "릴루페르가 시린을 도구로 삼아 독이 든 꿀을 보냈다고도 한다."
-      },
-      {
-       "t_raw": "Shirin은 정신이 이상해졌고, Kisra는 그 틈을 타 Gurabad의 왕이 되어 Kisra Parvezravan을 자칭했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "시린은 정신이 이상해졌고, 키스라는 그 틈을 타 구라바드의 왕이 되어 키스라·파르브즈라반을 자칭했다."
+       "t": "키스라는 릴루페르의 예언을 알게 된 뒤에도 시린을 왕좌를 얻는 수단으로만 여겼다."
       }
      ],
      "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ormazd",
-       "revision": 1052258,
-       "section": "Profile",
-       "paragraph": "A3",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      },
       {
        "kind": "wiki",
        "page": "Ormazd",
@@ -849,6 +1245,40 @@
        "page": "Parvezravan",
        "revision": 1065371,
        "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Memories of Gurabad"
+        },
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Parvezravan",
+       "revision": 1065371,
+       "section": null,
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        },
+        {
+         "type": "item",
+         "name": "Transparent Ruins Record (I)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Parvezravan",
+       "revision": 1065371,
+       "section": "Story",
        "paragraph": "M11",
        "wiki_refs": [
         {
@@ -866,35 +1296,54 @@
        ]
       }
      ],
-     "heading": "작중 행적 — 경고와 독살",
+     "heading": "인간관계",
      "latin_left": []
     },
     {
-     "section": "사후와 전승",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Parvezravan himself was later killed by his son, Shiruyeh",
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by A4, M1 and M2; the interpretation follows from them.",
+     "quote": "she took advantage of this fact to have slaves serve him and all her siblings poisoned honey, killing them all at a grand banquet.",
      "sentences": [
       {
-       "t_raw": "Ormazd가 연회에서 독이 든 꿀에 의해 죽은 뒤 Kisra가 왕위를 이어 **Kisra Parvezravan**을 칭했다.",
+       "t_raw": "Shirin은 남편에게 사랑받지 못한 데다 아버지의 경고 때문에 연회에서조차 배제되었고, 그 삶에 원한을 품고 복수를 꾸몄다.",
        "interp": false,
        "dropped": false,
-       "t": "오르마즈드가 연회에서 독이 든 꿀에 의해 죽은 뒤 키스라가 왕위를 이어 **키스라·파르브즈라반**을 칭했다."
+       "t": "시린은 남편에게 사랑받지 못한 데다 아버지의 경고 때문에 연회에서조차 배제되었고, 그 삶에 원한을 품고 복수를 꾸몄다."
       },
       {
-       "t_raw": "Parvezravan은 Gurabad의 마지막에서 두 번째 왕이자 Spirit of Victory라는 별칭을 얻은 인물로 기록됐다.",
+       "t_raw": "그녀는 자신이 연회에 나가지 못하는 처지를 이용해 노예들에게 **독이 든 꿀**을 내오게 했고, 그것이 Ormazd와 형제들의 죽음으로 이어졌다.",
        "interp": false,
        "dropped": false,
-       "t": "파르브즈라반은 구라바드의 마지막에서 두 번째 왕이자 Spirit of Victory라는 별칭을 얻은 인물로 기록됐다."
+       "t": "그녀는 자신이 연회에 나가지 못하는 처지를 이용해 노예들에게 **독이 든 꿀**을 내오게 했고, 그것이 오르마즈드와 형제들의 죽음으로 이어졌다."
       },
       {
-       "t_raw": "그 뒤 그는 아들 Shiruyeh에게 살해됐고, Shirin이 Shiruyeh를 부추겨 아버지를 죽게 했다.",
+       "t_raw": "자신이 한 일의 결과를 본 Shirin은 정신이 이상해졌다.",
        "interp": false,
        "dropped": false,
-       "t": "그 뒤 그는 아들 시루이에게 살해됐고, 시린이 시루이를 부추겨 아버지를 죽게 했다."
+       "t": "자신이 한 일의 결과를 본 시린은 정신이 이상해졌다."
+      },
+      {
+       "t_raw": "아버지가 딸을 멀리하게 만든 그 경고가, 딸이 아버지를 죽일 수 있는 빈틈이 된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아버지가 딸을 멀리하게 만든 그 경고가, 딸이 아버지를 죽일 수 있는 빈틈이 된 셈이다."
       }
      ],
      "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ormazd",
+       "revision": 1052258,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "book",
+         "name": "The Tale of Shiruyeh and Shirin"
+        }
+       ]
+      },
       {
        "kind": "wiki",
        "page": "Gurabad",
@@ -929,40 +1378,6 @@
        "kind": "wiki",
        "page": "Parvezravan",
        "revision": 1065371,
-       "section": null,
-       "paragraph": "M6",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        },
-        {
-         "type": "item",
-         "name": "Transparent Ruins Record (I)"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Gurabad",
-       "revision": 1090252,
-       "section": null,
-       "paragraph": "M9",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        },
-        {
-         "type": "quest",
-         "name": "Memories of Gurabad"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Parvezravan",
-       "revision": 1065371,
        "section": "Story",
        "paragraph": "M11",
        "wiki_refs": [
@@ -981,66 +1396,84 @@
        ]
       }
      ],
-     "heading": "사후와 전승",
-     "latin_left": [
-      "Spirit of Victory"
-     ]
+     "heading": "인간관계",
+     "latin_left": []
     },
     {
-     "section": "사후와 전승",
-     "status": "needs_verify",
-     "note": null,
-     "quote": "Few people know the truth behind Gurabad's destruction, and many different interpretations of Gurabad's history exist.",
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by M2; the interpretation is reasonable.",
+     "quote": "Parvezravan feared his son due to Liloupar's prophecy and exiled Shiruyeh after he reached adulthood, which forced Shiruyeh to don a brass mask to disguise himself.",
      "sentences": [
       {
-       "t_raw": "Parvezravan이 죽은 뒤 Liloupar의 Abyssal power로 도시 대부분이 깊은 협곡에 함몰했고, 역병이 인구 대부분을 앗아갔다.",
+       "t_raw": "Shirin은 훗날 아들 Shiruyeh를 낳아 지극히 아꼈지만, Parvezravan은 예언 때문에 그를 두려워했다.",
        "interp": false,
        "dropped": false,
-       "t": "파르브즈라반이 죽은 뒤 릴루페르의 Abyssal power로 도시 대부분이 깊은 협곡에 함몰했고, 역병이 인구 대부분을 앗아갔다."
+       "t": "시린은 훗날 아들 시루이를 낳아 지극히 아꼈지만, 파르브즈라반은 예언 때문에 그를 두려워했다."
       },
       {
-       "t_raw": "도시는 버려졌고, 옛 영광을 되살리려는 시도는 실패했다.",
+       "t_raw": "성인이 된 Shiruyeh는 아버지에 의해 유배되었고, 놋쇠 가면으로 얼굴을 가려야 했다.",
        "interp": false,
        "dropped": false,
-       "t": "도시는 버려졌고, 옛 영광을 되살리려는 시도는 실패했다."
+       "t": "성인이 된 시루이는 아버지에 의해 유배되었고, 놋쇠 가면으로 얼굴을 가려야 했다."
       },
       {
-       "t_raw": "Gurabad 파멸의 진실을 아는 이는 적어 역사 해석이 갈렸다.",
+       "t_raw": "결국 Shirin이 아들을 부추겨 Parvezravan을 살해하게 하면서 Gurabad의 지배권은 Shiruyeh에게 넘어갔다.",
        "interp": false,
        "dropped": false,
-       "t": "구라바드 파멸의 진실을 아는 이는 적어 역사 해석이 갈렸다."
+       "t": "결국 시린이 아들을 부추겨 파르브즈라반을 살해하게 하면서 구라바드의 지배권은 시루이에게 넘어갔다."
       },
       {
-       "t_raw": "Eremite 역사에서 Parvezravan은 위대한 영웅이자 폭군으로, Shirin은 Ormazd와 Parvezravan의 죽음을 꾀한 책략가로, Shiruyeh는 **Gurabad의 몰락**과 Shiruyeh's Plague를 불러온 겁쟁이로 기록됐다.",
-       "interp": false,
-       "dropped": false,
-       "t": "도금 여단 역사에서 파르브즈라반은 위대한 영웅이자 폭군으로, 시린은 오르마즈드와 파르브즈라반의 죽음을 꾀한 책략가로, 시루이는 **구라바드의 몰락**과 시루이의 Plague를 불러온 겁쟁이로 기록됐다."
-      },
-      {
-       "t_raw": "이런 상반된 평가는 진실이 가려진 채 여러 기억으로 남은 셈이다.",
+       "t_raw": "예언에 대한 두려움이 아버지와 아들의 사이를 갈라놓은 셈이다.",
        "interp": true,
        "dropped": false,
-       "t": "이런 상반된 평가는 진실이 가려진 채 여러 기억으로 남은 셈이다."
+       "t": "예언에 대한 두려움이 아버지와 아들의 사이를 갈라놓은 셈이다."
       }
      ],
      "sources": [
       {
        "kind": "wiki",
-       "page": "Gurabad",
-       "revision": 1090252,
-       "section": null,
-       "paragraph": "M9",
+       "page": "Liloupar",
+       "revision": 1074663,
+       "section": "Story",
+       "paragraph": "M2",
        "wiki_refs": [
         {
          "type": "book",
          "name": "The Tale of Shiruyeh and Shirin"
-        },
-        {
-         "type": "quest",
-         "name": "Memories of Gurabad"
         }
        ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches M7; the interpretation is hedged and reasonable.",
+     "quote": "Few people know the truth behind Gurabad's destruction, and many different interpretations of Gurabad's history exist.",
+     "sentences": [
+      {
+       "t_raw": "Gurabad 멸망의 진실을 아는 이는 적어 그 역사에는 **여러 해석**이 존재한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구라바드 멸망의 진실을 아는 이는 적어 그 역사에는 **여러 해석**이 존재한다."
       },
+      {
+       "t_raw": "Parvezravan은 Eremite 역사에서 위대한 영웅과 폭군 모두로, Shirin은 권태롭고 사랑 없는 삶에 대한 복수로 Ormazd와 Parvezravan의 죽음을 꾀한 음모가로, Shiruyeh는 Gurabad의 몰락과 Shiruyeh's Plague를 불러온 겁쟁이로 알려져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파르브즈라반은 도금 여단 역사에서 위대한 영웅과 폭군 모두로, 시린은 권태롭고 사랑 없는 삶에 대한 복수로 오르마즈드와 파르브즈라반의 죽음을 꾀한 음모가로, 시루이는 구라바드의 몰락과 시루이의 Plague를 불러온 겁쟁이로 알려져 있다."
+      },
+      {
+       "t_raw": "같은 인물이 영웅과 폭군으로 함께 남은 것은 멸망의 진실이 널리 알려지지 않은 채 기록이 갈라진 결과로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 인물이 영웅과 폭군으로 함께 남은 것은 멸망의 진실이 널리 알려지지 않은 채 기록이 갈라진 결과로 보인다."
+      }
+     ],
+     "sources": [
       {
        "kind": "wiki",
        "page": "Parvezravan",
@@ -1055,29 +1488,40 @@
        ]
       }
      ],
-     "heading": "사후와 전승",
+     "heading": "떡밥과 수수께끼",
      "latin_left": [
-      "Abyssal",
       "Plague"
      ]
     },
     {
-     "section": "사후와 전승",
+     "section": "떡밥과 수수께끼",
      "status": "accepted",
-     "note": "Both sentences match M10.",
+     "note": "All sentences are supported by M10; the interpretation in (3) follows reasonably.",
      "quote": "Liloupar, seeing some of Ormazd's original promising traits in the Traveler, takes them as her new master.",
      "sentences": [
       {
-       "t_raw": "훗날 Traveler와 Jeht가 Liloupar의 영혼 조각이 든 마법 병을 발견했고, Liloupar는 Traveler에게서 Ormazd의 초기 가능성을 보고 새 주인으로 삼았다.",
+       "t_raw": "The Dirge of Bilqis에서 Traveler와 Jeht는 Liloupar의 영혼 조각이 든 마법 병을 발견한다.",
        "interp": false,
        "dropped": false,
-       "t": "훗날 여행자와 제트가 릴루페르의 영혼 조각이 든 마법 병을 발견했고, 릴루페르는 여행자에게서 오르마즈드의 초기 가능성을 보고 새 주인으로 삼았다."
+       "t": "빌키스의 애가에서 여행자와 제트는 릴루페르의 영혼 조각이 든 마법 병을 발견한다."
       },
       {
-       "t_raw": "마지막 영혼 조각을 얻은 Liloupar는 Gurabad의 자식들과 재회하러 떠났고, 병은 Traveler에게 남아 같은 효능을 준다.",
+       "t_raw": "Liloupar는 Traveler에게서 Ormazd의 원래 유망한 자질 일부를 보고 Traveler를 **새 주인**으로 삼는다.",
        "interp": false,
        "dropped": false,
-       "t": "마지막 영혼 조각을 얻은 릴루페르는 구라바드의 자식들과 재회하러 떠났고, 병은 여행자에게 남아 같은 효능을 준다."
+       "t": "릴루페르는 여행자에게서 오르마즈드의 원래 유망한 자질 일부를 보고 여행자를 **새 주인**으로 삼는다."
+      },
+      {
+       "t_raw": "마지막 영혼 조각을 얻은 뒤 그녀는 Gurabad의 자식들을 만나러 떠나고, 병은 Traveler에게 남아 Liloupar가 깃들었을 때와 같은 이점을 계속 제공한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마지막 영혼 조각을 얻은 뒤 그녀는 구라바드의 자식들을 만나러 떠나고, 병은 여행자에게 남아 릴루페르가 깃들었을 때와 같은 이점을 계속 제공한다."
+      },
+      {
+       "t_raw": "Ormazd의 가능성은 Liloupar가 새 주인을 고르는 기준으로 남은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오르마즈드의 가능성은 릴루페르가 새 주인을 고르는 기준으로 남은 셈이다."
       }
      ],
      "sources": [
@@ -1099,608 +1543,69 @@
        ]
       }
      ],
-     "heading": "사후와 전승",
-     "latin_left": []
-    },
-    {
-     "section": "능력",
-     "status": "accepted",
-     "note": "Supported by A2, M4 and M5. The interpretation is hedged and reasonable.",
-     "quote": "The shepherd Ormazd, with King Deshret's grace and Liloupar's aid, united the desert peoples and defeated Huvashtra the Tyrant.",
-     "sentences": [
-      {
-       "t_raw": "Ormazd는 King Deshret의 은혜와 Liloupar의 도움으로 사막 민족들을 통합하고 Huvashtra the Tyrant를 격파했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오르마즈드는 적왕의 은혜와 릴루페르의 도움으로 사막 민족들을 통합하고 폭군 후바슈트라를 격파했다."
-      },
-      {
-       "t_raw": "Gurabad는 그런 후원과 Liloupar의 축복을 이용한 사막 민족 통합 위에 세워졌고, 여러 사막 도시국가도 Liloupar의 조력으로 Gurabad의 지배 아래 묶였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "구라바드는 그런 후원과 릴루페르의 축복을 이용한 사막 민족 통합 위에 세워졌고, 여러 사막 도시국가도 릴루페르의 조력으로 구라바드의 지배 아래 묶였다."
-      },
-      {
-       "t_raw": "**외부 후원과 Jinni의 축복을 통치 기반으로 삼은 셈**으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "**외부 후원과 지니의 축복을 통치 기반으로 삼은 셈**으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ormazd",
-       "revision": 1052258,
-       "section": "Profile",
-       "paragraph": "A2",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "The First Days of the City of Kings"
-        },
-        {
-         "type": "arti",
-         "name": "Legacy of the Desert High-Born"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Gurabad",
-       "revision": 1090252,
-       "section": "Story > History",
-       "paragraph": "M4",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Legacy of the Desert High-Born"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Liloupar",
-       "revision": 1074663,
-       "section": "Story",
-       "paragraph": "M5",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "The First Days of the City of Kings"
-        },
-        {
-         "type": "quest",
-         "name": "Dune-Entombed Fecundity: Part III"
-        }
-       ]
-      }
-     ],
-     "heading": "능력",
-     "latin_left": []
-    },
-    {
-     "section": "능력",
-     "status": "accepted",
-     "note": "Supported by A4, M3 and M6. The interpretation is hedged ('볼 수 있다').",
-     "quote": "To reward Kisra for his valor, Ormazd bestowed him with the name \"Parvez.\" He also gave Kisra his daughter Shirin's hand in marriage.",
-     "sentences": [
-      {
-       "t_raw": "Ormazd는 용맹을 세운 Kisra에게 **Parvez라는 이름**을 내리고 딸 Shirin과 혼인하게 했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오르마즈드는 용맹을 세운 키스라에게 **파비즈라는 이름**을 내리고 딸 시린과 혼인하게 했다."
-      },
-      {
-       "t_raw": "Kisra는 Liloupar가 Ormazd에 대한 복수의 일환으로 낳은 아들이었고, Ghognus의 손에 자라 그의 야심과 Ghognus의 도움으로 Ormazd에게 입양되었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "키스라는 릴루페르가 오르마즈드에 대한 복수의 일환으로 낳은 아들이었고, 고흐누스의 손에 자라 그의 야심과 고흐누스의 도움으로 오르마즈드에게 입양되었다."
-      },
-      {
-       "t_raw": "입양 뒤 Kisra는 Kisra Parvez로 이름이 바뀌었고, 전투에서의 명성으로 'Spirit of Victory'라는 별칭을 얻었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "입양 뒤 키스라는 키스라·파르베즈로 이름이 바뀌었고, 전투에서의 명성으로 '승리의 정신'이라는 별칭을 얻었다.",
-       "polish": {
-        "from": "입양 뒤 키스라는 키스라·파르베즈로 이름이 바뀌었고, 전투에서의 명성으로 'Spirit of Victory'라는 별칭을 얻었다.",
-        "text": "입양 뒤 키스라는 키스라·파르베즈로 이름이 바뀌었고, 전투에서의 명성으로 '승리의 정신'이라는 별칭을 얻었다.",
-        "by": "glm-flash"
-       }
-      },
-      {
-       "t_raw": "전공을 이름과 혼인으로 포상한 점은 **군공을 가족 관계로 결속하려는 통치 방식**으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "전공을 이름과 혼인으로 포상한 점은 **군공을 가족 관계로 결속하려는 통치 방식**으로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ormazd",
-       "revision": 1052258,
-       "section": "Profile",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Parvezravan",
-       "revision": 1065371,
-       "section": "Story",
-       "paragraph": "M3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Memories of Gurabad"
-        },
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Parvezravan",
-       "revision": 1065371,
-       "section": null,
-       "paragraph": "M6",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        },
-        {
-         "type": "item",
-         "name": "Transparent Ruins Record (I)"
-        }
-       ]
-      }
-     ],
-     "heading": "능력",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "accepted",
-     "note": "Supported by A1, M4, M5 and M8. The interpretation follows from them.",
-     "quote": "Liloupar fell in love with him and believed he would be the one to realize Nabu Malikata's dream of a mortal society free of slavery.",
-     "sentences": [
-      {
-       "t_raw": "Ormazd는 Liloupar의 남편이자 Shirin의 아버지였으며, Liloupar는 그를 사랑한 Jinni였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오르마즈드는 릴루페르의 남편이자 시린의 아버지였으며, 릴루페르는 그를 사랑한 지니였다."
-      },
-      {
-       "t_raw": "그러나 Ormazd는 권력에 타락해 노예제를 이어갔고, Liloupar는 이를 계기로 **세대에 걸친 복수**를 계획했다.",
-       "interp": false,
-       "dropped": false,
-       "t": "그러나 오르마즈드는 권력에 타락해 노예제를 이어갔고, 릴루페르는 이를 계기로 **세대에 걸친 복수**를 계획했다."
-      },
-      {
-       "t_raw": "두 사람의 결혼은 애정에서 시작했으나, 통치 방식의 변화가 Liloupar로 하여금 자녀들을 복수의 도구로 삼게 한 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "두 사람의 결혼은 애정에서 시작했으나, 통치 방식의 변화가 릴루페르로 하여금 자녀들을 복수의 도구로 삼게 한 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ormazd",
-       "revision": 1052258,
-       "section": null,
-       "paragraph": "A1",
-       "wiki_refs": []
-      },
-      {
-       "kind": "wiki",
-       "page": "Gurabad",
-       "revision": 1090252,
-       "section": "Story > History",
-       "paragraph": "M4",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Legacy of the Desert High-Born"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Liloupar",
-       "revision": 1074663,
-       "section": "Story",
-       "paragraph": "M5",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "The First Days of the City of Kings"
-        },
-        {
-         "type": "quest",
-         "name": "Dune-Entombed Fecundity: Part III"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Liloupar",
-       "revision": 1074663,
-       "section": null,
-       "paragraph": "M8",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "accepted",
-     "note": "Supported by A4, M1, M2 and M11, including the two differing accounts of Shirin and the poisoned honey.",
-     "quote": "Kisra, who came to learn of Liloupar's prophecies, held no genuine love for Shirin and simply used her as a means of gaining the throne.",
-     "sentences": [
-      {
-       "t_raw": "Liloupar의 아들 Kisra는 고아로 남겨져 Ormazd에게 입양되었고, Ormazd는 Kisra의 용맹을 보상해 그에게 Parvez라는 이름과 Shirin과의 혼인을 주었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "릴루페르의 아들 키스라는 고아로 남겨져 오르마즈드에게 입양되었고, 오르마즈드는 키스라의 용맹을 보상해 그에게 파비즈라는 이름과 시린과의 혼인을 주었다."
-      },
-      {
-       "t_raw": "Kisra는 Liloupar의 예언을 알고 Shirin을 왕좌를 얻는 수단으로 여겼기에, 두 사람의 혼인은 **사랑 없는 혼인**이었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "키스라는 릴루페르의 예언을 알고 시린을 왕좌를 얻는 수단으로 여겼기에, 두 사람의 혼인은 **사랑 없는 혼인**이었다."
-      },
-      {
-       "t_raw": "Shirin은 원한을 품고 복수를 계획한 인물로 전해지지만, 다른 기록은 Liloupar가 속을 모르는 Shirin을 도구로 삼아 독이 든 꿀을 Ormazd의 연회에 보냈다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "시린은 원한을 품고 복수를 계획한 인물로 전해지지만, 다른 기록은 릴루페르가 속을 모르는 시린을 도구로 삼아 독이 든 꿀을 오르마즈드의 연회에 보냈다고 전한다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ormazd",
-       "revision": 1052258,
-       "section": "Profile",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Gurabad",
-       "revision": 1090252,
-       "section": "Story > History",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        },
-        {
-         "type": "quest",
-         "name": "Dune-Entombed Fecundity: Part III"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Liloupar",
-       "revision": 1074663,
-       "section": "Story",
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Parvezravan",
-       "revision": 1065371,
-       "section": "Story",
-       "paragraph": "M11",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        },
-        {
-         "type": "quest",
-         "name": "Memories of Gurabad"
-        },
-        {
-         "type": "quest",
-         "name": "Dune-Entombed Fecundity: Part III"
-        }
-       ]
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "인간관계",
-     "status": "accepted",
-     "note": "Supported by M3, M4, M5 and M8. The interpretation is reasonable.",
-     "quote": "Gurabad was established after a shepherd named Ormazd gained the favor of King Deshret and the Jinni Liloupar, and used Liloupar's blessing to unite the desert peoples.",
-     "sentences": [
-      {
-       "t_raw": "Ormazd는 King Deshret의 봉신 왕이었고, Gurabad는 King Deshret의 은혜와 Liloupar의 도움으로 사막 민족을 통합한 끝에 세워졌다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오르마즈드는 적왕의 봉신 왕이었고, 구라바드는 적왕의 은혜와 릴루페르의 도움으로 사막 민족을 통합한 끝에 세워졌다."
-      },
-      {
-       "t_raw": "Liloupar는 원래 Nabu Malikata를 섬겼고 그가 죽은 뒤 King Deshret를 섬긴 Jinni였다.",
-       "interp": false,
-       "dropped": false,
-       "t": "릴루페르는 원래 나부·말리카타를 섬겼고 그가 죽은 뒤 적왕을 섬긴 지니였다."
-      },
-      {
-       "t_raw": "그런 만큼 Ormazd의 왕권은 King Deshret의 후원과 Liloupar의 축복이 맞물린 **정치적 관계** 위에 있었던 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "그런 만큼 오르마즈드의 왕권은 적왕의 후원과 릴루페르의 축복이 맞물린 **정치적 관계** 위에 있었던 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Parvezravan",
-       "revision": 1065371,
-       "section": "Story",
-       "paragraph": "M3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Memories of Gurabad"
-        },
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Gurabad",
-       "revision": 1090252,
-       "section": "Story > History",
-       "paragraph": "M4",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "Legacy of the Desert High-Born"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Liloupar",
-       "revision": 1074663,
-       "section": "Story",
-       "paragraph": "M5",
-       "wiki_refs": [
-        {
-         "type": "arti",
-         "name": "The First Days of the City of Kings"
-        },
-        {
-         "type": "quest",
-         "name": "Dune-Entombed Fecundity: Part III"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Liloupar",
-       "revision": 1074663,
-       "section": null,
-       "paragraph": "M8",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "인간관계",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "accepted",
-     "note": "All supported by A4 and M1.",
-     "quote": "Using an unwitting Shirin as her pawn, Liloupar had her daughter deliver poisoned honey to one of Ormazd's banquets",
-     "sentences": [
-      {
-       "t_raw": "한 기록에서는 Shirin이 삶에 원한을 품고 **복수를 계획했다**고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "한 기록에서는 시린이 삶에 원한을 품고 **복수를 계획했다**고 말한다."
-      },
-      {
-       "t_raw": "다른 기록에서는 Liloupar가 눈치채지 못한 Shirin을 도구로 써 독이 든 꿀을 전하게 했다고 전한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "다른 기록에서는 릴루페르가 눈치채지 못한 시린을 도구로 써 독이 든 꿀을 전하게 했다고 전한다."
-      },
-      {
-       "t_raw": "어느 쪽이든 Shirin은 Ormazd와 형제들의 죽음에 관여한 것으로 기록되며, 그녀가 복수의 주체인지 도구인지는 **해석의 갈림길**에 선 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "어느 쪽이든 시린은 오르마즈드와 형제들의 죽음에 관여한 것으로 기록되며, 그녀가 복수의 주체인지 도구인지는 **해석의 갈림길**에 선 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Ormazd",
-       "revision": 1052258,
-       "section": "Profile",
-       "paragraph": "A4",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Gurabad",
-       "revision": 1090252,
-       "section": "Story > History",
-       "paragraph": "M1",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        },
-        {
-         "type": "quest",
-         "name": "Dune-Entombed Fecundity: Part III"
-        }
-       ]
-      }
-     ],
      "heading": "떡밥과 수수께끼",
      "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "accepted",
-     "note": "All supported by M8 and M2; the interpretation is reasonable.",
-     "quote": "Liloupar is best known for her role in the destruction of Gurabad, which she wrought over three generations as revenge against her husband Ormazd",
-     "sentences": [
-      {
-       "t_raw": "Ormazd는 사막의 봉신 왕이 된 뒤 폭군이 되었고, Liloupar는 그를 향한 복수로 세대에 걸친 파멸을 빚어 Gurabad를 몰락시켰다고 전해진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "오르마즈드는 사막의 봉신 왕이 된 뒤 폭군이 되었고, 릴루페르는 그를 향한 복수로 세대에 걸친 파멸을 빚어 구라바드를 몰락시켰다고 전해진다."
-      },
-      {
-       "t_raw": "또 다른 기록은 Shirin이 Ormazd와 Kisra에게 복수하려 했고, 독이 든 꿀로 Ormazd와 형제들을 죽여 Kisra를 통치자로 만들었다고 말한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "또 다른 기록은 시린이 오르마즈드와 키스라에게 복수하려 했고, 독이 든 꿀로 오르마즈드와 형제들을 죽여 키스라를 통치자로 만들었다고 말한다."
-      },
-      {
-       "t_raw": "두 기록을 겹쳐 보면 Shirin의 원한은 Liloupar의 긴 복수 안에서 다시 읽히는 셈이다.",
-       "interp": true,
-       "dropped": false,
-       "t": "두 기록을 겹쳐 보면 시린의 원한은 릴루페르의 긴 복수 안에서 다시 읽히는 셈이다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Liloupar",
-       "revision": 1074663,
-       "section": "Story",
-       "paragraph": "M2",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      },
-      {
-       "kind": "wiki",
-       "page": "Liloupar",
-       "revision": 1074663,
-       "section": null,
-       "paragraph": "M8",
-       "wiki_refs": []
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": []
-    },
-    {
-     "section": "떡밥과 수수께끼",
-     "status": "accepted",
-     "note": "All supported by M7; the interpretation follows from it.",
-     "quote": "Few people know the truth behind Gurabad's destruction, and many different interpretations of Gurabad's history exist.",
-     "sentences": [
-      {
-       "t_raw": "후대에는 Gurabad의 멸망을 둘러싼 해석이 갈린다.",
-       "interp": false,
-       "dropped": false,
-       "t": "후대에는 구라바드의 멸망을 둘러싼 해석이 갈린다."
-      },
-      {
-       "t_raw": "진실을 아는 이는 적고, Parvezravan은 Eremite 역사에서 위대한 영웅과 폭군으로 함께 기록된다.",
-       "interp": false,
-       "dropped": false,
-       "t": "진실을 아는 이는 적고, 파르브즈라반은 도금 여단 역사에서 위대한 영웅과 폭군으로 함께 기록된다."
-      },
-      {
-       "t_raw": "Shirin은 Ormazd와 Parvezravan의 죽음을 꾀한 모사가로, Shiruyeh는 Gurabad의 몰락과 Shiruyeh's Plague를 불러온 겁쟁이로 알려진다.",
-       "interp": false,
-       "dropped": false,
-       "t": "시린은 오르마즈드와 파르브즈라반의 죽음을 꾀한 모사가로, 시루이는 구라바드의 몰락과 시루이의 Plague를 불러온 겁쟁이로 알려진다."
-      },
-      {
-       "t_raw": "이렇게 다른 얼굴로 기억되는 것은 **멸망의 진실**이 하나로 정리되지 않았기 때문으로 보인다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이렇게 다른 얼굴로 기억되는 것은 **멸망의 진실**이 하나로 정리되지 않았기 때문으로 보인다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Parvezravan",
-       "revision": 1065371,
-       "section": "Story > Legacy",
-       "paragraph": "M7",
-       "wiki_refs": [
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      }
-     ],
-     "heading": "떡밥과 수수께끼",
-     "latin_left": [
-      "Plague"
-     ]
     },
     {
      "section": "여담",
      "status": "accepted",
-     "note": "Supported by Q1 and M3.",
+     "note": "Facts match Q1 and A1 (king of Gurabad). The interpretation in (2) is hedged and follows from the vassal-king and temple details.",
      "quote": "This temple is said to have been first built by a vassal king named Ormazd in remembrance of the God King Al-Ahmar.",
      "sentences": [
       {
-       "t_raw": "전승에 따르면, **God King Al-Ahmar**를 기리는 사원은 Ormazd가 처음 세운 것이라고 한다.",
+       "t_raw": "Gurabad의 왕 Ormazd에 대해서는 신전을 세웠다는 일화도 전해진다.",
        "interp": false,
        "dropped": false,
-       "t": "전승에 따르면, **마신 왕 아흐마르**를 기리는 사원은 오르마즈드가 처음 세운 것이라고 한다."
+       "t": "구라바드의 왕 오르마즈드에 대해서는 신전을 세웠다는 일화도 전해진다."
       },
       {
-       "t_raw": "Ormazd는 King Deshret의 봉신 왕이었다.",
+       "t_raw": "어느 탐사 담론에 따르면, 해당 신전은 Ormazd라는 봉신 왕이 God King Al-Ahmar를 기리기 위해 처음 세운 곳이라고 한다.",
        "interp": false,
        "dropped": false,
-       "t": "오르마즈드는 적왕의 봉신 왕이었다."
+       "t": "어느 탐사 담론에 따르면, 해당 신전은 오르마즈드라는 봉신 왕이 마신 왕 아흐마르를 기리기 위해 처음 세운 곳이라고 한다."
+      },
+      {
+       "t_raw": "자신이 군주로 군림한 도시의 왕이면서 다른 군주를 기념하는 건축을 남겼다는 점에서, 이 일화는 그가 위계 속의 한 자리를 인정하고 예우한 인물이었음을 보여주는 대목으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자신이 군주로 군림한 도시의 왕이면서 다른 군주를 기념하는 건축을 남겼다는 점에서, 이 일화는 그가 위계 속의 한 자리를 인정하고 예우한 인물이었음을 보여주는 대목으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Temple Where Sand Flows Like Tears",
+       "quest_ko": "눈물처럼 흐르는 모래의 신전",
+       "version": "3.4",
+       "speaker": "Azariq"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Deshret vassal-king is in M3, and the temple is in Q1. Both interpretations are hedged and reasonable, though (2) is somewhat rhetorical.",
+     "quote": "Ormazd — the vassal-king of King Deshret and Liloupar's lover",
+     "sentences": [
+      {
+       "t_raw": "한편 다른 기록은 Ormazd를 King Deshret의 봉신 왕으로 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 다른 기록은 오르마즈드를 적왕의 봉신 왕으로 부른다."
+      },
+      {
+       "t_raw": "신전을 세운 까닭이 God King Al-Ahmar를 기리기 위해서였다는 이야기와, 그가 누군가의 봉신 왕이었다는 서술을 나란히 놓으면, 이 신전 일화는 Ormazd가 윗자리의 군주를 공적으로 기념하는 일을 맡을 수 있는 위치에 있었음을 시사한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "신전을 세운 까닭이 마신 왕 아흐마르를 기리기 위해서였다는 이야기와, 그가 누군가의 봉신 왕이었다는 서술을 나란히 놓으면, 이 신전 일화는 오르마즈드가 윗자리의 군주를 공적으로 기념하는 일을 맡을 수 있는 위치에 있었음을 시사한다."
+      },
+      {
+       "t_raw": "Gurabad의 번영을 이야기하는 기록들이 그의 치세를 다루는 동안, 신전 하나만은 그가 누구를 높여 세운 왕이었는지를 따로 남겨 두고 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "구라바드의 번영을 이야기하는 기록들이 그의 치세를 다루는 동안, 신전 하나만은 그가 누구를 높여 세운 왕이었는지를 따로 남겨 두고 있는 셈이다."
       }
      ],
      "sources": [
@@ -1725,105 +1630,6 @@
         {
          "type": "book",
          "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "accepted",
-     "note": "Supported by M3; the interpretation is mild.",
-     "quote": "such as allegedly conquering ninety-nine other vassal states",
-     "sentences": [
-      {
-       "t_raw": "Kisra는 여러 공적과 업적으로 이름을 얻었고, 다른 99개의 봉신국을 정복했다고도 전해져 **Spirit of Victory**라는 별칭을 얻었다.",
-       "interp": false,
-       "dropped": false,
-       "t": "키스라는 여러 공적과 업적으로 이름을 얻었고, 다른 99개의 봉신국을 정복했다고도 전해져 **승리의 정신**이라는 별칭을 얻었다.",
-       "polish": {
-        "from": "키스라는 여러 공적과 업적으로 이름을 얻었고, 다른 99개의 봉신국을 정복했다고도 전해져 **Spirit of Victory**라는 별칭을 얻었다.",
-        "text": "키스라는 여러 공적과 업적으로 이름을 얻었고, 다른 99개의 봉신국을 정복했다고도 전해져 **승리의 정신**이라는 별칭을 얻었다.",
-        "by": "glm-flash"
-       }
-      },
-      {
-       "t_raw": "이 정복담은 그 별칭이 어떤 업적과 함께 기억되었는지를 보여주는 전설로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 정복담은 그 별칭이 어떤 업적과 함께 기억되었는지를 보여주는 전설로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Parvezravan",
-       "revision": 1065371,
-       "section": "Story",
-       "paragraph": "M3",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "Memories of Gurabad"
-        },
-        {
-         "type": "book",
-         "name": "The Tale of Shiruyeh and Shirin"
-        }
-       ]
-      }
-     ],
-     "heading": "여담",
-     "latin_left": []
-    },
-    {
-     "section": "여담",
-     "status": "accepted",
-     "note": "Supported by M10; the interpretation follows from it.",
-     "quote": "Liloupar, seeing some of Ormazd's original promising traits in the Traveler, takes them as her new master.",
-     "sentences": [
-      {
-       "t_raw": "Traveler와 Jeht는 The Dirge of Bilqis 시기에 Liloupar의 영혼 조각이 든 마법 병을 발견한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "여행자와 제트는 빌키스의 애가 시기에 릴루페르의 영혼 조각이 든 마법 병을 발견한다."
-      },
-      {
-       "t_raw": "Liloupar는 Traveler에게서 **Ormazd의 원래의 유망한 자질** 일부를 보고 Traveler를 새 주인으로 삼는다.",
-       "interp": false,
-       "dropped": false,
-       "t": "릴루페르는 여행자에게서 **오르마즈드의 원래의 유망한 자질** 일부를 보고 여행자를 새 주인으로 삼는다."
-      },
-      {
-       "t_raw": "마지막 영혼 조각을 얻은 뒤 Liloupar는 Gurabad에서 아이들과 재회하러 떠나고, 병은 Traveler에게 남아 이전과 같은 이점을 제공한다.",
-       "interp": false,
-       "dropped": false,
-       "t": "마지막 영혼 조각을 얻은 뒤 릴루페르는 구라바드에서 아이들과 재회하러 떠나고, 병은 여행자에게 남아 이전과 같은 이점을 제공한다."
-      },
-      {
-       "t_raw": "이 장면은 Ormazd의 원래의 유망한 자질이 후대의 Traveler에게 비춰지는 대목으로 볼 수 있다.",
-       "interp": true,
-       "dropped": false,
-       "t": "이 장면은 오르마즈드의 원래의 유망한 자질이 후대의 여행자에게 비춰지는 대목으로 볼 수 있다."
-      }
-     ],
-     "sources": [
-      {
-       "kind": "wiki",
-       "page": "Liloupar",
-       "revision": 1074663,
-       "section": "Story > Present Day",
-       "paragraph": "M10",
-       "wiki_refs": [
-        {
-         "type": "quest",
-         "name": "The Temple Where Sand Flows Like Tears"
-        },
-        {
-         "type": "quest",
-         "name": "Memories of Gurabad"
         }
        ]
       }
@@ -1834,44 +1640,10 @@
    ],
    "quote_boxes": [
     {
-     "section": "개요",
-     "status": "accepted",
-     "note": "Faithful translation of Azariq's line.",
-     "t_raw": "이 사원은 God King Al-Ahmar를 기리기 위해 Ormazd라는 봉신 왕이 처음 세웠다고 한다.",
-     "en": "This temple is said to have been first built by a vassal king named Ormazd in remembrance of the God King Al-Ahmar.",
-     "speaker": "Azariq",
-     "source": {
-      "kind": "quest",
-      "quest": "The Temple Where Sand Flows Like Tears",
-      "quest_ko": "눈물처럼 흐르는 모래의 신전",
-      "version": "3.4",
-      "speaker": "Azariq"
-     },
-     "t": "이 사원은 마신 왕 아흐마르를 기리기 위해 오르마즈드라는 봉신 왕이 처음 세웠다고 한다.",
-     "speaker_ko": "아자릭"
-    },
-    {
-     "section": "정체와 배경",
-     "status": "accepted",
-     "note": "Faithful translation of Azariq's line.",
-     "t_raw": "이 사원은 God King Al-Ahmar를 기리기 위해 Ormazd라는 봉신 왕이 처음 세웠다고 한다.",
-     "en": "This temple is said to have been first built by a vassal king named Ormazd in remembrance of the God King Al-Ahmar.",
-     "speaker": "Azariq",
-     "source": {
-      "kind": "quest",
-      "quest": "The Temple Where Sand Flows Like Tears",
-      "quest_ko": "눈물처럼 흐르는 모래의 신전",
-      "version": "3.4",
-      "speaker": "Azariq"
-     },
-     "t": "이 사원은 마신 왕 아흐마르를 기리기 위해 오르마즈드라는 봉신 왕이 처음 세웠다고 한다.",
-     "speaker_ko": "아자릭"
-    },
-    {
      "section": "여담",
      "status": "accepted",
-     "note": "Faithful translation of Azariq's line.",
-     "t_raw": "이 사원은 God King Al-Ahmar를 기리기 위해 Ormazd라는 봉신 왕이 처음 세웠다고 한다.",
+     "note": "Faithful translation of the Azariq line.",
+     "t_raw": "이 신전은 Ormazd라는 봉신 왕이 God King Al-Ahmar를 기리기 위해 처음 세운 곳이라고 전해진다.",
      "en": "This temple is said to have been first built by a vassal king named Ormazd in remembrance of the God King Al-Ahmar.",
      "speaker": "Azariq",
      "source": {
@@ -1881,7 +1653,7 @@
       "version": "3.4",
       "speaker": "Azariq"
      },
-     "t": "이 사원은 마신 왕 아흐마르를 기리기 위해 오르마즈드라는 봉신 왕이 처음 세웠다고 한다.",
+     "t": "이 신전은 오르마즈드라는 봉신 왕이 마신 왕 아흐마르를 기리기 위해 처음 세운 곳이라고 전해진다.",
      "speaker_ko": "아자릭"
     }
    ]

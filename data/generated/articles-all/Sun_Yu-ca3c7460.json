@@ -1,0 +1,1136 @@
+{
+ "node": "Sun Yu",
+ "articles": [
+  {
+   "node": "Sun Yu",
+   "from_version": "1.1",
+   "cutoff": "2020-12-22T00:00:00Z",
+   "input": [
+    {
+     "page": "Sun Yu",
+     "url": "https://genshin-impact.fandom.com/wiki/Sun_Yu",
+     "revision": 56715
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 2923,
+   "input_cut": false,
+   "input_hash": "da0bff194ae9",
+   "writer": "ds-pro,glm-flash,ds,qwen",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences follow from A1, A2 and M1. The interpretation is reasonable.",
+     "quote": "Sun Yu is an NPC located in Huaguang Stone Forest, Liyue. He is searching for the adepti to gain their counsel on how to revive the Guhua Clan, with Little Que'er accompanying him.",
+     "sentences": [
+      {
+       "t_raw": "Sun Yu는 Liyue의 Huaguang Stone Forest에서 만날 수 있는 NPC로, Guhua Clan을 되살릴 방도를 묻고자 adepti를 찾아 나선 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우는 리월의 화광림에서 만날 수 있는 NPC로, 고화파를 되살릴 방도를 묻고자 선인을 찾아 나선 인물이다.",
+       "polish": {
+        "from": "손우는 리월의 화광림에서 만날 수 있는 NPC로, 고화파를 되살릴 방도를 묻고자 adepti를 찾아 나선 인물이다.",
+        "text": "손우는 리월의 화광림에서 만날 수 있는 NPC로, 고화파를 되살릴 방도를 묻고자 선인을 찾아 나선 인물이다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Little Que'er와 어릴 적부터 함께 무예를 익혀 왔으며, 그녀를 누이처럼 여기면서도 문파에 대한 애착이 각별하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소작아와 어릴 적부터 함께 무예를 익혀 왔으며, 그녀를 누이처럼 여기면서도 문파에 대한 애착이 각별하다."
+      },
+      {
+       "t_raw": "문파를 되살리려는 목적이 그가 머무는 장소와 동행자까지 정해 놓았으니, 이 인물을 읽는 일은 곧 쇠락한 Guhua Clan의 사정을 읽는 일이 되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "문파를 되살리려는 목적이 그가 머무는 장소와 동행자까지 정해 놓았으니, 이 인물을 읽는 일은 곧 쇠락한 고화파의 사정을 읽는 일이 되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Que'er",
+       "revision": 56716,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A1, A6 and M2.",
+     "quote": "Sun Yu is an NPC located in Huaguang Stone Forest, Liyue.",
+     "sentences": [
+      {
+       "t_raw": "Sun Yu는 Liyue의 Huaguang Stone Forest에서 만나는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우는 리월의 화광림에서 만나는 인물이다."
+      },
+      {
+       "t_raw": "Guhua Clan의 제자로서, 문파를 되살릴 방법을 두고 adepti의 가르침을 구하러 그곳에 와 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고화파의 제자로서, 문파를 되살릴 방법을 두고 선인의 가르침을 구하러 그곳에 와 있다.",
+       "polish": {
+        "from": "고화파의 제자로서, 문파를 되살릴 방법을 두고 adepti의 가르침을 구하러 그곳에 와 있다.",
+        "text": "고화파의 제자로서, 문파를 되살릴 방법을 두고 선인의 가르침을 구하러 그곳에 와 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그 곁에는 같은 Guhua Clan의 제자인 Little Que'er가 함께 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 곁에는 같은 고화파의 제자인 소작아가 함께 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Que'er",
+       "revision": 56716,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A6, A23 and A24. The interpretation is hedged and follows from A1.",
+     "quote": "The true purpose behind my journeying here is to seek divine guidance on the Way, to find a means of reviving the Guhua Clan.",
+     "sentences": [
+      {
+       "t_raw": "낯선 방문객을 대할 때 그가 처음 내미는 설명은 수련이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낯선 방문객을 대할 때 그가 처음 내미는 설명은 수련이다."
+      },
+      {
+       "t_raw": "자신을 Guhua Clan의 제자라 밝히고, 내공을 다스리러 왔다고, 그러니까 수련하러 왔다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자신을 고화파의 제자라 밝히고, 내공을 다스리러 왔다고, 그러니까 수련하러 왔다고 말한다."
+      },
+      {
+       "t_raw": "그러나 상대가 밖에서 온 나그네임을 알면 숨길 필요가 없다며 말을 바꾼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 상대가 밖에서 온 나그네임을 알면 숨길 필요가 없다며 말을 바꾼다."
+      },
+      {
+       "t_raw": "그가 털어놓는 **진짜 목적**은 도에 대한 가르침을 구해 Guhua Clan을 되살릴 방도를 찾는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 털어놓는 **진짜 목적**은 도에 대한 가르침을 구해 고화파를 되살릴 방도를 찾는 것이다."
+      },
+      {
+       "t_raw": "adepti를 찾아온 까닭과 문파를 되살릴 방도를 찾는 까닭이 결국 같은 말로 겹치는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "선인을 찾아온 까닭과 문파를 되살릴 방도를 찾는 까닭이 결국 같은 말로 겹치는 셈이다.",
+       "polish": {
+        "from": "adepti를 찾아온 까닭과 문파를 되살릴 방도를 찾는 까닭이 결국 같은 말로 겹치는 셈이다.",
+        "text": "선인을 찾아온 까닭과 문파를 되살릴 방도를 찾는 까닭이 결국 같은 말로 겹치는 셈이다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A24",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A1 and A2. The interpretation is reasonable.",
+     "quote": "Sun Yu is devoted to the clan and seeks to revive the dying art.",
+     "sentences": [
+      {
+       "t_raw": "Sun Yu는 문파에 헌신하며 사라져 가는 무예를 되살리려는 사람이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우는 문파에 헌신하며 사라져 가는 무예를 되살리려는 사람이다."
+      },
+      {
+       "t_raw": "어릴 적부터 Little Que'er와 함께 Guhua Clan의 무예를 익혀 왔다는 대목이 그 마음의 무게를 짐작하게 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어릴 적부터 소작아와 함께 고화파의 무예를 익혀 왔다는 대목이 그 마음의 무게를 짐작하게 한다."
+      },
+      {
+       "t_raw": "그가 되살리려는 것은 문파의 무예이자 자신이 자라온 자리이기도 하다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 되살리려는 것은 문파의 무예이자 자신이 자라온 자리이기도 하다고 볼 수 있다."
+      },
+      {
+       "t_raw": "Huaguang Stone Forest까지 발걸음을 옮긴 것도 그 되살림을 위한 여정의 한 갈래다.",
+       "interp": false,
+       "dropped": false,
+       "t": "화광림까지 발걸음을 옮긴 것도 그 되살림을 위한 여정의 한 갈래다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경 — Guhua Clan의 영광",
+     "status": "accepted",
+     "note": "A11 and A12 support the facts. The interpretation is hedged and fits A14, which calls today's Clan what is left of the tradition.",
+     "quote": "In its glory days, the Guhua Brotherhood roamed the lands freely and none dared to challenge them.",
+     "sentences": [
+      {
+       "t_raw": "전성기의 Guhua Brotherhood는 각지를 거침없이 누볐고, 그들에게 맞서려는 이는 없었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전성기의 고화파는 각지를 거침없이 누볐고, 그들에게 맞서려는 이는 없었다."
+      },
+      {
+       "t_raw": "창과 검을 함께 다루는 명성은 Teyvat의 모든 무인들이 들어 알고 있었으며, 그 진위를 의심하는 사람도 없었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "창과 검을 함께 다루는 명성은 티바트의 모든 무인들이 들어 알고 있었으며, 그 진위를 의심하는 사람도 없었다."
+      },
+      {
+       "t_raw": "먼 옛날의 위세를 이처럼 구체적으로 되짚는 것은, 그가 지금의 Guhua Clan을 그 명성의 후계로 여기고 있기 때문인 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "먼 옛날의 위세를 이처럼 구체적으로 되짚는 것은, 그가 지금의 고화파를 그 명성의 후계로 여기고 있기 때문인 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경 — 고화파의 영광",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경 — Guhua Clan의 영광",
+     "status": "accepted",
+     "note": "A9 to A11 support the facts. The 'incredulous' tone is a fair reading of the rhetorical question. The interpretation is hedged.",
+     "quote": "Have you not heard of the renowned ancient arts of the Guhua Clan?",
+     "sentences": [
+      {
+       "t_raw": "상대가 Guhua Clan을 모른다고 하면, 그는 되레 어이없다는 듯 Guhua Clan의 유명한 옛 무예를 들어보지 못했느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상대가 고화파를 모른다고 하면, 그는 되레 어이없다는 듯 고화파의 유명한 옛 무예를 들어보지 못했느냐고 묻는다."
+      },
+      {
+       "t_raw": "그러고는 한숨을 쉰 뒤, 전성기의 이야기를 꺼내 그 명성을 설명하기 시작한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러고는 한숨을 쉰 뒤, 전성기의 이야기를 꺼내 그 명성을 설명하기 시작한다."
+      },
+      {
+       "t_raw": "이름을 모르는 이를 만나면 먼저 옛 명성을 확인하고 이내 옛 자랑을 늘어놓는 셈이니, 그에게 Guhua Clan은 지금 남은 규모보다 과거의 명성으로 규정되는 이름인 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이름을 모르는 이를 만나면 먼저 옛 명성을 확인하고 이내 옛 자랑을 늘어놓는 셈이니, 그에게 고화파는 지금 남은 규모보다 과거의 명성으로 규정되는 이름인 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경 — 고화파의 영광",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경 — Guhua Clan의 영광",
+     "status": "accepted",
+     "note": "All sentences are supported by A2. The interpretation follows reasonably.",
+     "quote": "Sun Yu is devoted to the clan and seeks to revive the dying art.",
+     "sentences": [
+      {
+       "t_raw": "Sun Yu는 어릴 적부터 Little Que'er와 함께 Guhua Clan의 무예를 익혔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우는 어릴 적부터 소작아와 함께 고화파의 무예를 익혔다."
+      },
+      {
+       "t_raw": "그는 문파에 헌신하며 사라져 가는 그 무예를 되살리려 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 문파에 헌신하며 사라져 가는 그 무예를 되살리려 한다."
+      },
+      {
+       "t_raw": "무예를 함께 익힌 동료가 곁에 있고 그 무예가 쇠해 가는 상황이니, 그가 되살리려는 것은 막연한 전통만이 아니라 자신이 직접 몸에 익힌 기술이기도 한 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "무예를 함께 익힌 동료가 곁에 있고 그 무예가 쇠해 가는 상황이니, 그가 되살리려는 것은 막연한 전통만이 아니라 자신이 직접 몸에 익힌 기술이기도 한 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경 — 고화파의 영광",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경 — 쇠락과 남은 사람들",
+     "status": "accepted",
+     "note": "The facts match A13 and A15. The sigh comes after A14 rather than right after the relics line, but it is stated. The interpretation is hedged.",
+     "quote": "Sadly, no party is everlasting... Centuries have passed, and while many Guhua relics remain, the great practitioners are long gone.",
+     "sentences": [
+      {
+       "t_raw": "Sun Yu는 영광의 시대가 영원할 수는 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우는 영광의 시대가 영원할 수는 없다고 말한다."
+      },
+      {
+       "t_raw": "수백 년의 세월이 흐르는 동안 많은 Guhua 유물은 남았지만, 이름난 고수들은 오래전에 사라졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수백 년의 세월이 흐르는 동안 많은 고화 유물은 남았지만, 이름난 고수들은 오래전에 사라졌다."
+      },
+      {
+       "t_raw": "이 대목에서 그는 짧게 한숨을 내쉰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 대목에서 그는 짧게 한숨을 내쉰다."
+      },
+      {
+       "t_raw": "남은 것이 유물뿐이고 사람은 남지 않았다는 점은, 문파의 쇠락이 물건이 아니라 사람에게서 먼저 온 일임을 보여 주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "남은 것이 유물뿐이고 사람은 남지 않았다는 점은, 문파의 쇠락이 물건이 아니라 사람에게서 먼저 온 일임을 보여 주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경 — 쇠락과 남은 사람들",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경 — 쇠락과 남은 사람들",
+     "status": "accepted",
+     "note": "The facts match A14. The interpretation about gradual decline follows from the Brotherhood, Sect and Clan progression.",
+     "quote": "After a slew of desertions, the Guhua Brotherhood regrouped as the much smaller Guhua Sect, with barely a few hundred disciples.",
+     "sentences": [
+      {
+       "t_raw": "여러 차례 이탈이 이어진 끝에 Guhua Brotherhood는 훨씬 작은 규모의 Guhua Sect로 다시 묶였고, 그 제자는 겨우 수백 명에 불과했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여러 차례 이탈이 이어진 끝에 고화파는 훨씬 작은 규모의 Guhua Sect로 다시 묶였고, 그 제자는 겨우 수백 명에 불과했다."
+      },
+      {
+       "t_raw": "오늘날의 Guhua Clan은 그 큰 전통에서 남은 전부이며, 그마저 실제로 무를 닦는 사람은 손에 꼽을 정도다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오늘날의 고화파는 그 큰 전통에서 남은 전부이며, 그마저 실제로 무를 닦는 사람은 손에 꼽을 정도다."
+      },
+      {
+       "t_raw": "Guhua Brotherhood에서 Guhua Sect로, 다시 Guhua Clan으로 이어지는 이름과 규모의 축소는 쇠락이 어느 한순간의 일이 아니라 오랜 세월에 걸쳐 단계적으로 진행되었음을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "고화파에서 Guhua Sect로, 다시 고화파로 이어지는 이름과 규모의 축소는 쇠락이 어느 한순간의 일이 아니라 오랜 세월에 걸쳐 단계적으로 진행되었음을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경 — 쇠락과 남은 사람들",
+     "latin_left": [
+      "Guhua Sect",
+      "Guhua Sect"
+     ]
+    },
+    {
+     "section": "정체와 배경 — 쇠락과 남은 사람들",
+     "status": "accepted",
+     "note": "The facts match A16 and A17. The 'loosely connected' reading is hedged interpretation.",
+     "quote": "Our numbers are reduced, yes, but not to that extent... It's just that the various disciples of our Clan have been scattered every corner of Liyue.",
+     "sentences": [
+      {
+       "t_raw": "Guhua Clan에 남은 것이 두 사람뿐이냐는 물음에, Sun Yu는 규모가 줄어든 것은 맞지만 그 정도는 아니라며 되받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고화파에 남은 것이 두 사람뿐이냐는 물음에, 손우는 규모가 줄어든 것은 맞지만 그 정도는 아니라며 되받는다."
+      },
+      {
+       "t_raw": "문파의 제자들은 Liyue 곳곳에 흩어져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문파의 제자들은 리월 곳곳에 흩어져 있다."
+      },
+      {
+       "t_raw": "그러니 지금 문파에 남은 것은 한자리에 모인 무리가 아니라 Liyue 전역에 흩어진 제자들의 느슨한 연결에 가깝다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그러니 지금 문파에 남은 것은 한자리에 모인 무리가 아니라 리월 전역에 흩어진 제자들의 느슨한 연결에 가깝다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A17",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경 — 쇠락과 남은 사람들",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계 — Xingqiu",
+     "status": "accepted",
+     "note": "The facts match A18 and A19. The interpretation is reasonable and hedged.",
+     "quote": "He is a junior of mine, but he was the first among us to grasp the concept of the Martial Principle.",
+     "sentences": [
+      {
+       "t_raw": "Sun Yu는 Traveler에게 Xingqiu라는 이름을 아느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우는 여행자에게 행추라는 이름을 아느냐고 묻는다."
+      },
+      {
+       "t_raw": "그는 Xingqiu를 **자신의 후배**라고 소개하는 한편, 그들 가운데 **Martial Principle의 개념을 처음 터득한 사람**이 그였다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 행추를 **자신의 후배**라고 소개하는 한편, 그들 가운데 **Martial Principle의 개념을 처음 터득한 사람**이 그였다고 말한다."
+      },
+      {
+       "t_raw": "문파 이야기를 하다가 꺼내는 이름이 연장자가 아니라 후배이고, 그 후배가 다시 가장 앞선 성취를 이룬 인물이라는 점이 겹치면서, 짧은 소개 하나에 그가 문파 안에서 어떤 자리에 놓이는 인물인지가 압축되어 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "문파 이야기를 하다가 꺼내는 이름이 연장자가 아니라 후배이고, 그 후배가 다시 가장 앞선 성취를 이룬 인물이라는 점이 겹치면서, 짧은 소개 하나에 그가 문파 안에서 어떤 자리에 놓이는 인물인지가 압축되어 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A19",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계 — 행추",
+     "latin_left": [
+      "Martial Principle"
+     ]
+    },
+    {
+     "section": "인간관계 — Xingqiu",
+     "status": "accepted",
+     "note": "The facts match A20 and A21. The interpretation about a generous attitude is hedged and follows from the laugh and the optimistic guess.",
+     "quote": "He once wrote a mantra and utterly changed the legacy of the Guhua Clan.",
+     "sentences": [
+      {
+       "t_raw": "그가 남긴 것은 개념을 터득한 데서 그치지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 남긴 것은 개념을 터득한 데서 그치지 않는다."
+      },
+      {
+       "t_raw": "Xingqiu는 한 편의 주문을 써서 Guhua Clan의 **전통을 완전히 바꾸어** 놓았다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "행추는 한 편의 주문을 써서 고화파의 **전통을 완전히 바꾸어** 놓았다고 한다."
+      },
+      {
+       "t_raw": "Sun Yu는 그 뒤 그가 어떻게 되었는지는 알지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우는 그 뒤 그가 어떻게 되었는지는 알지 못한다."
+      },
+      {
+       "t_raw": "어딘가를 떠돌며 좋은 일을 하고 있을지도 모른다고 말하고는 웃는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어딘가를 떠돌며 좋은 일을 하고 있을지도 모른다고 말하고는 웃는다."
+      },
+      {
+       "t_raw": "문파의 전통을 바꾸어 놓은 후배의 행방을 모르면서도 좋은 쪽으로 짐작하고 웃는 대목에서, 그를 향한 시선이 아쉬움이나 원망보다는 너그러운 쪽에 놓여 있음이 드러난다…로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "문파의 전통을 바꾸어 놓은 후배의 행방을 모르면서도 좋은 쪽으로 짐작하고 웃는 대목에서, 그를 향한 시선이 아쉬움이나 원망보다는 너그러운 쪽에 놓여 있음이 드러난다…로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A21",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계 — 행추",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계 — Little Que'er",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "We've always been inseparable when practicing martial arts, like a form to its shadow.",
+     "sentences": [
+      {
+       "t_raw": "Sun Yu와 Little Que'er는 어린 시절부터 함께 자라며 Guhua Clan의 무예를 익힌 사이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우와 소작아는 어린 시절부터 함께 자라며 고화파의 무예를 익힌 사이다."
+      },
+      {
+       "t_raw": "두 사람은 무예를 닦을 때 늘 붙어 다녔고, Sun Yu는 그 관계를 '형태와 그 그림자'에 비유한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 사람은 무예를 닦을 때 늘 붙어 다녔고, 손우는 그 관계를 '형태와 그 그림자'에 비유한다."
+      },
+      {
+       "t_raw": "그는 전투에서도 담력에서도 두 사람이 대등하다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 전투에서도 담력에서도 두 사람이 대등하다고 본다."
+      },
+      {
+       "t_raw": "하나의 짝처럼 붙여 말하면서도 상대를 대등한 동료로 놓는 이 시선은, 그가 두 사람 사이를 어떤 식으로 이해하고 있는지를 보여 주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "하나의 짝처럼 붙여 말하면서도 상대를 대등한 동료로 놓는 이 시선은, 그가 두 사람 사이를 어떤 식으로 이해하고 있는지를 보여 주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A27",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계 — 소작아",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계 — Little Que'er",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "I've always treated her like a sister...",
+     "sentences": [
+      {
+       "t_raw": "Sun Yu는 Little Que'er를 늘 누이처럼 대한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우는 소작아를 늘 누이처럼 대한다고 말한다."
+      },
+      {
+       "t_raw": "그래서 그녀를 데리고 이곳까지 온 이유도, 두 사람이 함께 신의 가르침을 찾아 Guhua의 중흥을 이루자는 데 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래서 그녀를 데리고 이곳까지 온 이유도, 두 사람이 함께 신의 가르침을 찾아 고화의 중흥을 이루자는 데 있었다."
+      },
+      {
+       "t_raw": "그에게 이 동행은 문파를 다시 세우겠다는 목적을 나란히 짊어지는 일이었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그에게 이 동행은 문파를 다시 세우겠다는 목적을 나란히 짊어지는 일이었던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A28",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계 — 소작아",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계 — Little Que'er",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "For her part, Que'er has evidently grown romantically interested in him",
+     "sentences": [
+      {
+       "t_raw": "Little Que'er 쪽 사정은 다르다. 그녀는 Sun Yu에게 연정을 품고 있지만, 여러 이유로 그 마음을 전하지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소작아 쪽 사정은 다르다. 그녀는 손우에게 연정을 품고 있지만, 여러 이유로 그 마음을 전하지 못한다."
+      },
+      {
+       "t_raw": "Sun Yu는 그런 마음을 알아차리지 못한 채, 자신에게 말을 거는 사람에게 그녀가 몹시 공격적으로 반응하는 것만 두고 고개를 갸웃한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손우는 그런 마음을 알아차리지 못한 채, 자신에게 말을 거는 사람에게 그녀가 몹시 공격적으로 반응하는 것만 두고 고개를 갸웃한다."
+      },
+      {
+       "t_raw": "겉으로는 두 사람이 무척 잘 어울린다는 말이 나올 정도다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겉으로는 두 사람이 무척 잘 어울린다는 말이 나올 정도다."
+      },
+      {
+       "t_raw": "곁에 있는 까닭이 그에게는 문파의 부흥이고 그녀에게는 그 사람을 향한 마음인 만큼, 나란히 서 있는 두 사람이 품은 것은 서로 다른 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "곁에 있는 까닭이 그에게는 문파의 부흥이고 그녀에게는 그 사람을 향한 마음인 만큼, 나란히 서 있는 두 사람이 품은 것은 서로 다른 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Que'er",
+       "revision": 56716,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A28",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계 — 소작아",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Huaguang Stone Forest",
+     "status": "accepted",
+     "note": "Sentence 2 says what he really guards is solitude, not training. The English gives no such reason, and A24 says his true purpose is seeking divine guidance. The claim is a guess stated as certain.",
+     "quote": "Did you want something? If not, please do not disturb me.",
+     "sentences": [
+      {
+       "t_raw": "Guhua Clan의 제자 Sun Yu는 Huaguang Stone Forest에서 자신을 소개하며, 이곳에 내면의 기운을 다스리러 왔다고 말하다가 곧 '음, 수련하러'라며 스스로 정정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고화파의 제자 손우는 화광림에서 자신을 소개하며, 이곳에 내면의 기운을 다스리러 왔다고 말하다가 곧 '음, 수련하러'라며 스스로 정정한다."
+      },
+      {
+       "t_raw": "방문객에게는 용건이 없으면 방해하지 말라 하고, 혼자 있을 때는 자리를 좀 달라고 중얼거린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방문객에게는 용건이 없으면 방해하지 말라 하고, 혼자 있을 때는 자리를 좀 달라고 중얼거린다."
+      },
+      {
+       "t_raw": "수련하러 왔다는 말을 스스로 정정하면서도 방문객에게 침묵을 바라는 태도를 보면, 그가 이곳에서 진짜로 좇는 것은 수련보다 신의 가르침을 구해 구화파를 되살릴 방법을 찾는 일로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "수련하러 왔다는 말을 스스로 정정하면서도 방문객에게 침묵을 바라는 태도를 보면, 그가 이곳에서 진짜로 좇는 것은 수련보다 신의 가르침을 구해 구화파를 되살릴 방법을 찾는 일로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Idle Quotes",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 화광림",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Huaguang Stone Forest",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "The true purpose behind my journeying here is to seek divine guidance on the Way, to find a means of reviving the Guhua Clan.",
+     "sentences": [
+      {
+       "t_raw": "수련한다는 말에 Traveler가 되묻자, Sun Yu는 상대가 바깥에서 온 사람이니 숨길 필요가 없다며 입을 연다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수련한다는 말에 여행자가 되묻자, 손우는 상대가 바깥에서 온 사람이니 숨길 필요가 없다며 입을 연다."
+      },
+      {
+       "t_raw": "이곳에 온 진짜 목적은 Way에 대한 신의 가르침을 구해 Guhua Clan을 되살릴 방도를 찾는 것이라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이곳에 온 진짜 목적은 Way에 대한 신의 가르침을 구해 고화파를 되살릴 방도를 찾는 것이라고 밝힌다."
+      },
+      {
+       "t_raw": "그가 구하는 신의 가르침이란 Huaguang Stone Forest의 adepti에게 문파 부흥의 조언을 얻는 일로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 구하는 신의 가르침이란 화광림의 선인에게 문파 부흥의 조언을 얻는 일로 보인다.",
+       "polish": {
+        "from": "그가 구하는 신의 가르침이란 화광림의 adepti에게 문파 부흥의 조언을 얻는 일로 보인다.",
+        "text": "그가 구하는 신의 가르침이란 화광림의 선인에게 문파 부흥의 조언을 얻는 일로 보인다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "용건이 없으면 방해하지 말라던 사람이, 자신의 수련 이야기에 관심을 보인 상대에게는 속내를 털어놓은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "용건이 없으면 방해하지 말라던 사람이, 자신의 수련 이야기에 관심을 보인 상대에게는 속내를 털어놓은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 화광림",
+     "latin_left": [
+      "Way"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "trimmed",
+     "note": "\"Who are you?\" (A5) is the player's line, not Sun Yu's. \"별 관심 없다는 듯\" also adds a manner the English does not give.",
+     "quote": "Did you want something? If not, please do not disturb me.",
+     "sentences": [
+      {
+       "t_raw": "Sun Yu를 직접 찾아와 말을 걸면 그는 별 관심 없다는 듯 \"Huh? What is it?\", \"Who are you?\" 하고 되묻는 것으로 대화를 시작한다.",
+       "interp": false,
+       "dropped": true,
+       "t": "손우를 직접 찾아와 말을 걸면 그는 별 관심 없다는 듯 \"Huh? What is it?\", \"Who are you?\" 하고 되묻는 것으로 대화를 시작한다."
+      },
+      {
+       "t_raw": "수련 중인 사람을 방해하는 방문객에게는 \"Did you want something? If not, please do not disturb me.\"라며 툭 내뱉듯 선을 긋기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수련 중인 사람을 방해하는 방문객에게는 \"무슨 볼일이라도 있으신가요? 아니라면, 저를 방해하지 말아 주세요.\"라며 툭 내뱉듯 선을 긋기도 한다.",
+       "polish": {
+        "from": "수련 중인 사람을 방해하는 방문객에게는 \"Did you want something? If not, please do not disturb me.\"라며 툭 내뱉듯 선을 긋기도 한다.",
+        "text": "수련 중인 사람을 방해하는 방문객에게는 \"무슨 볼일이라도 있으신가요? 아니라면, 저를 방해하지 말아 주세요.\"라며 툭 내뱉듯 선을 긋기도 한다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Reads as interpretation of the archaic farewell; follows reasonably from the line.",
+     "quote": "Fare thee well.",
+     "sentences": [
+      {
+       "t_raw": "헤어질 때는 \"Fare thee well.\"이라는 다소 옛스러운 인사를 건네는데, 문파의 전통을 이어가려는 그의 마음가짐이 말투에서도 자연스럽게 드러나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "헤어질 때는 \"잘 지내시게.\"이라는 다소 옛스러운 인사를 건네는데, 문파의 전통을 이어가려는 그의 마음가짐이 말투에서도 자연스럽게 드러나는 셈이다.",
+       "polish": {
+        "from": "헤어질 때는 \"Fare thee well.\"이라는 다소 옛스러운 인사를 건네는데, 문파의 전통을 이어가려는 그의 마음가짐이 말투에서도 자연스럽게 드러나는 셈이다.",
+        "text": "헤어질 때는 \"잘 지내시게.\"이라는 다소 옛스러운 인사를 건네는데, 문파의 전통을 이어가려는 그의 마음가짐이 말투에서도 자연스럽게 드러나는 셈이다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 1 says she talks less around him. The English only says she is 'like a completely different person' with him, not that she speaks less. The quote itself is accurate.",
+     "quote": "I find this a bit of a headache to comprehend.",
+     "sentences": [
+      {
+       "t_raw": "Little Que'er에 대한 평가에서도 그의 특유의 소박한 고민이 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소작아에 대한 평가에서도 그의 특유의 소박한 고민이 드러난다."
+      },
+      {
+       "t_raw": "그는 그녀를 \"She has an odd temperament, normally being prone to chatter... Yet with me, she is like a completely different person.\"라며, 자신과 있을 때는 완전히 다른 사람 같아서 이해하기가 좀 골치 아프다고 털어놓는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 그녀를 \"그녀는 성격이 별나서 평소에는 말이 많은 편인데... 그래도 나와 있을 때는 완전히 다른 사람 같아.\"라며, 자신과 있을 때는 완전히 다른 사람 같아서 이해하기가 좀 골치 아프다고 털어놓는다.",
+       "polish": {
+        "from": "그는 그녀를 \"She has an odd temperament, normally being prone to chatter... Yet with me, she is like a completely different person.\"라며, 자신과 있을 때는 완전히 다른 사람 같아서 이해하기가 좀 골치 아프다고 털어놓는다.",
+        "text": "그는 그녀를 \"그녀는 성격이 별나서 평소에는 말이 많은 편인데... 그래도 나와 있을 때는 완전히 다른 사람 같아.\"라며, 자신과 있을 때는 완전히 다른 사람 같아서 이해하기가 좀 골치 아프다고 털어놓는다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "곁에서 함께 자란 소꿉친구임에도 그녀의 태도 변화를 \"I find this a bit of a headache to comprehend.\"라고 눈치채지 못한 채 머리 아파 하는 모습이, 그의 무심하고 순수한 성격을 그대로 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "곁에서 함께 자란 소꿉친구임에도 그녀의 태도 변화를 \"이해하기가 좀 골치 아프군.\"라고 눈치채지 못한 채 머리 아파 하는 모습이, 그의 무심하고 순수한 성격을 그대로 보여 준다.",
+       "polish": {
+        "from": "곁에서 함께 자란 소꿉친구임에도 그녀의 태도 변화를 \"I find this a bit of a headache to comprehend.\"라고 눈치채지 못한 채 머리 아파 하는 모습이, 그의 무심하고 순수한 성격을 그대로 보여 준다.",
+        "text": "곁에서 함께 자란 소꿉친구임에도 그녀의 태도 변화를 \"이해하기가 좀 골치 아프군.\"라고 눈치채지 못한 채 머리 아파 하는 모습이, 그의 무심하고 순수한 성격을 그대로 보여 준다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Dialogue",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sun Yu",
+       "revision": 56715,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Que'er",
+       "revision": 56716,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

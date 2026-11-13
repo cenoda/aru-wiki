@@ -11,12 +11,12 @@
 // Night sky in the dark site theme, a pale day sky in the light one.
 // The scene renders only while the reader interacts, and the version picker hides later pages.
 import ForceGraph3D, { type ForceGraph3DInstance } from '3d-force-graph';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import {
   AdditiveBlending, BackSide, BufferGeometry, Euler, Mesh, MeshBasicMaterial, RepeatWrapping, SphereGeometry, Line, LineDashedMaterial, Float32BufferAttribute, Matrix4, Points, PointsMaterial, CanvasTexture, Color, Fog, Group, NormalBlending,
   type PerspectiveCamera, Sprite, SpriteMaterial, Vector2, Vector3,
 } from 'three';
-import { heightOf, layoutChart, timeSpan } from './chartLayout';
+import { heightOf, LAYOUT_VERSION, layoutChart, timeSpan } from './chartLayout';
 import { StarField, type StrandShape, Strands } from './wiki3dGpu';
 import { Line2 } from 'three/examples/jsm/lines/Line2.js';
 import { LineGeometry } from 'three/examples/jsm/lines/LineGeometry.js';
@@ -28,11 +28,12 @@ import pagesUrl from '../data/runtime/pages.json?url';
 import { ReportBox } from './ReportBox';
 import { useLinker } from './Linked';
 import { Search } from './Search';
-import { articleKeyFromUrl, articleUrl, isArticleUrl, pathNameOf, resolvePage } from './route';
+import { articleKeyFromUrl, articleUrl, isArticleUrl, isRecentKey, pathNameOf, RECENT_KEY, resolvePage } from './route';
 import { Logo } from './Logo';
+import { BY_SA_3, BY_SA_4, Lic, LicensePageLink, SourceCredit } from './license';
 import { versions } from './data';
 import {
-  idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, articleAt, loadPageData, type PageData, revisionUrl, snapshotAt, type Snapshots, type Theme,
+  idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, articleAt, loadPageData, type PageData, snapshotAt, type Snapshots, type Theme,
 } from './lore';
 import { VersionPicker } from './VersionPicker';
 import { inflateChart, perfStars } from './wiki3dPerf';
@@ -41,6 +42,9 @@ import { rich, WikiArticle } from './WikiArticle';
 import './site.css';
 import './focus.css';
 import './wiki3d.css';
+
+// 최근 바뀜 (`/wiki/특수:최근바뀜`) opens in the article slot; its code and list load only when it opens
+const RecentChanges = lazy(() => import('./RecentChanges'));
 
 interface Palette {
   hub: string; character: string; lore: string; line: string; lineHot: string; label: string; ecliptic: string;
@@ -308,7 +312,7 @@ interface LineParts {
   visible: boolean;
 }
 /** chart.json with the layout the data build made ahead of time (scripts/build-runtime-data.mjs) */
-type Chart = Theme & { layout?: { lastOrder: number; portrait: number[]; landscape: number[] } };
+type Chart = Theme & { layout?: { version?: number; lastOrder: number; portrait: number[]; landscape: number[] } };
 
 /** What the current version, selection and theme ask of each star and line. */
 interface Look {
@@ -425,8 +429,6 @@ export default function WikiGraph3D() {
   const makeLabel = useRef<(s: StarParts) => SpriteText | null>(() => null);
   /** the laid-out stars (with x, y, z) once the scene is built */
   const laid = useRef<PageNode[]>([]);
-  /** the time ruler drawn over the left edge of the chart */
-  const rulerBox = useRef<HTMLDivElement>(null);
   // The card sits in the fixed page, so its height limit has to leave out the header; on phones the header wraps
   // to several lines and the card's top (with "자세히 보기") used to slide under it with nothing left to scroll.
   const headBox = useRef<HTMLDivElement>(null);
@@ -470,7 +472,7 @@ export default function WikiGraph3D() {
     setArticle(page);
   };
   const closeArticle = () => {
-    if (page) setSelected(page); // back on the chart, the page's star stays picked
+    if (page && !isRecentKey(page)) setSelected(page); // back on the chart, the page's star stays picked
     const t = trail();
     if (t.fromChart && t.aruDepth) history.go(-t.aruDepth); // return to the chart's own entry
     else { history.pushState(null, '', urlFor(null, vNow.current)); setArticle(null); } // came in by a link
@@ -478,7 +480,7 @@ export default function WikiGraph3D() {
   useEffect(() => {
     const onPop = () => {
       const key = articleKeyFromUrl();
-      setArticle((cur) => { if (cur && !key) setSelected(pageNow.current); return key; });
+      setArticle((cur) => { if (cur && !key && !isRecentKey(cur)) setSelected(pageNow.current); return key; });
       const v = versionFromUrl();
       if (v !== null) setVIdx(v);
     };
@@ -598,10 +600,8 @@ export default function WikiGraph3D() {
       .graphData({ nodes: [], links: [] });
 
     let layoutTimer: number | undefined;
-    let placeRuler = () => {};
-    /** where the time pillar stands on the chart's plane (set once the camera is placed) */
-    let pillar: { x: number; z: number } | null = null;
-    let pillarReady = false;
+    const versionRings: { order: number; line: Line2; mat: LineMaterial }[] = [];
+    let nowRing: { line: Line2; mat: LineMaterial } | null = null;
     let list: PageNode[] = [];
     let linkList: PageLink[] = [];
     /** each star's direction for corner-free lines, from the layout (which stays still) */
@@ -691,14 +691,6 @@ export default function WikiGraph3D() {
         s.label.visible = on && s.labelOpacity > 0.005;
       }
     };
-    /** Screen room kept for the time ruler at the left edge: the chart is drawn shifted right by half of it. */
-    const RULER_W = 64;
-    const leaveRoom = () => {
-      const camera = g.camera() as PerspectiveCamera;
-      const W = el.clientWidth, H = el.clientHeight;
-      camera.setViewOffset(W, H, -RULER_W / 2, 0, W, H);
-      camera.updateProjectionMatrix();
-    };
     /** a page name's width over its height as three-spritetext draws it (90 px text, the padding below) */
     const measure = document.createElement('canvas').getContext('2d')!;
     const aspectOf = (text: string, weight: string) => {
@@ -747,7 +739,7 @@ export default function WikiGraph3D() {
       // ---- layout: from the data build when it matches this chart and screen shape, else here ----
       const t0 = performance.now();
       const pre = (theme as Chart).layout;
-      let pos = pre && pre.lastOrder === lastOrder ? pre[portrait ? 'portrait' : 'landscape'] : null;
+      let pos = pre && pre.version === LAYOUT_VERSION && pre.lastOrder === lastOrder ? pre[portrait ? 'portrait' : 'landscape'] : null;
       if (!pos || pos.length !== theme.nodes.length * 3) {
         pos = layoutChart(theme, lastOrder, portrait);
         performance.measure('w3d-layout', { start: t0 }); // only when the data build's layout does not fit
@@ -816,100 +808,42 @@ export default function WikiGraph3D() {
         lines.current.set(l, parts);
       });
 
-      const box = rulerBox.current;
-      // The time axis as a pillar standing in the chart's space, at its left as first seen: a vertical
-      // line with a small ring round it at each major version, drawn as page vectors (SVG) from the
-      // 3D points every frame. So it leans and its rings tilt with the view like the stars do, while
-      // the text stays crisp. The part up to the chosen version glows.
-      if (box) {
-        const NS = 'http://www.w3.org/2000/svg';
-        const mk = <K extends keyof SVGElementTagNameMap>(tag: K, cls: string) => {
-          const e = document.createElementNS(NS, tag); e.setAttribute('class', cls); return e;
-        };
-        box.replaceChildren();
-        const svg = mk('svg', 'w3d-pillar');
-        const tube = mk('line', 'w3d-tube'), rail = mk('line', 'w3d-rail'), lit = mk('line', 'w3d-lit');
-        const nowRing = mk('path', 'w3d-now-ring'), nowText = mk('text', 'w3d-now-text');
-        svg.append(tube, rail, lit);
-        const ticks = versions.filter((v) => /\.0$|^Luna I$/.test(v.id)).map((v) => {
-          const ring = mk('path', 'w3d-ring'), text = mk('text', 'w3d-ring-text');
-          text.textContent = v.id === 'Luna I' ? '6.0' : v.id;
-          svg.append(ring, text);
-          return { ring, text, h: heightAt(v.order) };
-        });
-        svg.append(nowRing, nowText);
-        box.append(svg);
-        const pt = new Vector3();
-        const RING = 7; // ring radius in chart units
-        placeRuler = () => {
-          if (!pillarReady) return;
-          const camera = g.camera() as PerspectiveCamera;
-          camera.updateMatrixWorld();
-          // The pillar stands where the left margin meets the chart's depth in the current view, so
-          // turning the chart never brings it into the middle; it still leans and its rings open and
-          // close with the view's height like the stars. Moved right until both ends clear the margin.
-          {
-            const target = (g.controls() as { target: Vector3 }).target;
-            const depth = camera.position.distanceTo(target);
-            let px = 40;
-            for (let i = 0; i < 8; i++) {
-              const ray = new Vector3((px / el.clientWidth) * 2 - 1, 0, 0.5).unproject(camera).sub(camera.position).normalize();
-              const p = camera.position.clone().add(ray.multiplyScalar(depth));
-              pillar = { x: p.x, z: p.z };
-              const xs = [heightAt(0), heightAt(lastOrder) + 6].map((h) => {
-                const v = new Vector3(p.x, h, p.z).project(camera);
-                return ((v.x + 1) / 2) * el.clientWidth;
-              });
-              const short = 30 - Math.min(...xs);
-              if (short <= 1) break;
-              px += short;
-            }
-          }
-          if (!pillar) return;
-          const top = el.offsetTop, W = el.clientWidth, H = el.clientHeight;
-          svg.setAttribute('width', String(W)); svg.setAttribute('height', String(top + H));
-          const at = (x: number, y: number, z: number): [number, number, boolean] => {
-            pt.set(x, y, z).project(camera);
-            return [((pt.x + 1) / 2) * W, top + ((1 - pt.y) / 2) * H, pt.z < 1];
-          };
-          let ringRight = 0;
-          const ringPath = (h: number, r: number) => {
-            let d = '';
-            ringRight = -Infinity;
-            for (let i = 0; i <= 32; i++) {
-              const a = (i / 32) * Math.PI * 2;
-              const [x, y] = at(pillar!.x + Math.cos(a) * r, h, pillar!.z + Math.sin(a) * r);
-              d += `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`;
-              ringRight = Math.max(ringRight, x);
-            }
-            return d;
-          };
-          const line = (e: SVGElement, a: [number, number, boolean], b: [number, number, boolean]) => {
-            e.setAttribute('x1', a[0].toFixed(1)); e.setAttribute('y1', a[1].toFixed(1));
-            e.setAttribute('x2', b[0].toFixed(1)); e.setAttribute('y2', b[1].toFixed(1));
-          };
-          const low = at(pillar.x, heightAt(0), pillar.z), high = at(pillar.x, heightAt(lastOrder) + 6, pillar.z);
-          const nowH = heightAt(vNow.current), now = at(pillar.x, nowH, pillar.z);
-          line(tube, low, high); line(rail, low, high); line(lit, low, now);
-          nowRing.setAttribute('d', ringPath(nowH, RING * 1.5));
-          nowText.setAttribute('x', (ringRight + 6).toFixed(1)); nowText.setAttribute('y', (now[1] + 4).toFixed(1));
-          nowText.textContent = `${versions[vNow.current]?.id ?? ''}까지`;
-          // rings from the bottom up; a label that would crowd the last shown one or the marker is hidden
-          let last = Infinity;
-          for (const t of ticks) {
-            t.ring.setAttribute('d', ringPath(t.h, RING));
-            t.ring.setAttribute('data-past', String(t.h <= nowH));
-            const c = at(pillar.x, t.h, pillar.z);
-            t.text.setAttribute('x', (ringRight + 5).toFixed(1)); t.text.setAttribute('y', (c[1] + 4).toFixed(1));
-            const room = Math.abs(c[1] - last) >= 16 && Math.abs(c[1] - now[1]) >= 15;
-            t.text.style.opacity = room ? '' : '0';
-            if (room) last = c[1];
-          }
-          // the pillar behind the camera, or seen end-on from straight above: hide it
-          box.style.opacity = !low[2] || !high[2] || Math.hypot(low[0] - high[0], low[1] - high[1]) < 80 ? '0' : '';
-        };
+      // Horizontal celestial rings at each major version's height in 3D space (plus one horizon ring
+      // at the chosen version), so perspective matches the stars and nothing crowds the left edge.
+      const radii = list.map((n) => Math.hypot(n.x ?? 0, n.z ?? 0)).sort((a, b) => a - b);
+      const r90 = radii[Math.floor(radii.length * 0.9)];
+      const ringR = Math.max(120, r90 * 1.08);
+      const ringPos = (y: number, r: number) => {
+        const segs = 96, pts: number[] = [];
+        for (let i = 0; i <= segs; i++) {
+          const a = (i / segs) * Math.PI * 2;
+          pts.push(Math.cos(a) * r, y, Math.sin(a) * r);
+        }
+        return pts;
+      };
+      const addRing = (y: number, color: string, linewidth: number, opacity: number) => {
+        const geo = new LineGeometry();
+        geo.setPositions(ringPos(y, ringR));
+        const mat = new LineMaterial({ color, linewidth, transparent: true, opacity, depthWrite: false });
+        mat.fog = true;
+        mat.resolution.copy(resolution);
+        const line = new Line2(geo, mat);
+        line.raycast = () => {};
+        g.scene().add(line);
+        return { line, mat };
+      };
+      for (const v of versions) {
+        if (!/\.0$|^Luna I$/.test(v.id)) continue;
+        const { line, mat } = addRing(heightAt(v.order), lookNow.current.sky.line, 0.75, v.order <= vNow.current ? 0.11 : 0.03);
+        versionRings.push({ order: v.order, line, mat });
       }
-      placeNow.current = () => { placeRuler(); wakeUp(); };
+      nowRing = addRing(0, lookNow.current.sky.night ? '#f2a074' : '#cf5f33', 1.15, lookNow.current.sky.night ? 0.34 : 0.28);
+      nowRing.line.position.y = heightAt(vNow.current);
+      placeNow.current = (order: number) => {
+        for (const r of versionRings) r.mat.opacity = r.order <= order ? 0.11 : 0.03;
+        if (nowRing) nowRing.line.position.y = heightAt(order);
+        wakeUp();
+      };
       // a page that shares no story with any other has no line; a faint dotted one to the centre star
       // keeps it from floating alone (it says "in this chart", not "shares stories")
       const hubPos = new Vector3();
@@ -965,19 +899,15 @@ export default function WikiGraph3D() {
       applyShown.current();
       fade.current();
       // frame what is there: move the camera until the stars (but the far few) fill the screen in both directions
-      const radii = list.map((n) => Math.hypot(n.x ?? 0, n.z ?? 0)).sort((a, b) => a - b);
-      const r90 = radii[Math.floor(radii.length * 0.9)];
       const camera = g.camera() as PerspectiveCamera;
-      leaveRoom();
       const tilt = ((portrait ? 12 : 20) * Math.PI) / 180;
       const linked = list.filter((n) => index.near.has(n.id));
       const ys = linked.map((n) => n.y ?? 0);
       const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
       const p = new Vector3();
       let dist = r90 * 2.5;
-      // the point looked at: moved over the plane until the stars sit in the middle of the screen (the
-      // near half of a tilted plane looks bigger than the far half, so the plane's centre is not enough)
-      let tx = 0, tz = 0;
+      // look at (0, cy, 0) so the rotation axis passes through 티바트 and the centre of the orbital rings
+      const tx = 0, tz = 0;
       const place = () => {
         camera.position.set(tx, cy + Math.sin(tilt) * dist, tz + Math.cos(tilt) * dist);
         camera.lookAt(tx, cy, tz);
@@ -991,25 +921,17 @@ export default function WikiGraph3D() {
         sx.sort((a, b) => a - b); sy.sort((a, b) => a - b);
         const cut = portrait ? 0.035 : 0.005;
         const [x0, x1, y0, y1] = [q(sx, cut), q(sx, 1 - cut), q(sy, cut), q(sy, 1 - cut)];
-        // half the visible width/height at the target's depth, in chart units
-        const halfH = dist / camera.projectionMatrix.elements[5], halfW = halfH * camera.aspect;
-        const k = i < 12 ? 0.6 : 0; // the last passes only settle the distance
-        tx += k * ((x0 + x1) / 2) * halfW;
-        // screen up at the target is mostly toward the far side of the plane (-z), foreshortened by the tilt
-        tz -= k * ((y0 + y1) / 2) * halfH / Math.sin(tilt + 0.35);
-        dist *= Math.max((x1 - x0) / 2 / (0.84 * (1 - RULER_W / el.clientWidth)), (y1 - y0) / 2 / 0.82);
+        dist *= Math.max(Math.abs(x0) / 0.84, Math.abs(x1) / 0.84, Math.abs(y0) / 0.82, Math.abs(y1) / 0.82);
       }
       place();
       g.cameraPosition({ x: tx, y: cy + Math.sin(tilt) * dist, z: tz + Math.cos(tilt) * dist }, { x: tx, y: cy, z: tz }, 0);
-      // zoom limits: out to a little under twice the first view (the background stars start at 1600,
-      // so the chart never shrinks to a speck inside a ball of dots), in to about a star's neighbourhood
+      // zoom limits: allow zooming out comfortably past the initial view (background stars start at 2800),
+      // and in to about a star's neighbourhood
       {
         const c = g.controls() as { minDistance: number; maxDistance: number };
-        c.maxDistance = Math.min(dist * 1.8, 1400);
+        c.maxDistance = Math.min(Math.max(dist * 3.0, 2000), 2600);
         c.minDistance = Math.max(60, dist * 0.3);
       }
-      pillarReady = true;
-      placeRuler();
       // on first view the chart turns slowly into place once (about 40 degrees, easing out), then rests;
       // any touch stops it, and readers who ask for less motion get the still view
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -1035,9 +957,10 @@ export default function WikiGraph3D() {
       moved(); // fog distances and names for the first view
       wakeUp();
       performance.measure('w3d-build', { start: t0 });
+      el.dataset.ready = ''; // built (scripts/dev/perf3d.mjs waits for this)
     };
     // a moment after the start, so the page (header, search) shows first, and after the graph
-    // library's first update (which resets the camera's view offset that leaveRoom sets)
+    // library's first update (which sets up the camera)
     layoutTimer = window.setTimeout(build, 30);
 
     // distance fog toward the sky colour: far stars and lines recede (distances follow the camera)
@@ -1055,7 +978,7 @@ export default function WikiGraph3D() {
     const layer = (count: number, inBand: number, size: number, opacity: number) => {
       const pos: number[] = [], col: number[] = [];
       for (let i = 0; i < count; i++) {
-        const R = 1600 + rnd() * 1400;
+        const R = 2800 + rnd() * 1600;
         const v = new Vector3();
         if (i < inBand) {
           const a = rnd() * Math.PI * 2, lat = gauss() * 0.12;
@@ -1092,9 +1015,9 @@ export default function WikiGraph3D() {
       const mat = new SpriteMaterial({ map: nebulaTexture(nb.seed, nb.tint), transparent: true, depthWrite: false, fog: false,
         blending: day ? NormalBlending : AdditiveBlending, opacity: day ? 0.9 : 0.45 });
       const sp = new Sprite(mat);
-      const d = new Vector3(...nb.dir).normalize().multiplyScalar(2200 + (nb.seed % 7) * 60);
+      const d = new Vector3(...nb.dir).normalize().multiplyScalar(3200 + (nb.seed % 7) * 90);
       sp.position.copy(d);
-      sp.scale.setScalar(nb.size);
+      sp.scale.setScalar(nb.size * 1.45);
       sp.renderOrder = -2;
       sp.raycast = () => {};
       g.scene().add(sp);
@@ -1105,7 +1028,7 @@ export default function WikiGraph3D() {
     let nebulae: Sprite[] = [], dayClouds: Sprite[] = [];
     const skyParts = (night: boolean) => {
       if (night && !milky) {
-        milky = new Mesh(new SphereGeometry(4200, 64, 32), new MeshBasicMaterial({ map: milkyWayTexture(), side: BackSide,
+        milky = new Mesh(new SphereGeometry(5500, 64, 32), new MeshBasicMaterial({ map: milkyWayTexture(), side: BackSide,
           transparent: true, opacity: 0.3, depthWrite: false, fog: false, blending: AdditiveBlending }));
         milky.rotation.copy(GALAXY);
         milky.renderOrder = -3;
@@ -1139,6 +1062,11 @@ export default function WikiGraph3D() {
       for (const p of stars.current.values()) if (p.label) p.label.color = s.label;
       for (const t of tethers) t.line.material.color.set(s.line);
       for (const r of refLines) r.mat.color.set(s.line);
+      for (const r of versionRings) r.mat.color.set(s.line);
+      if (nowRing) {
+        nowRing.mat.color.set(s.night ? '#f2a074' : '#cf5f33');
+        nowRing.mat.opacity = s.night ? 0.34 : 0.28;
+      }
       paintTails.current();
       skyParts(s.night);
       for (const p of skyStars) p.visible = s.night;
@@ -1263,21 +1191,24 @@ export default function WikiGraph3D() {
     el.addEventListener('pointerleave', onLeave);
 
     const controls = g.controls() as { addEventListener(type: string, fn: () => void): void; removeEventListener(type: string, fn: () => void): void };
-    /** the view moved: fog distances, the ruler and the names follow */
+    /** the view moved: fog distances and the names follow */
     const moved = () => {
       const d = g.camera().position.length();
       fog.near = d * 0.7;
       fog.far = d * 2.3;
-      placeRuler();
       relabel.current();
     };
+    // inertia: a turn or pan keeps gliding a moment after the finger lifts, then slows to a stop
+    // ('change' keeps firing while it glides, and onMove keeps the render loop awake till it ends)
+    Object.assign(g.controls(), { enableDamping: true, dampingFactor: 0.08 });
     // the controls report every pointer move, often several per frame: follow once per frame
     let moveFrame = 0;
     const onMove = () => {
+      wakeUp();
       const d = g.camera().position.length();
       fog.near = d * 0.7;
       fog.far = d * 2.3;
-      if (!moveFrame && !disposed) moveFrame = requestAnimationFrame(() => { moveFrame = 0; placeRuler(); relabel.current(); });
+      if (!moveFrame && !disposed) moveFrame = requestAnimationFrame(() => { moveFrame = 0; relabel.current(); });
     };
     controls.addEventListener('change', onMove);
     let lastScale = labelScale(el);
@@ -1287,6 +1218,8 @@ export default function WikiGraph3D() {
       strands?.setResolution(resolution);
       tailStrands?.setResolution(resolution);
       for (const r of refLines) r.mat.resolution.copy(resolution);
+      for (const r of versionRings) r.mat.resolution.copy(resolution);
+      nowRing?.mat.resolution.copy(resolution);
       // a turned phone changes the screen shape: resize the names to match
       const scale = labelScale(el);
       if (Math.abs(scale - lastScale) > 0.01) {
@@ -1297,8 +1230,6 @@ export default function WikiGraph3D() {
           p.label.padding = [p.label.textHeight * 0.15, p.label.textHeight * 0.3];
         }
       }
-      leaveRoom();
-      placeRuler();
       relabelSoon.current();
       wakeUp();
     });
@@ -1320,7 +1251,9 @@ export default function WikiGraph3D() {
       el.removeEventListener('pointercancel', onCancel);
       el.removeEventListener('pointermove', onHover);
       el.removeEventListener('pointerleave', onLeave);
-      rulerBox.current?.replaceChildren();
+      for (const r of versionRings) { r.line.geometry.dispose(); r.mat.dispose(); }
+      if (nowRing) { nowRing.line.geometry.dispose(); nowRing.mat.dispose(); }
+      delete el.dataset.ready;
       for (const t of tethers) { t.line.geometry.dispose(); t.line.material.dispose(); }
       for (const r of refLines) { r.line.geometry.dispose(); r.mat.dispose(); }
       field?.dispose();
@@ -1481,15 +1414,24 @@ export default function WikiGraph3D() {
         </div>}
         <nav>
           {theme && gl && <Search nodes={allNodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />}
+          <a href={urlFor(RECENT_KEY, vIdx)} onClick={(e) => {
+            if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+            e.preventDefault();
+            if (!isRecentKey(article)) openArticle(RECENT_KEY);
+          }}>최근 바뀜</a>
           <a className="band" href="/?view=quests">임무 지도</a>
           <VersionPicker order={vIdx} onChange={setVIdx} />
           <ThemeToggle />
         </nav>
       </header></div>
-      {article && theme && index && (
+      {article && theme && index && (isRecentKey(article) ? (
+        <Suspense fallback={<p className="w3d-status">불러오는 중…</p>}>
+          <RecentChanges vIdx={vIdx} byId={allById} hrefOf={hrefOf} onOpen={openArticle} />
+        </Suspense>
+      ) : (
         <WikiArticle page={page!} theme={theme} nodes={allNodes} byId={allById} snapshots={snapshots} vIdx={vIdx}
           hrefOf={hrefOf} onOpen={openArticle} />
-      )}
+      ))}
       {article && !theme && <p className="w3d-status">{failed ? '지도 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
       {/* the chart stays mounted (camera and selection kept) but hidden behind an open article */}
       <div className={`w3d-stage${article ? ' behind' : ''}`} ref={host} aria-hidden={article ? true : undefined}>
@@ -1501,10 +1443,11 @@ export default function WikiGraph3D() {
             <p className="w3d-portal-sub">원신 이야기 위키</p>
             <Search big autoFocus nodes={allNodes} vIdx={vIdx} hrefOf={hrefOf} onOpen={openArticle} />
             <p className="w3d-portal-note">이 브라우저에서는 3D 지도를 그릴 수 없어(WebGL을 쓸 수 없음) 검색 화면을 보여 줍니다. <a href={hrefOf(theme.page)} onClick={(e) => { e.preventDefault(); openArticle(theme.page); }}>{themeName}</a> 문서에서 시작해도 됩니다.</p>
+            <p className="w3d-portal-note">문서의 글은 Fandom 원신 위키(<Lic l={BY_SA_3} />)의 글을 번역·요약해 고쳐 쓴 것이고 <Lic l={BY_SA_4} />으로 배포합니다. 원문과 판은 문서마다 적혀 있습니다. <LicensePageLink /></p>
           </div>
         )}
       </div>
-      {gl && <div className={`w3d-ruler${article ? ' behind' : ''}`} ref={rulerBox} aria-hidden="true" />}
+      {theme && gl && !article && <p className="w3d-license"><LicensePageLink>출처·라이선스</LicensePageLink></p>}
       {sel && !article && (
         <aside className="w3d-card" aria-live="polite">
           <p className="w3d-type">{KIND_LABEL[sel.kind]} · {versions[sel.revealed]?.id}부터</p>
@@ -1522,11 +1465,7 @@ export default function WikiGraph3D() {
               </p>
               {snap.summary && <p className="w3d-summary">{link(snap.summary.t, cardSeen)}</p>}
               <ul className="w3d-points">{snap.bullets.map((b, i) => <li key={i}>{link(b.t, cardSeen)}</li>)}</ul>
-              <p className="w3d-src">
-                출처: {snap.sources.filter((x, i, a) => a.findIndex((y) => y.revision === x.revision) === i).map((x, i) => (
-                  <span key={x.revision}>{i > 0 && ', '}<a href={revisionUrl(x.page, x.revision)} target="_blank" rel="noreferrer">{x.page}</a> ({x.date} 판)</span>
-                ))}. Fandom 원신 위키(CC BY-SA 3.0)의 글을 요약·번역했습니다.
-              </p>
+              <SourceCredit className="w3d-src" sources={snap.sources.map((x) => ({ kind: 'wiki' as const, ...x }))} what="요약·번역했습니다." />
             </section>
           ) : lead && leadArt ? (
             <section className="w3d-snap">
@@ -1535,7 +1474,8 @@ export default function WikiGraph3D() {
                 {' '}{versions[leadArt.from]?.id} 때의 자료 기준 · 문서 첫 문단
               </p>
               <p className="w3d-summary">{rich(lead.s.map((x) => x.t).join(' '), link, cardSeen)}</p>
-              <p className="w3d-src">Fandom 원신 위키(CC BY-SA 3.0)의 글과 게임 대사를 바탕으로 썼습니다. 출처는 문서의 각주에 있습니다.</p>
+              <SourceCredit className="w3d-src" sources={lead.r.map((r) => leadArt.sources[r])} what="번역·요약해 고쳐 썼습니다."
+                extra={lead.r.some((r) => leadArt.sources[r]?.kind !== 'wiki') && ' 게임 대사와 웹 출처는 문서의 각주에 있습니다.'} />
             </section>
           ) : <p className="w3d-meta w3d-snap-none">{cardData?.id === sel.id ? '이 버전까지의 요약이 아직 없습니다.' : '불러오는 중…'}</p>)}
           <p className="w3d-meta">나오는 이야기 {sel.units}개</p>

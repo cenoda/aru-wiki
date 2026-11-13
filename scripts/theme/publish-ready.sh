@@ -9,7 +9,7 @@ MAIN=$PWD
 READY=.cache/theme/articles-all.ready.json
 STAMP=.cache/theme/published.stamp
 [ -f "$READY" ] || { echo "no ready copy yet"; exit 0; }
-if [ -f "$STAMP" ] && [ ! "$READY" -nt "$STAMP" ] && [ ! data/manual/ko-names-llm.json -nt "$STAMP" ]; then echo "nothing new"; exit 0; fi
+if [ -f "$STAMP" ] && [ ! "$READY" -nt "$STAMP" ] && [ ! data/manual/ko-names-llm.json -nt "$STAMP" ] && [ ! data/manual/ko-rewrite.json -nt "$STAMP" ]; then echo "nothing new"; exit 0; fi
 WT=/tmp/aru-publish
 git worktree remove --force "$WT" 2>/dev/null || true
 git fetch -q origin main
@@ -22,12 +22,15 @@ new=$(node -e 'console.log(require(process.argv[1]).articles.length)' "$MAIN/$RE
 if [ "$new" -le "$had" ] && [ "${FORCE:-}" != 1 ]; then echo "ready copy has $new articles, GitHub $had: not used"; touch "$MAIN/$STAMP"; exit 0; fi
 cp "$READY" "$WT/data/generated/articles-all.json"
 cp data/manual/ko-names-llm.json "$WT/data/manual/ko-names-llm.json"
+cp data/manual/ko-rewrite.json "$WT/data/manual/ko-rewrite.json"
+# hand fixes added while the chunk ran (its articles.mjs read ko-rewrite.json when it started)
+node scripts/theme/apply-rewrites.mjs "$WT/data/generated/articles-all.json"
 cd "$WT"
 ln -s "$MAIN/node_modules" node_modules
 mkdir -p public/img && cp -r "$MAIN/public/img/characters" public/img/
 n=$(node -e 'console.log(require("./data/generated/articles-all.json").articles.length)')
 if git diff --quiet; then echo "nothing to commit ($n articles)"; else
-  git add data/generated/articles-all.json data/manual/ko-names-llm.json
+  git add data/generated/articles-all.json data/manual/ko-names-llm.json data/manual/ko-rewrite.json
   git commit -q -m "data(wiki): whole-wiki articles, $n pages
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"

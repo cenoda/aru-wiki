@@ -17,8 +17,8 @@ const graph = {
   versions,
   quests: quests.map((q) => ({
     ...pick(q, ['id', 'level', 'quest_type', 'act', 'names', 'first_version', 'replayable', 'event', 'region']),
-    // the detail panel links the first source; revision ids are for the data pipeline
-    sources: (q.sources ?? []).slice(0, 1).map((s) => ({ url: s.url })),
+    // the detail panel credits the first source page at the revision the data was read from (LICENSE-CONTENT.md 1절)
+    sources: (q.sources ?? []).slice(0, 1).map((s) => pick(s, ['url', 'revision'])),
   })),
   questEdges: edges.map((e) => pick(e, ['source', 'target', 'relation', 'basis', 'revealed_version'])),
   units: {
@@ -29,7 +29,11 @@ const graph = {
   },
   recommended: recommended
     .filter((e) => !e.already_required) // the game enforces this order already; the site drops them too
-    .map((e) => pick(e, ['source', 'target', 'tier', 'reason_ko', 'gist_ko', 'links', 'revealed_version', 'review'])),
+    .map((e) => ({
+      ...pick(e, ['source', 'target', 'tier', 'reason_ko', 'gist_ko', 'links', 'revealed_version', 'review']),
+      // the wiki pages (and revisions) the reason was written from, credited under it
+      sources: (e.sources ?? []).map((s) => pick(s, ['url', 'revision'])),
+    })),
   // card figures and their icon files (docs/image-policy.md)
   figures: { acts: figures.acts, characters: Object.fromEntries(Object.entries(figures.characters).map(([k, v]) => [k, { ko: v.ko ?? null }])) },
   imageFiles: imageFiles.files.map((f) => pick(f, ['file', 'character', 'source_url', 'fetched', 'release_version'])),
@@ -52,20 +56,20 @@ await write('graph.json', graph);
 // the version picker hides what comes later.
 import { existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { layoutChart } from '../src/chartLayout.js';
+import { LAYOUT_VERSION, layoutChart } from '../src/chartLayout.js';
 /**
  * Where every star sits, for portrait and landscape screens (src/chartLayout.js), so the browser does
  * not run the layout itself (seconds on a phone at ~1,400 stars). Kept in .cache/ by the chart's
  * content, so a rebuild with the same stars and lines skips it.
  */
 async function chartLayouts(chart, lastOrder) {
-  const key = createHash('sha256').update(JSON.stringify([lastOrder, chart.nodes.map((n) => [n.id, n.hub, n.revealed]), chart.links.map((l) => [l.source, l.target, l.shared])])).digest('hex');
+  const key = createHash('sha256').update(JSON.stringify([LAYOUT_VERSION, lastOrder, chart.nodes.map((n) => [n.id, n.hub, n.revealed]), chart.links.map((l) => [l.source, l.target, l.shared])])).digest('hex');
   const cacheFile = new URL('.cache/chart-layout.json', root);
   try {
     const cached = JSON.parse(await readFile(cacheFile, 'utf8'));
     if (cached.key === key) return cached.layout;
   } catch { /* no cache yet */ }
-  const layout = { lastOrder, portrait: layoutChart(chart, lastOrder, true), landscape: layoutChart(chart, lastOrder, false) };
+  const layout = { version: LAYOUT_VERSION, lastOrder, portrait: layoutChart(chart, lastOrder, true), landscape: layoutChart(chart, lastOrder, false) };
   await mkdir(new URL('.cache/', root), { recursive: true });
   await writeFile(cacheFile, JSON.stringify({ key, layout }));
   return layout;
@@ -272,6 +276,29 @@ for (const [page, data] of Object.entries(perPage)) {
   await writeFile(new URL(`${slug}.json`, artDir), text);
 }
 console.log(`data/runtime/articles/ ${slugs.size} pages, ${(total / 1024).toFixed(0)} KB`);
+
+// ---------- full-text search in the article bodies (scripts/search/) ----------
+// data/runtime/search/meta.json (the documents: [page, article version]) and one file per shard of
+// the bigram index. The site fetches them only when someone types a search (src/bodySearch.ts).
+import { buildSearchIndex } from './search/build-index.mjs';
+import { articlePieces } from './search/text.mjs';
+/** shard files of the search index; a query fetches one per distinct shard of its bigrams */
+const SEARCH_SHARDS = 128;
+{
+  const searchDir = new URL('search/', outDir);
+  await rm(searchDir, { recursive: true, force: true });
+  await mkdir(searchDir, { recursive: true });
+  const index = buildSearchIndex(Object.entries(perPage).flatMap(([page, d]) => d.articles.map((a) => ({ page, from: a.from, pieces: articlePieces(a) }))), { shards: SEARCH_SHARDS });
+  let size = 0;
+  for (const [i, shard] of index.shards.entries()) {
+    const text = JSON.stringify(shard);
+    size += Buffer.byteLength(text);
+    await writeFile(new URL(`${i}.json`, searchDir), text);
+  }
+  const meta = JSON.stringify(index.meta);
+  await writeFile(new URL('meta.json', searchDir), meta);
+  console.log(`data/runtime/search/ ${index.meta.docs.length} documents, ${index.shards.length} shards ${(size / 1024).toFixed(0)} KB + meta ${(meta.length / 1024).toFixed(0)} KB`);
+}
 // Pages with an article that are not stars of the chart (none while every article is drawn): found by
 // search and inline links, opened as article pages. Same fields as the chart's nodes (src/lore.ts PageNode).
 await write('pages.json', Object.keys(perPage).filter((p) => !inChart.has(p)).sort().map((p) => {
@@ -281,3 +308,44 @@ await write('pages.json', Object.keys(perPage).filter((p) => !inChart.has(p)).so
 }));
 /** the file name of a page's articles; src/lore.ts articleSlug must match */
 function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
+
+// ---------- 최근 바뀜 (scripts/recent/changes.mjs): new and rewritten articles, approved reader edits ----------
+// Fetched only by the recent-changes page. A row is named only at or after its version (field g).
+{
+  const { articleHistory, readerRows, buildRecent } = await import('./recent/changes.mjs');
+  const rootPath = new URL('.', root).pathname.replace(/\/$/, '');
+  const themeArticles = existsSync(ART) ? JSON.parse(await readFile(ART, 'utf8')).articles : [];
+  const EDITS = new URL('data/manual/reader-edits.json', root);
+  const readerEdits = existsSync(EDITS) ? JSON.parse(await readFile(EDITS, 'utf8')).edits : [];
+  const revealed = new Map();
+  for (const p of pages) { const u = [...unitsOf.get(p.page)]; revealed.set(p.page, u.length ? firstOrder(u) : lastOrder); }
+  for (const p of Object.keys(perPage)) if (!revealed.has(p)) { const u = loreLinks[p]?.units ?? []; revealed.set(p, u.length ? firstOrder(u) : lastOrder); }
+  const rows = [...articleHistory(rootPath, [themeArticles, allArticles]), ...readerRows(readerEdits)];
+  await write('recent.json', buildRecent(rows, { order, revealedOf: (p) => revealed.get(p) }));
+}
+
+// ---------- red links: names that have no article yet ----------
+// Pages the lore data knows (lore-links.json: a Fandom page met in some story) with an official Korean
+// name (ko-names.json) but no article on this site. Article text marks their names as red links that
+// open the new-page form (src/Linked.tsx). Each keeps the version of its first story, so a reader at an
+// earlier version never sees a red link naming something not revealed yet. Korean names only: the
+// articles are Korean, and an English-only name would rarely match. [name, revealed order]
+{
+  const BAD_TITLE = /[<>[\]{}|#/?%]/; // src/Search.tsx NewPage: titles that would break the address
+  const hasPage = new Set([...chartIds, ...Object.keys(perPage)]);
+  const taken = new Set();
+  for (const id of hasPage) { taken.add(id); const ko = koNames[id]?.ko; if (ko) taken.add(ko); }
+  // game mechanics and menus (에너지, 스태미나, 감전, 튜토리얼) are words of the game, not topics of a lore article
+  const MECHANIC = /^(Game Systems|Combat|Combat Talents|Attributes|Menus|Tutorials|Elemental Reactions|Elemental Bursts|Elemental Skills|Progression|Location Types|Quest Terminology|Exploration|Currency|Items|Gadgets)$/;
+  const red = new Map();
+  for (const [id, l] of Object.entries(loreLinks)) {
+    const ko = koNames[id]?.ko?.trim();
+    // three letters at least: two-letter names (유리, 왕자, 생각, 지역) are mostly ordinary words too;
+    // a sub-page (Wanderer/Storyline) is part of another page, not a page of its own
+    if (hasPage.has(id) || id.includes('/') || !ko || ko.length < 3 || taken.has(ko) || BAD_TITLE.test(ko) || !l.units?.length) continue;
+    if ((l.categories ?? []).some((c) => MECHANIC.test(c))) continue;
+    const at = firstOrder(l.units);
+    if (!red.has(ko) || red.get(ko) > at) red.set(ko, at);
+  }
+  await write('redlinks.json', [...red].sort((a, b) => a[0].localeCompare(b[0], 'ko')));
+}

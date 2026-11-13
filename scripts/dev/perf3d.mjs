@@ -58,7 +58,7 @@ async function run(n) {
   if (process.env.PROFILE) { await cdp.send('Profiler.enable'); await cdp.send('Profiler.start'); }
   const t0 = Date.now();
   await page.goto(`${base}/${n ? `?stars=${n}` : ''}`);
-  await page.waitForSelector('.w3d-pillar', { timeout: 180000 });
+  await page.waitForSelector('.w3d-stage[data-ready]', { state: 'attached', timeout: 180000 });
   const ready = Date.now() - t0;
   if (process.env.PROFILE) { console.error('  load:'); await top(Number(process.env.PROFILE) || 25); }
   const m = await page.evaluate(() => performance.getEntriesByType('measure').filter((e) => e.name.startsWith('w3d')).map((e) => `${e.name}=${Math.round(e.duration)}`).join(' '));

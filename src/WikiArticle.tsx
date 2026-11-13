@@ -9,11 +9,12 @@ import { type MouseEvent, type ReactNode, useEffect, useMemo, useRef, useState }
 import { versions } from './data';
 import { type Linker, useLinker } from './Linked';
 import {
-  type ArtPara, type ArtSource, articleAt, idOf, KIND_LABEL, loadPageData, nameOf, type PageData, type PageNode, pageUrl, revisionUrl,
-  snapshotAt, type Snapshots, type Theme,
+  type ArtPara, type ArtSource, articleAt, idOf, KIND_LABEL, loadPageData, loadRedNames, nameOf, type PageData, type PageNode, pageUrl, revisionUrl,
+  type RedName, snapshotAt, type Snapshots, type Theme,
 } from './lore';
-import { editsFor, hasHumanPage, humanPage, overlay, type Para, paraText } from './readerEdits';
+import { editsFor, hasHumanPage, humanPage, overlay, type Para, paraText, versionOrder } from './readerEdits';
 import { ReportBox } from './ReportBox';
+import { BY_SA_3, BY_SA_4, historyUrl, Lic, LicensePageLink, wikiRevisions } from './license';
 import { AddBlock, MySuggestions, ParaBlock, type Target, useReaderEdits } from './Suggest';
 import './article.css';
 
@@ -69,6 +70,19 @@ export function rich(text: string, link: Linker, seen: Set<string>): ReactNode[]
   return text.split(/\*\*(.+?)\*\*/g).map((part, i) => (i % 2 ? <b key={i}>{link(part, seen)}</b> : <span key={i}>{link(part, seen)}</span>));
 }
 
+/** Who wrote the published reader paragraphs: "닉네임(작성, 2026-11-12), 익명 독자(수정)" (docs/reader-edits.md). */
+function readerCredits(paras: (Para | null | undefined)[]): string {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const p of paras) {
+    const h = p?.h;
+    if (!h || h.pending || seen.has(h.id)) continue;
+    seen.add(h.id);
+    out.push(`${h.nick || '익명 독자'}(${h.kind === 'edit' ? '수정' : '작성'}${h.date ? `, ${h.date.slice(0, 10)}` : ''})`);
+  }
+  return out.join(', ');
+}
+
 export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf, onOpen }: WikiArticleProps) {
   const root = useRef<HTMLElement>(null);
   const node = byId.get(page);
@@ -89,6 +103,9 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
   const shown = useMemo(() => (art ? overlay(art, edits) : null), [art, edits]);
   /** a page only readers wrote (no generated page has this title) */
   const written = !node ? humanPage(page, edits) : null;
+  /** no page by this title at all, at any version: a new page, titled as the reader typed it (`＋ 새 문서`, a red link).
+   * A page that exists but is not revealed yet (a generated one, or one readers wrote at a later version) keeps its name hidden. */
+  const fresh = !node && !written && pub !== null && !hasHumanPage(page, pub);
   const vId = versions[vIdx]?.id ?? '';
   const timeline = loading ? [] : data.d.timeline.filter((t) => t.v <= vIdx);
   const snapSrc = (r: number): ArtSource | undefined => { const s = current?.sources[r]; return s && { kind: 'wiki', ...s }; };
@@ -107,7 +124,12 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [art, current, timeline.length, vIdx]);
   const notes = useFootnotes(cites);
-  const link = useLinker(nodes, vIdx, page, hrefOf, onOpen);
+  // red links: names with no article yet (loaded once); pages readers wrote, shown at this version, link as pages
+  const [red, setRed] = useState<RedName[] | null>(null);
+  useEffect(() => { let live = true; loadRedNames().then((r) => live && setRed(r)); return () => { live = false; }; }, []);
+  const writtenTitles = useMemo(() => [...new Set((pub?.edits ?? [])
+    .filter((e) => e.kind === 'page' && versionOrder(e.v) >= 0 && versionOrder(e.v) <= vIdx).map((e) => e.page))], [pub, vIdx]);
+  const link = useLinker(nodes, vIdx, page, hrefOf, onOpen, red, writtenTitles);
 
   const related = useMemo(() => {
     if (!node) return [];
@@ -122,9 +144,9 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
   useEffect(() => { root.current?.scrollTo(0, 0); }, [page]);
   useEffect(() => {
     const before = document.title;
-    document.title = revealed && node ? `${nameOf(node)} - aru.wiki` : written ? `${written.title} - aru.wiki` : 'aru.wiki';
+    document.title = revealed && node ? `${nameOf(node)} - aru.wiki` : written ? `${written.title} - aru.wiki` : fresh ? `${page} - aru.wiki` : 'aru.wiki';
     return () => { document.title = before; };
-  }, [revealed, node, written?.title]);
+  }, [revealed, node, written?.title, fresh, page]);
 
   /** In-page links: plain clicks stay in the app; modified clicks open the address as usual. */
   const go = (id: string) => (e: MouseEvent) => {
@@ -176,7 +198,11 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
           <MySuggestions page={page} />
           <section id="license">
             <h2>출처와 라이선스</h2>
-            <p className="wa-small">이 문서의 글은 쓴 사람이 CC BY-SA 4.0으로 배포하는 데 동의한 글입니다. 게임의 세계관·명칭·대사에 관한 권리는 HoYoverse에 있습니다. 저작권 침해 신고(게시 중단 요구)와 삭제 요청은 <a href="mailto:contact@aru.wiki">contact@aru.wiki</a>로 받습니다.</p>
+            <ul className="wa-small wa-license">
+              <li><b>이 문서의 글</b>: 독자가 직접 쓰고 <Lic l={BY_SA_4} />으로 배포하는 데 동의한 글입니다{readerCredits(written.p) && <>. 쓴 사람: {readerCredits(written.p)}</>}. 다시 쓸 때는 이 문서 주소와 쓴 사람을 밝히고 같은 라이선스로 배포해 주세요.</li>
+              <li><b>제외</b>: 게임의 세계관·명칭·대사에 관한 권리는 HoYoverse에 있으며 위 라이선스의 대상이 아닙니다.</li>
+              <li>저작권 침해 신고(게시 중단 요구)와 삭제 요청은 <a href="mailto:contact@aru.wiki">contact@aru.wiki</a>로 받습니다. <LicensePageLink>사이트 전체의 출처·라이선스 안내</LicensePageLink></li>
+            </ul>
           </section>
         </article>
       </main>
@@ -189,8 +215,9 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
     return (
       <main className="wa" ref={root}>
         <article className="wa-body">
-          <h1 className="wa-title">공개되지 않은 항목</h1>
-          <p className="wa-hidden">{node || later ? `이 항목은 ${versions[vIdx]?.id ?? ''}까지의 버전에서는 공개되지 않았습니다. 위에서 버전을 바꾸면 볼 수 있습니다.` : `「${page}」 문서는 아직 없습니다.`}</p>
+          <h1 className="wa-title">{fresh ? page : '공개되지 않은 항목'}</h1>
+          {fresh && <p className="wa-sub">aru.wiki · 새 문서</p>}
+          <p className="wa-hidden">{node || later ? `이 항목은 ${versions[vIdx]?.id ?? ''}까지의 버전에서는 공개되지 않았습니다. 위에서 버전을 바꾸면 볼 수 있습니다.` : '이 문서는 아직 없습니다. 첫 문단을 써서 문서를 시작할 수 있습니다.'}</p>
           {canWrite && <AddBlock big target={{ kind: 'page', page, v: vId }} label="이 문서의 첫 문단 쓰기" />}
           <MySuggestions page={page} />
         </article>
@@ -201,7 +228,9 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
   const name = nameOf(node);
   /** what fixing this paragraph would send */
   const fix = (p: Para, section: string | null): Target | undefined => (art ? { kind: 'edit', page, v: vId, from: versions[art.from]?.id, section, orig: paraText(p) } : undefined);
-  const byReaders = !!shown && ([shown.lead, ...shown.sections.flatMap((x) => x.p), ...shown.loose].some((p) => p?.h && !p.h.pending));
+  const shownParas = shown ? [shown.lead, ...shown.sections.flatMap((x) => x.p), ...shown.loose] : [];
+  const byReaders = shownParas.some((p) => p?.h && !p.h.pending);
+  const readerNames = readerCredits(shownParas);
   const sections = [
     ...(art ? art.sections.map((x, i) => ({ id: `s${i + 1}`, label: x.h })) : []),
     !art && current && { id: 'overview', label: '개요' },
@@ -213,6 +242,7 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
   const basis = art ?? current;
   const chars = art ? [art.lead, ...art.sections.flatMap((x) => x.p)].reduce((n, p) => n + (p?.s.reduce((m, x) => m + x.t.length, 0) ?? 0), 0) : 0;
   const hasWeb = art?.sources.some((s) => s.kind === 'web');
+  const wikiPages = wikiRevisions(cites);
 
   return (
     <main className="wa" ref={root}>
@@ -352,7 +382,18 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
 
         <section id="license">
           <h2>출처와 라이선스</h2>
-          <p className="wa-small">각주의 Fandom 원신 위키 글(CC BY-SA 3.0)을 번역·요약해 고쳐 썼고, 웹 출처에서는 사실만 가져와 직접 썼습니다. 이 문서의 글도 CC BY-SA로 쓸 수 있습니다. 게임 대사와 이미지의 권리는 HoYoverse에 있으며, 대사는 한 줄 이하로만 옮겨 실었습니다.{byReaders && ' 「독자 수정」·「독자 작성」 표시가 붙은 글은 독자가 쓰고 CC BY-SA 4.0 배포에 동의한 글이며, 운영자가 읽고 실었습니다.'} 저작권 침해 신고(게시 중단 요구)와 삭제 요청은 <a href="mailto:contact@aru.wiki">contact@aru.wiki</a>로 받습니다.</p>
+          <ul className="wa-small wa-license">
+            {wikiPages.length > 0 && (
+              <li><b>원문</b>: Fandom 원신 위키 기여자들이 쓴 다음 문서의 글이며 <Lic l={BY_SA_3} />을 따릅니다. {wikiPages.map((x, i) => (
+                <span key={x.page}>{i > 0 && ', '}「<a href={pageUrl(x.page)} target="_blank" rel="noreferrer">{x.page}</a>」(<a href={revisionUrl(x.page, x.revision)} target="_blank" rel="noreferrer">{x.date} 판</a>, <a href={historyUrl(x.page)} target="_blank" rel="noreferrer" title="이 문서를 쓴 위키 기여자 목록">기여자</a>)</span>
+              ))}. 문장마다 쓴 판은 각주에 있습니다.</li>
+            )}
+            <li><b>바꾼 점</b>: 위 글을 기계가 한국어로 번역·요약하고 다시 구성해 썼고, 다른 회사의 모델이 근거와 대조해 근거 없는 문장을 뺐습니다. <span className="wa-interp-tag">해석</span> 표시 문장은 이 사이트가 사실을 엮어 쓴 해석입니다.{hasWeb && ' 웹 출처에서는 사실만 가져와 직접 썼습니다.'}</li>
+            <li><b>이 문서의 글</b>: 번역·각색한 글을 <Lic l={BY_SA_4} />으로 배포합니다. 원문에 대한 위의 출처 표시와 라이선스는 그대로 남습니다. 다시 쓸 때는 이 문서 주소와 위의 원문을 밝히고 같은 조건으로 배포해 주세요.</li>
+            {byReaders && <li><b>독자가 쓴 글</b>: 「독자 수정」·「독자 작성」 표시가 붙은 글은 독자가 쓰고 <Lic l={BY_SA_4} /> 배포에 동의한 글이며, 운영자가 읽고 실었습니다{readerNames && <>. 쓴 사람: {readerNames}</>}. 독자가 고친 문단은 위 원문을 바탕으로 한 글이므로 원문의 출처 표시도 함께 따릅니다.</li>}
+            <li><b>제외</b>: 게임 대사(인용 상자의 영어 원문과 번역 포함)·명칭·이미지에 관한 권리는 HoYoverse에 있으며 위 CC 라이선스의 대상이 아닙니다. 대사는 한 줄 이하로만 옮겨 실었습니다.</li>
+            <li>저작권 침해 신고(게시 중단 요구)와 삭제 요청은 <a href="mailto:contact@aru.wiki">contact@aru.wiki</a>로 받습니다. <LicensePageLink>사이트 전체의 출처·라이선스 안내</LicensePageLink></li>
+          </ul>
         </section>
 
         <MySuggestions page={page} />

@@ -25,7 +25,7 @@
 //        [--order units]   (main pages first)   [--skip-theme khaenriah]   (pages that theme already has)
 import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
-import { appendFile, readFile, writeFile } from 'node:fs/promises';
+import { appendFile, readFile, rename, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { gunzipSync } from 'node:zlib';
 import { parseArgs } from 'node:util';
@@ -300,6 +300,7 @@ if (opt.limit) todo = todo.filter((e) => { const r = results.get(`${e.node}|${e.
 let calls = 0;
 const { ask, askAny, COMPANY } = await import('../recommend/llm.mjs');
 let ko = (t) => t;
+let koReady = false;
 
 const VERIFY_BATCH = 6;
 async function one(e) {
@@ -434,28 +435,45 @@ async function one(e) {
 // per-sentence choices (data/manual/ko-context.json: Master = 스승 or 주인), after all names
 const inContext = await contextLocalizer();
 const shownPara = (p) => p.status === 'accepted' || p.status === 'trimmed';
-const save = async () => {
+let saving = Promise.resolve();
+const writeOut = async () => {
   for (const a of results.values()) {
     for (const p of a.paragraphs) for (const s of p.sentences) {
       s.t_raw = untag(s.t_raw);
-      s.t = inContext(ko(s.t_raw), s.t_raw);
-      // a polish answer holding several lines ran the next items into this one ("…\n#1 …\n#2 …"): not used
-      if (s.polish?.from === s.t && !s.polish.text.includes('\n')) s.t = s.polish.text;
+      // Do not overwrite already-localized sentences (and their polish) during mid-run saves before final makeKo.
+      if (koReady || s.t == null) {
+        s.t = inContext(ko(s.t_raw), s.t_raw);
+        // a polish answer holding several lines ran the next items into this one ("…\n#1 …\n#2 …"): not used
+        if (s.polish?.from === s.t && !s.polish.text.includes('\n')) s.t = s.polish.text;
+      }
     }
-    for (const b of a.quote_boxes) { b.t = ko(b.t_raw); b.speaker_ko = ko(b.speaker); }
-    for (const p of a.paragraphs) p.heading = p.section === null ? null : ko(p.section);
-    for (const p of a.paragraphs) p.latin_left = latinNames(p.sentences.filter((s) => !s.dropped).map((s) => s.t).join(' '));
+    for (const b of a.quote_boxes) {
+      if (koReady || b.t == null) { b.t = ko(b.t_raw); b.speaker_ko = ko(b.speaker); }
+    }
+    for (const p of a.paragraphs) {
+      if (koReady || p.heading === undefined) p.heading = p.section === null ? null : ko(p.section);
+      if (koReady || p.latin_left === undefined) p.latin_left = latinNames(p.sentences.filter((s) => !s.dropped).map((s) => s.t).join(' '));
+    }
   }
-  await writeFile(OUT, `${JSON.stringify({
+  const tmp = `${OUT}.tmp`;
+  await writeFile(tmp, `${JSON.stringify({
     theme, note: 'Korean articles written by an LLM from the Fandom wiki as of each version (CC BY-SA 3.0), other pages that mention the subject, in-game dialogue lines and allowed web facts (see sources); every sentence checked by a second model. Interpretation sentences are marked interp. Unreviewed.',
     articles: [...results.values()].sort((a, b) => a.node.localeCompare(b.node) || vOrder.get(a.from_version) - vOrder.get(b.from_version)),
   }, null, 1)}\n`);
+  await rename(tmp, OUT);
+};
+const save = () => {
+  saving = saving.then(writeOut, writeOut);
+  return saving;
 };
 if (opt.dry) { // print the material for the first article and stop
   const input = inputOf(todo[0]);
   console.log(input.counts, input.text.length, 'chars');
   console.log(input.text.split('\n').filter((l) => /^\[(M|Q|W)/.test(l)).slice(0, 40).join('\n'));
   process.exit(0);
+}
+if (todo.length) {
+  ko = await makeKo([...results.values()].flatMap((a) => [...a.paragraphs.flatMap((p) => p.sentences.map((s) => s.t_raw)), ...a.quote_boxes.map((b) => b.t_raw)]), { log: () => {} });
 }
 const queue = [...todo];
 const retried = new Set(); // the same plan entry object: isLatest compares by identity
@@ -472,6 +490,7 @@ await Promise.all(Array.from({ length: Number(opt.jobs) }, async () => {
 }));
 // names last, from every text written so far (looking up names left needs the whole set)
 ko = await makeKo([...results.values()].flatMap((a) => [...a.paragraphs.flatMap((p) => p.sentences.map((s) => s.t_raw)), ...a.quote_boxes.map((b) => b.t_raw)]), { log: () => {} });
+koReady = true;
 await save();
 
 // Clean-up: stray ordinary English words ("portal", "cannon") or a word in another script, rewritten

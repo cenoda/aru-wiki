@@ -7,7 +7,7 @@ import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   actGraph, displayName, figureOf, IMAGE_NOTICE, isUnit, itemById, type MapItem, type Quest, questEdges, recommendedGraph, type RecommendedEdge, TIER_RANK,
   type QuestType, questById, quests, REGION_KO, regionEntry, TYPE_LABEL, type Unit, unitById, UNIT_LABEL, unitOfQuest, units,
-  type Version, versionOrder, versions,
+  type Version, versionOrder, versions, type WikiSource,
 } from './data';
 import { recommendationGist, recommendationLead } from './recText';
 import { Logo } from './Logo';
@@ -18,6 +18,7 @@ import { focusUrl, QUESTS } from './questSearch';
 import { type PageNode } from './lore';
 import { articleUrl, pathNameOf } from './route';
 import { ThemeToggle } from './theme';
+import { BY_SA_3, BY_SA_4, Lic, LicensePageLink } from './license';
 import { Emblem, EventMark, SeriesBadge } from './emblems';
 import ELK, { type ElkExtendedEdge } from 'elkjs/lib/elk.bundled.js';
 import './site.css';
@@ -1275,7 +1276,7 @@ function Atlas() {
           />
         </div>
 
-        <p className="img-notice">인물 아이콘: {IMAGE_NOTICE} 프로젝트의 CC BY-SA 적용 대상이 아닙니다.</p>
+        <p className="img-notice">인물 아이콘: {IMAGE_NOTICE} 프로젝트의 CC BY-SA 적용 대상이 아닙니다. · <LicensePageLink>출처·라이선스</LicensePageLink></p>
 
         {sel && neighbours && (
           <aside className={`info ${typeClass(sel)}`}>
@@ -1302,6 +1303,7 @@ function Atlas() {
               <HungUnits key={sel.id} list={neighbours.hung} entry={entryActs.get(sel.id)} go={select} />
             )}
             {isUnit(sel) ? <UnitQuests unit={sel} /> : <ActQuests actId={sel.id} />}
+            <QuestCredit key={sel.id} sel={sel} />
             <ReportBox nodeId={sel.id} version={versions.find((v) => v.order === vIdx)?.id ?? ''} />
           </aside>
         )}
@@ -1330,6 +1332,34 @@ function LinkGroups({ focus, before, after, go }: { focus: string; before: strin
       </div>
     </div>
   ));
+}
+
+// ---------- where the panel's data came from (LICENSE-CONTENT.md 1절) ----------
+const wikiPage = (url: string) => { try { return decodeURIComponent(url.replace(/^.*\/wiki\//, '')).replace(/_/g, ' '); } catch { return url; } };
+/** 「Page」(판, 기여자) for each wiki page, one per page. */
+function WikiPages({ sources }: { sources: WikiSource[] }) {
+  return sources.map((x, i) => (
+    <span key={x.url}>{i > 0 && ', '}「<a href={x.url} target="_blank" rel="noreferrer">{wikiPage(x.url)}</a>」
+      ({x.revision ? <a href={`${x.url}?oldid=${x.revision}`} target="_blank" rel="noreferrer">판 {x.revision}</a> : '판 미상'}, <a href={`${x.url}?action=history`} target="_blank" rel="noreferrer" title="이 문서를 쓴 위키 기여자 목록">기여자</a>)</span>
+  ));
+}
+const uniqueSources = (list: (WikiSource | undefined)[]) => [...new Map(list.filter((x): x is WikiSource => !!x).map((x) => [x.url, x])).values()];
+/** The wiki pages behind the act or unit: its own page first, then its quests' pages (folded when many). */
+function QuestCredit({ sel }: { sel: MapItem }) {
+  const own = isUnit(sel) ? [] : sel.sources;
+  const members = (isUnit(sel) ? sel.members.map((id) => questById.get(id)) : questsInAct(sel.id)).map((q) => q?.sources[0]);
+  const all = uniqueSources([...own, ...members]);
+  if (!all.length) return null;
+  const SHOW = 2;
+  return (
+    <section className="q-credit">
+      <div className="q-credit-src">
+        출처: Fandom 원신 위키 <WikiPages sources={all.slice(0, SHOW)} />
+        {all.length > SHOW && <details><summary>그 밖의 임무 문서 {all.length - SHOW}개</summary><WikiPages sources={all.slice(SHOW)} /></details>}
+      </div>
+      <p>임무 이름·분류·순서·공개 버전은 위 문서의 정보 상자와 분류에서 정리했고, 한국어 이름은 위키에 적힌 공식 표기입니다. 「먼저 하면 좋은 이야기」의 이유는 위키 문서를 바탕으로 기계가 요약해 쓴 글입니다. 위키 글 <Lic l={BY_SA_3} /> · 이 사이트의 글 <Lic l={BY_SA_4} /> · 대사와 명칭의 권리는 HoYoverse · <LicensePageLink>안내</LicensePageLink></p>
+    </section>
+  );
 }
 
 function ActQuests({ actId }: { actId: string }) {
@@ -1513,6 +1543,7 @@ function Recs({ edges, targetName, go }: { edges: RecommendedEdge[]; targetName:
                 {gist && <p className="rec-gist">{gist}</p>}
                 {edge.tier !== 'strong' && <span className="tag neutral">{edge.tier === 'medium' ? '배경 이해' : '참고'}</span>}
                 <p className="rec-reason">{edge.reason_ko}</p>
+                {!!edge.sources?.length && <p className="rec-src">근거: Fandom 원신 위키 <WikiPages sources={uniqueSources(edge.sources)} />의 글과 대사를 바탕으로 기계가 썼습니다(위키 글 <Lic l={BY_SA_3} />).</p>}
               </div>
             )}
           </li>

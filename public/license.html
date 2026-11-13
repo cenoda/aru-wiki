@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<!-- the site-wide sources and licence page: a static file (opens without scripts), linked from every view (src/license.tsx LICENSE_PAGE). Keep in step with LICENSE-CONTENT.md. -->
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('aru-theme')==='light'?'light':'dark'}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>출처와 라이선스 - aru.wiki</title>
+<meta name="description" content="aru.wiki의 글이 어디서 왔는지, 어떤 라이선스로 배포되는지, 다시 쓸 때 무엇을 밝혀야 하는지 정리한 안내입니다." />
+<link rel="canonical" href="https://aru.wiki/license.html" />
+<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+<style>
+  :root { color-scheme: dark; --bg: #15161d; --card: #1e2029; --text: #ece5d8; --muted: #a39d90; --line: #30323d; --accent: #d3bc8e; }
+  :root[data-theme=light] { color-scheme: light; --bg: #eef3f9; --card: #fdfeff; --text: #262a36; --muted: #636a7a; --line: #dbe3ee; --accent: #3f4a72; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "IBM Plex Sans KR", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; line-height: 1.7; }
+  main { max-width: 46em; margin: 0 auto; padding: 24px 20px 64px; }
+  .top { font-size: .9rem; }
+  a { color: var(--accent); }
+  h1 { font-family: "Noto Serif KR", serif; font-size: 1.8rem; margin: 18px 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+  .sub, small { color: var(--muted); }
+  ul { padding-left: 1.2em; } li { margin: 4px 0; }
+  code { font-size: .9em; }
+  .box { background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 10px 14px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="top"><a href="/">← aru.wiki</a></p>
+  <h1>출처와 라이선스</h1>
+  <p class="sub">aru.wiki의 글이 어디서 왔고, 어떤 조건으로 배포되며, 다시 쓸 때 무엇을 밝혀야 하는지 정리했습니다. 이 안내의 원본은 리포지토리의 <a href="https://github.com/cenoda/aru-wiki/blob/main/LICENSE-CONTENT.md">LICENSE-CONTENT.md</a>입니다. 법률 자문이 아니며, 실제 조건은 아래에 링크한 라이선스 원문이 정합니다.</p>
+
+  <h2>1. 문서의 글: Fandom 원신 위키에서</h2>
+  <ul>
+    <li>문서·카드·연표의 글은 <a href="https://genshin-impact.fandom.com/">Fandom 원신 위키(Genshin Impact Wiki)</a>의 위키 작성자 텍스트를 바탕으로 합니다. 이 텍스트는 별도 표시가 없는 한 <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.ko">CC BY-SA 3.0 Unported</a>(<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode.en">법적 전문</a>)을 따릅니다.</li>
+    <li><b>바꾼 점</b>: 위키 글을 기계(LLM)가 한국어로 번역·요약하고 다시 구성해 썼고, 다른 회사의 모델이 문장마다 근거와 대조해 근거 없는 문장을 뺐습니다. 「해석」 표시 문장은 이 사이트가 사실을 엮어 쓴 해석입니다. 사람은 아직 모든 문장을 확인하지 않았습니다(「미검수」 표시).</li>
+    <li><b>출처 표시</b>: 문서마다 아래쪽 「출처와 라이선스」에 원문 문서, 그 글을 가져온 판(리비전, <code>?oldid=</code>), 그 문서를 쓴 위키 기여자 목록(문서 역사)을 링크합니다. 문장마다 어느 판에서 왔는지는 각주에 있습니다. 3D 지도의 카드와 임무 지도의 정보 칸에도 같은 링크를 붙입니다.</li>
+    <li><b>이 사이트의 글</b>: 번역·각색한 글은 CC BY-SA 3.0 §4(b)에 따라 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">CC BY-SA 4.0 국제</a>(<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.ko">법적 전문</a>)으로 배포하되, 원저작물의 권리·라이선스 고지와 출처 표시는 그대로 유지합니다. 원문 전체를 4.0으로 다시 허락한다는 뜻이 아닙니다. 그대로 옮긴 원문은 3.0을 유지합니다.</li>
+    <li><b>웹 출처</b>: 공식 사이트·위키백과 등 웹 출처에서는 사실만 가져와 직접 썼습니다. 각주에 주소와 확인한 날짜가 있습니다. 다른 라이선스(나무위키의 CC BY-NC-SA 등)의 문장은 넣지 않습니다.</li>
+    <li><b>임무 지도</b>: 임무 이름·분류·순서·공개 버전은 Fandom 원신 위키의 정보 상자와 분류에서 정리했고, 한국어 이름은 위키에 적힌 공식 표기입니다. 「먼저 하면 좋은 이야기」의 이유는 그 임무들의 위키 문서를 바탕으로 기계가 쓴 글입니다. 정보 칸에 원문 문서·판·기여자 링크가 있습니다.</li>
+  </ul>
+
+  <h2>2. 독자가 쓴 글</h2>
+  <ul>
+    <li>독자는 로그인 없이 문단을 고치거나 글을 보태거나 새 문서를 쓸 수 있습니다. 보낼 때 직접 쓴 글이라는 점과 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">CC BY-SA 4.0</a>으로 배포하는 데 동의해야 하며, 운영자가 읽고 승인한 글만 다른 사람에게 보입니다.</li>
+    <li>실린 글에는 「독자 수정」·「독자 작성」 표시와 쓴 사람이 남긴 닉네임이 붙고, 그 문서의 「출처와 라이선스」에 쓴 사람(닉네임이 없으면 「익명 독자」)과 날짜가 적힙니다.</li>
+    <li>독자가 고친 문단은 위키 원문을 바탕으로 한 글이므로, 원문에 대한 출처 표시와 라이선스도 함께 따릅니다.</li>
+  </ul>
+
+  <h2>3. 다시 쓰려면</h2>
+  <div class="box">
+    <p>라이선스 원문이 정한 조건을 따라 주세요. 이 사이트가 문서마다 적어 둔 것은 다음과 같습니다.</p>
+    <ul>
+      <li>aru.wiki 문서의 제목과 주소, 그리고 그 문서의 「출처와 라이선스」에 적힌 원문(Fandom 원신 위키 문서, 판, 기여자)과 독자 작성자</li>
+      <li>라이선스 이름과 링크: 원문 <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.ko">CC BY-SA 3.0</a>, aru.wiki의 글 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">CC BY-SA 4.0</a></li>
+      <li>바꾼 사실(번역·요약·재구성, 그리고 여러분이 더 바꾼 점)</li>
+      <li>고쳐서 배포하면 같은 조건(동일조건변경허락)으로 배포</li>
+    </ul>
+  </div>
+
+  <h2>4. 라이선스 대상이 아닌 것</h2>
+  <ul>
+    <li>『원신(Genshin Impact)』의 게임 IP(세계관, 명칭, 대사, 이미지 등)에 관한 권리는 COGNOSPHERE Pte., Ltd. (HoYoverse / miHoYo) 등 해당 권리자에게 있으며, 위 CC 라이선스는 이 권리에 대해 어떤 허락도 하지 않습니다. 문서의 인용 상자에 실은 게임 대사(영어 원문과 번역)도 여기에 해당합니다. 대사는 한 줄 이하로만 옮겨 싣습니다.</li>
+    <li>인물 아이콘: © All rights reserved by COGNOSPHERE. Other properties belong to their respective owners. 프로젝트의 CC BY-SA 적용 대상이 아니며, 다시 배포할 권리를 드리지 않습니다. 파일의 출처(Enka.Network)·받은 날짜·공개 버전은 임무 지도의 정보 칸에 적습니다. 자세한 방식은 <a href="https://github.com/cenoda/aru-wiki/blob/main/docs/image-policy.md">이미지 방침</a>에 있습니다.</li>
+    <li>이미지가 없는 카드의 지역 문장(풍차, 돌기둥 봉우리 등)은 이 프로젝트가 직접 그린 것으로 코드와 같이 <a href="https://www.mozilla.org/MPL/2.0/">MPL-2.0</a>을 따릅니다.</li>
+    <li>사이트의 코드: <a href="https://www.mozilla.org/MPL/2.0/">MPL-2.0</a> (<a href="https://github.com/cenoda/aru-wiki">리포지토리</a>)</li>
+  </ul>
+
+  <h2>5. 보증 없음</h2>
+  <p>이 사이트의 글은 있는 그대로 제공되며, 정확하거나 완전하다고 보증하지 않습니다. 각 CC 라이선스의 보증 부인 조항도 함께 적용됩니다.</p>
+
+  <h2>6. 문의와 삭제 요청</h2>
+  <p>aru.wiki는 HoYoverse와 제휴하거나 승인받지 않은 비영리 팬 프로젝트입니다. 권리 관련 문의, 저작권 침해 신고(게시 중단 요구), 수정·삭제 요청은 <a href="mailto:contact@aru.wiki">contact@aru.wiki</a>로 받습니다.</p>
+</main>
+</body>
+</html>

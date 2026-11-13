@@ -9,11 +9,14 @@
 // - every page pushes the others away (charge),
 // - ecliptic: a strong pull to each page's height (its version on the time axis), a gentle one to
 //   the middle in the plane; pages with no lines are pulled in harder instead of drifting to the rim,
-// - the centre page sits on the plane (y = 0) but is not pinned in it.
+// - the centre page (Teyvat) is pinned at the origin, the centre of the version rings and the point
+//   the chart turns round.
 import { forceCenter, forceLink, forceManyBody, forceSimulation, forceX, forceY, forceZ } from 'd3-force-3d';
 
 /** steps of the layout before the chart is drawn (it does not move afterwards) */
 export const LAYOUT_TICKS = 500;
+/** changes whenever the forces change, so a layout saved by an older build is not reused */
+export const LAYOUT_VERSION = 2;
 
 /**
  * Length of the time axis. Landscape: 170. Portrait screens get a taller axis so the chart fills their
@@ -38,7 +41,7 @@ export function layoutChart(chart, lastOrder, portrait) {
   const maxShared = Math.max(2, ...chart.links.map((l) => l.shared));
   const strength = (l) => Math.log(l.shared / 2 + 1) / Math.log(maxShared / 2 + 1);
   const linked = new Set(chart.links.flatMap((l) => [endId(l.source), endId(l.target)]));
-  const nodes = chart.nodes.map((n) => (n.hub ? { id: n.id, hub: true, revealed: n.revealed, fy: 0 } : { id: n.id, hub: false, revealed: n.revealed }));
+  const nodes = chart.nodes.map((n) => (n.hub ? { id: n.id, hub: true, revealed: n.revealed, fx: 0, fy: 0, fz: 0 } : { id: n.id, hub: false, revealed: n.revealed }));
   const links = chart.links.map((l) => ({ source: endId(l.source), target: endId(l.target), shared: l.shared }));
   const pull = (n) => (linked.has(n.id) ? 0.03 : 0.25);
   // three-forcegraph's simulation: link, charge, centre; alpha decay 0.0228; charge -60 in 3D

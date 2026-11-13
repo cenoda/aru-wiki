@@ -47,6 +47,9 @@
 /* inline links to other articles, in the card and in articles (Linked.tsx) */
 .site a.wl { color: var(--accent); text-decoration: none; }
 .site a.wl:hover { text-decoration: underline; }
+/* red links: a name with no article yet; opens the new page (first paragraph). Red in both themes, AA contrast on the card */
+.site a.wl-red { color: #b3261e; }
+:root:not([data-theme=light]) .site a.wl-red { color: #f28b82; }
 
 @media (max-width: 640px) {
   .site.w3d header nav { width: 100%; gap: 8px; flex-wrap: wrap; }
@@ -56,22 +59,6 @@
 /* the long legend hint gives way to the search box instead of pushing the header onto two lines */
 @media (max-width: 1500px) { .site.w3d .legend .hint { display: none; } }
 .site.w3d .w3d-portal-logo { display: flex; align-items: center; gap: .3em; } .site.w3d .w3d-portal-logo svg { width: .9em; height: .9em; }
-
-/* time pillar: SVG drawn from 3D points over the chart (see placeRuler) */
-.site.w3d .w3d-ruler { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 3; pointer-events: none;
-  transition: opacity .3s; color: #8d9bd0; --now: #f2a074; }
-.site.w3d.day .w3d-ruler { color: #6a7699; --now: #cf5f33; }
-.site.w3d .w3d-ruler.behind { visibility: hidden; }
-.site.w3d .w3d-pillar { position: absolute; left: 0; top: 0; overflow: visible; font-size: 11px;
-  font-variant-numeric: tabular-nums; font-family: "IBM Plex Sans KR", sans-serif; }
-.site.w3d .w3d-tube { stroke: currentColor; stroke-width: 9; stroke-linecap: round; opacity: .07; }
-.site.w3d .w3d-rail { stroke: currentColor; stroke-width: 1; opacity: .35; }
-.site.w3d .w3d-lit { stroke: var(--now); stroke-width: 2; stroke-linecap: round; opacity: .85; filter: drop-shadow(0 0 3px var(--now)); }
-.site.w3d .w3d-ring { fill: none; stroke: currentColor; stroke-width: 1; opacity: .4; }
-.site.w3d .w3d-ring[data-past="true"] { opacity: .75; }
-.site.w3d .w3d-ring-text { fill: currentColor; opacity: .8; transition: opacity .2s; }
-.site.w3d .w3d-now-ring { fill: var(--now); fill-opacity: .25; stroke: var(--now); stroke-width: 1.5; filter: drop-shadow(0 0 4px var(--now)); }
-.site.w3d .w3d-now-text { fill: var(--now); font-weight: 600; font-size: 12px; }
 
 /* `＋ 새 문서` beside the search box (Search.tsx → NewPage) */
 .newpage { position: relative; display: inline-flex; }
@@ -88,3 +75,6 @@
 .site .newpage-box button[type=submit] { padding: 6px 14px; font: inherit; font-size: .9rem; color: #fff; background: var(--accent); border: 0; border-radius: 2px; cursor: pointer; }
 .site .newpage-box button[type=submit]:disabled { opacity: .4; cursor: default; }
 @media (max-width: 640px) { .newpage-box { right: auto; left: 0; } }
+/* the site-wide sources and licence page, always reachable from the chart (bottom left; the card is bottom right) */
+.site.w3d .w3d-license { position: absolute; left: 10px; bottom: 6px; z-index: 3; margin: 0; padding: 1px 6px; border-radius: 2px; font-size: .7rem; background: color-mix(in srgb, var(--card) 70%, transparent); }
+.site.w3d .w3d-license a { color: var(--muted); }

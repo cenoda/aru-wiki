@@ -57,22 +57,6 @@
 @media (max-width: 1500px) { .site.w3d .legend .hint { display: none; } }
 .site.w3d .w3d-portal-logo { display: flex; align-items: center; gap: .3em; } .site.w3d .w3d-portal-logo svg { width: .9em; height: .9em; }
 
-/* time pillar: SVG drawn from 3D points over the chart (see placeRuler) */
-.site.w3d .w3d-ruler { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 3; pointer-events: none;
-  transition: opacity .3s; color: #8d9bd0; --now: #f2a074; }
-.site.w3d.day .w3d-ruler { color: #6a7699; --now: #cf5f33; }
-.site.w3d .w3d-ruler.behind { visibility: hidden; }
-.site.w3d .w3d-pillar { position: absolute; left: 0; top: 0; overflow: visible; font-size: 11px;
-  font-variant-numeric: tabular-nums; font-family: "IBM Plex Sans KR", sans-serif; }
-.site.w3d .w3d-tube { stroke: currentColor; stroke-width: 9; stroke-linecap: round; opacity: .07; }
-.site.w3d .w3d-rail { stroke: currentColor; stroke-width: 1; opacity: .35; }
-.site.w3d .w3d-lit { stroke: var(--now); stroke-width: 2; stroke-linecap: round; opacity: .85; filter: drop-shadow(0 0 3px var(--now)); }
-.site.w3d .w3d-ring { fill: none; stroke: currentColor; stroke-width: 1; opacity: .4; }
-.site.w3d .w3d-ring[data-past="true"] { opacity: .75; }
-.site.w3d .w3d-ring-text { fill: currentColor; opacity: .8; transition: opacity .2s; }
-.site.w3d .w3d-now-ring { fill: var(--now); fill-opacity: .25; stroke: var(--now); stroke-width: 1.5; filter: drop-shadow(0 0 4px var(--now)); }
-.site.w3d .w3d-now-text { fill: var(--now); font-weight: 600; font-size: 12px; }
-
 /* `＋ 새 문서` beside the search box (Search.tsx → NewPage) */
 .newpage { position: relative; display: inline-flex; }
 .newpage.big { margin-top: 12px; }

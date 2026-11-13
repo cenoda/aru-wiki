@@ -391,8 +391,6 @@ export default function WikiGraph3D() {
   const showRefs = useRef<() => void>(() => {});
   /** Recolour, dim and show the tails of one-sided stars. */
   const paintTails = useRef<() => void>(() => {});
-  /** the time ruler drawn over the left edge of the chart */
-  const rulerBox = useRef<HTMLDivElement>(null);
   // The card sits in the fixed page, so its height limit has to leave out the header; on phones the header wraps
   // to several lines and the card's top (with "자세히 보기") used to slide under it with nothing left to scroll.
   const headBox = useRef<HTMLDivElement>(null);
@@ -636,10 +634,6 @@ export default function WikiGraph3D() {
 
     let fitted = false;
     let layoutTimer: number | undefined;
-    let placeRuler = () => {};
-    /** where the time pillar stands on the chart's plane (set once the camera is placed) */
-    let pillar: { x: number; z: number } | null = null;
-    let pillarReady = false;
     /** each star's direction for corner-free lines, from the layout (which stays still once settled) */
     let axisCache: Map<string, Vector3> | null = null;
     const axes = () => {
@@ -659,6 +653,8 @@ export default function WikiGraph3D() {
     const tethers: { id: string; line: Line<BufferGeometry, LineDashedMaterial> }[] = [];
     const refLines: { from: string; to: string; both: boolean; line: Line2; mat: LineMaterial }[] = [];
     const tails: { id: string; line: Line2; mat: LineMaterial; fade: number[] }[] = [];
+    const versionRings: { order: number; line: Line2; mat: LineMaterial }[] = [];
+    let nowRing: { line: Line2; mat: LineMaterial } | null = null;
     /** tails take the line colour, fading to the sky; dim with their star, hidden with it */
     paintTails.current = () => {
       const look = lookNow.current;
@@ -685,113 +681,45 @@ export default function WikiGraph3D() {
       wakeUp();
     };
     showTethers.current = () => { for (const t of tethers) t.line.visible = shownNow.current(t.id); wakeUp(); };
-    /** Screen room kept for the time ruler at the left edge: the chart is drawn shifted right by half of it. */
-    const RULER_W = 64;
-    const leaveRoom = () => {
-      const camera = g.camera() as PerspectiveCamera;
-      const W = el.clientWidth, H = el.clientHeight;
-      camera.setViewOffset(W, H, -RULER_W / 2, 0, W, H);
-      camera.updateProjectionMatrix();
-    };
     const afterLayout = () => {
       if (disposed) return;
       const list = g.graphData().nodes;
       const radii = list.map((n) => Math.hypot(n.x ?? 0, n.z ?? 0)).sort((a, b) => a - b);
       const r90 = radii[Math.floor(radii.length * 0.9)];
-      // The time axis as a pillar standing in the chart's space, at its left as first seen: a vertical
-      // line with a small ring round it at each major version, drawn as page vectors (SVG) from the
-      // 3D points every frame. So it leans and its rings tilt with the view like the stars do, while
-      // the text stays crisp. The part up to the chosen version glows.
-      const box = rulerBox.current;
-      if (box) {
-        const NS = 'http://www.w3.org/2000/svg';
-        const mk = <K extends keyof SVGElementTagNameMap>(tag: K, cls: string) => {
-          const e = document.createElementNS(NS, tag); e.setAttribute('class', cls); return e;
-        };
-        box.replaceChildren();
-        const svg = mk('svg', 'w3d-pillar');
-        const tube = mk('line', 'w3d-tube'), rail = mk('line', 'w3d-rail'), lit = mk('line', 'w3d-lit');
-        const nowRing = mk('path', 'w3d-now-ring'), nowText = mk('text', 'w3d-now-text');
-        svg.append(tube, rail, lit);
-        const ticks = versions.filter((v) => /\.0$|^Luna I$/.test(v.id)).map((v) => {
-          const ring = mk('path', 'w3d-ring'), text = mk('text', 'w3d-ring-text');
-          text.textContent = v.id === 'Luna I' ? '6.0' : v.id;
-          svg.append(ring, text);
-          return { ring, text, h: heightOf(v.order) };
-        });
-        svg.append(nowRing, nowText);
-        box.append(svg);
-        const pt = new Vector3();
-        const RING = 7; // ring radius in chart units
-        placeRuler = () => {
-          if (!pillarReady) return;
-          const camera = g.camera() as PerspectiveCamera;
-          camera.updateMatrixWorld();
-          // The pillar stands where the left margin meets the chart's depth in the current view, so
-          // turning the chart never brings it into the middle; it still leans and its rings open and
-          // close with the view's height like the stars. Moved right until both ends clear the margin.
-          {
-            const target = (g.controls() as { target: Vector3 }).target;
-            const depth = camera.position.distanceTo(target);
-            let px = 40;
-            for (let i = 0; i < 8; i++) {
-              const ray = new Vector3((px / el.clientWidth) * 2 - 1, 0, 0.5).unproject(camera).sub(camera.position).normalize();
-              const p = camera.position.clone().add(ray.multiplyScalar(depth));
-              pillar = { x: p.x, z: p.z };
-              const xs = [heightOf(0), heightOf(lastOrder) + 6].map((h) => {
-                const v = new Vector3(p.x, h, p.z).project(camera);
-                return ((v.x + 1) / 2) * el.clientWidth;
-              });
-              const short = 30 - Math.min(...xs);
-              if (short <= 1) break;
-              px += short;
-            }
-          }
-          if (!pillar) return;
-          const top = el.offsetTop, W = el.clientWidth, H = el.clientHeight;
-          svg.setAttribute('width', String(W)); svg.setAttribute('height', String(top + H));
-          const at = (x: number, y: number, z: number): [number, number, boolean] => {
-            pt.set(x, y, z).project(camera);
-            return [((pt.x + 1) / 2) * W, top + ((1 - pt.y) / 2) * H, pt.z < 1];
-          };
-          let ringRight = 0;
-          const ringPath = (h: number, r: number) => {
-            let d = '';
-            ringRight = -Infinity;
-            for (let i = 0; i <= 32; i++) {
-              const a = (i / 32) * Math.PI * 2;
-              const [x, y] = at(pillar!.x + Math.cos(a) * r, h, pillar!.z + Math.sin(a) * r);
-              d += `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`;
-              ringRight = Math.max(ringRight, x);
-            }
-            return d;
-          };
-          const line = (e: SVGElement, a: [number, number, boolean], b: [number, number, boolean]) => {
-            e.setAttribute('x1', a[0].toFixed(1)); e.setAttribute('y1', a[1].toFixed(1));
-            e.setAttribute('x2', b[0].toFixed(1)); e.setAttribute('y2', b[1].toFixed(1));
-          };
-          const low = at(pillar.x, heightOf(0), pillar.z), high = at(pillar.x, heightOf(lastOrder) + 6, pillar.z);
-          const nowH = heightOf(vNow.current), now = at(pillar.x, nowH, pillar.z);
-          line(tube, low, high); line(rail, low, high); line(lit, low, now);
-          nowRing.setAttribute('d', ringPath(nowH, RING * 1.5));
-          nowText.setAttribute('x', (ringRight + 6).toFixed(1)); nowText.setAttribute('y', (now[1] + 4).toFixed(1));
-          nowText.textContent = `${versions[vNow.current]?.id ?? ''}까지`;
-          // rings from the bottom up; a label that would crowd the last shown one or the marker is hidden
-          let last = Infinity;
-          for (const t of ticks) {
-            t.ring.setAttribute('d', ringPath(t.h, RING));
-            t.ring.setAttribute('data-past', String(t.h <= nowH));
-            const c = at(pillar.x, t.h, pillar.z);
-            t.text.setAttribute('x', (ringRight + 5).toFixed(1)); t.text.setAttribute('y', (c[1] + 4).toFixed(1));
-            const room = Math.abs(c[1] - last) >= 16 && Math.abs(c[1] - now[1]) >= 15;
-            t.text.style.opacity = room ? '' : '0';
-            if (room) last = c[1];
-          }
-          // the pillar behind the camera, or seen end-on from straight above: hide it
-          box.style.opacity = !low[2] || !high[2] || Math.hypot(low[0] - high[0], low[1] - high[1]) < 80 ? '0' : '';
-        };
+      // Horizontal celestial rings at each major version's height in 3D space (plus one horizon ring
+      // at the chosen version), so perspective matches the stars and nothing crowds the left edge.
+      const ringR = Math.max(120, r90 * 1.08);
+      const ringPos = (y: number, r: number) => {
+        const segs = 96, pos: number[] = [];
+        for (let i = 0; i <= segs; i++) {
+          const a = (i / segs) * Math.PI * 2;
+          pos.push(Math.cos(a) * r, y, Math.sin(a) * r);
+        }
+        return pos;
+      };
+      const addRing = (y: number, color: string, linewidth: number, opacity: number) => {
+        const geo = new LineGeometry();
+        geo.setPositions(ringPos(y, ringR));
+        const mat = new LineMaterial({ color, linewidth, transparent: true, opacity, depthWrite: false });
+        mat.fog = true;
+        mat.resolution.copy(resolution);
+        const line = new Line2(geo, mat);
+        line.raycast = () => {};
+        g.scene().add(line);
+        return { line, mat };
+      };
+      for (const v of versions) {
+        if (!/\.0$|^Luna I$/.test(v.id)) continue;
+        const { line, mat } = addRing(heightOf(v.order), lookNow.current.sky.line, 0.75, v.order <= vNow.current ? 0.11 : 0.03);
+        versionRings.push({ order: v.order, line, mat });
       }
-      placeNow.current = () => { placeRuler(); wakeUp(); };
+      nowRing = addRing(0, lookNow.current.sky.night ? '#f2a074' : '#cf5f33', 1.15, lookNow.current.sky.night ? 0.34 : 0.28);
+      nowRing.line.position.y = heightOf(vNow.current);
+      placeNow.current = (order: number) => {
+        for (const r of versionRings) r.mat.opacity = r.order <= order ? 0.11 : 0.03;
+        if (nowRing) nowRing.line.position.y = heightOf(order);
+        wakeUp();
+      };
       // a page of the theme that shares no story with any other has no line; a faint dotted one to the
       // theme star keeps it from floating alone (it says "in this theme", not "shares stories")
       const hubPos = new Vector3();
@@ -875,7 +803,6 @@ export default function WikiGraph3D() {
       fade.current();
       // frame what is there: move the camera until the stars (but the far few) fill the screen in both directions
       const camera = g.camera() as PerspectiveCamera;
-      leaveRoom();
       const portrait = el.clientWidth < el.clientHeight;
       const tilt = ((portrait ? 12 : 20) * Math.PI) / 180;
       const linked = list.filter((n) => index.near.has(n.id));
@@ -905,7 +832,7 @@ export default function WikiGraph3D() {
         tx += k * ((x0 + x1) / 2) * halfW;
         // screen up at the target is mostly toward the far side of the plane (-z), foreshortened by the tilt
         tz -= k * ((y0 + y1) / 2) * halfH / Math.sin(tilt + 0.35);
-        dist *= Math.max((x1 - x0) / 2 / (0.84 * (1 - RULER_W / el.clientWidth)), (y1 - y0) / 2 / 0.82);
+        dist *= Math.max((x1 - x0) / 2 / 0.84, (y1 - y0) / 2 / 0.82);
       }
       place();
       g.cameraPosition({ x: tx, y: cy + Math.sin(tilt) * dist, z: tz + Math.cos(tilt) * dist }, { x: tx, y: cy, z: tz }, 0);
@@ -916,8 +843,6 @@ export default function WikiGraph3D() {
         c.maxDistance = Math.min(dist * 1.8, 1400);
         c.minDistance = Math.max(60, dist * 0.3);
       }
-      pillarReady = true;
-      placeRuler();
       // on first view the chart turns slowly into place once (about 40 degrees, easing out), then rests;
       // any touch stops it, and readers who ask for less motion get the still view
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -1056,6 +981,11 @@ export default function WikiGraph3D() {
       }
       for (const t of tethers) t.line.material.color.set(s.line);
       for (const r of refLines) r.mat.color.set(s.line);
+      for (const r of versionRings) r.mat.color.set(s.line);
+      if (nowRing) {
+        nowRing.mat.color.set(s.night ? '#f2a074' : '#cf5f33');
+        nowRing.mat.opacity = s.night ? 0.34 : 0.28;
+      }
       paintTails.current();
       for (const nb of nebulae) nb.visible = s.night;
       for (const c of dayClouds) c.visible = !s.night;
@@ -1115,7 +1045,6 @@ export default function WikiGraph3D() {
       const d = g.camera().position.length();
       fog.near = d * 0.7;
       fog.far = d * 2.3;
-      placeRuler();
       relabel.current();
     };
     controls.addEventListener('change', onMove);
@@ -1126,6 +1055,8 @@ export default function WikiGraph3D() {
       for (const l of lines.current.values()) l.mat.resolution.copy(resolution);
       for (const r of refLines) r.mat.resolution.copy(resolution);
       for (const t of tails) t.mat.resolution.copy(resolution);
+      for (const r of versionRings) r.mat.resolution.copy(resolution);
+      nowRing?.mat.resolution.copy(resolution);
       // a turned phone changes the screen shape: resize the names to match
       const scale = labelScale(el);
       if (Math.abs(scale - lastScale) > 0.01) {
@@ -1135,8 +1066,6 @@ export default function WikiGraph3D() {
           p.label.padding = [p.label.textHeight * 0.15, p.label.textHeight * 0.3];
         }
       }
-      leaveRoom();
-      placeRuler();
       relabelSoon.current();
       wakeUp();
     });
@@ -1151,10 +1080,11 @@ export default function WikiGraph3D() {
       cancelAnimationFrame(relabelFrame);
       controls.removeEventListener('change', onMove);
       for (const ev of events) el.removeEventListener(ev, wakeUp);
-      rulerBox.current?.replaceChildren();
       for (const t of tethers) { t.line.geometry.dispose(); t.line.material.dispose(); }
       for (const r of refLines) { r.line.geometry.dispose(); r.mat.dispose(); }
       for (const t of tails) { t.line.geometry.dispose(); t.mat.dispose(); }
+      for (const r of versionRings) { r.line.geometry.dispose(); r.mat.dispose(); }
+      if (nowRing) { nowRing.line.geometry.dispose(); nowRing.mat.dispose(); }
       paintTails.current = () => {};
       showRefs.current = () => {};
       showTethers.current = () => {};
@@ -1307,7 +1237,6 @@ export default function WikiGraph3D() {
           </div>
         )}
       </div>
-      {gl && <div className={`w3d-ruler${article ? ' behind' : ''}`} ref={rulerBox} aria-hidden="true" />}
       {sel && !article && (
         <aside className="w3d-card" aria-live="polite">
           <p className="w3d-type">{KIND_LABEL[sel.kind]} · {versions[sel.revealed]?.id}부터</p>

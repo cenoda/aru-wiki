@@ -1300,10 +1300,10 @@ function Atlas() {
             )}
             {neighbours.leadsTo.length > 0 && <RecsOut edges={neighbours.leadsTo} go={select} />}
             {!isUnit(sel) && neighbours.hung.length > 0 && (
-              <HungUnits key={sel.id} list={neighbours.hung} entry={entryActs.get(sel.id)} go={select} />
+              <HungUnits key={`hung-${sel.id}`} list={neighbours.hung} entry={entryActs.get(sel.id)} go={select} />
             )}
             {isUnit(sel) ? <UnitQuests unit={sel} /> : <ActQuests actId={sel.id} />}
-            <QuestCredit key={sel.id} sel={sel} />
+            <QuestCredit key={`credit-${sel.id}`} sel={sel} />
             <ReportBox nodeId={sel.id} version={versions.find((v) => v.order === vIdx)?.id ?? ''} />
           </aside>
         )}

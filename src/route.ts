@@ -46,3 +46,8 @@ export const pathNameOf = (page: string, byId: ReadonlyMap<string, PageNode> | u
   const n = byId?.get(page);
   return n ? nameOf(n) : page;
 };
+
+/** The recent-changes page's name in the address (`/wiki/특수:최근바뀜`, src/RecentChanges.tsx). */
+export const RECENT_KEY = '특수:최근바뀜';
+/** Whether an article name from the address means the recent-changes page (also with `_` or spaces). */
+export const isRecentKey = (key: string | null) => !!key && key.replace(/[\s_]/g, '') === RECENT_KEY;

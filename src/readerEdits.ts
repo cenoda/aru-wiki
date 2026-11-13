@@ -22,6 +22,8 @@ export interface ReaderEdit {
   /** the paragraph's text before the edit */
   orig?: string;
   text: string; evidence?: string; nick?: string; submitted?: string | null; approved?: string;
+  /** when the operator approved it (ISO time; entries approved before 2026-11-13 have only `approved`) */
+  approved_at?: string;
 }
 export interface Published { edits: ReaderEdit[]; rejected: { id: string; note?: string; date: string; removed?: boolean }[] }
 /** A suggestion kept in this browser until the site carries its decision. */

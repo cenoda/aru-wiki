@@ -51,6 +51,25 @@ await write('graph.json', graph);
 // rule below). A page or link appears from the version of the earliest story unit behind it, so
 // the version picker hides what comes later.
 import { existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { layoutChart } from '../src/chartLayout.js';
+/**
+ * Where every star sits, for portrait and landscape screens (src/chartLayout.js), so the browser does
+ * not run the layout itself (seconds on a phone at ~1,400 stars). Kept in .cache/ by the chart's
+ * content, so a rebuild with the same stars and lines skips it.
+ */
+async function chartLayouts(chart, lastOrder) {
+  const key = createHash('sha256').update(JSON.stringify([lastOrder, chart.nodes.map((n) => [n.id, n.hub, n.revealed]), chart.links.map((l) => [l.source, l.target, l.shared])])).digest('hex');
+  const cacheFile = new URL('.cache/chart-layout.json', root);
+  try {
+    const cached = JSON.parse(await readFile(cacheFile, 'utf8'));
+    if (cached.key === key) return cached.layout;
+  } catch { /* no cache yet */ }
+  const layout = { lastOrder, portrait: layoutChart(chart, lastOrder, true), landscape: layoutChart(chart, lastOrder, false) };
+  await mkdir(new URL('.cache/', root), { recursive: true });
+  await writeFile(cacheFile, JSON.stringify({ key, layout }));
+  return layout;
+}
 const [theme, loreLinks, koNames] = await Promise.all([read('theme-khaenriah.json'), read('lore-links.json'), read('ko-names.json')]);
 const unitVersion = new Map([...quests, ...units.units].map((x) => [x.id, x.first_version]));
 const order = new Map(versions.map((v) => [v.id, v.order]));
@@ -125,7 +144,7 @@ if (existsSync(refsFile)) {
     refPairs.set(key, cur ? { ...cur, both: cur.both || cur.from !== r.from } : { from: r.from, to: r.to, both: false });
   }
 }
-await write('chart.json', {
+const chart = {
   page: HUB,
   nodes: pages.map((p) => ({
     id: p.page, ko: p.ko ?? null, kind: p.kind ?? 'lore', hub: !!p.hub, units: unitsOf.get(p.page).size,
@@ -134,7 +153,9 @@ await write('chart.json', {
   links: [...kept].map((e) => ({ source: e.a, target: e.b, shared: e.shared, revealed: e.revealed })),
   // [from, to, 1 if both mention each other]
   refs: [...refPairs.values()].map((r) => [r.from, r.to, r.both ? 1 : 0]),
-});
+};
+chart.layout = await chartLayouts(chart, lastOrder);
+await write('chart.json', chart);
 
 // ---------- version snapshots of the theme's pages (scripts/theme/snapshots.mjs) ----------
 // Per page, the snapshots in version order. Only points that passed the quote check and the second

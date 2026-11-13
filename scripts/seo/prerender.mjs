@@ -9,6 +9,8 @@
 // Addresses carry no `?v=`: without it the site shows the latest version, where every page is revealed.
 import { existsSync } from 'node:fs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const SITE = 'https://aru.wiki';
 const root = new URL('../../', import.meta.url);
@@ -94,8 +96,9 @@ for (const n of nodes) {
     `</ul>`,
     `</article>`,
   ].filter(Boolean).join('\n');
-  const out = new URL(`wiki/${fileName(n)}.html`, dist);
-  await mkdir(new URL('./', out), { recursive: true });
+  // a file path, not a URL: a name with ? or # ("???", "여름! 섬? 모험!") cut the URL short (wiki/ itself, EISDIR)
+  const out = join(fileURLToPath(dist), 'wiki', `${fileName(n)}.html`);
+  await mkdir(dirname(out), { recursive: true });
   await writeFile(out, page({
     title: `${name} - aru.wiki`,
     description: clip(lead || `${name}: 원신 시간축 위키 aru.wiki의 문서`, 160),

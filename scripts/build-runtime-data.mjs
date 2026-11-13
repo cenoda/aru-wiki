@@ -298,3 +298,29 @@ function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
   const rows = [...articleHistory(rootPath, [themeArticles, allArticles]), ...readerRows(readerEdits)];
   await write('recent.json', buildRecent(rows, { order, revealedOf: (p) => revealed.get(p) }));
 }
+
+// ---------- red links: names that have no article yet ----------
+// Pages the lore data knows (lore-links.json: a Fandom page met in some story) with an official Korean
+// name (ko-names.json) but no article on this site. Article text marks their names as red links that
+// open the new-page form (src/Linked.tsx). Each keeps the version of its first story, so a reader at an
+// earlier version never sees a red link naming something not revealed yet. Korean names only: the
+// articles are Korean, and an English-only name would rarely match. [name, revealed order]
+{
+  const BAD_TITLE = /[<>[\]{}|#/?%]/; // src/Search.tsx NewPage: titles that would break the address
+  const hasPage = new Set([...chartIds, ...Object.keys(perPage)]);
+  const taken = new Set();
+  for (const id of hasPage) { taken.add(id); const ko = koNames[id]?.ko; if (ko) taken.add(ko); }
+  // game mechanics and menus (에너지, 스태미나, 감전, 튜토리얼) are words of the game, not topics of a lore article
+  const MECHANIC = /^(Game Systems|Combat|Combat Talents|Attributes|Menus|Tutorials|Elemental Reactions|Elemental Bursts|Elemental Skills|Progression|Location Types|Quest Terminology|Exploration|Currency|Items|Gadgets)$/;
+  const red = new Map();
+  for (const [id, l] of Object.entries(loreLinks)) {
+    const ko = koNames[id]?.ko?.trim();
+    // three letters at least: two-letter names (유리, 왕자, 생각, 지역) are mostly ordinary words too;
+    // a sub-page (Wanderer/Storyline) is part of another page, not a page of its own
+    if (hasPage.has(id) || id.includes('/') || !ko || ko.length < 3 || taken.has(ko) || BAD_TITLE.test(ko) || !l.units?.length) continue;
+    if ((l.categories ?? []).some((c) => MECHANIC.test(c))) continue;
+    const at = firstOrder(l.units);
+    if (!red.has(ko) || red.get(ko) > at) red.set(ko, at);
+  }
+  await write('redlinks.json', [...red].sort((a, b) => a[0].localeCompare(b[0], 'ko')));
+}

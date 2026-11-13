@@ -494,6 +494,9 @@ export default function WikiGraph3D() {
   const [hovered, setHovered] = useState<string | null>(null);
   const night = useTheme() === 'dark';
   const [gl] = useState(canDraw3D);
+  // bumped when the browser takes the WebGL context away (iPadOS does this to a tab sent to the
+  // background and often never gives it back): the 3D scene is then built again from scratch
+  const [glEpoch, setGlEpoch] = useState(0);
   const sky = night ? NIGHT : DAY;
 
   useEffect(() => {
@@ -1234,9 +1237,31 @@ export default function WikiGraph3D() {
       wakeUp();
     });
     ro.observe(el);
+
+    // ---------- the GPU context lost (tab in the background on iPad/iPhone): rebuild when seen again ----------
+    const canvas = g.renderer().domElement;
+    let lost = false;
+    const rebuild = () => { if (!disposed) setGlEpoch((n) => n + 1); };
+    const onLost = (e: Event) => {
+      e.preventDefault();
+      lost = true;
+      if (document.visibilityState === 'visible') rebuild();
+    };
+    const onVisible = () => {
+      if (document.visibilityState !== 'visible') return;
+      if (lost || g.renderer().getContext().isContextLost()) rebuild();
+      else wakeUp();
+    };
+    canvas.addEventListener('webglcontextlost', onLost);
+    document.addEventListener('visibilitychange', onVisible);
+    window.addEventListener('pageshow', onVisible);
+
     wakeUp();
     return () => {
       disposed = true;
+      canvas.removeEventListener('webglcontextlost', onLost);
+      document.removeEventListener('visibilitychange', onVisible);
+      window.removeEventListener('pageshow', onVisible);
       ro.disconnect();
       clearTimeout(idle);
       clearTimeout(layoutTimer);
@@ -1282,7 +1307,7 @@ export default function WikiGraph3D() {
       wake.current = fade.current = relabelSoon.current = () => {};
       applySky.current = () => {};
     };
-  }, [theme, index, gl]);
+  }, [theme, index, gl, glEpoch]);
 
   // ---------- sky: recolour in place (keeps layout, camera and selection) ----------
   const firstSky = useRef(true);
@@ -1301,7 +1326,7 @@ export default function WikiGraph3D() {
     paintTails.current();
     relabelSoon.current();
     wake.current();
-  }, [theme, shown, vIdx]);
+  }, [theme, shown, vIdx, glEpoch]);
 
   // ---------- selection and sky: brightness and colour targets ----------
   useEffect(() => {
@@ -1310,7 +1335,7 @@ export default function WikiGraph3D() {
     fade.current();
     showRefs.current();
     paintTails.current();
-  }, [theme, look]);
+  }, [theme, look, glEpoch]);
 
   // ---------- names: brightest stars, the selection's neighbourhood, the hovered star, what is close ----------
   useEffect(() => {
@@ -1377,7 +1402,7 @@ export default function WikiGraph3D() {
       fade.current();
     };
     relabel.current();
-  }, [theme, shown, look, focus, selected, hovered]);
+  }, [theme, shown, look, focus, selected, hovered, glEpoch]);
 
   const sel = selected && index ? index.byId.get(selected)! : null;
   const hubNode = theme && index ? index.byId.get(theme.page) : undefined;

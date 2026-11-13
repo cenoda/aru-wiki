@@ -1,0 +1,428 @@
+{
+ "node": "Specter",
+ "articles": [
+  {
+   "node": "Specter",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Specter",
+     "url": "https://genshin-impact.fandom.com/wiki/Specter",
+     "revision": 305728
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 215,
+   "input_cut": false,
+   "input_hash": "5776dc5a23d9",
+   "writer": "ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "The one who created this sinister specter is the true killer!",
+     "sentences": [
+      {
+       "t_raw": "**Specter**는 Genshin Impact에 등장할 예정인 적으로, 공중에 떠다니며 하나의 눈으로 보이는 모습을 하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**떠도는 정령**은 원신에 등장할 예정인 적으로, 공중에 떠다니며 하나의 눈으로 보이는 모습을 하고 있다."
+      },
+      {
+       "t_raw": "공격받으면 **Fury**를 쌓아 몸집이 커지고 강해지며, 쓰러지면 폭발한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공격받으면 **분노**를 쌓아 몸집이 커지고 강해지며, 쓰러지면 폭발한다."
+      },
+      {
+       "t_raw": "공중에 떠다니는 모습과 공격받을수록 강해지는 특성이 겹쳐, 전투가 길어질수록 위험해지는 적으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "공중에 떠다니는 모습과 공격받을수록 강해지는 특성이 겹쳐, 전투가 길어질수록 위험해지는 적으로 보인다."
+      },
+      {
+       "t_raw": "Fischl은 이 적을 'sinister specter'라고 부르며, 이를 창조한 자가 진범이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "피슬은 이 적을 '사악한 유령'이라고 부르며, 이를 창조한 자가 진범이라고 말한다.",
+       "polish": {
+        "from": "피슬은 이 적을 'sinister specter'라고 부르며, 이를 창조한 자가 진범이라고 말한다.",
+        "text": "피슬은 이 적을 '사악한 유령'이라고 부르며, 이를 창조한 자가 진범이라고 말한다.",
+        "by": "kimi"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Specter",
+       "revision": 305728,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Specter",
+       "revision": 305728,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Crisis Deepens",
+       "quest_ko": "확산하는 위기",
+       "version": "1.1",
+       "speaker": "Fischl"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Claims other enemies stand on the ground and contrast with Specter; the English says nothing about other enemies.",
+     "quote": "They float in the air and have what appears to be a single eye.",
+     "sentences": [
+      {
+       "t_raw": "Specter는 공중에 떠 있는 적이며, 몸에는 외눈으로 보이는 것이 하나 자리하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "떠도는 정령은 공중에 떠 있는 적이며, 몸에는 외눈으로 보이는 것이 하나 자리하고 있다."
+      },
+      {
+       "t_raw": "떠 있는 몸에 눈처럼 보이는 기관이 하나뿐인 모습이라, 독특한 인상을 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "떠 있는 몸에 눈처럼 보이는 기관이 하나뿐인 모습이라, 독특한 인상을 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Specter",
+       "revision": 305728,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts supported; interpretation is reasonable.",
+     "quote": "When attacked it will accumulate \"Fury\" and grow larger and stronger. When defeated they will explode.",
+     "sentences": [
+      {
+       "t_raw": "Specter는 공격을 받으면 **Fury**를 쌓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "떠도는 정령은 공격을 받으면 **분노**를 쌓는다."
+      },
+      {
+       "t_raw": "Fury가 쌓일수록 몸집이 커지고 그만큼 강해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "분노가 쌓일수록 몸집이 커지고 그만큼 강해진다."
+      },
+      {
+       "t_raw": "그리고 쓰러뜨리면 그 자리에서 폭발한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그리고 쓰러뜨리면 그 자리에서 폭발한다."
+      },
+      {
+       "t_raw": "가만히 두면 그대로지만 때릴수록 커지고 강해지다가, 끝을 내는 순간 폭발로 마무리되는 셈이라, 공격의 속도와 마무리를 함께 재게 만드는 적으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가만히 두면 그대로지만 때릴수록 커지고 강해지다가, 끝을 내는 순간 폭발로 마무리되는 셈이라, 공격의 속도와 마무리를 함께 재게 만드는 적으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Specter",
+       "revision": 305728,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Supported; interpretation follows from the quote.",
+     "quote": "The one who created this sinister specter is the true killer!",
+     "sentences": [
+      {
+       "t_raw": "Specter는 공중에 떠 있으며, 외눈으로 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "떠도는 정령은 공중에 떠 있으며, 외눈으로 보인다."
+      },
+      {
+       "t_raw": "Fischl은 어떤 사건을 두고 “이 사악한 specter를 창조한 자가 진짜 살인자”라고 말해 Specter를 창조된 존재로 다룬다.",
+       "interp": false,
+       "dropped": false,
+       "t": "피슬은 어떤 사건을 두고 “이 사악한 유령을 창조한 자가 진짜 살인자”라고 말해 떠도는 정령을 창조된 존재로 다룬다.",
+       "polish": {
+        "from": "피슬은 어떤 사건을 두고 “이 사악한 specter를 창조한 자가 진짜 살인자”라고 말해 떠도는 정령을 창조된 존재로 다룬다.",
+        "text": "피슬은 어떤 사건을 두고 “이 사악한 유령을 창조한 자가 진짜 살인자”라고 말해 떠도는 정령을 창조된 존재로 다룬다.",
+        "by": "kimi"
+       }
+      },
+      {
+       "t_raw": "창조되었다는 언급과 외눈의 모습을 함께 놓으면, Specter의 형체는 누군가에 의해 만들어진 결과라는 인상을 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "창조되었다는 언급과 외눈의 모습을 함께 놓으면, 떠도는 정령의 형체는 누군가에 의해 만들어진 결과라는 인상을 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Specter",
+       "revision": 305728,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Crisis Deepens",
+       "quest_ko": "확산하는 위기",
+       "version": "1.1",
+       "speaker": "Fischl"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Supported; interpretation is reasonable.",
+     "quote": "They float in the air and have what appears to be a single eye.",
+     "sentences": [
+      {
+       "t_raw": "Fischl은 Specter를 창조한 자를 찾으라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "피슬은 떠도는 정령을 창조한 자를 찾으라고 말한다."
+      },
+      {
+       "t_raw": "그녀는 그 창조자를 진짜 살인자로 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 그 창조자를 진짜 살인자로 부른다."
+      },
+      {
+       "t_raw": "외눈의 모습과 창조되었다는 언급이 맞물리면서, Specter의 정체는 ‘만들어진 존재’라는 규정과 ‘누가 만들었는가’라는 물음으로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "외눈의 모습과 창조되었다는 언급이 맞물리면서, 떠도는 정령의 정체는 '만들어진 존재'라는 규정과 '누가 만들었는가'라는 물음으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Specter",
+       "revision": 305728,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Crisis Deepens",
+       "quest_ko": "확산하는 위기",
+       "version": "1.1",
+       "speaker": "Fischl"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "전투 양상",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "When attacked it will accumulate \"Fury\" and grow larger and stronger. When defeated they will explode.",
+     "sentences": [
+      {
+       "t_raw": "Specter는 공격을 받으면 **Fury**를 쌓는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "떠도는 정령은 공격을 받으면 **분노**를 쌓는다."
+      },
+      {
+       "t_raw": "Fury가 쌓일수록 몸집이 커지고 힘도 강해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "분노가 쌓일수록 몸집이 커지고 힘도 강해진다."
+      },
+      {
+       "t_raw": "Fury가 쌓이는 만큼 위협이 커지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "분노가 쌓이는 만큼 위협이 커지는 셈이다."
+      },
+      {
+       "t_raw": "Specter가 쓰러지면 **폭발**한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "떠도는 정령이 쓰러지면 **폭발**한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Specter",
+       "revision": 305728,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투 양상",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences match Q1 or follow reasonably from it.",
+     "quote": "We must interrogate the population! Find the doer of this diabolical deed! The one who created this sinister specter is the true killer!",
+     "sentences": [
+      {
+       "t_raw": "Fischl은 주민들을 심문해 이 사악한 짓을 저지른 자를 찾으라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "피슬은 주민들을 심문해 이 사악한 짓을 저지른 자를 찾으라고 말한다."
+      },
+      {
+       "t_raw": "이어서 불길한 Specter를 창조한 자가 **진정한 살인자**라고 단언한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 불길한 떠도는 정령을 창조한 자가 **진정한 살인자**라고 단언한다."
+      },
+      {
+       "t_raw": "그 대사에서 Specter는 누군가에 의해 창조된 존재로 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 대사에서 떠도는 정령은 누군가에 의해 창조된 존재로 등장한다."
+      },
+      {
+       "t_raw": "이 때문에 **창조자**의 정체를 밝히는 일이 사건의 중심 물음으로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 때문에 **창조자**의 정체를 밝히는 일이 사건의 중심 물음으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Crisis Deepens",
+       "quest_ko": "확산하는 위기",
+       "version": "1.1",
+       "speaker": "Fischl"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The line names no creator and gives no detail of the deed. Sentence 2 is a fair interpretation.",
+     "quote": "The one who created this sinister specter is the true killer!",
+     "sentences": [
+      {
+       "t_raw": "다만 그 대사에는 창조자의 이름도, 문제가 된 사악한 짓의 내용도 나오지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 그 대사에는 창조자의 이름도, 문제가 된 사악한 짓의 내용도 나오지 않는다."
+      },
+      {
+       "t_raw": "주민들을 심문하라는 명령은 누구를 가리켜야 하는지 알려 주지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주민들을 심문하라는 명령은 누구를 가리켜야 하는지 알려 주지 않는다."
+      },
+      {
+       "t_raw": "창조자를 진정한 살인자로 부르는 까닭에, 창조자의 정체를 캐는 일과 진범을 가리는 일이 같은 방향을 향한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "창조자를 진정한 살인자로 부르는 까닭에, 창조자의 정체를 캐는 일과 진범을 가리는 일이 같은 방향을 향한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Crisis Deepens",
+       "quest_ko": "확산하는 위기",
+       "version": "1.1",
+       "speaker": "Fischl"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "이 사악한 specter를 창조한 자가 진짜 살인자다!",
+     "en": "We must interrogate the population! Find the doer of this diabolical deed! The one who created this sinister specter is the true killer!",
+     "speaker": "Fischl",
+     "source": {
+      "kind": "quest",
+      "quest": "The Crisis Deepens",
+      "quest_ko": "확산하는 위기",
+      "version": "1.1",
+      "speaker": "Fischl"
+     },
+     "t": "이 사악한 specter를 창조한 자가 진짜 살인자다!",
+     "speaker_ko": "피슬"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "우리는 주민들을 심문해야 한다! 이 사악한 짓을 저지른 자를 찾아라! 이 불길한 Specter를 창조한 자가 진정한 살인자다!",
+     "en": "We must interrogate the population! Find the doer of this diabolical deed! The one who created this sinister specter is the true killer!",
+     "speaker": "Fischl",
+     "source": {
+      "kind": "quest",
+      "quest": "The Crisis Deepens",
+      "quest_ko": "확산하는 위기",
+      "version": "1.1",
+      "speaker": "Fischl"
+     },
+     "t": "우리는 주민들을 심문해야 한다! 이 사악한 짓을 저지른 자를 찾아라! 이 불길한 떠도는 정령을 창조한 자가 진정한 살인자다!",
+     "speaker_ko": "피슬"
+    }
+   ]
+  }
+ ]
+}

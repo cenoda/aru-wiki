@@ -1,0 +1,640 @@
+{
+ "node": "Court of Fontaine",
+ "articles": [
+  {
+   "node": "Court of Fontaine",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Court of Fontaine",
+     "url": "https://genshin-impact.fandom.com/wiki/Court_of_Fontaine",
+     "revision": 325690
+    }
+   ],
+   "input_counts": {
+    "mentions": 4,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 429,
+   "input_cut": false,
+   "input_hash": "8734bb98276b",
+   "writer": "ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and A2.",
+     "quote": "Court of Fontaine is the court of the Hydro Archon, established at least a thousand years ago.",
+     "sentences": [
+      {
+       "t_raw": "Court of Fontaine는 Hydro Archon의 궁정으로, 적어도 천 년 전에 세워졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인성은 물의 신의 궁정으로, 적어도 천 년 전에 세워졌다."
+      },
+      {
+       "t_raw": "이곳은 Teyvat 전역에서 읽히는 신문 The Steambird를 관장하며, 아름다운 아가씨들로 이름난 곳이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이곳은 티바트 전역에서 읽히는 신문 스팀버드를 관장하며, 아름다운 아가씨들로 이름난 곳이기도 하다."
+      },
+      {
+       "t_raw": "오래된 궁정의 이름이 신문과 미모라는 두 갈래 명성으로 여러 나라에 닿아 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오래된 궁정의 이름이 신문과 미모라는 두 갈래 명성으로 여러 나라에 닿아 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine",
+       "revision": 325690,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine",
+       "revision": 325690,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Steambird",
+       "revision": 237178,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All sentences match A1.",
+     "quote": "Court of Fontaine is the court of the Hydro Archon, established at least a thousand years ago.",
+     "sentences": [
+      {
+       "t_raw": "Court of Fontaine는 **Hydro Archon의 궁정**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인성은 **물의 신의 궁정**이다."
+      },
+      {
+       "t_raw": "그 연원은 적어도 **천 년** 전으로 거슬러 올라간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 연원은 적어도 **천 년** 전으로 거슬러 올라간다."
+      },
+      {
+       "t_raw": "궁정은 The Steambird를 관장하며, 이 신문은 Teyvat 전역에서 읽힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "궁정은 스팀버드를 관장하며, 이 신문은 티바트 전역에서 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine",
+       "revision": 325690,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All sentences are supported by M1, M2 and M3.",
+     "quote": "The Court of Fontaine's mainline newspaper, The Steambird, has many a featured section that contains all sorts of news and gossip drawn from every corner of the seven nations.",
+     "sentences": [
+      {
+       "t_raw": "The Steambird는 Court of Fontaine의 주요 신문이며 Teyvat 전역에서 읽힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스팀버드는 폰타인성의 주요 신문이며 티바트 전역에서 읽힌다."
+      },
+      {
+       "t_raw": "이 신문에는 일곱 나라 각지에서 모은 온갖 소식과 이야기를 담은 특집 지면이 많다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 신문에는 일곱 나라 각지에서 모은 온갖 소식과 이야기를 담은 특집 지면이 많다."
+      },
+      {
+       "t_raw": "Mona가 이 신문의 칼럼니스트로 활동한다는 점은 필진이 Teyvat 각지에 걸쳐 있음을 시사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모나가 이 신문의 칼럼니스트로 활동한다는 점은 필진이 티바트 각지에 걸쳐 있음을 시사한다."
+      },
+      {
+       "t_raw": "The Steambird가 Teyvat 전역에서 읽히면서 일곱 나라 각지의 소식을 담는다는 점에서, 궁정의 신문은 지역을 가로질러 읽히는 매체로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스팀버드가 티바트 전역에서 읽히면서 일곱 나라 각지의 소식을 담는다는 점에서, 궁정의 신문은 지역을 가로질러 읽히는 매체로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Steambird",
+       "revision": 237178,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fontaine",
+       "revision": 44709,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mona/Profile",
+       "revision": 150509,
+       "section": "Character Stories > All Things Astrological",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "The Steambird",
+     "status": "accepted",
+     "note": "The facts match A1 and M1. The interpretation is reasonable and hedged.",
+     "quote": "The Steambird is the main newspaper of the Court of Fontaine and is read all across Teyvat.",
+     "sentences": [
+      {
+       "t_raw": "Court of Fontaine은 The Steambird라는 신문을 관장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인성은 스팀버드라는 신문을 관장한다."
+      },
+      {
+       "t_raw": "The Steambird는 Fontaine의 주된 신문으로, Teyvat 전역에서 읽힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스팀버드는 폰타인의 주된 신문으로, 티바트 전역에서 읽힌다."
+      },
+      {
+       "t_raw": "궁정이 관장하는 신문이 한 나라의 울타리를 넘어 Teyvat 전역에서 읽힌다는 점은, 이 신문이 궁정의 대외적인 얼굴 가운데 하나라는 인상을 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "궁정이 관장하는 신문이 한 나라의 울타리를 넘어 티바트 전역에서 읽힌다는 점은, 이 신문이 궁정의 대외적인 얼굴 가운데 하나라는 인상을 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine",
+       "revision": 325690,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Steambird",
+       "revision": 237178,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fontaine",
+       "revision": 44709,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "스팀버드",
+     "latin_left": []
+    },
+    {
+     "section": "The Steambird",
+     "status": "accepted",
+     "note": "The facts match M2 and M3. The interpretation follows from them.",
+     "quote": "has many a featured section that contains all sorts of news and gossip drawn from every corner of the seven nations.",
+     "sentences": [
+      {
+       "t_raw": "The Steambird에는 여러 특집 지면이 마련되어 있고, 그곳에는 일곱 나라 각지에서 모아 온 온갖 소식과 가십이 실린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스팀버드에는 여러 특집 지면이 마련되어 있고, 그곳에는 일곱 나라 각지에서 모아 온 온갖 소식과 가십이 실린다."
+      },
+      {
+       "t_raw": "Mona는 이 신문의 칼럼니스트로 이름을 올리고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모나는 이 신문의 칼럼니스트로 이름을 올리고 있다."
+      },
+      {
+       "t_raw": "특집 지면이 일곱 나라의 소식을 모은다는 점과 Mona처럼 외부의 필자가 칼럼을 맡고 있다는 점을 겹쳐 보면, The Steambird의 필진은 Teyvat 전역에 걸쳐 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "특집 지면이 일곱 나라의 소식을 모은다는 점과 모나처럼 외부의 필자가 칼럼을 맡고 있다는 점을 겹쳐 보면, 스팀버드의 필진은 티바트 전역에 걸쳐 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fontaine",
+       "revision": 44709,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mona/Profile",
+       "revision": 150509,
+       "section": "Character Stories > All Things Astrological",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "스팀버드",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences are supported by A2.",
+     "quote": "When he left without saying goodbye, the ladies of the Court wept.",
+     "sentences": [
+      {
+       "t_raw": "**The Sojourner**는 하프 연주자이자, 나중에 Wanderer's Troupe에 속하게 된 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**행자**는 하프 연주자이자, 나중에 방랑자의 극단에 속하게 된 인물이다."
+      },
+      {
+       "t_raw": "그는 Court of Fontaine의 여성들에게 깊은 사랑을 받았고, 작별 인사 없이 떠날 때 궁정의 여인들은 **작별의 눈물**을 흘렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 폰타인성의 여성들에게 깊은 사랑을 받았고, 작별 인사 없이 떠날 때 궁정의 여인들은 **작별의 눈물**을 흘렸다."
+      },
+      {
+       "t_raw": "한 연주자를 향한 애정과 이별의 슬픔이 공존했던 궁정의 모습으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 연주자를 향한 애정과 이별의 슬픔이 공존했던 궁정의 모습으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine",
+       "revision": 325690,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences follow the English.",
+     "quote": "Or perhaps I could sing the praises of the countless gorgeous maidens in the Court of Fontaine, ethereal as the clouds themselves...",
+     "sentences": [
+      {
+       "t_raw": "Court of Fontaine는 Hydro Archon의 궁정으로, **천 년 이상의 연원**을 가지고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인성은 물의 신의 궁정으로, **천 년 이상의 연원**을 가지고 있다."
+      },
+      {
+       "t_raw": "오늘날 그 궁정은 아름다운 소녀들로 이름이 높으며, Xavier는 Court of Fontaine의 수많은 아름다운 소녀들을 구름처럼 신비롭다며 찬양했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오늘날 그 궁정은 아름다운 소녀들로 이름이 높으며, 자비에는 폰타인성의 수많은 아름다운 소녀들을 구름처럼 신비롭다며 찬양했다."
+      },
+      {
+       "t_raw": "The Sojourner가 남긴 옛 사연과 오늘날 아름다움에 대한 이야기가, Court of Fontaine의 오랜 이미지를 이루는 한 부분인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "행자가 남긴 옛 사연과 오늘날 아름다움에 대한 이야기가, 폰타인성의 오랜 이미지를 이루는 한 부분인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine",
+       "revision": 325690,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine",
+       "revision": 325690,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Tatara Tales (Quest)",
+       "quest_ko": "타타라 모노가타리",
+       "version": "2.0",
+       "speaker": "Xavier"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences follow the English.",
+     "quote": "Mona is a columnist on it, suggesting that they have writers from all across Teyvat.",
+     "sentences": [
+      {
+       "t_raw": "Mona는 Court of Fontaine의 주력 신문 **The Steambird**의 **칼럼니스트**로, 이 신문이 Teyvat 전역에서 필자를 끌어들인다는 인상을 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모나는 폰타인성의 주력 신문 **스팀버드**의 **칼럼니스트**로, 이 신문이 티바트 전역에서 필자를 끌어들인다는 인상을 준다."
+      },
+      {
+       "t_raw": "The Steambird에는 일곱 나라 곳곳에서 모은 각종 소식과 가십을 담은 특집 지면이 많다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스팀버드에는 일곱 나라 곳곳에서 모은 각종 소식과 가십을 담은 특집 지면이 많다."
+      },
+      {
+       "t_raw": "이 두 사실을 겹쳐 보면, 궁정의 신문은 먼 지역의 이야기와 필자를 지면 안으로 끌어들이는 통로로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 두 사실을 겹쳐 보면, 궁정의 신문은 먼 지역의 이야기와 필자를 지면 안으로 끌어들이는 통로로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fontaine",
+       "revision": 44709,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mona/Profile",
+       "revision": 150509,
+       "section": "Character Stories > All Things Astrological",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences follow the English; the rumor is kept as a rumor.",
+     "quote": "One rumor even has it that a wealthy businessman from the Court of Fontaine signed a major trade deal with Liyue Harbor for the sole reason that it would mean he could see Ningguang more often.",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 매력적이고 부유한 인물이라 구혼자가 끊이지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 매력적이고 부유한 인물이라 구혼자가 끊이지 않았다."
+      },
+      {
+       "t_raw": "Yujing Terrace의 젊은 신사들부터 유능한 젊은 사업가, 이름난 선장까지 많은 이들이 Ningguang의 마음을 얻으려 상당한 공을 들였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "옥경대의 젊은 신사들부터 유능한 젊은 사업가, 이름난 선장까지 많은 이들이 응광의 마음을 얻으려 상당한 공을 들였다."
+      },
+      {
+       "t_raw": "한 소문에 따르면 Court of Fontaine의 부유한 사업가가 Ningguang을 더 자주 보기 위해서라는 이유만으로 Liyue Harbor와 큰 무역 협정을 맺었다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 소문에 따르면 폰타인성의 부유한 사업가가 응광을 더 자주 보기 위해서라는 이유만으로 리월항과 큰 무역 협정을 맺었다고 한다."
+      },
+      {
+       "t_raw": "여러 신분의 구혼자와 무역 협정을 둘러싼 소문을 함께 보면, Ningguang을 향한 관심이 궁정의 사업가에게까지 미친 사례로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "여러 신분의 구혼자와 무역 협정을 둘러싼 소문을 함께 보면, 응광을 향한 관심이 궁정의 사업가에게까지 미친 사례로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 201650,
+       "section": "Character Stories > Story 5",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Calls the Sojourner story the 'oldest' story about the Court's beauties. The English never says this, so it adds an unsupported claim.",
+     "quote": "The Sojourner, a harpist who later belonged to the Wanderer's Troupe, was beloved by the women of the Court of Fontaine.",
+     "sentences": [
+      {
+       "t_raw": "Wanderer's Troupe에 뒤늦게 몸담은 하프 연주자 The Sojourner는 궁정의 여인들에게 사랑받은 인물이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방랑자의 극단에 뒤늦게 몸담은 하프 연주자 행자는 궁정의 여인들에게 사랑받은 인물이었다."
+      },
+      {
+       "t_raw": "그가 아무 말도 없이 떠나 버리자 궁정의 숙녀들은 눈물을 흘렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 아무 말도 없이 떠나 버리자 궁정의 숙녀들은 눈물을 흘렸다."
+      },
+      {
+       "t_raw": "궁정의 미모가 회자되는 지금, 궁정의 여인들이 작별 인사도 없이 떠난 이를 두고 눈물 흘린 사연이 있었던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "궁정의 미모가 회자되는 지금, 궁정의 여인들이 작별 인사도 없이 떠난 이를 두고 눈물 흘린 사연이 있었던 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine",
+       "revision": 325690,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Calls Xavier a '여행자' (traveler). The English does not say this.",
+     "quote": "Or perhaps I could sing the praises of the countless gorgeous maidens in the Court of Fontaine, ethereal as the clouds themselves...",
+     "sentences": [
+      {
+       "t_raw": "오늘날 궁정은 **아름다운 아가씨들**로 이름나 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오늘날 궁정은 **아름다운 아가씨들**로 이름나 있다."
+      },
+      {
+       "t_raw": "Xavier는 궁정의 셀 수 없이 많은 미모의 아가씨들을 구름처럼 청초하다고 노래하겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "자비에는 궁정의 셀 수 없이 많은 미모의 아가씨들을 구름처럼 청초하다고 노래하겠다고 말한다."
+      },
+      {
+       "t_raw": "The Sojourner를 둘러싼 옛이야기와 Xavier의 노랫말이 같은 대상을 향한다는 점에서, 궁정의 미모는 시간을 건너 되풀이되는 화젯거리인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "행자를 둘러싼 옛이야기와 자비에의 노랫말이 같은 대상을 향한다는 점에서, 궁정의 미모는 시간을 건너 되풀이되는 화젯거리인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine",
+       "revision": 325690,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Tatara Tales (Quest)",
+       "quest_ko": "타타라 모노가타리",
+       "version": "2.0",
+       "speaker": "Xavier"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The English gives the businessman's trade deal and his motive as a rumor ('One rumor even has it'). The Korean states both as plain fact and drops the hedge.",
+     "quote": "One rumor even has it that a wealthy businessman from the Court of Fontaine signed a major trade deal with Liyue Harbor for the sole reason that it would mean he could see Ningguang more often.",
+     "sentences": [
+      {
+       "t_raw": "그렇다고 궁정 사람들의 시선이 늘 궁정 안쪽으로만 향한 것은 아니다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그렇다고 궁정 사람들의 시선이 늘 궁정 안쪽으로만 향한 것은 아니다."
+      },
+      {
+       "t_raw": "Ningguang에게는 구혼자가 끊이지 않았고, 어떤 소문에 따르면 궁정의 부호가 Liyue Harbor와 큰 무역 계약을 맺었다고도 한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "응광에게는 구혼자가 끊이지 않았고, 어떤 소문에 따르면 궁정의 부호가 리월항과 큰 무역 계약을 맺었다고도 한다."
+      },
+      {
+       "t_raw": "그 계약을 맺은 이유가 오직 Ningguang을 더 자주 보기 위해서였다는 소문도 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그 계약을 맺은 이유가 오직 응광을 더 자주 보기 위해서였다는 소문도 있다."
+      },
+      {
+       "t_raw": "미모로 이름난 궁정의 부호가 정작 Liyue의 인물을 좇았다는 대목은 아이러니로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "미모로 이름난 궁정의 부호가 정작 리월의 인물을 좇았다는 대목은 아이러니로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 201650,
+       "section": "Character Stories > Story 5",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Court of Fontaine",
+       "revision": 325690,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Faithful translation of Xavier's line; 'ethereal' rendered as 신비로운 is acceptable.",
+     "t_raw": "아니면 구름처럼 신비로운 Court of Fontaine의 수많은 아름다운 소녀들을 찬양하는 노래라도 부를까...",
+     "en": "Or perhaps I could sing the praises of the countless gorgeous maidens in the Court of Fontaine, ethereal as the clouds themselves...",
+     "speaker": "Xavier",
+     "source": {
+      "kind": "quest",
+      "quest": "Tatara Tales (Quest)",
+      "quest_ko": "타타라 모노가타리",
+      "version": "2.0",
+      "speaker": "Xavier"
+     },
+     "t": "아니면 구름처럼 신비로운 폰타인성의 수많은 아름다운 소녀들을 찬양하는 노래라도 부를까...",
+     "speaker_ko": "자비에"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Xavier's line; all elements (countless, gorgeous maidens, ethereal as clouds, sing the praises) are conveyed.",
+     "t_raw": "혹은 Court of Fontaine의 셀 수 없이 많은 아름다운 아가씨들을, 구름처럼 청초한 이들을 노래할 수도 있겠지요...",
+     "en": "Or perhaps I could sing the praises of the countless gorgeous maidens in the Court of Fontaine, ethereal as the clouds themselves...",
+     "speaker": "Xavier",
+     "source": {
+      "kind": "quest",
+      "quest": "Tatara Tales (Quest)",
+      "quest_ko": "타타라 모노가타리",
+      "version": "2.0",
+      "speaker": "Xavier"
+     },
+     "t": "혹은 폰타인성의 셀 수 없이 많은 아름다운 아가씨들을, 구름처럼 청초한 이들을 노래할 수도 있겠지요...",
+     "speaker_ko": "자비에"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,509 @@
+{
+ "node": "Crafting Bench",
+ "articles": [
+  {
+   "node": "Crafting Bench",
+   "from_version": "1.4",
+   "cutoff": "2021-04-27T00:00:00Z",
+   "input": [
+    {
+     "page": "Crafting Bench",
+     "url": "https://genshin-impact.fandom.com/wiki/Crafting_Bench",
+     "revision": 149981
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 3,
+    "web": 0
+   },
+   "input_chars": 331,
+   "input_cut": false,
+   "input_hash": "7e5292f20dd6",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English. The interpretation in (1) is hedged and follows from the requirement to be at a bench.",
+     "quote": "Crafting Benches are used to perform Alchemy and can be found across Teyvat.",
+     "sentences": [
+      {
+       "t_raw": "Crafting Bench는 Teyvat 곳곳에서 볼 수 있는 **연금술 작업대**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "합성대는 티바트 곳곳에서 볼 수 있는 **연금술 작업대**다."
+      },
+      {
+       "t_raw": "연금술을 하려면 Crafting Bench에 있어야 하므로, 연금술 의뢰에서는 이 작업대가 **실무의 중심**으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "연금술을 하려면 합성대에 있어야 하므로, 연금술 의뢰에서는 이 작업대가 **실무의 중심**으로 보인다."
+      },
+      {
+       "t_raw": "Ying'er는 Silk Flower essence를 Crafting Bench를 사용해 추출하라고 하고, Crafting Bench 위의 Runestone이 이상한 빛을 낸다는 장면도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "앵아는 예상꽃 정수를 합성대를 사용해 추출하라고 하고, 합성대 위의 룬석이 이상한 빛을 낸다는 장면도 있다.",
+       "polish": {
+        "from": "앵아는 예상꽃 essence를 합성대를 사용해 추출하라고 하고, 합성대 위의 룬석이 이상한 빛을 낸다는 장면도 있다.",
+        "text": "앵아는 예상꽃 정수를 합성대를 사용해 추출하라고 하고, 합성대 위의 룬석이 이상한 빛을 낸다는 장면도 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Mondstadt의 Fountain Square와 Liyue Harbor의 Main Plaza에는 영구 Crafting Bench가 있고, Windblume Festival과 Lantern Rite에는 임시 Crafting Bench가 생긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드의 Fountain Square와 리월항의 Main Plaza에는 영구 합성대가 있고, 윈드블룸 축제와 해등절에는 임시 합성대가 생긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Permanent Locations",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Permanent Locations",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Permanent Locations",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Temporary Locations",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Temporary Locations",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Fountain Square",
+      "Main Plaza"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match A1 and M1. The interpretation is reasonable.",
+     "quote": "Players must be at a Crafting Bench to perform Alchemy.",
+     "sentences": [
+      {
+       "t_raw": "**Crafting Bench**는 Teyvat 곳곳에서 찾을 수 있으며, **연금술**을 수행할 때 사용하는 시설이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**합성대**는 티바트 곳곳에서 찾을 수 있으며, **연금술**을 수행할 때 사용하는 시설이다."
+      },
+      {
+       "t_raw": "연금술을 수행하려면 Crafting Bench에 있어야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "연금술을 수행하려면 합성대에 있어야 한다."
+      },
+      {
+       "t_raw": "두 사실을 함께 보면 Crafting Bench는 연금술의 장소와 조건을 동시에 보여 주는 시설로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 사실을 함께 보면 합성대는 연금술의 장소와 조건을 동시에 보여 주는 시설로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Alchemy",
+       "revision": 165751,
+       "section": "Performing Alchemy",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "위치 — 영구 거점과 임시 거점",
+     "status": "accepted",
+     "note": "The three permanent locations match A3 to A5.",
+     "quote": "Mondstadt · Mondstadt (Fountain Square)",
+     "sentences": [
+      {
+       "t_raw": "**영구 거점**으로는 Mondstadt (Fountain Square), Albedo's Campsite, Liyue Harbor (Main Plaza)가 확인된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**영구 거점**으로는 몬드 (Fountain Square), 알베도의 야영지, 리월항 (Main Plaza)가 확인된다."
+      },
+      {
+       "t_raw": "Fountain Square와 Main Plaza, Albedo's Campsite라는 서로 다른 장소가 함께 영구 거점으로 제시된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Fountain Square와 Main Plaza, 알베도의 야영지라는 서로 다른 장소가 함께 영구 거점으로 제시된 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Permanent Locations",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Permanent Locations",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Permanent Locations",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Permanent Locations",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "위치 — 영구 거점과 임시 거점",
+     "latin_left": [
+      "Fountain Square",
+      "Main Plaza",
+      "Fountain Square",
+      "Main Plaza"
+     ]
+    },
+    {
+     "section": "위치 — 영구 거점과 임시 거점",
+     "status": "accepted",
+     "note": "The temporary locations and events match A7 and A8. The interpretation is fine.",
+     "quote": "Mondstadt · Dragonspine Adventurer Camp · Windblume Festival",
+     "sentences": [
+      {
+       "t_raw": "**임시 거점**은 행사에 따라 마련된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**임시 거점**은 행사에 따라 마련된다."
+      },
+      {
+       "t_raw": "Windblume Festival 때는 Dragonspine Adventurer Camp에, Lantern Rite 때는 Liyue Harbor의 Northern Wharf에 Crafting Bench가 마련된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윈드블룸 축제 때는 드래곤 스파인 모험가 야영지에, 해등절 때는 리월항의 Northern Wharf에 합성대가 마련된다."
+      },
+      {
+       "t_raw": "행사마다 거점의 위치가 달라지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "행사마다 거점의 위치가 달라지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Temporary Locations",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Temporary Locations",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Temporary Locations",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "위치 — 영구 거점과 임시 거점",
+     "latin_left": [
+      "Northern Wharf"
+     ]
+    },
+    {
+     "section": "작중 행적 — Ying'er의 의뢰",
+     "status": "accepted",
+     "note": "Matches Q2 and Q3. Reading the lines as Ying'er urging the player on is a reasonable, hedged interpretation.",
+     "quote": "Now, I need you to extract the Silk Flower essence using a crafting bench.",
+     "sentences": [
+      {
+       "t_raw": "Ying'er는 Silk Flower essence를 추출해 달라며 Crafting Bench를 사용하라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "앵아는 예상꽃 정수를 추출해 달라며 합성대를 사용하라고 한다.",
+       "polish": {
+        "from": "앵아는 예상꽃 essence를 추출해 달라며 합성대를 사용하라고 한다.",
+        "text": "앵아는 예상꽃 정수를 추출해 달라며 합성대를 사용하라고 한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이어서 시도하지 않겠느냐고 묻고, Crafting Bench가 고장 난 것은 아니냐고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 시도하지 않겠느냐고 묻고, 합성대가 고장 난 것은 아니냐고 덧붙인다."
+      },
+      {
+       "t_raw": "추출을 지시한 뒤에도 시도가 이어지지 않은 듯한 흐름은 Ying'er가 결과를 재촉하는 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "추출을 지시한 뒤에도 시도가 이어지지 않은 듯한 흐름은 앵아가 결과를 재촉하는 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Three Poignant Perfumes",
+       "quest_ko": "퍼지는 향기",
+       "version": "1.0",
+       "speaker": "Ying'er"
+      },
+      {
+       "kind": "quest",
+       "quest": "Three Poignant Perfumes",
+       "quest_ko": "퍼지는 향기",
+       "version": "1.0",
+       "speaker": "Ying'er"
+      }
+     ],
+     "heading": "작중 행적 — 앵아의 의뢰",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼 — Runestone의 빛",
+     "status": "accepted",
+     "note": "Matches Q1, A1 and M1. The interpretation is hedged and follows from the English.",
+     "quote": "(The Runestone on the Crafting Bench emits a strange glow...)",
+     "sentences": [
+      {
+       "t_raw": "**The Festering Fang**에서 **Crafting Bench** 위의 **Runestone**이 이상한 빛을 내는 장면이 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**부식의 이빨**에서 **합성대** 위의 **룬석**이 이상한 빛을 내는 장면이 나온다."
+      },
+      {
+       "t_raw": "Crafting Bench는 연금술을 수행하는 장소이며, 연금술을 하려면 Crafting Bench에 있어야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "합성대는 연금술을 수행하는 장소이며, 연금술을 하려면 합성대에 있어야 한다."
+      },
+      {
+       "t_raw": "연금술을 수행하는 Crafting Bench 위에서 Runestone이 빛난다는 점은 이 빛을 연금술과 연결해 읽게 만드는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "연금술을 수행하는 합성대 위에서 룬석이 빛난다는 점은 이 빛을 연금술과 연결해 읽게 만드는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Festering Fang",
+       "quest_ko": "부식의 이빨",
+       "version": "1.2",
+       "speaker": "Alchemist's Crafting Bench"
+      },
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Alchemy",
+       "revision": 165751,
+       "section": "Performing Alchemy",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼 — 룬석의 빛",
+     "latin_left": []
+    },
+    {
+     "section": "여담 — Albedo's Campsite의 작은 살림",
+     "status": "accepted",
+     "note": "All supported: A4 lists Albedo's Campsite as a permanent Mondstadt location; M2 gives the cave, two braziers and cooking pot.",
+     "quote": "The laboratory is situated in a small cave on the side of the mountain.",
+     "sentences": [
+      {
+       "t_raw": "Albedo's Campsite의 Crafting Bench는 Mondstadt의 **영구 거점** 중 하나다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알베도의 야영지의 합성대는 몬드의 **영구 거점** 중 하나다."
+      },
+      {
+       "t_raw": "그 주변은 산허리의 작은 동굴에 차려진 실험실로, 입구에는 불이 켜진 두 화로가 있어 다가오는 플레이어를 따뜻하게 해 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 주변은 산허리의 작은 동굴에 차려진 실험실로, 입구에는 불이 켜진 두 화로가 있어 다가오는 플레이어를 따뜻하게 해 준다."
+      },
+      {
+       "t_raw": "화로 곁에는 음식을 조리하거나 재료를 가공할 수 있는 요리용 솥도 놓여 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "화로 곁에는 음식을 조리하거나 재료를 가공할 수 있는 요리용 솥도 놓여 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Crafting Bench",
+       "revision": 149981,
+       "section": "Permanent Locations",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Albedo's Campsite",
+       "revision": 148055,
+       "section": "Description",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담 — 알베도의 야영지의 작은 살림",
+     "latin_left": []
+    },
+    {
+     "section": "여담 — Albedo's Campsite의 작은 살림",
+     "status": "accepted",
+     "note": "Facts match M2. The interpretation is a reasonable summary.",
+     "quote": "There are two workstations and four shelves, all stacked with research materials.",
+     "sentences": [
+      {
+       "t_raw": "동굴 안에는 작업대 두 개와 네 개의 선반이 놓여 있고, 선반에는 연구 재료가 쌓여 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동굴 안에는 작업대 두 개와 네 개의 선반이 놓여 있고, 선반에는 연구 재료가 쌓여 있다."
+      },
+      {
+       "t_raw": "이곳의 **Crafting Bench**는 연금술을 수행할 때 이용할 수 있으며, 주변 곳곳에는 조사하면 재료를 얻을 수 있는 통과 상자가 흩어져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이곳의 **합성대**는 연금술을 수행할 때 이용할 수 있으며, 주변 곳곳에는 조사하면 재료를 얻을 수 있는 통과 상자가 흩어져 있다."
+      },
+      {
+       "t_raw": "연구 공간과 연금술, 재료 수급이 한자리에 모인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "연구 공간과 연금술, 재료 수급이 한자리에 모인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Albedo's Campsite",
+       "revision": 148055,
+       "section": "Description",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담 — 알베도의 야영지의 작은 살림",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적 — Ying'er의 의뢰",
+     "status": "accepted",
+     "note": "Faithful translation of Q2.",
+     "t_raw": "이제, crafting bench를 사용해 Silk Flower essence를 추출해야 해요.",
+     "en": "Now, I need you to extract the Silk Flower essence using a crafting bench.",
+     "speaker": "Ying'er",
+     "source": {
+      "kind": "quest",
+      "quest": "Three Poignant Perfumes",
+      "quest_ko": "퍼지는 향기",
+      "version": "1.0",
+      "speaker": "Ying'er"
+     },
+     "t": "이제, crafting bench를 사용해 예상꽃 essence를 추출해야 해요.",
+     "speaker_ko": "앵아"
+    },
+    {
+     "section": "떡밥과 수수께끼 — Runestone의 빛",
+     "status": "accepted",
+     "note": "Faithful translation of Q1.",
+     "t_raw": "(Crafting Bench 위의 Runestone이 이상한 빛을 낸다...)",
+     "en": "(The Runestone on the Crafting Bench emits a strange glow...)",
+     "speaker": "Alchemist's Crafting Bench",
+     "source": {
+      "kind": "quest",
+      "quest": "The Festering Fang",
+      "quest_ko": "부식의 이빨",
+      "version": "1.2",
+      "speaker": "Alchemist's Crafting Bench"
+     },
+     "t": "(합성대 위의 룬석이 이상한 빛을 낸다...)",
+     "speaker_ko": "연금술사의 합성대"
+    }
+   ]
+  }
+ ]
+}

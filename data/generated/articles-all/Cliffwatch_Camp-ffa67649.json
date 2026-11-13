@@ -1,0 +1,731 @@
+{
+ "node": "Cliffwatch Camp",
+ "articles": [
+  {
+   "node": "Cliffwatch Camp",
+   "from_version": "Luna IV",
+   "cutoff": "2026-02-24T00:00:00Z",
+   "input": [
+    {
+     "page": "Cliffwatch Camp",
+     "url": "https://genshin-impact.fandom.com/wiki/Cliffwatch_Camp",
+     "revision": 2043160
+    }
+   ],
+   "input_counts": {
+    "mentions": 5,
+    "lines": 3,
+    "web": 0
+   },
+   "input_chars": 276,
+   "input_cut": false,
+   "input_hash": "b646a7d71009",
+   "writer": "glm-flash,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "(1) Calling Wild Hunt 'descendants' of the sealed threat, and saying the camp watches the sealed threat, is not in the English; it only says the area became a Wild Hunt hotspot after the sealing. (2) 'Battles with 마신들' is not supported; the material mentions the Evil Eye, Scourge and abyssal entities, not gods.",
+     "quote": "After returning to Cliffwatch Camp, Rollon is tasked with securing the location of the western Verdant Crest.",
+     "sentences": [
+      {
+       "t_raw": "Cliffwatch Camp는 Kipumaki Cliff 기슭에 자리한 Lightkeepers의 전초기지로, 야생 수렵단을 감시하기 위해 세워진 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "절벽 앞 거점은 고통의 절벽 기슭에 자리한 등지기의 전초기지로, 야생 수렵단을 감시하기 위해 세워진 곳이다."
+      },
+      {
+       "t_raw": "500년 전 Aila와 Solovei가 Rauthvangi를 봉인한 바로 그 땅이, 이후 Wild Hunt 활동이 잦은 곳이 되자 상황을 지켜보려는 Lightkeepers가 Cliffwatch Camp를 세운 역사와 겹쳐 있는 셈으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "500년 전 아일라와 솔로베이가 라우스방기를 봉인한 바로 그 땅이, 이후 광란의 사냥 활동이 잦은 곳이 되자 상황을 지켜보려는 등지기가 절벽 앞 거점을 세운 역사와 겹쳐 있는 셈으로 보인다."
+      },
+      {
+       "t_raw": "Luna IV 시점에서는 전투를 준비하는 거점이자, 새 Lightkeeper 초소와 등대가 공사 중인 현장이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "Luna IV 시점에서는 전투를 준비하는 거점이자, 새 등지기 초소와 등대가 공사 중인 현장이기도 하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lightkeepers",
+       "revision": 2049792,
+       "section": "Squads > \"Nightmare Orioles\"",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kipumaki Cliff",
+       "revision": 2050362,
+       "section": "Lore",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Illuga/Storyline",
+       "revision": 2052910,
+       "section": "History > Present",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Moonlit Watcher"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Rollon",
+       "revision": 2052422,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Luna IV"
+     ]
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "The English only gives a sequence ('since then'). Saying the sealing itself caused the later trouble adds a causal claim.",
+     "quote": "Aila and Solovei with Alia's help subdued and sealed Rauthvangi with a sealing array",
+     "sentences": [
+      {
+       "t_raw": "500년 전, Kipumaki Cliff에서는 Aila와 Solovei가 Alia의 도움을 받아 Rauthvangi를 봉인 진으로 토벌하고 봉인했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "500년 전, 고통의 절벽에서는 아일라와 솔로베이가 알리아의 도움을 받아 라우스방기를 봉인 진으로 토벌하고 봉인했다."
+      },
+      {
+       "t_raw": "그러나 봉인 이후 이 일대는 Wild Hunt 활동의 온상이 되었고, 상황을 지켜보기 위해 Lightkeepers가 Cliffwatch Camp를 세우게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 봉인 이후 이 일대는 광란의 사냥 활동의 온상이 되었고, 상황을 지켜보기 위해 등지기가 절벽 앞 거점을 세우게 되었다."
+      },
+      {
+       "t_raw": "그 봉인 이후 이 지역이 Wild Hunt 활동이 활발한 곳이 되면서 Lightkeepers가 상황을 지켜보려 Cliffwatch Camp를 세운 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "그 봉인 이후 이 지역이 광란의 사냥 활동이 활발한 곳이 되면서 등지기가 상황을 지켜보려 절벽 앞 거점을 세운 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kipumaki Cliff",
+       "revision": 2050362,
+       "section": "Lore",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Since then the Cliffwatch Camp was rebuild and the fight against the Wild Hunt continued.",
+     "sentences": [
+      {
+       "t_raw": "3년 전 현재에는 Wild Hunt의 활동이 급증하며 Lightkeepers와 민간인 다수가 사망하는 대참사가 일어났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "3년 전 현재에는 광란의 사냥의 활동이 급증하며 등지기와 민간인 다수가 사망하는 대참사가 일어났다."
+      },
+      {
+       "t_raw": "이후 Cliffwatch Camp는 다시 세워졌고, Wild Hunt와의 싸움은 계속되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 절벽 앞 거점은 다시 세워졌고, 광란의 사냥와의 싸움은 계속되었다."
+      },
+      {
+       "t_raw": "현재는 Nightmare Orioles 부대가 Kipumaki Cliff의 감시를 맡으며 캠프를 운영하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재는 악몽의 밤꾀꼬리 부대가 고통의 절벽의 감시를 맡으며 캠프를 운영하고 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kipumaki Cliff",
+       "revision": 2050362,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Lightkeepers",
+       "revision": 2049792,
+       "section": "Squads > \"Nightmare Orioles\"",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "All supported by the dialogue and M4; the last sentence is a reasonable interpretation.",
+     "quote": "I'll lead the main force to Cliffwatch Camp first to make the necessary preparations for battle. We'll wait for you to join us there.",
+     "sentences": [
+      {
+       "t_raw": "Illuga는 원래 계획대로 주력을 이끌고 Cliffwatch Camp로 먼저 향해 팀과 만나 전투와 작전을 준비하고, Traveler가 합류하기를 그곳에서 기다린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일루가는 원래 계획대로 주력을 이끌고 절벽 앞 거점으로 먼저 향해 팀과 만나 전투와 작전을 준비하고, 여행자가 합류하기를 그곳에서 기다린다."
+      },
+      {
+       "t_raw": "When War Songs Rise에서 Traveler는 Rollon과 부대를 만나 Illuga와 함께 Evil Eye를 끝낼 준비를 하고, 모두 Kipumaki Cliff로 향한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전쟁의 노래가 울리는 순간에서 여행자는 롤론과 부대를 만나 일루가와 함께 사악한 눈을 끝낼 준비를 하고, 모두 고통의 절벽으로 향한다."
+      },
+      {
+       "t_raw": "Cliffwatch Camp로 돌아온 뒤 Rollon은 서부 Verdant Crest의 위치를 확보하고, 세 Verdant Crest를 활성화해 Scourge of Endless Decay를 물리쳐 Kipumaki Cliff를 Wild Hunt로부터 해방한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "절벽 앞 거점으로 돌아온 뒤 롤론은 서부 초록 문장의 위치를 확보하고, 세 초록 문장을 활성화해 「끝없는 죄악」을 물리쳐 고통의 절벽을 광란의 사냥으로부터 해방한다."
+      },
+      {
+       "t_raw": "이로써 Cliffwatch Camp는 작전 준비와 귀환의 **거점**으로 기능한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이로써 절벽 앞 거점은 작전 준비와 귀환의 **거점**으로 기능한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Wind-Stirred Ripples",
+       "quest_ko": "폭풍전야",
+       "version": "Luna IV",
+       "speaker": "Illuga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Tower of Inversion",
+       "quest_ko": "거꾸로 된 탑",
+       "version": "Luna IV",
+       "speaker": "Illuga"
+      },
+      {
+       "kind": "quest",
+       "quest": "Tower of Inversion",
+       "quest_ko": "거꾸로 된 탑",
+       "version": "Luna IV",
+       "speaker": "Illuga"
+      },
+      {
+       "kind": "wiki",
+       "page": "Rollon",
+       "revision": 2052422,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "All supported by M5.",
+     "quote": "The Traveler later headed to Cliffwatch Camp, where Illuga was overseeing the construction of a new Lightkeeper outpost to protect the people of Nod-Krai.",
+     "sentences": [
+      {
+       "t_raw": "이후 Traveler는 Cliffwatch Camp로 향하고, Illuga는 Nod-Krai의 사람들을 보호할 새 Lightkeeper 전초기지 건설을 감독한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 여행자는 절벽 앞 거점으로 향하고, 일루가는 노드크라이의 사람들을 보호할 새 등지기 전초기지 건설을 감독한다."
+      },
+      {
+       "t_raw": "한동안 버려졌던 전초기지들을 Piramida의 보급품으로 다시 꾸미던 중, 보급을 맡은 Valdis가 제때 도착하지 않아 Illuga는 그의 행방을 궁금해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한동안 버려졌던 전초기지들을 피라미다성의 보급품으로 다시 꾸미던 중, 보급을 맡은 발디스가 제때 도착하지 않아 일루가는 그의 행방을 궁금해한다."
+      },
+      {
+       "t_raw": "Traveler와 Paimon, Illuga는 길에서 벗어난 곳에서 만드라고라들에 붙잡힌 Valdis를 구하고, 이어 심연의 존재들의 습격을 받지만 그들은 상대가 되지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬, 일루가는 길에서 벗어난 곳에서 만드라고라들에 붙잡힌 발디스를 구하고, 이어 심연의 존재들의 습격을 받지만 그들은 상대가 되지 못한다."
+      },
+      {
+       "t_raw": "Illuga는 만드라고라들이 심연의 침입을 감지해 Valdis를 그의 안전을 위해 봉인했다고 결론 내리고, 절차 위반에도 잃은 보급품이 없어 고민하다 그에게 건설 중인 새 등대를 지키게 한 뒤 Traveler에게 감사를 표하고 작업으로 돌아간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일루가는 만드라고라들이 심연의 침입을 감지해 발디스를 그의 안전을 위해 봉인했다고 결론 내리고, 절차 위반에도 잃은 보급품이 없어 고민하다 그에게 건설 중인 새 등대를 지키게 한 뒤 여행자에게 감사를 표하고 작업으로 돌아간다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Illuga/Storyline",
+       "revision": 2052910,
+       "section": "History > Present",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Moonlit Watcher"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by M1.",
+     "quote": "Currently, the squad is tasked with keeping watch over Kipumaki Cliff and established the Cliffwatch Camp to do so.",
+     "sentences": [
+      {
+       "t_raw": "Kipumaki Cliff를 감시하는 Lightkeepers의 분대 **Nightmare Orioles**는 현재 그곳을 지켜보는 임무를 맡고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고통의 절벽을 감시하는 등지기의 분대 **악몽의 밤꾀꼬리**는 현재 그곳을 지켜보는 임무를 맡고 있다."
+      },
+      {
+       "t_raw": "그 임무를 위해 이 분대가 세운 곳이 Cliffwatch Camp다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 임무를 위해 이 분대가 세운 곳이 절벽 앞 거점다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lightkeepers",
+       "revision": 2049792,
+       "section": "Squads > \"Nightmare Orioles\"",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All supported by A2-A7.",
+     "quote": "After completing The Moonlit Watcher and Nightingale's Song several Lightkeepers that appeared in those quests become open-world NPCs at Cliffwatch Camp:",
+     "sentences": [
+      {
+       "t_raw": "The Moonlit Watcher와 Nightingale's Song을 완료하면 그 퀘스트들에 등장한 여러 Lightkeepers가 Cliffwatch Camp의 오픈 월드 NPC가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "달의 파수꾼과 Nightingale의 Song을 완료하면 그 퀘스트들에 등장한 여러 등지기가 절벽 앞 거점의 오픈 월드 NPC가 된다."
+      },
+      {
+       "t_raw": "이때 만날 수 있는 인물로 Anleifr, Egle, Rollon, Valdis, Vlaicu가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이때 만날 수 있는 인물로 안레이프, 에글레, 롤론, 발디스, 블라이츠가 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cliffwatch Camp",
+       "revision": 2043160,
+       "section": "NPC",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cliffwatch Camp",
+       "revision": 2043160,
+       "section": "NPC",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cliffwatch Camp",
+       "revision": 2043160,
+       "section": "NPC",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cliffwatch Camp",
+       "revision": 2043160,
+       "section": "NPC",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cliffwatch Camp",
+       "revision": 2043160,
+       "section": "NPC",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cliffwatch Camp",
+       "revision": 2043160,
+       "section": "NPC",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Nightingale",
+      "Song",
+      "NPC"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Facts match M5; the interpretation is a mild, reasonable reading.",
+     "quote": "The Traveler later headed to Cliffwatch Camp, where Illuga was overseeing the construction of a new Lightkeeper outpost to protect the people of Nod-Krai.",
+     "sentences": [
+      {
+       "t_raw": "Illuga는 Cliffwatch Camp에서 Nod-Krai 사람들을 지키기 위한 새 Lightkeeper 전초기지 건설을 감독하고 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일루가는 절벽 앞 거점에서 노드크라이 사람들을 지키기 위한 새 등지기 전초기지 건설을 감독하고 있었다."
+      },
+      {
+       "t_raw": "오랫동안 버려진 전초기지였기에 Illuga와 부하들은 Piramida에서 온 보급품으로 그곳을 다시 꾸미고 있었고, 보급은 **Valdis**가 맡았지만 그는 제때 도착하지 않아 Illuga는 그가 어디로 갔는지 궁금해했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오랫동안 버려진 전초기지였기에 일루가와 부하들은 피라미다성에서 온 보급품으로 그곳을 다시 꾸미고 있었고, 보급은 **발디스**가 맡았지만 그는 제때 도착하지 않아 일루가는 그가 어디로 갔는지 궁금해했다."
+      },
+      {
+       "t_raw": "Traveler와 Paimon은 Illuga 일행과 함께 길에서 벗어난 곳에서 만드라고라에 갇힌 Valdis를 찾아 풀어 주었고, 그 뒤 심연 존재들의 습격이 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬은 일루가 일행과 함께 길에서 벗어난 곳에서 만드라고라에 갇힌 발디스를 찾아 풀어 주었고, 그 뒤 심연 존재들의 습격이 있었다."
+      },
+      {
+       "t_raw": "전투 후 Illuga는 만드라고라가 심연의 침입을 감지해 Valdis를 안전을 위해 가둔 것이라고 결론지었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전투 후 일루가는 만드라고라가 심연의 침입을 감지해 발디스를 안전을 위해 가둔 것이라고 결론지었다."
+      },
+      {
+       "t_raw": "보급품이 손실되지 않았기에 Illuga는 절차 위반에 대한 징계를 고민했고, 결국 건설 중인 새 등대를 지키게 하는 것으로 정했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "보급품이 손실되지 않았기에 일루가는 절차 위반에 대한 징계를 고민했고, 결국 건설 중인 새 등대를 지키게 하는 것으로 정했다."
+      },
+      {
+       "t_raw": "이는 물자의 손실 없이 절차 위반을 수습하려는 판단으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 물자의 손실 없이 절차 위반을 수습하려는 판단으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Illuga/Storyline",
+       "revision": 2052910,
+       "section": "History > Present",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Moonlit Watcher"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches M3; the interpretation is reasonable.",
+     "quote": "500 years ago it was here where Aila and Solovei with Alia's help subdued and sealed Rauthvangi with a sealing array.",
+     "sentences": [
+      {
+       "t_raw": "500년 전 Kipumaki Cliff에서는 Aila와 Solovei가 Alia의 도움으로 Rauthvangi를 봉인진으로 제압해 **봉인**했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "500년 전 고통의 절벽에서는 아일라와 솔로베이가 알리아의 도움으로 라우스방기를 봉인진으로 제압해 **봉인**했다."
+      },
+      {
+       "t_raw": "그 뒤 이 일대는 Wild Hunt 활동이 집중되는 곳이 되었고, Lightkeepers는 상황을 지켜보려 Cliffwatch Camp를 세웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 뒤 이 일대는 광란의 사냥 활동이 집중되는 곳이 되었고, 등지기는 상황을 지켜보려 절벽 앞 거점을 세웠다."
+      },
+      {
+       "t_raw": "봉인된 존재와 Wild Hunt가 같은 장소에서 겹친다는 점에서, 이 캠프의 감시는 두 문제를 함께 안고 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "봉인된 존재와 광란의 사냥이 같은 장소에서 겹친다는 점에서, 이 캠프의 감시는 두 문제를 함께 안고 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kipumaki Cliff",
+       "revision": 2050362,
+       "section": "Lore",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches M2, M4 and M3; sentence 2 correctly says the link is unclear.",
+     "quote": "Three years before the present there was a surge in Wild Hunt activity that caused a great catastrophe leading to many deaths of Lightkeepers and civilians.",
+     "sentences": [
+      {
+       "t_raw": "3년 전 Wild Hunt 활동의 급증은 Lightkeepers와 민간인 다수의 죽음을 낳은 대참사로 이어졌고, 그 뒤 Cliffwatch Camp는 재건되어 Wild Hunt와의 싸움이 계속되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "3년 전 광란의 사냥 활동의 급증은 등지기와 민간인 다수의 죽음을 낳은 대참사로 이어졌고, 그 뒤 절벽 앞 거점은 재건되어 광란의 사냥와의 싸움이 계속되었다."
+      },
+      {
+       "t_raw": "이후 Rollon 일행은 Illuga와 함께 Evil Eye를 끝내기 위한 작전에 나섰고, 캠프로 돌아온 뒤 western Verdant Crest의 위치를 확보해 세 개의 Verdant Crest를 활성화하고 **Scourge of Endless Decay**를 물리쳐 Kipumaki Cliff를 Wild Hunt로부터 해방시켰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 롤론 일행은 일루가와 함께 사악한 눈을 끝내기 위한 작전에 나섰고, 캠프로 돌아온 뒤 서쪽의 초록 문장의 위치를 확보해 세 개의 초록 문장을 활성화하고 **「끝없는 죄악」**을 물리쳐 고통의 절벽을 광란의 사냥으로부터 해방시켰다.",
+       "polish": {
+        "from": "이후 롤론 일행은 일루가와 함께 사악한 눈을 끝내기 위한 작전에 나섰고, 캠프로 돌아온 뒤 western 초록 문장의 위치를 확보해 세 개의 초록 문장을 활성화하고 **「끝없는 죄악」**을 물리쳐 고통의 절벽을 광란의 사냥으로부터 해방시켰다.",
+        "text": "이후 롤론 일행은 일루가와 함께 사악한 눈을 끝내기 위한 작전에 나섰고, 캠프로 돌아온 뒤 서쪽의 초록 문장의 위치를 확보해 세 개의 초록 문장을 활성화하고 **「끝없는 죄악」**을 물리쳐 고통의 절벽을 광란의 사냥으로부터 해방시켰다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Scourge of Endless Decay를 물리친 일과 Rauthvangi의 봉인이 어떻게 맞물리는지는 이 자료들만으로는 분명하지 않다.",
+       "interp": true,
+       "dropped": false,
+       "t": "「끝없는 죄악」을 물리친 일과 라우스방기의 봉인이 어떻게 맞물리는지는 이 자료들만으로는 분명하지 않다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kipumaki Cliff",
+       "revision": 2050362,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Rollon",
+       "revision": 2052422,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kipumaki Cliff",
+       "revision": 2050362,
+       "section": "Lore",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A1 and M5.",
+     "quote": "The Meeting Point of the same name is situated at the vehicle in the camp near the lighthouse.",
+     "sentences": [
+      {
+       "t_raw": "Cliffwatch Camp의 등대 근처 차량에는 같은 이름의 Meeting Point가 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "절벽 앞 거점의 등대 근처 차량에는 같은 이름의 「거점」이 자리한다."
+      },
+      {
+       "t_raw": "같은 캠프에서 Illuga는 Nod-Krai 사람들을 지키기 위한 새 Lightkeeper 전초기지를 짓고 있었고, 한동안 버려져 있던 전초기지들을 Piramida의 물자로 다시 손보고 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "같은 캠프에서 일루가는 노드크라이 사람들을 지키기 위한 새 등지기 전초기지를 짓고 있었고, 한동안 버려져 있던 전초기지들을 피라미다성의 물자로 다시 손보고 있었다."
+      },
+      {
+       "t_raw": "보급을 맡은 Valdis는 제때 도착하지 않아 Illuga를 궁금하게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "보급을 맡은 발디스는 제때 도착하지 않아 일루가를 궁금하게 했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cliffwatch Camp",
+       "revision": 2043160,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Illuga/Storyline",
+       "revision": 2052910,
+       "section": "History > Present",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Moonlit Watcher"
+        }
+       ]
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All supported by M5.",
+     "quote": "Following the battle, Illuga concluded that the mandragoras had sensed the abyssal intrusion and sealed Valdis away for his own safety.",
+     "sentences": [
+      {
+       "t_raw": "Traveler와 Paimon이 함께 Valdis를 찾아냈을 때, 그는 주요 도로에서 조금 벗어난 곳에서 여러 mandragoras에게 붙잡혀 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 페이몬이 함께 발디스를 찾아냈을 때, 그는 주요 도로에서 조금 벗어난 곳에서 여러 만드라고라에게 붙잡혀 있었다.",
+       "polish": {
+        "from": "여행자와 페이몬이 함께 발디스를 찾아냈을 때, 그는 주요 도로에서 조금 벗어난 곳에서 여러 mandragoras에게 붙잡혀 있었다.",
+        "text": "여행자와 페이몬이 함께 발디스를 찾아냈을 때, 그는 주요 도로에서 조금 벗어난 곳에서 여러 만드라고라에게 붙잡혀 있었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그를 풀어준 뒤 심연의 존재들이 매복했지만, Valdis 앞에서는 상대가 되지 못했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그를 풀어준 뒤 심연의 존재들이 매복했지만, 발디스 앞에서는 상대가 되지 못했다."
+      },
+      {
+       "t_raw": "Illuga는 mandragoras가 심연의 침입을 감지해 Valdis를 안전을 위해 봉인한 것으로 결론지었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일루가는 만드라고라들이 심연의 침입을 감지해 발디스를 안전을 위해 봉인한 것으로 결론지었다.",
+       "polish": {
+        "from": "일루가는 mandragoras가 심연의 침입을 감지해 발디스를 안전을 위해 봉인한 것으로 결론지었다.",
+        "text": "일루가는 만드라고라들이 심연의 침입을 감지해 발디스를 안전을 위해 봉인한 것으로 결론지었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "잃은 물자가 없었던 탓에 Illuga는 절차를 위반한 Valdis를 어떻게 다스릴지 고민했고, 결국 공사 중인 새 등대를 지키게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잃은 물자가 없었던 탓에 일루가는 절차를 위반한 발디스를 어떻게 다스릴지 고민했고, 결국 공사 중인 새 등대를 지키게 했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Illuga/Storyline",
+       "revision": 2052910,
+       "section": "History > Present",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Moonlit Watcher"
+        }
+       ]
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Faithful translation of the Illuga line.",
+     "t_raw": "Kipumaki Cliff 기슭에 있는 Cliffwatch Camp로 먼저 가서 팀원들과 합류해 다가올 작전을 준비할 거야.",
+     "en": "I'll head ahead to Cliffwatch Camp at the base of Kipumaki Cliff to meet up with my team and prepare for the upcoming operation.",
+     "speaker": "Illuga",
+     "source": {
+      "kind": "quest",
+      "quest": "Tower of Inversion",
+      "quest_ko": "거꾸로 된 탑",
+      "version": "Luna IV",
+      "speaker": "Illuga"
+     },
+     "t": "고통의 절벽 기슭에 있는 절벽 앞 거점으로 먼저 가서 팀원들과 합류해 다가올 작전을 준비할 거야.",
+     "speaker_ko": "일루가"
+    },
+    {
+     "section": "작중 행적",
+     "status": "accepted",
+     "note": "Faithful translation; 'you' rendered as singular 네가 is acceptable.",
+     "t_raw": "내가 주력을 이끌고 먼저 Cliffwatch Camp로 가서 전투에 필요한 준비를 하겠다. 우리는 그곳에서 네가 합류하기를 기다리겠다.",
+     "en": "I'll lead the main force to Cliffwatch Camp first to make the necessary preparations for battle. We'll wait for you to join us there.",
+     "speaker": "Illuga",
+     "source": {
+      "kind": "quest",
+      "quest": "Wind-Stirred Ripples",
+      "quest_ko": "폭풍전야",
+      "version": "Luna IV",
+      "speaker": "Illuga"
+     },
+     "t": "내가 주력을 이끌고 먼저 절벽 앞 거점으로 가서 전투에 필요한 준비를 하겠다. 우리는 그곳에서 네가 합류하기를 기다리겠다.",
+     "speaker_ko": "일루가"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation; 'you' rendered as plural 너희가 is acceptable since English 'you' is ambiguous.",
+     "t_raw": "내가 주력 부대를 이끌고 먼저 Cliffwatch Camp로 가서 전투에 필요한 준비를 해 두겠다. 그곳에서 너희가 합류하기를 기다리겠다.",
+     "en": "I'll lead the main force to Cliffwatch Camp first to make the necessary preparations for battle. We'll wait for you to join us there.",
+     "speaker": "Illuga",
+     "source": {
+      "kind": "quest",
+      "quest": "Wind-Stirred Ripples",
+      "quest_ko": "폭풍전야",
+      "version": "Luna IV",
+      "speaker": "Illuga"
+     },
+     "t": "내가 주력 부대를 이끌고 먼저 절벽 앞 거점으로 가서 전투에 필요한 준비를 해 두겠다. 그곳에서 너희가 합류하기를 기다리겠다.",
+     "speaker_ko": "일루가"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,658 @@
+{
+ "node": "Springvale",
+ "articles": [
+  {
+   "node": "Springvale",
+   "from_version": "1.0",
+   "cutoff": "2020-11-10T00:00:00Z",
+   "input": [
+    {
+     "page": "Springvale",
+     "url": "https://genshin-impact.fandom.com/wiki/Springvale",
+     "revision": 40467
+    }
+   ],
+   "input_counts": {
+    "mentions": 3,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 289,
+   "input_cut": false,
+   "input_hash": "6e5330373609",
+   "writer": "ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and M1.",
+     "quote": "Most of the village's residents are hunters that provide fresh meat for all the big restaurants of Mondstadt.",
+     "sentences": [
+      {
+       "t_raw": "Springvale는 Mondstadt의 작은 마을로, Windwail Highland 지역의 남동쪽에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "샘물 마을은 몬드의 작은 마을로, 창풍 고지대 지역의 남동쪽에 자리한다."
+      },
+      {
+       "t_raw": "Mondstadt 남쪽에서 도시를 둘러싼 호수를 마주하고 있으며, 주민 대부분이 사냥꾼이라 Mondstadt의 큰 식당들에 신선한 고기를 공급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드 남쪽에서 도시를 둘러싼 호수를 마주하고 있으며, 주민 대부분이 사냥꾼이라 몬드의 큰 식당들에 신선한 고기를 공급한다."
+      },
+      {
+       "t_raw": "소박한 매력 덕에 관광객이 찾아오고, Springvale 고기의 장점을 제대로 살리는 식당을 만나는 일은 운이 따라야 하는 것으로 여겨진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소박한 매력 덕에 관광객이 찾아오고, 샘물 마을 고기의 장점을 제대로 살리는 식당을 만나는 일은 운이 따라야 하는 것으로 여겨진다."
+      },
+      {
+       "t_raw": "작고 조용한 마을이지만 고기 공급과 관광이라는 두 통로로 Mondstadt의 식탁과 여행자에게 직접 닿아 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "작고 조용한 마을이지만 고기 공급과 관광이라는 두 통로로 몬드의 식탁과 여행자에게 직접 닿아 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Springvale",
+       "revision": 40467,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and M1.",
+     "quote": "Springvale is a small town of the Mondstadt nation.",
+     "sentences": [
+      {
+       "t_raw": "Springvale는 Mondstadt nation에 속한 작은 마을이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "샘물 마을은 몬드 국가에 속한 작은 마을이다.",
+       "polish": {
+        "from": "샘물 마을은 몬드 nation에 속한 작은 마을이다.",
+        "text": "샘물 마을은 몬드 국가에 속한 작은 마을이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Windwail Highland 지역의 남동쪽에 자리하고 있으며, Mondstadt 도시를 둘러싼 호수를 마주하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "창풍 고지대 지역의 남동쪽에 자리하고 있으며, 몬드 도시를 둘러싼 호수를 마주하고 있다."
+      },
+      {
+       "t_raw": "도시의 남쪽에 있다고 일컬어지는 자리이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시의 남쪽에 있다고 일컬어지는 자리이기도 하다."
+      },
+      {
+       "t_raw": "마을은 나른하고 조용한 작은 촌락으로 그려진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마을은 나른하고 조용한 작은 촌락으로 그려진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Springvale",
+       "revision": 40467,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts match A1 and M1, and the interpretation is reasonable.",
+     "quote": "Springvale's rustic appeal attracts many tourists.",
+     "sentences": [
+      {
+       "t_raw": "마을 안길은 흙으로 다져져 있고, 집들은 탄색 벽에 푸른 기와지붕을 얹은 단층 건물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마을 안길은 흙으로 다져져 있고, 집들은 탄색 벽에 푸른 기와지붕을 얹은 단층 건물이다."
+      },
+      {
+       "t_raw": "마을을 굽어보는 풍차는 단 하나뿐이며, 그 바로 아래에는 자연히 솟아난 샘이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마을을 굽어보는 풍차는 단 하나뿐이며, 그 바로 아래에는 자연히 솟아난 샘이 있다."
+      },
+      {
+       "t_raw": "이런 소박한 정취가 많은 여행자를 끌어들인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이런 소박한 정취가 많은 여행자를 끌어들인다."
+      },
+      {
+       "t_raw": "작은 마을이면서도 찾아오는 이가 많다는 점에서, Springvale의 매력은 규모보다 풍경 쪽에 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "작은 마을이면서도 찾아오는 이가 많다는 점에서, 샘물 마을의 매력은 규모보다 풍경 쪽에 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Springvale",
+       "revision": 40467,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The facts match M1, Q10 and Q3, and the interpretation is reasonable.",
+     "quote": "With a top-notch chef cooking top-notch cuisine with top-notch meat from Springvale... Our reputation would spread far and wide.",
+     "sentences": [
+      {
+       "t_raw": "Springvale 주민 대부분은 사냥꾼이며, 이들은 Mondstadt의 큰 식당들에 신선한 고기를 공급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "샘물 마을 주민 대부분은 사냥꾼이며, 이들은 몬드의 큰 식당들에 신선한 고기를 공급한다."
+      },
+      {
+       "t_raw": "Draff는 Springvale의 고기로 최고급 요리를 만들면 마을의 명성이 널리 퍼질 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두라프는 샘물 마을의 고기로 최고급 요리를 만들면 마을의 명성이 널리 퍼질 것이라고 말한다."
+      },
+      {
+       "t_raw": "Olaf는 사람들이 모두 Springvale에 살며 자신의 이웃이자 친구라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "울라프는 사람들이 모두 샘물 마을에 살며 자신의 이웃이자 친구라고 말한다."
+      },
+      {
+       "t_raw": "사냥꾼의 고기가 식당으로 흘러가고, 그 고기를 둘러싼 명성 이야기로 이어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사냥꾼의 고기가 식당으로 흘러가고, 그 고기를 둘러싼 명성 이야기로 이어지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Cooking Appointment",
+       "quest_ko": "요리의 약속",
+       "version": "1.0",
+       "speaker": "Draff"
+      },
+      {
+       "kind": "quest",
+       "quest": "Cooking Showdown",
+       "quest_ko": "요리 대결",
+       "version": "1.0",
+       "speaker": "Olaf"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The facts match M2, Q8 and Q9, and the interpretation is reasonable.",
+     "quote": "One by one, she visits the butcher's, the Adventurers' Guild, and the Springvale hunters, looking for a material of a very specific kind.",
+     "sentences": [
+      {
+       "t_raw": "Sucrose는 사흘에 한 번 해질녘에 바깥으로 나가 정육점과 Adventurers' Guild, Springvale의 사냥꾼들을 찾아 아주 특정한 종류의 재료를 구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "설탕은 사흘에 한 번 해질녘에 바깥으로 나가 정육점과 모험가 길드, 샘물 마을의 사냥꾼들을 찾아 아주 특정한 종류의 재료를 구한다."
+      },
+      {
+       "t_raw": "Springvale의 사냥꾼들은 식당에 고기를 대는 이들이면서, 동시에 이런 재료를 찾는 방문객이 들르는 대상이기도 하다.",
+       "interp": true,
+       "dropped": false,
+       "t": "샘물 마을의 사냥꾼들은 식당에 고기를 대는 이들이면서, 동시에 이런 재료를 찾는 방문객이 들르는 대상이기도 하다."
+      },
+      {
+       "t_raw": "Xiangling은 Springvale로 돌아가자고 말하고, Paimon은 Draff가 Springvale에 있을 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "향릉은 샘물 마을로 돌아가자고 말하고, 페이몬은 두라프가 샘물 마을에 있을 것이라고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sucrose/Profile",
+       "revision": 42432,
+       "section": "Character Stories > Story 3",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Present From the Past",
+       "quest_ko": "고대의 선물",
+       "version": "1.0",
+       "speaker": "Xiangling"
+      },
+      {
+       "kind": "quest",
+       "quest": "Little Chef on a Hunt",
+       "quest_ko": "사냥 중인 꼬마 요리사",
+       "version": "1.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 3 calls the two places side-by-side neighbors. The English only says the winery lies between Springvale and the Stone Gate, so adjacency is an added claim.",
+     "quote": "The estate itself is situated in the south-western reaches of the Mondstadt region, between Springvale and the Stone Gate to Liyue.",
+     "sentences": [
+      {
+       "t_raw": "Dawn Winery는 Mondstadt 지역 남서쪽, Springvale과 Liyue로 향하는 Stone Gate 사이에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다운 와이너리는 몬드 지역 남서쪽, 샘물 마을과 리월로 향하는 석문 사이에 자리한다."
+      },
+      {
+       "t_raw": "영지 중심에는 작은 언덕 위의 2층 저택이 있고, 주위를 포도밭이 여러 줄로 둘러싸며 부근에 작은 창고와 단층 건물들이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "영지 중심에는 작은 언덕 위의 2층 저택이 있고, 주위를 포도밭이 여러 줄로 둘러싸며 부근에 작은 창고와 단층 건물들이 있다."
+      },
+      {
+       "t_raw": "Springvale가 사냥꾼들의 마을로 서술되는 반면, Dawn Winery는 포도밭과 저택을 중심으로 한 영지로 그려진다.",
+       "interp": true,
+       "dropped": false,
+       "t": "샘물 마을이 사냥꾼들의 마을로 서술되는 반면, 다운 와이너리는 포도밭과 저택을 중심으로 한 영지로 그려진다."
+      },
+      {
+       "t_raw": "Dawn Winery가 Springvale와 Stone Gate 사이에 자리해, 두 곳 사이에 끼어 있는 모양새로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "다운 와이너리가 샘물 마을과 석문 사이에 자리해, 두 곳 사이에 끼어 있는 모양새로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dawn Winery",
+       "revision": 42980,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by Q7, Q5 and M1; the interpretation is reasonable.",
+     "quote": "They... they attacked Springvale this morning.",
+     "sentences": [
+      {
+       "t_raw": "Siegfria는 그들이 그날 아침 Springvale를 공격했다고 전했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지크프리야는 그들이 그날 아침 샘물 마을을 공격했다고 전했다."
+      },
+      {
+       "t_raw": "그 무렵 Sara는 Springvale로 통하는 길에서 hilichurl들을 몰아내 달라며 원정대를 보내 줄 것을 청했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 무렵 사라는 샘물 마을로 통하는 길에서 츄츄족을 몰아내 달라며 원정대를 보내 줄 것을 청했다.",
+       "polish": {
+        "from": "그 무렵 사라는 샘물 마을로 통하는 길에서 hilichurl들을 몰아내 달라며 원정대를 보내 줄 것을 청했다.",
+        "text": "그 무렵 사라는 샘물 마을로 통하는 길에서 츄츄족을 몰아내 달라며 원정대를 보내 줄 것을 청했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Mondstadt의 큰 식당들에 신선한 고기를 대는 사냥꾼들의 마을이라는 점을 떠올리면, 길이 막히고 마을이 공격받은 일은 몬드성의 고기 공급과 맞닿은 소동이었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "몬드의 큰 식당들에 신선한 고기를 대는 사냥꾼들의 마을이라는 점을 떠올리면, 길이 막히고 마을이 공격받은 일은 몬드성의 고기 공급과 맞닿은 소동이었던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "When the West Wind Arises (Quest)",
+       "quest_ko": "서풍이 부는 일상",
+       "version": "1.0",
+       "speaker": "Sara"
+      },
+      {
+       "kind": "quest",
+       "quest": "Another Day as an Outrider!",
+       "quest_ko": "또 하루를 시작하는 정찰 기사",
+       "version": "1.0",
+       "speaker": "Siegfria"
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The English has no one asking who can use Cryo. Kaeya just says 'Huh? Oh... Me?', so the question is invented.",
+     "quote": "Take a look around the waterfall near Springvale. Remember to bring a friend who can manipulate Cryo. Huh? Oh... Me?",
+     "sentences": [
+      {
+       "t_raw": "Kaeya는 Springvale 근처 폭포를 살펴보라면서, Cryo를 다룰 수 있는 동료를 데려가라고 일렀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "케이아는 샘물 마을 근처 폭포를 살펴보라면서, 얼음을 다룰 수 있는 동료를 데려가라고 일렀다."
+      },
+      {
+       "t_raw": "그는 Cryo를 다룰 수 있는 친구를 데려오라더니, 이내 ‘Huh? Oh... Me?’라고 되물었다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그는 얼음을 다룰 수 있는 친구를 데려오라더니, 이내 'Huh? Oh... Me?'라고 되물었다."
+      },
+      {
+       "t_raw": "Cryo가 필요하다는 조건만 남긴 채 이유는 설명하지 않았고, 자신이 직접 나설 생각은 없었던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "얼음이 필요하다는 조건만 남긴 채 이유는 설명하지 않았고, 자신이 직접 나설 생각은 없었던 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Mystery of the Arcadian Ruins",
+       "quest_ko": "아카디아 유적의 수수께끼",
+       "version": "1.0",
+       "speaker": "Kaeya"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Huh",
+      "Oh",
+      "Me"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by Q4 and Q6; the interpretation is reasonable.",
+     "quote": "This is Springvale. There must be some clues about Raptor 'round here.",
+     "sentences": [
+      {
+       "t_raw": "Otto는 어떤 인물이 Springvale 근처에서 마지막으로 목격되었다고 전하면서도, 그것이 꽤 오래전 일이라고 덧붙였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오토는 어떤 인물이 샘물 마을 근처에서 마지막으로 목격되었다고 전하면서도, 그것이 꽤 오래전 일이라고 덧붙였다."
+      },
+      {
+       "t_raw": "Amber는 Springvale에 가면 Raptor에 관한 단서가 있을 거라고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "엠버는 샘물 마을에 가면 「괴조」에 관한 단서가 있을 거라고 말했다."
+      },
+      {
+       "t_raw": "조용한 마을이라는 인상과 달리, 마을 근처는 이렇게 서로 다른 목격담과 수색의 좌표가 걸리는 자리로 남아 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "조용한 마을이라는 인상과 달리, 마을 근처는 이렇게 서로 다른 목격담과 수색의 좌표가 걸리는 자리로 남아 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Mondstadt Glider",
+       "quest_ko": "몬드성의 비행자",
+       "version": "1.0",
+       "speaker": "Otto"
+      },
+      {
+       "kind": "quest",
+       "quest": "They Call Him Raptor",
+       "quest_ko": "녀석의 이름은 「괴조」",
+       "version": "1.0",
+       "speaker": "Amber"
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by Q1; the interpretation of the contrast is acceptable.",
+     "quote": "This special addition to the Wanmin menu is generously provided by Chef Brook of Springvale, meat expert.",
+     "sentences": [
+      {
+       "t_raw": "Springvale의 고기 전문가 Chef Brook은 Wanmin 메뉴에 특별히 추가된 요리를 흔쾌히 제공한 인물로 소개된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "샘물 마을의 고기 전문가 셰프 브룩은 만민 메뉴에 특별히 추가된 요리를 흔쾌히 제공한 인물로 소개된다."
+      },
+      {
+       "t_raw": "요리 설명은 그를 고기 전문가로 내세우지만, 정작 그의 반응은 '흥!' 한마디로 끝난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요리 설명은 그를 고기 전문가로 내세우지만, 정작 그의 반응은 '흥!' 한마디로 끝난다."
+      },
+      {
+       "t_raw": "소개 문구가 치켜세우는 것과 달리 반응은 짧게 끊겨, 둘의 온도 차가 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "소개 문구가 치켜세우는 것과 달리 반응은 짧게 끊겨, 둘의 온도 차가 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Cooking Appointment",
+       "quest_ko": "요리의 약속",
+       "version": "1.0",
+       "speaker": "Brook"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by M1, Q1 and M2.",
+     "quote": "Most of the village's residents are hunters that provide fresh meat for all the big restaurants of Mondstadt.",
+     "sentences": [
+      {
+       "t_raw": "Springvale의 고기는 Mondstadt의 큰 식당들에 신선한 고기를 대는 것으로 알려져 있고, 운이 좋으면 그 고기의 장점을 제대로 살리는 식당을 만날 수 있다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "샘물 마을의 고기는 몬드의 큰 식당들에 신선한 고기를 대는 것으로 알려져 있고, 운이 좋으면 그 고기의 장점을 제대로 살리는 식당을 만날 수 있다고 한다."
+      },
+      {
+       "t_raw": "Chef Brook이 Wanmin 메뉴에 요리를 제공했다는 소개는 이런 고기 명성과 맞물린다.",
+       "interp": true,
+       "dropped": false,
+       "t": "셰프 브룩이 만민 메뉴에 요리를 제공했다는 소개는 이런 고기 명성과 맞물린다."
+      },
+      {
+       "t_raw": "Sucrose는 사흘에 한 번 해질녘에 정육점, Adventurers' Guild, Springvale 사냥꾼들을 차례로 찾아 특정 재료를 구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "설탕은 사흘에 한 번 해질녘에 정육점, 모험가 길드, 샘물 마을 사냥꾼들을 차례로 찾아 특정 재료를 구한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Cooking Appointment",
+       "quest_ko": "요리의 약속",
+       "version": "1.0",
+       "speaker": "Brook"
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sucrose/Profile",
+       "revision": 42432,
+       "section": "Character Stories > Story 3",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "A faithful translation of Draff's line.",
+     "t_raw": "최고급 요리사가 Springvale의 최고급 고기로 최고급 요리를 만들면... 우리의 명성은 널리 퍼질 것이다.",
+     "en": "With a top-notch chef cooking top-notch cuisine with top-notch meat from Springvale... Our reputation would spread far and wide.",
+     "speaker": "Draff",
+     "source": {
+      "kind": "quest",
+      "quest": "Cooking Appointment",
+      "quest_ko": "요리의 약속",
+      "version": "1.0",
+      "speaker": "Draff"
+     },
+     "t": "최고급 요리사가 샘물 마을의 최고급 고기로 최고급 요리를 만들면... 우리의 명성은 널리 퍼질 것이다.",
+     "speaker_ko": "두라프"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Siegfria's line.",
+     "t_raw": "그들이… 오늘 아침 Springvale를 공격했어요.",
+     "en": "They... they attacked Springvale this morning.",
+     "speaker": "Siegfria",
+     "source": {
+      "kind": "quest",
+      "quest": "Another Day as an Outrider!",
+      "quest_ko": "또 하루를 시작하는 정찰 기사",
+      "version": "1.0",
+      "speaker": "Siegfria"
+     },
+     "t": "그들이… 오늘 아침 샘물 마을을 공격했어요.",
+     "speaker_ko": "지크프리야"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Brook's line, including 'Hmph!' rendered as '흥!'.",
+     "t_raw": "\"Wanmin 메뉴에 특별히 추가된 이 요리는 Springvale의 고기 전문가인 Chef Brook이 흔쾌히 제공한 것이다.\"라는 설명이 붙어 있다. 흥!",
+     "en": "With a caption saying \"This special addition to the Wanmin menu is generously provided by Chef Brook of Springvale, meat expert.\" Hmph!",
+     "speaker": "Brook",
+     "source": {
+      "kind": "quest",
+      "quest": "Cooking Appointment",
+      "quest_ko": "요리의 약속",
+      "version": "1.0",
+      "speaker": "Brook"
+     },
+     "t": "\"만민 메뉴에 특별히 추가된 이 요리는 샘물 마을의 고기 전문가인 셰프 브룩이 흔쾌히 제공한 것이다.\"라는 설명이 붙어 있다. 흥!",
+     "speaker_ko": "브룩"
+    }
+   ]
+  }
+ ]
+}

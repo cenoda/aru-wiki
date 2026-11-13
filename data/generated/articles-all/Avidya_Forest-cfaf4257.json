@@ -1,0 +1,998 @@
+{
+ "node": "Avidya Forest",
+ "articles": [
+  {
+   "node": "Avidya Forest",
+   "from_version": "3.0",
+   "cutoff": "2022-09-27T00:00:00Z",
+   "input": [
+    {
+     "page": "Avidya Forest",
+     "url": "https://genshin-impact.fandom.com/wiki/Avidya_Forest",
+     "revision": 847085
+    }
+   ],
+   "input_counts": {
+    "mentions": 9,
+    "lines": 8,
+    "web": 0
+   },
+   "input_chars": 1014,
+   "input_cut": false,
+   "input_hash": "35fa951cab35",
+   "writer": "ds,kimi,ds-pro",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "The English calls Avidya Forest the 'main area' and most populous section apart from Ardravi Valley. It never says it is the 'largest' (가장 큰) area.",
+     "quote": "Avidya Forest is a lush, green forest located in eastern Sumeru.",
+     "sentences": [
+      {
+       "t_raw": "Avidya Forest는 Sumeru 동부에 자리한 울창한 숲으로, Ardravi Valley를 빼면 Sumeru의 주요 지역이자 인구가 가장 많은 구역이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "아비디야 숲은 수메르 동부에 자리한 울창한 숲으로, 아르드라비 골짜기를 빼면 수메르의 주요 지역이자 인구가 가장 많은 구역이다."
+      },
+      {
+       "t_raw": "The Akademiya가 있는 Sumeru City와 Forest Watchers의 거점 Gandharva Ville이 모두 이 숲 안에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아카데미아가 있는 수메르성과 숲의 순찰관의 거점 간다르바 성곽이 모두 이 숲 안에 있다."
+      },
+      {
+       "t_raw": "숲을 지키는 이들의 본거지와 지식의 도시가 같은 숲에 나란히 있다는 점에서, Avidya Forest는 Sumeru의 배움과 수호가 맞닿는 무대라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "숲을 지키는 이들의 본거지와 지식의 도시가 같은 숲에 나란히 있다는 점에서, 아비디야 숲은 수메르의 배움과 수호가 맞닿는 무대라고 볼 수 있다."
+      },
+      {
+       "t_raw": "Sumeru에 들어온 Traveler가 처음 찾는 지역이기도 하며, 숲의 한 구역이 \"contaminated\"된 것으로 보인다는 소식이 전해지면서 3.0 버전의 이야기가 이곳에서 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르에 들어온 여행자가 처음 찾는 지역이기도 하며, 숲의 한 구역이 \"오염\"된 것으로 보인다는 소식이 전해지면서 3.0 버전의 이야기가 이곳에서 열린다.",
+       "polish": {
+        "from": "수메르에 들어온 여행자가 처음 찾는 지역이기도 하며, 숲의 한 구역이 \"contaminated\"된 것으로 보인다는 소식이 전해지면서 3.0 버전의 이야기가 이곳에서 열린다.",
+        "text": "수메르에 들어온 여행자가 처음 찾는 지역이기도 하며, 숲의 한 구역이 \"오염\"된 것으로 보인다는 소식이 전해지면서 3.0 버전의 이야기가 이곳에서 열린다.",
+        "by": "claude-sonnet"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Start of Contamination",
+       "quest_ko": "오염의 시작",
+       "version": "3.0",
+       "speaker": "Katheryne"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A2, and the interpretation is reasonable.",
+     "quote": "Avidya Forest is a lush, green forest located in eastern Sumeru.",
+     "sentences": [
+      {
+       "t_raw": "Avidya Forest는 **Sumeru 동부**에 자리한 울창한 녹색 숲이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아비디야 숲은 **수메르 동부**에 자리한 울창한 녹색 숲이다."
+      },
+      {
+       "t_raw": "Sumeru 전체에서 Ardravi Valley를 제외하면 가장 중심이 되는 지역이며, 인구도 가장 많은 구역이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르 전체에서 아르드라비 골짜기를 제외하면 가장 중심이 되는 지역이며, 인구도 가장 많은 구역이다."
+      },
+      {
+       "t_raw": "숲이면서도 '가장 인구가 많은 구역'으로 꼽힌다는 것은, 이곳이 사람의 손이 닿지 않는 변두리가 아니라 사람이 실제로 모여 사는 공간이라는 뜻으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "숲이면서도 '가장 인구가 많은 구역'으로 꼽힌다는 것은, 이곳이 사람의 손이 닿지 않는 변두리가 아니라 사람이 실제로 모여 사는 공간이라는 뜻으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A2 and M5, and the interpretation is reasonable.",
+     "quote": "The forest is also home to Sumeru City which houses The Akademiya, and Gandharva Ville, which is the base of the Forest Watchers.",
+     "sentences": [
+      {
+       "t_raw": "숲 안에는 The Akademiya가 자리한 Sumeru City가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "숲 안에는 아카데미아가 자리한 수메르성이 있다."
+      },
+      {
+       "t_raw": "Forest Watchers의 기지인 Gandharva Ville도 이 숲에 있으며, Forest Rangers가 가장 활발히 활동하는 곳 역시 Avidya Forest다.",
+       "interp": false,
+       "dropped": false,
+       "t": "숲의 순찰관의 기지인 간다르바 성곽도 이 숲에 있으며, 숲의 순찰대가 가장 활발히 활동하는 곳 역시 아비디야 숲다."
+      },
+      {
+       "t_raw": "학문의 도시와 숲을 지키는 이들의 본거지가 한 숲에 나란히 있다는 점에서, Avidya Forest는 Sumeru City의 생활권과 Forest Watchers의 활동 반경이 겹치는 곳이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "학문의 도시와 숲을 지키는 이들의 본거지가 한 숲에 나란히 있다는 점에서, 아비디야 숲은 수메르성의 생활권과 숲의 순찰관의 활동 반경이 겹치는 곳이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Forest Rangers",
+       "revision": 846917,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A1 and M1, and the interpretation is reasonable.",
+     "quote": "The Avidya Forest is also the first area in Sumeru that the Traveler enters.",
+     "sentences": [
+      {
+       "t_raw": "Traveler가 Sumeru에서 처음 발을 들이는 지역도 Avidya Forest다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 수메르에서 처음 발을 들이는 지역도 아비디야 숲다."
+      },
+      {
+       "t_raw": "Sumeru의 Statue of The Seven에서 자동 회복이 이뤄지는 지역 역시 Avidya Forest로 기록되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르의 일곱신상에서 자동 회복이 이뤄지는 지역 역시 아비디야 숲으로 기록되어 있다."
+      },
+      {
+       "t_raw": "Sumeru에 들어서는 첫 지역이면서 회복 지점으로도 잡혀 있다는 점에서, 이 숲은 Traveler에게 Sumeru의 **관문** 역할을 한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "수메르에 들어서는 첫 지역이면서 회복 지점으로도 잡혀 있다는 점에서, 이 숲은 여행자에게 수메르의 **관문** 역할을 한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Statue of The Seven",
+       "revision": 851940,
+       "section": "Healing > Auto-Recover",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "자연과 생태",
+     "status": "accepted",
+     "note": "Supported by A3.",
+     "quote": "Many unique flora and fauna grow in the Avidya Forest, such as Padisarahs, Nilopata Lotuses or Rukkhashava Mushrooms.",
+     "sentences": [
+      {
+       "t_raw": "Avidya Forest에는 Padisarahs, Nilopata Lotuses, Rukkhashava Mushrooms처럼 이 숲에서 자라는 **고유한 식물**이 많다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아비디야 숲에는 파디사라, 달 연꽃, 룩카데바타 성체 버섯처럼 이 숲에서 자라는 **고유한 식물**이 많다."
+      },
+      {
+       "t_raw": "꽃뿐 아니라 Shroomboars 같은 여러 종과 품종의 동물도 숲에서 발견된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꽃뿐 아니라 버섯 돼지 같은 여러 종과 품종의 동물도 숲에서 발견된다."
+      },
+      {
+       "t_raw": "야생에는 특별한 품종의 **Shroomkin**도 매우 많다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야생에는 특별한 품종의 **버섯족**도 매우 많다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Description",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "자연과 생태",
+     "latin_left": []
+    },
+    {
+     "section": "자연과 생태",
+     "status": "accepted",
+     "note": "Supported by M8 and M9, and the interpretation is reasonable.",
+     "quote": "preserving the ecosystem of Sumeru's rainforests, for example by suppressing Withering Zones and monitoring beast populations",
+     "sentences": [
+      {
+       "t_raw": "Forest Rangers는 Sumeru의 열대우림 생태계를 지키는 일을 맡아, Withering Zones를 억제하고 야생 동물 개체 수를 관찰한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "숲의 순찰대는 수메르의 열대우림 생태계를 지키는 일을 맡아, 죽음의 땅을 억제하고 야생 동물 개체 수를 관찰한다."
+      },
+      {
+       "t_raw": "Tighnari는 숲의 생태계를 되도록 손대지 않은 채로 두면서, 숲을 찾아오는 사람들을 지역 동물들로부터 지킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이나리는 숲의 생태계를 되도록 손대지 않은 채로 두면서, 숲을 찾아오는 사람들을 지역 동물들로부터 지킨다."
+      },
+      {
+       "t_raw": "동물의 개체 수를 살피는 일과 방문객을 숲의 동물로부터 보호하는 일이 함께 언급된다는 점은, 이 숲의 동물들이 생태계의 구성원인 동시에 사람이 관리하고 경계해야 할 대상으로 다뤄지고 있음을 보여주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "동물의 개체 수를 살피는 일과 방문객을 숲의 동물로부터 보호하는 일이 함께 언급된다는 점은, 이 숲의 동물들이 생태계의 구성원인 동시에 사람이 관리하고 경계해야 할 대상으로 다뤄지고 있음을 보여주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Forest Rangers",
+       "revision": 846917,
+       "section": null,
+       "paragraph": "M8",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Izad"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Tighnari/Profile",
+       "revision": 789422,
+       "section": "Personality",
+       "paragraph": "M9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "자연과 생태",
+     "latin_left": []
+    },
+    {
+     "section": "도시와 거점",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "The forest is also home to Sumeru City which houses The Akademiya, and Gandharva Ville, which is the base of the Forest Watchers.",
+     "sentences": [
+      {
+       "t_raw": "Avidya Forest는 Ardravi Valley를 제외하면 Sumeru의 중심 지역이자 가장 인구가 많은 구역이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아비디야 숲은 아르드라비 골짜기를 제외하면 수메르의 중심 지역이자 가장 인구가 많은 구역이다."
+      },
+      {
+       "t_raw": "이 숲에는 The Akademiya가 있는 **Sumeru City**와 Forest Watchers의 거점인 **Gandharva Ville**가 함께 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 숲에는 아카데미아가 있는 **수메르성**과 숲의 순찰관의 거점인 **간다르바 성곽**이 함께 자리한다."
+      },
+      {
+       "t_raw": "하위 지역으로는 Chinvat Ravine, Gandha Hill, Yazadaha Pool이 꼽힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하위 지역으로는 친바트 협곡, 간다 언덕, 야자다하 연못이 꼽힌다."
+      },
+      {
+       "t_raw": "Gandharva Ville에는 '숲 위의 도시'라는 설명이 붙으며, '지혜의 도시도 우리의 것이요, 무지의 숲도 우리의 것이다'라는 문구가 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "간다르바 성곽에는 '숲 위의 도시'라는 설명이 붙으며, '지혜의 도시도 우리의 것이요, 무지의 숲도 우리의 것이다'라는 문구가 전해진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Subareas",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Subareas",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Subareas",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Subareas",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Subareas",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "도시와 거점",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "The English never says Avidya Forest is the Forest Watchers' longest-established ground. It only says they have guarded it for millennia and that their main outpost is there. The 'longest rooted' claim is an unsupported comparison.",
+     "quote": "The Avidya forest has also been guarded by Forest Watchers for millenia in order to ensure the forests survival.",
+     "sentences": [
+      {
+       "t_raw": "Avidya Forest는 수천 년 동안 **Forest Watchers**의 손에 의해 지켜져 왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아비디야 숲은 수천 년 동안 **숲의 순찰관**의 손에 의해 지켜져 왔다."
+      },
+      {
+       "t_raw": "Forest Watchers는 Sumeru의 숲을 지키는 공무원 집단인 Forest Rangers의 상위 구성원을 가리키는 이름으로, Avidya Forest에서 가장 활발히 활동하며 주된 주둔지인 Gandharva Ville을 이 숲에 두고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "숲의 순찰관은 수메르의 숲을 지키는 공무원 집단인 숲의 순찰대의 상위 구성원을 가리키는 이름으로, 아비디야 숲에서 가장 활발히 활동하며 주된 주둔지인 간다르바 성곽을 이 숲에 두고 있다."
+      },
+      {
+       "t_raw": "Forest Rangers의 주둔지가 이 숲에 자리하고, Forest Watchers가 수천 년째 이 숲을 지켜왔다는 점을 보면, Avidya Forest는 Forest Watchers의 오랜 활동 무대로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "숲의 순찰대의 주둔지가 이 숲에 자리하고, 숲의 순찰관이 수천 년째 이 숲을 지켜왔다는 점을 보면, 아비디야 숲은 숲의 순찰관의 오랜 활동 무대로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Description",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Forest Rangers",
+       "revision": 846917,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "The facts are supported, and the interpretation follows reasonably.",
+     "quote": "They, along with Arayama and Aramaha, sealed each of the three Ashvattha's Concourses with their own rhythms, and then turned themselves into Vasara Trees.",
+     "sentences": [
+      {
+       "t_raw": "Aranara의 역사적 인물인 Araji는 Arayama, Aramaha와 함께 세 개의 Ashvattha's Concourse를 각자의 리듬으로 봉인한 뒤, 스스로 **Vasara Tree**가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아란나라의 역사적 인물인 아란지는 아란야마, 아란마하와 함께 세 개의 아슈바타의 전당을 각자의 리듬으로 봉인한 뒤, 스스로 **바사라 나무**가 되었다."
+      },
+      {
+       "t_raw": "Avidya Forest의 하위 지역인 Gandha Hill에는 그렇게 남은 Araji의 Vasara Tree가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아비디야 숲의 하위 지역인 간다 언덕에는 그렇게 남은 아란지의 바사라 나무가 있다."
+      },
+      {
+       "t_raw": "봉인을 마친 이들이 그대로 나무가 되었다는 점에서, Vasara Tree는 봉인의 흔적이자 봉인을 감당한 이들의 모습이 남은 것이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "봉인을 마친 이들이 그대로 나무가 되었다는 점에서, 바사라 나무는 봉인의 흔적이자 봉인을 감당한 이들의 모습이 남은 것이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Araji",
+       "revision": 840730,
+       "section": null,
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Subareas",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "People who encounter misfortunes in the Avidya Forest are lucky to meet a Forest Watcher named Tighnari.",
+     "sentences": [
+      {
+       "t_raw": "Avidya Forest에서 불행을 겪는 이는 **Forest Watcher** Tighnari를 만나면 다행이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아비디야 숲에서 불행을 겪는 이는 **숲의 순찰관** 타이나리를 만나면 다행이다."
+      },
+      {
+       "t_raw": "Tighnari는 생태계를 거의 손대지 않게 지키고 Sumeru Akademiya 합류를 거절했으며, Gandharva Ville에 주둔한 **Forest Rangers**를 이끈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이나리는 생태계를 거의 손대지 않게 지키고 수메르 아카데미아 합류를 거절했으며, 간다르바 성곽에 주둔한 **숲의 순찰대**를 이끈다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tighnari/Profile",
+       "revision": 789422,
+       "section": "Official Introduction",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tighnari/Profile",
+       "revision": 789422,
+       "section": "Personality",
+       "paragraph": "M9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Forest Rangers",
+       "revision": 846917,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "They also send regular reports about the state of Avidya Forest to the researchers of Pardis Dhyai, who in turn provide them with various ecological support, such as seeds and nutrients.",
+     "sentences": [
+      {
+       "t_raw": "긍정적이고 친절한 **Collei**는 Fatui 인체 실험 피해자였으나 Mondstadt에서 Amber를 만난 뒤 Avidya Forest의 견습 Forest Ranger가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "긍정적이고 친절한 **콜레이**는 우인단 인체 실험 피해자였으나 몬드에서 엠버를 만난 뒤 아비디야 숲의 견습 숲의 순찰자가 되었다."
+      },
+      {
+       "t_raw": "Gandharva Ville 아이들은 그녀의 인형 바느질을 좋아한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "간다르바 성곽 아이들은 그녀의 인형 바느질을 좋아한다."
+      },
+      {
+       "t_raw": "Forest Rangers는 조난자 구조와 Withering Zones 억제 같은 일을 맡고, Avidya Forest 상태를 Pardis Dhyai 연구자들에게 보고하여 씨앗과 영양분을 지원받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "숲의 순찰대는 조난자 구조와 죽음의 땅 억제 같은 일을 맡고, 아비디야 숲 상태를 선나원 연구자들에게 보고하여 씨앗과 영양분을 지원받는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Collei/Profile",
+       "revision": 852218,
+       "section": "Official Introduction",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Collei",
+       "revision": 851474,
+       "section": null,
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Collei/Profile",
+       "revision": 852218,
+       "section": "Official Introduction",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Forest Rangers",
+       "revision": 846917,
+       "section": null,
+       "paragraph": "M8",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Izad"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 3.0",
+     "status": "accepted",
+     "note": "The facts are supported, and the interpretation is reasonable.",
+     "quote": "Not long ago, we received word that a section of the Avidya Forest seems to have become \"contaminated.\"",
+     "sentences": [
+      {
+       "t_raw": "Katheryne는 이번 의뢰가 Avidya Forest 주민의 안전에 관한 중대한 일이라고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "캐서린은 이번 의뢰가 아비디야 숲 주민의 안전에 관한 중대한 일이라고 전한다."
+      },
+      {
+       "t_raw": "얼마 전 Avidya Forest의 한 구역이 **오염**된 듯하다는 소식도 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "얼마 전 아비디야 숲의 한 구역이 **오염**된 듯하다는 소식도 전해진다."
+      },
+      {
+       "t_raw": "Tighnari는 그곳에서 무슨 일이 있었는지, 무엇이 Avidya Forest를 이렇게 만들었는지 보고 싶어 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이나리는 그곳에서 무슨 일이 있었는지, 무엇이 아비디야 숲을 이렇게 만들었는지 보고 싶어 한다."
+      },
+      {
+       "t_raw": "주민의 안전을 건 의뢰와 오염 소식이 겹치면서, 조사는 숲의 이상을 밝히는 일이 되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "주민의 안전을 건 의뢰와 오염 소식이 겹치면서, 조사는 숲의 이상을 밝히는 일이 되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Start of Contamination",
+       "quest_ko": "오염의 시작",
+       "version": "3.0",
+       "speaker": "Katheryne"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Start of Contamination",
+       "quest_ko": "오염의 시작",
+       "version": "3.0",
+       "speaker": "Katheryne"
+      },
+      {
+       "kind": "quest",
+       "quest": "Into the Hinterland",
+       "quest_ko": "오지의 깊은 곳으로",
+       "version": "3.0",
+       "speaker": "Tighnari"
+      }
+     ],
+     "heading": "작중 행적 — 3.0",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 3.0",
+     "status": "accepted",
+     "note": "Both sentences match Q3 and Q7.",
+     "quote": "Nothing, but that way leads us deeper into the Avidya Forest. I'm just concerned for Tanger's safety.",
+     "sentences": [
+      {
+       "t_raw": "Collei는 어떤 길이 Avidya Forest 더 깊은 곳으로 이어진다며 Tanger의 **안전**을 걱정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "콜레이는 어떤 길이 아비디야 숲 더 깊은 곳으로 이어진다며 탠지어의 **안전**을 걱정한다."
+      },
+      {
+       "t_raw": "Tighnari는 비싸고 Avidya Forest의 기후에서는 자랄 수 없는 물품이라 당장 가지고 있지 않다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타이나리는 비싸고 아비디야 숲의 기후에서는 자랄 수 없는 물품이라 당장 가지고 있지 않다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Unappreciated Carving",
+       "quest_ko": "인기 없는 목각",
+       "version": "3.0",
+       "speaker": "Collei"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Start of Contamination",
+       "quest_ko": "오염의 시작",
+       "version": "3.0",
+       "speaker": "Tighnari"
+      }
+     ],
+     "heading": "작중 행적 — 3.0",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches Q2; the interpretation is reasonable.",
+     "quote": "At the Avidya Forest, there was this incense that made the Traveler fall unconscious and dream of a huge tree and a red sky...",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Avidya Forest에서 **향 연기**를 맡은 Traveler가 의식을 잃고 거대한 나무와 붉은 하늘을 꿈꿨다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아비디야 숲에서 **향 연기**를 맡은 여행자가 의식을 잃고 거대한 나무와 붉은 하늘을 꿈꿨다고 전한다."
+      },
+      {
+       "t_raw": "향 연기, 거대한 나무, 붉은 하늘이 한 체험 안에서 함께 제시되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "향 연기, 거대한 나무, 붉은 하늘이 한 체험 안에서 함께 제시되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Dawn (Quest)",
+       "quest_ko": "여명",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches Q5; the interpretation is reasonable.",
+     "quote": "Why would a Mondstadter leave a note in a tree hollow deep in Avidya Forest?",
+     "sentences": [
+      {
+       "t_raw": "Avidya Forest 깊은 곳 **나무 구멍**에서 Mondstadter가 남긴 쪽지가 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아비디야 숲 깊은 곳 **나무 구멍**에서 몬드 사람이 남긴 쪽지가 나온다."
+      },
+      {
+       "t_raw": "Paimon은 왜 Mondstadter가 그런 곳에 쪽지를 남겼는지 의아해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 왜 몬드 사람이 그런 곳에 쪽지를 남겼는지 의아해한다."
+      },
+      {
+       "t_raw": "쪽지의 장소와 남긴 사람의 출신이 서로 어긋난 사례로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "쪽지의 장소와 남긴 사람의 출신이 서로 어긋난 사례로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Selling Like Hot Carvings",
+       "quest_ko": "잘 팔리는 목각",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Paimon's surprise is in Q8 and the contamination report in Q6; the interpretation is loose but acceptable.",
+     "quote": "What the heck!? The Avidya Forest has creatures like that?",
+     "sentences": [
+      {
+       "t_raw": "Avidya Forest에 그런 생물이 있다는 말에 Paimon은 놀란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아비디야 숲에 그런 생물이 있다는 말에 페이몬은 놀란다."
+      },
+      {
+       "t_raw": "오염 소식이 전해진 숲에서 **낯선 생물**에 대한 반응이 나온 점은, 당시 일행이 숲의 변화를 낯설게 받아들였음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오염 소식이 전해진 숲에서 **낯선 생물**에 대한 반응이 나온 점은, 당시 일행이 숲의 변화를 낯설게 받아들였음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Start of Contamination",
+       "quest_ko": "오염의 시작",
+       "version": "3.0",
+       "speaker": "Katheryne"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Start of Contamination",
+       "quest_ko": "오염의 시작",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The quote is in A7; Sumeru City housing the Akademiya is in A2; the interpretation is hedged.",
+     "quote": "The city of wisdom is ours, as is the forest of ignorance. Atop the tree lies the remnants of the kingdom of lost dreams.",
+     "sentences": [
+      {
+       "t_raw": "Gandharva Ville는 숲 위의 도시로 묘사되며, \"The city of wisdom is ours, as is the forest of ignorance. Atop the tree lies the remnants of the kingdom of lost dreams.\"라는 문구가 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "간다르바 성곽은 숲 위의 도시로 묘사되며, \"지혜의 도시는 우리의 것이며, 무지의 숲 또한 그러하다. 나무 꼭대기에는 잃어버린 꿈의 왕국의 잔해가 놓여 있다.\"라는 문구가 전해진다.",
+       "polish": {
+        "from": "간다르바 성곽은 숲 위의 도시로 묘사되며, \"The city of wisdom is ours, as is the forest of ignorance. Atop the tree lies the remnants of the kingdom of lost dreams.\"라는 문구가 전해진다.",
+        "text": "간다르바 성곽은 숲 위의 도시로 묘사되며, \"지혜의 도시는 우리의 것이며, 무지의 숲 또한 그러하다. 나무 꼭대기에는 잃어버린 꿈의 왕국의 잔해가 놓여 있다.\"라는 문구가 전해진다.",
+        "by": "claude-sonnet"
+       }
+      },
+      {
+       "t_raw": "이 문구에서 **\"The city of wisdom\"**는 Sumeru City에 자리한 The Akademiya를, \"the forest of ignorance\"는 Avidya Forest를 가리키는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 문구에서 **\"지혜의 도시\"**는 수메르성에 자리한 아카데미아를, \"무지의 숲\"은 아비디야 숲을 가리키는 것으로 보인다.",
+       "polish": {
+        "from": "이 문구에서 **\"The city of wisdom\"**는 수메르성에 자리한 아카데미아를, \"the forest of ignorance\"는 아비디야 숲을 가리키는 것으로 보인다.",
+        "text": "이 문구에서 **\"지혜의 도시\"**는 수메르성에 자리한 아카데미아를, \"무지의 숲\"은 아비디야 숲을 가리키는 것으로 보인다.",
+        "by": "claude-sonnet"
+       }
+      },
+      {
+       "t_raw": "이처럼 Gandharva Ville는 산림 위에 놓인 거점이면서도, 지혜의 도시와 무지의 숲이라는 대비를 품고 있는 이름인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 간다르바 성곽은 산림 위에 놓인 거점이면서도, 지혜의 도시와 무지의 숲이라는 대비를 품고 있는 이름인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Subareas",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by M2 and M4; the interpretation is reasonable.",
+     "quote": "The children of Gandharva Ville love to watch her sew dolls, and those who find themselves lost in Avidya Forest are willing to follow her back to safety.",
+     "sentences": [
+      {
+       "t_raw": "Collei는 Avidya Forest에서 훈련 레인저로 활동하며, 밝고 긍정적이며 친절한 성품으로 주변을 돌본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "콜레이는 아비디야 숲에서 훈련 레인저로 활동하며, 밝고 긍정적이며 친절한 성품으로 주변을 돌본다."
+      },
+      {
+       "t_raw": "Gandharva Ville의 아이들은 그녀가 **인형을 바느질**하는 모습을 지켜보는 것을 좋아하고, Avidya Forest에서 길을 잃은 이들은 그녀를 따라 안전하게 돌아온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "간다르바 성곽의 아이들은 그녀가 **인형을 바느질**하는 모습을 지켜보는 것을 좋아하고, 아비디야 숲에서 길을 잃은 이들은 그녀를 따라 안전하게 돌아온다."
+      },
+      {
+       "t_raw": "이는 Collei가 위험한 숲의 일상과 마을의 따뜻한 풍경 모두에 자연스럽게 녹아든 인물이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 콜레이가 위험한 숲의 일상과 마을의 따뜻한 풍경 모두에 자연스럽게 녹아든 인물이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Collei/Profile",
+       "revision": 852218,
+       "section": "Official Introduction",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Collei/Profile",
+       "revision": 852218,
+       "section": "Official Introduction",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Katheryne's line.",
+     "t_raw": "후후, 말씀하신 대로입니다. 이번 의뢰는 무척 중요한 사안이지요. Avidya Forest 주민들의 안전에 관한 일입니다.",
+     "en": "Hehe, it is as you say. The commission this time around is of high importance. It pertains to the safety of the Avidya Forest's inhabitants.",
+     "speaker": "Katheryne",
+     "source": {
+      "kind": "quest",
+      "quest": "The Start of Contamination",
+      "quest_ko": "오염의 시작",
+      "version": "3.0",
+      "speaker": "Katheryne"
+     },
+     "t": "후후, 말씀하신 대로입니다. 이번 의뢰는 무척 중요한 사안이지요. 아비디야 숲 주민들의 안전에 관한 일입니다.",
+     "speaker_ko": "캐서린"
+    },
+    {
+     "section": "자연과 생태",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "이게 뭐야!? Avidya Forest에 이런 생물이 있다고?",
+     "en": "What the heck!? The Avidya Forest has creatures like that?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Start of Contamination",
+      "quest_ko": "오염의 시작",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "이게 뭐야!? 아비디야 숲에 이런 생물이 있다고?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful; the blunt register is a style choice and the meaning is unchanged.",
+     "t_raw": "아무것도 아니다. 다만 그 길은 우리를 Avidya Forest 더 깊은 곳으로 이끈다. 나는 Tanger의 안전이 걱정될 뿐이다.",
+     "en": "Nothing, but that way leads us deeper into the Avidya Forest. I'm just concerned for Tanger's safety.",
+     "speaker": "Collei",
+     "source": {
+      "kind": "quest",
+      "quest": "The Unappreciated Carving",
+      "quest_ko": "인기 없는 목각",
+      "version": "3.0",
+      "speaker": "Collei"
+     },
+     "t": "아무것도 아니다. 다만 그 길은 우리를 아비디야 숲 더 깊은 곳으로 이끈다. 나는 탠지어의 안전이 걱정될 뿐이다.",
+     "speaker_ko": "콜레이"
+    },
+    {
+     "section": "작중 행적 — 3.0",
+     "status": "accepted",
+     "note": "Faithful translation of Collei's line.",
+     "t_raw": "별일은 아니지만, 저 길은 우리를 Avidya Forest 더 깊은 곳으로 이끌어. 그저 Tanger의 안전이 걱정될 뿐이야.",
+     "en": "Nothing, but that way leads us deeper into the Avidya Forest. I'm just concerned for Tanger's safety.",
+     "speaker": "Collei",
+     "source": {
+      "kind": "quest",
+      "quest": "The Unappreciated Carving",
+      "quest_ko": "인기 없는 목각",
+      "version": "3.0",
+      "speaker": "Collei"
+     },
+     "t": "별일은 아니지만, 저 길은 우리를 아비디야 숲 더 깊은 곳으로 이끌어. 그저 탠지어의 안전이 걱정될 뿐이야.",
+     "speaker_ko": "콜레이"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "왜 Mondstadter가 Avidya Forest 깊은 곳 나무 구멍에 쪽지를 남긴 걸까?",
+     "en": "Why would a Mondstadter leave a note in a tree hollow deep in Avidya Forest?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Selling Like Hot Carvings",
+      "quest_ko": "잘 팔리는 목각",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "왜 몬드 사람이 아비디야 숲 깊은 곳 나무 구멍에 쪽지를 남긴 걸까?",
+     "speaker_ko": "페이몬"
+    }
+   ]
+  }
+ ]
+}

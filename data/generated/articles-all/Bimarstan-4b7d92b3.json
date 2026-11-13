@@ -1,0 +1,763 @@
+{
+ "node": "Bimarstan",
+ "articles": [
+  {
+   "node": "Bimarstan",
+   "from_version": "3.0",
+   "cutoff": "2022-09-27T00:00:00Z",
+   "input": [
+    {
+     "page": "Bimarstan",
+     "url": "https://genshin-impact.fandom.com/wiki/Bimarstan",
+     "revision": 848979
+    }
+   ],
+   "input_counts": {
+    "mentions": 3,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 1119,
+   "input_cut": false,
+   "input_hash": "4bd649b2b3c2",
+   "writer": "ds-pro,glm-flash,or-ds,ds",
+   "verifier": "grok,claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "English lists Nevida as Mahamata for Bimarstan and says Siman works with the Bimarstan; it does not say Amurta keeps a separate Mahamata or that the sage works at the hospital.",
+     "quote": "It is a hospital run by Amurta which provides free healthcare to all Sumeru residents.",
+     "sentences": [
+      {
+       "t_raw": "Bimarstan은 Sumeru City에 있는 병원으로, 도시 북서쪽 Teleport Waypoint에서 남동쪽으로 조금 떨어진 곳에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비마르스탄은 수메르성에 있는 병원으로, 도시 북서쪽 워프 포인트에서 남동쪽으로 조금 떨어진 곳에 자리한다."
+      },
+      {
+       "t_raw": "Amurta가 운영하며 모든 Sumeru 주민에게 무상 진료를 제공하고, Eleazar 증상이 있는 주민들이 치료를 받으러 가도록 안내받는 곳이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생론파가 운영하며 모든 수메르 주민에게 무상 진료를 제공하고, 비늘병 증상이 있는 주민들이 치료를 받으러 가도록 안내받는 곳이기도 하다."
+      },
+      {
+       "t_raw": "Nevida는 Bimarstan을 맡는 Mahamata이고, sage Siman Farrokhzad는 Amurta의 현자가 되어 Bimarstan과 함께 일한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "네비다는 비마르스탄을 맡는 교령관이고, 현자 시만·파로크자드는 생론파의 현자가 되어 비마르스탄과 함께 일한다.",
+       "polish": {
+        "from": "네비다는 비마르스탄을 맡는 교령관이고, sage 시만·파로크자드는 생론파의 현자가 되어 비마르스탄과 함께 일한다.",
+        "text": "네비다는 비마르스탄을 맡는 교령관이고, 현자 시만·파로크자드는 생론파의 현자가 되어 비마르스탄과 함께 일한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "진료가 이루어지는 현장과 Akademiya의 행정, sage의 활동이 한곳에서 겹쳐 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "진료가 이루어지는 현장과 아카데미아의 행정, 현자의 활동이 한곳에서 겹쳐 있는 셈이다.",
+       "polish": {
+        "from": "진료가 이루어지는 현장과 아카데미아의 행정, sage의 활동이 한곳에서 겹쳐 있는 셈이다.",
+        "text": "진료가 이루어지는 현장과 아카데미아의 행정, 현자의 활동이 한곳에서 겹쳐 있는 셈이다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eleazar",
+       "revision": 846041,
+       "section": "Overview",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Chronic Illness"
+        },
+        {
+         "type": "bb",
+         "name": "Mahamata Bulletin Board"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru Akademiya",
+       "revision": 851854,
+       "section": "Structure > Mahamata",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Siman Farrokhzad",
+       "revision": 833792,
+       "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Aranakin's Old Friend"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Both sentences match the location and the Amurta hospital with free care.",
+     "quote": "It is a hospital run by Amurta which provides free healthcare to all Sumeru residents.",
+     "sentences": [
+      {
+       "t_raw": "Bimarstan은 Sumeru의 Sumeru City에 위치한 장소로, 도시 북서쪽 Teleport Waypoint에서 남동쪽에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비마르스탄은 수메르의 수메르성에 위치한 장소로, 도시 북서쪽 워프 포인트에서 남동쪽에 있다."
+      },
+      {
+       "t_raw": "**Amurta가 운영하는 병원**이며, 모든 Sumeru 주민에게 무료 진료를 제공한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**생론파가 운영하는 병원**이며, 모든 수메르 주민에게 무료 진료를 제공한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Eleazar facts match, and the open-facility reading is hedged and follows from free care plus the treatment advice.",
+     "quote": "Cases of Eleazar are increasing in Sumeru City, and residents with symptoms are encouraged to go to Bimarstan for treatment.",
+     "sentences": [
+      {
+       "t_raw": "Sumeru City에서는 Eleazar 사례가 늘고 있어, 증상이 있는 주민은 Bimarstan에서 치료를 받도록 권장된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르성에서는 비늘병 사례가 늘고 있어, 증상이 있는 주민은 비마르스탄에서 치료를 받도록 권장된다."
+      },
+      {
+       "t_raw": "Eleazar는 적절한 치료로 조절할 수 있으나 아직 완치법은 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비늘병은 적절한 치료로 조절할 수 있으나 아직 완치법은 없다."
+      },
+      {
+       "t_raw": "무료 진료와 치료 권고가 함께 제시되는 점에서, Bimarstan은 해당 주민이 치료를 위해 찾는 **열린 의료 시설**로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "무료 진료와 치료 권고가 함께 제시되는 점에서, 비마르스탄은 해당 주민이 치료를 위해 찾는 **열린 의료 시설**로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Eleazar",
+       "revision": 846041,
+       "section": "Overview",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Chronic Illness"
+        },
+        {
+         "type": "bb",
+         "name": "Mahamata Bulletin Board"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "운영과 조직",
+     "status": "accepted",
+     "note": "Free care and Nevida as Mahamata for Bimarstan are both stated.",
+     "quote": "It is a hospital run by Amurta which provides free healthcare to all Sumeru residents.",
+     "sentences": [
+      {
+       "t_raw": "Bimarstan은 **Amurta가 운영하는 병원**으로, 모든 Sumeru 주민에게 무료 의료를 제공한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비마르스탄은 **생론파가 운영하는 병원**으로, 모든 수메르 주민에게 무료 의료를 제공한다."
+      },
+      {
+       "t_raw": "Bimarstan을 맡은 **Mahamata**는 Nevida이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비마르스탄을 맡은 **교령관**은 네비다이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru Akademiya",
+       "revision": 851854,
+       "section": "Structure > Mahamata",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "운영과 조직",
+     "latin_left": []
+    },
+    {
+     "section": "운영과 조직",
+     "status": "accepted",
+     "note": "Sage biography and the announcement that she would see the patient’s treatment underway are stated; the joint-role line is marked as a reading and stays within that.",
+     "quote": "Amurta announced that the sage Siman Farrokhzad would ensure the patient's treatment is underway...",
+     "sentences": [
+      {
+       "t_raw": "**Amurta의 현자 Siman Farrokhzad**는 늘 위대한 현자가 되고자 했고, 마침내 그 목표를 이루어 Amurta의 현자가 된 뒤 Bimarstan과 일한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**생론파의 현자 시만·파로크자드**는 늘 위대한 현자가 되고자 했고, 마침내 그 목표를 이루어 생론파의 현자가 된 뒤 비마르스탄과 일한다."
+      },
+      {
+       "t_raw": "Amurta는 현자 Siman Farrokhzad가 한 환자의 치료가 진행되도록 한다고 알렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생론파는 현자 시만·파로크자드가 한 환자의 치료가 진행되도록 한다고 알렸다."
+      },
+      {
+       "t_raw": "Bimarstan과 일하는 현자에게 Amurta가 한 환자의 치료 진행을 맡겼다고 알린 점을 보면, 현자는 Bimarstan과 함께 치료가 이어지게 하는 역할을 맡은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "비마르스탄과 일하는 현자에게 생론파가 한 환자의 치료 진행을 맡겼다고 알린 점을 보면, 현자는 비마르스탄과 함께 치료가 이어지게 하는 역할을 맡은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Siman Farrokhzad",
+       "revision": 833792,
+       "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Aranakin's Old Friend"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "운영과 조직",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Giyath Khayyam의 의료 기록",
+     "status": "accepted",
+     "note": "Placement, disappearance, age, sex, short-term dysmnesia, mood, and the unknown brain disease from age 60 all match the record.",
+     "quote": "Symptom: Short-term dysmnesia. Gets worse over time. Emotionally unstable, kept talking about adolescence and childhood memories...",
+     "sentences": [
+      {
+       "t_raw": "Bimarstan 건물 뒤에는 Giyath Khayyam의 의료 기록이 있고, 상호작용하면 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비마르스탄 건물 뒤에는 기야스·하이얌의 의료 기록이 있고, 상호작용하면 사라진다."
+      },
+      {
+       "t_raw": "65세 남성인 환자는 **단기 기억 상실**이 시간이 갈수록 악화되었고, 감정이 불안정한 가운데 청소년기와 어린 시절 기억을 자꾸 이야기했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "65세 남성인 환자는 **단기 기억 상실**이 시간이 갈수록 악화되었고, 감정이 불안정한 가운데 청소년기와 어린 시절 기억을 자꾸 이야기했다."
+      },
+      {
+       "t_raw": "뇌 검사에서는 60세부터 뇌세포가 비활성화되어 기억 능력이 점차 상실되는 **원인 불명의 뇌 질환**이 확인된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "뇌 검사에서는 60세부터 뇌세포가 비활성화되어 기억 능력이 점차 상실되는 **원인 불명의 뇌 질환**이 확인된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 기야스·하이얌의 의료 기록",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Giyath Khayyam의 의료 기록",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "Amurta announced that the sage Siman Farrokhzad would ensure the patient's treatment is underway...",
+     "sentences": [
+      {
+       "t_raw": "Giyath Khayyam은 안정된 생활과 심리적 환경이 병세 악화를 늦추기를 바라며 Akademiya의 Amurta에서 은퇴를 신청했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기야스·하이얌은 안정된 생활과 심리적 환경이 병세 악화를 늦추기를 바라며 아카데미아의 생론파에서 은퇴를 신청했다."
+      },
+      {
+       "t_raw": "Amurta는 현자 Siman Farrokhzad가 치료가 진행되도록 보장하겠다고 발표했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생론파는 현자 시만·파로크자드가 치료가 진행되도록 보장하겠다고 발표했다."
+      },
+      {
+       "t_raw": "Siman Farrokhzad는 오래전 Khayyam, Irfan과 숲에서 Aranara 친구들과 놀았고, 훗날 Amurta의 현자가 되어 Bimarstan과 일했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시만·파로크자드는 오래전 하이얌, 이르판과 숲에서 아란나라 친구들과 놀았고, 훗날 생론파의 현자가 되어 비마르스탄과 일했다."
+      },
+      {
+       "t_raw": "이 발표와 Khayyam과의 옛 친분을 함께 놓으면 Bimarstan은 두 사람의 인연이 치료 기록으로 이어지는 곳으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 발표와 하이얌과의 옛 친분을 함께 놓으면 비마르스탄은 두 사람의 인연이 치료 기록으로 이어지는 곳으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Siman Farrokhzad",
+       "revision": 833792,
+       "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Aranakin's Old Friend"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사 — 기야스·하이얌의 의료 기록",
+     "latin_left": []
+    },
+    {
+     "section": "억힌 인물과 세력",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "Many years ago, Siman and her friends Khayyam and Irfan often played in the forest with their Aranara friends.",
+     "sentences": [
+      {
+       "t_raw": "오래전 Siman은 친구 Khayyam, Irfan과 함께 Aranara 친구들과 숲에서 자주 놀았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오래전 시만은 친구 하이얌, 이르판과 함께 아란나라 친구들과 숲에서 자주 놀았다."
+      },
+      {
+       "t_raw": "Siman은 늘 위대한 현자가 되기를 바랐고, 그 목표에 이르러 Amurta의 현자가 되어 Bimarstan과 일하게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시만은 늘 위대한 현자가 되기를 바랐고, 그 목표에 이르러 생론파의 현자가 되어 비마르스탄과 일하게 되었다."
+      },
+      {
+       "t_raw": "Sumeru Akademiya의 Mahamata 항목에는 Bimarstan을 맡은 Mahamata로 Nevida가 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르 아카데미아의 교령관 항목에는 비마르스탄을 맡은 교령관으로 네비다가 적혀 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Siman Farrokhzad",
+       "revision": 833792,
+       "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Aranakin's Old Friend"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru Akademiya",
+       "revision": 851854,
+       "section": "Structure > Mahamata",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "억힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "억힌 인물과 세력",
+     "status": "accepted",
+     "note": "States as settled that she had wanted the Amurta sage post itself and was given charge of her friend Khayyam’s treatment; the English only says she aimed to be a great sage, later became a sage in Amurta working with the Bimarstan, and would ensure the patient’s treatment was underway.",
+     "quote": "Amurta announced that the sage Siman Farrokhzad would ensure the patient's treatment is underway...",
+     "sentences": [
+      {
+       "t_raw": "Giyath Khayyam의 의료 기록에서 환자는 안정적이고 편안한 삶과 심리적 환경이 병세 악화를 늦출 수 있기를 바라며 Akademiya의 Amurta에 은퇴를 신청했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기야스·하이얌의 의료 기록에서 환자는 안정적이고 편안한 삶과 심리적 환경이 병세 악화를 늦출 수 있기를 바라며 아카데미아의 생론파에 은퇴를 신청했다."
+      },
+      {
+       "t_raw": "Amurta는 현자 Siman Farrokhzad가 그 환자의 치료가 진행되도록 하겠다고 발표했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생론파는 현자 시만·파로크자드가 그 환자의 치료가 진행되도록 하겠다고 발표했다."
+      },
+      {
+       "t_raw": "위대한 현자가 되기를 꿈꾸던 Siman이 Amurta의 현자가 되어 Bimarstan과 함께 일하게 되었고, Amurta가 sage Siman Farrokhzad가 환자의 치료가 진행되도록 하겠다고 밝힌 점을 보면, 친구 Khayyam의 치료를 챙기게 된 셈으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "위대한 현자가 되기를 꿈꾸던 시만이 생론파의 현자가 되어 비마르스탄과 함께 일하게 되었고, 생론파가 현자 시만·파로크자드가 환자의 치료가 진행되도록 하겠다고 밝힌 점을 보면, 친구 하이얌의 치료를 챙기게 된 셈으로 보인다.",
+       "polish": {
+        "from": "위대한 현자가 되기를 꿈꾸던 시만이 생론파의 현자가 되어 비마르스탄과 함께 일하게 되었고, 생론파가 sage 시만·파로크자드가 환자의 치료가 진행되도록 하겠다고 밝힌 점을 보면, 친구 하이얌의 치료를 챙기게 된 셈으로 보인다.",
+        "text": "위대한 현자가 되기를 꿈꾸던 시만이 생론파의 현자가 되어 비마르스탄과 함께 일하게 되었고, 생론파가 현자 시만·파로크자드가 환자의 치료가 진행되도록 하겠다고 밝힌 점을 보면, 친구 하이얌의 치료를 챙기게 된 셈으로 보인다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Siman Farrokhzad",
+       "revision": 833792,
+       "section": "Story",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Aranakin's Old Friend"
+        }
+       ]
+      }
+     ],
+     "heading": "억힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "Symptom: Short-term dysmnesia. Gets worse over time. Emotionally unstable, kept talking about adolescence and childhood memories...",
+     "sentences": [
+      {
+       "t_raw": "Medical History of Giyath Khayyam에는 증상으로 단기 기억력 장애가 적혀 있고, 시간이 지나면서 악화된다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Medical History of Giyath Khayyam에는 증상으로 단기 기억력 장애가 적혀 있고, 시간이 지나면서 악화된다고 한다.",
+       "polish": {
+        "from": "Medical History of Giyath Khayyam에는 증상으로 단기 기억력 장애가 적혀 있고, 시간이 지나면서 악화된다고 한다.",
+        "text": "Medical History of Giyath Khayyam에는 증상으로 단기 기억력 장애가 적혀 있고, 시간이 지나면서 악화된다고 한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "감정이 불안정해지고 청소년기와 어린 시절 기억을 계속 이야기한 점도 함께 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "감정이 불안정해지고 청소년기와 어린 시절 기억을 계속 이야기한 점도 함께 남아 있다."
+      },
+      {
+       "t_raw": "같은 기록은 병을 **원인 불명의 뇌 질환**으로 적고, 뇌 검사에서 60세부터 뇌세포가 비활성화되어 기억력이 점차 상실되는 양상이 나타났다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "같은 기록은 병을 **원인 불명의 뇌 질환**으로 적고, 뇌 검사에서 60세부터 뇌세포가 비활성화되어 기억력이 점차 상실되는 양상이 나타났다고 전한다."
+      },
+      {
+       "t_raw": "기억력 저하와 감정 불안정이 60세부터의 뇌세포 비활성화와 함께 기록된 만큼, 이 기록은 병세를 뇌세포 변화와 함께 기록한 사례로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "기억력 저하와 감정 불안정이 60세부터의 뇌세포 비활성화와 함께 기록된 만큼, 이 기록은 병세를 뇌세포 변화와 함께 기록한 사례로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Medical History of Giyath Khayyam"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "Located behind the Bimarstan building and disappears after interacting with it.",
+     "sentences": [
+      {
+       "t_raw": "그런데 Medical History of Giyath Khayyam은 Bimarstan 건물 뒤에 놓여 있고, 상호작용하면 **사라진다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 Medical History of Giyath Khayyam은 비마르스탄 건물 뒤에 놓여 있고, 상호작용하면 **사라진다**.",
+       "polish": {
+        "from": "그런데 Medical History of Giyath Khayyam은 비마르스탄 건물 뒤에 놓여 있고, 상호작용하면 **사라진다**.",
+        "text": "그런데 Medical History of Giyath Khayyam은 비마르스탄 건물 뒤에 놓여 있고, 상호작용하면 **사라진다**.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "기록은 뇌 질환을 원인 불명으로 전하며, 그 원인은 기록에서 밝혀지지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기록은 뇌 질환을 원인 불명으로 전하며, 그 원인은 기록에서 밝혀지지 않는다."
+      },
+      {
+       "t_raw": "원인을 밝히지 못한 뇌 질환의 기록이 상호작용하면 사라진다는 점은 남은 물음을 키우는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "원인을 밝히지 못한 뇌 질환의 기록이 상호작용하면 사라진다는 점은 남은 물음을 키우는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Medical History of Giyath Khayyam"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Calls the quoted age/gender line the plain opening of the record; the leading ellipsis does not establish that it is the start, and the tone judgment is not in the English.",
+     "quote": "...Patient age: 65. Gender: Male...",
+     "sentences": [
+      {
+       "t_raw": "Bimarstan 건물 뒤편에는 Giyath Khayyam의 Medical History가 놓여 있는데, 이 문서는 직접 조사하면 사라져 버린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비마르스탄 건물 뒤편에는 기야스·하이얌의 Medical History가 놓여 있는데, 이 문서는 직접 조사하면 사라져 버린다."
+      },
+      {
+       "t_raw": "한 번 읽고 나면 자리를 비워버리는 문서라는 점이, 기억이 조금씩 지워져 가는 환자의 이야기와 겹쳐 읽히기도 한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 번 읽고 나면 자리를 비워버리는 문서라는 점이, 기억이 조금씩 지워져 가는 환자의 이야기와 겹쳐 읽히기도 한다."
+      },
+      {
+       "t_raw": "Giyath Khayyam의 의료 기록에는 \"...Patient age: 65. Gender: Male...\"이라는 구절이 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "기야스·하이얌의 의료 기록에는 \"...환자 나이: 65. 성별: 남성...\"이라는 구절이 적혀 있다.",
+       "polish": {
+        "from": "기야스·하이얌의 의료 기록에는 \"...Patient age: 65. Gender: Male...\"이라는 구절이 적혀 있다.",
+        "text": "기야스·하이얌의 의료 기록에는 \"...환자 나이: 65. 성별: 남성...\"이라는 구절이 적혀 있다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Other Interactable Objects > Medical History of Giyath Khayyam",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Medical History"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "quote_mismatch",
+     "note": null,
+     "quote": "",
+     "sentences": [
+      {
+       "t_raw": "Bimarstan에는 Proverb Column이라는 게시판이 따로 마련되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비마르스탄에는 Proverb Column이라는 게시판이 따로 마련되어 있다."
+      },
+      {
+       "t_raw": "병원이라는 공간에 격언을 새기는 기둥이 있다는 점은, 치료만이 아니라 마음을 돌보는 곳이기도 하다는 Bimarstan의 성격을 보여 주는 대목이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "병원이라는 공간에 격언을 새기는 기둥이 있다는 점은, 치료만이 아니라 마음을 돌보는 곳이기도 하다는 비마르스탄의 성격을 보여 주는 대목이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Bimarstan",
+       "revision": 848979,
+       "section": "Message Boards",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Proverb Column"
+     ]
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

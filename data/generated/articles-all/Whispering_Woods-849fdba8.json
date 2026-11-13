@@ -1,0 +1,584 @@
+{
+ "node": "Whispering Woods",
+ "articles": [
+  {
+   "node": "Whispering Woods",
+   "from_version": "1.1",
+   "cutoff": "2020-12-22T00:00:00Z",
+   "input": [
+    {
+     "page": "Whispering Woods",
+     "url": "https://genshin-impact.fandom.com/wiki/Whispering_Woods",
+     "revision": 61126
+    }
+   ],
+   "input_counts": {
+    "mentions": 1,
+    "lines": 6,
+    "web": 0
+   },
+   "input_chars": 485,
+   "input_cut": false,
+   "input_hash": "9f8f94bce345",
+   "writer": "glm-flash,ds,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences follow from A1, M1, Q2, Q3 and A3.",
+     "quote": "As its name would suggest, the sound of the wind caressing the leaves was like whispers in the woods.",
+     "sentences": [
+      {
+       "t_raw": "Whispering Woods는 Mondstadt 교외에 펼쳐진 숲으로, Starfell Lake와도 가까운 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "속삭임의 숲은 몬드 교외에 펼쳐진 숲으로, 별이 떨어지는 호수와도 가까운 곳이다."
+      },
+      {
+       "t_raw": "이름 그대로 바람이 나뭇잎을 어루만질 때면 그 소리가 숲 속의 속삭임처럼 들린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이름 그대로 바람이 나뭇잎을 어루만질 때면 그 소리가 숲 속의 속삭임처럼 들린다."
+      },
+      {
+       "t_raw": "마물이 모여든다는 보고부터 Klee의 '보물'이 묻힌 사건까지, 하나의 숲에 여러 이야기가 얽혀 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마물이 모여든다는 보고부터 클레의 '보물'이 묻힌 사건까지, 하나의 숲에 여러 이야기가 얽혀 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Whispering Woods",
+       "revision": 61126,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 69446,
+       "section": "Travel Highlights > First Visit to Mondstadt",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Time Waits For No Man",
+       "quest_ko": "되돌릴 수 없는 시간",
+       "version": "1.0",
+       "speaker": "Cyrus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Not to be Missed",
+       "quest_ko": "놓칠 수 없는 기회",
+       "version": "1.0",
+       "speaker": "Cyrus"
+      },
+      {
+       "kind": "wiki",
+       "page": "Whispering Woods",
+       "revision": 61126,
+       "section": "\"My Treasure\"",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "위치와 이름의 유래",
+     "status": "accepted",
+     "note": "Facts match M1 and Q1. The gateway reading is a hedged interpretation.",
+     "quote": "Traversing the treacherous Wolvendom took additional time, but I finally reached the Whispering Woods on the outskirts of Mondstadt four weeks ago.",
+     "sentences": [
+      {
+       "t_raw": "Whispering Woods는 Starfell Lake 인근, Mondstadt 도시 외곽에 있는 숲이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "속삭임의 숲은 별이 떨어지는 호수 인근, 몬드 도시 외곽에 있는 숲이다."
+      },
+      {
+       "t_raw": "내륙으로 향하는 길을 택한 여행자는 험준한 Wolvendom을 지나느라 시간이 더 걸렸지만 이 숲에 닿았다고 적었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "내륙으로 향하는 길을 택한 여행자는 험준한 울프 영지를 지나느라 시간이 더 걸렸지만 이 숲에 닿았다고 적었다."
+      },
+      {
+       "t_raw": "한편 도시 쪽에서 조사를 나설 때는 멀리 갈 필요 없이 이 숲까지만 가면 된다는 말도 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 도시 쪽에서 조사를 나설 때는 멀리 갈 필요 없이 이 숲까지만 가면 된다는 말도 나온다."
+      },
+      {
+       "t_raw": "험준한 Wolvendom을 거쳐야 하는 쪽과 도시에서 가까운 쪽이 한 숲에 함께 있다는 점에서, 이곳은 **Mondstadt 외곽의 길목**이면서 육로로 들어서는 관문에 가깝다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "험준한 울프 영지를 거쳐야 하는 쪽과 도시에서 가까운 쪽이 한 숲에 함께 있다는 점에서, 이곳은 **몬드 외곽의 길목**이면서 육로로 들어서는 관문에 가깝다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Whispering Woods",
+       "revision": 61126,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 69446,
+       "section": "Travel Highlights > First Visit to Mondstadt",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Meteorites and Adventure",
+       "quest_ko": "운석과 모험",
+       "version": "1.1",
+       "speaker": "Jack"
+      }
+     ],
+     "heading": "위치와 이름의 유래",
+     "latin_left": []
+    },
+    {
+     "section": "위치와 이름의 유래",
+     "status": "accepted",
+     "note": "Matches M1. The interpretation is reasonable.",
+     "quote": "As its name would suggest, the sound of the wind caressing the leaves was like whispers in the woods.",
+     "sentences": [
+      {
+       "t_raw": "이름은 바람 소리에서 나왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이름은 바람 소리에서 나왔다."
+      },
+      {
+       "t_raw": "바람이 잎을 어루만지는 소리가 마치 숲속의 속삭임 같았다고 그 기록은 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바람이 잎을 어루만지는 소리가 마치 숲속의 속삭임 같았다고 그 기록은 전한다."
+      },
+      {
+       "t_raw": "지형이나 어떤 사건이 아니라 들리는 소리가 먼저 이름이 되었다는 점에서, **숲의 이름 자체가 이곳의 인상**을 대신하고 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "지형이나 어떤 사건이 아니라 들리는 소리가 먼저 이름이 되었다는 점에서, **숲의 이름 자체가 이곳의 인상**을 대신하고 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 69446,
+       "section": "Travel Highlights > First Visit to Mondstadt",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "위치와 이름의 유래",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 모험가들과 마물",
+     "status": "accepted",
+     "note": "The shoulder touch is invented; the English has only a *sigh*, and that sigh is about leaving another topic aside, not about the woods. Claiming the guild finds the woods hard to enter is an unsupported guess.",
+     "quote": "I've heard from our scouts that there are still monsters wandering the Whispering Woods.",
+     "sentences": [
+      {
+       "t_raw": "Whispering Woods는 모험가들에게 결코 평온한 산책로가 아니다.",
+       "interp": false,
+       "dropped": false,
+       "t": "속삭임의 숲은 모험가들에게 결코 평온한 산책로가 아니다."
+      },
+      {
+       "t_raw": "Adventurers' Guild의 Cyrus는 정찰병들을 통해 숲에 아직 마물들이 돌아다닌다는 보고를 받았고, 조사를 나간 모험가들로부터 마물들이 모여든다는 소식도 전해 들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모험가 길드의 Cyrus는 정찰병들을 통해 숲에 아직 마물들이 돌아다닌다는 보고를 받았고, 조사를 나간 모험가들로부터 마물들이 모여든다는 소식도 전해 들었다."
+      },
+      {
+       "t_raw": "그래서 그는 한숨을 쉬며 그 일은 일단 제쳐두자고 한 뒤, 정찰병들이 Whispering Woods에 아직 몬스터가 돌아다닌다고 전해 듣고는 Traveler에게 그곳에 가서 상황을 살펴봐 달라고 부탁하는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "그래서 그는 한숨을 쉬며 그 일은 일단 제쳐두자고 한 뒤, 정찰병들이 속삭임의 숲에 아직 몬스터가 돌아다닌다고 전해 듣고는 여행자에게 그곳에 가서 상황을 살펴봐 달라고 부탁하는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Time Waits For No Man",
+       "quest_ko": "되돌릴 수 없는 시간",
+       "version": "1.0",
+       "speaker": "Cyrus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Not to be Missed",
+       "quest_ko": "놓칠 수 없는 기회",
+       "version": "1.0",
+       "speaker": "Cyrus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Time Waits For No Man",
+       "quest_ko": "되돌릴 수 없는 시간",
+       "version": "1.0",
+       "speaker": "Cyrus"
+      }
+     ],
+     "heading": "작중 행적 — 모험가들과 마물",
+     "latin_left": [
+      "Cyrus"
+     ]
+    },
+    {
+     "section": "작중 행적 — 모험가들과 마물",
+     "status": "accepted",
+     "note": "Meeting an informant there is supported by Q5. The scenery in the interpretation is embellishment but reads as interpretation.",
+     "quote": "We will be meeting the informant at the Whispering Woods.",
+     "sentences": [
+      {
+       "t_raw": "숲은 은밀한 만남의 장소로도 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "숲은 은밀한 만남의 장소로도 쓰인다."
+      },
+      {
+       "t_raw": "Kaeya는 정보원과의 만남 장소를 Whispering Woods로 정했는데, 우거진 나무 사이에서 밀정을 기다리는 풍경이 딱 어울리는 곳이라 할 만하다.",
+       "interp": true,
+       "dropped": false,
+       "t": "케이아는 정보원과의 만남 장소를 속삭임의 숲으로 정했는데, 우거진 나무 사이에서 밀정을 기다리는 풍경이 딱 어울리는 곳이라 할 만하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Kaeya's Troubles",
+       "quest_ko": "케이아의 난제",
+       "version": "1.0",
+       "speaker": "Kaeya"
+      }
+     ],
+     "heading": "작중 행적 — 모험가들과 마물",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 모험가들과 마물",
+     "status": "accepted",
+     "note": "The English never says Jack belongs to the Favonius order. Jack's line shows no fear of the woods, so reading fear and saying the forest was seen as dangerous is a guess stated as certain.",
+     "quote": "You don't have to go far, just the Whispering Woods will do.",
+     "sentences": [
+      {
+       "t_raw": "마물 걱정은 모험가들에게도 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마물 걱정은 모험가들에게도 이어진다."
+      },
+      {
+       "t_raw": "Jack은 Traveler에게 밖에 나가 상황을 조사해 달라고 부탁하면서, 멀리 갈 필요 없이 Whispering Woods 정도면 충분하다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "잭은 여행자에게 밖에 나가 상황을 조사해 달라고 부탁하면서, 멀리 갈 필요 없이 속삭임의 숲 정도면 충분하다고 말한다."
+      },
+      {
+       "t_raw": "Mondstadt 도시 근처의 숲이면서, Jack이 멀리 갈 필요 없이 Whispering Woods 정도면 충분하다고 말한 것으로 보아, 그곳이 가까운 조사지로 여겨진 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "몬드 도시 근처의 숲이면서, 잭이 멀리 갈 필요 없이 속삭임의 숲 정도면 충분하다고 말한 것으로 보아, 그곳이 가까운 조사지로 여겨진 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Meteorites and Adventure",
+       "quest_ko": "운석과 모험",
+       "version": "1.1",
+       "speaker": "Jack"
+      }
+     ],
+     "heading": "작중 행적 — 모험가들과 마물",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Klee의 보물",
+     "status": "accepted",
+     "note": "All sentences are supported by A3/A4.",
+     "quote": "There's some scruffy handwriting on this wooden post: \"My Treasure.\"",
+     "sentences": [
+      {
+       "t_raw": "Klee의 **\"보물\"**은 이곳에 묻혀 있다가, 첫 스토리 퀘스트 \"The Mystery of the Girl in Red's Treasure\"에서 Abyss Mage에게 빼앗긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "클레의 **\"보물\"**은 이곳에 묻혀 있다가, 첫 스토리 퀘스트 \"「빨간옷 여자아이 보물」의 수수께끼\"에서 심연 메이지에게 빼앗긴다."
+      },
+      {
+       "t_raw": "사건이 끝난 뒤 남은 것은 **빈 구멍**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사건이 끝난 뒤 남은 것은 **빈 구멍**이다."
+      },
+      {
+       "t_raw": "퀘스트를 완료한 뒤 빈 구멍과 상호작용하면, 나무 기둥에 적힌 \"My Treasure.\"라는 다소 휘갈긴 필체에 대한 대사가 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트를 완료한 뒤 빈 구멍과 상호작용하면, 나무 기둥에 적힌 \"My Treasure.\"라는 다소 휘갈긴 필체에 대한 대사가 나온다."
+      },
+      {
+       "t_raw": "빈 구멍과 나무 기둥의 글씨는 빼앗긴 보물의 흔적으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "빈 구멍과 나무 기둥의 글씨는 빼앗긴 보물의 흔적으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Whispering Woods",
+       "revision": 61126,
+       "section": "\"My Treasure\"",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Whispering Woods",
+       "revision": 61126,
+       "section": "\"My Treasure\"",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 클레의 보물",
+     "latin_left": [
+      "My Treasure"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Facts match M1. The sentence 3 interpretation is hedged and follows from the rhetorical question.",
+     "quote": "As its name would suggest, the sound of the wind caressing the leaves was like whispers in the woods.",
+     "sentences": [
+      {
+       "t_raw": "험한 Wolvendom을 지난 여행자는 내륙 길을 택해 네 주 전 Mondstadt 교외의 Whispering Woods에 도착했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "험한 울프 영지를 지난 여행자는 내륙 길을 택해 네 주 전 몬드 교외의 속삭임의 숲에 도착했다."
+      },
+      {
+       "t_raw": "숲의 이름처럼 바람이 나뭇잎을 어루만지는 소리는 **속삭임**처럼 들렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "숲의 이름처럼 바람이 나뭇잎을 어루만지는 소리는 **속삭임**처럼 들렸다."
+      },
+      {
+       "t_raw": "기록은 이 소리가 Mondstadt 사람들이 섬기는 전설의 음유시인이자 Anemo Archon인 Barbatos의 **은혜일 수 있는지** 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기록은 이 소리가 몬드 사람들이 섬기는 전설의 음유시인이자 바람의 신인 바르바토스의 **은혜일 수 있는지** 묻는다."
+      },
+      {
+       "t_raw": "이름과 바람 소리에 대한 묘사가 Barbatos를 향한 질문으로 이어지면서, 숲을 둘러싼 수수께끼가 이름에서부터 시작된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이름과 바람 소리에 대한 묘사가 바르바토스를 향한 질문으로 이어지면서, 숲을 둘러싼 수수께끼가 이름에서부터 시작된다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 69446,
+       "section": "Travel Highlights > First Visit to Mondstadt",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by M1. The interpretations are appropriately hedged.",
+     "quote": "Could it be a gracious gift from the legendary bard, Barbatos the Anemo Archon, who the people of Mondstadt worship?",
+     "sentences": [
+      {
+       "t_raw": "이 대목은 Barbatos의 은혜일 수 있는지 묻는 질문으로 끝난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 대목은 바르바토스의 은혜일 수 있는지 묻는 질문으로 끝난다."
+      },
+      {
+       "t_raw": "따라서 바람의 속삭임이 Barbatos의 은혜인지, 숲의 이름이 암시하는 소리인지는 기록만으로 확정되지 않는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 바람의 속삭임이 바르바토스의 은혜인지, 숲의 이름이 암시하는 소리인지는 기록만으로 확정되지 않는다."
+      },
+      {
+       "t_raw": "그래서 Whispering Woods의 이름은 풍경 묘사이면서, Mondstadt 사람들이 섬기는 Barbatos와 숲을 잇는 **떡밥**으로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 속삭임의 숲의 이름은 풍경 묘사이면서, 몬드 사람들이 섬기는 바르바토스와 숲을 잇는 **떡밥**으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 69446,
+       "section": "Travel Highlights > First Visit to Mondstadt",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A1, A2 and Q4. The interpretation is reasonable.",
+     "quote": "Let me see... First, please help me pick one sweet flower and one small lamp grass from the Whispering Woods.",
+     "sentences": [
+      {
+       "t_raw": "Whispering Woods에는 **chests**가 많다.",
+       "interp": false,
+       "dropped": false,
+       "t": "속삭임의 숲에는 **상자**가 많다.",
+       "polish": {
+        "from": "속삭임의 숲에는 **chests**가 많다.",
+        "text": "속삭임의 숲에는 **상자**가 많다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이 일대에서는 **Small Lamp Grass**도 쉽게 찾을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 일대에서는 **등불꽃**도 쉽게 찾을 수 있다."
+      },
+      {
+       "t_raw": "Flora는 Whispering Woods에서 sweet flower 하나와 small lamp grass 하나를 따 오는 일을 부탁한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "플로라는 속삭임의 숲에서 달콤꽃 하나와 작은 등불풀 하나를 따 오는 일을 부탁한다.",
+       "polish": {
+        "from": "플로라는 속삭임의 숲에서 sweet flower 하나와 small lamp grass 하나를 따 오는 일을 부탁한다.",
+        "text": "플로라는 속삭임의 숲에서 달콤꽃 하나와 작은 등불풀 하나를 따 오는 일을 부탁한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "숲에 chests가 많고 Small Lamp Grass도 쉽게 얻어지니, Flora의 잔심부름을 하는 길에는 채집과 탐색이 함께 따라오는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "숲에 상자가 많고 등불꽃도 쉽게 얻어지니, 플로라의 잔심부름을 하는 길에는 채집과 탐색이 함께 따라오는 셈이다.",
+       "polish": {
+        "from": "숲에 chests가 많고 등불꽃도 쉽게 얻어지니, 플로라의 잔심부름을 하는 길에는 채집과 탐색이 함께 따라오는 셈이다.",
+        "text": "숲에 상자가 많고 등불꽃도 쉽게 얻어지니, 플로라의 잔심부름을 하는 길에는 채집과 탐색이 함께 따라오는 셈이다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Whispering Woods",
+       "revision": 61126,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Whispering Woods",
+       "revision": 61126,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Flighty Flora... and Flora",
+       "quest_ko": "하늘하늘 흩날리는 꽃과 플로라",
+       "version": "1.0",
+       "speaker": "Flora"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "위치와 이름의 유래",
+     "status": "accepted",
+     "note": "Faithful translation of Jack's line.",
+     "t_raw": "그러니까 Traveler, 부디 바깥으로 나가 상황을 조사해 주게. 멀리 갈 필요는 없네, Whispering Woods 정도면 충분하지.",
+     "en": "So, please, Traveler! Help me go outside and investigate the situation. You don't have to go far, just the Whispering Woods will do.",
+     "speaker": "Jack",
+     "source": {
+      "kind": "quest",
+      "quest": "Meteorites and Adventure",
+      "quest_ko": "운석과 모험",
+      "version": "1.1",
+      "speaker": "Jack"
+     },
+     "t": "그러니까 여행자, 부디 바깥으로 나가 상황을 조사해 주게. 멀리 갈 필요는 없네, 속삭임의 숲 정도면 충분하지.",
+     "speaker_ko": "잭"
+    },
+    {
+     "section": "작중 행적 — 모험가들과 마물",
+     "status": "accepted",
+     "note": "Faithful translation of Jack's line.",
+     "t_raw": "그러니 부탁합니다, Traveler! 밖에 나가 상황을 조사하는 걸 도와주세요. 멀리 갈 필요 없이, Whispering Woods 정도면 됩니다.",
+     "en": "So, please, Traveler! Help me go outside and investigate the situation. You don't have to go far, just the Whispering Woods will do.",
+     "speaker": "Jack",
+     "source": {
+      "kind": "quest",
+      "quest": "Meteorites and Adventure",
+      "quest_ko": "운석과 모험",
+      "version": "1.1",
+      "speaker": "Jack"
+     },
+     "t": "그러니 부탁합니다, 여행자! 밖에 나가 상황을 조사하는 걸 도와주세요. 멀리 갈 필요 없이, 속삭임의 숲 정도면 됩니다.",
+     "speaker_ko": "잭"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Flora's line: 'sweet flower' and 'small lamp grass' picked from the Whispering Woods; 'help me pick' rendered as '따 오도록 도와줄래?'. No failure.",
+     "t_raw": "어디 보자... 먼저 Whispering Woods에서 sweet flower 하나와 small lamp grass 하나를 따 오도록 도와줄래?",
+     "en": "Let me see... First, please help me pick one sweet flower and one small lamp grass from the Whispering Woods.",
+     "speaker": "Flora",
+     "source": {
+      "kind": "quest",
+      "quest": "Flighty Flora... and Flora",
+      "quest_ko": "하늘하늘 흩날리는 꽃과 플로라",
+      "version": "1.0",
+      "speaker": "Flora"
+     },
+     "t": "어디 보자... 먼저 속삭임의 숲에서 sweet flower 하나와 small lamp grass 하나를 따 오도록 도와줄래?",
+     "speaker_ko": "플로라"
+    }
+   ]
+  }
+ ]
+}

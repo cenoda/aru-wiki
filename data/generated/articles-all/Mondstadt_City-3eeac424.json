@@ -1,0 +1,592 @@
+{
+ "node": "Mondstadt City",
+ "articles": [
+  {
+   "node": "Mondstadt City",
+   "from_version": "1.0",
+   "cutoff": "2020-11-10T00:00:00Z",
+   "input": [
+    {
+     "page": "Mondstadt City",
+     "url": "https://genshin-impact.fandom.com/wiki/Mondstadt_City",
+     "revision": 44478
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 455,
+   "input_cut": false,
+   "input_hash": "132e5a44fa68",
+   "writer": "ds,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences supported by A1 and Q1.",
+     "quote": "A statue of the Anemo Archon watches over the city, with the Favonious Cathedral in the back.",
+     "sentences": [
+      {
+       "t_raw": "Mondstadt는 Mondstadt 국가의 주요 도시이며, Starfell Valley 서쪽에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드는 몬드 국가의 주요 도시이며, 별이 떨어지는 산골짜기 서쪽에 있다."
+      },
+      {
+       "t_raw": "도시에는 **돌바닥 길과 여러 풍차**가 있으며, 동쪽 낮은 끝은 큰 돌성벽으로 둘러싸여 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시에는 **돌바닥 길과 여러 풍차**가 있으며, 동쪽 낮은 끝은 큰 돌성벽으로 둘러싸여 있다."
+      },
+      {
+       "t_raw": "도시를 지켜보는 Anemo Archon의 조각상과 뒤편의 Favonious Cathedral은 이곳이 신앙과 깊이 연결된 장소임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도시를 지켜보는 바람의 신의 조각상과 뒤편의 페보니우스 대성당은 이곳이 신앙과 깊이 연결된 장소임을 보여 준다."
+      },
+      {
+       "t_raw": "Venti는 Anemo Crystalfly가 Mondstadt City 주변의 열린 들판에서 발견된다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 바람수정 나비가 몬드성 주변의 열린 들판에서 발견된다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lionfang's Legacy",
+       "quest_ko": "사자 이빨 중의 이빨",
+       "version": "1.0",
+       "speaker": "Venti"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Sentence 2 says the statue stands inside the wall (\"성벽 안쪽으로는\"). The English never places the statue or cathedral relative to the wall.",
+     "quote": "Mondstadt features cobblestone streets and several windmills surrounded by a large stone castle wall on the east lower end.",
+     "sentences": [
+      {
+       "t_raw": "Mondstadt는 Mondstadt 국가의 중심 도시로, **Starfell Valley 서쪽**에 자리해 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드는 몬드 국가의 중심 도시로, **별이 떨어지는 산골짜기 서쪽**에 자리해 있다."
+      },
+      {
+       "t_raw": "도시 안에는 돌바닥 길과 여러 풍차가 펼쳐져 있고, 동쪽 아래쪽으로는 거대한 석조 성벽이 둘러져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시 안에는 돌바닥 길과 여러 풍차가 펼쳐져 있고, 동쪽 아래쪽으로는 거대한 석조 성벽이 둘러져 있다."
+      },
+      {
+       "t_raw": "**Anemo Archon의 조각상**이 도시를 내려다보고 있으며, 그 뒤편에는 **Favonious Cathedral**이 서 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "**바람의 신의 조각상**이 도시를 내려다보고 있으며, 그 뒤편에는 **페보니우스 대성당**이 서 있다."
+      },
+      {
+       "t_raw": "이처럼 성벽과 조각상, Favonious Cathedral이 Mondstadt의 골격을 이루며, 신성한 보호가 도시 전체를 감싸는 구조로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 성벽과 조각상, 페보니우스 대성당이 몬드의 골격을 이루며, 신성한 보호가 도시 전체를 감싸는 구조로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences supported by A2 and Q1. The interpretations are hedged.",
+     "quote": "Hmm... say, Jack, have you ever seen an Anemo Crystalfly? They're found in the open country around Mondstadt City.",
+     "sentences": [
+      {
+       "t_raw": "도시 아래쪽에는 붉은 지붕과 담황색 벽의 2층 건물들이 늘어서 있고, 상점과 여러 업종이 모여 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시 아래쪽에는 붉은 지붕과 담황색 벽의 2층 건물들이 늘어서 있고, 상점과 여러 업종이 모여 있다."
+      },
+      {
+       "t_raw": "이곳이 거주와 장사가 어우러진 생활의 결을 이루는 부분인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이곳이 거주와 장사가 어우러진 생활의 결을 이루는 부분인 셈이다."
+      },
+      {
+       "t_raw": "Venti는 Mondstadt City 주변의 들판에서 Anemo Crystalfly를 볼 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 몬드성 주변의 들판에서 바람수정 나비를 볼 수 있다고 말한다."
+      },
+      {
+       "t_raw": "이는 Mondstadt가 평원과 자연의 경계 위에 자리한 도시임을 보여주는 접점이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 몬드가 평원과 자연의 경계 위에 자리한 도시임을 보여주는 접점이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": "Points of Interests > Market district",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lionfang's Legacy",
+       "quest_ko": "사자 이빨 중의 이빨",
+       "version": "1.0",
+       "speaker": "Venti"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "도시의 모습",
+     "status": "accepted",
+     "note": "All sentences supported by A1. The interpretation is hedged.",
+     "quote": "Mondstadt features cobblestone streets and several windmills surrounded by a large stone castle wall on the east lower end.",
+     "sentences": [
+      {
+       "t_raw": "Mondstadt는 Mondstadt nation의 중심 도시이며, Starfell Valley 지역의 서쪽에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드는 몬드 국가의 중심 도시이며, 별이 떨어지는 산골짜기 지역의 서쪽에 자리한다.",
+       "polish": {
+        "from": "몬드는 몬드 nation의 중심 도시이며, 별이 떨어지는 산골짜기 지역의 서쪽에 자리한다.",
+        "text": "몬드는 몬드 국가의 중심 도시이며, 별이 떨어지는 산골짜기 지역의 서쪽에 자리한다.",
+        "by": "kimi"
+       }
+      },
+      {
+       "t_raw": "도시의 동쪽 낮은 쪽에는 **큰 돌로 된 성벽**이 도시를 둘러싸고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시의 동쪽 낮은 쪽에는 **큰 돌로 된 성벽**이 도시를 둘러싸고 있다."
+      },
+      {
+       "t_raw": "성벽 안쪽으로는 돌바닥 길과 여러 개의 풍차가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "성벽 안쪽으로는 돌바닥 길과 여러 개의 풍차가 있다."
+      },
+      {
+       "t_raw": "돌바닥 길과 풍차가 함께 그려진다는 점에서, 이 도시의 골격은 돌과 바람이라는 두 요소로 요약되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "돌바닥 길과 풍차가 함께 그려진다는 점에서, 이 도시의 골격은 돌과 바람이라는 두 요소로 요약되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "도시의 모습",
+     "latin_left": []
+    },
+    {
+     "section": "도시의 모습",
+     "status": "accepted",
+     "note": "All sentences supported by A1. The interpretation is hedged.",
+     "quote": "A statue of the Anemo Archon watches over the city, with the Favonious Cathedral in the back.",
+     "sentences": [
+      {
+       "t_raw": "도시를 지켜보는 것은 **Anemo Archon의 조각상**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시를 지켜보는 것은 **바람의 신의 조각상**이다."
+      },
+      {
+       "t_raw": "조각상 뒤편에는 Favonious Cathedral이 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조각상 뒤편에는 페보니우스 대성당이 자리한다."
+      },
+      {
+       "t_raw": "조각상이 도시를 굽어보고 cathedral이 그 뒤를 받치는 배치는, 도시의 시선이 Anemo Archon과 cathedral 쪽으로 모이는 구조라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "조각상이 도시를 굽어보고 대성당이 그 뒤를 받치는 배치는, 도시의 시선이 바람의 신과 대성당 쪽으로 모이는 구조라고 볼 수 있다.",
+       "polish": {
+        "from": "조각상이 도시를 굽어보고 cathedral이 그 뒤를 받치는 배치는, 도시의 시선이 바람의 신과 cathedral 쪽으로 모이는 구조라고 볼 수 있다.",
+        "text": "조각상이 도시를 굽어보고 대성당이 그 뒤를 받치는 배치는, 도시의 시선이 바람의 신과 대성당 쪽으로 모이는 구조라고 볼 수 있다.",
+        "by": "kimi"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "도시의 모습",
+     "latin_left": []
+    },
+    {
+     "section": "상권과 생활",
+     "status": "accepted",
+     "note": "All sentences supported by A2. Tan is fairly rendered as 황갈색.",
+     "quote": "In the lower end of the city, several two story buildings with tan walls and red tiled roofs house several shops of various businesses.",
+     "sentences": [
+      {
+       "t_raw": "도시의 낮은 쪽에는 **2층 건물**들이 늘어서 있고, 그 건물들에 **여러 업종의 상점**이 들어서 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시의 낮은 쪽에는 **2층 건물**들이 늘어서 있고, 그 건물들에 **여러 업종의 상점**이 들어서 있다."
+      },
+      {
+       "t_raw": "건물은 황갈색 벽과 붉은 기와지붕을 갖추고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "건물은 황갈색 벽과 붉은 기와지붕을 갖추고 있다."
+      },
+      {
+       "t_raw": "상점들이 이러한 2층 건물들에 자리한다는 점에서, 낮은 쪽의 생활 공간은 건물의 규모와 색채가 함께 만드는 결을 지닌다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "상점들이 이러한 2층 건물들에 자리한다는 점에서, 낮은 쪽의 생활 공간은 건물의 규모와 색채가 함께 만드는 결을 지닌다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": "Points of Interests > Market district",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "상권과 생활",
+     "latin_left": []
+    },
+    {
+     "section": "상권과 생활",
+     "status": "accepted",
+     "note": "All supported: wall and shops are both at the lower end.",
+     "quote": "a large stone castle wall on the east lower end",
+     "sentences": [
+      {
+       "t_raw": "낮은 쪽에는 도시를 둘러싼 큰 돌 성벽이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "낮은 쪽에는 도시를 둘러싼 큰 돌 성벽이 있다."
+      },
+      {
+       "t_raw": "상점가가 성벽과 같은 낮은 쪽에 자리한다는 점에서, 상업 공간과 성벽이 **도시의 아래쪽**에서 맞물리는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "상점가가 성벽과 같은 낮은 쪽에 자리한다는 점에서, 상업 공간과 성벽이 **도시의 아래쪽**에서 맞물리는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": "Points of Interests > Market district",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "상권과 생활",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "trimmed",
+     "note": "Claims the city center is aligned toward the Anemo Archon. The English only says the statue watches over the city with the Cathedral behind it, so this adds an unsupported claim.",
+     "quote": "A statue of the Anemo Archon watches over the city, with the Favonious Cathedral in the back.",
+     "sentences": [
+      {
+       "t_raw": "Mondstadt에서 Anemo Archon은 도시를 내려다보는 조각상으로 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드에서 바람의 신은 도시를 내려다보는 조각상으로 자리한다."
+      },
+      {
+       "t_raw": "조각상은 도시를 굽어보고, 그 뒤편에는 Favonious Cathedral이 놓인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조각상은 도시를 굽어보고, 그 뒤편에는 페보니우스 대성당이 놓인다."
+      },
+      {
+       "t_raw": "Anemo Archon의 조각상과 Favonious Cathedral이 앞뒤로 겹쳐 배치되었다는 점에서, 도시의 중심부는 Anemo Archon을 향해 정렬된 셈이다.",
+       "interp": true,
+       "dropped": true,
+       "t": "바람의 신의 조각상과 페보니우스 대성당이 앞뒤로 겹쳐 배치되었다는 점에서, 도시의 중심부는 바람의 신을 향해 정렬된 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by Q1 (Crystalflies in open country around Mondstadt City). The interpretation is hedged and reasonable.",
+     "quote": "Hmm... say, Jack, have you ever seen an Anemo Crystalfly? They're found in the open country around Mondstadt City.",
+     "sentences": [
+      {
+       "t_raw": "도시 바깥으로 시선을 돌리면 Anemo Crystalfly가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시 바깥으로 시선을 돌리면 바람수정 나비가 있다."
+      },
+      {
+       "t_raw": "Venti는 Jack에게 Anemo Crystalfly를 본 적이 있는지 물으면서, 이들이 Mondstadt City 주변의 트인 들판에서 발견된다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벤티는 잭에게 바람수정 나비를 본 적이 있는지 물으면서, 이들이 몬드성 주변의 트인 들판에서 발견된다고 전한다."
+      },
+      {
+       "t_raw": "도시 안의 Anemo Archon과 도시 밖 들판의 Anemo Crystalfly가 같은 이름을 공유한다는 점에서, Mondstadt City의 안팎은 Anemo라는 이름으로 이어져 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도시 안의 바람의 신과 도시 밖 들판의 바람수정 나비가 같은 이름을 공유한다는 점에서, 몬드성의 안팎은 바람라는 이름으로 이어져 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lionfang's Legacy",
+       "quest_ko": "사자 이빨 중의 이빨",
+       "version": "1.0",
+       "speaker": "Venti"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches A2.",
+     "quote": "In the lower end of the city, several two story buildings with tan walls and red tiled roofs house several shops of various businesses.",
+     "sentences": [
+      {
+       "t_raw": "도시의 **낮은 쪽**에는 황갈색 벽과 붉은 기와지붕을 한 2층 건물들이 늘어서 있고, 그 안에 여러 업종의 상점들이 들어서 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시의 **낮은 쪽**에는 황갈색 벽과 붉은 기와지붕을 한 2층 건물들이 늘어서 있고, 그 안에 여러 업종의 상점들이 들어서 있다."
+      },
+      {
+       "t_raw": "상점들은 각각 다른 업종을 맡고, 건물은 같은 색과 지붕을 공유한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상점들은 각각 다른 업종을 맡고, 건물은 같은 색과 지붕을 공유한다."
+      },
+      {
+       "t_raw": "2층이라는 높이와 황갈색 벽, 붉은 기와지붕이 이 구역 건물의 겉모습을 함께 이루는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "2층이라는 높이와 황갈색 벽, 붉은 기와지붕이 이 구역 건물의 겉모습을 함께 이루는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": "Points of Interests > Market district",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches A1. The interpretation is mild and acceptable.",
+     "quote": "Mondstadt features cobblestone streets and several windmills surrounded by a large stone castle wall on the east lower end.",
+     "sentences": [
+      {
+       "t_raw": "도시 전체는 조약돌 길과 여러 풍차를 품고, **동쪽 낮은 끝**에는 큰 돌 성벽이 둘러져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시 전체는 조약돌 길과 여러 풍차를 품고, **동쪽 낮은 끝**에는 큰 돌 성벽이 둘러져 있다."
+      },
+      {
+       "t_raw": "도시를 굽어보는 Anemo Archon의 조각상 뒤편으로는 Favonious Cathedral이 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시를 굽어보는 바람의 신의 조각상 뒤편으로는 페보니우스 대성당이 자리한다."
+      },
+      {
+       "t_raw": "성벽이 낮은 끝을 감싸고 조각상과 Favonious Cathedral이 도시의 뒤쪽 경관을 받치는 구도로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "성벽이 낮은 끝을 감싸고 조각상과 페보니우스 대성당이 도시의 뒤쪽 경관을 받치는 구도로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A1 and A2. The interpretation is reasonable.",
+     "quote": "In the lower end of the city, several two story buildings with tan walls and red tiled roofs house several shops of various businesses.",
+     "sentences": [
+      {
+       "t_raw": "성벽은 도시의 동쪽 낮은 끝에 있고, 상점가 역시 도시의 낮은 쪽에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "성벽은 도시의 동쪽 낮은 끝에 있고, 상점가 역시 도시의 낮은 쪽에 자리한다."
+      },
+      {
+       "t_raw": "성벽과 상점가가 모두 낮은 지대를 기준으로 설명되는 만큼, 도시의 낮은 쪽은 성벽과 생활 공간이 함께 겹쳐 읽히는 자리인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "성벽과 상점가가 모두 낮은 지대를 기준으로 설명되는 만큼, 도시의 낮은 쪽은 성벽과 생활 공간이 함께 겹쳐 읽히는 자리인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt City",
+       "revision": 44478,
+       "section": "Points of Interests > Market district",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation: Venti asks Jack about Anemo Crystalfly, found in fields around Mondstadt City.",
+     "t_raw": "음… 이봐, Jack, Anemo Crystalfly 본 적 있어? Mondstadt City 주변의 들판에서 찾을 수 있거든.",
+     "en": "Hmm... say, Jack, have you ever seen an Anemo Crystalfly? They're found in the open country around Mondstadt City.",
+     "speaker": "Venti",
+     "source": {
+      "kind": "quest",
+      "quest": "Lionfang's Legacy",
+      "quest_ko": "사자 이빨 중의 이빨",
+      "version": "1.0",
+      "speaker": "Venti"
+     },
+     "t": "음… 이봐, 잭, 바람수정 나비 본 적 있어? 몬드성 주변의 들판에서 찾을 수 있거든.",
+     "speaker_ko": "벤티"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation; 'open country' rendered as 트인 들판, which is acceptable.",
+     "t_raw": "흠... 있잖아, Jack, Anemo Crystalfly를 본 적 있어? 그건 Mondstadt City 주변의 트인 들판에서 발견돼.",
+     "en": "Hmm... say, Jack, have you ever seen an Anemo Crystalfly? They're found in the open country around Mondstadt City.",
+     "speaker": "Venti",
+     "source": {
+      "kind": "quest",
+      "quest": "Lionfang's Legacy",
+      "quest_ko": "사자 이빨 중의 이빨",
+      "version": "1.0",
+      "speaker": "Venti"
+     },
+     "t": "흠... 있잖아, 잭, 바람수정 나비를 본 적 있어? 그건 몬드성 주변의 트인 들판에서 발견돼.",
+     "speaker_ko": "벤티"
+    }
+   ]
+  }
+ ]
+}

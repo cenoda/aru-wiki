@@ -1,0 +1,580 @@
+{
+ "node": "Cicin",
+ "articles": [
+  {
+   "node": "Cicin",
+   "from_version": "1.3",
+   "cutoff": "2021-03-16T00:00:00Z",
+   "input": [
+    {
+     "page": "Cicin",
+     "url": "https://genshin-impact.fandom.com/wiki/Cicin",
+     "revision": 115080
+    }
+   ],
+   "input_counts": {
+    "mentions": 4,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 1378,
+   "input_cut": false,
+   "input_hash": "fa2eed87c319",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet,codex-medium,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported. The Mage-spawning and Fatui Cicin Mages details come from A3 and M1, and the sentence 2 interpretation is hedged.",
+     "quote": "Cicins are small bat-like creatures that do not deal much damage or have much health, but they are hard to lock down and defeat.",
+     "sentences": [
+      {
+       "t_raw": "Cicin은 작은 박쥐 같은 생물로, 큰 피해나 체력은 없지만 붙잡아 처치하기 어렵고 다른 적과 함께 공격하면 성가신 존재다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치친은 작은 박쥐 같은 생물로, 큰 피해나 체력은 없지만 붙잡아 처치하기 어렵고 다른 적과 함께 공격하면 성가신 존재다."
+      },
+      {
+       "t_raw": "이들은 원소 에너지를 실은 공격을 하며, 날렵해서 조준 공격을 맞히기 어렵다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 원소 에너지를 실은 공격을 하며, 날렵해서 조준 공격을 맞히기 어렵다."
+      },
+      {
+       "t_raw": "Fatui Cicin Mages가 Cicin을 계속 소환해 주력 위협을 가리는 동안, 작은 Cicin은 처치 순서를 흔드는 변수로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "우인단·치친 술사가 치친을 계속 소환해 주력 위협을 가리는 동안, 작은 치친은 처치 순서를 흔드는 변수로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Description",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Abilities and Attacks",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Strategy",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fatui",
+       "revision": 65615,
+       "section": "Members > Infantry Units",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and A2, and the sentence 4 interpretation is hedged.",
+     "quote": "Cicins are small bat-like creatures that do not deal much damage or have much health, but they are hard to lock down and defeat.",
+     "sentences": [
+      {
+       "t_raw": "Cicin은 **작은 박쥐 같은 모습**의 생물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치친은 **작은 박쥐 같은 모습**의 생물이다."
+      },
+      {
+       "t_raw": "피해와 체력은 크지 않지만 붙잡아 두고 쓰러뜨리기 어렵다.",
+       "interp": false,
+       "dropped": false,
+       "t": "피해와 체력은 크지 않지만 붙잡아 두고 쓰러뜨리기 어렵다."
+      },
+      {
+       "t_raw": "공격에 원소 에너지를 싣고 대응하는 원소 피해를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공격에 원소 에너지를 싣고 대응하는 원소 피해를 준다."
+      },
+      {
+       "t_raw": "몸놀림이 날렵해 조준 공격을 맞히기 힘들다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몸놀림이 날렵해 조준 공격을 맞히기 힘들다."
+      },
+      {
+       "t_raw": "작은 몸집과 낮은 체력, 맞히기 어려운 날렵함이 겹쳐 다른 적과 함께 있을 때 체감되는 성가심이 커지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "작은 몸집과 낮은 체력, 맞히기 어려운 날렵함이 겹쳐 다른 적과 함께 있을 때 체감되는 성가심이 커지는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Description",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Abilities and Attacks",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported. Sentence 3 is supported by M1, which lists Fatui Cicin Mages under Infantry Units.",
+     "quote": "the Mage can simply keep spawning Cicins, preventing you from killing the main threat.",
+     "sentences": [
+      {
+       "t_raw": "Cicin Mage는 Cicin을 **계속 소환**할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치친 마녀는 치친을 **계속 소환**할 수 있다."
+      },
+      {
+       "t_raw": "활과 촉매 캐릭터의 자동조준은 Cicin을 쉽게 잡게 해 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "활과 촉매 캐릭터의 자동조준은 치친을 쉽게 잡게 해 준다."
+      },
+      {
+       "t_raw": "그러나 Cicin Mage가 Cicin을 계속 소환하면, 자동조준이 오히려 주된 위협을 처치하지 못하게 만드는 방해가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 치친 마녀가 치친을 계속 소환하면, 자동조준이 오히려 주된 위협을 처치하지 못하게 만드는 방해가 된다."
+      },
+      {
+       "t_raw": "Fatui Cicin Mages는 Fatui의 보병 부대에 속한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "우인단·치친 술사는 우인단의 보병 부대에 속한다."
+      },
+      {
+       "t_raw": "Cicin이 다른 적과 함께 있을 때 성가심이 커진다는 점은 Cicin Mage가 소환을 반복하는 전투에서 더 두드러지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "치친이 다른 적과 함께 있을 때 성가심이 커진다는 점은 치친 마녀가 소환을 반복하는 전투에서 더 두드러지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Description",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Strategy",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fatui",
+       "revision": 65615,
+       "section": "Members > Infantry Units",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All sentences are supported by A1.",
+     "quote": "Cicins are small bat-like creatures that do not deal much damage or have much health, but they are hard to lock down and defeat.",
+     "sentences": [
+      {
+       "t_raw": "Cicin은 **작은 박쥐 같은 모습**을 한 생물로, 체력과 피해량이 많지 않다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치친은 **작은 박쥐 같은 모습**을 한 생물로, 체력과 피해량이 많지 않다."
+      },
+      {
+       "t_raw": "이들은 붙잡아 제압하기 어려운 편이며, 다른 적과 함께 공격할 때는 성가신 존재가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 붙잡아 제압하기 어려운 편이며, 다른 적과 함께 공격할 때는 성가신 존재가 된다."
+      },
+      {
+       "t_raw": "작은 몸집과 낮은 체력·피해량에도 제압이 까다롭다는 점이 Cicin의 특징인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "작은 몸집과 낮은 체력·피해량에도 제압이 까다롭다는 점이 치친의 특징인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Description",
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is hedged and follows from A1 and A2.",
+     "quote": "The Cicins all attack with infused Elemental energy, dealing the corresponding Elemental DMG.",
+     "sentences": [
+      {
+       "t_raw": "Cicin은 모두 원소 에너지를 두른 공격을 하며, 그에 해당하는 원소 피해를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치친은 모두 원소 에너지를 두른 공격을 하며, 그에 해당하는 원소 피해를 준다."
+      },
+      {
+       "t_raw": "또한 매우 날렵해 조준 공격으로 맞히기 어렵다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 매우 날렵해 조준 공격으로 맞히기 어렵다."
+      },
+      {
+       "t_raw": "**원소 에너지**를 이용한 공격과 날렵한 움직임에 다른 적과의 협공이 더해지면, 체력과 피해량이 많지 않아도 상대를 괴롭히기에는 충분한 존재로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**원소 에너지**를 이용한 공격과 날렵한 움직임에 다른 적과의 협공이 더해지면, 체력과 피해량이 많지 않아도 상대를 괴롭히기에는 충분한 존재로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Description",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Abilities and Attacks",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "전투와 대응",
+     "status": "accepted",
+     "note": "All sentences are supported by A3, and the sentence 2 interpretation follows from it.",
+     "quote": "Bow characters and Catalyst characters can easily defeat Cicins, thanks to autoaim.",
+     "sentences": [
+      {
+       "t_raw": "활 캐릭터와 촉매 캐릭터는 **자동조준** 덕분에 Cicin을 쉽게 처치한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "활 캐릭터와 촉매 캐릭터는 **자동조준** 덕분에 치친을 쉽게 처치한다."
+      },
+      {
+       "t_raw": "하지만 Cicin Mage와 싸울 때는 Mage가 계속 Cicin을 소환해 주된 위협을 처치하지 못하게 만드는 방해가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하지만 치친 마녀와 싸울 때는 마녀가 계속 치친을 소환해 주된 위협을 처치하지 못하게 만드는 방해가 된다."
+      },
+      {
+       "t_raw": "즉 자동조준은 Cicin을 상대로는 장점이지만, Cicin Mage전에서는 소환된 Cicin에 대응하게 만드는 부담으로 돌아오는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즉 자동조준은 치친을 상대로는 장점이지만, 치친 마녀전에서는 소환된 치친에 대응하게 만드는 부담으로 돌아오는 셈이다."
+      },
+      {
+       "t_raw": "Fischl의 Nightrider와 Midnight Phantasmagoria 같은 자동 공격 스킬은 Cicin을 빠르고 효율적으로 처리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "피슬의 밤을 순찰하는 그림자 날개와 암야의 환상 같은 자동 공격 스킬은 치친을 빠르고 효율적으로 처리한다."
+      },
+      {
+       "t_raw": "그 밖에는 Diona의 Icy Paws로 Cicin을 처리할 수 있고, Traveler의 Palm Vortex나 Jean의 Gale Blade 같은 Anemo 스킬은 Cicin을 자신 쪽으로 끌어당긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 밖에는 디오나의 꽁꽁젤리로 치친을 처리할 수 있고, 여행자의 회오리 검이나 진의 풍압검 같은 바람 스킬은 치친을 자신 쪽으로 끌어당긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Strategy",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투와 대응",
+     "latin_left": []
+    },
+    {
+     "section": "전투와 대응",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "The damage they do is negligible throughout all world levels, and having characters who heal is just as good if not better than a shield.",
+     "sentences": [
+      {
+       "t_raw": "대부분의 경우 Cicin을 빠르게 처치하는 것으로 끝나며, **방패**를 만들 수 있는 캐릭터가 있으면 Cicin이 가할 수 있는 위협은 사실상 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대부분의 경우 치친을 빠르게 처치하는 것으로 끝나며, **방패**를 만들 수 있는 캐릭터가 있으면 치친이 가할 수 있는 위협은 사실상 사라진다."
+      },
+      {
+       "t_raw": "Barbara처럼 **치유**할 수 있는 캐릭터가 있어도 Cicin이 가할 수 있는 피해는 사실상 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바바라처럼 **치유**할 수 있는 캐릭터가 있어도 치친이 가할 수 있는 피해는 사실상 사라진다."
+      },
+      {
+       "t_raw": "Cicin의 피해는 모든 월드 레벨에서 미미하고, 치유 캐릭터를 두는 것은 방패만큼 또는 그보다 좋다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치친의 피해는 모든 월드 레벨에서 미미하고, 치유 캐릭터를 두는 것은 방패만큼 또는 그보다 좋다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Strategy",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Strategy",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "전투와 대응",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The facts are supported, and sentence 3 is a reasonable interpretation.",
+     "quote": "the Mage can simply keep spawning Cicins, preventing you from killing the main threat.",
+     "sentences": [
+      {
+       "t_raw": "Fatui의 보병 부대 항목에는 **Fatui Cicin Mages**가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "우인단의 보병 부대 항목에는 **우인단·치친 술사**가 있다."
+      },
+      {
+       "t_raw": "Cicin Mage는 Cicin을 계속 소환해 자동조준 공격이 주된 위협을 향하지 못하게 만들 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치친 마녀는 치친을 계속 소환해 자동조준 공격이 주된 위협을 향하지 못하게 만들 수 있다."
+      },
+      {
+       "t_raw": "이 때문에 Cicin은 다른 적과 함께 있을 때 성가신 존재가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 때문에 치친은 다른 적과 함께 있을 때 성가신 존재가 된다."
+      },
+      {
+       "t_raw": "이름과 소환 능력을 함께 보면 Fatui Cicin Mages는 Cicin을 소환하는 Fatui의 마법사 계열로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이름과 소환 능력을 함께 보면 우인단·치친 술사는 치친을 소환하는 우인단의 마법사 계열로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Description",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Strategy",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fatui",
+       "revision": 65615,
+       "section": "Members > Infantry Units",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The full material supports the locations and handbook chapter; the interpretations are reasonable.",
+     "quote": "Hunt down an Electro Cicin Mage",
+     "sentences": [
+      {
+       "t_raw": "Yaoguang Shoal의 주목할 만한 적으로 **Electro Cicin Mage**가 등장하고, Dragonspine의 적으로는 **Fatui Cryo Cicin Mage**가 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요광 해안의 주목할 만한 적으로 **번개 치친 마녀**가 등장하고, 드래곤 스파인의 적으로는 **우인단·얼음 치친 술사**가 등장한다."
+      },
+      {
+       "t_raw": "Adventurer Handbook의 Chapter 4 경험 항목은 Electro Cicin Mage를 사냥하라고 안내한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모험 핸드북의 Chapter 4 경험 항목은 번개 치친 마녀를 사냥하라고 안내한다."
+      },
+      {
+       "t_raw": "같은 Electro Cicin Mage가 지역의 적 목록과 모험가의 사냥 안내에 함께 나오는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 번개 치친 마녀가 지역의 적 목록과 모험가의 사냥 안내에 함께 나오는 셈이다."
+      },
+      {
+       "t_raw": "원소 이름이 붙은 Cicin Mage가 Yaoguang Shoal과 Dragonspine에서 각각 적으로 등장한다는 점은 Cicin이 여러 지역에서 원소 이름을 단 마법사 적과 얽혀 있음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "원소 이름이 붙은 치친 마녀가 요광 해안과 드래곤 스파인에서 각각 적으로 등장한다는 점은 치친이 여러 지역에서 원소 이름을 단 마법사 적과 얽혀 있음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yaoguang Shoal",
+       "revision": 71415,
+       "section": "Notable Features > Enemies",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Dragonspine",
+       "revision": 132396,
+       "section": "Enemies",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Adventurer Handbook",
+       "revision": 84446,
+       "section": "Experience > Chapter 4",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Chapter"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The claim that survival tools greatly change the experience overstates the source, which describes Cicin damage as negligible even without them.",
+     "quote": "The damage they do is negligible throughout all world levels, and having characters who heal is just as good if not better than a shield.",
+     "sentences": [
+      {
+       "t_raw": "대부분은 Cicin을 빠르게 처치하는 문제로 끝나지만, 피해 자체는 모든 월드 레벨에서 **미미**한 수준이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대부분은 치친을 빠르게 처치하는 문제로 끝나지만, 피해 자체는 모든 월드 레벨에서 **미미**한 수준이다."
+      },
+      {
+       "t_raw": "방패를 만들 수 있는 캐릭터가 있으면 Cicin이 줄 수 있는 위협은 사실상 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방패를 만들 수 있는 캐릭터가 있으면 치친이 줄 수 있는 위협은 사실상 사라진다."
+      },
+      {
+       "t_raw": "회복할 수 있는 캐릭터가 있으면 받는 피해도 사실상 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "회복할 수 있는 캐릭터가 있으면 받는 피해도 사실상 사라진다."
+      },
+      {
+       "t_raw": "치유는 방패만큼이거나 그보다 나을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "치유는 방패만큼이거나 그보다 나을 수 있다."
+      },
+      {
+       "t_raw": "Cicin의 피해는 모든 월드 레벨에서 미미한 편이고, 방패 캐릭터가 있으면 위협이, 치유 캐릭터가 있으면 피해가 사실상 사라지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "치친의 피해는 모든 월드 레벨에서 미미한 편이고, 방패 캐릭터가 있으면 위협이, 치유 캐릭터가 있으면 피해가 사실상 사라지는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Strategy",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cicin",
+       "revision": 115080,
+       "section": "Strategy",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

@@ -79,8 +79,8 @@ const unitVersion = new Map([...quests, ...units.units].map((x) => [x.id, x.firs
 const order = new Map(versions.map((v) => [v.id, v.order]));
 const lastOrder = versions.length - 1;
 const firstOrder = (unitIds) => Math.min(lastOrder, ...unitIds.map((u) => order.get(unitVersion.get(u)) ?? lastOrder));
-const ART_ALL = new URL('data/generated/articles-all.json', root);
-const allArticles = existsSync(ART_ALL) ? JSON.parse(await readFile(ART_ALL, 'utf8')).articles : [];
+// one file per page (scripts/theme/article-store.mjs)
+const allArticles = (await readArticles(articlesPath(new URL('data/generated/', root).pathname, 'all'), { articles: [] })).articles;
 /** a whole-wiki article with at least one paragraph the site shows (the same test as the article files below) */
 const showsSomething = (a) => a.paragraphs.some((p) => (p.status === 'accepted' || p.status === 'trimmed') && p.sentences.some((x) => !x.dropped));
 const themePages = [{ page: theme.page, kind: 'lore' }, ...theme.nodes];
@@ -282,6 +282,7 @@ console.log(`data/runtime/articles/ ${slugs.size} pages, ${(total / 1024).toFixe
 // the bigram index. The site fetches them only when someone types a search (src/bodySearch.ts).
 import { buildSearchIndex } from './search/build-index.mjs';
 import { articlePieces } from './search/text.mjs';
+import { articlesPath, readArticles } from './theme/article-store.mjs';
 /** shard files of the search index; a query fetches one per distinct shard of its bigrams */
 const SEARCH_SHARDS = 128;
 {

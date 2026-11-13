@@ -1,0 +1,763 @@
+{
+ "node": "Police Station",
+ "articles": [
+  {
+   "node": "Police Station",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Police Station",
+     "url": "https://genshin-impact.fandom.com/wiki/Police_Station",
+     "revision": 282135
+    }
+   ],
+   "input_counts": {
+    "mentions": 3,
+    "lines": 4,
+    "web": 0
+   },
+   "input_chars": 317,
+   "input_cut": false,
+   "input_hash": "1c475521c5d2",
+   "writer": "ds-pro,kimi,or-ds",
+   "verifier": "claude-sonnet,codex-medium",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, M1, M2, Q1 and Q2, and the interpretation follows reasonably.",
+     "quote": "Although the economy isn't good these days, all the taxes that should be paid to the police station are paid regularly, regardless.",
+     "sentences": [
+      {
+       "t_raw": "Police Station은 Inazuma의 Inazuma City에 위치한 시설이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "봉행소는 이나즈마의 이나즈마성에 위치한 시설이다."
+      },
+      {
+       "t_raw": "질서와 평화를 유지하는 일을 맡아, 시민이 질서를 어지럽히는 일을 보면 찾아와 신고하는 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "질서와 평화를 유지하는 일을 맡아, 시민이 질서를 어지럽히는 일을 보면 찾아와 신고하는 곳이다."
+      },
+      {
+       "t_raw": "모든 Doushin의 상관인 Yoriki Owada가 이곳에 있으며, 경제가 좋지 않은 때에도 세금이 규칙적으로 납부되고 사람이 구금되기도 하는 등 도시의 여러 일이 이곳을 거친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모든 도신의 상관인 Yoriki Owada가 이곳에 있으며, 경제가 좋지 않은 때에도 세금이 규칙적으로 납부되고 사람이 구금되기도 하는 등 도시의 여러 일이 이곳을 거친다."
+      },
+      {
+       "t_raw": "치안 유지와 신고 접수에 세금과 구금까지 겹치는 모습은, Police Station이 Inazuma City의 행정과 일상이 함께 모이는 창구임을 보여준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "치안 유지와 신고 접수에 세금과 구금까지 겹치는 모습은, 봉행소가 이나즈마성의 행정과 일상이 함께 모이는 창구임을 보여준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Police Station",
+       "revision": 282135,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Strange Story in Konda",
+       "quest_ko": "콘다 이야기",
+       "version": "2.0",
+       "speaker": "Konda Densuke"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Flower Blooms in a Prison",
+       "quest_ko": "옥중에서 피어나는 꽃",
+       "version": "2.0",
+       "speaker": "Yoimiya"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Yoriki Owada"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported, and the interpretation is reasonable.",
+     "quote": "The Police Station is in charge of keeping order and peace. If you see anything out of order, you can come here and report it to us...",
+     "sentences": [
+      {
+       "t_raw": "경찰서는 Inazuma City에 위치한 시설이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경찰서는 이나즈마성에 위치한 시설이다."
+      },
+      {
+       "t_raw": "이곳은 **질서와 평화를 유지하는 일**을 맡고 있으며, 이상 징후를 발견하면 누구라도 와서 신고할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이곳은 **질서와 평화를 유지하는 일**을 맡고 있으며, 이상 징후를 발견하면 누구라도 와서 신고할 수 있다."
+      },
+      {
+       "t_raw": "이렇게 Inazuma City 안에 자리하면서 도시 질서와 시민의 신고를 함께 관장하는 점에서, 경찰서는 **지역 치안의 거점**으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 이나즈마성 안에 자리하면서 도시 질서와 시민의 신고를 함께 관장하는 점에서, 경찰서는 **지역 치안의 거점**으로 보인다."
+      },
+      {
+       "t_raw": "**Yoriki Owada**는 Police Station 소속 **Doushin** 모두의 상관이라고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**Yoriki Owada**는 봉행소 소속 **도신** 모두의 상관이라고 말했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Police Station",
+       "revision": 282135,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Yoriki Owada"
+     ]
+    },
+    {
+     "section": "조직과 사람들",
+     "status": "accepted",
+     "note": "The English says Owada is the superior of every Doushin. It never says he is at the top of the hierarchy, so 'apex of the ranking' is an added claim.",
+     "quote": "I'm the Yoriki of the Police Station, the superior of every Doushin here. Just call me Owada.",
+     "sentences": [
+      {
+       "t_raw": "Police Station의 Yoriki인 Owada는 모든 Doushin의 상관이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "봉행소의 Yoriki인 오와다는 모든 도신의 상관이다."
+      },
+      {
+       "t_raw": "그는 자신이 이곳 **모든 Doushin의 상관**이라 밝히며, 직함을 붙이지 말고 그냥 Owada라고 부르라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 자신이 이곳 **모든 도신의 상관**이라 밝히며, 직함을 붙이지 말고 그냥 오와다라고 부르라고 말한다."
+      },
+      {
+       "t_raw": "Police Station은 질서와 평화를 유지하는 곳으로, 질서를 벗어난 일이 있으면 누구나 와서 알릴 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "봉행소는 질서와 평화를 유지하는 곳으로, 질서를 벗어난 일이 있으면 누구나 와서 알릴 수 있다."
+      },
+      {
+       "t_raw": "상관이 모든 Doushin 위에 서 있다고 스스로 소개하는 모습과, 질서 유지와 신고 접수를 함께 맡는다는 설명을 겹쳐 보면, 이곳은 위계가 분명한 조직이면서 동시에 시민이 찾아오는 창구를 겸하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "상관이 모든 도신 위에 서 있다고 스스로 소개하는 모습과, 질서 유지와 신고 접수를 함께 맡는다는 설명을 겹쳐 보면, 이곳은 위계가 분명한 조직이면서 동시에 시민이 찾아오는 창구를 겸하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "조직과 사람들",
+     "latin_left": [
+      "Yoriki"
+     ]
+    },
+    {
+     "section": "조직과 사람들",
+     "status": "accepted",
+     "note": "Ryuuji says only that he was a constable at the Police Station. Nothing says he worked under Owada.",
+     "quote": "Someone framed me, and I was suspended from my post.",
+     "sentences": [
+      {
+       "t_raw": "Ryuuji는 한때 Police Station의 경관이었다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "류지는 한때 봉행소의 경관이었다."
+      },
+      {
+       "t_raw": "그는 누군가 자신에게 **누명**을 씌웠고, 그 일로 직위에서 정직되었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 누군가 자신에게 **누명**을 씌웠고, 그 일로 직위에서 정직되었다고 말한다."
+      },
+      {
+       "t_raw": "President Sango의 뛰어난 지능이 아니었다면 자신이 어떻게 되었을지 상상할 수 없다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "President Sango의 뛰어난 지능이 아니었다면 자신이 어떻게 되었을지 상상할 수 없다고 덧붙인다."
+      },
+      {
+       "t_raw": "스스로를 모든 Doushin의 상관이라 내세우는 Owada와, 누명 하나로 자리에서 밀려난 Ryuuji를 나란히 놓으면, 이 조직의 위계가 아래에 있는 사람에게 어떻게 작동하는지가 드러나는 듯하다.",
+       "interp": true,
+       "dropped": false,
+       "t": "스스로를 모든 도신의 상관이라 내세우는 오와다와, 누명 하나로 자리에서 밀려난 류지를 나란히 놓으면, 이 조직의 위계가 아래에 있는 사람에게 어떻게 작동하는지가 드러나는 듯하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ryuuji",
+       "revision": 311334,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "조직과 사람들",
+     "latin_left": [
+      "President Sango"
+     ]
+    },
+    {
+     "section": "치안 공지가 비추는 도시",
+     "status": "accepted",
+     "note": "The notices (A2, A3) and M2 support the facts, and the interpretation is hedged.",
+     "quote": "If you notice any suspicious outsiders entering the city, please report what you've seen immediately!",
+     "sentences": [
+      {
+       "t_raw": "**Hanamizaka Public Safety Notice**는 최근 Inazuma City에 적대적인 사람들이 나타났다며 모든 시민에게 경계를 늦추지 말라고 알린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**하나미자카 치안 공고**는 최근 이나즈마성에 적대적인 사람들이 나타났다며 모든 시민에게 경계를 늦추지 말라고 알린다."
+      },
+      {
+       "t_raw": "이어 도시로 들어오는 **의심스러운 외부인**을 발견하면 본 것을 즉시 **신고**하라고 요구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 도시로 들어오는 **의심스러운 외부인**을 발견하면 본 것을 즉시 **신고**하라고 요구한다."
+      },
+      {
+       "t_raw": "Police Station은 질서와 평화를 유지하는 곳이며, 질서를 벗어난 일이 보이면 찾아와 신고할 수 있다고 안내한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "봉행소는 질서와 평화를 유지하는 곳이며, 질서를 벗어난 일이 보이면 찾아와 신고할 수 있다고 안내한다."
+      },
+      {
+       "t_raw": "따라서 이 공지는 시민의 경계를 Police Station이 받는 신고로 연결하는 장치로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 이 공지는 시민의 경계를 봉행소가 받는 신고로 연결하는 장치로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Police Station",
+       "revision": 282135,
+       "section": "Safety Notice",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Police Station",
+       "revision": 282135,
+       "section": "Safety Notice",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "치안 공지가 비추는 도시",
+     "latin_left": []
+    },
+    {
+     "section": "치안 공지가 비추는 도시",
+     "status": "accepted",
+     "note": "Both interpretations are hedged and follow reasonably from the notices and M2.",
+     "quote": "The Police Station is in charge of keeping order and peace. If you see anything out of order, you can come here and report it to us...",
+     "sentences": [
+      {
+       "t_raw": "적대적인 사람들이 도시에 나타났다는 경고와 외부인에 대한 주의는 시민이 이상을 살피고 알리기를 전제한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "적대적인 사람들이 도시에 나타났다는 경고와 외부인에 대한 주의는 시민이 이상을 살피고 알리기를 전제한다고 볼 수 있다."
+      },
+      {
+       "t_raw": "그 경계가 향하는 곳은 Police Station이고, 질서를 벗어난 일을 신고하는 통로 역시 그곳이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 경계가 향하는 곳은 봉행소이고, 질서를 벗어난 일을 신고하는 통로 역시 그곳이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Police Station",
+       "revision": 282135,
+       "section": "Safety Notice",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Police Station",
+       "revision": 282135,
+       "section": "Safety Notice",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "치안 공지가 비추는 도시",
+     "latin_left": []
+    },
+    {
+     "section": "시민과 이용자들의 시선",
+     "status": "accepted",
+     "note": "All sentences supported by Q1 and Q3.",
+     "quote": "Although the economy isn't good these days, all the taxes that should be paid to the police station are paid regularly, regardless.",
+     "sentences": [
+      {
+       "t_raw": "Konda Densuke는 경제가 좋지 않은 때에도 Police Station에 내야 할 **세금**은 빠짐없이 정기적으로 납부된다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "콘다 덴스케는 경제가 좋지 않은 때에도 봉행소에 내야 할 **세금**은 빠짐없이 정기적으로 납부된다고 말한다."
+      },
+      {
+       "t_raw": "Xavier는 Police Station에 신고를 해야 한다면서, 일이 **재판**까지 가는 것을 원치 않겠냐고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자비에는 봉행소에 신고를 해야 한다면서, 일이 **재판**까지 가는 것을 원치 않겠냐고 말한다."
+      },
+      {
+       "t_raw": "경제가 나빠도 세금이 정기적으로 납부되고, 신고가 재판까지 갈 수 있다는 말이 나오는 만큼, Police Station은 사람들에게 일상적 의무와 분쟁의 부담이 함께 걸린 곳으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "경제가 나빠도 세금이 정기적으로 납부되고, 신고가 재판까지 갈 수 있다는 말이 나오는 만큼, 봉행소는 사람들에게 일상적 의무와 분쟁의 부담이 함께 걸린 곳으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Strange Story in Konda",
+       "quest_ko": "콘다 이야기",
+       "version": "2.0",
+       "speaker": "Konda Densuke"
+      },
+      {
+       "kind": "quest",
+       "quest": "Tatara Tales: The Last Act",
+       "quest_ko": "타타라 모노가타리・종막",
+       "version": "2.0",
+       "speaker": "Xavier"
+      }
+     ],
+     "heading": "시민과 이용자들의 시선",
+     "latin_left": []
+    },
+    {
+     "section": "시민과 이용자들의 시선",
+     "status": "accepted",
+     "note": "Supported by Q4 and Q2; the interpretation is reasonable.",
+     "quote": "I am loyal to Narukami Island, not some police station.",
+     "sentences": [
+      {
+       "t_raw": "Hanachirusato는 자신이 Narukami Island에 **충성**하며, 어떤 Police Station에 충성하는 것은 아니라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하나치루사토는 자신이 나루카미섬에 **충성**하며, 어떤 봉행소에 충성하는 것은 아니라고 말한다."
+      },
+      {
+       "t_raw": "Yoimiya는 Masakatsu가 Police Station에 구금되어 있다고 말하며, 이미 주변을 살피고 들어갈 방법을 찾았다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요이미야는 마사카츠가 봉행소에 구금되어 있다고 말하며, 이미 주변을 살피고 들어갈 방법을 찾았다고 한다."
+      },
+      {
+       "t_raw": "한 사람은 Police Station을 충성의 대상에서 밀어내고, 다른 사람은 구금된 Masakatsu를 둘러싸고 그 안으로 들어갈 방법을 찾는다는 점에서, Police Station은 사람들에게 충성을 향한 대상이라기보다 거리를 두거나 그 안으로 들어갈 길을 모색하는 장소로도 비친다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 사람은 봉행소를 충성의 대상에서 밀어내고, 다른 사람은 구금된 마사카츠를 둘러싸고 그 안으로 들어갈 방법을 찾는다는 점에서, 봉행소는 사람들에게 충성을 향한 대상이라기보다 거리를 두거나 그 안으로 들어갈 길을 모색하는 장소로도 비친다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Strange Story in Konda",
+       "quest_ko": "콘다 이야기",
+       "version": "2.0",
+       "speaker": "Hanachirusato"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Flower Blooms in a Prison",
+       "quest_ko": "옥중에서 피어나는 꽃",
+       "version": "2.0",
+       "speaker": "Yoimiya"
+      }
+     ],
+     "heading": "시민과 이용자들의 시선",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "M3 says someone framed him and does not name them; the interpretation is fair.",
+     "quote": "Someone framed me, and I was suspended from my post.",
+     "sentences": [
+      {
+       "t_raw": "Ryuuji는 Police Station의 경관이었으나 누군가에게 **누명**을 쓰고 정직되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "류지는 봉행소의 경관이었으나 누군가에게 **누명**을 쓰고 정직되었다."
+      },
+      {
+       "t_raw": "그를 누명 씌운 자가 누구인지는 드러나지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그를 누명 씌운 자가 누구인지는 드러나지 않는다."
+      },
+      {
+       "t_raw": "President Sango의 지혜가 없었다면 어떻게 될지 상상할 수 없다는 말은 이 누명이 그의 처지를 크게 흔들었음을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "President Sango의 지혜가 없었다면 어떻게 될지 상상할 수 없다는 말은 이 누명이 그의 처지를 크게 흔들었음을 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ryuuji",
+       "revision": 311334,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "President Sango"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "A3 matches; the open-question sentence is fine since the notice does not define the term.",
+     "quote": "If you notice any suspicious outsiders entering the city, please report what you've seen immediately!",
+     "sentences": [
+      {
+       "t_raw": "Hanamizaka Public Safety Notice는 의심스러운 외부인이 도시로 들어오면 즉시 보고하라고 알린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하나미자카 치안 공고는 의심스러운 외부인이 도시로 들어오면 즉시 보고하라고 알린다."
+      },
+      {
+       "t_raw": "어떤 사람이 **의심스러운 외부인**인지, 보고가 어떤 결과로 이어지는지는 열린 질문으로 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어떤 사람이 **의심스러운 외부인**인지, 보고가 어떤 결과로 이어지는지는 열린 질문으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Police Station",
+       "revision": 282135,
+       "section": "Safety Notice",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Q2 supports the facts; the reason for the detention is not given; the interpretation is reasonable.",
+     "quote": "So, Master Masakatsu is being held at the Police Station. I've already surveyed the area and found a way in.",
+     "sentences": [
+      {
+       "t_raw": "Yoimiya는 Master Masakatsu가 Police Station에 구금되어 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요이미야는 마사카츠 님이 봉행소에 구금되어 있다고 말한다."
+      },
+      {
+       "t_raw": "이미 주변을 살피고 들어갈 방법을 찾았다는 점에서, 이 구금은 그녀가 직접 움직일 만큼 중요한 사안으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이미 주변을 살피고 들어갈 방법을 찾았다는 점에서, 이 구금은 그녀가 직접 움직일 만큼 중요한 사안으로 보인다."
+      },
+      {
+       "t_raw": "Masakatsu가 왜 구금되었는지는 밝혀지지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마사카츠가 왜 구금되었는지는 밝혀지지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Flower Blooms in a Prison",
+       "quest_ko": "옥중에서 피어나는 꽃",
+       "version": "2.0",
+       "speaker": "Yoimiya"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Q4 and M2 support the facts; the interpretation is hedged and reasonable.",
+     "quote": "I am loyal to Narukami Island, not some police station.",
+     "sentences": [
+      {
+       "t_raw": "Hanachirusato는 자신이 Narukami Island에 충성하며, Police Station을 **어떤 Police Station**이라 부르며 충성의 대상으로 두지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하나치루사토는 자신이 나루카미섬에 충성하며, 봉행소를 **어떤 봉행소**이라 부르며 충성의 대상으로 두지 않는다."
+      },
+      {
+       "t_raw": "Police Station이 질서와 평화를 맡는 시설이라는 점을 함께 보면, 이 말은 섬 전체와 그 시설을 굳이 구분해 부른 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "봉행소가 질서와 평화를 맡는 시설이라는 점을 함께 보면, 이 말은 섬 전체와 그 시설을 굳이 구분해 부른 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Strange Story in Konda",
+       "quest_ko": "콘다 이야기",
+       "version": "2.0",
+       "speaker": "Hanachirusato"
+      },
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported. The Xavier line matches Q3. The two interpretations follow from M2 and Q3/Q4 and read as interpretation.",
+     "quote": "I shall have to lodge a report at the police station. Surely you don't want this to go to court!?",
+     "sentences": [
+      {
+       "t_raw": "Xavier는 Police Station에 신고를 올리겠다며, 이런 일이 **재판**까지 가는 것을 원하지 않겠느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자비에는 봉행소에 신고를 올리겠다며, 이런 일이 **재판**까지 가는 것을 원하지 않겠느냐고 묻는다."
+      },
+      {
+       "t_raw": "신고를 받는 곳이라는 임무와 겹쳐 보면, 이 말은 분쟁을 공식 절차로 끌고 가겠다는 압박으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "신고를 받는 곳이라는 임무와 겹쳐 보면, 이 말은 분쟁을 공식 절차로 끌고 가겠다는 압박으로 읽힌다."
+      },
+      {
+       "t_raw": "Hanachirusato가 충성의 대상에서 Police Station을 밀어낸 반면, Xavier는 신고와 재판을 앞세워 압박하는 대비가 선명하다.",
+       "interp": true,
+       "dropped": false,
+       "t": "하나치루사토가 충성의 대상에서 봉행소를 밀어낸 반면, 자비에는 신고와 재판을 앞세워 압박하는 대비가 선명하다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Tatara Tales: The Last Act",
+       "quest_ko": "타타라 모노가타리・종막",
+       "version": "2.0",
+       "speaker": "Xavier"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Strange Story in Konda",
+       "quest_ko": "콘다 이야기",
+       "version": "2.0",
+       "speaker": "Hanachirusato"
+      },
+      {
+       "kind": "wiki",
+       "page": "Owada",
+       "revision": 306112,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of the Xavier line.",
+     "t_raw": "경찰서에 신고를 해야겠소. 재판까지 가고 싶진 않으시겠지!?",
+     "en": "I shall have to lodge a report at the police station. Surely you don't want this to go to court!?",
+     "speaker": "Xavier",
+     "source": {
+      "kind": "quest",
+      "quest": "Tatara Tales: The Last Act",
+      "quest_ko": "타타라 모노가타리・종막",
+      "version": "2.0",
+      "speaker": "Xavier"
+     },
+     "t": "경찰서에 신고를 해야겠소. 재판까지 가고 싶진 않으시겠지!?",
+     "speaker_ko": "자비에"
+    },
+    {
+     "section": "치안 공지가 비추는 도시",
+     "status": "accepted",
+     "note": "Faithful translation of the Xavier line.",
+     "t_raw": "나는 Police Station에 신고를 접수해야겠군. 설마 재판까지 가기를 바라지는 않겠지!?",
+     "en": "I shall have to lodge a report at the police station. Surely you don't want this to go to court!?",
+     "speaker": "Xavier",
+     "source": {
+      "kind": "quest",
+      "quest": "Tatara Tales: The Last Act",
+      "quest_ko": "타타라 모노가타리・종막",
+      "version": "2.0",
+      "speaker": "Xavier"
+     },
+     "t": "나는 봉행소에 신고를 접수해야겠군. 설마 재판까지 가기를 바라지는 않겠지!?",
+     "speaker_ko": "자비에"
+    },
+    {
+     "section": "시민과 이용자들의 시선",
+     "status": "accepted",
+     "note": "Faithful translation of the Hanachirusato line.",
+     "t_raw": "나는 Narukami Island에 충성하지, 어떤 Police Station에 충성하는 것이 아니다.",
+     "en": "I am loyal to Narukami Island, not some police station.",
+     "speaker": "Hanachirusato",
+     "source": {
+      "kind": "quest",
+      "quest": "A Strange Story in Konda",
+      "quest_ko": "콘다 이야기",
+      "version": "2.0",
+      "speaker": "Hanachirusato"
+     },
+     "t": "나는 나루카미섬에 충성하지, 어떤 봉행소에 충성하는 것이 아니다.",
+     "speaker_ko": "하나치루사토"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of the Yoimiya line.",
+     "t_raw": "그러니까 Master Masakatsu가 Police Station에 구금되어 있다는 거군요. 저는 이미 주변을 살펴보고 들어갈 방법을 찾았습니다.",
+     "en": "So, Master Masakatsu is being held at the Police Station. I've already surveyed the area and found a way in.",
+     "speaker": "Yoimiya",
+     "source": {
+      "kind": "quest",
+      "quest": "A Flower Blooms in a Prison",
+      "quest_ko": "옥중에서 피어나는 꽃",
+      "version": "2.0",
+      "speaker": "Yoimiya"
+     },
+     "t": "그러니까 마사카츠 님이 봉행소에 구금되어 있다는 거군요. 저는 이미 주변을 살펴보고 들어갈 방법을 찾았습니다.",
+     "speaker_ko": "요이미야"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of the Hanachirusato line.",
+     "t_raw": "나는 Narukami Island에 충성하며, 어떤 Police Station에 충성하는 것은 아니다.",
+     "en": "I am loyal to Narukami Island, not some police station.",
+     "speaker": "Hanachirusato",
+     "source": {
+      "kind": "quest",
+      "quest": "A Strange Story in Konda",
+      "quest_ko": "콘다 이야기",
+      "version": "2.0",
+      "speaker": "Hanachirusato"
+     },
+     "t": "나는 나루카미섬에 충성하며, 어떤 봉행소에 충성하는 것은 아니다.",
+     "speaker_ko": "하나치루사토"
+    }
+   ]
+  }
+ ]
+}

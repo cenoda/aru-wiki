@@ -32,7 +32,8 @@ export async function shownRecords(theme) {
   const { readFile } = await import('node:fs/promises');
   const gen = new URL(`../../data/generated/`, import.meta.url).pathname;
   const read = async (f) => { try { return JSON.parse(await readFile(gen + f, 'utf8')); } catch (e) { if (e.code === 'ENOENT') return {}; throw e; } };
-  const [s, a, r] = await Promise.all([read(`snapshots-${theme}.json`), read(`articles-${theme}.json`), read(`reveals-${theme}.json`)]);
+  const { articlesPath, readArticles } = await import('./article-store.mjs');
+  const [s, a, r] = await Promise.all([read(`snapshots-${theme}.json`), readArticles(articlesPath(gen, theme), {}), read(`reveals-${theme}.json`)]);
   return [
     ...(s.snapshots ?? []),
     ...(a.articles ?? []).map((x) => ({ node: x.node, points: x.paragraphs.filter((p) => ['accepted', 'trimmed'].includes(p.status)).map((p) => ({

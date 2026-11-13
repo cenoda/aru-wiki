@@ -4,7 +4,8 @@
 // Two sources:
 // - approved reader edits (data/manual/reader-edits.json): time = `approved_at` (review.mjs writes it
 //   since 2026-11-13), else the `approved` date alone.
-// - generated articles: the git history of data/generated/articles-{khaenriah,all}.json. For each
+// - generated articles: the git history of data/generated/articles-khaenriah.json and the whole-wiki articles
+//   (articles-all.json, since 2026-11-13 the folder articles-all/ with one file per page). For each
 //   commit that touched them, a page's state is its shown articles as {from_version: input_hash}.
 //   A page that appears is a new page, a new from_version is added text, a changed input_hash is a
 //   rewrite (the writer read different sources). Edits that keep the input (name fixes) are not
@@ -12,9 +13,12 @@
 //   Each file version's state is cached by its git blob id in .cache/recent-changes/.
 // Nothing about the people involved goes in, beyond the nickname a reader chose to show.
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 
 const FILES = ['data/generated/articles-khaenriah.json', 'data/generated/articles-all.json'];
+// since 2026-11-13 the whole wiki is one file per page (scripts/theme/article-store.mjs); before that one file,
+// for one commit kept in Git LFS (the blob is then a pointer, read through `git lfs smudge`)
+const ALL_DIR = 'data/generated/articles-all';
 
 /** a whole-wiki article with at least one paragraph the site shows (build-runtime-data.mjs showsSomething) */
 export const showsSomething = (a) => (a.paragraphs ?? []).some((p) => (p.status === 'accepted' || p.status === 'trimmed') && p.sentences.some((x) => !x.dropped));
@@ -51,29 +55,50 @@ const git = (root, args) => execFileSync('git', args, { cwd: root, encoding: 'ut
  */
 export function articleHistory(rootPath, current, { cacheDir = `${rootPath}/.cache/recent-changes` } = {}) {
   let log;
-  try { log = git(rootPath, ['log', '--reverse', '--format=%H %cI', '--', ...FILES]).trim(); } catch { return []; }
+  try { log = git(rootPath, ['log', '--reverse', '--format=%H %cI', '--', ...FILES, ALL_DIR]).trim(); } catch { return []; }
   mkdirSync(cacheDir, { recursive: true });
-  const sigOf = (sha, file) => {
-    let blob;
-    try { blob = git(rootPath, ['rev-parse', `${sha}:${file}`]).trim(); } catch { return {}; } // not there yet
+  const text = (blob) => {
+    const t = git(rootPath, ['cat-file', 'blob', blob]);
+    return t.startsWith('version https://git-lfs') ? execFileSync('git', ['lfs', 'smudge'], { cwd: rootPath, input: t, encoding: 'utf8', maxBuffer: 256 * 1024 * 1024, stdio: ['pipe', 'pipe', 'ignore'] }) : t;
+  };
+  const sigOfBlob = (blob) => {
     const cached = `${cacheDir}/${blob}.json`;
     if (existsSync(cached)) return JSON.parse(readFileSync(cached, 'utf8'));
     let sig = {};
-    try { sig = signature(JSON.parse(git(rootPath, ['cat-file', 'blob', blob])).articles); } catch { /* unreadable: empty */ }
+    try { sig = signature(JSON.parse(text(blob)).articles); } catch { /* unreadable: empty */ }
     writeFileSync(cached, JSON.stringify(sig));
     return sig;
+  };
+  const sigOf = (sha, file) => {
+    let blob;
+    try { blob = git(rootPath, ['rev-parse', `${sha}:${file}`]).trim(); } catch { return {}; } // not there yet
+    return sigOfBlob(blob);
+  };
+  // the page folder at that commit: every page file's signature, merged (cached per file blob)
+  const sigOfDir = (sha) => {
+    let tree;
+    try { tree = git(rootPath, ['ls-tree', `${sha}:${ALL_DIR}`]).trim(); } catch { return null; } // no folder yet
+    const out = {};
+    for (const line of tree ? tree.split('\n') : []) {
+      const [info, name] = line.split('\t');
+      if (name === '_meta.json' || !name.endsWith('.json')) continue;
+      Object.assign(out, sigOfBlob(info.split(' ')[2]));
+    }
+    return out;
   };
   const rows = [];
   let prev = {};
   for (const line of log ? log.split('\n') : []) {
     const [sha, when] = line.split(' ');
     const t = new Date(when).toISOString();
-    const next = mergeState(sigOf(sha, FILES[0]), sigOf(sha, FILES[1]));
+    const next = mergeState(sigOf(sha, FILES[0]), sigOfDir(sha) ?? sigOf(sha, FILES[1]));
     rows.push(...diffStates(prev, next, t));
     prev = next;
   }
   const work = mergeState(signature(current[0]), signature(current[1]));
-  const mtimes = FILES.filter((f) => existsSync(`${rootPath}/${f}`)).map((f) => statSync(`${rootPath}/${f}`).mtimeMs);
+  const dir = `${rootPath}/${ALL_DIR}`;
+  const mtimes = [...FILES.map((f) => `${rootPath}/${f}`), ...(existsSync(dir) ? readdirSync(dir).map((f) => `${dir}/${f}`) : [])]
+    .filter((f) => existsSync(f)).map((f) => statSync(f).mtimeMs);
   if (mtimes.length) rows.push(...diffStates(prev, work, new Date(Math.max(...mtimes)).toISOString()));
   return rows;
 }

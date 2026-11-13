@@ -1,0 +1,820 @@
+{
+ "node": "Garde",
+ "articles": [
+  {
+   "node": "Garde",
+   "from_version": "4.3",
+   "cutoff": "2024-01-30T00:00:00Z",
+   "input": [
+    {
+     "page": "Garde",
+     "url": "https://genshin-impact.fandom.com/wiki/Garde",
+     "revision": 1459514
+    }
+   ],
+   "input_counts": {
+    "mentions": 4,
+    "lines": 7,
+    "web": 0
+   },
+   "input_chars": 236,
+   "input_cut": false,
+   "input_hash": "c0889d2dce97",
+   "writer": "ds,kimi,ds-pro",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All supported by the Garde, Marcel and Heavenly Principles passages.",
+     "quote": "Gardes are the officers who are in charge of maintaining the security in Fontaine regions including Court of Fontaine along with the Gardemeks.",
+     "sentences": [
+      {
+       "t_raw": "Garde는 Fontaine의 여러 지역, 그중에서도 Court of Fontaine의 치안 유지를 맡는 장교들로, **Gardemek**과 함께 근무하며 **Maison Gardiennage**와 연결되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경비대원은 폰타인의 여러 지역, 그중에서도 폰타인성의 치안 유지를 맡는 장교들로, **경비 장치**와 함께 근무하며 **법률 집행청**과 연결되어 있다."
+      },
+      {
+       "t_raw": "그중 Garde Vaughn은 Marcel이 꾸민 계획에 가담했다가 재판정에서 자신의 상관을 밝히려 했고, Marcel이 원격으로 부은 **Primordial Seawater**에 녹아 법정 관객들 앞에서 사라졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그중 경비대원 본은 마르셀이 꾸민 계획에 가담했다가 재판정에서 자신의 상관을 밝히려 했고, 마르셀이 원격으로 부은 **원시 모태 바다의 물**에 녹아 법정 관객들 앞에서 사라졌다."
+      },
+      {
+       "t_raw": "예언에 대한 소문은 Marcel이 연쇄 실종 사건에서 Primordial Water를 사용한 일과 Garde가 사람들 앞에서 녹아 사라진 일을 계기로 대중 사이에서 구체화되기 시작했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "예언에 대한 소문은 마르셀이 연쇄 실종 사건에서 원천의 물을 사용한 일과 경비대원이 사람들 앞에서 녹아 사라진 일을 계기로 대중 사이에서 구체화되기 시작했다."
+      },
+      {
+       "t_raw": "도시의 치안을 맡던 인력이 법정에서 공개적으로 사라진 사건이 시민들이 예언을 실감하는 계기로 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도시의 치안을 맡던 인력이 법정에서 공개적으로 사라진 사건이 시민들이 예언을 실감하는 계기로 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Garde",
+       "revision": 1459514,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Marcel (Fontaine)",
+       "revision": 1396709,
+       "section": "Story > Present Day",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Heavenly Principles",
+       "revision": 1407287,
+       "section": "Story > Present Day",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Masquerade of the Guilty"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The English gives no basis for 'moving between courtroom and streets', a 'pivotal role', or 'everyday order'. It only says Gardes maintain security in Fontaine regions including the Court of Fontaine.",
+     "quote": "Gardes are the officers who are in charge of maintaining the security in Fontaine regions including Court of Fontaine along with the Gardemeks.",
+     "sentences": [
+      {
+       "t_raw": "Fontaine의 치안을 책임지는 Garde는 Maison Gardiennage 산하의 부서로, Court of Fontaine를 비롯한 Fontaine 각지의 질서를 Gardemek과 함께 지킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인의 치안을 책임지는 경비대원은 법률 집행청 산하의 부서로, 폰타인성을 비롯한 폰타인 각지의 질서를 경비 장치와 함께 지킨다."
+      },
+      {
+       "t_raw": "Garde들은 공공 안전을 맡은 이들인 만큼, Fontaine의 여러 지역—Court of Fontaine 포함—에서 Gardemek과 함께 보안을 유지하는 장교들이며 Maison Gardiennage에 소속되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "경비대원들은 공공 안전을 맡은 이들인 만큼, 폰타인의 여러 지역—폰타인성 포함—에서 경비 장치와 함께 보안을 유지하는 장교들이며 법률 집행청에 소속되어 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Garde",
+       "revision": 1459514,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Maison Gardiennage",
+       "revision": 1351204,
+       "section": "Departments",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Matches the Gardemek passage; the interpretation follows from it.",
+     "quote": "Gardemeks owned by the Maison Gardiennage are pre-programmed to complete tasks assigned to them and thus cannot be fully controlled by a human Garde.",
+     "sentences": [
+      {
+       "t_raw": "Gardemek은 일반 Clockwork Meka와 달리 부유한 시민이 사적으로 소유할 수도 있지만, Maison Gardiennage 소유의 Gardemek은 미리 입력된 임무를 수행하도록 프로그래밍되어 있어 인간 Garde가 완전히 조종할 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경비 장치는 일반 태엽 장치와 달리 부유한 시민이 사적으로 소유할 수도 있지만, 법률 집행청 소유의 경비 장치는 미리 입력된 임무를 수행하도록 프로그래밍되어 있어 인간 경비대원이 완전히 조종할 수 없다."
+      },
+      {
+       "t_raw": "이러한 제약 속에서 각 Gardemek은 **시리얼 넘버**를 통해 책임 소재를 추적할 수 있도록 관리된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이러한 제약 속에서 각 경비 장치는 **시리얼 넘버**를 통해 책임 소재를 추적할 수 있도록 관리된다."
+      },
+      {
+       "t_raw": "따라서 Garde는 Gardemek과 함께 배치되지만, 기계의 개인 주인이 아닌 Maison Gardiennage의 임무 체계 안에서 움직이는 존재로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 경비대원은 경비 장치와 함께 배치되지만, 기계의 개인 주인이 아닌 법률 집행청의 임무 체계 안에서 움직이는 존재로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Garde",
+       "revision": 1459514,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Gardemek",
+       "revision": 1347718,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Fontaine",
+     "status": "accepted",
+     "note": "Matches the Marcel passage.",
+     "quote": "He planned to dissolve a Fontainian painter named Halsey and let Lyney take the blame.",
+     "sentences": [
+      {
+       "t_raw": "Traveler가 Fontaine에 도착한 뒤, Marcel은 Opera Epiclese에서 열린 Lyney와 Lynette의 마술 쇼에 차기 희생자를 노리고 참석했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 폰타인에 도착한 뒤, 마르셀은 에피클레스 오페라 하우스에서 열린 리니와 리넷의 마술 쇼에 차기 희생자를 노리고 참석했다."
+      },
+      {
+       "t_raw": "그는 Fontaine의 화가 Halsey를 녹여 없애고 Lyney에게 책임을 뒤집어씌울 계획을 세웠으며, 소품 담당 Cowell과 **Garde Vaughn**에게 그 일을 돕도록 맡겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 폰타인의 화가 핼시를 녹여 없애고 리니에게 책임을 뒤집어씌울 계획을 세웠으며, 소품 담당 코웰과 **경비대원 본**에게 그 일을 돕도록 맡겼다."
+      },
+      {
+       "t_raw": "그러나 그들 중 누구도 Halsey가 실제로는 Mondstadt 출신 도둑 Liliane이라는 사실을 알지 못했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 그들 중 누구도 핼시가 실제로는 몬드 출신 도둑 릴리앤이라는 사실을 알지 못했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Marcel (Fontaine)",
+       "revision": 1396709,
+       "section": "Story > Present Day",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 폰타인",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Fontaine",
+     "status": "trimmed",
+     "note": "Vaughn is listed as Former Personnel (killed), not retired. Only Nolette and Thurel are marked retired, so calling him a retiree is wrong.",
+     "quote": "Vaughn was about to reveal his boss's identity during the trial, but Marcel remotely poured the Primordial Seawater on him, dissolving him in front of the court audience.",
+     "sentences": [
+      {
+       "t_raw": "Liliane은 첫 Garde가 현장에 도착한 뒤 빠져나와 오페라 하우스 안에 계속 숨어 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "릴리앤은 첫 경비대원이 현장에 도착한 뒤 빠져나와 오페라 하우스 안에 계속 숨어 있었다."
+      },
+      {
+       "t_raw": "Liliane이 Cowell을 제압했고, Cowell은 이어서 사보타주된 물탱크에 깔렸으며, Vaughn의 속임수도 드러났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "릴리앤이 코웰을 제압했고, 코웰은 이어서 사보타주된 물탱크에 깔렸으며, 본의 속임수도 드러났다."
+      },
+      {
+       "t_raw": "**재판**에서 Neuvillette가 Vaughn에게 설명을 요구하자, Vaughn은 자신의 상사가 누구인지 밝히려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**재판**에서 느비예트가 본에게 설명을 요구하자, 본은 자신의 상사가 누구인지 밝히려 했다."
+      },
+      {
+       "t_raw": "그러나 Marcel이 원격으로 그에게 Primordial Seawater를 부었고, Vaughn은 법정 방청객 앞에서 녹아 사라졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 마르셀이 원격으로 그에게 원시 모태 바다의 물을 부었고, 본은 법정 방청객 앞에서 녹아 사라졌다."
+      },
+      {
+       "t_raw": "Vaughn은 퇴직자로 기록되며 killed로 남는다.",
+       "interp": false,
+       "dropped": true,
+       "t": "본은 퇴직자로 기록되며 killed로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Liliane"
+      },
+      {
+       "kind": "wiki",
+       "page": "Marcel (Fontaine)",
+       "revision": 1396709,
+       "section": "Story > Present Day",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Neuvillette"
+      },
+      {
+       "kind": "wiki",
+       "page": "Garde",
+       "revision": 1459514,
+       "section": "Former Personnel",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 폰타인",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Fontaine",
+     "status": "accepted",
+     "note": "Supported by the Heavenly Principles passage and Paimon's line; the interpretation is reasonable.",
+     "quote": "Wait, didn't that Garde guy who turned into water also mention that the Primordial Water could be used to produce some kind of potion?",
+     "sentences": [
+      {
+       "t_raw": "이후 일반 대중은 연속 실종 사건에서 Marcel이 Primordial Water를 사용한 일과, Vaughn이 자신의 신원을 누설하지 못하도록 대중 앞에서 녹아 사라진 일을 통해 Primordial Water가 사람을 녹일 수 있음을 알게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 일반 대중은 연속 실종 사건에서 마르셀이 원천의 물을 사용한 일과, 본이 자신의 신원을 누설하지 못하도록 대중 앞에서 녹아 사라진 일을 통해 원천의 물이 사람을 녹일 수 있음을 알게 되었다."
+      },
+      {
+       "t_raw": "그 결과 예언에 관한 소문이 나타나기 시작했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 결과 예언에 관한 소문이 나타나기 시작했다."
+      },
+      {
+       "t_raw": "Paimon은 물이 된 Garde가 **Primordial Water**로 어떤 종류의 약을 만들 수 있다고 말했는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 물이 된 경비대원이 **원천의 물**로 어떤 종류의 약을 만들 수 있다고 말했는지 묻는다."
+      },
+      {
+       "t_raw": "이처럼 Vaughn의 죽음은 Fontaine 사회가 Primordial Water의 위험을 인식하고 예언 소문이 나타나는 계기로 남았다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 본의 죽음은 폰타인 사회가 원천의 물의 위험을 인식하고 예언 소문이 나타나는 계기로 남았다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Heavenly Principles",
+       "revision": 1407287,
+       "section": "Story > Present Day",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Masquerade of the Guilty"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 폰타인",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Both sentences match A1 and A4.",
+     "quote": "Gardes are the officers who are in charge of maintaining the security in Fontaine regions including Court of Fontaine along with the Gardemeks.",
+     "sentences": [
+      {
+       "t_raw": "Garde는 Court of Fontaine을 비롯한 Fontaine 지역의 치안을 Gardemek과 함께 맡는 장교이며, Maison Gardiennage와 연결되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경비대원은 폰타인성을 비롯한 폰타인 지역의 치안을 경비 장치와 함께 맡는 장교이며, 법률 집행청과 연결되어 있다."
+      },
+      {
+       "t_raw": "Vaughn은 퇴직자로 분류되어 있으며, 사망한 것으로 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "본은 퇴직자로 분류되어 있으며, 사망한 것으로 적혀 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Garde",
+       "revision": 1459514,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Garde",
+       "revision": 1459514,
+       "section": "Former Personnel",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All details are in M3.",
+     "quote": "Vaughn was about to reveal his boss's identity during the trial, but Marcel remotely poured the Primordial Seawater on him, dissolving him in front of the court audience.",
+     "sentences": [
+      {
+       "t_raw": "Marcel는 Lyney와 Lynette의 마술 공연에서 다음 희생자를 노렸고, 화가 Halsey를 녹여 Lyney에게 누명을 씌우려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르셀은 리니와 리넷의 마술 공연에서 다음 희생자를 노렸고, 화가 핼시를 녹여 리니에게 누명을 씌우려 했다."
+      },
+      {
+       "t_raw": "이 계획에는 Cowell과 Garde Vaughn이 동원되었지만, Halsey가 Mondstadt 출신 도둑 Liliane이었다는 사실은 그들 누구도 몰랐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 계획에는 코웰과 경비대원 본이 동원되었지만, 핼시가 몬드 출신 도둑 릴리앤이었다는 사실은 그들 누구도 몰랐다."
+      },
+      {
+       "t_raw": "계획이 틀어지자 Vaughn의 속임수도 드러났고, 법정에서 자신의 상사가 누구인지 밝히려는 순간 Marcel가 원격으로 Primordial Seawater를 부어 그를 관객 앞에서 녹여 버렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "계획이 틀어지자 본의 속임수도 드러났고, 법정에서 자신의 상사가 누구인지 밝히려는 순간 마르셀이 원격으로 원시 모태 바다의 물을 부어 그를 관객 앞에서 녹여 버렸다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Marcel (Fontaine)",
+       "revision": 1396709,
+       "section": "Story > Present Day",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The statement matches Q6. The interpretation is hedged and reasonable.",
+     "quote": "I'll see what I can do for you and Spina di Rosula when it comes to Garde stuff, but don't go advertising it to everyone else, haha.",
+     "sentences": [
+      {
+       "t_raw": "Thierry는 Garde 관련 일에서 Spina di Rosula를 위해 힘써 보겠다고 말하면서, 그 사실을 모두에게 알리지는 말라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "티에리는 경비대원 관련 일에서 가시 장미회를 위해 힘써 보겠다고 말하면서, 그 사실을 모두에게 알리지는 말라고 한다."
+      },
+      {
+       "t_raw": "Garde가 Maison Gardiennage 소속이라는 점과 이런 대화를 함께 놓고 보면, Garde 문제는 공식 조직의 울타리 안에만 머물지 않고 Spina di Rosula 같은 세력과도 맞닿아 있었던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "경비대원이 법률 집행청 소속이라는 점과 이런 대화를 함께 놓고 보면, 경비대원 문제는 공식 조직의 울타리 안에만 머물지 않고 가시 장미회 같은 세력과도 맞닿아 있었던 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Garde",
+       "revision": 1459514,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Thierry"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by M3 and M4. The interpretation is reasonable.",
+     "quote": "rumors of the prophecy began to manifest after the general public learned about the Primordial Water that could dissolve them",
+     "sentences": [
+      {
+       "t_raw": "법정이 지켜보는 앞에서 Garde Vaughn이 녹아 사라진 일과 연쇄 실종 사건에서 Marcel이 Primordial Water를 쓴 일은, Fontaine 사람들이 **자신을 녹일 수 있는 물**의 존재를 알게 되는 계기가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "법정이 지켜보는 앞에서 경비대원 본이 녹아 사라진 일과 연쇄 실종 사건에서 마르셀이 원천의 물을 쓴 일은, 폰타인 사람들이 **자신을 녹일 수 있는 물**의 존재를 알게 되는 계기가 되었다."
+      },
+      {
+       "t_raw": "이 사실이 퍼진 뒤로 예언에 관한 소문이 나타나기 시작했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 사실이 퍼진 뒤로 예언에 관한 소문이 나타나기 시작했다."
+      },
+      {
+       "t_raw": "자신의 신원이 드러나지 않게 하려고 쓴 물이 법정 방청객이 보는 자리에서 쓰였다는 점에서, 이 사건은 물이 지닌 위험을 널리 알린 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자신의 신원이 드러나지 않게 하려고 쓴 물이 법정 방청객이 보는 자리에서 쓰였다는 점에서, 이 사건은 물이 지닌 위험을 널리 알린 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Marcel (Fontaine)",
+       "revision": 1396709,
+       "section": "Story > Present Day",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Heavenly Principles",
+       "revision": 1407287,
+       "section": "Story > Present Day",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Masquerade of the Guilty"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches Q1. The interpretation is reasonable.",
+     "quote": "Wait, didn't that Garde guy who turned into water also mention that the Primordial Water could be used to produce some kind of potion?",
+     "sentences": [
+      {
+       "t_raw": "물로 변한 Garde가 Primordial Water로 어떤 종류의 물약을 만들 수 있다고 언급했다는 점을 Paimon이 되짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물로 변한 경비대원이 원천의 물로 어떤 종류의 물약을 만들 수 있다고 언급했다는 점을 페이몬이 되짚는다."
+      },
+      {
+       "t_raw": "사람을 녹이는 성질과는 별개로, 이 물이 **물약의 재료**가 될 수 있다는 가능성까지 이야기가 닿은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사람을 녹이는 성질과는 별개로, 이 물이 **물약의 재료**가 될 수 있다는 가능성까지 이야기가 닿은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "wiki",
+       "page": "Heavenly Principles",
+       "revision": 1407287,
+       "section": "Story > Present Day",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Masquerade of the Guilty"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The English says rumors of the prophecy spread after the public learned of the water. It does not say that questions about the water's use spread, so sentence 2 adds an unsupported claim.",
+     "quote": "Vaughn was about to reveal his boss's identity during the trial, but Marcel remotely poured the Primordial Seawater on him, dissolving him in front of the court audience.",
+     "sentences": [
+      {
+       "t_raw": "Marcel은 연쇄 실종 사건에서 이 물을 썼고, Vaughn이 자신의 상사를 밝히려 하자 법정에서 원격으로 그에게 물을 부었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르셀은 연쇄 실종 사건에서 이 물을 썼고, 본이 자신의 상사를 밝히려 하자 법정에서 원격으로 그에게 물을 부었다."
+      },
+      {
+       "t_raw": "한 사람이 같은 물을 실종 사건과 법정에서의 입막음에 나란히 쓴 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 사람이 같은 물을 실종 사건과 법정에서의 입막음에 나란히 쓴 셈이다."
+      },
+      {
+       "t_raw": "Marcel이 Primordial Water를 사용한 사건과 Vaughn이 대중 앞에서 소멸한 일을 계기로 Primordial Water의 존재가 널리 알려진 뒤 예언에 대한 소문이 퍼지기 시작한 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "마르셀이 원천의 물을 사용한 사건과 본이 대중 앞에서 소멸한 일을 계기로 원천의 물의 존재가 널리 알려진 뒤 예언에 대한 소문이 퍼지기 시작한 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Marcel (Fontaine)",
+       "revision": 1396709,
+       "section": "Story > Present Day",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Heavenly Principles",
+       "revision": 1407287,
+       "section": "Story > Present Day",
+       "paragraph": "M4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Masquerade of the Guilty"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported: Nolette and Thurel are both listed as retired former personnel, and sentence 2 is a reasonable interpretation.",
+     "quote": "Nolette (retired)",
+     "sentences": [
+      {
+       "t_raw": "Garde 출신 인물 가운데 퇴직자로는 Nolette와 Thurel이 이름을 올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경비대원 출신 인물 가운데 퇴직자로는 놀레트와 튀렐이 이름을 올린다."
+      },
+      {
+       "t_raw": "두 사람은 모두 퇴직자로 기록되어, 이름과 퇴직 사실이 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 사람은 모두 퇴직자로 기록되어, 이름과 퇴직 사실이 남아 있다."
+      },
+      {
+       "t_raw": "퇴직자 두 사람의 이름이 나란히 적힌 대목은 Garde의 인적 흔적을 보여주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "퇴직자 두 사람의 이름이 나란히 적힌 대목은 경비대원의 인적 흔적을 보여주는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Garde",
+       "revision": 1459514,
+       "section": "Former Personnel",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Garde",
+       "revision": 1459514,
+       "section": "Former Personnel",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The quotes match Q3, Q4 and Q5. The interpretation in sentence 2 is hedged and follows from them.",
+     "quote": "We paid top Mora to hire a professional artist for this, and while the finished product is a little... um, avant-garde...",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 아무도 이해하지 못하는 것이 'too avant-garde'일 수 있다고 말하고, Kuki Shinobu는 top Mora를 주고 고른 전문 예술가의 작품을 'a little... um, avant-garde'라고 평한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 아무도 이해하지 못하는 것이 '너무 아방가르드'일 수 있다고 말하고, 쿠키 시노부는 최고급 모라를 주고 고른 전문 예술가의 작품을 '조금... 음, 아방가르드'라고 평한다.",
+       "polish": {
+        "from": "페이몬은 아무도 이해하지 못하는 것이 'too avant-garde'일 수 있다고 말하고, 쿠키 시노부는 top 모라를 주고 고른 전문 예술가의 작품을 'a little... um, avant-garde'라고 평한다.",
+        "text": "페이몬은 아무도 이해하지 못하는 것이 '너무 아방가르드'일 수 있다고 말하고, 쿠키 시노부는 최고급 모라를 주고 고른 전문 예술가의 작품을 '조금... 음, 아방가르드'라고 평한다.",
+        "by": "claude-sonnet"
+       }
+      },
+      {
+       "t_raw": "Yae Miko는 '그녀'의 경우에는 'probably a little too avant-garde'일 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야에 미코는 '그녀'의 경우에는 '아마 조금 너무 아방가르드'일 수 있다고 말한다.",
+       "polish": {
+        "from": "야에 미코는 '그녀'의 경우에는 'probably a little too avant-garde'일 수 있다고 말한다.",
+        "text": "야에 미코는 '그녀'의 경우에는 '아마 조금 너무 아방가르드'일 수 있다고 말한다.",
+        "by": "claude-sonnet"
+       }
+      },
+      {
+       "t_raw": "세 대화에서 avant-garde는 쉽게 이해되기 어려운 대상에 붙는 말로 쓰였고, Garde라는 이름과 철자가 겹쳐 여담의 말장난처럼 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "세 대화에서 아방가르드는 쉽게 이해되기 어려운 대상에 붙는 말로 쓰였고, 경비대원라는 이름과 철자가 겹쳐 여담의 말장난처럼 남는다.",
+       "polish": {
+        "from": "세 대화에서 avant-garde는 쉽게 이해되기 어려운 대상에 붙는 말로 쓰였고, 경비대원라는 이름과 철자가 겹쳐 여담의 말장난처럼 남는다.",
+        "text": "세 대화에서 아방가르드는 쉽게 이해되기 어려운 대상에 붙는 말로 쓰였고, 경비대원라는 이름과 철자가 겹쳐 여담의 말장난처럼 남는다.",
+        "by": "claude-sonnet"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Good Stuff, but Terrible Taste — Continued",
+       "quest_ko": "물건은 좋은데 센스가 영・속편",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "In the Aftermath (Hangout Event)",
+       "quest_ko": "뒷수습",
+       "version": "2.7",
+       "speaker": "Kuki Shinobu"
+      },
+      {
+       "kind": "quest",
+       "quest": "To Hear Mortal Hearts",
+       "quest_ko": "부세에 귀 기울이며",
+       "version": "2.1",
+       "speaker": "Yae Miko"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation of Thierry's line.",
+     "t_raw": "Garde 관련 일이라면 너희와 Spina di Rosula를 위해 내가 할 수 있는 걸 해볼 테니, 다른 사람들에게는 널리 알리지 마, 하하.",
+     "en": "I'll see what I can do for you and Spina di Rosula when it comes to Garde stuff, but don't go advertising it to everyone else, haha.",
+     "speaker": "Thierry",
+     "source": {
+      "kind": "quest",
+      "quest": "The Truth, Lost With the Rain",
+      "quest_ko": "비에 떠내려가 버린 진실",
+      "version": "4.0",
+      "speaker": "Thierry"
+     },
+     "t": "경비대원 관련 일이라면 너희와 가시 장미회를 위해 내가 할 수 있는 걸 해볼 테니, 다른 사람들에게는 널리 알리지 마, 하하.",
+     "speaker_ko": "티에리"
+    },
+    {
+     "section": "작중 행적 — Fontaine",
+     "status": "accepted",
+     "note": "Faithful translation of Neuvillette's line.",
+     "t_raw": "이제, 우리는 설명을 들을 자격이 있다고 생각한다, Garde Vaughn.",
+     "en": "Next, I think we deserve an explanation, Garde Vaughn.",
+     "speaker": "Neuvillette",
+     "source": {
+      "kind": "quest",
+      "quest": "Lies Cast Shadows Under Gathered Lights",
+      "quest_ko": "조명 아래 드리운 거짓의 그림자",
+      "version": "4.0",
+      "speaker": "Neuvillette"
+     },
+     "t": "이제, 우리는 설명을 들을 자격이 있다고 생각한다, 경비대원 본.",
+     "speaker_ko": "느비예트"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of Thierry's line.",
+     "t_raw": "Garde 관련 일이라면 당신과 Spina di Rosula를 위해 내가 할 수 있는 것을 알아볼게요, 하지만 다른 사람들에게 그걸 널리 알리지는 마세요, 하하.",
+     "en": "I'll see what I can do for you and Spina di Rosula when it comes to Garde stuff, but don't go advertising it to everyone else, haha.",
+     "speaker": "Thierry",
+     "source": {
+      "kind": "quest",
+      "quest": "The Truth, Lost With the Rain",
+      "quest_ko": "비에 떠내려가 버린 진실",
+      "version": "4.0",
+      "speaker": "Thierry"
+     },
+     "t": "경비대원 관련 일이라면 당신과 가시 장미회를 위해 내가 할 수 있는 것을 알아볼게요, 하지만 다른 사람들에게 그걸 널리 알리지는 마세요, 하하.",
+     "speaker_ko": "티에리"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "잠깐, 물이 되어버린 그 Garde가 Primordial Water로 어떤 물약을 만들 수도 있다고 말하지 않았어?",
+     "en": "Wait, didn't that Garde guy who turned into water also mention that the Primordial Water could be used to produce some kind of potion?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Truth, Lost With the Rain",
+      "quest_ko": "비에 떠내려가 버린 진실",
+      "version": "4.0",
+      "speaker": "Paimon"
+     },
+     "t": "잠깐, 물이 되어버린 그 경비대원이 원천의 물로 어떤 물약을 만들 수도 있다고 말하지 않았어?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Kuki Shinobu's line; all parts (top Mora, professional artist, avant-garde) are rendered correctly.",
+     "t_raw": "우리는 이 일에 최고의 Mora를 주고 전문 예술가를 고용했는데, 완성된 작품은 조금... 음, avant-garde...",
+     "en": "We paid top Mora to hire a professional artist for this, and while the finished product is a little... um, avant-garde...",
+     "speaker": "Kuki Shinobu",
+     "source": {
+      "kind": "quest",
+      "quest": "In the Aftermath (Hangout Event)",
+      "quest_ko": "뒷수습",
+      "version": "2.7",
+      "speaker": "Kuki Shinobu"
+     },
+     "t": "우리는 이 일에 최고의 모라를 주고 전문 예술가를 고용했는데, 완성된 작품은 조금... 음, avant-garde...",
+     "speaker_ko": "쿠키 시노부"
+    }
+   ]
+  }
+ ]
+}

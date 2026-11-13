@@ -1,0 +1,684 @@
+{
+ "node": "House of Daena",
+ "articles": [
+  {
+   "node": "House of Daena",
+   "from_version": "3.0",
+   "cutoff": "2022-09-27T00:00:00Z",
+   "input": [
+    {
+     "page": "House of Daena",
+     "url": "https://genshin-impact.fandom.com/wiki/House_of_Daena",
+     "revision": 848996
+    }
+   ],
+   "input_counts": {
+    "mentions": 6,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 1182,
+   "input_cut": false,
+   "input_hash": "f7b71ca5d4f8",
+   "writer": "glm,kimi,ds-pro,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "(1) The English never says the Akademiya researchers 'borrow' from this library with usage reduced 'because Akasha reliance grew' in those terms—actually it does state reduced use due to Akasha push, so the borrowing/reduced use is supported; but 'Akasha가 보편화된' and 'general knowledge books' are fine. The failing part is (2): it presents 'quiet library' and 'Akasha universalized' as the reason for the museum remark, but Katayoun's museum comment is given without any stated cause, so linking it is an unsupported causal claim. Sentence 1 passes; only 2 fails.",
+     "quote": "I'd say the House of Daena is more like a museum in spite of being known as \"the library of Sumeru.\"",
+     "sentences": [
+      {
+       "t_raw": "House of Daena는 Teyvat 전역에서 가장 큰 도서관으로, Sumeru City의 The Akademiya 건물 한가운데 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁은 티바트 전역에서 가장 큰 도서관으로, 수메르성의 아카데미아 건물 한가운데 자리한다."
+      },
+      {
+       "t_raw": "The Akademiya의 연구자와 학생들은 이곳에서 일반 지식 서적을 빌릴 수 있지만, Akasha에 의존하는 바람이 강해진 요즘에는 이용 빈도가 많이 줄었다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "아카데미아의 연구자와 학생들은 이곳에서 일반 지식 서적을 빌릴 수 있지만, 「허공」에 의존하는 바람이 강해진 요즘에는 이용 빈도가 많이 줄었다."
+      },
+      {
+       "t_raw": "House of Daena를 지식의 전당이라기보다 박물관에 가깝다고 평하는 사람도 있으며, 조용해진 도서관의 분위기와 Akasha에 대한 Akademiya의 추진이 그런 인상 속에서 겹쳐 보이기도 한다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "지혜궁을 지식의 전당이라기보다 박물관에 가깝다고 평하는 사람도 있으며, 조용해진 도서관의 분위기와 「허공」에 대한 아카데미아의 추진이 그런 인상 속에서 겹쳐 보이기도 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Katayoun",
+       "revision": 842044,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Katayoun",
+       "revision": 842044,
+       "section": "Dialogue",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Akademiya",
+       "revision": 849026,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru Akademiya",
+       "revision": 851854,
+       "section": "Other Institutes > House of Daena",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported; (3) is a reasonable hedged interpretation.",
+     "quote": "The House of Daena is the largest library in all of Teyvat, located within The Akademiya in Sumeru City, Sumeru.",
+     "sentences": [
+      {
+       "t_raw": "House of Daena는 Teyvat 전체에서 가장 큰 도서관이며, Sumeru City의 The Akademiya 안에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁은 티바트 전체에서 가장 큰 도서관이며, 수메르성의 아카데미아 안에 있다."
+      },
+      {
+       "t_raw": "The Akademiya는 Divine Tree 위에 세워진 본관이고, House of Daena는 그 건물의 중심에 위치한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아카데미아는 신성한 나무 위에 세워진 본관이고, 지혜궁은 그 건물의 중심에 위치한다."
+      },
+      {
+       "t_raw": "House of Daena는 The Akademiya의 도서관이자 'Sumeru의 도서관'으로 알려져 있지만, Katayoun은 이곳을 오히려 박물관에 가깝다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁은 아카데미아의 도서관이자 '수메르의 도서관'으로 알려져 있지만, 카타윤은 이곳을 오히려 박물관에 가깝다고 말한다."
+      },
+      {
+       "t_raw": "**Teyvat 최대의 도서관**이자 **Akademiya 건물의 중심**에 자리한 만큼, 이곳은 Sumeru의 지식을 상징하는 핵심 거점으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**티바트 최대의 도서관**이자 **아카데미아 건물의 중심**에 자리한 만큼, 이곳은 수메르의 지식을 상징하는 핵심 거점으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Katayoun",
+       "revision": 842044,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Katayoun",
+       "revision": 842044,
+       "section": "Dialogue",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Akademiya",
+       "revision": 849026,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "(2) Claims the library became a place for storing and displaying collections as a result of Akasha reliance. English gives the museum remark and reduced use separately, never linking them causally; this is stated as a fairly firm conclusion.",
+     "quote": "The Akademiya's library, although it is now used much less often due to the Akademiya's the recent push towards relying on the Akasha.",
+     "sentences": [
+      {
+       "t_raw": "House of Daena에서 연구자와 학생들은 일반 지식 서적을 대출할 수 있으며, 일부 서적은 상위 연구자들의 문헌 조사를 위해 개방된 자료이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁에서 연구자와 학생들은 일반 지식 서적을 대출할 수 있으며, 일부 서적은 상위 연구자들의 문헌 조사를 위해 개방된 자료이다."
+      },
+      {
+       "t_raw": "그러나 최근 The Akademiya가 **Akasha**에 의존하려는 방향으로 나아가면서, House of Daena는 예전만큼 자주 이용되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 최근 아카데미아가 **「허공」**에 의존하려는 방향으로 나아가면서, 지혜궁은 예전만큼 자주 이용되지 않는다."
+      },
+      {
+       "t_raw": "Akasha에 대한 의존으로 House of Daena의 이용이 줄어든 흐름과 함께, 이곳이 능동적인 연구 공간이라기보다 장서를 보관하고 전시하는 성격이 강한 곳으로 비쳐 보이기도 한다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "「허공」에 대한 의존으로 지혜궁의 이용이 줄어든 흐름과 함께, 이곳이 능동적인 연구 공간이라기보다 장서를 보관하고 전시하는 성격이 강한 곳으로 비쳐 보이기도 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Katayoun",
+       "revision": 842044,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Katayoun",
+       "revision": 842044,
+       "section": "Dialogue",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru Akademiya",
+       "revision": 851854,
+       "section": "Other Institutes > House of Daena",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Facts match A9/M6; (2) is a hedged interpretation ('것으로 보인다').",
+     "quote": "Responsibilities include procuring new material and maintaining the upkeep on the existing collection.",
+     "sentences": [
+      {
+       "t_raw": "House of Daena는 Grand Conservator가 운영하는데, 이 자리는 도서관의 장서를 총괄하는 직책이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁은 수석 보존관이 운영하는데, 이 자리는 도서관의 장서를 총괄하는 직책이다."
+      },
+      {
+       "t_raw": "새 자료를 확보하는 일과 기존 장서의 관리를 유지하는 일이 그의 책임에 포함된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "새 자료를 확보하는 일과 기존 장서의 관리를 유지하는 일이 그의 책임에 포함된다."
+      },
+      {
+       "t_raw": "Akasha에 의존하는 방향으로 Akademiya가 기울면서 도서관의 이용이 크게 줄었다는 사정까지 겹쳐 보면, 장서를 새로 들이고 관리하는 일은 한층 무거운 과제가 되었을 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "「허공」에 의존하는 방향으로 아카데미아가 기울면서 도서관의 이용이 크게 줄었다는 사정까지 겹쳐 보면, 장서를 새로 들이고 관리하는 일은 한층 무거운 과제가 되었을 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": "Lore",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru Akademiya",
+       "revision": 851854,
+       "section": "Other Institutes > House of Daena",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "(1) Says the post is vacant or awaiting succession. English only says there are two candidates for the 'next' Grand Conservator, which loosely implies a succession ahead, but 'may be vacant' is not given; stated as '뜻이기도 하다' (certain).",
+     "quote": "Two main candidates for the next Grand Conservator position are Vikram and Rifaet.",
+     "sentences": [
+      {
+       "t_raw": "다음 Grand Conservator 자리를 두고는 Vikram과 Rifaet이 주요 후보로 꼽힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다음 수석 보존관 자리를 두고는 비크람과 리파트가 주요 후보로 꼽힌다."
+      },
+      {
+       "t_raw": "두 사람이 차기 Grand Conservator 후보로 거론된다는 점은 이 자리의 승계가 진행되거나 곧 이루어질 가능성을 시사해 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "두 사람이 차기 수석 보존관 후보로 거론된다는 점은 이 자리의 승계가 진행되거나 곧 이루어질 가능성을 시사해 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": "Lore",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "(1) Claims the succession picture involves ties inside and outside the Akademiya. English only says Shatir would have picked Lisa; Lisa's connection to the Akademiya or a wider web of relations is not given.",
+     "quote": "Shatir calls Lisa \"Mondstadt's Grand Conservator\" and says that she would have been his first pick for the position had she remained in Sumeru.",
+     "sentences": [
+      {
+       "t_raw": "한편 Shatir은 Lisa를 \"Mondstadt's Grand Conservator\"라고 부르며, 그녀가 Sumeru에 남아 있었다면 이 자리에 가장 먼저 추천했을 인물이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 샤티르는 리사를 \"몬드의 수석 보존관\"라고 부르며, 그녀가 수메르에 남아 있었다면 이 자리에 가장 먼저 추천했을 인물이라고 말한다."
+      },
+      {
+       "t_raw": "Shatir이 Sumeru를 떠난 Lisa를 차기 Grand Conservator의 첫 번째 인물로 꼽은 대목에서, 후계 구도가 Akademiya 안에만 머물지 않고 외부 인물까지 후보에 오를 수 있음을 짐작하게 해 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "샤티르가 수메르를 떠난 리사를 차기 수석 보존관의 첫 번째 인물로 꼽은 대목에서, 후계 구도가 아카데미아 안에만 머물지 않고 외부 인물까지 후보에 오를 수 있음을 짐작하게 해 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": "Lore",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All supported by M5, A1, M6.",
+     "quote": "The Akademiya's library, although it is now used much less often due to the Akademiya's the recent push towards relying on the Akasha.",
+     "sentences": [
+      {
+       "t_raw": "House of Daena는 Akademiya의 도서관으로, Akademiya 건물의 심장부에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁은 아카데미아의 도서관으로, 아카데미아 건물의 심장부에 자리한다."
+      },
+      {
+       "t_raw": "Teyvat 전체에서 가장 큰 도서관이지만, Akademiya가 Akasha에 의존하는 쪽으로 최근 방향을 틀면서 이곳의 이용은 훨씬 줄었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "티바트 전체에서 가장 큰 도서관이지만, 아카데미아가 「허공」에 의존하는 쪽으로 최근 방향을 틀면서 이곳의 이용은 훨씬 줄었다."
+      },
+      {
+       "t_raw": "**건물의 중심에 남아 있으면서도 실제 이용은 Akasha 쪽으로 옮겨간 셈**이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**건물의 중심에 남아 있으면서도 실제 이용은 「허공」 쪽으로 옮겨간 셈**이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Akademiya",
+       "revision": 849026,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru Akademiya",
+       "revision": 851854,
+       "section": "Other Institutes > House of Daena",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Facts match M6 and A9; interpretation is hedged and reasonable.",
+     "quote": "Some books are only open to higher-level researchers for use in their literature reviews.",
+     "sentences": [
+      {
+       "t_raw": "도서관에서는 연구자와 학생이 일반 지식에 관한 여러 책을 대출할 수 있고, 일부 책은 상위 연구자가 문헌 검토에 쓰도록 열람이 제한된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도서관에서는 연구자와 학생이 일반 지식에 관한 여러 책을 대출할 수 있고, 일부 책은 상위 연구자가 문헌 검토에 쓰도록 열람이 제한된다."
+      },
+      {
+       "t_raw": "도서관은 장서를 총괄하는 Grand Conservator가 운영하며, 새 자료를 들이고 기존 장서를 관리하는 일을 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도서관은 장서를 총괄하는 수석 보존관이 운영하며, 새 자료를 들이고 기존 장서를 관리하는 일을 맡는다."
+      },
+      {
+       "t_raw": "**일반 대출과 연구자 전용 열람이 함께 있는 구조**는 장서 관리가 연구 단계에 맞춰져 있음을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**일반 대출과 연구자 전용 열람이 함께 있는 구조**는 장서 관리가 연구 단계에 맞춰져 있음을 보여 주는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sumeru Akademiya",
+       "revision": 851854,
+       "section": "Other Institutes > House of Daena",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": "Lore",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "trimmed",
+     "note": "Sentence 2 claims the stopped lift makes the library look like a mere knowledge repository. The English gives no basis for that; it is an unsupported inference.",
+     "quote": "On an elevated platform in the middle of the library is a lift with an Activate prompt, but it currently cannot be used.",
+     "sentences": [
+      {
+       "t_raw": "House of Daena 한가운데에 높은 단 위에 자리한 **리프트**는 '활성화' 안내가 떠 있지만, 현재는 작동하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁 한가운데에 높은 단 위에 자리한 **리프트**는 '활성화' 안내가 떠 있지만, 현재는 작동하지 않는다."
+      },
+      {
+       "t_raw": "천장을 올려다보면 탑이 상당한 높이까지 위로 계속 이어져 있기 때문에, 이 리프트는 상층으로 통하는 통로일 가능성을 안고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천장을 올려다보면 탑이 상당한 높이까지 위로 계속 이어져 있기 때문에, 이 리프트는 상층으로 통하는 통로일 가능성을 안고 있다."
+      },
+      {
+       "t_raw": "Akasha에 대한 의존으로 House of Daena의 이용이 줄어든 마당에, 도서관의 한가운데를 차지한 리프트까지 멈춰 있어 이곳이 단순한 지식 보관소처럼 보이게 만드는 요소가 된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": true,
+       "t": "「허공」에 대한 의존으로 지혜궁의 이용이 줄어든 마당에, 도서관의 한가운데를 차지한 리프트까지 멈춰 있어 이곳이 단순한 지식 보관소처럼 보이게 만드는 요소가 된다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru Akademiya",
+       "revision": 851854,
+       "section": "Other Institutes > House of Daena",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Matches A3 and M6; the interpretation is hedged. #1 names a material label; say it without the label.",
+     "quote": "Some books are only open to higher-level researchers for use in their literature reviews.",
+     "sentences": [
+      {
+       "t_raw": "House of Daena에는 일반 지식 외에도 상급 연구자만 열람할 수 있는 서적이 존재한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁에는 일반 지식 외에도 상급 연구자만 열람할 수 있는 서적이 존재한다."
+      },
+      {
+       "t_raw": "도서관 한가운데에 멈춰 있는 리프트의 용도는 아직 불분명하지만, 상급 연구자에게만 공개된 자료가 있는 곳으로 연결될 가능성이 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "도서관 한가운데에 멈춰 있는 리프트의 용도는 아직 불분명하지만, 상급 연구자에게만 공개된 자료가 있는 곳으로 연결될 가능성이 있다."
+      },
+      {
+       "t_raw": "따라서 이 리프트는 평상시 닿지 못하는 **상급 연구자 전용 자료**가 있는 상층부로 향하는 관문일 가능성이 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 이 리프트는 평상시 닿지 못하는 **상급 연구자 전용 자료**가 있는 상층부로 향하는 관문일 가능성이 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru Akademiya",
+       "revision": 851854,
+       "section": "Other Institutes > House of Daena",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A2 and A8; the interpretation is reasonable.",
+     "quote": "While the rules state that only students and teachers in the Akademiya may borrow books, this does not prevent players from permanently keeping the collectible books inside the House of Daena.",
+     "sentences": [
+      {
+       "t_raw": "House of Daena의 대출 규칙은 Akademiya의 학생과 교사만 책을 빌릴 수 있다고 정하지만, 플레이어가 도서관 안의 수집형 서적을 영구히 보관하는 것까지 막지는 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁의 대출 규칙은 아카데미아의 학생과 교사만 책을 빌릴 수 있다고 정하지만, 플레이어가 도서관 안의 수집형 서적을 영구히 보관하는 것까지 막지는 못한다."
+      },
+      {
+       "t_raw": "규칙의 적용 범위가 대출 자격에 머문다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "규칙의 적용 범위가 대출 자격에 머문다고 볼 수 있다."
+      },
+      {
+       "t_raw": "퀘스트 아이템으로 분류된 서적은 Archive에 추가되지 않고 Quest Items로 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "퀘스트 아이템으로 분류된 서적은 도감에 추가되지 않고 퀘스트 아이템으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": "Books > Quest Items",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by M2, M3 and Q1; the interpretation is reasonable.",
+     "quote": "I'd say the House of Daena is more like a museum in spite of being known as \"the library of Sumeru.\"",
+     "sentences": [
+      {
+       "t_raw": "House of Daena에는 Katayoun이 자리하고, Katayoun은 이곳이 Sumeru의 도서관으로 알려졌음에도 박물관에 가깝다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁에는 카타윤이 자리하고, 카타윤은 이곳이 수메르의 도서관으로 알려졌음에도 박물관에 가깝다고 말한다."
+      },
+      {
+       "t_raw": "Jazari는 모든 헌장이 Akademiya에 기록되어 있으니 의심스러우면 이것의 이미지를 House of Daena에서 검증하라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쟈자리는 모든 헌장이 아카데미아에 기록되어 있으니 의심스러우면 이것의 이미지를 지혜궁에서 검증하라고 한다."
+      },
+      {
+       "t_raw": "이런 용무는 도서관이 기록을 확인하는 공간으로도 기능함을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 용무는 도서관이 기록을 확인하는 공간으로도 기능함을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Katayoun",
+       "revision": 842044,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Katayoun",
+       "revision": 842044,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Vimana Agama: First Chapter",
+       "quest_ko": "비마나 경전・첫 편",
+       "version": "3.0",
+       "speaker": "Jazari"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation. Dropping 'still' is a minor nuance.",
+     "t_raw": "모든 헌장은 The Akademiya에 기록되어 있다. 의심스럽다면, 이 이미지를 가지고 House of Daena에서 검증해 봐.",
+     "en": "All the charters are recorded in the Akademiya. If you are still skeptical, just keep an image of this for validation in the House of Daena.",
+     "speaker": "Jazari",
+     "source": {
+      "kind": "quest",
+      "quest": "Vimana Agama: First Chapter",
+      "quest_ko": "비마나 경전・첫 편",
+      "version": "3.0",
+      "speaker": "Jazari"
+     },
+     "t": "모든 헌장은 아카데미아에 기록되어 있다. 의심스럽다면, 이 이미지를 가지고 지혜궁에서 검증해 봐.",
+     "speaker_ko": "쟈자리"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of the Jazari line.",
+     "t_raw": "Akademiya에는 모든 헌장이 기록되어 있어. 의심이 남는다면, 이 이미지를 House of Daena에서 검증할 때 쓰도록 챙겨 두라고.",
+     "en": "All the charters are recorded in the Akademiya. If you are still skeptical, just keep an image of this for validation in the House of Daena.",
+     "speaker": "Jazari",
+     "source": {
+      "kind": "quest",
+      "quest": "Vimana Agama: First Chapter",
+      "quest_ko": "비마나 경전・첫 편",
+      "version": "3.0",
+      "speaker": "Jazari"
+     },
+     "t": "아카데미아에는 모든 헌장이 기록되어 있어. 의심이 남는다면, 이 이미지를 지혜궁에서 검증할 때 쓰도록 챙겨 두라고.",
+     "speaker_ko": "쟈자리"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation in a formal register.",
+     "t_raw": "모든 헌장은 Akademiya에 기록되어 있습니다. 그래도 의심스럽다면, 이것의 이미지를 House of Daena에서 검증할 수 있도록 보관해 두십시오.",
+     "en": "All the charters are recorded in the Akademiya. If you are still skeptical, just keep an image of this for validation in the House of Daena.",
+     "speaker": "Jazari",
+     "source": {
+      "kind": "quest",
+      "quest": "Vimana Agama: First Chapter",
+      "quest_ko": "비마나 경전・첫 편",
+      "version": "3.0",
+      "speaker": "Jazari"
+     },
+     "t": "모든 헌장은 아카데미아에 기록되어 있습니다. 그래도 의심스럽다면, 이것의 이미지를 지혜궁에서 검증할 수 있도록 보관해 두십시오.",
+     "speaker_ko": "쟈자리"
+    }
+   ]
+  }
+ ]
+}

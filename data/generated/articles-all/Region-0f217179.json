@@ -1,0 +1,780 @@
+{
+ "node": "Region",
+ "articles": [
+  {
+   "node": "Region",
+   "from_version": "5.0",
+   "cutoff": "2024-10-08T00:00:00Z",
+   "input": [
+    {
+     "page": "Region",
+     "url": "https://genshin-impact.fandom.com/wiki/Region",
+     "revision": 1616550
+    }
+   ],
+   "input_counts": {
+    "mentions": 16,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 489,
+   "input_cut": false,
+   "input_hash": "546c7d4ade06",
+   "writer": "ds,ds-pro,or-ds",
+   "verifier": "grok,claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "trimmed",
+     "note": "(1) treats unique industry in every Region as fact; English only has one hypothetical Mondstadt potions line plus tea culture. (2) both cited hooks are mechanics, so “setting and systems” does not follow.",
+     "quote": "Regions (also called Nations or Countries) are the main parts of Teyvat.",
+     "sentences": [
+      {
+       "t_raw": "**Region**은 Teyvat를 이루는 주요 구성 단위로, Nations나 Countries라고도 불린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**지역**은 티바트를 이루는 주요 구성 단위로, Nations나 Countries라고도 불린다."
+      },
+      {
+       "t_raw": "Region마다 고유한 문화와 산업이 있어, 한 Region에서는 물약 산업이 새로운 수입원이 될 수 있다는 이야기가 나오고, 차 문화처럼 Region별 관습을 존중하라는 말도 나온다.",
+       "interp": false,
+       "dropped": true,
+       "t": "지역마다 고유한 문화와 산업이 있어, 한 지역에서는 물약 산업이 새로운 수입원이 될 수 있다는 이야기가 나오고, 차 문화처럼 지역별 관습을 존중하라는 말도 나온다."
+      },
+      {
+       "t_raw": "플레이어블 캐릭터의 소속이 Region 단위로 표시되고, 특정 Region 소속 캐릭터를 요구하는 목표도 있으니, 적어도 시스템 안에서는 Region이 반복해 쓰이는 셈으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "플레이어블 캐릭터의 소속이 지역 단위로 표시되고, 특정 지역 소속 캐릭터를 요구하는 목표도 있으니, 적어도 시스템 안에서는 지역이 반복해 쓰이는 셈으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Region",
+       "revision": 1616550,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Region",
+       "revision": 1616550,
+       "section": "Party Region-Based Effects",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Region",
+       "revision": 1616550,
+       "section": "Party Region-Based Effects > Others",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Job Well Done",
+       "quest_ko": "원만한 마무리",
+       "version": "4.5",
+       "speaker": "Jean"
+      },
+      {
+       "kind": "quest",
+       "quest": "Surrounded by the Aroma of Tea",
+       "quest_ko": "자욱한 차 향기",
+       "version": "2.5",
+       "speaker": "Zhongli"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Nations",
+      "Countries"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All three match A1 and Q9; the cultural-unit reading stays interpretive.",
+     "quote": "Each region has its own tea traditions and culture. One should always respect the conventions of the local region.",
+     "sentences": [
+      {
+       "t_raw": "Region은 **Teyvat를 이루는 주요 부분**이며, Nations 또는 Countries라고도 불린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지역은 **티바트를 이루는 주요 부분**이며, Nations 또는 Countries라고도 불린다."
+      },
+      {
+       "t_raw": "Zhongli는 각 지역이 고유한 차 전통과 문화를 지니므로 그 지역의 관습을 존중해야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "종려는 각 지역이 고유한 차 전통과 문화를 지니므로 그 지역의 관습을 존중해야 한다고 말한다."
+      },
+      {
+       "t_raw": "Region은 Teyvat를 나누는 큰 구분이면서, **문화적 관습**을 공유하는 단위로도 쓰이는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "지역은 티바트를 나누는 큰 구분이면서, **문화적 관습**을 공유하는 단위로도 쓰이는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Region",
+       "revision": 1616550,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Surrounded by the Aroma of Tea",
+       "quest_ko": "자욱한 차 향기",
+       "version": "2.5",
+       "speaker": "Zhongli"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Nations",
+      "Countries"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Q10 says a Chuyu branch based in Liyue sells that region’s ore; it does not place the branch in Ritou.",
+     "quote": "They sell ore from that region.",
+     "sentences": [
+      {
+       "t_raw": "Thoma는 Chuyu Trading Company의 한 지점이 Liyue에 기반을 두고 그 지역의 광석을 판매한다고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "토마는 추유 상회의 한 지점이 리월에 기반을 두고 그 지역의 광석을 판매한다고 설명한다."
+      },
+      {
+       "t_raw": "Jean은 약물 산업이 Mondstadt 전체 지역의 새 수입원이 될 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "진은 약물 산업이 몬드 전체 지역의 새 수입원이 될 수 있다고 말한다."
+      },
+      {
+       "t_raw": "Shyam은 Port Ormos 주변에서 수많은 사람을 도운 조향사가 그 지역에서 가장 유명하다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "샴은 오르모스 항구 주변에서 수많은 사람을 도운 조향사가 그 지역에서 가장 유명하다고 전한다."
+      },
+      {
+       "t_raw": "한 지역의 광석이 거래되고, 지역 전체를 아우르는 산업이 논의되며, 지역에서 가장 유명한 장인이 언급되는 모습은 Region이 **산업과 물산의 단위**로도 기능함을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 지역의 광석이 거래되고, 지역 전체를 아우르는 산업이 논의되며, 지역에서 가장 유명한 장인이 언급되는 모습은 지역이 **산업과 물산의 단위**로도 기능함을 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Trip for Two in Ritou",
+       "quest_ko": "둘만의 이도(離島) 여행",
+       "version": "2.2",
+       "speaker": "Thoma"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Job Well Done",
+       "quest_ko": "원만한 마무리",
+       "version": "4.5",
+       "speaker": "Jean"
+      },
+      {
+       "kind": "quest",
+       "quest": "Top Note: Floral Debt",
+       "quest_ko": "탑 노트・플로럴",
+       "version": "4.8",
+       "speaker": "Shyam"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "게임플레이에서의 Region",
+     "status": "accepted",
+     "note": "A2 supports one mechanical affiliation via the Vision icon and a separate story nationality.",
+     "quote": "each playable character is affiliated with up to one region, indicated by the Vision icon in the Character Menu, even if they have an additional nationality story-wise (such as Thoma).",
+     "sentences": [
+      {
+       "t_raw": "플레이 가능 캐릭터는 최대 하나의 Region에 소속되며, 그 표시는 캐릭터 메뉴의 **Vision** 아이콘으로 나타난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "플레이 가능 캐릭터는 최대 하나의 지역에 소속되며, 그 표시는 캐릭터 메뉴의 **신의 눈** 아이콘으로 나타난다."
+      },
+      {
+       "t_raw": "Thoma처럼 설정상 별도의 국적을 지닌 경우에도 이 소속 표시는 하나로 정리된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "토마처럼 설정상 별도의 국적을 지닌 경우에도 이 소속 표시는 하나로 정리된다."
+      },
+      {
+       "t_raw": "따라서 게임플레이상 Region 소속은 설정상 국적과 완전히 같은 개념은 아니라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 게임플레이상 지역 소속은 설정상 국적과 완전히 같은 개념은 아니라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Region",
+       "revision": 1616550,
+       "section": "Party Region-Based Effects",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "게임플레이에서의 지역",
+     "latin_left": []
+    },
+    {
+     "section": "게임플레이에서의 Region",
+     "status": "accepted",
+     "note": "A3 and A4 support the objective requirement and the Fontainian/Traveler dive jump; the gameplay-unit reading is fair.",
+     "quote": "Several Outside the Canvas, Inside the Lens objectives require a character with the specified region.",
+     "sentences": [
+      {
+       "t_raw": "Outside the Canvas, Inside the Lens의 일부 목표는 **지정된 Region**의 캐릭터를 요구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Outside the Canvas, Inside the Lens의 일부 목표는 **지정된 지역**의 캐릭터를 요구한다.",
+       "polish": {
+        "from": "Outside the Canvas, Inside the Lens의 일부 목표는 **지정된 지역**의 캐릭터를 요구한다.",
+        "text": "Outside the Canvas, Inside the Lens의 일부 목표는 **지정된 지역**의 캐릭터를 요구한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "잠수 중에는 Fontaine 캐릭터와 Traveler가 수면을 향해 질주할 때 물 밖으로 뛰어오를 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잠수 중에는 폰타인 캐릭터와 여행자가 수면을 향해 질주할 때 물 밖으로 뛰어오를 수 있다."
+      },
+      {
+       "t_raw": "이처럼 Region 소속은 목표 달성 조건과 수중 탐사 동작 양쪽에 걸리는 게임플레이 단위로 쓰인다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 지역 소속은 목표 달성 조건과 수중 탐사 동작 양쪽에 걸리는 게임플레이 단위로 쓰인다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Region",
+       "revision": 1616550,
+       "section": "Party Region-Based Effects > Others",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Region",
+       "revision": 1616550,
+       "section": "Party Region-Based Effects > Others",
+       "paragraph": "A4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "게임플레이에서의 지역",
+     "latin_left": [
+      "Outside the Canvas",
+      "Inside the Lens"
+     ]
+    },
+    {
+     "section": "게임플레이에서의 Region",
+     "status": "accepted",
+     "note": "M6, M16, and the dragon/god columns match; the spanning-unit sentence is hedged interpretation.",
+     "quote": "Award Shrine of Depths Keys and Memories of their corresponding Region and Element (Inazuma, Sumeru and Fontaine statues only)",
+     "sentences": [
+      {
+       "t_raw": "Fontaine의 탐사 요소인 Energy Transfer Terminal은 현재 Liffey Region과 Fontaine Research Institute of Kinetic Energy Engineering Region에서 발견된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인의 탐사 요소인 전이 단말기는 현재 리피 구역과 폰타인 운동 에너지 공학 연구원 구역에서 발견된다."
+      },
+      {
+       "t_raw": "Statue of The Seven은 해당 **Region과 Element**의 Shrine of Depths Keys와 Memories를 수여하며, 이는 Inazuma, Sumeru, Fontaine의 Statue에만 해당한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일곱신상은 해당 **지역과 원소**의 지령 감실 열쇠와 Memories를 수여하며, 이는 이나즈마, 수메르, 폰타인의 Statue에만 해당한다."
+      },
+      {
+       "t_raw": "용과 신의 목록에서도 Region은 항목을 가르는 열로 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "용과 신의 목록에서도 지역은 항목을 가르는 열로 쓰인다."
+      },
+      {
+       "t_raw": "이렇게 Region은 탐사 요소의 위치, Statue 보상의 기준, 생물과 신의 목록 분류에 함께 걸치는 단위로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 지역은 탐사 요소의 위치, Statue 보상의 기준, 생물과 신의 목록 분류에 함께 걸치는 단위로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy Transfer Terminal",
+       "revision": 1372980,
+       "section": null,
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Dragon",
+       "revision": 1438465,
+       "section": "Known Dragons",
+       "paragraph": "M8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "God",
+       "revision": 1566141,
+       "section": "List of Gods > Other Gods",
+       "paragraph": "M10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Statue of The Seven",
+       "revision": 1628290,
+       "section": "Overview",
+       "paragraph": "M16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "게임플레이에서의 지역",
+     "latin_left": [
+      "Memories",
+      "Statue",
+      "Statue"
+     ]
+    },
+    {
+     "section": "Fontaine의 하위 Region",
+     "status": "accepted",
+     "note": "All four sentences match the chest groupings, the Fontaine-within-Fontaine wording, and the Statue auto-recover names.",
+     "quote": "344 chests are found in the region of Fontaine in Belleau Region, Beryl Region and Court of Fontaine Region",
+     "sentences": [
+      {
+       "t_raw": "Fontaine은 그 자체로 Region이면서, 그 안이 다시 여러 Region으로 갈라지는 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인은 그 자체로 지역이면서, 그 안이 다시 여러 지역으로 갈라지는 곳이다."
+      },
+      {
+       "t_raw": "상자 집계는 Belleau Region, Beryl Region, Court of Fontaine Region을 한 묶음으로 세어 344개, Liffey Region과 Fontaine Research Institute of Kinetic Energy Engineering Region을 묶어 243개, Morte Region과 Erinnyes Forest를 묶어 207개로 보고한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상자 집계는 흰 이슬 구역, 푸른 수정 구역, 폰타인성 구역을 한 묶음으로 세어 344개, 리피 구역과 폰타인 운동 에너지 공학 연구원 구역을 묶어 243개, 모르트 구역과 에리니에스 숲 구역을 묶어 207개로 보고한다."
+      },
+      {
+       "t_raw": "묶음마다 상자 수가 따로 집계된다는 점에서, 하위 Region은 탐사 성과를 **세는 단위**로도 기능한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "묶음마다 상자 수가 따로 집계된다는 점에서, 하위 지역은 탐사 성과를 **세는 단위**로도 기능한다고 볼 수 있다."
+      },
+      {
+       "t_raw": "Statue of The Seven의 자동 회복 항목에도 Beryl Region과 Nostoi Region이 Region 이름으로 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일곱신상의 자동 회복 항목에도 푸른 수정 구역과 노스토이 구역이 지역 이름으로 등장한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chest",
+       "revision": 1436132,
+       "section": "Achievements Counters > Current Count",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Statue of The Seven",
+       "revision": 1628290,
+       "section": "Statue's Blessing > Auto-Recover",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chest",
+       "revision": 1436132,
+       "section": "Achievements Counters > Current Count",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chest",
+       "revision": 1436132,
+       "section": "Achievements Counters > Current Count",
+       "paragraph": "M12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "폰타인의 하위 지역",
+     "latin_left": []
+    },
+    {
+     "section": "Fontaine의 하위 Region",
+     "status": "accepted",
+     "note": "The Seelie stage counts and maxima match, and the interpretation only restates that those caps differ by bundle.",
+     "quote": "follow 6/12/24 Seelie back to their courts on Court of Fontaine Region, Belleau Region, and Beryl Region (max total is 42)",
+     "sentences": [
+      {
+       "t_raw": "Seelie를 제자리로 돌려보내는 탐사 요소 역시 Region 묶음별로 수치가 매겨져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "선령을 제자리로 돌려보내는 탐사 요소 역시 지역 묶음별로 수치가 매겨져 있다."
+      },
+      {
+       "t_raw": "Court of Fontaine Region, Belleau Region, Beryl Region에서는 6/12/24마리의 Seelie를 따라가며 최대 42마리까지이고, Liffey Region과 Fontaine Research Institute of Kinetic Energy Engineering Region에서는 3/6/9마리로 최대 13마리, Morte Region과 Erinnyes Forest에서도 3/6/9마리로 최대 13마리다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인성 구역, 흰 이슬 구역, 푸른 수정 구역에서는 6/12/24마리의 선령을 따라가며 최대 42마리까지이고, 리피 구역과 폰타인 운동 에너지 공학 연구원 구역에서는 3/6/9마리로 최대 13마리, 모르트 구역과 에리니에스 숲 구역에서도 3/6/9마리로 최대 13마리다."
+      },
+      {
+       "t_raw": "같은 Seelie 계열 탐사라도 어느 Region 묶음에 속하느냐에 따라 **목표 단계와 상한이 달라지는 셈**이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 선령 계열 탐사라도 어느 지역 묶음에 속하느냐에 따라 **목표 단계와 상한이 달라지는 셈**이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Seelie",
+       "revision": 1592661,
+       "section": "Locations",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Seelie",
+       "revision": 1592661,
+       "section": "Locations",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Seelie",
+       "revision": 1592661,
+       "section": "Locations",
+       "paragraph": "M14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "폰타인의 하위 지역",
+     "latin_left": []
+    },
+    {
+     "section": "Fontaine의 하위 Region",
+     "status": "accepted",
+     "note": "Terminal locations, the Liffey waypoint unlock, and the Beryl Out of Bounds line are all stated; the closing reading stays interpretive.",
+     "quote": "Energy Transfer Terminals are an exploration mechanic in Fontaine currently found in the Liffey Region and Fontaine Research Institute of Kinetic Energy Engineering Region.",
+     "sentences": [
+      {
+       "t_raw": "Energy Transfer Terminal은 Fontaine의 탐사 요소로, 현재 Liffey Region과 Fontaine Research Institute of Kinetic Energy Engineering Region에서 발견된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전이 단말기는 폰타인의 탐사 요소로, 현재 리피 구역과 폰타인 운동 에너지 공학 연구원 구역에서 발견된다."
+      },
+      {
+       "t_raw": "Teleport Waypoint 가운데 Fortress of Meropide의 Reception Area에 있는 것은 Liffey Region 소속으로 적혀 있고, Fortress of Meropide 퀘스트를 진행하며 자동으로 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "워프 포인트 가운데 메로피드 요새의 접수처에 있는 것은 리피 구역 소속으로 적혀 있고, 메로피드 요새 퀘스트를 진행하며 자동으로 열린다."
+      },
+      {
+       "t_raw": "Out of Bounds의 특수 반응 목록에도 Beryl Region 항목이 올라 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "진입 불가 구역의 특수 반응 목록에도 푸른 수정 구역 항목이 올라 있다."
+      },
+      {
+       "t_raw": "위치와 해금 조건을 설명할 때 Region 이름이 함께 붙는 방식은 탐사 요소를 **Region 묶음 단위로 파악**하게 한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "위치와 해금 조건을 설명할 때 지역 이름이 함께 붙는 방식은 탐사 요소를 **지역 묶음 단위로 파악**하게 한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy Transfer Terminal",
+       "revision": 1372980,
+       "section": null,
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Out of Bounds",
+       "revision": 1629922,
+       "section": "Special Out of Bounds Reactions",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Teleport Waypoint",
+       "revision": 1532569,
+       "section": "Unlocking > Automatic Unlocks",
+       "paragraph": "M15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "폰타인의 하위 지역",
+     "latin_left": []
+    },
+    {
+     "section": "Fontaine의 하위 Region",
+     "status": "accepted",
+     "note": "Cornelia’s location and Aeval’s availability lines support the facts; calling Region a locating unit is a fair reading.",
+     "quote": "Cornelia is an open-world NPC located within Palais Mermonia, Court of Fontaine Region, Fontaine.",
+     "sentences": [
+      {
+       "t_raw": "이러한 표기는 인물 소개에서도 되풀이된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이러한 표기는 인물 소개에서도 되풀이된다."
+      },
+      {
+       "t_raw": "Cornelia는 Palais Mermonia, Court of Fontaine Region, Fontaine에 있는 오픈 월드 NPC로 적힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "코넬리아는 멜모니아궁, 폰타인성 구역, 폰타인에 있는 오픈 월드 NPC로 적힌다."
+      },
+      {
+       "t_raw": "Aeval은 Court Region Waterway Hub에서 만날 수 있으며, 그곳에 도착하는 즉시 이용 가능하다고 안내된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아이벨은 Court Region Waterway Hub에서 만날 수 있으며, 그곳에 도착하는 즉시 이용 가능하다고 안내된다."
+      },
+      {
+       "t_raw": "인물 소개와 시설 안내 모두 장소를 Region 이름까지 붙여 적는다는 점에서, Region은 NPC와 시설의 소재를 밝히는 기본 단위로 쓰인다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "인물 소개와 시설 안내 모두 장소를 지역 이름까지 붙여 적는다는 점에서, 지역은 NPC와 시설의 소재를 밝히는 기본 단위로 쓰인다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aeval",
+       "revision": 1338481,
+       "section": "Dialogue > Dialogue Set #3",
+       "paragraph": "M9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aeval",
+       "revision": 1338481,
+       "section": "Dialogue > Dialogue Set #2",
+       "paragraph": "M11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cornelia",
+       "revision": 1340325,
+       "section": null,
+       "paragraph": "M13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "폰타인의 하위 지역",
+     "latin_left": [
+      "NPC",
+      "Court Region Waterway Hub",
+      "NPC"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 1 drops “I’ve been to” and states the destination for every region. Sentence 2 treats “the region” as the floating town; the line places the town’s support in the region, not as a name for the town.",
+     "quote": "This floating town in the sky will keep on supporting the Cliff Keepers, ensuring lasting peace and prosperity in the region...",
+     "sentences": [
+      {
+       "t_raw": "하늘에 떠 있는 **floating town in the sky**가 Cliff Keepers를 지원하고 해당 Region의 평화와 번영을 보장한다는 대사가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하늘에 떠 있는 **공중 도시**가 Cliff Keepers를 지원하고 해당 지역의 평화와 번영을 보장한다는 대사가 있다.",
+       "polish": {
+        "from": "하늘에 떠 있는 **floating town in the sky**가 Cliff Keepers를 지원하고 해당 지역의 평화와 번영을 보장한다는 대사가 있다.",
+        "text": "하늘에 떠 있는 **공중 도시**가 Cliff Keepers를 지원하고 해당 지역의 평화와 번영을 보장한다는 대사가 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "보낸 사람은 달라도, 내가 가 본 모든 Region에서 계속 나오는 목적지가 하나 있다는 말도 나온다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "보낸 사람은 달라도, 내가 가 본 모든 지역에서 계속 나오는 목적지가 하나 있다는 말도 나온다."
+      },
+      {
+       "t_raw": "Region이 내가 가 본 곳들을 아우르는 여행 범위로도, 하늘의 마을이 Cliff Keepers를 지원해 평화와 번영을 이어 가는 지역으로도 쓰인 셈으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "지역이 내가 가 본 곳들을 아우르는 여행 범위로도, 하늘의 마을이 Cliff Keepers를 지원해 평화와 번영을 이어 가는 지역으로도 쓰인 셈으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Skycastle Saviors",
+       "quest_ko": "공중 마을 구출기",
+       "version": "3.8",
+       "speaker": "Narrator On Speaker"
+      },
+      {
+       "kind": "quest",
+       "quest": "Cards Out! Grievances Begone",
+       "quest_ko": "드로우! 풀린 감정",
+       "version": "3.7",
+       "speaker": "Kirara"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Cliff Keepers",
+      "Cliff Keepers"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Cause, the temporary limit on expansion, and the caravan/Vasanti plan are all in the lines; the last sentence only ties those contexts together.",
+     "quote": "the contaminated region turned out to be a Ley Line effluence deep in the forest. Things are already getting back to normal.",
+     "sentences": [
+      {
+       "t_raw": "오염된 지역은 숲 깊은 곳의 Ley Line effluence로 밝혀졌고, 상황은 정상으로 돌아가고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오염된 지역은 숲 깊은 곳의 지맥 유출물로 밝혀졌고, 상황은 정상으로 돌아가고 있다.",
+       "polish": {
+        "from": "오염된 지역은 숲 깊은 곳의 지맥 effluence로 밝혀졌고, 상황은 정상으로 돌아가고 있다.",
+        "text": "오염된 지역은 숲 깊은 곳의 지맥 유출물로 밝혀졌고, 상황은 정상으로 돌아가고 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Purification Devices는 오염된 지역의 확장을 일시적으로 막는 데 그친다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Purification Devices는 오염된 지역의 확장을 일시적으로 막는 데 그친다."
+      },
+      {
+       "t_raw": "이들은 caravans에 연락해 Vasanti Grass를 사고 오염된 지역에 대해 묻자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 캐러번에 연락해 Vasanti Grass를 사고 오염된 지역에 대해 묻자고 한다.",
+       "polish": {
+        "from": "이들은 caravans에 연락해 Vasanti Grass를 사고 오염된 지역에 대해 묻자고 한다.",
+        "text": "이들은 캐러번에 연락해 Vasanti Grass를 사고 오염된 지역에 대해 묻자고 한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "**오염된 지역**이라는 말이 원인과 대응의 한계를 함께 다루는 맥락에 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**오염된 지역**이라는 말이 원인과 대응의 한계를 함께 다루는 맥락에 놓인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Garden Memories",
+       "quest_ko": "화원의 기억",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Into the Hinterland",
+       "quest_ko": "오지의 깊은 곳으로",
+       "version": "3.0",
+       "speaker": "Tighnari"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Start of Contamination",
+       "quest_ko": "오염의 시작",
+       "version": "3.0",
+       "speaker": "Tighnari"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Purification Devices",
+      "Vasanti Grass"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful rendering of Zhongli's line: each region's own tea traditions and culture, and the duty to respect local conventions.",
+     "t_raw": "각 지역은 고유한 차 전통과 문화를 지닌다. 사람은 언제나 그 지역의 관습을 존중해야 한다.",
+     "en": "Each region has its own tea traditions and culture. One should always respect the conventions of the local region.",
+     "speaker": "Zhongli",
+     "source": {
+      "kind": "quest",
+      "quest": "Surrounded by the Aroma of Tea",
+      "quest_ko": "자욱한 차 향기",
+      "version": "2.5",
+      "speaker": "Zhongli"
+     },
+     "t": "각 지역은 고유한 차 전통과 문화를 지닌다. 사람은 언제나 그 지역의 관습을 존중해야 한다.",
+     "speaker_ko": "종려"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful rendering of Paimon's line: the contaminated region was a Ley Line effluence deep in the forest, and things are already returning to normal.",
+     "t_raw": "…아무튼, 그래서 오염된 지역은 숲 깊은 곳의 Ley Line effluence였던 것으로 밝혀졌다. 상황은 이미 정상으로 돌아가고 있다.",
+     "en": "...Anyway, so the contaminated region turned out to be a Ley Line effluence deep in the forest. Things are already getting back to normal.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Garden Memories",
+      "quest_ko": "화원의 기억",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "…아무튼, 그래서 오염된 지역은 숲 깊은 곳의 지맥 effluence였던 것으로 밝혀졌다. 상황은 이미 정상으로 돌아가고 있다.",
+     "speaker_ko": "페이몬"
+    }
+   ]
+  }
+ ]
+}

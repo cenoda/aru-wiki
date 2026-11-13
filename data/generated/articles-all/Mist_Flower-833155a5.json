@@ -1,0 +1,600 @@
+{
+ "node": "Mist Flower",
+ "articles": [
+  {
+   "node": "Mist Flower",
+   "from_version": "2.6",
+   "cutoff": "2022-05-30T00:00:00Z",
+   "input": [
+    {
+     "page": "Mist Flower",
+     "url": "https://genshin-impact.fandom.com/wiki/Mist_Flower",
+     "revision": 682237
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 6,
+    "web": 0
+   },
+   "input_chars": 210,
+   "input_cut": false,
+   "input_hash": "f23a77c35288",
+   "writer": "or-ds,glm-flash,glm,ds-pro,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, M1, Q3, Q4 and Q6. The interpretation follows reasonably.",
+     "quote": "Mist Flowers are objects found in Teyvat. Every 4.5 seconds, Mist Flowers will deal 300% ATK as AoE Cryo DMG around themselves.",
+     "sentences": [
+      {
+       "t_raw": "Mist Flower는 Teyvat에서 발견되는 물체로, 일정 시간마다 주변에 얼음 원소 피해를 입히고 공격을 받으면 꺼져 수확할 수 있게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "안개꽃은 티바트에서 발견되는 물체로, 일정 시간마다 주변에 얼음 원소 피해를 입히고 공격을 받으면 꺼져 수확할 수 있게 된다."
+      },
+      {
+       "t_raw": "Xiangling은 Mist Flower를 실험적인 요리 재료로 썼고, Connor는 **Mist Flower Corolla** 세 개를 의뢰에서 요구했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "향릉은 안개꽃을 실험적인 요리 재료로 썼고, 코너는 **서리꽃 꽃술** 세 개를 의뢰에서 요구했다."
+      },
+      {
+       "t_raw": "Connor의 Mist Flower extract는 제조법이 비밀에 부쳐졌으며, Diluc은 이를 **Elemental Bait**라고 불렀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "코너의 안개꽃 추출물은 제조법이 비밀에 부쳐졌으며, 다이루크는 이를 **원소 미끼**라고 불렀다.",
+       "polish": {
+        "from": "코너의 안개꽃 extract는 제조법이 비밀에 부쳐졌으며, 다이루크는 이를 **원소 미끼**라고 불렀다.",
+        "text": "코너의 안개꽃 추출물은 제조법이 비밀에 부쳐졌으며, 다이루크는 이를 **원소 미끼**라고 불렀다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "전투 중 주변에 얼음 원소 피해를 주는 물체이면서 요리와 추출물의 재료로도 이름을 올리는 점은, Mist Flower가 전투와 생활 양쪽에서 쓰이는 소재임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "전투 중 주변에 얼음 원소 피해를 주는 물체이면서 요리와 추출물의 재료로도 이름을 올리는 점은, 안개꽃이 전투와 생활 양쪽에서 쓰이는 소재임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mist Flower",
+       "revision": 682237,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Xiangling/Profile",
+       "revision": 425641,
+       "section": "Official Introduction",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Connor's Brew",
+       "quest_ko": "코너의 주조 재료 의뢰",
+       "version": "1.1",
+       "speaker": "Connor"
+      },
+      {
+       "kind": "quest",
+       "quest": "Darknight Hero's Alibi (Quest)",
+       "quest_ko": "다크 히어로의 알리바이",
+       "version": "1.0",
+       "speaker": "Connor"
+      },
+      {
+       "kind": "quest",
+       "quest": "Darknight Hero's Alibi (Quest)",
+       "quest_ko": "다크 히어로의 알리바이",
+       "version": "1.0",
+       "speaker": "Diluc"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The 4.5 s interval, 300% ATK Cryo AoE and the interpretation are all supported by A1.",
+     "quote": "Mist Flowers are objects found in Teyvat. Every 4.5 seconds, Mist Flowers will deal 300% ATK as AoE Cryo DMG around themselves.",
+     "sentences": [
+      {
+       "t_raw": "Mist Flower는 Teyvat에서 발견되는 물체다.",
+       "interp": false,
+       "dropped": false,
+       "t": "안개꽃은 티바트에서 발견되는 물체다."
+      },
+      {
+       "t_raw": "그대로 두면 **4.5초마다** 자신을 둘러싼 주변에 공격력의 300%에 해당하는 Cryo 원소 피해를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그대로 두면 **4.5초마다** 자신을 둘러싼 주변에 공격력의 300%에 해당하는 얼음 원소 피해를 준다."
+      },
+      {
+       "t_raw": "매번 같은 간격으로 피해가 되풀이되는 셈이라, Mist Flower가 놓인 자리는 그 자체로 위험한 공간이 된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "매번 같은 간격으로 피해가 되풀이되는 셈이라, 안개꽃이 놓인 자리는 그 자체로 위험한 공간이 된다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mist Flower",
+       "revision": 682237,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Being extinguished when hit and then harvestable is stated in A1. The interpretation is a reasonable reading.",
+     "quote": "When hit by a attack, they will be extinguished, allowing the player to harvest a.",
+     "sentences": [
+      {
+       "t_raw": "이 물체는 공격을 받으면 **꺼진다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 물체는 공격을 받으면 **꺼진다**."
+      },
+      {
+       "t_raw": "꺼진 뒤에는 수확할 수 있게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꺼진 뒤에는 수확할 수 있게 된다."
+      },
+      {
+       "t_raw": "피해를 주는 상태와 손에 넣을 수 있는 상태가 공격 한 번으로 갈리는 셈이라, Mist Flower를 얻는 일은 그 냉기를 끄는 데서 시작한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "피해를 주는 상태와 손에 넣을 수 있는 상태가 공격 한 번으로 갈리는 셈이라, 안개꽃을 얻는 일은 그 냉기를 끄는 데서 시작한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mist Flower",
+       "revision": 682237,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The wok cracking from flash-freezing is in M2. The interpretation is hedged and follows from the material.",
+     "quote": "cracks would appear due to flash-freezing from a Mist Flower",
+     "sentences": [
+      {
+       "t_raw": "Mist Flower에서 나온 **급격한 냉동** 때문에 Xiangling의 솥에 금이 간 일이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "안개꽃에서 나온 **급격한 냉동** 때문에 향릉의 솥에 금이 간 일이 있다."
+      },
+      {
+       "t_raw": "솥이 금이 갈 만큼의 냉기가 4.5초마다 주변에 되풀이된다는 점에서, Mist Flower가 뿜는 냉기는 상당한 위력이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "솥이 금이 갈 만큼의 냉기가 4.5초마다 주변에 되풀이된다는 점에서, 안개꽃이 뿜는 냉기는 상당한 위력이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mist Flower",
+       "revision": 682237,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Xiangling/Profile",
+       "revision": 425641,
+       "section": "Character Stories > Story 1",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "요리와 재료",
+     "status": "accepted",
+     "note": "M1 and Q1 support the facts. The interpretation is hedged with '보인다'.",
+     "quote": "Xiangling is known to be somewhat adventurous with her choice of cooking ingredients.",
+     "sentences": [
+      {
+       "t_raw": "Xiangling은 Mist Flower 한 줌과 Slime Condensate 한 방울에서부터 정체불명의 날아다니는 곤충, hilichurl의 나무 몽둥이에 이르기까지 이것저것을 재료로 쓰는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "향릉은 안개꽃 한 줌과 슬라임 응축액 한 방울에서부터 정체불명의 날아다니는 곤충, 츄츄족의 나무 몽둥이에 이르기까지 이것저것을 재료로 쓰는 인물이다.",
+       "polish": {
+        "from": "향릉은 안개꽃 한 줌과 슬라임 응축액 한 방울에서부터 정체불명의 날아다니는 곤충, hilichurl의 나무 몽둥이에 이르기까지 이것저것을 재료로 쓰는 인물이다.",
+        "text": "향릉은 안개꽃 한 줌과 슬라임 응축액 한 방울에서부터 정체불명의 날아다니는 곤충, 츄츄족의 나무 몽둥이에 이르기까지 이것저것을 재료로 쓰는 인물이다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그녀의 재료 선택이 상당히 모험적이라고 알려져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀의 재료 선택이 상당히 모험적이라고 알려져 있다."
+      },
+      {
+       "t_raw": "Paimon은 Jueyun Chili와 Ham, 그리고 Mist Flower Corolla를 함께 모으자고 제안한 적이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 절운고추와 햄, 그리고 서리꽃 꽃술을 함께 모으자고 제안한 적이 있다."
+      },
+      {
+       "t_raw": "**Mist Flower**는 이렇게 요리 재료를 세는 자리마다 이름을 올리는 물체로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**안개꽃**은 이렇게 요리 재료를 세는 자리마다 이름을 올리는 물체로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Xiangling/Profile",
+       "revision": 425641,
+       "section": "Official Introduction",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Flower Blooms in a Prison",
+       "quest_ko": "옥중에서 피어나는 꽃",
+       "version": "2.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "요리와 재료",
+     "latin_left": []
+    },
+    {
+     "section": "요리와 재료",
+     "status": "accepted",
+     "note": "M2 supports all the facts. The interpretation is hedged and reasonable.",
+     "quote": "cracks would appear due to flash-freezing from a Mist Flower",
+     "sentences": [
+      {
+       "t_raw": "Xiangling은 그동안 많은 wok을 망가뜨렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "향릉은 그동안 많은 웍을 망가뜨렸다.",
+       "polish": {
+        "from": "향릉은 그동안 많은 wok을 망가뜨렸다.",
+        "text": "향릉은 그동안 많은 웍을 망가뜨렸다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Pyro Slime의 열로 안쪽이 돌이킬 수 없이 그을거나, Mist Flower로 인한 급속 냉동으로 금이 가는 일이 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "화염 슬라임의 열로 안쪽이 돌이킬 수 없이 그을거나, 안개꽃으로 인한 급속 냉동으로 금이 가는 일이 있었다."
+      },
+      {
+       "t_raw": "요리 과정 어느 단계에서 소규모 폭발이 일어나 wok이 고철이 되기도 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요리 과정 어느 단계에서 소규모 폭발이 일어나 웍이 고철이 되기도 했다.",
+       "polish": {
+        "from": "요리 과정 어느 단계에서 소규모 폭발이 일어나 wok이 고철이 되기도 했다.",
+        "text": "요리 과정 어느 단계에서 소규모 폭발이 일어나 웍이 고철이 되기도 했다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Xiangling의 아버지는 오랜 고민 끝에 그런 파괴에도 딸을 부엌에서 쫓아내지 않기로 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "향릉의 아버지는 오랜 고민 끝에 그런 파괴에도 딸을 부엌에서 쫓아내지 않기로 했다."
+      },
+      {
+       "t_raw": "Mist Flower로 wok에 금이 가는 사고를 겪고도 아버지가 딸을 부엌에 남겨 두었다는 점에서, 이 재료는 Xiangling의 실험적인 요리와 늘 함께 굴러간 사고의 한 축으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "안개꽃으로 웍에 금이 가는 사고를 겪고도 아버지가 딸을 부엌에 남겨 두었다는 점에서, 이 재료는 향릉의 실험적인 요리와 늘 함께 굴러간 사고의 한 축으로 보인다.",
+       "polish": {
+        "from": "안개꽃으로 wok에 금이 가는 사고를 겪고도 아버지가 딸을 부엌에 남겨 두었다는 점에서, 이 재료는 향릉의 실험적인 요리와 늘 함께 굴러간 사고의 한 축으로 보인다.",
+        "text": "안개꽃으로 웍에 금이 가는 사고를 겪고도 아버지가 딸을 부엌에 남겨 두었다는 점에서, 이 재료는 향릉의 실험적인 요리와 늘 함께 굴러간 사고의 한 축으로 보인다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Xiangling/Profile",
+       "revision": 425641,
+       "section": "Character Stories > Story 1",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "요리와 재료",
+     "latin_left": []
+    },
+    {
+     "section": "요리와 재료",
+     "status": "accepted",
+     "note": "All sentences follow from Q3 and Q5, and the interpretation in (3) is reasonable.",
+     "quote": "These Mist Flower Corollas are of fine quality indeed.",
+     "sentences": [
+      {
+       "t_raw": "Connor는 Mist Flower Corolla 세 개를 구해 오는 의뢰를 걸었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "코너는 서리꽃 꽃술 세 개를 구해 오는 의뢰를 걸었다."
+      },
+      {
+       "t_raw": "의뢰를 확인한 그는 받은 Mist Flower Corolla를 두고 품질이 정말 좋다며 감탄한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "의뢰를 확인한 그는 받은 서리꽃 꽃술을 두고 품질이 정말 좋다며 감탄한다."
+      },
+      {
+       "t_raw": "**Mist Flower Corolla**는 이렇게 의뢰로 조달하는 재료로도 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**서리꽃 꽃술**은 이렇게 의뢰로 조달하는 재료로도 등장한다."
+      },
+      {
+       "t_raw": "수량을 세어 오게 하고 품질까지 따로 평한다는 점에서, Mist Flower Corolla는 조달 과정에서 상태가 문제되는 재료로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "수량을 세어 오게 하고 품질까지 따로 평한다는 점에서, 서리꽃 꽃술은 조달 과정에서 상태가 문제되는 재료로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Connor's Brew",
+       "quest_ko": "코너의 주조 재료 의뢰",
+       "version": "1.1",
+       "speaker": "Connor"
+      },
+      {
+       "kind": "quest",
+       "quest": "Connor's Brew",
+       "quest_ko": "코너의 주조 재료 의뢰",
+       "version": "1.1",
+       "speaker": "Connor"
+      }
+     ],
+     "heading": "요리와 재료",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Sentence 2 claims the method was still unknown when the quest ended. The English only says Connor asks for secrecy until he publishes.",
+     "quote": "The method for obtaining mist flower extract is kind of my own invention. So please, keep it a secret until I've managed to publish it.",
+     "sentences": [
+      {
+       "t_raw": "『Darknight Hero's Alibi』에서 Connor는 자신이 의뢰에 쓴 Mist Flower extract의 제조법이 **일종의 자기 발명품**이라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "『다크 히어로의 알리바이』에서 코너는 자신이 의뢰에 쓴 안개꽃 추출물의 제조법이 **일종의 자기 발명품**이라고 밝힌다.",
+       "polish": {
+        "from": "『다크 히어로의 알리바이』에서 코너는 자신이 의뢰에 쓴 안개꽃 extract의 제조법이 **일종의 자기 발명품**이라고 밝힌다.",
+        "text": "『다크 히어로의 알리바이』에서 코너는 자신이 의뢰에 쓴 안개꽃 추출물의 제조법이 **일종의 자기 발명품**이라고 밝힌다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "동시에 그는 자신이 논문으로 발표할 수 있을 때까지는 비밀로 해 달라고 부탁하는데, 제법의 존재는 공개되고 정작 내용은 감춰진 셈이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동시에 그는 자신이 논문으로 발표할 수 있을 때까지는 비밀로 해 달라고 부탁하는데, 제법의 존재는 공개되고 정작 내용은 감춰진 셈이 되었다."
+      },
+      {
+       "t_raw": "Connor는 Mist Flower 추출법이 자신이 고안한 방법이라며, 출판할 때까지 비밀로 해 달라고 했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "코너는 안개꽃 추출법이 자신이 고안한 방법이라며, 출판할 때까지 비밀로 해 달라고 했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Darknight Hero's Alibi (Quest)",
+       "quest_ko": "다크 히어로의 알리바이",
+       "version": "1.0",
+       "speaker": "Connor"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Diluc's line and the Cryo damage in A1 support the sentences. Sentence 2 is a hedged interpretation.",
+     "quote": "Mist Flower extract... or for our purposes, \"Elemental Bait.\"",
+     "sentences": [
+      {
+       "t_raw": "이 extract가 실제로 어디에 쓰이는지는 Diluc의 한마디로 짐작할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 추출물이 실제로 어디에 쓰이는지는 다이루크의 한마디로 짐작할 수 있다.",
+       "polish": {
+        "from": "이 extract가 실제로 어디에 쓰이는지는 다이루크의 한마디로 짐작할 수 있다.",
+        "text": "이 추출물이 실제로 어디에 쓰이는지는 다이루크의 한마디로 짐작할 수 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그는 Mist Flower extract를 **우리 목적에서는 \"Elemental Bait\"**라고 불렀는데, 이는 Mist Flower가 지닌 얼음 원소의 성질이 어떤 방식으로 이용되고 있음을 시사한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그는 안개꽃 추출물을 **우리 목적에서는 \"원소 미끼\"**라고 불렀는데, 이는 안개꽃이 지닌 얼음 원소의 성질이 어떤 방식으로 이용되고 있음을 시사한다.",
+       "polish": {
+        "from": "그는 안개꽃 extract를 **우리 목적에서는 \"원소 미끼\"**라고 불렀는데, 이는 안개꽃이 지닌 얼음 원소의 성질이 어떤 방식으로 이용되고 있음을 시사한다.",
+        "text": "그는 안개꽃 추출물을 **우리 목적에서는 \"원소 미끼\"**라고 불렀는데, 이는 안개꽃이 지닌 얼음 원소의 성질이 어떤 방식으로 이용되고 있음을 시사한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "다만 그 정확한 용도나 사용처가 무엇인지는 자세히 밝혀지지 않아, 미공개 제조법과 함께 남는 수수께끼로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "다만 그 정확한 용도나 사용처가 무엇인지는 자세히 밝혀지지 않아, 미공개 제조법과 함께 남는 수수께끼로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Darknight Hero's Alibi (Quest)",
+       "quest_ko": "다크 히어로의 알리바이",
+       "version": "1.0",
+       "speaker": "Diluc"
+      },
+      {
+       "kind": "wiki",
+       "page": "Mist Flower",
+       "revision": 682237,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Q2 supports all sentences.",
+     "quote": "Oh, you know... Really bright colors, like red Jueyun Chilis, blue Mist Flower...",
+     "sentences": [
+      {
+       "t_raw": "Ji Tong은 정말 **밝은 색**을 이야기하면서 red Jueyun Chilis와 blue Mist Flower를 예로 든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동식은 정말 **밝은 색**을 이야기하면서 빨간 절운고추와 파란 안개꽃을 예로 든다.",
+       "polish": {
+        "from": "동식은 정말 **밝은 색**을 이야기하면서 red 절운고추와 blue 안개꽃을 예로 든다.",
+        "text": "동식은 정말 **밝은 색**을 이야기하면서 빨간 절운고추와 파란 안개꽃을 예로 든다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "이 대사에서 Mist Flower는 **blue Mist Flower**로 불리며 밝은 색의 사례 가운데 하나로 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 대사에서 안개꽃은 **파란 안개꽃**으로 불리며 밝은 색의 사례 가운데 하나로 등장한다.",
+       "polish": {
+        "from": "이 대사에서 안개꽃은 **blue 안개꽃**으로 불리며 밝은 색의 사례 가운데 하나로 등장한다.",
+        "text": "이 대사에서 안개꽃은 **파란 안개꽃**으로 불리며 밝은 색의 사례 가운데 하나로 등장한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "red Jueyun Chilis와 blue Mist Flower가 나란히 제시된 점은 Mist Flower가 색채를 설명하는 예시로 쓰인 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "빨간 절운고추와 파란 안개꽃이 나란히 제시된 점은 안개꽃이 색채를 설명하는 예시로 쓰인 대목으로 보인다.",
+       "polish": {
+        "from": "red 절운고추와 blue 안개꽃이 나란히 제시된 점은 안개꽃이 색채를 설명하는 예시로 쓰인 대목으로 보인다.",
+        "text": "빨간 절운고추와 파란 안개꽃이 나란히 제시된 점은 안개꽃이 색채를 설명하는 예시로 쓰인 대목으로 보인다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Kurious Kamera (Quest)",
+       "quest_ko": "특별한 기념 사진",
+       "version": "1.3",
+       "speaker": "Ji Tong"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "요리와 재료",
+     "status": "accepted",
+     "note": "A faithful translation of the line.",
+     "t_raw": "아, 제 의뢰를 보셨군요. 그럼, 혹시 그 Mist Flower Corolla 세 개를 가지고 계신가요?",
+     "en": "Ah, you must have seen that commission of mine. So, do you have those three Mist Flower Corollas handy?",
+     "speaker": "Connor",
+     "source": {
+      "kind": "quest",
+      "quest": "Connor's Brew",
+      "quest_ko": "코너의 주조 재료 의뢰",
+      "version": "1.1",
+      "speaker": "Connor"
+     },
+     "t": "아, 제 의뢰를 보셨군요. 그럼, 혹시 그 서리꽃 꽃술 세 개를 가지고 계신가요?",
+     "speaker_ko": "코너"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "A faithful translation of the line.",
+     "t_raw": "Mist Flower 추출물…… 우리 목적에서는 'Elemental Bait'라고 부르지.",
+     "en": "Mist Flower extract... or for our purposes, \"Elemental Bait.\"",
+     "speaker": "Diluc",
+     "source": {
+      "kind": "quest",
+      "quest": "Darknight Hero's Alibi (Quest)",
+      "quest_ko": "다크 히어로의 알리바이",
+      "version": "1.0",
+      "speaker": "Diluc"
+     },
+     "t": "안개꽃 추출물…… 우리 목적에서는 '원소 미끼'라고 부르지.",
+     "speaker_ko": "다이루크"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Ji Tong's line; all elements (bright colors, red Jueyun Chilis, blue Mist Flower) are rendered correctly.",
+     "t_raw": "아, 있잖아... 정말 밝은 색들, red Jueyun Chilis, blue Mist Flower 같은...",
+     "en": "Oh, you know... Really bright colors, like red Jueyun Chilis, blue Mist Flower...",
+     "speaker": "Ji Tong",
+     "source": {
+      "kind": "quest",
+      "quest": "Kurious Kamera (Quest)",
+      "quest_ko": "특별한 기념 사진",
+      "version": "1.3",
+      "speaker": "Ji Tong"
+     },
+     "t": "아, 있잖아... 정말 밝은 색들, red 절운고추, blue 안개꽃 같은...",
+     "speaker_ko": "동식"
+    }
+   ]
+  }
+ ]
+}

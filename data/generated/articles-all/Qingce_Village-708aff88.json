@@ -1,0 +1,947 @@
+{
+ "node": "Qingce Village",
+ "articles": [
+  {
+   "node": "Qingce Village",
+   "from_version": "1.1",
+   "cutoff": "2020-12-22T00:00:00Z",
+   "input": [
+    {
+     "page": "Qingce Village",
+     "url": "https://genshin-impact.fandom.com/wiki/Qingce_Village",
+     "revision": 63052
+    }
+   ],
+   "input_counts": {
+    "mentions": 16,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 726,
+   "input_cut": false,
+   "input_hash": "1e095c6d8072",
+   "writer": "kimi,ds,glm",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "Sentence 1 says the young people left. The English only says many people moved away because of the quietness, leaving mostly elderly people. It never says who left.",
+     "quote": "Do you see those sturdy trees near Qingce Village? Those are Blood-Fed Trees, said to have been nourished by the blood of the Chi.",
+     "sentences": [
+      {
+       "t_raw": "Qingce Village는 Liyue 북단 Bishui Plain에 자리한 마을로, 산과 대숲 사이로 달 모양의 계단식 논이 펼쳐져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경책 산장은 리월 북단 벽수원에 자리한 마을로, 산과 대숲 사이로 달 모양의 계단식 논이 펼쳐져 있다."
+      },
+      {
+       "t_raw": "조용한 탓에 많은 사람이 다른 곳으로 떠나, 대부분 노인이 손주를 돌보며 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "조용한 탓에 많은 사람이 다른 곳으로 떠나, 대부분 노인이 손주를 돌보며 남아 있다."
+      },
+      {
+       "t_raw": "그런 한적한 마을에 **Chi의 피로 자란 Blood-Fed Trees**와 **1.1 시점의 마물 출몰**이 얽혀 있어, 모험가와 수호자들이 교차하는 무대라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그런 한적한 마을에 **교룡의 피로 자란 피 먹은 나무**와 **1.1 시점의 마물 출몰**이 얽혀 있어, 모험가와 수호자들이 교차하는 무대라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Qingce Village",
+       "revision": 63052,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Liyue",
+       "revision": 72838,
+       "section": "Areas",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Siege of Qingce",
+       "quest_ko": "포위된 경책",
+       "version": "1.1",
+       "speaker": "Jinglun"
+      },
+      {
+       "kind": "quest",
+       "quest": "Trouble With Letters",
+       "quest_ko": "전하지 못한 편지",
+       "version": "1.1",
+       "speaker": "Jiayi"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Granny Ruoxin"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Siege of Qingce",
+       "quest_ko": "포위된 경책",
+       "version": "1.1",
+       "speaker": "Jinglun"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by the Liyue area description and the Stone Gate description.",
+     "quote": "At the northernmost point of Liyue, hidden between the hills and the bamboo forests sits Qingce Village.",
+     "sentences": [
+      {
+       "t_raw": "Qingce Village는 Liyue의 Bishui Plain에 자리한 마을로, Liyue 북단 끝에서 언덕과 대나무 숲 사이에 감춰져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경책 산장은 리월의 벽수원에 자리한 마을로, 리월 북단 끝에서 언덕과 대나무 숲 사이에 감춰져 있다."
+      },
+      {
+       "t_raw": "산과 산 사이 골짜기에 깔린 흰 구름 사이로 초승달 모양의 논이 줄지어 펼쳐져 있고, 바람이 불면 물결이 여러 빛깔을 내뿜는 풍경이 이 마을의 얼굴이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산과 산 사이 골짜기에 깔린 흰 구름 사이로 초승달 모양의 논이 줄지어 펼쳐져 있고, 바람이 불면 물결이 여러 빛깔을 내뿜는 풍경이 이 마을의 얼굴이다."
+      },
+      {
+       "t_raw": "Mondstadt와 Liyue를 잇는 큰길 위의 Stone Gate에서 북서쪽 길을 따라가면 Qingce Village로 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드와 리월을 잇는 큰길 위의 석문에서 북서쪽 길을 따라가면 경책 산장으로 이어진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Qingce Village",
+       "revision": 63052,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Liyue",
+       "revision": 72838,
+       "section": "Areas",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Stone Gate",
+       "revision": 67543,
+       "section": null,
+       "paragraph": "M12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Bishui Plain",
+       "revision": 63037,
+       "section": "Areas",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "trimmed",
+     "note": "The English does not say the village stayed undeveloped or contrast it with Liyue Harbor's glamour. That contrast is an added fact.",
+     "quote": "Due to the quietness, many people moved away in favor of other locations, leaving mostly elderly people watching over their grandchildren.",
+     "sentences": [
+      {
+       "t_raw": "그러나 이 그림 같은 마을은 한적한 곳이라 사람들이 하나둘 다른 곳으로 떠나났고, 남은 것은 손주를 돌보는 노인들뿐인 **정겹지만 쓸쓸한 마을**이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 이 그림 같은 마을은 한적한 곳이라 사람들이 하나둘 다른 곳으로 떠나났고, 남은 것은 손주를 돌보는 노인들뿐인 **정겹지만 쓸쓸한 마을**이 되었다."
+      },
+      {
+       "t_raw": "크게 발전하지 않고 고요를 유지하는 마을이라는 점이, 화려한 항구 도시 Liyue Harbor와는 대비되는 Qingce Village의 분위기를 만든다.",
+       "interp": false,
+       "dropped": true,
+       "t": "크게 발전하지 않고 고요를 유지하는 마을이라는 점이, 화려한 항구 도시 리월항와는 대비되는 경책 산장의 분위기를 만든다."
+      },
+      {
+       "t_raw": "큰길과 이어지는 Stone Gate를 통해 외부와 통하는 길이 있음에도 마을이 이토록 조용하다고 볼 수 있는 것은, 고요함 자체가 사람들이 떠나간 원인이 되었음을 보여주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "큰길과 이어지는 석문을 통해 외부와 통하는 길이 있음에도 마을이 이토록 조용하다고 볼 수 있는 것은, 고요함 자체가 사람들이 떠나간 원인이 되었음을 보여주는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Qingce Village",
+       "revision": 63052,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Stone Gate",
+       "revision": 67543,
+       "section": null,
+       "paragraph": "M12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The English says the bulletin board holds postings by residents. It does not say anything about outside news never stopping, so that is an unsupported addition.",
+     "quote": "Buildings in Qingce Village have a simple architectural style, and most are made of wood with blue roofs.",
+     "sentences": [
+      {
+       "t_raw": "Qingce Village의 집들은 **나무 건축과 푸른 지붕**이 어우러진 소박한 양식을 따르므로, 마을 전체가 단정한 시골 풍경을 이룬다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경책 산장의 집들은 **나무 건축과 푸른 지붕**이 어우러진 소박한 양식을 따르므로, 마을 전체가 단정한 시골 풍경을 이룬다."
+      },
+      {
+       "t_raw": "마을 안에는 커뮤니티 센터가 있고, 그곳에서 Granny Ruoxin을 만날 수 있으며, Ms. Bai의 방앗간과 Pops Kai의 찻집, 시장이 자리 잡고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마을 안에는 커뮤니티 센터가 있고, 그곳에서 약심을 만날 수 있으며, 소백의 방앗간과 개언 아저씨의 찻집, 시장이 자리 잡고 있다."
+      },
+      {
+       "t_raw": "주민들이 붙인 광고와 갖가지 게시물을 읽을 수 있는 Qingce Village 게시판은, 마을 사람들의 알림이 모이는 공간으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "주민들이 붙인 광고와 갖가지 게시물을 읽을 수 있는 경책 산장 게시판은, 마을 사람들의 알림이 모이는 공간으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Qingce Village",
+       "revision": 63052,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Qingce Village",
+       "revision": 63052,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All sentences are supported. The greeting is quoted from Granny Ruoxin's dialogue, and the interpretation stays within the material.",
+     "quote": "Hello traveler. Welcome to Qingce Village.",
+     "sentences": [
+      {
+       "t_raw": "물가에 가까운 북서쪽에는 층층이 이어진 꽃밭이 펼쳐져 있고, 그곳에서 **Glaze Lilies**가 자라며 Slime도 함께 출몰한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물가에 가까운 북서쪽에는 층층이 이어진 꽃밭이 펼쳐져 있고, 그곳에서 **유리백합**이 자라며 슬라임도 함께 출몰한다."
+      },
+      {
+       "t_raw": "고요한 풍경과 마물이 공존하는 이 대조는, Qingce Village가 평화로운 농촌의 모습만으로는 다 설명되지 않는, 살아 있는 자연이 그대로 남은 공간이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "고요한 풍경과 마물이 공존하는 이 대조는, 경책 산장이 평화로운 농촌의 모습만으로는 다 설명되지 않는, 살아 있는 자연이 그대로 남은 공간이라고 볼 수 있다."
+      },
+      {
+       "t_raw": "Qingce Village의 **커뮤니티 센터**에서 Granny Ruoxin이 여행자를 \"Hello traveler. Welcome to Qingce Village.\"라고 반긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경책 산장의 **커뮤니티 센터**에서 약심이 여행자를 \"Hello traveler. Welcome to 경책 산장.\"라고 반긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Qingce Village",
+       "revision": 63052,
+       "section": "Description",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Qingce Village",
+       "revision": 63052,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Granny Ruoxin",
+       "revision": 72072,
+       "section": "Dialogue",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Granny Ruoxin",
+       "revision": 72072,
+       "section": null,
+       "paragraph": "M8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "Hello",
+      "Welcome"
+     ]
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences are supported by Q5 and Q10, and the interpretation follows from them.",
+     "quote": "Do you see those sturdy trees near Qingce Village? Those are Blood-Fed Trees, said to have been nourished by the blood of the Chi.",
+     "sentences": [
+      {
+       "t_raw": "Qingce Village 근처에 서 있는 튼튼한 나무들을 두고 Granny Ruoxin은 Chi의 피로 자랐다고 전해지는 Blood-Fed Trees라고 일러 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경책 산장 근처에 서 있는 튼튼한 나무들을 두고 약심은 교룡의 피로 자랐다고 전해지는 피 먹은 나무라고 일러 준다."
+      },
+      {
+       "t_raw": "Chi를 다루는 이야기에서 Yan'er는 이곳의 이름을 알고 있느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "교룡을 다루는 이야기에서 연아는 이곳의 이름을 알고 있느냐고 묻는다."
+      },
+      {
+       "t_raw": "마을의 이름과 Chi의 전승이 같은 이야기 안에서 함께 등장하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마을의 이름과 교룡의 전승이 같은 이야기 안에서 함께 등장하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Granny Ruoxin"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Yan'er"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences match Q2, Q8 and Q1. The interpretation is reasonable.",
+     "quote": "That said, I've heard from people who've come to stand down from duty that quite a few monsters have gathered near Qingce Village as well.",
+     "sentences": [
+      {
+       "t_raw": "1.1 시점에 Qingce Village 근처에는 마물이 꽤 많이 모여 있었다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "1.1 시점에 경책 산장 근처에는 마물이 꽤 많이 모여 있었다고 한다."
+      },
+      {
+       "t_raw": "Jiayi는 근무를 서다 내려온 사람들에게서 그 소식을 들었다며, 편지를 전하는 김에 마을 주변을 살펴 마물을 정리해 달라고 부탁한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가의는 근무를 서다 내려온 사람들에게서 그 소식을 들었다며, 편지를 전하는 김에 마을 주변을 살펴 마물을 정리해 달라고 부탁한다."
+      },
+      {
+       "t_raw": "Jinglun은 지키고 있는 한 Qingce Village에 큰 피해는 없을 것이라고 말하지만, 도시에서 오는 보급품은 바깥에서 들어와야 한다는 점을 함께 짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경륜은 지키고 있는 한 경책 산장에 큰 피해는 없을 것이라고 말하지만, 도시에서 오는 보급품은 바깥에서 들어와야 한다는 점을 함께 짚는다."
+      },
+      {
+       "t_raw": "마을을 지키는 일이 경비와 외부 보급이라는 두 가지에 함께 매달려 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마을을 지키는 일이 경비와 외부 보급이라는 두 가지에 함께 매달려 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Trouble With Letters",
+       "quest_ko": "전하지 못한 편지",
+       "version": "1.1",
+       "speaker": "Jiayi"
+      },
+      {
+       "kind": "quest",
+       "quest": "Trouble With Letters",
+       "quest_ko": "전하지 못한 편지",
+       "version": "1.1",
+       "speaker": "Jiayi"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Siege of Qingce",
+       "quest_ko": "포위된 경책",
+       "version": "1.1",
+       "speaker": "Jinglun"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "The sentences follow Q7 and Q5. The interpretation only says no link is given, which is fair.",
+     "quote": "...Still, it doesn't add up. Why would such a creature suddenly show up near Qingce Village?",
+     "sentences": [
+      {
+       "t_raw": "Jinglun은 그런 생물이 어째서 갑자기 Qingce Village 근처에 나타났는지 납득이 되지 않는다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경륜은 그런 생물이 어째서 갑자기 경책 산장 근처에 나타났는지 납득이 되지 않는다고 말한다."
+      },
+      {
+       "t_raw": "Chi의 피가 나무를 키웠다는 전승과 마물이 몰려들었다는 소식이 나란히 놓이지만, 둘을 잇는 설명은 나오지 않은 채 의문으로 남는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "교룡의 피가 나무를 키웠다는 전승과 마물이 몰려들었다는 소식이 나란히 놓이지만, 둘을 잇는 설명은 나오지 않은 채 의문으로 남는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Siege of Qingce",
+       "quest_ko": "포위된 경책",
+       "version": "1.1",
+       "speaker": "Jinglun"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chi of Yore",
+       "quest_ko": "「교룡」 이야기",
+       "version": "1.0",
+       "speaker": "Granny Ruoxin"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All facts are in M11, M13, M16 and Q4.",
+     "quote": "He is a grouch, but will express himself freely when the topic comes to books.",
+     "sentences": [
+      {
+       "t_raw": "Chang the Ninth는 Liyue Harbor에서 어려움을 겪다가 Qingce Village로 옮겨 온 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상구야는 리월항에서 어려움을 겪다가 경책 산장으로 옮겨 온 인물이다."
+      },
+      {
+       "t_raw": "그는 자신의 명성을 중시하고 거만하게 굴며, '가난한 농부들'과 이웃해 사는 것을 공공연히 못마땅해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 자신의 명성을 중시하고 거만하게 굴며, '가난한 농부들'과 이웃해 사는 것을 공공연히 못마땅해한다."
+      },
+      {
+       "t_raw": "그런 성깔 때문에 책을 좋아하는 수집가이자 '완전히 심술궂은 사람'으로도 통하지만, 화제가 책으로 넘어가면 거리낌 없이 말을 쏟아 낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런 성깔 때문에 책을 좋아하는 수집가이자 '완전히 심술궂은 사람'으로도 통하지만, 화제가 책으로 넘어가면 거리낌 없이 말을 쏟아 낸다."
+      },
+      {
+       "t_raw": "그는 책을 돌보는 일을 자신의 **\"평생의 작업\"**이라 부를 만큼 책을 아낀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 책을 돌보는 일을 자신의 **\"평생의 작업\"**이라 부를 만큼 책을 아낀다."
+      },
+      {
+       "t_raw": "Fabulae Textile 챕터 1막, Xingqiu의 Story Quest인 Bookworm Swordsman에서 주요 인물로 등장하며, 그 퀘스트를 완료한 뒤에는 대사가 달라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "금직자리 챕터 1막, 행추의 전설 임무인 강호의 출신 불문에서 주요 인물로 등장하며, 그 퀘스트를 완료한 뒤에는 대사가 달라진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chang the Ninth",
+       "revision": 72284,
+       "section": null,
+       "paragraph": "M11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chang the Ninth",
+       "revision": 72284,
+       "section": "Profile > Personality",
+       "paragraph": "M13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chang the Ninth",
+       "revision": 72284,
+       "section": "Profile",
+       "paragraph": "M16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Justice, for Books' Sake",
+       "quest_ko": "우연한 강호사 책 찾기",
+       "version": "1.0",
+       "speaker": "Jifang"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All facts are in M16. The closing interpretation is reasonable.",
+     "quote": "One day, she disappeared, with Little Nine's parents being the prime suspects due to their disdain towards him.",
+     "sentences": [
+      {
+       "t_raw": "Qingce Village에서 그는 이야기를 읽어 달라며 졸라대는 소녀 **Little Nine**을 만난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경책 산장에서 그는 이야기를 읽어 달라며 졸라대는 소녀 **구구**를 만난다."
+      },
+      {
+       "t_raw": "그는 이야기의 서문만 써서 그녀에게 읽어 주고, 시간이 더 생기면 마무리하겠다고 스스로에게 말해 두었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 이야기의 서문만 써서 그녀에게 읽어 주고, 시간이 더 생기면 마무리하겠다고 스스로에게 말해 두었다."
+      },
+      {
+       "t_raw": "그러던 어느 날 Little Nine이 사라지고, 그를 못마땅해하던 그녀의 부모가 가장 유력한 용의자로 지목된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러던 어느 날 구구가 사라지고, 그를 못마땅해하던 그녀의 부모가 가장 유력한 용의자로 지목된다."
+      },
+      {
+       "t_raw": "끝내지 않은 채 미뤄 둔 이야기들은 이제 읽어 줄 상대를 잃은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "끝내지 않은 채 미뤄 둔 이야기들은 이제 읽어 줄 상대를 잃은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chang the Ninth",
+       "revision": 72284,
+       "section": null,
+       "paragraph": "M11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chang the Ninth",
+       "revision": 72284,
+       "section": "Profile",
+       "paragraph": "M16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The sentences match M10 and M14.",
+     "quote": "She makes it more than halfway to Stone Gate before being attacked by a group of monsters.",
+     "sentences": [
+      {
+       "t_raw": "Little Liu는 마을 입구 집의 마루에서 꽃밭을 내려다보는 아이로, 아버지 Jiayi가 또다시 야근이라 찾아올 수 없다는 말을 듣고 Will of Stone 때 마을을 뛰쳐나간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "육이는 마을 입구 집의 마루에서 꽃밭을 내려다보는 아이로, 아버지 가의가 또다시 야근이라 찾아올 수 없다는 말을 듣고 바위의 의지 때 마을을 뛰쳐나간다."
+      },
+      {
+       "t_raw": "선물을 챙긴 그녀는 Liyue Harbor까지 직접 걸어가 아버지를 만나겠다고 마음먹고, Stone Gate까지 절반이 넘는 길을 가다가 마물 떼의 습격을 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "선물을 챙긴 그녀는 리월항까지 직접 걸어가 아버지를 만나겠다고 마음먹고, 석문까지 절반이 넘는 길을 가다가 마물 떼의 습격을 받는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Liu",
+       "revision": 72169,
+       "section": null,
+       "paragraph": "M10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Liu",
+       "revision": 72169,
+       "section": "Overview",
+       "paragraph": "M14",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The facts match M15 and Q6. The interpretation is hedged and follows from them.",
+     "quote": "Jiayi works tirelessly in Liyue Harbor and is unable to spare even a moment to visit Liu in Qingce Village.",
+     "sentences": [
+      {
+       "t_raw": "Liu가 **Vision**에 집착하는 까닭은 더 강해져 돈을 벌고 아버지를 부양하고 싶다는 바람 때문이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "류가 **신의 눈**에 집착하는 까닭은 더 강해져 돈을 벌고 아버지를 부양하고 싶다는 바람 때문이다."
+      },
+      {
+       "t_raw": "Jiayi는 Liyue Harbor에서 쉬지 않고 일해 Qingce Village의 딸을 만나러 갈 시간조차 내지 못하고, 딸은 모험가가 되어 아버지와 함께 있고자 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가의는 리월항에서 쉬지 않고 일해 경책 산장의 딸을 만나러 갈 시간조차 내지 못하고, 딸은 모험가가 되어 아버지와 함께 있고자 한다."
+      },
+      {
+       "t_raw": "정작 Jiayi는 당장이라도 모든 것을 내려놓고 마을로 달려가고 싶다고 하면서도 Ministry of Civil Affairs를 언급하며 말을 잇지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정작 가의는 당장이라도 모든 것을 내려놓고 마을로 달려가고 싶다고 하면서도 총무부를 언급하며 말을 잇지 못한다."
+      },
+      {
+       "t_raw": "아버지가 직무에 붙들려 있는 사이 딸이 직접 길을 나서는 셈이니, 두 사람의 그리움은 서로 다른 방향으로 어긋나 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아버지가 직무에 붙들려 있는 사이 딸이 직접 길을 나서는 셈이니, 두 사람의 그리움은 서로 다른 방향으로 어긋나 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Liu",
+       "revision": 72169,
+       "section": "Overview",
+       "paragraph": "M15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Will of Stone",
+       "quest_ko": "바위의 의지",
+       "version": "1.0",
+       "speaker": "Jiayi"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences follow Q3 and Q7; the interpretation is reasonable.",
+     "quote": "Hello, we're from the Adventurers' Guild. Can you tell us if Qingce Village has been affected by the meteorite strike?",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 자신들을 Adventurers' Guild에서 왔다고 소개하며 Qingce Village가 **운석 충격**의 영향을 받았는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 자신들을 모험가 길드에서 왔다고 소개하며 경책 산장이 **운석 충격**의 영향을 받았는지 묻는다."
+      },
+      {
+       "t_raw": "Jinglun은 Qingce Village 근처에 그러한 생물이 갑자기 나타난 이유가 맞지 않는다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경륜은 경책 산장 근처에 그러한 생물이 갑자기 나타난 이유가 맞지 않는다고 말한다."
+      },
+      {
+       "t_raw": "두 물음은 운석 충격과 마을 근처 생물의 출현을 각각 다루지만, 두 사건을 직접 잇는 설명은 나오지 않는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 물음은 운석 충격과 마을 근처 생물의 출현을 각각 다루지만, 두 사건을 직접 잇는 설명은 나오지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "What the Skies Conceal, the Water Reveals",
+       "quest_ko": "하늘의 비밀, 물의 해법",
+       "version": "1.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Siege of Qingce",
+       "quest_ko": "포위된 경책",
+       "version": "1.1",
+       "speaker": "Jinglun"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Q9 matches and the line is cut off; the interpretation is fine.",
+     "quote": "Home cooking from Qingce Village? Well that can only mean one thing: !",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Qingce Village의 **집밥**을 두고 “한 가지밖에 뜻할 수 없다”고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 경책 산장의 **집밥**을 두고 “한 가지밖에 뜻할 수 없다”고 말한다."
+      },
+      {
+       "t_raw": "그 말은 “한 가지”가 무엇인지 밝히기 전에 끊긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 말은 “한 가지”가 무엇인지 밝히기 전에 끊긴다."
+      },
+      {
+       "t_raw": "그래서 Qingce Village의 집밥이 무엇을 가리키는지는 수수께끼로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 경책 산장의 집밥이 무엇을 가리키는지는 수수께끼로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "What the Skies Conceal, the Water Reveals",
+       "quest_ko": "하늘의 비밀, 물의 해법",
+       "version": "1.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The times match M1, M6 and M9; the non-overlap inference holds.",
+     "quote": "She can be found at Qingce Village from 6:00 to 19:00 o'clock.",
+     "sentences": [
+      {
+       "t_raw": "Yundan은 Qingce Village에 사는 Liyue의 주민으로, 6:00부터 19:00까지 마을에서 만날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운담은 경책 산장에 사는 리월의 주민으로, 6:00부터 19:00까지 마을에서 만날 수 있다."
+      },
+      {
+       "t_raw": "Zhi 역시 6:00부터 18:30까지 Qingce Village에 머문다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지아 역시 6:00부터 18:30까지 경책 산장에 머문다."
+      },
+      {
+       "t_raw": "Little Zuo는 **19:00부터 6:00까지** 강기슭을 따라 달린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꼬마 좌는 **19:00부터 6:00까지** 강기슭을 따라 달린다."
+      },
+      {
+       "t_raw": "낮 시간대에 머무는 Yundan과 Zhi, 그리고 그 시간대가 끝난 뒤 강기슭을 달리는 Little Zuo의 활동 시간이 서로 겹치지 않는 것으로 보아, 주민들의 동선은 시간대에 따라 갈리는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "낮 시간대에 머무는 운담과 지아, 그리고 그 시간대가 끝난 뒤 강기슭을 달리는 꼬마 좌의 활동 시간이 서로 겹치지 않는 것으로 보아, 주민들의 동선은 시간대에 따라 갈리는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yundan",
+       "revision": 71400,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Zhi",
+       "revision": 71401,
+       "section": null,
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little Zuo",
+       "revision": 72083,
+       "section": null,
+       "paragraph": "M9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches M10, M4 and M5; the interpretation is reasonable.",
+     "quote": "She can be found overlooking the flower fields, on the porch of a house at the entrance of the village.",
+     "sentences": [
+      {
+       "t_raw": "Little Liu는 **마을 입구**에 있는 집의 마루에서 꽃밭을 바라보는 자리에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "육이는 **마을 입구**에 있는 집의 마루에서 꽃밭을 바라보는 자리에 있다."
+      },
+      {
+       "t_raw": "마을로 들어서는 길목에서 꽃밭 쪽으로 시선이 열린 자리인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마을로 들어서는 길목에서 꽃밭 쪽으로 시선이 열린 자리인 셈이다."
+      },
+      {
+       "t_raw": "Dongdong과 Little You는 Qingce Village에서 만날 수 있는 주민이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동동과 꼬마 우는 경책 산장에서 만날 수 있는 주민이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Little Liu",
+       "revision": 72169,
+       "section": null,
+       "paragraph": "M10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Dongdong",
+       "revision": 35760,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Little You",
+       "revision": 71395,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "이곳 이름은 알지? Qingce Village?",
+     "en": "You know the name of this place, right? Qingce Village?",
+     "speaker": "Yan'er",
+     "source": {
+      "kind": "quest",
+      "quest": "The Chi of Yore",
+      "quest_ko": "「교룡」 이야기",
+      "version": "1.0",
+      "speaker": "Yan'er"
+     },
+     "t": "이곳 이름은 알지? 경책 산장?",
+     "speaker_ko": "연아"
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Qingce Village 근처에 있는 저 튼튼한 나무들이 보이나? 저것들은 Blood-Fed Trees라네. Chi의 피로 자란 나무라고 전해진다네.",
+     "en": "Do you see those sturdy trees near Qingce Village? Those are Blood-Fed Trees, said to have been nourished by the blood of the Chi.",
+     "speaker": "Granny Ruoxin",
+     "source": {
+      "kind": "quest",
+      "quest": "The Chi of Yore",
+      "quest_ko": "「교룡」 이야기",
+      "version": "1.0",
+      "speaker": "Granny Ruoxin"
+     },
+     "t": "경책 산장 근처에 있는 저 튼튼한 나무들이 보이나? 저것들은 피 먹은 나무라네. 교룡의 피로 자란 나무라고 전해진다네.",
+     "speaker_ko": "약심"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 0 is a faithful translation of Jiayi's line, including the trailing cut-off.",
+     "t_raw": "당장이라도 모든 것을 내려놓고 지금 Qingce Village로 달려가고 싶습니다. 하지만 Ministry of Civil Affairs가…",
+     "en": "I want nothing more than to drop everything and run back to Qingce Village right now. But the Ministry of Civil Affairs would...",
+     "speaker": "Jiayi",
+     "source": {
+      "kind": "quest",
+      "quest": "Will of Stone",
+      "quest_ko": "바위의 의지",
+      "version": "1.0",
+      "speaker": "Jiayi"
+     },
+     "t": "당장이라도 모든 것을 내려놓고 지금 경책 산장으로 달려가고 싶습니다. 하지만 총무부가…",
+     "speaker_ko": "가의"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Sentence 0 is a faithful translation of Paimon's line, including the empty placeholder after the colon.",
+     "t_raw": "Qingce Village의 집밥? 그렇다면 한 가지밖에 뜻할 수 없어: !",
+     "en": "Home cooking from Qingce Village? Well that can only mean one thing: !",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "What the Skies Conceal, the Water Reveals",
+      "quest_ko": "하늘의 비밀, 물의 해법",
+      "version": "1.1",
+      "speaker": "Paimon"
+     },
+     "t": "경책 산장의 집밥? 그렇다면 한 가지밖에 뜻할 수 없어: !",
+     "speaker_ko": "페이몬"
+    }
+   ]
+  }
+ ]
+}

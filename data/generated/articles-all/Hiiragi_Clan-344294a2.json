@@ -1,0 +1,729 @@
+{
+ "node": "Hiiragi Clan",
+ "articles": [
+  {
+   "node": "Hiiragi Clan",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Hiiragi Clan",
+     "url": "https://genshin-impact.fandom.com/wiki/Hiiragi_Clan",
+     "revision": 255007
+    }
+   ],
+   "input_counts": {
+    "mentions": 7,
+    "lines": 4,
+    "web": 0
+   },
+   "input_chars": 440,
+   "input_cut": false,
+   "input_hash": "2c5da184b800",
+   "writer": "or-ds",
+   "verifier": "grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All four sentences match A1–A2, A4–A5, M1, M3, and M4; (3) only infers that the clan is central because it heads the commission that holds those duties.",
+     "quote": "The Hiiragi Clan is a clan that serves Baal. They are the head of the Kanjou Commission. Their estate is situated on the Ritou peninsula of Narukami Island.",
+     "sentences": [
+      {
+       "t_raw": "**Hiiragi Clan**은 Baal을 섬기며 Kanjou Commission의 수장을 맡는 가문으로, 영지는 Narukami Island의 Ritou 반도에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**히이라기 가문**은 바알을 섬기며 간조 봉행(勘定奉行)의 수장을 맡는 가문으로, 영지는 나루카미섬의 이도(離島) 반도에 있다."
+      },
+      {
+       "t_raw": "창설 시점은 확실하지 않지만 적어도 500년 전부터 이어졌고, 500년 전 **Hiiragi Hiroshi**가 Ritou 정착지를 세워 Baal을 감탄시켰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "창설 시점은 확실하지 않지만 적어도 500년 전부터 이어졌고, 500년 전 **히이라기 히로시**가 이도(離島) 정착지를 세워 바알을 감탄시켰다."
+      },
+      {
+       "t_raw": "현재 가주는 Hiiragi Shinsuke이고, 그의 딸 Hiiragi Chisato가 가문의 일원으로 알려져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 가주는 히이라기 신스케이고, 그의 딸 히이라기 치사토가 가문의 일원으로 알려져 있다."
+      },
+      {
+       "t_raw": "Kanjou Commission이 Inazuma의 재정과 국경, 상업·관료 업무, **Sakoku Decree** 집행을 맡는다는 점에서 Hiiragi Clan은 그 중심 가문으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "간조 봉행(勘定奉行)이 이나즈마의 재정과 국경, 상업·관료 업무, **쇄국령** 집행을 맡는다는 점에서 히이라기 가문은 그 중심 가문으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": "Known Members > Present",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": "Known Members > Present",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Shinsuke",
+       "revision": 322560,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Chisato",
+       "revision": 322538,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match A1, A4–A5, M1, and M3; (4) restates that Shinsuke holds both the clan-head and commissioner roles.",
+     "quote": "The Hiiragi Clan is a clan that serves Baal. They are the head of the Kanjou Commission. Their estate is situated on the Ritou peninsula of Narukami Island.",
+     "sentences": [
+      {
+       "t_raw": "**Hiiragi Clan**은 Baal을 섬기며 **Kanjou Commission**의 수장을 맡는 가문이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**히이라기 가문**은 바알을 섬기며 **간조 봉행(勘定奉行)**의 수장을 맡는 가문이다."
+      },
+      {
+       "t_raw": "이들의 영지는 Narukami Island의 Ritou 반도에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들의 영지는 나루카미섬의 이도(離島) 반도에 자리한다."
+      },
+      {
+       "t_raw": "현재 가주는 Hiiragi Shinsuke이며, 그는 Kanjou Commission의 수장직도 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 가주는 히이라기 신스케이며, 그는 간조 봉행(勘定奉行)의 수장직도 맡는다."
+      },
+      {
+       "t_raw": "Hiiragi Shinsuke에게는 딸 Hiiragi Chisato가 있고, Hiiragi Chisato는 Hiiragi Clan의 일원이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히이라기 신스케에게는 딸 히이라기 치사토가 있고, 히이라기 치사토는 히이라기 가문의 일원이다."
+      },
+      {
+       "t_raw": "Hiiragi Clan이 Kanjou Commission의 수장을 맡고 Hiiragi Shinsuke가 그 가주이자 수장직을 맡는다는 점에서, 현재 가문과 위원회의 수장 역할이 Shinsuke에게 함께 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "히이라기 가문이 간조 봉행(勘定奉行)의 수장을 맡고 히이라기 신스케가 그 가주이자 수장직을 맡는다는 점에서, 현재 가문과 위원회의 수장 역할이 Shinsuke에게 함께 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": "Known Members > Present",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": "Known Members > Present",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Shinsuke",
+       "revision": 322560,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Chisato",
+       "revision": 322538,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Shinsuke"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Commission duties match M4, and (2) reasonably places the clan at the join of those administrative and border functions.",
+     "quote": "The Hiiragi Clan is a clan that serves Baal. They are the head of the Kanjou Commission.",
+     "sentences": [
+      {
+       "t_raw": "Hiiragi Clan은 Baal을 섬기며 **Kanjou Commission**의 수장을 맡는 가문이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히이라기 가문은 바알을 섬기며 **간조 봉행(勘定奉行)**의 수장을 맡는 가문이다."
+      },
+      {
+       "t_raw": "**Kanjou Commission**은 Inazuma의 재정·국경·상업·관료 업무를 맡고 **Sakoku Decree**의 법적 출입국을 집행한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**간조 봉행(勘定奉行)**은 이나즈마의 재정·국경·상업·관료 업무를 맡고 **쇄국령**의 법적 출입국을 집행한다."
+      },
+      {
+       "t_raw": "그래서 Hiiragi Clan은 Inazuma의 행정과 출입국 통제가 맞물리는 자리에 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 히이라기 가문은 이나즈마의 행정과 출입국 통제가 맞물리는 자리에 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tri-Commission",
+       "revision": 320487,
+       "section": "The Three Commissions",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Self-introduction, Chisato’s identity and location, and Kamaji’s line match Q2, M3, and Q3.",
+     "quote": "Ms. Hiiragi is the young lady of the Kanjou Commission's Hiiragi Clan.",
+     "sentences": [
+      {
+       "t_raw": "Hiiragi Shinsuke는 스스로를 **Kanjou Commissioner**이자 Hiiragi Clan의 가주라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히이라기 신스케는 스스로를 **간조 봉행**이자 히이라기 가문의 가주라고 소개한다."
+      },
+      {
+       "t_raw": "Hiiragi Chisato는 Shinsuke의 딸이자 Hiiragi Clan의 일원이며 Ritou에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히이라기 치사토는 Shinsuke의 딸이자 히이라기 가문의 일원이며 이도(離島)에 있다."
+      },
+      {
+       "t_raw": "Kujou Kamaji는 그녀를 Kanjou Commission의 Hiiragi Clan의 아가씨라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쿠죠 카마지는 그녀를 간조 봉행(勘定奉行)의 히이라기 가문의 아가씨라고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Ritou Escape Plan",
+       "quest_ko": "이도 탈출 계획",
+       "version": "2.0",
+       "speaker": "Hiiragi Shinsuke"
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Chisato",
+       "revision": 322538,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Chisato's Letter",
+       "quest_ko": "치사토의 편지",
+       "version": "2.0",
+       "speaker": "Kujou Kamaji"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "Shinsuke"
+     ]
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Age of the clan, Hiroshi’s settlement, the 500-years-ago member label, and his fame match A2, A3, and M5.",
+     "quote": "It is uncertain when the clan was established, but it has been around for at least 500 years.",
+     "sentences": [
+      {
+       "t_raw": "Hiiragi Clan의 창설 시점은 확실하지 않지만, 가문은 적어도 500년 전부터 존재해 왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히이라기 가문의 창설 시점은 확실하지 않지만, 가문은 적어도 500년 전부터 존재해 왔다."
+      },
+      {
+       "t_raw": "**500년 전** Hiiragi Hiroshi가 **Ritou 정착지**를 세워 Baal을 감탄시켰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**500년 전** 히이라기 히로시가 **이도(離島) 정착지**를 세워 바알을 감탄시켰다."
+      },
+      {
+       "t_raw": "Hiiragi Hiroshi는 500년 전 시점의 알려진 구성원이며, Ritou 정착지를 세운 공적으로 Hiiragi Clan에서 가장 유명한 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히이라기 히로시는 500년 전 시점의 알려진 구성원이며, 이도(離島) 정착지를 세운 공적으로 히이라기 가문에서 가장 유명한 인물이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": "Known Members > 500 Years Ago",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Hiroshi",
+       "revision": 306166,
+       "section": "Profile",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "The training sequence matches M5, and (1) only infers a link from Hiroshi training under the Kujou sword instructor.",
+     "quote": "Several years after the cataclysm, after Iwakura Doukei became the sword instructor for the Kujou Clan, Hiroshi trained under him as well.",
+     "sentences": [
+      {
+       "t_raw": "cataclysm으로부터 몇 년 뒤 Iwakura Doukei가 Kujou Clan의 검술 교관이 되었고, 그 뒤 Hiiragi Hiroshi도 그에게 검술을 배웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "캐터클리즘으로부터 몇 년 뒤 Iwakura Doukei가 쿠죠 가문의 검술 교관이 되었고, 그 뒤 히이라기 히로시도 그에게 검술을 배웠다.",
+       "polish": {
+        "from": "cataclysm으로부터 몇 년 뒤 Iwakura Doukei가 쿠죠 가문의 검술 교관이 되었고, 그 뒤 히이라기 히로시도 그에게 검술을 배웠다.",
+        "text": "캐터클리즘으로부터 몇 년 뒤 Iwakura Doukei가 쿠죠 가문의 검술 교관이 되었고, 그 뒤 히이라기 히로시도 그에게 검술을 배웠다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "이는 Hiiragi Clan의 일원이 Kujou Clan의 검술 교육과 연결되어 있었음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 히이라기 가문의 일원이 쿠죠 가문의 검술 교육과 연결되어 있었음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": "Known Members > 500 Years Ago",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Hiroshi",
+       "revision": 306166,
+       "section": "Profile",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": [
+      "Iwakura Doukei"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All four sentences match M6–M7: the marriage ban, the love and the family barrier to meeting, the snack box as a disguised gift, and the family-versus-feeling reading.",
+     "quote": "the reason for the snack box is a political gesture to thank the Hiiragi Clan",
+     "sentences": [
+      {
+       "t_raw": "Hiiragi Shinsuke는 딸 Hiiragi Chisato가 Kujou Kamaji와 함께 있거나 교류하는 것을 허락하지 않고, 그녀에게 더 나은 **정략 결혼**이 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히이라기 신스케는 딸 히이라기 치사토가 쿠죠 카마지와 함께 있거나 교류하는 것을 허락하지 않고, 그녀에게 더 나은 **정략 결혼**이 있다고 본다."
+      },
+      {
+       "t_raw": "Hiiragi Chisato는 Kujou Kamaji를 사랑하지만, 가문 때문에 직접 만나는 일이 가능하지 않다고 Traveler에게 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히이라기 치사토는 쿠죠 카마지를 사랑하지만, 가문 때문에 직접 만나는 일이 가능하지 않다고 여행자에게 말한다."
+      },
+      {
+       "t_raw": "Kujou Kamaji는 Hiiragi Chisato의 **Snack Box**를 Hiiragi Clan에 감사하는 정치적 제스처라고 말하나, 실제로는 Hiiragi Chisato를 위한 선물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쿠죠 카마지는 히이라기 치사토의 **디저트 상자**를 히이라기 가문에 감사하는 정치적 제스처라고 말하나, 실제로는 히이라기 치사토를 위한 선물이다."
+      },
+      {
+       "t_raw": "이는 가문의 이해와 개인의 마음이 맞서는 구도로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 가문의 이해와 개인의 마음이 맞서는 구도로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": "Known Members > Present",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Shinsuke",
+       "revision": 322560,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Chisato",
+       "revision": 322538,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Chisato",
+       "revision": 322538,
+       "section": "Profile",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Both facts match M6, and the interpretation only restates that clan-member opposition and help as a scene.",
+     "quote": "against the actions of the Kanjou Commission in Ritou",
+     "sentences": [
+      {
+       "t_raw": "Hiiragi Chisato는 Kanjou Commission의 Ritou 행보에 반대하고, Traveler와 Paimon이 Ritou를 떠나 Narukami Island로 가도록 돕는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히이라기 치사토는 간조 봉행(勘定奉行)의 이도(離島) 행보에 반대하고, 여행자와 페이몬이 이도(離島)를 떠나 나루카미섬으로 가도록 돕는다."
+      },
+      {
+       "t_raw": "그녀는 Kujou Kamaji로부터 Traveler를 위한 **Travel Permit**을 마련한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 쿠죠 카마지로부터 여행자를 위한 **통행증**을 마련한다."
+      },
+      {
+       "t_raw": "이는 Hiiragi Clan의 일원이 Kanjou Commission의 Ritou 행보에 반대하며 Traveler와 Paimon을 돕는 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 히이라기 가문의 일원이 간조 봉행(勘定奉行)의 이도(離島) 행보에 반대하며 여행자와 페이몬을 돕는 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Chisato",
+       "revision": 322538,
+       "section": "Profile",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The line’s limited knowledge and the divine-gift aside are stated, and the interpretation correctly leaves the gift and the squandering unspecified.",
+     "quote": "I'm afraid I don't know much more about this than you. Apart from the Hiiragi Clan's squandering of their divine gift, that is...",
+     "sentences": [
+      {
+       "t_raw": "Hanachirusato는 이 일에 대해 상대보다 자신이 더 아는 것이 많지 않다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하나치루사토는 이 일에 대해 상대보다 자신이 더 아는 것이 많지 않다고 말한다."
+      },
+      {
+       "t_raw": "그러면서 Hiiragi Clan이 **신성한 선물**을 낭비한 일은 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서 히이라기 가문이 **신성한 선물**을 낭비한 일은 언급한다."
+      },
+      {
+       "t_raw": "선물의 정체와 낭비의 구체적 내용은 이 발언만으로 확정되지 않는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "선물의 정체와 낭비의 구체적 내용은 이 발언만으로 확정되지 않는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sacrificial Offering",
+       "quest_ko": "재앙신 주상",
+       "version": "2.0",
+       "speaker": "Hanachirusato"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "A2 gives the uncertain founding, the 500-year span, and Hiroshi’s settlement; treating how those two relate as still open is a fair reading.",
+     "quote": "It is uncertain when the clan was established, but it has been around for at least 500 years.",
+     "sentences": [
+      {
+       "t_raw": "Hiiragi Clan의 **창설 시점**은 확실하지 않다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히이라기 가문의 **창설 시점**은 확실하지 않다."
+      },
+      {
+       "t_raw": "다만 가문은 적어도 500년 전부터 존재했고, **500년 전** Hiiragi Hiroshi가 Ritou에 정착지를 세워 Baal을 감탄시켰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 가문은 적어도 500년 전부터 존재했고, **500년 전** 히이라기 히로시가 이도(離島)에 정착지를 세워 바알을 감탄시켰다."
+      },
+      {
+       "t_raw": "창설 시점의 불확실성과 500년 전 Hiiragi Hiroshi의 업적이 함께 전해지므로, 가문의 기원과 Ritou 정착지 건설 사이의 관계는 여전히 물음으로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "창설 시점의 불확실성과 500년 전 히이라기 히로시의 업적이 함께 전해지므로, 가문의 기원과 이도(離島) 정착지 건설 사이의 관계는 여전히 물음으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Clan",
+       "revision": 255007,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Both sentences restate M2: Yokoyama is the Ritou NPC who stands guard before the Hiiragi Clan Estate.",
+     "quote": "He stands guard in front of the Hiiragi Clan Estate.",
+     "sentences": [
+      {
+       "t_raw": "Ritou에서 **Yokoyama**는 **Hiiragi Clan Estate** 앞을 지키는 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이도(離島)에서 **요코야마**는 **Hiiragi Clan Estate** 앞을 지키는 NPC다."
+      },
+      {
+       "t_raw": "그는 저택 앞에서 경계를 선다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 저택 앞에서 경계를 선다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yokoyama",
+       "revision": 306056,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Hiiragi Clan Estate",
+      "NPC"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Chisato’s Ritou NPC status is in M3, and grouping her with Yokoyama in the same region follows from M2–M3.",
+     "quote": "Hiiragi Chisato is an NPC located in Ritou, Inazuma.",
+     "sentences": [
+      {
+       "t_raw": "**Hiiragi Chisato**는 Ritou, Inazuma에 있는 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**히이라기 치사토**는 이도(離島), 이나즈마에 있는 NPC다."
+      },
+      {
+       "t_raw": "Yokoyama와 Hiiragi Chisato가 모두 Ritou에 있다는 점에서, 가문을 둘러싼 작은 장면들이 같은 지역에 모여 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "요코야마와 히이라기 치사토가 모두 이도(離島)에 있다는 점에서, 가문을 둘러싼 작은 장면들이 같은 지역에 모여 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yokoyama",
+       "revision": 306056,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hiiragi Chisato",
+       "revision": 322538,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "NPC"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful rendering of Paimon's line, including the confirmatory tone of 'alright.'",
+     "t_raw": "와, 그녀는 정말 Hiiragi Clan의 딸이군...",
+     "en": "Wow, she's the daughter of the Hiiragi Clan alright...",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Ritou Escape Plan",
+      "quest_ko": "이도 탈출 계획",
+      "version": "2.0",
+      "speaker": "Paimon"
+     },
+     "t": "와, 그녀는 정말 히이라기 가문의 딸이군...",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful: Ms. Hiiragi as the young lady of the Kanjou Commission's Hiiragi Clan.",
+     "t_raw": "Hiiragi 양은 Kanjou Commission의 Hiiragi Clan의 아가씨다.",
+     "en": "Ms. Hiiragi is the young lady of the Kanjou Commission's Hiiragi Clan.",
+     "speaker": "Kujou Kamaji",
+     "source": {
+      "kind": "quest",
+      "quest": "Chisato's Letter",
+      "quest_ko": "치사토의 편지",
+      "version": "2.0",
+      "speaker": "Kujou Kamaji"
+     },
+     "t": "히이라기 양은 간조 봉행(勘定奉行)의 히이라기 가문의 아가씨다.",
+     "speaker_ko": "쿠죠 카마지"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful; '딸이로군' is the same line as item 0 with only a colloquial ending change.",
+     "t_raw": "와, 그녀는 정말 Hiiragi Clan의 딸이로군...",
+     "en": "Wow, she's the daughter of the Hiiragi Clan alright...",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Ritou Escape Plan",
+      "quest_ko": "이도 탈출 계획",
+      "version": "2.0",
+      "speaker": "Paimon"
+     },
+     "t": "와, 그녀는 정말 히이라기 가문의 딸이로군...",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful: limited knowledge, set apart from the clan squandering their divine gift.",
+     "t_raw": "유감이지만 저도 이 일에 대해 당신보다 더 많이 알지는 못합니다. Hiiragi Clan이 그들의 신성한 선물을 낭비한 일 말고는...",
+     "en": "I'm afraid I don't know much more about this than you. Apart from the Hiiragi Clan's squandering of their divine gift, that is...",
+     "speaker": "Hanachirusato",
+     "source": {
+      "kind": "quest",
+      "quest": "Sacrificial Offering",
+      "quest_ko": "재앙신 주상",
+      "version": "2.0",
+      "speaker": "Hanachirusato"
+     },
+     "t": "유감이지만 저도 이 일에 대해 당신보다 더 많이 알지는 못합니다. 히이라기 가문이 그들의 신성한 선물을 낭비한 일 말고는...",
+     "speaker_ko": "하나치루사토"
+    }
+   ]
+  }
+ ]
+}

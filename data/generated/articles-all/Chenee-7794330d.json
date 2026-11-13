@@ -1,0 +1,1934 @@
+{
+ "node": "Chenee",
+ "articles": [
+  {
+   "node": "Chenee",
+   "from_version": "5.7",
+   "cutoff": "2025-07-29T00:00:00Z",
+   "input": [
+    {
+     "page": "Chenee",
+     "url": "https://genshin-impact.fandom.com/wiki/Chenee",
+     "revision": 1784163
+    }
+   ],
+   "input_counts": {
+    "mentions": 7,
+    "lines": 25,
+    "web": 0
+   },
+   "input_chars": 5479,
+   "input_cut": false,
+   "input_hash": "163b90820c18",
+   "writer": "or-ds,ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1-A3 and M1.",
+     "quote": "Chenee has been secretly testing Frejus, pretending to ask him questions to test his knowledge.",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 The Gardes' Inventor에서 처음 등장한 이벤트 전용 NPC로, 갈색 머리에 Gardes의 푸른 제복을 입은 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 경비대의 발명가에서 처음 등장한 이벤트 전용 NPC로, 갈색 머리에 경비대원의 푸른 제복을 입은 인물이다."
+      },
+      {
+       "t_raw": "그녀는 Frejus를 몰래 시험하며 질문을 던져 그의 지식을 떠보고, 답을 모를 때 힌트를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 프레쥐스를 몰래 시험하며 질문을 던져 그의 지식을 떠보고, 답을 모를 때 힌트를 준다."
+      },
+      {
+       "t_raw": "Chenee는 Frejus가 천재라는 허세를 알고도 그가 자신을 위해 총알을 막아준 데 대한 고마움으로 계속 받아주며 즐기고 있고, Frejus는 그 사실을 모른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 프레쥐스가 천재라는 허세를 알고도 그가 자신을 위해 총알을 막아준 데 대한 고마움으로 계속 받아주며 즐기고 있고, 프레쥐스는 그 사실을 모른다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Profile > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Frejus",
+       "revision": 1784164,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A1, A3 and Q15.",
+     "quote": "No, I'm just joking. Introductions are in order, I suppose. I'm Chenee, and this is my senior, Frejus.",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 The Gardes' Inventor에서 처음 등장한 이벤트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 경비대의 발명가에서 처음 등장한 이벤트 전용 NPC다."
+      },
+      {
+       "t_raw": "그녀는 갈색 머리에 Gardes의 푸른 제복을 입고, 소개 자리에서 **농담을 섞어** 자신을 Chenee라 밝힌 뒤 Frejus를 자신의 선배로 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 갈색 머리에 경비대원의 푸른 제복을 입고, 소개 자리에서 **농담을 섞어** 자신을 체니라 밝힌 뒤 프레쥐스를 자신의 선배로 소개한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Profile > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Gardes' Inventor",
+       "quest_ko": "경비대의 발명가",
+       "version": "4.5",
+       "speaker": "Chenee"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match M1 and A2. The interpretation is hedged and follows from A2's 'as a thanks'.",
+     "quote": "Many of his inventions are actually half-way created by Chenee's hints and she finds fun in keeping him busy.",
+     "sentences": [
+      {
+       "t_raw": "Frejus는 Fontaine Research Institute의 초청을 세 번 거절했다는 **천재 허세**를 부리지만, 그의 발명 가운데 다수는 Chenee의 힌트로 반쯤 완성되어 왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레쥐스는 폰타인 과학원의 초청을 세 번 거절했다는 **천재 허세**를 부리지만, 그의 발명 가운데 다수는 체니의 힌트로 반쯤 완성되어 왔다."
+      },
+      {
+       "t_raw": "Chenee는 그 허세를 알고도 Frejus를 바쁘게 만드는 일을 재미로 여기며, Frejus는 그녀가 알아차렸다는 점을 모른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 그 허세를 알고도 프레쥐스를 바쁘게 만드는 일을 재미로 여기며, 프레쥐스는 그녀가 알아차렸다는 점을 모른다."
+      },
+      {
+       "t_raw": "그녀가 허세를 계속 놀아 주는 데에는 Frejus가 인질 사건에서 자신을 대신해 총알을 맞은 일도 배경으로 작용한 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그녀가 허세를 계속 놀아 주는 데에는 프레쥐스가 인질 사건에서 자신을 대신해 총알을 맞은 일도 배경으로 작용한 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Frejus",
+       "revision": 1784164,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A2, A17, A25, A26, M1 and Q14.",
+     "quote": "Probably because I really have rejected them myself, I guess? I'm somewhat aware of their standards. As for Frejus... He's a decent ways off from making the cut.",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 Gardes 소속으로, 질문하는 척하며 Frejus의 지식을 시험해 왔고 그가 답을 모르면 힌트를 건넸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 경비대원 소속으로, 질문하는 척하며 프레쥐스의 지식을 시험해 왔고 그가 답을 모르면 힌트를 건넸다."
+      },
+      {
+       "t_raw": "그녀는 **Fontaine Research Institute**의 엄격함과 학술 기준을 알고 있고, 자신도 그곳의 제안을 거절한 적이 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 **폰타인 과학원**의 엄격함과 학술 기준을 알고 있고, 자신도 그곳의 제안을 거절한 적이 있다고 말한다."
+      },
+      {
+       "t_raw": "그 기준에 비추어 Frejus는 합격선에 한참 못 미치지만, Chenee는 그가 자신에게 총알을 대신 받아 준 일에 대한 고마움으로 허세를 계속 즐긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 기준에 비추어 프레쥐스는 합격선에 한참 못 미치지만, 체니는 그가 자신에게 총알을 대신 받아 준 일에 대한 고마움으로 허세를 계속 즐긴다."
+      },
+      {
+       "t_raw": "Frejus는 Chenee가 자신의 허세를 알아차린 것을 모르고, 자신이 총알을 막아 준 상대가 누구인지도 기억하지 못하거나 신경 쓰지 않는 눈치다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레쥐스는 체니가 자신의 허세를 알아차린 것을 모르고, 자신이 총알을 막아 준 상대가 누구인지도 기억하지 못하거나 신경 쓰지 않는 눈치다."
+      },
+      {
+       "t_raw": "Chenee가 말하지 않는 한 Frejus는 알 수 없고, 그는 신참 파티가 첫 만남이라고 여기지만 두 사람은 그보다 훨씬 전부터 안면이 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니가 말하지 않는 한 프레쥐스는 알 수 없고, 그는 신참 파티가 첫 만남이라고 여기지만 두 사람은 그보다 훨씬 전부터 안면이 있었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Cannon Has Ears",
+       "quest_ko": "대포의 부름",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Frejus",
+       "revision": 1784164,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A25",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Matches M7. The interpretation is reasonable and hedged.",
+     "quote": "Chenee must come from a rich family, while Frejus comes from humbler origins. She's always giving him desserts like that — she must spend eight or nine thousand Mora a day on them.",
+     "sentences": [
+      {
+       "t_raw": "Marine은 Chenee가 **부유한 집안** 출신이고 Frejus는 더 미천한 출신이라고 보며, Chenee가 Frejus에게 디저트를 늘 건네느라 하루 8~9천 Mora를 쓴다고 추측한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마린은 체니가 **부유한 집안** 출신이고 프레쥐스는 더 미천한 출신이라고 보며, 체니가 프레쥐스에게 디저트를 늘 건네느라 하루 8~9천 모라를 쓴다고 추측한다."
+      },
+      {
+       "t_raw": "Marine의 관찰을 종합하면, Chenee의 부유한 집안은 그녀가 Frejus에게 디저트를 계속 건네는 경제적 배경으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마린의 관찰을 종합하면, 체니의 부유한 집안은 그녀가 프레쥐스에게 디저트를 계속 건네는 경제적 배경으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Marine",
+       "revision": 1784162,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Gardes' Inventor",
+     "status": "accepted",
+     "note": "Matches Q10, Q11, Q15 and Q23. The interpretation is hedged and acceptable.",
+     "quote": "My senior's come up with a new invention that needs testing. Would the two of you be interested in helping?",
+     "sentences": [
+      {
+       "t_raw": "Proto-Boss 일행이 나타나자 Chenee는 선배의 **새 발명품 테스트**에 함께 도와줄 수 있겠느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Proto-Boss 일행이 나타나자 체니는 선배의 **새 발명품 테스트**에 함께 도와줄 수 있겠느냐고 묻는다."
+      },
+      {
+       "t_raw": "이어서 농담이었다고 말한 뒤 자신을 Chenee, 선배를 Frejus라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어서 농담이었다고 말한 뒤 자신을 체니, 선배를 프레쥐스라고 소개한다."
+      },
+      {
+       "t_raw": "소개를 마친 Chenee는 좋다며 모두의 행운을 빈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소개를 마친 체니는 좋다며 모두의 행운을 빈다."
+      },
+      {
+       "t_raw": "먼저 농담을 던지고 소개로 넘어가는 흐름은 협조를 구하는 자리를 가볍게 만들려는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "먼저 농담을 던지고 소개로 넘어가는 흐름은 협조를 구하는 자리를 가볍게 만들려는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Cannon Has Ears",
+       "quest_ko": "대포의 부름",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Gardes' Inventor",
+       "quest_ko": "경비대의 발명가",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Gardes' Inventor",
+       "quest_ko": "경비대의 발명가",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Gardes' Inventor",
+       "quest_ko": "경비대의 발명가",
+       "version": "4.5",
+       "speaker": "Chenee"
+      }
+     ],
+     "heading": "작중 행적 — 경비대의 발명가",
+     "latin_left": [
+      "Proto-Boss"
+     ]
+    },
+    {
+     "section": "작중 행적 — The Gardes' Inventor",
+     "status": "accepted",
+     "note": "All sentences are supported by Q3, M1, Q7, Q19 and Q25.",
+     "quote": "Ahem, you flatter me, Chenee. Do you still remember what I said before? The smarter you are, the more important it is to be humble.",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 **Fontaine Research Institute** 쪽이 Frejus를 눈여겨보았고, **고급 연구**를 맡기려면 거액을 지불했을 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 **폰타인 과학원** 쪽이 프레쥐스를 눈여겨보았고, **고급 연구**를 맡기려면 거액을 지불했을 것이라고 말한다."
+      },
+      {
+       "t_raw": "그럼에도 Frejus는 자신의 재능을 헛되이 할 수 없어 때때로 Gardes의 일을 돕는 새 발명품을 만든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그럼에도 프레쥐스는 자신의 재능을 헛되이 할 수 없어 때때로 경비대원의 일을 돕는 새 발명품을 만든다."
+      },
+      {
+       "t_raw": "Chenee는 그가 계속 이곳에 머문 이유가 일을 사랑하기 때문이라며, 그런 정서를 감동적이라고 평한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 그가 계속 이곳에 머문 이유가 일을 사랑하기 때문이라며, 그런 정서를 감동적이라고 평한다."
+      },
+      {
+       "t_raw": "Frejus는 그런 칭찬을 겸손하게 받아 넘기며, 똑똑할수록 겸손해야 한다는 말을 기억하라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레쥐스는 그런 칭찬을 겸손하게 받아 넘기며, 똑똑할수록 겸손해야 한다는 말을 기억하라고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Gardes' Inventor",
+       "quest_ko": "경비대의 발명가",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "wiki",
+       "page": "Frejus",
+       "revision": 1784164,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Gardes' Inventor",
+       "quest_ko": "경비대의 발명가",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Gardes' Inventor",
+       "quest_ko": "경비대의 발명가",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Gardes' Inventor",
+       "quest_ko": "경비대의 발명가",
+       "version": "4.5",
+       "speaker": "Frejus"
+      }
+     ],
+     "heading": "작중 행적 — 경비대의 발명가",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — For the Future's Sake, Experiment!",
+     "status": "accepted",
+     "note": "Supported by Q4 and Q8. The interpretation follows from Q12.",
+     "quote": "See, I told you this would go well! With your genius in play, Frejus, this remote-controlled cannon thing was a piece of cake!",
+     "sentences": [
+      {
+       "t_raw": "원격 대포 시험이 성공하자 Chenee는 **Frejus의 천재성** 덕분에 이번 일이 식은 죽 먹기였다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원격 대포 시험이 성공하자 체니는 **프레쥐스의 천재성** 덕분에 이번 일이 식은 죽 먹기였다고 말한다."
+      },
+      {
+       "t_raw": "이어 그는 Institute의 제안을 세 번 거절한 사람이니 Institute도 만들지 못한 물건을 만들 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 그는 Institute의 제안을 세 번 거절한 사람이니 Institute도 만들지 못한 물건을 만들 수 있다고 말한다."
+      },
+      {
+       "t_raw": "성공을 Frejus의 이름으로 정리한 뒤 이어서 다음 발명으로 시선을 돌리는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "성공을 프레쥐스의 이름으로 정리한 뒤 이어서 다음 발명으로 시선을 돌리는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "For the Future's Sake, Experiment!",
+       "quest_ko": "미래를 향한 테스트",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "For the Future's Sake, Experiment!",
+       "quest_ko": "미래를 향한 테스트",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "For the Future's Sake, Experiment!",
+       "quest_ko": "미래를 향한 테스트",
+       "version": "4.5",
+       "speaker": "Chenee"
+      }
+     ],
+     "heading": "작중 행적 — For the Future의 Sake, Experiment!",
+     "latin_left": [
+      "Institute",
+      "Institute"
+     ]
+    },
+    {
+     "section": "작중 행적 — For the Future's Sake, Experiment!",
+     "status": "accepted",
+     "note": "Supported by Q12, Q16 and Q20. The interpretation is reasonable.",
+     "quote": "In that case, let's get cracking with the next awesome gadget — and I have a great idea for one, too!",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 **다음 발명**을 만들자며 자신에게도 좋은 아이디어가 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 **다음 발명**을 만들자며 자신에게도 좋은 아이디어가 있다고 말한다."
+      },
+      {
+       "t_raw": "하늘을 탐험할 비행선을 꺼내고, 땅속 깊이 뚫을 거대 드릴도 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하늘을 탐험할 비행선을 꺼내고, 땅속 깊이 뚫을 거대 드릴도 제안한다."
+      },
+      {
+       "t_raw": "한 가지 구상에 그치지 않고 하늘과 땅이라는 서로 다른 방향의 아이디어를 잇달아 내놓는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 가지 구상에 그치지 않고 하늘과 땅이라는 서로 다른 방향의 아이디어를 잇달아 내놓는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "For the Future's Sake, Experiment!",
+       "quest_ko": "미래를 향한 테스트",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "For the Future's Sake, Experiment!",
+       "quest_ko": "미래를 향한 테스트",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "For the Future's Sake, Experiment!",
+       "quest_ko": "미래를 향한 테스트",
+       "version": "4.5",
+       "speaker": "Chenee"
+      }
+     ],
+     "heading": "작중 행적 — For the Future의 Sake, Experiment!",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Rolling Crossfire",
+     "status": "accepted",
+     "note": "Sentence 2 gives Frejus's own explanation. In the English, Chenee says it, and she hedges with 'If I had to guess'. The drunk-boasting remark is also Chenee's, not Frejus's. So the Korean misattributes it and turns a guess into certainty.",
+     "quote": "It's just that I knew what the device would look like the moment I looked upon the blueprints.",
+     "sentences": [
+      {
+       "t_raw": "Rolling Crossfire에서 Chenee는 Proto-Boss에게 Frejus의 원격 대포를 어떻게 보는지 묻고, 꽤 좋고 신선한 경험이라는 대답을 듣는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "둥글뒹굴 집중포격에서 체니는 Proto-Boss에게 프레쥐스의 원격 대포를 어떻게 보는지 묻고, 꽤 좋고 신선한 경험이라는 대답을 듣는다."
+      },
+      {
+       "t_raw": "반응이 시원찮자 그녀는 설계도를 본 순간 장치의 모습을 알았다고 말하고, Frejus가 힘든 작업에 신경 쓰지만 사고 위험은 크지 않다고 평한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "반응이 시원찮자 그녀는 설계도를 본 순간 장치의 모습을 알았다고 말하고, 프레쥐스가 힘든 작업에 신경 쓰지만 사고 위험은 크지 않다고 평한다."
+      },
+      {
+       "t_raw": "이어 Chenee는 **천재 연기**는 피곤하지 않냐고 묻고, 짐작컨대 Frejus는 진짜 천재가 아니라 아이디어가 활발한 평범한 사람일 거라고 말하며, Fontaine Research Institute의 제안을 세 번 거절했다는 말은 술김의 허풍이었다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "이어 체니는 **천재 연기**는 피곤하지 않냐고 묻고, 짐작컨대 프레쥐스는 진짜 천재가 아니라 아이디어가 활발한 평범한 사람일 거라고 말하며, 폰타인 과학원의 제안을 세 번 거절했다는 말은 술김의 허풍이었다고 덧붙인다."
+      },
+      {
+       "t_raw": "대화는 대포보다 Frejus의 연기를 살피는 쪽으로 옮겨 간 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "대화는 대포보다 프레쥐스의 연기를 살피는 쪽으로 옮겨 간 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 둥글뒹굴 집중포격",
+     "latin_left": [
+      "Proto-Boss"
+     ]
+    },
+    {
+     "section": "작중 행적 — Rolling Crossfire",
+     "status": "accepted",
+     "note": "All sentences match A15 and A17 through A24.",
+     "quote": "This whole process is quite fun, which is why I do not intend to expose him.",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 Frejus가 그녀가 눈치챘다는 사실을 모른다고 여기며 비밀로 해 달라고 부탁한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 프레쥐스가 그녀가 눈치챘다는 사실을 모른다고 여기며 비밀로 해 달라고 부탁한다."
+      },
+      {
+       "t_raw": "그녀는 자신도 Fontaine Research Institute의 제안을 거절한 적이 있어 그 기준을 알고, Frejus는 기준에 꽤 못 미친다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 자신도 폰타인 과학원의 제안을 거절한 적이 있어 그 기준을 알고, 프레쥐스는 기준에 꽤 못 미친다고 본다."
+      },
+      {
+       "t_raw": "그녀는 **모르는 신입**처럼 온갖 질문을 던지고, 일부러 어려운 질문을 한 뒤 그가 당황을 감추려 애쓰는 모습을 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 **모르는 신입**처럼 온갖 질문을 던지고, 일부러 어려운 질문을 한 뒤 그가 당황을 감추려 애쓰는 모습을 본다."
+      },
+      {
+       "t_raw": "힌트를 '우연히' 건네면 Frejus가 헛기침하며 처음부터 알고 있었던 척한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "힌트를 '우연히' 건네면 프레쥐스가 헛기침하며 처음부터 알고 있었던 척한다."
+      },
+      {
+       "t_raw": "이 과정이 재미있어서 Frejus를 들키게 할 생각이 없고, 그가 바쁘게 뛰어다니는 모습이 즐거운 취미라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 과정이 재미있어서 프레쥐스를 들키게 할 생각이 없고, 그가 바쁘게 뛰어다니는 모습이 즐거운 취미라고 말한다."
+      },
+      {
+       "t_raw": "이 연극은 아주 오랫동안 계속되리라고 답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 연극은 아주 오랫동안 계속되리라고 답한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A22",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 둥글뒹굴 집중포격",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Rolling Crossfire",
+     "status": "accepted",
+     "note": "Supported by A25, A26, A2 and M1. The interpretation is reasonable.",
+     "quote": "He's so very inobservant. I'm sure he doesn't remember — or perhaps he doesn't care — who he blocked the bullet for that day.",
+     "sentences": [
+      {
+       "t_raw": "Frejus는 신입 환영회가 처음 만난 자리라고 생각하지만 실제로는 그보다 훨씬 전부터 알던 사이였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레쥐스는 신입 환영회가 처음 만난 자리라고 생각하지만 실제로는 그보다 훨씬 전부터 알던 사이였다."
+      },
+      {
+       "t_raw": "Frejus는 눈치가 둔해서 그날 누구를 위해 총알을 막아 섰는지 기억하지 못하거나 신경 쓰지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레쥐스는 눈치가 둔해서 그날 누구를 위해 총알을 막아 섰는지 기억하지 못하거나 신경 쓰지 않는다."
+      },
+      {
+       "t_raw": "Frejus가 Chenee의 목숨을 구했지만 본인은 그 일을 모르는 셈이며, Chenee는 그런 허세를 놀이처럼 이어 가는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "프레쥐스가 체니의 목숨을 구했지만 본인은 그 일을 모르는 셈이며, 체니는 그런 허세를 놀이처럼 이어 가는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Frejus",
+       "revision": 1784164,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A22",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 둥글뒹굴 집중포격",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Cannon Has Ears",
+     "status": "accepted",
+     "note": "All sentences are supported by Q2, Q10, Q18, Q6 and Q22.",
+     "quote": "Recently, a group of workers unexpectedly unearthed some ruins nearby, disturbing the monsters slumbering within...",
+     "sentences": [
+      {
+       "t_raw": "The Cannon Has Ears에서 작업자들이 폐허를 파내며 잠든 몬스터가 깨어난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대포의 부름에서 작업자들이 폐허를 파내며 잠든 몬스터가 깨어난다."
+      },
+      {
+       "t_raw": "Proto-Boss 일행이 오자 Chenee는 Frejus를 쉬게 하고 상황을 설명하겠다고 하며, 반나절이 지나도 몬스터가 줄지 않아 증원을 고민한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Proto-Boss 일행이 오자 체니는 프레쥐스를 쉬게 하고 상황을 설명하겠다고 하며, 반나절이 지나도 몬스터가 줄지 않아 증원을 고민한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Cannon Has Ears",
+       "quest_ko": "대포의 부름",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Cannon Has Ears",
+       "quest_ko": "대포의 부름",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Cannon Has Ears",
+       "quest_ko": "대포의 부름",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Cannon Has Ears",
+       "quest_ko": "대포의 부름",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Cannon Has Ears",
+       "quest_ko": "대포의 부름",
+       "version": "5.7",
+       "speaker": "Chenee"
+      }
+     ],
+     "heading": "작중 행적 — 대포의 부름",
+     "latin_left": [
+      "Proto-Boss"
+     ]
+    },
+    {
+     "section": "작중 행적 — The Cannon Has Ears",
+     "status": "accepted",
+     "note": "Supported by Q14, A36 and A37.",
+     "quote": "Well, I set up a minefield that only the monsters can trigger to the cannon's rear. Even if the cannon doesn't get them all, there's no way they'll escape the ruins.",
+     "sentences": [
+      {
+       "t_raw": "Gardes가 봉쇄 구역을 세운 데다 Chenee가 대포 뒤쪽에 몬스터만 반응하는 **지뢰밭**을 깔아, 대포가 다 잡지 못해도 폐허 밖으로 나가기 어렵다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경비대원이 봉쇄 구역을 세운 데다 체니가 대포 뒤쪽에 몬스터만 반응하는 **지뢰밭**을 깔아, 대포가 다 잡지 못해도 폐허 밖으로 나가기 어렵다."
+      },
+      {
+       "t_raw": "지뢰밭에 문제가 생기면 **머스킷**으로 남은 몬스터를 상대할 준비가 되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지뢰밭에 문제가 생기면 **머스킷**으로 남은 몬스터를 상대할 준비가 되어 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Cannon Has Ears",
+       "quest_ko": "대포의 부름",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A36",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A37",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 대포의 부름",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Cannon Has Ears",
+     "status": "accepted",
+     "note": "Supported by A29 to A33.",
+     "quote": "To be honest, I'm starting to regret helping Frejus keep up his whole \"genius\" act.",
+     "sentences": [
+      {
+       "t_raw": "Proto-Boss가 Chenee가 대포에는 관심이 없어 보인다고 하자, Chenee는 속마음을 들켰다며 Frejus의 **'천재' 연기**를 도운 일을 후회하기 시작한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Proto-Boss가 체니가 대포에는 관심이 없어 보인다고 하자, 체니는 속마음을 들켰다며 프레쥐스의 **'천재' 연기**를 도운 일을 후회하기 시작한다고 말한다."
+      },
+      {
+       "t_raw": "공식 군용 대포를 만들고 위험한 곳까지 달려온 Frejus의 야심이 걷잡을 수 없이 커졌다고 보며, Marine이 이미 그곳에 있지 않았다면 실제 위험이 닥칠 수 있었다고 걱정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공식 군용 대포를 만들고 위험한 곳까지 달려온 프레쥐스의 야심이 걷잡을 수 없이 커졌다고 보며, 마린이 이미 그곳에 있지 않았다면 실제 위험이 닥칠 수 있었다고 걱정한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A32",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A33",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 대포의 부름",
+     "latin_left": [
+      "Proto-Boss"
+     ]
+    },
+    {
+     "section": "작중 행적 — The Cannon Has Ears",
+     "status": "accepted",
+     "note": "Supported by A43 to A48. The interpretation in sentence 3 follows from them.",
+     "quote": "Self-esteem is important. I don't want anyone to make him think less of himself. So, I have to help him keep up the act.",
+     "sentences": [
+      {
+       "t_raw": "발명품이 다시 주목받지 못하고 엔지니어들이 떠나면 어쩌냐는 걱정도 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "발명품이 다시 주목받지 못하고 엔지니어들이 떠나면 어쩌냐는 걱정도 남는다."
+      },
+      {
+       "t_raw": "'천재가 아니어도 괜찮다'고 위로하는 것은 잔인할 수 있고, 자존심을 지키기 위해 계속 연기를 돕겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "'천재가 아니어도 괜찮다'고 위로하는 것은 잔인할 수 있고, 자존심을 지키기 위해 계속 연기를 돕겠다고 한다."
+      },
+      {
+       "t_raw": "필요하면 자신에게 초대를 보내는 전문가들을 불러 역할을 맡기고, 흥미와 무관하게 이 가식이 너무 빨리 끝나게 두지 않겠다는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "필요하면 자신에게 초대를 보내는 전문가들을 불러 역할을 맡기고, 흥미와 무관하게 이 가식이 너무 빨리 끝나게 두지 않겠다는 것이다."
+      },
+      {
+       "t_raw": "이는 대중의 흥미가 사라져도 Frejus의 자존심을 지키려는 대응으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 대중의 흥미가 사라져도 프레쥐스의 자존심을 지키려는 대응으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A43",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A44",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A45",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A46",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A47",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A48",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 대포의 부름",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Pre-Packaged Solution",
+     "status": "accepted",
+     "note": "Supported by A53 to A55.",
+     "quote": "Chenee: No problem, just take your time. There's no need to stay up all night working on this either, we've got all the time in the world...",
+     "sentences": [
+      {
+       "t_raw": "Frejus는 기계 방어 병력에 더해 대포 정비용 기계와 탄약·부품 보급용 기계가 필요하다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레쥐스는 기계 방어 병력에 더해 대포 정비용 기계와 탄약·부품 보급용 기계가 필요하다고 말한다."
+      },
+      {
+       "t_raw": "설계 도면만 그리는 데도 거의 1년이 걸릴 것이라며 일이 많다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "설계 도면만 그리는 데도 거의 1년이 걸릴 것이라며 일이 많다고 덧붙인다."
+      },
+      {
+       "t_raw": "Chenee는 서두를 필요 없다며 밤새 작업하지 않아도 될 만큼 시간은 충분하다고 받아넘긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 서두를 필요 없다며 밤새 작업하지 않아도 될 만큼 시간은 충분하다고 받아넘긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A53",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A54",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #2",
+       "paragraph": "A55",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 종합 해결책",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Pre-Packaged Solution",
+     "status": "accepted",
+     "note": "Supported by Q13, Q1, Q5, Q9, Q21 and Q17.",
+     "quote": "That way, you can combine all these machines together and sell them as a \"Pre-Packaged Solution\"...",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 이런 기계들을 한데 묶어 **Pre-Packaged Solution**으로 판매하는 구상을 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 이런 기계들을 한데 묶어 **종합 해결책**으로 판매하는 구상을 제안한다."
+      },
+      {
+       "t_raw": "특화된 보호 병력이 배치되면 대포 사각지대로 몬스터가 들어올 걱정이 없고, 토스터 시험 때마다 위험 지역에서 몬스터와 싸울 필요도 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특화된 보호 병력이 배치되면 대포 사각지대로 몬스터가 들어올 걱정이 없고, 토스터 시험 때마다 위험 지역에서 몬스터와 싸울 필요도 없다고 말한다."
+      },
+      {
+       "t_raw": "Frejus의 **Automatic Breakfast Oven**을 칭찬하며 요리 기구에 재능이 있다고 인정하고, 이참에 \"Automated Tidalga Pickler\"를 발명할 기회라고 권한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레쥐스의 **Automatic Breakfast Oven**을 칭찬하며 요리 기구에 재능이 있다고 인정하고, 이참에 \"Automated Tidalga Pickler\"를 발명할 기회라고 권한다."
+      },
+      {
+       "t_raw": "한숨을 쉬며 이전 작업을 모두 포기하는 것은 Frejus의 방식이 아니라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한숨을 쉬며 이전 작업을 모두 포기하는 것은 프레쥐스의 방식이 아니라고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Pre-Packaged Solution",
+       "quest_ko": "종합 해결책",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "Pre-Packaged Solution",
+       "quest_ko": "종합 해결책",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "Pre-Packaged Solution",
+       "quest_ko": "종합 해결책",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "Pre-Packaged Solution",
+       "quest_ko": "종합 해결책",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "Pre-Packaged Solution",
+       "quest_ko": "종합 해결책",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "Pre-Packaged Solution",
+       "quest_ko": "종합 해결책",
+       "version": "5.7",
+       "speaker": "Chenee"
+      }
+     ],
+     "heading": "작중 행적 — 종합 해결책",
+     "latin_left": [
+      "Automatic Breakfast Oven",
+      "Automated Tidalga Pickler"
+     ]
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Many of his inventions are actually half-way created by Chenee's hints and she finds fun in keeping him busy.",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 Frejus에게 질문을 던져 지식을 시험하고, 그가 답하지 못하면 **힌트**를 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 프레쥐스에게 질문을 던져 지식을 시험하고, 그가 답하지 못하면 **힌트**를 건넨다."
+      },
+      {
+       "t_raw": "그녀는 Fontaine Research Institute의 기준을 알고, 자신이 그 초대를 거절한 경험이 있어 Frejus가 기준에 꽤 못 미친다는 점도 파악한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 폰타인 과학원의 기준을 알고, 자신이 그 초대를 거절한 경험이 있어 프레쥐스가 기준에 꽤 못 미친다는 점도 파악한다."
+      },
+      {
+       "t_raw": "Frejus의 발명 중 많은 것은 Chenee의 힌트로 반쯤 완성되며, 그녀는 그를 바쁘게 만드는 일에서 재미를 느낀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레쥐스의 발명 중 많은 것은 체니의 힌트로 반쯤 완성되며, 그녀는 그를 바쁘게 만드는 일에서 재미를 느낀다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Frejus",
+       "revision": 1784164,
+       "section": "Profile",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "We Gardes have set up a containment zone to prevent their escape.",
+     "sentences": [
+      {
+       "t_raw": "대포 뒤쪽에는 몬스터만 반응하는 **지뢰밭**을 설치해, 대포가 다 처리하지 못해도 폐허 밖으로 달아나지 못하게 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대포 뒤쪽에는 몬스터만 반응하는 **지뢰밭**을 설치해, 대포가 다 처리하지 못해도 폐허 밖으로 달아나지 못하게 한다."
+      },
+      {
+       "t_raw": "지뢰밭이 잘못돼도 머스킷으로 운 좋게 살아남거나 더 교활한 몬스터를 상대할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지뢰밭이 잘못돼도 머스킷으로 운 좋게 살아남거나 더 교활한 몬스터를 상대할 수 있다."
+      },
+      {
+       "t_raw": "지난번 구조가 필요했던 일 이후 꾸준히 훈련해, 이제는 사격 실력이 Turenna에 맞먹는다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지난번 구조가 필요했던 일 이후 꾸준히 훈련해, 이제는 사격 실력이 튀렌나에 맞먹는다고 본다."
+      },
+      {
+       "t_raw": "Gardes는 몬스터가 빠져나가지 못하도록 **봉쇄 구역**을 세웠고, 대포의 사각지대로 몬스터가 들어오지 않도록 전용 보호 체계도 갖췄다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경비대원은 몬스터가 빠져나가지 못하도록 **봉쇄 구역**을 세웠고, 대포의 사각지대로 몬스터가 들어오지 않도록 전용 보호 체계도 갖췄다."
+      },
+      {
+       "t_raw": "이런 배치는 대포의 빈틈을 지뢰밭과 머스킷, 봉쇄 구역으로 메우는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 배치는 대포의 빈틈을 지뢰밭과 머스킷, 봉쇄 구역으로 메우는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A36",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A37",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A38",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Pre-Packaged Solution",
+       "quest_ko": "종합 해결책",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Cannon Has Ears",
+       "quest_ko": "대포의 부름",
+       "version": "5.7",
+       "speaker": "Chenee"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "many people have lost interest — only Chenee remains.",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 Frejus를 자신의 선배로 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 프레쥐스를 자신의 선배로 소개한다."
+      },
+      {
+       "t_raw": "그녀는 Frejus가 천재인 척한다는 걸 알면서도 모르는 척 질문을 던져 시험하고, 답을 모르면 힌트를 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 프레쥐스가 천재인 척한다는 걸 알면서도 모르는 척 질문을 던져 시험하고, 답을 모르면 힌트를 건넨다."
+      },
+      {
+       "t_raw": "이 놀이는 Frejus가 자신을 위해 총알을 막아 준 데 대한 고마움에서 이어지며, Frejus는 그녀가 눈치챘다는 사실을 모른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 놀이는 프레쥐스가 자신을 위해 총알을 막아 준 데 대한 고마움에서 이어지며, 프레쥐스는 그녀가 눈치챘다는 사실을 모른다."
+      },
+      {
+       "t_raw": "주변인이 흥미를 잃어도 Chenee만은 남아 그 허세를 도우므로, 그녀는 Frejus에게 **관객이자 조력자**에 가깝다.",
+       "interp": true,
+       "dropped": false,
+       "t": "주변인이 흥미를 잃어도 체니만은 남아 그 허세를 도우므로, 그녀는 프레쥐스에게 **관객이자 조력자**에 가깝다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Gardes' Inventor",
+       "quest_ko": "경비대의 발명가",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Frejus",
+       "revision": 1784164,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Chenee must come from a rich family, while Frejus comes from humbler origins.",
+     "sentences": [
+      {
+       "t_raw": "Marine은 Chenee가 준 귀한 디저트를 맛있다고 기억한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마린은 체니가 준 귀한 디저트를 맛있다고 기억한다."
+      },
+      {
+       "t_raw": "Marine은 Chenee가 부유한 집안 출신이고 Frejus는 더 소박한 출신이라며, Chenee가 Frejus에게도 그런 디저트를 자주 주고 하루 8,000~9,000 Mora를 쓴다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마린은 체니가 부유한 집안 출신이고 프레쥐스는 더 소박한 출신이라며, 체니가 프레쥐스에게도 그런 디저트를 자주 주고 하루 8,000~9,000 모라를 쓴다고 본다."
+      },
+      {
+       "t_raw": "Frejus에 따르면 Chenee는 Automatic Breakfast Oven을 매일 쓸 만큼 좋아한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레쥐스에 따르면 체니는 Automatic Breakfast Oven을 매일 쓸 만큼 좋아한다."
+      },
+      {
+       "t_raw": "Marine이 짚은 부유한 집안과 Frejus에게 건네는 디저트는 두 사람의 **처지 차이**를 드러낸다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마린이 짚은 부유한 집안과 프레쥐스에게 건네는 디저트는 두 사람의 **처지 차이**를 드러낸다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Marine",
+       "revision": 1784162,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Marine",
+       "revision": 1784162,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Frejus",
+       "revision": 1784164,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Automatic Breakfast Oven"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "trimmed",
+     "note": "The line about Proto-Boss protecting Frejus is a player dialogue option (A34), not something Chenee says.",
+     "quote": "Proto-Boss and little assistant really have shown up!",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 Proto-Boss와 작은 조수가 정말 나타났다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 Proto-Boss와 작은 조수가 정말 나타났다고 말한다."
+      },
+      {
+       "t_raw": "그녀는 Proto-Boss가 Frejus를 보호한다고 말하고, 자신도 Frejus 곁에 있겠다고 한다.",
+       "interp": false,
+       "dropped": true,
+       "t": "그녀는 Proto-Boss가 프레쥐스를 보호한다고 말하고, 자신도 프레쥐스 곁에 있겠다고 한다."
+      },
+      {
+       "t_raw": "Chenee는 Marine이 이미 그 자리에 있었기에 Frejus가 정말 위험해질 수 있었던 일은 면했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 마린이 이미 그 자리에 있었기에 프레쥐스가 정말 위험해질 수 있었던 일은 면했다고 말한다."
+      },
+      {
+       "t_raw": "그녀는 구조가 필요했던 뒤로 훈련해 이제 Turenna의 사격 실력에 맞먹을 수 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 구조가 필요했던 뒤로 훈련해 이제 튀렌나의 사격 실력에 맞먹을 수 있다고 본다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Cannon Has Ears",
+       "quest_ko": "대포의 부름",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A34",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A50",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A33",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A38",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Proto-Boss"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All supported; the interpretation is reasonable.",
+     "quote": "He even thinks that the newcomers' party was the first time we met, but it was a long time before that.",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 자신이 말하지 않는 한 Frejus가 과거를 알 수 없고, Frejus는 신입 환영 파티를 첫 만남으로 여긴다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 자신이 말하지 않는 한 프레쥐스가 과거를 알 수 없고, 프레쥐스는 신입 환영 파티를 첫 만남으로 여긴다고 말한다."
+      },
+      {
+       "t_raw": "실제로 두 사람이 만난 것은 그보다 훨씬 전이며, Frejus는 그날 누구를 위해 총알을 막았는지 기억하지 못하거나 신경 쓰지 않는다고 Chenee는 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "실제로 두 사람이 만난 것은 그보다 훨씬 전이며, 프레쥐스는 그날 누구를 위해 총알을 막았는지 기억하지 못하거나 신경 쓰지 않는다고 체니는 본다."
+      },
+      {
+       "t_raw": "**Frejus가 모르는 과거**를 Chenee가 쥐고 있는 구도는 두 사람의 관계에 남은 여지로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**프레쥐스가 모르는 과거**를 체니가 쥐고 있는 구도는 두 사람의 관계에 남은 여지로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Rolling Crossfire",
+       "paragraph": "A26",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "None failed. Marine’s wealth guess, dessert spending, and Chenee’s conditional recruit line are all in the English; the personnel reading stays hedged.",
+     "quote": "Chenee must come from a rich family, while Frejus comes from humbler origins. She's always giving him desserts like that — she must spend eight or nine thousand Mora a day on them.",
+     "sentences": [
+      {
+       "t_raw": "Marine은 Chenee가 **부유한 집안** 출신일 것이라 추측하며 Frejus는 더 소박한 출신이라고 보고, Chenee가 Frejus에게 디저트를 계속 주며 하루 8~9천 Mora를 쓴다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마린은 체니가 **부유한 집안** 출신일 것이라 추측하며 프레쥐스는 더 소박한 출신이라고 보고, 체니가 프레쥐스에게 디저트를 계속 주며 하루 8~9천 모라를 쓴다고 말한다."
+      },
+      {
+       "t_raw": "Chenee는 Frejus가 이야기하는 엔지니어들이 그를 버리면 자신에게 초대를 계속 보내는 전문가 몇 명을 불러 역할을 맡게 하겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 프레쥐스가 이야기하는 엔지니어들이 그를 버리면 자신에게 초대를 계속 보내는 전문가 몇 명을 불러 역할을 맡게 하겠다고 한다."
+      },
+      {
+       "t_raw": "부유한 집안 추측과 전문가들의 초대가 겹치면서 Chenee가 필요할 때 동원할 수 있는 인적 여지가 남는다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "부유한 집안 추측과 전문가들의 초대가 겹치면서 체니가 필요할 때 동원할 수 있는 인적 여지가 남는다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "A47",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Marine",
+       "revision": 1784162,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "None failed. Hair and blue Gardes uniform, the daily Automatic Breakfast Oven, and Chenee’s praise of it all match.",
+     "quote": "Of course, Chenee's favorite is the \"Automatic Breakfast Oven.\" She uses it every day.",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 갈색 머리에 **푸른 Gardes 제복**을 입고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 갈색 머리에 **푸른 경비대원 제복**을 입고 있다."
+      },
+      {
+       "t_raw": "Frejus가 말하기를 그녀가 가장 좋아하는 것은 **Automatic Breakfast Oven**이며 매일 사용한다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "프레쥐스가 말하기를 그녀가 가장 좋아하는 것은 **Automatic Breakfast Oven**이며 매일 사용한다고 한다."
+      },
+      {
+       "t_raw": "Chenee 자신도 그 Automatic Breakfast Oven이 대단한 성과를 낸다며, Frejus에게 요리 기구에 재능이 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니 자신도 그 Automatic Breakfast Oven이 대단한 성과를 낸다며, 프레쥐스에게 요리 기구에 재능이 있다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Chenee",
+       "revision": 1784163,
+       "section": "Profile > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Frejus",
+       "revision": 1784164,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Pre-Packaged Solution",
+       "quest_ko": "종합 해결책",
+       "version": "5.7",
+       "speaker": "Chenee"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Automatic Breakfast Oven",
+      "Automatic Breakfast Oven"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "None failed. The first-time valuable cake and the rich-versus-humble spending remark match Marine; the class reading follows from that same remark.",
+     "quote": "Miss Chenee gave me a very valuable dessert — a type of cake I've never tried before. By human standards, I think it should be considered delicious.",
+     "sentences": [
+      {
+       "t_raw": "Marine는 Chenee가 준 귀한 디저트인 케이크를 처음 맛보았고, 인간 기준으로는 맛있다고 여겼다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마린은 체니가 준 귀한 디저트인 케이크를 처음 맛보았고, 인간 기준으로는 맛있다고 여겼다고 한다."
+      },
+      {
+       "t_raw": "Marine는 Chenee가 부유한 집안 출신일 것이라고 하고, Frejus는 더 소박한 출신이라고 한다. 또 Chenee가 그런 디저트를 Frejus에게 늘 주며 하루 8~9천 Mora를 쓴다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마린은 체니가 부유한 집안 출신일 것이라고 하고, 프레쥐스는 더 소박한 출신이라고 한다. 또 체니가 그런 디저트를 프레쥐스에게 늘 주며 하루 8~9천 모라를 쓴다고 본다."
+      },
+      {
+       "t_raw": "Marine가 디저트의 값과 빈도를 함께 언급한 것은 둘의 집안 차이를 염두에 둔 관찰로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마린이 디저트의 값과 빈도를 함께 언급한 것은 둘의 집안 차이를 염두에 둔 관찰로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Marine",
+       "revision": 1784162,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Marine",
+       "revision": 1784162,
+       "section": "Event Dialogue > Dialogue Set #1",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "None failed. The toaster, airship, mega drill, and Automated Tidalga Pickler lines are Chenee’s; the practical-versus-grand contrast is a fair reading.",
+     "quote": "This sounds like a perfect opportunity to invent an \"Automated Tidalga Pickler.\"",
+     "sentences": [
+      {
+       "t_raw": "Chenee는 위험 지역까지 몬스터와 싸우러 가지 않아도 토스터를 시험할 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체니는 위험 지역까지 몬스터와 싸우러 가지 않아도 토스터를 시험할 수 있다고 말한다."
+      },
+      {
+       "t_raw": "발명 아이디어로는 하늘을 탐험할 비행선을 제안하고, 깊은 땅을 뚫을 거대한 드릴이나 **Automated Tidalga Pickler** 같은 것도 꺼낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "발명 아이디어로는 하늘을 탐험할 비행선을 제안하고, 깊은 땅을 뚫을 거대한 드릴이나 **Automated Tidalga Pickler** 같은 것도 꺼낸다."
+      },
+      {
+       "t_raw": "토스터 시험을 걱정하는 실무적인 말과 하늘·땅·피클을 오가는 발명 제안이 한 사람에게서 나온다는 점이 대비를 이룬다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "토스터 시험을 걱정하는 실무적인 말과 하늘·땅·피클을 오가는 발명 제안이 한 사람에게서 나온다는 점이 대비를 이룬다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Pre-Packaged Solution",
+       "quest_ko": "종합 해결책",
+       "version": "5.7",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "For the Future's Sake, Experiment!",
+       "quest_ko": "미래를 향한 테스트",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "For the Future's Sake, Experiment!",
+       "quest_ko": "미래를 향한 테스트",
+       "version": "4.5",
+       "speaker": "Chenee"
+      },
+      {
+       "kind": "quest",
+       "quest": "Pre-Packaged Solution",
+       "quest_ko": "종합 해결책",
+       "version": "5.7",
+       "speaker": "Chenee"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Automated Tidalga Pickler"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "None failed. The joke, the introduction, and naming Chenee and senior Frejus track the line.",
+     "t_raw": "아니, 그냥 농담이야. 그럼 소개를 하는 게 좋겠네. 나는 Chenee이고, 이쪽은 나의 선배 Frejus야.",
+     "en": "No, I'm just joking. Introductions are in order, I suppose. I'm Chenee, and this is my senior, Frejus.",
+     "speaker": "Chenee",
+     "source": {
+      "kind": "quest",
+      "quest": "The Gardes' Inventor",
+      "quest_ko": "경비대의 발명가",
+      "version": "4.5",
+      "speaker": "Chenee"
+     },
+     "t": "아니, 그냥 농담이야. 그럼 소개를 하는 게 좋겠네. 나는 체니이고, 이쪽은 나의 선배 프레쥐스야.",
+     "speaker_ko": "체니"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "None failed. Rejecting the Institute three times and the tagged claim that he can make what they cannot match the line.",
+     "t_raw": "그러니까, 너는 Institute의 제안을 세 번이나 거절한 사람이잖아. 분명 그들도 만들 수 없는 것도 만들 수 있겠지?",
+     "en": "I mean, you're the one who rejected the Institute's offer three times. I'm sure you can make stuff even they can't, right?",
+     "speaker": "Chenee",
+     "source": {
+      "kind": "quest",
+      "quest": "For the Future's Sake, Experiment!",
+      "quest_ko": "미래를 향한 테스트",
+      "version": "4.5",
+      "speaker": "Chenee"
+     },
+     "t": "그러니까, 너는 Institute의 제안을 세 번이나 거절한 사람이잖아. 분명 그들도 만들 수 없는 것도 만들 수 있겠지?",
+     "speaker_ko": "체니"
+    },
+    {
+     "section": "작중 행적 — The Gardes' Inventor",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "아니에요, 그냥 농담이에요. 그럼 소개를 해야겠네요. 저는 Chenee이고, 이쪽은 제 선배 Frejus예요.",
+     "en": "No, I'm just joking. Introductions are in order, I suppose. I'm Chenee, and this is my senior, Frejus.",
+     "speaker": "Chenee",
+     "source": {
+      "kind": "quest",
+      "quest": "The Gardes' Inventor",
+      "quest_ko": "경비대의 발명가",
+      "version": "4.5",
+      "speaker": "Chenee"
+     },
+     "t": "아니에요, 그냥 농담이에요. 그럼 소개를 해야겠네요. 저는 체니이고, 이쪽은 제 선배 프레쥐스예요.",
+     "speaker_ko": "체니"
+    },
+    {
+     "section": "작중 행적 — For the Future's Sake, Experiment!",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "봐, 내가 잘될 거라고 말했잖아! Frejus, 네 천재성이 발휘되니 이 원격 조종 대포라는 것도 식은 죽 먹기였어!",
+     "en": "See, I told you this would go well! With your genius in play, Frejus, this remote-controlled cannon thing was a piece of cake!",
+     "speaker": "Chenee",
+     "source": {
+      "kind": "quest",
+      "quest": "For the Future's Sake, Experiment!",
+      "quest_ko": "미래를 향한 테스트",
+      "version": "4.5",
+      "speaker": "Chenee"
+     },
+     "t": "봐, 내가 잘될 거라고 말했잖아! 프레쥐스, 네 천재성이 발휘되니 이 원격 조종 대포라는 것도 식은 죽 먹기였어!",
+     "speaker_ko": "체니"
+    },
+    {
+     "section": "작중 행적 — The Cannon Has Ears",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "왜 잠깐 쉬지 그래? 내가 이 둘에게 간단히 설명해 줄 수 있어.",
+     "en": "Why don't you take a breather? I can brief these two.",
+     "speaker": "Chenee",
+     "source": {
+      "kind": "quest",
+      "quest": "The Cannon Has Ears",
+      "quest_ko": "대포의 부름",
+      "version": "5.7",
+      "speaker": "Chenee"
+     },
+     "t": "왜 잠깐 쉬지 그래? 내가 이 둘에게 간단히 설명해 줄 수 있어.",
+     "speaker_ko": "체니"
+    },
+    {
+     "section": "작중 행적 — Pre-Packaged Solution",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "그렇게 하면 이 기계들을 모두 하나로 묶어 \"Pre-Packaged Solution\"으로 팔 수 있어...",
+     "en": "That way, you can combine all these machines together and sell them as a \"Pre-Packaged Solution\"...",
+     "speaker": "Chenee",
+     "source": {
+      "kind": "quest",
+      "quest": "Pre-Packaged Solution",
+      "quest_ko": "종합 해결책",
+      "version": "5.7",
+      "speaker": "Chenee"
+     },
+     "t": "그렇게 하면 이 기계들을 모두 하나로 묶어 \"종합 해결책\"으로 팔 수 있어...",
+     "speaker_ko": "체니"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "우리 Gardes가 그들이 도망가지 못하도록 봉쇄 구역을 설치했다.",
+     "en": "We Gardes have set up a containment zone to prevent their escape.",
+     "speaker": "Chenee",
+     "source": {
+      "kind": "quest",
+      "quest": "The Cannon Has Ears",
+      "quest_ko": "대포의 부름",
+      "version": "5.7",
+      "speaker": "Chenee"
+     },
+     "t": "우리 경비대원이 그들이 도망가지 못하도록 봉쇄 구역을 설치했다.",
+     "speaker_ko": "체니"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation of the line.",
+     "t_raw": "와, 여기 왔네... Proto-Boss와 작은 조수가 정말 나타났어!",
+     "en": "Wow, here they are... Proto-Boss and little assistant really have shown up!",
+     "speaker": "Chenee",
+     "source": {
+      "kind": "quest",
+      "quest": "The Cannon Has Ears",
+      "quest_ko": "대포의 부름",
+      "version": "5.7",
+      "speaker": "Chenee"
+     },
+     "t": "와, 여기 왔네... Proto-Boss와 작은 조수가 정말 나타났어!",
+     "speaker_ko": "체니"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Q16 / the given dialogue line: 'What about an airship that can explore the skies?'",
+     "t_raw": "하늘을 탐험할 수 있는 비행선은 어때?",
+     "en": "What about an airship that can explore the skies?",
+     "speaker": "Chenee",
+     "source": {
+      "kind": "quest",
+      "quest": "For the Future's Sake, Experiment!",
+      "quest_ko": "미래를 향한 테스트",
+      "version": "4.5",
+      "speaker": "Chenee"
+     },
+     "t": "하늘을 탐험할 수 있는 비행선은 어때?",
+     "speaker_ko": "체니"
+    }
+   ]
+  }
+ ]
+}

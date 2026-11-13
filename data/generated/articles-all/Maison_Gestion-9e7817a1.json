@@ -1,0 +1,1044 @@
+{
+ "node": "Maison Gestion",
+ "articles": [
+  {
+   "node": "Maison Gestion",
+   "from_version": "4.2",
+   "cutoff": "2023-12-19T00:00:00Z",
+   "input": [
+    {
+     "page": "Maison Gestion",
+     "url": "https://genshin-impact.fandom.com/wiki/Maison_Gestion",
+     "revision": 1413285
+    }
+   ],
+   "input_counts": {
+    "mentions": 5,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 910,
+   "input_cut": false,
+   "input_hash": "3e497bef115f",
+   "writer": "ds,or-ds",
+   "verifier": "claude-sonnet,codex-medium",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, M3, M4 and Q3.",
+     "quote": "The Maison Gestion is a governmental organization responsible for document management and handling administrative tasks within the Court of Fontaine.",
+     "sentences": [
+      {
+       "t_raw": "Maison Gestion은 Court of Fontaine 안에서 문서 관리와 행정 업무를 맡는 정부 기구다.",
+       "interp": false,
+       "dropped": false,
+       "t": "행정청은 폰타인성 안에서 문서 관리와 행정 업무를 맡는 정부 기구다."
+      },
+      {
+       "t_raw": "구성원들은 Palais Mermonia에 배치되어 일하며, Iaune처럼 업무 스트레스로 쓰러지는 사례가 나올 만큼 과로에 취약하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구성원들은 멜모니아궁에 배치되어 일하며, 윤처럼 업무 스트레스로 쓰러지는 사례가 나올 만큼 과로에 취약하다."
+      },
+      {
+       "t_raw": "Broglie는 Maison Gestion의 승인 전까지 Hydrology Monitoring Station의 공식 직원이 아니었고, Fontaine Research Institute 확장 공사 중 발견된 Bravais의 사안은 Maison Gestion에 보고되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "브로글리는 행정청의 승인 전까지 Hydrology Monitoring Station의 공식 직원이 아니었고, 폰타인 과학원 확장 공사 중 발견된 Bravais의 사안은 행정청에 보고되었다."
+      },
+      {
+       "t_raw": "그 권한과 번거로움이 함께 드러나면서, Court of Fontaine 사람들의 비아냥과 실무자들의 고충이 맞물리는 조직으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 권한과 번거로움이 함께 드러나면서, 폰타인성 사람들의 비아냥과 실무자들의 고충이 맞물리는 조직으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        },
+        {
+         "type": "quest",
+         "name": "A Certain Notice"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Certain Stamp"
+        },
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Broglie",
+       "revision": 1373057,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Liffey Region",
+       "revision": 1385013,
+       "section": "Notable Features > Project Proposal",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Gattineo"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Hydrology Monitoring Station",
+      "Bravais"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences match A1 and A2.",
+     "quote": "The Maison Gestion is a governmental organization responsible for document management and handling administrative tasks within the Court of Fontaine.",
+     "sentences": [
+      {
+       "t_raw": "Maison Gestion은 Court of Fontaine 안에서 **문서 관리와 행정 업무**를 담당하는 정부 기구다.",
+       "interp": false,
+       "dropped": false,
+       "t": "행정청은 폰타인성 안에서 **문서 관리와 행정 업무**를 담당하는 정부 기구다."
+      },
+      {
+       "t_raw": "구성원들은 Palais Mermonia에 배치되어 근무한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "구성원들은 멜모니아궁에 배치되어 근무한다."
+      },
+      {
+       "t_raw": "이들은 **과로**에 매우 취약한데, Iaune은 늘 업무 스트레스를 받고 몇 번이나 기절했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 **과로**에 매우 취약한데, 윤은 늘 업무 스트레스를 받고 몇 번이나 기절했다."
+      },
+      {
+       "t_raw": "서류나 물품을 얻는 절차는 지나칠 만큼 문서화되어 있어, 프린터 키캡 하나가 빠져도 교체품을 받으려면 많은 서류를 거쳐야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서류나 물품을 얻는 절차는 지나칠 만큼 문서화되어 있어, 프린터 키캡 하나가 빠져도 교체품을 받으려면 많은 서류를 거쳐야 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        },
+        {
+         "type": "quest",
+         "name": "A Certain Notice"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Certain Stamp"
+        },
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Sentences 0 and 1 match Q3. Sentence 2 is a reasonable interpretation.",
+     "quote": "The people of the Court of Fontaine never miss an opportunity to mock and deride the Maison Gestion, and we must act with caution.",
+     "sentences": [
+      {
+       "t_raw": "Court of Fontaine 사람들은 Maison Gestion을 **조롱**하고 비웃을 기회를 놓치지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인성 사람들은 행정청을 **조롱**하고 비웃을 기회를 놓치지 않는다."
+      },
+      {
+       "t_raw": "Gattineo는 그런 분위기 속에서 신중하게 행동해야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가테리오는 그런 분위기 속에서 신중하게 행동해야 한다고 말한다."
+      },
+      {
+       "t_raw": "이처럼 절차가 지나치게 많고 구성원들이 과로하는 모습은 그런 빈정거림과 맞닿아 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 절차가 지나치게 많고 구성원들이 과로하는 모습은 그런 빈정거림과 맞닿아 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Certain Stamp"
+        },
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Gattineo"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Supported by A1, M1 and M2. The interpretation follows from the approval requirement.",
+     "quote": "You see, a request like this requires approval from the Maison Gestion. And I would imagine you've heard tell of just how... efficient... those gentlemen are?",
+     "sentences": [
+      {
+       "t_raw": "Maison Gestion은 Court of Fontaine의 문서 관리와 행정 업무를 맡는 정부 기구이며, Maison Gardiennage의 부서로도 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "행정청은 폰타인성의 문서 관리와 행정 업무를 맡는 정부 기구이며, 법률 집행청의 부서로도 언급된다."
+      },
+      {
+       "t_raw": "어떤 요청에는 Maison Gestion의 승인이 필요하고, Broglie는 그 절차를 두고 직원들이 얼마나 …효율적…인지 들어 봤을 것이라며 비꼰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어떤 요청에는 행정청의 승인이 필요하고, 브로글리는 그 절차를 두고 직원들이 얼마나 …효율적…인지 들어 봤을 것이라며 비꼰다."
+      },
+      {
+       "t_raw": "**문서·행정 기구**가 승인 절차를 매개로 권한을 행사하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**문서·행정 기구**가 승인 절차를 매개로 권한을 행사하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        },
+        {
+         "type": "quest",
+         "name": "A Certain Notice"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Maison Gardiennage",
+       "revision": 1351204,
+       "section": "Departments",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Broglie",
+       "revision": 1373057,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Supported by Q8, Q9, Q10, Q2 and A2. The interpretation is reasonable.",
+     "quote": "Simply put, most official correspondence within the Maison Gestion must be mailed.",
+     "sentences": [
+      {
+       "t_raw": "내부에서는 Kameras 반입 금지 같은 새 규칙을 만들면 직원에게 알려야 하고, 공식 서신은 대부분 우편으로 보내야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "내부에서는 사진기 반입 금지 같은 새 규칙을 만들면 직원에게 알려야 하고, 공식 서신은 대부분 우편으로 보내야 한다."
+      },
+      {
+       "t_raw": "대본은 Maison Gestion과 Gardiennage의 감독을 거쳐 실제 사건을 재현한 것이라고 알려지며, 기자들이 정보를 퍼뜨리는 속도가 내부 메모보다 빠르다는 푸념도 나온다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대본은 행정청과 Gardiennage의 감독을 거쳐 실제 사건을 재현한 것이라고 알려지며, 기자들이 정보를 퍼뜨리는 속도가 내부 메모보다 빠르다는 푸념도 나온다."
+      },
+      {
+       "t_raw": "서류는 과도하게 많아 프린터 키캡 하나 교체에도 많은 서류가 필요하고, Iaune은 업무에 스트레스를 받으며 여러 번 기절한 사례다.",
+       "interp": false,
+       "dropped": false,
+       "t": "서류는 과도하게 많아 프린터 키캡 하나 교체에도 많은 서류가 필요하고, 윤은 업무에 스트레스를 받으며 여러 번 기절한 사례다."
+      },
+      {
+       "t_raw": "**내부 우편**과 감독, 과도한 절차가 겹치면서 기구의 일은 문서에 크게 묶여 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**내부 우편**과 감독, 과도한 절차가 겹치면서 기구의 일은 문서에 크게 묶여 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Certain Stamp"
+        },
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Ever-Surging Memories",
+       "quest_ko": "솟구치는 기억",
+       "version": "4.1",
+       "speaker": "Performance Announcement"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Letter",
+       "quest_ko": "한 통의 우편물",
+       "version": "4.1",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Gattineo"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "Gardiennage"
+     ]
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Matches M3. The interpretation is reasonable.",
+     "quote": "the Maison Gestion has not yet granted its approval",
+     "sentences": [
+      {
+       "t_raw": "Broglie는 Maison Gestion의 승인이 아직 나지 않아 Hydrology Monitoring Station의 **공식 직원이 아니**라고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "브로글리는 행정청의 승인이 아직 나지 않아 Hydrology Monitoring Station의 **공식 직원이 아니**라고 밝힌다."
+      },
+      {
+       "t_raw": "그가 말한 부서는 이미 해체된 상태였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그가 말한 부서는 이미 해체된 상태였다."
+      },
+      {
+       "t_raw": "즉 승인 여부가 개인의 소속을 가르는 기준처럼 드러난 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즉 승인 여부가 개인의 소속을 가르는 기준처럼 드러난 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Broglie",
+       "revision": 1373057,
+       "section": "Dialogue",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": [
+      "Hydrology Monitoring Station"
+     ]
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences are supported or reasonable interpretations.",
+     "quote": "The Maison Gestion has been debriefed. Pending further action.",
+     "sentences": [
+      {
+       "t_raw": "Fontaine Research Institute 확장 사업 2단계에서 작업자들이 문서에 없는 인간 굴착 터널을 발견했고, 그 끝은 사망한 선임 연구원 Bravais의 개인 실험실이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인 과학원 확장 사업 2단계에서 작업자들이 문서에 없는 인간 굴착 터널을 발견했고, 그 끝은 사망한 선임 연구원 Bravais의 개인 실험실이었다."
+      },
+      {
+       "t_raw": "연구 시설은 손상되지 않은 채 발견되었으며, Maison Gestion은 보고를 받고 **추가 조치를 기다리는** 상태로 남았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "연구 시설은 손상되지 않은 채 발견되었으며, 행정청은 보고를 받고 **추가 조치를 기다리는** 상태로 남았다."
+      },
+      {
+       "t_raw": "사건의 경위가 정리되어도 후속 처리가 미뤄져 있다는 점에서, 기록과 행정의 다음 단계가 숙제로 남은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사건의 경위가 정리되어도 후속 처리가 미뤄져 있다는 점에서, 기록과 행정의 다음 단계가 숙제로 남은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Liffey Region",
+       "revision": 1385013,
+       "section": "Notable Features > Project Proposal",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": [
+      "Bravais"
+     ]
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Shumilov is the deputy captain, not the squad commander.",
+     "quote": "claiming the Maison Gestion gave them permission. In truth, they were only pretending to work",
+     "sentences": [
+      {
+       "t_raw": "Fatui의 34th Independent Investigative Squad는 Mont Esus East에 배치되어 Fontaine Research Institute가 쓰던 여러 수문 관측소를 넘겨받았고, Maison Gestion이 **허가했다고 주장했다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "우인단의 34번째 독립 조사대는 에수스 산 동쪽 기슭에 배치되어 폰타인 과학원이 쓰던 여러 수문 관측소를 넘겨받았고, 행정청이 **허가했다고 주장했다**.",
+       "polish": {
+        "from": "우인단의 34th 독립 조사대는 에수스 산 동쪽 기슭에 배치되어 폰타인 과학원이 쓰던 여러 수문 관측소를 넘겨받았고, 행정청이 **허가했다고 주장했다**.",
+        "text": "우인단의 34번째 독립 조사대는 에수스 산 동쪽 기슭에 배치되어 폰타인 과학원이 쓰던 여러 수문 관측소를 넘겨받았고, 행정청이 **허가했다고 주장했다**.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그러나 이들은 실제로 일하는 척하면서 게으름을 피우려 했고, 부대장(副隊長) Shumilov의 감시를 받고 있었다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그러나 이들은 실제로 일하는 척하면서 게으름을 피우려 했고, 부대장(副隊長) 쉬미노프의 감시를 받고 있었다."
+      },
+      {
+       "t_raw": "결국 Broglie를 돕던 Traveler에게 쫓겨났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "결국 브로글리를 돕던 여행자에게 쫓겨났다."
+      },
+      {
+       "t_raw": "허가 주장과 실제 태도 사이의 간극이 드러난 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "허가 주장과 실제 태도 사이의 간극이 드러난 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fatui",
+       "revision": 1442707,
+       "section": "Description > In Fontaine",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "In Search of Lost Time"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 2 changes continued employment into not yet obtaining employment. Sentence 3 treats separate file and staffing inquiries as an established personnel chain.",
+     "quote": "Admirable, yet scary at the same time. No wonder he has few friends in the Maison Gestion other than Roialte and Semaine.",
+     "sentences": [
+      {
+       "t_raw": "Iaune은 **과로**에 시달리며 몇 번이나 기절했고, Desnos는 어떤 인물을 존경할 만하면서도 무섭다고 평하며, 그가 Maison Gestion에서 Roialte와 Semaine 외에 친구가 적다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윤은 **과로**에 시달리며 몇 번이나 기절했고, 데스노스는 어떤 인물을 존경할 만하면서도 무섭다고 평하며, 그가 행정청에서 로이알트와 세멘 외에 친구가 적다고 말한다."
+      },
+      {
+       "t_raw": "Iaune은 Mr. Desnos에게 파일을 받아야 Maison Gestion으로 돌아갈 수 있고, Mr. Roialte의 말대로 직원 관련 일은 Difor에게 묻는다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "윤은 Mr. 데스노스에게 파일을 받아야 행정청으로 돌아갈 수 있고, Mr. 로이알트의 말대로 직원 관련 일은 뒤포르에게 묻는다고 전한다."
+      },
+      {
+       "t_raw": "Iaune은 누군가의 큰 호의가 없었다면 Maison Gestion에서 계속 일하지 못했을 것이라고도 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "윤은 누군가의 큰 호의가 없었다면 행정청에서 계속 일하지 못했을 것이라고도 말한다."
+      },
+      {
+       "t_raw": "그가 파일은 Mr. Desnos에게 받고, 인사 문제는 Mr. Roialte의 말대로 Difor에게 묻는 모습은 Maison Gestion에서 파일과 인사 문의가 각각 다른 사람에게 향하는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "그가 파일은 Mr. 데스노스에게 받고, 인사 문제는 Mr. 로이알트의 말대로 뒤포르에게 묻는 모습은 행정청에서 파일과 인사 문의가 각각 다른 사람에게 향하는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Certain Stamp"
+        },
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "A Letter",
+       "quest_ko": "한 통의 우편물",
+       "version": "4.1",
+       "speaker": "Desnos"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Letter",
+       "quest_ko": "한 통의 우편물",
+       "version": "4.1",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Iaune"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Letter",
+       "quest_ko": "한 통의 우편물",
+       "version": "4.1",
+       "speaker": "Iaune"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Mr",
+      "Mr",
+      "Mr",
+      "Mr"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences pass; the full material identifies Arouet as a former member.",
+     "quote": "Livre's attempts to get payment from the Palais Mermonia regarding a shipment of Clockwork Meka has left him exasperated",
+     "sentences": [
+      {
+       "t_raw": "Livre는 Palais Mermonia에 Clockwork Meka 선적 대금 지불을 요청했지만, 도와줄 수 있는 사람이 몇몇 현지인에게 부정적 인상을 준 Mr. Clapiers뿐이라 분통을 터뜨린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리브르는 멜모니아궁에 태엽 장치 선적 대금 지불을 요청했지만, 도와줄 수 있는 사람이 몇몇 현지인에게 부정적 인상을 준 Mr. Clapiers뿐이라 분통을 터뜨린다."
+      },
+      {
+       "t_raw": "Estelle은 이름 하나가 빠진 것도 재앙으로 여기는 태도를 터무니없다고 보고, Caron은 그런 일이 자주 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스타블레는 이름 하나가 빠진 것도 재앙으로 여기는 태도를 터무니없다고 보고, 카론은 그런 일이 자주 있다고 말한다."
+      },
+      {
+       "t_raw": "Arouet은 Maison Gestion의 전임자로 기록되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아루에는 행정청의 전임자로 기록되어 있다."
+      },
+      {
+       "t_raw": "이는 **행정 처리**의 작은 누락과 지불 문제가 당사자에게 큰 부담으로 번지는 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 **행정 처리**의 작은 누락과 지불 문제가 당사자에게 큰 부담으로 번지는 장면으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Certain Stamp"
+        },
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": "Gestionnaires > Former",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Mr",
+      "Clapiers"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "A private lab does not establish that it was undisclosed or closed to the public. Pending further action does not establish that action was put on hold.",
+     "quote": "The research facility was found undamaged. The Maison Gestion has been debriefed. Pending further action.",
+     "sentences": [
+      {
+       "t_raw": "Fontaine Research Institute 확장 사업 2단계에서 사람이 파서 만든 문서화되지 않은 굴이 발견되어 고(故) Bravais 선임연구원의 **개인 실험실**로 이어졌고, 연구 시설은 훼손되지 않은 것으로 확인되었다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "폰타인 과학원 확장 사업 2단계에서 사람이 파서 만든 문서화되지 않은 굴이 발견되어 고(故) Bravais 선임연구원의 **개인 실험실**로 이어졌고, 연구 시설은 훼손되지 않은 것으로 확인되었다."
+      },
+      {
+       "t_raw": "Maison Gestion은 관련 보고를 받았고, 추가 조치를 기다리는 중이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "행정청은 관련 보고를 받았고, 추가 조치를 기다리는 중이다."
+      },
+      {
+       "t_raw": "따라서 행정적 후속 조치는 아직 확정되지 않은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 행정적 후속 조치는 아직 확정되지 않은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Liffey Region",
+       "revision": 1385013,
+       "section": "Notable Features > Project Proposal",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Bravais"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported or reasonably framed as interpretation.",
+     "quote": "claiming the Maison Gestion gave them permission. In truth, they were only pretending to work",
+     "sentences": [
+      {
+       "t_raw": "34th Independent Investigative Squad는 Mont Esus East에 배치되어 Fontaine Research Institute가 쓰던 여러 수문 관측소를 차지하고 **Maison Gestion의 허가**를 받았다고 주장했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "34번째 독립 조사대는 에수스 산 동쪽 기슭에 배치되어 폰타인 과학원이 쓰던 여러 수문 관측소를 차지하고 **행정청의 허가**를 받았다고 주장했다.",
+       "polish": {
+        "from": "34th 독립 조사대는 에수스 산 동쪽 기슭에 배치되어 폰타인 과학원이 쓰던 여러 수문 관측소를 차지하고 **행정청의 허가**를 받았다고 주장했다.",
+        "text": "34번째 독립 조사대는 에수스 산 동쪽 기슭에 배치되어 폰타인 과학원이 쓰던 여러 수문 관측소를 차지하고 **행정청의 허가**를 받았다고 주장했다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "실제로 이들은 일하는 척만 했고, 게으름을 피우려 했지만 싫어하던 부대장 대리 Shumilov의 감시를 받았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "실제로 이들은 일하는 척만 했고, 게으름을 피우려 했지만 싫어하던 부대장 대리 쉬미노프의 감시를 받았다."
+      },
+      {
+       "t_raw": "결국 Broglie를 돕던 Traveler가 이들을 쫓아냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "결국 브로글리를 돕던 여행자가 이들을 쫓아냈다."
+      },
+      {
+       "t_raw": "허가 주장과 실제 태도가 어긋나므로, 이 허가는 자리를 잡기 위한 명분으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "허가 주장과 실제 태도가 어긋나므로, 이 허가는 자리를 잡기 위한 명분으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Fatui",
+       "revision": 1442707,
+       "section": "Description > In Fontaine",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "In Search of Lost Time"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Sentence 0 matches Q2. Sentence 1 is a reasonable interpretation.",
+     "quote": "The script has passed through Maison Gestion and Gardiennage supervision to recreate the real-life events.",
+     "sentences": [
+      {
+       "t_raw": "공연 안내문은 대본이 실제 사건을 재현하기 위해 **Maison Gestion과 Gardiennage의 감독**을 거쳤다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공연 안내문은 대본이 실제 사건을 재현하기 위해 **행정청과 Gardiennage의 감독**을 거쳤다고 밝힌다."
+      },
+      {
+       "t_raw": "이는 두 기구의 감독이 공개 결과물의 신뢰를 뒷받침하는 절차로 제시된 사례로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 두 기구의 감독이 공개 결과물의 신뢰를 뒷받침하는 절차로 제시된 사례로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Ever-Surging Memories",
+       "quest_ko": "솟구치는 기억",
+       "version": "4.1",
+       "speaker": "Performance Announcement"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Gardiennage"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 1 says Livre was worn out because the only person who could help was Mr. Clapiers, who left a bad impression on locals. That matches A2. But it omits nothing wrong... Check: A2 says Livre was exasperated and only Clapiers could help, who has a negative impression on several locals. This is supported. However the failing point: none. Sentence 2 says Estelle finds it preposterous and Caron says it happens often. This is also supported. Reconsidered: no failure.",
+     "quote": "even a missing keycap from a printer requires plenty of paperwork in order to obtain a replacement.",
+     "sentences": [
+      {
+       "t_raw": "Maison Gestion에서는 **프린터 키캡 하나**가 빠져도 교체품을 받으려면 상당한 서류 작업이 필요하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "행정청에서는 **프린터 키캡 하나**가 빠져도 교체품을 받으려면 상당한 서류 작업이 필요하다."
+      },
+      {
+       "t_raw": "Livre는 Clockwork Meka 선적 대금을 Palais Mermonia에서 받으려다 진이 빠졌는데, 도움을 줄 수 있는 사람이 여러 지역 주민에게 좋지 않은 인상을 남긴 Mr. Clapiers뿐이었기 때문이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "리브르는 태엽 장치 선적 대금을 멜모니아궁에서 받으려다 진이 빠졌는데, 도움을 줄 수 있는 사람이 여러 지역 주민에게 좋지 않은 인상을 남긴 Mr. Clapiers뿐이었기 때문이다."
+      },
+      {
+       "t_raw": "Estelle는 이름 하나가 빠진 것만으로 'disasterous'라고 하는 것은 터무니없다고 여기고, Caron은 그런 일이 자주 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에스타블레는 이름 하나가 빠진 것만으로 'disasterous'라고 하는 것은 터무니없다고 여기고, 카론은 그런 일이 자주 있다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Certain Stamp"
+        },
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        }
+       ]
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Mr",
+      "Clapiers"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 0 matches Q1. Sentence 1 matches A3 (Arouet listed as a former Gestionnaire).",
+     "quote": "Admirable, yet scary at the same time. No wonder he has few friends in the Maison Gestion other than Roialte and Semaine.",
+     "sentences": [
+      {
+       "t_raw": "Desnos는 어떤 인물을 두고 'Admirable, yet scary at the same time'이라고 평하며, 그가 Maison Gestion에서 Roialte와 Semaine 외에는 친구가 적은 것도 무리가 아니라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데스노스는 어떤 인물을 두고 '감탄할 만하지만 동시에 무섭다'라고 평하며, 그가 행정청에서 로이알트와 세멘 외에는 친구가 적은 것도 무리가 아니라고 말한다.",
+       "polish": {
+        "from": "데스노스는 어떤 인물을 두고 'Admirable, yet scary at the same time'이라고 평하며, 그가 행정청에서 로이알트와 세멘 외에는 친구가 적은 것도 무리가 아니라고 말한다.",
+        "text": "데스노스는 어떤 인물을 두고 '감탄할 만하지만 동시에 무섭다'라고 평하며, 그가 행정청에서 로이알트와 세멘 외에는 친구가 적은 것도 무리가 아니라고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "전직 구성원으로는 Arouet가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전직 구성원으로는 아루에가 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": "Gestionnaires > Former",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Letter",
+       "quest_ko": "한 통의 우편물",
+       "version": "4.1",
+       "speaker": "Desnos"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 0 matches Q10. Sentence 1 is a reasonable interpretation tied to A2.",
+     "quote": "Hahaha! Those reporters get information and spread it far faster than our internal memos here at the Maison Gestion can.",
+     "sentences": [
+      {
+       "t_raw": "Gattineo는 기자들이 Maison Gestion의 **내부 메모보다** 정보를 더 빨리 얻고 퍼뜨린다고 웃는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가테리오는 기자들이 행정청의 **내부 메모보다** 정보를 더 빨리 얻고 퍼뜨린다고 웃는다."
+      },
+      {
+       "t_raw": "서류와 절차가 많은 곳이라는 평판과 겹쳐 보면, 공식 메모보다 소문이 먼저 도는 장면이 떠오른다.",
+       "interp": true,
+       "dropped": false,
+       "t": "서류와 절차가 많은 곳이라는 평판과 겹쳐 보면, 공식 메모보다 소문이 먼저 도는 장면이 떠오른다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Maison Gestion",
+       "revision": 1413285,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Certain Stamp"
+        },
+        {
+         "type": "quest",
+         "name": "Tales From the Court"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "A Certain Notice",
+       "quest_ko": "한 통의 공지",
+       "version": "4.0",
+       "speaker": "Gattineo"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Q3.",
+     "t_raw": "Court of Fontaine 사람들은 Maison Gestion을 조롱하고 비웃을 기회를 결코 놓치지 않으니, 우리는 신중하게 행동해야 한다.",
+     "en": "The people of the Court of Fontaine never miss an opportunity to mock and deride the Maison Gestion, and we must act with caution.",
+     "speaker": "Gattineo",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Notice",
+      "quest_ko": "한 통의 공지",
+      "version": "4.0",
+      "speaker": "Gattineo"
+     },
+     "t": "폰타인성 사람들은 행정청을 조롱하고 비웃을 기회를 결코 놓치지 않으니, 우리는 신중하게 행동해야 한다.",
+     "speaker_ko": "가테리오"
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful translation of Q9.",
+     "t_raw": "간단히 말해, Maison Gestion 내부의 공식 서신은 대부분 우편으로 보내야 한다.",
+     "en": "Simply put, most official correspondence within the Maison Gestion must be mailed.",
+     "speaker": "Iaune",
+     "source": {
+      "kind": "quest",
+      "quest": "A Letter",
+      "quest_ko": "한 통의 우편물",
+      "version": "4.1",
+      "speaker": "Iaune"
+     },
+     "t": "간단히 말해, 행정청 내부의 공식 서신은 대부분 우편으로 보내야 한다.",
+     "speaker_ko": "윤"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of Desnos's line.",
+     "t_raw": "존경할 만하지만 동시에 무섭다. 그가 Maison Gestion에서 Roialte와 Semaine 외에 친구가 적은 것도 무리가 아니다.",
+     "en": "Admirable, yet scary at the same time. No wonder he has few friends in the Maison Gestion other than Roialte and Semaine.",
+     "speaker": "Desnos",
+     "source": {
+      "kind": "quest",
+      "quest": "A Letter",
+      "quest_ko": "한 통의 우편물",
+      "version": "4.1",
+      "speaker": "Desnos"
+     },
+     "t": "존경할 만하지만 동시에 무섭다. 그가 행정청에서 로이알트와 세멘 외에 친구가 적은 것도 무리가 아니다.",
+     "speaker_ko": "데스노스"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The Korean says the script passed through Maison Gestion and Gardiennage supervision to recreate the real events. The Korean is faithful, but 'Gardiennage' is kept as is and is fine. Actually the translation is accurate, so this passes.",
+     "t_raw": "대본은 실제 사건을 재현하기 위해 Maison Gestion과 Gardiennage의 감독을 거쳤다.",
+     "en": "\"The script has passed through Maison Gestion and Gardiennage supervision to recreate the real-life events.\"",
+     "speaker": "Performance Announcement",
+     "source": {
+      "kind": "quest",
+      "quest": "Ever-Surging Memories",
+      "quest_ko": "솟구치는 기억",
+      "version": "4.1",
+      "speaker": "Performance Announcement"
+     },
+     "t": "대본은 실제 사건을 재현하기 위해 행정청과 Gardiennage의 감독을 거쳤다.",
+     "speaker_ko": "Performance Announcement"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Gattineo's line.",
+     "t_raw": "하하하! 저 기자들은 우리 Maison Gestion의 내부 메모보다 정보를 훨씬 빠르게 얻고 퍼뜨린다.",
+     "en": "Hahaha! Those reporters get information and spread it far faster than our internal memos here at the Maison Gestion can.",
+     "speaker": "Gattineo",
+     "source": {
+      "kind": "quest",
+      "quest": "A Certain Notice",
+      "quest_ko": "한 통의 공지",
+      "version": "4.0",
+      "speaker": "Gattineo"
+     },
+     "t": "하하하! 저 기자들은 우리 행정청의 내부 메모보다 정보를 훨씬 빠르게 얻고 퍼뜨린다.",
+     "speaker_ko": "가테리오"
+    }
+   ]
+  }
+ ]
+}

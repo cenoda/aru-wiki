@@ -1,0 +1,616 @@
+{
+ "node": "Mondstadt Aristocracy",
+ "articles": [
+  {
+   "node": "Mondstadt Aristocracy",
+   "from_version": "1.6",
+   "cutoff": "2021-07-20T00:00:00Z",
+   "input": [
+    {
+     "page": "Mondstadt Aristocracy",
+     "url": "https://genshin-impact.fandom.com/wiki/Mondstadt_Aristocracy",
+     "revision": 225554
+    }
+   ],
+   "input_counts": {
+    "mentions": 5,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 866,
+   "input_cut": false,
+   "input_hash": "2354da0d85ea",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences match A1 and A2.",
+     "quote": "Mondstadt's aristocracy was the ruling class of Mondstadt after the fall of Decarabian's Mondstadt.",
+     "sentences": [
+      {
+       "t_raw": "Mondstadt Aristocracy는 Decarabian의 Mondstadt가 무너진 뒤 Mondstadt를 다스린 지배 계급이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드 귀족은 데카라비안의 몬드가 무너진 뒤 몬드를 다스린 지배 계급이다."
+      },
+      {
+       "t_raw": "**1,600년에 걸친 통치** 동안 이들은 백성을 지키는 귀족에서 백성과 외국인 모두를 억압하는 폭군적 지배자로 변했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**1,600년에 걸친 통치** 동안 이들은 백성을 지키는 귀족에서 백성과 외국인 모두를 억압하는 폭군적 지배자로 변했다."
+      },
+      {
+       "t_raw": "그 억압은 Anemo Archon Barbatos를 잠에서 깨우게 했고, Barbatos는 외국 태생 검투사 Vennessa가 Mondstadt Aristocracy에 맞선 반란을 도왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 억압은 바람의 신 바르바토스를 잠에서 깨우게 했고, 바르바토스는 외국 태생 검투사 바네사가 몬드 귀족에 맞선 반란을 도왔다."
+      },
+      {
+       "t_raw": "**Vennessa의 반란**은 승리했고 대부분의 귀족은 Mondstadt에서 추방되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**바네사의 반란**은 승리했고 대부분의 귀족은 몬드에서 추방되었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Decarabian 이후와 Vennessa의 반란",
+     "status": "accepted",
+     "note": "Sentences 0 and 1 are supported by A1 and M1. Sentence 2 is a reasonable interpretation.",
+     "quote": "Mondstadt's aristocracy was the ruling class of Mondstadt after the fall of Decarabian's Mondstadt.",
+     "sentences": [
+      {
+       "t_raw": "Decarabian의 Mondstadt가 무너진 뒤, **Mondstadt Aristocracy**가 Mondstadt의 지배 계급으로 자리했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "데카라비안의 몬드가 무너진 뒤, **몬드 귀족**이 몬드의 지배 계급으로 자리했다."
+      },
+      {
+       "t_raw": "Old Mondstadt는 Mondstadt Aristocracy가 Mondstadt를 지배하던 시대로 서술된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "옛 몬드는 몬드 귀족이 몬드를 지배하던 시대로 서술된다."
+      },
+      {
+       "t_raw": "Old Mondstadt가 Mondstadt Aristocracy의 통치 시대와 연결된다는 점에서, Decarabian 이후의 지배 계급 교체는 Old Mondstadt 시대의 성격을 보여 주는 변화로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "옛 몬드가 몬드 귀족의 통치 시대와 연결된다는 점에서, 데카라비안 이후의 지배 계급 교체는 옛 몬드 시대의 성격을 보여 주는 변화로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Old Mondstadt",
+       "revision": 225556,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 데카라비안 이후와 바네사의 반란",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — Decarabian 이후와 Vennessa의 반란",
+     "status": "accepted",
+     "note": "Sentences 0-2 are supported by A1 and A2. Sentence 3 is a hedged interpretation that follows from them.",
+     "quote": "Their oppression of both citizens and foreigners alike eventually roused the Anemo Archon Barbatos from his slumber, and he assisted the foreign-born gladiator Vennessa in her rebellion against the aristocracy.",
+     "sentences": [
+      {
+       "t_raw": "**1,600년 통치** 동안, 이들은 인민의 고귀한 보호자에서 폭압적이고 억압적인 지배자로 변했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**1,600년 통치** 동안, 이들은 인민의 고귀한 보호자에서 폭압적이고 억압적인 지배자로 변했다."
+      },
+      {
+       "t_raw": "시민과 외국인 모두에 대한 억압은 Anemo Archon Barbatos를 잠에서 깨웠고, Barbatos는 외국 태생 검투사 Vennessa의 Mondstadt Aristocracy에 맞선 반란을 도왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시민과 외국인 모두에 대한 억압은 바람의 신 바르바토스를 잠에서 깨웠고, 바르바토스는 외국 태생 검투사 바네사의 몬드 귀족에 맞선 반란을 도왔다."
+      },
+      {
+       "t_raw": "저항은 승리했고, 귀족 대부분은 Mondstadt에서 추방되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "저항은 승리했고, 귀족 대부분은 몬드에서 추방되었다."
+      },
+      {
+       "t_raw": "보호자에서 억압자로의 변질이 시민과 외국인 모두를 향한 억압으로 나타나, **Vennessa의 반란**과 Anemo Archon Barbatos의 개입으로 이어진 배경으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "보호자에서 억압자로의 변질이 시민과 외국인 모두를 향한 억압으로 나타나, **바네사의 반란**과 바람의 신 바르바토스의 개입으로 이어진 배경으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 데카라비안 이후와 바네사의 반란",
+     "latin_left": []
+    },
+    {
+     "section": "반란 이후 — Four Winds와 Knights of Favonius",
+     "status": "accepted",
+     "note": "Sentences 0-3 are supported by M3 and M4. Sentence 4 is a fair interpretation.",
+     "quote": "A thousand years ago, following Vennessa's rebellion against the Mondstadt Aristocracy, the Four Winds were established.",
+     "sentences": [
+      {
+       "t_raw": "Vennessa의 반란 뒤 Four Winds가 공식적으로 세워졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바네사의 반란 뒤 바람 사신수가 공식적으로 세워졌다."
+      },
+      {
+       "t_raw": "Four Winds의 공식 성립은 Mondstadt Aristocracy에 맞선 반란, Mondstadt의 두 번째 해방, Knights of Favonius의 창설 뒤에 놓인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바람 사신수의 공식 성립은 몬드 귀족에 맞선 반란, 몬드의 두 번째 해방, 페보니우스 기사단의 창설 뒤에 놓인다."
+      },
+      {
+       "t_raw": "Dvalin은 Dragon of the East, Andrius는 Wolf of the North, Vennessa는 Lion of the South이자 Falcon of the West였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "드발린은 동풍의 용, 안드리우스는 북풍의 늑대, 바네사는 남풍의 사자이자 서풍의 매였다."
+      },
+      {
+       "t_raw": "Four Winds가 세워진 뒤 사람들은 약 500년 동안 그들을 숭배하고 신전을 지었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바람 사신수가 세워진 뒤 사람들은 약 500년 동안 그들을 숭배하고 신전을 지었다."
+      },
+      {
+       "t_raw": "반란과 해방, 기사단 창설, Four Winds의 성립이 한데 묶여 Mondstadt의 재편을 이룬 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "반란과 해방, 기사단 창설, 바람 사신수의 성립이 한데 묶여 몬드의 재편을 이룬 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Dvalin",
+       "revision": 241129,
+       "section": "Story > History",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Four Winds",
+       "revision": 240325,
+       "section": "Overview",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "반란 이후 — 바람 사신수와 페보니우스 기사단",
+     "latin_left": []
+    },
+    {
+     "section": "반란 이후 — Four Winds와 Knights of Favonius",
+     "status": "accepted",
+     "note": "All sentences are supported by M5.",
+     "quote": "Around 1000 years ago, after Vennessa's rebellion against the Mondstadt Aristocracy, Andrius officially became one of the Four Winds of Mondstadt",
+     "sentences": [
+      {
+       "t_raw": "Andrius는 육체의 죽음 뒤 현재의 빙의 형태를 취했으나, 그 형태로는 온전한 능력을 쓰지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "안드리우스는 육체의 죽음 뒤 현재의 빙의 형태를 취했으나, 그 형태로는 온전한 능력을 쓰지 못한다."
+      },
+      {
+       "t_raw": "약 1000년 전 Vennessa의 반란 뒤 Andrius는 공식적으로 Four Winds의 하나가 되었고, Knight of Boreas라는 직위는 새로 세워진 Knights of Favonius에 합류했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약 1000년 전 바네사의 반란 뒤 안드리우스는 공식적으로 바람 사신수의 하나가 되었고, 북풍의 기사라는 직위는 새로 세워진 페보니우스 기사단에 합류했다."
+      },
+      {
+       "t_raw": "이 직위가 Andrius와 어떤 관계인지는 현재 알려지지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 직위가 안드리우스와 어떤 관계인지는 현재 알려지지 않았다."
+      },
+      {
+       "t_raw": "과거 Thousand Winds Temple 근처의 Temple of the Wolf는 Andrius를 모시는 데 쓰였지만 오래전 버려졌고, Andrius의 영혼은 Mondstadt의 반대편에 머문다.",
+       "interp": false,
+       "dropped": false,
+       "t": "과거 천풍 신전 근처의 북풍 늑대의 사당은 안드리우스를 모시는 데 쓰였지만 오래전 버려졌고, 안드리우스의 영혼은 몬드의 반대편에 머문다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Boreas",
+       "revision": 237104,
+       "section": "Story > History",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "반란 이후 — 바람 사신수와 페보니우스 기사단",
+     "latin_left": []
+    },
+    {
+     "section": "알려진 귀족 가문과 인물",
+     "status": "accepted",
+     "note": "The four families, including the 'presumably' caveat for Ragnvindr, and the pointer to the clan pages are supported by A3-A7.",
+     "quote": "Ragnvindr Family (presumably)",
+     "sentences": [
+      {
+       "t_raw": "**이름이 전하는 귀족 가문**으로는 Gunnhildr Clan, Imunlaukr Clan, Lawrence Clan, Ragnvindr Family가 제시되며, Ragnvindr Family에는 추정상이라는 단서가 붙는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**이름이 전하는 귀족 가문**으로는 군힐드 가문, 이뮨라우크 일족, 로렌스 가문, Ragnvindr Family가 제시되며, Ragnvindr Family에는 추정상이라는 단서가 붙는다."
+      },
+      {
+       "t_raw": "각 가문의 구성원은 해당 가문 문서에서 더 자세히 볼 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "각 가문의 구성원은 해당 가문 문서에서 더 자세히 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Aristocratic Families",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Aristocratic Families",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Aristocratic Families",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Aristocratic Families",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Aristocratic Families",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "알려진 귀족 가문과 인물",
+     "latin_left": [
+      "Ragnvindr Family",
+      "Ragnvindr Family"
+     ]
+    },
+    {
+     "section": "알려진 귀족 가문과 인물",
+     "status": "accepted",
+     "note": "All sentences match A8–A12; the interpretation is hedged and reasonable.",
+     "quote": "Landrich's family (family name unknown)",
+     "sentences": [
+      {
+       "t_raw": "어느 이름 있는 가문에도 속하지 않는 귀족으로 Landrich's family, Luther, Priscilla가 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어느 이름 있는 가문에도 속하지 않는 귀족으로 란드리치의 가문, 루터, 프리실라가 제시된다.",
+       "polish": {
+        "from": "어느 이름 있는 가문에도 속하지 않는 귀족으로 란드리치의 family, 루터, 프리실라가 제시된다.",
+        "text": "어느 이름 있는 가문에도 속하지 않는 귀족으로 란드리치의 가문, 루터, 프리실라가 제시된다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Landrich's family의 가문명은 알려져 있지 않고, Parsifal, Ingbert, Eberhart가 모두 이 가문의 구성원이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "란드리치 가문의 가문명은 알려져 있지 않고, 파르치팔, 잉베르트, 에버하트가 모두 이 가문의 구성원이다.",
+       "polish": {
+        "from": "란드리치의 family의 가문명은 알려져 있지 않고, 파르치팔, 잉베르트, 에버하트가 모두 이 가문의 구성원이다.",
+        "text": "란드리치 가문의 가문명은 알려져 있지 않고, 파르치팔, 잉베르트, 에버하트가 모두 이 가문의 구성원이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Luther와 Priscilla는 개별 이름으로 전하는 귀족이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "루터와 프리실라는 개별 이름으로 전하는 귀족이다."
+      },
+      {
+       "t_raw": "이렇게 가문명이 남은 집안과 개별 이름만 전하는 인물이 함께 놓여, 이 목록은 귀족 전체의 계보보다 **이름이 남은 범위**를 보여 주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 가문명이 남은 집안과 개별 이름만 전하는 인물이 함께 놓여, 이 목록은 귀족 전체의 계보보다 **이름이 남은 범위**를 보여 주는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Other Aristocrats",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Other Aristocrats",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Other Aristocrats",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Other Aristocrats",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Other Aristocrats",
+       "paragraph": "A12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "알려진 귀족 가문과 인물",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences match A7, A9 and A10; the interpretation is reasonable.",
+     "quote": "Ragnvindr Family (presumably)",
+     "sentences": [
+      {
+       "t_raw": "Ragnvindr Family에는 추정을 나타내는 단서가 붙어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Ragnvindr Family에는 추정을 나타내는 단서가 붙어 있다."
+      },
+      {
+       "t_raw": "Landrich's family는 가문명이 알려지지 않은 채 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "란드리치의 가문은 가문명이 알려지지 않은 채 언급된다.",
+       "polish": {
+        "from": "란드리치의 family는 가문명이 알려지지 않은 채 언급된다.",
+        "text": "란드리치의 가문은 가문명이 알려지지 않은 채 언급된다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Parsifal, Ingbert, Eberhart가 모두 이 가문의 구성원이라고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파르치팔, 잉베르트, 에버하트가 모두 이 가문의 구성원이라고 전한다."
+      },
+      {
+       "t_raw": "가문의 귀족 여부에 추정이 붙은 사례와 가문명 대신 구성원 이름만 남은 사례가 나란히 있어, 이 목록은 가문 단위의 확정과 인물 단위의 전승이 뒤섞인 흔적으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가문의 귀족 여부에 추정이 붙은 사례와 가문명 대신 구성원 이름만 남은 사례가 나란히 있어, 이 목록은 가문 단위의 확정과 인물 단위의 전승이 뒤섞인 흔적으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Aristocratic Families",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Other Aristocrats",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Other Aristocrats",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Ragnvindr Family"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The facts match M1 and M2; the interpretation is hedged ('보인다') and follows from them.",
+     "quote": "The symbol colloquially known as the Old Mondstadt symbol, seen on items related to both Decarabian and the Mondstadt Aristocracy",
+     "sentences": [
+      {
+       "t_raw": "Old Mondstadt의 시대는 Mondstadt Aristocracy가 Mondstadt를 통치한 시대이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "옛 몬드의 시대는 몬드 귀족이 몬드를 통치한 시대이기도 하다."
+      },
+      {
+       "t_raw": "Old Mondstadt symbol은 Decarabian과 Mondstadt Aristocracy 양쪽에 관련된 물건에서 보이는 상징을 통칭한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "옛 몬드의 상징은 데카라비안과 몬드 귀족 양쪽에 관련된 물건에서 보이는 상징을 통칭한다.",
+       "polish": {
+        "from": "옛 몬드 symbol은 데카라비안과 몬드 귀족 양쪽에 관련된 물건에서 보이는 상징을 통칭한다.",
+        "text": "옛 몬드의 상징은 데카라비안과 몬드 귀족 양쪽에 관련된 물건에서 보이는 상징을 통칭한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "**두 대상에 함께 등장하는 이 상징**은 Old Mondstadt라는 이름 아래 Decarabian과 귀족 지배의 기억이 겹쳐 남은 흔적으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**두 대상에 함께 등장하는 이 상징**은 옛 몬드라는 이름 아래 데카라비안과 귀족 지배의 기억이 겹쳐 남은 흔적으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Old Mondstadt",
+       "revision": 225556,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Old Mondstadt",
+       "revision": 225556,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The facts match A8, A11 and A12; the interpretation is supported.",
+     "quote": "The following aristocrats do not belong to any named clan or family.",
+     "sentences": [
+      {
+       "t_raw": "이름이 알려진 가문이나 가족에 속하지 않은 귀족들도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이름이 알려진 가문이나 가족에 속하지 않은 귀족들도 있다."
+      },
+      {
+       "t_raw": "Luther와 Priscilla는 그런 귀족으로 분류된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "루터와 프리실라는 그런 귀족으로 분류된다."
+      },
+      {
+       "t_raw": "두 이름은 가문이나 가족의 이름 없이 따로 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 이름은 가문이나 가족의 이름 없이 따로 제시된다."
+      },
+      {
+       "t_raw": "**가문명 없이 이름만 전해지는 셈**이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**가문명 없이 이름만 전해지는 셈**이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Other Aristocrats",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Other Aristocrats",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt Aristocracy",
+       "revision": 225554,
+       "section": "Known Aristocrats > Other Aristocrats",
+       "paragraph": "A12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

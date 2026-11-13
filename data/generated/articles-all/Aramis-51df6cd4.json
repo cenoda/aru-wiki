@@ -1,0 +1,576 @@
+{
+ "node": "Aramis",
+ "articles": [
+  {
+   "node": "Aramis",
+   "from_version": "1.0",
+   "cutoff": "2020-11-10T00:00:00Z",
+   "input": [
+    {
+     "page": "Aramis",
+     "url": "https://genshin-impact.fandom.com/wiki/Aramis",
+     "revision": 45129
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 7,
+    "web": 0
+   },
+   "input_chars": 292,
+   "input_cut": false,
+   "input_hash": "edc370271f36",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences supported by A1, A2, Q1, Q3.",
+     "quote": "Although the storm has subsided, the effects of that storm aren't going to be fixed any time soon...",
+     "sentences": [
+      {
+       "t_raw": "**Aramis**는 Mondstadt Cathedral 앞 계단을 순찰하며 그곳의 보안을 맡는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**아라미**는 몬드 대성당 앞 계단을 순찰하며 그곳의 보안을 맡는 인물이다."
+      },
+      {
+       "t_raw": "계단을 오르내린 세월 탓에 무릎이 상했고, Stormterror의 공격 뒤에는 도시 정리를 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "계단을 오르내린 세월 탓에 무릎이 상했고, 풍마룡의 공격 뒤에는 도시 정리를 맡는다."
+      },
+      {
+       "t_raw": "폭풍이 지나간 뒤에도 그 영향이 곧바로 해결되지 않는 상황에서, **Honorary Knight**에게 도시 정리를 부탁하는 모습이 그의 역할을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "폭풍이 지나간 뒤에도 그 영향이 곧바로 해결되지 않는 상황에서, **명예 기사**에게 도시 정리를 부탁하는 모습이 그의 역할을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aramis",
+       "revision": 45129,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aramis",
+       "revision": 45129,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by A1 and A2.",
+     "quote": "Aramis patrols the stairs in front of the Mondstadt Cathedral and is responsible for security there. However, climbing all those stairs has hurt his knees over time.",
+     "sentences": [
+      {
+       "t_raw": "Aramis는 Mondstadt Cathedral 앞 계단을 순찰하며 그곳의 보안을 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라미는 몬드 대성당 앞 계단을 순찰하며 그곳의 보안을 맡는다."
+      },
+      {
+       "t_raw": "계단을 오르내린 시간이 쌓여 그의 무릎에는 부담이 남았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "계단을 오르내린 시간이 쌓여 그의 무릎에는 부담이 남았다."
+      },
+      {
+       "t_raw": "그는 Stormterror의 공격 뒤 Mondstadt를 정리하는 세계 임무 Lingering Malady의 의뢰인이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 풍마룡의 공격 뒤 몬드를 정리하는 세계 임무 폭풍 후유증의 의뢰인이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aramis",
+       "revision": 45129,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aramis",
+       "revision": 45129,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Supported by Q1, Q3, A1, A2; the interpretation is reasonable.",
+     "quote": "Although the storm has subsided, the effects of that storm aren't going to be fixed any time soon...",
+     "sentences": [
+      {
+       "t_raw": "그는 Honorary Knight에게 말을 걸어, 도시 전체를 둘러싼 폭풍을 언급한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 명예 기사에게 말을 걸어, 도시 전체를 둘러싼 폭풍을 언급한다."
+      },
+      {
+       "t_raw": "폭풍은 잦아들었지만 그 영향이 당장 해결되지는 않을 것이라고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폭풍은 잦아들었지만 그 영향이 당장 해결되지는 않을 것이라고 전한다."
+      },
+      {
+       "t_raw": "계단 보안 담당이 폭풍 뒤 도시 정리 의뢰까지 맡게 된 셈이라, **계단**과 **폭풍 뒤 정리**가 그를 설명하는 두 축으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "계단 보안 담당이 폭풍 뒤 도시 정리 의뢰까지 맡게 된 셈이라, **계단**과 **폭풍 뒤 정리**가 그를 설명하는 두 축으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "wiki",
+       "page": "Aramis",
+       "revision": 45129,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aramis",
+       "revision": 45129,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by A1; the interpretation is modest.",
+     "quote": "Aramis patrols the stairs in front of the Mondstadt Cathedral and is responsible for security there.",
+     "sentences": [
+      {
+       "t_raw": "Aramis는 Mondstadt Cathedral 앞 계단을 순찰하며 그곳의 **보안 책임자** 역할을 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라미는 몬드 대성당 앞 계단을 순찰하며 그곳의 **보안 책임자** 역할을 한다."
+      },
+      {
+       "t_raw": "그러나 그 계단을 오르내린 시간이 길어지면서 무릎에는 부담이 남았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 그 계단을 오르내린 시간이 길어지면서 무릎에는 부담이 남았다."
+      },
+      {
+       "t_raw": "계단을 순찰하는 **보안 책임자**라는 위치와, 그 계단을 오르내리며 생긴 무릎의 부담이 한 사람에게 겹쳐 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "계단을 순찰하는 **보안 책임자**라는 위치와, 그 계단을 오르내리며 생긴 무릎의 부담이 한 사람에게 겹쳐 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aramis",
+       "revision": 45129,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lingering Malady",
+     "status": "accepted",
+     "note": "Supported by Q1, Q2, Q3, A2.",
+     "quote": "Although the storm has subsided, the effects of that storm aren't going to be fixed any time soon...",
+     "sentences": [
+      {
+       "t_raw": "Stormterror의 공격 뒤 도시에는 폭풍의 영향이 남았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "풍마룡의 공격 뒤 도시에는 폭풍의 영향이 남았다."
+      },
+      {
+       "t_raw": "**Honorary Knight**에게 Aramis는 도시를 둘러싼 폭풍을 보았는지 묻고, 상인들이 밖에 세워 둔 간판과 포스터가 바람에 모두 날아갔다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**명예 기사**에게 아라미는 도시를 둘러싼 폭풍을 보았는지 묻고, 상인들이 밖에 세워 둔 간판과 포스터가 바람에 모두 날아갔다고 전한다."
+      },
+      {
+       "t_raw": "폭풍은 잦아들었지만 그 영향이 곧바로 해결되지는 않을 것이라고 그는 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폭풍은 잦아들었지만 그 영향이 곧바로 해결되지는 않을 것이라고 그는 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aramis",
+       "revision": 45129,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      }
+     ],
+     "heading": "작중 행적 — 폭풍 후유증",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lingering Malady",
+     "status": "accepted",
+     "note": "Supported by Q4-Q7; the interpretation follows reasonably.",
+     "quote": "The Knights originally intended to send two agile members to settle these issues with haste.",
+     "sentences": [
+      {
+       "t_raw": "**Knights**는 원래 민첩한 단원 두 명을 보내 이 문제들을 신속히 해결하려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**기사단**은 원래 민첩한 단원 두 명을 보내 이 문제들을 신속히 해결하려 했다."
+      },
+      {
+       "t_raw": "날아간 물건 중에는 지붕 위에 간 것도, 성벽 위에 간 것도 있어 Aramis는 어떻게 그렇게 높이 날아갔는지 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "날아간 물건 중에는 지붕 위에 간 것도, 성벽 위에 간 것도 있어 아라미는 어떻게 그렇게 높이 날아갔는지 되묻는다."
+      },
+      {
+       "t_raw": "Paimon은 그 자리에 두고 가도 된다며 Aramis가 누군가를 보내 수거할 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 그 자리에 두고 가도 된다며 아라미가 누군가를 보내 수거할 것이라고 말한다."
+      },
+      {
+       "t_raw": "Knights의 신속한 수습 계획과 높은 곳까지 흩어진 물건, 수거를 맡기는 마무리가 겹쳐 수습이 단번에 끝나기 어려운 사안으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "기사단의 신속한 수습 계획과 높은 곳까지 흩어진 물건, 수거를 맡기는 마무리가 겹쳐 수습이 단번에 끝나기 어려운 사안으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 폭풍 후유증",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by A2, Q1, Q4 and Q7.",
+     "quote": "Oh, it's you, Honorary Knight. How do you do? So it's like this: you must have seen that storm that surrounded the entire city, right?",
+     "sentences": [
+      {
+       "t_raw": "Aramis는 **Honorary Knight**에게 말을 거는 의뢰인으로, 상대를 알아보고 안부를 물으며 대화를 연다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라미는 **명예 기사**에게 말을 거는 의뢰인으로, 상대를 알아보고 안부를 물으며 대화를 연다."
+      },
+      {
+       "t_raw": "그는 도시를 둘러싼 폭풍을 보았느냐고 묻고, **Knights**가 원래 민첩한 인원 둘을 보내 문제들을 신속히 처리하려 했다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 도시를 둘러싼 폭풍을 보았느냐고 묻고, **기사단**이 원래 민첩한 인원 둘을 보내 문제들을 신속히 처리하려 했다고 전한다."
+      },
+      {
+       "t_raw": "Paimon은 물건을 여기 두면 Aramis가 누군가를 보내 수거할 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 물건을 여기 두면 아라미가 누군가를 보내 수거할 것이라고 말한다."
+      },
+      {
+       "t_raw": "이 대화에서 Aramis의 설명은 Honorary Knight에게 직접 향하고, Knights의 원래 계획과 Paimon의 수거 언급이 함께 드러난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 대화에서 아라미의 설명은 명예 기사에게 직접 향하고, 기사단의 원래 계획과 페이몬의 수거 언급이 함께 드러난다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aramis",
+       "revision": 45129,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A1. The interpretation is reasonable.",
+     "quote": "Aramis patrols the stairs in front of the Mondstadt Cathedral and is responsible for security there. However, climbing all those stairs has hurt his knees over time.",
+     "sentences": [
+      {
+       "t_raw": "Aramis는 Mondstadt Cathedral 앞 **계단**을 순찰하며 그곳의 보안을 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라미는 몬드 대성당 앞 **계단**을 순찰하며 그곳의 보안을 맡는다."
+      },
+      {
+       "t_raw": "그 계단을 오르내린 시간이 쌓이면서 그의 무릎은 상했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 계단을 오르내린 시간이 쌓이면서 그의 무릎은 상했다."
+      },
+      {
+       "t_raw": "순찰 공간과 무릎 부담이 같은 계단에서 겹치는 만큼, 그에게 계단은 업무의 자리이자 몸에 남은 흔적의 자리인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "순찰 공간과 무릎 부담이 같은 계단에서 겹치는 만큼, 그에게 계단은 업무의 자리이자 몸에 남은 흔적의 자리인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Aramis",
+       "revision": 45129,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by Q5 and Q6. The interpretation is hedged.",
+     "quote": "How did it get blown up that high...",
+     "sentences": [
+      {
+       "t_raw": "날아간 물건들 가운데 일부는 **지붕과 성벽**처럼 높은 곳에 남았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "날아간 물건들 가운데 일부는 **지붕과 성벽**처럼 높은 곳에 남았다."
+      },
+      {
+       "t_raw": "Aramis는 그 높이를 두고 어떻게 그렇게 높이 날아갔는지 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아라미는 그 높이를 두고 어떻게 그렇게 높이 날아갔는지 되묻는다."
+      },
+      {
+       "t_raw": "높은 곳에 남은 물건과 그 높이를 묻는 말이 겹쳐, 이 장면은 높이에 대한 의아함을 남기는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "높은 곳에 남은 물건과 그 높이를 묻는 말이 겹쳐, 이 장면은 높이에 대한 의아함을 남기는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lingering Malady",
+       "quest_ko": "폭풍 후유증",
+       "version": "1.0",
+       "speaker": "Aramis"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Q3.",
+     "t_raw": "폭풍은 잦아들었지만, 그 폭풍의 영향은 당장 해결되지 않을 겁니다...",
+     "en": "Although the storm has subsided, the effects of that storm aren't going to be fixed any time soon...",
+     "speaker": "Aramis",
+     "source": {
+      "kind": "quest",
+      "quest": "Lingering Malady",
+      "quest_ko": "폭풍 후유증",
+      "version": "1.0",
+      "speaker": "Aramis"
+     },
+     "t": "폭풍은 잦아들었지만, 그 폭풍의 영향은 당장 해결되지 않을 겁니다...",
+     "speaker_ko": "아라미"
+    },
+    {
+     "section": "작중 행적 — Lingering Malady",
+     "status": "accepted",
+     "note": "Faithful translation of Q4.",
+     "t_raw": "Knights는 원래 민첩한 단원 두 명을 보내 이 문제들을 신속히 해결할 생각이었다.",
+     "en": "The Knights originally intended to send two agile members to settle these issues with haste.",
+     "speaker": "Aramis",
+     "source": {
+      "kind": "quest",
+      "quest": "Lingering Malady",
+      "quest_ko": "폭풍 후유증",
+      "version": "1.0",
+      "speaker": "Aramis"
+     },
+     "t": "기사단은 원래 민첩한 단원 두 명을 보내 이 문제들을 신속히 해결할 생각이었다.",
+     "speaker_ko": "아라미"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation of Q1.",
+     "t_raw": "아, 당신이군요, Honorary Knight. 안녕하신가요? 그래서 말인데, 도시 전체를 둘러싼 그 폭풍을 보셨죠?",
+     "en": "Oh, it's you, Honorary Knight. How do you do? So it's like this: you must have seen that storm that surrounded the entire city, right?",
+     "speaker": "Aramis",
+     "source": {
+      "kind": "quest",
+      "quest": "Lingering Malady",
+      "quest_ko": "폭풍 후유증",
+      "version": "1.0",
+      "speaker": "Aramis"
+     },
+     "t": "아, 당신이군요, 명예 기사. 안녕하신가요? 그래서 말인데, 도시 전체를 둘러싼 그 폭풍을 보셨죠?",
+     "speaker_ko": "아라미"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of 'How did it get blown up that high...'; no problems.",
+     "t_raw": "어떻게 그렇게 높이 날아간 거지...",
+     "en": "How did it get blown up that high...",
+     "speaker": "Aramis",
+     "source": {
+      "kind": "quest",
+      "quest": "Lingering Malady",
+      "quest_ko": "폭풍 후유증",
+      "version": "1.0",
+      "speaker": "Aramis"
+     },
+     "t": "어떻게 그렇게 높이 날아간 거지...",
+     "speaker_ko": "아라미"
+    }
+   ]
+  }
+ ]
+}

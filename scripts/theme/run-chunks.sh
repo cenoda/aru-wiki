@@ -16,7 +16,7 @@ while :; do
   # between chunks the file holds Korean names and clean-up; mid-chunk saves do not (articles.mjs
   # swaps names at the end): publish-ready.sh deploys this copy
   # only after a chunk that ran to its end (a killed chunk leaves its names unswapped)
-  if [ $status -eq 0 ] && grep -q "LLM calls" "$log"; then cp data/generated/articles-all.json .cache/theme/articles-all.ready.json; fi
+  if [ $status -eq 0 ] && grep -q "LLM calls" "$log"; then rsync -a --delete data/generated/articles-all/ .cache/theme/articles-all.ready/ && touch .cache/theme/articles-all.ready.stamp; fi
   grep -q '^0 articles to check' "$log" && { echo "nothing left"; break; }
   n=$((n + 1))
 done

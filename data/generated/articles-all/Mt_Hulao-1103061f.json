@@ -1,0 +1,446 @@
+{
+ "node": "Mt. Hulao",
+ "articles": [
+  {
+   "node": "Mt. Hulao",
+   "from_version": "1.0",
+   "cutoff": "2020-11-10T00:00:00Z",
+   "input": [
+    {
+     "page": "Mt. Hulao",
+     "url": "https://genshin-impact.fandom.com/wiki/Mt._Hulao",
+     "revision": 44556
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 561,
+   "input_cut": false,
+   "input_hash": "825542057533",
+   "writer": "glm-flash,ds-pro,or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "(0) 'Jueyun Karst 일대의 선인들이 머무는 땅과 얽힌 산' is not stated; the English only says Mt. Hulao is in Minlin, Liyue (Jueyun Karst is mentioned only in the barrier text, not linked to the mountain's relation). (1) 'not decoration' and 'symbol that this is still the adeptus's domain' are added; also the amber comes from flowers, not stated as a symbol.",
+     "quote": "The large pieces of amber found along the mountain are formed by flowers Mountain Shaper planted to keep out intruders.",
+     "sentences": [
+      {
+       "t_raw": "Mt. Hulao는 Liyue의 Minlin에 위치한 지역이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "호로산은 리월의 민림에 위치한 지역이다."
+      },
+      {
+       "t_raw": "산에서 발견되는 커다란 호박은 선인 Mountain Shaper가 침입자를 막기 위해 심은 꽃이 만들어낸 것이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "산에서 발견되는 커다란 호박은 선인 리수첩산진군이 침입자를 막기 위해 심은 꽃이 만들어낸 것이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mt. Hulao",
+       "revision": 44556,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mountain Shaper",
+       "revision": 44996,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "(2) is presented as interpretation, but 'covering the mountain' overstates: the English says amber pieces are found along the mountain, not that it covers the landscape; 'makes it different from any other mountain' is an unsupported claim.",
+     "quote": "The large pieces of amber found along the mountain are formed by flowers Mountain Shaper planted to keep out intruders.",
+     "sentences": [
+      {
+       "t_raw": "Mt. Hulao는 Liyue의 Minlin에 속한 지역으로, 산을 따라 큰 **호박** 조각들이 흩어져 있는 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호로산은 리월의 민림에 속한 지역으로, 산을 따라 큰 **호박** 조각들이 흩어져 있는 곳이다."
+      },
+      {
+       "t_raw": "이 호박은 저절로 굳은 것이 아니라 Mountain Shaper가 침입자를 막기 위해 심은 꽃에서 만들어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 호박은 저절로 굳은 것이 아니라 리수첩산진군이 침입자를 막기 위해 심은 꽃에서 만들어진다."
+      },
+      {
+       "t_raw": "산 곳곳에서 발견되는 호박이 자연히 생긴 것이 아니라 누군가의 의도로 빚어진 결과라는 점이 이곳의 인상을 특별하게 만드는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "산 곳곳에서 발견되는 호박이 자연히 생긴 것이 아니라 누군가의 의도로 빚어진 결과라는 점이 이곳의 인상을 특별하게 만드는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mt. Hulao",
+       "revision": 44556,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "(3) overstates: walking among amber pieces is equated with stepping on traps; the English says the plants are under the ground and trap whatever steps on them, not that walking among the amber is stepping on a trap.",
+     "quote": "These plants, called karst crawlers, are mostly hidden underground and will produce amber to trap anything that steps on it.",
+     "sentences": [
+      {
+       "t_raw": "그 꽃은 **karst crawlers**라 불리며, 대부분 땅속에 숨어 있어 밖에서는 잘 드러나지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 꽃은 **카르스트 크롤러**라 불리며, 대부분 땅속에 숨어 있어 밖에서는 잘 드러나지 않는다.",
+       "polish": {
+        "from": "그 꽃은 **karst crawlers**라 불리며, 대부분 땅속에 숨어 있어 밖에서는 잘 드러나지 않는다.",
+        "text": "그 꽃은 **카르스트 크롤러**라 불리며, 대부분 땅속에 숨어 있어 밖에서는 잘 드러나지 않는다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "그러나 무언가가 그 위를 밟으면 곧바로 호박을 만들어내 그 대상을 가둬 버린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 무언가가 그 위를 밟으면 곧바로 호박을 만들어내 그 대상을 가둬 버린다."
+      },
+      {
+       "t_raw": "그래서 호박을 깨면 안에 갇혀 있던 것이 드러나는데, 그것이 보물이거나 적이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래서 호박을 깨면 안에 갇혀 있던 것이 드러나는데, 그것이 보물이거나 적이다."
+      },
+      {
+       "t_raw": "호박을 만들어내는 식물이 대부분 땅속에 숨어 발밑을 노린다는 점을 겹쳐 보면, 이 산을 걷는 일은 한 발 한 발 조심해야 할 일이 되는 셈으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "호박을 만들어내는 식물이 대부분 땅속에 숨어 발밑을 노린다는 점을 겹쳐 보면, 이 산을 걷는 일은 한 발 한 발 조심해야 할 일이 되는 셈으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mt. Hulao",
+       "revision": 44556,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼 — 봉인된 동굴과 호박의 비밀",
+     "status": "accepted",
+     "note": "(3) claims the whole landscape is covered with amber and is the result of Mountain Shaper's intent; English only says amber is found along the mountain, so this overreaches.",
+     "quote": "The large pieces of amber found along the mountain are formed by flowers Mountain Shaper planted to keep out intruders.",
+     "sentences": [
+      {
+       "t_raw": "Mt. Hulao에서 산을 따라 널려 있는 커다란 호박 조각들은 자연이 빚은 광물이 아니다. Mountain Shaper가 침입자를 막으려고 심은 꽃에서 만들어지는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호로산에서 산을 따라 널려 있는 커다란 호박 조각들은 자연이 빚은 광물이 아니다. 리수첩산진군이 침입자를 막으려고 심은 꽃에서 만들어지는 것이다."
+      },
+      {
+       "t_raw": "**karst crawlers**라 불리는 이 식물은 대부분 땅속에 숨은 채 있다가, 무언가가 그 위를 밟으면 호박을 만들어 그대로 붙잡아 둔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**카르스트 크롤러**라 불리는 이 식물은 대부분 땅속에 숨은 채 있다가, 무언가가 그 위를 밟으면 호박을 만들어 그대로 붙잡아 둔다.",
+       "polish": {
+        "from": "**karst crawlers**라 불리는 이 식물은 대부분 땅속에 숨은 채 있다가, 무언가가 그 위를 밟으면 호박을 만들어 그대로 붙잡아 둔다.",
+        "text": "**카르스트 크롤러**라 불리는 이 식물은 대부분 땅속에 숨은 채 있다가, 무언가가 그 위를 밟으면 호박을 만들어 그대로 붙잡아 둔다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "호박을 깨면 안에 갇혔던 것이 드러나는데, 그게 보물일 때도 있고 적일 때도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호박을 깨면 안에 갇혔던 것이 드러나는데, 그게 보물일 때도 있고 적일 때도 있다."
+      },
+      {
+       "t_raw": "호박이 광물이 아니라 선인이 심은 식물의 산물이고, 그 목적이 침입자를 막는 데 있다는 점을 겹쳐 보면, 산 곳곳에서 발견되는 호박은 Mountain Shaper의 의지가 남긴 흔적으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "호박이 광물이 아니라 선인이 심은 식물의 산물이고, 그 목적이 침입자를 막는 데 있다는 점을 겹쳐 보면, 산 곳곳에서 발견되는 호박은 리수첩산진군의 의지가 남긴 흔적으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mt. Hulao",
+       "revision": 44556,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mountain Shaper",
+       "revision": 44996,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼 — 봉인된 동굴과 호박의 비밀",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼 — 봉인된 동굴과 호박의 비밀",
+     "status": "accepted",
+     "note": "All supported. (1) paraphrases the barrier text fairly; (2) is a hedged interpretation.",
+     "quote": "Jueyun Karst is where the adepti dwell, so perhaps this is the abode of one. But there seems to be no way to enter...",
+     "sentences": [
+      {
+       "t_raw": "호박의 비밀과는 별개로, 연못 앞에는 **봉인된 동굴**이 하나 자리하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호박의 비밀과는 별개로, 연못 앞에는 **봉인된 동굴**이 하나 자리하고 있다."
+      },
+      {
+       "t_raw": "동굴을 가로막은 수상한 결계에는, Jueyun Karst가 선인이 머무는 곳이니 어쩌면 이곳도 선인 하나의 거처일 수 있겠지만 들어갈 방법은 보이지 않는다는 이야기가 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동굴을 가로막은 수상한 결계에는, 절운간이 선인이 머무는 곳이니 어쩌면 이곳도 선인 하나의 거처일 수 있겠지만 들어갈 방법은 보이지 않는다는 이야기가 적혀 있다."
+      },
+      {
+       "t_raw": "결계가 스스로 Jueyun Karst를 끌어와 이곳의 성격을 짐작하게 하는데, Mt. Hulao에 Mountain Shaper가 살고 있다는 사실을 함께 놓고 보면 봉인된 동굴도 그와 무관한 장소는 아닐 수 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "결계가 스스로 절운간을 끌어와 이곳의 성격을 짐작하게 하는데, 호로산에 리수첩산진군이 살고 있다는 사실을 함께 놓고 보면 봉인된 동굴도 그와 무관한 장소는 아닐 수 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mt. Hulao",
+       "revision": 44556,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mt. Hulao",
+       "revision": 44556,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mountain Shaper",
+       "revision": 44996,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼 — 봉인된 동굴과 호박의 비밀",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력 — Mountain Shaper",
+     "status": "trimmed",
+     "note": "(1) The tablet's content is not given, so claiming it carries his writing and that reading it conveys his story is unsupported. (2) 'Created the mountain's whole landscape' overreaches; amber is only found along the mountain. (3) Adds 'Jueyun Karst' link and the adeptus-like authority/vigilance as feelings not supported by the English.",
+     "quote": "Mountain Shaper is an adeptus living in Mt. Hulao.",
+     "sentences": [
+      {
+       "t_raw": "Mt. Hulao에는 선인 Mountain Shaper가 살고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호로산에는 선인 리수첩산진군이 살고 있다."
+      },
+      {
+       "t_raw": "산중에 세워진 비석에는 그가 남긴 글이 새겨져 있는데, 산을 오르며 비석을 읽으면 이 선인의 존재와 산에 얽힌 이야기를 짐작할 수 있다.",
+       "interp": false,
+       "dropped": true,
+       "t": "산중에 세워진 비석에는 그가 남긴 글이 새겨져 있는데, 산을 오르며 비석을 읽으면 이 선인의 존재와 산에 얽힌 이야기를 짐작할 수 있다."
+      },
+      {
+       "t_raw": "산 곳곳에서 발견되는 호박이 이 선인이 심어둔 꽃이 만들어낸 것이라는 점에서, 이 산의 호박은 Mountain Shaper의 손길이 남긴 결과로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "산 곳곳에서 발견되는 호박이 이 선인이 심어둔 꽃이 만들어낸 것이라는 점에서, 이 산의 호박은 리수첩산진군의 손길이 남긴 결과로 보인다."
+      },
+      {
+       "t_raw": "침입자를 막기 위해 karst crawlers를 심었다는 사실에서, 그가 이곳을 지키려는 강한 의지를 느낄 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "침입자를 막기 위해 카르스트 크롤러를 심었다는 사실에서, 그가 이곳을 지키려는 강한 의지를 느낄 수 있다.",
+       "polish": {
+        "from": "침입자를 막기 위해 karst crawlers를 심었다는 사실에서, 그가 이곳을 지키려는 강한 의지를 느낄 수 있다.",
+        "text": "침입자를 막기 위해 카르스트 크롤러를 심었다는 사실에서, 그가 이곳을 지키려는 강한 의지를 느낄 수 있다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mountain Shaper",
+       "revision": 44996,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mountain Shaper",
+       "revision": 44996,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mt. Hulao",
+       "revision": 44556,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력 — 리수첩산진군",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력 — Mountain Shaper",
+     "status": "accepted",
+     "note": "Treats Mountain Shaper’s dwelling as still unknown, but the material states he lives in Mt. Hulao; the barrier only guesses that the sealed place may be some adeptus’s abode.",
+     "quote": "Jueyun Karst is where the adepti dwell, so perhaps this is the abode of one. But there seems to be no way to enter...",
+     "sentences": [
+      {
+       "t_raw": "Jueyun Karst는 선인들이 머무는 곳으로 알려져 있어, 호박 가득한 이 산 역시 그중 한 선인의 거처일 것이라는 추측이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "절운간은 선인들이 머무는 곳으로 알려져 있어, 호박 가득한 이 산 역시 그중 한 선인의 거처일 것이라는 추측이 있다."
+      },
+      {
+       "t_raw": "다만 그 안으로 들어갈 방법은 보이지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 그 안으로 들어갈 방법은 보이지 않는다."
+      },
+      {
+       "t_raw": "Mountain Shaper가 Mt. Hulao에 산다는 점과 연못 앞 봉인된 동골이 선인의 거처일지도 모른다는 문구를 겹쳐 보면, 그 동골의 정체 역시 쉽게 드러나지 않는 셈으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "리수첩산진군이 호로산에 산다는 점과 연못 앞 봉인된 동골이 선인의 거처일지도 모른다는 문구를 겹쳐 보면, 그 동골의 정체 역시 쉽게 드러나지 않는 셈으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mt. Hulao",
+       "revision": 44556,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mt. Hulao",
+       "revision": 44556,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력 — 리수첩산진군",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The English says karst crawlers trap anything that steps on them; the Korean reverses or blurs that, as if the plants step on anything.",
+     "quote": "Breaking the amber will reveal what was trapped inside— either treasure or enemies.",
+     "sentences": [
+      {
+       "t_raw": "Mt. Hulao의 산에서 발견되는 큰 호박 조각은 Mountain Shaper가 침입자를 막으려고 심은 꽃이 만든 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호로산의 산에서 발견되는 큰 호박 조각은 리수첩산진군이 침입자를 막으려고 심은 꽃이 만든 것이다."
+      },
+      {
+       "t_raw": "그 식물은 **karst crawlers**라 불리며, 대부분 땅속에 숨어 있다가 자신 위를 밟는 무엇이든 가두기 위해 호박을 만들어낸다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그 식물은 **카르스트 크롤러**라 불리며, 대부분 땅속에 숨어 있다가 자신 위를 밟는 무엇이든 가두기 위해 호박을 만들어낸다.",
+       "polish": {
+        "from": "그 식물은 **karst crawlers**라 불리며, 대부분 땅속에 숨어 있다가 자신 위를 밟는 무엇이든 가두기 위해 호박을 만들어낸다.",
+        "text": "그 식물은 **카르스트 크롤러**라 불리며, 대부분 땅속에 숨어 있다가 자신 위를 밟는 무엇이든 가두기 위해 호박을 만들어낸다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "그래서 산에서 보이는 **호박**은 침입자를 막으려는 꽃이 만든 덫인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 산에서 보이는 **호박**은 침입자를 막으려는 꽃이 만든 덫인 셈이다."
+      },
+      {
+       "t_raw": "호박을 깨면 안에 갇혔던 것이 드러나는데, 보물일 때도 있고 적일 때도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호박을 깨면 안에 갇혔던 것이 드러나는데, 보물일 때도 있고 적일 때도 있다."
+      },
+      {
+       "t_raw": "호박을 깨면 보물과 적이 모두 나올 수 있으므로, 이는 작은 모험인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "호박을 깨면 보물과 적이 모두 나올 수 있으므로, 이는 작은 모험인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mt. Hulao",
+       "revision": 44556,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

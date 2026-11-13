@@ -1,0 +1,1026 @@
+{
+ "node": "Sumeru City",
+ "articles": [
+  {
+   "node": "Sumeru City",
+   "from_version": "3.0",
+   "cutoff": "2022-09-27T00:00:00Z",
+   "input": [
+    {
+     "page": "Sumeru City",
+     "url": "https://genshin-impact.fandom.com/wiki/Sumeru_City",
+     "revision": 849025
+    }
+   ],
+   "input_counts": {
+    "mentions": 16,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 428,
+   "input_cut": false,
+   "input_hash": "3bd85c541221",
+   "writer": "ds,kimi",
+   "verifier": "codex-medium,claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "Sentence 3 turns Paimon's line about the Traveler's own objective into a claim that all travelers arriving in Sumeru go to the city to meet Kusanali. The English does not say that.",
+     "quote": "The Divine Tree is the tree upon which Sumeru City is built. It holds up the Sumeru Akademiya.",
+     "sentences": [
+      {
+       "t_raw": "Sumeru City는 Divine Tree 위에 세워진 도시로, 나무의 중간에서 위쪽에 걸쳐 The Akademiya가 자리하고 그 위에 Sanctuary of Surasthana가 놓여 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르성은 신성한 나무 위에 세워진 도시로, 나무의 중간에서 위쪽에 걸쳐 아카데미아가 자리하고 그 위에 정선궁이 놓여 있다."
+      },
+      {
+       "t_raw": "나무가 도시를 떠받치고 그 위에 Akademiya가, 다시 그 위에 Lesser Lord Kusanali의 거처가 얹힌 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "나무가 도시를 떠받치고 그 위에 아카데미아가, 다시 그 위에 쿠사나리 데비의 거처가 얹힌 셈이다."
+      },
+      {
+       "t_raw": "도시는 Sumeru Akademiya의 관할 아래에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시는 수메르 아카데미아의 관할 아래에 있다."
+      },
+      {
+       "t_raw": "Sumeru에 도착한 여행자 일행은 다음 목표로 Sumeru City로 향해 Lesser Lord Kusanali를 만날 방법을 찾는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "수메르에 도착한 여행자 일행은 다음 목표로 수메르성으로 향해 쿠사나리 데비를 만날 방법을 찾는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sumeru City",
+       "revision": 849025,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru City",
+       "revision": 849025,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Divine Tree",
+       "revision": 851565,
+       "section": null,
+       "paragraph": "M13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Forest of Change",
+       "quest_ko": "숲속의 이변",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "도시의 구조",
+     "status": "trimmed",
+     "note": "Sentence 0 adds a 'giant tree skeleton' and districts and facilities 'stacked layer upon layer'. The English only says the city has many districts and that the Akademiya sits mid-to-upper on the tree.",
+     "quote": "Located in the middle to top half of the tree is The Akademiya, which serves as the main base of the Sumeru Akademiya. On top of The Akademiya, rests the Sanctuary of Surasthana, which is a treetop palace where Lesser Lord Kusanali resides.",
+     "sentences": [
+      {
+       "t_raw": "Sumeru City는 Avidya Forest에 자리한 **Divine Tree** 위에 세워진 도시로, 거대한 나무 뼈대에 구획과 시설이 층층이 쌓여 있다.",
+       "interp": false,
+       "dropped": true,
+       "t": "수메르성은 아비디야 숲에 자리한 **신성한 나무** 위에 세워진 도시로, 거대한 나무 뼈대에 구획과 시설이 층층이 쌓여 있다."
+      },
+      {
+       "t_raw": "나무의 중상부에는 Sumeru Akademiya의 본거지인 **The Akademiya**가 위치하고, 그 정상 위에는 Lesser Lord Kusanali가 머무는 Sanctuary of Surasthana라는 수상 궁전이 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나무의 중상부에는 수메르 아카데미아의 본거지인 **아카데미아**가 위치하고, 그 정상 위에는 쿠사나리 데비가 머무는 정선궁라는 수상 궁전이 자리한다."
+      },
+      {
+       "t_raw": "또한 Sumeru City는 Sumeru Akademiya의 관할 아래에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 수메르성은 수메르 아카데미아의 관할 아래에 있다."
+      },
+      {
+       "t_raw": "따라서 Divine Tree가 The Akademiya를 받치고, 그 꼭대기에는 다시 Lesser Lord Kusanali의 궁전이 있는 탓에, 도시 전체는 Akademiya의 권위와 Lesser Lord Kusanali의 거처를 중심으로 쌓아 올린 구조로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 신성한 나무가 아카데미아를 받치고, 그 꼭대기에는 다시 쿠사나리 데비의 궁전이 있는 탓에, 도시 전체는 아카데미아의 권위와 쿠사나리 데비의 거처를 중심으로 쌓아 올린 구조로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sumeru City",
+       "revision": 849025,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru City",
+       "revision": 849025,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Avidya Forest",
+       "revision": 847085,
+       "section": "Subareas",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Divine Tree",
+       "revision": 851565,
+       "section": null,
+       "paragraph": "M13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "도시의 구조",
+     "latin_left": []
+    },
+    {
+     "section": "도시의 구조",
+     "status": "accepted",
+     "note": "Sentence 1 calls the Grand Bazaar, Zubayr Theater and Treasures Street 'commercial districts'. The English calls them districts and points of interest, not commercial ones, and a theater is not obviously commercial.",
+     "quote": "The House of Daena is the largest library in all of Teyvat, located within The Akademiya in Sumeru City, Sumeru.",
+     "sentences": [
+      {
+       "t_raw": "The Akademiya 안에는 Teyvat 전체에서 가장 큰 도서관인 **House of Daena**가 있으며, Katayoun이 그곳에 머물고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아카데미아 안에는 티바트 전체에서 가장 큰 도서관인 **지혜궁**이 있으며, 카타윤이 그곳에 머물고 있다."
+      },
+      {
+       "t_raw": "Sumeru City에는 Grand Bazaar, Zubayr Theater, Treasures Street 등 여러 구역과 명소가 있고, Grand Bazaar에는 Shevirme가 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "수메르성에는 바자르, 주바이르 극장, 귀금속 거리 등 여러 구역과 명소가 있고, 바자르에는 셰비르메가 있다."
+      },
+      {
+       "t_raw": "Teyvat 최대의 도서관이 The Akademiya 안에 있고 Sumeru City 또한 Sumeru Akademiya 관할 아래에 있는 점을 보면, 이 도시는 지식을 Akademiya 중심으로 모아두고 운영하는 공간이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "티바트 최대의 도서관이 아카데미아 안에 있고 수메르성 또한 수메르 아카데미아 관할 아래에 있는 점을 보면, 이 도시는 지식을 아카데미아 중심으로 모아두고 운영하는 공간이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sumeru City",
+       "revision": 849025,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sumeru City",
+       "revision": 849025,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Shevirme",
+       "revision": 843324,
+       "section": null,
+       "paragraph": "M8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Katayoun",
+       "revision": 842044,
+       "section": null,
+       "paragraph": "M10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": null,
+       "paragraph": "M15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "도시의 구조",
+     "latin_left": []
+    },
+    {
+     "section": "Akasha와 도시의 꿈",
+     "status": "accepted",
+     "note": "All sentences are supported by M3.",
+     "quote": "The Akasha Terminal is a unique piece of Sumeru technology invented by the Akademiya.",
+     "sentences": [
+      {
+       "t_raw": "**Akasha Terminal**은 Akademiya가 만들어 낸 Sumeru 고유의 기술로, 귀에 꽂는 earpiece 형태를 하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**허공 단말기**는 아카데미아가 만들어 낸 수메르 고유의 기술로, 귀에 꽂는 이어피스 형태를 하고 있다.",
+       "polish": {
+        "from": "**허공 단말기**는 아카데미아가 만들어 낸 수메르 고유의 기술로, 귀에 꽂는 earpiece 형태를 하고 있다.",
+        "text": "**허공 단말기**는 아카데미아가 만들어 낸 수메르 고유의 기술로, 귀에 꽂는 이어피스 형태를 하고 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "필요한 자격만 갖추고 있으면 사용자가 알고 싶어 하는 온갖 지식을 얻을 수 있게 해 주며, Sumeru 국경 안이라면 어디서든 쓸 수 있지만 Port Ormos나 Sumeru City 같은 큰 정착지에서 그 성능이 가장 잘 발휘된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "필요한 자격만 갖추고 있으면 사용자가 알고 싶어 하는 온갖 지식을 얻을 수 있게 해 주며, 수메르 국경 안이라면 어디서든 쓸 수 있지만 오르모스 항구나 수메르성 같은 큰 정착지에서 그 성능이 가장 잘 발휘된다."
+      },
+      {
+       "t_raw": "여행자와 외지인은 물론 Sumeru 인구 대다수가 이 기기를 사용한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 외지인은 물론 수메르 인구 대다수가 이 기기를 사용한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akasha System",
+       "revision": 848780,
+       "section": "Background",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Silent Seeker of Knowledge"
+        },
+        {
+         "type": "quest",
+         "name": "The Trail of the God of Wisdom"
+        }
+       ]
+      }
+     ],
+     "heading": "「허공」과 도시의 꿈",
+     "latin_left": []
+    },
+    {
+     "section": "Akasha와 도시의 꿈",
+     "status": "accepted",
+     "note": "All sentences are supported by M3, and the interpretation is reasonable.",
+     "quote": "Each traveler who arrives to Sumeru City is provided with one, the Traveler and Paimon included.",
+     "sentences": [
+      {
+       "t_raw": "Sumeru City에 도착하는 여행자마다 Akasha Terminal을 하나씩 지급받으며, Traveler와 Paimon도 마찬가지다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르성에 도착하는 여행자마다 허공 단말기를 하나씩 지급받으며, 여행자와 페이몬도 마찬가지다."
+      },
+      {
+       "t_raw": "기기를 손에 쥐고 \"May the Mighty God bless us with their voice of wisdom\"이라고 말하면 곧바로 활성화되어 사용할 수 있게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기기를 손에 쥐고 \"위대하신 신이 지혜로운 목소리로 우리를 축복하시기를\"이라고 말하면 곧바로 활성화되어 사용할 수 있게 된다.",
+       "polish": {
+        "from": "기기를 손에 쥐고 \"May the Mighty God bless us with their voice of wisdom\"이라고 말하면 곧바로 활성화되어 사용할 수 있게 된다.",
+        "text": "기기를 손에 쥐고 \"위대하신 신이 지혜로운 목소리로 우리를 축복하시기를\"이라고 말하면 곧바로 활성화되어 사용할 수 있게 된다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "도시에 도착한 여행자에게 이것이 건네지고 도시 사람 대다수가 이것을 쓴다는 점에서, Akasha는 도시 생활 전반에 깔린 기본 도구로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도시에 도착한 여행자에게 이것이 건네지고 도시 사람 대다수가 이것을 쓴다는 점에서, 「허공」은 도시 생활 전반에 깔린 기본 도구로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akasha System",
+       "revision": 848780,
+       "section": "Background",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Silent Seeker of Knowledge"
+        },
+        {
+         "type": "quest",
+         "name": "The Trail of the God of Wisdom"
+        }
+       ]
+      }
+     ],
+     "heading": "「허공」과 도시의 꿈",
+     "latin_left": []
+    },
+    {
+     "section": "Akasha와 도시의 꿈",
+     "status": "accepted",
+     "note": "All sentences are supported by M2 and Q5, and the interpretation is reasonable.",
+     "quote": "The Akasha Terminal is capable of harvesting the dreams of Sumeru's people, and this is the reason people in Sumeru do not dream.",
+     "sentences": [
+      {
+       "t_raw": "Akasha Terminal은 Sumeru 사람들의 꿈을 거두어 가는 능력이 있고, Sumeru 사람들이 꿈을 꾸지 않는 이유가 바로 여기에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "허공 단말기는 수메르 사람들의 꿈을 거두어 가는 능력이 있고, 수메르 사람들이 꿈을 꾸지 않는 이유가 바로 여기에 있다."
+      },
+      {
+       "t_raw": "모아진 꿈을 통해 도시 모든 사람의 지식을 하나로 합칠 수 있는데, Dehya는 이것을 Sumeru City가 \"single, massive brain\"이 되는 것에 비유했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모아진 꿈을 통해 도시 모든 사람의 지식을 하나로 합칠 수 있는데, 데히야는 이것을 수메르성이 \"하나의 거대한 뇌\"가 되는 것에 비유했다.",
+       "polish": {
+        "from": "모아진 꿈을 통해 도시 모든 사람의 지식을 하나로 합칠 수 있는데, 데히야는 이것을 수메르성이 \"single, massive brain\"이 되는 것에 비유했다.",
+        "text": "모아진 꿈을 통해 도시 모든 사람의 지식을 하나로 합칠 수 있는데, 데히야는 이것을 수메르성이 \"하나의 거대한 뇌\"가 되는 것에 비유했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "꿈을 거두어 가면서 동시에 사람들의 지식을 합친다는 두 가지 사실을 겹쳐 보면, Akasha는 도시 사람들의 꿈과 지식을 한곳에 묶어 두는 장치인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "꿈을 거두어 가면서 동시에 사람들의 지식을 합친다는 두 가지 사실을 겹쳐 보면, 「허공」은 도시 사람들의 꿈과 지식을 한곳에 묶어 두는 장치인 셈이다."
+      },
+      {
+       "t_raw": "Akademiya의 현자들이 왜 이런 방식으로 Akasha Terminal을 쓰는지는 아직 알려지지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아카데미아의 현자들이 왜 이런 방식으로 허공 단말기를 쓰는지는 아직 알려지지 않았다."
+      },
+      {
+       "t_raw": "한편 도시의 담장 밖으로 발을 내디디면 Sumeru City의 공간에서 벗어난 것 같다는 Paimon의 말도 나왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 도시의 담장 밖으로 발을 내디디면 수메르성의 공간에서 벗어난 것 같다는 페이몬의 말도 나왔다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akasha System",
+       "revision": 848780,
+       "section": "Background",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Empty Illusions of the Sabzeruz Festival"
+        },
+        {
+         "type": "quest",
+         "name": "The Continuation of the Sabzeruz Festival"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Empty Illusions of the Sabzeruz Festival",
+       "quest_ko": "환상이 메아리치는 화신 탄신 축제",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "「허공」과 도시의 꿈",
+     "latin_left": []
+    },
+    {
+     "section": "치안과 세력",
+     "status": "accepted",
+     "note": "All sentences supported by A2, M1, Q10.",
+     "quote": "You may have known that the Corps of Thirty is hired by the Akademiya to guard the whole Sumeru City.",
+     "sentences": [
+      {
+       "t_raw": "Sumeru City는 Sumeru Akademiya의 관할 아래에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르성은 수메르 아카데미아의 관할 아래에 있다."
+      },
+      {
+       "t_raw": "도시 전체를 지키는 일은 Akademiya가 고용한 Corps of Thirty가 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시 전체를 지키는 일은 아카데미아가 고용한 「30인단」이 맡는다."
+      },
+      {
+       "t_raw": "이들은 The Eremites 소속이면서 도시의 경비를 서는 부대다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이들은 도금 여단 소속이면서 도시의 경비를 서는 부대다."
+      },
+      {
+       "t_raw": "도시를 다스리는 Akademiya와 도시를 지키는 The Eremites가 고용이라는 형태로 이어져 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도시를 다스리는 아카데미아와 도시를 지키는 도금 여단이 고용이라는 형태로 이어져 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Sumeru City",
+       "revision": 849025,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Eremites",
+       "revision": 850411,
+       "section": "Factions > Corps of Thirty",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Asfand"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Corps of Thirty Recruitment",
+       "quest_ko": "「30인단」 모집",
+       "version": "3.0",
+       "speaker": "Effendi"
+      }
+     ],
+     "heading": "치안과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "치안과 세력",
+     "status": "accepted",
+     "note": "All supported by M1, M14, M16.",
+     "quote": "They are based in the Citadel of Regzar, to the northeastern side of Sumeru City.",
+     "sentences": [
+      {
+       "t_raw": "Corps of Thirty의 거점은 도시 북동쪽에 자리한 Citadel of Regzar다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「30인단」의 거점은 도시 북동쪽에 자리한 취사청다."
+      },
+      {
+       "t_raw": "그곳에서 Rukh Shah가 Parchamdar로서 도시의 The Eremites를 총괄한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그곳에서 루크 샤가 파르참다르로서 도시의 도금 여단을 총괄한다."
+      },
+      {
+       "t_raw": "같은 The Eremites라도 이들은 붉은색이 아닌 **초록색 스카프**를 두르고 다닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "같은 도금 여단라도 이들은 붉은색이 아닌 **초록색 스카프**를 두르고 다닌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Eremites",
+       "revision": 850411,
+       "section": "Factions > Corps of Thirty",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Asfand"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Rukh Shah",
+       "revision": 843167,
+       "section": "Dialogue",
+       "paragraph": "M14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Rukh Shah",
+       "revision": 843167,
+       "section": null,
+       "paragraph": "M16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "치안과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "도시 사람들과 여행자",
+     "status": "accepted",
+     "note": "All supported by Q2 and Q7; interpretation is reasonable.",
+     "quote": "When you're ready, I'll take you to Vimara Village. It's smooth sailing from there to either Sumeru City or Port Ormos.",
+     "sentences": [
+      {
+       "t_raw": "Sumeru에 도착한 일행에게 다음 목표로 떠오르는 곳은 Sumeru City다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르에 도착한 일행에게 다음 목표로 떠오르는 곳은 수메르성다."
+      },
+      {
+       "t_raw": "Paimon은 Sumeru City로 가서 Lesser Lord Kusanali를 만날 방법을 찾아보자고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 수메르성으로 가서 쿠사나리 데비를 만날 방법을 찾아보자고 말한다."
+      },
+      {
+       "t_raw": "Vimara Village에서 길을 나서면 Sumeru City든 Port Ormos든 순조롭게 닿는다고 Rana가 일러 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비마라 마을에서 길을 나서면 수메르성든 오르모스 항구든 순조롭게 닿는다고 라나가 일러 준다."
+      },
+      {
+       "t_raw": "**도시로 향하는 길이 곧 Lesser Lord Kusanali를 만나러 가는 길**로 이어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**도시로 향하는 길이 곧 쿠사나리 데비를 만나러 가는 길**로 이어지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Forest of Change",
+       "quest_ko": "숲속의 이변",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Children of Vimara Village",
+       "quest_ko": "비마라 마을의 아이들",
+       "version": "3.0",
+       "speaker": "Rana"
+      }
+     ],
+     "heading": "도시 사람들과 여행자",
+     "latin_left": []
+    },
+    {
+     "section": "도시 사람들과 여행자",
+     "status": "accepted",
+     "note": "All supported by Q1, Q8, Q9; interpretation is reasonable.",
+     "quote": "Don't be fooled into thinking that Sumeru City has the best of everything. Some festival snacks are only offered here in the Grand Bazaar.",
+     "sentences": [
+      {
+       "t_raw": "도시 안의 사정은 한결 복잡하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시 안의 사정은 한결 복잡하다."
+      },
+      {
+       "t_raw": "Farhad는 Sumeru City에 뭐든 최고가 있는 줄 알면 오산이라며, 어떤 축제 간식은 Grand Bazaar에서만 맛볼 수 있다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파하드는 수메르성에 뭐든 최고가 있는 줄 알면 오산이라며, 어떤 축제 간식은 바자르에서만 맛볼 수 있다고 한다."
+      },
+      {
+       "t_raw": "Paimon이 짚은 \"Sumeru City style\"은 물건을 몇 가지만 사는 방식을 뜻한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬이 짚은 \"수메르성 스타일\"은 물건을 몇 가지만 사는 방식을 뜻한다.",
+       "polish": {
+        "from": "페이몬이 짚은 \"수메르성 style\"은 물건을 몇 가지만 사는 방식을 뜻한다.",
+        "text": "페이몬이 짚은 \"수메르성 스타일\"은 물건을 몇 가지만 사는 방식을 뜻한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Collei는 Master가 매번 그런 제안을 거절한다고 말하는데, \"Sumeru City는 너무 시끄러워서 귀에 나쁘다\"는 이유에서다.",
+       "interp": false,
+       "dropped": false,
+       "t": "콜레이는 사범님이 매번 그런 제안을 거절한다고 말하는데, \"수메르성은 너무 시끄러워서 귀에 나쁘다\"는 이유에서다."
+      },
+      {
+       "t_raw": "도시에서만 구할 수 있는 간식이 있다는 이야기와, 시끄러워서 도시를 피한다는 이야기가 나란히 놓이면서 **도시의 매력과 피로가 함께** 드러난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도시에서만 구할 수 있는 간식이 있다는 이야기와, 시끄러워서 도시를 피한다는 이야기가 나란히 놓이면서 **도시의 매력과 피로가 함께** 드러난다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Trail of the God of Wisdom",
+       "quest_ko": "지혜의 신의 행방",
+       "version": "3.0",
+       "speaker": "Farhad"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lost in Prosperity",
+       "quest_ko": "화려함 속에서 사라진 물건",
+       "version": "3.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Further Observation",
+       "quest_ko": "요양과 관찰",
+       "version": "3.0",
+       "speaker": "Collei"
+      }
+     ],
+     "heading": "도시 사람들과 여행자",
+     "latin_left": []
+    },
+    {
+     "section": "도시 사람들과 여행자",
+     "status": "accepted",
+     "note": "Supported by Q3 and M12; interpretation is reasonable.",
+     "quote": "At a tavern in Sumeru City, a disheveled member of The Eremites exclaimed in fear.",
+     "sentences": [
+      {
+       "t_raw": "모험가에게 도시는 일감이 있는 자리이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모험가에게 도시는 일감이 있는 자리이기도 하다."
+      },
+      {
+       "t_raw": "Katheryne은 Sumeru City의 의뢰에 힘을 보태 달라며, 뛰어난 모험가가 이곳 사람들에게 큰 도움이 될 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "캐서린은 수메르성의 의뢰에 힘을 보태 달라며, 뛰어난 모험가가 이곳 사람들에게 큰 도움이 될 것이라고 말한다."
+      },
+      {
+       "t_raw": "한편 Sumeru City의 한 술집에서는 몰골이 엉망인 The Eremites 일원이 두려움에 젖어 외치는 모습이 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 수메르성의 한 술집에서는 몰골이 엉망인 도금 여단 일원이 두려움에 젖어 외치는 모습이 있었다."
+      },
+      {
+       "t_raw": "의뢰를 받으러 도시로 들어오는 모험가의 이야기와, 술집에서 터져 나온 Eremites의 두려움이 같은 도시 안에서 나란히 오간다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "의뢰를 받으러 도시로 들어오는 모험가의 이야기와, 술집에서 터져 나온 도금 여단의 두려움이 같은 도시 안에서 나란히 오간다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Adventure Takes Courage! (World Quest)",
+       "quest_ko": "모험은 무조건 직진",
+       "version": "3.0",
+       "speaker": "Katheryne"
+      },
+      {
+       "kind": "wiki",
+       "page": "Candace/Profile",
+       "revision": 852342,
+       "section": "Official Introduction",
+       "paragraph": "M12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "도시 사람들과 여행자",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All supported by M2.",
+     "quote": "The reason the Akademiya sages are using the Akasha Terminal in this way is currently unknown.",
+     "sentences": [
+      {
+       "t_raw": "Akasha Terminal은 Sumeru 사람들의 꿈을 거두어들이며, 그 때문에 Sumeru 사람들은 꿈을 꾸지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "허공 단말기는 수메르 사람들의 꿈을 거두어들이며, 그 때문에 수메르 사람들은 꿈을 꾸지 않는다."
+      },
+      {
+       "t_raw": "꿈을 모으는 것으로 Akasha Terminal은 Sumeru City 사람 전체의 지식을 합칠 수 있고, Dehya는 이를 두고 Sumeru City가 하나의 거대한 두뇌가 되는 것에 비유했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "꿈을 모으는 것으로 허공 단말기는 수메르성 사람 전체의 지식을 합칠 수 있고, 데히야는 이를 두고 수메르성이 하나의 거대한 두뇌가 되는 것에 비유했다."
+      },
+      {
+       "t_raw": "다만 Akademiya의 현자들이 Akasha Terminal을 이런 식으로 쓰는 까닭은 당시에는 알려지지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 아카데미아의 현자들이 허공 단말기를 이런 식으로 쓰는 까닭은 당시에는 알려지지 않았다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akasha System",
+       "revision": 848780,
+       "section": "Background",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Empty Illusions of the Sabzeruz Festival"
+        },
+        {
+         "type": "quest",
+         "name": "The Continuation of the Sabzeruz Festival"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported or are hedged interpretations.",
+     "quote": "Ahem... Just be sure not to speak of this if you travel to Sumeru City. They'll look at you as if you've lost your mind.",
+     "sentences": [
+      {
+       "t_raw": "Akasha Terminal이 꿈과 지식을 한데 모으는 도시에서, 도시 밖의 이야기를 꺼내는 일은 조심스러운 화제가 되는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "허공 단말기가 꿈과 지식을 한데 모으는 도시에서, 도시 밖의 이야기를 꺼내는 일은 조심스러운 화제가 되는 것으로 보인다."
+      },
+      {
+       "t_raw": "Haypasia는 Sumeru City로 가거든 이 이야기를 말하지 말라고 당부하며, 사람들이 정신이 나간 사람처럼 볼 것이라고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "하이파시아는 수메르성으로 가거든 이 이야기를 말하지 말라고 당부하며, 사람들이 정신이 나간 사람처럼 볼 것이라고 했다."
+      },
+      {
+       "t_raw": "모인 꿈과 지식이 도시 사람들의 시선을 묶는 만큼, 바깥에서 통하던 이야기가 도시 안에서는 낯설게 받아들여질 수 있다는 분위기가 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "모인 꿈과 지식이 도시 사람들의 시선을 묶는 만큼, 바깥에서 통하던 이야기가 도시 안에서는 낯설게 받아들여질 수 있다는 분위기가 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Akasha System",
+       "revision": 848780,
+       "section": "Background",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Empty Illusions of the Sabzeruz Festival"
+        },
+        {
+         "type": "quest",
+         "name": "The Continuation of the Sabzeruz Festival"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Silent Seeker of Knowledge",
+       "quest_ko": "침묵하는 지식의 탐구자",
+       "version": "3.0",
+       "speaker": "Haypasia"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All locations are given in the material (Shevirme in M8).",
+     "quote": "Aryadeva is an NPC located in Sumeru City, Sumeru, near the Kalimi Exchange.",
+     "sentences": [
+      {
+       "t_raw": "Sumeru City에 자리한 인물로는 Rima, Hanbei, Sheikh Zubayr가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르성에 자리한 인물로는 리마, 함베이, 셰이크 주바이르가 있다."
+      },
+      {
+       "t_raw": "Katayoun은 House of Daena에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카타윤은 지혜궁에 있다."
+      },
+      {
+       "t_raw": "Asfand는 Citadel of Regzar에, Aryadeva는 Kalimi Exchange 근처에, Shevirme는 Grand Bazaar에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아스판드는 취사청에, 아리야데바는 칼리미 거래소 근처에, 셰비르메는 바자르에 있다."
+      },
+      {
+       "t_raw": "이렇게 도시 안의 여러 장소에 인물 이름이 흩어져 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 도시 안의 여러 장소에 인물 이름이 흩어져 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Rima",
+       "revision": 843085,
+       "section": null,
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hanbei",
+       "revision": 841650,
+       "section": null,
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Sheikh Zubayr",
+       "revision": 843321,
+       "section": null,
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Katayoun",
+       "revision": 842044,
+       "section": null,
+       "paragraph": "M10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Asfand",
+       "revision": 840790,
+       "section": null,
+       "paragraph": "M9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Aryadeva",
+       "revision": 840784,
+       "section": null,
+       "paragraph": "M11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches Q4.",
+     "quote": "Ooh, sounds familiar! Dunyarzad told us a story like that when we first arrived in Sumeru City. So it was about the First Sage, huh?",
+     "sentences": [
+      {
+       "t_raw": "처음 Sumeru City에 도착했을 때 Dunyarzad가 들려준 이야기는 Paimon의 말끝에서 **First Sage**에 관한 이야기로 되짚어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "처음 수메르성에 도착했을 때 두냐르자드가 들려준 이야기는 페이몬의 말끝에서 **최초의 현자**에 관한 이야기로 되짚어진다."
+      },
+      {
+       "t_raw": "Paimon은 그런 이야기가 익숙하다며, 그게 First Sage 이야기였냐고 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 그런 이야기가 익숙하다며, 그게 최초의 현자 이야기였냐고 되묻는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The End of the Sabzeruz Festival",
+       "quest_ko": "결국 막을 내리는 화신 탄신 축제",
+       "version": "3.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "도시의 구조",
+     "status": "accepted",
+     "note": "The English says Sumeru City does not have 'the best of everything'. The Korean says it does not have 'everything', which drops 'best'.",
+     "t_raw": "Sumeru City가 모든 면에서 최고라고 착각하지 마. 몇몇 축제 간식은 여기 Grand Bazaar에서만 제공된다.",
+     "en": "Don't be fooled into thinking that Sumeru City has the best of everything. Some festival snacks are only offered here in the Grand Bazaar.",
+     "speaker": "Farhad",
+     "source": {
+      "kind": "quest",
+      "quest": "The Trail of the God of Wisdom",
+      "quest_ko": "지혜의 신의 행방",
+      "version": "3.0",
+      "speaker": "Farhad"
+     },
+     "t": "수메르성이 모든 면에서 최고라고 착각하지 마. 몇몇 축제 간식은 여기 바자르에서만 제공된다.",
+     "speaker_ko": "파하드"
+    },
+    {
+     "section": "Akasha와 도시의 꿈",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "…정말 대단한 정보량이야! 담장 밖으로 발을 내디디면 Sumeru City의 공간에서 벗어나는 것 같다는 거잖아.",
+     "en": "...That's one heck of an info dump! It sounds like you left the Sumeru City space when you set foot outside of the walls.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Empty Illusions of the Sabzeruz Festival",
+      "quest_ko": "환상이 메아리치는 화신 탄신 축제",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "…정말 대단한 정보량이야! 담장 밖으로 발을 내디디면 수메르성의 공간에서 벗어나는 것 같다는 거잖아.",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "치안과 세력",
+     "status": "accepted",
+     "note": "'You may have known' is hedged. The Korean '알고 계실 겁니다' asserts the listener surely knows, which shifts the nuance.",
+     "t_raw": "Corps of Thirty가 Akademiya에 고용되어 Sumeru City 전체를 지킨다는 건 알고 계실 수도 있습니다.",
+     "en": "You may have known that the Corps of Thirty is hired by the Akademiya to guard the whole Sumeru City.",
+     "speaker": "Effendi",
+     "source": {
+      "kind": "quest",
+      "quest": "Corps of Thirty Recruitment",
+      "quest_ko": "「30인단」 모집",
+      "version": "3.0",
+      "speaker": "Effendi"
+     },
+     "t": "「30인단」이 아카데미아에 고용되어 수메르성 전체를 지킨다는 건 알고 계실 수도 있습니다.",
+     "speaker_ko": "에펜디"
+    },
+    {
+     "section": "도시 사람들과 여행자",
+     "status": "accepted",
+     "note": "The translation faithfully conveys the dialogue.",
+     "t_raw": "Sumeru City에 뭐든 최고만 있는 줄 알면 오산이야. 어떤 축제 간식은 여기 Grand Bazaar에서만 파는걸.",
+     "en": "Don't be fooled into thinking that Sumeru City has the best of everything. Some festival snacks are only offered here in the Grand Bazaar.",
+     "speaker": "Farhad",
+     "source": {
+      "kind": "quest",
+      "quest": "The Trail of the God of Wisdom",
+      "quest_ko": "지혜의 신의 행방",
+      "version": "3.0",
+      "speaker": "Farhad"
+     },
+     "t": "수메르성에 뭐든 최고만 있는 줄 알면 오산이야. 어떤 축제 간식은 여기 바자르에서만 파는걸.",
+     "speaker_ko": "파하드"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The translation faithfully conveys the dialogue.",
+     "t_raw": "에헴... Sumeru City로 가게 되거든 이 이야기는 꺼내지 않도록 해. 사람들이 당신을 정신이 나간 사람처럼 볼 테니까.",
+     "en": "Ahem... Just be sure not to speak of this if you travel to Sumeru City. They'll look at you as if you've lost your mind.",
+     "speaker": "Haypasia",
+     "source": {
+      "kind": "quest",
+      "quest": "Silent Seeker of Knowledge",
+      "quest_ko": "침묵하는 지식의 탐구자",
+      "version": "3.0",
+      "speaker": "Haypasia"
+     },
+     "t": "에헴... 수메르성으로 가게 되거든 이 이야기는 꺼내지 않도록 해. 사람들이 당신을 정신이 나간 사람처럼 볼 테니까.",
+     "speaker_ko": "하이파시아"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The translation faithfully conveys the dialogue.",
+     "t_raw": "오, 익숙한데! 우리가 처음 Sumeru City에 도착했을 때 Dunyarzad가 그런 이야기를 해 줬잖아. 그럼 그건 First Sage에 관한 이야기였던 거네?",
+     "en": "Ooh, sounds familiar! Dunyarzad told us a story like that when we first arrived in Sumeru City. So it was about the First Sage, huh?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The End of the Sabzeruz Festival",
+      "quest_ko": "결국 막을 내리는 화신 탄신 축제",
+      "version": "3.0",
+      "speaker": "Paimon"
+     },
+     "t": "오, 익숙한데! 우리가 처음 수메르성에 도착했을 때 두냐르자드가 그런 이야기를 해 줬잖아. 그럼 그건 최초의 현자에 관한 이야기였던 거네?",
+     "speaker_ko": "페이몬"
+    }
+   ]
+  }
+ ]
+}

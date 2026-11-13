@@ -1,0 +1,2852 @@
+{
+ "node": "Yelan",
+ "articles": [
+  {
+   "node": "Yelan",
+   "from_version": "Luna VI",
+   "cutoff": "2026-05-19T00:00:00Z",
+   "input": [
+    {
+     "page": "Yelan",
+     "url": "https://genshin-impact.fandom.com/wiki/Yelan",
+     "revision": 1966006
+    },
+    {
+     "page": "Yelan/Profile",
+     "url": "https://genshin-impact.fandom.com/wiki/Yelan%2FProfile",
+     "revision": 2090000
+    },
+    {
+     "page": "Yelan/Storyline",
+     "url": "https://genshin-impact.fandom.com/wiki/Yelan%2FStoryline",
+     "revision": 2090388
+    }
+   ],
+   "input_counts": {
+    "mentions": 16,
+    "lines": 34,
+    "web": 0
+   },
+   "input_chars": 10155,
+   "input_cut": false,
+   "input_hash": "19dab56b5201",
+   "writer": "ds,kimi,ds-pro",
+   "verifier": "claude-sonnet,codex-medium,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Yelan is a Liyue intelligence agent that directly answers to Ningguang, handling national security matters behind the scenes.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 Genshin Impact의 플레이 가능한 캐릭터이며, Liyue의 국가 안보를 뒷전에서 다루는 정보 요원이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 원신의 플레이 가능한 캐릭터이며, 리월의 국가 안보를 뒷전에서 다루는 정보 요원이다."
+      },
+      {
+       "t_raw": "그녀는 Ministry of Civil Affairs와 Yanshang Teahouse에 몸담는다고 말하지만, 전자에서는 명단에 없는 비실체로 나오고 후자는 본업을 위한 거점으로 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 총무부와 암상 찻집에 몸담는다고 말하지만, 전자에서는 명단에 없는 비실체로 나오고 후자는 본업을 위한 거점으로 쓰인다."
+      },
+      {
+       "t_raw": "공식 소개에서 그녀의 정체는 늘 수수께끼로 남아 있으며, 여러 모습으로 사건의 중심에 나타났다가 폭풍이 멎기 전에 사라진다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공식 소개에서 그녀의 정체는 늘 수수께끼로 남아 있으며, 여러 모습으로 사건의 중심에 나타났다가 폭풍이 멎기 전에 사라진다고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan",
+       "revision": 1966006,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan",
+       "revision": 1966006,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": null,
+       "paragraph": "C1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts are supported, and the interpretation follows from them.",
+     "quote": "Yelan is a Liyue intelligence agent that directly answers to Ningguang, handling national security matters behind the scenes.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 Genshin Impact의 플레이 가능한 캐릭터로, **Ministry of Civil Affairs**에 근무한다고 주장하지만 부서 명단에는 실제로 이름이 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 원신의 플레이 가능한 캐릭터로, **총무부**에 근무한다고 주장하지만 부서 명단에는 실제로 이름이 없다."
+      },
+      {
+       "t_raw": "그녀는 **Yanshang Teahouse**에도 소속되어 있다고 말하지만, 그것은 진짜 일인 정보 활동을 위한 통로이며, 실제로는 Ningguang에게 직접 보고하는 Liyue의 정보 요원이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 **암상 찻집**에도 소속되어 있다고 말하지만, 그것은 진짜 일인 정보 활동을 위한 통로이며, 실제로는 응광에게 직접 보고하는 리월의 정보 요원이다."
+      },
+      {
+       "t_raw": "이렇게 공식 직함과 비공식 신분이 교차하는 지점에서 Yelan은 **Ningguang** 뒤편에서 국가 안보를 다루는 인물인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이렇게 공식 직함과 비공식 신분이 교차하는 지점에서 야란은 **응광** 뒤편에서 국가 안보를 다루는 인물인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan",
+       "revision": 1966006,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan",
+       "revision": 1966006,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": null,
+       "paragraph": "C1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ministry of Civil Affairs",
+       "revision": 1588536,
+       "section": "Members",
+       "paragraph": "M9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts and the interpretation follow from B1–B6.",
+     "quote": "Like a phantom, she often appears in various guises at the center of events, and disappears before the storm stops.",
+     "sentences": [
+      {
+       "t_raw": "Yelan의 정체는 수수께끗이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란의 정체는 수수께끗이다."
+      },
+      {
+       "t_raw": "그녀는 폭풍이 그치기 전에 사라지는 환영처럼 여러 이름과 분장으로 사건의 중심에 나타나, 곤경에 처한 이들과 그 상대편 모두가 그녀를 동맹으로 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 폭풍이 그치기 전에 사라지는 환영처럼 여러 이름과 분장으로 사건의 중심에 나타나, 곤경에 처한 이들과 그 상대편 모두가 그녀를 동맹으로 여긴다."
+      },
+      {
+       "t_raw": "하지만 각자 다른 이름의 Yelan을 만났고 정작 누구를 돕는지 아는 이는 없으므로, 그녀의 개입은 어느 편에도 확신을 주지 않는 변수로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "하지만 각자 다른 이름의 야란을 만났고 정작 누구를 돕는지 아는 이는 없으므로, 그녀의 개입은 어느 편에도 확신을 주지 않는 변수로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts are supported. The interpretation is hedged with 'can be seen as' and is reasonable.",
+     "quote": "She is a mysterious person who claims to work for the Ministry of Civil Affairs, but comes out as a non-entity on their list.",
+     "sentences": [
+      {
+       "t_raw": "Yelan의 정체는 늘 수수께끼로 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란의 정체는 늘 수수께끼로 남아 있다."
+      },
+      {
+       "t_raw": "그녀는 자신이 Ministry of Civil Affairs에서 일한다고 말하지만, 그 명단에서 그녀는 **존재하지 않는 인물**로 처리된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 자신이 총무부에서 일한다고 말하지만, 그 명단에서 그녀는 **존재하지 않는 인물**로 처리된다."
+      },
+      {
+       "t_raw": "Yanshang Teahouse에서 일한다는 말 역시 표면적인 것으로, 그곳은 진짜 직업인 정보 활동을 위한 수단에 가깝다.",
+       "interp": false,
+       "dropped": false,
+       "t": "암상 찻집에서 일한다는 말 역시 표면적인 것으로, 그곳은 진짜 직업인 정보 활동을 위한 수단에 가깝다."
+      },
+      {
+       "t_raw": "실제로 그녀는 Ningguang에게 직접 보고하는 Liyue의 정보 요원으로, 국가 안보 문제를 이면에서 처리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "실제로 그녀는 응광에게 직접 보고하는 리월의 정보 요원으로, 국가 안보 문제를 이면에서 처리한다."
+      },
+      {
+       "t_raw": "공식 명단에 없는 소속을 내세우면서 정작 Ningguang의 직속으로 움직인다는 점에서, 그녀의 이중 얼굴은 처음부터 은폐를 전제로 짜인 구조라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "공식 명단에 없는 소속을 내세우면서 정작 응광의 직속으로 움직인다는 점에서, 그녀의 이중 얼굴은 처음부터 은폐를 전제로 짜인 구조라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan",
+       "revision": 1966006,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ministry of Civil Affairs",
+       "revision": 1588536,
+       "section": "Members",
+       "paragraph": "M9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": null,
+       "paragraph": "C1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts are supported by B2–B5, and the interpretation is reasonable.",
+     "quote": "Every one of these people has met a Yelan who goes by a different name and identity, and each of them thinks they can reach a partnership with her.",
+     "sentences": [
+      {
+       "t_raw": "그녀는 유령처럼 여러 모습으로 사건의 중심에 나타났다가 폭풍이 멎기 전에 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 유령처럼 여러 모습으로 사건의 중심에 나타났다가 폭풍이 멎기 전에 사라진다."
+      },
+      {
+       "t_raw": "곤경에 빠진 이들은 그녀를 만나길 바라고, 대개 그녀가 자신을 돕거나 적어도 아군이 되어 주리라 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "곤경에 빠진 이들은 그녀를 만나길 바라고, 대개 그녀가 자신을 돕거나 적어도 아군이 되어 주리라 여긴다."
+      },
+      {
+       "t_raw": "문제는 상대편도 같은 생각을 품는다는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문제는 상대편도 같은 생각을 품는다는 것이다."
+      },
+      {
+       "t_raw": "양쪽 모두 서로 다른 이름과 신분의 Yelan을 만났고, 각자 파트너십에 이르렀다고 믿지만 모두 진실을 모른 채다.",
+       "interp": false,
+       "dropped": false,
+       "t": "양쪽 모두 서로 다른 이름과 신분의 야란을 만났고, 각자 파트너십에 이르렀다고 믿지만 모두 진실을 모른 채다."
+      },
+      {
+       "t_raw": "같은 인물이 양 진영에서 각각 아군으로 기대되면서도 어느 쪽에도 진실을 말하지 않는다는 구도는, 그녀의 협력이 편 가르기와는 다른 방식으로 이루어진다는 것을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 인물이 양 진영에서 각각 아군으로 기대되면서도 어느 쪽에도 진실을 말하지 않는다는 구도는, 그녀의 협력이 편 가르기와는 다른 방식으로 이루어진다는 것을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The facts are supported by C7, M16 and M7. The interpretation is reasonable.",
+     "quote": "She established a large network, monitoring everything both inside and outside the nation.",
+     "sentences": [
+      {
+       "t_raw": "Ningguang과 계약을 맺은 뒤 그녀는 국가를 위한 정보 요원이 되어, 국내외의 모든 것을 감시하는 큰 정보망을 세웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광과 계약을 맺은 뒤 그녀는 국가를 위한 정보 요원이 되어, 국내외의 모든 것을 감시하는 큰 정보망을 세웠다."
+      },
+      {
+       "t_raw": "이 정보망은 **Northern Intelligence Network**가 Liyue에 뿌리내리는 것을 막았고, 상대가 어떤 방식으로 접근해 와도 영향력을 들여오지 못하게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 정보망은 **북대륙 정보망**이 리월에 뿌리내리는 것을 막았고, 상대가 어떤 방식으로 접근해 와도 영향력을 들여오지 못하게 했다."
+      },
+      {
+       "t_raw": "그래서 그 네트워크는 Liyue만 빼고 모든 지역에 첩자를 두게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래서 그 네트워크는 리월만 빼고 모든 지역에 첩자를 두게 되었다."
+      },
+      {
+       "t_raw": "Yelan은 그 네트워크의 고객이기도 해서, Nefer로부터 막대한 Mora를 주고 정보를 샀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 그 네트워크의 고객이기도 해서, 네페르로부터 막대한 모라를 주고 정보를 샀다."
+      },
+      {
+       "t_raw": "자신의 정보망이 막아낸 조직의 정보를 다시 사들이는 셈이니, 그녀의 정보 활동은 배타적이라기보다 실용적으로 짜여 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자신의 정보망이 막아낸 조직의 정보를 다시 사들이는 셈이니, 그녀의 정보 활동은 배타적이라기보다 실용적으로 짜여 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Past",
+       "paragraph": "C7",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Yelan: Motives and Means"
+        },
+        {
+         "type": "cs",
+         "name": "Nefer"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Northern Intelligence Network",
+       "revision": 1894152,
+       "section": null,
+       "paragraph": "M16",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Yelan: Motives and Means"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Northern Intelligence Network",
+       "revision": 1894152,
+       "section": "Members > Clients",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by C8 and A2.",
+     "quote": "The teahouse would serve as a place to gather more intelligence and also some leisure time.",
+     "sentences": [
+      {
+       "t_raw": "Osial 사건이 끝난 직후 해외에서 돌아온 Yelan은 Fatui가 쥐고 있던 Yanshang Teahouse를 넘겨받았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오셀 사건이 끝난 직후 해외에서 돌아온 야란은 우인단이 쥐고 있던 암상 찻집을 넘겨받았다."
+      },
+      {
+       "t_raw": "Fatui가 사실상 손을 떼고 있던 시점이 그 기회가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "우인단이 사실상 손을 떼고 있던 시점이 그 기회가 되었다."
+      },
+      {
+       "t_raw": "찻집은 정보를 모으는 곳이자 여가를 보내는 곳이 되었고, 그녀와 겨루면 재산을 잃는다는 경고가 돌 정도로 **악명**을 얻었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "찻집은 정보를 모으는 곳이자 여가를 보내는 곳이 되었고, 그녀와 겨루면 재산을 잃는다는 경고가 돌 정도로 **악명**을 얻었다."
+      },
+      {
+       "t_raw": "소속을 내세우는 표면과 정보 수집·여가라는 실제 용도가 한 공간에 겹쳐 있다는 점에서, Yanshang Teahouse는 그녀의 이중 얼굴을 그대로 보여 주는 장소인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "소속을 내세우는 표면과 정보 수집·여가라는 실제 용도가 한 공간에 겹쳐 있다는 점에서, 암상 찻집은 그녀의 이중 얼굴을 그대로 보여 주는 장소인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan",
+       "revision": 1966006,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C8",
+       "wiki_refs": [
+        {
+         "type": "bb",
+         "name": "Chihu Rock Bulletin Board"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "가계와 유산",
+     "status": "accepted",
+     "note": "All sentences are supported by M1 and Q13, and the interpretation is reasonable.",
+     "quote": "But as you know, there was a huge disaster here. My ancestors fought alongside the Yakshas, and gave their lives to save Liyue from peril.",
+     "sentences": [
+      {
+       "t_raw": "Yelan의 조상 **Boyang과 Rongzhao**는 대재앙의 시대에 살았으며, The Chasm에서 Bosacius와 함께 싸웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란의 조상 **백양과 융소**는 대재앙의 시대에 살았으며, 층암거연에서 부사와 함께 싸웠다."
+      },
+      {
+       "t_raw": "Boyang은 Bosacius와 함께 신비한 영역 안에서 목숨을 잃었고, 살아 돌아온 아우 Rongzhao는 카르마 빚에 미쳐버렸으며, Xiao가 머무는 Wangshu Inn을 지날 때만 잠시 안정을 되찾았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "백양은 부사와 함께 신비한 영역 안에서 목숨을 잃었고, 살아 돌아온 아우 융소는 카르마 빚에 미쳐버렸으며, 소가 머무는 망서 객잔을 지날 때만 잠시 안정을 되찾았다."
+      },
+      {
+       "t_raw": "Yelan의 가족사는 그녀가 The Chasm에서 무슨 일이 일어났는지 끊임없이 궁금해하게 만든 배경이 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란의 가족사는 그녀가 층암거연에서 무슨 일이 일어났는지 끊임없이 궁금해하게 만든 배경이 되었다."
+      },
+      {
+       "t_raw": "Boyang과 Rongzhao가 Yakshas와 나란히 목숨을 걸었고, 한 사람은 돌아와도 정신을 잃어야 했던 점을 보면, The Chasm의 재난은 Yelan 일가에 피할 수 없는 상처를 남긴 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "백양과 융소가 야차와 나란히 목숨을 걸었고, 한 사람은 돌아와도 정신을 잃어야 했던 점을 보면, 층암거연의 재난은 야란 일가에 피할 수 없는 상처를 남긴 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Past",
+       "paragraph": "C6",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yelan"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yaksha",
+       "revision": 726534,
+       "section": "Story > Legacy",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "At Tunnel's End, Light"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Qimen Arts and the Rite of Homa, the Spirits are Calmed and Life Restored",
+       "quest_ko": "퇴치의 기문술・저승을 평정하는 호마",
+       "version": "5.3",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "가계와 유산",
+     "latin_left": []
+    },
+    {
+     "section": "가계와 유산",
+     "status": "accepted",
+     "note": "All sentences are supported by C6, M2 and M10, and the interpretation is hedged.",
+     "quote": "However, she lost one of these during an operation against Pantalone, rendering it impotent.",
+     "sentences": [
+      {
+       "t_raw": "Yelan 일가는 **Fascinating Bracelet**라는 값을 매길 수 없는 가보를 가지고 있었는데, 가문에 전해지는 주문으로 간단한 통신 기구로 바꿀 수 있는 한 쌍의 팔찌였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란 일가는 **매혹의 팔찌**라는 값을 매길 수 없는 가보를 가지고 있었는데, 가문에 전해지는 주문으로 간단한 통신 기구로 바꿀 수 있는 한 쌍의 팔찌였다."
+      },
+      {
+       "t_raw": "Yelan은 Pantalone과 관련된 작전에서 한 쪽 팔찌를 잃어 그 기능을 상실했고, 그 손해를 메우기 위해 Pantalone의 비밀 교역로 하나에 잠입해 집행관이 Tsaritsa에게 선물하려던 고대 짐승의 털로 만든 로브를 빼돌렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 판탈로네와 관련된 작전에서 한 쪽 팔찌를 잃어 그 기능을 상실했고, 그 손해를 메우기 위해 판탈로네의 비밀 교역로 하나에 잠입해 집행관이 얼음의 여왕에게 선물하려던 고대 짐승의 털로 만든 로브를 빼돌렸다."
+      },
+      {
+       "t_raw": "그녀는 남은 한 쪽 팔찌를 Vision을 사용할 때 빛나는 액세서리로 여전히 착용하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 남은 한 쪽 팔찌를 신의 눈을 사용할 때 빛나는 액세서리로 여전히 착용하고 있다."
+      },
+      {
+       "t_raw": "Yelan은 Exorcist 가문의 기술을 직접 이어가고 있지는 않지만, 가문이 현재까지 명맥을 유지하고 있다는 사실은 분명하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 퇴마사 가문의 기술을 직접 이어가고 있지는 않지만, 가문이 현재까지 명맥을 유지하고 있다는 사실은 분명하다."
+      },
+      {
+       "t_raw": "가문 기법이 얼마나 살아 있는지, 또 다른 가족이 있는지조차 알 수 없는 마당에 Yelan이 남은 팔찌를 몸에 지니고 다니는 것은, 기능하는 도구라기보다 그녀 혼자 이어가는 유산의 표식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가문 기법이 얼마나 살아 있는지, 또 다른 가족이 있는지조차 알 수 없는 마당에 야란이 남은 팔찌를 몸에 지니고 다니는 것은, 기능하는 도구라기보다 그녀 혼자 이어가는 유산의 표식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Past",
+       "paragraph": "C6",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yelan"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Exorcist",
+       "revision": 1208568,
+       "section": "Known Exorcist Clans > Yelan's Clan",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yelan"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Exorcist",
+       "revision": 1208568,
+       "section": "Known Exorcist Clans > Known Members",
+       "paragraph": "M10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "가계와 유산",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Chasm",
+     "status": "accepted",
+     "note": "All sentences are supported by C9.",
+     "quote": "Yelan tracked them into the depths of The Chasm, saving them from a Ruin Serpent by firing a charged shot at a crystal above it.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 처음에는 모습을 드러내지 않은 채 Traveler를 The Chasm 깊은 곳까지 추적했고, Ruin Serpent가 덮치려 하자 그 위쪽의 수정을 향해 강화 조준 사격을 날려 Traveler를 구해냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 처음에는 모습을 드러내지 않은 채 여행자를 층암거연 깊은 곳까지 추적했고, 유적의 뱀이 덮치려 하자 그 위쪽의 수정을 향해 강화 조준 사격을 날려 여행자를 구해냈다."
+      },
+      {
+       "t_raw": "그 수정은 실은 **Celestial Nail**이었고, 그녀는 Ruin Serpent가 파괴된 것을 확인한 뒤 미소를 띠고 자리를 떴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 수정은 실은 **하늘의 못**이었고, 그녀는 유적의 뱀이 파괴된 것을 확인한 뒤 미소를 띠고 자리를 떴다."
+      },
+      {
+       "t_raw": "이로 인해 봉인이 풀렸고, Paimon이 이에 관심을 보여 Traveler에게 조사를 부탁했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이로 인해 봉인이 풀렸고, 페이몬이 이에 관심을 보여 여행자에게 조사를 부탁했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Wherefore Did the Spiritstone Descend?"
+        },
+        {
+         "type": "quest",
+         "name": "The Unexpected Guest"
+        },
+        {
+         "type": "quest",
+         "name": "Danger All Around"
+        },
+        {
+         "type": "quest",
+         "name": "At Tunnel's End, Light"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 층암거연",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Chasm",
+     "status": "accepted",
+     "note": "All sentences are supported by C9 and Q20.",
+     "quote": "You're all here on business, and it's my job to monitor The Chasm. According to regulations, I should accompany you.",
+     "sentences": [
+      {
+       "t_raw": "그녀에게 The Chasm을 감시하는 일은 맡은 임무였고, 볼일이 있어 온 일행에게 규정상 동행하겠다고 밝혔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀에게 층암거연을 감시하는 일은 맡은 임무였고, 볼일이 있어 온 일행에게 규정상 동행하겠다고 밝혔다."
+      },
+      {
+       "t_raw": "일행은 Yanfei를 만났고, 이어 Kuki Shinobu와 Arataki Itto를 만났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일행은 연비를 만났고, 이어 쿠키 시노부와 아라타키 이토를 만났다."
+      },
+      {
+       "t_raw": "Itto가 Yelan과 언쟁을 벌이자 땅이 흔들려 일행은 Chasm 최심부로 떨어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이토가 야란과 언쟁을 벌이자 땅이 흔들려 일행은 층암거연 최심부로 떨어졌다."
+      },
+      {
+       "t_raw": "그녀는 Shinobu와 Itto에게 입을 다물라고 경고한 뒤 지형을 파악하러 떠났다가 나중에 돌아왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 시노부와 이토에게 입을 다물라고 경고한 뒤 지형을 파악하러 떠났다가 나중에 돌아왔다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Wherefore Did the Spiritstone Descend?"
+        },
+        {
+         "type": "quest",
+         "name": "The Unexpected Guest"
+        },
+        {
+         "type": "quest",
+         "name": "Danger All Around"
+        },
+        {
+         "type": "quest",
+         "name": "At Tunnel's End, Light"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Unexpected Guest",
+       "quest_ko": "의외의 손님",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 층암거연",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Chasm",
+     "status": "accepted",
+     "note": "All sentences are supported by C9.",
+     "quote": "The group finally came upon a mirage of the Fantastic Compass, with Yelan and Xiao working together to manipulate its energies to let them escape back to the surface.",
+     "sentences": [
+      {
+       "t_raw": "가장 깊은 곳에서 일행은 각자의 가장 어두운 비밀을 드러내는 문을 마주했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가장 깊은 곳에서 일행은 각자의 가장 어두운 비밀을 드러내는 문을 마주했다."
+      },
+      {
+       "t_raw": "Yelan은 그 문에 들어가기를 거부하며, 들어갔다면 Ningguang과의 업무 때문에 모두를 죽여야 했을 것이라고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 그 문에 들어가기를 거부하며, 들어갔다면 응광과의 업무 때문에 모두를 죽여야 했을 것이라고 말했다."
+      },
+      {
+       "t_raw": "이후 일행은 **Fantastic Compass**의 환영에 이르렀고, Yelan은 Xiao와 힘을 합쳐 그 기운을 조작해 지상으로 탈출했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 일행은 **「태위 나침반」**의 환영에 이르렀고, 야란은 소와 힘을 합쳐 그 기운을 조작해 지상으로 탈출했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Wherefore Did the Spiritstone Descend?"
+        },
+        {
+         "type": "quest",
+         "name": "The Unexpected Guest"
+        },
+        {
+         "type": "quest",
+         "name": "Danger All Around"
+        },
+        {
+         "type": "quest",
+         "name": "At Tunnel's End, Light"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Mystic Arts in Teyvat",
+       "revision": 1676803,
+       "section": "Liyue > Fantastic Compass",
+       "paragraph": "M8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 층암거연",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — The Chasm",
+     "status": "accepted",
+     "note": "",
+     "quote": "The mysterious circumstances behind her family's past gave Yelan a great curiosity regarding what happened at The Chasm.",
+     "sentences": [
+      {
+       "t_raw": "조상 Boyang과 Rongzhao는 Bosacius와 함께 The Chasm에서 싸웠고, Boyang은 Bosacius와 함께 미지의 영역 안에서 목숨을 잃었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조상 백양과 융소는 부사와 함께 층암거연에서 싸웠고, 백양은 부사와 함께 미지의 영역 안에서 목숨을 잃었다."
+      },
+      {
+       "t_raw": "동생 Rongzhao는 돌아왔으나 업보에 시달려 정신이 온전치 못했고, Wangshu Inn을 지날 때에만 잠시 진정되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동생 융소는 돌아왔으나 업보에 시달려 정신이 온전치 못했고, 망서 객잔을 지날 때에만 잠시 진정되었다."
+      },
+      {
+       "t_raw": "Yelan은 이곳에서 Bosacius와 자신의 조상이 함께 이 공간을 봉인했다는 목소리를 듣는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 이곳에서 부사와 자신의 조상이 함께 이 공간을 봉인했다는 목소리를 듣는다."
+      },
+      {
+       "t_raw": "그녀는 조상들이 Yakshas와 함께 싸우다 Liyue를 구하기 위해 목숨을 바쳤다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 조상들이 야차와 함께 싸우다 리월을 구하기 위해 목숨을 바쳤다고 말한다."
+      },
+      {
+       "t_raw": "조상이 봉인에 참여했다는 것을 그녀가 직접 확인한 셈이니, 가문의 과거에 대한 호기심이 이번 여정에서 한 겹 풀린 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "조상이 봉인에 참여했다는 것을 그녀가 직접 확인한 셈이니, 가문의 과거에 대한 호기심이 이번 여정에서 한 겹 풀린 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yaksha",
+       "revision": 726534,
+       "section": "Story > Legacy",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "At Tunnel's End, Light"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Qimen Arts and the Rite of Homa, the Spirits are Calmed and Life Restored",
+       "quest_ko": "퇴치의 기문술・저승을 평정하는 호마",
+       "version": "5.3",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "At Tunnel's End, Light",
+       "quest_ko": "구사일생",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 층암거연",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Tianshu 선정",
+     "status": "accepted",
+     "note": "The initial preference for Zhiyi was the Traveler's. Yelan's choice based on his composure is described as eventual, not initial.",
+     "quote": "Fancy joining me, ? You'll be among the first to get to know the next Tianshu. Might be a good opportunity for you.",
+     "sentences": [
+      {
+       "t_raw": "The Chasm 사건 이후 몸과 마음이 쇠약해진 Uncle Tian은 Tianshu 후계자를 찾기로 결심하고, Yelan에게 Zhiyi, Mingbo, Qianwei를 평가하는 관찰관 역할을 맡겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "층암거연 사건 이후 몸과 마음이 쇠약해진 천추 아저씨는 천추 후계자를 찾기로 결심하고, 야란에게 지언, 명보, 건위를 평가하는 관찰관 역할을 맡겼다."
+      },
+      {
+       "t_raw": "Yelan은 Qianwei를 혁신적이나 다투기 쉽다고 평가하면서도, 후보들의 겉모습과 속마음은 다를 수 있다고 Traveler에게 경고하고 함께 살펴보자고 권했으며, 결국 차분한 Zhiyi를 선택했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "야란은 건위를 혁신적이나 다투기 쉽다고 평가하면서도, 후보들의 겉모습과 속마음은 다를 수 있다고 여행자에게 경고하고 함께 살펴보자고 권했으며, 결국 차분한 지언을 선택했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C10",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Calculated Gambit"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Uncle Tian",
+       "revision": 1494110,
+       "section": "Profile",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 천추 선정",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Tianshu 선정",
+     "status": "accepted",
+     "note": "",
+     "quote": "It's him alright. Looks like he's chatting with Linlang, ... Come on, let's follow them and listen in.",
+     "sentences": [
+      {
+       "t_raw": "Wupei가 행방불명이 되자 Yelan은 직접 나섰고, Linlang과 이야기하는 Zhiyi를 포착해 Traveler와 함께 엿들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무패가 행방불명이 되자 야란은 직접 나섰고, 임랑과 이야기하는 지언을 포착해 여행자와 함께 엿들었다."
+      },
+      {
+       "t_raw": "그녀는 Zhiyi의 **Qingxu Pool 재개발 계획**이 Blackcliff Forge의 비밀 폭약으로 Fatui가 유적 보물을 노리는 구실임을 밝혀냈고, Zhiyi가 Yusupov에게 등을 돌린 뒤 Qingxu Pool 지하 유적에서 공모자들을 붙잡았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 지언의 **청허포 재개발 계획**이 흑암 공장의 비밀 폭약으로 우인단이 유적 보물을 노리는 구실임을 밝혀냈고, 지언이 유수포프에게 등을 돌린 뒤 청허포 지하 유적에서 공모자들을 붙잡았다."
+      },
+      {
+       "t_raw": "Yelan은 Zhiyi의 거짓 알리바이를 눈치챈 뒤 그의 경계를 풀기 위해 일부러 승자로 선언했고, Zhiyi가 Fatui를 속이고 있음을 안 뒤 그에게 협력을 제안했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 지언의 거짓 알리바이를 눈치챈 뒤 그의 경계를 풀기 위해 일부러 승자로 선언했고, 지언이 우인단을 속이고 있음을 안 뒤 그에게 협력을 제안했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C10",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Calculated Gambit"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Qingxu Pool",
+       "revision": 1264721,
+       "section": "Lore",
+       "paragraph": "M6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Candidature Analysis"
+        },
+        {
+         "type": "quest",
+         "name": "Foregone Conclusion"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": null,
+       "paragraph": "M15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Candidature Analysis",
+       "quest_ko": "얼굴로는 알 수 없는 사람의 속마음",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 천추 선정",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Tianshu 선정",
+     "status": "accepted",
+     "note": "",
+     "quote": "Given that Pantalone still has his eyes on Liyue, Yelan plans on using this as the basis for her next mission.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 Theofan을 붙잡으려 했으나 Pantalone이 끼어들어 그를 Liyue 밖으로 빼돌렸고, 이에 아쉬움을 표했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 테오판을 붙잡으려 했으나 판탈로네가 끼어들어 그를 리월 밖으로 빼돌렸고, 이에 아쉬움을 표했다."
+      },
+      {
+       "t_raw": "Pantalone이 Calculated Gambit에 직접 관여하지 않았음에도 Uncle Tian 암살과 Zhiyi를 새 Tianshu로 세우려는 계획이 실패한 뒤 상황을 주시했고, 이번 사건이 Yelan의 **다음 임무의 단서**가 된다는 점에서 이 선정은 Liyue 안팎의 정보전으로 번진 사건이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "판탈로네가 계산된 수에 직접 관여하지 않았음에도 천추 아저씨 암살과 지언을 새 천추로 세우려는 계획이 실패한 뒤 상황을 주시했고, 이번 사건이 야란의 **다음 임무의 단서**가 된다는 점에서 이 선정은 리월 안팎의 정보전으로 번진 사건이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C10",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Calculated Gambit"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Pantalone",
+       "revision": 2045217,
+       "section": "Story > Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Foregone Conclusion"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 천추 선정",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite와 Liyue의 사건들",
+     "status": "accepted",
+     "note": "",
+     "quote": "During a Lantern Rite, Yelan was investigating a string of burglaries that involved an ancient tune to intimidate people into fleeing without a fight.",
+     "sentences": [
+      {
+       "t_raw": "한 Lantern Rite 기간에 Yelan은 **고대의 곡조**로 사람들을 위협해 싸움 없이 달아나게 만든 연쇄 도난 사건을 조사했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 해등절 기간에 야란은 **고대의 곡조**로 사람들을 위협해 싸움 없이 달아나게 만든 연쇄 도난 사건을 조사했다."
+      },
+      {
+       "t_raw": "Traveler의 도움으로 용의자 Fujing을 붙잡았고, Yelan은 그가 한때 마비되었던 공포를 이용했다고 꾸짖은 뒤 정직한 삶을 살 수도 있었다는 힌트를 주고 구금했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자의 도움으로 용의자 부경을 붙잡았고, 야란은 그가 한때 마비되었던 공포를 이용했다고 꾸짖은 뒤 정직한 삶을 살 수도 있었다는 힌트를 주고 구금했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C11",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Thousand Miles for an Enigmatic Tune"
+        }
+       ]
+      }
+     ],
+     "heading": "작중 행적 — 해등절과 리월의 사건들",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite와 Liyue의 사건들",
+     "status": "accepted",
+     "note": "The English does not say the village's proximity caused the elderly residents' vulnerability.",
+     "quote": "But the village isn't far from here, and the elderly residents are particularly vulnerable, which is why they've borne the brunt of it.",
+     "sentences": [
+      {
+       "t_raw": "또 다른 Lantern Rite에서는 Qingce Village에 기이한 집단 발병이 일어나 Yelan이 조사했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또 다른 해등절에서는 경책 산장에 기이한 집단 발병이 일어나 야란이 조사했다."
+      },
+      {
+       "t_raw": "Yelan은 마을이 멀지 않은데다 고령 주민들이 특히 취약해 그들이 가장 큰 피해를 봤다고 말했고, 사태는 비정상적인 fetor 성장 때문임이 밝혀졌다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "야란은 마을이 멀지 않은데다 고령 주민들이 특히 취약해 그들이 가장 큰 피해를 봤다고 말했고, 사태는 비정상적인 악취 성장 때문임이 밝혀졌다.",
+       "polish": {
+        "from": "야란은 마을이 멀지 않은데다 고령 주민들이 특히 취약해 그들이 가장 큰 피해를 봤다고 말했고, 사태는 비정상적인 fetor 성장 때문임이 밝혀졌다.",
+        "text": "야란은 마을이 멀지 않은데다 고령 주민들이 특히 취약해 그들이 가장 큰 피해를 봤다고 말했고, 사태는 비정상적인 악취 성장 때문임이 밝혀졌다.",
+        "by": "claude-sonnet"
+       }
+      },
+      {
+       "t_raw": "Ningguang은 Yelan에게 국경 지역으로 들어가라는 임무를 맡겼지만, Traveler의 도착으로 국경행은 벌어지지 않았고 계획을 바꿔 The Chasm의 Gate of Injury로 보냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 야란에게 국경 지역으로 들어가라는 임무를 맡겼지만, 여행자의 도착으로 국경행은 벌어지지 않았고 계획을 바꿔 층암거연의 부상의 문으로 보냈다.",
+       "polish": {
+        "from": "응광은 야란에게 국경 지역으로 들어가라는 임무를 맡겼지만, 여행자의 도착으로 국경행은 벌어지지 않았고 계획을 바꿔 층암거연의 Gate of Injury로 보냈다.",
+        "text": "응광은 야란에게 국경 지역으로 들어가라는 임무를 맡겼지만, 여행자의 도착으로 국경행은 벌어지지 않았고 계획을 바꿔 층암거연의 Gate of Injury로 보냈다.",
+        "by": "claude-sonnet"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C13",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Funeral Parlor Has No Master, Yujing Terrace Calls the Troops"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Funeral Parlor Has No Master, Yujing Terrace Calls the Troops",
+       "quest_ko": "왕생당 당주 실종 사흘째・움직이는 옥경대",
+       "version": "5.3",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Final Stanza: The Sanctification of Tao Dou",
+       "quest_ko": "종막·팔기연도도",
+       "version": "5.3",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 해등절과 리월의 사건들",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite와 Liyue의 사건들",
+     "status": "accepted",
+     "note": "The Korean attributes the assessment of the weakened disturbance to the Traveler; Q12 has Yelan make that assessment.",
+     "quote": "So, unless we target the deepest recesses of this domain and defeat all the monsters lurking within, this battle could drag on forever.",
+     "sentences": [
+      {
+       "t_raw": "Qiongji Estuary에서 **Ley Line 이상 현상**이 발생하자 Yelan은 Keqing과 함께 조사에 들어갔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경기 들판에서 **지맥 이상 현상**이 발생하자 야란은 각청과 함께 조사에 들어갔다."
+      },
+      {
+       "t_raw": "안으로 들어갈수록 일행은 약해지고 몬스터는 더 강해졌으며, Yelan은 가장 깊은 곳을 공략해 그 안에 숨은 몬스터를 모두 물리치지 않으면 싸움이 끝없이 이어질 수 있다고 보았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "안으로 들어갈수록 일행은 약해지고 몬스터는 더 강해졌으며, 야란은 가장 깊은 곳을 공략해 그 안에 숨은 몬스터를 모두 물리치지 않으면 싸움이 끝없이 이어질 수 있다고 보았다."
+      },
+      {
+       "t_raw": "Adventurers' Guild의 연락을 받은 Traveler가 도착해 적의 무리를 진압하는 것을 도왔고, Yelan은 근본 원인은 없애지 못했지만 Ley Line 교란이 상당히 약해졌다고 평가했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "모험가 길드의 연락을 받은 여행자가 도착해 적의 무리를 진압하는 것을 도왔고, 야란은 근본 원인은 없애지 못했지만 지맥 교란이 상당히 약해졌다고 평가했다."
+      },
+      {
+       "t_raw": "Ningguang의 지시로 Lu Xiangxiang이라는 환자를 조사하기도 했는데, 자신이 맡고 있는 사건의 작은 장애물에 불과하다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광의 지시로 노향향이라는 환자를 조사하기도 했는데, 자신이 맡고 있는 사건의 작은 장애물에 불과하다고 말했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C14",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Tumult Subduer"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Tumult Subduer",
+       "quest_ko": "지맥 제압전",
+       "version": "5.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Defensive Strategy",
+       "quest_ko": "방어 계획",
+       "version": "5.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Realm of Rocks",
+       "quest_ko": "바위 속 유리",
+       "version": "Luna IV",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 해등절과 리월의 사건들",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Fontaine",
+     "status": "accepted",
+     "note": "All sentences are supported or reasonable interpretations.",
+     "quote": "Having had some time to spare, Yelan attempted to take a vacation in Fontaine but these plans were derailed when a crime syndicate began using Liyue goods in the black market.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 잠시 여유가 생겨 Fontaine에서 휴가를 보내려 했지만, 범죄 조직이 암시장에서 Liyue 물품을 쓰기 시작하면서 그 계획이 어긋난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 잠시 여유가 생겨 폰타인에서 휴가를 보내려 했지만, 범죄 조직이 암시장에서 리월 물품을 쓰기 시작하면서 그 계획이 어긋난다."
+      },
+      {
+       "t_raw": "그녀는 Edler와 협력해 두 달에 걸쳐 **Rovere Pellicia**의 조직 대부분을 파괴한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 에들러와 협력해 두 달에 걸쳐 **로베레·펠리치아**의 조직 대부분을 파괴한다."
+      },
+      {
+       "t_raw": "현장 정리에 며칠이 더 걸릴 것이라고 말하면서도 상대에게는 휴식을 권하는 여유를 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현장 정리에 며칠이 더 걸릴 것이라고 말하면서도 상대에게는 휴식을 권하는 여유를 보인다."
+      },
+      {
+       "t_raw": "휴가가 뒤틀린 자리에 조직 하나를 무너뜨리는 소탕 작전이 들어선 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "휴가가 뒤틀린 자리에 조직 하나를 무너뜨리는 소탕 작전이 들어선 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C12",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Covert Investigation, Dirty Money Misdeeds (Part 3)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Covert Investigation, Dirty Money Misdeeds (Part 1)",
+       "quest_ko": "검은돈 비밀 수사",
+       "version": "5.8",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 폰타인",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Fontaine",
+     "status": "accepted",
+     "note": "The auction was an intermediate destination, not the investigation's endpoint. The case concluded after Rovere's capture outside the Court of Fontaine.",
+     "quote": "The day after we infiltrated the storage facility, the Dark Financier's two lackeys, Corder and Doddamani, started moving the goods.",
+     "sentences": [
+      {
+       "t_raw": "수사는 Liyue와 Fontaine 양쪽에 걸쳐 진행되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수사는 리월과 폰타인 양쪽에 걸쳐 진행되었다."
+      },
+      {
+       "t_raw": "창고 시설에 잠입한 다음 날, Dark Financier의 부하 Corder와 Doddamani가 물건을 옮기기 시작했고, 화물 일부에서는 뜻을 알 수 없는 표식이 발견되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "창고 시설에 잠입한 다음 날, 어둠의 금융업자의 부하 코더와 도다마니가 물건을 옮기기 시작했고, 화물 일부에서는 뜻을 알 수 없는 표식이 발견되었다."
+      },
+      {
+       "t_raw": "손실을 줄이려던 Dark Financier는 Treasure Hoarder인 Scamface를 고용해 배를 폭파하려 했으나, 그 계획은 Traveler와 Yelan에 의해 저지되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "손실을 줄이려던 어둠의 금융업자는 보물 사냥단인 사기광을 고용해 배를 폭파하려 했으나, 그 계획은 여행자와 야란에 의해 저지되었다."
+      },
+      {
+       "t_raw": "수사 도중 Hotel Debord에서 경매가 열릴 예정이었으며, 사건은 Court of Fontaine 외곽에서 Rovere를 체포한 뒤에야 마무리되었다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "수사 도중 드보르 호텔에서 경매가 열릴 예정이었으며, 사건은 폰타인성 외곽에서 로베레를 체포한 뒤에야 마무리되었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C12",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Covert Investigation, Dirty Money Misdeeds (Part 3)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Covert Investigation, Dirty Money Misdeeds (Part 2)",
+       "quest_ko": "검은돈 비밀 수사",
+       "version": "5.8",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Covert Investigation, Dirty Money Misdeeds (Part 3)",
+       "quest_ko": "검은돈 비밀 수사",
+       "version": "5.8",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Covert Investigation, Dirty Money Misdeeds (Part 2)",
+       "quest_ko": "검은돈 비밀 수사",
+       "version": "5.8",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 폰타인",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Fontaine",
+     "status": "accepted",
+     "note": "All sentences are supported or reasonable interpretations.",
+     "quote": "Yelan fought Rovere and his Clockwork Meka alone, successfully defeating him and coldly castigated him as a nobody who would rot away in a cell for the rest of his life.",
+     "sentences": [
+      {
+       "t_raw": "경매가 다가오자 Yelan은 **Tranquil Banquet**로 옷을 갈아입고 참석자들을 감시하며 Diderot이라는 인물에 주목한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경매가 다가오자 야란은 **고요한 밤의 연회**로 옷을 갈아입고 참석자들을 감시하며 디터라는 인물에 주목한다."
+      },
+      {
+       "t_raw": "그 차림에는 Ororon을 닮은 은색 장식이 있고, 그녀는 특별한 자리를 위해 Fontaine 분위기가 나는 옷을 골랐다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 차림에는 올로룬을 닮은 은색 장식이 있고, 그녀는 특별한 자리를 위해 폰타인 분위기가 나는 옷을 골랐다고 말한다."
+      },
+      {
+       "t_raw": "평범한 피해자에 불과했던 Diderot은 용의자들이 정리된 뒤 자신의 상사를 Yelan에게 데려오기로 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "평범한 피해자에 불과했던 디터는 용의자들이 정리된 뒤 자신의 상사를 야란에게 데려오기로 한다."
+      },
+      {
+       "t_raw": "Court of Fontaine 외곽에서 대면한 Rovere는 자신의 삶을 파괴했다며 분노하고, Yelan은 그와 그의 Clockwork Meka를 혼자 상대해 물리친 뒤 평생 감옥에서 썩을 무명씨라고 냉정하게 꾸짖는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인성 외곽에서 대면한 로베레는 자신의 삶을 파괴했다며 분노하고, 야란은 그와 그의 태엽 장치를 혼자 상대해 물리친 뒤 평생 감옥에서 썩을 무명씨라고 냉정하게 꾸짖는다."
+      },
+      {
+       "t_raw": "두 달에 걸친 소탕이 남긴 원망과 그에 맞선 냉정이 마주친 장면인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 달에 걸친 소탕이 남긴 원망과 그에 맞선 냉정이 마주친 장면인 셈이다."
+      },
+      {
+       "t_raw": "Edler와 Gardes 두 명이 그를 인수하면서 사건은 막을 내린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에들러와 경비대원 두 명이 그를 인수하면서 사건은 막을 내린다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C12",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Covert Investigation, Dirty Money Misdeeds (Part 3)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 1818761,
+       "section": "Appearance > Liyue",
+       "paragraph": "M12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Covert Investigation, Dirty Money Misdeeds (Part 3)",
+       "quest_ko": "검은돈 비밀 수사",
+       "version": "5.8",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 폰타인",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Nod-Krai 이후",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "She went with Beidou to Nasha Town in order to find the supplier, running into Chevreuse, who was also looking for the mastermind.",
+     "sentences": [
+      {
+       "t_raw": "Nod-Krai에서 벌어진 퀘스트 시리즈가 끝난 뒤, Yelan에게는 고급 무기로 무장한 국제 신디케이트를 해체하는 임무가 맡겨졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노드크라이에서 벌어진 퀘스트 시리즈가 끝난 뒤, 야란에게는 고급 무기로 무장한 국제 신디케이트를 해체하는 임무가 맡겨졌다."
+      },
+      {
+       "t_raw": "그 조직은 Fontaine과 Liyue 곳곳에서 습격을 벌여 당국이 진압하지 못할 정도였고, 그녀는 공급책을 찾기 위해 Beidou와 함께 Nasha Town으로 향했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 조직은 폰타인과 리월 곳곳에서 습격을 벌여 당국이 진압하지 못할 정도였고, 그녀는 공급책을 찾기 위해 북두와 함께 나샤 마을로 향했다."
+      },
+      {
+       "t_raw": "Beidou는 화물을 챙기느라 Yelan이 배에 타고 있었다는 사실을 미처 말하지 못했다고 털어놓았고, Yelan 자신은 일 때문에 온 것이며 Beidou 선장이 친절하게 태워줬을 뿐이라며 자신을 엑스포에 등록할 필요는 없다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북두는 화물을 챙기느라 야란이 배에 타고 있었다는 사실을 미처 말하지 못했다고 털어놓았고, 야란 자신은 일 때문에 온 것이며 북두 선장이 친절하게 태워줬을 뿐이라며 자신을 엑스포에 등록할 필요는 없다고 말했다."
+      },
+      {
+       "t_raw": "Nasha Town에서 배후를 쫓던 중 그녀는 같은 목적으로 움직이던 Chevreuse와 마주쳤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나샤 마을에서 배후를 쫓던 중 그녀는 같은 목적으로 움직이던 슈브르즈와 마주쳤다."
+      },
+      {
+       "t_raw": "먼저 기계를 다루는 Aino를 의심했지만, 상황을 이해하지 못할 만큼 당황해 있는 모습이 확인되면서 그녀와 Chevreuse는 Aino를 후보에서 지웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "먼저 기계를 다루는 아이노를 의심했지만, 상황을 이해하지 못할 만큼 당황해 있는 모습이 확인되면서 그녀와 슈브르즈는 아이노를 후보에서 지웠다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C15",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Commission From the Curatorium of Secrets (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "Encirclement of Bullets and Silk (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "Toys for the Children (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Infamous Merc Captain",
+       "quest_ko": "바다를 종횡무진하는 용병계의 거물",
+       "version": "Luna VI",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Infamous Merc Captain",
+       "quest_ko": "바다를 종횡무진하는 용병계의 거물",
+       "version": "Luna VI",
+       "speaker": "Beidou"
+      }
+     ],
+     "heading": "작중 행적 — 노드크라이 이후",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Nod-Krai 이후",
+     "status": "trimmed",
+     "note": "The material does not establish that the authorities planned together in one place or that Yelan's anticipation made their coordination smoother.",
+     "quote": "Using a pincer trap, both the Liyue and Fontanian authorities managed to capture a large amount of spies, but they soon discovered that the prototype ballistae had been stolen.",
+     "sentences": [
+      {
+       "t_raw": "세 사람이 모인 자리에 Traveler가 들어왔고, 이 일을 Nefer에게 보고해야 한다고 전했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "세 사람이 모인 자리에 여행자가 들어왔고, 이 일을 네페르에게 보고해야 한다고 전했다."
+      },
+      {
+       "t_raw": "Yelan은 함께 가기로 했는데, Nefer가 애초에 이런 상황을 예상했을 것이라고 짐작하고 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 함께 가기로 했는데, 네페르가 애초에 이런 상황을 예상했을 것이라고 짐작하고 있었다."
+      },
+      {
+       "t_raw": "Nefer는 엑스포에서 사람들을 체포하게 해줄 수는 없지만, 엑스포의 관할 밖에서 흥정한다면 형식상 가능하다고 알려줬다.",
+       "interp": false,
+       "dropped": false,
+       "t": "네페르는 엑스포에서 사람들을 체포하게 해줄 수는 없지만, 엑스포의 관할 밖에서 흥정한다면 형식상 가능하다고 알려줬다."
+      },
+      {
+       "t_raw": "Yelan이 Nefer의 셈을 미리 읽고 응했기에, Liyue와 Fontaine의 당국이 한자리에서 같은 작전을 짜는 구도가 비교적 매끄럽게 만들어졌다고 볼 수 있다.",
+       "interp": true,
+       "dropped": true,
+       "t": "야란이 네페르의 셈을 미리 읽고 응했기에, 리월과 폰타인의 당국이 한자리에서 같은 작전을 짜는 구도가 비교적 매끄럽게 만들어졌다고 볼 수 있다."
+      },
+      {
+       "t_raw": "작전을 앞두고 Yelan은 위험은 통제할 수 있다면서도, 상대의 계획을 그대로 따랐다면 첩자 한 명도 빠져나가지 않는다고 장담할 수 있겠느냐고 되물었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "작전을 앞두고 야란은 위험은 통제할 수 있다면서도, 상대의 계획을 그대로 따랐다면 첩자 한 명도 빠져나가지 않는다고 장담할 수 있겠느냐고 되물었다."
+      },
+      {
+       "t_raw": "Liyue와 Fontaine 당국은 협공으로 다수의 첩자를 붙잡았지만, 그 과정에서 시제 prototype ballistae가 도난당한 사실이 드러났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월과 폰타인 당국은 협공으로 다수의 첩자를 붙잡았지만, 그 과정에서 시제 프로토타입 발리스타가 도난당한 사실이 드러났다.",
+       "polish": {
+        "from": "리월과 폰타인 당국은 협공으로 다수의 첩자를 붙잡았지만, 그 과정에서 시제 prototype ballistae가 도난당한 사실이 드러났다.",
+        "text": "리월과 폰타인 당국은 협공으로 다수의 첩자를 붙잡았지만, 그 과정에서 시제 프로토타입 발리스타가 도난당한 사실이 드러났다.",
+        "by": "claude-sonnet"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C15",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Commission From the Curatorium of Secrets (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "Encirclement of Bullets and Silk (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "Toys for the Children (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Encirclement of Bullets and Silk (Quest)",
+       "quest_ko": "총과 실의 포위망",
+       "version": "Luna VI",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "작중 행적 — 노드크라이 이후",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Nod-Krai 이후",
+     "status": "accepted",
+     "note": "",
+     "quote": "They met the arms dealers at the meeting point, where she explained to him how weaponry could be repurposed into entertainment, citing fireworks as an example and closing the case.",
+     "sentences": [
+      {
+       "t_raw": "Ashvapati를 의심한 Yelan은 Chevreuse에게 자신이 그를 추적하고, 적절한 때에 Gardes가 그를 체포할 수 있게 하겠다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아슈바티를 의심한 야란은 슈브르즈에게 자신이 그를 추적하고, 적절한 때에 경비대원이 그를 체포할 수 있게 하겠다고 말했다."
+      },
+      {
+       "t_raw": "곧 그의 은신처를 찾아냈고, 그곳에서 Ashvapati에게도 나름의 동기가 있다는 사실이 드러났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "곧 그의 은신처를 찾아냈고, 그곳에서 아슈바티에게도 나름의 동기가 있다는 사실이 드러났다."
+      },
+      {
+       "t_raw": "무기상들과 만나기로 한 장소에서 그녀는 무기가 오락거리로 전용될 수도 있다고 설명하며 폭죽을 예로 들었고, 그렇게 사건은 마무리되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무기상들과 만나기로 한 장소에서 그녀는 무기가 오락거리로 전용될 수도 있다고 설명하며 폭죽을 예로 들었고, 그렇게 사건은 마무리되었다."
+      },
+      {
+       "t_raw": "Fontaine Research Institute가 물건을 직접 팔지 않고 Spina di Rosula를 거쳐 처리한 것은 옳은 판단이었다고 그녀는 평했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인 과학원이 물건을 직접 팔지 않고 가시 장미회를 거쳐 처리한 것은 옳은 판단이었다고 그녀는 평했다."
+      },
+      {
+       "t_raw": "사건이 끝난 뒤 Chevreuse는 Fontaine 당국을 대표해 함께 일할 수 있어서 좋았다고 전했고, Yelan은 할 일이 남아 있다며 먼저 자리를 떴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사건이 끝난 뒤 슈브르즈는 폰타인 당국을 대표해 함께 일할 수 있어서 좋았다고 전했고, 야란은 할 일이 남아 있다며 먼저 자리를 떴다."
+      },
+      {
+       "t_raw": "무기 밀매 사건을 폭죽이라는 오락의 예로 정리한 대목은, 그녀가 무기의 용도를 뒤집어 이야기하는 방식으로 사건을 닫는 인물이라는 인상을 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "무기 밀매 사건을 폭죽이라는 오락의 예로 정리한 대목은, 그녀가 무기의 용도를 뒤집어 이야기하는 방식으로 사건을 닫는 인물이라는 인상을 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C15",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Commission From the Curatorium of Secrets (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "Encirclement of Bullets and Silk (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "Toys for the Children (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "A Commission From the Curatorium of Secrets (Quest)",
+       "quest_ko": "비밀의 집 의뢰",
+       "version": "Luna VI",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Return Home, Children of the Desert",
+       "quest_ko": "고향으로",
+       "version": "Luna VI",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Return Home, Children of the Desert",
+       "quest_ko": "고향으로",
+       "version": "Luna VI",
+       "speaker": "Chevreuse"
+      }
+     ],
+     "heading": "작중 행적 — 노드크라이 이후",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "",
+     "quote": "She employs psychological tactics to catch her targets and get all the information she needs from them.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 표적을 붙잡아 필요한 정보를 전부 얻어내기 위해 **심리전**을 쓴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 표적을 붙잡아 필요한 정보를 전부 얻어내기 위해 **심리전**을 쓴다."
+      },
+      {
+       "t_raw": "Ministry of Civil Affairs 소속이라고 주장하면서도 1년의 대부분을 근무지에서 비우는데, Ningguang은 그런 결근을 용인한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "총무부 소속이라고 주장하면서도 1년의 대부분을 근무지에서 비우는데, 응광은 그런 결근을 용인한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "Profile > Personality",
+       "paragraph": "C2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "",
+     "quote": "The reason for this is because of her physical frailty, a hereditary trait within her family.",
+     "sentences": [
+      {
+       "t_raw": "업무 밖에서 그녀는 느긋하고 태평한 속도로 살며, 틈날 때마다 낮잠을 즐기되 그날의 임무에 맞춰 일정을 조정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "업무 밖에서 그녀는 느긋하고 태평한 속도로 살며, 틈날 때마다 낮잠을 즐기되 그날의 임무에 맞춰 일정을 조정한다."
+      },
+      {
+       "t_raw": "이는 가족 대대로 내려오는 **신체적 허약** 때문이며, 까다로운 사건일수록 모든 일을 한 번에 끝내려 에너지를 아낀다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이는 가족 대대로 내려오는 **신체적 허약** 때문이며, 까다로운 사건일수록 모든 일을 한 번에 끝내려 에너지를 아낀다."
+      },
+      {
+       "t_raw": "낮잠과 일정 조정은 허약한 몸으로 하루를 감당하기 위한 방식인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "낮잠과 일정 조정은 허약한 몸으로 하루를 감당하기 위한 방식인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "Profile > Personality",
+       "paragraph": "C3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "trimmed",
+     "note": "Q1 states that the danger can be controlled; she questions only whether every agent can be prevented from escaping.",
+     "quote": "So, unless we target the deepest recesses of this domain and defeat all the monsters lurking within, this battle could drag on forever.",
+     "sentences": [
+      {
+       "t_raw": "전투에서는 위험을 통제할 수 있는지, 계획대로 밀어붙였을 때 요원 한 명도 빠져나가지 않으리라고 정말 보장할 수 있겠느냐고 되묻는다.",
+       "interp": false,
+       "dropped": true,
+       "t": "전투에서는 위험을 통제할 수 있는지, 계획대로 밀어붙였을 때 요원 한 명도 빠져나가지 않으리라고 정말 보장할 수 있겠느냐고 되묻는다."
+      },
+      {
+       "t_raw": "도메인의 가장 깊은 곳까지 내려가 그 안에 도사리는 몬스터를 전부 처리하지 않으면 싸움이 끝없이 이어질 것이라고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도메인의 가장 깊은 곳까지 내려가 그 안에 도사리는 몬스터를 전부 처리하지 않으면 싸움이 끝없이 이어질 것이라고 본다."
+      },
+      {
+       "t_raw": "근본 원인을 없애지 못했더라도 Ley Line 이변이 상당히 약화된 것은 분명하다고 평하기도 하고, 강력한 공격이 공간 자체에 영향을 줄 수 있다는 가능성을 짐작하고 있었다고 말하기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "근본 원인을 없애지 못했더라도 지맥 이변이 상당히 약화된 것은 분명하다고 평하기도 하고, 강력한 공격이 공간 자체에 영향을 줄 수 있다는 가능성을 짐작하고 있었다고 말하기도 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Encirclement of Bullets and Silk (Quest)",
+       "quest_ko": "총과 실의 포위망",
+       "version": "Luna VI",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Tumult Subduer",
+       "quest_ko": "지맥 제압전",
+       "version": "5.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Defensive Strategy",
+       "quest_ko": "방어 계획",
+       "version": "5.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "End of the Line (Quest)",
+       "quest_ko": "막다른 골목",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "",
+     "quote": "She continues to wear the remaining bracelet as an accessory and it glows when she uses her Vision.",
+     "sentences": [
+      {
+       "t_raw": "Keqing은 그녀가 어디서 정보를 얻는지 의아해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "각청은 그녀가 어디서 정보를 얻는지 의아해한다."
+      },
+      {
+       "t_raw": "집안에 전해진, 통신 주문이 새겨진 한 쌍의 팔찌 가운데 하나는 Pantalone의 밀무역로를 조사하다 잃었고, 남은 하나는 장신구로 계속 착용하며 Vision을 쓰면 빛난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "집안에 전해진, 통신 주문이 새겨진 한 쌍의 팔찌 가운데 하나는 판탈로네의 밀무역로를 조사하다 잃었고, 남은 하나는 장신구로 계속 착용하며 신의 눈을 쓰면 빛난다."
+      },
+      {
+       "t_raw": "그녀의 Vision 아래에는 옅은 푸른색 밧줄이 달려 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀의 신의 눈 아래에는 옅은 푸른색 밧줄이 달려 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "Profile > Personality",
+       "paragraph": "C2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Exorcist",
+       "revision": 1208568,
+       "section": "Known Exorcist Clans > Yelan's Clan",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yelan"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 1818761,
+       "section": "Appearance > Customized Visions",
+       "paragraph": "M11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The material does not establish special authority based on both Ningguang’s and Keqing’s trust, or that complete trust was necessary.",
+     "quote": "Despite this, Ningguang tolerates her general absence while Keqing appreciates her work, although the latter wonders as to where she gets her intelligence from.",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 Yelan의 장기간 불출근을 관용하고, Keqing은 그녀의 성과를 높이 평가하며 정보 출처를 궁금해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 야란의 장기간 불출근을 관용하고, 각청은 그녀의 성과를 높이 평가하며 정보 출처를 궁금해한다."
+      },
+      {
+       "t_raw": "Ningguang과의 계약을 통해 Yelan은 국가 안보를 위해 활동하며, Liyue 내외를 감시하는 거대 정보망을 구축했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광과의 계약을 통해 야란은 국가 안보를 위해 활동하며, 리월 내외를 감시하는 거대 정보망을 구축했다."
+      },
+      {
+       "t_raw": "그 정보망은 Northern Intelligence Network가 Liyue에 뿌리내리는 것을 막았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 정보망은 북대륙 정보망이 리월에 뿌리내리는 것을 막았다."
+      },
+      {
+       "t_raw": "이는 Yelan이 Ningguang에게 직접 보고하며 후방에서 국가 안보를 다루는, 상관의 두터운 신임에 따른 특별한 권한으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "이는 야란이 응광에게 직접 보고하며 후방에서 국가 안보를 다루는, 상관의 두터운 신임에 따른 특별한 권한으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "Profile > Personality",
+       "paragraph": "C2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Past",
+       "paragraph": "C7",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Yelan: Motives and Means"
+        },
+        {
+         "type": "cs",
+         "name": "Nefer"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "While the Traveler does not see her at first, Yelan tracked them into the depths of The Chasm, saving them from a Ruin Serpent by firing a charged shot at a crystal above it.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 Traveler를 The Chasm 깊은 곳까지 추적했고, Ruin Serpent가 덮쳤을 때 Celestial Nail을 노려 발사하여 그들을 구했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 여행자를 층암거연 깊은 곳까지 추적했고, 유적의 뱀이 덮쳤을 때 하늘의 못을 노려 발사하여 그들을 구했다."
+      },
+      {
+       "t_raw": "문 앞에서 그녀는 Ningguang과의 일로 인해 자신의 비밀이 드러날 수 있다며 들어가기를 거부했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문 앞에서 그녀는 응광과의 일로 인해 자신의 비밀이 드러날 수 있다며 들어가기를 거부했다."
+      },
+      {
+       "t_raw": "이후 **Xiao와의 협력**으로 Fantastic Compass의 에너지를 조작해 모두를 지상으로 탈출시켰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 **소와의 협력**으로 「태위 나침반」의 에너지를 조작해 모두를 지상으로 탈출시켰다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Wherefore Did the Spiritstone Descend?"
+        },
+        {
+         "type": "quest",
+         "name": "The Unexpected Guest"
+        },
+        {
+         "type": "quest",
+         "name": "Danger All Around"
+        },
+        {
+         "type": "quest",
+         "name": "At Tunnel's End, Light"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "trimmed",
+     "note": "(0) Beidou provided a ride; Yelan did not borrow her ship. (1) The reporting arrangement is changed: Yelan agreed to accompany those reporting them to Nefer. (4) The material does not characterize Chevreuse and Beidou as rival collaborators or establish information bargaining across all three relationships. (5) Beidou forgot to mention Yelan because she was busy with cargo, not because Yelan's presence had become familiar.",
+     "quote": ", Yelan, on behalf of the Fontaine authorities, it has been a pleasure working with you both. I wish you all the best.",
+     "sentences": [
+      {
+       "t_raw": "Nod-Krai 사건 이후 Yelan은 Beidou가 태워준 배를 타고 Nasha Town으로 향했고, 거기서 무기 공급자를 쫓던 Chevreuse와 만났다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "노드크라이 사건 이후 야란은 북두가 태워준 배를 타고 나샤 마을로 향했고, 거기서 무기 공급자를 쫓던 슈브르즈와 만났다."
+      },
+      {
+       "t_raw": "Aino를 의심했으나 공범이 아님을 확인했고, Traveler가 나타나자 세 사람은 Nefer에게 보고하기로 했다.",
+       "interp": false,
+       "dropped": true,
+       "t": "아이노를 의심했으나 공범이 아님을 확인했고, 여행자가 나타나자 세 사람은 네페르에게 보고하기로 했다."
+      },
+      {
+       "t_raw": "Nefer는 Yelan과 Chevreuse를 반갑게 맞이했고, 엑스포 밖에서 거래하면 인수가 가능하다는 조건을 제시해 양국 당국이 스파이를 포획하도록 도왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "네페르는 야란과 슈브르즈를 반갑게 맞이했고, 엑스포 밖에서 거래하면 인수가 가능하다는 조건을 제시해 양국 당국이 스파이를 포획하도록 도왔다."
+      },
+      {
+       "t_raw": "과거 Yelan은 Northern Intelligence Network가 Liyue에 뿌리내리지 못하도록 막았지만, Nefer는 Yelan이 정보를 값비싸게 사들였기에 앙심을 품지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "과거 야란은 북대륙 정보망이 리월에 뿌리내리지 못하도록 막았지만, 네페르는 야란이 정보를 값비싸게 사들였기에 앙심을 품지 않았다."
+      },
+      {
+       "t_raw": "이처럼 적대적 경쟁자와 협력자의 경계에 서 있는 **Nefer·Chevreuse·Beidou**의 관계는, Yelan이 이해관계를 정보와 교환 조건으로 조율하는 인물임을 보여주는 사례로 보인다.",
+       "interp": true,
+       "dropped": true,
+       "t": "이처럼 적대적 경쟁자와 협력자의 경계에 서 있는 **네페르·슈브르즈·북두**의 관계는, 야란이 이해관계를 정보와 교환 조건으로 조율하는 인물임을 보여주는 사례로 보인다."
+      },
+      {
+       "t_raw": "Chevreuse는 임무가 끝난 뒤 Yelan에게 Fontaine 당국을 대표해 협력에 감사를 표했고, Beidou는 화물 처리에 바빠 Yelan이 함께 배에 탑승한 사실을 언급하는 것을 잊었다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "슈브르즈는 임무가 끝난 뒤 야란에게 폰타인 당국을 대표해 협력에 감사를 표했고, 북두는 화물 처리에 바빠 야란이 함께 배에 탑승한 사실을 언급하는 것을 잊었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C15",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "A Commission From the Curatorium of Secrets (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "Encirclement of Bullets and Silk (Quest)"
+        },
+        {
+         "type": "quest",
+         "name": "Toys for the Children (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Nefer/Storyline",
+       "revision": 2050193,
+       "section": "History > Past",
+       "paragraph": "M5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Yelan: Motives and Means"
+        },
+        {
+         "type": "vo",
+         "name": "Nefer"
+        },
+        {
+         "type": "quest",
+         "name": "Special Operation"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "A Commission From the Curatorium of Secrets (Quest)",
+       "quest_ko": "비밀의 집 의뢰",
+       "version": "Luna VI",
+       "speaker": "Nefer"
+      },
+      {
+       "kind": "quest",
+       "quest": "Return Home, Children of the Desert",
+       "quest_ko": "고향으로",
+       "version": "Luna VI",
+       "speaker": "Chevreuse"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Infamous Merc Captain",
+       "quest_ko": "바다를 종횡무진하는 용병계의 거물",
+       "version": "Luna VI",
+       "speaker": "Beidou"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The facts are supported, and the interpretation reasonably connects her assistants and network to her elusive presence.",
+     "quote": "I work for Miss Yelan, and you're her absolute, top-tier, number-one guests. I don't even need to tell you how close that makes us, right?",
+     "sentences": [
+      {
+       "t_raw": "Yelan의 측근 조력자로는 Wenyuan, Shanghua, Wupei가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란의 측근 조력자로는 문연, 상화, 무패가 있다."
+      },
+      {
+       "t_raw": "Wenyuan은 입소문으로 정보를 모으고, Shanghua는 거래를 통해 정보를 얻으며, Wupei는 동료들에게 놀림받는 '육체파'이지만 모두 신임받는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문연은 입소문으로 정보를 모으고, 상화는 거래를 통해 정보를 얻으며, 무패는 동료들에게 놀림받는 '육체파'이지만 모두 신임받는 인물이다."
+      },
+      {
+       "t_raw": "Blue Bolt 역시 Yelan을 위해 일하며, 그녀의 손님들을 최고의 귀빈으로 여기고 친근하게 대했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "청정 역시 야란을 위해 일하며, 그녀의 손님들을 최고의 귀빈으로 여기고 친근하게 대했다."
+      },
+      {
+       "t_raw": "이들은 Yelan의 정보망을 실제로 움직이는 발이 되어, 그녀가 직접 나서지 않아도 사건의 중심에 있는 듯한 환상을 가능하게 하는 핵심 인력인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이들은 야란의 정보망을 실제로 움직이는 발이 되어, 그녀가 직접 나서지 않아도 사건의 중심에 있는 듯한 환상을 가능하게 하는 핵심 인력인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Past",
+       "paragraph": "C7",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Yelan: Motives and Means"
+        },
+        {
+         "type": "cs",
+         "name": "Nefer"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Wenyuan",
+       "revision": 783045,
+       "section": null,
+       "paragraph": "M13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Shanghua",
+       "revision": 782918,
+       "section": null,
+       "paragraph": "M14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wupei",
+       "revision": 783047,
+       "section": null,
+       "paragraph": "M15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Stronghold Guard: Hoard Guard Unit!",
+       "quest_ko": "거점 경비병・문지기 군단!",
+       "version": "Luna V",
+       "speaker": "Blue Bolt"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences fairly restate the English.",
+     "quote": "Who does she want to help? When will she tell the truth?",
+     "sentences": [
+      {
+       "t_raw": "곤란에 빠진 이들은 Yelan이 자신들을 돕거나 아군이 되기를 바라지만, 그들의 상대도 같은 생각을 품는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "곤란에 빠진 이들은 야란이 자신들을 돕거나 아군이 되기를 바라지만, 그들의 상대도 같은 생각을 품는다."
+      },
+      {
+       "t_raw": "각자는 서로 다른 이름과 신분으로 나타난 Yelan과의 협력을 기대하면서도 진실을 모른 채 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "각자는 서로 다른 이름과 신분으로 나타난 야란과의 협력을 기대하면서도 진실을 모른 채 남는다."
+      },
+      {
+       "t_raw": "그녀가 누구를 돕고 언제 진실을 말할지는 풀리지 않은 물음이며, 개입하면 무엇도 믿을 수 없게 되고 진실을 말할 때 답을 갈망하는 이들이 들을 기회를 얻지 못할 수도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀가 누구를 돕고 언제 진실을 말할지는 풀리지 않은 물음이며, 개입하면 무엇도 믿을 수 없게 되고 진실을 말할 때 답을 갈망하는 이들이 들을 기회를 얻지 못할 수도 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Profile",
+       "revision": 2090000,
+       "section": "Official Introduction",
+       "paragraph": "B8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The facts and the interpretation of an ongoing confrontation are supported.",
+     "quote": "Given that Pantalone still has his eyes on Liyue, Yelan plans on using this as the basis for her next mission.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 Pantalone에 대한 작전 중 Fascinating Bracelet 한 쌍 가운데 하나를 잃어 통신 기능을 상실했고, Pantalone이 Tsaritsa에게 선물하려던 고대 짐승의 털 로브를 훔쳐 손실을 메웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 판탈로네에 대한 작전 중 매혹의 팔찌 한 쌍 가운데 하나를 잃어 통신 기능을 상실했고, 판탈로네가 얼음의 여왕에게 선물하려던 고대 짐승의 털 로브를 훔쳐 손실을 메웠다."
+      },
+      {
+       "t_raw": "나중에 Pantalone은 Theofan을 Liyue 밖으로 빼내 Yelan이 그를 장기말로 삼기 전에 데려갔고, Liyue를 여전히 주시하는 Pantalone에 맞서 Yelan은 이 일을 다음 임무의 근거로 삼을 계획이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나중에 판탈로네는 테오판을 리월 밖으로 빼내 야란이 그를 장기말로 삼기 전에 데려갔고, 리월을 여전히 주시하는 판탈로네에 맞서 야란은 이 일을 다음 임무의 근거로 삼을 계획이다."
+      },
+      {
+       "t_raw": "Pantalone과의 대결은 한 번의 작전으로 끝나지 않은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "판탈로네과의 대결은 한 번의 작전으로 끝나지 않은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Past",
+       "paragraph": "C6",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yelan"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Pantalone",
+       "revision": 2045217,
+       "section": "Story > Present Day",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Foregone Conclusion"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All facts are stated, and the interpretation reasonably summarizes the remaining uncertainty.",
+     "quote": "That's their voices from when they made the seal. Bosacius and my ancestor... they sealed off this space at the top together.",
+     "sentences": [
+      {
+       "t_raw": "가문의 기술이 지금도 얼마나 쓰이는지, Yelan 외에 구성원이 있는지조차 분명하지 않다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가문의 기술이 지금도 얼마나 쓰이는지, 야란 외에 구성원이 있는지조차 분명하지 않다."
+      },
+      {
+       "t_raw": "남은 Fascinating Bracelet은 장신구로 계속 착용되며 Vision을 쓰면 빛난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "남은 매혹의 팔찌는 장신구로 계속 착용되며 신의 눈을 쓰면 빛난다."
+      },
+      {
+       "t_raw": "조상들은 Yakshas와 함께 싸워 Liyue를 구하다 목숨을 잃었고, Bosacius와 조상이 함께 봉인을 만들었다는 목소리도 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조상들은 야차와 함께 싸워 리월을 구하다 목숨을 잃었고, 부사와 조상이 함께 봉인을 만들었다는 목소리도 남아 있다."
+      },
+      {
+       "t_raw": "봉인과 희생의 흔적은 남았지만 그 기술의 현재는 여전히 밝혀지지 않은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "봉인과 희생의 흔적은 남았지만 그 기술의 현재는 여전히 밝혀지지 않은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Exorcist",
+       "revision": 1208568,
+       "section": "Known Exorcist Clans > Yelan's Clan",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yelan"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Qimen Arts and the Rite of Homa, the Spirits are Calmed and Life Restored",
+       "quest_ko": "퇴치의 기문술・저승을 평정하는 호마",
+       "version": "5.3",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "At Tunnel's End, Light",
+       "quest_ko": "구사일생",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "English gives asymmetrical bangs that lighten at the tips; (0)–(1) turn that into side hair (옆머리) and attach the fade to it.",
+     "quote": "She has pale skin, light emerald-green eyes, and dark blue hair and asymmetrical bangs that are lighter at the tips.",
+     "sentences": [
+      {
+       "t_raw": "Yelan은 키가 큰 여성형 모델을 쓴 캐릭터로, 피부가 창백하고 눈은 연한 에메랄드빛이며 짙은 남색 머리카락에 앞머리가 좌우 비대칭이며 끝이 옅어진다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "야란은 키가 큰 여성형 모델을 쓴 캐릭터로, 피부가 창백하고 눈은 연한 에메랄드빛이며 짙은 남색 머리카락에 앞머리가 좌우 비대칭이며 끝이 옅어진다."
+      },
+      {
+       "t_raw": "그 앞머리는 끝으로 갈수록 색이 옅어진다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그 앞머리는 끝으로 갈수록 색이 옅어진다."
+      },
+      {
+       "t_raw": "Vision 아래에는 연한 파란색 밧줄이 하나 달려 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "신의 눈 아래에는 연한 파란색 밧줄이 하나 달려 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "Profile > Appearance",
+       "paragraph": "C5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 1818761,
+       "section": "Appearance > Customized Visions",
+       "paragraph": "M11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Disliking sweets is stated, but addiction and lost focus are only what she claims; (1) states them as the reason.",
+     "quote": "She also has a high tolerance for spice, eating raw or dried Jueyun Chilis after deeming Xiangling's spiciest dish not enough for her.",
+     "sentences": [
+      {
+       "t_raw": "입맛은 매운 쪽으로 크게 기울어 있어, Xiangling이 만든 가장 매운 요리조차 부족하다고 여기고 생 Jueyun Chilis나 말린 Jueyun Chilis를 그대로 먹는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "입맛은 매운 쪽으로 크게 기울어 있어, 향릉이 만든 가장 매운 요리조차 부족하다고 여기고 생 절운고추나 말린 절운고추를 그대로 먹는다."
+      },
+      {
+       "t_raw": "반대로 단것은 싫어하는데, 스스로 중독되기 쉽고 집중을 흐트러뜨린다고 여기기 때문이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "반대로 단것은 싫어하는데, 스스로 중독되기 쉽고 집중을 흐트러뜨린다고 여기기 때문이라고 한다."
+      },
+      {
+       "t_raw": "일 밖에서는 차분하고 느긋한 편이라 틈만 나면 낮잠을 즐기지만, 그날 해야 할 일에 맞춰 일정을 조정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일 밖에서는 차분하고 느긋한 편이라 틈만 나면 낮잠을 즐기지만, 그날 해야 할 일에 맞춰 일정을 조정한다."
+      },
+      {
+       "t_raw": "그 바탕에는 가문에 대물림되는 신체적 허약이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 바탕에는 가문에 대물림되는 신체적 허약이 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "Profile > Personality",
+       "paragraph": "C4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "Profile > Personality",
+       "paragraph": "C3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "She thought a Fontainian flair might be nice and asked “Why? Does it look bad?”; (2) quotes a different line and frames it as wanting a Fontainian feel.",
+     "quote": "So, I thought something with more of a Fontainian flair might be nice. A special outfit for a special occasion... Why? Does it look bad?",
+     "sentences": [
+      {
+       "t_raw": "Fontaine의 Hotel Debord에서 열린 경매를 앞두고 Yelan은 Tranquil Banquet로 옷을 갈아입고 참석자들을 살폈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폰타인의 드보르 호텔에서 열린 경매를 앞두고 야란은 고요한 밤의 연회로 옷을 갈아입고 참석자들을 살폈다."
+      },
+      {
+       "t_raw": "그 의상에는 Ororon을 닮은 은색 장식이 들어가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 의상에는 올로룬을 닮은 은색 장식이 들어가 있다."
+      },
+      {
+       "t_raw": "그녀는 이 옷에 어울릴 향수를 고르자며 Traveler에게 도움을 청했고, Fontaine스러운 느낌이면 좋겠다고 생각하면서 「왜? 이상해 보여?」라고 되물었다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그녀는 이 옷에 어울릴 향수를 고르자며 여행자에게 도움을 청했고, 폰타인스러운 느낌이면 좋겠다고 생각하면서 「왜? 이상해 보여?」라고 되물었다."
+      },
+      {
+       "t_raw": "일을 위해 갈아입은 옷이 향수까지 곁들이는 취향의 자리로 이어진 셈이라, 그녀의 변장에는 실무와 개인적 취향이 겹쳐 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "일을 위해 갈아입은 옷이 향수까지 곁들이는 취향의 자리로 이어진 셈이라, 그녀의 변장에는 실무와 개인적 취향이 겹쳐 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C12",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Covert Investigation, Dirty Money Misdeeds (Part 3)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 1818761,
+       "section": "Appearance > Liyue",
+       "paragraph": "M12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "An Instant of Intoxication, A Meeting by Moonlight",
+       "quest_ko": "달빛에 취한 밤",
+       "version": "5.8",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Covert Investigation, Dirty Money Misdeeds (Part 3)",
+       "quest_ko": "검은돈 비밀 수사",
+       "version": "5.8",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All three match the teahouse account; the betting/intel reading in (2) stays interpretive.",
+     "quote": "This caused the teahouse to gain a notorious reputation in which others were warned not to play against her, lest they lose their savings.",
+     "sentences": [
+      {
+       "t_raw": "Yanshang Teahouse는 정보를 모으는 거점이자 여가를 보내는 장소가 되었고, 그 결과 이곳에서는 그녀와 겨루지 말라는 경고가 돌 정도로 악명이 붙었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "암상 찻집은 정보를 모으는 거점이자 여가를 보내는 장소가 되었고, 그 결과 이곳에서는 그녀와 겨루지 말라는 경고가 돌 정도로 악명이 붙었다."
+      },
+      {
+       "t_raw": "겨루었다가는 저축한 돈을 잃기 십상이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겨루었다가는 저축한 돈을 잃기 십상이라고 한다."
+      },
+      {
+       "t_raw": "정보가 오가는 자리와 내기가 오가는 자리가 같은 곳이라는 점이 이런 소문의 바탕으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정보가 오가는 자리와 내기가 오가는 자리가 같은 곳이라는 점이 이런 소문의 바탕으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yelan/Storyline",
+       "revision": 2090388,
+       "section": "History > Present",
+       "paragraph": "C8",
+       "wiki_refs": [
+        {
+         "type": "bb",
+         "name": "Chihu Rock Bulletin Board"
+        }
+       ]
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The Korean line matches the expo dialogue.",
+     "t_raw": "아니요, 저는 그냥 일 때문에 온 겁니다. Captain Beidou가 친절하게 태워 주셨을 뿐이죠. 그러니 expo에 제 이름을 등록할 필요는 없습니다.",
+     "en": "No, I'm just here for work. Captain Beidou was kind enough to lend me a ride. So, no need to register me with the expo.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "The Infamous Merc Captain",
+      "quest_ko": "바다를 종횡무진하는 용병계의 거물",
+      "version": "Luna VI",
+      "speaker": "Yelan"
+     },
+     "t": "아니요, 저는 그냥 일 때문에 온 겁니다. 선장 북두가 친절하게 태워 주셨을 뿐이죠. 그러니 expo에 제 이름을 등록할 필요는 없습니다.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "가계와 유산",
+     "status": "accepted",
+     "note": "“Huge disaster” is rendered as a horrific one (끔찍한); the rest of the line matches.",
+     "t_raw": "하지만 알다시피, 이곳에는 엄청난 재난이 있었어. 내 조상들은 Yakshas와 함께 싸우며, Liyue를 위기에서 구하기 위해 목숨을 바쳤지.",
+     "en": "But as you know, there was a huge disaster here. My ancestors fought alongside the Yakshas, and gave their lives to save Liyue from peril.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "Qimen Arts and the Rite of Homa, the Spirits are Calmed and Life Restored",
+      "quest_ko": "퇴치의 기문술・저승을 평정하는 호마",
+      "version": "5.3",
+      "speaker": "Yelan"
+     },
+     "t": "하지만 알다시피, 이곳에는 엄청난 재난이 있었어. 내 조상들은 야차와 함께 싸우며, 리월을 위기에서 구하기 위해 목숨을 바쳤지.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "작중 행적 — The Chasm",
+     "status": "accepted",
+     "note": "“sealed off this space at the top” is rendered as sealing the top of the space; the English makes the space the thing sealed off, with “at the top” as where that was done.",
+     "t_raw": "저건 봉인을 만들었을 때의 목소리예요. Bosacius와 제 조상이... 둘이 함께 이 공간을 꼭대기에서 봉인했어요.",
+     "en": "That's their voices from when they made the seal. Bosacius and my ancestor... they sealed off this space at the top together.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "At Tunnel's End, Light",
+      "quest_ko": "구사일생",
+      "version": "2.7",
+      "speaker": "Yelan"
+     },
+     "t": "저건 봉인을 만들었을 때의 목소리예요. 부사와 제 조상이... 둘이 함께 이 공간을 꼭대기에서 봉인했어요.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "작중 행적 — Tianshu 선정",
+     "status": "accepted",
+     "note": "“Appearances can be deceiving” is rendered as “outside and inside can differ,” a different claim than looks being misleading.",
+     "t_raw": "보이는 대로 믿을 수만은 없어. 방금 벽을 조사하다 보니 이 돌에 뭔가 특이한 점이 있더라고.",
+     "en": "Appearances can be deceiving. As I was examining the wall just now, I noticed there was something unusual about this stone.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "Danger All Around",
+      "quest_ko": "사방이 위험해",
+      "version": "2.7",
+      "speaker": "Yelan"
+     },
+     "t": "보이는 대로 믿을 수만은 없어. 방금 벽을 조사하다 보니 이 돌에 뭔가 특이한 점이 있더라고.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "작중 행적 — Lantern Rite와 Liyue의 사건들",
+     "status": "accepted",
+     "note": "The English says you weakened the Ley Line disturbance; the Korean only says the disturbance has clearly grown weaker, dropping the agent.",
+     "t_raw": "그리고 너희는 문제의 근본 원인을 없애지는 못했지만, Ley Line 교란을 상당히 약화시킨 것은 분명히 보인다.",
+     "en": "And although you didn't eliminate the root of the problem, it's plain to see you've weakened the Ley Line disturbance considerably.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "A Defensive Strategy",
+      "quest_ko": "방어 계획",
+      "version": "5.7",
+      "speaker": "Yelan"
+     },
+     "t": "그리고 너희는 문제의 근본 원인을 없애지는 못했지만, 지맥 교란을 상당히 약화시킨 것은 분명히 보인다.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "작중 행적 — Fontaine",
+     "status": "accepted",
+     "note": "Faithful, including the outfit question as a natural “does it not suit?”",
+     "t_raw": "그래서 좀 더 Fontaine 분위기가 나는 편이 좋겠다고 생각했어. 특별한 자리를 위한 특별한 옷… 왜, 안 어울려?",
+     "en": "So, I thought something with more of a Fontainian flair might be nice. A special outfit for a special occasion... Why? Does it look bad?",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "Covert Investigation, Dirty Money Misdeeds (Part 3)",
+      "quest_ko": "검은돈 비밀 수사",
+      "version": "5.8",
+      "speaker": "Yelan"
+     },
+     "t": "그래서 좀 더 폰타인 분위기가 나는 편이 좋겠다고 생각했어. 특별한 자리를 위한 특별한 옷… 왜, 안 어울려?",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "작중 행적 — Nod-Krai 이후",
+     "status": "accepted",
+     "note": "Faithful.",
+     "t_raw": "아니요, 그냥 일 때문에 온 겁니다. Beidou 선장님이 친절하게 태워주셨죠. 그러니 저를 엑스포에 등록할 필요는 없습니다.",
+     "en": "No, I'm just here for work. Captain Beidou was kind enough to lend me a ride. So, no need to register me with the expo.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "The Infamous Merc Captain",
+      "quest_ko": "바다를 종횡무진하는 용병계의 거물",
+      "version": "Luna VI",
+      "speaker": "Yelan"
+     },
+     "t": "아니요, 그냥 일 때문에 온 겁니다. 북두 선장님이 친절하게 태워주셨죠. 그러니 저를 엑스포에 등록할 필요는 없습니다.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "“target the deepest recesses” is rendered as physically going there; the line does not say they must go to that place.",
+     "t_raw": "그러니까 이 도메인의 가장 깊은 곳을 노리고 그 안에 도사리는 몬스터를 전부 처치하지 않으면, 이 싸움은 끝없이 이어질 수도 있어.",
+     "en": "So, unless we target the deepest recesses of this domain and defeat all the monsters lurking within, this battle could drag on forever.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "Tumult Subduer",
+      "quest_ko": "지맥 제압전",
+      "version": "5.7",
+      "speaker": "Yelan"
+     },
+     "t": "그러니까 이 도메인의 가장 깊은 곳을 노리고 그 안에 도사리는 몬스터를 전부 처치하지 않으면, 이 싸움은 끝없이 이어질 수도 있어.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "“I wish you all the best” is a general farewell; “최선의 결과가 있기를” turns it into a wish for the best outcome.",
+     "t_raw": "Traveler, Yelan, Fontaine 당국을 대표하여 두 사람과 함께 일하게 되어 영광이었어. 모두 잘되길 빌게.",
+     "en": ", Yelan, on behalf of the Fontaine authorities, it has been a pleasure working with you both. I wish you all the best.",
+     "speaker": "Chevreuse",
+     "source": {
+      "kind": "quest",
+      "quest": "Return Home, Children of the Desert",
+      "quest_ko": "고향으로",
+      "version": "Luna VI",
+      "speaker": "Chevreuse"
+     },
+     "t": "여행자, 야란, 폰타인 당국을 대표하여 두 사람과 함께 일하게 되어 영광이었어. 모두 잘되길 빌게.",
+     "speaker_ko": "슈브르즈"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful rendering of the seal line.",
+     "t_raw": "저건 그들이 봉인을 만들었을 때의 목소리다. Bosacius와 내 조상이... 함께 이 공간의 위쪽을 봉인했다.",
+     "en": "That's their voices from when they made the seal. Bosacius and my ancestor... they sealed off this space at the top together.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "At Tunnel's End, Light",
+      "quest_ko": "구사일생",
+      "version": "2.7",
+      "speaker": "Yelan"
+     },
+     "t": "저건 그들이 봉인을 만들었을 때의 목소리다. 부사와 내 조상이... 함께 이 공간의 위쪽을 봉인했다.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "“Cabriere에 닫기 전에” does not say the shop closes; English is “before it closes,” and “head to” is softened to “drop by.”",
+     "t_raw": "아, 그런데 먼저. Confrerie of Cabriere에 가고 싶어. 문 닫기 전에 말이야. 이 옷에 어울릴 향수를 고르는 것 좀 도와줄래?",
+     "en": "Ah, but first. I wanted to head to the Confrerie of Cabriere before it closes. Mind helping me pick out some perfume to go with this outfit?",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "An Instant of Intoxication, A Meeting by Moonlight",
+      "quest_ko": "달빛에 취한 밤",
+      "version": "5.8",
+      "speaker": "Yelan"
+     },
+     "t": "아, 그런데 먼저. 카브리에르 상회에 가고 싶어. 문 닫기 전에 말이야. 이 옷에 어울릴 향수를 고르는 것 좀 도와줄래?",
+     "speaker_ko": "야란"
+    }
+   ]
+  }
+ ]
+}

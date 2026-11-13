@@ -1,0 +1,1576 @@
+{
+ "node": "The Flagship",
+ "articles": [
+  {
+   "node": "The Flagship",
+   "from_version": "Luna I",
+   "cutoff": "2025-10-21T00:00:00Z",
+   "input": [
+    {
+     "page": "The Flagship",
+     "url": "https://genshin-impact.fandom.com/wiki/The_Flagship",
+     "revision": 1863843
+    }
+   ],
+   "input_counts": {
+    "mentions": 3,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 3602,
+   "input_cut": false,
+   "input_hash": "257c76dcff2e",
+   "writer": "ds,kimi",
+   "verifier": "codex-medium,grok,claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "Q5 points out two locations; it does not describe a route from the Adventurers' Guild to The Flagship.",
+     "quote": "The Adventurers' Guild is just over there, in Nasha Town's central plaza, and The Flagship Tavern is over that way.",
+     "sentences": [
+      {
+       "t_raw": "The Flagship은 Nod-Krai의 선술집으로, Varka가 Traveler와 Paimon을 만나자고 지정한 장소다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기함은 노드크라이의 선술집으로, 바르카가 여행자와 페이몬을 만나자고 지정한 장소다."
+      },
+      {
+       "t_raw": "Nasha Town의 중앙 광장에 있는 Adventurers' Guild와 The Flagship Tavern의 위치가 함께 안내되고, Nefer의 초대를 받은 손님을 Valta가 맞이한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "나샤 마을의 중앙 광장에 있는 모험가 길드와 기함 주점의 위치가 함께 안내되고, 네페르의 초대를 받은 손님을 발타가 맞이한다."
+      },
+      {
+       "t_raw": "주크박스와 현상금 게시판을 갖추고 있어, 음악과 현상금 의뢰가 함께 놓인 주점으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "주크박스와 현상금 게시판을 갖추고 있어, 음악과 현상금 의뢰가 함께 놓인 주점으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 1862840,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Moon Rises",
+       "quest_ko": "달이 떠오르는 곳",
+       "version": "Luna I",
+       "speaker": "Ineffa"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fulminations and Undercurrents",
+       "quest_ko": "굉음과 음모",
+       "version": "Luna I",
+       "speaker": "Valta"
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Jukebox",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "위치와 공간",
+     "status": "accepted",
+     "note": "The English does not establish that The Flagship is within Nasha Town. Sentence 3 also relies on that unconfirmed location.",
+     "quote": "The Adventurers' Guild is just over there, in Nasha Town's central plaza, and The Flagship Tavern is over that way.",
+     "sentences": [
+      {
+       "t_raw": "The Flagship은 Nod-Krai에 자리한 주점이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "기함은 노드크라이에 자리한 주점이다."
+      },
+      {
+       "t_raw": "Ineffa는 길을 안내하면서 Adventurers' Guild가 Nasha Town의 중앙 광장에 있고 The Flagship Tavern은 저쪽에 있다고 짚어 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이네파는 길을 안내하면서 모험가 길드가 나샤 마을의 중앙 광장에 있고 기함 주점은 저쪽에 있다고 짚어 준다."
+      },
+      {
+       "t_raw": "Varka는 Nod-Krai에 도착한 뒤 Traveler와 Paimon에게 The Flagship으로 알려진 주점에서 만나자고 청했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바르카는 노드크라이에 도착한 뒤 여행자와 페이몬에게 기함으로 알려진 주점에서 만나자고 청했다."
+      },
+      {
+       "t_raw": "Ineffa가 Nasha Town의 중앙 광장에 있는 Adventurers' Guild와 The Flagship Tavern의 위치를 함께 가리키고, Varka가 만남의 장소로 이곳을 택했다는 점에서, The Flagship은 이 지역에서 사람을 만나고 방향을 잡는 거점으로 쓰이는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "이네파가 나샤 마을의 중앙 광장에 있는 모험가 길드와 기함 주점의 위치를 함께 가리키고, 바르카가 만남의 장소로 이곳을 택했다는 점에서, 기함은 이 지역에서 사람을 만나고 방향을 잡는 거점으로 쓰이는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Where the Moon Rises",
+       "quest_ko": "달이 떠오르는 곳",
+       "version": "Luna I",
+       "speaker": "Ineffa"
+      },
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 1862840,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "위치와 공간",
+     "latin_left": []
+    },
+    {
+     "section": "위치와 공간",
+     "status": "accepted",
+     "note": "A2 only tentatively suggests four records and button controls. The Korean states these as certain and adds inserting the records.",
+     "quote": "Happiness flows in an invisible stream, here and now converging into a sea, every customer of The Flagship a splash of seafoam.",
+     "sentences": [
+      {
+       "t_raw": "주점 안에는 레코드를 바꿔 트는 **주크박스**가 놓여 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주점 안에는 레코드를 바꿔 트는 **주크박스**가 놓여 있다."
+      },
+      {
+       "t_raw": "주크박스는 레코드를 바꿀 수 있는 형태로 보이며, 네 종류의 레코드와 버튼으로 곡을 전환할 수 있을 것으로 추정된다. 가장 왼쪽 레코드가 기본 곡이고, 음악을 바꾸면 한 번 재생된 뒤 기본으로 돌아간다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "주크박스는 레코드를 바꿀 수 있는 형태로 보이며, 네 종류의 레코드와 버튼으로 곡을 전환할 수 있을 것으로 추정된다. 가장 왼쪽 레코드가 기본 곡이고, 음악을 바꾸면 한 번 재생된 뒤 기본으로 돌아간다."
+      },
+      {
+       "t_raw": "레코드가 들려주는 문구는 이곳을 찾는 손님들을 바다의 물보라에 비기고, 저녁 바람이 실어 온 선율이 Nasha Town의 창가를 스친다고 노래한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "레코드가 들려주는 문구는 이곳을 찾는 손님들을 바다의 물보라에 비기고, 저녁 바람이 실어 온 선율이 나샤 마을의 창가를 스친다고 노래한다."
+      },
+      {
+       "t_raw": "다른 레코드는 세상이 알맞은 속도로 돌아가며 모든 부품이 제자리를 찾는다는 대목과, 들짐승의 부름이자 대지의 찬가라는 대목을 담고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다른 레코드는 세상이 알맞은 속도로 돌아가며 모든 부품이 제자리를 찾는다는 대목과, 들짐승의 부름이자 대지의 찬가라는 대목을 담고 있다."
+      },
+      {
+       "t_raw": "손님과 마을의 창가가 같은 선율 안에 놓이는 것으로 보아, 주크박스의 음악은 주점 안의 분위기와 Nasha Town의 저녁 풍경을 잇는 장치로 그려진다.",
+       "interp": true,
+       "dropped": false,
+       "t": "손님과 마을의 창가가 같은 선율 안에 놓이는 것으로 보아, 주크박스의 음악은 주점 안의 분위기와 나샤 마을의 저녁 풍경을 잇는 장치로 그려진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Jukebox",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Jukebox",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Jukebox",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Jukebox",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Jukebox",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Jukebox",
+       "paragraph": "A12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "위치와 공간",
+     "latin_left": []
+    },
+    {
+     "section": "주점의 손님과 분위기",
+     "status": "accepted",
+     "note": "Q8 proposes The Flagship but does not establish that the destination was undecided or that Prohor suggested it first.",
+     "quote": "Ah, guests invited by Nefer, then? Welcome to The Flagship.",
+     "sentences": [
+      {
+       "t_raw": "Valta는 Nefer가 초대한 손님이라는 말을 듣자 The Flagship에 온 것을 환영한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "발타는 네페르가 초대한 손님이라는 말을 듣자 기함에 온 것을 환영한다."
+      },
+      {
+       "t_raw": "Prohor는 The Flagship으로 가자고 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "프로호르는 기함으로 가자고 제안한다."
+      },
+      {
+       "t_raw": "두 장면 모두 The Flagship이 손님을 맞이하고 사람들이 만날 곳을 정할 때 자연스럽게 떠오르는 장소임을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 장면 모두 기함이 손님을 맞이하고 사람들이 만날 곳을 정할 때 자연스럽게 떠오르는 장소임을 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Fulminations and Undercurrents",
+       "quest_ko": "굉음과 음모",
+       "version": "Luna I",
+       "speaker": "Valta"
+      },
+      {
+       "kind": "quest",
+       "quest": "In the Shadows of Night",
+       "quest_ko": "밤그늘 아래",
+       "version": "Luna I",
+       "speaker": "Prohor"
+      }
+     ],
+     "heading": "주점의 손님과 분위기",
+     "latin_left": []
+    },
+    {
+     "section": "주점의 손님과 분위기",
+     "status": "accepted",
+     "note": "No failures.",
+     "quote": "I'd love to stay up and drink all night at The Flagship with him again!",
+     "sentences": [
+      {
+       "t_raw": "술자리의 성격도 뚜렷하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "술자리의 성격도 뚜렷하다."
+      },
+      {
+       "t_raw": "Macola는 The Flagship에서 여덟 잔의 술을 함께 비운 사이를 두고 친한 친구라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마콜라는 기함에서 여덟 잔의 술을 함께 비운 사이를 두고 친한 친구라고 말한다."
+      },
+      {
+       "t_raw": "Anezka는 그와 다시 밤새 술을 마시고 싶다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아네슈카는 그와 다시 밤새 술을 마시고 싶다고 한다."
+      },
+      {
+       "t_raw": "잔을 비우는 시간이 곧 **친분의 척도**가 되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "잔을 비우는 시간이 곧 **친분의 척도**가 되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Team Rigor, or Team Intuition?",
+       "quest_ko": "원칙과 통찰",
+       "version": "Luna I",
+       "speaker": "Macola"
+      },
+      {
+       "kind": "quest",
+       "quest": "Team Rigor, or Team Intuition?",
+       "quest_ko": "원칙과 통찰",
+       "version": "Luna I",
+       "speaker": "Anezka"
+      }
+     ],
+     "heading": "주점의 손님과 분위기",
+     "latin_left": []
+    },
+    {
+     "section": "주점의 손님과 분위기",
+     "status": "accepted",
+     "note": "Vaino mentions his age and others' respectful tone, but the English does not establish that his age became a topic of conversation.",
+     "quote": "I'm 34 this year... At last month's gathering in The Flagship, everyone was speaking to me with this weird, respectful tone...",
+     "sentences": [
+      {
+       "t_raw": "여러 사람이 모이는 자리로도 쓰인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여러 사람이 모이는 자리로도 쓰인다."
+      },
+      {
+       "t_raw": "Vaino는 올해 서른네 살이 된 자신을 두고 지난달 The Flagship에서 열린 모임에서 사람들이 이상할 만큼 공손한 말투를 썼다고 회상한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바이노는 올해 서른네 살이 된 자신을 두고 지난달 기함에서 열린 모임에서 사람들이 이상할 만큼 공손한 말투를 썼다고 회상한다."
+      },
+      {
+       "t_raw": "Vaino가 지난 The Flagship 모임에서 자신의 나이 때문에 다른 이들이 존경스러운 어조로 말했다고 언급한 점에서, 그곳은 사람들이 함께 어울리는 모임의 장소였던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "바이노가 지난 기함 모임에서 자신의 나이 때문에 다른 이들이 존경스러운 어조로 말했다고 언급한 점에서, 그곳은 사람들이 함께 어울리는 모임의 장소였던 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Stress of Changing Careers",
+       "quest_ko": "직업 변경의 고충",
+       "version": "Luna I",
+       "speaker": "Vaino"
+      }
+     ],
+     "heading": "주점의 손님과 분위기",
+     "latin_left": []
+    },
+    {
+     "section": "주점의 손님과 분위기",
+     "status": "accepted",
+     "note": "All three match: Varka’s peril warning and Flagship meeting, Paimon’s break line, and the reading that one name ties those beats.",
+     "quote": "Once they did so, he asked to meet them at the tavern known as The Flagship.",
+     "sentences": [
+      {
+       "t_raw": "Varka는 Nod-Krai가 예상보다 훨씬 위험한 땅이라고 경고하면서도, Traveler와 Paimon을 만날 곳으로 The Flagship을 택한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바르카는 노드크라이가 예상보다 훨씬 위험한 땅이라고 경고하면서도, 여행자와 페이몬을 만날 곳으로 기함을 택한다."
+      },
+      {
+       "t_raw": "Paimon은 돌아가서 쉴 곳으로 The Flagship을 다시 꺼낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 돌아가서 쉴 곳으로 기함을 다시 꺼낸다."
+      },
+      {
+       "t_raw": "험한 땅에 대한 경고와 **휴식**의 장소가 같은 이름으로 겹치는 대목이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "험한 땅에 대한 경고와 **휴식**의 장소가 같은 이름으로 겹치는 대목이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 1862840,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Reunion Beneath the Moonlight",
+       "quest_ko": "달빛 아래 재회",
+       "version": "Luna I",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "주점의 손님과 분위기",
+     "latin_left": []
+    },
+    {
+     "section": "현상금 게시판",
+     "status": "accepted",
+     "note": "The board’s detailed notices and the four entries (Hidimbi, the Kairagi-clad man, the smugglers, Hark) are all in the material.",
+     "quote": "The notice board lists detailed information on the bounty targets...",
+     "sentences": [
+      {
+       "t_raw": "Bounty Board에는 현상금 대상에 대한 상세한 정보가 적혀 있고, Hidimbi, Kairagi 차림의 사내, 밀수 조직, Hark the Crackjaw까지 네 갈래의 의뢰가 걸려 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현상 게시판에는 현상금 대상에 대한 상세한 정보가 적혀 있고, 히딤바, 해란귀 차림의 사내, 밀수 조직, 「찢어진 턱」 할크까지 네 갈래의 의뢰가 걸려 있다.",
+       "polish": {
+        "from": "Bounty Board에는 현상금 대상에 대한 상세한 정보가 적혀 있고, 히딤바, 해란귀 차림의 사내, 밀수 조직, Hark the Crackjaw까지 네 갈래의 의뢰가 걸려 있다.",
+        "text": "현상금 게시판에는 현상금 대상에 대한 상세한 정보가 적혀 있고, 히딤바, 해란귀 차림의 사내, 밀수 조직, Hark the Crackjaw까지 네 갈래의 의뢰가 걸려 있다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A28",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A34",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "현상금 게시판",
+     "latin_left": []
+    },
+    {
+     "section": "현상금 게시판",
+     "status": "accepted",
+     "note": "Profile, the 18,000,000 Mora pitch, the Al-Ahmar correction, and the real necklace that cursed the poster are all stated.",
+     "quote": "That woman swindled me out of 18,000,000 Mora! She said that if I wore the necklace she claimed to have acquired from Al-Ahmar, the God of Love, the ladies would fall for me at first sight!",
+     "sentences": [
+      {
+       "t_raw": "Hidimbi 항목은 Sumeru 출신의 점술사인 여성, 나이 미상이라는 인적 사항과 함께 저주와 고액 사기 혐의를 적고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히딤바 항목은 수메르 출신의 점술사인 여성, 나이 미상이라는 인적 사항과 함께 저주와 고액 사기 혐의를 적고 있다."
+      },
+      {
+       "t_raw": "신고자는 그녀에게 **18,000,000 Mora**를 뜯겼다면서, ‘God of Love’라 불린 Al-Ahmar에게서 얻었다는 목걸이를 걸면 여자들이 첫눈에 반할 것이라고 들었다고 하소연한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "신고자는 그녀에게 **18,000,000 모라**를 뜯겼다면서, '사랑의 신'라 불린 아흐마르에게서 얻었다는 목걸이를 걸면 여자들이 첫눈에 반할 것이라고 들었다고 하소연한다.",
+       "polish": {
+        "from": "신고자는 그녀에게 **18,000,000 모라**를 뜯겼다면서, 'God of Love'라 불린 아흐마르에게서 얻었다는 목걸이를 걸면 여자들이 첫눈에 반할 것이라고 들었다고 하소연한다.",
+        "text": "신고자는 그녀에게 **18,000,000 모라**를 뜯겼다면서, 'God of Love'라 불린 아흐마르에게서 얻었다는 목걸이를 걸면 여자들이 첫눈에 반할 것이라고 들었다고 하소연한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그러나 Al-Ahmar는 God of Love가 아니었고, 수천 년 전에 죽은 데다 자신이 사랑한 여자조차 얻지 못한 존재였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 아흐마르는 사랑의 신이 아니었고, 수천 년 전에 죽은 데다 자신이 사랑한 여자조차 얻지 못한 존재였다.",
+       "polish": {
+        "from": "그러나 아흐마르는 God of Love가 아니었고, 수천 년 전에 죽은 데다 자신이 사랑한 여자조차 얻지 못한 존재였다.",
+        "text": "그러나 아흐마르는 God of Love가 아니었고, 수천 년 전에 죽은 데다 자신이 사랑한 여자조차 얻지 못한 존재였다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "목걸이는 진품이었지만, 신고자는 그것 때문에 사랑을 찾지 못할 저주를 받았다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목걸이는 진품이었지만, 신고자는 그것 때문에 사랑을 찾지 못할 저주를 받았다고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A17",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A18",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "현상금 게시판",
+     "latin_left": []
+    },
+    {
+     "section": "현상금 게시판",
+     "status": "accepted",
+     "note": "“Might’ve had a point” is rendered as Hidimbi maybe having had something to say; reclassification and the sincerity guess are otherwise fine.",
+     "quote": "Addendum: This bounty is now reclassified as a search request.",
+     "sentences": [
+      {
+       "t_raw": "의뢰가 완료되면 게시판에는 다른 문장이 덧붙는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "의뢰가 완료되면 게시판에는 다른 문장이 덧붙는다."
+      },
+      {
+       "t_raw": "신고자는 생각을 고쳐 이 현상금을 추적 의뢰로 재분류하고, Hidimbi의 말에 일리가 있었을지도 모른다고 되짚으며, 목걸이가 듣지 않은 이유가 자신의 진심이 부족했기 때문일 수도 있다고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "신고자는 생각을 고쳐 이 현상금을 추적 의뢰로 재분류하고, 히딤바의 말에 일리가 있었을지도 모른다고 되짚으며, 목걸이가 듣지 않은 이유가 자신의 진심이 부족했기 때문일 수도 있다고 적는다."
+      },
+      {
+       "t_raw": "목걸이가 효과가 없었던 것은 자신의 구애가 진실하지 못했기 때문일 수 있다는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목걸이가 효과가 없었던 것은 자신의 구애가 진실하지 못했기 때문일 수 있다는 것이다."
+      },
+      {
+       "t_raw": "그러니 Miss Hidimbi를 찾아 이 문제를 계속 지도해 달라는 부탁이 뒤따른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러니 히딤바 양을 찾아 이 문제를 계속 지도해 달라는 부탁이 뒤따른다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A21",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "현상금 게시판",
+     "latin_left": []
+    },
+    {
+     "section": "현상금 게시판",
+     "status": "accepted",
+     "note": "Gonpachi’s charges, the Nothing Passage / proof-of-death terms, and Mr. Peco’s completed-bounty note all match.",
+     "quote": "Addendum: Bounty fulfilled. According to Mr. Peco's testimony, the target has been neutralized.",
+     "sentences": [
+      {
+       "t_raw": "Kairagi 항목의 대상은 Inazuman 남성 Gonpachi로, Kairagi식 복장을 한 채 여행 상인을 무작위로 습격해 여러 사상자를 낸 혐의를 받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "해란귀 항목의 대상은 이나즈마 남성 곤파치로, 해란귀식 복장을 한 채 여행 상인을 무작위로 습격해 여러 사상자를 낸 혐의를 받는다."
+      },
+      {
+       "t_raw": "미완료 상태에서는 Nothing Passage 근처에서 마지막으로 목격되었다는 정보와 함께, 그를 쓰러뜨리고 죽음을 입증하는 자에게 Guild가 보상한다는 조건이 붙는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미완료 상태에서는 적막의 회랑 근처에서 마지막으로 목격되었다는 정보와 함께, 그를 쓰러뜨리고 죽음을 입증하는 자에게 협회가 보상한다는 조건이 붙는다."
+      },
+      {
+       "t_raw": "완료되면 Mr. Peco의 증언에 따라 대상이 제거되었다는 기록으로 바뀐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "완료되면 Mr. 페코의 증언에 따라 대상이 제거되었다는 기록으로 바뀐다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A27",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "현상금 게시판",
+     "latin_left": [
+      "Mr"
+     ]
+    },
+    {
+     "section": "현상금 게시판",
+     "status": "accepted",
+     "note": "Calling the addendum sarcastic is a tone judgment the English does not state; the gang, charges, outpost, and regards line are otherwise accurate.",
+     "quote": "Addendum: Bounty fulfilled. To the rebranded gentlemen of the Iron and Salt Gang — Spina di Rosula sends its regards.",
+     "sentences": [
+      {
+       "t_raw": "밀수 의뢰는 New Iron and Salt Gang을 향한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "밀수 의뢰는 새 철과 소금 갱단을 향한다.",
+       "polish": {
+        "from": "밀수 의뢰는 New Iron and Salt Gang을 향한다.",
+        "text": "밀수 의뢰는 New Iron and Salt Gang을 향한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "대규모 밀수와 제한 위험 물자의 유통 혐의이며, 미완료 상태에서는 마을 북쪽 해변 야영지에 임시 전초기지를 두고 있다는 수사 결과와 함께, 밀수를 막는 데 힘을 보태는 이에게 Spina di Rosula가 후하게 보상하겠다는 문구가 실린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대규모 밀수와 제한 위험 물자의 유통 혐의이며, 미완료 상태에서는 마을 북쪽 해변 야영지에 임시 전초기지를 두고 있다는 수사 결과와 함께, 밀수를 막는 데 힘을 보태는 이에게 가시 장미회가 후하게 보상하겠다는 문구가 실린다."
+      },
+      {
+       "t_raw": "완료 뒤의 추가 기록은 Iron and Salt Gang의 브랜드를 새로 단장한 신사들에게 Spina di Rosula가 안부를 전한다는 문장이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "완료 뒤의 추가 기록은 철과 소금 일당의 브랜드를 새로 단장한 신사들에게 가시 장미회가 안부를 전한다는 문장이다.",
+       "polish": {
+        "from": "완료 뒤의 추가 기록은 Iron and Salt Gang의 브랜드를 새로 단장한 신사들에게 가시 장미회가 안부를 전한다는 문장이다.",
+        "text": "완료 뒤의 추가 기록은 Iron and Salt Gang의 브랜드를 새로 단장한 신사들에게 가시 장미회가 안부를 전한다는 문장이다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A32",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A33",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "현상금 게시판",
+     "latin_left": []
+    },
+    {
+     "section": "현상금 게시판",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "Anyone who can provide credible intel on his whereabouts will be handsomely rewarded (upon verification of said information).",
+     "sentences": [
+      {
+       "t_raw": "Hark the Crackjaw는 Atlas의 전직 조타수로, 여러 건의 살인 혐의와 잔혹하다는 평이 붙고 현재 행방은 알 수 없다고만 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「찢어진 턱」 할크는 아틀라스호의 전직 조타수로, 여러 건의 살인 혐의와 잔혹하다는 평이 붙고 현재 행방은 알 수 없다고만 적혀 있다.",
+       "polish": {
+        "from": "Hark the Crackjaw는 아틀라스호의 전직 조타수로, 여러 건의 살인 혐의와 잔혹하다는 평이 붙고 현재 행방은 알 수 없다고만 적혀 있다.",
+        "text": "Hark the Crackjaw는 아틀라스호의 전직 조타수로, 여러 건의 살인 혐의와 잔혹하다는 평이 붙고 현재 행방은 알 수 없다고만 적혀 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "이 항목의 보상은 그가 어디 있는지 믿을 만한 정보를 대는 이에게 걸려 있고, 정보가 확인된 뒤에 지급된다는 조건이 달린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 항목의 보상은 그가 어디 있는지 믿을 만한 정보를 대는 이에게 걸려 있고, 정보가 확인된 뒤에 지급된다는 조건이 달린다."
+      },
+      {
+       "t_raw": "완료된 의뢰의 보상을 맡는 사람은 Leszek이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "완료된 의뢰의 보상을 맡는 사람은 레셰크이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A35",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A36",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Leszek",
+       "revision": 1856277,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "현상금 게시판",
+     "latin_left": []
+    },
+    {
+     "section": "현상금 게시판",
+     "status": "accepted",
+     "note": "Sentence 0 says Hidimbi appears only in that hidden objective; the English says she is a quest-exclusive NPC who appears there, not that this is her sole appearance. Sentence 2 treats the bounty board as a channel for tavern regulars to take on troublesome jobs, which the cited lines do not support.",
+     "quote": "Hidimbi... You mean the person who's on The Flagship's wanted list for fraud? Ugh. Paimon knew you were conned, Netochka!",
+     "sentences": [
+      {
+       "t_raw": "Hidimbi는 The Flagship의 현상금 게시판을 다루는 숨은 탐색 목표에 등장하는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "히딤바는 기함의 현상금 게시판을 다루는 숨은 탐색 목표에 등장하는 인물이다."
+      },
+      {
+       "t_raw": "Paimon은 그녀를 The Flagship의 현상금 명단에 오른 사기꾼으로 기억하고, Auni는 함정이라면 잡은 것을 The Flagship 사람들에게 넘기면 된다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 그녀를 기함의 현상금 명단에 오른 사기꾼으로 기억하고, 아우니는 함정이라면 잡은 것을 기함 사람들에게 넘기면 된다고 말한다."
+      },
+      {
+       "t_raw": "현상금 게시판은 의뢰인이 골치 아픈 일을 맡기는 게시 공간으로 쓰이는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "현상금 게시판은 의뢰인이 골치 아픈 일을 맡기는 게시 공간으로 쓰이는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hidimbi",
+       "revision": 1860954,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Shoemaker's Children Go Barefoot",
+       "quest_ko": "의적 네토치카",
+       "version": "Luna I",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Friends of Moleyvalley",
+       "quest_ko": "몰리 계곡의 동료",
+       "version": "Luna I",
+       "speaker": "Auni"
+      }
+     ],
+     "heading": "현상금 게시판",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "Once they did so, he asked to meet them at the tavern known as The Flagship.",
+     "sentences": [
+      {
+       "t_raw": "Varka와 그의 군세는 Nod-Krai에 도착한 뒤 Aino를 만나, 그녀의 자동인형 Ineffa에게 Traveler와 Paimon에게 전할 소식을 맡겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바르카와 그의 군세는 노드크라이에 도착한 뒤 아이노를 만나, 그녀의 자동인형 이네파에게 여행자와 페이몬에게 전할 소식을 맡겼다."
+      },
+      {
+       "t_raw": "Ineffa는 Natlan에 닿아 기억을 되찾았고, cryptex를 열자 Varka가 쓴 편지가 나왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이네파는 나타에 닿아 기억을 되찾았고, 크립텍스를 열자 바르카가 쓴 편지가 나왔다.",
+       "polish": {
+        "from": "이네파는 나타에 닿아 기억을 되찾았고, cryptex를 열자 바르카가 쓴 편지가 나왔다.",
+        "text": "이네파는 나타에 닿아 기억을 되찾았고, 크립텍스를 열자 바르카가 쓴 편지가 나왔다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "편지에서 Varka는 Honorary Knight의 소문을 들었다며 직접 만나고 싶다고 했고, Nod-Krai는 예상보다 훨씬 위험한 땅이니 오기 전에 대비하라고 경고했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "편지에서 바르카는 명예 기사의 소문을 들었다며 직접 만나고 싶다고 했고, 노드크라이는 예상보다 훨씬 위험한 땅이니 오기 전에 대비하라고 경고했다."
+      },
+      {
+       "t_raw": "그들이 도착한 뒤 Varka가 **만남의 장소**로 지목한 곳이 The Flagship이라는 주점이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그들이 도착한 뒤 바르카가 **만남의 장소**로 지목한 곳이 기함이라는 주점이었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 1862840,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "Ah, guests invited by Nefer, then? Welcome to The Flagship.",
+     "sentences": [
+      {
+       "t_raw": "The Flagship에서 손님을 맞는 Valta는 찾아온 일행을 보고 Nefer가 초대한 손님인지 묻고 환영한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기함에서 손님을 맞는 발타는 찾아온 일행을 보고 네페르가 초대한 손님인지 묻고 환영한다."
+      },
+      {
+       "t_raw": "Varka가 만남의 자리로 이 주점을 골랐고 Valta가 Nefer의 초대 손님을 알아보는 대목은, The Flagship이 바깥 인사가 사람을 만나도록 잡아 두는 자리로 쓰인다는 것을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "바르카가 만남의 자리로 이 주점을 골랐고 발타가 네페르의 초대 손님을 알아보는 대목은, 기함이 바깥 인사가 사람을 만나도록 잡아 두는 자리로 쓰인다는 것을 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 1862840,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Fulminations and Undercurrents",
+       "quest_ko": "굉음과 음모",
+       "version": "Luna I",
+       "speaker": "Valta"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 3 says Paimon pities the conned Netochka. The line only shows that she knew Netochka was conned and reacts with exasperation.",
+     "quote": "Bounty Target: Hidimbi, a fortune teller from Sumeru. Female, age unknown. Wanted for: Suspected of laying curses and high-value fraud.",
+     "sentences": [
+      {
+       "t_raw": "The Flagship에 걸린 현상금을 완수한 이들에게 보상을 챙겨 주는 일은 Leszek이 맡고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기함에 걸린 현상금을 완수한 이들에게 보상을 챙겨 주는 일은 레셰크가 맡고 있다."
+      },
+      {
+       "t_raw": "그 게시판을 다루는 숨은 탐사 목표에 등장하는 Hidimbi는 퀘스트 전용 NPC다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 게시판을 다루는 숨은 탐사 목표에 등장하는 히딤바는 퀘스트 전용 NPC다."
+      },
+      {
+       "t_raw": "게시판은 Hidimbi를 Sumeru 출신 점술사로, 저주를 내리고 고액 사기를 친 혐의로 수배 중인 여성이라고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게시판은 히딤바를 수메르 출신 점술사로, 저주를 내리고 고액 사기를 친 혐의로 수배 중인 여성이라고 적는다."
+      },
+      {
+       "t_raw": "Paimon은 그를 The Flagship의 수배 명단에 오른 사기꾼이라 부르며, Netochka가 속았다는 사실을 알고 있었다고 짜증 섞인 말투로 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "페이몬은 그를 기함의 수배 명단에 오른 사기꾼이라 부르며, 네토치카가 속았다는 사실을 알고 있었다고 짜증 섞인 말투로 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hidimbi",
+       "revision": 1860954,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Leszek",
+       "revision": 1856277,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Shoemaker's Children Go Barefoot",
+       "quest_ko": "의적 네토치카",
+       "version": "Luna I",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 3 turns \"rebranded\" into a name change, which the addendum does not state. Sentence 5 calls the Weasel Thief Big Boss a wanted criminal and reads the handoff as bounty work; Auni only says to hand that boss to people at The Flagship.",
+     "quote": "Addendum: Bounty fulfilled. To the rebranded gentlemen of the Iron and Salt Gang — Spina di Rosula sends its regards.",
+     "sentences": [
+      {
+       "t_raw": "게시판에는 개인만이 아니라 조직도 이름을 올린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게시판에는 개인만이 아니라 조직도 이름을 올린다."
+      },
+      {
+       "t_raw": "Inazuma 출신으로 Kairagi 차림을 한 Gonpachi는 여행 상인들을 상대로 한 무작위 습격과 다수의 사상자로 수배된 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이나즈마 출신으로 해란귀 차림을 한 곤파치는 여행 상인들을 상대로 한 무작위 습격과 다수의 사상자로 수배된 인물이다."
+      },
+      {
+       "t_raw": "New Iron and Salt Gang은 제한된 위험 물자의 대규모 밀수와 거래 혐의로 수배되었고, 마을 북쪽 해변의 야영지에 임시 거점을 둔 것으로 조사됐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "새 철과 소금 갱단은 제한된 위험 물자의 대규모 밀수와 거래 혐의로 수배되었고, 마을 북쪽 해변의 야영지에 임시 거점을 둔 것으로 조사됐다.",
+       "polish": {
+        "from": "New Iron and Salt Gang은 제한된 위험 물자의 대규모 밀수와 거래 혐의로 수배되었고, 마을 북쪽 해변의 야영지에 임시 거점을 둔 것으로 조사됐다.",
+        "text": "New Iron and Salt Gang은 제한된 위험 물자의 대규모 밀수와 거래 혐의로 수배되었고, 마을 북쪽 해변의 야영지에 임시 거점을 둔 것으로 조사됐다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "단속에 협조한 이에게는 Spina di Rosula가 후한 보상을 준다고 적혀 있으며, 완료 기록에는 Iron and Salt Gang의 브랜드를 새로 단장한 신사들에게 Spina di Rosula가 안부를 전한다는 문구가 덧붙는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "단속에 협조한 이에게는 가시 장미회가 후한 보상을 준다고 적혀 있으며, 완료 기록에는 철과 소금 일당의 브랜드를 새로 단장한 신사들에게 가시 장미회가 안부를 전한다는 문구가 덧붙는다.",
+       "polish": {
+        "from": "단속에 협조한 이에게는 가시 장미회가 후한 보상을 준다고 적혀 있으며, 완료 기록에는 Iron and Salt Gang의 브랜드를 새로 단장한 신사들에게 가시 장미회가 안부를 전한다는 문구가 덧붙는다.",
+        "text": "단속에 협조한 이에게는 가시 장미회가 후한 보상을 준다고 적혀 있으며, 완료 기록에는 Iron and Salt Gang의 브랜드를 새로 단장한 신사들에게 가시 장미회가 안부를 전한다는 문구가 덧붙는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Auni는 함정이라면 Weasel Thief Big Boss를 The Flagship 사람들에게 넘기면 그들이 알 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아우니는 함정이라면 족제비 도둑 대장을 기함 사람들에게 넘기면 그들이 알 것이라고 말한다."
+      },
+      {
+       "t_raw": "Weasel Thief Big Boss를 The Flagship의 사람들에게 넘기면 알아서 처리할 것이라는 Auni의 말에서, 이 주점이 곤란한 일을 맡아 처리할 수 있는 거점이라는 인식이 드러나는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "족제비 도둑 대장을 기함의 사람들에게 넘기면 알아서 처리할 것이라는 아우니의 말에서, 이 주점이 곤란한 일을 맡아 처리할 수 있는 거점이라는 인식이 드러나는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Leszek",
+       "revision": 1856277,
+       "section": null,
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A33",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Friends of Moleyvalley",
+       "quest_ko": "몰리 계곡의 동료",
+       "version": "Luna I",
+       "speaker": "Auni"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The reward is for whoever finds Hidimbi and brings her back so she can keep guiding him. The Korean makes the rewarded person the one who guides.",
+     "quote": "Addendum: This bounty is now reclassified as a search request.",
+     "sentences": [
+      {
+       "t_raw": "현상금 게시판의 Hidimbi 항목은 완료 뒤 성격이 달라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현상금 게시판의 히딤바 항목은 완료 뒤 성격이 달라진다."
+      },
+      {
+       "t_raw": "Sumeru 출신 점술가를 저주와 고액 사기 혐의로 쫓던 의뢰는, 완료 후 덧붙은 기록에서 **수색 요청**으로 다시 분류된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "수메르 출신 점술가를 저주와 고액 사기 혐의로 쫓던 의뢰는, 완료 후 덧붙은 기록에서 **수색 요청**으로 다시 분류된다."
+      },
+      {
+       "t_raw": "의뢰인은 목걸이가 듣지 않은 이유가 자신의 진심이 부족했기 때문일 수도 있다고 되짚으면서, Hidimbi를 찾아 데려와 이 일을 계속 안내해 줄 수 있게 하는 사람에게 후한 보상을 약속한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "의뢰인은 목걸이가 듣지 않은 이유가 자신의 진심이 부족했기 때문일 수도 있다고 되짚으면서, 히딤바를 찾아 데려와 이 일을 계속 안내해 줄 수 있게 하는 사람에게 후한 보상을 약속한다."
+      },
+      {
+       "t_raw": "저주를 주장하던 사람이 스스로 그 주장을 의심하게 된 셈이라, 게시판에 남은 것은 추적이 아니라 사람을 찾는 부탁이 된다.",
+       "interp": true,
+       "dropped": false,
+       "t": "저주를 주장하던 사람이 스스로 그 주장을 의심하게 된 셈이라, 게시판에 남은 것은 추적이 아니라 사람을 찾는 부탁이 된다."
+      },
+      {
+       "t_raw": "Paimon은 Hidimbi를 The Flagship의 현상금 목록에 사기로 올라 있는 인물로 기억한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 히딤바를 기함의 현상금 목록에 사기로 올라 있는 인물로 기억한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Shoemaker's Children Go Barefoot",
+       "quest_ko": "의적 네토치카",
+       "version": "Luna I",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Hidimbi’s completed entry is reclassified as a search request, not marked “bounty fulfilled.” Only some other notices have that addendum, so the contrast with Hark is too broad.",
+     "quote": "Bounty Target: Hark the Crackjaw, former helmsman of the Atlas.",
+     "sentences": [
+      {
+       "t_raw": "Hark the Crackjaw는 Atlas의 **전직 조타수**로, 여러 건의 살인 혐의를 받는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「찢어진 턱」 할크는 아틀라스호의 **전직 조타수**로, 여러 건의 살인 혐의를 받는 인물이다.",
+       "polish": {
+        "from": "Hark the Crackjaw는 아틀라스호의 **전직 조타수**로, 여러 건의 살인 혐의를 받는 인물이다.",
+        "text": "Hark the Crackjaw는 아틀라스호의 **전직 조타수**로, 여러 건의 살인 혐의를 받는 인물이다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "게시판은 그를 속까지 사납다고 적으면서 현재 소재는 알 수 없다고 밝히고, 검증된 정보를 제공한 사람에게 보상을 걸어 둔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게시판은 그를 속까지 사납다고 적으면서 현재 소재는 알 수 없다고 밝히고, 검증된 정보를 제공한 사람에게 보상을 걸어 둔다."
+      },
+      {
+       "t_raw": "일부 완료된 의뢰에는 현상금이 이행되었다는 덧붙임이 붙지만, Hark 항목에는 완료 기록이 보이지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "일부 완료된 의뢰에는 현상금이 이행되었다는 덧붙임이 붙지만, 「찢어진 턱」 할크 항목에는 완료 기록이 보이지 않는다."
+      },
+      {
+       "t_raw": "그의 행방을 둘러싼 이야기는 게시판 위에서 아직 닫히지 않은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그의 행방을 둘러싼 이야기는 게시판 위에서 아직 닫히지 않은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A33",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A35",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A36",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "",
+     "quote": "Varka warned them to be prepared before they did so, as the land was far more perilous than they would expect.",
+     "sentences": [
+      {
+       "t_raw": "Varka는 Nod-Krai에 도착한 뒤 Aino를 만나, 그녀의 자동인형 Ineffa에게 Traveler와 Paimon 앞으로 전할 메시지를 맡겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바르카는 노드크라이에 도착한 뒤 아이노를 만나, 그녀의 자동인형 이네파에게 여행자와 페이몬 앞으로 전할 메시지를 맡겼다."
+      },
+      {
+       "t_raw": "Ineffa는 Natlan에 닿아 기억을 되찾고 cryptex를 열어 Varka의 편지를 전했는데, 그 안에는 Honorary Knight의 소문을 들었다는 말과 직접 만나고 싶다는 뜻이 담겨 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이네파는 나타에 닿아 기억을 되찾고 크립텍스를 열어 바르카의 편지를 전했는데, 그 안에는 명예 기사의 소문을 들었다는 말과 직접 만나고 싶다는 뜻이 담겨 있었다.",
+       "polish": {
+        "from": "이네파는 나타에 닿아 기억을 되찾고 cryptex를 열어 바르카의 편지를 전했는데, 그 안에는 명예 기사의 소문을 들었다는 말과 직접 만나고 싶다는 뜻이 담겨 있었다.",
+        "text": "이네파는 나타에 닿아 기억을 되찾고 크립텍스를 열어 바르카의 편지를 전했는데, 그 안에는 명예 기사의 소문을 들었다는 말과 직접 만나고 싶다는 뜻이 담겨 있었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "곧 도착할 것을 알고 있던 그는 그 땅이 기대보다 훨씬 위험하다며 준비를 갖추라고 경고하고, 만날 장소로 The Flagship을 지정했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "곧 도착할 것을 알고 있던 그는 그 땅이 기대보다 훨씬 위험하다며 준비를 갖추라고 경고하고, 만날 장소로 기함을 지정했다."
+      },
+      {
+       "t_raw": "위험을 먼저 경고한 인물이 만남의 자리로 술집을 골랐다는 대비는, 그가 말한 위험이 무엇을 뜻하는지에 대한 물음을 남긴다.",
+       "interp": true,
+       "dropped": false,
+       "t": "위험을 먼저 경고한 인물이 만남의 자리로 술집을 골랐다는 대비는, 그가 말한 위험이 무엇을 뜻하는지에 대한 물음을 남긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 1862840,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "",
+     "quote": "The default track is the leftmost record; if the music is changed, it will return to the default after one playthrough.",
+     "sentences": [
+      {
+       "t_raw": "The Flagship의 주크박스에는 서로 다른 네 개의 음반이 들어 있어, 버튼을 눌러 곡을 바꿀 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기함의 주크박스에는 서로 다른 네 개의 음반이 들어 있어, 버튼을 눌러 곡을 바꿀 수 있다."
+      },
+      {
+       "t_raw": "기본으로 틀리는 곡은 **가장 왼쪽에 놓인 음반**이며, 음악을 바꾸더라도 한 번 재생이 끝나면 다시 기본 음반으로 돌아간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기본으로 틀리는 곡은 **가장 왼쪽에 놓인 음반**이며, 음악을 바꾸더라도 한 번 재생이 끝나면 다시 기본 음반으로 돌아간다."
+      },
+      {
+       "t_raw": "손님이 원하는 곡을 골라 들을 수는 있지만 결국 기본 음반으로 되돌아온다는 점에서, 이 주크박스의 음악은 오래 붙잡아 두는 선곡보다 잠깐씩 골라 듣는 재미에 가깝다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "손님이 원하는 곡을 골라 들을 수는 있지만 결국 기본 음반으로 되돌아온다는 점에서, 이 주크박스의 음악은 오래 붙잡아 두는 선곡보다 잠깐씩 골라 듣는 재미에 가깝다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Jukebox",
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Jukebox",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "A changed tone is not stated for every completed bounty. Gonpachi’s addendum is a plain fulfillment note; the “different tenor” claim is interpretation labeled as fact.",
+     "quote": "Addendum: This bounty is now reclassified as a search request.",
+     "sentences": [
+      {
+       "t_raw": "현상금이 완료된 의뢰 중 일부에는, 원래 의뢰 내용에 이어 완료 사실이나 추가 상황을 알리는 덧붙임이 붙는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "현상금이 완료된 의뢰 중 일부에는, 원래 의뢰 내용에 이어 완료 사실이나 추가 상황을 알리는 덧붙임이 붙는다."
+      },
+      {
+       "t_raw": "Hidimbi를 쫓던 현상금은 **수색 요청**으로 재분류되고, 의뢰인은 목걸이가 효과가 없었던 이유가 자신의 진심 부족이었을지도 모른다며 Hidimbi를 찾아 다시 데려와 달라는 부탁을 남긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히딤바를 쫓던 현상금은 **수색 요청**으로 재분류되고, 의뢰인은 목걸이가 효과가 없었던 이유가 자신의 진심 부족이었을지도 모른다며 히딤바를 찾아 다시 데려와 달라는 부탁을 남긴다."
+      },
+      {
+       "t_raw": "Gonpachi를 대상으로 한 현상금에는 Mr. Peco의 증언에 따라 대상이 제압되었다는 기록이 붙는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "곤파치를 대상으로 한 현상금에는 Mr. 페코의 증언에 따라 대상이 제압되었다는 기록이 붙는다."
+      },
+      {
+       "t_raw": "New Iron and Salt Gang 건에는 Spina di Rosula가 이름을 바꾼 신사들에게 안부를 전한다는 한 줄이 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "새 철과 소금 갱단 건에는 가시 장미회가 이름을 바꾼 신사들에게 안부를 전한다는 한 줄이 남는다.",
+       "polish": {
+        "from": "New Iron and Salt Gang 건에는 가시 장미회가 이름을 바꾼 신사들에게 안부를 전한다는 한 줄이 남는다.",
+        "text": "New Iron and Salt Gang 건에는 가시 장미회가 이름을 바꾼 신사들에게 안부를 전한다는 한 줄이 남는다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "완료 뒤의 기록이 단순한 종결 표시에 그치지 않고, 의뢰인의 태도가 바뀌거나 의뢰를 맡긴 쪽이 여유를 드러내는 대목으로 남는다는 점이 눈에 띈다.",
+       "interp": true,
+       "dropped": false,
+       "t": "완료 뒤의 기록이 단순한 종결 표시에 그치지 않고, 의뢰인의 태도가 바뀌거나 의뢰를 맡긴 쪽이 여유를 드러내는 대목으로 남는다는 점이 눈에 띈다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Flagship",
+       "revision": 1863843,
+       "section": "Interactables > Bounty Board",
+       "paragraph": "A33",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Mr"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "위치와 공간",
+     "status": "accepted",
+     "note": "",
+     "t_raw": "Adventurers' Guild는 바로 저기, Nasha Town의 중앙 광장에 있고, The Flagship Tavern은 저쪽에 있습니다.",
+     "en": "The Adventurers' Guild is just over there, in Nasha Town's central plaza, and The Flagship Tavern is over that way.",
+     "speaker": "Ineffa",
+     "source": {
+      "kind": "quest",
+      "quest": "Where the Moon Rises",
+      "quest_ko": "달이 떠오르는 곳",
+      "version": "Luna I",
+      "speaker": "Ineffa"
+     },
+     "t": "모험가 길드는 바로 저기, 나샤 마을의 중앙 광장에 있고, 기함 주점은 저쪽에 있습니다.",
+     "speaker_ko": "이네파"
+    },
+    {
+     "section": "주점의 손님과 분위기",
+     "status": "accepted",
+     "note": "",
+     "t_raw": "아, Nefer가 초대한 손님이군요? The Flagship에 오신 것을 환영합니다.",
+     "en": "Ah, guests invited by Nefer, then? Welcome to The Flagship.",
+     "speaker": "Valta",
+     "source": {
+      "kind": "quest",
+      "quest": "Fulminations and Undercurrents",
+      "quest_ko": "굉음과 음모",
+      "version": "Luna I",
+      "speaker": "Valta"
+     },
+     "t": "아, 네페르가 초대한 손님이군요? 기함에 오신 것을 환영합니다.",
+     "speaker_ko": "발타"
+    },
+    {
+     "section": "현상금 게시판",
+     "status": "accepted",
+     "note": "Paimon도 adds “also/even”; the line only says Paimon knew Netochka was conned.",
+     "t_raw": "[번역] Hidimbi... The Flagship의 현상금 명단에 오른, 사기로 수배된 사람 말이야? 윽. Netochka, 네가 속은 거 Paimon 알았어!",
+     "en": "Hidimbi... You mean the person who's on The Flagship's wanted list for fraud? Ugh. Paimon knew you were conned, Netochka!",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Shoemaker's Children Go Barefoot",
+      "quest_ko": "의적 네토치카",
+      "version": "Luna I",
+      "speaker": "Paimon"
+     },
+     "t": "[번역] 히딤바... 기함의 현상금 명단에 오른, 사기로 수배된 사람 말이야? 윽. 네토치카, 네가 속은 거 페이몬 알았어!",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "",
+     "t_raw": "아, Nefer가 초대한 손님들이군요? The Flagship에 오신 것을 환영합니다.",
+     "en": "Ah, guests invited by Nefer, then? Welcome to The Flagship.",
+     "speaker": "Valta",
+     "source": {
+      "kind": "quest",
+      "quest": "Fulminations and Undercurrents",
+      "quest_ko": "굉음과 음모",
+      "version": "Luna I",
+      "speaker": "Valta"
+     },
+     "t": "아, 네페르가 초대한 손님들이군요? 기함에 오신 것을 환영합니다.",
+     "speaker_ko": "발타"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "",
+     "t_raw": "Hidimbi... The Flagship의 현상금 목록에 사기로 올라 있는 그 사람 말이야? 윽. Paimon은 네가 속은 걸 알고 있었어, Netochka!",
+     "en": "Hidimbi... You mean the person who's on The Flagship's wanted list for fraud? Ugh. Paimon knew you were conned, Netochka!",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Shoemaker's Children Go Barefoot",
+      "quest_ko": "의적 네토치카",
+      "version": "Luna I",
+      "speaker": "Paimon"
+     },
+     "t": "히딤바... 기함의 현상금 목록에 사기로 올라 있는 그 사람 말이야? 윽. 페이몬은 네가 속은 걸 알고 있었어, 네토치카!",
+     "speaker_ko": "페이몬"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3060 @@
+{
+ "node": "Archive",
+ "articles": [
+  {
+   "node": "Archive",
+   "from_version": "7.0",
+   "cutoff": "2026-09-22T00:00:00Z",
+   "input": [
+    {
+     "page": "Archive",
+     "url": "https://genshin-impact.fandom.com/wiki/Archive",
+     "revision": 2165005
+    }
+   ],
+   "input_counts": {
+    "mentions": 9,
+    "lines": 7,
+    "web": 0
+   },
+   "input_chars": 11230,
+   "input_cut": false,
+   "input_hash": "950bb7096757",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "The Archive is an in-game database unlocked after completing the Unexpected Power that allows players to view all of the obtainable items in the game.",
+     "sentences": [
+      {
+       "t_raw": "Archive는 Unexpected Power를 완료한 뒤 열리는 **게임 내 데이터베이스**로, 획득 가능한 아이템의 설명과 각종 기록을 한곳에서 열람하게 해 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감은 심상치 않은 힘을 완료한 뒤 열리는 **게임 내 데이터베이스**로, 획득 가능한 아이템의 설명과 각종 기록을 한곳에서 열람하게 해 준다."
+      },
+      {
+       "t_raw": "처음 획득한 아이템이나 처음 처치한 적, 야생동물의 항목이 열리며, 7개 섹션과 Equipment and Materials의 확장 설명을 갖춘다.",
+       "interp": false,
+       "dropped": false,
+       "t": "처음 획득한 아이템이나 처음 처치한 적, 야생동물의 항목이 열리며, 7개 섹션과 Equipment and Materials의 확장 설명을 갖춘다.",
+       "polish": {
+        "from": "처음 획득한 아이템이나 처음 처치한 적, 야생동물의 항목이 열리며, 7개 섹션과 Equipment and Materials의 확장 설명을 갖춘다.",
+        "text": "처음 획득한 아이템이나 처음 처치한 적, 야생동물의 항목이 열리며, 7개 섹션과 Equipment and Materials의 확장 설명을 갖춘다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Version 7.0 기준 총 3863개 항목이 존재하지만, PC 전용 튜토리얼처럼 플랫폼에 따라 해금할 수 없는 항목이 있고 같은 주요 버전 안에서 출시 예정인 항목이 먼저 추가되기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Version 7.0 기준 총 3863개 항목이 존재하지만, PC 전용 튜토리얼처럼 플랫폼에 따라 해금할 수 없는 항목이 있고 같은 주요 버전 안에서 출시 예정인 항목이 먼저 추가되기도 한다."
+      },
+      {
+       "t_raw": "그래서 Archive는 단순한 도감이 아니라 **각 플레이어의 환경과 진행을 반영하는 기록**으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 도감은 단순한 도감이 아니라 **각 플레이어의 환경과 진행을 반영하는 기록**으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Equipment and Materials",
+      "Version",
+      "PC"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and M4.",
+     "quote": "The Archive is an in-game database unlocked after completing the Unexpected Power that allows players to view all of the obtainable items in the game.",
+     "sentences": [
+      {
+       "t_raw": "Archive는 **Unexpected Power**를 완료한 뒤 열리는 게임 내 데이터베이스로, 얻을 수 있는 아이템을 Archive에서 살펴보게 해 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감은 **심상치 않은 힘**을 완료한 뒤 열리는 게임 내 데이터베이스로, 얻을 수 있는 아이템을 도감에서 살펴보게 해 준다."
+      },
+      {
+       "t_raw": "아이템을 처음 획득하거나 적·야생 생물을 처음 처치하면 해당 항목이 해금되고 설명을 읽을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아이템을 처음 획득하거나 적·야생 생물을 처음 처치하면 해당 항목이 해금되고 설명을 읽을 수 있다."
+      },
+      {
+       "t_raw": "튜토리얼도 관련 항목을 만나거나 발동하면 해금되며, 해금된 튜토리얼은 Archive에서 다시 볼 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "튜토리얼도 관련 항목을 만나거나 발동하면 해금되며, 해금된 튜토리얼은 도감에서 다시 볼 수 있다."
+      },
+      {
+       "t_raw": "Archive는 **7개 섹션**으로 구성되고, Equipment와 Materials에는 확장된 아이템 설명이 담긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감은 **7개 섹션**으로 구성되고, Equipment와 Materials에는 확장된 아이템 설명이 담긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Equipment",
+      "Materials"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported; the interpretation follows from A3.",
+     "quote": "A total of 3863 entries exist (as of Version 7.0).",
+     "sentences": [
+      {
+       "t_raw": "7.0 버전 기준으로 Archive에는 총 **3863개 항목**이 존재한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "7.0 버전 기준으로 도감에는 총 **3863개 항목**이 존재한다."
+      },
+      {
+       "t_raw": "모든 플레이어가 모든 항목을 해금할 수 있는 것은 아니어서, Tutorial 항목인 Show Cursor는 PC에서 플레이할 때만 해금된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모든 플레이어가 모든 항목을 해금할 수 있는 것은 아니어서, 튜토리얼 항목인 Show Cursor는 PC에서 플레이할 때만 해금된다."
+      },
+      {
+       "t_raw": "같은 메이저 버전 안에 출시될 예정인 항목은 출시 전에 Archive에 먼저 추가될 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "같은 메이저 버전 안에 출시될 예정인 항목은 출시 전에 도감에 먼저 추가될 수 있다."
+      },
+      {
+       "t_raw": "이 때문에 플레이어가 해금할 수 있는 항목 수는 플레이 기록뿐 아니라 플랫폼과 공개 일정에도 영향을 받는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 때문에 플레이어가 해금할 수 있는 항목 수는 플레이 기록뿐 아니라 플랫폼과 공개 일정에도 영향을 받는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Show Cursor",
+      "PC"
+     ]
+    },
+    {
+     "section": "구성과 분류",
+     "status": "accepted",
+     "note": "All sentences are supported by the category notes and the entry-count table headers.",
+     "quote": "Contains entries for Artifacts categorized by set with each set listing all their five artifact types.",
+     "sentences": [
+      {
+       "t_raw": "Archive는 Equipment, Living Beings, Tutorials, Geography, Travel Log, Books, Materials의 **일곱 섹션**으로 나뉜다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감은 Equipment, Living Beings, Tutorials, Geography, Travel Log, Books, Materials의 **일곱 섹션**으로 나뉜다."
+      },
+      {
+       "t_raw": "Equipment는 Weapons와 Artifacts로 세분되며, Artifacts는 세트별로 묶여 각 세트의 다섯 가지 유물 유형을 모두 모아야 항목이 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Equipment는 무기와 성유물로 세분되며, 성유물은 세트별로 묶여 각 세트의 다섯 가지 유물 유형을 모두 모아야 항목이 열린다."
+      },
+      {
+       "t_raw": "Weapons는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 alternate Ascension Appearance는 등록되어도 항목 수에 들지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무기는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 대체 Ascension Appearance는 등록되어도 항목 수에 들지 않는다.",
+       "polish": {
+        "from": "무기는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 alternate Ascension Appearance는 등록되어도 항목 수에 들지 않는다.",
+        "text": "무기는 한정 배너나 이벤트 때문에 놓칠 수 있으며, 무기의 대체 Ascension Appearance는 등록되어도 항목 수에 들지 않는다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Weapons",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Weapons",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Artifacts",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "구성과 분류",
+     "latin_left": [
+      "Equipment",
+      "Living Beings",
+      "Tutorials",
+      "Geography",
+      "Travel Log",
+      "Books",
+      "Materials",
+      "Equipment",
+      "Ascension Appearance"
+     ]
+    },
+    {
+     "section": "구성과 분류",
+     "status": "accepted",
+     "note": "All sentences are supported by A16, A28, M4, M1 and A29.",
+     "quote": "Tutorials are unlocked by encountering or triggering its relevant entry. Unlocked tutorials can be revisited in the Archive.",
+     "sentences": [
+      {
+       "t_raw": "Living Beings는 Enemies and Monsters와 Wildlife를 담고, 설명·처치 횟수·돌려 보는 모델을 제공한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Living Beings는 Enemies and Monsters와 Wildlife를 담고, 설명·처치 횟수·돌려 보는 모델을 제공한다.",
+       "polish": {
+        "from": "Living Beings는 Enemies and Monsters와 Wildlife를 담고, 설명·처치 횟수·돌려 보는 모델을 제공한다.",
+        "text": "Living Beings는 Enemies and Monsters와 Wildlife를 담고, 설명·처치 횟수·돌려 보는 모델을 제공한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Tutorials는 기본 게임플레이를 다루며, 항목을 마주치거나 발동해 해금되고 Archive에서 다시 볼 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Tutorials는 기본 게임플레이를 다루며, 항목을 마주치거나 발동해 해금되고 도감에서 다시 볼 수 있다."
+      },
+      {
+       "t_raw": "Uncategorized tutorials는 Archive에 추가되지 않으며, PC가 아닌 기기에서는 Show Cursor가 없어 System 항목이 하나 적다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Uncategorized tutorials는 도감에 추가되지 않으며, PC가 아닌 기기에서는 Show Cursor가 없어 System 항목이 하나 적다.",
+       "polish": {
+        "from": "Uncategorized tutorials는 도감에 추가되지 않으며, PC가 아닌 기기에서는 Show Cursor가 없어 System 항목이 하나 적다.",
+        "text": "Uncategorized tutorials는 도감에 추가되지 않으며, PC가 아닌 기기에서는 Show Cursor가 없어 System 항목이 하나 적다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Tutorials",
+       "paragraph": "A28",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Tutorials",
+       "paragraph": "A29",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "구성과 분류",
+     "latin_left": [
+      "Living Beings",
+      "Enemies and Monsters",
+      "Wildlife",
+      "Tutorials",
+      "Uncategorized",
+      "PC",
+      "Show Cursor",
+      "System"
+     ]
+    },
+    {
+     "section": "구성과 분류",
+     "status": "accepted",
+     "note": "All sentences are supported by A39, A91 and A92.",
+     "quote": "Contains the transcripts for Archon Quests, Story Quests, and Tribal Chronicles and allows the player to listen to the voicelines played during the quests.",
+     "sentences": [
+      {
+       "t_raw": "Geography는 Mondstadt, Liyue, Inazuma, Sumeru, Fontaine, Natlan, Nod-Krai의 Viewpoints를 담는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Geography는 몬드, 리월, 이나즈마, 수메르, 폰타인, 나타, 노드크라이의 Viewpoints를 담는다."
+      },
+      {
+       "t_raw": "Travel Log는 Archon Quests, Story Quests, Tribal Chronicles의 대본을 수록하고, 퀘스트 중 재생된 voicelines를 들을 수 있으며, 분기가 있으면 dialog options로 다른 갈래를 볼 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Travel Log는 마신 임무, 전설 임무, 부족 견문의 대본을 수록하고, 퀘스트 중 재생된 음성 대사를 들을 수 있으며, 분기가 있으면 대화 선택지로 다른 갈래를 볼 수 있다.",
+       "polish": {
+        "from": "Travel Log는 마신 임무, 전설 임무, 부족 견문의 대본을 수록하고, 퀘스트 중 재생된 voicelines를 들을 수 있으며, 분기가 있으면 dialog options로 다른 갈래를 볼 수 있다.",
+        "text": "Travel Log는 마신 임무, 전설 임무, 부족 견문의 대본을 수록하고, 퀘스트 중 재생된 음성 대사를 들을 수 있으며, 분기가 있으면 대화 선택지로 다른 갈래를 볼 수 있다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Event 퀘스트는 Travel Log에 들어가지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Event 퀘스트는 Travel Log에 들어가지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A39",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Travel Log",
+       "paragraph": "A91",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Travel Log",
+       "paragraph": "A92",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "구성과 분류",
+     "latin_left": [
+      "Geography",
+      "Viewpoints",
+      "Travel Log",
+      "Event",
+      "Travel Log"
+     ]
+    },
+    {
+     "section": "구성과 분류",
+     "status": "accepted",
+     "note": "All supported.",
+     "quote": "Since Update 1.1, books can only be accessed via the Archive, and do not take up inventory slots.",
+     "sentences": [
+      {
+       "t_raw": "Books는 Books 항목을 담고, Update 1.1 이후 책은 Archive로만 접근하며 인벤토리 슬롯을 차지하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Books는 Books 항목을 담고, Update 1.1 이후 책은 도감으로만 접근하며 인벤토리 슬롯을 차지하지 않는다."
+      },
+      {
+       "t_raw": "현재 55 book collections가 있고, 8 additional volumes가 언급되지만 얻을 수는 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 55개의 책 컬렉션이 있고, 8개의 추가 권이 언급되지만 얻을 수는 없다.",
+       "polish": {
+        "from": "현재 55 book collections가 있고, 8 additional volumes가 언급되지만 얻을 수는 없다.",
+        "text": "현재 55개의 책 컬렉션이 있고, 8개의 추가 권이 언급되지만 얻을 수는 없다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Books",
+       "paragraph": "A144",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Books",
+       "paragraph": "A145",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "구성과 분류",
+     "latin_left": [
+      "Books",
+      "Books",
+      "Update"
+     ]
+    },
+    {
+     "section": "구성과 분류",
+     "status": "accepted",
+     "note": "All supported by A155-A160, A162 and A1.",
+     "quote": "The Archive also contains extended item descriptions for Equipment and Materials.",
+     "sentences": [
+      {
+       "t_raw": "Materials에는 Teyvat's Resources, Food and Potions, Trophies, Utility Items가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Materials에는 티바트의 Resources, Food and Potions, Trophies, Utility Items가 있다.",
+       "polish": {
+        "from": "Materials에는 티바트의 Resources, Food and Potions, Trophies, Utility Items가 있다.",
+        "text": "Materials에는 티바트의 Resources, Food and Potions, Trophies, Utility Items가 있다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Teyvat's Resources는 mining, foraging, forging, purchasing, 또는 동물 포획으로 얻는 Resources를, Food and Potions는 cooking, crafting, purchasing, 또는 NPC와 대화로 얻는 Food, Food Ingredients, Potions를 담는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "티바트의 Resources는 채광, 채집, 단조, 구매, 또는 동물 포획으로 얻는 Resources를, Food and Potions는 요리, 제작, 구매, 또는 NPC와 대화로 얻는 Food, Food Ingredients, Potions를 담는다.",
+       "polish": {
+        "from": "티바트의 Resources는 mining, foraging, forging, purchasing, 또는 동물 포획으로 얻는 Resources를, Food and Potions는 cooking, crafting, purchasing, 또는 NPC와 대화로 얻는 Food, Food Ingredients, Potions를 담는다.",
+        "text": "티바트의 Resources는 채광, 채집, 단조, 구매, 또는 동물 포획으로 얻는 Resources를, Food and Potions는 요리, 제작, 구매, 또는 NPC와 대화로 얻는 Food, Food Ingredients, Potions를 담는다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Trophies는 Character Talent Materials, Character Ascension Materials, Weapon Ascension Materials, Character and Weapon Enhancement Materials를 담고 crafting, domains, monsters를 통해 얻으며, Utility Items는 Gadgets 항목을 담는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Trophies는 캐릭터 특성 소재, 캐릭터 돌파 소재, 무기 돌파 소재, Character and Weapon Enhancement Materials를 담고 제작, 비경, 몬스터를 통해 얻으며, Utility Items는 Gadgets 항목을 담는다.",
+       "polish": {
+        "from": "Trophies는 캐릭터 특성 소재, 캐릭터 돌파 소재, 무기 돌파 소재, Character and Weapon Enhancement Materials를 담고 crafting, domains, monsters를 통해 얻으며, Utility Items는 Gadgets 항목을 담는다.",
+        "text": "Trophies는 캐릭터 특성 소재, 캐릭터 돌파 소재, 무기 돌파 소재, Character and Weapon Enhancement Materials를 담고 제작, 비경, 몬스터를 통해 얻으며, Utility Items는 Gadgets 항목을 담는다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Food and Potions의 대부분은 특정 캐릭터와 조리해야 얻는 special dishes이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 special dish를 받을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Food and Potions의 대부분은 특정 캐릭터와 조리해야 얻는 특제 요리이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 특제 요리를 받을 수 있다.",
+       "polish": {
+        "from": "Food and Potions의 대부분은 특정 캐릭터와 조리해야 얻는 special dishes이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 special dish를 받을 수 있다.",
+        "text": "Food and Potions의 대부분은 특정 캐릭터와 조리해야 얻는 특제 요리이므로 한정 배너 때문에 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일에는 캐릭터가 없어도 우편으로 특제 요리를 받을 수 있다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Archive는 Equipment와 Materials에 **확장된 아이템 설명**을 제공한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감은 Equipment와 Materials에 **확장된 아이템 설명**을 제공한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Teyvat's Resources",
+       "paragraph": "A155",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Food and Potions",
+       "paragraph": "A156",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Trophies",
+       "paragraph": "A159",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Utility Items",
+       "paragraph": "A160",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "구성과 분류",
+     "latin_left": [
+      "Materials",
+      "Resources",
+      "Food and Potions",
+      "Trophies",
+      "Utility Items",
+      "Resources",
+      "Resources",
+      "Food and Potions",
+      "NPC",
+      "Food",
+      "Food Ingredients",
+      "Potions",
+      "Trophies",
+      "Character and Weapon Enhancement Materials",
+      "Utility Items",
+      "Gadgets",
+      "Food and Potions",
+      "Equipment",
+      "Materials"
+     ]
+    },
+    {
+     "section": "수집과 해금",
+     "status": "accepted",
+     "note": "All supported by A1, M4 and M1; the interpretation follows.",
+     "quote": "Tutorials are unlocked by encountering or triggering its relevant entry. Unlocked tutorials can be revisited in the Archive.",
+     "sentences": [
+      {
+       "t_raw": "Archive 항목은 아이템을 처음 획득하거나 적이나 야생동물을 처음 처치하면 열리고, 그 설명을 읽을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감 항목은 아이템을 처음 획득하거나 적이나 야생동물을 처음 처치하면 열리고, 그 설명을 읽을 수 있다."
+      },
+      {
+       "t_raw": "Tutorials는 해당 항목과 마주치거나 조건을 발동하면 해금되며, 해금된 Tutorials는 Archive에서 다시 볼 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Tutorials는 해당 항목과 마주치거나 조건을 발동하면 해금되며, 해금된 Tutorials는 도감에서 다시 볼 수 있다."
+      },
+      {
+       "t_raw": "다만 범주가 붙지 않은 Tutorials는 Archive에 추가되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 범주가 붙지 않은 Tutorials는 도감에 추가되지 않는다."
+      },
+      {
+       "t_raw": "그래서 같은 안내라도 Archive에 남는 Tutorials와 남지 않는 Tutorials가 갈리는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 같은 안내라도 도감에 남는 Tutorials와 남지 않는 Tutorials가 갈리는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "수집과 해금",
+     "latin_left": [
+      "Tutorials",
+      "Tutorials",
+      "Tutorials",
+      "Tutorials",
+      "Tutorials"
+     ]
+    },
+    {
+     "section": "수집과 해금",
+     "status": "accepted",
+     "note": "All supported by A4-A6; the interpretation is reasonable.",
+     "quote": "The entire artifact set must be obtained for the entry to be unlocked.",
+     "sentences": [
+      {
+       "t_raw": "Weapons 항목 가운데에는 한정 배너나 이벤트에서만 등장해 놓치기 쉬운 것이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무기 항목 가운데에는 한정 배너나 이벤트에서만 등장해 놓치기 쉬운 것이 있다."
+      },
+      {
+       "t_raw": "무기의 alternate Ascension Appearance를 얻으면 Archive에도 등록되지만 항목 수에는 포함되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무기의 대체 Ascension Appearance를 얻으면 도감에도 등록되지만 항목 수에는 포함되지 않는다.",
+       "polish": {
+        "from": "무기의 alternate Ascension Appearance를 얻으면 도감에도 등록되지만 항목 수에는 포함되지 않는다.",
+        "text": "무기의 대체 Ascension Appearance를 얻으면 도감에도 등록되지만 항목 수에는 포함되지 않는다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Artifacts는 세트별로 다섯 종류가 묶여 있어, 세트 전체를 모아야 해당 항목이 열린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "성유물은 세트별로 다섯 종류가 묶여 있어, 세트 전체를 모아야 해당 항목이 열린다."
+      },
+      {
+       "t_raw": "즉 Weapons와 Artifacts 쪽에서는 개별 획득으로 등록되는 사례와 세트 완성을 요구하는 사례가 갈리고, 일부 Weapons는 획득 시점 자체가 제한된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즉 무기와 성유물 쪽에서는 개별 획득으로 등록되는 사례와 세트 완성을 요구하는 사례가 갈리고, 일부 무기는 획득 시점 자체가 제한된다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Weapons",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Weapons",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Artifacts",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "수집과 해금",
+     "latin_left": [
+      "Ascension Appearance"
+     ]
+    },
+    {
+     "section": "수집과 해금",
+     "status": "accepted",
+     "note": "All supported by A156-A158; the interpretation is a fair summary.",
+     "quote": "Note: There are some food entries hidden from view until obtained in-game; this will create a discrepancy between total entries in the archive.",
+     "sentences": [
+      {
+       "t_raw": "Food and Potions에는 특정 캐릭터와 조리해야 얻는 특제 요리가 많아, 한정 배너에만 등장하는 탓에 놓치기 쉬운 항목이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Food and Potions에는 특정 캐릭터와 조리해야 얻는 특제 요리가 많아, 한정 배너에만 등장하는 탓에 놓치기 쉬운 항목이 있다.",
+       "polish": {
+        "from": "Food and Potions에는 특정 캐릭터와 조리해야 얻는 특제 요리가 많아, 한정 배너에만 등장하는 탓에 놓치기 쉬운 항목이 있다.",
+        "text": "Food and Potions에는 특정 캐릭터와 조리해야 얻는 특제 요리가 많아, 한정 배너에만 등장하는 탓에 놓치기 쉬운 항목이 있다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "캐릭터를 보유하지 않아도 생일 당일 게임에 접속하면 우편으로 그 캐릭터의 특제 요리를 받을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "캐릭터를 보유하지 않아도 생일 당일 게임에 접속하면 우편으로 그 캐릭터의 특제 요리를 받을 수 있다."
+      },
+      {
+       "t_raw": "Suspicious와 Delicious 변형이 있는 음식은 Delicious 변형을 얻어야 Archive에 등록된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Suspicious와 Delicious 변형이 있는 음식은 Delicious 변형을 얻어야 도감에 등록된다."
+      },
+      {
+       "t_raw": "일부 음식은 게임에서 획득하기 전까지 보이지 않아 전체 항목 수와 차이를 만든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일부 음식은 게임에서 획득하기 전까지 보이지 않아 전체 항목 수와 차이를 만든다."
+      },
+      {
+       "t_raw": "시간 한정 로그인 이벤트 Outland Gastronomy로 얻는 레시피 음식이 그 예이고, Special Mushroom Pizza는 Pizza From Another Land 완료 후 Kiminami Anna에게서 구매해야, Dango Milk는 Imperatrix Umbrosa Chapter 완료 후 Tomoki에게서 사야 Archive 항목으로 나타난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시간 한정 로그인 이벤트 식도락 여행기로 얻는 레시피 음식이 그 예이고, 특제 버섯피자는 이국에서 온 피자 완료 후 키미나미 안나에게서 구매해야, 경단 우유는 천하인의 장 완료 후 토모키에게서 사야 도감 항목으로 나타난다."
+      },
+      {
+       "t_raw": "즉 일부 음식 항목은 조리뿐 아니라 캐릭터 보유·생일 접속·특정 인물과의 진행 상황까지 겹쳐 열리는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즉 일부 음식 항목은 조리뿐 아니라 캐릭터 보유·생일 접속·특정 인물과의 진행 상황까지 겹쳐 열리는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Food and Potions",
+       "paragraph": "A156",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Food and Potions",
+       "paragraph": "A157",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Food and Potions",
+       "paragraph": "A158",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "수집과 해금",
+     "latin_left": [
+      "Food and Potions",
+      "Suspicious",
+      "Delicious",
+      "Delicious"
+     ]
+    },
+    {
+     "section": "수집과 해금",
+     "status": "accepted",
+     "note": "All supported by A3, A29 and A161; the interpretation is reasonable.",
+     "quote": "Note: It is only currently possible to obtain a maximum of 79 entries.",
+     "sentences": [
+      {
+       "t_raw": "모든 항목을 모든 플레이어가 해금할 수 있는 것은 아니어서, Tutorials의 Show Cursor는 PC로 플레이해야만 해금된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모든 항목을 모든 플레이어가 해금할 수 있는 것은 아니어서, Tutorials의 Show Cursor는 PC로 플레이해야만 해금된다."
+      },
+      {
+       "t_raw": "PC가 아닌 기기에서는 Show Cursor Tutorials가 없어 System 범주의 항목이 하나 적다.",
+       "interp": false,
+       "dropped": false,
+       "t": "PC가 아닌 기기에서는 Show Cursor Tutorials가 없어 System 범주의 항목이 하나 적다."
+      },
+      {
+       "t_raw": "Utility Items에서는 서로 다른 Mini Seelie 6종이 이벤트로 Archive 항목을 추가했지만, 각 이벤트에서 하나만 고를 수 있어 한 계정에서 최대 4종까지만 얻을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Utility Items에서는 서로 다른 꼬마 선령 6종이 이벤트로 도감 항목을 추가했지만, 각 이벤트에서 하나만 고를 수 있어 한 계정에서 최대 4종까지만 얻을 수 있다."
+      },
+      {
+       "t_raw": "그 결과 현재 Utility Items에서 얻을 수 있는 항목은 최대 79개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 결과 현재 Utility Items에서 얻을 수 있는 항목은 최대 79개다."
+      },
+      {
+       "t_raw": "플랫폼과 이벤트 선택 모두 Archive 완성도를 갈라놓는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "플랫폼과 이벤트 선택 모두 도감 완성도를 갈라놓는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Tutorials",
+       "paragraph": "A29",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Utility Items",
+       "paragraph": "A161",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "수집과 해금",
+     "latin_left": [
+      "Tutorials",
+      "Show Cursor",
+      "PC",
+      "PC",
+      "Show Cursor Tutorials",
+      "System",
+      "Utility Items",
+      "Utility Items"
+     ]
+    },
+    {
+     "section": "수집과 해금",
+     "status": "accepted",
+     "note": "All supported. Missing enemies, Shogunate forces, pre-release entries and missable limited-banner or event items are all in the material.",
+     "quote": "Some Shogunate forces can be encountered in Archon Quests as enemies.",
+     "sentences": [
+      {
+       "t_raw": "Living Beings의 Enemies and Monsters 쪽에도 빠져 있는 적이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Living Beings의 Enemies and Monsters 쪽에도 빠져 있는 적이 있다.",
+       "polish": {
+        "from": "Living Beings의 Enemies and Monsters 쪽에도 빠져 있는 적이 있다.",
+        "text": "Living Beings의 Enemies and Monsters 쪽에도 빠져 있는 적이 있다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "일부 Shogunate 세력은 Archon Quests에서 적으로 등장하지만, 특정 Archon Quests 밖에서 싸울 방법이 없기 때문인지 Living Beings / Enemies and Monsters 항목에서 찾을 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일부 막부 세력은 마신 임무에서 적으로 등장하지만, 특정 마신 임무 밖에서 싸울 방법이 없기 때문인지 Living Beings / Enemies and Monsters 항목에서 찾을 수 없다.",
+       "polish": {
+        "from": "일부 막부 세력은 마신 임무에서 적으로 등장하지만, 특정 마신 임무 밖에서 싸울 방법이 없기 때문인지 Living Beings / Enemies and Monsters 항목에서 찾을 수 없다.",
+        "text": "일부 막부 세력은 마신 임무에서 적으로 등장하지만, 특정 마신 임무 밖에서 싸울 방법이 없기 때문인지 Living Beings / Enemies and Monsters 항목에서 찾을 수 없다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Archive에는 같은 주 버전 번호 안에 출시될 예정인 항목이 출시 전에 미리 추가되기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감에는 같은 주 버전 번호 안에 출시될 예정인 항목이 출시 전에 미리 추가되기도 한다."
+      },
+      {
+       "t_raw": "반면 한정 배너나 이벤트에서만 등장하는 항목은 놓칠 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "반면 한정 배너나 이벤트에서만 등장하는 항목은 놓칠 수 있다."
+      },
+      {
+       "t_raw": "이처럼 Archive의 해금은 실제 조우나 획득뿐 아니라 콘텐츠가 열리는 시기와 방식에도 좌우된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 도감의 해금은 실제 조우나 획득뿐 아니라 콘텐츠가 열리는 시기와 방식에도 좌우된다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Weapons",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Shogun's Army",
+       "revision": 727683,
+       "section": "Enemies",
+       "paragraph": "M8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "수집과 해금",
+     "latin_left": [
+      "Living Beings",
+      "Enemies and Monsters",
+      "Living Beings",
+      "Enemies and Monsters"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "All supported. The 1.1 and 1.2 counts and the N/A Living Beings values match the tables.",
+     "quote": "1.1 · 642 · 151 · N/A · 68 · 27 · N/A · 100 · 296",
+     "sentences": [
+      {
+       "t_raw": "1.1의 Archive 총 항목 수는 642개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "1.1의 도감 총 항목 수는 642개다."
+      },
+      {
+       "t_raw": "1.1의 내역은 Equipment 151개, Tutorials 68개, Geography 27개, Books 100개, Materials 296개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "1.1의 내역은 Equipment 151개, Tutorials 68개, Geography 27개, Books 100개, Materials 296개다."
+      },
+      {
+       "t_raw": "1.2의 Archive 총 항목 수는 792개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "1.2의 도감 총 항목 수는 792개다."
+      },
+      {
+       "t_raw": "1.1과 1.2에는 Living Beings 항목 수가 N/A로 기록된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "1.1과 1.2에는 Living Beings 항목 수가 N/A로 기록된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A18",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A19",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A198",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A199",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Equipment",
+      "Tutorials",
+      "Geography",
+      "Books",
+      "Materials",
+      "Living Beings"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "All supported. The totals match, and 3475 − 3379 = 96.",
+     "quote": "Luna IV · 3475 · 349 · 528 · 610 · 221 · 453 · 257 · 1057",
+     "sentences": [
+      {
+       "t_raw": "Luna I의 총계는 3334개, Luna II는 3353개, Luna III는 3379개, Luna IV는 3475개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna I의 총계는 3334개, Luna II는 3353개, Luna III는 3379개, Luna IV는 3475개다."
+      },
+      {
+       "t_raw": "Luna III의 3379개와 Luna IV의 3475개를 비교하면 96개가 늘어난 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Luna III의 3379개와 Luna IV의 3475개를 비교하면 96개가 늘어난 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A200",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A201",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A202",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A203",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Luna",
+      "Luna II",
+      "Luna III",
+      "Luna IV",
+      "Luna III",
+      "Luna IV"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "All supported. The totals match, and 3657 − 3574 = 83.",
+     "quote": "Luna VIII · 3657 · 358 · 539 · 686 · 248 · 473 · 261 · 1092",
+     "sentences": [
+      {
+       "t_raw": "Luna V의 총계는 3486개, Luna VI은 3547개, Luna VII은 3574개, Luna VIII은 3657개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna V의 총계는 3486개, Luna VI은 3547개, Luna VII은 3574개, Luna VIII은 3657개다."
+      },
+      {
+       "t_raw": "Luna VII의 3574개와 Luna VIII의 3657개를 비교하면 83개가 늘어난 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Luna VII의 3574개와 Luna VIII의 3657개를 비교하면 83개가 늘어난 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A204",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A205",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A206",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A207",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Luna",
+      "Luna VI",
+      "Luna VII",
+      "Luna VIII",
+      "Luna VII",
+      "Luna VIII"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "All supported. The numbers match. Weapons rise by 8 and Artifacts by 4, so the interpretation is reasonable.",
+     "quote": "Luna IV · 349 · 228 · 121",
+     "sentences": [
+      {
+       "t_raw": "Equipment의 총계는 Luna I 337개, Luna II 340개, Luna III 343개, Luna IV 349개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Equipment의 총계는 Luna I 337개, Luna II 340개, Luna III 343개, Luna IV 349개다."
+      },
+      {
+       "t_raw": "Weapons는 220개, 223개, 226개, 228개로 늘어난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무기는 220개, 223개, 226개, 228개로 늘어난다."
+      },
+      {
+       "t_raw": "Artifacts는 Luna I부터 Luna III까지 117개로 같고 Luna IV에 121개가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "성유물은 Luna I부터 Luna III까지 117개로 같고 Luna IV에 121개가 된다."
+      },
+      {
+       "t_raw": "이 구간의 Equipment 증가는 Weapons 쪽이 이끄는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 구간의 Equipment 증가는 무기 쪽이 이끄는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Artifacts",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Artifacts",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Artifacts",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Artifacts",
+       "paragraph": "A11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Equipment",
+      "Luna",
+      "Luna II",
+      "Luna III",
+      "Luna IV",
+      "Luna",
+      "Luna III",
+      "Luna IV",
+      "Equipment"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "All supported. The numbers match the tables.",
+     "quote": "Luna VIII · 358 · 233 · 125",
+     "sentences": [
+      {
+       "t_raw": "Equipment의 총계는 Luna V 350개, Luna VI 351개, Luna VII 357개, Luna VIII 358개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Equipment의 총계는 Luna V 350개, Luna VI 351개, Luna VII 357개, Luna VIII 358개다."
+      },
+      {
+       "t_raw": "Weapons는 229개, 230개, 232개, 233개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무기는 229개, 230개, 232개, 233개다."
+      },
+      {
+       "t_raw": "Artifacts는 Luna V와 Luna VI에 121개, Luna VII와 Luna VIII에 125개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "성유물은 Luna V와 Luna VI에 121개, Luna VII와 Luna VIII에 125개다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Artifacts",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Artifacts",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Artifacts",
+       "paragraph": "A14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Artifacts",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Equipment",
+      "Luna",
+      "Luna VI",
+      "Luna VII",
+      "Luna VIII",
+      "Luna",
+      "Luna VI",
+      "Luna VII",
+      "Luna VIII"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "All figures match A20-A23.",
+     "quote": "Luna IV · 528 · 327 · 201",
+     "sentences": [
+      {
+       "t_raw": "Living Beings의 총계는 Luna I 515개, Luna II 516개, Luna III 518개, Luna IV 528개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Living Beings의 총계는 Luna I 515개, Luna II 516개, Luna III 518개, Luna IV 528개다."
+      },
+      {
+       "t_raw": "Enemies and Monsters는 318개, 319개, 320개, 327개이고 Wildlife는 197개, 197개, 198개, 201개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Enemies and Monsters는 318개, 319개, 320개, 327개이고 Wildlife는 197개, 197개, 198개, 201개다.",
+       "polish": {
+        "from": "Enemies and Monsters는 318개, 319개, 320개, 327개이고 Wildlife는 197개, 197개, 198개, 201개다.",
+        "text": "Enemies and Monsters는 318개, 319개, 320개, 327개이고 Wildlife는 197개, 197개, 198개, 201개다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Luna III의 Enemies and Monsters는 320개, Wildlife는 198개이고 Luna IV는 327개와 201개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna III의 Enemies and Monsters는 320개, Wildlife는 198개이고 Luna IV는 327개와 201개다.",
+       "polish": {
+        "from": "Luna III의 Enemies and Monsters는 320개, Wildlife는 198개이고 Luna IV는 327개와 201개다.",
+        "text": "Luna III의 Enemies and Monsters는 320개, Wildlife는 198개이고 Luna IV는 327개와 201개다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A21",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A23",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Living Beings",
+      "Luna",
+      "Luna II",
+      "Luna III",
+      "Luna IV",
+      "Enemies and Monsters",
+      "Wildlife",
+      "Luna III",
+      "Enemies and Monsters",
+      "Wildlife",
+      "Luna IV"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "All figures and the Luna V to VI changes match A24-A27.",
+     "quote": "Luna VIII · 539 · 332 · 207",
+     "sentences": [
+      {
+       "t_raw": "Living Beings의 총계는 Luna V 529개, Luna VI 535개, Luna VII 536개, Luna VIII 539개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Living Beings의 총계는 Luna V 529개, Luna VI 535개, Luna VII 536개, Luna VIII 539개다."
+      },
+      {
+       "t_raw": "Enemies and Monsters는 328개, 330개, 331개, 332개이고 Wildlife는 201개, 205개, 205개, 207개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Enemies and Monsters는 328개, 330개, 331개, 332개이고 Wildlife는 201개, 205개, 205개, 207개다.",
+       "polish": {
+        "from": "Enemies and Monsters는 328개, 330개, 331개, 332개이고 Wildlife는 201개, 205개, 205개, 207개다.",
+        "text": "Enemies and Monsters는 328개, 330개, 331개, 332개이고 Wildlife는 201개, 205개, 205개, 207개다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Luna V에서 Luna VI로 Wildlife가 201개에서 205개로 늘고, Enemies and Monsters도 328개에서 330개가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna V에서 Luna VI로 Wildlife가 201개에서 205개로 늘고, Enemies and Monsters도 328개에서 330개가 된다.",
+       "polish": {
+        "from": "Luna V에서 Luna VI로 Wildlife가 201개에서 205개로 늘고, Enemies and Monsters도 328개에서 330개가 된다.",
+        "text": "Luna V에서 Luna VI로 Wildlife가 201개에서 205개로 늘고, Enemies and Monsters도 328개에서 330개가 된다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Living Beings",
+       "paragraph": "A27",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Living Beings",
+      "Luna",
+      "Luna VI",
+      "Luna VII",
+      "Luna VIII",
+      "Enemies and Monsters",
+      "Wildlife",
+      "Luna",
+      "Luna VI",
+      "Wildlife",
+      "Enemies and Monsters"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "Figures match A31, A34, A36, A37 and A38. The interpretation is reasonable: Adventure rose 92 of the 106-entry total increase.",
+     "quote": "Luna VIII · 686 · 23 · 150 · 39 · 474",
+     "sentences": [
+      {
+       "t_raw": "Tutorials의 총계는 Luna I 580개, Luna IV 610개, Luna VI 641개, Luna VII 643개, Luna VIII 686개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Tutorials의 총계는 Luna I 580개, Luna IV 610개, Luna VI 641개, Luna VII 643개, Luna VIII 686개다."
+      },
+      {
+       "t_raw": "Luna I의 내역은 Elements 21개, Enemies 142개, System 35개, Adventure 382개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna I의 내역은 Elements 21개, Enemies 142개, System 35개, Adventure 382개다."
+      },
+      {
+       "t_raw": "Luna VIII의 내역은 Elements 23개, Enemies 150개, System 39개, Adventure 474개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna VIII의 내역은 Elements 23개, Enemies 150개, System 39개, Adventure 474개다."
+      },
+      {
+       "t_raw": "Adventure 항목이 382개에서 474개로 늘어난 것이 총계 상승의 큰 부분을 차지한 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Adventure 항목이 382개에서 474개로 늘어난 것이 총계 상승의 큰 부분을 차지한 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Tutorials",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Tutorials",
+       "paragraph": "A34",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Tutorials",
+       "paragraph": "A36",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Tutorials",
+       "paragraph": "A37",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Tutorials",
+       "paragraph": "A38",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Tutorials",
+      "Luna",
+      "Luna IV",
+      "Luna VI",
+      "Luna VII",
+      "Luna VIII",
+      "Luna",
+      "Elements",
+      "Enemies",
+      "System",
+      "Adventure",
+      "Luna VIII",
+      "Elements",
+      "Enemies",
+      "System",
+      "Adventure",
+      "Adventure"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "All figures match the table rows. The interpretation is reasonable.",
+     "quote": "Luna I · 212 · 10 · 40 · 18 · 52 · 37 · 42 · 13 · N/A · N/A",
+     "sentences": [
+      {
+       "t_raw": "Geography의 1.1 총계는 27개이며, Mondstadt 10개와 Liyue 17개로 이루어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Geography의 1.1 총계는 27개이며, 몬드 10개와 리월 17개로 이루어진다."
+      },
+      {
+       "t_raw": "2.0은 37개로 Inazuma 10개, 3.0은 71개로 Sumeru 16개, 4.0은 125개로 Fontaine 18개, 5.0은 171개로 Natlan 14개, Luna I은 212개로 Nod-Krai 13개가 표에 잡힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "2.0은 37개로 이나즈마 10개, 3.0은 71개로 수메르 16개, 4.0은 125개로 폰타인 18개, 5.0은 171개로 나타 14개, Luna I은 212개로 노드크라이 13개가 표에 잡힌다."
+      },
+      {
+       "t_raw": "판본이 진행되며 지역 열이 늘고 총계가 올라가는 모습은 새 지역 항목이 더해진 결과로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "판본이 진행되며 지역 열이 늘고 총계가 올라가는 모습은 새 지역 항목이 더해진 결과로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A41",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A47",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A56",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A65",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A74",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A83",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Geography",
+      "Luna"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "Figures match. The Nod-Krai (+28), Mondstadt (+3) and Temple of Space (+5) increases sum to the full +36 total rise, so the interpretation holds.",
+     "quote": "Luna VIII · 248 · 13 · 40 · 18 · 52 · 37 · 42 · 41 · N/A · 5",
+     "sentences": [
+      {
+       "t_raw": "Geography의 총계는 Luna I 212개, Luna IV 221개, Luna VI 229개, Luna VIII 248개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Geography의 총계는 Luna I 212개, Luna IV 221개, Luna VI 229개, Luna VIII 248개다."
+      },
+      {
+       "t_raw": "Nod-Krai는 Luna I 13개, Luna IV 22개, Luna VIII 41개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노드크라이는 Luna I 13개, Luna IV 22개, Luna VIII 41개다."
+      },
+      {
+       "t_raw": "Mondstadt는 Luna VI에 13개가 되고, Temple of Space 5개가 나타난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드는 Luna VI에 13개가 되고, 공간의 신전 5개가 나타난다."
+      },
+      {
+       "t_raw": "Luna I부터 Luna VIII까지 Geography의 증가는 Nod-Krai와 Mondstadt, Temple of Space 쪽 변화가 주도한 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Luna I부터 Luna VIII까지 Geography의 증가는 노드크라이와 몬드, 공간의 신전 쪽 변화가 주도한 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A83",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A86",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A88",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Geography",
+       "paragraph": "A90",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Geography",
+      "Luna",
+      "Luna IV",
+      "Luna VI",
+      "Luna VIII",
+      "Luna",
+      "Luna IV",
+      "Luna VIII",
+      "Luna VI",
+      "Luna",
+      "Luna VIII",
+      "Geography"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "All figures match A109, A118, A127, A136, A139 and A143.",
+     "quote": "Luna IV · 453 · 206 · 201 · 33 · 13",
+     "sentences": [
+      {
+       "t_raw": "Travel Log는 3.0 221개, 4.0 273개, 5.0 350개, Luna I 418개, Luna VIII 473개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Travel Log는 3.0 221개, 4.0 273개, 5.0 350개, Luna I 418개, Luna VIII 473개다."
+      },
+      {
+       "t_raw": "Luna I의 내역은 Archon Quests 189개, Story Quests 196개, Tribal Chronicles 33개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna I의 내역은 마신 임무 189개, 전설 임무 196개, 부족 견문 33개다."
+      },
+      {
+       "t_raw": "Luna IV에는 Event Quests 13개가 표에 잡히고, Luna VIII에는 17개가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna IV에는 Event Quests 13개가 표에 잡히고, Luna VIII에는 17개가 된다."
+      },
+      {
+       "t_raw": "Tribal Chronicles는 Luna I과 Luna VIII 모두 33개로 같다.",
+       "interp": false,
+       "dropped": false,
+       "t": "부족 견문은 Luna I과 Luna VIII 모두 33개로 같다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Travel Log",
+       "paragraph": "A109",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Travel Log",
+       "paragraph": "A118",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Travel Log",
+       "paragraph": "A127",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Travel Log",
+       "paragraph": "A136",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Travel Log",
+       "paragraph": "A139",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Travel Log",
+       "paragraph": "A143",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Travel Log",
+      "Luna",
+      "Luna VIII",
+      "Luna",
+      "Luna IV",
+      "Event Quests",
+      "Luna VIII",
+      "Luna",
+      "Luna VIII"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "All figures match the Books table.",
+     "quote": "Luna VIII · 261",
+     "sentences": [
+      {
+       "t_raw": "Books의 총계는 Luna I, Luna II, Luna III 모두 254개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Books의 총계는 Luna I, Luna II, Luna III 모두 254개다."
+      },
+      {
+       "t_raw": "Luna IV는 257개, Luna VI은 259개, Luna VIII은 261개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna IV는 257개, Luna VI은 259개, Luna VIII은 261개다."
+      },
+      {
+       "t_raw": "Luna I에서 Luna VIII까지 Books의 총계는 254개에서 261개로 늘어난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna I에서 Luna VIII까지 Books의 총계는 254개에서 261개로 늘어난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Books",
+       "paragraph": "A147",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Books",
+       "paragraph": "A148",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Books",
+       "paragraph": "A149",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Books",
+       "paragraph": "A150",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Books",
+       "paragraph": "A152",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Books",
+       "paragraph": "A154",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Books",
+      "Luna",
+      "Luna II",
+      "Luna III",
+      "Luna IV",
+      "Luna VI",
+      "Luna VIII",
+      "Luna",
+      "Luna VIII",
+      "Books"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "Numbers match. Food and Potions rises by 40, the largest change, so the interpretation holds.",
+     "quote": "Luna VIII · 1092 · 115 · 470 · 420 · 87",
+     "sentences": [
+      {
+       "t_raw": "Materials의 총계는 Luna I 1018개, Luna IV 1057개, Luna VIII 1092개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Materials의 총계는 Luna I 1018개, Luna IV 1057개, Luna VIII 1092개다."
+      },
+      {
+       "t_raw": "Luna I의 내역은 Teyvat's Resources 110개, Food and Potions 430개, Trophies 399개, Utility Items 79개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna I의 내역은 티바트의 Resources 110개, Food and Potions 430개, Trophies 399개, Utility Items 79개다.",
+       "polish": {
+        "from": "Luna I의 내역은 티바트의 Resources 110개, Food and Potions 430개, Trophies 399개, Utility Items 79개다.",
+        "text": "Luna I의 내역은 티바트의 Resources 110개, Food and Potions 430개, Trophies 399개, Utility Items 79개다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Luna VIII에는 Teyvat's Resources 115개, Food and Potions 470개, Trophies 420개, Utility Items 87개가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna VIII에는 티바트의 Resources 115개, Food and Potions 470개, Trophies 420개, Utility Items 87개가 된다.",
+       "polish": {
+        "from": "Luna VIII에는 티바트의 Resources 115개, Food and Potions 470개, Trophies 420개, Utility Items 87개가 된다.",
+        "text": "Luna VIII에는 티바트의 Resources 115개, Food and Potions 470개, Trophies 420개, Utility Items 87개가 된다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Food and Potions가 430개에서 470개로 늘어난 변화가 가장 큰 축으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Food and Potions가 430개에서 470개로 늘어난 변화가 가장 큰 축으로 보인다.",
+       "polish": {
+        "from": "Food and Potions가 430개에서 470개로 늘어난 변화가 가장 큰 축으로 보인다.",
+        "text": "Food and Potions가 430개에서 470개로 늘어난 변화가 가장 큰 축으로 보인다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Utility Items",
+       "paragraph": "A163",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Utility Items",
+       "paragraph": "A166",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Utility Items",
+       "paragraph": "A170",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Materials",
+      "Luna",
+      "Luna IV",
+      "Luna VIII",
+      "Luna",
+      "Resources",
+      "Food and Potions",
+      "Trophies",
+      "Utility Items",
+      "Luna VIII",
+      "Resources",
+      "Food and Potions",
+      "Trophies",
+      "Utility Items",
+      "Food and Potions"
+     ]
+    },
+    {
+     "section": "판본별 변동",
+     "status": "accepted",
+     "note": "3863, 3657 and the hidden food entries are all stated, and the link between them is hedged.",
+     "quote": "A total of 3863 entries exist (as of Version 7.0).",
+     "sentences": [
+      {
+       "t_raw": "7.0 기준 Archive에는 총 **3863**개 항목이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "7.0 기준 도감에는 총 **3863**개 항목이 있다."
+      },
+      {
+       "t_raw": "Luna VIII의 분류별 합계는 **3657**개다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Luna VIII의 분류별 합계는 **3657**개다."
+      },
+      {
+       "t_raw": "일부 음식 항목은 획득 전까지 보이지 않아 Archive 총 항목 수와 차이를 만든다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일부 음식 항목은 획득 전까지 보이지 않아 도감 총 항목 수와 차이를 만든다."
+      },
+      {
+       "t_raw": "7.0 전체 3863개와 Luna VIII 분류표 합계 3657개의 차이는 이런 보이지 않는 항목과 관련될 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "7.0 전체 3863개와 Luna VIII 분류표 합계 3657개의 차이는 이런 보이지 않는 항목과 관련될 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Food and Potions",
+       "paragraph": "A158",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Entry Counts",
+       "paragraph": "A207",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "판본별 변동",
+     "latin_left": [
+      "Luna VIII",
+      "Luna VIII"
+     ]
+    },
+    {
+     "section": "세계관 속의 Archive",
+     "status": "accepted",
+     "note": "Both quotes are supported, and the interpretation is modest.",
+     "quote": "So Neuvillette maintains an archive of case files? Guess that's the hardworking Chief Justice for you...",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Neuvillette가 사건 파일 아카이브를 관리한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 느비예트가 사건 파일 아카이브를 관리한다고 말한다."
+      },
+      {
+       "t_raw": "Navia는 후속 사건에 관한 정보를 보고하고 아카이브에 기록하러 왔다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아는 후속 사건에 관한 정보를 보고하고 아카이브에 기록하러 왔다고 밝힌다."
+      },
+      {
+       "t_raw": "두 대사는 **사건 파일 아카이브**가 사건 정보의 보고와 기록이라는 절차와 맞닿아 있음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 대사는 **사건 파일 아카이브**가 사건 정보의 보고와 기록이라는 절차와 맞닿아 있음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Navia"
+      }
+     ],
+     "heading": "세계관 속의 도감",
+     "latin_left": []
+    },
+    {
+     "section": "세계관 속의 Archive",
+     "status": "accepted",
+     "note": "Each claim is supported by the quotes and wiki text.",
+     "quote": "...Wait, why is this in the Arcane Archive?",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 어떤 항목이 **Arcane Archive**에 들어 있는 것을 보고 의아해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 어떤 항목이 **Arcane Archive**에 들어 있는 것을 보고 의아해한다."
+      },
+      {
+       "t_raw": "Customs of Liyue: Flower Ball이 Book Archive에 추가된다는 대사가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "리월 풍토지: Flower Ball이 Book Archive에 추가된다는 대사가 있다."
+      },
+      {
+       "t_raw": "House of Daena의 일부 책은 Archive에 들어가지 않고 Quest Items로 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁의 일부 책은 도감에 들어가지 않고 퀘스트 아이템으로 남는다."
+      },
+      {
+       "t_raw": "Osse는 어떤 대상이 아카이브에 더 가깝다고 말하면서 상대의 설명도 틀리지 않다고 인정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "우스는 어떤 대상이 아카이브에 더 가깝다고 말하면서 상대의 설명도 틀리지 않다고 인정한다."
+      },
+      {
+       "t_raw": "이 사례들은 Archive라는 이름의 기록 공간이 하나로 끝나지 않고, 무엇을 Archive에 넣고 무엇을 Quest Items로 남길지가 나뉘는 양상을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 사례들은 도감라는 이름의 기록 공간이 하나로 끝나지 않고, 무엇을 도감에 넣고 무엇을 퀘스트 아이템으로 남길지가 나뉘는 양상을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Scrolls and Sword Manuals of Guhua",
+       "quest_ko": "고화 검보",
+       "version": "4.4",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "wiki",
+       "page": "Soraya",
+       "revision": 1539103,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": "Books > Quest Items",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Underwater Nocturne",
+       "quest_ko": "수중 야상곡",
+       "version": "4.6",
+       "speaker": "Osse"
+      }
+     ],
+     "heading": "세계관 속의 도감",
+     "latin_left": [
+      "Arcane Archive",
+      "Flower Ball",
+      "Book Archive"
+     ]
+    },
+    {
+     "section": "세계관 속의 Archive",
+     "status": "accepted",
+     "note": "Each claim is supported by M5-M7, and the interpretation is reasonable.",
+     "quote": "The Eye of Graeae's Prime Ice Construct Archive contains information about Prime Ice Constructs that have been unlocked via blueprints.",
+     "sentences": [
+      {
+       "t_raw": "Eye of Graeae의 **Prime Ice Construct Archive**는 설계도로 해금한 Prime Ice Construct 정보를 담고, Eye of Graeae의 가젯 인터페이스에서 접근된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「잿빛 눈동자」의 **순얼음 창조물 도감**은 설계도로 해금한 순얼음 창조물 정보를 담고, 「잿빛 눈동자」의 가젯 인터페이스에서 접근된다."
+      },
+      {
+       "t_raw": "일부 Prime Ice Construct는 탐험을 통해 대체 외형을 해금할 수 있으며, 그 외형은 Archive나 Prime Ice Construct를 배치할 때 Construct Details에서 보고 기본으로 설정할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일부 순얼음 창조물은 탐험을 통해 대체 외형을 해금할 수 있으며, 그 외형은 도감이나 순얼음 창조물을 배치할 때 설치물 상세 정보에서 보고 기본으로 설정할 수 있다."
+      },
+      {
+       "t_raw": "Starlight Prism은 Archive에 목록으로 오르지 않지만 Prism Mirage를 활성화해 만들어진 것이며 Prime Ice Construct와 비슷하게 행동한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "별빛 프리즘은 도감에 목록으로 오르지 않지만 프리즘 신기루를 활성화해 만들어진 것이며 순얼음 창조물과 비슷하게 행동한다."
+      },
+      {
+       "t_raw": "이 사례는 Archive라는 이름 아래에 해금 정보, 외형 설정, 목록 밖의 유사 개체가 함께 얽혀 있음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 사례는 도감라는 이름 아래에 해금 정보, 외형 설정, 목록 밖의 유사 개체가 함께 얽혀 있음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Prime Ice",
+       "revision": 2177252,
+       "section": "Prime Ice Constructs > Prime Ice Construct Archive",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Prime Ice",
+       "revision": 2177252,
+       "section": "Prime Ice Constructs > Prime Ice Construct Archive",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Prime Ice",
+       "revision": 2177252,
+       "section": "Prime Ice Constructs > Prime Ice Construct Appearance",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "세계관 속의 도감",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by the dialogue lines.",
+     "quote": "Linnea! Yes, I'm back. But my archive isn't quite complete yet, so our showdown will have to wait.",
+     "sentences": [
+      {
+       "t_raw": "Helka는 자신의 archive가 아직 완성되지 않아 Linnea와의 대결을 미뤄야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "헬카는 자신의 도감이 아직 완성되지 않아 린네아와의 대결을 미뤄야 한다고 말한다.",
+       "polish": {
+        "from": "헬카는 자신의 archive가 아직 완성되지 않아 린네아와의 대결을 미뤄야 한다고 말한다.",
+        "text": "헬카는 자신의 도감이 아직 완성되지 않아 린네아와의 대결을 미뤄야 한다고 말한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Linnea는 자신의 archive에 새 항목을 추가하는 일도 영감을 모으는 일에 해당하는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "린네아는 자신의 도감에 새 항목을 추가하는 일도 영감을 모으는 일에 해당하는지 묻는다.",
+       "polish": {
+        "from": "린네아는 자신의 archive에 새 항목을 추가하는 일도 영감을 모으는 일에 해당하는지 묻는다.",
+        "text": "린네아는 자신의 도감에 새 항목을 추가하는 일도 영감을 모으는 일에 해당하는지 묻는다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Rerir는 누군가를 archive에 들어갈 또 한 명의 이름 없는 자라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "레리르는 누군가를 도감에 들어갈 또 한 명의 이름 없는 자라고 부른다.",
+       "polish": {
+        "from": "레리르는 누군가를 archive에 들어갈 또 한 명의 이름 없는 자라고 부른다.",
+        "text": "레리르는 누군가를 도감에 들어갈 또 한 명의 이름 없는 자라고 부른다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Osse는 어떤 설명이 archive에 더 가깝지만 상대의 설명도 틀리지는 않다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "우스는 어떤 설명이 도감에 더 가깝지만 상대의 설명도 틀리지는 않다고 말한다.",
+       "polish": {
+        "from": "우스는 어떤 설명이 archive에 더 가깝지만 상대의 설명도 틀리지는 않다고 말한다.",
+        "text": "우스는 어떤 설명이 도감에 더 가깝지만 상대의 설명도 틀리지는 않다고 말한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "이 대화들을 묶어 보면 Archive는 각자가 채우는 **각자의 Archive**이자 누군가를 분류하는 표현으로도 쓰이는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 대화들을 묶어 보면 도감은 각자가 채우는 **각자의 도감**이자 누군가를 분류하는 표현으로도 쓰이는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Animal Research: Frostfin Whales",
+       "quest_ko": "동물 조사・서리 범고래",
+       "version": "Luna VI",
+       "speaker": "Helka"
+      },
+      {
+       "kind": "quest",
+       "quest": "Special Research: Melusine?",
+       "quest_ko": "특별 조사・멜뤼진?",
+       "version": "Luna VI",
+       "speaker": "Linnea"
+      },
+      {
+       "kind": "quest",
+       "quest": "All Is Foretold",
+       "quest_ko": "예언",
+       "version": "Luna II",
+       "speaker": "Rerir"
+      },
+      {
+       "kind": "quest",
+       "quest": "Underwater Nocturne",
+       "quest_ko": "수중 야상곡",
+       "version": "4.6",
+       "speaker": "Osse"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "We're here today to report and archive some information on a follow-up case.",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 어떤 대상이 Arcane Archive에 있는 이유를 의아해한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 어떤 대상이 Arcane Archive에 있는 이유를 의아해한다."
+      },
+      {
+       "t_raw": "Paimon은 Neuvillette가 사건 파일 아카이브를 관리하는지 묻고, 그를 일 잘하는 Chief Justice라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 느비예트가 사건 파일 아카이브를 관리하는지 묻고, 그를 일 잘하는 최고 심판관라고 말한다."
+      },
+      {
+       "t_raw": "Navia는 후속 사건 정보를 보고하고 아카이브에 기록하러 왔다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아는 후속 사건 정보를 보고하고 아카이브에 기록하러 왔다고 말한다."
+      },
+      {
+       "t_raw": "Arcane Archive, **사건 파일 아카이브**, 후속 사건의 보고가 한데 놓이면서 Archive가 여러 맥락의 기록을 가리키는 이름으로도 쓰이는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "Arcane Archive, **사건 파일 아카이브**, 후속 사건의 보고가 한데 놓이면서 도감이 여러 맥락의 기록을 가리키는 이름으로도 쓰이는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Scrolls and Sword Manuals of Guhua",
+       "quest_ko": "고화 검보",
+       "version": "4.4",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Navia"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Arcane Archive",
+      "Arcane Archive"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "The following books are kept as Quest Items instead of being added to the Archive.",
+     "sentences": [
+      {
+       "t_raw": "House of Daena에서는 일부 책이 Archive에 추가되는 대신 Quest Items로 보관된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지혜궁에서는 일부 책이 도감에 추가되는 대신 퀘스트 아이템으로 보관된다."
+      },
+      {
+       "t_raw": "Soraya의 대화에서는 Customs of Liyue: Flower Ball이 Book Archive에 추가된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소라야의 대화에서는 리월 풍토지: Flower Ball이 Book Archive에 추가된다."
+      },
+      {
+       "t_raw": "Eye of Graeae의 Prime Ice Construct Archive는 청사진으로 해금한 Prime Ice Constructs 정보를 담고, Eye of Graeae의 가젯 인터페이스에서 접근할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「잿빛 눈동자」의 순얼음 창조물 도감은 청사진으로 해금한 순얼음 창조물 정보를 담고, 「잿빛 눈동자」의 가젯 인터페이스에서 접근할 수 있다."
+      },
+      {
+       "t_raw": "책을 Quest Items로 남기는 House of Daena와 Book Archive, 청사진으로 여는 **Prime Ice Construct Archive**를 나란히 보면 Archive가 수집과 보관의 경로가 다른 기록 체계로 갈라지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "책을 퀘스트 아이템으로 남기는 지혜궁과 Book Archive, 청사진으로 여는 **순얼음 창조물 도감**을 나란히 보면 도감이 수집과 보관의 경로가 다른 기록 체계로 갈라지는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Soraya",
+       "revision": 1539103,
+       "section": "Dialogue",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "House of Daena",
+       "revision": 848996,
+       "section": "Books > Quest Items",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Prime Ice",
+       "revision": 2177252,
+       "section": "Prime Ice Constructs > Prime Ice Construct Archive",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Flower Ball",
+      "Book Archive",
+      "Book Archive"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by the wiki notes.",
+     "quote": "There are some food entries hidden from view until obtained in-game; this will create a discrepancy between total entries in the archive.",
+     "sentences": [
+      {
+       "t_raw": "Archive의 빈틈은 먼저 **플랫폼과 획득 경로**에서 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감의 빈틈은 먼저 **플랫폼과 획득 경로**에서 드러난다."
+      },
+      {
+       "t_raw": "Tutorial의 “Show Cursor” 항목은 PC로 플레이해야 해금할 수 있어 모든 플레이어가 모든 항목을 열 수 있는 것은 아니다.",
+       "interp": false,
+       "dropped": false,
+       "t": "튜토리얼의 “Show Cursor” 항목은 PC로 플레이해야 해금할 수 있어 모든 플레이어가 모든 항목을 열 수 있는 것은 아니다."
+      },
+      {
+       "t_raw": "일부 특제 요리 항목은 한정 배너에만 등장해 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일 당일 게임에 접속하면 해당 캐릭터가 없어도 우편으로 받을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일부 특제 요리 항목은 한정 배너에만 등장해 놓치기 쉬운 항목으로 여겨질 수 있지만, 캐릭터 생일 당일 게임에 접속하면 해당 캐릭터가 없어도 우편으로 받을 수 있다."
+      },
+      {
+       "t_raw": "일부 음식 항목은 얻기 전까지 보이지 않아 전체 항목 수와 표시되는 항목 수 사이에 차이가 생기며, Outland Gastronomy의 음식이 그 예로 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일부 음식 항목은 얻기 전까지 보이지 않아 전체 항목 수와 표시되는 항목 수 사이에 차이가 생기며, 식도락 여행기의 음식이 그 예로 제시된다."
+      },
+      {
+       "t_raw": "Special Mushroom Pizza는 Pizza From Another Land 완료 뒤 Kiminami Anna에게서, Dango Milk는 Imperatrix Umbrosa Chapter 완료 뒤 Tomoki에게서 구매해야 Archive 항목으로 나타난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특제 버섯피자는 이국에서 온 피자 완료 뒤 키미나미 안나에게서, 경단 우유는 천하인의 장 완료 뒤 토모키에게서 구매해야 도감 항목으로 나타난다."
+      },
+      {
+       "t_raw": "이 조건들은 Archive의 항목 수가 모든 플레이어가 볼 수 있는 항목 수와 같지 않음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 조건들은 도감의 항목 수가 모든 플레이어가 볼 수 있는 항목 수와 같지 않음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Food and Potions",
+       "paragraph": "A156",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Food and Potions",
+       "paragraph": "A158",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Show Cursor",
+      "PC"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is hedged.",
+     "quote": "It is only currently possible to obtain a maximum of 79 entries.",
+     "sentences": [
+      {
+       "t_raw": "Utility Items에서 얻을 수 있는 항목 수는 최대 79개로 제한된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Utility Items에서 얻을 수 있는 항목 수는 최대 79개로 제한된다."
+      },
+      {
+       "t_raw": "게임 내 이벤트로 6종의 Mini Seelie가 등장해 각각 Archive 항목을 추가하지만, 이벤트마다 하나를 선택할 수 있어 한 계정에서는 지금까지 최대 4종만 얻을 수 있기 때문이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게임 내 이벤트로 6종의 꼬마 선령이 등장해 각각 도감 항목을 추가하지만, 이벤트마다 하나를 선택할 수 있어 한 계정에서는 지금까지 최대 4종만 얻을 수 있기 때문이다."
+      },
+      {
+       "t_raw": "6종의 존재와 계정당 4종 제한이 맞물려, Mini Seelie 컬렉션은 항목 수 자체보다 선택의 흔적을 남기는 구조로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "6종의 존재와 계정당 4종 제한이 맞물려, 꼬마 선령 컬렉션은 항목 수 자체보다 선택의 흔적을 남기는 구조로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Utility Items",
+       "paragraph": "A161",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Utility Items"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "trimmed",
+     "note": "Calling the gaps a \"실수\" (mistake) is not stated. The material only lists the missing entries. M8 even suggests the Shogunate omission is likely intentional, because those enemies can't be fought outside specific quests.",
+     "quote": "Items of the following Archive categories are missing an entry despite their presence in gameplay:",
+     "sentences": [
+      {
+       "t_raw": "게임플레이에는 있는데도 Archive 항목이 없는 대상도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게임플레이에는 있는데도 도감 항목이 없는 대상도 있다."
+      },
+      {
+       "t_raw": "Equipment에서는 Dark Iron Sword가, Enemies and Monsters에서는 Hydro Mimics와 Millelith, Shogunate Samurai 등이 누락되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Equipment에서는 암철검이, Enemies and Monsters에서는 Hydro Mimics와 천암군, 막부 무사 등이 누락되어 있다.",
+       "polish": {
+        "from": "Equipment에서는 암철검이, Enemies and Monsters에서는 Hydro Mimics와 천암군, 막부 무사 등이 누락되어 있다.",
+        "text": "Equipment에서는 암철검이, Enemies and Monsters에서는 Hydro Mimics와 천암군, 막부 무사 등이 누락되어 있다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Wildlife에서는 Lucklight Fly와 Malachitin Lumibug를 제외한 Butterflies and Fireflies와 Venerable Jadestone Turtle이, Materials에서는 Strange Tooth, Crocodile Jerky, A Magical Mix, Fishing Rods, “Yelena”가 같은 목록에 오른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Wildlife에서는 행운의 빛 벌레와 옥빛 벌레를 제외한 Butterflies and Fireflies와 고대 패옥 거북이, Materials에서는 기이한 「이빨」, 악어 육포, A Magical Mix, Fishing Rods, “옐레나”가 같은 목록에 오른다.",
+       "polish": {
+        "from": "Wildlife에서는 행운의 빛 벌레와 옥빛 벌레를 제외한 Butterflies and Fireflies와 고대 패옥 거북이, Materials에서는 기이한 「이빨」, 악어 육포, A Magical Mix, Fishing Rods, “옐레나”가 같은 목록에 오른다.",
+        "text": "Wildlife에서는 행운의 빛 벌레와 옥빛 벌레를 제외한 Butterflies and Fireflies와 고대 패옥 거북이, Materials에서는 기이한 「이빨」, 악어 육포, A Magical Mix, Fishing Rods, “옐레나”가 같은 목록에 오른다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Equipment, Living Beings, Materials라는 서로 다른 갈래에서 누락이 확인되는 만큼, 이 빈틈은 한 분류에 국한된 실수가 아니라 **여러 분류에 걸친 수록 공백**으로 보인다.",
+       "interp": true,
+       "dropped": true,
+       "t": "Equipment, Living Beings, Materials라는 서로 다른 갈래에서 누락이 확인되는 만큼, 이 빈틈은 한 분류에 국한된 실수가 아니라 **여러 분류에 걸친 수록 공백**으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Missing Information",
+       "paragraph": "A171",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Missing Information",
+       "paragraph": "A172",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Missing Information",
+       "paragraph": "A174",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Missing Information",
+       "paragraph": "A175",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Missing Information",
+       "paragraph": "A176",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Missing Information",
+       "paragraph": "A177",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Equipment",
+      "Enemies and Monsters",
+      "Hydro Mimics",
+      "Wildlife",
+      "Butterflies and Fireflies",
+      "Materials",
+      "Magical Mix",
+      "Fishing Rods"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by M1, M5, M8 and the Missing Information list.",
+     "quote": "Although they are not listed in the Archive, Starlight Prisms that were created by activating a Prism Mirage behave similarly to Prime Ice Constructs.",
+     "sentences": [
+      {
+       "t_raw": "Archive에 담기지 않는 사례는 누락 목록 밖에도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도감에 담기지 않는 사례는 누락 목록 밖에도 있다."
+      },
+      {
+       "t_raw": "Uncategorized tutorials는 Archive에 추가되지 않으며, Starlight Prisms는 Prism Mirage로 만들어져도 Archive에 실리지 않고 Prime Ice Constructs와 비슷하게 행동한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Uncategorized tutorials는 도감에 추가되지 않으며, Starlight Prisms는 프리즘 신기루로 만들어져도 도감에 실리지 않고 순얼음 창조물과 비슷하게 행동한다.",
+       "polish": {
+        "from": "Uncategorized tutorials는 도감에 추가되지 않으며, Starlight Prisms는 프리즘 신기루로 만들어져도 도감에 실리지 않고 순얼음 창조물과 비슷하게 행동한다.",
+        "text": "Uncategorized tutorials는 도감에 추가되지 않으며, Starlight Prisms는 프리즘 신기루로 만들어져도 도감에 실리지 않고 순얼음 창조물과 비슷하게 행동한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Shogunate forces는 Archon Quests에서 적으로 등장하지만 “Living Beings / Enemies and Monsters”에서 찾을 수 없고, 특정 Archon Quests 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "막부 병력은 마신 임무에서 적으로 등장하지만 “Living Beings / Enemies and Monsters”에서 찾을 수 없고, 특정 마신 임무 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
+       "polish": {
+        "from": "막부 forces는 마신 임무에서 적으로 등장하지만 “Living Beings / Enemies and Monsters”에서 찾을 수 없고, 특정 마신 임무 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
+        "text": "막부 병력은 마신 임무에서 적으로 등장하지만 “Living Beings / Enemies and Monsters”에서 찾을 수 없고, 특정 마신 임무 밖에서 싸울 방법이 없다는 점이 그 이유일 가능성으로 언급된다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "이 사례들은 Archive가 게임플레이의 모든 대상을 같은 방식으로 담지는 않는다는 인상을 남긴다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 사례들은 도감이 게임플레이의 모든 대상을 같은 방식으로 담지는 않는다는 인상을 남긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "Uncategorized",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Prime Ice",
+       "revision": 2177252,
+       "section": "Prime Ice Constructs > Prime Ice Construct Archive",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Shogun's Army",
+       "revision": 727683,
+       "section": "Enemies",
+       "paragraph": "M8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Uncategorized",
+      "Starlight Prisms",
+      "Living Beings",
+      "Enemies and Monsters"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by M9; the interpretation is reasonable.",
+     "quote": "it is implied through the updated Archive description that the reason behind the Akademiya's receipt of Rukkhashava Mushrooms no longer exists.",
+     "sentences": [
+      {
+       "t_raw": "Irminsul에서 정보가 지워져도 그 행위와 존재의 결과는 세계에 남는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "세계수에서 정보가 지워져도 그 행위와 존재의 결과는 세계에 남는다."
+      },
+      {
+       "t_raw": "Greater Lord Rukkhadevata가 지워진 뒤에도 그가 만든 Sumeru의 열대우림은 남았고, 숲의 주민들이 Sumeru Akademiya에 Rukkhashava Mushrooms를 바치는 전통의 역사도 보존되었으며, 갱신된 Archive 설명은 Akademiya가 Rukkhashava Mushrooms를 받게 된 이유가 더 이상 존재하지 않음을 암시한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "위대한 룩카데바타가 지워진 뒤에도 그가 만든 수메르의 열대우림은 남았고, 숲의 주민들이 수메르 아카데미아에 룩카데바타 성체 버섯을 바치는 전통의 역사도 보존되었으며, 갱신된 도감 설명은 아카데미아가 룩카데바타 성체 버섯을 받게 된 이유가 더 이상 존재하지 않음을 암시한다."
+      },
+      {
+       "t_raw": "Nahida가 느낀 슬픔과 특정 ‘온기’에 대한 인지, Scaramouche를 지우려 한 뒤에도 그의 행위 결과가 다른 이유와 행위자로 기억된다는 Traveler의 확인도 결과가 남는 사례로 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나히다가 느낀 슬픔과 특정 '온기'에 대한 인지, 스카라무슈를 지우려 한 뒤에도 그의 행위 결과가 다른 이유와 행위자로 기억된다는 여행자의 확인도 결과가 남는 사례로 제시된다."
+      },
+      {
+       "t_raw": "이처럼 **Irminsul의 수정**은 원인을 지우면서도 결과를 설명하는 Archive의 문장에 흔적을 남기는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 **세계수의 수정**은 원인을 지우면서도 결과를 설명하는 도감의 문장에 흔적을 남기는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Irminsul",
+       "revision": 2113947,
+       "section": "Modifications",
+       "paragraph": "M9",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Where the Boat of Consciousness Lies"
+        },
+        {
+         "type": "quest",
+         "name": "Dream of Farewell"
+        },
+        {
+         "type": "quest",
+         "name": "A Dance of Destruction"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported by A5 and A29.",
+     "quote": "A weapon's alternate Ascension Appearance will also be registered in the Archive if obtained, but will not count towards entry counts.",
+     "sentences": [
+      {
+       "t_raw": "무기 항목에서 얻은 무기의 **Alternate Ascension Appearance**도 Archive에 등록되지만, 항목 수에는 포함되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무기 항목에서 얻은 무기의 **Alternate Ascension Appearance**도 도감에 등록되지만, 항목 수에는 포함되지 않는다."
+      },
+      {
+       "t_raw": "그래서 모습이 새로 등록되어도 전체 항목 수는 늘지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래서 모습이 새로 등록되어도 전체 항목 수는 늘지 않는다."
+      },
+      {
+       "t_raw": "PC가 아닌 기기에서는 **Show Cursor** 튜토리얼이 없어 System 범주 항목이 하나 적다.",
+       "interp": false,
+       "dropped": false,
+       "t": "PC가 아닌 기기에서는 **Show Cursor** 튜토리얼이 없어 System 범주 항목이 하나 적다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Weapons",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Tutorials",
+       "paragraph": "A29",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Alternate Ascension Appearance",
+      "PC",
+      "Show Cursor",
+      "System"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "trimmed",
+     "note": "The English does not say the unobtainable volumes are in the Archive, or that they look like a gap in the collection. Both are added.",
+     "quote": "Since Update 1.1, books can only be accessed via the Archive, and do not take up inventory slots.",
+     "sentences": [
+      {
+       "t_raw": "Travel Log에는 Unreconciled Stars와 The Chalk Prince and the Dragon 같은 이벤트 퀘스트가 들어가지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Travel Log에는 돌아오지 않는 꺼진 별과 백악과 흑룡 같은 이벤트 퀘스트가 들어가지 않는다."
+      },
+      {
+       "t_raw": "Books는 1.1 업데이트 이후 Archive에서만 접근할 수 있어 인벤토리 슬롯을 차지하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Books는 1.1 업데이트 이후 도감에서만 접근할 수 있어 인벤토리 슬롯을 차지하지 않는다."
+      },
+      {
+       "t_raw": "현재 55개의 책 컬렉션이 있고, 8권은 언급되지만 얻을 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 55개의 책 컬렉션이 있고, 8권은 언급되지만 얻을 수 없다."
+      },
+      {
+       "t_raw": "책이 인벤토리 슬롯을 차지하지 않게 된 뒤에도 Archive 안에 얻을 수 없는 권수가 남아 있는 셈이라 수집 목록의 빈틈처럼 보인다.",
+       "interp": true,
+       "dropped": true,
+       "t": "책이 인벤토리 슬롯을 차지하지 않게 된 뒤에도 도감 안에 얻을 수 없는 권수가 남아 있는 셈이라 수집 목록의 빈틈처럼 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Travel Log",
+       "paragraph": "A92",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Books",
+       "paragraph": "A144",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Books",
+       "paragraph": "A145",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Travel Log",
+      "Books"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The 79-entry cap comes only from the Mini Seelie event limits. Limited banners only make entries missable, and the birthday mail offsets that. Saying banners limit the obtainable count overstates the English.",
+     "quote": "It is only currently possible to obtain a maximum of 79 entries.",
+     "sentences": [
+      {
+       "t_raw": "Food and Potions의 많은 항목은 특정 캐릭터와 요리해야만 얻는 특제 요리이며, 한정 배너 때문에 놓치기 쉽다고 여겨질 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Food and Potions의 많은 항목은 특정 캐릭터와 요리해야만 얻는 특제 요리이며, 한정 배너 때문에 놓치기 쉽다고 여겨질 수 있다.",
+       "polish": {
+        "from": "Food and Potions의 많은 항목은 특정 캐릭터와 요리해야만 얻는 특제 요리이며, 한정 배너 때문에 놓치기 쉽다고 여겨질 수 있다.",
+        "text": "Food and Potions의 많은 항목은 특정 캐릭터와 요리해야만 얻는 특제 요리이며, 한정 배너 때문에 놓치기 쉽다고 여겨질 수 있다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "다만 캐릭터 생일에 게임에 접속하면 그 캐릭터가 없어도 특제 요리를 우편으로 받을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 캐릭터 생일에 게임에 접속하면 그 캐릭터가 없어도 특제 요리를 우편으로 받을 수 있다."
+      },
+      {
+       "t_raw": "Utility Items에서는 **Mini Seelie**가 6종이 있었지만 한 계정에서 최대 4종까지만 얻을 수 있어, 현재 최대 79개 항목만 획득 가능하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Utility Items에서는 **꼬마 선령**이 6종이 있었지만 한 계정에서 최대 4종까지만 얻을 수 있어, 현재 최대 79개 항목만 획득 가능하다."
+      },
+      {
+       "t_raw": "Utility Items에서 얻을 수 있는 항목 수가 최대 79개로 제한되는 것은, 이벤트마다 6종의 Mini Seelie 중 하나만 선택할 수 있어 한 계정에서 최대 4종까지만 얻을 수 있기 때문으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "Utility Items에서 얻을 수 있는 항목 수가 최대 79개로 제한되는 것은, 이벤트마다 6종의 꼬마 선령 중 하나만 선택할 수 있어 한 계정에서 최대 4종까지만 얻을 수 있기 때문으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Food and Potions",
+       "paragraph": "A156",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Archive",
+       "revision": 2165005,
+       "section": "Archive Categories > Utility Items",
+       "paragraph": "A161",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Food and Potions",
+      "Utility Items",
+      "Utility Items"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "세계관 속의 Archive",
+     "status": "accepted",
+     "note": "The translation is faithful.",
+     "t_raw": "우리는 오늘 후속 사건에 관한 정보를 보고하고 아카이브에 기록하러 왔다.",
+     "en": "We're here today to report and archive some information on a follow-up case.",
+     "speaker": "Navia",
+     "source": {
+      "kind": "quest",
+      "quest": "The Truth, Lost With the Rain",
+      "quest_ko": "비에 떠내려가 버린 진실",
+      "version": "4.0",
+      "speaker": "Navia"
+     },
+     "t": "우리는 오늘 후속 사건에 관한 정보를 보고하고 아카이브에 기록하러 왔다.",
+     "speaker_ko": "나비아"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line (Q6): Neuvillette maintains an archive of case files; hardworking Chief Justice. All parts are covered.",
+     "t_raw": "그러니까 Neuvillette가 사건 파일 아카이브를 관리한다고? 역시 그 부지런한 Chief Justice다운 모습이네...",
+     "en": "So Neuvillette maintains an archive of case files? Guess that's the hardworking Chief Justice for you...",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Like the Faint Moonlight of Yesteryear",
+      "quest_ko": "과거의 흐릿한 달빛처럼",
+      "version": "4.0",
+      "speaker": "Paimon"
+     },
+     "t": "그러니까 느비예트가 사건 파일 아카이브를 관리한다고? 역시 그 부지런한 최고 심판관다운 모습이네...",
+     "speaker_ko": "페이몬"
+    }
+   ]
+  }
+ ]
+}

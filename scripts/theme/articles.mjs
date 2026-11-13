@@ -33,6 +33,7 @@ import { normalize } from '../recommend/excerpt.mjs';
 import { latinNames } from '../recommend/ko-text.mjs';
 import { contextLocalizer, missingKorean } from './ko-extra.mjs';
 import { makeKo } from './localize.mjs';
+import { articlesPath, readArticles, writeArticles } from './article-store.mjs';
 
 const { values: opt, positionals: [theme] } = parseArgs({ allowPositionals: true, options: {
   only: { type: 'string' }, latest: { type: 'boolean', default: false }, limit: { type: 'string' },
@@ -279,15 +280,15 @@ const sourceRef = (x) => (x.kind === 'quest' ? { kind: 'quest', quest: x.quest, 
     : { kind: 'wiki', page: x.page, revision: x.revid, section: x.section || null, paragraph: x.id, wiki_refs: x.refs ?? [] });
 const flat = (w) => [{ ...w.lead, section: null }, ...w.sections.flatMap((s) => s.paragraphs.map((p) => ({ ...p, section: s.heading })))];
 
-const OUT = opt.out ? join(ROOT, opt.out) : gen(`articles-${theme}.json`);
-const results = new Map((existsSync(OUT) ? JSON.parse(await readFile(OUT, 'utf8')).articles : []).map((a) => [`${a.node}|${a.from_version}`, a]));
+// the whole wiki is one file per page (article-store.mjs); --out file.json writes a single file
+const OUT = opt.out ? join(ROOT, opt.out) : articlesPath(gen(''), theme);
+const results = new Map((await readArticles(OUT, { articles: [] })).articles.map((a) => [`${a.node}|${a.from_version}`, a]));
 let todo = opt['relocalize-only'] ? [] : plan;
 if (opt.only) { const only = new Set(opt.only.split(',').map((s) => s.trim())); todo = todo.filter((e) => only.has(e.node)); }
 if (opt.latest) todo = todo.filter(isLatest);
 // --skip-theme khaenriah: leave out pages that already have a newest-version article in that theme's file
 if (opt['skip-theme']) {
-  const other = gen(`articles-${opt['skip-theme']}.json`);
-  const done = new Set(JSON.parse(await readFile(other, 'utf8')).articles.map((a) => a.node));
+  const done = new Set((await readArticles(articlesPath(gen(''), opt['skip-theme']))).articles.map((a) => a.node));
   todo = todo.filter((e) => !done.has(e.node));
 }
 // --order units: pages in more story units first, so the main pages are done first if a long run stops early
@@ -455,12 +456,10 @@ const writeOut = async () => {
       if (koReady || p.latin_left === undefined) p.latin_left = latinNames(p.sentences.filter((s) => !s.dropped).map((s) => s.t).join(' '));
     }
   }
-  const tmp = `${OUT}.tmp`;
-  await writeFile(tmp, `${JSON.stringify({
+  await writeArticles(OUT, {
     theme, note: 'Korean articles written by an LLM from the Fandom wiki as of each version (CC BY-SA 3.0), other pages that mention the subject, in-game dialogue lines and allowed web facts (see sources); every sentence checked by a second model. Interpretation sentences are marked interp. Unreviewed.',
     articles: [...results.values()].sort((a, b) => a.node.localeCompare(b.node) || vOrder.get(a.from_version) - vOrder.get(b.from_version)),
-  }, null, 1)}\n`);
-  await rename(tmp, OUT);
+  });
 };
 const save = () => {
   saving = saving.then(writeOut, writeOut);

@@ -1,0 +1,1220 @@
+{
+ "node": "Melus",
+ "articles": [
+  {
+   "node": "Melus",
+   "from_version": "4.0",
+   "cutoff": "2023-09-26T00:00:00Z",
+   "input": [
+    {
+     "page": "Melus",
+     "url": "https://genshin-impact.fandom.com/wiki/Melus",
+     "revision": 1321610
+    }
+   ],
+   "input_counts": {
+    "mentions": 4,
+    "lines": 34,
+    "web": 0
+   },
+   "input_chars": 288,
+   "input_cut": false,
+   "input_hash": "e9b535690360",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet,codex-medium",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, M1, Q18, Q29, Q14, Q25 and Q31.",
+     "quote": "And I'm Melus. Demoiselle's various daily needs and affairs are under my purview.",
+     "sentences": [
+      {
+       "t_raw": "Melus는 Chapter IV에 등장하는 **퀘스트 전용 NPC**이자 Navia의 두 수행원 중 나이가 많은 쪽이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 제4장에 등장하는 **퀘스트 전용 NPC**이자 나비아의 두 수행원 중 나이가 많은 쪽이다."
+      },
+      {
+       "t_raw": "그는 **Spina di Rosula의 Butler**로 살아 있으며, Demoiselle의 여러 일상 필요와 사무를 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **가시 장미회의 집사**로 살아 있으며, Demoiselle의 여러 일상 필요와 사무를 맡는다."
+      },
+      {
+       "t_raw": "Navia는 자신이 second-generation president가 되었어도 Melus와 주변 인물들이 이전 호칭에 익숙하다고 말하고, Melus는 그런 그녀를 **Demoiselle**이라 부르며 원하면 Boss로 바꾸겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아는 자신이 2대 회장이 되었어도 마르시악과 주변 인물들이 이전 호칭에 익숙하다고 말하고, 마르시악은 그런 그녀를 **Demoiselle**이라 부르며 원하면 보스로 바꾸겠다고 한다.",
+       "polish": {
+        "from": "나비아는 자신이 second-generation president가 되었어도 마르시악과 주변 인물들이 이전 호칭에 익숙하다고 말하고, 마르시악은 그런 그녀를 **Demoiselle**이라 부르며 원하면 Boss로 바꾸겠다고 한다.",
+        "text": "나비아는 자신이 2대 회장이 되었어도 마르시악과 주변 인물들이 이전 호칭에 익숙하다고 말하고, 마르시악은 그런 그녀를 **Demoiselle**이라 부르며 원하면 보스로 바꾸겠다고 한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Melus의 정보에 따르면 Sinthe 생산 기지는 수중에 있으며, Navia는 Melus가 돌아온 뒤 조사 결과를 정리할 장소를 찾자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악의 정보에 따르면 생트 생산 기지는 수중에 있으며, 나비아는 마르시악이 돌아온 뒤 조사 결과를 정리할 장소를 찾자고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Melus",
+       "revision": 1321610,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Melus",
+       "revision": 1321610,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Spina di Rosula",
+       "revision": 1342119,
+       "section": "Structure > Members",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Navia"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "NPC",
+      "Demoiselle",
+      "Demoiselle"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The facts match A1, A2, M1 and Q18. The interpretation in sentence 3 is reasonable.",
+     "quote": "And I'm Melus. Demoiselle's various daily needs and affairs are under my purview.",
+     "sentences": [
+      {
+       "t_raw": "Melus는 **Chapter IV의 퀘스트 전용 NPC**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 **제4장의 퀘스트 전용 NPC**다."
+      },
+      {
+       "t_raw": "그는 **Navia의 두 수행원 중 나이가 많은 쪽**이며, **Spina di Rosula의 집사**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **나비아의 두 수행원 중 나이가 많은 쪽**이며, **가시 장미회의 집사**다."
+      },
+      {
+       "t_raw": "Navia의 일상적인 필요와 용무는 그의 관리 범위에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아의 일상적인 필요와 용무는 그의 관리 범위에 있다."
+      },
+      {
+       "t_raw": "수행원이면서 일상 용무를 맡는다는 점에서, Melus는 Navia를 가까이서 보좌하는 실무형 인물로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "수행원이면서 일상 용무를 맡는다는 점에서, 마르시악은 나비아를 가까이서 보좌하는 실무형 인물로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Melus",
+       "revision": 1321610,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Melus",
+       "revision": 1321610,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Spina di Rosula",
+       "revision": 1342119,
+       "section": "Structure > Members",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "NPC"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by M1 and Q19.",
+     "quote": "If it were me, I would have joined the Spina di Rosula on account of her goodwill long ago.",
+     "sentences": [
+      {
+       "t_raw": "Melus는 Spina di Rosula의 **Butler**로 조직의 구성원 가운데 한 사람이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 가시 장미회의 **집사**로 조직의 구성원 가운데 한 사람이다."
+      },
+      {
+       "t_raw": "그는 자신이라면 그녀의 선의를 보고 진작 Spina di Rosula에 합류했을 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 자신이라면 그녀의 선의를 보고 진작 가시 장미회에 합류했을 것이라고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Spina di Rosula",
+       "revision": 1342119,
+       "section": "Structure > Members",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by M2, Q1 and Q5. The interpretation links the Q1 and Q5 lines reasonably.",
+     "quote": "According to Melus and Silver, Callas was initially a respected man in Fontaine society.",
+     "sentences": [
+      {
+       "t_raw": "Melus와 Silver에 따르면 Callas는 처음에는 Fontaine 사회에서 존경받는 인물이었고, Palais Mermonia가 준 Baron 칭호도 허울뿐이라며 거절했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악과 실버에 따르면 칼라스는 처음에는 폰타인 사회에서 존경받는 인물이었고, 멜모니아궁이 준 Baron 칭호도 허울뿐이라며 거절했다."
+      },
+      {
+       "t_raw": "Melus는 Boss의 **타협 없는 태도**가 Sinthe 상인들의 분노를 샀지만, 위협과 뇌물에도 굴하지 않았다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 Boss의 **타협 없는 태도**가 생트 상인들의 분노를 샀지만, 위협과 뇌물에도 굴하지 않았다고 전한다."
+      },
+      {
+       "t_raw": "Boss는 Sinthe 조직의 배후를 찾아 문제를 끝내기로 결심했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Boss는 생트 조직의 배후를 찾아 문제를 끝내기로 결심했다."
+      },
+      {
+       "t_raw": "그 결심은 Sinthe 상인들의 위협과 뇌물에도 굴하지 않은 태도와 이어지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 결심은 생트 상인들의 위협과 뇌물에도 굴하지 않은 태도와 이어지는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Callas",
+       "revision": 1344920,
+       "section": "Profile",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Baron",
+      "Boss",
+      "Boss"
+     ]
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Supported by Q8, Q9, Q16 and Q4.",
+     "quote": "The day our late Boss had always hoped for has finally come. You can rest easy now, knowing justice has been served.",
+     "sentences": [
+      {
+       "t_raw": "Boss는 Demoiselle이 이미 연쇄 실종 사건의 다음 표적이 되었다고 Melus에게 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Boss는 Demoiselle이 이미 연쇄 실종 사건의 다음 표적이 되었다고 마르시악에게 말했다."
+      },
+      {
+       "t_raw": "Melus는 Jacques가 한없이 뉘우친 공감 능력 있는 사람이라 아무 경고도 없이 Boss에게 등을 돌렸을 가능성은 낮다고 보며, 상대가 Boss가 딸에게 품은 진짜 기대를 이해하지 못했다고 지적한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 자크가 한없이 뉘우친 공감 능력 있는 사람이라 아무 경고도 없이 Boss에게 등을 돌렸을 가능성은 낮다고 보며, 상대가 Boss가 딸에게 품은 진짜 기대를 이해하지 못했다고 지적한다."
+      },
+      {
+       "t_raw": "Melus는 고인이 된 Boss가 늘 바라던 날이 마침내 왔다며 **정의가 실현**되었으니 이제 편히 쉬어도 된다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 고인이 된 Boss가 늘 바라던 날이 마침내 왔다며 **정의가 실현**되었으니 이제 편히 쉬어도 된다고 전한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "When All Return to the Waters",
+       "quest_ko": "모든 것이 물로 돌아갈 때",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "When All Return to the Waters",
+       "quest_ko": "모든 것이 물로 돌아갈 때",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "When All Return to the Waters",
+       "quest_ko": "모든 것이 물로 돌아갈 때",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": [
+      "Boss",
+      "Demoiselle",
+      "Boss",
+      "Boss",
+      "Boss"
+     ]
+    },
+    {
+     "section": "작중 행적 — 사라진 물과 Sinthe",
+     "status": "accepted",
+     "note": "Supported by Q2, Q5 and Q8. The interpretation about overlapping goals follows from Q2.",
+     "quote": "You wish to save a friend from false accusations, and we wish to unravel the disappearances. In this sense, our goals are aligned.",
+     "sentences": [
+      {
+       "t_raw": "Melus는 Traveler가 친구를 누명에서 구하려 하고 자신들이 실종 사건을 풀려 한다는 점에서 목표가 맞아떨어진다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 여행자가 친구를 누명에서 구하려 하고 자신들이 실종 사건을 풀려 한다는 점에서 목표가 맞아떨어진다고 말한다."
+      },
+      {
+       "t_raw": "Boss는 Sinthe 운영의 배후를 찾아 문제를 끝내기로 했고, Demoiselle이 이미 연쇄 실종 사건의 다음 표적이었다는 사실을 Melus에게 전했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Boss는 생트 운영의 배후를 찾아 문제를 끝내기로 했고, Demoiselle이 이미 연쇄 실종 사건의 다음 표적이었다는 사실을 마르시악에게 전했다."
+      },
+      {
+       "t_raw": "그래서 이 수사는 Traveler의 사정과 Melus 일행의 실종 사건 규명이 겹치는 자리인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 이 수사는 여행자의 사정과 마르시악 일행의 실종 사건 규명이 겹치는 자리인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "When All Return to the Waters",
+       "quest_ko": "모든 것이 물로 돌아갈 때",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "작중 행적 — 사라진 물과 생트",
+     "latin_left": [
+      "Boss",
+      "Demoiselle"
+     ]
+    },
+    {
+     "section": "작중 행적 — 사라진 물과 Sinthe",
+     "status": "accepted",
+     "note": "",
+     "quote": "Let's find a place to sort out our findings once Melus returns. It seems to me that there are several things that don't add up here.",
+     "sentences": [
+      {
+       "t_raw": "Navia는 Melus가 돌아오면 조사 결과를 정리하자고 하며 맞지 않는 것들이 여럿 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아는 마르시악이 돌아오면 조사 결과를 정리하자고 하며 맞지 않는 것들이 여럿 있다고 본다."
+      },
+      {
+       "t_raw": "Melus는 그 사건이 Mr. Lyney의 사건과 비슷한 **'불가능한 살인'**이라고 설명하고, Navia는 지난 몇 년간 새로 알아낸 것이 있는지, 비 내리던 그날 밤을 기억하는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 그 사건이 Mr. 리니의 사건과 비슷한 **'불가능한 살인'**이라고 설명하고, 나비아는 지난 몇 년간 새로 알아낸 것이 있는지, 비 내리던 그날 밤을 기억하는지 묻는다."
+      },
+      {
+       "t_raw": "Paimon은 Melus가 꽤 깊이 생각해 둔 것 같다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 마르시악이 꽤 깊이 생각해 둔 것 같다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Navia"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Navia"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Navia"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 사라진 물과 생트",
+     "latin_left": [
+      "Mr"
+     ]
+    },
+    {
+     "section": "작중 행적 — 사라진 물과 Sinthe",
+     "status": "accepted",
+     "note": "",
+     "quote": "After Melus' investigation, the Traveler and Navia believed that Marcel had ulterior motives",
+     "sentences": [
+      {
+       "t_raw": "Melus의 조사 뒤 Traveler와 Navia는 Marcel에게 다른 의도가 있다고 보게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악의 조사 뒤 여행자와 나비아는 마르셀에게 다른 의도가 있다고 보게 된다."
+      },
+      {
+       "t_raw": "Navia는 Tartaglia가 연쇄 실종 사건의 혐의를 받는다는 소식을 듣고 Opera로 향하고, Traveler는 Marcel의 Sinthe 시설에 잠입한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아는 타르탈리아가 연쇄 실종 사건의 혐의를 받는다는 소식을 듣고 Opera로 향하고, 여행자는 마르셀의 생트 시설에 잠입한다."
+      },
+      {
+       "t_raw": "Melus가 언급한 장소는 수중에 있는 것으로 보이며, Paimon은 그곳이 **Sinthe 생산 기지**라는 정보를 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악이 언급한 장소는 수중에 있는 것으로 보이며, 페이몬은 그곳이 **생트 생산 기지**라는 정보를 전한다."
+      },
+      {
+       "t_raw": "수사는 실종 사건의 혐의와 Sinthe 시설을 함께 좇는 모양새인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "수사는 실종 사건의 혐의와 생트 시설을 함께 좇는 모양새인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Marcel (Fontaine)",
+       "revision": 1348748,
+       "section": "Story > Present Day",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "When All Return to the Waters",
+       "quest_ko": "모든 것이 물로 돌아갈 때",
+       "version": "4.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "When All Return to the Waters",
+       "quest_ko": "모든 것이 물로 돌아갈 때",
+       "version": "4.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 사라진 물과 생트",
+     "latin_left": [
+      "Opera"
+     ]
+    },
+    {
+     "section": "작중 행적 — 재판과 진범",
+     "status": "accepted",
+     "note": "Q17 does not identify the compared case as Cowell’s murder.",
+     "quote": "Yes, the case was quite similar to that of Mr. Lyney's. Both were what you'd call \"impossible murders.\"",
+     "sentences": [
+      {
+       "t_raw": "Melus는 어떤 사건이 Mr. Lyney의 사건과 매우 비슷하며 둘 다 **불가능한 살인**으로 불린다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "마르시악은 어떤 사건이 Mr. 리니의 사건과 매우 비슷하며 둘 다 **불가능한 살인**으로 불린다고 말한다."
+      },
+      {
+       "t_raw": "물에 대한 이야기를 듣자 Navia, Silver, Melus는 무언가 잘못되었음을 깨닫고, 수사 중 이틀 동안 오페라에 숨어 있던 Cowell 살해의 **진범** Liliane을 찾아낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물에 대한 이야기를 듣자 나비아, 실버, 마르시악은 무언가 잘못되었음을 깨닫고, 수사 중 이틀 동안 오페라에 숨어 있던 코웰 살해의 **진범** 릴리앤을 찾아낸다."
+      },
+      {
+       "t_raw": "Traveler가 법정에서 Liliane의 사건 경위를 설명하자 Oratrice Mecanique d'Analyse Cardinale는 Lyney와 Lynette에게 무죄를 선고한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 법정에서 릴리앤의 사건 경위를 설명하자 계시 판결 장치는 리니와 리넷에게 무죄를 선고한다."
+      },
+      {
+       "t_raw": "Melus는 지난 재판에서 무고한 시민을 기소한 뒤 더 부지런해진 경우도 있을 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 지난 재판에서 무고한 시민을 기소한 뒤 더 부지런해진 경우도 있을 수 있다고 말한다."
+      },
+      {
+       "t_raw": "Neuvillette는 Vaughn이 Cowell의 공모자로서 자신과 Furina를 속였다는 것을 깨닫고 그에게 신비한 조직에 관해 알고 있는 것을 자백하고 Gardes의 보호를 구하라고 명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "느비예트는 본이 코웰의 공모자로서 자신과 푸리나를 속였다는 것을 깨닫고 그에게 신비한 조직에 관해 알고 있는 것을 자백하고 경비대원의 보호를 구하라고 명한다."
+      },
+      {
+       "t_raw": "Vaughn은 자백을 시작하지만 boss의 이름을 밝히기 전에 물이 되어 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "본은 자백을 시작하지만 보스의 이름을 밝히기 전에 물이 되어 사라진다.",
+       "polish": {
+        "from": "본은 자백을 시작하지만 boss의 이름을 밝히기 전에 물이 되어 사라진다.",
+        "text": "본은 자백을 시작하지만 보스의 이름을 밝히기 전에 물이 되어 사라진다.",
+        "by": "ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Vaughn",
+       "revision": 1352019,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "When All Return to the Waters",
+       "quest_ko": "모든 것이 물로 돌아갈 때",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "작중 행적 — 재판과 진범",
+     "latin_left": [
+      "Mr"
+     ]
+    },
+    {
+     "section": "작중 행적 — 재판과 진범",
+     "status": "accepted",
+     "note": "Only Navia is said to have deduced that someone was targeting them; the Korean attributes that deduction to Clorinde too.",
+     "quote": "Let's find a place to sort out our findings once Melus returns. It seems to me that there are several things that don't add up here.",
+     "sentences": [
+      {
+       "t_raw": "재판 뒤 Marcel은 Navia의 음료에 Primordial Seawater를 타서 Navia를 노리지만 Paimon이 대신 마신다.",
+       "interp": false,
+       "dropped": false,
+       "t": "재판 뒤 마르셀은 나비아의 음료에 원시 모태 바다의 물을 타서 나비아를 노리지만 페이몬이 대신 마신다."
+      },
+      {
+       "t_raw": "Marcel이 Traveler의 방해에 보낸 다수의 Clockwork Meka는 누군가 자신들을 노리고 있다는 것을 Navia가 알아챈 가운데 Navia와 Clorinde에 의해 저지되고, Melus는 Boss를 구한 공로로 Spina di Rosula가 가장 큰 상을 준비하고 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "마르셀이 여행자의 방해에 보낸 다수의 태엽 장치는 누군가 자신들을 노리고 있다는 것을 나비아가 알아챈 가운데 나비아와 클로린드에 의해 저지되고, 마르시악은 Boss를 구한 공로로 가시 장미회가 가장 큰 상을 준비하고 있다고 말한다."
+      },
+      {
+       "t_raw": "Navia는 무죄를 주장하며 늘 기꺼이 돕겠다고 하는 Marcel을 찾아간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아는 무죄를 주장하며 늘 기꺼이 돕겠다고 하는 마르셀을 찾아간다."
+      },
+      {
+       "t_raw": "Navia는 Melus가 돌아오면 조사 결과를 정리하자며 맞지 않는 점이 여럿 있다고 말하고, Melus의 조사 뒤 Traveler와 Navia는 Marcel에게 다른 속내가 있다고 믿게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아는 마르시악이 돌아오면 조사 결과를 정리하자며 맞지 않는 점이 여럿 있다고 말하고, 마르시악의 조사 뒤 여행자와 나비아는 마르셀에게 다른 속내가 있다고 믿게 된다."
+      },
+      {
+       "t_raw": "Tartaglia가 연속 실종 사건의 피고로 지목되었다는 소식에 Navia는 Opera로 가 Marcel을 고발하고, 그 사이 Traveler는 Marcel의 Sinthe 시설에 잠입해 증거를 모아 Marcel이 Vacher임을 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타르탈리아가 연속 실종 사건의 피고로 지목되었다는 소식에 나비아는 Opera로 가 마르셀을 고발하고, 그 사이 여행자는 마르셀의 생트 시설에 잠입해 증거를 모아 마르셀이 바셰임을 밝힌다."
+      },
+      {
+       "t_raw": "자백 뒤 Oratrice Mecanique d'Analyse Cardinale는 Marcel을 유죄로 판정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자백 뒤 계시 판결 장치는 마르셀을 유죄로 판정한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Marcel (Fontaine)",
+       "revision": 1348748,
+       "section": "Story > Present Day",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Navia"
+      }
+     ],
+     "heading": "작중 행적 — 재판과 진범",
+     "latin_left": [
+      "Boss",
+      "Opera"
+     ]
+    },
+    {
+     "section": "작중 행적 — 재판과 진범",
+     "status": "accepted",
+     "note": "Both sentences mistranslate “late Boss” as “늦은 Boss” (late in timing). Here “late” means deceased.",
+     "quote": "The day our late Boss had always hoped for has finally come. You can rest easy now, knowing justice has been served.",
+     "sentences": [
+      {
+       "t_raw": "Melus는 세상을 떠난 Boss가 늘 바라던 날이 마침내 왔다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "마르시악은 세상을 떠난 Boss가 늘 바라던 날이 마침내 왔다고 말한다."
+      },
+      {
+       "t_raw": "그는 **정의가 실현**되었음을 알고 이제 편히 쉬어도 된다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 **정의가 실현**되었음을 알고 이제 편히 쉬어도 된다고 전한다."
+      },
+      {
+       "t_raw": "Vacher의 유죄 판정과 Melus의 말이 맞물려, 세상을 떠난 Boss가 바라던 정의가 사후에 실현된 순간으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "바셰의 유죄 판정과 마르시악의 말이 맞물려, 세상을 떠난 Boss가 바라던 정의가 사후에 실현된 순간으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Marcel (Fontaine)",
+       "revision": 1348748,
+       "section": "Story > Present Day",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "When All Return to the Waters",
+       "quest_ko": "모든 것이 물로 돌아갈 때",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "작중 행적 — 재판과 진범",
+     "latin_left": [
+      "Boss",
+      "Boss"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "",
+     "quote": "Far be it from me to brag, but I believe that Demoiselle's intuition will be instrumental in uncovering the truth.",
+     "sentences": [
+      {
+       "t_raw": "Melus는 Navia의 두 수행원 중 나이가 많은 쪽이며, 자신의 소관을 **아가씨**의 일상과 여러 사무라고 소개한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 나비아의 두 수행원 중 나이가 많은 쪽이며, 자신의 소관을 **아가씨**의 일상과 여러 사무라고 소개한다."
+      },
+      {
+       "t_raw": "Navia가 자신은 2세대 회장이고 Melus 등은 아직 이전 호칭에 익숙하다고 말하자, Melus는 사과하며 원하면 보스를 쓰겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아가 자신은 2세대 회장이고 마르시악 등은 아직 이전 호칭에 익숙하다고 말하자, 마르시악은 사과하며 원하면 보스를 쓰겠다고 한다."
+      },
+      {
+       "t_raw": "Melus는 아가씨의 직감을 진실을 밝히는 데 중요하다고 평가하면서도, Spina di Rosula의 얼굴로서 지나치게 기뻐 보이지 말라고 당부한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 아가씨의 직감을 진실을 밝히는 데 중요하다고 평가하면서도, 가시 장미회의 얼굴로서 지나치게 기뻐 보이지 말라고 당부한다."
+      },
+      {
+       "t_raw": "이런 대목에서 Melus의 호칭과 태도는 Navia를 공식적인 얼굴로 세우면서도 가까이서 챙기는 방식으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 대목에서 마르시악의 호칭과 태도는 나비아를 공식적인 얼굴로 세우면서도 가까이서 챙기는 방식으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Melus",
+       "revision": 1321610,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Navia"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All supported by M3, Q34 and A2.",
+     "quote": "Haha, it was nothing. A small task for the Spina di Rosula. Silver, Melus, it's time to go.",
+     "sentences": [
+      {
+       "t_raw": "물에 관한 소식을 듣고 Navia, Silver, Melus는 무언가 잘못됐음을 깨닫고 진범을 찾아냈으며, 작은 일을 마친 뒤 Navia는 Silver와 Melus를 함께 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물에 관한 소식을 듣고 나비아, 실버, 마르시악은 무언가 잘못됐음을 깨닫고 진범을 찾아냈으며, 작은 일을 마친 뒤 나비아는 실버와 마르시악을 함께 부른다."
+      },
+      {
+       "t_raw": "Melus가 Navia의 두 수행원 중 나이가 많은 쪽이라는 점과 이처럼 함께 호명되는 장면을 함께 보면, Melus와 Silver는 Navia를 중심으로 움직이는 동료 조합으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마르시악이 나비아의 두 수행원 중 나이가 많은 쪽이라는 점과 이처럼 함께 호명되는 장면을 함께 보면, 마르시악과 실버는 나비아를 중심으로 움직이는 동료 조합으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Melus",
+       "revision": 1321610,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vaughn",
+       "revision": 1352019,
+       "section": "Profile",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Navia"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Q3 supports both sentences.",
+     "quote": "Demoiselle, I believe that Ms. Clorinde was being sincere with you. If we tried, we could attempt to thaw relations a little...",
+     "sentences": [
+      {
+       "t_raw": "Melus는 Navia에게 **Ms. Clorinde**가 진심이었을 것이라고 말하며, 노력하면 관계를 조금 풀어 볼 수 있을 것이라고 제안한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 나비아에게 **Ms. 클로린드**가 진심이었을 것이라고 말하며, 노력하면 관계를 조금 풀어 볼 수 있을 것이라고 제안한다."
+      },
+      {
+       "t_raw": "이는 그가 Ms. Clorinde와의 관계에서 개선의 여지를 남겨 두는 태도로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 그가 Ms. 클로린드와의 관계에서 개선의 여지를 남겨 두는 태도로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Ms",
+      "Ms"
+     ]
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by Q2, Q7, Q10, Q21 and Q23. The interpretation is reasonable.",
+     "quote": "Apologies for the wait, Demoiselle, and our most important partners.",
+     "sentences": [
+      {
+       "t_raw": "Melus는 Traveler 일행을 기다리게 한 점을 사과하면서 이들을 **가장 중요한 파트너들**이라고 부른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 여행자 일행을 기다리게 한 점을 사과하면서 이들을 **가장 중요한 파트너들**이라고 부른다."
+      },
+      {
+       "t_raw": "Traveler와 목표가 맞닿아 있다고 말하고, Traveler의 대응을 아주 훌륭하다고 평가한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자와 목표가 맞닿아 있다고 말하고, 여행자의 대응을 아주 훌륭하다고 평가한다."
+      },
+      {
+       "t_raw": "Melus는 숙소를 마련해 두었고, 존중받는 손님들을 위한 방을 찾겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 숙소를 마련해 두었고, 존중받는 손님들을 위한 방을 찾겠다고 말한다."
+      },
+      {
+       "t_raw": "이 때문에 Traveler 일행은 Melus에게 협력자이자 예우해야 할 손님으로 함께 인식되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 때문에 여행자 일행은 마르시악에게 협력자이자 예우해야 할 손님으로 함께 인식되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Appearance matches A3, and Q7 and Q23 support the rest. The interpretation is mild.",
+     "quote": "Under the present circumstances, I can confidently say it's the best we have.",
+     "sentences": [
+      {
+       "t_raw": "Melus는 흰 셔츠와 짙은 남색 넥타이, 짙은 회색 정장 재킷, 검은 바지, 흰 양말, 검은 구두를 갖춰 입고 갈색 띠가 달린 검은 모자와 짙은 선글라스를 쓴 짧은 회색 머리다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 흰 셔츠와 짙은 남색 넥타이, 짙은 회색 정장 재킷, 검은 바지, 흰 양말, 검은 구두를 갖춰 입고 갈색 띠가 달린 검은 모자와 짙은 선글라스를 쓴 짧은 회색 머리다."
+      },
+      {
+       "t_raw": "그는 손님들을 위해 방을 찾겠다고 나서고, 숙소가 마련된 뒤에는 당시 상황에서 최선이라고 자신한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 손님들을 위해 방을 찾겠다고 나서고, 숙소가 마련된 뒤에는 당시 상황에서 최선이라고 자신한다."
+      },
+      {
+       "t_raw": "**손님맞이를 직접 챙기는** 태도가 엿보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**손님맞이를 직접 챙기는** 태도가 엿보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Melus",
+       "revision": 1321610,
+       "section": "Profile > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Melus"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by Q11, Q14, Q20, Q21, Q24, Q29, Q32 and Q34. The interpretation is a loose but acceptable reading.",
+     "quote": "Anyway, I like your answer. You pass with flying colors!",
+     "sentences": [
+      {
+       "t_raw": "Melus는 Navia를 Demoiselle이라 부르고, Boss라는 호칭을 선호하면 그리 바꾸겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마르시악은 나비아를 Demoiselle이라 부르고, Boss라는 호칭을 선호하면 그리 바꾸겠다고 말한다."
+      },
+      {
+       "t_raw": "Navia는 자신이 2대 회장이고 Melus와 다른 이들이 아직 이전 호칭에 익숙하다고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아는 자신이 2대 회장이고 마르시악과 다른 이들이 아직 이전 호칭에 익숙하다고 설명한다."
+      },
+      {
+       "t_raw": "Navia가 들뜬 표정을 짓자 Melus는 Spina di Rosula의 얼굴이라며 자제를 권하고, Navia는 그런 답이 마음에 든다며 훌륭히 통과라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아가 들뜬 표정을 짓자 마르시악은 가시 장미회의 얼굴이라며 자제를 권하고, 나비아는 그런 답이 마음에 든다며 훌륭히 통과라고 말한다."
+      },
+      {
+       "t_raw": "날씨가 좋지 않아도 Demoiselle의 기분은 꺾이지 않는다는 말과 늦은 데 대한 사과, 자신의 실수에 대한 사과가 오간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "날씨가 좋지 않아도 Demoiselle의 기분은 꺾이지 않는다는 말과 늦은 데 대한 사과, 자신의 실수에 대한 사과가 오간다."
+      },
+      {
+       "t_raw": "Navia는 Silver와 Melus에게 갈 시간이라 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나비아는 실버와 마르시악에게 갈 시간이라 말한다."
+      },
+      {
+       "t_raw": "이 장면들에서 Spina di Rosula의 **소탈한 분위기**가 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 장면들에서 가시 장미회의 **소탈한 분위기**가 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Like the Faint Moonlight of Yesteryear",
+       "quest_ko": "과거의 흐릿한 달빛처럼",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "When All Return to the Waters",
+       "quest_ko": "모든 것이 물로 돌아갈 때",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Truth, Lost With the Rain",
+       "quest_ko": "비에 떠내려가 버린 진실",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "When All Return to the Waters",
+       "quest_ko": "모든 것이 물로 돌아갈 때",
+       "version": "4.0",
+       "speaker": "Melus"
+      },
+      {
+       "kind": "quest",
+       "quest": "Lies Cast Shadows Under Gathered Lights",
+       "quest_ko": "조명 아래 드리운 거짓의 그림자",
+       "version": "4.0",
+       "speaker": "Navia"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Demoiselle",
+      "Boss",
+      "Demoiselle"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Q18.",
+     "t_raw": "그리고 저는 Melus입니다. 아가씨의 여러 일상적 필요와 용무는 제 관리 범위에 있습니다.",
+     "en": "And I'm Melus. Demoiselle's various daily needs and affairs are under my purview.",
+     "speaker": "Melus",
+     "source": {
+      "kind": "quest",
+      "quest": "Lies Cast Shadows Under Gathered Lights",
+      "quest_ko": "조명 아래 드리운 거짓의 그림자",
+      "version": "4.0",
+      "speaker": "Melus"
+     },
+     "t": "그리고 저는 마르시악입니다. 아가씨의 여러 일상적 필요와 용무는 제 관리 범위에 있습니다.",
+     "speaker_ko": "마르시악"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of the dialogue line.",
+     "t_raw": "Boss의 타협 없는 태도는 Sinthe 상인들의 분노를 샀지만, 그들이 아무리 위협하거나 뇌물을 주어도 그는 굴하지 않았다.",
+     "en": "Boss' uncompromising attitude incurred the Sinthe vendors' wrath, but no matter how much they threatened or bribed him, he refused to yield.",
+     "speaker": "Melus",
+     "source": {
+      "kind": "quest",
+      "quest": "The Truth, Lost With the Rain",
+      "quest_ko": "비에 떠내려가 버린 진실",
+      "version": "4.0",
+      "speaker": "Melus"
+     },
+     "t": "Boss의 타협 없는 태도는 생트 상인들의 분노를 샀지만, 그들이 아무리 위협하거나 뇌물을 주어도 그는 굴하지 않았다.",
+     "speaker_ko": "마르시악"
+    },
+    {
+     "section": "작중 행적 — 사라진 물과 Sinthe",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "Melus의 정보에 따르면, Sinthe 생산 기지는 수중에 있다...",
+     "en": "According to Melus' info, the Sinthe production base is underwater...",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "When All Return to the Waters",
+      "quest_ko": "모든 것이 물로 돌아갈 때",
+      "version": "4.0",
+      "speaker": "Paimon"
+     },
+     "t": "마르시악의 정보에 따르면, 생트 생산 기지는 수중에 있다...",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "작중 행적 — 재판과 진범",
+     "status": "accepted",
+     "note": "Faithful translation; the shift in register does not change the meaning.",
+     "t_raw": "우리 고 Boss가 늘 바라던 날이 마침내 왔다. 정의가 실현되었음을 아시고 이제 편히 쉬어도 되겠습니다.",
+     "en": "The day our late Boss had always hoped for has finally come. You can rest easy now, knowing justice has been served.",
+     "speaker": "Melus",
+     "source": {
+      "kind": "quest",
+      "quest": "When All Return to the Waters",
+      "quest_ko": "모든 것이 물로 돌아갈 때",
+      "version": "4.0",
+      "speaker": "Melus"
+     },
+     "t": "우리 고 Boss가 늘 바라던 날이 마침내 왔다. 정의가 실현되었음을 아시고 이제 편히 쉬어도 되겠습니다.",
+     "speaker_ko": "마르시악"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "기다리게 해서 죄송합니다, 아가씨, 그리고 저희의 가장 중요한 파트너 여러분.",
+     "en": "Apologies for the wait, Demoiselle, and our most important partners.",
+     "speaker": "Melus",
+     "source": {
+      "kind": "quest",
+      "quest": "The Truth, Lost With the Rain",
+      "quest_ko": "비에 떠내려가 버린 진실",
+      "version": "4.0",
+      "speaker": "Melus"
+     },
+     "t": "기다리게 해서 죄송합니다, 아가씨, 그리고 저희의 가장 중요한 파트너 여러분.",
+     "speaker_ko": "마르시악"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "죄송합니다, Demoiselle. \"Boss\"를 선호하신다면 그렇게 부르도록 애쓰겠습니다.",
+     "en": "My apologies, Demoiselle. Should you prefer \"Boss,\" I will endeavor to use that instead.",
+     "speaker": "Melus",
+     "source": {
+      "kind": "quest",
+      "quest": "Lies Cast Shadows Under Gathered Lights",
+      "quest_ko": "조명 아래 드리운 거짓의 그림자",
+      "version": "4.0",
+      "speaker": "Melus"
+     },
+     "t": "죄송합니다, Demoiselle. 「사장님」을 선호하신다면 그렇게 부르도록 애쓰겠습니다.",
+     "speaker_ko": "마르시악"
+    }
+   ]
+  }
+ ]
+}

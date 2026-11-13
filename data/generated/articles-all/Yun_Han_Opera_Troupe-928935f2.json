@@ -1,0 +1,547 @@
+{
+ "node": "Yun-Han Opera Troupe",
+ "articles": [
+  {
+   "node": "Yun-Han Opera Troupe",
+   "from_version": "2.4",
+   "cutoff": "2022-02-15T00:00:00Z",
+   "input": [
+    {
+     "page": "Yun-Han Opera Troupe",
+     "url": "https://genshin-impact.fandom.com/wiki/Yun-Han_Opera_Troupe",
+     "revision": 555402
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 504,
+   "input_cut": false,
+   "input_hash": "4322a8ecd228",
+   "writer": "ds,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, M1 and M2.",
+     "quote": "The Yun-Han Opera Troupe is the most famous opera troupe in Liyue Harbor and is currently directed by Yun Jin.",
+     "sentences": [
+      {
+       "t_raw": "Yun-Han Opera Troupe는 Liyue Harbor에서 가장 유명한 극단이며, 현재 Yun Jin이 단장을 맡고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운한사는 리월항에서 가장 유명한 극단이며, 현재 운근이 단장을 맡고 있다."
+      },
+      {
+       "t_raw": "Yun Jin은 극단의 단장이면서 Liyue Harbor의 오페라 계에서 이름이 알려진 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운근은 극단의 단장이면서 리월항의 오페라 계에서 이름이 알려진 인물이다."
+      },
+      {
+       "t_raw": "공연은 Heyu Tea House에서 열리고, 최근 몇 년 사이에 올린 여러 신작은 모두 Yun Jin이 직접 쓴 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공연은 화유다관에서 열리고, 최근 몇 년 사이에 올린 여러 신작은 모두 운근이 직접 쓴 것이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun Jin/Profile",
+       "revision": 569843,
+       "section": "Official Introduction",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun Jin/Profile",
+       "revision": 569843,
+       "section": "Official Introduction",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The facts are supported. The interpretation in (3) is hedged ('보인다') and follows reasonably from A1 and M1.",
+     "quote": "The Yun-Han Opera Troupe is the most famous opera troupe in Liyue Harbor and is currently directed by Yun Jin.",
+     "sentences": [
+      {
+       "t_raw": "Yun-Han Opera Troupe는 Liyue Harbor에서 **가장 유명한 오페라 극단**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운한사는 리월항에서 **가장 유명한 오페라 극단**이다."
+      },
+      {
+       "t_raw": "현재 단장은 Yun Jin이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "현재 단장은 운근이다."
+      },
+      {
+       "t_raw": "Yun Jin은 이 극단의 단장이면서 Liyue Harbor의 오페라계에서 유명한 인물로 소개된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운근은 이 극단의 단장이면서 리월항의 오페라계에서 유명한 인물로 소개된다."
+      },
+      {
+       "t_raw": "극단의 대외적 위상은 단장 Yun Jin의 명성과 맞물려 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "극단의 대외적 위상은 단장 운근의 명성과 맞물려 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun Jin/Profile",
+       "revision": 569843,
+       "section": "Official Introduction",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The facts are supported by A1 and A2. The interpretation in (1) is reasonable.",
+     "quote": "The troupe currently performs at Heyu Tea House.",
+     "sentences": [
+      {
+       "t_raw": "극단은 현재 **Heyu Tea House**에서 공연한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "극단은 현재 **화유다관**에서 공연한다."
+      },
+      {
+       "t_raw": "가장 유명한 오페라 극단이라는 평가와 현재의 공연 장소가 함께 제시되어, 극단의 위치는 명성과 무대 양쪽에서 드러나는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가장 유명한 오페라 극단이라는 평가와 현재의 공연 장소가 함께 제시되어, 극단의 위치는 명성과 무대 양쪽에서 드러나는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — 무기 명가에서 오페라 가문으로",
+     "status": "accepted",
+     "note": "All sentences match A3. The 'family business shift' reading is a fair interpretation.",
+     "quote": "At some point in the Yun Family's history, they began pursuing Liyue Opera as a family tradition instead of weaponsmithing, which their family was famous for around 500 years ago.",
+     "sentences": [
+      {
+       "t_raw": "약 500년 전, Yun Family는 **무기 명가**로 이름을 떨쳤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약 500년 전, 운 씨 가문은 **무기 명가**로 이름을 떨쳤다."
+      },
+      {
+       "t_raw": "가문의 역사 어느 시점에 Yun Family는 무기 제작 대신 Liyue Opera를 가업으로 삼기 시작했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가문의 역사 어느 시점에 운 씨 가문은 무기 제작 대신 리월 경극을 가업으로 삼기 시작했다."
+      },
+      {
+       "t_raw": "무기 명가로 이름을 떨친 가문이 Liyue Opera를 가업으로 삼게 된 것은 **가업의 전환**으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "무기 명가로 이름을 떨친 가문이 리월 경극을 가업으로 삼게 된 것은 **가업의 전환**으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 무기 명가에서 오페라 가문으로",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사 — 무기 명가에서 오페라 가문으로",
+     "status": "accepted",
+     "note": "The facts match A3. The interpretation in (1) is reasonable.",
+     "quote": "By the time of Yun Jin's grandfather, the Yun-Han Opera Troupe was established.",
+     "sentences": [
+      {
+       "t_raw": "Yun-Han Opera Troupe는 Yun Jin의 할아버지 대에 세워졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운한사는 운근의 할아버지 대에 세워졌다."
+      },
+      {
+       "t_raw": "Liyue Opera를 가업으로 삼은 Yun Family의 흐름은 이때 극단이라는 형태로 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "리월 경극을 가업으로 삼은 운 씨 가문의 흐름은 이때 극단이라는 형태로 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사 — 무기 명가에서 오페라 가문으로",
+     "latin_left": []
+    },
+    {
+     "section": "극단의 사람들",
+     "status": "accepted",
+     "note": "The facts are supported by A1, A5, A6 and M1. The grandfather is listed as Director (Former). The interpretation in (3) is hedged and reasonable.",
+     "quote": "She is the director of the Yun-Han Opera Troupe and is also a famous figure in Liyue Harbor's opera scene.",
+     "sentences": [
+      {
+       "t_raw": "Yun-Han Opera Troupe의 **현재 단장은 Yun Jin**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운한사의 **현재 단장은 운근**이다."
+      },
+      {
+       "t_raw": "그녀는 극단을 이끄는 단장이자 Liyue Harbor의 오페라계에서 이름이 알려진 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 극단을 이끄는 단장이자 리월항의 오페라계에서 이름이 알려진 인물이다."
+      },
+      {
+       "t_raw": "Yun Jin의 할아버지는 전임 단장이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운근의 할아버지는 전임 단장이다."
+      },
+      {
+       "t_raw": "단장 자리가 Yun Jin의 할아버지에서 Yun Jin으로 이어지는 가족 구도로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "단장 자리가 운근의 할아버지에서 운근으로 이어지는 가족 구도로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": "Members",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": "Members",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun Jin/Profile",
+       "revision": 569843,
+       "section": "Official Introduction",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "극단의 사람들",
+     "latin_left": []
+    },
+    {
+     "section": "극단의 사람들",
+     "status": "accepted",
+     "note": "All sentences are supported: the member table gives Yunning as Manager, Q1 gives the introduction and the commission, and the interpretations are hedged.",
+     "quote": "Allow me to introduce Yunning, manager of the Yun-Han Opera Troupe.",
+     "sentences": [
+      {
+       "t_raw": "극단의 구성원은 이름과 역할로 제시되며, 그중 **매니저는 Yunning**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "극단의 구성원은 이름과 역할로 제시되며, 그중 **매니저는 운녕**이다."
+      },
+      {
+       "t_raw": "Katheryne은 Yunning을 Yun-Han Opera Troupe의 매니저로 소개하며, 그녀가 Guild에 의뢰를 넣었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "캐서린은 운녕을 운한사의 매니저로 소개하며, 그녀가 Guild에 의뢰를 넣었다고 말한다."
+      },
+      {
+       "t_raw": "Yun Jin이 단장이고, Yunning이 매니저이므로 두 사람의 역할이 구분된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "운근이 단장이고, 운녕이 매니저이므로 두 사람의 역할이 구분된 셈이다."
+      },
+      {
+       "t_raw": "Yunning이 Guild에 의뢰를 넣은 일은 매니저 역할의 한 단면을 보여 주는 대목으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "운녕이 Guild에 의뢰를 넣은 일은 매니저 역할의 한 단면을 보여 주는 대목으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": "Members",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": "Members",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": "Members",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Countryside Wandering",
+       "quest_ko": "야외에서 찾은 그녀",
+       "version": "2.4",
+       "speaker": "Katheryne"
+      }
+     ],
+     "heading": "극단의 사람들",
+     "latin_left": [
+      "Guild",
+      "Guild"
+     ]
+    },
+    {
+     "section": "새 희곡을 쓰는 단장",
+     "status": "accepted",
+     "note": "Facts match M2 and A6. The interpretations follow reasonably from the playwright and new-plays information.",
+     "quote": "Other than \"The Divine Damsel of Devastation\", the Yun-Han Opera Troupe has performed many other new plays in recent years, all of which were written by Yun Jin.",
+     "sentences": [
+      {
+       "t_raw": "Yun Jin은 Yun-Han Opera Troupe의 단장이자 젊은 배우이며, **극작가**이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운근은 운한사의 단장이자 젊은 배우이며, **극작가**이기도 하다."
+      },
+      {
+       "t_raw": "배우가 직접 희곡을 쓰는 경우는 더 드문 일로, Yun Jin은 배우와 극작가의 역할을 함께 맡는 인물인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "배우가 직접 희곡을 쓰는 경우는 더 드문 일로, 운근은 배우와 극작가의 역할을 함께 맡는 인물인 셈이다."
+      },
+      {
+       "t_raw": "Yun-Han Opera Troupe는 \"The Divine Damsel of Devastation\" 외에도 최근 몇 년간 여러 **새 희곡**을 공연했고, 그 여러 새 희곡은 모두 Yun Jin이 썼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운한사는 \"The Divine Damsel of Devastation\" 외에도 최근 몇 년간 여러 **새 희곡**을 공연했고, 그 여러 새 희곡은 모두 운근이 썼다.",
+       "polish": {
+        "from": "운한사는 \"The Divine Damsel of Devastation\" 외에도 최근 몇 년간 여러 **새 희곡**을 공연했고, 그 여러 새 희곡은 모두 운근이 썼다.",
+        "text": "운한사는 \"The Divine Damsel of Devastation\" 외에도 최근 몇 년간 여러 **새 희곡**을 공연했고, 그 여러 새 희곡은 모두 운근이 썼다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "단장이 직접 새 희곡을 써 왔다는 점은 극단의 레퍼토리가 Yun Jin의 창작 활동과 맞물려 넓어졌음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "단장이 직접 새 희곡을 써 왔다는 점은 극단의 레퍼토리가 운근의 창작 활동과 맞물려 넓어졌음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": "Members",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun Jin/Profile",
+       "revision": 569843,
+       "section": "Official Introduction",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "새 희곡을 쓰는 단장",
+     "latin_left": [
+      "The Divine Damsel of Devastation"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches Q1 and A7. The line is cut off at the dash.",
+     "quote": "Ah, , your timing is most optimal. Allow me to introduce Yunning, manager of the Yun-Han Opera Troupe. She has commissioned the Guild to—",
+     "sentences": [
+      {
+       "t_raw": "quest \"Countryside Wandering\"에서 Katheryne는 Yunning을 소개하며, 그녀가 Guild에 의뢰를 넣었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "임무 \"야외에서 찾은 그녀\"에서 캐서린은 운녕을 소개하며, 그녀가 Guild에 의뢰를 넣었다고 말한다.",
+       "polish": {
+        "from": "quest \"야외에서 찾은 그녀\"에서 캐서린은 운녕을 소개하며, 그녀가 Guild에 의뢰를 넣었다고 말한다.",
+        "text": "임무 \"야외에서 찾은 그녀\"에서 캐서린은 운녕을 소개하며, 그녀가 Guild에 의뢰를 넣었다고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Yunning은 Yun-Han Opera Troupe의 매니저다.",
+       "interp": false,
+       "dropped": false,
+       "t": "운녕은 운한사의 매니저다."
+      },
+      {
+       "t_raw": "다만 Katheryne의 말은 \"She has commissioned the Guild to—\"에서 끊긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 캐서린의 말은 \"그녀가 Guild에 의뢰를 넣었—\"에서 끊긴다.",
+       "polish": {
+        "from": "다만 캐서린의 말은 \"She has commissioned the Guild to—\"에서 끊긴다.",
+        "text": "다만 캐서린의 말은 \"그녀가 Guild에 의뢰를 넣었—\"에서 끊긴다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Countryside Wandering",
+       "quest_ko": "야외에서 찾은 그녀",
+       "version": "2.4",
+       "speaker": "Katheryne"
+      },
+      {
+       "kind": "wiki",
+       "page": "Yun-Han Opera Troupe",
+       "revision": 555402,
+       "section": "Members",
+       "paragraph": "A7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Guild",
+      "Guild"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "극단의 사람들",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아, , 타이밍이 아주 좋군요. Yun-Han Opera Troupe의 매니저 Yunning을 소개하겠습니다. 그녀가 Guild에 의뢰를 넣어—",
+     "en": "Ah, , your timing is most optimal. Allow me to introduce Yunning, manager of the Yun-Han Opera Troupe. She has commissioned the Guild to—",
+     "speaker": "Katheryne",
+     "source": {
+      "kind": "quest",
+      "quest": "Countryside Wandering",
+      "quest_ko": "야외에서 찾은 그녀",
+      "version": "2.4",
+      "speaker": "Katheryne"
+     },
+     "t": "아, , 타이밍이 아주 좋군요. 운한사의 매니저 운녕을 소개하겠습니다. 그녀가 Guild에 의뢰를 넣어—",
+     "speaker_ko": "캐서린"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation. 'Most optimal' became '가장 적절하군요', and 'commissioned' became '맡겼습니다', which is acceptable.",
+     "t_raw": "아, , 타이밍이 가장 적절하군요. Yun-Han Opera Troupe의 매니저 Yunning을 소개하겠습니다. 그녀가 Guild에 의뢰를 맡겼습니다—",
+     "en": "Ah, , your timing is most optimal. Allow me to introduce Yunning, manager of the Yun-Han Opera Troupe. She has commissioned the Guild to—",
+     "speaker": "Katheryne",
+     "source": {
+      "kind": "quest",
+      "quest": "Countryside Wandering",
+      "quest_ko": "야외에서 찾은 그녀",
+      "version": "2.4",
+      "speaker": "Katheryne"
+     },
+     "t": "아, , 타이밍이 가장 적절하군요. 운한사의 매니저 운녕을 소개하겠습니다. 그녀가 Guild에 의뢰를 맡겼습니다—",
+     "speaker_ko": "캐서린"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1614 @@
+{
+ "node": "Energy",
+ "articles": [
+  {
+   "node": "Energy",
+   "from_version": "Luna VII",
+   "cutoff": "2026-06-30T00:00:00Z",
+   "input": [
+    {
+     "page": "Energy",
+     "url": "https://genshin-impact.fandom.com/wiki/Energy",
+     "revision": 2093363
+    }
+   ],
+   "input_counts": {
+    "mentions": 16,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 7528,
+   "input_cut": false,
+   "input_hash": "0f826d6a2e68",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet,codex-medium,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Energy is the resource used to execute Elemental Bursts.",
+     "sentences": [
+      {
+       "t_raw": "Energy는 **Elemental Burst**를 실행하기 위해 모으는 자원이며, Mavuika와 Skirk처럼 별도의 **Special Energy**를 쓰는 사례는 일반 Energy와 구분해 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에너지는 **원소폭발**을 실행하기 위해 모으는 자원이며, 마비카와 스커크처럼 별도의 **Special Energy**를 쓰는 사례는 일반 에너지와 구분해 설명한다."
+      },
+      {
+       "t_raw": "필요한 Energy 양은 캐릭터와 Burst마다 다르고, Burst를 쓰면 모은 Energy가 전부 소모되며 재사용 대기 중에도 Energy를 모을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "필요한 에너지 양은 캐릭터와 Burst마다 다르고, Burst를 쓰면 모은 에너지가 전부 소모되며 재사용 대기 중에도 에너지를 모을 수 있다."
+      },
+      {
+       "t_raw": "Elemental Skill과 적의 HP 감소로 생긴 입자·오브를 주우면 파티 전체가 Energy를 회복하고, 입자가 도달하기 전에 활성 캐릭터를 바꾸면 다른 캐릭터가 더 많은 Energy를 받을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원소전투 스킬과 적의 HP 감소로 생긴 입자·오브를 주우면 파티 전체가 에너지를 회복하고, 입자가 도달하기 전에 활성 캐릭터를 바꾸면 다른 캐릭터가 더 많은 에너지를 받을 수 있다."
+      },
+      {
+       "t_raw": "그래서 Energy 운용은 수치만 보는 일이 아니라 **입자 수급의 타이밍**을 읽는 문제로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 에너지 운용은 수치만 보는 일이 아니라 **입자 수급의 타이밍**을 읽는 문제로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Elemental Burst",
+       "revision": 743429,
+       "section": "Overview",
+       "paragraph": "M13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Special Energy",
+      "Burst",
+      "Burst",
+      "HP"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The English says the page is mostly about normal energy. It does not say Special Energy is not covered, and it mentions Special Energy in several places. 'Not covered' overstates this.",
+     "quote": "Energy is the resource used to execute Elemental Bursts.",
+     "sentences": [
+      {
+       "t_raw": "**Energy**는 **Elemental Burst**를 실행할 때 쓰는 자원이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**에너지**는 **원소폭발**을 실행할 때 쓰는 자원이다."
+      },
+      {
+       "t_raw": "이 문서의 중심은 일반 Energy이며, Mavuika와 Skirk처럼 Special Energy를 쓰는 캐릭터의 Special Energy도 'Special Energy'라고 명시된 경우에는 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "이 문서의 중심은 일반 에너지이며, 마비카와 스커크처럼 Special Energy를 쓰는 캐릭터의 Special Energy도 'Special Energy'라고 명시된 경우에는 언급된다."
+      },
+      {
+       "t_raw": "Special Energy에 영향을 주는 효과라면 설명에서 **Special Energy**라고 명시한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Special Energy에 영향을 주는 효과라면 설명에서 **Special Energy**라고 명시한다."
+      },
+      {
+       "t_raw": "Elemental Burst에 필요한 Energy나 Special Energy의 양은 캐릭터마다 다르며, Talents 메뉴의 Skill Attributes에서 확인할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원소폭발에 필요한 에너지나 Special Energy의 양은 캐릭터마다 다르며, 특성 메뉴의 Skill Attributes에서 확인할 수 있다."
+      },
+      {
+       "t_raw": "Burst를 사용하면 Energy 또는 Special Energy가 전부 소모된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Burst를 사용하면 에너지 또는 Special Energy가 전부 소모된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Special Energy",
+      "Special Energy",
+      "Special Energy",
+      "Special Energy",
+      "Special Energy",
+      "Special Energy",
+      "Skill Attributes",
+      "Burst",
+      "Special Energy"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Excess Energy is not taken into account.",
+     "sentences": [
+      {
+       "t_raw": "Elemental Burst를 쓰려면 Energy Cost만큼 Energy를 모아야 하고, Burst 아이콘은 마지막 사용 이후 모인 Energy를 원소 색으로 채우며 초과 Energy는 계산하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원소폭발을 쓰려면 Energy Cost만큼 에너지를 모아야 하고, Burst 아이콘은 마지막 사용 이후 모인 에너지를 원소 색으로 채우며 초과 에너지는 계산하지 않는다."
+      },
+      {
+       "t_raw": "기본 Elemental Burst에 필요한 양보다 많은 Energy를 보유할 수 없고, 비용이 줄어든 Burst 버전을 가진 캐릭터는 그 버전의 필요량보다 더 많은 Energy를 가질 수 있지만 기본 버전의 필요량은 넘지 못한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기본 원소폭발에 필요한 양보다 많은 에너지를 보유할 수 없고, 비용이 줄어든 Burst 버전을 가진 캐릭터는 그 버전의 필요량보다 더 많은 에너지를 가질 수 있지만 기본 버전의 필요량은 넘지 못한다."
+      },
+      {
+       "t_raw": "Energy나 Special Energy가 음수가 되는 일은 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에너지나 Special Energy가 음수가 되는 일은 없다."
+      },
+      {
+       "t_raw": "기절하면 보유한 Energy 또는 Special Energy를 모두 잃고, 조작 중인 캐릭터가 맵 밖으로 떨어지거나 낙수하면 파티 전체가 Energy와 Special Energy를 모두 잃는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기절하면 보유한 에너지 또는 Special Energy를 모두 잃고, 조작 중인 캐릭터가 맵 밖으로 떨어지거나 낙수하면 파티 전체가 에너지와 Special Energy를 모두 잃는다."
+      },
+      {
+       "t_raw": "사용 후 Energy는 모두 소모되고 짧은 쿨다운에 들어가지만, 쿨다운 중에도 모을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사용 후 에너지는 모두 소모되고 짧은 쿨다운에 들어가지만, 쿨다운 중에도 모을 수 있다."
+      },
+      {
+       "t_raw": "이처럼 Energy의 상한과 소모는 Burst 비용을 기준으로 맞물려 움직인다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 에너지의 상한과 소모는 Burst 비용을 기준으로 맞물려 움직인다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Elemental Burst",
+       "revision": 743429,
+       "section": "Overview",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Elemental Burst",
+       "revision": 743429,
+       "section": "Overview",
+       "paragraph": "M13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Energy Cost",
+      "Burst",
+      "Burst",
+      "Special Energy",
+      "Special Energy",
+      "Special Energy",
+      "Burst"
+     ]
+    },
+    {
+     "section": "입자와 오브 — 파티 Energy 회복의 기본",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "When particles and orbs are picked up, they regenerate energy for the entire party.",
+     "sentences": [
+      {
+       "t_raw": "입자와 오브는 주로 원소 스킬과 적의 HP 감소로 생기고, 주우면 **파티 전체**의 Energy가 회복된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "입자와 오브는 주로 원소 스킬과 적의 HP 감소로 생기고, 주우면 **파티 전체**의 에너지가 회복된다."
+      },
+      {
+       "t_raw": "회복은 생성 순간이 아니라 입자나 오브가 캐릭터에 도달할 때 일어나므로, 도달 전에 활성 캐릭터를 바꾸면 다른 캐릭터가 더 많은 Energy를 받을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "회복은 생성 순간이 아니라 입자나 오브가 캐릭터에 도달할 때 일어나므로, 도달 전에 활성 캐릭터를 바꾸면 다른 캐릭터가 더 많은 에너지를 받을 수 있다."
+      },
+      {
+       "t_raw": "입자와 오브는 사거리 안의 캐릭터에게 이동을 시작하며, 각각 약 30초와 9초 안에 줍지 않으면 사라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "입자와 오브는 사거리 안의 캐릭터에게 이동을 시작하며, 각각 약 30초와 9초 안에 줍지 않으면 사라진다."
+      },
+      {
+       "t_raw": "일부 무기도 원소 입자를 만들고, 원소 공명 High Voltage는 Electro 관련 원소 반응이 적에게 발동하면 5초 쿨다운으로 Electro 원소 입자를 만들며, 번개가 이따금 Electro 입자 하나를 만들기도 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일부 무기도 원소 입자를 만들고, 원소 공명 High Voltage는 번개 관련 원소 반응이 적에게 발동하면 5초 쿨다운으로 번개 원소 입자를 만들며, 번개가 이따금 번개 입자 하나를 만들기도 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "입자와 오브 — 파티 에너지 회복의 기본",
+     "latin_left": [
+      "HP",
+      "High Voltage"
+     ]
+    },
+    {
+     "section": "입자와 오브 — 파티 Energy 회복의 기본",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Elemental Skills can generate up to 6 particles at once or a smaller number of particles at intervals upon hitting an enemy.",
+     "sentences": [
+      {
+       "t_raw": "원소 스킬은 적중 시 한 번에 **최대 6개**의 입자를 만들거나 더 적은 수의 입자를 일정 간격으로 생성할 수 있고, 이 입자는 해당 캐릭터의 원소를 따른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원소 스킬은 적중 시 한 번에 **최대 6개**의 입자를 만들거나 더 적은 수의 입자를 일정 간격으로 생성할 수 있고, 이 입자는 해당 캐릭터의 원소를 따른다."
+      },
+      {
+       "t_raw": "생성 위치는 적중한 적, 플레이어, 공격을 만든 구조물 중 스킬에 따라 달라지며, 아예 입자를 만들지 않는 캐릭터도 소수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "생성 위치는 적중한 적, 플레이어, 공격을 만든 구조물 중 스킬에 따라 달라지며, 아예 입자를 만들지 않는 캐릭터도 소수 있다."
+      },
+      {
+       "t_raw": "적의 원소 면역이나 피해를 모두 막는 보호막 때문에 피해가 없어도 입자는 생길 수 있지만, 피해를 받을 수 없는 적을 상대로는 협동 공격형 원소 스킬이 발동하지 않아 생성이 막힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적의 원소 면역이나 피해를 모두 막는 보호막 때문에 피해가 없어도 입자는 생길 수 있지만, 피해를 받을 수 없는 적을 상대로는 협동 공격형 원소 스킬이 발동하지 않아 생성이 막힌다."
+      },
+      {
+       "t_raw": "일부 스킬은 보장 생성량과 1개 추가 생성 확률로 나뉘고, 생성 쿨다운은 스킬 쿨다운과 별개로 성공 적중 시도 후 입자가 나오지 않아도 들어간다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일부 스킬은 보장 생성량과 1개 추가 생성 확률로 나뉘고, 생성 쿨다운은 스킬 쿨다운과 별개로 성공 적중 시도 후 입자가 나오지 않아도 들어간다."
+      },
+      {
+       "t_raw": "무생물이나 비적대 야생동물을 맞히면 입자가 생기지 않지만, Razor의 누르기형 스킬은 비적대 야생동물을, Wriothesley의 강화된 일반 공격과 강화된 강공격은 무생물을 맞혀도 입자를 만들 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무생물이나 비적대 야생동물을 맞히면 입자가 생기지 않지만, 레이저의 누르기형 스킬은 비적대 야생동물을, 라이오슬리의 강화된 일반 공격과 강화된 강공격은 무생물을 맞혀도 입자를 만들 수 있다."
+      },
+      {
+       "t_raw": "최대 6개 상한과 확률형 추가 생성, 별개의 생성 쿨다운이 겹치므로 겉으로 보이는 적중 횟수와 실제 입자 수가 어긋나는 구조로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "최대 6개 상한과 확률형 추가 생성, 별개의 생성 쿨다운이 겹치므로 겉으로 보이는 적중 횟수와 실제 입자 수가 어긋나는 구조로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Particles Generated by Elemental Skills",
+       "paragraph": "A23",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Particles Generated by Elemental Skills",
+       "paragraph": "A24",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Particles Generated by Elemental Skills",
+       "paragraph": "A25",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Particles Generated by Elemental Skills",
+       "paragraph": "A26",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Particles Generated by Elemental Skills",
+       "paragraph": "A27",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Particles Generated by Elemental Skills",
+       "paragraph": "A28",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "입자와 오브 — 파티 에너지 회복의 기본",
+     "latin_left": []
+    },
+    {
+     "section": "입자와 오브 — 파티 Energy 회복의 기본",
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "When an enemy's HP decreases to a certain threshold, it will drop Energy particles or orbs.",
+     "sentences": [
+      {
+       "t_raw": "적은 HP가 일정 임계점 아래로 떨어질 때 Energy 입자나 오브를 떨어뜨리며, 임계점과 드롭은 적마다 다르고 큰 적일수록 임계점이 많은 경향이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적은 HP가 일정 임계점 아래로 떨어질 때 에너지 입자나 오브를 떨어뜨리며, 임계점과 드롭은 적마다 다르고 큰 적일수록 임계점이 많은 경향이 있다."
+      },
+      {
+       "t_raw": "한 적은 임계점을 최대 4개까지 가질 수 있고, 적의 종류에 따라 입자가 원소성을 띨 수도, 띠지 않을 수도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 적은 임계점을 최대 4개까지 가질 수 있고, 적의 종류에 따라 입자가 원소성을 띨 수도, 띠지 않을 수도 있다."
+      },
+      {
+       "t_raw": "슬라임의 입자와 오브는 자기 원소를 띠고, 자동 장치의 것은 비원소성을 띤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "슬라임의 입자와 오브는 자기 원소를 띠고, 자동 장치의 것은 비원소성을 띤다."
+      },
+      {
+       "t_raw": "이미 넘긴 임계점을 회복으로 다시 넘어도 그 임계점에서 Energy가 다시 떨어지지는 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이미 넘긴 임계점을 회복으로 다시 넘어도 그 임계점에서 에너지가 다시 떨어지지는 않는다."
+      },
+      {
+       "t_raw": "일부 적은 기믹을 성공적으로 처리하면 많은 Energy를 회복시키거나 완전히 회복시키는 기믹을 가진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "일부 적은 기믹을 성공적으로 처리하면 많은 에너지를 회복시키거나 완전히 회복시키는 기믹을 가진다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Particles Generated by Enemy Drops",
+       "paragraph": "A30",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Particles Generated by Enemy Drops",
+       "paragraph": "A31",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Particles Generated by Enemy Drops",
+       "paragraph": "A32",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "입자와 오브 — 파티 에너지 회복의 기본",
+     "latin_left": [
+      "HP"
+     ]
+    },
+    {
+     "section": "입자와 오브 — 파티 Energy 회복의 기본",
+     "status": "accepted",
+     "note": "All sentences match A9-A19: the factors, the 80/70/60% rates, the Co-Op rule, and the table values.",
+     "quote": "For 2 / 3 / 4 characters in the party, the Conversion Rate of inactive characters is 80% / 70% / 60% of the Conversion Rate of active characters, respectively.",
+     "sentences": [
+      {
+       "t_raw": "캐릭터가 입자나 오브를 주울 때 얻는 Energy 양은 원소, Energy Recharge, 활성 여부, 파티 인원에 따라 달라진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "캐릭터가 입자나 오브를 주울 때 얻는 에너지 양은 원소, 원소 충전 효율, 활성 여부, 파티 인원에 따라 달라진다."
+      },
+      {
+       "t_raw": "파티가 2/3/4명일 때 비활성 캐릭터의 **변환율**은 활성의 80%/70%/60%이며, Co-Op Mode의 2인 플레이에서는 호스트가 파티 2명으로 취급되어 80%가 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파티가 2/3/4명일 때 비활성 캐릭터의 **변환율**은 활성의 80%/70%/60%이며, 멀티플레이 모드의 2인 플레이에서는 호스트가 파티 2명으로 취급되어 80%가 된다."
+      },
+      {
+       "t_raw": "Energy Recharge를 제외하면 활성 캐릭터는 같은 원소 입자로 3, 다른 원소 입자로 1, 비원소 입자로 2 Energy를 얻고, 같은 원소 오브로 9, 다른 원소 오브로 3, 비원소 오브로 6을 얻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원소 충전 효율을 제외하면 활성 캐릭터는 같은 원소 입자로 3, 다른 원소 입자로 1, 비원소 입자로 2 에너지를 얻고, 같은 원소 오브로 9, 다른 원소 오브로 3, 비원소 오브로 6을 얻는다."
+      },
+      {
+       "t_raw": "비활성 캐릭터의 같은 원소 입자 기준 Energy는 파티 4명일 때 1.8, 3명일 때 2.1, 2명일 때 2.4이고, 같은 원소 오브 기준으로는 5.4, 6.3, 7.2이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "비활성 캐릭터의 같은 원소 입자 기준 에너지는 파티 4명일 때 1.8, 3명일 때 2.1, 2명일 때 2.4이고, 같은 원소 오브 기준으로는 5.4, 6.3, 7.2이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A13",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Particles and Orbs",
+       "paragraph": "A15",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "입자와 오브 — 파티 에너지 회복의 기본",
+     "latin_left": []
+    },
+    {
+     "section": "직접 회복과 일반 공격",
+     "status": "accepted",
+     "note": "Supported by A20 and A21.",
+     "quote": "Energy can be directly generated through some artifacts, weapons, character talents, and character Constellations when their activation conditions are met.",
+     "sentences": [
+      {
+       "t_raw": "Energy는 일부 성유물, 무기, 캐릭터 특성, 캐릭터 Constellation의 발동 조건이 충족될 때 **직접 생성**될 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에너지는 일부 성유물, 무기, 캐릭터 특성, 캐릭터 운명의 자리의 발동 조건이 충족될 때 **직접 생성**될 수 있다."
+      },
+      {
+       "t_raw": "이 직접 생성은 Energy Recharge 스탯의 영향을 받지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 직접 생성은 원소 충전 효율 스탯의 영향을 받지 않는다."
+      },
+      {
+       "t_raw": "이벤트 Domain이 시작될 때나 이벤트 효과를 통해서도 Energy가 생성된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이벤트 비경이 시작될 때나 이벤트 효과를 통해서도 에너지가 생성된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Direct Energy Generation",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Direct Energy Generation",
+       "paragraph": "A21",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "직접 회복과 일반 공격",
+     "latin_left": []
+    },
+    {
+     "section": "직접 회복과 일반 공격",
+     "status": "accepted",
+     "note": "Supported by A33 and A35. The Sword row is 10% base, 5% increase per fail, 4.52 average hits.",
+     "quote": "When a Normal or Charged Attack hits an enemy, it has a probability to generate 1 Energy for the character.",
+     "sentences": [
+      {
+       "t_raw": "**일반 공격과 강공격**이 적에게 적중하면 일정 확률로 해당 캐릭터에게 Energy 1이 생성된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**일반 공격과 강공격**이 적에게 적중하면 일정 확률로 해당 캐릭터에게 에너지 1이 생성된다."
+      },
+      {
+       "t_raw": "실패할 때마다 확률이 높아지고, 성공하면 확률이 초기화된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "실패할 때마다 확률이 높아지고, 성공하면 확률이 초기화된다."
+      },
+      {
+       "t_raw": "이렇게 회복된 Energy는 Energy Recharge의 영향을 받지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이렇게 회복된 에너지는 원소 충전 효율의 영향을 받지 않는다."
+      },
+      {
+       "t_raw": "무기 종류별 기본 확률, 실패당 증가폭, 평균 적중 횟수가 제시되며, 한손검은 기본 확률 10%, 실패당 5%p 증가, 평균 4.52회 적중이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무기 종류별 기본 확률, 실패당 증가폭, 평균 적중 횟수가 제시되며, 한손검은 기본 확률 10%, 실패당 5%p 증가, 평균 4.52회 적중이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Energy Generated by Normal Attacks",
+       "paragraph": "A33",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Energy Generated by Normal Attacks",
+       "paragraph": "A34",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Energy Generated by Normal Attacks",
+       "paragraph": "A35",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "직접 회복과 일반 공격",
+     "latin_left": []
+    },
+    {
+     "section": "직접 회복과 일반 공격",
+     "status": "accepted",
+     "note": "Supported by A40-A45. The sentences only describe the lists and categories the page contains.",
+     "quote": "This is the list of Talents with the effect of regenerating energy directly, or recharging energy via Elemental Particles.",
+     "sentences": [
+      {
+       "t_raw": "직접 회복 또는 충전 효과는 특성, 성유물, 무기 등 여러 범주로 정리된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "직접 회복 또는 충전 효과는 특성, 성유물, 무기 등 여러 범주로 정리된다."
+      },
+      {
+       "t_raw": "특성 중에는 Energy를 직접 회복시키는 효과와 Elemental Particle을 통해 충전하는 효과가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특성 중에는 에너지를 직접 회복시키는 효과와 Elemental Particle을 통해 충전하는 효과가 있다."
+      },
+      {
+       "t_raw": "특정 성유물 세트는 Energy를 생성하고, 특정 무기는 패시브 효과의 일부로 Energy 생성을 가진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "특정 성유물 세트는 에너지를 생성하고, 특정 무기는 패시브 효과의 일부로 에너지 생성을 가진다."
+      },
+      {
+       "t_raw": "Energy와 관련된 효과가 있는 성유물 세트와 무기 효과도 따로 모인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에너지와 관련된 효과가 있는 성유물 세트와 무기 효과도 따로 모인다."
+      },
+      {
+       "t_raw": "**Energy Recharge** 수치를 올리거나 Energy Recharge에 의존하는 효과는 Energy Recharge 항목에서 다룬다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**원소 충전 효율** 수치를 올리거나 원소 충전 효율에 의존하는 효과는 원소 충전 효율 항목에서 다룬다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Energy Generation Effects",
+       "paragraph": "A40",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Energy Generation Effects",
+       "paragraph": "A41",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Energy Generation Effects > Artifacts",
+       "paragraph": "A42",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Energy Generation Effects > Weapons",
+       "paragraph": "A43",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Other Energy-Related Effects > Artifacts",
+       "paragraph": "A44",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Other Energy-Related Effects > Weapons",
+       "paragraph": "A45",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "직접 회복과 일반 공격",
+     "latin_left": [
+      "Elemental Particle"
+     ]
+    },
+    {
+     "section": "직접 회복과 일반 공격",
+     "status": "accepted",
+     "note": "The factual sentence is supported by A20 and A33. The interpretation follows from both being unaffected by Energy Recharge.",
+     "quote": "Energy can be directly generated through some artifacts, weapons, character talents, and character Constellations when their activation conditions are met.",
+     "sentences": [
+      {
+       "t_raw": "직접 생성과 일반·강공격 확률 회복은 모두 Energy Recharge의 영향을 받지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "직접 생성과 일반·강공격 확률 회복은 모두 원소 충전 효율의 영향을 받지 않는다."
+      },
+      {
+       "t_raw": "두 경로가 같은 비영향 규칙을 공유한다는 점에서, Energy Recharge와 별개로 작동하는 회복 수단으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 경로가 같은 비영향 규칙을 공유한다는 점에서, 원소 충전 효율과 별개로 작동하는 회복 수단으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Direct Energy Generation",
+       "paragraph": "A20",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Energy Generated by Normal Attacks",
+       "paragraph": "A33",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "직접 회복과 일반 공격",
+     "latin_left": []
+    },
+    {
+     "section": "Energy 손실과 환경 효과",
+     "status": "accepted",
+     "note": "Supported by A22 and A46. This covers the drain sources and the Special Energy exception.",
+     "quote": "The following enemies have the ability to drain Energy:",
+     "sentences": [
+      {
+       "t_raw": "Elemental Burst 사용이나 기절 외에도, Energy를 흡수하는 적들이 캐릭터의 Energy를 **빼앗는** 일이 있고 High Voltage 같은 Ley Line Disorder도 Energy를 소모시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "원소폭발 사용이나 기절 외에도, 에너지를 흡수하는 적들이 캐릭터의 에너지를 **빼앗는** 일이 있고 High Voltage 같은 지맥 이상도 에너지를 소모시킨다."
+      },
+      {
+       "t_raw": "Katsuragikiri Nagamasa와 Shimenawa's Reminiscence 같은 무기·성유물 효과도 Energy를 소모시킬 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카츠라기를 벤 나가마사와 Shimenawa의 Reminiscence 같은 무기·성유물 효과도 에너지를 소모시킬 수 있다."
+      },
+      {
+       "t_raw": "다만 Skirk와 Mavuika의 Special Energy는 Special Energy라고 명시되지 않는 한 영향을 받지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다만 스커크와 마비카의 Special Energy는 Special Energy라고 명시되지 않는 한 영향을 받지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Overview > Direct Energy Loss",
+       "paragraph": "A22",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy",
+       "revision": 2093363,
+       "section": "Enemies",
+       "paragraph": "A46",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "에너지 손실과 환경 효과",
+     "latin_left": [
+      "High Voltage",
+      "Shimenawa",
+      "Reminiscence",
+      "Special Energy",
+      "Special Energy"
+     ]
+    },
+    {
+     "section": "Energy 손실과 환경 효과",
+     "status": "accepted",
+     "note": "All sentences are supported; the interpretation reasonably distinguishes the different Energy-related effects.",
+     "quote": "During Low Tide, all characters in the party cannot gain Elemental Energy.",
+     "sentences": [
+      {
+       "t_raw": "Energy Tides는 Elemental High Tide와 Elemental Low Tide를 10초 주기로 오가며, High Tide에는 공격 적중 시 많은 Elemental Particles가 생성되어 10 Elemental Energy를 회복시키는 효과가 2.8초마다 한 번씩 일어난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "에너지 조수는 Elemental High Tide와 Elemental Low Tide를 10초 주기로 오가며, High Tide에는 공격 적중 시 많은 Elemental Particles가 생성되어 10 원소 에너지를 회복시키는 효과가 2.8초마다 한 번씩 일어난다."
+      },
+      {
+       "t_raw": "**Elemental Low Tide**에는 파티의 모든 캐릭터가 Elemental Energy를 얻을 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**Elemental Low Tide**에는 파티의 모든 캐릭터가 원소 에너지를 얻을 수 없다."
+      },
+      {
+       "t_raw": "Energy Blast는 Overloaded/Melt/Vaporize/Electro-Charged/Superconduct 발동 시 주변 적에게 DMG를 주고, High-Energy Crystal Cores는 쓰러뜨린 적이 떨어뜨려 가까이 가면 폭발해 주변 캐릭터에게 Geo DMG를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Energy Blast는 과부하/융해/증발/감전/초전도 발동 시 주변 적에게 DMG를 주고, High-Energy Crystal Cores는 쓰러뜨린 적이 떨어뜨려 가까이 가면 폭발해 주변 캐릭터에게 Geo DMG를 준다."
+      },
+      {
+       "t_raw": "같은 Ley Line Disorder라도 Energy를 회복시키거나 획득을 막거나 폭발 피해를 주므로, Energy가 붙은 이름이 곧 Energy 손실만을 뜻하지는 않는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 지맥 이상라도 에너지를 회복시키거나 획득을 막거나 폭발 피해를 주므로, 에너지가 붙은 이름이 곧 에너지 손실만을 뜻하지는 않는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ley Line Disorder",
+       "revision": 1085101,
+       "section": "Hazards/Debuffs > Environmental Hazards",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ley Line Disorder",
+       "revision": 1085101,
+       "section": "Buffs",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ley Line Disorder",
+       "revision": 1085101,
+       "section": "Hazards/Debuffs > Environmental Hazards",
+       "paragraph": "M8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "에너지 손실과 환경 효과",
+     "latin_left": [
+      "Elemental High Tide",
+      "Elemental Low Tide",
+      "High Tide",
+      "Elemental Particles",
+      "Elemental Low Tide",
+      "Energy Blast",
+      "DMG",
+      "High-Energy Crystal Cores",
+      "Geo DMG"
+     ]
+    },
+    {
+     "section": "Energy 손실과 환경 효과",
+     "status": "accepted",
+     "note": "All sentences are supported, including the interpretation of combat and exploration risks.",
+     "quote": "Accumulating too much Turbulent Energy Flow causes all characters to drown.",
+     "sentences": [
+      {
+       "t_raw": "Magatsu Mitake Narukami no Mikoto가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 Elemental Energy를 잃고, 그 형태는 큰 DMG RES와 더 치명적인 공격을 얻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Magatsu Mitake Narukami no 미코토가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 원소 에너지를 잃고, 그 형태는 큰 피해 내성과 더 치명적인 공격을 얻는다.",
+       "polish": {
+        "from": "Magatsu Mitake Narukami no 미코토가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 원소 에너지를 잃고, 그 형태는 큰 DMG RES와 더 치명적인 공격을 얻는다.",
+        "text": "Magatsu Mitake Narukami no 미코토가 해당 형태인 동안 활성 캐릭터는 일정 간격으로 원소 에너지를 잃고, 그 형태는 큰 피해 내성과 더 치명적인 공격을 얻는다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "적절한 원소 공격으로 이 형태를 더 빨리 해제하면 그 과정에서 Energy를 얻을 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "적절한 원소 공격으로 이 형태를 더 빨리 해제하면 그 과정에서 에너지를 얻을 수 있다."
+      },
+      {
+       "t_raw": "Fontaine Research Institute, Stagnating in the Rubble에서는 폭발한 Arkhium reactor의 condensing components에 오염된 보랏빛 큐브 안을 잠수하면, condensing component를 찾아 제거할 때까지 **Turbulent Energy Flow**가 계속 쌓인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "폐허 위에 정체된 폰타인 과학원에서는 폭발한 아르케 광석 반응로의 응축 부품에 오염된 보랏빛 큐브 안을 잠수하면, 응축 부품을 찾아 제거할 때까지 **난류 에너지 흐름**이 계속 쌓인다.",
+       "polish": {
+        "from": "폐허 위에 정체된 폰타인 과학원에서는 폭발한 아르케 광석 reactor의 condensing components에 오염된 보랏빛 큐브 안을 잠수하면, condensing component를 찾아 제거할 때까지 **난류 에너지 흐름**이 계속 쌓인다.",
+        "text": "폐허 위에 정체된 폰타인 과학원에서는 폭발한 아르케 광석 반응로의 응축 부품에 오염된 보랏빛 큐브 안을 잠수하면, 응축 부품을 찾아 제거할 때까지 **난류 에너지 흐름**이 계속 쌓인다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Turbulent Energy Flow가 너무 많이 쌓이면 모든 캐릭터가 익사하게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "난류 에너지 흐름이 너무 많이 쌓이면 모든 캐릭터가 익사하게 된다."
+      },
+      {
+       "t_raw": "전투 중 주기적 손실과 탐사 중 누적 위험이 함께 나타나므로, Energy 손실과 환경 효과는 전투와 탐사 양쪽의 위험으로 이어지는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "전투 중 주기적 손실과 탐사 중 누적 위험이 함께 나타나므로, 에너지 손실과 환경 효과는 전투와 탐사 양쪽의 위험으로 이어지는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ley Line Disorder",
+       "revision": 1085101,
+       "section": "Trounce Domains",
+       "paragraph": "M9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Fontaine",
+       "revision": 1784374,
+       "section": "Notable Features > Diving",
+       "paragraph": "M11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "에너지 손실과 환경 효과",
+     "latin_left": [
+      "Magatsu Mitake Narukami"
+     ]
+    },
+    {
+     "section": "세계관 속 Energy",
+     "status": "accepted",
+     "note": "Both reported statements and the interpretation of Energy's varied uses are supported.",
+     "quote": "If these sources prove correct, the energy contained within Aaru may be sufficient to power our Akasha renovation plan.",
+     "sentences": [
+      {
+       "t_raw": "Faruzan은 **Light Realm, Elemental, Abyssal energy**와 그 셋 사이의 관계를 충분히 잘 이해하고 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "파루잔은 **광계, 원소, 심연 에너지**와 그 셋 사이의 관계를 충분히 잘 이해하고 있다고 말한다.",
+       "polish": {
+        "from": "파루잔은 **광계, Elemental, Abyssal energy**와 그 셋 사이의 관계를 충분히 잘 이해하고 있다고 말한다.",
+        "text": "파루잔은 **광계, 원소, 심연 에너지**와 그 셋 사이의 관계를 충분히 잘 이해하고 있다고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Alhaitham은 제시된 sources가 맞다면 Aaru에 담긴 Energy가 Akasha 개조 계획을 구동하기에 충분할 수 있다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "알하이탐은 제시된 출처가 맞다면 아루에 담긴 에너지가 「허공」 개조 계획을 구동하기에 충분할 수 있다고 본다.",
+       "polish": {
+        "from": "알하이탐은 제시된 sources가 맞다면 아루에 담긴 에너지가 「허공」 개조 계획을 구동하기에 충분할 수 있다고 본다.",
+        "text": "알하이탐은 제시된 출처가 맞다면 아루에 담긴 에너지가 「허공」 개조 계획을 구동하기에 충분할 수 있다고 본다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "두 발언을 나란히 놓으면, Energy가 Light Realm 같은 영역의 에너지와 Akasha 개조 계획의 동력원을 함께 가리키는 말로 쓰인다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "두 발언을 나란히 놓으면, 에너지가 광계 같은 영역의 에너지와 「허공」 개조 계획의 동력원을 함께 가리키는 말로 쓰인다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Tower Unto Wisdom and Folly",
+       "quest_ko": "망념과 진리의 하늘탑",
+       "version": "Luna VII",
+       "speaker": "Faruzan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Ancient Shadows Re-Emerge",
+       "quest_ko": "과거의 그림자",
+       "version": "Luna VII",
+       "speaker": "Alhaitham"
+      }
+     ],
+     "heading": "세계관 속 에너지",
+     "latin_left": []
+    },
+    {
+     "section": "세계관 속 Energy",
+     "status": "accepted",
+     "note": "All factual details are supported, and the comparison is clearly framed as interpretation.",
+     "quote": "the negative energy within the nightmare fragments might affect the surrounding environment.",
+     "sentences": [
+      {
+       "t_raw": "Hyakujitsuhaku Shion은 nightmare fragments 안의 negative energy가 주변 환경에 영향을 줄 수 있다고 경고한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "햐쿠지츠하쿠 시온은 악몽 파편 안의 부정적 에너지가 주변 환경에 영향을 줄 수 있다고 경고한다.",
+       "polish": {
+        "from": "햐쿠지츠하쿠 시온은 nightmare fragments 안의 negative energy가 주변 환경에 영향을 줄 수 있다고 경고한다.",
+        "text": "햐쿠지츠하쿠 시온은 악몽 파편 안의 부정적 에너지가 주변 환경에 영향을 줄 수 있다고 경고한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Akasha가 꺼지기 전, Moseis는 Akasha의 **Jnana Energy** 공급 중 아주 적은 부분만으로 꿈속에 사람들의 가상적이고 극사실적인 모델을 만들 수 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「허공」이 꺼지기 전, 모세이스는 「허공」의 **즈냐나 에너지** 공급 중 아주 적은 부분만으로 꿈속에 사람들의 가상적이고 극사실적인 모델을 만들 수 있었다."
+      },
+      {
+       "t_raw": "Moseis는 의식을 Akasha로 옮겨 꿈의 host가 되었고, 완전히 깨어 있으면서도 자신이 깨서 꿈이 붕괴하지 않도록 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모세이스는 의식을 「허공」으로 옮겨 꿈의 숙주가 되었고, 완전히 깨어 있으면서도 자신이 깨서 꿈이 붕괴하지 않도록 했다.",
+       "polish": {
+        "from": "모세이스는 의식을 「허공」으로 옮겨 꿈의 host가 되었고, 완전히 깨어 있으면서도 자신이 깨서 꿈이 붕괴하지 않도록 했다.",
+        "text": "모세이스는 의식을 「허공」으로 옮겨 꿈의 숙주가 되었고, 완전히 깨어 있으면서도 자신이 깨서 꿈이 붕괴하지 않도록 했다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Akasha가 꺼진 뒤에도 특정 인물에게 심은 신호 장치로 그들에게서 Jnana Energy를 계속 거두어 꿈을 연료로 삼을 수 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「허공」이 꺼진 뒤에도 특정 인물에게 심은 신호 장치로 그들에게서 즈냐나 에너지를 계속 거두어 꿈을 연료로 삼을 수 있었다."
+      },
+      {
+       "t_raw": "이 대목에서 nightmare fragments의 negative energy가 주변 환경을 건드릴 수 있다는 경고와, 꿈을 유지하려 Jnana Energy를 거두는 구조가 대비된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 대목에서 악몽 파편의 부정적 에너지가 주변 환경을 건드릴 수 있다는 경고와, 꿈을 유지하려 즈냐나 에너지를 거두는 구조가 대비된다고 볼 수 있다.",
+       "polish": {
+        "from": "이 대목에서 nightmare fragments의 negative energy가 주변 환경을 건드릴 수 있다는 경고와, 꿈을 유지하려 즈냐나 에너지를 거두는 구조가 대비된다고 볼 수 있다.",
+        "text": "이 대목에서 악몽 파편의 부정적 에너지가 주변 환경을 건드릴 수 있다는 경고와, 꿈을 유지하려 즈냐나 에너지를 거두는 구조가 대비된다고 볼 수 있다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "If You Should Forget the Entrance to Dreams (Quest)",
+       "quest_ko": "잃어버린 꿈의 입구",
+       "version": "Luna VII",
+       "speaker": "Hyakujitsuhaku Shion"
+      },
+      {
+       "kind": "wiki",
+       "page": "Akasha System",
+       "revision": 2055886,
+       "section": "Story > Present Day",
+       "paragraph": "M14",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Dream of Falling"
+        }
+       ]
+      }
+     ],
+     "heading": "세계관 속 에너지",
+     "latin_left": []
+    },
+    {
+     "section": "세계관 속 Energy",
+     "status": "accepted",
+     "note": "The reported statements preserve the source's uncertainty, and the interpretation of Energy's broader meanings is reasonable.",
+     "quote": "Her breathing is weak! And her elemental energy levels are dangerously low...",
+     "sentences": [
+      {
+       "t_raw": "Naphis는 어떤 인물의 호흡이 약하고 **elemental energy** levels가 위험할 정도로 낮다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나피스는 어떤 인물의 호흡이 약하고 **원소 에너지** 수치가 위험할 정도로 낮다고 전한다.",
+       "polish": {
+        "from": "나피스는 어떤 인물의 호흡이 약하고 **elemental energy** levels가 위험할 정도로 낮다고 전한다.",
+        "text": "나피스는 어떤 인물의 호흡이 약하고 **원소 에너지** 수치가 위험할 정도로 낮다고 전한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Diluc은 풀의 이슬이 차가운 것이 아마 elemental energy의 영향일 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다이루크는 풀의 이슬이 차가운 것이 아마 원소 에너지의 영향일 것이라고 말한다.",
+       "polish": {
+        "from": "다이루크는 풀의 이슬이 차가운 것이 아마 elemental energy의 영향일 것이라고 말한다.",
+        "text": "다이루크는 풀의 이슬이 차가운 것이 아마 원소 에너지의 영향일 것이라고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Sobek은 해당 인물이 모든 Energy를 Lesser Lord Kusanali를 돌보는 데 집중하고 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "소베크는 해당 인물이 모든 에너지를 쿠사나리 데비를 돌보는 데 집중하고 있다고 말한다."
+      },
+      {
+       "t_raw": "이 셋을 함께 보면, 인물의 Energy는 신체 상태와 환경의 상태, 돌봄에 쏟는 집중력까지 가리키는 말로 확장된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 셋을 함께 보면, 인물의 에너지는 신체 상태와 환경의 상태, 돌봄에 쏟는 집중력까지 가리키는 말로 확장된다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Darkness Looming",
+       "quest_ko": "어둠의 시간",
+       "version": "Luna VII",
+       "speaker": "Sobek"
+      },
+      {
+       "kind": "quest",
+       "quest": "Where Flowers Awaken",
+       "quest_ko": "꽃이 깨어난 곳",
+       "version": "Luna VII",
+       "speaker": "Naphis"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Knight's Resolve",
+       "quest_ko": "기사의 결의",
+       "version": "Luna VII",
+       "speaker": "Diluc"
+      }
+     ],
+     "heading": "세계관 속 에너지",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All biographical and event details are explicitly supported.",
+     "quote": "Hosseini is an event-exclusive NPC who appears in Energy Amplifier Initiation, Shadow of the Ancients, Energy Amplifier Fruition, and A Muddy Bizarre Adventure.",
+     "sentences": [
+      {
+       "t_raw": "**Hosseini**는 Sumeru 출신 학자로, Sumeru Akademiya의 파견을 받아 논문 연구를 수행했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**호세이니**는 수메르 출신 학자로, 수메르 아카데미아의 파견을 받아 논문 연구를 수행했다."
+      },
+      {
+       "t_raw": "Hosseini는 Energy Amplifier Initiation, Shadow of the Ancients, Energy Amplifier Fruition, A Muddy Bizarre Adventure에 등장하는 이벤트 전용 캐릭터이며, Energy Amplifier Initiation과 Energy Amplifier Fruition에서는 지도 아이콘 아래에서 그를 만날 수 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호세이니는 전도 원판·서론, 고대의 그림자, 전도 원판·발미, 깊은 곳의 진흙 기담에 등장하는 이벤트 전용 캐릭터이며, 전도 원판·서론과 전도 원판·발미에서는 지도 아이콘 아래에서 그를 만날 수 있었다."
+      },
+      {
+       "t_raw": "그에게는 Arezo라는 누나가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그에게는 아레소라는 누나가 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hosseini",
+       "revision": 1016482,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Hosseini",
+       "revision": 1016482,
+       "section": null,
+       "paragraph": "M10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences follow the English.",
+     "quote": "With little research funds remaining, Hosseini returned to Liyue by catching a trip with The Crux",
+     "sentences": [
+      {
+       "t_raw": "연구비가 거의 남지 않자 Hosseini는 The Crux를 타고 Liyue로 돌아와, 이전에 Akademiya의 인정을 받았던 Energy Amplifier 연구에 집중하려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "연구비가 거의 남지 않자 호세이니는 남십자를 타고 리월로 돌아와, 이전에 아카데미아의 인정을 받았던 전도 원판 연구에 집중하려 했다."
+      },
+      {
+       "t_raw": "그러나 항해 중 배에서 떨어져 감기에 걸렸고, Traveler는 그를 알아보지 못해 Hosseini를 당황하게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 항해 중 배에서 떨어져 감기에 걸렸고, 여행자는 그를 알아보지 못해 호세이니를 당황하게 했다."
+      },
+      {
+       "t_raw": "그래도 Traveler는 Hosseini의 부탁을 받아들여 Energy Amplifier를 사용한 전투 결과를 기록했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 여행자는 호세이니의 부탁을 받아들여 전도 원판을 사용한 전투 결과를 기록했다."
+      },
+      {
+       "t_raw": "연구비 부족과 배에서 떨어져 감기에 걸린 일에도 Energy Amplifier 연구를 이어 간 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "연구비 부족과 배에서 떨어져 감기에 걸린 일에도 전도 원판 연구를 이어 간 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Hosseini",
+       "revision": 1016482,
+       "section": "Story > Return to Liyue",
+       "paragraph": "M12",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "I, Researcher"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "탐사·일상 속 Energy",
+     "status": "accepted",
+     "note": "All supported by M1 and M7.",
+     "quote": "Energy Transfer Terminals are an exploration mechanic in Fontaine currently found in the Liffey Region and Fontaine Research Institute of Kinetic Energy Engineering Region.",
+     "sentences": [
+      {
+       "t_raw": "**Energy Transfer Terminal**은 Fixed Storage Device나 Energy Transfer Device에서 다른 장치로 에너지를 옮기며, 일부 퍼즐에서는 Energy Transfer Device를 그 사거리 안으로 옮겨야 진행할 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**전이 단말기**는 Fixed Storage Device나 Energy Transfer Device에서 다른 장치로 에너지를 옮기며, 일부 퍼즐에서는 Energy Transfer Device를 그 사거리 안으로 옮겨야 진행할 수 있다."
+      },
+      {
+       "t_raw": "이 장치는 Fontaine의 Liffey Region과 Fontaine Research Institute of Kinetic Energy Engineering Region에서 발견되는 탐사 메커니즘이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 장치는 폰타인의 리피 구역과 폰타인 운동 에너지 공학 연구원 구역에서 발견되는 탐사 메커니즘이다."
+      },
+      {
+       "t_raw": "퍼즐과 Fontaine 탐사에서 쓰이는 점에서, 장치 연결을 다루는 탐사 요소로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "퍼즐과 폰타인 탐사에서 쓰이는 점에서, 장치 연결을 다루는 탐사 요소로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Energy Transfer Terminal",
+       "revision": 1372980,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Energy Transfer Terminal",
+       "revision": 1372980,
+       "section": null,
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "탐사·일상 속 에너지",
+     "latin_left": [
+      "Fixed Storage Device",
+      "Energy Transfer Device",
+      "Energy Transfer Device"
+     ]
+    },
+    {
+     "section": "탐사·일상 속 Energy",
+     "status": "accepted",
+     "note": "Supported by M6.",
+     "quote": "Place furnishings to increase the Adeptal Energy Rank of your Serenitea Pot. As your Adeptal Energy Rank increases, Realm Currency will accumulate at a faster rate.",
+     "sentences": [
+      {
+       "t_raw": "Serenitea Pot에서는 가구를 배치해 **Adeptal Energy Rank**를 높인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "속세의 주전자에서는 가구를 배치해 **Adeptal Energy Rank**를 높인다."
+      },
+      {
+       "t_raw": "Adeptal Energy Rank가 높아지면 Realm Currency가 더 빠르게 축적된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Adeptal Energy Rank가 높아지면 선계 화폐가 더 빠르게 축적된다."
+      },
+      {
+       "t_raw": "가구 배치가 순위를 올리고 그 순위가 Realm Currency 축적 속도로 이어지므로, 이는 꾸미기와 수급을 연결하는 지표로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가구 배치가 순위를 올리고 그 순위가 선계 화폐 축적 속도로 이어지므로, 이는 꾸미기와 수급을 연결하는 지표로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tutorial",
+       "revision": 443209,
+       "section": "System > Serenitea Pot",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "탐사·일상 속 에너지",
+     "latin_left": [
+      "Adeptal Energy Rank",
+      "Adeptal Energy Rank"
+     ]
+    },
+    {
+     "section": "탐사·일상 속 Energy",
+     "status": "accepted",
+     "note": "Supported by M15 and M16.",
+     "quote": "Energy Block",
+     "sentences": [
+      {
+       "t_raw": "Azosite의 형태로 **Energy Block**이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "「아조트 물질」의 형태로 **에너지 덩어리**가 있다."
+      },
+      {
+       "t_raw": "Lost Energy Block 역시 Azosite의 형태로 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잃어버린 에너지 덩어리 역시 「아조트 물질」의 형태로 제시된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Azosite",
+       "revision": 1662315,
+       "section": "Forms of Azosite",
+       "paragraph": "M15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Azosite",
+       "revision": 1662315,
+       "section": "Forms of Azosite",
+       "paragraph": "M16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "탐사·일상 속 에너지",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Dialogue paraphrases match Q5, Q8 and Q9.",
+     "quote": "Hey, Nicole! You're so full of energy today! And... words... you're so full of words...",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Nicole에게 오늘 energy가 넘친다고 말하고, 이어 말까지 많다고 덧붙인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 니콜에게 오늘 기운이 넘친다고 말하고, 이어 말까지 많다고 덧붙인다.",
+       "polish": {
+        "from": "페이몬은 니콜에게 오늘 energy가 넘친다고 말하고, 이어 말까지 많다고 덧붙인다.",
+        "text": "페이몬은 니콜에게 오늘 기운이 넘친다고 말하고, 이어 말까지 많다고 덧붙인다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Mikko는 Linnea에게 조용해진 모습을 두고 ‘teacher energy’가 어디 갔느냐고 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미크호는 린네아에게 조용해진 모습을 두고 '선생님 기운'이 어디 갔느냐고 묻는다.",
+       "polish": {
+        "from": "미크호는 린네아에게 조용해진 모습을 두고 'teacher energy'가 어디 갔느냐고 묻는다.",
+        "text": "미크호는 린네아에게 조용해진 모습을 두고 '선생님 기운'이 어디 갔느냐고 묻는다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Mikko는 어떤 대상이 방금까지 energy가 넘쳤고 Jurva에게서 먹이를 빼앗으려 했다며, 아파 보이지 않는다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미크호는 어떤 대상이 방금까지 기운이 넘쳤고 유르바에게서 먹이를 빼앗으려 했다며, 아파 보이지 않는다고 말한다.",
+       "polish": {
+        "from": "미크호는 어떤 대상이 방금까지 energy가 넘쳤고 유르바에게서 먹이를 빼앗으려 했다며, 아파 보이지 않는다고 말한다.",
+        "text": "미크호는 어떤 대상이 방금까지 기운이 넘쳤고 유르바에게서 먹이를 빼앗으려 했다며, 아파 보이지 않는다고 말한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "이 대사들에서 energy는 **사람이나 동물의 활력**과 말·행동의 기세를 가리키는 가벼운 표현으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 대사들에서 기운은 **사람이나 동물의 활력**과 말·행동의 기세를 가리키는 가벼운 표현으로 읽힌다.",
+       "polish": {
+        "from": "이 대사들에서 energy는 **사람이나 동물의 활력**과 말·행동의 기세를 가리키는 가벼운 표현으로 읽힌다.",
+        "text": "이 대사들에서 기운은 **사람이나 동물의 활력**과 말·행동의 기세를 가리키는 가벼운 표현으로 읽힌다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Silent Theater",
+       "quest_ko": "침묵의 극장",
+       "version": "Luna VII",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Fauna Investigation Special Lecture",
+       "quest_ko": "동물 조사 특별 수업",
+       "version": "Luna VI",
+       "speaker": "Mikko"
+      },
+      {
+       "kind": "quest",
+       "quest": "Priorities First: Afterword",
+       "quest_ko": "우선순위・후일담",
+       "version": "Luna VI",
+       "speaker": "Mikko"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Matches Q10.",
+     "quote": "Great energy from both contestants! Now, without further ado, let the match commence!",
+     "sentences": [
+      {
+       "t_raw": "Czeslawa는 두 선수에게서 대단한 energy가 나온다며, 더 미루지 말고 경기를 시작하자고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "체슬라바는 두 선수에게서 대단한 기운이 나온다며, 더 미루지 말고 경기를 시작하자고 한다.",
+       "polish": {
+        "from": "체슬라바는 두 선수에게서 대단한 energy가 나온다며, 더 미루지 말고 경기를 시작하자고 한다.",
+        "text": "체슬라바는 두 선수에게서 대단한 기운이 나온다며, 더 미루지 말고 경기를 시작하자고 한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "여기서 energy는 경기에 나선 이들의 **활력**을 가리키는 용례로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "여기서 기운은 경기에 나선 이들의 **활력**을 가리키는 용례로 보인다.",
+       "polish": {
+        "from": "여기서 energy는 경기에 나선 이들의 **활력**을 가리키는 용례로 보인다.",
+        "text": "여기서 기운은 경기에 나선 이들의 **활력**을 가리키는 용례로 보인다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Championship Begins",
+       "quest_ko": "경연 대회 개막",
+       "version": "Luna VI",
+       "speaker": "Czeslawa"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "Energy 손실과 환경 효과",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "아, 하지만 조심하세요. nightmare fragments 안의 부정적 에너지가 주변 환경에 영향을 미칠 수도 있어요.",
+     "en": "Oh, be warned, though, the negative energy within the nightmare fragments might affect the surrounding environment.",
+     "speaker": "Hyakujitsuhaku Shion",
+     "source": {
+      "kind": "quest",
+      "quest": "If You Should Forget the Entrance to Dreams (Quest)",
+      "quest_ko": "잃어버린 꿈의 입구",
+      "version": "Luna VII",
+      "speaker": "Hyakujitsuhaku Shion"
+     },
+     "t": "아, 하지만 조심하세요. nightmare fragments 안의 부정적 에너지가 주변 환경에 영향을 미칠 수도 있어요.",
+     "speaker_ko": "햐쿠지츠하쿠 시온"
+    },
+    {
+     "section": "세계관 속 Energy",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "어쨌든 나는 Light Realm, Elemental, Abyssal energy와 그 셋 사이의 관계를 충분히 잘 이해하고 있단다!",
+     "en": "Anyway, I have a perfectly good understanding of Light Realm, Elemental, and Abyssal energy, as well as the relationship between the three!",
+     "speaker": "Faruzan",
+     "source": {
+      "kind": "quest",
+      "quest": "A Tower Unto Wisdom and Folly",
+      "quest_ko": "망념과 진리의 하늘탑",
+      "version": "Luna VII",
+      "speaker": "Faruzan"
+     },
+     "t": "어쨌든 나는 광계, Elemental, Abyssal energy와 그 셋 사이의 관계를 충분히 잘 이해하고 있단다!",
+     "speaker_ko": "파루잔"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Czeslawa's line.",
+     "t_raw": "두 선수 모두 대단한 에너지네요! 그럼 더 이상 지체하지 말고 경기를 시작하죠!",
+     "en": "Great energy from both contestants! Now, without further ado, let the match commence!",
+     "speaker": "Czeslawa",
+     "source": {
+      "kind": "quest",
+      "quest": "The Championship Begins",
+      "quest_ko": "경연 대회 개막",
+      "version": "Luna VI",
+      "speaker": "Czeslawa"
+     },
+     "t": "두 선수 모두 대단한 에너지네요! 그럼 더 이상 지체하지 말고 경기를 시작하죠!",
+     "speaker_ko": "체슬라바"
+    }
+   ]
+  }
+ ]
+}

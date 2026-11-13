@@ -1,0 +1,1855 @@
+{
+ "node": "Ningguang",
+ "articles": [
+  {
+   "node": "Ningguang",
+   "from_version": "3.1",
+   "cutoff": "2022-11-01T00:00:00Z",
+   "input": [
+    {
+     "page": "Ningguang",
+     "url": "https://genshin-impact.fandom.com/wiki/Ningguang",
+     "revision": 889440
+    },
+    {
+     "page": "Ningguang/Profile",
+     "url": "https://genshin-impact.fandom.com/wiki/Ningguang%2FProfile",
+     "revision": 890762
+    }
+   ],
+   "input_counts": {
+    "mentions": 16,
+    "lines": 34,
+    "web": 0
+   },
+   "input_chars": 3633,
+   "input_cut": false,
+   "input_hash": "51d08cd8ce03",
+   "writer": "kimi,ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "S1 says she became a mogul after building the residence. The English gives no such sequence or cause. S3 says she is an unsolvable enigma specifically to business partners. The English calls her Liyue's enigma in general and does not name partners.",
+     "quote": "Despite being a mogul who shakes the very foundations of business circles, she is adored by the children of Liyue like an older sister.",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 Liyue Qixing의 Tianquan이자 **Jade Chamber**의 주인이며, Geo Vision을 지닌 사업가다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 리월 칠성의 천권성이자 **군옥각**의 주인이며, 바위 신의 눈을 지닌 사업가다."
+      },
+      {
+       "t_raw": "그녀는 엄청난 양의 Plaustrite를 매입해 Liyue 상공에 찬란한 거처인 Jade Chamber를 세웠으며, Liyue 상권 전체를 뒤흔드는 거물이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그녀는 엄청난 양의 부유석을 매입해 리월 상공에 찬란한 거처인 군옥각을 세웠으며, 리월 상권 전체를 뒤흔드는 거물이기도 하다."
+      },
+      {
+       "t_raw": "그러나 그녀가 차가운 이익 계산가로 보이는 것과 달리, Liyue Harbor의 안위를 위해 일생의 업적인 Jade Chamber를 버릴 각오도 하는 등 Liyue를 향한 깊은 관심을 드러낸다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그러나 그녀가 차가운 이익 계산가로 보이는 것과 달리, 리월항의 안위를 위해 일생의 업적인 군옥각을 버릴 각오도 하는 등 리월을 향한 깊은 관심을 드러낸다."
+      },
+      {
+       "t_raw": "Liyue의 아이들은 그녀를 언니처럼 따르며, 그녀는 Liyue에서 가장 아름답고 풀리지 않는 수수께끼로 남는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "리월의 아이들은 그녀를 언니처럼 따르며, 그녀는 리월에서 가장 아름답고 풀리지 않는 수수께끼로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang",
+       "revision": 889440,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang",
+       "revision": 889440,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Personality",
+       "paragraph": "B2",
+       "wiki_refs": [
+        {
+         "type": "vo",
+         "name": "Keqing"
+        },
+        {
+         "type": "vo",
+         "name": "Zhongli"
+        },
+        {
+         "type": "vo",
+         "name": "Ningguang"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Personality",
+       "paragraph": "B3",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Hongyi"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2 and B7.",
+     "quote": "The Tianquan of the Liyue Qixing and owner of the floating Jade Chamber in the skies of Liyue, Ningguang is a mogul who shakes the very foundations of business circles.",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 Geo 속성의 플레이어블 캐릭터이자 **Liyue Qixing**의 **Tianquan**이며, Liyue의 하늘에 떠 있는 Jade Chamber의 주인이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 바위 속성의 플레이어블 캐릭터이자 **리월 칠성**의 **천권성**이며, 리월의 하늘에 떠 있는 군옥각의 주인이다."
+      },
+      {
+       "t_raw": "상계의 기반을 흔드는 거물인 그녀는 Liyue라는 거대한 시장에서 누구도 따를 자가 없고, 예리한 통찰력과 날카로운 말솜씨를 지녔다고 평가받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상계의 기반을 흔드는 거물인 그녀는 리월라는 거대한 시장에서 누구도 따를 자가 없고, 예리한 통찰력과 날카로운 말솜씨를 지녔다고 평가받는다."
+      },
+      {
+       "t_raw": "Jade Chamber에서 갈가리 찢어 버린 문서에서 몇 조각을 주워 가는 것만으로도 남들보다 한두 발짝 앞서 나갈 수 있는 귀중한 지혜를 얻는다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "군옥각에서 갈가리 찢어 버린 문서에서 몇 조각을 주워 가는 것만으로도 남들보다 한두 발짝 앞서 나갈 수 있는 귀중한 지혜를 얻는다고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang",
+       "revision": 889440,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang",
+       "revision": 889440,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by B8-B10. The interpretation in S3 is hedged and follows reasonably.",
+     "quote": "Her chamber is much like Ningguang herself — beyond measure, above the masses, and draws attention from all.",
+     "sentences": [
+      {
+       "t_raw": "그녀를 만난 사람은 누구나 그 모범적인 통찰력과 놀라운 두뇌에 압도당하며, 스타일 또한 유일무이하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀를 만난 사람은 누구나 그 모범적인 통찰력과 놀라운 두뇌에 압도당하며, 스타일 또한 유일무이하다."
+      },
+      {
+       "t_raw": "Ningguang은 부양하는 성질을 지닌 암석 **Plaustrite**를 대량으로 사들이는 데 천문학적인 금액을 투자해, 하늘 위의 화려한 거처 Jade Chamber를 세웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 부양하는 성질을 지닌 암석 **부유석**을 대량으로 사들이는 데 천문학적인 금액을 투자해, 하늘 위의 화려한 거처 군옥각을 세웠다."
+      },
+      {
+       "t_raw": "그 거처는 헤아릴 수 없이 크고 군중 위에 떠서 모두의 이목을 끄는데, 이는 Ningguang 자신을 닮은 모습이라는 평으로 이어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 거처는 헤아릴 수 없이 크고 군중 위에 떠서 모두의 이목을 끄는데, 이는 응광 자신을 닮은 모습이라는 평으로 이어진다."
+      },
+      {
+       "t_raw": "막대한 투자로 하늘에 세운 거처가 그녀 자신을 닮았다는 평가를 받는다는 점을 겹쳐 보면, Jade Chamber는 그녀의 재력과 안목이 그대로 건축으로 굳어진 결과물이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "막대한 투자로 하늘에 세운 거처가 그녀 자신을 닮았다는 평가를 받는다는 점을 겹쳐 보면, 군옥각은 그녀의 재력과 안목이 그대로 건축으로 굳어진 결과물이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by B11 and Q8. The interpretation in S3 is reasonable.",
+     "quote": "My schedule is usually very tightly packed, and any extra time I can squeeze out is spent on preparing for the future.",
+     "sentences": [
+      {
+       "t_raw": "이런 거물이면서도 Liyue의 아이들에게는 누나처럼 사랑받는 인물이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이런 거물이면서도 리월의 아이들에게는 누나처럼 사랑받는 인물이기도 하다."
+      },
+      {
+       "t_raw": "Yujing Terrace 연회의 사교계 인사이자 디저트 세계의 감식가이며, Liyue에서 가장 아름답고 풀리지 않는 수수께끼로 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "옥경대 연회의 사교계 인사이자 디저트 세계의 감식가이며, 리월에서 가장 아름답고 풀리지 않는 수수께끼로 남아 있다."
+      },
+      {
+       "t_raw": "그녀는 일정이 아주 빽빽하게 짜여 있어 겨우 짜낸 여유 시간도 미래를 준비하는 데 쓴다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 일정이 아주 빽빽하게 짜여 있어 겨우 짜낸 여유 시간도 미래를 준비하는 데 쓴다고 말한다."
+      },
+      {
+       "t_raw": "상계를 흔드는 거물이라는 면모와 아이들이 따르는 누나라는 면모, 그리고 여유마저 미래 준비에 쏟는 치밀함이 한 사람 안에 겹쳐 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "상계를 흔드는 거물이라는 면모와 아이들이 따르는 누나라는 면모, 그리고 여유마저 미래 준비에 쏟는 치밀함이 한 사람 안에 겹쳐 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Time Off!",
+       "quest_ko": "휴가 시간!",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by B1 and Q8. The interpretation is reasonable.",
+     "quote": "Ningguang is a professional businesswoman, having accumulated her wealth through hard work and perseverance.",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 성실과 끈기로 부를 쌓아 올린 전문적인 사업가이며, Tianquan으로서 업무에 매우 꼼꼼하고 Liyue 안에서 큰 영향력을 지닌 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 성실과 끈기로 부를 쌓아 올린 전문적인 사업가이며, 천권성으로서 업무에 매우 꼼꼼하고 리월 안에서 큰 영향력을 지닌 인물이다."
+      },
+      {
+       "t_raw": "그녀의 일정은 늘 빽빽하게 차 있고, 겨우 짜낸 여유 시간마저 미래를 준비하는 데 쓴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀의 일정은 늘 빽빽하게 차 있고, 겨우 짜낸 여유 시간마저 미래를 준비하는 데 쓴다."
+      },
+      {
+       "t_raw": "남는 시간까지 미래 준비에 쓰는 태도는 그녀가 쌓아 올린 부가 **성실과 끈기**의 결과임을 보여주는 대목으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "남는 시간까지 미래 준비에 쓰는 태도는 그녀가 쌓아 올린 부가 **성실과 끈기**의 결과임을 보여주는 대목으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Personality",
+       "paragraph": "B1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Time Off!",
+       "quest_ko": "휴가 시간!",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by B2. The interpretation follows reasonably.",
+     "quote": "She makes use of a large intelligence network and \"pawns\" to gain the information she needs",
+     "sentences": [
+      {
+       "t_raw": "계산적이고 냉혹한 사업가인 그녀가 부를 좇는 데에는 가난했던 과거가 배경으로 깔려 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "계산적이고 냉혹한 사업가인 그녀가 부를 좇는 데에는 가난했던 과거가 배경으로 깔려 있다."
+      },
+      {
+       "t_raw": "방대한 정보망과 \"pawns\"를 활용해 필요한 정보를 얻고, 약점을 파악한 사람만을 부린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방대한 정보망과 \"앞잡이들\"을 활용해 필요한 정보를 얻고, 약점을 파악한 사람만을 부린다.",
+       "polish": {
+        "from": "방대한 정보망과 \"pawns\"를 활용해 필요한 정보를 얻고, 약점을 파악한 사람만을 부린다.",
+        "text": "방대한 정보망과 \"앞잡이들\"을 활용해 필요한 정보를 얻고, 약점을 파악한 사람만을 부린다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그런 방식 탓에 큰 영향력을 가진 이들에게는 미움을 사지만, Qixing과 Liyue Harbor 전체의 번영에 보탬이 되기에 많은 이가 이를 받아들인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런 방식 탓에 큰 영향력을 가진 이들에게는 미움을 사지만, 칠성과 리월항 전체의 번영에 보탬이 되기에 많은 이가 이를 받아들인다."
+      },
+      {
+       "t_raw": "가난한 과거가 Mora를 향한 집념으로, 그 집념이 다시 정보망과 약점 파악이라는 수단으로 이어진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "가난한 과거가 모라를 향한 집념으로, 그 집념이 다시 정보망과 약점 파악이라는 수단으로 이어진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Personality",
+       "paragraph": "B2",
+       "wiki_refs": [
+        {
+         "type": "vo",
+         "name": "Keqing"
+        },
+        {
+         "type": "vo",
+         "name": "Zhongli"
+        },
+        {
+         "type": "vo",
+         "name": "Ningguang"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by B3 and B11.",
+     "quote": "Despite her cold, business-driven exterior, she has Liyue's best interests at heart.",
+     "sentences": [
+      {
+       "t_raw": "차갑고 사업적인 겉모습과 달리 **Liyue의 이익**을 마음에 두고 있으며, 물 오염 사건에 대응해 공중 보건과 안전을 고의로 위협하는 자에게는 자비를 보이지 말라고 명했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "차갑고 사업적인 겉모습과 달리 **리월의 이익**을 마음에 두고 있으며, 물 오염 사건에 대응해 공중 보건과 안전을 고의로 위협하는 자에게는 자비를 보이지 말라고 명했다."
+      },
+      {
+       "t_raw": "Osial이 다시 깨어나 Liyue Harbor를 위협했을 때에는 adepti와의 갈등을 접어두고 자신의 일생의 작업인 Jade Chamber를 봉인에 내주었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오셀이 다시 깨어나 리월항을 위협했을 때에는 선인과의 갈등을 접어두고 자신의 일생의 작업인 군옥각을 봉인에 내주었다.",
+       "polish": {
+        "from": "오셀이 다시 깨어나 리월항을 위협했을 때에는 adepti와의 갈등을 접어두고 자신의 일생의 작업인 군옥각을 봉인에 내주었다.",
+        "text": "오셀이 다시 깨어나 리월항을 위협했을 때에는 선인과의 갈등을 접어두고 자신의 일생의 작업인 군옥각을 봉인에 내주었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "아이들을 각별히 아끼는데, 아이들이 중요한 정보를 준다는 점과 아이들이 웃는 모습을 보는 것이 좋다는 점이 함께 작용하며, Liyue의 아이들은 그런 그녀를 누나처럼 따른다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아이들을 각별히 아끼는데, 아이들이 중요한 정보를 준다는 점과 아이들이 웃는 모습을 보는 것이 좋다는 점이 함께 작용하며, 리월의 아이들은 그런 그녀를 누나처럼 따른다."
+      },
+      {
+       "t_raw": "실리와 호의가 겹쳐 있는 아이들을 대하는 태도에는 냉철한 사업가와 다정한 어른이라는 두 얼굴이 함께 드러난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "실리와 호의가 겹쳐 있는 아이들을 대하는 태도에는 냉철한 사업가와 다정한 어른이라는 두 얼굴이 함께 드러난다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Personality",
+       "paragraph": "B3",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Hongyi"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Liyue",
+     "status": "accepted",
+     "note": "The English says Ningguang announced Rex Lapis was killed and ordered the exits sealed. It never says she spoke on behalf of the Qixing's position.",
+     "quote": "Rex Lapis has been killed! Seal the exits!",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 Rex Lapis가 살해당했다고 알리고 출구를 봉쇄하라고 명령했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "응광은 암왕제군이 살해당했다고 알리고 출구를 봉쇄하라고 명령했다."
+      },
+      {
+       "t_raw": "그녀는 **Rex Lapis가 살해되었다**고 선언하고 곧바로 출구를 봉쇄하라고 지시했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 **암왕제군이 살해되었다**고 선언하고 곧바로 출구를 봉쇄하라고 지시했다."
+      },
+      {
+       "t_raw": "도시의 상권을 흔드는 거물이 사건의 첫 대응으로 봉쇄를 택했다는 점은, 그녀가 혼란을 통제 가능한 범위에 두는 쪽을 우선하는 인물임을 보여주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도시의 상권을 흔드는 거물이 사건의 첫 대응으로 봉쇄를 택했다는 점은, 그녀가 혼란을 통제 가능한 범위에 두는 쪽을 우선하는 인물임을 보여주는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang",
+       "revision": 889440,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Rite of Descension",
+       "quest_ko": "청신",
+       "version": "1.0",
+       "speaker": "Ningguang"
+      }
+     ],
+     "heading": "작중 행적 — 리월",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Liyue",
+     "status": "accepted",
+     "note": "The English only says the adepti came and that she could not yield to their wishes. It does not say they came to confront or demand an explanation from her (따지러), and it does not say when this happened relative to other events (이후).",
+     "quote": "Thank you all for hearing me out. We know very well why the adepti came here today... But please forgive us, we cannot yield to your wishes.",
+     "sentences": [
+      {
+       "t_raw": "adepti들이 모인 자리에서 Ningguang은 그들의 뜻에 따를 수 없다고 밝혔다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "선인들이 모인 자리에서 응광은 그들의 뜻에 따를 수 없다고 밝혔다.",
+       "polish": {
+        "from": "adepti들이 모인 자리에서 응광은 그들의 뜻에 따를 수 없다고 밝혔다.",
+        "text": "선인들이 모인 자리에서 응광은 그들의 뜻에 따를 수 없다고 밝혔다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "선물을 받고는 오히려 자신 때문에 손님이 불편해졌다며 사과하는 여유도 잃지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "선물을 받고는 오히려 자신 때문에 손님이 불편해졌다며 사과하는 여유도 잃지 않았다."
+      },
+      {
+       "t_raw": "정면으로 선을 긋고도 예를 갖추는 태도는, 그녀에게 대립과 거래가 같은 언어로 처리되는 일임을 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정면으로 선을 긋고도 예를 갖추는 태도는, 그녀에게 대립과 거래가 같은 언어로 처리되는 일임을 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Fond Farewell",
+       "quest_ko": "송신",
+       "version": "1.1",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Equilibrium",
+       "quest_ko": "선기 옥형",
+       "version": "1.1",
+       "speaker": "Ningguang"
+      }
+     ],
+     "heading": "작중 행적 — 리월",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Liyue",
+     "status": "accepted",
+     "note": "Supported by B3 and Q19, and the interpretation follows from them.",
+     "quote": "When Osial was reawakened and threatened Liyue Harbor, she put her conflict with the adepti aside and ultimately sacrificed the Jade Chamber, her life's work, to seal it away.",
+     "sentences": [
+      {
+       "t_raw": "Osial이 다시 깨어나 Liyue Harbor를 위협했을 때, 그녀는 adepti와의 갈등을 접어두었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오셀이 다시 깨어나 리월항을 위협했을 때, 그녀는 선인과의 갈등을 접어두었다.",
+       "polish": {
+        "from": "오셀이 다시 깨어나 리월항을 위협했을 때, 그녀는 adepti와의 갈등을 접어두었다.",
+        "text": "오셀이 다시 깨어나 리월항을 위협했을 때, 그녀는 선인과의 갈등을 접어두었다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "업그레이드된 Guizhong Ballista로 그 신을 막겠다며, 그 자리의 adepti 모두가 힘을 보태 조작하자고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "업그레이드된 귀종기로 그 신을 막겠다며, 그 자리의 선인 모두가 힘을 보태 조작하자고 했다.",
+       "polish": {
+        "from": "업그레이드된 귀종기로 그 신을 막겠다며, 그 자리의 adepti 모두가 힘을 보태 조작하자고 했다.",
+        "text": "업그레이드된 귀종기로 그 신을 막겠다며, 그 자리의 선인 모두가 힘을 보태 조작하자고 했다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그리고 하늘에 떠 있는 **Jade Chamber**를 내어 Osial을 봉인했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그리고 하늘에 떠 있는 **군옥각**을 내어 오셀을 봉인했다."
+      },
+      {
+       "t_raw": "요구를 들어줄 수 없다던 상대에게 힘을 청하고, 자신의 거처를 대가로 내놓았다는 점에서 그녀의 셈은 Liyue Harbor의 안위를 기준으로 움직였다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "요구를 들어줄 수 없다던 상대에게 힘을 청하고, 자신의 거처를 대가로 내놓았다는 점에서 그녀의 셈은 리월항의 안위를 기준으로 움직였다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang",
+       "revision": 889440,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Personality",
+       "paragraph": "B3",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Hongyi"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Turning Point",
+       "quest_ko": "만회",
+       "version": "1.1",
+       "speaker": "Ningguang"
+      }
+     ],
+     "heading": "작중 행적 — 리월",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "Supported by M1. The interpretation is reasonable.",
+     "quote": "Ningguang decided to rebuild the Jade Chamber to lure Beisht out pre-emptively, knowing that she would not be able to stand the presence of the very building that had defeated her husband.",
+     "sentences": [
+      {
+       "t_raw": "Osial이 Jade Chamber에 봉인된 것을 알게 된 Beisht는 남편의 원수를 갚으려 했고, 바다에서 항해하던 Beidou가 그 존재를 먼저 알아채 Ningguang에게 알렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "오셀이 군옥각에 봉인된 것을 알게 된 베이슈트는 남편의 원수를 갚으려 했고, 바다에서 항해하던 북두가 그 존재를 먼저 알아채 응광에게 알렸다."
+      },
+      {
+       "t_raw": "Ningguang은 남편을 봉인한 바로 그 건물을 Beisht가 견디지 못하리라 보고, 그녀를 미리 끌어내려 Jade Chamber를 재건하기로 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 남편을 봉인한 바로 그 건물을 베이슈트가 견디지 못하리라 보고, 그녀를 미리 끌어내려 군옥각을 재건하기로 한다."
+      },
+      {
+       "t_raw": "아직 모습을 드러내지 않은 상대를 위해 자신의 거처를 미끼로 삼은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아직 모습을 드러내지 않은 상대를 위해 자신의 거처를 미끼로 삼은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Beisht",
+       "revision": 575113,
+       "section": "Story",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "Supported by M1 and Q30. The interpretation is reasonable.",
+     "quote": "Ningguang commissioned an expert to dismantle and study the Guizhong Ballista, and design an improved version based on the original.",
+     "sentences": [
+      {
+       "t_raw": "공사에 앞서 Ningguang은 전문가에게 Guizhong Ballista를 분해하고 연구하게 해 개량형을 설계하게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "공사에 앞서 응광은 전문가에게 귀종기를 분해하고 연구하게 해 개량형을 설계하게 했다."
+      },
+      {
+       "t_raw": "Guyun Stone Forest에서 그 개량형 제작을 Keqing과 Ganyu가 감독했고, Bubu Pharmacy에는 대량의 의료용 붕대가 주문되었으며 Qiqi가 해변의 사람들을 대피시켰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "고운각에서 그 개량형 제작을 각청과 감우가 감독했고, 불복려에는 대량의 의료용 붕대가 주문되었으며 치치가 해변의 사람들을 대피시켰다."
+      },
+      {
+       "t_raw": "무기와 의료 물자, 주민 대피가 한꺼번에 준비된 것으로 보아 충돌을 전제로 한 대비였음을 알 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "무기와 의료 물자, 주민 대피가 한꺼번에 준비된 것으로 보아 충돌을 전제로 한 대비였음을 알 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Beisht",
+       "revision": 575113,
+       "section": "Story",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Seagaze Sunset",
+       "quest_ko": "명해서하",
+       "version": "2.4",
+       "speaker": "Keqing"
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "All supported by Q22, Q24, Q34, M1; the interpretation is reasonable.",
+     "quote": "But also, \"not for profit\" is really not something I ever expected from Lady Ningguang...",
+     "sentences": [
+      {
+       "t_raw": "부지가 정해지고 자재가 대부분 모인 뒤에도 세 가지 핵심 물품이 남아 있었고, 공사가 공식적으로 완료된 뒤 밧줄이 풀리면 Jade Chamber가 하늘로 떠오르게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "부지가 정해지고 자재가 대부분 모인 뒤에도 세 가지 핵심 물품이 남아 있었고, 공사가 공식적으로 완료된 뒤 밧줄이 풀리면 군옥각이 하늘로 떠오르게 된다."
+      },
+      {
+       "t_raw": "이 공사가 이윤을 위한 것이 아니라는 점은 Xingxi조차 믿기 어려워했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 공사가 이윤을 위한 것이 아니라는 점은 성희조차 믿기 어려워했다."
+      },
+      {
+       "t_raw": "Beisht를 끌어들이기 위한 미끼가 목적이었다는 점과 겹쳐 보면, 이 비영리적 재건은 손해를 감수한 계산이었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "베이슈트를 끌어들이기 위한 미끼가 목적이었다는 점과 겹쳐 보면, 이 비영리적 재건은 손해를 감수한 계산이었던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Beisht",
+       "revision": 575113,
+       "section": "Story",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Jade Chamber Rising",
+       "quest_ko": "경대옥각",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Where the Heart Finds Rest",
+       "quest_ko": "마음이 편한 곳",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Liyue Millennial",
+       "quest_ko": "「리월 천년」",
+       "version": "2.4",
+       "speaker": "Xingxi"
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "Supported by Q5, Q9, Q2.",
+     "quote": "You may ask me anything, and I will give you an honest answer. I trust that this means of compensation will be to everyone's satisfaction.",
+     "sentences": [
+      {
+       "t_raw": "재건 과정에서 Ningguang은 여행자에게 일정표를 하나씩 짚어가며 진행하는 일을 맡기고, 걱정할 것 없다며 익숙한 업무라고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "재건 과정에서 응광은 여행자에게 일정표를 하나씩 짚어가며 진행하는 일을 맡기고, 걱정할 것 없다며 익숙한 업무라고 했다."
+      },
+      {
+       "t_raw": "그 대가로는 무엇이든 물어보라며 솔직한 답을 내걸었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 대가로는 무엇이든 물어보라며 솔직한 답을 내걸었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Jade Chamber Rising",
+       "quest_ko": "경대옥각",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Jade Chamber Once More",
+       "quest_ko": "다시 방문한 군옥각",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Business as Usual",
+       "quest_ko": "평소대로",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      }
+     ],
+     "heading": "작중 행적 — 해등절",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Supported by A2, B1, B5.",
+     "quote": "Even grabbing a few scraps from the documents she shreds from the Jade Chamber will gift one an invaluable fragment of her wisdom, enough to stay a step or two from one's peers.",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 Liyue Qixing의 Tianquan이자 Geo Vision을 지닌 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 리월 칠성의 천권성이자 바위 신의 눈을 지닌 인물이다."
+      },
+      {
+       "t_raw": "Tianquan으로서 그녀는 업무에 매우 세밀하며, Liyue 안에서 큰 영향력을 지닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천권성으로서 그녀는 업무에 매우 세밀하며, 리월 안에서 큰 영향력을 지닌다."
+      },
+      {
+       "t_raw": "그녀가 Jade Chamber에서 파쇄한 문서의 조각만 얻어도 귀중한 지혜의 일부가 되어, 또래보다 한두 걸음 앞서게 된다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀가 군옥각에서 파쇄한 문서의 조각만 얻어도 귀중한 지혜의 일부가 되어, 또래보다 한두 걸음 앞서게 된다고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang",
+       "revision": 889440,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang",
+       "revision": 889440,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Personality",
+       "paragraph": "B1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Appearance",
+       "paragraph": "B5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Supported by B9 and A2; interpretation is reasonable.",
+     "quote": "She invested an astronomical amount into purchasing up huge volumes of Plaustrite, a type of rock with levitation properties.",
+     "sentences": [
+      {
+       "t_raw": "그녀는 부유하는 성질을 지닌 암석 Plaustrite를 천문학적 금액으로 대량 매입해, Liyue의 하늘 위에 화려한 거처 Jade Chamber를 세웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 부유하는 성질을 지닌 암석 부유석을 천문학적 금액으로 대량 매입해, 리월의 하늘 위에 화려한 거처 군옥각을 세웠다."
+      },
+      {
+       "t_raw": "값비싼 광물을 통째로 사들여 하늘에 집을 올린 셈이니, 이 저택 자체가 그녀의 재력과 수완을 그대로 보여주는 표본인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "값비싼 광물을 통째로 사들여 하늘에 집을 올린 셈이니, 이 저택 자체가 그녀의 재력과 수완을 그대로 보여주는 표본인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang",
+       "revision": 889440,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Plaustrite",
+       "revision": 548589,
+       "section": "Usage",
+       "paragraph": "M10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "M13 supports the ore marker; the interpretation is hedged.",
+     "quote": "Ore (if Ningguang is in the player's party)",
+     "sentences": [
+      {
+       "t_raw": "그녀가 일행에 있으면 지도에 광석의 위치가 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀가 일행에 있으면 지도에 광석의 위치가 드러난다."
+      },
+      {
+       "t_raw": "광물을 대량으로 사들여 하늘에 거처를 세운 인물인 만큼, 광석을 읽는 눈은 그녀의 사업 수단과 맞닿아 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "광물을 대량으로 사들여 하늘에 거처를 세운 인물인 만큼, 광석을 읽는 눈은 그녀의 사업 수단과 맞닿아 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Map",
+       "revision": 612071,
+       "section": "Map Markers > Minimap Markers",
+       "paragraph": "M13",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Supported by B2 and Q32.",
+     "quote": "Information from Lady Ningguang is priceless. Whoever gets to it first takes the market...",
+     "sentences": [
+      {
+       "t_raw": "그녀는 방대한 정보망과 '장기말'을 통해 필요한 정보를 얻고, 약점을 파악한 상대만을 부린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 방대한 정보망과 '장기말'을 통해 필요한 정보를 얻고, 약점을 파악한 상대만을 부린다."
+      },
+      {
+       "t_raw": "그녀의 손에서 나온 정보는 값을 매길 수 없을 만큼 귀해, 그것을 먼저 손에 넣는 이가 시장을 쥔다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀의 손에서 나온 정보는 값을 매길 수 없을 만큼 귀해, 그것을 먼저 손에 넣는 이가 시장을 쥔다고 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Personality",
+       "paragraph": "B2",
+       "wiki_refs": [
+        {
+         "type": "vo",
+         "name": "Keqing"
+        },
+        {
+         "type": "vo",
+         "name": "Zhongli"
+        },
+        {
+         "type": "vo",
+         "name": "Ningguang"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Jade Chamber Rising",
+       "quest_ko": "경대옥각",
+       "version": "2.4",
+       "speaker": "Zhicheng"
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by M2, M3, M4, M5, M6 and M7.",
+     "quote": "Ningguang would emphasize that she picked Beidou, not The Crux",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 The Crux가 아니라 Beidou를 선택했다고 강조하며, The Crux와의 협력은 그에 딸린 부수적인 일일 뿐이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 남십자가 아니라 북두를 선택했다고 강조하며, 남십자와의 협력은 그에 딸린 부수적인 일일 뿐이라고 말한다."
+      },
+      {
+       "t_raw": "정작 Beidou는 자신이 누구의 부하도 아니고 그 누구도 뒤에서 줄을 당기지 않는다며 대등한 협력임을 강하게 주장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정작 북두는 자신이 누구의 부하도 아니고 그 누구도 뒤에서 줄을 당기지 않는다며 대등한 협력임을 강하게 주장한다."
+      },
+      {
+       "t_raw": "참모들은 그런 Beidou가 예측 불가능하고 제멋대로라고 걱정하지만, Ningguang은 미소를 지으며 그 걱정을 흘려보낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "참모들은 그런 북두가 예측 불가능하고 제멋대로라고 걱정하지만, 응광은 미소를 지으며 그 걱정을 흘려보낸다."
+      },
+      {
+       "t_raw": "Beidou는 다른 협력자들과 달리 조심스럽게 굴지도, 예를 갖추지도 않으며 때로는 Ningguang과 부딪히기까지 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북두는 다른 협력자들과 달리 조심스럽게 굴지도, 예를 갖추지도 않으며 때로는 응광과 부딪히기까지 한다."
+      },
+      {
+       "t_raw": "Beidou가 Ningguang을 체스에서 두 번 이겼다는 이야기에서 중요한 것은 돈이 아니라, 그럴 배짱을 냈다는 점이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북두가 응광을 체스에서 두 번 이겼다는 이야기에서 중요한 것은 돈이 아니라, 그럴 배짱을 냈다는 점이다."
+      },
+      {
+       "t_raw": "한쪽은 상대를 골랐다고 말하고 다른 쪽은 골라진 적이 없다고 말하는 이 관계는, 결국 자존심을 건 줄다리기에 가깝다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한쪽은 상대를 골랐다고 말하고 다른 쪽은 골라진 적이 없다고 말하는 이 관계는, 결국 자존심을 건 줄다리기에 가깝다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Beidou/Profile",
+       "revision": 235605,
+       "section": "Character Stories > Story 3",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Beidou/Profile",
+       "revision": 235605,
+       "section": "Character Stories > Story 3",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Crux",
+       "revision": 42807,
+       "section": null,
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Beidou/Profile",
+       "revision": 235605,
+       "section": "Character Stories > Story 3",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Beidou/Profile",
+       "revision": 235605,
+       "section": "Character Stories > Story 3",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Beidou/Profile",
+       "revision": 235605,
+       "section": "Character Stories > Pier Laborers' Gossip",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Q31 only says someone showed up claiming to be one of Ningguang's secretaries. It does not say Ningguang sent her own secretary to call Beidou away. The Korean states this as fact.",
+     "quote": "But our captain here has seen a lot more of the world, so she's not exactly thrilled with this little tavern.",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 Beidou가 술을 좋아한다는 것을 알고 일부러 그 선술집을 골랐다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 북두가 술을 좋아한다는 것을 알고 일부러 그 선술집을 골랐다고 말한다."
+      },
+      {
+       "t_raw": "그러면서도 항해로 세상을 훨씬 많이 본 선장이 작은 선술집을 그리 반기지 않을 것이라는 점을 함께 짚는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서도 항해로 세상을 훨씬 많이 본 선장이 작은 선술집을 그리 반기지 않을 것이라는 점을 함께 짚는다."
+      },
+      {
+       "t_raw": "Ningguang은 진짜 보물만이 Captain Beidou의 눈에 든다고 말했으며, 누군가 Ningguang의 비서라고 주장하며 Beidou를 불러낸 일도 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "응광은 진짜 보물만이 선장 북두의 눈에 든다고 말했으며, 누군가 응광의 비서라고 주장하며 북두를 불러낸 일도 있다."
+      },
+      {
+       "t_raw": "사적인 안배와 업무적인 호출이 같은 상대에게 겹치는 모습은, 두 사람 사이의 일이 어디까지가 사사로운 것이고 어디부터가 일인지 쉽게 나뉘지 않음을 보여준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "사적인 안배와 업무적인 호출이 같은 상대에게 겹치는 모습은, 두 사람 사이의 일이 어디까지가 사사로운 것이고 어디부터가 일인지 쉽게 나뉘지 않음을 보여준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Docked on a Moonlit Night",
+       "quest_ko": "달밤, 그리고 부두",
+       "version": "2.5",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Docked on a Moonlit Night",
+       "quest_ko": "달밤, 그리고 부두",
+       "version": "2.5",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Stars Inscribe the Year's Wishes",
+       "quest_ko": "별들은 찬란히 빛나고, 청춘을 이 순간에 새기리",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Petal-Lit Ships Fish For the Moon",
+       "quest_ko": "흩날리는 꽃잎이 배를 비추고, 바다에서 달을 건진다",
+       "version": "2.4",
+       "speaker": "Xinyan"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "All sentences are supported by Q6, Q7, Q27, Q29 and Q25.",
+     "quote": "I serve Ningguang, the Tianquan of the Qixing. The scope of my work includes some of Liyue's biggest secrets.",
+     "sentences": [
+      {
+       "t_raw": "Ying'er에 대해서는 어느 최고급 재단사 못지않게 능숙하다며 여러 번 그녀의 손을 빌렸다고 말하고, 그 보수는 돈만이 아니라 다른 방식으로도 주어진다며 복잡하다고 웃어 넘긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "앵아에 대해서는 어느 최고급 재단사 못지않게 능숙하다며 여러 번 그녀의 손을 빌렸다고 말하고, 그 보수는 돈만이 아니라 다른 방식으로도 주어진다며 복잡하다고 웃어 넘긴다."
+      },
+      {
+       "t_raw": "Yelan은 자신이 Liyue Qixing의 Tianquan인 Ningguang을 섬기며, 그 업무 범위에는 Liyue의 가장 큰 비밀들도 포함된다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야란은 자신이 리월 칠성의 천권성인 응광을 섬기며, 그 업무 범위에는 리월의 가장 큰 비밀들도 포함된다고 밝힌다."
+      },
+      {
+       "t_raw": "Keqing이 일에 몰두해 Lantern Rite를 놓칠까 걱정하는 모습이나, 오래 함께 일한 사람을 Ningguang이 쉽게 보내주지 않으리라고 보는 주변의 말은 그녀의 업무적 연결이 사람 관리와 맞물려 있음을 보여준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "각청이 일에 몰두해 해등절을 놓칠까 걱정하는 모습이나, 오래 함께 일한 사람을 응광이 쉽게 보내주지 않으리라고 보는 주변의 말은 그녀의 업무적 연결이 사람 관리와 맞물려 있음을 보여준다."
+      },
+      {
+       "t_raw": "비밀까지 맡기는 부하와 복잡한 보수로 묶인 거래처가 함께 있다는 점에서, 그녀의 인적 관계는 신뢰와 경계가 동시에 작동하는 구조로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "비밀까지 맡기는 부하와 복잡한 보수로 묶인 거래처가 함께 있다는 점에서, 그녀의 인적 관계는 신뢰와 경계가 동시에 작동하는 구조로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Liyue Millennial",
+       "quest_ko": "「리월 천년」",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Petal-Lit Ships Fish For the Moon",
+       "quest_ko": "흩날리는 꽃잎이 배를 비추고, 바다에서 달을 건진다",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Danger All Around",
+       "quest_ko": "사방이 위험해",
+       "version": "2.7",
+       "speaker": "Yelan"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Stars Inscribe the Year's Wishes",
+       "quest_ko": "별들은 찬란히 빛나고, 청춘을 이 순간에 새기리",
+       "version": "2.4",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Seven-Star Selection",
+       "quest_ko": "칠성 선발",
+       "version": "2.7",
+       "speaker": "Uncle Tian"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "The respect quotes are given, but nothing says Baiwen or Baixiao are her subordinates (\"부하들\"). Only Baishi appears to be staff, in Q33.",
+     "quote": "I practically worship Lady Ningguang.",
+     "sentences": [
+      {
+       "t_raw": "Baiwen은 Ningguang을 존경한다고 말하고, Baishi는 거의 숭배한다고 표현하며, Baixiao는 최고의 존경을 표한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "백문은 응광을 존경한다고 말하고, 백식은 거의 숭배한다고 표현하며, 백효는 최고의 존경을 표한다."
+      },
+      {
+       "t_raw": "Jade Chamber에는 \"From the Crux Fleet\"이라는 문구가 붙은 도자기 골동품이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "군옥각에는 \"Crux Fleet에서 왔음\"이라는 문구가 붙은 도자기 골동품이 있다.",
+       "polish": {
+        "from": "군옥각에는 \"From the Crux Fleet\"이라는 문구가 붙은 도자기 골동품이 있다.",
+        "text": "군옥각에는 \"Crux Fleet에서 왔음\"이라는 문구가 붙은 도자기 골동품이 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "The Crux와의 인연을 부수적인 것이라고 말하는 그녀의 거처에 Crux Fleet에서 온 물건이 놓여 있다는 사실은, 그 인연을 말처럼 완전히 밀어내지만은 않았음을 시사한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "남십자와의 인연을 부수적인 것이라고 말하는 그녀의 거처에 남십자 선단에서 온 물건이 놓여 있다는 사실은, 그 인연을 말처럼 완전히 밀어내지만은 않았음을 시사한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Baiwen",
+       "revision": 614187,
+       "section": "Dialogue > During Equilibrium",
+       "paragraph": "M11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Baishi",
+       "revision": 72047,
+       "section": "Dialogue",
+       "paragraph": "M12",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Baixiao",
+       "revision": 72049,
+       "section": "Dialogue",
+       "paragraph": "M15",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jade Chamber",
+       "revision": 67869,
+       "section": "Items Dialogue",
+       "paragraph": "M16",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Beidou/Profile",
+       "revision": 235605,
+       "section": "Character Stories > Story 3",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": [
+      "Crux Fleet"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by Q13 and Q27, and the interpretation is reasonable.",
+     "quote": "This sum was paid by Northland Bank, so they are still wary of me to this day.",
+     "sentences": [
+      {
+       "t_raw": "Ningguang은 어떤 금액이 Northland Bank에 의해 지불된 일을 두고, 그 때문에 그들이 지금까지도 자신을 **경계**한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광은 어떤 금액이 북국 은행에 의해 지불된 일을 두고, 그 때문에 그들이 지금까지도 자신을 **경계**한다고 말한다."
+      },
+      {
+       "t_raw": "한편 Yelan은 자신이 Liyue Qixing의 Tianquan인 Ningguang을 섬기며, 그 업무 범위에 Liyue의 가장 큰 비밀들이 포함된다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 야란은 자신이 리월 칠성의 천권성인 응광을 섬기며, 그 업무 범위에 리월의 가장 큰 비밀들이 포함된다고 밝힌다."
+      },
+      {
+       "t_raw": "큰 비밀을 다루는 부하를 둔 Tianquan과, 오래도록 그녀를 경계하는 은행이 함께 놓이면, Northland Bank의 경계는 Ningguang이 쥔 정보의 무게를 보여주는 단면으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "큰 비밀을 다루는 부하를 둔 천권성과, 오래도록 그녀를 경계하는 은행이 함께 놓이면, 북국 은행의 경계는 응광이 쥔 정보의 무게를 보여주는 단면으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Endless Smoke",
+       "quest_ko": "끝나지 않은 전쟁",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Danger All Around",
+       "quest_ko": "사방이 위험해",
+       "version": "2.7",
+       "speaker": "Yelan"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported by Q32, Q2 and Q26, and the interpretation is reasonable.",
+     "quote": "Information from Lady Ningguang is priceless. Whoever gets to it first takes the market...",
+     "sentences": [
+      {
+       "t_raw": "Zhicheng은 Ningguang의 정보가 **값을 매길 수 없을 만큼 귀한** 것이며, 누구든 먼저 손에 넣는 사람이 시장을 차지한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지성은 응광의 정보가 **값을 매길 수 없을 만큼 귀한** 것이며, 누구든 먼저 손에 넣는 사람이 시장을 차지한다고 말한다."
+      },
+      {
+       "t_raw": "Ningguang 자신은 무엇이든 물어보라며, 성실한 답변을 보상으로 주겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "응광 자신은 무엇이든 물어보라며, 성실한 답변을 보상으로 주겠다고 한다."
+      },
+      {
+       "t_raw": "Uncle Tian은 어떤 인물에 관해 앞으로 더 알아야 할 일이 있으면 Ningguang에게 물어보라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천추 아저씨는 어떤 인물에 관해 앞으로 더 알아야 할 일이 있으면 응광에게 물어보라고 한다."
+      },
+      {
+       "t_raw": "정보가 곧 재화로 통하는 이 구조에서, Liyue의 정보가 모여드는 자리에 그녀가 서 있다는 점이 드러난다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정보가 곧 재화로 통하는 이 구조에서, 리월의 정보가 모여드는 자리에 그녀가 서 있다는 점이 드러난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Jade Chamber Rising",
+       "quest_ko": "경대옥각",
+       "version": "2.4",
+       "speaker": "Zhicheng"
+      },
+      {
+       "kind": "quest",
+       "quest": "Jade Chamber Rising",
+       "quest_ko": "경대옥각",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Foregone Conclusion",
+       "quest_ko": "던져진 주사위",
+       "version": "2.7",
+       "speaker": "Uncle Tian"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Xingxi's line only calls it a challenging project; it never says the project is rebuilding the Jade Chamber.",
+     "quote": "But also, \"not for profit\" is really not something I ever expected from Lady Ningguang...",
+     "sentences": [
+      {
+       "t_raw": "Xingxi는 그 프로젝트가 어려운 작업이면서도, Ningguang에게서 'not for profit'이라는 점은 기대하지 못했던 일이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "성희는 그 프로젝트가 어려운 작업이면서도, 응광에게서 '비영리'라는 점은 기대하지 못했던 일이라고 말한다.",
+       "polish": {
+        "from": "성희는 그 프로젝트가 어려운 작업이면서도, 응광에게서 'not for profit'이라는 점은 기대하지 못했던 일이라고 말한다.",
+        "text": "성희는 그 프로젝트가 어려운 작업이면서도, 응광에게서 '비영리'라는 점은 기대하지 못했던 일이라고 말한다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "그러면서도 Ningguang은 Liyue의 아이들에게 누나처럼 사랑받고, Yujing Terrace 연회의 사교계 인사이자 디저트 감식가이며, Liyue에서 가장 아름다운 **풀리지 않는 수수께끼**로 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서도 응광은 리월의 아이들에게 누나처럼 사랑받고, 옥경대 연회의 사교계 인사이자 디저트 감식가이며, 리월에서 가장 아름다운 **풀리지 않는 수수께끼**로 남아 있다."
+      },
+      {
+       "t_raw": "이익을 좇는 사업가라는 인상과 비영리적 재건, 아이들이 따르는 모습이 겹치면서 그녀에 대한 평가는 한 방향으로 정리되지 않는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이익을 좇는 사업가라는 인상과 비영리적 재건, 아이들이 따르는 모습이 겹치면서 그녀에 대한 평가는 한 방향으로 정리되지 않는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Liyue Millennial",
+       "quest_ko": "「리월 천년」",
+       "version": "2.4",
+       "speaker": "Xingxi"
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Ginkgo and phoenix motifs are embellished throughout her dress, accessories, and detached ruffled sleeves.",
+     "sentences": [
+      {
+       "t_raw": "키가 크고 피부가 희며 붉은 눈을 가진, 전체적으로 우아한 인상의 여인이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "키가 크고 피부가 희며 붉은 눈을 가진, 전체적으로 우아한 인상의 여인이다."
+      },
+      {
+       "t_raw": "긴 생머리는 절반을 활 모양의 넓은 올림머리로 틀어 올리고 나머지는 두 갈래로 나누어 내렸으며, 흰색인 머리카락은 무릎까지 닿은 뒤 잿빛으로 옅어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "긴 생머리는 절반을 활 모양의 넓은 올림머리로 틀어 올리고 나머지는 두 갈래로 나누어 내렸으며, 흰색인 머리카락은 무릎까지 닿은 뒤 잿빛으로 옅어진다."
+      },
+      {
+       "t_raw": "올림머리에는 검은 비녀가 꽂혀 있고 눈썹 사이로는 붉은 술 장식이 드리워져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "올림머리에는 검은 비녀가 꽂혀 있고 눈썹 사이로는 붉은 술 장식이 드리워져 있다."
+      },
+      {
+       "t_raw": "목선이 높은 흰색 민소매 qipao 드레스는 옆트임이 허벅지까지 이르러 그 아래의 다이아몬드 형태로 재단된 검은 반바지가 드러나며, 드레스와 장신구, 분리형 러플 소매에는 은행잎과 봉황 문양이 수놓아져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목선이 높은 흰색 민소매 치파오 드레스는 옆트임이 허벅지까지 이르러 그 아래의 다이아몬드 형태로 재단된 검은 반바지가 드러나며, 드레스와 장신구, 분리형 러플 소매에는 은행잎과 봉황 문양이 수놓아져 있다.",
+       "polish": {
+        "from": "목선이 높은 흰색 민소매 qipao 드레스는 옆트임이 허벅지까지 이르러 그 아래의 다이아몬드 형태로 재단된 검은 반바지가 드러나며, 드레스와 장신구, 분리형 러플 소매에는 은행잎과 봉황 문양이 수놓아져 있다.",
+        "text": "목선이 높은 흰색 민소매 치파오 드레스는 옆트임이 허벅지까지 이르러 그 아래의 다이아몬드 형태로 재단된 검은 반바지가 드러나며, 드레스와 장신구, 분리형 러플 소매에는 은행잎과 봉황 문양이 수놓아져 있다.",
+        "by": "ds"
+       }
+      },
+      {
+       "t_raw": "Geo Vision은 왼쪽 옆구리에 있고, 구리 문양이 새겨진 장갑에는 엄지·약지·새끼손가락을 위한 발톱 모양 손톱 보호대가 달려 있으며, 흡연용 파이프를 함께 지니고 다닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바위 신의 눈은 왼쪽 옆구리에 있고, 구리 문양이 새겨진 장갑에는 엄지·약지·새끼손가락을 위한 발톱 모양 손톱 보호대가 달려 있으며, 흡연용 파이프를 함께 지니고 다닌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Appearance",
+       "paragraph": "B4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Appearance",
+       "paragraph": "B5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Lanyang only says 'this whole room' holds Ningguang's personal items; the line does not place the room in the Jade Chamber.",
+     "quote": "Her outfit, Gold Leaf and Pearly Jade, is described to have intricate embroidery which is the hallmark of this graceful dress.",
+     "sentences": [
+      {
+       "t_raw": "의상의 이름은 **Gold Leaf and Pearly Jade**로, 정교한 자수가 이 우아한 드레스의 특징이라고 설명된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "의상의 이름은 **금빛의 옥**으로, 정교한 자수가 이 우아한 드레스의 특징이라고 설명된다."
+      },
+      {
+       "t_raw": "무언가를 맞춤 제작할 일이 있으면 솜씨 좋은 장인들을 직접 찾아간다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무언가를 맞춤 제작할 일이 있으면 솜씨 좋은 장인들을 직접 찾아간다고 말한다."
+      },
+      {
+       "t_raw": "Lanyang에 따르면 옷뿐 아니라 각종 보석과 장식품으로 가득한 방 하나가 Ningguang의 개인 물품 공간이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "란양에 따르면 옷뿐 아니라 각종 보석과 장식품으로 가득한 방 하나가 응광의 개인 물품 공간이라고 한다."
+      },
+      {
+       "t_raw": "그녀가 입에 올린 물건 목록에는 젖은 음식, 짝짝이 신발, 깨진 거울, 작은 나무 장난감 같은 잡동사니도 섞여 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀가 입에 올린 물건 목록에는 젖은 음식, 짝짝이 신발, 깨진 거울, 작은 나무 장난감 같은 잡동사니도 섞여 있었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Appearance",
+       "paragraph": "B6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Exchanging Intelligence",
+       "quest_ko": "정보 교환",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Business as Usual",
+       "quest_ko": "평소대로",
+       "version": "2.4",
+       "speaker": "Lanyang"
+      },
+      {
+       "kind": "quest",
+       "quest": "Starting From Zero",
+       "quest_ko": "처음부터 다시 시작",
+       "version": "2.4",
+       "speaker": "Ningguang"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Baishi tells an unspecified listener to come before Ningguang wakes. Calling them 'subordinates' (부하들) is not stated.",
+     "quote": "A socialite at Yujing Terrace banquets and a connoisseur in the world of desserts, she remains Liyue's most beautiful, unsolvable enigma.",
+     "sentences": [
+      {
+       "t_raw": "**Yujing Terrace** 연회의 사교계 인사이자 디저트 세계의 감식안으로, Liyue에서 가장 아름답고 풀리지 않는 수수께끼로 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**옥경대** 연회의 사교계 인사이자 디저트 세계의 감식안으로, 리월에서 가장 아름답고 풀리지 않는 수수께끼로 남아 있다."
+      },
+      {
+       "t_raw": "The Steambird의 음식 연재에는 Golden Crab을 다룬 글에 그녀의 이름이 함께 올라 있기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스팀버드의 음식 연재에는 골든크랩을 다룬 글에 그녀의 이름이 함께 올라 있기도 하다."
+      },
+      {
+       "t_raw": "Baishi는 Ningguang이 깨기 전에 Jade Chamber에 도착해 일정표에 맞춰 준비를 시작하라고 누군가에게 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "백식은 응광이 깨기 전에 군옥각에 도착해 일정표에 맞춰 준비를 시작하라고 누군가에게 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Ningguang/Profile",
+       "revision": 890762,
+       "section": "Official Introduction",
+       "paragraph": "B11",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Steambird",
+       "revision": 467763,
+       "section": "Teyvat Food Notes > Blog Posts",
+       "paragraph": "M14",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Jade Chamber Once More",
+       "quest_ko": "다시 방문한 군옥각",
+       "version": "2.4",
+       "speaker": "Baishi"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Beidou has beaten Ningguang at chess. Twice. The important part is not so much that she did win Ningguang's money, but more that she dared to.",
+     "sentences": [
+      {
+       "t_raw": "Beidou는 Ningguang과의 체스에서 두 번 이겼는데, 중요한 것은 그녀가 Ningguang의 돈을 땄다는 사실이 아니라 그럴 배짱을 냈다는 점이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북두는 응광과의 체스에서 두 번 이겼는데, 중요한 것은 그녀가 응광의 돈을 땄다는 사실이 아니라 그럴 배짱을 냈다는 점이라고 한다."
+      },
+      {
+       "t_raw": "Jade Chamber에는 The Crux Fleet에서 온 도자기 골동품이 놓여 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "군옥각에는 남십자 선단에서 온 도자기 골동품이 놓여 있다."
+      },
+      {
+       "t_raw": "체스 상대도, 골동품의 출처도 Beidou 쪽과 이어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "체스 상대도, 골동품의 출처도 북두 쪽과 이어지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Beidou/Profile",
+       "revision": 235605,
+       "section": "Character Stories > Pier Laborers' Gossip",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Jade Chamber",
+       "revision": 67869,
+       "section": "Items Dialogue",
+       "paragraph": "M16",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The translation is faithful.",
+     "t_raw": "제 일정은 보통 아주 빽빽하게 짜여 있고, 겨우 짜낸 여유 시간은 미래를 준비하는 데 씁니다.",
+     "en": "My schedule is usually very tightly packed, and any extra time I can squeeze out is spent on preparing for the future.",
+     "speaker": "Ningguang",
+     "source": {
+      "kind": "quest",
+      "quest": "Time Off!",
+      "quest_ko": "휴가 시간!",
+      "version": "2.4",
+      "speaker": "Ningguang"
+     },
+     "t": "제 일정은 보통 아주 빽빽하게 짜여 있고, 겨우 짜낸 여유 시간은 미래를 준비하는 데 씁니다.",
+     "speaker_ko": "응광"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "제 일정은 보통 아주 빽빽하게 차 있고, 겨우 짜낸 여유 시간은 미래를 준비하는 데 씁니다.",
+     "en": "My schedule is usually very tightly packed, and any extra time I can squeeze out is spent on preparing for the future.",
+     "speaker": "Ningguang",
+     "source": {
+      "kind": "quest",
+      "quest": "Time Off!",
+      "quest_ko": "휴가 시간!",
+      "version": "2.4",
+      "speaker": "Ningguang"
+     },
+     "t": "제 일정은 보통 아주 빽빽하게 차 있고, 겨우 짜낸 여유 시간은 미래를 준비하는 데 씁니다.",
+     "speaker_ko": "응광"
+    },
+    {
+     "section": "작중 행적 — Liyue",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "좋다. 업그레이드된 Guizhong Ballista로 저 신을 막겠다. 이곳의 모든 adepti가 힘을 보태 그것을 조작하면 된다.",
+     "en": "So be it. We shall use the upgraded Guizhong Ballista to fight off that god. All the adepti here can lend their strength to man it.",
+     "speaker": "Ningguang",
+     "source": {
+      "kind": "quest",
+      "quest": "Turning Point",
+      "quest_ko": "만회",
+      "version": "1.1",
+      "speaker": "Ningguang"
+     },
+     "t": "좋다. 업그레이드된 귀종기로 저 신을 막겠다. 이곳의 모든 adepti가 힘을 보태 그것을 조작하면 된다.",
+     "speaker_ko": "응광"
+    },
+    {
+     "section": "작중 행적 — Lantern Rite",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Ningguang은 전문가에게 Guizhong Ballista를 분해해 연구하게 하고, 원본을 바탕으로 개량형을 설계하도록 의뢰했다.",
+     "en": "Ningguang commissioned an expert to dismantle and study the Guizhong Ballista, and design an improved version based on the original.",
+     "speaker": "Keqing",
+     "source": {
+      "kind": "quest",
+      "quest": "Seagaze Sunset",
+      "quest_ko": "명해서하",
+      "version": "2.4",
+      "speaker": "Keqing"
+     },
+     "t": "응광은 전문가에게 귀종기를 분해해 연구하게 하고, 원본을 바탕으로 개량형을 설계하도록 의뢰했다.",
+     "speaker_ko": "각청"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "걱정 마세요. 전부 익숙한 일일 테니까요 — 여행 계획을 세우고, 관련 정보를 모으는 그런 일이요.",
+     "en": "I wouldn't worry. It's all work you'll be quite familiar with — planning trips, gathering pertinent information, that sort of thing.",
+     "speaker": "Ningguang",
+     "source": {
+      "kind": "quest",
+      "quest": "The Jade Chamber Once More",
+      "quest_ko": "다시 방문한 군옥각",
+      "version": "2.4",
+      "speaker": "Ningguang"
+     },
+     "t": "걱정 마세요. 전부 익숙한 일일 테니까요 — 여행 계획을 세우고, 관련 정보를 모으는 그런 일이요.",
+     "speaker_ko": "응광"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful. The ending is slightly softened but the meaning is the same.",
+     "t_raw": "하지만 우리 선장님은 세상을 훨씬 많이 보신 분이라, 이 작은 선술집이 그리 반갑지는 않을 겁니다.",
+     "en": "But our captain here has seen a lot more of the world, so she's not exactly thrilled with this little tavern.",
+     "speaker": "Ningguang",
+     "source": {
+      "kind": "quest",
+      "quest": "Docked on a Moonlit Night",
+      "quest_ko": "달밤, 그리고 부두",
+      "version": "2.5",
+      "speaker": "Ningguang"
+     },
+     "t": "하지만 우리 선장님은 세상을 훨씬 많이 보신 분이라, 이 작은 선술집이 그리 반갑지는 않을 겁니다.",
+     "speaker_ko": "응광"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "저는 Liyue Qixing의 Tianquan인 Ningguang을 섬깁니다. 제 업무 범위에는 Liyue의 가장 큰 비밀들도 포함되어 있습니다.",
+     "en": "I serve Ningguang, the Tianquan of the Qixing. The scope of my work includes some of Liyue's biggest secrets.",
+     "speaker": "Yelan",
+     "source": {
+      "kind": "quest",
+      "quest": "Danger All Around",
+      "quest_ko": "사방이 위험해",
+      "version": "2.7",
+      "speaker": "Yelan"
+     },
+     "t": "저는 리월 칠성의 천권성인 응광을 섬깁니다. 제 업무 범위에는 리월의 가장 큰 비밀들도 포함되어 있습니다.",
+     "speaker_ko": "야란"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of the dialogue line (Q11 matches exactly).",
+     "t_raw": "이곳 일꾼들은 솜씨가 아주 좋아서, 뭔가를 맞춤 제작해야 할 때면 이들을 찾아오곤 한다.",
+     "en": "The workers here are very skilled, so I like to come to them when I need something custom-made.",
+     "speaker": "Ningguang",
+     "source": {
+      "kind": "quest",
+      "quest": "Exchanging Intelligence",
+      "quest_ko": "정보 교환",
+      "version": "2.4",
+      "speaker": "Ningguang"
+     },
+     "t": "이곳 일꾼들은 솜씨가 아주 좋아서, 뭔가를 맞춤 제작해야 할 때면 이들을 찾아오곤 한다.",
+     "speaker_ko": "응광"
+    }
+   ]
+  }
+ ]
+}

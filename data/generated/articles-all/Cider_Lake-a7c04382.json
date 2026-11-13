@@ -1,0 +1,432 @@
+{
+ "node": "Cider Lake",
+ "articles": [
+  {
+   "node": "Cider Lake",
+   "from_version": "1.0",
+   "cutoff": "2020-11-10T00:00:00Z",
+   "input": [
+    {
+     "page": "Cider Lake",
+     "url": "https://genshin-impact.fandom.com/wiki/Cider_Lake",
+     "revision": 42522
+    }
+   ],
+   "input_counts": {
+    "mentions": 3,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 377,
+   "input_cut": false,
+   "input_hash": "36cba2b3c1c5",
+   "writer": "glm-flash,or-ds",
+   "verifier": "grok,codex-medium",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "Sentence 1 calls the water 원앙수 (mandarin-duck water). The English only says these headwaters made the ciders and wines famous and made the lake Mondstadt’s symbol.",
+     "quote": "It is none other than these headwaters that brought Mondstadt's ciders and wines to fame and made the lake the symbol of Mondstadt that it is today.",
+     "sentences": [
+      {
+       "t_raw": "Cider Lake는 Mondstadt의 도시를 둘러싼 자연 담수호로, Starfell Valley에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시드르 호수는 몬드의 도시를 둘러싼 자연 담수호로, 별이 떨어지는 산골짜기에 자리한다."
+      },
+      {
+       "t_raw": "바로 이 맑은 물줄기가 Mondstadt의 사이다와 와인을 명성에 올려놓았고, 호수 자체도 오늘날 Mondstadt의 상징이 되게 했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "바로 이 맑은 물줄기가 몬드의 사이다와 와인을 명성에 올려놓았고, 호수 자체도 오늘날 몬드의 상징이 되게 했다."
+      },
+      {
+       "t_raw": "즉 도시의 이름난 술과 상징이 모두 이 호수의 물에서 나온 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즉 도시의 이름난 술과 상징이 모두 이 호수의 물에서 나온 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": "Description",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Sentence 1 adds that the lake and city form one blended landscape. The English only says the lake surrounds the City of Mondstadt.",
+     "quote": "Cider Lake surrounds the City of Mondstadt in Starfell Valley.",
+     "sentences": [
+      {
+       "t_raw": "Cider Lake는 Starfell Valley에 자리한 **자연 담수호**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시드르 호수는 별이 떨어지는 산골짜기에 자리한 **자연 담수호**다."
+      },
+      {
+       "t_raw": "호수는 도시 Mondstadt를 감싸고 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "호수는 도시 몬드를 감싸고 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "It is none other than these headwaters that brought Mondstadt's ciders and wines to fame and made the lake the symbol of Mondstadt that it is today.",
+     "sentences": [
+      {
+       "t_raw": "호수의 넓고 결정처럼 맑은 모습은 태고 이래 **한 치의 변화도 없이** 이어져 왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호수의 넓고 결정처럼 맑은 모습은 태고 이래 **한 치의 변화도 없이** 이어져 왔다."
+      },
+      {
+       "t_raw": "물은 바닥이 훤히 보일 정도로 맑고, 마시면 시원하고 상쾌하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "물은 바닥이 훤히 보일 정도로 맑고, 마시면 시원하고 상쾌하다."
+      },
+      {
+       "t_raw": "바로 이 수원의 물이 Mondstadt의 사이다와 와인을 유명하게 만들었고, 호수를 오늘날의 **Mondstadt의 상징**으로 만들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바로 이 수원의 물이 몬드의 사이다와 와인을 유명하게 만들었고, 호수를 오늘날의 **몬드의 상징**으로 만들었다."
+      },
+      {
+       "t_raw": "자연 그대로의 담수호가 도시 산물의 명성과 상징까지 낳았다는 점에서, Cider Lake는 좋은 물을 지닌 풍광 그 이상의 존재라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자연 그대로의 담수호가 도시 산물의 명성과 상징까지 낳았다는 점에서, 시드르 호수는 좋은 물을 지닌 풍광 그 이상의 존재라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": "Description",
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": "Description",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "Mondstadt와의 관계",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "carefree breezes carry the scent of dandelions — a gift from the Anemo God, Barbatos — across Cider Lake to Mondstadt",
+     "sentences": [
+      {
+       "t_raw": "Mondstadt는 Teyvat의 북동쪽에 있는 자유의 도시다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드는 티바트의 북동쪽에 있는 자유의 도시다."
+      },
+      {
+       "t_raw": "산과 넓게 트인 평원 사이로 **Anemo God, Barbatos**가 준 선물인 민들레 향기를 실은 산들바람이 **Cider Lake**를 건너 Mondstadt에 닿는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "산과 넓게 트인 평원 사이로 **바람 마신, 바르바토스**가 준 선물인 민들레 향기를 실은 산들바람이 **시드르 호수**를 건너 몬드에 닿는다."
+      },
+      {
+       "t_raw": "Mondstadt는 **호수 한가운데의 섬**에 자리하고, Cider Lake는 Starfell Valley의 City of Mondstadt를 둘러싼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드는 **호수 한가운데의 섬**에 자리하고, 시드르 호수는 별이 떨어지는 산골짜기의 몬드성을 둘러싼다."
+      },
+      {
+       "t_raw": "호수가 도시를 둘러싸면서 바람이 호수를 건너 도시로 향한다는 점은 Cider Lake가 Mondstadt를 둘러싼 물이자 바람이 건너오는 배경임을 보여주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "호수가 도시를 둘러싸면서 바람이 호수를 건너 도시로 향한다는 점은 시드르 호수가 몬드를 둘러싼 물이자 바람이 건너오는 배경임을 보여주는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Description",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "몬드와의 관계",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "hurling the carts - cargo and all, into the Cider Lake, before leaping into the water herself and retrieving every last item.",
+     "sentences": [
+      {
+       "t_raw": "Mondstadt의 측문으로 지나가려던 여러 화물 마차가 Pyro Slimes의 공격을 받았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드의 측문으로 지나가려던 여러 화물 마차가 화염 슬라임의 공격을 받았다."
+      },
+      {
+       "t_raw": "화물 주인들이 모두 당황한 가운데, 또 한 번 Noelle가 구하러 나섰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "화물 주인들이 모두 당황한 가운데, 또 한 번 노엘이 구하러 나섰다."
+      },
+      {
+       "t_raw": "Noelle가 마차를 화물째로 **Cider Lake**에 던져 넣고, 이어서 자신도 물속으로 뛰어들어 모든 물건을 건져냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "노엘이 마차를 화물째로 **시드르 호수**에 던져 넣고, 이어서 자신도 물속으로 뛰어들어 모든 물건을 건져냈다."
+      },
+      {
+       "t_raw": "공격 앞에서 마차를 호수로 던지는 과감한 처사와, 이어서 물에 들어가 물건을 되찾는 행동이 맞물려 **화물을 포기하지 않으려는** 대응으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "공격 앞에서 마차를 호수로 던지는 과감한 처사와, 이어서 물에 들어가 물건을 되찾는 행동이 맞물려 **화물을 포기하지 않으려는** 대응으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Noelle/Profile",
+       "revision": 41310,
+       "section": "Character Stories > Story 4",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "None.",
+     "quote": "The lake's wide, crystalline appearance has remained unchanged for eons — so clear you can see the bottom, and cool and refreshing to drink.",
+     "sentences": [
+      {
+       "t_raw": "Cider Lake는 넓고 **수정처럼 맑은 모습**을 오랜 세월 동안 그대로 간직해 왔으며, 바닥이 보일 만큼 투명하고 마시면 시원하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시드르 호수는 넓고 **수정처럼 맑은 모습**을 오랜 세월 동안 그대로 간직해 왔으며, 바닥이 보일 만큼 투명하고 마시면 시원하다."
+      },
+      {
+       "t_raw": "이 상류의 물이 Mondstadt의 사이다와 와인을 명성 있게 하고, 호수를 **Mondstadt의 상징**으로 만들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 상류의 물이 몬드의 사이다와 와인을 명성 있게 하고, 호수를 **몬드의 상징**으로 만들었다."
+      },
+      {
+       "t_raw": "맑고 시원한 물이 사이다와 와인의 명성과 호수의 상징성으로 이어진 점에서, Cider Lake의 물은 풍경을 넘어 Mondstadt의 이름난 산물을 떠받치는 배경으로도 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "맑고 시원한 물이 사이다와 와인의 명성과 호수의 상징성으로 이어진 점에서, 시드르 호수의 물은 풍경을 넘어 몬드의 이름난 산물을 떠받치는 배경으로도 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": "Description",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All three sentences match the given English: natural freshwater lake, unchanged crystalline look, clarity, drinkability, and the headwaters bringing cider and wine fame and making the lake Mondstadt's symbol. (2) only leaves the continuity open.",
+     "quote": "A natural freshwater lake. The lake's wide, crystalline appearance has remained unchanged for eons — so clear you can see the bottom, and cool and refreshing to drink.",
+     "sentences": [
+      {
+       "t_raw": "Cider Lake는 넓고 수정 같은 모습이 **오랜 세월 변하지 않은** 자연 담수호이며, 바닥이 보일 만큼 맑고 마시면 시원하고 상쾌하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시드르 호수는 넓고 수정 같은 모습이 **오랜 세월 변하지 않은** 자연 담수호이며, 바닥이 보일 만큼 맑고 마시면 시원하고 상쾌하다."
+      },
+      {
+       "t_raw": "이 물줄기는 Mondstadt의 사이다와 와인을 유명하게 하고 호수를 Mondstadt의 상징으로 만들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 물줄기는 몬드의 사이다와 와인을 유명하게 하고 호수를 몬드의 상징으로 만들었다."
+      },
+      {
+       "t_raw": "자연 담수호이면서 그 모습이 오랜 세월 유지되었다는 사실은, 맑음과 물맛이 어떻게 이어져 왔는지에 대한 여지를 남긴다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자연 담수호이면서 그 모습이 오랜 세월 유지되었다는 사실은, 맑음과 물맛이 어떻게 이어져 왔는지에 대한 여지를 남긴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": "Description",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The English says the look has lasted for eons but never calls that duration unexplained or a mystery; (2) states that it still remains a mystery. (0) and (1) stay hedged readings of the island setting, the headwaters, and the lake-as-symbol.",
+     "quote": "Cider Lake to Mondstadt, which sits on an island in the middle of the lake.",
+     "sentences": [
+      {
+       "t_raw": "도시가 호수 한가운데 섬에 자리한다는 지리와, 이 물이 Mondstadt의 사이다와 와인의 명성을 떠받쳤다는 설명을 겹쳐 보면, Cider Lake의 맑은 모습은 도시의 상징을 지탱한 오래된 조건처럼 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도시가 호수 한가운데 섬에 자리한다는 지리와, 이 물이 몬드의 사이다와 와인의 명성을 떠받쳤다는 설명을 겹쳐 보면, 시드르 호수의 맑은 모습은 도시의 상징을 지탱한 오래된 조건처럼 보인다."
+      },
+      {
+       "t_raw": "그 물이 호수를 Mondstadt의 상징으로 만들었다는 점은, 변함없는 호수의 모습이 단순한 배경에 그치지 않았음을 시사한다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그 물이 호수를 몬드의 상징으로 만들었다는 점은, 변함없는 호수의 모습이 단순한 배경에 그치지 않았음을 시사한다."
+      },
+      {
+       "t_raw": "다만 그 넓고 맑은 모습은 오랜 세월 변함없이 이어져 온 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "다만 그 넓고 맑은 모습은 오랜 세월 변함없이 이어져 온 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Description",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Cider Lake",
+       "revision": 42522,
+       "section": "Description",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mondstadt",
+       "revision": 45012,
+       "section": "Areas",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

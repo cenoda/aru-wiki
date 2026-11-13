@@ -1,0 +1,156 @@
+{
+ "node": "Amakane Island",
+ "articles": [
+  {
+   "node": "Amakane Island",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Amakane Island",
+     "url": "https://genshin-impact.fandom.com/wiki/Amakane_Island",
+     "revision": 278969
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 0,
+    "web": 0
+   },
+   "input_chars": 233,
+   "input_cut": false,
+   "input_hash": "8a4dfcc714fa",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All claims are supported by A1 and A2.",
+     "quote": "Amakane Island is an island of Narukami Island, Inazuma, which is located to the north-west of Inazuma City.",
+     "sentences": [
+      {
+       "t_raw": "Amakane Island은 Inazuma의 Narukami Island에 속한 섬으로, Inazuma City의 북서쪽에 위치한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아마카네섬은 이나즈마의 나루카미섬에 속한 섬으로, 이나즈마성의 북서쪽에 위치한다."
+      },
+      {
+       "t_raw": "이 섬에는 Waverider Waypoint가 있고, 이를 해금하려면 주변의 Thunder Sakura Bough에서 얻은 Electrograna로 Thunder Barrier를 통과해야 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 섬에는 파도 배 워프 포인트가 있고, 이를 해금하려면 주변의 번개의 벚나무 가지에서 얻은 Electrograna로 번개의 결계를 통과해야 한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Amakane Island",
+       "revision": 278969,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Amakane Island",
+       "revision": 278969,
+       "section": "Notable Features",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Electrograna"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match A1, and the interpretation follows from A1.",
+     "quote": "Amakane Island is an island of Narukami Island, Inazuma, which is located to the north-west of Inazuma City.",
+     "sentences": [
+      {
+       "t_raw": "**Amakane Island**은 Inazuma의 **Narukami Island**에 속한 섬이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**아마카네섬**은 이나즈마의 **나루카미섬**에 속한 섬이다."
+      },
+      {
+       "t_raw": "이 섬은 Inazuma City의 북서쪽에 위치한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 섬은 이나즈마성의 북서쪽에 위치한다."
+      },
+      {
+       "t_raw": "Amakane Island이 Inazuma의 Narukami Island에 속한 섬이면서 Inazuma City의 북서쪽에 있다는 점을 함께 보면, 이 섬은 Inazuma City 북서쪽의 Narukami Island 권역에 자리한 곳이라고 정리할 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "아마카네섬이 이나즈마의 나루카미섬에 속한 섬이면서 이나즈마성의 북서쪽에 있다는 점을 함께 보면, 이 섬은 이나즈마성 북서쪽의 나루카미섬 권역에 자리한 곳이라고 정리할 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Amakane Island",
+       "revision": 278969,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "주요 시설",
+     "status": "accepted",
+     "note": "Matches A2, and the interpretation is a reasonable reading of it.",
+     "quote": "To unlock the Waverider Waypoint, use an Electrograna from a nearby Thunder Sakura Bough to pass through the Thunder Barrier.",
+     "sentences": [
+      {
+       "t_raw": "Amakane Island의 Waverider Waypoint를 해금하려면 근처의 Thunder Sakura Bough에서 얻은 **Electrograna**를 사용해 **Thunder Barrier**를 통과하는 절차가 제시된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "아마카네섬의 파도 배 워프 포인트를 해금하려면 근처의 번개의 벚나무 가지에서 얻은 **Electrograna**를 사용해 **번개의 결계**를 통과하는 절차가 제시된다."
+      },
+      {
+       "t_raw": "이때 Electrograna는 Thunder Barrier를 통과하기 위한 수단으로, Thunder Sakura Bough는 그 Electrograna를 얻는 근처 지점으로 함께 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이때 Electrograna는 번개의 결계를 통과하기 위한 수단으로, 번개의 벚나무 가지는 그 Electrograna를 얻는 근처 지점으로 함께 언급된다."
+      },
+      {
+       "t_raw": "따라서 해금은 Thunder Sakura Bough에서 Electrograna를 확보하는 일과 그것으로 Thunder Barrier를 통과하는 일이 맞물려 이루어진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "따라서 해금은 번개의 벚나무 가지에서 Electrograna를 확보하는 일과 그것으로 번개의 결계를 통과하는 일이 맞물려 이루어진다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Amakane Island",
+       "revision": 278969,
+       "section": "Notable Features",
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "주요 시설",
+     "latin_left": [
+      "Electrograna",
+      "Electrograna",
+      "Electrograna",
+      "Electrograna"
+     ]
+    }
+   ],
+   "quote_boxes": []
+  }
+ ]
+}

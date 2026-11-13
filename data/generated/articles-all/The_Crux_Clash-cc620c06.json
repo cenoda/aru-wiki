@@ -1,0 +1,668 @@
+{
+ "node": "The Crux Clash",
+ "articles": [
+  {
+   "node": "The Crux Clash",
+   "from_version": "1.6",
+   "cutoff": "2021-07-20T00:00:00Z",
+   "input": [
+    {
+     "page": "The Crux Clash",
+     "url": "https://genshin-impact.fandom.com/wiki/The_Crux_Clash",
+     "revision": 223482
+    }
+   ],
+   "input_counts": {
+    "mentions": 0,
+    "lines": 8,
+    "web": 0
+   },
+   "input_chars": 639,
+   "input_cut": false,
+   "input_hash": "d7e136406608",
+   "writer": "ds-pro,glm-flash,glm,ds,or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported; the interpretation in (3) follows from the Vision-less requirement and the prize change.",
+     "quote": "The Crux Clash is a martial arts tournament organized by Beidou of the Crux Fleet to uncover hidden talents in Liyue.",
+     "sentences": [
+      {
+       "t_raw": "The Crux Clash는 Crux Fleet의 Beidou가 Liyue의 숨은 재능을 찾아내려고 여는 **무술 대회**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "남십자 무술대회는 남십자 선단의 북두가 리월의 숨은 재능을 찾아내려고 여는 **무술 대회**다."
+      },
+      {
+       "t_raw": "경기는 **단판 승부**로 치러지고, 참가자에게는 이름이 널리 알려져 있을 것과 Vision이 없을 것이라는 조건이 붙는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경기는 **단판 승부**로 치러지고, 참가자에게는 이름이 널리 알려져 있을 것과 신의 눈이 없을 것이라는 조건이 붙는다."
+      },
+      {
+       "t_raw": "Autumn Winds, Scarlet Leaves에서 대회의 상품은 Kazuha가 내놓은 Masterless Vision이었으나, Traveler가 Inazuma로 가고 싶어 한다는 이야기를 들은 Beidou가 Masterless Vision이나 The Alcor를 타고 Inazuma로 가는 승선권 가운데 고르는 것으로 상품을 바꾸었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가을바람에 흩날리는 단풍에서 대회의 상품은 카즈하가 내놓은 주인 없는 신의 눈이었으나, 여행자가 이나즈마로 가고 싶어 한다는 이야기를 들은 북두가 주인 없는 신의 눈이나 사조성호를 타고 이나즈마로 가는 승선권 가운데 고르는 것으로 상품을 바꾸었다."
+      },
+      {
+       "t_raw": "Vision이 없는 사람만 들어올 수 있는 대회의 상품이 Vision이고, 그 상품이 Traveler의 목적에 맞춰 조정되었다는 점은 이 대회가 **모순과 유연함** 사이에 놓여 있음을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "신의 눈이 없는 사람만 들어올 수 있는 대회의 상품이 신의 눈이고, 그 상품이 여행자의 목적에 맞춰 조정되었다는 점은 이 대회가 **모순과 유연함** 사이에 놓여 있음을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Path Through the Storm",
+       "quest_ko": "뇌우를 뚫는 법",
+       "version": "1.6",
+       "speaker": "Beidou"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All supported by A1, Q1 and A2.",
+     "quote": "The Crux Clash is a martial arts tournament that I hold. There'll be a whole bunch of folks taking part to showcase their talents.",
+     "sentences": [
+      {
+       "t_raw": "**The Crux Clash**는 Liyue의 숨은 인재를 찾아내기 위해 Crux Fleet의 Beidou가 여는 무술 대회다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**남십자 무술대회**는 리월의 숨은 인재를 찾아내기 위해 남십자 선단의 북두가 여는 무술 대회다."
+      },
+      {
+       "t_raw": "Beidou는 자신이 여는 대회라며, 참가자들이 저마다 기량을 선보이려고 모인다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북두는 자신이 여는 대회라며, 참가자들이 저마다 기량을 선보이려고 모인다고 말한다."
+      },
+      {
+       "t_raw": "경기는 **single-elimination** 방식으로 치러진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경기는 **단일 토너먼트** 방식으로 치러진다.",
+       "polish": {
+        "from": "경기는 **single-elimination** 방식으로 치러진다.",
+        "text": "경기는 **단일 토너먼트** 방식으로 치러진다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "A Path Through the Storm",
+       "quest_ko": "뇌우를 뚫는 법",
+       "version": "1.6",
+       "speaker": "Beidou"
+      },
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Facts match A2; the interpretation in (2) is reasonable.",
+     "quote": "While Beidou requires participants to be renowned and have no Vision, most of them are generally show-offs who have little to no combat prowess.",
+     "sentences": [
+      {
+       "t_raw": "Beidou는 참가자에게 명망이 있고 Vision이 없을 것을 요구한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북두는 참가자에게 명망이 있고 신의 눈이 없을 것을 요구한다."
+      },
+      {
+       "t_raw": "그런데 실제 참가자 대부분은 **허세를 부리는 사람들**이며, 전투 능력이 거의 없거나 전혀 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그런데 실제 참가자 대부분은 **허세를 부리는 사람들**이며, 전투 능력이 거의 없거나 전혀 없다."
+      },
+      {
+       "t_raw": "숨은 인재를 찾으려는 대회의 취지와 달리, 모인 이들의 면면은 그 목적에 잘 맞지 않는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "숨은 인재를 찾으려는 대회의 취지와 달리, 모인 이들의 면면은 그 목적에 잘 맞지 않는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "대회의 진행과 상품",
+     "status": "accepted",
+     "note": "Facts match A3; (3) is a reasonable interpretation.",
+     "quote": "changed the grand prize for them to a choice of the Masterless Vision or a ticket to Inazuma aboard The Alcor",
+     "sentences": [
+      {
+       "t_raw": "Autumn Winds, Scarlet Leaves 시점에서 The Crux Clash의 우승 상품은 Kazuha가 제공한 **Masterless Vision**이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가을바람에 흩날리는 단풍 시점에서 남십자 무술대회의 우승 상품은 카즈하가 제공한 **주인 없는 신의 눈**이었다."
+      },
+      {
+       "t_raw": "그러나 Beidou는 Traveler와 대화를 나눈 뒤 그들이 Inazuma로 향하고자 하는 마음을 알게 되어, 우승 상품을 변경했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 북두는 여행자와 대화를 나눈 뒤 그들이 이나즈마로 향하고자 하는 마음을 알게 되어, 우승 상품을 변경했다."
+      },
+      {
+       "t_raw": "바뀐 상품은 Masterless Vision과 The Alcor 호를 타고 Inazuma로 갈 수 있는 티켓, 그중 하나를 선택하는 것이었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바뀐 상품은 주인 없는 신의 눈과 사조성호 호를 타고 이나즈마로 갈 수 있는 티켓, 그중 하나를 선택하는 것이었다."
+      },
+      {
+       "t_raw": "여행의 목적지로 가는 티켓을 상품에 추가한 것은 Beidou가 참가자 한 사람의 소망을 적극 반영한 결과로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "여행의 목적지로 가는 티켓을 상품에 추가한 것은 북두가 참가자 한 사람의 소망을 적극 반영한 결과로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "대회의 진행과 상품",
+     "latin_left": []
+    },
+    {
+     "section": "대회의 진행과 상품",
+     "status": "accepted",
+     "note": "Q5, Q7 and A3 support the facts; the interpretation is acceptable.",
+     "quote": "We've reached the climax of The Crux Clash. This is the final match!",
+     "sentences": [
+      {
+       "t_raw": "Beidou는 대회가 절정에 이르렀다며 결승전의 시작을 알렸고, 결승이 끝나자 Kazuha는 The Crux Clash가 **명쾌한 결말**에 도달했다고 평했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "북두는 대회가 절정에 이르렀다며 결승전의 시작을 알렸고, 결승이 끝나자 카즈하는 남십자 무술대회가 **명쾌한 결말**에 도달했다고 평했다."
+      },
+      {
+       "t_raw": "상품을 제공한 Kazuha가 동시에 대회의 결말을 언급하는 자리에 있었다는 점은, 그가 대회의 마무리와 깊이 얽혀 있었던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "상품을 제공한 카즈하가 동시에 대회의 결말을 언급하는 자리에 있었다는 점은, 그가 대회의 마무리와 깊이 얽혀 있었던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Follow the Wind",
+       "quest_ko": "바람을 따라",
+       "version": "1.6",
+       "speaker": "Beidou"
+      },
+      {
+       "kind": "quest",
+       "quest": "Follow the Wind",
+       "quest_ko": "바람을 따라",
+       "version": "1.6",
+       "speaker": "Kaedehara Kazuha"
+      },
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "대회의 진행과 상품",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "(2) calls The Alcor 'Beidou's ship', but the English only says a ticket aboard The Alcor. It never says the ship is Beidou's, so this adds a fact.",
+     "quote": "the grand prize of the tournament is a Masterless Vision provided by Kazuha.",
+     "sentences": [
+      {
+       "t_raw": "The Crux Clash를 여는 사람은 Crux Fleet의 Beidou다.",
+       "interp": false,
+       "dropped": false,
+       "t": "남십자 무술대회를 여는 사람은 남십자 선단의 북두다."
+      },
+      {
+       "t_raw": "Autumn Winds, Scarlet Leaves에서 대회의 상품은 Kazuha가 내놓은 Masterless Vision이었는데, Traveler와 이야기를 나누고 Traveler가 Inazuma로 가고 싶어 한다는 것을 알게 된 Beidou는 상품을 **Masterless Vision이나 Inazuma행 The Alcor 승선권 중 하나**를 고르는 것으로 바꾼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "가을바람에 흩날리는 단풍에서 대회의 상품은 카즈하가 내놓은 주인 없는 신의 눈이었는데, 여행자와 이야기를 나누고 여행자가 이나즈마로 가고 싶어 한다는 것을 알게 된 북두는 상품을 **주인 없는 신의 눈이나 이나즈마행 사조성호 승선권 중 하나**를 고르는 것으로 바꾼다."
+      },
+      {
+       "t_raw": "Kazuha가 내놓은 Vision과 The Alcor를 타고 Inazuma로 가는 승선권이 우승 상품의 두 선택지로 나란히 놓인 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "카즈하가 내놓은 신의 눈과 사조성호를 타고 이나즈마로 가는 승선권이 우승 상품의 두 선택지로 나란히 놓인 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 1 overstates: Kazuha says 'in which case' the Clash comes to a clear-cut conclusion, a conditional statement, not a flat claim that it definitely ends decisively. Sentence 0 is fine (Kazuha provided the Vision; speaks the conclusion line).",
+     "quote": "In which case, The Crux Clash comes to a clear-cut conclusion.",
+     "sentences": [
+      {
+       "t_raw": "상품을 내놓은 Kazuha는 대회의 끝맺음을 말하는 자리에도 선다.",
+       "interp": false,
+       "dropped": false,
+       "t": "상품을 내놓은 카즈하는 대회의 끝맺음을 말하는 자리에도 선다."
+      },
+      {
+       "t_raw": "Kazuha는 '그럴 경우' The Crux Clash가 명확한 결말을 맞는다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "카즈하는 '그럴 경우' 남십자 무술대회가 명확한 결말을 맞는다고 말한다."
+      },
+      {
+       "t_raw": "Vision을 대준 사람과 결말을 말하는 사람이 같은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "신의 눈을 대준 사람과 결말을 말하는 사람이 같은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Follow the Wind",
+       "quest_ko": "바람을 따라",
+       "version": "1.6",
+       "speaker": "Kaedehara Kazuha"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 2 adds that the tournament's purpose is visibly realized by a dark horse; the English only says a newcomer became the dark horse, and it is not stated that this is the tournament's purpose being fulfilled, an overreach rather than a modest interpretation.",
+     "quote": "Your opponent in the semi-finals is new to The Crux Clash, but he has quickly become the dark horse of the tournament.",
+     "sentences": [
+      {
+       "t_raw": "Zhuhan은 준결승 상대가 어떤 인물인지 일러주는 자리에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "주함은 준결승 상대가 어떤 인물인지 일러주는 자리에 있다."
+      },
+      {
+       "t_raw": "그 상대는 The Crux Clash에 처음 나왔지만 빠르게 **다크호스**로 떠오른 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 상대는 남십자 무술대회에 처음 나왔지만 빠르게 **다크호스**로 떠오른 인물이다."
+      },
+      {
+       "t_raw": "The Crux Clash에 새로 온 참가자가 다크호스로 떠오른 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "남십자 무술대회에 새로 온 참가자가 다크호스로 떠오른 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Crux Clash (Quest)",
+       "quest_ko": "남십자 무술대회",
+       "version": "1.6",
+       "speaker": "Zhuhan"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "trimmed",
+     "note": "Sentence 1 and 3 claim the identity of 'her' is never revealed and remains a mystery to the end; the English does not say this. Sentence 2 also leans on an invented 'reaching someone far away' reading but is acceptable as interpretation.",
+     "quote": "It seems that The Crux Clash got out of hand this time and has attracted her attention.",
+     "sentences": [
+      {
+       "t_raw": "대회가 절정에 이르렀을 무렵, Zhuhan은 The Crux Clash이 이번에는 손을 벗어나 'her'의 주의를 끌었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대회가 절정에 이르렀을 무렵, 주함은 남십자 무술대회가 이번에는 손을 벗어나 'her'의 주의를 끌었다고 말한다."
+      },
+      {
+       "t_raw": "문제는 이 'her'가 누구인지 어디에도 밝혀져 있지 않다는 점이다.",
+       "interp": false,
+       "dropped": true,
+       "t": "문제는 이 'her'가 누구인지 어디에도 밝혀져 있지 않다는 점이다."
+      },
+      {
+       "t_raw": "Beidou가 주최한 무술 대회가 저 멀리 누군가의 귀에까지 닿았다는 말은, 겉으로는 잔치에 가까워 보이던 이 대회가 생각보다 요란한 파장을 일으켰다는 뜻으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "북두가 주최한 무술 대회가 저 멀리 누군가의 귀에까지 닿았다는 말은, 겉으로는 잔치에 가까워 보이던 이 대회가 생각보다 요란한 파장을 일으켰다는 뜻으로 볼 수 있다."
+      },
+      {
+       "t_raw": "그 정체는 대회가 끝나는 시점까지도 수수께끼로 남는다.",
+       "interp": false,
+       "dropped": true,
+       "t": "그 정체는 대회가 끝나는 시점까지도 수수께끼로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Follow the Wind",
+       "quest_ko": "바람을 따라",
+       "version": "1.6",
+       "speaker": "Zhuhan"
+      },
+      {
+       "kind": "quest",
+       "quest": "Follow the Wind",
+       "quest_ko": "바람을 따라",
+       "version": "1.6",
+       "speaker": "Beidou"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Sentence 0 claims first-time participants exchanged greetings; the English does not say they were meeting for the first time. Sentence 1 attributes the question to the Traveler and Paimon fine, but Jinyou calling them 'youngster' and asking is OK; Paimon's lines are asking whether they are there for the Clash.",
+     "quote": "Hey, youngster. Are you here for The Crux Clash too?",
+     "sentences": [
+      {
+       "t_raw": "Jinyou는 '이봐, 젊은이'라며 The Crux Clash에 왔는지 묻고, Paimon도 The Crux Clash에 왔는지 묻는 인사를 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "진우는 '이봐, 젊은이'라며 남십자 무술대회에 왔는지 묻고, 페이몬도 남십자 무술대회에 왔는지 묻는 인사를 건넨다."
+      },
+      {
+       "t_raw": "Jinyou는 Traveler에게 젊은이라 부르며 대회에 온 이유를 물었고, Paimon 역시 참가 여부를 확인하는 말을 건넸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "진우는 여행자에게 젊은이라 부르며 대회에 온 이유를 물었고, 페이몬 역시 참가 여부를 확인하는 말을 건넸다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Path Through the Storm",
+       "quest_ko": "뇌우를 뚫는 법",
+       "version": "1.6",
+       "speaker": "Jinyou"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Path Through the Storm",
+       "quest_ko": "뇌우를 뚫는 법",
+       "version": "1.6",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "A Path Through the Storm",
+       "quest_ko": "뇌우를 뚫는 법",
+       "version": "1.6",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "trimmed",
+     "note": "Sentence 0 (stage greeting being 'rather quirky') is not given. Sentence 2 reverses the requirement: the English says Beidou requires participants to be renowned and have no Vision, not 'no fame and no Vision'.",
+     "quote": "While Beidou requires participants to be renowned and have no Vision, most of them are generally show-offs who have little to no combat prowess.",
+     "sentences": [
+      {
+       "t_raw": "인사말이 오가는 무대 위의 실제 면모는 다소 엉뚱한 편이었다.",
+       "interp": false,
+       "dropped": true,
+       "t": "인사말이 오가는 무대 위의 실제 면모는 다소 엉뚱한 편이었다."
+      },
+      {
+       "t_raw": "The Crux Clash는 Beidou가 Liyue의 숨겨진 재능을 발굴하기 위해 주최하는 무술 대회였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "남십자 무술대회는 북두가 리월의 숨겨진 재능을 발굴하기 위해 주최하는 무술 대회였다."
+      },
+      {
+       "t_raw": "Beidou는 참가자들이 명망이 있고 Vision이 없기를 요구했지만, 대부분은 전투 실력이 거의 없는 자랑쟁이들이다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "북두는 참가자들이 명망이 있고 신의 눈이 없기를 요구했지만, 대부분은 전투 실력이 거의 없는 자랑쟁이들이다."
+      },
+      {
+       "t_raw": "재능 발굴을 내세운 대회에 실력보다 눈에 띄는 것이 앞서는 사람들이 몰려든 셈이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "재능 발굴을 내세운 대회에 실력보다 눈에 띄는 것이 앞서는 사람들이 몰려든 셈이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Crux Clash",
+       "revision": 223482,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "The Crux Clash는 내가 여는 무술 대회다. 저마다 기량을 선보이려고 아주 많은 사람이 참가할 것이다.",
+     "en": "The Crux Clash is a martial arts tournament that I hold. There'll be a whole bunch of folks taking part to showcase their talents.",
+     "speaker": "Beidou",
+     "source": {
+      "kind": "quest",
+      "quest": "A Path Through the Storm",
+      "quest_ko": "뇌우를 뚫는 법",
+      "version": "1.6",
+      "speaker": "Beidou"
+     },
+     "t": "남십자 무술대회는 내가 여는 무술 대회다. 저마다 기량을 선보이려고 아주 많은 사람이 참가할 것이다.",
+     "speaker_ko": "북두"
+    },
+    {
+     "section": "대회의 진행과 상품",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "The Crux Clash는 절정에 이르렀다. 이것이 결승전이다!",
+     "en": "We've reached the climax of The Crux Clash. This is the final match!",
+     "speaker": "Beidou",
+     "source": {
+      "kind": "quest",
+      "quest": "Follow the Wind",
+      "quest_ko": "바람을 따라",
+      "version": "1.6",
+      "speaker": "Beidou"
+     },
+     "t": "남십자 무술대회는 절정에 이르렀다. 이것이 결승전이다!",
+     "speaker_ko": "북두"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "당신의 준결승 상대는 The Crux Clash에 처음 나왔지만, 순식간에 대회의 다크호스가 된 인물입니다.",
+     "en": "Your opponent in the semi-finals is new to The Crux Clash, but he has quickly become the dark horse of the tournament.",
+     "speaker": "Zhuhan",
+     "source": {
+      "kind": "quest",
+      "quest": "The Crux Clash (Quest)",
+      "quest_ko": "남십자 무술대회",
+      "version": "1.6",
+      "speaker": "Zhuhan"
+     },
+     "t": "당신의 준결승 상대는 남십자 무술대회에 처음 나왔지만, 순식간에 대회의 다크호스가 된 인물입니다.",
+     "speaker_ko": "주함"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "이번 The Crux Clash이 손을 벗어나 그녀의 주의를 끈 모양이야.",
+     "en": "It seems that The Crux Clash got out of hand this time and has attracted her attention.",
+     "speaker": "Zhuhan",
+     "source": {
+      "kind": "quest",
+      "quest": "Follow the Wind",
+      "quest_ko": "바람을 따라",
+      "version": "1.6",
+      "speaker": "Zhuhan"
+     },
+     "t": "이번 남십자 무술대회가 손을 벗어나 그녀의 주의를 끈 모양이야.",
+     "speaker_ko": "주함"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "여어, 젊은이. 너도 The Crux Clash에 참가하러 온 거야?",
+     "en": "Hey, youngster. Are you here for The Crux Clash too?",
+     "speaker": "Jinyou",
+     "source": {
+      "kind": "quest",
+      "quest": "A Path Through the Storm",
+      "quest_ko": "뇌우를 뚫는 법",
+      "version": "1.6",
+      "speaker": "Jinyou"
+     },
+     "t": "여어, 젊은이. 너도 남십자 무술대회에 참가하러 온 거야?",
+     "speaker_ko": "진우"
+    }
+   ]
+  }
+ ]
+}

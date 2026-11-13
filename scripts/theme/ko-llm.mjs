@@ -19,6 +19,7 @@ import { parseArgs } from 'node:util';
 import { CONTEXT, LLM_NAMES, REWRITE, isContextDependent, missingKorean, pointKey } from './ko-extra.mjs';
 import { namesLeft, shownRecords } from './names-left.mjs';
 import { latinNames } from '../recommend/ko-text.mjs';
+import { articlesPath, readArticles } from './article-store.mjs';
 
 const ROOT = new URL('../../', import.meta.url).pathname;
 const WORK = join(ROOT, '.cache/ko-llm');
@@ -110,7 +111,7 @@ if (!['tasks', 'import'].includes(cmd) || !README[step]) {
 // looks it up (inContext(ko(s.t_raw), s.t_raw)); words are what is English before the clean-up rewrite
 // (polish.from), since the per-sentence choices are applied to that text, and still English on screen.
 async function articleSentences(theme) {
-  const a = await readJson(join(ROOT, `data/generated/articles-${theme}.json`));
+  const a = await readArticles(articlesPath(join(ROOT, 'data/generated'), theme), {});
   return (a.articles ?? []).map((x) => ({ node: x.node, points: x.paragraphs.filter((p) => ['accepted', 'trimmed'].includes(p.status))
     .flatMap((p) => p.sentences.filter((s) => !s.dropped).map((s) => {
       const before = s.polish?.text === s.t ? s.polish.from : s.t;

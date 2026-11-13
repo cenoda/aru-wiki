@@ -1,0 +1,790 @@
+{
+ "node": "Huishan Hall",
+ "articles": [
+  {
+   "node": "Huishan Hall",
+   "from_version": "3.3",
+   "cutoff": "2023-01-17T00:00:00Z",
+   "input": [
+    {
+     "page": "Huishan Hall",
+     "url": "https://genshin-impact.fandom.com/wiki/Huishan_Hall",
+     "revision": 1034747
+    }
+   ],
+   "input_counts": {
+    "mentions": 1,
+    "lines": 6,
+    "web": 0
+   },
+   "input_chars": 770,
+   "input_cut": false,
+   "input_hash": "f08ed6f07f74",
+   "writer": "or-ds,kimi",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All pass. Interpretation follows from A4 and A1.",
+     "quote": "After the events of The Chasm Delvers, the Chasm Exploration Team became an official part of Huishan Hall.",
+     "sentences": [
+      {
+       "t_raw": "Huishan Hall은 Liyue Qixing 관할 **Eight Trades** 중 하나로, 광업과 The Chasm 관련 사무를 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "휘산청은 리월 칠성 관할 **8부서** 중 하나로, 광업과 층암거연 관련 사무를 맡는다."
+      },
+      {
+       "t_raw": "그 상층부는 The Chasm의 희귀 **Archaic Stones**를 연구하고, Muning은 Ministry of Civil Affairs의 전문가로 이를 찾아오도록 위임받는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 상층부는 층암거연의 희귀 **Archaic Stones**를 연구하고, 목영은 총무부의 전문가로 이를 찾아오도록 위임받는다."
+      },
+      {
+       "t_raw": "The Chasm Delvers 사건 뒤 Chasm Exploration Team이 Huishan Hall에 공식 편입되면서, 광업·The Chasm 사무를 맡는 조직 안에 현장 탐사대까지 들어온 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "층암거연 탐색기 사건 뒤 「층암거연 탐사대」가 휘산청에 공식 편입되면서, 광업·층암거연 사무를 맡는 조직 안에 현장 탐사대까지 들어온 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "bb",
+         "name": "Mingyun Village Billboard"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Says He Who Seeks Stone"
+        },
+        {
+         "type": "item",
+         "name": "Archaic Stone (Says He Who Seeks Stone)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Wherefore Did the Spiritstone Descend?"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Archaic Stones"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Sentence 2 claims the Eight Trades entry lists Huishan Hall with two Unknowns. The source only shows 'Huishan Hall · Unknown · Unknown' in the group list, so the claim is a loose reading but stated as a fact. Sentence 3 concludes that Huishan Hall's details are Unknown, but the Unknowns are unlabeled columns and the English gives full info on Huishan Hall. This overreads.",
+     "quote": "Huishan Hall is one of the Eight Trades under the jurisdiction of the Liyue Qixing. They are in charge of the mining industry and matters involving The Chasm.",
+     "sentences": [
+      {
+       "t_raw": "Huishan Hall은 Liyue Qixing 관할 **Eight Trades** 가운데 하나다.",
+       "interp": false,
+       "dropped": false,
+       "t": "휘산청은 리월 칠성 관할 **8부서** 가운데 하나다."
+      },
+      {
+       "t_raw": "이 조직은 **광업과 The Chasm 관련 사무**를 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 조직은 **광업과 층암거연 관련 사무**를 맡는다."
+      },
+      {
+       "t_raw": "Eight Trades 항목의 그룹 목록에는 'Huishan Hall · Unknown · Unknown'으로 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "8부서 항목의 그룹 목록에는 '휘산청 · Unknown · Unknown'으로 적혀 있다."
+      },
+      {
+       "t_raw": "Eight Trades 항목에서 Huishan Hall 옆의 두 항목은 아직 Unknown으로 표시된 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "8부서 항목에서 휘산청 옆의 두 항목은 아직 Unknown으로 표시된 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "bb",
+         "name": "Mingyun Village Billboard"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Trades",
+       "revision": 65909,
+       "section": "Groups",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Unknown",
+      "Unknown",
+      "Unknown"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The material only shows two unlabeled 'Unknown' entries next to the name. It does not say Huishan Hall's detailed info is unknown.",
+     "quote": "Huishan Hall is one of the Eight Trades under the jurisdiction of the Liyue Qixing. They are in charge of the mining industry and matters involving The Chasm.",
+     "sentences": [
+      {
+       "t_raw": "Eight Trades 목록의 Huishan Hall 항목 옆에는 두 개의 Unknown이 적혀 있다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "8부서 목록의 휘산청 항목 옆에는 두 개의 Unknown이 적혀 있다."
+      },
+      {
+       "t_raw": "그래도 Huishan Hall은 Liyue Qixing 관할 아래 **광업과 The Chasm 관련 사무**를 맡는 조직이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 휘산청은 리월 칠성 관할 아래 **광업과 층암거연 관련 사무**를 맡는 조직이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "bb",
+         "name": "Mingyun Village Billboard"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Eight Trades",
+       "revision": 65909,
+       "section": "Groups",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "Unknown"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All pass. The interpretation is hedged and follows from rarity and diminished quality.",
+     "quote": "Higher-ups at Huishan Hall are studying the rare Archaic Stones from The Chasm, which Muning, a specialist from the Ministry of Civil Affairs, was commissioned to find and bring back.",
+     "sentences": [
+      {
+       "t_raw": "Huishan Hall 윗선은 The Chasm의 희귀한 Archaic Stones를 연구하며, Ministry of Civil Affairs의 Muning은 그 돌을 찾아 가져오도록 위임받았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "휘산청 윗선은 층암거연의 희귀한 Archaic Stones를 연구하며, 총무부의 목영은 그 돌을 찾아 가져오도록 위임받았다."
+      },
+      {
+       "t_raw": "The Chasm의 변화로 남은 몇 안 되는 Archaic Stones의 **품질 저하**가 일어났다.",
+       "interp": false,
+       "dropped": false,
+       "t": "층암거연의 변화로 남은 몇 안 되는 Archaic Stones의 **품질 저하**가 일어났다."
+      },
+      {
+       "t_raw": "희귀성과 품질 저하가 겹쳐 수집과 연구가 수월하지 않았을 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "희귀성과 품질 저하가 겹쳐 수집과 연구가 수월하지 않았을 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Says He Who Seeks Stone"
+        },
+        {
+         "type": "item",
+         "name": "Archaic Stone (Says He Who Seeks Stone)"
+        }
+       ]
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "Archaic Stones",
+      "Archaic Stones"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All pass. The interpretation is reasonable.",
+     "quote": "Huishan Hall has forbidden those who work in The Chasm from eating the plants and mushrooms that grow in the underground mines, as they may be harmful to the human body.",
+     "sentences": [
+      {
+       "t_raw": "Huishan Hall은 The Chasm에서 일하는 이들이 지하 광산의 식물과 버섯을 먹는 것을 금지했는데, 그것들이 **인체에 해로울 수 있기 때문**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "휘산청은 층암거연에서 일하는 이들이 지하 광산의 식물과 버섯을 먹는 것을 금지했는데, 그것들이 **인체에 해로울 수 있기 때문**이다."
+      },
+      {
+       "t_raw": "채굴 현장 관리가 작업자의 건강까지 아우르는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "채굴 현장 관리가 작업자의 건강까지 아우르는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Missing Miner"
+        }
+       ]
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All pass. Q2 supports sentence 1, with the reward mention. A4 supports the others.",
+     "quote": "I mean, I will pay you. And of course, The Chasm Exploration Team will become an official part of Huishan Hall from this day forth!",
+     "sentences": [
+      {
+       "t_raw": "The Chasm Delvers 사건을 거친 뒤, **Chasm Exploration Team**은 Huishan Hall의 공식 일부가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "층암거연 탐색기 사건을 거친 뒤, **「층암거연 탐사대」**는 휘산청의 공식 일부가 되었다."
+      },
+      {
+       "t_raw": "Muning은 보상을 주겠다면서, Chasm Exploration Team이 이날부터 Huishan Hall의 공식 일부가 된다고 알렸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목영은 보상을 주겠다면서, 「층암거연 탐사대」가 이날부터 휘산청의 공식 일부가 된다고 알렸다."
+      },
+      {
+       "t_raw": "이로써 현장 탐사대의 활동은 Huishan Hall의 공식 체계 안으로 들어간 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이로써 현장 탐사대의 활동은 휘산청의 공식 체계 안으로 들어간 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Wherefore Did the Spiritstone Descend?"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Wherefore Did the Spiritstone Descend?",
+       "quest_ko": "영석이 떨어진 이유",
+       "version": "2.6",
+       "speaker": "Muning"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "In Q3 Muning says 'We' warned them to report to Huishan Hall. The Korean makes Huishan Hall the one who issued the warning.",
+     "quote": "Here, the rewards for the three Archaic Stones. Huishan Hall wants quite a lot of them, so bring me more if you can find any.",
+     "sentences": [
+      {
+       "t_raw": "Muning에 따르면, 현장에서 이상한 일이 생기면 Huishan Hall에 보고하라고 미리 경고해 두었다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "목영에 따르면, 현장에서 이상한 일이 생기면 휘산청에 보고하라고 미리 경고해 두었다."
+      },
+      {
+       "t_raw": "Muning은 세 개의 **Archaic Stones**에 대한 보상을 건네며, Huishan Hall이 그것을 꽤 많이 원하니 더 찾으면 가져오라고 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목영은 세 개의 **Archaic Stones**에 대한 보상을 건네며, 휘산청이 그것을 꽤 많이 원하니 더 찾으면 가져오라고 했다."
+      },
+      {
+       "t_raw": "현장의 이상 보고와 Archaic Stones 추가 수집 요청이 함께 드러난 점은, Huishan Hall이 현장의 보고와 광물 수집을 함께 챙기는 흐름으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "현장의 이상 보고와 Archaic Stones 추가 수집 요청이 함께 드러난 점은, 휘산청이 현장의 보고와 광물 수집을 함께 챙기는 흐름으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Chasm's Bounty",
+       "quest_ko": "거연의 선물",
+       "version": "2.6",
+       "speaker": "Muning"
+      },
+      {
+       "kind": "quest",
+       "quest": "Says He Who Seeks Stone",
+       "quest_ko": "돌을 숨긴 자의 말",
+       "version": "2.6",
+       "speaker": "Muning"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": [
+      "Archaic Stones",
+      "Archaic Stones"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Uncle Dai is one of the foremen at Huishan Hall over in Liyue Harbor. He's hoping the Adventurers' Guild can spare some manpower.",
+     "sentences": [
+      {
+       "t_raw": "Uncle Dai는 Huishan Hall의 **현장 감독**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "대웅은 휘산청의 **현장 감독**이다."
+      },
+      {
+       "t_raw": "Katheryne에 따르면 Liyue Harbor의 Huishan Hall 현장 감독 중 한 명인 그는 Adventurers' Guild가 사람을 내어 주기를 바랐다.",
+       "interp": false,
+       "dropped": false,
+       "t": "캐서린에 따르면 리월항의 휘산청 현장 감독 중 한 명인 그는 모험가 길드가 사람을 내어 주기를 바랐다."
+      },
+      {
+       "t_raw": "Huishan Hall의 현장 운영이 Adventurers' Guild 인력과 맞닿아 있었던 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "휘산청의 현장 운영이 모험가 길드 인력과 맞닿아 있었던 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Members",
+       "paragraph": "A5",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Strange Sights, Stolen Souls"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Strange Sights, Stolen Souls",
+       "quest_ko": "날뛰는 도적들",
+       "version": "1.5",
+       "speaker": "Katheryne"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "I mean, I will pay you. And of course, The Chasm Exploration Team will become an official part of Huishan Hall from this day forth!",
+     "sentences": [
+      {
+       "t_raw": "Ministry of Civil Affairs의 전문가 Muning은 Huishan Hall 상층부가 연구하는 The Chasm의 희귀한 Archaic Stones를 찾아오도록 위임받았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "총무부의 전문가 목영은 휘산청 상층부가 연구하는 층암거연의 희귀한 Archaic Stones를 찾아오도록 위임받았다."
+      },
+      {
+       "t_raw": "그는 보수를 주겠다며 Chasm Exploration Team이 이날부터 Huishan Hall의 **공식 일부**가 된다고 말했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 보수를 주겠다며 「층암거연 탐사대」가 이날부터 휘산청의 **공식 일부**가 된다고 말했다."
+      },
+      {
+       "t_raw": "Zhiqiong은 Huishan Hall에서 자문과 안내를 맡고, Chasm Exploration Team은 The Chasm Delvers 사건 이후 공식 일부가 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "지경은 휘산청에서 자문과 안내를 맡고, 「층암거연 탐사대」는 층암거연 탐색기 사건 이후 공식 일부가 되었다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Says He Who Seeks Stone"
+        },
+        {
+         "type": "item",
+         "name": "Archaic Stone (Says He Who Seeks Stone)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Overview",
+       "paragraph": "A4",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Wherefore Did the Spiritstone Descend?"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Members",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Valor's Afterglow: The Faint Light Remembered"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Wherefore Did the Spiritstone Descend?",
+       "quest_ko": "영석이 떨어진 이유",
+       "version": "2.6",
+       "speaker": "Muning"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Archaic Stones"
+     ]
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Here, the rewards for the three Archaic Stones. Huishan Hall wants quite a lot of them, so bring me more if you can find any.",
+     "sentences": [
+      {
+       "t_raw": "Huishan Hall의 높은 사람들은 The Chasm의 희귀한 Archaic Stones를 연구하고, Muning은 그 돌을 찾아 가져오도록 위임받았지만, The Chasm의 변화로 남은 Archaic Stones의 품질은 떨어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "휘산청의 높은 사람들은 층암거연의 희귀한 Archaic Stones를 연구하고, 목영은 그 돌을 찾아 가져오도록 위임받았지만, 층암거연의 변화로 남은 Archaic Stones의 품질은 떨어졌다."
+      },
+      {
+       "t_raw": "Muning은 오랜 세월 The Chasm에서 일하면서도 Archaic Stones를 거의 보지 못했다고 말하고, Archaic Stones 세 개의 보상까지 건네며 Huishan Hall이 그것들을 꽤 많이 원하니 더 찾으면 가져오라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목영은 오랜 세월 층암거연에서 일하면서도 Archaic Stones를 거의 보지 못했다고 말하고, Archaic Stones 세 개의 보상까지 건네며 휘산청이 그것들을 꽤 많이 원하니 더 찾으면 가져오라고 한다."
+      },
+      {
+       "t_raw": "이처럼 **품질 저하와 희귀성** 속에서 **많은 양**을 원하는 모습은 Huishan Hall이 이 돌을 왜 그만큼 필요로 하는지에 대한 물음으로 이어진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 **품질 저하와 희귀성** 속에서 **많은 양**을 원하는 모습은 휘산청이 이 돌을 왜 그만큼 필요로 하는지에 대한 물음으로 이어진다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Overview",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Says He Who Seeks Stone"
+        },
+        {
+         "type": "item",
+         "name": "Archaic Stone (Says He Who Seeks Stone)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Says He Who Seeks Stone",
+       "quest_ko": "돌을 숨긴 자의 말",
+       "version": "2.6",
+       "speaker": "Muning"
+      },
+      {
+       "kind": "quest",
+       "quest": "Says He Who Seeks Stone",
+       "quest_ko": "돌을 숨긴 자의 말",
+       "version": "2.6",
+       "speaker": "Muning"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": [
+      "Archaic Stones",
+      "Archaic Stones",
+      "Archaic Stones",
+      "Archaic Stones"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Huishan Hall has forbidden those who work in The Chasm from eating the plants and mushrooms that grow in the underground mines, as they may be harmful to the human body.",
+     "sentences": [
+      {
+       "t_raw": "**식물과 버섯 섭취 금지**는 The Chasm의 지하 광산에서 일하는 이들에게 적용된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**식물과 버섯 섭취 금지**는 층암거연의 지하 광산에서 일하는 이들에게 적용된다."
+      },
+      {
+       "t_raw": "그곳에서 자라는 식물과 버섯은 인체에 해로울 수 있기 때문이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그곳에서 자라는 식물과 버섯은 인체에 해로울 수 있기 때문이다."
+      },
+      {
+       "t_raw": "이상한 일을 겪으면 Huishan Hall에 보고하라는 경고가 미리 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이상한 일을 겪으면 휘산청에 보고하라는 경고가 미리 있었다."
+      },
+      {
+       "t_raw": "이 두 가지는 지하 광산에서 생길 수 있는 위험을 현장에서 먼저 걸러 내려는 태도로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 두 가지는 지하 광산에서 생길 수 있는 위험을 현장에서 먼저 걸러 내려는 태도로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huishan Hall",
+       "revision": 1034747,
+       "section": "Overview",
+       "paragraph": "A3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "The Missing Miner"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "The Chasm's Bounty",
+       "quest_ko": "거연의 선물",
+       "version": "2.6",
+       "speaker": "Muning"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation is hedged and follows from the rewards and the request for more stones.",
+     "quote": "Rewards from Huishan Hall!",
+     "sentences": [
+      {
+       "t_raw": "Muning은 Archaic Stones 세 개에 대한 **보상**을 건네며, Huishan Hall이 그것들을 꽤 많이 원하니 더 찾으면 가져오라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목영은 Archaic Stones 세 개에 대한 **보상**을 건네며, 휘산청이 그것들을 꽤 많이 원하니 더 찾으면 가져오라고 한다."
+      },
+      {
+       "t_raw": "Paimon은 그 보상을 두고 Huishan Hall의 보상이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 그 보상을 두고 휘산청의 보상이라고 말한다."
+      },
+      {
+       "t_raw": "돌을 더 찾아오라는 요구와 Huishan Hall의 보상이 맞물려, 수집을 이어 가게 만드는 구조로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "돌을 더 찾아오라는 요구와 휘산청의 보상이 맞물려, 수집을 이어 가게 만드는 구조로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Says He Who Seeks Stone",
+       "quest_ko": "돌을 숨긴 자의 말",
+       "version": "2.6",
+       "speaker": "Muning"
+      },
+      {
+       "kind": "quest",
+       "quest": "Says He Who Seeks Stone",
+       "quest_ko": "돌을 숨긴 자의 말",
+       "version": "2.6",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Archaic Stones"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful: sigh, years in The Chasm, barely even one Archaic Stone, and the big shots at Huishan Hall.",
+     "t_raw": "Archaic Stone... *한숨* The Chasm에서 일한 세월 내내 겨우 하나조차 거의 본 적이 없다. Huishan Hall의 거물들은 무슨 생각을 하는 건지...",
+     "en": "Archaic Stone... *sigh* In all years I've worked in The Chasm, I've barely seen even one. What are the big shots at Huishan Hall thinking...",
+     "speaker": "Muning",
+     "source": {
+      "kind": "quest",
+      "quest": "Says He Who Seeks Stone",
+      "quest_ko": "돌을 숨긴 자의 말",
+      "version": "2.6",
+      "speaker": "Muning"
+     },
+     "t": "노석... *한숨* 층암거연에서 일한 세월 내내 겨우 하나조차 거의 본 적이 없다. 휘산청의 거물들은 무슨 생각을 하는 건지...",
+     "speaker_ko": "목영"
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Unfaithful: 그러니까 reads as so/therefore, not I mean; 보상 is reward/compensation, not pay; the name drops The from The Chasm Exploration Team.",
+     "t_raw": "내 말은, 내가 보수를 지불하겠다는 뜻이다. 그리고 물론, 오늘부터 The Chasm Exploration Team은 Huishan Hall의 공식 일부가 될 것이다!",
+     "en": "I mean, I will pay you. And of course, The Chasm Exploration Team will become an official part of Huishan Hall from this day forth!",
+     "speaker": "Muning",
+     "source": {
+      "kind": "quest",
+      "quest": "Wherefore Did the Spiritstone Descend?",
+      "quest_ko": "영석이 떨어진 이유",
+      "version": "2.6",
+      "speaker": "Muning"
+     },
+     "t": "내 말은, 내가 보수를 지불하겠다는 뜻이다. 그리고 물론, 오늘부터 「층암거연 탐사대」는 휘산청의 공식 일부가 될 것이다!",
+     "speaker_ko": "목영"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful: I mean, I will pay you, and the team becomes an official part of Huishan Hall from this day forth.",
+     "t_raw": "내 말은, 내가 너에게 보수를 주겠다는 거야. 그리고 물론, The Chasm Exploration Team은 오늘부터 Huishan Hall의 공식 일부가 될 거야!",
+     "en": "I mean, I will pay you. And of course, The Chasm Exploration Team will become an official part of Huishan Hall from this day forth!",
+     "speaker": "Muning",
+     "source": {
+      "kind": "quest",
+      "quest": "Wherefore Did the Spiritstone Descend?",
+      "quest_ko": "영석이 떨어진 이유",
+      "version": "2.6",
+      "speaker": "Muning"
+     },
+     "t": "내 말은, 내가 너에게 보수를 주겠다는 거야. 그리고 물론, 「층암거연 탐사대」는 오늘부터 휘산청의 공식 일부가 될 거야!",
+     "speaker_ko": "목영"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful: rewards for the three Archaic Stones, Huishan Hall wants quite a lot, bring more if you find any.",
+     "t_raw": "여기, Archaic Stones 세 개에 대한 보상이야. Huishan Hall은 그 돌들을 꽤 많이 원하니까, 더 찾을 수 있다면 나에게 더 가져와.",
+     "en": "Here, the rewards for the three Archaic Stones. Huishan Hall wants quite a lot of them, so bring me more if you can find any.",
+     "speaker": "Muning",
+     "source": {
+      "kind": "quest",
+      "quest": "Says He Who Seeks Stone",
+      "quest_ko": "돌을 숨긴 자의 말",
+      "version": "2.6",
+      "speaker": "Muning"
+     },
+     "t": "여기, Archaic Stones 세 개에 대한 보상이야. 휘산청은 그 돌들을 꽤 많이 원하니까, 더 찾을 수 있다면 나에게 더 가져와.",
+     "speaker_ko": "목영"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful: same line; 더 찾을 수 있다면 가져오라 still means bring more if you find any.",
+     "t_raw": "여기, Archaic Stones 세 개에 대한 보상이다. Huishan Hall은 그것들을 꽤 많이 원하니, 더 찾을 수 있다면 나에게 가져오라.",
+     "en": "Here, the rewards for the three Archaic Stones. Huishan Hall wants quite a lot of them, so bring me more if you can find any.",
+     "speaker": "Muning",
+     "source": {
+      "kind": "quest",
+      "quest": "Says He Who Seeks Stone",
+      "quest_ko": "돌을 숨긴 자의 말",
+      "version": "2.6",
+      "speaker": "Muning"
+     },
+     "t": "여기, Archaic Stones 세 개에 대한 보상이다. 휘산청은 그것들을 꽤 많이 원하니, 더 찾을 수 있다면 나에게 가져오라.",
+     "speaker_ko": "목영"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,644 @@
+{
+ "node": "Wall of Samiel",
+ "articles": [
+  {
+   "node": "Wall of Samiel",
+   "from_version": "3.1",
+   "cutoff": "2022-11-01T00:00:00Z",
+   "input": [
+    {
+     "page": "Wall of Samiel",
+     "url": "https://genshin-impact.fandom.com/wiki/Wall_of_Samiel",
+     "revision": 905809
+    }
+   ],
+   "input_counts": {
+    "mentions": 3,
+    "lines": 2,
+    "web": 0
+   },
+   "input_chars": 235,
+   "input_cut": false,
+   "input_hash": "867885ab8396",
+   "writer": "ds,or-ds",
+   "verifier": "claude-sonnet,codex-medium",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2, M2, M3 and Q2.",
+     "quote": "The Wall of Samiel, or simply referred to as the Wall, is the wall separating Dharma Forest and the Great Red Sand in Sumeru.",
+     "sentences": [
+      {
+       "t_raw": "Wall of Samiel은 Sumeru에서 Dharma Forest와 Great Red Sand를 가르는 벽이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방사벽은 수메르에서 다르마의 숲과 적색 모래바다를 가르는 벽이다."
+      },
+      {
+       "t_raw": "Greater Lord Rukkhadevata가 모래폭풍으로부터 숲을 지키기 위해 만들었다고 전해지며, 숲과 사막의 경계에서 사막화를 막는 벽으로도 설명된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "위대한 룩카데바타가 모래폭풍으로부터 숲을 지키기 위해 만들었다고 전해지며, 숲과 사막의 경계에서 사막화를 막는 벽으로도 설명된다."
+      },
+      {
+       "t_raw": "Caravan Ribat은 그 발치에 자리한 요새 마을이자 숲과 사막을 오가는 이들이 거치는 검문소다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카라반 수도원은 그 발치에 자리한 요새 마을이자 숲과 사막을 오가는 이들이 거치는 검문소다."
+      },
+      {
+       "t_raw": "Paimon은 이 벽을 볼 때마다 이렇게 높은 벽이 어떻게 존재할 수 있는지 놀라며, 그 높이는 이 경계를 강하게 각인시키는 요소로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "페이몬은 이 벽을 볼 때마다 이렇게 높은 벽이 어떻게 존재할 수 있는지 놀라며, 그 높이는 이 경계를 강하게 각인시키는 요소로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wall of Samiel",
+       "revision": 905809,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wall of Samiel",
+       "revision": 905809,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Caravan Ribat",
+       "revision": 848981,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Greater Lord Rukkhadevata",
+       "revision": 906354,
+       "section": "Story > Creation of the Forest",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Missing Village Keepers",
+       "quest_ko": "실종된 마을 지킴이",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A1 and M2. The interpretation is reasonable.",
+     "quote": "Caravan Ribat is a fortified village full of Eremites at the foot of the Wall of Samiel, a wall which protects Sumeru's rainforests from the sandstorms.",
+     "sentences": [
+      {
+       "t_raw": "Wall of Samiel은 Sumeru의 **Dharma Forest와 Great Red Sand를 가르는 벽**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방사벽은 수메르의 **다르마의 숲과 적색 모래바다를 가르는 벽**이다."
+      },
+      {
+       "t_raw": "이 벽은 모래폭풍으로부터 Sumeru의 열대우림을 보호하는 역할을 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 벽은 모래폭풍으로부터 수메르의 열대우림을 보호하는 역할을 한다."
+      },
+      {
+       "t_raw": "벽 아래에는 Eremites가 가득한 요새 마을 Caravan Ribat이 있고, 이곳은 숲과 사막을 오가는 사람들이 Aaru Village나 Great Red Sand로 향할 때 지나는 **검문소**이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "벽 아래에는 도금 여단이 가득한 요새 마을 카라반 수도원이 있고, 이곳은 숲과 사막을 오가는 사람들이 아루 마을이나 적색 모래바다로 향할 때 지나는 **검문소**이기도 하다."
+      },
+      {
+       "t_raw": "숲과 사막을 가르는 벽의 발치에 요새 마을인 검문소가 자리한 셈이라, Wall of Samiel 일대는 경계이자 통로라는 두 얼굴을 함께 보여준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "숲과 사막을 가르는 벽의 발치에 요새 마을인 검문소가 자리한 셈이라, 방사벽 일대는 경계이자 통로라는 두 얼굴을 함께 보여준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wall of Samiel",
+       "revision": 905809,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Caravan Ribat",
+       "revision": 848981,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Paimon's remark in Q2 supports the facts. The symbolic reading is a reasonable interpretation.",
+     "quote": "Paimon's amazed every time we see the Wall of Samiel. How can a wall this tall even exist? It's almost... unreal.",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 우리가 Wall of Samiel을 볼 때마다 감탄하며, 이렇게 높은 벽이 어떻게 존재할 수 있느냐고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 우리가 방사벽을 볼 때마다 감탄하며, 이렇게 높은 벽이 어떻게 존재할 수 있느냐고 말한다."
+      },
+      {
+       "t_raw": "그 벽은 거의 비현실적으로 느껴질 만큼 장대한 인상을 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 벽은 거의 비현실적으로 느껴질 만큼 장대한 인상을 준다."
+      },
+      {
+       "t_raw": "숲을 지키는 기능과 사막과 숲을 가르는 장대한 모습이 함께 전해지는 만큼, Wall of Samiel은 Sumeru 안에서 숲과 사막을 가르는 **상징적인 구조물**로도 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "숲을 지키는 기능과 사막과 숲을 가르는 장대한 모습이 함께 전해지는 만큼, 방사벽은 수메르 안에서 숲과 사막을 가르는 **상징적인 구조물**로도 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wall of Samiel",
+       "revision": 905809,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Caravan Ribat",
+       "revision": 848981,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Missing Village Keepers",
+       "quest_ko": "실종된 마을 지킴이",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "A1, A2 and M3 support the facts. The summary is a fair interpretation.",
+     "quote": "It was supposedly made by Greater Lord Rukkhadevata to prevent sandstorms from ruining the Sumeru rainforests.",
+     "sentences": [
+      {
+       "t_raw": "**Wall of Samiel**은 Sumeru의 Dharma Forest와 Great Red Sand를 가르는 벽이며, 흔히 the Wall이라고도 불린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**방사벽**은 수메르의 다르마의 숲과 적색 모래바다를 가르는 벽이며, 흔히 그 벽이라고도 불린다.",
+       "polish": {
+        "from": "**방사벽**은 수메르의 다르마의 숲과 적색 모래바다를 가르는 벽이며, 흔히 the 벽이라고도 불린다.",
+        "text": "**방사벽**은 수메르의 다르마의 숲과 적색 모래바다를 가르는 벽이며, 흔히 그 벽이라고도 불린다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "숲과 사막의 경계에 세워져 숲이 사막화되는 것을 막는 벽이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "숲과 사막의 경계에 세워져 숲이 사막화되는 것을 막는 벽이다."
+      },
+      {
+       "t_raw": "Greater Lord Rukkhadevata가 모래폭풍이 Sumeru의 열대우림을 망치지 않도록 만들었다고 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "위대한 룩카데바타가 모래폭풍이 수메르의 열대우림을 망치지 않도록 만들었다고 전해진다."
+      },
+      {
+       "t_raw": "이를 종합하면 숲을 모래폭풍과 사막화로부터 지키는 **경계 시설**로 여겨진 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이를 종합하면 숲을 모래폭풍과 사막화로부터 지키는 **경계 시설**로 여겨진 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wall of Samiel",
+       "revision": 905809,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wall of Samiel",
+       "revision": 905809,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Greater Lord Rukkhadevata",
+       "revision": 906354,
+       "section": "Story > Creation of the Forest",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Q2 and A2 support the facts. The interpretation is hedged and reasonable.",
+     "quote": "Paimon's amazed every time we see the Wall of Samiel. How can a wall this tall even exist? It's almost... unreal.",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Wall of Samiel을 볼 때마다 놀라며, 이렇게 높은 벽이 어떻게 존재할 수 있는지 의아해하고 그것이 거의 비현실적이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 방사벽을 볼 때마다 놀라며, 이렇게 높은 벽이 어떻게 존재할 수 있는지 의아해하고 그것이 거의 비현실적이라고 말한다."
+      },
+      {
+       "t_raw": "숲을 지키기 위해 세워졌다고 전해지는 벽이 실재감을 의심할 만큼 거대하게 느껴진다는 점에서, Wall of Samiel의 규모는 경계의 기능과 함께 인상되는 특징으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "숲을 지키기 위해 세워졌다고 전해지는 벽이 실재감을 의심할 만큼 거대하게 느껴진다는 점에서, 방사벽의 규모는 경계의 기능과 함께 인상되는 특징으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Missing Village Keepers",
+       "quest_ko": "실종된 마을 지킴이",
+       "version": "3.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "wiki",
+       "page": "Wall of Samiel",
+       "revision": 905809,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "A1, A2 and M3 support the facts. The interpretation is hedged and reasonable.",
+     "quote": "It was supposedly made by Greater Lord Rukkhadevata to prevent sandstorms from ruining the Sumeru rainforests.",
+     "sentences": [
+      {
+       "t_raw": "Wall of Samiel은 Dharma Forest와 Great Red Sand 사이의 경계에 세워져 숲의 사막화를 막는 벽으로 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방사벽은 다르마의 숲과 적색 모래바다 사이의 경계에 세워져 숲의 사막화를 막는 벽으로 전해진다."
+      },
+      {
+       "t_raw": "전승에서는 **Greater Lord Rukkhadevata**가 모래폭풍으로 Sumeru의 열대우림이 피해를 입지 않게 하려고 이 벽을 만들었다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "전승에서는 **위대한 룩카데바타**가 모래폭풍으로 수메르의 열대우림이 피해를 입지 않게 하려고 이 벽을 만들었다고 한다."
+      },
+      {
+       "t_raw": "숲과 사막의 경계라는 위치와 사막화 방지라는 목적이 함께 전해지는 점에서, 벽의 건설 전승은 숲의 존속을 둘러싼 경계의 이야기로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "숲과 사막의 경계라는 위치와 사막화 방지라는 목적이 함께 전해지는 점에서, 벽의 건설 전승은 숲의 존속을 둘러싼 경계의 이야기로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wall of Samiel",
+       "revision": 905809,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Wall of Samiel",
+       "revision": 905809,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Greater Lord Rukkhadevata",
+       "revision": 906354,
+       "section": "Story > Creation of the Forest",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "The facts are supported, and the interpretation reasonably connects the wall’s role with the forest’s guardians.",
+     "quote": "The Lord of Forests, a lineage of \"tigers\" which began with Viaghara, protected the forest with the help of humans who would learn the secrets of the forest, such as Viridescent.",
+     "sentences": [
+      {
+       "t_raw": "숲을 지킨 존재로는 **Lord of Forests**가 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "숲을 지킨 존재로는 **Lord of Forests**가 전해진다.",
+       "polish": {
+        "from": "숲을 지킨 존재로는 **Lord of Forests**가 전해진다.",
+        "text": "숲을 지킨 존재로는 **Lord of Forests**가 전해진다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Lord of Forests는 Viaghara에서 시작된 \"tigers\"의 계보이며, 숲의 비밀을 배운 인간들의 도움을 받아 숲을 보호했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Lord of Forests는 비야가라에서 시작된 \"호랑이\"의 계보이며, 숲의 비밀을 배운 인간들의 도움을 받아 숲을 보호했다.",
+       "polish": {
+        "from": "Lord of Forests는 비야가라에서 시작된 \"tigers\"의 계보이며, 숲의 비밀을 배운 인간들의 도움을 받아 숲을 보호했다.",
+        "text": "Lord of Forests는 비야가라에서 시작된 \"호랑이\"의 계보이며, 숲의 비밀을 배운 인간들의 도움을 받아 숲을 보호했다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Viridescent처럼 숲의 비밀을 익힌 인간들이 그 보호에 참여했다고 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "뷔엘데센트처럼 숲의 비밀을 익힌 인간들이 그 보호에 참여했다고 전해진다."
+      },
+      {
+       "t_raw": "벽이 사막화를 막는 경계로 서술되는 한편, 숲의 수호는 Lord of Forests와 인간의 협력으로 서술된다는 점에서, Wall of Samiel을 둘러싼 전승은 경계의 방비와 내부의 수호를 함께 엮은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "벽이 사막화를 막는 경계로 서술되는 한편, 숲의 수호는 Lord of Forests와 인간의 협력으로 서술된다는 점에서, 방사벽을 둘러싼 전승은 경계의 방비와 내부의 수호를 함께 엮은 셈이다.",
+       "polish": {
+        "from": "벽이 사막화를 막는 경계로 서술되는 한편, 숲의 수호는 Lord of Forests와 인간의 협력으로 서술된다는 점에서, 방사벽을 둘러싼 전승은 경계의 방비와 내부의 수호를 함께 엮은 셈이다.",
+        "text": "벽이 사막화를 막는 경계로 서술되는 한편, 숲의 수호는 Lord of Forests와 인간의 협력으로 서술된다는 점에서, 방사벽을 둘러싼 전승은 경계의 방비와 내부의 수호를 함께 엮은 셈이다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Greater Lord Rukkhadevata",
+       "revision": 906354,
+       "section": "Story > Creation of the Forest",
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": [
+      "Lord of Forests",
+      "Lord of Forests",
+      "Lord of Forests"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The facts and the interpretation of conflict around the Wall follow from the supplied material.",
+     "quote": "With these scholars in our custody, we'll stomp the Akademiya's forces and fight our way beyond the Wall of Samiel.",
+     "sentences": [
+      {
+       "t_raw": "Caravan Ribat는 **Eremites로 가득한 요새 마을**로, Wall of Samiel 아래에 자리한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카라반 수도원은 **도금 여단으로 가득한 요새 마을**로, 방사벽 아래에 자리한다."
+      },
+      {
+       "t_raw": "Rahman은 Wall of Samiel 건너편 사람들을 좋아하지 않으면서도 스스로를 분별 있는 사람이라 여기며 King Deshret의 부활에 대한 더 이상의 망상은 품지 않겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라흐만은 방사벽 건너편 사람들을 좋아하지 않으면서도 스스로를 분별 있는 사람이라 여기며 적왕의 부활에 대한 더 이상의 망상은 품지 않겠다고 말한다."
+      },
+      {
+       "t_raw": "그런 Rahman이 학자들을 붙잡은 채 **Akademiya의 군세를 짓밟고 Wall of Samiel 너머로 싸워 나가겠다**고 말하는 대목에서, Wall은 Rahman과 Akademiya의 충돌이 향하는 경계로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그런 라흐만이 학자들을 붙잡은 채 **아카데미아의 군세를 짓밟고 방사벽 너머로 싸워 나가겠다**고 말하는 대목에서, 벽은 라흐만과 아카데미아의 충돌이 향하는 경계로 보인다."
+      },
+      {
+       "t_raw": "Caravan Ribat의 Eremites, Wall 건너편을 향한 Rahman의 시선, Akademiya와의 무력 충돌이 한데 겹치면서 이 지역의 세력 구도는 **Wall을 둘러싼 대립**으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "카라반 수도원의 도금 여단, 벽 건너편을 향한 라흐만의 시선, 아카데미아와의 무력 충돌이 한데 겹치면서 이 지역의 세력 구도는 **벽을 둘러싼 대립**으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Caravan Ribat",
+       "revision": 848981,
+       "section": "Lore",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Rahman",
+       "revision": 905399,
+       "section": "Dialogue",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Cry From the Eleazar Hospital",
+       "quest_ko": "비늘병 병원의 울음소리",
+       "version": "3.1",
+       "speaker": "Rahman"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The interpretations reasonably reflect Paimon’s amazement and rhetorical question about the wall’s height.",
+     "quote": "Paimon's amazed every time we see the Wall of Samiel. How can a wall this tall even exist? It's almost... unreal.",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Wall of Samiel을 볼 때마다 그 높이에 놀라며, 이렇게 높은 벽이 존재할 수 있느냐고 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 방사벽을 볼 때마다 그 높이에 놀라며, 이렇게 높은 벽이 존재할 수 있느냐고 되묻는다."
+      },
+      {
+       "t_raw": "벽을 마주한 이의 감탄은 '거의 비현실적'이라는 표현으로 이어져, 그 규모가 쉽게 가늠되지 않음을 드러낸다.",
+       "interp": true,
+       "dropped": false,
+       "t": "벽을 마주한 이의 감탄은 '거의 비현실적'이라는 표현으로 이어져, 그 규모가 쉽게 가늠되지 않음을 드러낸다."
+      },
+      {
+       "t_raw": "**벽의 높이**는 그 자체로 설명을 요구하는 수수께끼로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**벽의 높이**는 그 자체로 설명을 요구하는 수수께끼로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Missing Village Keepers",
+       "quest_ko": "실종된 마을 지킴이",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "The wording preserves the uncertainty in “supposedly,” and the interpretations remain appropriately qualified.",
+     "quote": "It was supposedly made by Greater Lord Rukkhadevata to prevent sandstorms from ruining the Sumeru rainforests.",
+     "sentences": [
+      {
+       "t_raw": "Wall of Samiel은 Greater Lord Rukkhadevata가 **만들었다고 전해지는** 벽이며, 그 목적은 모래폭풍이 Sumeru의 열대우림을 망치지 않게 하는 것으로 전해진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "방사벽은 위대한 룩카데바타가 **만들었다고 전해지는** 벽이며, 그 목적은 모래폭풍이 수메르의 열대우림을 망치지 않게 하는 것으로 전해진다."
+      },
+      {
+       "t_raw": "건설 주체와 목적이 모두 전승의 형태로 전해지기에, 벽의 기원에는 확정되지 않은 부분이 남는다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "건설 주체와 목적이 모두 전승의 형태로 전해지기에, 벽의 기원에는 확정되지 않은 부분이 남는다고 볼 수 있다."
+      },
+      {
+       "t_raw": "높이에 대한 감탄과 건설 전승의 불확실성은 함께 남아, 벽의 실체를 더 궁금하게 만든다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "높이에 대한 감탄과 건설 전승의 불확실성은 함께 남아, 벽의 실체를 더 궁금하게 만든다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Wall of Samiel",
+       "revision": 905809,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Missing Village Keepers",
+       "quest_ko": "실종된 마을 지킴이",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The translation faithfully conveys Paimon’s amazement and disbelief.",
+     "t_raw": "Paimon은 우리가 Wall of Samiel을 볼 때마다 감탄한다. 이렇게 높은 벽이 어떻게 존재할 수 있지? 거의... 비현실적이다.",
+     "en": "Paimon's amazed every time we see the Wall of Samiel. How can a wall this tall even exist? It's almost... unreal.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Missing Village Keepers",
+      "quest_ko": "실종된 마을 지킴이",
+      "version": "3.1",
+      "speaker": "Paimon"
+     },
+     "t": "페이몬은 우리가 방사벽을 볼 때마다 감탄한다. 이렇게 높은 벽이 어떻게 존재할 수 있지? 거의... 비현실적이다.",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The translation faithfully conveys Paimon’s amazement and disbelief.",
+     "t_raw": "Paimon은 우리가 Wall of Samiel을 볼 때마다 놀란다. 이렇게 높은 벽이 어떻게 존재할 수 있지? 거의... 비현실적이다.",
+     "en": "Paimon's amazed every time we see the Wall of Samiel. How can a wall this tall even exist? It's almost... unreal.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Missing Village Keepers",
+      "quest_ko": "실종된 마을 지킴이",
+      "version": "3.1",
+      "speaker": "Paimon"
+     },
+     "t": "페이몬은 우리가 방사벽을 볼 때마다 놀란다. 이렇게 높은 벽이 어떻게 존재할 수 있지? 거의... 비현실적이다.",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of Rahman's line.",
+     "t_raw": "이 학자들을 우리가 붙잡고 있으니, 우리는 Akademiya의 군세를 짓밟고 Wall of Samiel 너머로 싸워 나갈 것이다.",
+     "en": "With these scholars in our custody, we'll stomp the Akademiya's forces and fight our way beyond the Wall of Samiel.",
+     "speaker": "Rahman",
+     "source": {
+      "kind": "quest",
+      "quest": "Cry From the Eleazar Hospital",
+      "quest_ko": "비늘병 병원의 울음소리",
+      "version": "3.1",
+      "speaker": "Rahman"
+     },
+     "t": "이 학자들을 우리가 붙잡고 있으니, 우리는 아카데미아의 군세를 짓밟고 방사벽 너머로 싸워 나갈 것이다.",
+     "speaker_ko": "라흐만"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "Paimon은 우리가 Wall of Samiel을 볼 때마다 놀란다. 어떻게 이렇게 높은 벽이 존재할 수 있지? 거의... 비현실적이야.",
+     "en": "Paimon's amazed every time we see the Wall of Samiel. How can a wall this tall even exist? It's almost... unreal.",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Missing Village Keepers",
+      "quest_ko": "실종된 마을 지킴이",
+      "version": "3.1",
+      "speaker": "Paimon"
+     },
+     "t": "페이몬은 우리가 방사벽을 볼 때마다 놀란다. 어떻게 이렇게 높은 벽이 존재할 수 있지? 거의... 비현실적이야.",
+     "speaker_ko": "페이몬"
+    }
+   ]
+  }
+ ]
+}

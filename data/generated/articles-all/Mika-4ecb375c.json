@@ -1,0 +1,1186 @@
+{
+ "node": "Mika",
+ "articles": [
+  {
+   "node": "Mika",
+   "from_version": "3.3",
+   "cutoff": "2023-01-17T00:00:00Z",
+   "input": [
+    {
+     "page": "Mika",
+     "url": "https://genshin-impact.fandom.com/wiki/Mika",
+     "revision": 1045000
+    },
+    {
+     "page": "Mika/Profile",
+     "url": "https://genshin-impact.fandom.com/wiki/Mika%2FProfile",
+     "revision": 1044443
+    }
+   ],
+   "input_counts": {
+    "mentions": 5,
+    "lines": 15,
+    "web": 0
+   },
+   "input_chars": 2467,
+   "input_cut": false,
+   "input_hash": "ffa6e5449ceb",
+   "writer": "ds,glm,ds-pro,kimi",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by the English.",
+     "quote": "Mika, the front-line land surveyor. He was a vital member of our team before the Grand Master borrowed him for the expedition.",
+     "sentences": [
+      {
+       "t_raw": "Mika는 Knights of Favonius Reconnaissance Company에 속한 인물로, 최전선에서 미지의 지역을 조사하고 지형 데이터를 기록하며 지도를 그리는 현장 조사관이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카는 페보니우스 기사단 정찰 중대에 속한 인물로, 최전선에서 미지의 지역을 조사하고 지형 데이터를 기록하며 지도를 그리는 현장 조사관이다."
+      },
+      {
+       "t_raw": "Varka는 그를 원정대에 데려갔다가, 원정대의 상황을 Mondstadt의 Jean과 그곳에 있던 이들에게 알리기 위해 그를 다시 Mondstadt로 보냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바르카는 그를 원정대에 데려갔다가, 원정대의 상황을 몬드의 진과 그곳에 있던 이들에게 알리기 위해 그를 다시 몬드로 보냈다."
+      },
+      {
+       "t_raw": "Huffman의 동생이며, Cryo 속성의 캐릭터로 소개되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호프만의 동생이며, 얼음 속성의 캐릭터로 소개되어 있다."
+      },
+      {
+       "t_raw": "최전선의 조사관이면서 원정대의 소식을 전하는 역할까지 맡은 셈이라, 그의 귀환은 원정대의 근황이 Mondstadt에 도착하는 사건이 된다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "최전선의 조사관이면서 원정대의 소식을 전하는 역할까지 맡은 셈이라, 그의 귀환은 원정대의 근황이 몬드에 도착하는 사건이 된다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mika",
+       "revision": 1045000,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Huffman",
+       "revision": 905260,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 899331,
+       "section": "Profile > In-Game",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Charity Event! A Great Success!",
+       "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+       "version": "3.1",
+       "speaker": "Eula"
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported. The interpretation follows from Eula calling him a vital member.",
+     "quote": "Mika, the front-line land surveyor. He was a vital member of our team before the Grand Master borrowed him for the expedition.",
+     "sentences": [
+      {
+       "t_raw": "Mika는 Knights of Favonius Reconnaissance Company 소속으로, 맡은 일을 늘 성실히 해내는 인물이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카는 페보니우스 기사단 정찰 중대 소속으로, 맡은 일을 늘 성실히 해내는 인물이다."
+      },
+      {
+       "t_raw": "본업은 최전선 조사관으로, Eula는 Grand Master가 원정대에 빌려 가기 전까지 그가 팀의 핵심 구성원이었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "본업은 최전선 조사관으로, 유라는 대단장이 원정대에 빌려 가기 전까지 그가 팀의 핵심 구성원이었다고 말한다."
+      },
+      {
+       "t_raw": "정찰대 소속이라는 신분과 원정대에 차출되었다는 사실을 함께 놓고 보면, 그가 이름만 걸쳐 둔 신참이 아니라 현장 실무를 맡아 온 인재였다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정찰대 소속이라는 신분과 원정대에 차출되었다는 사실을 함께 놓고 보면, 그가 이름만 걸쳐 둔 신참이 아니라 현장 실무를 맡아 온 인재였다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Charity Event! A Great Success!",
+       "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+       "version": "3.1",
+       "speaker": "Eula"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "All sentences are supported by B8, B9 and B11.",
+     "quote": "Mika, whose dream is to become an expert cartographer, adds another annotation to the new version of the military map he is designing.",
+     "sentences": [
+      {
+       "t_raw": "Mika가 가장 좋아하는 일은 그의 주된 임무와 맞닿아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카가 가장 좋아하는 일은 그의 주된 임무와 맞닿아 있다."
+      },
+      {
+       "t_raw": "미개척 지역을 조사하고 지형 데이터를 기록하며 정확하고 효과적인 지도를 그리는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미개척 지역을 조사하고 지형 데이터를 기록하며 정확하고 효과적인 지도를 그리는 것이다."
+      },
+      {
+       "t_raw": "그의 꿈은 숙련된 지도 제작자가 되는 것으로, 새로 만드는 군용 지도에 주석을 하나씩 더해 가는 중이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그의 꿈은 숙련된 지도 제작자가 되는 것으로, 새로 만드는 군용 지도에 주석을 하나씩 더해 가는 중이다."
+      },
+      {
+       "t_raw": "즐기는 일과 본업이 같은 곳을 향한다는 점에서, 지도 제작은 그에게 단순한 업무가 아니라 성장의 방향으로 자리한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "즐기는 일과 본업이 같은 곳을 향한다는 점에서, 지도 제작은 그에게 단순한 업무가 아니라 성장의 방향으로 자리한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B11",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "The English never says Varka leads the expedition. It only says Varka sent Mika back and that the Grand Master borrowed him. Calling it 'the expedition led by Varka' adds a fact.",
+     "quote": "Prior to Weinlesefest, Varka sent Mika back to Mondstadt to inform Jean and the others who were in Mondstadt of the expedition force's status.",
+     "sentences": [
+      {
+       "t_raw": "Mika는 Grand Master에 의해 원정대에 차출되어 함께 떠났던 인물로, Weinlesefest 전에 Varka가 Mondstadt로 보내 Jean을 비롯한 이들에게 원정대의 상황을 전하게 했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "미카는 대단장에 의해 원정대에 차출되어 함께 떠났던 인물로, 돌아온 바람의 와인 축제 전에 바르카가 몬드로 보내 진을 비롯한 이들에게 원정대의 상황을 전하게 했다."
+      },
+      {
+       "t_raw": "Mondstadt에는 형 Huffman이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "몬드에는 형 호프만이 있다."
+      },
+      {
+       "t_raw": "원정대에 몸담았다가 소식을 들고 돌아왔다는 점에서, 그가 원정대와 Mondstadt를 잇는 자리에 있었다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "원정대에 몸담았다가 소식을 들고 돌아왔다는 점에서, 그가 원정대와 몬드를 잇는 자리에 있었다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huffman",
+       "revision": 905260,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 899331,
+       "section": "Profile > In-Game",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Charity Event! A Great Success!",
+       "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+       "version": "3.1",
+       "speaker": "Eula"
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 태도",
+     "status": "accepted",
+     "note": "All sentences are supported by B1, Q7 and Q8.",
+     "quote": "To those unfamiliar to him, especially those with high rankings, Mika prefers to observe them and understand their personalities before properly interacting with them as a sign of respect.",
+     "sentences": [
+      {
+       "t_raw": "Mika는 낯선 사람, 특히 지위가 높은 사람을 만나면 먼저 그 사람을 관찰하며 성격을 파악한 뒤에야 제대로 교류하는데, 그는 이것을 **존중의 표현**으로 여긴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카는 낯선 사람, 특히 지위가 높은 사람을 만나면 먼저 그 사람을 관찰하며 성격을 파악한 뒤에야 제대로 교류하는데, 그는 이것을 **존중의 표현**으로 여긴다."
+      },
+      {
+       "t_raw": "Jean은 처음 보는 사람들 앞에서 Mika가 긴장한 채 몸을 빳빳하게 세우고 서 있다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "진은 처음 보는 사람들 앞에서 미카가 긴장한 채 몸을 빳빳하게 세우고 서 있다고 전한다."
+      },
+      {
+       "t_raw": "Amber는 Mika가 그들을 두려워하는 것이 아니라 존중을 표하는 방식이라 설명하면서, 그것이 다소 돌아가는 표현임은 인정한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "엠버는 미카가 그들을 두려워하는 것이 아니라 존중을 표하는 방식이라 설명하면서, 그것이 다소 돌아가는 표현임은 인정한다."
+      },
+      {
+       "t_raw": "이런 태도는 상대를 피하려는 것이 아니라 예의를 갖추려는 마음에서 나온 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 태도는 상대를 피하려는 것이 아니라 예의를 갖추려는 마음에서 나온 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Personality",
+       "paragraph": "B1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Charity Event! A Great Success!"
+        },
+        {
+         "type": "quest",
+         "name": "Sounds From Afar (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Charity Event! A Great Success!",
+       "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+       "version": "3.1",
+       "speaker": "Amber"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Jean"
+      }
+     ],
+     "heading": "성격과 태도",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 태도",
+     "status": "accepted",
+     "note": "All sentences are supported by B1, B6, B7, Q10 and Q13.",
+     "quote": "Haha, oh, Mika... How have you not changed one bit after being out on the front line this long?",
+     "sentences": [
+      {
+       "t_raw": "Mika가 맡은 일을 성실히 해내는 것은 성격이 약해서나 거절을 못 해서가 아니라, **팀워크**를 소중히 여기고 경험 많은 동료들에게 배우려는 마음 때문이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카가 맡은 일을 성실히 해내는 것은 성격이 약해서나 거절을 못 해서가 아니라, **팀워크**를 소중히 여기고 경험 많은 동료들에게 배우려는 마음 때문이다."
+      },
+      {
+       "t_raw": "스스로도 모두를 최대한 돕는 일이 팀 전체에 이득이 된다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "스스로도 모두를 최대한 돕는 일이 팀 전체에 이득이 된다고 말한다."
+      },
+      {
+       "t_raw": "그는 언제 말할지, 무엇을 말할지 같은 결정을 다른 사람에게 의지하는 편이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 언제 말할지, 무엇을 말할지 같은 결정을 다른 사람에게 의지하는 편이기도 하다."
+      },
+      {
+       "t_raw": "이 대목과 팀워크를 중시하는 태도를 겹쳐 보면, Mika는 자기 판단보다 팀과 배움을 앞세우는 사람으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 대목과 팀워크를 중시하는 태도를 겹쳐 보면, 미카는 자기 판단보다 팀과 배움을 앞세우는 사람으로 보인다."
+      },
+      {
+       "t_raw": "Kaeya는 최전선에서 오래 지낸 뒤에도 Mika가 하나도 변하지 않았다고 말하고, Paimon은 그런 Mika가 독특한 성격의 소유자라며 흥미를 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "케이아는 최전선에서 오래 지낸 뒤에도 미카가 하나도 변하지 않았다고 말하고, 페이몬은 그런 미카가 독특한 성격의 소유자라며 흥미를 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Personality",
+       "paragraph": "B1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Charity Event! A Great Success!"
+        },
+        {
+         "type": "quest",
+         "name": "Sounds From Afar (Quest)"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Kaeya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Charity Event! A Great Success!",
+       "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "성격과 태도",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "All sentences are supported by M5.",
+     "quote": "Prior to Weinlesefest, Varka sent Mika back to Mondstadt to inform Jean and the others who were in Mondstadt of the expedition force's status.",
+     "sentences": [
+      {
+       "t_raw": "Varka는 Mondstadt를 떠난 뒤 Fatui의 계략을 알게 되어 그것을 터무니없는 일로 여겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바르카는 몬드를 떠난 뒤 우인단의 계략을 알게 되어 그것을 터무니없는 일로 여겼다."
+      },
+      {
+       "t_raw": "Weinlesefest 전에 그는 Mika를 Mondstadt로 보내, 그곳에 있던 Jean과 다른 이들에게 **원정대의 상황**을 알리게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돌아온 바람의 와인 축제 전에 그는 미카를 몬드로 보내, 그곳에 있던 진과 다른 이들에게 **원정대의 상황**을 알리게 했다."
+      },
+      {
+       "t_raw": "소식을 전할 대상이 Jean과 Mondstadt에 남아 있던 이들이었다는 점에서, 이는 원정대의 근황을 본국에 알리는 성격의 파견이었다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "소식을 전할 대상이 진과 몬드에 남아 있던 이들이었다는 점에서, 이는 원정대의 근황을 본국에 알리는 성격의 파견이었다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 899331,
+       "section": "Profile > In-Game",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 몬드",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "All sentences match M5 and Q1-Q3.",
+     "quote": "In the past couple of months, we received an unexpected visitor: the Fatui Harbinger known as 'The Captain.'",
+     "sentences": [
+      {
+       "t_raw": "Mika가 가져온 편지에는 원정대가 Il Capitano를 만난 일, 그리고 그 집행관이 Natlan으로 파견되었다는 내용이 담겨 있었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카가 가져온 편지에는 원정대가 카피타노를 만난 일, 그리고 그 집행관이 나타로 파견되었다는 내용이 담겨 있었다."
+      },
+      {
+       "t_raw": "Mika 자신의 말에 따르면, 지난 몇 달 사이 원정대는 Fatui 집행관 \"The Captain\"이라는 예상치 못한 방문객을 맞았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카 자신의 말에 따르면, 지난 몇 달 사이 원정대는 우인단 집행관 \"대장\"이라는 예상치 못한 방문객을 맞았다."
+      },
+      {
+       "t_raw": "그는 그 행동이 원정대에 도움이 되긴 했지만, 그만큼 그에게 빚진 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 그 행동이 원정대에 도움이 되긴 했지만, 그만큼 그에게 빚진 것이라고 말한다."
+      },
+      {
+       "t_raw": "편지에는 Snezhnaya와 이번에는 같은 배를 타고 있다고 의심된다는 대목이 괄호 표시와 함께 들어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "편지에는 스네즈나야와 이번에는 같은 배를 타고 있다고 의심된다는 대목이 괄호 표시와 함께 들어 있다."
+      },
+      {
+       "t_raw": "Varka는 남겨 둔 종이를 이용해 Lisa에게도 쪽지를 남겼고, Razor가 자신의 인간 부모에 대해 배울 때가 되었다고 여겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "바르카는 남겨 둔 종이를 이용해 리사에게도 쪽지를 남겼고, 레이저가 자신의 인간 부모에 대해 배울 때가 되었다고 여겼다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 899331,
+       "section": "Profile > In-Game",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Mika"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Mika"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Mika"
+      }
+     ],
+     "heading": "작중 행적 — 몬드",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "Supported by Q4-Q6 and Jean's lines. The interpretation fits B1, which says he relies on others for when to talk.",
+     "quote": "Y—Yes, Master Jean!",
+     "sentences": [
+      {
+       "t_raw": "Jean 앞에서 Mika는 목을 가다듬고 \"To the Knights of Favonius: Greetings, everyone. This is Varka.\"라고 편지를 읽기 시작한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "진 앞에서 미카는 목을 가다듬고 \"페보니우스 기사단에게: Greetings, everyone. This is 바르카.\"라고 편지를 읽기 시작한다."
+      },
+      {
+       "t_raw": "이어 \"Umm... May I continue?\"라고 묻고, Jean이 계속하라고 답하자 **\"Y—Yes, Master Jean!\"**이라고 대답한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 \"음... 계속해도 될까요?\"라고 묻고, 진이 계속하라고 답하자 **\"네—네, 사범님 진!\"**이라고 대답한다.",
+       "polish": {
+        "from": "이어 \"Umm... May I continue?\"라고 묻고, 진이 계속하라고 답하자 **\"Y—Yes, 사범님 진!\"**이라고 대답한다.",
+        "text": "이어 \"음... 계속해도 될까요?\"라고 묻고, 진이 계속하라고 답하자 **\"네—네, 사범님 진!\"**이라고 대답한다.",
+        "by": "codex-medium"
+       }
+      },
+      {
+       "t_raw": "편지를 읽는 도중에도 계속해도 되는지 확인하는 모습에서, 그는 자신의 말이 허락된 자리인지를 살핀 뒤에야 다음 말을 잇는 태도를 보인다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "편지를 읽는 도중에도 계속해도 되는지 확인하는 모습에서, 그는 자신의 말이 허락된 자리인지를 살핀 뒤에야 다음 말을 잇는 태도를 보인다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Mika"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Mika"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Mika"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Jean"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Jean"
+      }
+     ],
+     "heading": "작중 행적 — 몬드",
+     "latin_left": [
+      "Greetings",
+      "This"
+     ]
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "Supported by Q14 and Q10. The reading about not changing is reasonable.",
+     "quote": "Haha, oh, Mika... How have you not changed one bit after being out on the front line this long?",
+     "sentences": [
+      {
+       "t_raw": "읽기를 마친 Jean은 \"Thank you, Mika\"라고 인사한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "읽기를 마친 진은 \"고마워요, 미카\"라고 인사한다.",
+       "polish": {
+        "from": "읽기를 마친 진은 \"Thank you, 미카\"라고 인사한다.",
+        "text": "읽기를 마친 진은 \"고마워요, 미카\"라고 인사한다.",
+        "by": "claude-sonnet"
+       }
+      },
+      {
+       "t_raw": "Kaeya는 최전선에서 오래 지낸 뒤에도 Mika가 하나도 변하지 않았다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "케이아는 최전선에서 오래 지낸 뒤에도 미카가 하나도 변하지 않았다고 말한다."
+      },
+      {
+       "t_raw": "최전선에서 보낸 시간이 태도 면에서는 두드러진 변화를 만들지 않았다는 뜻으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "최전선에서 보낸 시간이 태도 면에서는 두드러진 변화를 만들지 않았다는 뜻으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Jean"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Kaeya"
+      }
+     ],
+     "heading": "작중 행적 — 몬드",
+     "latin_left": []
+    },
+    {
+     "section": "능력과 업무",
+     "status": "accepted",
+     "note": "B3 says the Cryo Vision is attached to a plate on his right glove.",
+     "quote": "Mika Schmidt is an upcoming playable Cryo character in Genshin Impact.",
+     "sentences": [
+      {
+       "t_raw": "Mika는 Cryo 캐릭터이며, 그의 Cryo Vision은 오른쪽 장갑의 판에 부착되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카는 얼음 캐릭터이며, 그의 얼음 신의 눈은 오른쪽 장갑의 판에 부착되어 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mika",
+       "revision": 1045000,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Appearance",
+       "paragraph": "B3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력과 업무",
+     "latin_left": []
+    },
+    {
+     "section": "능력과 업무",
+     "status": "accepted",
+     "note": "Supported by B8-B10. The interpretation follows from B8 and B11.",
+     "quote": "There is an abundance of resources here, but it is surrounded by monsters. Take note to exercise caution.",
+     "sentences": [
+      {
+       "t_raw": "Mika의 주 임무는 **최전선 조사관**으로서 미탐사 지역을 조사하고 지형 데이터를 기록하며 정확하고 효과적인 지도를 그리는 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카의 주 임무는 **최전선 조사관**으로서 미탐사 지역을 조사하고 지형 데이터를 기록하며 정확하고 효과적인 지도를 그리는 것이다."
+      },
+      {
+       "t_raw": "그는 “이곳은 자원이 풍부하지만 몬스터에 둘러싸여 있으니 주의하라”고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 “이곳은 자원이 풍부하지만 몬스터에 둘러싸여 있으니 주의하라”고 말한다."
+      },
+      {
+       "t_raw": "그가 즐기는 일이 곧 주 임무와 맞닿아 있다는 점에서, 지도 제작은 단순한 업무 이상으로 그에게 중요한 일로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그가 즐기는 일이 곧 주 임무와 맞닿아 있다는 점에서, 지도 제작은 단순한 업무 이상으로 그에게 중요한 일로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력과 업무",
+     "latin_left": []
+    },
+    {
+     "section": "능력과 업무",
+     "status": "accepted",
+     "note": "All sentences are supported by B5, Q11 and a reasonable interpretation.",
+     "quote": "Setting up tents, lighting fires for cooking, repairing equipment... Even Hertha, the logistics captain, has nothing but praise for Mika's excellent efficiency.",
+     "sentences": [
+      {
+       "t_raw": "천막을 세우고 불을 피우고 장비를 수리하는 일까지, 보급 담당 대장 Hertha는 Mika의 뛰어난 효율성을 칭찬한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "천막을 세우고 불을 피우고 장비를 수리하는 일까지, 보급 담당 대장 헤르타는 미카의 뛰어난 효율성을 칭찬한다."
+      },
+      {
+       "t_raw": "Paimon은 그 수줍은 작은 녀석이 그렇게 **강한 기사**일 줄은 몰랐다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 그 수줍은 작은 녀석이 그렇게 **강한 기사**일 줄은 몰랐다고 말한다."
+      },
+      {
+       "t_raw": "수줍은 인상과 달리 현장의 실무 효율과 기사로서의 강함이 함께 인정받는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "수줍은 인상과 달리 현장의 실무 효율과 기사로서의 강함이 함께 인정받는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Charity Event! A Great Success!",
+       "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+       "version": "3.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "능력과 업무",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by M2, M3, M4; the interpretation is reasonable.",
+     "quote": "*Sigh* Looks like Mika's really growing up.",
+     "sentences": [
+      {
+       "t_raw": "Mika에게는 City of Mondstadt에 거주하는 **형 Huffman**이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카에게는 몬드성에 거주하는 **형 호프만**이 있다."
+      },
+      {
+       "t_raw": "Huffman은 동생을 '**Little Mika**'라 부르며, 한숨과 함께 'Mika가 정말 크는구나'라고 중얼거린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "호프만은 동생을 '**꼬마 미카**'라 부르며, 한숨과 함께 '미카가 정말 크는구나'라고 중얼거린다."
+      },
+      {
+       "t_raw": "여전히 어린아이로 여기는 듯한 호칭과 달리, 그의 성장을 새삼 느끼는 형의 시선이 담겨 있다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "여전히 어린아이로 여기는 듯한 호칭과 달리, 그의 성장을 새삼 느끼는 형의 시선이 담겨 있다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huffman",
+       "revision": 905260,
+       "section": "Idle Quotes",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Huffman",
+       "revision": 905260,
+       "section": "Idle Quotes",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Huffman",
+       "revision": 905260,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Eula only says 'the Grand Master' borrowed him; the English never says the Grand Master is Varka (M5 does not give Varka's title).",
+     "quote": "Mika, the front-line land surveyor. He was a vital member of our team before the Grand Master borrowed him for the expedition.",
+     "sentences": [
+      {
+       "t_raw": "원정대로 떠나기 전, Mika는 Eula의 팀에서 없어서는 안 될 일원이었고, 그를 원정대로 빌려 간 사람은 Grand Master였다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "원정대로 떠나기 전, 미카는 유라의 팀에서 없어서는 안 될 일원이었고, 그를 원정대로 빌려 간 사람은 대단장였다."
+      },
+      {
+       "t_raw": "Weinlesefest를 앞두고 Varka는 Mika를 Mondstadt로 돌려보내 Jean과 동료들에게 원정대의 현황을 전하게 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "돌아온 바람의 와인 축제를 앞두고 바르카는 미카를 몬드로 돌려보내 진과 동료들에게 원정대의 현황을 전하게 했다."
+      },
+      {
+       "t_raw": "한 팀의 핵심이던 기사를 원정대의 소식을 전하는 전령으로 내보낼 만큼, Varka가 그를 깊이 신뢰했던 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 팀의 핵심이던 기사를 원정대의 소식을 전하는 전령으로 내보낼 만큼, 바르카가 그를 깊이 신뢰했던 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Charity Event! A Great Success!",
+       "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+       "version": "3.1",
+       "speaker": "Eula"
+      },
+      {
+       "kind": "wiki",
+       "page": "Varka",
+       "revision": 899331,
+       "section": "Profile > In-Game",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Supported by Q6, Q10-Q12, Q14; the interpretation is reasonable.",
+     "quote": "Mika, yeah, that's the one! Paimon never would've thought that shy little guy was such a strong knight!",
+     "sentences": [
+      {
+       "t_raw": "Jean 앞에서는 말까지 더듬는데, Jean이 먼저 말할 기회를 주고 고맙다는 인사까지 건넨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "진 앞에서는 말까지 더듬는데, 진이 먼저 말할 기회를 주고 고맙다는 인사까지 건넨다."
+      },
+      {
+       "t_raw": "말문이 막힌 Mika를 다그치지 않고 기다려주는 것은, Jean의 배려로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "말문이 막힌 미카를 다그치지 않고 기다려주는 것은, 진의 배려로 보인다."
+      },
+      {
+       "t_raw": "Kaeya는 오랜 최전선 생활에도 한 치도 변하지 않은 Mika를 웃으며 지적하고, Paimon은 그 수줍은 꼬마가 강한 기사라는 사실에 놀란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "케이아는 오랜 최전선 생활에도 한 치도 변하지 않은 미카를 웃으며 지적하고, 페이몬은 그 수줍은 꼬마가 강한 기사라는 사실에 놀란다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Mika"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Kaeya"
+      },
+      {
+       "kind": "quest",
+       "quest": "Charity Event! A Great Success!",
+       "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+       "version": "3.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Jean"
+      },
+      {
+       "kind": "quest",
+       "quest": "Sounds From Afar (Quest)",
+       "quest_ko": "먼 곳에서 전해온 소식",
+       "version": "3.1",
+       "speaker": "Jean"
+      }
+     ],
+     "heading": "인간관계",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The bag and spurs are described, but the English never says they reflect his front-line surveyor work; this is stated as fact.",
+     "quote": "There is an abundance of resources here, but it is surrounded by monsters. Take note to exercise caution.",
+     "sentences": [
+      {
+       "t_raw": "Mika는 금발에 푸른 눈을 지닌 호리호리한 청년으로, 머리카락은 위쪽의 연한 갈색/주황색에서 아래로 갈수록 옅은 노란색으로 변한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카는 금발에 푸른 눈을 지닌 호리호리한 청년으로, 머리카락은 위쪽의 연한 갈색/주황색에서 아래로 갈수록 옅은 노란색으로 변한다."
+      },
+      {
+       "t_raw": "그의 복장은 실용적이면서도 정교한 디테일로 가득한데, 갈색 버클 장식의 책가방과 군화에 달린 박차가 눈에 띄는 포인트다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그의 복장은 실용적이면서도 정교한 디테일로 가득한데, 갈색 버클 장식의 책가방과 군화에 달린 박차가 눈에 띄는 포인트다."
+      },
+      {
+       "t_raw": "이는 그가 꿈꾸는 **지도 제작자의 길**과도 연결되는 요소로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 그가 꿈꾸는 **지도 제작자의 길**과도 연결되는 요소로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Appearance",
+       "paragraph": "B2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Appearance",
+       "paragraph": "B3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Linking Huffman's 'Little' nickname and sigh to Mika's nervousness around strangers is an unsupported speculation; the English gives no such connection.",
+     "quote": "*Sigh* Looks like Mika's really growing up.",
+     "sentences": [
+      {
+       "t_raw": "형 Huffman은 여전히 그를 “꼬마 Mika”라고 부르지만, 한숨 섞인 “정말 많이 컸구나”라는 독백은 Mika가 어엿한 기사로 성장했음을 인정하는 소리다.",
+       "interp": false,
+       "dropped": false,
+       "t": "형 호프만은 여전히 그를 “꼬마 미카”라고 부르지만, 한숨 섞인 “정말 많이 컸구나”라는 독백은 미카가 어엿한 기사로 성장했음을 인정하는 소리다."
+      },
+      {
+       "t_raw": "여전히 'Little Mika'라는 호칭과 한숨 속에서 Mika의 성장을 언급하는 Huffman의 모습은, 동생을 바라보는 형다운 애정이 남아 있는 셈으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "여전히 '꼬마 미카'라는 호칭과 한숨 속에서 미카의 성장을 언급하는 호프만의 모습은, 동생을 바라보는 형다운 애정이 남아 있는 셈으로 보인다."
+      },
+      {
+       "t_raw": "Mika 본인은 “모두를 최대한 돕는 게 팀 전체에 도움이 된다”며 **팀워크**를 무엇보다 중시하는 태도를 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "미카 본인은 “모두를 최대한 돕는 게 팀 전체에 도움이 된다”며 **팀워크**를 무엇보다 중시하는 태도를 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Huffman",
+       "revision": 905260,
+       "section": "Idle Quotes",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Huffman",
+       "revision": 905260,
+       "section": "Idle Quotes",
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Mika/Profile",
+       "revision": 1044443,
+       "section": "Official Introduction",
+       "paragraph": "B7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of Eula's line.",
+     "t_raw": "Mika, 최전선 토지 조사관. Grand Master가 원정대에 빌려 가기 전까지 그는 우리 팀의 핵심 구성원이었다.",
+     "en": "Mika, the front-line land surveyor. He was a vital member of our team before the Grand Master borrowed him for the expedition.",
+     "speaker": "Eula",
+     "source": {
+      "kind": "quest",
+      "quest": "Charity Event! A Great Success!",
+      "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+      "version": "3.1",
+      "speaker": "Eula"
+     },
+     "t": "미카, 최전선 토지 조사관. 대단장이 원정대에 빌려 가기 전까지 그는 우리 팀의 핵심 구성원이었다.",
+     "speaker_ko": "유라"
+    },
+    {
+     "section": "성격과 태도",
+     "status": "accepted",
+     "note": "Faithful translation of Jean's line.",
+     "t_raw": "Mika와 이야기해 볼 기회가 있었나요? 처음 보는 사람들 앞에서 그는 긴장해서 몸을 빳빳하게 세우고 서 있더군요...",
+     "en": "Have you had the chance to speak with Mika yet? When he's with people he hasn't met before, he tenses up and stands bolt upright...",
+     "speaker": "Jean",
+     "source": {
+      "kind": "quest",
+      "quest": "Sounds From Afar (Quest)",
+      "quest_ko": "먼 곳에서 전해온 소식",
+      "version": "3.1",
+      "speaker": "Jean"
+     },
+     "t": "미카와 이야기해 볼 기회가 있었나요? 처음 보는 사람들 앞에서 그는 긴장해서 몸을 빳빳하게 세우고 서 있더군요...",
+     "speaker_ko": "진"
+    },
+    {
+     "section": "작중 행적 — Mondstadt",
+     "status": "accepted",
+     "note": "Faithful translation of Mika's line.",
+     "t_raw": "네— 네, Master Jean!",
+     "en": "Y—Yes, Master Jean!",
+     "speaker": "Mika",
+     "source": {
+      "kind": "quest",
+      "quest": "Sounds From Afar (Quest)",
+      "quest_ko": "먼 곳에서 전해온 소식",
+      "version": "3.1",
+      "speaker": "Mika"
+     },
+     "t": "네— 네, 사범님 진!",
+     "speaker_ko": "미카"
+    },
+    {
+     "section": "능력과 업무",
+     "status": "accepted",
+     "note": "Faithful translation of Paimon's line.",
+     "t_raw": "Mika, 맞아, 바로 그 사람이야! Paimon은 그 수줍은 작은 녀석이 그렇게 강한 기사일 줄은 꿈에도 몰랐어!",
+     "en": "Mika, yeah, that's the one! Paimon never would've thought that shy little guy was such a strong knight!",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "Charity Event! A Great Success!",
+      "quest_ko": "자선 판매 행사! 순조로운 마무리!",
+      "version": "3.1",
+      "speaker": "Paimon"
+     },
+     "t": "미카, 맞아, 바로 그 사람이야! 페이몬은 그 수줍은 작은 녀석이 그렇게 강한 기사일 줄은 꿈에도 몰랐어!",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "인간관계",
+     "status": "accepted",
+     "note": "Faithful translation of Kaeya's line; the wording \"참\" for \"oh\" is a fair rendering.",
+     "t_raw": "하하, 참, Mika... 이렇게 오랫동안 최전선에 나가 있었는데도 조금도 변한 게 없구나?",
+     "en": "Haha, oh, Mika... How have you not changed one bit after being out on the front line this long?",
+     "speaker": "Kaeya",
+     "source": {
+      "kind": "quest",
+      "quest": "Sounds From Afar (Quest)",
+      "quest_ko": "먼 곳에서 전해온 소식",
+      "version": "3.1",
+      "speaker": "Kaeya"
+     },
+     "t": "하하, 참, 미카... 이렇게 오랫동안 최전선에 나가 있었는데도 조금도 변한 게 없구나?",
+     "speaker_ko": "케이아"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Kaeya's line.",
+     "t_raw": "하하, 오, Mika... 전선에 그렇게 오래 있었는데 어떻게 하나도 변하지 않은 거야?",
+     "en": "Haha, oh, Mika... How have you not changed one bit after being out on the front line this long?",
+     "speaker": "Kaeya",
+     "source": {
+      "kind": "quest",
+      "quest": "Sounds From Afar (Quest)",
+      "quest_ko": "먼 곳에서 전해온 소식",
+      "version": "3.1",
+      "speaker": "Kaeya"
+     },
+     "t": "하하, 오, 미카... 전선에 그렇게 오래 있었는데 어떻게 하나도 변하지 않은 거야?",
+     "speaker_ko": "케이아"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,637 @@
+{
+ "node": "Uyuu Restaurant",
+ "articles": [
+  {
+   "node": "Uyuu Restaurant",
+   "from_version": "2.0",
+   "cutoff": "2021-08-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Uyuu Restaurant",
+     "url": "https://genshin-impact.fandom.com/wiki/Uyuu_Restaurant",
+     "revision": 279629
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 3,
+    "web": 0
+   },
+   "input_chars": 281,
+   "input_cut": false,
+   "input_hash": "5685ccbfafc5",
+   "writer": "kimi,or-ds",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "The claim that the place is portrayed as carrying more emotion than a mere restaurant overreaches. Matsumoto's lines are negative (underwhelmed), and nothing shows the place is depicted as emotionally special.",
+     "quote": "Bet you wrote about Uyuu Restaurant in your last letter, eh? Don't worry, I miss it too.",
+     "sentences": [
+      {
+       "t_raw": "**Uyuu Restaurant**는 Inazuma City 거리에 자리한 식당으로, Aisa Bathhouse 맞은편에 위치해 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**오유정**은 이나즈마성 거리에 자리한 식당으로, 아이사 대중탕 맞은편에 위치해 있다."
+      },
+      {
+       "t_raw": "이 식당은 **Okazaki**가 운영하며, 입구 옆에는 손님들이 남긴 메시지가 적힌 게시판이 설치되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 식당은 **Okazaki**가 운영하며, 입구 옆에는 손님들이 남긴 메시지가 적힌 게시판이 설치되어 있다."
+      },
+      {
+       "t_raw": "2.0 버전까지의 이야기 속에서 Matsumoto는 Uyuu Restaurant와 Kiminami Restaurant 모두에서 기대에 미치지 못했다고 말하고, Yan'er는 시간이 나면 가서 마시고 싶어 하며, Shun은 Uyuu Restaurant를 그리워하는 모습을 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "2.0 버전까지의 이야기 속에서 마츠모토는 오유정과 키미나미 요정 모두에서 기대에 미치지 못했다고 말하고, 연아는 시간이 나면 가서 마시고 싶어 하며, 순식은 오유정을 그리워하는 모습을 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Uyuu Restaurant",
+       "revision": 279629,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Uyuu Restaurant",
+       "revision": 279629,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Uyuu Restaurant",
+       "revision": 279629,
+       "section": "Bulletin Board",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Matsumoto's Fried Egg Fracas",
+       "quest_ko": "마츠모토의 달걀 프라이 의뢰",
+       "version": "2.0",
+       "speaker": "Matsumoto"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hiromi's Watch",
+       "quest_ko": "히로미의 수호",
+       "version": "2.0",
+       "speaker": "Yan'er"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hiromi's Watch",
+       "quest_ko": "히로미의 수호",
+       "version": "2.0",
+       "speaker": "Shun"
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Okazaki"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported. The Inazuma City page entries M1 and M2 give both names.",
+     "quote": "Uyuu Restaurant is a restaurant located in Inazuma City, across from the Aisa Bathhouse. The restaurant is owned by Mr. Okazaki.",
+     "sentences": [
+      {
+       "t_raw": "Inazuma City의 Aisa Bathhouse 맞은편에 위치한 **Uyuu Restaurant**는 **Okazaki**가 운영하는 식당이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이나즈마성의 아이사 대중탕 맞은편에 위치한 **오유정**은 **Okazaki**가 운영하는 식당이다."
+      },
+      {
+       "t_raw": "입구 옆에는 손님들의 메시지가 모인 게시판이 있으며, Gorou를 비롯한 손님들의 메시지도 남아 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "입구 옆에는 손님들의 메시지가 모인 게시판이 있으며, 고로를 비롯한 손님들의 메시지도 남아 있다."
+      },
+      {
+       "t_raw": "Inazuma City 페이지에서는 이 게시판을 Uyuu Restaurant Message Board 또는 Message Board라고 표기하고 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이나즈마성 페이지에서는 이 게시판을 오유정 게시판 또는 Message Board라고 표기하고 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Uyuu Restaurant",
+       "revision": 279629,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Uyuu Restaurant",
+       "revision": 279629,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Inazuma City",
+       "revision": 300616,
+       "section": "Other Interactable Objects",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Inazuma City",
+       "revision": 300616,
+       "section": "Other Interactable Objects",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Okazaki",
+      "Message Board"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The material says nothing about the restaurant caring about communication with regulars. It only says the board is next to the entrance and carries client messages, so this adds an unsupported motive and 'regulars'.",
+     "quote": "A bulletin board can be found next to its entrance with messages from its clients, including Gorou.",
+     "sentences": [
+      {
+       "t_raw": "Uyuu Restaurant 입구 옆에는 Gorou를 비롯한 손님들이 남긴 메시지가 적힌 게시판이 있어, 식당을 찾는 이들의 흔적을 엿볼 수 있는 공간으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "오유정 입구 옆에는 고로를 비롯한 손님들이 남긴 메시지가 적힌 게시판이 있어, 식당을 찾는 이들의 흔적을 엿볼 수 있는 공간으로 보인다."
+      },
+      {
+       "t_raw": "이 게시판에는 Gorou 등 여러 손님의 메시지가 담겨 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 게시판에는 고로 등 여러 손님의 메시지가 담겨 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Uyuu Restaurant",
+       "revision": 279629,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Uyuu Restaurant",
+       "revision": 279629,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Inazuma",
+     "status": "accepted",
+     "note": "Matches Matsumoto's line: he visited both restaurants and was underwhelmed.",
+     "quote": "Aha, you must have seen my commission. You know, I've been to both Uyuu Restaurant and Kiminami Restaurant, and I was underwhelmed.",
+     "sentences": [
+      {
+       "t_raw": "Matsumoto's Fried Egg Fracas에서 Matsumoto는 Uyuu Restaurant와 Kiminami Restaurant 모두에 가 봤지만 **기대에 못 미쳤다**고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마츠모토의 달걀 프라이 의뢰에서 마츠모토는 오유정과 키미나미 요정 모두에 가 봤지만 **기대에 못 미쳤다**고 말한다."
+      },
+      {
+       "t_raw": "그는 두 식당을 함께 언급하며 아쉬움을 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 두 식당을 함께 언급하며 아쉬움을 드러낸다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Matsumoto's Fried Egg Fracas",
+       "quest_ko": "마츠모토의 달걀 프라이 의뢰",
+       "version": "2.0",
+       "speaker": "Matsumoto"
+      }
+     ],
+     "heading": "작중 행적 — 이나즈마",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Inazuma",
+     "status": "accepted",
+     "note": "The facts match the Yan'er and Shun lines. The mixed-opinion reading is a reasonable interpretation.",
+     "quote": "Also, the Uyuu Restaurant seems like a fine place. I will go there for drinks when I am free.",
+     "sentences": [
+      {
+       "t_raw": "Hiromi's Watch에서 Yan'er는 Uyuu Restaurant이 **괜찮은 곳**인 것 같다고 말하고, 시간이 나면 술을 마시러 가겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "히로미의 수호에서 연아는 오유정이 **괜찮은 곳**인 것 같다고 말하고, 시간이 나면 술을 마시러 가겠다고 한다."
+      },
+      {
+       "t_raw": "Shun은 지난 편지에 Uyuu Restaurant 이야기를 썼는지 묻고, 자신도 그곳이 그립다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "순식은 지난 편지에 오유정 이야기를 썼는지 묻고, 자신도 그곳이 그립다고 말한다."
+      },
+      {
+       "t_raw": "Matsumoto가 아쉬움을 드러낸 것과 달리 Yan'er와 Shun은 반가운 언급을 남기니, Uyuu Restaurant에 대한 평가는 엇갈리는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "마츠모토가 아쉬움을 드러낸 것과 달리 연아와 순식은 반가운 언급을 남기니, 오유정에 대한 평가는 엇갈리는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Matsumoto's Fried Egg Fracas",
+       "quest_ko": "마츠모토의 달걀 프라이 의뢰",
+       "version": "2.0",
+       "speaker": "Matsumoto"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hiromi's Watch",
+       "quest_ko": "히로미의 수호",
+       "version": "2.0",
+       "speaker": "Yan'er"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hiromi's Watch",
+       "quest_ko": "히로미의 수호",
+       "version": "2.0",
+       "speaker": "Shun"
+      }
+     ],
+     "heading": "작중 행적 — 이나즈마",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The idea that the board is a point of contact between owner and customers that continues outside the restaurant is not in the material. It says nothing about the owner using or interacting with the board.",
+     "quote": "A bulletin board can be found next to its entrance with messages from its clients, including Gorou.",
+     "sentences": [
+      {
+       "t_raw": "식당의 주인은 **Okazaki**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "식당의 주인은 **Okazaki**다."
+      },
+      {
+       "t_raw": "입구 옆 게시판에는 **Gorou**를 비롯한 손님들의 메시지가 모여 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "입구 옆 게시판에는 **고로**를 비롯한 손님들의 메시지가 모여 있다."
+      },
+      {
+       "t_raw": "Okazaki가 주인인 식당의 입구 옆에 Gorou를 비롯한 손님 메시지가 모여 있어, 이곳이 손님들의 다양한 발자취를 담아낸 외부 공간으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "Okazaki가 주인인 식당의 입구 옆에 고로를 비롯한 손님 메시지가 모여 있어, 이곳이 손님들의 다양한 발자취를 담아낸 외부 공간으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Uyuu Restaurant",
+       "revision": 279629,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Uyuu Restaurant",
+       "revision": 279629,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Okazaki",
+      "Okazaki"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by Q1-Q3.",
+     "quote": "Bet you wrote about Uyuu Restaurant in your last letter, eh? Don't worry, I miss it too.",
+     "sentences": [
+      {
+       "t_raw": "Matsumoto는 Uyuu Restaurant와 Kiminami Restaurant 모두를 방문했지만 기대에 미치지 못했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마츠모토는 오유정과 키미나미 요정 모두를 방문했지만 기대에 미치지 못했다고 말한다."
+      },
+      {
+       "t_raw": "Yan'er는 Uyuu Restaurant이 괜찮은 곳 같다며 시간이 날 때 술을 마시러 가겠다고 하고, Shun은 지난 편지에 Uyuu Restaurant에 관해 썼으리라고 짐작하면서도 자기도 그곳이 그립다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "연아는 오유정이 괜찮은 곳 같다며 시간이 날 때 술을 마시러 가겠다고 하고, 순식은 지난 편지에 오유정에 관해 썼으리라고 짐작하면서도 자기도 그곳이 그립다고 말한다."
+      },
+      {
+       "t_raw": "같은 식당을 두고 실망과 호의, 그리움이 함께 남은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "같은 식당을 두고 실망과 호의, 그리움이 함께 남은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Matsumoto's Fried Egg Fracas",
+       "quest_ko": "마츠모토의 달걀 프라이 의뢰",
+       "version": "2.0",
+       "speaker": "Matsumoto"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hiromi's Watch",
+       "quest_ko": "히로미의 수호",
+       "version": "2.0",
+       "speaker": "Yan'er"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hiromi's Watch",
+       "quest_ko": "히로미의 수호",
+       "version": "2.0",
+       "speaker": "Shun"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by Q1.",
+     "quote": "You know, I've been to both Uyuu Restaurant and Kiminami Restaurant, and I was underwhelmed.",
+     "sentences": [
+      {
+       "t_raw": "Matsumoto는 상대가 자신의 의뢰를 보았다고 말하며, Uyuu Restaurant와 Kiminami Restaurant 모두에 가 보았고 두 곳 모두 **기대에 못 미쳤다**고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마츠모토는 상대가 자신의 의뢰를 보았다고 말하며, 오유정과 키미나미 요정 모두에 가 보았고 두 곳 모두 **기대에 못 미쳤다**고 한다."
+      },
+      {
+       "t_raw": "그는 두 식당을 함께 언급하며 실망감을 드러낸다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 두 식당을 함께 언급하며 실망감을 드러낸다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Matsumoto's Fried Egg Fracas",
+       "quest_ko": "마츠모토의 달걀 프라이 의뢰",
+       "version": "2.0",
+       "speaker": "Matsumoto"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Shun's guess is reported as a guess. The mixed-opinion reading is reasonable.",
+     "quote": "Also, the Uyuu Restaurant seems like a fine place. I will go there for drinks when I am free.",
+     "sentences": [
+      {
+       "t_raw": "Yan'er는 Uyuu Restaurant가 괜찮은 곳인 것 같다며, 시간이 나면 그곳에 술을 마시러 가겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "연아는 오유정이 괜찮은 곳인 것 같다며, 시간이 나면 그곳에 술을 마시러 가겠다고 한다."
+      },
+      {
+       "t_raw": "Shun은 상대가 지난 편지에 Uyuu Restaurant를 썼을 것이라고 짐작하고, 자신도 그곳이 그립다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "순식은 상대가 지난 편지에 오유정을 썼을 것이라고 짐작하고, 자신도 그곳이 그립다고 말한다."
+      },
+      {
+       "t_raw": "한 사람은 실망을 말하고 다른 사람들은 호감과 그리움을 보내는 셈이라, Uyuu Restaurant에 대한 **평가는 엇갈린다**고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 사람은 실망을 말하고 다른 사람들은 호감과 그리움을 보내는 셈이라, 오유정에 대한 **평가는 엇갈린다**고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Matsumoto's Fried Egg Fracas",
+       "quest_ko": "마츠모토의 달걀 프라이 의뢰",
+       "version": "2.0",
+       "speaker": "Matsumoto"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hiromi's Watch",
+       "quest_ko": "히로미의 수호",
+       "version": "2.0",
+       "speaker": "Yan'er"
+      },
+      {
+       "kind": "quest",
+       "quest": "Hiromi's Watch",
+       "quest_ko": "히로미의 수호",
+       "version": "2.0",
+       "speaker": "Shun"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "A3 has the 'resturant' typo and says the board is next to the restaurant.",
+     "quote": "The bulletin board can be found next to the resturant.",
+     "sentences": [
+      {
+       "t_raw": "게시판 설명 문구에는 **resturant**라는 철자 오류가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "게시판 설명 문구에는 **resturant**라는 철자 오류가 있다.",
+       "polish": {
+        "from": "게시판 설명 문구에는 **resturant**라는 철자 오류가 있다.",
+        "text": "게시판 설명 문구에는 **resturant**라는 철자 오류가 있다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "이 문구는 게시판이 식당 옆에서 발견된다고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 문구는 게시판이 식당 옆에서 발견된다고 설명한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Uyuu Restaurant",
+       "revision": 279629,
+       "section": "Bulletin Board",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "M1 and M2 support the naming variants. The interpretation is reasonable.",
+     "quote": "See Uyuu Restaurant Message Board",
+     "sentences": [
+      {
+       "t_raw": "Inazuma City 안내 페이지에서는 이 게시판을 **Uyuu Restaurant Message Board** 또는 **Message Board**로 표기한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이나즈마성 안내 페이지에서는 이 게시판을 **오유정 게시판** 또는 **Message Board**로 표기한다."
+      },
+      {
+       "t_raw": "한 항목은 Uyuu Restaurant Message Board를 보라고 안내하고, 다른 항목은 Uyuu Restaurant 앞의 Message Board라고 적는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 항목은 오유정 게시판을 보라고 안내하고, 다른 항목은 오유정 앞의 Message Board라고 적는다."
+      },
+      {
+       "t_raw": "게시판의 명칭이 한 가지 표기로 고정되어 있지 않은 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "게시판의 명칭이 한 가지 표기로 고정되어 있지 않은 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Inazuma City",
+       "revision": 300616,
+       "section": "Other Interactable Objects",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Inazuma City",
+       "revision": 300616,
+       "section": "Other Interactable Objects",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Message Board",
+      "Message Board"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Yan'er's line.",
+     "t_raw": "또한 Uyuu Restaurant는 괜찮은 곳으로 보이네. 시간이 날 때 거기 가서 술을 마시려고 해.",
+     "en": "Also, the Uyuu Restaurant seems like a fine place. I will go there for drinks when I am free.",
+     "speaker": "Yan'er",
+     "source": {
+      "kind": "quest",
+      "quest": "Hiromi's Watch",
+      "quest_ko": "히로미의 수호",
+      "version": "2.0",
+      "speaker": "Yan'er"
+     },
+     "t": "또한 오유정은 괜찮은 곳으로 보이네. 시간이 날 때 거기 가서 술을 마시려고 해.",
+     "speaker_ko": "연아"
+    },
+    {
+     "section": "작중 행적 — Inazuma",
+     "status": "accepted",
+     "note": "Faithful translation of the line. The casual 'ㅡ야' ending is a register choice, not a change in content.",
+     "t_raw": "또한, Uyuu Restaurant은 괜찮은 곳인 것 같아. 시간이 나면 거기에 술 마시러 갈 거야.",
+     "en": "Also, the Uyuu Restaurant seems like a fine place. I will go there for drinks when I am free.",
+     "speaker": "Yan'er",
+     "source": {
+      "kind": "quest",
+      "quest": "Hiromi's Watch",
+      "quest_ko": "히로미의 수호",
+      "version": "2.0",
+      "speaker": "Yan'er"
+     },
+     "t": "또한, 오유정은 괜찮은 곳인 것 같아. 시간이 나면 거기에 술 마시러 갈 거야.",
+     "speaker_ko": "연아"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation of the line, with the same meaning.",
+     "t_raw": "또한, Uyuu Restaurant은 괜찮은 곳인 것 같다. 시간이 나면 거기에 술을 마시러 가겠다.",
+     "en": "Also, the Uyuu Restaurant seems like a fine place. I will go there for drinks when I am free.",
+     "speaker": "Yan'er",
+     "source": {
+      "kind": "quest",
+      "quest": "Hiromi's Watch",
+      "quest_ko": "히로미의 수호",
+      "version": "2.0",
+      "speaker": "Yan'er"
+     },
+     "t": "또한, 오유정은 괜찮은 곳인 것 같다. 시간이 나면 거기에 술을 마시러 가겠다.",
+     "speaker_ko": "연아"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of the line, with the same meaning.",
+     "t_raw": "또한 Uyuu Restaurant는 괜찮은 곳인 것 같다. 시간이 나면 그곳에 술을 마시러 가겠다.",
+     "en": "Also, the Uyuu Restaurant seems like a fine place. I will go there for drinks when I am free.",
+     "speaker": "Yan'er",
+     "source": {
+      "kind": "quest",
+      "quest": "Hiromi's Watch",
+      "quest_ko": "히로미의 수호",
+      "version": "2.0",
+      "speaker": "Yan'er"
+     },
+     "t": "또한 오유정은 괜찮은 곳인 것 같다. 시간이 나면 그곳에 술을 마시러 가겠다.",
+     "speaker_ko": "연아"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,980 @@
+{
+ "node": "Golden House",
+ "articles": [
+  {
+   "node": "Golden House",
+   "from_version": "1.1",
+   "cutoff": "2020-12-22T00:00:00Z",
+   "input": [
+    {
+     "page": "Golden House",
+     "url": "https://genshin-impact.fandom.com/wiki/Golden_House",
+     "revision": 47247
+    }
+   ],
+   "input_counts": {
+    "mentions": 8,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 366,
+   "input_cut": false,
+   "input_hash": "fd3150dcc0b8",
+   "writer": "or-ds,ds,glm-flash",
+   "verifier": "grok,claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "A1, A2, M4, and M6 support the mint, the post-quest halt, the alleged killing and move, and Childe’s Delusion and Foul Legacy use. The overlap reading stays hedged.",
+     "quote": "his vessel — known as the Exuvia — was taken away to the Golden House by the Liyue Qixing.",
+     "sentences": [
+      {
+       "t_raw": "Golden House는 Teyvat 전역의 **Mora 주조**가 이루어지는 곳이자 Exuvia가 있는 장소다.",
+       "interp": false,
+       "dropped": false,
+       "t": "황금옥은 티바트 전역의 **모라 주조**가 이루어지는 곳이자 선조의 유해가 있는 장소다."
+      },
+      {
+       "t_raw": "A New Star Approaches의 사건 이후 Geo Archon이 Tsaritsa에게 Gnosis를 넘기자, Golden House는 새 Mora를 주조하지 않게 된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다가오는 객성의 사건 이후 바위의 신이 얼음의 여왕에게 신의 심장을 넘기자, 황금옥은 새 모라를 주조하지 않게 된다."
+      },
+      {
+       "t_raw": "Rex가 Rite of Descension에서 살해당한 것으로 알려진 가운데, Liyue Qixing은 그의 그릇인 Exuvia를 Golden House로 옮겼고, 그곳에서 Childe가 Delusion과 Foul Legacy Transformation을 사용하는 **Golden House 전투**가 벌어진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "Rex가 청신에서 살해당한 것으로 알려진 가운데, 리월 칠성은 그의 그릇인 선조의 유해를 황금옥으로 옮겼고, 그곳에서 귀공자가 사안과 마왕 무장을 사용하는 **황금옥 전투**가 벌어진다."
+      },
+      {
+       "t_raw": "이처럼 Golden House는 화폐 주조, Exuvia 보관, Childe와의 전투가 겹쳐 있는 장소로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 황금옥은 화폐 주조, 선조의 유해 보관, 귀공자와의 전투가 겹쳐 있는 장소로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Golden House",
+       "revision": 47247,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Golden House",
+       "revision": 47247,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Zhongli/Storyline",
+       "revision": 72320,
+       "section": "Story > Archon Quests",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Delusion",
+       "revision": 70385,
+       "section": "Story > In-Game",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Rex"
+     ]
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Only Huixin says this is “our biggest point of pride.” The line does not state that Liyue people as a whole rank it that way.",
+     "quote": "Our biggest point of pride is that Mora, the coins used as currency throughout Teyvat, are cast right here in Liyue at the Golden House.",
+     "sentences": [
+      {
+       "t_raw": "Golden House는 Teyvat 전역에서 통용되는 화폐 **Mora**를 주조하는 장소다.",
+       "interp": false,
+       "dropped": false,
+       "t": "황금옥은 티바트 전역에서 통용되는 화폐 **모라**를 주조하는 장소다."
+      },
+      {
+       "t_raw": "Mora라는 이름은 Rex Lapis의 본래 이름인 Morax에서 비롯되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "모라라는 이름은 암왕제군의 본래 이름인 모락스에서 비롯되었다."
+      },
+      {
+       "t_raw": "Huixin은 Mora가 Teyvat 전역에서 쓰이는 화폐이며 Liyue, 바로 Golden House에서 주조된다는 점을 가장 큰 자랑으로 꼽는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "혜심은 모라가 티바트 전역에서 쓰이는 화폐이며 리월, 바로 황금옥에서 주조된다는 점을 가장 큰 자랑으로 꼽는다."
+      },
+      {
+       "t_raw": "한 도시의 공방이 아니라 대륙 전체의 화폐가 이 건물 하나에서 만들어지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "한 도시의 공방이 아니라 대륙 전체의 화폐가 이 건물 하나에서 만들어지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Golden House",
+       "revision": 47247,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Zhongli/Storyline",
+       "revision": 72320,
+       "section": "Profile > Introduction",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Huixin",
+       "revision": 43779,
+       "section": "Dialogue > Daytime",
+       "paragraph": "M5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Q6 only says the Exuvia is kept temporarily “before the Rite.” It never names that rite Rite of Descension; M4 is a different moment, the removal after the purported assassination.",
+     "quote": "Before the Rite is conducted, the Exuvia will be kept temporarily in the Golden House.",
+     "sentences": [
+      {
+       "t_raw": "Golden House는 **Exuvia**가 머무는 장소이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "황금옥은 **선조의 유해**가 머무는 장소이기도 하다."
+      },
+      {
+       "t_raw": "Rite가 거행되기 전, Exuvia는 Golden House에 임시로 보관된다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "Rite가 거행되기 전, 선조의 유해는 황금옥에 임시로 보관된다."
+      },
+      {
+       "t_raw": "화폐를 주조하는 곳과 의식의 성물이 보관되는 곳이 같은 건물이라는 점에서, 이곳은 Liyue의 경제와 의식이 한 지붕 아래 겹쳐 있는 장소로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "화폐를 주조하는 곳과 의식의 성물이 보관되는 곳이 같은 건물이라는 점에서, 이곳은 리월의 경제와 의식이 한 지붕 아래 겹쳐 있는 장소로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Golden House",
+       "revision": 47247,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Moonfinger",
+       "quest_ko": "달 가리키기",
+       "version": "1.0",
+       "speaker": "Zhongli"
+      }
+     ],
+     "heading": "개요",
+     "latin_left": [
+      "Rite"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "A2 and M7 state the Geo Archon power requirement, Zhongli’s closure remark, the limited power after the Gnosis handover, and the end of new minting. The power-gap reading follows and is hedged.",
+     "quote": "Zhongli states that the \"power of the Geo Archon\" is required to create Mora, and indicates that the Golden House will have to temporarily close since he can no longer do this.",
+     "sentences": [
+      {
+       "t_raw": "Golden House의 Mora 주조는 Geo Archon의 힘과 연결되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "황금옥의 모라 주조는 바위의 신의 힘과 연결되어 있다."
+      },
+      {
+       "t_raw": "Zhongli는 Mora를 만들려면 **power of the Geo Archon**이 필요하다고 말하며, 그 힘을 더는 쓸 수 없게 되자 Golden House가 임시로 문을 닫아야 한다고 밝힌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "종려는 모라를 만들려면 **power of the 바위의 신**이 필요하다고 말하며, 그 힘을 더는 쓸 수 없게 되자 황금옥이 임시로 문을 닫아야 한다고 밝힌다."
+      },
+      {
+       "t_raw": "마신은 Gnosis가 없어도 원소력을 쓸 수 있는 듯하지만 그 힘은 제한되며, Zhongli 역시 Gnosis를 넘긴 뒤 상당한 힘을 잃었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마신은 신의 심장이 없어도 원소력을 쓸 수 있는 듯하지만 그 힘은 제한되며, 종려 역시 신의 심장을 넘긴 뒤 상당한 힘을 잃었다고 말한다."
+      },
+      {
+       "t_raw": "A New Star Approaches 뒤 Geo Archon이 Tsaritsa에게 Gnosis를 넘기자 Golden House는 새 Mora를 더 주조하지 않게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다가오는 객성 뒤 바위의 신이 얼음의 여왕에게 신의 심장을 넘기자 황금옥은 새 모라를 더 주조하지 않게 되었다."
+      },
+      {
+       "t_raw": "이 두 사실을 겹쳐 보면, 주조 중단과 임시 폐쇄는 시설 문제가 아니라 **Mora를 만들 힘의 공백**에서 비롯된 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 두 사실을 겹쳐 보면, 주조 중단과 임시 폐쇄는 시설 문제가 아니라 **모라를 만들 힘의 공백**에서 비롯된 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Golden House",
+       "revision": 47247,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Gnosis",
+       "revision": 70380,
+       "section": "Abilities",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Q7 is Paimon’s pair of questions about the only mint and whether it will keep working. Linking that to minting after the loss of Geo Archon power is a fair reading of Q7 with A2 and M7.",
+     "quote": "Also, isn't the Golden House the only mint in the entire continent? Will it even continue to work?",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Golden House가 대륙 전체에서 유일한 주조소라면 앞으로도 운영될 수 있을지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 황금옥이 대륙 전체에서 유일한 주조소라면 앞으로도 운영될 수 있을지 묻는다."
+      },
+      {
+       "t_raw": "이 물음은 주조 중단이 한 시설의 휴업에 그치지 않고, Geo Archon의 힘을 잃은 뒤 Mora 주조가 계속될 수 있는지라는 문제로 이어진다는 점을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이 물음은 주조 중단이 한 시설의 휴업에 그치지 않고, 바위의 신의 힘을 잃은 뒤 모라 주조가 계속될 수 있는지라는 문제로 이어진다는 점을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Golden House",
+       "revision": 47247,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Gnosis",
+       "revision": 70380,
+       "section": "Abilities",
+       "paragraph": "M7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Fond Farewell",
+       "quest_ko": "송신",
+       "version": "1.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "M4 and Q8 support the alleged assassination, the move by the Liyue Qixing, and Childe’s hiding line. Treating the Golden House as newly under suspicion is hedged and follows from those lines plus tighter security in Q4.",
+     "quote": "Well, well, well. Ningguang and her Qixing cronies. What else would they be hiding in the Golden House... if not the Exuvia?",
+     "sentences": [
+      {
+       "t_raw": "Rite of Descension에서 Rex가 암살되었다고 주장되었고, 그의 그릇인 **Exuvia**는 Liyue Qixing에 의해 Golden House로 옮겨졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "청신에서 Rex가 암살되었다고 주장되었고, 그의 그릇인 **선조의 유해**는 리월 칠성에 의해 황금옥으로 옮겨졌다."
+      },
+      {
+       "t_raw": "Childe는 Ningguang과 Qixing이 Golden House에 Exuvia가 아니라면 무엇을 숨기고 있겠느냐고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀공자는 응광과 칠성이 황금옥에 선조의 유해가 아니라면 무엇을 숨기고 있겠느냐고 말한다."
+      },
+      {
+       "t_raw": "Exuvia 이동과 Qixing에 대한 의심이 겹쳐, Golden House는 Rite 이후 경계의 대상이 된 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "선조의 유해 이동과 칠성에 대한 의심이 겹쳐, 황금옥은 Rite 이후 경계의 대상이 된 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zhongli/Storyline",
+       "revision": 72320,
+       "section": "Story > Archon Quests",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Childe"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": [
+      "Rex",
+      "Rite"
+     ]
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Q2 has Childe ask if the Traveler leaked Golden House information to him; the narrator’s “나에게” makes the recipient the speaker, not Childe.",
+     "quote": "During the Golden House battle, Childe uses his Delusion. His Delusion's element is Electro, indicating that Delusions are not bound to its user's Vision element, if they have one.",
+     "sentences": [
+      {
+       "t_raw": "Golden House 전투에서 Childe는 Delusion을 사용했고, 그 Delusion의 원소는 Electro였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "황금옥 전투에서 귀공자는 사안을 사용했고, 그 사안의 원소는 번개였다."
+      },
+      {
+       "t_raw": "그는 Delusion의 힘을 **Foul Legacy Transformation**으로 완전히 발현해 모습이 크게 변했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그는 사안의 힘을 **마왕 무장**으로 완전히 발현해 모습이 크게 변했다."
+      },
+      {
+       "t_raw": "Paimon은 Golden House에서의 마지막 전투가 Traveler가 감당하기 거의 벅찰 정도였다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 황금옥에서의 마지막 전투가 여행자가 감당하기 거의 벅찰 정도였다고 말한다."
+      },
+      {
+       "t_raw": "Childe는 Traveler에게 Golden House에 관한 정보를 자신에게 일부러 흘린 것인지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "귀공자는 여행자에게 황금옥에 관한 정보를 자신에게 일부러 흘린 것인지 묻는다."
+      },
+      {
+       "t_raw": "전투의 강도와 정보 유출 의심이 겹쳐, Golden House 전투는 전투 자체 외의 문제까지 남긴 사건으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "전투의 강도와 정보 유출 의심이 겹쳐, 황금옥 전투는 전투 자체 외의 문제까지 남긴 사건으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Delusion",
+       "revision": 70385,
+       "section": "Story > In-Game",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Fond Farewell",
+       "quest_ko": "송신",
+       "version": "1.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Heart of Glaze",
+       "quest_ko": "대립",
+       "version": "1.1",
+       "speaker": "Childe"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "The lingering injury is Tartaglia’s when he is met later, not a condition that remains at the Golden House, and the text does not join it with the Qixing takeover as one state of the place.",
+     "quote": "You might as well just rob the Golden House! Oh, but the Qixing have taken it over for now... Security will be tighter than usual.",
+     "sentences": [
+      {
+       "t_raw": "Golden House에서 Foul Legacy Transformation을 사용한 뒤 Tartaglia는 한동안 부상에서 회복하지 못했고, 그 능력을 자주 쓸 수 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "황금옥에서 마왕 무장을 사용한 뒤 타르탈리아는 한동안 부상에서 회복하지 못했고, 그 능력을 자주 쓸 수 없다고 말한다."
+      },
+      {
+       "t_raw": "Childe는 Golden House에서 사용한 그것의 부상에서 아직 완전히 회복하지 못했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀공자는 황금옥에서 사용한 그것의 부상에서 아직 완전히 회복하지 못했다고 말한다."
+      },
+      {
+       "t_raw": "Paimon은 Qixing이 Golden House를 당분간 인수해 보안이 더 엄격할 것이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 칠성이 황금옥을 당분간 인수해 보안이 더 엄격할 것이라고 말한다."
+      },
+      {
+       "t_raw": "Qixing의 인수와 경계 강화가 겹치면서 Golden House는 사건 이후 통제가 강화된 장소가 된 셈으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "칠성의 인수와 경계 강화가 겹치면서 황금옥은 사건 이후 통제가 강화된 장소가 된 셈으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Delusion",
+       "revision": 70385,
+       "section": "About Delusions",
+       "paragraph": "M8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Teucer's Terrific Tour",
+       "quest_ko": "테우세르의 리월 견문록",
+       "version": "1.1",
+       "speaker": "Childe"
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences pass.",
+     "quote": "Morax is also the source of Teyvat's currency, the Mora — which derives its name from his. Mora is minted at the Golden House.",
+     "sentences": [
+      {
+       "t_raw": "Golden House에서 주조되는 Mora의 이름은 Morax에서 나왔고, Morax는 Teyvat 통화의 근원으로 서술된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "황금옥에서 주조되는 모라의 이름은 모락스에서 나왔고, 모락스는 티바트 통화의 근원으로 서술된다."
+      },
+      {
+       "t_raw": "A New Star Approaches 이후 Geo Archon이 Tsaritsa에게 Gnosis를 넘기자 Golden House는 새 Mora 주조를 멈추었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "다가오는 객성 이후 바위의 신이 얼음의 여왕에게 신의 심장을 넘기자 황금옥은 새 모라 주조를 멈추었다."
+      },
+      {
+       "t_raw": "Paimon은 Golden House로 가기 전 Zhongli를 마지막으로 보았다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 황금옥으로 가기 전 종려를 마지막으로 보았다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zhongli/Storyline",
+       "revision": 72320,
+       "section": "Profile > Introduction",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Golden House",
+       "revision": 47247,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "The Fond Farewell",
+       "quest_ko": "송신",
+       "version": "1.1",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences pass.",
+     "quote": "Well, well, well. Ningguang and her Qixing cronies. What else would they be hiding in the Golden House... if not the Exuvia?",
+     "sentences": [
+      {
+       "t_raw": "Rite of Descension에서 Rex가 암살되었다고 전해진 뒤, 그의 그릇인 Exuvia는 Liyue Qixing에 의해 Golden House로 옮겨졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "청신에서 Rex가 암살되었다고 전해진 뒤, 그의 그릇인 선조의 유해는 리월 칠성에 의해 황금옥으로 옮겨졌다."
+      },
+      {
+       "t_raw": "Paimon은 Qixing이 Golden House를 인수했고 경비가 평소보다 엄격해질 것이라고 말하며, Childe는 Golden House에 Exuvia를 숨기고 있는 것이 아니냐고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 칠성이 황금옥을 인수했고 경비가 평소보다 엄격해질 것이라고 말하며, 귀공자는 황금옥에 선조의 유해를 숨기고 있는 것이 아니냐고 말한다."
+      },
+      {
+       "t_raw": "Exuvia를 둘러싼 Qixing의 통제와 Childe의 말은 Golden House가 양측의 신경을 곤두세우는 장소가 되었음을 보여 주는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "선조의 유해를 둘러싼 칠성의 통제와 귀공자의 말은 황금옥이 양측의 신경을 곤두세우는 장소가 되었음을 보여 주는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Zhongli/Storyline",
+       "revision": 72320,
+       "section": "Story > Archon Quests",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Childe"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Rex"
+     ]
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "M6 calls the manifested power his Delusion’s and leaves unknown whether the drastic appearance change is the Delusion’s ability or from the Abyss; the sentence assigns that uncertainty to the source of the power.",
+     "quote": "Did you simply move faster? Or... did you leak the information regarding the Golden House to me on purpose?",
+     "sentences": [
+      {
+       "t_raw": "Golden House 전투에서 Childe는 Electro 원소의 Delusion을 사용했고, Foul Legacy Transformation으로 그 힘을 완전히 발현하면 외형이 크게 변하지만 그 변화가 Delusion의 능력인지는 알려지지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "황금옥 전투에서 귀공자는 번개 원소의 사안을 사용했고, 마왕 무장으로 그 힘을 완전히 발현하면 외형이 크게 변하지만 그 변화가 사안의 능력인지는 알려지지 않았다."
+      },
+      {
+       "t_raw": "Foul Legacy Transformation을 사용한 뒤 Tartaglia는 한동안 부상이 남아 있었고, Traveler에게 그 능력을 자주 쓸 수 없다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마왕 무장을 사용한 뒤 타르탈리아는 한동안 부상이 남아 있었고, 여행자에게 그 능력을 자주 쓸 수 없다고 말한다."
+      },
+      {
+       "t_raw": "Childe는 Traveler에게 Golden House 정보를 일부러 흘렸는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀공자는 여행자에게 황금옥 정보를 일부러 흘렸는지 묻는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Delusion",
+       "revision": 70385,
+       "section": "Story > In-Game",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Delusion",
+       "revision": 70385,
+       "section": "About Delusions",
+       "paragraph": "M8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "quest",
+       "quest": "Heart of Glaze",
+       "quest_ko": "대립",
+       "version": "1.1",
+       "speaker": "Childe"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All sentences pass.",
+     "quote": "Also, isn't the Golden House the only mint in the entire continent? Will it even continue to work?",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 Golden House가 대륙 유일의 주조소인지 되묻고, 그곳이 계속 가동될 수 있을지 의문을 제기한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 황금옥이 대륙 유일의 주조소인지 되묻고, 그곳이 계속 가동될 수 있을지 의문을 제기한다."
+      },
+      {
+       "t_raw": "Golden House는 Teyvat 전역의 Mora가 주조되는 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "황금옥은 티바트 전역의 모라가 주조되는 곳이다."
+      },
+      {
+       "t_raw": "대륙 전역의 Mora가 이곳에서 주조된다는 사실과 맞물려, **주조 지속 여부**는 한 시설의 문제로 그치지 않는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "대륙 전역의 모라가 이곳에서 주조된다는 사실과 맞물려, **주조 지속 여부**는 한 시설의 문제로 그치지 않는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "The Fond Farewell",
+       "quest_ko": "송신",
+       "version": "1.1",
+       "speaker": "Paimon"
+      },
+      {
+       "kind": "wiki",
+       "page": "Golden House",
+       "revision": 47247,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "All three match Q2 and Q8; the leak and the hidden object are both in Childe's lines.",
+     "quote": "Did you simply move faster? Or... did you leak the information regarding the Golden House to me on purpose?",
+     "sentences": [
+      {
+       "t_raw": "Childe는 상대가 더 빨리 움직였는지, 아니면 Golden House에 관한 정보를 자신에게 일부러 흘렸는지 묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀공자는 상대가 더 빨리 움직였는지, 아니면 황금옥에 관한 정보를 자신에게 일부러 흘렸는지 묻는다."
+      },
+      {
+       "t_raw": "Childe는 Ningguang과 Qixing이 Golden House에 Exuvia가 아니라면 무엇을 숨기고 있을지 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀공자는 응광과 칠성이 황금옥에 선조의 유해가 아니라면 무엇을 숨기고 있을지 되묻는다."
+      },
+      {
+       "t_raw": "Golden House를 둘러싼 Childe의 말에는 **정보 유출**의 경로와 Qixing이 감춘 대상이 함께 걸려 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "황금옥을 둘러싼 귀공자의 말에는 **정보 유출**의 경로와 칠성이 감춘 대상이 함께 걸려 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Heart of Glaze",
+       "quest_ko": "대립",
+       "version": "1.1",
+       "speaker": "Childe"
+      },
+      {
+       "kind": "quest",
+       "quest": "Guizhong (Quest)",
+       "quest_ko": "귀종",
+       "version": "1.0",
+       "speaker": "Childe"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "M6 leaves unknown whether the drastic appearance change is the Delusion's ability or from the Abyss, not the origin of Foul Legacy Transformation itself.",
+     "quote": "However, it is unknown whether this is the Delusion's ability or originates from his time in the Abyss.",
+     "sentences": [
+      {
+       "t_raw": "Golden House 전투에서 Childe는 Delusion을 사용한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "황금옥 전투에서 귀공자는 사안을 사용한다."
+      },
+      {
+       "t_raw": "Delusion의 원소는 Electro로, 사용자에게 Vision이 있다 해도 Delusion은 그 Vision 원소에 묶이지 않음을 보여 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사안의 원소는 번개로, 사용자에게 신의 눈이 있다 해도 사안은 그 신의 눈 원소에 묶이지 않음을 보여 준다."
+      },
+      {
+       "t_raw": "Delusion의 힘을 Foul Legacy Transformation으로 완전히 발현할 때 Childe의 모습은 크게 변한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "사안의 힘을 마왕 무장으로 완전히 발현할 때 귀공자의 모습은 크게 변한다."
+      },
+      {
+       "t_raw": "Foul Legacy Transformation으로 나타나는 외형의 급격한 변화가 Delusion의 능력인지, Abyss에서 보낸 시간에서 비롯된 것인지는 알 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "마왕 무장으로 나타나는 외형의 급격한 변화가 사안의 능력인지, 심연에서 보낸 시간에서 비롯된 것인지는 알 수 없다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Delusion",
+       "revision": 70385,
+       "section": "Story > In-Game",
+       "paragraph": "M6",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "M1 and M3 name Enter the Golden House as the weekly-boss domain and as a place the transformation is used.",
+     "quote": "For the Domain where you can fight Childe as a weekly boss, see Enter The Golden House.",
+     "sentences": [
+      {
+       "t_raw": "Childe를 주간 보스로 상대하는 Domain으로는 **Enter The Golden House**가 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "귀공자를 주간 보스로 상대하는 비경으로는 **Enter The Golden House**가 언급된다."
+      },
+      {
+       "t_raw": "이 Domain에서 Childe가 Foul Legacy Transformation을 사용하는 장면도 확인된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 비경에서 귀공자가 마왕 무장을 사용하는 장면도 확인된다."
+      },
+      {
+       "t_raw": "주간 보스전과 Foul Legacy Transformation 사용처가 같은 Domain 이름으로 묶여 소개되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "주간 보스전과 마왕 무장 사용처가 같은 비경 이름으로 묶여 소개되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Tartaglia",
+       "revision": 72350,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Foul Legacy Transformation",
+       "revision": 72336,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Enter The Golden House"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Q5 and M1 both contain the Golden House wording; Zhongli does ask for one of each name.",
+     "quote": "Golden House Maiden, Valley Weaver, and Fate's Yearning. One of each to start with, if you don't mind.",
+     "sentences": [
+      {
+       "t_raw": "또한 **Golden House Maiden**, Valley Weaver, Fate's Yearning 같은 이름들이 등장한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "또한 **「금옥장교」**, 「산음금족」, 운명의 동경 같은 이름들이 등장한다."
+      },
+      {
+       "t_raw": "Zhongli는 이 이름들을 하나씩 달라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "종려는 이 이름들을 하나씩 달라고 말한다."
+      },
+      {
+       "t_raw": "전투 Domain의 이름과 Golden House Maiden에 Golden House가 함께 들어간다는 점이 눈에 띄는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "전투 비경의 이름과 「금옥장교」에 황금옥이 함께 들어간다는 점이 눈에 띄는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Three Poignant Perfumes",
+       "quest_ko": "퍼지는 향기",
+       "version": "1.0",
+       "speaker": "Zhongli"
+      },
+      {
+       "kind": "wiki",
+       "page": "Tartaglia",
+       "revision": 72350,
+       "section": null,
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful rendering of Zhongli's line about temporary keeping before the Rite.",
+     "t_raw": "의식이 거행되기 전, Exuvia는 Golden House에 임시로 보관됩니다.",
+     "en": "Before the Rite is conducted, the Exuvia will be kept temporarily in the Golden House.",
+     "speaker": "Zhongli",
+     "source": {
+      "kind": "quest",
+      "quest": "Moonfinger",
+      "quest_ko": "달 가리키기",
+      "version": "1.0",
+      "speaker": "Zhongli"
+     },
+     "t": "의식이 거행되기 전, 선조의 유해는 황금옥에 임시로 보관됩니다.",
+     "speaker_ko": "종려"
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Faithful rendering of Paimon's mint question and whether it will keep working.",
+     "t_raw": "또한, Golden House는 대륙 전체에서 유일한 주조소 아니야? 계속 운영될 수 있을까?",
+     "en": "Also, isn't the Golden House the only mint in the entire continent? Will it even continue to work?",
+     "speaker": "Paimon",
+     "source": {
+      "kind": "quest",
+      "quest": "The Fond Farewell",
+      "quest_ko": "송신",
+      "version": "1.1",
+      "speaker": "Paimon"
+     },
+     "t": "또한, 황금옥은 대륙 전체에서 유일한 주조소 아니야? 계속 운영될 수 있을까?",
+     "speaker_ko": "페이몬"
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Drops the verb 'move': '더 빨랐던' is only 'were faster,' not 'move faster.'",
+     "t_raw": "[번역] 그저 더 빨리 움직였던 건가? 아니면... 나에게 Golden House에 관한 정보를 일부러 흘린 건가?",
+     "en": "Did you simply move faster? Or... did you leak the information regarding the Golden House to me on purpose?",
+     "speaker": "Childe",
+     "source": {
+      "kind": "quest",
+      "quest": "Heart of Glaze",
+      "quest_ko": "대립",
+      "version": "1.1",
+      "speaker": "Childe"
+     },
+     "t": "[번역] 그저 더 빨리 움직였던 건가? 아니면... 나에게 황금옥에 관한 정보를 일부러 흘린 건가?",
+     "speaker_ko": "귀공자"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "",
+     "t_raw": "그저 더 빨리 움직인 건가? 아니면... 일부러 Golden House에 관한 정보를 내게 흘린 건가?",
+     "en": "Did you simply move faster? Or... did you leak the information regarding the Golden House to me on purpose?",
+     "speaker": "Childe",
+     "source": {
+      "kind": "quest",
+      "quest": "Heart of Glaze",
+      "quest_ko": "대립",
+      "version": "1.1",
+      "speaker": "Childe"
+     },
+     "t": "그저 더 빨리 움직인 건가? 아니면... 일부러 황금옥에 관한 정보를 내게 흘린 건가?",
+     "speaker_ko": "귀공자"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "",
+     "t_raw": "그저 더 빨리 움직였던 것인가? 아니면... 나에게 Golden House에 관한 정보를 일부러 흘린 건가?",
+     "en": "Did you simply move faster? Or... did you leak the information regarding the Golden House to me on purpose?",
+     "speaker": "Childe",
+     "source": {
+      "kind": "quest",
+      "quest": "Heart of Glaze",
+      "quest_ko": "대립",
+      "version": "1.1",
+      "speaker": "Childe"
+     },
+     "t": "그저 더 빨리 움직였던 것인가? 아니면... 나에게 황금옥에 관한 정보를 일부러 흘린 건가?",
+     "speaker_ko": "귀공자"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "",
+     "t_raw": "Golden House Maiden, Valley Weaver, and Fate's Yearning. 괜찮다면 우선 각각 하나씩.",
+     "en": "Golden House Maiden, Valley Weaver, and Fate's Yearning. One of each to start with, if you don't mind.",
+     "speaker": "Zhongli",
+     "source": {
+      "kind": "quest",
+      "quest": "Three Poignant Perfumes",
+      "quest_ko": "퍼지는 향기",
+      "version": "1.0",
+      "speaker": "Zhongli"
+     },
+     "t": "「금옥장교」, 「산음금족」, and 운명의 동경. 괜찮다면 우선 각각 하나씩.",
+     "speaker_ko": "종려"
+    }
+   ]
+  }
+ ]
+}

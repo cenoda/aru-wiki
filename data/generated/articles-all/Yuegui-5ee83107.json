@@ -1,0 +1,848 @@
+{
+ "node": "Yuegui",
+ "articles": [
+  {
+   "node": "Yuegui",
+   "from_version": "4.8",
+   "cutoff": "2024-08-27T00:00:00Z",
+   "input": [
+    {
+     "page": "Yuegui",
+     "url": "https://genshin-impact.fandom.com/wiki/Yuegui",
+     "revision": 1589366
+    }
+   ],
+   "input_counts": {
+    "mentions": 2,
+    "lines": 6,
+    "web": 0
+   },
+   "input_chars": 639,
+   "input_cut": false,
+   "input_hash": "ff90d3275054",
+   "writer": "or-ds",
+   "verifier": "codex-medium,claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All supported. Sentence 2 is a loose but hedged inference from M1 and M2.",
+     "quote": "Yuegui is a machine rabbit that Cloud Retainer created to assist Yaoyao in her training.",
+     "sentences": [
+      {
+       "t_raw": "Yuegui는 Cloud Retainer가 Yaoyao를 돕기 위해 만든 기계 토끼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "월계는 류운차풍진군이 요요를 돕기 위해 만든 기계 토끼다."
+      },
+      {
+       "t_raw": "Yaoyao는 Yuegui를 친구로 여기고 함께 놀며, 위험할 때 Yuegui가 Yaoyao를 지킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요는 월계를 친구로 여기고 함께 놀며, 위험할 때 월계가 요요를 지킨다."
+      },
+      {
+       "t_raw": "Yaoyao가 보인 Dendro 능력이 외부 장치 Yuegui를 통해 발휘된 사례는 Yuegui가 수행과 전투를 돕는 adepti의 애정이 드러난 장치임을 보여 주는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "요요가 보인 풀 능력이 외부 장치 월계를 통해 발휘된 사례는 월계가 수행과 전투를 돕는 선인의 애정이 드러난 장치임을 보여 주는 것으로 보인다.",
+       "polish": {
+        "from": "요요가 보인 풀 능력이 외부 장치 월계를 통해 발휘된 사례는 월계가 수행과 전투를 돕는 adepti의 애정이 드러난 장치임을 보여 주는 것으로 보인다.",
+        "text": "요요가 보인 풀 능력이 외부 장치 월계를 통해 발휘된 사례는 월계가 수행과 전투를 돕는 선인의 애정이 드러난 장치임을 보여 주는 것으로 보인다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yaoyao"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yaoyao"
+        },
+        {
+         "type": "vo",
+         "name": "Yaoyao"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yaoyao/Profile",
+       "revision": 1025947,
+       "section": "Official Introduction",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 1439352,
+       "section": "Uses",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Razor"
+        },
+        {
+         "type": "quest",
+         "name": "Further Investigation"
+        },
+        {
+         "type": "quest",
+         "name": "Where the Heart Finds Rest"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All match A1 and A2.",
+     "quote": "Yuegui is a mechanical device created by Cloud Retainer for Yaoyao.",
+     "sentences": [
+      {
+       "t_raw": "Yuegui는 Cloud Retainer가 Yaoyao를 위해 만든 **기계 장치**이자 기계 토끼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "월계는 류운차풍진군이 요요를 위해 만든 **기계 장치**이자 기계 토끼다."
+      },
+      {
+       "t_raw": "Yaoyao의 훈련을 돕기 위해 만들어졌고, Yaoyao와 함께 싸우며 이름을 부르면 Madame Ping에게 Yaoyao의 위치를 알린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요의 훈련을 돕기 위해 만들어졌고, 요요와 함께 싸우며 이름을 부르면 평 할머니에게 요요의 위치를 알린다."
+      },
+      {
+       "t_raw": "Yaoyao는 Yuegui를 친구로 여기고 때때로 함께 논다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요는 월계를 친구로 여기고 때때로 함께 논다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yaoyao"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yaoyao"
+        },
+        {
+         "type": "vo",
+         "name": "Yaoyao"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Matches M1. The interpretation follows from M2 and is hedged.",
+     "quote": "Yuegui, who never leaves her side, is an adepti treasure, crafted by Cloud Retainer herself.",
+     "sentences": [
+      {
+       "t_raw": "Yuegui는 Yaoyao 곁을 떠나지 않는 **adepti의 보물**로, Cloud Retainer가 직접 만들었으며 위험에 처하면 Yaoyao를 지켜 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "월계는 요요 곁을 떠나지 않는 **선인의 보물**로, 류운차풍진군이 직접 만들었으며 위험에 처하면 요요를 지켜 준다.",
+       "polish": {
+        "from": "월계는 요요 곁을 떠나지 않는 **adepti의 보물**로, 류운차풍진군이 직접 만들었으며 위험에 처하면 요요를 지켜 준다.",
+        "text": "월계는 요요 곁을 떠나지 않는 **선인의 보물**로, 류운차풍진군이 직접 만들었으며 위험에 처하면 요요를 지켜 준다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "이는 adepti가 Yaoyao에게 쏟는 애정의 또 하나의 증거다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이는 선인이 요요에게 쏟는 애정의 또 하나의 증거다.",
+       "polish": {
+        "from": "이는 adepti가 요요에게 쏟는 애정의 또 하나의 증거다.",
+        "text": "이는 선인이 요요에게 쏟는 애정의 또 하나의 증거다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Yaoyao가 Dendro 힘을 외부 장치인 Yuegui를 통해 발휘하는 모습은 Yuegui가 훈련 보조를 넘어 힘을 내는 통로로도 쓰임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "요요가 풀 힘을 외부 장치인 월계를 통해 발휘하는 모습은 월계가 훈련 보조를 넘어 힘을 내는 통로로도 쓰임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yaoyao"
+        },
+        {
+         "type": "vo",
+         "name": "Yaoyao"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yaoyao/Profile",
+       "revision": 1025947,
+       "section": "Official Introduction",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 1439352,
+       "section": "Uses",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Razor"
+        },
+        {
+         "type": "quest",
+         "name": "Further Investigation"
+        },
+        {
+         "type": "quest",
+         "name": "Where the Heart Finds Rest"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "Facts match A2. The interpretation is reasonable.",
+     "quote": "Yuegui is a machine rabbit that Cloud Retainer created to assist Yaoyao in her training.",
+     "sentences": [
+      {
+       "t_raw": "Yuegui는 Cloud Retainer가 Yaoyao의 수련을 돕도록 만든 **기계 토끼**다.",
+       "interp": false,
+       "dropped": false,
+       "t": "월계는 류운차풍진군이 요요의 수련을 돕도록 만든 **기계 토끼**다."
+      },
+      {
+       "t_raw": "Yaoyao와 함께 싸우며, 이름을 불면 Madame Ping에게 Yaoyao의 위치를 알린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요와 함께 싸우며, 이름을 불면 평 할머니에게 요요의 위치를 알린다."
+      },
+      {
+       "t_raw": "Yaoyao는 Yuegui를 친구로 여기고 때때로 함께 논다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요는 월계를 친구로 여기고 때때로 함께 논다."
+      },
+      {
+       "t_raw": "이처럼 수련 지원, 전투, 위치 알림이 모두 Yaoyao와 얽혀 있다는 점에서 Yuegui는 Yaoyao 곁의 동반자로 기능한다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 수련 지원, 전투, 위치 알림이 모두 요요와 얽혀 있다는 점에서 월계는 요요 곁의 동반자로 기능한다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yaoyao"
+        },
+        {
+         "type": "vo",
+         "name": "Yaoyao"
+        }
+       ]
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The appearance matches A3 and the external device matches M2. The interpretation is hedged.",
+     "quote": "Yuegui appears as a yellow rabbit with white-tipped ears, solid brown eyes, a white underbelly, and fluffy white tail.",
+     "sentences": [
+      {
+       "t_raw": "겉모습은 노란 토끼로, 귀 끝과 배, 복슬복슬한 꼬리는 희고 눈은 갈색이며 이마 한가운데에는 세로로 놓인 주황색 표식, 양옆구리에는 붉은빛이 도는 주황색 꽃이 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "겉모습은 노란 토끼로, 귀 끝과 배, 복슬복슬한 꼬리는 희고 눈은 갈색이며 이마 한가운데에는 세로로 놓인 주황색 표식, 양옆구리에는 붉은빛이 도는 주황색 꽃이 있다."
+      },
+      {
+       "t_raw": "Yaoyao는 Dendro의 힘을 Yuegui라는 **외부 장치**를 통해 발휘하는 모습이 제시되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요는 풀의 힘을 월계라는 **외부 장치**를 통해 발휘하는 모습이 제시되어 있다."
+      },
+      {
+       "t_raw": "Dendro의 힘을 쓰는 외부 장치이면서 꽃 장식을 갖춘 점은 Yuegui가 실용적 기능과 장식적 요소를 함께 지닌 기계임을 보여 준다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "풀의 힘을 쓰는 외부 장치이면서 꽃 장식을 갖춘 점은 월계가 실용적 기능과 장식적 요소를 함께 지닌 기계임을 보여 준다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": "Profile > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Vision",
+       "revision": 1439352,
+       "section": "Uses",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Razor"
+        },
+        {
+         "type": "quest",
+         "name": "Further Investigation"
+        },
+        {
+         "type": "quest",
+         "name": "Where the Heart Finds Rest"
+        }
+       ]
+      }
+     ],
+     "heading": "정체",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 4.4",
+     "status": "accepted",
+     "note": "Matches Q1, Q4 and Q6. The interpretation is reasonable.",
+     "quote": "When Yaoyao brings Yuegui along to see Xiangling, Guoba and Yuegui end up playing together.",
+     "sentences": [
+      {
+       "t_raw": "Paimon은 **Guoba와 Yuegui**가 자신들이 아는 이름이라며, 상대도 두 이름을 아는지 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 **누룽지와 월계**가 자신들이 아는 이름이라며, 상대도 두 이름을 아는지 되묻는다."
+      },
+      {
+       "t_raw": "Wenxun은 Yaoyao가 Yuegui를 데리고 Xiangling을 만나러 가면 Guoba와 Yuegui가 함께 놀게 된다고 말하고, 자신만 Guoba와 Yuegui 덕에 낫는 데 그칠 수 없다며 모두가 둘의 귀여움을 직접 목격하길 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문심은 요요가 월계를 데리고 향릉을 만나러 가면 누룽지와 월계가 함께 놀게 된다고 말하고, 자신만 누룽지와 월계 덕에 낫는 데 그칠 수 없다며 모두가 둘의 귀여움을 직접 목격하길 바란다."
+      },
+      {
+       "t_raw": "Paimon이 두 이름을 알아보고 Wenxun이 Yaoyao를 매개로 한 만남과 귀여움을 이야기하는 점에서, Yuegui는 Yaoyao의 주변에서 Guoba와 놀이로 이어지는 존재로 그려지는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "페이몬이 두 이름을 알아보고 문심이 요요를 매개로 한 만남과 귀여움을 이야기하는 점에서, 월계는 요요의 주변에서 누룽지와 놀이로 이어지는 존재로 그려지는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Wenxun"
+      },
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Wenxun"
+      },
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 4.4",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 4.4",
+     "status": "accepted",
+     "note": "All supported by Q2, Q3, Q5; interpretation is reasonable.",
+     "quote": "Once I get better at making kites, I'm going to make one shaped like Yuegui.",
+     "sentences": [
+      {
+       "t_raw": "Yaoyao는 연 만들기가 더 능숙해지면 **Yuegui 모양 연**을 만들겠다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요는 연 만들기가 더 능숙해지면 **월계 모양 연**을 만들겠다고 말한다."
+      },
+      {
+       "t_raw": "Wenxun은 거의 정답에 가깝다며 Guoba와 Yuegui가 만들 음식을 생각하고 있었다고 말하고, Paimon은 Guoba와 Yuegui가 **함께 요리**한다는 이야기를 흥미롭게 받아들인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문심은 거의 정답에 가깝다며 누룽지와 월계가 만들 음식을 생각하고 있었다고 말하고, 페이몬은 누룽지와 월계가 **함께 요리**한다는 이야기를 흥미롭게 받아들인다."
+      },
+      {
+       "t_raw": "연의 모양과 음식 이야기로 Yuegui가 등장하는 점은, Yuegui가 놀이와 음식 같은 일상의 소재로도 쓰이는 모습을 보여 주는 것으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "연의 모양과 음식 이야기로 월계가 등장하는 점은, 월계가 놀이와 음식 같은 일상의 소재로도 쓰이는 모습을 보여 주는 것으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Cloud-Sea Appeal, a Brilliance Revealed (Quest)",
+       "quest_ko": "빛과 이슬을 담아 구름에 비는 소원",
+       "version": "4.4",
+       "speaker": "Yaoyao"
+      },
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Wenxun"
+      },
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "작중 행적 — 4.4",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All supported by A1, A2, M1; interpretation is reasonable.",
+     "quote": "Yuegui, who never leaves her side, is an adepti treasure, crafted by Cloud Retainer herself.",
+     "sentences": [
+      {
+       "t_raw": "Yuegui는 Cloud Retainer가 Yaoyao를 위해 만든 기계 장치다.",
+       "interp": false,
+       "dropped": false,
+       "t": "월계는 류운차풍진군이 요요를 위해 만든 기계 장치다."
+      },
+      {
+       "t_raw": "Cloud Retainer는 Yuegui를 Yaoyao의 수련을 돕도록 만들었고, Yuegui는 Yaoyao가 위험에 처할 때마다 Yaoyao를 보호한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "류운차풍진군은 월계를 요요의 수련을 돕도록 만들었고, 월계는 요요가 위험에 처할 때마다 요요를 보호한다."
+      },
+      {
+       "t_raw": "Yaoyao는 Yuegui를 친구로 여기며 때때로 함께 논다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요는 월계를 친구로 여기며 때때로 함께 논다."
+      },
+      {
+       "t_raw": "Yuegui는 Yaoyao 곁을 떠나지 않는 adepti의 보물이며, adepti가 Yaoyao에게 쏟는 애정의 또 하나의 증거다.",
+       "interp": false,
+       "dropped": false,
+       "t": "월계는 요요 곁을 떠나지 않는 선인의 보물이며, 선인이 요요에게 쏟는 애정의 또 하나의 증거다.",
+       "polish": {
+        "from": "월계는 요요 곁을 떠나지 않는 adepti의 보물이며, adepti가 요요에게 쏟는 애정의 또 하나의 증거다.",
+        "text": "월계는 요요 곁을 떠나지 않는 선인의 보물이며, 선인이 요요에게 쏟는 애정의 또 하나의 증거다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "**Yaoyao가 기계인 Yuegui를 친구로 여긴다는 점에서**, Yuegui는 Yaoyao에게 단순한 도구 이상의 존재로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**요요가 기계인 월계를 친구로 여긴다는 점에서**, 월계는 요요에게 단순한 도구 이상의 존재로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yaoyao"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yaoyao"
+        },
+        {
+         "type": "vo",
+         "name": "Yaoyao"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Yaoyao/Profile",
+       "revision": 1025947,
+       "section": "Official Introduction",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Supported by A2 and Q4.",
+     "quote": "In addition to battling alongside Yaoyao, it also alerts Madame Ping to her location upon calling out its name.",
+     "sentences": [
+      {
+       "t_raw": "Yuegui는 이름을 불리면 Madame Ping에게 Yaoyao의 위치를 알린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "월계는 이름을 불리면 평 할머니에게 요요의 위치를 알린다."
+      },
+      {
+       "t_raw": "Yaoyao가 Yuegui를 데리고 Xiangling을 만나러 가면 **Guoba와 Yuegui는 함께 놀게 된다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요가 월계를 데리고 향릉을 만나러 가면 **누룽지와 월계는 함께 놀게 된다**."
+      },
+      {
+       "t_raw": "이처럼 Yuegui는 Yaoyao를 돕는 데 그치지 않고 Yaoyao가 Xiangling을 만나러 갈 때 Guoba와 어울리기도 하는 존재라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 월계는 요요를 돕는 데 그치지 않고 요요가 향릉을 만나러 갈 때 누룽지와 어울리기도 하는 존재라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Yaoyao"
+        },
+        {
+         "type": "vo",
+         "name": "Yaoyao"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Wenxun"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "A3 supports the forehead mark and flank flowers. The shape match is tied to the flower.",
+     "quote": "It has a vertical orange mark in the middle of its forehead and a reddish-orange flower on each flank, which is presumably an osmanthus flower, as the shape matches Yaoyao's Constellation.",
+     "sentences": [
+      {
+       "t_raw": "Yuegui의 **정수리 표식**은 이마 한가운데에 세로로 놓인 주황색 표식이고, 양옆구리에는 붉은빛이 도는 주황색 꽃이 하나씩 달려 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "월계의 **정수리 표식**은 이마 한가운데에 세로로 놓인 주황색 표식이고, 양옆구리에는 붉은빛이 도는 주황색 꽃이 하나씩 달려 있다."
+      },
+      {
+       "t_raw": "옆구리 꽃은 형태가 Yaoyao의 Constellation과 맞는다고 설명된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "옆구리 꽃은 형태가 요요의 운명의 자리와 맞는다고 설명된다."
+      },
+      {
+       "t_raw": "정수리 표식은 세로로 놓인 주황색 표식으로 서술되고, Constellation과의 형태 일치는 옆구리 꽃 쪽에 연결되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "정수리 표식은 세로로 놓인 주황색 표식으로 서술되고, 운명의 자리과의 형태 일치는 옆구리 꽃 쪽에 연결되어 있다."
+      },
+      {
+       "t_raw": "정수리 표식과 옆구리 꽃을 함께 놓고 보면, Yuegui의 외형에서 **Yaoyao의 Constellation**을 환기하는 단서는 꽃의 형태 쪽에 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정수리 표식과 옆구리 꽃을 함께 놓고 보면, 월계의 외형에서 **요요의 운명의 자리**를 환기하는 단서는 꽃의 형태 쪽에 놓인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Yuegui",
+       "revision": 1589366,
+       "section": "Profile > Appearance",
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by Q4 and Q5; interpretation is mild.",
+     "quote": "When Yaoyao brings Yuegui along to see Xiangling, Guoba and Yuegui end up playing together.",
+     "sentences": [
+      {
+       "t_raw": "Yaoyao가 Yuegui를 데리고 Xiangling을 만나러 가면 **Guoba와 Yuegui는 함께 놀게 된다**.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요가 월계를 데리고 향릉을 만나러 가면 **누룽지와 월계는 함께 놀게 된다**."
+      },
+      {
+       "t_raw": "Paimon은 Guoba와 Yuegui가 함께 요리한다는 이야기에 흥미를 보인다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 누룽지와 월계가 함께 요리한다는 이야기에 흥미를 보인다."
+      },
+      {
+       "t_raw": "이런 만남이 소소한 즐길 거리로 이어진다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이런 만남이 소소한 즐길 거리로 이어진다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Wenxun"
+      },
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by Q1, Q3, Q6.",
+     "quote": "But I can't be the only one being cured by Guoba and Yuegui! I want everyone to bear witness to their cuteness for themselves!",
+     "sentences": [
+      {
+       "t_raw": "Wenxun은 Guoba와 Yuegui에게 치유받는 사람이 자신뿐이어선 안 된다며, 모두가 **그 귀여움을 직접 확인**하길 바란다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문심은 누룽지와 월계에게 치유받는 사람이 자신뿐이어선 안 된다며, 모두가 **그 귀여움을 직접 확인**하길 바란다."
+      },
+      {
+       "t_raw": "Wenxun은 '거의 홀인원'이라며 Guoba와 Yuegui가 만들 음식을 생각하고 있었다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "문심은 '거의 홀인원'이라며 누룽지와 월계가 만들 음식을 생각하고 있었다고 말한다."
+      },
+      {
+       "t_raw": "Paimon은 Guoba와 Yuegui가 자신들이 아는 이름이라며, 상대도 둘을 아는지 되묻는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "페이몬은 누룽지와 월계가 자신들이 아는 이름이라며, 상대도 둘을 아는지 되묻는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Wenxun"
+      },
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Wenxun"
+      },
+      {
+       "kind": "quest",
+       "quest": "Paper Shadow Ruminations",
+       "quest_ko": "종이 속 미식 여행기",
+       "version": "4.4",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Both sentences accurately restate Yaoyao's plan to make a Yuegui-shaped kite once her kite-making improves.",
+     "quote": "Once I get better at making kites, I'm going to make one shaped like Yuegui.",
+     "sentences": [
+      {
+       "t_raw": "Yaoyao는 연 만들기에 더 능숙해지면 **Yuegui 모양 연**을 만들겠다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "요요는 연 만들기에 더 능숙해지면 **월계 모양 연**을 만들겠다고 한다."
+      },
+      {
+       "t_raw": "연을 더 잘 만들게 된 뒤 Yuegui를 닮은 연을 만들겠다는 계획이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "연을 더 잘 만들게 된 뒤 월계를 닮은 연을 만들겠다는 계획이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "A Cloud-Sea Appeal, a Brilliance Revealed (Quest)",
+       "quest_ko": "빛과 이슬을 담아 구름에 비는 소원",
+       "version": "4.4",
+       "speaker": "Yaoyao"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "작중 행적 — 4.4",
+     "status": "accepted",
+     "note": "The Korean faithfully translates the dialogue.",
+     "t_raw": "Yaoyao가 Yuegui를 데리고 Xiangling을 만나러 가면, Guoba와 Yuegui는 결국 함께 놀게 된다.",
+     "en": "When Yaoyao brings Yuegui along to see Xiangling, Guoba and Yuegui end up playing together.",
+     "speaker": "Wenxun",
+     "source": {
+      "kind": "quest",
+      "quest": "Paper Shadow Ruminations",
+      "quest_ko": "종이 속 미식 여행기",
+      "version": "4.4",
+      "speaker": "Wenxun"
+     },
+     "t": "요요가 월계를 데리고 향릉을 만나러 가면, 누룽지와 월계는 결국 함께 놀게 된다.",
+     "speaker_ko": "문심"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "The Korean faithfully translates the dialogue.",
+     "t_raw": "Yaoyao가 Yuegui를 데리고 Xiangling을 만나러 가면, Guoba와 Yuegui는 결국 함께 놀게 된다.",
+     "en": "When Yaoyao brings Yuegui along to see Xiangling, Guoba and Yuegui end up playing together.",
+     "speaker": "Wenxun",
+     "source": {
+      "kind": "quest",
+      "quest": "Paper Shadow Ruminations",
+      "quest_ko": "종이 속 미식 여행기",
+      "version": "4.4",
+      "speaker": "Wenxun"
+     },
+     "t": "요요가 월계를 데리고 향릉을 만나러 가면, 누룽지와 월계는 결국 함께 놀게 된다.",
+     "speaker_ko": "문심"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "The Korean faithfully translates Yaoyao's dialogue.",
+     "t_raw": "연을 더 잘 만들게 되면, Yuegui 모양으로 하나를 만들 거야.",
+     "en": "Once I get better at making kites, I'm going to make one shaped like Yuegui.",
+     "speaker": "Yaoyao",
+     "source": {
+      "kind": "quest",
+      "quest": "A Cloud-Sea Appeal, a Brilliance Revealed (Quest)",
+      "quest_ko": "빛과 이슬을 담아 구름에 비는 소원",
+      "version": "4.4",
+      "speaker": "Yaoyao"
+     },
+     "t": "연을 더 잘 만들게 되면, 월계 모양으로 하나를 만들 거야.",
+     "speaker_ko": "요요"
+    }
+   ]
+  }
+ ]
+}

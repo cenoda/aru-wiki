@@ -1,0 +1,954 @@
+{
+ "node": "Gaseous Phlogiston",
+ "articles": [
+  {
+   "node": "Gaseous Phlogiston",
+   "from_version": "5.2",
+   "cutoff": "2024-12-31T00:00:00Z",
+   "input": [
+    {
+     "page": "Gaseous Phlogiston",
+     "url": "https://genshin-impact.fandom.com/wiki/Gaseous_Phlogiston",
+     "revision": 1691094
+    }
+   ],
+   "input_counts": {
+    "mentions": 4,
+    "lines": 7,
+    "web": 0
+   },
+   "input_chars": 710,
+   "input_cut": false,
+   "input_hash": "7da656031607",
+   "writer": "or-ds",
+   "verifier": "codex-medium,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "It is a form of Phlogiston that can occur freely (e.g., leaking out of the ground) or form Phlogiston Currents, Phlogiston Wind Tunnels, or Scorchwind Confluxes.",
+     "sentences": [
+      {
+       "t_raw": "**Gaseous Phlogiston**는 Natlan에서 탐사 중 마주치는 Phlogiston의 기체 형태이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**기체 열소**는 나타에서 탐사 중 마주치는 열소의 기체 형태이다."
+      },
+      {
+       "t_raw": "자유롭게 새어 나오거나 Phlogiston Currents, Phlogiston Wind Tunnels, Scorchwind Confluxes로 나타나며, 닿으면 활성 캐릭터의 HP를 0.5초마다 최대 HP의 2.5%만큼 깎는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "자유롭게 새어 나오거나 Phlogiston Currents, 열소 바람 터널, Scorchwind Confluxes로 나타나며, 닿으면 활성 캐릭터의 HP를 0.5초마다 최대 HP의 2.5%만큼 깎는다."
+      },
+      {
+       "t_raw": "반면 Qucusaurs와 Flower-Feather Clan 구성원은 피해를 받지 않고 이를 통해 Phlogiston meter를 채울 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "반면 깃룡과 꽃깃회 구성원은 피해를 받지 않고 이를 통해 열소 게이지를 채울 수 있다.",
+       "polish": {
+        "from": "반면 깃룡과 꽃깃회 구성원은 피해를 받지 않고 이를 통해 열소 meter를 채울 수 있다.",
+        "text": "반면 깃룡과 꽃깃회 구성원은 피해를 받지 않고 이를 통해 열소 게이지를 채울 수 있다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "그래서 Gaseous Phlogiston은 일반 캐릭터에게는 **위험한 기체**이지만 Qucusaurs와 Flower-Feather Clan에게는 **탐사 자원**으로 작동하는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 기체 열소는 일반 캐릭터에게는 **위험한 기체**이지만 깃룡과 꽃깃회에게는 **탐사 자원**으로 작동하는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Phlogiston",
+       "revision": 1688481,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Beneath the Secret Source"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": [
+      "Phlogiston Currents",
+      "Scorchwind Confluxes",
+      "HP",
+      "HP"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "The English says phlogiston is restored while HP is depleted, not that HP is depleted instead of restoring phlogiston.",
+     "quote": "Gaseous Phlogiston acts similarly to a Wind Current, except that it restores the player's phlogiston while depleting their HP while inside it.",
+     "sentences": [
+      {
+       "t_raw": "**Gaseous Phlogiston**은 Natlan의 탐사 메커니즘이며 Phlogiston의 여러 현현 중 기체 형태다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**기체 열소**는 나타의 탐사 메커니즘이며 열소의 여러 현현 중 기체 형태다."
+      },
+      {
+       "t_raw": "Phlogiston은 Natlan 고유의 메커니즘으로 전투·탐사·에너지원에 쓰이고 Teyvat 일곱 원소의 원형이자 발전된 형태이며, 그 현현에는 Liquid Phlogiston, Solid Phlogiston, Gaseous Phlogiston, Spiritways가 포함된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "열소는 나타 고유의 메커니즘으로 전투·탐사·에너지원에 쓰이고 티바트 일곱 원소의 원형이자 발전된 형태이며, 그 현현에는 액체 열소, 고체 열소, 기체 열소, 흐르는 영혼길이 포함된다."
+      },
+      {
+       "t_raw": "Gaseous Phlogiston은 **Wind Current**처럼 작동하되, 그 안에서는 Phlogiston이 회복되면서 HP가 소모된다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "기체 열소는 **윈드 필드**처럼 작동하되, 그 안에서는 열소가 회복되면서 HP가 소모된다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Phlogiston",
+       "revision": 1688481,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Beneath the Secret Source"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Natlan",
+       "revision": 1690985,
+       "section": "Notable Features > Phlogiston",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "HP"
+     ]
+    },
+    {
+     "section": "정체",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "It is a form of Phlogiston that can occur freely (e.g., leaking out of the ground) or form Phlogiston Currents, Phlogiston Wind Tunnels, or Scorchwind Confluxes.",
+     "sentences": [
+      {
+       "t_raw": "Gaseous Phlogiston은 땅에서 새어 나오듯 자유롭게 발생하거나 Phlogiston Currents, Phlogiston Wind Tunnels, Scorchwind Confluxes 같은 특정 구조로 나타난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기체 열소는 땅에서 새어 나오듯 자유롭게 발생하거나 Phlogiston Currents, 열소 바람 터널, Scorchwind Confluxes 같은 특정 구조로 나타난다."
+      },
+      {
+       "t_raw": "접촉하면 활성 캐릭터의 최대 HP 2.5%만큼 0.5초마다 피해를 입지만, Qucusaurs와 Flower-Feather Clan 구성원은 피해를 받지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "접촉하면 활성 캐릭터의 최대 HP 2.5%만큼 0.5초마다 피해를 입지만, 깃룡과 꽃깃회 구성원은 피해를 받지 않는다."
+      },
+      {
+       "t_raw": "자유로운 발생과 구조적 현현이 함께 나타나면서도 Qucusaurs와 Flower-Feather Clan 구성원은 안전하다는 점에서, Gaseous Phlogiston은 Natlan 탐사에서 Wind Current처럼 기능하는 기체상으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자유로운 발생과 구조적 현현이 함께 나타나면서도 깃룡과 꽃깃회 구성원은 안전하다는 점에서, 기체 열소는 나타 탐사에서 윈드 필드처럼 기능하는 기체상으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Natlan",
+       "revision": 1690985,
+       "section": "Notable Features > Phlogiston",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체",
+     "latin_left": [
+      "Phlogiston Currents",
+      "Scorchwind Confluxes",
+      "HP"
+     ]
+    },
+    {
+     "section": "탐사 활용 — 위험과 이점",
+     "status": "accepted",
+     "note": "All sentences are supported.",
+     "quote": "Gaseous Phlogiston acts similarly to a Wind Current, except that it restores the player's phlogiston while depleting their HP while inside it.",
+     "sentences": [
+      {
+       "t_raw": "Gaseous Phlogiston은 자유롭게 발생하거나 Phlogiston Currents·Phlogiston Wind Tunnels·Scorchwind Confluxes로 나타나며, 닿으면 활성 캐릭터에게 0.5초마다 최대 HP의 2.5% 피해를 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기체 열소는 자유롭게 발생하거나 Phlogiston Currents·열소 바람 터널·Scorchwind Confluxes로 나타나며, 닿으면 활성 캐릭터에게 0.5초마다 최대 HP의 2.5% 피해를 준다."
+      },
+      {
+       "t_raw": "그러나 Qucusaurs와 **Flower-Feather Clan** 구성원은 피해를 받지 않고, 이 구조들과 상호작용해 phlogiston meter를 채운다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 깃룡과 **꽃깃회** 구성원은 피해를 받지 않고, 이 구조들과 상호작용해 열소 게이지를 채운다.",
+       "polish": {
+        "from": "그러나 깃룡과 **꽃깃회** 구성원은 피해를 받지 않고, 이 구조들과 상호작용해 phlogiston meter를 채운다.",
+        "text": "그러나 깃룡과 **꽃깃회** 구성원은 피해를 받지 않고, 이 구조들과 상호작용해 열소 게이지를 채운다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "이들에게 Gaseous Phlogiston은 Wind Current처럼 작동하며 phlogiston을 회복시키는 통로가 되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이들에게 기체 열소는 윈드 필드처럼 작동하며 열소를 회복시키는 통로가 되는 셈이다.",
+       "polish": {
+        "from": "이들에게 기체 열소는 윈드 필드처럼 작동하며 phlogiston을 회복시키는 통로가 되는 셈이다.",
+        "text": "이들에게 기체 열소는 윈드 필드처럼 작동하며 열소를 회복시키는 통로가 되는 셈이다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Natlan",
+       "revision": 1690985,
+       "section": "Notable Features > Phlogiston",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Phlogiston",
+       "revision": 1688481,
+       "section": "How to Obtain Phlogiston",
+       "paragraph": "M2",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "탐사 활용 — 위험과 이점",
+     "latin_left": [
+      "Phlogiston Currents",
+      "Scorchwind Confluxes",
+      "HP"
+     ]
+    },
+    {
+     "section": "탐사 활용 — 위험과 이점",
+     "status": "accepted",
+     "note": "The Korean reverses the relationship: the English says Gaseous Phlogiston does not harm Qucusaurs, not that Qucusaurs do not harm it.",
+     "quote": "Touching a Scorchwind Conflux fills the phlogiston meter and causes abilities to not consume any phlogiston for a short time.",
+     "sentences": [
+      {
+       "t_raw": "Qucusaurs는 날고 활공할 수 있으며, phlogiston을 소비해 더 높이 오르거나 더 빠르게 날 수 있고, Gaseous Phlogiston은 그들에게 해롭지 않으며 Phlogiston Wind Tunnels로 높은 곳에 도달한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "깃룡은 날고 활공할 수 있으며, 열소를 소비해 더 높이 오르거나 더 빠르게 날 수 있고, 기체 열소는 그들에게 해롭지 않으며 열소 바람 터널로 높은 곳에 도달한다.",
+       "polish": {
+        "from": "깃룡은 날고 활공할 수 있으며, phlogiston을 소비해 더 높이 오르거나 더 빠르게 날 수 있고, 기체 열소는 그들에게 해롭지 않으며 열소 바람 터널로 높은 곳에 도달한다.",
+        "text": "깃룡은 날고 활공할 수 있으며, 열소를 소비해 더 높이 오르거나 더 빠르게 날 수 있고, 기체 열소는 그들에게 해롭지 않으며 열소 바람 터널로 높은 곳에 도달한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "**Scorchwind Conflux**는 phlogiston meter를 채우고 짧은 시간 능력이 phlogiston을 소비하지 않게 하며, 그 효과는 약 8초 지속되고 Scorchwind Conflux는 곧 다시 생성된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**열풍 합류**는 열소 게이지를 채우고 짧은 시간 능력이 열소를 소비하지 않게 하며, 그 효과는 약 8초 지속되고 열풍 합류는 곧 다시 생성된다.",
+       "polish": {
+        "from": "**열풍 합류**는 phlogiston meter를 채우고 짧은 시간 능력이 phlogiston을 소비하지 않게 하며, 그 효과는 약 8초 지속되고 열풍 합류는 곧 다시 생성된다.",
+        "text": "**열풍 합류**는 열소 게이지를 채우고 짧은 시간 능력이 열소를 소비하지 않게 하며, 그 효과는 약 8초 지속되고 열풍 합류는 곧 다시 생성된다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Gaseous Phlogiston은 **Hot Phlogiston Balloons**를 채우고, 풍선이 터지면 phlogiston을 회복시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기체 열소는 **Hot Phlogiston Balloons**를 채우고, 풍선이 터지면 열소를 회복시킨다.",
+       "polish": {
+        "from": "기체 열소는 **Hot Phlogiston Balloons**를 채우고, 풍선이 터지면 phlogiston을 회복시킨다.",
+        "text": "기체 열소는 **Hot Phlogiston Balloons**를 채우고, 풍선이 터지면 열소를 회복시킨다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "짧은 시간 phlogiston을 소비하지 않는 효과와 풍선 회복이 겹쳐, Gaseous Phlogiston은 탐사 중 phlogiston을 보충하는 자원으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "짧은 시간 열소를 소비하지 않는 효과와 풍선 회복이 겹쳐, 기체 열소는 탐사 중 열소를 보충하는 자원으로 보인다.",
+       "polish": {
+        "from": "짧은 시간 phlogiston을 소비하지 않는 효과와 풍선 회복이 겹쳐, 기체 열소는 탐사 중 phlogiston을 보충하는 자원으로 보인다.",
+        "text": "짧은 시간 열소를 소비하지 않는 효과와 풍선 회복이 겹쳐, 기체 열소는 탐사 중 열소를 보충하는 자원으로 보인다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Natlan",
+       "revision": 1690985,
+       "section": "Notable Features > Saurian Indwelling",
+       "paragraph": "M4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Natlan",
+       "revision": 1690985,
+       "section": "Notable Features > Phlogiston",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "탐사 활용 — 위험과 이점",
+     "latin_left": [
+      "Hot Phlogiston Balloons"
+     ]
+    },
+    {
+     "section": "작중 행적 — 5.2 퀘스트",
+     "status": "accepted",
+     "note": "Chasca describes the flying machine, but the English does not establish that it belongs to her.",
+     "quote": "It's a flying machine worn on the back. To operate it, you just use a hand-held trackball that controls the flow of gaseous phlogiston.",
+     "sentences": [
+      {
+       "t_raw": "Chasca가 설명한 **비행 기계**는 등에 착용하는 장치다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "차스카가 설명한 **비행 기계**는 등에 착용하는 장치다."
+      },
+      {
+       "t_raw": "조작에는 손에 쥔 트랙볼을 쓰며, 이것으로 gaseous phlogiston의 흐름을 조절한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "조작에는 손에 쥔 트랙볼을 쓰며, 이것으로 기체 열소의 흐름을 조절한다.",
+       "polish": {
+        "from": "조작에는 손에 쥔 트랙볼을 쓰며, 이것으로 gaseous phlogiston의 흐름을 조절한다.",
+        "text": "조작에는 손에 쥔 트랙볼을 쓰며, 이것으로 기체 열소의 흐름을 조절한다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Tracks Through the Wilderness",
+       "quest_ko": "들판 조사",
+       "version": "5.2",
+       "speaker": "Chasca"
+      }
+     ],
+     "heading": "작중 행적 — 5.2 퀘스트",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 5.2 퀘스트",
+     "status": "accepted",
+     "note": "None. Trapping, the single-spout high-pressure current, and replenishment with spouts apparently unblocked all match the cited lines.",
+     "quote": "Do you still remember those spouts in the arena? When they were all blocked, the gaseous phlogiston was trapped and unable to flow.",
+     "sentences": [
+      {
+       "t_raw": "경기장의 분출구가 모두 막혔을 때 gaseous phlogiston은 갇혀 흐르지 못했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "경기장의 분출구가 모두 막혔을 때 기체 열소는 갇혀 흐르지 못했다.",
+       "polish": {
+        "from": "경기장의 분출구가 모두 막혔을 때 gaseous phlogiston은 갇혀 흐르지 못했다.",
+        "text": "경기장의 분출구가 모두 막혔을 때 기체 열소는 갇혀 흐르지 못했다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Mutota는 모든 gaseous phlogiston이 하나의 분출구로 흐르면 **고압의 기류**가 생길 것이라고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무토타는 모든 기체 열소가 하나의 분출구로 흐르면 **고압의 기류**가 생길 것이라고 설명한다.",
+       "polish": {
+        "from": "무토타는 모든 gaseous phlogiston이 하나의 분출구로 흐르면 **고압의 기류**가 생길 것이라고 설명한다.",
+        "text": "무토타는 모든 기체 열소가 하나의 분출구로 흐르면 **고압의 기류**가 생길 것이라고 설명한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "이후 Chasca는 gaseous phlogiston이 다시 채워지고 있으며 모든 분출구가 뚫린 듯하다고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 차스카는 기체 열소가 다시 채워지고 있으며 모든 분출구가 뚫린 듯하다고 전한다.",
+       "polish": {
+        "from": "이후 차스카는 gaseous phlogiston이 다시 채워지고 있으며 모든 분출구가 뚫린 듯하다고 전한다.",
+        "text": "이후 차스카는 기체 열소가 다시 채워지고 있으며 모든 분출구가 뚫린 듯하다고 전한다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Mortal Pursuit",
+       "quest_ko": "절명의 추격",
+       "version": "5.2",
+       "speaker": "Mutota"
+      },
+      {
+       "kind": "quest",
+       "quest": "Mortal Pursuit",
+       "quest_ko": "절명의 추격",
+       "version": "5.2",
+       "speaker": "Mutota"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Night Before the Trial",
+       "quest_ko": "시험 전야",
+       "version": "5.2",
+       "speaker": "Chasca"
+      }
+     ],
+     "heading": "작중 행적 — 5.2 퀘스트",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — 5.2 퀘스트",
+     "status": "accepted",
+     "note": "None. The successful log, Isidore’s intermediary suggestion, and waiting for a full refill before retrials are all stated.",
+     "quote": "Log No. 114. Ran an experiment using qucusaurs to refine gaseous phlogiston. It was a success.",
+     "sentences": [
+      {
+       "t_raw": "Tepal의 기록에 따르면 Qucusaurs를 이용해 gaseous phlogiston을 정제하는 실험은 성공했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "테팔의 기록에 따르면 깃룡을 이용해 기체 열소를 정제하는 실험은 성공했다.",
+       "polish": {
+        "from": "테팔의 기록에 따르면 깃룡을 이용해 gaseous phlogiston을 정제하는 실험은 성공했다.",
+        "text": "테팔의 기록에 따르면 깃룡을 이용해 기체 열소를 정제하는 실험은 성공했다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Isidore는 Qucusaurs가 gaseous phlogiston을 처리하는 자연적인 능력을 지녀, 이들을 중간 매개로 쓰는 경우를 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이시도르는 깃룡이 기체 열소를 처리하는 자연적인 능력을 지녀, 이들을 중간 매개로 쓰는 경우를 말한다.",
+       "polish": {
+        "from": "이시도르는 깃룡이 gaseous phlogiston을 처리하는 자연적인 능력을 지녀, 이들을 중간 매개로 쓰는 경우를 말한다.",
+        "text": "이시도르는 깃룡이 기체 열소를 처리하는 자연적인 능력을 지녀, 이들을 중간 매개로 쓰는 경우를 말한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Inkanak은 gaseous phlogiston이 충분히 채워지기를 기다린 뒤 **retrials**를 시작할 수 있다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "잉카낙은 기체 열소가 충분히 채워지기를 기다린 뒤 **재시도**를 시작할 수 있다고 말한다.",
+       "polish": {
+        "from": "잉카낙은 gaseous phlogiston이 충분히 채워지기를 기다린 뒤 **retrials**를 시작할 수 있다고 말한다.",
+        "text": "잉카낙은 기체 열소가 충분히 채워지기를 기다린 뒤 **재시도**를 시작할 수 있다고 말한다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Time for the Showdown",
+       "quest_ko": "대결의 순간",
+       "version": "5.2",
+       "speaker": "Tepal"
+      },
+      {
+       "kind": "quest",
+       "quest": "Tracks Through the Wilderness",
+       "quest_ko": "들판 조사",
+       "version": "5.2",
+       "speaker": "Isidore"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Night Before the Trial",
+       "quest_ko": "시험 전야",
+       "version": "5.2",
+       "speaker": "Inkanak"
+      }
+     ],
+     "heading": "작중 행적 — 5.2 퀘스트",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "None. Trackball control, no damage plus refill for Qucusaurs and Flower-Feather Clan, and the active-character contrast are supported by the item text or the full material.",
+     "quote": "It's a flying machine worn on the back. To operate it, you just use a hand-held trackball that controls the flow of gaseous phlogiston.",
+     "sentences": [
+      {
+       "t_raw": "Chasca는 등에 착용한 비행 기계가 손에 쥔 트랙볼로 **Gaseous Phlogiston의 흐름을 제어**한다고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "차스카는 등에 착용한 비행 기계가 손에 쥔 트랙볼로 **기체 열소의 흐름을 제어**한다고 설명한다."
+      },
+      {
+       "t_raw": "Qucusaurs와 Flower-Feather Clan 구성원은 Gaseous Phlogiston에 닿아도 피해를 입지 않고 Phlogiston을 보충한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "깃룡과 꽃깃회 구성원은 기체 열소에 닿아도 피해를 입지 않고 열소를 보충한다."
+      },
+      {
+       "t_raw": "Gaseous Phlogiston이 활성 캐릭터에게는 피해를 주면서 이들에게는 피해 없이 Phlogiston을 채우는 자원이 되는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "기체 열소가 활성 캐릭터에게는 피해를 주면서 이들에게는 피해 없이 열소를 채우는 자원이 되는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Tracks Through the Wilderness",
+       "quest_ko": "들판 조사",
+       "version": "5.2",
+       "speaker": "Chasca"
+      },
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Sentence 1 has Chasca confirm that phlogiston is replenished once the spouts open. She only says it is being replenished and that the spouts look unblocked.",
+     "quote": "Do you still remember those spouts in the arena? When they were all blocked, the gaseous phlogiston was trapped and unable to flow.",
+     "sentences": [
+      {
+       "t_raw": "Mutota는 아레나의 분출구가 막히자 Gaseous Phlogiston이 갇혀 흐르지 못했다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무토타는 아레나의 분출구가 막히자 기체 열소가 갇혀 흐르지 못했다고 말한다."
+      },
+      {
+       "t_raw": "Gaseous Phlogiston이 보충되고 있고 분출구가 모두 뚫린 것 같다고 Chasca가 말하며, Inkanak은 완전히 보충될 때까지 기다린 뒤 retrials를 시작할 수 있다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "기체 열소가 보충되고 있고 분출구가 모두 뚫린 것 같다고 차스카가 말하며, 잉카낙은 완전히 보충될 때까지 기다린 뒤 재시도를 시작할 수 있다고 한다.",
+       "polish": {
+        "from": "기체 열소가 보충되고 있고 분출구가 모두 뚫린 것 같다고 차스카가 말하며, 잉카낙은 완전히 보충될 때까지 기다린 뒤 retrials를 시작할 수 있다고 한다.",
+        "text": "기체 열소가 보충되고 있고 분출구가 모두 뚫린 것 같다고 차스카가 말하며, 잉카낙은 완전히 보충될 때까지 기다린 뒤 재시도를 시작할 수 있다고 한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Mutota는 Gaseous Phlogiston이 하나의 분출구로 흐르면 고압의 바람 흐름이 생길 것이라고 설명한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "무토타는 기체 열소가 하나의 분출구로 흐르면 고압의 바람 흐름이 생길 것이라고 설명한다."
+      },
+      {
+       "t_raw": "이는 분출구의 개폐가 Gaseous Phlogiston의 흐름과 압력을 바꾸는 조건임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 분출구의 개폐가 기체 열소의 흐름과 압력을 바꾸는 조건임을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Mortal Pursuit",
+       "quest_ko": "절명의 추격",
+       "version": "5.2",
+       "speaker": "Mutota"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Night Before the Trial",
+       "quest_ko": "시험 전야",
+       "version": "5.2",
+       "speaker": "Chasca"
+      },
+      {
+       "kind": "quest",
+       "quest": "Mortal Pursuit",
+       "quest_ko": "절명의 추격",
+       "version": "5.2",
+       "speaker": "Mutota"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Night Before the Trial",
+       "quest_ko": "시험 전야",
+       "version": "5.2",
+       "speaker": "Inkanak"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "None. The log, the natural-ability intermediary, harmlessness, wind-tunnel height, and phlogiston spent to climb or fly faster are stated; the refining-and-flight link is a fair reading.",
+     "quote": "Log No. 114. Ran an experiment using qucusaurs to refine gaseous phlogiston. It was a success.",
+     "sentences": [
+      {
+       "t_raw": "Tepal은 Log No. 114에서 qucusaurs를 이용한 Gaseous Phlogiston 정제 실험이 성공했다고 기록한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "테팔은 Log No. 114에서 쿠쿠사우루스를 이용한 기체 열소 정제 실험이 성공했다고 기록한다.",
+       "polish": {
+        "from": "테팔은 Log No. 114에서 qucusaurs를 이용한 기체 열소 정제 실험이 성공했다고 기록한다.",
+        "text": "테팔은 Log No. 114에서 쿠쿠사우루스를 이용한 기체 열소 정제 실험이 성공했다고 기록한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Isidore는 qucusaurs가 Gaseous Phlogiston을 처리하는 **자연 능력**을 지녔기에 이들을 매개로 삼는 방법을 제시한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이시도르는 쿠쿠사우루스가 기체 열소를 처리하는 **자연 능력**을 지녔기에 이들을 매개로 삼는 방법을 제시한다.",
+       "polish": {
+        "from": "이시도르는 qucusaurs가 기체 열소를 처리하는 **자연 능력**을 지녔기에 이들을 매개로 삼는 방법을 제시한다.",
+        "text": "이시도르는 쿠쿠사우루스가 기체 열소를 처리하는 **자연 능력**을 지녔기에 이들을 매개로 삼는 방법을 제시한다.",
+        "by": "glm-flash"
+       }
+      },
+      {
+       "t_raw": "Qucusaurs는 Gaseous Phlogiston에 해를 입지 않고 Phlogiston Wind Tunnels를 이용해 높은 곳에 오르며, Phlogiston을 소비해 더 높이 오르거나 빠르게 난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "깃룡은 기체 열소에 해를 입지 않고 열소 바람 터널을 이용해 높은 곳에 오르며, 열소를 소비해 더 높이 오르거나 빠르게 난다."
+      },
+      {
+       "t_raw": "이는 qucusaurs가 정제와 비행 모두에 얽힌 존재임을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 쿠쿠사우루스가 정제와 비행 모두에 얽힌 존재임을 보여 준다.",
+       "polish": {
+        "from": "이는 qucusaurs가 정제와 비행 모두에 얽힌 존재임을 보여 준다.",
+        "text": "이는 쿠쿠사우루스가 정제와 비행 모두에 얽힌 존재임을 보여 준다.",
+        "by": "glm-flash"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Time for the Showdown",
+       "quest_ko": "대결의 순간",
+       "version": "5.2",
+       "speaker": "Tepal"
+      },
+      {
+       "kind": "quest",
+       "quest": "Tracks Through the Wilderness",
+       "quest_ko": "들판 조사",
+       "version": "5.2",
+       "speaker": "Isidore"
+      },
+      {
+       "kind": "wiki",
+       "page": "Natlan",
+       "revision": 1690985,
+       "section": "Notable Features > Saurian Indwelling",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": [
+      "Log No"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "None. The conflux fill and no-cost window, the ~8s duration and respawn, and Hot Phlogiston Balloons are stated; calling that a short-burst exploration aid stays interpretive.",
+     "quote": "The effect conferred by a Scorchwind Conflux lasts for about 8 seconds. The Scorchwind Conflux will respawn shortly after.",
+     "sentences": [
+      {
+       "t_raw": "Scorchwind Conflux에 닿으면 Phlogiston 미터가 채워지고, 잠시 동안 능력 사용 시 Phlogiston이 소모되지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "열풍 합류에 닿으면 열소 미터가 채워지고, 잠시 동안 능력 사용 시 열소가 소모되지 않는다."
+      },
+      {
+       "t_raw": "그 효과는 **약 8초** 동안 이어지며, Scorchwind Conflux는 곧 다시 생성된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 효과는 **약 8초** 동안 이어지며, 열풍 합류는 곧 다시 생성된다."
+      },
+      {
+       "t_raw": "Gaseous Phlogiston은 **Hot Phlogiston Balloons**를 채우고, 이 풍선이 터지면 플레이어의 Phlogiston을 회복시킨다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기체 열소는 **Hot Phlogiston Balloons**를 채우고, 이 풍선이 터지면 플레이어의 열소를 회복시킨다."
+      },
+      {
+       "t_raw": "효과가 짧고 Conflux가 곧 재생성되므로, 끊어 쓰는 탐사 도구로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "효과가 짧고 Conflux가 곧 재생성되므로, 끊어 쓰는 탐사 도구로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Natlan",
+       "revision": 1690985,
+       "section": "Notable Features > Phlogiston",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Natlan",
+       "revision": 1690985,
+       "section": "Notable Features > Saurian Indwelling",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Hot Phlogiston Balloons",
+      "Conflux"
+     ]
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "None. Flight, harmless gaseous phlogiston, meter refill, and wind tunnels match M4/A3/M1; the fuel reading is hedged.",
+     "quote": "Qucusaurs can fly and glide in the air, and consume phlogiston to climb higher or fly faster.",
+     "sentences": [
+      {
+       "t_raw": "Qucusaurs는 공중을 날고 활공하며, Phlogiston을 소모해 더 높이 오르거나 더 빠르게 날 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "깃룡은 공중을 날고 활공하며, 열소를 소모해 더 높이 오르거나 더 빠르게 날 수 있다."
+      },
+      {
+       "t_raw": "Gaseous Phlogiston은 이들에게 해롭지 않고, 이들이 그 흐름과 상호작용하면 Phlogiston 미터가 채워진다.",
+       "interp": false,
+       "dropped": false,
+       "t": "기체 열소는 이들에게 해롭지 않고, 이들이 그 흐름과 상호작용하면 열소 미터가 채워진다."
+      },
+      {
+       "t_raw": "Qucusaurs는 **Phlogiston Wind Tunnels**를 이용해 높은 곳에 닿을 수도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "깃룡은 **열소 바람 터널**을 이용해 높은 곳에 닿을 수도 있다."
+      },
+      {
+       "t_raw": "이처럼 Qucusaurs에게 Gaseous Phlogiston은 위험 요소라기보다 비행을 돕는 연료 같은 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 깃룡에게 기체 열소는 위험 요소라기보다 비행을 돕는 연료 같은 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Gaseous Phlogiston",
+       "revision": 1691094,
+       "section": null,
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Natlan",
+       "revision": 1690985,
+       "section": "Notable Features > Phlogiston",
+       "paragraph": "M1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Natlan",
+       "revision": 1690985,
+       "section": "Notable Features > Saurian Indwelling",
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "탐사 활용 — 위험과 이점",
+     "status": "accepted",
+     "note": "None. Back-worn flyer and hand trackball that controls gaseous phlogiston match the line.",
+     "t_raw": "등에 메는 비행 기계야. 조작하려면 기체 phlogiston의 흐름을 제어하는 손에 드는 트랙볼을 쓰면 돼.",
+     "en": "It's a flying machine worn on the back. To operate it, you just use a hand-held trackball that controls the flow of gaseous phlogiston.",
+     "speaker": "Chasca",
+     "source": {
+      "kind": "quest",
+      "quest": "Tracks Through the Wilderness",
+      "quest_ko": "들판 조사",
+      "version": "5.2",
+      "speaker": "Chasca"
+     },
+     "t": "등에 메는 비행 기계야. 조작하려면 기체 phlogiston의 흐름을 제어하는 손에 드는 트랙볼을 쓰면 돼.",
+     "speaker_ko": "차스카"
+    },
+    {
+     "section": "작중 행적 — 5.2 퀘스트",
+     "status": "accepted",
+     "note": "None. Replenishment, unblocked spouts, and heading back up match the line.",
+     "t_raw": "gaseous phlogiston이 다시 채워지고 있어... 모든 분출구가 뚫린 것 같아. 위로 돌아가자.",
+     "en": "The gaseous phlogiston is being replenished... Looks like all the spouts have been unblocked. Let's head back up.",
+     "speaker": "Chasca",
+     "source": {
+      "kind": "quest",
+      "quest": "The Night Before the Trial",
+      "quest_ko": "시험 전야",
+      "version": "5.2",
+      "speaker": "Chasca"
+     },
+     "t": "gaseous phlogiston이 다시 채워지고 있어... 모든 분출구가 뚫린 것 같아. 위로 돌아가자.",
+     "speaker_ko": "차스카"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "None. Natural ability to process gaseous phlogiston and using them as an intermediary match the line.",
+     "t_raw": "하지만 qucusaurs는 gaseous phlogiston을 처리하는 타고난 능력이 있으니... 그것들을 매개로 삼으면...",
+     "en": "But the qucusaurs are have a natural ability to process gaseous phlogiston, so... if you use them as an intermediary, then...",
+     "speaker": "Isidore",
+     "source": {
+      "kind": "quest",
+      "quest": "Tracks Through the Wilderness",
+      "quest_ko": "들판 조사",
+      "version": "5.2",
+      "speaker": "Isidore"
+     },
+     "t": "하지만 qucusaurs는 gaseous phlogiston을 처리하는 타고난 능력이 있으니... 그것들을 매개로 삼으면...",
+     "speaker_ko": "이시도르"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "None. Same Chasca line as #1, in a formal register.",
+     "t_raw": "등에 착용하는 비행 기계다. 조작하려면 gaseous phlogiston의 흐름을 제어하는 손에 드는 트랙볼을 사용하면 된다.",
+     "en": "It's a flying machine worn on the back. To operate it, you just use a hand-held trackball that controls the flow of gaseous phlogiston.",
+     "speaker": "Chasca",
+     "source": {
+      "kind": "quest",
+      "quest": "Tracks Through the Wilderness",
+      "quest_ko": "들판 조사",
+      "version": "5.2",
+      "speaker": "Chasca"
+     },
+     "t": "등에 착용하는 비행 기계다. 조작하려면 gaseous phlogiston의 흐름을 제어하는 손에 드는 트랙볼을 사용하면 된다.",
+     "speaker_ko": "차스카"
+    }
+   ]
+  }
+ ]
+}

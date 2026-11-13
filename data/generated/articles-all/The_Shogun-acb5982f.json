@@ -1,0 +1,1791 @@
+{
+ "node": "The Shogun",
+ "articles": [
+  {
+   "node": "The Shogun",
+   "from_version": "3.7",
+   "cutoff": "2023-07-04T00:00:00Z",
+   "input": [
+    {
+     "page": "The Shogun",
+     "url": "https://genshin-impact.fandom.com/wiki/The_Shogun",
+     "revision": 1238123
+    }
+   ],
+   "input_counts": {
+    "mentions": 12,
+    "lines": 10,
+    "web": 0
+   },
+   "input_chars": 5225,
+   "input_cut": false,
+   "input_hash": "df6d4530f7f9",
+   "writer": "or-ds",
+   "verifier": "claude-sonnet,grok",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All four sentences match A1, M1, and M4; (3) is a hedged reading of oversight plus the public image.",
+     "quote": "The Shogun is an artificial body made by Ei to act as her current vessel.",
+     "sentences": [
+      {
+       "t_raw": "The Shogun은 Ei가 만든 인공 신체로, Ei가 현재 쓰는 몸이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 라이덴 에이(影)가 만든 인공 신체로, 라이덴 에이(影)가 현재 쓰는 몸이다."
+      },
+      {
+       "t_raw": "Raiden Shogun은 Ei와 Shogun 두 형태로 존재하며, Shogun은 Ei가 Plane of Euthymia에서 명상하는 동안 Inazuma를 대신 살피도록 만들어진 puppet이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 쇼군은 라이덴 에이(影)와 쇼군 두 형태로 존재하며, 쇼군은 라이덴 에이(影)가 일심정토에서 명상하는 동안 이나즈마를 대신 살피도록 만들어진 인형이다.",
+       "polish": {
+        "from": "라이덴 쇼군은 라이덴 에이(影)와 쇼군 두 형태로 존재하며, 쇼군은 라이덴 에이(影)가 일심정토에서 명상하는 동안 이나즈마를 대신 살피도록 만들어진 puppet이다.",
+        "text": "라이덴 쇼군은 라이덴 에이(影)와 쇼군 두 형태로 존재하며, 쇼군은 라이덴 에이(影)가 일심정토에서 명상하는 동안 이나즈마를 대신 살피도록 만들어진 인형이다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Shogun은 Raiden twins의 모습으로 만들어져 Electro Archon의 공적 이미지를 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 라이덴 쌍둥이의 모습으로 만들어져 번개의 신의 공적 이미지를 맡는다.",
+       "polish": {
+        "from": "쇼군은 라이덴 twins의 모습으로 만들어져 번개의 신의 공적 이미지를 맡는다.",
+        "text": "쇼군은 라이덴 쌍둥이의 모습으로 만들어져 번개의 신의 공적 이미지를 맡는다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그래서 Shogun은 Inazuma의 통치 구조와 Electro Archon의 공적 얼굴을 함께 이해하는 열쇠로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "그래서 쇼군은 이나즈마의 통치 구조와 번개의 신의 공적 얼굴을 함께 이해하는 열쇠로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Raiden Shogun/Profile",
+       "revision": 1041065,
+       "section": "Personality",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "To Traverse the Mortal Plane"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro Archon",
+       "revision": 570134,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Vessel, two forms, puppet, twins’ image, and public image are all stated; (3) only joins those two roles.",
+     "quote": "The Shogun is an artificial body made by Ei to act as her current vessel.",
+     "sentences": [
+      {
+       "t_raw": "The Shogun은 Ei가 자신의 **현재 육신**으로 삼기 위해 만든 인공의 몸이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 라이덴 에이(影)가 자신의 **현재 육신**으로 삼기 위해 만든 인공의 몸이다."
+      },
+      {
+       "t_raw": "Raiden Shogun은 Ei라는 진정한 정체와 The Shogun이라는 두 형태로 존재하며, The Shogun은 Ei가 Plane of Euthymia에서 명상하는 동안 **Inazuma를 대신 살피는 인형**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 쇼군은 라이덴 에이(影)라는 진정한 정체와 쇼군이라는 두 형태로 존재하며, 쇼군은 라이덴 에이(影)가 일심정토에서 명상하는 동안 **이나즈마를 대신 살피는 인형**이다."
+      },
+      {
+       "t_raw": "The Shogun은 Raiden twins의 모습을 본떠 만들어져 **Electro Archon의 공적 이미지**를 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 라이덴 쌍둥이의 모습을 본떠 만들어져 **번개의 신의 공적 이미지**를 맡는다.",
+       "polish": {
+        "from": "쇼군은 라이덴 twins의 모습을 본떠 만들어져 **번개의 신의 공적 이미지**를 맡는다.",
+        "text": "쇼군은 라이덴 쌍둥이의 모습을 본떠 만들어져 **번개의 신의 공적 이미지**를 맡는다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "이처럼 The Shogun은 Ei의 현재 육신이면서 Electro Archon의 공적 이미지를 맡는, 두 역할이 겹친 존재로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 쇼군은 라이덴 에이(影)의 현재 육신이면서 번개의 신의 공적 이미지를 맡는, 두 역할이 겹친 존재로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Raiden Shogun/Profile",
+       "revision": 1041065,
+       "section": "Personality",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "To Traverse the Mortal Plane"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro Archon",
+       "revision": 570134,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Playable vessel, second puppet after the erosion attempt, Scaramouche’s tears and failure, and the public image are all in A1, A2, and M4.",
+     "quote": "The Shogun is an artificial body made by Ei to act as her current vessel.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 Ei가 자신의 현재 몸으로 삼기 위해 만든 인공적인 몸이며, Raiden Shogun의 몸으로 플레이할 수 있는 존재다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 라이덴 에이(影)가 자신의 현재 몸으로 삼기 위해 만든 인공적인 몸이며, 라이덴 쇼군의 몸으로 플레이할 수 있는 존재다."
+      },
+      {
+       "t_raw": "Ei는 Erosion에 견디는 몸을 만들고자 했고, Shogun은 그 **두 번째 puppet**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)는 마모에 견디는 몸을 만들고자 했고, 쇼군은 그 **두 번째 인형**이다.",
+       "polish": {
+        "from": "라이덴 에이(影)는 마모에 견디는 몸을 만들고자 했고, 쇼군은 그 **두 번째 puppet**이다.",
+        "text": "라이덴 에이(影)는 마모에 견디는 몸을 만들고자 했고, 쇼군은 그 **두 번째 인형**이다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "첫 시도인 Scaramouche는 만들어질 때 눈물을 흘렸고, Ei는 그를 그 임무에 너무 약하다고 여겨 실패로 판단했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "첫 시도인 스카라무슈는 만들어질 때 눈물을 흘렸고, 라이덴 에이(影)는 그를 그 임무에 너무 약하다고 여겨 실패로 판단했다."
+      },
+      {
+       "t_raw": "Shogun은 Raiden twins의 모습으로 만들어져 Electro Archon의 **공적 이미지**를 맡는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 라이덴 쌍둥이의 모습으로 만들어져 번개의 신의 **공적 이미지**를 맡는다.",
+       "polish": {
+        "from": "쇼군은 라이덴 twins의 모습으로 만들어져 번개의 신의 **공적 이미지**를 맡는다.",
+        "text": "쇼군은 라이덴 쌍둥이의 모습으로 만들어져 번개의 신의 **공적 이미지**를 맡는다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Farewell to the Past"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Electro Archon",
+       "revision": 570134,
+       "section": null,
+       "paragraph": "M4",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Directives, own consciousness, appearing to confront Ei, and unalterable rules are in M1, Q9, and A2; (4) only notes that pairing.",
+     "quote": "This puppet follows a set of directives programmed into her, which are extremely difficult to modify.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 Ei가 Plane of Euthymia에서 명상하는 동안 Inazuma를 대신 살피는 puppet으로, Ei의 진짜 정체와 구분되는 두 형태 중 하나다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 라이덴 에이(影)가 일심정토에서 명상하는 동안 이나즈마를 대신 살피는 인형으로, 라이덴 에이(影)의 진짜 정체와 구분되는 두 형태 중 하나다.",
+       "polish": {
+        "from": "쇼군은 라이덴 에이(影)가 일심정토에서 명상하는 동안 이나즈마를 대신 살피는 puppet으로, 라이덴 에이(影)의 진짜 정체와 구분되는 두 형태 중 하나다.",
+        "text": "쇼군은 라이덴 에이(影)가 일심정토에서 명상하는 동안 이나즈마를 대신 살피는 인형으로, 라이덴 에이(影)의 진짜 정체와 구분되는 두 형태 중 하나다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "이 puppet은 미리 정해진 지시를 따르며, 그 지시는 수정하기 매우 어렵다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이 인형은 미리 정해진 지시를 따르며, 그 지시는 수정하기 매우 어렵다.",
+       "polish": {
+        "from": "이 puppet은 미리 정해진 지시를 따르며, 그 지시는 수정하기 매우 어렵다.",
+        "text": "이 인형은 미리 정해진 지시를 따르며, 그 지시는 수정하기 매우 어렵다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "그러나 Shogun은 자신의 의식도 지니고 있어 필요할 때 Ei와 맞서기 위해 이곳에 나타난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러나 쇼군은 자신의 의식도 지니고 있어 필요할 때 라이덴 에이(影)와 맞서기 위해 이곳에 나타난다."
+      },
+      {
+       "t_raw": "만들어질 때부터 **고정된 규칙** 목록을 지니며, 그 규칙은 바꾸거나 끌 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "만들어질 때부터 **고정된 규칙** 목록을 지니며, 그 규칙은 바꾸거나 끌 수 없다."
+      },
+      {
+       "t_raw": "자체 의식과 바꿀 수 없는 규칙이 한 몸에 함께 놓인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "자체 의식과 바꿀 수 없는 규칙이 한 몸에 함께 놓인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Raiden Shogun/Profile",
+       "revision": 1041065,
+       "section": "Personality",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "To Traverse the Mortal Plane"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Farewell to the Past",
+       "quest_ko": "과거를 끊는 여정",
+       "version": "2.5",
+       "speaker": "Ei"
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Farewell to the Past"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Storm connection and wielding Musou Isshin, which houses Ei, are both in A2.",
+     "quote": "She is connected to the storms of Inazuma, and wields the sword (Musou Isshin) that houses Ei in battle.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 Inazuma의 폭풍과 연결된 존재다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 이나즈마의 폭풍과 연결된 존재다."
+      },
+      {
+       "t_raw": "그녀는 전투에서 Ei를 담고 있는 검인 Musou Isshin을 쓴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 전투에서 라이덴 에이(影)를 담고 있는 검인 몽상의 일심을 쓴다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Farewell to the Past"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      }
+     ],
+     "heading": "정체와 배경",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 행동 원리",
+     "status": "accepted",
+     "note": "Limited emotion, no likes or dislikes, no food or recreation, assistant role, and maintaining Ei’s eternity are in A7 and M1; (2) hedges the ineffectual-functions line.",
+     "quote": "The Shogun is limited in emotional expression, has no particular 'likes or dislikes', although calls the Traveler 'uncouth' in a voice-over, showing she values poise and etiquette.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 **감정 표현이 제한**되어 있고 특별히 좋아하거나 싫어하는 것이 없으며, 음식과 오락도 필요로 하지 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 **감정 표현이 제한**되어 있고 특별히 좋아하거나 싫어하는 것이 없으며, 음식과 오락도 필요로 하지 않는다."
+      },
+      {
+       "t_raw": "Ei의 조수로 자신을 여기며 Ei가 바라는 영원을 유지하는 일을 수행한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)의 조수로 자신을 여기며 라이덴 에이(影)가 바라는 영원을 유지하는 일을 수행한다."
+      },
+      {
+       "t_raw": "평소의 기능이 멈추면 무력해진다는 점은 그녀의 행동 원리가 정해진 역할 수행에 기대 있는 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "평소의 기능이 멈추면 무력해진다는 점은 그녀의 행동 원리가 정해진 역할 수행에 기대 있는 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Raiden Shogun/Profile",
+       "revision": 1041065,
+       "section": "Personality",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "To Traverse the Mortal Plane"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      }
+     ],
+     "heading": "성격과 행동 원리",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 행동 원리",
+     "status": "accepted",
+     "note": "All sentences match the cited personality text.",
+     "quote": "Due to her exalted position and strength, she cannot be pushed back in battle nor argued against.",
+     "sentences": [
+      {
+       "t_raw": "Shogun의 판단은 **직선적이고 결과 중심적**이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군의 판단은 **직선적이고 결과 중심적**이다."
+      },
+      {
+       "t_raw": "임무와 관련 있는지, Inazuma나 지켜야 할 영원을 위협하는지를 기준으로 삼고, 필요한 조치라고 판단하면 그대로 실행한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "임무와 관련 있는지, 이나즈마나 지켜야 할 영원을 위협하는지를 기준으로 삼고, 필요한 조치라고 판단하면 그대로 실행한다."
+      },
+      {
+       "t_raw": "목적을 좇을 때는 결과나 고통, 자신이 어떻게 보일지를 개의치 않으며, 높은 지위와 힘 때문에 전투에서 밀려나거나 말로 되돌려지지도 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "목적을 좇을 때는 결과나 고통, 자신이 어떻게 보일지를 개의치 않으며, 높은 지위와 힘 때문에 전투에서 밀려나거나 말로 되돌려지지도 않는다."
+      },
+      {
+       "t_raw": "Vision Hunt Decree를 내리고, Duel Before the Throne에서 패한 Signora를 외교관이자 Fatui의 집행관임에도 직접 처형했으며, Tenshukaku 밖의 Traveler와 Paimon을 곧바로 Musou no Hitotachi로 베려 한 일은 그런 냉철함의 단면으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "안수령을 내리고, 어전시합에서 패한 시뇨라를 외교관이자 우인단의 집행관임에도 직접 처형했으며, 천수각 밖의 여행자와 페이몬을 곧바로 무상의 일태도로 베려 한 일은 그런 냉철함의 단면으로 볼 수 있다."
+      },
+      {
+       "t_raw": "도덕 관념 대신 긍정적이라고 판단한 결과가 동기가 되어 외부 세력에게 쉽게 조종당했고, Fatui, Kujou, Hiiragi Clan에게 이용당했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도덕 관념 대신 긍정적이라고 판단한 결과가 동기가 되어 외부 세력에게 쉽게 조종당했고, 우인단, 쿠죠, 히이라기 가문에게 이용당했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A9",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "성격과 행동 원리",
+     "latin_left": []
+    },
+    {
+     "section": "성격과 행동 원리",
+     "status": "accepted",
+     "note": "All sentences match the assistant, doubt, defiance, and reconciliation text.",
+     "quote": "The Shogun thinks of herself as Ei's assistant and carries out her creator's exact will, unable to act on her own volition.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 **Ei의 뜻을 따르는 조수**로, Ei가 정한 영원을 유지한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 **라이덴 에이(影)의 뜻을 따르는 조수**로, 라이덴 에이(影)가 정한 영원을 유지한다."
+      },
+      {
+       "t_raw": "Ei가 Traveler에게 패한 뒤에는 Ei가 Erosion의 영향을 받았다고 여기며 바뀐 견해에 의문을 품었고, 옛 영원관을 지키려 Ei에게 공개적으로 반항하기도 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)가 여행자에게 패한 뒤에는 라이덴 에이(影)가 마모의 영향을 받았다고 여기며 바뀐 견해에 의문을 품었고, 옛 영원관을 지키려 라이덴 에이(影)에게 공개적으로 반항하기도 했다."
+      },
+      {
+       "t_raw": "이후 Ei와 화해했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 라이덴 에이(影)와 화해했다."
+      },
+      {
+       "t_raw": "고정된 지침과 창조자의 변화가 부딪칠 때 갈등이 생길 수 있음을 보여 주는 대목으로 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "고정된 지침과 창조자의 변화가 부딪칠 때 갈등이 생길 수 있음을 보여 주는 대목으로 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A11",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Raiden Shogun"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Raiden Shogun/Profile",
+       "revision": 1041065,
+       "section": "Personality",
+       "paragraph": "M1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "To Traverse the Mortal Plane"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      }
+     ],
+     "heading": "성격과 행동 원리",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Vision Hunt Decree와 Inazuma 초기",
+     "status": "accepted",
+     "note": "All sentences match the decree, Takayuki plot, and manipulation text.",
+     "quote": "Prior to the Traveler's arrival to Inazuma, the Shogun was manipulated by the Fatui into issuing the Vision Hunt Decree",
+     "sentences": [
+      {
+       "t_raw": "Traveler가 Inazuma에 오기 전 Shogun은 Fatui의 조작으로 **Vision Hunt Decree**를 내렸고, Kujou and Hiiragi Clan은 권력을 약속받고 이를 도왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 이나즈마에 오기 전 쇼군은 우인단의 조작으로 **안수령**을 내렸고, Kujou and Hiiragi Clan은 권력을 약속받고 이를 도왔다.",
+       "polish": {
+        "from": "여행자가 이나즈마에 오기 전 쇼군은 우인단의 조작으로 **안수령**을 내렸고, Kujou and Hiiragi Clan은 권력을 약속받고 이를 도왔다.",
+        "text": "여행자가 이나즈마에 오기 전 쇼군은 우인단의 조작으로 **안수령**을 내렸고, Kujou and Hiiragi Clan은 권력을 약속받고 이를 도왔다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "한 해 전 Fatui는 Takayuki와 공모해 그가 Vision Hunt Decree를 전달하게 했으며, Delusions를 팔아 혼란을 일으키는 대가로 그에게 권력을 주려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 해 전 우인단은 타카유키와 공모해 그가 안수령을 전달하게 했으며, 사안을 팔아 혼란을 일으키는 대가로 그에게 권력을 주려 했다."
+      },
+      {
+       "t_raw": "Takayuki는 자신의 가문 영향력을 지키려 Shogun에게 모든 것이 잘되고 있다는 거짓 편지를 보냈고, Traveler의 도움으로 계획이 드러난 뒤 지위를 잃고 가택 연금 상태로 처벌을 기다리게 되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "타카유키는 자신의 가문 영향력을 지키려 쇼군에게 모든 것이 잘되고 있다는 거짓 편지를 보냈고, 여행자의 도움으로 계획이 드러난 뒤 지위를 잃고 가택 연금 상태로 처벌을 기다리게 되었다."
+      },
+      {
+       "t_raw": "권력 약속과 거짓 보고가 겹친 이 흐름은 Shogun의 판단이 외부 조작에 흔들린 결과로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "권력 약속과 거짓 보고가 겹친 이 흐름은 쇼군의 판단이 외부 조작에 흔들린 결과로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kujou Takayuki",
+       "revision": 425202,
+       "section": "Profile",
+       "paragraph": "M10",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 안수령과 이나즈마 초기",
+     "latin_left": [
+      "Kujou and Hiiragi Clan"
+     ]
+    },
+    {
+     "section": "작중 행적 — Vision Hunt Decree와 Inazuma 초기",
+     "status": "accepted",
+     "note": "All sentences match the duel, arrival, Thoma, and escape text.",
+     "quote": "the Shogun is first seen attempting to confiscate Thoma's Vision after having him captured despite his ties to the Kamisato Clan",
+     "sentences": [
+      {
+       "t_raw": "Kazuha's Friend가 이에 반대해 **duel before the throne**을 신청하자 Shogun은 Kujou Sara를 대신 보내 그와 싸우게 했고, Kujou Sara가 이기자 규칙에 따라 Musou no Hitotachi로 그를 처형했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카에데하라 카즈하의 친구가 이에 반대해 **어전 시합**을 신청하자 쇼군은 쿠죠 사라를 대신 보내 그와 싸우게 했고, 쿠죠 사라가 이기자 규칙에 따라 무상의 일태도로 그를 처형했다.",
+       "polish": {
+        "from": "카에데하라 카즈하의 친구가 이에 반대해 **duel before the throne**을 신청하자 쇼군은 쿠죠 사라를 대신 보내 그와 싸우게 했고, 쿠죠 사라가 이기자 규칙에 따라 무상의 일태도로 그를 처형했다.",
+        "text": "카에데하라 카즈하의 친구가 이에 반대해 **어전 시합**을 신청하자 쇼군은 쿠죠 사라를 대신 보내 그와 싸우게 했고, 쿠죠 사라가 이기자 규칙에 따라 무상의 일태도로 그를 처형했다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Traveler가 Inazuma에 도착했을 때 나라는 Vision Hunt Decree와 Sakoku Decree, Shogunate와 Resistance의 내전으로 혼란스러웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 이나즈마에 도착했을 때 나라는 안수령과 쇄국령, 막부와 저항군의 내전으로 혼란스러웠다."
+      },
+      {
+       "t_raw": "Shogun은 Kamisato Clan, Tri-Commission을 이루는 세 가문 중 하나와 연이 있는 Thoma를 붙잡아 Vision을 빼앗으려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 카미사토 가문, 삼봉행(三奉行)을 이루는 세 가문 중 하나와 연이 있는 토마를 붙잡아 신의 눈을 빼앗으려 했다."
+      },
+      {
+       "t_raw": "Traveler가 개입하자 Traveler는 Plane of Euthymia로 끌려가 Ei에게 패해 쫓겨났고, Shogun은 이어 Traveler를 처형하려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "여행자가 개입하자 여행자는 일심정토로 끌려가 라이덴 에이(影)에게 패해 쫓겨났고, 쇼군은 이어 여행자를 처형하려 했다."
+      },
+      {
+       "t_raw": "Thoma가 결박을 풀고 창을 던져 방해하자 Shogun은 처형을 중단했고, 둘은 탈출했으며 Shogun은 Traveler 체포를 명했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "토마가 결박을 풀고 창을 던져 방해하자 쇼군은 처형을 중단했고, 둘은 탈출했으며 쇼군은 여행자 체포를 명했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A4",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Traveler/Profile",
+       "revision": 1152562,
+       "section": "Story > History",
+       "paragraph": "M12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 안수령과 이나즈마 초기",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Inazuma Archon Quest",
+     "status": "accepted",
+     "note": "Sentence 1 says the Shogun scolded Sara for punishing a subject. The English says Signora knocked Sara out and the Shogun chastised Signora, because only the Shogun may punish a subject.",
+     "quote": "After learning the extent of the Fatui manipulation in Inazuma, Kujou Sara attempted to inform the Shogun, but was instead knocked out by La Signora when she arrived.",
+     "sentences": [
+      {
+       "t_raw": "Inazuma에서 Fatui의 조종이 어디까지 이어졌는지 알게 된 Kujou Sara는 Shogun에게 이를 알리려 했지만, 도착한 La Signora에게 제압당했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이나즈마에서 우인단의 조종이 어디까지 이어졌는지 알게 된 쿠죠 사라는 쇼군에게 이를 알리려 했지만, 도착한 「시뇨라」에게 제압당했다."
+      },
+      {
+       "t_raw": "Shogun은 자신의 신하인 Sara를 기절시킨 Signora를 꾸짖으며, 신하를 벌하는 일은 오직 자신만이 할 수 있다고 선언했다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "쇼군은 자신의 신하인 사라를 기절시킨 시뇨라를 꾸짖으며, 신하를 벌하는 일은 오직 자신만이 할 수 있다고 선언했다."
+      },
+      {
+       "t_raw": "이어 Traveler가 Fatui의 음모를 알렸지만, Shogun은 납득한 기색을 보이지 않고 **duel before the throne**을 명했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이어 여행자가 우인단의 음모를 알렸지만, 쇼군은 납득한 기색을 보이지 않고 **어전 시합**을 명했다.",
+       "polish": {
+        "from": "이어 여행자가 우인단의 음모를 알렸지만, 쇼군은 납득한 기색을 보이지 않고 **duel before the throne**을 명했다.",
+        "text": "이어 여행자가 우인단의 음모를 알렸지만, 쇼군은 납득한 기색을 보이지 않고 **어전 시합**을 명했다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A5",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이나즈마 마신 임무",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Inazuma Archon Quest",
+     "status": "accepted",
+     "note": "All sentences match the duel, execution, and Kazuha parry text.",
+     "quote": "Signora, overconfident in her powers, was defeated by the Traveler and per the rules of the duel, the Shogun moved in to execute her with the Musou no Hitotachi.",
+     "sentences": [
+      {
+       "t_raw": "duel before the throne에서 Signora는 자신의 힘을 과신한 채 Traveler에게 패했고, 규칙에 따라 Shogun이 **Musou no Hitotachi**로 그녀를 처형했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "어전 시합에서 시뇨라는 자신의 힘을 과신한 채 여행자에게 패했고, 규칙에 따라 쇼군이 **무상의 일태도**로 그녀를 처형했다.",
+       "polish": {
+        "from": "duel before the throne에서 시뇨라는 자신의 힘을 과신한 채 여행자에게 패했고, 규칙에 따라 쇼군이 **무상의 일태도**로 그녀를 처형했다.",
+        "text": "어전 시합에서 시뇨라는 자신의 힘을 과신한 채 여행자에게 패했고, 규칙에 따라 쇼군이 **무상의 일태도**로 그녀를 처형했다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "상대가 외교관이자 Fatui Harbinger였음에도 Shogun이 직접 처형한 것은, duel의 규칙이 신분과 무관하게 집행된 장면으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "상대가 외교관이자 우인단 집행관였음에도 쇼군이 직접 처형한 것은, 결투의 규칙이 신분과 무관하게 집행된 장면으로 보인다.",
+       "polish": {
+        "from": "상대가 외교관이자 우인단 집행관였음에도 쇼군이 직접 처형한 것은, duel의 규칙이 신분과 무관하게 집행된 장면으로 보인다.",
+        "text": "상대가 외교관이자 우인단 집행관였음에도 쇼군이 직접 처형한 것은, 결투의 규칙이 신분과 무관하게 집행된 장면으로 보인다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Signora는 이 기술로 처형된 알려진 희생자 가운데 하나다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시뇨라는 이 기술로 처형된 알려진 희생자 가운데 하나다."
+      },
+      {
+       "t_raw": "Shogun은 Traveler 일행이 성 밖으로 나가도록 허락했지만, Tenshukaku 밖으로 나선 순간 Musou no Hitotachi로 베려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 여행자 일행이 성 밖으로 나가도록 허락했지만, 천수각 밖으로 나선 순간 무상의 일태도로 베려 했다."
+      },
+      {
+       "t_raw": "그때 저항군과 함께 도착한 Kazuha가 자신과 친구의 Vision으로 그 일격을 막아섰다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그때 저항군과 함께 도착한 카즈하가 자신과 친구의 신의 눈으로 그 일격을 막아섰다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Musou no Hitotachi",
+       "revision": 513919,
+       "section": "Overview",
+       "paragraph": "M9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이나즈마 마신 임무",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Inazuma Archon Quest",
+     "status": "accepted",
+     "note": "",
+     "quote": "The Shogun then tries to cut them down as they leave Tenshukaku, but the timely arrival of the resistance allows the Traveler to confront Ei once more",
+     "sentences": [
+      {
+       "t_raw": "Kazuha가 일격을 막아선 뒤, Shogun이 저항군을 공격하기 전에 Traveler가 먼저 공격했고, 그로 인해 Traveler는 Plane of Euthymia로 끌려가 Ei를 이겼다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카즈하가 일격을 막아선 뒤, 쇼군이 저항군을 공격하기 전에 여행자가 먼저 공격했고, 그로 인해 여행자는 일심정토로 끌려가 라이덴 에이(影)를 이겼다."
+      },
+      {
+       "t_raw": "Ei는 관점을 바꾸겠다고 인정하고 Shogun에게도 그렇게 하려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)는 관점을 바꾸겠다고 인정하고 쇼군에게도 그렇게 하려 했다."
+      },
+      {
+       "t_raw": "빼앗긴 Vision들의 염원을 등에 업은 Traveler의 승리로 **Vision Hunt Decree 폐지**가 이루어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "빼앗긴 신의 눈들의 염원을 등에 업은 여행자의 승리로 **안수령 폐지**가 이루어졌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Traveler/Profile",
+       "revision": 1152562,
+       "section": "Story > History",
+       "paragraph": "M12",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "작중 행적 — 이나즈마 마신 임무",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Ei와의 대립과 화해",
+     "status": "accepted",
+     "note": "",
+     "quote": "The Shogun, having been designed to resist change, instead believed that Ei was succumbing to erosion and tried to stop her by refusing to comply with her orders as riftwolves were emerging in Inazuma.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 **변화에 저항하도록 설계**되었기에, Traveler에게 Ei가 패배한 뒤에도 Ei의 바뀐 태도를 곧바로 받아들이지 않았다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 **변화에 저항하도록 설계**되었기에, 여행자에게 라이덴 에이(影)가 패배한 뒤에도 라이덴 에이(影)의 바뀐 태도를 곧바로 받아들이지 않았다."
+      },
+      {
+       "t_raw": "그녀는 Ei가 **Erosion**에 잠식되었다고 여기며 옛 영원관을 지키려 공개적으로 저항했고, riftwolves가 Inazuma에 나타나던 때에는 Ei의 명령에 따르기를 거부해 몸을 멈췄다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그녀는 라이덴 에이(影)가 **마모**에 잠식되었다고 여기며 옛 영원관을 지키려 공개적으로 저항했고, 균열 늑대가 이나즈마에 나타나던 때에는 라이덴 에이(影)의 명령에 따르기를 거부해 몸을 멈췄다.",
+       "polish": {
+        "from": "그녀는 라이덴 에이(影)가 **마모**에 잠식되었다고 여기며 옛 영원관을 지키려 공개적으로 저항했고, riftwolves가 이나즈마에 나타나던 때에는 라이덴 에이(影)의 명령에 따르기를 거부해 몸을 멈췄다.",
+        "text": "그녀는 라이덴 에이(影)가 **마모**에 잠식되었다고 여기며 옛 영원관을 지키려 공개적으로 저항했고, 균열 늑대가 이나즈마에 나타나던 때에는 라이덴 에이(影)의 명령에 따르기를 거부해 몸을 멈췄다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Ei는 자신이 부패하지 않았음을 증명하려 Makoto의 consciousness 안에서 Shogun에게 도전했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)는 자신이 부패하지 않았음을 증명하려 마코토의 의식 안에서 쇼군에게 도전했다.",
+       "polish": {
+        "from": "라이덴 에이(影)는 자신이 부패하지 않았음을 증명하려 마코토의 consciousness 안에서 쇼군에게 도전했다.",
+        "text": "라이덴 에이(影)는 자신이 부패하지 않았음을 증명하려 마코토의 의식 안에서 쇼군에게 도전했다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "puppet인 Shogun도 자기 의식을 지니고 있어 필요할 때 Ei 앞에 나타나 대립한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "인형인 쇼군도 자기 의식을 지니고 있어 필요할 때 라이덴 에이(影) 앞에 나타나 대립한다.",
+       "polish": {
+        "from": "puppet인 쇼군도 자기 의식을 지니고 있어 필요할 때 라이덴 에이(影) 앞에 나타나 대립한다.",
+        "text": "인형인 쇼군도 자기 의식을 지니고 있어 필요할 때 라이덴 에이(影) 앞에 나타나 대립한다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "이는 변화를 막는 설계와 창조자의 변화가 정면으로 부딪힌 사례인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이는 변화를 막는 설계와 창조자의 변화가 정면으로 부딪힌 사례인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Transient Dreams"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A11",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Raiden Shogun"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Farewell to the Past",
+       "quest_ko": "과거를 끊는 여정",
+       "version": "2.5",
+       "speaker": "Ei"
+      }
+     ],
+     "heading": "작중 행적 — 라이덴 에이(影)와의 대립과 화해",
+     "latin_left": []
+    },
+    {
+     "section": "작중 행적 — Ei와의 대립과 화해",
+     "status": "accepted",
+     "note": "",
+     "quote": "My body has fully recovered, and the Shogun's will no longer fights against me.",
+     "sentences": [
+      {
+       "t_raw": "두 존재는 시공간의 뒤틀림과 Shogun의 의지로 **오백 년** 동안 계속된 결투를 벌였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "두 존재는 시공간의 뒤틀림과 쇼군의 의지로 **오백 년** 동안 계속된 결투를 벌였다."
+      },
+      {
+       "t_raw": "Ei는 새로운 관점 덕분에 Shogun을 이겼고, Shogun은 패배를 받아들였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)는 새로운 관점 덕분에 쇼군을 이겼고, 쇼군은 패배를 받아들였다."
+      },
+      {
+       "t_raw": "Ei는 Shogun에게 자신의 대역을 맡아 달라고 청했고, Shogun은 이를 받아들였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)는 쇼군에게 자신의 대역을 맡아 달라고 청했고, 쇼군은 이를 받아들였다."
+      },
+      {
+       "t_raw": "이후 Ei의 몸이 완전히 회복되면서 Shogun의 의지는 더 이상 Ei와 싸우지 않게 되었고, 두 존재는 화해했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "이후 라이덴 에이(影)의 몸이 완전히 회복되면서 쇼군의 의지는 더 이상 라이덴 에이(影)와 싸우지 않게 되었고, 두 존재는 화해했다."
+      },
+      {
+       "t_raw": "결국 변화를 거부하던 Shogun이 Ei의 변화한 뜻을 받아들이고 대역이 된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "결국 변화를 거부하던 쇼군이 라이덴 에이(影)의 변화한 뜻을 받아들이고 대역이 된 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Transient Dreams"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A11",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Raiden Shogun"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Radiant Sakura",
+       "quest_ko": "찬란하게 빛나는 벚꽃",
+       "version": "2.5",
+       "speaker": "Ei"
+      }
+     ],
+     "heading": "작중 행적 — 라이덴 에이(影)와의 대립과 화해",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "",
+     "quote": "the resulting slash split Yashiori Island in half and created Musoujin Gorge.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 Ei를 전투 중에 담는 검인 **Musou Isshin**을 휘두르며 Inazuma의 폭풍과 연결되어 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 라이덴 에이(影)를 전투 중에 담는 검인 **몽상의 일심**을 휘두르며 이나즈마의 폭풍과 연결되어 있다."
+      },
+      {
+       "t_raw": "Shogun은 **Musou no Hitotachi**의 행사자로 알려져 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 **무상의 일태도**의 행사자로 알려져 있다."
+      },
+      {
+       "t_raw": "Ei가 Watatsumi Island insurrection 때 Orobashi와 Akuou에게 이 기술을 사용했고, 그 일격은 Yashiori Island를 둘로 갈라 Musoujin Gorge를 만들었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)가 와타츠미섬 반란 때 오로바시 님과 아쿠오에게 이 기술을 사용했고, 그 일격은 야시오리섬을 둘로 갈라 무상도의 협곡을 만들었다.",
+       "polish": {
+        "from": "라이덴 에이(影)가 와타츠미섬 insurrection 때 오로바시 님과 아쿠오에게 이 기술을 사용했고, 그 일격은 야시오리섬을 둘로 갈라 무상도의 협곡을 만들었다.",
+        "text": "라이덴 에이(影)가 와타츠미섬 반란 때 오로바시 님과 아쿠오에게 이 기술을 사용했고, 그 일격은 야시오리섬을 둘로 갈라 무상도의 협곡을 만들었다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "Shogun은 **duel before the throne**에서 패한 자를 같은 기술로 처벌했으며, 알려진 희생자는 Kazuha's Friend와 Signora다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 **어전 시합**에서 패한 자를 같은 기술로 처벌했으며, 알려진 희생자는 카에데하라 카즈하의 친구와 시뇨라다.",
+       "polish": {
+        "from": "쇼군은 **duel before the throne**에서 패한 자를 같은 기술로 처벌했으며, 알려진 희생자는 카에데하라 카즈하의 친구와 시뇨라다.",
+        "text": "쇼군은 **어전 시합**에서 패한 자를 같은 기술로 처벌했으며, 알려진 희생자는 카에데하라 카즈하의 친구와 시뇨라다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Farewell to the Past"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Musou no Hitotachi",
+       "revision": 513919,
+       "section": "Known Practitioners",
+       "paragraph": "M2",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Musou no Hitotachi",
+       "revision": 513919,
+       "section": "Overview",
+       "paragraph": "M9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Sentence 1 treats the disregard of consequences, suffering, and reputation as a result of her exalted position and being unchallengeable. The English ties that ruthlessness to limited emotion, and states status and strength only as why she cannot be pushed back or argued with.",
+     "quote": "Due to her exalted position and strength, she cannot be pushed back in battle nor argued against.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 높은 지위와 힘 때문에 전투에서 밀리지 않고 반박당하지도 않는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 높은 지위와 힘 때문에 전투에서 밀리지 않고 반박당하지도 않는다."
+      },
+      {
+       "t_raw": "그녀의 제한된 감정 능력은 무관심과 무자비함으로 드러나, 결과를 좇을 때는 행동이 낳을 결과나 고통, 자신이 어떻게 보일지도 아랑곳하지 않으며, 높은 지위와 힘 때문에 전투에서 밀려나지도 논쟁에서 꺾이지도 않는다.",
+       "interp": false,
+       "dropped": false,
+       "repaired": true,
+       "t": "그녀의 제한된 감정 능력은 무관심과 무자비함으로 드러나, 결과를 좇을 때는 행동이 낳을 결과나 고통, 자신이 어떻게 보일지도 아랑곳하지 않으며, 높은 지위와 힘 때문에 전투에서 밀려나지도 논쟁에서 꺾이지도 않는다."
+      },
+      {
+       "t_raw": "인형인 Shogun은 도덕 관념에 매이지 않고 긍정적이라고 판단한 결과에 따라 움직이며, 그 때문에 외부 세력에 쉽게 조종될 수 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "인형인 쇼군은 도덕 관념에 매이지 않고 긍정적이라고 판단한 결과에 따라 움직이며, 그 때문에 외부 세력에 쉽게 조종될 수 있다."
+      },
+      {
+       "t_raw": "Shogun은 제작 시 정해진 규칙을 따르며, 그 규칙은 바꾸거나 끌 수 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 제작 시 정해진 규칙을 따르며, 그 규칙은 바꾸거나 끌 수 없다."
+      },
+      {
+       "t_raw": "전투에서 밀리지 않는 힘과 변경 불가능한 규칙이 함께 있는 존재라는 점에서, Shogun은 강력한 전투자이면서도 규칙 밖으로 나가기 어려운 인형인 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "전투에서 밀리지 않는 힘과 변경 불가능한 규칙이 함께 있는 존재라는 점에서, 쇼군은 강력한 전투자이면서도 규칙 밖으로 나가기 어려운 인형인 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Farewell to the Past"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A9",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "능력",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계와 사회적 위상",
+     "status": "accepted",
+     "note": "",
+     "quote": "The Shogun's Army has Kujou Sara's leadership to thank in large part for the fearlessness and unity of its soldiery.",
+     "sentences": [
+      {
+       "t_raw": "Shogun's Army는 Ei의 군대이며, Kujou Sara의 지휘는 병사들의 두려움 없음과 단결에 큰 몫을 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군의 군대는 라이덴 에이(影)의 군대이며, 쿠죠 사라의 지휘는 병사들의 두려움 없음과 단결에 큰 몫을 했다."
+      },
+      {
+       "t_raw": "Kujou Sara가 Shogun을 따르는 것은 인정과 신뢰에서 나온 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쿠죠 사라가 쇼군을 따르는 것은 인정과 신뢰에서 나온 것이다."
+      },
+      {
+       "t_raw": "계급은 Tokugawa shogunate의 군제를 모델로 했고, Kaji는 군대가 노동자들을 꽤 잘 대우한다고 하면서도 이곳에서는 군인의 말을 들어야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "계급은 도쿠가와 막부의 군제를 모델로 했고, 카지는 군대가 노동자들을 꽤 잘 대우한다고 하면서도 이곳에서는 군인의 말을 들어야 한다고 말한다.",
+       "polish": {
+        "from": "계급은 도쿠가와 shogunate의 군제를 모델로 했고, 카지는 군대가 노동자들을 꽤 잘 대우한다고 하면서도 이곳에서는 군인의 말을 들어야 한다고 말한다.",
+        "text": "계급은 도쿠가와 막부의 군제를 모델로 했고, 카지는 군대가 노동자들을 꽤 잘 대우한다고 하면서도 이곳에서는 군인의 말을 들어야 한다고 말한다.",
+        "by": "or-ds"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Shogun's Army",
+       "revision": 727683,
+       "section": null,
+       "paragraph": "M3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kujou Sara/Profile",
+       "revision": 424836,
+       "section": "Character Stories > Story 2",
+       "paragraph": "M5",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kujou Sara/Profile",
+       "revision": 424836,
+       "section": "Character Stories > Statue of Her Excellency, the Almighty Narukami Ogosho, God of Thunder",
+       "paragraph": "M8",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Shogun's Army",
+       "revision": 727683,
+       "section": "Ranks",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kaji",
+       "revision": 521766,
+       "section": "Dialogue",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "인간관계와 사회적 위상",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계와 사회적 위상",
+     "status": "accepted",
+     "note": "All sentences are supported by M10 and M11.",
+     "quote": "The Shogun was unhappy with the extent of the deception and Takayuki \"aged\" overnight, losing his will, conviction and position",
+     "sentences": [
+      {
+       "t_raw": "Kujou Takayuki는 Vision Hunt Decree를 전달하려 Fatui와 공모하고 가문의 영향력을 지키려 Shogun에게 거짓 편지를 보냈다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쿠죠 타카유키는 안수령을 전달하려 우인단과 공모하고 가문의 영향력을 지키려 쇼군에게 거짓 편지를 보냈다."
+      },
+      {
+       "t_raw": "속임수가 드러나자 Shogun은 불쾌해했고, Takayuki는 의지와 신념과 지위를 잃고 가택 연금에서 처벌을 기다린다.",
+       "interp": false,
+       "dropped": false,
+       "t": "속임수가 드러나자 쇼군은 불쾌해했고, 타카유키는 의지와 신념과 지위를 잃고 가택 연금에서 처벌을 기다린다."
+      },
+      {
+       "t_raw": "Kamisato Clan은 Yashiro Commission의 실패로 명성을 잃고 Fatui의 괴롭힘을 겪었으나, Yae Miko의 변호 뒤 Shogun이 처벌하지 않자 은혜에 감사하여 Shogun을 영원히 섬기겠다고 맹세했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "카미사토 가문은 야시로 봉행의 실패로 명성을 잃고 우인단의 괴롭힘을 겪었으나, 야에 미코의 변호 뒤 쇼군이 처벌하지 않자 은혜에 감사하여 쇼군을 영원히 섬기겠다고 맹세했다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Kujou Takayuki",
+       "revision": 425202,
+       "section": "Profile",
+       "paragraph": "M10",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Raiden Gokaden",
+       "revision": 1208387,
+       "section": "History > Case of the Eccentric",
+       "paragraph": "M11",
+       "wiki_refs": [
+        {
+         "type": "vo",
+         "name": "Kamisato Ayaka"
+        },
+        {
+         "type": "cs",
+         "name": "Yae Miko"
+        }
+       ]
+      }
+     ],
+     "heading": "인간관계와 사회적 위상",
+     "latin_left": []
+    },
+    {
+     "section": "인간관계와 사회적 위상",
+     "status": "accepted",
+     "note": "Both quotes are supported by Q8 and Q2. The interpretation follows from them.",
+     "quote": "Yes... we were right to place our trust in the Almighty Shogun. As long as the Shogun is with us, Inazuma will last for an eternity...",
+     "sentences": [
+      {
+       "t_raw": "Kitamura는 Shogun을 믿은 것이 옳았다고 말하며, Shogun이 함께하는 한 Inazuma가 영원히 지속될 것이라고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "키타무라는 쇼군을 믿은 것이 옳았다고 말하며, 쇼군이 함께하는 한 이나즈마가 영원히 지속될 것이라고 한다."
+      },
+      {
+       "t_raw": "Yae Miko는 Grand Narukami Shrine에서의 행동이 결국 Shogun 자신을 무시하는 것과 같다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "야에 미코는 나루카미 다이샤에서의 행동이 결국 쇼군 자신을 무시하는 것과 같다고 말한다."
+      },
+      {
+       "t_raw": "이처럼 Shogun은 신뢰와 존중의 중심에 서 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "이처럼 쇼군은 신뢰와 존중의 중심에 서 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "Cleansing Light",
+       "quest_ko": "오염된 빛 정화",
+       "version": "2.5",
+       "speaker": "Kitamura"
+      },
+      {
+       "kind": "quest",
+       "quest": "To the Shrine",
+       "quest_ko": "신사로의 여정",
+       "version": "2.7",
+       "speaker": "Yae Miko"
+      }
+     ],
+     "heading": "인간관계와 사회적 위상",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A2, Q9 and Q10. The interpretation is reasonable.",
+     "quote": "Though she is a puppet, the Shogun has her own consciousness, too. When necessary, she appears here to confront me.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 Ei가 만든 두 번째 인형으로, **자신의 의식**을 지닌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 라이덴 에이(影)가 만든 두 번째 인형으로, **자신의 의식**을 지닌다."
+      },
+      {
+       "t_raw": "Ei는 그 Shogun이 필요할 때 자신 앞에 나타나 맞선다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)는 그 쇼군이 필요할 때 자신 앞에 나타나 맞선다고 말한다."
+      },
+      {
+       "t_raw": "Ei의 몸이 회복된 뒤 Shogun의 의지가 더 이상 Ei와 싸우지 않게 되었다는 점은 두 의지가 한때 맞섰음을 보여 준다.",
+       "interp": true,
+       "dropped": false,
+       "t": "라이덴 에이(影)의 몸이 회복된 뒤 쇼군의 의지가 더 이상 라이덴 에이(影)와 싸우지 않게 되었다는 점은 두 의지가 한때 맞섰음을 보여 준다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Farewell to the Past"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "Farewell to the Past",
+       "quest_ko": "과거를 끊는 여정",
+       "version": "2.5",
+       "speaker": "Ei"
+      },
+      {
+       "kind": "quest",
+       "quest": "Radiant Sakura",
+       "quest_ko": "찬란하게 빛나는 벚꽃",
+       "version": "2.5",
+       "speaker": "Ei"
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A2, A6 and A11. The interpretation is hedged and reasonable.",
+     "quote": "The Shogun was created with a set list of rules that cannot be altered or shut off.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 바꾸거나 끌 수 없는 규칙 목록으로 만들어졌고, 변화에 저항하도록 설계되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 바꾸거나 끌 수 없는 규칙 목록으로 만들어졌고, 변화에 저항하도록 설계되었다."
+      },
+      {
+       "t_raw": "Ei가 Erosion에 들었다고 판단하자 명령을 거부했고, **공개적으로 반항**해 옛 영원 관념을 지키려 했다.",
+       "interp": false,
+       "dropped": false,
+       "t": "라이덴 에이(影)가 마모에 들었다고 판단하자 명령을 거부했고, **공개적으로 반항**해 옛 영원 관념을 지키려 했다."
+      },
+      {
+       "t_raw": "Makoto의 의식 안에서 오백 년 동안 Ei와 결투한 끝에 패배해 Ei의 대역이 되기를 받아들였다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마코토의 의식 안에서 오백 년 동안 라이덴 에이(影)와 결투한 끝에 패배해 라이덴 에이(影)의 대역이 되기를 받아들였다."
+      },
+      {
+       "t_raw": "**고정된 규칙**과 달리 Ei의 대역을 받아들인 변화는 규칙의 변경 가능성을 남긴 물음이라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "**고정된 규칙**과 달리 라이덴 에이(影)의 대역을 받아들인 변화는 규칙의 변경 가능성을 남긴 물음이라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Farewell to the Past"
+        },
+        {
+         "type": "quest",
+         "name": "The Lonesome Euthymia"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile",
+       "paragraph": "A6",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "Transient Dreams"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A11",
+       "wiki_refs": [
+        {
+         "type": "cs",
+         "name": "Raiden Shogun"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by A7 and A8. The interpretation follows from A8.",
+     "quote": "Although she notably allowed the people of Watatsumi Island worship Orobaxi as their god after slaying him.",
+     "sentences": [
+      {
+       "t_raw": "Shogun은 인형이라 오락이나 음식이 필요 없고, 감정 표현도 제한적이어서 뚜렷한 좋고 싫음이 없다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군은 인형이라 오락이나 음식이 필요 없고, 감정 표현도 제한적이어서 뚜렷한 좋고 싫음이 없다."
+      },
+      {
+       "t_raw": "그래도 Traveler를 무례하다고 부르는 음성 대사에서는 예의와 격식을 중시하는 면이 드러난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그래도 여행자를 무례하다고 부르는 음성 대사에서는 예의와 격식을 중시하는 면이 드러난다."
+      },
+      {
+       "t_raw": "Watatsumi Island 사람들이 Orobaxi를 신으로 숭배하는 일은 그를 벤 뒤에 허용되었다.",
+       "interp": false,
+       "dropped": false,
+       "t": "와타츠미섬 사람들이 오로바스를 신으로 숭배하는 일은 그를 벤 뒤에 허용되었다."
+      },
+      {
+       "t_raw": "Orobaxi를 벤 뒤 그 숭배를 허락한 것은, 그 일이 임무와 Inazuma의 영원에 위협이 되는지를 살폈다는 판단 방식과 맞닿아 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "오로바스를 벤 뒤 그 숭배를 허락한 것은, 그 일이 임무와 이나즈마의 영원에 위협이 되는지를 살폈다는 판단 방식과 맞닿아 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A7",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "The Shogun",
+       "revision": 1238123,
+       "section": "Profile > Personality",
+       "paragraph": "A8",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Supported by M6 and M7.",
+     "quote": "The Shogun's army treats us pretty well... It's just that we workers used to be in charge in the mines. Here, we need to listen to the soldiers.",
+     "sentences": [
+      {
+       "t_raw": "Shogun's Army에는 여러 계급이 있고, 그 체계는 Tokugawa shogunate의 군제를 본떴다.",
+       "interp": false,
+       "dropped": false,
+       "t": "쇼군의 군대에는 여러 계급이 있고, 그 체계는 도쿠가와 막부의 군제를 본떴다.",
+       "polish": {
+        "from": "쇼군의 군대에는 여러 계급이 있고, 그 체계는 도쿠가와 shogunate의 군제를 본떴다.",
+        "text": "쇼군의 군대에는 여러 계급이 있고, 그 체계는 도쿠가와 막부의 군제를 본떴다.",
+        "by": "or-ds"
+       }
+      },
+      {
+       "t_raw": "광산 노동자 Kaji는 Shogun's Army가 자신들을 꽤 잘 대우한다면서도, 예전에는 광산에서 노동자들이 앞장섰지만 이곳에서는 군인들의 말을 들어야 한다고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "광산 노동자 카지는 쇼군의 군대가 자신들을 꽤 잘 대우한다면서도, 예전에는 광산에서 노동자들이 앞장섰지만 이곳에서는 군인들의 말을 들어야 한다고 말한다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Shogun's Army",
+       "revision": 727683,
+       "section": "Ranks",
+       "paragraph": "M6",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Kaji",
+       "revision": 521766,
+       "section": "Dialogue",
+       "paragraph": "M7",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "여담",
+     "latin_left": []
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "All pass. Q2, Q3, Q6 and Q7 support sentences 0-2, and sentence 3 is a reasonable interpretation.",
+     "quote": "He did say that the Shogun would definitely not wanna miss the Almighty Arataki Great and Glorious Drumalong Festival, after all!",
+     "sentences": [
+      {
+       "t_raw": "Grand Narukami Shrine에서의 행동은 결국 Shogun 본인을 무시하는 것과 다름없다고 Yae Miko는 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "나루카미 다이샤에서의 행동은 결국 쇼군 본인을 무시하는 것과 다름없다고 야에 미코는 말한다."
+      },
+      {
+       "t_raw": "Mamoru는 Shogun이 Almighty Arataki Great and Glorious Drumalong Festival을 분명 놓치고 싶어 하지 않을 것이라고 전한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "마모루는 쇼군이 아라타키 천하제일 초호화 북 축제를 분명 놓치고 싶어 하지 않을 것이라고 전한다."
+      },
+      {
+       "t_raw": "시가에서는 Suikou가 술에 취해 Shogun에게 바칠 시를 도둑맞게 했다는 이야기가 전해지고, 또 다른 이야기에서는 Akahito가 잘못을 저질러 Shogun에게 유배되었다고 한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "시가에서는 수광이 술에 취해 쇼군에게 바칠 시를 도둑맞게 했다는 이야기가 전해지고, 또 다른 이야기에서는 Akahito가 잘못을 저질러 쇼군에게 유배되었다고 한다."
+      },
+      {
+       "t_raw": "축제와 시가, 유배 이야기에서 Shogun의 이름이 반복해서 등장하는 것은 그가 Inazuma의 문화 속에서도 준거점으로 여겨진다는 뜻으로 읽힌다.",
+       "interp": true,
+       "dropped": false,
+       "t": "축제와 시가, 유배 이야기에서 쇼군의 이름이 반복해서 등장하는 것은 그가 이나즈마의 문화 속에서도 준거점으로 여겨진다는 뜻으로 읽힌다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "To the Shrine",
+       "quest_ko": "신사로의 여정",
+       "version": "2.7",
+       "speaker": "Yae Miko"
+      },
+      {
+       "kind": "quest",
+       "quest": "Festival Afterword",
+       "quest_ko": "축제 뒷이야기",
+       "version": "2.7",
+       "speaker": "Mamoru"
+      },
+      {
+       "kind": "quest",
+       "quest": "The Strange Tale of Suikou's Tipsy Tincture (Quest)",
+       "quest_ko": "취중 취암의 괴이한 사건",
+       "version": "2.6",
+       "speaker": "Venti"
+      },
+      {
+       "kind": "quest",
+       "quest": "A New Painting in Pale Scarlet (Quest)",
+       "quest_ko": "옅은 주홍색의 새 그림",
+       "version": "2.6",
+       "speaker": "Paimon"
+      }
+     ],
+     "heading": "여담",
+     "latin_left": [
+      "Akahito"
+     ]
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation of Kitamura's line.",
+     "t_raw": "그래... 우리가 전능하신 Shogun을 믿은 것은 옳았어. Shogun이 우리와 함께 있는 한, Inazuma는 영원히 지속될 거야...",
+     "en": "Yes... we were right to place our trust in the Almighty Shogun. As long as the Shogun is with us, Inazuma will last for an eternity...",
+     "speaker": "Kitamura",
+     "source": {
+      "kind": "quest",
+      "quest": "Cleansing Light",
+      "quest_ko": "오염된 빛 정화",
+      "version": "2.5",
+      "speaker": "Kitamura"
+     },
+     "t": "그래... 우리가 전능하신 쇼군을 믿은 것은 옳았어. 쇼군이 우리와 함께 있는 한, 이나즈마는 영원히 지속될 거야...",
+     "speaker_ko": "키타무라"
+    },
+    {
+     "section": "정체와 배경",
+     "status": "accepted",
+     "note": "Faithful translation of Ei's line.",
+     "t_raw": "그녀는 인형이지만, Shogun은 자신만의 의식도 지니고 있다. 필요할 때, 그녀는 나와 맞서기 위해 이곳에 나타난다.",
+     "en": "Though she is a puppet, the Shogun has her own consciousness, too. When necessary, she appears here to confront me.",
+     "speaker": "Ei",
+     "source": {
+      "kind": "quest",
+      "quest": "Farewell to the Past",
+      "quest_ko": "과거를 끊는 여정",
+      "version": "2.5",
+      "speaker": "Ei"
+     },
+     "t": "그녀는 인형이지만, 쇼군은 자신만의 의식도 지니고 있다. 필요할 때, 그녀는 나와 맞서기 위해 이곳에 나타난다.",
+     "speaker_ko": "라이덴 에이(影)"
+    },
+    {
+     "section": "작중 행적 — Ei와의 대립과 화해",
+     "status": "accepted",
+     "note": "Faithful translation of Ei's line.",
+     "t_raw": "내 몸은 완전히 회복되었고, Shogun의 의지는 더 이상 나를 상대로 싸우지 않는다.",
+     "en": "My body has fully recovered, and the Shogun's will no longer fights against me.",
+     "speaker": "Ei",
+     "source": {
+      "kind": "quest",
+      "quest": "Radiant Sakura",
+      "quest_ko": "찬란하게 빛나는 벚꽃",
+      "version": "2.5",
+      "speaker": "Ei"
+     },
+     "t": "내 몸은 완전히 회복되었고, 쇼군의 의지는 더 이상 나를 상대로 싸우지 않는다.",
+     "speaker_ko": "라이덴 에이(影)"
+    },
+    {
+     "section": "능력",
+     "status": "accepted",
+     "note": "Faithful translation of the Isshin Blade line.",
+     "t_raw": "내가 그 힘을 Shogun에게 증명할 자가 아니더라도...",
+     "en": "Even if I am not the one to prove its might to the Shogun...",
+     "speaker": "Prized Isshin Blade",
+     "source": {
+      "kind": "quest",
+      "quest": "Ere the End, a Glance Back",
+      "quest_ko": "궁지에서 나오는 길",
+      "version": "2.8",
+      "speaker": "Prized Isshin Blade"
+     },
+     "t": "내가 그 힘을 쇼군에게 증명할 자가 아니더라도...",
+     "speaker_ko": "「잇신의 기술」 명검"
+    },
+    {
+     "section": "인간관계와 사회적 위상",
+     "status": "accepted",
+     "note": "Faithful translation of Kitamura's line.",
+     "t_raw": "그래... 우리가 전능하신 Shogun을 믿은 것은 옳았어. Shogun이 우리와 함께 있는 한, Inazuma는 영원히 지속될 거야...",
+     "en": "Yes... we were right to place our trust in the Almighty Shogun. As long as the Shogun is with us, Inazuma will last for an eternity...",
+     "speaker": "Kitamura",
+     "source": {
+      "kind": "quest",
+      "quest": "Cleansing Light",
+      "quest_ko": "오염된 빛 정화",
+      "version": "2.5",
+      "speaker": "Kitamura"
+     },
+     "t": "그래... 우리가 전능하신 쇼군을 믿은 것은 옳았어. 쇼군이 우리와 함께 있는 한, 이나즈마는 영원히 지속될 거야...",
+     "speaker_ko": "키타무라"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Faithful translation of Ei's line.",
+     "t_raw": "Shogun은 인형이지만, 그녀 역시 자신의 의식을 지니고 있다. 필요할 때 그녀는 이곳에 나타나 나와 맞선다.",
+     "en": "Though she is a puppet, the Shogun has her own consciousness, too. When necessary, she appears here to confront me.",
+     "speaker": "Ei",
+     "source": {
+      "kind": "quest",
+      "quest": "Farewell to the Past",
+      "quest_ko": "과거를 끊는 여정",
+      "version": "2.5",
+      "speaker": "Ei"
+     },
+     "t": "쇼군은 인형이지만, 그녀 역시 자신의 의식을 지니고 있다. 필요할 때 그녀는 이곳에 나타나 나와 맞선다.",
+     "speaker_ko": "라이덴 에이(影)"
+    },
+    {
+     "section": "여담",
+     "status": "accepted",
+     "note": "Faithful translation of Mamoru's line; 'he did say' rendered as '그가 분명히 말했어요', 'after all' conveyed by tone.",
+     "t_raw": "그가 분명히 말했어요. Shogun은 Almighty Arataki Great and Glorious Drumalong Festival을 결코 놓치고 싶어 하지 않을 거라고!",
+     "en": "He did say that the Shogun would definitely not wanna miss the Almighty Arataki Great and Glorious Drumalong Festival, after all!",
+     "speaker": "Mamoru",
+     "source": {
+      "kind": "quest",
+      "quest": "Festival Afterword",
+      "quest_ko": "축제 뒷이야기",
+      "version": "2.7",
+      "speaker": "Mamoru"
+     },
+     "t": "그가 분명히 말했어요. 쇼군은 아라타키 천하제일 초호화 북 축제를 결코 놓치고 싶어 하지 않을 거라고!",
+     "speaker_ko": "마모루"
+    }
+   ]
+  }
+ ]
+}

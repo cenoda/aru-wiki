@@ -1,0 +1,647 @@
+{
+ "node": "Piramida",
+ "articles": [
+  {
+   "node": "Piramida",
+   "from_version": "Luna I",
+   "cutoff": "2025-10-21T00:00:00Z",
+   "input": [
+    {
+     "page": "Piramida",
+     "url": "https://genshin-impact.fandom.com/wiki/Piramida",
+     "revision": 1865878
+    }
+   ],
+   "input_counts": {
+    "mentions": 3,
+    "lines": 1,
+    "web": 0
+   },
+   "input_chars": 499,
+   "input_cut": false,
+   "input_hash": "1ea60cc56e1c",
+   "writer": "ds,glm",
+   "verifier": "claude-sonnet",
+   "status": "ok",
+   "review": "unreviewed",
+   "basis": "wiki",
+   "paragraphs": [
+    {
+     "section": null,
+     "status": "accepted",
+     "note": "All sentences are supported by A1, A2 and M2.",
+     "quote": "Piramida is a city on an island in the north of Nod-Krai. It is the headquarters of the Lightkeepers.",
+     "sentences": [
+      {
+       "t_raw": "Piramida는 Nod-Krai 북쪽 섬에 자리한 도시로, Lightkeepers의 본부가 있는 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "피라미다성은 노드크라이 북쪽 섬에 자리한 도시로, 등지기의 본부가 있는 곳이다."
+      },
+      {
+       "t_raw": "도시는 거대한 황금기의 등대를 중심으로 산 위에 세워졌고, 그 등대는 고대 성의 폐허 위에 올라서 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시는 거대한 황금기의 등대를 중심으로 산 위에 세워졌고, 그 등대는 고대 성의 폐허 위에 올라서 있다."
+      },
+      {
+       "t_raw": "약 500년 전 Solovei가 세운 Lightkeepers는 지금 Piramida를 본부로 두고 있으며, Lightkeepers가 Wild Hunt를 앞두고 있던 때에는 Fatui가 증원으로 도시 성문까지 행군한 일도 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약 500년 전 솔로베이가 세운 등지기는 지금 피라미다성을 본부로 두고 있으며, 등지기가 광란의 사냥을 앞두고 있던 때에는 우인단이 증원으로 도시 성문까지 행군한 일도 있다."
+      },
+      {
+       "t_raw": "조직의 창설자와 이어진 본부이면서 Wild Hunt를 앞둔 긴장 속에 Fatui의 행군까지 겹친 장소라는 점에서, Piramida는 Lightkeepers의 역사와 대외 관계가 함께 새겨진 도시로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "조직의 창설자와 이어진 본부이면서 광란의 사냥을 앞둔 긴장 속에 우인단의 행군까지 겹친 장소라는 점에서, 피라미다성은 등지기의 역사와 대외 관계가 함께 새겨진 도시로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Piramida",
+       "revision": 1865878,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "To the Lighthouse"
+        },
+        {
+         "type": "arti",
+         "name": "Nightingale's Tail Feather"
+        },
+        {
+         "type": "loading",
+         "name": "Nod-Krai"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Piramida",
+       "revision": 1865878,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "loading",
+         "name": "Nod-Krai"
+        },
+        {
+         "type": "arti",
+         "name": "Nightingale's Tail Feather"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Frostmoon Scions",
+       "revision": 1859028,
+       "section": "History > Around 500 Years Ago",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Verna"
+        }
+       ]
+      }
+     ],
+     "heading": null,
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "The English says Piramida is a city on an island and is the Lightkeepers' HQ. It never says the whole island is the organization's base, so that is an added fact.",
+     "quote": "Piramida is a city on an island in the north of Nod-Krai. It is the headquarters of the Lightkeepers.",
+     "sentences": [
+      {
+       "t_raw": "Piramida는 Nod-Krai 북쪽 섬에 자리한 도시다.",
+       "interp": false,
+       "dropped": false,
+       "t": "피라미다성은 노드크라이 북쪽 섬에 자리한 도시다."
+      },
+      {
+       "t_raw": "동시에 이곳은 **Lightkeepers의 본부**이기도 하다.",
+       "interp": false,
+       "dropped": false,
+       "t": "동시에 이곳은 **등지기의 본부**이기도 하다."
+      },
+      {
+       "t_raw": "섬에 있는 도시이자 Lightkeepers의 본부라는 점에서, 이 도시는 Lightkeepers라는 이름 없이는 이야기하기 어려운 곳으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "repaired": true,
+       "t": "섬에 있는 도시이자 등지기의 본부라는 점에서, 이 도시는 등지기라는 이름 없이는 이야기하기 어려운 곳으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Piramida",
+       "revision": 1865878,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "To the Lighthouse"
+        },
+        {
+         "type": "arti",
+         "name": "Nightingale's Tail Feather"
+        },
+        {
+         "type": "loading",
+         "name": "Nod-Krai"
+        }
+       ]
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "All sentences are supported by A2, A3 and M1.",
+     "quote": "Looking to the far north, you spot a city of unusual design — is that the Piramida Flins mentioned?",
+     "sentences": [
+      {
+       "t_raw": "도시의 모습도 남다른데, 산 위에 **거대한 황금시대의 등대**를 중심으로 삼아 지어졌다.",
+       "interp": false,
+       "dropped": false,
+       "t": "도시의 모습도 남다른데, 산 위에 **거대한 황금시대의 등대**를 중심으로 삼아 지어졌다."
+      },
+      {
+       "t_raw": "그 등대는 다시 고대 성의 폐허 위에 세워진 것이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 등대는 다시 고대 성의 폐허 위에 세워진 것이다."
+      },
+      {
+       "t_raw": "폐허 위에 등대를 세우고 그 등대를 감싸 도시를 세운 이 겹겹의 구조 때문에, 멀리서 바라본 Piramida가 '디자인이 특이한 도시'로 묘사되는 것도 자연스럽다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "폐허 위에 등대를 세우고 그 등대를 감싸 도시를 세운 이 겹겹의 구조 때문에, 멀리서 바라본 피라미다성이 '디자인이 특이한 도시'로 묘사되는 것도 자연스럽다고 볼 수 있다."
+      },
+      {
+       "t_raw": "실제로 Final Night Cemetery의 등대 망원경으로 먼 섬을 비추고 소환 신호를 보내면, 북쪽에 이 도시의 모습이 나타난다.",
+       "interp": false,
+       "dropped": false,
+       "t": "실제로 종야의 묘지의 등대 망원경으로 먼 섬을 비추고 소환 신호를 보내면, 북쪽에 이 도시의 모습이 나타난다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Piramida",
+       "revision": 1865878,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "loading",
+         "name": "Nod-Krai"
+        },
+        {
+         "type": "arti",
+         "name": "Nightingale's Tail Feather"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Final Night Cemetery",
+       "revision": 1864017,
+       "section": "Interactables > Lighthouse",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "개요",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "All sentences are supported by M2, and the interpretation follows from it.",
+     "quote": "At the Pillar of Embla, Solovei and Aila used the Arrow of Terpikeraunas to dispel the Abyssal calamity.",
+     "sentences": [
+      {
+       "t_raw": "약 500년 전, Pillar of Embla에서 Solovei와 Aila는 Arrow of Terpikeraunas를 사용해 Abyssal calamity를 물리쳤다.",
+       "interp": false,
+       "dropped": false,
+       "t": "약 500년 전, 엠블라 기둥에서 솔로베이와 아일라는 테르피케라우나스의 화살을 사용해 심연의 재앙을 물리쳤다.",
+       "polish": {
+        "from": "약 500년 전, 엠블라 기둥에서 솔로베이와 아일라는 테르피케라우나스의 화살을 사용해 Abyssal calamity를 물리쳤다.",
+        "text": "약 500년 전, 엠블라 기둥에서 솔로베이와 아일라는 테르피케라우나스의 화살을 사용해 심연의 재앙을 물리쳤다.",
+        "by": "kimi"
+       }
+      },
+      {
+       "t_raw": "그 뒤 Arrow는 Solovei에게 선물로 넘어갔고, Solovei는 그것으로 **Lightkeepers**를 세웠다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그 뒤 화살은 솔로베이에게 선물로 넘어갔고, 솔로베이는 그것으로 **등지기**를 세웠다."
+      },
+      {
+       "t_raw": "calamity를 잠재운 무기가 곧 새 조직의 출발점이 된 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "재앙을 잠재운 무기가 곧 새 조직의 출발점이 된 셈이다.",
+       "polish": {
+        "from": "calamity를 잠재운 무기가 곧 새 조직의 출발점이 된 셈이다.",
+        "text": "재앙을 잠재운 무기가 곧 새 조직의 출발점이 된 셈이다.",
+        "by": "kimi"
+       }
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Frostmoon Scions",
+       "revision": 1859028,
+       "section": "History > Around 500 Years Ago",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Verna"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "The facts and the interpretation are supported by A1 and M2.",
+     "quote": "she gifted the Arrow to Solovei, who used it to establish the Lightkeepers, which is now based in Piramida.",
+     "sentences": [
+      {
+       "t_raw": "**Piramida**는 Nod-Krai 북쪽 섬에 있는 도시로, Lightkeepers의 본부가 자리한 곳이다.",
+       "interp": false,
+       "dropped": false,
+       "t": "**피라미다성**은 노드크라이 북쪽 섬에 있는 도시로, 등지기의 본부가 자리한 곳이다."
+      },
+      {
+       "t_raw": "약 500년 전 Solovei가 세운 조직이 지금 이 도시를 본부로 삼고 있다는 점에서, Piramida는 Lightkeepers의 창설과 현재를 이어 주는 자리라고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "약 500년 전 솔로베이가 세운 조직이 지금 이 도시를 본부로 삼고 있다는 점에서, 피라미다성은 등지기의 창설과 현재를 이어 주는 자리라고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Frostmoon Scions",
+       "revision": 1859028,
+       "section": "History > Around 500 Years Ago",
+       "paragraph": "M2",
+       "wiki_refs": [
+        {
+         "type": "npc",
+         "name": "Verna"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Piramida",
+       "revision": 1865878,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "To the Lighthouse"
+        },
+        {
+         "type": "arti",
+         "name": "Nightingale's Tail Feather"
+        },
+        {
+         "type": "loading",
+         "name": "Nod-Krai"
+        }
+       ]
+      }
+     ],
+     "heading": "드러난 역사",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences are supported by M3. The interpretation is a reasonable inference from it.",
+     "quote": "some view headquarters as a bit haughty, as it is nearly impossible to relay information to them which they tend to ignore on a daily basis",
+     "sentences": [
+      {
+       "t_raw": "Lightkeepers의 본부는 Piramida에 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "등지기의 본부는 피라미다성에 있다."
+      },
+      {
+       "t_raw": "본부에 정보를 전달하는 일은 거의 불가능한데, 본부는 그 정보를 매일같이 무시하는 태도를 보여 일부에서는 본부가 다소 거만하다고 본다.",
+       "interp": false,
+       "dropped": false,
+       "t": "본부에 정보를 전달하는 일은 거의 불가능한데, 본부는 그 정보를 매일같이 무시하는 태도를 보여 일부에서는 본부가 다소 거만하다고 본다."
+      },
+      {
+       "t_raw": "그러면서도 적은 수로 어디든 나타날 수 있는 Wild Hunt의 습격을 구성원들이 처리하기를 기대한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "그러면서도 적은 수로 어디든 나타날 수 있는 광란의 사냥의 습격을 구성원들이 처리하기를 기대한다."
+      },
+      {
+       "t_raw": "정보는 받지 않으면서 현장의 몫만 커지는 구조이니, '거만하다'는 평가는 단순한 인상이 아니라 운영 방식에서 나온 것으로 보인다.",
+       "interp": true,
+       "dropped": false,
+       "t": "정보는 받지 않으면서 현장의 몫만 커지는 구조이니, '거만하다'는 평가는 단순한 인상이 아니라 운영 방식에서 나온 것으로 보인다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Lightkeepers",
+       "revision": 1865282,
+       "section": "Overview",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "loading",
+         "name": "Nod-Krai"
+        },
+        {
+         "type": "arti",
+         "name": "Nightingale's Tail Feather"
+        }
+       ]
+      },
+      {
+       "kind": "wiki",
+       "page": "Piramida",
+       "revision": 1865878,
+       "section": null,
+       "paragraph": "A1",
+       "wiki_refs": [
+        {
+         "type": "quest",
+         "name": "To the Lighthouse"
+        },
+        {
+         "type": "arti",
+         "name": "Nightingale's Tail Feather"
+        },
+        {
+         "type": "loading",
+         "name": "Nod-Krai"
+        }
+       ]
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "All sentences follow A2 and Q1; the interpretation is reasonable.",
+     "quote": "Even if reinforcements from Piramida do arrive from the north, they'll only end up as fodder for the Wild Hunt, just like us...",
+     "sentences": [
+      {
+       "t_raw": "Lightkeepers가 Wild Hunt와 맞설 참이던 때, Fatui는 증원으로서 도시 성문까지 행군해 왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "등지기가 광란의 사냥과 맞설 참이던 때, 우인단은 증원으로서 도시 성문까지 행군해 왔다."
+      },
+      {
+       "t_raw": "한편 Wild Hunt를 앞둔 현장에서는 Piramida에서 북쪽으로 증원이 와도 우리처럼 Wild Hunt의 먹잇감이 될 뿐이라는 말이 나왔다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한편 광란의 사냥을 앞둔 현장에서는 피라미다성에서 북쪽으로 증원이 와도 우리처럼 광란의 사냥의 먹잇감이 될 뿐이라는 말이 나왔다."
+      },
+      {
+       "t_raw": "성문까지 행군해 온 증원과, 증원조차 먹잇감이라 말하는 현장의 목소리는 서로 다른 곳을 보고 있는 셈이다.",
+       "interp": true,
+       "dropped": false,
+       "t": "성문까지 행군해 온 증원과, 증원조차 먹잇감이라 말하는 현장의 목소리는 서로 다른 곳을 보고 있는 셈이다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Piramida",
+       "revision": 1865878,
+       "section": "Lore",
+       "paragraph": "A2",
+       "wiki_refs": [
+        {
+         "type": "loading",
+         "name": "Nod-Krai"
+        },
+        {
+         "type": "arti",
+         "name": "Nightingale's Tail Feather"
+        }
+       ]
+      },
+      {
+       "kind": "quest",
+       "quest": "To the Lighthouse",
+       "quest_ko": "등대를 향해",
+       "version": "Luna I",
+       "speaker": "Desperate Phantom"
+      }
+     ],
+     "heading": "얽힌 인물과 세력",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by A3 and M1; the interpretation keeps the question open.",
+     "quote": "Looking to the far north, you spot a city of unusual design — is that the Piramida Flins mentioned?",
+     "sentences": [
+      {
+       "t_raw": "Final Night Cemetery의 등대 망원경은 먼 섬을 밝히고 소환 신호를 보낸 뒤에 그 너머의 도시를 비춰 준다.",
+       "interp": false,
+       "dropped": false,
+       "t": "종야의 묘지의 등대 망원경은 먼 섬을 밝히고 소환 신호를 보낸 뒤에 그 너머의 도시를 비춰 준다."
+      },
+      {
+       "t_raw": "망원경 너머 먼 북쪽에는 특이한 설계의 도시가 보이는데, 그 모습을 두고 '저 도시가 **Flins가 말한 Piramida**인가'라는 물음이 따라붙는다.",
+       "interp": false,
+       "dropped": false,
+       "t": "망원경 너머 먼 북쪽에는 특이한 설계의 도시가 보이는데, 그 모습을 두고 '저 도시가 **플린스가 말한 피라미다성**인가'라는 물음이 따라붙는다."
+      },
+      {
+       "t_raw": "도시가 보이는 조건과 Flins의 언급이 따로 전해지는 만큼, 망원경에 비친 도시가 곧 Flins가 말한 Piramida인지는 열린 물음으로 남는다.",
+       "interp": true,
+       "dropped": false,
+       "t": "도시가 보이는 조건과 플린스의 언급이 따로 전해지는 만큼, 망원경에 비친 도시가 곧 플린스가 말한 피라미다성인지는 열린 물음으로 남는다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "wiki",
+       "page": "Piramida",
+       "revision": 1865878,
+       "section": "Lore",
+       "paragraph": "A3",
+       "wiki_refs": []
+      },
+      {
+       "kind": "wiki",
+       "page": "Final Night Cemetery",
+       "revision": 1864017,
+       "section": "Interactables > Lighthouse",
+       "paragraph": "M1",
+       "wiki_refs": []
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Supported by Q1 and M3; the interpretation is reasonable.",
+     "quote": "Even if reinforcements from Piramida do arrive from the north, they'll only end up as fodder for the Wild Hunt, just like us...",
+     "sentences": [
+      {
+       "t_raw": "Wild Hunt를 앞둔 현장에서 Piramida의 증원은 다른 온도로 언급된다.",
+       "interp": false,
+       "dropped": false,
+       "t": "광란의 사냥을 앞둔 현장에서 피라미다성의 증원은 다른 온도로 언급된다."
+      },
+      {
+       "t_raw": "한 절망한 망령은 Piramida에서 북쪽으로 증원이 도착하더라도 그들은 Wild Hunt의 **먹이**가 될 뿐이라고 말한다.",
+       "interp": false,
+       "dropped": false,
+       "t": "한 절망한 망령은 피라미다성에서 북쪽으로 증원이 도착하더라도 그들은 광란의 사냥의 **먹이**가 될 뿐이라고 말한다."
+      },
+      {
+       "t_raw": "Lightkeepers의 수가 적어 본부에 정보를 전하기가 거의 불가능하고, 본부는 그런 연락을 일상적으로 무시하면서도 Wild Hunt 침입은 어디서든 감당하라고 요구한다는 평가가 있다.",
+       "interp": false,
+       "dropped": false,
+       "t": "등지기의 수가 적어 본부에 정보를 전하기가 거의 불가능하고, 본부는 그런 연락을 일상적으로 무시하면서도 광란의 사냥 침입은 어디서든 감당하라고 요구한다는 평가가 있다."
+      },
+      {
+       "t_raw": "증원을 보내는 쪽인 본부와, 그 증원조차 역부족이라고 보는 현장 사이의 거리가 이 대목에서 드러난다고 볼 수 있다.",
+       "interp": true,
+       "dropped": false,
+       "t": "증원을 보내는 쪽인 본부와, 그 증원조차 역부족이라고 보는 현장 사이의 거리가 이 대목에서 드러난다고 볼 수 있다."
+      }
+     ],
+     "sources": [
+      {
+       "kind": "quest",
+       "quest": "To the Lighthouse",
+       "quest_ko": "등대를 향해",
+       "version": "Luna I",
+       "speaker": "Desperate Phantom"
+      },
+      {
+       "kind": "wiki",
+       "page": "Lightkeepers",
+       "revision": 1865282,
+       "section": "Overview",
+       "paragraph": "M3",
+       "wiki_refs": [
+        {
+         "type": "loading",
+         "name": "Nod-Krai"
+        },
+        {
+         "type": "arti",
+         "name": "Nightingale's Tail Feather"
+        }
+       ]
+      }
+     ],
+     "heading": "떡밥과 수수께끼",
+     "latin_left": []
+    }
+   ],
+   "quote_boxes": [
+    {
+     "section": "개요",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "설령 Piramida의 지원군이 북쪽에서 도착한다 해도, 그들은 우리처럼 Wild Hunt의 먹잇감이 될 뿐일 테니…",
+     "en": "Even if reinforcements from Piramida do arrive from the north, they'll only end up as fodder for the Wild Hunt, just like us...",
+     "speaker": "Desperate Phantom",
+     "source": {
+      "kind": "quest",
+      "quest": "To the Lighthouse",
+      "quest_ko": "등대를 향해",
+      "version": "Luna I",
+      "speaker": "Desperate Phantom"
+     },
+     "t": "설령 피라미다성의 지원군이 북쪽에서 도착한다 해도, 그들은 우리처럼 광란의 사냥의 먹잇감이 될 뿐일 테니…",
+     "speaker_ko": "Desperate Phantom"
+    },
+    {
+     "section": "드러난 역사",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Piramida에서 북쪽으로부터 지원군이 도착한다 해도, 그들은 우리처럼 Wild Hunt의 먹잇감이 될 뿐이야...",
+     "en": "Even if reinforcements from Piramida do arrive from the north, they'll only end up as fodder for the Wild Hunt, just like us...",
+     "speaker": "Desperate Phantom",
+     "source": {
+      "kind": "quest",
+      "quest": "To the Lighthouse",
+      "quest_ko": "등대를 향해",
+      "version": "Luna I",
+      "speaker": "Desperate Phantom"
+     },
+     "t": "피라미다성에서 북쪽으로부터 지원군이 도착한다 해도, 그들은 우리처럼 광란의 사냥의 먹잇감이 될 뿐이야...",
+     "speaker_ko": "Desperate Phantom"
+    },
+    {
+     "section": "얽힌 인물과 세력",
+     "status": "accepted",
+     "note": "Faithful translation.",
+     "t_raw": "Piramida에서 북쪽으로부터 증원이 온다 해도, 그들은 우리처럼 Wild Hunt의 먹잇감이 될 뿐일 거야...",
+     "en": "Even if reinforcements from Piramida do arrive from the north, they'll only end up as fodder for the Wild Hunt, just like us...",
+     "speaker": "Desperate Phantom",
+     "source": {
+      "kind": "quest",
+      "quest": "To the Lighthouse",
+      "quest_ko": "등대를 향해",
+      "version": "Luna I",
+      "speaker": "Desperate Phantom"
+     },
+     "t": "피라미다성에서 북쪽으로부터 증원이 온다 해도, 그들은 우리처럼 광란의 사냥의 먹잇감이 될 뿐일 거야...",
+     "speaker_ko": "Desperate Phantom"
+    },
+    {
+     "section": "떡밥과 수수께끼",
+     "status": "accepted",
+     "note": "Sentence 0 is a faithful Korean translation of the dialogue line. It keeps reinforcements from Piramida arriving from the north, the fodder for the Wild Hunt, and 'just like us'. Nothing is added or dropped.",
+     "t_raw": "Piramida에서 증원이 북쪽에서 도착한다 해도, 그들은 우리처럼 Wild Hunt의 먹이가 될 뿐일 거야...",
+     "en": "Even if reinforcements from Piramida do arrive from the north, they'll only end up as fodder for the Wild Hunt, just like us...",
+     "speaker": "Desperate Phantom",
+     "source": {
+      "kind": "quest",
+      "quest": "To the Lighthouse",
+      "quest_ko": "등대를 향해",
+      "version": "Luna I",
+      "speaker": "Desperate Phantom"
+     },
+     "t": "피라미다성에서 증원이 북쪽에서 도착한다 해도, 그들은 우리처럼 광란의 사냥의 먹이가 될 뿐일 거야...",
+     "speaker_ko": "Desperate Phantom"
+    }
+   ]
+  }
+ ]
+}

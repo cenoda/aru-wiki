@@ -1,13 +1,13 @@
 // Dev preview of the region emblems and the event mark: ?view=emblems
-import { Emblem, EMBLEM_REGIONS, emblemLabel, EventMark, eventMarkLabel, SeriesBadge, seriesBadgeLabel } from './emblems';
-import { REGION_KO } from './data';
+import { Emblem, EMBLEMS, emblemLabel, EventMark, eventMarkLabel, SeriesBadge, seriesBadgeLabel } from './emblems';
+import { REGION_KO, regionEmblem } from './data';
 import './site.css';
 import './focus.css';
 
 export default function EmblemPreview() {
   return (
     <div className="site" style={{ padding: 32, display: 'grid', gridTemplateColumns: 'repeat(3, 300px)', gap: 24 }}>
-      {EMBLEM_REGIONS.map((r) => (
+      {EMBLEMS.map((_, i) => Object.keys(regionEmblem).find((r) => regionEmblem[r] === i) ?? 'Other').map((r) => (
         <div key={r} className="t-archon" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
           <div className="emblem-big" style={{ width: 120, height: 120 }}><Emblem region={r} /></div>
           <b>{REGION_KO[r] ?? r} · {emblemLabel(r)}</b>

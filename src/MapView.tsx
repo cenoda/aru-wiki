@@ -4,7 +4,7 @@ import {
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import { memo, useEffect, useMemo, useState } from 'react';
-import { actGraph, displayName, type Quest, questById, quests, TYPE_LABEL, versionOrder, versions } from './data';
+import { actGraph, displayName, loadedUpTo, type Quest, questById, quests, TYPE_LABEL, versionOrder, versions } from './data';
 import { BY_SA_3, Lic, LicensePageLink } from './license';
 import { type LayoutMode, layoutActs, NODE_H, NODE_W } from './layout';
 
@@ -38,8 +38,15 @@ function Graph() {
   const [mode, setMode] = useState<LayoutMode>((params.get('mode') as LayoutMode) ?? 'depth');
   const [vIdx, setVIdx] = useState(() => {
     const v = params.get('v');
-    return v && versionOrder.has(v) ? versionOrder.get(v)! : versions.length - 1;
+    return Math.min(loadedUpTo, v && versionOrder.has(v) ? versionOrder.get(v)! : versions.length - 1);
   });
+  // only the address's version and those before it are loaded (App.tsx): a later one opens the page again at it
+  const pickVersion = (order: number) => {
+    if (order <= loadedUpTo) { setVIdx(order); return; }
+    const q = new URLSearchParams(location.search);
+    q.set('v', versions[order].id);
+    location.search = q.toString();
+  };
   const [positions, setPositions] = useState<Map<string, { x: number; y: number }> | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const flow = useReactFlow();
@@ -112,7 +119,7 @@ function Graph() {
             </select>
           </label>
           <label className="slider">버전 <b>{v.id}</b>{v.number !== v.id && <small> ({v.number})</small>}
-            <input type="range" min={0} max={versions.length - 1} value={vIdx} onChange={(e) => setVIdx(+e.target.value)} />
+            <input type="range" min={0} max={versions.length - 1} value={vIdx} onChange={(e) => pickVersion(+e.target.value)} />
             <small>{v.released}</small>
           </label>
         </div>

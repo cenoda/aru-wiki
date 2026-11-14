@@ -1,5 +1,6 @@
 import { type ComponentType, useEffect, useState } from 'react';
 import { loadData } from './data';
+import { startVersion } from './split';
 
 // The views read the graph data while their modules load, so import them only after loadData().
 // The site opens on the lore theme in 3D (with its article pages, `/wiki/<name>`; old `?page=`, see route.ts). `?view=quests` is the
@@ -9,7 +10,9 @@ import { loadData } from './data';
 const loadView = async (): Promise<ComponentType> => {
   const q = new URLSearchParams(location.search);
   const view = q.get('view') ?? (q.has('act') || q.has('unit') ? 'quests' : 'wiki3d');
-  await loadData(); // first: importing a view runs its top-level code, which reads the data
+  // first: importing a view runs its top-level code, which reads the data. Only the version the
+  // address asks for (`?v=`, else the latest) and those before it are downloaded (src/split.ts).
+  await loadData(startVersion());
   if (view === 'quests') return (await import('./FocusView')).default;
   if (view === 'map') return (await import('./MapView')).default;
   if (view === 'emblems') return (await import('./EmblemPreview')).default; // region emblem preview

@@ -7,9 +7,9 @@
     "node": ">=22"
   },
   "scripts": {
-    "predev": "node scripts/build-runtime-data.mjs",
+    "predev": "node scripts/build-runtime-data.mjs && node scripts/split/build.mjs",
     "dev": "vite",
-    "prebuild": "node scripts/build-runtime-data.mjs",
+    "prebuild": "node scripts/build-runtime-data.mjs && node scripts/split/build.mjs",
     "build": "tsc && vite build",
     "postbuild": "node scripts/seo/prerender.mjs",
     "preview": "vite preview",

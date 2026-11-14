@@ -8,7 +8,7 @@ import { loadVideos, type PageVideo } from './lore';
 
 export function useVideos(page: string, vIdx: number) {
   const [all, setAll] = useState<Record<string, PageVideo[]> | null>(null);
-  useEffect(() => { let live = true; loadVideos().then((v) => live && setAll(v)); return () => { live = false; }; }, []);
+  useEffect(() => { let live = true; loadVideos().then((v) => live && setAll(v)); return () => { live = false; }; }, [vIdx]);
   return (all?.[page] ?? []).filter((x) => x.v <= vIdx);
 }
 

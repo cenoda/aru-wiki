@@ -1,7 +1,9 @@
-// The graph data is a separate hashed asset (scripts/build-runtime-data.mjs), fetched once at start.
-// Bindings below are filled by loadData(); import the views only after it resolves (see App.tsx).
-import graphUrl from '../data/runtime/graph.json?url';
+// The quest data comes in version blocks (scripts/split/build.mjs, src/split.ts): only what was
+// revealed at or before the version asked for is downloaded. Bindings below are filled by
+// loadData(v); import the views only after it resolves (see App.tsx). Asking for a later version
+// fetches more and fills them again (ES module bindings are live, so readers see the new values).
 import takedown from '../data/manual/takedown.json';
+import { fetchCover, split } from './split';
 
 export type QuestType = 'ARCHON' | 'STORY' | 'WORLD' | 'EVENT';
 
@@ -36,17 +38,17 @@ export interface Version {
   areas?: { en: string; ko?: string }[];
 }
 
-export let versions: Version[] = [];
+/** every version's id, number, order and date (the index); titles and areas fill in as their blocks load */
+export let versions: Version[] = split.versions.map((v) => ({ ...v, title: '' }));
 export let quests: Quest[] = [];
 export let questEdges: QuestEdge[] = [];
 export let questById = new Map<string, Quest>();
-export let versionOrder = new Map<string, number>();
+export let versionOrder = new Map<string, number>(versions.map((v) => [v.id, v.order]));
 
-// Official Korean names, as in ko-names.json (Fandom {{Other Languages}} ko); never transliterated by hand.
-export const REGION_KO: Record<string, string> = {
-  Mondstadt: '몬드', Liyue: '리월', Inazuma: '이나즈마', Sumeru: '수메르', Fontaine: '폰타인',
-  Natlan: '나타', 'Nod-Krai': '노드크라이', Snezhnaya: '스네즈나야', Other: '기타',
-};
+/** Official Korean names of the quest regions revealed so far (scripts/split/regions.mjs); filled by loadData() */
+export let REGION_KO: Record<string, string> = {};
+/** region → its emblem's place in src/emblems.tsx EMBLEMS, for the regions revealed so far */
+export let regionEmblem: Record<string, number> = {};
 
 /** Korean title, or the English one. A wiki "(Act)" or "(Event)" suffix is not part of the name. */
 export const displayName = (q: { names: { en: string; ko?: string } }) => q.names.ko ?? q.names.en.replace(/ \((?:Act|Event)\)$/, '');
@@ -91,35 +93,68 @@ export let regionEntry: Record<string, string> = {};
 export let unitOfQuest = new Map<string, string>();
 let recommendedRaw: LlmEdge[] = [];
 
-interface GraphData {
-  versions: Version[];
-  quests: Quest[];
-  questEdges: QuestEdge[];
-  units: { region_entry: Record<string, string>; units: Unit[] };
-  recommended: LlmEdge[];
-  figures: FiguresData;
-  imageFiles: ImageFile[];
+/** One block of quest data (scripts/split/build.mjs): units' quests, acts and next series come as [unit, id, place]. */
+interface QuestBlock {
+  versions?: (Partial<Version> & { order: number })[];
+  quests?: Quest[];
+  questEdges?: QuestEdge[];
+  units?: (Omit<Unit, 'members' | 'attach' | 'next'> & { attach: { basis: AttachBasis } })[];
+  members?: [string, string, number][];
+  attach?: [string, string, number][];
+  next?: [string, string, number][];
+  regionEntry?: [string, string][];
+  /** [region, Korean name or null, emblem] */
+  regions?: [string, string | null, number][];
+  recommended?: LlmEdge[];
+  figureActs?: [string, string][];
+  figureNames?: [string, string | null][];
+  imageFiles?: ImageFile[];
 }
 
 let loading: Promise<void> | undefined;
-/** Fetch the graph data and fill the bindings above. Safe to call more than once. */
-export function loadData() {
-  return loading ??= (async () => {
-    const res = await fetch(graphUrl);
-    if (!res.ok) throw new Error(`graph data: HTTP ${res.status}`);
-    const g = (await res.json()) as GraphData;
-    versions = g.versions;
-    quests = g.quests;
-    questEdges = g.questEdges;
+/** the version the bindings hold data up to (-1: none yet) */
+export let loadedUpTo = -1;
+let asked = -1;
+/**
+ * Fetch the quest data revealed at or before version order v and fill the bindings above. Asking for
+ * an earlier version than already loaded does nothing (the views filter by version themselves).
+ */
+export function loadData(v: number = versions.length - 1) {
+  if (v <= asked && loading) return loading;
+  asked = v;
+  const run = (async () => {
+    const blocks = await fetchCover<QuestBlock>(split.quests, v);
+    if (v < loadedUpTo) return;
+    const all = <K extends keyof QuestBlock>(k: K) => blocks.flatMap((b) => (b[k] ?? []) as unknown[]) as NonNullable<QuestBlock[K]>;
+    const detail = new Map(all('versions').map((x) => [x.order, x]));
+    versions = split.versions.map((x) => ({ title: '', ...x, ...detail.get(x.order) } as Version));
+    versionOrder = new Map(versions.map((x) => [x.id, x.order]));
+    const byPlace = (list: [string, string, number][]) => {
+      const m = new Map<string, [string, number][]>();
+      for (const [u, id, i] of list) (m.get(u) ?? m.set(u, []).get(u)!).push([id, i]);
+      return (u: string) => (m.get(u) ?? []).sort((a, b) => a[1] - b[1]).map((x) => x[0]);
+    };
+    const membersOf = byPlace(all('members')), actsOf = byPlace(all('attach')), nextOf = byPlace(all('next'));
+    quests = all('quests');
+    questEdges = all('questEdges');
     questById = new Map(quests.map((q) => [q.id, q]));
-    versionOrder = new Map(versions.map((v) => [v.id, v.order]));
-    units = g.units.units;
+    units = all('units').map((u) => {
+      const next = nextOf(u.id);
+      return { ...u, members: membersOf(u.id), attach: { basis: u.attach.basis, acts: actsOf(u.id) }, ...(next.length ? { next } : {}) };
+    });
     unitById = new Map(units.map((u) => [u.id, u]));
-    regionEntry = g.units.region_entry;
+    regionEntry = Object.fromEntries(all('regionEntry'));
+    REGION_KO = Object.fromEntries(all('regions').filter((r) => r[1]).map(([r, ko]) => [r, ko!]));
+    regionEmblem = Object.fromEntries(all('regions').map(([r, , e]) => [r, e]));
     unitOfQuest = new Map(units.flatMap((u) => u.members.map((m) => [m, u.id] as const)));
-    recommendedRaw = g.recommended;
-    figureOf = buildFigures(g.figures, g.imageFiles);
-  })().catch((err) => { loading = undefined; throw err; });
+    recommendedRaw = all('recommended');
+    const characters = Object.fromEntries(all('figureNames').map(([c, ko]) => [c, { ko }]));
+    figureOf = buildFigures({ acts: Object.fromEntries(all('figureActs').map(([a, character]) => [a, { character }])), characters }, all('imageFiles'));
+    loadedUpTo = v;
+  })();
+  const p = run.catch((err) => { if (loading === p) { loading = undefined; asked = loadedUpTo; } throw err; });
+  loading = p;
+  return p;
 }
 export const UNIT_LABEL: Record<UnitKind, string> = { series: '시리즈', event: '이벤트', chain: '연속 임무', single: '단일 임무' };
 
@@ -255,6 +290,7 @@ function buildFigures(figuresData: FiguresData, files: ImageFile[]) {
   }));
 }
 
-// The bindings above are filled once by loadData() and read by the views' top-level code.
+// The bindings above are filled by loadData() and read by the views' top-level code (a later version
+// fills them again; the quest map, laid out at start, opens again instead).
 // Re-running this module on a hot update would empty them under the views: reload the page instead.
 if (import.meta.hot) import.meta.hot.accept(() => location.reload());

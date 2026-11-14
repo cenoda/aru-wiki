@@ -6,29 +6,12 @@
 // searched, so text written for a later version is not found either.
 import { articlePieces, bigrams, decodePostings, foldMap, foldText, shardOf } from '../scripts/search/text.mjs';
 import { articleAt, loadPageData, type PageNode } from './lore';
+import { fetchCover, fetchData, langData } from './split';
 
-const files = import.meta.glob('../data/runtime/search/*.json', { query: '?url', import: 'default' }) as Record<string, () => Promise<string>>;
-const cache = new Map<string, Promise<unknown>>();
-function load<T>(name: string): Promise<T> {
-  let p = cache.get(name);
-  if (!p) {
-    const file = files[`../data/runtime/search/${name}.json`];
-    p = file ? file().then((u) => fetch(u)).then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status))))) : Promise.resolve({});
-    p.catch(() => cache.delete(name)); // try again on the next search
-    cache.set(name, p);
-  }
-  return p as Promise<T>;
-}
-
-interface Meta { shards: number; docs: [string, number][] }
-let byPage: Map<string, { doc: number; from: number }[]> | null = null;
-const loadMeta = () => load<Meta>('meta').then((m) => {
-  if (!byPage) {
-    byPage = new Map();
-    m.docs.forEach(([page, from], doc) => (byPage!.get(page) ?? byPage!.set(page, []).get(page)!).push({ doc, from }));
-  }
-  return m;
-});
+// The index comes in version blocks (scripts/split/build.mjs): each block has its own document list
+// and shards, and a search at version v reads only the blocks that cover 0..v, so neither the names
+// nor the words of later articles are downloaded.
+interface Block { shards: number; docs: [string, number][]; files: string[] }
 
 /** a query this short (after folding) is not searched in the bodies */
 export const MIN_BODY_QUERY = 2;
@@ -76,31 +59,36 @@ export async function searchBodies(query: string, vIdx: number, nodes: Map<strin
   const fq = foldText(query);
   const grams = bigrams(fq);
   if (grams.length === 0) return [];
-  const meta = await loadMeta();
-  const shards = await Promise.all([...new Set(grams.map((g) => shardOf(g, meta.shards)))].map((s) => load<Record<string, string>>(String(s)).then((d) => [s, d] as const)));
-  const shardMap = new Map(shards);
-  // documents holding every bigram; score counts bigrams that occur often in the document
-  let score: Map<number, number> | null = null;
-  for (const g of grams) {
-    const enc = shardMap.get(shardOf(g, meta.shards))?.[g];
-    if (!enc) return [];
-    const next = new Map<number, number>();
-    for (const [doc, many] of decodePostings(enc)) {
-      const before = score ? score.get(doc) : 0;
-      if (before !== undefined) next.set(doc, before + (many ? 2 : 1));
+  const blocks = await fetchCover<Block>(langData().search, vIdx);
+  // the article each page shows at vIdx, across the blocks: its latest version at or before vIdx
+  const shownFrom = new Map<string, number>();
+  for (const b of blocks) for (const [page, from] of b.docs) if (from <= vIdx && from > (shownFrom.get(page) ?? -1)) shownFrom.set(page, from);
+  const scored: { page: string; s: number; n: PageNode }[] = [];
+  await Promise.all(blocks.map(async (b) => {
+    const shardOfGram = (g: string) => shardOf(g, b.shards);
+    const shardMap = new Map(await Promise.all([...new Set(grams.map(shardOfGram))].map((i) => fetchData<Record<string, string>>(b.files[i]).then((d) => [i, d] as const))));
+    // documents holding every bigram; score counts bigrams that occur often in the document
+    let score: Map<number, number> | null = null;
+    for (const g of grams) {
+      const enc = shardMap.get(shardOfGram(g))?.[g];
+      if (!enc) return;
+      const next = new Map<number, number>();
+      for (const [doc, many] of decodePostings(enc)) {
+        const before = score ? score.get(doc) : 0;
+        if (before !== undefined) next.set(doc, before + (many ? 2 : 1));
+      }
+      score = next;
+      if (!score.size) return;
     }
-    score = next;
-    if (!score.size) return [];
-  }
-  // version gating: the page is revealed, and the document is the article the page shows at vIdx
-  const list = [...score!].filter(([doc]) => {
-    const [page, from] = meta.docs[doc];
-    const n = nodes.get(page);
-    if (!n || n.revealed > vIdx || skip.has(page)) return false;
-    const shown = byPage!.get(page)!.filter((d) => d.from <= vIdx).at(-1);
-    return shown?.from === from;
-  }).map(([doc, s]) => ({ page: meta.docs[doc][0], s, n: nodes.get(meta.docs[doc][0])! }))
-    .sort((a, b) => b.s - a.s || Number(b.n.hub) - Number(a.n.hub) || b.n.units - a.n.units);
+    // version gating: the page is revealed, and the document is the article the page shows at vIdx
+    for (const [doc, sc] of score!) {
+      const [page, from] = b.docs[doc];
+      const n = nodes.get(page);
+      if (!n || n.revealed > vIdx || skip.has(page) || shownFrom.get(page) !== from) continue;
+      scored.push({ page, s: sc, n });
+    }
+  }));
+  const list = scored.sort((a, b) => b.s - a.s || Number(b.n.hub) - Number(a.n.hub) || b.n.units - a.n.units);
   // check the exact text in the article files, a few at a time, until enough are found
   const found: BodyHit[] = [];
   const BATCH = 8, MAX_FETCH = 32;

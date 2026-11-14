@@ -10,8 +10,9 @@ import { versions } from './data';
 import { type Linker, useLinker } from './Linked';
 import {
   type ArtPara, type ArtSource, articleAt, idOf, KIND_LABEL, loadPageData, loadRedNames, nameOf, type PageData, type PageNode, pageUrl, revisionUrl,
-  type RedName, snapshotAt, type Snapshots, type Theme,
+  type RedName, snapshotAt, type Theme,
 } from './lore';
+import { knownName } from './names';
 import { editsFor, hasHumanPage, humanPage, overlay, type Para, paraText, versionOrder } from './readerEdits';
 import { ReportBox } from './ReportBox';
 import { useVideos, Video, VideoSection } from './Videos';
@@ -25,8 +26,6 @@ export interface WikiArticleProps {
   /** every page that can be linked: the theme's and other pages with an article */
   nodes: PageNode[];
   byId: Map<string, PageNode>;
-  /** null while loading */
-  snapshots: Snapshots | null;
   vIdx: number;
   /** the address of another article, for links that open in a new tab */
   hrefOf: (page: string) => string;
@@ -84,20 +83,29 @@ function readerCredits(paras: (Para | null | undefined)[]): string {
   return out.join(', ');
 }
 
-export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf, onOpen }: WikiArticleProps) {
+export function WikiArticle({ page, theme, nodes, byId, vIdx, hrefOf, onOpen }: WikiArticleProps) {
   const root = useRef<HTMLElement>(null);
   const node = byId.get(page);
   const revealed = !!node && node.revealed <= vIdx;
-  const current = snapshotAt(snapshots?.[page], vIdx);
-  // the article body and timeline, fetched per page
+  // the article body, snapshots and timeline, fetched per page; again when the version changes, since a
+  // later version may load more of them (src/wikiData.ts; files already fetched come from memory)
   const [data, setData] = useState<{ page: string; d: PageData } | null>(null);
   useEffect(() => {
     let live = true;
-    loadPageData(page).then((d) => live && setData({ page, d }), () => live && setData({ page, d: { articles: [], timeline: [] } }));
+    loadPageData(page).then((d) => live && setData({ page, d }), () => live && setData({ page, d: { articles: [], timeline: [], snapshots: [] } }));
     return () => { live = false; };
-  }, [page]);
+  }, [page, vIdx]);
   const loading = data?.page !== page;
   const art = loading ? null : articleAt(data.d.articles, vIdx);
+  const current = loading ? null : snapshotAt(data.d.snapshots, vIdx);
+  /** for a page the loaded versions do not know: does a page by this name exist at a later version? */
+  const [known, setKnown] = useState<{ page: string; yes: boolean } | null>(null);
+  useEffect(() => {
+    if (node) return;
+    let live = true;
+    knownName(page).then((yes) => live && setKnown({ page, yes }), () => live && setKnown({ page, yes: true }));
+    return () => { live = false; };
+  }, [page, node]);
   // text readers wrote: published, and this browser's own waiting suggestions (readerEdits.ts)
   const { pub, own } = useReaderEdits();
   const edits = useMemo(() => editsFor(page, vIdx, pub, own), [page, vIdx, pub, own]);
@@ -106,7 +114,7 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
   const written = !node ? humanPage(page, edits) : null;
   /** no page by this title at all, at any version: a new page, titled as the reader typed it (`＋ 새 문서`, a red link).
    * A page that exists but is not revealed yet (a generated one, or one readers wrote at a later version) keeps its name hidden. */
-  const fresh = !node && !written && pub !== null && !hasHumanPage(page, pub);
+  const fresh = !node && !written && pub !== null && !hasHumanPage(page, pub) && known?.page === page && !known.yes;
   const vId = versions[vIdx]?.id ?? '';
   const videos = useVideos(page, vIdx);
   const timeline = loading ? [] : data.d.timeline.filter((t) => t.v <= vIdx);
@@ -128,7 +136,7 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
   const notes = useFootnotes(cites);
   // red links: names with no article yet (loaded once); pages readers wrote, shown at this version, link as pages
   const [red, setRed] = useState<RedName[] | null>(null);
-  useEffect(() => { let live = true; loadRedNames().then((r) => live && setRed(r)); return () => { live = false; }; }, []);
+  useEffect(() => { let live = true; loadRedNames().then((r) => live && setRed(r)); return () => { live = false; }; }, [vIdx]);
   const writtenTitles = useMemo(() => [...new Set((pub?.edits ?? [])
     .filter((e) => e.kind === 'page' && versionOrder(e.v) >= 0 && versionOrder(e.v) <= vIdx).map((e) => e.page))], [pub, vIdx]);
   const link = useLinker(nodes, vIdx, page, hrefOf, onOpen, red, writtenTitles);
@@ -274,7 +282,7 @@ export function WikiArticle({ page, theme, nodes, byId, snapshots, vIdx, hrefOf,
 
         {(() => {
           const seen = new Set<string>();
-          if (loading && snapshots === null) return <p className="wa-lead wa-muted">불러오는 중…</p>;
+          if (loading) return <p className="wa-lead wa-muted">불러오는 중…</p>;
           if (art && shown?.lead) return <ParaBlock className="wa-lead" h={shown.lead.h} edit={fix(shown.lead, null)}>{para(shown.lead, art.sources, seen)}</ParaBlock>;
           if (current?.summary) return <p className="wa-lead">{link(current.summary.t, seen)}{refs([snapSrc(current.summary.r)])}</p>;
           return <p className="wa-lead wa-muted">{current ? '이 버전의 한 줄 요약은 검증을 통과하지 못해 싣지 않았습니다.' : `${versions[vIdx]?.id}까지는 위키에 이 항목의 서술이 아직 없습니다.`}</p>;

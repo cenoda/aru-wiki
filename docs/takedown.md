@@ -39,8 +39,8 @@ node scripts/takedown.mjs block 알베도 --requester "HoYoverse" --reason "2026
 맞으면 `--apply`를 붙여 다시 실행한다. 그러면:
 
 - `data/manual/takedown.json`에 항목이 하나 생긴다(날짜, 요청자, 사유, 막은 인물·파일·임무·문서·영상 ID).
-- `public/`과 `dist/`에서 그 파일을 지운다. 글이면 `data/runtime/articles/`와 `dist/assets/`의 그 문서 파일도 지운다.
-- 영상이면 `data/runtime/videos.json`과 `dist/assets/videos-*.json`에서 그 영상만 뺀다(이 파일에는 모든 문서의 영상이 들어 있어서 지우지 않고 고쳐 쓴다).
+- `public/`과 `dist/`에서 그 파일을 지운다. 글이면 `data/runtime/articles/`의 그 문서 파일과, 버전별로 나눈 데이터(`public/assets/d/`, `dist/assets/d/`, design.md 6절)에서 그 문서의 본문·스냅샷·연표 파일도 지운다(파일 이름이 해시라 위키 블록의 목록으로 찾는다). 블록에 남은 문서 이름은 다시 빌드하면 빠진다.
+- 영상이면 `data/runtime/videos.json`과 나눈 데이터의 위키 블록에서 그 영상만 뺀다(이 파일들에는 다른 문서의 영상도 들어 있어서 지우지 않고 고쳐 쓴다).
 
 영상 예:
 

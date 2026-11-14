@@ -6,7 +6,7 @@ import '@xyflow/react/dist/style.css';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   actGraph, displayName, figureOf, IMAGE_NOTICE, isUnit, itemById, type MapItem, type Quest, questEdges, recommendedGraph, type RecommendedEdge, TIER_RANK,
-  type QuestType, questById, quests, REGION_KO, regionEntry, TYPE_LABEL, type Unit, unitById, UNIT_LABEL, unitOfQuest, units,
+  loadedUpTo, type QuestType, questById, quests, REGION_KO, regionEntry, TYPE_LABEL, type Unit, unitById, UNIT_LABEL, unitOfQuest, units,
   type Version, versionOrder, versions, type WikiSource,
 } from './data';
 import { recommendationGist, recommendationLead } from './recText';
@@ -17,6 +17,7 @@ import { loadSearchNodes, Search } from './Search';
 import { focusUrl, QUESTS } from './questSearch';
 import { type PageNode } from './lore';
 import { articleUrl, pathNameOf } from './route';
+import { versionFromUrl } from './split';
 import { ThemeToggle } from './theme';
 import { BY_SA_3, BY_SA_4, Lic, LicensePageLink } from './license';
 import { Emblem, EventMark, SeriesBadge } from './emblems';
@@ -814,16 +815,30 @@ const focusFromUrl = () => {
   return null;
 };
 
+/** a quest-map address with the chosen version (`&v=`), so a reload or a shared link opens at it */
+const withV = (url: string, order: number) => {
+  const id = versions[order]?.id;
+  return order >= versions.length - 1 || !id ? url : `${url}&v=${encodeURIComponent(id)}`;
+};
+
 export default function FocusView() {
   return <ReactFlowProvider><Atlas /></ReactFlowProvider>;
 }
 
 function Atlas() {
   const [focus, setFocus] = useState<string | null>(focusFromUrl);
-  const [vIdx, setVIdx] = useState(versions.length - 1);
+  // The map is laid out from the quest data loaded at start: the address's version (`?v=`) and those
+  // before it (App.tsx, src/split.ts). An earlier version only hides; a later one opens the map again
+  // at that version, so what comes after the chosen version is never downloaded (design.md 6절).
+  const [vIdx, setVIdx] = useState(() => Math.min(loadedUpTo, versionFromUrl() ?? versions.length - 1));
+  const pickVersion = (v: number) => {
+    if (v > loadedUpTo) { location.assign(withV(focusUrl(focus), v)); return; }
+    window.history.replaceState(null, '', withV(focusUrl(focus), v));
+    setVIdx(v);
+  };
   /** article pages, for the search box (an article opens on the 3D wiki's page) */
   const [pageNodes, setPageNodes] = useState<PageNode[]>([]);
-  useEffect(() => { loadSearchNodes().then(setPageNodes, () => {}); }, []);
+  useEffect(() => { loadSearchNodes(loadedUpTo).then(setPageNodes, () => {}); }, []);
   const pageById = useMemo(() => new Map(pageNodes.map((n) => [n.id, n])), [pageNodes]);
   const hrefOf = (p: string) => articleUrl(pathNameOf(p, pageById), versions[vIdx]?.id ?? '');
   /** Folded unit groups ("외 N개") the reader has opened. */
@@ -840,14 +855,14 @@ function Atlas() {
 
   const select = useCallback((id: string | null) => {
     if (id === focus) return;
-    window.history.pushState(null, '', focusUrl(id));
+    window.history.pushState(null, '', withV(focusUrl(id), vIdx));
     setFocus(id);
-  }, [focus]);
+  }, [focus, vIdx]);
 
   // A focused node that is not released in the chosen version is deselected (back to the atlas).
   useEffect(() => {
     if (focus && !visible(item(focus))) {
-      window.history.replaceState(null, '', QUESTS);
+      window.history.replaceState(null, '', withV(QUESTS, vIdx));
       setFocus(null);
     }
   }, [focus, visible]);
@@ -1227,8 +1242,8 @@ function Atlas() {
             <span className="hint">카드를 누르면 갈래 · 끌어서 이동</span>
           </div>
           <nav>
-            <a className="band" href="./">3D 위키</a>
-            <VersionPicker order={vIdx} onChange={setVIdx} />
+            <a className="band" href={vIdx >= versions.length - 1 ? '/' : `/?v=${encodeURIComponent(versions[vIdx].id)}`}>3D 위키</a>
+            <VersionPicker order={vIdx} onChange={pickVersion} />
             <ThemeToggle />
             {!focus && zoom < 0.45 ? (
               <button type="button" className="band" onClick={() => {

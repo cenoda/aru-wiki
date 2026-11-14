@@ -22,18 +22,17 @@ import { Line2 } from 'three/examples/jsm/lines/Line2.js';
 import { LineGeometry } from 'three/examples/jsm/lines/LineGeometry.js';
 import { LineMaterial } from 'three/examples/jsm/lines/LineMaterial.js';
 import SpriteText from 'three-spritetext';
-import themeUrl from '../data/runtime/chart.json?url';
-import snapshotsUrl from '../data/runtime/snapshots-khaenriah.json?url';
-import pagesUrl from '../data/runtime/pages.json?url';
 import { ReportBox } from './ReportBox';
 import { useLinker } from './Linked';
 import { Search } from './Search';
 import { articleKeyFromUrl, articleUrl, isArticleUrl, isRecentKey, pathNameOf, RECENT_KEY, resolvePage } from './route';
 import { Logo } from './Logo';
 import { BY_SA_3, BY_SA_4, Lic, LicensePageLink, SourceCredit } from './license';
-import { versions } from './data';
+import { loadData, versions } from './data';
+import { split, versionFromUrl } from './split';
+import { type Chart, loadWiki } from './wikiData';
 import {
-  idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, articleAt, loadPageData, type PageData, snapshotAt, type Snapshots, type Theme,
+  idOf, KIND_LABEL, nameOf, type PageLink, type PageNode, articleAt, loadPageData, type PageData, snapshotAt, type Theme,
 } from './lore';
 import { VersionPicker } from './VersionPicker';
 import { inflateChart, perfStars } from './wiki3dPerf';
@@ -311,8 +310,6 @@ interface LineParts {
   /** false while the chosen version hides the line */
   visible: boolean;
 }
-/** chart.json with the layout the data build made ahead of time (scripts/build-runtime-data.mjs) */
-type Chart = Theme & { layout?: { version?: number; lastOrder: number; portrait: number[]; landscape: number[] } };
 
 /** What the current version, selection and theme ask of each star and line. */
 interface Look {
@@ -396,11 +393,6 @@ const canDraw3D = () => {
     return !!(c.getContext('webgl2') ?? c.getContext('webgl'));
   } catch { return false; }
 };
-const versionFromUrl = () => {
-  const v = new URLSearchParams(location.search).get('v');
-  const hit = v ? versions.find((x) => x.id === v) : undefined;
-  return hit ? hit.order : null;
-};
 
 export default function WikiGraph3D() {
   const host = useRef<HTMLDivElement>(null);
@@ -442,7 +434,6 @@ export default function WikiGraph3D() {
   }, []);
   const [theme, setTheme] = useState<Theme | null>(null);
   const [failed, setFailed] = useState(false);
-  const [snapshots, setSnapshots] = useState<Snapshots | null>(null);
   /** pages outside the theme that have an article (whole-wiki run): searched, linked and opened, not drawn */
   const [extra, setExtra] = useState<PageNode[]>([]);
   const allNodes = useMemo(() => (theme ? [...theme.nodes, ...extra.filter((n) => !theme.nodes.some((t) => t.id === n.id))] : []), [theme, extra]);
@@ -501,28 +492,39 @@ export default function WikiGraph3D() {
   const keepView = useRef<{ pos: [number, number, number]; at: [number, number, number] } | null>(null);
   const sky = night ? NIGHT : DAY;
 
+  // ---------- data: only the versions up to the chosen one (src/wikiData.ts, src/data.ts) ----------
+  // Choosing a later version fetches the blocks it adds and builds the scene again with the reader's
+  // view kept; an earlier one keeps what is loaded and only hides (design.md 6절).
+  const [loadedUpTo, setLoadedUpTo] = useState(-1);
   useEffect(() => {
-    fetch(themeUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then(async (t: Theme) => {
+    if (vIdx <= loadedUpTo) return;
+    let live = true;
+    Promise.all([loadWiki(vIdx), loadData(vIdx)]).then(async ([w]) => {
+      if (!live) return;
+      let t: Theme = w.chart;
       const many = perfStars(); // testing only (dev server or a VITE_PERF3D build)
       if (many) t = inflateChart(t, many);
-      maxShared = Math.max(2, ...t.links.map((l) => l.shared));
+      maxShared = many ? Math.max(2, ...t.links.map((l) => l.shared)) : split.chart.maxShared;
       // The web font comes in unicode-range slices, fetched only for characters on the page. Names
       // drawn on a canvas do not trigger that, so a glyph whose slice is missing falls back to
       // another font (mixed letters in one word). Load the slices for every name first.
       const text = t.nodes.map(nameOf).join('');
       const fonts = Promise.all(['500', '600'].map((w) => document.fonts.load(`${w} 16px ${LABEL_FONT}`, text)));
       await Promise.race([fonts, new Promise((r) => setTimeout(r, 2500))]).catch(() => {});
+      if (!live) return;
+      // a scene is up: keep the reader's view when it is built again with the new stars
+      const g = graph.current;
+      if (g && host.current?.dataset.ready !== undefined) {
+        const cam = g.camera(), c = g.controls() as { target?: { x: number; y: number; z: number } };
+        const at = c.target ?? { x: 0, y: 0, z: 0 };
+        keepView.current = { pos: [cam.position.x, cam.position.y, cam.position.z], at: [at.x, at.y, at.z] };
+      }
+      setExtra(w.extra);
       setTheme(t);
-    }, () => setFailed(true));
-  }, []);
-
-  useEffect(() => {
-    fetch(pagesUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then(setExtra, () => {});
-  }, []);
-  // the cards' text loads beside the chart and is not needed to draw it
-  useEffect(() => {
-    fetch(snapshotsUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then(setSnapshots, () => setSnapshots({}));
-  }, []);
+      setLoadedUpTo(w.upTo);
+    }, () => live && setFailed(true));
+    return () => { live = false; };
+  }, [vIdx, loadedUpTo]);
 
   const index = useMemo(() => {
     if (!theme) return null;
@@ -536,8 +538,12 @@ export default function WikiGraph3D() {
     // importance = how many stories a page is in, on a log scale (Paimon is in most; a log keeps the
     // pages behind her from all shrinking to specks)
     const byImportance = [...theme.nodes].sort((a, b) => Number(b.hub) - Number(a.hub) || b.units - a.units);
-    const named = new Set(byImportance.slice(0, NAMED + 1).map((n) => n.id));
-    const top = Math.max(1, ...theme.nodes.filter((n) => !n.hub).map((n) => n.units));
+    // the names always shown and the size scale are those of the whole chart (scripts/split/build.mjs),
+    // so a star looks the same whichever versions are loaded
+    const perf = !!perfStars();
+    const named = perf ? new Set(byImportance.slice(0, NAMED + 1).map((n) => n.id))
+      : new Set(theme.nodes.filter((n) => n.hub || n.units >= split.chart.namedMinUnits).map((n) => n.id));
+    const top = perf ? Math.max(1, ...theme.nodes.filter((n) => !n.hub).map((n) => n.units)) : split.chart.topUnits;
     const importance = (n: PageNode) => (n.hub ? 1 : Math.min(1, Math.log(n.units + 1) / Math.log(top + 1)) ** 2);
     // the spanning tree by shared stories: the lines that stay clear while nothing is picked
     const tree = new Set<string>();
@@ -591,7 +597,7 @@ export default function WikiGraph3D() {
     const lastOrder = versions.length - 1;
     const portrait = el.clientWidth < el.clientHeight;
     /** the time axis: earlier versions low, later high (src/chartLayout.js) */
-    const TIME_SPAN = timeSpan(theme.nodes.length, portrait);
+    const TIME_SPAN = timeSpan(perfStars() ? theme.nodes.length : split.chart.total, portrait); // the whole chart's, as the layout
     const heightAt = (order: number) => heightOf(order, lastOrder, TIME_SPAN);
 
     // The graph library is only the stage here (renderer, camera, orbit controls, render loop). The
@@ -815,8 +821,10 @@ export default function WikiGraph3D() {
 
       // Horizontal celestial rings at each major version's height in 3D space (plus one horizon ring
       // at the chosen version), so perspective matches the stars and nothing crowds the left edge.
+      // sized (and the camera framed, below) by the whole chart, not just the versions loaded (scripts/split/build.mjs)
+      const whole = perfStars() ? null : split.chart.frame?.[portrait ? 'portrait' : 'landscape'] ?? null;
       const radii = list.map((n) => Math.hypot(n.x ?? 0, n.z ?? 0)).sort((a, b) => a - b);
-      const r90 = radii[Math.floor(radii.length * 0.9)];
+      const r90 = whole?.r90 ?? radii[Math.floor(radii.length * 0.9)];
       const ringR = Math.max(120, r90 * 1.08);
       const ringPos = (y: number, r: number) => {
         const segs = 96, pts: number[] = [];
@@ -854,7 +862,7 @@ export default function WikiGraph3D() {
       const hubPos = new Vector3();
       for (const n of list) if (n.hub) hubPos.set(n.x ?? 0, n.y ?? 0, n.z ?? 0);
       for (const n of list) {
-        if (n.hub || index.near.has(n.id)) continue;
+        if (n.hub || index.near.has(n.id) || (!perfStars() && !n.lone)) continue; // lone: no line at any version
         const c = smoothCurve(hubPos, { x: n.x ?? 0, y: n.y ?? 0, z: n.z ?? 0 }, axes().get(theme.page), undefined);
         const geo = new BufferGeometry().setFromPoints(Array.from({ length: c.length / 3 }, (_, i) => new Vector3(c[i * 3], c[i * 3 + 1], c[i * 3 + 2])));
         const loose = new Line(geo, new LineDashedMaterial({ color: lookNow.current.sky.line, dashSize: 3, gapSize: 4, transparent: true, opacity: 0.35, depthWrite: false }));
@@ -906,7 +914,9 @@ export default function WikiGraph3D() {
       // frame what is there: move the camera until the stars (but the far few) fill the screen in both directions
       const camera = g.camera() as PerspectiveCamera;
       const tilt = ((portrait ? 12 : 20) * Math.PI) / 180;
-      const linked = list.filter((n) => index.near.has(n.id));
+      const linked: { x?: number; y?: number; z?: number }[] = whole
+        ? Array.from({ length: whole.pts.length / 3 }, (_, i) => ({ x: whole.pts[i * 3], y: whole.pts[i * 3 + 1], z: whole.pts[i * 3 + 2] }))
+        : list.filter((n) => index.near.has(n.id));
       const ys = linked.map((n) => n.y ?? 0);
       const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
       const p = new Vector3();
@@ -1444,19 +1454,19 @@ export default function WikiGraph3D() {
   const sel = selected && index ? index.byId.get(selected)! : null;
   const hubNode = theme && index ? index.byId.get(theme.page) : undefined;
   const themeName = hubNode ? nameOf(hubNode) : '테마';
-  // the latest snapshot written for the chosen version or before it
-  const snap = sel && snapshots ? snapshotAt(snapshots[sel.id], vIdx) : null;
   const hrefOf = (p: string) => urlFor(pathNameOf(p, allById), vIdx);
-  // a page with no snapshot (outside the Khaenri'ah theme) shows its article's lead on the card instead
+  // the card: the latest snapshot written for the chosen version or before it, else the article's lead
+  // (fetched per page when picked; again on a version change, which may load more of its texts)
   const [cardData, setCardData] = useState<{ id: string; data: PageData } | null>(null);
-  const needLead = !!sel && !!snapshots && !snap;
   useEffect(() => {
-    if (!needLead || !sel || cardData?.id === sel.id) return;
+    if (!sel) return;
     let live = true;
-    loadPageData(sel.id).then((data) => { if (live) setCardData({ id: sel.id, data }); }, () => {});
+    loadPageData(sel.id).then((data) => { if (live) setCardData({ id: sel.id, data }); }, () => live && setCardData({ id: sel.id, data: { articles: [], timeline: [], snapshots: [] } }));
     return () => { live = false; };
-  }, [needLead, sel, cardData]);
-  const leadArt = needLead && cardData?.id === sel!.id ? articleAt(cardData.data.articles, vIdx) : null;
+  }, [sel?.id, vIdx, loadedUpTo]);
+  const cardReady = !!sel && cardData?.id === sel.id;
+  const snap = cardReady ? snapshotAt(cardData!.data.snapshots, vIdx) : null;
+  const leadArt = cardReady && !snap ? articleAt(cardData!.data.articles, vIdx) : null;
   const lead = leadArt?.lead ?? leadArt?.sections[0]?.p[0] ?? null;
   const link = useLinker(theme?.nodes, vIdx, sel?.id ?? null, hrefOf, openArticle);
   const cardSeen = new Set<string>();
@@ -1481,7 +1491,7 @@ export default function WikiGraph3D() {
             e.preventDefault();
             if (!isRecentKey(article)) openArticle(RECENT_KEY);
           }}>최근 바뀜</a>
-          <a className="band" href="/?view=quests">임무 지도</a>
+          <a className="band" href={`/?view=quests&v=${encodeURIComponent(versions[vIdx]?.id ?? '')}`}>임무 지도</a>
           <VersionPicker order={vIdx} onChange={setVIdx} />
           <ThemeToggle />
         </nav>
@@ -1491,7 +1501,7 @@ export default function WikiGraph3D() {
           <RecentChanges vIdx={vIdx} byId={allById} hrefOf={hrefOf} onOpen={openArticle} />
         </Suspense>
       ) : (
-        <WikiArticle page={page!} theme={theme} nodes={allNodes} byId={allById} snapshots={snapshots} vIdx={vIdx}
+        <WikiArticle page={page!} theme={theme} nodes={allNodes} byId={allById} vIdx={vIdx}
           hrefOf={hrefOf} onOpen={openArticle} />
       ))}
       {article && !theme && <p className="w3d-status">{failed ? '지도 데이터를 불러오지 못했습니다.' : '불러오는 중…'}</p>}
@@ -1519,7 +1529,7 @@ export default function WikiGraph3D() {
             e.preventDefault();
             openArticle(sel.id);
           }}>자세히 보기 →</a>
-          {snapshots && (snap ? (
+          {(snap ? (
             <section className="w3d-snap">
               <p className="w3d-snap-head">
                 <span className="tag neutral" title="위키 글을 바탕으로 기계가 쓰고, 다른 회사 모델이 근거와 대조했습니다. 사람은 아직 확인하지 않았습니다.">미검수</span>
@@ -1539,7 +1549,7 @@ export default function WikiGraph3D() {
               <SourceCredit className="w3d-src" sources={lead.r.map((r) => leadArt.sources[r])} what="번역·요약해 고쳐 썼습니다."
                 extra={lead.r.some((r) => leadArt.sources[r]?.kind !== 'wiki') && ' 게임 대사와 웹 출처는 문서의 각주에 있습니다.'} />
             </section>
-          ) : <p className="w3d-meta w3d-snap-none">{cardData?.id === sel.id ? '이 버전까지의 요약이 아직 없습니다.' : '불러오는 중…'}</p>)}
+          ) : <p className="w3d-meta w3d-snap-none">{cardReady ? '이 버전까지의 요약이 아직 없습니다.' : '불러오는 중…'}</p>)}
           <p className="w3d-meta">나오는 이야기 {sel.units}개</p>
           {neighbours.length > 0 && (
             <ul className="w3d-near">

@@ -1,10 +1,11 @@
 // 최근 바뀜 (`/wiki/특수:최근바뀜`): new and rewritten articles and approved reader edits, newest first,
-// by day. The list is data/runtime/recent.json (scripts/recent/changes.mjs), fetched only here. A row
-// is shown only when the chosen version has reached it (g), so later pages are not named.
+// by day. The rows come in the wiki's version blocks (scripts/recent/changes.mjs → scripts/split/build.mjs,
+// src/wikiData.ts), so a row about a later page is not even downloaded; a row is also shown only when
+// the chosen version has reached it (g).
 import { type MouseEvent, useEffect, useMemo, useState } from 'react';
-import recentUrl from '../data/runtime/recent.json?url';
 import { versions } from './data';
 import { nameOf, type PageNode } from './lore';
+import { loadWiki } from './wikiData';
 import './recent.css';
 
 /** k: new | more | redo (generated articles), edit | add | page (reader edits); v: version orders; g: first order it may be named */
@@ -53,8 +54,10 @@ export default function RecentChanges({ vIdx, byId, hrefOf, onOpen }: {
   const [filter, setFilter] = useState<Filter>('all');
   const [limit, setLimit] = useState(PAGE);
   useEffect(() => {
-    fetch(recentUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then(setRows, () => setFailed(true));
-  }, []);
+    let live = true;
+    loadWiki(vIdx).then((w) => live && setRows(w.recent), () => live && setFailed(true));
+    return () => { live = false; };
+  }, [vIdx]);
   useEffect(() => {
     const before = document.title;
     document.title = '최근 바뀜 - aru.wiki';

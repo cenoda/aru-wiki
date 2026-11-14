@@ -11,8 +11,9 @@
 //       lists that page's videos as suggestions, and a video query never blocks the page text.
 //   node scripts/takedown.mjs block <query>... --requester "..." --reason "..." [--apply]
 //       Add one entry to data/manual/takedown.json with the exact matches, and delete their local
-//       copies (public/, dist/, data/runtime/articles/; blocked videos are cut out of
-//       data/runtime/videos.json and dist/assets/videos-*.json). Without --apply it only prints the plan.
+//       copies (public/, dist/, data/runtime/articles/, and the split data's text files of the page in
+//       public/assets/d/ and dist/assets/d/; blocked videos are cut out of data/runtime/videos.json and
+//       the split data's wiki blocks). Without --apply it only prints the plan.
 //   node scripts/takedown.mjs clean [--apply]   delete local copies of everything already blocked
 //   node scripts/takedown.mjs check             is anything blocked still here? (+ live URLs to test)
 //   node scripts/takedown.mjs list              the entries in data/manual/takedown.json
@@ -165,6 +166,17 @@ function expand(items) {
   return out;
 }
 
+// ---------- the split data (scripts/split/build.mjs): files named by hash, found through the index ----------
+const SPLIT_DIRS = ['public/assets/d/', 'dist/assets/d/'];
+/** every wiki block's hash, all languages */
+const wikiBlocks = () => [...new Set(Object.values(readJson('data/runtime/split-index.json', { lang: {} }).lang ?? {}).flatMap((l) => l.wiki ?? []).filter(Boolean))];
+/** hashes of a page's text files (articles, snapshots, timeline), from the wiki blocks */
+function splitTexts(page) {
+  const out = new Set();
+  for (const h of wikiBlocks()) for (const dir of SPLIT_DIRS) for (const [p, , hash] of readJson(`${dir}${h}.json`, {}).texts ?? []) if (p === page) out.add(hash);
+  return [...out];
+}
+
 // ---------- local copies ----------
 /** Files on this computer that hold blocked material. Paths relative to the project root. */
 function localCopies(b) {
@@ -179,6 +191,8 @@ function localCopies(b) {
     if (existsSync(new URL(`data/runtime/articles/${slug}.json`, root))) out.push(`data/runtime/articles/${slug}.json`);
     // dist/assets/<slug>-<hash>.json (its JS stub only holds the URL and stays until the rebuild)
     for (const n of lsDir('dist/assets/')) if (new RegExp(`^${slug}-[A-Za-z0-9_-]{8}\\.json$`).test(n)) out.push(`dist/assets/${n}`);
+    // the split data: the page's text files (the wiki blocks still name the page until the rebuild)
+    for (const hash of splitTexts(page)) for (const dir of SPLIT_DIRS) if (existsSync(new URL(`${dir}${hash}.json`, root))) out.push(`${dir}${hash}.json`);
   }
   return out;
 }
@@ -196,12 +210,23 @@ function videoLeftovers(b) {
     const ids = new Set(Object.values(data).flat().map((x) => x?.id).filter((id) => b.videos.has(id)));
     if (ids.size) out.push({ path, data, ids: [...ids] });
   }
+  // the split data's wiki blocks: videos as [page, video]
+  for (const h of wikiBlocks()) for (const dir of SPLIT_DIRS) {
+    const path = `${dir}${h}.json`;
+    const data = readJson(path, null);
+    const ids = new Set((data?.videos ?? []).map(([, x]) => x?.id).filter((id) => b.videos.has(id)));
+    if (ids.size) out.push({ path, data, ids: [...ids], block: true });
+  }
   return out;
 }
 
 async function stripVideos(b, apply) {
-  for (const { path, data, ids } of videoLeftovers(b)) {
-    if (apply) {
+  for (const { path, data, ids, block } of videoLeftovers(b)) {
+    if (apply && block) {
+      // a page's main video goes with the rest of its videos, wherever they are: the site picks the
+      // first after sorting, as build-runtime-data would without the blocked one
+      await writeFile(new URL(path, root), JSON.stringify({ ...data, videos: data.videos.filter(([, x]) => !b.videos.has(x.id)) }));
+    } else if (apply) {
       const kept = {};
       for (const [page, list] of Object.entries(data)) {
         const left = list.filter((x) => !b.videos.has(x.id));

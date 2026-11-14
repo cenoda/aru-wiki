@@ -1,6 +1,6 @@
 // Shared by the lore theme's 3D chart (WikiGraph3D) and its article pages (WikiArticle).
-import redNamesUrl from '../data/runtime/redlinks.json?url';
-import videosUrl from '../data/runtime/videos.json?url';
+import { fetchData } from './split';
+import { latestWiki } from './wikiData';
 
 /** One line of a snapshot and the footnote (index into the snapshot's sources) behind it. */
 export interface SnapLine { t: string; r: number }
@@ -16,6 +16,8 @@ export type Snapshots = Record<string, Snapshot[]>;
 
 export interface PageNode {
   id: string; ko: string | null; kind: 'character' | 'lore'; hub: boolean; units: number; revealed: number;
+  /** no line in the whole chart (scripts/split/build.mjs): drawn with a dotted line to the centre star */
+  lone?: 1;
   x?: number; y?: number; z?: number; fx?: number; fy?: number; fz?: number;
 }
 export interface PageLink { source: string | PageNode; target: string | PageNode; shared: number; revealed: number }
@@ -56,30 +58,33 @@ export interface Article {
 }
 /** What the wiki newly said at a version snapshot (scripts/theme/reveals.mjs). */
 export interface TimelineEntry { v: number; first?: boolean; items: { t: string; page: string; revision: number; date: string }[] }
-export interface PageData { articles: Article[]; timeline: TimelineEntry[] }
-/** The file name of a page's articles; scripts/build-runtime-data.mjs articleSlug must match. */
-export const articleSlug = (page: string) => page.replace(/[^A-Za-z0-9]+/g, '_');
-// one file per page, fetched when its article opens
-const articleFiles = import.meta.glob('../data/runtime/articles/*.json', { query: '?url', import: 'default' }) as Record<string, () => Promise<string>>;
-/** The page's articles and timeline; empty when it has none. */
+export interface PageData { articles: Article[]; timeline: TimelineEntry[]; snapshots: Snapshot[] }
+/**
+ * The page's articles, snapshots and timeline as far as the loaded versions go (src/wikiData.ts):
+ * one file per article and per version of snapshots and timeline, named by hash. Empty when it has none.
+ */
 export async function loadPageData(page: string): Promise<PageData> {
-  const file = articleFiles[`../data/runtime/articles/${articleSlug(page)}.json`];
-  if (!file) return { articles: [], timeline: [] };
-  const r = await fetch(await file());
-  if (!r.ok) throw new Error(String(r.status));
-  return r.json();
+  const t = (await latestWiki()).texts.get(page);
+  if (!t) return { articles: [], timeline: [], snapshots: [] };
+  const [articles, history] = await Promise.all([
+    Promise.all(t.a.map((h) => fetchData<Article>(h))),
+    Promise.all(t.h.map((h) => fetchData<{ s?: Snapshot[]; t?: TimelineEntry[] }>(h))),
+  ]);
+  return {
+    articles: [...articles].sort((a, b) => a.from - b.from),
+    timeline: history.flatMap((x) => x.t ?? []).sort((a, b) => a.v - b.v),
+    snapshots: history.flatMap((x) => x.s ?? []).sort((a, b) => a.from - b.from),
+  };
 }
 /** The latest article written for the version (order) or before it. */
 export const articleAt = (list: Article[] | undefined, order: number) => (list ?? []).filter((a) => a.from <= order).at(-1) ?? null;
 
 /** A name with no article yet and the version (order) of its first story: [name, revealed]. */
 export type RedName = readonly [name: string, revealed: number];
-let redCache: Promise<RedName[]> | null = null;
-/** Names that become red links (scripts/build-runtime-data.mjs redlinks.json), fetched once. */
-export const loadRedNames = (): Promise<RedName[]> => (redCache ??= fetch(redNamesUrl).then((r) => (r.ok ? r.json() : [])).catch(() => []));
+/** Names that become red links (scripts/build-runtime-data.mjs), as far as the loaded versions go. */
+export const loadRedNames = (): Promise<RedName[]> => latestWiki().then((w) => w.red, () => []);
 
 /** An official YouTube video for a page (scripts/youtube/): `v` is the version order it belongs to. */
 export interface PageVideo { id: string; t?: string; main?: boolean; v: number }
-let videoCache: Promise<Record<string, PageVideo[]>> | null = null;
-/** Official videos by page (scripts/build-runtime-data.mjs videos.json), fetched once. */
-export const loadVideos = () => (videoCache ??= fetch(videosUrl).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
+/** Official videos by page, as far as the loaded versions go. */
+export const loadVideos = (): Promise<Record<string, PageVideo[]>> => latestWiki().then((w) => w.videos, () => ({}));

@@ -308,7 +308,7 @@ await write('pages.json', Object.keys(perPage).filter((p) => !inChart.has(p)).so
   return { id: p, ko: koNames[p]?.ko ?? null, kind: loreLinks[p]?.kind ?? 'lore', hub: false, units: u.length,
     revealed: u.length ? firstOrder(u) : lastOrder };
 }));
-/** the file name of a page's articles; src/lore.ts articleSlug must match */
+/** the file name of a page's articles; scripts/seo/prerender.mjs and scripts/split/build.mjs read them by it */
 function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
 
 // ---------- 최근 바뀜 (scripts/recent/changes.mjs): new and rewritten articles, approved reader edits ----------

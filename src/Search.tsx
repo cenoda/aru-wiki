@@ -5,11 +5,11 @@
 import { type FormEvent, Fragment, type KeyboardEvent, type MouseEvent, type ReactNode, useEffect, useId, useMemo, useRef, useState } from 'react';
 import { bodySearchable, type BodyHit, searchBodies } from './bodySearch';
 import { versions } from './data';
-import { KIND_LABEL, nameOf, type PageNode, type Theme } from './lore';
+import { KIND_LABEL, nameOf, type PageNode } from './lore';
 import { focusUrl, questHits } from './questSearch';
 import { loadPublished, type Published } from './readerEdits';
-import themeUrl from '../data/runtime/chart.json?url';
-import pagesUrl from '../data/runtime/pages.json?url';
+import { knownName } from './names';
+import { loadWiki } from './wikiData';
 import './search.css';
 
 export interface SearchProps {
@@ -27,12 +27,26 @@ export interface SearchProps {
   className?: string;
 }
 
-/** Every page with an article, for a view that does not load the chart itself (the quest map). */
-export async function loadSearchNodes(): Promise<PageNode[]> {
-  const get = (url: string) => fetch(url).then((r) => (r.ok ? r.json() : Promise.reject(r.status)));
-  const [theme, extra] = await Promise.all([get(themeUrl) as Promise<Theme>, get(pagesUrl).catch(() => []) as Promise<PageNode[]>]);
-  const ids = new Set(theme.nodes.map((n) => n.id));
-  return [...theme.nodes, ...extra.filter((n) => !ids.has(n.id))];
+/** Every page with an article revealed at or before version order v, for a view that does not load the chart itself (the quest map). */
+export async function loadSearchNodes(v: number): Promise<PageNode[]> {
+  const { chart, extra } = await loadWiki(v);
+  const ids = new Set(chart.nodes.map((n) => n.id));
+  return [...chart.nodes, ...extra.filter((n) => !ids.has(n.id))];
+}
+
+/**
+ * Whether a page revealed after the loaded versions has this title (src/names.ts): null until known.
+ * Such a title is taken, though the page is not named here.
+ */
+function useHiddenTitle(title: string, known: boolean) {
+  const [r, setR] = useState<{ title: string; yes: boolean } | null>(null);
+  useEffect(() => {
+    if (known || title.length < 2) return;
+    let live = true;
+    const t = setTimeout(() => knownName(title).then((yes) => live && setR({ title, yes }), () => {}), 150);
+    return () => { live = false; clearTimeout(t); };
+  }, [title, known]);
+  return known ? false : r?.title === title ? r.yes : null;
 }
 
 const fold = (s: string) => s.toLowerCase().normalize('NFKC').replace(/[\s·'’「」-]/g, '');
@@ -59,8 +73,9 @@ export function Search({ nodes, vIdx, hrefOf, onOpen, onQuest, big, autoFocus, n
   }, [q, pub, vIdx]);
   const title = q.trim().replace(/\s+/g, ' ');
   /** offer to write the page when nothing has this name (not while a hidden page may have it) */
-  const canWrite = title.length >= 2 && title.length <= 60 && !BAD_TITLE.test(title)
-    && !nodes.some((n) => fold(nameOf(n)) === fold(title) || fold(n.id) === fold(title)) && !written.some((t) => fold(t) === fold(title));
+  const shownTitle = nodes.some((n) => fold(nameOf(n)) === fold(title) || fold(n.id) === fold(title)) || written.some((t) => fold(t) === fold(title));
+  const hiddenTitle = useHiddenTitle(title, shownTitle);
+  const canWrite = title.length >= 2 && title.length <= 60 && !BAD_TITLE.test(title) && !shownTitle && hiddenTitle === false;
   const done = () => { setOpen(false); setQ(''); };
 
   const hits = useMemo(() => {
@@ -181,6 +196,8 @@ function NewPage({ nodes, pub, seed, big, onOpen }: { nodes: PageNode[]; pub: Pu
   // an existing page by either name, revealed or not (opening a hidden one says only that it is not revealed yet)
   const same = k ? nodes.find((n) => fold(nameOf(n)) === k || fold(n.id) === k) : undefined;
   const sameWritten = k && !same ? pub?.edits.find((e) => e.kind === 'page' && fold(e.page) === k)?.page : undefined;
+  // a page revealed at a later version than loaded: taken, but not named (it opens as not revealed yet)
+  const hidden = useHiddenTitle(title, !!same || !!sameWritten) === true;
   const problem = !title ? '' : title.length < 2 ? '두 글자 이상 써 주세요.' : title.length > 60 ? '60자까지 쓸 수 있습니다.'
     : BAD_TITLE.test(title) ? '제목에 < > [ ] { } | # / ? % 는 쓸 수 없습니다.' : '';
   const submit = (e: FormEvent) => {
@@ -199,9 +216,9 @@ function NewPage({ nodes, pub, seed, big, onOpen }: { nodes: PageNode[]; pub: Pu
               onKeyDown={(e) => { if (e.key === 'Escape') setOpen(false); }} />
           </label>
           <p className={`newpage-note${problem ? ' bad' : ''}`}>
-            {problem || (same || sameWritten ? '이미 있는 문서입니다. 열어서 글을 보탤 수 있습니다.' : '제목을 정하면 첫 문단을 쓰는 화면이 열립니다. 보낸 글은 운영자가 확인한 뒤 공개됩니다.')}
+            {problem || (same || sameWritten || hidden ? '이미 있는 문서입니다. 열어서 글을 보탤 수 있습니다.' : '제목을 정하면 첫 문단을 쓰는 화면이 열립니다. 보낸 글은 운영자가 확인한 뒤 공개됩니다.')}
           </p>
-          <button type="submit" disabled={!title || !!problem}>{same || sameWritten ? '문서 열기' : '쓰기 시작'}</button>
+          <button type="submit" disabled={!title || !!problem}>{same || sameWritten || hidden ? '문서 열기' : '쓰기 시작'}</button>
         </form>
       )}
     </div>

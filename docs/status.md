@@ -2,7 +2,7 @@
 
 남은 일의 원본은 이 파일 하나다. 끝난 일은 지우고 `docs/log/`나 커밋에 남긴다. 날짜 붙은 기록(`docs/log/`)의 할 일 목록은 쓴 날 기준이라 여기와 다르면 이 파일이 맞다.
 
-마지막 갱신: 2026-11-14
+마지막 갱신: 2026-11-15
 
 ## 지금 위치
 
@@ -45,7 +45,7 @@
   - [x] 짧은 주소(2026-11-12, `src/route.ts`): `/wiki/<이름>?v=<버전>`. 경로 이름은 공식 한국어 이름, 없으면 영어 문서 이름, 공백은 `_`. 영어 이름·예전 `?page=` 링크로 들어오면 한국어 주소로 바꾼다(기록은 늘지 않음). 사이트가 만드는 링크는 모두 짧은 주소.
     - [x] 서버 Caddyfile(2026-11-12 적용, 백업 `/etc/caddy/Caddyfile.bak-20261112`): `aru.wiki` 블록에 `redir /wiki / 302`, `header /wiki/* Cache-Control "no-cache"`, `rewrite /wiki/* /index.html`. 새 화면 코드는 다음 배포부터 실린다(그 전에는 `/wiki/…`가 첫 화면을 연다).
     - [x] 검색 엔진(2026-11-13): 빌드 끝에 `scripts/seo/prerender.mjs`가 문서마다 `dist/wiki/<이름>.html`(문서 제목·설명·canonical·og, 최신 버전 본문; 스크립트가 돌면 숨김), 대문의 문서 링크 목록, `dist/sitemap.xml`을 만든다. `public/robots.txt`가 사이트맵을 가리킨다. Caddyfile(백업 `/etc/caddy/Caddyfile.bak-20261113`)은 `rewrite /wiki/* /index.html` 대신 `@wikipage`(`path /wiki/*` + `file {path}.html`) → `{path}.html`, `@wikiapp`(`not file`) → `/index.html`. `try_files`에는 경로 조건을 붙일 수 없다(붙이면 그 경로를 파일 패턴으로 읽어 모든 요청에 한 파일을 준다, 2026-11-13 사고). Search Console에 사이트맵 제출함(사용자).
-    - [ ] 한글 사이트 이름(2026-11-13, 코드만 고침·미배포): 사이트 어디에도 '아루'가 없어 구글이 「아루위키」「아루 위키」 검색을 이 사이트와 잇지 못했다. 제목을 `<문서> - 아루위키`, 대문 `아루위키 (aru.wiki) — 원신 시간축 위키`, `og:site_name` 아루위키, 대문에 WebSite 구조화 데이터(name 아루위키, alternateName aru.wiki·아루 위키·aru wiki)를 넣었다(`scripts/seo/prerender.mjs`, `index.html`, `src/WikiArticle.tsx`, `src/RecentChanges.tsx`). 남은 문제: `/wiki/???`만 404(Caddy `file` 매처가 `?`를 글롭으로 읽는 듯, 서버 Caddyfile 확인 필요).
+    - [ ] 한글 사이트 이름(2026-11-13 코드, 2026-11-15 커밋·미배포): 사이트 어디에도 '아루'가 없어 구글이 「아루위키」「아루 위키」 검색을 이 사이트와 잇지 못했다. 제목을 `<문서> - 아루위키`, 대문 `아루위키 (aru.wiki) — 원신 시간축 위키`, `og:site_name` 아루위키, 대문에 WebSite 구조화 데이터(name 아루위키, alternateName aru.wiki·아루 위키·aru wiki)를 넣었다(`scripts/seo/prerender.mjs`, `index.html`, `src/WikiArticle.tsx`, `src/RecentChanges.tsx`). 남은 문제: `/wiki/???`만 404. `???`는 실제 문서(「??? (Fontaine)」)이고 `/wiki/???.html` 파일은 200으로 열린다. 원인 추정(서버에서 아직 확인 안 함): Caddy `rewrite {path}.html`이 경로 속 `?`를 쿼리 시작으로 읽어 `/wiki/`로 바꾸고, Caddy 2.6의 `file` 매처는 `?`·`*`·`[`를 글롭으로 읽는다. 고칠 안: `@wikipage`에 `not path_regexp [?*\[\]#%]`를 붙이고, `@wikiapp`는 `not path *.html` 기준으로 바꾼다(그 이름들은 검색엔진용 페이지 없이 앱으로 열린다). 또는 Caddy를 2.7 이상으로 올린다.
   - [x] 본문 검색(2026-11-13, `src/bodySearch.ts`, `scripts/search/`): 같은 검색창에서 이름 결과(문서·임무) 아래에 「본문에서 찾음」으로 문서 이름과 일치한 곳을 표시한 발췌를 보여 준다(두 글자 이상). 빌드 때 본문을 글자 2개 묶음(bigram) 역색인으로 만들어 `data/runtime/search/`에 128개 조각으로 나눠 둔다. 첫 화면은 받지 않고, 검색할 때 문서 목록(meta)과 검색어 bigram이 든 조각만 받은 뒤 후보 문서 파일을 받아 정확히 확인하고 발췌를 자른다. 버전 가림은 문서 화면과 같다(고른 버전에 공개된 문서, 그 버전에 보여 줄 본문만). 2026-11-13 기준 448개 문서 2.2MB(gzip 1.2MB), 검색 한 번에 조각 2~4개(각 평균 17KB). 독자가 쓴 글, 요점(스냅샷), 연표는 아직 찾지 않는다.
   - [ ] 아직 없는 것: 신뢰도 배지(사람이 쓴 해석이 생길 때). 스냅샷은 위키 서술이라 신뢰도 등급을 붙이지 않는다.
 - [x] 3D 뷰 미리보기(2026-11-11, `src/WikiGraph3D.tsx`; 2026-11-12부터 첫 화면, 같은 날 전체 위키로 넓힘 — 아래 "전체 위키" 절). 모양을 보려는 것이고 **배치는 최종안이 아니다(사용자)**. 처음에 정한 것(켄리아 기준):
@@ -78,7 +78,8 @@
   - [ ] 남은 475번: 영어 인용 조각(Hail, Let the, May the Mighty God), 제목 조각(Ignition Teaser, Name Forged), Mt.(어순이 바뀌어 낱말만 못 바꿈), S-Rank·NPC·Lv(영어로 둠), Luna, Carp's Rest(금락정?) 등. 문장 전체 고쳐 쓰기(`tasks rewrite`)를 본문에도 붙이면 더 줄일 수 있다.
 - [x] 전체 위키 본문 끝(2026-11-13): 문서 1,322개 배포(941ae4e). 최신 버전 본문이 있는 1,383개 중 나머지는 쓸 자료가 모자라거나 오류로 빠진 것.
 - [x] 남은 영어(2026-11-13): 이름 1,865개(Parallel Task API) + 문장별 선택 5,668문장(`context-llm.mjs`, Rate cloud 모델) → 보이는 본문의 영어 8,944번 → 1,776번. 남은 것은 영어 인용 조각(This, Indeed, May the Mighty God), 약어(NPC, S-Rank, AI), Luna IV 같은 것.
-- [x] 웹 사실(2026-11-13): 아직 안 쓴 433개 문서에 공식 사이트·위키백과 사실 698개(`web-facts.mjs`, Parallel). 이미 쓴 문서에는 다시 써야 들어간다(결정 전).
+- [x] 남은 영어(2026-11-15): 보이는 본문의 영어 1,776번 → 1,396번(켄리아 189 → 63). 영어 인용 조각 127 → 6, 이름·일반어 601 → 358, 약어(NPC·HP·S-Rank 등 1,032)는 영어로 둔다. 원인 둘을 고쳤다: `latinNames`가 "Fatui officials"를 "Fatui of"로 읽어 구절째 영어로 남기던 것, `ko-names.json`의 한국어 없는 행(Vasiliy 등 19개)이 `ko-names-llm.json` 이름을 막던 것. 문장 전체 고쳐 쓰기를 본문에도 붙였다(`ko-llm.mjs tasks rewrite --articles` → `rewrite-llm.mjs`, Rate cloud; 인용문 밖 한국어가 바뀌면 버림). 요청 1,426번 중 827문장을 받아들였다. 이름은 덤프 행 5개(`ko-names.json`), Parallel 19개(약 0.15달러)와 규칙·LLM 4개(`ko-names-llm.json`). Parallel이 데이터 사이트(genshin.aza.gg, genshin-builds.com)를 근거로 댄 답 2개는 버리고 그 도메인을 `px-names.mjs`에서 뺐다. 사람이 볼 이름 목록은 [ko-names-review-2026-11-15.md](ko-names-review-2026-11-15.md). 남은 것은 버전 이름(Luna IV 등), keep 처리된 이름(Ad Oblivione, HoYoLAB), Max HP처럼 공식 표기를 못 찾은 것. 세는 법: `node scripts/theme/english-left.mjs`.
+- [x] 웹 사실(2026-11-13): 아직 안 쓴 433개 문서에 공식 사이트·위키백과 사실 698개(`web-facts.mjs`, Parallel). 이미 쓴 문서에는 다시 써야 들어간다(결정 전, 사용자가 정한다).
 
 ### 버전별 데이터 나누기 (2026-11-14, 배포함)
 
@@ -103,7 +104,7 @@ design.md 1절 3번·6절: 화면 조작이든 개발자 도구든 고른 버전
 - [x] 첫 화면 `＋ 새 문서` 버튼(2026-11-12 사용자 요청, `src/Search.tsx`의 `NewPage`): 검색창 옆(머리말, WebGL 없는 대문 둘 다). 제목을 받아 있는 문서면 열고, 없으면 빈 문서(첫 문단 쓰기)를 연다.
   - [x] 없는 문서를 열면 제목이 「공개되지 않은 항목」으로 나오던 것(2026-11-13): 어느 버전에도 없는 제목이면 쓴 제목을 보여 준다. 있지만 고른 버전에 아직 공개되지 않은 문서(독자가 뒤 버전에서 쓴 문서 포함)는 그대로 이름을 가린다.
 - [x] 글 속 빨간 링크(2026-11-13, `src/Linked.tsx`): 이 사이트에 문서가 없는 이름을 빨간 글씨로 걸고, 누르면 새 문서(첫 문단 쓰기)가 열린다. 후보는 `scripts/build-runtime-data.mjs`가 `data/runtime/redlinks.json`으로 만든다: `lore-links.json`의 Fandom 문서 중 공식 한국어 이름(`ko-names.json`)이 있고 본문이 없는 것. 그 문서가 처음 나온 이야기의 버전부터만 건다(스포일러). 세 글자 이상만(두 글자 이름은 `유리`·`생각`·`지역`처럼 보통 낱말과 겹친다), 게임 시스템 분류(에너지·스태미나·원소 반응·튜토리얼 등)와 하위 문서(`Wanderer/Storyline`)는 뺀다. 절마다 처음 한 번만 건다(파란 링크와 같음). 독자가 쓴 문서(그 버전에 공개된 것)는 파란 링크로 건다. 3D 카드에는 걸지 않는다.
-- [ ] LLM 검사(근거 대조·스포일러). 본문 파이프라인의 LLM 호출 코드가 정리된 뒤에 붙인다.
+- [x] LLM 검사(2026-11-15, `scripts/suggest/check.mjs`): `node scripts/suggest/review.mjs check`로 기다리는 제안마다 LLM을 한 번 부른다(claude-sonnet → codex-medium → grok). 그 버전까지의 위키 원문, 한국어 본문, 뒤 버전에만 있는 문단을 함께 주고 스포일러 구절, 근거 없는 주장, 유출·개인정보·광고·명령 끼워넣기를 알려 준다. 결과는 `list`·`show`에 나오고 같은 글이면 다시 부르지 않는다(`.cache/suggest/checks.json`). 참고 표시일 뿐이고 승인은 사람이 한다. 만든 제안 4개로 시험해 모두 맞게 잡혔다(한 번에 4~6초). codex는 `--sandbox read-only`라 이 컴퓨터의 파일을 읽을 수는 있다(결과는 운영자 터미널에만 나온다).
 - [x] 최근 바뀜 페이지(2026-11-13, `feat/recent-changes`): `/wiki/특수:최근바뀜`, 머리말의 `최근 바뀜` 링크. 승인된 독자 글(`review.mjs approve`가 이제 `approved_at` 시각도 적는다)과 새 문서·본문 추가·본문 고침(`data/generated/articles-*.json`의 git 이력에서 문서별 `from_version`·`input_hash`를 비교, 커밋 안 된 작업 사본은 파일 수정 시각). 빌드 때 `scripts/recent/changes.mjs` → `data/runtime/recent.json`, 그 페이지에서만 받는다. 고른 버전보다 뒤에 공개되는 문서는 숨긴다. 새 경로라 서버 설정은 바꿀 필요 없음(`/wiki/*`에 미리 만든 파일이 없으면 index.html).
 - [ ] 아직 없는 것: 독자가 쓴 문서의 문단 고치기, 실린 뒤 내려간 글을 쓴 사람에게 알리기.
 - [ ] 정할 것: 작은 수정을 승인 없이 바로 공개할지(지금은 전부 승인 후 공개).
@@ -133,7 +134,7 @@ design.md 1절 3번·6절: 화면 조작이든 개발자 도구든 고른 버전
 - [x] `~/projects/aru-wiki-3d` 폴더를 새 이력으로 맞췄다(2026-11-11). 옛 브랜치(`backup/old-main`·`backup/old-feat-3d-main`)는 2026-11-12 사용자 결정으로 지웠다. 5174 미리보기 서버는 껐다.
 - [x] 화면에서 출처·라이선스 표시(카드 이미지는 2026-11-11 완료: 화면 아래 고지, 갈래 정보 카드에 출처·받은 날짜·공개 버전). 글은 2026-11-13: 3D 카드(스냅샷·첫 문단), 문서의 「출처와 라이선스」(원문 문서·판·기여자 목록, CC BY-SA 3.0/4.0 링크, 바꾼 점, 독자 작성자), 임무 지도 정보 칸(임무 문서·판·기여자, 권장 이유의 근거 문서), 검색엔진용 정적 문서, WebGL 없는 첫 화면에 표시. 사이트 전체 안내는 `public/license.html`(`/license.html`, 모든 화면에서 링크). 공통 부품은 `src/license.tsx`.
 - [x] 삭제 요청 수단(2026-11-12, [docs/takedown.md](takedown.md)): `node scripts/takedown.mjs find|block|clean|check|list|unblock`, 막은 목록 `data/manual/takedown.json`. 아이콘은 받지 않고 카드는 지역 문장으로 바뀐다. `--apply` 없이는 아무것도 바꾸지 않는다.
-  - [ ] 글(위키 문서) 막기: `scripts/build-runtime-data.mjs`가 `takedown.json`의 `pages`를 읽어 테마·스냅샷·본문·연표에서 빼야 실제로 사라진다(문서 작업이 끝난 뒤 넣는다). 그때 `src/data.ts`가 `takedown.json`을 통째로 가져오지 않게(요청자·사유가 번들에 실림) 막은 이름 목록만 넘긴다.
+  - [x] 글(위키 문서) 막기(2026-11-15): `takedown.json`에 문서를 넣고 다시 빌드하면 본문·스냅샷·연표·3D 별·검색·검색엔진용 페이지·sitemap·최근 바뀜·빨간 링크·영상·독자 글이 모두 빠진다. 다른 문서에 그 이름이 나오면 글은 남고 링크만 없어진다. 사이트 코드는 `takedown.json`을 읽지 않는다(요청자·사유가 JS에 실리지 않음). 막은 인물·파일의 이미지 기록도 빠진다. `takedown.mjs`가 이제 전체 위키 문서도 막는다. 남은 것: 다른 문서가 그 Fandom 문서를 근거로 쓴 문단(출처 표시와 함께 남는다). 예전 메모: `scripts/build-runtime-data.mjs`가 `takedown.json`의 `pages`를 읽어 테마·스냅샷·본문·연표에서 빼야 실제로 사라진다(문서 작업이 끝난 뒤 넣는다). 그때 `src/data.ts`가 `takedown.json`을 통째로 가져오지 않게(요청자·사유가 번들에 실림) 막은 이름 목록만 넘긴다.
 - [x] contact@aru.wiki 수신과 알림 확인(2026-11-12, 사용자).
 - [x] OCI 배포(2026-11-12, https://aru.wiki 공개). 서버 `147.224.187.173`(A2 1 OCPU·2GB, Ubuntu 24.04, 사용자 `ubuntu`). 이 컴퓨터의 `~/.ssh/aru-deploy` 키로 접속한다(서버 `authorized_keys`에서 그 줄을 지우면 막힌다).
   - 서버에 한 것: 스왑 2GB, iptables 80·443 허용(저장), Caddy 2.6, Node 18(Ubuntu 패키지; report-server는 내장 모듈만 써서 돌아간다). 사이트 `/srv/aru/site`, 신고 데몬 `/opt/aru-report` + `aru-report.service`(DynamicUser, 기록 `/var/lib/aru-report/reports.jsonl`). Caddyfile: `aru.wiki` HTTPS(Let's Encrypt, Caddy가 자동 갱신), `www`와 IP 접속은 `https://aru.wiki`로 넘긴다. zstd/gzip 압축, `/assets/*` 1년 immutable 캐시, `/`·`/index.html` no-cache, HSTS. OCSP 경고 로그는 Let's Encrypt가 OCSP를 끝내서 나는 것이라 무시한다.

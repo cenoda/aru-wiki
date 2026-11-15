@@ -24,6 +24,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { rm, writeFile } from 'node:fs/promises';
 import { blocked, KINDS, readTakedown, TAKEDOWN_FILE } from './images/takedown-list.mjs';
+import { articlesPath, readArticles } from './theme/article-store.mjs';
 
 const root = new URL('../', import.meta.url);
 const SITE = 'https://aru.wiki/';
@@ -45,6 +46,8 @@ const acts = quests.filter((q) => q.level === 'ACT');
 const theme = readJson('data/generated/theme-khaenriah.json', { nodes: [] });
 const articles = readJson('data/generated/articles-khaenriah.json', { articles: [] }).articles;
 const snapshots = readJson('data/generated/snapshots-khaenriah.json', { snapshots: [] }).snapshots;
+// the whole-wiki articles (articles.mjs all), one file per page (scripts/theme/article-store.mjs)
+const allArticles = (await readArticles(articlesPath(new URL('data/generated/', root).pathname, 'all'), { articles: [] })).articles;
 const manualIcons = readJson('data/manual/enka-icons.json', { characters: {} }).characters;
 const manualFigures = readJson('data/manual/card-figures.json', { acts: {} }).acts;
 const videoPages = readJson('data/generated/videos.json', { pages: {} }).pages ?? {};
@@ -63,6 +66,7 @@ if (theme.page) addPage(theme.page, 'theme-khaenriah (hub)');
 for (const n of theme.nodes) addPage(n.page, 'theme-khaenriah');
 for (const s of snapshots) addPage(s.node, 'snapshots-khaenriah');
 for (const a of articles) addPage(a.node, 'articles-khaenriah');
+for (const a of allArticles) addPage(a.node, 'articles-all');
 
 const characters = new Set([...Object.keys(figures.characters), ...imageFiles.map((f) => f.character)]);
 const koOf = (page) => figures.characters[page]?.ko ?? koNames[page]?.ko ?? null;
@@ -246,14 +250,14 @@ function builtLeftovers(b) {
   const graphs = [new URL('data/runtime/graph.json', root)];
   const graph = existsSync(graphs[0]) ? JSON.parse(readFileSync(graphs[0], 'utf8')) : null;
   for (const f of graph?.imageFiles ?? []) {
-    if (b.files.has(f.file) || b.characters.has(f.character)) out.push(`data/runtime/graph.json: image record ${f.file} (src/data.ts hides it on screen; the build-runtime-data hook drops it from the data)`);
+    if (b.files.has(f.file) || b.characters.has(f.character)) out.push(`data/runtime/graph.json: image record ${f.file} (npm run build drops it)`);
   }
   for (const name of ['chart.json', 'pages.json', 'snapshots-khaenriah.json']) {
     const u = new URL(`data/runtime/${name}`, root);
     if (!existsSync(u)) continue;
     const data = JSON.parse(readFileSync(u, 'utf8'));
     const ids = name === 'chart.json' ? data.nodes.map((n) => n.id) : name === 'pages.json' ? data.map((n) => n.id) : Object.keys(data);
-    for (const p of b.pages) if (ids.includes(p)) out.push(`data/runtime/${name}: page ${p} (needs the build-runtime-data hook)`);
+    for (const p of b.pages) if (ids.includes(p)) out.push(`data/runtime/${name}: page ${p} (npm run build drops it)`);
   }
   for (const { path, ids } of videoLeftovers(b)) out.push(`${path}: videos ${ids.join(', ')} (clean --apply or npm run build)`);
   return out;

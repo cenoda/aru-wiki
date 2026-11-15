@@ -52,9 +52,19 @@ node scripts/takedown.mjs block https://youtu.be/VAkFSNajRe8 --requester "HoYove
 
 막으면 이렇게 된다:
 
-- 인물·파일: `npm run fetch:icons`가 받지 않는다. 화면 카드는 지역 문장을 보인다.
-- 임무 카드: 그 카드만 아이콘 대신 지역 문장을 보인다.
-- 글: 아직 화면에서 숨기는 연결이 없다(아래 5절). 그때까지는 사람이 알려 줘야 한다.
+- 인물·파일: `npm run fetch:icons`가 받지 않는다. `scripts/build-runtime-data.mjs`가 그 이미지 기록(파일 이름, 출처 URL)을 사이트 데이터에서 뺀다. 화면 카드는 지역 문장을 보인다.
+- 임무 카드: 빌드가 그 카드에 "아이콘 없음" 표시를 붙여 보낸다. 그 카드만 아이콘 대신 지역 문장을 보인다.
+- 글: 다시 빌드하면(`npm run build`) `scripts/build-runtime-data.mjs`가 그 문서를 `data/runtime/`에서 모두 뺀다. 그다음 단계(나눈 데이터, 본문 검색, 검색 엔진용 페이지)는 모두 `data/runtime/`만 읽으므로 거기서도 빠진다. 빠지는 것:
+  - 본문·스냅숏·연표 파일(`data/runtime/articles/`, 나눈 데이터의 글 파일)
+  - 3D 차트의 별과 그 별에 닿는 선, 서로 언급하는 점선(`chart.json`), 차트 밖 문서 목록(`pages.json`)
+  - 본문 검색 색인, 이름 해시 목록, `dist/wiki/<이름>.html`, 첫 화면의 문서 목록, `sitemap.xml`
+  - 최근 바뀜의 줄, 그 문서에 붙은 공식 영상(보일 문서가 없으므로)
+  - 그 문서에 대한 독자 글(문서 id나 한국어 이름이 같은 것): 사이트는 `data/manual/reader-edits.json`이 아니라 빌드가 고쳐 쓴 `data/runtime/reader-edits.json`을 받는다
+  - 빨간 링크: 그 문서 이름은 빨간 링크로도 나오지 않는다(다시 써 달라는 초대가 되지 않게)
+  - 추천 임무 근거의 `links` 목록에서 그 문서 이름
+- 다른 문서 본문에 그 문서 이름이 나오면 글은 그대로 두고 링크만 사라진다. 본문 안 링크는 사이트에 있는 문서 목록으로 만들기 때문이다. 문장을 지우면 다른 문서의 뜻이 깨지고, 이름 자체는 게임 속 명칭이라 삭제 대상이 아니라고 보았다.
+- 다른 문서가 그 Fandom 문서를 근거로 쓴 문단과 그 출처 표시(`"kind":"wiki","page":"<이름>"`)는 남는다. CC BY-SA 때문에 출처 표시만 지우고 글을 남길 수는 없다. 요청이 Fandom 원문 자체에 대한 것이면 그 문단들도 지울지 사용자와 따로 정한다(아래 5절).
+- 사이트 코드(`src/`)는 `takedown.json`을 읽지 않는다. 요청자와 사유가 JS에 실리지 않는다.
 - 영상: `scripts/build-runtime-data.mjs`가 `data/runtime/videos.json`을 쓸 때 빼고, `scripts/youtube/refresh.mjs`(2주마다 cron)가 `data/generated/videos.json`에서 뺀다. 그래서 정기 갱신이 다시 넣지 않는다. 사이트 코드(`src/`)는 `takedown.json`을 읽지 않는다. `data/generated/videos.json`에는 다음 갱신 때까지 남아 있을 수 있지만 사이트에는 실리지 않는다(`check`가 "참고"로 알려 준다).
 
 ## 4. 다시 배포
@@ -74,8 +84,8 @@ rsync -az --delete -e "ssh -i ~/.ssh/aru-deploy" dist/ ubuntu@147.224.187.173:/s
 
 ## 5. 남은 일
 
-- 글: `scripts/build-runtime-data.mjs`가 `takedown.json`의 `pages`를 읽어 그 문서를 지식 그래프·스냅숏·본문에서 빼야 한다. 아직 연결하지 않았다.
-- 이미지 기록: 같은 스크립트가 막은 인물·파일의 기록을 `imageFiles`에서 빼야 출처 URL도 사이트 데이터에서 사라진다. 지금은 `src/data.ts`가 화면에서만 숨긴다.
+- 다른 문서가 막은 Fandom 문서를 근거로 쓴 문단은 남는다(3절). 그것까지 지워야 하는 요청이면 그 문단을 찾아 빼는 기능을 따로 만든다.
+- 막은 문서 이름으로 독자가 새 문서를 쓰자고 보낼 수는 있다. 승인할 때 사람이 거른다.
 - 글은 `data/generated/`에 들어 있어 git 이력에도 남는다. 이력까지 지워 달라는 요청이면 사용자와 따로 정한다(아이콘 때처럼 이력을 다시 써야 한다).
 - 이미 받아 간 브라우저 캐시와 남이 만든 사본은 우리가 지울 수 없다.
 

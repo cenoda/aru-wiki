@@ -2,7 +2,6 @@
 // revealed at or before the version asked for is downloaded. Bindings below are filled by
 // loadData(v); import the views only after it resolves (see App.tsx). Asking for a later version
 // fetches more and fills them again (ES module bindings are live, so readers see the new values).
-import takedown from '../data/manual/takedown.json';
 import { fetchCover, split } from './split';
 
 export type QuestType = 'ARCHON' | 'STORY' | 'WORLD' | 'EVENT';
@@ -106,7 +105,8 @@ interface QuestBlock {
   /** [region, Korean name or null, emblem] */
   regions?: [string, string | null, number][];
   recommended?: LlmEdge[];
-  figureActs?: [string, string][];
+  /** [act, character] or [act, character, 0]: 0 = a takedown took the card's icon (docs/takedown.md) */
+  figureActs?: ([string, string] | [string, string, 0])[];
   figureNames?: [string, string | null][];
   imageFiles?: ImageFile[];
 }
@@ -149,7 +149,7 @@ export function loadData(v: number = versions.length - 1) {
     unitOfQuest = new Map(units.flatMap((u) => u.members.map((m) => [m, u.id] as const)));
     recommendedRaw = all('recommended');
     const characters = Object.fromEntries(all('figureNames').map(([c, ko]) => [c, { ko }]));
-    figureOf = buildFigures({ acts: Object.fromEntries(all('figureActs').map(([a, character]) => [a, { character }])), characters }, all('imageFiles'));
+    figureOf = buildFigures({ acts: Object.fromEntries(all('figureActs').map(([a, character, icon]) => [a, { character, noIcon: icon === 0 }])), characters }, all('imageFiles'));
     loadedUpTo = v;
   })();
   const p = run.catch((err) => { if (loading === p) { loading = undefined; asked = loadedUpTo; } throw err; });
@@ -268,18 +268,16 @@ export interface Figure {
   icon?: { src: string; source_url: string; fetched: string; release: number; release_version: string };
 }
 interface ImageFile { file: string; character: string; source_url: string; fetched: string; release_version: string }
-interface FiguresData { acts: Record<string, { character: string }>; characters: Record<string, { ko: string | null }> }
+interface FiguresData { acts: Record<string, { character: string; noIcon?: boolean }>; characters: Record<string, { ko: string | null }> }
 /** act id → the character its card shows (scripts/images/card-figures.mjs); filled by loadData() */
 export let figureOf = new Map<string, Figure>();
-// A rights holder's takedown (data/manual/takedown.json, docs/takedown.md): no icon for these
-// characters, files or act cards; the card shows its region emblem.
-const blocked = (kind: 'characters' | 'files' | 'acts') =>
-  new Set((takedown.entries as { [k in typeof kind]?: string[] }[]).flatMap((e) => e[kind] ?? []));
+// A rights holder's takedown (data/manual/takedown.json, docs/takedown.md) is applied by
+// scripts/build-runtime-data.mjs: blocked characters' and files' records never arrive here, and a
+// blocked act card comes marked noIcon, so it shows its region emblem.
 function buildFigures(figuresData: FiguresData, files: ImageFile[]) {
-  const [noChar, noFile, noAct] = [blocked('characters'), blocked('files'), blocked('acts')];
-  const iconOf = new Map(files.filter((f) => !noChar.has(f.character) && !noFile.has(f.file)).map((f) => [f.character, f]));
-  return new Map(Object.entries(figuresData.acts).map(([act, { character }]): [string, Figure] => {
-    const f = noAct.has(act) ? undefined : iconOf.get(character);
+  const iconOf = new Map(files.map((f) => [f.character, f]));
+  return new Map(Object.entries(figuresData.acts).map(([act, { character, noIcon }]): [string, Figure] => {
+    const f = noIcon ? undefined : iconOf.get(character);
     const release = f ? versionOrder.get(f.release_version) : undefined;
     return [act, {
       character, ko: figuresData.characters[character]?.ko ?? null,

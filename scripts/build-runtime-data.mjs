@@ -3,9 +3,20 @@
 // so the first download is smaller and the data stays out of the JS parse.
 // Run by `npm run dev` / `npm run build` (predev/prebuild); the output is not committed.
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { blocked as readBlocked, dropBlockedVideos, recordBlocked } from './images/takedown-list.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = async (f) => JSON.parse(await readFile(new URL(`data/generated/${f}`, root), 'utf8'));
+// A rights holder's takedown (data/manual/takedown.json, docs/takedown.md) is applied here, so nothing
+// blocked reaches data/runtime/ and everything built from it (split data, search, prerendered pages,
+// sitemap). The site code never reads takedown.json itself (requester and reason stay out of the bundle).
+//   pages       no article, snapshot or timeline, no star, no search entry, no recent-changes row, no red
+//               link, no videos, no reader edits; other pages' text that names it stays, unlinked
+//   characters, files  their image records are left out (no icon, no source URL)
+//   acts        the card is marked to show its region emblem (figures.acts[act].noIcon)
+const takedown = readBlocked();
+const pageBlocked = (page) => takedown.pages.has(page);
+if (takedown.pages.size) console.log(`takedown: ${takedown.pages.size} page(s) left out`);
 const pick = (o, keys) => Object.fromEntries(keys.filter((k) => o[k] !== undefined).map((k) => [k, o[k]]));
 
 const [quests, edges, versions, units, recommended, figures, imageFiles] = await Promise.all([
@@ -31,12 +42,14 @@ const graph = {
     .filter((e) => !e.already_required) // the game enforces this order already; the site drops them too
     .map((e) => ({
       ...pick(e, ['source', 'target', 'tier', 'reason_ko', 'gist_ko', 'links', 'revealed_version', 'review']),
+      // the Fandom pages the reason names, without a page taken down
+      ...(e.links ? { links: e.links.filter((l) => !pageBlocked(l)) } : {}),
       // the wiki pages (and revisions) the reason was written from, credited under it
       sources: (e.sources ?? []).map((s) => pick(s, ['url', 'revision'])),
     })),
   // card figures and their icon files (docs/image-policy.md)
-  figures: { acts: figures.acts, characters: Object.fromEntries(Object.entries(figures.characters).map(([k, v]) => [k, { ko: v.ko ?? null }])) },
-  imageFiles: imageFiles.files.map((f) => pick(f, ['file', 'character', 'source_url', 'fetched', 'release_version'])),
+  figures: { acts: Object.fromEntries(Object.entries(figures.acts).map(([act, f]) => [act, takedown.acts.has(act) ? { ...f, noIcon: true } : f])), characters: Object.fromEntries(Object.entries(figures.characters).map(([k, v]) => [k, { ko: v.ko ?? null }])) },
+  imageFiles: imageFiles.files.filter((f) => !recordBlocked(takedown, f)).map((f) => pick(f, ['file', 'character', 'source_url', 'fetched', 'release_version'])),
 };
 
 const outDir = new URL('data/runtime/', root);
@@ -84,8 +97,8 @@ const allArticles = (await readArticles(articlesPath(new URL('data/generated/', 
 /** a whole-wiki article with at least one paragraph the site shows (the same test as the article files below) */
 const showsSomething = (a) => a.paragraphs.some((p) => (p.status === 'accepted' || p.status === 'trimmed') && p.sentences.some((x) => !x.dropped));
 const themePages = [{ page: theme.page, kind: 'lore' }, ...theme.nodes];
-const chartIds = [...new Set([...themePages.map((p) => p.page), ...allArticles.filter(showsSomething).map((a) => a.node)])];
-const HUB = chartIds.includes('Teyvat') ? 'Teyvat' : theme.page;
+const chartIds = [...new Set([...themePages.map((p) => p.page), ...allArticles.filter(showsSomething).map((a) => a.node)])].filter((p) => !pageBlocked(p));
+const HUB = chartIds.includes('Teyvat') ? 'Teyvat' : chartIds.includes(theme.page) ? theme.page : chartIds[0];
 const kindOf = new Map(themePages.map((p) => [p.page, p.kind]));
 // official Korean names (ko-names.json, Fandom {{Other Languages}}), never hand-transliterated
 const pages = chartIds.map((id) => ({ page: id, ko: koNames[id]?.ko ?? null, kind: kindOf.get(id) ?? loreLinks[id]?.kind ?? 'lore', hub: id === HUB }));
@@ -142,6 +155,7 @@ const linkedPair = new Set([...kept].map((e) => [e.a, e.b].sort().join('|')));
 const refPairs = new Map();
 if (existsSync(refsFile)) {
   for (const r of JSON.parse(await readFile(refsFile, 'utf8')).refs) {
+    if (pageBlocked(r.from) || pageBlocked(r.to)) continue;
     const key = [r.from, r.to].sort().join('|');
     if (linkedPair.has(key)) continue;
     const cur = refPairs.get(key);
@@ -168,6 +182,7 @@ await write('chart.json', chart);
 const snaps = (await read('snapshots-khaenriah.json')).snapshots;
 const byPage = {};
 for (const s of snaps) {
+  if (pageBlocked(s.node)) continue;
   const pts = s.points.filter((p) => p.status === 'accepted');
   const summary = pts.find((p) => p.role === 'summary');
   const bullets = pts.filter((p) => p.role === 'point');
@@ -233,6 +248,7 @@ const articleList = [
 ];
 {
   for (const a of articleList) {
+    if (pageBlocked(a.node)) continue;
     const shown = a.paragraphs.filter((p) => (p.status === 'accepted' || p.status === 'trimmed') && p.sentences.some((x) => !x.dropped));
     if (!shown.length) continue;
     const src = sourceTable();
@@ -255,6 +271,7 @@ const articleList = [
 }
 if (existsSync(REV)) {
   for (const r of JSON.parse(await readFile(REV, 'utf8')).reveals) {
+    if (pageBlocked(r.node)) continue;
     const items = r.items.filter((x) => x.status === 'accepted' && x.source);
     if (!items.length) continue;
     (perPage[r.node] ??= { articles: [], timeline: [] }).timeline.push({
@@ -283,7 +300,6 @@ console.log(`data/runtime/articles/ ${slugs.size} pages, ${(total / 1024).toFixe
 import { buildSearchIndex } from './search/build-index.mjs';
 import { articlePieces } from './search/text.mjs';
 import { articlesPath, readArticles } from './theme/article-store.mjs';
-import { dropBlockedVideos } from './images/takedown-list.mjs';
 /** shard files of the search index; a query fetches one per distinct shard of its bigrams */
 const SEARCH_SHARDS = 128;
 {
@@ -311,18 +327,31 @@ await write('pages.json', Object.keys(perPage).filter((p) => !inChart.has(p)).so
 /** the file name of a page's articles; scripts/seo/prerender.mjs and scripts/split/build.mjs read them by it */
 function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
 
+// ---------- approved reader edits (data/manual/reader-edits.json), as the site fetches them ----------
+// The same file without edits to a page taken down: matched by title like src/readerEdits.ts titleKey,
+// against the page id and its Korean name, so a reader page or addition under either name goes too.
+const titleKey = (s) => String(s ?? '').replace(/_/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
+const blockedTitles = new Set([...takedown.pages].flatMap((p) => [p, koNames[p]?.ko].filter(Boolean).map(titleKey)));
+const publishedEdits = await (async () => {
+  const f = new URL('data/manual/reader-edits.json', root);
+  const pub = existsSync(f) ? JSON.parse(await readFile(f, 'utf8')) : { edits: [], rejected: [] };
+  const edits = (pub.edits ?? []).filter((e) => !blockedTitles.has(titleKey(e.page)));
+  if (edits.length < (pub.edits ?? []).length) console.log(`reader edits: ${(pub.edits ?? []).length - edits.length} on taken-down pages left out`);
+  return { ...pub, edits, rejected: pub.rejected ?? [] };
+})();
+await write('reader-edits.json', publishedEdits);
+
 // ---------- 최근 바뀜 (scripts/recent/changes.mjs): new and rewritten articles, approved reader edits ----------
 // Fetched only by the recent-changes page. A row is named only at or after its version (field g).
 {
   const { articleHistory, readerRows, buildRecent } = await import('./recent/changes.mjs');
   const rootPath = new URL('.', root).pathname.replace(/\/$/, '');
   const themeArticles = existsSync(ART) ? JSON.parse(await readFile(ART, 'utf8')).articles : [];
-  const EDITS = new URL('data/manual/reader-edits.json', root);
-  const readerEdits = existsSync(EDITS) ? JSON.parse(await readFile(EDITS, 'utf8')).edits : [];
+  const readerEdits = publishedEdits.edits;
   const revealed = new Map();
   for (const p of pages) { const u = [...unitsOf.get(p.page)]; revealed.set(p.page, u.length ? firstOrder(u) : lastOrder); }
   for (const p of Object.keys(perPage)) if (!revealed.has(p)) { const u = loreLinks[p]?.units ?? []; revealed.set(p, u.length ? firstOrder(u) : lastOrder); }
-  const rows = [...articleHistory(rootPath, [themeArticles, allArticles]), ...readerRows(readerEdits)];
+  const rows = [...articleHistory(rootPath, [themeArticles, allArticles]), ...readerRows(readerEdits)].filter((r) => !pageBlocked(r.page));
   await write('recent.json', buildRecent(rows, { order, revealedOf: (p) => revealed.get(p) }));
 }
 
@@ -336,7 +365,8 @@ function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
   const BAD_TITLE = /[<>[\]{}|#/?%]/; // src/Search.tsx NewPage: titles that would break the address
   const hasPage = new Set([...chartIds, ...Object.keys(perPage)]);
   const taken = new Set();
-  for (const id of hasPage) { taken.add(id); const ko = koNames[id]?.ko; if (ko) taken.add(ko); }
+  // a page taken down gets no red link either (it would invite writing it again and name it)
+  for (const id of [...hasPage, ...takedown.pages]) { taken.add(id); const ko = koNames[id]?.ko; if (ko) taken.add(ko); }
   // game mechanics and menus (에너지, 스태미나, 감전, 튜토리얼) are words of the game, not topics of a lore article
   const MECHANIC = /^(Game Systems|Combat|Combat Talents|Attributes|Menus|Tutorials|Elemental Reactions|Elemental Bursts|Elemental Skills|Progression|Location Types|Quest Terminology|Exploration|Currency|Items|Gadgets)$/;
   const red = new Map();
@@ -344,7 +374,7 @@ function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
     const ko = koNames[id]?.ko?.trim();
     // three letters at least: two-letter names (유리, 왕자, 생각, 지역) are mostly ordinary words too;
     // a sub-page (Wanderer/Storyline) is part of another page, not a page of its own
-    if (hasPage.has(id) || id.includes('/') || !ko || ko.length < 3 || taken.has(ko) || BAD_TITLE.test(ko) || !l.units?.length) continue;
+    if (hasPage.has(id) || pageBlocked(id) || id.includes('/') || !ko || ko.length < 3 || taken.has(ko) || BAD_TITLE.test(ko) || !l.units?.length) continue;
     if ((l.categories ?? []).some((c) => MECHANIC.test(c))) continue;
     const at = firstOrder(l.units);
     if (!red.has(ko) || red.get(ko) > at) red.set(ko, at);
@@ -353,7 +383,9 @@ function articleSlug(page) { return page.replace(/[^A-Za-z0-9]+/g, '_'); }
   {
     const vf = new URL('data/generated/videos.json', root);
     // a takedown (data/manual/takedown.json videos) never reaches the site, whatever videos.json holds
-    const { pages: vids, dropped } = dropBlockedVideos(existsSync(vf) ? JSON.parse(await readFile(vf, 'utf8')).pages : {});
+    const { pages: vids, dropped } = dropBlockedVideos(existsSync(vf) ? JSON.parse(await readFile(vf, 'utf8')).pages : {}, takedown);
+    // a page taken down has no article to show its videos on (and its name would ride along)
+    for (const p of Object.keys(vids)) if (pageBlocked(p)) delete vids[p];
     if (dropped.length) console.log(`videos: ${dropped.length} blocked by takedown.json left out`);
     const out = {};
     for (const [page, list] of Object.entries(vids)) {

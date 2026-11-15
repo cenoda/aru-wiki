@@ -125,5 +125,6 @@ export function makeLocalizer(pairs, titles = [], misspellings = []) {
 /** English names still left in a Korean sentence (for reports). */
 export function latinNames(text) {
   // a trailing apostrophe is a closing quote mark ('Mother'), not part of the name
-  return [...(text ?? '').matchAll(/[A-Z][A-Za-z'’-]+(?: (?:of|the|de|and|[A-Z][A-Za-z'’-]+))*/g)].map((m) => m[0].replace(/['’-]+$/, ''));
+  // a joining word is whole: "Fatui officials" is not "Fatui of" + "ficials", nor "Hello them" "Hello the"
+  return [...(text ?? '').matchAll(/[A-Z][A-Za-z'’-]+(?: (?:(?:of|the|de|and)(?![A-Za-z'’-])|[A-Z][A-Za-z'’-]+))*/g)].map((m) => m[0].replace(/['’-]+$/, ''));
 }

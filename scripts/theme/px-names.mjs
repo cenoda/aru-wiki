@@ -9,7 +9,7 @@ if (!key) throw new Error('no PARALLEL_API_KEY');
 const [inFile, outFile, processor = 'lite'] = process.argv.slice(2);
 const items = JSON.parse(readFileSync(inFile, 'utf8'));
 const out = existsSync(outFile) ? JSON.parse(readFileSync(outFile, 'utf8')) : {};
-const BANNED = ['namu.moe', 'fandom.com', 'hoyolab.com', 'genshindb.com', 'honeyhunterworld.com', 'ambr.top', 'hakush.in', 'yatta.moe', 'paimon.moe', 'genshin.dev', 'enka.network', 'dcinside.com', 'arca.live', 'reddit.com'];
+const BANNED = ['namu.moe', 'fandom.com', 'hoyolab.com', 'genshindb.com', 'honeyhunterworld.com', 'ambr.top', 'hakush.in', 'yatta.moe', 'paimon.moe', 'genshin.dev', 'aza.gg', 'genshin-builds.com', 'enka.network', 'dcinside.com', 'arca.live', 'reddit.com'];
 const schema = { type: 'object', additionalProperties: false, required: ['kind', 'ko', 'confidence', 'evidence'],
   properties: {
     kind: { type: 'string', enum: ['name', 'context', 'keep'], description: 'name: one Korean form fits every sentence. context: an ordinary word or adjective whose Korean depends on the sentence (Gate, Siege, Reckless). keep: should stay English (a fragment of an English quote, an abbreviation like NPC).' },

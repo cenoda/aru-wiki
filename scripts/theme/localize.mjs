@@ -67,7 +67,8 @@ export async function makeKo(texts, { log = (...a) => console.error(...a) } = {}
     // One replacer makes the longest name win across both sources: "Il Dottore" before "Dottore",
     // and an existing "Hydro Archon" before a newly found "Hydro".
     // LLM-written names (data/manual/ko-names-llm.json) only fill what no source gives
-    const have = new Set([...namePairs, ...extra].map(([n]) => n));
+    // a ko-names.json row without Korean (Vasiliy: "no page") gives no name, so it does not block one
+    const have = new Set([...namePairs, ...extra].filter(([, k]) => k).map(([n]) => n));
     // prep() turns "Eternal Moon's Marrow" into "Eternal Moon의 Marrow", and writers also write it so:
     // a name holding "'s" is matched in both forms
     const llm = (await llmNamePairs()).filter(([n]) => !have.has(n))

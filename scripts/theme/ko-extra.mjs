@@ -40,6 +40,28 @@ export function missingKorean(from, to) {
 }
 export const keepsKorean = (from, to) => missingKorean(from, to) === null;
 
+// a quoted or bold span: “…”, "…", ‘…’, '…', 「…」, **…**
+const QUOTED = /“[^”]*”|"[^"]*"|‘[^’]*’|'[^'\n]*'|「[^」]*」|\*\*[^*]+\*\*/g;
+/**
+ * missingKorean() for a sentence whose English quotes are translated whole (article rewrites, 2026-11-15):
+ * a quoted or bold span that held English may change freely, word order inside it included; every
+ * Korean part outside such spans must stay, up to marks and 2 characters at each edge (particles).
+ */
+export function missingKoreanOutsideQuotes(from, to) {
+  const MARK = '\u0001';
+  const f = from.replace(QUOTED, (q) => (/[A-Za-z]/.test(q) ? MARK : q));
+  const t = to.replace(QUOTED, (q) => (/[A-Za-z]/.test(q) || !f.includes(q) ? MARK : q));
+  let at = 0;
+  for (const seg of f.split(new RegExp(`${LATIN_RUN.source}|${MARK}`, 'g'))) {
+    const core = seg.replace(/^[^가-힣\s]+|[^가-힣\s]+$/g, '').trim().slice(2, -2).trim();
+    if (core.length < 4) continue;
+    const i = t.indexOf(core, at);
+    if (i === -1) return core;
+    at = i + core.length;
+  }
+  return null;
+}
+
 /** Words whose Korean depends on the sentence; never one dictionary entry. */
 export const CONTEXT_DEPENDENT = new Set(['archon']);
 export const isContextDependent = (name) => CONTEXT_DEPENDENT.has(name.replace(/^The /, '').replace(/s$/, '').toLowerCase());

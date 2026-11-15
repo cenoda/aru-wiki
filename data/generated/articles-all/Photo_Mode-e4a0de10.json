@@ -42,7 +42,7 @@
        "t_raw": "설정에는 Hide character, Hide personal info, Hide UI가 있고, Hide character는 캐릭터와 도구를, Hide personal info는 플레이어 이름과 UID를 숨긴다.",
        "interp": false,
        "dropped": false,
-       "t": "설정에는 캐릭터 숨기기, 개인 정보 숨기기, UI 숨기기가 있고, 캐릭터 숨기기는 캐릭터와 도구를, 개인 정보 숨기기는 플레이어 이름과 UID를 숨긴다.",
+       "t": "설정에는 숨기 캐릭터, 숨기 개인 정보, Hide UI가 있고, 숨기 캐릭터는 캐릭터와 도구를, 숨기 개인 정보는 플레이어 이름과 UID를 숨긴다.",
        "polish": {
         "from": "설정에는 숨기 character, 숨기 personal info, Hide UI가 있고, 숨기 character는 캐릭터와 도구를, 숨기 personal info는 플레이어 이름과 UID를 숨긴다.",
         "text": "설정에는 캐릭터 숨기기, 개인 정보 숨기기, UI 숨기기가 있고, 캐릭터 숨기기는 캐릭터와 도구를, 개인 정보 숨기기는 플레이어 이름과 UID를 숨긴다.",
@@ -114,7 +114,7 @@
      ],
      "heading": null,
      "latin_left": [
-      "UI",
+      "Hide UI",
       "UID"
      ]
     },
@@ -349,7 +349,7 @@
        "interp": true,
        "dropped": false,
        "repaired": true,
-       "t": "기타 항목에는 카메라 보기, 캐릭터 숨기기, 개인 정보 숨기기 같은 옵션이 모여 있다. 카메라 보기와 캐릭터 숨기기는 캐릭터의 등장 방식을 조절하고, 캐릭터 숨기기는 캐릭터와 도구를 화면에서 숨길 수 있게 해 준다. 개인 정보 숨기기는 플레이어 이름과 UID를 가려 준다. 한편 UI 숨기기는 카메라 움직임 뒤에 이어지는 별도 항목으로, 카메라 움직임 안에는 가로 움직임, 세로 움직임, 줌, 카메라 초기화 같은 세부 설정이 이어진다.",
+       "t": "Other 항목에는 카메라 보기, 숨기 캐릭터, 숨기 개인 정보 같은 옵션이 모여 있다. 카메라 보기와 숨기 캐릭터는 캐릭터의 등장 방식을 조절하고, 숨기 캐릭터는 캐릭터와 기기를 화면에서 숨길 수 있게 해 준다. 숨기 개인 정보는 플레이어 이름과 UID를 가려 준다. 한편 Hide UI는 Camera Movement 뒤에 이어지는 별도 항목으로, Camera Movement 안에는 Horizontal 이동, Vertical 이동, Zoom, Reset Camera 같은 세부 설정이 이어진다.",
        "polish": {
         "from": "Other 항목에는 Look at camera, 숨기 character, 숨기 personal info 같은 옵션이 모여 있다. Look at camera와 숨기 character는 캐릭터의 등장 방식을 조절하고, 숨기 character는 캐릭터와 gadgets를 화면에서 숨길 수 있게 해 준다. 숨기 personal info는 플레이어 이름과 UID를 가려 준다. 한편 Hide UI는 Camera Movement 뒤에 이어지는 별도 항목으로, Camera Movement 안에는 Horizontal movement, Vertical movement, Zoom, Reset Camera 같은 세부 설정이 이어진다.",
         "text": "기타 항목에는 카메라 보기, 캐릭터 숨기기, 개인 정보 숨기기 같은 옵션이 모여 있다. 카메라 보기와 캐릭터 숨기기는 캐릭터의 등장 방식을 조절하고, 캐릭터 숨기기는 캐릭터와 도구를 화면에서 숨길 수 있게 해 준다. 개인 정보 숨기기는 플레이어 이름과 UID를 가려 준다. 한편 UI 숨기기는 카메라 움직임 뒤에 이어지는 별도 항목으로, 카메라 움직임 안에는 가로 움직임, 세로 움직임, 줌, 카메라 초기화 같은 세부 설정이 이어진다.",
@@ -393,8 +393,15 @@
      ],
      "heading": "촬영 설정",
      "latin_left": [
+      "Other",
       "UID",
-      "UI"
+      "Hide UI",
+      "Camera Movement",
+      "Camera Movement",
+      "Horizontal",
+      "Vertical",
+      "Zoom",
+      "Reset Camera"
      ]
     },
     {
@@ -578,7 +585,7 @@
        "t_raw": "Hide personal info는 플레이어 이름과 UID를 숨긴다.",
        "interp": false,
        "dropped": false,
-       "t": "개인 정보 숨기기는 플레이어 이름과 UID를 숨긴다.",
+       "t": "숨기 개인 정보는 플레이어 이름과 UID를 숨긴다.",
        "polish": {
         "from": "숨기 personal info는 플레이어 이름과 UID를 숨긴다.",
         "text": "개인 정보 숨기기는 플레이어 이름과 UID를 숨긴다.",

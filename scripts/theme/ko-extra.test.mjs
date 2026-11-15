@@ -42,3 +42,11 @@ test('tidy writes an element Archon as "OO의 신", Gnosis untouched', async () 
   assert.equal(tidy('번개 신의 심장'), '번개 신의 심장');
   assert.equal(tidy('불의 신'), '불의 신');
 });
+
+test('missingKoreanOutsideQuotes lets an English quote be translated whole, nothing else', async () => {
+  const { missingKoreanOutsideQuotes: lost } = await import('./ko-extra.mjs');
+  const from = '그는 "Hey there, fancy trying your hand at 바람의 행방?"라고 말을 걸어 바로 플레이를 권한다.';
+  assert.equal(lost(from, '그는 "안녕, 바람의 행방 한번 해볼래?"라고 말을 걸어 바로 플레이를 권한다.'), null);
+  assert.notEqual(lost(from, '그는 "안녕, 바람의 행방 한번 해볼래?"라고 말하며 플레이를 권한다.'), null);
+  assert.equal(lost('켄리아인 ruins의 자료로 세계의 종말을 예측한다.', '켄리아인 폐허의 자료로 세계의 종말을 예측한다.'), null);
+});

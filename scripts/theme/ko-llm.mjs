@@ -10,14 +10,15 @@
 //                                                                       snapshot points, article sentences, timeline items)
 //   node scripts/theme/ko-llm.mjs import context
 //   node scripts/theme/snapshots.mjs khaenriah --write --only none
-//   node scripts/theme/ko-llm.mjs tasks rewrite [--parts 3]            (sentences still not clean Korean)
+//   node scripts/theme/ko-llm.mjs tasks rewrite [--parts 3] [--articles] (sentences still not clean Korean;
+//                                                                       article sentences too, run by rewrite-llm.mjs)
 //   node scripts/theme/ko-llm.mjs import rewrite
 //   node scripts/theme/snapshots.mjs khaenriah --write --only none
 import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
-import { CONTEXT, LLM_NAMES, REWRITE, isContextDependent, missingKorean, pointKey } from './ko-extra.mjs';
-import { namesLeft, shownRecords } from './names-left.mjs';
+import { CONTEXT, LLM_NAMES, REWRITE, isContextDependent, missingKorean, missingKoreanOutsideQuotes, pointKey } from './ko-extra.mjs';
+import { STOP, namesLeft, shownRecords } from './names-left.mjs';
 import { latinNames } from '../recommend/ko-text.mjs';
 import { articlesPath, readArticles } from './article-store.mjs';
 
@@ -69,6 +70,26 @@ README.rewrite = `# 문장 다시 쓰기 (rewrite)
 - 일반어는 뜻대로 옮긴다(cataclysm → 대재앙, hilichurls → 츄츄족, power → 힘).
 ${RULES_COMMON}`;
 
+// English an article rewrite may keep: abbreviations (NPC, HP, S-Rank, CL-01), roman numerals, version
+// names (Luna IV), names marked keep, and proper names with no Korean yet (the name step's job)
+const QUOTE_WORD = /^(?:This|That|These|Those|Indeed|But|How|Ah|Oh|All|In|The|Is|Are|Was|Were|Let|May|Hail|Behold|Peace|Hear|Greetings|Take|Have|Has|What|Why|Who|When|Where|We|You|Your|My|Our|It|Its|If|And|Or|So|Do|Does|Did|Don't|I|I'm|Come|Go|Be|For|To|With|No|Yes|Well|Now|Then|Thank|Thanks|Please|Look|Looks|Not|One|Every|Here|There|They|He|She|His|Her|A|An|On|At|By|From|Of|As|Just|Even|Only|Never|Long|Glory|Farewell|Welcome|Good|Great|Very|Such|Rise|Stand|Keep|Know|Hold|Remember|Listen|Wait|Stop|See|Hello|Hey|Hi|Hmph|Hmm|Perhaps|Maybe|Sorry|Thou|Thy|Ye|Mt|Mount|Can|Could|Will|Would|Shall|Should|Must|Get|Got|Make|Let's|It's|That's|What's|There's|You're|We're|They're|Isn't|Aren't|Can't|Won't|Didn't|Doesn't|Haven't|Okay|OK|Alright|Huh|Whoa|Wow|Ugh|Eh|Uh|Um|Er)$/;
+const isAbbr = (w) => /^[A-Z0-9][A-Z0-9-]*$/.test(w) || /^[A-Z]-?Rank$/.test(w) || /^(?:Lv|Mr|Dr|Ms|Mrs|St)$/.test(w) || /^Luna [IVX]+$/.test(w);
+// a quote word stays out even when ko-names-llm.json marks it keep (This, Looks: fragments of English lines)
+// an ordinary word whose Korean depends on the sentence (ko-names-llm.json kind context: House, Abyssal,
+// Fontainian) or a word names-left.mjs leaves out (Unknown, Chapter) is put into Korean too
+const ordinary = (w) => llmNames[w]?.kind === 'context' || STOP.has(w);
+const keepable = (w) => isAbbr(w) || !QUOTE_WORD.test(w.split(' ')[0]) && !ordinary(w);
+const LOWER = /(?<![A-Za-z'’-])[a-z][a-z'’]+/;
+function needsRewrite(text, left) {
+  return LOWER.test(text.replace(/\*\*/g, '')) || left.some((w) => QUOTE_WORD.test(w.split(' ')[0]) || ordinary(w)) || /\bMt\.|제\.\s?\d/.test(text);
+}
+/** An article rewrite that keeps only allowed English, all of it already in the asked sentence. */
+function latinKept(task, text) {
+  if (!task.keep) return false;
+  if (LOWER.test(text)) return false;
+  return latinNames(text).every((w) => (task.keep.includes(w) && keepable(w)) || isAbbr(w)) && !/[A-Za-z]/.test(text.replace(/[A-Za-z][A-Za-z'’-]*/g, (w) => (/^[A-Z]/.test(w) ? '' : w)));
+}
+
 const readJson = async (path, fallback = {}) => {
   try { return JSON.parse(await readFile(path, 'utf8')); } catch (e) { if (e.code === 'ENOENT') return fallback; throw e; }
 };
@@ -102,6 +123,7 @@ async function readOutputs(step) {
 
 const { values: opt, positionals: [cmd, step] } = parseArgs({ allowPositionals: true, options: {
   parts: { type: 'string', default: '3' }, theme: { type: 'string', default: 'khaenriah' },
+  articles: { type: 'boolean', default: false }, // rewrite: article sentences only
 } });
 if (!['tasks', 'import'].includes(cmd) || !README[step]) {
   console.error('usage: ko-llm.mjs tasks|import names|context [--parts 3] [--theme khaenriah]');
@@ -116,7 +138,7 @@ async function articleSentences(theme) {
     .flatMap((p) => p.sentences.filter((s) => !s.dropped).map((s) => {
       const before = s.polish?.text === s.t ? s.polish.from : s.t;
       const shown = new Set(latinNames(s.t));
-      return { status: 'accepted', text: s.t, text_raw: s.t_raw, quote: p.quote ?? '', latin_left: latinNames(before).filter((w) => shown.has(w)) };
+      return { status: 'accepted', text: s.t, before, text_raw: s.t_raw, quote: p.quote ?? '', latin_left: latinNames(before).filter((w) => shown.has(w)) };
     })) }));
 }
 // for names, also article paragraphs and timeline items (names-left.mjs shownRecords); for context,
@@ -128,7 +150,9 @@ const snaps = step === 'names' ? await shownRecords(opt.theme)
     ...((await readJson(join(ROOT, `data/generated/reveals-${opt.theme}.json`))).reveals ?? [])
       .map((x) => ({ node: x.node, points: x.items.map((it) => ({ status: 'accepted', text: it.text, text_raw: it.text_raw, quote: it.quote ?? '', latin_left: it.latin_left ?? [] })) })),
   ]
-  : (await readJson(join(ROOT, `data/generated/snapshots-${opt.theme}.json`))).snapshots ?? [];
+  : [...(await readJson(join(ROOT, `data/generated/snapshots-${opt.theme}.json`))).snapshots ?? [],
+    // rewrite: article sentences too (2026-11-15), as the text before the rewrite (polish.from when polished)
+    ...(await articleSentences(opt.theme)).map((r) => ({ ...r, points: r.points.map((p) => ({ ...p, article: true })) }))];
 const llmNames = await readJson(LLM_NAMES);
 const context = await readJson(CONTEXT);
 
@@ -174,7 +198,18 @@ if (cmd === 'tasks' && step === 'rewrite') {
   for (const r of snaps) for (const p of r.points) {
     if (p.status !== 'accepted' || !/[A-Za-z]|제\.\s?\d/.test(p.text)) continue;
     const key = pointKey(p.text_raw);
-    if (rewrites[key]?.from === p.text || byKey.has(key)) continue;
+    if (byKey.has(key)) continue;
+    if (opt.articles && !p.article) continue;
+    if (p.article) {
+      // an article sentence: only English the name step cannot fix (quote fragments, lower-case words,
+      // Mt.), asked as the text before any rewrite or polish; names left stay English in the answer
+      if (rewrites[key]?.text === p.text || rewrites[key]?.from === p.before) continue;
+      const left = latinNames(p.before);
+      if (!needsRewrite(p.before, left)) continue;
+      byKey.set(key, { key, node: r.ko ?? r.node, text: p.before, quote: p.quote, keep: [...new Set(left.filter((w) => keepable(w)))] });
+      continue;
+    }
+    if (rewrites[key]?.from === p.text) continue;
     byKey.set(key, { key, node: r.ko ?? r.node, text: p.text, quote: p.quote });
   }
   const items = [...byKey.values()].sort((a, b) => a.node.localeCompare(b.node));
@@ -191,9 +226,9 @@ if (cmd === 'import' && step === 'rewrite') {
       const t = byKey.get(key);
       if (!t) { errors.push(`${file}: ${key}: not in the task`); continue; }
       if (text == null) continue;
-      const lost = missingKorean(t.text, text);
+      const lost = t.keep ? missingKoreanOutsideQuotes(t.text, text) : missingKorean(t.text, text);
       if (lost) { errors.push(`${file}: ${key}: changed Korean outside the English parts ("${lost}")`); continue; }
-      if (hasLatin(text)) { errors.push(`${file}: ${key}: still has English: ${text}`); continue; }
+      if (hasLatin(text) && !latinKept(t, text)) { errors.push(`${file}: ${key}: still has English: ${text}`); continue; }
       data[key] = { from: t.text, text: text.trim() };
       added++;
     }

@@ -511,7 +511,7 @@
        "t_raw": "대부분의 반응은 Ward에 즉시 피해를 주지만, Electro-Charged는 Electro 및 Hydro Ward에, Burning은 Dendro 및 Wood Ward에 **0.4 gauge unit per second**의 DoT로 피해를 준다.",
        "interp": false,
        "dropped": false,
-       "t": "대부분의 반응은 결계에 즉시 피해를 주지만, 감전은 번개 및 물 결계에, 연소는 풀 및 목재 결계에 **0.4 gauge unit per second**의 지속 피해로 피해를 준다."
+       "t": "대부분의 반응은 결계에 즉시 피해를 주지만, 감전은 번개 및 물 결계에, 연소는 풀 및 목재 결계에 **초당 0.4 게이지 단위**의 지속 피해로 피해를 준다."
       },
       {
        "t_raw": "두 DoT 반응의 속도는 반응을 일으키는 원소의 gauge unit을 얼마나 넣었든 일정하게 유지된다.",
@@ -885,10 +885,10 @@
        "t_raw": "**Equivalent HP**는 Enemy Max HP와 Ward HP Ratio, Damage Ratio를 통해 Ward의 gauge와 적 HP를 비교하는 값으로, Ward HP Ratio는 보통 1이고 Damage Ratio는 보통 0.2 또는 0이다.",
        "interp": false,
        "dropped": false,
-       "t": "**환산 HP**는 적 최대 HP와 결계 HP 비율, 피해 비율을 통해 결계의 게이지와 적 HP를 비교하는 값으로, 결계 HP 비율은 보통 1이고 피해 비율은 보통 0.2 또는 0이다.",
+       "t": "**환산 체력**은 적의 최대 체력과 결계 체력 비율, 피해 비율을 통해 결계의 게이지와 적 체력을 비교하는 값으로, 결계 체력 비율은 보통 1이고 피해 비율은 보통 0.2 또는 0이다.",
        "polish": {
-        "from": "**Equivalent HP**는 Enemy Max HP와 Ward HP Ratio, Damage Ratio를 통해 결계의 gauge와 적 HP를 비교하는 값으로, Ward HP Ratio는 보통 1이고 Damage Ratio는 보통 0.2 또는 0이다.",
-        "text": "**환산 HP**는 적 최대 HP와 결계 HP 비율, 피해 비율을 통해 결계의 게이지와 적 HP를 비교하는 값으로, 결계 HP 비율은 보통 1이고 피해 비율은 보통 0.2 또는 0이다.",
+        "from": "**환산 체력**은 Enemy Max HP와 Ward HP Ratio, Damage Ratio를 통해 결계의 gauge와 적 HP를 비교하는 값으로, Ward HP Ratio는 보통 1이고 Damage Ratio는 보통 0.2 또는 0이다.",
+        "text": "**환산 체력**은 적의 최대 체력과 결계 체력 비율, 피해 비율을 통해 결계의 게이지와 적 체력을 비교하는 값으로, 결계 체력 비율은 보통 1이고 피해 비율은 보통 0.2 또는 0이다.",
         "by": "ds"
        }
       },
@@ -950,13 +950,7 @@
       }
      ],
      "heading": "작동 방식 — 피해와 등가 HP",
-     "latin_left": [
-      "HP",
-      "HP",
-      "HP",
-      "HP",
-      "HP"
-     ]
+     "latin_left": []
     },
     {
      "section": "작동 방식 — 피해와 등가 HP",
@@ -968,7 +962,7 @@
        "t_raw": "실제 공격 피해는 Equivalent HP와 Ward의 Elemental Gauge를 거쳐 Ward 피해로 환산된다.",
        "interp": false,
        "dropped": false,
-       "t": "실제 공격 피해는 Equivalent HP와 결계의 원소 게이지를 거쳐 결계 피해로 환산된다."
+       "t": "실제 공격 피해는 환산 체력과 결계의 원소 게이지를 거쳐 결계 피해로 환산된다."
       },
       {
        "t_raw": "이 환산에서 Melt와 Vaporize의 피해 증폭 배율은 원소 Ward에 작동하지 않는다.",
@@ -1032,9 +1026,7 @@
       }
      ],
      "heading": "작동 방식 — 피해와 등가 HP",
-     "latin_left": [
-      "Equivalent HP"
-     ]
+     "latin_left": []
     },
     {
      "section": "작중 행적 — Natlan의 Void Ward",

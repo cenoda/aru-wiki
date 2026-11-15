@@ -8,16 +8,18 @@
 //   node scripts/suggest/review.mjs reject <id> [--note "사유(쓴 사람에게 보임)"]
 //   node scripts/suggest/review.mjs remove <id> [--note "사유"]   실었던 글을 내린다 (삭제 요청 등)
 //   node scripts/suggest/review.mjs stale                실었지만 지금 문서에 붙을 자리가 없는 글
+//   node scripts/suggest/review.mjs check [<id>] [--force] [--tool codex-medium]   LLM 검사(스포일러·근거 없음·문제). 참고용
 //
 // 승인·거절은 data/manual/reader-edits.json에 적힌다. 커밋하고 배포해야 사이트에 반영된다.
 // 쓴 사람의 브라우저는 배포된 그 파일에서 자기 제안의 결과를 안다(서버에 상태를 묻지 않는다).
-// Options: --inbox <file> (다른 대기열 파일), --host user@host, --key <ssh key>, --remote <path>
+// Options: --inbox <file> (다른 대기열 파일), --checks <file> (LLM 검사 저장 파일), --host user@host, --key <ssh key>, --remote <path>
 import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { flagsOf, titleKey } from './shared.mjs';
+import { cachedCheck, checkLine, checkLines, checkSuggestion } from './check.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const args = process.argv.slice(2);
@@ -27,6 +29,7 @@ const [cmd, id] = positional;
 
 const INBOX = resolve(root, opt('inbox', '.cache/suggest/inbox.jsonl'));
 const EDITS = resolve(root, opt('edits', 'data/manual/reader-edits.json'));
+const CHECKS = resolve(root, opt('checks', '.cache/suggest/checks.json'));
 const today = () => new Date().toISOString().slice(0, 10);
 const KO = { edit: '문단 고치기', add: '문단 추가', page: '새 문서' };
 
@@ -75,6 +78,7 @@ function show(r) {
   const place = attaches(r);
   if (place === false) flags.push('붙을 자리가 없음: 그 문단이 지금 문서에 없다(문서가 다시 쓰였거나 이미 고쳐짐)');
   if (place === null) flags.push('붙을 자리를 확인하지 못함: data/runtime이 없다(npm run build 뒤에 다시)');
+  console.log(`\n── LLM 검사\n${checkLines(cachedCheck(r, CHECKS)).map((l) => `  ${l}`).join('\n')}`);
   console.log(`\n── 살펴볼 점${flags.length ? `\n${flags.map((f) => `  - ${f}`).join('\n')}` : ': 기계가 찾은 것은 없음(통과라는 뜻은 아님)'}`);
   console.log('\n확인: 다른 사이트 문장을 옮긴 글이 아닌가 · 고른 버전보다 뒤의 내용(스포일러)이 없는가 · 유출이 아닌가 · 실제 사람을 헐뜯지 않는가');
 }
@@ -96,7 +100,7 @@ if (cmd === 'pull') {
   if (!open.length) console.log('정하지 않은 제안이 없습니다.');
   for (const r of open) {
     const flags = flagsOf(r).filter((f) => f !== '근거를 적지 않음');
-    console.log(`${head(r)}${flags.length ? `\n    ! ${flags.join(' / ')}` : ''}`);
+    console.log(`${head(r)}${flags.length ? `\n    ! ${flags.join(' / ')}` : ''}\n    ${checkLine(cachedCheck(r, CHECKS))}`);
   }
 } else if (cmd === 'show') {
   const d = readEdits();
@@ -132,11 +136,22 @@ if (cmd === 'pull') {
     console.log(`내림: ${head(r)}`);
   }
   writeEdits(d);
+} else if (cmd === 'check') {
+  // one LLM call per suggestion not checked yet (or changed since); --force checks again
+  const done = decided(readEdits());
+  const list = id ? [find(readInbox(), id)] : readInbox().filter((r) => !done.has(r.id));
+  if (!list.length) console.log('검사할 제안이 없습니다.');
+  for (const r of list) {
+    try {
+      const c = await checkSuggestion(r, { cache: CHECKS, force: args.includes('--force'), ...(opt('tool') ? { tools: opt('tool').split(',') } : {}) });
+      console.log(`${head(r)}\n    ${checkLine(c)}${c.cached ? ' (저장된 결과)' : ''}`);
+    } catch (e) { console.log(`${head(r)}\n    LLM 검사 실패: ${e.message.slice(0, 200)}`); }
+  }
 } else if (cmd === 'stale') {
   const lost = readEdits().edits.filter((e) => attaches(e) === false);
   if (!lost.length) console.log('붙을 자리를 잃은 글이 없습니다.');
   for (const e of lost) console.log(head(e));
 } else {
-  console.log(readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').filter((l) => l.startsWith('//')).slice(1, 14).map((l) => l.slice(3)).join('\n'));
+  console.log(readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').filter((l) => l.startsWith('//')).slice(1, 15).map((l) => l.slice(3)).join('\n'));
   process.exit(cmd ? 1 : 0);
 }

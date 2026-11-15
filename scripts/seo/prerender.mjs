@@ -13,6 +13,10 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const SITE = 'https://aru.wiki';
+// The Korean name readers search for: "aru.wiki" alone never matched 아루위키 / 아루 위키 in Google.
+// The WebSite structured data on the front page tells Google the site name and its other spellings.
+const SITE_NAME = '아루위키';
+const SITE_ALT = ['aru.wiki', '아루 위키', 'aru wiki', 'Aru Wiki'];
 const root = new URL('../../', import.meta.url);
 const dist = new URL('dist/', root);
 const read = async (f) => JSON.parse(await readFile(new URL(`data/runtime/${f}`, root), 'utf8'));
@@ -40,13 +44,13 @@ const clip = (s, n) => (s.length <= n ? s : `${s.slice(0, n - 1).replace(/\s+\S*
 
 const shell = await readFile(new URL('index.html', dist), 'utf8');
 if (!shell.includes('<div id="root"></div>')) throw new Error('dist/index.html: no empty #root to fill');
-const page = ({ title, description, path, body }) => shell
+const page = ({ title, description, path, body, head = [] }) => shell
   .replace(/<title>[^<]*<\/title>/, [
     `<title>${esc(title)}</title>`,
     `<meta name="description" content="${esc(description)}" />`,
     `<link rel="canonical" href="${SITE}${path}" />`,
     `<meta property="og:type" content="${path === '/' ? 'website' : 'article'}" />`,
-    `<meta property="og:site_name" content="aru.wiki" />`,
+    `<meta property="og:site_name" content="${SITE_NAME}" />`,
     `<meta property="og:title" content="${esc(title)}" />`,
     `<meta property="og:description" content="${esc(description)}" />`,
     `<meta property="og:url" content="${SITE}${path}" />`,
@@ -54,6 +58,7 @@ const page = ({ title, description, path, body }) => shell
     // it never flashes (and a `?v=` reader never sees later-version text from the latest-version copy)
     `<script>document.documentElement.classList.add('js')</script>`,
     `<style>.js .prerender{display:none}</style>`,
+    ...head,
   ].join('\n    '))
   .replace('<div id="root"></div>', `<div id="root">${body}</div>`);
 
@@ -80,7 +85,7 @@ for (const n of nodes) {
   const wikiPages = [...latest.values()];
   const body = [
     `<article class="prerender">`,
-    `<p><a href="/">aru.wiki</a></p>`,
+    `<p><a href="/">${SITE_NAME} (aru.wiki)</a></p>`,
     `<h1>${esc(name)}</h1>`,
     n.ko && n.ko !== n.id ? `<p>${esc(n.id)}</p>` : '',
     lead ? `<p>${esc(lead)}</p>` : '',
@@ -100,8 +105,8 @@ for (const n of nodes) {
   const out = join(fileURLToPath(dist), 'wiki', `${fileName(n)}.html`);
   await mkdir(dirname(out), { recursive: true });
   await writeFile(out, page({
-    title: `${name} - aru.wiki`,
-    description: clip(lead || `${name}: 원신 시간축 위키 aru.wiki의 문서`, 160),
+    title: `${name} - ${SITE_NAME}`,
+    description: clip(lead || `${name}: 원신 시간축 위키 ${SITE_NAME}(aru.wiki)의 문서`, 160),
     path: pathOf(n),
     body,
   }));
@@ -111,10 +116,13 @@ for (const n of nodes) {
 
 const listed = nodes.filter((n) => n.prerendered).sort((a, b) => nameOf(a).localeCompare(nameOf(b), 'ko'));
 await writeFile(new URL('index.html', dist), page({
-  title: 'aru.wiki — 원신 시간축 위키',
-  description: '원신 이야기를 버전 순서대로 따라가는 위키. 고른 버전까지 공개된 내용만 보여 주어 스포일러 없이 읽을 수 있습니다.',
+  title: `${SITE_NAME} (aru.wiki) — 원신 시간축 위키`,
+  description: '아루위키(aru.wiki)는 원신 이야기를 버전 순서대로 따라가는 위키. 고른 버전까지 공개된 내용만 보여 주어 스포일러 없이 읽을 수 있습니다.',
   path: '/',
-  body: `<nav class="prerender"><h1>aru.wiki — 원신 시간축 위키</h1>\n<ul>${listed.map((n) => `<li><a href="${pathOf(n)}">${esc(nameOf(n))}</a></li>`).join('')}</ul>\n<p>문서의 글은 Fandom 원신 위키(${BY_SA_3})의 글을 번역·요약해 고쳐 쓴 것이며 ${BY_SA_4}으로 배포합니다. <a href="${LICENSE_PAGE}">출처·라이선스 안내</a></p></nav>`,
+  head: [`<script type="application/ld+json">${JSON.stringify({
+    '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, alternateName: SITE_ALT, url: `${SITE}/`, inLanguage: 'ko',
+  }).replace(/</g, '\\u003c')}</script>`],
+  body: `<nav class="prerender"><h1>${SITE_NAME} (aru.wiki) — 원신 시간축 위키</h1>\n<ul>${listed.map((n) => `<li><a href="${pathOf(n)}">${esc(nameOf(n))}</a></li>`).join('')}</ul>\n<p>문서의 글은 Fandom 원신 위키(${BY_SA_3})의 글을 번역·요약해 고쳐 쓴 것이며 ${BY_SA_4}으로 배포합니다. <a href="${LICENSE_PAGE}">출처·라이선스 안내</a></p></nav>`,
 }));
 
 const urls = [`${SITE}/`, `${SITE}${LICENSE_PAGE}`, ...listed.map((n) => SITE + pathOf(n))];

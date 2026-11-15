@@ -60,7 +60,7 @@ export default function RecentChanges({ vIdx, byId, hrefOf, onOpen }: {
   }, [vIdx]);
   useEffect(() => {
     const before = document.title;
-    document.title = '최근 바뀜 - aru.wiki';
+    document.title = '최근 바뀜 - 아루위키';
     return () => { document.title = before; };
   }, []);
 

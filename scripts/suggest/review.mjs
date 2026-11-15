@@ -152,6 +152,6 @@ if (cmd === 'pull') {
   if (!lost.length) console.log('붙을 자리를 잃은 글이 없습니다.');
   for (const e of lost) console.log(head(e));
 } else {
-  console.log(readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').filter((l) => l.startsWith('//')).slice(1, 15).map((l) => l.slice(3)).join('\n'));
+  console.log(readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').filter((l) => l.startsWith('//')).slice(1, 14).map((l) => l.slice(3)).join('\n'));
   process.exit(cmd ? 1 : 0);
 }

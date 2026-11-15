@@ -1,12 +1,13 @@
 // Text written by readers, laid over the generated articles.
 //
 // Published text comes from data/manual/reader-edits.json (the operator approved each entry with
-// scripts/suggest/review.mjs). A reader's own suggestions wait in this browser's storage and are
+// scripts/suggest/review.mjs), shipped as data/runtime/reader-edits.json: the same file without edits to
+// a page taken down (scripts/build-runtime-data.mjs, docs/takedown.md). A reader's own suggestions wait in this browser's storage and are
 // laid over the same way, marked "검토 중", so the writer sees the result at once while nobody
 // else does. When a deploy carries the decision (approved or not), the stored copy is settled.
 // Generated articles are never changed: an edit attaches to a paragraph by its exact text, so when
 // an article is written again the edit simply no longer attaches (review.mjs stale lists those).
-import editsUrl from '../data/manual/reader-edits.json?url';
+import editsUrl from '../data/runtime/reader-edits.json?url';
 import { versions } from './data';
 import type { ArtPara, Article } from './lore';
 

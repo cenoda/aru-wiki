@@ -108,8 +108,9 @@ for (const [region, act] of Object.entries(graph.units.region_entry)) Q.add(orde
   for (const [region, o] of first) if (REGIONS[region]) Q.add(o, 'regions', [region, REGIONS[region].ko ?? null, REGIONS[region].emblem]);
 }
 for (const e of graph.recommended) Q.add(Math.max(vOrder.get(e.revealed_version) ?? 0, orderOf(e.source), orderOf(e.target)), 'recommended', e);
-for (const [act, { character }] of Object.entries(graph.figures.acts)) {
-  Q.add(orderOf(act), 'figureActs', [act, character]);
+for (const [act, { character, noIcon }] of Object.entries(graph.figures.acts)) {
+  // a third element 0: a takedown (docs/takedown.md) took this card's icon; it shows the region emblem
+  Q.add(orderOf(act), 'figureActs', noIcon ? [act, character, 0] : [act, character]);
   Q.add(orderOf(act), 'figureNames', [character, graph.figures.characters[character]?.ko ?? null]);
 }
 for (const f of graph.imageFiles) Q.add(vOrder.get(f.release_version) ?? LAST, 'imageFiles', f);
